@@ -23,7 +23,7 @@ ms.author: davidi
 # Enroll your US Government organization in the Power BI service
 The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
 
-For more information about the **Power BI service** for US Government, including its features and limitations, check out [Power BI for United States Government customers - Overview](powerbi-service-govus-overview.md).
+For more information about the **Power BI service** for US Government, including its features and limitations, check out [Power BI for United States Government customers - Overview](service-govus-overview.md).
 
 > **Note:** This article is intended for administrators who have authority to sign up their US Government organization for Power BI. If you are an end-user, contact your administrator about getting a subscription to Power BI for US Government.
 > 
@@ -34,7 +34,7 @@ For more information about the **Power BI service** for US Government, including
 ## Select the right sign-up process for your US Government organization
 Your US Government organization might be new to the **Office Government Cloud**, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office Government Cloud and Power BI, and are different based on your existing subscription.
 
-Once you have signed up for Power BI US Government some features may not work until your sales or support representative completes your onboarding process. To find out about these features see the [Power BI for United States Government customers - Overview](powerbi-service-govus-overview.md). To complete the onboarding process to enable these features, contact your sales or support representative.
+Once you have signed up for Power BI US Government some features may not work until your sales or support representative completes your onboarding process. To find out about these features see the [Power BI for United States Government customers - Overview](service-govus-overview.md). To complete the onboarding process to enable these features, contact your sales or support representative.
 
 ### US Government organizations that are new Office Cloud customers
 If your organization is a new **Office Government Cloud** customer, follow these steps:
@@ -123,7 +123,7 @@ To identifying users in your tenant that are running the Free license of Power B
 ## More Information
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Overview of Power BI for US Government](powerbi-service-govus-overview.md)
+* [Overview of Power BI for US Government](service-govus-overview.md)
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
 * [Get started with the Power BI service](powerbi-service-get-started.md)
 * [Getting started with Power BI Desktop](powerbi-desktop-getting-started.md)

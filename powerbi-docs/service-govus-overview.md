@@ -23,7 +23,7 @@ ms.author: davidi
 # Power BI for US Government customers
 The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
 
-![](media/powerbi-service-govus-overview/service_usgov_overview-1.png)
+![](media/service-govus-overview/service_usgov_overview-1.png)
 
 The following sections describe the *features* available to the US Government version of the **Power BI service**, clarifies some of the *limitations*, lists Frequently Asked Questions (**FAQ**) and answers (including how to sign up), and provides links for more information.
 
