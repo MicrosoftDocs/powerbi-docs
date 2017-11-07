@@ -28,16 +28,16 @@ Connect to [tyGraph for Power BI](https://app.powerbi.com/getdata/services/tygra
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-tygraph/getdata.png)
+   ![](media/service-connect-to-tygraph/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-tygraph/services.PNG)
+   ![](media/service-connect-to-tygraph/services.png)
 3. Select **tyGraph** \> **Get**.
    
-   ![](media/powerbi-content-pack-tygraph/tygraph.png)
+   ![](media/service-connect-to-tygraph/tygraph.png)
 4. Specify the groups and time range you'd like to connect to, otherwise specify "All" to bring in all the data. Note the date format that's expected (YYYY/MM/DD). See details on [finding the parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-tygraph/parameters.PNG)
+   ![](media/service-connect-to-tygraph/parameters.png)
 5. Provide your tyGraph key to connect. See details on finding this value below.
    
     **If you are a Yammer Verified Admin**  
@@ -47,10 +47,10 @@ Connect to [tyGraph for Power BI](https://app.powerbi.com/getdata/services/tygra
    
     The tyGraph content pack requires a tyGraph account created by a Yammer verified administrator. Once created, supplemental keys can be issued to users within the same organization. If your verified admin has not yet created a tyGraph account, contact them to have them do so. If they have, you can request a key by sending an email to <mailto:support@unlimitedviz.com>.
    
-    ![](media/powerbi-content-pack-tygraph/creds.PNG)
+    ![](media/service-connect-to-tygraph/creds.png)
 6. After successful authentication, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-    ![](media/powerbi-content-pack-tygraph/dashboard.PNG)
+    ![](media/service-connect-to-tygraph/dashboard.png)
 
 **What Now?**
 
@@ -73,7 +73,7 @@ The tyGraph API can filter data by specific group ID. These are provided to the 
 
 You can Identify the group ID for a particular group in Yammer by navigating to the feed for the group, and examining the URL.
 
-![](media/powerbi-content-pack-tygraph/yammer.png)
+![](media/service-connect-to-tygraph/yammer.png)
 
 In the above example, the Yammer Group ID is 4054844
 
