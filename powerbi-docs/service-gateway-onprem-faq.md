@@ -22,7 +22,7 @@ ms.author: davidi
 ---
 # On-Premises Data Gateway FAQ
 <!-- Shared FAQ shared Include -->
-[!INCLUDE [gateway-onprem-faq-shared-include](includes/gateway-onprem-faq-shared-include.md)]
+[!INCLUDE [gateway-onprem-faq-shared-include](./includes/gateway-onprem-faq-shared-include.md)]
 
 ## Analysis Services
 **Question:** Can I use msdmpump.dll to create custom effective username mappings for Analysis Services?  

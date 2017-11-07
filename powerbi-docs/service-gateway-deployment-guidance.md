@@ -141,7 +141,7 @@ From there, you can select a gateway and see the list of gateway administrators.
 ## See also
 [Configuring proxy settings](powerbi-gateway-proxy.md)  
 [Troubleshooting the on-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[On-premises data gateway FAQ](powerbi-gateway-onprem-faq.md)  
+[On-premises data gateway FAQ](service-gateway-onprem-faq.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
