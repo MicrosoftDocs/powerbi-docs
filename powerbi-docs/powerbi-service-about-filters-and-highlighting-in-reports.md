@@ -28,7 +28,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 * Introduction to filters and highlighting (the article you're reading now)
 * The ways you can [create and use filters and highlighting in Editing View/reports that you own](powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
 * The ways you can [use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
-* [A detailed tour of the filter and highlighting controls available in Editing View](powerbi-service-how-to-use-a-report-filter.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
+* [A detailed tour of the filter and highlighting controls available in Editing View](power-bi-how-to-report-filter.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 * Now that you've learned how filers and highlighting work by default, [learn how to change the way visualizations on a page filter and highlight each other](powerbi-service-visual-interactions.md)
 
 > [!TIP]
@@ -84,7 +84,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 
 [Add a filter to a report (in Editing View)](powerbi-service-add-a-filter-to-a-report.md)
 
-[Take a tour of report filters](powerbi-service-how-to-use-a-report-filter.md)
+[Take a tour of report filters](power-bi-how-to-report-filter.md)
 
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 

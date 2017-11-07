@@ -63,7 +63,7 @@ There are 2 ways to do this:
    * Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
      
       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-level-filter.png) 
-   * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
+   * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
      
       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-basic-filters.png) 
    * The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
@@ -85,7 +85,7 @@ There are 2 ways to do this:
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new page level filter, and drag it into the **Page level filters** area.  
-4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
+4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)).
    
    All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
    
@@ -124,7 +124,7 @@ Let's see how the drillthrough filter works.
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
-4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
+4. Select the values you want to filter (see [How to use report filters](power-bi-how-to-report-filter.md)).
 
 The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
@@ -139,7 +139,7 @@ When you add a page level filter, Power BI filters without aggregating.  It does
 If you do not see the Fields pane, make sure you're in report [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md)
 
 ## Next steps
- [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+ [How to use report filters](power-bi-how-to-report-filter.md)
 
   [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 

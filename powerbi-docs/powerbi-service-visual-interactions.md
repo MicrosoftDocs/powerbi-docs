@@ -47,7 +47,7 @@ To change this default behavior, use the **Visual Interaction** control. Visual 
 4. Optionally, repeat for all other visualizations on the report page.
 
 ### Next steps
-[How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+[How to use report filters](power-bi-how-to-report-filter.md)
 
 [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 

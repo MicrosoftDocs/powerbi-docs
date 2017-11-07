@@ -63,7 +63,7 @@ Here are some topics, by role, to help you get started.
 * Start with a [tour of Power BI service](powerbi-service-basic-concepts.md) so you know where to find reports and report tools.
 * Take a tour of the [report editor](powerbi-service-the-report-editor-take-a-tour.md).
 * Learn how to [create a report from a dataset](powerbi-service-create-a-new-report.md).
-* [Learn how to use visualization, page, and report-level filters](powerbi-service-how-to-use-a-report-filter.md)
+* [Learn how to use visualization, page, and report-level filters](power-bi-how-to-report-filter.md)
 * Discover all the different ways you can [share a report with colleagues](service-share-dashboards.md).
 
 ### If you will be receiving and consuming reports
