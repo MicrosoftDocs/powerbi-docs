@@ -139,7 +139,7 @@ Users in the organization can publish reports to the web. [Learn more](service-p
 > 
 
 ### Export data
-Users in the organization can export data from a tile or visualization. [Learn more](powerbi-service-export-data.md)
+Users in the organization can export data from a tile or visualization. [Learn more](power-bi-visualization-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
