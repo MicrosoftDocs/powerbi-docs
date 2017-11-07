@@ -56,6 +56,6 @@ Power BI generates the QR code as a JPG file, ready to print.
 ## Next steps
 * [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
 * [Scan a Power BI QR code from your mobile device](powerbi-mobile-qr-code-for-tile.md)
-* [Create a QR code for a report](powerbi-service-qr-code-for-report.md)
+* [Create a QR code for a report](service-create-qr-code-for-report.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
