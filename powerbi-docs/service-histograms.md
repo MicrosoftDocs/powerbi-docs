@@ -29,7 +29,7 @@ To get started, determine which query has the field you want to build a histogra
 ## Defining buckets to build a histogram
 Determine which query has the field you want to build a histogram on. Use the *Reference* option for the query to create a new query and name it *FieldName*.  Now define the buckets with a rule. Use the **Add Custom Column** option on the **Add Column** ribbon and build a custom rule.
 
-![](media/powerbi-service-histograms/powerbi-service-histograms_1.png)
+![](media/service-histograms/powerbi-service-histograms_1.png)
 
 Ensure the data type is a number for the resulting aggregate column. Now you can use the group by technique described in **Simple Histograms** (earlier in this article) to achieve the histogram. This option handles more data points but still does not help with brushing.
 
