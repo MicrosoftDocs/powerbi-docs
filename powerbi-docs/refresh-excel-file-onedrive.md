@@ -38,7 +38,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 * All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
@@ -51,7 +51,7 @@ If you have both a personal OneDrive and OneDrive for Business, it’s recommend
 Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](http://www.microsoft.com/account/default.aspx).
 
 When you sign in with your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI  
-    ![](media/powerbi-refresh-excel-file-onedrive/Refresh_SignIn_KeepMeSignedIn.png)
+    ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
 If you make changes to your file on OneDrive that cannot be synchronized with the dataset or reports in Power BI, because your Microsoft account credentials might have changed, you’ll need to connect to and import your file again from your personal OneDrive.
 
@@ -75,13 +75,13 @@ When you use Power Query (Get & Transform data in Excel 2016) to connect to a da
 > 
 
 In **Navigator**, click **Load To…**  
-    ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_1.png)
+    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
 
 Or, If you click **Edit** in Navigator, you’ll open the Query Editor. There you can click **Close & Load To….**  
-    ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_2.png)
+    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
 
 Then in **Load To**, make sure you select **Add this data to the Data Model**.  
-    ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_3.png)
+    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.

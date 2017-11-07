@@ -131,7 +131,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on OneD
 
 *\* Power Query is known as Get & Transform Data in Excel 2016.*
 
-For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](powerbi-refresh-excel-file-onedrive.md).
+For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
 
 ### Comma separated value (.csv) file on OneDrive or SharePoint Online
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
@@ -226,7 +226,7 @@ Unfortunately, refresh is not supported in this scenario. In order to refresh th
 
 When you connect to a file on OneDrive, or SharePoint Online, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file, about every hour, for updates. If you make changes to the workbook (stored in OneDrive or SharePoint Online), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
 
-To learn more, see [Excel data in Power BI](powerbi-service-excel-workbook-files.md), or [Refresh a dataset created from an Excel workbook on OneDrive](powerbi-refresh-excel-file-onedrive.md).
+To learn more, see [Excel data in Power BI](powerbi-service-excel-workbook-files.md), or [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
 
 ### Excel workbook connects to a SQL database in your company
 Let’s say you have an Excel workbook named SalesReport.xlsx on your local computer. Power Query in Excel was used to connect to a SQL database on a server in your company and query for sales data that is loaded into the data model. Each morning, you open the workbook and hit Refresh to update your PivotTables.
