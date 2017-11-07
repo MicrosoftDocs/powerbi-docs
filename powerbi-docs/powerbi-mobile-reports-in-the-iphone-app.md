@@ -60,7 +60,7 @@ A report may have a mix of pages that are and aren't optimized for phones. If so
 Read more about [reports optimized for phone view](powerbi-mobile-view-phone-report.md).
 
 ## Use slicers to filter a report page
-When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](powerbi-service-tutorial-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
+When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](power-bi-visualization-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
 
 * When you select a value in a slicer on the report page, it filters the other visuals on the page.
   

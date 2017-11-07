@@ -24,7 +24,7 @@ ms.author: mihart
 # Slicers in Power BI service (Tutorial)
 Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.
 
-![](media/powerbi-service-tutorial-slicers/slicer2.gif)
+![](media/power-bi-visualization-slicers/slicer2.gif)
 
 ## When to use a slicer
 Slicers are a great choice in the following situations.
@@ -41,52 +41,52 @@ Slicers are a great choice in the following situations.
 1. Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, select **District > District Manager**.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_chartFirst.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_chartfirst.png)
 3. Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_select.png)
 
 ## Format the slicer
-1. With the slicer selected, in the Visualizations pane, select the paint roller icon ![](media/powerbi-service-tutorial-slicers/power-bi-paintroller.png) to display the Format options.
+1. With the slicer selected, in the Visualizations pane, select the paint roller icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the Format options.
 2. Select **General > Outline color** and choose dark blue and change the **Weight** to **6**.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_outline2.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_outline2.png)
 3. Under **Selection Controls**, by default, **Select All** is **Off** and **Single Select** is **On**. This means that I have to use the CTRL key to select more than one name at a time. Turn **Select All** to **On** and **Single Select** to **Off**.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_selectionControls2.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_selectioncontrols2.png)
    
    * Notice that the slicer now has a **Select All** option at the top of the list. Toggle **Select All** to select all of the names or to select none of the names.
    * And you can now select more than one name without having to use the CTRL key.
 4. Under **Items**, increase the text size to 14pt.  We want to be sure that our colleagues notice this slicer.
 5. Lastly, set **Font color** to a dark red.  This will distinguish the selected names from the unselected names in our slicer.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_font2.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_font2.png)
 6. Have fun exploring the other options available for slicers.
 
 ## Use the slicer in a report
 1. Add some additional visualizations to the report page or open the [Retail Analysis sample report](powerbi-sample-retail-analysis-take-a-tour.md) and select the **District Monthly Sales** tab.
    
-    ![](media/powerbi-service-tutorial-slicers/power-bi-retail-sample.png)
+    ![](media/power-bi-visualization-slicers/power-bi-retail-sample.png)
 2. Slice the report page for Carlos. Notice how the other visualizations update to reflect these selections.
    
-    ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
+    ![](media/power-bi-visualization-slicers/slicer2.gif)
 3. Sort the slicer alphabetically by District Manager last name.  Select the ellipses (...) in the top right corner of the slicer and choose **District Manager**.
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sort2.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_sort2.png)
    
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
+    ![](media/power-bi-visualization-slicers/pbi_slicer_sorted.png)
 
 ## Control what effect the slicer has on other visuals on the page
 Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
 
-**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/powerbi-service-tutorial-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
+**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/power-bi-visualization-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 1. Select the slicer to make it active and, from the menu bar, choose **Visual interactions**.
    
-    ![](media/powerbi-service-tutorial-slicers/pbi-slicer-interactions.png)
+    ![](media/power-bi-visualization-slicers/pbi-slicer-interactions.png)
 2. Filter controls will appear above all the other visuals on the page. If the slicer should filter a visual, select the **Filter** icon.  If the slicer should have no effect on the visual, select the **None** icon.
    
-    ![](media/powerbi-service-tutorial-slicers/filter-controls.png)
+    ![](media/power-bi-visualization-slicers/filter-controls.png)
 
 For more information, see [Visual interactions in a Power BI report](powerbi-service-visual-interactions.md).
 

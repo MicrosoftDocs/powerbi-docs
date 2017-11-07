@@ -126,7 +126,7 @@ For more information, see [Tutorial: Scatter charts in Power BI](power-bi-visual
 ### Slicers
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/PBI_slicer.png)
 
-For more information, see [Tutorial: Slicers in Power BI](powerbi-service-tutorial-slicers.md).
+For more information, see [Tutorial: Slicers in Power BI](power-bi-visualization-slicers.md).
 
 ### Standalone images
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_image.png)
