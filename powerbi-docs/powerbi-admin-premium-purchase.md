@@ -72,7 +72,7 @@ After you have completed the purchase, the Purchase services screen will show th
 
 ![](media/powerbi-admin-premium-purchase/premium-purchased.png)
 
-You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
+You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ## Purchase more capacities
 When you are in the **Premium settings** section of the Power BI Admin portal, if you are an admin, you will see a **Purchase more** button. This button will take you to the Office 365 portal. Once you are in the Office 365 Admin center, you can do the following.
@@ -93,7 +93,7 @@ The **Purchase services** page will then indicate the number of instances you ha
 
 ![Available v-cores for Power BI Premium capacity](media/powerbi-admin-premium-purchase/premium-capacities.png)
 
-You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
+You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ## Cancel your subscription
 You can cancel your subscription from within the Office 365 admin center. To cancel your Premium subscription, do the following.
@@ -113,7 +113,7 @@ You can cancel your subscription from within the Office 365 admin center. To can
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)  
 [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)  
 [Power BI Premium - what is it?](service-premium.md)  
-[Manage Power BI Premium](powerbi-admin-premium-manage.md)  
+[Manage Power BI Premium](service-admin-premium-manage.md)  
 [Power BI Premium FAQ](service-premium-faq.md)  
 [Power BI Premium release notes](service-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  

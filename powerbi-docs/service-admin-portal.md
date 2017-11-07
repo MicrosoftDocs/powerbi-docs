@@ -227,12 +227,12 @@ The Premium settings tab allows you to manage any Power BI Premium capacity that
 
 ![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 
-For more information about to manage Premium settings, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
+For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ## Next steps
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
-[Manage Power BI Premium](powerbi-admin-premium-manage.md)  
+[Manage Power BI Premium](service-admin-premium-manage.md)  
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

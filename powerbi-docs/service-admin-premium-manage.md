@@ -23,7 +23,7 @@ ms.author: asaxton
 # Manage capacities within Power BI Premium and Power BI Embedded
 Learn how you can manage Power BI Premium and Power BI Embedded capacities which provides dedicated resources for your content.
 
-![Power BI capacity settings screen](media/powerbi-admin-premium-manage/premium-capacity-management.png)
+![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
 
 Capacity is the heard of the Power BI Premium and Power BI Embedded offerings.
 
@@ -32,7 +32,7 @@ Capacity is the set of resources reserved for the exclusive use by you. Having c
 
 Capacity is all transparent to your end users. They will continue to use Power BI or your application as usual. They don't have to be aware that some (or all) of the content is hosted in your dedicated capacity. For your users, everything works exactly as before.
 
-[!INCLUDE [powerbi-premium-illustration](includes/powerbi-premium-illustration.md)]
+[!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
 For more information, see [What is Power BI Premium?](service-premium.md).
 
@@ -59,14 +59,14 @@ All Office 365 Global admins and Power BI admins are automatically capacity admi
 ## Managing capacity
 After you have purchased capacity nodes within Office 365, you will then need to set up a new capacity. This is done through the [Power BI admin portal](service-admin-portal.md). Within the admin portal, you will see a section called **Capacity settings**. This is where you will manage Power BI Premium capacities for your organization.
 
-![Capacity settings within the admin portal](media/powerbi-admin-premium-manage/admin-portal-premium.png)
+![Capacity settings within the admin portal](media/service-admin-premium-manage/admin-portal-premium.png)
 
 Selecting **Capacity settings** will take you to the capacity management screen defaulting to Power BI Premium.
 
 ### Setting up a new capacity (Power BI Premium)
 The number of v-cores will reflect the amount used and the amount available to create capacities with. The amount of v-cores available to your organization is based on the Premium SKUs that you have purchased. For example, purchasing a P3 and a P2 would result in 48 available cores – 32 from the P3 and 16 from the P2.
 
-![Used and available v-cores for Power BI Premium](media/powerbi-admin-premium-manage/admin-portal-v-cores.png)
+![Used and available v-cores for Power BI Premium](media/service-admin-premium-manage/admin-portal-v-cores.png)
 
 If you have available v-cores, setup your new capacity by doing the following.
 
@@ -77,21 +77,21 @@ If you have available v-cores, setup your new capacity by doing the following.
     Capacity admins do not have to be a Power BI admin or an Office 365 Global admin. For more information, see [Power BI Premium capacity admins](#capacity-admins)
 4. Select your capacity size. Available options are dependent on how many available v-cores you have. You can't select an option that is larger than what you have available.
    
-    ![Available Premium capacity sizes](media/powerbi-admin-premium-manage/premium-capacity-size.png)
+    ![Available Premium capacity sizes](media/service-admin-premium-manage/premium-capacity-size.png)
 5. Select **Set up**.
 
-![Set up a new capacity](media/powerbi-admin-premium-manage/set-up-capacity.png)
+![Set up a new capacity](media/service-admin-premium-manage/set-up-capacity.png)
 
 Capacity admins, as well as Power BI admins and Office 365 Global Admins, will then see the capacity listed within the admin portal.
 
 ### Capacity settings
 Within the Premium capacity management screen, you can select the **gear icon (settings)** under actions. This will allow you to rename or delete a capacity. It will also indicate who the service admins are, the SKU/size of the capacity and what region the capacity is in.
 
-![Capacity actions within the capacity management area](media/powerbi-admin-premium-manage/capacity-actions.png)
+![Capacity actions within the capacity management area](media/service-admin-premium-manage/capacity-actions.png)
 
-![Capacity settings](media/powerbi-admin-premium-manage/capacity-settings.png)
+![Capacity settings](media/service-admin-premium-manage/capacity-settings.png)
 
-![Delete and apply buttons for capacity settings in Power BI Premium](media/powerbi-admin-premium-manage/capacity-settings-delete.png)
+![Delete and apply buttons for capacity settings in Power BI Premium](media/service-admin-premium-manage/capacity-settings-delete.png)
 
 > [!NOTE]
 > Power BI Embedded capacity settings are managed within the Microsoft Azure portal.
@@ -101,18 +101,18 @@ Within the Premium capacity management screen, you can select the **gear icon (s
 ### Change capacity size (Power BI Premium)
 Power BI admins and Office 365 Global admins change Power BI Premium capacity size by selecting **Change capacity size**. Capacity admins who are not a Power BI admin or Office 365 Global admin will not have this option.
 
-![Change Power BI Premium capacity size](media/powerbi-admin-premium-manage/change-capacity-size.png)
+![Change Power BI Premium capacity size](media/service-admin-premium-manage/change-capacity-size.png)
 
 The **Change capacity size** screen lets you upgrade or downgrade your capacity size if you have the available resources. Administrators are free to create, resize and delete nodes, so long as they have the requisite number of v-cores. 
 
 P SKUs cannot be down graded to EM SKUs. You can hover over disabled options which provide an explanation.
 
-![Change Power BI Premium capacity size drop down](media/powerbi-admin-premium-manage/change-capacity-size2.png)
+![Change Power BI Premium capacity size drop down](media/service-admin-premium-manage/change-capacity-size2.png)
 
 ### Capacity assignment
 You can manage a capacity by selecting the name of the capacity. This will take you to the capacity management screen.
 
-![Select capacity name to get to capacity assignment screen](media/powerbi-admin-premium-manage/capacity-assignment.png)
+![Select capacity name to get to capacity assignment screen](media/service-admin-premium-manage/capacity-assignment.png)
 
 If no workspaces have been assigned to the capacity, you will see a message allowing you to **Assign workspaces**.
 
@@ -124,16 +124,16 @@ You can assign additional **Capacity admins** for Power BI Premium capacities. A
 > 
 > 
 
-![](media/powerbi-admin-premium-manage/capacity-user-permissions.png)
+![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
-![](media/powerbi-admin-premium-manage/capacity-user-permissions2.png)
+![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## Usage measurements (Power BI Premium)
 For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good (green)**, **Marginal (yellow)** and **Critical (red)**. We suggest monitoring these metrics to ensure that your users see good performance while using Premium content.
 
 **Power BI Embedded capacity usage is monitored within the Azure portal.**
 
-![](media/powerbi-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
+![](media/service-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
 
 | Metric | Description |
 | --- | --- |
@@ -153,7 +153,7 @@ There are a few ways that a workspace could be assigned to a capacity.
 ### Capacity management in admin portal
 Capacity admins, along with Power BI admins and Office 365 global admins, can bulk assign workspaces within the premium capacity management section of the admin portal. When you manage a capacity, you will see a **Workspaces** section that allows you to assign workspaces.
 
-![Workspace assignment area of capacity management](media/powerbi-admin-premium-manage/capacity-manage-workspaces.png)
+![Workspace assignment area of capacity management](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 
 1. Select **Assign workspaces**. This is listed in multiple places and will all perform the same task.
 2. Select either **The entire organization's workspaces** or **Specific workspaces by user**.
@@ -173,12 +173,12 @@ To move a workspace into capacity, you must have admin permissions to that works
 
 1. Edit an app workspace by selecting the **ellipsis (...)** and selecting **Edit workspace**.
    
-    ![Edit workspace from ellipsis context menu](media/powerbi-admin-premium-manage/edit-app-workspace.png)
+    ![Edit workspace from ellipsis context menu](media/service-admin-premium-manage/edit-app-workspace.png)
 2. Within **Edit workspace**, expand **Advanced**.
 3. If you have been given capacity assignment permissions to any capacity, you will have the option to turn **Premium** on for this workspace.
 4. Select the capacity that you want to assign this App workspace to.
    
-    ![Capacity selection drop down](media/powerbi-admin-premium-manage/app-workspace-advanced.png)
+    ![Capacity selection drop down](media/service-admin-premium-manage/app-workspace-advanced.png)
 5. Select **Save**.
 
 Once saved, the workspace, and all its contents, will be moved into Premium capacity without any experience interruption for end users.
@@ -186,16 +186,16 @@ Once saved, the workspace, and all its contents, will be moved into Premium capa
 ## What Premium looks like for users
 For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity. 
 
-![Diamond showing workspace is backed by Premium capacity](media/powerbi-admin-premium-manage/premium-workspace.png)
+![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
 
 ## Power BI Report Server product key)
 Within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchase a Power BI Premium SKU.
 
-![Power BI Report Server key within Capacity settings](media/powerbi-admin-premium-manage/pbirs-product-key.png)
+![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![Power BI Report Server product key](media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png)
+![Power BI Report Server product key](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 
 For more information, see [Install Power BI Report Server](report-server/reportserver-install-report-server.md).
 

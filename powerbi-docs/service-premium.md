@@ -47,7 +47,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
-To start using a Power BI Premium capacity, you need to assign a workspace to a capacity. For more information on how to assign a workspace to a premium capacity, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
+To start using a Power BI Premium capacity, you need to assign a workspace to a capacity. For more information on how to assign a workspace to a premium capacity, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 When a workspace is backed by premium capacity, you enjoy the benefits of Power BI Premium.
 
@@ -84,7 +84,7 @@ Power BI Premium includes the right to run Power BI Report Server on-premises. F
 [Power BI Premium FAQ](service-premium-faq.md)  
 [Power BI Premium release notes](service-premium-release-notes.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
-[Managing Power BI Premium](powerbi-admin-premium-manage.md)  
+[Managing Power BI Premium](service-admin-premium-manage.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Administering Power BI in your organization](service-admin-administering-power-bi-in-your-organization.md)  
