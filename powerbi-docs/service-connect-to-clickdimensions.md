@@ -28,22 +28,22 @@ Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/se
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-clickdimensions/getdata.png)
+   ![](media/service-connect-to-clickdimensions/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-clickdimensions/services.PNG)
+   ![](media/service-connect-to-clickdimensions/services.png)
 3. Select **ClickDimensions** \>  **Get**.
    
-   ![](media/powerbi-content-pack-clickdimensions/clickdimensions.png)
+   ![](media/service-connect-to-clickdimensions/clickdimensions.png)
 4. Provide the location of your data center (US, EU or AU) and select **Next**.
    
-   ![](media/powerbi-content-pack-clickdimensions/params.png)
+   ![](media/service-connect-to-clickdimensions/params.png)
 5. For **Authentication Method**, select **Basic** \> **Sign In**. When prompted, enter your ClickDimensions credentials. See details in [finding those parameters](#FindingParams) below
    
-    ![](media/powerbi-content-pack-clickdimensions/creds.png)
+    ![](media/service-connect-to-clickdimensions/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-clickdimensions/dashboard.png)
+     ![](media/service-connect-to-clickdimensions/dashboard.png)
 
 **What Now?**
 
@@ -60,11 +60,11 @@ To connect to the Power BI content pack, you must provide the data center corres
 ## Finding parameters
 The Account Key is found within CRM Settings \> ClickDimensions Settings. Copy the Account Key from within ClickDimensions Settings and paste it into the User name field.  
 
-![](media/powerbi-content-pack-clickdimensions/crm.png)  
+![](media/service-connect-to-clickdimensions/crm.png)  
 
 Copy the Power BI Token from within ClickDimensions Settings and paste it into the Password field. The Power BI Token is found within CRM Settings \> ClickDimensions Settings.  
 
-![](media/powerbi-content-pack-clickdimensions/crm2.png)  
+![](media/service-connect-to-clickdimensions/crm2.png)  
 
 ### See also
 [Get started in Power BI](service-get-started.md)
