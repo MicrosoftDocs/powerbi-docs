@@ -26,7 +26,7 @@ ms.author: maggies
 
 With sharing, you and your recipients need a [Power BI Pro license](service-free-vs-pro.md), or the content needs to be in a [Premium capacity](service-premium.md). Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
-You can share a report with coworkers in the same email domain as you, from your own My Workspace or from an app workspace. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless [row-level security (RLS)](powerbi-admin-rls.md) is applied. 
+You can share a report with coworkers in the same email domain as you, from your own My Workspace or from an app workspace. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless [row-level security (RLS)](service-admin-rls.md) is applied. 
 
 ## Share a Power BI report
 1. [Share a dashboard](powerbi-service-share-unshare-dashboard.md) with tiles that link to the report you want to share. 
