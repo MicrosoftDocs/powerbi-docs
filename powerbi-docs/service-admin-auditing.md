@@ -234,7 +234,7 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 | OptInForProTrial |This event is logged when a user choses to try Power BI Pro within the service. |- email address |
 
 ## Next steps
-[Power BI Admin Portal](powerbi-admin-portal.md)  
+[Power BI Admin Portal](service-admin-portal.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
 [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  

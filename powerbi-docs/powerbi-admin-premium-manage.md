@@ -57,7 +57,7 @@ Each capacity has its own admins. Defining a capacity admin to one capacity does
 All Office 365 Global admins and Power BI admins are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
 
 ## Managing capacity
-After you have purchased capacity nodes within Office 365, you will then need to set up a new capacity. This is done through the [Power BI admin portal](powerbi-admin-portal.md). Within the admin portal, you will see a section called **Capacity settings**. This is where you will manage Power BI Premium capacities for your organization.
+After you have purchased capacity nodes within Office 365, you will then need to set up a new capacity. This is done through the [Power BI admin portal](service-admin-portal.md). Within the admin portal, you will see a section called **Capacity settings**. This is where you will manage Power BI Premium capacities for your organization.
 
 ![Capacity settings within the admin portal](media/powerbi-admin-premium-manage/admin-portal-premium.png)
 

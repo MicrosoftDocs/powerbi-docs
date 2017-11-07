@@ -27,7 +27,7 @@ Learn how you can use the Power BI admin role within your organization.
 
 The Power BI Service Administrator role can be assigned to users who should have access to the Power BI Admin Portal without also granting them other Office 365 administrative access. For example, the Global Admin role. It is meant for those tasked with administering Power BI for their organization.
 
-Office 365 user admins can assign users to be Power BI admins within the Office 365 Admin center, or via PowerShell script. Once a user is assigned, they'll be able to access the [Power BI admin portal](powerbi-admin-portal.md). There, they will have access to tenant-wide usage metrics, and can control tenant-wide usage of Power BI features.
+Office 365 user admins can assign users to be Power BI admins within the Office 365 Admin center, or via PowerShell script. Once a user is assigned, they'll be able to access the [Power BI admin portal](service-admin-portal.md). There, they will have access to tenant-wide usage metrics, and can control tenant-wide usage of Power BI features.
 
 ![](media/powerbi-admin-role/powerbi-admin-portal.png)
 
@@ -46,7 +46,7 @@ To assign users to the Power BI Administrator role within the Office 365 Admin C
     ![](media/powerbi-admin-role/powerbi-admin-role.png)
 5. Select **Save**.
 
-You should see **Power BI service administrator** listed for the role of that user. They will now have access to the [Power BI admin portal](powerbi-admin-portal.md).
+You should see **Power BI service administrator** listed for the role of that user. They will now have access to the [Power BI admin portal](service-admin-portal.md).
 
 ![](media/powerbi-admin-role/powerbi-admin-role-set.png)
 
@@ -116,7 +116,7 @@ The Power BI service administrator role does not provide access to the following
 * Access to the audit logs. For more information, see [Using auditing within your organization](service-admin-auditing.md).
 
 ## Next steps
-[Power BI admin portal](powerbi-admin-portal.md)  
+[Power BI admin portal](service-admin-portal.md)  
 [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
 [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  

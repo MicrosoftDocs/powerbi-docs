@@ -28,7 +28,7 @@ Access to the **Power BI for Office 365** Admin portal is no longer available. A
 
 ![](media/powerbi-admin-o365portal-retired/powerbi-admin-landing-page.png)
 
-For more information, see [Power BI admin portal](powerbi-admin-portal.md).
+For more information, see [Power BI admin portal](service-admin-portal.md).
 
 ## See also
 [Get started with Power BI](powerbi-service-get-started.md)

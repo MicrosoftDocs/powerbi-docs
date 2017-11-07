@@ -142,7 +142,7 @@ If you are embedding for your customers, you will want to do the following.
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
 ## Admin settings
-Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](powerbi-admin-portal.md).
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](service-admin-portal.md).
 
 ## Next steps
 [Embedding with Power BI](powerbi-developer-embedding.md)  

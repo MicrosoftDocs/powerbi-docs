@@ -197,7 +197,7 @@ Power BI provides an admin portal that allows you to view usage statistics, prov
 > 
 > 
 
-For more information, see [Power BI Admin Portal](powerbi-admin-portal.md).
+For more information, see [Power BI Admin Portal](service-admin-portal.md).
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 If a tenant was created by Microsoft, you can claim and manage that tenant by following these steps:
@@ -265,7 +265,7 @@ To learn more about Power BI compliance, see the [Microsoft Trust Center](http:/
 Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](powerbi-admin-power-bi-security.md). 
 
 ## Next steps
-[Power BI admin portal](powerbi-admin-portal.md)  
+[Power BI admin portal](service-admin-portal.md)  
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
