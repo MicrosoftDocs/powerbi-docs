@@ -123,7 +123,7 @@ The following resources are available to help get your started:
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI](powerbi-service-get-started.md) article
 * [Join our community](https://community.powerbi.com/) and ask questions
-* See [10 tips for getting help](powerbi-service-tips-for-getting-help.md) for more suggestions.
+* See [10 tips for getting help](service-tips-for-finding-help.md) for more suggestions.
 
 ## What browsers does Power BI support?
 Here's a complete list of [supported browsers for Power BI](service-browser-support.md).
