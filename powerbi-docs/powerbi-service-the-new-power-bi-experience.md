@@ -111,7 +111,7 @@ Similar to Favorites, you can quickly access your recents from anywhere in Power
 To learn more, see [Recents in Power BI](powerbi-service-recent.md)
 
 ## Apps
-An app is a collection of dashboards and reports built to deliver key metrics, all in one place. You can have apps internal to your organization, and also [apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM. 
+An app is a collection of dashboards and reports built to deliver key metrics, all in one place. You can have apps internal to your organization, and also [apps for external services](service-connect-to-services.md) such as Google Analytics and Microsoft Dynamics CRM. 
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-apps.png)
 

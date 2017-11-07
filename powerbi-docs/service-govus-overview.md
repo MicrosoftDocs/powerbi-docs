@@ -40,7 +40,7 @@ The following features are available to **Power BI US Government** customers, as
 * [Import data](service-get-data.md) and reports from Excel, CSV, and Power BI Desktop files
 * Data Management Gateway
 * All data is encrypted in both Azure SQL and Blob Storage for Power BI
-* Connect to services with [content packs](powerbi-content-packs-services.md)
+* Connect to services with [content packs](service-connect-to-services.md)
 
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.

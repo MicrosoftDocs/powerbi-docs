@@ -21,7 +21,7 @@ ms.author: maggies
 ---
 # Create and distribute apps with dashboards and reports in Power BI
 ## What are Power BI apps?
-In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place, and then distribute them to large groups of people in your organization. You can also connect to [Power BI apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM.
+In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place, and then distribute them to large groups of people in your organization. You can also connect to [Power BI apps for external services](service-connect-to-services.md) such as Google Analytics and Microsoft Dynamics CRM.
 
 ![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-left-nav.png)
 
@@ -64,7 +64,7 @@ It’s empty, so now you add content to it. Note that when you first create it, 
 
 Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
 
-* [Connect to services](powerbi-content-packs-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
+* [Connect to services](service-connect-to-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 * [Get data from files](service-get-data-from-files.md) such as Excel, CSV, or Power BI Desktop (PBIX) files.
 
 ## Add an image to your app (optional)
@@ -171,6 +171,6 @@ With apps, you can publish a read-only version of your app workspace to large au
 
 ## Next steps
 * [What are apps in Power BI?](powerbi-service-what-are-apps.md)
-* [Power BI apps for external services](powerbi-content-packs-services.md)
+* [Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

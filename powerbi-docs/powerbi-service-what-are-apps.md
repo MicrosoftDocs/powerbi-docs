@@ -20,7 +20,7 @@ ms.author: maggies
 
 ---
 # Install and use apps, with dashboards and reports, in Power BI
-In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](powerbi-content-packs-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
+In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](service-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
 ![Apps in Power BI](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
 
@@ -68,6 +68,6 @@ You can't save changes you make, but you can always [export the data to Excel ](
 
 ## Next steps
 * [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
-* [Power BI apps for external services](powerbi-content-packs-services.md)
+* [Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
