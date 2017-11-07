@@ -71,7 +71,7 @@ Here are some topics, by role, to help you get started.
 * Learn how to [open a report](powerbi-service-open-a-report-in-reading-view.md) and all the interaction available in [Reading view](service-dashboard-tiles.md).
 * Get comfortable with reports by taking a tour of one of our [samples](sample-tutorial-connect-to-the-samples.md).  
 * Don't need the report any more? You can [remove it](service-delete.md).
-* To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](powerbi-service-related-content.md).
+* To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](service-related-content.md).
 
 > [!TIP]
 > If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *report* topics.
