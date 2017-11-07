@@ -63,7 +63,7 @@ You will then want to fill in the information for the data source which includes
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials, unless Kerberos Single Sign On (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execut the queries using SSO. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored, or the article describing how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> All queries to the data source will run using these credentials, unless Kerberos Single Sign On (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execut the queries using SSO. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored, or the article describing how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
 > 
 > 
 
@@ -126,6 +126,6 @@ If you are listed in the **Users** tab of the data source configured within the 
 * [On-premises Data Gateway](service-gateway-onprem.md)  
 * [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 * [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)
-* [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
