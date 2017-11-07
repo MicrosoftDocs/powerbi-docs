@@ -53,7 +53,7 @@ and Q&A will suggest these questions to your colleagues.
 [Tutorial: Use Power BI Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md):
 Use Q&A in a realistic industry tutorial.
 
-[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md):
+[Make your data work well with Q&A](service-prepare-data-for-q-and-a.md):
 Are you the person creating datasets and data models?  Then this topic is for you.
 
 ## See also

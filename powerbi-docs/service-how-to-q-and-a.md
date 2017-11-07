@@ -86,6 +86,6 @@ For information about keywords that Q&A recognizes, see [Tips for asking questio
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](service-q-and-a-tips.md)  
-[Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
+[Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  
 [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)  
 
