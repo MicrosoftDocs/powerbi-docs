@@ -30,24 +30,24 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-lithium/PBI_GetData.png) 
+   ![](media/service-connect-to-lithium/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-lithium/PBI_GetServices.png) 
+   ![](media/service-connect-to-lithium/pbi_getservices.png) 
 3. Select **Lithium** \> **Get**.
    
-   ![](media/powerbi-content-pack-lithium/lithiumconnect.png)
+   ![](media/service-connect-to-lithium/lithiumconnect.png)
 4. Provide the URL of your Lithium community. It will be in the form of *https://community.yoursite.com*.
    
-   ![](media/powerbi-content-pack-lithium/params.png)
+   ![](media/service-connect-to-lithium/params.png)
 5. When prompted, enter your Lithium credentials. Select **oAuth 2** as the Authentication Mechanism and click **Sign In** and follow the Lithium authentication flow.
    
-   ![](media/powerbi-content-pack-lithium/creds.png)
+   ![](media/service-connect-to-lithium/creds.png)
    
-   ![](media/powerbi-content-pack-lithium/creds2.png)
+   ![](media/service-connect-to-lithium/creds2.png)
 6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-    ![](media/powerbi-content-pack-lithium/lithium.png)
+    ![](media/service-connect-to-lithium/lithium.png)
 
 **What Now?**
 
