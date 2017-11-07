@@ -91,7 +91,7 @@ In the navigation pane, your reports are listed under the **Reports** heading. E
   ![](media/service-basic-concepts/drawing3new.png)
 
 ## Dashboards
-A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md). 
+A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
 
 In the navigation bar, "your" dashboards are listed under the **Dashboards** heading. "Your" means that you have access to them, not necessarily that you created them. Each dashboard represents a customized view of some subset of the underlying datasets.  If you own the dashboard, you'll also have access to the underlying dataset(s) and they'll appear in the navbar under **Datasets**.  If the dashboard was shared with you, it has a sharing icon ![](media/service-basic-concepts/sharing-icon.png) next to it, and depending on how it was shared, you may or may not see the underlying datasets listed in your navbar.
 
@@ -151,7 +151,7 @@ Single-click
 * a dataset to explore it
 
 ### 2. **Dashboard with tiles**
-Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [tiles](service-dashboard-tiles.md).  Tiles are created in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![](media/service-basic-concepts/canvas.png)
 

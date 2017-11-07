@@ -152,7 +152,7 @@ To make changes to a tile...
 * If you'd like to embed some content from a website, but the website doesn't give you embed code to copy and paste, check out embed.ly for help generating the embed code.
 
 ## Next steps
-[Dashboard tiles](powerbi-service-dashboard-tiles.md)
+[Dashboard tiles](service-dashboard-tiles.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

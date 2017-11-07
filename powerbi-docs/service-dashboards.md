@@ -70,13 +70,13 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 
 ### If you will be creating and sharing dashboards
 * Use one of our samples to [create a dashboard from a report](service-dashboard-create.md).
-* Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and all the different ways to pin them to a dashboard.
+* Learn about [dashboard tiles](service-dashboard-tiles.md) and all the different ways to pin them to a dashboard.
 * Help your dashboard consumers by creating dashboards that [work well with Q&A natural language queries](powerbi-service-make-your-data-work-well-with-q-and-a.md) and with [Quick insights](powerbi-service-auto-insights-optimize.md).
 * Discover all the different ways you can [share a dashboard with colleagues](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ### If you will be receiving and consuming dashboards
 * Get comfortable with dashboards by taking a tour of one of our [sample dashboards](sample-tutorial-connect-to-the-samples.md).
-* Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and what will happen when you select one.
+* Learn about [dashboard tiles](service-dashboard-tiles.md) and what will happen when you select one.
 * Don't like the look of a dashboard?  You can [resize, move, and rename the tiles](service-dashboard-edit-tile.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](powerbi-service-set-data-alerts.md).
 * Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](powerbi-service-how-to-use-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.

@@ -73,7 +73,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
    * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Add the Funnel as a dashboard tile](powerbi-service-dashboard-tiles.md). 
+5. [Add the Funnel as a dashboard tile](service-dashboard-tiles.md). 
 6. [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering

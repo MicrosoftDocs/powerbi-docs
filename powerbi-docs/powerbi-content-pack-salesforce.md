@@ -59,13 +59,13 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
    
    ![](media/powerbi-content-pack-salesforce/PBI_GetDataSalesforceDash.png)
 
-You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
+You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 
 **What Now?**
 
 * Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard
-* [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report
+* [Select a tile](service-dashboard-tiles.md) to open the underlying report
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements

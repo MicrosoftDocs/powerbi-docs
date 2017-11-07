@@ -40,7 +40,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-cursor.png)  
    
    This list contains:  
-   a.  the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
+   a.  the questions used to create [tiles ](service-dashboard-tiles.md)that are already pinned to the dashboard, and  
    b.  the name of tables in the [underlying dataset(s)](service-get-data.md).  
    
    You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for. Or, use a table name to help you word a new question.

@@ -36,7 +36,7 @@ This article covers the following.
 * [Delete a tile](#delete)
   
   > [!TIP]
-  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](powerbi-service-dashboard-tiles.md).
+  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](service-dashboard-tiles.md).
   > 
   > 
 
@@ -100,7 +100,7 @@ By default, selecting a tile takes you to the report where the tile was created 
 
 - - -
 ## Next steps
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](service-dashboard-tiles.md)
 
 [Dashboards in Power BI](service-dashboards.md)
 

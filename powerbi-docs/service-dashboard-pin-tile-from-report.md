@@ -23,7 +23,7 @@ ms.author: mihart
 ---
 # Pin a tile to a Power BI dashboard from a report
 ## Pinning tiles from a report
-One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within a [Power BI report](powerbi-service-reports.md). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
+One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within a [Power BI report](powerbi-service-reports.md). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
 
 And entire report pages can be pinned to a dashboard.  This is also known as pinning a *live* tile.  *Live* because you can interact with the tile on the dashboard and because, unlike individual visualization tiles, changes made in the report are synced with the dashboard. Read more about this below.
 
@@ -64,7 +64,7 @@ For more information, see [Pin an entire report page](service-dashboard-pin-live
 ## See also
 [Dashboards in Power BI](service-dashboards.md)
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](service-dashboard-tiles.md)
 
 [Reports in Power BI](powerbi-service-reports.md)
 

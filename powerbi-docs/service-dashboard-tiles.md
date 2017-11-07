@@ -24,7 +24,7 @@ ms.author: mihart
 Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](powerbi-mobile-tiles-in-the-iphone-app.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](powerbi-mobile-iphone-app-get-started.md).
 
 ## Dashboard tiles
-![](media/powerbi-service-dashboard-tiles/power-bi-dashboard.png)
+![](media/service-dashboard-tiles/power-bi-dashboard.png)
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
@@ -50,34 +50,34 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 
 And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md).
 
-  ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
+  ![](media/service-dashboard-tiles/add_widgetnew.png)
 
 ## Interacting with tiles on a dashboard
 ### Move and resize a tile
-Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md). Hover and select the handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) to resize the tile.
+Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md). Hover and select the handle ![](media/service-dashboard-tiles/resize-handle.jpg) to resize the tile.
 
 ### Hover over a tile to change the appearance and behavior
 1. Hover over the tile to display the ellipses.
    
-    ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
+    ![](media/service-dashboard-tiles/ellipses_new.png)
 2. Select the ellipses to open the tile action menu.
    
-    ![](media/powerbi-service-dashboard-tiles/power-bi-tile-menu.png)
+    ![](media/service-dashboard-tiles/power-bi-tile-menu.png)
    
     From here you can:
    
-   * [Open the report that was used to create this tile ](powerbi-service-reports.md) ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg)  
+   * [Open the report that was used to create this tile ](powerbi-service-reports.md) ![](media/service-dashboard-tiles/chart-icon.jpg)  
    
-   * [Open the worksheet that was used to create this tile ](powerbi-service-reports.md) ![](media/powerbi-service-dashboard-tiles/power-bi-open-worksheet.png)  
+   * [Open the worksheet that was used to create this tile ](powerbi-service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [View in focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
-     * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/powerbi-service-dashboard-tiles/export-icon.png)
-     * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-     * [Run insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
+     * [View in focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+     * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
+     * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Run insights ](powerbi-service-auto-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
-       ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
+       ![](media/service-dashboard-tiles/pin-icon.jpg)
    * [Remove the tile](service-dashboard-edit-tile.md)
-     ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
+     ![](media/service-dashboard-tiles/trash-icon.png)
 3. To close the action menu, select a blank area in the canvas.
 
 ### Select (click) a tile

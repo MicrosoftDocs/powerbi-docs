@@ -51,7 +51,7 @@ Sometimes a single number is the most important thing you want to track in your 
 9. Select **Go to dashboard**. There, you can [edit and move](service-dashboard-edit-tile.md) the pinned visualization.
 
 ## Next steps
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](service-dashboard-tiles.md)
 
 [Dashboards in Power BI](service-dashboards.md)
 

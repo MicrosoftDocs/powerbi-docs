@@ -56,7 +56,7 @@ The question box is the easiest way to make a number tile like this.
 If you do not see a question box at all, contact your system or tenant administrator.
 
 ## Next steps
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  
+[Dashboard tiles in Power BI](service-dashboard-tiles.md)  
 [Dashboards in Power BI](service-dashboards.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
