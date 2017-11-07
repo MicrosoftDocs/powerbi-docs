@@ -38,31 +38,31 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
 1. Upload your workbook to your OneDrive for Business.
 2. From Power BI, [connect to that workbook](service-excel-workbook-files.md).
-3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_workbookIcon.png) icon indicates this is an Excel workbook and a yellow asterisk indicates it's new.
+3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook and a yellow asterisk indicates it's new.
    
     Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, select the pencil icon to open it in Excel Online. Changes to the workbook in Excel Online may take a few minutes to be updated in the tiles.     
    
-   ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/power-bi-workbooks.png)
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Open the workbook in Power BI by selecting the workbook name.
    
-   ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/power-bi-opened.png)
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## Pin a range of cells to a dashboard
 One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
 1. Highlight the cells that you'd like to pin to a dashboard.
    
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectRange.png)
-2. Select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_PinTile_Small.png) icon. 
+    ![](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
+2. Select the pin ![](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) icon. 
 3. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * Existing dashboard: select the name of the dashboard from the dropdown.
    * New dashboard: type the name of the new dashboard.
    
-   ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog1.png)
+   ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Select **Pin**. A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard. 
    
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/power-bi-go-to-dashboard.png)
+    ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Select **Go to dashboard**. From here you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization. By default, selecting the pinned tile opens the workbook in Power BI.
 
 ## Pin an entire table or pivot chart to a dashboard
@@ -70,7 +70,7 @@ Follow the steps above except instead of selecting a range of cells, select an e
 
 To pin a table, select the entire range of the table and be sure to include the headers.  To pin a pivot table, be sure to include every visible part of the pivot table, including filters if used.
 
- ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectTable.png)
+ ![](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
 A tile created from a table or pivot table will show the entire table.  If you add/remove/filter rows or columns in the original workbook, they will also be added/removed/filtered in the tile.
 

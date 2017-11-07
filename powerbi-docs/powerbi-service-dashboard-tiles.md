@@ -43,7 +43,7 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 * [Power BI Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 * [a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 * [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
-* [Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+* [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
 * [Quick Insights](powerbi-service-auto-insights.md)
 * [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
