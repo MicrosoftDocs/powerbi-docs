@@ -56,7 +56,7 @@ You can then select the **Data Source Type** from the list. All of the data sour
 You will then want to fill in the information for the data source which includes the source information and credentials used to access the data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -119,7 +119,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 * OAuth is not a supported authentication scheme with the On-Premises Data Gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
 
 ## See Also
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

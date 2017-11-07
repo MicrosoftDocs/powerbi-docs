@@ -25,7 +25,7 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
  ![](media/sql-server-analysis-services-tabular-data/importanticon.png) **Important:**
 
-* In order to connect to a live Analysis Services server, an On-premises Data Gateway must be installed and configured by an administrator. For more information, see [On-premises Data Gateway](powerbi-gateway-onprem.md).
+* In order to connect to a live Analysis Services server, an On-premises Data Gateway must be installed and configured by an administrator. For more information, see [On-premises Data Gateway](service-gateway-onprem.md).
 * When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
 * [Q&A natural language querying](powerbi-service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
 
@@ -50,7 +50,7 @@ After you connect to the model, it will appear in your Power BI site in **My Wor
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services server is updated, the tiles will get auto-updated after 10 minutes.
 
 ## See also
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway](service-gateway-onprem.md)  
 [Manage Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

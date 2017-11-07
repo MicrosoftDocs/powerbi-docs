@@ -29,7 +29,7 @@ Let’s take a closer look.
 
 When connecting live, no data from the Tabular model is imported into Power BI Desktop. Each time you interact with a visualization, Power BI Desktop queries the Tabular model and calculates the results you see. You’re always looking at the latest data. Keep in-mind, Tabular models are highly secure. Items that appear in Power BI Desktop depend on your permissions for the Tabular model you’re connected to.
 
-When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, an On-premises Data Gateway must be installed and configured by an administrator. To learn more, see [On-premises Data Gateway](powerbi-gateway-onprem.md).
+When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, an On-premises Data Gateway must be installed and configured by an administrator. To learn more, see [On-premises Data Gateway](service-gateway-onprem.md).
 
 **Select items and import into Power BI Desktop** – When you connect with this option, you can select items like tables, columns, and measures in your Tabular model or perspective and load them into a Power BI Desktop model. You can use Power BI Desktop’s advanced Query Editor to further shape what you want. You can use Power BI Desktop’s modeling features to further model the data. No live connection between Power BI Desktop and the Tabular model is maintained. You can then explore your Power BI Desktop model offline or publish to your Power BI site.
 

@@ -56,7 +56,7 @@ You can then select the **Data Source Type** from the list.
 You will then want to fill in the information for the data source which includes the **Server**, **Username** and **Password**.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -116,7 +116,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## See Also
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -25,7 +25,7 @@ It's possible for users in your organization to access on-premises data (to whic
 
 Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.
 
-This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises Data Gateway](powerbi-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
+This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises Data Gateway](service-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
 
 <!-- Shared Requirements Include -->
 [!INCLUDE [gateway-onprem-requirements-include](includes/gateway-onprem-how-it-works-include.md)]

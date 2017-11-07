@@ -72,7 +72,7 @@ You will then want to fill in the information for the data source which includes
 The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance.
 
 > [!NOTE]
-> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -250,7 +250,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## See Also
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

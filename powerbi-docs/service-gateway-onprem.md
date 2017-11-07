@@ -30,7 +30,7 @@ You can use a single gateway with different services at the same time. If you ar
 > 
 
 <!-- Shared Requirements Include -->
-[!INCLUDE [gateway-onprem-requirements-include](includes/gateway-onprem-requirements-include.md)]
+[!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-requirements-include.md)]
 
 ### Limitations of Analysis Services live connections
 You can use a live connection against tabular or multidimensional instances.
@@ -45,15 +45,15 @@ You can use a live connection against tabular or multidimensional instances.
 * Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
 <!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](includes/gateway-onprem-datasources-include.md)]
+[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## Download and install the On-premises data gateway
 To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
+![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
 <!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-install-include](includes/gateway-onprem-install-include.md)]
+[!INCLUDE [gateway-onprem-install-include](./includes/gateway-onprem-install-include.md)]
 
 ## Install the gateway in personal mode
 > [!NOTE]
@@ -63,15 +63,15 @@ To download the gateway, select **Data Gateway** under the Downloads menu. Downl
 
 After the personal gateway is installed, you will need to launch the **Power BI Gateway - Personal Configuration Wizard**.
 
-![](media/powerbi-gateway-onprem/personal-gateway-launch-configuration.png)
+![](media/service-gateway-onprem/personal-gateway-launch-configuration.png)
 
 You will then need to sign into Power BI to register the gateway with the cloud service.
 
-![](media/powerbi-gateway-onprem/personal-gateway-signin.png)
+![](media/service-gateway-onprem/personal-gateway-signin.png)
 
 You will also need to supply the windows user name and password that the windows service will run as. You can specify a different Windows account from your own. The gateway service will run using this account.
 
-![](media/powerbi-gateway-onprem/personal-gateway-windows-service.png)
+![](media/service-gateway-onprem/personal-gateway-windows-service.png)
 
 After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
 
@@ -81,10 +81,10 @@ After the installation is complete, you will need to go to your datasets within 
 When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
 
 <!-- Account and Port information -->
-[!INCLUDE [gateway-onprem-accounts-ports-more](includes/gateway-onprem-accounts-ports-more.md)]
+[!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 <!-- How the gateway works -->
-[!INCLUDE [gateway-onprem-how-it-works-include](includes/gateway-onprem-how-it-works-include.md)]
+[!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the On-Premises Data Gateway](powerbi-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.

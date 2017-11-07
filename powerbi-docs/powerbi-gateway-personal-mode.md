@@ -118,7 +118,7 @@ Support for Spark is planned for the second half of the 2017 calendar year.
   * **Answer**: Yes, with the new version, both can run simultaneously.
 * Can I run the **On-premises data gateway (personal mode)** as a service?
   
-  * **Answer**: No. the **On-premises data gateway (personal mode)** can only run as an application. If you need to run the gateway as a service and/or in admin mode, you'll need to consider the [**On-premises data gateway**](powerbi-gateway-onprem.md) (previously known as the Enterprise gateway).
+  * **Answer**: No. the **On-premises data gateway (personal mode)** can only run as an application. If you need to run the gateway as a service and/or in admin mode, you'll need to consider the [**On-premises data gateway**](service-gateway-onprem.md) (previously known as the Enterprise gateway).
 * How often is the **On-premises data gateway (personal mode)** updated?
   
   * **Answer**: We plan to update the personal gateway monthly.

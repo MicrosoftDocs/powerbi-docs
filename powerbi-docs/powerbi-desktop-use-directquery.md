@@ -100,5 +100,5 @@ For more information about **DirectQuery**, check out the following resources:
 * [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)
-* [On-premises data gateway](powerbi-gateway-onprem.md)
+* [On-premises data gateway](service-gateway-onprem.md)
 

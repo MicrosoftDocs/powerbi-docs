@@ -98,7 +98,7 @@ You will then want to fill in the information for the data source which includes
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use an account that is created within Oracle instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -176,7 +176,7 @@ These errors could occur if either the Oracle client is not installed, or if it 
 For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md).
 
 ## See Also
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
