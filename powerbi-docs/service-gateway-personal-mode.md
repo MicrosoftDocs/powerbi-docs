@@ -23,7 +23,7 @@ ms.author: davidi
 # On-premises data gateway (personal mode)
 You can use on-premises data sources, and create Power BI reports and dashboards, using a gateway. A **gateway** is software that facilitates access to data that is stored on a private, on-premises network, then enables you to use that data in online services like the **Power BI service**. The **On-premises data gateway (personal mode)** is a recently released update to the Power BI gateway that allows individuals to install a gateway on their own computer, and gain access to on-premises data.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_00.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_00.png)
 
 > Note: The **On-premises data gateway (personal mode)** replaces the previously supported version of the personal gateway, which is called **Power BI Gateway - Personal**. The previous personal gateway will continue working only until July 31, 2017. See the sections below for information on how to update to the new version.
 > 
@@ -40,18 +40,18 @@ With the release of the **On-premises data gateway (personal mode)**, a collecti
 ## Installing On-premises data gateway (personal mode)
 To install the  **On-premises data gateway (personal mode)** without having the previous version of the gateway installed, select the gear icon in the **Power BI service** and select **Data Gateway**.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_02.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_02.png)
 
 You can also download the gateway from [this location](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409). You can follow the installation steps, and since the installation process allows you to install either version of the gateway (the standard gateway, which can be shared with others, or personal mode), make sure you select **On-premises data gateway (personal mode)** when prompted for which version of the gateway you want to install.
 
 ### Updating from the previous personal gateway
 If you already have the **Power BI Gateway - personal** gateway installed, you'll be prompted to install the new and enhanced version of the personal gateway when you view **Datasets** under **Settings** in the **Power BI service**.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_03.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_03.png)
 
 When you select a dataset, and then select **Gateway connection** you're notified that the new and enhanced version of the personal gateway is available. When you do, select **Install now**.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_04.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_04.png)
 
 > **Note:** If you're running the previous version of **Power BI Gateway - personal** as an elevated process, make sure you start the new gateway installation process elevated as well, so your dataset credentials can be automatically updated. Otherwise, you'll have to update dataset credentials manually.
 > 
@@ -59,11 +59,11 @@ When you select a dataset, and then select **Gateway connection** you're notifie
 
 You'll be taken through the update process, after which you'll see that the installation was successful. Don't close things out yet, there's one last step.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_05.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_05.png)
 
 Here's the last step. Once the new personal gateway is installed (and the last installation screen still visible), sign in to the **Power BI service**, and wait until you see that the gateway is online, as shown in the following image.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_06.png)
+![](media/service-gateway-personal-mode/gateway-personal-mode_06.png)
 
 If you've updated the personal gateway on the same machine as the previous gateway is installed, your credentials will update automatically, and all refresh activities will go through the new gateway. If the previous gateway was installed on a different machine, you'll be asked to update your credentials on certain datasets. In the previous image, notice the list of datasets in the window; the list will show datasets that might require updated credentials. Each dataset listed is a direct link that you simply click on to easily update your credentials.
 

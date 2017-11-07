@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Power BI Gateway - Personal
-> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md).
+> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -83,7 +83,7 @@ Setting up a gateway for the first time is a three step process:
 Let’s take a closer look at each step.
 
 ### Download and install a gateway
-> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md).
+> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -180,7 +180,7 @@ The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 
 If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## See also
-[On-premises data gateway (personal mode) - the new version of the personal gateway](powerbi-gateway-personal-mode.md)
+[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
 
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
 [Power BI Premium](service-premium.md)
