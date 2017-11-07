@@ -29,7 +29,7 @@ The HR department has the same reporting model across different companies, even 
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-![](media/powerbi-sample-human-resources-take-a-tour/hr1.png)
+![](media/sample-human-resources/hr1.png)
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
@@ -40,11 +40,11 @@ Let’s explore new hires first.
 
 1. In your workspace, select the **Dashboards** tab, and open the Human Resources dashboard.
 2. On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
-   ![](media/powerbi-sample-human-resources-take-a-tour/hr2.png)  
+   ![](media/sample-human-resources/hr2.png)  
    
    The Human Resources Sample report opens to the **New Hires** page.  
    
-   ![](media/powerbi-sample-human-resources-take-a-tour/hr3.png)
+   ![](media/sample-human-resources/hr3.png)
 
 Notice the following:
 
@@ -57,16 +57,16 @@ Can you find more insights; for example, a region where the gender split is not 
 
 Select the name of the dashboard from the top navbar to return to the dashboard.
 
-![](media/powerbi-sample-human-resources-take-a-tour/power-bi-breadcrumbs.png)
+![](media/sample-human-resources/power-bi-breadcrumbs.png)
 
 ## Compare current active and former employees
 Let’s explore data for current active employees and employees who no longer work for the company.
 
 On the dashboard, select the **Active Employee Count by Age Group** tile.  
-![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_activepie.png)
+![](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
 The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
-![](media/powerbi-sample-human-resources-take-a-tour/hr5.png)
+![](media/sample-human-resources/hr5.png)
 
 **Items of interest**:
 
@@ -86,7 +86,7 @@ Change the pie charts to show Separates data instead of Actives.
 5. Click the 50+ slice of the Separation Count by Age Group pie chart.
    
    Look at the Separations by Reason line chart in the lower-right corner. This chart is filtered to show voluntary separations.  
-   ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_sepsover50.png)
+   ![](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
    
    Notice the trend in the 50+ age group? During the latter part of the year more employees over age 50 are leaving voluntarily. This would be an area to investigate further with more data.
 6. You can follow the same steps for the **Active Employee Count by Gender** pie chart too, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
@@ -97,9 +97,9 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”.
    
-   ![](media/powerbi-sample-human-resources-take-a-tour/hr7.png)  
+   ![](media/sample-human-resources/hr7.png)  
 2. Select the **Northwest**﻿ check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
-   ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_badhirespage.png)  
+   ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
 3. Looking at the **Bad Hires by Gender** donut chart and clicking through the **Region** slicer we notice that East is the only region with more female than male bad hires.  
 4. Select the name of the dashboard from the top navbar to return to the dashboard.
 
@@ -108,10 +108,10 @@ The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type 
 
 1. Click in the Q&A question box. Notice before you even start typing, the Q&A box contains suggestions:
    
-   ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qabox.png)
+   ![](media/sample-human-resources/pbi_hr_sample_qabox.png)
 2. You can pick one of those suggestions, or type:  **show age group, gender and bad hires SPLY  where region is east**.  
    
-   ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qa_answer.png)
+   ![](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
    
    Notice most of the female bad hires are under 30.
 

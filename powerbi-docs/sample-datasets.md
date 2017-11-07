@@ -57,7 +57,7 @@ Eight samples are available for you to use.  Each one represents a different ind
 This industry sample analyzes a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability.
 
 ### Human Resources sample  ![](media/sample-datasets/power-bi-hr.png)
-[Take a tour of the HR sample](powerbi-sample-human-resources-take-a-tour.md)
+[Take a tour of the HR sample](sample-human-resources.md)
 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who've left.  By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
