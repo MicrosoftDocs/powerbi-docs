@@ -28,22 +28,22 @@ Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-azure-enterprise/getdata.png)
+    ![](media/service-connect-to-azure-enterprise/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-azure-enterprise/services.png)
+   ![](media/service-connect-to-azure-enterprise/services.png)
 3. Select **Microsoft Azure Enterprise** \> **Get**.
    
-   ![](media/powerbi-content-pack-azure-enterprise/mazureenterprise.png)
+   ![](media/service-connect-to-azure-enterprise/mazureenterprise.png)
 4. Provide the Azure Environment URL, the number months of data you want to import and your Azure Enterprise enrollment number. Your Azure Environment URL will be `https://ea.azure.com` or `https://ea.windowsazure.cn`. See details on [finding these parameters](#FindingParams) below.
    
-    ![](media/powerbi-content-pack-azure-enterprise/params.png)
+    ![](media/service-connect-to-azure-enterprise/params.png)
 5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal.
    
-    ![](media/powerbi-content-pack-azure-enterprise/creds.png)
+    ![](media/service-connect-to-azure-enterprise/creds.png)
 6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-   ![](media/powerbi-content-pack-azure-enterprise/dashboard.png)
+   ![](media/service-connect-to-azure-enterprise/dashboard.png)
 
 **What Now?**
 
@@ -67,7 +67,7 @@ Power BI reporting is available for EA Direct, Partner and Indirect Customers wh
 
 * This value is typically https://ea.azure.com, however you can check the URL once you sign in to confirm.
   
-    ![](media/powerbi-content-pack-azure-enterprise/params3.png)
+    ![](media/service-connect-to-azure-enterprise/params3.png)
 
 **Number of Months**
 
@@ -77,13 +77,13 @@ Power BI reporting is available for EA Direct, Partner and Indirect Customers wh
 
 * This is your Azure Enterprise enrollment number which can be found on the home screen of the [Azure Enterprise Portal](https://ea.azure.com/) under “Enrollment Detail”.
   
-    ![](media/powerbi-content-pack-azure-enterprise/params2.png)
+    ![](media/service-connect-to-azure-enterprise/params2.png)
 
 **Access Key**
 
 * Your key can be found in the Azure Enterprise portal, under "Download Usage" > "API Access Key"
   
-    ![](media/powerbi-content-pack-azure-enterprise/creds2.png)
+    ![](media/service-connect-to-azure-enterprise/creds2.png)
 
 **Additional Help**
 
