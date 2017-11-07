@@ -47,7 +47,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 2. Select from the dropdown or begin typing your own question.  
    
    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-list.png)
-3. As you type a question, Power BI Q&A picks the best [visualization ](powerbi-service-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question. Q&A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
+3. As you type a question, Power BI Q&A picks the best [visualization ](power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question. Q&A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-viz.png)
 4. When you type a query, Power BI looks for an answer in any dataset that has a tile on that dashboard.  If all the tiles are from *datasetA*, then your answer will come from *datasetA*.  If there are tiles from *datasetA* and *datasetB*, then Q&A will search for the best answer from those 2 datasets.
    

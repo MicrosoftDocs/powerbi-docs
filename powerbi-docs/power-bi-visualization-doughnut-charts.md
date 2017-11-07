@@ -47,7 +47,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> *
 ## Next steps
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

@@ -68,7 +68,7 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Pay attention to how [charts are sorted](power-bi-report-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
 
-For more visualization-specific guidance, see [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## Learning More about Best Practice Dashboard Design
 To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:

@@ -97,7 +97,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
    Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
 ## Next steps
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 

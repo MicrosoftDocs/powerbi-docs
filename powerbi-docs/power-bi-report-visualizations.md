@@ -30,7 +30,7 @@ Data visualizations (aka visuals) allow you to interact with your data to find b
   If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
 ## Add a visualization in Power BI
-[Create visualizations](power-bi-report-add-visualizations-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
+[Create visualizations](power-bi-report-add-visualizations-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
 Add a custom visualization that you created yourself or that you found in the [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
@@ -42,7 +42,7 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 When you have the visualization the way you want it, you can [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
 
 ## See also
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 [Reports in Power BI](powerbi-service-reports.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

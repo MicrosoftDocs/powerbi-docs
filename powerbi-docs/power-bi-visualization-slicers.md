@@ -104,7 +104,7 @@ Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.po
 ## See also
  [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
- [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

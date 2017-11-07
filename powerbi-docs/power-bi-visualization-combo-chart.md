@@ -113,7 +113,7 @@ Highlighting a column or line in a combo chart cross-filters the other visualiza
 
 [Visualizations in Power BI  reports](power-bi-report-visualizations.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

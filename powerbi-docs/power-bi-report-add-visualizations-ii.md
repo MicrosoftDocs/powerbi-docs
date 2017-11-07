@@ -43,7 +43,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
    ![](media/power-bi-report-add-visualizations-ii/pbi_part2_4bnew.png)
 2. From the Time table, drag **Month** into the **Axis** area.  
    ![](media/power-bi-report-add-visualizations-ii/pbi_part2_5newnew.png)
-3. [Change the visualization](power-bi-report-change-visualization-type.md) to an Area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](powerbi-service-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use. From the Visualizations pane, select the Area chart icon.
+3. [Change the visualization](power-bi-report-change-visualization-type.md) to an Area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use. From the Visualizations pane, select the Area chart icon.
 4. Sort the visualization by selecting the ellipses and choosing **Sort by Month**.
 5. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
    

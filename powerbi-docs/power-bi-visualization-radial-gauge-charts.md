@@ -106,7 +106,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 6. Optionally, continue formatting your gauge chart.
 
 ## See also
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
