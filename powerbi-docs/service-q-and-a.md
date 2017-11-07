@@ -45,7 +45,7 @@ For iOS on iPads, iPhones, and iPod Touch devices
 [Tips for asking questions in Q&A](service-q-and-a-tips.md):
 Learn how to talk to Q&A to get the best possible results.
 
-[Add featured questions to your datasets](powerbi-service-q-and-a-create-featured-questions.md)
+[Add featured questions to your datasets](service-q-and-a-create-featured-questions.md)
 and Q&A will suggest these questions to your colleagues.
 
 [Enable Q&A for your on-premises datasets](powerbi-service-q-and-a-direct-query.md)

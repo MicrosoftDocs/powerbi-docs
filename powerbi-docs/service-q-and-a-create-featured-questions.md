@@ -37,18 +37,18 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md).
 
 1. Select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
 2. To add to this list, select the gear icon in the top right corner of Power BI.  
-   ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_gearIcon2.jpg)
+   ![](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  
 4. Select **Add a question**.
    
-   ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-settings.png)
+   ![](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
 5. Type your question in the text box and select **Apply**.   Optionally, add another question by selecting **Add a question**.  
-   ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
+   ![](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 6. Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&A question box.   
-   ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-featured-q.png)
+   ![](media/service-q-and-a-create-featured-questions/power-bi-featured-q.png)
 7. The new featured question, **Sales by territory as a map**, is first in the list. Select it.  
 8. The answer displays as a filled map visualization.  
-   ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-filled-map.png)
+   ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ## See Also
 [Q&A in Power BI](service-q-and-a.md)  
