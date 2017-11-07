@@ -268,11 +268,11 @@ To learn more, see [Salesforce content pack for Power BI](powerbi-content-pack-s
 ## Troubleshooting
 When things go wrong, it’s usually because Power BI can’t sign into data sources, or the dataset connects to an on-premises data source and the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
 
-For more information about troubleshooting, see [Tools for troubleshooting refresh issues](powerbi-gateway-onprem-tshoot.md) and [Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md).
+For more information about troubleshooting, see [Tools for troubleshooting refresh issues](powerbi-gateway-onprem-tshoot.md) and [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
 ## See also
 [Tools for troubleshooting refresh issues](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)  
+[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 

@@ -47,7 +47,7 @@ If data in the .csv file on OneDrive is changing and those changes aren’t bein
 
 ## Next steps
 [Tools for troubleshooting refresh issues](powerbi-gateway-onprem-tshoot.md)
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
+[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

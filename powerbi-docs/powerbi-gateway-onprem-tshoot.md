@@ -371,7 +371,7 @@ When using the gateway for scheduled refresh, **Refresh History** can help you s
    
     ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
 
-For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md) article.
+For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
 
 ## See also
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
