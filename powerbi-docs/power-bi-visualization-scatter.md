@@ -26,7 +26,7 @@ A scatter chart always has two value axes to show one set of numerical data alon
 
 A bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
-![](media/powerbi-service-tutorial-scatter/power-bi-bubble-chart.png)
+![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
 ## When to use a scatter chart or bubble chart
 ### Scatter charts are a great choice:
@@ -50,38 +50,38 @@ A bubble chart replaces the data points with bubbles, with the bubble *size* rep
 2. From the Fields pane, select **Sales** > **Sales Per Sq Ft** and **Sales** > **Total Sales Variance %**.
 3. From the Fields pane, select **District > District**.
    
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_pre_convert.png)
+    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_pre_convert.png)
 4. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
-   ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_icon.png).
+   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
 5. Drag **District** from **Details** to **Legend**.
    
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_new.png)
+    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_new.png)
 
 We now have a scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
 
 ## Create a bubble chart
 1. From the Fields pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. 
    
-   ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_size.png)
+   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_size.png)
 2. Hover over a bubble.  The size of the bubble reflects the value of **This Year Sales**.
    
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_hover.png)
+    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Optionally, [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
 
 ## Considerations and Troubleshooting
 ### **Your scatter chart has only one data point**
 Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
-![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
+![](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
 Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
 Like a simple row number or ID field:
 
-![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+![](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
 Or if you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
-![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
+![](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](powerbi-desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
