@@ -451,7 +451,7 @@ To keep your report page from looking too confusing or too busy, be consistent i
 #### Sorting
 A really simple opportunity to provide faster insight is to set the sorting of visuals. For example, sorting bar charts in descending or ascending order based on the value in the bars enables you to quickly show significant incremental information without using more real estate.
 
-To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](powerbi-service-change-how-a-chart-is-sorted.md).
+To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](power-bi-report-change-sort.md).
 
 #### Chart interaction and interplay
 One of the most compelling feature of Power BI is the ability to edit the way charts interact with each other.  By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter which saves you real estate on your page. To do this, select **Visual Interactions** from the menubar.
