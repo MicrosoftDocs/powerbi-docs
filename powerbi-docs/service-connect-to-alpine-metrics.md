@@ -28,21 +28,21 @@ Connect to the [Alpine Metrics Sales Predictions content pack](https://app.power
 ## How to connect
 1. Select Get Data at the bottom of the left navigation pane.  
    
-    ![](media/powerbi-content-pack-alpine-metrics/getdata.png)
+    ![](media/service-connect-to-alpine-metrics/getdata.png)
 2. In the **Services** box, select **Get**.  
    
-    ![](media/powerbi-content-pack-alpine-metrics/services.png)
+    ![](media/service-connect-to-alpine-metrics/services.png)
 3. Select **AlpineMetrics Sales Predictions**, then select **Get**.  
    
-    ![](media/powerbi-content-pack-alpine-metrics/alpine.png)
+    ![](media/service-connect-to-alpine-metrics/alpine.png)
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your AlpineMetrics credentials.
    
-    ![](media/powerbi-content-pack-alpine-metrics/creds.png)
+    ![](media/service-connect-to-alpine-metrics/creds.png)
    
-    ![](media/powerbi-content-pack-alpine-metrics/creds2.png)
+    ![](media/service-connect-to-alpine-metrics/creds2.png)
 5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your account.
    
-    ![](media/powerbi-content-pack-alpine-metrics/dashboard.png)
+    ![](media/service-connect-to-alpine-metrics/dashboard.png)
 
 **What Now?**
 
