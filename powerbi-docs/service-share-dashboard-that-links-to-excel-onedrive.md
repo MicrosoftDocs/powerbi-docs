@@ -29,7 +29,7 @@ In Power BI, you can [connect to Excel workbooks on OneDrive for Business](servi
 ## Share a dashboard that contains workbook tiles
 To share a dashboard that links back to an Excel workbook on OneDrive for Business, see [Share a dashboard](powerbi-service-share-unshare-dashboard.md). The difference is that you have the option to modify the permissions for the linked Excel workbook before sharing.
 
-  ![Share dashboard dialog box](media/powerbi-service-share-dashboard-that-links-to-excel/pbi_share_workbk.png)
+  ![Share dashboard dialog box](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_share_workbk.png)
 
 1. Enter the email addresses for your colleagues.
 2. To enable your colleagues to view the Excel workbook from Power BI, select **Go to OneDrive for Business to set workbook permissions**.
@@ -46,7 +46,7 @@ When you [publish a content pack](service-organizational-content-pack-create-and
 1. In the **Create content pack** screen, enter email addresses, give the content pack a title and description, and upload an image.
 2. Select the dashboard and/or report that is linked to the Excel workbook on OneDrive for Business.
    
-    ![Excel workbook in a content pack](media/powerbi-service-share-dashboard-that-links-to-excel/pbi_contpack_workbk.png)
+    ![Excel workbook in a content pack](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Select **Go to OneDrive for Business to set workbook permissions**.
 4. On OneDrive, [modify the permissions](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) as needed.
 5. Select **Publish**.
@@ -54,7 +54,7 @@ When you [publish a content pack](service-organizational-content-pack-create-and
 ## Share a dashboard from a Power BI workspace
 Sharing a dashboard from a Power BI workspace is similar to sharing a dashboard from your own workspace, except that the files are located in an Office 365 workspace site, instead of your private OneDrive for Business. Modify the permissions for the Excel workbook before sharing the dashboard with people outside the workspace.
 
-![Share from OneDrive](media/powerbi-service-share-dashboard-that-links-to-excel/PBI_OneDriveShare.png)
+![Share from OneDrive](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
 ## Next steps
 * [Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
