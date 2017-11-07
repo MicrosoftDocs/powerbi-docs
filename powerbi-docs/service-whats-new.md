@@ -573,7 +573,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **June 16, 2015**
 
-* SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](powerbi-content-pack-sweetiq.md).
+* SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](service-connect-to-sweetiq.md).
 
 **June 9, 2015**
 

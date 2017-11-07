@@ -28,19 +28,19 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
 ## How to connect
 1. In the navigation pane on the left, click **Get Data.**
    
-    ![](media/powerbi-content-pack-sweetiq/GetData.png)
+    ![](media/service-connect-to-sweetiq/getdata.png)
 2. Select **SweetIQ** and click **Get.**
    
-    ![](media/powerbi-content-pack-sweetiq/sweetiq.png)
+    ![](media/service-connect-to-sweetiq/sweetiq.png)
 3. Provide your SweetIQ Client ID. This is typically an alpha-numeric value. For more details on finding this value, see below.
    
-    ![](media/powerbi-content-pack-sweetiq/Parameter.png)
+    ![](media/service-connect-to-sweetiq/parameter.png)
 4. Select **Key** authentication type and provide your Sweet IQ API Key. This is typically an alpha-numeric value. For more details on finding this value, see below.
    
-    ![](media/powerbi-content-pack-sweetiq/Credentials.png)
+    ![](media/service-connect-to-sweetiq/credentials.png)
 5. Power BI will start loading your data, which may take some time depending on the size of data in your account. Once the load has completed, you'll see a new dashboard, report and dataset in the left navigation pane.
    
-    ![](media/powerbi-content-pack-sweetiq/dashboard.png)
+    ![](media/service-connect-to-sweetiq/dashboard.png)
 
 **What Now?**
 
