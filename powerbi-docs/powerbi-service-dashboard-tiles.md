@@ -28,7 +28,7 @@ Dashboards and dashboard tiles are a feature of Power BI service, not Power BI D
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
-Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
+Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
 
@@ -48,7 +48,7 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 * [Quick Insights](powerbi-service-auto-insights.md)
 * [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
-And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md).
+And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md).
 
   ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
 

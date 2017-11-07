@@ -131,7 +131,7 @@ For more information, see [Tutorial: Slicers in Power BI](power-bi-visualization
 ### Standalone images
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-For more information, see [Add an image widget to a dashboard](powerbi-service-add-a-widget-to-a-dashboard.md).
+For more information, see [Add an image widget to a dashboard](service-dashboard-add-widget.md).
 
 ### Tables
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)

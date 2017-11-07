@@ -189,7 +189,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Dashboards***
 
-* [Vimeo video tile](powerbi-service-add-a-widget-to-a-dashboard.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
+* [Vimeo video tile](service-dashboard-add-widget.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
 
 ***Analyze in Excel***
 

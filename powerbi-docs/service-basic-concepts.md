@@ -151,7 +151,7 @@ Single-click
 * a dataset to explore it
 
 ### 2. **Dashboard with tiles**
-Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](powerbi-service-add-a-widget-to-a-dashboard.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![](media/service-basic-concepts/canvas.png)
 
