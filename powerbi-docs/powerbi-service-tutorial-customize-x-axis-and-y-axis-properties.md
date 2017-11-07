@@ -131,7 +131,7 @@ If the X-axis is categorized by the report owner as a date type, the **Type** op
 ## See also
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
+[Customize t](power-bi-visualization-customize-title-background-and-legend.md)[itles, backgrounds, and legends](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
