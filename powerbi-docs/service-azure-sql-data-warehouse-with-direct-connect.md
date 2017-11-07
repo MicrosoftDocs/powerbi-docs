@@ -40,7 +40,7 @@ The easiest way to move between your SQL Data Warehouse and Power BI is with the
 1. To get started, navigate to your SQL Data Warehouse instance in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
 2. Click the **Open in Power BI** button
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/openinpowerbi.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
 3. If we are not able to sign you in directly or if you do not have a Power BI account, you will need to sign in.
 4. You will be directed to the SQL Data Warehouse connection page, with the information from your SQL Data Warehouse pre-populated. Enter your credentials and hit connect to create a connection.
 
@@ -49,35 +49,35 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
 
 1. Select **Get Data** at the bottom of the left navigation pane.  
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/GetDatabutton.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 2. Within **Databases**, select **Get**.
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/databases.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/databases.png)
 3. Select **SQL Data Warehouse** \> **Connect**.
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/azuresqldatawarehouseconnect.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 4. Enter the necessary information to connect. The **Finding Parameters** section below shows where this data can be located in your Azure Portal.
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/servername.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/servernamewithadvanced.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/username.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
    
    > **Note**: The username will be a user that is defined in your Azure SQL Data Warehouse instance.
    > 
    > 
 5. Drill into the dataset by selecting the new tile or the newly created dataset, indicated by the asterisk. This dataset will have the same name as your database.
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/dataset2.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
 6. You can explore all of the tables and columns. Selecting a column will send a query back to the source, dynamically creating your visual. Filters will also be translated into queries back to your data warehouse. These visuals can be saved in a new report and pinned back to your dashboard.
    
-    ![](media/powerbi-azure-sql-data-warehouse-with-directquery/explore3.png)
+    ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## Finding Parameter Values
 Your fully qualified server name and database name can be found in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
 
-![](media/powerbi-azure-sql-data-warehouse-with-directquery/azureportal.png)
+![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 ## See also
 [Get started with Power BI](powerbi-service-get-started.md)  
