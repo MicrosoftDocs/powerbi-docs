@@ -159,7 +159,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Local File Support for Excel Reports](service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **April 28, 2016**
