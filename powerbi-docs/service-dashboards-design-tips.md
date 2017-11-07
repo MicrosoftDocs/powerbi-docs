@@ -47,7 +47,7 @@ Display your dashboard in [full screen](powerbi-service-dash-and-reports-fullscr
 
 ### Make the most important information biggest
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
-![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_card.png)
+![](media/service-dashboards-design-tips/pbi_card.png)
 
 But be sure to provide context.  
 

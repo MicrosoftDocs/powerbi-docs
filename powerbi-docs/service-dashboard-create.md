@@ -92,7 +92,7 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 
 [Dashboards in Power BI](service-dashboards.md)
 
-[Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md)
+[Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

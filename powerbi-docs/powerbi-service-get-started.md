@@ -128,7 +128,7 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 
 * [Connect to another dataset](service-get-data.md).
 * [Share your dashboard](service-share-dashboards.md) with your colleagues.
-* Read [tips for designing dashboards](powerbi-service-tips-for-designing-a-great-dashboard.md).
+* Read [tips for designing dashboards](service-dashboards-design-tips.md).
 * View your dashboards with a [Power BI app on a mobile device](powerbi-power-bi-apps-for-mobile-devices.md)
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
