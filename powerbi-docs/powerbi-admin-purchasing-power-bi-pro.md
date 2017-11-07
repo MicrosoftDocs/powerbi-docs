@@ -56,7 +56,7 @@ Then you can select **Start trial**.
 > * If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 > 
 > [!NOTE]
-> With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+> With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 > 
 > 
 
@@ -121,7 +121,7 @@ When you are in the service, you can verify that you have a Pro account by going
 ## Next steps
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
-[Extended Pro Trial activation](powerbi-extended-pro-trial.md)  
+[Extended Pro Trial activation](service-extended-pro-trial.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  

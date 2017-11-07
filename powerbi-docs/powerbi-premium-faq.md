@@ -112,7 +112,7 @@ Today we’re also simplifying the distinction between Power BI Pro and the free
 
 Users of the free Power BI service will benefit from access to all data sources, increased workspace storage limits, and higher refresh and streaming rates. These changes will be effective June 1, 2017, and you can read more at [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md). Power BI Desktop remains available for free.
 
-For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 
 ## Power BI Free
 **What capabilities are being added to the free service?**  
@@ -127,17 +127,17 @@ Changes to the free service will go into effect on June 1, 2017.
 **How will impacted users of the free service be notified of these changes?**  
 Active users of the free service impacted by the changes on June 1, 2017 will receive an email communication from Microsoft, as well as notifications when they sign into the Power BI service beginning May 3, 2017.
 
-Existing users of the free service who have been active within the past year can take advantage of the free, 12-month extended trial of Power BI Pro. The offer will deliver the full capabilities of Power BI Pro to ensure users have the appropriate time to adjust how you use the service. For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+Existing users of the free service who have been active within the past year can take advantage of the free, 12-month extended trial of Power BI Pro. The offer will deliver the full capabilities of Power BI Pro to ensure users have the appropriate time to adjust how you use the service. For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 
 **Will users lose access to their content (dashboards, reports) at that time?**  
 No. They will not lose access to any content they’ve uploaded to the Power BI service. Content shared with others may no longer be accessible by recipients on June 1, 2017. Likewise, at that time they may no longer have access to content others have shared with them.
 
-Existing users of the free service who have been active within the past year can take advantage of the free, 12-month extended trial of Power BI Pro. The offer will deliver the full capabilities of Power BI Pro to ensure users have the appropriate time to adjust how you use the service. For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+Existing users of the free service who have been active within the past year can take advantage of the free, 12-month extended trial of Power BI Pro. The offer will deliver the full capabilities of Power BI Pro to ensure users have the appropriate time to adjust how you use the service. For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 
 **How do users know if they’re eligible for the extended Power BI Pro trial?**  
 Please refer to the Extended Pro Trial [terms and conditions](https://aka.ms/power-bi-trial).
 
-For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 
 **What should users do if they’re not eligible for the extended Power BI Pro trial?**  
 Sign up for a standard 60-day Power BI Pro trial [here](https://app.powerbi.com/signupredirect?pbi_source=web).
@@ -212,7 +212,7 @@ Power BI Report Server is available to SQL Server customers with EE + SA license
 [Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
-[Extended Pro Trial activation](powerbi-extended-pro-trial.md)  
+[Extended Pro Trial activation](service-extended-pro-trial.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
