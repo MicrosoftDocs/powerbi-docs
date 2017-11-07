@@ -33,7 +33,7 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 ## Next steps
 * [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)
 * [Add a custom visualization to your report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
-* [Add a custom visualization to your report (Power BI Desktop)](powerbi-custom-visuals-use.md)
+* [Add a custom visualization to your report (Power BI Desktop)](power-bi-custom-visuals-use.md)
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Get started with Developer Tools for creating custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)
 * [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  

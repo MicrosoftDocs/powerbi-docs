@@ -72,7 +72,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)  
+[Use custom visualizations in Power BI Desktop](power-bi-custom-visuals-use.md)  
 [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md)  
 [Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  

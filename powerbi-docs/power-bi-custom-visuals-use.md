@@ -23,7 +23,7 @@ ms.author: mihart
 # Add a custom visual to a report (Desktop)
 You've [downloaded a custom visual template](service-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to import that custo visual template into a report so that it is added, as an option, to your Visualizations pane.
 
-![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
+![](media/power-bi-custom-visuals-use/pbi-custom-viz-icon.png)
 
 A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
@@ -34,26 +34,26 @@ A custom visual template is added to a specific report when imported. If you'd l
    
     On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.    
    
-      ![](media/powerbi-custom-visuals-use/power-bi-import.png)
+      ![](media/power-bi-custom-visuals-use/power-bi-import.png)
    
     **From the Visualization pane**
    
     In the **Visualizations** pane, choose **Insert (…)**.    
    
-      ![](media/powerbi-custom-visuals-use/InsertPane.png)
+      ![](media/power-bi-custom-visuals-use/insertpane.png)
    
     Select **Import a custom visual**.  
    
-      ![](media/powerbi-custom-visuals-use/InsertPane.png)
+      ![](media/power-bi-custom-visuals-use/insertpane.png)
 3. **Review the warning**.
    
     A custom visual has access to the data in the report, and when you share a report that contains a custom visuals, your colleagues may be able to access that same data. Take care to review the custom visual to ensure it comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific custom visual you obtained from the Office online store, through email, or from some other source.
    
-    ![](media/powerbi-custom-visuals-use/caution.png)
+    ![](media/power-bi-custom-visuals-use/caution.png)
 4. Navigate to the location where you saved the custom visual .pbiviz file and open it.
 5. An icon (also called a *template*) is added to your **Visualizations** pane.
    
-    ![](media/powerbi-custom-visuals-use/VisualUse.png)
+    ![](media/power-bi-custom-visuals-use/visualuse.png)
 6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
 7. Format the custom visual as you would any other visual.  From the **Visualizations** pane, select the paintroller icon. The formatting options available will vary by visual type.
 
