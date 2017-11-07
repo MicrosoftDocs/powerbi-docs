@@ -28,25 +28,25 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.  
    
-    ![](media/powerbi-content-pack-azure-audit-logs/getdata.png)
+    ![](media/service-connect-to-azure-audit-logs/getdata.png)
 2. In the **Services** box, select **Get**.  
    
-    ![](media/powerbi-content-pack-azure-audit-logs/services.PNG) 
+    ![](media/service-connect-to-azure-audit-logs/services.png) 
 3. Select **Azure Audit Logs** > **Get**.  
    
-   ![](media/powerbi-content-pack-azure-audit-logs/azureauditlogs.png)
+   ![](media/service-connect-to-azure-audit-logs/azureauditlogs.png)
 4. When prompted, enter your **Azure Subscription ID**. See details on finding your [subscription ID](#FindingParams) below.   
    
-    ![](media/powerbi-content-pack-azure-audit-logs/parameters.png)
+    ![](media/service-connect-to-azure-audit-logs/parameters.png)
 5. For **Authentication Method**, select **oAuth2** \> **Sign In**.
    
-    ![](media/powerbi-content-pack-azure-audit-logs/creds.png)
+    ![](media/service-connect-to-azure-audit-logs/creds.png)
 6. Enter your account credentials to finish the sign in process.
    
-    ![](media/powerbi-content-pack-azure-audit-logs/login.png)
+    ![](media/service-connect-to-azure-audit-logs/login.png)
 7. Power BI will retrieve your Azure Audit Log data and create a ready-to-use dashboard and report. 
    
-    ![](media/powerbi-content-pack-azure-audit-logs/dashboard.png)
+    ![](media/service-connect-to-azure-audit-logs/dashboard.png)
 
 **What Now?**
 
