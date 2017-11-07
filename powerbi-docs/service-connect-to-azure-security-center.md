@@ -28,22 +28,22 @@ Connect to the [Azure Security Center content pack](https://app.powerbi.com/getd
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-azure-security-center/getdata.png)
+   ![](media/service-connect-to-azure-security-center/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-azure-security-center/services.PNG)
+   ![](media/service-connect-to-azure-security-center/services.png)
 3. Select **Azure Security Center** \>  **Get**.
    
-   ![](media/powerbi-content-pack-azure-security-center/asc.png)
+   ![](media/service-connect-to-azure-security-center/asc.png)
 4. Specify your Subscription ID. See details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-azure-security-center/params.png)
+   ![](media/service-connect-to-azure-security-center/params.png)
 5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Azure credentials.
    
-    ![](media/powerbi-content-pack-azure-security-center/creds.png)
+    ![](media/service-connect-to-azure-security-center/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-azure-security-center/dashboard.png)
+     ![](media/service-connect-to-azure-security-center/dashboard.png)
 
 **What Now?**
 
