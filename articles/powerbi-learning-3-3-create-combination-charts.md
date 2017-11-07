@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Combination Charts"
-   description="Create your first combination chart"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="lnv66cTZ5ho"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Combination Charts
+description: Create your first combination chart
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: lnv66cTZ5ho
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # How to Use Combination Charts
-
 When you want to visualize two measures that have very different scales, such as revenue and units, a **combination chart** that shows a line and a bar with different axis scales is very useful. Power BI supports many different types of combination charts by default, including the popular **Line** and **Stacked Columns** charts.
 
 ![](media/powerbi-learning-3-3-create-combination-charts/3-3_1.png)
@@ -38,3 +37,4 @@ You can also split each column by category, by dragging a category into the Colu
 ![](media/powerbi-learning-3-3-create-combination-charts/3-3_3.png)
 
 Combination charts are an effective way to visualize multiple measures that have very different scales in a single visualization.
+

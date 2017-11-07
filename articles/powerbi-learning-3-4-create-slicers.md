@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Slicers"
-   description="Use slicers to visually segment your data"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="zHUjz_0iZf0"
-   featuredVideoThumb=""
-   courseDuration="7m"/>
+---
+title: Slicers
+description: Use slicers to visually segment your data
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: zHUjz_0iZf0
+featuredvideothumb: ''
+courseduration: 7m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create and format slicers
-
 Slicers are one of the most powerful types of visualizations, particularly as part of a busy report. A **slicer** is an on-canvas visual filter in **Power BI Desktop** that lets anyone looking at a report segment the data by a particular value, such as by year or by geographical location.
 
 To add a slicer to your report, select **Slicer** from the **Visualizations** pane.
@@ -38,3 +37,4 @@ Drag the field by which you want to slice and drop it top of the slicer placehol
 There are a few different options available to format your slicer. You can set it to accept multiple inputs at once, or toggle **Single Select** mode to use one at a time. You can also add a **Select All** option to your slicer elements, which is helpful when you have a particularly long list. Change the orientation of your slicer from the vertical default to horizontal, and it becomes a selection bar rather than a checklist.
 
 ![](media/powerbi-learning-3-4-create-slicers/3-4_3.png)
+

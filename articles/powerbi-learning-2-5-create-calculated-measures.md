@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Create Calculated Measures"
-   description="Define custom calculations to evaluate time-based functions"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="yn2bXVQJLx8"
-   featuredVideoThumb=""
-   courseDuration="14m"/>
+---
+title: Create Calculated Measures
+description: Define custom calculations to evaluate time-based functions
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: yn2bXVQJLx8
+featuredvideothumb: ''
+courseduration: 14m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create measures and work with time-based functions
-
 A *measure* is a calculation that exists in your Power BI data model. To create a measure, in **Report** view select **New Measure** from the **Modeling** tab.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_1.png)
@@ -46,3 +45,4 @@ Once you've created a new measure, it will appear in one of the tables on the **
 You can use a measure like any other table column: just drag and drop it onto the report canvas or visualization fields. Measures also integrate seamlessly with slicers, segmenting your data on the fly, which means you can define a measure once, and use it in many different visualizations.
 
 The **Calculate** DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals.
+

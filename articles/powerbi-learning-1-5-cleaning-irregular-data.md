@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Cleaning Irregularly Formatted Data"
-   description="You can tackle messy data in Power BI... see how"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="74KQmzdvFV8"
-   featuredVideoThumb=""
-   courseDuration="8m"/>
+---
+title: Cleaning Irregularly Formatted Data
+description: You can tackle messy data in Power BI... see how
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 74KQmzdvFV8
+featuredvideothumb: ''
+courseduration: 8m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Cleaning Irregularly Formatted Data
-
 While Power BI can import your data from almost any source, its visualization and modeling tools work best with columnar data. Sometimes your data will not be formatted in simple columns, which is often the case with Excel spreadsheets, where a table layout that looks good to the human eye is not necessarily optimal for automated queries. For example, the following spreadsheet has headers that span multiple columns.
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_1.png)
@@ -49,16 +48,15 @@ With Power BI, you can experiment with these transformations on your data, and d
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_5.png)
 
-
 ## Create visuals
 Once your data is in a format that Power BI can use, by transforming and cleansing the data, you can begin to create visuals.
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_4.png)
 
 ## What's Next
-
 **Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. You now know how to **get data** into Power BI Desktop, and how to *shape* or *transform* that data, so you can create compelling visuals.
 
 The next step in learning how Power BI works, and how to make it work *for you*, is to understand what goes into **modeling**. As you learned, a **dataset** is a basic building block of Power BI, but some datasets can be complex and based on many different sources of data. And sometimes, you need to add your own special touch (or *field*) to the dataset you create.
 
 You'll learn about **modeling**, and a whole lot more, in the next section. See you there!
+

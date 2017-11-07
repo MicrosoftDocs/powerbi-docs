@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Modify colors in charts and visuals"
-   description="Color your visual world with colors, shades, and scale"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="oNME83EAvLw"   
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Modify colors in charts and visuals
+description: Color your visual world with colors, shades, and scale
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: oNME83EAvLw
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # How to modify colors in charts and visuals
-
 There are many times when you might want to modify the colors used in charts or visuals. Power BI gives you lots of control over how colors are displayed. To get started, select a visual then in the **Visualizations** pane, click the **paintbrush** icon.
 
 ![](media/powerbi-learning-3-9a-modifying-colors/3-9a_1.png)
@@ -56,3 +55,4 @@ There are many other lines you can create for a visual, also found in the **Anal
 ![](media/powerbi-learning-3-9a-modifying-colors/3-9a_7.png)
 
 Lastly, you can create a border around an individual visualization, and like other controls, you can specify the color of that border as well.
+

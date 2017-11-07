@@ -1,41 +1,39 @@
-<properties
-   pageTitle="Create and Customize Simple Visualizations"
-   description="Customize three common types of visuals"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="IkJda4O7oGs"
-   featuredVideoThumb=""
-   courseDuration="8m"/>
+---
+title: Create and Customize Simple Visualizations
+description: Customize three common types of visuals
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: IkJda4O7oGs
+featuredvideothumb: ''
+courseduration: 8m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create and Customize Simple Visualizations
-
 In this article you learn how to create new bar charts, pie charts, and treemaps, and customize them to suit your reports.
 
 There are two different ways to create a new visualization in Power BI Desktop:
 
--   You can drag field names from the **Fields** pane, and drop them on the report canvas. By default your visualization appears as a table of data.
-
-    ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_1.png)
-
--   You can also click the type of visualization you want to create in the **Visualizations** pane. With this method, the default visual is a blank placeholder that resembles the type of visual you selected.
-
-    ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_2.png)
+* You can drag field names from the **Fields** pane, and drop them on the report canvas. By default your visualization appears as a table of data.
+  
+  ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_1.png)
+* You can also click the type of visualization you want to create in the **Visualizations** pane. With this method, the default visual is a blank placeholder that resembles the type of visual you selected.
+  
+  ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_2.png)
 
 Once you create your graph, map, or chart, you can begin dragging data fields onto the bottom portion of the **Visualization** pane to build and organize your visual. The available fields will change based on the type of visualization that you selected. As you drag and drop data fields, your visualization will automatically update to reflect changes.
 
@@ -52,3 +50,4 @@ Select the **paintbrush** icon on the **Visualizations** pane to make cosmetic c
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_5.png)
 
 The available options for cosmetic changes to your visual vary depending on the type of visual you have selected.
+

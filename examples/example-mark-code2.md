@@ -1,10 +1,20 @@
-﻿<properties pageTitle="Documentation Example - Mark code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
+---
+title: Documentation Example - Inline code
+metakeywords: ''
+description: This is an example document
+services: ''
+documentationcenter: ''
+solutions: ''
+videoid: ''
+scriptid: ''
 
-# Example - Mark Code #
-
-This sample has been taken from http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view to show how to add mark tags inside a snippet
+{}
 
 ---
+# Example - Mark Code
+This sample has been taken from http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view to show how to add mark tags inside a snippet
+
+- - -
 ...
 
 When we first created the Views\HelloWorld\Index.cshtml file, it contained the following code:
@@ -14,7 +24,7 @@ When we first created the Views\HelloWorld\Index.cshtml file, it contained the f
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 ````
-	
+
 The Razor code above is explicted setting the layout page. Examine the Views\_ViewStart.cshtml file, it contains the exact same Razor markup. TheViews\_ViewStart.cshtml file defines the common layout that all views will use, therefore you can comment out or remove that code from the  Views\HelloWorld\Index.cshtml file.
 
 ````
@@ -69,4 +79,4 @@ Also notice how the content in the Index.cshtml view template was merged with th
 
 ...
 
----
+- - -

@@ -1,29 +1,28 @@
-<properties
-   pageTitle="Visual hierarchies and drill-down"
-   description="Learn to drill into hierarchies, and manage how levels are shared"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="q8WDUAiTGeU"
-   courseDuration="5m"/>
+---
+title: Visual hierarchies and drill-down
+description: Learn to drill into hierarchies, and manage how levels are shared
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: q8WDUAiTGeU
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Visual hierarchies and drill-down behavior
-
 When you add a *date* field to a visual in the *Axis* field bucket, Power BI automatically adds a time hierarchy that includes *Year*, *Quarter*, *Month* and *Day*. By doing this, Power BI allows your visuals to have time-based interaction with those viewing your reports, by letting users drill-down through those different time levels.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_1.png)
@@ -45,3 +44,4 @@ There may be times when you don't want the hierarchy to be used for a visual. Yo
 You can also expand all data elements currently visible at once, rather than selecting a single quarter, or a single year. To do that, select the *Drill all* icon in the top left of the visual, which is a double-down arrow icon.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_5.png)
+

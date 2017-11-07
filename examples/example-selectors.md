@@ -1,8 +1,21 @@
-<properties pageTitle="Documentation Example - Selectors" description="This is an example document" title="Documentation Example - Selectors" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+---
+title: Documentation Example - Selectors
+description: This is an example document
+services: ''
+documentationcenter: ''
+metakeywords: ''
+solutions: ''
+videoid: ''
+scriptid: ''
 
+{}
+
+---
 # Documentation Example - Selectors
+> [!div class="op_single_selector"]
+> * [Windows Phone](http://link.com)
+> * [Android](http://link.com)
+> * [iOS](http://link.com)
+> 
+> 
 
-> [AZURE.SELECTOR]
-> - [Windows Phone](http://link.com)
-> - [Android](http://link.com)
-> - [iOS](http://link.com)

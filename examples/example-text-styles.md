@@ -1,15 +1,23 @@
-﻿<properties pageTitle="Documentation Example - Text Styles" description="This is an example document" title="Documentation Example - Text Styles" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+---
+title: Documentation Example - Text Styles
+description: This is an example document
+services: ''
+documentationcenter: ''
+metakeywords: ''
+solutions: ''
+videoid: ''
+scriptid: ''
 
+{}
 
-# Example - Text Styles #
+---
+# Example - Text Styles
 This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
 
 The content between the lines below demonstrates the use of various formatting and styles for text content.
 
----
-
-## Bold text ##
-
+- - -
+## Bold text
 The following Markdown syntax is used to create bold text:
 
 ````
@@ -18,8 +26,7 @@ The following Markdown syntax is used to create bold text:
 
 **This is bold** text
 
-## Italic text ##
-
+## Italic text
 The following Markdown syntax is used to apply italics to text:
 
 ````
@@ -28,10 +35,8 @@ The following Markdown syntax is used to apply italics to text:
 
 *This is in italics*
 
----
-
-## Bold and Italics text ##
-
+- - -
+## Bold and Italics text
 The following Markdown syntax is used to apply bold and italic formatting to text:
 
 ````
@@ -40,10 +45,8 @@ This content is in ***bold italics***
 
 This content is in ***bold italics***
 
----
-
-## Bold and Italics text on the same line ##
-
+- - -
+## Bold and Italics text on the same line
 The following Markdown syntax is used to apply bold and italic formatting to text right next to each other:
 
 ````
@@ -52,10 +55,8 @@ The following Markdown syntax is used to apply bold and italic formatting to tex
 
 **bold***italics* together
 
----
-
-## Blockquote ##
-
+- - -
+## Blockquote
 The following Markdown syntax is used to create a blockquote:
 
 ````
@@ -63,5 +64,7 @@ The following Markdown syntax is used to create a blockquote:
 ````
 
 > This is content within a Blockquote
+> 
+> 
 
----
+- - -

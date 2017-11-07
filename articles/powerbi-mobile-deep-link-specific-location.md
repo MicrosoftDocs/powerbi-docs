@@ -1,27 +1,26 @@
-<properties 
-   pageTitle="Create a link to a specific location in the Power BI mobile apps"
-   description="Learn how to create a deep link to a specific dashboard, tile, or report in the Power BI mobile app with a uniform resource identifier (URI)."
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="erikre" 
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
- 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/13/2017"
-   ms.author="maggies"/>
+---
+title: Create a link to a specific location in the Power BI mobile apps
+description: Learn how to create a deep link to a specific dashboard, tile, or report in the Power BI mobile app with a uniform resource identifier (URI).
+services: powerbi
+documentationcenter: ''
+author: maggiesMSFT
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/13/2017
+ms.author: maggies
+
+---
 # Create a link to a specific location in the Power BI mobile apps
-
 You can create and use a uniform resource identifier (URI) to link to a specific location (a *deep link*) within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10.
 
 URI links can point directly to dashboards, tiles, and reports.
@@ -29,14 +28,12 @@ URI links can point directly to dashboards, tiles, and reports.
 The destination of the deep link determines the format of the URI. Follow these steps to create deep links to different locations. 
 
 ## Open the Power BI mobile app
-
 Use this URI to open the Power BI mobile app on any device:
 
     mspbi://app/
 
 
 ## Open to a specific dashboard
-
 This URI opens the Power BI mobile app to a specific dashboard:
 
     mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
@@ -52,7 +49,6 @@ mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60
 Note the ampersand (&) between the two.
 
 ## Open to a specific tile in focus
-
 This URI opens a specific tile in focus in the Power BI mobile app:
 
     mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
@@ -70,7 +66,6 @@ Note the ampersand (&) between the two.
 If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>`
 
 ## Open to a specific report
-
 This URI opens a specific report in the Power BI mobile app:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
@@ -80,7 +75,6 @@ To find the 36-character report object id, navigate to the specific report in th
 https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
 
 ## Open to a specific report page
-
 This URI opens a specific report page in the Power BI mobile app:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
@@ -92,7 +86,6 @@ For example, see the highlighted section of this URL:
 https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
 
 ## Open in full-screen mode
-
 Add the parameter in bold to open to a specific report in full-screen mode:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
@@ -102,7 +95,6 @@ For example:
 mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
 
 ## Add context (optional)
- 
 You can also add context in the string. Then if you need to contact us, we can use that context to filter our data to your app. Add `&context=<app-name>` to the link
 
 For example, see the highlighted section of this URL: 
@@ -110,11 +102,10 @@ For example, see the highlighted section of this URL:
 https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
 
 ## Next steps
-
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
 
--   [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)
--   Follow @MSPowerBI on Twitter
--   Join the conversation at the [Power BI Community](http://community.powerbi.com/)
--   [Get started with Power BI](powerbi-service-get-started.md)
+* [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)
+* Follow @MSPowerBI on Twitter
+* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* [Get started with Power BI](powerbi-service-get-started.md)
 

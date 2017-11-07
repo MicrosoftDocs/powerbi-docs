@@ -1,29 +1,28 @@
-<properties
-   pageTitle="Review and What's Next"
-   description="Review what you learned in this introduction to Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId=""
-   courseDuration="5m"/>
+---
+title: Review and What's Next
+description: Review what you learned in this introduction to Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Review this first section of Guided Learning
-
 Let’s do a quick review of what we covered in this first section.
 
 **Power BI** is a collection of software services, apps, and connectors that work together to turn your data into interactive insights. You can use data from single basic sources, such as an Excel workbook, or pull data in from multiple databases and cloud sources to create complex datasets and reports. Power BI can be as straightforward as you want, or as enterprise-ready as your complex global business requires.
@@ -34,11 +33,11 @@ Power BI consists of three main elements – the **Power BI Desktop**, the **Pow
 
 We discussed the basic building blocks in Power BI too, which are:
 
--   **Visualizations** – a visual representation of data, sometimes just called visuals
--   **Datasets** – a collection of data that Power BI uses to create visualizations
--   **Reports** – a collection of visuals from a dataset, spanning one or more pages
--   **Dashboards** – a single page collection of visuals, built from a report
--   **Tiles** – a single visualization found in a report or dashboard
+* **Visualizations** – a visual representation of data, sometimes just called visuals
+* **Datasets** – a collection of data that Power BI uses to create visualizations
+* **Reports** – a collection of visuals from a dataset, spanning one or more pages
+* **Dashboards** – a single page collection of visuals, built from a report
+* **Tiles** – a single visualization found in a report or dashboard
 
 From there, we took a look at Power BI in a video tour with our Tour Guide, **Will Thompson**. Will gave us a quick overview of how you can analyze and visualize data with Power BI.
 
@@ -50,18 +49,18 @@ In the **Power BI service**, we created a dashboard with just a few clicks. We c
 We also used natural language queries, called **Q & A**, to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a **refresh schedule** for our data, so we know when we go back to the Power BI service, that data will be fresh.
 
 ## What's Next
-
 **Congratulations!** You've completed the first section of the **Guided Learning** course for Power BI. You now have a firm foundation of knowledge to move on to the next section, **Getting Data**, which is the next step in the logical flow of work for Power BI.
 
 We mentioned this before, but it's worth restating: this course builds your knowledge by following the common flow of work in Power BI:
 
--   Bring data into **Power BI Desktop**, and create a report.
--   **Publish** to the Power BI service, where you create new visualizations or build dashboards
--   **Share** your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in **Power BI Mobile** apps
+* Bring data into **Power BI Desktop**, and create a report.
+* **Publish** to the Power BI service, where you create new visualizations or build dashboards
+* **Share** your dashboards with others, especially people who are on the go
+* View and interact with shared dashboards and reports in **Power BI Mobile** apps
 
 ![](media/powerbi-learning-0-4-summary-of-intro-to-power-bi/c0a1_1.png)
 
 You might not do all that work yourself - some people will only view dashboards in the service that were created by someone else. That's fine, but because *you'll* go through all the sections in this course, you'll *understand* how those dashboards were created, and how they connected to the data... and you might even decide to create one of your own.
 
 See you in the next section!
+

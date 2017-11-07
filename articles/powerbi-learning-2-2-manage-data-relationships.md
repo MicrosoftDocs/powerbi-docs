@@ -1,30 +1,29 @@
-<properties
-   pageTitle="How to Manage Your Data Relationships"
-   description="See and manage data relationships in Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="MqNX5olPGGI"
-   featuredVideoThumb=""
-   courseDuration="9m"/>
+---
+title: How to Manage Your Data Relationships
+description: See and manage data relationships in Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: MqNX5olPGGI
+featuredvideothumb: ''
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # How to Manage Your Data Relationships
-
 Power BI allows you to visually set the relationship between tables or elements. To see a diagrammatic view of your data, use the **Relationship view**, found on the far left side of the screen next to the Report canvas.
 
 ![](media/powerbi-learning-2-2-manage-data-relationships/2-2_1.png)
@@ -48,3 +47,4 @@ Your options for Cardinality are *Many to One*, and *One to One*. *Many to One* 
 By default, relationships will be set to cross-filter in both directions. Cross-filtering in just one direction limited some of the modeling capabilities in a relationship.
 
 Setting accurate relationships between your data allows you to create complex calculations across multiple data elements.
+

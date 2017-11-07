@@ -1,26 +1,25 @@
-<properties 
-   pageTitle="Install and use apps, with dashboards and reports, in Power BI"
-   description="In Power BI, apps bring related dashboards and reports together, all in one place."
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="erikre" 
-   editor=""
-   tags=""
-   qualityFocus="monitoring"
-   qualityDate="10/02/2017"/>
- 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/12/2017"
-   ms.author="maggies"/>
+---
+title: Install and use apps, with dashboards and reports, in Power BI
+description: In Power BI, apps bring related dashboards and reports together, all in one place.
+services: powerbi
+documentationcenter: ''
+author: maggiesMSFT
+manager: erikre
+editor: ''
+tags: ''
+qualityfocus: monitoring
+qualitydate: 10/02/2017
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/12/2017
+ms.author: maggies
+
+---
 # Install and use apps, with dashboards and reports, in Power BI
-
 In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](powerbi-content-packs-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
 ![Apps in Power BI](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
@@ -32,11 +31,9 @@ With apps, whenever the app author releases updates, you automatically see the c
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
 
 ## Install an app
-
 You can install apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. 
 
 ### Get a direct link to an app
-
 The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
 
 **On your computer** 
@@ -52,29 +49,25 @@ When you click the link in email on your mobile device, the app installs automat
 ![App content list on mobile device](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 
 ### Get the app from Microsoft AppSource
-
 You can also find and install any apps that you have access to from Microsoft AppSource. 
 
 1. Select **Apps** ![Apps in the left navigation pane](media/powerbi-what-are-apps/power-bi-apps-bar.png) > **Get apps**. 
-
+   
      ![The Get apps icon](media/powerbi-what-are-apps/power-bi-service-apps-get-apps-oppty.png)
-
-3. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
-
+2. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
+   
      ![In AppSource under My organization](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
-
-2. Select **Get it now** to add it to your Apps page. 
+3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-
 Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](powerbi-service-interact-with-a-report-in-reading-view.md). 
 
 You can't save changes you make, but you can always [export the data to Excel ](powerbi-service-export-data.md) from a table or other visual in a report.
 
 ![Export data from a Power BI visual](media/powerbi-what-are-apps/power-bi-service-export-data-visual.png)
 
-
 ## Next steps
-- [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
-- [Power BI apps for external services](powerbi-content-packs-services.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
+* [Power BI apps for external services](powerbi-content-packs-services.md)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

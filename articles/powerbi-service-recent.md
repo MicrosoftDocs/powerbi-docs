@@ -1,28 +1,27 @@
-﻿<properties
-   pageTitle="Display recently-visited content in Power BI"
-   description="documentation for recents in Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="mihart"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   featuredVideoId="G26dr2PsEpk"
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Display recently-visited content in Power BI
+description: documentation for recents in Power BI
+services: powerbi
+documentationcenter: ''
+author: mihart
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: G26dr2PsEpk
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="08/17/2017"
-   ms.author="mihart"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 08/17/2017
+ms.author: mihart
 
+---
 # **Recent** content in Power BI service
-
 ![](media/powerbi-service-recent/power-bi-recent-screen.png)
 
 ## What is recent content
@@ -35,7 +34,6 @@ Watch Amanda demonstrate how **Recent** content lists are populated, then follow
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 ## Display recent content
-
 To see your five most-recently visited items, from the left navigation, select the arrow to the right of **Recent**.  From here you can select recent content to open it. Only the five most-recent items are listed.
 
 ![](media/powerbi-service-recent/power-bi-recent-flyout-new.png)
@@ -46,8 +44,8 @@ If you have more than five recently-visited items, select **See all** to open th
 
 From here you can interact with the content as you would on the individual [**Dashboards**](powerbi-service-dashboards.md), [**Reports**](powerbi-service-reports.md), and **Workbooks** tabs, and on the [**Apps**](/powerbi-service-what-are-apps.md) screen.
 
-##  Next steps
-
+## Next steps
 [Power BI service Apps](powerbi-service-what-are-apps.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

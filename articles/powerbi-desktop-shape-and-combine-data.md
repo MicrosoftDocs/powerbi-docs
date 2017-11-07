@@ -1,43 +1,42 @@
-<properties
-   pageTitle="Shape and combine data in Power BI Desktop"
-   description="Shape and combine data in Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Shape and combine data in Power BI Desktop
+description: Shape and combine data in Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
+
+---
 # Shape and combine data in Power BI Desktop
-
 With **Power BI Desktop**, you can connect to many different types of data sources, then shape the data to meet your needs. *Shaping* data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. *Combining* data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.
 
 This document demonstrates how to shape a query using Power BI Desktop, highlighting some of the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md).
 
-It’s useful to know that the **Query Editor** in Power BI Desktop makes ample use of right-click menus, as well as the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
+It’s useful to know that the **Query Editor** in Power BI Desktop makes ample use of right-click menus, as well as the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
 
 ## Shape Data
+When you shape data in the Query Editor, you’re providing step-by-step instructions (that Query Editor carries out for you) to adjust the data as Query Editor loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
 
-When you shape data in the Query Editor, you’re providing step-by-step instructions (that Query Editor carries out for you) to adjust the data as Query Editor loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
-
-The steps you specify (such as rename a table, transform a data type, or delete columns) are recorded by Query Editor, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specify. This process occurs whenever you use the Query Editor feature of Power BI Desktop, or for anyone who uses your shared query, such as on the **Power BI** service. Those steps are captured, sequentially, in the **Query Settings** pane under **Applied Steps**.
+The steps you specify (such as rename a table, transform a data type, or delete columns) are recorded by Query Editor, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specify. This process occurs whenever you use the Query Editor feature of Power BI Desktop, or for anyone who uses your shared query, such as on the **Power BI** service. Those steps are captured, sequentially, in the **Query Settings** pane under **Applied Steps**.
 
 The following image shows the **Query Settings** pane for a query that has been shaped – we’ll go through each of those steps in the next few paragraphs.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QuerySettingsFinished.png)
 
-Using the retirement data from [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664), which we found by connecting to a Web data source, let’s shape that data to fit our needs.
+Using the retirement data from [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664), which we found by connecting to a Web data source, let’s shape that data to fit our needs.
 
 For starters, one column's scores were not automatically transformed from text to numbers when Query Editor loaded the table, and we need them to be numbers. No problem – just right-click the column header, and select **Change Type \> Whole Number** to change them. To choose more than one column, first select a column then hold down **SHIFT**, select additional adjacent columns, and then right-click a column header to change all selected columns. You can also use the **CTRL** key to choose non-adjacent columns.
 
@@ -53,11 +52,9 @@ Note that in **Query Settings**, the **Applied Steps** reflect any shaping steps
 
 Before we can work with this query, we need to make a few changes to get its data where we want it:
 
--   *Remove the first column* – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this data source being a Web-based table
-
--   *Fix a few Errors* – one of the columns, **Health care quality**, contains a few ties in states' rankings, which was noted on the website by having the text *(tie)* after their numbers. That works well on the website, but it requires that we transform the column from text to data manually. It's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query
-
--   *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
+* *Remove the first column* – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this data source being a Web-based table
+* *Fix a few Errors* – one of the columns, **Health care quality**, contains a few ties in states' rankings, which was noted on the website by having the text *(tie)* after their numbers. That works well on the website, but it requires that we transform the column from text to data manually. It's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query
+* *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
 
 To remove the first column, simply select the column and choose the **Home** tab from the ribbon, then **Remove Columns** as shown in the following figure.
 
@@ -67,7 +64,7 @@ Next we need to address the text column, and transform it into numbers. At first
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Error.png)
 
-There are a few ways to get more information about each error. You can select the cell (without clicking on the word **Error**), or click the word **Error** directly. If you select the cell *without* clicking directly on the word **Error**, Query Editor displays the error information on the bottom of the window.
+There are a few ways to get more information about each error. You can select the cell (without clicking on the word **Error**), or click the word **Error** directly. If you select the cell *without* clicking directly on the word **Error**, Query Editor displays the error information on the bottom of the window.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ErrorInfo.png)
 
@@ -85,17 +82,17 @@ Since Query Editor records steps sequentially, we can select the step prior to c
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QueryStep2.png)
 
-Okay, now we can fix those values, and *then* change the type. Since Query Editor records the steps sequentially, yet independently of each other, you can move each **Applied Step** up or down in the sequence. Just right-click any step, and Query Editor provides a menu that lets you do the following: **Rename**, **Delete**, **Delete** **Until End** (remove the current step, and all subsequent steps too), **Move Up**, or **Move Down**.
+Okay, now we can fix those values, and *then* change the type. Since Query Editor records the steps sequentially, yet independently of each other, you can move each **Applied Step** up or down in the sequence. Just right-click any step, and Query Editor provides a menu that lets you do the following: **Rename**, **Delete**, **Delete** **Until End** (remove the current step, and all subsequent steps too), **Move Up**, or **Move Down**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QueryStepReorder.png)
 
-In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Query Editor will automatically insert a new step directly after the currently selected **Applied Step**. Let's give that a try.
+In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Query Editor will automatically insert a new step directly after the currently selected **Applied Step**. Let's give that a try.
 
 First, we select the **Applied Step** prior to changing the type of the **Health care quality** column. Then we replace the values that have the text "(tie)" in the cell so that only the number remains. Right-click the cell that contains "35 (tie)" and select *Replace Values...* from the menu that appears. Note which **Applied Step** is currently selected (the step prior to changing the type).
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ReplaceValues.png)
 
-Since we're inserting a step, Query Editor warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query Editor to demonstrate how you can create, delete, insert, and reorder steps, we'll push ahead and select **Insert**.
+Since we're inserting a step, Query Editor warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query Editor to demonstrate how you can create, delete, insert, and reorder steps, we'll push ahead and select **Insert**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_InsertStep.png)
 
@@ -107,7 +104,7 @@ The following screen shows the three **Replaced Value** steps in **Query Setting
 
 **Note:** You can also **Remove Errors** (using the ribbon or the right-click menu), which removes any rows that have errors. In this case it would’ve removed all the states that had "*(tie)*" from our data, and we didn’t want to do that – we like all the states, and want to keep them in the table.
 
-Okay that was a little involved, but it was a good example of how powerful and versatile Query Editor can be.
+Okay that was a little involved, but it was a good example of how powerful and versatile Query Editor can be.
 
 Lastly, we want to change the name of that table to something descriptive. When we get to creating reports, it’s especially useful to have descriptive table names, especially when we connect to multiple data sources, and they’re all listed in the **Fields** pane of the **Report** view.
 
@@ -118,7 +115,6 @@ Changing the table name is easy: in the **Query Settings** pane, under **Propert
 Okay, we’ve shaped that data to the extent we need to. Next let’s connect to another data source, and combine data.
 
 ## Combine Data
-
 That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
 
 We’re in luck: there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. Here’s the Web resource for state abbreviations:
@@ -127,33 +123,35 @@ We’re in luck: there’s another public data source that does just that, but i
 
 From the **Home** ribbon in Query Editor, we select **New Source \> Web** and type the address, select OK, and the Navigator shows what it found on that Web page.
 
- ![](media/powerbi-desktop-shape-and-combine-data/Designer_GSG_USStateAbbreviationsNavigator.png)
+ ![](media/powerbi-desktop-shape-and-combine-data/Designer_GSG_USStateAbbreviationsNavigator.png)
 
 We select **Table[edit]** because that includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down to what we want.
 
 > **Tip:** Is there a faster or easier way to accomplish the steps below? Yes, we could create a *relationship* between the two tables, and shape the data based on that relationship. The following steps are still good to learn for working with tables, just know that relationships can help you quickly use data from multiple tables.
+> 
+> 
 
-To get this data into shape, we take the following steps:
+To get this data into shape, we take the following steps:
 
--   Remove the top two rows – they’re a result of the way that Web page’s table was created, and we don’t need them. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
+* Remove the top two rows – they’re a result of the way that Web page’s table was created, and we don’t need them. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveTopRows.png)
 
 The **Remove Top Rows** window appears, letting you specify how many rows you want to remove.
 
--   Remove the bottom 26 rows – they’re all the territories, which we don’t need to include. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Bottom Rows**.
+* Remove the bottom 26 rows – they’re all the territories, which we don’t need to include. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Bottom Rows**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveBottomRows.png)
 
--   Since the RetirementStats table doesn't have information for Washington DC, we need to filter it from our list. Select the drop-down arrow beside the Region Status column, then clear the checkbox beside **Federal district**.
+* Since the RetirementStats table doesn't have information for Washington DC, we need to filter it from our list. Select the drop-down arrow beside the Region Status column, then clear the checkbox beside **Federal district**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_FilterDC.png)
 
--   Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column2**, **Column3**, and then **Column5** through **Column10**. First select Column2, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
+* Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column2**, **Column3**, and then **Column5** through **Column10**. First select Column2, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveColumns.png)
 
--   Use the first row as headers – since we removed the top three rows, the current top row is the header we want. You can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon.
+* Use the first row as headers – since we removed the top three rows, the current top row is the header we want. You can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_UseFirstRowAsHeaders.png)
 
@@ -161,7 +159,7 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 **Another Note:** When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
 
--   Rename the columns, and the table itself – as usual, there are a few ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
+* Rename the columns, and the table itself – as usual, there are a few ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Rename.png)
 
@@ -204,15 +202,11 @@ To apply changes and close Query Editor, select Close & Apply from the **Home** 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_CloseAndApply.png)
 
 ## More Information
-
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+* [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+* [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
+* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
 
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
-
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
-
--   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
-
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   

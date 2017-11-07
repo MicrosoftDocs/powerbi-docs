@@ -1,27 +1,26 @@
-﻿<properties 
-   pageTitle="Forgot your password for Power BI?"
-   description="Forgot your password for Power BI?"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="erikre" 
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
- 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="06/28/2017"
-   ms.author="asaxton"/>
+---
+title: Forgot your password for Power BI?
+description: Forgot your password for Power BI?
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 06/28/2017
+ms.author: asaxton
+
+---
 # Forgot your password for Power BI?
-
 If you've forgotten your password, you can use the following link to request a password reset.
 
 <https://passwordreset.microsoftonline.com>
@@ -32,6 +31,10 @@ If you are still having issues accessing your account you can try contacting the
 
 *1-800-642-7676*
 
-> [AZURE.NOTE] Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
+> [!NOTE]
+> Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
+> 
+> 
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

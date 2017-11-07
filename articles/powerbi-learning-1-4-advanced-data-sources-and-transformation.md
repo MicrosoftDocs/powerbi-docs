@@ -1,29 +1,28 @@
-<properties
-   pageTitle="More Advanced Data Sources and Transformation"
-   description="Connect and combine two data sources - it's easy"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="8WsY0R2V_bw"
-   courseDuration="8m"/>
+---
+title: More Advanced Data Sources and Transformation
+description: Connect and combine two data sources - it's easy
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 8WsY0R2V_bw
+courseduration: 8m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # More Advanced Data Sources and Transformation
-
 In this article, we investigate some advanced data import and cleaning techniques for **Power BI Desktop**. Once you've shaped your data in **Query Editor** and brought it into **Power BI Desktop**, you can look at it in a few different ways. There are three views in Power BI Desktop: **Report** view, **Data** view, and **Relationships** view. You see each view by selecting its icon in the upper left side of the canvas. In the following image, **Report** view is selected. The yellow bar beside the icon indicates which view is active.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_1.png)
@@ -45,3 +44,4 @@ You can also merge and append queries, and turn multiple tables (or data from va
 Finally, the **Add Custom Column** tool gives advanced users the option of writing query expressions from scratch using the powerful M language. You can add a custom column based on M query language statements, and get your data just the way you want it.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_4.png)
+

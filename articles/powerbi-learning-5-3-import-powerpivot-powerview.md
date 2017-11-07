@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Import Power View and Power Pivot to Power BI"
-   description="Excel workbooks with Power tools work seamlessly with Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="nVkpj0tB4Yk"
-   featuredVideoThumb=""
-   courseDuration="4m"/>
+---
+title: Import Power View and Power Pivot to Power BI
+description: Excel workbooks with Power tools work seamlessly with Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: nVkpj0tB4Yk
+featuredvideothumb: ''
+courseduration: 4m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Import Excel files with data models and Power View sheets
-
 If you use any of Excel's advanced BI features like **Power Query** (called **Get & Transform** in Excel 2016), to query and load data, **Power Pivot** to create powerful data models, and **Power View** to create dynamic reports, you can import those into Power BI, too.
 
 ![](media/powerbi-learning-5-3-import-powerpivot-powerview/5-3_1.png)
@@ -36,3 +35,4 @@ If your workbook has **Power View sheets**, no problem. Power BI will re-create 
 ![](media/powerbi-learning-5-3-import-powerpivot-powerview/5-3_2.png)
 
 And here's one of the great features of Power BI: If you use Power Query or Power Pivot to connect to, query, and load data from an external data source, once you've imported your workbook into Power BI, you can setup **scheduled refresh**. By using scheduled refresh, Power BI will use the connection information from your workbook to connect directly to the datasource and query and load any data that has changed. Any visualizations in reports will automatically be updated, too.
+

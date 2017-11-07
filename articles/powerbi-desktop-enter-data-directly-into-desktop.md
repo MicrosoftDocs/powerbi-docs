@@ -1,27 +1,26 @@
-﻿<properties
-   pageTitle="Enter data directly into Power BI Desktop"
-   description="Easily add data directly into Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Enter data directly into Power BI Desktop
+description: Easily add data directly into Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Enter data directly into Power BI Desktop
-
 With Power BI Desktop, you can enter data directly and use that data in your reports and visualizations. For example, you can copy portions of a workbook or web page, then paste it into Power BI Desktop.
 
 To enter data directly, select **Enter Data** from the **Home** ribbon.
@@ -42,18 +41,12 @@ And that’s it – it’s that easy to enter data into Power BI Desktop.
 
 You’re now ready to use the data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
 
-
-
 ## More Information
-
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+* [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+* [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+* [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
-
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-
--   [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
-
--   [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   

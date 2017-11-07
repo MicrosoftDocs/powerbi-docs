@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Upload Excel data to Power BI"
-   description="See how easy it is to upload an Excel workbook to Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="8-z6QoaNL3A"
-   featuredVideoThumb=""
-   courseDuration="4m"/>
+---
+title: Upload Excel data to Power BI
+description: See how easy it is to upload an Excel workbook to Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 8-z6QoaNL3A
+featuredvideothumb: ''
+courseduration: 4m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Import an Excel table into Power BI
-
 In this topic, we'll first take a look at how you can import an Excel workbook file containing a simple **table** from a local drive into Power BI. You'll then learn how you can begin exploring that table's data in Power BI by creating a report.
 
 ## Make sure your data is formatted as a table
@@ -49,3 +48,4 @@ Once your workbook's data has been imported, a dataset is created in Power BI. I
 ![](media/powerbi-learning-5-2-upload-excel/5-2_3.png)
 
 You can change the type of visualization and apply **filters** and other properties under **Visualizations**.
+

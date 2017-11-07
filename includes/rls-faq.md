@@ -1,5 +1,4 @@
 ## FAQ
-
 **Question:** What if I had previously created roles/rules for a dataset in the Power BI service? Will they still work if I do nothing?  
 **Answer:** No. Visuals will not render properly. You will have to re-create the roles/rules within Power BI Desktop and then published to the Power BI service.
 
@@ -11,3 +10,4 @@
 
 **Question:** Does RLS allow me to hide detailed data but give access to data summarized in visuals?  
 **Answer:** No, you secure individual rows of data but users can always see either the details or summarized data.
+

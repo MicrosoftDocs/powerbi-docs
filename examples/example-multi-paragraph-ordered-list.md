@@ -1,7 +1,22 @@
-﻿<properties linkid="example-multi-paragraph-ordered-list" urlDisplayName="Ordered List with Multiple Paragraphs Example" pageTitle="Ordered List with Multiple Paragraphs Example" title="Ordered List with Multiple Paragraphs Example" metaKeywords="southworks" description="Test for the DPS Markdown Conversion." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" authors="" videoId="" scriptId="" />
+---
+linkid: example-multi-paragraph-ordered-list
+urldisplayname: Ordered List with Multiple Paragraphs Example
+title: Ordered List with Multiple Paragraphs Example
+metakeywords: southworks
+description: Test for the DPS Markdown Conversion.
+metacanonical: ''
+disquscomments: "1"
+umbraconavihide: "0"
+writer: f2bo
+services: ''
+solutions: ''
+videoid: ''
+scriptid: ''
 
+{}
+
+---
 # Ordered List with Multiple Paragraphs
-
 *Syntax*
 
 **Using different whitespace prefixes for the second paragraph**
@@ -35,23 +50,18 @@ ____Item FIVE second paragraph (* 4 space characters).
 <hr />
 
 ## My Items
-
 1. Item ONE first paragraph.  
-Item ONE second paragraph.
-
-1. Item TWO first paragraph.  
- Item TWO second paragraph.
-
-1. Item THREE first paragraph.  
-  Item THREE second paragraph.
-
-1. Item FOUR first paragraph.  
+   Item ONE second paragraph.
+2. Item TWO first paragraph.  
+   Item TWO second paragraph.
+3. Item THREE first paragraph.  
+   Item THREE second paragraph.
+4. Item FOUR first paragraph.  
     Item FOUR second paragraph.
-
-1. Item FIVE first paragraph.
-
+5. Item FIVE first paragraph.
+   
     Item FIVE second paragraph.
+   
+    Item FIVE third paragraph.
+6. Item SIX.
 
-	Item FIVE third paragraph.
-
-1. Item SIX.

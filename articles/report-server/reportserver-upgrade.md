@@ -1,26 +1,26 @@
-<properties
-   pageTitle="Upgrade Power BI Report Server"
-   description="Learn how to upgrade Power BI Report Server."
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/05/2017"
-   ms.author="asaxton"/>
+---
+title: Upgrade Power BI Report Server
+description: Learn how to upgrade Power BI Report Server.
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/05/2017
+ms.author: asaxton
+
+---
 # Upgrade Power BI Report Server
-
 Learn how to upgrade Power BI Report Server.
 
  **Download** ![download](media/reportserver-upgrade/download.png "download")
@@ -30,15 +30,12 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 ![tip](media/reportserver-upgrade/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
 ## Before you begin
-
 Before you upgrade a report server, it is recommended that you perform the following steps to back up your report server.
 
 ### Backing up the encryption keys
-
 You should backup the encryption keys when you configure a report server installation for the first time. You should also backup the keys any time you change the identity of the service accounts or rename the computer. For more information, see [Back Up and Restore Reporting Services Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### Backing up the report server databases
-
 Because a report server is a stateless server, all application data is stored in the **reportserver** and **reportservertempdb** databases that run on a SQL Server Database Engine instance. You can backup the **reportserver** and **reportservertempdb** databases using one of the supported methods for backing up SQL Server databases. Recommendations that are specific to the report server databases include the following:
 
 * Use the full recovery model to backup the **reportserver** database.
@@ -48,7 +45,6 @@ Because a report server is a stateless server, all application data is stored in
 For more information about backup and recovery of SQL Server relational databases, see [Back Up and Restore of SQL Server Databases](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### Backing up the configuration files
-
 Power BI Report Server uses configuration files to store application settings. You should backup the files when you first configure the server and after you deploy any custom extensions. Files to back up include:
 
 * config.json
@@ -60,29 +56,23 @@ Power BI Report Server uses configuration files to store application settings. Y
 * Machine.config for ASP.NET
 
 ## Upgrade the report server
-
 Upgrading Power BI Report Server is straight forward. There are only a few steps to install the files.
 
 1. Find the location of PowerBIReportServer.exe and launch the installer.
-
 2. Select **Upgrade Power BI Report Server**.
-
+   
     ![](media/reportserver-upgrade/reportserver-upgrade1.png "Upgrade Power BI Report Server")
-
 3. Read and agree to the license terms and conditions and then select **Upgrade**.
-
+   
     ![](media/reportserver-upgrade/reportserver-upgrade-eula.png "License agreement")
-
 4. After a successful upgrade, you can select **Configure Report Server** to launch the Reporting Services Configuration Manager, or select **Close** to exit the installer.
-
+   
     ![](media/reportserver-upgrade/reportserver-upgrade-configure.png)
 
 ## Upgrade Power BI Desktop
-
 After the report server is upgrade, you will want to make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
 
 ## Next steps
-
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
@@ -95,3 +85,4 @@ After the report server is upgrade, you will want to make sure that any Power BI
 [Browser support for Power BI Report Server](reportserver-browser-support.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

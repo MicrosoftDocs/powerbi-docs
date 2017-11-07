@@ -1,27 +1,26 @@
-﻿<properties
-   pageTitle="Using calculated columns in Power BI Desktop"
-   description="Calculated columns in Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Using calculated columns in Power BI Desktop
+description: Calculated columns in Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/12/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/12/2017
+ms.author: davidi
 
-# Using calculated columns in Power BI Desktop  
-
+---
+# Using calculated columns in Power BI Desktop
 With calculated columns, you can add new data to a table already in your model. But instead of querying and loading values into your new column from a data source, you create a Data Analysis Expressions (DAX) formula that defines the column’s values. In Power BI Desktop, calculated columns are created by using the New Column feature in Report View.
 
 Unlike custom columns created as part of a query by using Add Custom Column in Query Editor, calculated columns created in Report View or Data View are based on data you’ve already loaded into the model. For example, you might choose to concatenate values from two different columns in two different but related tables , perform addition, or extract sub-strings.
@@ -34,7 +33,7 @@ Calculated columns calculate results by using [Data Analysis Expressions](https:
 
 DAX formulas are similar to Excel formulas. In fact, DAX has many of the same functions as Excel. DAX functions, however, are meant to work over data interactively sliced or filtered in a report, like in Power BI Desktop. Unlike Excel, where you can have a different formula for each row in a table, when you create a DAX formula for a new column, it will calculate a result for every row in the table. Column values are recalculated as necessary, like when the underlying data is refreshed and values have changed.
 
-## Let’s look at an example  
+## Let’s look at an example
 Jeff is a shipping manager at Contoso. He wants to create a report showing the number of shipments to different cities. He has a Geography table with separate fields for city and state. But, Jeff wants his reports to show City, State as a single value on the same row. Right now, Jeff’s Geography table doesn’t have the field he wants.
 
 ![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityAndStateFields.png)
@@ -55,9 +54,10 @@ He can add it to his report canvas along with the number of shipments. Very quic
 
 ![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityStateMap.png)
 
-## Learn more  
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
+## Learn more
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
 
 To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](powerbi-desktop-common-query-tasks.md)  
+

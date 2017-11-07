@@ -1,31 +1,30 @@
-<properties
-pageTitle="On-premises data gateway FAQ"
-description="This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway."
-services="powerbi"
-documentationCenter=""
-authors="davidiseminger"
-manager="erikre"
-backup=""
-editor=""
-tags=""
-qualityFocus="no"
-qualityDate=""/>
+---
+title: On-premises data gateway FAQ
+description: This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-ms.service="powerbi"
-ms.devlang="NA"
-ms.topic="article"
-ms.tgt_pltfrm="na"
-ms.workload="powerbi"
-ms.date="10/05/2017"
-ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: powerbi
+ms.date: 10/05/2017
+ms.author: davidi
+
+---
 # On-Premises Data Gateway FAQ
-
 <!-- Shared FAQ shared Include -->
-[AZURE.INCLUDE [gateway-onprem-faq-shared-include](../includes/gateway-onprem-faq-shared-include.md)]
+[!INCLUDE [gateway-onprem-faq-shared-include](../includes/gateway-onprem-faq-shared-include.md)]
 
 ## Analysis Services
-
 **Question:** Can I use msdmpump.dll to create custom effective username mappings for Analysis Services?  
 **Answer:** No. This is not supported at this time.
 
@@ -42,7 +41,6 @@ ms.author="davidi"/>
 **Answer:** No. This is on the roadmap, but we don’t have a timeframe.
 
 ## Administration
-
 **Question:** Can I have more than one admin for a gateway?  
 **Answer:** Yes! When you manage a gateway, you can go to the administrator’s tab to add additional admins.
 
@@ -56,7 +54,6 @@ ms.author="davidi"/>
 **Answer:** No. This is on the roadmap, but we don’t have a timeframe.
 
 ## Power BI
-
 **Question:** Do I need to upgrade the personal gateway?
 **Answer:** No, you can keep using the personal gateway for Power BI.
 
@@ -80,3 +77,4 @@ ms.author="davidi"/>
 [On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

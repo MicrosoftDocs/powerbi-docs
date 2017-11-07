@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Shapes, text boxes, and images"
-   description="Add a personal touch, and a logo, to reports and dashboards"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="_3q6VEBhGew"
-   featuredVideoThumb=""
-   courseDuration="6m"/>
+---
+title: Shapes, text boxes, and images
+description: Add a personal touch, and a logo, to reports and dashboards
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: _3q6VEBhGew
+featuredvideothumb: ''
+courseduration: 6m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Style Your Reports With Shapes, Text Boxes, and Images
-
 Along with data-bound visuals, you can also add static elements such as text boxes, images, and shapes to improve the visual design of your reports. To add a visual element, select **Text Box**, **Image**, or **Shapes** from the **Home** tab.
 
 ![](media/powerbi-learning-3-10-create-shapes-images/3-10_1.png)
@@ -36,3 +35,4 @@ Selecting **Image** will open a file browser where you can select the image from
 **Shapes** have five different options for form, including rectangles and arrows. Shapes can be opaque, or transparent with a colored border. (The latter is useful for creating borders around groups of visualizations.)
 
 ![](media/powerbi-learning-3-10-create-shapes-images/3-10_2.png)
+

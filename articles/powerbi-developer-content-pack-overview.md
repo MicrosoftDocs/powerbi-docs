@@ -1,27 +1,26 @@
-<properties 
-   pageTitle="Overview of the Power BI service content pack program"
-   description="Content Pack Certification Program"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="erikre" 
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
- 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/09/2017"
-   ms.author="asaxton"/>
+---
+title: Overview of the Power BI service content pack program
+description: Content Pack Certification Program
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/09/2017
+ms.author: asaxton
+
+---
 # Overview of the Power BI service content pack program
-
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
 
 ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. 
@@ -33,32 +32,32 @@ The general process to develop and submit an template content pack involves mult
 
  ![Process](media/powerbi-developer-content-pack/developer-content-pack-overview.png)
 
-1.	[Review the requirements](#requirements) and make sure you meet them
-2.	[Build content](powerbi-developer-content-pack-authoring.md#queries) in the Power BI Desktop
-3.	[Create a dashboard](powerbi-developer-content-pack-authoring.md#dashboard) in PowerBI.com
-4.	[Test the content pack](powerbi-developer-content-pack-testing.md) yourself within your organization
-5.	[Submit](powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
+1. [Review the requirements](#requirements) and make sure you meet them
+2. [Build content](powerbi-developer-content-pack-authoring.md#queries) in the Power BI Desktop
+3. [Create a dashboard](powerbi-developer-content-pack-authoring.md#dashboard) in PowerBI.com
+4. [Test the content pack](powerbi-developer-content-pack-testing.md) yourself within your organization
+5. [Submit](powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
 
 <a name="requirements"></a>
 
 ## Requirements
 To build and submit a content pack to be published in the PowerBI service and AppSource, you must meet the following requirements:
 
-- You have a SaaS application used by business users.
-- Your SaaS application has user data that can be visualized in Power BI.
-- Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
-- Signed partner agreement. You will do that in the [submission step](powerbi-developer-content-pack-testing.md#submission).
+* You have a SaaS application used by business users.
+* Your SaaS application has user data that can be visualized in Power BI.
+* Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
+* Signed partner agreement. You will do that in the [submission step](powerbi-developer-content-pack-testing.md#submission).
 
 Please review the [authoring](powerbi-developer-content-pack-authoring.md) section for more details on the technical requirements.
 
 ## Business Scenario
 Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
 
-### Tips  
--	Identify your audience and the task they're trying to accomplish  
--	Focus on a certain time period (last 90 days) or the last N results  
--	Only import the tables/columns related to your scenario  
--	Consider offering more than one content pack for separate unique scenarios  
+### Tips
+* Identify your audience and the task they're trying to accomplish  
+* Focus on a certain time period (last 90 days) or the last N results  
+* Only import the tables/columns related to your scenario  
+* Consider offering more than one content pack for separate unique scenarios  
 
 ## Frequently Asked Questions
 **Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?**
@@ -77,9 +76,9 @@ Power BI service content packs support any REST API or OData feed. Power BI can 
 
 Feel free to email us your questions at pbiservicesapps@microsoft.com
 
-
 ## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
 
 ## Next
 [Authoring](powerbi-developer-content-pack-authoring.md)
+

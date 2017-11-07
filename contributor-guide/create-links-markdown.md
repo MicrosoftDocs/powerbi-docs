@@ -1,22 +1,39 @@
-<properties
-   pageTitle="Create links in markdown articles" description="Explains how to code crosslinks in markdown." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+---
+title: Create links in markdown articles
+description: Explains how to code crosslinks in markdown.
+metakeywords: ''
+services: ''
+solutions: ''
+documentationcenter: ''
+author: mblythe
+videoid: ''
+scriptid: ''
+manager: dongill
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
+ms.service: contributor-guide
+ms.devlang: ''
+ms.topic: article
+ms.tgt_pltfrm: ''
+ms.workload: ''
+ms.date: 09/09/2015
+ms.author: mblythe
 
+---
 # Linking guidance for Power BI technical content
 ## Guidelines for technical articles on powerbi.microsoft.com
-
-| Link scenario | Guidance  |
-|---------------|-----------|
-|Linking from a Power BI article to another Power BI article|Use relative links. Do not include the en-us language locale in your relative links.|
-|Linking to an MSDN library topic, a TechNet library topic, or KB article|​Use the actual link to the article or topic, but remove the en-us language locale from the link.|
-|Linking from a Power BI article to any other web page|Use the direct link|
+| Link scenario | Guidance |
+| --- | --- |
+| Linking from a Power BI article to another Power BI article |Use relative links. Do not include the en-us language locale in your relative links. |
+| Linking to an MSDN library topic, a TechNet library topic, or KB article |​Use the actual link to the article or topic, but remove the en-us language locale from the link. |
+| Linking from a Power BI article to any other web page |Use the direct link |
 
 ### Markdown syntax for Power BI relative links
-
 To create an inline link from a Power BI technical article to another Power BI technical article, use this link format.
 
-> [AZURE.NOTE] Some aspects of linking are still TBD b/c we need to settle on a final structure for the github repo.
+> [!NOTE]
+> Some aspects of linking are still TBD b/c we need to settle on a final structure for the github repo.
+> 
+> 
 
 Article links from a subdirectory to an article in the root directory:
 
@@ -29,7 +46,7 @@ Article in the root directory links to an article in a subdirectory:
 Article in a section subdirectory links to an article that is in another section subdirectory:
 
     [link text](../section-folder/article-name.md)
- 
+
 Article in a directory links to another article in the same directory:
 
     [link text](article-name.md)
@@ -52,11 +69,10 @@ To link to an anchor in another service subdirectory:
 
 
 ## Custom markdown link syntax
-
 Since includes files are located in another directory, you will need to use relative paths as below. For a link to a single article from an includes file, use this format:
 
     [link text](../articles/section-folder/article-name.md)
-    
+
 Learn more about how to use an includes file in the [Custom markdown extensions guidelines](custom-markdown-extensions.md#includes).
 
 If you have selectors embedded in an include, you would use this sort of linking: 
@@ -73,10 +89,9 @@ To link to a page on Power BI (such as a pricing page, SLA page or anything else
 
 To test your links, push your page to your fork and view it in the rendered view and publish to staging. The cross links on the GitHub version of the page should work as long as the targets of the URLs are present in your fork.
 
-Our [markdown template for technical articles](../markdown templates/markdown-template-for-new-articles.md/) shows an alternate way to create crosslinks in markdown so all the crosslinks are coded together at the end of the article, even while they display inline.
+Our [markdown template for technical articles](../markdown templates/markdown-template-for-new-articles.md) shows an alternate way to create crosslinks in markdown so all the crosslinks are coded together at the end of the article, even while they display inline.
 
 ## Reference-style links
-
 You can use reference style links to make your source content easier to read. The reference style links replace the inline link syntax with simplified syntax that allows you to move the long URLs to the end of the article. Here's Daring Fireball's example:
 
 Inline text:
@@ -86,12 +101,11 @@ Inline text:
 Link references at the end of the article:
 
     <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/  
-    [3]: http://search.msn.com/
+[1]: http://google.com/
+[2]: http://search.yahoo.com/  
+[3]: http://search.msn.com/
 
 ## FWLinks
-
 Avoid FWLinks (our redirection system) in powerbi.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For Power BI, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
 
 If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
@@ -101,9 +115,8 @@ If you must use an FWLink on a web page, include the P parameter to make it a pe
 When you paste the target URL into the FWLink tool, remember to remove the locale if your target link is Power BI, or the MSDN or TechNet library.
 
 ### Contributors' Guide Links
-
-- [Overview article](./../README.md)
-- [Index of guidance articles](./contributor-guide-index.md)
+* [Overview article](../README.md)
+* [Index of guidance articles](contributor-guide-index.md)
 
 <!--image references-->
 [1]: ./media/create-tables-markdown/table-markdown.png

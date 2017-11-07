@@ -1,34 +1,31 @@
-<properties
-   pageTitle="Complete code listing"
-   description="Walkthrough to push data - Complete code listing"
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Complete code listing
+description: Walkthrough to push data - Complete code listing
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="08/10/2017"
-   ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 08/10/2017
+ms.author: asaxton
 
-
+---
 # Push data to a dataset complete code listing
-
 This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
 ## Push data to dataset code
-
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -228,7 +225,6 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 
 ## See also
-
 [Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
 [Walkthrough - Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
 [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
@@ -241,3 +237,4 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

@@ -1,32 +1,34 @@
-<properties
-pageTitle="Troubleshooting tile errors"
-description="Common errors that may be encountered when a tile tries to refresh"
-services="powerbi"
-documentationCenter=""
-authors="davidiseminger"
-manager="erikre"
-backup=""
-editor=""
-tags=""
-qualityFocus="no"
-qualityDate=""/>
+---
+title: Troubleshooting tile errors
+description: Common errors that may be encountered when a tile tries to refresh
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-ms.service="powerbi"
-ms.devlang="NA"
-ms.topic="article"
-ms.tgt_pltfrm="na"
-ms.workload="powerbi"
-ms.date="09/06/2017"
-ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
+
+---
 # Troubleshooting tile errors
-
 Below are the common errors you may encounter with tiles along with an explanation.
 
-> [AZURE.NOTE] If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> [!NOTE]
+> If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> 
+> 
 
 ## Errors
-
 **Power BI encountered an unexpected error while loading the model. Please try again later.**
 or
 **Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible.**
@@ -62,11 +64,10 @@ The field was likely deleted or renamed. You can remove the broken field from th
 This is usually a transient issue. If you try again later and you still see this message, please contact support.
 
 ## Contact support
-
 If you are still having an issue, please [contact support](https://support.powerbi.com) to investigate further.
 
 ## See also
-
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

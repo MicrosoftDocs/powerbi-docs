@@ -1,26 +1,26 @@
-<properties
-   pageTitle="Power BI report scheduled refresh in Power BI Report Server"
-   description="Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available."
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="11/01/2017"
-   ms.author="asaxton"/>
+---
+title: Power BI report scheduled refresh in Power BI Report Server
+description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 11/01/2017
+ms.author: asaxton
+
+---
 # Power BI report scheduled refresh in Power BI Report Server
-
 Scheduled refresh for Power BI reports allows the data for a report to stay up to date.
 
 ![Scheduled refresh within Power BI Report Server](media/reportserver-scheduled-refresh/scheduled-refresh-success.png)
@@ -30,7 +30,6 @@ Scheduled refresh is specific to Power BI reports with an embedded model. Meanin
 Scheduled refresh is configured within the management section of a report. For more information on how to configure scheduled refresh, see [How to configure Power BI report scheduled refresh](reportserver-configure-scheduled-refresh.md).
 
 ## How this works
-
 Several components are involved when using scheduled refresh for your Power BI reports.
 
 * SQL Server Agent as a timer to generate scheduled events.
@@ -44,13 +43,10 @@ Several components are involved when using scheduled refresh for your Power BI r
 Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10 second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.
 
 ### Analysis Services
-
 Rendering a Power BI report, as well as performing a scheduled refresh, requires loading the Power BI report's data model in Analysis Services. An Analysis Services process will be running with Power BI Report Server.
 
 ## Considerations and limitations
-
 ### When scheduled refresh can't be used
-
 Not all Power BI Reports can have a scheduled refresh plan created on them. The following is a list of Power BI Reports that you Can't create a scheduled refresh plan.
 
 * Your report contains one or more Analysis Services data sources, which use a live connection.
@@ -63,7 +59,6 @@ In addition to the above list, there are specific scenarios with data sources in
 * If data source can be connected using only OAuth (e.g. Facebook, Google Analytics, Salesforce, etc.), then cache refresh plan cannot be created. At the moment, RS does not support OAuth authentication for any data source whether it is for paginated, mobile or Power BI reports.
 
 ### Memory limits
-
 Traditional workload for a report server has been similar to a web application. The ability to load reports with imported data or DirectQuery, and the ability to perform scheduled refresh, rely on an Analysis Services instance being hosted alongside of the report server. As a result, this could result is unexpected memory pressure on the server. Plan your server deployment accordingly knowning that Analysis Services may be consuming memory alongside the report server.
 
 For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
@@ -71,11 +66,10 @@ For information on how to monitor an Analysis Services instance, see [Monitor an
 For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
 ### Authentication and Kerberos
-
 If your data source is set to use Windows credentials, Kerberos constrained delegation may need to be configured in order to work. For more information, see [Configure Windows authentication on the report server](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## Next steps
-
 Configure [scheduled refresh](reportserver-configure-scheduled-refresh.md) on a Power BI report.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

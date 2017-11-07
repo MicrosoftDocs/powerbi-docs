@@ -1,34 +1,35 @@
-﻿<properties
-   pageTitle="Interacting with an ArcGIS map that has been shared with you"
-   description="Using ArcGis map in reading view "
-   services="powerbi"
-   documentationCenter=""
-   authors="mihart"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags="power bi, service, desktop, mobile"
-   featuredVideoId=""
-   qualityFocus="monitoring"
-   qualityDate="06/23/2017"/>
+---
+title: Interacting with an ArcGIS map that has been shared with you
+description: 'Using ArcGis map in reading view '
+services: powerbi
+documentationcenter: ''
+author: mihart
+manager: erikre
+backup: ''
+editor: ''
+tags: power bi, service, desktop, mobile
+featuredvideoid: ''
+qualityfocus: monitoring
+qualitydate: 06/23/2017
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/23/2017"
-   ms.author="mihart"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/23/2017
+ms.author: mihart
 
+---
 # Interacting with ArcGIS maps in Power BI
-
 This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](powerbi-service-tutorial-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
 > [!TIP]
 > GIS stands for Geographic Information Science.
+> 
+> 
 
 The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](powerbi-service-tutorial-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
 
@@ -36,10 +37,12 @@ The example we're using is the same ArcGIS map created in the [ArcGIS maps by es
 
 > [!TIP]
 > Visit [esri's page on Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> 
+> 
 
 <br/>
 
-##    User consent
+## User consent
 The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Selection tools
@@ -52,44 +55,38 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 ![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
 
 ![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
- 
+
 <br/>
 
-
-##   Interacting with an ArcGIS map
+## Interacting with an ArcGIS map
 The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md)), here are the actions available to you.
 
-- As with other visualization types, you can [pin to dashboards](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report), [view](powerbi-service-reports-see-data.md) and/or [export the underlying data](powerbi-service-export-data.md), and see the map in [Focus mode](powerbi-service-display-dash-in-focus-mode.md) and [Full screen](powerbi-service-dash-and-reports-fullscreen.md).    
-- Expand the **Filters** pane to explore the map using filters. When you close the report, the filters you applied are not saved.    
+* As with other visualization types, you can [pin to dashboards](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md), [view](powerbi-service-reports-see-data.md) and/or [export the underlying data](powerbi-service-export-data.md), and see the map in [Focus mode](powerbi-service-display-dash-in-focus-mode.md) and [Full screen](powerbi-service-dash-and-reports-fullscreen.md).    
+* Expand the **Filters** pane to explore the map using filters. When you close the report, the filters you applied are not saved.    
     ![](media/powerbi-visualizations-arcgis/power-bi-filter-newer.png)  
-
-- If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map.
-
+* If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map.
+  
     ![](media/powerbi-visualizations-arcgis/power-bi-reference-layer.png)  
-
+  
     In this case we also get a chart. Select a bar on the chart to dig into the data. Here we see that 79 households in Adams county earn $200,000 or greater.
-
+  
     ![](media/powerbi-visualizations-arcgis/power-bi-tooltip-chart.png)
-
+  
     Select the arrow to display any additional charts.
-
-- Hover over basemap location symbols to display details in a tooltip.     
-![](media/powerbi-visualizations-arcgis/power-bi-arcgis-hover.png)
-
-    > [!TIP]
-    > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI may present you with more than 1 tooltip at a time. Select the arrows to move between the tooltips
-    >
-    >![](media/powerbi-visualizations-arcgis/power-bi-3-screens.png)
-
-- If the creator has added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14."
-
+* Hover over basemap location symbols to display details in a tooltip.     
+  ![](media/powerbi-visualizations-arcgis/power-bi-arcgis-hover.png)
+  
+  > [!TIP]
+  > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI may present you with more than 1 tooltip at a time. Select the arrows to move between the tooltips
+  > 
+  > ![](media/powerbi-visualizations-arcgis/power-bi-3-screens.png)
+  > 
+  > 
+* If the creator has added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14."
+  
     ![](media/powerbi-visualizations-arcgis/power-bi-demographics.png)
 
-
-
-
 ## Considerations and Limitations
-
 ArcGIS Maps for Power BI is available in the following services and applications:
 
 <table>
@@ -138,9 +135,7 @@ This is a bug that is being addressed.  In the meantime, select the link that ap
 
 No, Power BI needs network connectivity to display the maps.
 
-
-
-## Next steps    
+## Next steps
 Getting help: **Esri** provides [comprehensive documentation](https://go.microsoft.com/fwlink/?LinkID=828772) on the feature set of **ArcGIS Maps for Power BI**.
 
 You can ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
@@ -148,3 +143,4 @@ You can ask questions, find the latest information, report issues, and find answ
 If you have a suggestion for an improvement, please submit it to [Power BI's ideas list](https://ideas.powerbi.com).
 
 [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
+

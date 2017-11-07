@@ -1,9 +1,24 @@
-﻿<properties linkid="example-toc-extension-inline-heading" urlDisplayName="TOC Markdown Extension Test" pageTitle="TOC Markdown Extension Test" title="TOC Markdown Extension Test" metaKeywords="southworks" description="Tests for the TOC Markdown Extension." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
+---
+linkid: example-toc-extension-inline-heading
+urldisplayname: TOC Markdown Extension Test
+title: TOC Markdown Extension Test
+metakeywords: southworks
+description: Tests for the TOC Markdown Extension.
+metacanonical: ''
+disquscomments: "1"
+umbraconavihide: "0"
+writer: f2bo
+services: ''
+solutions: ''
+documentationcenter: ''
+videoid: ''
+scriptid: ''
 
+{}
+
+---
 # TOC Markdown Extension Test
-
-###**Inline Heading**
-
+### **Inline Heading**
 *Syntax*
 
 &lbrack;AZURE.TOC &quot;Table of Contents&quot;&rbrack;
@@ -26,3 +41,4 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor con
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+

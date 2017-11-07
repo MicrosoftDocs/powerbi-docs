@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Create and Configure a Dashboard"
-   description="Customize dashboards in Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="lJKgWnvl6bQ"
-   featuredVideoThumb=""
-   courseDuration="6m"/>
+---
+title: Create and Configure a Dashboard
+description: Customize dashboards in Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: lJKgWnvl6bQ
+featuredvideothumb: ''
+courseduration: 6m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create and Configure A Dashboard
-
 **Dashboards** in Power BI are one-page collections of visualizations that are created from within the Power BI service. You create dashboards by **pinning** visualizations from reports that you authored and published using Power BI Desktop, or visualizations you created within the Power BI service itself. **Pinning** a visual to a dashboard is a lot like pinning a picture to a corkboard on a wall - it sticks the visual there, in a particular spot, for others to see. To pin a visual, open its report on the Power BI service. Hover over the visual you want to pin and select the **pin** icon.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_1.png)
@@ -46,3 +45,4 @@ You can change the layout of visuals on a dashboard however you'd like. To resiz
 Click on a dashboard tile to view the report from which it originated. This lets you quickly view the underlying data beneath a visual. You can also change that link by using the **Set custom link** field in **Tile Details**.
 
 You can pin tiles from one dashboard to another, for example if you have a collection of dashboards and want to create one summary board. The process is the same: hover over the tile and select the **pin icon**. Dashboards are easy to create, and to change. And you can customize them to make your one-page dashboard show exactly what it should.
+

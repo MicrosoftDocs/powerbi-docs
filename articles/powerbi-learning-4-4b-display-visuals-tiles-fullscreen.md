@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Display visuals and tiles full-screen"
-   description="Get a big view of select report visuals and dashboard tiles"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="LoApjhwTse0"
-   featuredVideoThumb=""
-   courseDuration="4m"/>
+---
+title: Display visuals and tiles full-screen
+description: Get a big view of select report visuals and dashboard tiles
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: LoApjhwTse0
+featuredvideothumb: ''
+courseduration: 4m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Display Visuals and Tiles Full-Screen
-
 When you're looking at Power BI dashboards or reports in the service, it can sometimes be helpful to focus on an individual chart or visualization. You can do that in two different ways.
 
 When you're on a dashboard, hover over a tile to see a few different icon options in the top right-hand corner. When you select the ellipses (the three dots) you see a collection of icons that represent actions you can take on the tile.
@@ -42,3 +41,4 @@ In **Focus mode**, you can see all the data. You can also pin the visual directl
 The process is similar when viewing a report. Hover over a visual to see the three icons in the top-right corner, and select the **Focus mode** icon. Selecting this expands your visualization to encompass the full report canvas. The visual is still interactive in this mode, although you temporarily lose any cross-filter effect between visualizations.
 
 Hover over an expanded tile or report and select the **Back to...** left-caret icon in the top-left corner to return to the previous view.
+

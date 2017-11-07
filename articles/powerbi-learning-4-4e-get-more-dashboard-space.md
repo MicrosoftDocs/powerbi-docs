@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Get more space on your dashboard"
-   description="Use Full Screen mode to manage your dashboard space more effectively"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="c31gZkyvC54"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Get more space on your dashboard
+description: Use Full Screen mode to manage your dashboard space more effectively
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: c31gZkyvC54
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Get More Space on Your Dashboard
-
 You may find that occasionally when you create your dashboards, you have more content than what can fit on your canvas. There are a few solutions that help you manage how your dashboard space is displayed, so you can get a full view of your dashboard content.
 
 The easiest method to display your entire dashboard in one screen is selecting the **Full Screen Mode** button in the top right-hand corner of the dashboard.
@@ -45,6 +44,9 @@ Another way to manage dashboard space is collapsing the Navigation pane on the l
 
 You can ensure that a dashboard will always have a collapsed navigation bar by appending the following to the end of the URL:
 
->?collapseNavigation=true
+> ?collapseNavigation=true
+> 
+> 
 
 Users who follow that link will open the dashboard with a collapsed navigation bar.
+

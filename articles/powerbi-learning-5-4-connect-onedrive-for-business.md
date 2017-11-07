@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Connect OneDrive for Business to Power BI"
-   description="OneDrive for Business and Excel files are a match made in the cloud"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="WK7OZF-hVZA"
-   featuredVideoThumb=""
-   courseDuration="8m"/>
+---
+title: Connect OneDrive for Business to Power BI
+description: OneDrive for Business and Excel files are a match made in the cloud
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: WK7OZF-hVZA
+featuredvideothumb: ''
+courseduration: 8m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Connect OneDrive for Business to Power BI
-
 Get seamless integration between Power BI and Excel when you save your Excel workbooks to OneDrive.
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_1.png)
@@ -33,8 +32,8 @@ Because OneDrive is in the cloud, just like Power BI, a live connection is made 
 
 There are two ways to connect to your Excel files on OneDrive for Business:
 
-1.   Import Excel data into Power BI
-2.   Connect, manage, and view Excel in Power BI
+1. Import Excel data into Power BI
+2. Connect, manage, and view Excel in Power BI
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_3.png)
 
@@ -53,3 +52,4 @@ In the report, you see your Excel workbook in Power BI just as you would in **Ex
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_5.png)
 
 No dataset is created in Power BI. All of the data remains in the workbook on OneDrive. One of the many advantages to this approach is that you can setup **scheduled refresh** if your workbook connects to external data sources. You can select elements such as PivotTables and charts and **pin** them right to dashboards in Power BI. If you make any changes, they're automatically reflected in Power BI. And, you can use Power BI's awesome **Q & A** features to ask questions about the data in your workbook.  
+

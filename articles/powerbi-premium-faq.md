@@ -1,34 +1,33 @@
-<properties 
-   pageTitle="Power BI Premium FAQ"
-   description="Browse a list of frequently asked questions and answers about the Power BI Premium offering."
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/20/2017"
-   ms.author="asaxton"/>
+---
+title: Power BI Premium FAQ
+description: Browse a list of frequently asked questions and answers about the Power BI Premium offering.
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/20/2017
+ms.author: asaxton
+
+---
 # Power BI Premium FAQ
-
 Browse a list of frequently asked questions and answers about the Power BI Premium offering.
 
-- If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
-- Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-- Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
+* If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+* Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 
 ## Power BI Premium
-
 **What is Power BI Premium?**  
 Power BI Premium is a new capacity-based offering that includes:
 
@@ -84,10 +83,10 @@ Power BI Premium is available as an add-on to Power BI Pro. Office 365 E5 includ
 **Can you outline a scenario of how Power BI Pro and Power BI Premium work to cover an organization for Modern BI?**  
 The follow examples outline how customers can meet their BI needs using a combination of Power BI Pro + Power BI Premium.
 
-|Scenario 1|Scenario 2|Scenario 3|Scenario 4|
-|---------|---------|---------|---------|
-|An organization / department wants every employee to have self-service BI and collaborate with each other – sharing dashboards, performing ad hoc analysis, and publishing reports|An organization / department has a combination of users who require self-service BI and collaboration as well as users who only need to consume BI content|An organization / department has users who require self-service BI and collaboration as well as the requirement to keep reports on-premises|A finance department is actively working to analyze several large datasets in advance of an earnings announcement and requires unthrottled and isolated capacity to manage the workloads|
-|**Solution:**<br/><br/>1. Power BI Pro for every user<br/><br/>2. Look to expand the opportunity adding Power BI Premium – see the additional scenarios|**Solution:**<br/><br/>1. Power BI Pro for users requiring self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to distribute BI content to users who only need to consume|**Solution:**<br/><br/>1. Power BI Pro for users requiring self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to publish reports on-premises – and move to the cloud at their own pace|**Solution:**<br/><br/>1. Power BI Pro for every user in the finance department<br/><br/>2. Add Power BI Premium for the dedicated resources – in the cloud – to be used exclusively by the finance team providing larger scale and greater performance|
+| Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 |
+| --- | --- | --- | --- |
+| An organization / department wants every employee to have self-service BI and collaborate with each other – sharing dashboards, performing ad hoc analysis, and publishing reports |An organization / department has a combination of users who require self-service BI and collaboration as well as users who only need to consume BI content |An organization / department has users who require self-service BI and collaboration as well as the requirement to keep reports on-premises |A finance department is actively working to analyze several large datasets in advance of an earnings announcement and requires unthrottled and isolated capacity to manage the workloads |
+| **Solution:**<br/><br/>1. Power BI Pro for every user<br/><br/>2. Look to expand the opportunity adding Power BI Premium – see the additional scenarios |**Solution:**<br/><br/>1. Power BI Pro for users requiring self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to distribute BI content to users who only need to consume |**Solution:**<br/><br/>1. Power BI Pro for users requiring self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to publish reports on-premises – and move to the cloud at their own pace |**Solution:**<br/><br/>1. Power BI Pro for every user in the finance department<br/><br/>2. Add Power BI Premium for the dedicated resources – in the cloud – to be used exclusively by the finance team providing larger scale and greater performance |
 
 **What is Power BI Report Server? Does this mean you’re making Power BI available on-premises?**  
 Power BI Report Server is available as part of Power BI Premium and compatible with SQL Server Reporting Services reports, allowing the deployment and distribution of interactive Power BI reports, and paginated reports, on-premises within the boundaries of an organization’s firewall. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
@@ -116,7 +115,6 @@ Users of the free Power BI service will benefit from access to all data sources,
 For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
 
 ## Power BI Free
-
 **What capabilities are being added to the free service?**  
 Beginning June 1, 2017, the free service will have capabilities equivalent to Power BI Pro, except for sharing, enterprise distribution, and collaboration. This includes the same 10 GB workspace limit, up to 8 daily scheduled refreshes for datasets, and maximum 1M/hour streaming data rate. We’re also including access to all data sources, including those available through the on-premises data gateway.
 
@@ -148,7 +146,6 @@ Sign up for a standard 60-day Power BI Pro trial [here](https://app.powerbi.com/
 Users of the free service with access to dedicated capacity in Power BI Premium will have the ability to receive content distributed to them by Power BI Pro users via published Apps.
 
 ## Power BI Pro
-
 **What is changing with Power BI Pro?**  
 No changes are coming to Power BI Pro.
 
@@ -169,7 +166,6 @@ Power BI Premium is a capacity-based license, while Power BI Pro is a user-based
 * Integrate content with Microsoft Teams
 
 ## Power BI Embedded
-
 **What’s changed with Power BI Embedded?**  
 As part of Power BI Premium we are converging Power BI Embedded with the Power BI service to deliver one API surface, a consistent set of capabilities and access to the latest features. Moving forward we encourage those interested in embedding Power BI in their apps to start with Power BI Desktop and move to deployment with Power BI Premium.
 
@@ -179,10 +175,10 @@ Power BI Premium is a capacity-based offering that runs on dedicated hardware an
 **Do I need to migrate my existing app built on Power BI Embedded?**  
 Power BI Embedded will continue to be available for existing apps per the following schedule:
 
-|Licensing agreement|Availability of Power BI Embedded|
-|---------|---------|
-|Enterprise Agreement|Until expiration of existing agreement|
-|Direct and CSP|One year from General Availability of Power BI Premium|
+| Licensing agreement | Availability of Power BI Embedded |
+| --- | --- |
+| Enterprise Agreement |Until expiration of existing agreement |
+| Direct and CSP |One year from General Availability of Power BI Premium |
 
 Yes, you should start thinking about migrating your embedded analytics solution to Power BI Premium. For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md).
 
@@ -196,12 +192,10 @@ Under the previous model, we offered a limited number of sessions for developing
 Power BI Embedded is converging with Power BI service and therefore it will be purchased, provisioned and managed as such moving forward. For more information, see [Embedding with Power BI](powerbi-developer-embedding.md).
 
 ## Power BI Desktop
-
 **What changes are you making to Power BI Desktop?**  
 No changes are being made to Power BI Desktop.
 
 ## Power BI Report Server
-
 **Why is Power BI Report Server included in Power BI Premium rather than being sold as a separate product?**  
 Power BI Premium introduces the ability to maintain BI assets on-premises with Power BI Report Server. Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization’s firewall. With Power BI Premium the same number of virtual cores an organization provisions in the cloud can also be deployed on-premises through Power BI Report Server, without the need to split the capacity. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
 
@@ -214,7 +208,6 @@ Power BI Report Server is available through Power BI Premium or as a benefit for
 Power BI Report Server is available to SQL Server customers with EE + SA licenses or for purchase through Power BI Premium. Power BI is a SaaS service, and Power BI Report Server will follow the same subscription-based delivery model.
 
 ## Next steps
-
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
@@ -222,3 +215,4 @@ Power BI Report Server is available to SQL Server customers with EE + SA license
 [Extended Pro Trial activation](powerbi-extended-pro-trial.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

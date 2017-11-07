@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Use insights in Power BI Desktop (Preview)"
-   description="Easily gain insights to increases or decreases in Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Use insights in Power BI Desktop (Preview)
+description: Easily gain insights to increases or decreases in Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/25/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/25/2017
+ms.author: davidi
 
+---
 # Use insights in Power BI Desktop (Preview)
-
 You can tell **Power BI Desktop** to explain increases or decreases in charts, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze > Explain the decrease** (or increase, if the previous bar was lower), and insight is delivered to you in an easy-to-use window.
 
 ![](media/powerbi-desktop-insights/insights_01.png)
@@ -29,9 +28,10 @@ You can tell **Power BI Desktop** to explain increases or decreases in charts, a
 The insights feature is contextual, and is based on the immediately previous data point - such as the previous bar, or column.
 
 > **Note:** This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
+> 
+> 
 
 ## Using insights
-
 To use insights, just right-click on any data point in a bar or line visual, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
 ![](media/powerbi-desktop-insights/insights_02.png)
@@ -51,35 +51,33 @@ And importantly, the **+** button at the top of the visual lets you add the sele
 You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports.
 
 ## Considerations and limitations
-
 Since insights are based on the change from the previous data point, they aren't available when you select the first data point in a visual. 
 
 The following list is the collection of currently unsupported scenarios for **insights**:
 
--   TopN filters
--   Include/exclude filters
--   Measure filters
--   Non-additive measures and aggregates
--   Show value as
--   Filtered measures (it’s the new thing we use for scatter chart in insights)
--   Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
--   Non-numeric measures
+* TopN filters
+* Include/exclude filters
+* Measure filters
+* Non-additive measures and aggregates
+* Show value as
+* Filtered measures (it’s the new thing we use for scatter chart in insights)
+* Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
+* Non-numeric measures
 
 In addition, the following model types and data sources are currently not supported for insights:
 
--   DirectQuery
--   Live connect
--   On-premises Reporting Services
--   Embedding
-
+* DirectQuery
+* Live connect
+* On-premises Reporting Services
+* Embedding
 
 ## More information
-
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
--   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+* [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+* [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
+* [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+

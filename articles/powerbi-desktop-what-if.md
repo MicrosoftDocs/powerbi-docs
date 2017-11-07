@@ -1,41 +1,40 @@
-<properties
-   pageTitle="Using What if parameters to visualize variables in Power BI Desktop"
-   description="Create your own What if variable to imagine and visualize variables in Power BI reports"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Using What if parameters to visualize variables in Power BI Desktop
+description: Create your own What if variable to imagine and visualize variables in Power BI reports
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/12/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/12/2017
+ms.author: davidi
 
+---
 # Create and use a What if parameter to visualize variables in Power BI Desktop
-
 Starting with the August 2017 release of **Power BI Desktop**, you can create **What if** variables for your reports, interact with the variable as a slicer, and thereby visualize and quantify different key values in your reports.
 
 ![](media/powerbi-desktop-what-if/what-if_01.png)
 
 The **What if** parameter is found on the **Modeling** tab in **Power BI Desktop**. When you do so, a dialog appears where you can configure the parameter.
 
-
 ### Creating a What if parameter
-
 To create a **What if** parameter, select the **What if** button from the **Modeling** tab in **Power BI Desktop**. In the following image, we've created a parameter called *Discount percentage* and set its data type to *Decimal number.* The *Minimum* value is zero, the *Maximum* is 0.50 (fifty percent). We've also set the *Increment* to 0.05, or five percent. That's how much the parameter will adjust when interacted with in a report.
 
 ![](media/powerbi-desktop-what-if/what-if_02.png)
 
 > Note: for decimal numbers, make sure you precede it with a zero, as in 0.50 versus just .50 in that box. Otherwise the number won't validate and the **OK** button will not be selectable.
+> 
+> 
 
 For your convenience, the **Add slicer to this page** checkbox automatically puts a slicer with your **What if** parameter onto the current report page.
 
@@ -48,7 +47,6 @@ In addition to creating the parameter, creating a **What if** parameter also cre
 It's important and useful to note that once you create a **What if** parameter, both the parameter and the measure become part of your model. So they're available throughout the report, and can be used on other report pages. And since they're part of the model, you can delete the slicer from the report page, and if you want it back, just grab the **What if** parameter from the **Fields** list and drag it onto the canvas (then change the visual to a slicer) to easily get the **What if** parameter back into your report.
 
 ## Using a What if parameter
-
 Let's create a simple example of using a **What if** parameter. We created the **What if** parameter in the previous section, now we'll put it to use by creating a new measure whose value adjusts with the slider. To accomplish this, we create a new measure.
 
 ![](media/powerbi-desktop-what-if/what-if_05.png)
@@ -67,5 +65,5 @@ Then, as we move the slider, we see that the *Sales after Discount* column refle
 
 ![](media/powerbi-desktop-what-if/what-if_08.png)
 
-
 And that's all there is to it. You can use **What if** parameters in all sorts of situations, to enable the consumers of reports to interact with different scenarios that you create in your reports.
+

@@ -1,35 +1,35 @@
-<properties
-   pageTitle="Tips and tricks for asking questions with Q&A in Power BI"
-   description="Tips and tricks for asking questions with Q&A in Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="mihart"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Tips and tricks for asking questions with Q&A in Power BI
+description: Tips and tricks for asking questions with Q&A in Power BI
+services: powerbi
+documentationcenter: ''
+author: mihart
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/24/2017"
-   ms.author="jastru"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/24/2017
+ms.author: jastru
 
+---
 # Tips for asking questions in Power BI Q&A
-
-##  Words and terminology that Q&A recognizes
-
+## Words and terminology that Q&A recognizes
 This list of keywords is not exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI does not recognize it, or doesn’t recognize it in the current context.
 
 The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
->[AZURE.NOTE]
-Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
+> [!NOTE]
+> Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
+> 
+> 
 
 If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
 
@@ -82,19 +82,13 @@ Example: show districts by month and sales total as bar chart
 **Wh (relationship, qualified)**: when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
 
 ## Q&A helps you phrase the question
-
 Q&A does its best to ensure that the answer accurately reflects the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
 * auto-completes words and questions. It uses various strategies, including auto-completing recognizable words, popular questions for the underlying workbooks, and previously-used questions that returned valid responses. If more than one auto-complete option is available, they are presented in a dropdown list.
-
 * corrects spelling.
-
 * provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
-
 * auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
-
 * restates the question based on the data in the underlying dataset(s). This helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
-
 * dims words it does not understand.
 
 ## Combine results from more than one dataset
@@ -103,10 +97,10 @@ One of Power BI's most powerful features is the ability to combine data from dif
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
 
-
 ## Next steps
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

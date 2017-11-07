@@ -1,104 +1,94 @@
-<properties
-   pageTitle="Power BI Embedded Migration Tool"
-   description="This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS)."
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Power BI Embedded Migration Tool
+description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="08/21/2017"
-   ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 08/21/2017
+ms.author: asaxton
 
+---
 # Power BI Embedded migration tool
-
 This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
 
 Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
 
 ## Limitations
-
 * Pushed datasets cannot be downloaded and will need to be recreated using the Power BI REST APIs for the Power BI service.
 * PBIX files imported before November 26, 2016 will not be downloadable.
 
 ## Download
-
 You can download the migration tool sample from [GitHub](https://github.com/Microsoft/powerbi-migration-sample). You can either download a zip of the repository, or you can clone it locally. Once downloaded, you can open *powerbi-migration-sample.sln* within Visual Studio to build and run the migration tool.
 
 ## Migration Plans
-
 Your migration plan is just metadata that catalogs the content within Power BI Embedded and how you want to publish them to the Power BI service.
 
 ### Start with a new migration plan
-
 A migration plan is the metadata of the items available in Power BI Embedded that you then want to move over to the Power BI service. The migration plan is stored as an XML file.
 
 You will want to start by creating a new migration plan. To create a new migration plan, do the following.
 
 1. Select **File** > **New Migration Plan**.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-plan.png)
-
 2. In the **Select Power BI Embedded Resource Group**  dialog, you will want to select the Environment dropdown and select prod.
-
 3. You will be prompted to sign in. You will use your Azure subscription login.
-
-    > [AZURE.IMPORTANT] This is **not** your Office 365 organization account that you sign into Power BI with.
-
+   
+   > [!IMPORTANT]
+   > This is **not** your Office 365 organization account that you sign into Power BI with.
+   > 
+   > 
 4. Select the Azure subscription which stores your Power BI Embedded workspace collections.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group.png)
-
 5. Below the subscription list, select the **Resource Group** that contains your workspace collections and select **Select**.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group2.png)
-
 6. Select **Analyze**. This will get an inventory of the items within your Azure subscription for you to begin your plan.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-group.png)
-
-    > [AZURE.NOTE] The analyze process could take several minutes depending on the number of Workspace collections and how much content exists in the workspace collection.
-
+   
+   > [!NOTE]
+   > The analyze process could take several minutes depending on the number of Workspace collections and how much content exists in the workspace collection.
+   > 
+   > 
 7. When **Analyze** is complete, it will prompt you to save your migration plan.
 
 At this point, you have connected your migration plan to your Azure subscription. Read below to understand the flow of how to work with your migration plan. This includes Analyze & Plan Migration, Download, Create Groups and Upload.
 
 ### Save your migration plan
-
 You can save your migration plan for use later. This will create an XML file that contained all the information in your migration plan.
 
 To save your migration plan, do the following.
 
 1. Select **File** > **Save Migration Plan**.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-save-plan.png)
-
 2. Give your file a name or use the generated file name and select **Save**.
 
 ### Open an existing migration plan
-
 You can open a saved migration plan to continue working on your migration.
 
 To open your existing migration plan, do the following.
 
 1. Select **File** > **Open Existing Migration Plan**.
-
+   
     ![](media/powerbi-developer-migrate-tool/migrate-tool-open-plan.png)
-
 2. Select your migration file and select **Open**.
 
 ## Step 1: Analyze & Plan Migration
-
 The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription’s resource group.
 
 ![Analyze & Plan Migration tab](media/powerbi-developer-migrate-tool/migrate-tool-step1.png)
@@ -106,7 +96,6 @@ The **Analyze & Plan Migration** tab gives you a view of what is currently in yo
 We will look at the *SampleResourceGroup* as an example.
 
 ### PaaS Topology
-
 This is a listing of your *Resource Group > Workspace collections > Workspaces*. The resource group and workspace collections will show a friendly name. The workspaces will show a GUID.
 
 The items in the list will also display a color and a number in the format of (#/#). This indicates the number of reports that can be downloaded. 
@@ -117,27 +106,30 @@ A red color means that some reports cannot be downloaded. The left number will i
 You can select an item within the PaaS topology to display the reports in the reports section.
 
 ### Reports
-
 The reports section will list out the reports available and indicates whether it can be downloaded or not.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-reports.png)
 
 ### Target structure
-
 The **Target structure** is where you tell the tool where things will be downloaded to and how to upload them.
 
 #### Download Plan
 A path will automatically be created for you. You can change this path if you wish. If you do change the path, you will need to select **Update paths**.
 
-> [AZURE.NOTE] This does not actually perform the download. This is only specifying the structure of where the reports will be downloaded to.
+> [!NOTE]
+> This does not actually perform the download. This is only specifying the structure of where the reports will be downloaded to.
+> 
+> 
 
 #### Upload Plan
-
 Here you can specify a prefix to be used for the App Workspaces that will be created within the Power BI service. After the prefix will be the GUID for the workspace that existed in Azure.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-plan.png)
 
-> [AZURE.NOTE] This does not actually create the groups within the Power BI service. This only defines the naming structure for the groups.
+> [!NOTE]
+> This does not actually create the groups within the Power BI service. This only defines the naming structure for the groups.
+> 
+> 
 
 If you change the prefix, you will need to select **Generate Upload Plan**.
 
@@ -145,10 +137,12 @@ You can right click on a group and choose to rename the group within the Upload 
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-report-rename-item.png)
 
-> [AZURE.NOTE] The name of the *group* must not contain spaces or invalid characters.
+> [!NOTE]
+> The name of the *group* must not contain spaces or invalid characters.
+> 
+> 
 
 ## Step 2: Download
-
 On the **Download** tab, you will see the list of reports and associated metadata. You can see what the export status is along with the previous export status.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-download-tab.png)
@@ -165,7 +159,6 @@ For a successful download, you will see a status of *Done* and it will reflect t
 After the download is completed, select the **Create Groups** tab.
 
 ## Step 3: Create Groups
-
 After you have downloaded the reports that are available, you can go to the **Create Groups** tab. This tab will create the app workspaces within the Power BI service based on the migration plan that you created. It will create the app workspace with the name you provided on the **Upload** tab within **Analyze & Plan Migration**.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-create-groups.png)
@@ -185,7 +178,6 @@ You can verify that the app workspace was created by signing into Power BI and v
 After the workspace is created, you can move onto the **Upload** tab.
 
 ## Step 4: Upload
-
 On the **Upload** tab, this will upload the reports to the Power BI service. You will see a list of the reports that we downloaded on the Download tab along with the target group name based on your migration plan.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-tab.png)
@@ -199,7 +191,6 @@ You also have the option of selecting what to do if a report with the same name 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-selected.png)
 
 ### Duplicate report names
-
 If you have a report that has the same name, but you know it is a different report, you will need to change the **TargetName** of the report. You can change the name by manually editing the migration plan XML.
 
 You will need to close the migration tool to make the change and then re-open the tool and the migration plan.
@@ -239,8 +230,8 @@ Going back to Power BI, we can see that the reports and datasets have been uploa
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
-### Upload a local PBIX file
 
+### Upload a local PBIX file
 You can upload a local version of a Power BI Desktop file. You will have to close the tool, edit the XML and put the full path to your local PBIX in the **PbixPath** property.
 
 ```
@@ -250,8 +241,8 @@ You can upload a local version of a Power BI Desktop file. You will have to clos
 After you have edited the xml, re-open the plan within the migration tool and upload the report.
 
 <a name="directquery-reports"></a>
-### DirectQuery reports
 
+### DirectQuery reports
 You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
@@ -260,13 +251,11 @@ You can then update the connection string for the dataset within the Power BI se
 * [Set DirectQuery credentials in SaaS workspace](powerbi-developer-migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
 
 ## Embedding
-
 Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.
 
 For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md).
 
 ## Next steps
-
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
@@ -276,3 +265,4 @@ For more information, see [How to migrate Power BI Embedded workspace collection
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

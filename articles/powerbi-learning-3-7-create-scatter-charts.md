@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Scatter Charts"
-   description="Long live bubbles - see scatter charts in action"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="xLQ_ZVScI60"
-   featuredVideoThumb=""
-   courseDuration="9m"/>
+---
+title: Scatter Charts
+description: Long live bubbles - see scatter charts in action
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: xLQ_ZVScI60
+featuredvideothumb: ''
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # How to Use Scatter Charts
-
 If you want to compare two different measures, such as unit sales verses revenue, a common visualization to use is a scatter chart.
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_1.png)
@@ -43,4 +42,7 @@ You can create an animation of your bubble chart's changes over time by adding a
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_4.png)
 
->Note: Remember, if you only see one bubble in your scatter chart, it's because Power BI is aggregating your data, which is the default behavior. Add a category to the *Details* bucket, in the **Visualizations** pane, to get more bubbles.
+> Note: Remember, if you only see one bubble in your scatter chart, it's because Power BI is aggregating your data, which is the default behavior. Add a category to the *Details* bucket, in the **Visualizations** pane, to get more bubbles.
+> 
+> 
+

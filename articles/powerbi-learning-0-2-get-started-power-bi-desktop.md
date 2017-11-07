@@ -1,33 +1,32 @@
-<properties
-   pageTitle="Getting Started with Power BI Desktop"
-   description="Get a tour of Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="1Bo1BrpR3AY"
-   courseDuration="9m"/>
+---
+title: Getting Started with Power BI Desktop
+description: Get a tour of Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 1Bo1BrpR3AY
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Getting Started With Power BI Desktop
-
 In this topic, we take a closer look at how the first two parts of Power BI fit together:
 
--   Create a report in **Power BI Desktop**
--   Publish the report in the **Power BI service**
+* Create a report in **Power BI Desktop**
+* Publish the report in the **Power BI service**
 
 We’ll start in Power BI Desktop, and select **Get Data**. The collection of data sources appears, allowing you to choose a data source. The following image shows selecting a Web page as the source, in the video above, Will selected an **Excel** workbook.
 
@@ -41,11 +40,11 @@ In Power BI Desktop **Report** view, you can begin to build reports.
 
 The **Report** view has five main areas:
 
-1.	The ribbon, which displays common tasks associated with reports and visualizations
-2.	The **Report** view, or canvas, where visualizations are created and arranged
-3.	The **Pages** tab area along the bottom, which lets you select or add a report page
-4.	The **Visualizations** pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
-5.	The **Fields** pane, where query elements and filters can be dragged onto the **Report** view, or dragged to the **Filters** area of the **Visualizations** pane
+1. The ribbon, which displays common tasks associated with reports and visualizations
+2. The **Report** view, or canvas, where visualizations are created and arranged
+3. The **Pages** tab area along the bottom, which lets you select or add a report page
+4. The **Visualizations** pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
+5. The **Fields** pane, where query elements and filters can be dragged onto the **Report** view, or dragged to the **Filters** area of the **Visualizations** pane
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_3.png)
 
@@ -90,3 +89,4 @@ When we pin a couple of visuals from our report, we can see them in the dashboar
 There’s a lot more you can do with Power BI, of course, such as sharing the dashboards you create. We'll discuss sharing later on in this course.
 
 Next, we look at a feature that can automatically create dashboards for you, just by connecting to a cloud service like Facebook, Salesforce, and many others.
+

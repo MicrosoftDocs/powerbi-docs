@@ -1,29 +1,28 @@
-<properties
-   pageTitle="Introducing Power BI"
-   description="Understand what Power BI is, and its software elements"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId=""
-   courseDuration="5m"/>
+---
+title: Introducing Power BI
+description: Understand what Power BI is, and its software elements
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Guided Learning for Power BI
-
 Welcome to **Guided Learning** for Power BI. This self-paced online course explains Power BI in a sequential way, so you can build your knowledge from the ground up.
 
 The course is designed to provide guidance in understandable chunks, with logical flow that helps you absorb concepts, details, and examples. It includes lots of visuals and videos to help you learn, too.
@@ -63,3 +62,4 @@ A common flow of work in Power BI begins in **Power BI Desktop**, where a report
 It doesn’t always happen that way, and that’s okay, but we’ll use that flow to help you learn the various parts of Power BI, and how they complement one another.
 
 Okay, now that we have an overview of this course, what Power BI is, and its three main elements, let's take a look at what using **Power BI** is like.
+

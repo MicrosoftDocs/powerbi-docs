@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Code snippets for migrating content from Power BI Embedded"
-   description="Here are some code snippets of basic operations needed for content migration"
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Code snippets for migrating content from Power BI Embedded
+description: Here are some code snippets of basic operations needed for content migration
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="07/21/2017"
-   ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 07/21/2017
+ms.author: asaxton
 
+---
 # Code snippets for migrating content from Power BI Embedded
-
 Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md).
@@ -53,7 +52,6 @@ using System.Threading.Tasks;
 
 
 ## Export report from PaaS workspace
-
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -78,7 +76,6 @@ using System.Threading.Tasks;
 ```
 
 ## Import report to SaaS workspace
-
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -92,7 +89,6 @@ using System.Threading.Tasks;
 ```
 
 ## Extract DirectQuery connection string from PaaS report
-
 This is for updating the PBIX after migrating to SaaS.
 
 ```
@@ -113,7 +109,6 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Update DirectQuery connection string is SaaS workspace
-
 ```
     public class ConnectionString
     {
@@ -132,7 +127,6 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Set DirectQuery credentials in SaaS workspace
-
 In this snippet, we are using unencrypted credentials for simplicity, sending encrypted credentials is supported as well.
 
 ```
@@ -169,7 +163,6 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
 ```
 
 ## Push dataset & report
-
 You will need to rebuild the report for the created dataset.
 
 In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md).
@@ -191,7 +184,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
     }
     var dummyDatasetID = import.Result.Datasets[0].Id;
 
-	// step 2 -> clone the pushable dataset and rebind to dummy dataset
+    // step 2 -> clone the pushable dataset and rebind to dummy dataset
     var cloneInfo = new Microsoft.PowerBI.Api.V1.Models.CloneReportRequest("pushableReportClone",null, dummyDatasetID);
     var clone = client.Reports.CloneReportAsync(<Your WSC NAME>, <Your workspace ID>, <Your pushable report ID>, cloneInfo);
     var pushableReportCloneID = clone.Result.Id;
@@ -208,7 +201,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
             fileStream.Close();
         }
     }
-            
+
     // step 4 -> Upload dummy PBIX to SaaS workspace
     AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <Your client ID>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -216,7 +209,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
     var clientSaaS = new Microsoft.PowerBI.Api.V2.PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentialsSaaS);
     using (var file = File.Open(@"C:\Migration\PushAPIReport.pbix", FileMode.Open))
     {
-        
+
         var importSaaS = clientSaaS.Imports.PostImportWithFileAsyncInGroup(<Your GroupID>, file, "importedreport1", "Abort");
         while (importSaaS.Result.ImportState != "Succeeded" && importSaaS.Result.ImportState != "Failed")
         {
@@ -234,7 +227,6 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 ```
 
 ## Next steps
-
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
@@ -246,3 +238,4 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

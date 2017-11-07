@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Use Report Themes in Power BI Desktop (Preview)"
-   description="Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Use Report Themes in Power BI Desktop (Preview)
+description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/05/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/05/2017
+ms.author: davidi
 
+---
 # Use Report Themes in Power BI Desktop (Preview)
-
 With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or any other color theme you might want to apply a report. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme (a few exceptions apply, described later in this article).
 
 ![](media/powerbi-desktop-report-themes/report-themes_1.png)
@@ -31,13 +30,11 @@ Applying a **Report Theme** requires a JSON file, using a basic structure, which
 Beginning with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements using a JSON file, and customize (and standardize) nearly all elements using the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
 
 ### Enable Report Themes in Preview
-
 You can try the new **Report Themes** feature beginning with the **March 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Custom Report Themes**. You'll need to restart **Power BI Desktop** after you make the selection.
 
 ![](media/powerbi-desktop-report-themes/report-themes_2.png)
 
 ## How Report Themes work
-
 To apply a Report Theme to a Power BI Desktop report, select **Switch Theme** button from the **Home** ribbon, then select **Import Theme** from the drop-down.
 
 ![](media/powerbi-desktop-report-themes/report-themes_3.png)
@@ -53,16 +50,15 @@ When the theme file is successfully loaded, Power BI Desktop lets you know.
 Now that we've imported a theme file, let's take a look at the simple and straightforward JSON file structure.
 
 ## Structure of a Report Theme JSON file
-
 The basic JSON file selected in the previous section (the *St Patricks Day.json* file), when opened in an editor, looks like the following.
 
 ![](media/powerbi-desktop-report-themes/report-themes_6.png)
 
 That JSON file has the following required lines:
 
--   **name** - this is the theme name, which is the only required field
--   **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
--   **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
+* **name** - this is the theme name, which is the only required field
+* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
+* **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To apply a style to a **table** or **matrix** visual, select the visual and in the **Visualizations** pane select the **Format** section, then expand **Matrix style** and select a style from the **Style** drop-down.
 
@@ -89,7 +85,6 @@ With the ability to use a granular JSON file, you can create a theme file that s
 For information about the format of the detailed JSON file, see the **Report theme JSON file format** section at the end of this article.
 
 ## How Report Theme colors stick to your reports
-
 When you publish your report to the **Power BI service**, your Report Theme colors stay with it.
 
 In addition, the **Data colors** section of the **Format** panel reflect your Report Theme. For example, after applying the multitude of green and brown colors from the **St. Patrick's Day** theme, when we select a visual and go to **Format > Data colors** we see the following.
@@ -99,7 +94,6 @@ In addition, the **Data colors** section of the **Format** panel reflect your Re
 See all that green? That's because those colors were part of the **Report Theme** we imported and applied.
 
 ### Situations when Report Theme colors won't stick to your reports
-
 If you apply a custom color set (or individual color) to a particular data point in a visual, applying a Report Theme will *not* override that customized data point color.
 
 In addition, if you've manually set a data point's color using the Theme colors section of the color palette, that (or those) colors will *not* be updated when you apply a new Report Theme. To get your default colors back (so they'll update when you apply a new Report Theme), you can select **Revert to default** in the **Theme colors** palette.
@@ -108,24 +102,22 @@ In addition, if you've manually set a data point's color using the Theme colors 
 
 Also, many **Custom Visuals** will not apply Report Themes.
 
-
 ## Report Theme files you can use right now
-
 Want to get started with **Report Themes**? Great! Here are a handful of ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report, along with an image of that Report Theme applied to the report used in this article.
 
--   The [theme](https://go.microsoft.com/fwlink/?linkid=843924) used in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of **Report Themes**, called [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
+* The [theme](https://go.microsoft.com/fwlink/?linkid=843924) used in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of **Report Themes**, called [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
 ![](media/powerbi-desktop-report-themes/report-themes_10.png)
 
--   The [theme that's more visually impaired friendly](https://go.microsoft.com/fwlink/?linkid=843923) than the default color theme, called [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* The [theme that's more visually impaired friendly](https://go.microsoft.com/fwlink/?linkid=843923) than the default color theme, called [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
 ![](media/powerbi-desktop-report-themes/report-themes_11.png)
 
--   A whole bunch of [Power View themes](https://go.microsoft.com/fwlink/?linkid=843925) wrapped in a zip file, including one called [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925) shown below.
+* A whole bunch of [Power View themes](https://go.microsoft.com/fwlink/?linkid=843925) wrapped in a zip file, including one called [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925) shown below.
 
 ![](media/powerbi-desktop-report-themes/report-themes_12.png)
 
--   Lastly, here's one that is love-ly (the *Valentine's Day* theme) and sure to get your attention.
+* Lastly, here's one that is love-ly (the *Valentine's Day* theme) and sure to get your attention.
 
 ![](media/powerbi-desktop-report-themes/report-themes_13.png)
 
@@ -143,19 +135,17 @@ Rather than a download, here's the code for the Valentine's day JSON file:
 
 Here are a few more report themes you can use as starting points, too:
 
--    [Sunflower-twilight](https://community.powerbi.com/t5/Themes-Gallery/Sunflower-Twilight/m-p/140749)
--    [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
--    [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746)
--    [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
-
+* [Sunflower-twilight](https://community.powerbi.com/t5/Themes-Gallery/Sunflower-Twilight/m-p/140749)
+* [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
+* [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746)
+* [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## Report theme JSON file format
-
 The basic JSON file has five required lines:
 
--   **name** - this is the theme name, which is the only required field
--   **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
--   **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
+* **name** - this is the theme name, which is the only required field
+* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
+* **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To create an extended format JSON file, with more detailed and granular control over formatting, you need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
 
@@ -172,9 +162,10 @@ To create an extended format JSON file, with more detailed and granular control 
 For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
 
 > **Note:** You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
+> 
+> 
 
 ### JSON file element definitions
-
 The tables in this section define visual names (*visualName*), card names (*cardName*), and the enumerations necessary to create your JSON file.
 
 When using *dateTime*, the date must be an ISO date in single quotes, with datetime at the beginning, like the following:
@@ -183,97 +174,95 @@ When using *dateTime*, the date must be an ISO date in single quotes, with datet
 
 Booleans are either *true* or *false*. Strings must be in double quotes, as in "this is a string".
 
-
 | **visualName** |
-|---|
-|areaChart|
-|barChart|
-|basicShape|
-|card|
-|clusteredBarChart|
-|clusteredColumnChart|
-|columnChart|
-|comboChart|
-|donutChart|
-|filledMap|
-|funnel|
-|gauge|
-|hundredPercentStackedBarChart|
-|hundredPercentStackedColumnChart|
-|image|
-|kpi|
-|lineChart|
-|lineClusteredColumnComboChart|
-|lineStackedColumnComboChart|
-|map|
-|multiRowCard|
-|pieChart|
-|pivotTable|
-|ribbonChart|
-|scatterChart|
-|shapeMap|
-|slicer|
-|stackedAreaChart|
-|tableEx|
-|treemap|
-|waterfallChart|
+| --- |
+| areaChart |
+| barChart |
+| basicShape |
+| card |
+| clusteredBarChart |
+| clusteredColumnChart |
+| columnChart |
+| comboChart |
+| donutChart |
+| filledMap |
+| funnel |
+| gauge |
+| hundredPercentStackedBarChart |
+| hundredPercentStackedColumnChart |
+| image |
+| kpi |
+| lineChart |
+| lineClusteredColumnComboChart |
+| lineStackedColumnComboChart |
+| map |
+| multiRowCard |
+| pieChart |
+| pivotTable |
+| ribbonChart |
+| scatterChart |
+| shapeMap |
+| slicer |
+| stackedAreaChart |
+| tableEx |
+| treemap |
+| waterfallChart |
 
 The following table defines *cardName* values. The first value in each cell is the JSON file term, the second value is the name of the card as seen in the **Power BI Desktop** user interface.
 
 | **cardName** |
-|---|
-|axis: Gauge axis|
-|breakdown: Breakdown|
-|bubbles: Bubbles|
-|calloutValue: Callout Value|
-|card: Card|
-|cardTitle: Card Title|
-|categoryAxis: X-Axis|
-|categoryLabels: Category labels|
-|columnFormatting: Field formatting|
-|columnHeaders: Column headers|
-|dataLabels: Data labels|
-|fill: Fill|
-|fillPoint: Fill point|
-|forecast: Forecast|
-|general: General|
-|goals: Goals|
-|grid: Grid|
-|header: Header|
-|imageScaling: Scaling|
-|indicator: Indicator|
-|items: Items|
-|labels: Data labels|
-|legend: Legend|
-|lineStyles: Shapes|
-|mapControls: Map controls|
-|mapStyles: Map styles|
-|numericInputStyle: Numeric inputs|
-|percentBarLabel: Conversion Rate Label|
-|plotArea: Plot Area|
-|plotAreaShading: Symmetry shading|
-|ratioLine: Ratio line|
-|referenceLine: Constant Line|
-|ribbonChart: Ribbons|
-|rotation: Rotation|
-|rowHeaders: Row headers|
-|selection: Selection Controls|
-|sentimentColors: Sentiment colors|
-|shape: Shape|
-|slider: Slider|
-|status: Color coding|
-|subTotals: Subtotals|
-|target: Target|
-|total: Grand total|
-|trend: Trend Line|
-|trendline: Trend axis|
-|valueAxis: Y-Axis|
-|values: Values|
-|wordWrap: Word wrap|
-|xAxisReferenceLine: X-Axis Constant Line|
-|y1AxisReferenceLine: Constant Line|
-|zoom: Zoom|
-
+| --- |
+| axis: Gauge axis |
+| breakdown: Breakdown |
+| bubbles: Bubbles |
+| calloutValue: Callout Value |
+| card: Card |
+| cardTitle: Card Title |
+| categoryAxis: X-Axis |
+| categoryLabels: Category labels |
+| columnFormatting: Field formatting |
+| columnHeaders: Column headers |
+| dataLabels: Data labels |
+| fill: Fill |
+| fillPoint: Fill point |
+| forecast: Forecast |
+| general: General |
+| goals: Goals |
+| grid: Grid |
+| header: Header |
+| imageScaling: Scaling |
+| indicator: Indicator |
+| items: Items |
+| labels: Data labels |
+| legend: Legend |
+| lineStyles: Shapes |
+| mapControls: Map controls |
+| mapStyles: Map styles |
+| numericInputStyle: Numeric inputs |
+| percentBarLabel: Conversion Rate Label |
+| plotArea: Plot Area |
+| plotAreaShading: Symmetry shading |
+| ratioLine: Ratio line |
+| referenceLine: Constant Line |
+| ribbonChart: Ribbons |
+| rotation: Rotation |
+| rowHeaders: Row headers |
+| selection: Selection Controls |
+| sentimentColors: Sentiment colors |
+| shape: Shape |
+| slider: Slider |
+| status: Color coding |
+| subTotals: Subtotals |
+| target: Target |
+| total: Grand total |
+| trend: Trend Line |
+| trendline: Trend axis |
+| valueAxis: Y-Axis |
+| values: Values |
+| wordWrap: Word wrap |
+| xAxisReferenceLine: X-Axis Constant Line |
+| y1AxisReferenceLine: Constant Line |
+| zoom: Zoom |
 
 ### Properties within each card
 The following section defines the properties within each card.
@@ -3150,7 +3139,6 @@ The following section defines the properties within each card.
 
 
 ### Enumerations in the JSON file
-
 The following section defines the enumerations you can use in the JSON file.
 
     {

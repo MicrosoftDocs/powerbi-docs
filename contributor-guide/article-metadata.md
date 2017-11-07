@@ -1,16 +1,14 @@
 
 
-#Metadata for Power BI technical articles
-
+# Metadata for Power BI technical articles
 All Power BI technical articles contain two metadata sections - a properties section and a tags section. The properties section enables some website automation and SEO stuff, while the tags section enables a lot of internal content reporting. Both sections are required.
 
-- [Syntax]
-- [Usage]
-- [Attributes and values for the properties section]
-- [Attributes and values for the tags section]
+* [Syntax]
+* [Usage]
+* [Attributes and values for the properties section]
+* [Attributes and values for the tags section]
 
-##Syntax
-
+## Syntax
 The properties section uses this syntax:
 
     <properties
@@ -34,14 +32,12 @@ The tags section uses this syntax:
        ms.date="mm/dd/yyyy"
        ms.author="Your MSFT alias or your full email address;semicolon separates two or more"/>
 
-##Usage
-
-- The element name and attribute names are case sensitive.
-- The <properties> section must be the first line of your file.
-- Leave a blank line after each metadata section and before your page title to ensure that the page title is correctly converted to HTML during the publishing process.
+## Usage
+* The element name and attribute names are case sensitive.
+* The <properties> section must be the first line of your file.
+* Leave a blank line after each metadata section and before your page title to ensure that the page title is correctly converted to HTML during the publishing process.
 
 ## Attributes and values for the properties section
-
 ![](./media/article-metadata/checkmark-small.png)**pageTitle**: Required; important to SEO. The text for this attribute appears in the browser tab and as the title in a search result. Use 55-60 characters including spaces and including the site identifier *| Microsoft Power BI* (typed as: space pipe space Microsoft Power BI).
 
 ![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionalities. Use at least 140 characters, but don't exceed 170 characters including spaces. Describe the  purpose of your content so customers will know whether to choose it from a list of search results. The value is usually displayed as the description or abstract paragraph in search results.
@@ -58,39 +54,30 @@ The tags section uses this syntax:
 
 ![](./media/article-metadata/checkmark-small.png)**tags**: "NA" for Power BI content.
 
-
 ## Attributes and values for the tags section
-
 ![](./media/article-metadata/checkmark-small.png)**ms.service**: Always "powerbi" for Power BI content (Azure has multiple options).
 
 ![](./media/article-metadata/checkmark-small.png)**ms.devlang**: "NA" for Power BI content.
 
 ![](./media/article-metadata/checkmark-small.png)**ms.topic**: Required. Specifies the topic type. Most new pages created by contributors will be article or reference. NOTE: the list below is from Azure, and I have removed some of the options that definitely aren't valid for Power BI. We will decide how to use the remaining options as our site architecture is developed. If in doubt, use "article". 
 
- - **article**: A conceptual topic, tutorial, feature guide, or other non-reference article
-
- - **campaign-page**: A page that is specifically designed as a landing page for external campaigns, and is not included as part of the primary site IA.  Should not be used for documentation articles or regular doc landing pages.
-
- - **get-started-article**: Assign to articles that are featured in the Get Started section of the left navigation for a service.
-
- - **hero-article**: A "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured at the top of the documentation landing page for your service.
-
- - **home-page**: Top level documentation home page.
-
- - **infographic-page**: A page that features a browsable infographic or poster.
-
- - **reference**: An API or language reference page (including REST API).
-
- - **video-page**: A page that features a video.
+* **article**: A conceptual topic, tutorial, feature guide, or other non-reference article
+* **campaign-page**: A page that is specifically designed as a landing page for external campaigns, and is not included as part of the primary site IA.  Should not be used for documentation articles or regular doc landing pages.
+* **get-started-article**: Assign to articles that are featured in the Get Started section of the left navigation for a service.
+* **hero-article**: A "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured at the top of the documentation landing page for your service.
+* **home-page**: Top level documentation home page.
+* **infographic-page**: A page that features a browsable infographic or poster.
+* **reference**: An API or language reference page (including REST API).
+* **video-page**: A page that features a video.
 
 ![](./media/article-metadata/checkmark-small.png)**ms.tgt_pltfrm**: Required. Specifies the target platform. This value will be **NA** for most topics. NOTE: Still detemining whether we should use this for our mobile content.
 
- - **mobile-android**
- - **mobile-html**
- - **mobile-ios**
- - **mobile-multiple**
- - **multiple**
- - **na**
+* **mobile-android**
+* **mobile-html**
+* **mobile-ios**
+* **mobile-multiple**
+* **multiple**
+* **na**
 
 ![](./media/article-metadata/checkmark-small.png)**ms.workload**: Always "powerbi" for Power BI content (Azure has multiple options).
 
@@ -98,12 +85,9 @@ The tags section uses this syntax:
 
 ![](./media/article-metadata/checkmark-small.png) **ms.author**: Required. Specifies the author(s) associated with the topic. To specify multiple values you should separate them with semicolons. Either Microsoft aliases or complete email addresses are acceptable. The length can be no longer than 200 characters.
 
-
-###Contributors' Guide Links
-
-- [Overview article](./../README.md)
-- [Index of guidance articles](./contributor-guide-index.md)
-
+### Contributors' Guide Links
+* [Overview article](../README.md)
+* [Index of guidance articles](contributor-guide-index.md)
 
 <!--Anchors-->
 [Syntax]: #syntax

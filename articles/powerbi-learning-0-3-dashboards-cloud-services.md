@@ -1,27 +1,27 @@
-<properties
-   pageTitle="A quick look at the Power BI service"
-   description="Easily create dashboards in Power BI with cloud services"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="5srP3h3RJf8"
-   courseDuration="9m"/>
+---
+title: A quick look at the Power BI service
+description: Easily create dashboards in Power BI with cloud services
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 5srP3h3RJf8
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # A quick look at the Power BI service
 As we learned, the common flow of work in Power BI is to create a report in Power BI Desktop, publish it to the Power BI service, then share it with others so they can view it in the service or on a mobile app.
 
@@ -32,7 +32,6 @@ A **content pack** is a collection of pre-configured, ready-made visuals and rep
 So let's take a quick look at content packs, the service, and how it works. We go into more detail about content packs (and the service) in upcoming sections; think of this as a bit of taste-testing to whet your appetite.
 
 ## Create out-of-the-box dashboards with cloud services
-
 With Power BI, connecting to data is easy. From the Power BI service, you can simply select the **Get Data** button in the bottom left corner of the home screen.
 
 ![](media/powerbi-learning-0-3-dashboards-cloud-services/c0a3_1.png)
@@ -71,7 +70,6 @@ When you have a visual that you like, you can select the **Pin** icon, to the ri
 ![](media/powerbi-learning-0-3-dashboards-cloud-services/c0a3_8.png)
 
 ## Refreshing data in the Power BI service
-
 You can also choose to **refresh** the dataset for a content pack, or other data you use in Power BI. To set refresh settings, select the ellipses (the three dots) next to a data set, and a menu appears.
 
 ![](media/powerbi-learning-0-3-dashboards-cloud-services/c0a3_9.png)
@@ -83,3 +81,4 @@ Select the **Schedule Refresh** option from the bottom of that menu. The Setting
 That's enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
 
 Okay, let's move to the next topic, where we summarize this **Getting Started** section, and get you ready for what's next.
+

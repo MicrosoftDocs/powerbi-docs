@@ -1,27 +1,26 @@
-<properties 
-   pageTitle="Template content pack experiences in Power BI"
-   description="Template Content Pack Experiences"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="erikre" 
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
- 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/09/2017"
-   ms.author="asaxton"/>
+---
+title: Template content pack experiences in Power BI
+description: Template Content Pack Experiences
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/09/2017
+ms.author: asaxton
+
+---
 # Template content pack experiences in Power BI
-
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
 
 Try the connection experience yourself by connecting to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
@@ -58,10 +57,11 @@ By default a daily refresh schedule is configured for the user, which will re-ev
 Once the content pack is hydrated into the users’ account, they can explore and monitor the data/insights.
 
 Typically this includes:
--	Viewing and customizing the dashboard.
--	Viewing and customizing the report.
--	Using natural language to ask questions of the data
--	Using the exploration canvas to explore the data in the data model
+
+* Viewing and customizing the dashboard.
+* Viewing and customizing the report.
+* Using natural language to ask questions of the data
+* Using the exploration canvas to explore the data in the data model
 
 Consideration should be made for providing natural language modelling (synonyms) and understandable model schema to enable better exploration experiences.
 

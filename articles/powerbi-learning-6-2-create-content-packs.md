@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Build Content Packs"
-   description="Publish a content pack with a bundle of pre-designed dashboards, reports, and datasets"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="8V2WP4nFCiA"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Build Content Packs
+description: Publish a content pack with a bundle of pre-designed dashboards, reports, and datasets
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: 8V2WP4nFCiA
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create a content pack in Power BI
-
 In this lesson, we create a *content pack* with existing artifacts we already have in Power BI, and then share those with colleagues.
 
 In **My Workspace** I have a dashboard, the report underneath, and the dataset. I want to share them as a package with people in my organization, so they can reuse them.
@@ -50,3 +49,4 @@ When I publish, the content pack is added to the organization's content gallery.
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
 
 On to the next lesson!
+

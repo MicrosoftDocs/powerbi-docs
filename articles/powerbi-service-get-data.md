@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Data sources for Power BI"
-   description="Data sources for Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="identified"
-   qualityDate=""/>
+---
+title: Data sources for Power BI
+description: Data sources for Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: identified
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Data sources for the Power BI service
-
 Data is at the heart of Power BI. Whenever you’re exploring data, creating charts and dashboards, asking questions with Q&A, all of those visualizations and answers you see are really getting their underlying data from a dataset. But where does that dataset come from? Well, from a data source.
 
 In this article, we’re going to go over the different types of data sources you can connect to from the Power BI service. Keep in-mind, there are many other types of data sources you can get data from, too. But those might require first using Power BI Desktop or Excel’s advanced data query and modeling features. We’ll go into more about that later. For now, let’s look at the different types of data sources you can connect to right from your Power BI service site.
@@ -93,9 +92,9 @@ SQL Server Analysis Services is unique in that when you connect to it from Power
 Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to checkout [Data Refresh in Power BI](powerbi-refresh-data.md).
 
 ## Considerations and Limitations
-
 For all data sources used in the Power BI service, the following considerations and limitations apply. There are other limitations that apply to specific features, but the following list apply to the Power BI service overall:
 
--   **Dataset size limit** - there is a 1 GB limit for each dataset in the Power BI service.
--   **Row limit** - the maximum number of rows in your dataset (when not using DirectQuery) is 2 billion, with three of those rows reserved (resulting in a usable maximum of 1,999,999,997 rows); the maximum number of rows when using DirectQuery is 1 million rows.
--   **Column limit** - the maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table included in the dataset, which means the maximum number of columns is 16,000 minus one for each table used in the dataset.
+* **Dataset size limit** - there is a 1 GB limit for each dataset in the Power BI service.
+* **Row limit** - the maximum number of rows in your dataset (when not using DirectQuery) is 2 billion, with three of those rows reserved (resulting in a usable maximum of 1,999,999,997 rows); the maximum number of rows when using DirectQuery is 1 million rows.
+* **Column limit** - the maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table included in the dataset, which means the maximum number of columns is 16,000 minus one for each table used in the dataset.
+

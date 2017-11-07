@@ -1,33 +1,30 @@
-<properties
-   pageTitle="Using Q&A with live connections)"
-   description="Documentation for using Power BI Q&A natural language queries with live connections to Analysis Services data and the On-premises data gateway."
-   services="powerbi"
-   documentationCenter=""
-   authors="mihart"
-   manager="erikre"
-   backup="mihart"
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Using Q&A with live connections)
+description: Documentation for using Power BI Q&A natural language queries with live connections to Analysis Services data and the On-premises data gateway.
+services: powerbi
+documentationcenter: ''
+author: mihart
+manager: erikre
+backup: mihart
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/28/2017"
-   ms.author="mihart"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/28/2017
+ms.author: mihart
 
+---
 # Enable Q&A for live connections
-
 ## What is On-premises Data Gateway?  What is a live connection?
-
 Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on-premises". The live connections are managed using a [gateway](powerbi-gateway-onprem.md) and data and inquiries are sent back and forth using live queries.
 
 ## Q&A for On-premises Data Gateway datasets
-
 If you'd like to use Q&A with datasets you access through a gateway, you'll need to enable them first.
 
 Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&A experience is supported in both cases, including using the data source with Cortana.
@@ -38,43 +35,33 @@ Since Power BI Q&A uses the text and schema values from your data source to dete
 
 For more information, see:
 
-- What is the [On-premises Data Gateway](powerbi-gateway-onprem.md)?
-
-- [Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
-
+* What is the [On-premises Data Gateway](powerbi-gateway-onprem.md)?
+* [Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
 
 ## Enable Q&A
-
 Once you have the data gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
 
-1.  In the upper-right corner of Power BI, select the cog icon ![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
-
-    ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
-
-2.  Select **datasets** and choose the dataset to enable for Q&A.
-
-    ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-
+1. In the upper-right corner of Power BI, select the cog icon ![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
+   
+   ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
+2. Select **datasets** and choose the dataset to enable for Q&A.
+   
+   ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
-
+   
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## What data is cached and how is privacy protected?
-
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&A works with a reasonable performance. We exclude values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.
 
 ## Considerations and troubleshooting
-
 During the Preview phase of this feature, there are several limitations:
 
-- Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the On-premises data gateway will be rolled out during the public preview.
-
-- Full support for row level security defined in SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
-
-- Live connections are only supported with the On-premises data gateway. As a result, this cannot be used with the personal gateway.
+* Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the On-premises data gateway will be rolled out during the public preview.
+* Full support for row level security defined in SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+* Live connections are only supported with the On-premises data gateway. As a result, this cannot be used with the personal gateway.
 
 ## Next steps
-
 [On-premises data gateway](powerbi-gateway-onprem.md)  
 [Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
 [Power BI Quick Insights](powerbi-service-auto-insights.md)  
@@ -83,3 +70,4 @@ During the Preview phase of this feature, there are several limitations:
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

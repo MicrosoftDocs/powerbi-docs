@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Create a dataset"
-   description="Walkthrough - Push data into a dataset - Create a dataset in Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Create a dataset
+description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="08/10/2017"
-   ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 08/10/2017
+ms.author: asaxton
 
+---
 # Step 3: Create a dataset in Power BI
-
 This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
 In **step 2** of Push data into a dataset, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
@@ -37,8 +36,10 @@ When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.a
 Here's how to create a dataset in Power BI.
 
 ## Create a dataset in Power BI
-
-> [AZURE.NOTE] Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
+> [!NOTE]
+> Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
+> 
+> 
 
 1. In the Console Application project you created in [Step 2 - Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add **using System.Net;**, and **using System.IO;** to Program.cs.
 2. In Program.cs, add the code below.
@@ -48,27 +49,26 @@ Here's how to create a dataset in Power BI.
 
 Add this code into Program.cs.
 
-- In static void Main(string[] args):
-
+* In static void Main(string[] args):
+  
     ```
     static void Main(string[] args)
     {
         //Get an authentication access token
         token = GetToken();
-
+  
         //Create a dataset in Power BI
         CreateDataset();
     }
     ```
-
-- Add a CreateDataset() method:
-
+* Add a CreateDataset() method:
+  
     ```
     #region Create a dataset in Power BI
     private static void CreateDataset()
     {
         //TODO: Add using System.Net and using System.IO
-
+  
         string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
         //POST web request to create a dataset.
         //To create a Dataset in a group, use the Groups uri: https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets
@@ -77,10 +77,10 @@ Add this code into Program.cs.
         request.Method = "POST";
         request.ContentLength = 0;
         request.ContentType = "application/json";
-
+  
         //Add token to the request header
         request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
-
+  
         //Create dataset JSON for POST request
         string datasetJson = "{\"name\": \"SalesMarketing\", \"tables\": " +
             "[{\"name\": \"Product\", \"columns\": " +
@@ -90,20 +90,20 @@ Add this code into Program.cs.
             "{ \"name\": \"IsCompete\", \"dataType\": \"bool\"}," +
             "{ \"name\": \"ManufacturedOn\", \"dataType\": \"DateTime\"}" +
             "]}]}";
-
+  
         //POST web request
         byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(datasetJson);
         request.ContentLength = byteArray.Length;
-
+  
         //Write JSON byte[] into a Stream
         using (Stream writer = request.GetRequestStream())
         {
             writer.Write(byteArray, 0, byteArray.Length);
-
+  
             var response = (HttpWebResponse)request.GetResponse();
-
+  
             Console.WriteLine(string.Format("Dataset {0}", response.StatusCode.ToString()));
-
+  
             Console.ReadLine();
         }
     }
@@ -115,8 +115,8 @@ The next step shows you how to [get a dataset to add rows into a Power BI table]
 Below is the [complete code listing](#code).
 
 <a name="code"/>
-## Complete code listing
 
+## Complete code listing
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -230,7 +230,6 @@ Below is the [complete code listing](#code).
 [Next Step >](powerbi-developer-walkthrough-push-data-get-datasets.md)
 
 ## See also
-
 [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
 [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
@@ -240,3 +239,4 @@ Below is the [complete code listing](#code).
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

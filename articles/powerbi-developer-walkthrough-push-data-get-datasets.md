@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Get a dataset to add rows"
-   description="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
-   services="powerbi"
-   documentationCenter=""
-   authors="guyinacube"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Get a dataset to add rows
+description: Walkthrough to push data - Get a dataset to add rows into a Power BI table
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="08/10/2017"
-   ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 08/10/2017
+ms.author: asaxton
 
+---
 # Step 4: Get a dataset to add rows into a Power BI table
-
 This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
 In **step 3** of Push data into a dataset, [Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
@@ -31,44 +30,41 @@ To push data into a Power BI dataset, you need to reference the table in the dat
 Here's how you get a dataset.
 
 ## Get a Power BI dataset
-
->**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
+> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
+> 
+> 
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
-
+   
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-
+   
      b. In **Package Manager Console**, enter Install-Package Newtonsoft.Json.
-
 2. After the package is installed, add **using Newtonsoft.Json;** to Program.cs.
-
 3. In Program.cs, add the code below to get a **Dataset ID**.
-
 4. Run the Console App, and login to your Power BI account. You should see **Dataset ID:** followed by an id in the Console Window.
 
 **Sample get a dataset**
 
 Add this code into Program.cs.
 
-- In static void Main(string[] args):
-
+* In static void Main(string[] args):
+  
   ```
   static void Main(string[] args)
   {
-
+  
     //Get an authentication access token
     token = GetToken();
-
+  
     //Create a dataset in Power BI
     CreateDataset();
-
+  
     //Get a dataset to add rows into a Power BI table
     string datasetId = GetDataset();
   }
   ```
-
-- Add a GetDatset() method:
-
+* Add a GetDatset() method:
+  
   ```
     #region Get a dataset to add rows into a Power BI table
     private static string GetDataset()
@@ -81,10 +77,10 @@ Add this code into Program.cs.
         request.Method = "GET";
         request.ContentLength = 0;
         request.ContentType = "application/json";
-
+  
         //Add token to the request header
         request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
-
+  
         string datasetId = string.Empty;
         //Get HttpWebResponse from GET request
         using (HttpWebResponse httpResponse = request.GetResponse() as System.Net.HttpWebResponse)
@@ -93,31 +89,31 @@ Add this code into Program.cs.
             using (StreamReader reader = new System.IO.StreamReader(httpResponse.GetResponseStream()))
             {
                 string responseContent = reader.ReadToEnd();
-
+  
                 //TODO: Install NuGet Newtonsoft.Json package: Install-Package Newtonsoft.Json
                 //and add using Newtonsoft.Json
                 var results = JsonConvert.DeserializeObject<dynamic>(responseContent);
-
+  
                 //Get the first id
                 datasetId = results["value"][0]["id"];
-
+  
                 Console.WriteLine(String.Format("Dataset ID: {0}", datasetId));
                 Console.ReadLine();
-
+  
                 return datasetId;
             }
         }
     }
     #endregion
-```
+  ```
 
 The next step shows you how to [add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md).
 
 Below is the [complete code listing](#code).
 
 <a name="code"/>
-## Complete code listing
 
+## Complete code listing
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -273,7 +269,6 @@ Below is the [complete code listing](#code).
 [Next Step >](powerbi-developer-walkthrough-push-data-add-rows.md)
 
 ## See also
-
 [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
@@ -283,3 +278,4 @@ Below is the [complete code listing](#code).
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

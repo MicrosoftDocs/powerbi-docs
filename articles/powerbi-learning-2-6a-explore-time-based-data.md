@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Explore your time-based data"
-   description="Discover hierarchical drill-down tools for date fields"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="MNAaHw4PxzE"
-   featuredVideoThumb=""
-   courseDuration="6m"/>
+---
+title: Explore your time-based data
+description: Discover hierarchical drill-down tools for date fields
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: MNAaHw4PxzE
+featuredvideothumb: ''
+courseduration: 6m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Explore Time-Based Data
-
 It's easy to analyze time-based data with Power BI. The modeling tools in Power BI Desktop automatically include generated fields that let you drill down through years, quarters, months, and days with a single click.  
 
 When you create a table visualization in your report using a date field, Power BI Desktop automatically includes breakdowns by time period. For example, the single date field in the **Date** table was automatically separated into Year, Quarter, Month and Day by Power BI, as shown in the following image.
@@ -50,18 +49,18 @@ To get back to individual dates rather than using the date hierarchy, simply rig
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_5.png)
 
 ## What's Next
-
 **Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. Now that you know about *modeling* data, you're ready to learn about the fun stuff waiting in the next section: **Visualizations**.
 
 As mentioned before, this course builds your knowledge by following the common flow of work in Power BI:
 
--   Bring data into **Power BI Desktop**, and create a report.
--   Publish to the Power BI service, where you create new **visualizations** and build dashboards
--   **Share** your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in **Power BI Mobile** apps
+* Bring data into **Power BI Desktop**, and create a report.
+* Publish to the Power BI service, where you create new **visualizations** and build dashboards
+* **Share** your dashboards with others, especially people who are on the go
+* View and interact with shared dashboards and reports in **Power BI Mobile** apps
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/c0a1_1.png)
 
 While you might not do all that work yourself, you'll *understand* how those dashboards were created, and how they connected to the data... and when you're done with this course, you'll be able to create one of your own.
 
 See you in the next section!
+

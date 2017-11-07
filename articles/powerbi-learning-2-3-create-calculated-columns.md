@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Create Calculated Columns"
-   description="Calculated columns let you create unique keys, and more"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="GarBXef0Vew"
-   featuredVideoThumb=""
-   courseDuration="9m"/>
+---
+title: Create Calculated Columns
+description: Calculated columns let you create unique keys, and more
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: GarBXef0Vew
+featuredvideothumb: ''
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create Calculated Columns
-
 Creating calculated columns is a simple way to enrich and enhance your data. A **calculated column** is a new column that you create by defining a calculation that transforms or combines two or more elements of existing data. For example, you can create a new column by combining two columns into one.
 
 One useful reason for creating a calculated column is to establish a relationship between tables, when no unique fields exist that can be used to establish a relationship. The lack of a relationship becomes apparent when you create a simple table visual in Power BI Desktop, and you get the same value for all entries, yet you know the underlying data is different.
@@ -52,3 +51,4 @@ Returning to **Report** view, you now see a different value for each district.
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_5.png)
 
 There are all sorts of other things you can do by creating calculated columns, too.
+

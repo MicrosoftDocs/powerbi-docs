@@ -1,37 +1,33 @@
-﻿<properties
-   pageTitle="Types of Quick Insights supported by Power BI"
-   description="Quick Insights with Power BI."
-   services="powerbi"
-   documentationCenter=""
-   authors="mihart"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Types of Quick Insights supported by Power BI
+description: Quick Insights with Power BI.
+services: powerbi
+documentationcenter: ''
+author: mihart
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/03/2017"
-   ms.author="mihart"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/03/2017
+ms.author: mihart
 
-
+---
 # Types of Quick Insights supported by Power BI
-
 ## How does Quick Insights work?
-
 Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
 
 You can run Quick Insights against a dataset or tile (Related Insights).   
 
-##  What types of Quick Insights can we find?
+## What types of Quick Insights can we find?
 These are some of the algorithms we use:
-
 
 ## Category outliers (top/bottom)
 Highlights cases where, for a measure in the model, one or two members of a dimension have much larger values than other members of the dimension.  
@@ -78,11 +74,10 @@ For data across a time series, detects when there are specific dates or times wi
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_time_series_outliers.png)
 
-
 ## Next steps
-
 [Power BI Quick Insights](powerbi-service-auto-insights.md)
 
 If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Quick Insights in Power BI"
-   description="Learn how to get Quick Insights and visuals in a few clicks"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="et_MLSL2sA8"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Quick Insights in Power BI
+description: Learn how to get Quick Insights and visuals in a few clicks
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: et_MLSL2sA8
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Use Quick Insights in the Power BI service
-
 When you're working with a dashboard, report, or dataset in the Power BI service, you can have Power BI look for quick insights into the data. In Power BI, from the **Datasets** section in the left pane, select the *ellipses* (the three dots) beside the dataset you're interested in. A menu of options appears, and on the far right you'll see an option called **Quick Insights**.
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_1.png)
@@ -44,3 +43,4 @@ When you select the **View insights** button on the notification, you're present
 Like any other visual, you can interact with the visuals in the Quick Insights page, and you can also pin any of them to a dashboard that you might have, or further filter one or more of them (or as many as you like), to search for additional insights that might be waiting on your curiosity to uncover.
 
 With **Quick Insights**, you can let Power BI do the work to spot outliers and trends in your data, then use those findings in your dashboards, or further refine and filter them to get to the insights that are most important to you.
+

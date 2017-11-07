@@ -1,29 +1,28 @@
-<properties
-   pageTitle="Z-order"
-   description="Control how your report elements overlap with each other"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="MkiiNFI2Ve0"
-   courseDuration="3m"/>
+---
+title: Z-order
+description: Control how your report elements overlap with each other
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: MkiiNFI2Ve0
+courseduration: 3m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Arrange the Z-order of Report Elements
-
 When you have lots of elements on a report, Power BI lets you manage how they overlap with each other. How items are layered, or arranged on top of one another, is often referred to as the z-order.
 
 To manage the z-order of elements in a report, select an element, and use the **Arrange** button on the **Home** tab of the ribbon to change its z-order.
@@ -35,3 +34,4 @@ By using the options in the **Arrange** button menu, you can get the ordering of
 Using the Arrange button is particularly useful when using shapes as decorative backgrounds or borders, or to highlight particular sections of an individual chart or graph. You can also use them to create a background, such as the following light-blue rectangle being used for a report title background.
 
 ![](media/powerbi-learning-3-11f-arrange-visual-zorder/3-11f_2.png)
+

@@ -1,27 +1,26 @@
-<properties
-pageTitle="Understanding the Power BI admin role"
-description="How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service."
-services="powerbi"
-documentationCenter=""
-authors="guyinacube"
-manager="erikre"
-backup=""
-editor=""
-tags=""
-qualityFocus="no"
-qualityDate=""/>
+---
+title: Understanding the Power BI admin role
+description: How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service.
+services: powerbi
+documentationcenter: ''
+author: guyinacube
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-ms.service="powerbi"
-ms.devlang="NA"
-ms.topic="article"
-ms.tgt_pltfrm="na"
-ms.workload="powerbi"
-ms.date="09/05/2017"
-ms.author="asaxton"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: powerbi
+ms.date: 09/05/2017
+ms.author: asaxton
 
+---
 # Understanding the Power BI admin role
-
 Learn how you can use the Power BI admin role within your organization.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -33,41 +32,33 @@ Office 365 user admins can assign users to be Power BI admins within the Office 
 ![](media/powerbi-admin-role/powerbi-admin-portal.png)
 
 ## Using the Office 365 Admin Center to assign a role
-
 To assign users to the Power BI Administrator role within the Office 365 Admin Center, you can do the following.
 
 1. Browse to the Office 365 Admin Center and select **Users** > **Active Users**.
-
+   
     ![](media/powerbi-admin-role/powerbi-admin-users.png)
-
 2. Select the user that you want to assign the role to.
-
-4. Select **Edit** for roles.
-
+3. Select **Edit** for roles.
+   
     ![](media/powerbi-admin-role/powerbi-admin-edit-roles.png)
-
-5. Select **Customized administrator** > **Power BI service administrator**
-
+4. Select **Customized administrator** > **Power BI service administrator**
+   
     ![](media/powerbi-admin-role/powerbi-admin-role.png)
-
-6. Select **Save**.
+5. Select **Save**.
 
 You should see **Power BI service administrator** listed for the role of that user. They will now have access to the [Power BI admin portal](powerbi-admin-portal.md).
 
 ![](media/powerbi-admin-role/powerbi-admin-role-set.png)
 
 ## Using PowerShell to assign a role
-
 To run the PowerShell command, you must have the Azure Active Directory PowerShell Module installed.
 
 ### Download Azure AD PowerShell module
-
 [Download Azure Active Directory PowerShell Version 2](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/AzureAD/index.md)
 
 [Download Azure Active Directory PowerShell Version 1.1.166.0 GA](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)
 
 ### Command to add role to member
-
 **Azure AD PowerShell v2 Command**
 
 You will need to get the **ObjectId** for the **Power BI Service Administrator** role. You can run [Get-AzureADDirectoryRole](https://docs.microsoft.com/powershell/azuread/v2/get-azureaddirectoryrole) to get the **ObjectId**
@@ -101,10 +92,10 @@ ObjectId                             DisplayName UserPrincipalName      UserType
 
 To add the member to the role, run [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember).
 
-|Parameter|Description|
-|---|---|
-|ObjectId|The Role ObjectId.|
-|RefObjectId|The members ObjectId.|
+| Parameter | Description |
+| --- | --- |
+| ObjectId |The Role ObjectId. |
+| RefObjectId |The members ObjectId. |
 
 ```
 Add-AzureADDirectoryRoleMember -ObjectId 00f79122-c45d-436d-8d4a-2c0c6ca246bf -RefObjectId 6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c
@@ -119,14 +110,12 @@ Add-MsolRoleMember -RoleMemberEmailAddress "tim@contoso.com" -RoleName "Power BI
 ```
 
 ## Limitations and considerations
-
 The Power BI service administrator role does not provide access to the following.
 
-- Ability to modify users and licenses within the Office 365 Admin Center
-- Access to the audit logs. For more information, see [Using auditing within your organization](powerbi-admin-auditing.md).
+* Ability to modify users and licenses within the Office 365 Admin Center
+* Access to the audit logs. For more information, see [Using auditing within your organization](powerbi-admin-auditing.md).
 
 ## Next steps
-
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
 [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
@@ -134,5 +123,4 @@ The Power BI service administrator role does not provide access to the following
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
 

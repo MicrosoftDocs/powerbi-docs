@@ -1,35 +1,36 @@
-<properties
-   pageTitle="Group interactions among visualizations"
-   description="Specify which visuals interact on a dashboard, and which do not"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="N_xYsCbyHPw"
-   featuredVideoThumb=""
-   courseDuration="9m"/>
+---
+title: Group interactions among visualizations
+description: Specify which visuals interact on a dashboard, and which do not
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: N_xYsCbyHPw
+featuredvideothumb: ''
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Create Complex Interactions Between Visualizations
-
 When you have multiple visualizations on the same report page, selecting a particular segment by clicking or using a slicer will affect all the visuals on that page. In some cases, though, you may want to slice only specific visuals. This is particularly true when using elements such as scatter plots, where limiting the data to a specific segment will remove crucial meaning. Fortunately, Power BI Desktop lets you control how interactions flow between visuals.
 
 To change the interaction between your visualizations, select **Edit** from the Visuals section of the **Home** ribbon to toggle **Edit Mode** on.
 
 > Note: The **Edit Interactions** icon in Power BI Desktop has changed since the video was recorded.
+> 
+> 
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_1.png)
 
@@ -46,3 +47,4 @@ Click the *pie chart* icon to highlight the segmented data. Otherwise, the data 
 A useful design tip is to draw a transparent shape around visuals that interact with each other, so it's clear to the user that they have an interactive relationship.
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_4.png)
+

@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Ask Questions of Your Data With Natural Language"
-   description="Use Q & A to get lightning-fast insights and visuals"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="qMf7OLJfCz8"
-   featuredVideoThumb=""
-   courseDuration="9m"/>
+---
+title: Ask Questions of Your Data With Natural Language
+description: Use Q & A to get lightning-fast insights and visuals
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: qMf7OLJfCz8
+featuredvideothumb: ''
+courseduration: 9m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Ask Questions of Your Data With Natural Language
-
 Power BI comes with a powerful language recognition engine that lets you ask questions of your data using conversational phrases and questions. So along with building reports and visualizations with Power BI, you can create charts and graphs just by asking simple questions.
 
 To ask a question of your data, open a dashboard in Power BI and the top of the screen you'll see an input box, where you can ask questions about the displayed data. This feature is sometimes referred to as *Questions & Answers*, or more often, this feature is just referred to as **Q&A**.
@@ -44,3 +43,4 @@ At any point along the way, you can edit the visual created by your natural lang
 ![](media/powerbi-learning-4-3-asking-questions-natural-language/4-3_4.png)
 
 To save the visualization to a dashboard once you've created the perfect visual, just select the **pin** icon next to the question input box.
+

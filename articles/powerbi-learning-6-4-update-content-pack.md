@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Update Content Packs"
-   description="Easily push content packs changes to others in your organization"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="nem2r4NpTyU"
-   featuredVideoThumb=""
-   courseDuration="4m"/>
+---
+title: Update Content Packs
+description: Easily push content packs changes to others in your organization
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: nem2r4NpTyU
+featuredvideothumb: ''
+courseduration: 4m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Edit a content pack in Power BI
-
 In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
 
 I'm back in My Workspace, editing my original dashboard.
@@ -52,3 +51,4 @@ Power BI takes those changes and publishes the updated content pack to the conte
 Anybody who has connected to my content pack gets a message that the content pack has changed, and asks if they want to accept the changes or keep the older version.
 
 So as the content pack owner, you can manage the versions that your colleagues are using.
+

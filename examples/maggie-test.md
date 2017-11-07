@@ -1,12 +1,14 @@
-<properties 
-        pageTitle="page title" 
-        description="description" 
-        services="powerbi" 
-        documentationCenter="" 
-        authors="maggiesMSFT" />
+---
+title: page title
+description: description
+services: powerbi
+documentationcenter: ''
+author: maggiesMSFT
 
+{}
+
+---
 # here's
-
 my new topic.
 
 ## wow

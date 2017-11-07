@@ -1,27 +1,26 @@
-﻿<properties
-   pageTitle="Customizing tooltips in Power BI Desktop"
-   description="Create custom tooltips for visuals using drag-and-drop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Customizing tooltips in Power BI Desktop
+description: Create custom tooltips for visuals using drag-and-drop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Customizing Tooltips in Power BI Desktop
-
 Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop.
 
 ![](media/powerbi-desktop-custom-tooltips/custom-tooltips_1.png)
@@ -38,9 +37,9 @@ Once Tooltips are added to the field well, hovering over a data point on the vis
 ![](media/powerbi-desktop-custom-tooltips/custom-tooltips_3.png)
 
 ## Customizing tooltips with aggregation or Quick Calcs
-
 You can further customize a tooltip by selecting an aggregation function or a *Quick Calc* by selecting the arrow beside the field in the **Tooltips** bucket, and selecting from the available options.
 
 ![](media/powerbi-desktop-custom-tooltips/custom-tooltips_4.png)
 
 There are many ways to customize **Tooltips**, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.
+

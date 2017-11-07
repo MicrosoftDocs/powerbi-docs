@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Use Content Packs"
-   description="Quickly reuse dashboards, reports, and datasets across your organization"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="fE9R6ydo8yk"
-   featuredVideoThumb=""
-   courseDuration="7m"/>
+---
+title: Use Content Packs
+description: Quickly reuse dashboards, reports, and datasets across your organization
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: fE9R6ydo8yk
+featuredvideothumb: ''
+courseduration: 7m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Connect to a content pack from a group in Power BI
-
 In previous lessons, we already created a content pack and a group. In this lesson, we're going to create an instance of the content pack for everyone in the group.
 
 I start in My Workspace, ...
@@ -60,3 +59,4 @@ But I can edit the dashboard, the report, and even the dataset, if I want.
 So content packs are a simple way to reuse content created by other people in your organization.
 
 On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-4-update-content-pack.md).
+

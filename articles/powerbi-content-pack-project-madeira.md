@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Connect to Project Madeira with Power BI"
-   description="Project Madeira for Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="joeshoukry"
-   manager="erikre"
-   backup="maggiesMSFT"
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Connect to Project Madeira with Power BI
+description: Project Madeira for Power BI
+services: powerbi
+documentationcenter: ''
+author: joeshoukry
+manager: erikre
+backup: maggiesMSFT
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="10/16/2017"
-   ms.author="yshoukry"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/16/2017
+ms.author: yshoukry
 
+---
 # Connect to Project "Madeira" with Power BI
-
 Getting insights into your Project “Madeira” data is easy with Power BI and the Project “Madeira” content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 Connect to the Project "Madeira" for Power BI or read more about the Project "Madeira" integration with Power BI.
 
@@ -30,45 +29,36 @@ Note: this content pack requires permissions to the tables where data is retriev
 Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.com/getdata/services/project-madeira) for Power BI.
 
 ## How to connect
-
 1. Select **Get Data** at the bottom of the left navigation pane.  
     ![](media/powerbi-content-pack-project-madeira/getdata.png)
-
 2. In the **Services** box, select **Get**.  
     ![](media/powerbi-content-pack-project-madeira/services.png)
-
 3. Select **Project "Madeira"**, then select **Get**.  
     ![](media/powerbi-content-pack-project-madeira/projectmadeira.PNG)
-
 4. When prompted, enter your Project “Madeira” URL. The URL needs to follow the following pattern exactly https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') with your Project “Madeira” company name. Note that there is no trailing slash at the end, and the connection is must be https. See details on finding this URL [below](#FindingParams).  
-
+   
     ![](media/powerbi-content-pack-project-madeira/params.png)
-
 5. When prompted, select Basic as the Authentication Method, enter your Project “Madeira” email address as the username, and then enter the web service access key for your Project “Madeira” account as the password. If you are already signed in to Project “Madeira” in your browser, you may not be prompted for credentials. See details on generating this access key [below](#FindingParams).  
-
+   
     Note: You must be a superuser in Project “Madeira”.
-
+   
     ![](media/powerbi-content-pack-project-madeira/creds.png)
-
 6. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your account.  
-
+   
     ![](media/powerbi-content-pack-project-madeira/dashboard.png)
-
 
 **What Now?**
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
-- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+* [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+* [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 <a name="Requirements"></a>
-## System requirements
 
+## System requirements
 To import your Project “Madeira” data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:  
+
     - ItemSalesAndProfit  
     - ItemSalesByCustomer  
     - powerbifinance  
@@ -78,8 +68,8 @@ To import your Project “Madeira” data into Power BI, you need to have permis
     - TopCustomerOverview  
 
 <a name="FindingParams"></a>
-## Finding Parameters
 
+## Finding Parameters
 **Getting the right URL**
 An easy way to obtain this URL is in Project “Madeira” to go to Web Services, find the powerbifinance web service and copy the Odata URL (use right-click and Copy Shortcut), but leaving out the “/powerbifinance…” part from the URL string.
 
@@ -98,11 +88,11 @@ When you choose OK, a key is created, so you can copy it copy it to the Password
 ![](media/powerbi-content-pack-project-madeira/accesskey3.png)
 
 ## Troubleshooting
-
 The Power BI dashboard relies on the published web services that are listed above, and it will show data from the demonstration company or your own company if you import data from your current finance solution. However, if something goes wrong, this section provides a workaround for the most typical issues.
 
 **"Parameter validation failed, please make sure all parameters are valid" **
 If you see this error after you enter your Project “Madeira” URL, make sure the following requirements are satisfied:  
+
     - The URL follows exactly this pattern https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
     - Delete any text after the company name in parenthesis  
     - Make sure there are no trailing forward slash at the end of the URL.  
@@ -110,6 +100,7 @@ If you see this error after you enter your Project “Madeira” URL, make sure 
 
 **"Login failed"**
 If you get a "login failed" error when you log in to the dashboard, using your Project “Madeira” credentials, then this can be caused by one of the following issues:  
+
     - The account you are using does not have permissions to read the Project “Madeira” data from your account. Verify your user account in Project "Madeira", and make sure that you have used the right web service access key as the password, and then try again.  
     - The Project "Madeira" instance that you are trying to connect to does not have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.  
 
@@ -124,7 +115,7 @@ Or you might have forgotten to specify the company name:
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
 
 ### See also
-
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+

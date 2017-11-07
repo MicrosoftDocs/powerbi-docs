@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Publish to web"
-   description="Publish to web - publish a report to the web so you can share it with everyone"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="jNPOaLP9hlc"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Publish to web
+description: Publish to web - publish a report to the web so you can share it with everyone
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: jNPOaLP9hlc
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Publish a report to the web from Power BI
-
 In this lesson, we learn how to share a Power BI report on a web page, or share it through email, in just a few simple steps. This feature of Power BI is often referred to as **Publish to web**, and it's easy to use and to manage.
 
 In Power BI, select the report you want to share, so it's displayed on the canvas. Then from the menu, select **File > Publish to web**.
@@ -39,8 +38,8 @@ When you select **Create embed code**, Power BI presents another dialog, telling
 
 Power BI presents a dialog with two links:
 
--   A link you can share in email, which show the report as a web page
--   HTML code (a link plus within an iframe) so you can embed the report directly into a web page
+* A link you can share in email, which show the report as a web page
+* HTML code (a link plus within an iframe) so you can embed the report directly into a web page
 
 For the HTML link, you can choose from predefined sizes for the embedded report, or you can modify the iframe code yourself and customize its size.
 
@@ -61,3 +60,4 @@ The Power BI workspace shows the embed codes you've created (in the image below,
 ![](media/powerbi-learning-6-6-publish-to-web/6-6_6.png)
 
 And that's all there is to publishing your Power BI report to the web, and sharing it with the world. It's easy!
+

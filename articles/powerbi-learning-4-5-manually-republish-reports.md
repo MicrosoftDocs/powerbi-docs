@@ -1,30 +1,29 @@
-<properties
-   pageTitle="Manually republishing and refreshing your data"
-   description="Manually update your dataset and report"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="O60a1Acdpkc"
-   featuredVideoThumb=""
-   courseDuration="5m"/>
+---
+title: Manually republishing and refreshing your data
+description: Manually update your dataset and report
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: O60a1Acdpkc
+featuredvideothumb: ''
+courseduration: 5m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Manually Republish and Refresh Your Data
-
 You can update reports and datasets that you've already published from Power BI Desktop to the Power BI service. To do so, select **Publish** from the **Home** tab in the ribbon.
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_0.png)
@@ -40,3 +39,4 @@ And just like any other **Publish** event from Power BI Desktop, you see a dialo
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_2.png)
 
 This is a way to manually refresh your data. You can also automatically update datasets and reports; that process is covered in another learning topic.
+

@@ -1,25 +1,25 @@
-<properties
-   pageTitle="Get data from Comma Separated Value (.CSV) files"
-   description="Learn how to get data from CSV files into Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="complete"
-   qualityDate="03/30/2016"/>
+---
+title: Get data from Comma Separated Value (.CSV) files
+description: Learn how to get data from CSV files into Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: complete
+qualitydate: 03/30/2016
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="07/20/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 07/20/2017
+ms.author: davidi
 
+---
 # Get data from Comma Separated Value (.CSV) files
 ![](media/powerbi-service-comma-separated-value-files/csv_icon.png)
 
@@ -39,23 +39,20 @@ If you have a .CSV, it’s time to get it into your Power BI site as a dataset w
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 ## Import or connect to a .CSV file
-
 **Important:** The maximum file size you can import into Power BI is 1 gigabyte.
 
-1.	In Power BI, in the navigator pane, click **Get Data**.
-
-    ![](media/powerbi-service-comma-separated-value-files/csv_get_data_button.png)
-
-2.	In **Files**, click **Get**.
-
-    ![](media/powerbi-service-comma-separated-value-files/csv_files_get.png)
-
-3.	Find your file.
-
-    ![](media/powerbi-service-comma-separated-value-files/csv_find_your_file.png)
+1. In Power BI, in the navigator pane, click **Get Data**.
+   
+   ![](media/powerbi-service-comma-separated-value-files/csv_get_data_button.png)
+2. In **Files**, click **Get**.
+   
+   ![](media/powerbi-service-comma-separated-value-files/csv_files_get.png)
+3. Find your file.
+   
+   ![](media/powerbi-service-comma-separated-value-files/csv_find_your_file.png)
 
 ## What's next?
-
 **Explore your data** - Once you get data from your file into Power BI, it's time to explore. Just right-click the new dataset and then click **Explore**.
 
-**Schedule refresh** - If your file is saved to a local drive, you can setup scheduled refresh so your dataset and reports in Power BI stay up-to-date. To learn more, see [Data refresh in Power BI](articles/powerbi-refresh-data.md). If your file is saved to OneDrive, Power BI will automatically synchronize with it about every hour.
+**Schedule refresh** - If your file is saved to a local drive, you can setup scheduled refresh so your dataset and reports in Power BI stay up-to-date. To learn more, see [Data refresh in Power BI](powerbi-refresh-data.md). If your file is saved to OneDrive, Power BI will automatically synchronize with it about every hour.
+

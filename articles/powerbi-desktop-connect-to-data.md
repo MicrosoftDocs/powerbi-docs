@@ -1,27 +1,27 @@
-﻿<properties
-   pageTitle="Connect to data in Power BI Desktop"
-   description="Connect to data in Power BI Desktop"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+---
+title: Connect to data in Power BI Desktop
+description: Connect to data in Power BI Desktop
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
+
+---
 # Connect to data in Power BI Desktop
-
-With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.
+With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.
 
 There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting the **File** ribbon, then **Get Data \> More**.
 
@@ -65,22 +65,18 @@ With the data model loaded, in **Report** view in Power BI Desktop, we can begin
 
 ![](media/powerbi-desktop-connect-to-data/ConnectToData_DragOntoReportView.png)
 
-Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
+Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
 
 ## More Information
-
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
-
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
-
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
-
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+* [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+* [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
 ![](media/powerbi-desktop-connect-to-data/SendFeedback.png)
+

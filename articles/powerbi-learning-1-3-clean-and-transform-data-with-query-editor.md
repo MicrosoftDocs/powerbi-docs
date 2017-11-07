@@ -1,29 +1,28 @@
-<properties
-   pageTitle="Clean and Transform Your Data With the Query Editor"
-   description="Get data in shape for use with Power BI"
-   services="powerbi"
-   documentationCenter=""
-   authors="davidiseminger"
-   manager="erikre"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""
-   featuredVideoId="o-sinon5JYY"
-   courseDuration="8m"/>
+---
+title: Clean and Transform Your Data With the Query Editor
+description: Get data in shape for use with Power BI
+services: powerbi
+documentationcenter: ''
+author: davidiseminger
+manager: erikre
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
+featuredvideoid: o-sinon5JYY
+courseduration: 8m
 
-<tags
-   ms.service="powerbi"
-   ms.devlang="NA"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="09/06/2017"
-   ms.author="davidi"/>
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: get-started-article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 09/06/2017
+ms.author: davidi
 
+---
 # Clean and Transform Your Data With the Query Editor
-
 **Power BI Desktop** includes **Query Editor**, a powerful tool for shaping and transforming data so it's ready for your models and visualizations. When you select Edit from Navigator, Query Editor launches and is populated with the tables or other entities you selected from your data source.
 
 You can also launch **Query Editor** directly from **Power BI Desktop**, using the **Edit Queries** button on the **Home** ribbon.
@@ -32,10 +31,10 @@ You can also launch **Query Editor** directly from **Power BI Desktop**, using t
 
 Once Query Editor is loaded with data that's ready for you to shape, you see a handful of sections:
 
-1.  In the ribbon, many buttons are now active to interact with the data in the query
-2.  In the left pane, queries (one for each table, or entity) are listed and available for selection, viewing, and shaping
-3.  In the center pane, data from the selected query is displayed and available for shaping
-4.  The Query Settings window appears, listing the query’s properties and applied steps
+1. In the ribbon, many buttons are now active to interact with the data in the query
+2. In the left pane, queries (one for each table, or entity) are listed and available for selection, viewing, and shaping
+3. In the center pane, data from the selected query is displayed and available for shaping
+4. The Query Settings window appears, listing the query’s properties and applied steps
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_2.png)
 
@@ -56,3 +55,4 @@ Once you select **Close & Apply**, Query Editor applies the query changes you ma
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_6.png)
 
 There are all sorts of things you can do when transforming data in **Query Editor**, including advanced transformations. In the next section, we take a look at a few of those advanced transformations, to give you a sense of the almost immeasurable ways you can transform your data with **Query Editor**.
+
