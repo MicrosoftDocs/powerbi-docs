@@ -24,7 +24,7 @@ ms.author: mihart
 # Static content in Power BI reports
 In Editing View, add text boxes and shapes to a report in Power BI service. 
 
-> **NOTE**: In Power BI Desktop, you can also [add static images to your report](powerbi-learning-3-10-create-shapes-images.md) as shown in this video.
+> **NOTE**: In Power BI Desktop, you can also [add static images to your report](guided-learning/visualizations.yml#step-11) as shown in this video.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 

@@ -1,3 +1,39 @@
 - name: Docs
-  tocHref: /
+  href: /
   topicHref: /
+  items:
+  - name: Power BI
+    tocHref: /power-bi
+    topicHref: /power-bi
+    items:
+    - name: Report Server
+      tocHref: /power-bi/report-server
+      topicHref: /power-bi/report-server
+    - name: Guided Learning
+      tocHref: /power-bi/guided-learning
+      topicHref: /power-bi/guided-learning
+      items:
+      - name: Getting Started
+        tocHref: /power-bi/guided-learning/gettingstarted.yml
+        topicHref: /power-bi/guided-learning/gettingstarted.yml
+      - name: Getting Data
+        tocHref: /power-bi/guided-learning/gettingdata.yml
+        topicHref: /power-bi/guided-learning/gettingdata.yml
+      - name: Modeling
+        tocHref: /power-bi/guided-learning/modeling.yml
+        topicHref: /power-bi/guided-learning/modeling.yml
+      - name: Visualizations
+        tocHref: /power-bi/guided-learning/visualizations.yml
+        topicHref: /power-bi/guided-learning/visualizations.yml
+      - name: Exploring Data
+        tocHref: /power-bi/guided-learning/exploringdata.yml
+        topicHref: /power-bi/guided-learning/exploringdata.yml
+      - name: Power BI and Excel
+        tocHref: /power-bi/guided-learning/powerbiandexcel.yml
+        topicHref: /power-bi/guided-learning/powerbiandexcel.yml
+      - name: Publishing and Sharing
+        tocHref: /power-bi/guided-learning/publishingandsharing.yml
+        topicHref: /power-bi/guided-learning/publishingandsharing.yml
+      - name: Introduction to DAX
+        tocHref: /power-bi/guided-learning/introductiontodax.yml
+        topicHref: /power-bi/guided-learning/introductiontodax.yml

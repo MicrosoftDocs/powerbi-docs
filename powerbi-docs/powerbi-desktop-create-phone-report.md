@@ -82,7 +82,7 @@ Slicers offer on-canvas filtering of report data. When designing slicers in the 
 * Make the slicer vertical or horizontal. 
 * Put a box around the slicer to make the report easier to scan.
 
-Read more about [creating slicers in the Power BI service](powerbi-learning-3-4-create-slicers.md).
+Read more about [creating slicers in the Power BI service](guided-learning/visualizations.yml#step-4).
 
 ## Publish a phone report
 * To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](powerbi-desktop-upload-desktop-files.md), and the phone version publishes at the same time.
