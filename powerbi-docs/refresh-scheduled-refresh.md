@@ -115,7 +115,7 @@ Certain datasets are supported against different gateways for scheduled refresh.
 ## Troubleshooting
 Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
@@ -123,7 +123,7 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Data refresh in Power BI](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [On-premises Data Gateway](service-gateway-onprem.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

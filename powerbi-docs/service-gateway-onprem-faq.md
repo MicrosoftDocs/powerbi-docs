@@ -35,7 +35,7 @@ ms.author: davidi
 **Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure.
 
 **Question:** How can I find out what effective username is being passed to my on-premises Analysis Services server?  
-**Answer:** We answer this in the [troubleshooting article](powerbi-gateway-onprem-tshoot.md).
+**Answer:** We answer this in the [troubleshooting article](service-gateway-onprem-tshoot.md).
 
 **Question:** I have 25 databases in Analysis Services, is there a way to have them all enabled for the gateway at once?  
 **Answer:** No. This is on the roadmap, but we don’t have a timeframe.
@@ -75,6 +75,6 @@ ms.author: davidi
 ## See also
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

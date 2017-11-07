@@ -116,13 +116,13 @@ Sometimes installing the gateway fails. Or, maybe the gateway seems to install o
 
 In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your gateway is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## See also
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

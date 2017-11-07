@@ -173,12 +173,12 @@ These errors could occur if either the Oracle client is not installed, or if it 
 > 
 > 
 
-For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md).
+For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md).
 
 ## See Also
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

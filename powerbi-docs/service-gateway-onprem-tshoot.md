@@ -24,10 +24,10 @@ ms.author: davidi
 This article discusses some common issues you may encounter when using the **On-premises Data Gateway**.
 
 <!-- Shared Community & support links Include -->
-[!INCLUDE [gateway-onprem-tshoot-support-links-include](includes/gateway-onprem-tshoot-support-links-include.md)]
+[!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
 
 <!-- Shared Troubleshooting Install Include -->
-[!INCLUDE [gateway-onprem-tshoot-install-include](includes/gateway-onprem-tshoot-install-include.md)]
+[!INCLUDE [gateway-onprem-tshoot-install-include](./includes/gateway-onprem-tshoot-install-include.md)]
 
 ## Configuration
 ### How to restart the gateway
@@ -207,7 +207,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
 
 <!-- Shared Troubleshooting Firewall/Proxy Include -->
-[!INCLUDE [gateway-onprem-tshoot-firewall-include](includes/gateway-onprem-tshoot-firewall-include.md)]
+[!INCLUDE [gateway-onprem-tshoot-firewall-include](./includes/gateway-onprem-tshoot-firewall-include.md)]
 
 You can find the data center region you are in by doing the following:
 
@@ -215,7 +215,7 @@ You can find the data center region you are in by doing the following:
 2. Select **About Power BI**.
 3. Your data region will be listed in **Your data is stored in**.
    
-    ![](media/powerbi-gateway-onprem-tshoot/power-bi-data-region.png)
+    ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
@@ -227,7 +227,7 @@ There are a number of performance counters that can be used to gauge the activit
 
 These counters can be access through the Windows Performance Monitor tool.
 
-![](media/powerbi-gateway-onprem-tshoot/gateway-perfmon.png)
+![](media/service-gateway-onprem-tshoot/gateway-perfmon.png)
 
 There are general groupings of these counters.
 
@@ -357,19 +357,19 @@ To determine the time it took to query the data source, you can do the following
    > 
 
 <!-- Shared Troubleshooting tools Include -->
-[!INCLUDE [gateway-onprem-tshoot-tools-include](includes/gateway-onprem-tshoot-tools-include.md)]
+[!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
 ### Refresh History
 When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
    
-    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
+    ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
    
-    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
+    ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
    
-    ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
+    ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
 

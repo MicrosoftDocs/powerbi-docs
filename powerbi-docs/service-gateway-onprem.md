@@ -87,7 +87,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
 ## Troubleshooting
-If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the On-Premises Data Gateway](powerbi-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
+If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the On-Premises Data Gateway](service-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
 
 If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md).
 
