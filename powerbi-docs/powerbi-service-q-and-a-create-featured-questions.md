@@ -33,7 +33,7 @@ Watch Will add some featured questions to Power BI Q&A and then use those featur
 > 
 > 
 
-This article uses the [Retail Analysis Sales sample](powerbi-sample-datasets.md).
+This article uses the [Retail Analysis Sales sample](sample-datasets.md).
 
 1. Select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
 2. To add to this list, select the gear icon in the top right corner of Power BI.  

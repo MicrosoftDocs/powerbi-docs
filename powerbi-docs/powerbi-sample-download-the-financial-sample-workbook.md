@@ -32,7 +32,7 @@ This workbook has one table of data of sales and profit data by market segment a
 
 [How to import Excel data](service-excel-workbook-files.md)
 
-[Other data you can try with Power BI -- Sample datasets and content packs](powerbi-sample-datasets.md)
+[Other data you can try with Power BI -- Sample datasets and content packs](sample-datasets.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

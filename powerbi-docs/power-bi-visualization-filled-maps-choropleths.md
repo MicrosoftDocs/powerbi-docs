@@ -47,7 +47,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-1. To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
+1. To create your own filled map, [download the Sales and Marketing sample](sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
 2. When the success message appears, select **View dataset**. 
    
    ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-view-dataset.png)

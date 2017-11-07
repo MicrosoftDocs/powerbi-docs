@@ -74,7 +74,7 @@ Datasets can be refreshed, renamed, explored, used to create reports, and remove
 ### Dig deeper:
 * [Power BI Premium - what is it?](service-premium.md)
 * [Get data for Power BI](service-get-data.md)
-* [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
+* [Sample datasets and content packs for Power BI](sample-datasets.md)
 
 ## Reports
 A Power BI report is one or more pages of visualizations (charts and graphs like line charts, pie charts, treemaps, and many many more). Visualizations are also called ***visuals***. All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and [content packs](service-organizational-content-pack-introduction.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.

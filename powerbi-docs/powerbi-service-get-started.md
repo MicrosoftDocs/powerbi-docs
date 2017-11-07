@@ -135,7 +135,7 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 
 * [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
 * [Power BI videos](powerbi-videos.md)
-* [See what samples we have available for you to use](powerbi-sample-datasets.md)
+* [See what samples we have available for you to use](sample-datasets.md)
 
 ### Stay in touch with Power BI
 * Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)

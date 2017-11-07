@@ -22,13 +22,13 @@ ms.author: mihart
 
 ---
 # Part I, Add visualizations to a Power BI report (Tutorial)
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](power-bi-report-add-visualizations-ii.md). Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
+This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](power-bi-report-add-visualizations-ii.md). Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](sample-datasets.md) to create your own report.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 
 ## Open a report and add a new page
-1. Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the [Sales and Marketing sample](powerbi-sample-datasets.md).
+1. Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the [Sales and Marketing sample](sample-datasets.md).
 2. If the Fields pane isn't visible, select the arrow icon to open it. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)

@@ -43,7 +43,7 @@ Dates are an unique type of hierarchy. When you add a date field to a visualizat
 There are 2 different way to drill down (and up) in your visualization.  Both are described in this article. Both methods accomplish the same thing, so use whichever one you enjoy most.
 
 > [!NOTE]
-> To follow along, [open the Retail Analysis sample](powerbi-sample-datasets.md) in Power BI service and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
+> To follow along, [open the Retail Analysis sample](sample-datasets.md) in Power BI service and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
 > 
 > 
 

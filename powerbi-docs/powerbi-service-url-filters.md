@@ -50,7 +50,7 @@ Let’s assume that the URL to our report is the following.
 
 And we see in our map visualization (above) that we have stores in North Carolina.
 
-> **Note**: This example is based on the [Retail Analysis sample](powerbi-sample-datasets.md).
+> **Note**: This example is based on the [Retail Analysis sample](sample-datasets.md).
 > 
 > 
 

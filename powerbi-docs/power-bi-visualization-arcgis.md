@@ -73,7 +73,7 @@ This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-t
 <br/>
 
 ## Create an ArcGIS map visual
-Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
+Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
