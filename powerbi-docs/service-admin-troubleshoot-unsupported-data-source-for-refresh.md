@@ -31,13 +31,13 @@ This happens when the data source you used, within Power BI Desktop, isn’t sup
 If you aren’t sure what data source was used, you can find that using the following steps within Power BI Desktop.  
 
 1. In Power BI Desktop, make sure you are on the **Report** pane.  
-   ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
+   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
 2. Select **Edit Queries** from the ribbon bar.  
-   ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
+   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
 3. Select **Advanced Editor**.  
-   ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
+   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Make note of the provider listed for the source.  In this example, the provider is ActiveDirectory.  
-   ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
+   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Compare the provider with the list of supported data sources found within [Refresh data in Power BI](refresh-data.md).  You will find that Active Directory is not a supported data source for refresh.  
 
 ## See Also

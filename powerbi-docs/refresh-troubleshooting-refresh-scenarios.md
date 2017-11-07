@@ -33,7 +33,7 @@ If you have a web connector script that's using the [**Web.Page**](https://msdn.
 
 ## Unsupported data source for refresh
 When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see
-[Troubleshooting unsupported data source for refresh](powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md)
+[Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md)
 
 ## Dashboard doesn't reflect changes after refresh
 Please wait about 10-15 minutes for refresh to be reflected in the dashboard tiles.  If it is still not showing up, re-pin the visualization to the dashboard.
