@@ -101,7 +101,7 @@ In this task, we'll compare gross margin and sales.
 From here you might want to:
 
 * [Add the combo chart as a dashboard tile](service-dashboard-tiles.md).
-* [Save the report](powerbi-service-save-a-report.md).
+* [Save the report](service-report-save.md).
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).

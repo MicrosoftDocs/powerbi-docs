@@ -61,7 +61,7 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample. 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
 6. [Add the treemap as a dashboard tile (pin the visual)](service-dashboard-tiles.md). 
-7. [Save the report](powerbi-service-save-a-report.md).
+7. [Save the report](service-report-save.md).
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).

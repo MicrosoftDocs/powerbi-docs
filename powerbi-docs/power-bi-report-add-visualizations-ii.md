@@ -48,7 +48,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 5. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
    
    ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Save the report](powerbi-service-save-a-report.md).
+6. [Save the report](service-report-save.md).
 
 ### Add a map visualization that looks at sales by location
 1. From the **Store** table, select **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  

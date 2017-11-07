@@ -65,7 +65,7 @@ This article gives a quick introduction to creating a visualization in a report.
    
    [Do even more with visualizations](power-bi-report-visualizations.md).
    
-   [Save your report](powerbi-service-save-a-report.md).
+   [Save your report](service-report-save.md).
 
 ## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).

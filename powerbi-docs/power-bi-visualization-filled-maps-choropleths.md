@@ -74,7 +74,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
    ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-color-saturation.png)
 8. The filled map is shaded in green, with light green representing the lower sentiment numbers and dark green representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
    ![](media/power-bi-visualization-filled-maps-choropleths/img007.png)
-9. [Save the report](powerbi-service-save-a-report.md).
+9. [Save the report](service-report-save.md).
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).

@@ -86,7 +86,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
 ### Step 5: Save your report
-1. [Save the report](powerbi-service-save-a-report.md).
+1. [Save the report](service-report-save.md).
 2. [Add the gauge chart as a dashboard tile](service-dashboard-tiles.md). 
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values

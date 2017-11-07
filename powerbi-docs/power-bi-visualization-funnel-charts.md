@@ -74,7 +74,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
 5. [Add the Funnel as a dashboard tile](service-dashboard-tiles.md). 
-6. [Save the report](powerbi-service-save-a-report.md).
+6. [Save the report](service-report-save.md).
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).

@@ -65,7 +65,7 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
 3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're very close to our goal.
    
     ![](media/service-report-create-new/power-bi-report-step3.png)
-4. Now would be a good time to [save your report](powerbi-service-save-a-report.md).
+4. Now would be a good time to [save your report](service-report-save.md).
    
    ![](media/service-report-create-new/powerbi-save.png)
 
@@ -94,7 +94,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 
 ## Next steps
 * [Create a copy of a report](power-bi-report-copy.md)
-* [Save the report](powerbi-service-save-a-report.md)    
+* [Save the report](service-report-save.md)    
 * [Add a new page to the report](power-bi-report-add-page.md)  
 * Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
