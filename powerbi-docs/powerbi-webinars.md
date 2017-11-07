@@ -85,7 +85,7 @@ Watch our latest webinars on-demand.
 [How to build production ready event application in less than a week with Power Apps - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-17-Howtobuildproductionreadyeventapplication288881_01Registration-ForminBody.html?Is=Website)
 
 ## See also
-[Power BI whitepapers](powerbi-whitepapers.md)
+[Power BI whitepapers](whitepapers.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
