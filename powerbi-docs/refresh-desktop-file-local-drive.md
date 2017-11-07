@@ -29,7 +29,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 * All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
@@ -38,7 +38,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 
 You can perform a one-time, manual refresh right in Power BI Desktop by selecting Refresh on the Home ribbon. When you select Refresh here, the data in the *file’s* model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
-![](media/powerbi-refresh-desktop-file-local-drive/pbix-refresh.png)
+![](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
 When you import your Power BI Desktop file from a local drive, data, along with other information about the model is loaded into a dataset in the Power BI service. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can setup a refresh schedule by using **Schedule Refresh**.
 
