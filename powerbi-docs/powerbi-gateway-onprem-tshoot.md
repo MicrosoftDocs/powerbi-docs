@@ -204,7 +204,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](powerbi-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
+If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
 
 <!-- Shared Troubleshooting Firewall/Proxy Include -->
 [!INCLUDE [gateway-onprem-tshoot-firewall-include](includes/gateway-onprem-tshoot-firewall-include.md)]
@@ -377,7 +377,7 @@ For additional information about troubleshooting refresh scenarios, take a look 
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
