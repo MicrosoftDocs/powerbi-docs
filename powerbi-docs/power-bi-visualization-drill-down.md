@@ -88,7 +88,7 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
 5. To drill back up, select **Explore** > **Drill Up**.
    
    ![](media/power-bi-visualization-drill-down/power-bi-drill-up2.png)
-6. To see the data being used to create the visual, select **See data**. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual. For more information, see [Show data used to create the visual](powerbi-service-reports-see-data.md).
+6. To see the data being used to create the visual, select **See data**. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual. For more information, see [Show data used to create the visual](service-reports-show-data.md).
 
 ## Considerations and limitations
 * If adding a date field to a visualization does not create a hierarchy, it may be that the "date" field is not actually saved as a date. If you own the dataset, open it in *Data* view in Power BI Desktop, select the column that contains the date, and in the Modeling tab change the **Data Type** to **Date** or **Date/Time**. If the report has been shared with you, contact the owner to request the change.  

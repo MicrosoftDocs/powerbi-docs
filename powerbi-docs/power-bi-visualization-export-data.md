@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Export data from visualizations
-If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](powerbi-service-reports-see-data.md) or export that data to Excel as an .xlsx or .csv file.   
+If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](service-reports-show-data.md) or export that data to Excel as an .xlsx or .csv file.   
 
 Watch Will export the data from one of the visualizations in his report, save it as an .xlsx file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
