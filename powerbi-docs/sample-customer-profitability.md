@@ -26,7 +26,7 @@ The “Customer Profitability Sample” content pack contains a dashboard, repor
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529781).  
-![](media/powerbi-sample-customer-profitability-take-a-tour/power-bi-dash.png)
+![](media/sample-customer-profitability/power-bi-dash.png)
 
 ## What is our dashboard telling us?
 ### Company-wide dashboard tiles
@@ -52,7 +52,7 @@ Our report has 3 pages:
 * "Executive Scorecard" provides a view of each of our managers formatted for viewing in Cortana.
 
 ### Team Scorecard page
-![](media/powerbi-sample-customer-profitability-take-a-tour/customer2.png)
+![](media/sample-customer-profitability/customer2.png)
 
 Let’s look at two of the team members in detail and see what insights can be gained. In the slicer on the left, select Andrew's name to filter the report page to display only data about Andrew.
 
@@ -61,7 +61,7 @@ Let’s look at two of the team members in detail and see what insights can be g
 * The “RevenueTY and Revenue Var % to Budget by Month” shows a steady even profit story.But when you filter by clicking on the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is this something that needs looking into?
 
 Now on to Valery. In the slicer, select Valery’s name to filter the report page to display only data about her.  
-![](media/powerbi-sample-customer-profitability-take-a-tour/customer3.png)
+![](media/sample-customer-profitability/customer3.png)
 
 * Notice the red KPI for **RevenueTY Status**. This definitely needs further investigation.
 * Her revenue variance also paints a worrying picture – she is not meeting her revenue margins.
@@ -73,7 +73,7 @@ Continue digging to find out why Valery’s area is not performing well. Look at
 
 ### Industry Margin Analysis
 This report page provides a different slice of the data. It looks at gross margin for the entire industry, broken down by segment. The CFO uses this page to compare company and business unit metrics to industry metrics to help her explain trends and profitability. You might wonder why the “Gross Margin by Month and Executive Name” area chart is on this page, since it is team-specific. Having it here lets us filter the page by business unit manager.  
-![](media/powerbi-sample-customer-profitability-take-a-tour/customer6.png)
+![](media/sample-customer-profitability/customer6.png)
 
 How does profitability vary by industry? How do the products and customers break down by industry? Select one or more industries from the top left. (Start from the CPG industry) To clear the filter, select the eraser icon.
 
@@ -94,10 +94,10 @@ For our analysis, it would be helpful to determine which industry generates the 
 1. Select **Power BI** in the top navigation bar to return to the dashboard.
 2. Select the Q&A question box at the top of the dashboard.
    
-    ![](media/powerbi-sample-customer-profitability-take-a-tour/customer4.png)
+    ![](media/sample-customer-profitability/customer4.png)
 3. Type **total revenue by industry for Valery**. Notice how the visualization updates as you type the question.
    
-    ![](media/powerbi-sample-customer-profitability-take-a-tour/customer5.png)
+    ![](media/sample-customer-profitability/customer5.png)
    
    Distribution is the biggest revenue area for Valery.
 
@@ -107,15 +107,15 @@ Let's take a look at the *Distribution* industry.
 1. Return to the dashboard and select the area chart with Andrew's Gross Margin Trend. This opens the report to the "Industry Margin Analysis" page.
 2. Without selecting any visualizations on the report page, expand the filter pane on the right. The Filters pane should display only Page level filters.  
    
-   ![](media/powerbi-sample-customer-profitability-take-a-tour/power-bi-filters.png)
+   ![](media/sample-customer-profitability/power-bi-filters.png)
 3. Locate the filter for **Industry** and select the arrow to expand the list. Let's add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select **Distribution.**  
    
-   ![](media/powerbi-sample-customer-profitability-take-a-tour/customer7.png)
+   ![](media/sample-customer-profitability/customer7.png)
 4. The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
 5. Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery. 
 6. To see actual revenue, return to the dashboard and use Q&A to ask **total revenue for distribution by scenario by executive**.  
    
-   ![](media/powerbi-sample-customer-profitability-take-a-tour/customer8.png)
+   ![](media/sample-customer-profitability/customer8.png)
 
 We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 

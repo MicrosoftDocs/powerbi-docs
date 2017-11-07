@@ -52,7 +52,7 @@ By clicking any of the links below to download the Excel workbook files or .pbix
 Eight samples are available for you to use.  Each one represents a different industry.
 
 ### Customer Profitability sample  ![](media/powerbi-sample-datasets/power-bi-cp2.png)
-[Take a tour of the Customer Profitability sample](powerbi-sample-customer-profitability-take-a-tour.md)
+[Take a tour of the Customer Profitability sample](sample-customer-profitability.md)
 
 This industry sample analyzes a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability.
 
