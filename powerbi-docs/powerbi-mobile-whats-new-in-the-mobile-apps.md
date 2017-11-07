@@ -450,7 +450,7 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](powerbi-mobile-iphone-app-get-started.md) directly from your iPhone.
-* [Create QR codes in the Power BI service](powerbi-service-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
+* [Create QR codes in the Power BI service](service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
 * [Link directly from a tile to a specific URL](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink).
