@@ -45,12 +45,12 @@ When you make and save a change to the dashboard that you included in a content 
 
 1. Select **View Content Packs** in the message.
    
-   ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ContPkChangesMessage.png)
-2. Or select the cog icon in the upper-right corner ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and select **View Content Pack**.
+   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+2. Or select the cog icon in the upper-right corner ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and select **View Content Pack**.
    
-   ![](media/powerbi-service-organizational-content-packs-manage-update-delete/pbi_contpkview.png)
+   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
-   Notice the warning icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
+   Notice the warning icon ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
 3. Select **Edit**.  
 4. Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
    
@@ -60,7 +60,7 @@ When you make and save a change to the dashboard that you included in a content 
 ## Update the audience: expand or restrict access
 Another modification available to content pack creators is expanding and restricting access to the content pack.  Perhaps you published a content pack to a broad audience and you've decided to restrict access to a smaller group.  
 
-1. Select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. Select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Edit**. 
 3. Make any necessary changes in the **Update Content Pack** window and select **Update**. For example, delete the original distribution group in the **Specific Groups** field and replace it with a different distribution group (that has fewer members).
    
@@ -82,7 +82,7 @@ You can only delete a content pack from AppSource if you created it.
 > 
 > 
 
-1. To delete a content pack from AppSource, go to the app workspace where you created the content pack, select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. To delete a content pack from AppSource, go to the app workspace where you created the content pack, select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Delete \> Delete**. 
    
    * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the Navigation Pane.

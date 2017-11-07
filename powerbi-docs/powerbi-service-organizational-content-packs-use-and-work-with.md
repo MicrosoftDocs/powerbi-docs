@@ -26,7 +26,7 @@ ms.author: maggies
 > 
 > 
 
-When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
+When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](service-organizational-content-pack-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
@@ -50,7 +50,7 @@ This can happen for several reasons:
 ## How are organizational content packs refreshed?
 When the content pack is created, the refresh settings are inherited with the dataset.  When you create a copy of the content pack, the new version retains its link to the original dataset and its refresh schedule. 
 
-See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
+See [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md).
 
 ## See also
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)

@@ -29,7 +29,7 @@ To remove a content pack, you remove its dataset.
   
   ![Remove content pack](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 
-Removing the dataset also removes all associated reports and dashboards. However, removing your connection to the content pack doesn't delete the content pack from your organization's AppSource.  You can always return to AppSource and add the content pack back to your workspace. You can only [delete a content pack from AppSource](powerbi-service-organizational-content-packs-manage-update-delete.md) if you're the one who created it.
+Removing the dataset also removes all associated reports and dashboards. However, removing your connection to the content pack doesn't delete the content pack from your organization's AppSource.  You can always return to AppSource and add the content pack back to your workspace. You can only [delete a content pack from AppSource](service-organizational-content-pack-manage-update-delete.md) if you're the one who created it.
 
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md) 
