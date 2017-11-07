@@ -62,7 +62,7 @@ This industry sample analyzes a CFO's key metrics for her executives, products, 
 This industry sample focuses on the hiring strategy for a company by analyzing new hires, active employees, and employees who've left.  By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
 
 ### IT Spend Analysis sample ![](media/sample-datasets/power-bi-it.png)
-[Take a tour of the IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour.md)
+[Take a tour of the IT Spend Analysis sample](sample-it-spend.md)
 
 In this industry sample we analyze the planned vs. actual costs of the IT department of a company. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 

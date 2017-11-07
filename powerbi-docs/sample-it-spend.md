@@ -28,7 +28,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 * [get the IT Spend Analysis content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
 * [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529783).
 
-![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT1.png)
+![](media/sample-it-spend/it1.png)
 
 ## The IT Spend Analysis Sample dashboard
 The two numbers tiles on the dashboard, the **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we are doing against plan and against the Latest Qtr estimate (LE3 = Latest Estimate Quarter 3). Overall we are about 6% off the plan. Let’s explore the cause of this variance – when, where, and which category?
@@ -36,13 +36,13 @@ The two numbers tiles on the dashboard, the **Var Plan %** and **Variance Latest
 ## “YTD IT Spend Trend Analysis” page
 Selecting the **Var Plan % by Sales Region** dashboard tile takes you to the “IT Spend Trend Analysis” page of the IT Spend Analysis Sample report. We see at a glance that we have positive variance in US and Europe and negative variance in Canada, Latin America, and Australia. US had about 6% +LE variance and Australia has about 7% -LE variance.
 
-![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT2.png)
+![](media/sample-it-spend/it2.png)
 
 But just looking at this chart and drawing conclusions can be misleading. We need to look at actual dollar amounts to put things in perspective.
 
 1. Select **Aus and NZ**﻿ in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart. 
    
-   ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT3.png)
+   ![](media/sample-it-spend/it3.png)
 2. Now select **USA**. You get the idea — Australia is a really small part of our overall spend as compared to US.
    
     So we narrowed it down to the USA, now what? Let’s explore which category in the USA is causing the variance.
@@ -51,21 +51,21 @@ But just looking at this chart and drawing conclusions can be misleading. We nee
 1. Select **IT Spend Analysis Sample** in the top navigation bar to return to the Dashboards.
 2. In the question box, type “show IT areas, var plan % and var le3 % bar chart”.
    
-   ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT4.png) 
+   ![](media/sample-it-spend/it4.png) 
    
    In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
 ## “YTD Spend by Cost Elements” page
 Go back to the dashboard and look at the **Var Plan %, Var LE3%** dashboard tile.
 
-![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT5.png)
+![](media/sample-it-spend/it5.png)
 
 Infrastructure jumps out with huge positive variance to plan.
 
 1. Click this tile to go to the “YTD Spend by Cost Elements” page of the IT Spend Analysis Sample report.
 2. Click the **Infrastructure** bar in the “Var Plan % and Var LE3 % by IT Area” chart in the lower left, and observe the variance to plan in the "Var Plan % by Sales Region" to the left.
    
-    ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT6.png)
+    ![](media/sample-it-spend/it6.png)
 3. Click the name of each Cost Element Group in the slicer to find the cost element with a large variance.
 4. With **Other** selected, click **Infrastructure** in the IT Area and click the sub areas in the IT Sub Area slicer to find the sub area with the largest variance.  
    
@@ -78,7 +78,7 @@ Still in the report, click the "Plan Variance Analysis" tab on the bottom of the
 
 In the “Var Plan, and Var Plan % by Business Area” combo chart on the left, click the Infrastructure column to highlight infrastructure values in the rest of the page.
 
-![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT7.png)
+![](media/sample-it-spend/it7.png)
 
 Notice on the “Var plan% by Month and Business Area” chart that infrastructure started to have a positive variance around February and then it keeps increasing. Also, notice how the variance to plan value for infrastructure varies by country, compared to the value for all business areas. Use the “IT Area” and “IT Sub Areas” slicers on the right to filter the values in the rest of the page rather than highlighting them. Click the different IT Areas on the right to explore the data in another way. You can also click IT Sub Areas and see the variance at that level.
 
