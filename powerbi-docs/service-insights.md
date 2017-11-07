@@ -42,43 +42,43 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
 
 1. From the **Datasets** tab, select the ellipses (...) and choose **Get Insights**.
    
-    ![](media/powerbi-service-auto-insights/power-bi-ellipses.png)
+    ![](media/service-insights/power-bi-ellipses.png)
    
-    ![](media/powerbi-service-auto-insights/power-bi-tab.png)
+    ![](media/service-insights/power-bi-tab.png)
 2. Power BI uses [various algorithms](powerbi-service-auto-insights-types.md) to search for trends in your dataset.
    
-    ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
+    ![](media/service-insights/pbi_autoinsightssearching.png)
 3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
    
-    ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
+    ![](media/service-insights/pbi_autoinsightsuccess.png)
    
    > **NOTE**: Some datasets can't generate Quick Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](powerbi-service-auto-insights-optimize.md).
    > 
    > 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
    
-    ![](media/powerbi-service-auto-insights/power-bi-insights.png)
+    ![](media/service-insights/power-bi-insights.png)
 
 ## Interact with the Quick Insight cards
-  ![](media/powerbi-service-auto-insights/PBI_hover.png)
+  ![](media/service-insights/pbi_hover.png)
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
 2. Hover over a card and select the Focus mode icon to display the card fullscreen.
    
-    ![](media/powerbi-service-auto-insights/power-bi-insight-focus.png)
+    ![](media/service-insights/power-bi-insight-focus.png)
 3. In Focus mode you can:
    
    * [filter](powerbi-service-interact-with-a-report-in-reading-view.md) the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
      
-        ![](media/powerbi-service-auto-insights/power-bi-insights-filter-new.png)
-   * Pin the insight card to a dashboard by selecting the pin ![](media/powerbi-service-auto-insights/power-bi-pin-icon.png)  icon or **Pin visual**.
-   * Run Quick Insights on the card itself. This is referred to as **Scoped Quick Insights**. In the top-right corner, select the lightbulb icon ![](media/powerbi-service-auto-insights/power-bi-bulb-icon.png)  or **Get Insights**.
+        ![](media/service-insights/power-bi-insights-filter-new.png)
+   * Pin the insight card to a dashboard by selecting the pin ![](media/service-insights/power-bi-pin-icon.png)  icon or **Pin visual**.
+   * Run Quick Insights on the card itself. This is referred to as **Scoped Quick Insights**. In the top-right corner, select the lightbulb icon ![](media/service-insights/power-bi-bulb-icon.png)  or **Get Insights**.
      
-       ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
+       ![](media/service-insights/pbi-autoinsights-tile.png)
      
      The Quick Insight displays on the left and new cards, based solely on the data in that single Quick Insight, display along the right.
      
-       ![](media/powerbi-service-auto-insights/power-bi-insights-on-insights-new.png)
+       ![](media/service-insights/power-bi-insights-on-insights-new.png)
 4. To return to the original Quick Insights canvas, in the top-left corner, select **Exit Focus mode**.
 
 ## Run Quick Insights on a dashboard tile
@@ -88,14 +88,14 @@ Instead of searching for insights against an entire dataset, narrow your search 
 2. Select a tile and [open the tile in Focus mode](service-focus-mode.md).
 3. In the top right corner, select **Get Insights**.
    
-    ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
+    ![](media/service-insights/pbi-autoinsights-tile.png)
 4. Power BI displays the insight cards along the right side of the tile.
    
-    ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
+    ![](media/service-insights/pbi-insights-tile.png)
 5. Does one insight pique your interest? Select that insight card to dig further. The selected Quick Insight appears on the left and new insight cards, based solely on the data in that single Quick Insight, display along the right.
 6. Continue digging into your data, and when you find an interesting Quick Insight, pin its visual to your dashboard by selecting **Pin visual** from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular Quick Insight was helpful or not.
    
-    ![](media/powerbi-service-auto-insights/useful.png)
+    ![](media/service-insights/useful.png)
 
 ## Next steps
 If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)

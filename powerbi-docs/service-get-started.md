@@ -80,7 +80,7 @@ Now that you have connected to data, explore to find insights.  When you've foun
    
    ![](media/service-get-started/power-bi-report-editor.png)
    
-   > NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
+   > NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](service-insights.md)
    > 
    > 
 2. In the **Fields** list on the right side of the page, select fields to build a visualization.  Select the checkbox beside **﻿Gross Sales**﻿ and  **﻿Date**﻿.

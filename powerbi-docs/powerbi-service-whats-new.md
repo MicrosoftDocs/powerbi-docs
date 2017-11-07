@@ -164,7 +164,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 **April 28, 2016**
 
-* [Quick Insights on Dashboard Tiles](powerbi-service-auto-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+* [Quick Insights on Dashboard Tiles](service-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -391,7 +391,7 @@ For all the details, including a video demonstrating many of these updates, visi
 
 **December 3, 2015**
 
-* Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) or  [article](powerbi-service-auto-insights.md)
+* Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) or  [article](service-insights.md)
 * [Visualize your VMob data in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI integration with Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Preview of Power BI gateway for enterprise](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)

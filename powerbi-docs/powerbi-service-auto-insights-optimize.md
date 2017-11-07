@@ -29,7 +29,7 @@ Want to improve Quick Insights results?  If you are a datasest owner, try these:
 * Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns. To generate Insights, your dataset needs to have at least one dimension and one measure.
 
 ### Next steps
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI Quick Insights](service-insights.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

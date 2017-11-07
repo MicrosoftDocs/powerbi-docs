@@ -75,7 +75,7 @@ For data across a time series, detects when there are specific dates or times wi
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_time_series_outliers.png)
 
 ## Next steps
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI Quick Insights](service-insights.md)
 
 If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
 

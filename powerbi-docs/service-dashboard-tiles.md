@@ -45,7 +45,7 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 * [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 * [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
-* [Quick Insights](powerbi-service-auto-insights.md)
+* [Quick Insights](service-insights.md)
 * [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
 And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md).
@@ -73,7 +73,7 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
      * [View in focus mode ](service-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
      * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/service-dashboard-tiles/pencil-icon.jpg)
-     * [Run insights ](powerbi-service-auto-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)
+     * [Run insights ](service-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
        ![](media/service-dashboard-tiles/pin-icon.jpg)
    * [Remove the tile](service-dashboard-edit-tile.md)

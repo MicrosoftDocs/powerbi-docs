@@ -64,7 +64,7 @@ During the Preview phase of this feature, there are several limitations:
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Power BI Quick Insights](powerbi-service-auto-insights.md)  
+[Power BI Quick Insights](service-insights.md)  
 [Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 [Dashboards in Power BI](service-dashboards.md)  
