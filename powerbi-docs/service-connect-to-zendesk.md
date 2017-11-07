@@ -30,29 +30,29 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
 ## How to Connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-zendesk/PBI_GetData.png)
+   ![](media/service-connect-to-zendesk/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-zendesk/PBI_GetServices.png) 
+   ![](media/service-connect-to-zendesk/pbi_getservices.png) 
 3. Select **Zendesk** \> **Get.**
    
-   ![](media/powerbi-content-pack-zendesk/zendesk.png)
+   ![](media/service-connect-to-zendesk/zendesk.png)
 4. Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**, see details on [finding these parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
+   ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
    > Note: This content pack requires you connect with a Zendesk Admin account. 
    > 
    > 
    
-   ![](media/powerbi-content-pack-zendesk/PBI_ZendeskSignIn.png)
+   ![](media/service-connect-to-zendesk/pbi_zendesksignin.png)
 6. Click **Allow** to allow Power BI to access your Zendesk data.
    
-   ![](media/powerbi-content-pack-zendesk/zendesk2.jpg)
+   ![](media/service-connect-to-zendesk/zendesk2.jpg)
 7. Click **Connect** to begin the import process. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-content-pack-zendesk/PBI_ZendeskDash.png)
+   ![](media/service-connect-to-zendesk/pbi_zendeskdash.png)
 
 **What Now?**
 
