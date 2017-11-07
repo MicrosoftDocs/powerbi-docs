@@ -28,26 +28,26 @@ Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-windows-dev-center/getdata.png)
+   ![](media/service-connect-to-windows-dev-center/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-windows-dev-center/services.PNG)
+   ![](media/service-connect-to-windows-dev-center/services.png)
 3. Select **Windows Dev Center** \>  **Get**.
    
-   ![](media/powerbi-content-pack-windows-dev-center/windowsdev.png)
+   ![](media/service-connect-to-windows-dev-center/windowsdev.png)
 4. Enter the application ID of an app you own and click Next. See details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-windows-dev-center/params.png)
+   ![](media/service-connect-to-windows-dev-center/params.png)
 5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Azure Active Directory credentials associated with your Windows Dev Center account (more details in [System Requirements](#Requirements)).
    
-    ![](media/powerbi-content-pack-windows-dev-center/creds.png)
+    ![](media/service-connect-to-windows-dev-center/creds.png)
    
-    ![](media/powerbi-content-pack-windows-dev-center/creds2.png)
+    ![](media/service-connect-to-windows-dev-center/creds2.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data and choose a tile to navigate to the underlying reports.
    
-    ![](media/powerbi-content-pack-windows-dev-center/dashboard.png)
+    ![](media/service-connect-to-windows-dev-center/dashboard.png)
    
-    ![](media/powerbi-content-pack-windows-dev-center/report.png)
+    ![](media/service-connect-to-windows-dev-center/report.png)
 
 **What Now?**
 
