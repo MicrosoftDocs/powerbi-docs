@@ -28,19 +28,19 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-sendgrid/PBI_GetData.png) 
+   ![](media/service-connect-to-sendgrid/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-sendgrid/PBI_GetServices.png) 
+   ![](media/service-connect-to-sendgrid/pbi_getservices.png) 
 3. Select the **SendGrid** content pack and click **Get**.
    
-   ![](media/powerbi-content-pack-sendgrid/sendgrid.png) 
+   ![](media/service-connect-to-sendgrid/sendgrid.png) 
 4. When prompted, provide your SendGrid user name and password. Select **Sign In**.
    
-   ![](media/powerbi-content-pack-sendgrid/PBI_SendGridSignIn.png)
+   ![](media/service-connect-to-sendgrid/pbi_sendgridsignin.png)
 5. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane, populated with your email statistics for the past 90 days. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-content-pack-sendgrid/PBI_SendGridDash.png)
+   ![](media/service-connect-to-sendgrid/pbi_sendgriddash.png)
 
 **What Now?**
 
