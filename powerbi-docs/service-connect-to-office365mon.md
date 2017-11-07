@@ -30,23 +30,23 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-office365mon/PBI_GetData.png)
+   ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-office365mon/PBI_GetServices.png) 
+   ![](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Select **Office365Mon** \> **Get**.
    
-   ![](media/powerbi-content-pack-office365mon/o365mon.png)
+   ![](media/service-connect-to-office365mon/o365mon.png)
 4. For Authentication Method, select **oAuth2** \> **Sign In**.
    
    When prompted, enter your Office365Mon admin credentials and follow the authentication process.
    
-   ![](media/powerbi-content-pack-office365mon/creds.png)
+   ![](media/service-connect-to-office365mon/creds.png)
    
-   ![](media/powerbi-content-pack-office365mon/creds2.png)
+   ![](media/service-connect-to-office365mon/creds2.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
    
-   ![](media/powerbi-content-pack-office365mon/dashboard4.png)
+   ![](media/service-connect-to-office365mon/dashboard4.png)
 
 **What Now?**
 
