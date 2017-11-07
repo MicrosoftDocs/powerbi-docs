@@ -129,7 +129,7 @@ The following resources are available to help get your started:
 Here's a complete list of [supported browsers for Power BI](service-browser-support.md).
 
 ## What regions and languages does Power BI support?
-Here's a complete list of [regions and languages supported by Power BI](powerbi-supported-languages.md).
+Here's a complete list of [regions and languages supported by Power BI](supported-languages-countries-regions.md).
 
 ## How can I buy Power BI Pro in my country?
 You can purchase Power BI Pro licenses directly or chat with a representative at [www.powerbi.com](http://www.powerbi.com).

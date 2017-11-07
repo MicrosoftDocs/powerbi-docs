@@ -83,7 +83,7 @@ At this time, a few features are available in English only:
 Stay tuned as we work to bring additional features to other languages. 
 
 ## Choose your language in the Power BI service
-1. In the Power BI service, select the **Settings** icon ![Settings icon](media/powerbi-supported-languages/pbi_settings_icon.png) > **Settings**.
+1. In the Power BI service, select the **Settings** icon ![Settings icon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Settings**.
 2. On the **General** tab > **Language**.
 3. Select your language > **Apply**.
 
@@ -93,25 +93,25 @@ Power BI detects your language based on the language preferences on your compute
 ### Internet Explorer (version 11)
 1. Click the **Tools** button in the top-right corner of your browser window:
    
-   ![Internet Explorer Tools button](media/powerbi-supported-languages/languages1.png)
+   ![Internet Explorer Tools button](media/supported-languages-countries-regions/languages1.png)
 2. Click **Internet Options**.
 3. In the Internet Options dialog, on the General tab under Appearance, click the **Languages** button.
 
 ### Google Chrome (version 42)
 1. Click the menu button in the top-right corner of your browser window:
    
-   ![Chrome menu button](media/powerbi-supported-languages/languages2.png)
+   ![Chrome menu button](media/supported-languages-countries-regions/languages2.png)
 2. Click **Settings**.
 3. Click **Show advanced settings**.
 4. Under Languages, click the **Language and input settings** button.
 5. Click **Add**, select a language, and click **OK**.
    
-   ![Chrome languages list](media/powerbi-supported-languages/pbi_langs_enus.png)
+   ![Chrome languages list](media/supported-languages-countries-regions/pbi_langs_enus.png)
    
    The new language is at the end of the list. 
 6. Drag the new language to the top of the list, and click **Display Google Chrome in this language**.
    
-   ![Display Google Chrome in this language](media/powerbi-supported-languages/pbi_langs_eses.png)
+   ![Display Google Chrome in this language](media/supported-languages-countries-regions/pbi_langs_eses.png)
    
    You may need to close and reopen your browser to see the change.
 
@@ -127,10 +127,10 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
 2. To change the language, on your computer search for **Windows Settings**. 
 3. Select **Time & language**.
    
-     ![Windows settings dialog box](media/powerbi-supported-languages/power-bi-service-windows-settings.png)
+     ![Windows settings dialog box](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 4. Select **Region & language**, select a language, and select **Set as default**.
    
-     ![Windows language settings dialog box](media/powerbi-supported-languages/power-bi-service-language-settings.png)
+     ![Windows language settings dialog box](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
      The next time you start Power BI Desktop it will use the language you set as the default. 
 
@@ -148,7 +148,7 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
 2. Under **Current file**, select **Regional Settings**.
 3. In the **Locale** box, select a different locale. 
    
-   ![Power BI Desktop Options dialog box](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
+   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
 4. Select **OK**.
 
 ## Languages for the help documentation
