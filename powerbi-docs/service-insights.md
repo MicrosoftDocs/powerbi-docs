@@ -52,7 +52,7 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
    
     ![](media/service-insights/pbi_autoinsightsuccess.png)
    
-   > **NOTE**: Some datasets can't generate Quick Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](powerbi-service-auto-insights-optimize.md).
+   > **NOTE**: Some datasets can't generate Quick Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](service-insights-optimize.md).
    > 
    > 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
@@ -98,7 +98,7 @@ Instead of searching for insights against an entire dataset, narrow your search 
     ![](media/service-insights/useful.png)
 
 ## Next steps
-If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
+If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)
 
 Learn about the [types of Quick Insights available](powerbi-service-auto-insights-types.md)
 

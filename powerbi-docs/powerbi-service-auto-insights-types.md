@@ -77,7 +77,7 @@ For data across a time series, detects when there are specific dates or times wi
 ## Next steps
 [Power BI Quick Insights](service-insights.md)
 
-If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
+If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
