@@ -108,7 +108,7 @@ After you get the gateway installed, you will want to create data sources for th
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
-[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
+[Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
 ## Where things can go wrong

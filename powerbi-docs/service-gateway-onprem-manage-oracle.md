@@ -26,7 +26,7 @@ Once you have installed the On-premises Data Gateway, you will need to add data 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
 
-![](media/powerbi-gateway-onprem-manage-oracle/powerbi-download-data-gateway.png)
+![](media/service-gateway-onprem-manage-oracle/powerbi-download-data-gateway.png)
 
 > [!WARNING]
 > In order for the gateway to be able to connect to your Oracle server, the Oracle Data Provider for .NET (ODP.NET) needs to be installed and configured. This is part of the Oracle Data Access Components (ODAC). For more information on how to download the Oracle provider, see [Installing the Oracle Client](#installing-the-oracle-client) below.
@@ -79,19 +79,19 @@ To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=6988
 ## Remove a gateway
 Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
 
-1. Select the gear icon ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) in the upper-right corner > **Manage gateways**.
+1. Select the gear icon ![](media/service-gateway-onprem-manage-oracle/pbi_gearicon.png) in the upper-right corner > **Manage gateways**.
 2. Gateway > **Remove**
    
-   ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
+   ![](media/service-gateway-onprem-manage-oracle/datasourcesettings7.png)
 
 ## Add a data source
 You can add a data source by either selecting a gateway and click **Add data source**, or go to Gateway > **Add data source**.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings1.png)
 
 You can then select the **Data Source Type** from the list.
 
-![](media/powerbi-gateway-enterprise-manage/data-source-oracle.png)
+![](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 
@@ -102,28 +102,28 @@ You will also need to choose an **Authentication Method**.  This can either be *
 > 
 > 
 
-![](media/powerbi-gateway-enterprise-manage/data-source-oracle2.png)
+![](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 
 You can click **Add** after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against an Oracle server that is on-premises. You will see *Connection Successful* if it succeeded.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
 
 ### Advanced settings
 You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to DirectQuery. [Learn more](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
 
 ## Remove a data source
 Removing a data source will break any dashboards or reports that rely on the given data source.  
 
 To remove a Data Source, go to the Data Source > **Remove**.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings6.png)
 
 ## Manage administrators
 On the Administrators tab for the gateway, you can add and remove users (or security groups) that can administer the gateway.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings8.png)
 
 ## Manage users
 On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
@@ -133,7 +133,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 > 
 > 
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
+![](media/service-gateway-onprem-manage-oracle/datasourcesettings5.png)
 
 ## Using the data source
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
@@ -155,7 +155,7 @@ After you publish, either from Power BI Desktop or **Get Data**, your reports sh
 ### Using the data source with scheduled refresh
 If you are listed in the **Users** tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
 
-![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
+![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Troubleshooting
 You may encounter serveral errors from Oracle when the naming syntax is either incorrect or not configured properly.
