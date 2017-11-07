@@ -28,22 +28,22 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-project-online/getdata.png)
+    ![](media/service-connect-to-project-online/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-project-online/services.png)
+   ![](media/service-connect-to-project-online/services.png)
 3. Select **Microsoft Project Online** \> **Get**.
    
-   ![](media/powerbi-content-pack-project-online/mproject.png)
+   ![](media/service-connect-to-project-online/mproject.png)
 4. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to and hit **Next**. Note this may differ from the example if you have a custom domain.
    
-    ![](media/powerbi-content-pack-project-online/params.png)
+    ![](media/service-connect-to-project-online/params.png)
 5. For Authentication Method, select **oAuth2** \> **Sign In**. When prompted, enter your Project Online credentials and follow the authentication process.
    
-    ![](media/powerbi-content-pack-project-online/creds.png)
+    ![](media/service-connect-to-project-online/creds.png)
 6. You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
    
-   ![](media/powerbi-content-pack-project-online/dashboard2.png)
+   ![](media/service-connect-to-project-online/dashboard2.png)
 
 **What Now?**
 
