@@ -154,7 +154,7 @@ Users in the organization can export Power BI reports as PowerPoint files. [Lear
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### Print dashboards and reports
-Users in the organization can print dashboards and reports. [Learn more](powerbi-service-print.md)
+Users in the organization can print dashboards and reports. [Learn more](service-print.md)
 
 ![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
