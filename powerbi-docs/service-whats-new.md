@@ -577,7 +577,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **June 9, 2015**
 
-* Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](powerbi-content-pack-mailchimp.md).
+* Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](service-connect-to-mailchimp.md).
 
 **June 2, 2015**
 
