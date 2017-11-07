@@ -11,7 +11,7 @@ The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for
 
 This is not the account used to connect to on-premises data sources.  This is also not your work or school account that you sign into cloud services with.
 
-If you encounter issues with your proxy server, due to authentication, you may want to change the Windows service account to a domain user or managed service account. You can learn how to change the account in [proxy configuration](../powerbi-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
+If you encounter issues with your proxy server, due to authentication, you may want to change the Windows service account to a domain user or managed service account. You can learn how to change the account in [proxy configuration](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
 ## Ports
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)

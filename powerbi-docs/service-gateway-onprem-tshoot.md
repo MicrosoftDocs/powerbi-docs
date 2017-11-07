@@ -47,7 +47,7 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
 ### Error: Failed to create gateway. Please try again.
 All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
-This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](powerbi-gateway-proxy.md)
+This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
 ### Error: Failed to update gateway details.  Please try again.
 Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
@@ -374,7 +374,7 @@ When using the gateway for scheduled refresh, **Refresh History** can help you s
 For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
 
 ## See also
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  

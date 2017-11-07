@@ -46,7 +46,7 @@ A lot of issues can surface when the gateway version is out of date.  It is a go
 > 
 
  **Proxy configuration**
- You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
+ You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)
 
 ## Schedule Refresh
 **Error: The credential stored in the cloud is missing.**
@@ -145,7 +145,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
 ## See Also
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  

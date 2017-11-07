@@ -139,6 +139,6 @@ Support for Spark is planned for the second half of the 2017 calendar year.
   * **Answer**: Most likely, this is because you have one or more datasets that include a data source that is still currently not supported.
 
 ## See also
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
