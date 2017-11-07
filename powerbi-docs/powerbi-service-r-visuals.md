@@ -68,7 +68,7 @@ As another example, the following image shows the error message that appears whe
 ## Licensing
 R visuals require a [Power BI Pro](powerbi-service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](service-premium.md)
 
-Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md) for more information.
+Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md) for more information.
 
 The following table describes R visuals capabilities based on licensing.
 
