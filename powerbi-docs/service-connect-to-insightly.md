@@ -28,19 +28,19 @@ Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-insightly/getdata.png)
+   ![](media/service-connect-to-insightly/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-insightly/services.png)
+   ![](media/service-connect-to-insightly/services.png)
 3. Select **Insightly** \>  **Get**.
    
-   ![](media/powerbi-content-pack-insightly/insightly.png)
+   ![](media/service-connect-to-insightly/insightly.png)
 4. Select **Key** as the Authentication type and provide your Insight API Key then select **Sign In**. See details on [finding this](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-insightly/creds.png)
+   ![](media/service-connect-to-insightly/creds.png)
 5. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-insightly/dashboard.png)
+     ![](media/service-connect-to-insightly/dashboard.png)
 
 **What Now?**
 
@@ -76,7 +76,7 @@ An Insightly account with access to the Insightly API is required. Visibility pe
 
 To copy your API key from Insightly, select User Settings from the Insightly profile menu and scroll down. This string of characters will be used to connect your data to Power BI.
 
-![](media/powerbi-content-pack-insightly/findapi.png)
+![](media/service-connect-to-insightly/findapi.png)
 
 ## Troubleshooting
 Your data is imported via the Insightly API, which includes a daily limit based on your Insightly subscription plan level. The limits are listed in the Rate Limiting/Throttling Requests section of our API documentation: https://api.insight.ly/v2.2/Help#!/Overview/Introduction#ratelimit
