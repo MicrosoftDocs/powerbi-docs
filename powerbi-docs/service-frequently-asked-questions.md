@@ -119,7 +119,7 @@ Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop
 The following resources are available to help get your started:
 
 * [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
-* [Webinars](powerbi-webinars.md)
+* [Webinars](webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI](powerbi-service-get-started.md) article
 * [Join our community](https://community.powerbi.com/) and ask questions

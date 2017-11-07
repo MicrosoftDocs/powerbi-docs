@@ -140,7 +140,7 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 ### Stay in touch with Power BI
 * Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 * Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
-* Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
+* Watch our [Power BI Getting Started webinars](webinars.md) on demand
 * Not sure where to go for help? See our [10 tips for getting help](service-tips-for-finding-help.md) page
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
