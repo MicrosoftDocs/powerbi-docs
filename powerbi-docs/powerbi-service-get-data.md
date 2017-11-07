@@ -89,7 +89,7 @@ Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are u
 
 SQL Server Analysis Services is unique in that when you connect to it from Power BI, it’s a live connection just like an Azure database in the cloud, but the database itself is on a server in your organization. This type of connection requires a Power BI Gateway, which is usually configured by an IT department.
 
-Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to checkout [Data Refresh in Power BI](powerbi-refresh-data.md).
+Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to checkout [Data Refresh in Power BI](refresh-data.md).
 
 ## Considerations and Limitations
 For all data sources used in the Power BI service, the following considerations and limitations apply. There are other limitations that apply to specific features, but the following list apply to the Power BI service overall:

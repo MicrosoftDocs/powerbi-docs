@@ -25,7 +25,7 @@ ms.author: davidi
 > 
 > 
 
-The **Power BI Gateway - Personal** acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](powerbi-refresh-data.md). This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the personal gateway. 
+The **Power BI Gateway - Personal** acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](refresh-data.md). This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the personal gateway. 
 
 It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
 

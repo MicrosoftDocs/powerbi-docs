@@ -68,7 +68,7 @@ For more information, see [Pin an entire report page](powerbi-service-pin-a-live
 
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Data refresh in Power BI](powerbi-refresh-data.md)
+[Data refresh in Power BI](refresh-data.md)
 
 [Power BI Basic Concepts](powerbi-service-basic-concepts.md)
 

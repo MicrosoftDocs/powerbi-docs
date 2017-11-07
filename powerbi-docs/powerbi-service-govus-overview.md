@@ -34,7 +34,7 @@ The following features are available to **Power BI US Government** customers, as
 
 * Create and view dashboards and reports
 * [Data capacity limits](service-admin-manage-your-data-storage-in-power-bi.md)
-* [Scheduled data refresh](powerbi-refresh-data.md)
+* [Scheduled data refresh](refresh-data.md)
 * Refreshable team dashboards
 * Active Directory groups for sharing and managing access control
 * [Import data](powerbi-service-get-data.md) and reports from Excel, CSV, and Power BI Desktop files

@@ -107,7 +107,7 @@ Things to keep in mind about sharing dashboards:
 * In general, you and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard, then the credentials of every person are used to determine which data they can access.
 * Everyone you share your dashboard with can see it and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create reports or save changes to existing reports.
 * No-one can see or download the dataset.
-* Everyone can manually [refresh the dashboard data](powerbi-refresh-data.md).
+* Everyone can manually [refresh the dashboard data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 * Coworkers who have the same email domain as you, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
 * If your coworkers already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example:   

@@ -103,7 +103,7 @@ When you select a tile, what happens next depends on how the tile was created an
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 
-[Data refresh](powerbi-refresh-data.md)
+[Data refresh](refresh-data.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

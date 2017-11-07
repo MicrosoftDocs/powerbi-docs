@@ -36,7 +36,7 @@ A *dataset* is automatically created in Power BI when you use Get Data to connec
 
 In each case, a dataset is created and appears in the My Workspace, or Group, containers in the Power BI service. When you select the **ellipse (...)** for a dataset, you can explore the data in a report, edit settings, and setup refresh.
 
-![](media/powerbi-refresh-data/dataset-menu.png)
+![](media/refresh-data/dataset-menu.png)
 
 A dataset can get data from one or more data sources. For example, you can use Power BI Desktop to get data from a SQL Database in your organization, and get other data from an OData feed online. Then, when you publish the file to Power BI, a single dataset is created, but it will have data sources for both the SQL Database and the OData feed.
 
@@ -62,7 +62,7 @@ There are four main types of refresh that happen within Power BI. Package refres
 ### Package refresh
 This synchronizes your Power BI Desktop, or Excel, file between the Power BI service and OneDrive, or SharePoint Online. This does not pull data from the original data source. The dataset in Power BI will only be updated with what is in the file within OneDrive, or SharePoint Online.
 
-![](media/powerbi-refresh-data/package-refresh.png)
+![](media/refresh-data/package-refresh.png)
 
 ### Model/data refresh
 This is referring to refreshing the dataset, within the Power BI service, with data from the original data source. This is done by either using scheduled refresh, or refresh now. This requires a gateway for on-premises data sources.
@@ -70,7 +70,7 @@ This is referring to refreshing the dataset, within the Power BI service, with d
 ### Tile refresh
 Tile refresh updates the cache for tile visuals, on the dashboard, once data changes. This happens about every fifteen minutes. You can also force a tile refresh by selecting the **ellipsis (...)** in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
-![](media/powerbi-refresh-data/dashboard-tile-refresh.png)
+![](media/refresh-data/dashboard-tile-refresh.png)
 
 For details around common tile refresh errors, see [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md).
 
@@ -187,15 +187,15 @@ If there is no user interaction in a visualization, data is refreshed automatica
 
 To set the frequency, select the **gear** icon in the upper right corner of the Power BI service, then select **Settings**.
 
-![](media/powerbi-refresh-data/refresh-data_2.png)
+![](media/refresh-data/refresh-data_2.png)
 
 The **Settings** page appears, where you can select the dataset for which you want to adjust the frequency. On that page, select the **Datasets** tab along the top.
 
-![](media/powerbi-refresh-data/refresh-data_3.png)
+![](media/refresh-data/refresh-data_3.png)
 
 Select the dataset, and in the right pane you'll see a collection of options for that dataset. For the DirectQuery/Live connection, you can set the refresh frequency from 15 minutes to weekly using the associated drop-down menu, as shown in the following image.
 
-![](media/powerbi-refresh-data/refresh-data_1.png)
+![](media/refresh-data/refresh-data_1.png)
 
 | **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |

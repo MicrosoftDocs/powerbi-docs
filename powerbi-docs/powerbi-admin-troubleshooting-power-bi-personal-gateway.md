@@ -146,7 +146,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 ## See Also
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-[Data Refresh](powerbi-refresh-data.md)  
+[Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  

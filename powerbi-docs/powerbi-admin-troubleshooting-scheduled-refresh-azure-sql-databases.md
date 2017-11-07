@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
-For detailed steps on setting up scheduled refresh, be sure to see [Refresh data in Power BI](powerbi-refresh-data.md).
+For detailed steps on setting up scheduled refresh, be sure to see [Refresh data in Power BI](refresh-data.md).
 
 While setting up scheduled refresh for Azure SQL Database, if you get an error with error code 400 during editing the credentials, try the following to set up the appropriate firewall rule:
 

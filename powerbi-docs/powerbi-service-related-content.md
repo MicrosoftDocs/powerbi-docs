@@ -56,7 +56,7 @@ The **Related content** pane opens. It shows all the reports that have visualiza
 
 ![](media/powerbi-service-related-content/power-bi-view-related-dashboard-new.png)
 
-From here, you can take direct action on the related content.  For example, select a report name to open it.  For a listed report, select an icon to [analyze in Excel](powerbi-service-analyze-in-excel.md), [rename](powerbi-service-rename.md), or [get insights](powerbi-service-auto-insights.md). For a dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](powerbi-refresh-data.md), rename, [analyze in Excel](powerbi-service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
+From here, you can take direct action on the related content.  For example, select a report name to open it.  For a listed report, select an icon to [analyze in Excel](powerbi-service-analyze-in-excel.md), [rename](powerbi-service-rename.md), or [get insights](powerbi-service-auto-insights.md). For a dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](powerbi-service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a report
 You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
@@ -76,7 +76,7 @@ The **Related content** pane opens. It shows the associated dataset and all dash
 
 ![](media/powerbi-service-related-content/power-bi-view-related-report.png)
 
-From here, you can take direct action on the related content.  For example, select a dashboard name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](powerbi-service-share-unshare-dashboard.md) or to open the **Settings** window for the dashboard. For the dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](powerbi-refresh-data.md), rename, [analyze in Excel](powerbi-service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
+From here, you can take direct action on the related content.  For example, select a dashboard name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](powerbi-service-share-unshare-dashboard.md) or to open the **Settings** window for the dashboard. For the dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](powerbi-service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a dataset
 You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
