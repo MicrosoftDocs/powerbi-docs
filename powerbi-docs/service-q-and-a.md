@@ -29,7 +29,7 @@ Sometimes the fastest way to get an answer from your data, is to ask a question 
 > 
 > 
 
-![](media/powerbi-service-q-and-a/PBI_QA_BoxSalesSqFt.png)
+![](media/service-q-and-a/pbi_qa_boxsalessqft.png)
 
 Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. You’ll be delighted by the insights and discoveries you make.
 

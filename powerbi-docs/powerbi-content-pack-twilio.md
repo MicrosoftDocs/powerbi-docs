@@ -44,7 +44,7 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
 
 **What Now?**
 
-* Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**

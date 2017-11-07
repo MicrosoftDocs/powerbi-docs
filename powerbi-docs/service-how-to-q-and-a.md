@@ -83,7 +83,7 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 For information about keywords that Q&A recognizes, see [Tips for asking questions](service-q-and-a-tips.md).
 
 ## Next steps
-Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
+Back to [Q&A in Power BI](service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](service-q-and-a-tips.md)  
 [Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  

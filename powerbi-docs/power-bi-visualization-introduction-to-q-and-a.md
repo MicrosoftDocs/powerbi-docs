@@ -58,9 +58,9 @@ How would we go about creating this same line chart using Q&A?
 4. To pin the chart to your dashboard, select the pin icon ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## Next steps
-[What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
+[What type of questions can I ask Q&A?](service-q-and-a.md)
 
-[Q&A in Power BI](powerbi-service-q-and-a.md)
+[Q&A in Power BI](service-q-and-a.md)
 
 [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 

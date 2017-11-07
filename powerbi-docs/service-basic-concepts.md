@@ -164,7 +164,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 ![](media/service-basic-concepts/qna.png)
 
-As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](powerbi-service-q-and-a.md).
+As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](service-q-and-a.md).
 
 ### 4. **Full screen, Notifications, Settings, Downloads, Help, and feedback**
 The icons in the top right corner are your resources for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  

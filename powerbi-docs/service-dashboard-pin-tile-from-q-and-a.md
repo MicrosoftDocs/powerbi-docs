@@ -58,6 +58,6 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 ## Next steps
 [Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)    
 [Display your dashboard tile in Focus mode](service-focus-mode.md)     
-[Back to Q&A in Power BI](powerbi-service-q-and-a.md)  
+[Back to Q&A in Power BI](service-q-and-a.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
