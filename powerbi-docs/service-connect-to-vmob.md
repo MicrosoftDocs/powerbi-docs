@@ -28,22 +28,22 @@ Connect to the [VMob content pack](https://app.powerbi.com/getdata/services/vmob
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-vmob/getdata.png)
+    ![](media/service-connect-to-vmob/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-vmob/services.png)
+   ![](media/service-connect-to-vmob/services.png)
 3. Select **VMob** \> **Get**.
    
-   ![](media/powerbi-content-pack-vmob/vmob.png)
+   ![](media/service-connect-to-vmob/vmob.png)
 4. When prompted, enter your VMob URL and click on the Next button. This URL is provided by VMob separately.
    
-    ![](media/powerbi-content-pack-vmob/params.png)
+    ![](media/service-connect-to-vmob/params.png)
 5. Choose **Basic** option in the Authentication method dropdown, enter your VMob username and password and click on **Sign In** button.
    
-    ![](media/powerbi-content-pack-vmob/creds.png)
+    ![](media/service-connect-to-vmob/creds.png)
 6. The import process will begin automatically and Power BI will retrieve your VMob data to create a ready-to-use dashboard and report for you.
    
-   ![](media/powerbi-content-pack-vmob/dashboard2.png)
+   ![](media/service-connect-to-vmob/dashboard2.png)
 
 **What Now?**
 
