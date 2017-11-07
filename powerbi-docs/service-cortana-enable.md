@@ -17,7 +17,7 @@ ms.author: mihart
 
 ---
 # Enable Cortana to access Power BI reports (and their underlying datasets)
-You've read the [Introduction to Cortana and Power BI](powerbi-service-cortana-intro.md) (if not, you might want to read that first and then come back). And now you want to try it out yourself.  Before you can ask natural language questions in Cortana and find answers from data stored in Power BI ***reports***, there are a few requirements. Specifically, you'll need to do the following.
+You've read the [Introduction to Cortana and Power BI](service-cortana-intro.md) (if not, you might want to read that first and then come back). And now you want to try it out yourself.  Before you can ask natural language questions in Cortana and find answers from data stored in Power BI ***reports***, there are a few requirements. Specifically, you'll need to do the following.
 
 > [!NOTE]
 > If you are trying out the Cortana and Power BI ***dashboard*** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.

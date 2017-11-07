@@ -33,7 +33,7 @@ Use the full capabilities of Power BI to create special report pages, called *Co
 ## Before you begin
 We have 4 documents that guide you through setting up and using Cortana for Power BI. If you haven't already, we recommend that you start by reading article 1. And article 2 is especially important because it describes some steps you'll need to take before you can begin using Cortana answer pages.
 
-**Article 1** [Learn how Cortana and Power BI work together](powerbi-service-cortana-intro.md)
+**Article 1** [Learn how Cortana and Power BI work together](service-cortana-intro.md)
 
 **Article 2**: [For searching Power BI reports: Enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
 
@@ -91,7 +91,7 @@ Results with high scoring answers (such as a complete match of a specified page 
 > 
 
 ## See also
-[Using Cortana with Power BI](powerbi-service-cortana-intro.md)
+[Using Cortana with Power BI](service-cortana-intro.md)
 
 Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](powerbi-service-cortana-troubleshoot.md).
 

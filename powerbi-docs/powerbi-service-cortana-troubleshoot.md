@@ -19,7 +19,7 @@ ms.author: mihart
 # Troubleshoot Cortana for Power BI
 This article is part of a series. If you haven't already, we recommend reading the following three articles.
 
-**Article 1**: [Understand how Cortana and Power BI work together to search for Power BI dashboards and reports](powerbi-service-cortana-intro.md)
+**Article 1**: [Understand how Cortana and Power BI work together to search for Power BI dashboards and reports](service-cortana-intro.md)
 
 **Article 2**: [For searching reports: enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
 
