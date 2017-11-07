@@ -25,7 +25,7 @@ ms.author: mihart
 You've [downloaded a custom visual template](service-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
-![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
+![](media/power-bi-report-add-custom-visual/pbi-custom-viz-icon.png)
 
 Watch Will download a custom visual and add it to his report. Then follow the step-by-step instructions below the video to try it yourself.
 
@@ -40,14 +40,14 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 2. Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 3. In the **Visualizations** pane, select the ellipses (...).
    
-    ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizEllipses.jpg)
+    ![](media/power-bi-report-add-custom-visual/pbi_customvizellipses.jpg)
 4. Select **Import** and navigate to the location where you saved the downloaded custom visualization (.pbiviz file).
 5. **IMPORTANT**: Review the warning and ensure the visual comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to
    use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.
    See [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md).
 6. Select **Open**. The custom visualization icon (also called *template*) is added to the Visualization pane.
    
-    ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizAddedIcon.jpg)
+    ![](media/power-bi-report-add-custom-visual/pbi_customvizaddedicon.jpg)
    
     A custom visual template is added to a specific report's Visualization pane when imported. It is now available for you to select and use in that report.
     If you'd like to use the visual in another report, you need to import it into that report's Visualization pane as well.
@@ -58,10 +58,10 @@ Watch Will download a custom visual and add it to his report. Then follow the st
     to create a visualization, you can remove the visualization; but the icon will remain in the Visualization pane.
 7. Still in Editing View, select the custom visualization icon.  This adds a watermark (template) to your report canvas.
    
-    ![](media/powerbi-custom-visuals-add-to-report/PBI_template.jpg)
+    ![](media/power-bi-report-add-custom-visual/pbi_template.jpg)
 8. Drag fields onto the template to create the visualization. Optionally, pin the visual to a dashboard. This example shows the Table Heatmap custom visualization.
    
-    ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizAdded.jpg)
+    ![](media/power-bi-report-add-custom-visual/pbi_customvizadded.jpg)
 9. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
 ## Considerations and troubleshooting
