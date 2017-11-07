@@ -48,7 +48,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.
 
 ### July 2017
-* Support for [email subscriptions](powerbi-service-subscribe-to-report.md) on dashboards.
+* Support for [email subscriptions](service-report-subscribe.md) on dashboards.
 * Inspect and diagnose why the loading time is poor for dashboards using the Performance Inspector.
 * Snowflake and SAP BusinessWarehouse DirectQuery now supported for on-premises data gateway.
 * New [APIs to manage data refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) in Power BI service.

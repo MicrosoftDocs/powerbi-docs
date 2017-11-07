@@ -58,7 +58,7 @@ A custom visual template is added to a specific report when imported. If you'd l
 7. Format the custom visual as you would any other visual.  From the **Visualizations** pane, select the paintroller icon. The formatting options available will vary by visual type.
 
 ## Considerations and troubleshooting
-* In order to enable custom visuals to be supported in [export to PowerPoint](service-publish-to-powerpoint.md), or [displayed in emails received when a customer subscribes to report pages](powerbi-service-subscribe-to-report.md), they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](power-bi-custom-visuals-certified.md)
+* In order to enable custom visuals to be supported in [export to PowerPoint](service-publish-to-powerpoint.md), or [displayed in emails received when a customer subscribes to report pages](service-report-subscribe.md), they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](power-bi-custom-visuals-certified.md)
 
 ## Next steps
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  

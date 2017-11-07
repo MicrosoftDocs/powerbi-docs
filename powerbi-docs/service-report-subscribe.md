@@ -37,47 +37,47 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
 **Creating** a subscription is a Power BI Pro feature and you must have view or edit permissions to the content (dashboard or report).
 
 ## Subscribe to a dashboard
-![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-orientation.png)
+![](media/service-report-subscribe/power-bi-subscribe-orientation.png)
 
 1. Open the dashboard.
-2. From the top menubar, select **Subscribe** or select the envelope icon ![](media/powerbi-service-subscribe-to-report/power-bi-icon-envelope.png).
+2. From the top menubar, select **Subscribe** or select the envelope icon ![](media/service-report-subscribe/power-bi-icon-envelope.png).
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-icon.png)
+   ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
 3. Use the yellow slider to turn the subscription on and off.  Setting the slider to Off will not delete the subscription. To delete the subscription, select the trashcan icon.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-dashboard-new.png)
+   ![](media/service-report-subscribe/power-bi-subscribe-dashboard-new.png)
 4. Select **Save and close** to save the subscription. You will receive an email snapshot of the dashboard each time any of the underlying datasets change. If the dashboard refreshes more than once a day, you will only receive the email snapshot after the first refresh.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-dashboard-email-new.png)
+   ![](media/service-report-subscribe/power-bi-dashboard-email-new.png)
    
    > [!TIP]
-   > Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard. (If you don't have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.) To find out which datasets are being used to create the dashboard, from the dashboard, select the **View related** icon ![](media/powerbi-service-subscribe-to-report/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![](media/powerbi-service-subscribe-to-report/power-bi-refresh.png). 
+   > Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard. (If you don't have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.) To find out which datasets are being used to create the dashboard, from the dashboard, select the **View related** icon ![](media/service-report-subscribe/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![](media/service-report-subscribe/power-bi-refresh.png). 
    > 
    > 
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-view-related-screen.png)
+   ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## Subscribe to a report page
 1. Open the report in [Reading view](service-report-open-in-reading-view.md).
 2. From the top menubar, select **Subscribe**.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-icon.png)
+   ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
 3. You can subscribe to one report page at a time. Select the particular report page from the dropdown.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-dialog.png)
+   ![](media/service-report-subscribe/power-bi-subscribe-dialog.png)
    
    Continue to add report pages.
 4. Use the yellow slider to turn the subscription for each page on and off.  Setting the slider to Off will not delete the subscription. To delete the subscription, select the trashcan icon.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-slider.png)
+   ![](media/service-report-subscribe/power-bi-slider.png)
 5. Select **Save and close** to save the subscription. You will receive an email snapshot of each report page when the report is refreshed. If the report doesn't refresh, you will not receive a snapshot email that day.  If the report refreshes more than once a day, you will only receive the email snapshot after the first refresh.
    
-   ![](media/powerbi-service-subscribe-to-report/power-bi-subscription-email.png)
+   ![](media/service-report-subscribe/power-bi-subscription-email.png)
    
    > [!TIP]
    > Want to see the email right away? Trigger an email by opening your dataset and selecting **Refresh now**. If you don’t have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.
    > 
-   > ![](media/powerbi-service-subscribe-to-report/power-bi-refresh-now.png)
+   > ![](media/service-report-subscribe/power-bi-refresh-now.png)
    > 
    > 
 
@@ -90,13 +90,13 @@ The following table describes how frequently you will receive an email. It all d
 | **How much control does the user have over the subscription email schedule?** |Options are: daily or weekly |No options: users is sent an email if the report refreshes, but no more than once per day. |If the refresh schedule is daily, options are daily and weekly.  If the refresh schedule is weekly only option is weekly. |No options: user is sent an email whenever the dataset is updated, but no more than once per day. |
 
 ## Manage your subscriptions
-There are 2 paths to the screen for managing your subscriptions.  The first is by selecting **Manage all subscriptions** from the **Subscribe to emails** dialog (see step 3 above). The second is by selecting the Power BI cog icon ![](media/powerbi-service-subscribe-to-report/power-bi-settings-icon.png) from the top menubar and choosing **Settings**.
+There are 2 paths to the screen for managing your subscriptions.  The first is by selecting **Manage all subscriptions** from the **Subscribe to emails** dialog (see step 3 above). The second is by selecting the Power BI cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) from the top menubar and choosing **Settings**.
 
-![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-settings.png)
+![](media/service-report-subscribe/power-bi-subscribe-settings.png)
 
 The particular subscriptions displayed will depend on which workspace is currently active.  To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](service-create-distribute-apps.md).
 
-![](media/powerbi-service-subscribe-to-report/power-bi-subscriptions.png)
+![](media/service-report-subscribe/power-bi-subscriptions.png)
 
 A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, the user account used to create the subscription is deleted.
 

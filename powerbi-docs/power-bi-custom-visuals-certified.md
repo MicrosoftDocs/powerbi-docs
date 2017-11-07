@@ -23,7 +23,7 @@ ms.author: mihart
 ---
 # Getting a custom visual *certified*
 ## What is meant by *certified*?
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
+A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](service-report-subscribe.md).
 
 * Are you a Web developer and interested in creating your own visualizations and adding them to the Store? See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](service-custom-visuals-office-store.md) to learn how.
 * Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s **Learn more** page and listed as **Provider**.
