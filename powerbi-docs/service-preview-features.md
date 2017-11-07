@@ -38,10 +38,10 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 ## Turn the ArcGIS preview feature on (and off)
 1. Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.
    
-   ![](media/powerbi-service-preview-features/power-bi-settings.png).
+   ![](media/service-preview-features/power-bi-settings.png).
 2. Select the **General** tab and choose **Preview features**.
    
-   ![](media/powerbi-service-preview-features/power-bi-preview-arcgis.png)
+   ![](media/service-preview-features/power-bi-preview-arcgis.png)
 3. Select the **On** radio button to try out the new experience. Click **Apply**.
 4. To turn preview features off, follow steps 1-2 above, and in step 3, select **Off** > **Apply**.
 
