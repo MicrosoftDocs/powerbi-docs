@@ -24,7 +24,7 @@ ms.author: mihart
 ## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-> **NOTE**: To follow along, open the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
+> **NOTE**: To follow along, open the [Retail Analysis sample](sample-retail-analysis.md).
 > 
 > 
 

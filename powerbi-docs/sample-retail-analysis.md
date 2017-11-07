@@ -26,43 +26,43 @@ This industry sample dashboard and underlying report analyze retail sales data o
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529778).
 
-![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
+![](media/sample-retail-analysis/retail1.png)
 
 ## Start on the dashboard and open the report
 1. On the dashboard, select the "Total Stores" tile:
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis-7.png)  
+   ![](media/sample-retail-analysis/retail-analysis-7.png)  
    
    This takes you to the "Store Sales Overview" page in the report. You see we have 104 total stores, 10 of them new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger on average.
 2. In the pie chart, select **Fashions Direct**.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail3.png)  
+   ![](media/sample-retail-analysis/retail3.png)  
    
    Notice the result in the bubble chart:
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlBubbles.png)  
+   ![](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
    
    FD-01 district has the highest Average Sales per Square Foot, FD-02 has the lowest Variance in Sales compared to last year, FD-03 and FD-04 are worst performers overall.
 3. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
 4. To return to the dashboard, select its name from the top navbar (breadcrumbs). 
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-breadcrumbs.png)
+   ![](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 5. On the dashboard, select the tile that has "This Year’s Sales."
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlThisYrSales.png)
+   ![](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
    
    This is equivalent to typing "This year sales" in the question box.
    
    You see this screen:
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail7.png)
+   ![](media/sample-retail-analysis/retail7.png)
 
 ## Review a tile created with Power BI Q&A
 Let’s get more specific.
 
 1. Add “this year sales **by district**” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail8.png)
+   ![](media/sample-retail-analysis/retail8.png)
 2. Now change the question to “this year sales **by zip and chain**”.
    
    Notice how it answers the question as you type with the appropriate charts.
@@ -74,21 +74,21 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
 1. On the dashboard, select the tile comparing this year's sales to last year’s.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlAreaCht.png)
+   ![](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
    
    Notice the large variability on Variance % to last year, with Jan, Apr, and Jul being particularly bad months.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlSalesVarCol.png)
+   ![](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
    
    Let’s see if we can narrow down where the issues might be.
 2. Select the bubble chart, and choose **020-Mens**.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail11.png)  
+   ![](media/sample-retail-analysis/retail11.png)  
    
    Observe the men's category wasn't as severely affected in April as the business overall, but January and July were still problem months.
 3. Now, select the **010-Womens’ bubble**.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail12.png)
+   ![](media/sample-retail-analysis/retail12.png)
    
    Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
 4. Select the bubble again to clear the filter.
@@ -98,12 +98,12 @@ Let’s look at how specific districts are doing.
 
 1. Select Allan Guinot in the slicer on the top left.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail13.png)
+   ![](media/sample-retail-analysis/retail13.png)
    
    Note that Allan’s district outperformed Last Year in March and June.
 2. Now, while Allan is still selected, select the Women’s bubble.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-allan.png)
+   ![](media/sample-retail-analysis/power-bi-allan.png)
    
    Note that for the Women’s category, his district never met last year’s volume.
 3. Explore the other district managers and categories – what other insights can you find?
@@ -114,17 +114,17 @@ The last area we want to explore is our growth – new stores opened this year.
 
 1. Select the 'Stores Opened This Year’ tile.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail15.png)
+   ![](media/sample-retail-analysis/retail15.png)
    
    As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
 2. Observe the 'Sales Per Sq Ft by Name' chart:
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
+   ![](media/sample-retail-analysis/retail14.png)
    
     There is quite a bit of difference in Average Sales per SQF across the new stores.
 3. Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
    
-   ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-lindseys.png)
+   ![](media/sample-retail-analysis/power-bi-lindseys.png)
 4. Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February.
 5. Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
 6. As before, explore by clicking on other bars, lines and bubbles throughout the charts and see what insights you can discover.

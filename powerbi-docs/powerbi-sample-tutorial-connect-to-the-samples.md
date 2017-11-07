@@ -36,7 +36,7 @@ This tutorial teaches you how to import the sample content packs, add them to Po
 
 The *Retail Analysis* sample content pack used in this tutorial consists of a dashboard, report, and dataset.
 To familiarize yourself with this particular content pack and its scenario, you may want to
- [take a tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) before you begin.
+ [take a tour of the Retail Analysis sample](sample-retail-analysis.md) before you begin.
 
 ## Get data (in this case, get a sample content pack)
 1. Open and sign in to Power BI Service (app.powerbi.com).
@@ -74,7 +74,7 @@ With the sample content packs, when you select **Connect**, Power BI is actually
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets, and just one of those many ways is described below.  
 
 > [!TIP]
-> Want a little hand-holding first?  Try the [Tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) for a step-by-step walkthrough of this sample.
+> Want a little hand-holding first?  Try the [Tour of the Retail Analysis sample](sample-retail-analysis.md) for a step-by-step walkthrough of this sample.
 > 
 > 
 

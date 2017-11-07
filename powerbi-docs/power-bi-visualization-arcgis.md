@@ -55,7 +55,7 @@ ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). Your use o
 ArcGIS maps are currently available in Power BI service, Power BI Desktop, and Power BI mobile. This article provides instructions for the service and for Desktop.
 
 ### Enable the ArcGIS map ***in Power BI service (app.powerbi.com)***
-This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To enable **ArcGIS Maps for Power BI**:
+This tutorial uses the [Retail Analysis sample](sample-retail-analysis.md). To enable **ArcGIS Maps for Power BI**:
 
 1. From the top right section of the menubar, select the cog icon and open **Settings**
    

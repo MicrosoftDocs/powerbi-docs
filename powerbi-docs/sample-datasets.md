@@ -77,7 +77,7 @@ This industry sample explores a software company's sales channel. Sales managers
 This industry sample analyzes a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability
 
 ### Retail Analysis sample  ![](media/sample-datasets/power-bi-rs.png)
-[Take a tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md)
+[Take a tour of the Retail Analysis sample](sample-retail-analysis.md)
 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, and variance, as well as new store analysis.
 

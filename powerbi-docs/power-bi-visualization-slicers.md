@@ -38,7 +38,7 @@ Slicers are a great choice in the following situations.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 
-1. Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
+1. Open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, select **District > District Manager**.
    
     ![](media/power-bi-visualization-slicers/pbi_slicer_chartfirst.png)
@@ -64,7 +64,7 @@ Slicers are a great choice in the following situations.
 6. Have fun exploring the other options available for slicers.
 
 ## Use the slicer in a report
-1. Add some additional visualizations to the report page or open the [Retail Analysis sample report](powerbi-sample-retail-analysis-take-a-tour.md) and select the **District Monthly Sales** tab.
+1. Add some additional visualizations to the report page or open the [Retail Analysis sample report](sample-retail-analysis.md) and select the **District Monthly Sales** tab.
    
     ![](media/power-bi-visualization-slicers/power-bi-retail-sample.png)
 2. Slice the report page for Carlos. Notice how the other visualizations update to reflect these selections.
