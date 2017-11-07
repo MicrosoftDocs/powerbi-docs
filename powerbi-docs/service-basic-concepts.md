@@ -138,7 +138,7 @@ Use the navbar to move between the Power BI building blocks: dashboards, reports
 * Use **Search** to find specific items in the navbar.
 * Select a plus icon ![](media/service-basic-concepts/pbi_nancy_plus.png) to create a new dashboard or get a new dataset.
 * The listed **Dashboards, Reports,** and **Datasets** are available for you to use.  Shared dashboards are read-only and display the shared icon ![](media/service-basic-concepts/sharing-icon.png) .
-* Dashboard, report, and dataset names usually match the name of the underlying dataset file -- but you can [rename them](powerbi-service-rename.md).
+* Dashboard, report, and dataset names usually match the name of the underlying dataset file -- but you can [rename them](service-rename.md).
 * Right-click a dashboard, report or dataset to display the context-sensitive menu. 
   
   ![](media/service-basic-concepts/menu.png)

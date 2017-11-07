@@ -28,7 +28,7 @@ ms.author: mihart
    ![](media/power-bi-report-copy-paste-page/pbi_duplicate_new.png)
    
    Your new page is created and becomes the active page.
-3. Optionally, [rename the report page](powerbi-service-rename.md).
+3. Optionally, [rename the report page](service-rename.md).
    
    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
