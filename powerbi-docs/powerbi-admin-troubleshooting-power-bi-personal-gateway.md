@@ -103,7 +103,7 @@ Power BI does not currently support Windows authentication for a data source usi
 ## Tile refresh
 If you are receiving an error with dashboard tiles refreshing, please refer to the following article.
 
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
+[Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)
 
 ## Tools for troubleshooting
 ### Refresh History
@@ -148,7 +148,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)  
+[Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

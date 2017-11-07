@@ -72,7 +72,7 @@ Tile refresh updates the cache for tile visuals, on the dashboard, once data cha
 
 ![](media/refresh-data/dashboard-tile-refresh.png)
 
-For details around common tile refresh errors, see [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md).
+For details around common tile refresh errors, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
 ### Visual container refresh
 Refreshing the visual container updates the cached report visuals, within a report, once the data changes.

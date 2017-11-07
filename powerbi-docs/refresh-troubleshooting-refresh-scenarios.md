@@ -45,7 +45,7 @@ You may encounter GatewayNotReachable when trying to set credentials for a data 
 This could be an issue with your M script within your Power BI Desktop file or Excel Workbook.  It could also be due to an out of date Power BI Desktop version.
 
 ## Tile refresh errors
-For a list of errors you may encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md).
+For a list of errors you may encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
 ## Refresh fails when updating data from sources that use AAD OAuth
 The Azure Active Director (**AAD**) OAuth token, used by many different data sources, expires in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
