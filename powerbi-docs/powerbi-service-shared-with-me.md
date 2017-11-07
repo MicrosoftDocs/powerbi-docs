@@ -40,7 +40,7 @@ You'll have many options for interacting with the dashboard and underlying repor
 * Additionally, if your lists of dashboards gets long, [use the search field and sorting to find what you need](powerbi-service-navigation-search-filter-sort.md).
   
   > [!NOTE]
-  > For information about EGRC classifications, select the classification button or [visit Dashboard data classification ](powerbi-service-data-classification.md).
+  > For information about EGRC classifications, select the classification button or [visit Dashboard data classification ](service-data-classification.md).
   > 
   > 
 * Select the name of a dashboard to open it and explore. Once you've opened the shared dashboard you can use Q&A to ask questions about the underlying data or select a tile to open and interact with the report in Reading view.

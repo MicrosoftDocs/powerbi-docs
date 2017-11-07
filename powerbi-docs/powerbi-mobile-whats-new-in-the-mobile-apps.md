@@ -241,7 +241,7 @@ This custom visualization is now available on the Surface Hub
 **Favorites** 
 View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
-**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](powerbi-service-data-classification.md).
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](service-data-classification.md).
 
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:

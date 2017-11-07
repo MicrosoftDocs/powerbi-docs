@@ -50,7 +50,7 @@ Here's a Power BI dashboard in the Power BI service:
     ![Tap dashboard](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-home.png)
    
    * The yellow stars ![Favorite stars](media/powerbi-mobile-create-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-dashboard-ios-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-dashboard-ios-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
    
    By default, Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
    
@@ -90,7 +90,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    ![Dashboard home](media/powerbi-mobile-create-dashboard/power-bi-ipad-dashboard-home.png)
    
    * The yellow stars ![Favorite star](media/powerbi-mobile-create-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-dashboard-ios-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-dashboard-ios-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
 3. You can share a dashboard from your workspace. Tap the ellipsis (**...**) in the lower-right corner of the dashboard tile, and tap **Invite Others**.
    
    ![Invite icon](media/powerbi-mobile-create-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -114,7 +114,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
      -     Yellow stars ![Favorite star](media/powerbi-mobile-create-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
 
-     -     A notation below a dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+     -     A notation below a dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
 
 
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
@@ -147,7 +147,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    ![Dashboard home](media/powerbi-mobile-create-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * The yellow stars ![Favorite star](media/powerbi-mobile-create-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+   * The notation below each dashboard name (in this case, "MBI") ![Data classification](media/powerbi-mobile-create-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
 3. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](media/powerbi-mobile-create-dashboard/pbi_andr_dashellipsis.png)
@@ -169,7 +169,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    ![Dashboard home](media/powerbi-mobile-create-dashboard/power-bi-windows-10-device-dashboard-home.png)
    
    * The black stars show which dashboards are favorites. 
-   * The notation below each dashboard name (in this example, **MBI**) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+   * The notation below each dashboard name (in this example, **MBI**) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
    
    Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
    

@@ -211,7 +211,7 @@ This setting needs to be enabled for audit log entries to be recorded.
 
 ## Dashboard settings
 ### Data classification for dashboards
-Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](powerbi-service-data-classification.md)
+Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](service-data-classification.md)
 
 > [!NOTE]
 > This settings applies to the entire organization and cannot be limited to specific groups.
