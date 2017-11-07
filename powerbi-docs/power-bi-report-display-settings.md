@@ -30,7 +30,7 @@ The default display view is **Fit to page** and the default display size is **16
 
 
 ## Page View settings
-![](media/powerbi-service-change-report-display-settings/power-bi-change-page-view-new.png)
+![](media/power-bi-report-display-settings/power-bi-change-page-view-new.png)
 
 The *Page View* settings control the display of your report page relative to the browser window.  Choose between:
 
@@ -41,7 +41,7 @@ The *Page View* settings control the display of your report page relative to the
 Page View settings are available in both [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). In Editing View, a report owner can assign a Page View setting to individual report pages, and those settings are saved with the report. When a colleague opens that report in Reading View, she sees the report pages display using the owner's settings.  However, while working with the report in Reading View, she can temporarily change the Page View settings.  Once she leaves the report, the Page View settings revert back to those that were set by the report owner.
 
 ## Page Size settings
-![](media/powerbi-service-change-report-display-settings/power-bi--page-size.png)
+![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
 The *Page Size* settings control the display ratio and actual size (in pixels).  Page Size settings are only available in Editing View.
 

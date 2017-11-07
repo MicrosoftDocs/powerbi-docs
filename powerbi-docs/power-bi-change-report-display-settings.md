@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Change the size of a report page (Tutorial)
-In the [previous article and video](powerbi-service-change-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
+In the [previous article and video](power-bi-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
 
 ## First, let's change the page View setting
 1. Open a report in Reading View or Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  This page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
@@ -108,7 +108,7 @@ Remember in the previous step we saw that our report page is currently displayin
 ## Next steps
 [Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
 
-Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)
+Back to [Page display settings in a Power BI report](power-bi-report-display-settings.md)
 
 Read more about  [reports in Power BI ](powerbi-service-reports.md)
 

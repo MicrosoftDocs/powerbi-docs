@@ -27,7 +27,7 @@ In Editing View in Power BI (compared to [Reading View](powerbi-service-interact
    
    ![](media/powerbi-service-go-from-reading-view-to-editing-view/EditReportnew.png)
    
-   The report is now in Editing View and uses the same [display settings](powerbi-service-change-report-display-settings.md) you last used in Reading View.
+   The report is now in Editing View and uses the same [display settings](power-bi-report-display-settings.md) you last used in Reading View.
 2. To return to **Reading View**, select Reading View from the top navigation bar.
    
     ![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturnnew.png)
