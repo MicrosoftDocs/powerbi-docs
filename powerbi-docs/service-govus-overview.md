@@ -70,7 +70,7 @@ The following questions (and answers) are provided to help you quickly get infor
 
 **Question:** I'm interested in getting **Power BI** for my US Government organization. How do I get started?
 
-**Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](powerbi-service-govus-signup.md) article for more information.
+**Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](service-govus-signup.md) article for more information.
 
 **Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?
 
@@ -83,7 +83,7 @@ The following questions (and answers) are provided to help you quickly get infor
 ## More Information
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Sign up for Power BI for US Government](powerbi-service-govus-signup.md)
+* [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
 * [Get started with the Power BI service](powerbi-service-get-started.md)

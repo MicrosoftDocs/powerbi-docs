@@ -29,7 +29,7 @@ For more information about the **Power BI service** for US Government, including
 > 
 > 
 
-![](media/powerbi-service-govus-signup/service_govus_signup_1.png)
+![](media/service-govus-signup/service_govus_signup_1.png)
 
 ## Select the right sign-up process for your US Government organization
 Your US Government organization might be new to the **Office Government Cloud**, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office Government Cloud and Power BI, and are different based on your existing subscription.
@@ -61,7 +61,7 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 5. Complete your order
 6. Assign users to the account.
    
-   ![](media/powerbi-service-govus-signup/service_govus_signup_5.png)
+   ![](media/service-govus-signup/service_govus_signup_5.png)
 7. Log in to the **Power BI service** for US Government customers at [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## Additional Signup Information
