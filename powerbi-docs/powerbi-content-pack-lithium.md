@@ -60,7 +60,7 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 The Lithium content pack requires a Lithium community v15.9 or greater. Please check with your Lithium admin to confirm.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

@@ -127,7 +127,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)﻿
 

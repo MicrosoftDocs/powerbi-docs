@@ -76,7 +76,7 @@ The data may take some time to load depending on the size of your account. If yo
 If the content pack loads but doesn't show any data, please confirm you're connecting with an organizational account. Although personal accounts are supported by Azure Security Center, the API (and therefore the content pack) does not return the expected values if the user connects with a non-organizational account. Please provide access to an organizational account and try connecting again.
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

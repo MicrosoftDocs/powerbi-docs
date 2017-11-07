@@ -59,7 +59,7 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 If you get a **"login failed"** error after using your Office365Mon subscription credentials to login, then the account you are using doesn't have permissions to retrieve the Office365Mon data from your account. Verify it is an admin account and try again.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
 

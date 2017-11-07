@@ -64,7 +64,7 @@ Your Customer Care team can provide your unique Troux OData feed URL to you
 If you are seeing a timeout error after providing credentials, try connecting again.
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

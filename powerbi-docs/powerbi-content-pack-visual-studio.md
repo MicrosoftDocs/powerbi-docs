@@ -112,6 +112,6 @@ Your VSTS administrator may have disabled oAuth for your Visual Studio Team Serv
 ![](media/powerbi-content-pack-visual-studio/oauth.png)
 
 ### See also
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
 

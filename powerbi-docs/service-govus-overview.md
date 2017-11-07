@@ -86,6 +86,6 @@ There are all sorts of things you can do with Power BI. For more information and
 * [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
-* [Get started with the Power BI service](powerbi-service-get-started.md)
+* [Get started with the Power BI service](service-get-started.md)
 * [Getting started with Power BI Desktop](powerbi-desktop-getting-started.md)
 

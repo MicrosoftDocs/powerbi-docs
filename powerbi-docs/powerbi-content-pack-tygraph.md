@@ -93,7 +93,7 @@ The To Date allows you to restrict the latest value for the data returned. It ca
 In the above example, all data from on or prior to October 20, 2014 will be loaded into the content pack. 
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

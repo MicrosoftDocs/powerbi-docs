@@ -89,7 +89,7 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 | **Total API Calls** | |**2,200** |
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
 

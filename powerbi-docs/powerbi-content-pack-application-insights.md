@@ -86,7 +86,7 @@ Copy and paste these into the fields into Power BI:
 ![Application Insights parameters](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitParam2.png)
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

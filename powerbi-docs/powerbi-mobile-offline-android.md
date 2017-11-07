@@ -66,5 +66,5 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 * [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 

@@ -81,6 +81,6 @@ You can always search for your Power BI contents, from the **Favorites**, **Apps
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-mobile-search.png)
 
 ## Next steps
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

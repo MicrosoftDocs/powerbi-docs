@@ -67,7 +67,7 @@ Copy the Power BI Token from within ClickDimensions Settings and paste it into t
 ![](media/powerbi-content-pack-clickdimensions/crm2.png)  
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

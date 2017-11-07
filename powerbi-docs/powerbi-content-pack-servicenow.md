@@ -64,7 +64,7 @@ If you're hitting a credential error during load, please review the access requi
 If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

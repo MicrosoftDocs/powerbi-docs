@@ -95,7 +95,7 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 If you are not the owner if the SQL Sentry database that is being synchronized to <https://cloud.sqlsentry.com>, please contact your administrator to make sure you have rights to view the collected data.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
 

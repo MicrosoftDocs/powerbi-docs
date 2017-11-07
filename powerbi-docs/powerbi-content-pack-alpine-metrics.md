@@ -69,7 +69,7 @@ The content pack includes data from the following tables:
 An Alpine Metrics account with permissions to the above tables is required in order to instantiate this content pack.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

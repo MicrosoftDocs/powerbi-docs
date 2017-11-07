@@ -98,6 +98,6 @@ From here, you can take direct action on the related content.  For example, sele
 * The Related content feature does not work for streaming datasets.
 
 ### See also
-* [Get started with Power BI service](powerbi-service-get-started.md)
+* [Get started with Power BI service](service-get-started.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

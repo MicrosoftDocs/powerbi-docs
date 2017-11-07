@@ -74,7 +74,7 @@ You can also allocate additional resources within the Azure portal under **Confi
 
 ## See also
 [Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+[Get started with Power BI](service-get-started.md)  
 [Get Data for Power BI](service-get-data.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

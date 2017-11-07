@@ -57,7 +57,7 @@ Select a Client ID for one of the clients your account has access to. You can fi
 Talk to your administrator for your API key, to access the data for specific client.
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
 

@@ -115,7 +115,7 @@ Or you might have forgotten to specify the company name:
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

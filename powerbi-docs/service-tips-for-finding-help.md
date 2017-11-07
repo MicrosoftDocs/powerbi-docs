@@ -72,7 +72,7 @@ If all else fails, the final tip is to observe the system. Often, people ask wha
 For example, say you're wondering if you can share dashboards with a security group. To answer that question, go to the sharing dialog box and try adding a security group. Either way, you'll have your answer after this test.
 
 ## See also
-* [Get started with Power BI](powerbi-service-get-started.md) 
+* [Get started with Power BI](service-get-started.md) 
 * Try asking the [Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 

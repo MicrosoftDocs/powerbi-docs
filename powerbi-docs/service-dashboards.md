@@ -87,7 +87,7 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 > 
 
 ## Next steps
-[Get Started with Power BI](powerbi-service-get-started.md)  
+[Get Started with Power BI](service-get-started.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 

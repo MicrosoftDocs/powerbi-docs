@@ -62,7 +62,7 @@ This content pack contains data from the last 45 days in the following tables:
     - Global Visits  
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

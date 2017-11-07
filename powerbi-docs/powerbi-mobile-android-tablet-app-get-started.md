@@ -27,7 +27,7 @@ The Power BI mobile app for Android tablets delivers the mobile BI experience fo
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
-* [Publish them to the Power BI service](powerbi-service-get-started.md), and create dashboards.
+* [Publish them to the Power BI service](service-get-started.md), and create dashboards.
 * [Publish them on-premises to Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md).
 
 Then in the Power BI app for Android tablets, you interact with your dashboards and reports, whether on-premises or in the cloud. 
@@ -46,7 +46,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android tablet to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
-2. Start [creating your own dashboards and reports](powerbi-service-get-started.md).
+2. Start [creating your own dashboards and reports](service-get-started.md).
 
 ## Get started with the Power BI app on your tablet
 1. On your Android tablet, from the start screen open the Power BI for Android app.
@@ -135,6 +135,6 @@ Here are some other things you can do in the Android tablet app for Power BI wit
 
 ### See also
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

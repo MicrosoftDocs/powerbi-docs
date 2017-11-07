@@ -130,6 +130,6 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

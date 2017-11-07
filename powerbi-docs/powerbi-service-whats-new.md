@@ -464,7 +464,7 @@ For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/a
 * Ability to view the source for each tile
 * Planview Enterprise is an end-to-end portfolio and resource management solution that connects strategy to execution, improving decision-making across the enterprise. The Planview Enterprise content pack for Power BI allows you to visualize your resource and work management data in an entirely new way. Simply sign in with your credentials and begin to interactively explore your portfolio investment spend, budget status, and how well your projects align with strategic priorities.
 
-View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-weekly-service-update-1013.aspx) and [online documentation](powerbi-service-get-started.md) to learn more.
+View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-weekly-service-update-1013.aspx) and [online documentation](service-get-started.md) to learn more.
 
 **October 6, 2015**
 
@@ -473,7 +473,7 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-week
 * We have added the option to turn off email notification when you share a dashboard. Simply uncheck the “Send email notification to recipients” check box in the Power BI share dialog. You will be presented with a URL – copy and share this URL to your colleagues to give them access to the dashboard.
 * Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data.
 
-Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) and [online documentation](powerbi-service-get-started.md) for more information.
+Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) and [online documentation](service-get-started.md) for more information.
 
 **September 29, 2015**
 
@@ -638,7 +638,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 * Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
 ## Next steps
-[Get started with Power BI](powerbi-service-get-started.md)  
+[Get started with Power BI](service-get-started.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

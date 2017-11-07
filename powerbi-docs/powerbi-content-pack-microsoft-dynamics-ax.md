@@ -69,7 +69,7 @@ The Dynamics AX 7 environment URL can be found in the browser when the user sign
 The data may take some time to load depending on the size of your instance. If you're seeing empty reports within Power BI, please confirm you have access to the OData tables required for the reports.
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

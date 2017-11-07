@@ -115,5 +115,5 @@ This is a safe environment to play in. You can always choose not to save your ch
 
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards and reports
-can provide insights into procurement data. Now it’s your turn &#151; connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).
+can provide insights into procurement data. Now it’s your turn &#151; connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 

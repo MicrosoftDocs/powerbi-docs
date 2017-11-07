@@ -61,7 +61,7 @@ The Smartsheet content pack for Power BI includes an overview of your Smartsheet
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).  
 
 ### See Also:
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
 

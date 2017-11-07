@@ -101,7 +101,7 @@ Provide a name for your organisation to track in Power BI. This allows you to co
 For other issues, please file a ticket at http://support.powerbi.com if the issue persists.
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

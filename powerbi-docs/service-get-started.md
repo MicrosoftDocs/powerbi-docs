@@ -25,11 +25,11 @@ ms.author: mihart
 ## Getting Started
 This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml#step-1).
 
-![](media/powerbi-service-get-started/power-bi-components.png)
+![](media/service-get-started/power-bi-components.png)
 
 Power BI service has a free version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
 
-![](media/powerbi-service-get-started/power-bi-sign-up.png)
+![](media/service-get-started/power-bi-sign-up.png)
 
 If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md).
 
@@ -53,21 +53,21 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
 2. Power BI opens in your browser. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-service-get-started/getdata3.png)
+   ![](media/service-get-started/getdata3.png)
 3. Select **Files**. 
    
-   ![](media/powerbi-service-get-started/gs1.png)
+   ![](media/service-get-started/gs1.png)
 4. Select **Local File**, browse to the file on your computer, and choose **Open**.
    
-   ![](media/powerbi-service-get-started/gs2.png)
+   ![](media/service-get-started/gs2.png)
 5. For this tutorial we're going to select **Import** to add the Excel file as a dataset that we can then use to create reports and dashboards.  
    
    > **NOTE**: If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
    > 
    > 
    
-   ![](media/powerbi-service-get-started/power-bi-import.png)
-6. When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/powerbi-service-get-started/power-bi-gs.png).
+   ![](media/service-get-started/power-bi-import.png)
+6. When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/service-get-started/power-bi-gs.png).
    
    > **TIP**: A great way to get familiar with the report editor is to [take a tour](powerbi-service-the-report-editor-take-a-tour.md)
    > 
@@ -78,28 +78,28 @@ Now that you have connected to data, explore to find insights.  When you've foun
 
 1. Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, select the dataset name to open it. This opens the dataset as a blank report.
    
-   ![](media/powerbi-service-get-started/power-bi-report-editor.png)
+   ![](media/service-get-started/power-bi-report-editor.png)
    
    > NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
    > 
    > 
 2. In the **Fields** list on the right side of the page, select fields to build a visualization.  Select the checkbox beside **﻿Gross Sales**﻿ and  **﻿Date**﻿.
    
-   ![](media/powerbi-service-get-started/fields.png)
+   ![](media/service-get-started/fields.png)
 3. Power BI analyzes the data and creates a visual.  If you selected **Date** first, you'll see a table.  If you selected **Gross Sales** first, you'll see a chart. Switch to a different way of displaying your data. Try changing to a line chart by selecting the line chart option.
    
-   ![](media/powerbi-service-get-started/gettingstart5new.png)
+   ![](media/service-get-started/gettingstart5new.png)
 4. When you have a visualization you want on your dashboard, hover over the visualization and select the **﻿Pin**﻿ icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
    
-   ![](media/powerbi-service-get-started/pinnew.png)
+   ![](media/service-get-started/pinnew.png)
 5. Because this is a new report, you need to save it before you can pin a visualization from it to the dashboard. Give your report a name (e.g., *Sales Over Time*) and select **Save and Continue**. 
    
-   ![](media/powerbi-service-get-started/PBI_GetStartSaveB4Pinnew.png)
+   ![](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
    The new report appears in the navigation pane under the **Reports** heading.
 6. Pin the tile to an existing dashboard or to a new dashboard. 
    
-   ![](media/powerbi-service-get-started/power-bi-pin.png)
+   ![](media/service-get-started/power-bi-pin.png)
    
    * **Existing dashboard**: select the name of the dashboard from the dropdown.
    * **New dashboard**: type the name of the new dashboard.
@@ -107,22 +107,22 @@ Now that you have connected to data, explore to find insights.  When you've foun
    
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
-   ![](media/powerbi-service-get-started/power-bi-pin-success.png)
+   ![](media/service-get-started/power-bi-pin-success.png)
 8. Select **Go to dashboard** to see your new dashboard with the pinned til. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](service-dashboard-edit-tile.md).﻿﻿
    
-   ![](media/powerbi-service-get-started/power-bi-new-dashboard.png)
+   ![](media/service-get-started/power-bi-new-dashboard.png)
    
    Select the new tile on your dashboard to return to the report any time.
 
 ## Step 3: Continue exploring with Q&A (natural language querying)
 1. For a quick exploration of your data, try asking a question in the Q&A box. The Q&A question box is located at the top of your dashboard. For example, try typing "**what segment had the most revenue**".
    
-   ![](media/powerbi-service-get-started/powerbi-qna.png)
-2. Select the pin icon ![](media/powerbi-service-get-started/PBI_PinIcon.png) to show this visualization on your dashboard too.
+   ![](media/service-get-started/powerbi-qna.png)
+2. Select the pin icon ![](media/service-get-started/pbi_pinicon.png) to show this visualization on your dashboard too.
 3. Pin the visualization to the Financial Sample dashboard.
    
-    ![](media/powerbi-service-get-started/power-bi-pin2.png)
-4. Select the back arrow for **Exit Q&A** ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
+    ![](media/service-get-started/power-bi-pin2.png)
+4. Select the back arrow for **Exit Q&A** ![](media/service-get-started/pbi_qabackarrow.png) to return to your dashboard where you'll see the new tile.
 
 Ready to try more?  Here are some great ways to explore more of Power BI.
 

@@ -78,7 +78,7 @@ You can change this dashboard to display your data any way you want. You can ask
 If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
 
 ### See also
-[Get Started with Power BI](powerbi-service-get-started.md)
+[Get Started with Power BI](service-get-started.md)
 
 [Get Data](service-get-data.md)
 

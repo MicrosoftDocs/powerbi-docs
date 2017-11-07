@@ -59,7 +59,7 @@ Are you the person creating datasets and data models?  Then this topic is for yo
 ## See also
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -84,7 +84,7 @@ Your data is imported via the Insightly API, which includes a daily limit based 
 The provided reports use default fields from Insightly and may not include your customizations. Edit the report to view all the available fields.
 
 ### See also
-[Get started in Power BI](powerbi-service-get-started.md)
+[Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
 

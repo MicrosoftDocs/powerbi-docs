@@ -87,5 +87,5 @@ Watch our latest webinars on-demand.
 ## See also
 [Power BI whitepapers](whitepapers.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 

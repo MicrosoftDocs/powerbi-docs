@@ -37,7 +37,7 @@ There are so many ways to [edit your report](powerbi-service-interact-with-a-rep
 ## See also
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md) 
 

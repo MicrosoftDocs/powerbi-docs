@@ -103,7 +103,7 @@ You may hit an issue while the content pack is loading, after you've provided yo
 2. The user has access to the reports listed in the ["What's included"](#Included) section
 
 ### See also
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
