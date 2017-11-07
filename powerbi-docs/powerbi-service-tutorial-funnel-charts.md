@@ -61,7 +61,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
 1. Start on a [blank report page ](power-bi-report-add-page.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
    
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField_new.png)
-2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
+2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
 3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
    
     ![](media/powerbi-service-tutorial-funnel-charts/funnelFinal_new.png)

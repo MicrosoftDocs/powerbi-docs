@@ -26,7 +26,7 @@ Try different types of visualizations in Power BI to see which one illustrates y
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md), if your report doesn't have any yet.
 2. In the Visualizations pane, select the new visualization type.  
    
-   ![](media/powerbi-service-change-the-type-of-visualization-in-a-report/changeviz.gif)
+   ![](media/power-bi-report-change-visualization-type/changeviz.gif)
 
 > **NOTE**: You can [pin your visualization](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) to your dashboard as a tile.
 > 

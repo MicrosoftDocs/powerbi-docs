@@ -36,7 +36,7 @@ Data visualizations (aka visuals) allow you to interact with your data to find b
 Add a custom visualization that you created yourself or that you found in the [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
 
 ## Change the visualization type
-Try [changing the type of visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to see which works best with your data.
+Try [changing the type of visualization](power-bi-report-change-visualization-type.md) to see which works best with your data.
 
 ## Pin the visualization
 When you have the visualization the way you want it, you can [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
