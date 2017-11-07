@@ -31,7 +31,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 * All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > **Notes:**  
 > 
@@ -51,13 +51,13 @@ When you use Power Query (Get & Transform data in Excel 2016) to connect to a da
 > 
 
 In **Navigator**, click **Load To…**  
-    ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_1.png)
+    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
 Or, If you click **Edit** in Navigator, you’ll open the Query Editor. There you can click **Close & Load To….**  
-    ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_2.png)
+    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 Then in **Load To**, make sure you select **Add this data to the Data Model**.  
-    ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_3.png)
+    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.

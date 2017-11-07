@@ -240,7 +240,7 @@ In this case, you can manually refresh the data in the SalesReport.xlsx dataset 
 > 
 > 
 
-To learn more, see  [Excel data in Power BI](powerbi-service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises Data Gateway](powerbi-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](powerbi-refresh-excel-file-local-drive.md).
+To learn more, see  [Excel data in Power BI](powerbi-service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises Data Gateway](powerbi-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
 
 ### Power BI Desktop file with data from an OData feed
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
