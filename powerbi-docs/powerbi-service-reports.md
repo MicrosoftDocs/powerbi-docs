@@ -68,7 +68,7 @@ Here are some topics, by role, to help you get started.
 
 ### If you will be receiving and consuming reports
 * Start with a [tour of Power BI service](service-basic-concepts.md) so you know where to find reports and report tools.
-* Learn how to [open a report](powerbi-service-open-a-report-in-reading-view.md) and all the interaction available in [Reading view](service-dashboard-tiles.md).
+* Learn how to [open a report](service-report-open-in-reading-view.md) and all the interaction available in [Reading view](service-dashboard-tiles.md).
 * Get comfortable with reports by taking a tour of one of our [samples](sample-tutorial-connect-to-the-samples.md).  
 * Don't need the report any more? You can [remove it](service-delete.md).
 * To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](service-related-content.md).
