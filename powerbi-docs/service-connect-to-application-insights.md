@@ -30,22 +30,22 @@ Note: Access to the Application Insights overview blade for your application in 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![Get Data button](media/powerbi-content-pack-application-insights/PBI_GetData.png)
+    ![Get Data button](media/service-connect-to-application-insights/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-    ![Get Services button](media/powerbi-content-pack-application-insights/PBI_GetServices.png)
+    ![Get Services button](media/service-connect-to-application-insights/pbi_getservices.png)
 3. Select **Application Insights** > **Get**.
    
-    ![Application Insights content pack](media/powerbi-content-pack-application-insights/appinsights.png)
+    ![Application Insights content pack](media/service-connect-to-application-insights/appinsights.png)
 4. Provide the details of the application you want to connect to, including **Application Insights Resource Name**, **Resource Group**, and **Subscription ID**. See [Finding your Application Insights parameters](#FindingAppInsightsParams) below for more details.
    
-    ![Application Insights connection dialog box](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectnDialog.png)    
+    ![Application Insights connection dialog box](media/service-connect-to-application-insights/pbi_contpkappinsitconnectndialog.png)    
 5. Select **Sign In** and follow the screens to connect.
    
-    ![Application Insights connection sign-in](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectn2.png)
+    ![Application Insights connection sign-in](media/service-connect-to-application-insights/pbi_contpkappinsitconnectn2.png)
 6. The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset appear in the Navigation Pane marked with an asterisk.  Select the dashboard to view your imported data.
    
-    ![Application Insights dashboard](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitDash.png)
+    ![Application Insights dashboard](media/service-connect-to-application-insights/pbi_contpkappinsitdash.png)
 
 **What Now?**
 
@@ -79,11 +79,11 @@ The Application Insights content pack includes the following tables and metrics:
 ## Finding parameters
 Your Resource Name, Resource Group and Subscription ID can all be found in the Azure Portal. Selecting the Name will open a detailed view and you can use the Essentials drop-down to find all the values you need.
 
-![Application Insights parameters](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitParams.png)
+![Application Insights parameters](media/service-connect-to-application-insights/pbi_contpkappinsitparams.png)
 
 Copy and paste these into the fields into Power BI:
 
-![Application Insights parameters](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitParam2.png)
+![Application Insights parameters](media/service-connect-to-application-insights/pbi_contpkappinsitparam2.png)
 
 ### See also
 [Get started in Power BI](service-get-started.md)
