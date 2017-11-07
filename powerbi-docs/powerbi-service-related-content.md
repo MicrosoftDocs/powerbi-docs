@@ -38,7 +38,7 @@ Watch Will view related content for a dashboard. Then follow the step-by-step in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
 
-You'll need at least *view* permissions to a dashboard to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
+You'll need at least *view* permissions to a dashboard to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](sample-procurement.md).
 
 **Method 1**
 
@@ -59,7 +59,7 @@ The **Related content** pane opens. It shows all the reports that have visualiza
 From here, you can take direct action on the related content.  For example, select a report name to open it.  For a listed report, select an icon to [analyze in Excel](service-analyze-in-excel.md), [rename](powerbi-service-rename.md), or [get insights](powerbi-service-auto-insights.md). For a dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a report
-You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
+You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](sample-procurement.md).
 
 **Method 1**
 
@@ -79,7 +79,7 @@ The **Related content** pane opens. It shows the associated dataset and all dash
 From here, you can take direct action on the related content.  For example, select a dashboard name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](service-share-dashboards.md) or to open the **Settings** window for the dashboard. For the dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](powerbi-service-auto-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a dataset
-You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
+You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](sample-procurement.md).
 
 In a workspace, select the **Datasets** tab and locate the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 

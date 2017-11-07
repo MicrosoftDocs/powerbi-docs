@@ -72,7 +72,7 @@ In this industry sample we analyze the planned vs. actual costs of the IT depart
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
 
 ### Procurement Analysis sample  ![](media/sample-datasets/power-bi-pa.png)
-[Take a tour of the Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md)
+[Take a tour of the Procurement Analysis sample](sample-procurement.md)
 
 This industry sample analyzes a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability
 

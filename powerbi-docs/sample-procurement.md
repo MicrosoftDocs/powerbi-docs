@@ -29,7 +29,7 @@ This industry sample dashboard and underlying report analyze a manufacturing com
 
 This sample is part of a series that illustrates how you can use  Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement1.png)
+![](media/sample-procurement/procurement1.png)
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
 
@@ -41,7 +41,7 @@ Let’s first look for trends in spending by category and location.
 1. From your workspace, open the **Dashboards** tab and select the Procurement Analysis dashboard.
 2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
    
-    ![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement2.png)
+    ![](media/sample-procurement/procurement2.png)
 
 Notice a few things:
 
@@ -55,10 +55,10 @@ Let’s explore the spending areas in Mexico.
 
 1. In the pie chart, select the **Mexico** bubble in the map. Notice that in the “Total Invoice by Sub Category” column chart, most of it is in the **Indirect Goods & Services** sub category.
    
-   ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procsample_spendmexico.png)
+   ![](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Drill down into the **Indirect Goods & Services** column:
    
-   * Select the drill-down arrow ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_drilldown_icon.png) in the upper-right corner of the chart.
+   * Select the drill-down arrow ![](media/sample-procurement/pbi_drilldown_icon.png) in the upper-right corner of the chart.
    * Select the **Indirect Goods & Services** column.
      
       By far the biggest spend in this category overall is Sales & Marketing.
@@ -66,7 +66,7 @@ Let’s explore the spending areas in Mexico.
      
       The biggest spend in this category in Mexico is Maintenance & Repair.
      
-      ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procsample_drill_mexico.png)
+      ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up .
 4. Select the arrow again to turn drill down off.  
 5. Select **Power BI** in the top navigation bar to return to your workspace.
@@ -77,12 +77,12 @@ We can use highlighting to evaluate different cities.
 1. Select the dashboard tile **Total Invoice, Discount % By Month**. The report opens to the “Discount Analysis” page.
 2. Select the different cities in the **Total Invoice by City** treemap, to see how they compare. Almost all of Miami’s invoices are from Tier 1 vendors.
    
-   ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procsample_miamitreemap2.png)
+   ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## Vendor discounts
 Let’s also explore the discounts available from vendors, and the time periods when we get most discounts. 
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement4.png)
+![](media/sample-procurement/procurement4.png)
 
 Specifically, these questions:
 
@@ -93,7 +93,7 @@ Specifically, these questions:
 Looking at the **Total Invoice and Discount % by Month** combo chart, we see that **February** is the busiest month, and **September** the least busy month. Now look at the discount percent during these months.
 Note that when volume goes up, the discount shrinks, and when volume is low, the discount goes up. The more we need the discount, the worse deal we get.
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement5.png)
+![](media/sample-procurement/procurement5.png)
 
 ### Discount by city
 Another area to explore is discount by city. Select each city in the treemap and see how the other charts change. 
@@ -101,7 +101,7 @@ Another area to explore is discount by city. Select each city in the treemap and
 * St. Louis, MO had a big spike in total invoice in February and a big dip in discount savings in April.
 * Mexico City, Mexico has the highest discount % (11.05%) and Atlanta, GA has the smallest (0.08%).
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement6.png)
+![](media/sample-procurement/procurement6.png)
 
 ### Edit the report
 Select **Edit report** in the upper-left corner and explore in Editing View.
