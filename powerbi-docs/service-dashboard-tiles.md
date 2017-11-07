@@ -42,7 +42,7 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
 * [a report](service-dashboard-pin-tile-from-report.md)
-* [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+* [another dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
 * [Quick Insights](service-insights.md)
@@ -74,7 +74,7 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
      * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Run insights ](service-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)
-     * [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+     * [Pin the tile to another dashboard ](service-pin-tile-to-another-dashboard.md)
        ![](media/service-dashboard-tiles/pin-icon.jpg)
    * [Remove the tile](service-dashboard-edit-tile.md)
      ![](media/service-dashboard-tiles/trash-icon.png)
