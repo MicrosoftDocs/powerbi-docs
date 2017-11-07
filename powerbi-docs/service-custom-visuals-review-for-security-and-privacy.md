@@ -26,7 +26,7 @@ Before you enable a custom visual, you should review that visual for security an
 ## Enable a custom visual
 <a name="enable"></a>A custom visual in the report is disabled until you choose **Enable custom visuals** as shown below.  
 
-![](media/powerbi-custom-visuals-review-for-security-and-privacy/EmptyVisual.png)
+![](media/service-custom-visuals-review-for-security-and-privacy/emptyvisual.png)
 
 ## Considerations before you enable a custom visual
 <a name="considerations"></a>
