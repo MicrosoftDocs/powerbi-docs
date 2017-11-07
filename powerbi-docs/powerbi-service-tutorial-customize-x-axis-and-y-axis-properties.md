@@ -123,7 +123,7 @@ With a visualization this complicated, it helps to add axes titles.  Titles help
    
    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-combo-chart.png)
 
-For more information, see [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md).
+For more information, see [Tips and tricks for color formatting, labeling, and axis properties](service-tips-and-tricks-for-color-formatting.md).
 
 ## Considerations and troubleshooting
 If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 

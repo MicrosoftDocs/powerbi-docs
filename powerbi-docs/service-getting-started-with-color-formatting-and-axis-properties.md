@@ -94,5 +94,5 @@ There are all sorts of colors to choose from, and many more customizations you c
 
 For more information, see the following article:  
 
-* [Tips and tricks for color formatting in Power BI](powerbi-service-tips-and-tricks-for-color-formatting.md)  
+* [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
 
