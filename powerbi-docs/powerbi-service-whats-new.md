@@ -37,7 +37,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
-* Improved load performance for [usage metrics](powerbi-service-usage-metrics.md).
+* Improved load performance for [usage metrics](service-usage-metrics.md).
 
 ## Previous months (2017)
 ### August 2017
@@ -61,7 +61,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Extend visual capabilities of Power BI with [interactive R custom visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### April and May 2017
-* Measure and magnify your impact with [usage metrics for dashboard and report creators](powerbi-service-usage-metrics.md).
+* Measure and magnify your impact with [usage metrics for dashboard and report creators](service-usage-metrics.md).
 * Connect to PostgreSQL with the on-premises data gateway.
 * Power BI SharePoint Web Part made available for all users.
 * Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
