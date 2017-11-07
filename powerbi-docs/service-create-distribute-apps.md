@@ -23,7 +23,7 @@ ms.author: maggies
 ## What are Power BI apps?
 In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place, and then distribute them to large groups of people in your organization. You can also connect to [Power BI apps for external services](service-connect-to-services.md) such as Google Analytics and Microsoft Dynamics CRM.
 
-![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-left-nav.png)
+![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names of all these dashboards and how to navigate to them.  
 
@@ -58,7 +58,7 @@ All existing group workspaces can serve as app workspaces, and you can publish a
 Now that you understand apps and app workspaces, let's start creating and publishing an app. 
 
 ## Create an app workspace
-[!INCLUDE [powerbi-service-create-app-workspace](includes/powerbi-service-create-app-workspace.md)]
+[!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 It’s empty, so now you add content to it. Note that when you first create it, you may need to wait an hour or so for the workspace to propagate to Office 365. 
 
@@ -72,46 +72,46 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 1. Select **Workspaces**, select the ellipsis (...) next to the name of the workspace, then **Members**. 
    
-     ![Select Workspace Members](media/powerbi-service-create-apps/power-bi-apps-workspace-members.png)
+     ![Select Workspace Members](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
    
     The Office 365 Outlook account for the workspace opens in a new browser window.
 2. When you hover over the colored circle in the upper left, it turns into a pencil icon. Select it.
    
-     ![Office 365 pencil icon](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-image.png)
+     ![Office 365 pencil icon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
 3. Select the pencil icon again, and find the image you want to use.
    
-     ![Select the pencil again](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-group.png)
+     ![Select the pencil again](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
 4. Select **Save**.
    
-     ![Select Save](media/powerbi-service-create-apps/power-bi-apps-workspace-save-image.png)
+     ![Select Save](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
    
     The image replaces the colored circle in the Office 365 Outlook window. 
    
-     ![Customized image](media/powerbi-service-create-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Customized image](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
    
     In a few minutes, it will appear in the app in Power BI, too.
    
-     ![Customized image](media/powerbi-service-create-apps/power-bi-apps-image.png)
+     ![Customized image](media/service-create-distribute-apps/power-bi-apps-image.png)
 
 ## Distribute your app
 When you’ve finished creating and perfecting the dashboards and reports in your app workspace, you package it all up as an app and distribute it.
 
 1. In the workspace, select the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
    
-     ![Publish app](media/powerbi-service-create-apps/power-bi-app-publish-600.png)
+     ![Publish app](media/service-create-distribute-apps/power-bi-app-publish-600.png)
 2. First, on **Details**, fill in the description to help people find the app. You can set a background color to personalize it.
    
-     ![App details](media/powerbi-service-create-apps/power-bi-app-details-600.png)
+     ![App details](media/service-create-distribute-apps/power-bi-app-details-600.png)
 3. Next, on **Content**, you see the content that’s going to be published as part of the app – everything that’s in that workspace. You can also set the landing page – the dashboard or report people will see first when they go to your app. You can choose **None**. Then they’ll land on a list of all the content in the app. 
    
-     ![App content](media/powerbi-service-create-apps/power-bi-app-content-600.png)
+     ![App content](media/service-create-distribute-apps/power-bi-app-content-600.png)
 4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or email distribution lists. 
    
-     ![App access](media/powerbi-service-create-apps/power-bi-app-access-finish-600.png)
+     ![App access](media/service-create-distribute-apps/power-bi-app-access-finish-600.png)
 5. When you select **Finish**, you see a message confirming it’s ready to publish.
 6. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
    
-     ![App finish](media/powerbi-service-create-apps/power-bi-app-successful-publish.png)
+     ![App finish](media/service-create-distribute-apps/power-bi-app-successful-publish.png)
 
 The business users that you've distributed the app to can find it in two different ways. You can send them the direct link to the app, or they can search for it in Microsoft AppSource, where they see all the apps that they can access. Either way, after that whenever they go to Apps, they’ll see this app in their list.
 
@@ -120,13 +120,13 @@ Read more about the [app experience for business users](powerbi-service-what-are
 ## Change your published app
 After you publish your app, you may want to change or update it. You notice that when you open your app from Apps, even though you’re the one who published it, you can’t edit it – **Edit Report** is grayed out. 
 
-![Can't edit](media/powerbi-service-create-apps/power-bi-app-no-edit.png)
+![Can't edit](media/service-create-distribute-apps/power-bi-app-no-edit.png)
 
 But it’s easy to update it if you’re an admin or member of the app workspace. 
 
 1. Open the app workspace that corresponds to the app. 
    
-     ![Open workspace](media/powerbi-service-create-apps/power-bi-apps-open-workspace.png)
+     ![Open workspace](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 2. Open the dashboard or the report. You see that you can make any changes you want.
    
    > [!NOTE]
@@ -135,10 +135,10 @@ But it’s easy to update it if you’re an admin or member of the app workspace
    > 
 3. Go back to the app workspace list of contents and select **Update app**.
    
-     ![Update app button](media/powerbi-service-create-apps/power-bi-app-update-button.png)
+     ![Update app button](media/service-create-distribute-apps/power-bi-app-update-button.png)
 4. Update **Details**, **Content**, and **Access**, if you need to, then select **Update app**.
    
-     ![Update app button](media/powerbi-service-create-apps/power-bi-app-update-complete.png)
+     ![Update app button](media/service-create-distribute-apps/power-bi-app-update-complete.png)
 
 The people you’ve distributed the app to automatically see the updated version of the app. 
 
@@ -147,7 +147,7 @@ Any member of an app workspace can unpublish the app.
 
 * In an app workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
   
-     ![Unpublish app](media/powerbi-service-create-apps/power-bi-app-unpublish.png)
+     ![Unpublish app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 This action uninstalls the app for everyone you've distributed it to, and they no longer have access to it. It doesn't delete the app workspace or its contents.
 

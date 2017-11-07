@@ -53,6 +53,6 @@ If the content pack owner changes the content pack, and:
 
 ## Next steps
 * [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-* [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -44,14 +44,14 @@ To create an app, you need a *app workspace*, with your teammates as members. Th
 
 ![App workspaces](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-workspaces.png)
 
-**If you just want to share a finished dashboard with colleagues, don't add them to the app workspace.** Instead, [create the dashboard in an app workspace](powerbi-service-create-apps.md), and distribute the app to them. 
+**If you just want to share a finished dashboard with colleagues, don't add them to the app workspace.** Instead, [create the dashboard in an app workspace](service-create-distribute-apps.md), and distribute the app to them. 
 
 ## Distribute your app to a broad audience
 Say you want to distribute your dashboard to a broad audience. You and your coworkers have created an *app workspace*, then created and refined dashboards, reports, and datasets in the app workspace. Now you bundle them together as an app and distribute it &#151; either to members of a security group or distribution list, or to your whole organization. 
 
 ![Publish app icon](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-app-publish-600.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [distributing your apps](powerbi-service-create-apps.md#distribute-your-app). 
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [distributing your apps](service-create-distribute-apps.md#distribute-your-app). 
 
 After they install an app, they can view it in their browser or mobile device.
 
@@ -88,6 +88,6 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [Share dashboards with coworkers and others](powerbi-service-share-unshare-dashboard.md)
-* [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

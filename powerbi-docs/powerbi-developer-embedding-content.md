@@ -77,7 +77,7 @@ The master account is just a regular user with a Power BI Pro license that you u
 You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
 
 ### Create app workspaces
-If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](powerbi-service-create-apps.md#create-an-app-workspace).
+If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](service-create-distribute-apps.md#create-an-app-workspace).
 
 The *master* account, that was mentioned above, must be an admin of the app workspace.
 

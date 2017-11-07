@@ -65,7 +65,7 @@ You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or memb
    ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ## Add an image and set other workspace properties in the Office 365 group
-When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](powerbi-service-create-apps.md#add-an-image-to-your-app-optional) section of the article [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
+When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](service-create-distribute-apps.md#add-an-image-to-your-app-optional) section of the article [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 1. In the Outlook for Office 365 view of your app workspace, select the group image to edit group workspace properties.
    
@@ -77,6 +77,6 @@ When you distribute your app from the app workspace, the image you add here will
 
 ## Next steps
 * [What are apps in Power BI?](powerbi-service-what-are-apps.md)
-* [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)
+* [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

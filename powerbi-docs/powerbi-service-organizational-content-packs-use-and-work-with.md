@@ -54,6 +54,6 @@ See [Manage, update, and delete organizational content packs](powerbi-service-or
 
 ## See also
 * [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
-* [Create a group in Power BI](powerbi-service-create-apps.md)
+* [Create a group in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

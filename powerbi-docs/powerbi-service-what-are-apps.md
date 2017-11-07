@@ -28,7 +28,7 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
-Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
+Planning to author an app? See [Create and distribute apps in Power BI](service-create-distribute-apps.md) for more information.
 
 ## Install an app
 You can install apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. 
@@ -67,7 +67,7 @@ You can't save changes you make, but you can always [export the data to Excel ](
 ![Export data from a Power BI visual](media/powerbi-what-are-apps/power-bi-service-export-data-visual.png)
 
 ## Next steps
-* [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
+* [Create and distribute apps in Power BI](service-create-distribute-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

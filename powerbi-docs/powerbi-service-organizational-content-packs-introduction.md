@@ -56,7 +56,7 @@ The lifecycle looks something like this:
 1. In Power BI Pro, Nate creates a content pack and publishes it to the Marketing distribution group. The refresh settings are inherited with the dataset and can only be changed by Nate.
    
    > [!NOTE]
-   > If Nate creates the content pack from within a [Power BI app workspace](powerbi-service-create-apps.md) he belongs to, then even if he leaves the workspace, others in the Power BI workspace can take over ownership.
+   > If Nate creates the content pack from within a [Power BI app workspace](service-create-distribute-apps.md) he belongs to, then even if he leaves the workspace, others in the Power BI workspace can take over ownership.
    > 
    > 
 2. Nate sends mail to the distribution group, telling them about the new content pack.
@@ -80,7 +80,7 @@ All distribution group members have the same permissions to the data as the cont
 
 ## Next steps
 * [Create and publish an organizational content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md)
-* [Create and distribute an app in Power BI](powerbi-service-create-apps.md) 
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
