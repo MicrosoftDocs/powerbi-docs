@@ -25,7 +25,7 @@
     - name: "Related content"
       href: service-related-content.md
     - name: "Extended Pro Trial activation"
-      href: powerbi-extended-pro-trial.md
+      href: service-extended-pro-trial.md
     - name: "Opt-in for Power BI preview features"
       href: service-preview-features.md
     - name: "Frequently asked questions"
@@ -73,7 +73,7 @@
   - name: Common tasks
     items: 
     - name: "Favorite dashboards in Power BI"
-      href: service-favorite-dashboards.md
+      href: service-dashboard-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: service-print.md
     - name: "Recent content"
@@ -91,131 +91,131 @@
   - name: Premium
     items: 
     - name: "Power BI Premium - what is it?"
-      href: powerbi-premium.md
+      href: service-premium.md
     - name: "How to purchase Power BI Premium"
       href: service-admin-premium-purchase.md
     - name: "Manage Power BI Premium"
       href: service-admin-premium-manage.md
     - name: "Power BI Premium FAQ"
-      href: powerbi-premium-faq.md
+      href: service-premium-faq.md
     - name: "Power BI Premium release notes"
-      href: powerbi-premium-release-notes.md
+      href: service-premium-release-notes.md
   - name: Connect to services
     items: 
     - name: "Connect to services with content packs"
-      href: powerbi-content-packs-services.md
+      href: service-connect-to-services.md
     - name: "Adobe Analytics content pack"
-      href: powerbi-content-pack-adobe-analytics.md
+      href: service-connect-to-adobe-analytics.md
     - name: "Azure Audit Logs content pack"
-      href: powerbi-content-pack-azure-audit-logs.md
+      href: service-connect-to-azure-audit-logs.md
     - name: "Google Analytics content pack"
-      href: powerbi-content-pack-google-analytics.md
+      href: service-connect-to-google-analytics.md
     - name: "Marketo content pack"
-      href: powerbi-content-pack-marketo.md
+      href: service-connect-to-marketo.md
     - name: "Salesforce content pack"
-      href: powerbi-content-pack-salesforce.md
+      href: service-connect-to-salesforce.md
     - name: "Acumatica content pack"
-      href: powerbi-content-pack-acumatica.md
+      href: service-connect-to-acumatica.md
     - name: "Alpine Metrics Sales Predictions content pack"
-      href: powerbi-content-pack-alpine-metrics.md
+      href: service-connect-to-alpine-metrics.md
     - name: "appFigures content pack"
-      href: powerbi-content-pack-appfigures.md
+      href: service-connect-to-appfigures.md
     - name: "Application Insights content pack"
-      href: powerbi-content-pack-application-insights.md
+      href: service-connect-to-application-insights.md
     - name: "AT Internet Bridge content pack"
-      href: powerbi-content-pack-at-internet.md
+      href: service-connect-to-at-internet.md
     - name: "Azure Mobile Engagement content pack"
-      href: powerbi-content-pack-azure-mobile.md
+      href: service-connect-to-azure-mobile.md
     - name: "Microsoft Azure Consumption Insights content pack"
-      href: powerbi-content-pack-azure-consumption-insights.md
+      href: service-connect-to-azure-consumption-insights.md
     - name: "Azure Search content pack"
-      href: powerbi-content-pack-azure-search.md
+      href: service-connect-to-azure-search.md
     - name: "Azure Security Center content pack"
-      href: powerbi-content-pack-azure-security-center.md
+      href: service-connect-to-azure-security-center.md
     - name: "Bing content pack"
-      href: powerbi-content-pack-bing.md
+      href: service-connect-to-bing.md
     - name: "Circuit ID content pack"
-      href: powerbi-content-pack-circuit-id.md
+      href: service-connect-to-circuit-id.md
     - name: "ClickDimensions content pack"
-      href: powerbi-content-pack-clickdimensions.md
+      href: service-connect-to-clickdimensions.md
     - name: "comScore Digital Analytix content pack"
-      href: powerbi-content-pack-content-pack.md
+      href: service-connect-to-content-pack.md
     - name: "GitHub content pack"
-      href: powerbi-content-pack-github.md
+      href: service-connect-to-github.md
     - name: "Insightly content pack"
-      href: powerbi-content-pack-insightly.md
+      href: service-connect-to-insightly.md
     - name: "IntelliBoard content pack"
-      href: powerbi-content-pack-intelliboard.md
+      href: service-connect-to-intelliboard.md
     - name: "Lithium content pack"
-      href: powerbi-content-pack-lithium.md
+      href: service-connect-to-lithium.md
     - name: "MailChimp content pack"
-      href: powerbi-content-pack-mailchimp.md
+      href: service-connect-to-mailchimp.md
     - name: "Mandrill content pack"
-      href: powerbi-content-pack-mandrill.md
+      href: service-connect-to-mandrill.md
     - name: "Microsoft Azure Enterprise content pack"
-      href: powerbi-content-pack-azure-enterprise.md
+      href: service-connect-to-azure-enterprise.md
     - name: "Microsoft Dynamics AX content pack"
-      href: powerbi-content-pack-microsoft-dynamics-ax.md
+      href: service-connect-to-microsoft-dynamics-ax.md
     - name: "Microsoft Dynamics CRM content pack"
-      href: powerbi-content-pack-microsoft-dynamics-crm.md
+      href: service-connect-to-microsoft-dynamics-crm.md
     - name: "Microsoft Dynamics Marketing content pack"
-      href: powerbi-content-pack-microsoft-dynamics-marketing.md
+      href: service-connect-to-microsoft-dynamics-marketing.md
     - name: "Microsoft Dynamics NAV content pack"
-      href: powerbi-content-pack-microsoft-dynamics-nav.md
+      href: service-connect-to-microsoft-dynamics-nav.md
     - name: "Office365Mon content pack"
-      href: powerbi-content-pack-office365mon.md
+      href: service-connect-to-office365mon.md
     - name: "Planview Enterprise content pack"
-      href: powerbi-content-pack-planview.md
+      href: service-connect-to-planview.md
     - name: "Prevedere content pack"
-      href: powerbi-content-pack-prevedere.md
+      href: service-connect-to-prevedere.md
     - name: "Project Online content pack"
-      href: powerbi-content-pack-project-online.md
+      href: service-connect-to-project-online.md
     - name: "Project Madeira content pack"
-      href: powerbi-content-pack-project-madeira.md
+      href: service-connect-to-project-madeira.md
     - name: "Projectplace content pack"
-      href: powerbi-content-pack-projectplace.md
+      href: service-connect-to-projectplace.md
     - name: "QuickBooks Online content pack"
-      href: powerbi-content-pack-quickbooks-online.md
+      href: service-connect-to-quickbooks-online.md
     - name: "SendGrid content pack"
-      href: powerbi-content-pack-sendgrid.md
+      href: service-connect-to-sendgrid.md
     - name: "ServiceNow Incidents content pack"
-      href: powerbi-content-pack-servicenow.md
+      href: service-connect-to-servicenow.md
     - name: "Smartsheet content pack"
-      href: powerbi-content-pack-smartsheet.md
+      href: service-connect-to-smartsheet.md
     - name: "SparkPost content pack"
-      href: powerbi-content-pack-sparkpost.md
+      href: service-connect-to-sparkpost.md
     - name: "SQL Database Auditing content pack"
       href: powerbi-azure-sql-database-auditing-connector.md
     - name: "SQL Sentry content pack"
-      href: powerbi-content-pack-sql-sentry.md
+      href: service-connect-to-sql-sentry.md
     - name: "Stripe content pack"
-      href: powerbi-content-pack-stripe.md
+      href: service-connect-to-stripe.md
     - name: "SweetIQ content pack"
-      href: powerbi-content-pack-sweetiq.md
+      href: service-connect-to-sweetiq.md
     - name: "Troux content pack"
-      href: powerbi-content-pack-troux.md
+      href: service-connect-to-troux.md
     - name: "Twilio content pack"
-      href: powerbi-content-pack-twilio.md
+      href: service-connect-to-twilio.md
     - name: "tyGraph content pack"
-      href: powerbi-content-pack-tygraph.md
+      href: service-connect-to-tygraph.md
     - name: "UserVoice content pack"
-      href: powerbi-content-pack-uservoice.md
+      href: service-connect-to-uservoice.md
     - name: "Visual Studio Team Services content pack"
-      href: powerbi-content-pack-visual-studio.md
+      href: service-connect-to-visual-studio.md
     - name: "VMob content pack"
-      href: powerbi-content-pack-vmob.md
+      href: service-connect-to-vmob.md
     - name: "Webtrends content pack"
-      href: powerbi-content-pack-webtrends.md
+      href: service-connect-to-webtrends.md
     - name: "Windows Dev Center content pack"
-      href: powerbi-content-pack-windows-dev-center.md
+      href: service-connect-to-windows-dev-center.md
     - name: "Xero content pack"
-      href: powerbi-content-pack-xero.md
+      href: service-connect-to-xero.md
     - name: "Zendesk content pack"
-      href: powerbi-content-pack-zendesk.md
+      href: service-connect-to-zendesk.md
     - name: "Ziosk content pack"
-      href: powerbi-content-pack-ziosk.md
+      href: service-connect-to-ziosk.md
     - name: "Zuora content pack"
-      href: powerbi-content-pack-zuora.md
+      href: service-connect-to-zuora.md
   - name: Dashboards
     items: 
     - name: "Dashboards in Power BI"
@@ -261,7 +261,7 @@
     - name: "Display a dashboard tile in Full Screen mode (TV mode)"
       href: service-display-tile-in-full-screen-mode.md
     - name: "Featured dashboards in Power BI"
-      href: service-featured-dashboards.md
+      href: service-dashboard-featured.md
     - name: "Create a phone view of a dashboard"
       href: service-create-dashboard-phone-view.md
     - name: "Create a QR code for a tile"
@@ -345,7 +345,7 @@
     - name: "Add a filter to a report in Power BI"
       href: service-add-a-filter-to-a-report.md
     - name: "Save a report in Power BI"
-      href: service-save-a-report.md
+      href: service-report-save.md
     - name: "About filters and highlighting in Power BI reports"
       href: service-about-filters-and-highlighting-in-reports.md
     - name: "How to use report filters"
@@ -401,7 +401,7 @@
     - name: "See the data used to create the visual"
       href: service-reports-see-data.md
     - name: "Export data from a visualization"
-      href: service-export-data.md
+      href: power-bi-visualization-export-data.md
     - name: "Change the type of visualization in a Power BI report"
       href: service-change-the-type-of-visualization-in-a-report.md
     - name: "Add a custom visualization to a Power BI report"
@@ -415,7 +415,7 @@
     - name: "Change how a chart is sorted in a Power BI report"
       href: service-change-how-a-chart-is-sorted.md
     - name: "Copy and paste a visualization in Power BI"
-      href: service-copy-and-paste-a-visualization.md
+      href: power-bi-visualization-copy-paste.md
     - name: "Move, resize, and pop out a visualization in a Power BI report"
       href: service-move-and-resize-a-visualization.md
     - name: "Drill down in a visualization in Power BI"
@@ -483,7 +483,7 @@
     - name: "Publish to Power BI from Excel 2016"
       href: service-publish-from-excel.md
     - name: "Reduce the size of an Excel workbook to view it in Power BI"
-      href: powerbi-reduce-the-size-of-an-excel-workbook.md
+      href: reduce-the-size-of-an-excel-workbook.md
   - name: Data from databases
     items: 
     - name: "Azure SQL Data Warehouse with DirectQuery"
