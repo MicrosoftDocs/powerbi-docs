@@ -23,7 +23,7 @@ ms.author: asaxton
 # Signing up for Power BI as an individual
 Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/dashboard-report.png "Power BI dashboard and report")
+![](media/service-self-service-signup-for-power-bi/dashboard-report.png "Power BI dashboard and report")
 
 Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
 
@@ -72,32 +72,32 @@ To sign up for Power BI, you can do the following.
 1. Browse to [powerbi.com](https://powerbi.microsoft.com).
 2. Select **Start Free** or **Sign up free**.
    
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
+    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
 3. On the get started page, select **Try Free >** under Power BI.
    
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
+    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
 4. Enter the email address you are signing up with, and then select **Sign up**. Be sure your email address is allowed for sign up. For more information about what email address you can use, see [What email address can be used with Power BI](#what-email-address-can-be-used-with-power-bi).
    
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
+    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
 5. You will get a message indicating to check your email.
    
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
+    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 6. Select the link within the email to verify your email address. This will bring you back into the sign up flow. You may need to supply some additional information about yourself.
 7. You will then be taken to https://app.powerbi.com and you can begin using Power BI as a free user.
 
 ### What this looks like within the service
 When you are in the service, you can verify that you have a free account by going to the **gear** icon and selecting **Manage personal storage**.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
 
 ### What if I'm already part of an existing organization
 If your account is part of an existing organization, you will get a message asking you to sign in with that account. Select **Continue** and sign in with your Office 365 login.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
 
 You will then see a message asking you to select **Start**.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
 
 ## In-service Power BI Pro 60 day trial
 After you have signed up for your free account, you can optionally choose to try Pro free for 60 days. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional sharing and collaboration features. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
@@ -107,11 +107,11 @@ After you have signed up for your free account, you can optionally choose to try
 
 When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
 
 Then you can select **Start trial**.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
 
 > **Notes**
 > 
@@ -126,7 +126,7 @@ Then you can select **Start trial**.
 ### What this looks like within the service
 When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
 
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
+![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
 ## What if you want the full Power BI Pro
 There is not a way to get the Power BI Pro license as an individual. You will need to speak to your IT Admin to purchase and assign the license to your account. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).

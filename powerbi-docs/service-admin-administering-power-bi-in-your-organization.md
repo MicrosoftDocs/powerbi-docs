@@ -67,7 +67,7 @@ For more information regarding the Power BI service administrator role, see [Und
 ### How do users sign up for Power BI?
 You can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). You can also sign up through the purchase services page on the Office 365 admin center. When an administrator signs up for Power BI, they can assign user licenses to users who should have access.
 
-Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, that user is assigned a Power BI license automatically. [Learn more](powerbi-service-self-service-signup-for-power-bi.md)
+Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, that user is assigned a Power BI license automatically. [Learn more](service-self-service-signup-for-power-bi.md)
 
 ### How do individual users in my organization sign up?
 There are three scenarios that might apply to users in your organization:
@@ -267,7 +267,7 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 ## Next steps
 [Power BI admin portal](service-admin-portal.md)  
 [Understanding the Power BI admin role](service-admin-role.md)  
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
+[Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium - what is it?](service-premium.md)  

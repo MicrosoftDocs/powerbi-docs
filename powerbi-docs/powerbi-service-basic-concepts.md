@@ -25,7 +25,7 @@ ms.author: mihart
 <!-- Shared newnav Include -->
 [!INCLUDE [newnavbydefault](includes/newnavbydefault.md)]
 
-This article assumes that you've already [signed up for Power BI](powerbi-service-self-service-signup-for-power-bi.md) and [added some data](powerbi-service-get-data.md).
+This article assumes that you've already [signed up for Power BI](service-self-service-signup-for-power-bi.md) and [added some data](powerbi-service-get-data.md).
 
 When you open the Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 

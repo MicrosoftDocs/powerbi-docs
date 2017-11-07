@@ -47,7 +47,7 @@ Here is a list of features supported by user type.
 ## Next steps
 If you are interested in learning more about Power BI Premium, see [Power BI Premium - what is it?](service-premium.md).
 
-To get started with Power BI by signing up, see [Signing up for Power BI as an individual](powerbi-service-self-service-signup-for-power-bi.md).
+To get started with Power BI by signing up, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

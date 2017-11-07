@@ -110,7 +110,7 @@ For more information about Apps, see [What are apps in Power BI?](powerbi-servic
 **Are you making changes to Power BI Pro, Power BI Free, Power BI Desktop, et al. as part of the Power BI Premium rollout?**  
 Today we’re also simplifying the distinction between Power BI Pro and the free service. We’ve received feedback that while the free service is intended for personal use and Power BI Pro enables collaboration, functional differences between them have created confusion for users. Going forward, we will improve the free service to have the same functionality as Power BI Pro, but will limit sharing and collaboration features to only Power BI Pro users.
 
-Users of the free Power BI service will benefit from access to all data sources, increased workspace storage limits, and higher refresh and streaming rates. These changes will be effective June 1, 2017, and you can read more at [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md). Power BI Desktop remains available for free.
+Users of the free Power BI service will benefit from access to all data sources, increased workspace storage limits, and higher refresh and streaming rates. These changes will be effective June 1, 2017, and you can read more at [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md). Power BI Desktop remains available for free.
 
 For information regarding the Extended Pro Trial offering, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 

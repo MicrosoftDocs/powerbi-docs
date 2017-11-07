@@ -26,7 +26,7 @@ ms.author: asaxton
 If you are having problems signing up for Power BI with your work email address, one potential workaround is to sign up for an Office 365 trial first and then signing up for Power BI.  You will be able to use Power BI even after the Office 365 trial expires.
 
 > [!NOTE]
-> You cannot use personal email addresses such as @live.com or @gmail.com with Office 365 or Power BI. For more information, see [What email address can be used with Power BI](powerbi-service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi)
+> You cannot use personal email addresses such as @live.com or @gmail.com with Office 365 or Power BI. For more information, see [What email address can be used with Power BI](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi)
 > 
 > 
 

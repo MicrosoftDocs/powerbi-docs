@@ -57,7 +57,7 @@ Just a Web browser and work email address.
 **Note:** Work email addresses ending in .gov and .mil aren’t currently supported.
 
 ## Why do I have to sign up with my work email?
-Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
+Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](service-self-service-signup-for-power-bi.md).
 
 ## Which work email addresses are supported?
 Work email addresses ending in **.edu** and **.org** are supported.
