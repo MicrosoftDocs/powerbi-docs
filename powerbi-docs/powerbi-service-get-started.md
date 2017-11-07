@@ -23,7 +23,7 @@ ms.author: mihart
 ---
 # Get started with Power BI service
 ## Getting Started
-This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](powerbi-learning-0-0-what-is-power-bi.md).
+This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml#step-1).
 
 ![](media/powerbi-service-get-started/power-bi-components.png)
 
