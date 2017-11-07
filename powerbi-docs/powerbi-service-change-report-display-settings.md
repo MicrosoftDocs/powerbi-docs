@@ -52,7 +52,7 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 * Custom (height and width in pixels)
 
 ## Next Steps
-[Learn how to use Page View and Page Size settings in your own Power BI reports](powerbi-service-tutorial-change-report-display-settings.md).
+[Learn how to use Page View and Page Size settings in your own Power BI reports](power-bi-change-report-display-settings.md).
 
 Read more about [reports in Power B](powerbi-service-reports.md)
 

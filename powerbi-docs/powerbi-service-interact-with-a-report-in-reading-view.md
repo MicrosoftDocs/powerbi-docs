@@ -90,7 +90,7 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
 
   In Reading View, the display option you select is temporary - it is not saved when you close the report.
 
-  To learn more, see [Tutorial: Change display settings in a report](powerbi-service-tutorial-change-report-display-settings.md).
+  To learn more, see [Tutorial: Change display settings in a report](power-bi-change-report-display-settings.md).
 
 ## Next steps
 [Reports in Power BI](powerbi-service-reports.md)
