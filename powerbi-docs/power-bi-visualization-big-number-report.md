@@ -32,13 +32,13 @@ Sometimes a single number is the most important thing you want to track in your 
    
    In this example, **Open Store count** in the **Store** table. Power BI creates a column chart with the one number.
    
-   ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_RptNumberTileChart.png)
+   ![](media/power-bi-visualization-big-number-report/pbi_rptnumbertilechart.png)
 5. In the Visualizations pane, select the Card icon.
    
-   ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_ChangeChartCard.png)
-6. Hover over the card and select the pin icon ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_PinTile.png) to add the tile to the dashboard. 
+   ![](media/power-bi-visualization-big-number-report/pbi_changechartcard.png)
+6. Hover over the card and select the pin icon ![](media/power-bi-visualization-big-number-report/pbi_pintile.png) to add the tile to the dashboard. 
    
-   ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/power-bi-pin-icon.png)
+   ![](media/power-bi-visualization-big-number-report/power-bi-pin-icon.png)
 7. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * Existing dashboard: select the name of the dashboard from the dropdown.
@@ -47,7 +47,7 @@ Sometimes a single number is the most important thing you want to track in your 
    
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
-   ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/power-bi-pin-success-message.png)
+   ![](media/power-bi-visualization-big-number-report/power-bi-pin-success-message.png)
 9. Select **Go to dashboard**. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 ## Next steps

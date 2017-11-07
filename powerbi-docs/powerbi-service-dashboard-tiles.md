@@ -97,7 +97,7 @@ When you select a tile, what happens next depends on how the tile was created an
 * If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## Next steps
-[Create a big number tile from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
+[Create a big number tile from a report](power-bi-visualization-big-number-report.md)
 
 [Create a big number tile from Q&A](power-bi-visualization-big-number.md)
 
