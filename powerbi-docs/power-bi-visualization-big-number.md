@@ -27,7 +27,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 The question box is the easiest way to make a number tile like this.
 
-1. Create a [dashboard](powerbi-service-dashboards.md) and [get data](service-get-data.md). This example uses the [Opportunity Analysis sample](sample-opportunity-analysis.md).
+1. Create a [dashboard](service-dashboards.md) and [get data](service-get-data.md). This example uses the [Opportunity Analysis sample](sample-opportunity-analysis.md).
 2. At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
    
    ![](media/power-bi-visualization-big-number/power-bi-q-and-a-box.png)
@@ -57,6 +57,6 @@ If you do not see a question box at all, contact your system or tenant administr
 
 ## Next steps
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

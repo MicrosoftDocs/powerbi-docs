@@ -93,7 +93,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
 * Power BI admins have the ability to disable the export of data.
 
 ## Next steps
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 [Reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

@@ -72,5 +72,5 @@ The report you chose to filter is based on a data model that doesn't include thi
 ## Next steps
 * [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 * [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
-* [Dashboards in Power BI](powerbi-service-dashboards.md)
+* [Dashboards in Power BI](service-dashboards.md)
 

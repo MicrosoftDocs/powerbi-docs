@@ -55,7 +55,7 @@ Some uses for Full Screen mode are:
    * To exit Full Screen mode, select the **Close Full Screen** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-close-full-screen.png)
 
 ## Next steps
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Dashboards in Power BI](service-dashboards.md)
 
 [Full Screen mode for dashboards and reports](powerbi-service-dash-and-reports-fullscreen.md)
 

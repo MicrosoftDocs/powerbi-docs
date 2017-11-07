@@ -101,7 +101,7 @@ When you select a tile, what happens next depends on how the tile was created an
 
 [Create a big number tile from Q&A](power-bi-visualization-big-number.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 
 [Data refresh](refresh-data.md)
 

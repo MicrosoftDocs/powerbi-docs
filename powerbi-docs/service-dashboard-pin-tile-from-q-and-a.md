@@ -28,7 +28,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 > 
 > 
 
-1. Open a [dashboard](powerbi-service-dashboards.md) that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.  To learn more, see [get data](service-get-data.md).
+1. Open a [dashboard](service-dashboards.md) that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.  To learn more, see [get data](service-get-data.md).
 2. In the question box at the top of your dashboard, start typing what you want to know about your data.  
    ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. For example, as you type "last year sales by month and territory"...  

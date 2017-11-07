@@ -36,7 +36,7 @@ Reports are a feature of Power BI service and Power BI Desktop. The experience o
 Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
 
 ## Dashboards versus reports
-[Dashboards](powerbi-service-dashboards.md) are often confused with reports since they too are canvases filled with visualizations. But there are some major differences.  
+[Dashboards](service-dashboards.md) are often confused with reports since they too are canvases filled with visualizations. But there are some major differences.  
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |

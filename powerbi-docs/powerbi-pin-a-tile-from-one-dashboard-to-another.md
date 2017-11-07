@@ -30,7 +30,7 @@ ms.author: mihart
 
 ## Pin a tile to another dashboard
 1. [Get data](service-get-data.md). This example uses the [IT Spend Analysis sample](sample-it-spend.md).
-2. Open a [dashboard](powerbi-service-dashboards.md).
+2. Open a [dashboard](service-dashboards.md).
 3. Hover over the tile you want to pin, select the ellipses (...) and choose the pin ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/PBI_PinTile.png) icon.  
    
    ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/power-bi-tile-menu.png)
@@ -48,6 +48,6 @@ ms.author: mihart
 
 ## Next steps
 [Tiles in Power BI](powerbi-service-dashboard-tiles.md)  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

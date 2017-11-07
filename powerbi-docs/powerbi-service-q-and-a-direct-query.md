@@ -67,7 +67,7 @@ During the Preview phase of this feature, there are several limitations:
 [Power BI Quick Insights](powerbi-service-auto-insights.md)  
 [Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

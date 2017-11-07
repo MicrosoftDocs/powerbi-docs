@@ -85,7 +85,7 @@ Unsupported features: Power BI uses Excel Services to retrieve the workbook tile
 
 [Get data from Excel workbooks](service-excel-workbook-files.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Dashboards in Power BI](service-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

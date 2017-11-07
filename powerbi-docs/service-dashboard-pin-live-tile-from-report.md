@@ -54,7 +54,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
     ![](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
 ## Next steps
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Dashboards in Power BI](service-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

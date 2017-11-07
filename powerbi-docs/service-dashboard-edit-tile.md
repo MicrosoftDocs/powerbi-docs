@@ -41,7 +41,7 @@ This article covers the following.
   > 
 
 ## How to begin
-1. Open a [dashboard](powerbi-service-dashboards.md) that has at least one tile. 
+1. Open a [dashboard](service-dashboards.md) that has at least one tile. 
    
    ![](media/service-dashboard-edit-tile/power-bi-tile.png)
 2. Hover over a dashboard tile and select the ellipses to display the options.
@@ -102,7 +102,7 @@ By default, selecting a tile takes you to the report where the tile was created 
 ## Next steps
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Dashboards in Power BI](service-dashboards.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

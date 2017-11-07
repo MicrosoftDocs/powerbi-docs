@@ -86,7 +86,7 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
     ![](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fullscreen.png)
 
 ## Next steps
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Dashboards in Power BI](service-dashboards.md)  
 [Focus mode for dashboards and dashboard tiles](powerbi-service-display-dash-in-focus-mode.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
