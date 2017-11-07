@@ -33,23 +33,23 @@ ms.author: mihart
 > 
 > 
 
-1. Hover over the tile or visual and select the **Focus mode** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
+1. Hover over the tile or visual and select the **Focus mode** icon ![](media/service-focus-mode/pbi_popout.jpg).  
    
-   ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-hover-focus.png)
+   ![](media/service-focus-mode/power-bi-hover-focus.png)
 2. It opens and fills the entire canvas. Focus mode for dashboard tiles and report visualizations is almost identical, but there are a few differences. For example, to exit Focus mode in a report, select **Back to Report**. And, to exit Focus mode in a dashboard, select **Exit Focus mode**. For other differences, see **Considerations and Troubleshooting** below.
    
-   ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-display-focus-newer2.png)
+   ![](media/service-focus-mode/power-bi-display-focus-newer2.png)
 3. Expand the Filters pane to see all filters applied to this visual.
    
-   ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-display-focus-filters.png)
+   ![](media/service-focus-mode/power-bi-display-focus-filters.png)
 4. Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.   
 5. Leave Focus mode and return to the dashboard by selecting **< Exit Focus mode** (in the top left corner of the visual).
    
-    ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-exit-focus.png)    
+    ![](media/service-focus-mode/power-bi-exit-focus.png)    
    
     Leave Focus mode and return to the report page by selecting **Back to Report**.    
    
-    ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-exit-focus-report.png)
+    ![](media/service-focus-mode/power-bi-exit-focus-report.png)
 
 ## Go from Focus mode to Full Screen mode
 Once in Focus mode, the tile or visual can then be [viewed in Full Screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen mode displays without the distraction of menus and navigation buttons.

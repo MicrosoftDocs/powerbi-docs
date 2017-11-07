@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Display a dashboard tile in Full Screen mode
-Tiles must first be in [Focus mode](powerbi-service-display-dash-in-focus-mode.md) before they can be displayed in Full Screen mode.
+Tiles must first be in [Focus mode](service-focus-mode.md) before they can be displayed in Full Screen mode.
 
 ## What is Full Screen mode?
 Display your [dashboards, reports](powerbi-service-dash-and-reports-fullscreen.md), and tiles without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is sometimes referred to as TV Mode.
@@ -34,7 +34,7 @@ Some uses for Full Screen mode are:
 * reviewing your tile in locked mode -- you can touch the screen or mouse over the tile without opening the underlying report
 
 ## To turn Full Screen mode on (and off)
-1. [Pop out the tile and display it in Focus mode](powerbi-service-display-dash-in-focus-mode.md).
+1. [Pop out the tile and display it in Focus mode](service-focus-mode.md).
    
     ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-focus.png)
    
@@ -59,7 +59,7 @@ Some uses for Full Screen mode are:
 
 [Full Screen mode for dashboards and reports](powerbi-service-dash-and-reports-fullscreen.md)
 
-[Focus mode in Power BI](powerbi-service-display-dash-in-focus-mode.md)
+[Focus mode in Power BI](service-focus-mode.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

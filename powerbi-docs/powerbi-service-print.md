@@ -48,7 +48,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
     ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
 ## Print a dashboard tile
-1. [Open the tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md) by selecting the ellipses and choosing the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png).
+1. [Open the tile in Focus mode](service-focus-mode.md) by selecting the ellipses and choosing the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png).
    
     ![](media/powerbi-service-print/menu-options.png)
 2. Open the tile in [full screen mode](powerbi-service-display-tile-in-full-screen-mode.md) by selecting the full screen icon ![](media/powerbi-service-print/power-bi-full-screen-icon.png) from the top navbar.
@@ -78,7 +78,7 @@ Reports can be printed one page at a time.
    > 
 
 ## Print a report visual
-1. [Open the visual in Focus mode](powerbi-service-display-dash-in-focus-mode.md) by hovering over the tile and selecting the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png) from the top-right corner.
+1. [Open the visual in Focus mode](service-focus-mode.md) by hovering over the tile and selecting the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png) from the top-right corner.
 2. Follow steps 2-3 under *Print a report page* above.
 
 ## Considerations and troubleshooting

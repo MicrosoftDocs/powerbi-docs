@@ -35,7 +35,7 @@ Some uses for Full Screen mode are:
 * reviewing in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report or dashboard
 
 > **NOTE**:
-> Full Screen mode is different from [Focus (Pop out) mode](powerbi-service-display-dash-in-focus-mode.md).
+> Full Screen mode is different from [Focus (Pop out) mode](service-focus-mode.md).
 > 
 > 
 
@@ -78,7 +78,7 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
       ![](media/powerbi-service-dash-and-reports-fullscreen/exit-fullscreen-new.png)
 
 ## Visualizations and dashboard tiles in Full Screen mode
-1. To display dashboard tiles and report visualizations in Full Screen mode, you must start with that tile or visualization already in [Focus mode](powerbi-service-display-dash-in-focus-mode.md). 
+1. To display dashboard tiles and report visualizations in Full Screen mode, you must start with that tile or visualization already in [Focus mode](service-focus-mode.md). 
    
     ![](media/powerbi-service-dash-and-reports-fullscreen/power-bi-focus3.png)
 2. Then, select the Full screen icon ![full screen icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-full-screen-icon.png)  for that tile or  visual. The tile or visual will display full screen without menus or navigation bars.
@@ -87,7 +87,7 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
 
 ## Next steps
 [Dashboards in Power BI](service-dashboards.md)  
-[Focus mode for dashboards and dashboard tiles](powerbi-service-display-dash-in-focus-mode.md)    
+[Focus mode for dashboards and dashboard tiles](service-focus-mode.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -70,7 +70,7 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    
    * [Open the worksheet that was used to create this tile ](powerbi-service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [View in focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+     * [View in focus mode ](service-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
      * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Run insights ](powerbi-service-auto-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)

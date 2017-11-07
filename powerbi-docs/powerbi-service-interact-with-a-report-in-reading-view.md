@@ -77,7 +77,7 @@ To display that same visualization without the distraction of menubars, filter p
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-full-screen.png)
 
-To learn more, see [Focus mode for reports](powerbi-service-display-dash-in-focus-mode.md) and [Full Screen mode for reports](powerbi-service-dash-and-reports-fullscreen.md)
+To learn more, see [Focus mode for reports](service-focus-mode.md) and [Full Screen mode for reports](powerbi-service-dash-and-reports-fullscreen.md)
 
 ## Adjust the display dimensions
 Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  To adjust, select **View** and choose:
