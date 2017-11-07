@@ -30,19 +30,19 @@ Note: To connect to the content pack you need a comScore DAx user account and ha
 ## How to connect
 1. Select Get Data at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-content-pack/getdata.png)
+   ![](media/service-connect-to-connect-to/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-content-pack/services.PNG)
+   ![](media/service-connect-to-connect-to/services.png)
 3. Select **comScore Digital Analytix** \> **Get**.
    
-   ![](media/powerbi-content-pack-content-pack/comscore.png)
+   ![](media/service-connect-to-connect-to/comscore.png)
 4. Provide the datacenter, comScore Client ID and Site you’d like to connect to. For more details on how to find these values, please see [Finding your comScore Parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-content-pack/parameters.PNG)
+   ![](media/service-connect-to-connect-to/parameters.png)
 5. Provide your comScore username and password to connect. See details on finding this value below.
    
-   ![](media/powerbi-content-pack-content-pack/creds.PNG)
+   ![](media/service-connect-to-connect-to/creds.png)
 6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
 **What Now?**
@@ -68,19 +68,19 @@ The data center you connect to is determined by the URL you navigate to in comSc
 
 If you use https://dax.comscore.com, enter “US”, if you use https://dax.comscore.eu, enter “EU”.
 
-![](media/powerbi-content-pack-content-pack/comscore_URL.png) 
+![](media/service-connect-to-connect-to/comscore_url.png) 
 
 **Client**
 
 The Client is the same one you provide when signing into comScore DAx.
 
-![](media/powerbi-content-pack-content-pack/comscore_signin.PNG) 
+![](media/service-connect-to-connect-to/comscore_signin.png) 
 
 **Site**
 
 The comScore site determines which site you’d like to see the data from. You can find the list of sites from your comScore account.
 
-![](media/powerbi-content-pack-content-pack/comscore_sites.PNG)
+![](media/service-connect-to-connect-to/comscore_sites.png)
 
 ### See also
 [Get started in Power BI](service-get-started.md)
