@@ -89,7 +89,7 @@ When you click **Go to O365 Admin Center**, you go directly to the Office 365 ad
 ## Audit logs
 The third tab, in the admin portal, is **Audit logs**. The logs are located within the Office 365 Security & Compliance center. This section allows you to quickly access that area within Office 365. 
 
-For more information about audit logs, see [Auditing Power BI in your organization](powerbi-admin-auditing.md)
+For more information about audit logs, see [Auditing Power BI in your organization](service-admin-auditing.md)
 
 ## Tenant settings
 The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a given feature to be available to a specific group. If this is the case, you can switch it off in your tenant.
@@ -200,7 +200,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 ## Audit settings
 ### Create audit logs for internal activity auditing and compliance
-Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](powerbi-admin-auditing.md)
+Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
 This setting needs to be enabled for audit log entries to be recorded.
 
@@ -231,7 +231,7 @@ For more information about to manage Premium settings, see [Manage Power BI Prem
 
 ## Next steps
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
-[Auditing Power BI in your organization](powerbi-admin-auditing.md)  
+[Auditing Power BI in your organization](service-admin-auditing.md)  
 [Manage Power BI Premium](powerbi-admin-premium-manage.md)  
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 

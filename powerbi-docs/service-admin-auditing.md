@@ -40,10 +40,10 @@ You will need to enable auditing for your organization in order to work with the
 1. Select the **gear icon** in the upper right.
 2. Select **Admin Portal**.
    
-   ![](media/powerbi-admin-auditing/powerbi-admin.png)
+   ![](media/service-admin-auditing/powerbi-admin.png)
 3. Select **Tenant Settings**.
    
-   ![](media/powerbi-admin-auditing/powerbi-admin-tenant-settings.png)
+   ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
 4. Switch on **Create audit logs for internal activity auditing and compliance purposes**.
 5. Select **Apply**.
 
@@ -67,11 +67,11 @@ To audit your Power BI logs, you must visit the O365 Security & Compliance Cente
 1. Select the **gear icon** in the upper right.
 2. Select **Admin Portal**.
    
-   ![](media/powerbi-admin-auditing/powerbi-admin.png)
+   ![](media/service-admin-auditing/powerbi-admin.png)
 3. Select **Audit Logs**.
 4. Select **Go to O365 Admin Center**.
    
-   ![](media/powerbi-admin-auditing/audit-log-o365-admin-center.png)
+   ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 Alternatively, you can browse to [Office 365 | Security & Compliance](https://protection.office.com/#/unifiedauditlog).
 
@@ -86,7 +86,7 @@ You can restrict results to only Power BI activities by doing the following.
 1. On the **Audit log search** page, select the drop down for **Activities** under **Search**.
 2. Select **PowerBI activities**.
    
-   ![](media/powerbi-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 3. Select anywhere outside of the selection box to close it.
 
 Your searches will now be filtered to only Power BI activities.
@@ -99,13 +99,13 @@ You can search the logs by date range using the “Start date” and “End date
 > 
 > 
 
-![](media/powerbi-admin-auditing/search-audit-log-by-date.png)
+![](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## Search the audit logs by users
 You can search for audit log entries for activities performed by specific users. To do this, enter one or more user names in the “Users” field.  This would be the username that they sign into Power BI with. It looks like an email address.
 Leave this box blank to return entries for all users (and service accounts) in your organization.
 
-![](media/powerbi-admin-auditing/search-audit-log-by-user.png)
+![](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## Viewing search results
 Once you hit the search button, the search results are loaded and after a few moments they are displayed under Results. When the search is finished, the number of results found is displayed. 
@@ -203,7 +203,7 @@ You can export the Power BI audit log to a csv file.
 1. Select **Export results**.
 2. Select either **Save loaded results** or **Download all results**.
    
-   ![](media/powerbi-admin-auditing/export-auditing-results.png)
+   ![](media/service-admin-auditing/export-auditing-results.png)
 
 ## Record and user types
 Audit log entries will have a RecordType and UserType as part of the details for the entry. All Power BI entries will have a RecordType of 20.

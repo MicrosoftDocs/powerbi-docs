@@ -76,7 +76,7 @@ Sign-in related data can be available for up to 30 days. For more information, s
 [View your access and usage reports (Classic Portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
 [Sign-in sample PowerShell script](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Azure Active Directory report retention policies](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
-[Using auditing within your organization](powerbi-admin-auditing.md)  
+[Using auditing within your organization](service-admin-auditing.md)  
 [Extended Pro Trial activation](service-extended-pro-trial.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

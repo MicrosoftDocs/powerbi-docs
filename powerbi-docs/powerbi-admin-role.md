@@ -113,13 +113,13 @@ Add-MsolRoleMember -RoleMemberEmailAddress "tim@contoso.com" -RoleName "Power BI
 The Power BI service administrator role does not provide access to the following.
 
 * Ability to modify users and licenses within the Office 365 Admin Center
-* Access to the audit logs. For more information, see [Using auditing within your organization](powerbi-admin-auditing.md).
+* Access to the audit logs. For more information, see [Using auditing within your organization](service-admin-auditing.md).
 
 ## Next steps
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
 [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
-[Auditing Power BI in your organization](powerbi-admin-auditing.md)  
+[Auditing Power BI in your organization](service-admin-auditing.md)  
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
