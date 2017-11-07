@@ -77,7 +77,7 @@ You can change how Power BI notifies you.
     ![Choose Notifications](media/powerbi-mobile-notification-center/power-bi-notifications-windows10-settings.png)
 
 ### Next steps
-* [Data alerts in Power BI service](powerbi-service-set-data-alerts.md)
+* [Data alerts in Power BI service](service-set-data-alerts.md)
 * [Set data alerts in the iPhone app (Power BI for iOS)](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 * [Download the latest version of the Power BI apps](https://powerbi.microsoft.com/mobile/) for mobile devices
