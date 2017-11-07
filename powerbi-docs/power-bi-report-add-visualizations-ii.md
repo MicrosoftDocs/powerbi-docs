@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Part 2, Add visualizations to a Power BI report (Tutorial)
-In [Part 1](powerbi-service-add-visualizations-to-a-report-ii.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
+In [Part 1](power-bi-report-add-visualizations-ii.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
 
 ## Create a new visualization
 In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.
@@ -29,34 +29,34 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 ### Open a report and add a new blank page.
 1. Open the workspace where you saved the Retail Analysis sample. Select **Retail Analysis Sample** to open the report in Reading View.
    
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-open-report.png)
+   ![](media/power-bi-report-add-visualizations-ii/power-bi-open-report.png)
 2. Select **Edit Report** to open the report in Editing View.
    
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport1.png)
+   ![](media/power-bi-report-add-visualizations-ii/editreport1.png)
 3. [Add a new page](power-bi-report-add-page.md) by selecting the yellow plus icon at the bottom of the canvas.
    
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
+   ![](media/power-bi-report-add-visualizations-ii/pbi_addreportpage.png)
 
 ### Add a visualization that looks at this year's sales compared to last year.
 1. From the **Sales** table, select **This Year Sales** > **Value** and **Last Year Sales**. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  
    
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4bnew.png)
+   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_4bnew.png)
 2. From the Time table, drag **Month** into the **Axis** area.  
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5newnew.png)
+   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_5newnew.png)
 3. [Change the visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to an Area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](powerbi-service-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use. From the Visualizations pane, select the Area chart icon.
 4. Sort the visualization by selecting the ellipses and choosing **Sort by Month**.
 5. [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
    
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7b.png)
+   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Save the report](powerbi-service-save-a-report.md).
 
 ### Add a map visualization that looks at sales by location
 1. From the **Store** table, select **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_8newnew.png)
+   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_8newnew.png)
 2. Drag **Total Stores** into the Size area.  
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-add-visual-to-a-reportnew.png)
+   ![](media/power-bi-report-add-visualizations-ii/power-bi-add-visual-to-a-reportnew.png)
 3. Add a legend.  To see the data by store name, drag **Chain** into the Legend area.  
-   ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-add-visual-to-a-report-3new.png)
+   ![](media/power-bi-report-add-visualizations-ii/power-bi-add-visual-to-a-report-3new.png)
 
 ## Next steps
 * For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   

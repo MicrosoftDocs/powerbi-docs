@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Part I, Add visualizations to a Power BI report (Tutorial)
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
+This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](power-bi-report-add-visualizations-ii.md). Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -59,7 +59,7 @@ This article gives a quick introduction to creating a visualization in a report.
    ![](media/power-bi-report-add-visualizations-i/part1pin1.png)
 5. Now you can:
    
-   Continue on to [Part 2: Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-ii.md)
+   Continue on to [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
    
    [Interact with the visualizations](powerbi-service-interact-with-a-report-in-reading-view.md) in the report.
    

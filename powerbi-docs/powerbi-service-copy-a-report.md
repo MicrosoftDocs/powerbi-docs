@@ -41,7 +41,7 @@ Maybe you have a report that already connects to your dataset and has some visua
 5. Have fun updating and editing your new report.
 
 ## Next Steps:
-[Create new visualizations](powerbi-service-add-visualizations-to-a-report-ii.md)
+[Create new visualizations](power-bi-report-add-visualizations-ii.md)
 
 [Delete visualizations](powerbi-service-delete.md) you don't need
 
