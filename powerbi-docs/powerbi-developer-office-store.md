@@ -132,7 +132,7 @@ Once your visual is created, you can optionally get your visual certified. This 
 [Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Getting a custom visual *certified*](powerbi-custom-visuals-certified.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

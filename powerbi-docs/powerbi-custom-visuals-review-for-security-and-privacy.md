@@ -98,7 +98,7 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 
 ## See also
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
 [Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  

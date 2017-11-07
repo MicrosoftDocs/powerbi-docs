@@ -79,7 +79,7 @@ You can also download a sample report that includes the custom visual and showca
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

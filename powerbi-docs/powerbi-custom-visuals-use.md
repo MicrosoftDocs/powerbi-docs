@@ -64,6 +64,6 @@ A custom visual template is added to a specific report when imported. If you'd l
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

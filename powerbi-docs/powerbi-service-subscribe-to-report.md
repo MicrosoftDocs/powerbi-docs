@@ -103,7 +103,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 ## Considerations and troubleshooting
 * At the current time, subscribe is not available for dashboards or reports that come from content packs or Power BI apps. But there is a workaround...make a copy of the report/dashboard and add subscriptions to that version instead.
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
-* Email subscriptions do not support most [custom visuals](powerbi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](powerbi-custom-visuals-certified.md).  
+* Email subscriptions do not support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](powerbi-custom-visuals-certified.md).  
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.    
 * E-mail subscriptions are not yet supported on reports pages created by the Power BI Desktop live connect to service feature.    
 * For dashboards subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
