@@ -268,7 +268,7 @@ Display reports in presentation mode on Surface Hub, and display dashboards, rep
 
 ### July 2016
 #### All phones
-In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+In the Power BI service you can now [create a view of a dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 #### Android phones
 **Favorites tab**

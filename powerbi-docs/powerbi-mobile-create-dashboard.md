@@ -57,7 +57,7 @@ Here's a Power BI dashboard in the Power BI service:
     ![Dashboard portrait view](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-portrait.png)
    
    > [!TIP]
-   > If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+   > If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
    > 
    > 
    
@@ -123,7 +123,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
      Or just turn your phone sideways to view them in landscape mode on your phone.
 
-    > [AZURE.TIP] If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+    > [AZURE.TIP] If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 1. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
    
@@ -178,7 +178,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
     You can also turn your phone sideways to view dashboards in landscape mode on your phone.
    
    > [!TIP]
-   > If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+   > If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
    > 
    > 
 3. In the dashboard, you can:
@@ -204,7 +204,7 @@ If you're the dashboard owner, *in the Power BI service* you can create a view o
 
 ![Dashboard phone view](media/powerbi-mobile-create-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Read more about [creating a phone view of a dashboard](powerbi-service-create-dashboard-phone-view.md).
+Read more about [creating a phone view of a dashboard](service-create-dashboard-mobile-phone-view.md).
 
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  

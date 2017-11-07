@@ -34,25 +34,25 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 1. In the Power BI service, open a dashboard.
 2. Select the arrow next to **Web view** in the upper-right corner > select **Phone view**.
 
-    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-service-phone-view-dashboard.png)
+    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
 
     If you aren't the dashboard owner, you won't see this option.
 
-    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
+    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
 
     The phone dashboard edit view opens. Here you can unpin, resize, and rearrange tiles to fit the phone view. The web version of the dashboard doesn't change.
 
 
 1. Select a tile to drag, resize, or unpin it. You notice the other tiles move out of the way as you drag a tile.
    
-    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-unpin-tile-phone-dashboard.png)
+    ![](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
    
     The unpinned tiles go in the Unpinned tiles pane, where they stay unless you add them back.
    
-    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
+    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
 2. If you change your mind, select **Reset tiles**  to put them back in the size and order they were before.
    
-    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-service-phone-view-reset-tiles.png)
+    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
    
     Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select **Reset tiles**.
 3. When you're satisfied with the phone dashboard layout, select the arrow next to **Phone view** in the upper-right corner > select **Web view**.

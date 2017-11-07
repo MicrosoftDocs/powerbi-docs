@@ -103,7 +103,7 @@ If you only optimize some pages, readers will see a message in portrait view, in
 Report readers can turn their phones sideways to see the page in landscape mode. Read more about [interacting with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md).
 
 ## Next steps
-* [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+* [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
 * [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
