@@ -28,8 +28,8 @@ When a visual has a hierarchy, you can drill down to reveal additional details. 
 You can add hierarchies to reports you own but not to those shared with you.
 Not sure which Power BI visualizations contain a hierarchy?  Hover over a visualization and if you see these drill controls in the top corners, your visualization has a hierarchy.
 
-![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon4.png)  ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon2.png)  ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon3.png)
-![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon5.png) ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon6.png)  
+![](media/power-bi-visualization-drill-down/power-bi-drill-icon4.png)  ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  ![](media/power-bi-visualization-drill-down/power-bi-drill-icon3.png)
+![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png) ![](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png)  
 
 Dates are an unique type of hierarchy. When you add a date field to a visualization, Power BI automatically adds a time hierarchy that contains year, quarter, month, and day. For more information see [Visual hierarchies and drill-down behavior](guided-learning/visualizations.yml#step-18) or watch the video below.
 
@@ -54,19 +54,19 @@ This method uses the drill icons that appear in the top corners of the visualiza
    
    A hierarchy is shown in the animation below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, etc. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-hierarcy-list.png)
+   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
 2. To enable drill down, select the arrow icon in the top right corner of the visualization. When the icon is dark, drill is enabled. If you don't turn on drill, selecting a visual element (such as a bar or bubble) will cross-filter the other charts on the report page.    
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon.png)
-3. To drill down ***one field at a time***, click one of the elements in your visualization, in a bar chart this means clicking one of the bars and in a treemap, this means clicking one of the *leaves*. Notice that the title changes as you drill down and back up again. In this animation it changes from "Total Units This Year by Territory" to "Total Units This Year by Territory and City" to "Total Units This Year by Territory, City and PostalCode" to "Total Units This Year by Territory, City, PostalCode, and Name". And to drill back up, select the **Drill Up** icon   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon5.png)in the top left corner of the visualization as shown below.
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon.png)
+3. To drill down ***one field at a time***, click one of the elements in your visualization, in a bar chart this means clicking one of the bars and in a treemap, this means clicking one of the *leaves*. Notice that the title changes as you drill down and back up again. In this animation it changes from "Total Units This Year by Territory" to "Total Units This Year by Territory and City" to "Total Units This Year by Territory, City and PostalCode" to "Total Units This Year by Territory, City, PostalCode, and Name". And to drill back up, select the **Drill Up** icon   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png)in the top left corner of the visualization as shown below.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/drill.gif)
+   ![](media/power-bi-visualization-drill-down/drill.gif)
 4. To drill down ***all fields at once***, select the double arrow in the top left corner of the visualization.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillAll.png)
+   ![](media/power-bi-visualization-drill-down/pbi_drillall.png)
 5. To drill back up, select the up arrow in the top left corner of the visualization.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillup2.png)
+   ![](media/power-bi-visualization-drill-down/pbi_drillup2.png)
 
 ## Method 2 for drill down
 This method uses the **Explore** dropdown from the top Power BI menubar.
@@ -75,25 +75,25 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
    
    A hierarchy is shown in the image below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, etc. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-hierarcy-list.png)
-2. To enable drill down, select a visualization to make it active and from the Power BI top menubar select **Explore** > **Drill Down**. The drill-down icon in the top right corner of the visualization changes to a black background. ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-icon2.png)  
+   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
+2. To enable drill down, select a visualization to make it active and from the Power BI top menubar select **Explore** > **Drill Down**. The drill-down icon in the top right corner of the visualization changes to a black background. ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-explore2.png)
+   ![](media/power-bi-visualization-drill-down/power-bi-explore2.png)
 3. Once enabled, drill down one field at a time by selecting one of the treemap leaves. In this example, I've selected the territory named **NC** to see total units sold this year in North Carolina by city.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drilldown-1.png)
+   ![](media/power-bi-visualization-drill-down/power-bi-drilldown-1.png)
 4. To drill down all fields at once, select **Explore** > **Show Next Level**.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-show-next-level.png)
+   ![](media/power-bi-visualization-drill-down/power-bi-show-next-level.png)
 5. To drill back up, select **Explore** > **Drill Up**.
    
-   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-up2.png)
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-up2.png)
 6. To see the data being used to create the visual, select **See data**. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual. For more information, see [Show data used to create the visual](powerbi-service-reports-see-data.md).
 
 ## Considerations and limitations
 * If adding a date field to a visualization does not create a hierarchy, it may be that the "date" field is not actually saved as a date. If you own the dataset, open it in *Data* view in Power BI Desktop, select the column that contains the date, and in the Modeling tab change the **Data Type** to **Date** or **Date/Time**. If the report has been shared with you, contact the owner to request the change.  
   
-  ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-change-data-type2.png)
+  ![](media/power-bi-visualization-drill-down/power-bi-change-data-type2.png)
 
 ### See also
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)

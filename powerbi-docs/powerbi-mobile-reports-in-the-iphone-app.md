@@ -84,7 +84,7 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
 ## Drill down and up in a visual on an iPad or a tablet
-If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service. 
+If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
 
 > [!NOTE]
 > Currently, drill-down doesn't work on maps in the iPad or tablet.

@@ -643,7 +643,7 @@ If line charts are the standard for looking at data over time, bar charts are th
 * When an entire Bar/Column chart doesn’t fit into the allotted space, Power BI adds scrollbars. When possible, and if it makes sense, structure the visual and report to show the entire chart so the reader gets an overview of the entire distribution.  Unfortunately this is not possible in our example given the significant number of countries around the world.
   
   One way to limit the values included is to use a filter. For example, add a Visual level filter that shows the country only if unemployment rate is above 20%.
-* Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](powerbi-service-drill-down-in-a-visualization.md).
+* Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](power-bi-visualization-drill-down.md).
   
   ![](media/power-bi-visualization-best-practices/power-bi-drill.png)
   
