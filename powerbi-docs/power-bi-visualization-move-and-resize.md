@@ -29,11 +29,11 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
 
 ## Resize the visualization
 * Select the visualization to display the border and click and drag the dark frame handles to resize.  
-  ![](media/powerbi-service-move-and-resize-a-visualization/Untitled.gif)
+  ![](media/power-bi-visualization-move-and-resize/untitled.gif)
 
 ## Select Focus mode to see more detail.
 * Hover over the visualization and select the Focus mode icon.
-  ![](media/powerbi-service-move-and-resize-a-visualization/PBI_PopOutIcon.jpg)
+  ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## See also
 [Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)
