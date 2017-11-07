@@ -27,17 +27,17 @@ Maybe you have a report that already connects to your dataset and has some visua
 1. [Open a report](powerbi-service-open-a-report-in-reading-view.md).
 2. From the **File** menu, select **Save As**.
    
-   ![](media/powerbi-service-create-a-new-report/powerbi-save-as.png)
+   ![](media/power-bi-report-copy/powerbi-save-as.png)
 3. Type a name for the new report and select **Save**.
    
-   ![](media/powerbi-service-create-a-new-report/SaveReport.png)
+   ![](media/power-bi-report-copy/savereport.png)
    
    A Success message lets you know that the new report was saved to your current workspace in Power BI.
    
-   ![](media/powerbi-service-create-a-new-report/saveSuccess1.png)
+   ![](media/power-bi-report-copy/savesuccess1.png)
 4. Open the **Reports** tab of your workspace and select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
    
-   ![](media/powerbi-service-copy-a-report/power-bi-workspace.png)
+   ![](media/power-bi-report-copy/power-bi-workspace.png)
 5. Have fun updating and editing your new report.
 
 ## Next Steps:

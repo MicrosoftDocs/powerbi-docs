@@ -23,7 +23,7 @@ ms.author: mihart
 # Create a new Power BI report by importing a dataset
 You've read [Reports in Power BI](powerbi-service-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
 
-> **TIP**: To create a report by copying an existing report, see [Copy a report](powerbi-service-copy-a-report.md)
+> **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
 > 
 > 
 
@@ -93,7 +93,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 9. Optionally, continue adding visualizations.
 
 ## Next steps
-* [Create a copy of a report](powerbi-service-copy-a-report.md)
+* [Create a copy of a report](power-bi-report-copy.md)
 * [Save the report](powerbi-service-save-a-report.md)    
 * [Add a new page to the report](power-bi-report-add-page.md)  
 * Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)    
