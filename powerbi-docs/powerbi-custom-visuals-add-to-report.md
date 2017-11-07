@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Add a custom visualization to a report
-You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
+You've [downloaded a custom visual template](service-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
 ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
@@ -68,7 +68,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 * In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-certified.md).
 
 ## Next steps
-[Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
+[Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
