@@ -80,7 +80,7 @@ You'll need to be running Windows 10 version 1511 or higher.
 Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
 
 ## Next steps
-[Create Cortana *answer cards* in Power BI](powerbi-service-cortana-desktop-entity-cards.md)
+[Create Cortana *answer cards* in Power BI](service-cortana-answer-cards.md)
 
 [Troubleshoot Cortana and Power BI integration issues](powerbi-service-cortana-troubleshoot.md)
 

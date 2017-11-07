@@ -106,7 +106,7 @@ Remember in the previous step we saw that our report page is currently displayin
     ![](media/power-bi-change-report-display-settings/power-bi-final-new.png)
 
 ## Next steps
-[Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
+[Create reports for Cortana](service-cortana-answer-cards.md)
 
 Back to [Page display settings in a Power BI report](power-bi-report-display-settings.md)
 

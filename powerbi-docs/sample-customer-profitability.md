@@ -86,7 +86,7 @@ On the bubble chart, the CFO looks for the largest bubbles since these are the o
 * Valery, who is responsible for only one product, works in only 5 industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Does industry explain her negative performance?
 
 ### Executive Scorecard
-This page is formatted as an Answer Card for Cortana. To learn more, see [create Answer Cards for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
+This page is formatted as an Answer Card for Cortana. To learn more, see [create Answer Cards for Cortana](service-cortana-answer-cards.md)
 
 ## Dig into the data by asking questions with Q&A
 For our analysis, it would be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.

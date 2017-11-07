@@ -23,7 +23,7 @@ ms.author: mihart
 # Use Power BI service or Power BI Desktop to create a custom Answer Page for Cortana
 Use the full capabilities of Power BI to create special report pages, called *Cortana answer pages* (and sometimes called "Cortana answer cards") designed specifically to answer Cortana questions.
 
-![](media/powerbi-service-cortana-desktop-entity-cards/power-bi-cortana.png)
+![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
 > [!NOTE]
 > If you are trying out the Cortana and Power BI **dashboard** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
@@ -47,14 +47,14 @@ A *Cortana answer page* in a report is sized specifically for Cortana so that Co
 1. We recommend starting with a [blank report page](power-bi-report-add-page.md).
 2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size > Type > Cortana**.
    
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size-new.png)
+    ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)
 3. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
 4. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
    
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify-new.png)
+    ![](media/service-cortana-answer-cards/pbi_cortana_modify-new.png)
 5. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**. Enable Q&A for this visual by moving the slider to **On**.
    
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names-newer.png)
+    ![](media/service-cortana-answer-cards/pbi_cortana_names-newer.png)
    
    > [!TIP]
    > To improve results, avoid using words that are also column names.
@@ -67,7 +67,7 @@ A *Cortana answer page* in a report is sized specifically for Cortana so that Co
    > 
    > 
    
-     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection-new.png)
+     ![](media/service-cortana-answer-cards/pbi-cortana-single-selection-new.png)
    
       For example, if you ask Cortana:
    

@@ -23,7 +23,7 @@ This article is part of a series. If you haven't already, we recommend reading t
 
 **Article 2**: [For searching reports: enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
 
-**Article 3**: [For searching reports: create special *Cortana answer cards*](powerbi-service-cortana-desktop-entity-cards.md)
+**Article 3**: [For searching reports: create special *Cortana answer cards*](service-cortana-answer-cards.md)
 
 If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
@@ -40,7 +40,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
    * "show sales" will *not* return a Power BI result.   
    * "show me sales fy16", "sales fy16", "show sales fy16", and "show me sales f" *will* return a Power BI result.    
    * Adding the words "powerbi" counts as one of the 2 required words, so "powerbi sales" *will* return a Power BI result.
-5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](powerbi-service-cortana-desktop-entity-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an app workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
+5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](service-cortana-answer-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an app workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
 6. Are you using a mobile device?  Currently we only support Power BI and Cortana integration on Windows mobile devices.
 7. Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to one of the English options.
    
@@ -52,7 +52,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 12. Your Power BI Administrator can "opt out". Check with your admin to see if this is the case.
 
 ## Reports only: why doesn't Cortana find answers from my Power BI reports
-1. If you're looking for answers in reports, do you have any reports with Cortana **answer cards**? Answer cards are the only way Cortana can find answers in your Power BI reports.  Learn how to create an answer card by reading [Create Cortana answer cards in Power BI service and Power BI Desktop](powerbi-service-cortana-desktop-entity-cards.md).
+1. If you're looking for answers in reports, do you have any reports with Cortana **answer cards**? Answer cards are the only way Cortana can find answers in your Power BI reports.  Learn how to create an answer card by reading [Create Cortana answer cards in Power BI service and Power BI Desktop](service-cortana-answer-cards.md).
 2. Are your running Windows version 1511 or later?  Find out by opening Windows Settings and selecting **System > About**. If not, update your version of Windows.
 3. Are your Windows and Power BI accounts connected? This can be confusing. Follow the instructions in [Enable Cortana for Power BI](powerbi-service-cortana-enable.md#add-your-power-bi-credentials-to-windows).
 4. Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that she has already enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](powerbi-service-cortana-enable.md). It's quick and easy.
@@ -67,7 +67,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 Still having trouble?  Now is a good time to run the Cortana troubleshooting tool and narrow down the possible issues. 
 
 ### Having trouble retrieving answers from a report?
-1. For reports, before running the troubleshooting tool, make sure to set the **Page level** filters on your Cortana answer cards to **Require single selection**. For help doing this see [Create Cortana answer cards](powerbi-service-cortana-desktop-entity-cards.md).
+1. For reports, before running the troubleshooting tool, make sure to set the **Page level** filters on your Cortana answer cards to **Require single selection**. For help doing this see [Create Cortana answer cards](service-cortana-answer-cards.md).
 2. Open the troubleshooting tool by adding "/cortana/test" to the end of your Power BI service URL. Your URL should look similar to this:
    
    app.powerbi.com/cortana/test
