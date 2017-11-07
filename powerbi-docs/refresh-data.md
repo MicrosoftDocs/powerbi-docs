@@ -202,7 +202,7 @@ Select the dataset, and in the right pane you'll see a collection of options for
 | SQL Azure Data Warehouse |Yes |Yes |No |
 | Spark on HDInsight |Yes |Yes |No |
 
-To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
+To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
 
 ## Real-time dashboards
 Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream Analytics, to make sure the data is up-to-date. Since real time dashboards do not require users to configure refresh, they are outside the scope of this article.

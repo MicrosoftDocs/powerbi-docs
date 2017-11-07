@@ -23,14 +23,14 @@ ms.author: davidi
 # Azure and Power BI
 With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premises, straightforward or complex, single-sourced or massively scaled, warehoused or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
 
-![](media/powerbi-azure-and-power-bi/Azure_1.png)
+![](media/service-azure-and-power-bi/azure_1.png)
 
 Power BI has a multitude of Azure connections available, and the business intelligence solutions you can create with those services are as unique as your business. You can connect as few as one Azure data source, or a handful, then shape and refine your data to build customized reports.
 
 ### Azure SQL Database and Power BI
 You can start with a straightforward connection to an Azure SQL Database, and create reports to monitor the progress of your business. Using the [Power BI Desktop](powerbi-desktop-getting-started.md), you can create reports that  identify trends and key performance indicators that move your business forward.
 
-![](media/powerbi-azure-and-power-bi/Azure_2_SQLtoPBI.png)
+![](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
 There's plenty more information for you to learn about [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
 
@@ -39,7 +39,7 @@ Do you have more complex data, and all sorts of sources? No problem. With **Powe
 
 You can create different reports for different audiences too, using the same data connections and even the same Query. Just build a new report page, refine your visualizations for each audience, and watch it keep the business in the know.
 
-![](media/powerbi-azure-and-power-bi/Azure_3_MultipletoPBI.png)
+![](media/service-azure-and-power-bi/azure_3_multipletopbi.png)
 
 For more information, take a look at the following resources:
 
@@ -50,7 +50,7 @@ For more information, take a look at the following resources:
 ### Get complex (and ahead) using Azure Services and Power BI
 You can expand as much as you need with Azure and Power BI. Harness multi-source data processing, make use of massive real-time systems, use [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/)and [Event Hubs](http://azure.microsoft.com/services/event-hubs/), and coalesce your varied SaaS services into business intelligence reports that give your business an edge.
 
-![](media/powerbi-azure-and-power-bi/Azure_4_Complex.png)
+![](media/service-azure-and-power-bi/azure_4_complex.png)
 
 ### Connect your app data using Power BI APIs
 You can use Power BI to gain insight on your existing apps, too. With the Power BI API, application developers can send entire data sets to Power BI programmatically. Need continuous updates? With the Power BI APIs, developers can send real-time data updates to get started quickly, and then grow into using Azure Stream Analytics when scale requirements merit doing so.
