@@ -29,26 +29,26 @@ The Power BI Service Administrator role can be assigned to users who should have
 
 Office 365 user admins can assign users to be Power BI admins within the Office 365 Admin center, or via PowerShell script. Once a user is assigned, they'll be able to access the [Power BI admin portal](service-admin-portal.md). There, they will have access to tenant-wide usage metrics, and can control tenant-wide usage of Power BI features.
 
-![](media/powerbi-admin-role/powerbi-admin-portal.png)
+![](media/service-admin-role/powerbi-admin-portal.png)
 
 ## Using the Office 365 Admin Center to assign a role
 To assign users to the Power BI Administrator role within the Office 365 Admin Center, you can do the following.
 
 1. Browse to the Office 365 Admin Center and select **Users** > **Active Users**.
    
-    ![](media/powerbi-admin-role/powerbi-admin-users.png)
+    ![](media/service-admin-role/powerbi-admin-users.png)
 2. Select the user that you want to assign the role to.
 3. Select **Edit** for roles.
    
-    ![](media/powerbi-admin-role/powerbi-admin-edit-roles.png)
+    ![](media/service-admin-role/powerbi-admin-edit-roles.png)
 4. Select **Customized administrator** > **Power BI service administrator**
    
-    ![](media/powerbi-admin-role/powerbi-admin-role.png)
+    ![](media/service-admin-role/powerbi-admin-role.png)
 5. Select **Save**.
 
 You should see **Power BI service administrator** listed for the role of that user. They will now have access to the [Power BI admin portal](service-admin-portal.md).
 
-![](media/powerbi-admin-role/powerbi-admin-role-set.png)
+![](media/service-admin-role/powerbi-admin-role-set.png)
 
 ## Using PowerShell to assign a role
 To run the PowerShell command, you must have the Azure Active Directory PowerShell Module installed.

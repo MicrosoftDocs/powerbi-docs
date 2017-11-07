@@ -26,14 +26,14 @@ Microsoft Power BI enables users to visualize data, share discoveries, and colla
 Administration of Power BI can occur in several locations. Here are two common locations.
 
 > [!NOTE]
-> Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
+> Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 > 
 > 
 
 * [Power BI Admin portal](https://app.powerbi.com/admin-portal)
 * [Office 365 Admin Center](https://portal.office.com/adminportal/home)
 
-For more information regarding the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
+For more information regarding the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## What's in this article
 **Sign up for Power BI**
@@ -266,7 +266,7 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 
 ## Next steps
 [Power BI admin portal](service-admin-portal.md)  
-[Understanding the Power BI admin role](powerbi-admin-role.md)  
+[Understanding the Power BI admin role](service-admin-role.md)  
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  

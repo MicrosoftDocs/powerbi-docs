@@ -23,12 +23,12 @@ ms.author: asaxton
 # Power BI admin portal
 The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
-Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
+Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 All users will see **Admin portal** under the gear icon. If they are not an admin, they will only see the **Premium settings** section, and they will only see the capacities they have rights to manage.
 
 ## How to get to the admin portal
-Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md). To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 2. Select **Admin Portal**.
@@ -230,7 +230,7 @@ The Premium settings tab allows you to manage any Power BI Premium capacity that
 For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ## Next steps
-[Understanding the Power BI admin role](powerbi-admin-role.md)  
+[Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 [Manage Power BI Premium](service-admin-premium-manage.md)  
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
