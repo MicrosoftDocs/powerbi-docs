@@ -91,7 +91,7 @@ The list of data sources for Power BI is extensive, but it can be grouped into t
 
 * Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 * [Content packs for services](powerbi-content-packs-services.md), with ready-made dashboards, reports, and datasets for services such as Salesforce. In addition to establishing a data connection, Power BI provides pre-built dashboards and reports for each of these services.
-* Connectors to databases and other datasets such as [Azure SQL Database](service-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data.
+* Connectors to databases and other datasets such as [Azure SQL Database](service-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services](sql-server-analysis-services-tabular-data.md) tabular data.
 
 Read more about [getting data](powerbi-service-get-data.md) in Power BI.
 
