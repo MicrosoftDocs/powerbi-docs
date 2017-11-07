@@ -49,7 +49,7 @@ This method of creating a report starts with a dataset and a blank report canvas
    
    ![](media/service-report-create-new/power-bi-blank-report.png)
 
-> **TIP**: If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor ](powerbi-service-the-report-editor-take-a-tour.md) before continuing.
+> **TIP**: If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor ](service-the-report-editor-take-a-tour.md) before continuing.
 > 
 > 
 

@@ -69,7 +69,7 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
    ![](media/service-get-started/power-bi-import.png)
 6. When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/service-get-started/power-bi-gs.png).
    
-   > **TIP**: A great way to get familiar with the report editor is to [take a tour](powerbi-service-the-report-editor-take-a-tour.md)
+   > **TIP**: A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md)
    > 
    > 
 

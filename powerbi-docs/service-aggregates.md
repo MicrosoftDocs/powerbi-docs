@@ -24,7 +24,7 @@ ms.author: mihart
 ## What is an aggregate?
 Sometimes you want to mathematically combine the values of rows in a column. The mathematical operation could be sum, average, maximum, count, etc. Combining the value of data in rows in a column is called aggregating. The result of that mathematical operation is an *aggregate*. 
 
-A numeric field is a value that will be aggregated (summed or averaged, for example) over some categorical field.  For example, "sales amount by product" and "number of defects by region". Numeric fields are often referred to as **measures**. In the Fields list, measures are shown with the ∑ symbol. For more information see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).
+A numeric field is a value that will be aggregated (summed or averaged, for example) over some categorical field.  For example, "sales amount by product" and "number of defects by region". Numeric fields are often referred to as **measures**. In the Fields list, measures are shown with the ∑ symbol. For more information see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).
 
 Sometimes a *measure* is actually a *calculated measure*. Calculated measures in Power BI are imported with the data (defined in the data model your report is based on). Each calculated measure has its own hard-coded formula. You can’t change the aggregation being used, for example, if it’s a sum, it can only be a sum. In the Fields list, *calculated measures* are shown with the calculator symbol. For more information on how calculated measures are created, see [Measures in Power BI Desktop](powerbi-desktop-measures.md).
 
