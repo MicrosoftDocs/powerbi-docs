@@ -23,7 +23,7 @@ ms.author: mihart
 ---
 # Full Screen mode in Power BI
 ## What is Full Screen mode?
-![dashboard Full Screen mode before and after](media/powerbi-service-dash-and-reports-fullscreen/power-bi-full-screen-comparison.png)
+![dashboard Full Screen mode before and after](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
 Display your content (dashboards, report pages, tiles, and visualizations) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV Mode. The functionality available in Full Screen mode varies by content.  
 
@@ -44,46 +44,46 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 
 ## Dashboards and report pages in Full Screen mode
-1. From the Power BI menu bar above your dashboard or report, select the **Full Screen** icon ![full screen icon ](media/powerbi-service-dash-and-reports-fullscreen/power-bi-full-screen-icon.png) . Your dashboard canvas or report page fills the entire screen. The example below is a dashboard.
+1. From the Power BI menu bar above your dashboard or report, select the **Full Screen** icon ![full screen icon ](media/service-fullscreen-mode/power-bi-full-screen-icon.png) . Your dashboard canvas or report page fills the entire screen. The example below is a dashboard.
    
-      ![Dashboard displays full screen](media/powerbi-service-dash-and-reports-fullscreen/power-bi-dash-full-screen.png)
+      ![Dashboard displays full screen](media/service-fullscreen-mode/power-bi-dash-full-screen.png)
 2. In Full Screen mode, you have several menu options.  To reveal the menu, just move your mouse or cursor. 
    
      Menu for dashboards    
-     ![Menu for dashboards](media/powerbi-service-dash-and-reports-fullscreen/power-bi-full-screen-menu-dashboard.png)    
+     ![Menu for dashboards](media/service-fullscreen-mode/power-bi-full-screen-menu-dashboard.png)    
    
      Menu for report pages    
-    ![Menu for reports](media/powerbi-service-dash-and-reports-fullscreen/power-bi-report-menu.png)    
+    ![Menu for reports](media/service-fullscreen-mode/power-bi-report-menu.png)    
    
-    ![Back icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-back-icon.png)    
+    ![Back icon](media/service-fullscreen-mode/power-bi-back-icon.png)    
     Use the **Back** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in Full Screen mode.  Full Screen mode will persist until you exit out.
    
-    ![Print icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-print-icon.png)    
+    ![Print icon](media/service-fullscreen-mode/power-bi-print-icon.png)    
     Use this button to print your dashboard or report page in Full Screen mode. 
    
-    ![Fit to screen icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fit-to-width.png)    
+    ![Fit to screen icon](media/service-fullscreen-mode/power-bi-fit-to-width.png)    
     Use the **Fit to screen** button to display your dashboard at the largest size possible without resorting to scrollbars.     
    
-    ![Fit to screen](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fit-screen.png)
+    ![Fit to screen](media/service-fullscreen-mode/power-bi-fit-screen.png)
    
-    ![Fit to width icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fit-width.png)       
+    ![Fit to width icon](media/service-fullscreen-mode/power-bi-fit-width.png)       
     Sometimes you don't care about scrollbars, but want the dashboard to fill the entire width of the available space. Select the **Fit to width** button.    
    
-    ![Fit to screen icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fit-to-width-new.png)
+    ![Fit to screen icon](media/service-fullscreen-mode/power-bi-fit-to-width-new.png)
    
-    ![Report navigation icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-report-nav2.png)       
+    ![Report navigation icon](media/service-fullscreen-mode/power-bi-report-nav2.png)       
     In Full Screen reports, use these arrows to move between the pages in the report.    
 3. To exit Full Screen mode, select the **Exit Full Screen** icon.
    
-      ![](media/powerbi-service-dash-and-reports-fullscreen/exit-fullscreen-new.png)
+      ![](media/service-fullscreen-mode/exit-fullscreen-new.png)
 
 ## Visualizations and dashboard tiles in Full Screen mode
 1. To display dashboard tiles and report visualizations in Full Screen mode, you must start with that tile or visualization already in [Focus mode](service-focus-mode.md). 
    
-    ![](media/powerbi-service-dash-and-reports-fullscreen/power-bi-focus3.png)
-2. Then, select the Full screen icon ![full screen icon](media/powerbi-service-dash-and-reports-fullscreen/power-bi-full-screen-icon.png)  for that tile or  visual. The tile or visual will display full screen without menus or navigation bars.
+    ![](media/service-fullscreen-mode/power-bi-focus3.png)
+2. Then, select the Full screen icon ![full screen icon](media/service-fullscreen-mode/power-bi-full-screen-icon.png)  for that tile or  visual. The tile or visual will display full screen without menus or navigation bars.
    
-    ![](media/powerbi-service-dash-and-reports-fullscreen/power-bi-fullscreen.png)
+    ![](media/service-fullscreen-mode/power-bi-fullscreen.png)
 
 ## Next steps
 [Dashboards in Power BI](service-dashboards.md)  

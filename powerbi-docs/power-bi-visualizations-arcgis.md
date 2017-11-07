@@ -61,7 +61,7 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 ## Interacting with an ArcGIS map
 The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md)), here are the actions available to you.
 
-* As with other visualization types, you can [pin to dashboards](service-dashboard-pin-tile-from-report.md), [view](powerbi-service-reports-see-data.md) and/or [export the underlying data](power-bi-visualization-export-data.md), and see the map in [Focus mode](service-focus-mode.md) and [Full screen](powerbi-service-dash-and-reports-fullscreen.md).    
+* As with other visualization types, you can [pin to dashboards](service-dashboard-pin-tile-from-report.md), [view](powerbi-service-reports-see-data.md) and/or [export the underlying data](power-bi-visualization-export-data.md), and see the map in [Focus mode](service-focus-mode.md) and [Full screen](service-fullscreen-mode.md).    
 * Expand the **Filters** pane to explore the map using filters. When you close the report, the filters you applied are not saved.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map.

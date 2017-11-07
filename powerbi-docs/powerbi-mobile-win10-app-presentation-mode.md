@@ -31,7 +31,7 @@ In full-screen mode in the Power BI mobile app, all the "chrome" such as the nav
 
 When you display a report in presentation mode on Surface Hub, you can draw on the pages with different colors of ink and navigate between the pages of the report.
 
-You can also [display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md) on the web.
+You can also [display dashboards and reports in full-screen mode from the Power BI service](service-fullscreen-mode.md) on the web.
 
 > [!NOTE]
 > Presentation mode is different from [focus mode for tiles](powerbi-mobile-tiles-in-the-iphone-app.md).
@@ -78,6 +78,6 @@ Presentation mode is on by default in Surface Hub, but if it's turned off, you c
 7. To exit full-screen mode, swipe down from the top and tap the two inward-facing arrows ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## Next steps
-* [Display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md)
+* [Display dashboards and reports in full-screen mode from the Power BI service](service-fullscreen-mode.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
