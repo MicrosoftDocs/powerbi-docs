@@ -29,31 +29,31 @@ Note: This content pack requires access to an account which has OAuth enabled. M
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.  
-   ![](media/powerbi-content-pack-visual-studio/PBI_GetData.png) 
+   ![](media/service-connect-to-visual-studio/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.  
-   ![](media/powerbi-content-pack-visual-studio/PBI_GetServices.png) 
+   ![](media/service-connect-to-visual-studio/pbi_getservices.png) 
 3. Select the **Visual Studio Team Services** content pack and click **Get**.     
-   ![](media/powerbi-content-pack-visual-studio/vsts.png)
+   ![](media/service-connect-to-visual-studio/vsts.png)
 4. Enter information about your Visual Studio Team Services account. See details on [finding these parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-visual-studio/PBI_VSOSignIn.png)
+   ![](media/service-connect-to-visual-studio/pbi_vsosignin.png)
    
    Your account name is the front of your URL to visualstudio.com:    
-   ![](media/powerbi-content-pack-visual-studio/URLimage.png)
+   ![](media/service-connect-to-visual-studio/urlimage.png)
    
    Your Project name is the name you see at the top of every page in Visual Studio Team Services:  
-   ![](media/powerbi-content-pack-visual-studio/Projectimage.png)
+   ![](media/service-connect-to-visual-studio/projectimage.png)
 5. Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result. 
    
    > **Important:** Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
    > 
    > 
    
-   ![](media/powerbi-content-pack-visual-studio/PBI_VSOSignIn2.png)
+   ![](media/service-connect-to-visual-studio/pbi_vsosignin2.png)
 6. Follow the Visual Studio Team Services authentication screens to grant the Visual Studio content pack for Power BI permission to your team project data.   
-   ![](media/powerbi-content-pack-visual-studio/VSOAuthorizeApp450.png)
+   ![](media/service-connect-to-visual-studio/vsoauthorizeapp450.png)
 7. After you connect to your Visual Studio Team Services project, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.  
-   ![](media/powerbi-content-pack-visual-studio/VisualStudioOnline800px.png) 
+   ![](media/service-connect-to-visual-studio/visualstudioonline800px.png) 
 
 **What Now?**
 
@@ -75,10 +75,10 @@ More details can be found at <https://www.visualstudio.com/en-us/get-started/rep
 
 ## Finding parameters
 Your account name is the front of your URL to visualstudio.com:    
-    ![](media/powerbi-content-pack-visual-studio/URLimage.png)
+    ![](media/service-connect-to-visual-studio/urlimage.png)
 
 Your Project name is the name you see at the top of every page in VSTS:  
-    ![](media/powerbi-content-pack-visual-studio/Projectimage.png)
+    ![](media/service-connect-to-visual-studio/projectimage.png)
 
 You can also use wildcards to select multiple projects. For example, you can select all projects by entering just “\*”, or all projects that start with “Azure” by entering “Azure\*”.
 
@@ -102,14 +102,14 @@ To resolve this:
 * Restart the “Get data” process above 
 
 Connecting with your work or school account (Azure Active Directory / AAD):  
-    ![](media/powerbi-content-pack-visual-studio/vsologinscreen.png)
+    ![](media/service-connect-to-visual-studio/vsologinscreen.png)
 
 If you see this dialog, and you want to connect with your work or school account (Azure Active Directory), make sure to click the link on the left to sign in with that account – do not provide your AAD credentials on the right hand side, as that is expecting a Microsoft account (your personal account).
 
 **Visual Studio Team Services deployments that do not support oAuth2**  
 Your VSTS administrator may have disabled oAuth for your Visual Studio Team Services deployment.  When this happens you will not be able to use the Visual Studio content pack for Power BI at this time. 
 
-![](media/powerbi-content-pack-visual-studio/oauth.png)
+![](media/service-connect-to-visual-studio/oauth.png)
 
 ### See also
 * [Get started with Power BI](service-get-started.md)
