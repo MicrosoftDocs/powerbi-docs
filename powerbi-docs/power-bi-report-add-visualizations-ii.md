@@ -60,7 +60,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 
 ## Next steps
 * For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   
-* To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).  
+* To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).  
 * To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates.md).  
 * More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).  
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).

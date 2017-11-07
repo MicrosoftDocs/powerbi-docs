@@ -37,7 +37,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 > 
 
 ## Introduction to filters and highlighting in reports using the Filters pane
-![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-reading-view.png)
+![](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-reading-view.png)
 
 Filters and highlighting can be applied using the **Filters** pane or by making selections directly on the report itself (ad-hoc, see bottom of page). The Filters pane shows the tables and fields used in the report and the filters that have been applied, if any. The filters are divided up into **Page level filters**, **Report level filters**, and **Visual level filters**.  You'll only see visual level filters if you've selected a visualization on the report canvas.
 
@@ -55,20 +55,20 @@ There are two modes for interacting with reports: [Reading View](powerbi-service
 ### The Filters pane in Reading View
 If you only have access to a report in Reading View, the Filters pane looks similar to this:
 
-![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-filter-reading-view.png)
+![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading-view.png)
 
 So this page of the report has 6 page level filters and 1 report level filter.
 
 To see if any visual level filters exist, select a visual. In the image below, the bubble chart has 6 filters applied.
 
-![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-filter-visual-level.png)
+![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
 In Reading View, explore the data by modifying the existing filters. Learn how in the article [Interact with filters in Reading view](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 ### The Filters pane in Editing View
 When you have owner permissions for a report and open it in Editing View, you see that **Filters** is just one of several editing panes available.
 
-![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-editing-view.png)
+![](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 As in Reading View (above) we see that this page of the report has 6 page level filters and 1 report level filter. And by selecting the bubble chart, we'd see it has 6 visual level filters applied.
 
@@ -77,7 +77,7 @@ But in Editing View, there is so much more that we can do with filters and highl
 ## Ad-hoc filterting and highlighting
 Select a field on the report canvas to filter and highlight the rest of the page. Select any empty space in the same visual to remove it. This type of filtering and highlighting is not saved with the report but is fun way to quickly explore data impacts. To fine-tune how this type of cross-filtering and cross-highlighting works, see [Visual interactions](powerbi-service-visual-interactions.md)
 
-![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-adhoc-filter.gif)
+![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 ### See also
 [Interact with filters and highlighting (in Reading View)](powerbi-service-interact-with-a-report-in-reading-view.md)

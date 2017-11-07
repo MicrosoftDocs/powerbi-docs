@@ -22,7 +22,7 @@ ms.author: mihart
 ---
 # Add a filter to a Power BI report (in Editing view)
 > [!TIP]
-> We recommend first reading [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+> We recommend first reading [About filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).
 > 
 > 
 
@@ -141,7 +141,7 @@ If you do not see the Fields pane, make sure you're in report [Editing view](pow
 ## Next steps
  [How to use report filters](power-bi-how-to-report-filter.md)
 
-  [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+  [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
 

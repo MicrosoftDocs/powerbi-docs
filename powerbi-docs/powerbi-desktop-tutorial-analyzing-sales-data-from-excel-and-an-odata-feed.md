@@ -211,7 +211,7 @@ Drag **OrderDate** to the canvas beneath the first chart, then drag LineTotal (a
 ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 ### Step 2: Interact with your report visuals to analyze further
-Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](power-bi-reports-filters-and-highlighting.md)
 
 1. Click on the light blue circle centered in **Canad****a.** Note how the other visuals are filtered to show Stock (**ShipCountry**) and Total Orders (**LineTotal**) just for Canada.
    

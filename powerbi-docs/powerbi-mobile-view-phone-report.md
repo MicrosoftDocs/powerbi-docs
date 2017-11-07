@@ -47,7 +47,7 @@ If a phone-optimized report has filters defined, when you view the report on an 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
-Read more about [filtering and highlighting in Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).
+Read more about [filtering and highlighting in Power BI](power-bi-reports-filters-and-highlighting.md).
 
 ## Select visuals
 In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
