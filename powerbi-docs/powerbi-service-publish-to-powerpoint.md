@@ -84,7 +84,7 @@ There are a few considerations and limitations to keep in mind when working with
 * If you share a dashboard with someone outside of your organization (and thereby, a user who is not in your Power BI tenant), that user will not be able to export the shared dashboard's associated reports to PowerPoint. For example, if you are aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com cannot export the associated reports to PowerPoint.
 
 ## See also
-[Analyze in Excel](powerbi-service-analyze-in-excel.md)
+[Analyze in Excel](service-analyze-in-excel.md)
 
 [Excel data in Power BI](powerbi-service-excel-workbook-files.md)
 

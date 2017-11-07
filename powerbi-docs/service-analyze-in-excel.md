@@ -33,7 +33,7 @@ There are a few requirements for using **Analyze in Excel**:
 ## How does it work?
 When you select **Analyze in Excel** from the ellipses menu (the ...) associated with a dataset or report in **Power BI**, Power BI creates an .ODC file and downloads it from the browser to your computer.
 
-![](media/powerbi-service-analyze-in-excel/power-bi-analyze-in-excel.png)
+![](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
 
 When you open the file in Excel, an empty **PivotTable** and **Fields** list appears with the tables, fields, and measures from the Power BI dataset. You can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
@@ -44,7 +44,7 @@ The .ODC file has an MSOLAP connection string that connects to your dataset in P
 ## Get started with Analyze in Excel
 In Power BI, select the ellipses menu beside a report or dataset (the ... beside the report or dataset name), and from the menu that appears, select **Analyze in Excel**.
 
-![](media/powerbi-service-analyze-in-excel/power-bi-analyze-menu.png)
+![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### Install Excel updates
 When you first use **Analyze in Excel**, you need to install updates to the Excel libraries. You’ll be prompted to download and run Excel updates (this initiates installation of the *SQL_AS_OLEDDB.msi* Windows installer package). This package installs **Microsoft AS OLE DB Provider for SQL Server 2016 RC0 (Preview)**.
@@ -53,11 +53,11 @@ When you first use **Analyze in Excel**, you need to install updates to the Exce
 > 
 > 
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
+![](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
 
 If you do need to install the Excel updates for **Analyze in Excel** again, you can download the update from the **Download** icon in Power BI, as shown in the following image.
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_download_again.png)
+![](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
 
 ### Sign in to Power BI
 Although you’re signed in to Power BI in your browser, the first time you open a new .ODC file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
@@ -67,12 +67,12 @@ Some users have multiple Power BI accounts, and those users may encounter a situ
 
 You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel. You can also select **Profile** from the **Power BI** ribbon tab in Excel, which identifies which account you're currently logged in with, and provides a link that lets you sign out (and subsequently, sign in with a different account).
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_profile.png)
+![](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
 
 ### Enable data connections
 In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select **Enable**.
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_enable.png)
+![](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
 > **Note:** Administrators for Power BI tenants can use the *Power BI Admin Portal* to disable the use of **Analyze in Excel** with on-premises datasets housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for use with other datasets.
 > 
@@ -81,7 +81,7 @@ In order to analyze your Power BI data in Excel, you are prompted to verify the 
 ## Analyze away
 Now that Excel has opened and you have an empty PivotTable, you're ready to do all sorts of analysis with your Power BI dataset. Just as with other local workbooks, with Analyze with Excel you can create PivotTables, charts, add data from other sources, and so on. And of course, you can create different worksheets with all sorts of views into your data.
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_chart.png)
+![](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
 > **Note:** It's important to know that using **Analyze in Excel** exposes all detail-level data to any users with permission to the dataset.
 > 

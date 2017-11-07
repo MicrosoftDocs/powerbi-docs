@@ -193,7 +193,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Analyze in Excel***
 
-* [Analyze in Excel](powerbi-service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+* [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
 * Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)

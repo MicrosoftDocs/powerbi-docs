@@ -179,7 +179,7 @@ Users in the organization can ask questions about their data using Cortana.
 > 
 
 ### Use Analyze in Excel with on-premises datasets
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](powerbi-service-analyze-in-excel.md)
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
 
 > [!NOTE]
 > Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.

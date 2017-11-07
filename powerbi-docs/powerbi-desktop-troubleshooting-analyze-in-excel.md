@@ -23,7 +23,7 @@ ms.author: davidi
 # Troubleshooting Analyze in Excel
 There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. This page provides solutions for common issues when using Analyze in Excel.
 
-> **Note:** There's a separate page dedicated to describing and enabling [Analyze in Excel](powerbi-service-analyze-in-excel.md).
+> **Note:** There's a separate page dedicated to describing and enabling [Analyze in Excel](service-analyze-in-excel.md).
 > 
 > If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 > 
@@ -99,7 +99,7 @@ To address this issue, you have a few options:
 Once your measures are defined in the model in the Power BI service, you'll be able to use them in the **Values** area in Excel PivotTables.
 
 ## See Also
-[Analyze in Excel](powerbi-service-analyze-in-excel.md)
+[Analyze in Excel](service-analyze-in-excel.md)
 
 [Tutorial: Create your own measures in Power BI Desktop](powerbi-desktop-tutorial-create-measures.md)
 
