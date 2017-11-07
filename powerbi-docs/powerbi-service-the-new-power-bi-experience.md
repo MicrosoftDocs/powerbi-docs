@@ -156,7 +156,7 @@ You can also sort the content by name or owner.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-sort.png)
 
-To learn more, see [Power BI navigation: search, sort, filter](powerbi-service-navigation-search-filter-sort.md)
+To learn more, see [Power BI navigation: search, sort, filter](service-navigation-search-filter-sort.md)
 
 Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview)
 
