@@ -52,7 +52,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail 
    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**.
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
+For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).
 
 To select an area, click inside that area or along the top line.  Basic area charts do not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page.
 

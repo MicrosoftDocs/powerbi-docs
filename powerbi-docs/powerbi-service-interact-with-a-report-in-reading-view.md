@@ -66,7 +66,7 @@ If the report author added filters to a page in a report, you can interact with 
      
      ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-advanced-filter.png)
 
-For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+For more information, see [Add a filter to a report](power-bi-report-add-filter.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 ## Zoom in on individual visuals
 Hover over a visual and select the **Focus mode** icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas as shown below.

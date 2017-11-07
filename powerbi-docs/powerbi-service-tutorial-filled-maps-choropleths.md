@@ -77,7 +77,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 9. [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
+For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).
 
 Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa. 
 

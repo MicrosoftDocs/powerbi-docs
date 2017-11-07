@@ -26,12 +26,12 @@ This article takes a deep look at the report Filters pane. You'll see the pane i
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 ## Working with filters
-Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). In Editing View, report owners can [add filters to a report](powerbi-service-add-a-filter-to-a-report.md) and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
+Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). In Editing View, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
 
 ## Filters in Reading View
 When a report is open in Reading View, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it.
 
-In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. There is one [Drillthrough filter](powerbi-service-add-a-filter-to-a-report.md), and the entire report has a filter too:  **FiscalYear** is 2013 or 2014.
+In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. There is one [Drillthrough filter](power-bi-report-add-filter.md), and the entire report has a filter too:  **FiscalYear** is 2013 or 2014.
 
 ![](media/power-bi-how-to-report-filter/power-bi-filter-list.png)
 
@@ -120,7 +120,7 @@ If the field values represent date or time, you can specify a start/end time whe
 ## See also
 [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)  
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)  
-[Create filters in report Editing View](powerbi-service-add-a-filter-to-a-report.md)  
+[Create filters in report Editing View](power-bi-report-add-filter.md)  
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)  

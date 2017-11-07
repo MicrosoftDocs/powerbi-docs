@@ -40,7 +40,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-service
 ## Visual filters, page filters, drillthrough filters, and report filters
 A **page filter** applies to all the visuals on the report page. A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.
 
-![](media/powerbi-service-add-a-filter-to-a-report/power-bi-add-filter-reading-view.png)
+![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## Add a filter to a specific visualization (aka visual filter)
 There are 2 ways to do this: 
@@ -51,35 +51,35 @@ There are 2 ways to do this:
 ### By filtering the fields already in the visualization
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
    
-   ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-edit-view.png)
+   ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
    
-   ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-display-panes.png)
+   ![](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Select a visual to make it active. All the fields being used by the visual are identified in the **Fields** pane and also listed in the **Filters** pane, under the **Visual level filters** heading.
    
-   ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-default-visual-filter.png)
+   ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. At this point we'll add a filter to a field already being used by the visualization. 
    
    * Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
      
-      ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-level-filter.png) 
+      ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
    * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
      
-      ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-basic-filters.png) 
+      ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
    * The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
      
-      ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filter-effect.png)
+      ![](media/power-bi-report-add-filter/power-bi-filter-effect.png)
 5. Now let's add a totally new field, as a Visual level filter, to our visualization.
    
    * From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket and select only Andrew Ma. 
      
-      ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-andrew.png)
+      ![](media/power-bi-report-add-filter/power-bi-andrew.png)
    * Notice that **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
      
-      ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visualization.png)
+      ![](media/power-bi-report-add-filter/power-bi-visualization.png)
    * And, the visualization itself is now filtered to show only Andrew's sales this year for the specified stores.
      
-     ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filtered-andrew.png)
+     ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
 
 ## Add a filter to an entire page (aka page view filter)
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
@@ -89,7 +89,7 @@ There are 2 ways to do this:
    
    All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
    
-   ![](media/powerbi-service-add-a-filter-to-a-report/filterPage.gif)
+   ![](media/power-bi-report-add-filter/filterpage.gif)
 
 If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
@@ -103,11 +103,11 @@ To follow along, open the Customer Profitability sample in Editing view. Let's s
 2. Add visualizations that track key metrics for the team executives' business areas.    
 3. Add **Executive > Executive Name** to the Drillthrough filters well.    
    
-    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-drillthrough-filter.png)
+    ![](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
     Notice that Power BI adds a back arrow to the report page.  Selecting the back arrow returns users to the *originating* report page -- the page they were on when they opted to drillthrough. The back arrow only works in Reading view.
    
-     ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-back-arrow.png)
+     ![](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
 ### Use the drillthrough filter
 Let's see how the drillthrough filter works.
@@ -115,10 +115,10 @@ Let's see how the drillthrough filter works.
 1. Start on the **Team Scorecard** report page.    
 2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right click any green data point to open the Drillthrough menu option.
    
-    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-drillthrough.png)
+    ![](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Select **Drillthrough > Team Executive** to drillthrough to the report page named **Team Executive**. The page is filtered to show information about the data point from which you right-clicked; in this case Andrew Ma. Only the field that is in the Drillthrough filters well gets passed through to the drillthrough report page.  
    
-    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-drillthrough-executive.png)
+    ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## Add a filter to an entire report (aka Report filter)
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).

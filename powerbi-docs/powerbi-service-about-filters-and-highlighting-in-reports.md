@@ -26,7 +26,7 @@ ms.author: mihart
 There are a lot of different ways you can filter and highlight reports in Power BI. Putting all of that information in one article would get confusing, so we've broken it down like this:
 
 * Introduction to filters and highlighting (the article you're reading now)
-* The ways you can [create and use filters and highlighting in Editing View/reports that you own](powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
+* The ways you can [create and use filters and highlighting in Editing View/reports that you own](power-bi-report-add-filter.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
 * The ways you can [use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
 * [A detailed tour of the filter and highlighting controls available in Editing View](power-bi-how-to-report-filter.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 * Now that you've learned how filers and highlighting work by default, [learn how to change the way visualizations on a page filter and highlight each other](powerbi-service-visual-interactions.md)
@@ -72,7 +72,7 @@ When you have owner permissions for a report and open it in Editing View, you se
 
 As in Reading View (above) we see that this page of the report has 6 page level filters and 1 report level filter. And by selecting the bubble chart, we'd see it has 6 visual level filters applied.
 
-But in Editing View, there is so much more that we can do with filters and highlighting. The main difference being that we can add new filters. Learn how to do this and so much more in the article [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md)
+But in Editing View, there is so much more that we can do with filters and highlighting. The main difference being that we can add new filters. Learn how to do this and so much more in the article [Add a filter to a report](power-bi-report-add-filter.md)
 
 ## Ad-hoc filterting and highlighting
 Select a field on the report canvas to filter and highlight the rest of the page. Select any empty space in the same visual to remove it. This type of filtering and highlighting is not saved with the report but is fun way to quickly explore data impacts. To fine-tune how this type of cross-filtering and cross-highlighting works, see [Visual interactions](powerbi-service-visual-interactions.md)
@@ -82,7 +82,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 ### See also
 [Interact with filters and highlighting (in Reading View)](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[Add a filter to a report (in Editing View)](powerbi-service-add-a-filter-to-a-report.md)
+[Add a filter to a report (in Editing View)](power-bi-report-add-filter.md)
 
 [Take a tour of report filters](power-bi-how-to-report-filter.md)
 

@@ -88,7 +88,7 @@ View, set, and modify page, report, drillthrough, and visual-level filters.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
-For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
+For more information, see [Add a filter to a report](power-bi-report-add-filter.md).
 
 - - -
 ## The Fields pane
