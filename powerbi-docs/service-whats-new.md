@@ -530,7 +530,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **August 4, 2015**
 
-* Power BI now offers [Circuit ID](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) users the ability to track and monitor all their Circuit ID cloud communications services, empowering them to make the right business decisions. For additional details on how to get started, please see the Circuit ID content pack for [Power BI help page](powerbi-content-pack-circuit-id.md).
+* Power BI now offers [Circuit ID](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) users the ability to track and monitor all their Circuit ID cloud communications services, empowering them to make the right business decisions. For additional details on how to get started, please see the Circuit ID content pack for [Power BI help page](service-connect-to-circuit-id.md).
 * Today we’ve released an enhancement to the Share Dashboard feature to make it even easier to use.  If your organization uses Office 365 for email, you can now [share to an email distribution group](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx) just the same way you would send an email in Outlook.  Just enter the address of the distribution group and click Share.  All members of the distribution group will receive an email invitation to view the dashboard.
 
 **July 28, 2015**

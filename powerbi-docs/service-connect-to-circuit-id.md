@@ -28,19 +28,19 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/service
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-circuit-id/getdata.PNG)
+    ![](media/service-connect-to-circuit-id/getdata.png)
 2. In the **Services** box, select **Get**.
    
-    ![](media/powerbi-content-pack-circuit-id/services.PNG)
+    ![](media/service-connect-to-circuit-id/services.png)
 3. Select **Circuit ID** \> **Get**.
    
-    ![](media/powerbi-content-pack-circuit-id/circuitid.png)
+    ![](media/service-connect-to-circuit-id/circuitid.png)
 4. For Authentication Method, select Basic and provide your username and password. Then hit Sign In.
    
-    ![](media/powerbi-content-pack-circuit-id/circuitID_login.png)
+    ![](media/service-connect-to-circuit-id/circuitid_login.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk.
    
-    ![](media/powerbi-content-pack-circuit-id/circuitID_dashboard_chrome.png)
+    ![](media/service-connect-to-circuit-id/circuitid_dashboard_chrome.png)
 
 **What Now?**
 
