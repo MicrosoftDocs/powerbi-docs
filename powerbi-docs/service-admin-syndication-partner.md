@@ -27,10 +27,10 @@ If you are interested in acquiring Power BI, alongside your Office 365 subscript
 
 1. You are able to buy the service from another channel, either directly from Microsoft or another partner. This option is not available to all customers depending on their relationship with the partner. You can verify this by going to the **Office 365 Admin Portal** > **Billing** > **Subscriptions**. If you do see **Subscriptions**, you can acquire the service from Microsoft directly, or you can also contact a partner that is offering Power BI.
    
-    ![](media/powerbi-admin-syndication-partner/billingsub.png)
+    ![](media/service-admin-syndication-partner/billingsub.png)
 2. If you do not see **Subscriptions** listed under **Billing**, you cannot buy from Microsoft directly or another partner. 
    
-   ![](media/powerbi-admin-syndication-partner/billing.png)
+   ![](media/service-admin-syndication-partner/billing.png)
 
 If you are not able to purchase Power BI directly, and depending on what type of Power BI subscription you are interested in, you still have some options.
 
@@ -43,7 +43,7 @@ If you are happy with the free offering for Power BI, you can sign up for the fr
 
     Your IT department has turned off signup for Microsoft Power BI.
 
-![](media/powerbi-admin-syndication-partner/sorry.png)
+![](media/service-admin-syndication-partner/sorry.png)
 
 To enable ad-hoc subscriptions, you can contact your partner and request that they turn it on. If you are an Administrator of your tenant, and know how to leverage Azure Active Directory PowerShell commands, you can enable ad-hoc subscriptions yourself. [Learn more](https://technet.microsoft.com/library/jj151815.aspx)
 
@@ -52,7 +52,7 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
         $msolcred = get-credential
         connect-msolservice -credential $msolcred
    
-    ![](media/powerbi-admin-syndication-partner/aad-signin.png)
+    ![](media/service-admin-syndication-partner/aad-signin.png)
 2. Once you are signed in, you can issue the following command to enable free sign ups.
    
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
