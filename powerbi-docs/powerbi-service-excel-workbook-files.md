@@ -131,7 +131,7 @@ Currently, when you choose Import, Power BI only imports data that is part of a 
 ## See also
 [Publish to Power BI from Excel 2016](powerbi-service-publish-from-excel.md)
 
-[Power BI publisher for Excel](powerbi-publisher-for-excel.md)
+[Power BI publisher for Excel](publisher-for-excel.md)
 
 [Data refresh in Power BI](powerbi-refresh-data.md)
 

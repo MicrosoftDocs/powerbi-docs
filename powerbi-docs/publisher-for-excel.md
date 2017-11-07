@@ -23,7 +23,7 @@ ms.author: davidi
 # Power BI publisher for Excel
 With Microsoft **Power BI publisher for Excel**, you can take snapshots of your most important insights in Excel, like PivotTables, charts, and ranges and pin them to dashboards in Power BI.
 
-![](media/powerbi-publisher-for-excel/pbi_excel_publisher_pinobj_dashboard.png)
+![](media/publisher-for-excel/pbi_excel_publisher_pinobj_dashboard.png)
 
 What can you pin? Just about anything in an Excel worksheet. You can select a range of cells from a simple sheet or table, a PivotTable or PivotChart, illustrations and images, text.
 
@@ -38,7 +38,7 @@ Power BI publisher for Excel is an add-in you can download and install on deskto
 
 Once you have the publisher installed, you'll see a new **Power BI** ribbon in Excel, where you can sign in (or sign out) of Power BI, pin elements to dashboards, and manage elements you've already pinned.
 
-![](media/powerbi-publisher-for-excel/pbi_excel_publisher_ribbon.png)
+![](media/publisher-for-excel/pbi_excel_publisher_ribbon.png)
 
 The **Power BI publisher for Excel** add-in is enabled by default, but if for some reason you don't see the Power BI ribbon tab in Excel, you'll need to enable it. Click **File** > **Options** > **Add-ins** > **COM Add-ins**. Select **Microsoft Power BI Publisher for Excel**.
 
@@ -49,10 +49,10 @@ To begin, you need to make sure you're signed in to Power BI.
 
 1. Select **Profile** from the **Power BI** ribbon tab in Excel. If you're already signed in to Power BI, you'll see a dialog that shows which account you're currently signed in with. If that's the account you want to use, great - go to the next set of steps to pin your range. Select *Sign out* if you want to use a different Power BI account. If you're not signed in, go to the next step (Step 2).
    
-   ![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_0.png)
+   ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_0.png)
 2. If you're not signed in, select the **Sign In** link that appears when you select **Profile** from the **Power BI** ribbon tab in Excel, in the **Connect to Power BI** dialog type in the email address of the Power BI account you want to use, then select **Sign In**.
    
-   ![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_1a.png)
+   ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_1a.png)
 
 Once you're signed in, follow these steps to pin a range to a dashboard:
 
@@ -63,24 +63,24 @@ Once you're signed in, follow these steps to pin a range to a dashboard:
 5. Click **Okay** to pin your selection to the dashboard.
 6. In **Pin to dashboard**, select an existing dashboard in the workspace or create a new one, and then click the **Ok** button.
    
-   ![](media/powerbi-publisher-for-excel/XL-publish.gif)
+   ![](media/publisher-for-excel/xl-publish.gif)
 
 ## Pin a Chart to a dashboard
-Just click on the chart, and then click Pin ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_pin.png).
+Just click on the chart, and then click Pin ![](media/publisher-for-excel/pbi_excel_publisher_pin.png).
 
-![](media/powerbi-publisher-for-excel/pbi_excel_publisher_chart.png)
+![](media/publisher-for-excel/pbi_excel_publisher_chart.png)
 
 ## Manage pinned elements
 With **Pin Manager**, you can update (refresh) a pinned element's associated tile in Power BI. You can also remove the pin between an element you've already pinned to dashboards in Power BI.
 
-![](media/powerbi-publisher-for-excel/pbi_excel_publisher_pin_manager2.png)
+![](media/publisher-for-excel/pbi_excel_publisher_pin_manager2.png)
 
 To update tiles in your dashboard, in **Pin Manager** select one or more elements and then select **Update**.
 
 To remove the mapping between a pinned element in Excel and the associated tile in a dashboard, remove **Remove**. When you select **Remove**, you're *not* removing the element from your worksheet in Excel or deleting the associated tile in the dashboard. You are removing the pin, or *mapping*, between them. The removed element will no longer appear in **Pin Manager**. If you pin the element again, it will appear as a new tile.
 
-To remove a pinned element (a tile) from a dashboard, you'll need to do that in Power BI. In the tile you want to delete, select the **Open menu** icon ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_tile_openmenu.png)
-and then select **Delete tile**   ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_tile_trashcan.png).
+To remove a pinned element (a tile) from a dashboard, you'll need to do that in Power BI. In the tile you want to delete, select the **Open menu** icon ![](media/publisher-for-excel/pbi_excel_publisher_tile_openmenu.png)
+and then select **Delete tile**   ![](media/publisher-for-excel/pbi_excel_publisher_tile_trashcan.png).
 
 ## Connect to data in Power BI
 Beginning with the July 2016 release of **Power BI publisher for Excel** (including the current release, linked to above), you can connect directly to data in the Power BI service and analyze that data in Excel using PivotTables and PivotCharts. This features makes it easy to use Power BI data and Excel together to analyze data that's most important to you.
@@ -98,17 +98,17 @@ To connect to Power BI data using **Power BI publisher for Excel**, follow these
 1. Make sure you're signed in to Power BI. The steps describing how to sign in (or to sign in with a different account) are provided earlier in this article.
 2. Once you're signed in to Power BI with the account you want to use, select **Connect to Data** from the **Power BI** ribbon tab in Excel.
    
-   ![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_1.png)
+   ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_1.png)
 3. Excel connects to Power BI using an HTTPS connection and presents the **Connect to data in Power BI** dialog, where you can select the *workspace* from which you want to select your data (1, in the image below), which *type of data* you want to connect to, either a **report** or a **dataset** (2), and a drop down (3) that allows you to select which *available report or dataset* to which to connect.
    
-   ![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_2.png)
+   ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_2.png)
 4. When you make your choices and select **Connect** from the **Connect to data in Power BI** dialog, Excel prepares a PivotTable and displays the **PivotTable Fields** pane, where you can select fields from your connected Power BI data, and create tables or charts that help you analyze the data.
    
-   ![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_3.png)
+   ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_3.png)
 
 If you don't have any data in Power BI, Excel detects that and offers to create sample data for you to connect to and try.
 
-![](media/powerbi-publisher-for-excel/pbi_excel_publish_connect-to-data_4.png)
+![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_4.png)
 
 There are a few things to consider in this release of **Power BI publisher for Excel**:
 
