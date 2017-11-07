@@ -193,7 +193,7 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 
 ## Next steps
 [Get started with Power BI](service-get-started.md)  
-[Power BI videos](powerbi-videos.md)  
+[Power BI videos](videos.md)  
 [Power BI Premium - what is it?](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

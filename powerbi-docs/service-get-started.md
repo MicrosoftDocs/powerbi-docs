@@ -134,7 +134,7 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 
 * [Learn how reports, datasets, dashboards, and tiles all fit together](service-basic-concepts.md)
-* [Power BI videos](powerbi-videos.md)
+* [Power BI videos](videos.md)
 * [See what samples we have available for you to use](sample-datasets.md)
 
 ### Stay in touch with Power BI
