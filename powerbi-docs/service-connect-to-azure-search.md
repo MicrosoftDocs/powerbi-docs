@@ -28,22 +28,22 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-azure-search/PBI_GetData.png) 
+   ![](media/service-connect-to-azure-search/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-azure-search/PBI_GetServices.png) 
+   ![](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Select **Azure Search** \> **Get**.
    
-   ![](media/powerbi-content-pack-azure-search/azuresearch.png)
+   ![](media/service-connect-to-azure-search/azuresearch.png)
 4. Provide the name of the table storage account your Azure Search analysis is stored.
    
-   ![](media/powerbi-content-pack-azure-search/params.png)
+   ![](media/service-connect-to-azure-search/params.png)
 5. Select **Key** as the Authentication Mechanism and provide your storage account key. Click **Sign In** and to begin the loading process.
    
-   ![](media/powerbi-content-pack-azure-search/creds.png)
+   ![](media/service-connect-to-azure-search/creds.png)
 6. Once the loading is complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-    ![](media/powerbi-content-pack-azure-search/dashboard2.png)
+    ![](media/service-connect-to-azure-search/dashboard2.png)
 
 **What Now?**
 
