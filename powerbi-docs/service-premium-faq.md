@@ -66,7 +66,7 @@ Power BI Premium can be purchased based on the number of virtual cores. You can 
 Power BI Premium is billed monthly with an annual commitment.
 
 **How will I buy Power BI Premium?**  
-Power BI Premium is available as an add-on to Power BI Pro in the O365 admin center. For more information, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
+Power BI Premium is available as an add-on to Power BI Pro in the O365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
 
 **How do I know how much Power BI Premium capacity I need to purchase?**  
 Use this cost [calculator](https://powerbi.microsoft.com/calculator/) to estimate how much Power BI Premium capacity you may need.

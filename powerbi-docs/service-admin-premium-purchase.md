@@ -39,7 +39,7 @@ If you don't have an existing tenant and want to create one, you can purchase Po
 
 To make this purchase, see [Power BI Premium P1 offer](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1).
 
-![](media/powerbi-admin-premium-purchase/premium-purchase-with-tenant.png)
+![](media/service-admin-premium-purchase/premium-purchase-with-tenant.png)
 
 ## Purchase a Power BI Premium capacity for an existing organization
 If you have an existing organization, you need to be either a Global admin or a Billing admin, to purchase subscriptions and licenses. For more information, see [About Office 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
@@ -48,12 +48,12 @@ To purchase a Premium capacity, you will need to do the following.
 
 1. From within the Power BI service, select the **Office 365 app picker** > **Admin**. Alternatively, you can browse to the Office 365 Admin center. You can get there by going to https://portal.office.com and selecting **Admin**.
    
-    ![](media/powerbi-admin-premium-purchase/o365-app-picker.png)
+    ![](media/service-admin-premium-purchase/o365-app-picker.png)
 2. Select **Billing** > **Purchase services**.
 3. Under **Other plans**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
 4. Hover over the **ellipsis (...)** and then select **Buy now**.
    
-    ![](media/powerbi-admin-premium-purchase/premium-purchase.png)
+    ![](media/service-admin-premium-purchase/premium-purchase.png)
 5. Follow the steps to complete the purchase.
 
 You can also select the following links to take you directly to the purchase pages of those items. For more information about these SKUs, see [Power BI Premium - what is it?](service-premium.md#premiumskus).
@@ -70,7 +70,7 @@ In order to pucharse a Power BI Premium SKU, ***you must be a Global or Billing 
 
 After you have completed the purchase, the Purchase services screen will show that the item is purchased and active.
 
-![](media/powerbi-admin-premium-purchase/premium-purchased.png)
+![](media/service-admin-premium-purchase/premium-purchased.png)
 
 You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
@@ -81,7 +81,7 @@ When you are in the **Premium settings** section of the Power BI Admin portal, i
 2. Find the Power BI Premium item you want to purchase more of under **Other plans**.
 3. Hover over the **ellipsis (...)** and then select **Change license quantity**.
    
-    ![](media/powerbi-admin-premium-purchase/premium-purchase-more.png)
+    ![](media/service-admin-premium-purchase/premium-purchase-more.png)
 4. Change the number of instances that you want to have for this item. Then select **Submit** when finished.
    
    > [!IMPORTANT]
@@ -91,21 +91,21 @@ When you are in the **Premium settings** section of the Power BI Admin portal, i
 
 The **Purchase services** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
 
-![Available v-cores for Power BI Premium capacity](media/powerbi-admin-premium-purchase/premium-capacities.png)
+![Available v-cores for Power BI Premium capacity](media/service-admin-premium-purchase/premium-capacities.png)
 
 You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ## Cancel your subscription
 You can cancel your subscription from within the Office 365 admin center. To cancel your Premium subscription, do the following.
 
-![](media/powerbi-admin-premium-purchase/premium-cancel-subscription.png "Cancel Premium subscription")
+![](media/service-admin-premium-purchase/premium-cancel-subscription.png "Cancel Premium subscription")
 
 1. Browse to the Office 365 admin center.
 2. Select **Billing** > **Subscriptions**.
 3. Select your Power BI Premium subscription from the list.
 4. In the **More actions** dropdown, select **Cancel subscription**.
    
-    ![](media/powerbi-admin-premium-purchase/o365-more-actions.png)
+    ![](media/service-admin-premium-purchase/o365-more-actions.png)
 5. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3). This page will also let you know when the data will be deleted for the subscription.
 6. Read through the information, and if you want to proceed, select **Cancel subscription**.
 

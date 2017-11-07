@@ -117,7 +117,7 @@ Free users can consume content that is embedded from an app workspace (group), i
 | P3 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
 > [!NOTE]
-> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
 > 
 > 
 
@@ -148,7 +148,7 @@ Global Admins, or Power BI service administrators, can turn the ability to use t
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](service-premium.md)  
-[How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
+[How to purchase Power BI Premium](service-admin-premium-purchase.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

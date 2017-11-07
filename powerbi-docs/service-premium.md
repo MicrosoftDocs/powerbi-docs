@@ -83,7 +83,7 @@ Power BI Premium includes the right to run Power BI Report Server on-premises. F
 ## Next steps
 [Power BI Premium FAQ](service-premium-faq.md)  
 [Power BI Premium release notes](service-premium-release-notes.md)  
-[How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
+[How to purchase Power BI Premium](service-admin-premium-purchase.md)  
 [Managing Power BI Premium](service-admin-premium-manage.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
