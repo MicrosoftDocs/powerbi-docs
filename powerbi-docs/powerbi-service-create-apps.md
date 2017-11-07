@@ -43,7 +43,7 @@ Now that you have an overview of apps, let’s talk about *app workspaces*, wher
 As an app creator you need a Power BI Pro license. For your app users, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](powerbi-premium.md) for details.
+* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## App workspaces
 *App workspaces* are the places where you create apps, so to create an app, you first need to create the app workspace. If you’ve ever worked in a group workspace in Power BI, then app workspaces will be familiar. They’re the evolution of group workspaces – staging areas and containers for the content in the app. 

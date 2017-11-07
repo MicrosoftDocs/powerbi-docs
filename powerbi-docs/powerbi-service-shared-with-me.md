@@ -27,7 +27,7 @@ ms.author: mihart
 
 When a colleague shares a dashboard with you, its title is added to your **Shared with me** list. The dashboard is only available from **Shared with me** and not available from a workspace or from **Apps**.
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](powerbi-premium.md) for details.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](service-premium.md) for details.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
@@ -52,7 +52,7 @@ The content in the **Shared with me** screen can be further filtered by content 
 
 ## Next steps
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

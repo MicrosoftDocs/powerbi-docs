@@ -45,7 +45,7 @@ By using this signup method you are creating a new organizational tenant and you
 
 ## See also
 [Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

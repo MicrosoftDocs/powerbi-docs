@@ -208,7 +208,7 @@ Power BI Report Server is available through Power BI Premium or as a benefit for
 Power BI Report Server is available to SQL Server customers with EE + SA licenses or for purchase through Power BI Premium. Power BI is a SaaS service, and Power BI Report Server will follow the same subscription-based delivery model.
 
 ## Next steps
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 [Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  

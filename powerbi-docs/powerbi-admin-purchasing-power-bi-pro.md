@@ -31,7 +31,7 @@ Power BI Pro is for those users publishing reports, sharing dashboards, collabor
 
 IT Admins have a few options to use Power BI Pro within your organization. You can purchase Power BI Pro through the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase as an organization.
 
-For more information about Power BI Premium, and how Power BI Pro fits into the Premium offering, see [Power BI Premium - what is it?](powerbi-premium.md).
+For more information about Power BI Premium, and how Power BI Pro fits into the Premium offering, see [Power BI Premium - what is it?](service-premium.md).
 
 ## Pricing
 For the latest pricing information of Power BI Pro and a table listing of included features, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
@@ -122,7 +122,7 @@ When you are in the service, you can verify that you have a Pro account by going
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
 [Extended Pro Trial activation](service-extended-pro-trial.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 

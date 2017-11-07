@@ -27,7 +27,7 @@ You can take advantage of Power BI Premium by assigning workspaces to a Premium 
 
 *Shared capacity* is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure quality of the experience for all users.
 
-[!INCLUDE [powerbi-premium-illustration](includes/powerbi-premium-illustration.md)]
+[!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -37,11 +37,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 |  | Shared capacity | Power BI Premium capacity |
 | --- | --- | --- |
 | **Refresh rate** |8/day |Not restricted |
-| **Isolation with dedicated hardware** |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
+| **Isolation with dedicated hardware** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 | **Enterprise Distribution to** ***all users*** | | |
-| Apps |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available")<sup>1</sup> |
-| Embedded API and controls |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available")<sup>2</sup> |
-| **Publish Power BI reports on-premises** |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
+| Apps |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
+| Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
+| **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
 *<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*

@@ -45,7 +45,7 @@ Here is a list of features supported by user type.
 | Analyze in Excel, analyze in Power BI Desktop |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
 
 ## Next steps
-If you are interested in learning more about Power BI Premium, see [Power BI Premium - what is it?](powerbi-premium.md).
+If you are interested in learning more about Power BI Premium, see [Power BI Premium - what is it?](service-premium.md).
 
 To get started with Power BI by signing up, see [Signing up for Power BI as an individual](powerbi-service-self-service-signup-for-power-bi.md).
 

@@ -183,7 +183,7 @@ If you need to white list IP addresses instead of the domains, you can download 
 [On-premises data gateway (personal mode) - the new version of the personal gateway](powerbi-gateway-personal-mode.md)
 
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-[Power BI Premium](powerbi-premium.md)
+[Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

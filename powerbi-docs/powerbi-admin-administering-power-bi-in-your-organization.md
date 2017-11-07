@@ -252,7 +252,7 @@ You might experience an increase in password reset requests. For information abo
 You can remove a user from your tenant via the standard process in the Office 365 admin center. However, if the user still has an active email address from your organization, they will be able to rejoin unless you block all users from joining.
 
 ### Is this free? Will I be charged for these licenses?
-The **Power BI (free)** licenses are for the free version of Power BI. If you're interested in additional capabilities, take a look at the [Power BI Pro version](powerbi-premium.md).
+The **Power BI (free)** licenses are for the free version of Power BI. If you're interested in additional capabilities, take a look at the [Power BI Pro version](service-premium.md).
 
 ### Where is my Power BI tenant located?
 To learn how to find where your Power BI tenant is located, also known as a data region, see [Where is my Power BI tenant located?](powerbi-admin-where-is-my-tenant-located.md)
@@ -270,7 +270,7 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Office 365 user account management](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
 [Office 365 group management](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  

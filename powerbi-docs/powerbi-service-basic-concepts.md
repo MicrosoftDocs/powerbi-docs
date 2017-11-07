@@ -72,7 +72,7 @@ If you're [part of an ***app workspace***](powerbi-service-collaborate-with-your
 Datasets can be refreshed, renamed, explored, used to create reports, and removed. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
 ### Dig deeper:
-* [Power BI Premium - what is it?](powerbi-premium.md)
+* [Power BI Premium - what is it?](service-premium.md)
 * [Get data for Power BI](powerbi-service-get-data.md)
 * [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
 
@@ -194,7 +194,7 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 ## Next steps
 [Get started with Power BI](powerbi-service-get-started.md)  
 [Power BI videos](powerbi-videos.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)
+[Power BI Premium - what is it?](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

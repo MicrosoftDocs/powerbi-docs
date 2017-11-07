@@ -27,7 +27,7 @@ Learn how to purchase Power BI Premium capacity for your organization.
 
 You can purchase a Power BI Premium capacity node through the Office 365 Admin center. You can also have any combination of Premium capacity SKUs (P1 through P3) within your organization. They provide different resource capabilities.
 
-For more information about what Power BI Premium is, see [Power BI Premium - what is it?](powerbi-premium.md). To see the current pricing for Power BI, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). You can also plan your costs for Power BI Premium by using the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
+For more information about what Power BI Premium is, see [Power BI Premium - what is it?](service-premium.md). To see the current pricing for Power BI, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). You can also plan your costs for Power BI Premium by using the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
 
 > [!IMPORTANT]
 > Authors of content will still need a Power BI Pro license, even if you purchase Power BI Premium.
@@ -56,7 +56,7 @@ To purchase a Premium capacity, you will need to do the following.
     ![](media/powerbi-admin-premium-purchase/premium-purchase.png)
 5. Follow the steps to complete the purchase.
 
-You can also select the following links to take you directly to the purchase pages of those items. For more information about these SKUs, see [Power BI Premium - what is it?](powerbi-premium.md#premiumskus).
+You can also select the following links to take you directly to the purchase pages of those items. For more information about these SKUs, see [Power BI Premium - what is it?](service-premium.md#premiumskus).
 
 In order to pucharse a Power BI Premium SKU, ***you must be a Global or Billing admin*** within your tenant. Selecting the links below will produce an error if you are not an admin.
 
@@ -112,7 +112,7 @@ You can cancel your subscription from within the Office 365 admin center. To can
 ## Next steps
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)  
 [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 [Manage Power BI Premium](powerbi-admin-premium-manage.md)  
 [Power BI Premium FAQ](powerbi-premium-faq.md)  
 [Power BI Premium release notes](powerbi-premium-release-notes.md)  

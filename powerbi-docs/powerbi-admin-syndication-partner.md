@@ -69,7 +69,7 @@ This video looks at Office 365 syndication and purchasing Power BI:
 
 ## Next steps
 [Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  
-[Power BI Premium - what is it?](powerbi-premium.md)
+[Power BI Premium - what is it?](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -34,7 +34,7 @@ Capacity is all transparent to your end users. They will continue to use Power B
 
 [!INCLUDE [powerbi-premium-illustration](includes/powerbi-premium-illustration.md)]
 
-For more information, see [What is Power BI Premium?](powerbi-premium.md).
+For more information, see [What is Power BI Premium?](service-premium.md).
 
 ## Purchase capacity
 To take advantage of dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center or create a Power BI Embedded resource within the Microsoft Azure portal. For more information, see the following:

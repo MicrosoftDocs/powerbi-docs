@@ -27,7 +27,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
-With a [Power BI Pro license](service-free-vs-pro.md), you can invite colleagues to view your dashboards by sharing links from the Power BI mobile apps. The people you share dashboards with need to be the same email domain as you and have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](powerbi-premium.md).
+With a [Power BI Pro license](service-free-vs-pro.md), you can invite colleagues to view your dashboards by sharing links from the Power BI mobile apps. The people you share dashboards with need to be the same email domain as you and have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](service-premium.md).
 
 From the Power BI mobile apps for iOS and Android, you can also [annotate and share a snapshot of a tile, report, or visual](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with anyone. 
 

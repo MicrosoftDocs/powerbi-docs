@@ -179,7 +179,7 @@ For additional troubleshooting information relating to the gateway, see [Trouble
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Power BI Premium](powerbi-premium.md)
+[Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
