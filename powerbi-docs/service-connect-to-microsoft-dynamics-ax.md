@@ -28,24 +28,24 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.po
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-ax/getdata.png)
+   ![](media/service-connect-to-microsoft-dynamics-ax/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-ax/services.PNG)
+   ![](media/service-connect-to-microsoft-dynamics-ax/services.png)
 3. Select one of the Dynamics AX content packs and choose **Get**.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-ax/mdax.PNG)
+   ![](media/service-connect-to-microsoft-dynamics-ax/mdax.png)
 4. Specify the URL of your Dynamics AX 7 environment. See details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-ax/params.png)
+   ![](media/service-connect-to-microsoft-dynamics-ax/params.png)
 5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Dynamics AX credentials.
    
-    ![](media/powerbi-content-pack-microsoft-dynamics-ax/creds.png)
+    ![](media/service-connect-to-microsoft-dynamics-ax/creds.png)
    
-    ![](media/powerbi-content-pack-microsoft-dynamics-ax/creds2.png)
+    ![](media/service-connect-to-microsoft-dynamics-ax/creds2.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-microsoft-dynamics-ax/dashboard.png)
+     ![](media/service-connect-to-microsoft-dynamics-ax/dashboard.png)
 
 **What Now?**
 
