@@ -28,19 +28,19 @@ Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/get
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-sparkpost/getdata.png)
+   ![](media/service-connect-to-sparkpost/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-sparkpost/services.PNG)
+   ![](media/service-connect-to-sparkpost/services.png)
 3. Select the **SparkPost** content pack and click **Get**. 
    
-   ![](media/powerbi-content-pack-sparkpost/sparkpost.png)
+   ![](media/service-connect-to-sparkpost/sparkpost.png)
 4. When prompted, provide your SparkPost API key and select Sign In. See details on [finding this parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-sparkpost/Creds.PNG)
+   ![](media/service-connect-to-sparkpost/creds.png)
 5. Your data will start to load, depending on the size of you account this may take some time. After Power BI imports the data, you’ll see the default dashboard, report, and dataset in the left navigation pane, populated with your email statistics for the past 90 days. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-content-pack-sparkpost/dashboard.PNG)
+   ![](media/service-connect-to-sparkpost/dashboard.png)
 
 **What Now?**
 
@@ -57,5 +57,5 @@ The SparkPost content pack for Power BI includes information including unique cl
 ## Finding parameters
 The content pack uses an API key to connect your SparkPost account to Power BI. You can find your API key in your account under Account \> API & SMTP (more details [here](https://support.sparkpost.com/customer/portal/articles/1933377-create-api-keys)). We suggest using an API key with permissions for `Message Events: Read-only `and `Metrics: Read-only`
 
-![](media/powerbi-content-pack-sparkpost/SparkPost1.png)
+![](media/service-connect-to-sparkpost/sparkpost1.png)
 
