@@ -23,7 +23,7 @@ ms.author: davidi
 # Guidance for deploying a data gateway for Power BI
 This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **On-premises data gateway** setup.
 
-![](media/powerbi-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
+![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
 For more about **On-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
@@ -65,7 +65,7 @@ The requirements for a machine on which you install an **On-premises data gatewa
 ### Location
 The location of the gateway installation can have significant impact on your query performance, so try to make sure your gateway, data source locations, and the Power BI tenant are as close as possible to each other to minimize network latency. To determine your Power BI tenant location, in the Power BI service select the **?** icon in the upper-right corner, and then select **About Power BI**.
 
-![](media/powerbi-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
+![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
 ### Monitoring gateways
 There are a few tools that you can use to monitor the use and performance of your installed gateways.
@@ -93,7 +93,7 @@ By default the gateway performs basic logging. If you're investigating gateway i
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. It's recommended that once you're done reviewing the logs, you disable **Additional logging**. It's not recommended to leave this setting enabled during normal gateway usage.
 
-![](media/powerbi-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_03.png)
+![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_03.png)
 
 #### Network configuration
 The gateway creates an outbound connection to the **Azure Service Bus**. The gateway communicates on the following outbound ports:
@@ -112,7 +112,7 @@ You can force the gateway to communicate with the **Azure Service Bus** by using
 
 To do so, in the gateway select **Network**, then turn the **Azure Service Bus connectivity mode** **On**.
 
-![](media/powerbi-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
 
 ### Additional guidance
 This section provides additional guidance for deploying and managing gateways.
@@ -132,7 +132,7 @@ After you sign in, select the **Migrate an existing gateway** option. Next, you 
 #### Administrators
 You can find a list of gateway administrators in the **Power BI service**. When signed into the **Power BI service, select **Settings** (the gear icon) >"Manage Gateways"-> Gateway UI.  
 
-![](media/powerbi-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
+![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
 
 From there, you can select a gateway and see the list of gateway administrators. The administrators listed can access, recover, and delete the gateway. They can also add and delete data sources in the gateway. To make sure all administrators in the organization have access to all gateways in their group, the following is recommended:
 
