@@ -33,7 +33,7 @@ These are the release notes for Power BI Premium, a dedicated capacity giving yo
 * You may see transient cases where you achieve more Direct Query/live connection queries per second than what is included in your capacity SKU. You shouldn't rely on throughput above what is included in your capacity SKU.
 
 ## Next steps
-[Power BI Premium FAQ](powerbi-premium-faq.md)  
+[Power BI Premium FAQ](service-premium-faq.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Managing Power BI Premium](powerbi-admin-premium-manage.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  

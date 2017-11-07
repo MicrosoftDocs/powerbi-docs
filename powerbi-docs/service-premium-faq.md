@@ -25,7 +25,7 @@ Browse a list of frequently asked questions and answers about the Power BI Premi
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-* Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
+* Or click the **Contact Me** icon ![](media/service-premium-faq/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 
 ## Power BI Premium
 **What is Power BI Premium?**  

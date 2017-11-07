@@ -35,7 +35,7 @@ Power BI provides all sorts of features to help you get started exploring data i
 Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. Read about pricing at [Power BI pricing](https://powerbi.microsoft.com/pricing).
 
 ## What if I have questions about Power BI Premium?
-For questions related to Power BI Premium, see [Power BI Premium FAQ](powerbi-premium-faq.md).
+For questions related to Power BI Premium, see [Power BI Premium FAQ](service-premium-faq.md).
 
 ## Are users who signed up after May 3, 2017 eligible for the Extended Pro Trial?
 Users who signed up to Power BI (free) on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.

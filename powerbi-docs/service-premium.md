@@ -81,7 +81,7 @@ Power BI Premium is available in node configurations with different v-core capac
 Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
 
 ## Next steps
-[Power BI Premium FAQ](powerbi-premium-faq.md)  
+[Power BI Premium FAQ](service-premium-faq.md)  
 [Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Managing Power BI Premium](powerbi-admin-premium-manage.md)  
