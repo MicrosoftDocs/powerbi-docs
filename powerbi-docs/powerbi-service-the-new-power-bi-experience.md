@@ -122,7 +122,7 @@ To learn more, see **App workspaces** (below) and [What are Power BI apps](servi
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-shared-new.png)
 
-To learn more, see [Shared with me](powerbi-service-shared-with-me.md)
+To learn more, see [Shared with me](service-shared-with-me.md)
 
 ## Working with workspaces
 Next in the left nav is *workspaces*. Workspaces can be thought of as *containers* for Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.

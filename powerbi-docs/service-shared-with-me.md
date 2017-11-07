@@ -23,7 +23,7 @@ ms.author: mihart
 ---
 # Display the Power BI dashboards that have been shared with me
 ## Shared with me
-![](media/powerbi-service-shared-with-me/power-bi-share-dash.png)
+![](media/service-shared-with-me/power-bi-share-dash.png)
 
 When a colleague shares a dashboard with you, its title is added to your **Shared with me** list. The dashboard is only available from **Shared with me** and not available from a workspace or from **Apps**.
 
@@ -35,8 +35,8 @@ You'll have many options for interacting with the dashboard and underlying repor
 
 ## Actions available from the **Shared with me** screen
 * Select the star icon to [Favorite a dashboard](service-dashboard-favorite.md).
-* [Remove a dashboard](service-delete.md)  ![](media/powerbi-service-new-dashboards/power-bi-delete-icon.png)
-* Some dashboards can be re-shared  ![](media/powerbi-service-shared-with-me/power-bi-share-icon-new.png)
+* [Remove a dashboard](service-delete.md)  ![](media/service-shared-with-me/power-bi-delete-icon.png)
+* Some dashboards can be re-shared  ![](media/service-shared-with-me/power-bi-share-icon-new.png)
 * Additionally, if your lists of dashboards gets long, [use the search field and sorting to find what you need](service-navigation-search-filter-sort.md).
   
   > [!NOTE]
@@ -48,7 +48,7 @@ You'll have many options for interacting with the dashboard and underlying repor
 ## Filter shared dashboards by owner
 The content in the **Shared with me** screen can be further filtered by content owner. For example, if I select **Amanda**, I see only the dashboard that Amanda has shared with me.
 
-![](media/powerbi-service-shared-with-me/power-bi-owner.png)
+![](media/service-shared-with-me/power-bi-owner.png)
 
 ## Next steps
 [Power BI - Basic Concepts](service-basic-concepts.md)  
