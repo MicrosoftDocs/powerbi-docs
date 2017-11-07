@@ -53,5 +53,5 @@ On the **Office 365 My apps** site, here's how to revoke third party permissions
 2. On the **My apps** page, locate the third party app.
 3. Hover over the app tile, click the **(...)** button, and click **Remove**.
    
-   ![](media/powerbi-service-power-bi-get-started-third-party-apps/remove.png)
+   ![](media/service-power-bi-get-started-third-party-apps/remove.png)
 
