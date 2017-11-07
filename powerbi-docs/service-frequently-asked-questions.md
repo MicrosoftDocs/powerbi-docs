@@ -98,7 +98,7 @@ Read more about [getting data](service-get-data.md) in Power BI.
 ## What are content packs?
 [Content packs for services](service-connect-to-services.md) are pre-built solutions for popular services as part of the Power BI experience. A subscriber to a supported service can quickly connect to their account from Power BI and see their data through live dashboards and interactive reports that have been pre-built for them.  We’ve released content packs for popular services such as Salesforce.com, Marketo, and Adobe Analytics. Read more about [connecting to services with content packs](service-connect-to-services.md).
 
-[Organizational content packs](powerbi-service-organizational-content-packs-introduction.md) provide users, BI professionals, and system integrators the tools to build their own content packs to share purpose-built dashboards, reports, and datasets within their organization.
+[Organizational content packs](service-organizational-content-pack-introduction.md) provide users, BI professionals, and system integrators the tools to build their own content packs to share purpose-built dashboards, reports, and datasets within their organization.
 
 ## What do I need to install in order to use Power BI?
 To use the Power BI service for free, you just need a Web browser and email.

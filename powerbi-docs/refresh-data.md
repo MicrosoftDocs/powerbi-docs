@@ -155,7 +155,7 @@ There are two types of content packs in Power BI:
 ### Organizational content packs
 Refresh capabilities for a dataset included within an organization content pack depends on the dataset. See information above in relation to local files, OneDrive or SharePoint Online.
 
-To learn more, see [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md).
+To learn more, see [Introduction to organizational content packs](service-organizational-content-pack-introduction.md).
 
 ## Live connections and DirectQuery to on-premises data sources
 With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
@@ -256,7 +256,7 @@ In this scenario, you cannot setup refresh for the dataset. The data analyst who
 
 If your dashboards and reports from the content pack aren’t updating, you’ll want to talk to the data analyst who created the content pack.
 
-To learn more, see [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md), [Work with organizational content packs](powerbi-service-organizational-content-packs-use-and-work-with.md).
+To learn more, see [Introduction to organizational content packs](service-organizational-content-pack-introduction.md), [Work with organizational content packs](powerbi-service-organizational-content-packs-use-and-work-with.md).
 
 ### Content pack from an online service provider like Salesforce
 In Power BI you used Get Data to connect to and import your data from an online service provider like Salesforce. Well, not much to do here. Your Salesforce data set is automatically scheduled to refresh once a day. 

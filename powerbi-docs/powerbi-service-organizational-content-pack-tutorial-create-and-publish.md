@@ -91,7 +91,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 7. They select **Connect**, and now they can [view and work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ## See also
-* [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+* [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
 * [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
 * [Create a group in Power BI](service-create-distribute-apps.md)  
 * [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)

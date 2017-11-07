@@ -49,7 +49,7 @@ Content packs contain all of the data and reports you need already prepared for 
 
 **Services** – There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](service-connect-to-services.md).
 
-**Organizational** – If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md).
+**Organizational** – If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
 
 ## Databases
 ![](media/service-get-data/pbi_getdata_databases.png)

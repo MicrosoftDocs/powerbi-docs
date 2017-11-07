@@ -49,7 +49,7 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
    ![](media/powerbi-service-delete/power-bi-delete-report.png)
    
    > [!NOTE]
-   > If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](service-organizational-content-pack-disconnect.md).
+   > If the report is part of a [content pack](service-organizational-content-pack-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](service-organizational-content-pack-disconnect.md).
    > 
    > 
 

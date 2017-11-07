@@ -52,7 +52,7 @@ If the content pack owner changes the content pack, and:
 * **You have made a copy** Your copy won't be updated. 
 
 ## Next steps
-* [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+* [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

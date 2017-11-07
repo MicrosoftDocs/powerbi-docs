@@ -26,7 +26,7 @@ ms.author: maggies
 > 
 > 
 
-You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
+You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
@@ -89,7 +89,7 @@ You can only delete a content pack from AppSource if you created it.
    * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the Navigation pane.   
 
 ## Next steps
-* [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
+* [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

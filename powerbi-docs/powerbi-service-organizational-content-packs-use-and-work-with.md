@@ -53,7 +53,7 @@ When the content pack is created, the refresh settings are inherited with the da
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ## See also
-* [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
+* [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create a group in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
