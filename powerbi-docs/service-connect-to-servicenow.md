@@ -28,22 +28,22 @@ Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powe
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-servicenow/PBI_GetData.png) 
+   ![](media/service-connect-to-servicenow/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-servicenow/PBI_GetServices.png) 
+   ![](media/service-connect-to-servicenow/pbi_getservices.png) 
 3. Select **ServiceNow Incidents** \> **Get**.
    
-   ![](media/powerbi-content-pack-servicenow/connect.png)
+   ![](media/service-connect-to-servicenow/connect.png)
 4. Provide the URL of your ServiceNow instance and the range of days/records to bring in. Note as soon as one limit is hit the import will stop.
    
-   ![](media/powerbi-content-pack-servicenow/params.png)
+   ![](media/service-connect-to-servicenow/params.png)
 5. When prompted, enter your ServiceNow **Basic** credentials. Note single sign on is not supported today, more details on the system requirements below.
    
-   ![](media/powerbi-content-pack-servicenow/creds.png)
+   ![](media/service-connect-to-servicenow/creds.png)
 6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-    ![](media/powerbi-content-pack-servicenow/dashboard.png)
+    ![](media/service-connect-to-servicenow/dashboard.png)
 
 **What Now?**
 
