@@ -25,7 +25,7 @@ The IT Spend Analysis [content pack](service-organizational-content-pack-introdu
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<http://obvience.com/>) that has been anonymized.
 
-* [get the IT Spend Analysis content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
+* [get the IT Spend Analysis content pack](sample-tutorial-connect-to-the-samples.md)
 * [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ![](media/sample-it-spend/it1.png)

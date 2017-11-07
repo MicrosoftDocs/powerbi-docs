@@ -41,7 +41,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
 
 1. Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md), apply the filter, and save the report.
    
-   In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to show only values where **Territory** equals **NC**.
+   In this example we're filtering the [Retail Analysis sample](sample-tutorial-connect-to-the-samples.md) to show only values where **Territory** equals **NC**.
    
    ![Report filter pane](media/service-share-reports/power-bi-filter-report2.png)
 2. Add the following to the end of the report page URL:

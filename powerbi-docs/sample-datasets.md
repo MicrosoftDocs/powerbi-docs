@@ -195,7 +195,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 ## Next steps
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
 
-[Tutorial: Connect to the Power BI samples](powerbi-sample-tutorial-connect-to-the-samples.md)
+[Tutorial: Connect to the Power BI samples](sample-tutorial-connect-to-the-samples.md)
 
 [Data sources for Power BI](service-get-data.md)
 
