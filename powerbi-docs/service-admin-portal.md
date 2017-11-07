@@ -191,7 +191,7 @@ Users in the organization can use the ArcGIS Maps for Power BI (Preview) visuali
 
 ## R visuals settings
 ### Interact with an dshare R visuals
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](powerbi-service-r-visuals.md)
+Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
 
 > [!NOTE]
 > This settings applies to the entire organization and cannot be limited to specific groups.

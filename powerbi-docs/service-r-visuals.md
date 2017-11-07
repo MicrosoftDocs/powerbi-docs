@@ -29,11 +29,11 @@ The Power BI service supports viewing and interacting with visuals created with 
 
 The following image shows a Power BI dashboard with a collection of R visuals used for advanced analytics.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_1.png)
+![](media/service-r-visuals/r-visuals-service_1.png)
 
 R visuals are created in a [Power BI Desktop report](powerbi-desktop-get-the-desktop.md), like the report shown in the following image.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_2a.png)
+![](media/service-r-visuals/r-visuals-service_2a.png)
 
 Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](powerbi-desktop-r-visuals.md).
 
@@ -45,7 +45,7 @@ R visuals that are created in **Power BI Desktop**, and then published to the Po
 
 As you can see in the following image, R visuals in the Power BI service, either in dashboards or reports, largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_3a.png)
+![](media/service-r-visuals/r-visuals-service_3a.png)
 
 ## R scripts security
 R visuals are created from R scripts, which could potentially contain code with security or privacy risks.
@@ -59,11 +59,11 @@ This *sandbox* approach imposes some restrictions on the R scripts running in th
 ## R scripts error experience
 When an R script encounters an error, the R visual is not plotted and an error message is displayed. For details on the error, select **See details** from the R visual error on the canvas, as shown in the following image.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_4.png)
+![](media/service-r-visuals/r-visuals-service_4.png)
 
 As another example, the following image shows the error message that appears when an R script failed to run properly due to a missing R package in Azure.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_5.png)
+![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## Licensing
 R visuals require a [Power BI Pro](service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](service-premium.md)
@@ -72,7 +72,7 @@ Free users of Power BI can only consume tiles shared with them. See [purchasing 
 
 The following table describes R visuals capabilities based on licensing.
 
-![](media/powerbi-service-r-visuals/r-visuals-service_6a.png)
+![](media/service-r-visuals/r-visuals-service_6a.png)
 
 ## Known Limitations
 R visuals in the Power BI service have a few limitations:
