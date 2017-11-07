@@ -28,28 +28,28 @@ Connect to [Google Analytics](https://app.powerbi.com/getdata/services/google-an
 You can create customized dashboards and reports by starting from the [Google Analytics connector](service-google-analytics-connector.md) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports, which you can publish to the Power BI service.
 
 ## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Google Analytics** \> **Get**.
    
-   ![](media/powerbi-content-pack-google-analytics/ga.png)
+   ![](media/service-connect-to-google-analytics/ga.png)
 2. When prompted, enter your Google Analytics credentials. Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Google authentication flow, which may include 2-factor authentication if you have it configured.
    
-   ![](media/powerbi-content-pack-google-analytics/creds.png)
+   ![](media/service-connect-to-google-analytics/creds.png)
 3. Click **Accept** to allow Power BI to access your Google Analytics data.
    
-   ![](media/powerbi-content-pack-google-analytics/googleanalytics.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics.png)
 4. Power BI connects to a specific Google Analytics View. Select the account name, property name and view name you’d like to connect to. This information can be found in your Google Analytics account, either in the top left or on the **Home** tab. See details below. 
    
-   ![](media/powerbi-content-pack-google-analytics/params2.png)
+   ![](media/service-connect-to-google-analytics/params2.png)
 5. Click **Connect** to begin the import process. 
 
 ## View the Google Analytics dashboard and reports
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-open-app.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
+      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-what-now.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
 ## System requirements
 To connect from Power BI, you need to have a [Google Analytics](https://www.google.com/analytics/) account. Other Google accounts that do not have a Google Analytics account connected to it will see an authentication error.
@@ -65,7 +65,7 @@ Unique names are currently required for the parameters. If you see an error indi
 
 Note: Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
 
-![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
+![](media/service-connect-to-google-analytics/pbi_googleanalytics1.png)
 
 Still having issues? Open a support ticket to reach the Power BI team:
 
