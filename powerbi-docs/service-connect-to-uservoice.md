@@ -30,26 +30,26 @@ Note: An admin account is required to connect to the Power BI content pack. The 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-uservoice/PBI_GetData.png)
+   ![](media/service-connect-to-uservoice/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-uservoice/PBI_GetServices.png) 
+   ![](media/service-connect-to-uservoice/pbi_getservices.png) 
 3. Select **UserVoice**, then select **Get**.
    
-   ![](media/powerbi-content-pack-uservoice/uservoice.png)
+   ![](media/service-connect-to-uservoice/uservoice.png)
 4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name.
    
    **Note:** There is no trailing slash at the end and the connection is in http**s**.
    
-   ![](media/powerbi-content-pack-uservoice/Capture.PNG)
+   ![](media/service-connect-to-uservoice/capture.png)
 5. When prompted, enter your UserVoice credentials and follow the UserVoice authentication process. If you are already signed in to UserVoice in your browser, you may not be prompted for credentials. Grant the Power BI application access to your data by clicking "Allow Access".
    
    **Note:** You need admin credentials for your UserVoice account.
    
-   ![](media/powerbi-content-pack-uservoice/Capture3.PNG)
+   ![](media/service-connect-to-uservoice/capture3.png)
 6. Power BI will retrieve your UserVoice data and create a ready-to-use dashboard and report for you. Power BI will retrieve the following data: all your suggestions, all your open tickets, all tickets created in the last 30 days including closed ones and all the user satisfaction ratings.
    
-   ![](media/powerbi-content-pack-uservoice/Capture4.png)
+   ![](media/service-connect-to-uservoice/capture4.png)
 
 **What Now?**
 
