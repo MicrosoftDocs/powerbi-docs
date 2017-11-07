@@ -96,7 +96,7 @@ For more information, see [Tutorial: KPIs in Power BI](powerbi-service-tutorial-
 
 **Tip**: are used to associate both categorical and quantitative information with spatial locations.
 
-For more information, see [Tips and tricks for map visuals](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+For more information, see [Tips and tricks for map visuals](power-bi-map-tips-and-tricks.md).
 
 ### Maps: ArcGIS maps
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)

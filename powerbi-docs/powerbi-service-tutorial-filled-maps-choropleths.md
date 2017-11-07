@@ -29,7 +29,7 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 ## What is sent to Bing
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, the data in the **Location**, **Latitude**, and **Longitude** buckets (that is being used to create that visualization) is sent to Bing.
 
-For more information about the data being sent to Bing, and for tips to increase your geo-coding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+For more information about the data being sent to Bing, and for tips to increase your geo-coding success, see [Tips and tricks for map visualizations](power-bi-map-tips-and-tricks.md).
 
 ## When to use a filled map
 Filled maps are a great choice:
@@ -98,7 +98,7 @@ If you have permissions to edit the dataset in Power BI Desktop, watch this vide
 
 If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
-For more help with Map visualizations, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+For more help with Map visualizations, see [Tips and tricks for map visualizations](power-bi-map-tips-and-tricks.md).
 
 ## Next steps
 [Add the filled map as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md)    
