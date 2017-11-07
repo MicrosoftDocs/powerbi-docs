@@ -34,7 +34,7 @@ Sometimes you may want these emails delivered to an alternate email address rath
    > 
    > 
    
-   ![](media/powerbi-admin-alternate-email-address-for-power-bi/contact-details.png)
+   ![](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 3. In the Alternate email field, enter the email address you would like Power BI updates to be sent to.
 
 > [!NOTE]
