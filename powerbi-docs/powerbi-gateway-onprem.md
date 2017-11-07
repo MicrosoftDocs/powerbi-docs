@@ -94,7 +94,7 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 ## See also
 [Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)  
