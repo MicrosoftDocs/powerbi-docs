@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Data alerts in Power BI service
-Set alerts to notify you when data in your dashboards changes beyond limits you set. Alerts can only be set up on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md).
+Set alerts to notify you when data in your dashboards changes beyond limits you set. Alerts can only be set up on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](service-flow-integration.md).
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -102,7 +102,7 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 * Alerts will only work on streaming datasets if you build a KPI/card/gauge report visual and then pin that visual to the dashboard.
 
 ## Next steps
-[Create a Microsoft Flow that includes a data alert](powerbi-service-flow-integration.md)    
+[Create a Microsoft Flow that includes a data alert](service-flow-integration.md)    
 [Set data alerts on your mobile device](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)    
 [Get started with Power BI](powerbi-service-get-started.md)    
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
