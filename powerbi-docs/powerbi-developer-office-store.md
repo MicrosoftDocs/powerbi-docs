@@ -23,7 +23,7 @@ ms.author: asaxton
 # Publish custom visuals to the Office store
 Learn how you can publish your custom visual to the Office store for others to discover and use.
 
-Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md).
+Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md).
 
 ![](media/powerbi-developer-office-store/powerbi-custom-visual-store.png)
 
@@ -129,7 +129,7 @@ After submission, you will be able to view the submission status in the [app das
 Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](powerbi-custom-visuals-certified.md).
 
 ## Next steps
-[Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)  
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  

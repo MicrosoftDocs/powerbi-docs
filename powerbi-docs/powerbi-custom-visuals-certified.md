@@ -25,7 +25,7 @@ ms.author: mihart
 ## What is meant by *certified*?
 A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](powerbi-service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
 
-* Are you a Web developer and interested in creating your own visualizations and adding them to the Store? See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](powerbi-custom-visuals-office-store.md) to learn how.
+* Are you a Web developer and interested in creating your own visualizations and adding them to the Store? See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](powerbi-custom-visuals-office-store.md) to learn how.
 * Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s **Learn more** page and listed as **Provider**.
 
 ## Certification requirements
@@ -101,7 +101,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 
 ## Next steps
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
-[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)      
+[Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)      
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  

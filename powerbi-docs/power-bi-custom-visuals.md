@@ -27,7 +27,7 @@ The custom visuals in the Office store fall into 2 categories: **Office store ap
 
 To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](powerbi-custom-visuals-certified.md).
 
-* Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
+* Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 * Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s details page, listed as **Provider**.
 
 ## Next steps
@@ -35,7 +35,7 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 * [Add a custom visualization to your report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
 * [Add a custom visualization to your report (Power BI Desktop)](powerbi-custom-visuals-use.md)
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-* [Get started with Developer Tools for creating custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md)
+* [Get started with Developer Tools for creating custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)
 * [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 * [Submit a custom visual for certification](powerbi-custom-visuals-certified.md)
 

@@ -102,20 +102,20 @@ To *add* a certificate, run the following command.
 
 1. Select **Install Certificate...**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Select **Current User** and then select **Next**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Select **Place all certificate in the following store** and select **Browse...**.
 4. Select **Trusted Root Certification Authorities** and then select **OK**. Select **Next**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Select **Finish**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Select **Yes** on the security warning dialog.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Close any browsers that you have open.
 
 > [!NOTE]
@@ -127,13 +127,13 @@ To *add* a certificate, run the following command.
 
 1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Select **Always Trust** and close the window.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Enter your username and password. Select **Update Settings**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Close any browsers that you have open.
 
 > [!NOTE]
@@ -147,13 +147,13 @@ To enable a live preview of your custom visual, follow these steps. This allows 
 1. Browse and sign into [app.powerbi.com](https://app.powerbi.com).
 2. Select the **gear icon** and then select **Settings**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Select **Developer** and then select **Enable developer visual for testing**.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Select the **Developer Visual** in the **Visualization** pane.
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
    
    > [!NOTE]
    > This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Create a new visual](#create-a-new-visual) in this article.
@@ -190,7 +190,7 @@ You can run your visual by doing the following.
     pbiviz start
     ```
    
-    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
+    ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 If you are in the wrong location, you will see an error similar to the following.
 
@@ -216,11 +216,11 @@ To view your visual in a report, go to that report and select the visual within 
 > 
 > 
 
-![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 You will then see the starter template for the visual.
 
-![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-visual.png)
+![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-visual.png)
 
 | Toolbar item | Description |
 | --- | --- |
@@ -358,7 +358,7 @@ For more information, see [Install NodeJS and the Power BI tools](#install-nodej
 
 The debug visual looks like a prompt icon within the **Visualizations** tab.
 
-![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 If you don't see it, make sure you have enabled it within the Power BI settings. 
 
