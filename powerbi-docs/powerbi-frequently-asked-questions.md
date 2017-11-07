@@ -41,7 +41,7 @@ For questions related to Power BI Premium, see [Power BI Premium FAQ](service-pr
 Users who signed up to Power BI (free) on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.
 
 ## How do I find out who in my organization is eligible for the Extended Pro Trial?
-While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization. Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. For more information, see [Find Power BI users that have signed in](powerbi-admin-access-usage.md).
+While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization. Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
 
 > [!NOTE]
 > The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.

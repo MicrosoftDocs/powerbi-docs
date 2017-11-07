@@ -92,7 +92,7 @@ Users who signed up to Power BI Free on or after May 3, 2017 are not eligible fo
 
 **How do I find out who in my organization is eligible for the Extended Pro Trial?**
 
-While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization within the last 30 days. This may give you an idea of who may be eligible. For more information, see [Find Power BI users that have signed in](powerbi-admin-access-usage.md).
+While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization within the last 30 days. This may give you an idea of who may be eligible. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
 
 Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. 
 
@@ -109,7 +109,7 @@ No. Admins do not have a way to restrict users from activating the Extended Pro 
 [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium announcement](https://aka.ms/pbipremium-announcement)  
-[Find Power BI users that have signed in](powerbi-admin-access-usage.md)
+[Find Power BI users that have signed in](service-admin-access-usage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
