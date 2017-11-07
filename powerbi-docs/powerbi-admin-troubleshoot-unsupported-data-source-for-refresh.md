@@ -42,7 +42,7 @@ If you aren’t sure what data source was used, you can find that using the foll
 
 ## See Also
 [Data Refresh](powerbi-refresh-data.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
+[Power BI Gateway - Personal](personal-gateway.md)  
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  

@@ -136,14 +136,14 @@ If you’re logged in to Windows with an account with Administrator permissions,
 ### Sign in to data sources
 Once the Configuration Wizard finishes and your gateway is up and running, you’ll have to specify an Authentication type and sign in to each of your dataset’s data sources. You'll complete this step in Power BI.
 
-![](media/powerbi-personal-gateway/PG_Dataset_Settings_SignIn.png)
+![](media/personal-gateway/pg_dataset_settings_signin.png)
 
 You only need to specify an authentication type and sign in to a data source once. You sign in from the **Manage Data Sources** section in a dataset’s Settings screen. If you have multiple data sources, you’ll have to sign in to each one. The gateway determines a default Authentication type depending on the data source. In most cases, it’s Windows authentication; however, in some cases, your data source might require a different authentication type. If you’re unsure, check with your data source administrator.
 
 ## Up and running!
 When your gateway is up and running, you can click SCHEDULE REFRESH for a dataset where you’ll see your dataset’s Settings page.
 
-![](media/powerbi-personal-gateway/PG_AWIntSales_Settings.png)
+![](media/personal-gateway/pg_awintsales_settings.png)
 
 This page shows:
 
@@ -156,11 +156,11 @@ This page shows:
 ## Updating your Windows account password
 If you were logged into your computer with a Windows account with administrator privileges when you installed your gateway, it runs as a service using the Windows account you specified in the Configuration Wizard. Most often, this will be the same Windows account you log in to your computer with. When you change your Windows account password, you’ll also need to change it in the gateway, otherwise the service might not be running and refresh will fail. To change your Windows account password for the gateway, select the personal gateway icon on your Windows Desktop Taskbar, or in Apps.
 
-![](media/powerbi-personal-gateway/PG_ProgramIcon.png)
+![](media/personal-gateway/pg_programicon.png)
 
 From here, you can update your password and check your gateway's connection status.
 
-![](media/powerbi-personal-gateway/PG_Credentials.png)
+![](media/personal-gateway/pg_credentials.png)
 
 ## Ports
 The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports.
