@@ -28,36 +28,36 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 ## How to Connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-salesforce/PBI_GetData.png) 
+   ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-salesforce/PBI_GetServices.png) 
+   ![](media/service-connect-to-salesforce/pbi_getservices.png) 
 3. Click **Salesforce** and select **Get**.  
    
-   ![](media/powerbi-content-pack-salesforce/salesforce.png)
+   ![](media/service-connect-to-salesforce/salesforce.png)
 4. Select **Sign In** to initiate the login flow.
    
-    ![](media/powerbi-content-pack-salesforce/dialog.png)
+    ![](media/service-connect-to-salesforce/dialog.png)
 5. When prompted, enter your Salesforce credentials. Click **Allow** so Power BI can access your basic Salesforce information and data.
    
-   ![](media/powerbi-content-pack-salesforce/SF_authorize.png)
+   ![](media/service-connect-to-salesforce/sf_authorize.png)
 6. Configure what you'd like to import into Power BI using the dropdown option:
    
    * **Dashboard**
      
      Select a predefined dashboard based on a persona (such as **Sales Manager**). These dashboards bring in a specific set of standard data from Salesforce and will not include custom fields.
      
-     ![](media/powerbi-content-pack-salesforce/PBI_SalesforceChooseRole.png)
+     ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Reports**
      
      Select one or more custom reports from your Salesforce account. These reports will match your views in Salesforce and can include data from custom fields or objects.
      
-     ![](media/powerbi-content-pack-salesforce/PBI_SalesforceReports.png)
+     ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      If you don't see any reports, add or create them in your Salesforce account and try connecting again.
 7. Click **Connect** to begin the import process. During the import you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the navigation pane on the left.
    
-   ![](media/powerbi-content-pack-salesforce/PBI_GetDataSalesforceDash.png)
+   ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
 You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 

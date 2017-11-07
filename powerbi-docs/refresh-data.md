@@ -263,7 +263,7 @@ In Power BI you used Get Data to connect to and import your data from an online 
 
 Like most online service providers, Salesforce updates data once a day, usually at night. You can manually refresh your Salesforce dataset, or setup a refresh schedule, but it’s not necessary because Power BI will automatically refresh the dataset and your reports and dashboards will be updated too.
 
-To learn more, see [Salesforce content pack for Power BI](powerbi-content-pack-salesforce.md).
+To learn more, see [Salesforce content pack for Power BI](service-connect-to-salesforce.md).
 
 ## Troubleshooting
 When things go wrong, it’s usually because Power BI can’t sign into data sources, or the dataset connects to an on-premises data source and the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
