@@ -30,19 +30,19 @@ Note: To import your Planview Enterprise data into Power BI, you must be a Planv
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-planview/get.png)
+    ![](media/service-connect-to-planview/get.png)
 2. In the **Services** box, select **Get**.
    
-    ![](media/powerbi-content-pack-planview/services.png)
+    ![](media/service-connect-to-planview/services.png)
 3. On the Power BI page, select **Planview Enterprise**, then select **Get**:  
-    ![](media/powerbi-content-pack-planview/planview.png)
+    ![](media/service-connect-to-planview/planview.png)
 4. In the Planview Enterprise URL text box, enter the URL for the Planview Enterprise server you want to use. In the Planview Enterprise Database text box, enter the name of the Planview Enterprise database, then click Next.  
-    ![](media/powerbi-content-pack-planview/params.PNG)
+    ![](media/service-connect-to-planview/params.png)
 5. On the Authentication Method list, select **Basic** if it is not already selected. Enter the **Username** and **Password** for your account and select **Sign In**.  
-   ![](media/powerbi-content-pack-planview/creds.PNG)
+   ![](media/service-connect-to-planview/creds.png)
 6. On the left pane, select Planview Enterprise from the list of dashboards.  
      Power BI imports Planview Enterprise data into the dashboard. Note that the data may take some time to load.  
-    ![](media/powerbi-content-pack-planview/dashboard.PNG)
+    ![](media/service-connect-to-planview/dashboard.png)
 
 **What Now?**
 
