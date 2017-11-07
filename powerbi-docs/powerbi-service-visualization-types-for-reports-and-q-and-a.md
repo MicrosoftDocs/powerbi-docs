@@ -108,7 +108,7 @@ For more information, see [Tutorial: ArcGIS maps in Power BI](power-bi-visualiza
 
 **Tip**: The more intense the color, the larger the value.
 
-For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tutorial-filled-maps-choropleths.md).
+For more information, see [Tutorial: Filled Maps in Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
 ### Matrix
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/matrix.png)
