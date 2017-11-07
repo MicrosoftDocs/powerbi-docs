@@ -28,22 +28,22 @@ Connect to the [Microsoft Azure Consumption Insights content pack](https://app.p
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-azure-consumption-insights/getdata.png)
+    ![](media/service-connect-to-azure-consumption-insights/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-azure-consumption-insights/services.png)
+   ![](media/service-connect-to-azure-consumption-insights/services.png)
 3. Select **Microsoft Azure Consumption Insights** \> **Get**. 
    
-   ![](media/powerbi-content-pack-azure-consumption-insights/mazureconsumption.png)
+   ![](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
 4. Provide the number months of data you want to import and your Azure Enterprise enrollment number. See details on [finding these parameters](#FindingParams) below.
    
-    ![](media/powerbi-content-pack-azure-consumption-insights/azureconsumptionparams.png)
+    ![](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
 5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal. 
    
-    ![](media/powerbi-content-pack-azure-consumption-insights/msazureconsumptioncreds.png)
+    ![](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
 6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-   ![](media/powerbi-content-pack-azure-consumption-insights/msazureconsumptiondashboard.png)
+   ![](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
 
 **What Now?**
 
@@ -71,13 +71,13 @@ Power BI reporting is available for EA Direct, Partner and Indirect Customers wh
 
 * This is your Azure Enterprise enrollment number which can be found on the home screen of the [Azure Enterprise Portal](https://ea.azure.com/) under “Enrollment Detail”.
   
-    ![](media/powerbi-content-pack-azure-consumption-insights/params2.png)
+    ![](media/service-connect-to-azure-consumption-insights/params2.png)
 
 **Access Key**
 
 * Your key can be found in the Azure Enterprise portal, under "Download Usage" > "API Access Key"
   
-    ![](media/powerbi-content-pack-azure-consumption-insights/creds2.png)
+    ![](media/service-connect-to-azure-consumption-insights/creds2.png)
 
 **Additional Help**
 
