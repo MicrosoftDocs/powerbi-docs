@@ -27,7 +27,7 @@ If a workbook has been shared with you, you'll have the ability to view the tile
 
 For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks. Then follow the step-by-step instructions below the video to try it out yourself using the [Financial sample](powerbi-service-download-the-financial-sample-workbook.md).
+Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
 
@@ -37,7 +37,7 @@ When you choose **Connect**, your workbook will appear in Power BI just like it 
 You can’t edit your workbook in Power BI. But if you need to make some changes, you can select the pencil icon from the **Workbooks** tab of your workspace, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for Business.
-2. From Power BI, [connect to that workbook](powerbi-bring-in-whole-excel-files.md).
+2. From Power BI, [connect to that workbook](powerbi-service-excel-workbook-files.md).
 3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_workbookIcon.png) icon indicates this is an Excel workbook and a yellow asterisk indicates it's new.
    
     Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, select the pencil icon to open it in Excel Online. Changes to the workbook in Excel Online may take a few minutes to be updated in the tiles.     

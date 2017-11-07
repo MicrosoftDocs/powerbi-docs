@@ -32,7 +32,7 @@ Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the
 
 
 ## Customize visualization titles in reports
-To follow along, sign into app.powerbi and [open the Retail Analysis Sample](powerbi-sample-downloads.md) report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
+To follow along, sign into app.powerbi and [open the Retail Analysis Sample](powerbi-sample-datasets.md) report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
 > When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).

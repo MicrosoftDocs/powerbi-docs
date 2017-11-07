@@ -539,11 +539,11 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **July 24, 2015**
 
-* We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md). As part of the GA release, we are offering some great new features:
+* We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
-* [Power BI groups](powerbi-service-create-a-group-in-power-bi.md): groups offer a powerful collaborative experience built on Office 365 groups.
+* [Power BI groups](powerbi-service-create-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
-* [Bring in whole Excel files](powerbi-bring-in-whole-excel-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
+* [Bring in whole Excel files](powerbi-service-excel-workbook-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
 * [Bring in CSV files](powerbi-service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
 * Replace Excel, Power BI Desktop, and CSV files: you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
 * We’re excited to announce that this week’s update to Power BI now offers work item tracking in [the Visual Studio Online content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](powerbi-content-pack-quickbooks-online.md).
@@ -599,7 +599,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 7, 2015**
 
-* You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](powerbi-content-pack-visual-studio-online.md) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
+* You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](powerbi-content-pack-visual-studio.md) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
 * We updated our look to a new modern design, a look that is fresh and distinctive while keeping your focus on what matters: your data and your insights.
 
 **April 28, 2015**

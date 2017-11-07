@@ -34,7 +34,7 @@ When you display a report in presentation mode on Surface Hub, you can draw on t
 You can also [display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md) on the web.
 
 > [!NOTE]
-> Presentation mode is different from [focus mode for tiles](powerbi-mobile-tiles-in-the-win10phone-app.md).
+> Presentation mode is different from [focus mode for tiles](powerbi-mobile-tiles-in-the-iphone-app.md).
 > 
 > 
 

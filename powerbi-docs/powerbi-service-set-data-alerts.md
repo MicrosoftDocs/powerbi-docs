@@ -73,7 +73,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    > 
 
 ## Managing alerts
-There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the [Power BI mobile app on the iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) or in the [Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
+There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the [Power BI mobile app on the iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) or in the [Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-iphone-app.md).
 
 ### From the tile itself
 1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/powerbi-service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.

@@ -139,9 +139,9 @@ This article covered how to delete the major building blocks of Power BI service
 
 * [Remove your Featured dashboard](powerbi-service-featured-dashboards.md#change-the-featured-dashboard)
 * [Remove (unfavorite) a dashboard](powerbi-service-favorite-dashboards.md#unfavorite-a-dashboard)
-* [Delete a report page](powerbi-service-delete-a-page-from-a-report.md)
+* [Delete a report page](powerbi-service-delete.md)
 * [Delete a dashboard tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
-* [Delete a report visualization](powerbi-service-delete-a-visualization.md)
+* [Delete a report visualization](powerbi-service-delete.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/) 
 

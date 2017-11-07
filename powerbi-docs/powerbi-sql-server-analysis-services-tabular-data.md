@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # SQL Server Analysis Services live data in Power BI
-In Power BI, there are two ways you can connect to a live SQL Server Analysis Services server. In **Get data**, you can connect to a SQL Server Analysis Services server, or you can connect to a [Power BI Desktop file](powerbi-service-powerbi-desktop-files.md), or [Excel workbook](powerbi-service-excel-data.md), that already connects to an Analysis Services server.
+In Power BI, there are two ways you can connect to a live SQL Server Analysis Services server. In **Get data**, you can connect to a SQL Server Analysis Services server, or you can connect to a [Power BI Desktop file](powerbi-service-powerbi-desktop-files.md), or [Excel workbook](powerbi-service-excel-workbook-files.md), that already connects to an Analysis Services server.
 
  ![](media/powerbi-sql-server-analysis-services-tabular-data/importantIcon.png) **Important:**
 
