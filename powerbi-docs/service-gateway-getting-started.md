@@ -23,7 +23,7 @@ ms.author: davidi
 # Getting started with Power BI Gateways
 Welcome to the **Getting Started with Power BI Gateways** guide. This short walk-through gets you acquainted with what a gateway does, how it works, and how to get your own gateway installed, configured, and running.  
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_0a.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_0a.png)
 
 Gateways can be a technical subject, and since every network and enterprise is different, the complexity of gateways can be significant. To keep that complexity at bay, let’s start with the basics.
 
@@ -62,17 +62,17 @@ So let’s take the easy thing first, and walk through installing a gateway.
 ## Install the gateway
 To install a gateway, open the Power BI service (you can use this link to launch the Power BI service in your browser, and log on) and log in with your Power BI account. In the Power BI service, select the **download icon** in the upper right corner, as shown in the following image, and select **Data Gateway**.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_01.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_01.png)
 
 That takes you to a download page, where you click the **Download gateway** button to initiate the download.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_02.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_02.png)
 
 This screen gives you the ultra-condensed explanation of what a gateway does. It also provides a couple important **warnings** – when you install a gateway, it actually runs on the computer on which you perform the installation. And if that computer is turned off, so is the gateway (so it won’t work when it’s not running). Also, installing on a computer using a wireless network is not best, so you should use a computer connected to a wired network.
 
 When you’re ready, select **Next** to continue with the setup.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_03.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_03.png)
 
 Here’s where you decide which gateway you’ll install – on-premises gateway, or a personal gateway. In this guide, we’ll install the **On-premises data gateway**.
 
@@ -87,27 +87,27 @@ There are a few things to note at this decision point:
 
 When we select **Next**, the gateway installation begins. You need to specify where it will be installed, and the default location is usually best.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_06.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_06.png)
 
 The installation process goes quickly, and you’re provided with a status bar.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_06a.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_06a.png)
 
 Once you’re almost complete, you need to identify the account to use with the gateway. This should be the account (the username and password) you use to log on to Power BI; the gateway is associated with your Power BI account, and you configure gateways from within the Power BI service.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_07.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_07.png)
 
 You’ll be signed in, as shown in the following image.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_08.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_08.png)
 
 Once you’re signed in, you need to create a **Recovery key**. We’ll discuss those more in depth in another article, but for now, know that you’ll need it to recover or move your gateway.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_09.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_09.png)
 
 When all goes well, you’ll see a window that tells you that your gateway is ready.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_10.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_10.png)
 
 That’s it for the installation of an on-premises gateway. As promised, it was a pretty easy process. The next step, then, is to either **add users** or **add data sources** – you can do either first, and add either after your initial configuration.
 
@@ -116,19 +116,19 @@ The next section describes adding users to the gateway, and after that, we’ll 
 ## Add Users to a gateway
 Now that we have a gateway installed, we manage the gateway from the **Power BI service**. To get to the management screen for gateways, in the Power BI service select the Gear icon in the upper-right corner, then select **Manage gateways**.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_15.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_15.png)
 
 A page inside the Power BI service canvas appears, where you can manage your gateways. The **Gateway Settings** page looks like the following.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_12.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_12.png)
 
 If you tap or click on **Administrators**, you see the following administrators’ management page. Note that this is just which users can *administer* the gateway, and that users of the gateway are added (or removed) from each individual data source, using a different page – which we review in the next few paragraphs.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_13.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_13.png)
 
 Once you install and validate (successfully connect to) a data source, it shows up under its associated gateway in the left side of this **Manage gateways** screen, as shown in the following image. Notice that in the right pane, there are two sections you can toggle between: **Data Source Settings** and **Users**. The screen directly following is the **Data Source Settings** section.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_16.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_16.png)
 
 When we select **Users**, you get text box into which you can type users from your organization, whom you want to grant access to the selected data source. In the following screen, you can see that I’ve added Maggie and Adam.
 
@@ -136,11 +136,11 @@ When you begin typing an email address into the text box, Power BI shows a list 
 
 You can also add email groups (aliases) to allow groups of people access, as well as individuals.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_17.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_17.png)
 
 Once you select **Add**, the added members show up in the box, and you can add more if you want. Removing users is just as easy. Simply check the checkbox next to their name, and then select the **Remove** button below the box.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_18.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_18.png)
 
 And that’s all there is to it. Remember that you need to add users to each data source to which you want to grant access. Each data source has a separate list of users, and you must add users to each data source separately.
 
@@ -151,7 +151,7 @@ But before we send you off to another article, here’s a look at how you go abo
 
 When you do, the **Data Source Settings** panel appears in the right pane, as shown in the following image. There, you can name your data source (entered in the **Data Source Name** text box), and select its type from the **Data Source Type** drop-down list.
 
-![](media/powerbi-gateway-getting-started/gw_gettingstarted_14.png)
+![](media/service-gateway-getting-started/gw_gettingstarted_14.png)
 
 Okay, you now have a gateway installed, and you’re ready to add data sources. Great! See the resources in the following section for information about data sources, more details about using gateways, and other useful information.
 
