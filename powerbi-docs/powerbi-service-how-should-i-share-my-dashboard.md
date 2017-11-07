@@ -31,7 +31,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 * Publishing to the web, where anyone can see and interact with them.
 * Printing. 
 
-No matter which option you choose, to share a dashboard you need a [Power BI Pro license](powerbi-free-vs-pro.md), or the content needs to be in a [Premium capacity](powerbi-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
+No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-free-vs-pro.md), or the content needs to be in a [Premium capacity](powerbi-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
 ![Apps in the Power BI service](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 

@@ -25,7 +25,7 @@ Power BI app workspaces are great places to collaborate with your colleagues on 
 
 Collaboration doesn’t end with workspaces in Power BI. Office 365 offers other group services such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
-App workspaces are only available with [Power BI Pro](powerbi-free-vs-pro.md).
+App workspaces are only available with [Power BI Pro](service-free-vs-pro.md).
 
 ## Collaborate on Power BI Desktop files in your app workspace
 After you create a Power BI Desktop file, if you publish it to your Power BI app workspace, then everyone in your workspace can collaborate on it.

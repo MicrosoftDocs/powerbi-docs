@@ -32,17 +32,17 @@ Here is a list of features supported by user type.
 
 |  | Free | Pro |
 | --- | --- | --- |
-| **Connect to 70+ data sources** |![](media/powerbi-premium/available.png "Available") |![](media/powerbi-premium/available.png "Available") |
-| **Publish to Web** |![](media/powerbi-premium/available.png "Available") |![](media/powerbi-premium/available.png "Available") |
-| **Peer-to-peer sharing** |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
-| **Export to PowerPoint, Excel, CSV** |![](media/powerbi-premium/available.png "Available") |![](media/powerbi-premium/available.png "Available") |
+| **Connect to 70+ data sources** |![](media/service-free-vs-pro/available.png "Available") |![](media/service-free-vs-pro/available.png "Available") |
+| **Publish to Web** |![](media/service-free-vs-pro/available.png "Available") |![](media/service-free-vs-pro/available.png "Available") |
+| **Peer-to-peer sharing** |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
+| **Export to PowerPoint, Excel, CSV** |![](media/service-free-vs-pro/available.png "Available") |![](media/service-free-vs-pro/available.png "Available") |
 | **Enterprise distribution** | | |
-| Apps |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
-| Email subscriptions |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
-| Embed APIs and controls |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
+| Apps |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
+| Email subscriptions |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
+| Embed APIs and controls |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
 | **Collaboration** | | |
-| App workspaces |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
-| Analyze in Excel, analyze in Power BI Desktop |![](media/common/not-available.png "Not available") |![](media/powerbi-premium/available.png "Available") |
+| App workspaces |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
+| Analyze in Excel, analyze in Power BI Desktop |![](media/service-free-vs-pro/not-available.png "Not available") |![](media/service-free-vs-pro/available.png "Available") |
 
 ## Next steps
 If you are interested in learning more about Power BI Premium, see [Power BI Premium - what is it?](powerbi-premium.md).

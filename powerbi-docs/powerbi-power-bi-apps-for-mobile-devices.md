@@ -46,6 +46,6 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 Read more about [configuring Power BI mobile apps for Android and iOS with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
 ## Next steps
-* [Power BI free vs. Pro licenses](powerbi-free-vs-pro.md)
+* [Power BI free vs. Pro licenses](service-free-vs-pro.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

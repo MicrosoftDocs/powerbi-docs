@@ -27,7 +27,7 @@ Learn how to sign up for Power BI and begin using it for your personal report an
 
 Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
 
-This article will walk you through your options on how to sign up and begin using the Power BI service. For information on the differences between Power BI Free and Pro, see [Power BI Free vs Pro](powerbi-free-vs-pro.md).
+This article will walk you through your options on how to sign up and begin using the Power BI service. For information on the differences between Power BI Free and Pro, see [Power BI Free vs Pro](service-free-vs-pro.md).
 
 ## You have a few options
 As an individual you have several options to sign up and begin using Power BI. You can choose to sign up for free or you can purchase a Power BI Pro subscription. If you sign up for a free account, once you are in the service, you can opt into a free 60 day trial of Power BI Pro.
