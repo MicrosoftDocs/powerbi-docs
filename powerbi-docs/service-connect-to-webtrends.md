@@ -28,22 +28,22 @@ Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/ge
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-webtrends/getdata3.png)
+   ![](media/service-connect-to-webtrends/getdata3.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-webtrends/services.PNG)
+   ![](media/service-connect-to-webtrends/services.png)
 3. Select **Webtrends** \> **Get**.
    
-   ![](media/powerbi-content-pack-webtrends/webtrends.png)
+   ![](media/service-connect-to-webtrends/webtrends.png)
 4. The content pack connects to a specific Webtrends profile ID. See details on [finding this parameter](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-webtrends/parameters.PNG)
+   ![](media/service-connect-to-webtrends/parameters.png)
 5. Provide your Webtrends credentials to connect. Note that the username field expects your account and username. See [details](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-webtrends/creds.PNG)
+   ![](media/service-connect-to-webtrends/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-   ![](media/powerbi-content-pack-webtrends/dashboard.PNG)
+   ![](media/service-connect-to-webtrends/dashboard.png)
 
 **What Now?**
 
@@ -90,11 +90,11 @@ The content pack requires access to a Webtrends profile with the [correct set of
 ## Finding parameters
 Your Webtrends Profile ID can be found in the URL after you've selected a profile:
 
-![](media/powerbi-content-pack-webtrends/WebtrendsParameters.png)
+![](media/service-connect-to-webtrends/webtrendsparameters.png)
 
 Your credentials are the same as what you enter when you sign into Webtrends, however we expect your account and username in the same line, separated by a backslash:
 
-![](media/powerbi-content-pack-webtrends/WebtrendsCreds.PNG)
+![](media/service-connect-to-webtrends/webtrendscreds.png)
 
 ## Troubleshooting
 You may hit an issue while the content pack is loading, after you've provided your credentials. If you see the "Oops" message during the loading, please review the troubleshooting suggestions below. If you're still having issues please file a support ticket at https://support.powerbi.com
