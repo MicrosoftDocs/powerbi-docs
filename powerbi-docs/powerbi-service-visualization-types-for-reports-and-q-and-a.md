@@ -101,7 +101,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [Tutorial: ArcGIS maps in Power BI](/powerbi-service-tutorial-arcgis.md).
+For more information, see [Tutorial: ArcGIS maps in Power BI](power-bi-visualization-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)

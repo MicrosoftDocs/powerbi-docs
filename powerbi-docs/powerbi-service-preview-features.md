@@ -33,7 +33,7 @@ As we make improvements to Power BI, we'll release some new functionality as *pr
 ## Current previews available
 **ArcGIS Maps for Power BI preview**
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level.
-[Take a tour of ArcGIS maps by esri in Power BI service and Power BI Desktop](powerbi-service-tutorial-arcgis.md).
+[Take a tour of ArcGIS maps by esri in Power BI service and Power BI Desktop](power-bi-visualization-arcgis.md).
 
 ## Turn the ArcGIS preview feature on (and off)
 1. Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.

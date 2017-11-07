@@ -187,7 +187,7 @@ Users in the organization can use Excel to view and interact with on-premises Po
 > 
 
 ### User ArcGIS Maps for Power BI (Preview)
-Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](powerbi-service-tutorial-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
 
 ## R visuals settings
 ### Interact with an dshare R visuals
