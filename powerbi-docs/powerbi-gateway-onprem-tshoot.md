@@ -378,7 +378,7 @@ For additional information about troubleshooting refresh scenarios, take a look 
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
