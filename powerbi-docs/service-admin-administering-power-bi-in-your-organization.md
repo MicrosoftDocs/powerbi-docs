@@ -262,7 +262,7 @@ To learn how to find where your Power BI tenant is located, also known as a data
 To learn more about Power BI compliance, see the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
 
 ### How does security work in Power BI?
-Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](powerbi-admin-power-bi-security.md). 
+Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](service-admin-power-bi-security.md). 
 
 ## Next steps
 [Power BI admin portal](service-admin-portal.md)  

@@ -140,7 +140,7 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
 
 ## Where can I learn more about security?
-Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=829185) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
+Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=829185) whitepaper and our [Power BI security support article](service-admin-power-bi-security.md).
 
 ## What has happened to the Power BI for Office 365 experience?
 The Power BI for Office 365 experience has been deprecated.
