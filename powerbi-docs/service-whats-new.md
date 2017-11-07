@@ -518,7 +518,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **August 25, 2015**
 
-* Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](powerbi-content-pack-adobe-analytics.md).
+* Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](service-connect-to-adobe-analytics.md).
 
 **August 18, 2015**
 

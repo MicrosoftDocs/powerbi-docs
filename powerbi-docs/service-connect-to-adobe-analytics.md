@@ -26,30 +26,30 @@ Connecting to Adobe Analytics through Power BI starts by connecting to your Adob
 Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI.
 
 ## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Adobe Analytics** \>  **Get**.
    
-   ![](media/powerbi-content-pack-adobe-analytics/adobe.png)
+   ![](media/service-connect-to-adobe-analytics/adobe.png)
 2. Power BI connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-adobe-analytics/parameters.PNG)
+   ![](media/service-connect-to-adobe-analytics/parameters.png)
 3. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Adobe Analytics credentials. 
    
-    ![](media/powerbi-content-pack-adobe-analytics/Creds.PNG)
+    ![](media/service-connect-to-adobe-analytics/creds.png)
    
-    ![](media/powerbi-content-pack-adobe-analytics/adobe_signin.PNG)
+    ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
 4. Click **Accept** to allow Power BI to access your Adobe Analytics data.
    
-   ![](media/powerbi-content-pack-adobe-analytics/adobe_authorize.PNG)
+   ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
 5. After you approve, the import process begins automatically. 
 
 ## View the Adobe Analytics dashboard and reports
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-open-app.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
+      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
 
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-what-now.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 Power BI uses the Adobe Analytics Report API to define and run reports for the following tables:
@@ -81,7 +81,7 @@ Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.h
 
 The Company value can be found in the top right of your account once you're signed in. The value is case and spacing sensitive. Enter it exactly as you see in your account.
 
-![](media/powerbi-content-pack-adobe-analytics/adobe_companies.PNG)
+![](media/service-connect-to-adobe-analytics/adobe_companies.png)
 
 **Report Suite ID**
 
@@ -89,7 +89,7 @@ The Suite ID is created when the Report Suite is created. You can contact your a
 
 From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
-![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
+![](media/service-connect-to-adobe-analytics/reportsuiteid.png)
 
 ## Troubleshooting
 If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
