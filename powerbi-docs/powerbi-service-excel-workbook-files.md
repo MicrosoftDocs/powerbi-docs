@@ -124,7 +124,7 @@ Using the **Publish to Power BI** feature in Excel 2016 is effectively the same 
 **Schedule refresh** - If your Excel workbook file connects to external data sources, or you imported from a local drive, you can setup scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](powerbi-refresh-data.md) to learn more.
 
 ## Troubleshooting
-Workbook file too big? Check out [Reduce the size of an Excel workbook to view it in Power BI](powerbi-reduce-the-size-of-an-excel-workbook.md).
+Workbook file too big? Check out [Reduce the size of an Excel workbook to view it in Power BI](reduce-the-size-of-an-excel-workbook.md).
 
 Currently, when you choose Import, Power BI only imports data that is part of a named table or a data model. As a result, if the workbook contains no named tables, Power View sheets, or Excel data models, you might see this error: **"We couldn't find any data in your Excel workbook"**. [This article](powerbi-admin-troubleshoot-excel-workbook-data.md) explains how to fix your workbook and re-import it.
 
