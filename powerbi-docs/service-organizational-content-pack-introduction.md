@@ -79,7 +79,7 @@ The lifecycle looks something like this:
 All distribution group members have the same permissions to the data as the content pack creator. The one exception to this is SQL Server Analysis Services (SSAS) on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual distribution group member are used to determine the data he or she can access.
 
 ## Next steps
-* [Create and publish an organizational content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md)
+* [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
