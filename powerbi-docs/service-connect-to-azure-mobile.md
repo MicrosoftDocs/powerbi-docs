@@ -28,22 +28,22 @@ Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/gr
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-azure-mobile/getdata.png)
+    ![](media/service-connect-to-azure-mobile/getdata.png)
 2. In the **Services** box, select **Get**.
    
-    ![](media/powerbi-content-pack-azure-mobile/Services.PNG)
+    ![](media/service-connect-to-azure-mobile/services.png)
 3. Select **Azure Mobile Engagement** \> **Get**.
    
-    ![](media/powerbi-content-pack-azure-mobile/azme.png) 
+    ![](media/service-connect-to-azure-mobile/azme.png) 
 4. Specify your App Collection and App Name. This information can be found in your Azure Mobile Engagement account.
    
-    ![](media/powerbi-content-pack-azure-mobile/Parameters.PNG) 
+    ![](media/service-connect-to-azure-mobile/parameters.png) 
 5. For Authentication Method, provide your Key then click Sign In.
    
-    ![](media/powerbi-content-pack-azure-mobile/Creds.PNG)
+    ![](media/service-connect-to-azure-mobile/creds.png)
 6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected:
    
-    ![](media/powerbi-content-pack-azure-mobile/Dashboard.png)
+    ![](media/service-connect-to-azure-mobile/dashboard.png)
 
  **What Now?**
 
