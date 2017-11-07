@@ -120,7 +120,7 @@ The Power BI service administrator role does not provide access to the following
 [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
 [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

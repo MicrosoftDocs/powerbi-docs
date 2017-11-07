@@ -35,7 +35,7 @@ For more information, see [Power BI admin portal](powerbi-admin-portal.md).
 
 [Getting started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)
 
 [Power BI Documentation](powerbi-landing-page.md)
 

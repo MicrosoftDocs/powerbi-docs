@@ -233,7 +233,7 @@ For more information about to manage Premium settings, see [Manage Power BI Prem
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
 [Manage Power BI Premium](powerbi-admin-premium-manage.md)  
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

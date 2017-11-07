@@ -37,7 +37,7 @@ These are the release notes for Power BI Premium, a dedicated capacity giving yo
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Managing Power BI Premium](powerbi-admin-premium-manage.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-[Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+[Administering Power BI in your organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

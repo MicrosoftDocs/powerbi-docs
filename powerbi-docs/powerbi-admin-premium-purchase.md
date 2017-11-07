@@ -119,7 +119,7 @@ You can cancel your subscription from within the Office 365 admin center. To can
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Power BI admin portal](powerbi-admin-portal.md)  
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
