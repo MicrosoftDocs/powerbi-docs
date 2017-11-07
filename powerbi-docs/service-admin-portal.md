@@ -129,7 +129,7 @@ Users in the organization can share dashboards with users outside the organizati
 ![](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### Publish to web
-Users in the organization can publish reports to the web. [Learn more](powerbi-service-publish-to-web.md)
+Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md)
 
 ![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 

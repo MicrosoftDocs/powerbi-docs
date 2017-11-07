@@ -45,19 +45,19 @@ The following steps describe how to use **Publish to web**.
 
 1. On a report in your workspace that you can edit, select **File  > Publish to web**.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web1.png)
+   ![](media/service-publish-to-web/publish_to_web1.png)
 2. Review the content on the dialog, and select **Create embed code** as shown in the following dialog.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web2_GA.PNG)
+   ![](media/service-publish-to-web/publish_to_web2_ga.png)
 3. Review the warning, shown in the following dialog, and confirm that the data is okay to embed in a public website. If so, select **Publish**.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web3_GA.PNG)
+   ![](media/service-publish-to-web/publish_to_web3_ga.png)
 4. A dialog appears that provides a link that can be sent in email, embedded in code (such as an iFrame), or that you can paste directly into your web page or blog.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web4.png)
+   ![](media/service-publish-to-web/publish_to_web4.png)
 5. If you’ve previously created an embed code for the report, the embed code quickly appears. You can only create one embed code for each report.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web5.png)
+   ![](media/service-publish-to-web/publish_to_web5.png)
 
 ## Tips and Tricks for View modes
 When you embed content within a blog post, you typically need to fit it within a specific size of the screen.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given area of the iFrame, so you also need to set an appropriate View Mode when editing the report.
@@ -66,14 +66,14 @@ The following table provides guidance about the View Mode, and how it will appea
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![](media/powerbi-service-publish-to-web/Publish_To_Web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
-| ![](media/powerbi-service-publish-to-web/Publish_To_Web6d.png) |**Actual size** will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
-| ![](media/powerbi-service-publish-to-web/Publish_To_Web6c.png) |**Fit to width** ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
+| ![](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
+| ![](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available. |
 
 ## Tips and tricks for iFrame height and width
 The embed code you receive after you Publish to web will look like the following:
 
-![](media/powerbi-service-publish-to-web/Publish_To_Web7.png)
+![](media/service-publish-to-web/publish_to_web7.png)
 
 You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
 
@@ -93,16 +93,16 @@ Once you create a **Publish to web** embed code, you can manage the codes you cr
 
 1. To manage your **Publish to web** embed codes, open the **Settings** gear and select **Manage embed codes**.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web8.png)
+   ![](media/service-publish-to-web/publish_to_web8.png)
 2. The list of embed codes you’ve created appears, as shown in the following image.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web9.png)
+   ![](media/service-publish-to-web/publish_to_web9.png)
 3. For each **Publish to web** embed code in the list, you can either retrieve the embed code, or delete the embed code and thus make any links to that report or visual no longer work.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web10.png)
+   ![](media/service-publish-to-web/publish_to_web10.png)
 4. If you select **Delete**, you’re asked if you’re sure you want to delete the embed code.
    
-   ![](media/powerbi-service-publish-to-web/Publish_To_Web11.png)
+   ![](media/service-publish-to-web/publish_to_web11.png)
 
 ## Updates to reports, and data refresh
 After you create your **Publish to web** embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
@@ -140,7 +140,7 @@ To report a concern related to **Publish to web** content embedded in a website 
 
 To report a concern, select the **flag** icon in the bottom bar of the Publish to web report you see.
 
-![](media/powerbi-service-publish-to-web/Publish_To_Web12_GA.PNG)
+![](media/service-publish-to-web/publish_to_web12_ga.png)
 
 ## Licensing and Pricing
 You need to be a Microsoft Power BI user to use **Publish to web**. The consumers of your report (the readers, viewers) do not need to be Power BI users.

@@ -103,7 +103,7 @@ There may be some cases where this will be helpful when you'd like to see differ
 ## Limitations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
-* Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web.md) URLs.
+* Query string filtering does not work with [Publish to web](service-publish-to-web.md) URLs.
 * Field type has to be string.
 * Table and field names cannot have any spaces.
 
