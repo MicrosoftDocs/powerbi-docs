@@ -30,33 +30,33 @@ Note: Access to a SQL Sentry account you use for connecting to http://cloud.sqls
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-sql-sentry/PBI_GetData.png)
+   ![](media/service-connect-to-sql-sentry/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-sql-sentry/PBI_GetServices.png) 
+   ![](media/service-connect-to-sql-sentry/pbi_getservices.png) 
 3. Select **SQL Sentry  \> Get**.
    
-   ![](media/powerbi-content-pack-sql-sentry/sqlsentry.png)
+   ![](media/service-connect-to-sql-sentry/sqlsentry.png)
 4. Provide the **Database ID** of the database you’d like to monitor in Power BI. See more details on [finding this](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-sql-sentry/img2400.png)
+   ![](media/service-connect-to-sql-sentry/img2400.png)
 5. For Authentication Method, select **oAuth2 \> Sign In**.
    
    When prompted, enter your cloud.sqlsentry.com credentials and follow the SQL Sentry authentication process.
    
-   ![](media/powerbi-content-pack-sql-sentry/img6400.png)
+   ![](media/service-connect-to-sql-sentry/img6400.png)
    
    The first time you connect, Power BI prompts you to allow read-only access to your account. Select Grant to begin the import process.  The import process can take a few minutes depending on the volume of data in your account.
    
-   ![](media/powerbi-content-pack-sql-sentry/img7400.png)
+   ![](media/service-connect-to-sql-sentry/img7400.png)
 6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
    
-   ![](media/powerbi-content-pack-sql-sentry/img8200.png)
+   ![](media/service-connect-to-sql-sentry/img8200.png)
 7. Select the SQL Sentry dashboard.
    
    This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
    
-   ![](media/powerbi-content-pack-sql-sentry/img9dashboard800.png)
+   ![](media/service-connect-to-sql-sentry/img9dashboard800.png)
 
 **What Now?**
 
@@ -82,11 +82,11 @@ The following data is available from SQL Sentry  in Power BI :
 ## Finding Parameters
 The **Database ID** can be found by logging into <https://cloud.sqlsentry.com> in a new web browser window.  The **Database ID** is listed on the main overview page:
 
-    ![](media/powerbi-content-pack-sql-sentry/database2.png)
+    ![](media/service-connect-to-sql-sentry/database2.png)
 
 The **Database ID** is also shown on the Database Details screen:
 
-    ![](media/powerbi-content-pack-sql-sentry/database.png)
+    ![](media/service-connect-to-sql-sentry/database.png)
 
 
 ## Troubleshooting

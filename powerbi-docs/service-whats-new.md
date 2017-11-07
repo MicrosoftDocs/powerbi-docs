@@ -535,7 +535,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **July 28, 2015**
 
-* We’re excited to announce that this week’s update to Power BI now offers database performance tracking with the [SQL Sentry content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx). This content pack includes a dashboard and reports that help you monitor the SQL Server deployments you track using the SQL Sentry Cloud. For additional details on how to get started, please see the SQL Sentry content pack for Power BI [help page](powerbi-content-pack-sql-sentry.md).
+* We’re excited to announce that this week’s update to Power BI now offers database performance tracking with the [SQL Sentry content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx). This content pack includes a dashboard and reports that help you monitor the SQL Server deployments you track using the SQL Sentry Cloud. For additional details on how to get started, please see the SQL Sentry content pack for Power BI [help page](service-connect-to-sql-sentry.md).
 
 **July 24, 2015**
 
