@@ -38,7 +38,7 @@ We have 4 documents that guide you through setting up and using Cortana for Powe
 
 **Article 1** (this article): understand how Cortana and Power BI work together
 
-**Article 2**: [search Power BI reports: Enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
+**Article 2**: [search Power BI reports: Enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
 
 **Article 3**: [search Power BI reports: create special *Cortana answer cards*](service-cortana-answer-cards.md)
 
@@ -124,5 +124,5 @@ When you ask a question in Cortana, Power BI answers from report pages designed 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 ## Next steps
-[Enable the Cortana - Power BI - Windows integration for reports](powerbi-service-cortana-enable.md)
+[Enable the Cortana - Power BI - Windows integration for reports](service-cortana-enable.md)
 

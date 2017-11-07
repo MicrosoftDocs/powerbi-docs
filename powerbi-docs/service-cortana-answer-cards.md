@@ -35,7 +35,7 @@ We have 4 documents that guide you through setting up and using Cortana for Powe
 
 **Article 1** [Learn how Cortana and Power BI work together](powerbi-service-cortana-intro.md)
 
-**Article 2**: [For searching Power BI reports: Enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
+**Article 2**: [For searching Power BI reports: Enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
 
 **Article 3**: This article
 
@@ -78,7 +78,7 @@ A *Cortana answer page* in a report is sized specifically for Cortana so that Co
      = "show sales" this answer page will not appear because you didn't include any of the items in the required page level filter.
 
 > [!IMPORTANT]
-> Before your Cortana answer page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+> Before your Cortana answer page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](service-cortana-enable.md).
 > 
 > 
 

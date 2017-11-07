@@ -38,19 +38,19 @@ Enabling reports in Power BI to be accessed by Cortana is a simple process.  In 
 
 You'll need to sign in to Power BI service (not Power BI Desktop) and repeat these steps for each dataset that you want Cortana to be able to access.
 
-1. Determine which dataset(s) to enable. From the report content list, select the report you'd like Cortana to access and choose the **View related** icon  ![](media/powerbi-service-cortana-enable/power-bi-cortana-view-related-icon.png) .
+1. Determine which dataset(s) to enable. From the report content list, select the report you'd like Cortana to access and choose the **View related** icon  ![](media/service-cortana-enable/power-bi-cortana-view-related-icon.png) .
    
-    ![View related content](media/powerbi-service-cortana-enable/power-bi-view-related.png)
+    ![View related content](media/service-cortana-enable/power-bi-view-related.png)
 2. The dataset associated with this report is **Contoso Sales**.
    
-    ![Contoso Sales dataset](media/powerbi-service-cortana-enable/power-bi-identify-dataset.png)
+    ![Contoso Sales dataset](media/service-cortana-enable/power-bi-identify-dataset.png)
 3. In the upper right corner of Power BI service, select the cog icon and choose **Settings**.
    
-    ![Choose Settings](media/powerbi-service-cortana-enable/power-bi-cortana-settings.png)
+    ![Choose Settings](media/service-cortana-enable/power-bi-cortana-settings.png)
 4. Select the **Datasets** tab and choose the dataset to enable for Cortana from the list on the left.
 5. Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
    
-   ![Cortana access dataset](media/powerbi-service-cortana-enable/power-bi-cortana-enable-new.png)
+   ![Cortana access dataset](media/service-cortana-enable/power-bi-cortana-enable-new.png)
    
    In this example, we're enabling Cortana on the Contoso Sales dataset.
    
@@ -72,10 +72,10 @@ You'll need to be running Windows 10 version 1511 or higher.
    
    * Open **Settings** > **Accounts**.
      
-       ![Settings - Accounts](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
+       ![Settings - Accounts](media/service-cortana-enable/power-bi-windows-accounts.png)
    * Scroll to the bottom and select **Add a work or school account**.
      
-     ![Add work account](media/powerbi-service-cortana-enable/power-bi-add-work-account2.png)
+     ![Add work account](media/service-cortana-enable/power-bi-add-work-account2.png)
 
 Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
 
