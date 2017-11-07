@@ -122,10 +122,10 @@ Here are some other things you can do in the Android phone app for Power BI with
 ### Power BI dashboards and reports
 * View [your apps](powerbi-service-what-are-apps.md).
 * View your [dashboards](powerbi-mobile-create-dashboard.md).
-* Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
-* Open [Power BI reports](powerbi-mobile-reports-in-the-android-app.md).
+* Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-iphone-app.md).
+* Open [Power BI reports](powerbi-mobile-reports-in-the-iphone-app.md).
 * View [your apps](powerbi-service-what-are-apps.md).
-* [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
+* [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 * Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 * [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) to open a related dashboard tile or report. 
 * View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.

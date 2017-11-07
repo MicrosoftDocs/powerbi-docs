@@ -165,7 +165,7 @@ To make sure you can access your latest data while offline, we perform a refresh
 Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
 
 * [On the iPhone](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
-* [On the iPad](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+* [On the iPad](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 
 **Request access to dashboards**
 
@@ -192,7 +192,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
 * Experience [Power BI on your Android tablet](powerbi-mobile-android-tablet-app-get-started.md)
-* Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-android-kpis-mobile-reports.md)
+* Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-iphone-kpis-mobile-reports.md)
 
 #### Android devices
 **Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
@@ -246,9 +246,9 @@ View your favorite dashboards from all Power BI mobile apps, and manage the list
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
 
-* [Alerts on the Power BI app for Android phones](powerbi-mobile-set-data-alerts-in-the-android-app.md). 
+* [Alerts on the Power BI app for Android phones](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
 * [Alerts on the Power BI apps for iOS](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
-* [Alerts on the Power BI app for Windows 10 devices](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
+* [Alerts on the Power BI app for Windows 10 devices](powerbi-mobile-set-data-alerts-in-the-iphone-app.md).
 
 #### iOS on iPhones and iPads
 **Tiles full-screen in focus mode on iPad**
@@ -345,7 +345,7 @@ See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/pow
 * Select more than one option in a report slicer.
 
 #### Android mobile app
-* **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md)** now on Android phones.
+* **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md)** now on Android phones.
 * **Report gallery** Open your reports directly in the report gallery.​
 * **NTLM authentication** support for mobile reports in SQL Server 2016 Reporting Services.
 
@@ -371,7 +371,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
 #### Android mobile app
-**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md), and navigate between SSRS folders.​
+**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md), and navigate between SSRS folders.​
 
 **View reports** Open reports from tiles on your dashboards.​
 
@@ -397,9 +397,9 @@ View dashboards in [landscape mode on Android phones](powerbi-mobile-create-dash
 #### Power BI app for Windows 10 devices
 View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-windows-10-device).
 
-View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-windows-app.md).
+View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-iphone-app.md).
 
-Faster time to [insights on your Windows 10 mobile dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md): Share a tile snapshot or open a report directly from the dashboard.
+Faster time to [insights on your Windows 10 mobile dashboards](powerbi-mobile-tiles-in-the-iphone-app.md): Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
 All of the January improvements are already in the new [Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
@@ -449,7 +449,7 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 * Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](powerbi-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
-* [Add a picture tile to a dashboard](powerbi-mobile-picture-tiles-in-the-iphone-app.md) directly from your iPhone.
+* [Add a picture tile to a dashboard](powerbi-mobile-iphone-app-get-started.md) directly from your iPhone.
 * [Create QR codes in the Power BI service](powerbi-service-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
