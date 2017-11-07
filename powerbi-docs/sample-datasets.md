@@ -67,7 +67,7 @@ This industry sample focuses on the hiring strategy for a company by analyzing n
 In this industry sample we analyze the planned vs. actual costs of the IT department of a company. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 ### Opportunity Analysis sample  ![](media/sample-datasets/power-bi-oa.png)
-[Take a tour of the Opportunity Analysis sample](powerbi-sample-opportunity-analysis-take-a-tour.md)
+[Take a tour of the Opportunity Analysis sample](sample-opportunity-analysis.md)
 
 This industry sample explores a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
 

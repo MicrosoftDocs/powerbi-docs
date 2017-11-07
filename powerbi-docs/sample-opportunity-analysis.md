@@ -37,7 +37,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782).  
 
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity1.png)
+![](media/sample-opportunity-analysis/opportunity1.png)
 
 ## What is our dashboard telling us?
 Our Sales Manager has created a dashboard to track those metrics most important to her. When she sees something interesting, she can select a tile to dig into the data.
@@ -51,11 +51,11 @@ Our Sales Manager has created a dashboard to track those metrics most important 
 Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities. 
 
 Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open page 1 of the report.  
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity2.png)
+![](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
 ### Page 1 of our report is titled “Opportunity Count Overview.”
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity3.png)
+![](media/sample-opportunity-analysis/opportunity3.png)
 
 * East is our biggest region in terms of opportunity counts.  
 * On the pie chart, select each region one at a time to filter the page. For each region, partners are pursuing significantly more large opportunities.   
@@ -64,7 +64,7 @@ Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open 
 
 ### Page 2 of our report is titled “Revenue Overview.”
 This page takes a similar look at the data but using a revenue perspective instead of count.  
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity4.png)
+![](media/sample-opportunity-analysis/opportunity4.png)
 
 * East is our biggest region not only in opportunity count but in revenue also.  
 * Filtering by Partner driven (select **Yes** in the legend in the top right) reveals revenue of $1.5B and $294M. Compare this to $644B and $166M for non-partner driven revenue.  
@@ -76,14 +76,14 @@ Clearly our partners are doing a better job selling to customers.  It might make
 
 ### Page 3 of our report is titled "Region Stage Counts"
 This page looks at similar data but breaks it down by region and stage.  
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity5.png)
+![](media/sample-opportunity-analysis/opportunity5.png)
 
 * Filtering by East (select **East** in the pie chart) reveals that the opportunities in the east are split almost equal between partner driven and non-partner driven. 
 * Large opportunities are most common in the central region, small opportunities are most common in the east region, and medium opportunities are most common in the west region. 
 
 ### Page 4 of our report is titled “Upcoming Opportunities”
 Again, we’re looking at similar factors, but this time from a date/time perspective.  
-![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity6.png)
+![](media/sample-opportunity-analysis/opportunity6.png)
 
 Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan appropriately.
 
