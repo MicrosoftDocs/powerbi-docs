@@ -27,7 +27,7 @@ Sometimes a single number is the most important thing you want to track in your 
    
    If you want data to practice on, [download the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 2. Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
-3. In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
+3. In the report, find a page with some blank space, or [add a new page to the report](power-bi-report-add-page.md).
 4. In the Fields list, select the number field you want to display.
    
    In this example, **Open Store count** in the **Store** table. Power BI creates a column chart with the one number.

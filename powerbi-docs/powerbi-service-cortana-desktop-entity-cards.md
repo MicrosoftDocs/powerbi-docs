@@ -44,7 +44,7 @@ We have 4 documents that guide you through setting up and using Cortana for Powe
 ## Create a Cortana answer page designed specifically for Cortana
 A *Cortana answer page* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question.  To create an answer page for Cortana:
 
-1. We recommend starting with a [blank report page](powerbi-service-add-a-page-to-a-report.md).
+1. We recommend starting with a [blank report page](power-bi-report-add-page.md).
 2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size > Type > Cortana**.
    
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size-new.png)

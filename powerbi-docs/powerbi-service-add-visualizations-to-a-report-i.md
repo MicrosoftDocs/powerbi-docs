@@ -32,7 +32,7 @@ This article gives a quick introduction to creating a visualization in a report.
 2. If the Fields pane isn't visible, select the arrow icon to open it. 
    
    ![](media/powerbi-service-add-visualizations-to-a-report-i/pbi_Nancy_FieldsFiltersArrow.png)
-3. [Add a blank page to the report](powerbi-service-add-a-page-to-a-report.md).
+3. [Add a blank page to the report](power-bi-report-add-page.md).
 
 ## Add visualizations to the report
 1. Create a visualization by selecting a field from the **Fields** pane.  

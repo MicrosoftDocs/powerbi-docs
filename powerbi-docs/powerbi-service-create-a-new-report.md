@@ -95,7 +95,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 ## Next steps
 * [Create a copy of a report](powerbi-service-copy-a-report.md)
 * [Save the report](powerbi-service-save-a-report.md)    
-* [Add a new page to the report](powerbi-service-add-a-page-to-a-report.md)  
+* [Add a new page to the report](power-bi-report-add-page.md)  
 * Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

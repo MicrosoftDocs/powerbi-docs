@@ -33,7 +33,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 2. Select **Edit Report** to open the report in Editing View.
    
    ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport1.png)
-3. [Add a new page](powerbi-service-add-a-page-to-a-report.md) by selecting the yellow plus icon at the bottom of the canvas.
+3. [Add a new page](power-bi-report-add-page.md) by selecting the yellow plus icon at the bottom of the canvas.
    
    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
 
