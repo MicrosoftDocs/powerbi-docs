@@ -28,19 +28,19 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-twilio/PBI_GetData.png) 
+   ![](media/service-connect-to-twilio/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-twilio/PBI_GetServices.png) 
+   ![](media/service-connect-to-twilio/pbi_getservices.png) 
 3. Select **Twilio** \> **Get**.
    
-   ![](media/powerbi-content-pack-twilio/twilio.png)
+   ![](media/service-connect-to-twilio/twilio.png)
 4. For **Authentication Method**, select **oAuth2** \> Sign In. When prompted provide your Twilio credentials and authorize the Power BI application to access your data.
    
-   ![](media/powerbi-content-pack-twilio/PBI_Twilio_Login.PNG)
+   ![](media/service-connect-to-twilio/pbi_twilio_login.png)
 5. This will begin importing data from your Twilio account, and you will have your dashboard populated with your calls and messages usage for the past 30 days. 
    
-   ![](media/powerbi-content-pack-twilio/PBI_Twilio_DB.png)
+   ![](media/service-connect-to-twilio/pbi_twilio_db.png)
 
 **What Now?**
 

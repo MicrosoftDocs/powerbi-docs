@@ -589,7 +589,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 19, 2015**
 
-* With this update, you can now connect to [Twilio through our content pack](powerbi-content-pack-twilio.md)
+* With this update, you can now connect to [Twilio through our content pack](service-connect-to-twilio.md)
 * The Power BI API has new additions! You can now [list all tables](http://docs.powerbi.apiary.io/#reference/datasets/tables-collection/list-all-tables) and [update an existing table schema](http://docs.powerbi.apiary.io/#reference/datasets/table/update-an-existing-tables-schema)
 
 **May 13, 2015**
