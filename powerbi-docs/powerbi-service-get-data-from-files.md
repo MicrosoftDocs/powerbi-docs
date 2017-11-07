@@ -56,5 +56,5 @@ See the following articles to learn more about getting your file into Power BI.
 
 * [Get data from Excel workbook files](powerbi-service-excel-workbook-files.md)
 * [Get data from Power BI Desktop files](powerbi-service-powerbi-desktop-files.md)
-* [Get data from Comma Separated Value files](powerbi-service-comma-separated-value-files.md)
+* [Get data from Comma Separated Value files](service-comma-separated-value-files.md)
 

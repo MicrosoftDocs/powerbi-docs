@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Get data from Comma Separated Value (.CSV) files
-![](media/powerbi-service-comma-separated-value-files/csv_icon.png)
+![](media/service-comma-separated-value-files/csv_icon.png)
 
 Comma separated value files, often known as a .CSV, are simple text files with rows of data where each value is separated by a comma. These types of files can contain very large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a sample .CSV file [here](http://go.microsoft.com/fwlink/?LinkID=619356).
 
@@ -43,13 +43,13 @@ If you have a .CSV, it’s time to get it into your Power BI site as a dataset w
 
 1. In Power BI, in the navigator pane, click **Get Data**.
    
-   ![](media/powerbi-service-comma-separated-value-files/csv_get_data_button.png)
+   ![](media/service-comma-separated-value-files/csv_get_data_button.png)
 2. In **Files**, click **Get**.
    
-   ![](media/powerbi-service-comma-separated-value-files/csv_files_get.png)
+   ![](media/service-comma-separated-value-files/csv_files_get.png)
 3. Find your file.
    
-   ![](media/powerbi-service-comma-separated-value-files/csv_find_your_file.png)
+   ![](media/service-comma-separated-value-files/csv_find_your_file.png)
 
 ## What's next?
 **Explore your data** - Once you get data from your file into Power BI, it's time to explore. Just right-click the new dataset and then click **Explore**.
