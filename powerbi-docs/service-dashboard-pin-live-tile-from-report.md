@@ -35,7 +35,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EzhfBpPboPA" frameborder="0" allowfullscreen></iframe>
 
 
-1. Open a report in [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md).
+1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
 2. With no visualizations selected, from the menubar, select **Pin Live Page**.
    
    ![](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 

@@ -36,7 +36,7 @@ Watch Amanda customize her X and Y axes and demonstrate the various ways to cont
 
 ## Customizing visualization X-axes in reports
 ## Create a stacked chart visualization
-Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](sample-datasets.md).
+Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](sample-datasets.md).
 
 1. Create a new column chart that shows this year's sales and last year's sales value by fiscal month. 
 2. Convert it to a Stacked column chart.

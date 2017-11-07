@@ -38,7 +38,7 @@ Slicers are a great choice in the following situations.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 
-1. Open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
+1. Open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, select **District > District Manager**.
    
     ![](media/power-bi-visualization-slicers/pbi_slicer_chartfirst.png)

@@ -37,7 +37,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 > 
 
 1. Open [Power BI](http://app.powerbi.com) and select the report where you want to add the custom visualization.  
-2. Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
+2. Open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
 3. In the **Visualizations** pane, select the ellipses (...).
    
     ![](media/power-bi-report-add-custom-visual/pbi_customvizellipses.jpg)

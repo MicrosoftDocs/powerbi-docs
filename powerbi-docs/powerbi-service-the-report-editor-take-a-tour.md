@@ -123,7 +123,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 ## Next Steps:
 [Create a report](powerbi-service-create-a-new-report.md)
 
-[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
+[Edit a report](service-interact-with-a-report-in-editing-view.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

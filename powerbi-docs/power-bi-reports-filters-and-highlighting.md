@@ -47,7 +47,7 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 > 
 
 ## Filters in Reading View versus Editing View
-There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
+There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 * In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.

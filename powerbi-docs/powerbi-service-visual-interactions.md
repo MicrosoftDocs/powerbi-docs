@@ -26,7 +26,7 @@ By default, visualizations on a report page can be used to cross-filter and cros
 For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
 See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md).
 
-To change this default behavior, use the **Visual Interaction** control. Visual interactions is only available in [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md). If a report has been shared with you, you will not have access to Visual interactions.
+To change this default behavior, use the **Visual Interaction** control. Visual interactions is only available in [Editing view](service-interact-with-a-report-in-editing-view.md). If a report has been shared with you, you will not have access to Visual interactions.
 
 > [!NOTE]
 > The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  

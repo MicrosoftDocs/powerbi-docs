@@ -58,7 +58,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
 
 These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](sample-datasets.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 
-1. Start on a [blank report page ](power-bi-report-add-page.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
+1. Start on a [blank report page ](power-bi-report-add-page.md)in [Editing View](service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
    
     ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 

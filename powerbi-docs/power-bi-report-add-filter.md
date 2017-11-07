@@ -27,7 +27,7 @@ ms.author: mihart
 > 
 
 ## What is the difference between report filters in Editing View versus Reading View
-There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
+There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 * In Reading View, you can interact with any report, page and visual filters that already exist in the report, but you won't be able to save your filter changes.
@@ -136,7 +136,7 @@ When you add a visual level filter, Power BI filters on the aggregated results. 
 
 When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
 
-If you do not see the Fields pane, make sure you're in report [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md)
+If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)
 
 ## Next steps
  [How to use report filters](power-bi-how-to-report-filter.md)

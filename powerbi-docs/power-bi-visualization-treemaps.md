@@ -45,7 +45,7 @@ Want to watch someone else create a treemap first?  Skip to 2:10 in this video t
 
 Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along,  [download the sample](sample-datasets.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
-1. Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
+1. Start in [Editing View](service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
 2. Convert the chart to a treemap.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)

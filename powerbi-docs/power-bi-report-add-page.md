@@ -29,7 +29,7 @@ Select the yellow plus icon and then type a new name for the page.
 ![](media/power-bi-report-add-page/reorderpages2.gif)
 
 ## Duplicate a page
-From the top control bar, in [Editing mode](powerbi-service-interact-with-a-report-in-editing-view.md), select the **Duplicate this page** icon.
+From the top control bar, in [Editing mode](service-interact-with-a-report-in-editing-view.md), select the **Duplicate this page** icon.
 
 ![](media/power-bi-report-add-page/pbi_duplicate.png)
 

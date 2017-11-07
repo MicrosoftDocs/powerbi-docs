@@ -115,7 +115,7 @@ When you create a copy using "Save as" (personalize), Power BI converts the read
 1. From the pre-built usage metrics report, select **File > Save As**. Power BI converts the usage metrics report into a full-featured Power BI report. This is called a *personalized* usage metrics report.
    
     ![](media/powerbi-service-usage-metrics/power-bi-save-as.png)
-2. Open the report in Editing view and [interact with it as you would with any other Power BI report](powerbi-service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
+2. Open the report in Editing view and [interact with it as you would with any other Power BI report](service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
    
     ![](media/powerbi-service-usage-metrics/power-vi-editing-view.png)
 3. Alternately, open the new dataset and build a report from scratch.

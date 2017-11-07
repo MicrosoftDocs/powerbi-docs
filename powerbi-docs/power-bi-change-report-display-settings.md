@@ -67,7 +67,7 @@ All Power BI reports default to **Fit to page** view. But what if you want this 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
 ## Now, let's explore the *page size* setting
-The page size settings are only available in [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md). To open a report in Editing view you must have owner permissions for the report. If you've connected to any of our [samples](sample-datasets.md), you'll have owner permissions to those reports.
+The page size settings are only available in [Editing view](service-interact-with-a-report-in-editing-view.md). To open a report in Editing view you must have owner permissions for the report. If you've connected to any of our [samples](sample-datasets.md), you'll have owner permissions to those reports.
 
 1. Open the "District monthly sales" page of the [Retail Analysis sample](sample-retail-analysis.md) in Editing View.
 2. Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paint roller icon ![](media/power-bi-change-report-display-settings/power-bi-paintroller.png).

@@ -46,7 +46,7 @@ A bubble chart replaces the data points with bubbles, with the bubble *size* rep
 ## Create a scatter chart
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Open the Retail Analysis Sample in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
+1. Open the Retail Analysis Sample in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, select **Sales** > **Sales Per Sq Ft** and **Sales** > **Total Sales Variance %**.
 3. From the Fields pane, select **District > District**.
    

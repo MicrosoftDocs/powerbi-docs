@@ -32,7 +32,7 @@ In Editing View in Power BI (compared to [Reading View](powerbi-service-interact
    
     ![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturnnew.png)
 
-There are so many ways to [edit your report](powerbi-service-interact-with-a-report-in-editing-view.md), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](powerbi-service-interact-with-a-report-in-editing-view.md), lists and describes these in detail.
+There are so many ways to [edit your report](service-interact-with-a-report-in-editing-view.md), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](service-interact-with-a-report-in-editing-view.md), lists and describes these in detail.
 
 ## See also
 Read more about [reports in Power BI](powerbi-service-reports.md)

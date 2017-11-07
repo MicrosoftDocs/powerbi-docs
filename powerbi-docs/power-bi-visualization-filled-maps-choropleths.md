@@ -51,7 +51,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 2. When the success message appears, select **View dataset**. 
    
    ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-view-dataset.png)
-3. Power BI opens a blank report canvas in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
+3. Power BI opens a blank report canvas in [Editing View](service-interact-with-a-report-in-editing-view.md).
    
     ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-blank-canvas.png)
 4. From the Fields pane, select the **Geo** \> **State** field.    

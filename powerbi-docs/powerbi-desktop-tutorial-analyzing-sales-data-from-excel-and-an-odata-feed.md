@@ -193,7 +193,7 @@ In this task, you confirm that a relationship is established in Power BI Desktop
 9. No need to make any changes, so we'll just select **Cancel** to close the **Edit Relationship** dialog.
 
 ## Task 4: Build visuals using your data
-Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](powerbi-service-interact-with-a-report-in-editing-view.md).
+Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
 
 In this task, you create a report based on the data previously loaded. You use the Fields pane to select the columns from which you create the visualizations.
 

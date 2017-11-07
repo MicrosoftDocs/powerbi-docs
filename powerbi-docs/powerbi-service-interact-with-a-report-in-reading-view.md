@@ -22,7 +22,7 @@ ms.author: mihart
 ---
 # Interact with a report in Reading View in Power BI
 ## Reading view
-Reading view is not as interactive as [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md), but it still gives you many options for exploring your data. This comes in handy when viewing reports [shared with you](service-share-dashboards.md), that can only be opened in Reading View.
+Reading view is not as interactive as [Editing view](service-interact-with-a-report-in-editing-view.md), but it still gives you many options for exploring your data. This comes in handy when viewing reports [shared with you](service-share-dashboards.md), that can only be opened in Reading View.
 
 Reading view is a fun and safe way to play with and get to know your data. In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select a value in one visual and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Any filtering and highlighting that you do is not saved with the report.
 
