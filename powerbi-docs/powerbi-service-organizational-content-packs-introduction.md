@@ -46,7 +46,7 @@ Publishing an organizational content pack adds it to AppSource.  This centralize
 
 * To view AppSource, select **Get Data** > **My Organization** > **Get**.
 
-Read more about [finding and opening organizational content packs](powerbi-service-organizational-content-pack-find-and-open.md).
+Read more about [finding and opening organizational content packs](service-organizational-content-pack-find-and-open.md).
 
 ## The life cycle of an organizational content pack
 Any Power BI Pro user can create, publish, and access organizational content packs. Only the content pack creator can modify the workbook and dataset, schedule refresh, and delete it.

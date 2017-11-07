@@ -35,7 +35,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 
 1. From the left Navigation Pane, select **Get Data \> My Organization** \> **Get**.
 2. Don't see the content pack you're looking for? Tap in the search box and type keywords:  
-    ![](media/powerbi-service-organizational-content-pack-find-and-open/cp_searchbox.png)
+    ![](media/service-organizational-content-pack-find-and-open/cp_searchbox.png)
 3. Select a content pack to reveal additional details.
 
 ## Connect to an organizational content pack
