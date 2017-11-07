@@ -28,7 +28,7 @@ Try different types of visualizations in Power BI to see which one illustrates y
    
    ![](media/power-bi-report-change-visualization-type/changeviz.gif)
 
-> **NOTE**: You can [pin your visualization](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) to your dashboard as a tile.
+> **NOTE**: You can [pin your visualization](service-dashboard-pin-tile-from-report.md) to your dashboard as a tile.
 > 
 > 
 

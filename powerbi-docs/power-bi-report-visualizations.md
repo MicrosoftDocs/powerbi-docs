@@ -39,7 +39,7 @@ Add a custom visualization that you created yourself or that you found in the [O
 Try [changing the type of visualization](power-bi-report-change-visualization-type.md) to see which works best with your data.
 
 ## Pin the visualization
-When you have the visualization the way you want it, you can [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
+When you have the visualization the way you want it, you can [pin it to a dashboard](service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
 
 ## See also
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

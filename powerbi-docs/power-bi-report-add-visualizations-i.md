@@ -54,7 +54,7 @@ This article gives a quick introduction to creating a visualization in a report.
 3. Change the visualization to a column chart by selecting the column chart icon.
    
    ![](media/power-bi-report-add-visualizations-i/part1converttocolumn.png)
-4. When you create visualizations in your report, you can [pin them to your dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). To pin the visualization, select the pin icon ![](media/power-bi-report-add-visualizations-i/pinnooutline.png).
+4. When you create visualizations in your report, you can [pin them to your dashboard](service-dashboard-pin-tile-from-report.md). To pin the visualization, select the pin icon ![](media/power-bi-report-add-visualizations-i/pinnooutline.png).
    
    ![](media/power-bi-report-add-visualizations-i/part1pin1.png)
 5. Now you can:

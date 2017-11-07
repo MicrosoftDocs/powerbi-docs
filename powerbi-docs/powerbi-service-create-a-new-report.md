@@ -96,6 +96,6 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 * [Create a copy of a report](power-bi-report-copy.md)
 * [Save the report](powerbi-service-save-a-report.md)    
 * [Add a new page to the report](power-bi-report-add-page.md)  
-* Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)    
+* Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

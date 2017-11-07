@@ -110,7 +110,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
-[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)
 
 [ Power BI - Basic Concepts](service-basic-concepts.md)
 

@@ -78,7 +78,7 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
 [Reports in Power BI](powerbi-service-reports.md)  
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)  
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-[ Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+[ Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)
 

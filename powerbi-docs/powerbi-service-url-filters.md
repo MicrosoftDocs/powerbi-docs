@@ -108,7 +108,7 @@ There are a couple of things to be aware of when using the query string paramete
 * Table and field names cannot have any spaces.
 
 ## Next steps
-[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Try it out -- it's free!](https://powerbi.com/)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

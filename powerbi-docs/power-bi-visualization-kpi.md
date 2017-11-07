@@ -60,7 +60,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
    * **Trend axis** - when set to **On**, the trend axis is displayed as the background of the KPI visual.  
    * **Goals** - when set to **On**, the visual displays the goal and the distance from the goal as a percentage.
    * **Status** - some KPIs are considered *better* for higher values and some are considered *better* for lower values. For example, earnings VS. wait time. Typically a higher value of earnings is better versus a higher value of wait time – that is usually considered as worse. This toggle allows the selection of a KPI behavior. The status selection defaults to **high is better**.
-7. When you have the KPI as you want it, [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
+7. When you have the KPI as you want it, [pin it to a dashboard](service-dashboard-pin-tile-from-report.md).
 
 KPIs are also available on your mobile devices – keeping you always connected to your businesses heartbeat
 

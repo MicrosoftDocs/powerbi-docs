@@ -99,7 +99,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 ## Next steps
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
