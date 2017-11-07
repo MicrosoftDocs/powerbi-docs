@@ -24,7 +24,7 @@ scriptid: ''
 
 ```
 1. Item ONE
-    [​AZURE.INCLUDE [innerlist](../includes/inner-list.md)]
+    [​AZURE.INCLUDE [innerlist](includes/inner-list.md)]
 2. Item FOUR
 ```
 
@@ -40,6 +40,6 @@ scriptid: ''
 ## My Items
 1. Item ONE
    
-    [!INCLUDE [innerlist](../includes/inner-list.md)]
+    [!INCLUDE [innerlist](includes/inner-list.md)]
 2. Item FOUR
 

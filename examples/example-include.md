@@ -20,5 +20,5 @@ The content between the lines below demonstrates an article that references an i
 ## Includes with Images
 The result is the following one:
 
-[!INCLUDE [include-short-name](../includes/example-include-images.md)]
+[!INCLUDE [include-short-name](includes/example-include-images.md)]
 

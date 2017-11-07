@@ -1,0 +1,93 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Publishing and Sharing
+metadata:
+  title: Publishing and Sharing | Microsoft Power BI
+  description: TODO
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: introductiontodax
+  nextTutorialTitle: Introduction to DAX
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: |
+    TODO: Opening paragraph.
+- title: Introduction to Content Packs, Security, and Groups
+  durationInMinutes: 2
+  content: |
+    > [!Video https://www.youtube.com/embed/5DABLeJzQYM?rel=0]
+
+    [!INCLUDE [](includes/6-0-intro-content-packs-groups.md)]
+- title: Publish Power BI Desktop reports
+  durationInMinutes: 2
+  content: |
+    > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
+
+    [!INCLUDE [](includes/4-1-publish-reports.md)]
+- title: Print and export dashboards and reports
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/gauDt5ZV74I?rel=0]
+
+    [!INCLUDE [](includes/4-4g-print-and-export-dashboards-reports.md)]
+- title: Manually republishing and refreshing your data
+  durationInMinutes: 5
+  content: |
+    > [!Video https://www.youtube.com/embed/O60a1Acdpkc?rel=0]
+
+    [!INCLUDE [](includes/4-5-manually-republish-reports.md)]
+- title: Introducing Power BI Mobile
+  durationInMinutes: 7
+  content: |
+    > [!Video https://www.youtube.com/embed/Sfb_vDIb6Dc?rel=0]
+
+    [!INCLUDE [](includes/4-4a-power-bi-mobile.md)]
+- title: Create Groups in Power BI
+  durationInMinutes: 5
+  content: |
+    > [!Video https://www.youtube.com/embed/-758Lnhj9DRo?rel=0]
+
+    [!INCLUDE [](includes/6-1-create-groups.md)]
+- title: Build Content Packs
+  durationInMinutes: 5
+  content: |
+    > [!Video https://www.youtube.com/embed/8V2WP4nFCiA?rel=0]
+
+    [!INCLUDE [](includes/6-2-create-content-packs.md)]
+- title: Use Content Packs
+  durationInMinutes: 7
+  content: |
+    > [!Video https://www.youtube.com/embed/fE9R6ydo8yk?rel=0]
+
+    [!INCLUDE [](includes/6-3-use-content-packs.md)]
+- title: Update Content Packs
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/nem2r4NpTyU?rel=0]
+
+    [!INCLUDE [](includes/6-4-update-content-pack.md)]
+- title: Integrate OneDrive for Business with Power BI
+  durationInMinutes: 3
+  content: |
+    > [!Video https://www.youtube.com/embed/mxjakuVGgnU?rel=0]
+
+    [!INCLUDE [](includes/6-4a-integrate-onedrive-for-business.md)]
+- title: Publish to web
+  durationInMinutes: 5
+  content: |
+    > [!Video https://www.youtube.com/embed/jNPOaLP9hlc?rel=0]
+
+    [!INCLUDE [](includes/6-6-publish-to-web.md)]
+- title: Completion of Power BI Guided Learning
+  durationInMinutes: 4
+  content: |
+    [!INCLUDE [](includes/6-5-guided-learning-completion.md)]
+- content: |
+    You've completed the **Publishing and Sharing** section of Microsoft Power BI Guided Learning.

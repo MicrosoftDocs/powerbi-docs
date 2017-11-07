@@ -55,12 +55,12 @@ Here is an example of a comment containing an AZURE.INCLUDE markdown extension:
 
 ````lang-html
 <!--
-[AZURE.INCLUDE [example-include-images](../includes/example-include-images.md)]
+[AZURE.INCLUDE [example-include-images](includes/example-include-images.md)]
 -->
 ````
 
 Comment starts here:
 <!--
-[!INCLUDE [example-include-images](../includes/example-include-images.md)]
+[!INCLUDE [example-include-images](includes/example-include-images.md)]
 
 ## -->

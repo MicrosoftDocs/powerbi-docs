@@ -1,0 +1,47 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Getting Started
+metadata:
+  title: Getting Started | Microsoft Power BI
+  description: TODO
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: gettingdata
+  nextTutorialTitle: Getting Data
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: |
+    TODO: Opening paragraph.
+- title: Introducing Power BI
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/0-0-what-is-power-bi.md)]
+- title: Using Power BI
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/1c01r_pAZdk?rel=0]
+
+    [!INCLUDE [](includes/0-1-intro-using-power-bi.md)]
+- title: The Building Blocks of Power BI
+  durationInMinutes: 6
+  content: |
+    [!INCLUDE [](includes/0-0b-building-blocks-power-bi.md)]
+- title: A quick look at the Power BI service
+  durationInMinutes: 9
+  content: |
+    > [!Video https://www.youtube.com/embed/5srP3h3RJf8?rel=0]
+
+    [!INCLUDE [](includes/0-3-dashboards-cloud-services.md)]
+- title: Review and What's Next
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/0-4-summary-of-intro-to-power-bi.md)]
+- content: |
+    You've completed the **Getting Started** section of Microsoft Power BI Guided Learning.

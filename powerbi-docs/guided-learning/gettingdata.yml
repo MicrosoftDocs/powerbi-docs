@@ -1,0 +1,59 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Getting Data
+metadata:
+  title: Getting Data | Microsoft Power BI
+  description: TODO
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: modeling
+  nextTutorialTitle: Modeling
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: |
+    TODO: Opening paragraph.
+- title: Overview of Power BI Desktop
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/mdy-eRev6HM?rel=0]
+
+    [!INCLUDE [](includes/1-1-overview-of-power-bi-desktop.md)]
+- title: Getting Started with Power BI Desktop
+  durationInMinutes: 9
+  content: |
+    > [!Video https://www.youtube.com/embed/1Bo1BrpR3AY?rel=0]
+
+    [!INCLUDE [](includes/0-2-get-started-power-bi-desktop.md)]
+- title: Connect to Data Sources in Power BI Desktop
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/S6s0osmRCZ4?rel=0]
+
+    [!INCLUDE [](includes/1-2-connect-to-data-sources-in-power-bi-desktop.md)]
+- title: Clean and Transform Your Data With the Query Editor
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/o-sinon5JYY?rel=0]
+
+    [!INCLUDE [](includes/1-3-clean-and-transform-data-with-query-editor.md)]
+- title: More Advanced Data Sources and Transformation
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/8WsY0R2V_bw?rel=0]
+
+    [!INCLUDE [](includes/1-4-advanced-data-sources-and-transformation.md)]
+- title: Cleaning Irregularly Formatted Data
+  durationInMinutes: 8
+  content: |
+    > [!Video https://www.youtube.com/embed/74KQmzdvFV8?rel=0]
+
+    [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
+- content: |
+    You've completed the **Getting Data** section of Microsoft Power BI Guided Learning.

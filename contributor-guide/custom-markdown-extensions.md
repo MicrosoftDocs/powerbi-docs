@@ -105,11 +105,11 @@ Reusable text fragments in our GitHub repository are called "includes". When you
 ### Sample markdown
 The syntax for adding an include to a documentation article is:
 
-    [AZURE.INCLUDE [include-short-name](../includes/include-file-name.md)]
+    [AZURE.INCLUDE [include-short-name](includes/include-file-name.md)]
 
 Example
 
-    [AZURE.INCLUDE [howto-blob-storage](../includes/howto-blob-storage.md)]
+    [AZURE.INCLUDE [howto-blob-storage](includes/howto-blob-storage.md)]
 
 The first part of the include is the include name without the path and without the .md extension. The second part is the relative path to the include in the /includes directory, with the .md extension.
 
