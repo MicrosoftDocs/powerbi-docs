@@ -461,11 +461,11 @@ pre.editor-colors .fold-marker:after,
   </head>
   <body class='markdown-preview'><p>﻿&gt; [AZURE.SELECTOR-LIST (Desktop | Powerbi.com )]</p>
 <ul>
-<li><a href="../articles/powerbi-custom-visuals-use.md">(Desktop | More detail )</a></li>
-<li><a href="../articles/powerbi-custom-visuals-use-less.md">(Desktop | Less detail )</a></li>
-<li><a href="../articles/powerbi-custom-visuals-vid.md">(Desktop | Show me )</a></li>
-<li><a href="../articles/powerbi-custom-visuals-add-to-report.md">(Powerbi.com | More detail )</a></li>
-<li><a href="../articles/powerbi-custom-visuals-add-to-report-less.md">(Powerbi.com | Less detail )</a></li>
-<li><a href="../articles/powerbi-custom-visuals-add-to-report-viz.md">(Powerbi.com | Show me )</a></li>
+<li><a href="../powerbi-custom-visuals-use.md">(Desktop | More detail )</a></li>
+<li><a href="../powerbi-custom-visuals-use-less.md">(Desktop | Less detail )</a></li>
+<li><a href="../powerbi-custom-visuals-vid.md">(Desktop | Show me )</a></li>
+<li><a href="../powerbi-custom-visuals-add-to-report.md">(Powerbi.com | More detail )</a></li>
+<li><a href="../powerbi-custom-visuals-add-to-report-less.md">(Powerbi.com | Less detail )</a></li>
+<li><a href="../powerbi-custom-visuals-add-to-report-viz.md">(Powerbi.com | Show me )</a></li>
 </ul></body>
 </html>
