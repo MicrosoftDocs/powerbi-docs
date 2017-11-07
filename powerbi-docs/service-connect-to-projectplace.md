@@ -30,24 +30,24 @@ Note: To import your Projectplace data into Power BI, you must be a Projectplace
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-projectplace/get.png)
+    ![](media/service-connect-to-projectplace/get.png)
 2. In the **Services** box, select **Get**.
    
-    ![](media/powerbi-content-pack-projectplace/services.png)
+    ![](media/service-connect-to-projectplace/services.png)
 3. On the Power BI page, select **Projectplace by Planview**, then select **Get**:  
    
-    ![](media/powerbi-content-pack-projectplace/projectplace.png)
+    ![](media/service-connect-to-projectplace/projectplace.png)
 4. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
    
-    ![](media/powerbi-content-pack-projectplace/params.png)
+    ![](media/service-connect-to-projectplace/params.png)
 5. On the Authentication Method list, select **OAuth** if it is not already selected. Hit **Sign In** and follow the login flow.  
    
-   ![](media/powerbi-content-pack-projectplace/creds.PNG)
+   ![](media/service-connect-to-projectplace/creds.png)
 6. On the left pane, select **Projectplace** from the list of dashboards. Power BI imports Projectplace data into the dashboard. Note that the data may take some time to load.  
    
     The dashboard contains tiles that display data from your Projectplace database. The following image shows an example of the default Projectplace dashboard in Power BI.
    
-    ![](media/powerbi-content-pack-projectplace/dashboard.PNG)
+    ![](media/service-connect-to-projectplace/dashboard.png)
 
 **What Now?**
 
