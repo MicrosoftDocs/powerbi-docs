@@ -74,7 +74,7 @@ ms.author: davidi
 
 ## See also
 [On-premises data gateway](service-gateway-onprem.md)  
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

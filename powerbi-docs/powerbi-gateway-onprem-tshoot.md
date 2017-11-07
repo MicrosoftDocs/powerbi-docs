@@ -376,7 +376,7 @@ For additional information about troubleshooting refresh scenarios, take a look 
 ## See also
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
 [On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  

@@ -157,7 +157,7 @@ Okay, you now have a gateway installed, and you’re ready to add data sources. 
 
 ## See also
 [Using the on-premises data gateway](service-gateway-onprem.md)  
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode)](powerbi-gateway-personal-mode.md)
 
 [Troubleshooting the on-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
