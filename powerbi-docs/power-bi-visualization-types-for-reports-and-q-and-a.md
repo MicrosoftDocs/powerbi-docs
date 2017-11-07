@@ -152,7 +152,7 @@ For more information, see [Tutorial: Treemaps in Power BI](power-bi-visualizatio
 
 **Tip**: Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see [Tutorial Waterfall charts in Power BI](powerbi-service-tutorial-waterfall-charts.md).
+For more information, see [Tutorial Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 
 ## #
 ## Tell Q&A which visualization to use

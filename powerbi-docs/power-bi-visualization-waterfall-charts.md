@@ -42,32 +42,32 @@ We'll create a waterfall chart that displays sales variance (estimated sales ver
 
 1. Select the **Datasets** tab and scroll to the new "Retail Analysis Sample" dataset.  Select the **Create report** icon to open the dataset in report editing view. 
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-report.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
 2. From the **Fields** pane, select **Sales \> Total Sales Variance**. If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
 3. Convert the chart to a **Waterfall**. 
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
+    ![](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
 4. Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 5. Sort the waterfall chart chronologically. From the top-right corner of the chart, select the ellipses (...) and choose **FiscalMonth**.
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-sort.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort.png)
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Dig in a little more to see what's contributing most to the changes month to month. Drag **Store** > **Territory** to the **Breakdown** bucket.
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 7. By default, Power BI adds the top 5 contributors to increases or decreases by month. But we're only interested in the top 2 contributors.  In the Formatting pane, select **Breakdown** and set **Maximum** to 2.
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
    
     A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, negative and positive, in our waterfall chart. 
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-axis.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
 8. This is an interesting finding. Do Ohio and Pennsylvania have such a significant impact because sales in these 2 territories are much higher than the other territories?  We can check that. Create a map that looks at sales by territory.  
    
-    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-map.png)
+    ![](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
    
     Our map supports our theory.  It shows that these 2 territories had the highest value of sales last year (bubble size) and this year (bubble shading).
 
