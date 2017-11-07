@@ -78,7 +78,7 @@ As the content pack creator, you can [schedule refresh of the datasets](refresh-
 You can only delete a content pack from AppSource if you created it. 
 
 > [!TIP]
-> You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create. That doesn't delete the content pack from AppSource.
+> You can [delete your connection to a content pack](service-organizational-content-pack-disconnect.md) you didn't create. That doesn't delete the content pack from AppSource.
 > 
 > 
 

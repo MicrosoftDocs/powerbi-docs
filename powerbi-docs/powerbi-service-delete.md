@@ -28,7 +28,7 @@ Dashboards can be removed. Removing the dashboard does not delete the underlying
 
 * If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace will remove the dashboard from their Power BI workspace.
 * If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
-* If a dashboard is part of an [organizational content pack](powerbi-service-organizational-content-pack-delete.md), the only way to remove it is to remove the associated dataset.
+* If a dashboard is part of an [organizational content pack](service-organizational-content-pack-disconnect.md), the only way to remove it is to remove the associated dataset.
 
 ### To delete a dashboard
 1. In your workspace, select the **Dashboards** tab.
@@ -49,7 +49,7 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
    ![](media/powerbi-service-delete/power-bi-delete-report.png)
    
    > [!NOTE]
-   > If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](powerbi-service-organizational-content-pack-delete.md).
+   > If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](service-organizational-content-pack-disconnect.md).
    > 
    > 
 
@@ -70,7 +70,7 @@ If the workbook is stored on OneDrive for Business, deleting it from Power BI do
 ## Delete a dataset
 Datasets can be deleted. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from this dataset.
 
-If a dataset is part of one or more [organizational content packs](powerbi-service-organizational-content-pack-delete.md), the only way to delete it is to remove it from the content packs where it's being used, wait for it to be processed, and then try deleting it again.
+If a dataset is part of one or more [organizational content packs](service-organizational-content-pack-disconnect.md), the only way to delete it is to remove it from the content packs where it's being used, wait for it to be processed, and then try deleting it again.
 
 ### To delete a dataset
 1. In your workspace, select the **Datasets** tab.
