@@ -28,25 +28,25 @@ Connect to Dynamics CRM Online [Sales Manager](https://msit.powerbi.com/groups/m
 This connection requires **Microsoft Dynamics CRM Online 2016 or later**. More details on [requirements](#Requirements) below.
 
 ## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Microsoft Dynamics CRM Sales Manager** or **Microsoft Dynamics CRM Service Manager** and click **Connect**.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-crm/connect.png)
+   ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
 2. Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-crm/params.png)
+   ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
 3. When prompted, provide your credentials (this step might be skipped if you are already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-crm/creds.png)
+   ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
 4. After connecting, you'll see a dashboard customized for a Sales Manager or Service Manager, populated with your own data:
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-crm/dashboard.png)
+   ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
 ## View the Microsoft Dynamics CRM dashboard and reports
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-open-app.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-what-now.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 The sections below detail what's included for the [Sales Manager](#Sales) and [Service Manager](#Service) personas.
