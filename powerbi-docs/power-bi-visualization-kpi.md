@@ -50,10 +50,10 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 3. IMPORTANT: Sort the chart by **Month**. Once you convert the visualization to a KPI, there is no option to sort.
 4. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
    
-    ![](media/powerbi-service-tutorial-kpi/power-bi-kpi-icon.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-icon.png)
 5. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field.
    
-    ![](media/powerbi-service-tutorial-kpi/power-bi-kpi.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi.png)
 6. Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
    
    * **Indicator** - controls the indicator’s display units and decimal places.

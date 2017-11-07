@@ -809,7 +809,7 @@ KPIs show the value, status, goal, variance from the goal and trend in the same 
 For more information, see:
 
 * [Tutorial: Radial gauge charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md)
-* [Tutorial: KPIs in Power BI](powerbi-service-tutorial-kpi.md)
+* [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md)
 
 ## Conclusion
 Now it’s time for you to put these best practices to the test.  Keep in touch and share your own best practices. Don’t agree with our recommendations or found a great reason to “break the rules?”  We’d love to hear about those as well.  

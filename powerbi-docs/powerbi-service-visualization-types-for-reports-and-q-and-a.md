@@ -84,7 +84,7 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-t
 
 **Tip**: Displays progress toward a measurable goal.
 
-For more information, see [Tutorial: KPIs in Power BI](powerbi-service-tutorial-kpi.md).
+For more information, see [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md).
 
 ### Line charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_line.png)
