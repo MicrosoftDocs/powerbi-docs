@@ -22,12 +22,12 @@ ms.author: mihart
 
 ---
 # **Recent** content in Power BI service
-![](media/powerbi-service-recent/power-bi-recent-screen.png)
+![](media/service-recent/power-bi-recent-screen.png)
 
 ## What is recent content
 Recent content is the last 20 items you visited.  This includes: dashboards, reports, apps, and workbooks.
 
-![](media/powerbi-service-recent/power-bi-recent.png)
+![](media/service-recent/power-bi-recent.png)
 
 Watch Amanda demonstrate how **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -36,16 +36,16 @@ Watch Amanda demonstrate how **Recent** content lists are populated, then follow
 ## Display recent content
 To see your five most-recently visited items, from the left navigation, select the arrow to the right of **Recent**.  From here you can select recent content to open it. Only the five most-recent items are listed.
 
-![](media/powerbi-service-recent/power-bi-recent-flyout-new.png)
+![](media/service-recent/power-bi-recent-flyout-new.png)
 
-If you have more than five recently-visited items, select **See all** to open the Recent screen (see below). You can also select **Recent**, or the Recent ![](media/powerbi-service-recent/power-bi-recent-icon.png)  icon, from the left nav.
+If you have more than five recently-visited items, select **See all** to open the Recent screen (see below). You can also select **Recent**, or the Recent ![](media/service-recent/power-bi-recent-icon.png)  icon, from the left nav.
 
-![](media/powerbi-service-recent/power-bi-recent-list.png)
+![](media/service-recent/power-bi-recent-list.png)
 
 From here you can interact with the content as you would on the individual [**Dashboards**](service-dashboards.md), [**Reports**](powerbi-service-reports.md), and **Workbooks** tabs, and on the [**Apps**](service-install-use-apps.md) screen.
 
 ## Next steps
-[Power BI service Apps](powerbi-service-what-are-apps.md)
+[Power BI service Apps](service-install-use-apps.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
