@@ -46,7 +46,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 4. To turn preview features off, follow steps 1-2 above, and in step 3, select **Off** > **Apply**.
 
 ## Next steps
-[New Power BI navigation experience](powerbi-service-the-new-power-bi-experience.md)
+[New Power BI navigation experience](service-the-new-power-bi-experience.md)
 
 Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 
