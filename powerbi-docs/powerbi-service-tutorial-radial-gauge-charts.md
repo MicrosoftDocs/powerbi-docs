@@ -108,7 +108,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 ## See also
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)
+[Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 

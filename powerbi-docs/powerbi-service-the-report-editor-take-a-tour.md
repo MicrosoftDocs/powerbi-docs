@@ -63,7 +63,7 @@ To remove a field from the visualization, select the **X** to the right of the f
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/deleteField.png)
 
-For more information, see [Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-i.md)
+For more information, see [Add visualizations to a Power BI report](power-bi-report-add-visualizations-i.md)
 
 ### Format your visuals
 Select the paint roller icon to display the Format pane. The option available depend on the type of visualization selected.

@@ -102,7 +102,7 @@ For more help with Map visualizations, see [Tips and tricks for map visualizatio
 
 ## Next steps
 [Add the filled map as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md)    
- [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
+ [Add a visualization to a report](power-bi-report-add-visualizations-i.md)  
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)    
  [Change the type of visualization being used](powerbi-service-change-the-type-of-visualization-in-a-report.md)      
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

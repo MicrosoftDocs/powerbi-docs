@@ -30,7 +30,7 @@ Data visualizations (aka visuals) allow you to interact with your data to find b
   If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
 ## Add a visualization in Power BI
-[Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
+[Create visualizations](power-bi-report-add-visualizations-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
 Add a custom visualization that you created yourself or that you found in the [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)

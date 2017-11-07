@@ -109,7 +109,7 @@ For information about using the Filters pane, see [Add a filter to a report](pow
 Highlighting a column or line in a combo chart cross-filters the other visualizations on the report page... and vice versa.
 
 ## Next steps
-[Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)
+[Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
 [Visualizations in Power BI  reports](powerbi-service-visualizations-for-reports.md)
 
