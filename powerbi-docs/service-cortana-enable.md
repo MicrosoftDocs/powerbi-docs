@@ -82,7 +82,7 @@ Cortana will use this work or school account to check Power BI for potential ans
 ## Next steps
 [Create Cortana *answer cards* in Power BI](service-cortana-answer-cards.md)
 
-[Troubleshoot Cortana and Power BI integration issues](powerbi-service-cortana-troubleshoot.md)
+[Troubleshoot Cortana and Power BI integration issues](service-cortana-troubleshoot.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

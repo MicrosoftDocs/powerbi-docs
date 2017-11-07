@@ -39,7 +39,7 @@ We have 4 documents that guide you through setting up and using Cortana for Powe
 
 **Article 3**: This article
 
-**Article 4**: [Troubleshoot issues](powerbi-service-cortana-troubleshoot.md)
+**Article 4**: [Troubleshoot issues](service-cortana-troubleshoot.md)
 
 ## Create a Cortana answer page designed specifically for Cortana
 A *Cortana answer page* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question.  To create an answer page for Cortana:
@@ -93,7 +93,7 @@ Results with high scoring answers (such as a complete match of a specified page 
 ## See also
 [Using Cortana with Power BI](service-cortana-intro.md)
 
-Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](powerbi-service-cortana-troubleshoot.md).
+Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](service-cortana-troubleshoot.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

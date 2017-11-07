@@ -31,7 +31,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 1. Do you have a Power BI account?  If not, [sign up, it's free](service-self-service-signup-for-power-bi.md).
 2. Is Cortana working?  Do you see the Cortana icon in your taskbar?
    
-    ![](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-icon.png)
+    ![](media/service-cortana-troubleshoot/power-bi-cortana-icon.png)
    
     When you select it, does Cortana open with a field in which you can type?
 3. Did you use at least 2 words in your search? Cortana needs at least 2 word phrases to find answers in Power BI. Try adding "show" to the beginning of your question. 
@@ -44,7 +44,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 6. Are you using a mobile device?  Currently we only support Power BI and Cortana integration on Windows mobile devices.
 7. Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to one of the English options.
    
-   ![Set Cortana language](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-language.png)
+   ![Set Cortana language](media/service-cortana-troubleshoot/power-bi-cortana-language.png)
 8. Do you have more than 100 reports enabled for Cortana?  Cortana only searches up to 100 total.  To ensure that your report is included, move or copy it to your **My Workspace** because Cortana searches there first.
 9. You might just need to give it some time. The first time you type a query the model might be *cold*. Wait a few seconds so the data can be loaded into memory, and then try again. 
 10. For dashboards, it can take up to 24 hours for them to become accessible to Cortana.    
@@ -60,7 +60,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 ## Dashboards only: why doesn't Cortana find answers from my Power BI dashboards
 1. Ensure that you are connected to your work account. Power BI needs this connection so that it can authenticate your access permissions to data. To check that you are connected or if not, to connect your work account, use the Windows search box to navigate to “Connect to work or school”.  
    
-    ![Connect account](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-connect.png)
+    ![Connect account](media/service-cortana-troubleshoot/power-bi-cortana-connect.png)
 2. Do you have access to Cortana? Select the Windows search box and provide Cortana access permissions to your information.
 
 ## Try the Cortana troubleshooting tool
@@ -72,24 +72,24 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
    
    app.powerbi.com/cortana/test
    
-   ![Open Cortana tool](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-tool2.png)
+   ![Open Cortana tool](media/service-cortana-troubleshoot/power-bi-cortana-tool2.png)
 3. In the **Utterance** field, to troubleshoot reports, type the name of a Cortana answer card ***exactly as it appears in the Power BI tab***.
    
-   ![Answer card](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card-new.png)
+   ![Answer card](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
    
    </br>
    
-   ![Answer card tab in Power BI](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card2.png)
+   ![Answer card tab in Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.
    
-   ![Cortana stores in Utterance field](media/powerbi-service-cortana-troubleshoot/power-bi-utterance.png)
+   ![Cortana stores in Utterance field](media/service-cortana-troubleshoot/power-bi-utterance.png)
    
    Because we got a result, we now know that Cortana **is** enabled in Power BI. That narrows down the problem to something on the Windows side or the Cortana language setting or having more than 100 datasets enabled for Cortana.
 
 ### Having trouble retrieving answers from a dashboard?
 Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the *Utterances** field.
 
-    ![Open Shared with me in Power BI](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
+    ![Open Shared with me in Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 
 
 #### Troubleshooting tool known issues
