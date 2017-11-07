@@ -27,7 +27,7 @@ In Power BI, you can [connect to Excel workbooks on OneDrive for Business](servi
 * Clicking the tile opens the workbook inside of Power BI. The workbook will only open if your colleagues have at least [read permissions](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) to the workbook on OneDrive for Business.
 
 ## Share a dashboard that contains workbook tiles
-To share a dashboard that links back to an Excel workbook on OneDrive for Business, see [Share a dashboard](powerbi-service-share-unshare-dashboard.md). The difference is that you have the option to modify the permissions for the linked Excel workbook before sharing.
+To share a dashboard that links back to an Excel workbook on OneDrive for Business, see [Share a dashboard](service-share-dashboards.md). The difference is that you have the option to modify the permissions for the linked Excel workbook before sharing.
 
   ![Share dashboard dialog box](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_share_workbk.png)
 

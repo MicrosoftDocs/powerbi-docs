@@ -40,7 +40,7 @@ For the latest pricing information of Power BI Pro and a table listing of includ
 After you have signed up for your free account, you can optionally choose to try Pro free for 60 days. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional sharing and collaboration features. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 * [Create an app worksapce](service-create-distribute-apps.md)
-* [Share a dashboard](powerbi-service-share-unshare-dashboard.md)
+* [Share a dashboard](service-share-dashboards.md)
 
 When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 

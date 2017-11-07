@@ -83,7 +83,7 @@ There are two ways to provide access to the report within the Power BI service. 
 Alternatively, you can grant users access to your report by doing the following.
 
 1. Add a tile from the report to a dashboard.
-2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md).
+2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](service-share-dashboards.md).
    
     If you share a dashboard to a security group, users will need to sign into Power BI at least once for the user to have access to the report.
 
@@ -147,7 +147,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 [Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)  
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
-[Share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md)  
+[Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

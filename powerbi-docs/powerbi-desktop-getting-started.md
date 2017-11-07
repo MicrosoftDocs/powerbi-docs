@@ -320,7 +320,7 @@ From here, you can send an email to colleagues with whom you’d like to share t
 
  ![](media/powerbi-desktop-getting-started/GSG_Share7.png)
 
-For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](powerbi-service-share-unshare-dashboard.md).
+For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](service-share-dashboards.md).
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 

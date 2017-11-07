@@ -111,7 +111,7 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
 ### Dig deeper:
 **A dashboard can be [created from scratch](powerbi-service-create-a-dashboard.md)** -- create a new blank dashboard and then get some data. 
 
-**You, or a colleague, can create a dashboard and [share it](powerbi-service-share-unshare-dashboard.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
+**You, or a colleague, can create a dashboard and [share it](service-share-dashboards.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
 
 **Sometimes dashboards are imported with the dataset or are created as you connect to the dataset**. For example, the **Get Data** wizard for Salesforce asks you if you'd like a dashboard and/or report to be created from the dataset. 
 

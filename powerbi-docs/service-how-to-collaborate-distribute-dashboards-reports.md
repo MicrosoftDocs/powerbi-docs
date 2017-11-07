@@ -66,7 +66,7 @@ You need a Power BI Pro license to share your content, and those you share it wi
 
 You can share with people outside your organization, too. They can view and interact with the dashboard too, but can't share it. 
 
-More about [sharing a dashboard](powerbi-service-share-unshare-dashboard.md) from the Power BI service.
+More about [sharing a dashboard](service-share-dashboards.md) from the Power BI service.
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
@@ -87,7 +87,7 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
-* [Share dashboards with coworkers and others](powerbi-service-share-unshare-dashboard.md)
+* [Share dashboards with coworkers and others](service-share-dashboards.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

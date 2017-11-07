@@ -29,7 +29,7 @@ With sharing, you and your recipients need a [Power BI Pro license](service-free
 You can share a report with coworkers in the same email domain as you, from your own My Workspace or from an app workspace. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless [row-level security (RLS)](service-admin-rls.md) is applied. 
 
 ## Share a Power BI report
-1. [Share a dashboard](powerbi-service-share-unshare-dashboard.md) with tiles that link to the report you want to share. 
+1. [Share a dashboard](service-share-dashboards.md) with tiles that link to the report you want to share. 
    
     Even if you only want to share the report, you need to share a dashboard that links to the report first. The people you share the dashboard with now have permission to see the underlying report. You don't need to send them mail when you share the dashboard.
 2. Copy the report page URL and send it to your coworkers. 
@@ -66,6 +66,6 @@ What if you want to share a filtered version of a report? Maybe a report that on
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Share a dashboard](powerbi-service-share-unshare-dashboard.md)
+* [Share a dashboard](service-share-dashboards.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

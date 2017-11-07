@@ -94,7 +94,7 @@ Reports can be printed one page at a time.
 * A: We cannot guarantee that the printed copy will be exactly the same as it appears in Power BI service. Things like scaling, margins, visual details, orientation, and size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
 
 ## Next steps
-[Share dashboards and reports with colleagues and others](powerbi-service-share-unshare-dashboard.md)
+[Share dashboards and reports with colleagues and others](service-share-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
