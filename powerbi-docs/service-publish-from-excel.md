@@ -44,22 +44,22 @@ Starting in the February 2017 update, Excel 2016 supports publishing of local Ex
 
 When you select **Publish**, you will be able to select the workspace you want to publish to. This can be your personal or group workspace that you have access to.
 
-![](media/powerbi-service-publish-from-excel/pbi_choose_workspace.png)
+![](media/service-publish-from-excel/pbi_choose_workspace.png)
 
 you’ll get two options on how to get your workbook into Power BI.
 
-![](media/powerbi-service-publish-from-excel/pbi_UploadExport3.png)
+![](media/service-publish-from-excel/pbi_uploadexport3.png)
 
 Once published, it is kept as a copy in Power BI, separate from teh local file. If you want to update the file in Power BI, you need to publish the updated version again. You can refresh teh data and set scheduled refresh on the workbook or the dataset in Power BI.
 
 ### Publishing from Excel Standalone
 If your workbook isn’t already saved to OneDrive, you’ll need to save it there first. Select Save to Cloud and choose a location in OneDrive for Business.
 
-![](media/powerbi-service-publish-from-excel/pbi_SaveToOneDrive2.png)
+![](media/service-publish-from-excel/pbi_savetoonedrive2.png)
 
 Once your workbook is saved to OneDrive, when you select **Publish**, you’ll get two options on how to get your workbook into Power BI.
 
-![](media/powerbi-service-publish-from-excel/pbi_UploadExport2.png)
+![](media/service-publish-from-excel/pbi_uploadexport2.png)
 
 #### Upload your workbook to Power BI
 When you choose this option, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets to dashboards.
@@ -83,11 +83,11 @@ Using Export from Publish to Power BI in Excel is pretty much the same as using 
 ## Publishing
 When you choose either option, Excel will sign in to Power BI with your current account, and then publish your workbook to your Power BI site. Keep an eye on the status bar in Excel. It shows how things are going.
 
-![](media/powerbi-service-publish-from-excel/pbi_PublishingStatus.png)
+![](media/service-publish-from-excel/pbi_publishingstatus.png)
 
 When complete, you can go to Power BI right from Excel.
 
-![](media/powerbi-service-publish-from-excel/pbi_GoToPBI.png)
+![](media/service-publish-from-excel/pbi_gotopbi.png)
 
 ## See also
 [Excel data in Power BI](service-excel-workbook-files.md)  
