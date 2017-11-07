@@ -27,7 +27,7 @@ If a workbook has been shared with you, you'll have the ability to view the tile
 
 For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks. Then follow the step-by-step instructions below the video to try it out yourself using the [Financial sample](powerbi-service-download-the-financial-sample-workbook.md).
+Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
 
