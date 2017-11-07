@@ -112,7 +112,7 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 > 
 > 
 
-Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi-admin-mobile-intune.md). 
+Read more about [configuring Power BI mobile apps with Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## Next steps
 Here are some other things you can do in the iPhone app with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
