@@ -37,5 +37,5 @@ For more information, see [Power BI admin portal](service-admin-portal.md).
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)
 
-[Power BI Documentation](powerbi-landing-page.md)
+[Power BI Documentation](landing-page.md)
 
