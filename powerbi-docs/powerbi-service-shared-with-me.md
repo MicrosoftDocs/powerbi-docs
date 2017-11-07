@@ -51,7 +51,7 @@ The content in the **Shared with me** screen can be further filtered by content 
 ![](media/powerbi-service-shared-with-me/power-bi-owner.png)
 
 ## Next steps
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](service-basic-concepts.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

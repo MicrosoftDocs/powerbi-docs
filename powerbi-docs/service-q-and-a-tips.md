@@ -100,7 +100,7 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 ## Next steps
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -76,5 +76,5 @@ A Ziosk account with permissions to the above tables is required in order to ins
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 

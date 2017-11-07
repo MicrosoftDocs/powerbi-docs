@@ -87,7 +87,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
 ## Create a funnel chart in Q&A
-Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](powerbi-service-basic-concepts.md).
+Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](service-basic-concepts.md).
 
 1. Highlight a dashboard that has at least one tile pinned from the Opportunity Tracking dataset.
 2. Begin typing your question in the Q&A question box.
@@ -101,7 +101,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

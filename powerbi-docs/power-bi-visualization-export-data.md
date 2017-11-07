@@ -95,7 +95,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
 ## Next steps
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Reports in Power BI](powerbi-service-reports.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

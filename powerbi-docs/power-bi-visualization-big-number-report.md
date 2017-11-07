@@ -55,7 +55,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -30,7 +30,7 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 
 Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
 
 > [!NOTE]
 > If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
@@ -105,7 +105,7 @@ When you select a tile, what happens next depends on how the tile was created an
 
 [Data refresh](refresh-data.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 

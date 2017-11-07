@@ -51,7 +51,7 @@ To change this default behavior, use the **Visual Interaction** control. Visual 
 
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

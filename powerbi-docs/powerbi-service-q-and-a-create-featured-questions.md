@@ -53,6 +53,6 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md).
 ## See Also
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](power-bi-visualization-introduction-to-q-and-a.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

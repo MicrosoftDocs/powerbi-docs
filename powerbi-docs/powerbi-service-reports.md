@@ -28,7 +28,7 @@ A Power BI ***report*** is a multi-perspective view into a dataset, with visuali
 
 This report has 3 pages (or tabs) and we're currently viewing the Store Sales Overview page. On this page are 6 different visualizations and a page title. Visualizations can be *pinned* to dashboards and when that pinned visualization is selected, it opens the report it was pinned from.
 
-If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](powerbi-service-basic-concepts.md)
+If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](service-basic-concepts.md)
 
 Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](powerbi-mobile-reports-in-the-iphone-app.md).
 
@@ -60,14 +60,14 @@ Depending on your role, you may be someone who creates reports for your own use 
 Here are some topics, by role, to help you get started.
 
 ### If you will be creating and sharing reports
-* Start with a [tour of Power BI service](powerbi-service-basic-concepts.md) so you know where to find reports and report tools.
+* Start with a [tour of Power BI service](service-basic-concepts.md) so you know where to find reports and report tools.
 * Take a tour of the [report editor](powerbi-service-the-report-editor-take-a-tour.md).
 * Learn how to [create a report from a dataset](powerbi-service-create-a-new-report.md).
 * [Learn how to use visualization, page, and report-level filters](power-bi-how-to-report-filter.md)
 * Discover all the different ways you can [share a report with colleagues](service-share-dashboards.md).
 
 ### If you will be receiving and consuming reports
-* Start with a [tour of Power BI service](powerbi-service-basic-concepts.md) so you know where to find reports and report tools.
+* Start with a [tour of Power BI service](service-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](powerbi-service-open-a-report-in-reading-view.md) and all the interaction available in [Reading view](powerbi-service-dashboard-tiles.md).
 * Get comfortable with reports by taking a tour of one of our [samples](sample-tutorial-connect-to-the-samples.md).  
 * Don't need the report any more? You can [remove it](powerbi-service-delete.md).
@@ -81,7 +81,7 @@ Here are some topics, by role, to help you get started.
 ## See Also
 [Get Started with Power BI](powerbi-service-get-started.md) 
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

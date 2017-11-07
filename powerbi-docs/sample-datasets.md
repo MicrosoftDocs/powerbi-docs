@@ -193,7 +193,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 4. Select the .pbix file to open it in Desktop.
 
 ## Next steps
-[Power BI basic concepts](powerbi-service-basic-concepts.md)
+[Power BI basic concepts](service-basic-concepts.md)
 
 [Tutorial: Connect to the Power BI samples](sample-tutorial-connect-to-the-samples.md)
 

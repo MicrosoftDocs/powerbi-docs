@@ -168,7 +168,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

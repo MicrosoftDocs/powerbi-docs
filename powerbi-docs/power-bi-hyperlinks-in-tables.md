@@ -86,7 +86,7 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 ## See also
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

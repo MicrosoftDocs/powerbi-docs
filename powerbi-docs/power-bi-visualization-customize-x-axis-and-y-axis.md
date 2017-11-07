@@ -135,7 +135,7 @@ More about [Visualizations in Power BI reports](power-bi-report-visualizations.m
 
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

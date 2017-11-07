@@ -62,6 +62,6 @@ To select an area, click inside that area or along the top line.  Basic area cha
 ## See also
 [Reports in Power BI](powerbi-service-reports.md)  
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

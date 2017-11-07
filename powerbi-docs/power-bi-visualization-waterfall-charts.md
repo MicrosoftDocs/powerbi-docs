@@ -83,7 +83,7 @@ Highlighting a column in a waterfall chart cross-filters the other visualization
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -58,6 +58,6 @@ Sharing a dashboard from a Power BI workspace is similar to sharing a dashboard 
 
 ## Next steps
 * [Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
-* [Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+* [Power BI Basic Concepts](service-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

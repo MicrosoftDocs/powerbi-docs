@@ -88,7 +88,7 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 * [Share your dashboard by creating an app](service-create-distribute-apps.md)
 
 ## See also
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 

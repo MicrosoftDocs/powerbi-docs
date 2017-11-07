@@ -45,6 +45,6 @@ When you have the visualization the way you want it, you can [pin it to a dashbo
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 [Reports in Power BI](powerbi-service-reports.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -138,6 +138,6 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 * [Download the Retail Analysis sample content pack](sample-tutorial-connect-to-the-samples.md)    
 * [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Get data (for Power BI)](service-get-data.md)    
-* [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)    
+* [Power BI - Basic Concepts](service-basic-concepts.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

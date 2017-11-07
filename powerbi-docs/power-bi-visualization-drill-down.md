@@ -100,7 +100,7 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
 
 [Power BI reports](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

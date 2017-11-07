@@ -57,7 +57,7 @@ Use Q&A in a realistic industry tutorial.
 Are you the person creating datasets and data models?  Then this topic is for you.
 
 ## See also
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

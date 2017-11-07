@@ -41,7 +41,7 @@ If you're looking for help with Power BI Desktop, see [Get started with Desktop]
 > 
 > 
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
 
 If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](service-create-distribute-apps.md) have been published for you.
 
@@ -133,7 +133,7 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 
-* [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
+* [Learn how reports, datasets, dashboards, and tiles all fit together](service-basic-concepts.md)
 * [Power BI videos](powerbi-videos.md)
 * [See what samples we have available for you to use](sample-datasets.md)
 

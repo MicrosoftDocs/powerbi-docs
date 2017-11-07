@@ -105,5 +105,5 @@ You may hit an issue while the content pack is loading, after you've provided yo
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 

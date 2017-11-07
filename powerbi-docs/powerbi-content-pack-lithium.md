@@ -62,5 +62,5 @@ The Lithium content pack requires a Lithium community v15.9 or greater. Please c
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 

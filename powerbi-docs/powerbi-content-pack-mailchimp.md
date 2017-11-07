@@ -56,5 +56,5 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 

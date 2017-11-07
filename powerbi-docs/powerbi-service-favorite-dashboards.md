@@ -71,7 +71,7 @@ No longer use a dashboard as often as you used to?  You can unfavorite it. When 
 ## Next steps
 [Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

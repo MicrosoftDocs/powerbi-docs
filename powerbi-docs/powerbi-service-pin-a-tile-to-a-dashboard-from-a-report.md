@@ -70,7 +70,7 @@ For more information, see [Pin an entire report page](powerbi-service-pin-a-live
 
 [Data refresh in Power BI](refresh-data.md)
 
-[Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
