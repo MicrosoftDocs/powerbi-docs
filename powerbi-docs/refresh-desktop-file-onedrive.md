@@ -62,7 +62,7 @@ If you make changes to your file on OneDrive that cannot be synchronized with th
 ## How do I schedule refresh?
 When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
 
-For details on how to setup schedule refresh, see [Configure Schedule Refresh](powerbi-refresh-scheduled-refresh.md).
+For details on how to setup schedule refresh, see [Configure Schedule Refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 When things go wrong, it’s usually because Power BI can’t sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.

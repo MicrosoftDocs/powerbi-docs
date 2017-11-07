@@ -214,7 +214,7 @@ Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream An
 To learn more, see [Create a real-time dashboard in Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## Configure scheduled refresh
-To learn how to configure scheduled refresh, see [Configure scheduled refresh](powerbi-refresh-scheduled-refresh.md)
+To learn how to configure scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md)
 
 ## Common data refresh scenarios
 Sometimes the best way to learn about data refresh in Power BI to look at examples. Here are some of the more common data refresh scenarios:
