@@ -87,7 +87,7 @@ This industry sample analyzes retail sales data of items sold across multiple st
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
 
 ### Supplier Quality sample  ![](media/sample-datasets/power-bi-sq.png)
-[Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md)
+[Take a tour of the Supplier Quality sample](sample-supplier-quality.md)
 
 This industry sample focuses on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 

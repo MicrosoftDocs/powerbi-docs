@@ -38,7 +38,7 @@ Watch Amanda run Quick Insights on a dataset, open an Insight in Focus mode, pin
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
-Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
+Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
 1. From the **Datasets** tab, select the ellipses (...) and choose **Get Insights**.
    
