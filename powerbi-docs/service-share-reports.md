@@ -43,7 +43,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
    
    In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to show only values where **Territory** equals **NC**.
    
-   ![Report filter pane](media/powerbi-service-share-report/power-bi-filter-report2.png)
+   ![Report filter pane](media/service-share-reports/power-bi-filter-report2.png)
 2. Add the following to the end of the report page URL:
    
    ?filter=*tablename*/*fieldname* eq *value*
@@ -54,7 +54,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
    
     ?filter=Store/Territory eq NC
    
-   ![Filtered report URL](media/powerbi-service-share-report/power-bi-filter-url3.png)
+   ![Filtered report URL](media/service-share-reports/power-bi-filter-url3.png)
    
    Your browser adds special characters to represent slashes and spaces, so you end up with:
    

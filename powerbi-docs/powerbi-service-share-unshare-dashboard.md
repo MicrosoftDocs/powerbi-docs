@@ -113,11 +113,11 @@ Things to keep in mind about sharing dashboards:
 * If your coworkers already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example:   
   
     https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
-* Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](powerbi-service-share-report.md). 
+* Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Share a report](powerbi-service-share-report.md)
+* [Share a report](service-share-reports.md)
 * Questions? [Try the Power BI Community](http://community.powerbi.com/).
 
