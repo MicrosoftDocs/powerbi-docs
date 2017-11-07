@@ -126,14 +126,14 @@ You can review the [validation policies](https://dev.office.com/officestore/docs
 After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
 
 ## Certify your visual
-Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](powerbi-custom-visuals-certified.md).
+Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](power-bi-custom-visuals-certified.md).
 
 ## Next steps
 [Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)  
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Getting a custom visual *certified*](powerbi-custom-visuals-certified.md)
+[Getting a custom visual *certified*](power-bi-custom-visuals-certified.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

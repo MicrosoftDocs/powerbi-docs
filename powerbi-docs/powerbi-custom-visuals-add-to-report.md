@@ -65,7 +65,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 9. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
 ## Considerations and troubleshooting
-* In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-certified.md).
+* In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](power-bi-custom-visuals-certified.md).
 
 ## Next steps
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  

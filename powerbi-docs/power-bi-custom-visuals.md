@@ -25,7 +25,7 @@ The [Office store](https://appsource.microsoft.com/marketplace/apps?product=powe
 
 The custom visuals in the Office store fall into 2 categories: **Office store approved** and **Power BI certified**. *Office store approved* visuals can be run in browsers, reports, and dashboards.  *Power BI certified* visuals have passed rigorous testing, and are supported in additional scenarios, such as [email subscriptions](powerbi-service-subscribe-to-report.md), and [export to PowerPoint](service-publish-to-powerpoint.md).
 
-To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](powerbi-custom-visuals-certified.md).
+To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](power-bi-custom-visuals-certified.md).
 
 * Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 * Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s details page, listed as **Provider**.
@@ -37,7 +37,7 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Get started with Developer Tools for creating custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)
 * [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
-* [Submit a custom visual for certification](powerbi-custom-visuals-certified.md)
+* [Submit a custom visual for certification](power-bi-custom-visuals-certified.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

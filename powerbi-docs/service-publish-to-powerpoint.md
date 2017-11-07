@@ -72,8 +72,8 @@ What you do with your PowerPoint deck from there, or any of the high resolution 
 There are a few considerations and limitations to keep in mind when working with the **Export to PowerPoint** feature.
 
 * **R visuals** are not currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
-* **Custom visuals** that have been **certified** are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [getting a custom visual certified](powerbi-custom-visuals-certified.md). Custom visuals that have not been certified are not supported, and are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
-* **Certified custom visuals** are supported. A certified custom visual has been approved for use with Power BI, meets certain code requirements, and has passed strict security tests. You can [learn more about **certified custom visuals**](powerbi-custom-visuals-certified.md).
+* **Custom visuals** that have been **certified** are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [getting a custom visual certified](power-bi-custom-visuals-certified.md). Custom visuals that have not been certified are not supported, and are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
+* **Certified custom visuals** are supported. A certified custom visual has been approved for use with Power BI, meets certain code requirements, and has passed strict security tests. You can [learn more about **certified custom visuals**](power-bi-custom-visuals-certified.md).
 * Reports with more than 15 report pages can't currently be exported.
 * The process of exporting the report to PowerPoint may take a few minutes to complete, so please be patient. Factors that can impact the time required include the structure of the report, and the current load on the Power BI service.
 * If the **Export to PowerPoint (Preview)** menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
@@ -88,5 +88,5 @@ There are a few considerations and limitations to keep in mind when working with
 
 [Excel data in Power BI](service-excel-workbook-files.md)
 
-[Getting a custom visual certified](powerbi-custom-visuals-certified.md)
+[Getting a custom visual certified](power-bi-custom-visuals-certified.md)
 
