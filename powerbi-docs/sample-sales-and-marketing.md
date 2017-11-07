@@ -29,7 +29,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785).
 
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales1.png)
+![](media/sample-sales-and-marketing/sales1.png)
 
 ## What is our dashboard telling us?
 Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. And we see that data broken down by region, time, and competition.
@@ -46,16 +46,16 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 1. Select the “Total Units Overall by Segment” tile which will open Q&A.
 2. Type **for VanArsdel** at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Our product volume comes from Convenience and Moderation.
    
-   ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales2.png)
+   ![](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is very high; these are the segments where we compete.
 4. Navigate back to the dashboard by selecting the dashboard name in the top navbar (breadcrumbs).
 
 #### What does total unit market share look like for category (versus region)?
 1. Notice the “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks by category? 
    
-   ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales3.png)
+   ![](media/sample-sales-and-marketing/sales3.png)
 2. In the question box at the top of the dashboard, type the question **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
-   ![](media/powerbi-sample-sales-and-marketing-take-a-tour/totalUnitsByManufacturerAndCategoryFor2014AsATreemap-new.png)
+   ![](media/sample-sales-and-marketing/totalunitsbymanufacturerandcategoryfor2014asatreemap-new.png)
 3. To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
 4. Navigate back to the dashboard.
 
@@ -65,7 +65,7 @@ On our dashboard, the R12M (Rolling 12 Months) line shows that our market share 
 
 ### Our report has 4 pages
 #### Page 1 of our report focuses on VanArsdel’s market share.
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales5.png)
+![](media/sample-sales-and-marketing/sales5.png)
 
 1. Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The black column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experienced is not experienced by the competition.
 2. The “Total Category Volume by Segment” bar chart in the middle on the right, is filtered to show VanArsdel’s top 2 segments. Take a look at how this filter was created:  
@@ -81,14 +81,14 @@ On our dashboard, the R12M (Rolling 12 Months) line shows that our market share 
 We’re still looking to find out why our market share dipped so low in June. Let’s check Sentiment.
 
 #### Page 3 of our report focuses on Sentiment.
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales6.png)
+![](media/sample-sales-and-marketing/sales6.png)
 
 Tweets, Facebook, blogs, articles, etc. contribute to sentiment which is shown in the two line charts. The sentiment chart in the top left shows that sentiment for our products were pretty much neutral up until February. Then a big drop started in February and bottomed out in June. What happened to cause this drop in sentiment? We need to look at external sources. In February, several articles and blog posts rated VanArsdel’s customer service the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service and customers and the industry took note. In July positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment can be seen reflected in “Total Units by Month” on pages 1 and 3. Perhaps this partially explains our market share dips for June?
 
 Sentiment gap would be another area to explore: which districts have the highest sentiment gap, how can management capitalize on this, and discover ways to replicate it in other districts.
 
 #### Page 2 of our report focuses on YTD Category Trend
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/reportPage2.png)
+![](media/sample-sales-and-marketing/reportpage2.png)
 
 * Of all the companies in this category, VanArsdel is the largest and our biggest competitors are Natura, Aliqui, and Pirium. We’ll keep our eyes on them.
 * Aliqui is growing, but product volume compared to us is still low.
@@ -97,7 +97,7 @@ Sentiment gap would be another area to explore: which districts have the highest
 * On the chart “Total Units YTD Var % by Month and Manufacturer” in the bottom right– we have positive variance and that is a good sign, we are doing better than last year but so is another competitor, Aliqui.
 
 #### Page 4 of our report focuses on competitive product analysis.
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales8.png)
+![](media/sample-sales-and-marketing/sales8.png)
 
 * The bottom left chart shows all the category segments except for VanArsdel’s two strongest segments. Filtering by category by clicking on the bars helps identify potential expansion areas for VanArsdel. The **Extreme** and **Productivity** segments are growing faster than others.
 * But we don’t compete in these segments. If we want to move into these areas, we can use our data to see which segments are popular in which regions. We can further investigate questions like which region is growing faster and who would be our biggest competitor in that segment.

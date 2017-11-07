@@ -82,7 +82,7 @@ This industry sample analyzes a CFO's key metrics for her executives, products, 
 This industry sample analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, and variance, as well as new store analysis.
 
 ### Sales and Marketing sample  ![](media/sample-datasets/power-bi-sm.png)
-[Take a tour of the Sales and Marketing sample](powerbi-sample-sales-and-marketing-take-a-tour.md)
+[Take a tour of the Sales and Marketing sample](sample-sales-and-marketing.md)
 
 This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
 
