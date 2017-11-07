@@ -460,7 +460,7 @@ One of the most compelling feature of Power BI is the ability to edit the way ch
 
 **Figure 34: Visual interactions**
 
-Then, for each visual on the page, decide whether you want the selected visual to filter, highlight, or do nothing. Not all visuals can be highlighted, and for those the highlight control won't be available. For more information, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md).
+Then, for each visual on the page, decide whether you want the selected visual to filter, highlight, or do nothing. Not all visuals can be highlighted, and for those the highlight control won't be available. For more information, see [Visual interactions in Power BI](service-reports-visual-interactions.md).
 
 > [!TIP]
 > For readers who’re new to Power BI, this ability to click and interact with reports may not be instantly obvious. Add text boxes to help them understand what they can click on to find more insights.

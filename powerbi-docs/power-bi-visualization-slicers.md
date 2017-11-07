@@ -88,7 +88,7 @@ Do you want the slicer to only filter some of the visuals on the report page?  U
    
     ![](media/power-bi-visualization-slicers/filter-controls.png)
 
-For more information, see [Visual interactions in a Power BI report](powerbi-service-visual-interactions.md).
+For more information, see [Visual interactions in a Power BI report](service-reports-visual-interactions.md).
 
 ## Considerations and troubleshooting slicers in Power BI
 There are a few limitations to using slicers in Power BI, which are the following:

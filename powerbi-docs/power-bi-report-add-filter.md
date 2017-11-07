@@ -145,7 +145,7 @@ If you do not see the Fields pane, make sure you're in report [Editing view](ser
 
 [Interact with filters and highlighting in report Reading View](service-interact-with-a-report-in-reading-view.md)
 
-[Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
+[Change how report visuals cross-filter and cross-highlight each other](service-reports-visual-interactions.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

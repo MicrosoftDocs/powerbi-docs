@@ -84,7 +84,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
+2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](service-reports-visual-interactions.md)
 
 ## Create a funnel chart in Q&A
 Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](service-basic-concepts.md).

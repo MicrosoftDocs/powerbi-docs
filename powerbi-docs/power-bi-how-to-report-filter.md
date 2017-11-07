@@ -121,7 +121,7 @@ If the field values represent date or time, you can specify a start/end time whe
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)  
 [Interact with filters and highlighting in report Reading View](service-interact-with-a-report-in-reading-view.md)  
 [Create filters in report Editing View](power-bi-report-add-filter.md)  
-[Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
+[Change how report visuals cross-filter and cross-highlight each other](service-reports-visual-interactions.md)
 
 Read more about [reports in Power BI](service-reports.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)

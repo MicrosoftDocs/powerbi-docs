@@ -272,7 +272,7 @@ When creating a report using a DirectQuery connection, adhere to the following g
   
   ![](media/powerbi-desktop-directquery-about/directquery-about_04.png)
   
-  However, this interaction can be controlled as described [in this article](powerbi-service-visual-interactions.md). In DirectQuery such cross-filtering and cross-highlighting requires queries to be sent to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long.
+  However, this interaction can be controlled as described [in this article](service-reports-visual-interactions.md). In DirectQuery such cross-filtering and cross-highlighting requires queries to be sent to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long.
 * **Consider sharing the report only:** There are different ways of sharing content after publishing to the **Power BI service**. In the case of DirectQuery, it's advisable to only considering sharing the finished report, rather than allow other users to author new reports (and potentially encounter performance issues for the particular visuals that they build).
 
 In addition to the above list of suggestions, note that each of the following reporting capabilities can cause performance issues:

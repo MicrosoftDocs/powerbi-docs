@@ -38,12 +38,12 @@ To change this default behavior, use the **Visual Interaction** control. Visual 
 1. Select a visualization to make it active.  
 2. Turn on **Visual Interactions** by selecting it from the top menu bar. Notice the filter and highlight icons that appear when you hover over the other visualizations on the report page.
    
-    ![](media/powerbi-service-visual-interactions/pbi-visual-interaction-icon.png)
+    ![](media/service-reports-visual-interactions/pbi-visual-interaction-icon.png)
 3. Determine what impact the selected visualization should have on the others.  
    
-   * If it should cross-filter the other visualization, select the **filter** icon ![](media/powerbi-service-visual-interactions/pbi-filter-icon-outlined.png).
-   * If it should cross-highlight that visualization, select the **highlight** icon ![](media/powerbi-service-visual-interactions/pbi-highlight-icon-outlined.png).
-   * If it should have no impact, select the **no impact** icon ![](media/powerbi-service-visual-interactions/pbi-noimpact-icon-outlined.png).
+   * If it should cross-filter the other visualization, select the **filter** icon ![](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
+   * If it should cross-highlight that visualization, select the **highlight** icon ![](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
+   * If it should have no impact, select the **no impact** icon ![](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
 4. Optionally, repeat for all other visualizations on the report page.
 
 ### Next steps
