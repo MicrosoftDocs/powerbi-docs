@@ -138,7 +138,7 @@ For more information, see [Add an image widget to a dashboard](powerbi-service-a
 
 **Tip**: work well with quantitative comparisons among items where there are many categories.
 
-For more information, see [Working with tables in Power BI](powerbi-service-tutorial-tables.md).
+For more information, see [Working with tables in Power BI](power-bi-visualization-tables.md).
 
 ### Tree Maps
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_tree.png)
