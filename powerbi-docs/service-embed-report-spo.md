@@ -141,7 +141,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
   
   To resolve this issue, ensure your tenant is set to *First release for everyone* as described in the **Requirements** section earlier in this article. To enable Single Sign On (SSO), the Power BI web part relies on *Authentication APIs* that are provided by SharePoint, which are only available when *First release for everyone* is selected.
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
-* You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](powerbi-service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 ## Next steps
 [Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)  
