@@ -30,23 +30,23 @@ Note: Smartsheet admin account is preferred to connect and load the Power BI con
 ## How to Connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-smartsheet/PBI_GetData.png)
+   ![](media/service-connect-to-smartsheet/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-smartsheet/PBI_GetServices.png) 
+   ![](media/service-connect-to-smartsheet/pbi_getservices.png) 
 3. Select **Smartsheet \> Get**.
    
-   ![](media/powerbi-content-pack-smartsheet/smartsheet.png)
+   ![](media/service-connect-to-smartsheet/smartsheet.png)
 4. For Authentication Method, select **oAuth2 \> Sign In**.
    
    When prompted, enter your Smartsheet credentials and follow the authentication process.
    
-   ![](media/powerbi-content-pack-smartsheet/creds.png)
+   ![](media/service-connect-to-smartsheet/creds.png)
    
-   ![](media/powerbi-content-pack-smartsheet/creds2.png)
+   ![](media/service-connect-to-smartsheet/creds2.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Smartsheet entry.
    
-   ![](media/powerbi-content-pack-smartsheet/dashboard.png)
+   ![](media/service-connect-to-smartsheet/dashboard.png)
 
 **What Now?**
 
