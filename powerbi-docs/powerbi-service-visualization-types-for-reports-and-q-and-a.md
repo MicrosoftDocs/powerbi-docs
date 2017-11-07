@@ -34,7 +34,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 **Tip**: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
+For more information, see [Tutorial: Basic Area chart](power-bi-visualization-basic-area-chart.md).
 
 ### Bar and column charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 

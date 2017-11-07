@@ -25,7 +25,7 @@ The basic area chart (aka layered area chart.) is based on the line chart. The a
 
 Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
-![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
+![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
 
 ## When to use a basic area chart
 Basic area charts are a great choice:
@@ -44,10 +44,10 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail 
    a.  From the **Fields pane**, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
    
    b.  Convert the chart to a basic area chart.    
-   ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
+   ![](media/power-bi-visualization-basic-area-chart/convertchart.png)
    
    c.  Select **Time \> Month** to add it to the **Axis** well.   
-   ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
+   ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**.
 
