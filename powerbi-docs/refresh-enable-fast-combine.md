@@ -59,11 +59,11 @@ You can use the following steps to enable Fast Combine for your personal gateway
    
    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
    
-   ![](media/powerbi-refresh-enable-fast-combine/configfile.png)
+   ![](media/refresh-enable-fast-combine/configfile.png)
 3. Exit and re-launch the gateway configuration screen.
 4. You will see a status letting you know that Fast Combine is enabled.
    
-   ![](media/powerbi-refresh-enable-fast-combine/fastcombineenabled.png)
+   ![](media/refresh-enable-fast-combine/fastcombineenabled.png)
 
 ## Turn off Fast Combine
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
