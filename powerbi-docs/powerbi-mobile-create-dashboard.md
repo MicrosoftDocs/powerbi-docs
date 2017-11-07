@@ -35,7 +35,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 To see dashboards on your mobile device, you need to create or connect to them in a Web browser. 
 
 1. Go to the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) and [sign up for an account](service-self-service-signup-for-power-bi.md).
-2. [Create your own Power BI dashboards](powerbi-service-create-a-dashboard.md), or connect to existing [content packs for a variety of services](service-connect-to-services.md).
+2. [Create your own Power BI dashboards](service-dashboard-create.md), or connect to existing [content packs for a variety of services](service-connect-to-services.md).
 
 Here's a Power BI dashboard in the Power BI service:
 

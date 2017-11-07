@@ -109,7 +109,7 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
   ![](media/service-basic-concepts/drawing1.png)
 
 ### Dig deeper:
-**A dashboard can be [created from scratch](powerbi-service-create-a-dashboard.md)** -- create a new blank dashboard and then get some data. 
+**A dashboard can be [created from scratch](service-dashboard-create.md)** -- create a new blank dashboard and then get some data. 
 
 **You, or a colleague, can create a dashboard and [share it](service-share-dashboards.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
 

@@ -69,7 +69,7 @@ Here are some topics, by role, to help you get started.
 Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
 
 ### If you will be creating and sharing dashboards
-* Use one of our samples to [create a dashboard from a report](powerbi-service-create-a-dashboard.md).
+* Use one of our samples to [create a dashboard from a report](service-dashboard-create.md).
 * Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and all the different ways to pin them to a dashboard.
 * Help your dashboard consumers by creating dashboards that [work well with Q&A natural language queries](powerbi-service-make-your-data-work-well-with-q-and-a.md) and with [Quick insights](powerbi-service-auto-insights-optimize.md).
 * Discover all the different ways you can [share a dashboard with colleagues](service-how-to-collaborate-distribute-dashboards-reports.md).
