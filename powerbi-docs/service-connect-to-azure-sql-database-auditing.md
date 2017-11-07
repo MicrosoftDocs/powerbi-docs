@@ -30,13 +30,13 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/PBI_GetData.png) 
+   ![](media/service-connect-to-azure-sql-database-auditing/pbi_getdata.png) 
 2. In the Services box, select Get.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/PBI_GetServices.png) 
+   ![](media/service-connect-to-azure-sql-database-auditing/pbi_getservices.png) 
 3. Select **SQL Database Auditing** \> **Get**.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/sqldbaudit.png)
+   ![](media/service-connect-to-azure-sql-database-auditing/sqldbaudit.png)
 4. In the Connect to Sql Database Auditing window:
    
    • Enter the Azure Table Storage account name or URL where your logs are stored.
@@ -53,13 +53,13 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
    
    • Enter the end date of audit logs you are interested in. Enter “\*” to load audit logs without an upper time limit.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/dbauditing_param.png)
+   ![](media/service-connect-to-azure-sql-database-auditing/dbauditing_param.png)
 5. For Authentication Method, select **Key**, enter your** Account Key** \> **Sign In**.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLAuditing3.png)
+   ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqlauditing3.png)
 6. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLdbAuditingNewDash.png)
+   ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqldbauditingnewdash.png)
 
  **What Now?**
 

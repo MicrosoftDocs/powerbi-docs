@@ -594,7 +594,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 13, 2015**
 
-* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](powerbi-azure-sql-database-auditing-connector.md).
+* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](service-connect-to-azure-sql-database-auditing.md).
 * You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](service-azure-sql-database-with-direct-connect.md) for more information.
 
 **May 7, 2015**
