@@ -28,24 +28,24 @@ Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-xero/getdata.png)
+   ![](media/service-connect-to-xero/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-xero/services.png)
+   ![](media/service-connect-to-xero/services.png)
 3. Select **Xero** \>  **Get**.
    
-   ![](media/powerbi-content-pack-xero/connect.png)
+   ![](media/service-connect-to-xero/connect.png)
 4. Enter a nickname for the organisation associated with your Xero account. Anything will do, this is mostly to help users with multiple Xero organizations keep them all straight. See details on [below](#FindingParams).
    
-   ![](media/powerbi-content-pack-xero/params.png)
+   ![](media/service-connect-to-xero/params.png)
 5. For **Authentication Method** and select **OAuth**, when prompted sign into your Xero account and select the organisation to connect to. Once the login completes, select **Sign In** to start the loading process.
    
-    ![](media/powerbi-content-pack-xero/creds.png)
+    ![](media/service-connect-to-xero/creds.png)
    
-    ![](media/powerbi-content-pack-xero/creds2.png)
+    ![](media/service-connect-to-xero/creds2.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-xero/dashboard.png)
+     ![](media/service-connect-to-xero/dashboard.png)
 
 **What Now?**
 

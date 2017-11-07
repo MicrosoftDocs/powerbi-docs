@@ -50,7 +50,7 @@ If you do see that refresh failed as shown above, please follow these steps to r
 
 If you are still having refresh issues, please don’t hesitate to reach out to us at [http://support.powerbi.com](http://support.powerbi.com) 
 
-To learn more about the Xero content pack for Power BI, please visit the [Xero content pack help page](powerbi-content-pack-xero.md).
+To learn more about the Xero content pack for Power BI, please visit the [Xero content pack help page](service-connect-to-xero.md).
 
 ### See also
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
