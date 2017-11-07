@@ -28,22 +28,22 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-at-internet/PBI_GetData.png) 
+   ![](media/service-connect-to-at-internet/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-at-internet/PBI_GetServices.png) 
+   ![](media/service-connect-to-at-internet/pbi_getservices.png) 
 3. Select **AT Internet Bridge** \> **Get**.
    
-   ![](media/powerbi-content-pack-at-internet/atinternet.png)
+   ![](media/service-connect-to-at-internet/atinternet.png)
 4. Specify the AT Internet Website Number you'd like to connect to.
    
-   ![](media/powerbi-content-pack-at-internet/params.png)
+   ![](media/service-connect-to-at-internet/params.png)
 5. Select **Basic** as the Authentication Mechanism, provide your AT Internet username and password, and click **Sign In**.
    
-   ![](media/powerbi-content-pack-at-internet/creds.png)
+   ![](media/service-connect-to-at-internet/creds.png)
 6. Click **Connect** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-    ![](media/powerbi-content-pack-at-internet/atinternet.png)
+    ![](media/service-connect-to-at-internet/atinternet.png)
 
 **What Now?**
 
