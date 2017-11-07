@@ -32,7 +32,7 @@ Content that you create for your own use is available in **My workspace**, conte
 
 For more information, see [How content is organized in Power BI service](service-basic-concepts.md)
 
-> **NOTE**: One additional way to organize your content is to pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, this is the dashboard that will display first. To learn more, see [Featured dashboard](powerbi-service-featured-dashboards.md).
+> **NOTE**: One additional way to organize your content is to pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, this is the dashboard that will display first. To learn more, see [Featured dashboard](service-dashboard-featured.md).
 > 
 > 
 
