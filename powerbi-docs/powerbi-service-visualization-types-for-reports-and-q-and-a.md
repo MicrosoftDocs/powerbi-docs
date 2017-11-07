@@ -143,7 +143,7 @@ For more information, see [Working with tables in Power BI](power-bi-visualizati
 ### Tree Maps
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_tree.png)
 
-For more information, see [Tutorial: Treemaps in Power BI](powerbi-service-tutorial-treemaps.md).
+For more information, see [Tutorial: Treemaps in Power BI](power-bi-visualization-treemaps.md).
 
 **Tip**: are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles.
 
