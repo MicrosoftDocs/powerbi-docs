@@ -76,7 +76,7 @@ Collaborating in Office 365 starts from the app workspace in Power BI.
 2. Read more about [group calendars in Outlook in Office 365](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
 
 ## Manage an app workspace
-If you’re owner or admin for an app workspace, you can also add or remove workspace members. Read more about [managing your Power BI app workspace](powerbi-service-manage-your-group-in-power-bi-and-office-365.md).
+If you’re owner or admin for an app workspace, you can also add or remove workspace members. Read more about [managing your Power BI app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Next steps
 * [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
