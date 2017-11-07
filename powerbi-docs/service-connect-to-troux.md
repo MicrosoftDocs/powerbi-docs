@@ -28,22 +28,22 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-troux/getdata.png)
+   ![](media/service-connect-to-troux/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-troux/services.png)
+   ![](media/service-connect-to-troux/services.png)
 3. Select **Troux** \>  **Get**.
    
-   ![](media/powerbi-content-pack-troux/troux.png)
+   ![](media/service-connect-to-troux/troux.png)
 4. Specify your Troux OData URL. See details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-troux/params.png)
+   ![](media/service-connect-to-troux/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
    
-    ![](media/powerbi-content-pack-troux/creds.png)
+    ![](media/service-connect-to-troux/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-troux/dashboard.png)
+     ![](media/service-connect-to-troux/dashboard.png)
 
 **What Now?**
 
