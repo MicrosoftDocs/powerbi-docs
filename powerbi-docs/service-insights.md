@@ -30,7 +30,7 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 > 
 > 
 
-The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+The Quick Insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run Quick Insights on a dataset
 Watch Amanda run Quick Insights on a dataset, open an Insight in Focus mode, pin one of these Quick Insights as a tile on her dashboard, and then get Quick Insights for a visual.
@@ -45,7 +45,7 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
     ![](media/service-insights/power-bi-ellipses.png)
    
     ![](media/service-insights/power-bi-tab.png)
-2. Power BI uses [various algorithms](powerbi-service-auto-insights-types.md) to search for trends in your dataset.
+2. Power BI uses [various algorithms](service-insight-types.md) to search for trends in your dataset.
    
     ![](media/service-insights/pbi_autoinsightssearching.png)
 3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
@@ -100,7 +100,7 @@ Instead of searching for insights against an entire dataset, narrow your search 
 ## Next steps
 If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)
 
-Learn about the [types of Quick Insights available](powerbi-service-auto-insights-types.md)
+Learn about the [types of Quick Insights available](service-insight-types.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
