@@ -70,7 +70,7 @@ This article gives a quick introduction to creating a visualization in a report.
 ## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

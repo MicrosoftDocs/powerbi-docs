@@ -66,9 +66,9 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    
     From here you can:
    
-   * [Open the report that was used to create this tile ](powerbi-service-reports.md) ![](media/service-dashboard-tiles/chart-icon.jpg)  
+   * [Open the report that was used to create this tile ](service-reports.md) ![](media/service-dashboard-tiles/chart-icon.jpg)  
    
-   * [Open the worksheet that was used to create this tile ](powerbi-service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
+   * [Open the worksheet that was used to create this tile ](service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
      * [View in focus mode ](service-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)

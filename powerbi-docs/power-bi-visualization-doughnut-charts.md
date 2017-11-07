@@ -45,7 +45,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> *
 * Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
 
 ## Next steps
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 

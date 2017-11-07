@@ -68,7 +68,7 @@ KPIs are also available on your mobile devices – keeping you always connected 
 * If your KPI doesn't look like the one above, it may be because you need to sort by month. Since KPIs don't have a sort option, you'll need to sort by month *before* you convert your visualization to a KPI.
 
 ## Next steps
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

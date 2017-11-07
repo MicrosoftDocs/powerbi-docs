@@ -40,7 +40,7 @@ After you make changes to a report in Power BI, you can save it, save it with a 
     ![](media/powerbi-service-save-a-report/power-bi-save-dialog.png)
 
 ### Next steps
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

@@ -93,7 +93,7 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
   To learn more, see [Tutorial: Change display settings in a report](power-bi-change-report-display-settings.md).
 
 ## Next steps
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 [Open Editing view](service-reading-view-and-editing-view.md)
 

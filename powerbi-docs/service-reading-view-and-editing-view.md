@@ -35,7 +35,7 @@ In Editing View in Power BI (compared to [Reading View](service-interact-with-a-
 There are so many ways to [edit your report](service-interact-with-a-report-in-editing-view.md), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](service-interact-with-a-report-in-editing-view.md), lists and describes these in detail.
 
 ## See also
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 [Get started with Power BI](service-get-started.md)
 

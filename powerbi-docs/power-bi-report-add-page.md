@@ -36,7 +36,7 @@ From the top control bar, in [Editing mode](service-interact-with-a-report-in-ed
 Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.  For more information, see [renaming in Power BI service](service-rename.md)
 
 ## Next steps
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

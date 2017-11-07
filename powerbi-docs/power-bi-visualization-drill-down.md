@@ -98,7 +98,7 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
 ### See also
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI reports](powerbi-service-reports.md)
+[Power BI reports](service-reports.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

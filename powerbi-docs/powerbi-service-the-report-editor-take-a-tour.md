@@ -125,7 +125,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 
 [Edit a report](service-interact-with-a-report-in-editing-view.md)
 
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 [Get started with Power BI](service-get-started.md)
 

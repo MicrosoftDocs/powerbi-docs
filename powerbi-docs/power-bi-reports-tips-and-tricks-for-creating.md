@@ -44,7 +44,7 @@ Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
 ## See Also
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -40,7 +40,7 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 ## Next steps
 [Interact with a report in Reading view](service-interact-with-a-report-in-reading-view.md)
 
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  
 

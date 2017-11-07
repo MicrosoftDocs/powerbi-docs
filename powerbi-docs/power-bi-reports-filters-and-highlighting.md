@@ -88,7 +88,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -61,7 +61,7 @@ In Editing View, add text boxes and shapes to a report in Power BI service.
 ### Next steps
 [Add a hyperlink to a text box](service-add-hyperlink-to-text-box.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Reports in Power BI](service-reports.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

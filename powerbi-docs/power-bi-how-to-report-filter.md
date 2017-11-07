@@ -123,7 +123,7 @@ If the field values represent date or time, you can specify a start/end time whe
 [Create filters in report Editing View](power-bi-report-add-filter.md)  
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
-Read more about [reports in Power BI](powerbi-service-reports.md)  
+Read more about [reports in Power BI](service-reports.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -43,7 +43,7 @@ Dashboards are a wonderful way to monitor your business, to look for answers, an
 A dashboard isn't just a pretty picture; it's highly interactive and highly customizable and the tiles update as the underlying data changes.
 
 ## Dashboards versus reports
-[Reports](powerbi-service-reports.md) are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences.
+[Reports](service-reports.md) are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |

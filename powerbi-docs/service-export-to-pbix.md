@@ -68,7 +68,7 @@ View the **Guy in a Cube** one-minute video about this feature:
 
 Also, here are some additional articles that can help you learn to use **Power BI service**:
 
-* [Reports in Power BI](powerbi-service-reports.md)
+* [Reports in Power BI](service-reports.md)
 * [Power BI - Basic Concepts](service-basic-concepts.md)
 
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:

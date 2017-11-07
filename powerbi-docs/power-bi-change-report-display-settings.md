@@ -110,7 +110,7 @@ Remember in the previous step we saw that our report page is currently displayin
 
 Back to [Page display settings in a Power BI report](power-bi-report-display-settings.md)
 
-Read more about  [reports in Power BI ](powerbi-service-reports.md)
+Read more about  [reports in Power BI ](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

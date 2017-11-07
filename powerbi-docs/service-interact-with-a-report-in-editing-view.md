@@ -34,7 +34,7 @@ Take a look at the list of topics under the **Reports** header in the Table of C
 * Creating refresh schedules.
 
 ## Next steps
-Read more about [reports in Power BI](powerbi-service-reports.md)
+Read more about [reports in Power BI](service-reports.md)
 
 What functionality is available in [report Reading View](service-interact-with-a-report-in-reading-view.md)
 
