@@ -118,7 +118,7 @@ With the same column chart selected, expand the Background options.
 
 ## See also
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)  
-[Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
+[Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
