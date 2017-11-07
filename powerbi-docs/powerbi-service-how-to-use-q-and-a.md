@@ -55,7 +55,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
    > So be careful, if you only have one tile from *datasetA* and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
    > 
    > 
-5. When you're happy with the result, [pin the visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) by selecting the pin icon in the top right corner. If the dashboard has been shared with you, or is part of an app, you won't be able to pin.
+5. When you're happy with the result, [pin the visualization to a dashboard](service-dashboard-pin-tile-from-q-and-a.md) by selecting the pin icon in the top right corner. If the dashboard has been shared with you, or is part of an app, you won't be able to pin.
    
    ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
@@ -87,5 +87,5 @@ Back to [Q&A in Power BI](powerbi-service-q-and-a.md)
 [Tutorial: Use Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](service-q-and-a-tips.md)  
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
-[Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
+[Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)  
 
