@@ -86,5 +86,5 @@ If you're having trouble connecting, please confirm with your admin your version
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

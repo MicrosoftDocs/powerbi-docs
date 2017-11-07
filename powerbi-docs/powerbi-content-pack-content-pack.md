@@ -85,5 +85,5 @@ The comScore site determines which site you’d like to see the data from. You c
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

@@ -28,7 +28,7 @@ Financial sample Excel workbook: [download the sample directly](http://go.micros
 This workbook has one table of data of sales and profit data by market segment and country/region.
 
 ### What's next
-[Get Data](powerbi-service-get-data.md)
+[Get Data](service-get-data.md)
 
 [How to import Excel data](service-excel-workbook-files.md)
 

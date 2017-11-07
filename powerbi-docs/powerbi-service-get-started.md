@@ -43,9 +43,9 @@ If you're looking for help with Power BI Desktop, see [Get started with Desktop]
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](powerbi-service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](powerbi-service-create-apps.md) have been published for you.
+If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](powerbi-service-create-apps.md) have been published for you.
 
-Read about all the other ways to [get data for Power BI](powerbi-service-get-data.md).
+Read about all the other ways to [get data for Power BI](service-get-data.md).
 
 ## Step 1: Get data
 Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
@@ -126,7 +126,7 @@ Now that you have connected to data, explore to find insights.  When you've foun
 
 Ready to try more?  Here are some great ways to explore more of Power BI.
 
-* [Connect to another dataset](powerbi-service-get-data.md).
+* [Connect to another dataset](service-get-data.md).
 * [Share your dashboard](powerbi-service-share-unshare-dashboard.md) with your colleagues.
 * Read [tips for designing dashboards](powerbi-service-tips-for-designing-a-great-dashboard.md).
 * View your dashboards with a [Power BI app on a mobile device](powerbi-power-bi-apps-for-mobile-devices.md)

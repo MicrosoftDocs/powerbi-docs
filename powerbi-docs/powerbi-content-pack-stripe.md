@@ -52,5 +52,5 @@ Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdat
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

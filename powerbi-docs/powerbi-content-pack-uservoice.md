@@ -83,5 +83,5 @@ The Power BI UserVoice content pack uses UserVoice's APIs to retrieve your data.
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

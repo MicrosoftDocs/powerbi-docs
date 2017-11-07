@@ -61,5 +61,5 @@ The following metrics are available in the SendGrid dashboard:
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](powerbi-service-get-data.md)
+[Get Data](service-get-data.md)
 

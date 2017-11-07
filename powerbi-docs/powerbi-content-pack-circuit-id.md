@@ -52,5 +52,5 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/service
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

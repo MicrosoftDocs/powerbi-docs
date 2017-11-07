@@ -63,5 +63,5 @@ To connect directly to individual sheets in your account, you can use the Smarts
 ### See Also:
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

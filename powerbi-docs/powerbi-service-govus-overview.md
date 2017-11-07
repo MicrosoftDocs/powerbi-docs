@@ -37,7 +37,7 @@ The following features are available to **Power BI US Government** customers, as
 * [Scheduled data refresh](refresh-data.md)
 * Refreshable team dashboards
 * Active Directory groups for sharing and managing access control
-* [Import data](powerbi-service-get-data.md) and reports from Excel, CSV, and Power BI Desktop files
+* [Import data](service-get-data.md) and reports from Excel, CSV, and Power BI Desktop files
 * Data Management Gateway
 * All data is encrypted in both Azure SQL and Blob Storage for Power BI
 * Connect to services with [content packs](powerbi-content-packs-services.md)

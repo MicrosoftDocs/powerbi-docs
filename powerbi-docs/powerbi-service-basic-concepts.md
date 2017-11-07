@@ -25,7 +25,7 @@ ms.author: mihart
 <!-- Shared newnav Include -->
 [!INCLUDE [newnavbydefault](includes/newnavbydefault.md)]
 
-This article assumes that you've already [signed up for Power BI](service-self-service-signup-for-power-bi.md) and [added some data](powerbi-service-get-data.md).
+This article assumes that you've already [signed up for Power BI](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md).
 
 When you open the Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 
@@ -55,7 +55,7 @@ The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, an
 ## Datasets
 A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place.  
 
-In the navigation bar, the datasets you've connected to or imported are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](powerbi-service-get-data.md).
+In the navigation bar, the datasets you've connected to or imported are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](service-get-data.md).
 
 **ONE** dataset...
 
@@ -65,7 +65,7 @@ In the navigation bar, the datasets you've connected to or imported are listed u
   
   ![](media/powerbi-service-basic-concepts/Drawing2.png)
 
-To [connect to or import a dataset](powerbi-service-get-data.md), select **Get Data** (at the bottom of the navigation bar) or select the plus icon next to the **Datasets** heading. Follow the instructions to connect to or import the specific source and add the dataset to your workspace. New datasets are listed in the left navigation bar and marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
+To [connect to or import a dataset](service-get-data.md), select **Get Data** (at the bottom of the navigation bar) or select the plus icon next to the **Datasets** heading. Follow the instructions to connect to or import the specific source and add the dataset to your workspace. New datasets are listed in the left navigation bar and marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
 If you're [part of an ***app workspace***](powerbi-service-collaborate-with-your-power-bi-group.md), datasets added by one workspace member are available to the other workspace members.
 
@@ -73,7 +73,7 @@ Datasets can be refreshed, renamed, explored, used to create reports, and remove
 
 ### Dig deeper:
 * [Power BI Premium - what is it?](service-premium.md)
-* [Get data for Power BI](powerbi-service-get-data.md)
+* [Get data for Power BI](service-get-data.md)
 * [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
 
 ## Reports
@@ -133,7 +133,7 @@ Use the navbar to move between the Power BI building blocks: dashboards, reports
 
   ![](media/powerbi-service-basic-concepts/navpane-new.png)
 
-* Select **Get Data** to [add datasets, reports, and dashboards to Power BI](powerbi-service-get-data.md).
+* Select **Get Data** to [add datasets, reports, and dashboards to Power BI](service-get-data.md).
 * Expand and collapse the navbar with this icon ![](media/powerbi-service-basic-concepts/expand-icon.png).
 * Use **Search** to find specific items in the navbar.
 * Select a plus icon ![](media/powerbi-service-basic-concepts/pbi_Nancy_plus.png) to create a new dashboard or get a new dataset.

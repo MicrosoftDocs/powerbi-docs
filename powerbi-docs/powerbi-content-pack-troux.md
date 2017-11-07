@@ -66,5 +66,5 @@ If you are seeing a timeout error after providing credentials, try connecting ag
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

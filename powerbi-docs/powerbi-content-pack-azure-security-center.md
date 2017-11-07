@@ -78,5 +78,5 @@ If the content pack loads but doesn't show any data, please confirm you're conne
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

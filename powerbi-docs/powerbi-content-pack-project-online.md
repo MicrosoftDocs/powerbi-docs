@@ -55,5 +55,5 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

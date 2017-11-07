@@ -91,7 +91,7 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 
 [Power BI blog: Monitor and analyze your Marketo data with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/19/monitor-and-analyze-your-marketo-data-with-power-bi.aspx)
 

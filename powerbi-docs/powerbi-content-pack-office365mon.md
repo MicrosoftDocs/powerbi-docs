@@ -61,5 +61,5 @@ If you get a **"login failed"** error after using your Office365Mon subscription
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

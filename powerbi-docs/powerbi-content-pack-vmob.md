@@ -55,5 +55,5 @@ Connect to the [VMob content pack](https://app.powerbi.com/getdata/services/vmob
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

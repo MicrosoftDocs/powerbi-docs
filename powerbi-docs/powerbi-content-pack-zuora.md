@@ -107,5 +107,5 @@ The Zuora content pack pulls in many different aspects of your Zuora account. If
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

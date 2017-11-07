@@ -68,5 +68,5 @@ The data may take some time to load depending on the size of your instance.
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

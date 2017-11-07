@@ -108,7 +108,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
 [Samples for Power BI service](powerbi-sample-datasets.md)
 
-[Data sources for Power BI](powerbi-service-get-data.md)
+[Data sources for Power BI](service-get-data.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

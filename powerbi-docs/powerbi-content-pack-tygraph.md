@@ -95,5 +95,5 @@ In the above example, all data from on or prior to October 20, 2014 will be load
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

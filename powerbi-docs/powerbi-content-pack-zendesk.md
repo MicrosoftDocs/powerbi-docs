@@ -86,5 +86,5 @@ If you are having issues connecting, please check your Zendesk URL and confirm y
 
 ### See also
 * [Get started with Power BI](powerbi-service-get-started.md)
-* [Get data](powerbi-service-get-data.md)
+* [Get data](service-get-data.md)
 

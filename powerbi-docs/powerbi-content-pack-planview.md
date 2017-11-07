@@ -59,5 +59,5 @@ This procedure assumes you have already signed in to the Microsoft Power BI home
 ### See Also:
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

@@ -69,5 +69,5 @@ Copy the Power BI Token from within ClickDimensions Settings and paste it into t
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

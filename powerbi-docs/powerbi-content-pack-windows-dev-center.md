@@ -74,5 +74,5 @@ The application ID is on the end of your URL for Windows 10 Store, https://www.m
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

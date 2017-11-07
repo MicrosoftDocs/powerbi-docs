@@ -97,5 +97,5 @@ If you are not the owner if the SQL Sentry database that is being synchronized t
 ### See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 

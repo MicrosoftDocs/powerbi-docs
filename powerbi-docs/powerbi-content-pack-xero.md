@@ -103,5 +103,5 @@ For other issues, please file a ticket at http://support.powerbi.com if the issu
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 

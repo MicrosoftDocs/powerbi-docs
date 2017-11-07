@@ -27,10 +27,10 @@ In this article, we’re going to go over the different types of data sources yo
 
 You can get data from any of these data sources in Power BI by clicking **My Workspace** > **Get Data**.
 
-![](media/powerbi-service-get-data/pbi_getdata_startscreen.png)
+![](media/service-get-data/pbi_getdata_startscreen.png)
 
 ## Files
-![](media/powerbi-service-get-data/pbi_getdata_files.png)
+![](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** (.xlsx, xlxm) – Excel is unique in that a workbook can have both data you’ve entered into worksheets yourself, and you can query and load data from external data sources by using Power Query (Get & Transform in Excel 2016) or Power Pivot. You can import data that is in tables in worksheets (the data *must* be in a table), or import data that is loaded into a data model. To learn more, see [Get data from Excel](powerbi-service-get-data-from-files.md).
 
@@ -43,7 +43,7 @@ For other file types like XML Table (.xml) or text (.txt) files, you can use Get
 Where you store your files makes a big difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. If you keep your files on your local drive, that’s ok, but if you need to refresh your data, a few extra steps are involved. More details are provided in the linked articles.
 
 ## Content packs
-![](media/powerbi-service-get-data/pbi_getdata_contentpacks.png)
+![](media/service-get-data/pbi_getdata_contentpacks.png)
 
 Content packs contain all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs; those from services like Google Analytics, Marketo, or Salesforce, and those created and shared by other users in your organization.
 
@@ -52,7 +52,7 @@ Content packs contain all of the data and reports you need already prepared for 
 **Organizational** – If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md).
 
 ## Databases
-![](media/powerbi-service-get-data/pbi_getdata_databases.png)
+![](media/service-get-data/pbi_getdata_databases.png)
 
 **Databases in the Cloud** – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
 

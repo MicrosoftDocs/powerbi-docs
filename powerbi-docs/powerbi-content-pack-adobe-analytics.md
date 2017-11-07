@@ -98,6 +98,6 @@ If you've successfully passed the credentials screen  before encountering an err
 
 ## Next steps
 * [What are apps in Power BI?](powerbi-service-what-are-apps.md)
-* [Get data in Power BI](powerbi-service-get-data.md)
+* [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -71,7 +71,7 @@ If you're still having issues, open a support ticket to reach the Power BI team:
 * From the Power BI Support site (where you're reading this article), select **Contact Support** on the right side of the page.
 
 #### See also
-[Get Data for Power BI](powerbi-service-get-data.md)
+[Get Data for Power BI](service-get-data.md)
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 

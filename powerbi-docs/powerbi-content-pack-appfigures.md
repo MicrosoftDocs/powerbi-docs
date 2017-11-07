@@ -72,5 +72,5 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 ### See also
 * [Get started in Power BI](powerbi-service-get-started.md)
-* [Get data in Power BI](powerbi-service-get-data.md)
+* [Get data in Power BI](service-get-data.md)
 

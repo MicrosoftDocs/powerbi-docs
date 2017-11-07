@@ -80,5 +80,5 @@ If you encounter any errors, please review the requirements above. Also note the
 ### See also
 [Get Started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](powerbi-service-get-data.md)
+[Get Data](service-get-data.md)
 

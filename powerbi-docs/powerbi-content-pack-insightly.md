@@ -86,5 +86,5 @@ The provided reports use default fields from Insightly and may not include your 
 ### See also
 [Get started in Power BI](powerbi-service-get-started.md)
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](service-get-data.md)
 
