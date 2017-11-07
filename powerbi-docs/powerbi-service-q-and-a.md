@@ -36,7 +36,7 @@ Asking the question is just the beginning.  Have fun traveling through your data
 The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
 
 ## For more details about Power BI Q&A:
-[How to use Q&A](powerbi-service-how-to-use-q-and-a.md):
+[How to use Q&A](service-how-to-q-and-a.md):
 Step by step instructions for using Q&A and an overview of how it all works.
 
 [Microsoft Power BI mobile app](powerbi-mobile-ios-qna.md)
