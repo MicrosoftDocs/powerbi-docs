@@ -33,30 +33,30 @@ Getting your **Power BI report** exported into **PowerPoint** is easy. Just foll
 ## How to export your Power BI report to PowerPoint
 In the Power BI service, select the **Reports** section in the left navigation pane to expand that section, then select your report to display it on the canvas. You can also select a report from your **My Workspace** section, or your **Favorites**, if the report is in either of those locations.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_0.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_0.png)
 
 When the report you want to export to PowerPoint is displayed on the canvas, select **File > Export to PowerPoint (Preview)** from the menu bar in the Power BI service, as shown in the following image.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_1.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_1.png)
 
 You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_2.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_2.png)
 
 Once complete, the notification banner changes to let you know that the Power BI service has finished the export process.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_3.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_3.png)
 
 Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_4.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_4.png)
 
 And that's all there is to it. You can download the file, open it with PowerPoint, and then modify or enhance it just like you would any other PowerPoint deck.
 
 ## Checking out your exported PowerPoint file
 When you open the PowerPoint file that Power BI exported, you find a few cool and useful elements. Take a look at the following image, then check out the numbered elements below that describe some of those cool features.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_5.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_5.png)
 
 1. The first page of the slide deck includes the name of your report, and a link so that you can **View in Power BI** the report on which the slide deck is based.
 2. You get some useful information about the report, too, including the *last data refresh* on which the exported report is based, and the *downloaded at* time and date, which is the time and date when the Power BI report was exported into a PowerPoint file.
@@ -64,7 +64,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 
 When you go into an individual slide, you'll notice that each visual is an independent image (as mentioned before). That way you can copy that image, and paste it into another slide, or anywhere else you would like.
 
-![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
+![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
 
 What you do with your PowerPoint deck from there, or any of the high resolution images, is up to you!
 

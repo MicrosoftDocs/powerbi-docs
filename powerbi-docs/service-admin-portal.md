@@ -149,7 +149,7 @@ Users in the organization can export data from a tile or visualization. [Learn m
 > 
 
 ### Export reports as PowerPoint presentations
-Users in the organization can export Power BI reports as PowerPoint files. [Learn more](powerbi-service-publish-to-powerpoint.md)
+Users in the organization can export Power BI reports as PowerPoint files. [Learn more](service-publish-to-powerpoint.md)
 
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
