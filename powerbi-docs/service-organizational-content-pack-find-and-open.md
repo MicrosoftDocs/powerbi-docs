@@ -43,7 +43,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 
 If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
-The content pack is locked. You can [save your own copy of the dashboard and reports](powerbi-service-organizational-content-packs-use-and-work-with.md). 
+The content pack is locked. You can [save your own copy of the dashboard and reports](service-organizational-content-pack-copy-refresh-access.md). 
 
 ## Changes to the content pack
 If the content pack owner changes the content pack, and: 

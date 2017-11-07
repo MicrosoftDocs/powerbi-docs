@@ -88,7 +88,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    > **Tip:** The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
    > 
    > 
-7. They select **Connect**, and now they can [view and work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
+7. They select **Connect**, and now they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md). 
 
 ## See also
 * [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
