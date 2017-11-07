@@ -25,7 +25,7 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
-* [What's new in the Power BI service](powerbi-service-whats-new.md)  
+* [What's new in the Power BI service](service-whats-new.md)  
 
 ## September 2017
 ### Filters for phone reports in iPhones
