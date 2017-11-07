@@ -25,7 +25,7 @@ With **Power BI** and **ExpressRoute**, you can create a private network connect
 
 **ExpressRoute** is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment.
 
-![](media/powerbi-admin-power-bi-expressroute/pbi_expressroute_1.png)
+![](media/service-admin-power-bi-expressroute/pbi_expressroute_1.png)
 
 You can get [more information about ExpressRoute](https://azure.microsoft.com/services/expressroute/) or learn [how to sign up](https://azure.microsoft.com/pricing/details/expressroute/).
 
