@@ -34,10 +34,10 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> *
    * From the **Fields** pane, select **Sales** \> **Last Year Sales**.
    * Convert to a doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
      
-       ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
+       ![](media/power-bi-visualization-doughnut-charts/convertdonut.png)
    * Select **Item** \> **Category** to add it to the **Legend** area. 
      
-       ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
+       ![](media/power-bi-visualization-doughnut-charts/doughnuttutorial.png)
 
 ## Considerations and troubleshooting
 * The sum of the doughnut chart values must add up to 100%.

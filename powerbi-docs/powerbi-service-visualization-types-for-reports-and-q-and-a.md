@@ -63,7 +63,7 @@ For more information, see [Tutorial: Combo charts in Power BI](power-bi-visualiz
 
 **Tip**: Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see [Tutorial: Doughnut charts in Power BI](powerbi-service-tutorial-doughnut-charts.md).
+For more information, see [Tutorial: Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
 
 ### Funnel charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_funnel.png)
