@@ -26,10 +26,10 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 [Connect to the Microsoft Dynamics NAV for Power BI](https://app.powerbi.com/getdata/services/microsoft-dynamics-nav) or read more about the [Dynamics NAV integration](https://powerbi.microsoft.com/integrations/microsoft-dynamics-nav) with Power BI.
 
 ## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Microsoft Dynamics NAV**, then select **Get**.  
-   ![](media/powerbi-content-pack-microsoft-dynamics-nav/mdnav.png)
+   ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 2. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
@@ -39,19 +39,19 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
    * "Company('CRONUS%20International%20Ltd.')" with your NAV Company name
      
      An easy way to obtain this URL is in Dynamics NAV to go to Web Services, find the powerbifinance web service and copy the OData URL, but leaving out the “/powerbifinance” from the URL string.  
-     ![](media/powerbi-content-pack-microsoft-dynamics-nav/param.PNG)
+     ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
 3. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
    
     You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
    
-    ![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
+    ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
 4. Power BI will retrieve your Microsoft Dynamics NAV data and create a ready-to-use dashboard and report for you.   
-   ![](media/powerbi-content-pack-microsoft-dynamics-nav/dashboard.png)
+   ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## View the dashboard and reports
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-open-app.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-[!INCLUDE [powerbi-service-apps-open-app](includes/powerbi-service-apps-what-now.md)]
+[!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 The dashboard and reports contain data from the following tables (case sensitive):  
