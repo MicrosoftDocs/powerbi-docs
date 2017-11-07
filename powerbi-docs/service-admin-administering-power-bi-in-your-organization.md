@@ -255,7 +255,7 @@ You can remove a user from your tenant via the standard process in the Office 36
 The **Power BI (free)** licenses are for the free version of Power BI. If you're interested in additional capabilities, take a look at the [Power BI Pro version](service-premium.md).
 
 ### Where is my Power BI tenant located?
-To learn how to find where your Power BI tenant is located, also known as a data region, see [Where is my Power BI tenant located?](powerbi-admin-where-is-my-tenant-located.md)
+To learn how to find where your Power BI tenant is located, also known as a data region, see [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
 
 ## Security in Power BI
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?

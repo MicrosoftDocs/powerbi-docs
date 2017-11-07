@@ -32,12 +32,12 @@ The find the region your tenant is in, you can do the following.
 2. Select **About Power BI**.
 3. Look for the value next to **Your data is stored in**. This is the region you are located in.
 
-![](media/powerbi-admin-where-is-my-tenant-located/power-bi-data-region.png)
+![](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 
 ## How the data region is selected
 The data region is based on the country that was selected when the tenant was first created. This applies to sign up for Office 365 in addition to Powe rBI as this information is shared. If this is a new tenant, when you sign up, you will see a country drop down.
 
-![](media/powerbi-admin-where-is-my-tenant-located/sign-up-country-selection.png)
+![](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
 This selection is what drives the location of where your data will be stored. Power BI will pick a data region closest to this selection.
 
