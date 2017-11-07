@@ -808,7 +808,7 @@ KPIs show the value, status, goal, variance from the goal and trend in the same 
 
 For more information, see:
 
-* [Tutorial: Radial gauge charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md)
+* [Tutorial: Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
 * [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md)
 
 ## Conclusion

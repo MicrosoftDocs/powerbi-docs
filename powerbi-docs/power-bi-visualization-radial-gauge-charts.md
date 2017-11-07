@@ -26,7 +26,7 @@ A radial gauge chart has a circular arc and displays a single value that measure
 
 In the example below, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 140 and represented by the black needle.  The minimum possible average sales is 0 and we've set the maximum as 200.  The blue shading shows that we're currently averaging approximately 120 sales this month. Luckily, we still have another week to reach our goal.
 
-![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_m.PNG)
+![](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
 
 ## When to use a radial gauge
 Radial gauges are a great choice to:
@@ -51,22 +51,22 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 ### Step 2: Create a gauge to track Gross Sales
 1. In the **Fields** pane, select **Gross Sales**.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/GrossSalesValue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
 2. Change the aggregation to **Average**.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/changeToAverage_new.png)
-3. Select the gauge icon ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png) to convert the Column Chart to a gauge.
+   ![](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+3. Select the gauge icon ![](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) to convert the Column Chart to a gauge.
    
    By default, Power BI creates a Gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_no_target.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
 
 ### Step 3: Set a target value
 1. Drag **COGS** to the **Target value** well.
 2. Change the aggregation to **Average**.
    Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
    
    > [!NOTE]
    > You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
@@ -79,11 +79,11 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 1. Drag **Gross Sales** from the **Fields** list to the **Maximum Value** well.
 2. Change the aggregation to **Maximum**.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/SetMaximum_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
    
    The gauge is redrawn with a new end value, 1.21 million in gross sales.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-final-gauge.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
 ### Step 5: Save your report
 1. [Save the report](powerbi-service-save-a-report.md).
@@ -93,16 +93,16 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
 2. Open the formatting pane by selecting the paint roller icon.
    
-   ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-roller.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
 3. Expand the **Gauge axis** and enter values for **Min** and **Max**.
    
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge-axis.png)
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-axis.png)
 4. Remove the current target value by removing the checkmark next to **COGS**.
    
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_remove_target.png)
+    ![](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
 5. When the **Target** field appears under **Gauge axis**, enter a value.
    
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge-target.png)
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 6. Optionally, continue formatting your gauge chart.
 
 ## See also

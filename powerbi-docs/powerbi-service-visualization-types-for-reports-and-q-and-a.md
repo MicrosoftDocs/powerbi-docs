@@ -77,7 +77,7 @@ For more information, see [Tutorial: Funnel Charts in Power BI](power-bi-visuali
 
 **Tip**: Displays current status in the context of a goal.
 
-For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
+For more information, see [Tutorial: Gauge Charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 
 ### KPIs
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
