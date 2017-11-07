@@ -28,22 +28,22 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-zuora/getdata.png)
+   ![](media/service-connect-to-zuora/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-zuora/services.png)
+   ![](media/service-connect-to-zuora/services.png)
 3. Select **Zuora** \>  **Get**.
    
-   ![](media/powerbi-content-pack-zuora/zuora.png)
+   ![](media/service-connect-to-zuora/zuora.png)
 4. Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-zuora/params.png)
+   ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
    
-    ![](media/powerbi-content-pack-zuora/creds.png)
+    ![](media/service-connect-to-zuora/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-zuora/dashboard.png)
+     ![](media/service-connect-to-zuora/dashboard.png)
 
 **What Now?**
 
