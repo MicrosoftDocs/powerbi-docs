@@ -34,7 +34,7 @@ When a user interacts with a DirectQuery report in the Power BI Service, each cr
 ## Running a query with SSO - steps that occur
 A query that runs with SSO consists of three steps, as shown in the following diagram.
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_01.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_01.png)
 
 > **Note:** SSO for Oracle is not enabled yet, but is under development and coming soon.
 > 
@@ -59,11 +59,11 @@ Here are additional details about those steps:
 ## Errors from an insufficient Kerberos configuration
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_02.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_02.png)
 
 And the technical details associated with the error message may look like the following:
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_03.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_03.png)
 
 The result is that the because of insufficient Kerberos configuration, the gateway could not impersonate the originating user properly, and the database connection attempt failed.
 
@@ -76,7 +76,7 @@ This release of the On-premises data gateway supports an in-place upgrade, as we
 ### Pre-requisite 2: Run the Gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_04.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_04.png)
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
@@ -115,7 +115,7 @@ If there is no **Delegation** tab on the **Properties** dialog, you can manually
 
 For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_05.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_05.png)
 
 With that step completed, we can move on to configuring delegation settings.
 
@@ -148,17 +148,17 @@ Given those example names and settings, the configuration steps are the followin
 11. Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN in
 12. The dialog will look similar to the following if you checked **Expanded**.
     
-    ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_06.png)
+    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_06.png)
 13. Select **OK**.
     
     Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), the gateway service account must be granted the local policy “Impersonate a client after authentication”. You can perform/verify this with the Local Group Policy Editor (**gpedit**).
 14. On the gateway machine, run: *gpedit.msc*
 15. Navigate to **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
     
-    ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_07.png)
+    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_07.png)
 16. From the list of policies under **User Rights Assignment**, select **Impersonate a client after authentication**.
     
-    ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_08.png)
+    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_08.png)
     
     Right-click and open the **Properties** for **Impersonate a client after authentication** and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 17. From the list of policies under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
@@ -167,7 +167,7 @@ Given those example names and settings, the configuration steps are the followin
 ## Running a Power BI report
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
 
-![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_09.png)
+![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_09.png)
 
 This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
 
@@ -176,12 +176,12 @@ Earlier in this article, we discussed switching the gateway from a local service
 
 1. Launch the **On-premises Data Gateway** configuration tool.
    
-   ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_10.png)
+   ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_10.png)
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
 3. After sign-in is completed, select the **Service Settings** tab.
 4. Click **Change account** to start the guided walk-through, as shown in the following figure.
    
-   ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_11.png)
+   ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
 ## More Information
 For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
