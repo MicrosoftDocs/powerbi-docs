@@ -226,7 +226,7 @@ Unfortunately, refresh is not supported in this scenario. In order to refresh th
 
 When you connect to a file on OneDrive, or SharePoint Online, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file, about every hour, for updates. If you make changes to the workbook (stored in OneDrive or SharePoint Online), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
 
-To learn more, see [Excel data in Power BI](powerbi-service-excel-workbook-files.md), or [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
+To learn more, see [Excel data in Power BI](service-excel-workbook-files.md), or [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
 
 ### Excel workbook connects to a SQL database in your company
 Let’s say you have an Excel workbook named SalesReport.xlsx on your local computer. Power Query in Excel was used to connect to a SQL database on a server in your company and query for sales data that is loaded into the data model. Each morning, you open the workbook and hit Refresh to update your PivotTables.
@@ -240,7 +240,7 @@ In this case, you can manually refresh the data in the SalesReport.xlsx dataset 
 > 
 > 
 
-To learn more, see  [Excel data in Power BI](powerbi-service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises Data Gateway](powerbi-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
+To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises Data Gateway](powerbi-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
 
 ### Power BI Desktop file with data from an OData feed
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.

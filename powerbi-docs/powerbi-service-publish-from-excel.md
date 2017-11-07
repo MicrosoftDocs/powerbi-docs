@@ -90,6 +90,6 @@ When complete, you can go to Power BI right from Excel.
 ![](media/powerbi-service-publish-from-excel/pbi_GoToPBI.png)
 
 ## See also
-[Excel data in Power BI](powerbi-service-excel-workbook-files.md)  
+[Excel data in Power BI](service-excel-workbook-files.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

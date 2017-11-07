@@ -86,7 +86,7 @@ There are a few considerations and limitations to keep in mind when working with
 ## See also
 [Analyze in Excel](service-analyze-in-excel.md)
 
-[Excel data in Power BI](powerbi-service-excel-workbook-files.md)
+[Excel data in Power BI](service-excel-workbook-files.md)
 
 [Getting a custom visual certified](powerbi-custom-visuals-certified.md)
 

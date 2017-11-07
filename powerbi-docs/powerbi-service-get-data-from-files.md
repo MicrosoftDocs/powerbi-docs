@@ -54,7 +54,7 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 ## Ready to get started?
 See the following articles to learn more about getting your file into Power BI.
 
-* [Get data from Excel workbook files](powerbi-service-excel-workbook-files.md)
+* [Get data from Excel workbook files](service-excel-workbook-files.md)
 * [Get data from Power BI Desktop files](service-desktop-files.md)
 * [Get data from Comma Separated Value files](service-comma-separated-value-files.md)
 
