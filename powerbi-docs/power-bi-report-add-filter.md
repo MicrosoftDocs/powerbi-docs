@@ -27,13 +27,13 @@ ms.author: mihart
 > 
 
 ## What is the difference between report filters in Editing View versus Reading View
-There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
+There are two modes for interacting with reports: [Reading View](service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 * In Reading View, you can interact with any report, page and visual filters that already exist in the report, but you won't be able to save your filter changes.
 
 > [!NOTE]
-> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](service-interact-with-a-report-in-reading-view.md).
 > 
 > 
 
@@ -143,7 +143,7 @@ If you do not see the Fields pane, make sure you're in report [Editing view](ser
 
   [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-[Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
+[Interact with filters and highlighting in report Reading View](service-interact-with-a-report-in-reading-view.md)
 
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 

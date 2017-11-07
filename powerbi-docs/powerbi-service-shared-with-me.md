@@ -31,7 +31,7 @@ Watch Amanda explain the **Shared with me** content list and demonstrate how to 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](powerbi-service-interact-with-a-report-in-reading-view.md), and re-share with other colleagues.
+You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](service-interact-with-a-report-in-reading-view.md), and re-share with other colleagues.
 
 ## Actions available from the **Shared with me** screen
 * Select the star icon to [Favorite a dashboard](service-dashboard-favorite.md).

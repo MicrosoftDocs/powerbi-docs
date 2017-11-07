@@ -70,7 +70,7 @@ In a workspace, select the **Reports** tab and then select the **View related** 
 <br>
 **Method 2**
 
-Open the report in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md) and  select   ![](media/powerbi-service-related-content/power-bi-view-related-new.png) from the top menubar.
+Open the report in [Reading view](service-interact-with-a-report-in-reading-view.md) and  select   ![](media/powerbi-service-related-content/power-bi-view-related-new.png) from the top menubar.
 
 The **Related content** pane opens. It shows the associated dataset and all dashboards that have at least one tile pinned from the report. For this report, there are visualizations pinned to 2 different dashboards.
 
@@ -93,7 +93,7 @@ From here, you can take direct action on the related content.  For example, sele
 
 ## Limitations and troubleshooting
 * If your browser doesn't have enough space, you won't see an option for **View related** but you will still see the View related icon  ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  . Select the icon to open the **Related content** pane.
-* To open Related content for a report, you need to be in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md).
+* To open Related content for a report, you need to be in [Reading view](service-interact-with-a-report-in-reading-view.md).
 * Related content is not available in Power BI Desktop.
 * The Related content feature does not work for streaming datasets.
 

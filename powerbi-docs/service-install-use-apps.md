@@ -60,7 +60,7 @@ You can also find and install any apps that you have access to from Microsoft Ap
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](powerbi-service-interact-with-a-report-in-reading-view.md). 
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](service-interact-with-a-report-in-reading-view.md). 
 
 You can't save changes you make, but you can always [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report.
 
