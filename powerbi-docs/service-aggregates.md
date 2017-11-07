@@ -43,7 +43,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 1. In report Editing view, add the measure to a visualization.
 2. Find that field in the Visualizations pane, right-click, and select the aggregate type you need. If you don't see the aggregation you need, contact the dataset owner. It could be an issue with how the field was categorized by the owner.  
    
-   ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate_new.png)
+   ![](media/service-aggregates/aggregate_new.png)
    
    > [!NOTE]
    > The options available in the dropdown will vary depending on 1) the field selected and 2) the way that field was categorized by the dataset owner.
@@ -93,13 +93,13 @@ You can also use a non-aggregated field as a numeric field. For example, if you 
 
 1. For example, if you select **Store > Chain**.
    
-   ![](media/powerbi-service-aggregates/count-of-chain-do_not_summarize.png)
+   ![](media/service-aggregates/count-of-chain-do_not_summarize.png)
 2. And if you change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different chains. In this case, there are 2: Fashions Direct and Lindseys.
    
-   ![](media/powerbi-service-aggregates/aggregates_count.png)
+   ![](media/service-aggregates/aggregates_count.png)
 3. And if you change the aggregation to **Count**, Power BI counts the total number. In this case, there are 104 entries for **Chain**. By adding **Chain** as a filter, you can see that there are 37 rows for Fashions Direct and 67 rows for Lindseys.  
    
-   ![](media/powerbi-service-aggregates/count_of_chain_104.png)
+   ![](media/service-aggregates/count_of_chain_104.png)
 
 ## Tips and Troubleshooting
 Q:  Why don't I have a **Do not summarize** option?

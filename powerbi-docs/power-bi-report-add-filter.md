@@ -132,7 +132,7 @@ The visuals on the active page, and on all pages in the report, change to reflec
 
 ## Troubleshooting
 ### Why your visual level filter and page level filter may return different results
-When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](powerbi-service-aggregates.md).  
+When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](service-aggregates.md).  
 
 When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
 

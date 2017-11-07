@@ -103,7 +103,7 @@ The Fields pane displays the tables and fields that exist in your data and are a
 ### What do the field icons mean?
 * **∑ Aggregates**
   An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
-  For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates.md).
+  For more information, see [Aggregates in Power BI reports](service-aggregates.md).
 * ![](media/powerbi-service-the-report-editor-take-a-tour/PBI_calculated_icon.png) **Calculated measures (also called calculated fields)**  
    Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. For more information, [read Understanding measures](powerbi-desktop-measures.md)
 * ![](media/powerbi-service-the-report-editor-take-a-tour/icon.png) **Unique fields**  
