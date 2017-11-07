@@ -28,19 +28,19 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-    ![](media/powerbi-content-pack-mandrill/GetData.PNG)
+    ![](media/service-connect-to-mandrill/getdata.png)
 2. In the **Services** box, select **Get**.
    
-    ![](media/powerbi-content-pack-mandrill/Services.PNG)
+    ![](media/service-connect-to-mandrill/services.png)
 3. Select **Mandrill** > **Get**.
    
-    ![](media/powerbi-content-pack-mandrill/mandrill.png)
+    ![](media/service-connect-to-mandrill/mandrill.png)
 4. For **Authentication Method**, select **Key** and provide your API key. You can find the key on the **Settings** tab of the Mandrill dashboard. Select **Sign In** to begin the import process, which can take a few minutes depending on the volume of data in your account.
    
-    ![](media/powerbi-content-pack-mandrill/auth.PNG)
+    ![](media/service-connect-to-mandrill/auth.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data.
    
-    ![](media/powerbi-content-pack-mandrill/Mandrill-Dashboard1.jpg)
+    ![](media/service-connect-to-mandrill/mandrill-dashboard1.jpg)
 
 **What Now?**
 

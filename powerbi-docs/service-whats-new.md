@@ -526,7 +526,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **August 11, 2015**
 
-* Mandrill is an email infrastructure service developed by MailChimp that lets you analyze your email campaigns from a wide variety of information. With the [Power BI Mandrill content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx), you can quickly connect to your Mandrill data and immediately gain insights into your newsletter or marketing campaign. For additional details on how to get started, please see the [Mandrill content pack for Power BI help page](powerbi-content-pack-mandrill.md).
+* Mandrill is an email infrastructure service developed by MailChimp that lets you analyze your email campaigns from a wide variety of information. With the [Power BI Mandrill content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx), you can quickly connect to your Mandrill data and immediately gain insights into your newsletter or marketing campaign. For additional details on how to get started, please see the [Mandrill content pack for Power BI help page](service-connect-to-mandrill.md).
 
 **August 4, 2015**
 
