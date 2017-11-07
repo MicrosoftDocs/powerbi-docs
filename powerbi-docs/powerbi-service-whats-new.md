@@ -488,7 +488,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 **September 22, 2015**
 
 * Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
-* You can now [share (and un-share) a dashboard from your group space](powerbi-service-collaborate-with-your-power-bi-group.md) exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
+* You can now [share (and un-share) a dashboard from your group space](service-collaborate-power-bi-workspace.md) exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
 * We added 5 additional [industry related samples](powerbi-sample-datasets.md) to Power BI: Customer Profitability, Human Resources, Opportunity Analysis, Procurement Analysis, and Sales and Marketing Sample.
 * Stripe is an advanced payment platform for online businesses. From start-ups to Fortune 500 companies, thousands of businesses use Stripe to accept payments in over 130 currencies, from anyone in the world. By connecting Power BI with your existing Stripe account, you’ll be able to [use the Power BI Stripe content pack to monitor, explore, and visualize your Stripe activity](powerbi-content-pack-stripe.md).
 

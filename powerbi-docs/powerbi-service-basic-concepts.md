@@ -67,7 +67,7 @@ In the navigation bar, the datasets you've connected to or imported are listed u
 
 To [connect to or import a dataset](service-get-data.md), select **Get Data** (at the bottom of the navigation bar) or select the plus icon next to the **Datasets** heading. Follow the instructions to connect to or import the specific source and add the dataset to your workspace. New datasets are listed in the left navigation bar and marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
-If you're [part of an ***app workspace***](powerbi-service-collaborate-with-your-power-bi-group.md), datasets added by one workspace member are available to the other workspace members.
+If you're [part of an ***app workspace***](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
 
 Datasets can be refreshed, renamed, explored, used to create reports, and removed. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
