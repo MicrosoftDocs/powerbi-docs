@@ -172,7 +172,7 @@ Q:    There are four reports in the workspace but the usage metrics report only 
 A:    The usage metrics report only includes reports (or dashboards) that have been accessed in the past 90 days.  If a report (or dashboard) does not show up, likely it hasn't been used in more than 90 days.
 
 ## Next steps
-[Favorite a dashboard](powerbi-service-favorite-dashboards.md)
+[Favorite a dashboard](service-dashboard-favorite.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

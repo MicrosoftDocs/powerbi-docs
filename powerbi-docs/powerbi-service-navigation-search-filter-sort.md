@@ -37,11 +37,11 @@ For more information, see [How content is organized in Power BI service](service
 > 
 
 ## Favorite dashboards and apps
-Do you have a number of dashboards and apps that you visit often? By [setting them as *favorites*](powerbi-service-favorite-dashboards.md), they'll always be available from your left navbar.
+Do you have a number of dashboards and apps that you visit often? By [setting them as *favorites*](service-dashboard-favorite.md), they'll always be available from your left navbar.
 
 ![](media/powerbi-service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
 
-Working with favorites is described in more detail in the article [Favorites in Power BI service](powerbi-service-favorite-dashboards.md).
+Working with favorites is described in more detail in the article [Favorites in Power BI service](service-dashboard-favorite.md).
 
 ## Searching and sorting in workspaces
 A workspace has four content tabs: Dashboards, Reports, Workbooks, and Datasets.  Each of these tabs contains a search field and a sort button.  When you're starting out with Power BI service, you might not find these helpful because you'll have only one or two items per tab.  However, over time you may may end up with long lists of content.  Use searching and sorting to easily find what you need.

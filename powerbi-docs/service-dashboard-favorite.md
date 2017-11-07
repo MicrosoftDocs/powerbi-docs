@@ -38,21 +38,21 @@ Watch Amanda add favorites to her workspace, then follow the step-by-step instru
 
 
 1. Open a dashboard that you use often. Even dashboards that have been shared with you can be a *favorite*.
-2. From the top-right corner of Power BI service, select **Favorite** or the star ![](media/powerbi-service-favorite-dashboards/power-bi-favorite-icon.png)  icon.
+2. From the top-right corner of Power BI service, select **Favorite** or the star ![](media/service-dashboard-favorite/power-bi-favorite-icon.png)  icon.
    
-   ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-favorite.png)
+   ![](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
    
    You can also favorite a dashboard from your workspace **Dashboards** tab.
    
-   ![](media/powerbi-service-favorite-dashboards/power-bi-dashboard-favorite.png)
+   ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## Working with *favorites*
 1. To see your five most-recent favorites, from any workspace, select the arrow to the right of **Favorites**.  From here you can select a favorite dashboard to open it. Only the most-recent five favorites are listed (alphabetically). If you have more than five favorites, select **See all** to open the Favorites screen (see #2, below). 
    
-   ![](media/powerbi-service-favorite-dashboards/power-bi-favorite-flyout-new.png)
-2. To see **all** the dashboards that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![](media/powerbi-service-favorite-dashboards/power-bi-favorites-icon.png)  icon.  
+   ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
+2. To see **all** the dashboards that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![](media/service-dashboard-favorite/power-bi-favorites-icon.png)  icon.  
    
-    ![](media/powerbi-service-favorite-dashboards/power-bi-favorites-screen.png)
+    ![](media/service-dashboard-favorite/power-bi-favorites-screen.png)
    
    From here you can select a dashboard to open it, or share a dashboard with colleagues.
 
@@ -61,7 +61,7 @@ No longer use a dashboard as often as you used to?  You can unfavorite it. When 
 
 1. In the left navigation pane, select **Favorites** to open the **Favorites** screen.
    
-   ![](media/powerbi-service-favorite-dashboards/power-bi-unfavorites-screen.png)
+   ![](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
 2. Select the yellow star next to the dashboard to unfavorite.
 
 > **NOTE**: You can also unfavorite a dashboard from the dashboard itself. In the top-right corner of the dashboard you'll see a yellow star and the word **Unfavorite**. Select either to remove that dashboard from your favorites list. 

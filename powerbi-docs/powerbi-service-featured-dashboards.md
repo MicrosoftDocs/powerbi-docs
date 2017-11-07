@@ -29,7 +29,7 @@ Many of you have one dashboard that you visit more than any others.  It might be
 
 When you select a dashboard as *featured*, each time you open Power BI service, it will open with that dashboard displayed.  
 
-> **NOTE**: You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](powerbi-service-favorite-dashboards.md).
+> **NOTE**: You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](service-dashboard-favorite.md).
 > 
 > 
 
@@ -69,7 +69,7 @@ If you decide that you don't want any dashboard to be designated as featured, he
     ![](media/powerbi-service-featured-dashboards/power-bi-unfeature.png)
 
 ## Next steps
-[Favorite a dashboard](powerbi-service-favorite-dashboards.md)
+[Favorite a dashboard](service-dashboard-favorite.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

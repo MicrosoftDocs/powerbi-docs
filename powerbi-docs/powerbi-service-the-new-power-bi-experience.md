@@ -97,7 +97,7 @@ If you have Power BI Free, you'll only see one workspace -- **My Workspace**.
    
    ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
-To learn more, see [Favorite a dashboard](powerbi-service-favorite-dashboards.md)
+To learn more, see [Favorite a dashboard](service-dashboard-favorite.md)
 
 ## Recents
 Quickly get to the reports and dashboards that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
