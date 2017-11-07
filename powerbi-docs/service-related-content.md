@@ -56,7 +56,7 @@ The **Related content** pane opens. It shows all the reports that have visualiza
 
 ![](media/service-related-content/power-bi-view-related-dashboard-new.png)
 
-From here, you can take direct action on the related content.  For example, select a report name to open it.  For a listed report, select an icon to [analyze in Excel](service-analyze-in-excel.md), [rename](service-rename.md), or [get insights](service-insights.md). For a dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](service-insights.md), or open the **Settings** window for the dataset.  
+From here, you can take direct action on the related content.  For example, select a report name to open it.  For a listed report, select an icon to [analyze in Excel](service-analyze-in-excel.md), [rename](service-rename.md), or [get insights](service-insights.md). For a dataset, select an icon to [create a new report](service-report-create-new.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](service-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a report
 You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](sample-procurement.md).
@@ -76,7 +76,7 @@ The **Related content** pane opens. It shows the associated dataset and all dash
 
 ![](media/service-related-content/power-bi-view-related-report.png)
 
-From here, you can take direct action on the related content.  For example, select a dashboard name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](service-share-dashboards.md) or to open the **Settings** window for the dashboard. For the dataset, select an icon to [create a new report](powerbi-service-create-a-new-report.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](service-insights.md), or open the **Settings** window for the dataset.  
+From here, you can take direct action on the related content.  For example, select a dashboard name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](service-share-dashboards.md) or to open the **Settings** window for the dashboard. For the dataset, select an icon to [create a new report](service-report-create-new.md), [refresh](refresh-data.md), rename, [analyze in Excel](service-analyze-in-excel.md), [get insights](service-insights.md), or open the **Settings** window for the dataset.  
 
 ## View related content for a dataset
 You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](sample-procurement.md).
