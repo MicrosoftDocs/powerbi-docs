@@ -28,26 +28,26 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-marketo/PBI_GetData.png)
+   ![](media/service-connect-to-marketo/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-marketo/PBI_GetServices.png) 
+   ![](media/service-connect-to-marketo/pbi_getservices.png) 
 3. Select **Marketo** \> **Get**.
    
-   ![](media/powerbi-content-pack-marketo/marketo.png)
+   ![](media/service-connect-to-marketo/marketo.png)
 4. Enter the Marketo REST endpoint supplied to you by Marketo or your Marketo admin, and select Next.
    
-   ![](media/powerbi-content-pack-marketo/PBI_MarketoConnect.png)
+   ![](media/service-connect-to-marketo/pbi_marketoconnect.png)
    
    Read more about the Marketo REST endpoint: [http://developers.marketo.com/documentation/rest/endpoint-url/ ](http://developers.marketo.com/documentation/rest/endpoint-url/).
 5. Using the **Basic** Authentication Method, enter the Client ID as the **Username** and the Client Secret as the **Password**. Client ID and Client Secret are available in Marketo or from your marketo admin ([http://developers.marketo.com/documentation/rest/custom-service/](http://developers.marketo.com/documentation/rest/custom-service/)). 
    
-   ![](media/powerbi-content-pack-marketo/PBI_MarketoSignIn.png)
+   ![](media/service-connect-to-marketo/pbi_marketosignin.png)
    
    This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
 6. Once connected to your Marketo account, a dashboard with all your data is loaded:
    
-   ![](media/powerbi-content-pack-marketo/PBI_MarketoDash.png)
+   ![](media/service-connect-to-marketo/pbi_marketodash.png)
 
 **What Now?**
 
