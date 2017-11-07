@@ -28,21 +28,21 @@ Connect to the [Ziosk Survey Analytics content pack](https://app.powerbi.com/get
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.  
    
-    ![](media/powerbi-content-pack-ziosk/getdata.png)
+    ![](media/service-connect-to-ziosk/getdata.png)
 2. In the **Services** box, select **Get**.  
    
-    ![](media/powerbi-content-pack-ziosk/services.png)
+    ![](media/service-connect-to-ziosk/services.png)
 3. Select **Ziosk Survey Analytics**, then select **Get**.  
    
-    ![](media/powerbi-content-pack-ziosk/ziosk.png)
+    ![](media/service-connect-to-ziosk/ziosk.png)
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your Ziosk credentials.
    
-    ![](media/powerbi-content-pack-ziosk/creds.png)
+    ![](media/service-connect-to-ziosk/creds.png)
    
-    ![](media/powerbi-content-pack-ziosk/creds2.png)
+    ![](media/service-connect-to-ziosk/creds2.png)
 5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your Ziosk account.
    
-    ![](media/powerbi-content-pack-ziosk/dashboard.png)
+    ![](media/service-connect-to-ziosk/dashboard.png)
 
 **What Now?**
 
