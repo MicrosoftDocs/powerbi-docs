@@ -9,17 +9,17 @@
     - name: "Self-Service Signup for Power BI"
       href: service-self-service-signup-for-power-bi.md
     - name: "Power BI Free vs Pro"
-      href: powerbi-free-vs-pro.md
+      href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
     - name: "Power BI Videos"
-      href: powerbi-videos.md
+      href: videos.md
     - name: "Power BI webinars"
-      href: powerbi-webinars.md
+      href: webinars.md
     - name: "The new Power BI navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
-      href: service-tips-for-getting-help.md
+      href: service-tips-for-finding-help.md
     - name: "Searching and sorting content"
       href: service-navigation-search-filter-sort.md
     - name: "Related content"
@@ -29,7 +29,7 @@
     - name: "Opt-in for Power BI preview features"
       href: service-preview-features.md
     - name: "Frequently asked questions"
-      href: powerbi-frequently-asked-questions.md
+      href: service-frequently-asked-questions.md
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
     - name: "Microsoft Flow and Power BI"
@@ -53,23 +53,23 @@
     - name: "Tutorial: Using the Power BI sample content packs"
       href: sample-tutorial-connect-to-the-samples.md
     - name: "Download the Financial Sample workbook for Power BI"
-      href: sample-download-the-financial-sample-workbook.md
+      href: sample-financial-download.md
     - name: "Supplier Quality Analysis sample for Power BI: Take a tour"
-      href: sample-supplier-quality-analysis-take-a-tour.md
+      href: sample-supplier-quality.md
     - name: "IT Spend Analysis sample for Power BI: Take a tour"
       href: sample-it-spend-analysis-take-a-tour.md
     - name: "Sales & Marketing sample for Power BI: Take a tour"
-      href: sample-sales-and-marketing-take-a-tour.md
+      href: sample-sales-and-marketing.md
     - name: "Customer Profitability sample for Power BI: Take a tour"
-      href: sample-customer-profitability-take-a-tour.md
+      href: sample-customer-profitability.md
     - name: "Human Resources sample: Take a tour"
-      href: sample-human-resources-take-a-tour.md
+      href: sample-human-resources.md
     - name: "Opportunity Analysis sample for Power BI: Take a tour"
-      href: sample-opportunity-analysis-take-a-tour.md
+      href: sample-opportunity-analysis.md
     - name: "Procurement Analysis sample: Take a tour"
-      href: sample-procurement-analysis-take-a-tour.md
+      href: sample-procurement.md
     - name: "Retail Analysis sample for Power BI: Take a tour"
-      href: sample-retail-analysis-take-a-tour.md
+      href: sample-retail-analysis.md
   - name: Common tasks
     items: 
     - name: "Favorite dashboards in Power BI"
@@ -79,15 +79,15 @@
     - name: "Recent content"
       href: service-recent.md
     - name: "Subscribe to a report or dashboard"
-      href: service-subscribe-to-report.md
+      href: service-report-subscribe.md
     - name: "Rename content within Power BI"
       href: service-rename.md
     - name: "Display dashboards and reports in Full Screen mode (TV mode)"
-      href: service-dash-and-reports-fullscreen.md
+      href: service-fullscreen-mode.md
     - name: "Remove content within Power BI"
       href: service-delete.md
     - name: "Display a dashboard tile in Focus mode"
-      href: service-display-dash-in-focus-mode.md
+      href: service-focus-mode.md
   - name: Premium
     items: 
     - name: "Power BI Premium - what is it?"
@@ -185,7 +185,7 @@
     - name: "SparkPost content pack"
       href: service-connect-to-sparkpost.md
     - name: "SQL Database Auditing content pack"
-      href: powerbi-azure-sql-database-auditing-connector.md
+      href: service-connect-to-azure-sql-database-auditing.md
     - name: "SQL Sentry content pack"
       href: service-connect-to-sql-sentry.md
     - name: "Stripe content pack"
@@ -221,23 +221,23 @@
     - name: "Dashboards in Power BI"
       href: service-dashboards.md
     - name: "Create a dashboard from a report"
-      href: service-create-a-dashboard.md
+      href: service-dashboard-copy.md
     - name: "Create a copy of a dashboard"
-      href: service-create-a-dashboard-copy.md
+      href: service-dashboard-copy.md
     - name: "Dashboard tiles in Power BI"
       href: service-dashboard-tiles.md
     - name: "Pin a tile to a Power BI dashboard from a report"
-      href: service-pin-a-tile-to-a-dashboard-from-a-report.md
+      href: service-dashboard-pin-tile-from-report.md
     - name: "Pin a tile from one dashboard to another dashboard"
-      href: powerbi-pin-a-tile-from-one-dashboard-to-another.md
+      href: service-pin-tile-to-another-dashboard.md
     - name: "Pin a tile to a Power BI dashboard from Excel"
-      href: service-pin-a-tile-to-a-dashboard-from-excel.md
+      href: service-dashboard-pin-tile-from-excel.md
     - name: "Power BI publisher for Excel"
-      href: powerbi-publisher-for-excel.md
+      href: publisher-for-excel.md
     - name: "Pin a tile to a Power BI dashboard from the Q&A question box"
-      href: service-pin-a-tile-to-a-dashboard-from-the-question-box.md
+      href: service-dashboard-pin-tile-from-q-and-a.md
     - name: "Pin an entire report page to a Power BI dashboard"
-      href: service-pin-a-live-tile-to-a-dashboard-from-a-report.md
+      href: service-dashboard-pin-live-tile-from-report.md
     - name: "Shared with me"
       href: service-shared-with-me.md
     - name: "Usage metrics for dashboards"
@@ -247,27 +247,27 @@
     - name: "Power BI Unified Notification Center"
       href: service-notification-center.md
     - name: "Add an image, text box, video, or web code to your dashboard"
-      href: service-add-a-widget-to-a-dashboard.md
+      href: service-dashboard-add-widget.md
     - name: "Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
-      href: service-edit-a-tile-in-a-dashboard.md
+      href: service-dashboard-edit-tile.md
     - name: "Tips for designing a great Power BI dashboard"
-      href: service-tips-for-designing-a-great-dashboard.md
+      href: service-dashboards-design-tips.md
     - name: "Quick Insights in Power BI"
-      href: service-auto-insights.md
+      href: service-insights.md
     - name: "Types of Quick Insights supported by Power BI"
-      href: service-auto-insights-types.md
+      href: service-insight-types.md
     - name: "Optimize your data for Power BI Quick Insights"
-      href: service-auto-insights-optimize.md
+      href: service-insights-optimize.md
     - name: "Display a dashboard tile in Full Screen mode (TV mode)"
-      href: service-display-tile-in-full-screen-mode.md
+      href: service-tile-fullscreen-mode.md
     - name: "Featured dashboards in Power BI"
       href: service-dashboard-featured.md
     - name: "Create a phone view of a dashboard"
-      href: service-create-dashboard-phone-view.md
+      href: service-create-dashboard-mobile-phone-view.md
     - name: "Create a QR code for a tile"
-      href: service-qr-code-for-tile.md
+      href: service-create-qr-code-for-tile.md
     - name: "Add an image to a dashboard"
-      href: service-add-an-image-to-a-dashboard.md
+      href: service-dashboard-add-image.md
     - name: "Dashboard data classification"
       href: service-data-classification.md
   - name: Ask questions of your data
@@ -275,13 +275,13 @@
     - name: "Q&A in Power BI"
       href: service-q-and-a.md
     - name: "How to use Power BI Q&A"
-      href: service-how-to-use-q-and-a.md
+      href: service-how-to-q-and-a.md
     - name: "Tutorial: Get Started with Power BI Q&A"
-      href: service-tutorial-introduction-to-q-and-a.md
+      href: power-bi-visualization-introduction-to-q-and-a.md
     - name: "Using Q&A with Power BI Gateway - Enterprise data (Preview)"
       href: service-q-and-a-direct-query.md
     - name: "Make your data work well with Q&A in Power BI"
-      href: service-make-your-data-work-well-with-q-and-a.md
+      href: service-prepare-data-for-q-and-a.md
     - name: "Introduction to Cortana for Power BI"
       href: service-cortana-intro.md
     - name: "Enable Cortana for Power BI"
@@ -295,37 +295,37 @@
   - name: Share your work
     items: 
     - name: "How should I collaborate on & share dashboards and reports?"
-      href: service-how-should-i-share-my-dashboard.md
+      href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: "What are apps in Power BI?"
-      href: service-what-are-apps.md
+      href: service-install-use-apps.md
     - name: "Create and distribute an app"
-      href: service-create-apps.md
+      href: service-create-distribute-apps.md
     - name: "Organizational content packs: Introduction"
-      href: service-organizational-content-packs-introduction.md
+      href: service-organizational-content-pack-introduction.md
     - name: "Create and publish an organizational content pack (tutorial)"
-      href: service-organizational-content-pack-tutorial-create-and-publish.md
+      href: service-organizational-content-pack-create-and-publish.md
     - name: "Share a dashboard with colleagues and others"
-      href: service-share-unshare-dashboard.md
+      href: service-share-dashboards.md
     - name: "Publish from Power BI to the web"
       href: service-publish-to-web.md
     - name: "Embed report in SharePoint Online"
       href: service-embed-report-spo.md
     - name: "Connect to files on your group's OneDrive for Business"
-      href: service-connect-to-files-on-your-groups-onedrive-for-business.md
+      href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
     - name: "Collaborate in your Power BI group workspace"
-      href: service-collaborate-with-your-power-bi-group.md
+      href: service-collaborate-power-bi-workspace.md
     - name: "Manage your group in Power BI and Office 365"
-      href: service-manage-your-group-in-power-bi-and-office-365.md
+      href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: "Manage, update, and delete organizational content packs"
-      href: service-organizational-content-packs-manage-update-delete.md
+      href: service-organizational-content-pack-manage-update-delete.md
     - name: "Find and connect to an organizational content pack"
       href: service-organizational-content-pack-find-and-open.md
     - name: "Organizational content packs: Copy, refresh, & get access"
-      href: service-organizational-content-packs-use-and-work-with.md
+      href: service-organizational-content-pack-copy-refresh-access.md
     - name: "Remove your connection to an organizational content pack"
-      href: service-organizational-content-pack-delete.md
+      href: service-organizational-content-pack-disconnect.md
     - name: "Share a dashboard that links to an Excel workbook on OneDrive for Business"
-      href: service-share-dashboard-that-links-to-excel.md
+      href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: "Publish to PowerPoint"
       href: service-publish-to-powerpoint.md
   - name: Reports
@@ -333,53 +333,53 @@
     - name: "Reports in Power BI"
       href: service-reports.md
     - name: "Create a new report from a dataset"
-      href: service-create-a-new-report.md
+      href: service-report-create-new.md
     - name: "Create a new report from an existing report"
-      href: service-copy-a-report.md
+      href: power-bi-report-copy.md
     - name: "Recent content"
       href: service-recent.md
     - name: "The report editor...Take a tour"
       href: service-the-report-editor-take-a-tour.md
     - name: "Add a page to a Power BI report"
-      href: service-add-a-page-to-a-report.md
+      href: power-bi-report-add-page.md
     - name: "Add a filter to a report in Power BI"
-      href: service-add-a-filter-to-a-report.md
+      href: power-bi-report-add-filter.md
     - name: "Save a report in Power BI"
       href: service-report-save.md
     - name: "About filters and highlighting in Power BI reports"
-      href: service-about-filters-and-highlighting-in-reports.md
+      href: power-bi-reports-filters-and-highlighting.md
     - name: "How to use report filters"
-      href: service-how-to-use-a-report-filter.md
+      href: power-bi-how-to-report-filter.md
     - name: "Analyze in Excel"
       href: service-analyze-in-excel.md
     - name: "Change how visuals interact in a report"
-      href: service-visual-interactions.md
+      href: service-reports-visual-interactions.md
     - name: "Open a Power BI report in Reading View"
-      href: service-open-a-report-in-reading-view.md
+      href: service-report-open-in-reading-view.md
     - name: "Go from Reading View to Editing View in Power BI"
-      href: service-go-from-reading-view-to-editing-view.md
+      href: service-reading-view-and-editing-view.md
     - name: "Interact with a report in Editing View in Power BI"
       href: service-interact-with-a-report-in-editing-view.md
     - name: "Interact with a report in Reading View in Power BI"
       href: service-interact-with-a-report-in-reading-view.md
     - name: "Tips and tricks for creating reports in Power BI service"
-      href: service-tips-and-tricks-for-creating-reports.md
+      href: power-bi-reports-tips-and-tricks-for-creating.md
     - name: "Analytics pane"
       href: service-analytics-pane.md
     - name: "Usage metrics for reports"
       href: service-usage-metrics.md
     - name: "Create a QR code for a report"
-      href: service-qr-code-for-report.md
+      href: service-create-qr-code-for-report.md
     - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
       href: service-aggregates.md
     - name: "Page display settings in a Power BI report"
-      href: service-change-report-display-settings.md
+      href: power-bi-report-display-settings.md
     - name: "Tutorial: Change the display settings for a page in a Power BI report"
-      href: service-tutorial-change-report-display-settings.md
+      href: power-bi-change-report-display-settings.md
     - name: "Reorder pages in a report in Power BI"
-      href: service-reorder-pages-in-a-report.md
+      href: service-report-reorder-pages.md
     - name: "Duplicate a report page in Power BI"
-      href: service-copy-and-paste-a-report-page.md
+      href: power-bi-report-copy-paste-page.md
     - name: "Export a report from Power BI service to Desktop (Preview)"
       href: service-export-to-pbix.md
     - name: "Filter a report using query string parameters in the URL"
@@ -389,81 +389,81 @@
     - name: "Visualizations in Power BI"
       href: service-visualizations-for-reports.md
     - name: "Visualization types in Power BI"
-      href: service-visualization-types-for-reports-and-q-and-a.md
+      href: power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: "Visualization best practices"
-      href: service-visualization-best-practices.md
+      href: power-bi-visualization-best-practices.md
     - name: "Custom visualizations in Power BI"
       href: power-bi-custom-visuals.md
     - name: "Tutorial: Part I, Add visualizations to a Power BI report"
       href: service-add-visualizations-to-a-report-i.md
     - name: "Tutorial: Part 2, Add visualizations to a Power BI report"
-      href: service-add-visualizations-to-a-report-ii.md
+      href: power-bi-report-add-visualizations-ii.md
     - name: "See the data used to create the visual"
-      href: service-reports-see-data.md
+      href: service-reports-show-data.md
     - name: "Export data from a visualization"
       href: power-bi-visualization-export-data.md
     - name: "Change the type of visualization in a Power BI report"
-      href: service-change-the-type-of-visualization-in-a-report.md
+      href: power-bi-report-change-visualization-type.md
     - name: "Add a custom visualization to a Power BI report"
-      href: powerbi-custom-visuals-add-to-report.md
+      href: power-bi-report-add-custom-visual.md
     - name: "Download and use custom visuals from the Office store"
-      href: powerbi-custom-visuals-office-store.md
+      href: service-custom-visuals-office-store.md
     - name: "Getting started with color formatting and axis properties"
       href: service-getting-started-with-color-formatting-and-axis-properties.md
     - name: "Tips and tricks for color formatting in Power BI"
       href: service-tips-and-tricks-for-color-formatting.md
     - name: "Change how a chart is sorted in a Power BI report"
-      href: service-change-how-a-chart-is-sorted.md
+      href: power-bi-report-change-sort.md
     - name: "Copy and paste a visualization in Power BI"
       href: power-bi-visualization-copy-paste.md
     - name: "Move, resize, and pop out a visualization in a Power BI report"
-      href: service-move-and-resize-a-visualization.md
+      href: power-bi-visualization-move-and-resize.md
     - name: "Drill down in a visualization in Power BI"
-      href: service-drill-down-in-a-visualization.md
+      href: power-bi-visualization-drill-down.md
     - name: "Hyperlinks in tables"
-      href: service-hyperlinks-in-tables.md
+      href: power-bi-hyperlinks-in-tables.md
     - name: "Add a hyperlink to a Text Box in a Power BI report"
-      href: service-add-a-hyperlink-to-a-text-box.md
+      href: service-add-hyperlink-to-text-box.md
     - name: "Histograms"
       href: service-histograms.md
     - name: "Tips and Tricks for Power BI Map visualizations"
-      href: service-tips-and-tricks-for-power-bi-map-visualizations.md
+      href: power-bi-map-tips-and-tricks.md
     - name: "Text Boxes in Power BI reports"
-      href: service-text-boxes-in-reports.md
+      href: power-bi-reports-add-text-and-shapes.md
     - name: "Tutorial: ArcGIS in Power BI"
-      href: service-tutorial-arcgis.md
+      href: power-bi-visualization-arcgis.md
     - name: "Tutorial: Basic Area chart"
-      href: service-tutorial-basic-area-chart.md
+      href: power-bi-visualization-basic-area-chart.md
     - name: "Tutorial: Combo Chart in Power BI"
-      href: service-tutorial-combo-chart-merge-visualizations.md
+      href: power-bi-visualization-combo-chart.md
     - name: "Tutorial: Customize visualization title, background, and legend"
-      href: service-tutorial-customize-visualization-title-background-and-legend.md
+      href: power-bi-visualization-customize-title-background-and-legend.md
     - name: "Tutorial: Customize X-axis and Y-axis properties"
-      href: service-tutorial-customize-x-axis-and-y-axis-properties.md
+      href: power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: "Tutorial: Doughnut charts in Power BI"
-      href: service-tutorial-doughnut-charts.md
+      href: power-bi-visualization-doughnut-charts.md
     - name: "Tutorial: Filled Maps (Choropleths) in Power BI"
-      href: service-tutorial-filled-maps-choropleths.md
+      href: power-bi-visualization-filled-maps-choropleths.md
     - name: "Tutorial: Funnel charts in Power BI"
       href: service-tutorial-funnel-charts.md
     - name: "KPI Visuals"
-      href: service-tutorial-kpi.md
+      href: power-bi-visualization-kpi.md
     - name: "Tutorial: Radial Gauge charts in Power BI"
-      href: service-tutorial-radial-gauge-charts.md
+      href: power-bi-visualization-radial-gauge-charts.md
     - name: "Tutorial: Scatter Charts in Power BI"
-      href: service-tutorial-scatter.md
+      href: power-bi-visualization-scatter.md
     - name: "Tutorial: Slicers in Power BI"
-      href: service-tutorial-slicers.md
+      href: power-bi-visualization-slicers.md
     - name: "Tutorial: Working with tables"
-      href: service-tutorial-tables.md
+      href: power-bi-visualization-tables.md
     - name: "Tutorial: Treemaps in Power BI"
-      href: service-tutorial-treemaps.md
+      href: power-bi-visualization-treemaps.md
     - name: "Tutorial: Waterfall charts in Power BI"
-      href: service-tutorial-waterfall-charts.md
+      href: power-bi-visualization-waterfall-charts.md
     - name: "Create a big number tile for a Power BI dashboard by asking a question"
-      href: service-create-a-big-number-tile-for-a-dashboard.md
+      href: power-bi-visualization-big-number.md
     - name: "Create a big number tile from a Power BI report"
-      href: service-create-a-big-number-tile-from-a-power-bi-report.md
+      href: power-bi-visualization-big-number-report.md
     - name: "Create advanced analytics and visualizations using R scripts in Power BI"
       href: service-r-visuals.md
   - name: Data from files
@@ -475,7 +475,7 @@
     - name: "Get data from Excel workbook files"
       href: service-excel-workbook-files.md
     - name: "Get data from Power BI Desktop files"
-      href: service-powerbi-desktop-files.md
+      href: service-desktop-files.md
     - name: "Get data from Comma Separated Value (.CSV) files"
       href: service-comma-separated-value-files.md
     - name: "Real-time streaming in Power BI (Preview)"
@@ -551,7 +551,7 @@
     - name: "Administering Power BI in your organization"
       href: service-admin-administering-power-bi-in-your-organization.md
     - name: "Power BI (free) in your organization"
-      href: service-admin-powerbi-free-in-your-organization.md
+      href: service-admin-service-free-in-your-organization.md
     - name: "Purchasing Power BI Pro"
       href: service-admin-purchasing-power-bi-pro.md
     - name: "Power BI Governance and Deployment Approaches"
@@ -613,7 +613,7 @@
     - name: "Troubleshooting tile errors"
       href: refresh-troubleshooting-tile-errors.md
     - name: "How to refresh your Xero content pack credentials if refresh failed"
-      href: service-refresh-xero-content-pack-credentials.md    
+      href: service-refresh-xero-credentials.md   
 - name: Power BI Desktop
   items:
   - name: Get started
@@ -751,7 +751,7 @@
     - name: "Analytics pane in Power BI Desktop"
       href: powerbi-desktop-analytics-pane.md
     - name: "Add a custom visual to a report (Desktop)"
-      href: powerbi-custom-visuals-use.md
+      href: power-bi-custom-visuals-use.md
     - name: "Use Report Themes"
       href: powerbi-desktop-report-themes.md
     - name: "Use Quick measures"
@@ -775,7 +775,7 @@
     - name: "Use the numeric range slicer"
       href: powerbi-desktop-slicer-numeric-range.md
     - name: "Create custom Power BI answer cards for Cortana"
-      href: service-cortana-desktop-entity-cards.md
+      href: service-cortana-answer-cards.md
     - name: "Row-level security"
       href: powerbi-desktop-rls.md
     - name: "Customizing tooltips in Power BI Desktop"
@@ -937,13 +937,13 @@
   - name: Create a custom visual
     items: 
     - name: "Create a custom visual with the Developer Tools"
-      href: powerbi-custom-visuals-getting-started-with-developer-tools.md
+      href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Review custom visuals for security and privacy"
-      href: powerbi-custom-visuals-review-for-security-and-privacy.md
+      href: service-custom-visuals-review-for-security-and-privacy.md
     - name: "Publish custom visuals to the Office store"
       href: powerbi-developer-office-store.md
     - name: "Get a custom visual certified"
-      href: powerbi-custom-visuals-certified.md
+      href: power-bi-custom-visuals-certified.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"
@@ -1081,6 +1081,4 @@
 - name: Resources
   items: 
   - name: "Whitepapers"
-    href: powerbi-whitepapers.md
-  - name: "SQL Server Reporting Services documentation"
-    href: https://go.microsoft.com/fwlink/?linkid=848714
+    href: whitepapers.md
