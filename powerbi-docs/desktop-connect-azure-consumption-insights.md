@@ -199,5 +199,5 @@ The columns and names of details in the Azure Portal are similar in the API and 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 
