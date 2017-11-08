@@ -90,7 +90,7 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
 ## Next steps
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
-[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Sign up for Power BI (free) with a custom Azure Active Directory tenant](developer/create-an-azure-active-directory-tenant.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 

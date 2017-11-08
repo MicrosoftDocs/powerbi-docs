@@ -180,16 +180,16 @@ Power BI Embedded will continue to be available for existing apps per the follow
 | Enterprise Agreement |Until expiration of existing agreement |
 | Direct and CSP |One year from General Availability of Power BI Premium |
 
-Yes, you should start thinking about migrating your embedded analytics solution to Power BI Premium. For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md).
+Yes, you should start thinking about migrating your embedded analytics solution to Power BI Premium. For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md).
 
 **How do I migrate my existing app built on Power BI Embedded?**  
-Refer to the [migration documentation](powerbi-developer-migrate-from-powerbi-embedded.md) for guidance on migrating apps.
+Refer to the [migration documentation](developer/migrate-from-powerbi-embedded.md) for guidance on migrating apps.
 
 **Is Microsoft going back on its commitment to Power BI Embedded Free?**  
 Under the previous model, we offered a limited number of sessions for developing and testing. In the new scenario, customers will continue having options available to them to start developing and testing for free in their way to be production ready. Customers will benefit from a 2-month Power BI Pro trial to get started with dev & test. Power BI Desktop, the data exploration and report authoring tool, will continue to be available for free.
 
 **Is Power BI Embedded still an Azure Service? Where will I purchase, provision and manage Power BI Embedded?**  
-Power BI Embedded is converging with Power BI service and therefore it will be purchased, provisioned and managed as such moving forward. For more information, see [Embedding with Power BI](powerbi-developer-embedding.md).
+Power BI Embedded is converging with Power BI service and therefore it will be purchased, provisioned and managed as such moving forward. For more information, see [Embedding with Power BI](developer/embedding.md).
 
 ## Power BI Desktop
 **What changes are you making to Power BI Desktop?**  

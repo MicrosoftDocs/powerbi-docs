@@ -75,7 +75,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 [Use custom visualizations in Power BI Desktop](power-bi-custom-visuals-use.md)  
 [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md)  
 [Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)  
-[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Publish custom visuals to the Office store](developer/office-store.md)  
 [Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
