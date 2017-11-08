@@ -23,13 +23,13 @@ ms.author: maggies
 # View your data offline in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-offline-android/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-offline-android/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-offline-android/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-offline-android/android-tablet-logo-50-px.png) | ![Windows 10](media/powerbi-mobile-offline-android/win-10-logo-50-px.png) |
+| ![iPhone](media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android phone](media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android tablet](media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
 
-![No network message](media/powerbi-mobile-offline-android/power-bi-iphone-no-network.png)
+![No network message](media/mobile-apps-offline-data/power-bi-iphone-no-network.png)
 
 By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
 

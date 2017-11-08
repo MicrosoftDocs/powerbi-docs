@@ -157,7 +157,7 @@ Read the [December 2016 mobile apps blog feature summary](https://powerbi.micros
 #### All devices
 **Offline background refresh**
 
-To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven’t accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](powerbi-mobile-offline-android.md).
+To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven’t accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](mobile-apps-offline-data.md).
 
 #### iOS devices
 **Annotate and share**
@@ -366,7 +366,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Report gallery** Open your reports directly in the report gallery.​
 
-**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
+**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
@@ -375,7 +375,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **View reports** Open reports from tiles on your dashboards.​
 
-**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
+**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
 
 #### Power BI app for Windows 10 devices
 **Quick access** Access your dashboards, reports, and groups quickly with a new “recently viewed” list and global search so you can find the data you need.
