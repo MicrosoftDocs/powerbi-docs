@@ -91,7 +91,7 @@ Once authenticated, within your application, use the Power BI REST APIs and Java
 
 For **embedding for your organization**, see the following walkthroughs:
 
-* [Integrate a dashboard into an app](../powerbi-developer-integrate-dashboard.md)
+* [Integrate a dashboard into an app](integrate-dashboard.md)
 * [Integrate a tile into an app](../powerbi-developer-integrate-tile.md)
 * [Integrate a report into an app](../powerbi-developer-integrate-report.md)
 

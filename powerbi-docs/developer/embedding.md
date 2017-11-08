@@ -35,7 +35,7 @@ Embedding for your organization allows you to extend the Power BI service. This 
 
 For embedding for your organization, see the following:
 
-* [Integrate a dashboard into an app](../powerbi-developer-integrate-dashboard.md)
+* [Integrate a dashboard into an app](integrate-dashboard.md)
 * [Integrate a tile into an app](../powerbi-developer-integrate-tile.md)
 * [Integrate a report into an app](../powerbi-developer-integrate-report.md)
 
