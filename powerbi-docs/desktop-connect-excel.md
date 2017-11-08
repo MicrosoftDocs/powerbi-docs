@@ -25,24 +25,24 @@ Connecting to an Excel workbook from Power BI Desktop is straightforward, and th
 
 In Power BI Desktop, select **Get Data > Excel** from the **Home** ribbon.
 
-![](media/powerbi-desktop-connect-excel/connect_to_Excel_1.png)
+![](media/desktop-connect-excel/connect_to_excel_1.png)
 
 Select your workbook from the **Open** dialog that appears.
-![](media/powerbi-desktop-connect-excel/connect_to_Excel_2.png)
+![](media/desktop-connect-excel/connect_to_excel_2.png)
 
 Power BI Desktop presents the tables on other data elements from the workbook in the **Navigator** window. When you select a table in the left pane, a preview of the data appears in the right pane.
 
-![](media/powerbi-desktop-connect-excel/connect_to_Excel_3.png)
+![](media/desktop-connect-excel/connect_to_excel_3.png)
 
 You can select the Load button to import the data, or if you want to edit the data using **Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
 
 When you load the data, Power BI Desktop displays the **Load** window and displays the activity associated with loading the data.  
 
-![](media/powerbi-desktop-connect-excel/connect_to_Excel_4.png)
+![](media/desktop-connect-excel/connect_to_excel_4.png)
 
 When complete, Power BI Desktop displays the tables and fields it imported from your Excel workbook in the **Fields** pane, on the right side of the Desktop.
 
-![](media/powerbi-desktop-connect-excel/connect_to_Excel_5.png)
+![](media/desktop-connect-excel/connect_to_excel_5.png)
 
 And that’s it!
 

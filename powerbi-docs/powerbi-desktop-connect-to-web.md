@@ -52,7 +52,7 @@ To see connecting to a Web page in more depth and action, take a look at the [Po
 
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)   
 * [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
 

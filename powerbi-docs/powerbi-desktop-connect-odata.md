@@ -55,6 +55,6 @@ You’re now ready to use the imported data from the OData feed in Power BI Desk
 * [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
 
