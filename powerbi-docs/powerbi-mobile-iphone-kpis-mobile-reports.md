@@ -34,7 +34,7 @@ The Power BI mobile apps deliver live, touch-enabled mobile access to your on-pr
 ## First things first
 **The mobile apps are where you view Power BI content, not where you create it.**
 
-* You and other report creators in your organization [create Power BI reports with Power BI Desktop, then publish them to the Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md) web portal. 
+* You and other report creators in your organization [create Power BI reports with Power BI Desktop, then publish them to the Power BI Report Server](report-server/quickstart-create-powerbi-report.md) web portal. 
 * You create [KPIs right in the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services), organize them in folders, and mark your favorites so you can find them easily. 
 * You [create Reporting Services mobile reports](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).  
 

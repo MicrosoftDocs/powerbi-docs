@@ -28,7 +28,7 @@ The Microsoft Power BI for iOS on the iPad delivers the mobile BI experience for
 You create Power BI reports in Power BI Desktop, and publish them:
 
 * [Publish them to the Power BI service](service-get-started.md), and create dashboards.
-* [Publish them on-premises to Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md).
+* [Publish them on-premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
 
 Then in the Power BI app for the iPad, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
@@ -130,7 +130,7 @@ Here are some other things you can do in the iPad app with dashboards and report
 ### Reports and KPIs on the report server web portals
 * [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for iOS devices.
 * Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
-* Create [reports in Power BI Desktop and publish them on the Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md) web portal
+* Create [reports in Power BI Desktop and publish them on the Power BI Report Server](report-server/quickstart-create-powerbi-report.md) web portal
 
 ### See also
 * [Get started with Power BI](service-get-started.md)  

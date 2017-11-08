@@ -1027,75 +1027,85 @@
   - name: Overview
     items: 
     - name: "Get Started"
-      href: reportserver-get-started.md
+      href: report-server/get-started.md
     - name: "What's New"
-      href: reportserver-whats-new.md
+      href: report-server/whats-new.md
     - name: "Release notes"
-      href: reportserver-release-notes.md
+      href: report-server/release-notes.md
     - name: "Change log"
-      href: reportserver-changelog.md
+      href: report-server/changelog.md
     - name: "Support timeline"
-      href: reportserver-support-timeline.md
+      href: report-server/support-timeline.md
   - name: User handbook
     items: 
     - name: "Overview"
-      href: reportserver-user-handbook-overview.md
+      href: report-server/user-handbook-overview.md
     - name: "Navigating content"
-      href: reportserver-getting-around.md
+      href: report-server/getting-around.md
     - name: "Quickstart: Power BI reports"
-      href: reportserver-quickstart-powerbi-report.md
+      href: report-server/quickstart-create-powerbi-report.md
     - name: "Quickstart: Paginated reports"
-      href: reportserver-quickstart-paginated-report.md
+      href: report-server/quickstart-create-paginated-report.md
     - name: "Advanced Power BI reports"
       href: https://go.microsoft.com/fwlink/?linkid=848708
+    - name: "Power BI report scheduled refresh"
+      href: report-server/scheduled-refresh.md
     - name: "Advanced paginated reports"
       href: https://go.microsoft.com/fwlink/?linkid=848709
     - name: "Working with KPIs"
       href: https://go.microsoft.com/fwlink/?linkid=849021
+    - name: "Supported data sources"
+      href: report-server/data-sources.md
     - name: "Connect to data sources"
-      href: reportserver-connect-data-sources.md
+      href: report-server/connect-data-sources.md
+    - name: "Configure scheduled refresh"
+      href: report-server/configure-scheduled-refresh.md
     - name: "Add comments to a report"
-      href: reportserver-add-comments.md
+      href: report-server/add-comments.md
     - name: "Subscriptions"
       href: https://go.microsoft.com/fwlink/?linkid=851310
     - name: "Using the Mobile App"
       href: https://go.microsoft.com/fwlink/?linkid=848711
     - name: "Quickstart: Embed reports"
-      href: reportserver-quickstart-embed.md
+      href: report-server/quickstart-embed.md
+    - name: "Troubleshoot scheduled refresh"
+      href: report-server/scheduled-refresh-troubleshoot.md
   - name: Administrator handbook
     items: 
     - name: "Overview"
-      href: reportserver-admin-handbook-overview.md
+      href: report-server/admin-handbook-overview.md
     - name: "Hardware and software requirements"
-      href: reportserver-system-requirements.md
+      href: report-server/system-requirements.md
     - name: "Find your product key"
-      href: reportserver-find-product-key.md
+      href: report-server/find-product-key.md
     - name: "Quickstart: Install"
-      href: reportserver-quickstart-install-report-server.md
+      href: report-server/quickstart-install-report-server.md
     - name: "Install a report server"
-      href: reportserver-install-report-server.md
+      href: report-server/install-report-server.md
     - name: "Install Power BI Desktop"
-      href: reportserver-install-powerbi-desktop.md
+      href: report-server/install-powerbi-desktop.md
     - name: "Upgrade a report server"
-      href: reportserver-upgrade.md
+      href: report-server/upgrade.md
     - name: "Migrate a report server"
-      href: reportserver-migrate-report-server.md
+      href: report-server/migrate-report-server.md
     - name: "Browser support"
-      href: reportserver-browser-support.md
+      href: report-server/browser-support.md
     - name: "Configure Kerberos to use Power BI reports"
-      href: reportserver-configure-kerberos-powerbi-reports.md
+      href: report-server/configure-kerberos-powerbi-reports.md
     - name: "Capacity planning whitepaper"
-      href: reportserver-capacity-planning.md
+      href: report-server/capacity-planning.md
+    - name: "Host Excel workbooks"
+      href: report-server/excel-oos.md
   - name: Developer handbook
     items: 
     - name: "Overview"
-      href: reportserver-developer-handbook-overview.md
+      href: report-server/developer-handbook-overview.md
     - name: "Report Viewer Control"
       href: https://go.microsoft.com/fwlink/?linkid=848724
     - name: "Develop extensions"
       href: https://go.microsoft.com/fwlink/?linkid=848723
     - name: "Quickstart: Embed reports"
-      href: reportserver-quickstart-embed.md
+      href: report-server/quickstart-embed.md
   - name: Reference
     items: 
     - name: "WMI"

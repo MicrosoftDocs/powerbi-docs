@@ -30,7 +30,7 @@ Applies to:
 A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process.
 
 1. [Create reports in Power BI Desktop](desktop-report-view.md). You can even [optimize a report for phones](powerbi-mobile-view-phone-report.md) in Power BI Desktop. 
-2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](report-server/reportserver-get-started.md).  
+2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](report-server/get-started.md).  
 3. Then interact with those reports in the Power BI mobile apps.
 
 ## Open a Power BI report in the mobile app

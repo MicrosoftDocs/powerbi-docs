@@ -93,14 +93,14 @@ Power BI Report Server is available as part of Power BI Premium and compatible w
 
 Power BI capabilities such as real-time dashboards, natural language query, and others in the Power BI service are not available as part of Power BI Report Server. 
 
-For more information about Power BI Report Server, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
+For more information about Power BI Report Server, see [Get started with Power BI Report Server](report-server/get-started.md).
 
 **Is Power BI Report Server the feature Microsoft made available as the Power BI Reports for SSRS technical preview? Why is this now part of Power BI when it appeared to be a feature of SQL?**  
 Power BI Report Server is available as part of Power BI Premium and compatible with SQL Server Reporting Services reports, allowing the deployment and distribution of interactive Power BI reports, and paginated reports, on-premises within the boundaries of an organization’s firewall.
 
 The announcement of Power BI Premium is the first time we’ve disclosed how this functionality will be brought to market.
 
-For more information about Power BI Report Server, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
+For more information about Power BI Report Server, see [Get started with Power BI Report Server](report-server/get-started.md).
 
 **What are Power BI Apps?**  
 We are evolving content packs into Power BI apps to improve how users discover and explore insights at enterprise scale. Available today, Power BI apps offer a simplified way of deploying dashboards and reports to specific people, groups or an entire organization. Business users can easily install these apps and navigate them with ease, centralizing content in one place and updating automatically. 
@@ -199,7 +199,7 @@ No changes are being made to Power BI Desktop.
 **Why is Power BI Report Server included in Power BI Premium rather than being sold as a separate product?**  
 Power BI Premium introduces the ability to maintain BI assets on-premises with Power BI Report Server. Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization’s firewall. With Power BI Premium the same number of virtual cores an organization provisions in the cloud can also be deployed on-premises through Power BI Report Server, without the need to split the capacity. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
 
-For more information, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
+For more information, see [Get started with Power BI Report Server](report-server/get-started.md).
 
 **How can customers get access to Power BI Report Server?**  
 Power BI Report Server is available through Power BI Premium or as a benefit for customers with SQL Server EE with SA. Contact your Microsoft representative for more information.
