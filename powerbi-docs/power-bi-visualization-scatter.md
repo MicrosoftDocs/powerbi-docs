@@ -83,7 +83,7 @@ Or if you don’t have that in your data, create a field that concatenates your 
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](powerbi-desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
 ## Next steps
  [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
