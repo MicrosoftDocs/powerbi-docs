@@ -208,7 +208,7 @@ Read more about [creating a phone view of a dashboard](service-create-dashboard-
 
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
-* [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
+* [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
 * [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
