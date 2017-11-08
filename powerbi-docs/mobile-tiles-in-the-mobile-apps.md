@@ -116,7 +116,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    Tap the **Full screen** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
    
    > [!NOTE]
-   > You can also [view dashboards and reports in full-screen mode](powerbi-mobile-win10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
+   > You can also [view dashboards and reports in full-screen mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
    > 
    > 
    
