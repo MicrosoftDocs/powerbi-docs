@@ -28,7 +28,7 @@ Measures are used in some of the most common data analysis; for example, sums, a
 ## Understanding measures
 In **Power BI Desktop**, measures are created and used in **Report View** or **Data View**. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
-![](media/powerbi-desktop-measures/MeasuresInPBID_MeasInFieldList.png)
+![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
 > **Note:** You might also be interested in **quick measures**, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn DAX syntax, since their automatically created DAX formulas are available to review. Check out the article: [quick measures](powerbi-desktop-quick-measures.md).
 > 
@@ -52,7 +52,7 @@ But, Jan needs a measure to calculate sales projections for the coming year, whi
 
 Jan then drags her new Projected Sales measure into the chart.
 
-![](media/powerbi-desktop-measures/MeasuresInPBID_LastYearSales.png)
+![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
 Very quickly and with minimal effort, Jan now has a measure to calculate projected sales. She can  further analyze her projections by filtering on specific resellers or by adding other fields to her report.
 

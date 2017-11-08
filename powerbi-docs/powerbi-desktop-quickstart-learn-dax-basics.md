@@ -32,7 +32,7 @@ It’s quite easy to create a new Power BI Desktop file and import some data int
 ## Prerequisites
 You might already be familiar with creating formulas in Microsoft Excel. That knowledge will be helpful in understanding DAX, but even if you have no experience with Excel formulas, the concepts described here will help you get started creating DAX formulas and solving real-world BI problems right away.
 
-We’re going to focus on understanding DAX formulas used in calculations, more specifically, in measures and calculated columns. You should already be familiar with Power BI Desktop, importing data, adding fields to a report, and you should also be familiar with fundamental concepts of [Measures](powerbi-desktop-measures.md) and [Calculated columns](desktop-calculated-columns.md).
+We’re going to focus on understanding DAX formulas used in calculations, more specifically, in measures and calculated columns. You should already be familiar with Power BI Desktop, importing data, adding fields to a report, and you should also be familiar with fundamental concepts of [Measures](desktop-measures.md) and [Calculated columns](desktop-calculated-columns.md).
 
 **Example Workbook**
 
