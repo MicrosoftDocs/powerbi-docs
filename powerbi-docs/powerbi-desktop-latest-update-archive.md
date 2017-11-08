@@ -471,7 +471,7 @@ The following updates were new to Power BI Desktop in September:
 ### Data Connectors:
 * New data connectors:
   * Snowflake connector DirectQuery support [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
-  * ProjectPlace connector [[article]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+  * ProjectPlace connector [[article]](desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 * Improvements to existing connectors:
   * Oracle connector - improved Navigator previews performance [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
   * OData connector - support for *Select Related Tables* option [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
@@ -532,7 +532,7 @@ The following updates are new to Power BI Desktop this month:
 * New data connectors:
   * Snowflake connector (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
 * Improvements to existing connectors:
-  * Impala connector - DirectQuery support [[article]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+  * Impala connector - DirectQuery support [[article]](desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
   * Web connector - Web page previews [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=12m28s)
   * General availability for the SAP Business Warehouse connector [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
 
@@ -568,7 +568,7 @@ July brought another great collection of new features and highly anticipated dat
 ### Data Connectors:
 * New data connectors:
   * Amazon Redshift [[article]](powerbi-desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
-  * Impala [[article]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+  * Impala [[article]](desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 * Improvements to existing connectors:
   * Web connector - support for specifying a connection timeout  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
   * CSV and Text - support for fixed-width delimited files [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
