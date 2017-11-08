@@ -87,7 +87,7 @@ To filter on additional fields, add an `and` and another field in the same forma
 ### Using DAX to filter on multiple values
 Another way to filter on multiple fields is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
 
-For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](powerbi-desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name cannot have any spaces. Here is the DAX formula for that column.
+For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name cannot have any spaces. Here is the DAX formula for that column.
 
 TerritoryChain = [Territory] & " - " & [Chain]
 

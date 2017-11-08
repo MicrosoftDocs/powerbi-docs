@@ -100,7 +100,7 @@ Power BI displays the Share Dashboard page. In the top area, enter the email add
 Next steps
 
 * [Get started with Power BI service](service-get-started.md)
-* [Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Get started with Power BI Desktop](desktop-getting-started.md)
 * [Power BI - Basic Concepts](service-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -23,9 +23,9 @@ ms.author: asaxton
 # Author template content packs in Power BI
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
-* Queries allow you to [connect](powerbi-desktop-connect-to-data.md) and [transform](powerbi-desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
-* Data model to create [relationships](powerbi-desktop-create-and-manage-relationships.md), [measures](powerbi-desktop-measures.md), and Q&A improvements  
-* Report [pages](powerbi-desktop-report-view.md) include visuals and filters to provide insights into your data  
+* Queries allow you to [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
+* Data model to create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements  
+* Report [pages](desktop-report-view.md) include visuals and filters to provide insights into your data  
 * [Dashboard](service-dashboards.md) and [tiles](service-dashboard-create.md) offer an overview of the insights included  
 
 You may be familiar with each piece as existing Power BI features. When building a content pack, there are additional things to consider for each aspect, see each section below for more details.

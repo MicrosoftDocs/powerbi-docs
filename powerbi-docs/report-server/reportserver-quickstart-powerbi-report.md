@@ -69,7 +69,7 @@ For example, you could create a funnel chart of customers and group values by ye
 2. Drag the field to be counted to the **Values** well. If it's not a numeric field, Power BI Desktop automatically makes it a *Count of* the value.
 3. Drag the field to group on to the **Group** well.
 
-Read much more about [designing a Power BI report](../powerbi-desktop-report-view.md).
+Read much more about [designing a Power BI report](../desktop-report-view.md).
 
 ## Step 4: Save your report to the report server
 When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
@@ -98,7 +98,7 @@ Power BI Report Server reports don’t support:
 ### In the Power BI mobile apps
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../powerbi-power-bi-apps-for-mobile-devices.md), including:
 
-* [Phone report layout](../powerbi-desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
+* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
   
     ![Report optimized for phones](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-report.png)
 
@@ -114,7 +114,7 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. These links are a good starting point.
 
-* [Get started with Power BI Desktop](../powerbi-desktop-getting-started.md)
+* [Get started with Power BI Desktop](../desktop-getting-started.md)
 * Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml#step-2)
 
 ### Power BI Report Server

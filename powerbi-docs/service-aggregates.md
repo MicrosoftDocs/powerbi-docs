@@ -26,14 +26,14 @@ Sometimes you want to mathematically combine the values of rows in a column. The
 
 A numeric field is a value that will be aggregated (summed or averaged, for example) over some categorical field.  For example, "sales amount by product" and "number of defects by region". Numeric fields are often referred to as **measures**. In the Fields list, measures are shown with the ∑ symbol. For more information see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).
 
-Sometimes a *measure* is actually a *calculated measure*. Calculated measures in Power BI are imported with the data (defined in the data model your report is based on). Each calculated measure has its own hard-coded formula. You can’t change the aggregation being used, for example, if it’s a sum, it can only be a sum. In the Fields list, *calculated measures* are shown with the calculator symbol. For more information on how calculated measures are created, see [Measures in Power BI Desktop](powerbi-desktop-measures.md).
+Sometimes a *measure* is actually a *calculated measure*. Calculated measures in Power BI are imported with the data (defined in the data model your report is based on). Each calculated measure has its own hard-coded formula. You can’t change the aggregation being used, for example, if it’s a sum, it can only be a sum. In the Fields list, *calculated measures* are shown with the calculator symbol. For more information on how calculated measures are created, see [Measures in Power BI Desktop](desktop-measures.md).
 
 Categorical fields aren't numeric but they can still be aggregated.  When categorical fields are placed in a *numeric only* bucket like **Values** or **Tooltips**, Power BI can count the occurrences of each category or count the distinct occurrences of each category.  For strings and dates, Power BI has a few more aggregate options: earliest, latest, first, and last.  
 
 ## Why don't aggregates work the way I want them to?
 Working with aggregates in Power BI service can be confusing; maybe you have a numeric field and Power BI won't let you change the aggregation. Or maybe you have a field, like a year, and you don't want to aggregate it, you just want to count the number of occurrences.
 
-Most often, the source of the problem is how the field was categorized in the Power BI dataset. Maybe the field is categorized as text and that explains why it can't be summed or averaged. Unfortunately, [only the dataset owner can change the way a field is categorized](powerbi-desktop-measures.md).  
+Most often, the source of the problem is how the field was categorized in the Power BI dataset. Maybe the field is categorized as text and that explains why it can't be summed or averaged. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md).  
 
 To help you navigate the confusion we have a special section at the end of this article called **Tips and troubleshooting**.  If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com) for a quick response directly from the Power BI team.
 

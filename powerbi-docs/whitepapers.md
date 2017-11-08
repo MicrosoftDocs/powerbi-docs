@@ -30,7 +30,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Plan capacity for embedded analytics with Power BI Premium](https://aka.ms/pbiewhitepaper) |This paper provides guidance for the app developer/ISV to determine the most appropriate capacity for its business. |
 | [Best design practices for reports and visuals](power-bi-visualization-best-practices.md) |Provides best practices for designing reports in Power BI. |
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. |
-| [Bidirectional filtering](powerbi-desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior). |
+| [Bidirectional filtering](desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior). |
 | [DirectQuery in SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |For SQL Server 2016, DirectQuery was redesigned for dramatically improved speed and performance, however, it is also now more complex to understand and implement. |
 | [Governance](service-admin-governance.md) |Provides a framework for increasing the return on investment related to Power BI |
 | [Security](service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. |

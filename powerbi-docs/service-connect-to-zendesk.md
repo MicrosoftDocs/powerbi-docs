@@ -74,7 +74,7 @@ There's also a set of measures that have been calculated, such as Average Wait T
 <a name="Requirements"></a>
 
 ## System Requirements
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
 
 <a name="FindingParams"></a>
 

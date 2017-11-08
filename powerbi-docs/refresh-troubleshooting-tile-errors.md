@@ -45,7 +45,7 @@ We don't have any data to display because the query is empty. Try adding some fi
 
 **Can't display the data because Power BI can't determine the relationship between two or more fields.**
 
-You are trying to use two or more fields from tables that are not related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you have done this, you can add the fields back to the visual. This can be done in Power BI Desktop or Power Pivot for Excel. [Learn more](powerbi-desktop-create-and-manage-relationships.md)
+You are trying to use two or more fields from tables that are not related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you have done this, you can add the fields back to the visual. This can be done in Power BI Desktop or Power Pivot for Excel. [Learn more](desktop-create-and-manage-relationships.md)
 
 **The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
 

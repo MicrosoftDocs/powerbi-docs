@@ -247,7 +247,7 @@ In this case, you use Get Data in Power BI Desktop to connect to and import cens
 
 In this case, you can manually refresh the data in the WACensus dataset or setup a refresh schedule. Because the data in the data source comes from an OData feed online, you do not need to install a gateway, but you will need to go into the WACensus dataset’s settings and sign in to the OData data source. You can then setup a refresh schedule so Power BI automatically connects to the OData feed and gets updated data. Your reports and dashboards will also be updated automatically.
 
-To learn more, see [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md), [Refresh a dataset created from a Power BI Desktop file on a local drive](refresh-desktop-file-local-drive.md), [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
+To learn more, see [Publish from Power BI Desktop](desktop-upload-desktop-files.md), [Refresh a dataset created from a Power BI Desktop file on a local drive](refresh-desktop-file-local-drive.md), [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
 
 ### Shared content pack from another user in your organization
 You’ve connected to an organizational content pack. It includes a dashboard, several reports, and a dataset.

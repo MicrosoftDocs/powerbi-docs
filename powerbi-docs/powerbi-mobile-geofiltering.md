@@ -43,17 +43,17 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 ## Why don't I see location tags on a report?
 All three of these conditions need to be true, for you to see location tags. 
 
-* The person who created the report in Power BI Desktop [categorized geographical data](powerbi-desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
+* The person who created the report in Power BI Desktop [categorized geographical data](desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
 * You are in one of the locations that has data in that column.
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
   * Android phone or tablet.
   * Windows 10 phone (other Windows 10 devices such as PCs and tablets don't support geographic filtering).
 
-Read more about [setting up geographic filtering](powerbi-desktop-mobile-geofiltering.md) in Power BI Desktop.
+Read more about [setting up geographic filtering](desktop-mobile-geofiltering.md) in Power BI Desktop.
 
 ### Next steps
 * [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
-* [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md) 
+* [Data categorization in Power BI Desktop](desktop-data-categorization.md) 
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
