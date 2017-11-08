@@ -80,5 +80,5 @@ Like learning about Power BI through videos and other engaging content? Check ou
 * [Guided Learning for Power BI](https://powerbi.microsoft.com/guided-learning/) - a sequential learning tour of Power BI, in bite-size pieces
 
 ## Previous months' updates
-Looking for previous months' updates? You can find them in the [Power BI Desktop Monthly Updates archive](powerbi-desktop-latest-update-archive.md) article.
+Looking for previous months' updates? You can find them in the [Power BI Desktop Monthly Updates archive](desktop-latest-update-archive.md) article.
 
