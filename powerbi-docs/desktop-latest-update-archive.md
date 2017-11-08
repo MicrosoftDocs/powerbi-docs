@@ -266,7 +266,7 @@ The following updates were new to Power BI Desktop in March 2017:
 
 ### Report View:
 * New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
-* Numeric range slicer (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[article]](powerbi-desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
+* Numeric range slicer (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
 * Data labels on pie and donut visuals - percent of total [[video]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
 * Cross-highlight using multiple series [[video]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
 * Textbox - ability to choose font color [[video]](https://youtu.be/CaRTON3lJqw?t=13m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#textbox)
