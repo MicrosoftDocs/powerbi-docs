@@ -77,7 +77,7 @@ You're sharing a snapshot of the tile, report, or visual, and your recipients se
 
 More about [annotating and sharing tiles, reports, and visuals](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
-You can also [share a snapshot of a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI app for Windows 10 devices.
+You can also [share a snapshot of a tile](mobile-share-tile-windows-10-phone-app.md) from the Power BI app for Windows 10 devices.
 
 ## Publish to the web
 You can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. More about [publishing to the web](service-publish-to-web.md).

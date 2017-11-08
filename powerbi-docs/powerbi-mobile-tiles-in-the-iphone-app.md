@@ -96,7 +96,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/pbi_win10tileellpslink.png)
    
-    [Share a snapshot of the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
+    [Share a snapshot of the tile](mobile-share-tile-windows-10-phone-app.md).
    
     Tap **Open Report** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the underlying report](mobile-reports-in-the-mobile-apps.md).
    
@@ -124,7 +124,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-windows-10-center-map.png)
    
-   Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
+   Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](mobile-share-tile-windows-10-phone-app.md) with others.   
    
    Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) that the tile is based on. 
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
