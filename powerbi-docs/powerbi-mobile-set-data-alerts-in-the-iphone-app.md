@@ -141,7 +141,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 4. To delete the alert altogether, right-click or tap and hold > **Delete**.
 
 ## Receiving alerts
-You receive alerts in the Power BI [Notification Center](powerbi-mobile-notification-center.md) on your mobile device or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
+You receive alerts in the Power BI [Notification Center](mobile-apps-notification-center.md) on your mobile device or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
 
 Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, if the data being tracked reaches one of the thresholds you've set, several things will happen.
 
@@ -152,7 +152,7 @@ Data sources are often set to refresh daily, although some refresh more often. W
    
    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alerts-email.png)
 3. Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alert-tile-notification-icon.png).
-4. Tap the global navigation button ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-global-nav-button.png) to [open your **Notification center**](powerbi-mobile-notification-center.md) and see the alert details.
+4. Tap the global navigation button ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-global-nav-button.png) to [open your **Notification center**](mobile-apps-notification-center.md) and see the alert details.
    
      ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-notifications.png) 
 
@@ -169,6 +169,6 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
 ## Next steps
 * [Manage your alerts in the Power BI service](service-set-data-alerts.md)
-* [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
+* [Power BI Mobile Notification Center](mobile-apps-notification-center.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
