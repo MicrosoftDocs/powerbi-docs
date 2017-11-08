@@ -246,9 +246,9 @@ View your favorite dashboards from all Power BI mobile apps, and manage the list
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
 
-* [Alerts on the Power BI app for Android phones](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
-* [Alerts on the Power BI apps for iOS](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
-* [Alerts on the Power BI app for Windows 10 devices](powerbi-mobile-set-data-alerts-in-the-iphone-app.md).
+* [Alerts on the Power BI app for Android phones](mobile-set-data-alerts-in-the-mobile-apps.md). 
+* [Alerts on the Power BI apps for iOS](mobile-set-data-alerts-in-the-mobile-apps.md). 
+* [Alerts on the Power BI app for Windows 10 devices](mobile-set-data-alerts-in-the-mobile-apps.md).
 
 #### iOS on iPhones and iPads
 **Tiles full-screen in focus mode on iPad**
