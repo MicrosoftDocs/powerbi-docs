@@ -34,7 +34,7 @@ In order to use cross-filtering for DirectQuery, you must first enable it. This 
 
 To enable cross-filtering for DirectQuery in Power BI Desktop, select **File > Options and settings > Options**, then check the box next to **Enable cross filtering in both directions for DirectQuery**, as shown in the following image.
 
-![](media/powerbi-desktop-bidirectional-filtering/bidirectional-filtering_1.png)
+![](media/desktop-bidirectional-filtering/bidirectional-filtering_1.png)
 
 > **Note:** When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as *joe@contoso.com*) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipleName*.
 > 
@@ -45,7 +45,7 @@ To enable cross-filtering, in the **Edit Relationship** dialog for a relationshi
 * The **Cross filter direction** must be set to **Both**
 * The **Apply security filter in both directions** must also be selected
   
-  ![](media/powerbi-desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 For more information, and for examples of how bidirectional cross-filtering works, check out the [whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentioned earlier in this article.
 
