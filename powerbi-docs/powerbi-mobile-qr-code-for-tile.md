@@ -74,7 +74,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 2. If you don’t have the Power BI app installed, you are redirected to [Google Play to download it](http://go.microsoft.com/fwlink/?LinkID=544867). 
 
 ## Next steps
-* [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
+* [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Create a QR code for a tile in the Power BI service](service-create-qr-code-for-tile.md)
 * [Create a QR code for a report in the Power BI service](service-create-qr-code-for-report.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -53,7 +53,7 @@ All three of these conditions need to be true, for you to see location tags.
 Read more about [setting up geographic filtering](desktop-mobile-geofiltering.md) in Power BI Desktop.
 
 ### Next steps
-* [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
+* [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md) 
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
