@@ -25,7 +25,7 @@ When connecting to a data source using **DirectQuery**, you can use the **Assume
 
 Setting **Assume referential integrity** enables queries on the data source to use **INNER JOIN** statements rather than **OUTER JOIN**, which improves query efficiency.
 
-![](media/powerbi-desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 ## Requirements for using Assume referential integrity
 This is an advanced setting, and is only enabled when connecting to data using **DirectQuery**. The following requirements are necessary for **Assume referential integrity** to work properly:
@@ -40,18 +40,18 @@ The following example demonstrates how **Assume referential integrity** behaves 
 
 1. In the following image that shows the **Orders** table and the **Products** table, note that referential integrity exists between **Orders[ProductID]** and **Products[ProductID]**. The **[ProductID]** column in the **Orders** table is never *Null*, and every value also appears in the **Products** table. As such, **Assume Referential Integrity** should be set to get more efficient queries (using this setting does not change the values shown in visuals).
    
-   ![](media/powerbi-desktop-assume-referential-integrity/assume-referential-integrity_2.png)
+   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
 2. In the next image, notice that no referential integirty exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume Referential Integrity** should *not* be set.
    
-   ![](media/powerbi-desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Finally, no referential integrity between **Orders[CustomerID]** and **Customers[CustID]** in the following tables; the **CustomerID** contains some values (in this case, *CustX*) that do not exist in the *Customers* table. As such, **Assume Referential Integrity** should *not* be set.
    
-   ![](media/powerbi-desktop-assume-referential-integrity/assume-referential-integrity_4.png)
+   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
 ## Setting Assume referential integrity
 To enable this feature, select the checkbox next to **Assume Referential Integrity** as shown in the following image.
 
-![](media/powerbi-desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 When selected, the setting is validated against the data to ensure there are no *Null* or mismatched rows. *However*, for cases with a very large number of values, the validation is not a guarantee that there are no referential integrity issues.
 
