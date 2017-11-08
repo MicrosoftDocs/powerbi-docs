@@ -4,7 +4,7 @@ description: 'Tutorial: Analyzing sales data from Excel and an OData feed'
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

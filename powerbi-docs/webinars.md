@@ -4,7 +4,7 @@ description: Power BI webinars
 services: powerbi
 documentationcenter: ''
 author: maikelson
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

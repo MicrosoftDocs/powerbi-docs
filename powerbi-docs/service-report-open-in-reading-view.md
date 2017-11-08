@@ -4,7 +4,7 @@ description: Open a Power BI report in Reading View
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

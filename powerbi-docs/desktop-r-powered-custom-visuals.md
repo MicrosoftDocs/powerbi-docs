@@ -4,7 +4,7 @@ description: Use R-powered custom visuals in Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

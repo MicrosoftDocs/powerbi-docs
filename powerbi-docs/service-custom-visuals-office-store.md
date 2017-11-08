@@ -4,7 +4,7 @@ description: Learn how you can discover and use custom visuals from the Office s
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

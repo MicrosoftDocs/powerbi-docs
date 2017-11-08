@@ -4,7 +4,7 @@ description: This document shows how to drill down in a visualization in Microso
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

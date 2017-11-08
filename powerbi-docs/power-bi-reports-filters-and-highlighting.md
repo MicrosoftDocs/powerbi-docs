@@ -4,7 +4,7 @@ description: About filters and highlighting in Power BI reports
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

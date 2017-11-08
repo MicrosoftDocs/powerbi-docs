@@ -4,7 +4,7 @@ description: If you are a tenant admin, and want to see who has signed into Powe
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

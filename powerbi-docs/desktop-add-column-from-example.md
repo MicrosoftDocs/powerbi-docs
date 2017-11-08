@@ -4,7 +4,7 @@ description: Quickly create a new column in Power BI Desktop using existing colu
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

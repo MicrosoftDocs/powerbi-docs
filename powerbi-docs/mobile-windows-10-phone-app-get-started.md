@@ -4,7 +4,7 @@ description: The Power BI mobile app for Windows 10 brings up-to-date, touch-ena
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

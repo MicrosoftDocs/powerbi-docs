@@ -4,7 +4,7 @@ description: Learn how to install Power BI Desktop optimized for Power BI Report
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

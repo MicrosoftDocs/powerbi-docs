@@ -4,7 +4,7 @@ description: What's new in the mobile apps for Power BI
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

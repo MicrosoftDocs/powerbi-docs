@@ -4,7 +4,7 @@ description: Learn how to migrate from Power BI Embedded to the Power BI service
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

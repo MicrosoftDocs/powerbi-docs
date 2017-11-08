@@ -4,7 +4,7 @@ description: create KPI in power bi
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

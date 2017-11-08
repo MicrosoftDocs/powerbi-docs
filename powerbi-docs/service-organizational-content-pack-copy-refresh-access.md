@@ -4,7 +4,7 @@ description: Read about creating copies of and troubleshooting access to organiz
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Refresh a dataset created from a Power BI Desktop file on OneDrive,
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

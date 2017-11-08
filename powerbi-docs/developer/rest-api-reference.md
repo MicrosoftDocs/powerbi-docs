@@ -4,7 +4,7 @@ description: Power BI REST API Reference
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

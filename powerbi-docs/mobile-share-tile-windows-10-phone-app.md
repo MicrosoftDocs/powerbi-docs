@@ -4,7 +4,7 @@ description: Learn how to share snapshots of tiles from the Power BI mobile app 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

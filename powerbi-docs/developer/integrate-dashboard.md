@@ -4,7 +4,7 @@ description: Learn how to integrate, or embed, a dashboard into a web app using 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

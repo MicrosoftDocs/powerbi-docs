@@ -4,7 +4,7 @@ description: Learn how to subscribe yourself and others to a snapshot of a Power
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

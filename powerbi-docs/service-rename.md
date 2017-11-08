@@ -4,7 +4,7 @@ description: Rename almost anything in Power BI service.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

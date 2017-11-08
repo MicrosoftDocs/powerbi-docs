@@ -4,7 +4,7 @@ description: Power BI Desktop Send a Smile Privacy Statement
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

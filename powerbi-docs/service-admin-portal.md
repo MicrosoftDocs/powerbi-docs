@@ -4,7 +4,7 @@ description: The admin portal allows for tenant management of Power BI in your o
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

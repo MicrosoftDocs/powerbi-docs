@@ -4,7 +4,7 @@ description: Power BI Apple Watch app
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

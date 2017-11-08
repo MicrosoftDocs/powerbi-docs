@@ -4,7 +4,7 @@ description: Learn how you can manage your individual, or app workspace, data st
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

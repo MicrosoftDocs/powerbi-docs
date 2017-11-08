@@ -4,7 +4,7 @@ description: Welcome to the user handbook for Power BI Report Server, an on-prem
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

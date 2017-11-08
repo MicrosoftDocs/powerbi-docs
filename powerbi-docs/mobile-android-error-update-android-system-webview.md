@@ -13,7 +13,7 @@ description: When signing in to the Android mobile app, you may get a message th
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

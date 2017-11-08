@@ -4,7 +4,7 @@ description: Getting started with color formatting and axis properties
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

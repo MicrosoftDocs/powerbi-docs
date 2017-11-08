@@ -4,7 +4,7 @@ description: documentation for sorting, and sorting content in Power BI workspac
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

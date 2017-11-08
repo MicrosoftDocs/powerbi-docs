@@ -13,7 +13,7 @@ description: This article may help if you see this message, 'We encountered comm
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

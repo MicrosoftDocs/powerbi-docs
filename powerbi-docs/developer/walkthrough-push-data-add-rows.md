@@ -4,7 +4,7 @@ description: Walkthrough to push data - Add rows to a Power BI table
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

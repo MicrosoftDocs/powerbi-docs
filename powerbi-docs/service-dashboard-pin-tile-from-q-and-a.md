@@ -4,7 +4,7 @@ description: Documentation on how to pin a tile to a Power BI dashboard from the
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

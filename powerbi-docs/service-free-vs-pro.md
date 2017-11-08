@@ -4,7 +4,7 @@ description: Every user within Power BI is either Free or Pro. It is helpful to 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

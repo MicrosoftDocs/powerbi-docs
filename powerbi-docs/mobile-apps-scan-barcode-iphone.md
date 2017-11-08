@@ -4,7 +4,7 @@ description: Scan barcodes in the real world to go directly to filtered BI infor
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

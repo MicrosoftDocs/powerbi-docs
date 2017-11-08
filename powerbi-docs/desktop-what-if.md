@@ -4,7 +4,7 @@ description: Create your own What if variable to imagine and visualize variables
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

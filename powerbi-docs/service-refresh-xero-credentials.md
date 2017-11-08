@@ -4,7 +4,7 @@ description: If you use the Xero Power BI content pack, you may have experienced
 services: powerbi
 documentationcenter: ''
 author: joeshoukry
-manager: erikre
+manager: kfile
 backup: maggiesMSFT
 editor: ''
 tags: ''

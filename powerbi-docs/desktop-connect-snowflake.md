@@ -4,7 +4,7 @@ description: Easily connect to and use a Snowflake computing warehouse in Power 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

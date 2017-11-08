@@ -4,7 +4,7 @@ description: Display a dashboard tile in full screen TV mode
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

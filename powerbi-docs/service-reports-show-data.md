@@ -4,7 +4,7 @@ description: This document explains how to show the data used to create a visual
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

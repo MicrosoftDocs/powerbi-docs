@@ -4,7 +4,7 @@ description: Considerations when using DirectQuery with SAP HANA
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

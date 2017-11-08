@@ -4,7 +4,7 @@ description: Learn about dashboard data classification, including how an Admin s
 services: powerbi
 documentationcenter: ''
 author: amandacofsky
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

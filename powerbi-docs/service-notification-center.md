@@ -4,7 +4,7 @@ description: The Notification Center is a sequential feed of information related
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: This article looks at the On-premises gateway in-depth. This looks 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

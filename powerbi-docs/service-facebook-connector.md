@@ -4,7 +4,7 @@ description: 'Third-party service: Facebook connector for Power BI Desktop'
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

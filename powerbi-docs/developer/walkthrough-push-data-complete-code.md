@@ -4,7 +4,7 @@ description: Walkthrough to push data - Complete code listing
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

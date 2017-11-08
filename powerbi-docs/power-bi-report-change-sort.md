@@ -4,7 +4,7 @@ description: Change how a chart is sorted in a Power BI report
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

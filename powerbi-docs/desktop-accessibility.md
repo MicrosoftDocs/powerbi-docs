@@ -4,7 +4,7 @@ description: Features and suggestions for creating accessible Power BI Desktop r
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

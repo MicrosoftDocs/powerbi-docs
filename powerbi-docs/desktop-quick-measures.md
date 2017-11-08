@@ -4,7 +4,7 @@ description: Quick measures provide ready-made DAX formulas that make quick work
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

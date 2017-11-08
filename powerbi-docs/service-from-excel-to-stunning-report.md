@@ -4,7 +4,7 @@ description: 'Tutorial: From Excel workbook to stunning report in no time'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

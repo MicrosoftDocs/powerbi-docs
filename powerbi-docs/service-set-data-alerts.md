@@ -4,7 +4,7 @@ description: Learn to set alerts to notify you when data in your dashboards chan
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

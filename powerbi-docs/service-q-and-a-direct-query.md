@@ -4,7 +4,7 @@ description: Documentation for using Power BI Q&A natural language queries with 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: mihart
 editor: ''
 tags: ''

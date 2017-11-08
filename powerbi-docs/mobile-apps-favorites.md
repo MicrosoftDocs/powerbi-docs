@@ -4,7 +4,7 @@ description: Read about making and viewing your favorite Power BI dashboards, ap
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

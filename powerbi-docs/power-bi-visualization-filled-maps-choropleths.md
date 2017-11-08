@@ -4,7 +4,7 @@ description: Documentation - tutorial on creating Filled Maps (Choropleths) in P
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

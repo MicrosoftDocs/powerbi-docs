@@ -4,7 +4,7 @@ description: 'Tutorial: Change the display settings for a page in a Power BI rep
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

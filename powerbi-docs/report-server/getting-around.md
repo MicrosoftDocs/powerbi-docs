@@ -4,7 +4,7 @@ description: Read about navigating and working in the Power BI Report Server web
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

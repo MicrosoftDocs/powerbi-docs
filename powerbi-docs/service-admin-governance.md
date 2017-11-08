@@ -4,7 +4,7 @@ description: Whitepaper to learn about concepts, options and suggestions for gov
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

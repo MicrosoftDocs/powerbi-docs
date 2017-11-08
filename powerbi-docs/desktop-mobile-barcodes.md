@@ -4,7 +4,7 @@ description: When you tag a barcode field in your model in Power BI Desktop, you
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 qualityfocus: no

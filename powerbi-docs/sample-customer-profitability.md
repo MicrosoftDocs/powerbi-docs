@@ -4,7 +4,7 @@ description: 'Customer Profitability sample for Power BI: Take a tour'
 services: powerbi
 documentationcenter: ''
 author: amandacofsky
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

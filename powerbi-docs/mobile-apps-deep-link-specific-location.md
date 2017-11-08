@@ -4,7 +4,7 @@ description: Learn how to create a deep link to a specific dashboard, tile, or r
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Closing your Power BI Account
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

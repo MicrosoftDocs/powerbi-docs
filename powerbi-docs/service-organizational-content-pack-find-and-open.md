@@ -4,7 +4,7 @@ description: Find and open an organizational content pack in Power BI
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

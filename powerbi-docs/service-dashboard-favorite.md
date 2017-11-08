@@ -4,7 +4,7 @@ description: Documentation on how to set dashboards as favorites in Power BI ser
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 featuredvideoid: G26dr2PsEpk

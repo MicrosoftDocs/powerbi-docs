@@ -4,7 +4,7 @@ description: Installing Power BI Reports Server itself is very quick. From downl
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

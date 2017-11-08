@@ -4,7 +4,7 @@ description: Before you enable a custom visual, you should review that visual fo
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

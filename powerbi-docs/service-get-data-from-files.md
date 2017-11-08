@@ -4,7 +4,7 @@ description: Learn how to get data from Excel, Power BI Desktop, and CSV files i
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Documentation for displaying a Power BI dashboard tile or report vi
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

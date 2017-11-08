@@ -4,7 +4,7 @@ description: Learn how you can use auditing with Power BI to monitor and investi
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

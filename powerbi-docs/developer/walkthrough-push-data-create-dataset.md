@@ -4,7 +4,7 @@ description: Walkthrough - Push data into a dataset - Create a dataset in Power 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

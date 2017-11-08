@@ -4,7 +4,7 @@ description: Create or connect to dashboards in the Power BI service. Then view 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

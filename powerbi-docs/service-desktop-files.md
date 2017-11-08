@@ -4,7 +4,7 @@ description: Learn how to get data and reports from Power BI Desktop into Power 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

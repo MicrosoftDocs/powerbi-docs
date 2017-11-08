@@ -4,7 +4,7 @@ description: Create relative comparisons to regions using shape maps in Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

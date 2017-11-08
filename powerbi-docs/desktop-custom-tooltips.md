@@ -4,7 +4,7 @@ description: Create custom tooltips for visuals using drag-and-drop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Learn how to use a custom color palette, and apply it to an entire 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: How to use Power BI Q&A
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 

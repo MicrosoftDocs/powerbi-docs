@@ -4,7 +4,7 @@ description: Learn how to sign up for Power BI and begin using it for your perso
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

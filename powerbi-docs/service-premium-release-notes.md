@@ -4,7 +4,7 @@ description: Read release notes for Power BI Premium, a dedicated capacity for y
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

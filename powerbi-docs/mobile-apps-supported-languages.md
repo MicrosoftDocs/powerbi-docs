@@ -4,7 +4,7 @@ description: See the list of languages supported in the Power BI mobile apps.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

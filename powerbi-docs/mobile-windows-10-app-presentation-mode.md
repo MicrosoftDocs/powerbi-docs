@@ -4,7 +4,7 @@ description: Read about displaying Power BI reports in Surface Hub, and displayi
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

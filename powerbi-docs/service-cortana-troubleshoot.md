@@ -4,7 +4,7 @@ description: 'If you''re having trouble using Cortana with Power BI, try these s
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 editor: ''
 
 ms.service: powerbi

@@ -4,7 +4,7 @@ description: Learn how to use a slicer or filter to constrain relative date rang
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

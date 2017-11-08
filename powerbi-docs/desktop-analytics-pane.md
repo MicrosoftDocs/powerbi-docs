@@ -4,7 +4,7 @@ description: Create dynamic reference lines for visuals in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

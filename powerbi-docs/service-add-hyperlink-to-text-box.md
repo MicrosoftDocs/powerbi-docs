@@ -4,7 +4,7 @@ description: Add a hyperlink to a Text Box in Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

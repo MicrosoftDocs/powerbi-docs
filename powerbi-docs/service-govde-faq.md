@@ -4,7 +4,7 @@ description: For German government customers, answers to common questions for th
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

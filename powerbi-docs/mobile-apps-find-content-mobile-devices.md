@@ -4,7 +4,7 @@ description: Read about where to find your dashboards and reports in the Power B
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

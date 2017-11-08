@@ -4,7 +4,7 @@ description: 'Read about an advantage of viewing Power BI in a mobile app rather
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

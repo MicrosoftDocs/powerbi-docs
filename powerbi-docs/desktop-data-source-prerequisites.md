@@ -4,7 +4,7 @@ description: Power BI data source prerequisites
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: AT Internet Bridge for Power BI
 services: powerbi
 documentationcenter: ''
 author: joeshoukry
-manager: erikre
+manager: kfile
 backup: maggiesMSFT
 editor: ''
 tags: ''

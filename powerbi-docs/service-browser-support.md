@@ -4,7 +4,7 @@ description: See a list of browsers that support Power BI
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

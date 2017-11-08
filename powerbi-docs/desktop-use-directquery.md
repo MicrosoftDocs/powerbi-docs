@@ -4,7 +4,7 @@ description: Use DirectQuery, also called a Live connection, in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

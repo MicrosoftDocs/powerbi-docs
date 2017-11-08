@@ -4,7 +4,7 @@ description: Learn how to group and bin elements in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

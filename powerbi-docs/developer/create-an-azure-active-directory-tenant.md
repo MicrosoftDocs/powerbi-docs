@@ -4,7 +4,7 @@ description: Learn how to create a new Azure Active Directory (Azure AD) tenant 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

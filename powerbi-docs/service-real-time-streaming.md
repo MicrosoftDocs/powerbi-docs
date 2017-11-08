@@ -4,7 +4,7 @@ description: Get real-time data streaming and visuals in Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

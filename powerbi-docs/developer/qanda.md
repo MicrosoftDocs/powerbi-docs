@@ -4,7 +4,7 @@ description: Power BI Embedded offers you a way to incorporate Q&A into an appli
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

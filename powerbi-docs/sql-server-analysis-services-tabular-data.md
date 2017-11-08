@@ -4,7 +4,7 @@ description: SQL Server Analysis Services live data in Power BI. This is done vi
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

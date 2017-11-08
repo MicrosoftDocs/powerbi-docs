@@ -4,7 +4,7 @@ description: View and engage with your Power BI dashboards and reports, and Repo
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

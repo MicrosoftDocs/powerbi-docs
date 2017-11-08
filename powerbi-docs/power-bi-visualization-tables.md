@@ -4,7 +4,7 @@ description: Tips for working with table visualizations in Power BI reports and 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

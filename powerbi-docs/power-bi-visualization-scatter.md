@@ -4,7 +4,7 @@ description: 'Tutorial: Scatter Charts in Power BI'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Use the SAP BW Connector in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

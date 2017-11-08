@@ -4,7 +4,7 @@ description: Learn how to add comments to a Power BI or a paginated report on a 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

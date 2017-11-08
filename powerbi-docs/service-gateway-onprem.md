@@ -4,7 +4,7 @@ description: This is an overview of the On-premises data gateway for Power BI. Y
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

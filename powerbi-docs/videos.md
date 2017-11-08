@@ -4,7 +4,7 @@ description: Power BI Videos and link to YouTube channel.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

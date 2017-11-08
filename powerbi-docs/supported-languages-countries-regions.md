@@ -4,7 +4,7 @@ description: See the lists of supported languages and countries/regions for the 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

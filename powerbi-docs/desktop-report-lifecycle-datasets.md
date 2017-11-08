@@ -4,7 +4,7 @@ description: Use a common dataset for multiple Power BI Desktop reports, and man
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

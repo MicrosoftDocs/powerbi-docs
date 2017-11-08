@@ -4,7 +4,7 @@ description: Microsoft Azure Consumption Insights for Power BI
 services: powerbi
 documentationcenter: ''
 author: joeshoukry
-manager: erikre
+manager: kfile
 backup: maggies
 editor: ''
 tags: ''

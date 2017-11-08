@@ -4,7 +4,7 @@ description: Learn how to optimize report pages in Power BI Desktop for the Powe
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

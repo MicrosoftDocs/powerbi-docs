@@ -4,7 +4,7 @@ description: Overview of the Power BI navigation experience
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 featuredvideoid: G26dr2PsEpk

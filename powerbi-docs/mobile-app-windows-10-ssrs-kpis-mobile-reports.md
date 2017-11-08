@@ -4,7 +4,7 @@ description: The Power BI mobile app for Windows 10 offers live, touch-enabled m
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

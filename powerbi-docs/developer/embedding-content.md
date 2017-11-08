@@ -4,7 +4,7 @@ description: Learn about the steps you need to take to embed Power BI content wi
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

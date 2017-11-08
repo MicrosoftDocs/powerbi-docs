@@ -4,7 +4,7 @@ description: DirectQuery for Oracle and Teradata databases
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

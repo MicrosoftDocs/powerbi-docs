@@ -4,7 +4,7 @@ description: Browse a list of frequently asked questions and answers about the P
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

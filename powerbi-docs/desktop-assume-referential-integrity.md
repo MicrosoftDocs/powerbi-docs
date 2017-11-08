@@ -4,7 +4,7 @@ description: With DirectQuery, learn how to have Power BI Desktop assume referen
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

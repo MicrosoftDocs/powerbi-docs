@@ -4,7 +4,7 @@ description: Power BI Archived Workspace after managing your Office 365 tenant
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

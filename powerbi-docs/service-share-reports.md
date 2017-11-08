@@ -4,7 +4,7 @@ description: Learn how to share Power BI reports, and filtered reports, with cow
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

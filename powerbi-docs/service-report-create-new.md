@@ -4,7 +4,7 @@ description: Create a new Power BI report from a dataset.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

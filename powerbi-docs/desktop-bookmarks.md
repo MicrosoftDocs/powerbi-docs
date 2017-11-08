@@ -4,7 +4,7 @@ description: Bookmarks in Power BI Desktop let you save views and settings in yo
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: documentation for shared with me in Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

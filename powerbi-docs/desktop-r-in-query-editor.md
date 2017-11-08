@@ -4,7 +4,7 @@ description: Use R in Power BI Desktop Query Editor for advanced analytics
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

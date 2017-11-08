@@ -4,7 +4,7 @@ description: Connect to Adobe Analytics from Power BI for an app that displays y
 services: powerbi
 documentationcenter: ''
 author: joeshoukry
-manager: erikre
+manager: kfile
 backup: maggiesMSFT
 editor: ''
 tags: ''

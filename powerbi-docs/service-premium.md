@@ -4,7 +4,7 @@ description: Power BI Premium is dedicated capacity for your organization or tea
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

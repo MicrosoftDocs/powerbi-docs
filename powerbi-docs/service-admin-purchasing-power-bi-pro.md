@@ -4,7 +4,7 @@ description: Power BI Pro is for those users publishing reports, sharing dashboa
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Signing up for Power BI with a new Office 365 Trial
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

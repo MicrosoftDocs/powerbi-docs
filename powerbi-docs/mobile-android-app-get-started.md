@@ -4,7 +4,7 @@ description: Learn how the Android mobile app for Microsoft Power BI brings Powe
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Power BI get started with third party apps
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

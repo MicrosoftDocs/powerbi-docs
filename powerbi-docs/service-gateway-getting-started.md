@@ -4,7 +4,7 @@ description: Learn the basics about data gateways for Power BI.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

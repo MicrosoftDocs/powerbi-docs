@@ -4,7 +4,7 @@ description: Walkthrough to push data - Get a dataset to add rows into a Power B
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: In addition to viewing Power BI reports in the web portal, business
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

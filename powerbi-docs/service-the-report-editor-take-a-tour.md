@@ -4,7 +4,7 @@ description: The report editor...Take a tour.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 featuredvideoid: IkJda4O7oGs

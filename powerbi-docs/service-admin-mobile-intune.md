@@ -4,7 +4,7 @@ description: How to configure the Power BI Mobile apps with Microsoft Intune. Th
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

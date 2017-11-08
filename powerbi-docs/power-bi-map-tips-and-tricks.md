@@ -4,7 +4,7 @@ description: 'Tips and Tricks for Power BI Map visualizations, visuals, location
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

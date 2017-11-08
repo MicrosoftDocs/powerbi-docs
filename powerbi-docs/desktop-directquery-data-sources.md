@@ -4,7 +4,7 @@ description: Get a list of which data sources can use DirectQuery.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

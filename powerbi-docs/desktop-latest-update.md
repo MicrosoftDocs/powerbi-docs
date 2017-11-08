@@ -4,7 +4,7 @@ description: What's new in the latest Power BI Desktop update?
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

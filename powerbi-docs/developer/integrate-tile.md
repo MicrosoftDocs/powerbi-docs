@@ -4,7 +4,7 @@ description: Walkthrough to integrate a tile into an app, sample code
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

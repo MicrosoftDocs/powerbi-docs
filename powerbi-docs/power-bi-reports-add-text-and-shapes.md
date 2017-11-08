@@ -4,7 +4,7 @@ description: Documentation about adding and creating text boxes, and shapes in a
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 featuredvideoid: _3q6VEBhGew

@@ -4,7 +4,7 @@ description: Export data from a report visualization and dashboard visualization
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

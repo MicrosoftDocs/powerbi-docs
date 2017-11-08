@@ -4,7 +4,7 @@ description: Power BI offers a wide range of options for developers. This ranges
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

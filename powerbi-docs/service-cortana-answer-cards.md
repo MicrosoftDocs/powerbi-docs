@@ -4,7 +4,7 @@ description: Create custom answer pages for Cortana in Power BI
 services: powerbi
 documentationcenter: ''
 author: yaron
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

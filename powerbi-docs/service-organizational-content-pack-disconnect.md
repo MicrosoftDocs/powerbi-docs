@@ -4,7 +4,7 @@ description: Read about removing your connection to an organizational content pa
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Read about interacting with report pages optimized for viewing in t
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

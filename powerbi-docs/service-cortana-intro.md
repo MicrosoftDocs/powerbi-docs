@@ -4,7 +4,7 @@ description: Use Cortana with Power BI to get answers from your data. Currently 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 editor: ''
 
 ms.service: powerbi

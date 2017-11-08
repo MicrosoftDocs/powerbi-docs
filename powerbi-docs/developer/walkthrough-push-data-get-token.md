@@ -4,7 +4,7 @@ description: Walkthrough to push data - Get an authentication access token
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Navigation made easier, view related content in dashboards, reports
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

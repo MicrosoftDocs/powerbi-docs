@@ -4,7 +4,7 @@ description: Resolve issues importing Access databases and .XLS spreadsheets in 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''
