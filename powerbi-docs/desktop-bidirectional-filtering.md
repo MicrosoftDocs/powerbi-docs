@@ -18,9 +18,9 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-
 ---
 # Bidirectional cross-filtering using DirectQuery in Power BI Desktop (Preview)
+
 When filtering tables to create the appropriate view of data, report creators (and data modelers) face challenges when determining how filtering is applied to a report; the filter context of a table was held on one side of the relationship, but not the other, often requiring complex DAX formulas to get the desired results.
 
 With bidirectional cross-filtering, report creators (and data modelers) now have more control over how filters are applied when working with related tables, enabling those filters to be applied on *both* sides of a table relationship. This is accomplished by having the filter context propagated to a second related table on the other side of a table relationship.

@@ -4,7 +4,7 @@ description: Walkthough of how to use Visual Studio code with the Power BI repo.
 services: ''
 documentationcenter: ''
 author: guyinacube
-manager: mblythe
+manager: kfile
 editor: ''
 
 ms.service: contributor-guide
@@ -12,7 +12,7 @@ ms.devlang: ''
 ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 11/09/2015
+ms.date: 11/09/2017
 ms.author: asaxton
 
 ---
@@ -25,13 +25,13 @@ There are a few advantages to using Visual Studio Code instead of another tool, 
 ## Update your local repro first
 You still need to use the Git command line for a few operations.  The first of which is that we should always do a pull before you begin making changes.  This makes sure that your repo/branch is in line with the main Azure master branch.
 
-To pull the updates from Azure/powerbi-content-pr, run the following command.
+To pull the updates from MicrosoftDocs/powerbi-docs-pr, run the following command.
 
-    git pull Azure master
+    git pull MicrosoftDocs master
 
 ![](media/vs-code-flow/gitpull.png)
 
-You will see **Azure** listed in the command above.  In your case, it may be **upstream**.  You will get an error indicating it doesn't exist.  Also, it is *case sensitive*!  You can verify what yours is by doing a *git remote show*.
+You will see **MicrosoftDocs** listed in the command above.  In your case, it may be **upstream**.  You will get an error indicating it doesn't exist.  Also, it is *case sensitive*!  You can verify what yours is by doing a *git remote show*.
 
 It is a good idea to run a status command to make sure we are in sync.
 

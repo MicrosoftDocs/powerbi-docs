@@ -37,9 +37,9 @@ Follow the steps in this article to stage content to the internal staging site p
 
 1. Start Git Bash.
 
-2. Change to powerbi-content-pr:
+2. Change to powerbi-docs-pr:
 
-        cd powerbi-content-pr
+        cd powerbi-docs-pr
 
 3. Check out the sandbox branch:
 

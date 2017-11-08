@@ -5,18 +5,18 @@ metakeywords: ''
 services: ''
 solutions: ''
 documentationcenter: ''
-author: mblythe
+author: guyinacube
 videoid: ''
 scriptid: ''
-manager: dongill
+manager: kfile
 
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 09/09/2015
-ms.author: mblythe
+ms.date: 11/08/2017
+ms.author: asaxton
 
 ---
 # Git commands for creating a new article or updating an existing article
@@ -28,9 +28,9 @@ Follow the steps in this article to create a local working branch on your comput
 1. Start Git Bash (or the command-line tool you use for Git).
    
    **Note:** If you are working in the public repository, change powerbi-content-pr to powerbi-content in all the commands.
-2. Change to powerbi-content-pr:
+2. Change to powerbi-docs-pr:
    
-        cd powerbi-content-pr
+        cd powerbi-docs-pr
 3. Check out the master branch:
    
         git checkout master
@@ -63,7 +63,7 @@ Follow the steps in this article to create a local working branch on your comput
 12. The pull request acceptor reviews your pull request, provides feedback, and/or accepts your pull request. 
 13. Verify your published article or changes at
     
-    http://powerbi.microsoft.com/documentation/articles/*name-of-your-article-without-the-MD-extension*
+    https://review.docs.microsoft.com/en-us/power-bi/*name-of-your-article-without-the-MD-extension*?branch=master
 
 **Notes:**
 
