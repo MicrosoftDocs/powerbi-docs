@@ -36,7 +36,7 @@ For paginated reports, you can take advantage of the Report Viewer Control. This
 ## APIs
 You have several API options for interacting with Power BI Report Server. This includes the following.
 
-* [REST APIs](reportserver-rest-api.md)
+* [REST APIs](rest-api.md)
 * [URL Access](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
 * [WMI Provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
