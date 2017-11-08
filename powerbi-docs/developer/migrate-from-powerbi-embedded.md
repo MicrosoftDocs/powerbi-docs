@@ -99,7 +99,7 @@ You will need a user that has a Pro license in order to create an app workspace 
 ## Content migration
 Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
 
-A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md).
+A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
 
 Content migration relies mainly on two APIs.
 
@@ -189,7 +189,7 @@ You should do some cleanup within Azure.
 
 ## Next steps
 [Embedding with Power BI](embedding.md)  
-[Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md)  
+[Power BI Embedded migration tool](migrate-tool.md)  
 [Code snippets for migrating content from Power BI Embedded](migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
 [Power BI Premium - what is it?](../service-premium.md)  

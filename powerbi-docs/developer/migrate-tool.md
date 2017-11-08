@@ -42,7 +42,7 @@ You will want to start by creating a new migration plan. To create a new migrati
 
 1. Select **File** > **New Migration Plan**.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-plan.png)
+    ![](media/migrate-tool/migrate-tool-plan.png)
 2. In the **Select Power BI Embedded Resource Group**  dialog, you will want to select the Environment dropdown and select prod.
 3. You will be prompted to sign in. You will use your Azure subscription login.
    
@@ -52,13 +52,13 @@ You will want to start by creating a new migration plan. To create a new migrati
    > 
 4. Select the Azure subscription which stores your Power BI Embedded workspace collections.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group.png)
+    ![](media/migrate-tool/migrate-tool-select-resource-group.png)
 5. Below the subscription list, select the **Resource Group** that contains your workspace collections and select **Select**.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group2.png)
+    ![](media/migrate-tool/migrate-tool-select-resource-group2.png)
 6. Select **Analyze**. This will get an inventory of the items within your Azure subscription for you to begin your plan.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-group.png)
+    ![](media/migrate-tool/migrate-tool-analyze-group.png)
    
    > [!NOTE]
    > The analyze process could take several minutes depending on the number of Workspace collections and how much content exists in the workspace collection.
@@ -75,7 +75,7 @@ To save your migration plan, do the following.
 
 1. Select **File** > **Save Migration Plan**.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-save-plan.png)
+    ![](media/migrate-tool/migrate-tool-save-plan.png)
 2. Give your file a name or use the generated file name and select **Save**.
 
 ### Open an existing migration plan
@@ -85,13 +85,13 @@ To open your existing migration plan, do the following.
 
 1. Select **File** > **Open Existing Migration Plan**.
    
-    ![](media/powerbi-developer-migrate-tool/migrate-tool-open-plan.png)
+    ![](media/migrate-tool/migrate-tool-open-plan.png)
 2. Select your migration file and select **Open**.
 
 ## Step 1: Analyze & Plan Migration
 The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription’s resource group.
 
-![Analyze & Plan Migration tab](media/powerbi-developer-migrate-tool/migrate-tool-step1.png)
+![Analyze & Plan Migration tab](media/migrate-tool/migrate-tool-step1.png)
 
 We will look at the *SampleResourceGroup* as an example.
 
@@ -108,7 +108,7 @@ You can select an item within the PaaS topology to display the reports in the re
 ### Reports
 The reports section will list out the reports available and indicates whether it can be downloaded or not.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-reports.png)
+![](media/migrate-tool/migrate-tool-analyze-reports.png)
 
 ### Target structure
 The **Target structure** is where you tell the tool where things will be downloaded to and how to upload them.
@@ -124,7 +124,7 @@ A path will automatically be created for you. You can change this path if you wi
 #### Upload Plan
 Here you can specify a prefix to be used for the App Workspaces that will be created within the Power BI service. After the prefix will be the GUID for the workspace that existed in Azure.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-plan.png)
+![](media/migrate-tool/migrate-tool-upload-plan.png)
 
 > [!NOTE]
 > This does not actually create the groups within the Power BI service. This only defines the naming structure for the groups.
@@ -135,7 +135,7 @@ If you change the prefix, you will need to select **Generate Upload Plan**.
 
 You can right click on a group and choose to rename the group within the Upload plan directly, if desired.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-report-rename-item.png)
+![](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
 > The name of the *group* must not contain spaces or invalid characters.
@@ -145,14 +145,14 @@ You can right click on a group and choose to rename the group within the Upload 
 ## Step 2: Download
 On the **Download** tab, you will see the list of reports and associated metadata. You can see what the export status is along with the previous export status.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-download-tab.png)
+![](media/migrate-tool/migrate-tool-download-tab.png)
 
 You have two options.
 
 * Select specific reports and select **Download Selected**
 * Select **Download All**.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-download-options.png)
+![](media/migrate-tool/migrate-tool-download-options.png)
 
 For a successful download, you will see a status of *Done* and it will reflect that the PBIX file exists.
 
@@ -161,34 +161,34 @@ After the download is completed, select the **Create Groups** tab.
 ## Step 3: Create Groups
 After you have downloaded the reports that are available, you can go to the **Create Groups** tab. This tab will create the app workspaces within the Power BI service based on the migration plan that you created. It will create the app workspace with the name you provided on the **Upload** tab within **Analyze & Plan Migration**.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-create-groups.png)
+![](media/migrate-tool/migrate-tool-create-groups.png)
 
 To create the app workspaces, you can select either **Create Selected Groups** or **Create All Missing Groups**.
 
 When you select either of these options, you will be prompted to sign in. *You will want to use your credentials for the Power BI service that you want to create the app workspaces on.*
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-create-group-sign-in.png)
+![](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
 This will create the app workspace within the Power BI service. This does not upload the reports to the app workspace.
 
 You can verify that the app workspace was created by signing into Power BI and validating that the workspace exists. You will notice that nothing is in the workspace.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-app-workspace.png)
+![](media/migrate-tool/migrate-tool-app-workspace.png)
 
 After the workspace is created, you can move onto the **Upload** tab.
 
 ## Step 4: Upload
 On the **Upload** tab, this will upload the reports to the Power BI service. You will see a list of the reports that we downloaded on the Download tab along with the target group name based on your migration plan.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-tab.png)
+![](media/migrate-tool/migrate-tool-upload-tab.png)
 
 You can upload selected reports, or you could upload all the reports. You can also reset the upload status to re-upload items.
 
 You also have the option of selecting what to do if a report with the same name exists. You can choose between **Abort**, **Ignore** and **Overwrite**.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-report-same-name.png)
+![](media/migrate-tool/migrate-tool-upload-report-same-name.png)
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-selected.png)
+![](media/migrate-tool/migrate-tool-upload-selected.png)
 
 ### Duplicate report names
 If you have a report that has the same name, but you know it is a different report, you will need to change the **TargetName** of the report. You can change the name by manually editing the migration plan XML.
@@ -227,7 +227,7 @@ We can then re-open the plan, in the migration tool, and upload the failed repor
 
 Going back to Power BI, we can see that the reports and datasets have been uploaded in the app workspace.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-upload-app-workspace.png)
+![](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -243,22 +243,22 @@ After you have edited the xml, re-open the plan within the migration tool and up
 <a name="directquery-reports"></a>
 
 ### DirectQuery reports
-You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](developer/migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
 
-* [Update DirectQuery connection string is SaaS workspace](developer/migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
-* [Set DirectQuery credentials in SaaS workspace](developer/migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
+* [Update DirectQuery connection string is SaaS workspace](migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
+* [Set DirectQuery credentials in SaaS workspace](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
 
 ## Embedding
 Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.
 
-For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md).
+For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md).
 
 ## Next steps
-[Embedding with Power BI](developer/embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md)  
-[Power BI Premium - what is it?](service-premium.md)  
+[Embedding with Power BI](embedding.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
+[Power BI Premium - what is it?](../service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
