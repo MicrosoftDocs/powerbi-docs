@@ -102,7 +102,7 @@ On the Favorites page in the mobile apps, you see all of your favorite Power BI 
   
    ![Favorites page](media/mobile-android-app-get-started/power-bi-android-favorites-callouts.png)
 
-Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.

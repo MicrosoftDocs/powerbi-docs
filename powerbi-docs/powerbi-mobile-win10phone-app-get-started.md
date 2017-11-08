@@ -108,7 +108,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
   
    ![View favorites](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorites.png)
 
-Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 ## Next steps
 Here are some other things you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal

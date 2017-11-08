@@ -38,7 +38,7 @@ Your dashboards, reports, and apps are stored in different locations in the Powe
 5. [Workspaces](powerbi-mobile-find-content-mobile-devices.md#5-workspaces)
 
 ## 1 Favorites
-Collect the dashboards and apps you view most often by tagging them as favorites. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+Collect the dashboards and apps you view most often by tagging them as favorites. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 ## 2 Report servers
 You may have connections to one or more on-premises Power BI Report Server or SQL Server Reporting Services servers. If you do, the KPIs, Power BI reports, and paginated reports on the server show up here. If you've made any of them favorites on the server, they also show up in your Favorites list. Read more about [viewing on-premises KPIs and reports in the Power BI mobile apps](powerbi-mobile-iphone-kpis-mobile-reports.md).

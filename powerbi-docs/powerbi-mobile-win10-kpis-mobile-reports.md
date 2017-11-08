@@ -96,7 +96,7 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
   
    ![Favorites page](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
 
-Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 ## Remove a connection to a report server
 You can only be connected to one report server at a time from your Power BI mobile app. If you want to connect to a different server, you need to disconnect from the current one.
