@@ -32,11 +32,11 @@ The product key will be in one of two places depending on what you purchased.
 ## Purchased Power BI Premium
 If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
 
-![Power BI Report Server key within Premium settings](media/reportserver-find-product-key/pbirs-product-key.png)
+![Power BI Report Server key within Premium settings](media/find-product-key/pbirs-product-key.png)
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![Power BI Report Server product key](media/reportserver-find-product-key/pbirs-product-key-dialog.png)
+![Power BI Report Server product key](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## Purchased Software Assurance agreeemnt
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Look under the latest service pack, for the latest version of SQL Server. If you don't see it there, look under the RTM release of the latest SQL Server version.
@@ -46,7 +46,7 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 > 
 > 
 
-![](media/reportserver-find-product-key/vlsc-download.png "Volume Licensing Service Center")
+![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
 
 ## Next steps
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
