@@ -23,12 +23,12 @@ ms.author: asaxton
 # Integrate a report into an app for your organization
 Learn how to integrate, or embed, a report into a web app using REST API calls along with the Power BI JavaScript API when embedding for your organization.
 
-![Embedded report sample](media/powerbi-developer-integrate-report/powerbi-embedded-report.png)
+![Embedded report sample](media/integrate-report/powerbi-embedded-report.png)
 
-To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](developer/create-an-azure-active-directory-tenant.md) for testing purposes.
+To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](../service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) for testing purposes.
 
 > [!NOTE]
-> Looking to embed a report for your customers, using an embedtoken, instead? See, [Integrate a dashboard, tile, or report into your application for your customers](developer/embed-sample-for-customers.md).
+> Looking to embed a report for your customers, using an embedtoken, instead? See, [Integrate a dashboard, tile, or report into your application for your customers](embed-sample-for-customers.md).
 > 
 > 
 
@@ -38,14 +38,14 @@ To integrate a report into a web app, you use the **Power BI** REST API, or the 
 This article shows the code used in the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
 
 ## Step 1 - register an app in Azure AD
-You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
+You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](../powerbi-developer-register-app.md).
 
 If you downloaded the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), you use the **Client ID** and **Client Secret** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in the *cloud.config* file.
 
-![](media/powerbi-developer-integrate-report/powerbi-embed-dashboard-register-app4.png)
+![](media/integrate-report/powerbi-embed-dashboard-register-app4.png)
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](developer/get-azuread-access-token.md).
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ## Step 3 - get a report
 To get a **Power BI** report, you use the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report id.
@@ -215,7 +215,7 @@ function updateEmbedReport() {
 
 If you downloaded and ran the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), the sample will look similar to below.
 
-![Embedded report sample](media/powerbi-developer-integrate-report/powerbi-embedded-report.png)
+![Embedded report sample](media/integrate-report/powerbi-embedded-report.png)
 
 ## Working with groups (app workspaces)
 For embedding a report from a group (app workspace), you will want to get the list of all available reports within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx). You will need to have permission in the group for the request to return results.

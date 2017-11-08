@@ -93,7 +93,7 @@ For **embedding for your organization**, see the following walkthroughs:
 
 * [Integrate a dashboard into an app](integrate-dashboard.md)
 * [Integrate a tile into an app](../powerbi-developer-integrate-tile.md)
-* [Integrate a report into an app](../powerbi-developer-integrate-report.md)
+* [Integrate a report into an app](integrate-report.md)
 
 For **embeding with your customers**, which is typical for ISVs, see the following:
 
