@@ -25,23 +25,23 @@ Connecting to a comma-separated value (*CSV*) file from Power BI Desktop is a lo
 
 To start with, from Power BI Desktop select **Get Data > CSV** from the **Home** ribbon.
 
-![](media/powerbi-desktop-connect-csv/connect-to-csv_1.png)
+![](media/desktop-connect-csv/connect-to-csv_1.png)
 
 Select your CSV file from the **Open** dialog that appears.
 
-![](media/powerbi-desktop-connect-csv/connect-to-csv_2.png)
+![](media/desktop-connect-csv/connect-to-csv_2.png)
 
 When you select **Open**, Power BI Desktop accesses the file and determines certain file attributes, such as the file origin, delimiter type, and how many rows should be used to detect the data types in the file.
 
 These file attributes and options are shown in the drop-down selections at the top of the **CSV import** dialog window, shown below. You can change any of these detected settings manually, by choosing another option from any of the drop-down selectors.
 
-![](media/powerbi-desktop-connect-csv/connect-to-csv_3.png)
+![](media/desktop-connect-csv/connect-to-csv_3.png)
 
 When you’re satisfied with the selections, you can select **Load** to import the file into Power BI Desktop, or you can select **Edit** to open **Query Editor** and further shape or transform the data before importing it.
 
 Once you load the data into Power BI Desktop, you see the table and its columns (which are presented as Fields in Power BI Desktop) in the **Fields** pane, along the right of the Report view in Power BI Desktop.
 
-![](media/powerbi-desktop-connect-csv/connect-to-csv_4.png)
+![](media/desktop-connect-csv/connect-to-csv_4.png)
 
 That’s all you have to do – the data from your CSV file is now in Power BI Desktop.
 

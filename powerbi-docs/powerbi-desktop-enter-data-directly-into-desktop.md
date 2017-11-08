@@ -48,5 +48,5 @@ You’re now ready to use the data in Power BI Desktop to create visuals, report
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
-* [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
+* [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)   
 
