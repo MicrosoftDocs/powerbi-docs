@@ -27,7 +27,7 @@ When you’re modeling your data, sometimes you want to see what’s actually in
 
 Let’s take a closer look.
 
-![](media/powerbi-desktop-data-view/DataView_FullScreen.png)
+![](media/desktop-data-view/dataview_fullscreen.png)
 
 **1.** Data View icon – Click to enter Data View.
 
