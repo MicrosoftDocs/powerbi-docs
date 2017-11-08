@@ -192,7 +192,7 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 
 * [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
 * [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
-* [Data Types in Power BI Desktop](powerbi-desktop-data-types.md)
+* [Data Types in Power BI Desktop](desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)    
 
