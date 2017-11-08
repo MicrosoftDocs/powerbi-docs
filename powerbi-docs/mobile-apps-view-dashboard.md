@@ -187,7 +187,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    * Tap the **Full Screen** icon ![Full screen icon](media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png) to present your Power BI dashboard without borders or menus, like **Slide Show** view in PowerPoint.
    * Tap the **Invite** icon ![Invite icon](media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) with a colleague.
    * Tap the star ![Favorite star](media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) to [make the dashboard a favorite](mobile-apps-favorites.md).
-   * Tap the **Pin to Start** icon to [pin the dashboard to your Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 
+   * Tap the **Pin to Start** icon to [pin the dashboard to your Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
 4. To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**:
    
     ![Breadcrumb](media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)

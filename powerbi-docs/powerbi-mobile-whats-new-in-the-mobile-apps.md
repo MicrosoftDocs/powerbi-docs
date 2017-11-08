@@ -382,7 +382,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
-**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md) as live tiles, so you can see all of your critical metrics at a glance.
+**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) as live tiles, so you can see all of your critical metrics at a glance.
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
@@ -426,7 +426,7 @@ Now you can view your SQL Server mobile reports in the Power BI app on your iOS 
 * View [SQL Server mobile reports and KPIs in the iPhone and iPad apps](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) documentation
 
 #### Power BI app for Windows 10 phones
-The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
+The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 * Read the [Power BI app for Windows 10 phones blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
 * [Get started with the Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md).
