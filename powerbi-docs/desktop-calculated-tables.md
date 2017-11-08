@@ -36,38 +36,38 @@ Jeff, a project manager at Contoso, has a table with employees on the in Northwe
 
 **NorthwestEmployees**
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_NWEmpl.png)
+ ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
 **SoutwestEmployees**
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_SWEmpl.png)
+ ![](media/desktop-calculated-tables/calctables_swempl.png)
 
 Putting these two tables together with a calculated table is quite easy. While Jeff can create a calculated table in either Report View or Data View, it’s a bit easier to do it in Data View because he can immediately see his new calculated table.
 
 In **Data View**, on the **Modeling** tab, Jeff clicks **New Table**. A formula bar appears.
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_FormulaBarEmpty.png)
+ ![](media/desktop-calculated-tables/calctables_formulabarempty.png)
 
 Jeff then enters the following formula:
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_FormulaBarFormula.png)
+ ![](media/desktop-calculated-tables/calctables_formulabarformula.png)
 
 A new table named Western Region Employees is created.
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_WestRegionEmpl.png)
+ ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
 Jeff’s new Western Region Employees table appears just like any other
 table in the Fields list. He can create relationships to other tables,
 add calculated columns and measures, and add any of its fields to
 reports just like any other table.
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_FieldList.png)
+ ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 
 ## Functions for calculated tables
 Calculated tables can be defined by any DAX expression that returns a
 table, including a simple reference to another table. For example:
 
- ![](media/powerbi-desktop-calculated-tables/CalcTables_FormulaBarSimpleFormula.png)
+ ![](media/desktop-calculated-tables/calctables_formulabarsimpleformula.png)
 
 You can use calculated tables with DAX to solve many analytical
 problems. We’ve only provided a quick introduction to calculated tables
