@@ -33,11 +33,11 @@ This situation often occurs when the installed version of Microsoft Office is 32
 
 1. Change the version of Power BI Desktop to match the bit-version of your Microsoft Office installation. To change the bit-version of Power BI Desktop, uninstall Power BI Desktop, and then install the version of Power BI Desktop that matches your Office installation. To select a version of Power BI Desktop, on the download page for desktop select **Advanced download options**.
    
-   ![](media/powerbi-desktop-access-database-errors/desktop-access-errors-1.png)
+   ![](media/desktop-access-database-errors/desktop-access-errors-1.png)
    
    On the download page that appears, choose your language and then select the **Download** button. ON the  screen that appears, select the checkbox beside PBIDesktop.msi for the 32-bit version, or PBIDesktop_x64.msi for the 64-bit version. In the following screen, the 64-bit version is selected.
    
-   ![](media/powerbi-desktop-access-database-errors/desktop-access-errors-2.png)
+   ![](media/desktop-access-database-errors/desktop-access-errors-2.png)
    
    **Note:** When using the 32-bit version of Power BI Desktop, when creating very large data models you might experience out-of-memory issues.
 2. Change the version of Microsoft Office to match the bit-version of your Power BI Desktop installation. To change the bit-version of Microsoft Office, uninstall Office, and then install the version of Office that matches your Power BI Desktop installation.
