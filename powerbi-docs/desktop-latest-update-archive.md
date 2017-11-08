@@ -575,7 +575,7 @@ July brought another great collection of new features and highly anticipated dat
   * Improvements and changes to the SAP Business Warehouse connector [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 ### Query Editor improvements:
-* Use **R** script in Query Editor [[article]](powerbi-desktop-r-in-query-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+* Use **R** script in Query Editor [[article]](desktop-r-in-query-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 * Query parameter enhancements:
   * List query output as *allowed values* for a parameter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 * Overwrite existing user-defined functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
