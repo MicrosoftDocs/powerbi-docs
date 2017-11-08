@@ -66,7 +66,7 @@ In most cases, Power BI does its thing and calculates and returns values accordi
 
 With Power BI Desktop, you create your own measures with the Data Analysis Expressions (DAX) formula language. DAX formulas are very similar to Excel formulas. In fact, DAX uses many of the same functions, operators, and syntax as Excel formulas. However, DAX’s functions are designed to work with relational data and perform more dynamic calculations as we interact with our reports.
 
-There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. We’re not going to go into too much detail on the DAX language here, but there are many resources to help you learn more. After you've gone through this tutorial, be sure to see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
+There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. We’re not going to go into too much detail on the DAX language here, but there are many resources to help you learn more. After you've gone through this tutorial, be sure to see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
 When we create our own measures, they’re added to the Fields list for the table we want. This is known as a *model* measure, and it will remain in our table as a field. Some of the great advantages of model measures are that we can name them what we want, making them more identifiable. We can also use them as an argument in other DAX expressions, and we can create measures that perform complex calculations very quickly.
 
@@ -247,7 +247,7 @@ Ok, now we're just playing, but you have to admit, that's just cool! Of course, 
 Measures give us a lot of power in getting the insights we want from our data. We’ve learned how to create measures by using the formula bar. We can name measures whatever makes most sense, and the suggestion lists make it easy to find and select the right element to add to our formulas. We’ve also been introduced to context, where the result of calculations in measures change according to other fields, or by other expressions in your measure formula.
 
 ## Additional resources
-If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
+If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
 

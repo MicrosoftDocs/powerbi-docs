@@ -57,7 +57,7 @@ He can add it to his report canvas along with the number of shipments. Very quic
 ## Learn more
 We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
-To learn more about DAX, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
+To learn more about DAX, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
 To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](desktop-common-query-tasks.md)  
 

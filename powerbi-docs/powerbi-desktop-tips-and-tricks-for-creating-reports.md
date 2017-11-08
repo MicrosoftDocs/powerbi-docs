@@ -159,7 +159,7 @@ Sometimes it's useful to compute summary statistics for a data set.  The easy wa
 ## Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
 
-[QuickStart: Learn DAX Basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md)
+[QuickStart: Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 

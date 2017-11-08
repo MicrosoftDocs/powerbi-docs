@@ -44,7 +44,7 @@ We will frame our understanding of DAX around three fundamental concepts: *Synta
 ### Syntax
 Before you create your own formulas, let’s take a look at DAX formula syntax. Syntax includes the various elements that make up a formula, or more simply, how the formula is written. For example, let’s look at a simple DAX formula for a measure.
 
-![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_1_Syntax.png)
+![](media/desktop-quickstart-learn-dax-basics/qsdax_1_syntax.png)
 
 This formula includes the following syntax elements:
 
@@ -123,11 +123,11 @@ Your formula should now look like this:
 > 
 > 
 
-**9.** Click the checkmark ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_Syntax_TaskCheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
+**9.** Click the checkmark ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
 
 You did it! You just created a measure using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure in a chart, and then added Year and QuarterOfYear as Slicers, we’d get something like this:
 
-![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_3_Chart.png)
+![](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
 
 You were just introduced to several important aspects of DAX formulas. First, this formula included two functions. Notice [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), a time intelligence, function is nested as an argument passed to [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx), a filter function. DAX formulas can contain up to 64 nested functions. It’s unlikely a formula would ever contain so many nested functions. In fact, such a formula would be very difficult to create and debug, and it probably wouldn’t be very fast either.
 
@@ -138,7 +138,7 @@ Finally, you used the CALCULATE function. This is one of the most powerful funct
 ### Syntax QuickQuiz
 1. What does this button on the formula bar do?
    
-   > ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_2_SyntaxQuiz.png)
+   > ![](media/desktop-quickstart-learn-dax-basics/qsdax_2_syntaxquiz.png)
    > 
    > 
 2. What always surrounds a column name in a DAX formula?
@@ -182,7 +182,7 @@ Filter context is easily seen in your reports. For example, when you add TotalCo
 
 Why is filter context so important to DAX? Because while filter context can most easily be applied by adding fields to a visualization, filter context can also be applied in a DAX formula by defining a filter using functions such as ALL, RELATED, FILTER, CALCULATE, by relationships, and by other measures  and columns. For example, let’s look at the following formula in a measure named Store Sales:
 
-![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_4_Context.png)
+![](media/desktop-quickstart-learn-dax-basics/qsdax_4_context.png)
 
 To better understand this formula, we can break it down, much like with other formulas.
 
