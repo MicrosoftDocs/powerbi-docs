@@ -563,7 +563,7 @@ July brought another great collection of new features and highly anticipated dat
 
 ### Report View:
 * Predefined table styles [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[video]](https://youtu.be/g8ccfjffWmw?t=1m25s)
-* Shape Maps update - use custom maps [[article]](powerbi-desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)  [[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
+* Shape Maps update - use custom maps [[article]](desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)  [[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
 ### Data Connectors:
 * New data connectors:
@@ -600,7 +600,7 @@ You can always [download the latest version of Power BI Desktop](https://powerbi
 June provided a shining collection of interesting updates for Power BI Desktop.
 
 ### Report View:
-* New visual - Shape Maps [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](powerbi-desktop-shape-map.md)
+* New visual - Shape Maps [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](desktop-shape-map.md)
 * Searchable slicers [[video]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 * Configurable line chart labels [[video]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 * New sign-in entry points [[video]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)

@@ -30,15 +30,15 @@ You can test the **Shape Map** control with the maps that are shipping with this
 
 The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
-![](media/powerbi-desktop-shape-map/shape-map_1a.png)
+![](media/desktop-shape-map/shape-map_1a.png)
 
 Once **Shape Map** is enabled, click the **Shape Map** control from the **Visualizations** pane.
 
-![](media/powerbi-desktop-shape-map/shape-map_2.png)
+![](media/desktop-shape-map/shape-map_2.png)
 
 Power BI Desktop creates an empty **Shape Map** visual design canvas.
 
-![](media/powerbi-desktop-shape-map/shape-map_3.png)
+![](media/desktop-shape-map/shape-map_3.png)
 
 Take the following steps to create a **Shape Map**:
 
@@ -48,17 +48,17 @@ Take the following steps to create a **Shape Map**:
    > 
    > 
    
-   ![](media/powerbi-desktop-shape-map/shape-map_3a.png)
+   ![](media/desktop-shape-map/shape-map_3a.png)
 2. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point the rendering appears, as shown in the following image.
    
-   ![](media/powerbi-desktop-shape-map/shape-map_3b.png)
+   ![](media/desktop-shape-map/shape-map_3b.png)
    
    > **Note:** In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
 3. You can then modify the map projection and zooming settings, as well as the colors of data points, from the **Format** settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
    
-   ![](media/powerbi-desktop-shape-map/shape-map_3d.png)
+   ![](media/desktop-shape-map/shape-map_3d.png)
 4. You can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
 ## Use Custom Maps
@@ -66,16 +66,16 @@ You can use custom maps with **Shape Map** as long as they are in the **TopoJSON
 
 To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Values* buckets. Then, in the **Visualizations** pane with the **Format** section selected (the paintbrush icon, shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
 
-![](media/powerbi-desktop-shape-map/shape-map_6.png)
+![](media/desktop-shape-map/shape-map_6.png)
 
 ## Getting Map Data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
 
-![](media/powerbi-desktop-shape-map/shape-map_4.png)
+![](media/desktop-shape-map/shape-map_4.png)
 
 You can then paste the table into Power BI Desktop. The top row is automatically identified as a header.
 
-![](media/powerbi-desktop-shape-map/shape-map_5.png)
+![](media/desktop-shape-map/shape-map_5.png)
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 

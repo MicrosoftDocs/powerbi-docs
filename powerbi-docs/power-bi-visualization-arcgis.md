@@ -323,7 +323,7 @@ This is a bug that is being addressed.  In the meantime, to clear your cache, pl
 
 **Does ArcGIS Maps for Power BI support Esri Shapefiles?**
 
-ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop (Preview)](powerbi-desktop-shape-map.md).
+ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop (Preview)](desktop-shape-map.md).
 
 **Can I view my ArcGIS maps offline?**
 
