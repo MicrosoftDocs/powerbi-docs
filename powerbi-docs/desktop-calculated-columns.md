@@ -27,7 +27,7 @@ Unlike custom columns created as part of a query by using Add Custom Column in Q
 
 Calculated columns you create appear in the Fields list just like any other field, but they’ll have a special icon showing its values are the result of a formula. You can name your columns whatever you want, and add them to a report visualization just like other fields.
 
-![](media/powerbi-desktop-calculated-columns/CalcColInPBID_Fields.png)
+![](media/desktop-calculated-columns/calccolinpbid_fields.png)
 
 Calculated columns calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need. To learn more about DAX, see the Learn more section at the end of this article.
 
@@ -36,23 +36,23 @@ DAX formulas are similar to Excel formulas. In fact, DAX has many of the same fu
 ## Let’s look at an example
 Jeff is a shipping manager at Contoso. He wants to create a report showing the number of shipments to different cities. He has a Geography table with separate fields for city and state. But, Jeff wants his reports to show City, State as a single value on the same row. Right now, Jeff’s Geography table doesn’t have the field he wants.
 
-![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityAndStateFields.png)
+![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 
 But with a calculated column, Jeff can simply put together, or concatenate, the cities from the City column with the states from the State column.
 
 Jeff right clicks on the Geography table and then clicks New Column. He then enters the following DAX formula into the formula bar:
 
-![](media/powerbi-desktop-calculated-columns/CalcColInPBID_Formula.png)
+![](media/desktop-calculated-columns/calccolinpbid_formula.png)
 
 This formula simply creates a new column named CityState, and for each row in the Geography table, it takes values from the City column, adds a comma and a space, and then concatenates values from the State column.
 
 Now Jeff has the field he wants.
 
-![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityStateField.png)
+![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
 He can add it to his report canvas along with the number of shipments. Very quickly and with minimal effort, Jeff now has a City, State field. He can add to just about any type of visualization. Jeff even sees that when he creates a map visualization, Power BI Desktop even knows how to read the City, State values in his new column.
 
-![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityStateMap.png)
+![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## Learn more
 We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
