@@ -24,7 +24,7 @@ ms.author: asaxton
 In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server, giving them a single location to publish and view their self-service Microsoft BI content.
 
 > [!NOTE]
-> This is a preview feature included in the August 2017 preview release. For more information, see [What's new in Power BI Report Server](reportserver-whats-new.md).
+> This is a preview feature included in the August 2017 preview release. For more information, see [What's new in Power BI Report Server](whats-new.md).
 > 
 > 
 

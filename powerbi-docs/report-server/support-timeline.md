@@ -41,7 +41,7 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 
 ## Next steps
-[What's new in Power BI Report Server](reportserver-whats-new.md)  
+[What's new in Power BI Report Server](whats-new.md)  
 [Power BI Report Server release notes](release-notes.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  

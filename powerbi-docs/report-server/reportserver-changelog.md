@@ -23,7 +23,7 @@ ms.author: jaimeta
 # Changelog for Power BI Report Server
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed information about new features, see [What's new in Power BI Report Server](reportserver-whats-new.md).
+For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md).
 
 ## October 2017
 * **Power BI Report Server**
