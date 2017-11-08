@@ -36,7 +36,7 @@ Before you start to install, upgrade or migrate to Power BI Report Server, take 
 If you are deploying a new Power BI Report Server, you use the following documents to help you. A quickstart is available to jump right in. Or, you can look at the install document for full details.
 
 * [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)
-* [Install Power BI Report Server](reportserver-install-report-server.md)
+* [Install Power BI Report Server](install-report-server.md)
 
 ### Migration
 There is no in place upgrade for SQL Server Reporting Services. If you have an existing SQL Server Reporting Services instance that you want to make a Power BI Report Server, you will need to migrate it. There are other reasons that you may want to perform a migration as well. Review the migration document for more details.

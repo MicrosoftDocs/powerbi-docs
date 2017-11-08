@@ -197,7 +197,7 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 ![Power BI Report Server product key](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 
-For more information, see [Install Power BI Report Server](report-server/reportserver-install-report-server.md).
+For more information, see [Install Power BI Report Server](report-server/install-report-server.md).
 
 ## Next steps
 Share published apps with Free users when you assign the workspace to a Premium capacity. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).

@@ -23,11 +23,11 @@ ms.author: asaxton
 # Install Power BI Report Server
 Learn how to install Power BI Report Server.
 
- **Download** ![download](media/reportserver-install-report-server/download.png "download")
+ **Download** ![download](media/install-report-server/download.png "download")
 
 To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/). For Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
 
-![tip](media/reportserver-install-report-server/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
+![tip](media/install-report-server/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -58,25 +58,25 @@ Installing Power BI Report Server is straight forward. There are only a few step
 1. Find the location of PowerBIReportServer.exe and launch the installer.
 2. Select **Install Power BI Report Server**.
    
-    ![Install Power BI Report Server](media/reportserver-install-report-server/pbireportserver-install.png)
+    ![Install Power BI Report Server](media/install-report-server/pbireportserver-install.png)
 3. Choose an edition to install and then select **Next**.
    
-    ![Choose an edition](media/reportserver-install-report-server/pbireportserver-choose-edition.png)
+    ![Choose an edition](media/install-report-server/pbireportserver-choose-edition.png)
    
     You can choose either Evaluation or Developer edition from the drop down.
    
-    ![](media/reportserver-install-report-server/pbireportserver-choose-edition2.png)
+    ![](media/install-report-server/pbireportserver-choose-edition2.png)
    
     Otherwise, you can enter a product key for the server that you acquired from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you begin](#before-you-begin) section.
 4. Read and agree to the license terms and conditions and then select **Next**.
    
-    ![License terms](media/reportserver-install-report-server/pbireportserver-eula.png)
+    ![License terms](media/install-report-server/pbireportserver-eula.png)
 5. You need to have a Database Engine available to store the report server database. Select **Next** to install the report server only.
    
-    ![Install files only](media/reportserver-install-report-server/pbireportserver-install-files-only.png)
+    ![Install files only](media/install-report-server/pbireportserver-install-files-only.png)
 6. Specify the install location for the report server. Select **Install** to continue.
    
-    ![Specify install path](media/reportserver-install-report-server/pbireportserver-install-file-path.png)
+    ![Specify install path](media/install-report-server/pbireportserver-install-file-path.png)
    
    > [!NOTE]
    > The default path is C:\Program Files\Microsoft Power BI Report Server.
@@ -84,7 +84,7 @@ Installing Power BI Report Server is straight forward. There are only a few step
    > 
 7. After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.
    
-    ![Configure the report server](media/reportserver-install-report-server/pbireportserver-configure.png)
+    ![Configure the report server](media/install-report-server/pbireportserver-configure.png)
 
 ## Configuration your report server
 After you select **Configure Report Server** in the setup, you will be presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
@@ -100,16 +100,16 @@ By default, the report server uses the virtual service account. If you try to cr
 
 To work around the error, you can change the service account to either Network Service or a domain account. Changing the service account to Network Service applies rights in the context of the machine account for the report server.
 
-![Configure report server service account](media/reportserver-install-report-server/pbireportserver-configure-account.png)
+![Configure report server service account](media/install-report-server/pbireportserver-configure-account.png)
 
 For more information, see [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
 
 ## Windows Service
 A windows service is created as part of the installation. It is displayed as **Power BI Report Server**. The service name is **PowerBIReportServer**.
 
-![Report Server Windows Service](media/reportserver-install-report-server/pbireportserver-windows-service.png)
+![Report Server Windows Service](media/install-report-server/pbireportserver-windows-service.png)
 
-![Report Server Windows Service properties](media/reportserver-install-report-server/pbireportserver-windows-service2.png)
+![Report Server Windows Service properties](media/install-report-server/pbireportserver-windows-service2.png)
 
 ## Default URL reservations
 URL reservations are composed of a prefix, host name, port, and virtual directory:
