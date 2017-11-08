@@ -475,7 +475,7 @@ The following updates were new to Power BI Desktop in September:
 * Improvements to existing connectors:
   * Oracle connector - improved Navigator previews performance [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
   * OData connector - support for *Select Related Tables* option [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
-  * SAP Business Warehouse and SAP HANA connectors - enhancements to parameter input interface [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+  * SAP Business Warehouse and SAP HANA connectors - enhancements to parameter input interface [[article]](desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
   * Web connector - support for specifying HTTP request headers within the dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/pcUr6E8g_KI?t=8m5s)
 
 ### Query Editor improvements:
@@ -534,7 +534,7 @@ The following updates are new to Power BI Desktop this month:
 * Improvements to existing connectors:
   * Impala connector - DirectQuery support [[article]](desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
   * Web connector - Web page previews [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=12m28s)
-  * General availability for the SAP Business Warehouse connector [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+  * General availability for the SAP Business Warehouse connector [[article]](desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
 
 ### Query Editor improvements:
 * Option to Merge/Append as New Query [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=14m24s)
@@ -572,7 +572,7 @@ July brought another great collection of new features and highly anticipated dat
 * Improvements to existing connectors:
   * Web connector - support for specifying a connection timeout  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
   * CSV and Text - support for fixed-width delimited files [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
-  * Improvements and changes to the SAP Business Warehouse connector [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+  * Improvements and changes to the SAP Business Warehouse connector [[article]](desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 ### Query Editor improvements:
 * Use **R** script in Query Editor [[article]](desktop-r-in-query-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)

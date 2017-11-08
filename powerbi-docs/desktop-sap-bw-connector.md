@@ -31,22 +31,22 @@ To use the **SAP BW Connector**, go through the following installation steps:
    You may be able to search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the **SAP NetWeaver** library (32-bit or 64-bit) matches your **Power BI Desktop** installation, then install all files included in the **SAP NetWeaver RFC SDK** according to the SAP Note.
 2. The **Get Data** dialog includes an entry for **SAP Business Warehouse Server** in the **Database** category.
    
-   ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_2a.png)
+   ![](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
 ## SAP BW Connector features
 The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. You can also use DirectQuery with the **SAP BW Connector**. You must specify a *Server*, *System Number* and *Client ID* to establish the connection.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_3a.png)
+![](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
 You can also specify two additional **Advanced options**: Language code, and a custom MDX statement to run against the specified server.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_4a.png)
+![](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
 If no MDX statement was specified you are presented with the **Navigator** window, which displays the list of cubes available in the server, the option to drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [BW Open Analysis Interface OLAP BAPIs](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
 When you select one or more items from the server, a preview of the output table is created, based on their selection.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_5.png)
+![](media/desktop-sap-bw-connector/sap_bw_5.png)
 
 The **Navigator** window also provides a few **Display Options** that allow you to do the following:
 
@@ -54,7 +54,7 @@ The **Navigator** window also provides a few **Display Options** that allow you 
 * **Enable Data Previews (default behavior):** You can also control whether data previews should be displayed in this dialog. Disabling data previews reduces the amount of server calls, since it no longer requests data for the previews.
 * **Technical Names:** SAP BW supports the notion of *technical names* for objects within a cube. Technical names allow a cube owner to expose *user friendly* names for cube objects, as opposed to only exposing the *physical names* for those objects in the cube.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_6.png)
+![](media/desktop-sap-bw-connector/sap_bw_6.png)
 
 After selecting all necessary objects in the **Navigator**, you can decide what to do next, by selecting one of the following buttons on the bottom of the **Navigator** window:
 
@@ -99,5 +99,5 @@ This section provides troubleshooting situations (and solutions) for working wit
    
    You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
    
-   ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_8.png)
+   ![](media/desktop-sap-bw-connector/sap_bw_8.png)
 
