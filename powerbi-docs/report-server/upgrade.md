@@ -74,7 +74,7 @@ After the report server is upgrade, you will want to make sure that any Power BI
 
 ## Next steps
 [Administrator handbook](admin-handbook-overview.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
+[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

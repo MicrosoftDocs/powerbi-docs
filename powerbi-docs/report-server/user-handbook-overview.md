@@ -62,7 +62,7 @@ Paginated reports are document-style reports, in which the more data you have, t
 You create these paginated reports with [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## Next steps
-[Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
+[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
 [Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
 
