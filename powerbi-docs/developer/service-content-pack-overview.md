@@ -35,8 +35,8 @@ The general process to develop and submit an template content pack involves mult
 1. [Review the requirements](#requirements) and make sure you meet them
 2. [Build content](template-content-pack-authoring.md#queries) in the Power BI Desktop
 3. [Create a dashboard](template-content-pack-authoring.md#dashboard) in PowerBI.com
-4. [Test the content pack](../powerbi-developer-content-pack-testing.md) yourself within your organization
-5. [Submit](../powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
+4. [Test the content pack](template-content-pack-testing.md) yourself within your organization
+5. [Submit](template-content-pack-testing.md#submission) the content to Power BI for publishing
 
 <a name="requirements"></a>
 
@@ -46,7 +46,7 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 * You have a SaaS application used by business users.
 * Your SaaS application has user data that can be visualized in Power BI.
 * Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
-* Signed partner agreement. You will do that in the [submission step](../powerbi-developer-content-pack-testing.md#submission).
+* Signed partner agreement. You will do that in the [submission step](template-content-pack-testing.md#submission).
 
 Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
 

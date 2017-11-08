@@ -38,7 +38,7 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 * Test connection should indicate that your user will be able to load the content pack. If that's not the case, ensure your queries handle the additional error cases.  
 * Refresh should complete in a reasonable time, ~5mins is suggested  
 
-![settings](media/powerbi-developer-content-pack/scheduledrefresh.png)
+![settings](media/template-content-pack-testing/scheduledrefresh.png)
 
 <a name="templates"></a>
 
@@ -48,17 +48,17 @@ A template content pack is similar to existing solutions except that it does not
 After a user instantiates the content pack they have access to the dataset settings including scheduled refresh, any RLS settings on the dataset are **not** published with the content pack.  
 
 > [!NOTE]
-> Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](developer/template-content-pack-authoring.md#restrictions)  page. 
+> Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](template-content-pack-authoring.md#restrictions)  page. 
 > 
 > 
 
 To enable template creation for your tenant, please work with your Power BI admin to enable the feature switch below. 
 
-![featureswitch](media/powerbi-developer-content-pack/featureswitch.png)
+![featureswitch](media/template-content-pack-testing/featureswitch.png)
 
 Once enabled, you'll see a checkbox at the bottom of ["Create content pack"](https://app.powerbi.com/groups/me/publish-content/), allowing you to publish a template content pack to your organization. 
 
-![checkbox](media/powerbi-developer-content-pack/checkbox.png)
+![checkbox](media/template-content-pack-testing/checkbox.png)
 
 ### Naming
 We suggest naming your dashboard, report and dataset consistently across your content pack. These names are hardcoded and will be the same for all users, so using your product/scenario name can make it easier for your customers to locate.
@@ -67,7 +67,7 @@ We suggest naming your dashboard, report and dataset consistently across your co
 * Ensure the parameters you specified in the queries are meaningful to your end users
 * Consider how long your end user will be waiting for scheduled refresh to complete
 
-![create](media/powerbi-developer-content-pack/createtemplate.png)
+![create](media/template-content-pack-testing/createtemplate.png)
 
 <a name="submission"></a>
 
