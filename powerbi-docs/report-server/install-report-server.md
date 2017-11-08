@@ -16,11 +16,11 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/28/2017
+ms.date: 11/08/2017
 ms.author: asaxton
-
 ---
 # Install Power BI Report Server
+
 Learn how to install Power BI Report Server.
 
  **Download** ![download](media/install-report-server/download.png "download")
@@ -38,11 +38,11 @@ Before you install Power BI Report Server, it is recommended that you review the
 #### Power BI Premium
 If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
 
-![](../media/powerbi-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
+![](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![](../media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
+![](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
 
 #### SQL Server Enterprise Software Assurance (SA)
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
