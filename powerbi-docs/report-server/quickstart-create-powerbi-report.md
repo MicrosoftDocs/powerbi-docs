@@ -119,6 +119,6 @@ There are so many great resources for creating reports in Power BI Desktop. Thes
 
 ### Power BI Report Server
 * [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
-* [Power BI Report Server user handbook](reportserver-user-handbook-overview.md)  
+* [Power BI Report Server user handbook](user-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

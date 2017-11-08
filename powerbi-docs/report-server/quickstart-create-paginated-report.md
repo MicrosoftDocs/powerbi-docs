@@ -98,7 +98,7 @@ When your report is ready, save it to Power BI Report Server.
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
 
 * [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Power BI Report Server user handbook](reportserver-user-handbook-overview.md)  
+* [Power BI Report Server user handbook](user-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

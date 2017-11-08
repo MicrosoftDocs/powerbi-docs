@@ -76,7 +76,7 @@ Take advantage of Power BI Report Server programming features so you can extend 
 More [Report Server developer documentation](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
 
 ## Next steps
-[User handbook](reportserver-user-handbook-overview.md)  
+[User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

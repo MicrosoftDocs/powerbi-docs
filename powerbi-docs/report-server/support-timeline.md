@@ -43,7 +43,7 @@ For the current release notes, see [Power BI Report Server - Release notes](rele
 ## Next steps
 [What's new in Power BI Report Server](whats-new.md)  
 [Power BI Report Server release notes](release-notes.md)  
-[User handbook](reportserver-user-handbook-overview.md)  
+[User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
 

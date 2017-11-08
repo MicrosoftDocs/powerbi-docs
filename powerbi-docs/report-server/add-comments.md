@@ -49,7 +49,7 @@ Depending on your permissions, you can:
 * See all comments; post, edit, and delete your own; and delete other people’s.
 
 ## Next steps
-* [Power BI Report Server user handbook](reportserver-user-handbook-overview.md)  
+* [Power BI Report Server user handbook](user-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

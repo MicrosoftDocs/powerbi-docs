@@ -109,7 +109,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 ## Next steps
 [Power BI Report Server release notes](release-notes.md)  
-[User handbook](reportserver-user-handbook-overview.md)  
+[User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

@@ -182,7 +182,7 @@ You can switch to List view, where it's easy to move or delete multiple items at
 2. Select the items, then select **Move** or **Delete**.
 
 ## Next steps
-[User handbook](reportserver-user-handbook-overview.md)  
+[User handbook](user-handbook-overview.md)  
 [Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
 [Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
 

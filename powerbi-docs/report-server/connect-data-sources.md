@@ -32,7 +32,7 @@ For information about what data soruces are supported, see [Power BI report data
 Other report types support the same data sources that are present in SQL Server Reporting Services. For more information, see [Data sources supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 ## Next steps
-[User handbook](reportserver-user-handbook-overview.md)  
+[User handbook](user-handbook-overview.md)  
 [Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
 [Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
 
