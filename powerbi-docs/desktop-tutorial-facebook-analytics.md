@@ -212,7 +212,7 @@ That's better. And now we have three visualizations on this page, which we can s
 
 ![](media/desktop-tutorial-facebook-analytics/23.png)
 
-As you can see, it's easy to customize visualizations in your report, so you can present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](powerbi-desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
+As you can see, it's easy to customize visualizations in your report, so you can present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 You can download the end result of this tutorial [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/FacebookAnalytics.pbix)
 

@@ -31,11 +31,11 @@ Publishing from **Power BI Desktop** has the same effect as using **Get Data** i
 
 ## To publish a Power BI Desktop dataset and reports
 1. In Power BI Desktop \> **File** \> **Publish** \> **Publish to Power BI** or click **Publish** on the ribbon.  
-   ![](media/powerbi-desktop-upload-desktop-files/PBID_Publish_PublishButton.png)
+   ![](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 2. Sign in to Power BI.
 
 When complete, you'll get a link to open your report in your Power BI site.  
-    ![](media/powerbi-desktop-upload-desktop-files/PBID_Publish_Success.png)
+    ![](media/desktop-upload-desktop-files/pbid_publish_success.png)
 
 ## Re-publish or replace a dataset published from Power BI Desktop
 When you publish a **Power BI Desktop** file, the dataset and any reports you created in **Power BI Desktop** are uploaded to your Power BI site. When you re-publish your **Power BI Desktop** file, the dataset in your Power BI site will be replaced with the updated dataset from the **Power BI Desktop** file.

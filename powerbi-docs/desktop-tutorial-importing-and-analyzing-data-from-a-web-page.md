@@ -154,7 +154,7 @@ In order to create a visualization, we can drag fields from the **Field list** a
    
    ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
 
-As you can see, it is very easy to customize visualizations in your report, in order to present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](powerbi-desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
+As you can see, it is very easy to customize visualizations in your report, in order to present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 This concludes the **Importing Data from the Web** tutorial. You can download the completed Power BI Desktop file [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix).
 
