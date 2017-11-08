@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # Push data to a dataset complete code listing
-This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](../powerbi-developer-walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
@@ -225,15 +225,15 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 
 ## See also
-[Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
-[Walkthrough - Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
-[Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)  
-[Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
-[Add rows to a Power BI table](developer/walkthrough-push-data-add-rows.md)  
+[Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Walkthrough - Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Register an app with Azure AD](../powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
+[Get an authentication access token](../powerbi-developer-walkthrough-push-data-get-token.md)  
+[Create a dataset in Power BI](../powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[Get a dataset to add rows into a Power BI table](../powerbi-developer-walkthrough-push-data-get-datasets.md)  
+[Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
+[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
