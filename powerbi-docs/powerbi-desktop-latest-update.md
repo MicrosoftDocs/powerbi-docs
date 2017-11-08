@@ -42,7 +42,7 @@ The following updates are new to **Power BI Desktop** this month:
 * Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](powerbi-desktop-bookmarks.md#visibility---using-the-selection-pane) 
 * Bookmark links for shapes and images  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](powerbi-desktop-bookmarks.md#bookmarks-for-shapes-and-images)
 * Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](powerbi-desktop-bookmarks.md#using-spotlight)
-* Scatter and Bubble markers  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](powerbi-desktop-accessibility.md)
+* Scatter and Bubble markers  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](desktop-accessibility.md)
 * Increase the number of data points displayed in Scatter visuals  [[video]](https://youtu.be/jksjtR8GnBE?t=19m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) 
 
 ### Analytics:

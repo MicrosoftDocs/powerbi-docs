@@ -35,9 +35,9 @@ The following updates are new to **Power BI Desktop** in September:
 * Ribbon chart  [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[article]](powerbi-desktop-ribbon-charts.md)
 * Insights about Explain the increase / Explain the decrease  [[video]](https://youtu.be/moTQJlnClJw?t=13m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#insights) [[article]](powerbi-desktop-insights.md)
 * Theming preview update - chart style controls [[video]](https://youtu.be/moTQJlnClJw?t=19m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#theming) [[article]](powerbi-desktop-report-themes.md)
-* Accessibility improvements  [[video]](https://youtu.be/moTQJlnClJw?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibility) [[article]](powerbi-desktop-accessibility.md)
-  * Accessible See data  [[video]](https://youtu.be/moTQJlnClJw?t=29m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibleData) [[article]](powerbi-desktop-accessibility.md)
-  * Keyboard shortcut helper dialog  [[video]](https://youtu.be/moTQJlnClJw?t=28m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#shortcuts) [[article]](powerbi-desktop-accessibility.md)
+* Accessibility improvements  [[video]](https://youtu.be/moTQJlnClJw?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibility) [[article]](desktop-accessibility.md)
+  * Accessible See data  [[video]](https://youtu.be/moTQJlnClJw?t=29m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibleData) [[article]](desktop-accessibility.md)
+  * Keyboard shortcut helper dialog  [[video]](https://youtu.be/moTQJlnClJw?t=28m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#shortcuts) [[article]](desktop-accessibility.md)
 * High density scatter chart sampling  [[video]](https://youtu.be/moTQJlnClJw?t=30m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#highDensityScatter) [[article]](powerbi-desktop-high-density-scatter-charts.md)
 * Gridline style control  [[video]](https://youtu.be/moTQJlnClJw?t=33m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#gridlines) [[article]](powerbi-desktop-gridlines-snap-to-grid.md)
 * New custom visuals  [[video]](https://youtu.be/moTQJlnClJw?t=36m4s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#communityVisuals)
@@ -157,7 +157,7 @@ The following updates were new to **Power BI Desktop** in June:
 * Combo chart formatting updates [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
 * Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
 * High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](powerbi-desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
-* Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](powerbi-desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
+* Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
 ### Data Connectivity:
 * Custom Data Connectors support [[video]](https://youtu.be/YlNVE5dgcSI?t=25m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#customConnectors)
