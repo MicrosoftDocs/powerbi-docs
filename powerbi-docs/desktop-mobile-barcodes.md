@@ -26,7 +26,7 @@ In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) i
 2. Select a column with barcode data. See the list of [supported barcode formats](#supported-barcode-formats) below.
 3. On the **Modeling** tab, select **Data Category** > **Barcode**.
    
-    ![Data category list](media/powerbi-desktop-mobile-barcodes/power-bi-desktop-barcode.png)
+    ![Data category list](media/desktop-mobile-barcodes/power-bi-desktop-barcode.png)
 4. In Report view, add this field to the visuals you want filtered by the barcode.
 5. Save the report and publish it to the Power BI service.
 

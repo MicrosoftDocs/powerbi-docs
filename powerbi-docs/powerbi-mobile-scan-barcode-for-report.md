@@ -25,7 +25,7 @@ Scan barcodes in the real world to go directly to filtered BI information in the
 
 ![](media/powerbi-mobile-scan-barcode-for-report/power-bi-barcode-scanner.png)
 
-Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-barcodes.md) and shared the report with you. 
+Say a colleague has [tagged a barcode field in a report Power BI Desktop](desktop-mobile-barcodes.md) and shared the report with you. 
 
 When you scan a product barcode with the scanner in the Power BI app on your iPhone, you see the report (or list of reports) with that barcode. You can open that report on your iPhone, filtered to that barcode.
 
@@ -64,13 +64,13 @@ The barcode value you scanned exists in your model but all/Some of the visuals o
 ### “Looks like you don’t have any reports that can be filtered by barcodes.”
 This means you don’t have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
 
-Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
+Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](desktop-mobile-barcodes.md)
 
 ### “Couldn’t filter report - Looks like this barcode doesn't exist in the report data.”
 The report you chose to filter is based on a data model that doesn't include this barcode value. For example, the product "mineral water" isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered. 
 
 ## Next steps
-* [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
+* [Tag a barcode field in Power BI Desktop](desktop-mobile-barcodes.md)
 * [Dashboard tiles in Power BI](service-dashboard-tiles.md)
 * [Dashboards in Power BI](service-dashboards.md)
 

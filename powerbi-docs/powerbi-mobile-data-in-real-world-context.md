@@ -45,7 +45,7 @@ Tag barcode data in your report so your colleagues can scan a barcode on a produ
 
 More about:
 
-* [Tagging barcode data in a report](powerbi-desktop-mobile-barcodes.md)
+* [Tagging barcode data in a report](desktop-mobile-barcodes.md)
 * [Scanning a barcode from the Power BI app on your iPhone](powerbi-mobile-scan-barcode-for-report.md)
 
 ## Filter by location
