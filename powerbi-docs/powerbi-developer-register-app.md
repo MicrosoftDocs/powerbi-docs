@@ -49,7 +49,7 @@ Here's how to register your application with the Power BI App Registration Tool:
     **Home Page URL** is only available if you choose **Server-side Web app** for the applciation type.
    
     For the *embedding for your customers* and *integrate-dashboard-web-app* samples, the redirect URL will be `http://localhost:13526/redirect`. For the report and tile sample, the redirect URL will be `http://localhost:13526/`.
-6. Choose the APIs that this application will have access to. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
+6. Choose the APIs that this application will have access to. For more information about Power BI access permissions, see [Power BI Permissions](developer/power-bi-permissions.md).
    
     ![](media/powerbi-developer-register-app/app-registration-apis.png)
 7. Select **Register App**.

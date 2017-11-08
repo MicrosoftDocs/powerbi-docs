@@ -37,7 +37,7 @@ Here are the steps to register an app in Azure AD.
 3. Enter an **App Name** such as "Sample push data app".
 4. For **App Type**, choose **Native app**.
 5. Enter a **Redirect URL**, such as **https://login.live.com/oauth20_desktop.srf**. For a **Native client app**, a redirect uri gives **Azure AD** more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
-6. For **Choose APIs to access**, choose **Read and Write All Datasets**. For all Power BI app permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
+6. For **Choose APIs to access**, choose **Read and Write All Datasets**. For all Power BI app permissions, see [Power BI Permissions](developer/power-bi-permissions.md).
 7. Click **Register app**, and save the **Client ID** that was generated. A **Client ID** identifies the app in Azure AD.
 
 Here's how your **Register an Application for Power BI** page should look:
