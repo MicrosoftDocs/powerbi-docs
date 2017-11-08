@@ -32,13 +32,13 @@ You can now configure RLS for data models imported into Power BI with Power BI D
 
 Learn more about options for [RLS within the Power BI Service](service-admin-rls.md).
 
-[!INCLUDE [include-short-name](includes/rls-desktop-define-roles.md)]
+[!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
-[!INCLUDE [include-short-name](includes/rls-desktop-view-as-roles.md)]
+[!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
-[!INCLUDE [include-short-name](includes/rls-limitations.md)]
+[!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 
-[!INCLUDE [include-short-name](includes/rls-faq.md)]
+[!INCLUDE [include-short-name](./includes/rls-faq.md)]
 
 ## Next steps
 [Row-level security (RLS) with the Power BI service](service-admin-rls.md)  

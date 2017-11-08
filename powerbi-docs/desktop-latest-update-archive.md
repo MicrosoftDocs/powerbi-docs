@@ -606,7 +606,7 @@ June provided a shining collection of interesting updates for Power BI Desktop.
 * New sign-in entry points [[video]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 
 ### Data Access:
-* Row Level Security [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[article]](powerbi-desktop-rls.md)
+* Row Level Security [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[article]](desktop-rls.md)
 
 ### Data Connectors:
 * New data connector: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
