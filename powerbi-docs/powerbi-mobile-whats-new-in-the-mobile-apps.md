@@ -399,7 +399,7 @@ View dashboards in [landscape mode in Windows 10 phones](mobile-apps-view-dashbo
 
 View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 
-Faster time to [insights on your Windows 10 mobile dashboards](powerbi-mobile-tiles-in-the-iphone-app.md): Share a tile snapshot or open a report directly from the dashboard.
+Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
 All of the January improvements are already in the new [Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
