@@ -63,7 +63,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Andr_OpenLinkMessage.png)
    
     After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
-7. [Open the report](powerbi-mobile-reports-in-the-iphone-app.md) ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) that the tile is based on.
+7. [Open the report](mobile-reports-in-the-mobile-apps.md) ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) that the tile is based on.
 8. To leave tile focus mode, tap the tile name, then tap the dashboard name or **My Workspace**.
    
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-tile-breadcrumb.png)
@@ -78,7 +78,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    * Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
    * Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
-   * Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-iphone-app.md) in the mobile app.
+   * Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-android-tablet-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) in the mobile app.
 3. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the vertical ellipsis (**...**) you see **Open link** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png):
    
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-android-tile-link.png)
@@ -98,7 +98,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     [Share a snapshot of the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
    
-    Tap **Open Report** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the underlying report](powerbi-mobile-reports-in-the-iphone-app.md).
+    Tap **Open Report** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the underlying report](mobile-reports-in-the-mobile-apps.md).
    
     [Open the link](service-dashboard-edit-tile.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
 3. Tap **Expand Tile** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-windows-10-focus-mode-icon.png). It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
@@ -126,7 +126,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
    
-   Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-iphone-app.md) that the tile is based on. 
+   Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) that the tile is based on. 
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps

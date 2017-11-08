@@ -23,7 +23,7 @@ ms.author: maggies
 # Explore reports in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-reports-in-the-iphone-app/ios-logo-40-px.png) | ![iPad](media/powerbi-mobile-reports-in-the-iphone-app/ios-logo-40-px.png) | ![Android phone](media/powerbi-mobile-reports-in-the-iphone-app/android-logo-40-px.png) | ![Android tablet](media/powerbi-mobile-reports-in-the-iphone-app/android-logo-40-px.png) | ![Windows 10 devices](media/powerbi-mobile-reports-in-the-iphone-app/win-10-logo-40-px.png) |
+| ![iPhone](media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10 devices](media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
@@ -38,22 +38,22 @@ Power BI reports are stored in different places in the mobile app, depending on 
 
 * In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
-  ![Open report](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-open-report-tile.png)
+  ![Open report](media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
   
-  On a phone, the report opens in landscape mode, unless it's [optimized for viewing on a phone](powerbi-mobile-reports-in-the-iphone-app.md#view-reports-optimized-for-phones).
+  On a phone, the report opens in landscape mode, unless it's [optimized for viewing on a phone](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
   
-  ![Phone report in landscape mode](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
+  ![Phone report in landscape mode](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## View reports optimized for phones
-Power BI report authors can create a report layout specifically optimized for phones. In a list of reports, an optimized report has a special icon ![Phone report icon](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-phone-report-icon.png):
+Power BI report authors can create a report layout specifically optimized for phones. In a list of reports, an optimized report has a special icon ![Phone report icon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
-![Open phone report](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-phone-report.png)
+![Open phone report](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
 When you view that report on a phone, it opens in portrait view.
 
-![Report in portrait view](media/powerbi-mobile-reports-in-the-iphone-app/07-power-bi-phone-report-portrait.png)
+![Report in portrait view](media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
 
 A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
 
@@ -64,7 +64,7 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
 
 * When you select a value in a slicer on the report page, it filters the other visuals on the page.
   
-  ![Report slicer](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-slicer.png)
+  ![Report slicer](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
   
   In this illustration, the slicer is filtering the column chart to show only July values.
 
@@ -73,14 +73,14 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 
 * Tap a value in a visual.
   
-  ![Cross-filter a page](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-highlight.png)
+  ![Cross-filter a page](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
   
   Tapping the Large column in one visual highlights related values in the other visuals. 
 
 ## Sort a visual on an iPad or a tablet
 * Tap the chart, tap the ellipsis (**...**) and tap the field name.
   
-   ![Sort a visual](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-sort.png)
+   ![Sort a visual](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
 ## Drill down and up in a visual on an iPad or a tablet
@@ -91,17 +91,17 @@ If a report author has added this capability to a visual, on an iPad or a tablet
 > 
 > 
 
-* Tap a visual. If it has up and down arrows in the upper corners ![Drill up, down icons](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
+* Tap a visual. If it has up and down arrows in the upper corners ![Drill up, down icons](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
   
-  ![Drill down in a visual](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-down-one.png)
+  ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
 * To drill back up, tap the up arrow in the upper-left corner.
   
-  ![Drill up](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-up.png)
+  ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
 
 ## Go back to My Workspace
 * Tap the arrow next to the report name > tap **My Workspace**.
   
-  ![Go back up](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-back.png)
+  ![Go back up](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
 
 ## See also
 * [View and interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)

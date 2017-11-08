@@ -33,8 +33,8 @@ If a phone-optimized report doesn’t exist, the report still opens, but in the 
 
 All the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
 
-* [Reports on iPhones](powerbi-mobile-reports-in-the-iphone-app.md). 
-* [Reports on Android phones](powerbi-mobile-reports-in-the-iphone-app.md).
+* [Reports on iPhones](mobile-reports-in-the-mobile-apps.md). 
+* [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
 ## Filter the report page on an iPhone
 If a phone-optimized report has filters defined, when you view the report on an iPhone you can use those filters. 
