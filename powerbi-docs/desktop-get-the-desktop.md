@@ -39,7 +39,7 @@ You can also download the latest version of Power BI Desktop from the following 
 
 * [**Power BI Desktop download** (both 32- and 64-bit versions)](https://powerbi.microsoft.com/desktop).
   
-  [![](media/powerbi-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
+  [![](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
 
 Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 

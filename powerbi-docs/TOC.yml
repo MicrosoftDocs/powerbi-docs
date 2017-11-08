@@ -613,203 +613,223 @@
     - name: "Troubleshooting tile errors"
       href: refresh-troubleshooting-tile-errors.md
     - name: "How to refresh your Xero content pack credentials if refresh failed"
-      href: service-refresh-xero-credentials.md   
+      href: service-refresh-xero-credentials.md
 - name: Power BI Desktop
   items:
   - name: Get started
     items: 
     - name: "Get Power BI Desktop"
-      href: powerbi-desktop-get-the-desktop.md
+      href: desktop-get-the-desktop.md
     - name: "Getting started with Power BI Desktop"
-      href: powerbi-desktop-getting-started.md
+      href: desktop-getting-started.md
     - name: "What's new in the latest Power BI Desktop update?"
-      href: powerbi-desktop-latest-update.md
+      href: desktop-latest-update.md
     - name: "Power BI Desktop videos"
-      href: powerbi-desktop-videos.md
+      href: desktop-videos.md
     - name: "Previous monthly updates to Power BI Desktop"
-      href: powerbi-desktop-latest-update-archive.md
+      href: desktop-latest-update-archive.md
   - name: Connect to data
     items: 
     - name: "Data sources in Power BI Desktop"
-      href: powerbi-desktop-data-sources.md
+      href: desktop-data-sources.md
     - name: "Connect to data in Power BI Desktop"
-      href: powerbi-desktop-connect-to-data.md
+      href: desktop-connect-to-data.md
     - name: "Connect to datasets in the Power BI service"
-      href: powerbi-desktop-report-lifecycle-datasets.md
+      href: desktop-report-lifecycle-datasets.md
     - name: "Import Excel workbooks into Power BI Desktop"
-      href: powerbi-desktop-import-excel-workbooks.md
+      href: desktop-import-excel-workbooks.md
     - name: "Connect to data using generic interfaces"
-      href: powerbi-desktop-connect-using-generic-interfaces.md
+      href: desktop-connect-using-generic-interfaces.md
     - name: "Connect to an Oracle database"
-      href: powerbi-desktop-connect-oracle-database.md
+      href: desktop-connect-oracle-database.md
     - name: "Running R Scripts in Power BI Desktop"
-      href: powerbi-desktop-r-scripts.md
+      href: desktop-r-scripts.md
     - name: "Using R in Query Editor"
-      href: powerbi-desktop-r-in-query-editor.md
+      href: desktop-r-in-query-editor.md
     - name: "Use an external R IDE with Power BI"
-      href: powerbi-desktop-r-ide.md
+      href: desktop-r-ide.md
     - name: "Supported R packages"
       href: service-r-packages-support.md
     - name: "Data types in Power BI Desktop"
-      href: powerbi-desktop-data-types.md
+      href: desktop-data-types.md
     - name: "Enter data directly into Power BI Desktop"
-      href: powerbi-desktop-enter-data-directly-into-desktop.md
+      href: desktop-enter-data-directly-into-desktop.md
     - name: "Connect to Excel in Power BI Desktop"
-      href: powerbi-desktop-connect-excel.md
+      href: desktop-connect-excel.md
     - name: "Analysis Services Multidimensional data in Power BI Desktop"
-      href: powerbi-desktop-ssas-multidimensional.md
+      href: desktop-ssas-multidimensional.md
     - name: "Connect to CSV files in Power BI Desktop"
-      href: powerbi-desktop-connect-csv.md
+      href: desktop-connect-csv.md
     - name: "Connect to an Impala database in Power BI Desktop (Preview)"
-      href: powerbi-desktop-connect-impala.md
+      href: desktop-connect-impala.md
     - name: "Connect to an OData feed in Power BI Desktop"
-      href: powerbi-desktop-connect-odata.md
+      href: desktop-connect-odata.md
     - name: "Connect to an Amazon Redshift database in Power BI Desktop (Preview)"
-      href: powerbi-desktop-connect-redshift.md
+      href: desktop-connect-redshift.md
     - name: "Connect to a Web page from Power BI Desktop"
-      href: powerbi-desktop-connect-to-web.md
+      href: desktop-connect-to-web.md
     - name: "Connect to a Snowflake computing warehouse in Power BI Desktop"
-      href: powerbi-desktop-connect-snowflake.md
+      href: desktop-connect-snowflake.md
+    - name: "Connect to Azure Consumption Insights data"
+      href: desktop-connect-azure-consumption-insights.md
     - name: "Use SAP HANA in Power BI Desktop"
-      href: powerbi-desktop-sap-hana.md
+      href: desktop-sap-hana.md
     - name: "Analysis Services Tabular data in Power BI Desktop"
-      href: powerbi-desktop-analysis-services-tabular-data.md
+      href: desktop-analysis-services-tabular-data.md
     - name: "Use DirectQuery in Power BI Desktop"
-      href: powerbi-desktop-use-directquery.md
+      href: desktop-use-directquery.md
     - name: "Power BI and DirectQuery"
-      href: powerbi-desktop-directquery-about.md
+      href: desktop-directquery-about.md
     - name: "Data sources supported by DirectQuery"
-      href: powerbi-desktop-directquery-data-sources.md
+      href: desktop-directquery-data-sources.md
     - name: "DirectQuery for Oracle and Teradata Databases"
-      href: powerbi-desktop-directquery-for-oracle-teradata.md
+      href: desktop-directquery-for-oracle-teradata.md
     - name: "DirectQuery and SAP Business Warehouse (BW)"
-      href: powerbi-desktop-directquery-sap-bw.md
+      href: desktop-directquery-sap-bw.md
     - name: "DirectQuery and SAP HANA"
-      href: powerbi-desktop-directquery-sap-hana.md
+      href: desktop-directquery-sap-hana.md
     - name: "Assume referential integrity setting in Power BI Desktop"
-      href: powerbi-desktop-assume-referential-integrity.md
+      href: desktop-assume-referential-integrity.md
     - name: "Tutorial: Dynamic row level security with Analysis services tabular model"
-      href: powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular.md
+      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "DirectQuery for Oracle and Teradata databases"
-      href: powerbi-desktop-directquery-for-oracle-teradata.md
+      href: desktop-directquery-for-oracle-teradata.md
     - name: "Use the SAP BW Connector in Power BI Desktop (Preview)"
-      href: powerbi-desktop-sap-bw-connector.md
+      href: desktop-sap-bw-connector.md
     - name: "Use OneDrive for Business links in Power BI Desktop"
-      href: powerbi-desktop-use-onedrive-business-links.md
+      href: desktop-use-onedrive-business-links.md
     - name: "Power BI data source prerequisites"
-      href: powerbi-desktop-data-source-prerequisites.md
+      href: desktop-data-source-prerequisites.md
     - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
-      href: powerbi-desktop-bidirectional-filtering.md
+      href: desktop-bidirectional-filtering.md
     - name: "Power BI Desktop privacy levels"
-      href: powerbi-desktop-privacy-levels.md
+      href: desktop-privacy-levels.md
     - name: "Third-party service: Facebook connector for Power BI Desktop"
       href: service-facebook-connector.md
     - name: "Third-party service: Google Analytics connector for Power BI Desktop"
       href: service-google-analytics-connector.md
     - name: "Project Online: connect to data through Power BI Desktop"
-      href: powerbi-desktop-project-online-connect-to-data.md
+      href: desktop-project-online-connect-to-data.md
   - name: Transform and shape data
     items: 
     - name: "Query overview in Power BI Desktop"
-      href: powerbi-desktop-query-overview.md
+      href: desktop-query-overview.md
     - name: "Shape and combine data in Power BI Desktop"
-      href: powerbi-desktop-shape-and-combine-data.md
+      href: desktop-shape-and-combine-data.md
     - name: "Common query tasks in Power BI Desktop"
-      href: powerbi-desktop-common-query-tasks.md
+      href: desktop-common-query-tasks.md
     - name: "Use Shape Maps in Power BI Desktop (Preview)"
-      href: powerbi-desktop-shape-map.md
+      href: desktop-shape-map.md
     - name: "Combine binaries"
-      href: powerbi-desktop-combine-binaries.md
+      href: desktop-combine-binaries.md
   - name: Model your data
     items: 
     - name: "Data View in Power BI Desktop"
-      href: powerbi-desktop-data-view.md
+      href: desktop-data-view.md
     - name: "Relationship View in Power BI Desktop"
-      href: powerbi-desktop-relationship-view.md
+      href: desktop-relationship-view.md
     - name: "Create and manage relationships in Power BI Desktop"
-      href: powerbi-desktop-create-and-manage-relationships.md
+      href: desktop-create-and-manage-relationships.md
     - name: "DAX basics in Power BI Desktop"
-      href: powerbi-desktop-quickstart-learn-dax-basics.md
+      href: desktop-quickstart-learn-dax-basics.md
     - name: "Data categorization in Power BI Desktop"
-      href: powerbi-desktop-data-categorization.md
+      href: desktop-data-categorization.md
     - name: "Tag a barcode field in Power BI Desktop for the Power BI mobile apps"
-      href: powerbi-desktop-mobile-barcodes.md
+      href: desktop-mobile-barcodes.md
     - name: "Set geographic filtering in Power BI Desktop for the Power BI mobile apps"
-      href: powerbi-desktop-mobile-geofiltering.md
+      href: desktop-mobile-geofiltering.md
     - name: "Calculated columns in Power BI Desktop"
-      href: powerbi-desktop-calculated-columns.md
+      href: desktop-calculated-columns.md
     - name: "Calculated tables in Power BI Desktop"
-      href: powerbi-desktop-calculated-tables.md
+      href: desktop-calculated-tables.md
     - name: "Measures in Power BI Desktop"
-      href: powerbi-desktop-measures.md
+      href: desktop-measures.md
     - name: "Import and display KPIs (Preview)"
-      href: powerbi-desktop-import-and-display-kpis.md
+      href: desktop-import-and-display-kpis.md
   - name: Create reports
     items: 
     - name: "Report View in Power BI Desktop"
-      href: powerbi-desktop-report-view.md
+      href: desktop-report-view.md
     - name: "Analytics pane in Power BI Desktop"
-      href: powerbi-desktop-analytics-pane.md
+      href: desktop-analytics-pane.md
+    - name: "Using insights in Power BI Desktop"
+      href: desktop-insights.md
+    - name: "Bookmarks in Power BI"
+      href: desktop-bookmarks.md
     - name: "Add a custom visual to a report (Desktop)"
       href: power-bi-custom-visuals-use.md
     - name: "Use Report Themes"
-      href: powerbi-desktop-report-themes.md
+      href: desktop-report-themes.md
     - name: "Use Quick measures"
-      href: powerbi-desktop-quick-measures.md
+      href: desktop-quick-measures.md
+    - name: "Using What if parameters"
+      href: desktop-what-if.md
+    - name: "Accessibility in Power BI reports"
+      href: desktop-accessibility.md
     - name: "Use grouping and binning"
-      href: powerbi-desktop-grouping-and-binning.md
+      href: desktop-grouping-and-binning.md
+    - name: "Ribbon charts"
+      href: desktop-ribbon-charts.md
     - name: "Use the new Matrix visual"
-      href: powerbi-desktop-matrix-visual.md
+      href: desktop-matrix-visual.md
     - name: "Create Power BI visuals using R"
-      href: powerbi-desktop-r-visuals.md
+      href: desktop-r-visuals.md
     - name: "Use R-powered custom visuals"
-      href: powerbi-desktop-r-powered-custom-visuals.md
+      href: desktop-r-powered-custom-visuals.md
     - name: "Use gridlines and snap-to-grid"
-      href: powerbi-desktop-gridlines-snap-to-grid.md
+      href: desktop-gridlines-snap-to-grid.md
+    - name: "High density line sampling"
+      href: desktop-high-density-sampling.md
+    - name: "High density scatter charts"
+      href: desktop-high-density-scatter-charts.md
     - name: "Add a column from an example"
-      href: powerbi-desktop-add-column-from-example.md
+      href: desktop-add-column-from-example.md
     - name: "Add a custom column"
-      href: powerbi-desktop-add-custom-column.md
+      href: desktop-add-custom-column.md
+    - name: "Create responsive visuals in Power BI"
+      href: desktop-create-responsive-visuals.md
     - name: "Use inline heirarchy labels in Power BI Desktop (Preview)"
-      href: powerbi-desktop-inline-hierarchy-labels.md
+      href: desktop-inline-hierarchy-labels.md
     - name: "Use the numeric range slicer"
-      href: powerbi-desktop-slicer-numeric-range.md
+      href: desktop-slicer-numeric-range.md
+    - name: "Using the relative date slicer"
+      href: desktop-slicer-filter-date-range.md
     - name: "Create custom Power BI answer cards for Cortana"
       href: service-cortana-answer-cards.md
     - name: "Row-level security"
-      href: powerbi-desktop-rls.md
+      href: desktop-rls.md
     - name: "Customizing tooltips in Power BI Desktop"
-      href: powerbi-desktop-custom-tooltips.md
+      href: desktop-custom-tooltips.md
     - name: "Conditional table formatting in Power BI Desktop"
-      href: powerbi-desktop-conditional-table-formatting.md
+      href: desktop-conditional-table-formatting.md
     - name: "Sort by column in Power BI Desktop"
-      href: powerbi-desktop-sort-by-column.md
+      href: desktop-sort-by-column.md
     - name: "Create reports optimized for the Power BI phone apps"
-      href: powerbi-desktop-create-phone-report.md
+      href: desktop-create-phone-report.md
     - name: "Publish from Power BI Desktop"
-      href: powerbi-desktop-upload-desktop-files.md
+      href: desktop-upload-desktop-files.md
   - name: Learn more
     items: 
     - name: "Use See Data and See Records"
-      href: powerbi-desktop-see-data-see-records.md
+      href: desktop-see-data-see-records.md
     - name: "Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop"
-      href: powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
     - name: "Tutorial: Analyzing sales data from Excel and an OData feed"
-      href: powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
     - name: "Tutorial: Create your own measures in Power BI Desktop"
-      href: powerbi-desktop-tutorial-create-measures.md
+      href: desktop-tutorial-create-measures.md
     - name: "Tutorial: Create calculated columns in Power BI Desktop"
-      href: powerbi-desktop-tutorial-create-calculated-columns.md
+      href: desktop-tutorial-create-calculated-columns.md
     - name: "Tutorial: Facebook analytics using Power BI Desktop"
-      href: powerbi-desktop-tutorial-facebook-analytics.md
+      href: desktop-tutorial-facebook-analytics.md
     - name: "Power BI Desktop Send a Smile Privacy Statement"
-      href: powerbi-desktop-send-smile-privacy-statement.md
+      href: desktop-send-smile-privacy-statement.md
   - name: Troubleshooting
     items: 
     - name: "Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query"
-      href: powerbi-desktop-access-database-errors.md
+      href: desktop-access-database-errors.md
     - name: "Resolve Issues when starting Power BI Desktop"
-      href: powerbi-desktop-error-launching-desktop.md
+      href: desktop-error-launching-desktop.md
 - name: Power BI Mobile Apps
   items:
   - name: Get started
@@ -856,6 +876,8 @@
       href: powerbi-mobile-offline-android.md
     - name: "View and interact with Power BI reports optimized for your phone"
       href: powerbi-mobile-view-phone-report.md
+    - name: "Configure mobile apps with Intune"
+      href: powerbi-admin-mobile-intune.md
     - name: "Using OAuth to connect to Reporting Services"
       href: powerbi-mobile-oauth-ssrs.md
     - name: "Supported languages in the Power BI mobile apps"
@@ -864,6 +886,8 @@
     items: 
     - name: "Get started with the iPad app"
       href: powerbi-mobile-ipad-app-get-started.md
+    - name: "Reports on the iPad app"
+      href: powerbi-mobile-reports-on-the-ipad-app.md
   - name: iPhone app (Power BI for iOS)
     items: 
     - name: "Get started with the Power BI for iOS app on an iPhone"
@@ -878,6 +902,8 @@
     items: 
     - name: "Get started with the Power BI for Android app"
       href: powerbi-mobile-android-app-get-started.md
+    - name: "Reports in the Power BI app for Android devices"
+      href: powerbi-mobile-reports-in-the-android-app.md
     - name: "Fixing 'your corporate SSL certificate is untrusted'"
       href: powerbi-mobile-android-could-not-sign-you-in.md
   - name: Power BI app for Android tablets
@@ -894,6 +920,8 @@
       href: powerbi-mobile-pin-dashboard-from-win10phone-app.md
     - name: "View Power BI in presentation mode on Surface Hub"
       href: powerbi-mobile-win10-app-presentation-mode.md
+    - name: "Reports in the Power BI mobile app for Windows 10"
+      href: powerbi-mobile-reports-in-the-windows-app.md
     - name: "Share a tile from the Power BI mobile app for Windows 10"
       href: powerbi-mobile-share-a-tile-from-the-win10phone-app.md
 - name: Power BI Developer
@@ -902,7 +930,7 @@
     items: 
     - name: "What can developers do with Power BI?"
       href: powerbi-developer-what-can-you-do.md
-    - name: "What can I do with the Power BI API?"
+    - name: "What can I do with the Power BI API"
       href: powerbi-developer-overview-of-power-bi-rest-api.md
   - name: Embedding
     items: 
@@ -937,13 +965,13 @@
   - name: Create a custom visual
     items: 
     - name: "Create a custom visual with the Developer Tools"
-      href: service-custom-visuals-getting-started-with-developer-tools.md
+      href: powerbi-custom-visuals-getting-started-with-developer-tools.md
     - name: "Review custom visuals for security and privacy"
-      href: service-custom-visuals-review-for-security-and-privacy.md
+      href: powerbi-custom-visuals-review-for-security-and-privacy.md
     - name: "Publish custom visuals to the Office store"
       href: powerbi-developer-office-store.md
     - name: "Get a custom visual certified"
-      href: power-bi-custom-visuals-certified.md
+      href: powerbi-custom-visuals-certified.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"
@@ -970,10 +998,18 @@
       href: powerbi-developer-content-pack-testing.md
     - name: "Template Content Pack Experiences"
       href: powerbi-developer-content-pack-experience.md
-  - name: Reference
+  - name: References
     items: 
     - name: "REST APIs"
       href: powerbi-developer-rest-api-reference.md
+    - name: "Power BI C# Git Repo"
+      href: https://go.microsoft.com/fwlink/?linkid=848273
+    - name: ".NET SDK Download"
+      href: https://go.microsoft.com/fwlink/?linkid=848274
+    - name: "JavaScript Git Repo"
+      href: https://go.microsoft.com/fwlink/?linkid=848276
+    - name: "Custom Visuals Git Repo"
+      href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
     items: 
     - name: "Apiary"
@@ -986,38 +1022,30 @@
       href: https://go.microsoft.com/fwlink/?linkid=848280
     - name: "Stack Overflow"
       href: https://go.microsoft.com/fwlink/?linkid=848281
-    - name: "Power BI C# Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848273
-    - name: ".NET SDK Download"
-      href: https://go.microsoft.com/fwlink/?linkid=848274
-    - name: "JavaScript Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848276
-    - name: "Custom Visuals Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848277
 - name: Power BI Report Server
   items:
   - name: Overview
     items: 
     - name: "Get Started"
-      href: report-server/reportserver-get-started.md
+      href: reportserver-get-started.md
     - name: "What's New"
-      href: report-server/reportserver-whats-new.md
+      href: reportserver-whats-new.md
     - name: "Release notes"
-      href: report-server/reportserver-release-notes.md
+      href: reportserver-release-notes.md
     - name: "Change log"
-      href: report-server/reportserver-changelog.md
+      href: reportserver-changelog.md
     - name: "Support timeline"
-      href: report-server/reportserver-support-timeline.md
+      href: reportserver-support-timeline.md
   - name: User handbook
     items: 
     - name: "Overview"
-      href: report-server/reportserver-user-handbook-overview.md
+      href: reportserver-user-handbook-overview.md
     - name: "Navigating content"
-      href: report-server/reportserver-getting-around.md
+      href: reportserver-getting-around.md
     - name: "Quickstart: Power BI reports"
-      href: report-server/reportserver-quickstart-powerbi-report.md
+      href: reportserver-quickstart-powerbi-report.md
     - name: "Quickstart: Paginated reports"
-      href: report-server/reportserver-quickstart-paginated-report.md
+      href: reportserver-quickstart-paginated-report.md
     - name: "Advanced Power BI reports"
       href: https://go.microsoft.com/fwlink/?linkid=848708
     - name: "Advanced paginated reports"
@@ -1025,49 +1053,49 @@
     - name: "Working with KPIs"
       href: https://go.microsoft.com/fwlink/?linkid=849021
     - name: "Connect to data sources"
-      href: report-server/reportserver-connect-data-sources.md
+      href: reportserver-connect-data-sources.md
     - name: "Add comments to a report"
-      href: report-server/reportserver-add-comments.md
+      href: reportserver-add-comments.md
     - name: "Subscriptions"
       href: https://go.microsoft.com/fwlink/?linkid=851310
     - name: "Using the Mobile App"
       href: https://go.microsoft.com/fwlink/?linkid=848711
     - name: "Quickstart: Embed reports"
-      href: report-server/reportserver-quickstart-embed.md
+      href: reportserver-quickstart-embed.md
   - name: Administrator handbook
     items: 
     - name: "Overview"
-      href: report-server/reportserver-admin-handbook-overview.md
+      href: reportserver-admin-handbook-overview.md
     - name: "Hardware and software requirements"
-      href: report-server/reportserver-system-requirements.md
+      href: reportserver-system-requirements.md
     - name: "Find your product key"
-      href: report-server/reportserver-find-product-key.md
+      href: reportserver-find-product-key.md
     - name: "Quickstart: Install"
-      href: report-server/reportserver-quickstart-install-report-server.md
+      href: reportserver-quickstart-install-report-server.md
     - name: "Install a report server"
-      href: report-server/reportserver-install-report-server.md
+      href: reportserver-install-report-server.md
     - name: "Install Power BI Desktop"
-      href: report-server/reportserver-install-powerbi-desktop.md
+      href: reportserver-install-powerbi-desktop.md
     - name: "Upgrade a report server"
-      href: report-server/reportserver-upgrade.md
+      href: reportserver-upgrade.md
     - name: "Migrate a report server"
-      href: report-server/reportserver-migrate-report-server.md
+      href: reportserver-migrate-report-server.md
     - name: "Browser support"
-      href: report-server/reportserver-browser-support.md
+      href: reportserver-browser-support.md
     - name: "Configure Kerberos to use Power BI reports"
-      href: report-server/reportserver-configure-kerberos-powerbi-reports.md
+      href: reportserver-configure-kerberos-powerbi-reports.md
     - name: "Capacity planning whitepaper"
-      href: report-server/reportserver-capacity-planning.md
+      href: reportserver-capacity-planning.md
   - name: Developer handbook
     items: 
     - name: "Overview"
-      href: report-server/reportserver-developer-handbook-overview.md
+      href: reportserver-developer-handbook-overview.md
     - name: "Report Viewer Control"
       href: https://go.microsoft.com/fwlink/?linkid=848724
     - name: "Develop extensions"
       href: https://go.microsoft.com/fwlink/?linkid=848723
     - name: "Quickstart: Embed reports"
-      href: report-server/reportserver-quickstart-embed.md
+      href: reportserver-quickstart-embed.md
   - name: Reference
     items: 
     - name: "WMI"
