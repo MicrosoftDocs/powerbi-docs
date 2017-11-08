@@ -23,11 +23,11 @@ ms.author: asaxton
 # Upgrade Power BI Report Server
 Learn how to upgrade Power BI Report Server.
 
- **Download** ![download](media/reportserver-upgrade/download.png "download")
+ **Download** ![download](media/upgrade/download.png "download")
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-![tip](media/reportserver-upgrade/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
+![tip](media/upgrade/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 
 ## Before you begin
 Before you upgrade a report server, it is recommended that you perform the following steps to back up your report server.
@@ -61,13 +61,13 @@ Upgrading Power BI Report Server is straight forward. There are only a few steps
 1. Find the location of PowerBIReportServer.exe and launch the installer.
 2. Select **Upgrade Power BI Report Server**.
    
-    ![](media/reportserver-upgrade/reportserver-upgrade1.png "Upgrade Power BI Report Server")
+    ![](media/upgrade/reportserver-upgrade1.png "Upgrade Power BI Report Server")
 3. Read and agree to the license terms and conditions and then select **Upgrade**.
    
-    ![](media/reportserver-upgrade/reportserver-upgrade-eula.png "License agreement")
+    ![](media/upgrade/reportserver-upgrade-eula.png "License agreement")
 4. After a successful upgrade, you can select **Configure Report Server** to launch the Reporting Services Configuration Manager, or select **Close** to exit the installer.
    
-    ![](media/reportserver-upgrade/reportserver-upgrade-configure.png)
+    ![](media/upgrade/reportserver-upgrade-configure.png)
 
 ## Upgrade Power BI Desktop
 After the report server is upgrade, you will want to make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
