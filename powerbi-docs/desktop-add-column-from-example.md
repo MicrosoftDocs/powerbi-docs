@@ -23,7 +23,7 @@ ms.author: davidi
 # Add a column from an example in Power BI Desktop
 Starting with the April 2017 release of **Power BI Desktop**, you can add new columns of data to your model using **Query Editor** by simply providing one or more sample values for your new column. You can create a new column example from a current selection, or from providing input based on all (or selected) columns in a given table.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_01.png)
+![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 This approach helps you quickly and easily create new columns, and is great for the following situations:
 
@@ -36,7 +36,7 @@ Using the **add column from example** feature is easy and straightforward. In th
 ## Use Query Editor to add a new column from examples
 To create a new column from an example, launch **Query Editor**. You can do this by selecting **Edit Queries** from the **Home** ribbon in **Power BI Desktop**.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_02.png)
+![](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
 In this article, we'll use data from the following Wikipedia article (it's a link, so you can click it to get the data for yourself and follow along):
 
@@ -44,14 +44,14 @@ In this article, we'll use data from the following Wikipedia article (it's a lin
 
 Once **Query Editor** is launched and you have some data loaded, you can get started adding a column from examples. To add a new column, in **Query Editor** select the **Add Column** tab on the ribbon and select **Column from Examples**. If you choose the drop-down, you can select either **From All Columns** (the default, if you just select the button instead of the drop-down) or select **From Selection**. In this article, we'll walk through selecting **From All Columns**.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_03.png)
+![](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
 ## The Add Column From Examples pane
 Once you make a selection to add a new column from examples, a new pane appears that shows the columns in the current table (you may need to scroll to see them all). The new **Column1** is also shown to the right, which is the column that **Power BI Desktop** will create based on your examples. Below the new **Column1** header are blank cells, where you can type in your examples that Power BI uses to create rules and transformations to match your example.
 
 Notice too that this is an **Applied Step** in the **Query Settings** pane. As always, **Query Editor** will record your transformation steps and apply them to the query, in order.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_04.png)
+![](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
 This is called the **Add Columns From Examples** pane, and it consists of four primary areas:
 
@@ -60,13 +60,13 @@ This is called the **Add Columns From Examples** pane, and it consists of four p
 3. The **OK** and **Cancel** buttons, which lets you commit your transformations and add the column, or cancel.
 4. The new column area, where you can type your sample values in any of the rows (to provide Power BI with your example), relating to other columns in that row.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_05.png)
+![](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
 As you type your example in the new column, Power BI gives you a preview of how the column it's creating will appear, based on the transformations it detects. For example, we typed *Alabama* in the first row, corresponding to the *Alabama* value in the first column of the table. As soon as we hit *Enter* Power BI fills in the column based on that value.
 
 But then we went to the row that included *Massachusetts[E]* and deleted that last *[E]* portion (because we didn't want it) and Power BI detected the change, and used the example to create a transformation. Notice the explanation of the transform in the upper middle pane.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_06.png)
+![](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
 As you continue to provide examples, **Query Editor** adds to the transformations. When you're satisfied, you can select **OK** to commit your changes.
 

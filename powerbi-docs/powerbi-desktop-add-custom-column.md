@@ -70,7 +70,7 @@ The **Advanced Editor** gives you full control over your query.
 ## More information
 There are other ways to create a custom column, including creating a column based on examples you provide to **Query Editor**. See the following article for more information on creating custom columns from examples:
 
-* [Add a column from an example in Power BI Desktop](powerbi-desktop-add-column-from-example.md)
+* [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md)
 * [Introduction to M formula language](https://msdn.microsoft.com/library/mt270235.aspx)
 * [M function reference](https://msdn.microsoft.com/library/mt779182.aspx)  
 
