@@ -25,18 +25,18 @@ A content pack is a set of out-of-box content allowing users to immediately gain
 
 ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. 
 
-These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](developer/template-content-pack-experience.md).
+These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](template-content-pack-experience.md).
 
 ## Overview
 The general process to develop and submit an template content pack involves multiple steps.
 
- ![Process](media/powerbi-developer-content-pack/developer-content-pack-overview.png)
+ ![Process](media/service-content-pack-overview/developer-content-pack-overview.png)
 
 1. [Review the requirements](#requirements) and make sure you meet them
-2. [Build content](developer/template-content-pack-authoring.md#queries) in the Power BI Desktop
-3. [Create a dashboard](developer/template-content-pack-authoring.md#dashboard) in PowerBI.com
-4. [Test the content pack](powerbi-developer-content-pack-testing.md) yourself within your organization
-5. [Submit](powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
+2. [Build content](template-content-pack-authoring.md#queries) in the Power BI Desktop
+3. [Create a dashboard](template-content-pack-authoring.md#dashboard) in PowerBI.com
+4. [Test the content pack](../powerbi-developer-content-pack-testing.md) yourself within your organization
+5. [Submit](../powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
 
 <a name="requirements"></a>
 
@@ -46,9 +46,9 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 * You have a SaaS application used by business users.
 * Your SaaS application has user data that can be visualized in Power BI.
 * Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
-* Signed partner agreement. You will do that in the [submission step](powerbi-developer-content-pack-testing.md#submission).
+* Signed partner agreement. You will do that in the [submission step](../powerbi-developer-content-pack-testing.md#submission).
 
-Please review the [authoring](developer/template-content-pack-authoring.md) section for more details on the technical requirements.
+Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
 
 ## Business Scenario
 Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
@@ -70,7 +70,7 @@ No, Power BI service content packs require a developer API that is accessible th
 
 **What kind of APIs are supported by service content packs and what authentication types can they work with?**
 
-Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](developer/template-content-pack-authoring.md#dashboard) article.
+Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](template-content-pack-authoring.md#dashboard) article.
 
 **I have more questions about service Content Packs. How can I contact you?**
 
@@ -80,5 +80,5 @@ Feel free to email us your questions at pbiservicesapps@microsoft.com
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
 
 ## Next
-[Authoring](developer/template-content-pack-authoring.md)
+[Authoring](template-content-pack-authoring.md)
 
