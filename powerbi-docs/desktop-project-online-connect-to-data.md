@@ -37,7 +37,7 @@ You can connect to data in Project Online through Power BI Desktop.
    For our example, we’re using https://contoso.sharepoint.com/sites/pwa/default.aspx
 5. Power BI Desktop will prompt you to authenticate with your Office 365 account. Select Organizational account and then enter your credentials.
    
-   ![](media/powerbi-desktop-project-online-connect-to-data/image.png)
+   ![](media/desktop-project-online-connect-to-data/image.png)
 
 From here, you can choose which tables you would like to connect to and build a query.  Want an idea of how to get started?  The following blog post shows how to build a burndown chart from your Project Online data.  The blog post refers to using Power Query to connect to Project Online, but this applies to Power BI Desktop as well.
 
