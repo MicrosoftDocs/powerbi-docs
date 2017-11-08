@@ -41,34 +41,34 @@ There are many published articles describing how to define row level dynamic sec
 
 1. For our sample, we're using **AdventureworksDW2012** relational database. In that database, create the **DimUserSecurity** table, as shown in the following image. For this sample, we're using SQL Server Management Studio (SSMS) to create the table.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable.png)
 2. Once the table is created and saved, we need to create the relationship between the **DimUserSecurity** table's **SalesTerritoryID** column and **DimSalesTerritory** table's **SalesTerritoryKey** column, as shown in the following image. This can be done from **SSMS** by right-clicking on the **DimUserSecurity** table, and selecting **Edit**.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable_Keys.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 3. Save the table, then add few rows of user information in to the table by again right clicking on the **DimUserSecurity** table and then selecting **Edit top 200 rows**. Once you’ve added those users, the rows of the **DimUserSecurity** table look like they do in the following image:
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable_users.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_users.png)
    
    We’ll come back to these users in upcoming tasks.
 4. Next we do an *inner join* with the **DimSalesTerritory** table, which shows the region details associated with the user. The following code performs the *inner join*, and the image that follows shows how the table appears once the *inner join* is successful.
    
        **select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeKey, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryKey]**
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable_join_users.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Notice that the above image shows information such as which user is responsible for which sales region. That data is displayed because of the relationship that we created in **Step 2**. Also, note that the user **Jon Doe is part of the Australia sales region**. We’ll revisit John Doe in upcoming steps and tasks.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 1. Once your relational data warehouse is in place, it’s time to define your tabular model. The model can be created using **SQL Server Data Tools (SSDT)**. To get more information about how to define a tabular model, please [refer this article](https://msdn.microsoft.com/library/hh231689.aspx).
 2. Import all the necessary tables in to the model as shown below.
    
-    ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/SSDT_Model.png)
+    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
 3. Once you’ve imported the necessary tables, you need to define a role called **SalesTerritoryUsers** with **Read** permission. This can be achieved by clicking on the **Model** menu in SQL Server Data Tools, and then clicking **Roles**. In the **Role Manager** dialog box, click **New**.
 4. Under **Members** tab in the **Role Manager**, add the users that we defined in the **DimUserSecurity** table in **Task 1 - step 3**.
    
-    ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/RoleManager.png)
+    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager.png)
 5. Next, add the proper functions for both **DimSalesTerritory** and **DimUserSecurity** tables, as shown below under **Row Filters** tab.
    
-    ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/RoleManager_complete.png)
+    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager_complete.png)
 6. In this step, we use the **LOOKUPVALUE** function to return values for a column in which the Windows user name is the same as the user name returned by the **USERNAME** function. Queries can then be restricted where the values returned by **LOOKUPVALUE** match values in the same or related table. In the **DAX Filter** column, type the following formula:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
@@ -86,25 +86,25 @@ There are many published articles describing how to define row level dynamic sec
 2. To allow the **Power BI service** access your on-premises analysis service, you need to have an **[On-premises Data Gateway](service-gateway-onprem.md)** installed and configured in your environment.
 3. Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source within the Power BI portal](service-gateway-enterprise-manage-ssas.md).
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/PBI_Gateway.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
 4. With the previous step complete, the gateway is configured and ready interact with your on-premises **Analysis Services** data source.
 
 ## Task 4: Creating report based on analysis services tabular model using Power BI desktop
 1. Launch **Power BI Desktop** and select **Get Data > Database**.
 2. From the list of data sources, select the **SQL Server Analysis Services Database** and select **connect**.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/GetData.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata.png)
 3. Fill in your **Analysis Services** tabular instance details and select **Connect Live**. Select OK. With **Power BI**, dynamic security works only with **Live connection**.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/GetData_ConnectLive.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata_connectlive.png)
 4. You'll see that the model that was deployed in the **Analysis Services** instance. Select the respective model and select **OK**.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/GetData_ConnectLive.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata_connectlive.png)
 5. **Power BI Desktop** now displays all the available fields, to the right of the canvas in the **Fields** pane.
 6. In the **Fields** pane on the right, select the **SalesAmount** measure from **FactInternetSales** table and **SalesTerritoryRegion** dimension from **SalesTerritory** table.
 7. We’ll keep this report simple, so right now we won’t add any more columns. To have more meaningful representation of the data, we'll change the visualization to **Donut chart**.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/Donut_chart.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart.png)
 8. Once your report is ready, you can directly publish it to the Power BI portal. From the **Home** ribbon in **Power BI Desktop**, select **Publish**.
 
 ## Task 5: Creating and sharing a dashboard
@@ -114,15 +114,15 @@ There are many published articles describing how to define row level dynamic sec
    
    Once he publishes the report, he creates a dashboard in the Power BI service called **TabularDynamicSec** based on that report. In the following image, notice that the sales Manager (Sumit) is able to see the data corresponding to all the sales region.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/Donut_chart_1.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 2. Now Sumit shares the dashboard with his colleague, Jon Doe, who is responsible for sales in Australia region.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/User_Jon_Doe.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/user_jon_doe.png)
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/PBI_dashboard.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 3. When Jon Doe logs in to the **Power BI** service and views the shared dashboard that Sumit created, Jon Doe should see **only** the sales from his region for which he is responsible. So Jon Doe logs in, accesses the dashboard that Sumit shared with him, and Jon Doe sees **only** the sales from the Australia region.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/Dashboard_Jon_Doe.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 4. Congratulations! The dynamic row level security that was defined in the on-premises **Analysis Services** tabular model has been successfully reflected and observed in the **Power BI** service. Power BI uses the **effectiveusername** property to send the current Power BI user credential to the on-premises data source to run the queries.
 
 ## Task 6: Understanding what happens behind the scenes
@@ -133,7 +133,7 @@ There are many published articles describing how to define row level dynamic sec
 3. Based on the effective user name request, Analysis Services converts the request to the actual moonneo\jondoe credential after querying the local Active Directory. Once **Analysis Services** gets the actual credential from Active Directory, then based on the access the user has permissions for on the data, **Analysis Services** returns the only the data for which he or she has permission.
 4. If more activity occurs with the dashboard, for example, if Jon Doe goes from the dashboard to the underlying report, with SQL Profiler you would see a specific query coming back to the Analysis Services tabular model as a DAX query.
    
-   ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/Profiler1.png)
+   ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/profiler1.png)
 5. You can also see below the DAX query that is getting executed to populate the data for the report.
    
    ```
