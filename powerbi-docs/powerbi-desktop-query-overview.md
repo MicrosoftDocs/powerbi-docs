@@ -144,5 +144,5 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 

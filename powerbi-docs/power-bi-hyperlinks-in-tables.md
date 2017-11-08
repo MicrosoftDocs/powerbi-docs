@@ -37,7 +37,7 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop, but not fr
 The procedure for adding a hyperlink depends on whether you've imported the data or connected to it using DirectQuery. Both scenarios are described below.
 
 ### For data imported into Power BI
-1. If the hyperlink doesn't already exist as a field in your dataset, use Desktop to add it as a [custom column](powerbi-desktop-common-query-tasks.md).
+1. If the hyperlink doesn't already exist as a field in your dataset, use Desktop to add it as a [custom column](desktop-common-query-tasks.md).
 2. In Data view, select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
    
     ![](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)

@@ -208,5 +208,5 @@ To apply changes and close Query Editor, select Close & Apply from the **Home** 
 * [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
-* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 

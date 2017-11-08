@@ -43,21 +43,21 @@ The steps necessary to connect to both of those data sources is where the common
 ## Connect to Data
 To connect to data in Power BI Desktop, select the **Get Data** button from the **Home** tab on the ribbon. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select the **More...** button at the bottom of the menu. For more information, see [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GetData.png)
+![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
 To start with, select **Excel** and navigate to the workbook, then select it. Query inspects the workbook, then presents the data it found in the **Navigator** window.
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_Navigator.png)
+![](media/desktop-common-query-tasks/commonquerytasks_navigator.png)
 
 You can select **Edit** to adjust, or *shape,* the data before loading it into Power BI Desktop. Editing a query before loading is especially useful when working with large data sets that you intend to pare down before loading. We want to do that, so we select **Edit**.
 
 Connecting to different types of data is just as easy. We also want to connect to a Web resource. Select **Get Data \> More...** and then select **Other \> Web**.
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GetData_Other.png)
+![](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
 The **From Web** window appears, where you can type in the URL of the Web page.
 
-![](media/powerbi-desktop-common-query-tasks/DataSources_FromWebBox.png)
+![](media/desktop-common-query-tasks/datasources_fromwebbox.png)
 
 Select **OK**, and like before, Power BI Desktop inspects the workbook and presents the data it finds in the **Navigator** window.
 
@@ -70,13 +70,13 @@ You can easily shape and combine data with Query Editor. This section includes a
 
 In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_QueryPaneLoaded.png)
+![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
 When you shape data, you transform a data source into the form and format that meets your needs. In this case, we don’t need that first column, titled *Header*, so we’ll remove it.
 
 In **Query Editor**, many commands can be found in the ribbon, and in a context-sensitive right-click menu. For example, when I right-click on the *Header* column, the menu that appears lets me remove the column. I could also select the column and then select the **Remove Columns** button from the ribbon.
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_RemoveColumns.png)
+![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
 There are many other ways I could shape the data in this query; I could remove any number of rows from the top, or from the bottom; I could add columns, split columns, replace values, and perform other shaping tasks to direct Query Editor to get the data how I want it.
 
@@ -87,7 +87,7 @@ In this example, we group rows in an education enrollment data set. The data is 
 
 Let’s find out how many Agencies (this includes school districts, and other education agencies such as regional service districts, and so on) each state has. We select the *State Abbr* column then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon (**Group By** is available in both tabs).
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GroupBy.png)
+![](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
 The **Group By…** window appears. When Query Editor groups rows, it creates a new column into which it places the **Group By** results. You can adjust the **Group By** operation in the following ways:
 
@@ -96,11 +96,11 @@ The **Group By…** window appears. When Query Editor groups rows, it creates a 
 3. *Operation* – here you specify the operation that Query Editor applies.
 4. *The +/- signs* – you can perform aggregation operations (**Group By** actions) on multiple columns, and perform multiple aggregations, all within the **Group By** window, and all in one operation. Query Editor creates a new column (based on your selections in this window) that operate on multiple columns. Select the **+** button to add more columns or aggregations to a **Group By** operation. You can remove a column or aggregation by selecting the – icon, so go ahead and try it, and see what it looks like. 
    
-   ![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GroupByNumbered.png)
+   ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
 When we select **OK**, Query performs the **Group By** operation, and returns the results. Whew, look at that – Ohio, Texas, Illinois, and California each have over a thousand agencies!
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GroupedResult.png)
+![](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
 
 And with Query Editor, you can always remove the last shaping operation by selecting the **X** next to the step just completed. So go ahead and experiment, redo the step if you don’t like the results, until Query Editor shapes your data just the way you want it.
 
@@ -109,43 +109,43 @@ With Power BI Desktop, you can pivot columns, and create a table that contains a
 
 Let’s look at an example. The following **Products** table has been shaped to only show each unique product (by name), and which category each product falls under. To create a new table that shows a count of products for each category (based on the *CategoryName* column), select the column, then select **Pivot Column** from the **Transform** tab on the ribbon.
 
-![](media/powerbi-desktop-common-query-tasks/PivotColumns_PivotButton.png)
+![](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
 
 The **Pivot Column** window appears, letting you know which column’s values will be used to create new columns (1), and when you expand **Advanced option** (2), you can select the function that will be applied to the aggregated values (3).
 
-![](media/powerbi-desktop-common-query-tasks/PivotColumns_PivotDialog.png)
+![](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
 
 When you select **OK**, Query displays the table according to the transform instructions provided in the **Pivot Column** window.
 
-![](media/powerbi-desktop-common-query-tasks/PivotColumns_PivotComplete.png)
+![](media/desktop-common-query-tasks/pivotcolumns_pivotcomplete.png)
 
 ## Create Custom Columns
 In Query Editor you can create custom formulas that operate on multiple columns in your table, then place the results of such formulas into a new (custom) column. Query Editor makes it easy to create custom columns.
 
 In Query Editor, select **Add Custom Column** from the **Add Column** tab on the ribbon.
 
-![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_CustomColumn.png)
+![](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
 
 The following window appears. In the following example, we create a custom column called *Percent ELL* that calculates the percentage of total students that are English Language Learners (ELL).
 
-![](media/powerbi-desktop-common-query-tasks/CustomColumn_AddCustomColumnDialog.png)
+![](media/desktop-common-query-tasks/customcolumn_addcustomcolumndialog.png)
 
 Like any other applied step in Query Editor, if the new custom column doesn’t provide the data you’re looking for, you can simply delete the step from the **Applied Steps** section of the **Query Settings** pane by selecting the **X** next to the **Added Custom** step.
 
-![](media/powerbi-desktop-common-query-tasks/CustomColumn_AddedAppliedStep.png)
+![](media/desktop-common-query-tasks/customcolumn_addedappliedstep.png)
 
 ## Query Formulas
 You can edit the steps that Query Editor generates, and you can create custom formulas to get precise control over connecting to and shaping your data. Whenever Query Editor performs an action on data, the formula associated with the action is displayed in the **Formula Bar**. To view the **Formula Bar**, select the checkbox next to **Formula Bar** in the **View** tab of the ribbon.
 
-![](media/powerbi-desktop-common-query-tasks/QueryFormulas_FormulaBar.png)
+![](media/desktop-common-query-tasks/queryformulas_formulabar.png)
 
 Query Editor keeps all applied steps for each query as text that you can view or modify. You can view or modify the text for any query using the **Advanced Editor**, which is displayed when you select **Advanced Editor** from the **View** tab of the ribbon.
 
-![](media/powerbi-desktop-common-query-tasks/QueryFormulas_AdvancedEditorButton.png)
+![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
 Here's a look at the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as **M**. For information, see [Learn about Power Query formulas](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). To view the language specification itself, download the [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).﻿
 
-![](media/powerbi-desktop-common-query-tasks/QueryFormulas_AdvancedEditor.png)
+![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 
 Power BI Desktop provides an extensive set of formula categories. For more information, and a complete reference of all Query Editor formulas, visit [Power Query Formula Categories](https://support.office.com/en-in/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819).
 

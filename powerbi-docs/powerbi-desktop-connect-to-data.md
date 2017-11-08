@@ -74,7 +74,7 @@ Of course, this is a simple model with a single data connection; most Power BI D
 * [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 

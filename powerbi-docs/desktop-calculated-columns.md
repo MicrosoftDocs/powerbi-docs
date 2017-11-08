@@ -59,5 +59,5 @@ We’ve only provided a quick introduction to calculated columns here. Be sure t
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
 
-To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](powerbi-desktop-common-query-tasks.md)  
+To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](desktop-common-query-tasks.md)  
 
