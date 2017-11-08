@@ -47,7 +47,7 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
    * Use a separate tenant for your application?
    * Use a separate tenant for each customer?
      
-     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](developer/create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 2. Create a user within this new tenant that will act as your application "master" account. That account needs to sign up for Power BI and needs to have a Power BI Pro license assigned to it.
 
 ## Accounts within Azure AD

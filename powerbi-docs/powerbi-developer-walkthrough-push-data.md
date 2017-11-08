@@ -23,7 +23,7 @@ ms.author: asaxton
 # Push data into a Power BI dataset
 With the Power BI API, you can push data into a Power BI dataset. For example, you want to extend an existing business workflow to push key data into your dataset. In this case, you want to push a Sales Marketing dataset which has a Product table into a dataset.
 
-Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](powerbi-developer-create-an-azure-active-directory-tenant.md).
+Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](developer/create-an-azure-active-directory-tenant.md).
 
 ## Steps to push data into a dataset
 * Step 1: [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
@@ -116,7 +116,7 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 [Next Step >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## See also
-[Sign up for Power BI](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Sign up for Power BI](developer/create-an-azure-active-directory-tenant.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
 [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  

@@ -55,7 +55,7 @@ You will need to determine what tenant setup to use if you are embedding for you
 * Use a separate tenant for your application?
 * Use a separate tenant for each customer?
 
-If you do not want to use an existing tenant, you can decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+If you do not want to use an existing tenant, you can decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](developer/create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
 ### <a name="proaccount"></a>Create a Power BI Pro user account
 You only need a single Power BI Pro account to embed content. However, you may want to have a few different users that have specific access to items. Here is a look at possible users to consider within your tenant.

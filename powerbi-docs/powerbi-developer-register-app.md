@@ -26,7 +26,7 @@ Learn how to register an application within Azure Active Directory (Azure AD) fo
 You register your application with Azure AD to allow your application access to the Power BI REST APIs. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources.
 
 > [!IMPORTANT]
-> Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration will not complete successfully.
+> Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](developer/create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration will not complete successfully.
 > 
 > 
 
