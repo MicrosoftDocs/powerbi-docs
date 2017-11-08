@@ -38,7 +38,7 @@ Migration is defined as moving application data files to a new Power BI Report S
 ## Migrating to Power BI Report Server from SSRS (Native mode)
 Migrating from an SSRS (Native mode) instance to Power BI Report Server consists of a few steps.
 
-![](media/reportserver-migrate-report-server/migrate-from-ssrs-native.png "Migrate from SSRS native mode to Power BI Report Server")
+![](media/migrate-report-server/migrate-from-ssrs-native.png "Migrate from SSRS native mode to Power BI Report Server")
 
 > [!NOTE]
 > SQL Server 2008 Reporting Services and later are supported for migration.
@@ -61,7 +61,7 @@ Migrating from an SSRS (Native mode) instance to Power BI Report Server consists
 ## Migration to Power BI Report Server from SSRS (SharePoint-integrated mode)
 Migrating from an SSRS (SharePoint-integrated mode) to Power BI Report Server is not as straight forward as native mode. While these steps will provide some guidance, you may have other files and assets within SharePoint that will need to be managed outside of these steps.
 
-![](media/reportserver-migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrate from SSRS SharePoint-integrated mode to Power BI Report Server")
+![](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrate from SSRS SharePoint-integrated mode to Power BI Report Server")
 
 You will need to migrate the specific report server content from SharePoint to your Power BI Report Server. This assumes you have already installed Power BI Report Server somehwere in your environment. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
 
@@ -87,7 +87,7 @@ rs.exe
 ## Migrateing from one Power BI Report Server to another
 Migrating from one Power BI Reprot Server is the same process as migrating from SSRS (Native-mode).
 
-![](media/reportserver-migrate-report-server/migrate-from-pbirs.png "Migrate from Power BI Report Server to Power BI Report Server")
+![](media/migrate-report-server/migrate-from-pbirs.png "Migrate from Power BI Report Server to Power BI Report Server")
 
 * Backup database, application and configuration files
 * Back up the encryption key

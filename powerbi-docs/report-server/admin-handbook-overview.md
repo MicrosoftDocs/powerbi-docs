@@ -41,7 +41,7 @@ If you are deploying a new Power BI Report Server, you use the following documen
 ### Migration
 There is no in place upgrade for SQL Server Reporting Services. If you have an existing SQL Server Reporting Services instance that you want to make a Power BI Report Server, you will need to migrate it. There are other reasons that you may want to perform a migration as well. Review the migration document for more details.
 
-[Migrate a report server installation](reportserver-migrate-report-server.md)
+[Migrate a report server installation](migrate-report-server.md)
 
 ## Configuring your report server
 You have many options when configuing your report server. Will you use SSL? Are you configuring an email server? Do you want to intergrate with the Power BI service to pin visualizations?
