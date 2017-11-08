@@ -31,7 +31,7 @@ The following image shows a Power BI dashboard with a collection of R visuals us
 
 ![](media/service-r-visuals/r-visuals-service_1.png)
 
-R visuals are created in a [Power BI Desktop report](powerbi-desktop-get-the-desktop.md), like the report shown in the following image.
+R visuals are created in a [Power BI Desktop report](desktop-get-the-desktop.md), like the report shown in the following image.
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 

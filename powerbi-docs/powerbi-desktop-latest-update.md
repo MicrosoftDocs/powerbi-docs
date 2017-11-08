@@ -55,7 +55,7 @@ The following updates are new to **Power BI Desktop** this month:
 * SAP BW connector - support for additional member properties  [[video]](https://youtu.be/jksjtR8GnBE?t=26m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#sapBW)
 
 ### Other:
-* Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](powerbi-desktop-get-the-desktop.md#install-as-an-app-from-the-windows-store)
+* Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](desktop-get-the-desktop.md#install-as-an-app-from-the-windows-store)
 * Improved access to help content  [[video]](https://youtu.be/jksjtR8GnBE?t=28m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#help)
 
 > NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.

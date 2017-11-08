@@ -33,7 +33,7 @@ Either approach will get the latest version of **Power BI Desktop** onto your co
 ## Download Power BI Desktop
 To download the most recent version of **Power BI Desktop**, you can select the download icon from the upper right corner of the Power BI service, and select **Power BI Desktop**.
 
-![](media/powerbi-desktop-get-the-desktop/GetPBID_Downloads.png)
+![](media/desktop-get-the-desktop/getpbid_downloads.png)
 
 You can also download the latest version of Power BI Desktop from the following download page:
 
@@ -43,11 +43,11 @@ You can also download the latest version of Power BI Desktop from the following 
 
 Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 
-![](media/powerbi-desktop-get-the-desktop/GetPBID_3.png)
+![](media/desktop-get-the-desktop/getpbid_3.png)
 
 **Power BI Desktop** is installed as an application, and runs on your desktop.
 
-![](media/powerbi-desktop-get-the-desktop/Designer_GSG_Install.png)
+![](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
@@ -58,7 +58,7 @@ You can also get **Power BI Desktop** from the Windows Store, using the followin
 
 * [Install **Power BI Desktop** from the **Windows Store**](http://aka.ms/pbidesktopstore)
 
-![](media/powerbi-desktop-get-the-desktop/GetPBID_04.png)
+![](media/desktop-get-the-desktop/getpbid_04.png)
 
 There are a few advantages to getting **Power BI Desktop** from the Windows Store:
 
@@ -81,7 +81,7 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 ## Using Power BI Desktop
 When you launch **Power BI Desktop**, a *Welcome* screen is displayed.
 
-![](media/powerbi-desktop-get-the-desktop/GetPBID_05.png)
+![](media/desktop-get-the-desktop/getpbid_05.png)
 
 If this is your first time using **Power BI Desktop** (if the installation is not an upgrade), you'll be prompted to fill out a form and answer a few questions, or sign in to the **Power BI service** before you'll be able to proceed.
 

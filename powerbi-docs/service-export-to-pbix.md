@@ -42,7 +42,7 @@ To download the .pbix file, follow these steps:
     ![](media/service-export-to-pbix/power-bi-save-pbix.png)
    
     You now have the option of opening the .pbix file in either Power BI service (app.powerbi.com) or Power BI Desktop.     
-4. To immediately open the report in Desktop, select **Open**.  If you haven't already, [install Power BI Desktop](powerbi-desktop-get-the-desktop.md).
+4. To immediately open the report in Desktop, select **Open**.  If you haven't already, [install Power BI Desktop](desktop-get-the-desktop.md).
    
     When you open the report in Desktop, you may see a warning message letting you know that some features available in the Power BI service report may not be available in Desktop.
    

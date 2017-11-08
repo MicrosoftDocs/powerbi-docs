@@ -49,7 +49,7 @@ When the import is complete, the new app appears on the Apps page.
 ## What's included
 After connecting to a service, you see a newly created app with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and may not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
 
-You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
+You can also use [Power BI Desktop](desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
 For more details on connecting to specific services, please refer to the individual help pages.
 
