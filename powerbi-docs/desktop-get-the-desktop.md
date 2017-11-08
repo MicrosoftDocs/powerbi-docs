@@ -74,7 +74,7 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
-> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md) article.
+> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
 > 
 > 
 

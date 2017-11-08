@@ -84,7 +84,7 @@ You can view, upload, create, organize, and manage permissions for Power BI Desk
     The Power BI Desktop app opens.
    
     ![Power BI Desktop app](media/getting-around/report-server-powerbi-desktop-start.png)
-2. Create your Power BI report. See [Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md) for details.
+2. Create your Power BI report. See [Quickstart: Power BI reports](quickstart-create-powerbi-report.md) for details.
 3. Upload your report to the report server.
 
 ### Edit an existing Power BI Desktop report
@@ -184,7 +184,7 @@ You can switch to List view, where it's easy to move or delete multiple items at
 ## Next steps
 [User handbook](reportserver-user-handbook-overview.md)  
 [Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
-[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md)
+[Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

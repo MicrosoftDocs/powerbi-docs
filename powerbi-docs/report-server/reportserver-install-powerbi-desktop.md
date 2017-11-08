@@ -54,7 +54,7 @@ Editing a Power BI report from within Power BI Report Server, or creating a new 
 ## Next steps
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
 
-[Quickstart: Create a Power BI report for Power BI Report Server](reportserver-quickstart-powerbi-report.md)  
+[Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Get started with Power BI Desktop](../desktop-getting-started.md)  
 Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml#step-2)  
 [User handbook overview, Power BI Report Server](reportserver-user-handbook-overview.md)

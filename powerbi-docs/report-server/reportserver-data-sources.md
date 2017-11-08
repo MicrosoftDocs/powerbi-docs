@@ -118,7 +118,7 @@ Other data sources may work even though they aren't on the supported list.
 > 
 
 ## Next steps
-Now that your data source is picked out, [create a report](reportserver-quickstart-powerbi-report.md) using data from that data source.
+Now that your data source is picked out, [create a report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
