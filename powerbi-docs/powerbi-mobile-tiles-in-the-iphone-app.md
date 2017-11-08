@@ -33,7 +33,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 
 ## Tiles in the iOS apps
 > [!NOTE]
-> You can [create picture tiles with your iPhone app](powerbi-mobile-iphone-app-get-started.md) and save them to your dashboards.
+> You can [create picture tiles with your iPhone app](mobile-iphone-app-get-started.md) and save them to your dashboards.
 > 
 > 
 

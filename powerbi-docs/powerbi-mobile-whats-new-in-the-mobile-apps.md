@@ -449,7 +449,7 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 * Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
-* [Add a picture tile to a dashboard](powerbi-mobile-iphone-app-get-started.md) directly from your iPhone.
+* [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.
 * [Create QR codes in the Power BI service](service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
