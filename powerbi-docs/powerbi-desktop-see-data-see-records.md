@@ -86,5 +86,5 @@ There are a few limitations to consider when using **See Data** or **See Records
 ﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
 
 * [Use grouping and binning in Power BI Desktop](powerbi-desktop-grouping-and-binning.md)
-* [Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports](powerbi-desktop-gridlines-snap-to-grid.md)
+* [Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)
 
