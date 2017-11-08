@@ -4,7 +4,7 @@ description: You can launch and use an external IDE with Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

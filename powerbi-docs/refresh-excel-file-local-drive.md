@@ -4,7 +4,7 @@ description: Refresh a dataset created from an Excel workbook on a local drive
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

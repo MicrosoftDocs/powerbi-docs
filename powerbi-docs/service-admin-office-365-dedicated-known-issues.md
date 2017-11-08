@@ -4,7 +4,7 @@ description: Support for Office 365 dedicated customers - known issues. This top
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

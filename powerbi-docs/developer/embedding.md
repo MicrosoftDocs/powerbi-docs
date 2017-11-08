@@ -4,7 +4,7 @@ description: Power BI offers APIs for embedding your dashboards and reports into
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

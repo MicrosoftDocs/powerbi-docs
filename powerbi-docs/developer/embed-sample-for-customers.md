@@ -4,7 +4,7 @@ description: Learn how to integrate, or embed, a dashboard, tile or report, into
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

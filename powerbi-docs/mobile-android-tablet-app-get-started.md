@@ -4,7 +4,7 @@ description: Learn how the Power BI mobile app for Android tablets brings Power 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

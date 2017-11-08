@@ -4,7 +4,7 @@ description: 'Tutorial: Basic Area chart.'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

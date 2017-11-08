@@ -4,7 +4,7 @@ description: Connect to a number of the services you use to run your business, s
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

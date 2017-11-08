@@ -4,7 +4,7 @@ description: Use R scripts in Power BI to create advanced analytics and advanced
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

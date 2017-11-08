@@ -4,7 +4,7 @@ description: 'Tutorial: Customize visualization title, background, and legend'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 featuredvideoid: IkJda4O7oGs

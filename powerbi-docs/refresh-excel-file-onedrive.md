@@ -4,7 +4,7 @@ description: Refresh a dataset created from an Excel workbook on OneDrive, or Sh
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

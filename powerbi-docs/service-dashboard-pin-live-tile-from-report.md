@@ -4,7 +4,7 @@ description: Documentation on how to pin an entire live report page to a Power B
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

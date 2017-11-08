@@ -4,7 +4,7 @@ description: Welcome to the developer handbook for Power BI Report Server, an on
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: This article looks at your options for Power BI (free) from an orga
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

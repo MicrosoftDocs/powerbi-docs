@@ -4,7 +4,7 @@ description: Read about storing and connecting to your Excel, CSV, and Power BI 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

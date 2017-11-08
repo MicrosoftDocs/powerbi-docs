@@ -4,7 +4,7 @@ description: This article provides ways for you to troubleshoot issues you are h
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

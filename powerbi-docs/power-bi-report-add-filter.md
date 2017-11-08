@@ -4,7 +4,7 @@ description: Add a page filter, visualization filter, or report filter to a repo
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

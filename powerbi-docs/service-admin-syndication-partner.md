@@ -4,7 +4,7 @@ description: Unable to add Power BI to an Office 365 syndication partner. The sy
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

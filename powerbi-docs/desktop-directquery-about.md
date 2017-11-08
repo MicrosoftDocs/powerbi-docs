@@ -4,7 +4,7 @@ description: Understand using DirectQuery with Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

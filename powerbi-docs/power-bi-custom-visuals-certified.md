@@ -4,7 +4,7 @@ description: Requirements and process to submit a custom visual for certificatio
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

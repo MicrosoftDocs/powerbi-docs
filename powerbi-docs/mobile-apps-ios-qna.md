@@ -4,7 +4,7 @@ description: In this tutorial, try asking questions about this sample data in yo
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

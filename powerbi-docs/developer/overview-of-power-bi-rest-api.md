@@ -4,7 +4,7 @@ description: What can I do with the Power BI API
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

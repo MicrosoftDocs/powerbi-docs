@@ -4,7 +4,7 @@ description: Learn how the Microsoft Power BI for iOS app on the iPhone brings P
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

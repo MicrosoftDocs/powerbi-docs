@@ -4,7 +4,7 @@ description: Learn best practices and considerations for deploying a gateway for
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

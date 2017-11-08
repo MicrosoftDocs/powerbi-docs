@@ -4,7 +4,7 @@ description: Configure your gateway with Kerberos to enable SSO from Power BI to
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: With Power BI's new report web part for SharePoint Online, you can 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

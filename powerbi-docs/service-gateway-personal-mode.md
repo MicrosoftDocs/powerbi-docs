@@ -4,7 +4,7 @@ description: Data gateway for Power BI that individuals can use for connecting t
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

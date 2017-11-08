@@ -4,7 +4,7 @@ description: QR codes in Power BI can connect anything in the real world directl
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Change the aggregation in a chart (sum, average, maximum, etc.) in 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

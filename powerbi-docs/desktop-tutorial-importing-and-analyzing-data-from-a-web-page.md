@@ -4,7 +4,7 @@ description: 'Tutorial: Importing and analyzing data from a Web Page using Power
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

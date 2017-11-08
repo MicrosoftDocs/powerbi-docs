@@ -4,7 +4,7 @@ description: Power BI for Office 365 is retired, learn how to use and administer
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: amandacofsky
 editor: ''
 tags: ''

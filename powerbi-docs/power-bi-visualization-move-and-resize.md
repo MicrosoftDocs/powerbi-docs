@@ -4,7 +4,7 @@ description: Move and resize a visualization in a Power BI report
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

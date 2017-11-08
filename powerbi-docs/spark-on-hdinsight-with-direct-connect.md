@@ -4,7 +4,7 @@ description: Spark on HDInsight with DirectQuery
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

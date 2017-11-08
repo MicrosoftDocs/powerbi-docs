@@ -4,7 +4,7 @@ description: 'Retail Analysis sample for Power BI: Take a tour'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

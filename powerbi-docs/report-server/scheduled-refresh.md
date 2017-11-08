@@ -4,7 +4,7 @@ description: Power BI reports can connect to different data sources. Depending o
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

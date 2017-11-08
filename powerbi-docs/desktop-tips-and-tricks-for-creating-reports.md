@@ -4,7 +4,7 @@ description: Tips and tricks for creating reports in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

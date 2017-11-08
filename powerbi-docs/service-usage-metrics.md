@@ -4,7 +4,7 @@ description: Documentation on how to view usage metrics for Power BI dashboards 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Power BI - basic concepts
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

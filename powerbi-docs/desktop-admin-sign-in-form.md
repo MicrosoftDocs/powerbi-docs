@@ -4,7 +4,7 @@ description: Learn how you can manage the initial sign-in form when opening Powe
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

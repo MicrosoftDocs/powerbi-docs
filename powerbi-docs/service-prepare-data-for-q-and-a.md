@@ -4,7 +4,7 @@ description: Make your data work well with Q&A in Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

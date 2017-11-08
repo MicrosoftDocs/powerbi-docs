@@ -4,7 +4,7 @@ description: Here are some code snippets of basic operations needed for content 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

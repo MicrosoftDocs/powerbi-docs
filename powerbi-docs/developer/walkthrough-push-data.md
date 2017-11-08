@@ -4,7 +4,7 @@ description: Push data into a Power BI dataset
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

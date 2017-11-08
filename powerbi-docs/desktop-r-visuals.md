@@ -4,7 +4,7 @@ description: Create Power BI visuals using R
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

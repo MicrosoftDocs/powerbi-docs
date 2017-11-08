@@ -4,7 +4,7 @@ description: How to share Power BI dashboards with colleagues in and out of your
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

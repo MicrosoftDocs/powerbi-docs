@@ -4,7 +4,7 @@ description: Create a big number tile for a Power BI dashboard by asking a quest
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

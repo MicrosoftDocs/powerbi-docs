@@ -4,7 +4,7 @@ description: The Notification Center brings information related to your Power BI
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

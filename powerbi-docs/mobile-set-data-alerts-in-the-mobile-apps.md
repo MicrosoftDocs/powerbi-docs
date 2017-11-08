@@ -4,7 +4,7 @@ description: Learn to set alerts in the Power BI mobile apps and in the Power BI
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

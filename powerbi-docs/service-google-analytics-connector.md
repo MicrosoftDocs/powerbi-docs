@@ -4,7 +4,7 @@ description: 'Third-party service: Google Analytics connector for Power BI Deskt
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

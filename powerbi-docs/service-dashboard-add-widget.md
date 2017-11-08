@@ -4,7 +4,7 @@ description: Documentation on how to use the Add tile widget to add an image, vi
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: In this tutorial you create an organizational content pack, restric
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

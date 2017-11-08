@@ -4,7 +4,7 @@ description: This is the on-premises data gateway FAQ. This collects frequently 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Power BI mobile apps can connect the real world directly to related
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

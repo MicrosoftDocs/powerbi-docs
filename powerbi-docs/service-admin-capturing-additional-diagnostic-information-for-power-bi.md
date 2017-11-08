@@ -4,7 +4,7 @@ description: Capturing additional diagnostic information
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

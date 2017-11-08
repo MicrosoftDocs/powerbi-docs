@@ -4,7 +4,7 @@ description: For U.S. Government customers, learn about the features and limitat
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

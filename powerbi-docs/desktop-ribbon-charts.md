@@ -4,7 +4,7 @@ description: Create and consume ribbon charts in the Power BI service and Power 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

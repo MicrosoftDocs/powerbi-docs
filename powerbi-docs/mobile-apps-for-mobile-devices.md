@@ -4,7 +4,7 @@ description: The Power BI mobile apps keep you connected to your data on premise
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Here are 10 ways to get help when you have a question about how Pow
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Tiles are live snapshots of your data, pinned to a dashboard. Learn
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

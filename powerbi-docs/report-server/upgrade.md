@@ -4,7 +4,7 @@ description: Learn how to upgrade Power BI Report Server.
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

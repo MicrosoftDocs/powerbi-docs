@@ -4,7 +4,7 @@ description: The Power BI mobile apps offer live, touch-enabled mobile access to
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

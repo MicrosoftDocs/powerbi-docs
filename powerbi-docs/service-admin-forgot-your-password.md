@@ -4,7 +4,7 @@ description: Forgot your password for Power BI?
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

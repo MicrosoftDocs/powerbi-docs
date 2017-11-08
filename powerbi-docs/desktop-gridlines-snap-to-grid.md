@@ -4,7 +4,7 @@ description: Use gridlines, snap-to-grid, z-order, alignment and distribution in
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

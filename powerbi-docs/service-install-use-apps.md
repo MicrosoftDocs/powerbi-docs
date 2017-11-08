@@ -4,7 +4,7 @@ description: In Power BI, apps bring related dashboards and reports together, al
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 qualityfocus: monitoring

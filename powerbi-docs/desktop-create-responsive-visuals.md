@@ -4,7 +4,7 @@ description: Learn how to optimize visuals in Power BI Desktop and the Power BI 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

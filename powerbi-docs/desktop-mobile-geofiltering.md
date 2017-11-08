@@ -4,7 +4,7 @@ description: When you set geographic filtering in your model in Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 qualityfocus: no

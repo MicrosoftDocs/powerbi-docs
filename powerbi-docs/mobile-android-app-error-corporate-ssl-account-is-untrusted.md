@@ -13,7 +13,7 @@ description: When signing in to the Android app for Power BI, you may see the me
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

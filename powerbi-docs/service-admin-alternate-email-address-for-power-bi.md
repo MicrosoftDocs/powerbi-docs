@@ -4,7 +4,7 @@ description: Using an alternate Email Address
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

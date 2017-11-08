@@ -4,7 +4,7 @@ description: Documentation on how to create a Featured dashboard in Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

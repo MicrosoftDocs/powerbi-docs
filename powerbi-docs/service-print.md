@@ -4,7 +4,7 @@ description: Printing a dashboard, tile, or report page from Power BI.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

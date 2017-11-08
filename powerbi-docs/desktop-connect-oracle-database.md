@@ -4,7 +4,7 @@ description: Steps and downloads necessary to connect Oracle to Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

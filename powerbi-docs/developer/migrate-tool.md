@@ -4,7 +4,7 @@ description: This migration tool can be used to copy your reports from the Power
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

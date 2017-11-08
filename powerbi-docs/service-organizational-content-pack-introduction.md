@@ -4,7 +4,7 @@ description: Read about packaging up your dashboards, reports, Excel workbooks, 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

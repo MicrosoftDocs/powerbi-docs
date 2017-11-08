@@ -4,7 +4,7 @@ description: Starting on June 1, 2017, all eligible users will be able to opt-in
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

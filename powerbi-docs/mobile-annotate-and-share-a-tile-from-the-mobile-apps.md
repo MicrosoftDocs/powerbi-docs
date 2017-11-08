@@ -4,7 +4,7 @@ description: 'Read about annotating and sharing tiles, reports, and visuals from
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

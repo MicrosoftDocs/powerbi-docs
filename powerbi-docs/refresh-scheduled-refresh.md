@@ -4,7 +4,7 @@ description: This covers the steps to select a gateway and configure scheduled r
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 qualityfocus: no

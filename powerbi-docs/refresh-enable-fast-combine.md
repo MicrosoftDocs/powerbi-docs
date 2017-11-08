@@ -4,7 +4,7 @@ description: How to enable Fast Combine within the Personal Gateway to disable p
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

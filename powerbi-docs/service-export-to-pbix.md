@@ -4,7 +4,7 @@ description: Download a report from the Power BI service to a Power BI Desktop f
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

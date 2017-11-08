@@ -4,7 +4,7 @@ description: Use the See Data and See Records features of Power BI Desktop to dr
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

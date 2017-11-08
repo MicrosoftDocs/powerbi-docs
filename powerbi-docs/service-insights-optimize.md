@@ -4,7 +4,7 @@ description: Optimize your data for Power BI Quick Insights. If Power BI doesn't
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: How to turn on (and off) Power BI features that are in Preview.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

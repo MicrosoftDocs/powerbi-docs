@@ -4,7 +4,7 @@ description: For U.S. Government customers, learn how to sign up your US Governm
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

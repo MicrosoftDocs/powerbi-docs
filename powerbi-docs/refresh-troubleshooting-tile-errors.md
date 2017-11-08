@@ -4,7 +4,7 @@ description: Common errors that may be encountered when a tile tries to refresh
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

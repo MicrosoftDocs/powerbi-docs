@@ -4,7 +4,7 @@ description: Learn how to configure your environment to support OAuth authentica
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

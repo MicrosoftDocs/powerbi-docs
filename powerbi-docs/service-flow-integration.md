@@ -4,7 +4,7 @@ description: Learn how to create Flows triggered by Power BI data alerts.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

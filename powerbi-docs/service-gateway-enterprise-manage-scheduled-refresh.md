@@ -4,7 +4,7 @@ description: How to manage the on-premises data gateway gateway and data sources
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

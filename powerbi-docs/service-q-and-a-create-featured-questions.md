@@ -4,7 +4,7 @@ description: Documentation on how to create featured questions for Power BI Q&A
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

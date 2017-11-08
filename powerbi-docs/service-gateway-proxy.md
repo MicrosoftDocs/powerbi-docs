@@ -4,7 +4,7 @@ description: Information regarding configuration of proxy settings for the on-pr
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

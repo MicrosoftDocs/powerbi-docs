@@ -4,7 +4,7 @@ description: Apps are a collection of dashboards and reports built to deliver ke
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 qualityfocus: no

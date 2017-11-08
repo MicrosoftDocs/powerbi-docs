@@ -4,7 +4,7 @@ description: Whitepapers allow you to explore Power BI topics at a deeper level.
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

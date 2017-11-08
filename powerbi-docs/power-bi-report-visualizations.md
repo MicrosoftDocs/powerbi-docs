@@ -4,7 +4,7 @@ description: Documentation about visualizations (visuals) in Microsoft Power BI.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

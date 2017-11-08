@@ -4,7 +4,7 @@ description: R packages that are supported and unsupported in Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

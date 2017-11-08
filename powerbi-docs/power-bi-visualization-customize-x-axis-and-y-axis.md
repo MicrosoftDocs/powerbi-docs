@@ -4,7 +4,7 @@ description: 'Tutorial: Customize X-axis and Y-axis properties'
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 featuredvideoid: 9DeAKM4SNJM
 editor: ''

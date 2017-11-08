@@ -4,7 +4,7 @@ description: This documentation is a tutorial (with video) that shows you why an
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

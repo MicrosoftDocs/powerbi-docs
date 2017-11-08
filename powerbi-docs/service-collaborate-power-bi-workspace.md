@@ -4,7 +4,7 @@ description: Read about collaborating on Power BI Desktop files in your app work
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

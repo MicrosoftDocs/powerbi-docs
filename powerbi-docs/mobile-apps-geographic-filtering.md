@@ -4,7 +4,7 @@ description: Learn how you can filter a report by your geographic location in th
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 editor: ''
 tags: ''
 qualityfocus: no

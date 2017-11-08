@@ -4,7 +4,7 @@ description: Sample content packs, PBIX files, and Excel datasets for Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

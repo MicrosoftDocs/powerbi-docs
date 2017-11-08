@@ -4,7 +4,7 @@ description: Learn how to publish an Excel workbook to your Power BI site.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

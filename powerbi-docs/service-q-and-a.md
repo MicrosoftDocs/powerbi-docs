@@ -4,7 +4,7 @@ description: Documentation overview topic for Power BI Q&A natural language quer
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

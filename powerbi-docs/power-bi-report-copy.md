@@ -5,7 +5,7 @@ description: Create a new Power BI report from another report.
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

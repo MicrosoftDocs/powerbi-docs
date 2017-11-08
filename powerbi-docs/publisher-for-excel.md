@@ -4,7 +4,7 @@ description: Learn how to use the Power BI publisher for Excel
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

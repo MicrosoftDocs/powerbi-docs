@@ -4,7 +4,7 @@ description: Learn how to drill down into data, on a new report page, in Power B
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

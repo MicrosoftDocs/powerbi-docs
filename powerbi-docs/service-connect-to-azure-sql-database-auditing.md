@@ -4,7 +4,7 @@ description: SQL Database Auditing content pack for Power BI
 services: powerbi
 documentationcenter: ''
 author: joeshoukry
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

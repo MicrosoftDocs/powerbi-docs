@@ -4,7 +4,7 @@ description: You can invite colleagues to view your dashboards by sharing links 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

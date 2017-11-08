@@ -4,7 +4,7 @@ description: 'Learn about viewing and interacting with reports in the Power BI m
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

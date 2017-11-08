@@ -4,7 +4,7 @@ description: How to use the same account login for Power BI and Azure
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

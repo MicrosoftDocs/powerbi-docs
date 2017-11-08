@@ -4,7 +4,7 @@ description: Read about sharing dashboards connected to an Excel workbook on One
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: 'Error: We couldn''t find any data in your Excel workbook'
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

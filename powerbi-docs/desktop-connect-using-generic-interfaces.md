@@ -4,7 +4,7 @@ description: Learn how to connect different data sources with generic interfaces
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

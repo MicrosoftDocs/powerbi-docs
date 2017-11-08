@@ -4,7 +4,7 @@ description: Azure SQL Data Warehouse with DirectQuery
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

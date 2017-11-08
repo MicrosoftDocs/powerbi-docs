@@ -4,7 +4,7 @@ description: Learn how to export a Power BI report to PowerPoint.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Display dashboards, dashboard tiles, and report pages in Full Scree
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

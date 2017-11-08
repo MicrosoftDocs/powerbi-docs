@@ -4,7 +4,7 @@ description: Filter a report using URL query string parameters, even filter on m
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

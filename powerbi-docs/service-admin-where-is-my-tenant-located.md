@@ -4,7 +4,7 @@ description: Learn where your Power BI tenant is located and how that location i
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

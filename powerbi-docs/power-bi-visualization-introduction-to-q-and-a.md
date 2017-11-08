@@ -4,7 +4,7 @@ description: 'Tutorial: get started with Q&A in Power BI service using the Retai
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

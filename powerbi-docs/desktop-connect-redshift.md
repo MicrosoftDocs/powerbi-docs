@@ -4,7 +4,7 @@ description: Easily connect to and use an Amazon Redshift database in Power BI D
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

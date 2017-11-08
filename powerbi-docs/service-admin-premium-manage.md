@@ -4,7 +4,7 @@ description: Learn how you can manage Power BI Premium and enable access to cont
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Learn about what data sources you can connect to within Power BI Re
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

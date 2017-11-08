@@ -4,7 +4,7 @@ description: Learn how to pin a Power BI dashboard to the Windows 10 Start scree
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

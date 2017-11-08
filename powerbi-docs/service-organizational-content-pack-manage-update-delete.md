@@ -4,7 +4,7 @@ description: Read about managing, updating, and deleting organizational content 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

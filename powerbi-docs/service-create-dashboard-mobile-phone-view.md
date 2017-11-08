@@ -4,7 +4,7 @@ description: Learn how to create a customized view of a dashboard in the Power B
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Learn how you can publish your custom visual to the Office store fo
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

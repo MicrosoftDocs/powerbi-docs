@@ -4,7 +4,7 @@ description: In Power BI you can collaborate on and share dashboards, reports, a
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

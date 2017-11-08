@@ -4,7 +4,7 @@ description: How to configure row-level security for imported datasets, and Dire
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

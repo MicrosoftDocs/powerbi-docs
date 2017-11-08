@@ -4,7 +4,7 @@ description: Custom visuals allow you to meet your users' needs and match your a
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

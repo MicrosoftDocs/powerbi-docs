@@ -4,7 +4,7 @@ description: 'Using ArcGis map in reading view '
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: power bi, service, desktop, mobile

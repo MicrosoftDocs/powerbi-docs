@@ -4,7 +4,7 @@ description: Template Content Pack Authoring
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

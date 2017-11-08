@@ -4,7 +4,7 @@ description: Learn how to migrate your exising SQL Server Reporting Services ins
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

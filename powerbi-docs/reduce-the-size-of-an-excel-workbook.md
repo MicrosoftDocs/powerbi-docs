@@ -4,7 +4,7 @@ description: Reduce the size of an Excel workbook to view it in Power BI
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

@@ -4,7 +4,7 @@ description: Solutions to common issues for Analyze in Excel
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

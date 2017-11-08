@@ -4,7 +4,7 @@ description: Learn how to register an application within Azure Active Directory 
 services: powerbi
 documentationcenter: ''
 author: guyinacube
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

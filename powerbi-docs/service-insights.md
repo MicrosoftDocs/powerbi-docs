@@ -4,7 +4,7 @@ description: Documentation for running and working with Quick Insights with Powe
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

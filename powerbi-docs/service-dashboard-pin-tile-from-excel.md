@@ -4,7 +4,7 @@ description: Pin a tile to a Power BI dashboard from Excel on OneDrive for Busin
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

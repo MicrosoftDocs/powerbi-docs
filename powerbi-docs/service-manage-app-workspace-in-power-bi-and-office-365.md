@@ -4,7 +4,7 @@ description: App workspaces in Power BI are a collaborative experience built on 
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
-manager: erikre
+manager: kfile
 backup: ajayan
 editor: ''
 tags: ''

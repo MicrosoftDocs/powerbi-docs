@@ -4,7 +4,7 @@ description: Refresh a dataset created from a comma separated value (.csv) file 
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''

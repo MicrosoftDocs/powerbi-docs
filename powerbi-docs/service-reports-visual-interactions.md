@@ -4,7 +4,7 @@ description: Documentation for how to set Visual interactions in a Microsoft Pow
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: erikre
+manager: kfile
 backup: ''
 editor: ''
 tags: ''
