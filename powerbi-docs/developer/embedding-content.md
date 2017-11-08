@@ -146,7 +146,7 @@ Global Admins, or Power BI service administrators, can turn the ability to use t
 
 ## Next steps
 [Embedding with Power BI](embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](../service-premium.md)  
 [How to purchase Power BI Premium](../service-admin-premium-purchase.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  

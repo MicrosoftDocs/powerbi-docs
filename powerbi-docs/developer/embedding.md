@@ -59,11 +59,11 @@ When you are ready to move to production, your app workspace must be assigned to
 
 For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](embedding-content.md).
 
-If you were using the Power BI Workspace Collections service within Azure, see [Migrate content from the Power BI Workspace Collections Azure service](../powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
+If you were using the Power BI Workspace Collections service within Azure, see [Migrate content from the Power BI Workspace Collections Azure service](migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
 ## Next steps
 [How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](../service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  

@@ -253,11 +253,11 @@ You can then update the connection string for the dataset within the Power BI se
 ## Embedding
 Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.
 
-For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md).
+For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md).
 
 ## Next steps
 [Embedding with Power BI](developer/embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  

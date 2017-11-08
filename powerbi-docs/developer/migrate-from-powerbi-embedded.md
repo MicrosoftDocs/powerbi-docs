@@ -34,7 +34,7 @@ The current Power BI Embedded service will continue to be available for a limite
 > 
 > 
 
-![](media/powerbi-developer-migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 ## Prepare for the migration
 There are a few things you need to do to prepare for migrating from Power BI Embedded Azure service over to the Power BI service. You will need a tenant available, along with a user that has a Power BI Pro license.
@@ -47,7 +47,7 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
    * Use a separate tenant for your application?
    * Use a separate tenant for each customer?
      
-     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](developer/create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 2. Create a user within this new tenant that will act as your application "master" account. That account needs to sign up for Power BI and needs to have a Power BI Pro license assigned to it.
 
 ## Accounts within Azure AD
@@ -77,7 +77,7 @@ The following accounts will need to exist within your tenant.
 You will need to register an application within Azure AD and grant certain permissions.
 
 ### Register an application
-You will need to register your application with Azure AD in order to make REST API calls. This includes going to the Azure portal to apply additional configuration in addition to the Power BI app registration page. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
+You will need to register your application with Azure AD in order to make REST API calls. This includes going to the Azure portal to apply additional configuration in addition to the Power BI app registration page. For more information, see [Register an Azure AD app to embed Power BI content](../powerbi-developer-register-app.md).
 
 You should register the application using the application **master** account.
 
@@ -99,14 +99,14 @@ You will need a user that has a Pro license in order to create an app workspace 
 ## Content migration
 Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
 
-A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md).
+A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md).
 
 Content migration relies mainly on two APIs.
 
 1. Download PBIX - this API can download PBIX files which were uploaded to Power BI after October 2016.
 2. Import PBIX - this API uploads any PBIX to Power BI.
 
-For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](developer/migrate-code-snippets.md).
+For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](migrate-code-snippets.md).
 
 ### Report types
 There are several types of reports, each requiring a somewhat different migration flow.
@@ -173,12 +173,12 @@ When you are ready to move to production, you will need to do the following.
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 * Purchase a capacity that fits your needs. You can use the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
   
-  > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+  > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](../service-admin-premium-purchase.md).
   > 
   > 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
   
-    ![](media/powerbi-developer-migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
 
 ## After migration
@@ -188,11 +188,11 @@ You should do some cleanup within Azure.
 * Delete any Workspace Collections that exist within Azure.
 
 ## Next steps
-[Embedding with Power BI](developer/embedding.md)  
-[Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
-[Code snippets for migrating content from Power BI Embedded](developer/migrate-code-snippets.md)  
-[How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  
-[Power BI Premium - what is it?](service-premium.md)  
+[Embedding with Power BI](embedding.md)  
+[Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md)  
+[Code snippets for migrating content from Power BI Embedded](migrate-code-snippets.md)  
+[How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
+[Power BI Premium - what is it?](../service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

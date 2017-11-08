@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # Code snippets for migrating content from Power BI Embedded
-Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md#content-migration).
+Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md).
 
@@ -229,7 +229,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 ## Next steps
 [Power BI Embedded migration tool](../powerbi-developer-migrate-tool.md)  
 [Embedding with Power BI](embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
 [How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
 [Power BI Premium - what is it?](../service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  

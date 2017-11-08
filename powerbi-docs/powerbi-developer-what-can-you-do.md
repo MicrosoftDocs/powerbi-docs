@@ -42,7 +42,7 @@ For more information, see [Push data into a dashboard](powerbi-developer-walkthr
 
 ## Next steps
 [Embedding with Power BI](developer/embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
