@@ -23,16 +23,16 @@ ms.author: davidi
 # Use a relative date slicer and filter in Power BI Desktop
 With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last thirty days (or month, or calendar months, and so on). And when you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_01.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_01.png)
 
 ## Using the relative date range slicer
 You can use the relative date slicer just like any other slicer. Simply create a **slicer** visual for your report, and then select a date value for the **Field** value. In the following image, the *OrderDate* field is selected.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_02.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_02.png)
 
 Select the carat in the upper-right corner of the **relative date slicer** and a menu appears.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_03.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_03.png)
 
 For the relative date slicer, select *Relative*.
 
@@ -44,7 +44,7 @@ You then can select the settings. For the first drop-down in the *relative date 
 
 These selections are shown in the following image.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_04.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_04.png)
 
 The next (middle) setting in the *relative date slicer* allows you to type in a number, to define the relative date range.
 
@@ -60,7 +60,7 @@ The third setting allows you to select the date measurement, and you can select 
 
 These selections are shown in the following image.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_05.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_05.png)
 
 If you select *Months* from that list, and input 2 in the middle setting. The following would happen: if today is July 20th, the data included in visuals constrained by the slicer would show data for the previous two months, starting on May 20th and going through July 20th (today's date).
 
@@ -69,15 +69,15 @@ In comparison, if you selected *Months (Calendar)*, the visuals constrained woul
 ## Using the relative date range filter
 You can also create a relative date range filter for your report page, or your entire report. To do so, simply drag a date field into the **Page level filters** or the **Report level filters** areas in the **Field** pane, as shown in the following image.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_06.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_06.png)
 
 Once there, you can modify the relative date range in similar fashion to how the **relative date slicer** is customized. Select **Relative date filtering** from the **Filter Type** drop down.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_07.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_07.png)
 
 Once **Relative date filtering** is selected, you see three sections to modify, including a middle numeric box, just like the slicer.
 
-![](media/powerbi-desktop-slicer-filter-date-range/relative-date-range-slicer-filter_08.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_08.png)
 
 And that's all there is to using these relative date constraints in your reports.
 
