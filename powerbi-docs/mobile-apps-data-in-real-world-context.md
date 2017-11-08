@@ -31,7 +31,7 @@ Create a QR code for a tile in a dashboard, and put the QR code anywhere you wan
 More about:
 
 * [Creating a QR code for a tile in Power BI](service-create-qr-code-for-tile.md)
-* [Scanning a Power BI QR code from your mobile device](powerbi-mobile-qr-code-for-tile.md)
+* [Scanning a Power BI QR code from your mobile device](mobile-apps-qr-code.md)
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones are coming soon), they see the report you've associated with that QR code. 

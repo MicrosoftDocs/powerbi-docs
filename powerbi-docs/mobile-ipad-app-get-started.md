@@ -121,7 +121,7 @@ Here are some other things you can do in the iPad app with dashboards and report
 * View [your apps](service-install-use-apps.md).
 * View your [Power BI dashboards](mobile-apps-view-dashboard.md).
 * [Ask questions of your data](mobile-apps-ios-qna.md) in your own words with Q&A
-* [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md)  to open a related dashboard tile or report.
+* [Scan a Power BI QR code](mobile-apps-qr-code.md)  to open a related dashboard tile or report.
 * [Set data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to get notifications when your data changes.
 * View [notifications about updates to your Power BI account](mobile-apps-notification-center.md), such as dashboards that colleagues share with you.
   
