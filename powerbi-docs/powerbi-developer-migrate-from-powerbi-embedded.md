@@ -191,7 +191,7 @@ You should do some cleanup within Azure.
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
 [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
-[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
+[How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  

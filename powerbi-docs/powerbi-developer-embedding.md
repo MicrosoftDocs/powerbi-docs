@@ -57,12 +57,12 @@ To embed dashboards, reports and tiles, you would use the same APIs that you wou
 
 When you are ready to move to production, your app workspace must be assigned to a capacity. Power BI Embedded, within Microsoft Azure, offers capacity to use with your applications.
 
-For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md).
+For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md).
 
 If you were using the Power BI Workspace Collections service within Azure, see [Migrate content from the Power BI Workspace Collections Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
 ## Next steps
-[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
+[How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  

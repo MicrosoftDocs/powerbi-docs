@@ -37,9 +37,9 @@ There are a few steps you have to do with your application to make this possible
 ## Step 1: Setup your embedded analytics development environment
 Before you start embedding dashboards and reports into your application, you need to make sure your environment is setup to allow for embedding. As part of the setup, you will need to do the following.
 
-* [Make sure you have an Azure Active Directory tenant](powerbi-developer-embedding-content.md#azureadtenant)
-* [Create your Power BI Pro account](powerbi-developer-embedding-content.md#proaccount)
-* [Register your Azure Active Directory application and permissions](powerbi-developer-embedding-content.md#appreg)
+* [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
+* [Create your Power BI Pro account](embedding-content.md#proaccount)
+* [Register your Azure Active Directory application and permissions](embedding-content.md#appreg)
 
 > [!NOTE]
 > Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
@@ -55,7 +55,7 @@ You will need to determine what tenant setup to use if you are embedding for you
 * Use a separate tenant for your application?
 * Use a separate tenant for each customer?
 
-If you do not want to use an existing tenant, you can decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](developer/create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+If you do not want to use an existing tenant, you can decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
 ### <a name="proaccount"></a>Create a Power BI Pro user account
 You only need a single Power BI Pro account to embed content. However, you may want to have a few different users that have specific access to items. Here is a look at possible users to consider within your tenant.
@@ -74,10 +74,10 @@ The master account is the account your application will use when embedding conte
 The master account is just a regular user with a Power BI Pro license that you use with your application. The account must be an admin of the app workspace that is being used for embedding.
 
 ### <a name="appreg"></a> App registration and permissions
-You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
+You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](../powerbi-developer-register-app.md).
 
 ### Create app workspaces
-If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](service-create-distribute-apps.md#create-an-app-workspace).
+If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](../service-create-distribute-apps.md#create-an-app-workspace).
 
 The *master* account, that was mentioned above, must be an admin of the app workspace.
 
@@ -85,19 +85,19 @@ The *master* account, that was mentioned above, must be an admin of the app work
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
 ## Step 2: Embed your content
-Within your application, you will need to authenticate with Power BI. If you are embedding content for your customers, you will store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
+Within your application, you will need to authenticate with Power BI. If you are embedding content for your customers, you will store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](../powerbi-developer-get-azuread-access-token.md).
 
 Once authenticated, within your application, use the Power BI REST APIs and JavaScript APIs to embed dashboards and reports into your application. 
 
 For **embedding for your organization**, see the following walkthroughs:
 
-* [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
-* [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-* [Integrate a report into an app](powerbi-developer-integrate-report.md)
+* [Integrate a dashboard into an app](../powerbi-developer-integrate-dashboard.md)
+* [Integrate a tile into an app](../powerbi-developer-integrate-tile.md)
+* [Integrate a report into an app](../powerbi-developer-integrate-report.md)
 
 For **embeding with your customers**, which is typical for ISVs, see the following:
 
-* [Integrate a dashboard, tile, or report into your application](developer/embed-sample-for-customers.md)
+* [Integrate a dashboard, tile, or report into your application](embed-sample-for-customers.md)
 
 When embedding for your customers, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
@@ -117,7 +117,7 @@ Free users can consume content that is embedded from an app workspace (group), i
 | P3 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
 > [!NOTE]
-> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](../service-admin-premium-purchase.md).
 > 
 > 
 
@@ -138,17 +138,17 @@ If you are embedding for your customers, you will want to do the following.
 
 * Edit the app workspace and assign it to a capacity under advanced.
   
-    ![Assign app workspace to capacity](media/powerbi-developer-embedding-content/powerbi-embedded-premium-capacity.png)
+    ![Assign app workspace to capacity](media/embedding-content/powerbi-embedded-premium-capacity.png)
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
 ## Admin settings
-Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](service-admin-portal.md).
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](../service-admin-portal.md).
 
 ## Next steps
-[Embedding with Power BI](powerbi-developer-embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
-[Power BI Premium - what is it?](service-premium.md)  
-[How to purchase Power BI Premium](service-admin-premium-purchase.md)  
+[Embedding with Power BI](../powerbi-developer-embedding.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md)  
+[Power BI Premium - what is it?](../service-premium.md)  
+[How to purchase Power BI Premium](../service-admin-premium-purchase.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

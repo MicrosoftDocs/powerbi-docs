@@ -88,7 +88,7 @@ Now that we have a directory, let's create at least two users. One that will be 
    > 
 
 ## Next steps
-Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI, and/or you can move forward to embed Power BI dashboards and reports in your application. For more information on how to embed items, see [How to embed your Power BI dashboards, reports and tiles](../powerbi-developer-embedding-content.md).
+Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI, and/or you can move forward to embed Power BI dashboards and reports in your application. For more information on how to embed items, see [How to embed your Power BI dashboards, reports and tiles](embedding-content.md).
 
 [What is an Azure AD directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
 [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
