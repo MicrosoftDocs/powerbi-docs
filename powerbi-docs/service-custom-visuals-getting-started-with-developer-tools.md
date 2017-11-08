@@ -345,7 +345,7 @@ Learn more about [Less](http://lesscss.org/).
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
 ## Submit your visual to the Office store
-You can to be included in the Office store. For more information on this process, see [Publish custom visuals to the Office store](powerbi-developer-office-store.md).
+You can to be included in the Office store. For more information on this process, see [Publish custom visuals to the Office store](developer/office-store.md).
 
 ## Troubleshooting
 **Pbiviz command not found (or similar errors)**
@@ -378,7 +378,7 @@ For more information, see [Running your visual](#running-your-visual) or [Server
 ## Next steps
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Publish custom visuals to the Office store](developer/office-store.md)  
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [Less CSS](http://lesscss.org/)  

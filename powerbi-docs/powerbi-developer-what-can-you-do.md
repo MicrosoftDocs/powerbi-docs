@@ -31,7 +31,7 @@ The Power BI service and Power BI Embedded in Azure are coming together to offer
 ## Custom visuals
 Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript which is a superset of JavaScript that supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convinence, we use the Less pre-compiler which supports some advanced features such as nesting, variables, mixins, conditions, loops, etc. If you don't want to use any of those features, you can just write plain css in the less file.
 
-For more information about how to develop and publish a custom visual, see [Publish custom visuals to the Office store](powerbi-developer-office-store.md).
+For more information about how to develop and publish a custom visual, see [Publish custom visuals to the Office store](developer/office-store.md).
 
 ![](media/powerbi-developer-what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -45,7 +45,7 @@ For more information, see [Push data into a dashboard](powerbi-developer-walkthr
 [How to migrate Power BI Embedded workspace collection content to Power BI](developer/migrate-from-powerbi-embedded.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
-[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Publish custom visuals to the Office store](developer/office-store.md)  
 [Power BI Visuals Git repo](https://github.com/Microsoft/PowerBI-visuals)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI API on Apiary](http://docs.powerbi.apiary.io/#)  

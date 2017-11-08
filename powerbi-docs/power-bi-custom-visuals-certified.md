@@ -106,6 +106,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Use custom visualizations in Power BI Desktop](power-bi-custom-visuals-use.md)  
-[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Publish custom visuals to the Office store](developer/office-store.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

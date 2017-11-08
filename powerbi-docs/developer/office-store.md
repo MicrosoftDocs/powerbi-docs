@@ -23,9 +23,9 @@ ms.author: asaxton
 # Publish custom visuals to the Office store
 Learn how you can publish your custom visual to the Office store for others to discover and use.
 
-Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md).
+Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/powerbi-developer-office-store/powerbi-custom-visual-store.png)
+![](media/office-store/powerbi-custom-visual-store.png)
 
 What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
@@ -70,14 +70,14 @@ Follow the below steps to complete the submission.
 
 1. Select **Add a new app**.
    
-    ![](media/powerbi-developer-office-store/powerbi-custom-visual-add-an-app.png)
+    ![](media/office-store/powerbi-custom-visual-add-an-app.png)
 2. Select **Power BI custom visual** and then **Next**.
 3. Select the **+** under **App package** and select the app package XML file that you received from the Power BI team from the open file dialog.
    
-    ![](media/powerbi-developer-office-store/powerbi-custom-visual-apppackage.png)
+    ![](media/office-store/powerbi-custom-visual-apppackage.png)
 4. You should receive an approval that this is a valid Power BI app package.
    
-    ![](media/powerbi-developer-office-store/powerbi-custom-visual-manifest-approved.png)
+    ![](media/office-store/powerbi-custom-visual-manifest-approved.png)
 5. Fill out the **General info** details.
    
    * *Submission title:* How your submission will be named in the developer center
@@ -89,7 +89,7 @@ Follow the below steps to complete the submission.
    * *Make this add-in available in the Office add-in catalog on iPad:* leave unchecked
 6. Upload your visual's logo by selecting the **+** under **App logo**. Then select the icon file in the open file dialog. The file must be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height) and no larger than 512kb in size.
    
-    ![](media/powerbi-developer-office-store/powerbi-custom-visual-app-logo.png)
+    ![](media/office-store/powerbi-custom-visual-app-logo.png)
 7. Fill out the **Support documents** details.
    
    * Support document link
@@ -101,7 +101,7 @@ Follow the below steps to complete the submission.
 8. Select **Next** to proceed to the **Details** page.
 9. Select **Language** and pick a language from the list.
    
-    ![](media/powerbi-developer-office-store/powerbi-custom-visual-language.png)
+    ![](media/office-store/powerbi-custom-visual-language.png)
 10. Fill out the "Description" details.
     
     * *App name (for this language):* Enter the title of your app as it should appear in the storefront.
@@ -126,14 +126,14 @@ You can review the [validation policies](https://dev.office.com/officestore/docs
 After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
 
 ## Certify your visual
-Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](power-bi-custom-visuals-certified.md).
+Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md).
 
 ## Next steps
-[Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md)  
-[Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
-[Visualizations in Power BI](power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Getting a custom visual *certified*](power-bi-custom-visuals-certified.md)
+[Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Download and use custom visuals from the Office store](../service-custom-visuals-office-store.md)  
+[Visualizations in Power BI](../power-bi-report-visualizations.md)  
+[Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
+[Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
