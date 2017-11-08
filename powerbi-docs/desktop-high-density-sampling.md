@@ -91,5 +91,5 @@ The new algorithm for high density line sampling is an important improvement to 
 ## More information
 For information about high density sampling in scatter charts, see the following article.
 
-* [High Density Sampling in Power BI scatter charts](powerbi-desktop-high-density-scatter-charts.md)
+* [High Density Sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
 
