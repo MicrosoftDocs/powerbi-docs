@@ -30,7 +30,7 @@ This handbook will help you understand concepts on planning, deploying and manag
 ## Installing and migration
 You will need to install Power BI Report Server to start using it. We have information that will allow you to handle this task.
 
-Before you start to install, upgrade or migrate to Power BI Report Server, take a look at the [system requirements](reportserver-system-requirements.md) for the report server.
+Before you start to install, upgrade or migrate to Power BI Report Server, take a look at the [system requirements](system-requirements.md) for the report server.
 
 ### Installing
 If you are deploying a new Power BI Report Server, you use the following documents to help you. A quickstart is available to jump right in. Or, you can look at the install document for full details.

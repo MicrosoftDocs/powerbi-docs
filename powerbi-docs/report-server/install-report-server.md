@@ -32,7 +32,7 @@ To download Power BI Report Server, go to [On-premises reporting with Power BI R
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Before you begin
-Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](reportserver-system-requirements.md).
+Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
 
 ### Power BI Report Server product key
 #### Power BI Premium
