@@ -24,7 +24,7 @@ ms.author: davidi
 
 ## November 2017 Update (2.52.4921.202)
 
-You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](powerbi-desktop-get-the-desktop.md) for more information. 
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
 This month there's a whole harvest worth of  updates to **Power BI Desktop**. 
 
@@ -67,7 +67,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
@@ -87,4 +87,4 @@ Like learning about Power BI through videos and other engaging content? Check ou
 
 ## Previous months' updates
 
-Looking for previous months' updates? You can find them in the [Power BI Desktop Monthly Updates archive](powerbi-desktop-latest-update-archive.md) article.
+Looking for previous months' updates? You can find them in the [Power BI Desktop Monthly Updates archive](desktop-latest-update-archive.md) article.
