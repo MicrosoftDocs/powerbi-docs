@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Power BI Data Source Prerequisites
-For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data Sources](powerbi-desktop-data-sources.md). The following table describes these requirements.
+For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data Sources](desktop-data-sources.md). The following table describes these requirements.
 
 | Data Source | Provider | Minimum provider version | Minimum data source version | Supported data source objects | Download link |
 | --- | --- | --- | --- | --- | --- |

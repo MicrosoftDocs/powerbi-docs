@@ -50,7 +50,7 @@ To see connecting to a Web page in more depth and action, take a look at the [Po
 ## More Information
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+* [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)   

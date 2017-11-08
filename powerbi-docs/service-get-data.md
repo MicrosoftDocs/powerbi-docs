@@ -69,7 +69,7 @@ In other cases, it might be necessary to query and load the data you want into a
 
 You’re probably thinking “But that logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?” Connection information from the Power BI Desktop or Excel file is imported into the dataset along with the data. If you setup scheduled refresh or do a manual refresh on the dataset, Power BI will use the connection information from the dataset, along with a couple other settings, to connect directly to the database, query for updates, and load those updates into the dataset. A Power BI Gateway will likely be required to secure any data transfer between your on-premises server and Power BI. Any visualizations in reports and dashboards are refreshed automatically.
 
-You see, just because you cannot connect to your data source right from the Power BI service doesn’t mean you can’t get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](powerbi-desktop-data-sources.md) to learn more.
+You see, just because you cannot connect to your data source right from the Power BI service doesn’t mean you can’t get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](desktop-data-sources.md) to learn more.
 
 ## Some more details
 You’ll see the terms dataset and data source used a lot in Power BI. They’re often use synonymously, but they really are two different things, albeit related.
