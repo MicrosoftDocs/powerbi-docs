@@ -110,7 +110,7 @@ Add this code into Program.cs.
     #endregion
     ```
 
-The next step shows you how to [get a dataset to add rows into a Power BI table](../powerbi-developer-walkthrough-push-data-get-datasets.md).
+The next step shows you how to [get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md).
 
 Below is the [complete code listing](#code).
 
@@ -227,10 +227,10 @@ Below is the [complete code listing](#code).
     }
 
 
-[Next Step >](../powerbi-developer-walkthrough-push-data-get-datasets.md)
+[Next Step >](walkthrough-push-data-get-datasets.md)
 
 ## See also
-[Get a dataset to add rows into a Power BI table](../powerbi-developer-walkthrough-push-data-get-datasets.md)  
+[Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
 [Get an authentication access token](../powerbi-developer-walkthrough-push-data-get-token.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Push data into a Power BI Dashboard](../powerbi-developer-walkthrough-push-data.md)  
