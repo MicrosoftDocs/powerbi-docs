@@ -39,7 +39,7 @@ Download the [Power BI app for iOS](http://go.microsoft.com/fwlink/?LinkId=52206
 ## Power BI mobile app for iPad
 ![iPad logo](media/powerbi-mobile-ipad-iphone-apps/ipad-logo-40-px.png)
 
-On your **iPad**, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [set data alerts in the Power BI mobile app](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to notify you when data in a dashboard changes beyond limits you set. If you have SQL Server Reporting Services, you can you can view your [KPIs and mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPad. Plus you can [filter a report by your geographic location](powerbi-mobile-geofiltering.md).  
+On your **iPad**, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [set data alerts in the Power BI mobile app](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to notify you when data in a dashboard changes beyond limits you set. If you have SQL Server Reporting Services, you can you can view your [KPIs and mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPad. Plus you can [filter a report by your geographic location](mobile-apps-geographic-filtering.md).  
 
 Download the [Power BI app for iOS](http://go.microsoft.com/fwlink/?LinkId=522062) on an iPad, and [get started](powerbi-mobile-ipad-app-get-started.md).
 

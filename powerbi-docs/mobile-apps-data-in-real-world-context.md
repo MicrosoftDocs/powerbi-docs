@@ -51,7 +51,7 @@ More about:
 ## Filter by location
 Categorize geographical data in a report in Power BI Desktop. Then your colleagues view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where they are.
 
-More about [filtering by location](powerbi-mobile-geofiltering.md).
+More about [filtering by location](mobile-apps-geographic-filtering.md).
 
 ## Next steps
 * [Create a QR code for a tile in Power BI](service-create-qr-code-for-tile.md)
