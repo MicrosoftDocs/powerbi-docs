@@ -899,7 +899,7 @@ December is a month for giving, and the Power BI team is following suit with mor
   * Ability to zoom in CTRL+(mouse selection range)
 
 ### Data Connectivity:
-* [SSAS Multidimensional support - hierarchies support](powerbi-desktop-ssas-multidimensional.md)
+* [SSAS Multidimensional support - hierarchies support](desktop-ssas-multidimensional.md)
 * Stripe Connector
 * Smartsheet Connector
 * **Enter Data**: paste or enter data to create a table
@@ -941,7 +941,7 @@ Another month, another big collection of new features and improvements for Power
 * Basic Automatic Date Features
 
 ### Data Connectivity:
-* [SSAS Multidimensional support](powerbi-desktop-ssas-multidimensional.md)
+* [SSAS Multidimensional support](desktop-ssas-multidimensional.md)
 * [SAP Hana](desktop-sap-hana.md)
 * [R Script](desktop-r-scripts.md)
 * DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse

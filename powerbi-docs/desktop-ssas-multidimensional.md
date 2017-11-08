@@ -25,7 +25,7 @@ With Power BI Desktop, you can access **SSAS Multidimensional models**, commonly
 
 To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL Server Analysis Services Database** as shown in the following image.
 
-![](media/powerbi-desktop-ssas-multidimensional/ssas-multidimensional-2.png)
+![](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
 **SSAS Multidimensional models** in Live connection mode are supported in both the Power BI service and in Power BI Desktop. You can also publish and upload reports that use **SSAS Multidimensional models** in Live mode to the Power BI service.
 
