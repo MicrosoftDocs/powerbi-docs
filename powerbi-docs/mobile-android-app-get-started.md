@@ -131,7 +131,7 @@ Here are some other things you can do in the Android phone app for Power BI with
 * View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
 ### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
-* [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for Android devices.
+* [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for Android devices.
 * Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](report-server/quickstart-create-powerbi-report.md) web portal
 

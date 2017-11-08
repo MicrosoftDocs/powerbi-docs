@@ -62,7 +62,7 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)]
    
    ![Sign in to Power BI](media/mobile-android-tablet-app-get-started/power-bi-connect-to-login.png)
    
-   Give your report server sign-in information to [view Power BI Report Server and Reporting Services reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Android tablet app for Power BI.
+   Give your report server sign-in information to [view Power BI Report Server and Reporting Services reports and KPIs](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Android tablet app for Power BI.
 
 ## Try the Power BI and Reporting Services samples
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
@@ -129,7 +129,7 @@ Here are some other things you can do in the Android tablet app for Power BI wit
 * View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
 ### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
-* [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for Android devices.
+* [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for Android devices.
 * Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](report-server/quickstart-create-powerbi-report.md) web portal
 

@@ -64,7 +64,7 @@ Read more about [how your Power BI content is organized](mobile-apps-find-conten
 
 #### iOS and Android devices
 **Power BI Report Server preview**
-Create and publish Power BI reports on premises. Then [view and interact with them in your iOS or Android](powerbi-mobile-iphone-kpis-mobile-reports.md) mobile device. 
+Create and publish Power BI reports on premises. Then [view and interact with them in your iOS or Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) mobile device. 
 
 ### April 2017
 Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)
@@ -192,7 +192,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
 * Experience [Power BI on your Android tablet](mobile-android-tablet-app-get-started.md)
-* Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-iphone-kpis-mobile-reports.md)
+* Explore [Reporting Services mobile reports and KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### Android devices
 **Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
@@ -345,7 +345,7 @@ See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/pow
 * Select more than one option in a report slicer.
 
 #### Android mobile app
-* **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md)** now on Android phones.
+* **SQL Server 2016 [Reporting Services mobile reports](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)** now on Android phones.
 * **Report gallery** Open your reports directly in the report gallery.​
 * **NTLM authentication** support for mobile reports in SQL Server 2016 Reporting Services.
 
@@ -371,7 +371,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
 #### Android mobile app
-**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md), and navigate between SSRS folders.​
+**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), and navigate between SSRS folders.​
 
 **View reports** Open reports from tiles on your dashboards.​
 
@@ -423,7 +423,7 @@ The Power BI team ended 2015 strong, with several major additions and updates.
 Now you can view your SQL Server mobile reports in the Power BI app on your iOS device, be it iPad or iPhone. Read more:
 
 * [SQL 16 SSRS on Power BI app for iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blog post
-* View [SQL Server mobile reports and KPIs in the iPhone and iPad apps](powerbi-mobile-iphone-kpis-mobile-reports.md) documentation
+* View [SQL Server mobile reports and KPIs in the iPhone and iPad apps](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) documentation
 
 #### Power BI app for Windows 10 phones
 The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).

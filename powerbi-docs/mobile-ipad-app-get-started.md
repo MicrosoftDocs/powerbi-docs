@@ -128,7 +128,7 @@ Here are some other things you can do in the iPad app with dashboards and report
   ![Notifications](media/mobile-ipad-app-get-started/power-bi-ipad-notifications.png)
 
 ### Reports and KPIs on the report server web portals
-* [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for iOS devices.
+* [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for iOS devices.
 * Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](report-server/quickstart-create-powerbi-report.md) web portal
 
