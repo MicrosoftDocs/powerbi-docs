@@ -30,19 +30,19 @@ The difference between them is when using Power BI Desktop, you can work with yo
 ## Let's take a look!
 When you first load data in Power BI Desktop, you’ll see **Report View** with a blank canvas.
 
-![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_ReportView.png)
+![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
 You can switch between **Report View**, **Data View**, and **Relationship View** by selecting the icons in the left hand navigation bar:
 
-![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_ChangeView.png)
+![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 Once you’ve added some data, you can add fields to a new visualization in the canvas.
 
-![](media/powerbi-desktop-report-view/PBID_ReportView_AddVis.gif)
+![](media/desktop-report-view/pbid_reportview_addvis.gif)
 
 To change the type of visualization, you can select it from the **Visualization** group in the ribbon or you can right click and select a different it from the **Change visualization type** icon.
 
-![](media/powerbi-desktop-report-view/PBID_ReportView_ChangeVis.gif)
+![](media/desktop-report-view/pbid_reportview_changevis.gif)
 
 > **Tip:** Be sure to experiment with different visualization types. It’s important your visualization convey information in your data clearly.
 > 
@@ -50,11 +50,11 @@ To change the type of visualization, you can select it from the **Visualization*
 
 A report will have at least one blank page to start. Pages appear in the navigator pane just to the left of the canvas. You can add all sorts of visualizations to a page, but it's important not to overdo it. Too many visualizations on a page will make it look busy and difficult to find the right information. You can add new pages to your report, just click **New Page** on the ribbon.
 
-![](media/powerbi-desktop-report-view/PBIDesignerReportViewNewPage.png)
+![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
 To delete a page, click the **X** on the page's tab at the bottom of the Report View.
 
-![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_DeletePage.png)
+![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > **Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to your  Power BI site.
 > 

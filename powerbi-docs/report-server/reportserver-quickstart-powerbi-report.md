@@ -69,7 +69,7 @@ For example, you could create a funnel chart of customers and group values by ye
 2. Drag the field to be counted to the **Values** well. If it's not a numeric field, Power BI Desktop automatically makes it a *Count of* the value.
 3. Drag the field to group on to the **Group** well.
 
-Read much more about [designing a Power BI report](../powerbi-desktop-report-view.md).
+Read much more about [designing a Power BI report](../desktop-report-view.md).
 
 ## Step 4: Save your report to the report server
 When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
