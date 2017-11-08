@@ -57,7 +57,7 @@ Jan then drags her new Projected Sales measure into the chart.
 Very quickly and with minimal effort, Jan now has a measure to calculate projected sales. She can  further analyze her projections by filtering on specific resellers or by adding other fields to her report.
 
 ## Learn more
-We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the [Tutorial: Create your own measures in Power BI Desktop](powerbi-desktop-tutorial-create-measures.md), where you can download a sample file and get step-by-step lessons on how to create more measures.  
+We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md), where you can download a sample file and get step-by-step lessons on how to create more measures.  
 
 To dive a little deeper into DAX, be sure to check out [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). The [Data Analysis Expressions Reference](https://msdn.microsoft.com/library/gg413422.aspx) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services, so there are a lot of other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX.
 

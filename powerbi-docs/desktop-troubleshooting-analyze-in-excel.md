@@ -92,7 +92,7 @@ When **Analyze in Excel** connects to an external OLAP model (which is how Excel
 
 To address this issue, you have a few options:
 
-1. Create [measures in your data model in **Power BI Desktop**](powerbi-desktop-tutorial-create-measures.md), then publish the data model to the **Power BI service** and access that published dataset from Excel.
+1. Create [measures in your data model in **Power BI Desktop**](desktop-tutorial-create-measures.md), then publish the data model to the **Power BI service** and access that published dataset from Excel.
 2. Create [measures in your data model from Excel PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
 3. If you imported data from an Excel workbook that had only tables (and no data model), then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42), then follow the steps in option 2, directly above, to create measures in your data model.
 
@@ -101,7 +101,7 @@ Once your measures are defined in the model in the Power BI service, you'll be a
 ## See Also
 [Analyze in Excel](service-analyze-in-excel.md)
 
-[Tutorial: Create your own measures in Power BI Desktop](powerbi-desktop-tutorial-create-measures.md)
+[Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md)
 
 [Measures in PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
 
