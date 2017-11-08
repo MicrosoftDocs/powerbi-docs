@@ -23,7 +23,7 @@ ms.author: davidi
 # Facebook connector for Power BI Desktop
 The Facebook connector in **Power BI Desktop** relies on the Facebook Graph API. As such, features and availability may vary over time.
 
-You can see a [tutorial about the Facebook Connector for Power BI Desktop](powerbi-desktop-tutorial-facebook-analytics.md).
+You can see a [tutorial about the Facebook Connector for Power BI Desktop](desktop-tutorial-facebook-analytics.md).
 
 Facebook expired v1.0 of its Graph API on April 30<sup>th</sup> 2015. Power BI uses the Graph API behind the scenes for the Facebook connector, allowing you to connect to your data and analyze it.
 
