@@ -55,7 +55,7 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 2. Publish the report to the Power BI service.
 
 ## View the report in Power BI mobile app
-1. Open the report in any of the [Power BI mobile apps](powerbi-power-bi-apps-for-mobile-devices.md).
+1. Open the report in any of the [Power BI mobile apps](mobile-apps-for-mobile-devices.md).
 2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
    
     ![Geo filter in mobile app](media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)

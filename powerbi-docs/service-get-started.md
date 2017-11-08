@@ -31,7 +31,7 @@ Power BI service has a free version and a Pro version. No matter which version y
 
 ![](media/service-get-started/power-bi-sign-up.png)
 
-If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md).
+If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi) or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is Introduction to Power BI service:
@@ -129,7 +129,7 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 * [Connect to another dataset](service-get-data.md).
 * [Share your dashboard](service-share-dashboards.md) with your colleagues.
 * Read [tips for designing dashboards](service-dashboards-design-tips.md).
-* View your dashboards with a [Power BI app on a mobile device](powerbi-power-bi-apps-for-mobile-devices.md)
+* View your dashboards with a [Power BI app on a mobile device](mobile-apps-for-mobile-devices.md)
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 

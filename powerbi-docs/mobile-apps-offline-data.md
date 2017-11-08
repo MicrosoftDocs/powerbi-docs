@@ -63,7 +63,7 @@ When you're offline with Power BI on your mobile device, you may encounter these
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
 
-* [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)
+* [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
 * [Get started with Power BI](service-get-started.md)
