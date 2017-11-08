@@ -52,7 +52,7 @@ The next step shows you how to [get an authentication access token](powerbi-deve
 [Sign up for Power BI](developer/create-an-azure-active-directory-tenant.md)  
 [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
 [Walkthrough: Push data into a dataset](powerbi-developer-walkthrough-push-data.md)  
-[Register an application](powerbi-developer-register-app.md)  
+[Register an application](developer/register-app.md)  
 [Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

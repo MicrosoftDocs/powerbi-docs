@@ -77,7 +77,7 @@ The following accounts will need to exist within your tenant.
 You will need to register an application within Azure AD and grant certain permissions.
 
 ### Register an application
-You will need to register your application with Azure AD in order to make REST API calls. This includes going to the Azure portal to apply additional configuration in addition to the Power BI app registration page. For more information, see [Register an Azure AD app to embed Power BI content](../powerbi-developer-register-app.md).
+You will need to register your application with Azure AD in order to make REST API calls. This includes going to the Azure portal to apply additional configuration in addition to the Power BI app registration page. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md).
 
 You should register the application using the application **master** account.
 
