@@ -32,7 +32,7 @@ To connect to a **Snowflake** computing warehouse select **Get Data** from the *
 
 ![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
 
-In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](powerbi-desktop-use-directquery.md).
+In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md).
 
 ![](media/desktop-connect-snowflake/connect_snowflake_3.png)
 

@@ -106,7 +106,7 @@ The link between your dataset and the data source within the gateway is based on
 This is the case for both DirectQuery and scheduled refresh.
 
 ### Using the data source with DirectQuery connections
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. [Learn more](powerbi-desktop-use-directquery.md)
+You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. [Learn more](desktop-use-directquery.md)
 
 After you publish, either from Power BI Desktop or **Get Data**, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
 

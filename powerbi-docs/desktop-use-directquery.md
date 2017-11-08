@@ -29,7 +29,7 @@ For a full listing of data sources that support **DirectQuery**, see [Data sourc
 ## How to Connect using DirectQuery
 When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect.  
 
-![](media/powerbi-dekstop-use-directquery/DirectQuery_2a.png)
+![](media/desktop-use-directquery/directquery_2a.png)
 
 The differences between selecting **Import** and **DirectQuery** are the following:
 
@@ -83,11 +83,11 @@ If the data source used does not need the **On-Premises Data Gateway** (**Azure 
 
 You can provide credentials by selecting the **Settings** gear icon in Power BI, then select **Settings**.
 
-![](media/powerbi-dekstop-use-directquery/DirectQuery_3.png)
+![](media/desktop-use-directquery/directquery_3.png)
 
 Power BI displays the **Settings** window. From there, select the **Datasets** tab and choose the dataset that uses **DirectQuery**, and select **Edit credentials**.
 
-![](media/powerbi-dekstop-use-directquery/DirectQuery_4.png)
+![](media/desktop-use-directquery/directquery_4.png)
 
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to such data sources results in an error.
 

@@ -42,7 +42,7 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 
 Once you make selections from the **Navigator** window, you can either **Load** or **Edit** the data.
 
-* If you choose to **Load** data, you'll prompted wither to use *Import* or *DirectQuery* mode to load the data. For more information, check out this [article that explains DirectQuery](powerbi-desktop-use-directquery.md).
+* If you choose to **Load** data, you'll prompted wither to use *Import* or *DirectQuery* mode to load the data. For more information, check out this [article that explains DirectQuery](desktop-use-directquery.md).
 * If you select to **Edit** the data, **Query Editor** appears where you can apply all sorts of transformations and filters to the data, many of which are applied to the underlying **Amazon Redshift** database itself (if supported).
 
 ## More Information
