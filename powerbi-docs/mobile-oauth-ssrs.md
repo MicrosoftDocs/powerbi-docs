@@ -23,7 +23,7 @@ ms.author: asaxton
 # Using OAuth to connect to Reporting Services
 Learn how to configure your environment to support OAuth authentication with the Power BI mobile app in order to connect to Reporting Services 2016 or later.
 
-![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 In the past, the Power BI mobile app only supported basic authentication, over HTTPS, to Reporting Services in order to display Mobile Reports or KPIs. Many organizations do not allow this type of configuration due to security concerns. With an update to the Power BI mobile app, you can now use OAuth to connect to Reporting Services. Windows Server 2016 provides some improvements to the Web Application Proxy role to allow this type of authentication.
 
@@ -79,10 +79,10 @@ You can create the application group with the following steps.
 
 1. Within the AD FS Management app, right click **Application Groups** and select **Add Application Group…**
    
-   ![](media/powerbi-mobile-oauth-ssrs/adfs-add-application-group.png)
+   ![](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 2. Within the Add Application Group Wizard, provide a **name** for the application group and select **Native application accessing a web API**.
    
-   ![](media/powerbi-mobile-oauth-ssrs/adfs-application-group-wizard1.png)
+   ![](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
 3. Select **Next**.
 4. Provide a **name** for the application you are adding. 
 5. While the **Client ID** will be auto generated for your, enter in *484d54fc-b481-4eee-9505-0258a1913020* for both iOS and Android.
@@ -97,7 +97,7 @@ You can create the application group with the following steps.
    **Android Apps only need the following:**  
    urn:ietf:wg:oauth:2.0:oob
    
-   ![](media/powerbi-mobile-oauth-ssrs/adfs-application-group-wizard2.png)
+   ![](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
 7. Select **Next**.
 8. Supply the URL for your Report Server. This is the external URL that will hit your Web Application Proxy. It should be in the following format.
    
@@ -108,11 +108,11 @@ You can create the application group with the following steps.
    
    *https://<url to report server>/reports*
    
-   ![](media/powerbi-mobile-oauth-ssrs/adfs-application-group-wizard3.png)
+   ![](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
 10. Choose the **Access Control Policy** that fits your organization’s needs.
     
-    ![](media/powerbi-mobile-oauth-ssrs/adfs-application-group-wizard4.png)
+    ![](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 11. Select **Next**.
 12. Select **Next**.
 13. Select **Next**.
@@ -120,7 +120,7 @@ You can create the application group with the following steps.
 
 When completed, you should see the properties of your application group look similar to the following.
 
-![](media/powerbi-mobile-oauth-ssrs/adfs-application-group.png)
+![](media/mobile-oauth-ssrs/adfs-application-group.png)
 
 ## Web Application Proxy (WAP) Configuration
 You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. This must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
@@ -138,12 +138,12 @@ To configure constrained delegation, you will want to do the following.
 4. Select the **Delegation** tab.
 5. Select **Trust this computer for delegation to specified services only** and then **Use any authentication protocol**.
    
-   ![](media/powerbi-mobile-oauth-ssrs/wap-contrained-delegation1.png)
+   ![](media/mobile-oauth-ssrs/wap-contrained-delegation1.png)
    
    This sets up constrained delegation for this WAP Server machine account. We then need to specify the services that this machine is allowed to delegate to.
 6. Select **Add…** under the services box.
    
-   ![](media/powerbi-mobile-oauth-ssrs/wap-contrained-delegation2.png)
+   ![](media/mobile-oauth-ssrs/wap-contrained-delegation2.png)
 7. Select **Users or Computers…**
 8. Enter the service account that you are using for Reporting Services. This is the account you added the SPN to within the Reporting Services configuration.
 9. Select the SPN for Reporting Services and then select **OK**.
@@ -153,10 +153,10 @@ To configure constrained delegation, you will want to do the following.
    > 
    > 
    
-   ![](media/powerbi-mobile-oauth-ssrs/wap-contrained-delegation3.png)
+   ![](media/mobile-oauth-ssrs/wap-contrained-delegation3.png)
 10. The result should look similar to the following when the **Expanded** checkbox is checked.
     
-    ![](media/powerbi-mobile-oauth-ssrs/wap-contrained-delegation4.png)
+    ![](media/mobile-oauth-ssrs/wap-contrained-delegation4.png)
 11. Select **OK**.
 
 ### Add WAP Application
@@ -180,7 +180,7 @@ After you add the WAP Application, you will need to set the BackendServerAuthent
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
-![](media/powerbi-mobile-oauth-ssrs/wap-application-id.png)
+![](media/mobile-oauth-ssrs/wap-application-id.png)
 
 Run the following command to set the BackendServerAuthenticationMode using the ID of the WAP Application.
 
@@ -188,20 +188,20 @@ Run the following command to set the BackendServerAuthenticationMode using the I
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![](media/powerbi-mobile-oauth-ssrs/wap-application-backendauth.png)
+![](media/mobile-oauth-ssrs/wap-application-backendauth.png)
 
 ## Connecting with the Power BI Mobile App
 Within the Power BI mobile app, you will want to connect to your Reporting Services instance. To do that, supply the **External URL** for your WAP Application.
 
-![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-app1.png)
+![](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 When you select **Connect**, you will be directed to your ADFS login page. Enter valid credentials for your domain.
 
-![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 After you select **Sign in**, you will see the elements from your Reporting Services server.
 
-![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 ## Multi-factor authentication
 You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure AD FS 2016 and Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
@@ -209,7 +209,7 @@ You can enable multi-factor authentication to enable additional security for you
 ## Troubleshooting
 **You receive the error Failed to login to SSRS server. Please verify server configuration.**
 
-![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-error.png)
+![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
 You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you will need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. This is an add-on from Telerik for Fiddler.
 
