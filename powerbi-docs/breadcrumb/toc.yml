@@ -3,15 +3,15 @@
   topicHref: /
   items:
   - name: Power BI
-    tocHref: /power-bi
-    topicHref: /power-bi
+    tocHref: /power-bi/
+    topicHref: /power-bi/
     items:
     - name: Developer
-      tocHref: /power-bi/developer
-      topicHref: /power-bi/developer
+      tocHref: /power-bi/developer/
+      topicHref: /power-bi/developer/
     - name: Guided Learning
-      tocHref: /power-bi/guided-learning
-      topicHref: /power-bi/guided-learning
+      tocHref: /power-bi/guided-learning/
+      topicHref: /power-bi/guided-learning/
     - name: Report Server
-      tocHref: /power-bi/report-server
-      topicHref: /power-bi/report-server
+      tocHref: /power-bi/report-server/
+      topicHref: /power-bi/report-server/
