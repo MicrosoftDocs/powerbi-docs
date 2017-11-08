@@ -1,13 +1,13 @@
 ---
 layout: HubPage
 hide_bc: true
-title: PowerBI Documentation
-description: PowerBI Documentation
+title: Power BI Documentation
+description: Power BI Documentation
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>PowerBI Documentation</h1>
-        <p style="font-size: 1.12rem;margin-bottom: 1rem;">PowerBI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use PowerBI.</p>
+        <h1>Power BI Documentation</h1>
+        <p style="font-size: 1.12rem;margin-bottom: 1rem;">Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use Power BI.</p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
