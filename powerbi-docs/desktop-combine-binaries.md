@@ -25,7 +25,7 @@ One powerful approach to importing data into **Power BI Desktop** is to combine 
 
 To start the process of combining binaries from the same folder, select **Get Data > File > Folder**.
 
-![](media/powerbi-desktop-combine-binaries/combine-binaries_1.png)
+![](media/desktop-combine-binaries/combine-binaries_1.png)
 
 ## Previous combine binaries behavior
 Prior to the November 2016 release of **Power BI Desktop**, you could combine certain file types with the **combine binaries** transform, but there were limitations:
@@ -38,21 +38,21 @@ Customers asked for more intuitive operation of the **combine binaries** operati
 ## Current combine binaries behavior
 **Power BI Desktop** now handles the **combine binaries** more effectively. You start by selecting **combine binaries**, either from the **Home** ribbon tab in **Query Editor**, or from the column itself.
 
-![](media/powerbi-desktop-combine-binaries/combine-binaries_2a.png)
+![](media/desktop-combine-binaries/combine-binaries_2a.png)
 
 The **combine binaries** transform now behaves as follows:
 
 * The **combine binaries** transform analyzes each input file, and determines the correct file format to use, such as *text* or *Excel workbook* or *JSON* file.
 * The transform allows you to select a specific object from the first file, for example, an *Excel workbook*, to extract.
   
-  ![](media/powerbi-desktop-combine-binaries/combine-binaries_3.png)
+  ![](media/desktop-combine-binaries/combine-binaries_3.png)
 * The **combine binaries** then automatically does the following:
   
   * Creates an example query that performs all the required extraction steps in a single file.
   * Creates a *function query* that parameterizes the file/binary input to the *exemplar query*. The exemplar query and the function query are linked, so that changes to the exemplar query are reflected in the function query.
   * Applies the *function query* to the original query with input binaries (for example, the *Folder* query) so it applies the function query for binary inputs on each row, then expands the resulting data extraction as top-level columns.
     
-    ![](media/powerbi-desktop-combine-binaries/combine-binaries_4.png)
+    ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
 With the new behavior of **combine binaries**, you can easily combine all binaries within a given folder as long as they have the same file type and structure (as in, the same columns).
 
