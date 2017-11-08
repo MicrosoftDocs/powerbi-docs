@@ -33,6 +33,6 @@ For more information, see [Power BI admin portal](service-admin-portal.md).
 ## See also
 [Get started with Power BI](service-get-started.md)
 
-[Getting started with Power BI Desktop](powerbi-desktop-getting-started.md)
+[Getting started with Power BI Desktop](desktop-getting-started.md)
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)

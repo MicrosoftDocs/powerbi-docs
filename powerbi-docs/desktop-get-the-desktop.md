@@ -101,7 +101,7 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 ## More information
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
-* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Getting Started with Power BI Desktop](desktop-getting-started.md)
 * [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)

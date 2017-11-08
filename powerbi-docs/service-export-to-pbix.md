@@ -73,7 +73,7 @@ Also, here are some additional articles that can help you learn to use **Power B
 
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
-* [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+* [Getting Started with Power BI Desktop](desktop-getting-started.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)   
 
