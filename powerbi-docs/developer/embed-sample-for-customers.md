@@ -23,12 +23,12 @@ ms.author: asaxton
 # Embed a Power BI dashboard, tile, or report into your application
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-![Embedded dashboard](media/powerbi-developer-embed-sample-app-owns-data/powerbi-embed-dashboard.png)
+![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](developer/create-an-azure-active-directory-tenant.md) for testing purposes.
+To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](../service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](../service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) for testing purposes.
 
 > [!NOTE]
-> Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](powerbi-developer-integrate-dashboard.md).
+> Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](../powerbi-developer-integrate-dashboard.md).
 > 
 > 
 
@@ -38,12 +38,12 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 This article shows the code used in the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) on GitHub. To follow along with this walkthrough, you can download the sample.
 
 ## Step 1 - register an app in Azure AD
-You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
+You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](../powerbi-developer-register-app.md).
 
 If you downloaded the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](../powerbi-developer-get-azuread-access-token.md).
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 

@@ -97,7 +97,7 @@ For **embedding for your organization**, see the following walkthroughs:
 
 For **embeding with your customers**, which is typical for ISVs, see the following:
 
-* [Integrate a dashboard, tile, or report into your application](powerbi-developer-embed-sample-app-owns-data.md)
+* [Integrate a dashboard, tile, or report into your application](developer/embed-sample-for-customers.md)
 
 When embedding for your customers, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
