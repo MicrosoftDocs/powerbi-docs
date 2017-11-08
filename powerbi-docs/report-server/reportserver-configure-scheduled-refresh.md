@@ -91,7 +91,7 @@ The web page must be refreshed to see the current status. The status will not ch
 ## Next steps
 To learn more about creating and modifying schedules, see [Create, modify, and delete schedules](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
-For information on how to troubleshoot scheduled refresh, see [Troubleshoot scheduled refresh in Power BI Report Server](reportserver-scheduled-refresh-troubleshoot.md).
+For information on how to troubleshoot scheduled refresh, see [Troubleshoot scheduled refresh in Power BI Report Server](scheduled-refresh-troubleshoot.md).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
