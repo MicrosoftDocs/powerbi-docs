@@ -63,7 +63,7 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
 7. When we select **OK**, **Query Editor** displays a warning about data privacy.
    
    ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. For the R scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](powerbi-desktop-privacy-levels.md).
+8. For the R scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
    
    ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_7.png)
    
