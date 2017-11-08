@@ -63,5 +63,5 @@ If your workbook contains a data model, you can run the workbook size optimizer 
 ## Related info
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
 
-[Use OneDrive for Business links in Power BI Desktop](powerbi-desktop-use-onedrive-business-links.md)
+[Use OneDrive for Business links in Power BI Desktop](desktop-use-onedrive-business-links.md)
 

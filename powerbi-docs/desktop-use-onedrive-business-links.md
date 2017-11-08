@@ -32,24 +32,24 @@ Getting an online link from **OneDrive for Business** does require a few specifi
    > 
    > 
    
-   ![](media/powerbi-desktop-use-onedrive-business-links/ODB-Links_02.png)
+   ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
 2. In **Excel**, select **File > Info** and select the link above the **Protect Workbook** button. Select **Copy link to clipboard**.
    
-   ![](media/powerbi-desktop-use-onedrive-business-links/ODB-Links_03.png)
+   ![](media/desktop-use-onedrive-business-links/odb-links_03.png)
 
 ## Use the link in Power BI Desktop
 In Power BI Desktop, you can use the link you just copied to the clipboard. Take the following steps:
 
 1. In Power BI Desktop, select **Get Data > Web**.
    
-   ![](media/powerbi-desktop-use-onedrive-business-links/ODB-Links_04.png)
+   ![](media/desktop-use-onedrive-business-links/odb-links_04.png)
 2. Paste the link into the **From Web** dialog (do **not** select OK yet).
    
-    ![](media/powerbi-desktop-use-onedrive-business-links/ODB-Links_05.png)
+    ![](media/desktop-use-onedrive-business-links/odb-links_05.png)
 3. Notice the *?web=1* string at the end of the link - you must *remove that portion of the Web URL string* **before** selecting **OK**, in order for **Power BI Desktop** to properly navigate to your file.
 4. If **Power BI Desktop** prompts you for credentials, choose either **Windows** (for on-premises SharePoint sites) or **Organizational Account** (for Office 365 or OneDrive for Business sites).
    
-   ![](media/powerbi-desktop-use-onedrive-business-links/ODB-Links_06.png)
+   ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
 
 A **Navigator** window appears, allowing you to select from the list of tables, sheets, and ranges found in the Excel workbook. From there, you can use the OneDrive for Business file just like any other Excel file, and create reports and use it in datasets like you would with any other data source.
 
