@@ -23,19 +23,19 @@ ms.author: davidi
 # Use ribbon charts in Power BI
 You can use **ribbon charts** in **Power BI** to visualize data, and quickly determine which category of data has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest rang (value) always displayed on top for each time period. Ribbon charts are available in **Power BI Desktop** starting with the September 2017 release, and in subsequent updates to the **Power BI service**.
 
-![](media/powerbi-desktop-ribbon-charts/ribbon-charts_01.png)
+![](media/desktop-ribbon-charts/ribbon-charts_01.png)
 
 ## Create a ribbon chart
 To create a ribbon chart, select **ribbon chart** from the **Visualizations** panel.
 
-![](media/powerbi-desktop-ribbon-charts/ribbon-charts_02.png)
+![](media/desktop-ribbon-charts/ribbon-charts_02.png)
 
 Ribbon charts connect a category of data over the visualized time continuum using ribbons, thereby enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
 ## Format a ribbon chart
 When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with additional formatting options that are specific to the ribbons.
 
-![](media/powerbi-desktop-ribbon-charts/ribbon-charts_03.png)
+![](media/desktop-ribbon-charts/ribbon-charts_03.png)
 
 These formatting options for ribbon charts let you adjust the following:
 
