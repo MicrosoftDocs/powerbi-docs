@@ -36,21 +36,21 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
 ## To connect to a Tabular model
 1. In Power BI Desktop, on the **Home** tab, click ﻿**Get Data**.
    
-   ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData.png)
+   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
 2. Click **SQL Server Analysis Services Database**, then click **Connect**.
    
-   ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS.png)
+   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as.png)
 3. Enter the Server name and select a connection mode. 
    
-   ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_server.png)
+   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_server.png)
 4. This step depends on the connection mode you selected:
 
 * If you’re connecting live, in Navigator, select a Tabular model or perspective.
   
-  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_Live.png)
+  ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
 * If you chose Select items and get data, in Navigator, select a Tabular model or perspective. You can further select only particular tables or columns to load. To shape your data before loading, click Edit to open Query Editor. When you’re ready, click Load to import the data into Power BI Desktop.
 
-![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_Select.png)
+![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## Frequently Asked Questions
 **Question:** Do I need an On-premises Data Gateway?
@@ -84,8 +84,8 @@ Once you create a Power BI Desktop file with an explore live connection, there m
 
 1. Select **Edit Queries** from the Ribbon.
    
-   ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_EditQuery.png)
+   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_editquery.png)
 2. Enter the new server name.
    
-   ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_Dialog.png)
+   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_dialog.png)
 
