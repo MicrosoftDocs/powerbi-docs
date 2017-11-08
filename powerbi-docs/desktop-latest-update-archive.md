@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Previous monthly updates to Power BI Desktop
-This article describes previous updates to **Power BI Desktop**. For the most current month's release, check out [**Power BI Desktop** latest updates](powerbi-desktop-latest-update.md).
+This article describes previous updates to **Power BI Desktop**. For the most current month's release, check out [**Power BI Desktop** latest updates](desktop-latest-update.md).
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 

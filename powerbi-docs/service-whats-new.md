@@ -23,7 +23,7 @@ ms.author: sirsu
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
-* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+* [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
 * [Power BI team blog](https://powerbi.microsoft.com/blog/)
 

@@ -114,7 +114,7 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 ## More Information
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What's New in Power BI Desktop](powerbi-desktop-latest-update.md)
+* [What's New in Power BI Desktop](desktop-latest-update.md)
 * [Download Power BI Desktop](desktop-get-the-desktop.md)
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 * [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
