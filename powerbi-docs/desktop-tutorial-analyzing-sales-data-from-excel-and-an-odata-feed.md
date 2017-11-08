@@ -29,7 +29,7 @@ In this tutorial, you import data from Excel (it includes product information) a
 
 Here's what the final report will look like:
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
 To follow the steps in this tutorial you need the Products workbook, which you can download**:**[ click](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[ to download](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[. ](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)
 
@@ -42,12 +42,12 @@ In this task, you import products from the Products.xlsx file into Power BI Desk
 1. Launch Power BI Desktop.
 2. From the Home ribbon, select **Get Data**. Excel is one of the **Most Common** data connections, so you can select it directly from the **Get Data** menu.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_1.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
 3. If you select the Get Data button directly, you can also select **FIle \> Excel** and select **Connect.**
 4. In the **Open File** dialog box, select the **Products.xlsx** file.
 5. In the **Navigator** pane, select the **Products** table and then select **Edit**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_2.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
 
 ### Step 2: Remove other columns to only display columns of interest
 In this step you remove all columns except **ProductID**, **ProductName**, **UnitsInStock**, and **QuantityPerUnit**. In Power BI Desktop, there are often a few ways to accomplish the same task. For example, many buttons in the ribbon can also be achieved by using the right-click menu on a column or a cell.
@@ -57,7 +57,7 @@ Power BI Desktop includes Query Editor, which is where you shape and transform y
 1. In Query Editor, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns (use **Ctrl+Click** to select more than one column, or **Shift+Click** to select columns that are beside each other).
 2. Select **Remove Columns** \> **Remove Other Columns** from the ribbon, or right-click on a column header and click **Remove Other Columns**.
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/AnlayzingSalesData_RemoveOtherColumns.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
 
 ### ﻿Step 3: Change the data type of the UnitsInStock column
 When Query Editor connects to data, it reviews each field and to determine the best data type. For the Excel workbook, products in stock will always be a whole number, so in this step you confirm the **UnitsInStock** column’s datatype is Whole Number.
@@ -66,7 +66,7 @@ When Query Editor connects to data, it reviews each field and to determine the b
 2. Select the **Data Type** drop-down button in the **Home** ribbon.
 3. If not already a Whole Number, select **Whole Number** for data type from the drop down (the **Data Type:** button also displays the data type for the current selection).
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/AnlayzingSalesData_WholeNumber.png)      
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_wholenumber.png)      
 
 ### Power BI Desktop steps created
 As you perform query activities in Query Editor, query steps are created and listed in the **Query Settings** pane, in the **Applied Steps** list. Each query step has a corresponding formula, also known as the "M" language. For more information about the “M” formula language, see [Learn about Power BI formulas](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
@@ -88,7 +88,7 @@ In this task, you'll bring in order data. This step represents connecting to a s
 4. Select **OK**.
 5. In the **Navigator** pane, select the **Orders** table, and then select **Edit**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/AnlayzingSalesData_ODataFeed.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
 
 **Note**   You can click a table name, without selecting the checkbox, to see a preview.
 
@@ -97,19 +97,19 @@ The **Orders** table contains a reference to a **Details** table, which contains
 
 In this step, you expand the **Order\_Details** table that is related to the **Orders** table, to combine the **ProductID**, **UnitPrice**, and **Quantity** columns from **Order\_Details** into the **Orders** table. This is a representation of the data in these tables:
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/OrderDetails.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orderdetails.png)
 
 The **Expand** operation combines columns from a related table into a subject table. When the query runs, rows from the related table (**Order\_Details**) are combined into rows from the subject table (**Orders**).
 
 After you expand the **Order\_Details** table, three new columns and additional rows are added to the **Orders** table, one for each row in the nested or related table.
 
 1. In the **Query View**, scroll to the **Order\_Details** column.
-2. In the **Order\_Details** column, select the expand icon (![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)).
+2. In the **Order\_Details** column, select the expand icon (![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)).
 3. In the **Expand** drop-down:
    1. Select **(Select All Columns)** to clear all columns.
    2. Select **ProductID**, **UnitPrice**, and **Quantity**.
    3. Click **OK**.
-      ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+      ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
 
 ### Step 3: Remove other columns to only display columns of interest
 In this step you remove all columns except **OrderDate, ShipCity**, **ShipCountry**, **Order\_Details.ProductID**, **Order\_Details.UnitPrice**, and **Order\_Details.Quantity** columns. In the previous task, you used **Remove Other Columns**. For this task, you remove selected columns.
@@ -127,25 +127,25 @@ Calculate the line total for each **Order\_Details** row:
 
 1. In the **Add Column** ribbon tab, click **Add** **Custom Column**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_4.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 2. In the **Add Custom Column** dialog box, in the **Custom Column Formula** textbox, enter **[Order\_Details.UnitPrice] \* [Order\_Details.Quantity]**.
 3. In the **New column name** textbox, enter **LineTotal**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 4. Click **OK**.
 
 ### Step 5: Set the datatype of the LineTotal field
 1. Right click the **LineTotal** column.
 2. Select **Change Type** and choose **Decimal Number.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
 ### Step 6: Rename and reorder columns in the query
 In this step you finish making the model easy to work with when creating reports, by renaming the final columns and changing their order.
 
 1. In **Query Editor**, drag the **LineTotal** column to the left, after **ShipCountry**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
 2. Remove the *Order\_Details.* prefix from the **Order\_Details.ProductID**, **Order\_Details.UnitPrice** and **Order\_Details.Quantity** columns, by double-clicking on each column header, and then deleting that text from the column name.
 
 ### Power BI Desktop steps created
@@ -168,28 +168,28 @@ In this task, you confirm that a relationship is established in Power BI Desktop
 ### Step 1: Confirm the relationship between Products and Total Sales
 1. First, we need to load the model that we created in Query Editor into Power BI Desktop. From the **Home** ribbon of Query Editor, select **Close & Load**.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_4.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 2. Power BI Desktop loads the data from the two queries.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)      
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)      
 3. Once the data is loaded, select the **Manage Relationships** button **Home** ribbon.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_5.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
 4. Select the **New…** button
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_6.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
 5. When we attempt to create the relationship, we see that one already exists! As shown in the **Create Relationship** dialog (by the shaded columns), the **ProductsID** fields in each query already have an established relationship.
    
-    ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
+    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
 6. Select **Cancel**, and then select **Relationship** view in Power BI Desktop.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_7.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
 7. We see the following, which visualizes the relationship between the queries.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_8.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 8. When you double-click the arrow on the line that connects the to queries, an **Edit Relationship** dialog appears.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/T_ExcelOData_9.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 9. No need to make any changes, so we'll just select **Cancel** to close the **Edit Relationship** dialog.
 
 ## Task 4: Build visuals using your data
@@ -200,22 +200,22 @@ In this task, you create a report based on the data previously loaded. You use t
 ### Step 1: Create charts showing Units in Stock by Product and Total Sales by Year
 Drag **UnitsInStock** from the Field pane (the Fields pane is along the right of the screen) onto a blank space on the canvas. A Table visualization is created. Next, drag ProductName to the Axis box, found in the bottom half of the Visualizations pane. Then we then select **Sort By \> UnitsInStock** using the skittles in the top right corer of the visualization.
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
 
 Drag **OrderDate** to the canvas beneath the first chart, then drag LineTotal (again, from the Fields pane) onto the visual, then select Line Chart. The following visualization is created.
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png)
 
  Next, drag **ShipCountry** to a space on the canvas in the top right. Because you selected a geographic field, a map was created automatically. Now drag **LineTotal** to the **Values** field; the circles on the map for each country are now relative in size to the **LineTotal** for orders shipped to that country.
 
-![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 ### Step 2: Interact with your report visuals to analyze further
 Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](power-bi-reports-filters-and-highlighting.md)
 
 1. Click on the light blue circle centered in **Canad****a.** Note how the other visuals are filtered to show Stock (**ShipCountry**) and Total Orders (**LineTotal**) just for Canada.
    
-   ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
 ## Complete Sales Analysis Report
 After you perform all these steps, you will have a Sales Report that combines data from Products.xlsx file and Northwind OData feed. The report shows visuals that help analyze sales information from different countries. You can download a completed Power BI Desktop file for this tutorial [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Sales_Data.pbix).
