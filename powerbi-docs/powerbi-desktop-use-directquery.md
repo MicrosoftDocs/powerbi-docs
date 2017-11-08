@@ -24,7 +24,7 @@ ms.author: davidi
 With **Power BI Desktop**, when you connect to your data source, it is always possible to import a copy of the data into the **Power BI Desktop**. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ## Supported Data Sources
-For a full listing of data sources that support **DirectQuery**, see [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md).
+For a full listing of data sources that support **DirectQuery**, see [Data sources supported by DirectQuery](desktop-directquery-data-sources.md).
 
 ## How to Connect using DirectQuery
 When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect.  
@@ -97,7 +97,7 @@ For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**
 For more information about **DirectQuery**, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)
 * [On-premises data gateway](service-gateway-onprem.md)

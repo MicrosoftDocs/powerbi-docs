@@ -21,5 +21,5 @@ ms.author: davidi
 
 ---
 # DirectQuery for Oracle and Teradata Databases
-Please see [DirectQuery Data Sources](powerbi-desktop-directquery-data-sources.md) for information about data sources and DirectQuery.
+Please see [DirectQuery Data Sources](desktop-directquery-data-sources.md) for information about data sources and DirectQuery.
 

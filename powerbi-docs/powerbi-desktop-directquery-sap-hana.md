@@ -67,7 +67,7 @@ Because of this, it is recommended that the items selected in **Get Data** or **
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [On-premises data gateway](service-gateway-onprem.md)
 
