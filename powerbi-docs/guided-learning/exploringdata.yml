@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Exploring Data
 metadata:
   title: Exploring Data | Microsoft Power BI
-  description: TODO
+  description: Learn how to find, connect to, and interact with data in Power BI.
   audience: Business User
   level: Beginner
   nextTutorialHref: powerbiandexcel
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Learn how to find, connect to, and interact with data in Power BI.
+    Learn how to find, connect to, and interact with data in Power BI.
 - title: Introduction to the Power BI Service
   durationInMinutes: 2
   content: |
