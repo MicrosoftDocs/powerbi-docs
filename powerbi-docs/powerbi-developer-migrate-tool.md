@@ -243,12 +243,12 @@ After you have edited the xml, re-open the plan within the migration tool and up
 <a name="directquery-reports"></a>
 
 ### DirectQuery reports
-You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](developer/migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
 
-* [Update DirectQuery connection string is SaaS workspace](powerbi-developer-migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
-* [Set DirectQuery credentials in SaaS workspace](powerbi-developer-migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
+* [Update DirectQuery connection string is SaaS workspace](developer/migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
+* [Set DirectQuery credentials in SaaS workspace](developer/migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
 
 ## Embedding
 Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.

@@ -106,7 +106,7 @@ Content migration relies mainly on two APIs.
 1. Download PBIX - this API can download PBIX files which were uploaded to Power BI after October 2016.
 2. Import PBIX - this API uploads any PBIX to Power BI.
 
-For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md).
+For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](developer/migrate-code-snippets.md).
 
 ### Report types
 There are several types of reports, each requiring a somewhat different migration flow.
@@ -190,7 +190,7 @@ You should do some cleanup within Azure.
 ## Next steps
 [Embedding with Power BI](developer/embedding.md)  
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
-[Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
+[Code snippets for migrating content from Power BI Embedded](developer/migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
