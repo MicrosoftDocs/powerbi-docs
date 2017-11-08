@@ -30,7 +30,7 @@ ms.author: maggies
 
 ---
 # Error: "communication failures" in iOS mobile apps - Power BI
-| ![iPhone](media/powerbi-mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
+| ![iPhone](media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:--- |:--- |
 | iPhones |iPads |
 
