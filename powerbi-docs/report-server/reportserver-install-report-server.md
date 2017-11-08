@@ -147,7 +147,7 @@ You need to open up the TCP port that you have configured for your Web Service U
 [Initialize a report server](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
 [Configure SSL connections on a report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
 [Configure windows service accounts and permissions](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
-[Browser support for Power BI Report Server](reportserver-browser-support.md)
+[Browser support for Power BI Report Server](browser-support.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

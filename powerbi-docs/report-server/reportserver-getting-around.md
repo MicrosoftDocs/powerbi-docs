@@ -55,7 +55,7 @@ The web portal is a web application that runs in a browser. When you start the w
 ## Start the web portal
 1. Open your web browser.
    
-    See this list of [supported web browsers and versions](reportserver-browser-support.md).
+    See this list of [supported web browsers and versions](browser-support.md).
 2. In the address bar, type the web portal URL.
    
     By default, the URL is *http://[ComputerName]/reports*.
