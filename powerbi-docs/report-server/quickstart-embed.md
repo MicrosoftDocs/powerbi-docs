@@ -45,7 +45,7 @@ For example:
 
 ## Next steps
 [Quickstart: Create a Power BI report for Power BI Report Server](reportserver-quickstart-powerbi-report.md)  
-[Quickstart: Create a paginated report for Power BI Report Server](reportserver-quickstart-paginated-report.md)  
+[Quickstart: Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

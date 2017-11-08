@@ -104,7 +104,7 @@ You can view, upload, create, organize, and manage permissions for paginated rep
     The Report Builder app opens.
    
     ![New Report Builder report](media/getting-around/report-server-report-builder-new.png)
-2. Create your paginated report. See [Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md) for details.
+2. Create your paginated report. See [Quickstart: Paginated reports](quickstart-create-paginated-report.md) for details.
 3. Upload your report to the report server.
 
 ### Edit an existing paginated report
@@ -183,7 +183,7 @@ You can switch to List view, where it's easy to move or delete multiple items at
 
 ## Next steps
 [User handbook](reportserver-user-handbook-overview.md)  
-[Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md)  
+[Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
 [Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

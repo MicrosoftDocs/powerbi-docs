@@ -25,7 +25,7 @@ As the name suggests, paginated reports can run to many pages. They're laid out 
 
 You can store and manage paginated reports in the Power BI Report Server web portal, just as you can in the SQL Server Reporting Services (SSRS) web portal. You create and edit them in Report Builder or Report Designer in SQL Server Data Tools (SSDT), then publish them to either web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on their mobile device.
 
-![Power BI Report Server paginated report](media/reportserver-quickstart-paginated-report/reportserver-paginated-report.png)
+![Power BI Report Server paginated report](media/quickstart-create-paginated-report/reportserver-paginated-report.png)
 
 If you've already created paginated reports in Report Builder or Report Designer, then you're ready to create paginated reports for Power BI Report Server. If not, here are some quick steps to get you started.
 
@@ -34,12 +34,12 @@ You may already have installed Report Builder to create reports for an SSRS serv
 
 1. In the Power BI Report Server web portal, select **New** > **Paginated Report**.
    
-    ![New Paginated Report menu](media/reportserver-quickstart-paginated-report/reportserver-new-paginated-report-menu.png)
+    ![New Paginated Report menu](media/quickstart-create-paginated-report/reportserver-new-paginated-report-menu.png)
    
     If you don't have Report Builder installed already, it leads you through the installation process now.
 2. After it's installed, Report Builder opens to the **New Report or Dataset** screen.
    
-    ![New Report or Dataset screen](media/reportserver-quickstart-paginated-report/reportserver-paginated-new-report-screen.png)
+    ![New Report or Dataset screen](media/quickstart-create-paginated-report/reportserver-paginated-new-report-screen.png)
 3. Select the wizard for the kind of report you want to create:
    
    * Table or matrix
@@ -59,32 +59,32 @@ In the first page in the Chart wizard, **Choose a dataset**, you can create a da
 
 1. Select **Browse** > select a shared dataset on a server > **Open** > **Next**.
    
-    ![Chart Wizard: Choose a dataset](media/reportserver-quickstart-paginated-report/reportserver-paginated-choose-dataset.png)
+    ![Chart Wizard: Choose a dataset](media/quickstart-create-paginated-report/reportserver-paginated-choose-dataset.png)
    
      Need to create a dataset? See [Create a shared or embedded dataset](https://docs.microsoft.com/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
 2. Choose a chart type -- in this case, a bar chart.
    
-    ![Chart Wizard: Chart type](media/reportserver-quickstart-paginated-report/reportserver-paginated-choose-chart-type.png)
+    ![Chart Wizard: Chart type](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
 3. Arrange the fields by dragging them to the **Categories**, **Series**, and **Values** boxes.
    
-    ![Chart Wizard: Arrange fields](media/reportserver-quickstart-paginated-report/reportserver-paginated-arrange-fields.png)
+    ![Chart Wizard: Arrange fields](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Select **Next** > **Finish**.
 
 ## Step 3: Design your report
 Now you're in Report Design view. Notice the data is placeholder data, not your data.
 
-![Report Design view](media/reportserver-quickstart-paginated-report/reportserver-paginated-preview-report.png)
+![Report Design view](media/quickstart-create-paginated-report/reportserver-paginated-preview-report.png)
 
 * To view your data, select **Run**.
   
-     ![Run report](media/reportserver-quickstart-paginated-report/reportserver-paginated-run-report.png)
+     ![Run report](media/quickstart-create-paginated-report/reportserver-paginated-run-report.png)
 * To go back to Design view, select **Design**.
 
 You can modify the chart you just created, changing the layout, values, legend... really just about anything.
 
 And you can add all sorts of other visualizations: gauges, tables, matrixes, tables, maps, and more. You can add headers and footers for multiple pages. See the [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials) to try them for yourself.
 
-![Report Builder Design view](media/reportserver-quickstart-paginated-report/reportserver-paginated-finished-design-report.png)
+![Report Builder Design view](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
 ## Step 4: Save your report to the report server
 When your report is ready, save it to Power BI Report Server.
@@ -92,7 +92,7 @@ When your report is ready, save it to Power BI Report Server.
 1. On the **File** menu, select **Save as**, and save it to the report server. 
 2. Now you can view it in the browser.
    
-    ![Paginated report in the browser](media/reportserver-quickstart-paginated-report/reportserver-paginated-report.png)
+    ![Paginated report in the browser](media/quickstart-create-paginated-report/reportserver-paginated-report.png)
 
 ## Next steps
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.

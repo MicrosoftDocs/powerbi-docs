@@ -33,7 +33,7 @@ Other report types support the same data sources that are present in SQL Server 
 
 ## Next steps
 [User handbook](reportserver-user-handbook-overview.md)  
-[Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md)  
+[Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
 [Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
