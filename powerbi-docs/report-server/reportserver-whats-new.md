@@ -87,7 +87,7 @@ Power BI Report Server now hosts SQL Server Analysis Services (SSAS) internally.
 ### Viewing and interacting with Excel workbooks
 Excel and Power BI contain a portfolio of tools that is unique in the industry. Together, they enable business analysts to more easily gather, shape, analyze, and visually explore their data. In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server, giving them a single location to publish and view their self-service Microsoft BI content.
 
-We’ve published a [walkthrough of how to add Office Online Server (OOS) to your Power BI Report Server preview environment](reportserver-excel-oos.md). Customers with a Volume Licensing account can download OOS from the Volume License Servicing Center at no cost and will have view-only functionality. Once configured, users can view and interact with Excel workbooks that:
+We’ve published a [walkthrough of how to add Office Online Server (OOS) to your Power BI Report Server preview environment](excel-oos.md). Customers with a Volume Licensing account can download OOS from the Volume License Servicing Center at no cost and will have view-only functionality. Once configured, users can view and interact with Excel workbooks that:
 
 * Have no external data source dependencies
 * Have a live connection to an external SQL Server Analysis Services data source

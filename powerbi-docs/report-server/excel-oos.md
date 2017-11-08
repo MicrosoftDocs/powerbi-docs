@@ -28,7 +28,7 @@ In addition to viewing Power BI reports in the web portal, business users can no
 > 
 > 
 
-![Excel reports being viewed from the report server web portal.](media/reportserver-excel-oos/excel-in-pbirs.png)
+![Excel reports being viewed from the report server web portal.](media/excel-oos/excel-in-pbirs.png)
 
 This is accomplished by making use of [Office Online Server](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
 
@@ -170,7 +170,7 @@ To get to **Site settings**, select the **gear icon** in the upper right and sel
 
 Only a user with the **System Administrator** role will see the Office Onlien Server discovery url setting.
 
-![Site settings for Power BI Report Server.](media/reportserver-excel-oos/reportserver-site-settings.png)
+![Site settings for Power BI Report Server.](media/excel-oos/reportserver-site-settings.png)
 
 After you enter the discovery url, and select **Apply**, selecting an Excel workbook, within the web portal, should display the workbook within the web portal.
 
