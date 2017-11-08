@@ -127,5 +127,5 @@ Once you've created compelling charts or other visuals such as a range of data, 
 There are many ways to use Excel and Power BI together, and get the best out of both. Take a look at the following articles for more information.
 
 * [Analyze in Excel](service-analyze-in-excel.md)
-* [Analyze in Excel troubleshooting](powerbi-desktop-troubleshooting-analyze-in-excel.md)
+* [Analyze in Excel troubleshooting](desktop-troubleshooting-analyze-in-excel.md)
 
