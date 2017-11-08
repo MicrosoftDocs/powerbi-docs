@@ -256,7 +256,7 @@ Now that your reports have been migrated from the Power BI Embedded Azure servic
 For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md).
 
 ## Next steps
-[Embedding with Power BI](powerbi-developer-embedding.md)  
+[Embedding with Power BI](developer/embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  

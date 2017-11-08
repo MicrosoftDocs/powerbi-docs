@@ -188,7 +188,7 @@ You should do some cleanup within Azure.
 * Delete any Workspace Collections that exist within Azure.
 
 ## Next steps
-[Embedding with Power BI](powerbi-developer-embedding.md)  
+[Embedding with Power BI](developer/embedding.md)  
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
 [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  

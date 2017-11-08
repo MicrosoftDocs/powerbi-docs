@@ -228,7 +228,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 
 ## Next steps
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
-[Embedding with Power BI](powerbi-developer-embedding.md)  
+[Embedding with Power BI](developer/embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md)  
 [Power BI Premium - what is it?](service-premium.md)  

@@ -145,7 +145,7 @@ If you are embedding for your customers, you will want to do the following.
 Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](../service-admin-portal.md).
 
 ## Next steps
-[Embedding with Power BI](../powerbi-developer-embedding.md)  
+[Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](../powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](../service-premium.md)  
 [How to purchase Power BI Premium](../service-admin-premium-purchase.md)  

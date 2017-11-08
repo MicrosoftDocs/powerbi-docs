@@ -189,7 +189,7 @@ Refer to the [migration documentation](powerbi-developer-migrate-from-powerbi-em
 Under the previous model, we offered a limited number of sessions for developing and testing. In the new scenario, customers will continue having options available to them to start developing and testing for free in their way to be production ready. Customers will benefit from a 2-month Power BI Pro trial to get started with dev & test. Power BI Desktop, the data exploration and report authoring tool, will continue to be available for free.
 
 **Is Power BI Embedded still an Azure Service? Where will I purchase, provision and manage Power BI Embedded?**  
-Power BI Embedded is converging with Power BI service and therefore it will be purchased, provisioned and managed as such moving forward. For more information, see [Embedding with Power BI](powerbi-developer-embedding.md).
+Power BI Embedded is converging with Power BI service and therefore it will be purchased, provisioned and managed as such moving forward. For more information, see [Embedding with Power BI](developer/embedding.md).
 
 ## Power BI Desktop
 **What changes are you making to Power BI Desktop?**  
