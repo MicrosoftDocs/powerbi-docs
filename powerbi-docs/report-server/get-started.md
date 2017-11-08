@@ -44,7 +44,7 @@ These sources will keep you up-to-date on new features in Power BI Report Server
 * The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 ## Web portal
-![](media/reportserver-get-started/web-portal.png)
+![](media/get-started/web-portal.png)
 
 For end users of Power BI Report Server, the front door is a modern web portal you can view in any modern browser. You can access all your reports and KPIs in the new portal.
 
@@ -57,14 +57,14 @@ And you can schedule report processing, access reports on demand, and subscribe 
 More about the [Web portal](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## Power BI reports
-![](media/reportserver-get-started/powerbi-reports.png)
+![](media/get-started/powerbi-reports.png)
 
 A Power BI report is a multi-perspective view into a dataset, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your job role, you may be someone who creates reports and/or you may be someone who consumes or uses reports.
 
 Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
 
 ## Paginated reports
-![](media/reportserver-get-started/paginated-reports.png)
+![](media/get-started/paginated-reports.png)
 
 Paginated reports are paginated document-style reports, in which the more data you have, the more rows in the tables, and the more pages the report would have. That’s great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
 
