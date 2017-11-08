@@ -42,7 +42,7 @@ want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not
 
 In some cases, you may be able to sort the visual the way you'd like, for example, by month.  But if not, it may be because the dataset behind the report needs some tweaking. Here are several solutions:
 
-* In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column.md).
+* In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](desktop-sort-by-column.md).
 * In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
 * In Excel, ensure that your numerical columns are tagged as "whole number" or "decimal" and not as "text."
 

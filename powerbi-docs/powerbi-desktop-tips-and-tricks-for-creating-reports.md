@@ -53,7 +53,7 @@ You can use a calculated column to define a reference line.  Identify the table 
 This calculated column will return the value 100 regardless of where it is used.  Your new column will show up in the Field List.  Add the Target Value calculated column to a line chart to show how any series relates to that specific reference line.  
 
 ## Sort by another column
-When you use a categorical (string) value in Power BI Desktop for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order, for example for things like days of the week or months, then you can tell Power BI Desktop to sort by a different column.To learn more, see [Sort by Column in Power BI Desktop](powerbi-desktop-sort-by-column.md).
+When you use a categorical (string) value in Power BI Desktop for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order, for example for things like days of the week or months, then you can tell Power BI Desktop to sort by a different column.To learn more, see [Sort by Column in Power BI Desktop](desktop-sort-by-column.md).
 
 ## Building maps more easily with hints to Bing
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps.  Bing uses some algorithms and hints to try to get the right location, but it's a best guess.   To increase the likelihood of correct geo-coding, you can use the following tips:
