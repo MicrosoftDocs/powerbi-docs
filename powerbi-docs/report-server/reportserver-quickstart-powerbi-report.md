@@ -43,7 +43,7 @@ You may already have installed Power BI Desktop to create reports for the Power 
     ![Power BI Desktop start screen](media/reportserver-quickstart-powerbi-report/report-server-powerbi-desktop-start.png)
 
 ## Step 2: Select a data source
-You can connect to a variety of data sources. Read more about [connecting to data sources](reportserver-connect-data-sources.md).
+You can connect to a variety of data sources. Read more about [connecting to data sources](connect-data-sources.md).
 
 1. From the welcome screen, select **Get Data**.
    

@@ -53,7 +53,7 @@ You may already have installed Report Builder to create reports for an SSRS serv
 ## Step 2: Go through the Chart wizard
 The Chart wizard walks you through the basic steps of creating a visualization in a report.
 
-Paginated reports can connect to a wide variety of data sources, from Microsoft SQL Server and Microsoft Azure SQL Database to Oracle, Hyperion, and many more. Read about [data sources supported by paginated reports](reportserver-connect-data-sources.md).
+Paginated reports can connect to a wide variety of data sources, from Microsoft SQL Server and Microsoft Azure SQL Database to Oracle, Hyperion, and many more. Read about [data sources supported by paginated reports](connect-data-sources.md).
 
 In the first page in the Chart wizard, **Choose a dataset**, you can create a dataset or choose a shared dataset on a server. *Datasets* return report data from a query on an external data source.
 
