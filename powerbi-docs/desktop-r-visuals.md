@@ -29,21 +29,21 @@ With **Power BI Desktop**, you can use **R** to visualize your data.
 ### Enabling R Visuals
 1. To enable R visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local R installation is specified in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
    
-   ![](media/powerbi-desktop-r-visuals/r-visuals-2.png)
+   ![](media/desktop-r-visuals/r-visuals-2.png)
 
 Once you specify your R installation, you’re ready to begin creating R visuals.
 
 #### Creating R visuals in Power BI Desktop
 1. Select the **R Visual** icon in the **Visualization** pane, as shown in the following image, to add an R visual.
    
-   ![](media/powerbi-desktop-r-visuals/r-visuals-3.png)
+   ![](media/desktop-r-visuals/r-visuals-3.png)
 2. When you add an R visual to a report, **Power BI Desktop** does the following:
    
    a) A placeholder R visual image appears on the report canvas.
    
    b) The **R script editor** appears along the bottom of the center pane.
    
-   ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
+   ![](media/desktop-r-visuals/r-visuals-4.png)
 3. Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other **Power BI Desktop** visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the **Power BI Desktop R script editor**. **Power BI Desktop** automatically detects which fields you have added or removed.
 
 > **Note:** The default aggregation type for R visuals is *do not summarize*.
@@ -59,7 +59,7 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    * The default aggregation is *do not summarize*
    * Similar to table visuals, fields are grouped and duplicate rows only appear once
    
-   ![](media/powerbi-desktop-r-visuals/r-visuals-5.png)
+   ![](media/desktop-r-visuals/r-visuals-5.png)
    
    > **Tip:** In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
    > 
@@ -78,11 +78,11 @@ Once you specify your R installation, you’re ready to begin creating R visuals
 
 The following image shows an example of the correlation plot code, and plots the correlations between attributes of different types of cars.
 
-![](media/powerbi-desktop-r-visuals/r-visuals-6.png)
+![](media/desktop-r-visuals/r-visuals-6.png)
 
 To get a larger view of the visualizations, you can minimize the **R script editor**. And of course, like other visuals in **Power BI Desktop**, you can cross filter the correlation plot by selecting only sport cars in the donut visual (the round visual on the right, in the above example image).
 
-![](media/powerbi-desktop-r-visuals/r-visuals-7.png)
+![](media/desktop-r-visuals/r-visuals-7.png)
 
 You can also modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
 
@@ -96,11 +96,11 @@ With a few changes in the R script, the command is now the following:
 
 As a result, the R visual now plots circles, only considers at the upper half, and reorders the matrix to cluster correlated attributes, as shown in the following image.
 
-![](media/powerbi-desktop-r-visuals/r-visuals-8.png)
+![](media/desktop-r-visuals/r-visuals-8.png)
 
 When executing a R script that results in an error, the R visual is not plotted and an error message is displayed on the canvas. For details on the error, select **See details** from the R visual error on the canvas.
 
-![](media/powerbi-desktop-r-visuals/r-visuals-9.png)
+![](media/desktop-r-visuals/r-visuals-9.png)
 
 > **R scripts security:** R visuals are created from R scripts, which could contain code with security or privacy risks. When attempting to view or interact with an R visual the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
 > 

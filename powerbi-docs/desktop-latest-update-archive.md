@@ -888,7 +888,7 @@ December is a month for giving, and the Power BI team is following suit with mor
   * Smart tooltips for **Area** and **Line** charts on hover
   * Ability to create reference line/region for a **Cartesian** visual
   * Improved data labels for **Pie** and **Scatter** charts
-* [R Visuals integration in Power BI Desktop (Preview feature)](powerbi-desktop-r-visuals.md)
+* [R Visuals integration in Power BI Desktop (Preview feature)](desktop-r-visuals.md)
 * Suggested table-to-table relationships when trying to create visuals involving two tables which are not related
 
 ### Data Modeling:

@@ -87,5 +87,5 @@ Launching an R IDE directly from Power BI Desktop has a few limitations:
 Take a look at the following additional information about R in Power BI.
 
 * [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)
-* [Create Power BI visuals using R](powerbi-desktop-r-visuals.md)
+* [Create Power BI visuals using R](desktop-r-visuals.md)
 

@@ -423,7 +423,7 @@ The following table shows which packages are **not supported** in the Power BI s
 For more information about R in Power BI, take a look at the following articles:
 
 * [Creating R visuals in the Power BI service](service-r-visuals.md)
-* [Create Power BI visuals using R](powerbi-desktop-r-visuals.md)
+* [Create Power BI visuals using R](desktop-r-visuals.md)
 * [Running R scripts in Power BI Desktop](desktop-r-scripts.md)
 * [Using R in Query Editor](desktop-r-in-query-editor.md)
 

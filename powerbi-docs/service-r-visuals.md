@@ -35,7 +35,7 @@ R visuals are created in a [Power BI Desktop report](desktop-get-the-desktop.md)
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 
-Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](powerbi-desktop-r-visuals.md).
+Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](desktop-r-visuals.md).
 
 Note that in the service not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
