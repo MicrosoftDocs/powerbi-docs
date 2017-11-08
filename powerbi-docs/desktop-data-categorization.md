@@ -42,5 +42,5 @@ Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation
 
 And that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
 
-You might also be interested in learning about [geographic filtering for Power BI mobile apps](powerbi-desktop-mobile-geofiltering.md).
+You might also be interested in learning about [geographic filtering for Power BI mobile apps](desktop-mobile-geofiltering.md).
 
