@@ -52,7 +52,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 3. In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-center-map-icon.png) to center the map to your current location.
    
      ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-center-map.png)
-4. Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+4. Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
 5. [Add an alert to the tile](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). If the values go above or below targets, Power BI will notify you.
 6. Sometimes the dashboard creator has added a link to a tile. If so, it has a link icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png) when it's in focus mode:
    
@@ -77,7 +77,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     In focus mode, you can:
    
    * Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
-   * Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+   * Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
    * Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-iphone-app.md) in the mobile app.
 3. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the vertical ellipsis (**...**) you see **Open link** ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png):
    

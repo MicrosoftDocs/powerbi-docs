@@ -164,8 +164,8 @@ To make sure you can access your latest data while offline, we perform a refresh
 
 Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
 
-* [On the iPhone](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
-* [On the iPad](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
+* [On the iPhone](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
+* [On the iPad](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 
 **Request access to dashboards**
 

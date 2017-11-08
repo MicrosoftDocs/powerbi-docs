@@ -99,7 +99,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    * [Tap a tile to interact](powerbi-mobile-tiles-in-the-iphone-app.md) with the tile.
    * [Open the reports](powerbi-mobile-reports-in-the-iphone-app.md) behind the tiles.
    * [Invite others to view the dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
-   * [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) of a tile.
+   * [Annotate and share a snapshot](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) of a tile.
 5. To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap **My Workspace**.
    
    ![Breadcrumb](media/powerbi-mobile-create-dashboard/power-bi-dashboard-breadcrumb.png)
