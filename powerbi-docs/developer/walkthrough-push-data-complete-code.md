@@ -229,7 +229,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 [Walkthrough - Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
 [Register an app with Azure AD](../powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
 [Get an authentication access token](../powerbi-developer-walkthrough-push-data-get-token.md)  
-[Create a dataset in Power BI](../powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 [Get a dataset to add rows into a Power BI table](../powerbi-developer-walkthrough-push-data-get-datasets.md)  
 [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
