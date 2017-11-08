@@ -23,7 +23,7 @@ ms.author: davidi
 # High Density Line Sampling in Power BI
 Beginning with the June 2017 release of the **Power BI Desktop** and updates to the **Power BI service**, a new sampling algorithm is available that improves visuals that sample high density data. For example, you might create a line chart from your retail stores’ sales results, each store having more than ten thousand sales receipts each year. A line chart of such sales information would sample data (select a meaningful representation of that data, to illustrate how sales varies over time) from the data for each store, and create a multi-series line chart that thereby represents underlying data. This is common practice in visualizing high density data, and Power BI Desktop has improved its sampling of high density data, the details of which are described in this article.
 
-![](media/powerbi-desktop-high-density-sampling/high-density-sampling_01.png)
+![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > **Note:** The **high density sampling** algorithm described in this article applies to, and is available in, both **Power BI Desktop** and the **Power BI service**.
 > 
@@ -74,7 +74,7 @@ This situation will happen frequently with tooltips. The high and low values for
 ## How to turn on high density line sampling
 By default, the new algorithm is turned **on**. To change this setting, go to the **Formatting** pane, in the **General** card, and along the bottom you see a toggle slider called **High Density Sampling**. To turn it off, slide it to **Off**.
 
-![](media/powerbi-desktop-high-density-sampling/high-density-sampling_02.png)
+![](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## Considerations and limitations
 The new algorithm for high density line sampling is an important improvement to Power BI, but there are a few considerations you need to know when working with high density values and data.

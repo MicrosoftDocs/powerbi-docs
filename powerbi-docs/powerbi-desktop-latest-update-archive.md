@@ -156,7 +156,7 @@ The following updates were new to **Power BI Desktop** in June:
 * Horizontal image slicer [[video]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#imageSlicer)
 * Combo chart formatting updates [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
 * Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
-* High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](powerbi-desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
+* High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
 * Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
 ### Data Connectivity:

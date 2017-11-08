@@ -86,5 +86,5 @@ The high density sampling algorithm is an important improvement to Power BI, but
 ## More information
 For more information about high density sampling in other charts, see the following article.
 
-* [High density line sampling in Power BI](powerbi-desktop-high-density-sampling.md)
+* [High density line sampling in Power BI](desktop-high-density-sampling.md)
 
