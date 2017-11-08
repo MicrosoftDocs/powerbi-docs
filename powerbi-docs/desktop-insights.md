@@ -23,7 +23,7 @@ ms.author: davidi
 # Use insights in Power BI Desktop (Preview)
 You can tell **Power BI Desktop** to explain increases or decreases in charts, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze > Explain the decrease** (or increase, if the previous bar was lower), and insight is delivered to you in an easy-to-use window.
 
-![](media/powerbi-desktop-insights/insights_01.png)
+![](media/desktop-insights/insights_01.png)
 
 The insights feature is contextual, and is based on the immediately previous data point - such as the previous bar, or column.
 
@@ -34,15 +34,15 @@ The insights feature is contextual, and is based on the immediately previous dat
 ## Using insights
 To use insights, just right-click on any data point in a bar or line visual, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
-![](media/powerbi-desktop-insights/insights_02.png)
+![](media/desktop-insights/insights_02.png)
 
 **Power BI Desktop** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories most influenced the increase or decrease. By default, insights are provided as a *waterfall* visual, as shown in the following image.
 
-![](media/powerbi-desktop-insights/insights_03.png)
+![](media/desktop-insights/insights_03.png)
 
 By selecting the small icons at the bottom of the waterfall visual, you can choose to have insights display a scatter chart, stacked column chart, or a ribbon chart.
 
-![](media/powerbi-desktop-insights/insights_04.png)
+![](media/desktop-insights/insights_04.png)
 
 The *thumbs up* and *thumbs down* icons at the top of the page are provided so you can provide feedback about the visual and the feature.
 
