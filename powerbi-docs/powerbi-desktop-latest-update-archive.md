@@ -47,7 +47,7 @@ The following updates are new to **Power BI Desktop** in September:
   * Impact bubble chart  [[video]](https://youtu.be/moTQJlnClJw?t=42m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#impactBubbleChart)
 
 ### Data Connectivity:
-* Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](powerbi-desktop-connect-azure-consumption-insights.md)
+* Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](desktop-connect-azure-consumption-insights.md)
 * Improvements to the Dynamics 365 for Financials connector  [[video]](https://youtu.be/moTQJlnClJw?t=45m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#dynamics365ForFinancials)
 
 > NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.

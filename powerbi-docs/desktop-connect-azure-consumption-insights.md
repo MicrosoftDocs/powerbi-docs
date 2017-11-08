@@ -23,7 +23,7 @@ ms.author: davidi
 # Connect to Azure Consumption Insights in Power BI Desktop (Beta)
 With the **Azure Consumption Insights** connector, you can use **Power BI Desktop** to connect to Azure and get in-depth data and information about your organization's Azure services usage. You can also create measures, custom columns, and visuals to report and share about your organization's Azure usage. This release of the **Azure Consumption and Insights** connector is in Beta, and is subject to change.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
 
 In this article you learn how to connect using the **Azure Consumption Insights** connector and get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
 
@@ -32,29 +32,29 @@ To successfully connect using the **Azure Consumption Insights** connector, you 
 
 To connect to using the **Azure Consumption Insights** connector, select **Get Data** from the **Home** ribbon in **Power BI Desktop**. Select **Online Services** from the categories on the left, and you see **Microsoft Azure Consumption Insights (Beta)**. Select **Connect**.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
 In the dialog that appears, provide your *Enrollment Number*.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
 * You can get your enrollment number from the [Azure Enterprise Portal](https://ea.azure.com), in the location shown in the following image.
   
-  ![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
+  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
   
   This version of the connector only supports enterprise enrollments from https://ea.azure.com. China enrollments are not currently supported.
 
 Next, provide your *Access key* to connect.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
 * Your Access key for enrollment can be found on the [Azure Enterprise Portal](https://ea.azure.com).
   
-  ![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
+  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the four tables available to you: *Summary*, *Usage*, *PriceSheet*, and *MarketPlace*. You can select a checkbox beside any table to see a preview. You can select one or more tables by checking the box beside their name, then select **Load**.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
 > **Note:** The *Summary and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
 > 
@@ -62,11 +62,11 @@ Once you provide your *Access key* and select **Connect**, a **Navigator** windo
 
 When you select **Load** the data is loaded into **Power BI Desktop**.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
 Once the data you selected is loaded, the tables and fields you selected can be seen in the **Fields** pane.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## Using Azure Consumption Insights
 To use the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
@@ -81,7 +81,7 @@ In the **Formula bar** type the following:
 
 A collection of samples appear, as shown in the following image.
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 When working with reports and creating queries, use the following:
 
@@ -112,7 +112,7 @@ In **Query Editor**, select **Advanced Editor** from the **Query** section of th
     in     
         data
 
-![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
 Of course, you'll need to replace the value of *enrollmentNumber* with your own enrollment number, which you can get from the [Azure Enterprise Portal](https://ea.azure.com). The *numberOfMonth* parameter is how many months of data you want going back, from the current data. Use zero (0) for the current month.
 
@@ -124,7 +124,7 @@ Next you'll need to move any custom columns or measures you created into the new
 1. Open Notepad (or another text editor).
 2. Select the measure you want to move, and copy the text from the *Formula* field, and place it in Notepad.
    
-   ![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Rename *Query1* to the original details table name.
 4. Create new measures and custom columns in your table by right-clicking on your table, and choosing **New Measure**, then cut and paste your store measures and columns until they're all done.
 
@@ -133,7 +133,7 @@ Many dashboards have additional tables that are used for lookup or filtering, su
 
 1. In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
    
-    ![](media/powerbi-desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
+    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
 Once you get this far, most of your original visuals, tables, and drill-downs should be working as expected. However, there may be some minor tweaks necessary for formatting, to get things looking just how you want them. Take a bit of time to look over each of your dashboards and visuals, to ensure they look how you want them.
