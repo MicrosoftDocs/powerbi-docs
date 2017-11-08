@@ -29,7 +29,7 @@ Applies to:
 
 A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process.
 
-1. [Create reports in Power BI Desktop](desktop-report-view.md). You can even [optimize a report for phones](powerbi-mobile-view-phone-report.md) in Power BI Desktop. 
+1. [Create reports in Power BI Desktop](desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop. 
 2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](report-server/get-started.md).  
 3. Then interact with those reports in the Power BI mobile apps.
 
@@ -57,7 +57,7 @@ When you view that report on a phone, it opens in portrait view.
 
 A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
 
-Read more about [reports optimized for phone view](powerbi-mobile-view-phone-report.md).
+Read more about [reports optimized for phone view](mobile-apps-view-phone-report.md).
 
 ## Use slicers to filter a report page
 When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](power-bi-visualization-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
@@ -104,7 +104,7 @@ If a report author has added this capability to a visual, on an iPad or a tablet
   ![Go back up](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
 
 ## See also
-* [View and interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
+* [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report optimized for phones](desktop-create-phone-report.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

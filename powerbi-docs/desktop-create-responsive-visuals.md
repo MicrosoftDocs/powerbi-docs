@@ -54,6 +54,6 @@ You turn on responsiveness for a visual in a report in the Power BI service. You
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
-* [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
+* [View Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
