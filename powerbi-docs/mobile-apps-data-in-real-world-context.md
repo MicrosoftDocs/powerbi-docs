@@ -46,7 +46,7 @@ Tag barcode data in your report so your colleagues can scan a barcode on a produ
 More about:
 
 * [Tagging barcode data in a report](desktop-mobile-barcodes.md)
-* [Scanning a barcode from the Power BI app on your iPhone](powerbi-mobile-scan-barcode-for-report.md)
+* [Scanning a barcode from the Power BI app on your iPhone](mobile-apps-scan-barcode-iphone.md)
 
 ## Filter by location
 Categorize geographical data in a report in Power BI Desktop. Then your colleagues view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where they are.

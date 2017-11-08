@@ -323,7 +323,7 @@ More about [connecting to data in the real world](mobile-apps-data-in-real-world
 #### Filter data with barcodes (iPhone)
 Now you can scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. 
 
-More about [filtering your data with barcodes](powerbi-mobile-scan-barcode-for-report.md).
+More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
 
 #### SQL Server 2016 Reporting Services mobile reports
 Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.
