@@ -128,5 +128,5 @@ Take a look at the following additional information about R in Power BI.
 * [Power BI custom visuals gallery](https://app.powerbi.com/visuals/)
 * [Running R Scripts in Power BI Desktop](powerbi-desktop-r-scripts.md)
 * [Create R visuals in Power BI Desktop](powerbi-desktop-r-visuals.md)
-* [Use an external R IDE with Power BI](powerbi-desktop-r-ide.md)
+* [Use an external R IDE with Power BI](desktop-r-ide.md)
 

@@ -23,7 +23,7 @@ ms.author: davidi
 # Use an external R IDE with Power BI
 With **Power BI Desktop**, you can use your external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
 
-![](media/powerbi-desktop-r-ide/r-ide_1a.png)
+![](media/desktop-r-ide/r-ide_1a.png)
 
 ### Enabling an external R IDE
 Previously, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
@@ -40,7 +40,7 @@ To use this feature, you need to install an **R IDE** on your local computer. **
   * You can associate **.R** files with the external IDE you want **Power BI Desktop** to launch.
   * You can specify the .exe that **Power BI Desktop** should launch by selecting *Other* from the **R Script Options** section of the **Options** dialog. You can bring up the **Options** dialog by going to **File > Options and settings > Options**.
     
-    ![](media/powerbi-desktop-r-ide/r-ide_1b.png)
+    ![](media/desktop-r-ide/r-ide_1b.png)
 
 If you have multiple R IDEs installed, you can specify which will be launched by selecting it from the *Detected R IDEs* drop-down in the **Options** dialog.
 
@@ -54,23 +54,23 @@ To launch an R IDE from **Power BI Desktop**, take the following steps.
 1. Load data into **Power BI Desktop**.
 2. Select some fields from the **Fields** pane that you want to work with. If you haven't enabled script visuals yet, you'll be prompted to do so.
    
-   ![](media/powerbi-desktop-r-ide/r-ide_3.png)
+   ![](media/desktop-r-ide/r-ide_3.png)
 3. When script visuals are enabled, you can select an R visual from the **Visualizations** pane, which creates a blank R visual that's ready to display the results of your script. The **R script editor** pane also appears.
    
-   ![](media/powerbi-desktop-r-ide/r-ide_4.png)
+   ![](media/desktop-r-ide/r-ide_4.png)
 4. Now you can select the fields you want to use in your R script. When you select a field, the **R script editor** field automatically creates script code based on the field or fields you select. You can either create (or paste) your R script directly in the **R script editor** pane, your you can leave it empty.
    
-   ![](media/powerbi-desktop-r-ide/r-ide_5.png)
+   ![](media/desktop-r-ide/r-ide_5.png)
    
    > **Note:** The default aggregation type for R visuals is *do not summarize*.
    > 
    > 
 5. You can now launch your R IDE directly from **Power BI Desktop**. Select the **Launch R IDE** button, found on the right side of the **R script editor** title bar, as shown below.
    
-   ![](media/powerbi-desktop-r-ide/r-ide_6.png)
+   ![](media/desktop-r-ide/r-ide_6.png)
 6. Your specified R IDE is launched by Power BI Desktop, as shown in the following image (in this image, **RStudio** is the default R IDE).
    
-   ![](media/powerbi-desktop-r-ide/r-ide_7.png)
+   ![](media/desktop-r-ide/r-ide_7.png)
    
    > **Note:** **Power BI Desktop** adds the first three lines of the script so it can import your data from **Power BI Desktop** once you run the script.
    > 
