@@ -462,7 +462,7 @@ The following updates were new to Power BI Desktop in September:
 ### Report View:
 * ArcGIS Maps for Power BI (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/pcUr6E8g_KI?t=2m8s)
 * Mobile report layout (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)  [[video]](https://youtu.be/pcUr6E8g_KI?t=3m59s)
-* Updated drill behavior [[article]](powerbi-desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/pcUr6E8g_KI?t=5m6s)
+* Updated drill behavior [[article]](desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/pcUr6E8g_KI?t=5m6s)
 
 ### Analytics
 * Forecasting (Preview) [[article]](desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/pcUr6E8g_KI?t=6m6s)
@@ -519,7 +519,7 @@ The following updates are new to Power BI Desktop this month:
 ### Report View:
 * Drill-down (or back up) on line charts [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
 * Continuous axis for the Date axis [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)  [[video]](https://youtu.be/0VvG7Eqoke8?t=3m48s)
-* General availability of Inline Hierarchies [[article]](powerbi-desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
+* General availability of Inline Hierarchies [[article]](desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
 * Predefined matrix styles (similar to table formatting in Excel) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
 * Reorder fields, in charts and tooltips [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=6m23s)
 * Color formatting for KPI visuals [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=7m9s)
@@ -705,7 +705,7 @@ In April, we showered our great Power BI customers with another collection of co
 * Trend lines on single visuals
 * New drill action – **See Records**
 * Map auto-zoom during drill/filter
-* In-line hierarchy labels for expanded view (Preview - [see the article](powerbi-desktop-inline-hierarchy-labels.md))
+* In-line hierarchy labels for expanded view (Preview - [see the article](desktop-inline-hierarchy-labels.md))
 
 ### Data Modeling:
 * Modelling operations are no longer blocked while visuals are refreshing

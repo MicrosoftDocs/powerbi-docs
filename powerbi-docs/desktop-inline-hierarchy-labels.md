@@ -31,30 +31,30 @@ Before we see inline hierarchy labels in action, let's review how the default **
 
 The following image shows a bar chart visual for annual sales. When you right-click, you can choose **Expand All**.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_4.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_4.png)
 
 Once **Expand All** is selected, the visual expands the date hierarchy from *Year* to *Quarter*, as shown in the following image.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_5.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_5.png)
 
 Notice that the *Year* and *Quarter* labels are shown inline together... this labeling scheme continues as you **Expand All** down to the bottom of the hierarchy.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_6.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_6.png)
 
 This is how the built-in *Date* hierarchy, associated with fields that have a *date/time* data type, behaves. Let's head to the next section, and see how the new inline hierarchy labels feature is different.
 
 ### Using inline hierarchy labels
 Now let's look at a different chart - using data that has informal hierarchies. In the following visual, we have a bar chart with **Sales Amount**, using *Color* as the axis. In this data, *Color* and *Class* form an informal hierarchy. From here, you can again select *Expand All* to drill down into the hierarchy.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_7.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_7.png)
 
 Selecting **Expand All** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **SalesAmount**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting the ellipses in the upper right corner (the **...**), then selecting **Sort By > Color Class** as shown in the following image.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_8.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_8.png)
 
 Once **Color Class** is selected, the data is sorted based on the informal hierarchy selection, as shown in the following image.
 
-![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_9.png)
+![](media/desktop-inline-hierarchy-labels/inlinehierarchy_9.png)
 
 > **Note**: The inline hierarchy label feature doesn't yet allow for the built-in time hierarchy to be sorted by value; it's only sorted by hierarchy order.
 > 
