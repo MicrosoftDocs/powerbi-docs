@@ -20,7 +20,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Getting Started
@@ -60,7 +60,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Getting Data
@@ -100,7 +100,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-modeling.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Modeling
@@ -140,7 +140,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-visualizations.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Visualizations
@@ -180,7 +180,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-exploring-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Exploring Data
@@ -220,7 +220,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/logo_excel-blk.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Power BI and Excel
@@ -260,7 +260,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-pub-sharing.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Publishing and Sharing
@@ -300,7 +300,7 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-dax-intro.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Introduction to DAX

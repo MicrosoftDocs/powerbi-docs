@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Modeling
 metadata:
   title: Modeling | Microsoft Power BI
-  description: TODO
+  description: Connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
   audience: Business User
   level: Beginner
   nextTutorialHref: visualizations
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
+    Connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
 - title: Introduction to Modeling Your Data
   durationInMinutes: 3
   content: |

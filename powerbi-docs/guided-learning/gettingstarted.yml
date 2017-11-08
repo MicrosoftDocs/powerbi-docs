@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Getting Started
 metadata:
   title: Getting Started | Microsoft Power BI
-  description: TODO
+  description: Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
   audience: Business User
   level: Beginner
   nextTutorialHref: gettingdata
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
+    Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
 - title: Introducing Power BI
   durationInMinutes: 5
   content: |

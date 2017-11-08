@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Publishing and Sharing
 metadata:
   title: Publishing and Sharing | Microsoft Power BI
-  description: TODO
+  description: Data is most powerful when shared with others - learn how to publish, export, share, and distribute your Power BI data insights.
   audience: Business User
   level: Beginner
   nextTutorialHref: introductiontodax
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Data is most powerful when shared with others - learn how to publish, export, share, and distribute your Power BI data insights.
+    Data is most powerful when shared with others - learn how to publish, export, share, and distribute your Power BI data insights.
 - title: Introduction to Content Packs, Security, and Groups
   durationInMinutes: 2
   content: |

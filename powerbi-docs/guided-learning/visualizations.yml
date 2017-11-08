@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Visualizations
 metadata:
   title: Visualizations | Microsoft Power BI
-  description: TODO
+  description: Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
   audience: Business User
   level: Beginner
   nextTutorialHref: exploringdata
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
+    Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
 - title: Introduction to Visuals in Power BI
   durationInMinutes: 2
   content: |

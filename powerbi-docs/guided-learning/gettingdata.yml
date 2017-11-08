@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Getting Data
 metadata:
   title: Getting Data | Microsoft Power BI
-  description: TODO
+  description: Explore and learn the many ways you can get and work with data in Power BI.
   audience: Business User
   level: Beginner
   nextTutorialHref: modeling
@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Explore and learn the many ways you can get and work with data in Power BI.
+    Explore and learn the many ways you can get and work with data in Power BI.
 - title: Overview of Power BI Desktop
   durationInMinutes: 4
   content: |
