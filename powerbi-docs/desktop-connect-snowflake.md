@@ -30,15 +30,15 @@ In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and 
 ## Connect to a Snowflake computing warehouse
 To connect to a **Snowflake** computing warehouse select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Snowflake**.
 
-![](media/powerbi-desktop-connect-snowflake/connect_snowflake_2b.png)
+![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
 
 In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](powerbi-desktop-use-directquery.md).
 
-![](media/powerbi-desktop-connect-snowflake/connect_snowflake_3.png)
+![](media/desktop-connect-snowflake/connect_snowflake_3.png)
 
 When prompted, put in your username and password.
 
-![](media/powerbi-desktop-connect-snowflake/connect_snowflake_4.png)
+![](media/desktop-connect-snowflake/connect_snowflake_4.png)
 
 > **Note:** Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
@@ -46,7 +46,7 @@ When prompted, put in your username and password.
 
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
 
-![](media/powerbi-desktop-connect-snowflake/connect_snowflake_5.png)
+![](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 You can **Load** the selected table, which brings the entire table into **Power BI Desktop**, or you can **Edit** the query, which opens **Query Editor** so you can filter and refine the set of data you want to use, and then load that refined set of data into **Power BI Desktop**.
 
