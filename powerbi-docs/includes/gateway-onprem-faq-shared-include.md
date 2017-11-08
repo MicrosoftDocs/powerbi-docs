@@ -3,10 +3,10 @@
 **Answer:** The gateway is called On-premises data gateway service in Services
 
 **Question:** What are the requirements for the gateway?  
-**Answer:** Take a look at the requirements section of the main [gateway article](../powerbi-gateway-onprem.md).
+**Answer:** Take a look at the requirements section of the main [gateway article](../service-gateway-onprem.md).
 
 **Question:** What data sources are supported with the gateway?  
-**Answer:** See the data sources table in the main [gateway article](../powerbi-gateway-onprem.md).
+**Answer:** See the data sources table in the main [gateway article](../service-gateway-onprem.md).
 
 **Question:** Do I need a gateway for cloud data sources like Azure SQL Database?  
 **Answer:** No! The service will be able to connect to that data source without a gateway.
@@ -15,7 +15,7 @@
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
 
 **Question:** What if I block outbound connections? What do I need to open?  
-**Answer:** See the [list of ports](../powerbi-gateway-onprem.md#ports) and hosts that the gateway uses.
+**Answer:** See the [list of ports](../service-gateway-onprem.md#ports) and hosts that the gateway uses.
 
 **Question:** Does the gateway have to be installed on the same machine as the data source?  
 **Answer:** No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
@@ -32,7 +32,7 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Answer:** No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID, *NT SERVICE\PBIEgwService*.
 
 **Question:** How are results sent back to the cloud?  
-**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](../powerbi-gateway-onprem.md#how-the-gateway-works).
+**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](../service-gateway-onprem.md#how-the-gateway-works).
 
 **Question:** Where are my credentials stored?  
 **Answer:** The credentials you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
@@ -64,7 +64,7 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 
 ## Troubleshooting
 **Question:** Where are the gateway logs located?  
-**Answer:** See the tools section of the [troubleshooting article](../powerbi-gateway-onprem-tshoot.md#tools).
+**Answer:** See the tools section of the [troubleshooting article](../service-gateway-onprem-tshoot.md#tools).
 
 **Question:** How can I see what queries are being sent to the on-premises data source?  
 **Answer:** You can enable query tracing.  This will include the queries being sent. Remember to change it back to the original value when done troubleshooting. Having query tracing enabled will cause the logs to be larger.

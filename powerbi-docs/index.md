@@ -7,7 +7,7 @@ description: PowerBI Documentation
 <div id="main" class="v2">
     <div class="container">
         <h1>PowerBI Documentation</h1>
-        <p style="font-size: 1.12rem;margin-bottom: 1rem;">PowerBI amplifies your insights and the value of your data. With PowerBI documentation, you get expert information and answers to address your needs, regardless of how you use PowerBI.</p>
+        <p style="font-size: 1.12rem;margin-bottom: 1rem;">PowerBI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use PowerBI.</p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -16,7 +16,7 @@ description: PowerBI Documentation
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
-                                <a href="powerbi-service-get-started">
+                                <a href="service-get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -26,7 +26,7 @@ description: PowerBI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI Service</h3>
+                                                    <h3>Power BI Service</h3>
                                                     <p>The Power BI service is the online service where you'll fine dashboards, apps and published reports.</p>
                                                 </div>
                                             </div>
@@ -35,7 +35,7 @@ description: PowerBI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="powerbi-desktop-getting-started">
+                                <a href="desktop-getting-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -45,7 +45,7 @@ description: PowerBI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI Desktop</h3>
+                                                    <h3>Power BI Desktop</h3>
                                                     <p>Power BI Desktop lets you build advanced queries, models, and reports that visualize data.</p>
                                                 </div>
                                             </div>
@@ -54,7 +54,7 @@ description: PowerBI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="powerbi-power-bi-apps-for-mobile-devices">
+                                <a href="mobile-apps-for-mobile-devices">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -64,7 +64,7 @@ description: PowerBI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI mobile apps</h3>
+                                                    <h3>Power BI mobile apps</h3>
                                                     <p>View and interact with your Power BI dashboards and reports on your mobile device.</p>
                                                 </div>
                                             </div>
@@ -73,7 +73,7 @@ description: PowerBI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="powerbi-developer-what-can-you-do">
+                                <a href="developer-what-can-you-do">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -83,7 +83,7 @@ description: PowerBI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI developer</h3>
+                                                    <h3>Power BI developer</h3>
                                                     <p>Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.</p>
                                                 </div>
                                             </div>
@@ -92,7 +92,7 @@ description: PowerBI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="report-server/reportserver-get-started">
+                                <a href="report-server/get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -102,7 +102,7 @@ description: PowerBI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI Report Server</h3>
+                                                    <h3>Power BI Report Server</h3>
                                                     <p>Create, deploy, and manage Power BI, mobile and paginated reports on-premises.</p>
                                                 </div>
                                             </div>
@@ -111,7 +111,7 @@ description: PowerBI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="https://powerbi.microsoft.com/en-us/guided-learning/">
+                                <a href="guided-learning/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
