@@ -228,7 +228,7 @@ The following updates were new to Power BI Desktop in April 2017:
 
 ### Report View:
 * Rename axis titles [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
-* New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+* New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
 
 ### Analytics:
 * Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[in-depth blog]](https://powerbi.microsoft.com/blog/quick-measures-preview/) [[article]](powerbi-desktop-quick-measures.md)
@@ -265,7 +265,7 @@ The following video describes and shows each of these updates. You can also see 
 The following updates were new to Power BI Desktop in March 2017:
 
 ### Report View:
-* New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
+* New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
 * Numeric range slicer (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[article]](powerbi-desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
 * Data labels on pie and donut visuals - percent of total [[video]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
 * Cross-highlight using multiple series [[video]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
