@@ -114,7 +114,7 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 * Create [KPIs on a Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ## Next steps
-* [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+* [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Get started with Power BI](service-get-started.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

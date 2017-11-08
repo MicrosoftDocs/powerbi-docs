@@ -402,7 +402,7 @@ View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
-All of the January improvements are already in the new [Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
+All of the January improvements are already in the new [Power BI app for Windows 10 phones](mobile-windows-10-phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
 
 **Real-time data support** Dashboards refresh in real time, so you don't need to refresh them manually.
 
@@ -429,7 +429,7 @@ Now you can view your SQL Server mobile reports in the Power BI app on your iOS 
 The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 * Read the [Power BI app for Windows 10 phones blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
-* [Get started with the Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md).
+* [Get started with the Power BI app for Windows 10 phones](mobile-windows-10-phone-app-get-started.md).
 
 #### Other additions
 Read the [Power BI mobile apps December blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx) for more details.
