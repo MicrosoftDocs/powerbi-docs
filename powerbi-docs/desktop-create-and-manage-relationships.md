@@ -29,14 +29,14 @@ If you query two or more tables at the same time, when the data is loaded, Power
 ## Create a relationship by using Autodetect
 On the **Home** tab, click **Manage Relationships** \> **AutoDetect**.
 
-![](media/powerbi-desktop-create-and-manage-relationships/AutomaticRelationship.gif)
+![](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## Create a relationship manually
 1. On the **Home** tab, click **Manage Relationships** \> **New**.
 2. In the **Create Relationship** dialog, in the first table drop-down list, select a table,  and then select the column you want to use in the relationship.
 3. In the to second table drop-down list, select the other table you want in the relationship, then select the other column you want to use, and then click **OK**.
 
-![](media/powerbi-desktop-create-and-manage-relationships/ManualRelationship.gif)
+![](media/desktop-create-and-manage-relationships/manualrelationship.gif)
 
 By default, Power BI Desktop will automatically configure the Cardinality (direction), Cross filter direction, and Active properties for your new relationship; however, you can change these if necessary in Advanced options. To learn more, see the Understanding advanced options section later in this article.
 
@@ -108,7 +108,7 @@ Notice that each table has a project column. Each are named slightly different, 
 
 Now that we have our two tables imported into a model, let’s create a report. The first thing we want to get is the number of hours submitted by project priority, so we select **Priority** and **Hours** from Fields.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_ReportFiltersNoRel.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_reportfiltersnorel.png)
 
 If we look at our table in the Report canvas, you’ll see the number of hours is **256.00** for each project, and it’s also the total. Clearly this isn’t correct. Why? It’s because we can’t calculate a sum total of values from one table (Hours in the Project table), sliced by values in another table (Priority in the CompanyProject table) without a relationship between these two tables.
 
@@ -127,13 +127,13 @@ If we look at the ProjName column in the CompanyProject table, we see there’s 
 4. In the second table, select **CompanyProject**, then select the **ProjName** column. This is the one side of our relationship.  
 5. Go ahead and click **OK** in both the **Create Relationship** dialog and the **Manage Relationships** dialog.
 
-![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_Create_CompProj.png)
+![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
 In the interest of full disclosure,  you really just created this relationship the hard way. You could've just clicked on the Autodetect button in the Manage Relationships dialog. In-fact, Autodetect would have already done it for you when you loaded the data if both columns had the same name. But, what’s the challenge in that?
 
 Now, let’s look at the table in our Report canvas again.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_ReportFiltersWithRel.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png)
 
 Now that looks a whole lot better, doesn’t it?
 
@@ -144,7 +144,7 @@ That was pretty easy, in-fact, with Autodetect, you might not even have to do th
 ## Understanding advanced options
 When a relationship is created, either with Autodetect or one you create manually, Power BI Desktop will automatically configure advanced options based on the data in your tables. You can configure advanced relationship properties by expanding Advanced options in the Create/Edit relationship dialog.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_AdvancedOptions.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions.png)
 
 As we said, these are usually set automatically and you won’t need to mess with them; however, there are several situations where you might want to configure advanced options yourself.
 
@@ -174,7 +174,7 @@ The CompanyProjectPriority table below is a list of all company projects and the
 
 If we create a relationship between the Project column in the CompanyProjectPriority table and ApprovedProjects column in the ProjectBudget table, like this:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_Create_CompProj_AppProj.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj.png)
 
 Cardinality is automatically set to One-to-One (1:1), and cross filtering to be Both (as shown).  This is because to Power BI Desktop, the best combination of the two tables really looks like this:
 
@@ -223,27 +223,27 @@ The Both setting enables Power BI Desktop to treat all aspects of connected tabl
 
 Single direction cross filtering works for many situations.  In fact, if you’ve imported a model from Power Pivot in Excel 2013 or earlier, all of the relationships will be set to single direction.  Single direction means that filtering choices in connected tables work on the table where aggregation work is happening.  Sometimes, understanding cross filtering can be a little difficult, so let’s look at an example.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_SingleDIrCrossFiltering.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 
 With single direction cross filtering, if you create a report that summarizes the project hours and then you can choose to summarize (or filter) by CompanyProject, Priority or CompanyEmployee, City.   If however, you want to count the number of employee per projects (a less common question), it won’t work. You’ll get a column of values that are all the same.  In the example below, both relationships cross filtering direction is set to a single direction – towards the ProjectHours table:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_RepCrossFilterSingle.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
 Filter specification will flow from CompanyProject to CompanyEmployee (as shown in the image below)  but, it won’t flow up to CompanyEmployee.  However, if you set the cross filtering direction to Both it will work.  The Both setting allows the filter specification to flow up to Employee.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_BiDIrCrossFiltering.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
 With the cross filtering direction set to Both, our report now appears correct:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_RepCrossFilterBi.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilterbi.png)
 
 Cross filtering both directions works well for a pattern of table relationships that look like the pattern above. This is most commonly called a star schema, like this:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_CrossFilterStarSchema.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterstarschema.png)
 
 Cross filtering direction does not work well with a more general pattern often found in databases, like in this diagram:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_CrossFilterWithLoops.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png)
 
 If you have a table pattern like this, with loops, then cross filtering can create an ambiguous set of relationships. For instance, if you sum up a field from TableX and then choose to filter by a field on TableY, then it’s not clear how the filter should travel, through the top table or the bottom table. A common example for this kind of pattern is TableX to be a Sales table with actuals data and for TableY to be budget data. Then, the tables in the middle are lookup tables that both tables use, such as Division or Region. 
 
@@ -291,19 +291,19 @@ Let’s look at an example. This first table is ProjectTickets, and the next tab
 
 There are actually two relationships here. One is between SubmittedBy in the ProjectTickets table and Employee in the EmployeeRole table, and the other is between OpenedBy in the ProjectTickets table and Employee in the EmployeeRole table.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_ActiveRelView.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_activerelview.png)
 
 If we add both relationships to the model (OpenedBy first), then the Manage Relationships dialog will show that OpenedBy is active:
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_ManageRelActive.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
 Now, if we create a report that uses Role and Employee fields from EmployeeRole, and the Hours field from ProjectTickets in a table visualization in the Report canvas, we’ll see only project sponsors because they’re the only ones that opened a project ticket.
 
- ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_RepCrossFilterActive.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
 We can change the active relationship and get SubmittedBy instead of OpenedBy. In Manage Relationships, we uncheck the ProjectTickets(OpenedBy) to EmployeeRole(Employee) relationship, and then we check the Project Tickets(SubmittedBy) to EmployeeRole(Employee) relationship.
 
-![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_ManageRelActiveSubmittedBy.png)
+![](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 
 ## See all of your relationships in Relationship View
 Sometimes your model has multiple tables and complex relationships between them. Relationship View in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. To learn more, see [Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md).
