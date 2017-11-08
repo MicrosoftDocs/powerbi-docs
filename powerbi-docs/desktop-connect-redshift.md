@@ -26,19 +26,19 @@ In **Power BI Desktop**, you can connect to an **Amazon Redshift** database and 
 ## Connect to an Amazon Redshift database
 To connect to an **Amazon Redshift** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
 
-![](media/powerbi-desktop-connect-redshift/connect_redshift_3.png)
+![](media/desktop-connect-redshift/connect_redshift_3.png)
 
 In the **Amazon Redshift** window that appears, type or paste the name of your **Amazon Redshift** server and database into the box. As part of the *Server* field, users can specify a ort in the following format: *ServerURL:Port*
 
-![](media/powerbi-desktop-connect-redshift/connect_redshift_4.png)
+![](media/desktop-connect-redshift/connect_redshift_4.png)
 
 When prompted, put in your username and password.
 
-![](media/powerbi-desktop-connect-redshift/connect_redshift_5.png)
+![](media/desktop-connect-redshift/connect_redshift_5.png)
 
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
 
-![](media/powerbi-desktop-connect-redshift/connect_redshift_6.png)
+![](media/desktop-connect-redshift/connect_redshift_6.png)
 
 Once you make selections from the **Navigator** window, you can either **Load** or **Edit** the data.
 

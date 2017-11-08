@@ -567,7 +567,7 @@ July brought another great collection of new features and highly anticipated dat
 
 ### Data Connectors:
 * New data connectors:
-  * Amazon Redshift [[article]](powerbi-desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+  * Amazon Redshift [[article]](desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
   * Impala [[article]](desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 * Improvements to existing connectors:
   * Web connector - support for specifying a connection timeout  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
