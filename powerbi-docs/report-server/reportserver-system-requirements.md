@@ -71,7 +71,7 @@ You can use a live connection against tabular or multidimensional instances. You
 
 ## Next steps
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

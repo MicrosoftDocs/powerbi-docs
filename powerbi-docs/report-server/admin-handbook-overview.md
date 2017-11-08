@@ -23,7 +23,7 @@ ms.author: asaxton
 # Administrator handbook overview, Power BI Report Server
 Welcome to the administrator handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![](media/reportserver-admin-handbook-overview/admin-handbook.png)
+![](media/admin-handbook-overview/admin-handbook.png)
 
 This handbook will help you understand concepts on planning, deploying and managing your Power BI Report Server.
 

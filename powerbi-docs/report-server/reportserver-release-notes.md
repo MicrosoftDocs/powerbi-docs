@@ -66,7 +66,7 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 ## Next steps
 [What's new in Power BI Report Server](reportserver-whats-new.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

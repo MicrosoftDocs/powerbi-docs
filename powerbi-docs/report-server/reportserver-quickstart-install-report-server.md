@@ -57,7 +57,7 @@ Now that you are configured, you should be able to open a browser to the web por
 ![Power BI Report Server web portal](media/reportserver-quickstart-install-report-server/web-portal.png)
 
 ## Next steps
-[Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Administrator handbook](admin-handbook-overview.md)  
 [How to find your report server product key](reportserver-find-product-key.md)  
 [Install Power BI Report Server](reportserver-install-report-server.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  

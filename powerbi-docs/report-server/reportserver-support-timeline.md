@@ -44,7 +44,7 @@ For the current release notes, see [Power BI Report Server - Release notes](repo
 [What's new in Power BI Report Server](reportserver-whats-new.md)  
 [Power BI Report Server release notes](reportserver-release-notes.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

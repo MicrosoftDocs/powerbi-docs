@@ -73,7 +73,7 @@ Upgrading Power BI Report Server is straight forward. There are only a few steps
 After the report server is upgrade, you will want to make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
 
 ## Next steps
-[Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Administrator handbook](admin-handbook-overview.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
