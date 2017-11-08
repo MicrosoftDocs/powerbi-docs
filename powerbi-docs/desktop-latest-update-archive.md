@@ -942,7 +942,7 @@ Another month, another big collection of new features and improvements for Power
 
 ### Data Connectivity:
 * [SSAS Multidimensional support](powerbi-desktop-ssas-multidimensional.md)
-* [SAP Hana](powerbi-desktop-sap-hana.md)
+* [SAP Hana](desktop-sap-hana.md)
 * [R Script](desktop-r-scripts.md)
 * DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
 * Azure Data Lake

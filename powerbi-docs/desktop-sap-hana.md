@@ -25,11 +25,11 @@ With Power BI Desktop, you can now access **SAP HANA** databases. To use **SAP H
 
 To connect to a **SAP HANA** database, select **Get Data > Database > SAP HANA Database** as shown in the following image.
 
-![](media/powerbi-desktop-sap-hana/sap-hana-1.png)
+![](media/desktop-sap-hana/sap-hana-1.png)
 
 When connecting to a SAP HANA database, specify the server name and the port in the format *server:port* - the following image shows an example with a server named *ServerXYZ* and port *30015*.
 
-![](media/powerbi-desktop-sap-hana/sap-hana-2.png)
+![](media/desktop-sap-hana/sap-hana-2.png)
 
 In this release **SAP HANA** in [DirectQuery](powerbi-desktop-use-directquery.md) mode is supported in Power BI Desktop and the Power BI Service, and you can publish and upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. You can also publish and upload reports to the Power BI Service when not using **SAP HANA** in DirectQuery mode.
 
