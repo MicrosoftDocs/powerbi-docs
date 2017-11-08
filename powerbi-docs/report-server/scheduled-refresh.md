@@ -27,7 +27,7 @@ Scheduled refresh for Power BI reports allows the data for a report to stay up t
 
 Scheduled refresh is specific to Power BI reports with an embedded model. Meaning you imported data into the report instead of using a live connection or DirectQuery. When importing your data, it is disconnected from the original data source and needs to be updated to keep data fresh. Scheduled refresh is the way to keep your data up to date.
 
-Scheduled refresh is configured within the management section of a report. For more information on how to configure scheduled refresh, see [How to configure Power BI report scheduled refresh](reportserver-configure-scheduled-refresh.md).
+Scheduled refresh is configured within the management section of a report. For more information on how to configure scheduled refresh, see [How to configure Power BI report scheduled refresh](configure-scheduled-refresh.md).
 
 ## How this works
 Several components are involved when using scheduled refresh for your Power BI reports.
@@ -69,7 +69,7 @@ For information about memory settings within Analysis Services, see [Memory Prop
 If your data source is set to use Windows credentials, Kerberos constrained delegation may need to be configured in order to work. For more information, see [Configure Windows authentication on the report server](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## Next steps
-Configure [scheduled refresh](reportserver-configure-scheduled-refresh.md) on a Power BI report.
+Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
