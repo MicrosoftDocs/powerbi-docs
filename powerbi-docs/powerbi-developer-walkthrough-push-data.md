@@ -26,7 +26,7 @@ With the Power BI API, you can push data into a Power BI dataset. For example, y
 Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](developer/create-an-azure-active-directory-tenant.md).
 
 ## Steps to push data into a dataset
-* Step 1: [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+* Step 1: [Register an app with Azure AD](developer/walkthrough-push-data-register-app-with-azure-ad.md)
 * Step 2: [Get an authentication access token](developer/walkthrough-push-data-get-token.md)
 * Step 3: [Create a dataset in Power BI](developer/walkthrough-push-data-create-dataset.md)
 * Step 4: [Get a dataset to add rows into a Power BI table](developer/walkthrough-push-data-get-datasets.md)
@@ -111,9 +111,9 @@ For a Power BI table schema, you can use the following data types.
 | String |Currently allows up to 128K characters. |
 
 ## Learn more about pushing data into Power BI
-To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](developer/walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
-[Next Step >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+[Next Step >](developer/walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## See also
 [Sign up for Power BI](developer/create-an-azure-active-directory-tenant.md)  
