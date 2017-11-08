@@ -25,18 +25,18 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 
 As a visual changes size, Power BI prioritizes the data view, for example removing padding and moving the legend to the top of the visual automatically, so the visual remains informative even as it gets smaller. Responsiveness is especially useful in visuals in the Power BI mobile app on phones.
 
-![Responsive visual resizing](media/powerbi-desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
+![Responsive visual resizing](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
 You can turn on responsiveness for any visual with X and Y axes, and slicers.
 
 ## Turn on responsiveness in Power BI Desktop
 1. In Power BI Desktop, on the **View** tab, make sure you're in **Desktop Layout**.
    
-    ![Desktop Layout icon](media/powerbi-desktop-create-responsive-visuals/power-bi-desktop-layout.png)
+    ![Desktop Layout icon](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Select a visual, and in the **Visualizations** pane select the **Format** section.
 3. Expand **General** > slide **Responsive** to **On**.
    
-    ![Responsive on](media/powerbi-desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Responsive on](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Now when you [create a report optimized for the phone](desktop-create-phone-report.md) and add this visual, it will resize gracefully.
 
@@ -47,7 +47,7 @@ You turn on responsiveness for a visual in a report in the Power BI service. You
 2. Select a visual, and in the **Visualizations** pane select the **Format** section.
 3. Expand **General** > slide **Responsive** to **On**.
    
-    ![Responsive on](media/powerbi-desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Responsive on](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Now when you [create a phone view of a dashboard](service-create-dashboard-mobile-phone-view.md) and add this visual, it will resize gracefully.
 

@@ -103,6 +103,6 @@ If hierarchy levels are defined in a visual, you can drill down into the detaile
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
-* [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
+* [Create responsive visuals optimized for any size](desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
