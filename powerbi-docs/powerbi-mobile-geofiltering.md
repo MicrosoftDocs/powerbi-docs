@@ -54,6 +54,6 @@ Read more about [setting up geographic filtering](powerbi-desktop-mobile-geofilt
 
 ### Next steps
 * [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
-* [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md) 
+* [Data categorization in Power BI Desktop](desktop-data-categorization.md) 
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

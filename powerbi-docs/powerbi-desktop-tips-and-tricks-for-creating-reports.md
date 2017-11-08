@@ -65,7 +65,7 @@ Some designations are ambiguous when considered in the context of multiple count
 You can always provide specific latitude and longitude locations.  When you do this, you'll also need to pass a Location field,  otherwise the data is aggregated by default, so the location of the latitude and longitude may not match what you expected.
 
 ## Categorizing geographic fields to hint Bing's geocoding
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the Data Category on the data fields.   In Power BI Desktop, select the desired table, go to the Advanced ribbon and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State or Province.  These data categories help Bing to correctly encode the date.To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
+In Power BI Desktop, you can ensure fields are correctly geocoded by setting the Data Category on the data fields.   In Power BI Desktop, select the desired table, go to the Advanced ribbon and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State or Province.  These data categories help Bing to correctly encode the date.To learn more, see [Data categorization in Power BI Desktop](desktop-data-categorization.md).
 
 ## Better geocoding with more specific locations
 Sometimes, even when setting the data categories for mapping is insufficient.  Within the query you can build a more specific location like a street address using the Query Editor in Power BI Desktop.  Use the Add Column feature to build a custom column.  Then build the desired location as follows: 

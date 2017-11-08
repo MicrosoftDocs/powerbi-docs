@@ -29,7 +29,7 @@ Here’s an example: When Power BI Desktop detects a column has numeric values, 
 
 But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
 
-![](media/powerbi-desktop-data-categorization/DataCategorizationTable.png)
+![](media/desktop-data-categorization/datacategorizationtable.png)
 
 Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation for a Country or a US State?  It’s not clear because a code like this can mean either one.  For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map.  Should Power BI Desktop show a picture of the world with countries highlighted or a picture of the United States with states highlighted?  You can specify a Data Category for data just like this. Data categorization further refines the information Power BI Desktop can use to provide the best visualizations.  
 
@@ -38,7 +38,7 @@ Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation
 1. In Report View or Data View, in the **Fields** list, select the field you want to be sorted by a different categorization.
 2. On the ribbon, in the **Data Tools Modeling** tab, click on the **Data Category:** drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
 
-![](media/powerbi-desktop-data-categorization/DataCategorization.gif)
+![](media/desktop-data-categorization/datacategorization.gif)
 
 And that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
 

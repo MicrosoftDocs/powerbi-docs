@@ -20,7 +20,7 @@ ms.author: maggies
 
 ---
 # Tag barcodes in Power BI Desktop for the mobile apps
-In Power BI Desktop, you can [categorize data](powerbi-desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. When you or your colleagues [scan a barcode on a product with the Power BI app](powerbi-mobile-scan-barcode-for-report.md) on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
+In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. When you or your colleagues [scan a barcode on a product with the Power BI app](powerbi-mobile-scan-barcode-for-report.md) on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
 
 1. In Power BI Desktop, switch to Data View.
 2. Select a column with barcode data. See the list of [supported barcode formats](#supported-barcode-formats) below.
@@ -49,6 +49,6 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 ## Next steps
 * [Scan a barcode from the Power BI app on your iPhone](powerbi-mobile-scan-barcode-for-report.md)
 * [Issue with scanning barcodes on an iPhone](powerbi-mobile-scan-barcode-for-report.md#issues-with-scanning-a-barcode)
-* [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
+* [Data categorization in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
