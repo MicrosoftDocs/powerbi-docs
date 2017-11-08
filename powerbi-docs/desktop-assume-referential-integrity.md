@@ -68,5 +68,5 @@ Learn more about [DirectQuery](powerbi-desktop-use-directquery.md)
 
 Get more information about [Relationships in Power BI](desktop-create-and-manage-relationships.md)
 
-Learn more about [Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md).
+Learn more about [Relationship View in Power BI Desktop](desktop-relationship-view.md).
 

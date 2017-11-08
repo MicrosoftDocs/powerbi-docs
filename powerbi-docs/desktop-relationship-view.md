@@ -25,7 +25,7 @@ ms.author: davidi
 
 Let’s take a look.
 
-![](media/powerbi-desktop-relationship-view/RelationshipView_FullScreen.png)
+![](media/desktop-relationship-view/relationshipview_fullscreen.png)
 
 **A.**  Relationship View icon – Click to show your model in Relationship View
 
