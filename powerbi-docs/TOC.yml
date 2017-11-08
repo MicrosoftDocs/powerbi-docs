@@ -599,7 +599,7 @@
     - name: "Office 365 dedicated - known issues"
       href: service-admin-office-365-dedicated-known-issues.md
     - name: "Troubleshooting Analyze in Excel"
-      href: powerbi-desktop-troubleshooting-analyze-in-excel.md
+      href: desktop-troubleshooting-analyze-in-excel.md
     - name: "Troubleshooting the On-Premises Data Gateway"
       href: service-gateway-onprem-tshoot.md
     - name: "Troubleshooting Power BI Gateway - Personal"
@@ -877,7 +877,7 @@
     - name: "View and interact with Power BI reports optimized for your phone"
       href: powerbi-mobile-view-phone-report.md
     - name: "Configure mobile apps with Intune"
-      href: powerbi-admin-mobile-intune.md
+      href: service-admin-mobile-intune.md
     - name: "Using OAuth to connect to Reporting Services"
       href: powerbi-mobile-oauth-ssrs.md
     - name: "Supported languages in the Power BI mobile apps"
@@ -965,13 +965,13 @@
   - name: Create a custom visual
     items: 
     - name: "Create a custom visual with the Developer Tools"
-      href: powerbi-custom-visuals-getting-started-with-developer-tools.md
+      href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Review custom visuals for security and privacy"
-      href: powerbi-custom-visuals-review-for-security-and-privacy.md
+      href: service-custom-visuals-review-for-security-and-privacy.md
     - name: "Publish custom visuals to the Office store"
       href: powerbi-developer-office-store.md
     - name: "Get a custom visual certified"
-      href: powerbi-custom-visuals-certified.md
+      href: power-bi-custom-visuals-certified.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"
