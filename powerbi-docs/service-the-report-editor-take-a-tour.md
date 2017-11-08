@@ -80,7 +80,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 Select the magnifying glass icon to display the Analytics pane. The option available depend on the type of visualization selected.
 
 ![](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](service-analytics-pane.md) or [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md).
+With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](service-analytics-pane.md) or [Analytics pane in Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
 ## The Filters pane
