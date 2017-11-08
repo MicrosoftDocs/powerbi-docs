@@ -21,14 +21,14 @@ ms.author: asaxton
 
 ---
 # Step 2: Get an authentication access token
-This article is part of a step-by-step walkthrough to [push data into a dataset](../powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 In **step 1** of Push data into a dataset, [Register the app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
 
 Here's how to get an authentication access token.
 
 ## Get an authentication access token
-> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](../powerbi-developer-walkthrough-push-data.md) walkthrough.
+> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
 > 
 > 
 
@@ -183,7 +183,7 @@ Below is the [complete code listing](#code).
 [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

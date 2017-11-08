@@ -23,14 +23,14 @@ ms.author: asaxton
 # Push data into a Power BI dataset
 With the Power BI API, you can push data into a Power BI dataset. For example, you want to extend an existing business workflow to push key data into your dataset. In this case, you want to push a Sales Marketing dataset which has a Product table into a dataset.
 
-Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](developer/create-an-azure-active-directory-tenant.md).
+Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](create-an-azure-active-directory-tenant.md).
 
 ## Steps to push data into a dataset
-* Step 1: [Register an app with Azure AD](developer/walkthrough-push-data-register-app-with-azure-ad.md)
-* Step 2: [Get an authentication access token](developer/walkthrough-push-data-get-token.md)
-* Step 3: [Create a dataset in Power BI](developer/walkthrough-push-data-create-dataset.md)
-* Step 4: [Get a dataset to add rows into a Power BI table](developer/walkthrough-push-data-get-datasets.md)
-* Step 5: [Add rows to a Power BI table](developer/walkthrough-push-data-add-rows.md)
+* Step 1: [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
+* Step 2: [Get an authentication access token](walkthrough-push-data-get-token.md)
+* Step 3: [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
+* Step 4: [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)
+* Step 5: [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)
 
 The next section is a general discussion of Power BI API operations that push data.
 
@@ -111,18 +111,18 @@ For a Power BI table schema, you can use the following data types.
 | String |Currently allows up to 128K characters. |
 
 ## Learn more about pushing data into Power BI
-To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](developer/walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
-[Next Step >](developer/walkthrough-push-data-register-app-with-azure-ad.md)
+[Next Step >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## See also
-[Sign up for Power BI](developer/create-an-azure-active-directory-tenant.md)  
+[Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
 [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introducing JSON](http://json.org/)  
-[Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
+[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

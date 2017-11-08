@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # Step 3: Create a dataset in Power BI
-This article is part of a step-by-step walkthrough to [push data into a dataset](../powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 In **step 2** of Push data into a dataset, [Get an authentication access token](walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
 
@@ -37,7 +37,7 @@ Here's how to create a dataset in Power BI.
 
 ## Create a dataset in Power BI
 > [!NOTE]
-> Before you get started, make sure you have followed the previous steps in the [push data into a dataset](../powerbi-developer-walkthrough-push-data.md) walkthrough.
+> Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
 > 
 > 
 
@@ -233,7 +233,7 @@ Below is the [complete code listing](#code).
 [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Push data into a Power BI Dashboard](../powerbi-developer-walkthrough-push-data.md)  
+[Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  

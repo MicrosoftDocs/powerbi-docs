@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # Step 1: Register an app with Azure AD
-This article is part of a step-by-step walkthrough to [push data into a dataset](../powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 The first step to push data into a Power BI dataset is to register your app in Azure AD. You need to do this first so that you have a **Client ID** that identifies your app in Azure AD. Without a **Client ID**, Azure AD cannot authenticate your app.
 
@@ -51,7 +51,7 @@ The next step shows you how to [get an authentication access token](walkthrough-
 ## See also
 [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
-[Walkthrough: Push data into a dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Walkthrough: Push data into a dataset](walkthrough-push-data.md)  
 [Register an application](register-app.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 

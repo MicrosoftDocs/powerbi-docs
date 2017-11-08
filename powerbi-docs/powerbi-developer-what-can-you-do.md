@@ -38,7 +38,7 @@ For more information about how to develop and publish a custom visual, see [Publ
 ## Push data into Power BI
 You can use the Power BI API to push data into a dataset. This allows you to add a row to a table within a dataset. The new data can then be reflected in tiles on a dashboard and within visuals within your report.
 
-For more information, see [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
+For more information, see [Push data into a dashboard](developer/walkthrough-push-data.md)
 
 ## Next steps
 [Embedding with Power BI](developer/embedding.md)  

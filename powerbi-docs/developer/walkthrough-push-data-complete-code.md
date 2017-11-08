@@ -21,7 +21,7 @@ ms.author: asaxton
 
 ---
 # Push data to a dataset complete code listing
-This article is part of a step-by-step walkthrough to [push data into a dataset](../powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
@@ -225,8 +225,8 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 
 ## See also
-[Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
-[Walkthrough - Push data into a Power BI dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Push data into a Power BI dataset](walkthrough-push-data.md)  
+[Walkthrough - Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
 [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
