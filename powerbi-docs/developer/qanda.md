@@ -23,7 +23,7 @@ ms.author: asaxton
 # Q&A in Power BI Embedded
 Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
 
-![Q&A Interactive question in an embedded frame](media/powerbi-developer-qanda/embedded-qanda.gif)
+![Q&A Interactive question in an embedded frame](media/qanda/embedded-qanda.gif)
 
 There are two modes for embedding Q&A within your application: **interactive** and **result only**. **Interactive** mode allows you to type in questions and have them displayed within the visual. If you have a saved question, or a set question you want to display, you can use the **result only** mode by populating the question in your embed config.
 
