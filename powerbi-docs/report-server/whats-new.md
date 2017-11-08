@@ -31,7 +31,7 @@ For related "What's New" information, see:
 
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
-* [What's new in the mobile apps for Power BI](../powerbi-mobile-whats-new-in-the-mobile-apps.md)
+* [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 * [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
 ## October 2017 release

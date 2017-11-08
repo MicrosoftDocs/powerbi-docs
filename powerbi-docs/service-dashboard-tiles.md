@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Dashboard tiles in Power BI
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](powerbi-mobile-tiles-in-the-iphone-app.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](powerbi-mobile-iphone-app-get-started.md).
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](mobile-iphone-app-get-started.md).
 
 ## Dashboard tiles
 ![](media/service-dashboard-tiles/power-bi-dashboard.png)

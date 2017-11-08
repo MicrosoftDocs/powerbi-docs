@@ -24,7 +24,7 @@ ms.author: sirsu
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
-* [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+* [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
 * [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
 You can also check out the YouTube channels for information about "What's new" and features.
