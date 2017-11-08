@@ -77,7 +77,7 @@ The master account is just a regular user with a Power BI Pro license that you u
 You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
 
 ### Create app workspaces
-If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](powerbi-service-create-apps.md#create-an-app-workspace).
+If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](service-create-distribute-apps.md#create-an-app-workspace).
 
 The *master* account, that was mentioned above, must be an admin of the app workspace.
 
@@ -117,7 +117,7 @@ Free users can consume content that is embedded from an app workspace (group), i
 | P3 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
 > [!NOTE]
-> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+> You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
 > 
 > 
 
@@ -142,13 +142,13 @@ If you are embedding for your customers, you will want to do the following.
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
 ## Admin settings
-Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](powerbi-admin-portal.md).
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](service-admin-portal.md).
 
 ## Next steps
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
-[How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
+[Power BI Premium - what is it?](service-premium.md)  
+[How to purchase Power BI Premium](service-admin-premium-purchase.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

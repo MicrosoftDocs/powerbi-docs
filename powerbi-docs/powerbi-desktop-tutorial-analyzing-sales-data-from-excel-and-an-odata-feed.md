@@ -193,7 +193,7 @@ In this task, you confirm that a relationship is established in Power BI Desktop
 9. No need to make any changes, so we'll just select **Cancel** to close the **Edit Relationship** dialog.
 
 ## Task 4: Build visuals using your data
-Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](powerbi-service-interact-with-a-report-in-editing-view.md).
+Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
 
 In this task, you create a report based on the data previously loaded. You use the Fields pane to select the columns from which you create the visualizations.
 
@@ -211,7 +211,7 @@ Drag **OrderDate** to the canvas beneath the first chart, then drag LineTotal (a
 ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 ### Step 2: Interact with your report visuals to analyze further
-Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](power-bi-reports-filters-and-highlighting.md)
 
 1. Click on the light blue circle centered in **Canad****a.** Note how the other visuals are filtered to show Stock (**ShipCountry**) and Total Orders (**LineTotal**) just for Canada.
    

@@ -109,6 +109,6 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 3. Tap **Remove Server**.
 
 ## Next steps
-* [Get started with Power BI](powerbi-service-get-started.md)  
+* [Get started with Power BI](service-get-started.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

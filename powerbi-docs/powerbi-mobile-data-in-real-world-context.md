@@ -30,13 +30,13 @@ Create a QR code for a tile in a dashboard, and put the QR code anywhere you wan
 
 More about:
 
-* [Creating a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
+* [Creating a QR code for a tile in Power BI](service-create-qr-code-for-tile.md)
 * [Scanning a Power BI QR code from your mobile device](powerbi-mobile-qr-code-for-tile.md)
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones are coming soon), they see the report you've associated with that QR code. 
 
-More about [creating a QR code for a report in Power BI](powerbi-service-qr-code-for-report.md)
+More about [creating a QR code for a report in Power BI](service-create-qr-code-for-report.md)
 
 ## Barcodes
 Tag barcode data in your report so your colleagues can scan a barcode on a product and go straight to that report, filtered for that product.
@@ -54,6 +54,6 @@ Categorize geographical data in a report in Power BI Desktop. Then your colleagu
 More about [filtering by location](powerbi-mobile-geofiltering.md).
 
 ## Next steps
-* [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
-* [Create a QR code for a report in Power BI](powerbi-service-qr-code-for-report.md)
+* [Create a QR code for a tile in Power BI](service-create-qr-code-for-tile.md)
+* [Create a QR code for a report in Power BI](service-create-qr-code-for-report.md)
 

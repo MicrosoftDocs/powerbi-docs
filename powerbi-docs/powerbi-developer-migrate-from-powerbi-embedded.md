@@ -173,7 +173,7 @@ When you are ready to move to production, you will need to do the following.
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 * Purchase a capacity that fits your needs. You can use the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
   
-  > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+  > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
   > 
   > 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
@@ -192,7 +192,7 @@ You should do some cleanup within Azure.
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
 [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
-[Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium - what is it?](service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

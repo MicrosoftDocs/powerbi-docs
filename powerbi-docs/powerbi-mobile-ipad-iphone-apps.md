@@ -44,7 +44,7 @@ On your **iPad**, the Power BI mobile app displays dashboards and reports the wa
 Download the [Power BI app for iOS](http://go.microsoft.com/fwlink/?LinkId=522062) on an iPad, and [get started](powerbi-mobile-ipad-app-get-started.md).
 
 ## Get started with Power BI
-Start by [getting your data](powerbi-service-get-data.md) from sources as varied as Excel spreadsheets, SQL Server Analysis Services, Salesforce, and GitHub. Then bring your data together by creating [dashboards](powerbi-service-dashboards.md) and [reports](powerbi-service-reports.md) in Power BI.
+Start by [getting your data](service-get-data.md) from sources as varied as Excel spreadsheets, SQL Server Analysis Services, Salesforce, and GitHub. Then bring your data together by creating [dashboards](service-dashboards.md) and [reports](service-reports.md) in Power BI.
 
 Now experience your data in the Power BI apps for iOS.
 

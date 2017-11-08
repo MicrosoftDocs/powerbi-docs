@@ -83,8 +83,8 @@ There are many published articles describing how to define row level dynamic sec
 
 ## Task 3: Adding Data Sources within your On-premises Data Gateway
 1. Once your tabular model is deployed and ready for consumption, you need to add a data source connection to your on-premises Analysis Services tabular server with in your Power BI portal.
-2. To allow the **Power BI service** access your on-premises analysis service, you need to have an **[On-premises Data Gateway](powerbi-gateway-onprem.md)** installed and configured in your environment.
-3. Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source within the Power BI portal](powerbi-gateway-enterprise-manage-ssas.md).
+2. To allow the **Power BI service** access your on-premises analysis service, you need to have an **[On-premises Data Gateway](service-gateway-onprem.md)** installed and configured in your environment.
+3. Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source within the Power BI portal](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/PBI_Gateway.png)
 4. With the previous step complete, the gateway is configured and ready interact with your on-premises **Analysis Services** data source.

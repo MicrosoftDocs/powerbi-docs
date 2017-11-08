@@ -25,7 +25,7 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
-* [What's new in the Power BI service](powerbi-service-whats-new.md)  
+* [What's new in the Power BI service](service-whats-new.md)  
 
 ## September 2017
 ### Filters for phone reports in iPhones
@@ -50,7 +50,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](powerbi-service-what-are-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](service-install-use-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices
@@ -241,7 +241,7 @@ This custom visualization is now available on the Surface Hub
 **Favorites** 
 View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
-**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](powerbi-service-data-classification.md).
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](service-data-classification.md).
 
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
@@ -260,7 +260,7 @@ Manually refresh your tiles by opening the dashboard in the Power BI mobile app 
 **Support for Intune MAM**
 Added support for Microsoft Intune mobile application management (MAM) capabilities.
 
-Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
+Read more about [Microsoft Intune on Power BI mobile apps](service-admin-mobile-intune.md).
 
 #### Windows 10 devices
 **Full-screen and presentation modes**
@@ -268,7 +268,7 @@ Display reports in presentation mode on Surface Hub, and display dashboards, rep
 
 ### July 2016
 #### All phones
-In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+In the Power BI service you can now [create a view of a dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 #### Android phones
 **Favorites tab**
@@ -412,7 +412,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](powerbi-content-pack-bing.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](service-connect-to-bing.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 
@@ -446,14 +446,14 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 * Improved chart data capacity.
 
 #### iOS and Android mobile apps
-* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](powerbi-admin-mobile-intune.md) to manage devices and applications.
+* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](powerbi-mobile-iphone-app-get-started.md) directly from your iPhone.
-* [Create QR codes in the Power BI service](powerbi-service-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
+* [Create QR codes in the Power BI service](service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
-* [Link directly from a tile to a specific URL](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink).
+* [Link directly from a tile to a specific URL](service-dashboard-edit-tile.md#hyperlink).
 
 ### October 2015
 Read the [mid-October Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).

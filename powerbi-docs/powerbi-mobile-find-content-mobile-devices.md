@@ -54,7 +54,7 @@ You can get back to the app content list by tapping the breadcrumb arrow to the 
 
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-it-spend-app-android.png)
 
-Read more about [apps in the Power BI service](powerbi-service-what-are-apps.md).
+Read more about [apps in the Power BI service](service-install-use-apps.md).
 
 ### Get an app on a mobile device
 In the Power BI mobile apps, you can view all the apps you've already installed. An app owner can send you a direct link to an app. When you click the link, the app downloads to your account and opens in the Power BI mobile app. 
@@ -73,7 +73,7 @@ In the mobile apps, you can view and interact with content in any workspace wher
 
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-mobile-workspaces-home-android.png)
 
-Read more about [apps in the Power BI service](powerbi-service-what-are-apps.md).
+Read more about [apps in the Power BI service](service-install-use-apps.md).
 
 ## Search
 You can always search for your Power BI contents, from the **Favorites**, **Apps**, **Shared with me**, or **Workspaces** pages. The search results will show you all the dashboards, reports, and apps from every location that match your search. 
@@ -81,6 +81,6 @@ You can always search for your Power BI contents, from the **Favorites**, **Apps
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-mobile-search.png)
 
 ## Next steps
-* [Get started with Power BI](powerbi-service-get-started.md)
+* [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

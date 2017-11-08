@@ -25,7 +25,7 @@ Row level security (RLS) can be used to restrict user access to data within a re
 
 If you are embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You will need to configure the embed token to account for the user and role. Read on to learn how to do this.
 
-If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information see, [Row-Level security (RLS) with Power BI](powerbi-admin-rls.md).
+If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information see, [Row-Level security (RLS) with Power BI](service-admin-rls.md).
 
 ![Items involved with Row-Level Security.](media/powerbi-developer-embedded-rls/powerbi-embedded-rls-components.png)
 
@@ -131,7 +131,7 @@ The effective identity that is provided for the username property must be a wind
 
 **On-Premises Data Gateway configuration**
 
-An [On-premises data gateway](powerbi-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [On-premises data gateway](service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 **Use of roles**
 

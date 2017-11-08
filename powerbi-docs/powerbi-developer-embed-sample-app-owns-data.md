@@ -25,7 +25,7 @@ Learn how to integrate, or embed, a dashboard, tile or report, into a web app us
 
 ![Embedded dashboard](media/powerbi-developer-embed-sample-app-owns-data/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](powerbi-service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
+To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](powerbi-developer-integrate-dashboard.md).

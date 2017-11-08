@@ -60,7 +60,7 @@ A report may have a mix of pages that are and aren't optimized for phones. If so
 Read more about [reports optimized for phone view](powerbi-mobile-view-phone-report.md).
 
 ## Use slicers to filter a report page
-When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](powerbi-service-tutorial-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
+When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](power-bi-visualization-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
 
 * When you select a value in a slicer on the report page, it filters the other visuals on the page.
   
@@ -84,7 +84,7 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
 ## Drill down and up in a visual on an iPad or a tablet
-If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service. 
+If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
 
 > [!NOTE]
 > Currently, drill-down doesn't work on maps in the iPad or tablet.

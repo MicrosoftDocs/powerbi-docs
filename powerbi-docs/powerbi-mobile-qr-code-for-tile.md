@@ -29,7 +29,7 @@ Applies to:
 
 QR codes in Power BI can connect any item in the real world directly to related BI information &#151; no navigation or search needed.
 
-Say a colleague has [created a QR code in the Power BI service](powerbi-service-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
+Say a colleague has [created a QR code in the Power BI service](service-create-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
 
 You can scan the QR code for immediate access to the relevant tile or report, right from your phone, using either the scanner in the Power BI app, or any other scanner installed on your phone. 
 
@@ -75,7 +75,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 ## Next steps
 * [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
-* [Create a QR code for a tile in the Power BI service](powerbi-service-qr-code-for-tile.md)
-* [Create a QR code for a report in the Power BI service](powerbi-service-qr-code-for-report.md)
+* [Create a QR code for a tile in the Power BI service](service-create-qr-code-for-tile.md)
+* [Create a QR code for a report in the Power BI service](service-create-qr-code-for-report.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

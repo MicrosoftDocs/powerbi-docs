@@ -86,8 +86,8 @@ Once that visual is complete, and any other visuals we might want to create usin
 
 Once you've uploaded the .pbix file to the Power BI service, a couple more steps are necessary to enable data refresh (in the service) and to enable visuals to be updated in the service (the data needs access to R for visuals to be updated). The additional steps are the following:
 
-* **Enable scheduled refresh for the dataset** - to enable scheduled refresh for the workbook that contains your dataset with R scripts, see [Configuring scheduled refresh](powerbi-refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
-* **Install the Personal Gateway** - you need a **Personal Gateway** installed on the machine where the file is located, and where R is installed; the Power BI service must access that workbook and re-render any updated visuals. You can get more information on how to [install and configure Personal Gateway](powerbi-personal-gateway.md).
+* **Enable scheduled refresh for the dataset** - to enable scheduled refresh for the workbook that contains your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
+* **Install the Personal Gateway** - you need a **Personal Gateway** installed on the machine where the file is located, and where R is installed; the Power BI service must access that workbook and re-render any updated visuals. You can get more information on how to [install and configure Personal Gateway](personal-gateway.md).
 
 ## Limitations
 There are some limitations to queries that include R scripts created in **Query Editor**:

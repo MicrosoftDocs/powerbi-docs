@@ -49,11 +49,11 @@ You turn on responsiveness for a visual in a report in the Power BI service. You
    
     ![Responsive on](media/powerbi-desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
-     Now when you [create a phone view of a dashboard](powerbi-service-create-dashboard-phone-view.md) and add this visual, it will resize gracefully.
+     Now when you [create a phone view of a dashboard](service-create-dashboard-mobile-phone-view.md) and add this visual, it will resize gracefully.
 
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
-* [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+* [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

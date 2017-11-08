@@ -82,12 +82,12 @@ Slicers offer on-canvas filtering of report data. When designing slicers in the 
 * Make the slicer vertical or horizontal. 
 * Put a box around the slicer to make the report easier to scan.
 
-Read more about [creating slicers in the Power BI service](powerbi-learning-3-4-create-slicers.md).
+Read more about [creating slicers in the Power BI service](guided-learning/visualizations.yml#step-4).
 
 ## Publish a phone report
 * To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](powerbi-desktop-upload-desktop-files.md), and the phone version publishes at the same time.
   
-    Read more about [sharing and permissions in Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
+    Read more about [sharing and permissions in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## View optimized and unoptimized reports on a phone
 In the mobile apps on phones, Power BI automatically detects optimized and unoptimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
@@ -103,7 +103,7 @@ If you only optimize some pages, readers will see a message in portrait view, in
 Report readers can turn their phones sideways to see the page in landscape mode. Read more about [interacting with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md).
 
 ## Next steps
-* [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+* [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
 * [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -34,7 +34,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/power-bi/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-MSPowerBI",
       "contributors_to_exclude": ["openpublishingbuild","sudeepku"],      
       "searchScope": ["Power-BI"],

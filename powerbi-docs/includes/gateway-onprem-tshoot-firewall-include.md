@@ -1,5 +1,5 @@
 ## Firewall or Proxy
-For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI Gateways](../powerbi-gateway-proxy.md).
+For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI Gateways](../service-gateway-proxy.md).
 
 You can test to see if your firewall, or proxy, may be blocking conections by running [Test-NetConnection](https://technet.microsoft.com/library/dn372891.aspx) from a PowerShell prompt. This will test connectivity to the Azure Service Bus. This only tests network connectivity and doesn't have anything to do with the cloud server service or the gateway. It helps to determine if your machine can actually get out to the internet.
 
@@ -21,7 +21,7 @@ The results should look similar to the following. The difference will be with Tc
     PingReplyDetails (RTT) : 0 ms
     TcpTestSucceeded       : True
 
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](../powerbi-gateway-onprem.md#ports)
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](../service-gateway-onprem.md#ports)
 
 The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you will want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
 

@@ -29,7 +29,7 @@ Applies to:
 
 On the Favorites page in the mobile apps, you see your favorite Power BI dashboards and apps, together with favorite on-premises Power BI Report Server and Reporting Services KPIs and mobile reports. When you make a dashboard or an app a *favorite* in the Power BI mobile apps, you see it on your Favorites page the Power BI service ([https://powerbi.com](https://powerbi.com)) and all of your mobile devices. 
 
-You can also [make Power BI dashboards and apps favorites in the Power BI service](powerbi-service-favorite-dashboards.md). Then you see them on the Favorites page in the mobile app.
+You can also [make Power BI dashboards and apps favorites in the Power BI service](service-dashboard-favorite.md). Then you see them on the Favorites page in the mobile app.
 
 You can mark KPIs and reports as favorites on a Power BI Report Server or Reporting Services web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards.
 
@@ -75,6 +75,6 @@ You can make a dashboard a favorite from the list of dashboards or from the dash
 You can view your favorite Power BI Report Server and Reporting Services reports and KPIs in the Power BI mobile apps, but you can't make them favorites in the mobile apps. You [tag them as favorites in the web portal](report-server/reportserver-getting-around.md#tag-your-favorite-reports-and-kpis). 
 
 ## Next steps
-* [Favorite dashboards in the Power BI service](powerbi-service-favorite-dashboards.md) 
+* [Favorite dashboards in the Power BI service](service-dashboard-favorite.md) 
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -47,7 +47,7 @@ If a phone-optimized report has filters defined, when you view the report on an 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
-Read more about [filtering and highlighting in Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).
+Read more about [filtering and highlighting in Power BI](power-bi-reports-filters-and-highlighting.md).
 
 ## Select visuals
 In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
@@ -76,7 +76,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
     Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.   
 
 ## Drill down in a visual
-If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md) either in the Power BI service or in Power BI Desktop. Drill-down only works in phone-optimized Power BI reports when you view them on a phone. 
+If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](power-bi-visualization-drill-down.md) either in the Power BI service or in Power BI Desktop. Drill-down only works in phone-optimized Power BI reports when you view them on a phone. 
 
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
    
@@ -102,7 +102,7 @@ If hierarchy levels are defined in a visual, you can drill down into the detaile
 
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
-* [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+* [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
