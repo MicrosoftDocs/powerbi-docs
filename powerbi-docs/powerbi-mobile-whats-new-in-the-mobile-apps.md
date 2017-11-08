@@ -96,7 +96,7 @@ Try asking questions of your data with Q&A, and then give us a smiley or frowny 
 Deep-press the Power BI app icon on the home screen of your iPhone 6s or later to access notifications, search, and recently used dashboards.
 
 **Support for right-to-left languages**
-Power BI mobile apps now support right-to-left languages. In this context, "right-to-left languages" refers to Hebrew and Arabic writing systems, which are written from right to left and require contextual shaping. See the list of [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md).
+Power BI mobile apps now support right-to-left languages. In this context, "right-to-left languages" refers to Hebrew and Arabic writing systems, which are written from right to left and require contextual shaping. See the list of [Supported languages in the Power BI mobile apps](mobile-apps-supported-languages.md).
 
 #### Android devices
 **Connect to more than one SSRS server** 
