@@ -351,7 +351,7 @@ See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/pow
 
 #### Power BI app for Windows 10 devices
 * **Presentation mode** Display Power BI dashboards and reports in presentation mode from the Power BI app.
-* **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
+* **SQL Server 2016 [Reporting Services mobile reports](mobile-app-windows-10-ssrs-kpis-mobile-reports.md)** now on Windows 10 devices.
 * See **data tooltips** when you hover your mouse over a dashboard tile.
 
 ### March 2016

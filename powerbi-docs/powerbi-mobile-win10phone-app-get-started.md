@@ -121,7 +121,7 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * Share [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
 
 ### Reporting Services mobile reports and KPIs
-* [View Reporting Services mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
+* [View Reporting Services mobile reports and KPIs](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
 * Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 * [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
