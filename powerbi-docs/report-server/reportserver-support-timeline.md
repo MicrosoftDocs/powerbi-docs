@@ -38,11 +38,11 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
+For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 
 ## Next steps
 [What's new in Power BI Report Server](reportserver-whats-new.md)  
-[Power BI Report Server release notes](reportserver-release-notes.md)  
+[Power BI Report Server release notes](release-notes.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  

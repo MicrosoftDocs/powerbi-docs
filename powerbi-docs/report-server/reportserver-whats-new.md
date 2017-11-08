@@ -25,7 +25,7 @@ Learn about what's new in Power BI Report Server. This covers the major feature 
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-![tip](media/reportserver-whats-new/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
+![tip](media/reportserver-whats-new/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 
 For related "What's New" information, see:
 
@@ -108,7 +108,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 * Enhanced collaboration in reports with comments
 
 ## Next steps
-[Power BI Report Server release notes](reportserver-release-notes.md)  
+[Power BI Report Server release notes](release-notes.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
