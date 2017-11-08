@@ -49,7 +49,7 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 ![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
 
 ## Next steps
-[Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
+[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

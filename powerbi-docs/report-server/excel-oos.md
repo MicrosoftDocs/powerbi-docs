@@ -180,7 +180,7 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 ## Next steps
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
+[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
