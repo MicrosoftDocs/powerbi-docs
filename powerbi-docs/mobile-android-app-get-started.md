@@ -32,14 +32,14 @@ You create Power BI reports in Power BI Desktop, and publish them:
 
 Then in the Power BI app for Android phones, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
-Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## First things first
 * **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
   Power BI can run on a number of different Android phones. Your phone needs to be running the Android 5.0 operating system, or later. To check on your phone, go to **Settings** > **About device** > **Android version**. 
 * **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
-* Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+* Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
 If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android phone to see your own dashboards from anywhere.

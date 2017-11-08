@@ -27,7 +27,7 @@ You view your Power BI dashboards and reports in the Power BI service ([https://
 
 ## See what's new in the Power BI mobile apps
 * Read the [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/tag/mobile/) for new features in the mobile apps.
-* See the list of [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+* See the list of [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## The Power BI mobile apps
 | **Device** | **Highlights** |

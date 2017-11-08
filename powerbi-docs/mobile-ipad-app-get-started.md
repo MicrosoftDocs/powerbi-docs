@@ -32,7 +32,7 @@ You create Power BI reports in Power BI Desktop, and publish them:
 
 Then in the Power BI app for the iPad, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
-Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Download the iOS app for the iPad
 [Download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store.

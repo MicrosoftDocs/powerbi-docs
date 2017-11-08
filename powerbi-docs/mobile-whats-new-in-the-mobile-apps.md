@@ -462,15 +462,15 @@ Read the [mid-October Power BI mobile blog post](http://blogs.msdn.com/b/powerbi
 * Line charts with a percentage-based Y-axis now calculate the visual range according to your actual data. The graph now starts from the lowest data point in the chart, instead of from a default value.
 * Line, column, and bar charts can now have data labels. 
   
-    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_MobileLineChart.png)
+    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 
 #### iPhone
 * Stay up to date with your groups' newest dashboards -- receive notifications on your iPhone each time a team member adds a dashboard to one of your groups.
   
-    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_iPh_GrpDashAlertCrop.png)
+    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * You can now view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
   
-    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_iPh_Landscape.png)
+    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### September 2015
 Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows. Read the [mid-September Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).

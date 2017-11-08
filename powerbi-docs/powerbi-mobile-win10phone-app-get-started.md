@@ -36,7 +36,7 @@ Then interact with your dashboards and reports, explore the data, and share them
   > Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
   > 
   > 
-* Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+* Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
 If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
