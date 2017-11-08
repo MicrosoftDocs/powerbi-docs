@@ -78,7 +78,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
    ![Reporting Services samples](media/powerbi-mobile-ipad-app-get-started/power-bi-reporting-services-samples.png)
 
 ## Find your content in the Power BI mobile apps
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![Left navigation pane](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-left-nav.png)
 

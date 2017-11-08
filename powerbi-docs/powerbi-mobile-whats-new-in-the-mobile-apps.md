@@ -60,7 +60,7 @@ Go to Shared with me in the mobile app menu to see all the content that's been s
 **New menu: Apps**
 An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
 
-Read more about [how your Power BI content is organized](powerbi-mobile-find-content-mobile-devices.md).
+Read more about [how your Power BI content is organized](mobile-apps-find-content-mobile-devices.md).
 
 #### iOS and Android devices
 **Power BI Report Server preview**
