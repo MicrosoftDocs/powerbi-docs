@@ -45,7 +45,7 @@ For information on how to monitor an Analysis Services instance, see [Monitor an
 For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
 ### Kerberos configuration
-Connecting to a data source with windows credentials may require configuring Kerberos constrained delegation to make a successful connection. For more information about how to configure Kerberos constrained delegation, see [Configure Kerberos to use Power BI reports](reportserver-configure-kerberos-powerbi-reports.md).
+Connecting to a data source with windows credentials may require configuring Kerberos constrained delegation to make a successful connection. For more information about how to configure Kerberos constrained delegation, see [Configure Kerberos to use Power BI reports](configure-kerberos-powerbi-reports.md).
 
 ## Known issues
 Information about known issues will be listed here when they become available.
