@@ -30,7 +30,7 @@ When using **SAP HANA** it is important to understand some aspects of how connec
 
 It's useful to start by taking a moment to clarify the behavior of a relational source such as **SQL Server**, when the query defined in **Get Data** or **Query Editor** performs an aggregation. In the example that follows, a query defined in  **Query Editor** returns the average price by **ProductID**.
 
-![](media/powerbi-desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 If the data is being imported into Power BI (versus using DirectQuery), the following would result:
 
@@ -48,7 +48,7 @@ However, given the nature of HANA, the query defined in the initial **Get Data**
 
 The equivalent of the SQL Server example above is that there is a HANA view containing **ID**, **ProductID**, **DepotID**, and measures including **AveragePrice**, defined in the view as **Average of Price**.
 
-![](media/powerbi-desktop-directquery-sap-hana/directquery-sap-hana_02.png)
+![](media/desktop-directquery-sap-hana/directquery-sap-hana_02.png)
 
 If, in the **Get Data** experience, the selections made were for **ProductID** and the **AveragePrice** measure, then that is defining a query over the view, requesting that aggregate data (in the example above, for simplicity pseudo-SQL is used that doesn’t match the exact syntax of HANA SQL). Then any further aggregations defined in a visual are further aggregating the results of such a query. Again, as described above for **SQL Server**, this applies both for the Import and DirectQuery case. Note that in the DirectQuery case, the query from **Get Data** or **Query Editor** will be used in a subselect within a single query sent to HANA, and thus it is not actually the case that all the data would be read in, prior to aggregating further.
 
@@ -59,7 +59,7 @@ This gives rise to the following important considerations when using DirectQuery
 
 Let's look at an example. In the following example, selecting five columns (CalendarQuarter, Color, LastName, ProductLine, SalesOrderNumber) in the **Get Data** dialog, along with the measure OrderQuantity, will mean that later creating a simple visual containing the Min OrderQuantity will result in the following SQL query to HANA. The shaded portion is the subselect, containing the query from **Get Data** / **Query Editor**. If this subselect gives a very high cardinality result, then it is likely the resulting HANA performance will be poor.
 
-![](media/powerbi-desktop-directquery-sap-hana/directquery-sap-hana_03.png)
+![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
 Because of this, it is recommended that the items selected in **Get Data** or **Query Editor** should be limited to those items that are needed, while still resulting in a reasonable query for HANA.
 
