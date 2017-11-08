@@ -48,7 +48,7 @@ A template content pack is similar to existing solutions except that it does not
 After a user instantiates the content pack they have access to the dataset settings including scheduled refresh, any RLS settings on the dataset are **not** published with the content pack.  
 
 > [!NOTE]
-> Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](powerbi-developer-content-pack-authoring.md#restrictions)  page. 
+> Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](developer/template-content-pack-authoring.md#restrictions)  page. 
 > 
 > 
 

@@ -23,10 +23,10 @@ ms.author: asaxton
 # Author template content packs in Power BI
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
-* Queries allow you to [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
-* Data model to create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements  
-* Report [pages](desktop-report-view.md) include visuals and filters to provide insights into your data  
-* [Dashboard](service-dashboards.md) and [tiles](service-dashboard-create.md) offer an overview of the insights included  
+* Queries allow you to [connect](../desktop-connect-to-data.md) and [transform](../desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
+* Data model to create [relationships](../desktop-create-and-manage-relationships.md), [measures](../desktop-measures.md), and Q&A improvements  
+* Report [pages](../desktop-report-view.md) include visuals and filters to provide insights into your data  
+* [Dashboard](../service-dashboards.md) and [tiles](../service-dashboard-create.md) offer an overview of the insights included  
 
 You may be familiar with each piece as existing Power BI features. When building a content pack, there are additional things to consider for each aspect, see each section below for more details.
 
@@ -59,7 +59,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
 > [!NOTE]
-> Template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
+> Template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](../powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
 > 
 > 
 
@@ -138,5 +138,5 @@ As listed in the above sections, currently the template content packs have a set
 | One dashboard, report and dataset |*Multiple dashboards, reports or datasets* |
 
 ## Next
-[Content Pack Testing and Submission](powerbi-developer-content-pack-testing.md)
+[Content Pack Testing and Submission](../powerbi-developer-content-pack-testing.md)
 
