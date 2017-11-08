@@ -32,7 +32,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 ## Power BI mobile app for iPhone, Apple Watch, and iPod Touch
 ![iPhone logo](media/powerbi-mobile-ipad-iphone-apps/iphone-logo-40-px.png)
 
-Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also [add Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and [annotate and share a tile, report, or visualization](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report.
+Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also [add Power BI to your Apple Watch](mobile-apple-watch.md), and [annotate and share a tile, report, or visualization](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report.
 
 Download the [Power BI app for iOS](http://go.microsoft.com/fwlink/?LinkId=522062) on an iPhone, Apple Watch, or iPod Touch and [get started](powerbi-mobile-iphone-app-get-started.md).
 

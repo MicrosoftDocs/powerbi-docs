@@ -69,7 +69,7 @@ Here's a Power BI dashboard in the Power BI service:
    * [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open it in focus mode and interact with it.
    * Tap the star ![Favorite star](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](powerbi-mobile-favorites.md).
    * Tap **Invite** ![Invite icon](media/powerbi-mobile-create-dashboard/pbi_ipad_shareiconblk.png) to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.
-   * [Sync the dashboard with your Apple Watch](powerbi-mobile-apple-watch.md).
+   * [Sync the dashboard with your Apple Watch](mobile-apple-watch.md).
 4. To get back to the list of dashboards, tap the arrow next to the dashboard title, then tap **My Workspace**.
    
    ![Breadcrumb](media/powerbi-mobile-create-dashboard/power-bi-iphone-breadcrumb.png)

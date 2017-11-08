@@ -358,7 +358,7 @@ See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/pow
 Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-march-2016/).
 
 #### iPhone mobile app
-**Apple Watch** View your Power BI tiles and KPIs on your [Apple Watch](powerbi-mobile-apple-watch.md).
+**Apple Watch** View your Power BI tiles and KPIs on your [Apple Watch](mobile-apple-watch.md).
 
 **iOS 9.0 and later** To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.​
 
