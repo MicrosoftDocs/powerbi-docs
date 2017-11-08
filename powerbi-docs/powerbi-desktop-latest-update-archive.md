@@ -650,7 +650,7 @@ You can always [download the latest version of Power BI Desktop](https://powerbi
 May brought another large collection of compelling updates for Power BI Desktop:
 
 ### Report View:
-* Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](powerbi-desktop-custom-tooltips.md)
+* Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](desktop-custom-tooltips.md)
 * Conditional formatting in tables [[video]](https://youtu.be/KnDs4amt9-c?t=313) [[article]](desktop-conditional-table-formatting.md)
 * Publish to Pyramid server [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 * Scrolling loads more data in charts [[video]](https://youtu.be/KnDs4amt9-c?t=426) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
