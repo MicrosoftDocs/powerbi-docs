@@ -30,7 +30,7 @@ With sharing, whether you share content inside or outside your organization, you
 
 You can share a dashboard from your own My Workspace, or from an app workspace. When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless [row-level security (RLS)](service-admin-rls.md) is applied. The coworkers you share it with can share the dashboard with their coworkers, if you allow them to. The people outside your organization can view and interact with the dashboard too, but can't share it. 
 
-You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). You can share dashboards from the Power BI service and the Power BI mobile apps, but not from Power BI Desktop.
+You can also [share a dashboard from any of the Power BI mobile apps](mobile-share-dashboard-from-the-mobile-apps.md). You can share dashboards from the Power BI service and the Power BI mobile apps, but not from Power BI Desktop.
 
 ## Video: Share a dashboard
 Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.

@@ -68,7 +68,7 @@ Here's a Power BI dashboard in the Power BI service:
    
    * [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open it in focus mode and interact with it.
    * Tap the star ![Favorite star](media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](mobile-apps-favorites.md).
-   * Tap **Invite** ![Invite icon](media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.
+   * Tap **Invite** ![Invite icon](media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) to [invite a colleague](mobile-share-dashboard-from-the-mobile-apps.md) to view your dashboard.
    * [Sync the dashboard with your Apple Watch](mobile-apple-watch.md).
 4. To get back to the list of dashboards, tap the arrow next to the dashboard title, then tap **My Workspace**.
    
@@ -98,7 +98,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
    * [Tap a tile to interact](powerbi-mobile-tiles-in-the-iphone-app.md) with the tile.
    * [Open the reports](mobile-reports-in-the-mobile-apps.md) behind the tiles.
-   * [Invite others to view the dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
+   * [Invite others to view the dashboard](mobile-share-dashboard-from-the-mobile-apps.md).
    * [Annotate and share a snapshot](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) of a tile.
 5. To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap **My Workspace**.
    
@@ -185,7 +185,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
    * [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open and interact with it.
    * Tap the **Full Screen** icon ![Full screen icon](media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png) to present your Power BI dashboard without borders or menus, like **Slide Show** view in PowerPoint.
-   * Tap the **Invite** icon ![Invite icon](media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) with a colleague.
+   * Tap the **Invite** icon ![Invite icon](media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) to [share your dashboard](mobile-share-dashboard-from-the-mobile-apps.md) with a colleague.
    * Tap the star ![Favorite star](media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) to [make the dashboard a favorite](mobile-apps-favorites.md).
    * Tap the **Pin to Start** icon to [pin the dashboard to your Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
 4. To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**:

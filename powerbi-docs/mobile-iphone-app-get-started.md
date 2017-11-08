@@ -123,7 +123,7 @@ Here are some other things you can do in the iPhone app with dashboards and repo
 * [Ask questions of your data](mobile-apps-ios-qna.md) in your own words with Q&A
 * View your Power BI tiles on your [Apple Watch](mobile-apple-watch.md).
 * Set [data alerts](mobile-set-data-alerts-in-the-mobile-apps.md) for your data.
-* Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
+* Share [Power BI dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
 * [Annotate and share](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) a tile, report, or visualization.
 * [Scan a Power BI QR code](mobile-apps-qr-code.md)  to open a related dashboard tile or report.
 * [Create picture tiles](mobile-iphone-app-get-started.md) with your iPhone app.

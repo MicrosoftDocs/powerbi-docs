@@ -118,7 +118,7 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * View your [dashboards](mobile-apps-view-dashboard.md).
 * [Pin Power BI tiles and dashboards](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) to your device's Start screen as live tiles.
 * [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
-* Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
+* Share [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
 
 ### Reporting Services mobile reports and KPIs
 * [View Reporting Services mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.

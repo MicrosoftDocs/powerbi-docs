@@ -33,7 +33,7 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 
 ## Next steps
 * [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-* [Share a dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) from the Power BI mobile apps
+* [Share a dashboard](mobile-share-dashboard-from-the-mobile-apps.md) from the Power BI mobile apps
 * [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
