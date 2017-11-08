@@ -23,7 +23,7 @@ ms.author: maggies
 # Navigating the Power BI Report Server web portal
 The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
 
-![Report Server web portal](media/reportserver-getting-around/report-server-web-portal.png)
+![Report Server web portal](media/getting-around/report-server-web-portal.png)
 
 You can view the web portal in any modern browser. In the web portal, reports and KPIs are organized in folders, and you can mark them as favorites. You can also store Excel workbooks there. From the web portal, you can launch the tools you need to create reports:
 
@@ -79,18 +79,18 @@ You can view, upload, create, organize, and manage permissions for Power BI Desk
 ### Create a Power BI Desktop report
 1. Select **New** > **Power BI Report**.
    
-    ![Create new Power BI report](media/reportserver-getting-around/report-server-web-portal-new-powerbi-report.png)
+    ![Create new Power BI report](media/getting-around/report-server-web-portal-new-powerbi-report.png)
    
     The Power BI Desktop app opens.
    
-    ![Power BI Desktop app](media/reportserver-getting-around/report-server-powerbi-desktop-start.png)
+    ![Power BI Desktop app](media/getting-around/report-server-powerbi-desktop-start.png)
 2. Create your Power BI report. See [Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md) for details.
 3. Upload your report to the report server.
 
 ### Edit an existing Power BI Desktop report
 1. Select the ellipsis (**...**) in the upper-right corner of the report tile > **Edit in Power BI Desktop**.
    
-    ![Edit in Power BI Desktop](media/reportserver-getting-around/report-server-web-portal-pbix-ellipsis.png)
+    ![Edit in Power BI Desktop](media/getting-around/report-server-web-portal-pbix-ellipsis.png)
    
     The Power BI Desktop app opens.
 2. Make your changes and save... [how?]
@@ -103,14 +103,14 @@ You can view, upload, create, organize, and manage permissions for paginated rep
    
     The Report Builder app opens.
    
-    ![New Report Builder report](media/reportserver-getting-around/report-server-report-builder-new.png)
+    ![New Report Builder report](media/getting-around/report-server-report-builder-new.png)
 2. Create your paginated report. See [Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md) for details.
 3. Upload your report to the report server.
 
 ### Edit an existing paginated report
 1. Select the ellipsis (...) in the upper-right corner of the report tile > **Edit in Report Builder**.
    
-    ![Edit in Report Builder](media/reportserver-getting-around/report-server-web-portal-rdl-ellipsis.png)
+    ![Edit in Report Builder](media/getting-around/report-server-web-portal-rdl-ellipsis.png)
    
     The Report Builder app opens.
 2. Make your changes and save.
@@ -125,10 +125,10 @@ Power BI Report Server offers detailed control of the items you store on the web
 
 1. Select the ellipsis (...) in the upper-right corner of an item, then select **Manage**.
    
-    ![Select Manage](media/reportserver-getting-around/report-server-web-portal-manage-ellipsis.png)
+    ![Select Manage](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Choose the property or other feature you want to set.
    
-    ![Select a property](media/reportserver-getting-around/report-server-web-portal-manage-properties.png)
+    ![Select a property](media/getting-around/report-server-web-portal-manage-properties.png)
 3. Select **Apply**.
 
 Read more about [working with subscriptions in the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
@@ -138,14 +138,14 @@ You can tag the reports and KPIs that you want to be favorites. They're easier t
 
 1. Select the ellipsis (**…**) in the upper-right corner of the KPI or report that you want to make a favorite, and select **Add to Favorites**.
    
-    ![Add to Favorites](media/reportserver-getting-around/report-server-web-portal-favorite-ellipsis.png)
+    ![Add to Favorites](media/getting-around/report-server-web-portal-favorite-ellipsis.png)
 2. Select **Favorites** on the web portal ribbon to see it along with your other favorites on the Favorites page in the web portal.
    
-    ![View Favorites](media/reportserver-getting-around/report-server-web-portal-favorites.png)
+    ![View Favorites](media/getting-around/report-server-web-portal-favorites.png)
    
     Now in the Power BI mobile apps you see these favorites along with your favorite dashboards from the Power BI service.
    
-    ![View Favorites in the mobile app](media/reportserver-getting-around/power-bi-iphone-faves-report-server.png)
+    ![View Favorites in the mobile app](media/getting-around/power-bi-iphone-faves-report-server.png)
 
 ## Hide or view items in the web portal
 You can hide items in the web portal, and you can choose to view hidden items.
@@ -153,10 +153,10 @@ You can hide items in the web portal, and you can choose to view hidden items.
 ### Hide an item
 1. Select the ellipsis (...) in the upper-right corner of an item, then select **Manage**.
    
-    ![Select manage](media/reportserver-getting-around/report-server-web-portal-manage-ellipsis.png)
+    ![Select manage](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Select **Hide this item**.
    
-    ![Select Hide](media/reportserver-getting-around/report-server-web-portal-hide-property.png)
+    ![Select Hide](media/getting-around/report-server-web-portal-hide-property.png)
 3. Select **Apply**.
 
 ### View hidden items
@@ -164,12 +164,12 @@ You can hide items in the web portal, and you can choose to view hidden items.
    
     The items appear. They're grayed, but you can still open and edit them.
    
-    ![Show hidden items](media/reportserver-getting-around/report-server-web-portal-show-hidden-grayed.png)
+    ![Show hidden items](media/getting-around/report-server-web-portal-show-hidden-grayed.png)
 
 ## Search for items
 You can enter a search team, and you will see everything you can access. The results are categorized into KPIs, reports, datasets, and other items. You can then interact with the results and add them to your favorites.  
 
-![Search for items](media/reportserver-getting-around/report-server-web-portal-search.png)
+![Search for items](media/getting-around/report-server-web-portal-search.png)
 
 ## Move or delete items in List view
 By default, the web portal displays its contents in Tile view.
@@ -178,7 +178,7 @@ You can switch to List view, where it's easy to move or delete multiple items at
 
 1. Select **Tiles** > **List**.
    
-    ![Switch views](media/reportserver-getting-around/report-server-web-portal-list-view.png)
+    ![Switch views](media/getting-around/report-server-web-portal-list-view.png)
 2. Select the items, then select **Move** or **Delete**.
 
 ## Next steps
