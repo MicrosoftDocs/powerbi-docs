@@ -46,8 +46,8 @@ The following updates are new to **Power BI Desktop** this month:
 * Increase the number of data points displayed in Scatter visuals  [[video]](https://youtu.be/jksjtR8GnBE?t=19m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) 
 
 ### Analytics:
-* Quick measures for SSAS live connections  [[video]](https://youtu.be/jksjtR8GnBE?t=22m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#liveConnectQuickMeasures) [[article]](powerbi-desktop-quick-measures.md)
-* Sales from new customers quick measure  [[video]](https://youtu.be/jksjtR8GnBE?t=23m16s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#newCustomers) [[article]](powerbi-desktop-quick-measures.md)
+* Quick measures for SSAS live connections  [[video]](https://youtu.be/jksjtR8GnBE?t=22m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#liveConnectQuickMeasures) [[article]](desktop-quick-measures.md)
+* Sales from new customers quick measure  [[video]](https://youtu.be/jksjtR8GnBE?t=23m16s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#newCustomers) [[article]](desktop-quick-measures.md)
 * Cell-level formatting for multi-dimensional Analysis Services (AS) models  [[video]](https://youtu.be/jksjtR8GnBE?t=25m28s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#cellLevelFormatting)
 
 ### Data Connectivity:
