@@ -60,7 +60,7 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
     Power BI saves the phone layout automatically.
 
 ## Next steps
-* [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
+* [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
 * [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

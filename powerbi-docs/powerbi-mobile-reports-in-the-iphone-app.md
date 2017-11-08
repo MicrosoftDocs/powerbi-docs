@@ -105,6 +105,6 @@ If a report author has added this capability to a visual, on an iPad or a tablet
 
 ## See also
 * [View and interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
-* [Create a version of a report optimized for phones](powerbi-desktop-create-phone-report.md)
+* [Create a version of a report optimized for phones](desktop-create-phone-report.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
