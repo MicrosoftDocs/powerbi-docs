@@ -29,11 +29,11 @@ Here are some of the things you can do with the Power BI APIs.
 
 | **To do this** | **Go here** |
 | --- | --- |
-| Embed dashboards, reports and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md) |
-| Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md) |
+| Embed dashboards, reports and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports and tiles](embedding-content.md) |
+| Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](../powerbi-developer-walkthrough-push-data.md) |
 | Import a Power BI Desktop file |[Import PBIX File](https://msdn.microsoft.com/library/mt243837.aspx) |
-| Authenticate to Power BI. |[Authenticate to Power BI](developer/get-azuread-access-token.md) |
-| Create a custom visual. |[Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md) |
+| Authenticate to Power BI. |[Authenticate to Power BI](get-azuread-access-token.md) |
+| Create a custom visual. |[Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md) |
 
 > [!NOTE]
 > The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
@@ -60,8 +60,8 @@ The following are tools you can use to aid in your development of Power BI items
 * [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo)
 
 ## Next steps
-[Push data into a dataset](powerbi-developer-walkthrough-push-data.md)  
-[Getting started with custom visuals developer tools](service-custom-visuals-getting-started-with-developer-tools.md) 
+[Push data into a dataset](../powerbi-developer-walkthrough-push-data.md)  
+[Getting started with custom visuals developer tools](../service-custom-visuals-getting-started-with-developer-tools.md) 
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

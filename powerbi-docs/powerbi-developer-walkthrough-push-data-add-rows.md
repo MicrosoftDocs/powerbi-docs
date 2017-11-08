@@ -314,7 +314,7 @@ Below is the [complete code listing](#code).
 ## See also
 [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

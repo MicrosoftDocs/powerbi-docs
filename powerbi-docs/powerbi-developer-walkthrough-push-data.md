@@ -122,7 +122,7 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introducing JSON](http://json.org/)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

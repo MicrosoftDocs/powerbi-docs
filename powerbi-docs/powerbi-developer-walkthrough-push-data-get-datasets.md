@@ -273,7 +273,7 @@ Below is the [complete code listing](#code).
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
 [Push data into Power BI](powerbi-developer-walkthrough-push-data.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
