@@ -45,7 +45,7 @@ If you downloaded the [integrate-tile-web-app](https://github.com/Microsoft/Powe
 ![](media/powerbi-developer-integrate-tile/powerbi-embed-dashboard-register-app4.png)
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](developer/get-azuread-access-token.md).
 
 ## Step 3 - get a tile
 To get a **Power BI** tile, you use the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation which gets a list of **Power BI** tiles from a given dashboard. From the list of tiles, you can get a tile id and embed URL.

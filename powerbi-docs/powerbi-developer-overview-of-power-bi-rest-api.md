@@ -32,7 +32,7 @@ Here are some of the things you can do with the Power BI APIs.
 | Embed dashboards, reports and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports and tiles](developer/embedding-content.md) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md) |
 | Import a Power BI Desktop file |[Import PBIX File](https://msdn.microsoft.com/library/mt243837.aspx) |
-| Authenticate to Power BI. |[Authenticate to Power BI](powerbi-developer-get-azuread-access-token.md) |
+| Authenticate to Power BI. |[Authenticate to Power BI](developer/get-azuread-access-token.md) |
 | Create a custom visual. |[Use developer tools to create custom visuals](service-custom-visuals-getting-started-with-developer-tools.md) |
 
 > [!NOTE]

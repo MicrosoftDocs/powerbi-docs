@@ -85,7 +85,7 @@ The *master* account, that was mentioned above, must be an admin of the app work
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
 ## Step 2: Embed your content
-Within your application, you will need to authenticate with Power BI. If you are embedding content for your customers, you will store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](../powerbi-developer-get-azuread-access-token.md).
+Within your application, you will need to authenticate with Power BI. If you are embedding content for your customers, you will store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 Once authenticated, within your application, use the Power BI REST APIs and JavaScript APIs to embed dashboards and reports into your application. 
 

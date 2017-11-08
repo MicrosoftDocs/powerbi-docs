@@ -45,7 +45,7 @@ If you downloaded the [integrate-report-web-app](https://github.com/Microsoft/Po
 ![](media/powerbi-developer-integrate-report/powerbi-embed-dashboard-register-app4.png)
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](developer/get-azuread-access-token.md).
 
 ## Step 3 - get a report
 To get a **Power BI** report, you use the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report id.

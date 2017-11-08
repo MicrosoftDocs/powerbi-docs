@@ -184,7 +184,7 @@ You will want to be logged in with either the *master* account, used for embeddi
     ```
 
 ## Next steps
-Now that you have registered your application within Azure AD, you will need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md) to learn more.
+Now that you have registered your application within Azure AD, you will need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](developer/get-azuread-access-token.md) to learn more.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
