@@ -37,7 +37,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 > 
 > 
 
-1. Open a [dashboard in the mobile app for iOS](powerbi-mobile-create-dashboard.md).
+1. Open a [dashboard in the mobile app for iOS](mobile-apps-view-dashboard.md).
 2. Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In focus mode you can:
    
    In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
@@ -69,7 +69,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-ipad-tile-breadcrumb.png)
 
 ## Tiles in the mobile app for Android phones and tablets
-1. Open a [dashboard in the Power BI mobile app](powerbi-mobile-create-dashboard.md).
+1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md).
 2. Tap a tile to open it in focus mode, where it's easier to view and explore the tile data.
    
    ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-android-tablet-tile.png)
@@ -91,7 +91,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the arrow in the upper-left corner to close the tile and return to the dashboard.
 
 ## Tiles in the Windows 10 mobile app
-1. Open a [dashboard in the Power BI mobile app](powerbi-mobile-create-dashboard.md) for Windows 10.
+1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 
    
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/pbi_win10tileellpslink.png)

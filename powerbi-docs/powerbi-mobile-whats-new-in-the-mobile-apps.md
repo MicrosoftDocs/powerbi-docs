@@ -392,10 +392,10 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 ### February 2016
 #### Android
-View dashboards in [landscape mode on Android phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-android-phone). 
+View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### Power BI app for Windows 10 devices
-View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-windows-10-device).
+View dashboards in [landscape mode in Windows 10 phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
 
 View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-iphone-app.md).
 
