@@ -145,7 +145,7 @@ We need to make a few more changes to get the query where we want it:
 
 * *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
 
-Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
+Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
 
 ## Combine Data
 That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
@@ -158,7 +158,7 @@ From the **Home** ribbon in **Query Editor**, we select **Get Data \> Web** and 
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-We select **Table[edit]** because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in **[Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**. To summarize those steps, here's what we do:
+We select **Table[edit]** because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in **[Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md)**. To summarize those steps, here's what we do:
 
 We select **Edit**, then:
 
@@ -207,7 +207,7 @@ In this case, we only want the *State Code* column, so we select only that colum
 
 We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
 
-For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md).
+For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md).
 
 For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it **Getting Started with Power BI Desktop**. To apply the changes in **Query Editor** and load them into Power BI Desktop, select **Close & Apply** from the **Home** ribbon.
 
@@ -330,6 +330,6 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 

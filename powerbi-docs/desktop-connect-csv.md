@@ -52,7 +52,7 @@ You can use that data in Power BI Desktop to create visuals, reports, or interac
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
-* [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 

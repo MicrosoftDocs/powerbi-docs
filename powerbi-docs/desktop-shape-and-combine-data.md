@@ -34,21 +34,21 @@ The steps you specify (such as rename a table, transform a data type, or delete 
 
 The following image shows the **Query Settings** pane for a query that has been shaped – we’ll go through each of those steps in the next few paragraphs.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QuerySettingsFinished.png)
+![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished.png)
 
 Using the retirement data from [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664), which we found by connecting to a Web data source, let’s shape that data to fit our needs.
 
 For starters, one column's scores were not automatically transformed from text to numbers when Query Editor loaded the table, and we need them to be numbers. No problem – just right-click the column header, and select **Change Type \> Whole Number** to change them. To choose more than one column, first select a column then hold down **SHIFT**, select additional adjacent columns, and then right-click a column header to change all selected columns. You can also use the **CTRL** key to choose non-adjacent columns.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ChangeType.png)
+![](media/desktop-shape-and-combine-data/shapecombine_changetype.png)
 
 You can also *transform* those columns from text to header from the **Transform** ribbon. Here’s the **Transform** ribbon, with an arrow pointing toward the **Data Type** button, which lets you transform the current data type to another.
 
-![](media/powerbi-desktop-shape-and-combine-data/QueryOverview_TransformRibbonArrow.png)
+![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
 Note that in **Query Settings**, the **Applied Steps** reflect any shaping steps applied to the data. If I want to remove any step from the shaping process, I simply select the **X** to the left of the step. In the following image, **Applied Steps** reflects the steps so far: connecting to the website (**Source**); selecting the table (**Navigation**); and while loading the table, Query Editor automatically changed text-based number columns from *Text* to *Whole Number* (**Changed Type**). One column of rankings was not automatically changed to a number-based type, and we'll find out why in the next few paragraphs.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_AppliedStepsEarly.png)
+![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly.png)
 
 Before we can work with this query, we need to make a few changes to get its data where we want it:
 
@@ -58,49 +58,49 @@ Before we can work with this query, we need to make a few changes to get its dat
 
 To remove the first column, simply select the column and choose the **Home** tab from the ribbon, then **Remove Columns** as shown in the following figure.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveColumnsRetirement.png)
+![](media/desktop-shape-and-combine-data/shapecombine_removecolumnsretirement.png)
 
 Next we need to address the text column, and transform it into numbers. At first it seems straightforward, that we can just change the type of the **Health care quality** column from text to number (such as *Whole Number*, or *Decimal Number*). But when we change the type from **Text** to **Whole Number**, then look through the values in that column, we find that Query Editor reports a few errors.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Error.png)
+![](media/desktop-shape-and-combine-data/shapecombine_error.png)
 
 There are a few ways to get more information about each error. You can select the cell (without clicking on the word **Error**), or click the word **Error** directly. If you select the cell *without* clicking directly on the word **Error**, Query Editor displays the error information on the bottom of the window.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ErrorInfo.png)
+![](media/desktop-shape-and-combine-data/shapecombine_errorinfo.png)
 
 If you click the word *Error* directly, Query creates an **Applied Step** in the **Query Settings** pane and displays information about the error.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ErrorSelect.png)
+![](media/desktop-shape-and-combine-data/shapecombine_errorselect.png)
 
 To get back to the Query Editor, you have to remove that step by selecting the **X** next to it.
 
 When we select the most recent **Applied Step**, we see the error just described, as shown in the following image.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QueryStep1.png)
+![](media/desktop-shape-and-combine-data/shapecombine_querystep1.png)
 
 Since Query Editor records steps sequentially, we can select the step prior to changing the type, in **Applied Steps**, and see what the value of that cell is prior to the transformation, as shown in the following image.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QueryStep2.png)
+![](media/desktop-shape-and-combine-data/shapecombine_querystep2.png)
 
 Okay, now we can fix those values, and *then* change the type. Since Query Editor records the steps sequentially, yet independently of each other, you can move each **Applied Step** up or down in the sequence. Just right-click any step, and Query Editor provides a menu that lets you do the following: **Rename**, **Delete**, **Delete** **Until End** (remove the current step, and all subsequent steps too), **Move Up**, or **Move Down**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_QueryStepReorder.png)
+![](media/desktop-shape-and-combine-data/shapecombine_querystepreorder.png)
 
 In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Query Editor will automatically insert a new step directly after the currently selected **Applied Step**. Let's give that a try.
 
 First, we select the **Applied Step** prior to changing the type of the **Health care quality** column. Then we replace the values that have the text "(tie)" in the cell so that only the number remains. Right-click the cell that contains "35 (tie)" and select *Replace Values...* from the menu that appears. Note which **Applied Step** is currently selected (the step prior to changing the type).
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ReplaceValues.png)
+![](media/desktop-shape-and-combine-data/shapecombine_replacevalues.png)
 
 Since we're inserting a step, Query Editor warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query Editor to demonstrate how you can create, delete, insert, and reorder steps, we'll push ahead and select **Insert**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_InsertStep.png)
+![](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
 There are three ties, so we replace the values for each. When you create a new Applied Step, Query Editor names it based on the action - in this case, **Replaced Value**. When you have more than one step with the same name in your query, Query Editor adds a number (in sequence) to each subsequent **Applied Step** to differentiate between them.
 
 The following screen shows the three **Replaced Value** steps in **Query Settings**, but it also shows something else that's even more interesting: since we removed each instance of the text "(tie)" from the **Health care quality** column, the **Changed Type** step now completes *with no errors*.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ReplacedValuesOk.png)
+![](media/desktop-shape-and-combine-data/shapecombine_replacedvaluesok.png)
 
 **Note:** You can also **Remove Errors** (using the ribbon or the right-click menu), which removes any rows that have errors. In this case it would’ve removed all the states that had "*(tie)*" from our data, and we didn’t want to do that – we like all the states, and want to keep them in the table.
 
@@ -110,7 +110,7 @@ Lastly, we want to change the name of that table to something descriptive. When 
 
 Changing the table name is easy: in the **Query Settings** pane, under **Properties**, simply type in the new name of the table, as shown in the following image, and hit **Enter**. Let’s call this table *RetirementStats*.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RenameTable.png)
+![](media/desktop-shape-and-combine-data/shapecombine_renametable.png)
 
 Okay, we’ve shaped that data to the extent we need to. Next let’s connect to another data source, and combine data.
 
@@ -123,7 +123,7 @@ We’re in luck: there’s another public data source that does just that, but i
 
 From the **Home** ribbon in Query Editor, we select **New Source \> Web** and type the address, select OK, and the Navigator shows what it found on that Web page.
 
- ![](media/powerbi-desktop-shape-and-combine-data/Designer_GSG_USStateAbbreviationsNavigator.png)
+ ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator.png)
 
 We select **Table[edit]** because that includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down to what we want.
 
@@ -135,25 +135,25 @@ To get this data into shape, we take the following steps:
 
 * Remove the top two rows – they’re a result of the way that Web page’s table was created, and we don’t need them. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveTopRows.png)
+![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
 The **Remove Top Rows** window appears, letting you specify how many rows you want to remove.
 
 * Remove the bottom 26 rows – they’re all the territories, which we don’t need to include. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Bottom Rows**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveBottomRows.png)
+![](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
 * Since the RetirementStats table doesn't have information for Washington DC, we need to filter it from our list. Select the drop-down arrow beside the Region Status column, then clear the checkbox beside **Federal district**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_FilterDC.png)
+![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
 * Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column2**, **Column3**, and then **Column5** through **Column10**. First select Column2, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveColumns.png)
+![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
 * Use the first row as headers – since we removed the top three rows, the current top row is the header we want. You can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_UseFirstRowAsHeaders.png)
+![](media/desktop-shape-and-combine-data/shapecombine_usefirstrowasheaders.png)
 
 **Note:** This is a good time to point out that the *sequence* of applied steps in Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
 
@@ -161,7 +161,7 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 * Rename the columns, and the table itself – as usual, there are a few ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Rename.png)
+![](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
 Let’s rename them to *State Name* and *State Code*. To rename the table, just type the name into the **Name** box in the **Query Settings** pane. Let’s call this table *StateCodes*.
 
@@ -173,23 +173,23 @@ When you have one or more columns that you’d like to add to another query, you
 
 In this case we want to merge queries. To get started, from the left pane of Query Editor we select the query *into which* we want the other query to merge, which in this case is *RetirementStats*. Then select **Combine \> Merge Queries** from the **Home** tab on the ribbon.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeQueries.png)
+![](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
 You may be prompted to set the privacy levels, to ensure the data is combined without including or transferring data you didn't want transferred.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeQueriesB.png)
+![](media/desktop-shape-and-combine-data/shapecombine_mergequeriesb.png)
 
 Next the **Merge** window appears, prompting us to select which table we’d like merged into the selected table, and then, the matching columns to use for the merge. Select State from the *RetirementStats* table (query), then select the *StateCodes* query (easy in this case, since there’s only one other query – when you connect to many data sources, there are many queries to choose from). When we select the correct matching columns – **State** from *RetirementStats*, and **State Name** from *StateCodes* – the **Merge** window looks like the following, and the **OK** button is enabled.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Merge.png)
+![](media/desktop-shape-and-combine-data/shapecombine_merge.png)
 
 A **NewColumn** is created at the end of the query, which is the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the **NewColumn**, but you can select to **Expand** the table, and include whichever columns you want.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeNewColumn.png)
+![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
-To Expand the merged table, and select which columns to include, select the expand icon (![Expand](media/powerbi-desktop-shape-and-combine-data/icon.png)). The **Expand** window appears.
+To Expand the merged table, and select which columns to include, select the expand icon (![Expand](media/desktop-shape-and-combine-data/icon.png)). The **Expand** window appears.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeExpand.png)
+![](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
 
 In this case, we only want the **State Code** column, so we select only that column and then select **OK**. We clear the checkbox from Use original column name as prefix because we don’t need or want that; if we leave that selected, the merged column would be named **NewColumn.State Code** (the original column name, or **NewColumn**, then a dot, then the name of the column being brought into the query).
 
@@ -199,7 +199,7 @@ We now have a single query (table) that combined two data sources, each of which
 
 To apply changes and close Query Editor, select Close & Apply from the **Home** ribbon tab. The transformed dataset appears in Power BI Desktop, ready to be used for creating reports.
 
-![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_CloseAndApply.png)
+![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## More Information
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
