@@ -36,7 +36,7 @@ Embedding for your organization allows you to extend the Power BI service. This 
 For embedding for your organization, see the following:
 
 * [Integrate a dashboard into an app](integrate-dashboard.md)
-* [Integrate a tile into an app](../powerbi-developer-integrate-tile.md)
+* [Integrate a tile into an app](integrate-tile.md)
 * [Integrate a report into an app](integrate-report.md)
 
 Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
