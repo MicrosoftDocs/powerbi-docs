@@ -61,7 +61,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
   
   * Using a different *Marker shape* for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 * As a follow on to the previous bullet, don't rely on color to convey information. Using shapes on lines (markers, as described in the previous bullets) is helpful.
-* Select a *theme* that is high contrast and color blind friendly from the theme gallery, and import it using the [**Theming** preview feature](powerbi-desktop-report-themes.md).
+* Select a *theme* that is high contrast and color blind friendly from the theme gallery, and import it using the [**Theming** preview feature](desktop-report-themes.md).
 * For every object on a report, provide *Alt Text*. Doing so ensures that consumers of your report understand what you are trying to communicate with a visual, even if they cannot see the visual, image, shape, or textbox. You can provide *Alt Text* for any object on a **Power BI Desktop** report by selecting the object (such as a visual, shape, etc.) and in the **Visualizations** pane, select the **Format** section, expand **General**, then scroll to the bottom and fill in the **Alt Text** textbox.
   
   ![Alt text for any object in a report can be added in Visualizations > Format > General > Alt Text box](media/desktop-accessibility/accessibility_02.png)
@@ -75,5 +75,5 @@ There are a few known issues and limitations to the accessibility features, desc
 * JAWS is only supported in reports that are viewed in the **Power BI service**, including any embedded reports. The **Power BI Desktop** team is actively working on also making it available in reports viewed in **Power BI Desktop**.
 
 ## More Information
-* [Use Report Themes in Power BI Desktop (Preview)](powerbi-desktop-report-themes.md)
+* [Use Report Themes in Power BI Desktop (Preview)](desktop-report-themes.md)
 
