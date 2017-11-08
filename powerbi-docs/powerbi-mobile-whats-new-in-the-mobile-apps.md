@@ -40,7 +40,7 @@ Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.c
 
 ### iOS devices
 **New Q&A experience on iOS (Preview)**
-Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](powerbi-mobile-ios-qna.md).
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
 
 ### Responsive visuals
 **Responsive visual for phone reports and dashboards**
@@ -78,7 +78,7 @@ Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/ma
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**
-Now you can [ask questions of your data with Q&A](powerbi-mobile-ios-qna.md) by talking rather than typing. 
+Now you can [ask questions of your data with Q&A](mobile-apps-ios-qna.md) by talking rather than typing. 
 
 ### March 2017
 Read the [mobile apps feature summary for March 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
@@ -116,7 +116,7 @@ Now you can scroll in bar and column charts in a report by touching the chart it
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 
 
-With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on http://powerbi.com. Now it's also [available in the mobile app on your iPhone or iPad](powerbi-mobile-ios-qna.md).
+With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on http://powerbi.com. Now it's also [available in the mobile app on your iPhone or iPad](mobile-apps-ios-qna.md).
 
 **Connect to more than one SSRS server** 
 
