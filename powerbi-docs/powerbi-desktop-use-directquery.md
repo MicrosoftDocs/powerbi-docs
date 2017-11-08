@@ -39,7 +39,7 @@ The differences between selecting **Import** and **DirectQuery** are the followi
 
 Many data modeling and data transformations are available when using **DirectQuery**, though with some limitations. When creating or interacting with a visualization, the underlying source must be queried and the time necessary to refresh the visualization is dependent on the performance of the underlying data source. When the data necessary to service the request has recently been requested, Power BI Desktop uses recent data to reduce the time required to display the visualization. Selecting **Refresh** from the **Home** ribbon will ensure all visualizations are refreshed with current data.
 
-The [Power BI and DirectQuery](powerbi-desktop-directquery-about.md) article describes **DirectQuery** in detail. Also, see the following sections for more information about benefits, limitations, and important considerations when using **DirectQuery**.
+The [Power BI and DirectQuery](desktop-directquery-about.md) article describes **DirectQuery** in detail. Also, see the following sections for more information about benefits, limitations, and important considerations when using **DirectQuery**.
 
 ## Benefits of using DirectQuery
 There are a few benefits to using **DirectQuery**:
@@ -96,7 +96,7 @@ For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**
 ## More Information
 For more information about **DirectQuery**, check out the following resources:
 
-* [DirectQuery in Power BI](powerbi-desktop-directquery-about.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)

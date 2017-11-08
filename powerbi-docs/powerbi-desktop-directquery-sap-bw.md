@@ -82,7 +82,7 @@ The following table lists limitations of the beta release of the SAP BW connecto
 ## More Information
 For more information about DirectQuery, check out the following resources:
 
-* [DirectQuery in Power BI](powerbi-desktop-directquery-about.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data Sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)
 

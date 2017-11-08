@@ -157,7 +157,7 @@ When using **DirectQuery**, many of these model enrichments can still be made, a
 * **Calculated tables are not supported:** The ability to define a calculated table using a DAX expression is not supported in DirectQuery mode.
 * **Relationship filtering is limited to a single direction:** When using DirectQuery, it is not possible to set the Cross Filter direction on a relationship to “Both”. For example, with the three tables below, it would not be possible to build a visual showing each Customer[Gender], and the number of Product[Category] bought by each. Use of such bi-directional filtering is described [in this detailed whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional cross-filtering in Analysis Services 2016 and Power BI.docx) (the paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI).
   
-  ![](media/powerbi-desktop-directquery-about/directquery-about_01.png)
+  ![](media/desktop-directquery-about/directquery-about_01.png)
   
   Again, the limitation is imposed due to the performance implications. One particularly important application of this is when defining Row Level Security as part of the report, as a common pattern is to have a many-many relationship between the users and the entities they are allowed access to, and use of bi-directional filtering is necessary to enforce this. However, use of bi-directional filtering for DirectQuery models should be used judiciously, with careful attention paid to any detrimental impact on performance.  
 * **No Clustering:** When using DirectQuery, it is not possible to use the Clustering  capability, to automatically find groups
@@ -255,11 +255,11 @@ When defining the model, consider doing the following:
 * **Experiment with setting *Assume referential integrity*.** The *Assume Referential Integrity* setting on relationships enables queries to use INNER JOIN statements rather than OUTER JOIN. This generally improves query performance, though it does depend on the specifics of the data source.
 * **Do not use the relative data filtering in Query Editor.** It's possible to define relative date filtering in Query Editor. For example, to filter to the rows where the date is in the last 14 days.
   
-  ![](media/powerbi-desktop-directquery-about/directquery-about_02.png)
+  ![](media/desktop-directquery-about/directquery-about_02.png)
   
   However, this will be translated into a filter based on the fixed date, as at the time the query was authored. This can be seen from viewing the native query.
   
-  ![](media/powerbi-desktop-directquery-about/directquery-about_03.png)
+  ![](media/desktop-directquery-about/directquery-about_03.png)
   
   This is almost certainly not what was wanted. To ensure the filter is applied based upon the date as at the time the report is executed then instead apply the filter in the report as a Report Filter. Currently this would be done by creating a calculated column calculating the number of days ago (using the DAX DATE() function), and then using that calculated column in a filter.
 
@@ -270,7 +270,7 @@ When creating a report using a DirectQuery connection, adhere to the following g
 * **Limit the number of visuals on a page:** When a page is opened (or some page level slicer or filter changed) then all of the visuals on a page are refreshed. There is also a limit on the number of queries that are sent in parallel, hence as the number of visuals increases, some of the visuals will be refreshed in a serial manner, increasing the time taken to refresh the entire page. For this reason it's recommended to limit the number of visuals on a single page, and instead have more, simpler pages.
 * **Consider switching off interaction between visuals:** By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page. For example, having selected “1999” on the pie chart, the column chart is cross highlighted to show the sales by category for “1999”.                                                                  
   
-  ![](media/powerbi-desktop-directquery-about/directquery-about_04.png)
+  ![](media/desktop-directquery-about/directquery-about_04.png)
   
   However, this interaction can be controlled as described [in this article](service-reports-visual-interactions.md). In DirectQuery such cross-filtering and cross-highlighting requires queries to be sent to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long.
 * **Consider sharing the report only:** There are different ways of sharing content after publishing to the **Power BI service**. In the case of DirectQuery, it's advisable to only considering sharing the finished report, rather than allow other users to author new reports (and potentially encounter performance issues for the particular visuals that they build).
@@ -279,7 +279,7 @@ In addition to the above list of suggestions, note that each of the following re
 
 * **Measure filters:** Visuals containing measures (or aggregates of columns) can contain filters in those measures. For example, the visual below shows SalesAmount by Category, but only including those Categories with more than 20M of sales.
   
-  ![](media/powerbi-desktop-directquery-about/directquery-about_05.png)
+  ![](media/desktop-directquery-about/directquery-about_05.png)
   
   This will result in two queries being sent to the underlying source:
   
@@ -321,7 +321,7 @@ The trace file can be found in the **AppData** folder for the current user:
 
 Here's an easy way to get to this folder: In **Power BI Desktop** select **File > Options and settings > Options**, and then select **Diagnostics**. The following dialog window appears:
 
-![](media/powerbi-desktop-directquery-about/directquery-about_06.png)
+![](media/desktop-directquery-about/directquery-about_06.png)
 
 When you select the *Open traces folder* link, under **Diagnostic Options**, the following folder opens:
 
@@ -335,7 +335,7 @@ The trace files can be read using the **SQL Server Profiler** tool, which is ava
 
 Once you download and install **SQL Server Management Studio**, run **SQL Server Profiler**.
 
-![](media/powerbi-desktop-directquery-about/directquery-about_07.png)
+![](media/desktop-directquery-about/directquery-about_07.png)
 
 To open the trace file, take the following steps:
 
@@ -352,7 +352,7 @@ All  events from the current session are displayed. An annotated example is show
 
 Note that multiple DAX queries can be executed in parallel, so events from different groups can be interleaved. The value of the ActivityID can be used to determine which events belong to the same group.
 
-![](media/powerbi-desktop-directquery-about/directquery-about_08.png)
+![](media/desktop-directquery-about/directquery-about_08.png)
 
 Other  columns of interest are the following:
 
@@ -373,21 +373,21 @@ The recommended approach to capturing a trace to help diagnose a potential perfo
 #### Understanding the form of query sent by Power BI Desktop
 The general format of queries created and sent by **Power BI Desktop** use subselects for each of the tables referenced, where the subselect is as defined by the query defined in **Query Editor**. For example, assume the following TPC-DS tables in SQL Server:
 
-![](media/powerbi-desktop-directquery-about/directquery-about_09.png)
+![](media/desktop-directquery-about/directquery-about_09.png)
 
 Consider the following query:
 
-![](media/powerbi-desktop-directquery-about/directquery-about_10.png)
+![](media/desktop-directquery-about/directquery-about_10.png)
 
 That query results in the following visual:
 
-![](media/powerbi-desktop-directquery-about/directquery-about_11.png)
+![](media/desktop-directquery-about/directquery-about_11.png)
 
 Refreshing that visual will result in the SQL query shown below the next paragraph. As you can tell, there are three subselects for Web Sales, Item, and Date_dim, that each return all the columns on the respective table, even though only four columns are actually referenced by the visual. These queries in the subselects (they're shaded) are exactly the result of the queries defined in **Query editor**. Use of subselects in this manner has not been found to impact performance, for the data sources so far supported for DirectQuery. Data sources like SQL Server simply optimize away the references to the other columns.
 
 One reason Power BI employs this pattern is because the SQL query used can be provided directly by the analyst, so it's used "as provided", without an attempt to rewrite it.
 
-![](media/powerbi-desktop-directquery-about/directquery-about_12.png)
+![](media/desktop-directquery-about/directquery-about_12.png)
 
 ## More Information
 This article describes aspects of **DirectQuery** that are common across all data sources. There are certain details that are specific to individual sources. See the following topics covering specific sources:

@@ -187,7 +187,7 @@ Earlier in this article, we discussed switching the gateway from a local service
 For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
 
 * [On-premises data gateway](service-gateway-onprem.md)
-* [DirectQuery in Power BI](powerbi-desktop-directquery-about.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)

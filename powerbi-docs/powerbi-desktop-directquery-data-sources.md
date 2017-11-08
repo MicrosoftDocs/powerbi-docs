@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Data sources supported by DirectQuery in Power BI
-**Power BI Desktop** and the **Power BI service** have many data sources to which you can connect and get access to data. This article describes which data sources for Power BI support the connection method known as **DirectQuery**. For more information about DirectQuery, see [**DirectQuery in Power BI**](powerbi-desktop-directquery-about.md).
+**Power BI Desktop** and the **Power BI service** have many data sources to which you can connect and get access to data. This article describes which data sources for Power BI support the connection method known as **DirectQuery**. For more information about DirectQuery, see [**DirectQuery in Power BI**](desktop-directquery-about.md).
 
 The following data sources support DirectQuery in Power BI:
 
@@ -67,7 +67,7 @@ The following table specifies whether an **On-premises data gateway** is require
 ## More Information
 For more information about DirectQuery, check out the following resources:
 
-* [DirectQuery in Power BI](powerbi-desktop-directquery-about.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
 * [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)
 * [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
 * [On-premises data gateway](service-gateway-onprem.md)
