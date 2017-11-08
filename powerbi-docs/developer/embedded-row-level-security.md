@@ -25,27 +25,27 @@ Row level security (RLS) can be used to restrict user access to data within a re
 
 If you are embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You will need to configure the embed token to account for the user and role. Read on to learn how to do this.
 
-If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information see, [Row-Level security (RLS) with Power BI](service-admin-rls.md).
+If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information see, [Row-Level security (RLS) with Power BI](../service-admin-rls.md).
 
-![Items involved with Row-Level Security.](media/powerbi-developer-embedded-rls/powerbi-embedded-rls-components.png)
+![Items involved with Row-Level Security.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
 To take advantage of RLS, it’s important you understand three main concepts; Users, Roles, and Rules. Let’s take a closer look at each:
 
 **Users** – These are the actual end-users viewing reports. In Power BI Embedded, users are identified by the username property in an embed token.
 
-**Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](desktop-rls.md).
+**Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../desktop-rls.md).
 
 **Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. This could be as simple as “Country = USA” or something much more dynamic.
 For the rest of this article, we’ll provide an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
 
-![Report example](media/powerbi-developer-embedded-rls/powerbi-embedded-report-example.png)
+![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## Adding roles with Power BI Desktop
 Our Retail Analysis sample shows sales for all the stores in a retail chain. Without RLS, no matter which district manager signs in and views the report, they’ll see the same data. Senior management has determined each district manager should only see the sales for the stores they manage, and to do this, we can use RLS.
 
 RLS is authored in Power BI Desktop. When the dataset and report are opened, we can switch to diagram view to see the schema:
 
-![Diagram view within Power BI Desktop](media/powerbi-developer-embedded-rls/powerbi-embedded-schema.png)
+![Diagram view within Power BI Desktop](media/embedded-row-level-security/powerbi-embedded-schema.png)
 
 Here are a few things to notice with this schema:
 
@@ -54,7 +54,7 @@ Here are a few things to notice with this schema:
 * The arrows on the relationship lines indicate which way filters can flow from one table to another. For example, if a filter is placed on **Time[Date]**, in the current schema it would only filter down values in the **Sales** table. No other tables would be affected by this filter since all the arrows on the relationship lines point to the sales table and not away.
 * The **District** table indicates who the manager is for each district:
   
-    ![Rows within Disctrict table](media/powerbi-developer-embedded-rls/powerbi-embedded-district-table.png)
+    ![Rows within Disctrict table](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
 Based on this schema, if we apply a filter to the **District Manager** column in the **District** table, and if that filter matches the user viewing the report, that filter will also filter down the **Store** and **Sales** tables to only show data for that district manager.
 
@@ -62,16 +62,16 @@ Here's how:
 
 1. On the **Modeling** tab, select **Manage Roles**.
    
-    ![Modeling tab within Power BI Desktop](media/powerbi-developer-embedded-rls/powerbi-embedded-manage-roles.png)
+    ![Modeling tab within Power BI Desktop](media/embedded-row-level-security/powerbi-embedded-manage-roles.png)
 2. Create a new role called **Manager**.
    
-    ![Create new role](media/powerbi-developer-embedded-rls/powerbi-embedded-new-role.png)
+    ![Create new role](media/embedded-row-level-security/powerbi-embedded-new-role.png)
 3. In the **District** table, enter the following DAX expression: **[District Manager] = USERNAME()**.
    
-    ![DAX statement for RLS rule](media/powerbi-developer-embedded-rls/powerbi-embedded-new-role-dax.png)
+    ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you just created, along with **Other user**. Enter **Andrew Ma** for the user.
    
-    ![View as role dialog](media/powerbi-developer-embedded-rls/powerbi-embedded-new-role-view.png)
+    ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    
     The reports will now show data as if you were signed in as **Andrew Ma**.
 
@@ -131,7 +131,7 @@ The effective identity that is provided for the username property must be a wind
 
 **On-Premises Data Gateway configuration**
 
-An [On-premises data gateway](service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 **Use of roles**
 

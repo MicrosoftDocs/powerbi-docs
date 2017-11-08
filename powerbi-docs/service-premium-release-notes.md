@@ -25,7 +25,7 @@ These are the release notes for Power BI Premium, a dedicated capacity giving yo
 
 * Users with Power BI Free licenses can now view dashboards shared with them from Premium workspaces in the Power BI service.
 * Capacity admins now automatically get capacity assignment permissions.
-* Dynamic row-level security (RLS) is now available for embedded use cases. For more information, see [Row-level security (RLS) with embedded analytics](powerbi-developer-embedded-rls.md).
+* Dynamic row-level security (RLS) is now available for embedded use cases. For more information, see [Row-level security (RLS) with embedded analytics](developer/embedded-row-level-security.md).
 * Distributing Power BI apps to users in other AAD tenants using powerbi.com is not yet supported. We are working on enabling this.
 * Users of the Personal Gateway must upgrade to the latest version in order to continue refreshing their data in Premium workspaces.
 * Imported datasets greater than 1 GB are not supported in Premium capacity at initial release. We are working on enabling this.
