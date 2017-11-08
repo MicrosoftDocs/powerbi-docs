@@ -44,13 +44,13 @@ Here's how your **Register an Application for Power BI** page should look:
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-sample-register-app.png)
 
-The next step shows you how to [get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md).
+The next step shows you how to [get an authentication access token](developer/walkthrough-push-data-get-token.md).
 
-[Next Step >](powerbi-developer-walkthrough-push-data-get-token.md)
+[Next Step >](developer/walkthrough-push-data-get-token.md)
 
 ## See also
 [Sign up for Power BI](developer/create-an-azure-active-directory-tenant.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
+[Get an authentication access token](developer/walkthrough-push-data-get-token.md)  
 [Walkthrough: Push data into a dataset](powerbi-developer-walkthrough-push-data.md)  
 [Register an application](developer/register-app.md)  
 [Overview of Power BI REST API](developer/overview-of-power-bi-rest-api.md)  

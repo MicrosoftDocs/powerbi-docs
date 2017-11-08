@@ -37,7 +37,7 @@ Here's how to add rows to a dataset using the Power BI API.
 > 
 > 
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](../powerbi-developer-walkthrough-push-data-get-token.md), add the code below.
+1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](walkthrough-push-data-get-token.md), add the code below.
 2. Run the Console App, and login to your Power BI account. You should see **Rows Added** in the Console Window. You can also login to Power BI to see the rows added to the dataset.
 
 **Sample push data into a dataset**

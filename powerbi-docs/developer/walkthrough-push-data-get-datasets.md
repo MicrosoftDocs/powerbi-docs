@@ -34,7 +34,7 @@ Here's how you get a dataset.
 > 
 > 
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](../powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
+1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
    
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
    

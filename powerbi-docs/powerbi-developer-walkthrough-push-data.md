@@ -27,7 +27,7 @@ Before you get started pushing data into a dataset, you need an Azure Active Dir
 
 ## Steps to push data into a dataset
 * Step 1: [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
-* Step 2: [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
+* Step 2: [Get an authentication access token](developer/walkthrough-push-data-get-token.md)
 * Step 3: [Create a dataset in Power BI](developer/walkthrough-push-data-create-dataset.md)
 * Step 4: [Get a dataset to add rows into a Power BI table](developer/walkthrough-push-data-get-datasets.md)
 * Step 5: [Add rows to a Power BI table](developer/walkthrough-push-data-add-rows.md)
