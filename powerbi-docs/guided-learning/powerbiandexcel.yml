@@ -19,7 +19,7 @@ items:
 - durationInMinutes: 1
   content: |
     Use Excel and Power BI together and create powerful, connected reports and visuals.
-- title: " Introduction to Using Excel Data in Power BI"
+- title: Introduction to Using Excel Data in Power BI
   durationInMinutes: 2
   content: |
     > [!Video https://www.youtube.com/embed/TWVqSlkjVPw?rel=0]
