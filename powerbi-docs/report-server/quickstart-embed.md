@@ -64,7 +64,7 @@ Keep these considerations in mind:
 
 ###  Example: Filter on a field
 
-Take for example the [Retail Analysis sample](powerbi-sample-datasets.md). Say this is the URL to the report on the report server in a folder called "power-bi":
+Take for example the [Retail Analysis sample](../sample-datasets.md). Say this is the URL to the report on the report server in a folder called "power-bi":
 
 ```
 https://report-server/reports/power-bi/Retail-Analysis-Sample
@@ -86,7 +86,7 @@ Now the report is filtered for North Carolina; all the visualizations on the rep
 
 Another way to filter on multiple fields is by creating a calculated column in Power BI Desktop that concatenates two fields to a single value. Then you can filter on that value.
 
-For example, the Retail Analysis sample has two fields: Territory and Chain. In Power BI Desktop, you can [create a calculated column](powerbi-desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name can't have any spaces. Here is the DAX formula for that column.
+For example, the Retail Analysis sample has two fields: Territory and Chain. In Power BI Desktop, you can [create a calculated column](../desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name can't have any spaces. Here is the DAX formula for that column.
 
 TerritoryChain = [Territory] & "-" & [Chain]
 
@@ -99,7 +99,7 @@ https://report-server/reports/power-bi/Retail-Analysis-Sample?filter=Store/Terri
 
 ## Next steps
 
-[Quickstart: Create a Power BI report for Power BI Report Server](reportserver-quickstart-powerbi-report.md)  
-[Quickstart: Create a paginated report for Power BI Report Server](reportserver-quickstart-paginated-report.md)  
+[Quickstart: Create a Power BI report for Power BI Report Server](quickstart-powerbi-report.md)  
+[Quickstart: Create a paginated report for Power BI Report Server](quickstart-paginated-report.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
