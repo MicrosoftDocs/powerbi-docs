@@ -26,8 +26,8 @@ description: Power BI Documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI Service</h3>
-                                                    <p>The Power BI service is the online service where you'll fine dashboards, apps and published reports.</p>
+                                                    <h3>Power BI service</h3>
+                                                    <p>The Power BI service is the online service where you'll find dashboards, apps and published reports.</p>
                                                 </div>
                                             </div>
                                         </div>
