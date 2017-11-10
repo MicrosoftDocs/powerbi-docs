@@ -16,7 +16,7 @@ description: Power BI Documentation
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
-                                <a href="service-get-started">
+                                <a href="service-get-started.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -35,7 +35,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="desktop-getting-started">
+                                <a href="desktop-getting-started.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -54,7 +54,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="mobile-apps-for-mobile-devices">
+                                <a href="mobile-apps-for-mobile-devices.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -73,7 +73,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="developer-what-can-you-do">
+                                <a href="developer-what-can-you-do.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -92,7 +92,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="report-server/get-started">
+                                <a href="report-server/get-started.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -111,7 +111,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="guided-learning/">
+                                <a href="guided-learning/index.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
