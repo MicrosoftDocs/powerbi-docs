@@ -145,7 +145,6 @@ Users in the organization can publish reports to the web. [Learn more](service-p
 
 Users will see different options in the UI based on what the publish to web setting is.
 
-
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
 |**Publish to web** under report's **File** menu.|Enabled for all|Not visable for all|Only visable for authorized users or groups.|
