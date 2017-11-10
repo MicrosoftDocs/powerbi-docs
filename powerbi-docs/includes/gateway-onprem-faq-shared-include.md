@@ -64,7 +64,7 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 
 ## Troubleshooting
 **Question:** Where are the gateway logs located?  
-**Answer:** See the tools section of the [troubleshooting article](../service-gateway-onprem-tshoot.md#tools).
+**Answer:** See [!INCLUDE [troubleshooting tools](gateway-onprem-tshoot-tools-include.md)].
 
 **Question:** How can I see what queries are being sent to the on-premises data source?  
 **Answer:** You can enable query tracing.  This will include the queries being sent. Remember to change it back to the original value when done troubleshooting. Having query tracing enabled will cause the logs to be larger.
