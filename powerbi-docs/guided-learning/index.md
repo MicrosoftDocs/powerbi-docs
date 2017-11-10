@@ -27,7 +27,7 @@ layout: LandingPage
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.md#step-1">Introducing Power BI</a>
+                                <a class="barLink" href="gettingstarted.yml#step-1">Introducing Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
