@@ -73,7 +73,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="developer-what-can-you-do.md">
+                                <a href="developer/developer-what-can-you-do.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
