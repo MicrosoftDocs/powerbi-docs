@@ -28,9 +28,6 @@ You can also easily edit, update, refresh or un-share your published visuals.
 > [!WARNING]
 > When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. This includes detail level data that is aggregated in your reports. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
-> [!IMPORTANT]
-> Power BI admins can disable the ability for users to use Publish to Web from the Admin portal. Within **Tenant settings**, turn **Publish to Web** to **Off**. This is a tenant wide setting. For more information, see [Power BI admin portal](service-admin-portal.md).
-
 ## How to use Publish to Web
 
 **Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web is not supported. Please review the **Warning** earlier in this article before using Publish to web.
