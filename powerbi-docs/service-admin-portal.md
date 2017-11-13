@@ -43,6 +43,7 @@ Within the portal, there are five tabs. These are described below.
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
 * [Premium settings](#premium-settings)
+* [Embed codes](#embed-codes)
 
 ![](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -247,6 +248,12 @@ The Premium settings tab allows you to manage any Power BI Premium capacity that
 ![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 
 For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+
+## Embed codes
+
+![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
+
+As an administrator, you can view the embed codes that are generated for your tenant. You have the actions of viewing the report and deleting the embed code to revoke it.
 
 ## Next steps
 

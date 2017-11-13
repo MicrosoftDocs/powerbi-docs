@@ -156,6 +156,7 @@ When viewing the **Manage embed codes** page for your **Publish to web** embed c
 | **Active** |The report is available for Internet users to view and interact with. |
 | **Blocked** |The content of the report violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). It has been blocked by Microsoft. Contact support if you believe the content was blocked in error. |
 | **Not supported** |The report's data set is using row level security, or another unsupported configuration. See the **Limitations** section for a complete list. |
+| **Infringed** |The embed code is outside of the defined tenant policy. This typically occurs when an embed code was created and then the publish to web tenant setting was changed to exclude the user that owns the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes will show the status of **Infringed**. |
 
 ## How to report a concern with Publish to web content
 
