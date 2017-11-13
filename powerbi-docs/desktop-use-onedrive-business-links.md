@@ -28,7 +28,8 @@ Getting an online link from **OneDrive for Business** does require a few specifi
 ## Get a link from Excel, starting in the browser
 1. Navigate to your OneDrive for Business location using a browser. Right-click the file you want to use, and select **Open in Excel**.
    
-   > Note: Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your **OneDrive for Business** browser interface. You can use any option that allows you to open the file in Excel.
+   > [!NOTE]
+> Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your **OneDrive for Business** browser interface. You can use any option that allows you to open the file in Excel.
    > 
    > 
    
@@ -53,7 +54,8 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
 
 A **Navigator** window appears, allowing you to select from the list of tables, sheets, and ranges found in the Excel workbook. From there, you can use the OneDrive for Business file just like any other Excel file, and create reports and use it in datasets like you would with any other data source.
 
-> **NOTE:** To use **OneDrive for Business** file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when configuring your refresh settings. Otherwise you may encounter an error (such as *Failed to update data source credentials*) when you attempt to connect or to refresh. Selecting **OAuth2** as the authentication method remedies that credentials error.
+> [!NOTE]
+> To use **OneDrive for Business** file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when configuring your refresh settings. Otherwise you may encounter an error (such as *Failed to update data source credentials*) when you attempt to connect or to refresh. Selecting **OAuth2** as the authentication method remedies that credentials error.
 > 
 > 
 

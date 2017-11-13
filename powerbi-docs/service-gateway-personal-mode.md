@@ -25,7 +25,8 @@ You can use on-premises data sources, and create Power BI reports and dashboards
 
 ![](media/service-gateway-personal-mode/gateway-personal-mode_00.png)
 
-> Note: The **On-premises data gateway (personal mode)** replaces the previously supported version of the personal gateway, which is called **Power BI Gateway - Personal**. The previous personal gateway will continue working only until July 31, 2017. See the sections below for information on how to update to the new version.
+> [!NOTE]
+> The **On-premises data gateway (personal mode)** replaces the previously supported version of the personal gateway, which is called **Power BI Gateway - Personal**. The previous personal gateway will continue working only until July 31, 2017. See the sections below for information on how to update to the new version.
 > 
 > 
 
@@ -53,7 +54,8 @@ When you select a dataset, and then select **Gateway connection** you're notifie
 
 ![](media/service-gateway-personal-mode/gateway-personal-mode_04.png)
 
-> **Note:** If you're running the previous version of **Power BI Gateway - personal** as an elevated process, make sure you start the new gateway installation process elevated as well, so your dataset credentials can be automatically updated. Otherwise, you'll have to update dataset credentials manually.
+> [!NOTE]
+> If you're running the previous version of **Power BI Gateway - personal** as an elevated process, make sure you start the new gateway installation process elevated as well, so your dataset credentials can be automatically updated. Otherwise, you'll have to update dataset credentials manually.
 > 
 > 
 

@@ -224,7 +224,8 @@ Change the selection mode using switch:
 
 ![](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
-> **Note:** a maximum of 250 data points can be selected at a time.
+> [!NOTE]
+> a maximum of 250 data points can be selected at a time.
 > 
 > 
 

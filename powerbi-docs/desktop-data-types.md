@@ -86,7 +86,8 @@ If the data in the column you specify as an argument is incompatible with the da
 ### Table of Implicit Data Conversions
 The type of conversion that is performed is determined by the operator, which casts the values it requires before performing the requested operation. These tables list the operators, and indicate the conversion that is performed on each data type in the column when it is paired with the data type in the intersecting row.
 
-> **Note:**  Text data types are not included in these tables. When a number is represented as in a text format, in some cases Power BI will attempt to determine the number type and represent it as a number.
+> [!NOTE]
+>  Text data types are not included in these tables. When a number is represented as in a text format, in some cases Power BI will attempt to determine the number type and represent it as a number.
 > 
 > 
 
@@ -114,7 +115,8 @@ In the following table the row header is the minuend (left side) and the column 
 
 For example, if a date is used in a subtraction operation with any other data type, both values are converted to dates, and the return value is also a date.
 
-> **Note:**    Data models also support the unary operator, - (negative), but this operator does not change the data type of the operand.
+> [!NOTE]
+>    Data models also support the unary operator, - (negative), but this operator does not change the data type of the operand.
 > 
 > 
 

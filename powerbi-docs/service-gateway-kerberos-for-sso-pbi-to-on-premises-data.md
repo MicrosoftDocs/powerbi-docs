@@ -36,7 +36,8 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_01.png)
 
-> **Note:** SSO for Oracle is not enabled yet, but is under development and coming soon.
+> [!NOTE]
+> SSO for Oracle is not enabled yet, but is under development and coming soon.
 > 
 > 
 
@@ -52,7 +53,8 @@ Here are additional details about those steps:
    
    a.    The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
    
-   > **Note:** Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
+   > [!NOTE]
+> Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
    > 
    > 
 
@@ -85,7 +87,8 @@ To enable **Kerberos Constrained Delegation**, the gateway must run as a domain 
   * [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
   * If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
-> Note: If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
+> [!NOTE]
+> If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
 > 
 > 
 

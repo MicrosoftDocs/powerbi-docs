@@ -37,7 +37,8 @@ To use R-powered custom visuals, you need to download each visual from the **cus
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2.png)
 2. Select the **R-powered visual** you're interested in using from the gallery. A dialog presenting additional details appears. Select **Download Visual** to download.
    
-   > Note: For authoring in **Power BI Desktop**, you need to have R installed on your local machine. But when users want to view an R-powered visual in the **Power BI service** they do *not* need R installed locally.
+   > [!NOTE]
+> For authoring in **Power BI Desktop**, you need to have R installed on your local machine. But when users want to view an R-powered visual in the **Power BI service** they do *not* need R installed locally.
    > 
    > 
    
@@ -99,7 +100,8 @@ The Power BI team is actively working on mitigating these issues before they rea
    
    * Supported R versions are listed in the description of each R-powered custom visual, as shown in the following image.
      ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_11.png)
-     > **Note:** You can keep the original R installation, and only associate Power BI Desktop with the current version you install. Go to **File > Options and settings > Options > R scripting**.
+     > [!NOTE]
+> You can keep the original R installation, and only associate Power BI Desktop with the current version you install. Go to **File > Options and settings > Options > R scripting**.
 3. Install R packages manually, using any R console. The steps for this approach are the following:
    
    a.  Download the R-powered visual installation script, and save that file to a local drive.

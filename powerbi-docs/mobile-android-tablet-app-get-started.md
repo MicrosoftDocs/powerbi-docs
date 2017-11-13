@@ -36,7 +36,8 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 ## First things first
 * **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
-  > **Note:** Power BI can run on a number of different Android tablets. Your tablet needs to be running the Android 5.0 operating system, or later. To check on your tablet, go to **Settings** > **About device** > **Android version**. 
+  > [!NOTE]
+> Power BI can run on a number of different Android tablets. Your tablet needs to be running the Android 5.0 operating system, or later. To check on your tablet, go to **Settings** > **About device** > **Android version**. 
   > 
   > 
 * **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android tablet. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-tablet-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.

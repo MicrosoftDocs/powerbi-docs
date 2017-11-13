@@ -67,7 +67,8 @@ The following table (or matrix, if you like) describes the three types of datase
 
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
-> Note: See [this MSDN article](https://msdn.microsoft.com/library/dn950053.aspx) for information on **Push** limits on how much data can be pushed in.
+> [!NOTE]
+> See [this MSDN article](https://msdn.microsoft.com/library/dn950053.aspx) for information on **Push** limits on how much data can be pushed in.
 > 
 > 
 
@@ -88,7 +89,8 @@ When you create a dataset using Power BI REST APIs, the *defaultMode* flag speci
 
 If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **push** *and* **streaming** dataset, providing the benefits of both dataset types. The REST API [article for **Create dataset**](https://msdn.microsoft.com/library/mt203562.aspx) demonstrates creating a streaming dataset, and shows the *defaultMode* flag in action.
 
-> **Note:** When using datasets with the *defaultMode* flag set to *pushStreaming*, if a request exceeds the 15Kb size restriction for a **streaming** dataset, but is less than the 16MB size restriction of a **push** dataset, the request will succeed and the data will be updated in the push dataset. However, any streaming tiles will temporarily fail.
+> [!NOTE]
+> When using datasets with the *defaultMode* flag set to *pushStreaming*, if a request exceeds the 15Kb size restriction for a **streaming** dataset, but is less than the 16MB size restriction of a **push** dataset, the request will succeed and the data will be updated in the push dataset. However, any streaming tiles will temporarily fail.
 > 
 > 
 
@@ -107,7 +109,8 @@ When creating the new streaming dataset, you can select to enable **Historic dat
 
 When **Historic data analysis** is disabled (it is disabled by default), you create a **streaming dataset** as described earlier in this article. When **Historic data analysis** is *enabled*, the dataset created becomes both a **streaming dataset** and a **push dataset**. This is equivalent to using the Power BI REST APIs to create a dataset with its *defaultMode* set to *pushStreaming*, as described earlier in this article.
 
-> **Note:** For streaming datasets created using the Power BI service UI, as described in the previous paragraph, Azure AD authentication is not required. In such datasets, the dataset owner receives a URL with a rowkey, which authorizes the requestor to push data into the dataset with out using an Azure AD OAuth bearer token. Take now, however, that the Azure AD (AAD) approach still works to push data into the dataset.
+> [!NOTE]
+> For streaming datasets created using the Power BI service UI, as described in the previous paragraph, Azure AD authentication is not required. In such datasets, the dataset owner receives a URL with a rowkey, which authorizes the requestor to push data into the dataset with out using an Azure AD OAuth bearer token. Take now, however, that the Azure AD (AAD) approach still works to push data into the dataset.
 > 
 > 
 
@@ -170,7 +173,8 @@ With the integration of **PubNub** streaming with Power BI, you can use your low
 
 ![](media/service-real-time-streaming/real-time-streaming_7.png)
 
-> **Warning:** PubNub channels can be secured by using a PubNub Access Manager (PAM) authentication key. This key will be shared with all users who have access to the dashboard. You can [learn more about PubNub access control](https://www.pubnub.com/docs/web-javascript/pam-security).
+> [!WARNING]
+> PubNub channels can be secured by using a PubNub Access Manager (PAM) authentication key. This key will be shared with all users who have access to the dashboard. You can [learn more about PubNub access control](https://www.pubnub.com/docs/web-javascript/pam-security).
 > 
 > 
 

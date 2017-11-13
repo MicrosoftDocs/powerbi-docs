@@ -42,7 +42,8 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
-   > Note: This content pack requires you connect with a Zendesk Admin account. 
+   > [!NOTE]
+> This content pack requires you connect with a Zendesk Admin account. 
    > 
    > 
    

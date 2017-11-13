@@ -25,7 +25,8 @@ ms.author: davidi
 
 ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
 
-> **Note:** These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
+> [!NOTE]
+> These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
 > 
 > 
 

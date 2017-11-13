@@ -30,7 +30,8 @@ In this tutorial you create an organizational content pack, give access to a spe
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
-> **Note:** Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
+> [!NOTE]
+> Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 > 
 > 
 
@@ -53,7 +54,8 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    
    b.  Name the content pack **Sales Opportunities**.
    
-   > **Tip:** Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
+   > [!TIP]
+> Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
    > 
    > 
    
@@ -63,7 +65,8 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    
    e.  Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.  Power BI automatically adds the associated report and dataset. You can add others, if you want.
    
-   > **Note:**  Only the dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
+   > [!NOTE]
+>  Only the dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
    > 
    > 
    
@@ -85,7 +88,8 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 6. They see your content pack.  
    ![](media/service-organizational-content-pack-create-and-publish/powerbi-find-content-pack-organization.png) 
    
-   > **Tip:** The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
+   > [!TIP]
+> The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
    > 
    > 
 7. They select **Connect**, and now they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md). 

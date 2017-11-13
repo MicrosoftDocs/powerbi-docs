@@ -25,7 +25,8 @@ The on-premises data gateway acts as a bridge, providing quick and secure data t
 
 You can use a single gateway with different services at the same time. If you are using Power BI, as well as PowerApps, a single gateway and be used for both. It is dependent on the account you sign in with.
 
-> Note: The On-premises data gateway implements data compression, and transport encryption, in all modes.
+> [!NOTE]
+> The On-premises data gateway implements data compression, and transport encryption, in all modes.
 > 
 > 
 

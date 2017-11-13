@@ -46,7 +46,8 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    ![](media/desktop-r-visuals/r-visuals-4.png)
 3. Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other **Power BI Desktop** visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the **Power BI Desktop R script editor**. **Power BI Desktop** automatically detects which fields you have added or removed.
 
-> **Note:** The default aggregation type for R visuals is *do not summarize*.
+> [!NOTE]
+> The default aggregation type for R visuals is *do not summarize*.
 > 
 > 
 
@@ -61,7 +62,8 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    
    ![](media/desktop-r-visuals/r-visuals-5.png)
    
-   > **Tip:** In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
+   > [!TIP]
+> In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
    > 
    > 
    

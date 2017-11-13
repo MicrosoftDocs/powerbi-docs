@@ -25,7 +25,8 @@ Beginning with the June 2017 release of the **Power BI Desktop** and updates to 
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
-> **Note:** The **high density sampling** algorithm described in this article applies to, and is available in, both **Power BI Desktop** and the **Power BI service**.
+> [!NOTE]
+> The **high density sampling** algorithm described in this article applies to, and is available in, both **Power BI Desktop** and the **Power BI service**.
 > 
 > 
 

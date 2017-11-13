@@ -32,7 +32,8 @@ To create a **What if** parameter, select the **What if** button from the **Mode
 
 ![](media/desktop-what-if/what-if_02.png)
 
-> Note: for decimal numbers, make sure you precede it with a zero, as in 0.50 versus just .50 in that box. Otherwise the number won't validate and the **OK** button will not be selectable.
+> [!NOTE]
+> for decimal numbers, make sure you precede it with a zero, as in 0.50 versus just .50 in that box. Otherwise the number won't validate and the **OK** button will not be selectable.
 > 
 > 
 

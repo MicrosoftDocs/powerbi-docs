@@ -32,7 +32,8 @@ To enable gridlines and snap-to-grid, select the **View** ribbon, then enable th
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
-> Note: If **Show gridlines** and **Snap objects to grid** are disabled, connect to any data source and they become enabled.
+> [!NOTE]
+> If **Show gridlines** and **Snap objects to grid** are disabled, connect to any data source and they become enabled.
 > 
 > 
 

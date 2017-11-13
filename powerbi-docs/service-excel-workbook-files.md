@@ -34,7 +34,8 @@ If your workbook has simple worksheets with ranges of data, to get the most out 
 #### Workbooks with data models
 Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query (Get & Transform in Excel 2016), or Power Pivot. Power BI supports all data model properties such as relationships, measures, hierarchies, and KPIs.
 
-> Note: Workbooks with data models cannot be shared across Power BI tenants. For example, a user who logs in to Power BI using a *contoso.com* account cannot share an Excel workbook with a user who logs in using a Power BI login account from *woodgrovebank.com*.
+> [!NOTE]
+> Workbooks with data models cannot be shared across Power BI tenants. For example, a user who logs in to Power BI using a *contoso.com* account cannot share an Excel workbook with a user who logs in using a Power BI login account from *woodgrovebank.com*.
 > 
 > 
 
