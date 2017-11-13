@@ -63,7 +63,8 @@ An expression always appears between an opening and closing parenthesis. In this
 
 Select **ProductCategory[ProductCategory]**, and then type a closing parenthesis.
 
-> **Tip:** Syntax errors are most often caused by a missing or misplaced closing parenthesis. But often Power BI Desktop will add it if you forget.
+> [!TIP]
+> Syntax errors are most often caused by a missing or misplaced closing parenthesis. But often Power BI Desktop will add it if you forget.
 > 
 > 
 
@@ -73,7 +74,8 @@ Select **ProductCategory[ProductCategory]**, and then type a closing parenthesis
 
  **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &**
 
-> **Tip:** Click the down chevron on the right side of the formula bar to expand the formula editor. Click Alt & Enter to move down a line, and Tab to move things over.
+> [!TIP]
+> Click the down chevron on the right side of the formula bar to expand the formula editor. Click Alt & Enter to move down a line, and Tab to move things over.
 > 
 > 
 

@@ -38,7 +38,8 @@ Brushing is when visuals are linked together so that when a user selects a data 
 
 Start the process by using the *Reference* option on the query that has the field you want to build a histogram on.  Name the new query *Buckets*.  For this example let's call the original query *Details*.  Next remove all columns except the column you'll use as the bucket for the histogram.  Now use the *Remove Duplicates* feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets.  Now, check the data shown in the query preview. If you see blank values or null you'll need to fix those up before creating a relationship. See "Creating a relationship if my data has null or blank values". Using this approach can be problematic due to the need to sort. To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want". 
 
-> Note: It's useful to think about the sort order before building any visuals.   
+> [!NOTE]
+> It's useful to think about the sort order before building any visuals.   
 > 
 > 
 

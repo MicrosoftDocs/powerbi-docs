@@ -102,7 +102,8 @@ The following screen shows the three **Replaced Value** steps in **Query Setting
 
 ![](media/desktop-shape-and-combine-data/shapecombine_replacedvaluesok.png)
 
-**Note:** You can also **Remove Errors** (using the ribbon or the right-click menu), which removes any rows that have errors. In this case it would’ve removed all the states that had "*(tie)*" from our data, and we didn’t want to do that – we like all the states, and want to keep them in the table.
+> [!NOTE]
+> You can also **Remove Errors** (using the ribbon or the right-click menu), which removes any rows that have errors. In this case it would’ve removed all the states that had "*(tie)*" from our data, and we didn’t want to do that – we like all the states, and want to keep them in the table.
 
 Okay that was a little involved, but it was a good example of how powerful and versatile Query Editor can be.
 
@@ -127,7 +128,8 @@ From the **Home** ribbon in Query Editor, we select **New Source \> Web** and ty
 
 We select **Table[edit]** because that includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down to what we want.
 
-> **Tip:** Is there a faster or easier way to accomplish the steps below? Yes, we could create a *relationship* between the two tables, and shape the data based on that relationship. The following steps are still good to learn for working with tables, just know that relationships can help you quickly use data from multiple tables.
+> [!TIP]
+> Is there a faster or easier way to accomplish the steps below? Yes, we could create a *relationship* between the two tables, and shape the data based on that relationship. The following steps are still good to learn for working with tables, just know that relationships can help you quickly use data from multiple tables.
 > 
 > 
 
@@ -155,9 +157,11 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 ![](media/desktop-shape-and-combine-data/shapecombine_usefirstrowasheaders.png)
 
-**Note:** This is a good time to point out that the *sequence* of applied steps in Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+    >[!NOTE]
+    >This is a good time to point out that the *sequence* of applied steps in Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
 
-**Another Note:** When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
+    >[!NOTE]
+    >When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
 
 * Rename the columns, and the table itself – as usual, there are a few ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
 

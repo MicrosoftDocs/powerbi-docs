@@ -98,7 +98,8 @@ There are many transformations that are available when using **Add column from E
     
     * Length
 
-> **Note:** All *Text* transformations take into account the potential need to trim, clean (as of June 2017), or apply a case transformation to the column value.
+> [!NOTE]
+> All *Text* transformations take into account the potential need to trim, clean (as of June 2017), or apply a case transformation to the column value.
 > 
 > 
 
@@ -138,7 +139,8 @@ There are many transformations that are available when using **Add column from E
   
   * To Local Time
 
-> **Note:** All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
+> [!NOTE]
+> All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
 > 
 > 
 

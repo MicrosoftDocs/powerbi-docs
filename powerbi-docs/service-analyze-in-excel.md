@@ -49,7 +49,8 @@ In Power BI, select the ellipses menu beside a report or dataset (the ... beside
 ### Install Excel updates
 When you first use **Analyze in Excel**, you need to install updates to the Excel libraries. You’ll be prompted to download and run Excel updates (this initiates installation of the *SQL_AS_OLEDDB.msi* Windows installer package). This package installs **Microsoft AS OLE DB Provider for SQL Server 2016 RC0 (Preview)**.
 
-> **Note:** Be sure to check **Don’t show this again** in the **Install Excel updates** dialog. You only need to install the update once.
+> [!NOTE]
+> Be sure to check **Don’t show this again** in the **Install Excel updates** dialog. You only need to install the update once.
 > 
 > 
 
@@ -74,7 +75,8 @@ In order to analyze your Power BI data in Excel, you are prompted to verify the 
 
 ![](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
-> **Note:** Administrators for Power BI tenants can use the *Power BI Admin Portal* to disable the use of **Analyze in Excel** with on-premises datasets housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for use with other datasets.
+> [!NOTE]
+> Administrators for Power BI tenants can use the *Power BI Admin Portal* to disable the use of **Analyze in Excel** with on-premises datasets housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for use with other datasets.
 > 
 > 
 
@@ -83,7 +85,8 @@ Now that Excel has opened and you have an empty PivotTable, you're ready to do a
 
 ![](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
-> **Note:** It's important to know that using **Analyze in Excel** exposes all detail-level data to any users with permission to the dataset.
+> [!NOTE]
+> It's important to know that using **Analyze in Excel** exposes all detail-level data to any users with permission to the dataset.
 > 
 > 
 

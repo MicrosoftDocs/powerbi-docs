@@ -47,7 +47,8 @@ You can customize many elements of each visualization:
 * Lock aspect
 * Border
 
-> **Note:**  
+> [!NOTE]
+>  
 > You won’t see all these elements with each visualization type. The visualization you select will affect which customizations are available; for example, you won’t see an X-Axis if you have a pie chart selected because pie charts don’t have an X-axis.
 > 
 > 
@@ -87,7 +88,8 @@ You can remove the X-Axis labels entirely, by toggling the radio button beside *
 
 There are all sorts of colors to choose from, and many more customizations you can apply to your Power BI reports and dashboards.
 
-> **Note:**  
+> [!NOTE]
+>  
 > These color, axis, and related customizations available when the **Format** icon is selected are also available in Power BI Desktop.
 > 
 > 

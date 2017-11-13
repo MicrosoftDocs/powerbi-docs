@@ -25,7 +25,8 @@ The **Power BI service** has a version available for United States Government cu
 
 For more information about the **Power BI service** for US Government, including its features and limitations, check out [Power BI for United States Government customers - Overview](service-govus-overview.md).
 
-> **Note:** This article is intended for administrators who have authority to sign up their US Government organization for Power BI. If you are an end-user, contact your administrator about getting a subscription to Power BI for US Government.
+> [!NOTE]
+> This article is intended for administrators who have authority to sign up their US Government organization for Power BI. If you are an end-user, contact your administrator about getting a subscription to Power BI for US Government.
 > 
 > 
 
@@ -39,7 +40,8 @@ Once you have signed up for Power BI US Government some features may not work un
 ### US Government organizations that are new Office Cloud customers
 If your organization is a new **Office Government Cloud** customer, follow these steps:
 
-> **Note:** These steps should be performed by the portal administrator.
+> [!NOTE]
+> These steps should be performed by the portal administrator.
 > 
 > 
 
@@ -50,7 +52,8 @@ If your organization is a new **Office Government Cloud** customer, follow these
 ### Existing Office Government Cloud customers
 If your organization is an existing **Office Government Cloud** customer, but you don't have a **Power BI** subscription (Free or otherwise), follow these steps:
 
-> **Note:** These steps should be performed by the portal administrator.
+> [!NOTE]
+> These steps should be performed by the portal administrator.
 > 
 > 
 

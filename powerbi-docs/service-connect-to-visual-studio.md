@@ -45,7 +45,8 @@ Note: This content pack requires access to an account which has OAuth enabled. M
    ![](media/service-connect-to-visual-studio/projectimage.png)
 5. Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result. 
    
-   > **Important:** Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
+   > [!IMPORTANT]
+> Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
    > 
    > 
    

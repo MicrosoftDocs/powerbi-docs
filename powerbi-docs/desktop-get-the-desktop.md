@@ -49,7 +49,8 @@ Regardless of which way you choose to download, once **Power BI Desktop** is dow
 
 ![](media/desktop-get-the-desktop/designer_gsg_install.png)
 
-> **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
+> [!NOTE]
+> Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
 > 
 
@@ -72,9 +73,11 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 
 * If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
 
-> **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
+> [!NOTE]
+> Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
-> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
+> [!NOTE]
+> The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
 > 
 > 
 
