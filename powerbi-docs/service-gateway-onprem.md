@@ -76,7 +76,7 @@ You will also need to supply the windows user name and password that the windows
 
 After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
 
-<a name="credentials">
+<a name="credentials"></a>
 
 ## Storing encrypted credentials in the cloud
 When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.

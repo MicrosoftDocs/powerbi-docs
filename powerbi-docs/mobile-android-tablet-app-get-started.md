@@ -37,7 +37,7 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 * **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
   > [!NOTE]
-> Power BI can run on a number of different Android tablets. Your tablet needs to be running the Android 5.0 operating system, or later. To check on your tablet, go to **Settings** > **About device** > **Android version**. 
+  > Power BI can run on a number of different Android tablets. Your tablet needs to be running the Android 5.0 operating system, or later. To check on your tablet, go to **Settings** > **About device** > **Android version**. 
   > 
   > 
 * **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android tablet. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-tablet-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
@@ -55,7 +55,8 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)]
    ![Power BI start icon](media/mobile-android-tablet-app-get-started/power-bi-logo-android.png)
 2. To view your Power BI dashboards and reports, tap **Power BI**.  
    
-   > **Important**: If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
+   > [!IMPORTANT]
+   > If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
    > 
    > 
    
@@ -112,7 +113,8 @@ Organizations can use Microsoft Intune to manage devices and applications, inclu
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
 
-> **Note**: If you use the Power BI mobile app on your Android device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [!NOTE]
+> If you use the Power BI mobile app on your Android device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 > 
 > 
 

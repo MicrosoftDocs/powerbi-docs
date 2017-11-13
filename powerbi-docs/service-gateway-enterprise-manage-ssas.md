@@ -148,7 +148,7 @@ To perform on-premises AD property lookup to re-map AAD UPNs to Active Directory
 
 In the **Power BI service** the following occurs:
 
-1. For each query by a Power BI AAD user to an on-premises SSAS server, a UPN string is passed along, such as: 
+- For each query by a Power BI AAD user to an on-premises SSAS server, a UPN string is passed along, such as: 
        firstName.lastName@contoso.com
 
 > [!NOTE]

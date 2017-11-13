@@ -28,7 +28,8 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
  While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).
 
-> **TIP**: GIS stands for Geographic Information Science.
+> [!TIP]
+> GIS stands for Geographic Information Science.
 > 
 > 
 
@@ -36,7 +37,8 @@ The example below uses a dark gray canvas to show regional sales as a heatmap ag
 
 ![](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
-**TIP**: Visit [esri's page on Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> [!TIP]
+> Visit [esri's page on Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 ## User consent
 ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog.
@@ -79,7 +81,8 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example we're using **Store > City**.
    
-   > **NOTE**: ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+   > [!NOTE]
+   > ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
    > 
    > 
    
@@ -100,7 +103,8 @@ To access **ArcGIS Maps for Power BI** formatting features:
    
    ![](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
    
-   > **NOTE**:  For more information about the settings and features, see **Detailed documentation** below.
+   > [!NOTE]
+   > For more information about the settings and features, see **Detailed documentation** below.
    > 
    > 
 2. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
@@ -177,7 +181,7 @@ The Drive time pane lets you select a location and then determine what other map
 1. Select the **Drive time** tab and choose the single or multi select tool. Single select the pin for Washington D.C.
     ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
-   > **TIP**: 
+   > [!TIP]
    > It's easier to select a location if you zoom in on the map (using the + icon).
    > 
    > 
@@ -225,7 +229,7 @@ Change the selection mode using switch:
 ![](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
 > [!NOTE]
-> a maximum of 250 data points can be selected at a time.
+> A maximum of 250 data points can be selected at a time.
 > 
 > 
 
