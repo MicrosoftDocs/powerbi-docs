@@ -66,8 +66,8 @@ Watch recorded sessions at any time
 
 ## See also
 
-[Power BI whitepapers](powerbi-whitepapers.md)
+[Power BI whitepapers](whitepapers.md)
 
 [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](service-get-started.md)
