@@ -1457,7 +1457,8 @@ The following features have been added or improved in this update:
 
 - Performance improvements
 - Dynamics CRM Online connector
-	> *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
+	> [!NOTE]
+	> Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
 - Navigator Dialog improvements
 	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
 	-   Show Selected Items option
