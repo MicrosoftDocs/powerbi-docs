@@ -54,10 +54,10 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    
    2.  Name the content pack **Sales Opportunities**.
    
-   > [!TIP]
-   > Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
-   > 
-   > 
+      > [!TIP]
+      > Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
+      > 
+      > 
    
    3.  Recommended: Add a **description**. This helps coworkers more easily find the content packs that they need. Besides a description, add keywords your coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
    
@@ -65,10 +65,10 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    
    5.  Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.  Power BI automatically adds the associated report and dataset. You can add others, if you want.
    
-   > [!NOTE]
-   >  Only the dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
-   > 
-   > 
+      > [!NOTE]
+      >  Only the dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
+      > 
+      > 
    
       ![](media/service-organizational-content-pack-create-and-publish/cpwindow.png) 
    
@@ -76,10 +76,10 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    
      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
-   > [!NOTE]
-   > If members of the group can't view the Excel workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
-   > 
-   > 
+      > [!NOTE]
+      > If members of the group can't view the Excel workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+      > 
+      > 
 4. Select **Publish** to add the content pack to the group's organizational content pack library.  
    
    You see a success message when it publishes successfully. 
@@ -95,7 +95,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    > 
 7. They select **Connect**, and now they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md). 
 
-## See also
+## Next steps
 * [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
 * [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md)  
 * [Create a group in Power BI](service-create-distribute-apps.md)  
