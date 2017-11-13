@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 11/13/2017
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -42,6 +42,8 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 [Applied Intelligence for Sales & Service - 11/15/17](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
+[What's new and exciting in Power BI Report Server - 11/21/17](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
+
 [Better Together: 5 Benefits Excel Users Will Get From Using Power BI - 11/27/17](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 [Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability -12/05/17](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
@@ -64,8 +66,8 @@ Watch recorded sessions at any time
 
 ## See also
 
-[Power BI whitepapers](whitepapers.md)
+[Power BI whitepapers](powerbi-whitepapers.md)
 
 [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-[Get started with Power BI](service-get-started.md)
+[Get started with Power BI](powerbi-service-get-started.md)
