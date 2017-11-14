@@ -30,7 +30,8 @@ In **Power BI Desktop**, measures are created and used in **Report View** or **D
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
-> **Note:** You might also be interested in **quick measures**, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn DAX syntax, since their automatically created DAX formulas are available to review. Check out the article: [quick measures](desktop-quick-measures.md).
+> [!NOTE]
+> You might also be interested in **quick measures**, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn DAX syntax, since their automatically created DAX formulas are available to review. Check out the article: [quick measures](desktop-quick-measures.md).
 > 
 > 
 

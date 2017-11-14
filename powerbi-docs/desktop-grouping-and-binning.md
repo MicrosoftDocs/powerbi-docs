@@ -46,7 +46,8 @@ You can add an ungrouped value into an existing group: just select the Ungrouped
 
 ![](media/desktop-grouping-and-binning/grouping-binning_4.png)
 
-> Note: You can create groups for any field in the **Fields** well, without having to multi-select from an existing visual. Just right-click the field, and select **Group** from the menu that appears.
+> [!NOTE]
+> You can create groups for any field in the **Fields** well, without having to multi-select from an existing visual. Just right-click the field, and select **Group** from the menu that appears.
 > 
 > 
 

@@ -31,7 +31,8 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 
 ![](media/desktop-data-sources/data-sources_2.png)
 
-> **Note:** The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
+> [!NOTE]
+> The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
 > 
 > 
 
@@ -60,7 +61,8 @@ The following image shows the **Get Data** window for **File**.
 
 ![](media/desktop-data-sources/data-sources_3.png)
 
-> Note: In previous versions of Power BI Desktop, **CSV** and **Text** were separate data connection types. Those data connectors have been combined into **CSV/Text**.
+> [!NOTE]
+> In previous versions of Power BI Desktop, **CSV** and **Text** were separate data connection types. Those data connectors have been combined into **CSV/Text**.
 > 
 > 
 
@@ -84,7 +86,8 @@ The **Database** category provides the following data connections:
 * Google BigQuery (Beta)
 * Snowflake
 
-> **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
+> [!NOTE]
+> Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
 > 
 > 
 
@@ -166,7 +169,8 @@ The following image shows the **Get Data** window for **Other**.
 
 ![](media/desktop-data-sources/data-sources_7a.png)
 
-> **Note:** At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
+> [!NOTE]
+> At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 > 
 > 
 

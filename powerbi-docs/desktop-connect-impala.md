@@ -36,7 +36,8 @@ When prompted, put in your username and password, or connect anonymously - eithe
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
-> **Note:** Once you put in your username and password for a particular **Impala** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
+> [!NOTE]
+> Once you put in your username and password for a particular **Impala** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
 > 
 

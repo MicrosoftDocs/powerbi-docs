@@ -36,7 +36,8 @@ You can also **See Data** by right-clicking on a visual, then selecting **See Da
 
 ![](media/desktop-see-data-see-records/see-data-see-records_3.png)
 
-> **Note:** You must be hovering over a data point in the visual in order for the right-click menu to be available.
+> [!NOTE]
+> You must be hovering over a data point in the visual in order for the right-click menu to be available.
 > 
 > 
 
@@ -57,7 +58,8 @@ You can also focus on one data element in a visual, and drill into the data behi
 
 ![](media/desktop-see-data-see-records/see-data-see-records_7.png)
 
-> **Note:** If the selected visual does not support **See Records** then the button on the ribbon is grayed out.
+> [!NOTE]
+> If the selected visual does not support **See Records** then the button on the ribbon is grayed out.
 > 
 > 
 

@@ -25,7 +25,8 @@ With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *refere
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
-> Note: The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
+> [!NOTE]
+> The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
 > 
 > 
 

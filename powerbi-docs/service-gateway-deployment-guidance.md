@@ -73,7 +73,8 @@ There are a few tools that you can use to monitor the use and performance of you
 #### Performance counters
 There are many performance counters that can be used to evaluate and assess activity occurring on the gateway. The counters can help you understand whether you have large volume of activities by the specific type, which may prompt you to deploy a new gateway.
 
-> **Note:** These counters will not capture specific task duration time.
+> [!NOTE]
+> These counters will not capture specific task duration time.
 > 
 > 
 

@@ -44,7 +44,8 @@ Take the following steps to create a **Shape Map**:
 
 1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Values** bucket (you won't see a map yet).
    
-   > **Note:** See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
+   > [!NOTE]
+> See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
    > 
    > 
    
@@ -53,7 +54,8 @@ Take the following steps to create a **Shape Map**:
    
    ![](media/desktop-shape-map/shape-map_3b.png)
    
-   > **Note:** In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+   > [!NOTE]
+> In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
 3. You can then modify the map projection and zooming settings, as well as the colors of data points, from the **Format** settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
@@ -79,7 +81,8 @@ You can then paste the table into Power BI Desktop. The top row is automatically
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 
-> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+> [!NOTE]
+> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 > 
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 > 

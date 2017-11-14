@@ -80,7 +80,8 @@ We need a measure to subtract discounts and returns from sales amounts. Because 
 
 ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
 
-> **Tip:** You can also create a new measure by clicking on the New Measure button in the ribbon on Power BI Desktop’s Home tab.
+> [!TIP]
+> You can also create a new measure by clicking on the New Measure button in the ribbon on Power BI Desktop’s Home tab.
 > 
 > ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasureribbon.png)
 > 
@@ -114,7 +115,8 @@ In general, it’s good practice to enter the fully qualified name of a column. 
 
 **4. ** Select **Sales[SalesAmount]**, and then type a closing parenthesis.
 
-> **Tip:** Syntax errors are most often caused by a missing or misplaced closing parenthesis.
+> [!TIP]
+> Syntax errors are most often caused by a missing or misplaced closing parenthesis.
 > 
 > 
 

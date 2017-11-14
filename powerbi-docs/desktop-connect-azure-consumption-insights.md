@@ -56,7 +56,8 @@ Once you provide your *Access key* and select **Connect**, a **Navigator** windo
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
-> **Note:** The *Summary and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
+> [!NOTE]
+> The *Summary and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
 > 
 > 
 

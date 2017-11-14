@@ -21,7 +21,8 @@ ms.author: davidi
 
 ---
 # Power BI Gateway - Personal
-> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> [!NOTE]
+> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -55,7 +56,8 @@ With a gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uplo
 ### Online data sources
 A gateway *is only required* if you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function. In other cases, a gateway is *not* required in order to refresh datasets that get data only from an online data source.
 
-> Note: If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you only need a gateway if you have republished the dataset or your report after November 18th, 2016.
+> [!NOTE]
+> If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you only need a gateway if you have republished the dataset or your report after November 18th, 2016.
 > 
 > 
 
@@ -83,7 +85,8 @@ Setting up a gateway for the first time is a three step process:
 Let’s take a closer look at each step.
 
 ### Download and install a gateway
-> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> [!NOTE]
+> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 

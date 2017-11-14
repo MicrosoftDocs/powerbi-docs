@@ -90,7 +90,8 @@ You can create the application, or the policy first. The order in which they are
 4. You can decide if you want the publish the app as **Any** (default), **iPad** or **iPhone**. By default it will show **Any** and will work for both device types. The Power BI app is the same url for both iPhone and iPad. Select **Next**.
 5. Select **Upload**.
 
-> NOTE: You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
+> [!NOTE]
+> You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
 > 
 > 
 
@@ -104,7 +105,8 @@ You can create the application, or the policy first. The order in which they are
 3. Provide a **Publisher**, **Name** and **Description**. You can optionally provide an **Icon**. The **Category** is for the Company Portal app. Once you are done, select **Next**.
 4. Select **Upload**.
 
-> NOTE: You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
+> [!NOTE]
+> You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
 > 
 > 
 

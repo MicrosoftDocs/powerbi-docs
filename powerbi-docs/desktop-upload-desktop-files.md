@@ -25,7 +25,8 @@ When you publish a **Power BI Desktop** file to the **Power BI service**, the da
 
 Publishing from **Power BI Desktop** has the same effect as using **Get Data** in Power BI to connect to and upload a **Power BI Desktop** file.
 
-> **Note:** Any changes you make in to the report Power BI, for example, add, delete, or change visualizations in reports, will not be saved to the original **Power BI Desktop** file.
+> [!NOTE]
+> Any changes you make in to the report Power BI, for example, add, delete, or change visualizations in reports, will not be saved to the original **Power BI Desktop** file.
 > 
 > 
 

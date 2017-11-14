@@ -27,7 +27,8 @@ You can tell **Power BI Desktop** to explain increases or decreases in charts, a
 
 The insights feature is contextual, and is based on the immediately previous data point - such as the previous bar, or column.
 
-> **Note:** This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
+> [!NOTE]
+> This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
 > 
 > 
 

@@ -74,7 +74,8 @@ Let’s go over a few more things about this formula. In particular, we introduc
 
 You also see the column [SalesAmount] was preceded by the table Sales in which the column belongs. This is known as a fully qualified column name in that it includes the column name preceded by the table name. Columns referenced in the same table do not require the table name be included in the formula. This can make long formulas that reference many columns shorter and easier to read. However, it's good practice to  include the table name in your measure formulas, even when in the same table.
 
-> **Note:** If a table name contains spaces, reserved keywords, or disallowed characters, you’ll need to  enclose the table name in single quotation marks. You’ll also need to enclose table names in quotation marks if the name contains any characters outside the ANSI alphanumeric character range, regardless of whether your locale supports the character set or not.
+> [!NOTE]
+> If a table name contains spaces, reserved keywords, or disallowed characters, you’ll need to  enclose the table name in single quotation marks. You’ll also need to enclose table names in quotation marks if the name contains any characters outside the ANSI alphanumeric character range, regardless of whether your locale supports the character set or not.
 > 
 > 
 

@@ -71,7 +71,8 @@ The following updates are new to **Power BI Desktop** this month:
 -   Improved access to help content  [[video]](https://youtu.be/jksjtR8GnBE?t=28m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#help)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
@@ -79,7 +80,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jksjtR8GnBE" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## September 2017 Update (2.50.4859.502)
@@ -109,7 +111,8 @@ The following updates are new to **Power BI Desktop** in September:
 -   Improvements to the Dynamics 365 for Financials connector  [[video]](https://youtu.be/moTQJlnClJw?t=45m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#dynamics365ForFinancials)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
@@ -117,7 +120,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/moTQJlnClJw" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## August 2017 Update (2.49.4831.222)
@@ -152,7 +156,8 @@ The following updates were new to **Power BI Desktop** in August:
 -   Google BigQuery connector (beta)  [[video]](https://youtu.be/ND8U0yXroaQ?t=44m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#GoogleBigQuery)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
@@ -160,7 +165,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## July 2017 Update (2.48.4792.321)
@@ -200,7 +206,8 @@ The following updates were new to **Power BI Desktop** in July:
 
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
@@ -208,7 +215,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## June 2017 Update (2.47.4766.542)
@@ -243,7 +251,8 @@ The following updates were new to **Power BI Desktop** in June:
 
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -251,7 +260,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YlNVE5dgcSI" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -288,7 +298,8 @@ The following updates were new to **Power BI Desktop** in May:
     -   Unpivot only selected columns [[video]](https://youtu.be/CKISVNHcHVA?t=24m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#unpivot)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -296,7 +307,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -331,7 +343,8 @@ The following updates were new to Power BI Desktop in April 2017:
 -   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -339,7 +352,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## March 2017 Update (2.44.4675.422)
@@ -372,7 +386,8 @@ The following updates were new to Power BI Desktop in March 2017:
 -   Split column by delimiter - automatic detection of delimiter character [[video]](https://youtu.be/CaRTON3lJqw?t=23m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#splitColumn)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -380,7 +395,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -418,7 +434,8 @@ The following updates were new to Power BI Desktop in February:
 -   Solutions Templates and Partner Showcase quick access  [[video]](https://youtu.be/mn75-LOPxMA?t=13m33s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#resources)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -426,7 +443,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## January 2017 Update (2.42.4611.482)
@@ -452,7 +470,8 @@ The following updates are new to Power BI Desktop in January:
 -   New transform: extract values from a nested list [[video]](https://youtu.be/C1-f0T8vZ7M?t=10m19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#extractValues)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -460,7 +479,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -503,7 +523,8 @@ The following updates were new to Power BI Desktop in November:
 -   Added **Maximize** and **Restore** buttons in **Navigator** and **Query Dependencies** [[video]](https://youtu.be/kERJ_WOLuLk?t=19m16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#maximize)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -511,7 +532,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## October 2016 Update (2.40.4554.361)
@@ -554,7 +576,8 @@ The following updates were new to Power BI Desktop in October:
 -   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#diagnostics) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -562,7 +585,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## September 2016 Update (2.39.4526.362)
@@ -610,7 +634,8 @@ The following updates were new to Power BI Desktop in September:
 -   In-product links to the **Power BI Community** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -618,7 +643,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -669,7 +695,8 @@ The following updates are new to Power BI Desktop this month:
 -   Auto-recover Desktop files [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post referenced in the list above).
 
@@ -677,7 +704,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## July 2016 Update (2.37.4464.321)
@@ -710,7 +738,8 @@ July brought another great collection of new features and highly anticipated dat
 -   Overwrite existing user-defined functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), where you can get more detailed information about each of these features (this is the same blog post referenced in the list above).
 
@@ -718,7 +747,8 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## June 2016 Update (2.36.4434.362)
 
@@ -761,7 +791,8 @@ June provided a shining collection of interesting updates for Power BI Desktop.
     -   Extract Time.Start/End of Hour/Minute/Second
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/), where you can get more detailed information about each of these new features.
 
@@ -770,7 +801,8 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sZsL2l6oS4A" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -815,7 +847,8 @@ May brought another large collection of compelling updates for Power BI Desktop:
 -   New context menu entry to create new queries from the **Queries** pane [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/), where you can get more detailed information about each of these new features.
 
@@ -824,7 +857,8 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KnDs4amt9-c" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## April 2016 Update (2.34.4372.322)
 
@@ -862,7 +896,8 @@ In April, we showered our great Power BI customers with another collection of co
 -   Reorder Queries and Query Groups using Drag & Drop gestures
 -   Query Management menu in the ribbon
 
->NOTE: You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/), where you can get more detailed information about each of these new features.
 
@@ -871,7 +906,8 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7IFZTYJR3Gk" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## March 2016 Update (2.33.4337.281)
@@ -922,7 +958,8 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eAayYDF9QzY" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -979,7 +1016,8 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J5gZ65Wexh4" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## January 2016 Update (2.31.4280.361)
@@ -1419,7 +1457,8 @@ The following features have been added or improved in this update:
 
 - Performance improvements
 - Dynamics CRM Online connector
-	> *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
+	> [!NOTE]
+	> Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
 - Navigator Dialog improvements
 	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
 	-   Show Selected Items option

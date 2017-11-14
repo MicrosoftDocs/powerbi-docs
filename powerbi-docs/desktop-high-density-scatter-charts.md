@@ -27,7 +27,8 @@ For example, you might create a scatter chart from your organization's sales act
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
 
-> **Note:** The **high density sampling** algorithm described in this article applies to, and is available in, scatter charts in both **Power BI Desktop** and the **Power BI service**.
+> [!NOTE]
+> The **high density sampling** algorithm described in this article applies to, and is available in, scatter charts in both **Power BI Desktop** and the **Power BI service**.
 > 
 > 
 
@@ -38,7 +39,8 @@ When you enable **High Density Sampling**, Power BI implements an algorithm that
 
 By definition, high density data is sampled to enable visualizations that can be created reasonably quickly, and are responsive to interactivity (too many data points on a visual can bog it down, and can detract from the visibility of trends). How such data is sampled, to provide the best visualization experience and ensure all data is represented, is what drives the creation of the sampling algorithm. In Power BI, the algorithm has been improved to provide the best combination of responsiveness, representation, and clear preservation of important points in the overall data set.
 
-> **Note:** Scatter charts using the **high density sampling** algorithm are best plotted on square visuals, as with all scatter charts.
+> [!NOTE]
+> Scatter charts using the **high density sampling** algorithm are best plotted on square visuals, as with all scatter charts.
 > 
 > 
 
@@ -49,7 +51,8 @@ The methods in this algorithm ensure that outliers are represented in the result
 
 The algorithm also preserves the overall shape of the scatter chart.
 
-> **Note:** When using the **High Density Sampling** algorithm for scatter charts, *accurate distribution* of the data is the goal, and implied visual density is *not* the goal. For example, you might see a scatter chart with lots of circles that overlap (density) in a certain area, and imagine many data points must be clustered there; since the **High Density Sampling** algorithm can use one circle to represent many data points, such implied visual density (or "clustering") will not show up. To get more detail in a given area, you can use slicers to zoom in.
+> [!NOTE]
+> When using the **High Density Sampling** algorithm for scatter charts, *accurate distribution* of the data is the goal, and implied visual density is *not* the goal. For example, you might see a scatter chart with lots of circles that overlap (density) in a certain area, and imagine many data points must be clustered there; since the **High Density Sampling** algorithm can use one circle to represent many data points, such implied visual density (or "clustering") will not show up. To get more detail in a given area, you can use slicers to zoom in.
 > 
 > 
 
@@ -72,9 +75,11 @@ To turn on **High Density Sampling**, select a scatter chart and then go to the 
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
-> **Note:** Once the slider is turned on, Power BI will attempt to use the **High Density Sampling** algorithm whenever possible. When the algorithm cannot be used (for example, you place a value in the *Play* axis), the slider stays in the **On** position even though the chart has reverted to the standard algorithm. If you then remove a value from the *Play* axis (or conditions change to enable use of the high density sampling algorithm), since the slider is on the chart will automatically use high density sampling for that chart.
+> [!NOTE]
+> Once the slider is turned on, Power BI will attempt to use the **High Density Sampling** algorithm whenever possible. When the algorithm cannot be used (for example, you place a value in the *Play* axis), the slider stays in the **On** position even though the chart has reverted to the standard algorithm. If you then remove a value from the *Play* axis (or conditions change to enable use of the high density sampling algorithm), since the slider is on the chart will automatically use high density sampling for that chart.
 > 
-> **Note:** Data points are grouped and/or selected by the index. Having a legend does not affect sampling for the algorithm, it only affects the ordering of the visual.
+> [!NOTE]
+> Data points are grouped and/or selected by the index. Having a legend does not affect sampling for the algorithm, it only affects the ordering of the visual.
 > 
 > 
 
