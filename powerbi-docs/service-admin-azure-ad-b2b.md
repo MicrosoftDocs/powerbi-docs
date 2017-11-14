@@ -1,5 +1,5 @@
 ---
-title: Using Azure AD business-to-business with Power BI
+title: Distribute Power BI content to external guest users with Azure AD B2B
 description: Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization.
 services: powerbi
 documentationcenter: ''
@@ -19,7 +19,7 @@ ms.workload: powerbi
 ms.date: 11/14/2017
 ms.author: asaxton
 ---
-# Using Azure AD business-to-business with Power BI
+# Distribute Power BI content to external guest users with Azure AD B2B
 
 Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization, while still maintaining control over the internal data.
 
