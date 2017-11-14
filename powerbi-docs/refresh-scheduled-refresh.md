@@ -20,7 +20,9 @@ ms.author: davidi
 
 ---
 # Configuring scheduled refresh
-> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. See the [*Schedule refresh*](#schedule-refresh) section later in this article for more information.
+
+>[!NOTE]
+>After two months of inactivity, scheduled refresh on your dataset is paused. See the [*Schedule refresh*](#schedule-refresh) section later in this article for more information.
 > 
 > 
 

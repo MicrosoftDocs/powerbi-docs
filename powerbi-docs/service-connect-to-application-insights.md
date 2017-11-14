@@ -86,7 +86,7 @@ Copy and paste these into the fields into Power BI:
 
 ![Application Insights parameters](media/service-connect-to-application-insights/pbi_contpkappinsitparam2.png)
 
-### Next steps
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

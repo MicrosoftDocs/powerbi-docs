@@ -120,7 +120,7 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 
 To **undo** your last action, or the last few actions, all you have to do is:
 
-1. Type CTRL+Z
+- Type CTRL+Z
 
 ## Feedback
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.

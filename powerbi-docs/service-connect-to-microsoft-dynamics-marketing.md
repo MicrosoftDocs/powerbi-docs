@@ -45,6 +45,7 @@ Connect to [Dynamics Marketing content pack](https://app.powerbi.com/getdata/ser
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgoauth2.png)
 6. After connecting, you'll see a Dynamics Marketing dashboard, populated with your own data. The yellow asterisks mark the new items in the left navigation pane.
+   
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgnewdash.png)
 
 **What now?**
