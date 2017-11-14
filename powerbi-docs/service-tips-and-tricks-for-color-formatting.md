@@ -125,9 +125,9 @@ To **undo** your last action, or the last few actions, all you have to do is:
 ## Feedback
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
 
-**Note:** These color, axis, and related customizations, available when the **F﻿ormat** icon is selected, are also available in Power BI Desktop.
+>[!NOTE]
+>These color, axis, and related customizations, available when the **F﻿ormat** icon is selected, are also available in Power BI Desktop.
 
-For more information, see the following articles:
-
-* [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
+## Next steps
+[Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 

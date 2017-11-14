@@ -31,7 +31,8 @@ The **Privacy Levels** setting, found in **File > Options and settings > Options
 
  ![](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
-> **Caution:** You should configure a data source containing highly sensitive or confidential data as **Private**.
+> [!CAUTION]
+> You should configure a data source containing highly sensitive or confidential data as **Private**.
 > 
 > 
 
@@ -51,8 +52,8 @@ To configure a data source privacy level, select the data source, then select **
 
 ![](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
-> **Caution:** You should configure a data source containing highly sensitive or confidential data as **Private**.
-> 
+> [!CAUTION]
+> You should configure a data source containing highly sensitive or confidential data as **Private**.
 > 
 
 ## Configure Privacy Levels

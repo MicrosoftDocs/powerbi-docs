@@ -25,7 +25,8 @@ With the Planview Enterprise content pack, you can visualize your resource and w
 
 Connect to the [Planview Enterprise content pack in Power BI](https://app.powerbi.com/getdata/services/planview-enterprise)
 
-Note: To import your Planview Enterprise data into Power BI, you must be a Planview Enterprise user with the Reporting Portal Viewer feature enabled on your role. See additional requirements below.
+>[!NOTE]
+>To import your Planview Enterprise data into Power BI, you must be a Planview Enterprise user with the Reporting Portal Viewer feature enabled on your role. See additional requirements below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -44,7 +45,7 @@ Note: To import your Planview Enterprise data into Power BI, you must be a Planv
      Power BI imports Planview Enterprise data into the dashboard. Note that the data may take some time to load.  
     ![](media/service-connect-to-planview/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -56,7 +57,7 @@ To import your Planview Enterprise data into Power BI, you must be a Planview En
 
 This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
 
-### See Also:
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)

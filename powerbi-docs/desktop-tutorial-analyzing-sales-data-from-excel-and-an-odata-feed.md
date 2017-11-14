@@ -90,7 +90,8 @@ In this task, you'll bring in order data. This step represents connecting to a s
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
 
-**Note**   You can click a table name, without selecting the checkbox, to see a preview.
+>[!NOTE]
+>You can click a table name, without selecting the checkbox, to see a preview.
 
 ### Step 2: Expand the Order\_Details table
 The **Orders** table contains a reference to a **Details** table, which contains the individual products that were included in each Order. When you connect to data sources with multiples tables (such as a relational database) you can use these references to build up your query. 

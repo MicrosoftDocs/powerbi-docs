@@ -72,7 +72,7 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 Be sure to leave the **Send refresh failure notification email to me checked**. You’ll want to know right away if a scheduled refresh fails.
 
-## Important notes
+## Important note
 \* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
 
 ## Troubleshooting
@@ -82,5 +82,6 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
+## Next steps
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

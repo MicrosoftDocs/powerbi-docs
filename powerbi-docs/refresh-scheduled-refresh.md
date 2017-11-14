@@ -78,13 +78,15 @@ The scheduled refresh section is where you define the frequency and time slots t
 
 You must set the **Keep your data up to date** slider to **Yes** in order to configure the settings.
 
-> **Note**: The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
+> [!NOTE]
+> The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 > 
 > 
 
 ![](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
-> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
+> [!NOTE]
+> After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
 > 
 > 
 

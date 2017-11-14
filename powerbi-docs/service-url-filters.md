@@ -50,8 +50,8 @@ Let’s assume that the URL to our report is the following.
 
 And we see in our map visualization (above) that we have stores in North Carolina.
 
-> **Note**: This example is based on the [Retail Analysis sample](sample-datasets.md).
-> 
+>[!NOTE]
+>This example is based on the [Retail Analysis sample](sample-datasets.md).
 > 
 
 To filter the report to show data only for stores in "NC" (North Carolina), append the URL with the following;
@@ -60,7 +60,8 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 ![](media/service-url-filters/power-bi-filter-urls7.png)
 
-> **Note**: *NC* is a value stored in the **Territory** field of the **Store** table.
+>[!NOTE]
+>*NC* is a value stored in the **Territory** field of the **Store** table.
 > 
 > 
 

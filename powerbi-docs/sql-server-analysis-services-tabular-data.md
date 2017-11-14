@@ -23,11 +23,12 @@ ms.author: asaxton
 # SQL Server Analysis Services live data in Power BI
 In Power BI, there are two ways you can connect to a live SQL Server Analysis Services server. In **Get data**, you can connect to a SQL Server Analysis Services server, or you can connect to a [Power BI Desktop file](service-desktop-files.md), or [Excel workbook](service-excel-workbook-files.md), that already connects to an Analysis Services server.
 
- ![](media/sql-server-analysis-services-tabular-data/importanticon.png) **Important:**
-
-* In order to connect to a live Analysis Services server, an On-premises Data Gateway must be installed and configured by an administrator. For more information, see [On-premises Data Gateway](service-gateway-onprem.md).
-* When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
-* [Q&A natural language querying](service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
+ ![](media/sql-server-analysis-services-tabular-data/importanticon.png) 
+ 
+ >[!IMPORTANT]
+ >* In order to connect to a live Analysis Services server, an On-premises Data Gateway must be installed and configured by an administrator. For more information, see [On-premises Data Gateway](service-gateway-onprem.md).
+ >* When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
+ >* [Q&A natural language querying](service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
 
 ## To connect to a model from Get data
 1. In **My Workspace**, select **Get data**. You can also change to a group workspace, if one is available.
@@ -49,7 +50,7 @@ After you connect to the model, it will appear in your Power BI site in **My Wor
 ## Dashboard tiles
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services server is updated, the tiles will get auto-updated after 10 minutes.
 
-## See also
+## Next steps
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [Manage Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
