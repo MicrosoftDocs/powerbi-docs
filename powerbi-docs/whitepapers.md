@@ -16,11 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/11/2017
+ms.date: 11/14/2017
 ms.author: asaxton
 
 ---
 # Whitepapers for Power BI
+
 Whitepapers allow you to explore Power BI topics at a deeper level. Here you can find a list of available whitepapers for Power BI.
 
 | Whitepaper | Description |
@@ -28,6 +29,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Describes Power BI Premium, both as it exists when launched and also how it will evolve. |
 | [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy) |This is a technical whitepaper outlining considerations for a well-performing and secure organizational Power BI deployment. |
 | [Plan capacity for embedded analytics with Power BI Premium](https://aka.ms/pbiewhitepaper) |This paper provides guidance for the app developer/ISV to determine the most appropriate capacity for its business. |
+|[Distribute Power BI content to external guest users using Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|This paper outlining how to distribute content to users outside the organization using the integration of Azure Active Directory Business-to-business (AAD B2B).|
 | [Best design practices for reports and visuals](power-bi-visualization-best-practices.md) |Provides best practices for designing reports in Power BI. |
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. |
 | [Bidirectional filtering](desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior). |
@@ -38,4 +40,3 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Capacity planning guidance for Power BI Report Server](report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. |
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
