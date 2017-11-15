@@ -26,7 +26,7 @@ With **Power BI Desktop**, you can use **R** to visualize your data.
 ## Install R
 **Power BI Desktop** does not include, deploy or install the **R** engine. To run R scripts in **Power BI Desktop**, you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in **Power BI Desktop** supports Unicode characters as well as spaces (empty characters) in the installation path.
 
-## Enable R Visuals
+## Enable R visuals
 1. To enable R visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local R installation is specified in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
    
    ![](media/desktop-r-visuals/r-visuals-2.png)

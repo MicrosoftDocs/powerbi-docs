@@ -163,6 +163,6 @@ There are many published articles describing how to define row level dynamic sec
 ## Considerations
 There are a few considerations to keep in mind when working with row level security, SSAS and Power BI.
 
-1. On-premise row level security with Power BI is only available with Live Connection.
+1. On-premises row level security with Power BI is only available with Live Connection.
 2. Any changes in the data after processing the model would be immediately available for the users who are accessing the report is based on **live connection** from the Power BI service.
 

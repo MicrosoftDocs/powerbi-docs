@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Microsoft Flow and Power BI
-## What is Microsoft Flow
+
 [Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Flow you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
 
 [Get started using Flow now.](https://flow.microsoft.com/documentation/getting-started)

@@ -22,7 +22,7 @@ ms.author: mihart
 
 ---
 # Getting around in Power BI service
-#### June 2017
+
 If you've been using Power BI service for a while now, you've no doubt noticed that we've made significant changes to the user interface.  Most of these changes effect how your content (dashboards, reports, datasets) is organized and the paths (clicks) you take to perform tasks with that content. 
 
 ![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)

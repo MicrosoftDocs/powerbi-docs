@@ -132,7 +132,7 @@ Next you'll need to move any custom columns or measures you created into the new
 ### Step 4: Re-link tables that had relationships
 Many dashboards have additional tables that are used for lookup or filtering, such date tables or tables used for custom projects. Reestablishing those relationships resolves most remaining issues. Here's how to do it.
 
-1. In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
+- In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
