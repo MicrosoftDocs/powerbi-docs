@@ -63,7 +63,7 @@ Let's look at an example. In the following example, selecting five columns (Cale
 
 Because of this, it is recommended that the items selected in **Get Data** or **Query Editor** should be limited to those items that are needed, while still resulting in a reasonable query for HANA.
 
-## Next steps
+### Next steps
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)

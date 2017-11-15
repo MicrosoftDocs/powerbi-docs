@@ -20,14 +20,14 @@ ms.date: 09/06/2017
 ms.author: davidi
 
 ---
-# Connect to a Web page from Power BI Desktop
-You can connect to a Web page, and import its data into Power BI Desktop, to use in your visuals and in your data models.
+# Connect to a web page from Power BI Desktop
+You can connect to a web page, and import its data into Power BI Desktop, to use in your visuals and in your data models.
 
 In Power BI Desktop, select **Get Data > Web** from the **Home** ribbon.
 
 ![](media/desktop-connect-to-web/connect-to-web_1.png)
 
-A dialog appears, asking for the URL of the Web page from which you want to import data.
+A dialog appears, asking for the URL of the web page from which you want to import data.
 
 ![](media/desktop-connect-to-web/connect-to-web_2.png)
 
@@ -41,13 +41,13 @@ When we select **Load**, Power BI Desktop imports the selected items, and makes 
 
 ![](media/desktop-connect-to-web/connect-to-web_4.png)
 
-That’s all there is to connecting to a Web page, and bring its data into Power BI Desktop.
+That’s all there is to connecting to a web page and bringing its data into Power BI Desktop.
 
 From there, you can drag those fields onto the Report canvas and create all the visualizations you want. You can also work this the data from that Web page just like you would any other data – you can shape it, you can create relationships between it and other data sources in your model, and otherwise do what you’d like to create just the Power BI report you want.
 
 To see connecting to a Web page in more depth and action, take a look at the [Power BI Desktop Getting Started Guide](desktop-getting-started.md).
 
-## Next steps
+### Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
