@@ -49,7 +49,7 @@ Note: To import your Projectplace data into Power BI, you must be a Projectplace
    
     ![](media/service-connect-to-projectplace/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -59,7 +59,7 @@ Note: To import your Projectplace data into Power BI, you must be a Projectplace
 ## System requirements
 To import your Projectplace data into Power BI, you must be a Projectplace user. This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

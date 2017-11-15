@@ -47,7 +47,7 @@ From there, you can drag those fields onto the Report canvas and create all the 
 
 To see connecting to a Web page in more depth and action, take a look at the [Power BI Desktop Getting Started Guide](desktop-getting-started.md).
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)

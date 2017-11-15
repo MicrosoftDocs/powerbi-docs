@@ -45,7 +45,7 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
    
      ![](media/service-connect-to-zuora/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -104,7 +104,7 @@ Provide the URL you typically sign into to access your Zuora data. The valid opt
 ## Troubleshooting
 The Zuora content pack pulls in many different aspects of your Zuora account. If you don't use certain features you may see correpesonding tiles/reports empty. If you have any issues loading, please contact Power BI Support.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

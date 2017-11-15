@@ -61,7 +61,7 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
    
    ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqldbauditingnewdash.png)
 
- **What Now?**
+ **What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.

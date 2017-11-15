@@ -144,7 +144,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
-## See Also
+## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  

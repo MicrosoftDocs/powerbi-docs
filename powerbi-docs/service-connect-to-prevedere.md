@@ -44,7 +44,7 @@ Note: If you are not an existing Prevedere user, please use the [sample key](htt
    
      ![](media/service-connect-to-prevedere/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -65,7 +65,7 @@ Existing customers can access their data using their API key. If you are not yet
 ## Troubleshooting
 The data may take some time to load depending on the size of your instance.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

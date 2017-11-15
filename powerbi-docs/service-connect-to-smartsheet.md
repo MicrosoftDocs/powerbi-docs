@@ -48,7 +48,7 @@ Note: Smartsheet admin account is preferred to connect and load the Power BI con
    
    ![](media/service-connect-to-smartsheet/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -60,7 +60,7 @@ The Smartsheet content pack for Power BI includes an overview of your Smartsheet
 
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](desktop-connect-to-data.md).  
 
-### See Also:
+## Next steps:
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)

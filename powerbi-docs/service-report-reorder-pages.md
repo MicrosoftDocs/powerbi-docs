@@ -25,7 +25,7 @@ In Power BI, a report is made up of one or more pages.  Each page has a tab alon
 
 ![](media/service-report-reorder-pages/reorder.gif)
 
-## See Also
+## Next steps
 Read more about [reports in Power BI](service-reports.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

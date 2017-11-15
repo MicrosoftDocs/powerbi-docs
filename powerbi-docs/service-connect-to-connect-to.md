@@ -45,7 +45,7 @@ Note: To connect to the content pack you need a comScore DAx user account and ha
    ![](media/service-connect-to-connect-to/creds.png)
 6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -82,7 +82,7 @@ The comScore site determines which site you’d like to see the data from. You c
 
 ![](media/service-connect-to-connect-to/comscore_sites.png)
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

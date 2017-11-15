@@ -48,7 +48,7 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -58,7 +58,7 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 ## Troubleshooting
 If you get a **"login failed"** error after using your Office365Mon subscription credentials to login, then the account you are using doesn't have permissions to retrieve the Office365Mon data from your account. Verify it is an admin account and try again.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)

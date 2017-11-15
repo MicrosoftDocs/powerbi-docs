@@ -51,7 +51,7 @@ Note: The content pack requires the GitHub account to have access to the repo. M
    
    ![](media/service-connect-to-github/pbi_githubdash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -98,7 +98,7 @@ If necessary, you can verify your GitHub credentials.
 2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.  
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
 
-### See also
+## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
 

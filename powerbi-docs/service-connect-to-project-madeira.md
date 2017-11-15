@@ -47,7 +47,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
    
     ![](media/service-connect-to-project-madeira/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -114,7 +114,7 @@ A common mistake is to specify the full URL for a specific web service:
 Or you might have forgotten to specify the company name:   
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

@@ -179,7 +179,7 @@ Below is the [complete code listing](#code).
 
 [Next Step >](walkthrough-push-data-create-dataset.md)
 
-## See also
+## Next steps
 [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  

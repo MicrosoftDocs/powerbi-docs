@@ -56,7 +56,7 @@ Use Q&A in a realistic industry tutorial.
 [Make your data work well with Q&A](service-prepare-data-for-q-and-a.md):
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-## See also
+## Next steps
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Get started with Power BI](service-get-started.md)

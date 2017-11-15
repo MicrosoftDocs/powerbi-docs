@@ -242,7 +242,7 @@ Here’s a checklist you can use to troubleshoot the issue:
 5. Does the Azure Stream Analytics job have data flowing through it? The dataset will only get created when there is data being transmitted.
 6. Can you look into the Azure Stream Analytics logs to see if there are any warnings or errors?
 
-## Other information
+## Next steps
 Here are a few links you might find useful when working with real-time streaming in Power BI:
 
 * [Overview of the Power BI REST API with real-time data](https://msdn.microsoft.com/library/dn877544.aspx)

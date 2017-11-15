@@ -49,7 +49,7 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
    
     ![](media/service-connect-to-lithium/lithium.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -59,7 +59,7 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 ## System requirements
 The Lithium content pack requires a Lithium community v15.9 or greater. Please check with your Lithium admin to confirm.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

@@ -27,7 +27,7 @@ Once your data is in a format that Power BI can use, by transforming and cleansi
 
 ![](media/1-5-cleaning-irregular-data/1-5_4.png)
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. You now know how to **get data** into Power BI Desktop, and how to *shape* or *transform* that data, so you can create compelling visuals.
 
 The next step in learning how Power BI works, and how to make it work *for you*, is to understand what goes into **modeling**. As you learned, a **dataset** is a basic building block of Power BI, but some datasets can be complex and based on many different sources of data. And sometimes, you need to add your own special touch (or *field*) to the dataset you create.

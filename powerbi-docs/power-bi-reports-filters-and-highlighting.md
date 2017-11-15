@@ -79,7 +79,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
-### See also
+## Next steps
 [Interact with filters and highlighting (in Reading View)](service-interact-with-a-report-in-reading-view.md)
 
 [Add a filter to a report (in Editing View)](power-bi-report-add-filter.md)

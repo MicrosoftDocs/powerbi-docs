@@ -64,7 +64,7 @@ Watch recorded sessions at any time
 
 [Power BI security deep dive](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-## See also
+## Next steps
 
 [Power BI whitepapers](whitepapers.md)
 

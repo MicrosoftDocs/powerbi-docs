@@ -56,7 +56,7 @@ Note: This content pack requires access to an account which has OAuth enabled. M
 7. After you connect to your Visual Studio Team Services project, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.  
    ![](media/service-connect-to-visual-studio/visualstudioonline800px.png) 
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -112,7 +112,7 @@ Your VSTS administrator may have disabled oAuth for your Visual Studio Team Serv
 
 ![](media/service-connect-to-visual-studio/oauth.png)
 
-### See also
+## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
 

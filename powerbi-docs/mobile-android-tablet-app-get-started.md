@@ -140,4 +140,3 @@ Here are some other things you can do in the Android tablet app for Power BI wit
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

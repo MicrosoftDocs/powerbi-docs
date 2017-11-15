@@ -23,17 +23,17 @@ ms.author: davidi
 # Create Power BI visuals using R
 With **Power BI Desktop**, you can use **R** to visualize your data.
 
-### Installing R
+## Install R
 **Power BI Desktop** does not include, deploy or install the **R** engine. To run R scripts in **Power BI Desktop**, you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in **Power BI Desktop** supports Unicode characters as well as spaces (empty characters) in the installation path.
 
-### Enabling R Visuals
+## Enable R Visuals
 1. To enable R visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local R installation is specified in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
    
    ![](media/desktop-r-visuals/r-visuals-2.png)
 
 Once you specify your R installation, you’re ready to begin creating R visuals.
 
-#### Creating R visuals in Power BI Desktop
+## Create R visuals in Power BI Desktop
 1. Select the **R Visual** icon in the **Visualization** pane, as shown in the following image, to add an R visual.
    
    ![](media/desktop-r-visuals/r-visuals-3.png)
@@ -108,7 +108,7 @@ When executing a R script that results in an error, the R visual is not plotted 
 > 
 > 
 
-#### Known Limitations
+## Known limitations
 R visuals in **Power BI Desktop** has a few limitations:
 
 * Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
@@ -119,7 +119,7 @@ R visuals in **Power BI Desktop** has a few limitations:
 * Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
 * In this release, RRO installations are not automatically identified by the 32-bit version of Power BI Desktop, so you must manually provide the path to the R installation directory in **Options and settings > Options > R Scripting**.
 
-### More Information
+## Next steps
 Take a look at the following additional information about R in Power BI.
 
 * [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)

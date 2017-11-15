@@ -270,7 +270,7 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 For more information about troubleshooting, see [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md) and [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
-## See also
+## Next steps
 [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
 [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  

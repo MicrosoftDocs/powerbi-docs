@@ -55,7 +55,7 @@ Note: To import your QuickBooks Online data into Power BI, you need to be an adm
    
    ![](media/service-connect-to-quickbooks-online/pbi_qbo_dash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -81,7 +81,7 @@ Currently Power BI only supports US editions of QuickBooks Online.
 
 ![](media/service-connect-to-quickbooks-online/pbi_qbo_countrynotsupported.png)
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

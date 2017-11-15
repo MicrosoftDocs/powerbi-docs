@@ -123,7 +123,7 @@ When using a mix of Free and Pro licenses in a US Government tenant, and going t
 
 To identifying users in your tenant that are running the Free license of Power BI, administrators can run the licensing report, after which Free license users show up as **Power BI Standard**.
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Overview of Power BI for US Government](service-govus-overview.md)

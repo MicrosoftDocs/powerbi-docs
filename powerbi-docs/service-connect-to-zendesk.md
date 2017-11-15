@@ -55,7 +55,7 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
    
    ![](media/service-connect-to-zendesk/pbi_zendeskdash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -85,7 +85,7 @@ Your Zendesk URL will be the same as the URL you use to sign into your Zendesk a
 ## Troubleshooting
 If you are having issues connecting, please check your Zendesk URL and confirm you're using an Zendesk administrator account.
 
-### See also
+## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
 

@@ -121,7 +121,7 @@ Rather than go into troubleshooting gateway issues here, we’ve put a series of
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
-## See also
+## Next steps
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  

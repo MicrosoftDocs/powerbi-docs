@@ -224,7 +224,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
       }
 
 
-## See also
+## Next steps
 [Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Walkthrough - Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  

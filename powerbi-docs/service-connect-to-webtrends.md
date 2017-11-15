@@ -45,7 +45,7 @@ Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/ge
    
    ![](media/service-connect-to-webtrends/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -102,7 +102,7 @@ You may hit an issue while the content pack is loading, after you've provided yo
 1. The correct Profile ID is being used, see the [Finding Parameters](#FindingParams) for more details.
 2. The user has access to the reports listed in the ["What's included"](#Included) section
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

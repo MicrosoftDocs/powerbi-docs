@@ -49,7 +49,7 @@ After you connect to the model, it will appear in your Power BI site in **My Wor
 ## Dashboard tiles
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services server is updated, the tiles will get auto-updated after 10 minutes.
 
-## See also
+## Next steps
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [Manage Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  

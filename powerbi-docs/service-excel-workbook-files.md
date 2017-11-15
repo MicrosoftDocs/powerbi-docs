@@ -28,10 +28,10 @@ Microsoft Excel is one of the most widely used business applications around. It�
 ## What types of workbooks does Power BI support?
 Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and be under 1 GB. Some features described in this article are only available in later versions of Excel.
 
-#### Workbooks with ranges or tables of data
+### Workbooks with ranges or tables of data
 If your workbook has simple worksheets with ranges of data, to get the most out of your data in Power BI, be sure to format those ranges as tables. This way, when creating reports in Power BI, you’ll see named tables and columns in the Fields pane, making it much easier to visualize your data.
 
-#### Workbooks with data models
+### Workbooks with data models
 Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query (Get & Transform in Excel 2016), or Power Pivot. Power BI supports all data model properties such as relationships, measures, hierarchies, and KPIs.
 
 > [!NOTE]
@@ -39,16 +39,16 @@ Workbooks can contain a data model with one or more tables of data loaded into i
 > 
 > 
 
-#### Workbooks with connections to external data sources
+### Workbooks with connections to external data sources
 If you use Excel to connect to an external data source, once your workbook is in Power BI, you can create reports and dashboards based on data from that connected data source. You can also setup Scheduled Refresh to automatically connect right to the data source and get updates. You’ll no longer need to refresh manually from the Data ribbon in Excel. Any visualizations in reports and tiles in dashboards based on data from that data source are updated automatically. To learn more, see [Data refresh in Power BI](refresh-data.md).
 
-#### Workbooks with Power View sheets, PivotTables and charts
+### Workbooks with Power View sheets, PivotTables and charts
 How your PowerView sheets and PivotTables and charts appear, or not appear, in Power BI depends on where your workbook file is saved and how you choose to get it into Power BI. We'll go into this more below.
 
-#### Data types
+## Data types
 Power BI supports the following data types: Whole Number, Decimal Number, Currency, Date, True/False, Text. Marking data as specific data types in Excel will improve the Power BI experience.
 
-### Prepare your workbook for Power BI
+## Prepare your workbook for Power BI
 Watch this helpful video to learn more about how to make sure your Excel workbooks are ready for Power BI.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
@@ -119,17 +119,16 @@ Once the workbook is ready, you can find it in the **Reports** section of Power 
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](service-publish-from-excel.md) to learn more.
 
-## What's next?
-**Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. Just right-click the new dataset and then click Explore. If you chose to connect to a workbook file on OneDrive in step 4, your workbook will appear in Reports. When you click on it, it will open in Power BI, just as it would if it were in Excel Online.
-
-**Schedule refresh** - If your Excel workbook file connects to external data sources, or you imported from a local drive, you can setup scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.
-
 ## Troubleshooting
 Workbook file too big? Check out [Reduce the size of an Excel workbook to view it in Power BI](reduce-the-size-of-an-excel-workbook.md).
 
 Currently, when you choose Import, Power BI only imports data that is part of a named table or a data model. As a result, if the workbook contains no named tables, Power View sheets, or Excel data models, you might see this error: **"We couldn't find any data in your Excel workbook"**. [This article](service-admin-troubleshoot-excel-workbook-data.md) explains how to fix your workbook and re-import it.
 
-## See also
+## Next steps
+**Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. Just right-click the new dataset and then click Explore. If you chose to connect to a workbook file on OneDrive in step 4, your workbook will appear in Reports. When you click on it, it will open in Power BI, just as it would if it were in Excel Online.
+
+**Schedule refresh** - If your Excel workbook file connects to external data sources, or you imported from a local drive, you can setup scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.
+
 [Publish to Power BI from Excel 2016](service-publish-from-excel.md)
 
 [Power BI publisher for Excel](publisher-for-excel.md)

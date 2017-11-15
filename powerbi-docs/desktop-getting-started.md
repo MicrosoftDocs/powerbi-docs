@@ -326,7 +326,7 @@ For more information about creating, sharing, and modifying dashboards, see [Sha
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)

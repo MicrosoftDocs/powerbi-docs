@@ -84,7 +84,7 @@ There are a few limitations to consider when using **See Data** or **See Records
 * You can't use **See Records** when your visual uses a calculated measure
 * You can't use **See Records** when connected to a live multidimensional (MD) model
 
-## More Information
+## Next steps
 ﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
 
 * [Use grouping and binning in Power BI Desktop](desktop-grouping-and-binning.md)

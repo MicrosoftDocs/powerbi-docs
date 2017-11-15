@@ -72,7 +72,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
    
     ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
 
-## More information
+## Next steps
 * This article applies to Excel 2007 and later.
 * The pictures here are of Excel 2013. If you're using a different version, things may look a little different, but the steps are the same.
 

@@ -47,7 +47,7 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
    
     ![](media/service-connect-to-appfigures/appfiguresdoc_01.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -70,7 +70,7 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 ![](media/service-connect-to-appfigures/appfiguresdoc_11.png)
 
-### See also
+## Next steps
 * [Get started in Power BI](service-get-started.md)
 * [Get data in Power BI](service-get-data.md)
 

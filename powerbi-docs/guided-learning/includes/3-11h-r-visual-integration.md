@@ -22,7 +22,7 @@ And since the R visual is just like any other visual in Power BI Desktop, you ca
 
 It's a great way to use the power of R, right in Power BI Desktop.
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed this **Visualizations** section of the **Guided Learning** course for Power BI. You can consider yourself well-versed in the many visualizations offered in Power BI, and also knowledgeable about how to use, modify, and customize them. And good news: visualizations are essentially the same in Power BI Desktop and the Power BI service, so what you learned applies to both.
 
 You're now ready to head to the cloud and get immersed in the Power BI service, where you can **Explore Data**. As you know, the flow of work looks something like the following:

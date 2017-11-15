@@ -103,7 +103,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
      
        ![](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## See also
+## Next steps
 [Power BI basic concepts](service-basic-concepts.md)
 
 [Samples for Power BI service](sample-datasets.md)

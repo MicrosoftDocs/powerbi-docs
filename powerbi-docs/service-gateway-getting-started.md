@@ -155,7 +155,7 @@ When you do, the **Data Source Settings** panel appears in the right pane, as sh
 
 Okay, you now have a gateway installed, and you’re ready to add data sources. Great! See the resources in the following section for information about data sources, more details about using gateways, and other useful information.
 
-## See also
+## Next steps
 [Using the on-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)

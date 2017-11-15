@@ -67,7 +67,7 @@ With the data model loaded, in **Report** view in Power BI Desktop, we can begin
 
 Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
 
-## More Information
+## Next steps
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

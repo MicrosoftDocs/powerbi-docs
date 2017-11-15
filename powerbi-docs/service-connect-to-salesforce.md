@@ -61,7 +61,7 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 
 You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard
@@ -77,7 +77,7 @@ You can change this dashboard to display your data any way you want. You can ask
 ## Troubleshooting
 If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
 
-### See also
+## Next steps
 [Get Started with Power BI](service-get-started.md)
 
 [Get Data](service-get-data.md)

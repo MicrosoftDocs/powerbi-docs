@@ -48,7 +48,7 @@ The next step shows you how to [get an authentication access token](walkthrough-
 
 [Next Step >](walkthrough-push-data-get-token.md)
 
-## See also
+## Next steps
 [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
 [Walkthrough: Push data into a dataset](walkthrough-push-data.md)  

@@ -118,7 +118,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 ## Limitations
 * OAuth is not a supported authentication scheme with the On-Premises Data Gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
 
-## See Also
+## Next steps
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  

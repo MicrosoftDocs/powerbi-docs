@@ -47,7 +47,7 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.po
    
      ![](media/service-connect-to-microsoft-dynamics-ax/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -68,7 +68,7 @@ The Dynamics AX 7 environment URL can be found in the browser when the user sign
 ## Troubleshooting
 The data may take some time to load depending on the size of your instance. If you're seeing empty reports within Power BI, please confirm you have access to the OData tables required for the reports.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

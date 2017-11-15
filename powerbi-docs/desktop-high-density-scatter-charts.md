@@ -88,7 +88,7 @@ The high density sampling algorithm is an important improvement to Power BI, but
 
 * The **High Density Sampling** algorithm only works with live connections to Power BI service-based models, imported models, or DirectQuery.
 
-## More information
+## Next steps
 For more information about high density sampling in other charts, see the following article.
 
 * [High density line sampling in Power BI](desktop-high-density-sampling.md)

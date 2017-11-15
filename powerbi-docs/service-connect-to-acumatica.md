@@ -51,7 +51,7 @@ Note: this content pack requires Acumatica v5.2 or higher.
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -83,7 +83,7 @@ If you’re not able to login, verify the Acumatica OData endpoint you provided 
 
 If you're having trouble connecting, please confirm with your admin your version of Acumatica. This content pack requires version 5.2 or later.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

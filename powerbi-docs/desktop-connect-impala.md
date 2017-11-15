@@ -50,7 +50,7 @@ There are a few limits and considerations to keep in mind with the **Impala** co
 
 * Future plans include enabling refresh support using the **Power BI Gateway**.
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
