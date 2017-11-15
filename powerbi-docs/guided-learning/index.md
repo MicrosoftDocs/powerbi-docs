@@ -23,7 +23,7 @@ layout: LandingPage
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Getting Started
+                            Getting started
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -35,7 +35,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml#step-3">The Building Blocks of Power BI</a>
+                                <a class="barLink" href="gettingstarted.yml#step-3">The building blocks of Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -43,7 +43,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml#step-5">Review and What's Next</a>
+                                <a class="barLink" href="gettingstarted.yml#step-5">Review and what's next</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                           </ul>
@@ -63,7 +63,7 @@ layout: LandingPage
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Getting Data
+                            Getting data
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -71,23 +71,23 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml#step-2">Getting Started with Power BI Desktop</a>
+                                <a class="barLink" href="gettingdata.yml#step-2">Getting started with Power BI Desktop</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml#step-3">Connect to Data Sources in Power BI Desktop</a>
+                                <a class="barLink" href="gettingdata.yml#step-3">Connect to data sources in Power BI Desktop</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml#step-4">Clean and Transform Your Data With the Query Editor</a>
+                                <a class="barLink" href="gettingdata.yml#step-4">Clean and transform your data with the Query Editor</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml#step-5">More Advanced Data Sources and Transformation</a>
+                                <a class="barLink" href="gettingdata.yml#step-5">More advanced data sources and transformation</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml#step-6">Cleaning Irregularly Formatted Data</a>
+                                <a class="barLink" href="gettingdata.yml#step-6">Cleaning irregularly formatted data</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                           </ul>
@@ -107,31 +107,31 @@ layout: LandingPage
                                 <img src="media/pbi-modeling.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            modeling.yml
+                            Modeling
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-1">Introduction to modeling Your Data</a>
+                                <a class="barLink" href="modeling.yml#step-1">Introduction to modeling your data</a>
                                 <span style="margin-left: 32px; align-self: center;">3m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-2">How to Manage Your Data Relationships</a>
+                                <a class="barLink" href="modeling.yml#step-2">How to manage your data relationships</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-3">Create Calculated Columns</a>
+                                <a class="barLink" href="modeling.yml#step-3">Create calculated columns</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-4">Optimizing Data Models</a>
+                                <a class="barLink" href="modeling.yml#step-4">Optimizing data models</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-5">Create Calculated Measures</a>
+                                <a class="barLink" href="modeling.yml#step-5">Create calculated measures</a>
                                 <span style="margin-left: 32px; align-self: center;">14m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml#step-6">Create Calculated Tables</a>
+                                <a class="barLink" href="modeling.yml#step-6">Create calculated tables</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -155,19 +155,19 @@ layout: LandingPage
                                 <img src="media/pbi-visualizations.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            visualizations
+                            Visualizations
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-1">Introduction to Visuals in Power BI</a>
+                                <a class="barLink" href="visualizations.yml#step-1">Introduction to visuals in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-2">Create and Customize Simple visualizations</a>
+                                <a class="barLink" href="visualizations.yml#step-2">Create and customize simple visualizations</a>
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-3">Combination Charts</a>
+                                <a class="barLink" href="visualizations.yml#step-3">Combination charts</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -183,7 +183,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-7">Scatter Charts</a>
+                                <a class="barLink" href="visualizations.yml#step-7">Scatter charts</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -203,7 +203,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-12">Page Layout and Formatting</a>
+                                <a class="barLink" href="visualizations.yml#step-12">Page layout and formatting</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -211,15 +211,15 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-14">Duplicate a Report Page</a>
+                                <a class="barLink" href="visualizations.yml#step-14">Duplicate a report page</a>
                                 <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-15">Show Categories with no Data</a>
+                                <a class="barLink" href="visualizations.yml#step-15">Show categories with no data</a>
                                 <span style="margin-left: 32px; align-self: center;">3m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml#step-16">Summarization and Category options</a>
+                                <a class="barLink" href="visualizations.yml#step-16">Summarization and category options</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -251,31 +251,31 @@ layout: LandingPage
                                 <img src="media/pbi-exploring-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Exploring Data
+                            Exploring data
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-1">Introduction to the Power BI Service</a>
+                                <a class="barLink" href="exploringdata.yml#step-1">Introduction to the Power BI service</a>
                                 <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-2">Quick Insights in Power BI</a>
+                                <a class="barLink" href="exploringdata.yml#step-2">Quick insights in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-3">Create and Configure a Dashboard</a>
+                                <a class="barLink" href="exploringdata.yml#step-3">Create and configure a dashboard</a>
                                 <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-4">Ask Questions of Your Data With Natural Language</a>
+                                <a class="barLink" href="exploringdata.yml#step-4">Ask questions of your data with natural language</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-5">Create Custom Q & A Suggestions</a>
+                                <a class="barLink" href="exploringdata.yml#step-5">Create custom Q&A suggestions</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-6">Share Dashboards with your organization</a>
+                                <a class="barLink" href="exploringdata.yml#step-6">Share dashboards with your organization</a>
                                 <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -291,7 +291,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml#step-10">Install and configure a Personal Gateway</a>
+                                <a class="barLink" href="exploringdata.yml#step-10">Install and configure a personal gateway</a>
                                 <span style="margin-left: 32px; align-self: center;">11m</span>
                               </li>
                           </ul>
@@ -315,7 +315,7 @@ layout: LandingPage
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml#step-1">Introduction to Using Excel Data in Power BI</a>
+                                <a class="barLink" href="powerbiandexcel.yml#step-1">Introduction to using Excel data in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -351,11 +351,11 @@ layout: LandingPage
                                 <img src="media/pbi-pub-sharing.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Publishing and Sharing
+                            Publishing and sharing
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-1">Introduction to Content Packs, Security, and Groups</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-1">Introduction to content packs, security, and groups</a>
                                 <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -367,7 +367,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-4">Manually republishing and refreshing your data</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-4">Manually republish and refresh your data</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -375,19 +375,19 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-6">Create Groups in Power BI</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-6">Create groups in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-7">Build Content Packs</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-7">Build content packs</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-8">Use Content Packs</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-8">Use content pPacks</a>
                                 <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-9">Update Content Packs</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-9">Update content packs</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -427,11 +427,11 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="introductiontodax.yml#step-2">DAX Calculation Types</a>
+                                <a class="barLink" href="introductiontodax.yml#step-2">DAX calculation types</a>
                                 <span style="margin-left: 32px; align-self: center;">22m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="introductiontodax.yml#step-3">DAX Functions</a>
+                                <a class="barLink" href="introductiontodax.yml#step-3">DAX functions</a>
                                 <span style="margin-left: 32px; align-self: center;">17m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -439,11 +439,11 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="introductiontodax.yml#step-5">Table Relationships and DAX</a>
+                                <a class="barLink" href="introductiontodax.yml#step-5">Table relationships and DAX</a>
                                 <span style="margin-left: 32px; align-self: center;">13m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="introductiontodax.yml#step-6">DAX Tables and Filtering</a>
+                                <a class="barLink" href="introductiontodax.yml#step-6">DAX tables and filtering</a>
                                 <span style="margin-left: 32px; align-self: center;">32m</span>
                               </li>
                           </ul>
