@@ -16,7 +16,8 @@ You can create an animation of your bubble chart's changes over time by adding a
 
 ![](media/3-7-create-scatter-charts/3-7_4.png)
 
-> Note: Remember, if you only see one bubble in your scatter chart, it's because Power BI is aggregating your data, which is the default behavior. Add a category to the *Details* bucket, in the **Visualizations** pane, to get more bubbles.
+>[!NOTE]
+>Remember, if you only see one bubble in your scatter chart, it's because Power BI is aggregating your data, which is the default behavior. Add a category to the *Details* bucket, in the **Visualizations** pane, to get more bubbles.
 > 
 > 
 

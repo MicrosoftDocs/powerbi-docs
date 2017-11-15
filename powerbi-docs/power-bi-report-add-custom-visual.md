@@ -42,9 +42,10 @@ Watch Will download a custom visual and add it to his report. Then follow the st
    
     ![](media/power-bi-report-add-custom-visual/pbi_customvizellipses.jpg)
 4. Select **Import** and navigate to the location where you saved the downloaded custom visualization (.pbiviz file).
-5. **IMPORTANT**: Review the warning and ensure the visual comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to
-   use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.
-   See [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md).
+5. 
+   >[!IMPORTANT]
+   >Review the warning and ensure the visual comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source. 
+   >See [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md).
 6. Select **Open**. The custom visualization icon (also called *template*) is added to the Visualization pane.
    
     ![](media/power-bi-report-add-custom-visual/pbi_customvizaddedicon.jpg)

@@ -1,4 +1,5 @@
-> **Note**: This is a note inside a test include.
+>[!NOTE]
+>This is a note inside a test include.
 > 
 > 
 

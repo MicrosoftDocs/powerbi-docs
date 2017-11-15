@@ -90,7 +90,8 @@ In this task, you'll bring in order data. This step represents connecting to a s
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
 
-**Note**   You can click a table name, without selecting the checkbox, to see a preview.
+>[!NOTE]
+>You can click a table name, without selecting the checkbox, to see a preview.
 
 ### Step 2: Expand the Order\_Details table
 The **Orders** table contains a reference to a **Details** table, which contains the individual products that were included in each Order. When you connect to data sources with multiples tables (such as a relational database) you can use these references to build up your query. 
@@ -220,7 +221,7 @@ Power BI Desktop lets you interact with visuals that cross-highlight and filter 
 ## Complete Sales Analysis Report
 After you perform all these steps, you will have a Sales Report that combines data from Products.xlsx file and Northwind OData feed. The report shows visuals that help analyze sales information from different countries. You can download a completed Power BI Desktop file for this tutorial [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Sales_Data.pbix).
 
-### Where else can I get more information?
+## Next steps
 * [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)

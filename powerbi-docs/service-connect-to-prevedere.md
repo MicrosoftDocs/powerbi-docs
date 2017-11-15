@@ -25,7 +25,8 @@ Gain access to exclusive and critical financial information to confidently and p
 
 Connect to the [Prevedere content pack](https://app.powerbi.com/getdata/services/prevedere) for Power BI.
 
-Note: If you are not an existing Prevedere user, please use the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out.
+>[!NOTE]
+>If you are not an existing Prevedere user, please use the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -44,7 +45,7 @@ Note: If you are not an existing Prevedere user, please use the [sample key](htt
    
      ![](media/service-connect-to-prevedere/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -65,7 +66,7 @@ Existing customers can access their data using their API key. If you are not yet
 ## Troubleshooting
 The data may take some time to load depending on the size of your instance.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

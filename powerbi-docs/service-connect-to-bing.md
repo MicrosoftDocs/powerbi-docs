@@ -25,7 +25,11 @@ The Bing content pack will allow you to view analytics around Internet search ac
 
 Connect to the [Bing content pack](https://app.powerbi.com/groups/me/getdata/services/bing) for Power BI.
 
-Notes: Bing tiles will automatically update approximately every ~5 minutes and the only tile that can be selected is the News tile, which will take you to the corresponding news article. Tiles from the Bing content pack do not render in the mobile applications, we’re working to resolve this issue.
+>[!NOTE]
+>Bing tiles will automatically update approximately every ~5 minutes and the only tile that can be selected is the News tile, which will take you to the corresponding news article. 
+
+>[!NOTE]
+>Tiles from the Bing content pack do not render in the mobile applications. We’re working to resolve this issue.
 
 1. Select **Get Data** at the bottom of the left navigation pane.
    

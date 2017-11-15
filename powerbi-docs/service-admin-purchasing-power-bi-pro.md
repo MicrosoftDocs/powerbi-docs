@@ -50,15 +50,14 @@ Then you can select **Start trial**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial2.png)
 
-> **Notes**
-> 
-> * Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
-> * If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
-> 
+> [!NOTE]
+> Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
+
+> [!NOTE]
+> If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
+
 > [!NOTE]
 > With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](service-extended-pro-trial.md).
-> 
-> 
 
 ### What this looks like within the service
 When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
@@ -70,7 +69,6 @@ You can get Power BI Pro as a trial for your organization. Once you have the sub
 
 > [!NOTE]
 > There is a limit of one organizational trial per tenant. This means that if someone has already applied the Power BI Pro Trial to your tenant, you cannot do it again. If you need assistance with this, you can contact [Office 365 Billing support](https://support.office.microsoft.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&ui=en-US&rs=en-US&ad=US#BKMK_call_support).
-> 
 > 
 
 1. Navigate to the [Office 365 admin center](https://portal.office.com/admin/default.aspx).

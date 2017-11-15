@@ -26,7 +26,8 @@ In **Power BI Desktop**, both **Access databases** and early versions of **Excel
 ### Situation 1: No Access Database Engine Installed
 When the Power BI Desktop error message indicates the Access Database Engine in not installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from [this location](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
 
-**Note:** If the installed Access Database Engine bit version is different from your Microsoft Office installation's bit version, Office applications will not be able to use the Access Database Engine.
+>[!NOTE]
+>If the installed Access Database Engine bit version is different from your Microsoft Office installation's bit version, Office applications will not be able to use the Access Database Engine.
 
 ### Situation 2: The Access Database Engine bit version (32-bit or 64-bit) is different from your Power BI Desktop bit version
 This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well, and the bit-version mismatch with occur in either case (if you're using an Office 365 subscription, see **Situation 3** for a different issue and resolution). Any of the following solutions can remedy this bit-version mismatch error:
@@ -39,7 +40,8 @@ This situation often occurs when the installed version of Microsoft Office is 32
    
    ![](media/desktop-access-database-errors/desktop-access-errors-2.png)
    
-   **Note:** When using the 32-bit version of Power BI Desktop, when creating very large data models you might experience out-of-memory issues.
+   >[!NOTE]
+   >When using the 32-bit version of Power BI Desktop, when creating very large data models you might experience out-of-memory issues.
 2. Change the version of Microsoft Office to match the bit-version of your Power BI Desktop installation. To change the bit-version of Microsoft Office, uninstall Office, and then install the version of Office that matches your Power BI Desktop installation.
 3. If the error occurred when attempting to open an .XLS file (an Excel 2007-2003 workbook), you can avoid using the Access Database Engine by opening the .XLS file in Excel, and saving it as an XLSX file.
 4. If the previous three solutions are not feasible, it is possible to install both versions of the Access Database Engine, but this is *not* a recommended workaround. Installing both versions will resolve this issue for Power Query for Excel and Power BI Desktop, but will introduce errors and issues for any application that automatically (by default) uses the bit-version of the Access Database Engine that was installed first. To install both bit-versions of the Access Database Engine, [download](http://www.microsoft.com/en-us/download/details.aspx?id=13255) both versions, then run each of them using the */passive* switch. For example:

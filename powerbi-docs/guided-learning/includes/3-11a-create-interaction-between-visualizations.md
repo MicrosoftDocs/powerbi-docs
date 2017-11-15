@@ -2,7 +2,8 @@ When you have multiple visualizations on the same report page, selecting a parti
 
 To change the interaction between your visualizations, select **Edit** from the Visuals section of the **Home** ribbon to toggle **Edit Mode** on.
 
-> Note: The **Edit Interactions** icon in Power BI Desktop has changed since the video was recorded.
+>[!NOTE]
+>The **Edit Interactions** icon in Power BI Desktop has changed since the video was recorded.
 > 
 > 
 

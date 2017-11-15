@@ -63,7 +63,8 @@ If you're getting an error indicating your credentials are invalid however you w
 **Parameters**
 Unique names are currently required for the parameters. If you see an error indicating the value you selected is duplicated, please select another value or change the names in Google Analytics to make them unique. We're actively working to improve this.
 
-Note: Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
+>[!NOTE]
+>Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
 
 ![](media/service-connect-to-google-analytics/pbi_googleanalytics1.png)
 

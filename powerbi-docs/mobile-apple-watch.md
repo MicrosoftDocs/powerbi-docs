@@ -62,7 +62,8 @@ Power BI shows an indicator that the dashboard is synced with the watch.
 
 You can only sync one dashboard at a time with the watch.
 
-> **Tip**: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
+> [!TIP]
+> To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
 > 
 > 
 

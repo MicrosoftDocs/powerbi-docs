@@ -58,7 +58,8 @@ Browse the samples to interact with KPIs and mobile reports.
      OR
      `https://<servername>/reports`
    
-   > **Note**: Include **http** or **https** at the beginning of the connection string.
+   > [!NOTE]
+   > Include **http** or **https** at the beginning of the connection string.
    > 
    > 
    
@@ -69,8 +70,8 @@ Browse the samples to interact with KPIs and mobile reports.
    
    ![Server in left navigation bar](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
-   > **Tip**: Tap the global navigation button ![Global navigation button](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
-   > 
+   >[!TIP]
+   >Tap the global navigation button ![Global navigation button](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
    > 
 
 ## View Reporting Services KPIs and mobile reports in the Power BI app

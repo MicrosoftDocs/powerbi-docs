@@ -36,9 +36,11 @@ For each data provider, Power BI supports a specific provider version on objects
 | Teradata |.NET Data Provider for Teradata |14+ |12+ |Tables/Views |[Download link](http://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409) |
 | SAP Sybase SQL Anywhere |iAnywhere.Data.SQLAnywhere for .NET 3.5 |16+ |16+ |Tables/Views |[Download link](http://go.microsoft.com/fwlink/?linkid=324846) |
 
-> **Note 1:** Excel files that have an .xlsx extension do not require a separate provider installation.
-> 
-> **Note 2:** The Oracle providers also require Oracle client software (version 8.1.7+).
+>[!NOTE]
+>Excel files that have an .xlsx extension do not require a separate provider installation.
+
+>[!NOTE]
+>The Oracle providers also require Oracle client software (version 8.1.7+).
 > 
 > 
 
