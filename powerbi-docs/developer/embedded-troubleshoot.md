@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/10/2017
+ms.date: 11/14/2017
 ms.author: asaxton
 ---
 # Troubleshooting your embedded application
@@ -50,6 +50,19 @@ A fiddler capture may be required to investigate further. There could be several
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
+```
+	GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+	Host: wabi-us-north-central-redirect.analysis.windows.net
+	...
+	Authorization: Bearer eyJ0eXAiOi...
+	...
+ 
+	HTTP/1.1 403 Forbidden
+	...
+	 
+    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
+
 **Generate token fails when providing effective identity**
 
 GenerateToken can fail, with effective identity supplied, for a few different reasons.
@@ -79,5 +92,19 @@ A data source can have a single set of credentials for one master user. If you n
 **Rendering, or consumption, of embedded content fails or times out**
 
 Make sure the embed token did not expire. Make sure you are checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+
+## Tools for troubleshooting
+
+### Fiddler Trace
+
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This may show errors and other related information.
+
+![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+
+### F12 in Browser for front end debugging
+
+F12 will launch the developer window within your browser. This provides the ability to look at network traffic and other information.
+
+For answers to frequently asked questions, see the [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
