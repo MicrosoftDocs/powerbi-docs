@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 11/14/2017
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 
 * Collaborating with coworkers to create meaningful reports and dashboards in *app workspaces*.
 * Bundling those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
-* Sharing dashboards and reports with a few people, from the service or the Power BI mobile apps.
+* Sharing dashboards or reports with a few people, from the service or the Power BI mobile apps.
 * Publishing to the web, where anyone can see and interact with them.
 * Printing. 
 
@@ -47,7 +47,7 @@ To create an app, you need a *app workspace*, with your teammates as members. Th
 **If you just want to share a finished dashboard with colleagues, don't add them to the app workspace.** Instead, [create the dashboard in an app workspace](service-create-distribute-apps.md), and publish the app to them. 
 
 ## Publish your app to a broad audience
-Say you want to distribute your dashboard to a broad audience. You and your coworkers have created an *app workspace*, then created and refined dashboards, reports, and datasets in the app workspace. Now you bundle them together as an app and publish it &#151; either to members of a security group or distribution list, or to your whole organization. 
+Say you want to distribute your dashboard to a broad audience. You and your coworkers have created an *app workspace*, then created and refined dashboards, reports, and datasets in the app workspace. Now you select the dashbards and reports you want and publish them as an app &#151; either to members of a security group or distribution list, or to your whole organization. 
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -67,6 +67,8 @@ You need a Power BI Pro license to share your content, and those you share it wi
 You can share with people outside your organization, too. They can view and interact with the dashboard too, but can't share it. 
 
 More about [sharing a dashboard](service-share-dashboards.md) from the Power BI service.
+
+You can also [share a direct link to a report](service-share-reports.md), and bypass the dashboard. You can also add a filter to the link so the recipients see a filtered view of your report.
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
