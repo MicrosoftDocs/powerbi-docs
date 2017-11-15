@@ -10,8 +10,8 @@ Select the **pen** icon to open the **Tile Details** pane. From here you can cha
 
 By default, when you click on a dashboard tile you are taken to the report from which it originated. To change this behavior, use the **Set custom link** field in the **Tile Details** pane. One popular use of this feature is to take users to the organization homepage when clicking on a logo image.
 
-## Add Widgets to your dashboard
-You can also add Widgets to your dashboard. A **widget** is a special dashboard tile that, instead of containing a visualization, contains other items such as an image, an online video, a text box, or rich web content.
+## Add widgets to your dashboard
+You can also add widgets to your dashboard. A **widget** is a special dashboard tile that, instead of containing a visualization, contains other items such as an image, an online video, a text box, or rich web content.
 
 When you select the Add Widget link in the upper-right corner of a Dashboard, the **Add a widget** dialog appears.
 
