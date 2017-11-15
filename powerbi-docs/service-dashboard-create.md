@@ -86,13 +86,9 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 * [Resize and move tiles](service-dashboard-edit-tile.md)
 * [All about dashboard tiles](service-dashboard-tiles.md)
 * [Share your dashboard by creating an app](service-create-distribute-apps.md)
-
-## Next steps
-[Power BI - Basic Concepts](service-basic-concepts.md)
-
-[Dashboards in Power BI](service-dashboards.md)
-
-[Tips for designing a great dashboard](service-dashboards-design-tips.md)
+* [Power BI - Basic Concepts](service-basic-concepts.md)
+* [Dashboards in Power BI](service-dashboards.md)
+* [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

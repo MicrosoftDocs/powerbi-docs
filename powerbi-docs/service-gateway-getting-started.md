@@ -78,12 +78,12 @@ Here’s where you decide which gateway you’ll install – on-premises gateway
 
 There are a few things to note at this decision point:
 
-* both gateways require 64-bit Windows operating systems
-* gateways can’t be installed on a domain controller
-* you can install up to two on-premises data gateways on the same computer, one running in each mode (personal and standard). 
-* you cannot have more than one gateway running in the same mode on the same computer.
-* you can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
-* You can only have one Personal mode gateway running for each Power BI user. If you install another Personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
+* Both gateways require 64-bit Windows operating systems.
+* Gateways can’t be installed on a domain controller.
+* You can install up to two on-premises data gateways on the same computer, one running in each mode (personal and standard). 
+* You cannot have more than one gateway running in the same mode on the same computer.
+* You can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point).
+* You can only have one personal mode gateway running for each Power BI user. If you install another personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
 
 When we select **Next**, the gateway installation begins. You need to specify where it will be installed, and the default location is usually best.
 
@@ -113,7 +113,7 @@ That’s it for the installation of an on-premises gateway. As promised, it was 
 
 The next section describes adding users to the gateway, and after that, we’ll discuss where to go next to add data sources to the gateway.
 
-## Add Users to a gateway
+## Add users to a gateway
 Now that we have a gateway installed, we manage the gateway from the **Power BI service**. To get to the management screen for gateways, in the Power BI service select the Gear icon in the upper-right corner, then select **Manage gateways**.
 
 ![](media/service-gateway-getting-started/gw_gettingstarted_15.png)
@@ -130,7 +130,7 @@ Once you install and validate (successfully connect to) a data source, it shows 
 
 ![](media/service-gateway-getting-started/gw_gettingstarted_16.png)
 
-When we select **Users**, you get text box into which you can type users from your organization, whom you want to grant access to the selected data source. In the following screen, you can see that I’ve added Maggie and Adam.
+When you select **Users**, you get a text box into which you can type users from your organization who you want to grant access to the selected data source. In the following screen, you can see that I’ve added Maggie and Adam.
 
 When you begin typing an email address into the text box, Power BI shows a list of users whose email matches what you’re typing, enabling you to click the name and add them to the list.
 
@@ -144,7 +144,7 @@ Once you select **Add**, the added members show up in the box, and you can add m
 
 And that’s all there is to it. Remember that you need to add users to each data source to which you want to grant access. Each data source has a separate list of users, and you must add users to each data source separately.
 
-## Next Step: Adding Data Sources
+## Adding data sources
 Of course, to make your gateway useful you’ll want to add data sources. This is where some of the complexity of Power BI gateways is introduced – there are many different data sources available, and each has its own requirements (and often, its own required driver).
 
 But before we send you off to another article, here’s a look at how you go about adding a data source. While you’re in the **Manage gateways** page of the **Power BI service**, select the gateway to which you want to add a data source, and select **Add Data Source** in the upper-left corner of the page, just above the list of your gateways.

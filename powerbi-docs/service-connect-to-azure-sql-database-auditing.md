@@ -25,7 +25,8 @@ The Power BI content pack for Azure [SQL Database Auditing](http://azure.microso
 
 Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getdata/services/sql-db-auditing) for Power BI.
 
-Note: The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
+>[!NOTE]
+>The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -61,10 +62,15 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
    
    ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqldbauditingnewdash.png)
 
- **What now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## Next steps
+[Get data for Power BI](service-get-data.md)
+[Get started with Power BI](service-get-started.md)
+
 
