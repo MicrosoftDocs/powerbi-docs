@@ -47,7 +47,7 @@ Here are some tips for making the most of Q&A in your workbook.
 > 
 > 
 
-## See also
+## Next steps
 [Q&A in Power BI](service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](power-bi-visualization-introduction-to-q-and-a.md)  
 [Get data (for Power BI)](service-get-data.md)  

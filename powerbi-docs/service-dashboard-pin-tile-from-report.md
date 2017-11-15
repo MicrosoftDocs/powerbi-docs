@@ -61,7 +61,7 @@ Another option is to pin an entire report page to a dashboard. This is an easy w
 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md)
 
-## See also
+## Next steps
 [Dashboards in Power BI](service-dashboards.md)
 
 [Dashboard tiles in Power BI](service-dashboard-tiles.md)

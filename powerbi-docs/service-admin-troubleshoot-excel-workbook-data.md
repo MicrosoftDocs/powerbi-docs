@@ -20,8 +20,11 @@ ms.date: 09/06/2017
 ms.author: davidi
 
 ---
-# "We couldn't find any data in your Excel workbook"
-## Problem
+# Error: We couldn't find any data in your Excel workbook
+
+>[!NOTE]
+>This article applies to Excel 2007 and later.
+
 When you import an Excel workbook into Power BI, you may see the following error:
 
 *Error: We couldn't find any data in your Excel workbook. Your data might not be formatted properly. You'll need to edit your workbook in Excel and then import it again.*
@@ -44,7 +47,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 ### Solution
 1. Open your workbook in Excel. 
     >[!NOTE]
-    >The pictures here are of Excel 2013. If you're using Excel 2007 or 2010, things may look a little different, but the steps are the same.
+    >The pictures here are of Excel 2013. If you're using a different version, things may look a little different, but the steps are the same.
     
     ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
 2. Select the range of cells that contain your data. The first row should contain your column headers (the column names):
@@ -71,8 +74,3 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
     If the import still fails, let us know by clicking **Community **in the help menu:
    
     ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
-
-## More information
-* This article applies to Excel 2007 and later.
-* The pictures here are of Excel 2013. If you're using a different version, things may look a little different, but the steps are the same.
-

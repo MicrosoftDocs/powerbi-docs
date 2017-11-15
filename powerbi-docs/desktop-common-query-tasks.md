@@ -216,7 +216,7 @@ The formula categories for Query Editor are the following:
 * Replacer
 * Type
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

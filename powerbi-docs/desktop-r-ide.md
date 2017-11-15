@@ -85,7 +85,7 @@ Launching an R IDE directly from Power BI Desktop has a few limitations:
 * Automatically exporting your script from your R IDE into **Power BI Desktop** is not supported.
 * **R Client** editor (RGui.exe) is not supported, because the editor itself does not support opening files.
 
-### More Information
+### Next steps
 Take a look at the following additional information about R in Power BI.
 
 * [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)

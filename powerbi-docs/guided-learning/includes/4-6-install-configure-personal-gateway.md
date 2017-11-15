@@ -38,7 +38,7 @@ Finally, set the options under **Schedule Refresh** to activate automatic update
 
 And that's it. On the scheduled times, Power BI will go out to those data sources, using the credentials you provided and the connection to the computer that has your **Personal Gateway** running, and update the reports and datasets according to your schedule. The next time you go to Power BI, those dashboards, reports, and datasets will reflect data as of the most recent scheduled refresh.
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed this **Exploring Data** section of the **Guided Learning** course for Power BI. The Power BI service is full of interesting ways to explore data, share insights, and interact with visuals. And it's all accessible from a browser, from a service that you can connect to wherever you are.
 
 One powerful and well-known partner of Power BI is **Excel**. Power BI and Excel are designed to work well together; your workbooks will feel at home in Power BI, and it's easy to get them there.

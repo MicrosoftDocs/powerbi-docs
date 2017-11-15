@@ -115,7 +115,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 
 ![](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## See Also
+## Next steps
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  

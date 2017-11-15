@@ -186,7 +186,7 @@ Earlier in this article, we discussed switching the gateway from a local service
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
-## More Information
+## Next steps
 For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
 
 * [On-premises data gateway](service-gateway-onprem.md)

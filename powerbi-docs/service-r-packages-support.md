@@ -419,7 +419,7 @@ The following table shows which packages are **not supported** in the Power BI s
 | mailR |10/03/2016 |Networking is blocked |
 | RevoScaleR |8/30/2016 |ships only with Microsoft R Server |
 
-## More information
+## Next steps
 For more information about R in Power BI, take a look at the following articles:
 
 * [Creating R visuals in the Power BI service](service-r-visuals.md)

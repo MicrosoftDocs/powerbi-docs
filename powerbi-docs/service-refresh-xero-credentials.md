@@ -52,6 +52,6 @@ If you are still having refresh issues, please don’t hesitate to reach out to 
 
 To learn more about the Xero content pack for Power BI, please visit the [Xero content pack help page](service-connect-to-xero.md).
 
-### See also
+### Next steps
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -79,7 +79,7 @@ The following table lists limitations of the beta release of the SAP BW connecto
 | --- | --- |
 | No Refresh |The Refresh button is disabled, and visuals/metadata cannot be refreshed. |
 
-## More Information
+## Next steps
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)

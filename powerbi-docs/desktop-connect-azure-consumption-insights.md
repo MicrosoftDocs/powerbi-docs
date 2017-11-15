@@ -193,7 +193,7 @@ The columns and names of details in the Azure Portal are similar in the API and 
 | SubscriptionId |subscriptionId |SubscriptionId |Yes |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |No |
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

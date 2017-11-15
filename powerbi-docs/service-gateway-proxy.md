@@ -118,7 +118,7 @@ When configuring the proxy settings to use default credentials, as explained abo
    
     This will allow the new service account to be able to decrypt stored credentials for data sources.
 
-## See also
+## Next steps
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 [Firewall information](service-gateway-onprem-tshoot.md#firewall-or-proxy)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

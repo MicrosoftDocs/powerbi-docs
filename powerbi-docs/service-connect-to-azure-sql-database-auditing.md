@@ -63,10 +63,13 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
    
    ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqldbauditingnewdash.png)
 
-## Next steps
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
+## Next steps
+[Get data for Power BI](service-get-data.md)
+[Get started with Power BI](service-get-started.md)

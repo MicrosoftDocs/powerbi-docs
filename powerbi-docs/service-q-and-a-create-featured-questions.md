@@ -50,7 +50,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md).
 8. The answer displays as a filled map visualization.  
    ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
-## See Also
+### Next steps
 [Q&A in Power BI](service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  

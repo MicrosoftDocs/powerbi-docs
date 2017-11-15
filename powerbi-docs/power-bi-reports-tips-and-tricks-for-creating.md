@@ -41,7 +41,7 @@ Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
 * [Read the blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
 * [Watch the webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
 
-## See Also
+## Next steps
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Reports in Power BI](service-reports.md)

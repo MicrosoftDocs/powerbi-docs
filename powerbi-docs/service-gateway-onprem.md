@@ -92,7 +92,7 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md).
 
-## See also
+## Next steps
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  

@@ -29,7 +29,7 @@ Power BI runs in these browsers:
 * Safari Mac latest version
 * Firefox desktop latest version
 
-## Next steps
+### Next steps
 * [Get started with Power BI](service-get-started.md)
 * Try asking the [Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)

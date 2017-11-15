@@ -58,7 +58,7 @@ With the new behavior of **combine binaries**, you can easily combine all binari
 
 In addition, you can easily apply additional transformation or extraction steps by modifying the automatically created *exemplar query*, without having to worry about modifying or creating additional *function query* steps; any changes to the *exemplar query* are automatically generated in the linked *function query*.
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

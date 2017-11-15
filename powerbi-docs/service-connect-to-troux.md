@@ -45,7 +45,7 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
    
      ![](media/service-connect-to-troux/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -63,7 +63,7 @@ Your Customer Care team can provide your unique Troux OData feed URL to you
 ## Troubleshooting
 If you are seeing a timeout error after providing credentials, try connecting again.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

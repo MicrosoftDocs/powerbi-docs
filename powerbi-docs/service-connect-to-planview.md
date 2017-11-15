@@ -57,8 +57,8 @@ To import your Planview Enterprise data into Power BI, you must be a Planview En
 
 This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
 
-## Next steps
+## Next steps:
+
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
-

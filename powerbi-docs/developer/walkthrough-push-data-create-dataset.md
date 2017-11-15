@@ -229,7 +229,7 @@ Below is the [complete code listing](#code).
 
 [Next Step >](walkthrough-push-data-get-datasets.md)
 
-## See also
+## Next steps
 [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  

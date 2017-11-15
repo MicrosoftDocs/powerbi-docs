@@ -42,7 +42,7 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
    
    ![](media/service-connect-to-sendgrid/pbi_sendgriddash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -58,7 +58,7 @@ The following metrics are available in the SendGrid dashboard:
 * Email statistics by ISP
 * Email statistics by device, client, browser
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Get Data](service-get-data.md)

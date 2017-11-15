@@ -95,7 +95,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    > 
 7. They select **Connect**, and now they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md). 
 
-## Next steps
+### Next steps
 * [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
 * [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md)  
 * [Create a group in Power BI](service-create-distribute-apps.md)  

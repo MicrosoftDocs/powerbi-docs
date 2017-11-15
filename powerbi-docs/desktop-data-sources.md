@@ -191,7 +191,7 @@ You can either load the data by selecting the **Load** button at the bottom of t
 
 That’s all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often - we continue to add to this list all the time.
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

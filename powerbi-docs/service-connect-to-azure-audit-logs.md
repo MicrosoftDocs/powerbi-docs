@@ -48,7 +48,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
    
     ![](media/service-connect-to-azure-audit-logs/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -71,7 +71,7 @@ Your subscription ID will be long set of numbers and characters, similar to the 
 ## Troubleshooting
 If you're seeing a credentials error or an error trying to refresh due to invalid credentials, please try deleting all instances of the Azure Audit logs content pack and reconnecting.
 
-### See Also
+## Next steps
 [Get started with Power BI](service-get-started.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 

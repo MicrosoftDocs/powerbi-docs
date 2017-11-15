@@ -49,7 +49,7 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
    
    ![](media/service-connect-to-marketo/pbi_marketodash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -88,7 +88,7 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 | Program changes |7,500 |50 |
 | **Total API Calls** | |**2,200** |
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)

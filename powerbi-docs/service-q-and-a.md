@@ -21,8 +21,7 @@ ms.author: mihart
 
 ---
 # Q&A in Power BI
-## What is Q&A?
-Sometimes the fastest way to get an answer from your data, is to ask a question using natural language.  For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 > [!NOTE]
 > Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile-apps-ios-qna.md).
@@ -35,7 +34,7 @@ Asking the question is just the beginning.  Have fun traveling through your data
 
 The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
 
-## For more details about Power BI Q&A:
+## For more details about Power BI Q&A
 [How to use Q&A](service-how-to-q-and-a.md):
 Step by step instructions for using Q&A and an overview of how it all works.
 
@@ -56,7 +55,7 @@ Use Q&A in a realistic industry tutorial.
 [Make your data work well with Q&A](service-prepare-data-for-q-and-a.md):
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-## See also
+## Next steps
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 [Get started with Power BI](service-get-started.md)

@@ -99,7 +99,7 @@ To address this issue, you have a few options:
 
 Once your measures are defined in the model in the Power BI service, you'll be able to use them in the **Values** area in Excel PivotTables.
 
-## See Also
+## Next steps
 [Analyze in Excel](service-analyze-in-excel.md)
 
 [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md)

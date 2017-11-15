@@ -40,10 +40,10 @@ If you are having problems signing up for Power BI with your work email address,
    > 
 4. That's it!  When you're finished, you will be redirected to Power BI.
 
-### Important Considerations
+## Important considerations
 By using this signup method you are creating a new organizational tenant and you will become the administrator of the tenant.  Because sharing in Power BI is only allowed within a single tenant, you will not be able to share with users outside this tenant.  For example, if you create the tenant yourcompany.onmicrosoft.com in Step 2, you will not be able to share with users at yourcompany.com.  You can add new users to your tenant, then share with them, as described in [this help topic](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
-## See also
+## Next steps
 [Administering Power BI in your organization](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 

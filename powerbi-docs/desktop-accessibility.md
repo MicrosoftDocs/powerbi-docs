@@ -75,6 +75,6 @@ There are a few known issues and limitations to the accessibility features, desc
 
 * JAWS is only supported in reports that are viewed in the **Power BI service**, including any embedded reports. The **Power BI Desktop** team is actively working on also making it available in reports viewed in **Power BI Desktop**.
 
-## More Information
+## Next steps
 * [Use Report Themes in Power BI Desktop (Preview)](desktop-report-themes.md)
 

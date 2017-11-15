@@ -71,7 +71,7 @@ The following questions and answers provide important information for Power BI P
 | Azure Portal (For Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-## More Information
+### Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)

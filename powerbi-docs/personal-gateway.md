@@ -182,7 +182,7 @@ The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 
 
 If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
-## See also
+## Next steps
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
 
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
