@@ -7,7 +7,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: exploringdata
-  nextTutorialTitle: Exploring Data
+  nextTutorialTitle: Exploring data
   displayType: one-column
   author: davidiseminger
   manager: kfile
@@ -19,19 +19,19 @@ items:
 - durationInMinutes: 1
   content: |
     Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
-- title: Introduction to Visuals in Power BI
+- title: Introduction to visuals in Power BI
   durationInMinutes: 2
   content: |
     > [!Video https://www.youtube.com/embed/SYk_gWrtKvM?rel=0]
 
     [!INCLUDE [](includes/3-1-intro-visualizations.md)]
-- title: Create and Customize Simple Visualizations
+- title: Create and customize simple visualizations
   durationInMinutes: 8
   content: |
     > [!Video https://www.youtube.com/embed/IkJda4O7oGs?rel=0]
 
     [!INCLUDE [](includes/3-2-create-customize-simple-visualizations.md)]
-- title: Combination Charts
+- title: Combination charts
   durationInMinutes: 5
   content: |
     > [!Video https://www.youtube.com/embed/lnv66cTZ5ho?rel=0]
@@ -55,7 +55,7 @@ items:
     > [!Video https://www.youtube.com/embed/9xkErXYZQkU?rel=0]
 
     [!INCLUDE [](includes/3-6-create-tables-matrixes.md)]
-- title: Scatter Charts
+- title: Scatter charts
   durationInMinutes: 9
   content: |
     > [!Video https://www.youtube.com/embed/xLQ_ZVScI60?rel=0]
@@ -85,7 +85,7 @@ items:
     > [!Video https://www.youtube.com/embed/_3q6VEBhGew?rel=0]
 
     [!INCLUDE [](includes/3-10-create-shapes-images.md)]
-- title: Page Layout and Formatting
+- title: Page layout and formatting
   durationInMinutes: 5
   content: |
     > [!Video https://www.youtube.com/embed/5tg-OXzxe2g?rel=0]
@@ -97,19 +97,19 @@ items:
     > [!Video https://www.youtube.com/embed/N_xYsCbyHPw?rel=0]
 
     [!INCLUDE [](includes/3-11a-create-interaction-between-visualizations.md)]
-- title: Duplicate a Report Page
+- title: Duplicate a report page
   durationInMinutes: 2
   content: |
     > [!Video https://www.youtube.com/embed/UOKbxTXZrWw?rel=0]
 
     [!INCLUDE [](includes/3-11b-duplicate-page.md)]
-- title: Show Categories with no Data
+- title: Show categories with no data
   durationInMinutes: 3
   content: |
     > [!Video https://www.youtube.com/embed/rsUMVJAIH00?rel=0]
 
     [!INCLUDE [](includes/3-11c-display-empty-categories.md)]
-- title: Summarization and Category options
+- title: Summarization and category options
   durationInMinutes: 9
   content: |
     > [!Video https://www.youtube.com/embed/Co2z9b-s_yM?rel=0]
@@ -134,4 +134,4 @@ items:
 
     [!INCLUDE [](includes/3-11h-r-visual-integration.md)]
 - content: |
-    You've completed the **Visualizations** section of Microsoft Power BI Guided Learning.
+    You've completed the **Visualizations** section of Microsoft Power BI Guided learning.

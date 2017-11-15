@@ -35,7 +35,7 @@ In addition to the **Dashboard**, the **Report** that was generated (as part of 
 
 On the Dashboard, you can click on any of the visuals, and automatically be taken to the **Report** page from which that visual was created. So when the **Top 5 users by pull requests** visual is clicked, Power BI opens the **Pull Requests** page in the Report (the Report page from which that visual was created).
 
-## Asking Questions of your data
+## Asking questions of your data
 You can also ask questions of your data, and the Power BI service will create visuals based on your question, in real time. In the following image, you can see Power BI creates a number visual showing the Count of Issues closed, based on what is typed in the **Natural Language Query** bar.
 
 ![](media/0-3-dashboards-cloud-services/c0a3_7.png)
