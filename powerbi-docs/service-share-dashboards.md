@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.author: maggies
 
 ---
@@ -118,6 +118,6 @@ Things to keep in mind about sharing dashboards:
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Share a report](service-share-reports.md)
+* [Share just a Power BI report](service-share-reports.md)
 * Questions? [Try the Power BI Community](http://community.powerbi.com/).
 

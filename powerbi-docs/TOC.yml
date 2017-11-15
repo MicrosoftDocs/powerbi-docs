@@ -102,119 +102,119 @@
       href: service-premium-release-notes.md
   - name: Connect to services
     items: 
-    - name: "Connect to services with content packs"
+    - name: "Connect to the services you use"
       href: service-connect-to-services.md
-    - name: "Adobe Analytics content pack"
+    - name: "Adobe Analytics"
       href: service-connect-to-adobe-analytics.md
-    - name: "Azure Audit Logs content pack"
+    - name: "Azure Audit Logs"
       href: service-connect-to-azure-audit-logs.md
-    - name: "Google Analytics content pack"
+    - name: "Google Analytics"
       href: service-connect-to-google-analytics.md
-    - name: "Marketo content pack"
+    - name: "Marketo"
       href: service-connect-to-marketo.md
-    - name: "Salesforce content pack"
+    - name: "Salesforce"
       href: service-connect-to-salesforce.md
-    - name: "Acumatica content pack"
+    - name: "Acumatica"
       href: service-connect-to-acumatica.md
-    - name: "Alpine Metrics Sales Predictions content pack"
+    - name: "Alpine Metrics Sales Predictions"
       href: service-connect-to-alpine-metrics.md
-    - name: "appFigures content pack"
+    - name: "appFigures"
       href: service-connect-to-appfigures.md
-    - name: "Application Insights content pack"
+    - name: "Application Insights"
       href: service-connect-to-application-insights.md
-    - name: "AT Internet Bridge content pack"
+    - name: "AT Internet Bridge"
       href: service-connect-to-at-internet.md
-    - name: "Azure Mobile Engagement content pack"
+    - name: "Azure Mobile Engagement"
       href: service-connect-to-azure-mobile.md
-    - name: "Microsoft Azure Consumption Insights content pack"
+    - name: "Microsoft Azure Consumption Insights"
       href: service-connect-to-azure-consumption-insights.md
-    - name: "Azure Search content pack"
+    - name: "Azure Search"
       href: service-connect-to-azure-search.md
-    - name: "Azure Security Center content pack"
+    - name: "Azure Security Center"
       href: service-connect-to-azure-security-center.md
-    - name: "Bing content pack"
+    - name: "Bing"
       href: service-connect-to-bing.md
-    - name: "Circuit ID content pack"
+    - name: "Circuit ID"
       href: service-connect-to-circuit-id.md
-    - name: "ClickDimensions content pack"
+    - name: "ClickDimensions"
       href: service-connect-to-clickdimensions.md
-    - name: "comScore Digital Analytix content pack"
+    - name: "comScore Digital Analytix"
       href: service-connect-to-connect-to.md
-    - name: "GitHub content pack"
+    - name: "GitHub"
       href: service-connect-to-github.md
-    - name: "Insightly content pack"
+    - name: "Insightly"
       href: service-connect-to-insightly.md
-    - name: "IntelliBoard content pack"
+    - name: "IntelliBoard"
       href: service-connect-to-intelliboard.md
-    - name: "Lithium content pack"
+    - name: "Lithium"
       href: service-connect-to-lithium.md
-    - name: "MailChimp content pack"
+    - name: "MailChimp"
       href: service-connect-to-mailchimp.md
-    - name: "Mandrill content pack"
+    - name: "Mandrill"
       href: service-connect-to-mandrill.md
-    - name: "Microsoft Azure Enterprise content pack"
+    - name: "Microsoft Azure Enterprise"
       href: service-connect-to-azure-enterprise.md
-    - name: "Microsoft Dynamics AX content pack"
+    - name: "Microsoft Dynamics AX"
       href: service-connect-to-microsoft-dynamics-ax.md
-    - name: "Microsoft Dynamics CRM content pack"
+    - name: "Microsoft Dynamics CRM"
       href: service-connect-to-microsoft-dynamics-crm.md
-    - name: "Microsoft Dynamics Marketing content pack"
+    - name: "Microsoft Dynamics Marketing"
       href: service-connect-to-microsoft-dynamics-marketing.md
-    - name: "Microsoft Dynamics NAV content pack"
+    - name: "Microsoft Dynamics NAV"
       href: service-connect-to-microsoft-dynamics-nav.md
-    - name: "Office365Mon content pack"
+    - name: "Office365Mon"
       href: service-connect-to-office365mon.md
-    - name: "Planview Enterprise content pack"
+    - name: "Planview Enterprise"
       href: service-connect-to-planview.md
-    - name: "Prevedere content pack"
+    - name: "Prevedere"
       href: service-connect-to-prevedere.md
-    - name: "Project Online content pack"
+    - name: "Project Online"
       href: service-connect-to-project-online.md
-    - name: "Project Madeira content pack"
+    - name: "Project Madeira"
       href: service-connect-to-project-madeira.md
-    - name: "Projectplace content pack"
+    - name: "Projectplace"
       href: service-connect-to-projectplace.md
-    - name: "QuickBooks Online content pack"
+    - name: "QuickBooks Online"
       href: service-connect-to-quickbooks-online.md
-    - name: "SendGrid content pack"
+    - name: "SendGrid"
       href: service-connect-to-sendgrid.md
-    - name: "ServiceNow Incidents content pack"
+    - name: "ServiceNow Incidents"
       href: service-connect-to-servicenow.md
-    - name: "Smartsheet content pack"
+    - name: "Smartsheet"
       href: service-connect-to-smartsheet.md
-    - name: "SparkPost content pack"
+    - name: "SparkPost"
       href: service-connect-to-sparkpost.md
-    - name: "SQL Database Auditing content pack"
+    - name: "SQL Database Auditing"
       href: service-connect-to-azure-sql-database-auditing.md
-    - name: "SQL Sentry content pack"
+    - name: "SQL Sentry"
       href: service-connect-to-sql-sentry.md
-    - name: "Stripe content pack"
+    - name: "Stripe"
       href: service-connect-to-stripe.md
-    - name: "SweetIQ content pack"
+    - name: "SweetIQ"
       href: service-connect-to-sweetiq.md
-    - name: "Troux content pack"
+    - name: "Troux"
       href: service-connect-to-troux.md
-    - name: "Twilio content pack"
+    - name: "Twilio"
       href: service-connect-to-twilio.md
-    - name: "tyGraph content pack"
+    - name: "tyGraph"
       href: service-connect-to-tygraph.md
-    - name: "UserVoice content pack"
+    - name: "UserVoice"
       href: service-connect-to-uservoice.md
-    - name: "Visual Studio Team Services content pack"
+    - name: "Visual Studio Team Services"
       href: service-connect-to-visual-studio.md
-    - name: "VMob content pack"
+    - name: "VMob"
       href: service-connect-to-vmob.md
-    - name: "Webtrends content pack"
+    - name: "Webtrends"
       href: service-connect-to-webtrends.md
-    - name: "Windows Dev Center content pack"
+    - name: "Windows Dev Center"
       href: service-connect-to-windows-dev-center.md
-    - name: "Xero content pack"
+    - name: "Xero"
       href: service-connect-to-xero.md
-    - name: "Zendesk content pack"
+    - name: "Zendesk"
       href: service-connect-to-zendesk.md
-    - name: "Ziosk content pack"
+    - name: "Ziosk"
       href: service-connect-to-ziosk.md
-    - name: "Zuora content pack"
+    - name: "Zuora"
       href: service-connect-to-zuora.md
   - name: Dashboards
     items: 
@@ -294,18 +294,20 @@
       href: service-cortana-troubleshoot.md
   - name: Share your work
     items: 
-    - name: "How should I collaborate on & share dashboards and reports?"
+    - name: "How should I collaborate & share dashboards & reports?"
       href: service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: "What are apps in Power BI?"
+    - name: "Install and use apps, with dashboards and reports"
       href: service-install-use-apps.md
-    - name: "Create and distribute an app"
+    - name: "Create and distribute apps with dashboards and reports"
       href: service-create-distribute-apps.md
     - name: "Organizational content packs: Introduction"
       href: service-organizational-content-pack-introduction.md
     - name: "Create and publish an organizational content pack (tutorial)"
       href: service-organizational-content-pack-create-and-publish.md
-    - name: "Share a dashboard with colleagues and others"
+    - name: "Share a dashboard with coworkers and others"
       href: service-share-dashboards.md
+    - name: "Share a report with coworkers"
+      href: service-share-reports.md
     - name: "Publish from Power BI to the web"
       href: service-publish-to-web.md
     - name: "Embed report in SharePoint Online"
