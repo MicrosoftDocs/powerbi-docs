@@ -570,8 +570,6 @@
       href: service-admin-portal.md
     - name: "Auditing Power BI"
       href: service-admin-auditing.md
-    - name: "Using Azure AD B2B"
-      href: service-admin-azure-ad-b2b.md
     - name: "Find users that have signed in"
       href: service-admin-access-usage.md
     - name: "Row-level security with Power BI"
