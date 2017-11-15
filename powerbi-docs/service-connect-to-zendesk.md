@@ -25,9 +25,10 @@ The Zendesk content pack offers a Power BI dashboard and a set of Power BI repor
 
 Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI.
 
-Note: A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
+>[!NOTE]
+>A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
 
-## How to Connect
+## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
    ![](media/service-connect-to-zendesk/pbi_getdata.png)
@@ -43,7 +44,7 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
    > [!NOTE]
-> This content pack requires you connect with a Zendesk Admin account. 
+   > This content pack requires you connect with a Zendesk Admin account. 
    > 
    > 
    
@@ -74,7 +75,7 @@ There's also a set of measures that have been calculated, such as Average Wait T
 
 <a name="Requirements"></a>
 
-## System Requirements
+## System requirements
 A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
 
 <a name="FindingParams"></a>

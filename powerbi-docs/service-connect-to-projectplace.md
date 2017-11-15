@@ -25,7 +25,8 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
 [Connect to the Projectplace content pack in Power BI](https://app.powerbi.com/getdata/services/projectplace)
 
-Note: To import your Projectplace data into Power BI, you must be a Projectplace user. See additional requirements below.
+>[!NOTE]
+>To import your Projectplace data into Power BI, you must be a Projectplace user. See additional requirements below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

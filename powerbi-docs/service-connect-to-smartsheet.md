@@ -25,9 +25,10 @@ Smartsheet offers an easy platform for collaboration and file sharing. The Smart
 
 Connect to the [Smartsheet content pack](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
 
-Note: Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access.
+>[!NOTE]
+>Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access.
 
-## How to Connect
+## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
    ![](media/service-connect-to-smartsheet/pbi_getdata.png)
@@ -61,7 +62,7 @@ The Smartsheet content pack for Power BI includes an overview of your Smartsheet
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](desktop-connect-to-data.md).  
 
 ## Next steps:
+
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)
-

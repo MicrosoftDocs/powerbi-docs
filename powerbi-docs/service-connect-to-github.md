@@ -25,7 +25,8 @@ The GitHub content pack for Power BI allows you to gain insights into a GitHub r
 
 Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
-Note: The content pack requires the GitHub account to have access to the repo. More details on requirements below.
+>[!NOTE]
+>The content pack requires the GitHub account to have access to the repo. More details on requirements below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

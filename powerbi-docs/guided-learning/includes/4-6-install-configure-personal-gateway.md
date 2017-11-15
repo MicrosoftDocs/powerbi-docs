@@ -2,8 +2,8 @@ In previous topics we've looked at how you can use Power BI to connect to data s
 
 The system that lets you connect your on-premises data sources to the Power BI service is called the **Data Gateway**. It's a small application that runs on your computer, and uses a pre-arranged schedule to connect to your data, gather any updates, and push them up to the Power BI service. The **Personal Gateway** is a version of the **Data Gateway** that can be used without any administrator configuration.
 
-> Note: The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
-> 
+>[!NOTE]
+>The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
 > 
 
 To set up your **Personal Gateway**, first login to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Data Gateways** from the menu.

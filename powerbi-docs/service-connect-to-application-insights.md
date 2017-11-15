@@ -25,7 +25,8 @@ Use Power BI to create powerful custom dashboards from [Application Insights](ht
 
 Connect to the [Application Insights content pack for Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
-Note: Access to the Application Insights overview blade for your application in the Azure Preview Portal is required to connect. More details on requirements below.
+>[!NOTE]
+>Access to the Application Insights overview blade for your application in the Azure Preview Portal is required to connect. More details on requirements below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

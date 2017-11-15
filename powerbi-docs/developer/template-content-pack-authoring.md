@@ -81,7 +81,9 @@ A well-defined data model will ensure your customers can easily and intuitively 
 The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and that your columns are properly named in the [queries](#queries).
 
 ### Additional data model tips
-* All value columns have formatting applied (Note: types should be applied in the Query)  
+* All value columns have formatting applied
+    >[!NOTE]
+    >Types should be applied in the query.  
 * All measures have formatting applied  
 * Default Summarization is set. Especially "Do Not Summarize", when applicable (for unique values for example)  
 * Data Category has been set, when applicable  
@@ -112,7 +114,7 @@ The dashboard is the main point of interaction with your content pack for your c
 To create a dashboard for your template content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
 
 > [!NOTE]
-> template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
+> Template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
 > 
 > 
 
@@ -137,6 +139,6 @@ As listed in the above sections, currently the template content packs have a set
 | Parameters of type text |*Other parameter types (such as date) or "list allowed of values"* |
 | One dashboard, report and dataset |*Multiple dashboards, reports or datasets* |
 
-## Next
+## Next step
 [Content Pack Testing and Submission](template-content-pack-testing.md)
 

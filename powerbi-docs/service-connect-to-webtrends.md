@@ -75,7 +75,8 @@ The Webtrends content pack pulls data from the following reports:
 | Search Engines |yGz3gAGP0P6 |
 | Entry Pages |i6LrkNVRUo6 |
 
-Note: For SharePoint profiles, the metric names may be a little different than what's show in the Webtrends UI. The following mapping is done to maintain consistency between SharePoint and Web profiles:   
+>[!NOTE]
+>For SharePoint profiles, the metric names may be a little different than what's show in the Webtrends UI. The following mapping is done to maintain consistency between SharePoint and Web profiles:   
 
     - Sessions = Visits  
     - New Users = New Visitors  

@@ -25,7 +25,8 @@ Analyzing your Office 365 outages and health performance data is easy with Power
 
 Connect to the [Office365Mon content pack](https://app.powerbi.com/groups/me/getdata/services/office365mon) for Power BI.
 
-Note: An Office365Mon admin account is required to connect and load the Power BI content pack.
+>[!NOTE]
+>An Office365Mon admin account is required to connect and load the Power BI content pack.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

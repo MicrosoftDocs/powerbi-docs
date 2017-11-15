@@ -25,7 +25,8 @@ Use the Visual Studio Team Services content pack for Power BI to gain insights i
 
 Connect to the [Visual Studio Team Services content pack](https://app.powerbi.com/getdata/services/visual-studio-online) or read more about the [Visual Studio Team Services integration](https://powerbi.microsoft.com/integrations/visual_studio_online) with Power BI.
 
-Note: This content pack requires access to an account which has OAuth enabled. More details on requirements below.
+>[!NOTE]
+>This content pack requires access to an account which has OAuth enabled. More details on requirements below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.  
@@ -46,7 +47,7 @@ Note: This content pack requires access to an account which has OAuth enabled. M
 5. Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result. 
    
    > [!IMPORTANT]
-> Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
+   > Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
    > 
    > 
    

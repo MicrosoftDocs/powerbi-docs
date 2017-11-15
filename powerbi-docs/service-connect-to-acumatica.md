@@ -25,7 +25,8 @@ The Power BI Acumatica content pack allows to you quickly gain insights into you
 
 Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services/acumatica) or read more about the [Acumatica integration](https://powerbi.microsoft.com/integrations/acumatica) with Power BI.
 
-Note: this content pack requires Acumatica v5.2 or higher.
+>[!NOTE]
+>This content pack requires Acumatica v5.2 or higher.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

@@ -25,7 +25,8 @@ Lithium builds trusted relationships between the world's best brands and their c
 
 Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/lithium) for Power BI.
 
-Note: The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator.
+>[!NOTE]
+>The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

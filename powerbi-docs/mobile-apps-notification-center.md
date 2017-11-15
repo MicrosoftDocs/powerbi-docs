@@ -29,7 +29,8 @@ Applies to:
 
 Notifications bring information related to your Power BI experience right to you, in the Power BI service or on your mobile device. When you open Notifications, you see a sequential feed of messages about [alerts you've set](mobile-set-data-alerts-in-the-mobile-apps.md), new dashboards that have been shared with you, changes to your group workspace, information about Power BI events and meetings, and more.
 
-> **Note**: On an iOS device, the first time you sign in to the [updated version of the Power BI apps](https://powerbi.microsoft.com/mobile/), you see a message asking if you'd like Power BI to send notifications. You can also configure how Power BI notifies you in **Settings** for your device. 
+> [!NOTE]
+> On an iOS device, the first time you sign in to the [updated version of the Power BI apps](https://powerbi.microsoft.com/mobile/), you see a message asking if you'd like Power BI to send notifications. You can also configure how Power BI notifies you in **Settings** for your device. 
 > 
 > 
 
@@ -76,7 +77,7 @@ You can change how Power BI notifies you.
 
     ![Choose Notifications](media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
-### Next steps
+## Next steps
 * [Data alerts in Power BI service](service-set-data-alerts.md)
 * [Set data alerts in the iPhone app (Power BI for iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)

@@ -24,7 +24,8 @@ ms.author: yshoukry
 Getting insights into your Project “Madeira” data is easy with Power BI and the Project “Madeira” content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 Connect to the Project "Madeira" for Power BI or read more about the Project "Madeira" integration with Power BI.
 
-Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements [below](#Requirements).
+>[!NOTE]
+>This content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements [below](#Requirements).
 
 Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.com/getdata/services/project-madeira) for Power BI.
 
@@ -40,7 +41,8 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
     ![](media/service-connect-to-project-madeira/params.png)
 5. When prompted, select Basic as the Authentication Method, enter your Project “Madeira” email address as the username, and then enter the web service access key for your Project “Madeira” account as the password. If you are already signed in to Project “Madeira” in your browser, you may not be prompted for credentials. See details on generating this access key [below](#FindingParams).  
    
-    Note: You must be a superuser in Project “Madeira”.
+    >[!NOTE]
+    >You must be a superuser in Project “Madeira”.
    
     ![](media/service-connect-to-project-madeira/creds.png)
 6. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your account.  

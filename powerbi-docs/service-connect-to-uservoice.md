@@ -25,7 +25,8 @@ Tracking and exploring your UserVoice data is easy with Power BI and the UserVoi
 
 Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services/uservoice) for Power BI.
 
-Note: An admin account is required to connect to the Power BI content pack. The content pack also leverages the UserVoice API and will contribute usage towards the UserVoice limits. More details below.
+>[!NOTE]
+>An admin account is required to connect to the Power BI content pack. The content pack also leverages the UserVoice API and will contribute usage towards the UserVoice limits. More details below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -39,12 +40,14 @@ Note: An admin account is required to connect to the Power BI content pack. The 
    ![](media/service-connect-to-uservoice/uservoice.png)
 4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name.
    
-   **Note:** There is no trailing slash at the end and the connection is in http**s**.
+   >[!NOTE]
+   >There is no trailing slash at the end and the connection is in http**s**.
    
    ![](media/service-connect-to-uservoice/capture.png)
 5. When prompted, enter your UserVoice credentials and follow the UserVoice authentication process. If you are already signed in to UserVoice in your browser, you may not be prompted for credentials. Grant the Power BI application access to your data by clicking "Allow Access".
    
-   **Note:** You need admin credentials for your UserVoice account.
+   >[!NOTE]
+   >You need admin credentials for your UserVoice account.
    
    ![](media/service-connect-to-uservoice/capture3.png)
 6. Power BI will retrieve your UserVoice data and create a ready-to-use dashboard and report for you. Power BI will retrieve the following data: all your suggestions, all your open tickets, all tickets created in the last 30 days including closed ones and all the user satisfaction ratings.

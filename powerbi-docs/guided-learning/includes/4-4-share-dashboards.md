@@ -10,7 +10,8 @@ The **Share Dashboard** page appears, where you can select the **Invite** sectio
 
 If you selected the checkbox (near the bottom) to *send email notification to recipients*, then your recipients will receive an email letting them know that you shared a dashboard with them, including a link with the dashboard. You can add a note to the email they will receive, or send the note that Power BI created for you (it's in the box directly below where you enter their email addresses).
 
-> Note: Recipients without an existing Power BI account will be taken through the sign-up process before viewing your dashboard.
+>[!NOTE]
+>Recipients without an existing Power BI account will be taken through the sign-up process before viewing your dashboard.
 > 
 > 
 

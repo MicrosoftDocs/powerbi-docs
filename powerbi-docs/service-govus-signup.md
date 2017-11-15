@@ -45,7 +45,9 @@ If your organization is a new **Office Government Cloud** customer, follow these
 > 
 > 
 
-1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
+1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
+    >[!NOTE]
+    >If you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
 2. Select Office G3 and complete the form for an Office trial
 3. Once you are an Office Cloud customer continue on with the steps below for "Existing Office Government Cloud customers"
 
