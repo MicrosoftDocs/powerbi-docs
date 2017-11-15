@@ -85,45 +85,36 @@ Let’s create a simple formula. This task will help you further understand form
 
 ### Task: Create a measure formula
 To complete this task, you’ll need to open the Contoso Sales Sample Power BI Desktop file.
-
+    
 1.  In Report view, in the field list, right-click on the **Sales** table, and then click **New Measure**.
-
+    
 2.  In the formula bar, replace **Measure** by typing a new measure name, **Previous Quarter Sales**.
-
+    
 3.  After the equals sign, type **SUM** followed by an opening parenthesis.
-
->   Rather than type a column name to sum up right away, we’re going to enter another function, to *filter* the data we want to sum up.
->   
->   
-
+    
+    Rather than type a column name to sum up right away, we’re going to enter another function, to *filter* the data we want to sum up.
+    
 4.  Between the parentheses, type **CALCULATE**, followed by an opening parenthesis.
-
->   You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and second, a filter.
->   
->   
-
-5. Between the parenthesis **()** for the **CALCULATE** function, type **Sales[SalesAmount]**. This is the first expression argument for our CALCULATE function.
-
-6. Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis..
-
-   > You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.
-   > 
-   > 
-
-7. Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
-
-   > The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.
-   > 
-   > 
-
-8. Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
-
+    
+    You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and second, a filter.
+   
+5.  Between the parenthesis **()** for the **CALCULATE** function, type **Sales[SalesAmount]**. This is the first expression argument for our CALCULATE function.
+    
+6.  Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis..
+    
+    You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.
+    
+7.  Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
+    
+    The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.
+    >
+    
+8.  Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
+    
    Your formula should now look like this:
-
-   > **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
-   > 
-   > 
-
+    
+    **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
+    
 9. Click the checkmark ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
 
 You did it! You just created a measure using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure in a chart, and then added Year and QuarterOfYear as Slicers, we’d get something like this:
