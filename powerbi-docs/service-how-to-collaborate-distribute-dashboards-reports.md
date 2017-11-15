@@ -68,7 +68,7 @@ You can share with people outside your organization, too. They can view and inte
 
 More about [sharing a dashboard](service-share-dashboards.md) from the Power BI service.
 
-You can also [share a direct link to a report](service-share-reports.md), and bypass the dashboard. You can also add a filter to the link so the recipients see a filtered view of your report.
+You can also [share a direct link to a report](service-share-reports.md), and bypass the dashboard. You can add a filter to the link so the recipients see a filtered view of your report.
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
