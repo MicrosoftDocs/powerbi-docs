@@ -30,7 +30,7 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 * Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 * Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s details page, listed as **Provider**.
 
-## Next steps
+### Next steps
 * [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)
 * [Add a custom visualization to your report (Power BI Service)](power-bi-report-add-custom-visual.md)
 * [Add a custom visualization to your report (Power BI Desktop)](power-bi-custom-visuals-use.md)
