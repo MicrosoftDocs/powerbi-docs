@@ -1,6 +1,6 @@
 Power BI has properties that you can assign for fields in your model, which can help report and visualize and present data in ways that provide more clarity. For example, sometimes you want to average a list of numbers, but Power BI automatically sums the list. With Power BI, you can adjust how those lists of numbers are summarized.
 
-## Numeric Control over summarization
+## Numeric control over summarization
 Let's take an example, and demonstrate how to control the way Power BI summarizes numeric data fields.
 
 Select a visual on your report canvas, and then select a field in the **Fields** pane. The **Modeling** tab appears in the ribbon and displays options for formatting data, and data properties.
