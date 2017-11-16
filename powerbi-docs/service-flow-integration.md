@@ -107,7 +107,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
    
     ![](media/service-flow-integration/power-bi-flow-notice.png)
 
-### Next steps
+## Next steps
 * [Get started with Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Set data alerts in Power BI service](service-set-data-alerts.md)
 * [Set data alerts on your iphone](mobile-set-data-alerts-in-the-mobile-apps.md)
