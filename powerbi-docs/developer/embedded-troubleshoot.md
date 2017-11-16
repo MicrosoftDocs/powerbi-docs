@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 11/17/2017
 ms.author: asaxton
 ---
 # Troubleshooting your embedded application
@@ -93,6 +93,14 @@ A data source can have a single set of credentials for one master user. If you n
 
 Make sure the embed token did not expire. Make sure you are checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
 
+**Report or dashboard does not load**
+
+If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard will not work within your application if it doesn't load within powerbi.com.
+
+**Report or dashboard is performing slowly**
+
+Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
+
 ## Tools for troubleshooting
 
 ### Fiddler Trace
@@ -104,6 +112,8 @@ Make sure the embed token did not expire. Make sure you are checking the embed t
 ### F12 in Browser for front end debugging
 
 F12 will launch the developer window within your browser. This provides the ability to look at network traffic and other information.
+
+![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
 For answers to frequently asked questions, see the [Power BI Embedded FAQ](embedded-faq.md).
 
