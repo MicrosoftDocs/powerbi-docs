@@ -45,12 +45,12 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
 3. Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other **Power BI Desktop** visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the **Power BI Desktop R script editor**. **Power BI Desktop** automatically detects which fields you have added or removed.
-
-> [!NOTE]
-> The default aggregation type for R visuals is *do not summarize*.
-> 
-> 
-
+   
+   > [!NOTE]
+   > The default aggregation type for R visuals is *do not summarize*.
+   > 
+   > 
+   
 1. Now you can use the data you selected to create a plot. As you select fields, the **R script editor** generates supporting R script binding code based on your selections in the gray section along the top of the editor pane. As you select or remove additional fields, supporting code in the R script editor is automatically generated or removed accordingly.
    
    In the example shown in the following image, three fields were selected: hp, gear, and drat. As a result of those selections, the R script editor generated the following binding code:
@@ -63,7 +63,7 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    ![](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
-> In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
+   > In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
    > 
    > 
    
@@ -73,7 +73,7 @@ Once you specify your R installation, you’re ready to begin creating R visuals
     When **Run** is selected, **Power BI Desktop** identifies the plot and present it on the canvas.
    Since the process is executed on your local R installation, make sure required packages are installed.
    
-    **Power BI Desktop** replots the visual when any of the following events occur:
+   **Power BI Desktop** replots the visual when any of the following events occur:
    
    * **Run** is selected from the **R script editor** title bar
    * Whenever a data change occurs, due to data refresh, filtering, or highlighting
