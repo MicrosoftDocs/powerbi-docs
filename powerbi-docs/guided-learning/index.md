@@ -383,7 +383,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml#step-8">Use content pPacks</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-8">Use content packs</a>
                                 <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
