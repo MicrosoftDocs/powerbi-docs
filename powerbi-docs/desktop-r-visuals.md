@@ -27,7 +27,7 @@ With **Power BI Desktop**, you can use **R** to visualize your data.
 **Power BI Desktop** does not include, deploy or install the **R** engine. To run R scripts in **Power BI Desktop**, you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in **Power BI Desktop** supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ## Enable R visuals
-1. To enable R visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local R installation is specified in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
+To enable R visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local R installation is specified in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
    
    ![](media/desktop-r-visuals/r-visuals-2.png)
 
@@ -39,9 +39,9 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    ![](media/desktop-r-visuals/r-visuals-3.png)
 2. When you add an R visual to a report, **Power BI Desktop** does the following:
    
-   a) A placeholder R visual image appears on the report canvas.
+   - A placeholder R visual image appears on the report canvas.
    
-   b) The **R script editor** appears along the bottom of the center pane.
+   - The **R script editor** appears along the bottom of the center pane.
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
 3. Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other **Power BI Desktop** visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the **Power BI Desktop R script editor**. **Power BI Desktop** automatically detects which fields you have added or removed.
