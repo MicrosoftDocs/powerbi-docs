@@ -145,15 +145,15 @@ If you use Atom, you'll need to set a few things up.
 
 Public repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-docs.git
 
 Private repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content-pr.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-docs-pr.git
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-content-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-docs-pr.git  
 
 ## Set remote repository connection and configure credentials
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
@@ -161,13 +161,13 @@ Create a reference to the root repository by entering these commands. This sets 
 Public repo:
 
         cd powerbi-content
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/MicrosoftDocs/powerbi-docs.git
         git fetch upstream
 
 Private repo:
 
         cd powerbi-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content-pr.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/MicrosoftDocs/powerbi-docs-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
@@ -178,13 +178,13 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 1. Start Git Bash, and switch into powerbi-content or powerbi-content-pr:
    
    ````
-   cd powerbi-content
+   cd powerbi-docs
    ````
    
    or
    
    ````
-   cd powerbi-content-pr
+   cd powerbi-docs-pr
    ````
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
    
