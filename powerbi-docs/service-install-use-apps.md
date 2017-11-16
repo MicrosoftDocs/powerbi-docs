@@ -1,5 +1,5 @@
 ---
-title: Install and use apps, with dashboards and reports, in Power BI
+title: Install and use apps with dashboards and reports in Power BI
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 services: powerbi
 documentationcenter: ''
@@ -15,11 +15,11 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 11/13/2017
 ms.author: maggies
 
 ---
-# Install and use apps, with dashboards and reports, in Power BI
+# Install and use apps with dashboards and reports in Power BI
 In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](service-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
 ![Apps in Power BI](media/service-install-use-apps/power-bi-apps-left-nav.png)
@@ -28,13 +28,13 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
-Planning to author an app? See [Create and distribute apps in Power BI](service-create-distribute-apps.md) for more information.
+Planning to author an app? See [Create and publish apps n Power BI](service-create-distribute-apps.md) for more information.
 
-## Install an app
-You can install apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. 
+## Get a new app
+You can get apps in a few different ways. The app author can install the app automatically in your Power BI account or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 
-### Get a direct link to an app
-The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
+### Install an app from a direct link
+The easiest way to install a new app yourself is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
 
 **On your computer** 
 
@@ -67,7 +67,7 @@ You can't save changes you make, but you can always [export the data to Excel ](
 ![Export data from a Power BI visual](media/service-install-use-apps/power-bi-service-export-data-visual.png)
 
 ## Next steps
-* [Create and distribute apps in Power BI](service-create-distribute-apps.md)
+* [Create and publish apps in Power BI](service-create-distribute-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

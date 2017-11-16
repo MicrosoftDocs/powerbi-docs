@@ -72,7 +72,7 @@ In addition, the following model types and data sources are currently not suppor
 * On-premises Reporting Services
 * Embedding
 
-## More information
+## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

@@ -89,7 +89,7 @@ The new algorithm for high density line sampling is an important improvement to 
 * The **Show items with no data** setting is not supported with the new algorithm.
 * The new algorithm is not supported when using a live connection to a model hosted in SQL Server Analysis Services (version 2016 or earlier). It is supported in models hosted in **Power BI** or Azure Analysis Services.
 
-## More information
+## Next steps
 For information about high density sampling in scatter charts, see the following article.
 
 * [High Density Sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)

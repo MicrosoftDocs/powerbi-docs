@@ -101,7 +101,7 @@ There are a few limitations to using slicers in Power BI, which are the followin
 
 Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 
-## See also
+## Next steps
  [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
  [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

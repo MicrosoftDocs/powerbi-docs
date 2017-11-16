@@ -25,7 +25,8 @@ The Microsoft Dynamics Marketing content pack for Power BI allows you to easily 
 
 Connect to [Dynamics Marketing content pack](https://app.powerbi.com/getdata/services/microsoft-dynamics-marketing) for Power BI.
 
-Note: You need to specify a valid OData URL for a Dynamics Marketing instance (the content pack will not work with an on-premises CRM version). See additional requirements below.
+>[!NOTE]
+>You need to specify a valid OData URL for a Dynamics Marketing instance (the content pack will not work with an on-premises CRM version). See additional requirements below.
 
 ## How to connect
 1. Select Get Data at the bottom of the left navigation pane.
@@ -44,9 +45,10 @@ Note: You need to specify a valid OData URL for a Dynamics Marketing instance (t
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgoauth2.png)
 6. After connecting, you'll see a Dynamics Marketing dashboard, populated with your own data. The yellow asterisks mark the new items in the left navigation pane.
+   
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgnewdash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -70,7 +72,7 @@ If you're still having issues, open a support ticket to reach the Power BI team:
 * While in the Power BI app, select the question mark \> **Contact Support**.
 * From the Power BI Support site (where you're reading this article), select **Contact Support** on the right side of the page.
 
-#### See also
+## Next steps
 [Get Data for Power BI](service-get-data.md)
 
 [Get Started with Power BI](service-get-started.md)

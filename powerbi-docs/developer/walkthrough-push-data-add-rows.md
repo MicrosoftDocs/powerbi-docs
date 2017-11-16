@@ -311,7 +311,7 @@ Below is the [complete code listing](#code).
         }
     }
 
-## See also
+## Next steps
 [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  

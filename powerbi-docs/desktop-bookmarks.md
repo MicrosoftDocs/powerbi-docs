@@ -151,7 +151,7 @@ In this preview release of the **bookmarks**, there are a few limitations and co
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
 * You *must* have at least one bookmard in your report, when you publish it to the **Power BI service**, in order for bookmarks to be available in the service. This is a requirement for each report you publish.
 
-## More Information
+## Next steps
 For more information about features that are similar or interact with bookmarks, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)

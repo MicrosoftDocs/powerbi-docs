@@ -52,7 +52,7 @@ Connect to [tyGraph for Power BI](https://app.powerbi.com/getdata/services/tygra
    
     ![](media/service-connect-to-tygraph/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -92,7 +92,7 @@ The To Date allows you to restrict the latest value for the data returned. It ca
 
 In the above example, all data from on or prior to October 20, 2014 will be loaded into the content pack. 
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

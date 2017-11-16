@@ -197,7 +197,8 @@ To Expand the merged table, and select which columns to include, select the expa
 
 In this case, we only want the **State Code** column, so we select only that column and then select **OK**. We clear the checkbox from Use original column name as prefix because we don’t need or want that; if we leave that selected, the merged column would be named **NewColumn.State Code** (the original column name, or **NewColumn**, then a dot, then the name of the column being brought into the query).
 
-**Note:** Want to play around with how to bring in that **NewColumn** table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
+>[!NOTE]
+>Want to play around with how to bring in that **NewColumn** table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
 We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
 
@@ -205,7 +206,7 @@ To apply changes and close Query Editor, select Close & Apply from the **Home** 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
-## More Information
+## Next steps
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

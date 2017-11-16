@@ -389,7 +389,7 @@ One reason Power BI employs this pattern is because the SQL query used can be pr
 
 ![](media/desktop-directquery-about/directquery-about_12.png)
 
-## More Information
+## Next steps
 This article describes aspects of **DirectQuery** that are common across all data sources. There are certain details that are specific to individual sources. See the following topics covering specific sources:
 
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)

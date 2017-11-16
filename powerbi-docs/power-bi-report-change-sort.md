@@ -46,7 +46,7 @@ In some cases, you may be able to sort the visual the way you'd like, for exampl
 * In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
 * In Excel, ensure that your numerical columns are tagged as "whole number" or "decimal" and not as "text."
 
-## See also
+## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

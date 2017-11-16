@@ -50,7 +50,7 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 
 Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
 
-## Business Scenario
+## Business scenario
 Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
 
 ### Tips
@@ -59,7 +59,7 @@ Content packs provide insights and metrics focused on a specific business scenar
 * Only import the tables/columns related to your scenario  
 * Consider offering more than one content pack for separate unique scenarios  
 
-## Frequently Asked Questions
+## Frequently asked questions
 **Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?**
 
 No, we currently require signing a partner agreement with the owner of the SaaS application prior to publishing the content pack in the service.
@@ -79,6 +79,6 @@ Feel free to email us your questions at pbiservicesapps@microsoft.com
 ## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
 
-## Next
+## Next step
 [Authoring](template-content-pack-authoring.md)
 

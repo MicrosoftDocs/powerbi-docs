@@ -42,7 +42,7 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
    
     ![](media/service-connect-to-sweetiq/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -56,7 +56,7 @@ Select a Client ID for one of the clients your account has access to. You can fi
 
 Talk to your administrator for your API key, to access the data for specific client.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Get Data for Power BI](service-get-data.md)

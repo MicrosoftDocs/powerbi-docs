@@ -10,7 +10,7 @@ We'll start with the mainstays of visualizations - the simple visuals we're all 
 
 Have fun - there's a lot to learn here!
 
-## Introduction to Visuals in Power BI
+## Introduction to visuals in Power BI
 Visualizing data is one of the core parts of Power BI - a basic building block as we defined it earlier in this course - and creating visuals is the easiest way to find and share your insights.
 
 Power BI has a whole range of visualizations available by default, from simple bar charts to pie charts to maps, and even more esoteric offerings like waterfalls, funnels, gauges, and more. Power BI Desktop also offers extensive page formatting tools, such as shapes and images, that help bring your report to life.

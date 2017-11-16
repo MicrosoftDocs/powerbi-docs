@@ -4,7 +4,7 @@ Chances are good that you've used **Excel** before. Maybe you used Excel to crea
 
 This section shows you just how easy it is to bring Excel workbooks into Power BI, and demonstrates that Power BI and Excel make a great partnership.
 
-## Introduction to Using Excel Data in Power BI
+## Introduction to using Excel data in Power BI
 *Watch an introduction to the ways Excel and the Power BI service work together*
 
 With Power BI, getting your Excel data into Power BI is easy.

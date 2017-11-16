@@ -124,7 +124,7 @@ The Power BI team is actively working on mitigating these issues before they rea
    
    b. If the previous step doesn't work, change **Tools > Global Options > Packages** in **R Studio**, and enable the checkbox for **Use Internet Explorer library/proxy for HTTP**, then repeat step 3.b. from the above steps.
 
-### More Information
+### Next steps
 Take a look at the following additional information about R in Power BI.
 
 * [Power BI custom visuals gallery](https://app.powerbi.com/visuals/)

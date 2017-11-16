@@ -45,7 +45,7 @@ Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powe
    
     ![](media/service-connect-to-servicenow/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -63,7 +63,7 @@ If you're hitting a credential error during load, please review the access requi
 
 If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

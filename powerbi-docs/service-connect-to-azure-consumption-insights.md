@@ -45,7 +45,7 @@ Connect to the [Microsoft Azure Consumption Insights content pack](https://app.p
    
    ![](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -83,7 +83,7 @@ Power BI reporting is available for EA Direct, Partner and Indirect Customers wh
 
 * For additional help setting up the Azure Enterprise Power BI Pack, log in to the Azure Enterprise Portal to view the API Help File under “Help” and additional instructions under Reports -> Download Usage -> API Access Key. 
 
-## See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

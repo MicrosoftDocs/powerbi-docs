@@ -101,7 +101,7 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 * **Windows Display settings:** If your display settings are set to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that must be closed or responded to in order to proceed using **Power BI Desktop**. If you encounter this issue, check your **Display settings** by going to **Settings > System > Display** in Windows, and use the slider to return display settings to 100%.
 * **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
 
-## More information
+## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

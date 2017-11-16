@@ -48,7 +48,7 @@ And that’s it!
 
 You’re now ready to use the imported data from your Excel workbook in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
 
-## More Information
+### Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

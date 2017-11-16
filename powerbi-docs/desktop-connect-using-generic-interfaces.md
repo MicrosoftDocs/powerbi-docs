@@ -109,7 +109,7 @@ The following list details a few examples of the data sources to which **Power B
 | R Script |SPSS Files |[R script guidance from CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 | R Script |R Statistical Files |[R script guidance from CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 
-## More Information
+## Next steps
 ﻿There are all sorts of data sources you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

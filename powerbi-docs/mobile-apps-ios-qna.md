@@ -127,7 +127,7 @@ You can improve the results you and your customers get when they use the Q&A vir
 ### How to enhance the dataset
 * Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](service-prepare-data-for-q-and-a.md).
 
-## See also
+## Next steps
 * [Q&A in the Power BI service](service-q-and-a.md)
 * Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)
 

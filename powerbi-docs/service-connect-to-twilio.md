@@ -42,7 +42,7 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
    
    ![](media/service-connect-to-twilio/pbi_twilio_db.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -96,7 +96,7 @@ A set of already aggregated stats that you may want to keep an eye on. This set 
 ## Troubleshooting
 If you have a very large amount of data in the past 30 days (hundreds of thousands of transactions), the data retrieval step might fail. We are aware of the problem and working on solving it. Meanwhile, if you hit this issue please use the support link at the top of your Power BI page to let us know and we'll contact you for further investigations.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

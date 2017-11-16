@@ -215,7 +215,7 @@ You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for y
 
 If the sign in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
 
-## See also
+## Next steps
 [Register a Service Principal Name (SPN) for a Report Server](https://msdn.microsoft.com/library/cc281382.aspx)  
 [Modify a Reporting Services Configuration File](https://msdn.microsoft.com/library/bb630448.aspx)  
 [Configure Windows Authentication on a Report Server](https://msdn.microsoft.com/library/cc281253.aspx)  

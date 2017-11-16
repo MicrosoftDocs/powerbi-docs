@@ -115,7 +115,7 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 
 [Next Step >](walkthrough-push-data-register-app-with-azure-ad.md)
 
-## See also
+## Next steps
 [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
 [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  

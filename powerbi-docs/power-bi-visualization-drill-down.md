@@ -35,12 +35,13 @@ Dates are an unique type of hierarchy. When you add a date field to a visualizat
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-> **NOTE**: To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU)
+> [!NOTE]
+> To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU)
 > 
 > 
 
-## 2 methods to drill down
-There are 2 different way to drill down (and up) in your visualization.  Both are described in this article. Both methods accomplish the same thing, so use whichever one you enjoy most.
+## Two methods to drill down
+There are two different way to drill down (and up) in your visualization.  Both are described in this article. Both methods accomplish the same thing, so use whichever one you enjoy most.
 
 > [!NOTE]
 > To follow along, [open the Retail Analysis sample](sample-datasets.md) in Power BI service and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
@@ -95,7 +96,7 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
   
   ![](media/power-bi-visualization-drill-down/power-bi-change-data-type2.png)
 
-### See also
+## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI reports](service-reports.md)

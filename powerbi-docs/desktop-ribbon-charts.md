@@ -44,7 +44,7 @@ These formatting options for ribbon charts let you adjust the following:
 * **Transparency** specifies how transparent the ribbons are, with the default set to 30.
 * **Border** lets you place a dark border on the top and bottom of the ribbons. By default, borders are off.
 
-## More information
+## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

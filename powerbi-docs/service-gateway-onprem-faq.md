@@ -72,7 +72,7 @@ ms.author: davidi
 **Question:** Will the gateway work with ExpressRoute?  
 **Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
 
-## See also
+## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  

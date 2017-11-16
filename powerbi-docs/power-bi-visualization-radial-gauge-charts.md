@@ -105,7 +105,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 6. Optionally, continue formatting your gauge chart.
 
-## See also
+## Next steps
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)

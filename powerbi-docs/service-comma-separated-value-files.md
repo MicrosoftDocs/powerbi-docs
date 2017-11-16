@@ -27,7 +27,8 @@ Comma separated value files, often known as a .CSV, are simple text files with r
 
 If you have a .CSV, it’s time to get it into your Power BI site as a dataset where you can begin exploring your data, create some dashboards, and share your insights with others.
 
-**Tip:** Many organizations output a .CSV with updated data each day. To make sure your dataset in Power BI stays in-sync with your updated file, be sure the file is saved to OneDrive with the same name.
+>[!TIP]
+>Many organizations output a .CSV with updated data each day. To make sure your dataset in Power BI stays in-sync with your updated file, be sure the file is saved to OneDrive with the same name.
 
 ## Where your file is saved makes a difference
 **Local** - If you save your .CSV file to a local drive on your computer or another location in your organization, from Power BI you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data from the .CSV file is loaded into the dataset.
@@ -39,7 +40,8 @@ If you have a .CSV, it’s time to get it into your Power BI site as a dataset w
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 ## Import or connect to a .CSV file
-**Important:** The maximum file size you can import into Power BI is 1 gigabyte.
+>[!IMPORTANT]
+>The maximum file size you can import into Power BI is 1 gigabyte.
 
 1. In Power BI, in the navigator pane, click **Get Data**.
    
@@ -51,7 +53,7 @@ If you have a .CSV, it’s time to get it into your Power BI site as a dataset w
    
    ![](media/service-comma-separated-value-files/csv_find_your_file.png)
 
-## What's next?
+## Next steps
 **Explore your data** - Once you get data from your file into Power BI, it's time to explore. Just right-click the new dataset and then click **Explore**.
 
 **Schedule refresh** - If your file is saved to a local drive, you can setup scheduled refresh so your dataset and reports in Power BI stay up-to-date. To learn more, see [Data refresh in Power BI](refresh-data.md). If your file is saved to OneDrive, Power BI will automatically synchronize with it about every hour.

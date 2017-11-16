@@ -74,7 +74,7 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](service-reports-visual-interactions.md)
 
-## See also
+## Next steps
 [Reports in Power BI](service-reports.md)  
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)  
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

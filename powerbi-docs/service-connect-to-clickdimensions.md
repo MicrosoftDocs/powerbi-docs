@@ -45,7 +45,7 @@ Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/se
    
      ![](media/service-connect-to-clickdimensions/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -66,7 +66,7 @@ Copy the Power BI Token from within ClickDimensions Settings and paste it into t
 
 ![](media/service-connect-to-clickdimensions/crm2.png)  
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

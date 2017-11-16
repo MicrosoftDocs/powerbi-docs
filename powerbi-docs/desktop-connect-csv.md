@@ -47,7 +47,7 @@ That’s all you have to do – the data from your CSV file is now in Power BI D
 
 You can use that data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
 
-## More Information
+### Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
