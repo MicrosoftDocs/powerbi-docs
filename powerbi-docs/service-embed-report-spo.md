@@ -34,7 +34,7 @@ There are a few requirements in order for **Embed in SharePoint Online** reports
 
 ## Embed your report
 
-In order to embed your report into SharePoint Online, you will first need to get the URL for the report and then use that URL with the new Power BI (Preview) web part within SharePoint Online.
+In order to embed your report into SharePoint Online, you will first need to get the URL for the report and then use that URL with the new Power BI web part within SharePoint Online.
 
 ### Get a URL to your report
 
@@ -63,7 +63,7 @@ In order to embed your report into SharePoint Online, you will first need to get
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Select **+** and select the **Power BI (Preview)** web part.
+2. Select **+** and select the **Power BI** web part.
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
@@ -149,7 +149,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
 
-* When adding the Power BI (preview) web part, you are asked to sign-in but aren't able to do so. In this situation, you see an error message similar to one of the following:
+* When adding the Power BI web part, you are asked to sign-in but aren't able to do so. In this situation, you see an error message similar to one of the following:
   
   * *We need you to sign in again. Once you do, we'll bring you back here.*
 
