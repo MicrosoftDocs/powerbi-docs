@@ -25,7 +25,7 @@ With **Power BI Desktop**, you can use your external R IDE (Integrated Developme
 
 ![](media/desktop-r-ide/r-ide_1a.png)
 
-### Enabling an external R IDE
+## Enable an external R IDE
 Previously, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
 
 Beginning with the September 2016 release of **Power BI Desktop** (version 2.39.4526.362), you can specify which R IDE you would like to use, and have it launch automatically from within **Power BI Desktop**.
@@ -48,7 +48,7 @@ By default, **Power BI Desktop** will launch **R Studio** as the external R IDE 
 
 And if no **.R** file association exists, it's possible to specify a path to a custom IDE in the *Browse to your preferred R IDE* section of the **Options** dialog. You can also launch a different R IDE by selecting the **Settings** gear icon beside the **Launch R IDE** arrow icon, in **Power BI Desktop**.
 
-### Launching an R IDE from Power BI Desktop
+## Launch an R IDE from Power BI Desktop
 To launch an R IDE from **Power BI Desktop**, take the following steps.
 
 1. Load data into **Power BI Desktop**.
@@ -63,7 +63,7 @@ To launch an R IDE from **Power BI Desktop**, take the following steps.
    ![](media/desktop-r-ide/r-ide_5.png)
    
    > [!NOTE]
-> The default aggregation type for R visuals is *do not summarize*.
+   > The default aggregation type for R visuals is *do not summarize*.
    > 
    > 
 5. You can now launch your R IDE directly from **Power BI Desktop**. Select the **Launch R IDE** button, found on the right side of the **R script editor** title bar, as shown below.
@@ -74,18 +74,18 @@ To launch an R IDE from **Power BI Desktop**, take the following steps.
    ![](media/desktop-r-ide/r-ide_7.png)
    
    > [!NOTE]
-> **Power BI Desktop** adds the first three lines of the script so it can import your data from **Power BI Desktop** once you run the script.
+   > **Power BI Desktop** adds the first three lines of the script so it can import your data from **Power BI Desktop** once you run the script.
    > 
    > 
 7. Any script you created in the **R script editor pane** of **Power BI Desktop** appears starting in line 4 in your R IDE. At this point you can create your R script in the R IDE. Once your R script is complete in your R IDE, you need to copy and paste it back into the **R script editor** pane in **Power BI Desktop**, *excluding* the first three lines of the script that **Power BI Desktop** automatically generated. Do not copy the first three lines of script back into **Power BI Desktop**, those lines were only used to import your data to your R IDE from **Power BI Desktop**.
 
-### Known Limitations
+### Known limitations
 Launching an R IDE directly from Power BI Desktop has a few limitations:
 
 * Automatically exporting your script from your R IDE into **Power BI Desktop** is not supported.
 * **R Client** editor (RGui.exe) is not supported, because the editor itself does not support opening files.
 
-### Next steps
+## Next steps
 Take a look at the following additional information about R in Power BI.
 
 * [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)

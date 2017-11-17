@@ -29,7 +29,7 @@ To use R-powered custom visuals, you first select and download the R custom visu
 
 The following sections describe how to select, load, and use R-powered visuals in **Power BI Desktop**.
 
-### Using R custom visuals
+## Use R custom visuals
 To use R-powered custom visuals, you need to download each visual from the **custom visuals** library, then you can use the visual like any other type of visual in **Power BI Desktop**. Here are the steps:
 
 1. Navigate to the [custom visuals](http://app.powerbi.com/visuals) library, found at [http://app.powerbi.com/visuals](http://app.powerbi.com/visuals). Select the *R-powered visuals* link, near the top of the page.
@@ -72,12 +72,12 @@ Like any other **Power BI Desktop** visual, you can publish this report with its
 
 Check the [R-powered custom visuals](https://app.powerbi.com/visuals/R-powered) library often, since new visuals are being added all the time.
 
-### Contributing R-powered custom visuals
+## Contribute R-powered custom visuals
 If you create your own R visuals for use in your reports, you can share those visual with the world by contributing your custom visual to the **custom visuals gallery**. Contributions are made through GitHub, and the process is outlined in the following location:
 
 * [Contributing to the R-powered custom visuals gallery](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-### Troubleshooting R-powered custom visuals
+## Troubleshoot R-powered custom visuals
 R-powered custom visuals have certain dependencies that must be met for the visuals to work properly. When R-powered custom visuals don't run or load properly, the problem is usually one of the following:
 
 * The R engine is missing
@@ -86,7 +86,7 @@ R-powered custom visuals have certain dependencies that must be met for the visu
 
 The following section describes troubleshooting steps you can take to help address trouble you run into.
 
-#### Missing or outdated R packages
+### Missing or outdated R packages
 When attempting to install an R-powered custom visual, you can run into errors when there are missing or outdated R packages; this is usually due to one of the following reasons:
 
 * The R installation is incompatible with the R package,
@@ -124,7 +124,7 @@ The Power BI team is actively working on mitigating these issues before they rea
    
    b. If the previous step doesn't work, change **Tools > Global Options > Packages** in **R Studio**, and enable the checkbox for **Use Internet Explorer library/proxy for HTTP**, then repeat step 3.b. from the above steps.
 
-### Next steps
+## Next steps
 Take a look at the following additional information about R in Power BI.
 
 * [Power BI custom visuals gallery](https://app.powerbi.com/visuals/)

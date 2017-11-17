@@ -20,7 +20,7 @@ ms.date: 09/06/2017
 ms.author: davidi
 
 ---
-# High Density Sampling in Power BI scatter charts
+# High density sampling in Power BI scatter charts
 Beginning with the September 2017 release of the **Power BI Desktop** and updates to the **Power BI service**, a new sampling algorithm is available that improves how scatter charts represent high density data.
 
 For example, you might create a scatter chart from your organization's sales activity, each store having tens of thousands of data points each year. A scatter chart of such information would sample data (select a meaningful representation of that data, to illustrate how sales occurred over time) from the available data, and create a scatter chart that represents the underlying data. This is common practice in high density scatter charts, and Power BI has improved its sampling of high density data, the details of which are described in this article.
@@ -70,7 +70,7 @@ There are circumstances under which **High Density Sampling** cannot be applied 
   
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
-## How to turn on **High Density Sampling** for a scatter chart
+## How to turn on high density sampling for a scatter chart
 To turn on **High Density Sampling**, select a scatter chart and then go to the **Formatting** pane, and expand the **General** card. Near the bottom of that card, a toggle slider called **High Density Sampling** is available. To turn it on, slide it to **On**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)

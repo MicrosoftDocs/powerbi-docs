@@ -23,14 +23,14 @@ ms.author: davidi
 # Common query tasks in Power BI Desktop
 When working in the **Query Editor** window of Power BI Desktop, there are a handful of commonly used tasks. This document demonstrates those common tasks, and provides links for additional information. 
 
-The common Query tasks demonstrated here are the following:
+The common query tasks demonstrated here are the following:
 
-* Connect to Data
-* Shape and Combine Data
-* Group Rows
-* Pivot Columns
-* Create Custom Columns
-* Query Formulas
+* Connect to data
+* Shape and combine data
+* Group rows
+* Pivot columns
+* Create custom columns
+* Query formulas
 
 We’ll use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
 
@@ -40,7 +40,7 @@ The first data connection is an Excel workbook. The other is a Web resource (whi
 
 The steps necessary to connect to both of those data sources is where the common Query tasks begin.
 
-## Connect to Data
+## Connect to data
 To connect to data in Power BI Desktop, select the **Get Data** button from the **Home** tab on the ribbon. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select the **More...** button at the bottom of the menu. For more information, see [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
@@ -65,7 +65,7 @@ Other data connections are similar. If authentication is required to make a data
 
 For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
 
-## Shape and Combine Data
+## Shape and combine data
 You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **﻿**[Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644).
 
 In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
@@ -80,7 +80,7 @@ In **Query Editor**, many commands can be found in the ribbon, and in a context-
 
 There are many other ways I could shape the data in this query; I could remove any number of rows from the top, or from the bottom; I could add columns, split columns, replace values, and perform other shaping tasks to direct Query Editor to get the data how I want it.
 
-## Group Rows
+## Group rows
 In Query Editor, you can group the values in multiple rows into a single value. This can be useful when summarizing the number of products offered, the total sales, or the count of students.
 
 In this example, we group rows in an education enrollment data set. The data is from an Excel workbook, and has been shaped in Query Editor to get just the columns we need, renamed the table, and performed a few other transforms.
@@ -104,7 +104,7 @@ When we select **OK**, Query performs the **Group By** operation, and returns th
 
 And with Query Editor, you can always remove the last shaping operation by selecting the **X** next to the step just completed. So go ahead and experiment, redo the step if you don’t like the results, until Query Editor shapes your data just the way you want it.
 
-## Pivot Columns
+## Pivot columns
 With Power BI Desktop, you can pivot columns, and create a table that contains aggregated values for each unique value in a column. For example, if you need to know how many different products you have in each product category, you can quickly create a table the does precisely that.
 
 Let’s look at an example. The following **Products** table has been shaped to only show each unique product (by name), and which category each product falls under. To create a new table that shows a count of products for each category (based on the *CategoryName* column), select the column, then select **Pivot Column** from the **Transform** tab on the ribbon.
@@ -119,7 +119,7 @@ When you select **OK**, Query displays the table according to the transform inst
 
 ![](media/desktop-common-query-tasks/pivotcolumns_pivotcomplete.png)
 
-## Create Custom Columns
+## Create custom columns
 In Query Editor you can create custom formulas that operate on multiple columns in your table, then place the results of such formulas into a new (custom) column. Query Editor makes it easy to create custom columns.
 
 In Query Editor, select **Add Custom Column** from the **Add Column** tab on the ribbon.
@@ -134,7 +134,7 @@ Like any other applied step in Query Editor, if the new custom column doesn’t 
 
 ![](media/desktop-common-query-tasks/customcolumn_addedappliedstep.png)
 
-## Query Formulas
+## Query formulas
 You can edit the steps that Query Editor generates, and you can create custom formulas to get precise control over connecting to and shaping your data. Whenever Query Editor performs an action on data, the formula associated with the action is displayed in the **Formula Bar**. To view the **Formula Bar**, select the checkbox next to **Formula Bar** in the **View** tab of the ribbon.
 
 ![](media/desktop-common-query-tasks/queryformulas_formulabar.png)

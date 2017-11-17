@@ -23,10 +23,10 @@ ms.author: davidi
 # On-premises data gateway
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
 
-You can use a single gateway with different services at the same time. If you are using Power BI, as well as PowerApps, a single gateway and be used for both. It is dependent on the account you sign in with.
+You can use a single gateway with different services at the same time. If you are using Power BI as well as PowerApps, a single gateway can be used for both. It is dependent on the account you sign in with.
 
 > [!NOTE]
-> The On-premises data gateway implements data compression, and transport encryption, in all modes.
+> The on-premises data gateway implements data compression, and transport encryption, in all modes.
 > 
 > 
 
@@ -48,8 +48,8 @@ You can use a live connection against tabular or multidimensional instances.
 <!-- Shared Install steps Include -->
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
-## Download and install the On-premises data gateway
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+## Download and install the on-premises data gateway
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [on-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 

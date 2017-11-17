@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Retail Analysis sample for Power BI: Take a tour
-## About the Retail Analysis sample
+
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529778).
@@ -93,7 +93,7 @@ Now let's explore on a more detailed level, looking at the districts' performanc
    Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
 4. Select the bubble again to clear the filter.
 
-## Try out the Slicer
+## Try out the slicer
 Let’s look at how specific districts are doing.
 
 1. Select Allan Guinot in the slicer on the top left.
@@ -131,7 +131,7 @@ The last area we want to explore is our growth – new stores opened this year.
 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to Get Data for a new copy of this sample.
 
-## Next steps: Connect to your data
+## Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 
 ## Next steps

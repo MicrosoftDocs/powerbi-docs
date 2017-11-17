@@ -53,7 +53,7 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
        output$completedValues <- completedData$"SMI missing values"
    
    > [!NOTE]
-> You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation:
+   > You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation:
    > |      > install.packages('mice')
    > 
    > 
@@ -70,7 +70,6 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
    
    Once we do so, we see a new column in the **Fields** well called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. We'll see how R handles that in the next section.
    
-   Notice
 
 With just five lines of R script, **Query Editor** filled in the missing values with a predictive model.
 

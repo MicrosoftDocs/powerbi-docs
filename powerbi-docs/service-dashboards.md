@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Dashboards in Power BI service
-## What is a dashboard?
+
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
 ![](media/service-dashboards/power-bi-dashboard2.png)
@@ -61,7 +61,7 @@ A dashboard isn't just a pretty picture; it's highly interactive and highly cust
 | Can create visualizations |Limited to adding widgets to dashboard using "Add tile" |Can create many different types of visuals, add custom visuals, edit visuals and more with Editing permissions |
 | Customization |Can do things with the visualizations (tiles) like move and arrange, resize, add links, rename, delete, and display full screen. But the data and visualizations themselves are read-only. |In Reading view you can publish, embed, filter,export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  In Editing view you can do everything mentioned so far and so much more. |
 
-## Dashboard ***creators*** and dashboard ***consumers***
+## Dashboard creators and dashboard consumers
 Depending on your role, you may be someone who creates dashboards for your own use or to share with colleagues. You want to learn how to create and share dashboards. Or, you may be someone who receives dashboards from others. You want to learn how to understand and interact with the dashboard.
 
 Here are some topics, by role, to help you get started.
