@@ -28,11 +28,11 @@ ms.author: asaxton
 
 ### What is Power BI Embedded?
 
-Microsoft Power BI Embedded allows application developers to embed stunning, fully interactive reports and dashboards into applications without the time and expense of building their own data visualizations and controls from the ground-up.
+Microsoft Power BI Embedded allows application developers to embed stunning, fully interactive reports, dashboards and tiles into applications without the time and expense of building their own data visualizations and controls from the ground-up.
 
 ### Who is the target audience for Power BI Embedded?
 
-Developers and ISVs.
+Developers and software companies making their own applications referred to as independent software vendors (ISVs).
 
 ### How is Power BI Embedded different from Power BI the service?
 
@@ -44,7 +44,7 @@ Power BI, on the other hand, is a software-as-a-service analytics solution that 
 
 Power BI Premium is capacity geared toward enterprises, who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product and comes with the ability for users to consume content through the Power BI portal, mobile app, and through internally developed apps.
 
-Power BI Embedded is for ISVs or developers who are building applications and want to embed visuals into those applications. Power BI Embedded helps your customers make decisions Because Power BI Embedded is for application developers, only customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. Power BI Embedded capacity content cannot be shared through one-click publish to Web or one-click publish to SharePoint, and it does not support SSRS reports.
+Power BI Embedded is for ISVs or developers who are building applications and want to embed visuals into those applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. Power BI Embedded capacity content cannot be shared through one-click publish to Web or one-click publish to SharePoint, and it does not support SSRS reports.
 
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs Power BI Embedded?
 
@@ -94,7 +94,7 @@ While there is no automated scaling now, all the APIs are available to scale at 
 
 ### What is the authentication model for Power BI Embedded?
 
-Power BI Embedded will continue to use Azure AD for authentication of the app user (Power BI Pro license user), authenticating the application inside Power BI.
+Power BI Embedded will continue to use Azure AD for authentication of the master user (a designated Power BI Pro licensed user), authenticating the application inside Power BI.
 
 The authentication and authorization of the application users will be implemented by the ISV, the ISV can implement their own authentication for their applications.
 
