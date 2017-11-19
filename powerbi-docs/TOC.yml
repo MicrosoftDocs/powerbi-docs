@@ -1115,7 +1115,7 @@
 - name: Resources
   items: 
   - name: "Power BI videos"
-      href: videos.md
+    href: videos.md
   - name: "Power BI webinars"
     href: webinars.md
   - name: "Whitepapers"
