@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/17/2017
+ms.date: 11/19/2017
 ms.author: asaxton
 ---
 # Embed with report web part in SharePoint Online
@@ -94,8 +94,6 @@ Alternatively, you can grant users access to your report by doing the following.
 
 2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](service-share-dashboards.md).
 
-    If you share a dashboard to a security group, users will need to sign into Power BI at least once for the user to have access to the report.
-
 ## Allowing Free users access to reports
 
 Free users can view reports that are embedded with the Power BI web part for SharePoint Online. You provide access to free users in the same way you do Pro users as described in [Granting access to reports](#granting-access-to-reports) above. The workspace, where the report is located, also has to be backed by Power BI Premium capacity. 
@@ -139,8 +137,6 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 ## Known issues and limitations
 
-* The Power BI web part for SharePoint Online does not support screen readers or keyboard navigation.
-
 * **Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"**
   
   If you receive this error, please try one of the following.
@@ -149,21 +145,12 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
 
-* When adding the Power BI web part, you are asked to sign-in but aren't able to do so. In this situation, you see an error message similar to one of the following:
-  
-  * *We need you to sign in again. Once you do, we'll bring you back here.*
-
-  * *An error occurred, please try logging out and back in and then revisiting this page.*
-  
-  To resolve this issue, ensure your tenant is set to *First release for everyone* as described in the **Requirements** section earlier in this article. To enable Single Sign On (SSO), the Power BI web part relies on *Authentication APIs* that are provided by SharePoint, which are only available when *First release for everyone* is selected.
-
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
 * You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 ## Next steps
 
-[Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)  
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
