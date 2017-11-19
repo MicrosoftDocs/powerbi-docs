@@ -12,10 +12,6 @@
       href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
-    - name: "Power BI videos"
-      href: videos.md
-    - name: "Power BI webinars"
-      href: webinars.md
     - name: "The new Power BI navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
@@ -1106,6 +1102,8 @@
       href: report-server/quickstart-embed.md
   - name: Reference
     items: 
+    - name: "REST API"
+      href: report-server/rest-api.md
     - name: "WMI"
       href: https://go.microsoft.com/fwlink/?linkid=848719
     - name: "SOAP APIs"
@@ -1116,5 +1114,9 @@
       href: https://go.microsoft.com/fwlink/?linkid=848723
 - name: Resources
   items: 
+  - name: "Power BI videos"
+    href: videos.md
+  - name: "Power BI webinars"
+    href: webinars.md
   - name: "Whitepapers"
     href: whitepapers.md
