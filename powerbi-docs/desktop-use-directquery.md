@@ -93,7 +93,7 @@ Until credentials are supplied, opening a published report or exploring a datase
 
 For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-Premises Data Gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-Premises Data Gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
-## More Information
+## Next steps
 For more information about **DirectQuery**, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)

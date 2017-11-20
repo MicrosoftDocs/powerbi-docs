@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Exploring Data
+title: Exploring data
 metadata:
-  title: Exploring Data | Microsoft Power BI
-  description: TODO
+  title: Exploring data | Microsoft Power BI
+  description: Learn how to find, connect to, and interact with data in Power BI.
   audience: Business User
   level: Beginner
   nextTutorialHref: powerbiandexcel
@@ -18,38 +18,38 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Learn how to find, connect to, and interact with data in Power BI.
-- title: Introduction to the Power BI Service
+    Learn how to find, connect to, and interact with data in Power BI.
+- title: Introduction to the Power BI service
   durationInMinutes: 2
   content: |
     > [!Video https://www.youtube.com/embed/B2vd4MQrz4M?rel=0]
 
     [!INCLUDE [](includes/4-0-intro-power-bi-service.md)]
-- title: Quick Insights in Power BI
+- title: Quick insights in Power BI
   durationInMinutes: 5
   content: |
     > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
 
     [!INCLUDE [](includes/4-1a-quick-insights.md)]
-- title: Create and Configure a Dashboard
+- title: Create and configure a dashboard
   durationInMinutes: 6
   content: |
     > [!Video https://www.youtube.com/embed/lJKgWnvl6bQ?rel=0]
 
     [!INCLUDE [](includes/4-2-create-configure-dashboards.md)]
-- title: Ask Questions of Your Data With Natural Language
+- title: Ask questions of your data with natural language
   durationInMinutes: 9
   content: |
     > [!Video https://www.youtube.com/embed/qMf7OLJfCz8?rel=0]
 
     [!INCLUDE [](includes/4-3-asking-questions-natural-language.md)]
-- title: Create Custom Q & A Suggestions
+- title: Create custom Q&A suggestions
   durationInMinutes: 4
   content: |
     > [!Video https://www.youtube.com/embed/E1mIAyEXuF4?rel=0]
 
     [!INCLUDE [](includes/4-3a-suggested-questions.md)]
-- title: Share Dashboards with your organization
+- title: Share dashboards with your organization
   durationInMinutes: 7
   content: |
     > [!Video https://www.youtube.com/embed/0tUwn8DHo3s?rel=0]
@@ -73,11 +73,11 @@ items:
     > [!Video https://www.youtube.com/embed/c31gZkyvC54?rel=0]
 
     [!INCLUDE [](includes/4-4e-get-more-dashboard-space.md)]
-- title: Install and configure a Personal Gateway
+- title: Install and configure a personal gateway
   durationInMinutes: 11
   content: |
     > [!Video https://www.youtube.com/embed/xjcO5tNvjGs?rel=0]
 
     [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
 - content: |
-    You've completed the **Exploring Data** section of Microsoft Power BI Guided Learning.
+    You've completed the **Exploring data** section of Microsoft Power BI Guided learning.

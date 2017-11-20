@@ -13,7 +13,7 @@ If you're a **beginner** with Power BI this course will get you going, and if yo
 
 **Power BI** can be simple and fast – capable of creating quick insights from an Excel spreadsheet or a local database. But **Power BI** is also robust and enterprise-grade, ready for extensive modeling and real-time analytics, as well as custom development. So it can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
 
-## The Parts of Power BI
+## The parts of Power BI
 Power BI consists of a Windows desktop application called **Power BI Desktop**, an online SaaS (*Software as a Service*) service called the **Power BI service**, and mobile Power BI **apps** available on Windows phones and tablets, as well as for iOS and Android devices.
 
 ![](media/0-0-what-is-power-bi/c0a0_2.png)
@@ -31,7 +31,7 @@ Perhaps you view inventory and manufacturing progress in a real-time dashboard i
 
 We discuss these three elements – the **Desktop**, **service**, and **Mobile** apps – with more detail a little later in this **Guided Learning** course. We’ll also create reports in Power BI Desktop, share them in the service, and drill into them on our Mobile device in upcoming articles, too.
 
-## The Flow of Work in Power BI
+## The flow of work in Power BI
 A common flow of work in Power BI begins in **Power BI Desktop**, where a report is created. That report is then published to the Power BI **service**, and then shared so users of **Power BI Mobile** apps can consume the information.
 
 It doesn’t always happen that way, and that’s okay, but we’ll use that flow to help you learn the various parts of Power BI, and how they complement one another.

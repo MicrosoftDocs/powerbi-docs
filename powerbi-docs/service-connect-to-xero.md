@@ -47,7 +47,7 @@ Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero
    
      ![](media/service-connect-to-xero/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -100,7 +100,7 @@ Provide a name for your organisation to track in Power BI. This allows you to co
 
 For other issues, please file a ticket at http://support.powerbi.com if the issue persists.
 
-### See also
+## Next steps
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)

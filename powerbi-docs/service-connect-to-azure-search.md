@@ -45,7 +45,7 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
    
     ![](media/service-connect-to-azure-search/dashboard2.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -58,7 +58,7 @@ The Azure Search content pack requires Azure Search Traffic Analytics to be enab
 ## Troubleshooting
 Ensure the storage account name is correctly provided along with the full access key. The storage account name should correspond to the account configured with Azure Search Traffic Analytics.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

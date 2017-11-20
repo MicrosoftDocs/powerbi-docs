@@ -44,7 +44,8 @@ Take the following steps to create a **Shape Map**:
 
 1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Values** bucket (you won't see a map yet).
    
-   > **Note:** See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
+   > [!NOTE]
+> See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
    > 
    > 
    
@@ -53,7 +54,8 @@ Take the following steps to create a **Shape Map**:
    
    ![](media/desktop-shape-map/shape-map_3b.png)
    
-   > **Note:** In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+   > [!NOTE]
+> In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
 3. You can then modify the map projection and zooming settings, as well as the colors of data points, from the **Format** settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
@@ -61,14 +63,14 @@ Take the following steps to create a **Shape Map**:
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. You can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
-## Use Custom Maps
+## Use custom maps
 You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Values* buckets. Then, in the **Visualizations** pane with the **Format** section selected (the paintbrush icon, shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
 
-## Getting Map Data
+## Getting map data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
 
 ![](media/desktop-shape-map/shape-map_4.png)
@@ -79,20 +81,21 @@ You can then paste the table into Power BI Desktop. The top row is automatically
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 
-> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+> [!NOTE]
+> When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 > 
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 > 
 > 
 
-## Preview Behavior and Requirements
+## Preview behavior and requirements
 There are a few considerations and requirements for this Preview release of **Shape Map**:
 
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox.
 * Currently, you must also have the **Values** bucket set in order for the **Legend** classification to work properly. We anticipate improving this behavior in the final release of **Shape Map**.
 * The release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map; in this Preview, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
 
-## Region Keys
+## Region keys
 Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Australia: States

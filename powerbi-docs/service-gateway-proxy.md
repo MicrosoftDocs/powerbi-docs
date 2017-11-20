@@ -47,7 +47,8 @@ The second is for the actual windows service that interacts with the Power BI se
     C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
 
 ### Power BI Gateway - Personal
-> **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> [!NOTE]
+> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -117,7 +118,7 @@ When configuring the proxy settings to use default credentials, as explained abo
    
     This will allow the new service account to be able to decrypt stored credentials for data sources.
 
-## See also
+## Next steps
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 [Firewall information](service-gateway-onprem-tshoot.md#firewall-or-proxy)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

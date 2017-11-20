@@ -67,7 +67,7 @@ You can also create a custom column (and modify any step of your query, for that
 
 The **Advanced Editor** gives you full control over your query.
 
-## More information
+## Next steps
 There are other ways to create a custom column, including creating a column based on examples you provide to **Query Editor**. See the following article for more information on creating custom columns from examples:
 
 * [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md)

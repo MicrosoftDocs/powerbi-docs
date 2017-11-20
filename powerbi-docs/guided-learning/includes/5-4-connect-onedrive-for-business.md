@@ -16,7 +16,7 @@ When you choose to import Excel data into Power BI, table data from your workboo
 
 Power BI will maintain the connection between it and the workbook file on your OneDrive for Business. If you make any changes to your workbook, when you save, those changes will be *automatically synchronized** with Power BI, usually within an hour. If your workbook connects to external data sources, you can setup scheduled refresh so the dataset in Power BI is kept up-to-date. Because visualizations in reports and dashboard in Power BI will use the data from the dataset, as you explore, your queries are lightning fast.
 
-### Connect, Manage and View Excel in Power BI
+### Connect, manage and view Excel in Power BI
 When you choose to connect to the Excel workbook, you'll get a seamless experience of working with your workbook in Excel and Power BI. When you connect this way, the workbook's report has a small Excel icon next to it.
 
 ![](media/5-4-connect-onedrive-for-business/5-4_4.png)

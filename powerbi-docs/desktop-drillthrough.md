@@ -46,7 +46,8 @@ When your **drillthrough** page is complete, when users right-click on a data po
 
 When they choose to drillthrough, the page is filtered to show information about the data point from which they right-clicked. For example, if they right-clicked on a data point about Contoso (a manufacturer), and selected to drillthough, the drillthrough page they were taken to would be filtered to Contoso.
 
-> **Note:** Only the field that is in the **Drillthrough filters** well gets passed through to the drillthrough report page. No other contextual information is passed.
+> [!NOTE]
+> Only the field that is in the **Drillthrough filters** well gets passed through to the drillthrough report page. No other contextual information is passed.
 > 
 > 
 

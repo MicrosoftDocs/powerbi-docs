@@ -23,7 +23,7 @@ ms.author: asaxton
 # Azure SQL Data Warehouse with DirectQuery
 Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
 
-NOTES: When using the SQL Data Warehouse connector:
+When using the SQL Data Warehouse connector:
 
 * Specify the fully qualified server name when connecting (see below for details)
 * Ensure firewall rules for the server are configured to "Allow access to Azure services"
@@ -64,7 +64,8 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
    
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
    
-   > **Note**: The username will be a user that is defined in your Azure SQL Data Warehouse instance.
+   > [!NOTE]
+   > The username will be a user that is defined in your Azure SQL Data Warehouse instance.
    > 
    > 
 5. Drill into the dataset by selecting the new tile or the newly created dataset, indicated by the asterisk. This dataset will have the same name as your database.
@@ -79,7 +80,7 @@ Your fully qualified server name and database name can be found in the Azure Pre
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
-## See also
+## Next steps
 [Get started with Power BI](service-get-started.md)  
 [Get Data for Power BI](service-get-data.md)  
 [Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  

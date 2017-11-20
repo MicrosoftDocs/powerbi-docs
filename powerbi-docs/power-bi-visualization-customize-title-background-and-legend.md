@@ -116,7 +116,7 @@ With the same column chart selected, expand the Background options.
 | treemap |yes |yes |yes |
 | waterfall |yes |yes |yes |
 
-## See also
+## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)  
 [Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)  

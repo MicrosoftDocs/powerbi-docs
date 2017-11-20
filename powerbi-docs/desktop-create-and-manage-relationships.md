@@ -71,7 +71,8 @@ Once you have connected two tables together with a relationship, you can work wi
 
 Let’s do a little tutorial, to better show you how relationships work in Power BI Desktop.
 
-**Tip:** You can complete this lesson yourself. Copy the ProjectHours table below into an Excel worksheet, select all of the cells, click **INSERT** \> **Table**. In the **Create Table** dialog, just click **OK**. Then in **Table Name**, type **ProjectHours**. Do the same for the CompanyProject table. You can then import the data by using **Get Data** in Power BI Desktop. Select your workbook and tables as a data source.
+>[!TIP]
+>You can complete this lesson yourself. Copy the ProjectHours table below into an Excel worksheet, select all of the cells, click **INSERT** \> **Table**. In the **Create Table** dialog, just click **OK**. Then in **Table Name**, type **ProjectHours**. Do the same for the CompanyProject table. You can then import the data by using **Get Data** in Power BI Desktop. Select your workbook and tables as a data source.
 
 This first table, ProjectHours, is a record of work tickets that record the number of hours a person has worked on a particular project.  
 

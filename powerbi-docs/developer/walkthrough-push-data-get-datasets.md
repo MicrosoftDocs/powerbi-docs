@@ -268,7 +268,7 @@ Below is the [complete code listing](#code).
 
 [Next Step >](walkthrough-push-data-add-rows.md)
 
-## See also
+## Next steps
 [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  

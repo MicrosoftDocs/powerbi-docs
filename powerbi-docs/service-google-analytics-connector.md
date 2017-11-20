@@ -21,7 +21,8 @@ ms.author: davidi
 
 ---
 # Google Analytics connector for Power BI Desktop
-> **Note:** The Google Analytics content pack and the connector in Power BI Desktop rely on the Google Analytics Core Reporting API. As such, features and availability may vary over time.
+> [!NOTE]
+> The Google Analytics content pack and the connector in Power BI Desktop rely on the Google Analytics Core Reporting API. As such, features and availability may vary over time.
 > 
 > 
 

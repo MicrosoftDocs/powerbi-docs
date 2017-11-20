@@ -37,7 +37,8 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 ## Import or connect to a Power BI Desktop file from Power BI
-**Important:** The maximum file size you can import into Power BI is 1 gigabyte.
+>[!IMPORTANT]
+>The maximum file size you can import into Power BI is 1 gigabyte.
 
 1. In Power BI, in the navigator pane, click ** Get Data**.
    
@@ -61,7 +62,7 @@ Using Publish from Power BI Desktop is effectively the same as using Get Data in
    
    ![](media/service-desktop-files/pbid_publishing.png)
 
-## What's next
+## Next steps
 **Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. If your file already has reports in it, they'll appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new dataset and then click **Explore**.
 
 **Refresh external data sources** - If your Power BI Desktop file connects to external data sources, you can setup scheduled refresh to make sure your dataset is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.

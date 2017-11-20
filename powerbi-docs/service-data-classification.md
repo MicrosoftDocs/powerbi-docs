@@ -40,7 +40,8 @@ When you hover over the tag, you will see the full name of the classification.
 
 Admins can also set an URL for a tag to provide additional information.
 
-> **Note:** Depending the classification settings set by your admin, some classification types may not show as a tag on the dashboard. If you are a dashboard owner, you can always check your dashboard classification type under the dashboard settings.
+> [!NOTE]
+> Depending the classification settings set by your admin, some classification types may not show as a tag on the dashboard. If you are a dashboard owner, you can always check your dashboard classification type under the dashboard settings.
 > 
 > 
 
@@ -83,7 +84,8 @@ Once you fill in the form with your classification types, select **Apply** to sa
 
 At this point, all dashboards will be assigned the default classification, and dashboard owners will now be able to update the classification type to the one appropriate for her content. You can return here in the future to add or remove classification types or change the default.  
 
-> **Note:** There are a few important things to remember when you come back to make changes:
+> [!NOTE]
+> There are a few important things to remember when you come back to make changes:
 > 
 > * If you turn data classification off, none of the tags are remembered. You will need to start over if you decide to turn it back on later.  
 > * If you remove a classification type, any dashboards assigned the removed classification type will be assigned back to the default until the owner goes and sets it again.  

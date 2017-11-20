@@ -72,7 +72,7 @@ You can also allocate additional resources within the Azure portal under **Confi
 
 ![](media/spark-on-hdinsight-with-direct-connect/spark-scale.png)
 
-## See also
+## Next steps
 [Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
 [Get started with Power BI](service-get-started.md)  
 [Get Data for Power BI](service-get-data.md)  

@@ -3,11 +3,11 @@ documentType: Tutorial
 title: Power BI and Excel
 metadata:
   title: Power BI and Excel | Microsoft Power BI
-  description: TODO
+  description: Use Excel and Power BI together and create powerful, connected reports and visuals.
   audience: Business User
   level: Beginner
   nextTutorialHref: publishingandsharing
-  nextTutorialTitle: Publishing and Sharing
+  nextTutorialTitle: Publishing and sharing
   displayType: one-column
   author: davidiseminger
   manager: kfile
@@ -18,8 +18,8 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    TODO: Use Excel and Power BI together and create powerful, connected reports and visuals.
-- title: " Introduction to Using Excel Data in Power BI"
+    Use Excel and Power BI together and create powerful, connected reports and visuals.
+- title: Introduction to using Excel data in Power BI
   durationInMinutes: 2
   content: |
     > [!Video https://www.youtube.com/embed/TWVqSlkjVPw?rel=0]
@@ -50,4 +50,4 @@ items:
 
     [!INCLUDE [](includes/5-8-excel-data-summary.md)]
 - content: |
-    You've completed the **Power BI and Excel** section of Microsoft Power BI Guided Learning.
+    You've completed the **Power BI and Excel** section of Microsoft Power BI Guided learning.

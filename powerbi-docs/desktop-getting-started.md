@@ -33,14 +33,14 @@ With the combination of **Power BI Desktop** (where analysts and others can crea
 
 Data analysts will find Power BI Desktop a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
 
-## How to Use This Guide
+## How to use this guide
 You can use this guide in a couple of ways – scan it for a quick overview, or read through each section for a strong understanding of how Power BI Desktop works.
 
 If you’re in a hurry you can do a visual sweep of this guide in just a couple minutes, and come away with a good sense of how Power BI Desktop operates, and how to use it. Most of this guide consists of screens that visually show how Power BI Desktop works.
 
 For a more thorough understanding you can read through each section, perform the steps, and walk away with your own Power BI Desktop file that’s ready to post onto the **Power BI** service, and share with others.
 
-## How Power BI Desktop Works
+## How Power BI Desktop works
 With Power BI Desktop, you *connect to data* (usually multiple data sources), *shape that data* (with queries that build insightful, compelling data models), and use that model to *create reports* (which others can leverage, build upon, and share).
 
 When the steps are completed to your satisfaction – connect, shape, and report – you can save that work in Power BI Desktop file format, which is the .pbix extension. Power BI Desktop files can be shared like any other file, but the most compelling way to share Power BI Desktop files is to upload them (share them) on the [**Power BI service**](https://preview.powerbi.com/). 
@@ -49,7 +49,7 @@ Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be 
 
 Ready to give it a try? Let’s get started.
 
-## Install and Run Power BI Desktop
+## Install and run Power BI Desktop
 You can download Power BI Desktop from the **Power BI** service, by selecting the **gear** icon, then select **Power BI Desktop**.
 
 ![](media/desktop-getting-started/gsg_download.png)
@@ -74,7 +74,7 @@ The following screen shows the three view icons along the left of Power BI Deskt
 
 With Power BI Desktop installed you’re ready to connect to data, shape data, and build reports (usually in that order). In the next few sections, we take a tour through each in turn.
 
-## Connect to Data
+## Connect to data
 With Power BI Desktop installed, you’re ready to connect to the ever expanding world of data. There are *all sorts* of data sources available in the Query window. The following image shows how to connect to data, by selecting the **Home** ribbon, then **Get Data \> More**.
 
  ![](media/desktop-getting-started/getdatavidsmall.gif)
@@ -105,12 +105,12 @@ For more information about connecting to data, see [Connect to Data in Power BI 
 
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
-## Shape and Combine Data
+## Shape and combine data
 Now that we’ve connected to a data source, we need to adjust the data to meet our needs. Sometimes adjusting means *transforming* the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on.
 
 The Query editor in Power BI Desktop makes ample use of right-click menus, in addition to having tasks available on the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
 
-## Shape Data
+## Shape data
 When you shape data in the **Query Editor**, you’re providing step-by-step instructions (that **Query Editor** carries out for you) to adjust the data as **Query Editor** loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
 
 The steps you specify (such as rename a table, transform a data type, or delete columns) are recorded by **Query Editor**, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specify. This process occurs whenever you use the query in Power BI Desktop, or for anyone who uses your shared query, such as in the **Power BI** service. Those steps are captured, sequentially, in the **Query Settings** pane under **Applied Steps**.
@@ -147,7 +147,7 @@ We need to make a few more changes to get the query where we want it:
 
 Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
 
-## Combine Data
+## Combine data
 That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
 
 We’re in luck: there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. Here’s the Web resource for state abbreviations:
@@ -179,7 +179,8 @@ We select **Edit**, then:
 
 * *Use the first row as headers* – since we removed the top three rows, the current top row is the header we want.
 
-**Note:** This is a good time to point out that the *sequence* of applied steps in **Query Editor** is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the **Applied Steps**, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+    >[!NOTE]
+    >This is a good time to point out that the *sequence* of applied steps in **Query Editor** is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the **Applied Steps**, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
 
 * *Rename the columns, and the table itself* – as usual, there are a couple ways to rename a column, you can choose whichever you prefer.
 
@@ -203,7 +204,8 @@ A **NewColumn** is created at the end of the query, which is the contents of the
 
 In this case, we only want the *State Code* column, so we select only that column and then select **OK**. We clear the checkbox from **Use original column name as prefix** because we don’t need or want that; if we leave that selected, the merged column would be named *NewColumn.State Code* (the original column name, or *NewColumn*, then a dot, then the name of the column being brought into the query).
 
-**Note:** Want to play around with how to bring in that *NewColumn* table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
+>[!NOTE]
+>Want to play around with how to bring in that *NewColumn* table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
 We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
 
@@ -213,7 +215,7 @@ For now, we have enough data to create a few interesting reports, all within Pow
 
 ![](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-## Build Reports
+## Build reports
 Additional changes can be made after the table is loaded, and you can reload a model to apply any changes you make. But for now this will do. In Power BI Desktop **Report** view, you can begin to build reports.
 
 The **Report** view has five main areas:
@@ -261,7 +263,7 @@ Here’s what the cost of living-focused Report page looks like.
 
 There are all sorts of interesting reports and visualizations you can create.
 
-## Share Your Work
+## Share your work
 Now that we have a Power BI Desktop report that’s reasonably complete, we can share it with others on the **Power BI** service. There are a few ways to share your work in Power BI Desktop. You can publish to the **Power BI** service, you can upload the .pbix file directly from the Power BI service, or you can save the .pbix file and send it like any other file.
 
 First, let's look at publishing to the **Power BI** service directly from Power BI Desktop. On the **Home** ribbon, select **Publish**.
@@ -324,7 +326,7 @@ For more information about creating, sharing, and modifying dashboards, see [Sha
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)

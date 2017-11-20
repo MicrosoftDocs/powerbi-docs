@@ -33,7 +33,7 @@ Below are the common errors you may encounter with tiles along with an explanati
 or
 **Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible.**
 
-We weren't able to access your data because the data source wasn't reachable. This could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premise source, the data source owner may be able to provide more information.
+We weren't able to access your data because the data source wasn't reachable. This could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premises source, the data source owner may be able to provide more information.
 
 **You don’t have permission to view this tile or open the workbook.**
 
@@ -66,7 +66,7 @@ This is usually a transient issue. If you try again later and you still see this
 ## Contact support
 If you are still having an issue, please [contact support](https://support.powerbi.com) to investigate further.
 
-## See also
+## Next steps
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

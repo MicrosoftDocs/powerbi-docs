@@ -2,8 +2,8 @@ In previous topics we've looked at how you can use Power BI to connect to data s
 
 The system that lets you connect your on-premises data sources to the Power BI service is called the **Data Gateway**. It's a small application that runs on your computer, and uses a pre-arranged schedule to connect to your data, gather any updates, and push them up to the Power BI service. The **Personal Gateway** is a version of the **Data Gateway** that can be used without any administrator configuration.
 
-> Note: The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
-> 
+>[!NOTE]
+>The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
 > 
 
 To set up your **Personal Gateway**, first login to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Data Gateways** from the menu.
@@ -38,7 +38,7 @@ Finally, set the options under **Schedule Refresh** to activate automatic update
 
 And that's it. On the scheduled times, Power BI will go out to those data sources, using the credentials you provided and the connection to the computer that has your **Personal Gateway** running, and update the reports and datasets according to your schedule. The next time you go to Power BI, those dashboards, reports, and datasets will reflect data as of the most recent scheduled refresh.
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed this **Exploring Data** section of the **Guided Learning** course for Power BI. The Power BI service is full of interesting ways to explore data, share insights, and interact with visuals. And it's all accessible from a browser, from a service that you can connect to wherever you are.
 
 One powerful and well-known partner of Power BI is **Excel**. Power BI and Excel are designed to work well together; your workbooks will feel at home in Power BI, and it's easy to get them there.

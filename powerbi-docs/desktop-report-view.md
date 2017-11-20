@@ -44,7 +44,8 @@ To change the type of visualization, you can select it from the **Visualization*
 
 ![](media/desktop-report-view/pbid_reportview_changevis.gif)
 
-> **Tip:** Be sure to experiment with different visualization types. It’s important your visualization convey information in your data clearly.
+> [!TIP]
+> Be sure to experiment with different visualization types. It’s important your visualization convey information in your data clearly.
 > 
 > 
 
@@ -56,7 +57,8 @@ To delete a page, click the **X** on the page's tab at the bottom of the Report 
 
 ![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
-> **Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](desktop-upload-desktop-files.md) to your  Power BI site.
+> [!NOTE]
+> Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](desktop-upload-desktop-files.md) to your  Power BI site.
 > 
 > 
 

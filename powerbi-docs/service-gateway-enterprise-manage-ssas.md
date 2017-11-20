@@ -148,10 +148,11 @@ To perform on-premises AD property lookup to re-map AAD UPNs to Active Directory
 
 In the **Power BI service** the following occurs:
 
-1. For each query by a Power BI AAD user to an on-premises SSAS server, a UPN string is passed along, such as: 
+- For each query by a Power BI AAD user to an on-premises SSAS server, a UPN string is passed along, such as: 
        firstName.lastName@contoso.com
 
-> **Note:** Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* sending the user name string to the on-premises data gateway.
+> [!NOTE]
+> Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* sending the user name string to the on-premises data gateway.
 > 
 > 
 
@@ -249,7 +250,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 
 ![](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## See Also
+## Next steps
 [On-premises Data Gateway](service-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  

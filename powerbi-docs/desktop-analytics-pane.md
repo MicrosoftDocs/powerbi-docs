@@ -25,7 +25,8 @@ With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *refere
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
-> Note: The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
+> [!NOTE]
+> The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
 > 
 > 
 
@@ -111,7 +112,7 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 * Donut
 * Table
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [What's New in Power BI Desktop](desktop-latest-update.md)

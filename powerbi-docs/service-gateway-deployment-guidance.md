@@ -73,7 +73,8 @@ There are a few tools that you can use to monitor the use and performance of you
 #### Performance counters
 There are many performance counters that can be used to evaluate and assess activity occurring on the gateway. The counters can help you understand whether you have large volume of activities by the specific type, which may prompt you to deploy a new gateway.
 
-> **Note:** These counters will not capture specific task duration time.
+> [!NOTE]
+> These counters will not capture specific task duration time.
 > 
 > 
 
@@ -138,7 +139,7 @@ From there, you can select a gateway and see the list of gateway administrators.
 
 * Create an **AAD** security group and add other users to it, then add this security group to the list of the respective gateway administrators. This ensures that more than one person has access to the gateway in case of a failure, or when you need to recover or migrate the gateway. This also gives other administrators a view of what gateways are being used in their groups, and which data sources exist on each gateway.
 
-## See also
+## Next steps
 [Configuring proxy settings](service-gateway-proxy.md)  
 [Troubleshooting the on-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 [On-premises data gateway FAQ](service-gateway-onprem-faq.md)  

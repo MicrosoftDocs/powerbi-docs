@@ -63,7 +63,7 @@ Here’s how **Query Editor** appears once a data connection is established:
 
 We’ll look at each of these four areas – the ribbon, the queries pane, the data view, and the Query Settings pane – in the following sections.
 
-## The Query Ribbon
+## The query ribbon
 The ribbon in **Query Editor** consists of four tabs – **Home**, **Transform**, **Add Column**, and **View**.
 
 The **Home** tab contains the common query tasks, including the first step in any query, which is **Get Data.** The following image shows the **Home** ribbon.  
@@ -92,12 +92,12 @@ The **View** tab on the ribbon is used to toggle whether certain panes or window
 
 It’s useful to know that many of the tasks available from the ribbon are also available by right-clicking a column, or other data, in the center pane.
 
-## The Left Pane
+## The left pane
 The left pane displays the number of active queries, as well as the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with multiple queries.  
 
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
-## The Center (Data) Pane
+## The center (data) pane
 In the center pane, or Data pane, date from the selected query is displayed. This is where much of the work of the Query view is accomplished.
 
 In the following image, the Web data connection established earlier is displayed, the **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
@@ -106,7 +106,7 @@ In the following image, the Web data connection established earlier is displayed
 
 When you select a right-click menu item (or a ribbon button), Query applies the step to the data, and saves it as part of the query itself. The steps are recorded in the **Query Settings** pane in sequential order, as described in the next section.  
 
-## The Query Settings Pane
+## The query settings pane
 The **Query Settings** pane is where all steps associated with a query are displayed. For example, in the following image, the **Applied Steps** section of the **Query Settings** pane reflects the fact that we just changed the type of the **Overall score** column.
 
 ![](media/desktop-query-overview/queryoverview_querysettingspane.png)
@@ -120,12 +120,12 @@ In the **Query Settings** pane, you can rename steps, delete steps, or reorder t
 ![](media/desktop-query-overview/queryoverview_querysettings_rename.png)
 
 ## The Advanced Editor
-If you want to see the code that Query Editor is creating with each step, or want to create your own shaping code, you can use the **Advanced Editor**. To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the existing Query code.  
+If you want to see the code that Query Editor is creating with each step, or want to create your own shaping code, you can use the **Advanced Editor**. To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the existing query code.  
 ![](media/desktop-query-overview/queryoverview_advancededitor.png)
 
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.  
 
-## Saving Your Work
+## Saving your work
 When your query is where you want it, you can have Query Editor apply the changes to the data model into Power BI Desktop, and close Query Editor. To do that, select **Close & Apply** from Query Editor's **File** menu.  
 ![](media/desktop-query-overview/queryoverview_closenload.png)
 
@@ -137,7 +137,7 @@ Once you have your query where you want it, or if you just want to make sure you
 To save your work, select **File \> Save** (or **File \> Save As**), as shown in the following image.  
 ![](media/desktop-query-overview/queryoverview_savework.png)
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

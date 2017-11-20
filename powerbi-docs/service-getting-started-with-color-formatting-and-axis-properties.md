@@ -36,18 +36,19 @@ When you select **Format**, the area below the icon displays the color and axis 
 You can customize many elements of each visualization:
 
 * Legend
-* X-Axis
-* Y-Axis
-* Data Colors
-* Data Labels
+* X-axis
+* Y-axis
+* Data colors
+* Data labels
 * Shapes
-* Plot Area
+* Plot area
 * Title
 * Background
 * Lock aspect
 * Border
 
-> **Note:**  
+> [!NOTE]
+>  
 > You won’t see all these elements with each visualization type. The visualization you select will affect which customizations are available; for example, you won’t see an X-Axis if you have a pie chart selected because pie charts don’t have an X-axis.
 > 
 > 
@@ -56,7 +57,7 @@ Also note that if you don’t have any visualization selected, **Filters** appea
 
 Let’s show a couple examples: one working with colors, the other changing the properties of an axis. From there, you should be ready to customize colors, axes, and labels all day long.
 
-## Working with Colors
+## Working with colors
 Let’s walk through the steps necessary to customize colors on a chart.
 
 1. I select a **Clustered Column Chart** from the report canvas.
@@ -77,21 +78,23 @@ The changes are shown in the image below. Wow, that’s a bright chart. Here are
 
 Not crazy about the change you just made? Use **CTRL+Z** to undo , just like you’re used to doing.
 
-## Changing Axis Properties
-It’s often useful to modify the X-Axis or the Y-Axis. Similar to working with colors, you can modify an axis by selecting the down-arrow icon to the left of the axis you want to change, as shown in the following image.  
+## Changing axis properties
+It’s often useful to modify the X-axis or the Y-axis. Similar to working with colors, you can modify an axis by selecting the down-arrow icon to the left of the axis you want to change, as shown in the following image.  
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
 
 If you want to collapse the **X-Axis** options, just select the up arrow icon beside **X-Axis**.
 
-You can remove the X-Axis labels entirely, by toggling the radio button beside **X-Axis**. You can also choose whether to turn axis titles on or off by selecting the radio button next to **Title**.  
+You can remove the X-axis labels entirely, by toggling the radio button beside **X-Axis**. You can also choose whether to turn axis titles on or off by selecting the radio button next to **Title**.  
 
 There are all sorts of colors to choose from, and many more customizations you can apply to your Power BI reports and dashboards.
 
-> **Note:**  
+> [!NOTE]
+>  
 > These color, axis, and related customizations available when the **Format** icon is selected are also available in Power BI Desktop.
 > 
 > 
 
+## Next step
 For more information, see the following article:  
 
 * [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  

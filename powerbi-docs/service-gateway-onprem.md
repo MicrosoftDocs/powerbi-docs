@@ -23,9 +23,10 @@ ms.author: davidi
 # On-premises data gateway
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
 
-You can use a single gateway with different services at the same time. If you are using Power BI, as well as PowerApps, a single gateway and be used for both. It is dependent on the account you sign in with.
+You can use a single gateway with different services at the same time. If you are using Power BI as well as PowerApps, a single gateway can be used for both. It is dependent on the account you sign in with.
 
-> Note: The On-premises data gateway implements data compression, and transport encryption, in all modes.
+> [!NOTE]
+> The on-premises data gateway implements data compression, and transport encryption, in all modes.
 > 
 > 
 
@@ -47,8 +48,8 @@ You can use a live connection against tabular or multidimensional instances.
 <!-- Shared Install steps Include -->
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
-## Download and install the On-premises data gateway
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+## Download and install the on-premises data gateway
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [on-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -75,7 +76,7 @@ You will also need to supply the windows user name and password that the windows
 
 After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
 
-<a name="credentials">
+<a name="credentials"></a>
 
 ## Storing encrypted credentials in the cloud
 When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
@@ -91,7 +92,7 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md).
 
-## See also
+## Next steps
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  

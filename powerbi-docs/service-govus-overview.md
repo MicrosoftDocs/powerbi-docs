@@ -80,7 +80,7 @@ The following questions (and answers) are provided to help you quickly get infor
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)

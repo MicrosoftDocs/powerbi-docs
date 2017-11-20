@@ -64,7 +64,7 @@ The following table specifies whether an **On-premises data gateway** is require
 | IBM Netezza (Beta) |Not yet supported in the **Power BI service** |
 | SAP Buisness Warehouse (Beta) |Not yet supported in the **Power BI service** |
 
-## More Information
+## Next steps
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)

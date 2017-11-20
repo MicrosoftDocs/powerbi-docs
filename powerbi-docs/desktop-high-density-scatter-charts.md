@@ -20,14 +20,15 @@ ms.date: 09/06/2017
 ms.author: davidi
 
 ---
-# High Density Sampling in Power BI scatter charts
+# High density sampling in Power BI scatter charts
 Beginning with the September 2017 release of the **Power BI Desktop** and updates to the **Power BI service**, a new sampling algorithm is available that improves how scatter charts represent high density data.
 
 For example, you might create a scatter chart from your organization's sales activity, each store having tens of thousands of data points each year. A scatter chart of such information would sample data (select a meaningful representation of that data, to illustrate how sales occurred over time) from the available data, and create a scatter chart that represents the underlying data. This is common practice in high density scatter charts, and Power BI has improved its sampling of high density data, the details of which are described in this article.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
 
-> **Note:** The **high density sampling** algorithm described in this article applies to, and is available in, scatter charts in both **Power BI Desktop** and the **Power BI service**.
+> [!NOTE]
+> The **high density sampling** algorithm described in this article applies to, and is available in, scatter charts in both **Power BI Desktop** and the **Power BI service**.
 > 
 > 
 
@@ -38,7 +39,8 @@ When you enable **High Density Sampling**, Power BI implements an algorithm that
 
 By definition, high density data is sampled to enable visualizations that can be created reasonably quickly, and are responsive to interactivity (too many data points on a visual can bog it down, and can detract from the visibility of trends). How such data is sampled, to provide the best visualization experience and ensure all data is represented, is what drives the creation of the sampling algorithm. In Power BI, the algorithm has been improved to provide the best combination of responsiveness, representation, and clear preservation of important points in the overall data set.
 
-> **Note:** Scatter charts using the **high density sampling** algorithm are best plotted on square visuals, as with all scatter charts.
+> [!NOTE]
+> Scatter charts using the **high density sampling** algorithm are best plotted on square visuals, as with all scatter charts.
 > 
 > 
 
@@ -49,7 +51,8 @@ The methods in this algorithm ensure that outliers are represented in the result
 
 The algorithm also preserves the overall shape of the scatter chart.
 
-> **Note:** When using the **High Density Sampling** algorithm for scatter charts, *accurate distribution* of the data is the goal, and implied visual density is *not* the goal. For example, you might see a scatter chart with lots of circles that overlap (density) in a certain area, and imagine many data points must be clustered there; since the **High Density Sampling** algorithm can use one circle to represent many data points, such implied visual density (or "clustering") will not show up. To get more detail in a given area, you can use slicers to zoom in.
+> [!NOTE]
+> When using the **High Density Sampling** algorithm for scatter charts, *accurate distribution* of the data is the goal, and implied visual density is *not* the goal. For example, you might see a scatter chart with lots of circles that overlap (density) in a certain area, and imagine many data points must be clustered there; since the **High Density Sampling** algorithm can use one circle to represent many data points, such implied visual density (or "clustering") will not show up. To get more detail in a given area, you can use slicers to zoom in.
 > 
 > 
 
@@ -67,14 +70,16 @@ There are circumstances under which **High Density Sampling** cannot be applied 
   
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
-## How to turn on **High Density Sampling** for a scatter chart
+## How to turn on high density sampling for a scatter chart
 To turn on **High Density Sampling**, select a scatter chart and then go to the **Formatting** pane, and expand the **General** card. Near the bottom of that card, a toggle slider called **High Density Sampling** is available. To turn it on, slide it to **On**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
-> **Note:** Once the slider is turned on, Power BI will attempt to use the **High Density Sampling** algorithm whenever possible. When the algorithm cannot be used (for example, you place a value in the *Play* axis), the slider stays in the **On** position even though the chart has reverted to the standard algorithm. If you then remove a value from the *Play* axis (or conditions change to enable use of the high density sampling algorithm), since the slider is on the chart will automatically use high density sampling for that chart.
+> [!NOTE]
+> Once the slider is turned on, Power BI will attempt to use the **High Density Sampling** algorithm whenever possible. When the algorithm cannot be used (for example, you place a value in the *Play* axis), the slider stays in the **On** position even though the chart has reverted to the standard algorithm. If you then remove a value from the *Play* axis (or conditions change to enable use of the high density sampling algorithm), since the slider is on the chart will automatically use high density sampling for that chart.
 > 
-> **Note:** Data points are grouped and/or selected by the index. Having a legend does not affect sampling for the algorithm, it only affects the ordering of the visual.
+> [!NOTE]
+> Data points are grouped and/or selected by the index. Having a legend does not affect sampling for the algorithm, it only affects the ordering of the visual.
 > 
 > 
 
@@ -83,7 +88,7 @@ The high density sampling algorithm is an important improvement to Power BI, but
 
 * The **High Density Sampling** algorithm only works with live connections to Power BI service-based models, imported models, or DirectQuery.
 
-## More information
+## Next steps
 For more information about high density sampling in other charts, see the following article.
 
 * [High density line sampling in Power BI](desktop-high-density-sampling.md)

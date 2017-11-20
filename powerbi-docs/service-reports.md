@@ -78,7 +78,7 @@ Here are some topics, by role, to help you get started.
 > 
 > 
 
-## See Also
+## Next steps
 [Get Started with Power BI](service-get-started.md) 
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

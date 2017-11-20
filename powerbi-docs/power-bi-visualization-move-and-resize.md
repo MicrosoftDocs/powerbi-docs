@@ -35,7 +35,7 @@ In Power BI, open a report in [Editing View](service-reading-view-and-editing-vi
 * Hover over the visualization and select the Focus mode icon.
   ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
-## See also
+## Next steps
 [Resize a visualization on a dashboard](service-dashboard-edit-tile.md)
 
 [Display a dashboard tile in full-screen mode (In-focus)](service-focus-mode.md)

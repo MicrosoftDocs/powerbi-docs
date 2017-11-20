@@ -20,30 +20,30 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Getting Started
+                            Getting started
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
+                                <a class="barLink" href="gettingstarted.yml#step-1">Introducing Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
+                                <a class="barLink" href="gettingstarted.yml#step-2">Using Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
+                                <a class="barLink" href="gettingstarted.yml#step-3">The building blocks of Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="gettingstarted.yml#step-4">A quick look at the Power BI service</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
+                                <a class="barLink" href="gettingstarted.yml#step-5">Review and what's next</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                           </ul>
@@ -60,31 +60,35 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Getting Data
+                            Getting data
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
+                                <a class="barLink" href="gettingdata.yml#step-1">Overview of Power BI Desktop</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="gettingdata.yml#step-2">Getting started with Power BI Desktop</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="gettingdata.yml#step-3">Connect to data sources in Power BI Desktop</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="gettingdata.yml#step-4">Clean and transform your data with the Query Editor</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="gettingdata.yml#step-5">More advanced data sources and transformation</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="gettingdata.yml#step-6">Cleaning irregularly formatted data</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                           </ul>
                       </div>
@@ -100,31 +104,39 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-modeling.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Modeling
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="modeling.yml#step-1">Introduction to modeling your data</a>
+                                <span style="margin-left: 32px; align-self: center;">3m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="modeling.yml#step-2">How to manage your data relationships</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="modeling.yml#step-3">Create calculated columns</a>
+                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="modeling.yml#step-4">Optimizing data models</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="modeling.yml#step-5">Create calculated measures</a>
+                                <span style="margin-left: 32px; align-self: center;">14m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="modeling.yml#step-6">Create calculated tables</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="modeling.yml#step-7">Explore your time-based data</a>
+                                <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                           </ul>
                       </div>
@@ -140,31 +152,87 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-visualizations.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Visualizations
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
+                                <a class="barLink" href="visualizations.yml#step-1">Introduction to visuals in Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-2">Create and customize simple visualizations</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-3">Combination charts</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="visualizations.yml#step-4">Slicers</a>
+                                <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
+                                <a class="barLink" href="visualizations.yml#step-5">Map visualizations</a>
+                                <span style="margin-left: 32px; align-self: center;">11m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="visualizations.yml#step-6">Matrixes and tables</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-7">Scatter charts</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
+                                <a class="barLink" href="visualizations.yml#step-8">Waterfall and funnel charts</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-9">Gauges and single-number cards</a>
+                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-10">Modify colors in charts and visuals</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-11">Shapes, text boxes, and images</a>
+                                <span style="margin-left: 32px; align-self: center;">6m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-12">Page layout and formatting</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-13">Group interactions among visualizations</a>
+                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-14">Duplicate a report page</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-15">Show categories with no data</a>
+                                <span style="margin-left: 32px; align-self: center;">3m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-16">Summarization and category options</a>
+                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-17">Z-order</a>
+                                <span style="margin-left: 32px; align-self: center;">3m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-18">Visual hierarchies and drill-down</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="visualizations.yml#step-19">R integration in Power BI Desktop</a>
+                                <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                           </ul>
                       </div>
@@ -180,31 +248,51 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-exploring-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Exploring Data
+                            Exploring data
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
+                                <a class="barLink" href="exploringdata.yml#step-1">Introduction to the Power BI service</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-2">Quick insights in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
+                                <a class="barLink" href="exploringdata.yml#step-3">Create and configure a dashboard</a>
                                 <span style="margin-left: 32px; align-self: center;">6m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="exploringdata.yml#step-4">Ask questions of your data with natural language</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
+                                <a class="barLink" href="exploringdata.yml#step-5">Create custom Q&A suggestions</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-6">Share dashboards with your organization</a>
+                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-7">Display visuals and tiles full-screen</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-8">Edit tile details and add widgets</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-9">Get more space on your dashboard</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="exploringdata.yml#step-10">Install and configure a personal gateway</a>
+                                <span style="margin-left: 32px; align-self: center;">11m</span>
                               </li>
                           </ul>
                       </div>
@@ -220,31 +308,31 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/logo_excel-blk.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Power BI and Excel
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="powerbiandexcel.yml#step-1">Introduction to using Excel data in Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
+                                <a class="barLink" href="powerbiandexcel.yml#step-2">Upload Excel data to Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
+                                <a class="barLink" href="powerbiandexcel.yml#step-3">Import Power View and Power Pivot to Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="powerbiandexcel.yml#step-4">Connect OneDrive for Business to Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">8m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="powerbiandexcel.yml#step-5">Excel in Power BI - summary</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                           </ul>
                       </div>
@@ -260,31 +348,59 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-pub-sharing.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Publishing and Sharing
+                            Publishing and sharing
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="publishingandsharing.yml#step-1">Introduction to content packs, security, and groups</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-2">Publish Power BI Desktop reports</a>
+                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-3">Print and export dashboards and reports</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
+                                <a class="barLink" href="publishingandsharing.yml#step-4">Manually republish and refresh your data</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-5">Introducing Power BI Mobile</a>
+                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-6">Create groups in Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-7">Build content packs</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-8">Use content packs</a>
+                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-9">Update content packs</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-10">Integrate OneDrive for Business with Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">3m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-11">Publish to web</a>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="publishingandsharing.yml#step-12">Completion of Power BI Guided Learning</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                           </ul>
                       </div>
@@ -300,31 +416,35 @@ layout: LandingPage
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-dax-intro.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
                             Introduction to DAX
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-2">Using Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-3">The Building Blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-4">A quick look at the Power BI service</a>
+                                <a class="barLink" href="introductiontodax.yml#step-1">Introduction to DAX</a>
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted#step-5">Review and What's Next</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="introductiontodax.yml#step-2">DAX calculation types</a>
+                                <span style="margin-left: 32px; align-self: center;">22m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="introductiontodax.yml#step-3">DAX functions</a>
+                                <span style="margin-left: 32px; align-self: center;">17m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="introductiontodax.yml#step-4">Using variables in DAX expressions</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="introductiontodax.yml#step-5">Table relationships and DAX</a>
+                                <span style="margin-left: 32px; align-self: center;">13m</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="introductiontodax.yml#step-6">DAX tables and filtering</a>
+                                <span style="margin-left: 32px; align-self: center;">32m</span>
                               </li>
                           </ul>
                       </div>

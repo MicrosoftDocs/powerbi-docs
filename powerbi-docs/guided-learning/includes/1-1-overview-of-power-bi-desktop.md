@@ -4,7 +4,7 @@ When you get data, sometimes it's not quite as well-formed, or *clean*, as you w
 
 As always in this course, your learning journey follows the same path as the flow of work in Power BI. As such, let's check out **Power BI Desktop**, where it often begins.
 
-## An Overview of Power BI Desktop
+## An overview of Power BI Desktop
 Power BI Desktop is a tool to connect to, clean, and visualize your data. With Power BI Desktop, you can connect to data and then model and visualize it in different ways. Most users who are working on Business Intelligence projects will spend the majority of their time using Power BI Desktop.
 
 You can download Power BI Desktop [from the web](http://go.microsoft.com/fwlink/?LinkID=521662), or from the Power BI service. Just select the down arrow button in the upper right side of Power BI, then select Power BI Desktop.

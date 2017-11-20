@@ -28,7 +28,8 @@ As you've probably already discovered, reports are built on datasets, report vis
 
 ![](media/service-related-content/power-bi-view-related-dashboard-new.png)
 
-> **NOTE**: The Related content feature does not work for streaming datasets.
+> [!NOTE]
+> The related content feature does not work for streaming datasets.
 > 
 > 
 
@@ -97,7 +98,7 @@ From here, you can take direct action on the related content.  For example, sele
 * Related content is not available in Power BI Desktop.
 * The Related content feature does not work for streaming datasets.
 
-### See also
+## Next steps
 * [Get started with Power BI service](service-get-started.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

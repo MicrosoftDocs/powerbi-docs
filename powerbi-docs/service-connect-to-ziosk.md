@@ -44,7 +44,7 @@ Connect to the [Ziosk Survey Analytics content pack](https://app.powerbi.com/get
    
     ![](media/service-connect-to-ziosk/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -73,7 +73,7 @@ The content pack includes data from the following tables:
 ## System requirements
 A Ziosk account with permissions to the above tables is required in order to instantiate this content pack.
 
-### See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)

@@ -49,7 +49,8 @@ Regardless of which way you choose to download, once **Power BI Desktop** is dow
 
 ![](media/desktop-get-the-desktop/designer_gsg_install.png)
 
-> **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
+> [!NOTE]
+> Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
 > 
 
@@ -72,9 +73,11 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 
 * If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
 
-> **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
+> [!NOTE]
+> Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 > 
-> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
+> [!NOTE]
+> The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
 > 
 > 
 
@@ -98,7 +101,7 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 * **Windows Display settings:** If your display settings are set to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that must be closed or responded to in order to proceed using **Power BI Desktop**. If you encounter this issue, check your **Display settings** by going to **Settings > System > Display** in Windows, and use the slider to return display settings to 100%.
 * **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
 
-## More information
+## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

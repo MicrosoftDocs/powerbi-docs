@@ -25,9 +25,10 @@ The Zendesk content pack offers a Power BI dashboard and a set of Power BI repor
 
 Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI.
 
-Note: A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
+>[!NOTE]
+>A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
 
-## How to Connect
+## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
    ![](media/service-connect-to-zendesk/pbi_getdata.png)
@@ -42,7 +43,8 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
-   > Note: This content pack requires you connect with a Zendesk Admin account. 
+   > [!NOTE]
+   > This content pack requires you connect with a Zendesk Admin account. 
    > 
    > 
    
@@ -54,7 +56,7 @@ Note: A Zendesk Admin account is required to connect. More details on [requireme
    
    ![](media/service-connect-to-zendesk/pbi_zendeskdash.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
@@ -73,7 +75,7 @@ There's also a set of measures that have been calculated, such as Average Wait T
 
 <a name="Requirements"></a>
 
-## System Requirements
+## System requirements
 A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
 
 <a name="FindingParams"></a>
@@ -84,7 +86,7 @@ Your Zendesk URL will be the same as the URL you use to sign into your Zendesk a
 ## Troubleshooting
 If you are having issues connecting, please check your Zendesk URL and confirm you're using an Zendesk administrator account.
 
-### See also
+## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
 

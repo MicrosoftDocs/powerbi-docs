@@ -27,12 +27,13 @@ Starting with the August 2017 release of **Power BI Desktop**, you can create **
 
 The **What if** parameter is found on the **Modeling** tab in **Power BI Desktop**. When you do so, a dialog appears where you can configure the parameter.
 
-### Creating a What if parameter
+## Creating a What if parameter
 To create a **What if** parameter, select the **What if** button from the **Modeling** tab in **Power BI Desktop**. In the following image, we've created a parameter called *Discount percentage* and set its data type to *Decimal number.* The *Minimum* value is zero, the *Maximum* is 0.50 (fifty percent). We've also set the *Increment* to 0.05, or five percent. That's how much the parameter will adjust when interacted with in a report.
 
 ![](media/desktop-what-if/what-if_02.png)
 
-> Note: for decimal numbers, make sure you precede it with a zero, as in 0.50 versus just .50 in that box. Otherwise the number won't validate and the **OK** button will not be selectable.
+> [!NOTE]
+> For decimal numbers, make sure you precede it with a zero, as in 0.50 versus just .50 in that box. Otherwise the number won't validate and the **OK** button will not be selectable.
 > 
 > 
 

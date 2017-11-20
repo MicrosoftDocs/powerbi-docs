@@ -36,7 +36,8 @@ You can also **See Data** by right-clicking on a visual, then selecting **See Da
 
 ![](media/desktop-see-data-see-records/see-data-see-records_3.png)
 
-> **Note:** You must be hovering over a data point in the visual in order for the right-click menu to be available.
+> [!NOTE]
+> You must be hovering over a data point in the visual in order for the right-click menu to be available.
 > 
 > 
 
@@ -57,7 +58,8 @@ You can also focus on one data element in a visual, and drill into the data behi
 
 ![](media/desktop-see-data-see-records/see-data-see-records_7.png)
 
-> **Note:** If the selected visual does not support **See Records** then the button on the ribbon is grayed out.
+> [!NOTE]
+> If the selected visual does not support **See Records** then the button on the ribbon is grayed out.
 > 
 > 
 
@@ -82,7 +84,7 @@ There are a few limitations to consider when using **See Data** or **See Records
 * You can't use **See Records** when your visual uses a calculated measure
 * You can't use **See Records** when connected to a live multidimensional (MD) model
 
-## More Information
+## Next steps
 ﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
 
 * [Use grouping and binning in Power BI Desktop](desktop-grouping-and-binning.md)

@@ -22,7 +22,6 @@ ms.author: mihart
 
 ---
 # Get started with Power BI service
-## Getting Started
 This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml#step-1).
 
 ![](media/service-get-started/power-bi-components.png)
@@ -34,7 +33,9 @@ Power BI service has a free version and a Pro version. No matter which version y
 If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
-> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi) or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is Introduction to Power BI service:
+> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
+
+Visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is Introduction to Power BI service:
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
@@ -62,14 +63,16 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
    ![](media/service-get-started/gs2.png)
 5. For this tutorial we're going to select **Import** to add the Excel file as a dataset that we can then use to create reports and dashboards.  
    
-   > **NOTE**: If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
+   > [!NOTE]
+   > If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
    > 
    > 
    
    ![](media/service-get-started/power-bi-import.png)
 6. When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/service-get-started/power-bi-gs.png).
    
-   > **TIP**: A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md)
+   > [!TIP]
+   > A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md)
    > 
    > 
 
@@ -80,7 +83,8 @@ Now that you have connected to data, explore to find insights.  When you've foun
    
    ![](media/service-get-started/power-bi-report-editor.png)
    
-   > NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](service-insights.md)
+   > [!NOTE]
+> Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](service-insights.md)
    > 
    > 
 2. In the **Fields** list on the right side of the page, select fields to build a visualization.  Select the checkbox beside **﻿Gross Sales**﻿ and  **﻿Date**﻿.
@@ -124,6 +128,7 @@ Now that you have connected to data, explore to find insights.  When you've foun
     ![](media/service-get-started/power-bi-pin2.png)
 4. Select the back arrow for **Exit Q&A** ![](media/service-get-started/pbi_qabackarrow.png) to return to your dashboard where you'll see the new tile.
 
+## Next steps
 Ready to try more?  Here are some great ways to explore more of Power BI.
 
 * [Connect to another dataset](service-get-data.md).

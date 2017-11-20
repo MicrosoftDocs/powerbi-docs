@@ -23,7 +23,7 @@ In the **Power BI service**, we created a dashboard with just a few clicks. We c
 
 We also used natural language queries, called **Q & A**, to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a **refresh schedule** for our data, so we know when we go back to the Power BI service, that data will be fresh.
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed the first section of the **Guided Learning** course for Power BI. You now have a firm foundation of knowledge to move on to the next section, **Getting Data**, which is the next step in the logical flow of work for Power BI.
 
 We mentioned this before, but it's worth restating: this course builds your knowledge by following the common flow of work in Power BI:

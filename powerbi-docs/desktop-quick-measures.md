@@ -139,7 +139,8 @@ In this preview release of the **Quick measures**, there are a few limitations a
 * The measure that's added to the **Fields** well can be used with any visual in the report.
 * You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
 
-> **Warning:** Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
+> [!WARNING]
+> Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
 > 
 > 
 

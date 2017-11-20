@@ -48,7 +48,7 @@ A lot of issues can surface when the gateway version is out of date.  It is a go
  **Proxy configuration**
  You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)
 
-## Schedule Refresh
+## Schedule refresh
 **Error: The credential stored in the cloud is missing.**
 
 You could get this error in Settings for \<dataset\> if you have a scheduled refresh and then uninstalled and re-installed the personal gateway. When you uninstall a personal gateway, data source credentials for a dataset that has been configured for refresh are removed from the Power BI service.
@@ -98,7 +98,7 @@ This will occur if you have a single row greater than 4 MB in size. You will nee
 
 Power BI does not currently support Windows authentication for a data source using ACE OLEDB provider.
 
-**Solution:** To workaround this error, you can select Anonymous authentication. For legacy ACE OLEDB provider, Anonymous credentials are equivalent to Windows credentials.
+**Solution:** To work around this error, you can select Anonymous authentication. For legacy ACE OLEDB provider, Anonymous credentials are equivalent to Windows credentials.
 
 ## Tile refresh
 If you are receiving an error with dashboard tiles refreshing, please refer to the following article.
@@ -116,19 +116,19 @@ If you are receiving an error with dashboard tiles refreshing, please refer to t
    
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
-### Event Logs
+### Event logs
 There are several event logs that can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the **Application** log.
 
 The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
-### Fiddler Trace
+### Fiddler trace
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
-<a name="SetupLogs">
+<a name="SetupLogs"></a>
 
 ### Setup Logs
 If the **Personal Gateway**, fails to install, you will see a link to show the setup log. This could show you details about the failure. These are Windows Install logs, or also knows as MSI logs. They can be fairly complex and hard to read. Typically the resulting error will be at the bottom, but determining the cause of the error is not trivial. It could be a result of errors in a different log, or be a result of an error higher up in the log.
@@ -144,7 +144,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
-## See Also
+## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
