@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/19/2017
+ms.date: 11/20/2017
 ms.author: mihart
 
 ---
@@ -76,29 +76,29 @@ You have two options for downloading and importing custom visuals; from within P
 
 1. Start at [Microsoft AppSource](https://appsource.microsoft.com) and select the tab for **Apps**. 
 
-    ![](media/service-custom-visuals-appsource/power-bi-appsource-apps.png)
+    ![](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
 2. This takes you to the [Apps results page](https://appsource.microsoft.com/en-us/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. But we're looking for custom visuals, so let's narrow down the results by selecting **Power BI visuals** from the left navigation list.
 
-    ![](media/service-custom-visuals-appsource/power-bi-appsource-visuals.png)
+    ![](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
 3. AppSource displays a tile for each custom visual.  Each tile has a snapshot of the custom visual and gives a brief description and a download link. To see more details, select the tile. 
 
-    ![](media/service-custom-visuals-office-store/powerbi-custom-select-visual.png)
+    ![](media/power-bi-custom-visuals/powerbi-custom-select-visual.png)
 
 4. On the detail page you can view screenshots, videos, detailed description and more. Dowload the custom visual by selecting **Get it now** and then agreeing to the Terms of use. 
 
-    ![](media/service-custom-visuals-appsource/power-bi-appsource-get.png)
+    ![](media/power-bi-custom-visuals/power-bi-appsource-get.png)
 
 5. Select the link to download the custom visual.
 
-    ![](media/service-custom-visuals-appsource/powerbi-custom-download.png)
+    ![](media/power-bi-custom-visuals/powerbi-custom-download.png)
 
     The download page also include instructions on how to import the custom visual into Power BI Desktop and Power BI service.
 
     You can also download a sample report that includes the custom visual and showcases its capabilities.
 
-    ![](media/service-custom-visuals-appsource/powerbi-custom-try-sample.png)
+    ![](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
 6. Save the .pbiviz file and then open Power BI.    
 7. Open the report where you'd like to add the custom visual and from the bottom of the **Visualizations** pane select the ellipses > **Import from file**.  
@@ -116,10 +116,6 @@ You have two options for downloading and importing custom visuals; from within P
 
 - If you don't see a **Visualizations** pane, that means you do not have edit permissions for the report.  You can only add custom visuals to reports you can edit, not to reports that have been shared with you.
 
-
-### Next steps
-* [Add a custom visualization to your report (Power BI service)](power-bi-report-add-custom-visual.md)    
-* [Add a custom visualization to your report (Power BI Desktop)](power-bi-custom-visuals-use.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
