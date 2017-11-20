@@ -29,7 +29,7 @@ But you are not limited to this set of visuals, selecting the ellipses opens up 
 
 Custom visuals are created by members of the community and by Microsoft and are hosted on [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been approved by Microsoft and they behave similar to the pre-packaged visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc. 
 
-What is AppSource? Simply put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com) connects millions of users of products like Office 365, Azure, Dyanmics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
+What is AppSource? Simply put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
 
 ## Two types of custom visuals
 
