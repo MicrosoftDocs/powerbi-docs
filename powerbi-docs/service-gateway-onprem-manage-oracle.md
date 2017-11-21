@@ -139,7 +139,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [!WARNING]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 > 
 > 
 

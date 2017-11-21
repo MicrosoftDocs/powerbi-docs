@@ -1,6 +1,6 @@
 ---
 title: Manage your data source - Import/Scheduled Refresh
-description: How to manage the on-premises data gateway gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
+description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
