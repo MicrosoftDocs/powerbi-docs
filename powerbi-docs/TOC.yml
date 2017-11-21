@@ -1,4 +1,4 @@
-- name: Power BI Service
+﻿- name: Power BI Service
   items:
   - name: Get started
     items: 
@@ -402,10 +402,6 @@
       href: power-bi-visualization-export-data.md
     - name: "Change the type of visualization in a Power BI report"
       href: power-bi-report-change-visualization-type.md
-    - name: "Add a custom visualization to a Power BI report"
-      href: power-bi-report-add-custom-visual.md
-    - name: "Download and use custom visuals from the Office store"
-      href: service-custom-visuals-office-store.md
     - name: "Getting started with color formatting and axis properties"
       href: service-getting-started-with-color-formatting-and-axis-properties.md
     - name: "Tips and tricks for color formatting in Power BI"
@@ -756,8 +752,6 @@
       href: desktop-insights.md
     - name: "Bookmarks in Power BI"
       href: desktop-bookmarks.md
-    - name: "Add a custom visual to a report (Desktop)"
-      href: power-bi-custom-visuals-use.md
     - name: "Use Report themes"
       href: desktop-report-themes.md
     - name: "Use Quick Measures"
@@ -962,8 +956,6 @@
       href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Review custom visuals for security and privacy"
       href: service-custom-visuals-review-for-security-and-privacy.md
-    - name: "Publish custom visuals to the Office store"
-      href: developer/office-store.md
     - name: "Get a custom visual certified"
       href: power-bi-custom-visuals-certified.md
   - name: Push data into a dashboard

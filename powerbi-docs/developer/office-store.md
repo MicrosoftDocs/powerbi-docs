@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/20/2017
 ms.author: asaxton
 
 ---
@@ -130,7 +130,6 @@ Once your visual is created, you can optionally get your visual certified. This 
 
 ## Next steps
 [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Download and use custom visuals from the Office store](../service-custom-visuals-office-store.md)  
 [Visualizations in Power BI](../power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
 [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
