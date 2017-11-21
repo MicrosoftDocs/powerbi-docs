@@ -379,7 +379,6 @@ For more information, see [Running your visual](#running-your-visual) or [Server
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Publish custom visuals to the Office store](developer/office-store.md)  
-[Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [Less CSS](http://lesscss.org/)  
 
