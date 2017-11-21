@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/17/2017
+ms.date: 11/21/2017
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -33,14 +33,14 @@ Get started with these popular webinars
 
 - [Accelerating modern BI adoption with Power BI Premium](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
 
+- [What's new and exciting in Power BI Report Server - Nov 2017](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
+
 
 ## Upcoming webinars
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
-
-- [What's new and exciting in Power BI Report Server - 11/21/17](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
 
 - [Better Together: 5 Benefits Excel Users Will Get From Using Power BI - 11/27/17](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
