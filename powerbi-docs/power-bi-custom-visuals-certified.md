@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/16/2017
+ms.date: 11/20/2017
 ms.author: mihart
 
 ---
@@ -75,19 +75,16 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Enlighten Aquarium](https://appsource.microsoft.com/product/power-bi-visuals/WA104381112?src=office&tab=Overview) | |
 | Enlighten World Flags - coming soon | |
 | Enlighten Stack Shuffle - coming soon | |
-| Fly Wheel | |
 | [Gantt](https://store.office.com/gantt-WA104380765.aspx) |[Video](https://youtu.be/qJ7s_KrGiUU) |
 | [Histogram](https://store.office.com/histogram-chart-WA104380776.aspx) | |
 | [Horizotal Funnel](https://appsource.microsoft.com/product/power-bi-visuals/WA104380846) |[Video](https://youtu.be/SudZei68PPo) |
 | [KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx) | |
 | [Linear gauge by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380821?src=office&tab=Overview) |[Video](https://youtu.be/AOlsFYkfkcw) |
-| [Liquid Fill Gauge] |[Video](https://youtu.be/wQ51TTqIZc4) |
-| Long text viewer  | |
 | [Mekko chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380785?src=office&tab=Overview)  | [Video](https://youtu.be/90FLCKpgicA)|
 | [Play Axis (Dynamic Slicer)](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) | |
 | [Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083) |[Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) | |
-| [Ring chart (Donut chart) by MAQSoftware](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824?src=office&tab=Overview) | [Video] (https://youtu.be/pDToHDFHnq8)|
+| [Ring chart (Donut chart) by MAQSoftware](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824?src=office&tab=Overview) | [Video](https://youtu.be/pDToHDFHnq8)|
 | [Sankey chart](https://store.office.com/app.aspx?assetid=WA104380777.aspx) |[Video](https://youtu.be/WWP9wVUHGaA) |
 | [Scroller](https://store.office.com/scroller-WA104381018.aspx) |[Video](https://youtu.be/uhRFQF2cGSY) |
 | [Smart Filter by SQLBI](https://store.office.com/smart-filter-by-okviz-WA104380859.aspx) |[Video](https://youtu.be/gcJsDDRQq28) |
@@ -104,12 +101,10 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Word Cloud](https://store.office.com/word-cloud-WA104380752.aspx?) |[Video](https://www.youtube.com/watch?v=AblTenl9fqo) |
 
 ## Next steps
-[Download and use custom visuals from AppSource](service-custom-visuals-office-store.md)  
 [Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)      
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Use custom visualizations in Power BI Desktop](power-bi-custom-visuals-use.md)  
 [Publish custom visuals to Microsoft AppSource](developer/office-store.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
