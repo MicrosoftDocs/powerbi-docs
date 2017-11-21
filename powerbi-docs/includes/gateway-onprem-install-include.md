@@ -20,7 +20,7 @@ There are a few things to note about insalling either mode of the gateway:
 * you can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
 * You can only have one Personal mode gateway running for each Power BI user. If you install another Personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
 
-![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
+![On-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
 Here are a few things to consider before installing the gateway.
 
@@ -29,11 +29,11 @@ Here are a few things to consider before installing the gateway.
 
 Once the gateway is installed, you will need to sign in with your work or school account.
 
-![on-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
+![On-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
 
 After you are signed in, you will have the option to configure a new gateway, or to migrate, restore, or take over an existing gateway.
 
-![on-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
+![On-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
 
 ## Configure a new gateway
 1. Enter a **name** for the gateway
@@ -45,7 +45,7 @@ After you are signed in, you will have the option to configure a new gateway, or
 > 
 > 
 
-![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
+![On-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
 ### Migrate, restore or take over an existing gateway
 You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway.

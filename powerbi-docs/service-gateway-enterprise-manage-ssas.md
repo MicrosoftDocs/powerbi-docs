@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Manage your data source - Analysis Services
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
 
@@ -156,7 +156,7 @@ In the **Power BI service** the following occurs:
 > 
 > 
 
-On the On-Premises Data Gateway with configurable Custom User Mapping, do the following:
+On the on-premises data gateway with configurable Custom User Mapping, do the following:
 
 1. Find Active Directory to search (automatic, or configurable)
 2. Look up the attribute of the AD Person (such as *Email*) based on incoming UPN string (“firstName.lastName@contoso.com”) from the **Power BI service**.
@@ -167,14 +167,14 @@ On the On-Premises Data Gateway with configurable Custom User Mapping, do the fo
 How to configure your gateway to perform the AD Lookup:
 
 1. Download and install the latest gateway
-2. In the gateway, you need to change the **On-premises Data Gateway Service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the Gateway service for the change to take effect.  Go to the Gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
+2. In the gateway, you need to change the **on-premises data gateway Service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the Gateway service for the change to take effect.  Go to the Gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
 3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
    
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
    
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
-5. Restart the **On-premises Data Gateway** service for the configuration change to take effect.
+5. Restart the **on-premises data gateway** service for the configuration change to take effect.
 
 ### Working with mapping rules
 To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
@@ -251,8 +251,8 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Next steps
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

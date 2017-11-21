@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting the On-Premises Data Gateway
-description: This article provides ways for you to troubleshoot issues you are having with the On-Premises Data Gateway. It provides potential workarounds to known issues, as well as tools to assist you.
+title: Troubleshooting the on-premises data gateway
+description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -20,8 +20,8 @@ ms.date: 10/05/2017
 ms.author: davidi
 
 ---
-# Troubleshooting the On-Premises Data Gateway
-This article discusses some common issues you may encounter when using the **On-premises Data Gateway**.
+# Troubleshooting the on-premises data gateway
+This article discusses some common issues you may encounter when using the **on-premises data gateway**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -115,7 +115,7 @@ This error could occur for different reasons. Be sure to validate that you can c
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownError**.
 
-You can also look in the Event Logs > **Applications and Services Logs** > **On-premises Data Gateway Service** for more details.
+You can also look in the Event Logs > **Applications and Services Logs** > **on-premises data gateway Service** for more details.
 
 ### Error: We encountered an error while trying to connect to <server>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
@@ -164,7 +164,7 @@ This will occur if you have a single row greater than 4 MB in size. You will nee
 ### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate.
 This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the netbios name for the server. This will cause a mismatch for the certificate. To resolve this issue, you will need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
-### I don't see the On-Premises Data Gateway persent when configuring scheduled refresh.
+### I don't see the on-premises data gateway persent when configuring scheduled refresh.
 This could be because of a few different scenarios.
 
 1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
@@ -172,7 +172,7 @@ This could be because of a few different scenarios.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
 > [!WARNING]
-> If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
+> If one of your data sources requires OAuth authentication, you will not be able to configure it with the on-premises data gateway. OAuth authentication is not currently supported with the on-premises data gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
 > 
 > 
 
@@ -180,7 +180,7 @@ This could be because of a few different scenarios.
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.
 
 ## Reports
-### Report could not access the data source because you do not have access to our data source via an On-Premises Data Gateway.
+### Report could not access the data source because you do not have access to our data source via an on-premises data gateway.
 This is usually caused by one of the following.
 
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
@@ -376,8 +376,8 @@ For additional information about troubleshooting refresh scenarios, take a look 
 
 ## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  

@@ -160,6 +160,6 @@ Okay, you now have a gateway installed, and you’re ready to add data sources. 
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 
-[Troubleshooting the on-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

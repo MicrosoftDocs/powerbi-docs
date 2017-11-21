@@ -47,7 +47,7 @@ To learn more about privacy levels and Fast Combine, you can look at [Privacy Le
 Turning Fast Combine on will ignore the private setting and allow the execution to occur.
 
 ## Turn on Fast Combine
-You can use the following steps to enable Fast Combine for your personal gateway. The On-Premises Data Gateway does not have this setting.
+You can use the following steps to enable Fast Combine for your personal gateway. The on-premises data gateway does not have this setting.
 
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
    

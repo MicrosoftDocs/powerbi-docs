@@ -165,7 +165,7 @@ Given those example names and settings, the configuration steps are the followin
     
     Right-click and open the **Properties** for **Impersonate a client after authentication** and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 17. From the list of policies under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
-18. Restart the **On-premises Data Gateway** service process.
+18. Restart the **on-premises data gateway** service process.
 
 ## Running a Power BI report
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
@@ -177,7 +177,7 @@ This configuration will work in most cases. However, with Kerberos there can be 
 ## Switching the gateway to a domain account
 Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **On-premises data gateway** user interface. Here are the steps necessary to do so.
 
-1. Launch the **On-premises Data Gateway** configuration tool.
+1. Launch the **on-premises data gateway** configuration tool.
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_10.png)
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.

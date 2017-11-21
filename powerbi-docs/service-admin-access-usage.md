@@ -48,7 +48,7 @@ You can use the Azure AD portal to view sign-in activity.
     ![](media/service-admin-access-usage/azure-portal-sign-ins.png)
 3. Filter the application by either **Microsoft Power BI** or **Power BI Gateway** and select **Apply**.
    
-    **Microsoft Power BI** is for sign-in activity related to the service where as **Power BI Gateway** are specific sign-ins for the On-Premises Data Gateway.
+    **Microsoft Power BI** is for sign-in activity related to the service where as **Power BI Gateway** are specific sign-ins for the on-premises data gateway.
    
     ![](media/service-admin-access-usage/sign-in-filter.png)
 

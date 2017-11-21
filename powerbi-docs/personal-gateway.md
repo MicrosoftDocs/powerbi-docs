@@ -97,7 +97,7 @@ You will want to select **Personal Gateway** instead of **On-premises data gatew
 There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
 
 > [!NOTE]
-> The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises Data Gateway](service-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
+> The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises data gateway](service-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the on-premises data gateway on the VM instead, and configure the a data source within the Power BI service.
 > 
 > 
 

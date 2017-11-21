@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Manage your data source - Oracle
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
+Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -38,7 +38,7 @@ For **32-bit** versions of Power BI Desktop, use the following link to download 
 
 * [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-For **64-bit** versions of Power BI Desktop, or for the On-Premises Data Gateway, use the following link to download and install the **64-bit** Oracle client:
+For **64-bit** versions of Power BI Desktop, or for the on-premises data gateway, use the following link to download and install the **64-bit** Oracle client:
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
@@ -173,12 +173,12 @@ These errors could occur if either the Oracle client is not installed, or if it 
 > 
 > 
 
-For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md).
+For additional troubleshooting information relating to the gateway, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
 
 ## Next steps
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

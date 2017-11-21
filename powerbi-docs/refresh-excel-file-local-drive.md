@@ -78,7 +78,7 @@ Be sure to leave the **Send refresh failure notification email to me checked**. 
 ## Troubleshooting
 Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
 
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
