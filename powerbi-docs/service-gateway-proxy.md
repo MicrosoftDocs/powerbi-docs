@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
@@ -45,40 +45,6 @@ The first is for the configuration screens that actually configure the gateway. 
 The second is for the actual windows service that interacts with the Power BI service, and handles the requests.
 
     C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
-
-### Power BI Gateway - Personal
-> [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
-> 
-> 
-
-The personal gateway can be installed in one of two ways. As a windows service (admin) or as a user mode application. This is determined during installation. As a result, your configuration files may be in one of two locations depending on how the gateway was installed. You will want to check both locations.
-
-**Configuration**
-
-The first is for the configuration screens that actually configure the gateway. If you are having issues configuring the gateway, this is the file you will want to look at.
-
-For the *windows service*, it will be the following.
-
-    C:\Program Files\Power BI Personal Gateway\1.0\Configurator\GWConfig.exe.config
-    C:\Program Files\Power BI Personal Gateway\1.0\Configurator\PowerBIGatewayAgentCmdLine.exe.config
-
-For the *user mode application*, it will be the following.
-
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Configurator\GWConfig.exe.config
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Configurator\PowerBIGatewayAgentCmdLine.exe.config
-
-**Windows Service**
-
-The second is for the actual windows service that interacts with the Power BI service, and handles the requests.
-
-For the *windows service*, it will be the following.
-
-    C:\Program Files\Power BI Personal Gateway\1.0\Gateway\diawp.exe.config
-
-For the *user mode application*, it will be the following.
-
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Gateway\diawp.exe.config
 
 ## Configuring proxy settings
 The default proxy configuration is the following.
