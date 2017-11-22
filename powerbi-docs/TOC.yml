@@ -526,6 +526,8 @@
       href: service-gateway-onprem-tshoot.md
     - name: "Power BI gateway - personal"
       href: personal-gateway.md
+    - name: "Use Kerberos for single sign-on (SSO)"
+      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
     - name: "Configuring proxy settings"
       href: service-gateway-proxy.md
     - name: "Manage your enterprise data source - Analysis Services"
