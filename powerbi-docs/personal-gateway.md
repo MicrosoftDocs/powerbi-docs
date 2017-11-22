@@ -22,7 +22,7 @@ ms.author: davidi
 ---
 # Power BI Gateway - Personal
 > [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> There is a new version of the personal gateway for Power BI called the **on-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -40,7 +40,7 @@ A *dataset* is data uploaded into the Power BI service from an online or on-prem
 
 A *data source* is where the data you upload into a dataset really comes from. It can be just about anything; a database,  Excel worksheet, Web service, etc. With Excel workbooks, you can create a simple worksheet with rows of data, and that is considered a data source. You can also use Power Query or Power Pivot in Excel to connect to and query data from both online and on-premises data sources, all in the same workbook. With Power BI Desktop, you use Get Data to connect to and query data from both online and on-premises data sources.
 
-The personal gateway is installed through the On-Premises Data Gateay. You can download it on the [Power BI Gateway page](https://powerbi.microsoft.com/gateway/).
+The personal gateway is installed through the on-premises data gateway. You can download it on the [Power BI Gateway page](https://powerbi.microsoft.com/gateway/).
 
 ## Do I need a gateway?
 Before you install a gateway, it's important to know whether or not you really need one. It really depends on your data sources:
@@ -86,18 +86,18 @@ Let’s take a closer look at each step.
 
 ### Download and install a gateway
 > [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> There is a new version of the personal gateway for Power BI, called the **on-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
-You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select **Data Gateway** under the Downloads menu. Download the [on-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
 You will want to select **Personal Gateway** instead of **On-premises data gateway** to have a gateway that is for yourself.
 
 There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
 
 > [!NOTE]
-> The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises Data Gateway](service-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
+> The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [on-premises data gateway](service-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the on-premises data gateway on the VM instead, and configure the a data source within the Power BI service.
 > 
 > 
 
@@ -184,7 +184,6 @@ If you need to white list IP addresses instead of the domains, you can download 
 
 ## Next steps
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
-
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Power BI Premium](service-premium.md)
 

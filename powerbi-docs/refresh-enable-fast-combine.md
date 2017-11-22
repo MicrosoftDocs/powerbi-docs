@@ -22,7 +22,7 @@ ms.author: davidi
 ---
 # Disable privacy setting in Power BI Gateway - Personal
 > [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md). Fast combine is also available in the new version of the personal gateway, and is described in that article, too.
+> There is a new version of the personal gateway for Power BI called the **on-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md). Fast combine is also available in the new version of the personal gateway, and is described in that article, too.
 > 
 > 
 
@@ -47,7 +47,7 @@ To learn more about privacy levels and Fast Combine, you can look at [Privacy Le
 Turning Fast Combine on will ignore the private setting and allow the execution to occur.
 
 ## Turn on Fast Combine
-You can use the following steps to enable Fast Combine for your personal gateway. The On-Premises Data Gateway does not have this setting.
+You can use the following steps to enable Fast Combine for your personal gateway. The on-premises data gateway does not have this setting.
 
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
    

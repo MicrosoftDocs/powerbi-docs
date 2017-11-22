@@ -1,6 +1,6 @@
 ---
 title: Manage your data source - Import/Scheduled Refresh
-description: How to manage the on-premises data gateway gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
+description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Manage your data source - Import/Scheduled Refresh
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
+Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -116,11 +116,11 @@ If you are listed in the **Users** tab of the data source configured within the 
 > 
 
 ## Limitations
-* OAuth is not a supported authentication scheme with the On-Premises Data Gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
+* OAuth is not a supported authentication scheme with the on-premises data gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
 
 ## Next steps
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

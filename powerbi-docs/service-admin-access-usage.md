@@ -48,7 +48,7 @@ You can use the Azure AD portal to view sign-in activity.
     ![](media/service-admin-access-usage/azure-portal-sign-ins.png)
 3. Filter the application by either **Microsoft Power BI** or **Power BI Gateway** and select **Apply**.
    
-    **Microsoft Power BI** is for sign-in activity related to the service where as **Power BI Gateway** are specific sign-ins for the On-Premises Data Gateway.
+    **Microsoft Power BI** is for sign-in activity related to the service whereas **Power BI Gateway** are specific sign-ins for the on-premises data gateway.
    
     ![](media/service-admin-access-usage/sign-in-filter.png)
 
@@ -64,7 +64,7 @@ Within the Activity screen, you can select **Download** in the toolbar. This wil
 You can use PowerShell to export the sign-in data. A [sample](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) is available within the Azure AD documentation.
 
 > [!NOTE]
-> For the PowerShell sample to work, be sure to follow the [pre-requisites to access the Azure AD reporting API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
+> For the PowerShell sample to work, be sure to follow the [prerequisites to access the Azure AD reporting API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
 > 
 > 
 
