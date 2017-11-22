@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
@@ -170,11 +170,6 @@ This could be because of a few different scenarios.
 1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
 2. Your account is not listed in the **Users** tab of the data source within the gateway configuration. You will need to get with the administrator of the gateway to be added to that list.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
-
-> [!WARNING]
-> If one of your data sources requires OAuth authentication, you will not be able to configure it with the on-premises data gateway. OAuth authentication is not currently supported with the on-premises data gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
-> 
-> 
 
 ### Error: The received uncompressed data on the gateway client has exceeded limit.
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.

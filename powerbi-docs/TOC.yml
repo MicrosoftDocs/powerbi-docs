@@ -196,8 +196,6 @@
       href: service-connect-to-tygraph.md
     - name: "UserVoice"
       href: service-connect-to-uservoice.md
-    - name: "Visual Studio Team Services"
-      href: service-connect-to-visual-studio.md
     - name: "VMob"
       href: service-connect-to-vmob.md
     - name: "Webtrends"
@@ -528,6 +526,8 @@
       href: service-gateway-onprem-tshoot.md
     - name: "Power BI gateway - personal"
       href: personal-gateway.md
+    - name: "Use Kerberos for single sign-on (SSO)"
+      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
     - name: "Configuring proxy settings"
       href: service-gateway-proxy.md
     - name: "Manage your enterprise data source - Analysis Services"

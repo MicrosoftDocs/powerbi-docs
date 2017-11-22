@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
@@ -57,6 +57,15 @@ Here are additional details about those steps:
    > Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
    > 
    > 
+
+
+> [!NOTE]
+> To enable SSO for SAP HANA, you need to apply the following two HANA-specific configuration fixes to SAP:
+>    1. Upgrade SAP HANA server with SAP’s HANA Patch 122.13, released by SAP at the end of October 2017. 
+>    2. On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+> 
+
+
 
 ## Errors from an insufficient Kerberos configuration
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
