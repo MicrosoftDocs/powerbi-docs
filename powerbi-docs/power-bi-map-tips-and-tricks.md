@@ -73,7 +73,7 @@ In Power BI, if the dataset you are using has fields for longitude and latitude 
 
 ![latitude and longitude](media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
-## Use geo-hierarchies so you can drilldown to different "levels" of location
+## Use geo-hierarchies so you can drill down to different "levels" of location
 When your dataset already has different levels of location data, you and your colleagues can use Power BI to create *geo-hierarchies*. To do this, drag more than one field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy.
 
   ![Location field](media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)

@@ -39,9 +39,9 @@ Other times, you might be in an organization with all sorts of databases from di
 Fortunately, Power BI offers two gateways, fitting each of those scenarios well. These two gateway offerings from Power BI are the following:
 
 * **On-premises data gateway (personal mode)** – allows one user to connect to sources, and can’t be shared with others. Can only be used with Power BI.
-* **On-premises data gateway** – allows multiple users to connect to multiple on-premises data sources, and can be used by Power BI, **PowerApps**, Flow and Azure Logic apps, all with a single gateway installation.
+* **On-premises data gateway** – allows multiple users to connect to multiple on-premises data sources, and can be used by Power BI, PowerApps, Flow, and Azure Logic apps, all with a single gateway installation.
 
-Both gateways perform a similar function – they facilitate access to data residing on a private on-premises network, so that data can be used in cloud-based services like Power BI. The personal gateway can be used by one person and only by Power BI, the **On-premises data gateway** can be used by many users, and many services.
+Both gateways perform a similar function – they facilitate access to data residing on a private on-premises network, so that data can be used in cloud-based services like Power BI. The personal gateway can be used by one person and only by Power BI, the **on-premises data gateway** can be used by many users, and many services.
 
 There are three parts, or stages, to putting a gateway to work:
 
@@ -159,7 +159,7 @@ Okay, you now have a gateway installed, and you’re ready to add data sources. 
 [Using the on-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 
-[Troubleshooting the on-premises Data Gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

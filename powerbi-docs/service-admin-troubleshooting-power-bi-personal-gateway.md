@@ -149,6 +149,6 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
