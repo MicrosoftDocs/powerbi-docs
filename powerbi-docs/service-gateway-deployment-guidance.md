@@ -49,7 +49,7 @@ Depending on which type of connection are use, gateway usage can be different. F
 * For **Scheduled Refresh**: depending on your query size and the number of refreshes occurring per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query is not folded, transformations occur on the gateway machine, and as such, the gateway machine benefits from having more available RAM.
 * For **DirectQuery**: a query is be sent each time any user opens the report or looks at data. So if you anticipate more than 1,000 users accessing the data concurrently, you'll want to make sure your computer has robust and capable hardware components. More CPU cores will result in better throughput for a **DirectQuery** connection.
 
-The requirements for a machine on which you install an **On-premises data gateway** are the following:
+The requirements for a machine on which you install an **on-premises data gateway** are the following:
 
 **Minimum:**
 

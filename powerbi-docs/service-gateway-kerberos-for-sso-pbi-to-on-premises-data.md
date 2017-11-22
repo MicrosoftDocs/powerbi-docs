@@ -73,7 +73,7 @@ The result is that the because of insufficient Kerberos configuration, the gatew
 Several items must be configured in order for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
 ### Prerequisite 1: Install & configure the on-premises data gateway
-This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
+This release of the on-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
 ### Prerequisite 2: Run the Gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:

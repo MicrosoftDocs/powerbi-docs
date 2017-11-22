@@ -1,4 +1,4 @@
-## Install the On-premises data gateway
+## Install the on-premises data gateway
 The data gateway installs and runs on your computer. It is best to install the gateway on a machine that can be left running all the time.
 
 > [!NOTE]
