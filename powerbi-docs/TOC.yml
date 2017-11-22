@@ -196,8 +196,6 @@
       href: service-connect-to-tygraph.md
     - name: "UserVoice"
       href: service-connect-to-uservoice.md
-    - name: "Visual Studio Team Services"
-      href: service-connect-to-visual-studio.md
     - name: "VMob"
       href: service-connect-to-vmob.md
     - name: "Webtrends"
