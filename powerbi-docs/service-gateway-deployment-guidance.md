@@ -21,13 +21,13 @@ ms.author: davidi
 
 ---
 # Guidance for deploying a data gateway for Power BI
-This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **On-premises data gateway** setup.
+This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **on-premises data gateway** setup.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
-For more about **On-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
+For more about **on-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## Installation considerations for the On-premises data gateway
+## Installation considerations for the on-premises data gateway
 Before getting too far into the details of installation and deployment, there are a handful of considerations you should keep in mind. The following sections describe important things to keep in mind.
 
 ### Number of users
@@ -87,7 +87,7 @@ These counters can be accessed from **Windows Performance Monitor**, and can be 
 #### Logs
 Configuration and service logs provide another dimension on what's happening with your gateway. Always check your gateway logs when your connection is not working as expected, as not all error messages are surfaced on the Power BI service.
 
-An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **On-premises-data-gateway when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
+An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **on-premises data gateway** when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
 
 #### Additional logging
 By default the gateway performs basic logging. If you're investigating gateway issues, and need more information about query connection details, you can temporarily enable *verbose logging* to gather additional log information. To do this, in the installed gateway select **Diagnostics > Additional logging**.
@@ -131,7 +131,7 @@ To recover your gateway, make sure you're an admin on the gateway, make sure you
 After you sign in, select the **Migrate an existing gateway** option. Next, you need to choose the gateway you'd like to recover or migrate, and finally provide the recovery key and hit configure. Once that step is done, the old gateway will be replaced by the new gateway, and the new gateway will inherit its name and all data sources previously configured. All data sources will now go through the new machine, without the need to re-publish anything. Automatic failover is not yet supported, but it is a feature that the gateway team is actively considering.
 
 #### Administrators
-You can find a list of gateway administrators in the **Power BI service**. When signed into the **Power BI service, select **Settings** (the gear icon) >"Manage Gateways"-> Gateway UI.  
+You can find a list of gateway administrators in the **Power BI service**. When signed into the **Power BI** service, select **Settings** (the gear icon) **> Manage Gateways > Gateway UI**.  
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
 

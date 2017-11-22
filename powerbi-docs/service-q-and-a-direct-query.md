@@ -35,7 +35,7 @@ Since Power BI Q&A uses the text and schema values from your data source to dete
 
 For more information, see:
 
-* What is the [On-premises data gateway](service-gateway-onprem.md)?
+* What is the [on-premises data gateway](service-gateway-onprem.md)?
 * [Introduction to Power BI Q&A](service-q-and-a.md)
 
 ## Enable Q&A
@@ -57,9 +57,9 @@ When you enable Q&A for your on-premises data, a subset of your data is cached i
 ## Considerations and troubleshooting
 During the Preview phase of this feature, there are several limitations:
 
-* Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the On-premises data gateway will be rolled out during the public preview.
+* Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the on-premises data gateway will be rolled out during the public preview.
 * Full support for row level security defined in SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
-* Live connections are only supported with the On-premises data gateway. As a result, this cannot be used with the personal gateway.
+* Live connections are only supported with the on-premises data gateway. As a result, this cannot be used with the personal gateway.
 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  

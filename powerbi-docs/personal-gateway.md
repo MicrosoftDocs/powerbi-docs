@@ -22,7 +22,7 @@ ms.author: davidi
 ---
 # Power BI Gateway - Personal
 > [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> There is a new version of the personal gateway for Power BI called the **on-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -184,7 +184,6 @@ If you need to white list IP addresses instead of the domains, you can download 
 
 ## Next steps
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
-
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Power BI Premium](service-premium.md)
 

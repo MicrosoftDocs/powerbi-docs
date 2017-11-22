@@ -28,7 +28,7 @@ ms.author: davidi
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
-This will describe the options available for both the [Power BI Gateway – Personal](personal-gateway.md) and the [On-premises data gateway](service-gateway-onprem.md).
+This will describe the options available for both the [Power BI Gateway – Personal](personal-gateway.md) and the [on-premises data gateway](service-gateway-onprem.md).
 
 To get to the schedule refresh screen, you can do the following.
 

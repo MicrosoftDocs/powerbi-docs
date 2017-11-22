@@ -48,7 +48,7 @@ The second is for the actual windows service that interacts with the Power BI se
 
 ### Power BI Gateway - Personal
 > [!NOTE]
-> There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
+> There is a new version of the personal gateway for Power BI, called the **on-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](service-gateway-personal-mode.md).
 > 
 > 
 
