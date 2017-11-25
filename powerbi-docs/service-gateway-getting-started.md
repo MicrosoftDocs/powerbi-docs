@@ -20,8 +20,8 @@ ms.date: 09/25/2017
 ms.author: davidi
 
 ---
-# Getting started with Power BI Gateways
-Welcome to the **Getting Started with Power BI Gateways** guide. This short walk-through gets you acquainted with what a gateway does, how it works, and how to get your own gateway installed, configured, and running.  
+# Getting started with Power BI gateways
+Welcome to the **Getting started with Power BI gateways** guide. This short walk-through gets you acquainted with what a gateway does, how it works, and how to get your own gateway installed, configured, and running.  
 
 ![](media/service-gateway-getting-started/gw_gettingstarted_0a.png)
 

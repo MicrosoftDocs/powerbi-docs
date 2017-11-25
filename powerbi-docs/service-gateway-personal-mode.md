@@ -75,7 +75,7 @@ That's it - almost. With the new gateway installed, you no longer need to previo
 To determine which version of the personal gateway you currently have installed, you can do the following:
 
 * The previous version of the personal gateway is called **Power BI Gateway - Personal** and uses the Power BI icon in its installation dialog.
-* The new version of the personal gateway is called **on-premises data gateway (personal mode)** and uses the Gateway icon (a cloud with an up-and-down arrow along the bottom).
+* The new version of the personal gateway is called **on-premises data gateway (personal mode)** and uses the gateway icon (a cloud with an up-and-down arrow along the bottom).
 
 You can go to **Add/Remove Programs** and see whether **Power BI Gateway - Personal** appears on the list, and if so, you have the previous version of the personal gateway installed.
 

@@ -45,7 +45,7 @@ Here is a listing of the fully qualified domain names used by the gateway.
 > 
 
 ## Forcing HTTPS communication with Azure Service Bus
-You can force the Gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. This may have an impact on performance. To do so, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. This may have an impact on performance. To do so, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -55,7 +55,7 @@ You can force the Gateway to communicate with Azure Service Bus using HTTPS inst
 
 The value for the *ServiceBusSystemConnectivityModeString* parameter is case sensitive. Valid values are *AutoDetect* and *Https*.
 
-Alternatively, you can force the Gateway to adopt this behavior using the Gateway user interface, beginning with the [March 2017](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/) release. In the Gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
+Alternatively, you can force the gateway to adopt this behavior using the gateway user interface, beginning with the [March 2017](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/) release. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 

@@ -112,7 +112,11 @@ A:  The likely explanation is that the dataset owner has, accidentally or intent
 
 A:  Another possibility is that you've dropped the field into a *bucket* that only allows categorical values.  In that case, your only options will be count and distinct count.
 
-A:  And a third possibility is that you're using the field for an axis. On a bar chart axis, for example, Power BI shows one bar for each distinct value -- it doesn't aggregate the field values at all. NOTE: The exception to this rule is scatter charts, which *require* aggregated values for the X and Y axes.
+A:  And a third possibility is that you're using the field for an axis. On a bar chart axis, for example, Power BI shows one bar for each distinct value -- it doesn't aggregate the field values at all. 
+
+>[!NOTE]
+>The exception to this rule is scatter charts, which *require* aggregated values for the X and Y axes.
+
 
 Q:  I have a scatter diagram and I want my field to *not* aggregate.  How do I do this?
 

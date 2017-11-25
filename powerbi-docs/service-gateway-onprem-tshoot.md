@@ -370,7 +370,7 @@ When using the gateway for scheduled refresh, **Refresh History** can help you s
 For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
 
 ## Next steps
-[Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
+[Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
