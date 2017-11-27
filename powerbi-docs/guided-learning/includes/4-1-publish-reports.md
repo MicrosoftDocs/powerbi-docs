@@ -8,8 +8,8 @@ Your report and data, including visualizations, queries, and custom measures, ar
 
 ![](media/4-1-publish-reports/4-1_2.png)
 
-> NOTE: It's common to refer to Power BI Desktop reports as **.pbix** files, which is the extension they're given in Windows.
-> 
+> [!NOTE]
+> It's common to refer to Power BI Desktop reports as **.pbix** files, which is the extension they're given in Windows.
 > 
 
 Once the upload is complete, a dialog box tells you the publishing process succeeded and a link is provided in that dialog to take you directly to your report in the Power BI service, in a web browser.

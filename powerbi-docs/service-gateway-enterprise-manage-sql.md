@@ -29,7 +29,7 @@ You can download the gateway from the Power BI service. Select **Downloads** > *
 ![](media/service-gateway-enterprise-manage-sql/powerbi-download-data-gateway.png)
 
 ## Add a gateway
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [!NOTE]
 > **Manage gateways** will not show up until you are the admin of at least one gateway. This occurs when you are added as an admin to a gateway, or you install and configur a gateway yourself.
