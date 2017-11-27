@@ -84,7 +84,7 @@ Several items must be configured in order for Kerberos Constrained Delegation to
 ### Prerequisite 1: Install & configure the on-premises data gateway
 This release of the on-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
-### Prerequisite 2: Run the Gateway Windows service as a domain account
+### Prerequisite 2: Run the gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
 
 ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_04.png)
@@ -115,11 +115,11 @@ Note that you must be a domain administrator to perform those two configuration 
 The following sections describe these steps in turn.
 
 ### Configure an SPN for the gateway service account
-First, determine whether an SPN was already created for the domain account used as the Gateway service account, but following these steps:
+First, determine whether an SPN was already created for the domain account used as the gateway service account, but following these steps:
 
 1. As a domain administrator, launch **Active Directory Users and Computers**
-2. Right-click on the domain, select **Find**, and type in the account name of the Gateway service account
-3. In the search result, right-click on the Gateway service account and select **Properties**.
+2. Right-click on the domain, select **Find**, and type in the account name of the gateway service account
+3. In the search result, right-click on the gateway service account and select **Properties**.
    
    * If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about configuring Delegation settings.
 
@@ -131,10 +131,10 @@ For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”,
 
 With that step completed, we can move on to configuring delegation settings.
 
-### Configure delegation settings on the Gateway service account
-The second configuration requirement is the delegation settings on the Gateway service account. There are multiple tools you can use to perform these steps. In this article, we'll use **Active Directory Users and Computers**, which is a Microsoft Management Console (MMC) snap-in that you can use to administer and publish information in the directory, and available on domain controllers by default. You can also enable it through **Windows Feature** configuration on other machines.
+### Configure delegation settings on the gateway service account
+The second configuration requirement is the delegation settings on the gateway service account. There are multiple tools you can use to perform these steps. In this article, we'll use **Active Directory Users and Computers**, which is a Microsoft Management Console (MMC) snap-in that you can use to administer and publish information in the directory, and available on domain controllers by default. You can also enable it through **Windows Feature** configuration on other machines.
 
-We need to configure **Kerberos Constrained Delegation** with protocol transiting. With constrained delegation, you must be explicit with which services you want to delegate to – for example, only your SQL Server or your SAP HANA server will accept delegation calls from the Gateway service account.
+We need to configure **Kerberos Constrained Delegation** with protocol transiting. With constrained delegation, you must be explicit with which services you want to delegate to – for example, only your SQL Server or your SAP HANA server will accept delegation calls from the gateway service account.
 
 This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, so on). To learn how to configure those data source server SPNs, please refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
 

@@ -139,7 +139,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Get Data***
 
 * File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
-* Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
+* Find SSAS servers set up with the Enterprise gateway and other gateway updates: Now when you set up an Enterprise gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
 
 ***Row-level security (RLS)***
 

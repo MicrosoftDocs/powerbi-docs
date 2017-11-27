@@ -90,7 +90,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
 
-If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md).
+If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md).
 
 ## Next steps
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
