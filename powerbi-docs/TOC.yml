@@ -950,6 +950,10 @@
       href: developer/migrate-tool.md
     - name: "Migration code snippets"
       href: developer/migrate-code-snippets.md
+    - name: "Troubleshooting your embedded application"
+      href: developer/embedded-troubleshoot.md
+    - name: "FAQ"
+      href: developer/embedded-faq.md
   - name: Create a custom visual
     items: 
     - name: "Create a custom visual with the Developer Tools"
