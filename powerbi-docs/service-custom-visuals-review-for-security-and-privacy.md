@@ -96,12 +96,9 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 * If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review
 * If you find something suspicious or unclear, please reach out to us we're here to help.
 
-## See also
+## Next steps
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
-[Add a custom visualizations to a report (Power BI Desktop)](power-bi-custom-visuals-use.md)  
-[Add a custom visualization to a report (Power BI Service)](power-bi-report-add-custom-visual.md)  
 [Publish custom visuals to the Office store](developer/office-store.md)  
 [Getting started with custom visuals developer tools](service-custom-visuals-getting-started-with-developer-tools.md)  
 [How to certify a custom visual](power-bi-custom-visuals-certified.md)    

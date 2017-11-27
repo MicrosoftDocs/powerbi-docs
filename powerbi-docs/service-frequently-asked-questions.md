@@ -54,7 +54,8 @@ While there is not a direct way to discover this, you can view the Azure Active 
 ## What do I need to use Power BI?
 Just a Web browser and work email address.
 
-**Note:** Work email addresses ending in .gov and .mil aren’t currently supported.
+>[!NOTE]
+>Work email addresses ending in .gov and .mil aren’t currently supported.
 
 ## Why do I have to sign up with my work email?
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](service-self-service-signup-for-power-bi.md).
@@ -71,7 +72,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
 ### On-premises data gateway
-With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [on-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
 
 ### Power BI Report Server
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
@@ -111,9 +112,8 @@ You can download the Power BI mobile apps from their respective stores, also for
 * [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 * [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
-## Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises."
-### Does this mean I am limited to one copy of Power BI Desktop for the entire company?
-Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop for the entire company. Each individual user at the company may install and use one copy on their premises.
+## Am I limited to one copy of Power BI Desktop for my entire company?
+Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises." This does not limit you to one copy of Power BI Desktop for the entire company. Each individual user at the company may install and use one copy on their premises.
 
 ## Where do I get started with Power BI?
 The following resources are available to help get your started:

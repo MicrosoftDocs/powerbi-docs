@@ -20,13 +20,15 @@ ms.author: davidi
 
 ---
 # Configuring scheduled refresh
-> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. See the [*Schedule refresh*](#schedule-refresh) section later in this article for more information.
+
+>[!NOTE]
+>After two months of inactivity, scheduled refresh on your dataset is paused. See the [*Schedule refresh*](#schedule-refresh) section later in this article for more information.
 > 
 > 
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
-This will describe the options available for both the [Power BI Gateway – Personal](personal-gateway.md) and the [On-premises Data Gateway](service-gateway-onprem.md).
+This will describe the options available for both the [Power BI Gateway – Personal](personal-gateway.md) and the [on-premises data gateway](service-gateway-onprem.md).
 
 To get to the schedule refresh screen, you can do the following.
 
@@ -63,8 +65,8 @@ You’re only required to sign in to data sources the first time you use refresh
 
 When things go wrong, the problem usually has something to do with either the gateway being offline because it could not sign in to Windows and start the service, or Power BI could not sign in to the data sources in order to query for updated data. If refresh fails, check the dataset’s settings. If the gateway service is offline, Gateway Status is where you’ll see the error. If Power BI cannot sign into the data sources, you’ll see an error in Data Source Credentials.
 
-### On-premises Data Gateway
-If you are using the On-premises Data Gateway to refresh data, you do not need to supply credentials as they are defined for the data source by the gateway administrator.
+### On-premises data gateway
+If you are using the on-premises data gateway to refresh data, you do not need to supply credentials as they are defined for the data source by the gateway administrator.
 
 ![](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
 
@@ -78,13 +80,15 @@ The scheduled refresh section is where you define the frequency and time slots t
 
 You must set the **Keep your data up to date** slider to **Yes** in order to configure the settings.
 
-> **Note**: The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
+> [!NOTE]
+> The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 > 
 > 
 
 ![](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
-> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
+> [!NOTE]
+> After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
 > 
 > 
 
@@ -115,15 +119,15 @@ Certain datasets are supported against different gateways for scheduled refresh.
 ## Troubleshooting
 Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
 
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Next steps
 [Data refresh in Power BI](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

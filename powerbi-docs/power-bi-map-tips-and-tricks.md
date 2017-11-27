@@ -73,7 +73,7 @@ In Power BI, if the dataset you are using has fields for longitude and latitude 
 
 ![latitude and longitude](media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
-## Use geo-hierarchies so you can drilldown to different "levels" of location
+## Use geo-hierarchies so you can drill down to different "levels" of location
 When your dataset already has different levels of location data, you and your colleagues can use Power BI to create *geo-hierarchies*. To do this, drag more than one field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy.
 
   ![Location field](media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)
@@ -86,7 +86,7 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 * On the left there are 2 other drill options. The first option, ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
 * The second option, ![drilldown with maps](media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
-## See also
+## Next steps
 [Drill down in a Power BI visualization](power-bi-visualization-drill-down.md)
 
 [Power Bi visualizations](power-bi-report-visualizations.md)

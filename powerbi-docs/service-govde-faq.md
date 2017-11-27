@@ -39,13 +39,13 @@ The following questions and answers provide important information for Power BI P
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
-5. **Can I use Power BI Desktop, Power BI Mobile, On-premises Data Gateway and Publisher for Excel with the Power BI service for Germany cloud?**
+5. **Can I use Power BI Desktop, Power BI Mobile, on-premises data gateway and Publisher for Excel with the Power BI service for Germany cloud?**
    
    Yes. We've updated our Power BI client products to seamlessly work with the Power BI service for Germany cloud. Please login with your Power BI service for Germany cloud account to start using the same client products with Power BI service for Germany cloud. You can download the latest version of client products from the following locations:
    
    * [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    * [Power BI Mobile](https://powerbi.microsoft.com/mobile/)
-   * [On-premises Data Gateway](https://powerbi.microsoft.com/gateway/)
+   * [On-premises data gateway](https://powerbi.microsoft.com/gateway/)
    * [Power BI Publisher for Excel](https://powerbi.microsoft.com/excel-dashboard-publisher/)
 6. **Are there any feature limitations of the Power BI service for Germany cloud?**
    
@@ -71,7 +71,7 @@ The following questions and answers provide important information for Power BI P
 | Azure Portal (For Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-## More Information
+### Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)

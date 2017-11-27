@@ -29,7 +29,8 @@ With **Power BI** and **ExpressRoute**, you can create a private network connect
 
 You can get [more information about ExpressRoute](https://azure.microsoft.com/services/expressroute/) or learn [how to sign up](https://azure.microsoft.com/pricing/details/expressroute/).
 
-> **Note:** Power BI is supported in Public peering mode, as described in [this FAQ](https://docs.microsoft.com/azure/expressroute/expressroute-faqs).
+> [!NOTE]
+> Power BI is supported in Public peering mode, as described in [this FAQ](https://docs.microsoft.com/azure/expressroute/expressroute-faqs).
 > 
 > 
 
@@ -44,7 +45,7 @@ The two overall exceptions to Power BI using ExpressRoute are:
 * Static files downloaded from the **Content Delivery Network (CDN)** and websites
 * **Telemetry** data sent over the public Internet
 
-Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **On-premises Data Gateway**, or **Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
+Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **on-premises data gateway**, or **Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
 
 Certain **telemetry data** is also sent over the public Internet and over ExpressRoute. Telemetry data includes usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity.
 
@@ -88,6 +89,6 @@ Some **custom visuals** are created by third-parties, some are created by Micros
 ### Power BI Mobile and ExpressRoute
 This document does not cover the use of Power BI Mobile apps.  
 
-### On-premises Data Gateway and ExpressRoute
-When an **On-premises Data Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
+### On-premises data gateway and ExpressRoute
+When an **on-premises data gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
 

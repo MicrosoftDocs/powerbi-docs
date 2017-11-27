@@ -25,7 +25,8 @@ The **Power BI service** has a version available for United States Government cu
 
 For more information about the **Power BI service** for US Government, including its features and limitations, check out [Power BI for United States Government customers - Overview](service-govus-overview.md).
 
-> **Note:** This article is intended for administrators who have authority to sign up their US Government organization for Power BI. If you are an end-user, contact your administrator about getting a subscription to Power BI for US Government.
+> [!NOTE]
+> This article is intended for administrators who have authority to sign up their US Government organization for Power BI. If you are an end-user, contact your administrator about getting a subscription to Power BI for US Government.
 > 
 > 
 
@@ -39,18 +40,22 @@ Once you have signed up for Power BI US Government some features may not work un
 ### US Government organizations that are new Office Cloud customers
 If your organization is a new **Office Government Cloud** customer, follow these steps:
 
-> **Note:** These steps should be performed by the portal administrator.
+> [!NOTE]
+> These steps should be performed by the portal administrator.
 > 
 > 
 
-1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
+1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
+    >[!NOTE]
+    >If you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
 2. Select Office G3 and complete the form for an Office trial
 3. Once you are an Office Cloud customer continue on with the steps below for "Existing Office Government Cloud customers"
 
 ### Existing Office Government Cloud customers
 If your organization is an existing **Office Government Cloud** customer, but you don't have a **Power BI** subscription (Free or otherwise), follow these steps:
 
-> **Note:** These steps should be performed by the portal administrator.
+> [!NOTE]
+> These steps should be performed by the portal administrator.
 > 
 > 
 
@@ -120,7 +125,7 @@ When using a mix of Free and Pro licenses in a US Government tenant, and going t
 
 To identifying users in your tenant that are running the Free license of Power BI, administrators can run the licensing report, after which Free license users show up as **Power BI Standard**.
 
-## More Information
+## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Overview of Power BI for US Government](service-govus-overview.md)

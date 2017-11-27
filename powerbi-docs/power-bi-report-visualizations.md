@@ -41,7 +41,7 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 ## Pin the visualization
 When you have the visualization the way you want it, you can [pin it to a dashboard](service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
 
-## See also
+## Next steps
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 [Reports in Power BI](service-reports.md)  
 [Dashboards in Power BI](service-dashboards.md)  

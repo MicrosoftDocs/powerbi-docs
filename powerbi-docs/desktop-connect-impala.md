@@ -36,7 +36,8 @@ When prompted, put in your username and password, or connect anonymously - eithe
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
-> **Note:** Once you put in your username and password for a particular **Impala** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
+> [!NOTE]
+> Once you put in your username and password for a particular **Impala** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
 > 
 
@@ -49,7 +50,7 @@ There are a few limits and considerations to keep in mind with the **Impala** co
 
 * Future plans include enabling refresh support using the **Power BI Gateway**.
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

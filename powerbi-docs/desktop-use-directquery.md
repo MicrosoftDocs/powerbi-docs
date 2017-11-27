@@ -79,7 +79,7 @@ The following three points should be taken into consideration when using **Direc
 ## Publish to the Power BI service
 Reports created using **DirectQuery** can be published to the Power BI Service.
 
-If the data source used does not need the **On-Premises Data Gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), credentials must be provided before the published report will be displayed in the Power BI Service.
+If the data source used does not need the **on-premises data gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), credentials must be provided before the published report will be displayed in the Power BI Service.
 
 You can provide credentials by selecting the **Settings** gear icon in Power BI, then select **Settings**.
 
@@ -91,9 +91,9 @@ Power BI displays the **Settings** window. From there, select the **Datasets** t
 
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to such data sources results in an error.
 
-For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-Premises Data Gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-Premises Data Gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **on-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about on-premises data gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
-## More Information
+## Next steps
 For more information about **DirectQuery**, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)

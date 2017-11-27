@@ -56,7 +56,8 @@ Once **Color Class** is selected, the data is sorted based on the informal hiera
 
 ![](media/desktop-inline-hierarchy-labels/inlinehierarchy_9.png)
 
-> **Note**: The inline hierarchy label feature doesn't yet allow for the built-in time hierarchy to be sorted by value; it's only sorted by hierarchy order.
+> [!NOTE]
+> The inline hierarchy label feature doesn't yet allow for the built-in time hierarchy to be sorted by value; it's only sorted by hierarchy order.
 > 
 > 
 

@@ -42,7 +42,7 @@ Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/get
    
    ![](media/service-connect-to-sparkpost/dashboard.png)
 
-**What Now?**
+**What now?**
 
 * Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.

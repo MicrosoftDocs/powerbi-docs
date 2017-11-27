@@ -36,7 +36,8 @@ To enable cross-filtering for DirectQuery in Power BI Desktop, select **File > O
 
 ![](media/desktop-bidirectional-filtering/bidirectional-filtering_1.png)
 
-> **Note:** When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as *joe@contoso.com*) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipleName*.
+> [!NOTE]
+> When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as *joe@contoso.com*) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipleName*.
 > 
 > 
 

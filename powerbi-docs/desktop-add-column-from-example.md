@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
@@ -80,25 +80,29 @@ There are many transformations that are available when using **Add column from E
 
 * **Reference**
   
-  * Reference to a specific column (including trim, clean (as of June 2017), and case transformations)
+  * Reference to a specific column (including trim, clean, and case transformations)
+
 * **Text transformations**
   
   * Combine (supports combination of literal strings and entire column values)
   * Replace
   * Length
-  * Extract
-    
+  * Extract   
     * First Characters
     * Last Characters
     * Range
     * Text before Delimiter
     * Text after Delimiter
     * Text between Delimiters
-  * The following supported **text transformations** are available beginning with the June 2017 release of **Power BI Desktop**:
-    
     * Length
 
-> **Note:** All *Text* transformations take into account the potential need to trim, clean (as of June 2017), or apply a case transformation to the column value.
+* The following supported **text transformations** are available beginning with the November 2017 release of **Power BI Desktop**:
+    
+  * Remove Characters
+  * Keep Characters
+
+> [!NOTE]
+> All *Text* transformations take into account the potential need to trim, clean, or apply a case transformation to the column value.
 > 
 > 
 
@@ -114,8 +118,6 @@ There are many transformations that are available when using **Add column from E
   * Week of Month
   * Week of Year
   * Year
-* The following supported additional **Date transformations** are available beginning with the June 2017 **Power BI Desktop** release:
-  
   * Age
   * Start of Year
   * End of Year
@@ -129,20 +131,22 @@ There are many transformations that are available when using **Add column from E
   * Day of Month
   * Start of Day
   * End of Day
+
+
 * **Time transformations**
   
   * Hour
   * Minute
-  * Second
-* **Date/Time/Timezone transformations** - The following supported transformation are available beginning with the July 2017 **Power BI Desktop** release:
-  
+  * Second  
   * To Local Time
 
-> **Note:** All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
+> [!NOTE]
+> All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
 > 
 > 
 
-* **Number transformations** - The following supported transformations are available beginning with the July 2017 **Power BI Desktop** release:
+* **Number transformations** 
+
   * Absolute Value
   * Arccosine
   * Arcsine
@@ -170,3 +174,10 @@ There are many transformations that are available when using **Add column from E
   * Sum
   * Tangent
 
+* The following supported **number transformation** is available beginning with the November 2017 release of **Power BI Desktop**:
+
+  * Bucketing/Ranges
+
+* **General**
+  
+  * Conditional Column

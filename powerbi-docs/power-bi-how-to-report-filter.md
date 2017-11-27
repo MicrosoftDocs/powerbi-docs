@@ -117,7 +117,7 @@ If the field values represent date or time, you can specify a start/end time whe
 
 ![](media/power-bi-how-to-report-filter/pbi_date-time-filters.png)
 
-## See also
+## Next steps
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)  
 [Interact with filters and highlighting in report Reading View](service-interact-with-a-report-in-reading-view.md)  
 [Create filters in report Editing View](power-bi-report-add-filter.md)  

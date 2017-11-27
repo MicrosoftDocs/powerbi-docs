@@ -52,7 +52,8 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
        output <- dataset
        output$completedValues <- completedData$"SMI missing values"
    
-   > **Note:** You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation:
+   > [!NOTE]
+   > You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation:
    > |      > install.packages('mice')
    > 
    > 
@@ -69,7 +70,6 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
    
    Once we do so, we see a new column in the **Fields** well called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. We'll see how R handles that in the next section.
    
-   Notice
 
 With just five lines of R script, **Query Editor** filled in the missing values with a predictive model.
 
@@ -80,7 +80,8 @@ Now we can create a visual to see how the R script code using the *mice* library
 
 Once that visual is complete, and any other visuals we might want to create using **Power BI Desktop**, we can save the **Power BI Desktop** file (which saves as a .pbix file) and then use the data model, including the R scripts that are part of it, in the Power BI service.
 
-> **Note:** Want to see a completed .pbix file with these steps completed? You're in luck - you can download the completed **Power BI Desktop** file used in these examples [right here](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with R in PQ.pbix).
+> [!NOTE]
+> Want to see a completed .pbix file with these steps completed? You're in luck - you can download the completed **Power BI Desktop** file used in these examples [right here](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with R in PQ.pbix).
 > 
 > 
 

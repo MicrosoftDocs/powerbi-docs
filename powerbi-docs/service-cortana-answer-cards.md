@@ -90,7 +90,7 @@ Results with high scoring answers (such as a complete match of a specified page 
 > 
 > 
 
-## See also
+## Next steps
 [Using Cortana with Power BI](service-cortana-intro.md)
 
 Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](service-cortana-troubleshoot.md).

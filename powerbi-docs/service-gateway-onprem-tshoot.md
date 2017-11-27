@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting the On-Premises Data Gateway
-description: This article provides ways for you to troubleshoot issues you are having with the On-Premises Data Gateway. It provides potential workarounds to known issues, as well as tools to assist you.
+title: Troubleshooting the on-premises data gateway
+description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
-# Troubleshooting the On-Premises Data Gateway
-This article discusses some common issues you may encounter when using the **On-premises Data Gateway**.
+# Troubleshooting the on-premises data gateway
+This article discusses some common issues you may encounter when using the **on-premises data gateway**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -83,14 +83,15 @@ To correct this, do the following.
 4. Optionally apply the recovery key to restore an existing gateway.
 
 ### Support for TLS 1.1/1.2
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 will end, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+With the August 2017 update and beyond, the on-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the on-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 will end, so by then you must upgrade your on-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
-It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
+It's important to note that TLS 1.0 is still supported by the on-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
 
-> **Note:** Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+> [!NOTE]
+> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
 > 
 > 
 
@@ -114,7 +115,7 @@ This error could occur for different reasons. Be sure to validate that you can c
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownError**.
 
-You can also look in the Event Logs > **Applications and Services Logs** > **On-premises Data Gateway Service** for more details.
+You can also look in the Event Logs > **Applications and Services Logs** > **on-premises data gateway Service** for more details.
 
 ### Error: We encountered an error while trying to connect to <server>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
@@ -163,23 +164,18 @@ This will occur if you have a single row greater than 4 MB in size. You will nee
 ### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate.
 This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the netbios name for the server. This will cause a mismatch for the certificate. To resolve this issue, you will need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
-### I don't see the On-Premises Data Gateway persent when configuring scheduled refresh.
+### I don't see the on-premises data gateway persent when configuring scheduled refresh.
 This could be because of a few different scenarios.
 
 1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
 2. Your account is not listed in the **Users** tab of the data source within the gateway configuration. You will need to get with the administrator of the gateway to be added to that list.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
-> [!WARNING]
-> If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
-> 
-> 
-
 ### Error: The received uncompressed data on the gateway client has exceeded limit.
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.
 
 ## Reports
-### Report could not access the data source because you do not have access to our data source via an On-Premises Data Gateway.
+### Report could not access the data source because you do not have access to our data source via an on-premises data gateway.
 This is usually caused by one of the following.
 
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
@@ -373,10 +369,10 @@ When using the gateway for scheduled refresh, **Refresh History** can help you s
 
 For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
 
-## See also
+## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  

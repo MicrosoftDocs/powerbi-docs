@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
@@ -25,7 +25,8 @@ ms.author: davidi
 
 ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
 
-> **Note:** These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
+> [!NOTE]
+> These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
 > 
 > 
 
@@ -72,8 +73,8 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 ## Considerations and limitations
 There are a few known issues and limitations to the accessibility features, described in the following list:
 
-* JAWS is only supported in reports that are viewed in the **Power BI service**, including any embedded reports. The **Power BI Desktop** team is actively working on also making it available in reports viewed in **Power BI Desktop**.
+* JAWS is supported in reports that are viewed in the **Power BI service**, including any embedded reports. JAWS is also supported in **Power BI Desktop**, however you must open the screen reader before opening any **Power BI Desktop** files, in order for screen reading to work properly.
 
-## More Information
+## Next steps
 * [Use Report Themes in Power BI Desktop (Preview)](desktop-report-themes.md)
 

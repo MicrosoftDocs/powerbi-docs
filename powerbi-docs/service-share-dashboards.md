@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.author: maggies
 
 ---
@@ -60,7 +60,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
    
    When recipients outside your organization click the link, they see the dashboard, but not in the usual Power BI portal. See [Share a dashboard with people outside your organization](service-share-dashboards.md#share-a-dashboard-with-people-outside-your-organization) below for details.
 
-## Who has access to a dashboard I shared?
+## Who has access to a dashboard you shared?
 Sometimes you need to see the people you've shared a dashboard with, and see who they've shared it with.
 
 1. In the list of dashboards or in the dashboard itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
@@ -106,18 +106,16 @@ Things to keep in mind about sharing dashboards:
 
 * In general, you and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard, then the credentials of every person are used to determine which data they can access.
 * Everyone you share your dashboard with can see it and interact with your reports in [Reading View](service-report-open-in-reading-view.md). They can't create reports or save changes to existing reports.
-* No-one can see or download the dataset.
+* No one can see or download the dataset.
 * Everyone can manually [refresh the dashboard data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 * Coworkers who have the same email domain as you, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
-* If your coworkers already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example:   
-  
-    https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
+* If your coworkers already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Share a report](service-share-reports.md)
+* [Share just a Power BI report](service-share-reports.md)
 * Questions? [Try the Power BI Community](http://community.powerbi.com/).
 

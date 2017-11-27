@@ -25,7 +25,7 @@ ms.author: mihart
 2. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.  
    ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
-## See also
+### Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)  

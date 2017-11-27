@@ -54,7 +54,7 @@ If you try to sign up with a personal email address, you will get a message indi
 > 
 > 
 
-## Which one do I need
+## Which one do you need?
 You can determine which one you need by reviewing what comes with each license type. Free users have most of the functionality of the services with the exception of sharing and collaboration features. Power BI Pro users can make use of all features in the service, but is not free. If you don't have a need to share any content, Free may be the route for you. You can learn more on the [Power BI Pricing page](https://powerbi.microsoft.com//pricing/).
 
 The remainder of this article will look at how to sign up for each option.
@@ -90,7 +90,7 @@ When you are in the service, you can verify that you have a free account by goin
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
 
-### What if I'm already part of an existing organization
+### What if you're already part of an existing organization?
 If your account is part of an existing organization, you will get a message asking you to sign in with that account. Select **Continue** and sign in with your Office 365 login.
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
@@ -99,7 +99,7 @@ You will then see a message asking you to select **Start**.
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
 
-## In-service Power BI Pro 60 day trial
+## In-service Power BI Pro 60-day trial
 After you have signed up for your free account, you can optionally choose to try Pro free for 60 days. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional sharing and collaboration features. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 * [Create an app worksapce](service-create-distribute-apps.md)
@@ -113,10 +113,11 @@ Then you can select **Start trial**.
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
 
-> **Notes**
-> 
-> * Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
-> * If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
+>[!NOTE]
+>Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
+
+>[!NOTE]
+>If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 > 
 > [!NOTE]
 > With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](service-extended-pro-trial.md).
@@ -128,7 +129,7 @@ When you are in the service, you can verify that you have a Pro trial account by
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
-## What if you want the full Power BI Pro
+## What if you want the full Power BI Pro?
 There is not a way to get the Power BI Pro license as an individual. You will need to speak to your IT Admin to purchase and assign the license to your account. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
 ## Troubleshooting

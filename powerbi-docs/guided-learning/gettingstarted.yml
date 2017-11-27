@@ -1,13 +1,13 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Getting Started
+title: Getting started
 metadata:
-  title: Getting Started | Microsoft Power BI
+  title: Getting started | Microsoft Power BI
   description: Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
   audience: Business User
   level: Beginner
   nextTutorialHref: gettingdata
-  nextTutorialTitle: Getting Data
+  nextTutorialTitle: Getting data
   displayType: one-column
   author: davidiseminger
   manager: kfile
@@ -29,7 +29,7 @@ items:
     > [!Video https://www.youtube.com/embed/1c01r_pAZdk?rel=0]
 
     [!INCLUDE [](includes/0-1-intro-using-power-bi.md)]
-- title: The Building Blocks of Power BI
+- title: The building blocks of Power BI
   durationInMinutes: 6
   content: |
     [!INCLUDE [](includes/0-0b-building-blocks-power-bi.md)]
@@ -39,9 +39,9 @@ items:
     > [!Video https://www.youtube.com/embed/5srP3h3RJf8?rel=0]
 
     [!INCLUDE [](includes/0-3-dashboards-cloud-services.md)]
-- title: Review and What's Next
+- title: Review and what's next
   durationInMinutes: 5
   content: |
     [!INCLUDE [](includes/0-4-summary-of-intro-to-power-bi.md)]
 - content: |
-    You've completed the **Getting Started** section of Microsoft Power BI Guided Learning.
+    You've completed the **Getting started** section of Microsoft Power BI Guided learning.

@@ -22,7 +22,7 @@ To get back to individual dates rather than using the date hierarchy, simply rig
 
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
-## What's Next
+## Next steps
 **Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. Now that you know about *modeling* data, you're ready to learn about the fun stuff waiting in the next section: **Visualizations**.
 
 As mentioned before, this course builds your knowledge by following the common flow of work in Power BI:

@@ -21,13 +21,13 @@ ms.author: davidi
 
 ---
 # Guidance for deploying a data gateway for Power BI
-This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **On-premises data gateway** setup.
+This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **on-premises data gateway** setup.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
-For more about **On-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
+For more about **on-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## Installation considerations for the On-premises data gateway
+## Installation considerations for the on-premises data gateway
 Before getting too far into the details of installation and deployment, there are a handful of considerations you should keep in mind. The following sections describe important things to keep in mind.
 
 ### Number of users
@@ -49,7 +49,7 @@ Depending on which type of connection are use, gateway usage can be different. F
 * For **Scheduled Refresh**: depending on your query size and the number of refreshes occurring per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query is not folded, transformations occur on the gateway machine, and as such, the gateway machine benefits from having more available RAM.
 * For **DirectQuery**: a query is be sent each time any user opens the report or looks at data. So if you anticipate more than 1,000 users accessing the data concurrently, you'll want to make sure your computer has robust and capable hardware components. More CPU cores will result in better throughput for a **DirectQuery** connection.
 
-The requirements for a machine on which you install an **On-premises data gateway** are the following:
+The requirements for a machine on which you install an **on-premises data gateway** are the following:
 
 **Minimum:**
 
@@ -73,7 +73,8 @@ There are a few tools that you can use to monitor the use and performance of you
 #### Performance counters
 There are many performance counters that can be used to evaluate and assess activity occurring on the gateway. The counters can help you understand whether you have large volume of activities by the specific type, which may prompt you to deploy a new gateway.
 
-> **Note:** These counters will not capture specific task duration time.
+> [!NOTE]
+> These counters will not capture specific task duration time.
 > 
 > 
 
@@ -86,7 +87,7 @@ These counters can be accessed from **Windows Performance Monitor**, and can be 
 #### Logs
 Configuration and service logs provide another dimension on what's happening with your gateway. Always check your gateway logs when your connection is not working as expected, as not all error messages are surfaced on the Power BI service.
 
-An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **On-premises-data-gateway when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
+An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **on-premises data gateway** when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
 
 #### Additional logging
 By default the gateway performs basic logging. If you're investigating gateway issues, and need more information about query connection details, you can temporarily enable *verbose logging* to gather additional log information. To do this, in the installed gateway select **Diagnostics > Additional logging**.
@@ -130,7 +131,7 @@ To recover your gateway, make sure you're an admin on the gateway, make sure you
 After you sign in, select the **Migrate an existing gateway** option. Next, you need to choose the gateway you'd like to recover or migrate, and finally provide the recovery key and hit configure. Once that step is done, the old gateway will be replaced by the new gateway, and the new gateway will inherit its name and all data sources previously configured. All data sources will now go through the new machine, without the need to re-publish anything. Automatic failover is not yet supported, but it is a feature that the gateway team is actively considering.
 
 #### Administrators
-You can find a list of gateway administrators in the **Power BI service**. When signed into the **Power BI service, select **Settings** (the gear icon) >"Manage Gateways"-> Gateway UI.  
+You can find a list of gateway administrators in the **Power BI service**. When signed into the **Power BI** service, select **Settings** (the gear icon) **> Manage Gateways > Gateway UI**.  
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
 
@@ -138,9 +139,9 @@ From there, you can select a gateway and see the list of gateway administrators.
 
 * Create an **AAD** security group and add other users to it, then add this security group to the list of the respective gateway administrators. This ensures that more than one person has access to the gateway in case of a failure, or when you need to recover or migrate the gateway. This also gives other administrators a view of what gateways are being used in their groups, and which data sources exist on each gateway.
 
-## See also
+## Next steps
 [Configuring proxy settings](service-gateway-proxy.md)  
-[Troubleshooting the on-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [On-premises data gateway FAQ](service-gateway-onprem-faq.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

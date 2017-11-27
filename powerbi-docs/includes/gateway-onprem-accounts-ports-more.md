@@ -2,10 +2,10 @@
 Users will sign in with either a work or school account. This is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email, it may look like nancy@contoso.onmicrosoft.com. Your account, within a cloud service, is stored within a tenant in Azure Active Directory (AAD). In most cases, your AAD account’s UPN will match the email address.
 
 ## Windows Service account
-The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service logon credential. By default, it has the right of Log on as a service. This is in the context of the machine that you are installing the gateway on.
+The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the Windows service logon credential. By default, it has the right of Log on as a service. This is in the context of the machine that you are installing the gateway on.
 
 > [!NOTE]
-> If you selected personal mode, you configure the windows service account separately.
+> If you selected personal mode, you configure the Windows service account separately.
 > 
 > 
 
@@ -66,14 +66,15 @@ For future reference, you can restart the *gateway Windows service* from the use
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ## Support for TLS 1.1/1.2
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On January 15th 2018, support for TLS 1.0 will end, including the gateway's ability to interact with the **Power BI service** using TLS 1.0, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+With the August 2017 update and beyond, the on-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the on-premises data gateway use TLS 1.0 by default. On January 15th 2018, support for TLS 1.0 will end, including the gateway's ability to interact with the **Power BI service** using TLS 1.0, so by then you must upgrade your on-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
-It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
+It's important to note that TLS 1.0 is still supported by the on-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
 
-> **Note:** Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+> [!NOTE]
+> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
 > 
 > 
 

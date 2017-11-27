@@ -141,33 +141,33 @@ If you use Atom, you'll need to set a few things up.
 ## Fork the repository and copy it to your computer
 1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork powerbi-content-pr, the private repo. Community contributors need to fork powerbi-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
 2. Copy the Personal Access Token that you got from [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  At the command prompt, enter the following command.  This command creates a powerbi-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\powerbi-content(-pr).
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  At the command prompt, enter the following command.  This command creates a powerbi-docs(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\powerbi-docs(-pr).
 
 Public repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-docs.git
 
 Private repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content-pr.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-docs-pr.git
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-content-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-docs-pr.git  
 
 ## Set remote repository connection and configure credentials
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
 
 Public repo:
 
-        cd powerbi-content
+        cd powerbi-docs
         git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
         git fetch upstream
 
 Private repo:
 
-        cd powerbi-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content-pr.git
+        cd powerbi-docs-pr
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/MicrosoftDocs/powerbi-docs-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.

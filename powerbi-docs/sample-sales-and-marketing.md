@@ -1,6 +1,6 @@
 ---
-title: 'Sales & Marketing sample for Power BI: Take a tour'
-description: 'Sales & Marketing sample for Power BI: Take a tour'
+title: 'Sales and Marketing sample for Power BI: Take a tour'
+description: 'Sales and Marketing sample for Power BI: Take a tour'
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -20,7 +20,7 @@ ms.date: 10/28/2017
 ms.author: mihart
 
 ---
-# Sales & Marketing sample for Power BI: Take a tour
+# Sales and Marketing sample for Power BI: Take a tour
 The **Sales and Marketing Sample** contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and his company’s market share, product volume, sales, and sentiment.
 
 VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. But, for some reason, VanArsdel’s market share has started to decline, with significant dips in June.

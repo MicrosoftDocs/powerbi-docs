@@ -36,7 +36,8 @@ To share a dashboard that links back to an Excel workbook on OneDrive for Busine
 3. On OneDrive, [modify the permissions](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) as needed.
 4. Select **Share**.
 
-> **Note**: Your colleagues won't be able to pin additional tiles from that workbook, or make changes to the Excel workbook from Power BI.
+>[!NOTE]
+>Your colleagues won't be able to pin additional tiles from that workbook, or make changes to the Excel workbook from Power BI.
 > 
 > 
 

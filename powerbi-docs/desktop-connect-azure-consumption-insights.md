@@ -56,7 +56,8 @@ Once you provide your *Access key* and select **Connect**, a **Navigator** windo
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
-> **Note:** The *Summary and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
+> [!NOTE]
+> The *Summary and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
 > 
 > 
 
@@ -131,7 +132,7 @@ Next you'll need to move any custom columns or measures you created into the new
 ### Step 4: Re-link tables that had relationships
 Many dashboards have additional tables that are used for lookup or filtering, such date tables or tables used for custom projects. Reestablishing those relationships resolves most remaining issues. Here's how to do it.
 
-1. In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
+- In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
@@ -192,7 +193,7 @@ The columns and names of details in the Azure Portal are similar in the API and 
 | SubscriptionId |subscriptionId |SubscriptionId |Yes |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |No |
 
-## More Information
+## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)

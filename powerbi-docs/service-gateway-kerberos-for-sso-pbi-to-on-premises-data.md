@@ -1,5 +1,5 @@
 ---
-title: Use Kerberos on the On-premises gateway for SSO (single sign-on) from Power BI to on-premises data sources
+title: Use Kerberos on the on-premises gateway for SSO (single sign-on) from Power BI to on-premises data sources
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
 services: powerbi
 documentationcenter: ''
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 11/21/2017
 ms.author: davidi
 
 ---
 # Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources
-You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway with Kerberos. The On-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
+You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway with Kerberos. The on-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
 
 The following data sources are currently supported, SQL Server, SAP HANA, and Teradata, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx).
 
@@ -36,7 +36,8 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_01.png)
 
-> **Note:** SSO for Oracle is not enabled yet, but is under development and coming soon.
+> [!NOTE]
+> SSO for Oracle is not enabled yet, but is under development and coming soon.
 > 
 > 
 
@@ -50,11 +51,21 @@ Here are additional details about those steps:
    b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
 3. The gateway service process impersonates the mapped local user, opens the connection to the underlying database and sends the query. The gateway does not need to be installed on the same machine as the database.
    
-   a.    The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
+   - The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
    
-   > **Note:** Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
+   > [!NOTE]
+   > Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
    > 
    > 
+
+
+> [!NOTE]
+> To enable SSO for SAP HANA, you need to apply the following two HANA-specific configuration fixes to SAP:
+>    1. Upgrade SAP HANA server with SAP’s HANA Patch 122.13, released by SAP at the end of October 2017. 
+>    2. On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+> 
+
+
 
 ## Errors from an insufficient Kerberos configuration
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
@@ -70,26 +81,27 @@ The result is that the because of insufficient Kerberos configuration, the gatew
 ## Preparing for Kerberos Constrained Delegation
 Several items must be configured in order for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
-### Pre-requisite 1: Install & configure the On-premises data gateway
-This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
+### Prerequisite 1: Install & configure the on-premises data gateway
+This release of the on-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
-### Pre-requisite 2: Run the Gateway Windows service as a domain account
+### Prerequisite 2: Run the Gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
 
 ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_04.png)
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
-* If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
+* If you started with a previous version of the on-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
   
   * [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
-  * If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
+  * If you already installed the Preview version of the on-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
-> Note: If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
+> [!NOTE]
+> If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
 > 
 > 
 
-### Pre-requisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
+### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
 While it is technically possible for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation, without requiring domain admin rights, that's not the recommended approach. In the following section, the configuration steps necessary for **Pre-requisite 3** in detail.
 
 ## Configuring Kerberos Constrained Delegation for the gateway and data source
@@ -162,7 +174,7 @@ Given those example names and settings, the configuration steps are the followin
     
     Right-click and open the **Properties** for **Impersonate a client after authentication** and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 17. From the list of policies under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
-18. Restart the **On-premises Data Gateway** service process.
+18. Restart the **on-premises data gateway** service process.
 
 ## Running a Power BI report
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
@@ -172,9 +184,9 @@ After all the configuration steps outlined earlier in this article have been com
 This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
 
 ## Switching the gateway to a domain account
-Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **On-premises data gateway** user interface. Here are the steps necessary to do so.
+Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **on-premises data gateway** user interface. Here are the steps necessary to do so.
 
-1. Launch the **On-premises Data Gateway** configuration tool.
+1. Launch the **on-premises data gateway** configuration tool.
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_10.png)
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
@@ -183,8 +195,8 @@ Earlier in this article, we discussed switching the gateway from a local service
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
-## More Information
-For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
+## Next steps
+For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
 * [On-premises data gateway](service-gateway-onprem.md)
 * [DirectQuery in Power BI](desktop-directquery-about.md)

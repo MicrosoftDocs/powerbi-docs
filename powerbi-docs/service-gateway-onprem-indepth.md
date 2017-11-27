@@ -1,6 +1,6 @@
 ---
 title: On-premises data gateway in-depth
-description: This article looks at the On-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services
+description: This article looks at the on-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -25,7 +25,7 @@ It's possible for users in your organization to access on-premises data (to whic
 
 Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.
 
-This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises Data Gateway](service-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
+This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises data gateway](service-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
 
 <!-- Shared Requirements Include -->
 [!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-how-it-works-include.md)]
@@ -116,13 +116,13 @@ Sometimes installing the gateway fails. Or, maybe the gateway seems to install o
 
 In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your gateway is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
-## See also
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+## Next steps
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

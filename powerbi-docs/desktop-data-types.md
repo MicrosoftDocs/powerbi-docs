@@ -27,6 +27,7 @@ When you load data into Power BI Desktop, it will attempt to convert the data ty
 
 This is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
 
+## Determine and specify a column’s data type
 In Power BI Desktop, you can determine and specify a column’s data type in the Query Editor, or in Data View or Report View:
 
 **Data types in Query Editor**
@@ -39,7 +40,7 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types are loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 
-### Number Types
+### Number types
 Power BI Desktop supports three number types:
 
 **Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest value that can be represented in a Decimal Number type is 15 digits long.  The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers.
@@ -48,7 +49,7 @@ Power BI Desktop supports three number types:
 
 **Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).  It can represent the largest possible number of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
 
-### Date/Time Types
+### Date/time types
 Power BI Desktop supports five Date/Time data types in Query View and three in the Report View and model.   Both Date/Time/Timezone and Duration are converted during load into the model.
 
 **Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33ms).  Dates between years 1900 and 9999 are supported.
@@ -64,10 +65,10 @@ Power BI Desktop supports five Date/Time data types in Query View and three in t
 ### Text type
 **Text** - A Unicode character data string. Can be strings, numbers or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
 
-### True/False type
+### True/false type
 **True/False** – A Boolean value of either a True or False.
 
-### Blanks/Nulls type
+### Blanks/nulls type
 **Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](http://msdn.microsoft.com/library/ee634820.aspx) function, and test for blanks by using the [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logical function.
 
 ### Table data type
@@ -83,10 +84,11 @@ If the data in the column you specify as an argument is incompatible with the da
 * If you add values in two columns, and one value happens to be represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number and then does the addition for a numeric result. The following expression returns 44: = "22" + 22.
 * If you attempt to concatenate two numbers, Excel will present them as strings and then concatenate. The following expression returns "1234": = 12 & 34.
 
-### Table of Implicit Data Conversions
+### Table of implicit data conversions
 The type of conversion that is performed is determined by the operator, which casts the values it requires before performing the requested operation. These tables list the operators, and indicate the conversion that is performed on each data type in the column when it is paired with the data type in the intersecting row.
 
-> **Note:**  Text data types are not included in these tables. When a number is represented as in a text format, in some cases Power BI will attempt to determine the number type and represent it as a number.
+> [!NOTE]
+>  Text data types are not included in these tables. When a number is represented as in a text format, in some cases Power BI will attempt to determine the number type and represent it as a number.
 > 
 > 
 
@@ -114,7 +116,8 @@ In the following table the row header is the minuend (left side) and the column 
 
 For example, if a date is used in a subtraction operation with any other data type, both values are converted to dates, and the return value is also a date.
 
-> **Note:**    Data models also support the unary operator, - (negative), but this operator does not change the data type of the operand.
+> [!NOTE]
+>    Data models also support the unary operator, - (negative), but this operator does not change the data type of the operand.
 > 
 > 
 

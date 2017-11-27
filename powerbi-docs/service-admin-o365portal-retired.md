@@ -30,7 +30,7 @@ Access to the **Power BI for Office 365** Admin portal is no longer available. A
 
 For more information, see [Power BI admin portal](service-admin-portal.md).
 
-## See also
+## Next steps
 [Get started with Power BI](service-get-started.md)
 
 [Getting started with Power BI Desktop](desktop-getting-started.md)

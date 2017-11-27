@@ -46,7 +46,8 @@ In the following image, you see how Anna creates one **Power BI Desktop** report
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
-> **Note:** Datasets are only shared in one workspace. To establish a Power BI service live connection, the dataset to which you connect must be in a shared workspace of which you are a member.
+> [!NOTE]
+> Datasets are only shared in one workspace. To establish a Power BI service live connection, the dataset to which you connect must be in a shared workspace of which you are a member.
 > 
 > 
 
@@ -98,7 +99,8 @@ When you select **Load** from the window, you establish a live connection to the
 
 Now you (and others) can create and share custom reports and share them, all from the same dataset. This is a great way to have one knowledgeable person create a well-formed dataset (such as what Anna does), and allow many teammates use that shared dataset to create their own reports.
 
-> **Note:** When you create reports based on dataset using a live connection to the **Power BI service**, you can only publish that report to the same Power BI service workspace that contains the dataset being used.
+> [!NOTE]
+> When you create reports based on dataset using a live connection to the **Power BI service**, you can only publish that report to the same Power BI service workspace that contains the dataset being used.
 > 
 > 
 

@@ -43,7 +43,8 @@ Background refresh updates your favorite dashboards, plus dashboards and reports
 
 You can turn off background refresh, for example to avoid network usage. Check the settings on your device.
 
-> **Note**: If you use the Power BI mobile app on an iOS device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [!NOTE]
+> If you use the Power BI mobile app on an iOS device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 > 
 > Read more about [configuring Power BI mobile apps with Microsoft Intune](service-admin-mobile-intune.md). 
 > 
