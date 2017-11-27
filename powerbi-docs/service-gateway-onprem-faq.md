@@ -20,7 +20,7 @@ ms.date: 10/05/2017
 ms.author: davidi
 
 ---
-# On-Premises Data Gateway FAQ
+# On-premises data gateway FAQ
 <!-- Shared FAQ shared Include -->
 [!INCLUDE [gateway-onprem-faq-shared-include](./includes/gateway-onprem-faq-shared-include.md)]
 
@@ -29,7 +29,7 @@ ms.author: davidi
 **Answer:** No. This is not supported at this time.
 
 **Question:** Can I use the gateway to connect to a multidimensional (OLAP) instance.  
-**Answer:** Yes! The On-Premises Data Gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
+**Answer:** Yes! The on-premises data gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
 
 **Question:** What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
 **Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure.
@@ -57,7 +57,7 @@ ms.author: davidi
 **Question:** Do I need to upgrade the personal gateway?
 **Answer:** No, you can keep using the personal gateway for Power BI.
 
-**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the On-Premises Data Gateway?  
+**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the on-premises data gateway?  
 **Answer:** About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.
 
 **Question:** Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario?  
@@ -67,7 +67,7 @@ ms.author: davidi
 **Answer:** For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
 
 **Question:** Why can't I connect to my Oracle server?  
-**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the gateway. For more information, see [Installing the Oracle Client](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
 **Question:** Will the gateway work with ExpressRoute?  
 **Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
@@ -75,6 +75,6 @@ ms.author: davidi
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

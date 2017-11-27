@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Manage your data source - Analysis Services
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
 
@@ -43,7 +43,7 @@ You can use a live connection against tabular or multidimensional instances.
 * Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
 ## Add a gateway
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [!NOTE]
 > **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
@@ -156,7 +156,7 @@ In the **Power BI service** the following occurs:
 > 
 > 
 
-On the On-Premises Data Gateway with configurable Custom User Mapping, do the following:
+On the on-premises data gateway with configurable Custom User Mapping, do the following:
 
 1. Find Active Directory to search (automatic, or configurable)
 2. Look up the attribute of the AD Person (such as *Email*) based on incoming UPN string (“firstName.lastName@contoso.com”) from the **Power BI service**.
@@ -167,14 +167,14 @@ On the On-Premises Data Gateway with configurable Custom User Mapping, do the fo
 How to configure your gateway to perform the AD Lookup:
 
 1. Download and install the latest gateway
-2. In the gateway, you need to change the **On-premises Data Gateway Service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the Gateway service for the change to take effect.  Go to the Gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
+2. In the gateway, you need to change the **on-premises data gateway service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the gateway service for the change to take effect.  Go to the gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
 3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
    
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
    
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
-5. Restart the **On-premises Data Gateway** service for the configuration change to take effect.
+5. Restart the **on-premises data gateway** service for the configuration change to take effect.
 
 ### Working with mapping rules
 To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
@@ -190,7 +190,7 @@ When you select an item in the list, you can choose to re-order it by using the 
 
 ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### Using Wildcard(*)
+### Using wildcard (*)
 You can use a wildcard for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. This will allow you to take all users and pass a single value to the data source. This is useful when you want all users in your organization to use the same user in your local environment.
 
 ### Test a mapping rule
@@ -209,7 +209,7 @@ You can validate what an original name will be replaced with by entering a value
 ## Remove a data source
 Removing a data source will break any dashboards or reports that rely on the given data source.  
 
-To remove a Data Source, go to the Data Source > **Remove**.
+To remove a data source, go to Data Source > **Remove**.
 
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings6.png)
 
@@ -219,7 +219,7 @@ On the Administrators tab for the gateway, you can add and remove users (or secu
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings8.png)
 
 ## Manage users
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+On the Users tab for the data source, you can add, and remove, users, or security groups, that can use this data source.
 
 > [!NOTE]
 > The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
@@ -251,8 +251,8 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Next steps
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -129,9 +129,9 @@ Row-level security can be used with Analysis Services live connections for on-pr
 
 The effective identity that is provided for the username property must be a windows user with permissions on the Analysis Services server.
 
-**On-Premises Data Gateway configuration**
+**On-premises data gateway configuration**
 
-An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [on-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 **Use of roles**
 

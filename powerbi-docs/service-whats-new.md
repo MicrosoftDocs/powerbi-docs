@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/01/2017
+ms.date: 09/01/2017
 ms.author: sirsu
 
 ---
@@ -139,7 +139,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Get Data***
 
 * File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
-* Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
+* Find SSAS servers set up with the Enterprise gateway and other gateway updates: Now when you set up an Enterprise gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
 
 ***Row-level security (RLS)***
 
@@ -599,7 +599,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 7, 2015**
 
-* You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](service-connect-to-visual-studio.md) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
 * We updated our look to a new modern design, a look that is fresh and distinctive while keeping your focus on what matters: your data and your insights.
 
 **April 28, 2015**

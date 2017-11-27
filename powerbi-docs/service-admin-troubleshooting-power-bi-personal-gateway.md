@@ -84,7 +84,10 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
 ## Data sources
-**Missing data provider** – The personal gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the personal gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the personal gateway.  **Note:** if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
+**Missing data provider** – The personal gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the personal gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the personal gateway.  
+
+>[!NOTE]
+>If you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
 
 **Windows authentication is not supported for Access database** - Power BI currently only supports anonymous for Access database. We are working on enabling Windows authentication for Access database.
 
@@ -149,6 +152,6 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 [Data Refresh](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
