@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 11/27/2017
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -25,9 +25,11 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Featured webinars
 
-Get started with these popular webinars
+Get started with these popular on-demand webinars
 
 - [Getting Started with Power BI](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
+
+- [Better Together: 5 Benefits Excel Users Will Get From Using Power BI](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 - [How to Design Visually Stunning Power BI Reports](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
@@ -41,8 +43,6 @@ Get started with these popular webinars
 Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
-
-- [Better Together: 5 Benefits Excel Users Will Get From Using Power BI - 11/27/17](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 - [Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability -12/05/17](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
