@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/28/2017
 ms.author: asaxton
 
 ---
@@ -57,6 +57,7 @@ For more information regarding the Power BI service administrator role, see [Und
 * [Are there any additional things I should be prepared for?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Is this free? Will I be charged for these licenses?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Where is my Power BI tenant located?](#where-is-my-power-bi-tenant-located)
+* [What is the Power BI SLA (Service Level Agreement)?](#what-is-the-power-bi-sla)
 
 **Security in Power BI**
 
@@ -256,6 +257,9 @@ The **Power BI (free)** licenses are for the free version of Power BI. If you're
 
 ### Where is my Power BI tenant located?
 To learn how to find where your Power BI tenant is located, also known as a data region, see [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+
+### What is the Power BI SLA?
+For information about the Power BI SLA (Service Level Agreement), consult the [Licensing Terms and Documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
 
 ## Security in Power BI
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
