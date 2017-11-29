@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 11/28/2017
 ms.author: asaxton
 
 ---
@@ -136,41 +136,25 @@ You can view more details about an event by selecting the event record in the li
 
 The following table provides details on that you may see displayed.
 
-| **Parameter** | **Description** |
-| --- | --- |
-| Id |Unique identifier of an audit record. |
-| RecordType |The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records. |
-| CreationTime |The date and time in Coordinated Universal Time (UTC) when the user performed the activity. |
-| Operation |The name of the user or admin activity. |
-| OrganizationId |The GUID for your organization's Office 365 service where the event occurred. |
-| UserType |The type of user that performed the operation. See the User Type table for details on the types of users. |
-| UserKey |The Passport Unique ID of the user who performed the activity. |
-| ResultStatus |Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceded, or Failed. |
-| ObjectId |For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. |
-| UserId |The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included. |
-| ClientIp |The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. |
-
-The following table provides details on events you might see.
-
-| **Event** | **Description** | **Additional Details** |
+| **Parameter or Event** | **Description** | **Additional Details** |
 | --- | --- | --- |
-| Downloaded Power BI report |This activity is logged everytime a report is downloaded |Report Name, Dataset Name |
-| Create report |This activity is logged everytime a new report is created. |Report Name, Dataset Name |
-| Edit Report |This activity is logged everytime a report is edited. |Report Name, Dataset Name |
-| Create dataset |This activity is logged everytime a dataset is created. |Dataset Name, DataConnectivityMode |
-| Delete Dataset |This activity is logged everytime a dataset is deleted. |Dataset Name, DataConnectivityMode |
-| Create Power BI app |This acitivity is logged everytime a Power BI app is created |App name, Permissions, Workspace Name |
-| Install Power BI app |This activity is logged everytime a Power AI app installed |App name |
-| Update Power BI app |This activity is logged everytime a Power app in updated |App name, Permissions, Workspace Name |
-| Started Power BI extended trial |This activity is logged everytime an user accepts the extended pro trial that runs until May 31 2018 | |
-| Analyzed Power BI dataset |This activity is logged everytime a Power BI dataset is analyzed in Excel. | |
-| Created Power BI gateway |This activity is logged everytime a new gateway is created. |Gateway Name, Gateway Type |
-| Deleted Power BI gateway |This activity is logged everytime a gateway is deleted. |Gateway Name, Gateway Type |
-| Added Data source to Power BI gateway |This activity is logged everytime a data source in added to the gateway |Gateway Name, Gateway Type, Datasource Name, Datasource Type |
-| Removed data source from Power BI gateway |This activity is logged everytime a data source is removed from a gateway |Gateway Name, Gateway Type, Datasource Name, Datasource Type |
-| Changed Power BI gateway admins |This activity is logged everytime the admins of a gateway are changed (added/removed) |Gateway Name, Users Added, Users Removed |
-| Changed Power IB gateway data source users |This activity is logged everytime the users of a gateway are changed (added/removed) |Gateway Name, Users Added, Users Removed |
-| SetScheduledRefresh |This activity is logged everytime a new refresh is scheduled for a dataset |Dataset Name, Refresh Frequency (in minutes) |
+| Downloaded Power BI report |This activity is logged every time a report is downloaded |Report Name, Dataset Name |
+| Create report |This activity is logged every time a new report is created. |Report Name, Dataset Name |
+| Edit Report |This activity is logged every time a report is edited. |Report Name, Dataset Name |
+| Create dataset |This activity is logged every time a dataset is created. |Dataset Name, DataConnectivityMode |
+| Delete Dataset |This activity is logged every time a dataset is deleted. |Dataset Name, DataConnectivityMode |
+| Create Power BI app |This acitivity is logged every time a Power BI app is created |App name, Permissions, Workspace Name |
+| Install Power BI app |This activity is logged every time a Power AI app installed |App name |
+| Update Power BI app |This activity is logged every time a Power app in updated |App name, Permissions, Workspace Name |
+| Started Power BI extended trial |This activity is logged every time an user accepts the extended pro trial that runs until May 31 2018 | |
+| Analyzed Power BI dataset |This activity is logged every time a Power BI dataset is analyzed in Excel. | |
+| Created Power BI gateway |This activity is logged every time a new gateway is created. |Gateway Name, Gateway Type |
+| Deleted Power BI gateway |This activity is logged every time a gateway is deleted. |Gateway Name, Gateway Type |
+| Added Data source to Power BI gateway |This activity is logged every time a data source in added to the gateway |Gateway Name, Gateway Type, Datasource Name, Datasource Type |
+| Removed data source from Power BI gateway |This activity is logged every time a data source is removed from a gateway |Gateway Name, Gateway Type, Datasource Name, Datasource Type |
+| Changed Power BI gateway admins |This activity is logged every time the admins of a gateway are changed (added/removed) |Gateway Name, Users Added, Users Removed |
+| Changed Power IB gateway data source users |This activity is logged every time the users of a gateway are changed (added/removed) |Gateway Name, Users Added, Users Removed |
+| SetScheduledRefresh |This activity is logged every time a new refresh is scheduled for a dataset |Dataset Name, Refresh Frequency (in minutes) |
 
 ## Using PowerShell to search
 You can use PowerShell to access the audit logs based on your login. This is done by accessing Exchange Online. Here is an example of a command to pull Power BI audit log entries.

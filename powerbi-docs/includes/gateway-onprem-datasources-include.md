@@ -1,7 +1,6 @@
 ## List of available data source types
 | **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** |
 | --- | --- | --- | --- |
-| Amazon Redshift |Yes |Yes |
 | Analysis Services Tabular |Yes |Yes |
 | Analysis Services Multidimensional |Yes |Yes |
 | File |No |Yes |
