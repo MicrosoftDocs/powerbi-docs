@@ -50,18 +50,32 @@ PowerShell scripts are available in the on-premises data gateway installation fo
 -   Modify the enable/disable status for a gateway instance within a cluster, as well as other gateway properties
 -   Delete a gateway
 
-The steps to run the PowerShell commands are the following:
+In order to run the PowerShell commands in the table, you first need to take the following steps: :
 
-1. Run a PowerShell command window as *Administrator*.
-2. Execute the following one-time command:
+1. Open a PowerShell command window, as an Administrator
+2. Then run the following one-time PowerShell command (this presumes you've never run PowerShell commands on the current machine):
 
-(here)
+    ```
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
+    ```
 
-| **Server version** | **Required SKU** |
-| --- | --- |
-| 2012 SP1 CU4 or later |Business Intelligence and Enterprise SKU |
-| 2014 |Business Intelligence and Enterprise SKU |
-| 2016 |Standard SKU or higher |
+3. Next, navigate to the on-premises data gateway installation folder in the PowerShell window, and import the necessary module using the following command:
+
+    ```
+    Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
+    ```
+
+Once those steps are complete, you can use the commands in the following table to manage your gateway clusters
+
+| **Command** | **Description** | **Parameters** |
+| --- | --- | --- |
+| *Login-OnPremisesDataGateway* |This command allows a user to log in to manage his or her on-premises data gateway clusters.  You must run this command and log in *before* other high availability commands can work properly. Note: the AAD auth token acquired as part of a Login call is only valid for 1 hour, after which it expires. You can re-run the Login command to acquire a new token.| AAD username and password (provided as part of the command execution, not initial invocation)|
+| *Get-OnPremisesDataGatewayClusters* | Retrieves the list of gateway clusters for the logged in user. | Optionally, you can pass formatting parameters to this command for better readability, such as: *Format-Table -AutoSize -Wrap* |
+| *Get-OnPremisesDataClusterGateways* | Retrieves the list of gateways within the specified cluster, as well as additional information for each gateway (online/offline status, machine name, so on) | *-ClusterObjectID xyz*  (where *xyz* is replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)|
+| *Set-OnPremisesDataGateway* | Lets you set property values for a given gateway within a cluster, including the ability to Enable/Disable a specific gateway instance  | *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command) *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
+| *Get-OnPremisesDataGatewayStatus* | Lets you retrieve the status for a given gateway instance within a cluster  | *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
+| *Remove-OnPremisesDataGateway*  | Lets you remove a gateway instance from a cluster - note that the primary gateway in the cluster cannot be removed until all other gateways in the cluster have been removed.| *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
+
 
 ## Next steps
 

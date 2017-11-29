@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 08/11/2017
+ms.date: 11/29/2017
 ms.author: asaxton
 
 ---

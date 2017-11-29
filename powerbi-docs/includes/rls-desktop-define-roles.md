@@ -1,10 +1,6 @@
 ## Define roles and rules within Power BI Desktop
 You can define roles and rules within Power BI Desktop. When you publish to Power BI, it will also publish the role definitions.
 
-If you want to take advantage of dynamic security, you will need to enable the preview switch Enable cross filtering in both directions for DirectQuery. This will allow the ability to cross filter and apply the security filter in both directions.
-
-![](./media/rls-desktop-define-roles/powerbi-desktop-preview-bi-directional-directquery.png)
-
 To define security roles, you can do the following.
 
 1. Import data into your Power BI Desktop report, or configure a DirectQuery connection.
