@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
+ms.date: 11/30/2017
 ms.author: asaxton
 
 ---
@@ -127,7 +127,7 @@ Now, with all the pieces together, when someone logs into your application to vi
 ## Working with Analysis Services live connections
 Row-level security can be used with Analysis Services live connections for on-premises servers. There are a few specific concepts that you should understand when using this type of connection.
 
-The effective identity that is provided for the username property must be a windows user with permissions on the Analysis Services server.
+The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
 
 **On-premises data gateway configuration**
 
@@ -138,11 +138,11 @@ An [on-premises data gateway](../service-gateway-onprem.md) is used when working
 Roles can be provded with the identity in an embed token. If no role is provided, the username that was provided will be used to resolve the associated roles.
 
 ## Considerations and limitations
-* Assignment of users to roles, within the Power BI service, does not affect RLS when using an embed token.
+* Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
 * Passing the identity information, when calling GenerateToken, is only supported for report read/write. Support for other resources will come later.
 * Analysis Services live connections are supported for on-premises servers.
-* Azure Analysis Services live connections are not supported.
+* Azure Analysis Services live connections support filtering by roles, but not dynamic by username.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role. Otherwise, role assignment will not occur.
 * Only one identity can be provided in the list of identities. We are using a list to enable multi-identity tokens for dashboard embedding in the future.
