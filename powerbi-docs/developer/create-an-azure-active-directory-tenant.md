@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
+ms.date: 11/30/2017
+ms.author: mihart
 
 ---
 # Create an Azure Active Directory tenant to use with Power BI
@@ -30,7 +30,7 @@ Once you have an Azure AD tenant, you can define an application and assign permi
 Your organization may already have an Azure AD tenant that you can use for your application. You can make use of that tenant for your application needs or you can create a new tenant specifically for your application. This article looks at how to create a new tenant.
 
 ## Create an Azure Active Directory tenant
-In order to integrate Power BI into your custom application, you need to define an application within Azure AD. To do that, you need a directory within Azure AD. This is your tenant. If you organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, you will need to create one. You may also need to create one if you don't want your application mixing with your organization's tenant. This allows you to keep things isolated.
+In order to integrate Power BI into your custom application, you need to define an application within Azure AD. To do that, you need a directory within Azure AD. This is your tenant. If you organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, [you will need to create one](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). You may also need to create one if you don't want your application mixing with your organization's tenant. This allows you to keep things isolated.
 
 Or, you may just want to create a tenant for testing purposes.
 
