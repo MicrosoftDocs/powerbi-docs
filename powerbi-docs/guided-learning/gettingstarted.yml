@@ -13,12 +13,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
+    In this initial section of **Guided Learning**, you learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
 - title: Introducing Power BI
   durationInMinutes: 5
   content: |
@@ -44,4 +44,4 @@ items:
   content: |
     [!INCLUDE [](includes/0-4-summary-of-intro-to-power-bi.md)]
 - content: |
-    You've completed the **Getting started** section of Microsoft Power BI Guided learning.
+    You've completed the **Getting started** section of Microsoft Power BI Guided learning. Way to go! Now you can move on to the next part of Guided Learning, which is **Getting data**. Select the **Getting data** button below to keep going.
