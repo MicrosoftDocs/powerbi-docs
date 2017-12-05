@@ -35,7 +35,8 @@ The Sales Manager relies on 2 measures of revenue:
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
->[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify.  To see the raw data, select **Power Pivot > Manage**. 
+>[!Note] 
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify.  To see the raw data, select **Power Pivot > Manage**. 
 
 ![](media/sample-opportunity-analysis/opportunity1.png)
 

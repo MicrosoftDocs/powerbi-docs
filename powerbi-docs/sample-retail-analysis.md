@@ -24,7 +24,7 @@ ms.author: mihart
 
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529778). The workbook contains Power View sheets that you can view and modify.  To see the raw data select **Power Pivot > Manage**. 
+[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529778). The workbook contains Power View sheets that you can view and modify.  To see the raw data select **Power Pivot > Manage**. 
 
 ![](media/sample-retail-analysis/retail1.png)
 
