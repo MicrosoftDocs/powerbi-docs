@@ -13,12 +13,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
+    Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section of **Power BI** Guided Learning shows you how to get started using them.
 - title: Introduction to visuals in Power BI
   durationInMinutes: 2
   content: |
@@ -134,4 +134,4 @@ items:
 
     [!INCLUDE [](includes/3-11h-r-visual-integration.md)]
 - content: |
-    You've completed the **Visualizations** section of Microsoft Power BI Guided learning.
+    Nice work. You've completed the **Visualizations** section of **Guided Learning**, and you're ready for the next tutorial - **Exploring data**.

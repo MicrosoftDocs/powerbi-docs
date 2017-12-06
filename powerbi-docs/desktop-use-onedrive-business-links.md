@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/05/2017
 ms.author: davidi
 
 ---
@@ -34,7 +34,7 @@ Getting an online link from **OneDrive for Business** does require a few specifi
    > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. In **Excel**, select **File > Info** and select the link above the **Protect Workbook** button. Select **Copy link to clipboard**.
+2. In **Excel**, select **File > Info** and select the link above the **Protect Workbook** button. Select **Copy link to clipboard** (your version might say **Copy path to clipboard**).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_03.png)
 

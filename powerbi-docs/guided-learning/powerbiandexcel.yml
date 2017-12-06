@@ -13,7 +13,7 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
@@ -50,4 +50,4 @@ items:
 
     [!INCLUDE [](includes/5-8-excel-data-summary.md)]
 - content: |
-    You've completed the **Power BI and Excel** section of Microsoft Power BI Guided learning.
+    Nice job completing the **Power BI and Excel** section of Power BI Guided learning. Next, you learn about publishing and sharing.
