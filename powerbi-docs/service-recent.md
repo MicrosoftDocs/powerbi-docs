@@ -17,17 +17,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/17/2017
+ms.date: 12/06/2017
 ms.author: mihart
 
 ---
 # **Recent** content in Power BI service
-![](media/service-recent/power-bi-recent-screen.png)
+
 
 ## What is recent content
-Recent content is the last 20 items you visited.  This includes: dashboards, reports, apps, and workbooks.
+Recent content is the last items you visited, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks across all of your workspaces.
 
-![](media/service-recent/power-bi-recent.png)
+![](media/service-recent/power-bi-recent-screen.png)
 
 Watch Amanda demonstrate how **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
