@@ -29,7 +29,7 @@ Power BI Premium now supports datasets up to 10 GB in size. To use a large datas
 
 This section describes best practices for working with large datasets.
 
-- **Large models can be very resource-intensive** on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
+**Large models can be very resource-intensive** on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
 
 
    |SKU  |Size of .pbix   |
@@ -40,15 +40,15 @@ This section describes best practices for working with large datasets.
 
 
 
-- **Your .pbix files represent data in a highly compressed state**. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
+**Your .pbix files represent data in a highly compressed state**. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
 
-- **Scheduled refresh of large datasets can take a long time** and be very resource-intensive. Accordingly, do not schedule too many overlapping refreshes. Notice also that the timeout for scheduled refresh jobs has been doubled to four hours for all datasets in this capacity.
+**Scheduled refresh of large datasets can take a long time** and be very resource-intensive. Accordingly, do not schedule too many overlapping refreshes. Notice also that the timeout for scheduled refresh jobs has been doubled to four hours for all datasets in this capacity.
 
-- **The initial report load of large datasets can take a long time** if it has been a while since the last time the dataset was used, because the model is loaded into memory of your Premium capacity. A loading bar for longer-loading reports displays the load progress.
+**The initial report load of large datasets can take a long time** if it has been a while since the last time the dataset was used, because the model is loaded into memory of your Premium capacity. A loading bar for longer-loading reports displays the load progress.
 
-- **If you remove the workspace from Premium capacity**, the model and all associated reports and dashboards will not work.
+**If you remove the workspace from Premium capacity**, the model and all associated reports and dashboards will not work.
 
-- **While the per-query memory and time constraints are much higher in Premium capacity**, it is highly recommended you use filters and slicers to limit visuals to display only what is necessary.
+**While the per-query memory and time constraints are much higher in Premium capacity**, it is highly recommended you use filters and slicers to limit visuals to display only what is necessary.
 
 ## Next steps
 [Power BI Premium - what is it?](service-premium.md)  
