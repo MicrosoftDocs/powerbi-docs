@@ -1,4 +1,4 @@
-In this lesson, we create a *content pack* with existing artifacts we already have in Power BI, and then share those with colleagues.
+In this lesson, we create a *content pack* with existing artifacts we already have in Power BI, and then share those with colleagues. 
 
 In **My Workspace** I have a dashboard, the report underneath, and the dataset. I want to share them as a package with people in my organization, so they can reuse them.
 

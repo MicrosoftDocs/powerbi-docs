@@ -13,7 +13,7 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/06/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
@@ -28,7 +28,7 @@ items:
 - title: Publish Power BI Desktop reports
   durationInMinutes: 2
   content: |
-    > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
+    > [!Video https://www.youtube.com/embed/i0zAvCRLScI?rel=0]
 
     [!INCLUDE [](includes/4-1-publish-reports.md)]
 - title: Print and export dashboards and reports
@@ -52,7 +52,7 @@ items:
 - title: Create groups in Power BI
   durationInMinutes: 5
   content: |
-    > [!Video https://www.youtube.com/embed/-758Lnhj9DRo?rel=0]
+    > [!Video https://www.youtube.com/embed/758Lnhj9DRo?rel=0]
 
     [!INCLUDE [](includes/6-1-create-groups.md)]
 - title: Build content packs
@@ -90,4 +90,4 @@ items:
   content: |
     [!INCLUDE [](includes/6-5-guided-learning-completion.md)]
 - content: |
-    You've completed the **Publishing and sharing** section of Microsoft Power BI Guided learning.
+    You've completed the **Publishing and sharing** section of Power BI Guided Learning. If you want an introduction to DAX, the language used to create Power BI queries, head to the next tutorial.

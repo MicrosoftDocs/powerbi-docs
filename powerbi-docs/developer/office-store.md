@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2017
+ms.date: 12/5/2017
 ms.author: asaxton
 
 ---
 # Publish custom visuals to AppSource
-Learn how you can publish your custom visual to AppSource for others to discover and use.
+Learn how you can publish your custom visual to AppSource for others to discover and use. office
 
 Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
 
@@ -61,7 +61,7 @@ Once you get the app package XML from the Power BI team, navigate to the [develo
 > You must have a valid Office developer account to log in to the [Office developer center](https://dev.office.com/). An Office developer account must be a Microsoft Account (Live ID, e.g. hotmail.com or outlook.com).
 > 
 > [!IMPORTANT]
-> You must send an email with the .pbiviz file and the .pbix file to the Power BI team before submitting to the Office store. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with each new visual submission, update to existing visual, and fixes to rejected submissions.
+> You must send an email with the .pbiviz file and the .pbix file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with each new visual submission, update to existing visual, and fixes to rejected submissions.
 > 
 > 
 
