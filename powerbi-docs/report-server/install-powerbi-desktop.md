@@ -52,7 +52,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
     It starts automatically and you're ready to go.
 
 ## Verify you are using the correct version
-You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar will indicated the release month and year of the release.
+You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the release month and year of the release.
 
 ![Title bar for Power BI Desktop optimized for Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
 
