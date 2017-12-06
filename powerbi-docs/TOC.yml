@@ -252,8 +252,6 @@
       href: service-insight-types.md
     - name: "Optimize your data for Power BI Quick Insights"
       href: service-insights-optimize.md
-    - name: "Display a dashboard tile in Full Screen mode (TV mode)"
-      href: service-tile-fullscreen-mode.md
     - name: "Featured dashboards in Power BI"
       href: service-dashboard-featured.md
     - name: "Create a phone view of a dashboard"

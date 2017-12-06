@@ -29,7 +29,7 @@ ms.author: mihart
 ***Focus*** mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in focus mode, you can view and modify filters that were applied when this visual was created.  
 
 > [!NOTE]
-> Focus is different from [full screen mode](service-tile-fullscreen-mode.md).
+> Focus is different from [full screen mode](service-fullscreen-mode.md).
 > 
 ## Focus mode for dashboard tiles
 1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode** ![](media/service-focus-mode/power-bi-dashboard-focus-mode.png).  
