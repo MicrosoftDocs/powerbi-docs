@@ -116,7 +116,7 @@ When the dashboards and reports in your app workspace are ready, you publish the
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or email distribution lists. 
+4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or  Active Directory security groups. 
    
      ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 

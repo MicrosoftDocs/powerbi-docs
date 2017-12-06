@@ -16,14 +16,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
 # Frequently asked questions about Power BI
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-* Or click the **Contact Me** icon ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 
 ## What is Microsoft Power BI?
 [Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life.
@@ -153,5 +152,4 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 ## Next steps
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
-* Or click the **Contact Me** icon ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 

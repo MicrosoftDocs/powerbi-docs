@@ -3,7 +3,7 @@ title: Install Power BI Desktop optimized for Power BI Report Server
 description: Learn how to install Power BI Desktop optimized for Power BI Report Server
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: maggisMSFT
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/20/2017
-ms.author: asaxton
+ms.date: 12/05/2017
+ms.author: maggies
 
 ---
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -27,13 +27,26 @@ You will need to download and install Power BI Desktop optimized for Power BI Re
 
 > [!NOTE]
 > Power BI Desktop and Power BI Desktop optimized for Power BI Report Server can be installed side by side.
-> 
-> 
 
 ## Download and install
-You can download Power BI Desktop optimized for Power BI Report Server from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) or from within the web portal of your report server.
 
-After you download the installer, you can install Power BI Desktop.
+### Download and install from the report server web portal
+
+The easiest way to be sure you have the most up-to-date version of Power BI Desktop optimized for Power BI Report Server is to start from the web portal of your report server.
+
+1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
+
+    ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
+
+2. The Download Center opens to the download page. Continue below.
+
+### Download and install from the Download Center
+
+You can also download and install Power BI Desktop optimized for Power BI Report Server directly from the Microsoft Download Center.
+
+1. Open the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) to the page for **Microsoft Power BI Desktop (Optimized for Power BI Report Server - October 2017)** > select **Download**.
+3. Depending on your computer, select **PBIDesktopRS.msi** (the 32-bit version) or **PBIDesktopRS_x64.msi** (the 64-bit version).
+3. After you download the installer, make sure Power BI Desktop is closed, then go through the steps in the Power BI Desktop (October 2017) Setup Wizard.
 
 ## Verify you are using the correct version
 You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar will indicated the release month and year of the release.
