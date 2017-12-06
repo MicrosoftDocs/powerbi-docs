@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.author: maggies
 
 ---
 # Create reports optimized for the Power BI phone apps
-When you [create a report in Power BI Desktop](desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can [create *responsive* visuals](desktop-create-responsive-visuals.md) that resize well for viewing on a phone. Also, if you add filters to your report, on an iPhone those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
+When you [create a report in Power BI Desktop](desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can [create *responsive* visuals](desktop-create-responsive-visuals.md) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
 
 ![Optimized report on a phone](media/desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
