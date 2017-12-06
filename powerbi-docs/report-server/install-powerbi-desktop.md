@@ -40,11 +40,11 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
 2. In the Download Center page, select **Download**.
 
-3. Depending on your computer, select 
+3. Depending on your computer, select: 
 
-   **PBIDesktopRS.msi** (the 32-bit version) or
+    - **PBIDesktopRS.msi** (the 32-bit version) or
 
-   **PBIDesktopRS_x64.msi** (the 64-bit version).
+    - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
 1. After you download the installer, run the Power BI Desktop (October 2017) Setup Wizard.
 2. At the end of the installation, check **Start Power BI Desktop now**.

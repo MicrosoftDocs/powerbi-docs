@@ -39,7 +39,11 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
 2. In the Download Center page, select **Download**.
 
-3. Depending on your computer, select **PBIDesktopRS.msi** (the 32-bit version) or **PBIDesktopRS_x64.msi** (the 64-bit version).
+3. Depending on your computer, select:
+
+    - **PBIDesktopRS.msi** (the 32-bit version) or
+
+    - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
 4. After you download the installer, run the Power BI Desktop (October 2017) Setup Wizard.
 
