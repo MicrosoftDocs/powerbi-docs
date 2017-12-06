@@ -40,6 +40,10 @@ If you’re in a hurry you can do a visual sweep of this guide in just a couple 
 
 For a more thorough understanding you can read through each section, perform the steps, and walk away with your own Power BI Desktop file that’s ready to post onto the **Power BI** service, and share with others.
 
+>[!NOTE]
+>There is also a separate and specialized version of **Power BI** called [**Power BI Report Server**](report-server/get-started.md), which is for customers who need their data and reporting to remain on-premises. For use with that specialized version, there's also a separate and specialized version of **Power BI Desktop** called **Power BI Desktop for Power BI Report Server**, which works only with the Report Server version of Power BI. This article describes the standard **Power BI Desktop**.
+
+
 ## How Power BI Desktop works
 With Power BI Desktop, you *connect to data* (usually multiple data sources), *shape that data* (with queries that build insightful, compelling data models), and use that model to *create reports* (which others can leverage, build upon, and share).
 
@@ -48,6 +52,8 @@ When the steps are completed to your satisfaction – connect, shape, and report
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
 
 Ready to give it a try? Let’s get started.
+
+
 
 ## Install and run Power BI Desktop
 You can download Power BI Desktop from the **Power BI** service, by selecting the **gear** icon, then select **Power BI Desktop**.
