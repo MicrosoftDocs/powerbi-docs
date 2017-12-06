@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
@@ -25,20 +25,30 @@ You can store and manage Power BI reports on premises in the Power BI Report Ser
 
 ![Power BI report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
 
-If you've already created Power BI reports in Power BI Desktop, then you're ready to create Power BI reports for Power BI Report Server. If not, here are four quick steps to get you started.
+Here are four quick steps to get you started.
 
-## Step 1: Install Power BI Desktop (Report Server)
-You may already have installed Power BI Desktop to create reports for the Power BI service. We recommend installing the version of Power BI Desktop optimized for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
+## Step 1: Install Power BI Desktop optimized for Power BI Report Server
+
+If you've already created Power BI reports in Power BI Desktop, then you're almost ready to create Power BI reports for Power BI Report Server. We recommend installing the version of Power BI Desktop optimized for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
 
 1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
 
-    ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
+    ![Download Power BI Desktop from the web portal](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    If you don't have access to a Power BI Report Server web portal, go to the Microsoft Download Center and download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - June 2017 GA).
+    Or you can go directly to [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017) in the Microsoft Download Center.
 
-2. At the end of the installation process, check **Start Power BI Desktop now**.
+2. In the Download Center page, select **Download**.
+
+3. Depending on your computer, select **PBIDesktopRS.msi** (the 32-bit version) or **PBIDesktopRS_x64.msi** (the 64-bit version).
+
+4. After you download the installer, run the Power BI Desktop (October 2017) Setup Wizard.
+
+2. At the end of the installation, check **Start Power BI Desktop now**.
    
-    It starts automatically and you're ready to go. You can tell you have the right version because "Power BI Desktop (Report Server)" is in the title bar.
+    It starts automatically and you're ready to go. You can tell you have the right version because "Power BI Desktop (October 2017)" is in the title bar.
+
+    ![Power BI Desktop October 2017 version](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
+
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    
     ![Power BI Desktop start screen](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)

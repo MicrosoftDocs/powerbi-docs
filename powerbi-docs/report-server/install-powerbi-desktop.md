@@ -3,7 +3,7 @@ title: Install Power BI Desktop optimized for Power BI Report Server
 description: Learn how to install Power BI Desktop optimized for Power BI Report Server
 services: powerbi
 documentationcenter: ''
-author: maggisMSFT
+author: maggiesMSFT
 manager: kfile
 backup: ''
 editor: ''
@@ -23,14 +23,12 @@ ms.author: maggies
 # Install Power BI Desktop optimized for Power BI Report Server
 Learn how to install Power BI Desktop optimized for Power BI Report Server.
 
-You will need to download and install Power BI Desktop optimized for Power BI Report Server. This is a different release from the Power BI Desktop that is used with the Power BI service. This is needed to make sure that the report server can indirect with a known version of the reports and model. 
+To create Power BI reports for Power BI Report Server, you need to download and install Power BI Desktop optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
 > [!NOTE]
-> Power BI Desktop and Power BI Desktop optimized for Power BI Report Server can be installed side by side.
+> You can install Power BI Desktop and Power BI Desktop optimized for Power BI Report Server side by side on the same computer.
 
-## Download and install
-
-### Download and install from the report server web portal
+## Download and install Power BI Desktop
 
 The easiest way to be sure you have the most up-to-date version of Power BI Desktop optimized for Power BI Report Server is to start from the web portal of your report server.
 
@@ -38,22 +36,27 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-2. The Download Center opens to the download page. Continue below.
+    Or you can go directly to [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017) in the Microsoft Download Center.
 
-### Download and install from the Download Center
+2. In the Download Center page, select **Download**.
 
-You can also download and install Power BI Desktop optimized for Power BI Report Server directly from the Microsoft Download Center.
+3. Depending on your computer, select 
 
-1. Open the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) to the page for **Microsoft Power BI Desktop (Optimized for Power BI Report Server - October 2017)** > select **Download**.
-3. Depending on your computer, select **PBIDesktopRS.msi** (the 32-bit version) or **PBIDesktopRS_x64.msi** (the 64-bit version).
-3. After you download the installer, make sure Power BI Desktop is closed, then go through the steps in the Power BI Desktop (October 2017) Setup Wizard.
+   **PBIDesktopRS.msi** (the 32-bit version) or
+
+   **PBIDesktopRS_x64.msi** (the 64-bit version).
+
+1. After you download the installer, run the Power BI Desktop (October 2017) Setup Wizard.
+2. At the end of the installation, check **Start Power BI Desktop now**.
+   
+    It starts automatically and you're ready to go.
 
 ## Verify you are using the correct version
 You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar will indicated the release month and year of the release.
 
-![](media/install-powerbi-desktop/powerbi-desktop-rs-title-bar.png "Title bar for Power BI Desktop")
+![Title bar for Power BI Desktop optimized for Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
 
-The Power BI Desktop version for the Power BI service will not have the month and year in the title bar.
+The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
 If you installed both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the last install of Power BI Desktop will have the file association with .pbix. This means that when you double click on a pbix file, it will launch the Power BI Desktop that was last installed.
