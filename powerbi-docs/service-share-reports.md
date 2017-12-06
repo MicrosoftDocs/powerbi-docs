@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
@@ -65,13 +65,14 @@ What if you want to share a filtered version of a report? Maybe a report that on
    
    In our example, the name of the table is **Store**, the name of the field is **Territory**, and the value we want to filter on is **NC**:
    
-    ?filter=Store/Territory eq NC
+    ?filter=Store/Territory eq 'NC'
    
    ![Filtered report URL](media/service-share-reports/power-bi-filter-url3.png)
    
-   Your browser adds special characters to represent slashes and spaces, so you end up with:
+   Your browser adds special characters to represent slashes, spaces, and apostrophes, so you end up with:
    
-   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Store%252FTerritory%20eq%20NC
+   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+
 3. Send this URL to your coworkers. 
    
    When they select the link, Power BI opens a read-only version of the filtered report.
