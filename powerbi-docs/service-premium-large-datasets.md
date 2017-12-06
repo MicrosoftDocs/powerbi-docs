@@ -32,11 +32,11 @@ This section describes best practices for working with large datasets.
 - Large models can be very resource-intensive on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
 
 
-   |SKU  |Size of .pbix   |
-   |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3    | up to 10 GB   |
+      |SKU  |Size of .pbix   |
+      |---------|---------|
+      |P1    | < 3 GB        |
+      |P2    | < 6 GB        |
+      |P3    | up to 10 GB   |
 
 
 
