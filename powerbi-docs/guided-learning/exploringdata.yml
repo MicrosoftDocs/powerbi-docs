@@ -13,12 +13,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Learn how to find, connect to, and interact with data in Power BI.
+    Welcome to the **exploring data** tutorial. Here you'll learn how to find, connect to, and interact with data in Power BI.
 - title: Introduction to the Power BI service
   durationInMinutes: 2
   content: |
@@ -80,4 +80,4 @@ items:
 
     [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
 - content: |
-    You've completed the **Exploring data** section of Microsoft Power BI Guided learning.
+    This **exploring data** section of Guided Learning has prepared you to work with all sorts of different data types. In the next tutorial, you learn how to use a common data source - Excel.

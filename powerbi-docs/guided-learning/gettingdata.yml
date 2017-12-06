@@ -13,12 +13,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Explore and learn the many ways you can get and work with data in Power BI.
+    Data is at the heart of Power BI. In this **Guided Learning** section, you learn how to get and work with data in Power BI.
 - title: Overview of Power BI Desktop
   durationInMinutes: 4
   content: |
@@ -56,4 +56,4 @@ items:
 
     [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
 - content: |
-    You've completed the **Getting data** section of Microsoft Power BI Guided learning.
+    Way to go! You've completed the **Getting data** section of Microsoft Power BI Guided Learning. The next step is to learn about **Modeling**, which is the subject of the next tutorial.
