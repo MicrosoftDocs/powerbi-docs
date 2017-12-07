@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/05/2017
 ms.author: mihart
 
 ---
@@ -27,7 +27,7 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (www.obvience.com) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785).
+[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ![](media/sample-sales-and-marketing/sales1.png)
 
