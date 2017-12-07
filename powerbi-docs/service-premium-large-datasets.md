@@ -23,7 +23,7 @@ ms.author: v-mamcge
 
 # Power BI Premium support for large datasets
 
-Power BI Premium now supports datasets up to 10 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity. Everything else stays the same, and all other Power BI features work as expected.
+Power BI Premium supports datasets up to 10 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity. Everything else stays the same, and all other Power BI features work as expected.
  
 ## Best practices
 
