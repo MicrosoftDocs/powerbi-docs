@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 12/06/2017
 ms.author: asaxton
 ---
 # Distribute Power BI content to external guest users with Azure AD B2B
@@ -26,7 +26,7 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
-> This feature is not currently available with Power BI mobile. 
+> This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser. 
 > 
 > 
 
