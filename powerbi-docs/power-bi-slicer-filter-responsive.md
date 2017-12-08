@@ -36,8 +36,21 @@ The first step to creating a dynamic slicer is to create a basic slicer.
 
 ## Convert it to a horizontal slicer
 
+This step is easy.
+
+1. With the slicer selected, in the Visualizations pane select the Format tab.
+2. Expand the General section, then for Orientation, select Horizontal.
+
+    ![Set the slicer to horizontal](media/power-bi-slicer-filter-responsive/power-bi-slicer-horizontal.png) 
+
+1.  You'll probably want to make it wider, to show more values.
+
+     ![Make the slicer wider](media/power-bi-slicer-filter-responsive/power-bi-slicer-wide-horizontal.png)
+
 ## Make it a responsive slicer
 
 ## Limitations and considerations
 
 ## Next steps
+
+[Tutorial: Slicers in the Power BI service](power-bi-visualization-slicers.md)
