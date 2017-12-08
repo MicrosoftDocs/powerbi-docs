@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 12/07/2017
 ms.author: asaxton
 ---
 # Distribute Power BI content to external guest users with Azure AD B2B
@@ -27,9 +27,6 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 
 > [!NOTE]
 > This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser. 
-> 
-> 
-
 
 ## Invite guest users
 
@@ -95,6 +92,12 @@ Assigning a Power BI Pro license to the guest user, within your tenant, allows t
 The guest user already has a Power BI Pro license assigned within their tenant.
 
 ![Guest user brings their own license](media/service-admin-azure-ad-b2b/license-approach3.png)
+
+## Limitations
+
+* External B2B guests are limited to consumption of content only. External B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content.
+* This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser.
+* Using guest users with Power BI is not supported within sovereign clouds (government).
 
 ## Next steps
 
