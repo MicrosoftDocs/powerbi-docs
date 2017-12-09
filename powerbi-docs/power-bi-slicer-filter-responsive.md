@@ -83,5 +83,5 @@ You can follow the same steps to make a tile or range slicer responsive. After y
 
 ## Next steps
 
-[Tutorial: Slicers in the Power BI service](power-bi-visualization-slicers.md)
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Tutorial: Slicers in the Power BI service](power-bi-visualization-slicers.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
