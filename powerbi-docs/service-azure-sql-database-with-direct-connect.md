@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.author: asaxton
 
 ---
@@ -32,7 +32,7 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Every action such as selecting a column or adding a filter will send a query back to the database
 * Tiles are refreshed every hour (refresh does not need to be scheduled). This can be adjusted in the Advanced settings when you connect.
 * Q&A is not available for DirectQuery datasets
-* Schema changes are not picked up automatically
+* Schema changes afre not picked up automatically
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below. 
 
