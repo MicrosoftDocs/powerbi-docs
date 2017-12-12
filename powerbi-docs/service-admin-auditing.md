@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/28/2017
+ms.date: 12/12/2017
 ms.author: asaxton
 
 ---
@@ -33,6 +33,16 @@ You can filter the audit data by date range, user, dashboard, report, dataset an
 > [!NOTE]
 > The auditing feature in Power BI is in preview and is available in all data regions.
 
+## Requirements
+There are several requirements to be able to view Power BI audit logs.
+
+- To access the auditing section of the Office 365 Security & Compliance Center, you must have an Exchange Online license (included with Office 365 Enterprise E3 and E5 subscriptions).
+- You must either be a global admininstrator or have an Exchange admin role that provides access to the audit log. 
+
+  Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+
+- If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must get a direct link to the Office 365 Security & Compliance Center.
+
 ## Enabling auditing functionality in the Power BI admin portal
 
 You will need to enable auditing for your organization in order to work with the reports. You can do this within the tenant settings of the admin portal.
@@ -43,7 +53,7 @@ You will need to enable auditing for your organization in order to work with the
    
    ![](media/service-admin-auditing/powerbi-admin.png)
 
-3. Select **Tenant Settings**.
+3. Select **Tenant settings**.
    
    ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
 
@@ -66,9 +76,9 @@ To audit your Power BI logs, you must visit the O365 Security & Compliance Cente
    
    ![](media/service-admin-auditing/powerbi-admin.png)
 
-3. Select **Audit Logs**.
-4. 
-5. Select **Go to O365 Admin Center**.
+3. Select **Audit logs**.
+ 
+4. Select **Go to O365 Admin Center**.
    
    ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
