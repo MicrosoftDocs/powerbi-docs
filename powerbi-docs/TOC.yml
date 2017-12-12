@@ -746,6 +746,8 @@
     items: 
     - name: "Report view in Power BI Desktop"
       href: desktop-report-view.md
+    - name: "Q&A in Power BI Desktop"
+      href: desktop-qna-in-reports.md
     - name: "Analytics pane in Power BI Desktop"
       href: desktop-analytics-pane.md
     - name: "Using insights in Power BI Desktop"
