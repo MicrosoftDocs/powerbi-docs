@@ -380,6 +380,8 @@
       href: service-export-to-pbix.md
     - name: "Filter a report using query string parameters in the URL"
       href: service-url-filters.md
+    - name: "Best practices for building fast and reliable reports in Power BI"
+      href: power-bi-reports-performance.md  
   - name: Visualizations
     items: 
     - name: "Visualizations in Power BI"
