@@ -15,7 +15,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 12/11/2017
 ms.author: maggies
 
 ---
@@ -117,8 +117,6 @@ When the dashboards and reports in your app workspace are ready, you publish the
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
 4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or  Active Directory security groups. 
-   
-     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
 5. When you select **Finish**, you see a message confirming it’s ready to publish. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
    
