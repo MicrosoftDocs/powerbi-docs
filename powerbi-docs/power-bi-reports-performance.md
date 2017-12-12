@@ -133,7 +133,7 @@ The on-premises data gateway is a great tool for connecting the Power BI service
 - **Recommended hardware specs for the gateway** – 8 CPU cores, 16 GB RAM. 
 - **Set up monitoring** – set up performance monitoring on the gateway machine understand whether the gateway is becoming overloaded and becoming a bottleneck. For more information, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
 - **Scale up or scale out** – if the gateway is indeed becoming a bottleneck, then consider scaling up (that is, moving the gateway to a more powerful machine with more CPU and RAM) or scaling out (for example, splitting out datasets onto different gateways). 
-- **Separate import vs. DirectQuery** – if scaling out, consider separating the gateways responsible for import vs. those responsible for DirectQuery 
+- **Separate import vs. DirectQuery** – if scaling out, consider separating the gateways responsible for import vs. those responsible for DirectQuery. 
  
 ## Network latency 
 Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned a specific region. You can view your tenant’s “home” region by navigating to powerbi.com, selecting **?** in the top right and then **About Power BI**. When users from a tenant access the Power BI service, their requests are always routed to this region. Once the requests reach the Power BI service, the service may then send additional requests – e.g. to the underlying data source or the gateway – which are also subject to network latency. 
