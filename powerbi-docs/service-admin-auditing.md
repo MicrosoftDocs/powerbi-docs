@@ -24,7 +24,7 @@ ms.author: asaxton
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell.
+Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and Compliance Center or use PowerShell.
 
 Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management.
 
@@ -34,7 +34,7 @@ You can filter the audit data by date range, user, dashboard, report, dataset an
 > The auditing feature in Power BI is in preview and is available in all data regions.
 
 ## Requirements
-There are several requirements to be able to view Power BI audit logs.
+You must meet these requirements to access audit logs:
 
 - To access the auditing section of the Office 365 Security & Compliance Center, you must have an Exchange Online license (included with Office 365 Enterprise E3 and E5 subscriptions).
 - You must either be a global admininstrator or have an Exchange admin role that provides access to the audit log. 
