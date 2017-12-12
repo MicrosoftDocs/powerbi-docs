@@ -22,13 +22,13 @@ ms.author: v-mamcge
 ---
 
 # Power BI Performance Best Practices 
-This page offers guidance for building fast and reliable reports in Power BI.  
+This article offers guidance for building fast and reliable reports in Power BI.  
 
 ## Use filters to limit report visuals to display only what’s needed 
 
 The more data that a visual needs to display, the slower that visual will be to load. While this principle seems obvious, it can be easy to forget. For example: suppose you have a large dataset. Atop of that, you build a report with a table of the table. End users use slicers on the page to get to the rows they wanted – typically they’re only interested in a few dozen rows.
 
-A common mistake is to have the default view of the table be unfiltered - i.e. all 100M+ rows. The data for these rows needs to be loaded into memory and, uncompressed, at every refresh. This created huge memory loads. The solution: reduce the max number of items that the table displayed using the “Top N” filter. The max item can be much larger than what users would need – e.g. 10,000. As a result, the end user experience was unchanged, but memory utilization of the report dropped multiple orders of magnitude, and performance improved accordingly. 
+A common mistake is to have the default view of the table be unfiltered - i.e. all 100M+ rows. The data for these rows must be loaded into memory and uncompressed at every refresh. This created huge memory loads. The solution: reduce the max number of items that the table displayed using the “Top N” filter. The max item can be much larger than what users would need, for example, 10,000. As a result, the end user experience was unchanged, but memory utilization of the report dropped multiple orders of magnitude, and performance improved accordingly. 
  
 A similar approach to the above is strongly suggested for all visuals on your reports. Ask yourself, is all the data in this visual needed? Are there ways to filter down the amount of data shown in the visual with minimal impact to the end user experience? Note that tables in particular can be very expensive. 
  
@@ -38,15 +38,15 @@ The above principle applies equally to the number of visuals on a particular rep
 ## Optimize your model 
 Some best practices: 
  
-- Tables or columns that are unused should be removed if possible 
+- Tables or columns that are unused should be removed if possible. 
 - Avoid distinct counts on fields with high cardinality – i.e. millions of distinct values.  
 - Take steps to avoid fields with unnecessary precision and high cardinality. For example, you could split highly unique datetime values into separate columns – e.g. month, year, date, etc. Or, where possible, use rounding on high-precision fields to decrease cardinality – (e.g. 13.29889 -> 13.3). 
-- Use integers instead of strings, where possible 
+- Use integers instead of strings, where possible. 
 - Be wary of DAX functions which need to test every row in a table – e.g. RANKX – in the worst case, these functions can exponentially increase run-time and memory requirements given linear increases in table size. 
-- When connecting to data sources via DirectQuery, consider indexing columns that are commonly filtered or sliced again – this will greatly improve report responsiveness  
+- When connecting to data sources via DirectQuery, consider indexing columns that are commonly filtered or sliced again – this will greatly improve report responsiveness.  
  
 
-For more guidance on optimizing data sources for DirectQuery, see the [DirectQuery whitepaper](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/). 
+For more guidance on optimizing data sources for DirectQuery, see [DirectQuery in SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/). 
  
 ## DirectQuery and Live connection: understand underlying data source performance 
 
@@ -57,26 +57,28 @@ In these cases, it will be important to understand the performance of your under
 As a rule of thumb, when deploying Power BI reports built on DirectQuery and live connection, try out what your end users will do in Power BI Desktop. If the report is slow to load in Power BI Desktop, it will almost certainly be slow to load in the service for your end users. 
  
 ## DirectQuery best practices 
-The following section describes general best practices for connecting via DirectQuery  
+The following section describes general best practices for connecting via DirectQuery.
+  
 ### DB design guidance 
-- Push calculated columns and measures to the source where possible – the closer they are to the source, the higher the likelihood of performance 
+- Push calculated columns and measures to the source where possible – the closer they are to the source, the higher the likelihood of performance. 
 - Optimize! Understand the execution plans for your queries, add indices for commonly filtered columns, etc. 
 
 ### Modelling guidance 
-Start in the Power BI Desktop 
-Avoid complex queries in Query Editor 
-Do not use relative date filtering in the Query Editor  
-Keep measures simple initially, and add complexity incrementally 
-Avoid relationships on calculated columns and unique identifier columns 
-Try setting “Assume Referential Integrity” on relationships – in many cases, this can significantly improve query performance  
-General 
-Apply filters first 
-Consider switching off interaction between visuals – this will reduce the query load when users cross-highlight 
-Limit the number of visuals and the data per visuals, as described above 
-Enabling row-level security can result in substantial changes in performance. Be sure to test the different row-level security roles that your users will assume. 
-Note that there are query-level timeouts enforced by the service to ensure that long-running queries cannot monopolize system resources. Queries that take longer than 225 seconds will time out and result in a visual-level error. 
-For more guidance on optimizing data sources for DirectQuery, please consult the DirectQuery whitepaper. 
-Understanding dashboards and query caches 
+- Start in the Power BI Desktop. 
+- Avoid complex queries in Query Editor. 
+- Do not use relative date filtering in the Query Editor.  
+- Keep measures simple initially, and add complexity incrementally. 
+- Avoid relationships on calculated columns and unique identifier columns. 
+- Try setting “Assume Referential Integrity” on relationships – in many cases, this can significantly improve query performance.  
+
+### General 
+- Apply filters first. 
+- Consider switching off interaction between visuals – this will reduce the query load when users cross-highlight. 
+- Limit the number of visuals and the data per visuals, as described above. 
+- Enabling row-level security can result in substantial changes in performance. Be sure to test the different row-level security roles that your users will assume. 
+- Note that there are query-level time-outs enforced by the service to ensure that long-running queries cannot monopolize system resources. Queries that take longer than 225 seconds will time out and result in a visual-level error. 
+
+## Understanding dashboards and query caches 
 Visuals pinned to dashboards are served by the query cache when the dashboard is loaded. Conversely, when visiting a report, the queries are made on-the-fly to the data source – either the Power BI service (in the case of import) or the data source that you specify (in the case of DirectQuery or live connection).  
  
 > [!NOTE]
@@ -85,7 +87,8 @@ Visuals pinned to dashboards are served by the query cache when the dashboard is
 
 As the name suggests, retrieving the data from the query cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often used and highly requested visuals to the dashboards. In this way, dashboards become a valuable “first line of defense” which provide consistent performance with less load on the capacity. Users can still click through to the report to dig into the details.  
  
-Note that for DirectQuery and live connection, this query cache is updated on a periodic basis by querying the data source. By default, this happens every hour, though it can be configured in dataset settings. Each query cache update will send queries to the underlying data source to update the cache. The number of queries generated will depend on the number of visuals pinned to dashboards relying on that data source. Notice that if row-level security is enabled, queries will be generated for each different security context. For example, if you have two different roles that your users fall into, with two different views of the data, then during query cache refresh, two sets of queries will be generated. 
+
+Note that for DirectQuery and live connection, this query cache is updated on a periodic basis by querying the data source. By default, this happens every hour, though it can be configured in dataset settings. Each query cache update will send queries to the underlying data source to update the cache. The number of queries generated depends on the number of visuals pinned to dashboards relying on that data source. Notice that if row-level security is enabled, queries are generated for each different security context. For example, if you have two different roles that your users fall into, with two different views of the data, then during query cache refresh, two sets of queries are generated. 
  
 ## Understand custom visual performance 
 Be sure to put each custom visual through its paces to ensure high performance. Poorly optimized custom visuals can negatively affect the performance of the entire report. 
@@ -98,11 +101,12 @@ For a deeper dive into which visuals are taking up the most time and resources, 
    SQL Server Profiler is available as part of SQL Server Management Studio. 
  
 2. **Determine the port being used by Power BI Desktop** 
-Run the command prompt or PowerShell with administrator privileges, and use netstat to find the port that Power BI Desktop is using for analysis:
- 
-`> netstat -b -n` 
 
-   The output should be a list of applications and their open ports – e.g.  
+   Run the command prompt or PowerShell with administrator privileges, and use netstat to find the port that Power BI Desktop is using for analysis:
+
+   `> netstat -b -n` 
+
+   The output should be a list of applications and their open ports, for example:  
 
    TCP    [::1]:55786            [::1]:55830            ESTABLISHED 
 
@@ -111,15 +115,13 @@ Run the command prompt or PowerShell with administrator privileges, and use nets
    Look for the port used by msmdsrv.exe, and write it for later use. In this case, you could use port 55786. 
 3.  **Connect SQL Server Profiler to Power BI Desktop** 
 
-- Start SQL Server Profiler from the **Start** menu 
-- **File** > **New Trace** 
-- Server Type: Analysis Services 
-- Server name: localhost:[port number found above] 
-- At the next screen, select **Run** 
- 
-  Now the SQL Profiler is live, and actively profiling the queries that Power BI Desktop is sending 
-
-- As queries are executed, you can see their respective durations and CPU times – using this information, you can determine which queries are the bottlenecks.  
+   - Start SQL Server Profiler from the **Start** menu 
+   - **File** > **New Trace** 
+   - Server Type: Analysis Services 
+   - Server name: localhost:[port number found above] 
+   - At the next screen, select **Run** 
+   - Now the SQL Profiler is live, and actively profiling the queries that Power BI Desktop is sending. 
+   - As queries are executed, you can see their respective durations and CPU times – using this information, you can determine which queries are the bottlenecks.  
 
 Through the SQL Profiler, you can identify the queries which are taking up the longest CPU time, which in turn are likely the performance bottlenecks. The visuals which execute those queries should be then be a focal point of continued optimization. 
 
@@ -134,16 +136,16 @@ The on-premises data gateway is a great tool for connecting the Power BI service
 - **Separate import vs. DirectQuery** – if scaling out, consider separating the gateways responsible for import vs. those responsible for DirectQuery 
  
 ## Network latency 
-Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned a specific region. You can view your tenant’s “home” region by navigating to powerbi.com, selecting “?” in the top right and then “About Power BI.” When users from a tenant access the Power BI service, their requests will always be routed to this region. Once the requests reach the Power BI service, the service may then send additional requests – e.g. to the underlying data source or the gateway – which are also subject to network latency. 
+Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned a specific region. You can view your tenant’s “home” region by navigating to powerbi.com, selecting **?** in the top right and then **About Power BI**. When users from a tenant access the Power BI service, their requests are always routed to this region. Once the requests reach the Power BI service, the service may then send additional requests – e.g. to the underlying data source or the gateway – which are also subject to network latency. 
 
-Tools such as [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) can provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways and your Power BI cluster as close as possible. If network latency is an issue, you can try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines. 
+Tools such as [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) can provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. If network latency is an issue, you can try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines. 
 
 To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
 
-## More resources 
-- [Power BI Enterprise Deployment Whitepaper](https://aka.ms/pbienterprisedeploy), with all-around guidance on large-scale Power BI deployments 
-- [DirectQuery whitepaper](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) 
-- [Presentation: building fast and reliable reports in Power BI](https://www.youtube.com/watch?v=GhiJABR7XX0) 
-- [Presentation: Power BI Enterprise Deployments](https://www.youtube.com/watch?v=K-zEWICvICM)  
+## Next steps
+- [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy), with all-around guidance on large-scale Power BI deployments 
+- [DirectQuery in SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) 
+- [[YouTube] Building Fast and Reliable Reports in Power BI](https://www.youtube.com/watch?v=GhiJABR7XX0) 
+- [[YouTube] Power BI Enterprise Deployments](https://www.youtube.com/watch?v=K-zEWICvICM)  
  
  
