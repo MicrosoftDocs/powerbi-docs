@@ -135,6 +135,9 @@ You can purchase Power BI Pro licenses directly or chat with a representative at
 
 You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help you with your Power BI implementation.
 
+## What happens if my Power BI Pro license expires?
+There is a 30-day grace period after a Power BI Pro license expires.
+
 ## Does Power BI meet national, regional, and industry-specific compliance requirements?
 Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
 
