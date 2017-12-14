@@ -191,7 +191,7 @@ Users in the organization can use the ArcGIS Maps for Power BI (Preview) visuali
 
 ## Custom visuals settings
 ### Enable custom visuals for the entire organization
-Users in the organization can interact with and share custom visuals.
+Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 ![Custom visuals settings](media/service-admin-portal/powerbi-admin-custom-visuals.png)
 
