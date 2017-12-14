@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Modeling
 metadata:
   title: Modeling | Microsoft Power BI
@@ -13,12 +12,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
+    With the **modeling** capabilities in **Power BI**, you can connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
 - title: Introduction to modeling your data
   durationInMinutes: 3
   content: |
@@ -62,4 +61,4 @@ items:
 
     [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
 - content: |
-    You've completed the **Modeling** section of Microsoft Power BI Guided learning.
+    You are on a roll. Keep up the good work in learning about Power BI! You've completed the **Modeling** section of Microsoft Power BI Guided learning. Next up is visualizations.

@@ -164,7 +164,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 **April 28, 2016**
 
-* [Quick Insights on Dashboard Tiles](service-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+* [Quick Insights on Dashboard Tiles](service-insights.md): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
