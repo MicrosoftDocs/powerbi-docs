@@ -194,7 +194,7 @@ Users in the organization can create template content packs that use datasets bu
 Users in the organization can ask questions about their data using Cortana.
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ### Use Analyze in Excel with on-premises datasets
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -213,7 +213,7 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 ![Custom visuals settings](media/service-admin-portal/powerbi-admin-custom-visuals.png)
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## R visuals settings
 
@@ -222,7 +222,7 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Audit settings
 
@@ -233,7 +233,7 @@ Users in the organization can use auditing to monitor actions taken in Power BI 
 This setting needs to be enabled for audit log entries to be recorded.
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Dashboard settings
 
@@ -242,7 +242,7 @@ This setting needs to be enabled for audit log entries to be recorded.
 Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](service-data-classification.md)
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Developer settings
 
