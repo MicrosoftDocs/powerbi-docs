@@ -117,7 +117,9 @@ When you are in the service, you can verify that you have a Pro account by going
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
 ## Grace period
-There is a 30-day grace period after a Power BI Pro license expires.
+There is a 30-day grace period after a Power BI Pro license expires. 
+
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## Next steps
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
