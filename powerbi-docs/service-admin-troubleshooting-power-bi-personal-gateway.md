@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
 
 ---
@@ -24,7 +24,7 @@ ms.author: davidi
 The following goes through some common issues you may encounter when using the Power BI Gateway - Personal.
 
 > [!NOTE]
-> If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> The current version of the gateway for personal use is the **On-premises data gateway (personal)**. Please update your installation to use that version.
 > 
 > 
 

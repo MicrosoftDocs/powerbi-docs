@@ -15,7 +15,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
@@ -31,7 +31,7 @@ With apps, whenever the app author releases updates, you automatically see the c
 Planning to author an app? See [Create and publish apps n Power BI](service-create-distribute-apps.md) for more information.
 
 ## Get a new app
-You can get apps in a few different ways. The app author can install the app automatically in your Power BI account or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
+You can get apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. 
 
 ### Install an app from a direct link
 The easiest way to install a new app yourself is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.

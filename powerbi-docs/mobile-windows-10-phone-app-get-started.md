@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
@@ -32,10 +32,8 @@ Then interact with your dashboards and reports, explore the data, and share them
 ## First things first
 * [**Get the Power BI mobile app for Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
   
-  > [!NOTE]
-  > Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
-  > 
-  > 
+  Your device needs to be running Windows 10. The app can run on devices with at least 3 GB RAM and 8 GB internal storage.
+   
 * Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
