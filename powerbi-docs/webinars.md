@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 12/15/2017
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -43,7 +43,7 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
-- [Improving Profitability in Healthcare - 12/12/17](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
+No webinars scheduled yet. Check back soon for more upcoming webinars.
 
 ## On-Demand webinars
 
@@ -65,11 +65,15 @@ Watch recorded sessions at any time
 
 - [Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
+- [Improving Profitability in Healthcare](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
+
 ## See also
 
 - [Power BI whitepapers](whitepapers.md)
 
 - [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
+
+- [Sign up to receive the Power BI Newsletter](https://powerbi.microsoft.com/en-us/newsletter/)
 
 - [Get started with Power BI](service-get-started.md)
 
