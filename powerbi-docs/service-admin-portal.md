@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 12/14/2017
 ms.author: asaxton
 ---
 # Power BI admin portal
@@ -194,7 +194,7 @@ Users in the organization can create template content packs that use datasets bu
 Users in the organization can ask questions about their data using Cortana.
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ### Use Analyze in Excel with on-premises datasets
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -206,14 +206,23 @@ Users in the organization can use Excel to view and interact with on-premises Po
 
 Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
 
+## Custom visuals settings
+### Enable custom visuals for the entire organization
+Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+
+![Custom visuals settings](media/service-admin-portal/powerbi-admin-custom-visuals.png)
+
+> [!NOTE]
+> This setting applies to the entire organization and cannot be limited to specific groups.
+
 ## R visuals settings
 
-### Interact with an dshare R visuals
+### Interact with and share R visuals
 
 Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Audit settings
 
@@ -224,7 +233,7 @@ Users in the organization can use auditing to monitor actions taken in Power BI 
 This setting needs to be enabled for audit log entries to be recorded.
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Dashboard settings
 
@@ -233,7 +242,7 @@ This setting needs to be enabled for audit log entries to be recorded.
 Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](service-data-classification.md)
 
 > [!NOTE]
-> This settings applies to the entire organization and cannot be limited to specific groups.
+> This setting applies to the entire organization and cannot be limited to specific groups.
 
 ## Developer settings
 
