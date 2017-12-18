@@ -31,7 +31,7 @@ Power BI Pro is for those users publishing reports, sharing dashboards, collabor
 
 IT Admins have a few options to use Power BI Pro within your organization. You can purchase Power BI Pro through the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase as an organization.
 
-For more information about Power BI Premium, and how Power BI Pro fits into the Premium offering, see [Power BI Premium - what is it?](service-premium.md)
+For more information about Power BI Premium, and how Power BI Pro fits into the Premium offering, see [Power BI Premium - what is it?](service-premium.md).
 
 ## Pricing
 For the latest pricing information of Power BI Pro and a table listing of included features, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
@@ -115,11 +115,6 @@ Under **Billing** > **Subscriptions**, you will see **Power BI Pro** listed. If 
 When you are in the service, you can verify that you have a Pro account by going to the **gear** icon and selecting **Manage personal storage**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
-
-## Grace period
-There is a 30-day grace period after a Power BI Pro license expires. 
-
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## Next steps
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
