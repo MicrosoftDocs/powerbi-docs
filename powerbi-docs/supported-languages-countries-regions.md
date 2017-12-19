@@ -161,7 +161,7 @@ Besides setting the language for the Power BI Desktop application, you can also 
 - How we compare and sort strings. For example, because Turkish has two of the letter i, depending on the collation of your database, the two can end up in different orders when sorting. 
 - The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
 
-Here's how to set the model language
+Here's how to set the model language.
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Global**, select **Regional Settings**.
