@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/30/2017
 ms.author: asaxton
 
 ---
@@ -344,8 +344,8 @@ Learn more about [Less](http://lesscss.org/).
 ## Debugging
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
-## Submit your visual to the Office store
-You can to be included in the Office store. For more information on this process, see [Publish custom visuals to the Office store](developer/office-store.md).
+## Submit your visual to AppSource
+You can list your visual for others to use but submitting it to AppSource. For more information on this process, see [publish custom visuals to AppSource](developer/office-store.md).
 
 ## Troubleshooting
 **Pbiviz command not found (or similar errors)**

@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Introduction to DAX
 metadata:
   title: Introduction to DAX | Microsoft Power BI
@@ -11,12 +10,12 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
   content: |
-    Learn how to create and work with DAX from an established expert.
+    Learn how to create and work with DAX, from an established expert.
 - title: Introduction to DAX
   durationInMinutes: 9
   content: |
@@ -54,4 +53,4 @@ items:
 
     [!INCLUDE [](includes/7-6-dax-tables-and-filtering.md)]
 - content: |
-    You've completed the **Introduction to DAX** section of Microsoft Power BI Guided learning.
+    You've completed the **Introduction to DAX** section of Power BI Guided Learning. What a journey! If you've done these tutorials in sequence, then you've finished all the sections of **Guided Learning**. Way to go! Now go use **Power BI** to create compelling reports and dashboards that tell your story.

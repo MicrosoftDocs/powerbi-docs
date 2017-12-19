@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
 
 ---
@@ -33,7 +33,7 @@ This sample is part of a series that illustrates how you can use  Power BI with 
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
 
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample.
+[!Note] You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## Spending trends
 Let’s first look for trends in spending by category and location.  
