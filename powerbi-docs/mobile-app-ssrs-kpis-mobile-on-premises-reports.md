@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/18/2017
 ms.author: maggies
 
 ---
@@ -60,7 +60,14 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 3. Tap **Connect to server**.
    
     ![Connect to server](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
-4. Fill in the server address and your user name and password. Use this format for the server address:
+
+     The mobile app needs to access the server in some way. There are a few ways to do that:
+
+    - Being on the same network/using VPN is the easiest way.
+    - It's possible to use a Web Application Proxy to connect from outside the organization. See [Using OAuth to connect to Reporting Services](mobile-oauth-ssrs.md) for details. 
+    - Open a connection (port) in the firewall.
+
+1. Fill in the server address and your user name and password. Use this format for the server address:
    
      `http://<servername>/reports`
    
@@ -68,12 +75,9 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
    
      `https://<servername>/reports`
    
-   > [!NOTE]
-   > Include **http** or **https** in front of the connection string.
-   > 
-   > 
+   Include **http** or **https** in front of the connection string.
    
-    ![COnnect to server dialog box](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
+    ![Connect to server dialog box](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Optional) Under **Advanced options**, you can give the server a friendly name, if you'd like.
 6. Now you see the server in the left navigation bar--in this example, called "power bi report server."
    
@@ -97,7 +101,7 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 
 * Tap **Favorites**.
   
-   ![Favorites in the left navigation pane](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server.png)
+   ![Favorites in the left navigation pane](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Your favorite KPIs and reports from the web portal are all on this page, along with Power BI dashboards in the Power BI service:
   

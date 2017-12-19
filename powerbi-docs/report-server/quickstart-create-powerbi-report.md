@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 12/15/2017
 ms.author: maggies
 
 ---
@@ -109,6 +109,7 @@ Power BI Report Server reports don’t support:
 * R visuals
 * ArcGIS maps
 * Breadcrumbs
+* Power BI Desktop preview features
 
 ### In the Power BI mobile apps
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../mobile-apps-for-mobile-devices.md), including:
