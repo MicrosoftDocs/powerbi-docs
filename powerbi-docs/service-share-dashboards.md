@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.author: maggies
 
 ---
@@ -119,7 +119,11 @@ Things to keep in mind about sharing dashboards:
 
 ### My dashboard recipients see a lock icon in a tile or a "Permission required" message
 
-If the people you share with see a locked tile in a dashboard, or a "Permission required" message when they try to view a report, you need to grant them permission to the underlying dataset. Here's how.
+The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
+
+![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+If so, you need to grant them permission to the underlying dataset. Here's how.
 
 1. Go to the **Datasets** tab in your content list.
 
