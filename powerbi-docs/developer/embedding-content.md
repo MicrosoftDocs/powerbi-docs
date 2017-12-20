@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/19/2017
+ms.date: 12/19/2017
 ms.author: asaxton
 ---
 # Embed your Power BI dashboards, reports and tiles
@@ -136,9 +136,9 @@ If you are embedding for your customers, you will want to do the following.
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-cores |.5 cores, 3GB RAM |.5 cores | |1-300 |
-| A2 |2 v-cores |1 core, 5GB RAM |1 core | |301-600 |
-| A3 |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |
+| A1 |1 v-cores |.5 cores, 3GB RAM |.5 cores | 5 per second |1-300 |
+| A2 |2 v-cores |1 core, 5GB RAM |1 core | 10 per second |301-600 |
+| A3 |4 v-cores |2 cores, 10GB RAM |2 cores | 15 per second |601-1,200 |
 | A4 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
 | A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
 | A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |

@@ -940,6 +940,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed custom layouts into an app"
+      href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
       href: developer/create-an-azure-active-directory-tenant.md
     - name: "Register an application"
