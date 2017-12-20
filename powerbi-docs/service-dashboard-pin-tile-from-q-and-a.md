@@ -1,5 +1,5 @@
 ---
-title: Pin a tile to a Power BI dashboard from Q&A
+title: Pin a tile to a dashboard from Q&A
 description: Documentation on how to pin a tile to a Power BI dashboard from the Q&A question box
 services: powerbi
 documentationcenter: ''
@@ -24,7 +24,7 @@ ms.author: mihart
 ## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-> **NOTE**: To follow along, open the [Retail Analysis sample](sample-retail-analysis.md).
+Q&A is available from dashboards and reports. In this article, we'll open Q&A from a dashboard. Dashboards are available in Power BI service but not Power BI Desktop. To follow along, open the [Retail Analysis sample dashboard](sample-retail-analysis.md).
 > 
 > 
 
@@ -37,8 +37,10 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
    the question box gives you suggestions.
 4. To add the chart to your dashboard as a tile, select the pin ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) on the top-right side of the canvas.
 5. Pin the tile to an existing dashboard or to a new dashboard. 
-   
-   * Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards withing the current workspace.
+
+   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+
+   * Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards within the current workspace.
    * New dashboard: type the name of the new dashboard and it will be added to your current workspace.
 6. Select **Pin**.
    
