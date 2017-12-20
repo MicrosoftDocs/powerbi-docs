@@ -1,6 +1,6 @@
 ---
-title: Add a page to a Power BI report
-description: Add a page to a Power BI report
+title: Add a page or duplicate a page in a report 
+description: Add a page to a Power BI report in Power BI service and Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,20 +16,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
-# Add a page to a Power BI report
-## Add a new blank page
-No reason to crowd up a report page -- just add a new blank page.
+# Add a page to a Power BI report in Power BI service and Power BI Desktop
+No reason to crowd up a report page -- just add a new blank page. 
 
+Adding and duplicating report pages require edit permissions to the report. In Power BI service, this means opening the report in [Editing view](service-reading-view-and-editing-view.md). 
+
+## Add a new blank page
 Select the yellow plus icon and then type a new name for the page.  
 
 ![](media/power-bi-report-add-page/reorderpages2.gif)
 
 ## Duplicate a page
-From the top control bar, in [Editing mode](service-interact-with-a-report-in-editing-view.md), select the **Duplicate this page** icon.
+From the top control bar, in [Editing view](service-interact-with-a-report-in-editing-view.md), select the **Duplicate this page** icon.
 
 ![](media/power-bi-report-add-page/pbi_duplicate.png)
 
