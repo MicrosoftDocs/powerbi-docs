@@ -12,7 +12,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/31/2017
+ms.date:12/20/2017
 ms.author: mihart
 
 ---
@@ -89,7 +89,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 ### Having trouble retrieving answers from a dashboard?
 Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the *Utterances** field.
 
-    ![Open Shared with me in Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
+![Open Shared with me in Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 
 
 #### Troubleshooting tool known issues

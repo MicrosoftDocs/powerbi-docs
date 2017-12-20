@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/07/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
@@ -26,7 +26,7 @@ This article teaches you how to delete a dashboard, report, workbook, dataset, a
 ## Delete a dashboard
 Dashboards can be removed. Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
 
-* If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace will remove the dashboard from their Power BI workspace.
+* If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace will remove the dashboard from their Power BI workspaces.
 * If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
 * If a dashboard is part of an [organizational content pack](service-organizational-content-pack-disconnect.md), the only way to remove it is to remove the associated dataset.
 
@@ -68,7 +68,7 @@ If the workbook is stored on OneDrive for Business, deleting it from Power BI do
    ![](media/service-delete/power-bi-delete-confirm.png)
 
 ## Delete a dataset
-Datasets can be deleted. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from this dataset.
+Datasets can be deleted. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from that dataset.
 
 If a dataset is part of one or more [organizational content packs](service-organizational-content-pack-disconnect.md), the only way to delete it is to remove it from the content packs where it's being used, wait for it to be processed, and then try deleting it again.
 
@@ -132,7 +132,7 @@ Deleting an app from your app list page does not delete the app for other member
    
    ![](media/service-delete/power-bi-delete-app.png)
    
-   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to re-send it, you can find the original email with the link to the app, you can check your Notifications center to see if the notification for that app is still listed, or you can check your organization's AppSource.
+   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to re-send it, you can find the original email with the link to the app, you can check your [Notifications center](service-notificatio-center.md) to see if the notification for that app is still listed, or you can check your organization's [AppSource](service-install-use-apps.md).
 
 ## Considerations and troubleshooting
 This article covered how to delete the major building blocks of Power BI service. But there are more things that you can delete in Power BI.  
