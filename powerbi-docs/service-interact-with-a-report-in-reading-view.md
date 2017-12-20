@@ -97,7 +97,7 @@ Easily navigate between the visualizations on the report page. Select **View > S
 
 ![report Selection pane](media/service-interact-with-a-report-in-reading-view/power-bi-selection-pane.png)
 
-To learn more, see [Report Selection pane](power-bi-report-selection-pane.md).
+To learn more, see Report Selection pane.
 
 ##    Miscellaneous other interactions
 There are just so many ways you can interact with a report in Reading view. Select a link below to learn more.
@@ -108,7 +108,7 @@ There are just so many ways you can interact with a report in Reading view. Sele
 - [Analyze in Excel](service-analyze-in-excel.md)
 - [Generate QR code](service-create-qr-code-for-report.md)
 - [Pin a live page to a dashboard](service-dashboard-pin-live-tile-from-report.md)
-- [View messages in the Notifications center](notification-center.md)
+- [View messages in the Notifications center](service-notification-center.md)
 - [Pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)
 
 ## Next steps

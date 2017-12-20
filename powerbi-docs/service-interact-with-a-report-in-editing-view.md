@@ -39,7 +39,7 @@ Take a look at the list of topics under the **Reports** header in the Table of C
 
 
 ## Next steps
-Back to [Reading view and Editing view in Power BI service](service-reading-view-and-editig-view.md)
+Back to [Reading view and Editing view in Power BI service](service-reading-view-and-editing-view.md)
 
 What functionality is available in [report Reading view](service-interact-with-a-report-in-reading-view.md)
 
