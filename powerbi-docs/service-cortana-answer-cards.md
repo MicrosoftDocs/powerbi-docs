@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/29/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
@@ -25,7 +25,7 @@ Use the full capabilities of Power BI to create special report pages, called *Co
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you are trying out the Cortana and Power BI **dashboard** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
 > 
 > 
@@ -60,7 +60,7 @@ A *Cortana answer page* in a report is sized specifically for Cortana so that Co
    > To improve results, avoid using words that are also column names.
    > 
    > 
-6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
+6. Optionally, if your report has page level filters, you may want to set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question. **Require single selection** can be found at the bottom of the **Filters** pane.
    
    > [!NOTE]
    > You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will display the answer page regardless of the Require Single Selection setting.
