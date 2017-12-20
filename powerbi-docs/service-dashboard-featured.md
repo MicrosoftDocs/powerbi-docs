@@ -31,7 +31,8 @@ When you select a dashboard as *featured*, each time you open Power BI service, 
 
 You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](service-dashboard-favorite.md).
 
-> [!NOTE] This topic applies to Power BI service, and not to Power BI Desktop.
+> [!NOTE] 
+>This topic applies to Power BI service, and not to Power BI Desktop.
 
 If you haven't yet set a featured dashboard, Power BI will open to the last dashboard you used.  
 
