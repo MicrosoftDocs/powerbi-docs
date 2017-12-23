@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/23/2017
 ms.author: mihart
 
 ---
@@ -44,4 +44,3 @@ Maybe you have a report that already connects to your dataset and has some visua
 [Create new visualizations](power-bi-report-add-visualizations-ii.md)
 
 [Delete visualizations](service-delete.md) you don't need
-
