@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
 
 ---
@@ -51,7 +51,7 @@ For more information, see [Tutorial: Basic Area chart](power-bi-visualization-ba
 ### Cards: Single number
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
-For more information, see [Create a big number tile for a dashboard](power-bi-visualization-big-number.md).
+For more information, see [Create a Card (big number tile)](power-bi-visualization-card.md).
 
 ### Combo charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)

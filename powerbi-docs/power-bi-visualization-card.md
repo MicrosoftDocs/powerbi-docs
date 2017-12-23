@@ -36,7 +36,7 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
 2. In the Visualizations pane, select the Card icon.
 
    ![](media/power-bi-visualization-card/pbi_changechartcard.png)
-6. Hover over the card and select the pin icon ![](media/power-bi-visualization-big-number-report/pbi_pintile.png) to add the visualization to the dashboard.
+6. Hover over the card and select the pin icon ![](media/power-bi-visualization-card/pbi_pintile.png) to add the visualization to the dashboard.
 
    ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
 7. Pin the tile to an existing dashboard or to a new dashboard.

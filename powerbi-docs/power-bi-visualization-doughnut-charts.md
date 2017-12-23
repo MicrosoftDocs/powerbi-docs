@@ -38,7 +38,7 @@ These instructions use the Retail Analysis Sample to create a doughnut chart tha
      
     ![](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png)
 
-5. Optionally, [adjust the size and color of the chart's text](power-bi-customize-title-background-and-legend.md). 
+5. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
 
 ## Considerations and troubleshooting
 * The sum of the doughnut chart values must add up to 100%.
