@@ -29,6 +29,13 @@ You can configure RLS for data models imported into Power BI with Power BI Deskt
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
+By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply the Filter Direction when using Row Level Security** checkbox. You should check this box when implementing [dynamic row-level security](https://docs.microsoft.com/en-us/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), wherein you provide row-level security based on user name or login ID. 
+
+For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing the Tabular BI Semantic Model.docx) technical article.
+
+![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
+
+
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## Manage security on your model
@@ -57,12 +64,6 @@ You can also see how many members are part of the role by the number in parenthe
 You can remove members by selecting the X next to their name. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
-
-By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply the Filter Direction when using Row Level Security** checkbox. You should check this box when implementing [dynamic row-level security](https://docs.microsoft.com/en-us/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), wherein you provide row-level security based on user name or login ID. 
-
-For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing the Tabular BI Semantic Model.docx) technical article.
-
-![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
 
 ## Validating the role within the Power BI service
 You can validate that the role you defined is working correctly by testing the role. 
