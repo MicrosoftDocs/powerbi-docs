@@ -189,6 +189,16 @@ Users in the organization can use Excel to view and interact with on-premises Po
 ### User ArcGIS Maps for Power BI (Preview)
 Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
 
+
+## Custom visuals settings
+### Enable custom visuals for the entire organization
+Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+
+![Custom visuals settings](media/service-admin-portal/powerbi-admin-custom-visuals.png)
+
+> [!NOTE]
+> This setting applies to the entire organization and cannot be limited to specific groups.
+
 ## R visuals settings
 ### Interact with an dshare R visuals
 Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
