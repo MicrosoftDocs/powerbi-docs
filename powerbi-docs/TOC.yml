@@ -92,6 +92,8 @@
       href: service-admin-premium-purchase.md
     - name: "Manage Power BI Premium"
       href: service-admin-premium-manage.md
+    - name: "Support for large datasets"
+      href: service-premium-large-datasets.md
     - name: "Power BI Premium FAQ"
       href: service-premium-faq.md
     - name: "Power BI Premium release notes"
@@ -252,8 +254,6 @@
       href: service-insight-types.md
     - name: "Optimize your data for Power BI Quick Insights"
       href: service-insights-optimize.md
-    - name: "Display a dashboard tile in Full Screen mode (TV mode)"
-      href: service-tile-fullscreen-mode.md
     - name: "Featured dashboards in Power BI"
       href: service-dashboard-featured.md
     - name: "Create a phone view of a dashboard"
@@ -380,6 +380,8 @@
       href: service-export-to-pbix.md
     - name: "Filter a report using query string parameters in the URL"
       href: service-url-filters.md
+    - name: "Best practices for building fast and reliable reports in Power BI"
+      href: power-bi-reports-performance.md  
   - name: Visualizations
     items: 
     - name: "Visualizations in Power BI"
@@ -746,6 +748,8 @@
     items: 
     - name: "Report view in Power BI Desktop"
       href: desktop-report-view.md
+    - name: "Q&A in Power BI Desktop"
+      href: desktop-qna-in-reports.md
     - name: "Analytics pane in Power BI Desktop"
       href: desktop-analytics-pane.md
     - name: "Using insights in Power BI Desktop"
@@ -788,6 +792,8 @@
       href: desktop-slicer-numeric-range.md
     - name: "Use the relative date slicer"
       href: desktop-slicer-filter-date-range.md
+      name: "Create a responsive slicer you can resize"
+      href: power-bi-slicer-filter-responsive.md
     - name: "Create custom Power BI answer cards for Cortana"
       href: service-cortana-answer-cards.md
     - name: "Row-level security"
@@ -934,6 +940,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed custom layouts into an app"
+      href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
       href: developer/create-an-azure-active-directory-tenant.md
     - name: "Register an application"

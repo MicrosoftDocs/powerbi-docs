@@ -1,6 +1,6 @@
 ---
-title: Change the type of visualization in a Power BI report
-description: Change the type of visualization in a Power BI report
+title: Change the type of visualization in a report
+description: Change the type of report visualization in Power BI service and Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
 # Change the type of visualization in a Power BI report
-Try different types of visualizations in Power BI to see which one illustrates your data best. 
+Try different types of visualizations in Power BI service and Power BI Desktop to see which one illustrates your data best. 
 
-1. Open your [report in Editing View](service-reading-view-and-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md), if your report doesn't have any yet.
+1. Open a report that already has at least one visualization.   
 2. In the Visualizations pane, select the new visualization type.  
    
    ![](media/power-bi-report-change-visualization-type/changeviz.gif)

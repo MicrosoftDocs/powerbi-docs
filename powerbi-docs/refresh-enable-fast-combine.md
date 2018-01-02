@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
 
 ---
@@ -56,6 +56,7 @@ You can use the following steps to enable Fast Combine for your personal gateway
     If you are not an administrator, the location will be the following.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+    
 2. Add the **&lt;EnableFastCombine&gt;** element with a value of true to the config file. Adding this element will turn **Fast Combine** on.
    
    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
@@ -74,6 +75,7 @@ You can use the following steps to enable Fast Combine for your personal gateway
     If you are not an administrator, the location will be the following.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+
 2. Remove the **&lt;EnableFastCombine&gt;** element from the config file. Removing this element will turn **Fast Combine** off.
 3. Exit and re-launch the gateway configuration screen.
 4. You will no longer see a status telling you know that **Fast Combine** is enabled.

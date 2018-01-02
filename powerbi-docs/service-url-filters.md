@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 12/4/2017
 ms.author: mihart
 
 ---
@@ -104,7 +104,7 @@ There may be some cases where this will be helpful when you'd like to see differ
 ## Limitations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
-* Query string filtering does not work with [Publish to web](service-publish-to-web.md) URLs.
+* Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
 * Field type has to be string.
 * Table and field names cannot have any spaces.
 

@@ -5,7 +5,7 @@ Welcome to the Power BI **Guided Learning** section designed to introduce you to
 ## DAX and this Guided Learning video series
 The goal of this **Guided Learning** section is to teach you DAX basics and fundamentals - how to think about DAX, how it works, and the most useful features as explained (and learned with lots of experience) by a renowned DAX expert, [Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
 
-![](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
+![Portrait of Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
 The videos in this **Guided Learning** section on **DAX** teaches you DAX basics from the perspective of how the DAX formula language works. This is useful when creating DAX formulas from scratch, but it's also very useful for understanding how Power BI creates those DAX formulas as you create queries in the **Query Editor**.
 

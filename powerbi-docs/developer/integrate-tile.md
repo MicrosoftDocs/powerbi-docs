@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 12/19/2017
 ms.author: asaxton
 
 ---
@@ -233,9 +233,11 @@ https://app.powerbi.com/embed?dashboardId={dashboard_id}&tileId={tile_id}&groupI
 ```
 
 ## Next steps
-A sample application is available on GitHub for you to review. For more information, see [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app).
+[Tile Embed](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Tile-Embed) on PowerBI-JavaScript Wiki
 
-More information is available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+
+[integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) sample on GitHub.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

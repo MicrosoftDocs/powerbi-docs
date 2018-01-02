@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/17/2017
-ms.author: jaimeta
+ms.date: 12/11/2017
+ms.author: tankas
 ---
 # Changelog for Power BI Report Server
 
@@ -28,6 +28,10 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## October 2017
 
 - **Power BI Report Server**
+    - *Version 1.1.6551.5155 (Build 14.0.600.438), Released: December 11, 2017*
+        - Bug Fixes
+            - Failure to save data after refreshing for certain Power BI Desktop reports.
+
     - *Version 1.1.6530.30789 (Build 14.0.600.437), Released: November 17, 2017*
         - Bug Fixes
             - Fix for Basic Authentication Scenarios 

@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2017
+ms.date: 12/21/2017
 ms.author: asaxton
 
 ---
 # Use row-level security with Power BI embedded content
-Row level security (RLS) can be used to restrict user access to data within a report or dataset, allowing for multiple different users to use the same report while all seeing different data. RLS can be taken advantage of when embedding reports from Power BI.
+Row level security (RLS) can be used to restrict user access to data within dashboards, tiles, reports, and datasets. Multiple, different users can work with those same artifacts all while seeing different data. Embedding supports RLS.
 
-If you are embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You will need to configure the embed token to account for the user and role. Read on to learn how to do this.
+If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You will need to configure the embed token to account for the user and role. Read on to learn how to do this.
 
 If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information see, [Row-Level security (RLS) with Power BI](../service-admin-rls.md).
 
@@ -31,7 +31,7 @@ If you are embedding to Power BI users (user owns data), within your organizatio
 
 To take advantage of RLS, it’s important you understand three main concepts; Users, Roles, and Rules. Let’s take a closer look at each:
 
-**Users** – These are the actual end-users viewing reports. In Power BI Embedded, users are identified by the username property in an embed token.
+**Users** – End-users viewing the artifact (dashboard, tile, report, or dataset). In Power BI Embedded, users are identified by the username property in an embed token.
 
 **Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../desktop-rls.md).
 
@@ -82,11 +82,11 @@ Now that you have your Power BI Desktop roles configured, there is some work nee
 
 Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API.
 
-The [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API accepts a list of identities with indication of the relevant datasets. Currently only one identity can be provided. Support for multiple datasets will be added, for dashboard embedding, in the future. For RLS to work, you will need to pass the following as part of the identity.
+The [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
 
 * **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
-* **dataset (mandatory)** – The dataset that is applicable for the report you are embedding. Only one dataset can be provided in the list of datasets. Support for multiple datasets will be supported for dashboard embedding in the future.
+* **dataset (mandatory)** – The dataset that is applicable for the artifact you are embedding. 
 
 You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**. Currently, only reports are supported.
 
@@ -122,7 +122,7 @@ If you are calling the REST API, the updated API now accepts an additional JSON 
 }
 ```
 
-Now, with all the pieces together, when someone logs into your application to view this report, they’ll only be able to see the data that they are allowed to see, as defined by our row-level security.
+Now, with all the pieces together, when someone logs into your application to view this artifact, they’ll only be able to see the data that they are allowed to see, as defined by our row-level security.
 
 ## Working with Analysis Services live connections
 Row-level security can be used with Analysis Services live connections for on-premises servers. There are a few specific concepts that you should understand when using this type of connection.
@@ -140,12 +140,11 @@ Roles can be provded with the identity in an embed token. If no role is provided
 ## Considerations and limitations
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
-* Passing the identity information, when calling GenerateToken, is only supported for report read/write. Support for other resources will come later.
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles, but not dynamic by username.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
-* If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role. Otherwise, role assignment will not occur.
-* Only one identity can be provided in the list of identities. We are using a list to enable multi-identity tokens for dashboard embedding in the future.
+* If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment will not occur.
+* A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
