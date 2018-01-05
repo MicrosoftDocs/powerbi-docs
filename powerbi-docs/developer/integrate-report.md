@@ -51,7 +51,7 @@ Within your application, you will first need to get an **access token**, from Az
 To get a **Power BI** report, you use the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. The [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete C# method to get a report. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. The [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete C# method to get a report. 
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
