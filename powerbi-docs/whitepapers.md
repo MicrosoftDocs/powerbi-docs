@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 01/05/2018
 ms.author: asaxton
 
 ---
@@ -38,5 +38,6 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Security](service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. |
 | [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |This paper introduces the security model for tabular BI semantic and Power BI. You will learn how to create roles, implement dynamic security, configure impersonation settings, manage roles, and choose a method for connecting to models that works in your network security context. |
 | [Capacity planning guidance for Power BI Report Server](report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. |
-|[Power BI Premium Planning and Deployment](https://aka.ms/Premium-Capacity-Planning-Deployment) | Technical whitepaper on best practices and guidance for planning, deploying and operationalizing Power BI Premium. 
+| [Power BI Premium Planning and Deployment](https://aka.ms/Premium-Capacity-Planning-Deployment)| This paper provides guidance and best practices for planning and deploying Premium capacity for well-defined workloads.|
+
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

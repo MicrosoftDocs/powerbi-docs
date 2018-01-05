@@ -587,10 +587,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * Get quick insights into your QuickBooks Online account data using our [content pack](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](service-connect-to-quickbooks-online.md).
 
-**May 19, 2015**
-
-* With this update, you can now connect to [Twilio through our content pack](service-connect-to-twilio.md)
-* The Power BI API has new additions! You can now [list all tables](http://docs.powerbi.apiary.io/#reference/datasets/tables-collection/list-all-tables) and [update an existing table schema](http://docs.powerbi.apiary.io/#reference/datasets/table/update-an-existing-tables-schema)
 
 **May 13, 2015**
 

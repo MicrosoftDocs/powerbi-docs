@@ -53,7 +53,7 @@ To get a **Power BI** tile, you use the [Get Tiles](https://msdn.microsoft.com/l
 A dashboard ID will need to be retrieved first before you can get the tile. For information on how to retrieve a dashbaord, see [Integrate a dashboard into an app (user owns data)](integrate-dashboard.md).
 
 ### Get tiles using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation. The [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation returns a list of tiles. You can get a single tile from the list of tiles. Below is a complete C# method to get a tile. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation. The [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation returns a list of tiles. You can get a single tile from the list of tiles. Below is a complete C# method to get a tile. 
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 

@@ -25,7 +25,7 @@ ms.author: mihart
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
 
 > [!NOTE]
-> Usage metrics will capture usage when you embed dashboards and reports, but not when you use [publish to web](service-publish-to-web.md)
+> Usage metrics will track usage of reports that are embedded in SharePoint Online. They will also track embedding of dashboards and reports via both the “user owns credentials” and “app owns credentials” flow. Usage metrics will not track usage of reports embedding via [publish to web](service-publish-to-web.md).
 > 
 > 
 
