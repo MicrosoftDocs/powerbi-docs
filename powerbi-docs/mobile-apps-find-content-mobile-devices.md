@@ -1,6 +1,6 @@
 ---
 title: Find dashboards, reports, apps in the Power BI mobile apps
-description: Read about where to find your dashboards and reports in the Power BI mobile apps, depending on where they came from.
+description: Read about where to find your dashboards, reports, and apps in the Power BI mobile apps, depending on where they came from.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/04/2018
 ms.author: maggies
 
 ---
@@ -46,7 +46,7 @@ You may have connections to one or more on-premises Power BI Report Server or SQ
 ## 3 Apps
 An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. In the Power BI service ([https://powerbi.com](https://powerbi.com)), apps are easy to discover and install. After you install them, you can view them from any device. 
 
-![Power BI new navigation](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-apps.png)
+![Power BI new navigation](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
 
 With apps you automatically get all the updates the author makes, and the author also controls how often the data is scheduled to refresh. You don't need to worry about keeping up-to-date with the author’s changes.
 
