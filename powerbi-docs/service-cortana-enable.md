@@ -12,7 +12,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
@@ -44,11 +44,10 @@ You'll need to sign in to Power BI service (not Power BI Desktop) and repeat the
 2. The dataset associated with this report is **Contoso Sales**.
    
     ![Contoso Sales dataset](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. In the upper right corner of Power BI service, select the cog icon and choose **Settings**.
+3. To the right of the dataset name, select the **ellipses (...) > Settings**.  
    
-    ![Choose Settings](media/service-cortana-enable/power-bi-cortana-settings.png)
-4. Select the **Datasets** tab and choose the dataset to enable for Cortana from the list on the left.
-5. Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
+    ![Choose Settings](media/service-cortana-enable/power-bi-settings-cortana.png)
+4. Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
    
    ![Cortana access dataset](media/service-cortana-enable/power-bi-cortana-enable-new.png)
    
@@ -64,16 +63,19 @@ You'll need to sign in to Power BI service (not Power BI Desktop) and repeat the
 ## Add your Power BI credentials to Windows
 You'll need to be running Windows 10 version 1511 or higher.
 
-1. Determine which Windows 10 version you are running. Open **Settings** > **System** > **About**.
-   
+1. Determine which Windows 10 version you are running. Open **Settings**.
+    ![Open Windows settings](media/service-cortana-enable/power-bi-cortana-windows.png)
+
+    Then select **System > About**. Towards the bottom of the screen you'll see **Windows specifications > Version**
+
    * If you have Windows 10 version 1511 (Windows 10 November 2015 Update) up until 1607, add your work or school account and Microsoft account (complete steps 2 and 3 below).
    * If you have Windows 10 version 1607 (Windows 10 July 2016 update) or later, add your work or school account (complete only step 2 below).
-2. Add your work or school account for Cortana.
+1. Add your work or school account for Cortana.
    
    * Open **Settings** > **Accounts**.
      
        ![Settings - Accounts](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Scroll to the bottom and select **Add a work or school account**.
+   * Scroll to the bottom and select **Add a work or school account**. Or, from the **Accounts** page selet **Access work or school >Connect**.
      
      ![Add work account](media/service-cortana-enable/power-bi-add-work-account2.png)
 

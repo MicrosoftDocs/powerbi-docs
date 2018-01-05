@@ -454,10 +454,8 @@
       href: power-bi-visualization-treemaps.md
     - name: "Tutorial: Waterfall charts in Power BI"
       href: power-bi-visualization-waterfall-charts.md
-    - name: "Create a big number tile for a Power BI dashboard by asking a question"
-      href: power-bi-visualization-big-number.md
-    - name: "Create a big number tile from a Power BI report"
-      href: power-bi-visualization-big-number-report.md
+    - name: "Tutorial: Cards (big number tiles) in Power BI"
+      href: power-bi-visualization-card.md
     - name: "Create advanced analytics and visualizations using R scripts in Power BI"
       href: service-r-visuals.md
   - name: Data from files
@@ -940,6 +938,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed custom layouts into an app"
+      href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
       href: developer/create-an-azure-active-directory-tenant.md
     - name: "Register an application"
