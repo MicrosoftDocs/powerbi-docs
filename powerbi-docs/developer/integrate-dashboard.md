@@ -53,7 +53,7 @@ To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.micro
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### Get dashboards using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a single dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a single dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. 
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
