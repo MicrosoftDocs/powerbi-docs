@@ -1052,6 +1052,8 @@
       href: report-server/data-sources.md
     - name: "Connect to data sources"
       href: report-server/connect-data-sources.md
+    - name: "Access shared datasets as OData feeds "
+      href: report-server/access-dataset-odata.md
     - name: "Configure scheduled refresh"
       href: report-server/configure-scheduled-refresh.md
     - name: "Add comments to a report"

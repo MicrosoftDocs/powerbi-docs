@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
-ms.author: asaxton
+ms.date: 01/05/2018
+ms.author: maghan
 
 ---
 # Accessing shared datasets as OData feeds in Power BI Report Server
@@ -35,7 +35,7 @@ You can access shared datasets from Power BI Desktop with an OData feed.
 
 Be sure to use **Advanced Options** so you can turn on Open Type Columns and format the columns accordingly in Power Query to meet your needs.
 
-Read more about [connecting to OData fields in Power BI Desktop](../desktop-connect-odata.md).
+Read more about [connecting to OData feeds in Power BI Desktop](../desktop-connect-odata.md).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
