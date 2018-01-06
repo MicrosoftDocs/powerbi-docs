@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: parthsha
 manager: kfile
-backup: asaxton
+backup: maghan
 editor: ''
 tags: ''
 qualityfocus: no
