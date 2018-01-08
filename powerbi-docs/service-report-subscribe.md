@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
@@ -62,7 +62,7 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## Subscribe to a report page
-1. Open the report in [Reading view](service-report-open-in-reading-view.md).
+1. Open the report in [Reading view](service-reading-view-and-editing-view.md).
 2. From the top menubar, select **Subscribe**.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
@@ -106,6 +106,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 
 ## Considerations and troubleshooting
 * At the current time, subscribe is not available for dashboards or reports that come from content packs or Power BI apps. But there is a workaround...make a copy of the report/dashboard and add subscriptions to that version instead.
+* Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and rename it, you will have to re-create your subscription
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 * Email subscriptions do not support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.    

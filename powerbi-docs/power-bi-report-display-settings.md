@@ -42,7 +42,7 @@ In Power BI service, open a report and select **View** from the upper left menub
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Page View settings are available in both [Reading View](service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md). In Editing View, a report owner can assign page view settings to individual report pages, and those settings are saved with the report. When colleagues open that report in Reading view, they see the report pages display using the owner's settings.  In Reading view colleagues can change *some* of the Page view settings, but the changes are not saved when they exit the report.
+Page View settings are available in both [Reading view and Editing view](service-reading-view-and-editing-view.md). In Editing View, a report owner can assign page view settings to individual report pages, and those settings are saved with the report. When colleagues open that report in Reading view, they see the report pages display using the owner's settings.  In Reading view colleagues can change *some* of the Page view settings, but the changes are not saved when they exit the report.
 
 ##    Page view settings
 The first set of *Page view* settings control the display of your report page relative to the browser window.  Choose between:
