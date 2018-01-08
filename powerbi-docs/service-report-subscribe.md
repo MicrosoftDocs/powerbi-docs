@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
@@ -62,7 +62,7 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## Subscribe to a report page
-1. Open the report in [Reading view](service-report-open-in-reading-view.md).
+1. Open the report in [Reading view](service-reading-view-and-editing-view.md).
 2. From the top menubar, select **Subscribe**.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
