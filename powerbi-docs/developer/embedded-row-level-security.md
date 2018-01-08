@@ -88,7 +88,7 @@ The [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API accept
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
 * **dataset (mandatory)** – The dataset that is applicable for the artifact you are embedding. 
 
-You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**. Currently, only reports are supported.
+You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**. 
 
 For example, you could change the [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) sample. *Home\HomeController.cs line 76 and 77* could be updated from:
 
