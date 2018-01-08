@@ -68,7 +68,7 @@ Now it's your turn. Explore insights using the [Supplier Quality Analysis sample
     ![](media/service-insights/power-bi-insight-focus.png)
 3. In Focus mode you can:
    
-   * [filter](service-interact-with-a-report-in-reading-view.md) the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
+   * Filter the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
      
         ![](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting the pin ![](media/service-insights/power-bi-pin-icon.png)  icon or **Pin visual**.

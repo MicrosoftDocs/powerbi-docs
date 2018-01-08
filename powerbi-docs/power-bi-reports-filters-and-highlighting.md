@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
@@ -27,7 +27,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 * Introduction to filters and highlighting (the article you're reading now)
 * The ways you can [create and use filters and highlighting in Editing View/reports that you own](power-bi-report-add-filter.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
-* The ways you can [use filters and highlighting in a report shared with you or in report Reading View](service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
+* The ways you can [use filters and highlighting in a report shared with you or in report Reading View](service-reading-view-and-editing-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
 * [A detailed tour of the filter and highlighting controls available in Editing View](power-bi-how-to-report-filter.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 * Now that you've learned how filers and highlighting work by default, [learn how to change the way visualizations on a page filter and highlight each other](service-reports-visual-interactions.md)
 
@@ -47,7 +47,7 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 > 
 
 ## Filters in Reading View versus Editing View
-There are two modes for interacting with reports: [Reading View](service-interact-with-a-report-in-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
+There are two modes for interacting with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 * In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
@@ -63,7 +63,7 @@ To see if any visual level filters exist, select a visual. In the image below, t
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
-In Reading View, explore the data by modifying the existing filters. Learn how in the article [Interact with filters in Reading view](service-interact-with-a-report-in-reading-view.md)
+In Reading View, explore the data by modifying the existing filters. Learn how in the article [Interact with filters in Reading view](service-reading-view-and-editing-view.md)
 
 ### The Filters pane in Editing View
 When you have owner permissions for a report and open it in Editing View, you see that **Filters** is just one of several editing panes available.
@@ -80,7 +80,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 ## Next steps
-[Interact with filters and highlighting (in Reading View)](service-interact-with-a-report-in-reading-view.md)
+[Interact with filters and highlighting (in Reading View)](service-reading-view-and-editing-view.md)
 
 [Add a filter to a report (in Editing View)](power-bi-report-add-filter.md)
 
