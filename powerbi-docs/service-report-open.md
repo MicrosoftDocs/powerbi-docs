@@ -29,11 +29,11 @@ In Power BI service there are two modes for viewing and interacting with reports
 
 1. Start in a workspace and select the **Reports** tab to display all reports in that workspace.  
    
-   ![](media/service-report-open-in-reading-view/power-bi-open-report.png)
-2. Select the report name to open it in Reading view.  
+   ![](media/service-report-open/power-bi-open-report.png)
+1. Select the report name to open it in Reading view.  
    
-    ![](media/service-report-open-in-reading-view/power-bi-reading-view.png)
-3. There's [so much you can do in Reading View](service-interact-with-a-report-in-reading-view.md).  This sample report has multiple pages, so start exploring by selecting each tab at the bottom of the report canvas. 
+    ![](media/service-report-open/power-bi-reading-view.png)
+1. There's [so much you can do in Reading View](service-reading-view-and-editing-view.md).  This sample report has multiple pages, so start exploring by selecting each tab at the bottom of the report canvas. 
 
 ## Open a report from a dashboard
 There are plenty of other ways to open a report; for example, you could start on a dashboard and select a tile that was created from a report.  Selecting the tile opens the report in Reading view. To follow along, [open the Sales and Marketing sample dashboard](sample-datasets.md).

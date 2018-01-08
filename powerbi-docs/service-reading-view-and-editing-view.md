@@ -70,7 +70,7 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Use the report Formatting pane](service-the-report-editor-take-a-tour.md) | No | Yes |
 | [Set visual interactions](service-reports-visual-interactions.md) | No  | Yes |
 | [Show data used to create the visualization](service-reports-show-data.md) | No  | Yes |
-| [Configure drilling](power-bi-visualization-drill-down) | No  | Yes |
+| [Configure drilling](power-bi-visualization-drill-down.md) | No  | Yes |
 | [Change the visualization being used](power-bi-report-change-visualization-type.md) | No | Yes|
 | [Delete a visualization, text box, or shape](service-delete.md)| No | Yes |
 

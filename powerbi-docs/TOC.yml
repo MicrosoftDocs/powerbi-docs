@@ -354,8 +354,6 @@
       href: service-reading-view-and-editing-view.md
     - name: "Interact with a report in Editing View in Power BI"
       href: service-interact-with-a-report-in-editing-view.md
-    - name: "Interact with a report in Reading View in Power BI"
-      href: service-interact-with-a-report-in-reading-view.md
     - name: "Tips and tricks for creating reports in Power BI service"
       href: power-bi-reports-tips-and-tricks-for-creating.md
     - name: "Analytics pane"
