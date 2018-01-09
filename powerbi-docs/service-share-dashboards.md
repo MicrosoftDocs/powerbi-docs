@@ -24,7 +24,7 @@ ms.author: maggies
 # Share your Power BI dashboards and reports with coworkers and others
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI offers [several ways to collaborate and distribute dashboards and reports](service-how-to-collaborate-distribute-dashboards-reports.md), and sharing is just one.
 
-![Share icon in a list of dashboards](media/service-share-dashboards/power-bi-share-dash.png)
+![Share icon in a list of favorite dashboards and reports](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
 
 With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](service-free-vs-pro.md). Your recipients also need Power BI Pro licenses, or the content needs to be in a [Premium capacity](service-premium.md). Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
@@ -38,23 +38,29 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## Share a dashboard
-1. In your My Workspace or in an app workspace, open a dashboard and select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png).
-2. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
+
+You can share dashboards and reports from most places in the Power BI service: your Favorites, Recent, Shared with me (if the owner allows it), My Workspace, or other Workspaces. 
+
+1. In a list of dashboards and reports, or in an open dashboard or report, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png).
+
+1. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
    
    You can share with people whose addresses are outside your organization, but you'll see a warning.
    
-   ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png)  
+   ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
+ 
 3. Add a message if you want. It's optional.
-4. To let your coworkers share your dashboard with others, check **Allow recipients to share your dashboard**.
+4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard/report**.
    
-   Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the dashboard, you can turn off resharing, or revoke resharing on an individual basis See [Stop sharing a dashboard or stop others from sharing](service-share-dashboards.md#stop-sharing-a-dashboard-or-stop-others-from-sharing), below.
+   Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the content, you can turn off resharing, or revoke resharing on an individual basis See [Stop sharing or stop others from sharing](service-share-dashboards.md#stop-sharing-or-stop-others-from-sharing), below.
+
 5. Select **Share.**
    
    ![Select the Share button](media/service-share-dashboards/power-bi-share-dialog-share.png)  
    
-   Power BI sends an email invitation to the individuals but not to groups, with a link to the shared dashboard You see a **Success** notification. 
+   Power BI sends an email invitation to the individuals but not to groups, with a link to the shared dashboard or report. You see a **Success** notification. 
    
-   When recipients in your organization click the link, Power BI adds the dashboard or report to their **Shared with me** list page. They can select your name to see all the dashboards you've shared. 
+   When recipients in your organization click the link, Power BI adds the dashboard or report to their **Shared with me** list page. They can select your name to see all the content you've shared with them. 
    
    ![Shared with me list page](media/service-share-dashboards/power-bi-shared-with-me-list-page.png)
    
@@ -64,21 +70,21 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 Sometimes you need to see the people you've shared with, and see who they've shared it with.
 
 1. In the list of dashboards and reports or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
-2. In the **Share dashboard** dialog box, select **Access**.
+2. In the **Share dashboard/report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
    
     People outside your organization are listed as **Guest**.
 
-## Stop sharing a dashboard or stop others from sharing
-Only the dashboard owner can turn resharing on and off.
+## Stop sharing or stop others from sharing
+Only the dashboard or report owner can turn resharing on and off.
 
 ### If you haven't sent the sharing invitation yet
-* Clear the **Allow recipients to share your dashboard** check box at the bottom of the invitation before you send it.
+* Clear the **Allow recipients to share your dashboard/report** check box at the bottom of the invitation before you send it.
 
-### If you've already shared the dashboard
-1. In the list of dashboards or in the dashboard itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
-2. In the **Share dashboard** dialog box, select **Access**.
+### If you've already shared the dashboard or report
+1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
+2. In the **Share dashboard/report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
 3. Select the ellipsis (**...**) next to **Read and reshare** and select:
@@ -86,7 +92,7 @@ Only the dashboard owner can turn resharing on and off.
    ![Read and reshare ellipsis](media/service-share-dashboards/power-bi-change-access.png)
    
    * **Read** to keep that person from sharing with anyone else.
-   * **Remove access** to keep that person from seeing the dashboard at all.
+   * **Remove access** to keep that person from seeing the shared content at all.
 
 4. In the **Remove access** dialog box, decide if you want to remove access to related content, too, such as reports and datasets. If you remove items with a warning icon ![Power BI warning icon](media/service-share-dashboards/power-bi-warning-icon.png), it's best to remove related content because it won't display properly.
 
