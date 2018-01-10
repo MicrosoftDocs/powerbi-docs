@@ -12,7 +12,7 @@
       href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
-    - name: "The new Power BI navigation experience"
+    - name: "Getting around in Power BI - navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
       href: sample-retail-analysis.md
   - name: Common tasks
     items: 
-    - name: "Favorite dashboards in Power BI"
+    - name: "Favorite dashboards, reports, and apps in Power BI"
       href: service-dashboard-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: service-print.md
