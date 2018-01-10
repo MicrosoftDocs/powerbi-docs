@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.author: mihart
 
 ---
@@ -235,6 +235,7 @@ This area of the screen contains additional options for interacting with the con
 
 ## Next steps
 [Get started with Power BI](service-get-started.md)  
+[Navigation: Getting around in Power BI service](service-the-new-power-bi-experience.md)
 [Power BI videos](videos.md)  
 [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 
