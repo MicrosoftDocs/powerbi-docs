@@ -48,7 +48,6 @@ For more information, see [Push data into a dashboard](walkthrough-push-data.md)
 [Publish custom visuals to the Office store](office-store.md)  
 [Power BI Visuals Git repo](https://github.com/Microsoft/PowerBI-visuals)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Power BI API on Apiary](http://docs.powerbi.apiary.io/#)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

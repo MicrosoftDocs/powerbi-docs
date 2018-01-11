@@ -6,8 +6,11 @@
             "redirect_document_id": false,
             "source_path": "powerbi-docs/service-connect-to-visual-studio.md",
             "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false,
+            "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md", 
+            "redirect_url": "/power-bi/refresh-troubleshooting-refresh-scenarios",
             "redirect_document_id": false
         }
-
+        
     ]
 }

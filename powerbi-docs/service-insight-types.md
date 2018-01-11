@@ -1,6 +1,6 @@
 ---
-title: Types of Quick Insights supported by Power BI
-description: Quick Insights with Power BI.
+title: Types of Insights supported by Power BI
+description: Quick Insights and View insights with Power BI.
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,17 +16,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/03/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
-# Types of Quick Insights supported by Power BI
-## How does Quick Insights work?
+# Types of insights supported by Power BI
+## How does Insights work?
 Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
 
-You can run Quick Insights against a dataset or tile (Related Insights).   
+You can run insights against a dataset or dashboard tile.   
 
-## What types of Quick Insights can we find?
+## What types of insights can we find?
 These are some of the algorithms we use:
 
 ## Category outliers (top/bottom)
@@ -75,9 +75,9 @@ For data across a time series, detects when there are specific dates or times wi
 ![](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
 
 ## Next steps
-[Power BI Quick Insights](service-insights.md)
+[Power BI insights](service-insights.md)
 
-If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)
+If you own a dataset, [optimize it for insights](service-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

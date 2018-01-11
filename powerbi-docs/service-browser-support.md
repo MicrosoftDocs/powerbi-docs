@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/12/2017
+ms.date: 12/18/2017
 ms.author: maggies
 
 ---
@@ -28,6 +28,8 @@ Power BI runs in these browsers:
 * Chrome desktop latest version
 * Safari Mac latest version
 * Firefox desktop latest version
+
+These browsers are supported on all platforms where they're available.
 
 ### Next steps
 * [Get started with Power BI](service-get-started.md)

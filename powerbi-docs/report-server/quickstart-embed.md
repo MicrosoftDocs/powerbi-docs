@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/09/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Quickstart: Embed a Power BI report using an iFrame and URL parameters

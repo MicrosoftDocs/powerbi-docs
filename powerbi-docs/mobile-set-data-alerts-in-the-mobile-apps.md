@@ -1,6 +1,6 @@
 ---
 title: Set data alerts in the Power BI mobile apps
-description: Learn to set alerts in the Power BI mobile apps and in the Power BI service to notify you when data in a dashboard changes beyond limits you set.
+description: Learn to set alerts in the Power BI mobile apps to notify you when data in a dashboard changes beyond limits you set.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/18/2017
 ms.author: maggies
 
 ---
@@ -27,7 +27,9 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
-You can set alerts in the Power BI mobile apps and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges, but not with streaming data. You can set data alerts on your mobile device and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+You can set alerts on dashboards in the Power BI mobile apps and in the Power BI service. Alerts notify you when data in a tile changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges, but not with streaming data. You can set data alerts on your mobile device and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+
+You can set alerts on tiles if you have a Power BI Pro license, or if you have a free Power BI license and the shared dashboard is in a Premium capacity. 
 
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 

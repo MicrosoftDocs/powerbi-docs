@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # How to configure Power BI report scheduled refresh

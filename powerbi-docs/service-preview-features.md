@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/02/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
@@ -30,23 +30,16 @@ As we make improvements to Power BI, we'll release some new functionality as *pr
 > 
 > 
 
-## Current previews available
-**ArcGIS Maps for Power BI preview**
-The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level.
-[Take a tour of ArcGIS maps by esri in Power BI service and Power BI Desktop](power-bi-visualization-arcgis.md).
-
-## Turn the ArcGIS preview feature on (and off)
+## Find previews and turn them on (and off)
 1. Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.
    
    ![](media/service-preview-features/power-bi-settings.png).
-2. Select the **General** tab and choose **Preview features**.
+2. Select the **General** tab. If previews exist, you'll either see an option for **Preview features** or you'll see a preview feature listed on the left.  In this example, there is a preview listed for ArcGIS Maps. 
    
    ![](media/service-preview-features/power-bi-preview-arcgis.png)
-3. Select the **On** radio button to try out the new experience. Click **Apply**.
-4. To turn preview features off, follow steps 1-2 above, and in step 3, select **Off** > **Apply**.
+3. Select the **On** radio button, or mark the checkbox, to try out the new experience. Then select **Apply**.
+4. To turn preview features off, follow steps 1-3 above, and in step 3, choose **Off**, or remove the checkmark, and select **Apply**.
 
-## Next steps
-[New Power BI navigation experience](service-the-new-power-bi-experience.md)
 
 Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 

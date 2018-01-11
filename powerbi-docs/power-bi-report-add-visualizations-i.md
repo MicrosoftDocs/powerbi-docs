@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
@@ -61,7 +61,7 @@ This article gives a quick introduction to creating a visualization in a report.
    
    Continue on to [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
    
-   [Interact with the visualizations](service-interact-with-a-report-in-reading-view.md) in the report.
+   [Interact with the visualizations](service-reading-view-and-editing-view.md) in the report.
    
    [Do even more with visualizations](power-bi-report-visualizations.md).
    

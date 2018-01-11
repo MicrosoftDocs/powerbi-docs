@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
 
 ---
@@ -29,13 +29,13 @@ Watch Will add some featured questions to Power BI Q&A and then use those featur
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Q&A featured questions are also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile-apps-ios-qna.md).
+> Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile-apps-ios-qna.md) and Power BI Desktop Q&A Preview. But creating the questions is only available in Power BI service (app.powerbi.com).
 > 
 > 
 
 This article uses the [Retail Analysis Sales sample](sample-datasets.md).
 
-1. Select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
+1. On the dashboard, select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
 2. To add to this list, select the gear icon in the top right corner of Power BI.  
    ![](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  

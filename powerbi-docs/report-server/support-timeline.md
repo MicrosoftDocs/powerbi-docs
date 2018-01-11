@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/04/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Support timeline for Power BI Report Server

@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/10/2018
 ms.author: davidi
 
 ---
@@ -60,11 +60,15 @@ Here are additional details about those steps:
 
 
 > [!NOTE]
-> To enable SSO for SAP HANA, you need to apply the following two HANA-specific configuration fixes to SAP:
->    1. Upgrade SAP HANA server with SAP’s HANA Patch 122.13, released by SAP at the end of October 2017. 
+> To enable SSO for SAP HANA, you need to ensure the following HANA-specific configurations are met for SAP:
+>    1. Ensure the SAP HANA server is running version 2.00.022* or higher / later. 
 >    2. On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+>
+> The following links to patches and upgrades from SAP may be useful. Note that you must log in to the following resources using your SAP Support account, and that SAP may change or update these links.
 > 
-
+> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
+> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
+> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 
 
 ## Errors from an insufficient Kerberos configuration

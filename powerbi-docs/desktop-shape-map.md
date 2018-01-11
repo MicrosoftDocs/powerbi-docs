@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/10/2018
 ms.author: davidi
 
 ---
@@ -94,6 +94,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox.
 * Currently, you must also have the **Values** bucket set in order for the **Legend** classification to work properly. We anticipate improving this behavior in the final release of **Shape Map**.
 * The release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map; in this Preview, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
+* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
 
 ## Region keys
 Use the following **Region Keys** in this Preview release to test **Shape Map**.

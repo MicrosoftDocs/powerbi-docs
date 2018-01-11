@@ -1,6 +1,6 @@
 ---
 title: Reorder pages in a report in Power BI
-description: Reorder pages in a report in Power BI
+description: Reorder pages in a report in Power BI service and Power BI Desktop
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---

@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
 
 ---
@@ -44,25 +44,30 @@ A bubble chart replaces the data points with bubbles, with the bubble *size* rep
 * to use with quadrants.
 
 ## Create a scatter chart
+Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Open the Retail Analysis Sample in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
-2. From the Fields pane, select **Sales** > **Sales Per Sq Ft** and **Sales** > **Total Sales Variance %**.
-3. From the Fields pane, select **District > District**.
+
+These instructions use the Retail Analysis Sample. To follow along, [download the sample](sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
+
+1. Start on a [blank report page ](power-bi-report-add-page.md) and select the **Sales** \> **Sales Per Sq Ft** and **Sales** > **Total Sales Variance %** fields. If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+ 
+2. From the Fields pane, select **District > District**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_pre_convert.png)
+    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 4. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
 5. Drag **District** from **Details** to **Legend**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_new.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
 We now have a scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
 
 ## Create a bubble chart
 1. From the Fields pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. 
    
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_size.png)
+   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
 2. Hover over a bubble.  The size of the bubble reflects the value of **This Year Sales**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)

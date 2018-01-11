@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.author: mihart
 
 ---
@@ -43,7 +43,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 ## From a visualization in a report
 To follow along, open the [Procurement analysis sample report](sample-procurement.md) in [Editing view](service-reading-view-and-editing-view.md). [Add a new blank report page](power-bi-report-add-page.md). Then follow the steps below to add an aggregation and a visualization-level filter.
 
-1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.   
+1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the Value well. 
    
     ![](media/power-bi-visualization-export-data/power-bi-export-data3.png)
 2. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the Value well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
@@ -81,7 +81,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
    ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## Limitations and considerations
-* The maximum number of rows that can be exported from **Power BI Desktop** to .csv is 30,000.
+* The maximum number of rows that can be exported from **Power BI Desktop** and **Power BI service** to .csv is 30,000.
 * The maximum number of rows that can be exported to .xlsx when in the **Power BI service** is 150,000 for Pro users and 30,000 for Free users.
 * When using DirectQuery, the maximum amount of data that can be exported is 16 MB. This may result in exporting less than the maximum number of rows, especially if there are many columns, data that is difficult to compress, and other factors that increase file size and decrease number of rows exported.
 * Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.

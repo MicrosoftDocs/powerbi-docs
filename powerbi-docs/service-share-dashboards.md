@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 01/08/2018
 ms.author: maggies
 
 ---
@@ -107,7 +107,7 @@ If you send a link from a Power BI mobile app to people outside your organizatio
 Things to keep in mind about sharing dashboards:
 
 * In general, you and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard, then the credentials of every person are used to determine which data they can access.
-* Everyone you share your dashboard with can see it and interact with your reports in [Reading View](service-report-open-in-reading-view.md). They can't create reports or save changes to existing reports.
+* Everyone you share your dashboard with can see it and interact with your reports in [Reading View](service-reading-view-and-editing-view.md). They can't create reports or save changes to existing reports.
 * No one can see or download the dataset.
 * Everyone can manually [refresh the dashboard data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
@@ -119,7 +119,11 @@ Things to keep in mind about sharing dashboards:
 
 ### My dashboard recipients see a lock icon in a tile or a "Permission required" message
 
-If the people you share with see a locked tile in a dashboard, or a "Permission required" message when they try to view a report, you need to grant them permission to the underlying dataset. Here's how.
+The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
+
+![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+If so, you need to grant them permission to the underlying dataset. Here's how.
 
 1. Go to the **Datasets** tab in your content list.
 

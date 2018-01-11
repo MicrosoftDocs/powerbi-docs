@@ -12,7 +12,7 @@
       href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
-    - name: "The new Power BI navigation experience"
+    - name: "Getting around in Power BI - navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
       href: sample-retail-analysis.md
   - name: Common tasks
     items: 
-    - name: "Favorite dashboards in Power BI"
+    - name: "Favorite dashboards, reports, and apps in Power BI"
       href: service-dashboard-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: service-print.md
@@ -350,14 +350,10 @@
       href: service-analyze-in-excel.md
     - name: "Change how visuals interact in a report"
       href: service-reports-visual-interactions.md
-    - name: "Open a Power BI report in Reading View"
-      href: service-report-open-in-reading-view.md
-    - name: "Go from Reading View to Editing View in Power BI"
+    - name: "Open a Power BI report in Reading view or Editing view"
       href: service-reading-view-and-editing-view.md
     - name: "Interact with a report in Editing View in Power BI"
       href: service-interact-with-a-report-in-editing-view.md
-    - name: "Interact with a report in Reading View in Power BI"
-      href: service-interact-with-a-report-in-reading-view.md
     - name: "Tips and tricks for creating reports in Power BI service"
       href: power-bi-reports-tips-and-tricks-for-creating.md
     - name: "Analytics pane"
@@ -454,10 +450,8 @@
       href: power-bi-visualization-treemaps.md
     - name: "Tutorial: Waterfall charts in Power BI"
       href: power-bi-visualization-waterfall-charts.md
-    - name: "Create a big number tile for a Power BI dashboard by asking a question"
-      href: power-bi-visualization-big-number.md
-    - name: "Create a big number tile from a Power BI report"
-      href: power-bi-visualization-big-number-report.md
+    - name: "Tutorial: Cards (big number tiles) in Power BI"
+      href: power-bi-visualization-card.md
     - name: "Create advanced analytics and visualizations using R scripts in Power BI"
       href: service-r-visuals.md
   - name: Data from files
@@ -786,7 +780,7 @@
       href: desktop-add-custom-column.md
     - name: "Create responsive visuals in Power BI"
       href: desktop-create-responsive-visuals.md
-    - name: "Use inline heirarchy labels in Power BI Desktop (Preview)"
+    - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
       href: desktop-inline-hierarchy-labels.md
     - name: "Use the numeric range slicer"
       href: desktop-slicer-numeric-range.md
@@ -940,6 +934,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed custom layouts into an app"
+      href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
       href: developer/create-an-azure-active-directory-tenant.md
     - name: "Register an application"
@@ -1008,8 +1004,6 @@
       href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
     items: 
-    - name: "Apiary"
-      href: https://go.microsoft.com/fwlink/?linkid=848278
     - name: "JavaScript embed demo"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Samples"
@@ -1054,6 +1048,8 @@
       href: report-server/data-sources.md
     - name: "Connect to data sources"
       href: report-server/connect-data-sources.md
+    - name: "Access shared datasets as OData feeds "
+      href: report-server/access-dataset-odata.md
     - name: "Configure scheduled refresh"
       href: report-server/configure-scheduled-refresh.md
     - name: "Add comments to a report"
