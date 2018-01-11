@@ -28,6 +28,13 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## October 2017
 
 - **Power BI Report Server**
+    - *Version 1.1.6582.41691 (Build 14.0.600.442), Released: January 10, 2018*
+        - Security Updates
+        - Bug Fixes
+            - Fix for Model.GetParameters returning 400
+            - Fix for setting shared data set to existing Paginated Reports (RDL)
+            - Fix for ExecutionNotFoundException when exporting report with different parameter values to PDF
+
     - *Version 1.1.6551.5155 (Build 14.0.600.438), Released: December 11, 2017*
         - Bug Fixes
             - Failure to save data after refreshing for certain Power BI Desktop reports.
@@ -57,6 +64,9 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Accessibility improvements
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.51.4885.2501 (October 2017), Released: January 10, 2018*
+        - Security Updates
+
     - *Version: 2.51.4885.1423 (October 2017), Released: November 17, 2017*
         - Bug Fixes
             - Fix for 32-bit Power BI Desktop failing to run on x86 OS
@@ -70,6 +80,9 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## June 2017
 
 - **Power BI Report Server**
+    - *Build 14.0.600.309, Released: January 10, 2018*
+        - Security Updates
+
     - *Build 14.0.600.305, Released: September 19, 2017*  
         - Bug Fixes
             - Update to the latest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
@@ -83,6 +96,10 @@ For detailed information about new features, see [What's new in Power BI Report 
 
     - *Build 14.0.600.271,Released: June 12, 2017*
         - Power BI Report Server initial release
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.47.4766.4901 (June 2017), Released: January 10, 2018*
+        - Security Updates
 
 ## Next steps
 
