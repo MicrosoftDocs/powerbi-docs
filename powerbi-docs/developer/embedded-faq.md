@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 01/11/2018
 ms.author: asaxton
 ---
 # Frequently asked questions about Power BI Embedded
@@ -51,6 +51,10 @@ Power BI Embedded is for ISVs or developers who are building applications and wa
 The recommendation of Microsoft is that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution, and ISVs buy Power BI Embedded, cloud-powered embedded analytics components. However, there are no restrictions on which product a customer can buy.
 
 There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. And of course, some Enterprises may decide to use A SKUs in Azure if they are only interested in building line of business applications and embedding analytics into them and are not interested in using the pre-packaged Power BI service.
+
+### How many embed tokens can I create?
+
+Embed tokens are intended for development and testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased.
 
 ### When will Power BI Embedded be available in Azure?
 
