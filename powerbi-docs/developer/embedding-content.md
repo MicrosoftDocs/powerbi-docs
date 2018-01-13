@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/19/2017
+ms.date: 01/11/2018
 ms.author: asaxton
 ---
 # Embed your Power BI dashboards, reports and tiles
@@ -129,10 +129,13 @@ Free users can consume content that is embedded from an app workspace (group), i
 
 ### Embedding for your customers
 
-If you are embedding for your customers, you will want to do the following.
+If you are embedding for your customers, do the following.
 
 * If you are using a separate tenant for development, then you must make sure your app workspaces, along with dashboards and reports, are available in your production environment. Make sure that you create the application in Azure AD for your production tenant and assign the proper app permissions as indicated in Step 1.
 * Purchase a capacity that fits your needs. You can use the table below to understand which Power BI Embedded capacity SKU you may need. For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). When you are ready to purchase, you can do so within the [Microsoft Azure portal](https://portal.azure.com). For details on how to create Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+> [!IMPORTANT]
+> Because embed tokens are intended for development testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
@@ -148,6 +151,8 @@ If you are embedding for your customers, you will want to do the following.
     ![Assign app workspace to capacity](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
+
+
 
 ## Admin settings
 
