@@ -88,11 +88,11 @@ Here is a partial list of differences you may use with each.
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams |Combine embedding in applications and use the Power BI Service in the same capacity |
 
-### What are the pre requisites to create a PBIE capacity in Azure?
+### What are the prerequisites to create a PBIE capacity in Azure?
 
-1) You need to sign in to your organizational directory (MSA accounts are not supported)
-2) You need to have a Power BI Tenant, i.e. at least one user in your directory has signed up to Power BI 
-3) You need to have an Azure subscription in your organuzational directory
+- You need to sign in to your organizational directory (MSA accounts are not supported).
+- You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
+- You need to have an Azure subscription in your organizational directory.
 
 ### How can I monitor capacity consumption?
 
@@ -136,7 +136,7 @@ Power BI Embedded will have an hourly meter.
 
 ### How does the usage of Power BI Embedded show up on my bill?
 
-Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. Note that as long as your resource is active, you will be billed even if there is no usage. To stop being billed you need to actively pause you resource. Pausing can be done through Azure or through ARM APIs.
+Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. Note that as long as your resource is active, you will be billed even if there is no usage. To stop being billed you need to actively pause your resource. Pausing can be done through Azure or through ARM APIs.
 
 ### What happens if I already purchased Power BI Premium and now I want some of the benefits of Power BI Embedded in Azure?
 
