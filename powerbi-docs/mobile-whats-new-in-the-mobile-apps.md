@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 01/16/2018
 ms.author: maggies
 
 ---
@@ -28,6 +28,11 @@ For related "What's New" information, see:
 * [What's new in the Power BI service](service-whats-new.md)  
 
 ## December 2017
+
+### Improved security management 
+
+We’ve added support for conditional access (CA) and Microsoft Intune mobile device management (MDM) on Android devices, to better secure your organization’s data. It's already available on iOS.
+
 ### Improved permission management
 
 We’ve made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
