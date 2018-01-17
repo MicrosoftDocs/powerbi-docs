@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 1/17/2018
 ms.author: asaxton
 ---
 # Troubleshooting your embedded application
@@ -61,6 +61,25 @@ The backend of the application may need to refresh the auth token before calling
 	...
 	 
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
+
+**Extracting error details from Power BI response**
+
+This code snippet shows how to extract the error details from HTTP exception:
+
+```
+public static string GetExceptionText(this HttpOperationException exc)
+{
+    var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
+    exc.Request.Content, exc.Response.StatusCode, (int)exc.Response.StatusCode, exc.Response.Content);
+    if (exc.Response.Headers.ContainsKey("RequestId"))
+    {
+        var requestId = exc.Response.Headers["RequestId"].FirstOrDefault();
+        errorText += string.Format("\r\nRequestId: {0}", requestId);
+    }
+
+    return errorText;
+}
 ```
 
 **Generate token fails when providing effective identity**
