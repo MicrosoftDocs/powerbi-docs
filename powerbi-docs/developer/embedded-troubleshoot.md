@@ -23,6 +23,41 @@ ms.author: asaxton
 
 This article discusses some common issues you may encounter when embedding content from Power BI.
 
+## Tools for troubleshooting
+
+### Fiddler Trace
+
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This may show errors and other related information.
+
+![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+
+### F12 in Browser for front end debugging
+
+F12 will launch the developer window within your browser. This provides the ability to look at network traffic and other information.
+
+![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
+
+### Extracting error details from Power BI response
+
+This code snippet shows how to extract the error details from HTTP exception:
+
+```
+public static string GetExceptionText(this HttpOperationException exc)
+{
+    var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
+    exc.Request.Content, exc.Response.StatusCode, (int)exc.Response.StatusCode, exc.Response.Content);
+    if (exc.Response.Headers.ContainsKey("RequestId"))
+    {
+        var requestId = exc.Response.Headers["RequestId"].FirstOrDefault();
+        errorText += string.Format("\r\nRequestId: {0}", requestId);
+    }
+
+    return errorText;
+}
+```
+We recommend logging the RequestIds (and error details for troubleshooting).
+Please provide the RequestId when approaching Microsoft support.
+
 ## App registration
 
 **App registration failure**
@@ -63,27 +98,6 @@ The backend of the application may need to refresh the auth token before calling
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
-**Extracting error details from Power BI response**
-
-This code snippet shows how to extract the error details from HTTP exception:
-
-```
-public static string GetExceptionText(this HttpOperationException exc)
-{
-    var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
-    exc.Request.Content, exc.Response.StatusCode, (int)exc.Response.StatusCode, exc.Response.Content);
-    if (exc.Response.Headers.ContainsKey("RequestId"))
-    {
-        var requestId = exc.Response.Headers["RequestId"].FirstOrDefault();
-        errorText += string.Format("\r\nRequestId: {0}", requestId);
-    }
-
-    return errorText;
-}
-```
-We recommend logging the RequestIds (and error details for troubleshooting).
-Please provide the RequestId when approaching Microsoft support.
-
 **Generate token fails when providing effective identity**
 
 GenerateToken can fail, with effective identity supplied, for a few different reasons.
@@ -122,19 +136,6 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
-## Tools for troubleshooting
-
-### Fiddler Trace
-
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This may show errors and other related information.
-
-![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
-
-### F12 in Browser for front end debugging
-
-F12 will launch the developer window within your browser. This provides the ability to look at network traffic and other information.
-
-![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
 For answers to frequently asked questions, see the [Power BI Embedded FAQ](embedded-faq.md).
 
