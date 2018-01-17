@@ -73,6 +73,14 @@ We now have a scatter chart that plots Total Sales Variance % along the Y axis, 
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Optionally, [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
 
+## Accessibility
+
+You can make your scatter chart or bubble chart more accessible for people with disabilities by using *Marker shapes*. 
+
+To select the marker shape, select the **Format** section in the **Visualizations** pane, expand the **Shapes** section, then select a marker shape.
+
+![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+
 ## Considerations and Troubleshooting
 ### **Your scatter chart has only one data point**
 Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
