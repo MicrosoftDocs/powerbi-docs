@@ -273,7 +273,7 @@
     - name: "Q&A in Power BI"
       href: power-bi-q-and-a.md
     - name: "How to use Power BI Q&A"
-      href: service-tutorial-q-and-a.md
+      href: power-bi-tutorial-q-and-a.md
     - name: "Tutorial: Get Started with Power BI Q&A"
       href: power-bi-visualization-introduction-to-q-and-a.md
     - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
