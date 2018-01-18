@@ -269,27 +269,31 @@
     - name: Overview
       items:
         - name: "Q&A in Power BI"
-          href: power-bi-q-and-a.md	
-    - name: "Q&A in Power BI"
-      href: power-bi-q-and-a.md
-    - name: "How to use Power BI Q&A"
-      href: power-bi-tutorial-q-and-a.md
-    - name: "Tutorial: Get Started with Power BI Q&A"
-      href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
-      href: service-q-and-a-direct-query.md
-    - name: "Make your data work well with Q&A in Power BI"
-      href: service-prepare-data-for-q-and-a.md
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md
-    - name: "Enable Cortana for Power BI"
-      href: service-cortana-enable.md
-    - name: "Create featured questions for Power BI Q&A"
-      href: service-q-and-a-create-featured-questions.md
-    - name: "Tips and tricks for asking questions with Q&A in Power BI"
-      href: service-q-and-a-tips.md
-    - name: "Troubleshoot Cortana"
-      href: service-cortana-troubleshoot.md
+          href: power-bi-q-and-a.md
+        - name: "Introduction to Cortana for Power BI"
+          href: service-cortana-intro.md	
+    - name: Quickstart
+      items:
+        - name: "Get started with Power BI Q&A"
+          href: power-bi-visualization-introduction-to-q-and-a.md
+    - name: Tutorial
+      items:
+        - name: "Use Q&A to create visualizations and build reports"
+          href: service-tutorial-q-and-a.md
+    - name: How-to
+      items:
+        - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
+          href: service-q-and-a-direct-query.md
+        - name: "Make your data work well with Q&A in Power BI"
+          href: service-prepare-data-for-q-and-a.md
+        - name: "Enable Cortana for Power BI"
+          href: service-cortana-enable.md
+        - name: "Create featured questions for Power BI Q&A"
+          href: service-q-and-a-create-featured-questions.md
+        - name: "Tips and tricks for asking questions with Q&A in Power BI"
+          href: service-q-and-a-tips.md
+        - name: "Troubleshoot Cortana"
+          href: service-cortana-troubleshoot.md
   - name: Share your work
     items: 
     - name: "How should I collaborate on and share dashboards and reports?"
