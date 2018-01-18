@@ -77,7 +77,7 @@ We now have a scatter chart that plots Total Sales Variance % along the Y axis, 
 
 You can make your scatter chart or bubble chart more accessible for people with disabilities by using *Marker shapes*. 
 
-To select the marker shape, select the **Format** section in the **Visualizations** pane, expand the **Shapes** section, then select a marker shape.
+To select the marker shape, select the **Format** section in the **Visualizations** pane, expand the **Shapes** card, then select a marker shape.
 
 ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
