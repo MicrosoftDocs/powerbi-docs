@@ -276,11 +276,11 @@
       items:
         - name: "Get started with Power BI Q&A"
           href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: Tutorial
+    - name: Tutorials
       items:
         - name: "Use Q&A to create visualizations and build reports"
           href: service-tutorial-q-and-a.md
-    - name: How-to
+    - name: How To
       items:
         - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
           href: service-q-and-a-direct-query.md
@@ -290,6 +290,8 @@
           href: service-cortana-enable.md
         - name: "Create featured questions for Power BI Q&A"
           href: service-q-and-a-create-featured-questions.md
+    - name: Resources
+      items:
         - name: "Tips and tricks for asking questions with Q&A in Power BI"
           href: service-q-and-a-tips.md
         - name: "Troubleshoot Cortana"
