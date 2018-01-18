@@ -53,7 +53,7 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Report **View** options](power-bi-report-display-settings.md) | Yes, with some exceptions. | Yes, all, including gridlines, snap, and lock. |
 | [Create a refresh schedule](refresh-data.md) | No  | Yes |
 | [Subscribe to a report](service-report-subscribe.md) | Yes | No |
-| [Q&A - ask questions in reports](service-q-and-a.md) | No  | Yes |
+| [Q&A - ask questions in reports](power-bi-q-and-a.md) | No  | Yes |
 | [View Usage metrics ](service-usage-metrics.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [View related](service-related-content.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [Save a report](service-report-save.md) | Yes, but only using **Save as**. | Yes |
