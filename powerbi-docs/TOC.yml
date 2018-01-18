@@ -279,7 +279,7 @@
     - name: Tutorials
       items:
         - name: "Use Q&A to create visualizations and build reports"
-          href: service-tutorial-q-and-a.md
+          href: power-bi-tutorial-q-and-a.md
     - name: How To
       items:
         - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
