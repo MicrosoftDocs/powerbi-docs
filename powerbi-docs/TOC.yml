@@ -267,6 +267,7 @@
   - name: Ask questions of your data
     items: 
     - name: Overview
+      items:
         - name: "Q&A in Power BI"
           href: power-bi-q-and-a.md	
     - name: "Q&A in Power BI"
