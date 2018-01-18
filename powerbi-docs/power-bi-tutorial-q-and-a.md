@@ -35,7 +35,7 @@ The Q&A question box is located in the upper-left corner of your dashboard, and 
 
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
-1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You'll see the names of the tables in the [underlying dataset(s)](service-get-data.md) and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-featured-questions.md),
+1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You'll see the names of the tables in the [underlying dataset(s)](service-get-data.md) and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md),
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-cursor.png)
 
