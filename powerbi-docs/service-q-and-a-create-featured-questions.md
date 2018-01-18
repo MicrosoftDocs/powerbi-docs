@@ -1,5 +1,5 @@
 ---
-title: Create featured questions for Power BI Q&A
+title: How to create featured questions for Power BI Q&A
 description: Documentation on how to create featured questions for Power BI Q&A
 services: powerbi
 documentationcenter: ''
@@ -17,12 +17,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/18/2018
 ms.author: mihart
 
 ---
 # Create featured questions for Power BI Q&A
-If you own a dataset, you can add your own featured questions to that dataset.  And Power BI Q&A will show those questions to colleagues who use your dataset.  Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you -- add popular questions, questions that display interesting results, or questions that may be hard to phrase.
+If you own a dataset, you can add your own featured questions to that dataset.  And Power BI Q&A will show those questions to colleagues who use (*consume*) your dataset.  Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you -- add popular questions, questions that display interesting results, or questions that may be hard to phrase.
 
 Watch Will add some featured questions to Power BI Q&A and then use those featured questions to explore his dataset. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -30,7 +30,6 @@ Watch Will add some featured questions to Power BI Q&A and then use those featur
 
 > [!NOTE]
 > Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile-apps-ios-qna.md) and Power BI Desktop Q&A Preview. But creating the questions is only available in Power BI service (app.powerbi.com).
-> 
 > 
 
 This article uses the [Retail Analysis Sales sample](sample-datasets.md).
@@ -51,7 +50,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md).
    ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### Next steps
-[Q&A in Power BI](service-q-and-a.md)  
+[Q&A in Power BI](power-bi-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
