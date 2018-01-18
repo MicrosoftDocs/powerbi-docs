@@ -42,7 +42,7 @@ If you're a *creator* of Power BI reports or have edit permissions to a dataset,
 
 ![](media/power-bi-q-and-a/power-bi-desktop.png)
 
-In addition to using Q&A to explore their data, creators and dataset owners can improve the Q&A experience for consumers by [modifying their datasets](service-prepare-data-for-q-and-a.md), adding [featured questions](service-q-and-a-create-featured-questions.md), and [enabling and disabling Q&A ](service-q-and-a-direct-query.md) for on-premises live connection datasets. In [Embedded scenarios](qanda.md), developers can choose between 2 modes: **interactive** and **result only**.
+In addition to using Q&A to explore their data, creators and dataset owners can improve the Q&A experience for consumers by [modifying their datasets](service-prepare-data-for-q-and-a.md), adding [featured questions](service-q-and-a-create-featured-questions.md), and [enabling and disabling Q&A ](service-q-and-a-direct-query.md) for on-premises live connection datasets. In [Embedded scenarios](developer/qanda.md), developers can choose between 2 modes: **interactive** and **result only**.
 
 ## How does Q&A know how to answer questions?
 ### Which datasets does Q&A use?
@@ -66,13 +66,13 @@ For information about keywords that Q&A recognizes, see [Tips for asking questio
 
 
 ## For more details about Power BI Q&A
-[Overview: How to use Q&A in Power BI dashboards and reports](power-bi-how-to-q-and-a.md):
+[Overview: How to use Q&A in Power BI dashboards and reports](power-bi-tutorial-q-and-a.md):
 Step by step instructions for using Q&A and an overview of how it all works.
 
 [Microsoft Power BI mobile app](mobile-apps-ios-qna.md)
 For iOS on iPads, iPhones, and iPod Touch devices.
 
-[Microsoft Power BI Embedded](qanda.md)
+[Microsoft Power BI Embedded](developer/qanda.md)
 Incorporate Q&A into an application.
 
 [Tips for asking questions in Q&A](service-q-and-a-tips.md):

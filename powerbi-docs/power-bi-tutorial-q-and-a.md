@@ -1,5 +1,5 @@
 ---
-title: Tutorial: using Q&A on a dashboard or in a report
+title: Tutorial - using Q&A on a dashboard or in a report
 description: Tutorial on how to use Power BI Q&A to create new visualizations on dashboards and in reports.
 services: powerbi
 documentationcenter: ''
@@ -18,7 +18,7 @@ ms.author: mihart
 
 ---
 # Tutorial: How to use Q&A to create visualizations and build reports
-The [Q&A overview](powerbi-q-and-a.md) introduced you to Power BI Q&A and made the distinction between *consumers* (have dashboards and reports shared with them) and *creators* (own the underlying reports and datasets). The first part of this tutorial is designed primarily for people consuming dashboards using Power BI service. And the second part is designed for people creating reports using either Power BI service or Power BI Desktop. [Q&A and Power BI mobile](mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](qanda.md) are covered in separate articles.
+The [Q&A overview](power-bi-q-and-a.md) introduced you to Power BI Q&A and made the distinction between *consumers* (have dashboards and reports shared with them) and *creators* (own the underlying reports and datasets). The first part of this tutorial is designed primarily for people consuming dashboards using Power BI service. And the second part is designed for people creating reports using either Power BI service or Power BI Desktop. [Q&A and Power BI mobile](mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/qanda.md) are covered in separate articles.
 
 Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visualizations, dig into those visuals, and pin them to dashboards.
 
@@ -35,7 +35,7 @@ The Q&A question box is located in the upper-left corner of your dashboard, and 
 
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
-1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You'll see the names of the tables in the [underlying dataset(s)](service-get-data.md) and may even see complete questions listed if the dataset owner has created [featured questions](service-featured-questions.md),
+1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You'll see the names of the tables in the [underlying dataset(s)](service-get-data.md) and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-featured-questions.md),
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-cursor.png)
 
