@@ -298,7 +298,7 @@
           href: service-cortana-troubleshoot.md
   - name: Share your work
     items: 
-    - name: "How should I collaborate on and share dashboards and reports?"
+    - name: "How should I collaborate and share dashboards and reports?"
       href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: "Install and use apps, with dashboards and reports"
       href: service-install-use-apps.md
@@ -308,9 +308,9 @@
       href: service-organizational-content-pack-introduction.md
     - name: "Create and publish an organizational content pack (tutorial)"
       href: service-organizational-content-pack-create-and-publish.md
-    - name: "Share a dashboard with coworkers and others"
+    - name: "Share dashboards and reports"
       href: service-share-dashboards.md
-    - name: "Share a report with coworkers"
+    - name: "Share a filtered report"
       href: service-share-reports.md
     - name: "Publish from Power BI to the web"
       href: service-publish-to-web.md
