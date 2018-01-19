@@ -1,6 +1,6 @@
 ---
-title: Get started with Power BI Q&A (Tutorial)
-description: 'Tutorial: get started with Q&A in Power BI service using the Retail Analysis sample'
+title: Quickstart - Get started with Power BI Q&A 
+description: 'Quickstart: get started with Q&A in Power BI service using the Retail Analysis sample'
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,13 +16,15 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 01/16/2018
 ms.author: mihart
 
 ---
-# Get started with Power BI Q&A (Tutorial)
-## Tutorial: use Power BI Q&A with the Retail Analysis sample
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&A.  
+# Get started with Power BI Q&A (Quickstart)
+## Use Power BI Q&A with the Retail Analysis sample
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this quickstart we'll look at 2 different ways of creating the same visualization: first, building it in a report and, second, asking a question with Q&A. We'll use Power BI service, but the process is almost identical using Power BI Desktop.
+
+To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
 
 ## Method 1: using the report editor
 1. From your Power BI workspace, select **Get Data** \> **Samples** \> **Retail Analysis Sample** > **Connect**.
@@ -58,13 +60,9 @@ How would we go about creating this same line chart using Q&A?
 4. To pin the chart to your dashboard, select the pin icon ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## Next steps
-[What type of questions can I ask Q&A?](service-q-and-a.md)
-
-[Q&A in Power BI](service-q-and-a.md)
+[Q&A in Power BI](power-bi-q-and-a.md)
 
 [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
-
-[preparing a workbook for Q&A](service-prepare-data-for-q-and-a.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

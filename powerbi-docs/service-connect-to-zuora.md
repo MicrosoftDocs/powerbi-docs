@@ -21,33 +21,33 @@ ms.author: yshoukry
 
 ---
 # Connect to Zuora with Power BI
-Zuora for Power BI allows you to visualize important revenue, billing, and subscription data. Use the default dashboard and reports to analyze usage trends, track billings and payments, and monitor recurring revenue, or customize them to meet your own unique dashboard and reporting needs. 
+Zuora for Power BI allows you to visualize important revenue, billing, and subscription data. Use the default dashboard and reports to analyze usage trends, track billings and payments, and monitor recurring revenue, or customize them to meet your own unique dashboard and reporting needs.
 
 Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power BI.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
-   
+
    ![](media/service-connect-to-zuora/getdata.png)
 2. In the **Services** box, select **Get**.
-   
+
    ![](media/service-connect-to-zuora/services.png)
 3. Select **Zuora** \>  **Get**.
-   
+
    ![](media/service-connect-to-zuora/zuora.png)
 4. Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
-   
+
    ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
-   
+
     ![](media/service-connect-to-zuora/creds.png)
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
-   
+
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **What now?**
 
-* Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
@@ -108,4 +108,3 @@ The Zuora content pack pulls in many different aspects of your Zuora account. If
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
-

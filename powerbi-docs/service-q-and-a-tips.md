@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/24/2017
+ms.date: 01/18/2018
 ms.author: jastru
 
 ---
@@ -98,7 +98,7 @@ One of Power BI's most powerful features is the ability to combine data from dif
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
 
 ## Next steps
-Back to [Q&A in Power BI](service-q-and-a.md)  
+Back to [Q&A in Power BI](power-bi-q-and-a.md)  
 
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 

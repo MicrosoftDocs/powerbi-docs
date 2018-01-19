@@ -89,7 +89,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
     ![](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > If the tile had been created using [Power BI Q&A](service-q-and-a.md), the Q&A page would've opened instead.
+   > If the tile had been created using [Power BI Q&A](power-bi-q-and-a.md), the Q&A page would've opened instead.
    > 
    > 
 4. Back on your **Datasets** tab, you have several options for exploring your dataset.  You won't be able to open it and see all the rows and columns (as you can in Power BI Desktop or Excel).  When someone shares a content pack with colleagues, they typically want to share the insights, not give their colleagues direct access to the data. But that doesn't mean you can't explore the dataset.  
