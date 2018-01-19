@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: lukaszp
 editor: ''
 tags: ''
 featuredvideoid: 0tUwn8DHo3s
