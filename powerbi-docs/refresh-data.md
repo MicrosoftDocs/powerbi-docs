@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
 
 ---
@@ -109,7 +109,7 @@ Keeping your files on OneDrive, or SharePoint Online, and connecting to them fro
 | Get Data (on the ribbon) is used to connect to and query data from any listed online data source. |No |Yes |No (see below) |
 | Get Data is used to connect to and explore a live Analysis Services database. |Yes |No |Yes |
 | Get Data is used to connect to and explore a supported on-premises DirectQuery data source. |Yes |No |Yes |
-| Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Yes (hourly) |No |No |
+| Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Yes |Yes |No |
 | Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange. |No |Yes |Yes |
 
 > [!NOTE]

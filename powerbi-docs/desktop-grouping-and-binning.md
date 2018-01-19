@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/19/2018
 ms.author: davidi
 
 ---
@@ -66,7 +66,7 @@ When you select **OK**, you'll notice that a new field appears in the **Fields**
 
 ![](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-To see **binning** in action, take a look at this [video](https://youtu.be/UXEYSvgvMaQ?t=12m17s).
+To see **binning** in action, take a look at this [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
 And that's all there is to using **grouping** and **binning** to ensure the visuals in your reports show your data just the way you want them to.
 
