@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/04/2017
+ms.date: 01/18/2018
 ms.author: mihart
 
 ---
@@ -104,7 +104,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 4. Select the name of the dashboard from the top navbar to return to the dashboard.
 
 ## Asking a question in the Q&A box
-The [Q&A question box](service-how-to-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
+The [Q&A question box](power-bi-tutorial-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
 
 1. Click in the Q&A question box. Notice before you even start typing, the Q&A box contains suggestions:
    

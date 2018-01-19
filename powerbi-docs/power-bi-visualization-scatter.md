@@ -28,15 +28,17 @@ A bubble chart replaces the data points with bubbles, with the bubble *size* rep
 
 ![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
+You can set the number of data points  
+
 ## When to use a scatter chart or bubble chart
 ### Scatter charts are a great choice:
 * to show relationships between 2 (scatter) or 3 (bubble) **numerical** values.
-* To plot two groups of numbers as one series of xy coordinates.
+* to plot two groups of numbers as one series of xy coordinates.
 * instead of a line chart when you want to change the scale of the horizontal axis    
 * to turn the horizontal axis into a logarithmic scale.
 * to display worksheet data that includes pairs or grouped sets of values. In a scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values.
 * to show patterns in large sets of data, for example by showing linear or non-linear trends, clusters, and outliers.
-* to compare large numbers of data points without regard to time    The more data that you include in a scatter chart, the better the comparisons that you can make.
+* to compare large numbers of data points without regard to time.  The more data that you include in a scatter chart, the better the comparisons that you can make.
 
 ### Bubble charts are a great choice:
 * if your data has 3 data series that each contain a set of values.
@@ -72,6 +74,21 @@ We now have a scatter chart that plots Total Sales Variance % along the Y axis, 
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Optionally, [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+   You can also change the marker shape to diamond, triangle, or square:
+
+   ![Square marker](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+
+4. Optionally, to set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. The default is 3500. 
+ 
+    ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+
+   > [!NOTE]
+   > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users’ expectations.
+
+5.   Optionally, to select the marker shape, expand the **Shapes** card, then select a marker shape.
+
+      ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## Considerations and Troubleshooting
 ### **Your scatter chart has only one data point**

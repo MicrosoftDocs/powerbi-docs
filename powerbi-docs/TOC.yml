@@ -12,7 +12,7 @@
       href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
-    - name: "The new Power BI navigation experience"
+    - name: "Getting around in Power BI - navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
       href: sample-retail-analysis.md
   - name: Common tasks
     items: 
-    - name: "Favorite dashboards in Power BI"
+    - name: "Favorite dashboards, reports, and apps in Power BI"
       href: service-dashboard-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: service-print.md
@@ -266,26 +266,36 @@
       href: service-data-classification.md
   - name: Ask questions of your data
     items: 
-    - name: "Q&A in Power BI"
-      href: service-q-and-a.md
-    - name: "How to use Power BI Q&A"
-      href: service-how-to-q-and-a.md
-    - name: "Tutorial: Get Started with Power BI Q&A"
-      href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
-      href: service-q-and-a-direct-query.md
-    - name: "Make your data work well with Q&A in Power BI"
-      href: service-prepare-data-for-q-and-a.md
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md
-    - name: "Enable Cortana for Power BI"
-      href: service-cortana-enable.md
-    - name: "Create featured questions for Power BI Q&A"
-      href: service-q-and-a-create-featured-questions.md
-    - name: "Tips and tricks for asking questions with Q&A in Power BI"
-      href: service-q-and-a-tips.md
-    - name: "Troubleshoot Cortana"
-      href: service-cortana-troubleshoot.md
+    - name: Overview
+      items:
+        - name: "Q&A in Power BI"
+          href: power-bi-q-and-a.md
+        - name: "Introduction to Cortana for Power BI"
+          href: service-cortana-intro.md	
+    - name: Quickstart
+      items:
+        - name: "Get started with Power BI Q&A"
+          href: power-bi-visualization-introduction-to-q-and-a.md
+    - name: Tutorials
+      items:
+        - name: "Use Q&A to create visualizations and build reports"
+          href: power-bi-tutorial-q-and-a.md
+    - name: How To
+      items:
+        - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
+          href: service-q-and-a-direct-query.md
+        - name: "Make your data work well with Q&A in Power BI"
+          href: service-prepare-data-for-q-and-a.md
+        - name: "Enable Cortana for Power BI"
+          href: service-cortana-enable.md
+        - name: "Create featured questions for Power BI Q&A"
+          href: service-q-and-a-create-featured-questions.md
+    - name: Resources
+      items:
+        - name: "Tips and tricks for asking questions with Q&A in Power BI"
+          href: service-q-and-a-tips.md
+        - name: "Troubleshoot Cortana"
+          href: service-cortana-troubleshoot.md
   - name: Share your work
     items: 
     - name: "How should I collaborate on and share dashboards and reports?"
@@ -780,7 +790,7 @@
       href: desktop-add-custom-column.md
     - name: "Create responsive visuals in Power BI"
       href: desktop-create-responsive-visuals.md
-    - name: "Use inline heirarchy labels in Power BI Desktop (Preview)"
+    - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
       href: desktop-inline-hierarchy-labels.md
     - name: "Use the numeric range slicer"
       href: desktop-slicer-numeric-range.md

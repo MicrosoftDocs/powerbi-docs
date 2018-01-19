@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/19/2018
 ms.author: mihart
 
 ---
@@ -117,7 +117,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 * [Reports in Power BI mobile apps](mobile-reports-in-the-mobile-apps.md)
 
 ## Dashboards
-A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](service-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
+A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
 
 Why do people create dashboards?  Here are just some of the reasons:
 
@@ -204,7 +204,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 ![Q&A question box](media/service-basic-concepts/power-bi-qna.png)
 
-As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](service-q-and-a.md).
+As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
 ### 4. **Icon buttons** 
 The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
@@ -235,6 +235,7 @@ This area of the screen contains additional options for interacting with the con
 
 ## Next steps
 [Get started with Power BI](service-get-started.md)  
+[Navigation: Getting around in Power BI service](service-the-new-power-bi-experience.md)
 [Power BI videos](videos.md)  
 [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 

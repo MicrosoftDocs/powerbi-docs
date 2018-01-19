@@ -17,25 +17,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/28/2017
+ms.date: 01/09/2018
 ms.author: mihart
 
 ---
 # Getting around in Power BI service
-
-If you've been using Power BI service for awhile now, you've no doubt noticed that we've made significant changes to the user interface.  Most of these changes affect how your content (dashboards, reports, datasets) is organized and the paths (clicks) you take to perform tasks with that content. 
+## The left navigation pane
 
 ![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
-
-## How do I...
-For those of you who are familiar with the previous Power BI service interface, this reference guide will help you figure out how to get things done in the new interface. We realize it may be disorienting at first, but believe with use, you'll discover many time-saving benefits to the new layout. 
 
 **Quick reference guide**
 
 | Action | New (current) path |
 | --- | --- | --- |
-| Favorite a dashboard |Workspace > Dashboards and select the star icon to turn it yellow |
-| View a list of your favorite dashboards |Select **Favorites** from left navpane |
+| Favorite a dashboard or report |Workspace > Dashboards or Workspace > Reports and select the star icon to turn it yellow |
+| Favorite an app | Select **Apps** from left navpane and select star next to app name
+| View a list of your favorites |Select **Favorites** from left navpane |
 | View a list of recently-visited dashboards and reports |Select **Recent** from left navpane |
 | View a list dashboards that have been shared with you |Select **Shared with me** from left navpane |
 | Share a dashboard |Open dashboard and select **Share** or create and publish an app |
@@ -51,62 +48,57 @@ For those of you who are familiar with the previous Power BI service interface, 
 | Create an app |Workspaces > Create app workspace |
 | View a list of all the dashboards, reports, and datasets that you own |Workspaces > My workspace |
 
-## Why did we change the navigation experience for Power BI service?
-* streamlined the lists for dashboards, reports, workbooks, and datasets    
-* added quick access flyout menus for favorites, most-recent, and workspace selection    
-* added a way to identify related content for dashboards, reports, and datasets    
-* added a separate content area for workbooks    
-* created a separate area for your favorite dashboards    
-* created a separate area for content that has been shared with you 
-* created a separate area for your most-recent content  
-* reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.</td></tr></table>
+## Common tasks
 
-Watch Amanda take you on a tour of the new navigation experience, explaining and demonstrating the improvements.  Then follow the step-by-step instructions below the video to explore for yourself.
+Watch Amanda take you on a tour of the Power BI service navigation experience.  Then follow the step-by-step instructions below the video to explore for yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-## We've added some brand new features
-Follow the step-by-step instructions to explore for yourself.
 
-### View content (dashboards, reports, workbooks, datasets, workspaces, apps)
-Let's start by looking at how the basic content (dashboards, reports, datasets, workbooks) is organized. Before this, all of your content was listed in the left navigation pane. Now, you still have that option, but the default is to display by content type within the context of a workspace. Select a workspace from the left navigation pane (left nav) and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
+## View content (dashboards, reports, workbooks, datasets, workspaces, apps)
+Let's start by looking at how the basic content (dashboards, reports, datasets, workbooks) is organized. Before this, all of your content was listed in the left navigation pane. Now, you still have that option, but the default is to display by content type within the context of a workspace. Select a workspace from the left navigation pane (left navpane) and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
 
 If you have Power BI Free, you'll only see one workspace -- **My Workspace**.
 
 ![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
-### Favorite dashboards
-**Favorites** lets you quickly access those dashboards that are most important to you.  
+### Favorite dashboards, reports, and apps
+**Favorites** lets you quickly access content that is most important to you.  
 
-1. With the dashboard open, select **Favorite** from the top-right corner.
+1. With the dashboard or report open, select **Favorite** from the upper right corner.
    
    ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favorite** changes to **Unfavorite** and the star icon becomes yellow.
    
    ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
-2. To display a list of all the dashboards that you have added as favorites, in the left nav, select the arrow to the right of **Favorites**. Because the left nav is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
+
+2. For an app, select **Apps** from the left navpane, hover over the app and choose the star to set it as a favorite.
+
+2. To display a list of all the content that you have added as favorites, in the left navpane, select the arrow to the right of **Favorites**. Because the left navpane is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
    
     ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
-    From here you can select a dashboard to open it.
-3. To open the **Favorites** pane, in the left nav, select **Favorites** or select the Favorites icon ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
+    From here you can select a dashboard, report, or app to open it.
+
+3. To open the **Favorites** pane, in the left navpane, select **Favorites** or select the Favorites icon ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
-   From here you can select a dashboard to open it, see who owns a dashboard, unfavorite a dashboard, or share a dashboard with colleagues.
-4. Another way to mark a dashboard as a favorite is from the **Dashboards** tab.  Just open the workspace that contains the dashboard, and select the star icon to the left of the dashboard name.
+   From here you can open, find the content, unfavorite, or share content with colleagues.
+
+1. Another way to mark either a dashboard or report as a favorite is from the **Dashboards** or **Reports** workspace tab.  Just open the workspace to display the content view, and select the star icon to the left of the name.
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
-To learn more, see [Favorite a dashboard](service-dashboard-favorite.md)
+To learn more, see [Favorites](service-dashboard-favorite.md)
 
 ### Recents
-Quickly get to the reports and dashboards that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
+Quickly get to the content that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
-Similar to Favorites, you can quickly access your recents from anywhere in Power BI service by selecting the arrow next to **Recents** in the left nav.
+Similar to Favorites, you can quickly access your recents from anywhere in Power BI service by selecting the arrow next to **Recents** in the left navpane.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
@@ -120,7 +112,7 @@ An app is a collection of dashboards and reports built to deliver key metrics, a
 To learn more, see **App workspaces** (below) and [What are Power BI apps](service-install-use-apps.md).
 
 ### Shared with me
-**Shared with me** is the location for all dashboards that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what’s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
+**Shared with me** is the location for all content that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what’s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
 
 ![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
@@ -145,12 +137,12 @@ As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Rep
 
 ![](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
-Switch workspaces by selecting **Workspaces** in the left nav.
+Switch workspaces by selecting **Workspaces** in the left navpane.
 
 ![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### Search and sort content
-The new content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name.
+The content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name.
 
 ![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
@@ -161,5 +153,7 @@ You can also sort the content by name or owner.
 To learn more, see [Power BI navigation: search, sort, filter](service-navigation-search-filter-sort.md)
 
 ## Next steps
+Power BI service [Basic concepts](service-basic-concepts.md)    
+
 Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview)
 

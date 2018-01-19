@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/16/2018
 ms.author: davidi
 
 ---
 # Shape Maps in Power BI Desktop (Preview)
 In Power BI Desktop, you create a **Shape Map** visual to show relative comparisons of regions on a map by applying different colors to different regions. In contrast to the **Map** visual, **Shape Map** cannot show precise geographical locations of data points on a map; instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-**Shape Map** visuals are based on ESRI/TopoJSON maps which have the compelling ability to use custom maps that you can create, such as geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**, but custom maps will be enabled when this features comes out of Preview, which is expected with the next Power BI Desktop monthly update.
+**Shape Map** visuals are based on ESRI/TopoJSON maps which have the compelling ability to use custom maps that you can create, such as geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
 
 ## Creating Shape Maps
 You can test the **Shape Map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use Custom Maps**.
@@ -92,8 +92,9 @@ You can enter a new column simply by typing a new column name (in the blank colu
 There are a few considerations and requirements for this Preview release of **Shape Map**:
 
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox.
-* Currently, you must also have the **Values** bucket set in order for the **Legend** classification to work properly. We anticipate improving this behavior in the final release of **Shape Map**.
-* The release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map; in this Preview, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
+* Currently, you must also have the **Values** bucket set in order for the **Legend** classification to work properly
+* The final release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map (there is no date set for final release, and **Shape Map** is still in Preview); in this Preview release, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
+* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
 
 ## Region keys
 Use the following **Region Keys** in this Preview release to test **Shape Map**.
