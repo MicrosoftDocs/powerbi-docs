@@ -524,6 +524,8 @@
       href: service-gateway-onprem.md
     - name: "On-premises data gateway - in-depth"
       href: service-gateway-onprem-indepth.md
+    - name: "High availability clusters for on-premises data gateway"
+      href: service-gateway-high-availability-clusters.md      
     - name: "On-premises data gateway FAQ"
       href: service-gateway-onprem-faq.md
     - name: "On-premises data gateway (personal mode)"
@@ -766,6 +768,10 @@
       href: desktop-quick-measures.md
     - name: "Using What if parameters"
       href: desktop-what-if.md
+    - name: "Use drillthrough"
+      href: desktop-drillthrough.md      
+    - name: "Use a relative date slicer and filter"
+      href: desktop-slicer-filter-date-range.md      
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
     - name: "Use grouping and binning"

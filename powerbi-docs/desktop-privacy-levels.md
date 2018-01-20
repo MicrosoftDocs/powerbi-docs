@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
 
 ---
@@ -66,6 +66,10 @@ To configure a data source privacy level, select the data source, then select **
 
 > **Security Note:** Enabling **Privacy Levels** by selecting **Ignore the Privacy levels and potentially improve performance** in the **Privacy Levels** dialog could expose sensitive or confidential data to an unauthorized person. Do not enable **Privacy Levels** unless you are confident that the data source does not contain sensitive or confidential data.
 > 
+> 
+
+> [!CAUTION]
+> The **Ignore the Privacy levels and potentially improve performance** does not work in the Power BI service. As such, Power BI Desktop reports with this setting enabled, which are then published to the Power BI service, do *not* reflect this behavior when used in the service.
 > 
 
 **Configure Privacy Levels**
