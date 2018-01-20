@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 01/29/2018
 ms.author: mihart
 
 ---
@@ -51,7 +51,7 @@ Funnel charts:
 ## Create a basic funnel chart
 Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.

@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/01/2017
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
@@ -87,8 +87,10 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 2. Sort the visual by month by selecting the ellipses (...) and choosing **Sort by Month**
    
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
-3. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
-4. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
+
+>[NOTE]: For help sorting by month, see [sorting by other criteria](power-bi-report-change-sort#sorting-using-other-criteria.md)
+1. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+2. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
    
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
 5. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
