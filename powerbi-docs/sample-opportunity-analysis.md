@@ -16,12 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/04/2017
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
 # Opportunity Analysis sample for Power BI: Take a tour
-The **Opportunity Tracking Sample** contains a dashboard (and associated report) for a software company that has 2 sales channels: *direct* and *partner*. The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
+
+## Overview of the Opportunity Analysis sample
+The **Opportunity Analysis Sample** contains a dashboard (and associated report) for a software company that has 2 sales channels: *direct* and *partner*. The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 The Sales Manager relies on 2 measures of revenue:
 
@@ -33,23 +35,27 @@ The Sales Manager relies on 2 measures of revenue:
   * Proposal – 60%  
   * Finalize – 80%
 
+  ![](media/sample-opportunity-analysis/opportunity1.png)
+
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
->[!Note] 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify.  To see the raw data, select **Power Pivot > Manage**. 
+### Prerequisites
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Opportunity Analysis Sample > Connect** to get your own copy of the sample.
 
-![](media/sample-opportunity-analysis/opportunity1.png)
+>[!Note]
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify.  To see the raw data, select **Power Pivot > Manage**.
+
 
 ## What is our dashboard telling us?
 Our Sales Manager has created a dashboard to track those metrics most important to her. When she sees something interesting, she can select a tile to dig into the data.
 
 1. Company revenue is $2 billion and factored revenue is $461 million.
 2. Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing each subsequent stage.
-3. Most of our opportunities are in the East region. 
+3. Most of our opportunities are in the East region.
 4. The large opportunities generate more revenue than the medium or small opportunities.
-5. Partner large deals generate more revenue: $8M on average versus $6M for direst sales. 
+5. Partner large deals generate more revenue: $8M on average versus $6M for direst sales.
 
-Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities. 
+Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities.
 
 Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open page 1 of the report.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
@@ -60,8 +66,8 @@ Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open 
 
 * East is our biggest region in terms of opportunity counts.  
 * On the pie chart, select each region one at a time to filter the page. For each region, partners are pursuing significantly more large opportunities.   
-* The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven. 
-* Select each Sales Stage in the bar chart in the bottom left to see the difference in regional count and notice that even though East is our biggest region in terms of counts, in the Solution, Proposal and Finalize stages all 3 regions have comparable counts. This means we close a higher percent of deals in Central and West. 
+* The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven.
+* Select each Sales Stage in the bar chart in the bottom left to see the difference in regional count and notice that even though East is our biggest region in terms of counts, in the Solution, Proposal and Finalize stages all 3 regions have comparable counts. This means we close a higher percent of deals in Central and West.
 
 ### Page 2 of our report is titled “Revenue Overview.”
 This page takes a similar look at the data but using a revenue perspective instead of count.  
@@ -79,8 +85,8 @@ Clearly our partners are doing a better job selling to customers.  It might make
 This page looks at similar data but breaks it down by region and stage.  
 ![](media/sample-opportunity-analysis/opportunity5.png)
 
-* Filtering by East (select **East** in the pie chart) reveals that the opportunities in the east are split almost equal between partner driven and non-partner driven. 
-* Large opportunities are most common in the central region, small opportunities are most common in the east region, and medium opportunities are most common in the west region. 
+* Filtering by East (select **East** in the pie chart) reveals that the opportunities in the east are split almost equal between partner driven and non-partner driven.
+* Large opportunities are most common in the central region, small opportunities are most common in the east region, and medium opportunities are most common in the west region.
 
 ### Page 4 of our report is titled “Upcoming Opportunities”
 Again, we’re looking at similar factors, but this time from a date/time perspective.  
@@ -98,4 +104,3 @@ This is a safe environment to play in. You can always choose not to save your ch
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 
 [Download samples](sample-datasets.md)  
-

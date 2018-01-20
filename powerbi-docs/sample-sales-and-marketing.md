@@ -16,20 +16,25 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
 # Sales and Marketing sample for Power BI: Take a tour
+
+## Overview of the Sales and Marketing sample
 The **Sales and Marketing Sample** contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and his company’s market share, product volume, sales, and sentiment.
 
 VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. But, for some reason, VanArsdel’s market share has started to decline, with significant dips in June.
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (www.obvience.com) that has been anonymized.
 
-[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
-
 ![](media/sample-sales-and-marketing/sales1.png)
+
+### Prerequisites
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
+
+[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## What is our dashboard telling us?
 Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. And we see that data broken down by region, time, and competition.
@@ -45,21 +50,21 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 #### Which segments drive our sales? Does it match the industry trend?
 1. Select the “Total Units Overall by Segment” tile which will open Q&A.
 2. Type **for VanArsdel** at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Our product volume comes from Convenience and Moderation.
-   
+
    ![](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is very high; these are the segments where we compete.
 4. Navigate back to the dashboard by selecting the dashboard name in the top navbar (breadcrumbs).
 
 #### What does total unit market share look like for category (versus region)?
-1. Notice the “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks by category? 
-   
+1. Notice the “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks by category?
+
    ![](media/sample-sales-and-marketing/sales3.png)
 2. In the question box at the top of the dashboard, type the question **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
    ![](media/sample-sales-and-marketing/totalunitsbymanufacturerandcategoryfor2014asatreemap-new.png)
 3. To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
 4. Navigate back to the dashboard.
 
-Dashboards are also an entry point into reports.  If a tile was created from an underlying report, clicking that tile opens the report. 
+Dashboards are also an entry point into reports.  If a tile was created from an underlying report, clicking that tile opens the report.
 
 On our dashboard, the R12M (Rolling 12 Months) line shows that our market share is no longer increasing over time, it’s even declining a bit. And why do we have a big market share dip in June? To investigate further, click this visualization to open the underlying report.
 
@@ -69,7 +74,7 @@ On our dashboard, the R12M (Rolling 12 Months) line shows that our market share 
 
 1. Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The black column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experienced is not experienced by the competition.
 2. The “Total Category Volume by Segment” bar chart in the middle on the right, is filtered to show VanArsdel’s top 2 segments. Take a look at how this filter was created:  
-   
+
    a.  Expand the Filters pane on the right.  
    b.  Click to select the visualization.  
    c.  Under Visual Level Filters, notice that **Segment** is filtered to include only **Convenience** and **Moderation**.  
@@ -109,4 +114,3 @@ This is a safe environment to play in. You can always choose not to save your ch
 
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sales and marketing data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).  
-
