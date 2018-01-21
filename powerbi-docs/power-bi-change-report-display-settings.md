@@ -16,23 +16,28 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
 # Change the size of a report page (Tutorial)
-In the [previous article and video](power-bi-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
+In the [previous article and video](power-bi-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Page view and Page Size are available in both Power BI service and Power BI Desktop, and look and function amost the same, but for this tutorial we're using Power BI service. 
+
+### Prerequisites
+- Power BI service   
+- [Retail Analysis Sample report](samples-retail-analysis.md)
 
 ## First, let's change the page View setting
-1. Open a report in Reading View or Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](sample-retail-analysis.md).  This page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+
+1. Open the report in Reading View or Editing View and select the report tab for **New Stores**. By default, this report page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
    
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
 
-* In Reading view you'll see this.
+    * In Reading view you'll see this.
   
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-* In Editing view you'll see this.
+    * In Editing view you'll see this.
   
     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
@@ -48,26 +53,31 @@ In the [previous article and video](power-bi-report-display-settings.md) you lea
    Looks better, we now have scrollbars but it's easier to read the detail.
 
 ## Change the default view for a report page
-All Power BI reports default to **Fit to page** view. But what if you want this report page to always open in **Actual size** view?
+If you're a report *creator*, you can change the default view for your report pages. When you share your report with others, the report pages will open using the view you've set. Report *consumers* will be able to change the view, but won't be able to save their changes once they exit out of the report.
 
 1. On the **New stores** page of the report, switch back to **Actual size** view.
    
    ![](media/power-bi-change-report-display-settings/power-bi-actual-size.png)
-2. Save the report with a different name by selecting **File > Save as**. You now have 2 copies of this report; in the original report, **New stores** will continue to open in the default view but in the new report it will open in **Actual size** view. Let's go see.
+
+2. On the **District Monthly Sales** report page, set View to **Fit to width**.
+
+3. On the **Overview** report page, leave the default View setting.
+
+4. Now save the report by selecting **File > Save**. The next time you open this report, the pages will display using the new View settings. Let's go see.
    
-   ![](media/power-bi-change-report-display-settings/power-bi-save-as.png)
+   ![](media/power-bi-change-report-display-settings/power-bi-save.png)
 3. Select the name of the current workspace from the top navbar to return to that workspace.  
    
    ![](media/power-bi-change-report-display-settings/power-bi-my-workspace.png)
-4. Select the **Reports** tab and choose the new report you just created (it will have a yellow asterisk).
+4. Select the **Reports** tab and choose the same report (Retail Analysis Sample).
    
     ![](media/power-bi-change-report-display-settings/power-bi-new-report2.png)
-5. The report opens in **Actual size** view!
+5. Open each page of the report to see the new settings.
    
-   ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
+   ![](media/power-bi-change-report-display-settings/power-bi-page-view.gif)
 
 ## Now, let's explore the *page size* setting
-The page size settings are only available in [Editing view](service-interact-with-a-report-in-editing-view.md). To open a report in Editing view you must have owner permissions for the report. If you've connected to any of our [samples](sample-datasets.md), you'll have owner permissions to those reports.
+The page size settings are only available in [Editing view](service-interact-with-a-report-in-editing-view.md), so you must have edit (*creator*) permissions to the report to change the page size settings. If you've connected to any of our [samples](sample-datasets.md), you'll have *creator* permissions to those reports.
 
 1. Open the "District monthly sales" page of the [Retail Analysis sample](sample-retail-analysis.md) in Editing View.
 2. Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paint roller icon ![](media/power-bi-change-report-display-settings/power-bi-paintroller.png).
@@ -77,18 +87,15 @@ The page size settings are only available in [Editing view](service-interact-wit
 4. Select **Letter**.  On the canvas, only the contents that fit within 816 x 1056 pixels (Letter size) remain on the white portion of the canvas.
    
    ![](media/power-bi-change-report-display-settings/power-bi-letter-new.png)
-5. If we change **View** to "Fit to Width," our canvas now displays only the page contents that fit into the letter size.
-   
-   ![](media/power-bi-change-report-display-settings/power-bi-fit-to-width-new.png)
-6. Select **Page size** **16:9** ratio.
+5. Select **Page size** **16:9** ratio.
    
    ![](media/power-bi-change-report-display-settings/power-bi-16-to-9-new.png)
    
    The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720). There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to width".
 7. Continue exploring the **Page Size** options.
 
-## Using page View and Page Size together
-Use page View and Page Size together to create a report that looks its best when embedded in another application.
+## Use page View and Page Size together
+Use page View and Page Size together to create a report that looks its best when shared with colleagues or embedded in another application.
 
 In this exercise, you'll create a report page that will display in an application that has space for 500 pixels wide by 750 pixels high.
 
@@ -109,8 +116,6 @@ Remember in the previous step we saw that our report page is currently displayin
 [Create reports for Cortana](service-cortana-answer-cards.md)
 
 Back to [Page display settings in a Power BI report](power-bi-report-display-settings.md)
-
-Read more about  [reports in Power BI ](service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
