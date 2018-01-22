@@ -21,16 +21,19 @@ ms.author: mihart
 
 ---
 # Human Resources sample for Power BI: Take a tour
+
+## Overview of the Human Resources sample
 The HR department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who left and tries to uncover any trends in the hiring strategy. Our main objectives are to understand:
 
 * Who we hire
 * Biases in our hiring strategy
 * Trends in voluntary separations
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
-
 ![](media/sample-human-resources/hr1.png)
 
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
+
+### Prerequisites
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
@@ -41,9 +44,9 @@ Let’s explore new hires first.
 1. In your workspace, select the **Dashboards** tab, and open the Human Resources dashboard.
 2. On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
    ![](media/sample-human-resources/hr2.png)  
-   
+
    The Human Resources Sample report opens to the **New Hires** page.  
-   
+
    ![](media/sample-human-resources/hr3.png)
 
 Notice the following:
@@ -72,10 +75,10 @@ The Human Resources Sample report opens to the **Active Employees vs. Separation
 
 * Combo charts on the left show year-over-year change for active employees and separates. We have more actives this year due to rapid hiring, but also more separates than last year.
 * In August we had more separates compared to other months. Select the different age groups, genders, or regions to see if you can find any outliers.
-* Looking at the pie charts, we notice we have a pretty even split in our active employees by gender and age groups. Select different age groups to see the gender split differs by age. Do we have an even split by gender in every age group? 
+* Looking at the pie charts, we notice we have a pretty even split in our active employees by gender and age groups. Select different age groups to see the gender split differs by age. Do we have an even split by gender in every age group?
 
 ## Reasons for separation
-Let’s look at the report in Editing View. Select **Edit report** in the upper-left corner. 
+Let’s look at the report in Editing View. Select **Edit report** in the upper-left corner.
 
 Change the pie charts to show Separates data instead of Actives.
 
@@ -84,10 +87,10 @@ Change the pie charts to show Separates data instead of Actives.
 3. Select the check box next to **Separation Count** in the Employees table to add it to the **Values** box in the field well.
 4. Back on the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
 5. Click the 50+ slice of the Separation Count by Age Group pie chart.
-   
+
    Look at the Separations by Reason line chart in the lower-right corner. This chart is filtered to show voluntary separations.  
    ![](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
-   
+
    Notice the trend in the 50+ age group? During the latter part of the year more employees over age 50 are leaving voluntarily. This would be an area to investigate further with more data.
 6. You can follow the same steps for the **Active Employee Count by Gender** pie chart too, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
 7. Click **Power BI** in the top navigation bar to return to the dashboard. You can save the changes you’ve made to the report or not.
@@ -96,7 +99,7 @@ Change the pie charts to show Separates data instead of Actives.
 The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly. Are we hiring good candidates?
 
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”.
-   
+
    ![](media/sample-human-resources/hr7.png)  
 2. Select the **Northwest**﻿ check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
    ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
@@ -107,16 +110,15 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 The [Q&A question box](power-bi-tutorial-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
 
 1. Click in the Q&A question box. Notice before you even start typing, the Q&A box contains suggestions:
-   
+
    ![](media/sample-human-resources/pbi_hr_sample_qabox.png)
 2. You can pick one of those suggestions, or type:  **show age group, gender and bad hires SPLY  where region is east**.  
-   
+
    ![](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
-   
+
    Notice most of the female bad hires are under 30.
 
 This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).  
-
