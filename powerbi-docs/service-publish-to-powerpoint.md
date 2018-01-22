@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/23/2018
 ms.author: davidi
 
 ---
@@ -24,7 +24,7 @@ ms.author: davidi
 With Power BI, you can now publish your report to **Microsoft PowerPoint**, and easily create a slide deck based on your Power BI report. When you **export to PowerPoint**, the following occurs:
 
 * Each page in the Power BI report becomes an individual slide in PowerPoint
-* Each visual in the Power BI report is exported as a high resolution image in PowerPoint
+* Each page in the Power BI report is exported as a single high resolution image in PowerPoint
 * Text boxes in the Power BI report become editable text boxes in PowerPoint
 * A link is created in PowerPoint that links to the Power BI report
 
@@ -62,7 +62,11 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 2. You get some useful information about the report, too, including the *last data refresh* on which the exported report is based, and the *downloaded at* time and date, which is the time and date when the Power BI report was exported into a PowerPoint file.
 3. Each report page is a separate slide, as shown in the left navigation pane.
 
-When you go into an individual slide, you'll notice that each visual is an independent image (as mentioned before). That way you can copy that image, and paste it into another slide, or anywhere else you would like.
+When you go into an individual slide, you'll notice that each report page is an independent image.
+
+>[!NOTE]
+> Having one visual for each report page is new behavior. The previous behavior, which provided an independent image for each visual, is no longer implemented. 
+ 
 
 ![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
 
@@ -82,6 +86,7 @@ There are a few considerations and limitations to keep in mind when working with
 * Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.
 * Reports that are owned by a user outside your Power BI tenant domain (such as, a report owned by someone outside your organization, and shared with you) cannot be published to PowerPoint.
 * If you share a dashboard with someone outside of your organization (and thereby, a user who is not in your Power BI tenant), that user will not be able to export the shared dashboard's associated reports to PowerPoint. For example, if you are aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com cannot export the associated reports to PowerPoint.
+* As previously mentioned, each report page is exported as a single image in the PowerPoint file. 
 
 ## Next steps
 [Analyze in Excel](service-analyze-in-excel.md)
