@@ -46,7 +46,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
   
    ![Get Data](media/sample-it-spend/it-connect.png)
    
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
    
    ![Aterisk](media/sample-it-spend/it-asterisk.png)
   

@@ -25,7 +25,7 @@ ms.author: mihart
 ## Overview of the Opportunity Analysis sample
 The **Opportunity Analysis Sample** contains a dashboard (and associated report) for a software company that has 2 sales channels: *direct* and *partner*. The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
-The Sales Manager relies on 2 measures of revenue:
+The Sales Manager relies on two measures of revenue:
 
 * **Revenue** – this is a salesperson’s estimate of what he believes the revenue will be.
 * **Factored Revenue** – this is calculated as Revenue X Probability% and is generally accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current ***Sales Stage***.
@@ -39,11 +39,35 @@ The Sales Manager relies on 2 measures of revenue:
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-### Prerequisites
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Opportunity Analysis Sample > Connect** to get your own copy of the sample.
+## Prerequisites
 
->[!Note]
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify.  To see the raw data, select **Power Pivot > Manage**.
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
+2. In the bottom left corner select **Get data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. On the Get Data page that appears, select the **Samples** icon.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Human Resources Sample**, then choose **Connect**.  
+  
+   ![Get Data](media/sample-opportunity-analysis/opportunity-connect.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Aterisk](media/sample-opportunity-analysis/opportunity-asterisk.png)
+  
+### Get the .pbix file for this sample
+
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+
+ * [Opportunity Analysis Sample](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+
+### Get the Excel workbook for this sample
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529782) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 
 ## What is our dashboard telling us?

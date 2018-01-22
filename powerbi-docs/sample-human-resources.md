@@ -49,7 +49,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 4. Select the **Human Resources Sample**, then choose **Connect**.  
    
    ![Get Data](media/sample-human-resources/pbi_hr_sample_connect.png)
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
    
    ![Aterisk](media/sample-human-resources/human-resources-sample-asterisk.png)
   
