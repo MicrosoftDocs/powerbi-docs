@@ -55,8 +55,8 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-We recommend logging the RequestIds (and error details for troubleshooting).
-Please provide the RequestId when approaching Microsoft support.
+We recommend logging the request ids (and error details for troubleshooting).
+Please provide the request id when approaching Microsoft support.
 
 ## App registration
 
