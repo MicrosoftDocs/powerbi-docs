@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -45,7 +45,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
-[Customer Profitability Sample PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+- [Customer Profitability Sample PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
 
 ## What is our dashboard telling us?
 
