@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
@@ -28,7 +28,6 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
 > [!TIP]
 > GIS stands for Geographic Information Science.
-> 
 > 
 
 The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](power-bi-visualization-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
@@ -96,7 +95,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 <td>Yes</td>
 </tr>
 <tr>
-<td>Power BI service (PowerBI.com)</td>
+<td>Power BI service (app.powerbi.com)</td>
 <td>Yes</td>
 </tr>
 <tr>
