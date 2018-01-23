@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/16/2018
 ms.author: maggies
 
 ---
@@ -27,18 +27,50 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the Power BI service](service-whats-new.md)  
 
-## September 2017
-### Filters for phone reports in iPhones
+## December 2017
+
+### Improved security management 
+
+We’ve added support for conditional access (CA) and Microsoft Intune mobile device management (MDM) on Android devices, to better secure your organization’s data. It's already available on iOS.
+
+### Improved permission management
+
+We’ve made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
+
+### Auto-installed apps
+
+You don't need to install some of the apps in Power BI at all. Power BI app creators in your organization can create *apps* that contain a collection of dashboards and reports. Then they can publish the app and set it to install automatically in the Power BI service and the Power BI mobile apps. When an app is set to install for you, it automatically appears in your **Apps** menu:
+
+![Apps in the Power BI mobile app](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
+
+## November 2017
+### iPhone X optimization
+
+We’ve optimized the app layout for iPhone X, so you can explore your data in style on every device.
+
+## October 2017
+### Filters for phone reports in Android
+
+If you create a report with phone-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your Android. Read more about filters for Power BI reports on Android.
+
+### Show data in reports
+
+You can now switch visuals in your reports to a table view to see the numbers behind the data. To access this feature, tap "Show data" from the visual's ... menu on your report or the new icon on the expanded visual's action menu.
+
+## Previous months
+
+### September 2017
+#### Filters for phone reports in iPhones
 If you create a report with phone-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your iPhone. Read more about [filters for Power BI reports on iPhones](https://powerbi.microsoft.com/blog/filters-coming-for-phone-reports-on-ios/).
 
-## August 2017
-### iOS proxy settings support
+### August 2017
+#### iOS proxy settings support
 You can now set proxy settings in the Power BI iOS mobile app. This means that Power BI will now work with VPN connections on your mobile device, allowing more users and organizations to securely leverage the power of Power BI on the go.
 
-## July 2017
+### July 2017
 Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
-### iOS devices
+#### iOS devices
 **New Q&A experience on iOS (Preview)**
 Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
 
@@ -46,7 +78,6 @@ Instead of just receiving an answer to your question, you can now use natural la
 **Responsive visual for phone reports and dashboards**
 You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size. Read the [blog about responsive visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
-## Previous months
 ### June 2107
 #### All devices
 **Make apps favorites**

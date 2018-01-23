@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/31/2017
+ms.date: 01/18/2018
 ms.author: mihart
 
 ---
@@ -79,7 +79,7 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 * Learn about [dashboard tiles](service-dashboard-tiles.md) and what will happen when you select one.
 * Don't like the look of a dashboard?  You can [resize, move, and rename the tiles](service-dashboard-edit-tile.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](service-set-data-alerts.md).
-* Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](service-how-to-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
+* Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](power-bi-tutorial-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
 
 > [!TIP]
 > If you didn’t find what you’re looking for here, use the Table of Contents to the left.

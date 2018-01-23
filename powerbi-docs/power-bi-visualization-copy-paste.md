@@ -16,12 +16,15 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
-# Copy and paste a visualization in Power BI
-1. In Power BI, open a report in [Editing View](service-reading-view-and-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one. 
+# Copy and paste a visualization in Power BI service and Power BI Desktop
+Copying and pasting a visualization requires edit permissions to the report. In Power BI service, this means opening the report in [Editing View](service-reading-view-and-editing-view.md).
+
+1. Open a report that has at least one visualization.  
+
 2. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.  
    ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 

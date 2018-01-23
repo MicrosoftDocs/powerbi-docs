@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/29/2017
+ms.date: 12/05/2017
 ms.author: davidi
 
 ---
@@ -43,7 +43,7 @@ All new **Scheduled Refresh** requests and DirectQuery operations are automatica
 
 ## PowerShell support for gateway clusters
 
-PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. The PowerShell scripts let users perform the following operations:
+PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work properly. The PowerShell scripts let users perform the following operations:
 
 -   Retrieve the list of gateway clusters available for a user
 -   Retrieve the list of gateway instances registered in a cluster, as well as their online or offline status

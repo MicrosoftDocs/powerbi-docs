@@ -23,7 +23,7 @@ ms.author: asaxton
 # Step 5: Add rows to a Power BI table
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
-In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a **Power BI** dataset. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a **Power BI** dataset. 
 
 When you call the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation, you add rows to a dataset.
 
@@ -316,6 +316,5 @@ Below is the [complete code listing](#code).
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

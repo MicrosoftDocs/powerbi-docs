@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 12/23/2017
 ms.author: mihart
 
 ---

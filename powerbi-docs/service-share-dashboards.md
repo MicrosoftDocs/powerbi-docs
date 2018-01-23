@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 01/08/2018
 ms.author: maggies
 
 ---
@@ -88,6 +88,8 @@ Only the dashboard owner can turn resharing on and off.
    * **Read** to keep that person from sharing with anyone else.
    * **Remove access** to keep that person from seeing the dashboard at all.
 
+4. In the **Remove access** dialog box, decide if you want to remove access to related content, too, such as reports and datasets. If you remove items with a warning icon ![Power BI warning icon](media/service-share-dashboards/power-bi-warning-icon.png), it's best to remove related content because it won't display properly.
+
 ## Share a dashboard with people outside your organization
 When you share with people outside your organization, they get an email with a link to the shared dashboard, and they have to sign in to Power BI to see the dashboard. If they don't have a Power BI Pro license, they can sign up for one after clicking the link.
 
@@ -105,13 +107,44 @@ If you send a link from a Power BI mobile app to people outside your organizatio
 Things to keep in mind about sharing dashboards:
 
 * In general, you and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard, then the credentials of every person are used to determine which data they can access.
-* Everyone you share your dashboard with can see it and interact with your reports in [Reading View](service-report-open-in-reading-view.md). They can't create reports or save changes to existing reports.
+* Everyone you share your dashboard with can see it and interact with your reports in [Reading View](service-reading-view-and-editing-view.md). They can't create reports or save changes to existing reports.
 * No one can see or download the dataset.
 * Everyone can manually [refresh the dashboard data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 * Coworkers who have the same email domain as you, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
 * If your coworkers already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
+
+## Troubleshoot sharing
+
+### My dashboard recipients see a lock icon in a tile or a "Permission required" message
+
+The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
+
+![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+If so, you need to grant them permission to the underlying dataset. Here's how.
+
+1. Go to the **Datasets** tab in your content list.
+
+1. Select the ellipsis (**...**) next to the dataset > **Manage permissions**.
+
+    ![Manage permissions](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+
+3. Select **Add user**.
+
+    ![Select Add user](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
+
+1. Enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists.
+
+    ![Add email addresses](media/service-share-dashboards/power-bi-add-user-dataset.png)
+
+5. Select **Add**.
+
+### I can't share a dashboard
+
+To share a dashboard, you have to have permission to reshare the underlying content -- any related reports and datasets. If you see a message saying you can't share, ask the report author to give you re-share permission for those reports and datasets.
+
 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.

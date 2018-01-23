@@ -17,13 +17,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
 # Duplicate a report page in Power BI
-1. In Power BI, open a report in [Editing view](service-reading-view-and-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one. 
-2. From the top control bar, select the **Duplicate this page** icon.
+Duplicating a report page requires edit permissions to the report. In Power BI service, this means opening the report in [Editing view](service-reading-view-and-editing-view.md). 
+
+
+1. In Power BI, open a report that has at least one page. 
+
+2. From the top control bar, select **Duplicate this page**.
    
    ![](media/power-bi-report-copy-paste-page/pbi_duplicate_new.png)
    
@@ -34,8 +38,9 @@ ms.author: mihart
 
 ### Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
+[Add a new page to a report](power-bi-report-add-page.md) 
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](service-basic-concepts.md) 
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

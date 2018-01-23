@@ -1,5 +1,5 @@
 ---
-title: Power BI Pro content - what is it?
+title: Power BI Premium - what is it?
 description: Power BI Premium is dedicated capacity for your organization or team, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
 services: powerbi
 documentationcenter: ''
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/10/2017
+ms.date: 12/05/2017
 ms.author: asaxton
 
 ---
@@ -66,9 +66,13 @@ Power BI Premium is available in node configurations with different v-core capac
 
 * P nodes can be used for embedded or service deployments
 * EM nodes can be used for embedded deployments only
+* EM1 and EM2 
+* Links in this table only operate properly for users who are Office 365 global admins - others receive a 404 error. 
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour | Availability |
 | --- | --- | --- | --- | --- | --- | --- |
+| [EM1 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |.5 cores, 2.5GB RAM |.5 cores |3.75 per second |150-300 |Available |
+| [EM2 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-cores |1 core, 5GB RAM |1 core |7.5 per second |301-600 |Available |
 | [EM3 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |Available |
 | [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |Available ([month to month](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is also available) |
 | [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |Available |

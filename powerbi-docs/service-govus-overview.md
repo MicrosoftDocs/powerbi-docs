@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 01/19/2018
 ms.author: davidi
 
 ---
@@ -41,6 +41,18 @@ The following features are available to **Power BI US Government** customers, as
 * Data Management Gateway
 * All data is encrypted in both Azure SQL and Blob Storage for Power BI
 * Connect to services with [content packs](service-connect-to-services.md)
+
+## Connectivity between Government and Public Azure Cloud services 
+
+Azure is distributed among multiple clouds. Be default, tenants are allowed to open firewall rules to a  cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power BI customer and you have existing SQL instances in the public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
+
+* USGov Iowa
+* USGov Virginia
+* USGov Texas
+* USGov Arizona
+
+In the public cloud the IP spaces are available, but for the government cloud, you must open an Azure Support ticket to request the IP ranges for the above listed datacenters. 
+
 
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.

@@ -15,7 +15,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 01/16/2018
 ms.author: maggies
 
 ---
@@ -29,7 +29,7 @@ Your business users often need multiple Power BI dashboards and reports to run t
 
 With Power BI apps, now in preview, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
-Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
+Business users install these apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
 
 ### Apps and organizational content packs
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps.
@@ -48,14 +48,9 @@ As an app creator you need a Power BI Pro license. For your app users, there are
 ## App workspaces
 *App workspaces* are the places where you create apps, so you need to create an app workspace first, before you create the app. If you’ve ever worked in a group workspace in Power BI, then app workspaces will be familiar. They’re the evolution of group workspaces – staging areas and containers for the content in the app. 
 
-You can add colleagues to these workspaces as members or admins. All app workspace members and admins need Power BI Pro licenses. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience, or even your entire organization. 
+You can add colleagues to these workspaces as members or admins. All app workspace members and admins need Power BI Pro licenses. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience, or even to your entire organization. 
 
-When the content is ready, you publish the app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
-
-### How are app workspaces different from group workspaces?
-All existing group workspaces can serve as app workspaces, and you can publish apps from any of these workspaces. Here’s one way app workspaces and group workspaces are different: You create an app workspace as a place to create and house a specific app. There’s a one-to-one relationship between the app and contents of the app workspace. Everything in the app workspace will be in the app when you publish it. 
-
-Now that you understand apps and app workspaces, let's start creating and publishing an app. 
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish the app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
 
 ## Create an app workspace
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
@@ -116,15 +111,13 @@ When the dashboards and reports in your app workspace are ready, you publish the
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or email distribution lists. If you have permissions, you can decide to install the app automatically for the recipients.
-   
-     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
+4. Last, on **Access**, decide who has access to the app: either everyone in your organization, or specific people or  Active Directory security groups. 
 
 5. When you select **Finish**, you see a message confirming it’s ready to publish. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
    
      ![App finish](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-The business users that you've published the app to can find it in a few different ways. First, if you could install it automatically, it appears under Apps in their Power BI account.  You can send them the direct link to the app, or they can search for it in Microsoft AppSource, where they see all the apps that they can access. After that whenever they go to Apps, they’ll see this app in their list.
+The business users that you've published the app to can find it in two different ways. You can send them the direct link to the app, or they can search for it in Microsoft AppSource, where they see all the apps that they can access. After that, whenever they go to Apps, they’ll see this app in their list.
 
 Read more about the [app experience for business users](service-install-use-apps.md).
 

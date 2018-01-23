@@ -16,25 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
 # Change how a chart is sorted in a Power BI report
-In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric
+In a Power BI report, you can sort most visualizations alphabetically by the names of the categories in the chart, or by the numeric
 values of each category. For example, this chart is sorted by store name.
 
 ![](media/power-bi-report-change-sort/pbi_chartsortcategory.png)
 
-It's easy to sort it from highest to lowest sales per square feet instead.
+It's easy to change the sort from a category (store name) to a value (sales per square feet) instead.
 
 1. Select the ellipses (...) and choose **Sort by Sales Per Sq Ft**.
 2. If necessary, select the sort icon ![](media/power-bi-report-change-sort/sorticon.png) to change to **Descending**.
-   
+
    ![](media/power-bi-report-change-sort/sortby.gif)
-   
+
    **NOTE**: Not all visuals can be sorted.  For example, the following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
+<a name="other"></a>
 ## Sorting using other criteria
 Sometimes, you want to sort your visual using a different field or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
@@ -52,4 +53,3 @@ More about [Visualizations in Power BI reports](power-bi-report-visualizations.m
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

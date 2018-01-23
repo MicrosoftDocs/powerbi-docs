@@ -164,7 +164,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 **April 28, 2016**
 
-* [Quick Insights on Dashboard Tiles](service-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+* [Quick Insights on Dashboard Tiles](service-insights.md): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -468,7 +468,7 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-week
 
 **October 6, 2015**
 
-* With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, [navigate to any dashboard and click the “How to ask” link near the Q&A question box](service-how-to-q-and-a.md). Power BI presents you with a number of suggestions based on your data.
+* With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, [navigate to any dashboard and click the “How to ask” link near the Q&A question box](power-bi-tutorial-q-and-a.md). Power BI presents you with a number of suggestions based on your data.
 * Two weeks ago, we introduced support for inserting shapes into the report canvas in Power BI Desktop. This week, we are happy to announce that you can now add shapes to your report canvas when you are authoring and/or editing reports in the Power BI web app.
 * We have added the option to turn off email notification when you share a dashboard. Simply uncheck the “Send email notification to recipients” check box in the Power BI share dialog. You will be presented with a URL – copy and share this URL to your colleagues to give them access to the dashboard.
 * Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data.
@@ -587,10 +587,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * Get quick insights into your QuickBooks Online account data using our [content pack](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](service-connect-to-quickbooks-online.md).
 
-**May 19, 2015**
-
-* With this update, you can now connect to [Twilio through our content pack](service-connect-to-twilio.md)
-* The Power BI API has new additions! You can now [list all tables](http://docs.powerbi.apiary.io/#reference/datasets/tables-collection/list-all-tables) and [update an existing table schema](http://docs.powerbi.apiary.io/#reference/datasets/table/update-an-existing-tables-schema)
 
 **May 13, 2015**
 

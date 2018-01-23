@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/08/2017
 ms.author: maggies
 
 ---
 # Create reports optimized for the Power BI phone apps
-When you [create a report in Power BI Desktop](desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can [create *responsive* visuals](desktop-create-responsive-visuals.md) that resize well for viewing on a phone. Also, if you add filters to your report, on an iPhone those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
+When you [create a report in Power BI Desktop](desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
 
 ![Optimized report on a phone](media/desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -53,7 +53,7 @@ After you [create a report in Power BI Desktop](desktop-report-view.md), you can
    ![Resize a visual](media/desktop-create-phone-report/03_resizing_a_viz_to_grid.gif)
 
 ## Optimize a visual for any size
-You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size.
+You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size. 
 
 As a visual changes size, Power BI prioritizes the data view, for example removing padding and moving the legend to the top of the visual automatically, so the visual remains informative even as it gets smaller.
 
@@ -79,10 +79,14 @@ You choose whether to turn on responsiveness for each visual. Read more about [o
 Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in phone reports:
 
 * Decide if report readers can select only one or more than one item.
-* Make the slicer vertical or horizontal. 
 * Put a box around the slicer to make the report easier to scan.
+* Make the slicer vertical, horizontal, or *responsive*. 
 
-Read more about [creating slicers in the Power BI service](guided-learning/visualizations.yml#step-4).
+If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page. 
+
+![Power BI responsive slicer](media/desktop-create-phone-report/power-bi-slicer-2-rows.png)
+
+Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
 
 ## Publish a phone report
 * To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md), and the phone version publishes at the same time.

@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 12/06/2017
 ms.author: mihart
 
 ---
@@ -51,7 +51,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 1. [Open the tile in Focus mode](service-focus-mode.md) by selecting the ellipses and choosing the Focus icon ![](media/service-print/power-bi-focus-icon.png).
    
     ![](media/service-print/menu-options.png)
-2. Open the tile in [full screen mode](service-tile-fullscreen-mode.md) by selecting the full screen icon ![](media/service-print/power-bi-full-screen-icon.png) from the top navbar.
+2. Open the tile in [full screen mode](service-fullscreen-mode.md) by selecting the full screen icon ![](media/service-print/power-bi-full-screen-icon.png) from the top navbar.
 3. Hover over the tile to reveal the Options menu.
    
     ![](media/service-print/menu-options-new.png)

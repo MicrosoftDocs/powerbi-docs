@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 12/07/2017
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -37,14 +37,11 @@ Get started with these popular on-demand webinars
 
 - [What's new and exciting in Power BI Report Server - Nov 2017](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
 
-
 ## Upcoming webinars
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
-
-- [Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability -12/05/17](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
 - [Improving Profitability in Healthcare - 12/12/17](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
@@ -56,6 +53,8 @@ Watch recorded sessions at any time
 
 - [How to Implement a Successful Data Governance Strategy That Makes Your Organization More Secure](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
 
+- [Transforming A Report From Good to GREAT!](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
+
 - [Ask a Partner: Developing Custom Visuals for Power BI](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
 - [How Microsoft does Power BI](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
@@ -63,6 +62,8 @@ Watch recorded sessions at any time
 - [Applied Intelligence for Sales & Service](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
 - [Power BI security deep dive](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
+
+- [Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
 ## See also
 

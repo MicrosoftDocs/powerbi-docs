@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 01/15/2018
 ms.author: asaxton
 ---
 # Frequently asked questions about Power BI Embedded
@@ -52,6 +52,10 @@ The recommendation of Microsoft is that enterprises buy Power BI Premium, an ent
 
 There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. And of course, some Enterprises may decide to use A SKUs in Azure if they are only interested in building line of business applications and embedding analytics into them and are not interested in using the pre-packaged Power BI service.
 
+### How many embed tokens can I create?
+
+Embed tokens with PRO license are intended for development and dev testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased.
+
 ### When will Power BI Embedded be available in Azure?
 
 Power BI Embedded is now available.
@@ -83,6 +87,12 @@ Here is a partial list of differences you may use with each.
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams |Combine embedding in applications and use the Power BI Service in the same capacity |
+
+### What are the prerequisites to create a PBIE capacity in Azure?
+
+- You need to sign in to your organizational directory (MSA accounts are not supported).
+- You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
+- You need to have an Azure subscription in your organizational directory.
 
 ### How can I monitor capacity consumption?
 
@@ -126,7 +136,7 @@ Power BI Embedded will have an hourly meter.
 
 ### How does the usage of Power BI Embedded show up on my bill?
 
-Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed.
+Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. Note that as long as your resource is active, you will be billed even if there is no usage. To stop being billed you need to actively pause your resource. Pausing can be done through Azure or through ARM APIs.
 
 ### What happens if I already purchased Power BI Premium and now I want some of the benefits of Power BI Embedded in Azure?
 

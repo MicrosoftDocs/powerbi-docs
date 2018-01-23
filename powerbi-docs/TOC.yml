@@ -12,7 +12,7 @@
       href: service-free-vs-pro.md
     - name: "Data sources for Power BI"
       href: service-get-data.md
-    - name: "The new Power BI navigation experience"
+    - name: "Getting around in Power BI - navigation experience"
       href: service-the-new-power-bi-experience.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
       href: sample-retail-analysis.md
   - name: Common tasks
     items: 
-    - name: "Favorite dashboards in Power BI"
+    - name: "Favorite dashboards, reports, and apps in Power BI"
       href: service-dashboard-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: service-print.md
@@ -92,6 +92,8 @@
       href: service-admin-premium-purchase.md
     - name: "Manage Power BI Premium"
       href: service-admin-premium-manage.md
+    - name: "Support for large datasets"
+      href: service-premium-large-datasets.md
     - name: "Power BI Premium FAQ"
       href: service-premium-faq.md
     - name: "Power BI Premium release notes"
@@ -252,8 +254,6 @@
       href: service-insight-types.md
     - name: "Optimize your data for Power BI Quick Insights"
       href: service-insights-optimize.md
-    - name: "Display a dashboard tile in Full Screen mode (TV mode)"
-      href: service-tile-fullscreen-mode.md
     - name: "Featured dashboards in Power BI"
       href: service-dashboard-featured.md
     - name: "Create a phone view of a dashboard"
@@ -266,26 +266,36 @@
       href: service-data-classification.md
   - name: Ask questions of your data
     items: 
-    - name: "Q&A in Power BI"
-      href: service-q-and-a.md
-    - name: "How to use Power BI Q&A"
-      href: service-how-to-q-and-a.md
-    - name: "Tutorial: Get Started with Power BI Q&A"
-      href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
-      href: service-q-and-a-direct-query.md
-    - name: "Make your data work well with Q&A in Power BI"
-      href: service-prepare-data-for-q-and-a.md
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md
-    - name: "Enable Cortana for Power BI"
-      href: service-cortana-enable.md
-    - name: "Create featured questions for Power BI Q&A"
-      href: service-q-and-a-create-featured-questions.md
-    - name: "Tips and tricks for asking questions with Q&A in Power BI"
-      href: service-q-and-a-tips.md
-    - name: "Troubleshoot Cortana"
-      href: service-cortana-troubleshoot.md
+    - name: Overview
+      items:
+        - name: "Q&A in Power BI"
+          href: power-bi-q-and-a.md
+        - name: "Introduction to Cortana for Power BI"
+          href: service-cortana-intro.md	
+    - name: Quickstart
+      items:
+        - name: "Get started with Power BI Q&A"
+          href: power-bi-visualization-introduction-to-q-and-a.md
+    - name: Tutorials
+      items:
+        - name: "Use Q&A to create visualizations and build reports"
+          href: power-bi-tutorial-q-and-a.md
+    - name: How To
+      items:
+        - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
+          href: service-q-and-a-direct-query.md
+        - name: "Make your data work well with Q&A in Power BI"
+          href: service-prepare-data-for-q-and-a.md
+        - name: "Enable Cortana for Power BI"
+          href: service-cortana-enable.md
+        - name: "Create featured questions for Power BI Q&A"
+          href: service-q-and-a-create-featured-questions.md
+    - name: Resources
+      items:
+        - name: "Tips and tricks for asking questions with Q&A in Power BI"
+          href: service-q-and-a-tips.md
+        - name: "Troubleshoot Cortana"
+          href: service-cortana-troubleshoot.md
   - name: Share your work
     items: 
     - name: "How should I collaborate on and share dashboards and reports?"
@@ -350,14 +360,10 @@
       href: service-analyze-in-excel.md
     - name: "Change how visuals interact in a report"
       href: service-reports-visual-interactions.md
-    - name: "Open a Power BI report in Reading View"
-      href: service-report-open-in-reading-view.md
-    - name: "Go from Reading View to Editing View in Power BI"
+    - name: "Open a Power BI report in Reading view or Editing view"
       href: service-reading-view-and-editing-view.md
     - name: "Interact with a report in Editing View in Power BI"
       href: service-interact-with-a-report-in-editing-view.md
-    - name: "Interact with a report in Reading View in Power BI"
-      href: service-interact-with-a-report-in-reading-view.md
     - name: "Tips and tricks for creating reports in Power BI service"
       href: power-bi-reports-tips-and-tricks-for-creating.md
     - name: "Analytics pane"
@@ -380,6 +386,8 @@
       href: service-export-to-pbix.md
     - name: "Filter a report using query string parameters in the URL"
       href: service-url-filters.md
+    - name: "Best practices for building fast and reliable reports in Power BI"
+      href: power-bi-reports-performance.md  
   - name: Visualizations
     items: 
     - name: "Visualizations in Power BI"
@@ -452,10 +460,8 @@
       href: power-bi-visualization-treemaps.md
     - name: "Tutorial: Waterfall charts in Power BI"
       href: power-bi-visualization-waterfall-charts.md
-    - name: "Create a big number tile for a Power BI dashboard by asking a question"
-      href: power-bi-visualization-big-number.md
-    - name: "Create a big number tile from a Power BI report"
-      href: power-bi-visualization-big-number-report.md
+    - name: "Tutorial: Cards (big number tiles) in Power BI"
+      href: power-bi-visualization-card.md
     - name: "Create advanced analytics and visualizations using R scripts in Power BI"
       href: service-r-visuals.md
   - name: Data from files
@@ -518,6 +524,8 @@
       href: service-gateway-onprem.md
     - name: "On-premises data gateway - in-depth"
       href: service-gateway-onprem-indepth.md
+    - name: "High availability clusters for on-premises data gateway"
+      href: service-gateway-high-availability-clusters.md      
     - name: "On-premises data gateway FAQ"
       href: service-gateway-onprem-faq.md
     - name: "On-premises data gateway (personal mode)"
@@ -746,6 +754,8 @@
     items: 
     - name: "Report view in Power BI Desktop"
       href: desktop-report-view.md
+    - name: "Q&A in Power BI Desktop"
+      href: desktop-qna-in-reports.md
     - name: "Analytics pane in Power BI Desktop"
       href: desktop-analytics-pane.md
     - name: "Using insights in Power BI Desktop"
@@ -758,6 +768,10 @@
       href: desktop-quick-measures.md
     - name: "Using What if parameters"
       href: desktop-what-if.md
+    - name: "Use drillthrough"
+      href: desktop-drillthrough.md      
+    - name: "Use a relative date slicer and filter"
+      href: desktop-slicer-filter-date-range.md      
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
     - name: "Use grouping and binning"
@@ -782,12 +796,14 @@
       href: desktop-add-custom-column.md
     - name: "Create responsive visuals in Power BI"
       href: desktop-create-responsive-visuals.md
-    - name: "Use inline heirarchy labels in Power BI Desktop (Preview)"
+    - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
       href: desktop-inline-hierarchy-labels.md
     - name: "Use the numeric range slicer"
       href: desktop-slicer-numeric-range.md
     - name: "Use the relative date slicer"
       href: desktop-slicer-filter-date-range.md
+      name: "Create a responsive slicer you can resize"
+      href: power-bi-slicer-filter-responsive.md
     - name: "Create custom Power BI answer cards for Cortana"
       href: service-cortana-answer-cards.md
     - name: "Row-level security"
@@ -934,6 +950,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed custom layouts into an app"
+      href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
       href: developer/create-an-azure-active-directory-tenant.md
     - name: "Register an application"
@@ -1002,8 +1020,6 @@
       href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
     items: 
-    - name: "Apiary"
-      href: https://go.microsoft.com/fwlink/?linkid=848278
     - name: "JavaScript embed demo"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Samples"
@@ -1048,6 +1064,8 @@
       href: report-server/data-sources.md
     - name: "Connect to data sources"
       href: report-server/connect-data-sources.md
+    - name: "Access shared datasets as OData feeds "
+      href: report-server/access-dataset-odata.md
     - name: "Configure scheduled refresh"
       href: report-server/configure-scheduled-refresh.md
     - name: "Add comments to a report"
