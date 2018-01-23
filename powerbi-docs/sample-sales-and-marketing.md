@@ -44,7 +44,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 3. On the Get Data page that appears, select the **Samples** icon.
    
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Human Resources Sample**, then choose **Connect**.  
+4. Select the **Sales and Marketing Sample**, then choose **Connect**.  
   
    ![Sales and Marketing sample](media/sample-sales-and-marketing/sales9.png)
    

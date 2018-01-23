@@ -47,7 +47,7 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 3. On the Get Data page that appears, select the **Samples** icon.
    
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Human Resources Sample**, then choose **Connect**.  
+4. Select the **Supplier Quality Analysis Sample**, then choose **Connect**.  
   
    ![Supplier Quality Analysis Sample](media/sample-supplier-quality/supplier16.png)
    

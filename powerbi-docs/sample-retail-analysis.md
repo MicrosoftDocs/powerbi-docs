@@ -39,7 +39,7 @@ This industry sample dashboard and underlying report analyze retail sales data o
 3. On the Get Data page that appears, select the **Samples** icon.
    
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Human Resources Sample**, then choose **Connect**.  
+4. Select the **Retail Analysis Sample**, then choose **Connect**.  
   
    ![Retail Analysis Sample](media/sample-retail-analysis/retail16.png)
    
