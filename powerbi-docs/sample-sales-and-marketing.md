@@ -31,10 +31,35 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ![](media/sample-sales-and-marketing/sales1.png)
 
-### Prerequisites
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
+## Prerequisites
 
-[!Note] You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
+2. In the bottom left corner select **Get data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. On the Get Data page that appears, select the **Samples** icon.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Human Resources Sample**, then choose **Connect**.  
+  
+   ![Sales and Marketing sample](media/sample-sales-and-marketing/sales9.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Asterisk](media/sample-sales-and-marketing/sales10.png)
+  
+### Get the .pbix file for this sample
+
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+
+ * [Sales and Marketing Sample](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+
+### Get the Excel workbook for this sample
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529785) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## What is our dashboard telling us?
 Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. And we see that data broken down by region, time, and competition.

@@ -34,28 +34,36 @@ Two primary metrics are at play in this analysis: total number of defects and th
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards.
 This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
-### Prerequisites
-The sample used in this tutorial, Supplier Quality Analysis, is available for Power BI service as well as Power BI Desktop. If you want to follow the steps in this tutorial, open Power BI service.  
+## Prerequisites
 
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
 
-### Get the Supplier Quality sample
-1. Open Power BI service and log in.
+### Get the content pack for this sample
 
+1. Open the Power BI service (app.powerbi.com) and log in.
 2. In the bottom left corner select **Get data**.
-
+   
     ![](media/sample-datasets/power-bi-get-data.png)
-
 3. On the Get Data page that appears, select the **Samples** icon.
-
+   
    ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Human Resources Sample**, then choose **Connect**.  
+  
+   ![Supplier Quality Analysis Sample](media/sample-supplier-quality/supplier16.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Asterisk](media/sample-supplier-quality/supplier17.png)
+  
+### Get the .pbix file for this sample
 
-4. Select one of the samples to open a description of that sample. Then choose **Connect**.  
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
-   ![](media/sample-datasets/power-bi-connect.png)
+ * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
 
-5. Power BI imports the sample and adds a new dashboard, report, and dataset to your current workspace. When the **Success** message appears, select **Go to dashboard**.  
+### Get the Excel workbook for this sample
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529779) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
-   ![](media/sample-supplier-quality/power-bi-sample-open.png)
 
 ## Downtime caused by defective materials
 Let’s analyze the downtime caused by defective materials and see which vendors are responsible.  
