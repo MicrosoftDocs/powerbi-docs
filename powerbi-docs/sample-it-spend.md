@@ -42,7 +42,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 3. On the Get Data page that appears, select the **Samples** icon.
    
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Human Resources Sample**, then choose **Connect**.  
+4. Select the **IT Spend Analysis Sample**, then choose **Connect**.  
   
    ![Get Data](media/sample-it-spend/it-connect.png)
    
@@ -54,7 +54,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
- * [Human Resources Sample](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+ * [IT Spend Analysis Sample](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529783) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.

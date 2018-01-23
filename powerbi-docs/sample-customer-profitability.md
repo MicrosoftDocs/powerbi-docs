@@ -49,7 +49,7 @@ Before you can use the sample, you must first download it as a content pack, .pb
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
-[Customer Profitability Sample PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+- [Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 

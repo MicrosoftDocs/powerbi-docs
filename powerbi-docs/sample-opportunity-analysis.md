@@ -52,7 +52,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 3. On the Get Data page that appears, select the **Samples** icon.
    
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Human Resources Sample**, then choose **Connect**.  
+4. Select the **Opportunity Analysis Sample**, then choose **Connect**.  
   
    ![Get Data](media/sample-opportunity-analysis/opportunity-connect.png)
    
