@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
@@ -30,11 +30,12 @@ It's easy to change the sort from a category (store name) to a value (sales per 
 
 1. Select the ellipses (...) and choose **Sort by Sales Per Sq Ft**.
 2. If necessary, select the sort icon ![](media/power-bi-report-change-sort/sorticon.png) to change to **Descending**.
-   
+
    ![](media/power-bi-report-change-sort/sortby.gif)
-   
+
    **NOTE**: Not all visuals can be sorted.  For example, the following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
+<a name="other"></a>
 ## Sorting using other criteria
 Sometimes, you want to sort your visual using a different field or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
@@ -52,4 +53,3 @@ More about [Visualizations in Power BI reports](power-bi-report-visualizations.m
 [Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

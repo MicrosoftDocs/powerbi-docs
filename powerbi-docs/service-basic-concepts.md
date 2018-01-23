@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/19/2018
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
@@ -214,7 +214,7 @@ The icons in the upper right corner are your resource for settings, notification
 ### 5. **Dashboard title** (navigation path aka breadcrumbs)
 It's not always easy to figure out which workspace and dashboard are active, so Power BI creates a navigation path for you.  In this example we see the workspace (My workspace) and the dashboard title (Retail Analysis Sample).  If we opened a report, the name of the report would be appended to the end of the navigation path.  Each section of the path is an active hyperlink.  
 
-Notice the "C" icon after the dashboard title. This dashboard has a [data classification tag](/service-data-classification.md) of "confidential." The tag identifies the sensitivity and security level of the data. If your Admin has turned on data classifcation, every dashboard will have a default tag set. Dashboard owners should change the tag to match their dashboard's proper security level.
+Notice the "C" icon after the dashboard title. This dashboard has a [data classification tag](service-data-classification.md) of "confidential." The tag identifies the sensitivity and security level of the data. If your Admin has turned on data classifcation, every dashboard will have a default tag set. Dashboard owners should change the tag to match their dashboard's proper security level.
 
 ![](media/service-basic-concepts/power-bi-title.png)
 
