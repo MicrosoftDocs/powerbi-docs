@@ -172,13 +172,10 @@ When you are ready to move to production, you will need to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 * Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you neeed, see the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
-  
-  > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](../service-admin-premium-purchase.md).
-  > 
-  > 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
-  
+ 
     ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
 
 ## After migration
