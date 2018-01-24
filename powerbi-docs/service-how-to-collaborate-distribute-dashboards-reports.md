@@ -1,11 +1,11 @@
 ---
-title: How should I collaborate and share dashboards and reports in Power BI?
+title: How should I collaborate and share in Power BI?
 description: In Power BI you can collaborate on and share dashboards, reports, and tiles in several different ways. Each has its advantages.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: lukaszp
 editor: ''
 tags: ''
 qualityfocus: monitoring
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/19/18
 ms.author: maggies
 
 ---
 # How should I collaborate and share dashboards and reports in Power BI?
-You create dashboards and reports. Maybe you collaborate on them with your coworkers, too. Then you want others to have access to them. What's the best way to distribute them?
+You've created dashboards and reports. Maybe you collaborate on them with your coworkers, too. Then you want others to have access to them. What's the best way to distribute them?
 
 In this article, we'll compare these options for collaborating and sharing in Power BI: 
 
@@ -31,7 +31,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 * Publishing to the web, where anyone can see and interact with them.
 * Printing. 
 
-No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-free-vs-pro.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
+No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-free-vs-pro.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
@@ -66,9 +66,9 @@ You need a Power BI Pro license to share your content, and those you share it wi
 
 You can share with people outside your organization, too. They can view and interact with the dashboard too, but can't share it. 
 
-More about [sharing a dashboard](service-share-dashboards.md) from the Power BI service.
+More about [sharing dashboards and reports](service-share-dashboards.md) from the Power BI service.
 
-You can also [share a direct link to a report](service-share-reports.md), and bypass the dashboard. You can add a filter to the link so the recipients see a filtered view of your report.
+You can also add a filter to a report, then [share a filtered view of your report](service-share-reports.md).
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 

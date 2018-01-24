@@ -1,5 +1,5 @@
 ---
-title: The report editor...Take a tour
+title: Quickstart - The report editor...Take a tour
 description: The report editor...Take a tour.
 services: powerbi
 documentationcenter: ''
@@ -17,16 +17,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/23/2018
 ms.author: mihart
 
 ---
 # The report editor...Take a tour
+## Editing reports in Power BI service and Power BI Desktop
 The report editor in Power BI service and the report editor in Power BI Desktop are very similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
+
+## The difference between report *creators* and report *consumers*
+The ability to create and edit a report is restricted to report owners (aka *creators*). If you are *consuming* a report that has been shared with you, you'll still be able to open and interact with the report in Power BI service [Reading view only](service-reading-view-and-editing-view.md), but won't have all the robust and extensive features available to the report creator.  
+
+To learn more about report Reading view, see [Reading view and Editing view in Power BI service](service-reading-view-and-editing-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-In Power BI service, the *report editor* is only available in [Editing View](service-reading-view-and-editing-view.md). To open a report in Editing view, you must be a report owner.
+In Power BI service, the *report editor* is only available in [Editing View](service-reading-view-and-editing-view.md). To open a report in Editing view, you must be a report owner or creator.
 
 The Power BI report editor is made up of 3 sections:  
 
@@ -84,7 +90,9 @@ With the Analytics pane in Power BI service, you can add dynamic reference lines
 
 - - -
 ## The Filters pane
-View, set, and modify page, report, drillthrough, and visual-level filters.
+Use the Filters pane to view, set, and modify persistent filters to your reports at the page, report, drillthrough, and visual-level. Yes, you can do ad-hoc filtering on report pages and visuals by selecting elements of the visuals or by using tools like slicers, but by using the Filters pane the state of the filters is saved with the report. 
+
+The Filters pane has one other powerful feature - the ability to filter using a field ***that is not alrealdy being used in one of the visuals in your report***. Let me explain. When you create a report page, Power BI automatically adds all the fields you use in your visualizations to the Visual level filters area of the Filters pane.  But, if you want to set a visual, page, drillthrough, or report filter using a field that is not currently used in a visualization, just drag it to one of the Filters buckets.   
 
 ![](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -123,11 +131,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 ## Next Steps:
 [Create a report](service-report-create-new.md)
 
-[Edit a report](service-interact-with-a-report-in-editing-view.md)
-
-Read more about [reports in Power BI](service-reports.md)
-
-[Get started with Power BI](service-get-started.md)
+Read more about reports in [Power BI service](service-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](mobile-apps-view-phone-report.md).
 
 [Power BI - Basic Concepts](service-basic-concepts.md)﻿
 

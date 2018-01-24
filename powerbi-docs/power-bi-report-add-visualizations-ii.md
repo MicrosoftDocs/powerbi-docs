@@ -16,12 +16,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/23/2018
 ms.author: mihart
 
 ---
 # Part 2, Add visualizations to a Power BI report (Tutorial)
 In [Part 1](power-bi-report-add-visualizations-ii.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
+
+### Prerequisites
+- [Part 1](power-bi-report-add-visualizations-ii.md)
+- Power BI service - visualizations can be added to reports using Power BI service or Power BI Desktop. This tutorial uses Power BI service. 
+- Retail Analysis sample
 
 ## Create a new visualization
 In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.
@@ -61,7 +66,6 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 ## Next steps
 * For more information about the Fields pane, see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).   
 * To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).  
-* To learn about using and changing aggregations, see [Aggregates in reports](service-aggregates.md).  
 * More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  
-* More questions? [Try the Power BI Community](http://community.powerbi.com/).
+* More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
