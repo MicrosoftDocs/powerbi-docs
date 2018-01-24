@@ -31,7 +31,7 @@ The HR department has the same reporting model across different companies, even 
 
 ![](media/sample-human-resources/hr1.png)
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. To learn more, see [Sample datasets](sample-datasets.md).
 
 ## Prerequisites
 

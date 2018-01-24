@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -30,9 +30,12 @@ Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
+### Prerequisites
+- Power BI service or Power BI Desktop
+- Retail Analysis sample
 
 ## Customize visualization titles in reports
-To follow along, sign into app.powerbi and [open the Retail Analysis Sample](sample-datasets.md) report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+To follow along, sign into Power BI service (app.powerbi.com) and [open the Retail Analysis Sample](sample-datasets.md) report in [Editing View](service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
 > When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](service-dashboard-edit-tile.md).
@@ -117,7 +120,6 @@ With the same column chart selected, expand the Background options.
 | waterfall |yes |yes |yes |
 
 ## Next steps
-More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)  
 [Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  

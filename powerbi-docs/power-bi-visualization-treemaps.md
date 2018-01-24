@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/23/2018
 ms.author: mihart
 
 ---
@@ -38,20 +38,25 @@ Treemaps are a great choice:
 * to show attributes using size and color coding.
 * to spot patterns, outliers, most-important contributors, and exceptions.
 
+### Prerequisites
+ - Power BI service or Power BI Desktop
+ - Retail Analysis sample
+
 ## Create a basic treemap
 Want to watch someone else create a treemap first?  Skip to 2:10 in this video to watch Amanda create a treemap.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along,  [download the sample](sample-datasets.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
+Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service (not Desktkop) and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But if someone shares a report with you, you won't be able to add new visualizations.
 
-1. Start in [Editing View](service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
-   ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
-2. Convert the chart to a treemap.  
-   ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
-3. Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
-   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)
-4. Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
+1. Select the "Total stores" tile to open the Retail Analysis sample report.    
+2. Open [Editing View](service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
+   ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
+3. Convert the chart to a treemap.  
+   ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
+4. Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles reflects total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.   
+   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)   
+5. Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
    ![](media/power-bi-visualization-treemaps/treemap_addgroup_new.png)
    
    > [!NOTE]
@@ -70,17 +75,15 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
 
 1. On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
-2. In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  
-   ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)
+
+2. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.  
+   ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
+
 3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](service-reports-visual-interactions.md)
 
 ## Next steps
-[Reports in Power BI](service-reports.md)  
-[Add a visualization to a report](power-bi-report-add-visualizations-i.md)  
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 [ Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
-[Try it out -- it's free!](https://powerbi.com/)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  
 

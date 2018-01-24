@@ -1,5 +1,5 @@
 ---
-title: 'Pin an entire report page to a Power BI dashboard '
+title: 'How to pin an entire report page to a Power BI dashboard '
 description: Documentation on how to pin an entire live report page to a Power BI dashboard from a report.
 services: powerbi
 documentationcenter: ''
@@ -17,12 +17,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
 # Pin an entire report page, as a live tile, to a Power BI dashboard
-Another way to add a new [dashboard tile](service-dashboard-tiles.md) is by pinning an entire report page.  This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
+Another way to add a new [dashboard tile](service-dashboard-tiles.md) is by pinning an entire report page. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
+
+Pinning live tiles from reports to dashboards is only available in Power BI service (app.powerbi.com).
 
 > [!NOTE]
 > You can't pin tiles from reports that are shared with you.

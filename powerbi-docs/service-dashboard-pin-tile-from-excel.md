@@ -1,5 +1,5 @@
 ---
-title: Pin a tile to a Power BI dashboard from Excel
+title: How to pin a tile to a Power BI dashboard from Excel
 description: Pin a tile to a Power BI dashboard from Excel on OneDrive for Business. Pin ranges, charts, tables
 services: powerbi
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -37,13 +37,18 @@ When you choose **Connect**, your workbook will appear in Power BI just like it 
 You can’t edit your workbook in Power BI. But if you need to make some changes, you can select the pencil icon from the **Workbooks** tab of your workspace, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 1. Upload your workbook to your OneDrive for Business.
-2. From Power BI, [connect to that workbook](service-excel-workbook-files.md).
+2. From Power BI, [connect to that workbook](service-excel-workbook-files.md) by selecting **Get Data > Files > OneDrive - Business** and nagivating to the location where you saved the Excel file. Select the file and choose **Connect > Connect**.
+
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+
 3. In Power BI, the workbook is added to the **Workbooks** tab of your workspace.  The ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) icon indicates this is an Excel workbook and a yellow asterisk indicates it's new.
    
-    Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, select the pencil icon to open it in Excel Online. Changes to the workbook in Excel Online may take a few minutes to be updated in the tiles.     
-   
+    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Open the workbook in Power BI by selecting the workbook name.
+
+    Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. If you need to make changes that will be saved, select **Edit** from the upper-right corner to open it for editing in Excel Online or Excel. Changes made this way may take a few minutes to update the tiles on the dashboards.
+   
    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
@@ -59,7 +64,7 @@ One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within
    * Existing dashboard: select the name of the dashboard from the dropdown.
    * New dashboard: type the name of the new dashboard.
    
-   ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+    ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Select **Pin**. A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard. 
    
     ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
@@ -77,6 +82,8 @@ A tile created from a table or pivot table will show the entire table.  If you a
 ## View the workbook linked to the tile
 Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for Business, viewing the workbook requires you have Read permissions for the workbook. If you do not have permission, you will receive an error message.  
 
+ ![](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
+
 ## Considerations and troubleshooting
 Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
@@ -84,8 +91,6 @@ Unsupported features: Power BI uses Excel Services to retrieve the workbook tile
 [Share a dashboard that has links to an Excel workbook](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Get data from Excel workbooks](service-excel-workbook-files.md)
-
-[Dashboards in Power BI](service-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
