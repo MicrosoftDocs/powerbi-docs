@@ -66,8 +66,9 @@ To revert all the X-axis customization you've done so far, select **Revert To De
 1. Expand the Y-Axis options.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
-2. Turn the Y-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  One reason you might want to turn off the X-axis is to save space for more data.
 
+2. Turn the Y-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  One reason you might want to turn off the Y-axis is to save space for more data.
+   
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
 3. Move the Y-Axis **Position** to the right.
 4. Format the text color, size, and font. In this example we've set text **Color** to black, **Text Size** to 14, and **Font** to Arial Black.  
@@ -96,7 +97,9 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 5. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
-6. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. What we havw now is the stacked column chart we created above ***plus*** a line chart.  (Optionally, use what you leared above to format the axes font color and size.)
+
+6. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. What we have now is the stacked column chart we created above ***plus*** a line chart.  (Optionally, use what you learned above to format the axes font color and size.)
+   
 
    Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
 

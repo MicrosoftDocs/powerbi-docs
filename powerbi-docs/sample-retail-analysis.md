@@ -16,33 +16,45 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/21/2018
+ms.date: 01/17/2018
 ms.author: mihart
 
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
-## Overview of the Retail Analysis sample
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
 ![](media/sample-retail-analysis/retail1.png)
 
-### Prerequisites
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Retail Analysis Sample > Connect** to get your own copy of the sample.
+## Prerequisites
 
-## Download the sample
-1. Open Power BI service (app.powerbi.com) and log in.
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
 
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
 2. In the bottom left corner select **Get data**.
-
+   
     ![](media/sample-datasets/power-bi-get-data.png)
 3. On the Get Data page that appears, select the **Samples** icon.
-
+   
    ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select **Retail Analysis Sample** and choose **Connect**.  
+4. Select the **Retail Analysis Sample**, then choose **Connect**.  
+  
+   ![Retail Analysis Sample](media/sample-retail-analysis/retail16.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Retail Analysis Sample](media/sample-retail-analysis/retail17.png)
+  
+### Get the .pbix file for this sample
 
-   ![](media/sample-retail-analysis/power-bi-connect.png)
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk.
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+
+ * [Retail Analysis Sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+
+### Get the Excel workbook for this sample
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529778) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## Start on the dashboard and open the report
 1. On the dashboard, select the "Total Stores" tile:

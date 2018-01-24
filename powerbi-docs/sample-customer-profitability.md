@@ -25,7 +25,6 @@ ms.author: mihart
 ## Overview of the Customer Profitability sample
 The “Customer Profitability Sample” content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
 
-![](media/sample-customer-profitability/power-bi-dash.png)
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Sample datasets](sample-datasets.md).
 
@@ -35,6 +34,11 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## What is our dashboard telling us?
+
+Under **My Workspace**, find the dashboard for the Customer Profitability sample:
+
+![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
+
 ### Company-wide dashboard tiles
 1. Open the dashboard in Power BI service. The dashboard tiles give our CFO a view of the high-level company metrics important to her.  When she sees something interesting, she can select a tile to dig into the data.
 
@@ -166,6 +170,8 @@ Let's take a look at the *Distribution* industry.
     We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
+
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529781).
 
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
