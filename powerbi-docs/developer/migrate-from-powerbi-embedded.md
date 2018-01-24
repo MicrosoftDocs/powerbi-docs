@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/21/2017
+ms.date: 08/24/2018
 ms.author: asaxton
 
 ---
@@ -171,7 +171,7 @@ Within your application, you will map users that you manage within the applicati
 When you are ready to move to production, you will need to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
-* Purchase a capacity that fits your needs. You can use the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
+* Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you neeed, see the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
   
   > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](../service-admin-premium-purchase.md).
   > 
