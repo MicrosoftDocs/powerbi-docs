@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -33,9 +33,33 @@ The HR department has the same reporting model across different companies, even 
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-### Prerequisites
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
+## Prerequisites
 
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
+2. In the bottom left corner select **Get data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. On the Get Data page that appears, select the **Samples** icon.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Human Resources Sample**, then choose **Connect**.  
+   
+   ![Get Data](media/sample-human-resources/pbi_hr_sample_connect.png)
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Aterisk](media/sample-human-resources/human-resources-sample-asterisk.png)
+  
+### Get the .pbix file for this sample
+
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+
+ * [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
+
+### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## New hires
