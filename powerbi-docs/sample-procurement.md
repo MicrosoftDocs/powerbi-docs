@@ -16,11 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/20/2018
 ms.author: mihart
 
 ---
 # Procurement Analysis sample for Power BI: Take a tour
+
+## Overview of the Procurement Analysis sample
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
 * Who the top vendors are
@@ -31,16 +33,43 @@ This sample is part of a series that illustrates how you can use  Power BI with 
 
 ![](media/sample-procurement/procurement1.png)
 
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
+## Prerequisites
 
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample.
+ Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
+2. In the bottom left corner select **Get data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. On the Get Data page that appears, select the **Samples** icon.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Procurement Analysis Sample**, then choose **Connect**.  
+  
+   ![Get Data](media/sample-procurement/procurement1a.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+   
+   ![Asterisk](media/sample-procurement/procurement1b.png)
+  
+### Get the .pbix file for this sample
+
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+
+ * [Procurement Analysis Sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+
+### Get the Excel workbook for this sample
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
+
 
 ## Spending trends
 Let’s first look for trends in spending by category and location.  
 
 1. From your workspace, open the **Dashboards** tab and select the Procurement Analysis dashboard.
 2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
-   
+
     ![](media/sample-procurement/procurement2.png)
 
 Notice a few things:
@@ -54,18 +83,18 @@ Notice a few things:
 Let’s explore the spending areas in Mexico.
 
 1. In the pie chart, select the **Mexico** bubble in the map. Notice that in the “Total Invoice by Sub Category” column chart, most of it is in the **Indirect Goods & Services** sub category.
-   
+
    ![](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Drill down into the **Indirect Goods & Services** column:
-   
+
    * Select the drill-down arrow ![](media/sample-procurement/pbi_drilldown_icon.png) in the upper-right corner of the chart.
    * Select the **Indirect Goods & Services** column.
-     
+
       By far the biggest spend in this category overall is Sales & Marketing.
    * Select **Mexico** in the map again.
-     
+
       The biggest spend in this category in Mexico is Maintenance & Repair.
-     
+
       ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up .
 4. Select the arrow again to turn drill down off.  
@@ -76,11 +105,11 @@ We can use highlighting to evaluate different cities.
 
 1. Select the dashboard tile **Total Invoice, Discount % By Month**. The report opens to the “Discount Analysis” page.
 2. Select the different cities in the **Total Invoice by City** treemap, to see how they compare. Almost all of Miami’s invoices are from Tier 1 vendors.
-   
+
    ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## Vendor discounts
-Let’s also explore the discounts available from vendors, and the time periods when we get most discounts. 
+Let’s also explore the discounts available from vendors, and the time periods when we get most discounts.
 
 ![](media/sample-procurement/procurement4.png)
 
@@ -96,7 +125,7 @@ Note that when volume goes up, the discount shrinks, and when volume is low, the
 ![](media/sample-procurement/procurement5.png)
 
 ### Discount by city
-Another area to explore is discount by city. Select each city in the treemap and see how the other charts change. 
+Another area to explore is discount by city. Select each city in the treemap and see how the other charts change.
 
 * St. Louis, MO had a big spike in total invoice in February and a big dip in discount savings in April.
 * Mexico City, Mexico has the highest discount % (11.05%) and Atlanta, GA has the smallest (0.08%).
@@ -116,4 +145,3 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards and reports
 can provide insights into procurement data. Now it’s your turn &#151; connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
-

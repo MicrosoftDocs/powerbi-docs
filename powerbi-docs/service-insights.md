@@ -1,6 +1,6 @@
 ---
-title: Get Quick Insights in Power BI
-description: Documentation for running and working with Quick Insights with Power BI service.
+title: Automatically generate data insights with Power BI
+description: Learn how to get insights about your datasets and dashboard tiles.
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -17,30 +17,30 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/01/2017
+ms.date: 12/06/2017
 ms.author: mihart
 
 ---
-# Quick Insights with Power BI
-Have a new dataset and not quite sure where to start?  Need to build a dashboard fast?  Want to quickly look for insights you may have missed?
+# Automatically generate data insights with Power BI
+Have a new dataset and not quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
 
-Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Insights). You can even run Quick Insights on an Insight!
+Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on an entire dataset (quick insights) or on a specific dashboard tile (scoped insights). You can even run insights on an insight!
 
-> **NOTE**: Quick Insights does not work with DirectQuery - it only works with data uploaded to Power BI.
+> **NOTE**: Insights do not work with DirectQuery - they only works with data uploaded to Power BI.
 > 
 > 
 
-The Quick Insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+The insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
-## Run Quick Insights on a dataset
-Watch Amanda run Quick Insights on a dataset, open an Insight in Focus mode, pin one of these Quick Insights as a tile on her dashboard, and then get Quick Insights for a visual.
+## Run quick insights on a dataset
+Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin one of these insights as a tile on her dashboard, and then get insights for a dashboard tile.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
-Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
+Now it's your turn. Explore insights using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets** tab, select the ellipses (...) and choose **Get Insights**.
+1. From the **Datasets** tab, select the ellipses (...) and choose **Get insights**.
    
     ![](media/service-insights/power-bi-ellipses.png)
    
@@ -48,54 +48,48 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
 2. Power BI uses [various algorithms](service-insight-types.md) to search for trends in your dataset.
    
     ![](media/service-insights/pbi_autoinsightssearching.png)
-3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
+3. Within seconds, your insights are ready.  Select **View insights** to display visualizations.
    
     ![](media/service-insights/pbi_autoinsightsuccess.png)
    
-   > **NOTE**: Some datasets can't generate Quick Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](service-insights-optimize.md).
+   > **NOTE**: Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
    > 
    > 
-4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
+1. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
    
     ![](media/service-insights/power-bi-insights.png)
 
-## Interact with the Quick Insight cards
+## Interact with the insight cards
   ![](media/service-insights/pbi_hover.png)
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
-2. Hover over a card and select the Focus mode icon to display the card fullscreen.
+2. Hover over a card, select the ellipses (...) and choose **View insights**. This opens the insight fullscreen.
    
     ![](media/service-insights/power-bi-insight-focus.png)
 3. In Focus mode you can:
    
-   * [filter](service-interact-with-a-report-in-reading-view.md) the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
+   * Filter the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
      
         ![](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting the pin ![](media/service-insights/power-bi-pin-icon.png)  icon or **Pin visual**.
-   * Run Quick Insights on the card itself. This is referred to as **Scoped Quick Insights**. In the top-right corner, select the lightbulb icon ![](media/service-insights/power-bi-bulb-icon.png)  or **Get Insights**.
+   * Run insights on the card itself. This is often referred to as **scoped insights**. In the top-right corner, select the lightbulb icon ![](media/service-insights/power-bi-bulb-icon.png)  or **Get insights**.
      
        ![](media/service-insights/pbi-autoinsights-tile.png)
      
-     The Quick Insight displays on the left and new cards, based solely on the data in that single Quick Insight, display along the right.
+     The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
      
        ![](media/service-insights/power-bi-insights-on-insights-new.png)
-4. To return to the original Quick Insights canvas, in the top-left corner, select **Exit Focus mode**.
+4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
-## Run Quick Insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This is referred to as **Scoped Quick Insights**.
+## Run insights on a dashboard tile
+Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This too is often referred to as **scoped insights**.
 
 1. Open a dashboard.
-2. Select a tile and [open the tile in Focus mode](service-focus-mode.md).
-3. In the top right corner, select **Get Insights**.
+2. Hover over a tile. select the ellipses (...), and choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
    
-    ![](media/service-insights/pbi-autoinsights-tile.png)
-4. Power BI displays the insight cards along the right side of the tile.
-   
-    ![](media/service-insights/pbi-insights-tile.png)
-5. Does one insight pique your interest? Select that insight card to dig further. The selected Quick Insight appears on the left and new insight cards, based solely on the data in that single Quick Insight, display along the right.
-6. Continue digging into your data, and when you find an interesting Quick Insight, pin its visual to your dashboard by selecting **Pin visual** from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular Quick Insight was helpful or not.
-   
-    ![](media/service-insights/useful.png)
+    ![](media/service-insights/pbi-insights-tile.png)    
+4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
+6. Continue digging into your data, and when you find an interesting insight, pin it to your dashboard by selecting **Pin visual** from the top-right corner.
 
 ## Next steps
 If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)

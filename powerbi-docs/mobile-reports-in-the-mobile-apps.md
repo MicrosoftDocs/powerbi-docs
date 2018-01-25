@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/23/2018
 ms.author: maggies
 
 ---
@@ -47,7 +47,7 @@ Power BI reports are stored in different places in the mobile app, depending on 
   ![Phone report in landscape mode](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## View reports optimized for phones
-Power BI report authors can create a report layout specifically optimized for phones. In a list of reports, an optimized report has a special icon ![Phone report icon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Power BI report authors can create a report layout specifically optimized for phones. Report pages optimized for phones have added functionality: for example, you can drill down and sort in visuals in focus mode, and you can access the [filters the report author added to the report page](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). In a list of reports, an optimized report has a special icon ![Phone report icon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Open phone report](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -55,7 +55,7 @@ When you view that report on a phone, it opens in portrait view.
 
 ![Report in portrait view](media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
 
-A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
+ A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
 
 Read more about [reports optimized for phone view](mobile-apps-view-phone-report.md).
 

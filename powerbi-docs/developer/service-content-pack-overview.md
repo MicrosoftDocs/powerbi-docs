@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
+ms.date: 01/04/2018
+ms.author: maghan
 
 ---
 # Overview of the Power BI service content pack program
@@ -46,6 +46,7 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 * You have a SaaS application used by business users.
 * Your SaaS application has user data that can be visualized in Power BI.
 * Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
+* Your SaaS application is approved for publishing a content pack. Submit your request to pbiservicesapps@microsoft.com. We will review each submission on relevance and expected usage. 
 * Signed partner agreement. You will do that in the [submission step](template-content-pack-testing.md#submission).
 
 Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.

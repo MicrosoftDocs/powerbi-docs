@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 01/24/2018
 ms.author: davidi
 
 ---
 # Manage your data source - SQL Server
-Once you have installed the On-premises Data Gateway, you can add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
+Once you have installed the on-premises data gateway, you can add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -29,7 +29,7 @@ You can download the gateway from the Power BI service. Select **Downloads** > *
 ![](media/service-gateway-enterprise-manage-sql/powerbi-download-data-gateway.png)
 
 ## Add a gateway
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [!NOTE]
 > **Manage gateways** will not show up until you are the admin of at least one gateway. This occurs when you are added as an admin to a gateway, or you install and configur a gateway yourself.
@@ -104,7 +104,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [!NOTE]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 > 
 > 
 
@@ -123,9 +123,9 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Next steps
-* [On-premises Data Gateway](service-gateway-onprem.md)  
-* [On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-* [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)
+* [On-premises data gateway](service-gateway-onprem.md)  
+* [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+* [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)
 * [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

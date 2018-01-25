@@ -1,5 +1,5 @@
 ## How the gateway works
-![on-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
+![On-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
 
 Let’s first look at what happens when a user interacts with an element connected to an on-premises data source. 
 

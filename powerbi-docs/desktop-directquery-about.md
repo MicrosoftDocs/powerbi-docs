@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/24/2018
 ms.author: davidi
 
 ---
@@ -60,7 +60,7 @@ When using **Get Data** in **Power BI Desktop** to connect to a data source like
 * Upon load, all of the data defined by those queries will be imported into the Power BI cache.
 * Upon building a visual within **Power BI Desktop**, the imported data will be queried. The Power BI store ensures the query will be very fast, hence all changes to the visual will be reflected immediately.
 * Any changes to the underlying data will not be reflected in any visuals. It is necessary to *Refresh*, whereupon the data will be re-imported.
-* Upon publishing the report (the .pbix file) to the **Power BI service**, a dataset is created and uploaded to the Power BI service.  The imported data is included with that dataset. It is then possible to set up scheduled refresh of that data, for example, to re-import the data every day. Depending upon the location of the original data source, it might be necessary to configure an On-premises data gateway.
+* Upon publishing the report (the .pbix file) to the **Power BI service**, a dataset is created and uploaded to the Power BI service.  The imported data is included with that dataset. It is then possible to set up scheduled refresh of that data, for example, to re-import the data every day. Depending upon the location of the original data source, it might be necessary to configure an on-premises data gateway.
 * When opening an existing report in the **Power BI service**, or authoring a new report, the imported data is queried again, ensuring interactivity.
 * Visuals, or entire report pages, can be pinned as dashboard tiles. The tiles will be automatically refreshed whenever the underlying dataset is refreshed.  
 
@@ -71,7 +71,7 @@ When using **Get Data** in **Power BI Desktop** to connect to a data source, and
 * However, upon load, no data will actually be imported into the Power BI store. Instead, upon building a visual within **Power BI Desktop**, queries will be sent to the underlying data source to retrieve the necessary data. The time then taken to refresh the visual will depend on the performance of the underlying data source.
 * Any changes to the underlying data will not be immediately reflected in any existing visuals. It is still necessary to Refresh, whereupon the necessary queries will be resent for each visual, and the visual updated as necessary.
 * Upon publishing the report to the **Power BI service**, it will again result in a Dataset in the Power BI service, just as for import. However, *no data* is included with that dataset.
-* When opening an existing report in the **Power BI service**, or authoring a new one, the underlying data source is again queried to retrieve the necessary data. Depending upon the location of the original data source, it might be necessary to configure an On-premises data gateway, just as is needed for Import mode if the data is refreshed.
+* When opening an existing report in the **Power BI service**, or authoring a new one, the underlying data source is again queried to retrieve the necessary data. Depending upon the location of the original data source, it might be necessary to configure an on-premises data gateway, just as is needed for Import mode if the data is refreshed.
 * Visuals, or entire report pages, can be pinned as Dashboard tiles. To ensure that opening a dashboard will be fast, the tiles are automatically refreshed on a schedule (for example, every hour). The frequency of this refresh can be controlled, to reflect how frequently the data is changing, and how important it is to see the very latest data. Thus, when opening a dashboard, the tiles will reflect the data as of the time of the last refresh, and not necessarily the very latest changes made to the underlying source. An open dashboard can always be Refreshed to ensure it is up-to-date.    
 
 ### Live connections
@@ -84,7 +84,7 @@ The situation described in the previous paragraph applies to connecting to the f
 
 The behavior of reports over SSAS, upon publishing to the **Power BI service**, is similar to DirectQuery reports in the following ways:
 
-* When opening an existing report in the **Power BI service** or authoring a new report, the underlying SSAS source is queried  (possibly requiring an On-premises data gateway)
+* When opening an existing report in the **Power BI service** or authoring a new report, the underlying SSAS source is queried  (possibly requiring an on-premises data gateway)
 * Dashboard tiles are automatically refreshed on a schedule (such as every hour, or whatever frequency is defined)
 
 However, there are also important differences, including that for live connections the identity of the user opening the report will always be passed to the underlying SSAS source.

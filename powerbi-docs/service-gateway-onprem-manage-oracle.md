@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
 
 ---
 # Manage your data source - Oracle
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
+Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -38,7 +38,7 @@ For **32-bit** versions of Power BI Desktop, use the following link to download 
 
 * [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-For **64-bit** versions of Power BI Desktop, or for the On-Premises Data Gateway, use the following link to download and install the **64-bit** Oracle client:
+For **64-bit** versions of Power BI Desktop, or for the on-premises data gateway, use the following link to download and install the **64-bit** Oracle client:
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
@@ -69,7 +69,7 @@ CONTOSO =
 ```
 
 ## Add a gateway
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [!NOTE]
 > **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
@@ -139,7 +139,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [!WARNING]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 > 
 > 
 
@@ -173,12 +173,12 @@ These errors could occur if either the Oracle client is not installed, or if it 
 > 
 > 
 
-For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md).
+For additional troubleshooting information relating to the gateway, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
 
 ## Next steps
-[On-premises Data Gateway](service-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[On-premises data gateway](service-gateway-onprem.md)  
+[On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

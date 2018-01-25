@@ -29,7 +29,7 @@ To make a call to a REST resource, you use a url that locates the resource, and 
 
 To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](walkthrough-push-data-get-token.md) to a request header:
 
-When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -236,7 +236,6 @@ Below is the [complete code listing](#code).
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

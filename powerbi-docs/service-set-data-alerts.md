@@ -17,12 +17,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/06/2017
+ms.date: 12/21/2017
 ms.author: mihart
 
 ---
 # Data alerts in Power BI service
-Set alerts to notify you when data in your dashboards changes beyond limits you set. Alerts can only be set up on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](service-flow-integration.md).
+Set alerts to notify you when data in your dashboards changes beyond limits you set. 
+
+Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
+
+Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](service-flow-integration.md).
 
 ![](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -43,13 +47,12 @@ This example uses a card tile from the Retail Analysis sample dashboard.
    ![](media/service-set-data-alerts/powerbi-card.png)
 2. Select the bell icon ![](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total stores**.
    
-   ![](media/service-set-data-alerts/powerbi-set-alert.png)
-3. To start, ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
+1. To start, select **+ Add alert rule**, ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
    
    ![](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our Notification center. And we'll have Power BI send us an email as well.
    
-   ![](media/service-set-data-alerts/powerbi-set-alert-details.png)
+   ![](media/service-set-data-alerts/power-bi-set-alert-details.png)
 5. Select **Save**.
 
 ## Receiving alerts
@@ -73,7 +76,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    > 
 
 ## Managing alerts
-There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the [Power BI mobile app on the iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.

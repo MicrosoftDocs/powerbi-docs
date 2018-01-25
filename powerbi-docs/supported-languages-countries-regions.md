@@ -16,11 +16,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 12/18/2017
 ms.author: maggies
 
 ---
 # Supported languages and countries/regions for Power BI
+
+This article provides lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
+
 ## Countries and regions where Power BI is available
 For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
 
@@ -72,7 +75,7 @@ The Power BI service (in the browser) is available in the following 42 languages
 * Ukrainian - українська
 * Vietnamese - Tiếng Việt
 
-## What's translated
+### What's translated
 Menus, buttons, messages, and other elements of the experience are translated into your language, making it easier to navigate and interact with Power BI.
 
 At this time, a few features are available in English only:
@@ -82,22 +85,22 @@ At this time, a few features are available in English only:
 
 Stay tuned as we work to bring additional features to other languages. 
 
-## Choose your language in the Power BI service
+### Choose your language in the Power BI service
 1. In the Power BI service, select the **Settings** icon ![Settings icon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Settings**.
 2. On the **General** tab > **Language**.
 3. Select your language > **Apply**.
 
-## Choose your language in the browser
+### Choose your language in the browser
 Power BI detects your language based on the language preferences on your computer. The way you access and change these preferences may vary depending on your operating system and browser. Here's how to access these preferences from Internet Explorer and Google Chrome.
 
-### Internet Explorer (version 11)
+#### Internet Explorer (version 11)
 1. Click the **Tools** button in the top-right corner of your browser window:
    
    ![Internet Explorer Tools button](media/supported-languages-countries-regions/languages1.png)
 2. Click **Internet Options**.
 3. In the Internet Options dialog, on the General tab under Appearance, click the **Languages** button.
 
-### Google Chrome (version 42)
+#### Google Chrome (version 42)
 1. Click the menu button in the top-right corner of your browser window:
    
    ![Chrome menu button](media/supported-languages-countries-regions/languages2.png)
@@ -141,7 +144,7 @@ The language you choose for Power BI Desktop affects the display format of numbe
 
 To change the language in Power BI Desktop, go back to the download page and download it in a different language.
 
-### Choose the locale to be used when importing data into Power BI Desktop
+### Choose the locale for importing data into Power BI Desktop
 Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. This changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3rd April or March 4th. 
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
@@ -150,6 +153,22 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
    
    ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
 4. Select **OK**.
+
+### Choose the language for the model in Power BI Desktop
+
+Besides setting the language for the Power BI Desktop application, you can also set the model language. The model language affects chiefly two things:
+
+- How we compare and sort strings. For example, because Turkish has two of the letter i, depending on the collation of your database, the two can end up in different orders when sorting. 
+- The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
+
+Here's how to set the model language.
+
+1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
+2. Under **Global**, select **Regional Settings**.
+3. In the **Model language** box, select a different language. 
+
+    ![Set model language in Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+
 
 ## Languages for the help documentation
 Help is localized in these 10 languages: 

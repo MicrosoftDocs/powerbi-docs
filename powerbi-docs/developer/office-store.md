@@ -1,6 +1,6 @@
 ---
-title: Publish custom visuals to the Office store
-description: Learn how you can publish your custom visual to the Office store for others to discover and use.
+title: Publish custom visuals to AppSource
+description: Learn how you can publish your custom visual to AppSource for others to discover and use.
 services: powerbi
 documentationcenter: ''
 author: guyinacube
@@ -16,18 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/20/2017
+ms.date: 12/5/2017
 ms.author: asaxton
 
 ---
-# Publish custom visuals to the Office store
-Learn how you can publish your custom visual to the Office store for others to discover and use.
+# Publish custom visuals to AppSource
+Learn how you can publish your custom visual to AppSource for others to discover and use. office
 
-Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
+Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/office-store/powerbi-custom-visual-store.png)
+![](media/office-store/AppSource_01.jpg)
 
-What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+What is AppSource? Simply put, it is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, Cortana Intelligence, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Preparing to submit your custom visual
 One you're done coding and testing your custom visual and have packaged it into a pbiviz file, you should also have the following ready for your submission.
@@ -50,18 +50,18 @@ Submission starts with sending an email to the Power BI custom visuals submissio
 Attach the .pbiviz file and the sample report .pbix file in your email. The Power BI team will reply back with instructions and a app package XML file to upload. This XML app package is required in order to submit your visual through the Office developer center.
 
 > [!NOTE]
-> To improve quality and assure that existing reports are not breaking, updates to existing visuals will take an additional 2 weeks to reach production environment after approval in the store.
+> To improve quality and assure that existing reports are not breaking, updates to existing visuals will take an additional two weeks to reach production environment after approval in the store.
 > 
 > 
 
-## Submitting to the Office store
-Once you get the app package XML from the Power BI team, navigate to the [Office developer center](https://sellerdashboard.microsoft.com/Application/Summary) to submit your visual to the Office store.
+## Submitting to AppSource
+Once you get the app package XML from the Power BI team, navigate to the [developer center](https://sellerdashboard.microsoft.com/Application/Summary) to submit your visual to AppSource.
 
 > [!NOTE]
 > You must have a valid Office developer account to log in to the [Office developer center](https://dev.office.com/). An Office developer account must be a Microsoft Account (Live ID, e.g. hotmail.com or outlook.com).
 > 
 > [!IMPORTANT]
-> You must send an email with the .pbiviz file and the .pbix file to the Power BI team before submitting to the Office store. This is so the Power BI team will upload the files to the public share server. Otherwise, the Office store will not be able to retrieve the files. You must send the files with each new visual submission, update to existing visual and fixes to rejected submissions by the Office store.
+> You must send an email with the .pbiviz file and the .pbix file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with each new visual submission, update to existing visual, and fixes to rejected submissions.
 > 
 > 
 

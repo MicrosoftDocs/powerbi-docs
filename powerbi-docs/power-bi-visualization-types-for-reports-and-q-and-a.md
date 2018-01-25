@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/19/2018
 ms.author: mihart
 
 ---
@@ -24,7 +24,7 @@ ms.author: mihart
 ## Power BI visualizations
 We'll be adding new visualizations, stay tuned!
 
-And check out the [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to the community site](developer/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [custom visuals](power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](developer/office-store.md).  
 
 ## List of visualizations available in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
@@ -51,7 +51,7 @@ For more information, see [Tutorial: Basic Area chart](power-bi-visualization-ba
 ### Cards: Single number
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
-For more information, see [Create a big number tile for a dashboard](power-bi-visualization-big-number.md).
+For more information, see [Create a Card (big number tile)](power-bi-visualization-card.md).
 
 ### Combo charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)

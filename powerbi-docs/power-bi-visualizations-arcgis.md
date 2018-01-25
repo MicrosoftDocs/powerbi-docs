@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/23/2017
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
@@ -28,7 +28,6 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
 > [!TIP]
 > GIS stands for Geographic Information Science.
-> 
 > 
 
 The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](power-bi-visualization-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
@@ -59,7 +58,7 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 <br/>
 
 ## Interacting with an ArcGIS map
-The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](service-interact-with-a-report-in-reading-view.md)), here are the actions available to you.
+The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](service-reading-view-and-editing-view.md), here are the actions available to you.
 
 * As with other visualization types, you can [pin to dashboards](service-dashboard-pin-tile-from-report.md), [view](service-reports-show-data.md) and/or [export the underlying data](power-bi-visualization-export-data.md), and see the map in [Focus mode](service-focus-mode.md) and [Full screen](service-fullscreen-mode.md).    
 * Expand the **Filters** pane to explore the map using filters. When you close the report, the filters you applied are not saved.    
@@ -96,7 +95,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 <td>Yes</td>
 </tr>
 <tr>
-<td>Power BI service (PowerBI.com)</td>
+<td>Power BI service (app.powerbi.com)</td>
 <td>Yes</td>
 </tr>
 <tr>

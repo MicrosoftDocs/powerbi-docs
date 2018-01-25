@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
 
 ---
@@ -32,12 +32,12 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 | Workbook in a workspace |Yes |No |
 | Dataset in a workspace |Yes |No |
 | App workspace |Yes, if you are the owner or have Admin permissions |No |
-| Published Apps |Not from the App screen, but the App name can be changed from the App workspace and re-published with a new name if you have Admin permissions |No |
-| App content (dashboard, report, workbook, dataset) |Not from the App screen, but the App's content can be renamed from the App workspace and re-published with a new name if you have Admin permissions |No |
+| Published apps |Not from the App screen, but the app name can be changed from the app workspace and re-published with a new name if you have Admin permissions |No |
+| App content (dashboard, report, workbook, dataset) |Not from the App screen, but the app's content can be renamed from the app workspace and re-published with a new name if you have Admin permissions |No |
 | Content in **Shared with me** |No |No |
 
 ## Rename a dashboard, report, or workbook
-1. Start in a workspace and select the **Dashboards**, **Reports**, or **Workbooks** tab. Hover over the item to rename, and select the gear icon ![](media/service-rename/powerbi-cog-icon.png).
+1. Start in a workspace and select the **Dashboards**, **Reports**, or **Workbooks** tab. Hover over the item to rename, and select the gear icon ![](media/service-rename/powerbi-cog-icon.png). If there is no gear icon, you do not have permissions to rename.
    
    ![](media/service-rename/power-bi-workspace-dashboards.png)
 2. On the Settings page, type the new name and select **Save**.
@@ -61,10 +61,10 @@ This article teaches you how to rename a dashboard, report, report page, workboo
      ![](media/service-rename/power-bi-rename.png)
 
 ## Rename an App workspace
-Anyone with Admin permissions can rename an App workspace.
+Anyone with Admin permissions can rename an app workspace.
 
 1. Start in the workspace you'd like to rename.
-2. In the top-right corner, select the ellipses (...) and choose **Edit workspace**.  
+2. In the top-right corner, select the ellipses (...) and choose **Edit workspace**. If you don't see this option, then you don't have permissions to rename this workspace. 
    
     ![](media/service-rename/power-bi-edit-workspace.png)
 3. Type a new workspace name and select **Save**.

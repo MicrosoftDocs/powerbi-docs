@@ -1,5 +1,5 @@
 ---
-title: Hyperlinks in tables
+title: How to add a hyperlink to a table
 description: Hyperlinks in tables
 services: powerbi
 documentationcenter: ''
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
 # Hyperlinks in tables
-This topic teaches you how to use Power BI Desktop to create hyperlinks. Once created, use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes. 
+This topic teaches you how to use Power BI Desktop to create hyperlinks. Then, once created, use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes. 
 
 ![](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
@@ -82,6 +82,11 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 7. Create a table visualization that includes the URL field.
    
    ![](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
+
+## Considerations and troubleshooting
+Q: Can I use a custom URL as a hyperlink in a table or matrix?    
+A: No. You can use a link icon. If you need custom text for your hyperlinks and your list of URLs is short, consider using a text box instead.
+
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)

@@ -1,6 +1,6 @@
 ---
-title: View dashboards in the Power BI mobile apps
-description: Create or connect to dashboards in the Power BI service. Then view them in the Power BI mobile apps.
+title: View dashboards and reports in the Power BI mobile apps
+description: Create or connect to dashboards and reports in the Power BI service. Then view them in the Power BI mobile apps.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -16,11 +16,11 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/18/2017
+ms.date: 01/16/2018
 ms.author: maggies
 
 ---
-# View your dashboards in the Power BI mobile apps
+# View dashboards and reports in the Power BI mobile apps
 Applies to:
 
 | ![iPhone](media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android phone](media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android tablet](media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10 devices](media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
@@ -32,10 +32,10 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 ## Create dashboards in the Power BI service (https://powerbi.com)
 **You don't create dashboards in the mobile apps.** 
 
-To see dashboards on your mobile device, you need to create or connect to them in a Web browser. 
+To see dashboards and reports on your mobile device, you need to create or connect to them in a Web browser. 
 
 1. Go to the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) and [sign up for an account](service-self-service-signup-for-power-bi.md).
-2. [Create your own Power BI dashboards](service-dashboard-create.md), or connect to existing [content packs for a variety of services](service-connect-to-services.md).
+2. [Create your own Power BI dashboards and report](service-get-started.md), or connect to existing [Power BI apps](service-connect-to-services.md) for a variety of services, such as [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) and [Adobe Analyics](service-connect-to-adobe-analytics.md).
 
 Here's a Power BI dashboard in the Power BI service:
 

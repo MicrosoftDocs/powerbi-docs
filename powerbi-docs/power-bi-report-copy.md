@@ -17,14 +17,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
 # Create a new report from an existing report
 Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
 
-1. [Open a report](service-report-open-in-reading-view.md).
+1. [Open a report](service-report-open.md).
 2. From the **File** menu, select **Save As**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)
@@ -44,4 +44,3 @@ Maybe you have a report that already connects to your dataset and has some visua
 [Create new visualizations](power-bi-report-add-visualizations-ii.md)
 
 [Delete visualizations](service-delete.md) you don't need
-

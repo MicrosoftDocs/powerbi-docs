@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -32,7 +32,9 @@ Watch Sirui create a Flow that sends a detailed email to colleagues when a Power
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
 ## Create a flow that is triggered by a Power BI data alert
-This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md) and [sign up for Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (it's free!).
+
+### Prerequisites
+This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md), create a free Slack account, and [sign up for Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (it's free!).
 
 ## Create a flow that uses Power BI - from a template
 In this task we'll use a template to create a simple flow that is triggered by a Power BI data alert (notification).
@@ -44,39 +46,40 @@ In this task we'll use a template to create a simple flow that is triggered by a
 3. Select **Create from template**.
    
     ![](media/service-flow-integration/power-bi-template.png)
-4. Use the Search box to find Power BI templates and select **Post a message to a Slack channel when a Power BI data alert is triggered**.
+4. Use the Search box to find Power BI templates and select **Send an e-mail to any audience when a Power BI data alert is triggered > Continue**.
    
-    ![](media/service-flow-integration/power-bi-template2.png)
-5. Select **Use this template**.
-   
-   ![](media/service-flow-integration/power-bi-use-template.png)
-6. If prompted, connect to Slack and Power BI by selecting **Sign in** and then following the prompts. A green checkmark lets you know that you're signed in.  After you confirm your conections, select **Continue**.
-   
-   ![](media/service-flow-integration/power-bi-flow-signin.png)
+    ![](media/service-flow-integration/power-bi-flow-alert.png)
+
 
 ### Build the flow
-This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (post a message to Slack). As you select a field, Flow displays dynamic content that you can include.  In this example we'll included the tile value and the tile URL in the message body.
+This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (send an email). As you select a field, Flow displays dynamic content that you can include.  In this example we'll included the tile value and the tile URL in the message body.
 
-![](media/service-flow-integration/power-bi-flow-template.png)
+![](media/service-flow-integration/power-bi-template1.png)
 
 1. From the trigger dropdown, select a Power BI data alert. Select **New medal for Ireland**. To learn how to create an alert, see [Data alerts in Power BI](service-set-data-alerts.md).
    
    ![](media/service-flow-integration/power-bi-trigger-flow.png)
-2. To post to Slack, enter a channel name and message text (you can also select the default message that Flow creates). Notice the dynamic content that we've included in the message text field.
+2. Enter one or more valid email addresses and then select **Edit** (shown below) or **Add dynamic content**. 
    
-   > [!NOTE]
-   > Include "@" at the beginning of your channel name.  For example, if the Slack channel is named "channelA", in Flow enter "@channelA".
-   > 
-   > 
-   
-   ![](media/service-flow-integration/power-bi-flow-slacker.png)
-3. When you're done, select **Create flow** or **Save flow**.  The flow is created and evaluated.  Flow lets you know if it finds errors.
-4. If errors are found, select **Edit flow** to fix them, otherwise, select **Done** to run the new flow.
+   ![](media/service-flow-integration/power-bi-flow-email.png)
+
+3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the grey highlighted area. 
+
+   ![](media/service-flow-integration/power-bi-flow-email-default.png)
+
+1.  For example, if you created an alert title in Power BI of **We won another medal**, you can select **Alert title** to add that text to your email Subject field.
+
+    ![](media/service-flow-integration/power-bi-flow-message.png)
+
+    And, you can accept the default Email body or create your own. The example above contains a few modifications to the message.
+
+1. When you're done, select **Create flow** or **Save flow**.  The flow is created and evaluated.  Flow lets you know if it finds errors.
+2. If errors are found, select **Edit flow** to fix them, otherwise, select **Done** to run the new flow.
    
    ![](media/service-flow-integration/power-bi-flow-running.png)
-5. Open your Slack account to see the message.  
+5. When the data alert is triggered, an email will be sent to the addresses you indicated.  
    
-   ![](media/service-flow-integration/power-bi-slack-message.png)
+   ![](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## Create a Flow that uses Power BI - from scratch (blank)
 In this task we'll create a simple flow from scratch that is triggered by a Power BI data alert (notification).
@@ -85,12 +88,12 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 2. Select **My flows** > **Create from blank**.
    
    ![](media/service-flow-integration/power-bi-my-flows.png)
-3. Use the Search box to find a Power BI trigger and select **Trigger a flow with a Power BI data driven aler**.
+3. Use the Search box to find a Power BI trigger and select **Power BI - when a data driven alert is triggered**.
 
 ### Build your flow
 1. From the dropdown, select the name of your alert.  To learn how to create an alert, see [Data alerts in Power BI](service-set-data-alerts.md).
    
-    ![](media/service-flow-integration/power-bi-totalstores.png)
+    ![](media/service-flow-integration/power-bi-totalstores2.png)
 2. Select **New step** > **Add an action**.
    
    ![](media/service-flow-integration/power-bi-new-step.png)

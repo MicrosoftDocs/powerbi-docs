@@ -51,7 +51,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
 
 **What now?**
 
-* Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
@@ -60,7 +60,8 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
 
 ## System requirements
 To import your Project “Madeira” data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:  
-
+ 
+    ´´´ 
     - ItemSalesAndProfit  
     - ItemSalesByCustomer  
     - powerbifinance  
@@ -68,6 +69,7 @@ To import your Project “Madeira” data into Power BI, you need to have permis
     - SalesOpportunities  
     - SalesOrdersBySalesPerson  
     - TopCustomerOverview  
+    ´´´ 
 
 <a name="FindingParams"></a>
 

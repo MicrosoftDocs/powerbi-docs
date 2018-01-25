@@ -16,14 +16,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 12/05/2017
 ms.author: maggies
 
 ---
 # Frequently asked questions about Power BI
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-* Or click the **Contact Me** icon ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 
 ## What is Microsoft Power BI?
 [Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life.
@@ -72,7 +71,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
 ### On-premises data gateway
-With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [on-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
 
 ### Power BI Report Server
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
@@ -123,7 +122,7 @@ The following resources are available to help get your started:
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI](service-get-started.md) article
 * [Join our community](https://community.powerbi.com/) and ask questions
-* See [10 tips for getting help](service-tips-for-finding-help.md) for more suggestions.
+* See [10 tips for getting help](service-tips-for-finding-help.md) for more suggestions
 
 ## What browsers does Power BI support?
 Here's a complete list of [supported browsers for Power BI](service-browser-support.md).
@@ -135,6 +134,11 @@ Here's a complete list of [regions and languages supported by Power BI](supporte
 You can purchase Power BI Pro licenses directly or chat with a representative at [www.powerbi.com](http://www.powerbi.com).
 
 You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help you with your Power BI implementation.
+
+## What happens if my Power BI Pro license expires?
+There is a 30-day grace period after a Power BI Pro license expires.
+
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## Does Power BI meet national, regional, and industry-specific compliance requirements?
 Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
@@ -153,5 +157,4 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 ## Next steps
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
-* Or click the **Contact Me** icon ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
 

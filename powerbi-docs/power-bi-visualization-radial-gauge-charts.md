@@ -1,5 +1,5 @@
 ---
-title: Radial gauge charts in Power BI (Tutorial)
+title: Tutorial - Radial gauge charts in Power BI  
 description: 'Tutorial: Radial Gauge charts in Power BI'
 services: powerbi
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
@@ -36,17 +36,25 @@ Radial gauges are a great choice to:
 * show the health of a single measure.
 * display information that can be quickly scanned and understood.
 
+### Prerequisites
+ - Power BI service or Power BI Desktop
+ - Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
+
 ## Create a basic radial gauge
-These instructions use the Financial Sample. To follow along, [download the sample](http://go.microsoft.com/fwlink/?LinkID=521962) to your computer, sign in to Power BI and select **Get Data \> Files \>  Local File > Open**. 
+These instructions use Power BI service. To follow along, sign in to Power BI and open the Excel Financial Sample file.  
 
 Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### Step 1: Open the Financial Sample Excel file.
-1. [Download the sample Financial Excel file](sample-financial-download.md).
-2. Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
-3. Select **Financial Sample** to open it in Explore mode.
+### Step 1: Open the Financial Sample Excel file
+1. [Download the sample Financial Excel file](sample-financial-download.md) if you haven't already. Remember where you saved it.
+
+2. Open the file in ***Power BI service*** by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
+
+3. From the **Dataset** content list, select **Financial Sample** to open it in Explore mode.
+
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
 ### Step 2: Create a gauge to track Gross Sales
 1. In the **Fields** pane, select **Gross Sales**.

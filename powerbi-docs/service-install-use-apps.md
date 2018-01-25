@@ -15,7 +15,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 01/24/2018
 ms.author: maggies
 
 ---
@@ -28,10 +28,10 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
-Planning to author an app? See [Create and publish apps n Power BI](service-create-distribute-apps.md) for more information.
+Planning to author an app? See [Create and publish apps in Power BI](service-create-distribute-apps.md) for more information.
 
 ## Get a new app
-You can get apps in a few different ways. The app author can install the app automatically in your Power BI account or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
+You can get apps in a few different ways. The app author can install the app automatically in your Power BI account, or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 
 ### Install an app from a direct link
 The easiest way to install a new app yourself is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
@@ -60,7 +60,7 @@ You can also find and install any apps that you have access to from Microsoft Ap
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](service-interact-with-a-report-in-reading-view.md). 
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
 
 You can't save changes you make, but you can always [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report.
 

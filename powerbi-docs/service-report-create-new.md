@@ -1,5 +1,5 @@
 ---
-title: 'Create a new report from a dataset '
+title: 'Tutorial - Create a new report from a dataset '
 description: Create a new Power BI report from a dataset.
 services: powerbi
 documentationcenter: ''
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/21/2018
 ms.author: mihart
 
 ---
@@ -25,7 +25,9 @@ You've read [Reports in Power BI](service-reports.md) and now you want to create
 
 > **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
 > 
-> 
+### Prerequisites
+- Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view))   
+- Retail Analysis sample dataset
 
 ## Import the dataset
 This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
@@ -33,7 +35,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a new one.
    
    ![](media/service-report-create-new/power-bi-workspaces2.png)
-2. From the bottom of the left navbar, select **Get data**.
+2. From the bottom of the left navpane, select **Get data**.
    
    ![](media/service-report-create-new/power-bi-get-data3.png)
 3. Select **Files** and navigate to the location where you saved the Retail Analysis sample.
@@ -80,7 +82,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 4. Select **Time** > **Period** to add it to the **Axis** well.
    
     ![](media/service-report-create-new/power-bi-report-step5.png)
-5. To sort the visualization, select the ellipses and choose **Sort by Period**.
+5. To sort the visualization by time period, select the ellipses and choose **Sort by Period**.
 6. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![](media/service-report-create-new/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
    
     ![](media/service-report-create-new/power-bi-report-step6.png)    
@@ -90,12 +92,11 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 8. Use the slicer to look for patterns and insights by District.
    
    ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
-9. Optionally, continue adding visualizations.
+
+Continue exploring your data and adding visualizations. When you find especially interesting insights, [pin them to a dashboard](service-dashboard-pin-tile-from-report.md).
 
 ## Next steps
-* [Create a copy of a report](power-bi-report-copy.md)
-* [Save the report](service-report-save.md)    
 * [Add a new page to the report](power-bi-report-add-page.md)  
-* Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)    
+* Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

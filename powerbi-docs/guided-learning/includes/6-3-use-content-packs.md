@@ -32,5 +32,5 @@ But I can edit the dashboard, the report, and even the dataset, if I want.
 
 So content packs are a simple way to reuse content created by other people in your organization.
 
-On to the next lesson: [Create a content pack in Power BI](6-4-update-content-pack.md).
+On to the next lesson!
 

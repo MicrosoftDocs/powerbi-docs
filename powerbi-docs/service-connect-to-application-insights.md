@@ -50,7 +50,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 
 **What now?**
 
-* Try [asking a question in the Q&A box](service-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report.
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
@@ -58,6 +58,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 ## What's included
 The Application Insights content pack includes the following tables and metrics:  
 
+     ´´´
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   
@@ -73,7 +74,8 @@ The Application Insights content pack includes the following tables and metrics:
     - SessionsDailyLast30Days   
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
-    - PageViewsByCountryDailyLast30Days   
+    - PageViewsByCountryDailyLast30Days  
+   ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 

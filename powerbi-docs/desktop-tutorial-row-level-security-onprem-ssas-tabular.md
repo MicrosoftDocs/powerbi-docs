@@ -81,9 +81,9 @@ There are many published articles describing how to define row level dynamic sec
 9. This formula specifies that all columns resolve to the false Boolean condition; therefore, no columns for the **DimUserSecurity** table can be queried.
 10. Now we need to process and deploy the model. You can refer [this article](https://msdn.microsoft.com/library/hh231693.aspx) for assistance in deploying the model.
 
-## Task 3: Adding Data Sources within your On-premises Data Gateway
+## Task 3: Adding Data Sources within your on-premises data gateway
 1. Once your tabular model is deployed and ready for consumption, you need to add a data source connection to your on-premises Analysis Services tabular server with in your Power BI portal.
-2. To allow the **Power BI service** access your on-premises analysis service, you need to have an **[On-premises Data Gateway](service-gateway-onprem.md)** installed and configured in your environment.
+2. To allow the **Power BI service** access your on-premises analysis service, you need to have an **[on-premises data gateway](service-gateway-onprem.md)** installed and configured in your environment.
 3. Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source within the Power BI portal](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)

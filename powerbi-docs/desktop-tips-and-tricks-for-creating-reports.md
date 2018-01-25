@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/20/2017
+ms.date: 12/05/2017
 ms.author: davidi
 
 ---
@@ -91,7 +91,10 @@ Ensure the data type is a number for the resulting aggregate column. Now you can
 
 Defining a histogram that supports brushing -  Brushing is when visuals are linked together so that when a user selects a data point in one visual other visuals on the report page highlight or filter data points related to the selected data point.  Since we're manipulating data at query time, we will need to create a relationship between tables and ensure we know which detail item relates to the bucket in the histogram and vice-versa.
 
-Start the process by using the "Reference" option on the query that has the field you want to build a histogram on.  Name the new query "Buckets".  For this example let's call the original query "Details".  Next remove all columns except the column you'll use as the bucket for the histogram.  Now use the "Remove Duplicates" feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column.   If you have decimal numbers you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets.  Now, check the data shown in the query preview.  If you see blank values or null you'll need to fix those up before creating a relationship.  See "Creating a relationship if my data has null or blank values".   Using this approach can be problematic due to the need to sort.  To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want".  Note: It's useful to think about the sort order before building any visuals.   
+Start the process by using the "Reference" option on the query that has the field you want to build a histogram on.  Name the new query "Buckets".  For this example let's call the original query "Details".  Next remove all columns except the column you'll use as the bucket for the histogram.  Now use the "Remove Duplicates" feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column.   If you have decimal numbers you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets.  Now, check the data shown in the query preview.  If you see blank values or null you'll need to fix those up before creating a relationship.  See "Creating a relationship if my data has null or blank values".   Using this approach can be problematic due to the need to sort.  To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want".  
+
+>[!NOTE]
+>It's useful to think about the sort order before building any visuals.   
 
 Next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column.  In Power BI Desktop, click **Manage Relationships** in the ribbon.  Create a relationsship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram. 
 

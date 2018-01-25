@@ -56,7 +56,6 @@ The Power BI Developer samples include items for embedding dashboards, reports a
 ## Developer tools
 The following are tools you can use to aid in your development of Power BI items.
 
-* [Apiari interactive API console](http://docs.powerbi.apiary.io/)
 * [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo)
 
 ## Next steps

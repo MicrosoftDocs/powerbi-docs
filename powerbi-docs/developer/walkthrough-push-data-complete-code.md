@@ -234,7 +234,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
+
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

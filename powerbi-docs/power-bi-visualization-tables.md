@@ -1,6 +1,6 @@
 ---
-title: Table visualizations in Power BI reports and dashboards (Tutorial)
-description: Tips for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
+title: Tutorial -table visualizations in Power BI reports and dashboards (Tutorial)
+description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
@@ -37,11 +37,16 @@ Tables are a great choice:
 > If a table has too many values, consider converting it to a matrix and/or using drilldown.
 > 
 > 
+## Prerequisites
+ - Power BI service or Power BI Desktop
+ - Retail Analysis sample
+
 
 ## Create a table
-To follow along, sign in to Power BI and select **Get Data > Samples > Retail Analysis Sample**. We'll create the table pictured above to display sales values by item category.
+We'll create the table pictured above to display sales values by item category. To follow along, sign in to Power BI service and select **Get Data \> Samples \> Retail Analysis Sample > Connect** and choose **Go to dashboard. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If a report has been shared with you, you won't be able to create visualizations in reports.
 
-1. In **My workspace**, select the Datasets tab, and scroll down to the Retail Analysis Sample dataset you just added.  Select the **Create report** icon.
+1. From the left navpane, select **Workspaces >My workspace**.    
+2. Select the Datasets tab, and scroll down to the Retail Analysis Sample dataset you just added.  Select the **Create report** icon.
    
     ![](media/power-bi-visualization-tables/power-bi-create-report.png)
 2. In the report editor, select **Item** > **Category**.  Power BI automatically creates a table that lists all the categories.

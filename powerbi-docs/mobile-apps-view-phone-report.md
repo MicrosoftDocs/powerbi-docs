@@ -16,12 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/04/2018
 ms.author: maggies
 
 ---
 # View Power BI reports optimized for your phone
-When you create a Power BI report in Power BI Desktop, you can also create a version of that [report optimized for viewing in the Power BI app on a phone](desktop-create-phone-report.md).
+
+Applies to:
+
+| ![iPhone](media/mobile-apps-view-phone-report/ios-logo-40-px.png) | ![Android phone](media/mobile-apps-view-phone-report/android-logo-40-px.png) |
+|:--- |:--- |
+| iPhones |Android phones |
+
+When you create a Power BI report in Power BI Desktop, you can also [create a version of that report optimized for viewing](desktop-create-phone-report.md) in the Power BI app on a phone.
 
 Then, when you open a Power BI report on a phone, Power BI detects if the report has been optimized for phones and automatically opens the optimized report in portrait view.
 
@@ -36,8 +43,8 @@ All the other features of Power BI reports still work in phone-optimized reports
 * [Reports on iPhones](mobile-reports-in-the-mobile-apps.md). 
 * [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
-## Filter the report page on an iPhone
-If a phone-optimized report has filters defined, when you view the report on an iPhone you can use those filters. 
+## Filter the report page on a phone
+If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. 
 
 1. Tap the filter icon ![Phone filter icon](media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.

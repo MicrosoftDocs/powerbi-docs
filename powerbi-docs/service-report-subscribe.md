@@ -17,12 +17,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/26/2017
+ms.date: 01/08/2018
 ms.author: mihart
 
 ---
 # Subscribe to a Power BI report or dashboard
-It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day to once a week
+It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day to once a week. The email and snapshot will use the language set in Power BI Settings. If no language is defined, Power BI uses the current browser language.
+
+To see or set your language preference, select the cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**.
+
+![](media/service-report-subscribe/power-bi-language.png)
 
 > [!NOTE]
 > Subscriptions can only be created in Power BI service. When you receive the email it will include a link to "go to report/dashboard". On mobile devices with Power BI apps installed, selecting this link launches the app (as opposed to the default action of opening the report or dashboard on the Power BI website).
@@ -58,7 +62,7 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## Subscribe to a report page
-1. Open the report in [Reading view](service-report-open-in-reading-view.md).
+1. Open the report in [Reading view](service-reading-view-and-editing-view.md).
 2. From the top menubar, select **Subscribe**.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
@@ -102,6 +106,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 
 ## Considerations and troubleshooting
 * At the current time, subscribe is not available for dashboards or reports that come from content packs or Power BI apps. But there is a workaround...make a copy of the report/dashboard and add subscriptions to that version instead.
+* Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and rename it, you will have to re-create your subscription
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 * Email subscriptions do not support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.    
@@ -111,6 +116,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.    
 * If you are not receiving the subscription emails, ensure that your User Principal Name (UPN) is able to receive emails. [The Power BI team is working on relaxing this requirement](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), so stay tuned. 
+* Sent reports and dashboards use your Power BI language setting. The default language is English. To see or set your language preference, select the cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**.
 
 ## Next steps
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    

@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 01/05/2017
 ms.author: asaxton
 
 ---
@@ -35,7 +35,7 @@ Before you get started pushing data into a dataset, you need an Azure Active Dir
 The next section is a general discussion of Power BI API operations that push data.
 
 ## Power BI API operations to push data
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation along with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation. To find a dataset, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) operation to get a list of group id's. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation along with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation. To find a dataset, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) operation to get a list of group id's.
 
 Here are the operations to push data into a dataset:
 
@@ -123,6 +123,5 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introducing JSON](http://json.org/)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

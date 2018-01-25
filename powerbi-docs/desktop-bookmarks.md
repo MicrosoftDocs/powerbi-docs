@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/24/2018
 ms.author: davidi
 
 ---
@@ -149,7 +149,8 @@ In this preview release of the **bookmarks**, there are a few limitations and co
 * Cross-highlighting status for a report pane is *not* saved when you create a bookmark. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
-* You *must* have at least one bookmard in your report, when you publish it to the **Power BI service**, in order for bookmarks to be available in the service. This is a requirement for each report you publish.
+* You *must* have at least one bookmark in your report, when you publish it to the **Power BI service**, in order for bookmarks to be available in the service. This is a requirement for each report you publish.
+* Since bookmarks are currently a Preview feature, they're not yet available in [**Power BI Desktop for Report Server**](report-server/quickstart-create-powerbi-report.md).
 
 ## Next steps
 For more information about features that are similar or interact with bookmarks, take a look at the following articles:

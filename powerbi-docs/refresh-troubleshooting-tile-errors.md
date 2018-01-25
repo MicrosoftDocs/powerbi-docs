@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
 
 ---
@@ -67,7 +67,7 @@ This is usually a transient issue. If you try again later and you still see this
 If you are still having an issue, please [contact support](https://support.powerbi.com) to investigate further.
 
 ## Next steps
-[Troubleshooting the On-premises Data Gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
