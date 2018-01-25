@@ -43,7 +43,7 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
-+No webinars scheduled yet. Check back soon for more upcoming events.
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 ## On-Demand webinars
 
