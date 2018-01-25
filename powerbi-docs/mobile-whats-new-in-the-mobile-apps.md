@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 01/25/2018
 ms.author: maggies
 
 ---
@@ -26,6 +26,13 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the Power BI service](service-whats-new.md)  
+
+## January 2018
+
+### iOS
+
+**iOS 10 and later** To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 10 and later.​
+
 
 ## December 2017
 
