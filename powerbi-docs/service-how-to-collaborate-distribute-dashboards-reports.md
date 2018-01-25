@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/19/18
+ms.date: 01/24/18
 ms.author: maggies
 
 ---
@@ -51,7 +51,7 @@ Say you want to distribute your dashboard to a broad audience. You and your cowo
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [publishing your apps](service-create-distribute-apps.md#publish-your-app). 
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator give you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md#publish-your-app). 
 
 After they install an app, they can view it in their browser or mobile device.
 
@@ -66,9 +66,7 @@ You need a Power BI Pro license to share your content, and those you share it wi
 
 You can share with people outside your organization, too. They can view and interact with the dashboard too, but can't share it. 
 
-More about [sharing dashboards and reports](service-share-dashboards.md) from the Power BI service.
-
-You can also add a filter to a report, then [share a filtered view of your report](service-share-reports.md).
+More about [sharing dashboards and reports](service-share-dashboards.md) from the Power BI service. You can also add a filter to a link and [share a filtered view of your report](service-share-reports.md).
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
