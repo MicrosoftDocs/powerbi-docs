@@ -86,7 +86,9 @@ There are a few considerations and limitations to keep in mind when working with
 * Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.
 * Reports that are owned by a user outside your Power BI tenant domain (such as, a report owned by someone outside your organization, and shared with you) cannot be published to PowerPoint.
 * If you share a dashboard with someone outside of your organization (and thereby, a user who is not in your Power BI tenant), that user will not be able to export the shared dashboard's associated reports to PowerPoint. For example, if you are aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com cannot export the associated reports to PowerPoint.
-* As previously mentioned, each report page is exported as a single image in the PowerPoint file. 
+* As previously mentioned, each report page is exported as a single image in the PowerPoint file.
+* The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**.
+* The **Downloaded at** time on the cover slide for the exported PowerPoint file is set to your computer's time zone at the time of the export.
 
 ## Next steps
 [Analyze in Excel](service-analyze-in-excel.md)
