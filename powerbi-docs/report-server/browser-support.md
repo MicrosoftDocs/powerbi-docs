@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 01/25/2018
 ms.author: maghan
 
 ---
@@ -42,7 +42,7 @@ The following is the current list of browsers supported for the web portal.
 * Mozilla Firefox (+)
 
 **Apple iOS**  
-*iPhone and iPad with iOS 9*
+*iPhone and iPad with iOS 10*
 
 * Apple Safari (+)
 
