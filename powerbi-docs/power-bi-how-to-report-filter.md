@@ -1,6 +1,6 @@
 ---
-title: Take a tour of the Power BI Filters pane
-description: How to use report filters
+title: Overview of the Power BI Filters pane
+description: Overview pf the report Filters pane in Power BI service and Power BI dashboard
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
 
 ---
 # Take a tour of the report Filters pane
-This article takes a deep look at the report Filters pane. You'll see the pane in Editing View and in Reading View for Power BI reports.
+This article takes a deep look at the report Filters pane. You'll see the pane in [Power BI service Editing View and Reading View](service-reading-view-and-editing-view.md) and in [Power BI Desktop Report view](desktop-report-view.md).
 
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](power-bi-reports-filters-and-highlighting.md).
 
@@ -29,7 +29,7 @@ There are many different ways to filter data in Power BI and we recommend first 
 Reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing View, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot save filter changes to the report.
 
 ## Filters in Reading View
-When a report is open in Reading View, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it.
+When a report is open in Reading view, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it.
 
 In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. There is one [Drillthrough filter](power-bi-report-add-filter.md), and the entire report has a filter too:  **FiscalYear** is 2013 or 2014.
 
@@ -56,7 +56,7 @@ When a report is open in Editing View, the Filters pane displays along the right
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
-If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page or entire report, and any drillthrough filters(if any have been set). In the example below, no visual is selected and there are no page level or drillthrough filters but there is a report level filter.  
+If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page or entire report, and any drillthrough filters (if any have been set). In the example below, no visual is selected and there are no page level or drillthrough filters but there is a report level filter.  
 
 ![](media/power-bi-how-to-report-filter/power-bi-no-visual.png)  
 
@@ -72,9 +72,9 @@ To display options for a particular filter, select the down arrow next to the fi
  In either advanced or basic filtering mode, select the eraser icon  ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) to reset the filter. 
 
 ## Add a filter
-* In editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
+* In Editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
 
-Dragging a new field into the Visual level filter area does not add that field to the visual, but it does allow you to filter the visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
+- **Dragging a new field into the Visual level filter area does not add that field to the visual**, but it does allow you to filter the visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 
