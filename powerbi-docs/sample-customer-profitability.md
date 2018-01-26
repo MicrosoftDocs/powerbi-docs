@@ -25,13 +25,46 @@ ms.author: mihart
 ## Overview of the Customer Profitability sample
 The “Customer Profitability Sample” content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
 
+<<<<<<< HEAD
+![](media/sample-customer-profitability/power-bi-dash.png)
+
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Sample datasets](sample-datasets.md).
+
+## Prerequisites
+Want to follow along? This tutorial uses Power BI service and the "Customer Profitability" sample content pack.  Because the report experiences are so similar, you can also follow along using Power BI Desktop and the sample PBIX file. Instructions for connecting to the content pack and the PBIX file are below.
+
+### Get the content pack for this sample
+
+1. Open the Power BI service (app.powerbi.com) and log in.
+2. In the bottom left corner select **Get data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. On the Get Data page that appears, select the **Samples** icon.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Select the **Customer Profitability Sample**, then choose **Connect**.  
+   
+   ![Get Data](media/sample-customer-profitability/get-supplier-sample.png)
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
+   
+   ![Asterisk](media/sample-customer-profitability/supplier-sample-asterisk.png)
+  
+### Get the .pbix file for this sample
+
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
+[Customer Profitability Sample](<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Profitability Sample PBIX.pbix)
+
+### Get the Excel workbook for this sample
+
+If you want to dig into the datasource for this sample, it's also available as an [(Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, select **Power Pivot > Manage**.
+=======
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Sample datasets](sample-datasets.md).
 
 ### Prerequisites
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Customer Profitability > Connect** to get your own copy of the sample.
+>>>>>>> def2c8e086d65b6a3fb92247175730746226ae3e
 
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
 ## What is our dashboard telling us?
 

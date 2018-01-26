@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/21/2018
+ms.date: 01/24/2018
 ms.author: mihart
 
 ---
@@ -26,7 +26,7 @@ You've read [Reports in Power BI](service-reports.md) and now you want to create
 > **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
 > 
 ### Prerequisites
-- Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view))   
+- Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md)   
 - Retail Analysis sample dataset
 
 ## Import the dataset
