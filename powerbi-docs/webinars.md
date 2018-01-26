@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 01/24/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -43,13 +43,15 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 >[Attend upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
-- [Improving Profitability in Healthcare - 12/12/17](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 ## On-Demand webinars
 
 Watch recorded sessions at any time
 
 >[Browse the library of Power BI on-demand webinars from our community experts](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
+
+- [Improving Profitability in Healthcare](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
 - [How to Implement a Successful Data Governance Strategy That Makes Your Organization More Secure](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
 

@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/25/2018
 ms.author: maggies
 
 ---
@@ -38,7 +38,7 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 [Download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store.
 
 > [!NOTE]
-> Your iPad needs to be running at least iOS 9.0. 
+> Your iPad needs to be running at least iOS 10. 
 > 
 > 
 

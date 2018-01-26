@@ -60,7 +60,8 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
 
 ## System requirements
 To import your Project “Madeira” data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:  
-
+ 
+    ´´´ 
     - ItemSalesAndProfit  
     - ItemSalesByCustomer  
     - powerbifinance  
@@ -68,6 +69,7 @@ To import your Project “Madeira” data into Power BI, you need to have permis
     - SalesOpportunities  
     - SalesOrdersBySalesPerson  
     - TopCustomerOverview  
+    ´´´ 
 
 <a name="FindingParams"></a>
 

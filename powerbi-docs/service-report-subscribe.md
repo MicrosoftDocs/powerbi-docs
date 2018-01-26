@@ -116,6 +116,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.    
 * If you are not receiving the subscription emails, ensure that your User Principal Name (UPN) is able to receive emails. [The Power BI team is working on relaxing this requirement](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), so stay tuned. 
+* Sent reports and dashboards use your Power BI language setting. The default language is English. To see or set your language preference, select the cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**.
 
 ## Next steps
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    

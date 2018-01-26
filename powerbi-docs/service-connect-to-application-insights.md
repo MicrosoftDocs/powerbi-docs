@@ -58,6 +58,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 ## What's included
 The Application Insights content pack includes the following tables and metrics:  
 
+     ´´´
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   
@@ -73,7 +74,8 @@ The Application Insights content pack includes the following tables and metrics:
     - SessionsDailyLast30Days   
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
-    - PageViewsByCountryDailyLast30Days   
+    - PageViewsByCountryDailyLast30Days  
+   ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 
