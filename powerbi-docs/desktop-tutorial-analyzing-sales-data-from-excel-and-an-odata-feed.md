@@ -137,7 +137,7 @@ Calculate the line total for each **Order\_Details** row:
 
 ### Step 5: Set the datatype of the LineTotal field
 1. Right click the **LineTotal** column.
-2. Select **Change Type** and choose **Decimal Number.
+2. Select **Change Type** and choose **Decimal Number**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
@@ -227,5 +227,4 @@ After you perform all these steps, you will have a Sales Report that combines da
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
-﻿
 
