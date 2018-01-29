@@ -1,4 +1,4 @@
----
+--
 title: Shape and combine data in Power BI Desktop
 description: Shape and combine data in Power BI Desktop
 services: powerbi
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ms.author: davidi
 
 ---
