@@ -66,7 +66,7 @@ Other data connections are similar. If authentication is required to make a data
 For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
 
 ## Shape and combine data
-You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **﻿**[Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644).
+You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **[Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
 
 In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
 
