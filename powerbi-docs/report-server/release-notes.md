@@ -3,7 +3,7 @@ title: Power BI Report Server release notes
 description: This topic describes limitations and issues with Power BI Report Server.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

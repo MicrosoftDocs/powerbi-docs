@@ -3,7 +3,7 @@ title: Register an app with Azure AD
 description: Walkthrough - Push data into a dataset - Register an app with Azure AD
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Step 1: Register an app with Azure AD

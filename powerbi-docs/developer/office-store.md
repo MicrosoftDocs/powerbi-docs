@@ -3,7 +3,7 @@ title: Publish custom visuals to AppSource
 description: Learn how you can publish your custom visual to AppSource for others to discover and use.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/5/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Publish custom visuals to AppSource

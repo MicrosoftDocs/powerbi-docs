@@ -5,7 +5,7 @@ metakeywords: ''
 services: ''
 solutions: ''
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 videoid: ''
 scriptid: ''
 manager: kfile
@@ -16,7 +16,7 @@ ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 11/08/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Git commands for creating a new article or updating an existing article

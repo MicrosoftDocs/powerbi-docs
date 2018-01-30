@@ -3,7 +3,7 @@ title: Add rows to a table
 description: Walkthrough to push data - Add rows to a Power BI table
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Step 5: Add rows to a Power BI table

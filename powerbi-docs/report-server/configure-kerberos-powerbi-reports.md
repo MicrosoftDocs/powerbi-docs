@@ -3,7 +3,7 @@ title: Configure Kerberos to use Power BI reports
 description: Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

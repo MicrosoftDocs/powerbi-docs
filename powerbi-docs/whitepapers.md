@@ -3,7 +3,7 @@ title: Whitepapers for Power BI
 description: Whitepapers allow you to explore Power BI topics at a deeper level.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/05/2018
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Whitepapers for Power BI

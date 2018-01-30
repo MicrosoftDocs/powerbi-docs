@@ -3,7 +3,7 @@ title: Power BI Premium FAQ
 description: Browse a list of frequently asked questions and answers about the Power BI Premium offering.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/20/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Power BI Premium FAQ

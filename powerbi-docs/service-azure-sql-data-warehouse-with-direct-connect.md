@@ -3,7 +3,7 @@ title: Azure SQL Data Warehouse with DirectQuery
 description: Azure SQL Data Warehouse with DirectQuery
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Azure SQL Data Warehouse with DirectQuery

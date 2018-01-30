@@ -3,7 +3,7 @@ title: Manage your data storage
 description: Learn how you can manage your individual, or app workspace, data storage to make sure you can continue to publish reports and datasets.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Manage your data storage

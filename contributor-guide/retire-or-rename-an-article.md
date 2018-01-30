@@ -5,7 +5,7 @@ metakeywords: ''
 services: ''
 solutions: ''
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 videoid: ''
 scriptid: ''
 manager: kfile
@@ -16,7 +16,7 @@ ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 09/09/2015
-ms.author: asaxton
+ms.author: maghan
 ---
 # Steps to follow when you retire or change the name of a Power BI technical article
 

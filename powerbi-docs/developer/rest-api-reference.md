@@ -3,7 +3,7 @@ title: Power BI REST API Reference
 description: Power BI REST API Reference
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Power BI REST API Reference

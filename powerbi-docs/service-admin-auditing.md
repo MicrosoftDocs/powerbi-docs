@@ -3,7 +3,7 @@ title: Using auditing within your organization
 description: Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Using auditing within your organization
