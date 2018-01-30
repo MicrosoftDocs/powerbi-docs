@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: 
 editor: ''
 tags: ''
 qualityfocus: no
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/29/2018
 ms.author: maggies
 
 ---
