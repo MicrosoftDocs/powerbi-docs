@@ -80,7 +80,7 @@ Watch recorded sessions at any time
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
 **Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability**
-<br>by Jon Thompson from Blue Margin
+<br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
 <br>[Register and watch now](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
 ### Advanced Topics ###
@@ -98,7 +98,7 @@ Watch recorded sessions at any time
 <br>[Register and watch now](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
 
 **Ask a Partner: Developing Custom Visuals for Power BI**
-<br>by [Ted Pattison](https://community.powerbi.com/t5/user/viewprofilepage/user-id/2834)
+<br>by Ted Pattison
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
 **What's new and exciting in Power BI Report Server**
