@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/31/2018
+ms.date: 01/30/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -45,9 +45,15 @@ Get started with these popular on-demand webinars
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
->[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
+**Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
+<br>by Miguel Martinez
+<br>*February 21st, 10:00AM PST, 1:00PM EST*
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+Have you ever opened a Power BI Dashboard just to think, now what?  How do I navigate through this to find the data that’s important to me? Do you limit your use of filters & slicers for fear of ‘breaking something’?  Fear not, join us to learn how to navigate your way through a Power BI dashboard. We will walk you through common features used by other managers to drill down to the data you want, when you want it.
+
+[Register to watch on February 21st](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+>[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
 ## On-Demand webinars
 
