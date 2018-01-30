@@ -3,7 +3,7 @@ title: Overview of the Power BI service content pack program
 description: Content Pack Certification Program
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

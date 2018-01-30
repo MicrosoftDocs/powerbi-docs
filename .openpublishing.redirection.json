@@ -14,6 +14,11 @@
             "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md", 
             "redirect_url": "/power-bi/refresh-troubleshooting-refresh-scenarios",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md", 
+            "redirect_url": "/power-bi/mobile-windows-10-phone-app-get-started",
+            "redirect_document_id": true
         }
         
     ]

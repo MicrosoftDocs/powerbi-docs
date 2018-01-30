@@ -3,7 +3,7 @@ title: Administering Power BI in your organization
 description: Administering Power BI in your organization
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/28/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Administering Power BI in your organization

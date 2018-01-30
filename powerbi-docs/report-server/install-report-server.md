@@ -3,7 +3,7 @@ title: Install Power BI Report Server
 description: 'Learn how to install Power BI Report Server. '
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 01/29/2018
 ms.author: maghan
 ---
 # Install Power BI Report Server
@@ -25,7 +25,9 @@ Learn how to install Power BI Report Server.
 
  **Download** ![download](media/install-report-server/download.png "download")
 
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/). For Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
+To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/). 
+
+Go to the Microsoft Download Center to download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017).
 
 ![tip](media/install-report-server/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 

@@ -3,7 +3,7 @@ title: Create a dataset
 description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Step 3: Create a dataset in Power BI

@@ -3,7 +3,7 @@ title: Use developer tools to create custom visuals
 description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/30/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Use developer tools to create custom visuals

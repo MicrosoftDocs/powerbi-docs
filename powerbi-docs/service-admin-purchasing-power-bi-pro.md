@@ -3,7 +3,7 @@ title: Purchasing Power BI Pro
 description: Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Purchasing Power BI Pro

@@ -3,7 +3,7 @@ title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 1/17/2018
-ms.author: asaxton
+ms.author: maghan
 ---
 # Troubleshooting your embedded application
 

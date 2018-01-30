@@ -3,7 +3,7 @@ title: SQL Server Analysis Services live data in Power BI
 description: SQL Server Analysis Services live data in Power BI. This is done via a data source that was configured for an enterprise gateway.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # SQL Server Analysis Services live data in Power BI

@@ -3,7 +3,7 @@ title: Integrate a dashboard into an app for your organization
 description: Learn how to integrate, or embed, a dashboard into a web app using the Power BI APIs.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Integrate a dashboard into an app for your organization

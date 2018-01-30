@@ -3,7 +3,7 @@ title: Push data into a dataset
 description: Push data into a Power BI dataset
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Push data into a Power BI dataset

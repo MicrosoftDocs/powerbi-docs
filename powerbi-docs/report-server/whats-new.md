@@ -3,7 +3,7 @@ title: What's new in Power BI Report Server
 description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
