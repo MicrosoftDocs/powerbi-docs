@@ -3,7 +3,7 @@ title: Configure your report server to host Excel workbooks using Office Online 
 description: In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

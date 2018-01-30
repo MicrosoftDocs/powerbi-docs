@@ -3,7 +3,7 @@ title: Closing your Power BI Account
 description: Closing your Power BI Account
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Closing your Power BI Account

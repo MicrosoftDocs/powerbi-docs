@@ -3,7 +3,7 @@ title: Get an authentication access token
 description: Walkthrough to push data - Get an authentication access token
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Step 2: Get an authentication access token

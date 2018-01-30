@@ -3,7 +3,7 @@ title: Troubleshooting scheduled refresh for Azure SQL Databases
 description: Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

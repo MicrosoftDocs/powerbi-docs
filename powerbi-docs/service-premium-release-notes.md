@@ -3,7 +3,7 @@ title: Power BI Premium release notes
 description: Read release notes for Power BI Premium, a dedicated capacity for your organization or team.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/11/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Power BI Premium release notes

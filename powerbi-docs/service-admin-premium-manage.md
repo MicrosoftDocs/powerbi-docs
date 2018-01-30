@@ -3,7 +3,7 @@ title: Manage capacities within Power BI Premium and Power BI Embedded
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Manage capacities within Power BI Premium and Power BI Embedded

@@ -3,7 +3,7 @@ title: Understanding the Power BI admin role
 description: How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Understanding the Power BI admin role

@@ -3,7 +3,7 @@ title: Troubleshoot scheduled refresh in Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with scheduled refresh in Power BI Report Server.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

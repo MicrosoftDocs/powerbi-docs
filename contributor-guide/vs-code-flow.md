@@ -3,7 +3,7 @@ title: Visual Studio Code - Flow
 description: Walkthough of how to use Visual Studio code with the Power BI repo.
 services: ''
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 editor: ''
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 11/09/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Visual Studio Code - Flow

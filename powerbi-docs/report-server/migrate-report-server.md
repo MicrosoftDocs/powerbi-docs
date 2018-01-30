@@ -3,7 +3,7 @@ title: Migrate a report server installation
 description: Learn how to migrate your exising SQL Server Reporting Services instance to an instance of Power BI Report Server.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''

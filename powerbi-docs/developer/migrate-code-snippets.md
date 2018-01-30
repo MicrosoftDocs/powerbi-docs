@@ -3,7 +3,7 @@ title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/21/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Code snippets for migrating content from Power BI Embedded

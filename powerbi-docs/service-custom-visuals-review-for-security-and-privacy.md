@@ -3,7 +3,7 @@ title: Review custom visuals for security and privacy
 description: Before you enable a custom visual, you should review that visual for security and privacy to make sure if will fit your organization's standards.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Review custom visuals for security and privacy

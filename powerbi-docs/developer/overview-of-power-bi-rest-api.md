@@ -3,7 +3,7 @@ title: What can I do with the Power BI API
 description: What can I do with the Power BI API
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # What can developers do with Power BI?

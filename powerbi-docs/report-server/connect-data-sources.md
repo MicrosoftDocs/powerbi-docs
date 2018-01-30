@@ -3,7 +3,7 @@ title: Connecting to data sources
 description: Learn about what data sources you can connect to within Power BI Report Server.
 services: powerbi
 documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
