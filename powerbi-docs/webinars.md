@@ -59,7 +59,7 @@ Have you ever opened a Power BI Dashboard just to think, now what?  How do I nav
 
 In collaboration with data.world, Microsoft has released a new data connector that allows you to import data.world datasets into Power BI Desktop. Join us to learn how to use and take advantage if this the new connector.
 
-[Register to watch on February 21st](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+[Register to watch on February 22nd](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
