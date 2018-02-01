@@ -47,8 +47,7 @@ To submit a custom visual for certification:
    * Title: Visual Certification Request    
    * Link to GitHub repository where the visual source code is hosted    
    * Adhere to the requirements (see above)    
-   * Pass the code and security review    
-2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
+   * Pass the code and security review    2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
 ## Removal of Power BI Certified custom visuals
 Microsoft, at its discretion, may remove a visual from the Certified list.  
@@ -77,8 +76,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Dot Plot by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104381101?src=office&tab=Overview) |[Video](https://youtu.be/4lskRgcpFJY) |
 | [Dot Plot by Microsoft](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380760?src=office) | |
 | [Drill down donut chart by ZoomCharts](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858) | |
-
-
 | [Drilldown Cartogram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381045?src=office) | |
 | [Drilldown Choropleth](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381044?src=office) | |
 | [Drilldown column chart by ZoomCharts](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380881?src=office) | |
