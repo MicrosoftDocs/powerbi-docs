@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/30/2018
+ms.date: 01/31/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -52,6 +52,13 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 Have you ever opened a Power BI Dashboard just to think, now what?  How do I navigate through this to find the data that’s important to me? Do you limit your use of filters & slicers for fear of ‘breaking something’?  Fear not, join us to learn how to navigate your way through a Power BI dashboard. We will walk you through common features used by other managers to drill down to the data you want, when you want it.
 
 [Register to watch on February 21st](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Visualize public or private datasets with the new Power BI and data.world connector**
+<br>*February 22nd, 10:00AM PST, 1:00PM EST*
+
+In collaboration with data.world, Microsoft has released a new data connector that allows you to import data.world datasets into Power BI Desktop. Join us to learn how to take advantage if this great new connector.
+
+[Register to watch on February 22nd](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
