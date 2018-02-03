@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/20/2017
+ms.date: 02/05/2018
 ms.author: mihart
 
 ---
@@ -27,9 +27,35 @@ When creating or editing a Power BI report, there are many different types of vi
 
 But you are not limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
 
-Custom visuals are created by members of the community and by Microsoft and are hosted on [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been approved by Microsoft and they behave similar to the pre-packaged visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc. 
+Custom visuals are created by members of the community and by Microsoft and are hosted on [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been approved by Microsoft and they behave similar to the pre-packaged visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
 
 What is AppSource? Simply put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
+
+Custom visuals can be in the form of 3 deployment channels:
+* Custom visuals files
+* Marketplace visuals
+* Organization visuals
+
+## Custom visual files
+
+Custom visuals are packages that include code for rendering the data that is served to them. Anyone can create a custom visual and package it as a single .pbiviz file, that can be imported into a Power BI report.
+
+## Marketplace visuals
+
+Members of the community, as well as Microsoft, have contributed their custom visuals to the benefit of the public and published them to AppSource marketplace. These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been tested and approved by Microsoft for functionality and quality.
+What is AppSource? Simply put, it is the place to find apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
+ 
+### Certified visuals
+
+Power BI certified visuals are marketplace visuals that have passed additional rigorous testing for quality, and are supported in additional scenarios, such as email subscriptions, and export to PowerPoint.
+To see the list of certified custom visuals or to submit your own, see Certified custom visuals.
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See Get started with Developer Toolsand learn how to publish custom visuals to AppSource.
+ 
+## Organization visuals (Preview)
+
+Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. This gives the admin the control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (i.e. update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
+
+To get more information about organization custom visuals please [read more about organizational visuals](power-bi-custom-visuals-organization.md).
 
 ## Two types of custom visuals
 
@@ -110,7 +136,6 @@ You have two options for downloading and importing custom visuals; from within P
     ![](media/power-bi-custom-visuals/power-bi-chord.png)
     
 ##    Considerations and troubleshooting
-
 
 - A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
 
