@@ -1,5 +1,5 @@
 ---
-title: Use Quick measures to easily perform common and powerful calculations in Power BI (Preview)
+title: Use Quick measures to easily perform common and powerful calculations in Power BI
 description: Quick measures provide ready-made DAX formulas that make quick work of common calculations
 services: powerbi
 documentationcenter: ''
@@ -16,19 +16,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
-# Use Quick measures to easily perform common and powerful calculations (Preview)
-Starting with the April 2017 release of **Power BI Desktop**, you can use **Quick measures** to quickly and easily perform common, powerful calculations. A **Quick measure** runs a set of DAX commands behind the scenes (you don’t have to write the DAX – it’s done for you) based input you provide in a dialog box, then presents the results for you to use in your report. Best of all, you can see the DAX that’s executed by the Quick measure, and jump-start or expand your own DAX knowledge.
+# Use Quick measures to easily perform common and powerful calculations
+You can use **Quick measures** to quickly and easily perform common, powerful calculations. A **Quick measure** runs a set of DAX commands behind the scenes (you don’t have to write the DAX – it’s done for you) based input you provide in a dialog box, then presents the results for you to use in your report. Best of all, you can see the DAX that’s executed by the Quick measure, and jump-start or expand your own DAX knowledge.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
 You create **Quick measures** by right-clicking a field in the **Fields** well, then selecting **Quick measures** from the menu that appears. You can also right-click any value in the **Values** pane of an existing visual (such as the *Values* field in a *Bar chart* visual). There are many available categories of calculations, and ways to modify each calculation to fit your needs.
 
-### Enable the Quick measures preview
-You can try the new **Quick measures** feature beginning with the **April 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Quick measures**. You'll need to restart Power BI Desktop after you make the selection.
+### Quick measures now generally available
+
+Beginning with the February 2018 release of **Power BI Desktop**, quick measures are generally available (no longer in preview). If you're using a previous release of **Power BI Desktop**, you can try **Quick measures** feature beginning with the **April 2017** release of **Power BI Desktop** by selecting **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Quick measures**.
 
 ![](media/desktop-quick-measures/quick-measures_02b.png)
 
@@ -53,23 +54,23 @@ When you select the drop-down menu, you're presented with the long list of avail
 
 There are five distinct groups of Quick measure calculation types, each with a collection of calculations. Those groups and calculations are the following:
 
-* **Aggregate within a category**
+* **Aggregate per category**
   * Average within category
   * Variance within category
   * Max within category
   * Min within category
   * Weighted average per category
-* **Filters and baselines**
-  * Filtered measure
+* **Filters**
+  * Filtered value
   * Difference from baseline
-  * Percentage difference from baseline
-  * Totals from new categories
+  * Percentage difference from filtered value
+  * Sales from new categories
 * **Time intelligence**
   * Year-to-date total
   * Quarter-to-date total
   * Month-to-date total
-  * Year over year change
-  * Quarter over quarter change
+  * Year-over-year change
+  * Quarter-over-quarter change
   * Month-over-month change
   * Rolling average
 * **Totals**
@@ -82,6 +83,7 @@ There are five distinct groups of Quick measure calculation types, each with a c
   * Multiplication
   * Division
   * Percentage difference
+  * Correlation coefficient
 * **Text**
   * Star rating
   * Concatenated list of values
@@ -133,7 +135,7 @@ It's like having a quick teacher that immediately responds to your what-if quest
 And once you do have the measure perfected, you can rename it however you'd like, using the same right-click menu.
 
 ## Limitations and considerations
-In this preview release of the **Quick measures**, there are a few limitations and considerations to keep in mind.
+There are a few limitations and considerations to keep in mind.
 
 * **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or most Live connections (SSAS live connections are supported, as previously explained).
 * The measure that's added to the **Fields** well can be used with any visual in the report.
@@ -149,8 +151,6 @@ Beginning with the October 2017 update to **Power BI Desktop**, you can use your
 
 ### Additional information and examples
 We anticipate providing examples and guidance for each of the **Quick measures** calculations, so please check back soon for updates on that focused article.
-
-Since this is a **Preview** feature, we're especially interested in your feedback and your ideas.
 
 Have an idea for a **Quick measure** that isn't already provided? Great! Check out [this page](https://go.microsoft.com/fwlink/?linkid=842906) and submit your ideas (and DAX formula) for the **Quick measure** you'd like to see in **Power BI Desktop**, and we'll consider adding it to the provided list of **Quick measures** in a future release.
 

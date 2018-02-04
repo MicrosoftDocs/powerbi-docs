@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
@@ -53,6 +53,11 @@ When we select **Less than or equal to**, the left (lower value) handle of the s
 Lastly, if we select **Greater than or equal to**, then the right (highest value) slider bar handle disappears, and we can adjust the lower value, as seen in the following image. Now only items with a *UnitPrice* greater than or equal to 750.56 are displayed in the visuals on the report page.
 
 ![](media/desktop-slicer-numeric-range/slicer-numeric-range_7.png)
+
+## Snap to whole numbers with the numeric range slicer (Preview)
+
+Beginning with the February 2018 release of **Power BI Desktop**, your numeric range slicer will snap to whole numbers. This lets your slicer to cleanly align who whole numbers. Snapping to whole numbers does not apply to decimal filters.
+
 
 ## Limitations and considerations
 The following limitations and considerations currently apply to the **numeric range slicer**
