@@ -17,15 +17,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: mihart
 
 ---
 # Getting a custom visual *certified*
 ## What is meant by *certified*?
 A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](service-report-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
-
-blah blah blahbitty blah
 
 Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) to learn how.
 
