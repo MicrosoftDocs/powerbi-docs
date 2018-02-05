@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/31/2018
+ms.date: 02/05/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -56,7 +56,7 @@ Have you ever opened a Power BI Dashboard just to think, now what?  How do I nav
 **Visualize public or private datasets with the new Power BI and data.world connector**
 <br>*February 22nd, 10:00AM PST, 1:00PM EST*
 
-In collaboration with data.world, Microsoft has released a new data connector that allows you to import data.world datasets into Power BI Desktop. Join us to learn how to take advantage if this great new connector.
+In collaboration with data.world, Microsoft has released a new data connector that allows you to import data.world datasets into Power BI Desktop. Join us to learn how to take advantage if this great new connector and leverage the power of the data.world community to share and collaborate with others on your data story.
 
 [Register to watch on February 22nd](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
