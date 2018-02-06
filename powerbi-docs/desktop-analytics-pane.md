@@ -16,22 +16,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
 # Using the Analytics pane in Power BI Desktop
-With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
+With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
-> 
-> 
 
-## Enable Forecasting (Preview)
-In addition, with the September 2016 release of **Power BI Desktop** (version 2.39.4526.362 or later), you can also perform *forecasting* from the **Analytics** pane. You must enable this preview feature, by going to **File > Options and settings > Options** then selecting **Preview Features** from the left pane. Select the checkbox next to **Forecasting** to enable the feature, as shown in the following image. You'll need to restart **Power BI Desktop** for your changes to take effect.
+## Search within the Analytics pane
+Beginning with the February 2018 release of **Power BI Desktop** (version 2.55.5010.201 or later), you can search within the **Analytics** pane, which is a sub-section of the **Visualizations** pane. As shown in the image below, search box appears when the **Analytics** pane is selected.
 
 ![](media/desktop-analytics-pane/analytics-pane_1b.png)
 

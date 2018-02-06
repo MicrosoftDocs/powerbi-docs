@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
@@ -31,6 +31,19 @@ There are many features associated with the matrix, and we'll go through them in
 > Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](desktop-report-themes.md) for more information about themes.
 > 
 > 
+
+## Understanding how Power BI calculates totals
+
+Before jumping into how to use the **Matrix** visual, it's important to understand how Power BI calculates total and subtotal values in tables and matrices. For total and subtotal rows, the measure is evaluated over all rows in the underlying data – it is *not* just a simple addition of the values in the visible or displayed rows. This mean you can end up with different values in the total row than you might expect. 
+
+Take a look at the following **Matrix** visuals. 
+
+![](media/desktop-matrix-visual/matrix-visual_3.png)
+
+In this example, each row in the **Matrix** visual farthest to the right is showing the *Amount* for each salesperson/date combination. However, since a salesperson shows up against multiple dates, the numbers can appear more than once. Thus the accurate total from the underlying data, and a simple addition of the visible values, do not equate. This is a common pattern when the value you’re summing is on the ‘one’ side of a one-to-many relationship.
+
+When looking at total and subtotals, remember that those values are based on the underlying data, and not solely based on the visible values. 
+
 
 ## Using drill-down with the Matrix visual
 With the **Matrix** visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill-down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these work.
@@ -141,16 +154,12 @@ Either approach achieves the same result. Selecting *Advanced controls* displays
 
 ![](media/desktop-matrix-visual/matrix-visual_19.png)
 
-## Limitations and considerations
-In this release of the **Matrix** visual, there are a few limitations and considerations to keep in mind.
+## Next steps
 
-* Drill on columns can only be done by using the right-click menu, and there's currently no indication on the visual that you can drill into row or column groups
-* You can only expand all items in a level at once, rather than expanding one category at a time
-* **See Records** may appear on a menu when right-clicking a column headers, but it is not operational
-* There currently is no *Grand total* row
-* Turning off the subtotal row in stepped layout doesn't have any effect
-* Column headers may be truncated if inner groups have shorter text than the outer group
-* Changing the stepped layout indentation shouldn't indent the outermost row group's indent
+You might also be interested in the following articles:
 
-We're always eager to hear your thoughts. We're currently conducting a **survey** on this **Matrix** visual, so if you have a few minutes, please [take the survey](https://www.instant.ly/s/PYXT1).
+* [Use gridlines and snap-to-grid in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
 
+ 

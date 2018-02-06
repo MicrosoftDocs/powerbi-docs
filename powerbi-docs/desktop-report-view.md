@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
@@ -59,6 +59,24 @@ To delete a page, click the **X** on the page's tab at the bottom of the Report 
 
 > [!NOTE]
 > Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](desktop-upload-desktop-files.md) to your  Power BI site.
-> 
-> 
+
+## Hide report pages
+
+When you create a report, you can also hide pages from a report. This might be useful if you need to create underlying data or visuals in a report, but you don't want those pages to be visible to others, such as when you create tables or supporting visuals that are used in other report pages. There are many other creative reasons you might want to create a report page, then hide it from a report you want to publish. 
+
+Hiding a report page is easy. Simply right-click on the report page tab, and select **Hide** from the menu that appears.
+
+![](media/desktop-report-view/report-view_05.png)
+
+There are a few considerations to keep in mind when hiding a report page:
+
+* You can still see a hidden report view when in **Power BI Desktop**, even though the page's title is grayed out. In the following image, Page 4 is hidden.
+
+    ![](media/desktop-report-view/report-view_06.png)
+
+* You *cannot* see a hidden report page when viewing the report in the **Power BI service**.
+
+* Hiding a report page is *not* a security measure. The page can still be accessed by users, and its content is still accessible using drill-through, and other methods.
+
+* When a page is hidden, when in View Mode, no view-mode navigation arrows are shown.
 

@@ -36,7 +36,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
 ![](media/service-admin-portal/powerbi-admin-settings.png)
 
-Within the portal, there are five tabs. These are described below.
+Within the portal, there are six tabs. These are described below.
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -44,6 +44,7 @@ Within the portal, there are five tabs. These are described below.
 * [Tenant settings](#tenant-settings)
 * [Premium settings](#premium-settings)
 * [Embed codes](#embed-codes)
+* [Organization visuals](#Organization-visuals)
 
 ![](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -265,6 +266,46 @@ For more information about to manage Premium settings, see [Manage Power BI Prem
 
 As an administrator, you can view the embed codes that are generated for your tenant. You have the actions of viewing the report and deleting the embed code to revoke it.
 
+## Organization visuals
+
+The organization visuals tab enables you to deploy and manage custom visuals inside your organization, so you can easily deploy proprietary custom visuals in the organization, for report authors to easily discover and import those visuals directly from Power BI Desktop into their reports.
+ 
+The page shows all the custom visuals that are currently deployed in the organization repository.
+ 
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+### Add a new custom visual
+
+To add a new custom visual to the list, select **Add a custom visual**
+
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+
+> [!WARNING]
+> A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the origination repository.
+> 
+
+Fill in the fields:
+ 
+* Choose a .pbiviz file (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
+Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards. Read more about custom visuals security.
+ 
+* Name your custom visuals (required): give a short title to the visual so Power BI Desktop users easily understand what it does
+ 
+* Icon (required): The icon file that will be shown in the Power BI Desktop UI.
+ 
+* Description: a short description of the visual to provide more context and education to the user
+ 
+Select "Apply" to initiate the upload request. If successful you will see the new item in the list. If failed, you will get an  appropriate error message
+ 
+### Delete a custom visual from the list
+
+Select the trash bin icon to permanently delete the visual from the repository.
+Important: deletion is irreversible. Once deleted, the visual will immediately stop rendering in existing reports. Even if you upload the same visual again, it will not replace the previous one that was deleted, users will have to import the new visual again and replace the instance they have in their reports.
+ 
+### How to update a visual
+
+If you'd like to update a visual in the repository, because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), upload the new file (make sure the Visual ID remains unchanged) as a new entrance in the list, make sure you provide the right details in the title and the description (e.g. "My Visual v2.0"). Next time users will enter the organization repository from Power BI Desktop, they will be able to import the new version, which will prompt them to replace the current version that they have in the report.
+ 
 ## Next steps
 
 [Understanding the Power BI admin role](service-admin-role.md)  
