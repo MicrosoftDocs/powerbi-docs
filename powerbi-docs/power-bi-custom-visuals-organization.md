@@ -52,9 +52,9 @@ To learn more about how to administer, deploy, and manage organizational custom 
 
 ## Considerations and limitations
  
-Since organizational custom visuals is in preview, there are a handful of considerations and limitations that you need to be aware of and take into consideration:
+Since organizational custom visuals is in preview, there are a handful of considerations and limitations that you need to be aware of and take into consideration.
  
-Admin
+Admin:
 
 * Legacy custom visuals (such as custom visuals that are not built on top of the new versioned APIs) are not supported
 
