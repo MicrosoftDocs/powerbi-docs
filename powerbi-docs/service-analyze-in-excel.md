@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
@@ -29,6 +29,7 @@ There are a few requirements for using **Analyze in Excel**:
 * **Analyze in Excel** is supported for Microsoft Excel 2010 SP1 and later.
 * Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*.
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
+* **Analyze in Excel** requires a Pro license. To learn more about the differences in functionality between Free and Pro licenses, take a look at [Power BI Free versus Pro](service-free-vs-pro.md). 
 
 ## How does it work?
 When you select **Analyze in Excel** from the ellipses menu (the ...) associated with a dataset or report in **Power BI**, Power BI creates an .ODC file and downloads it from the browser to your computer.

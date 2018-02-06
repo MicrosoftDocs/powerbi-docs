@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
 
 ---
@@ -266,14 +266,21 @@ When defining the model, consider doing the following:
 ### Report Design Guidance
 When creating a report using a DirectQuery connection, adhere to the following guidance:
 
+* **Consider use of Query Reduction options:** Power BI provides options in the report to send fewer queries, and to disable certain interactions that would result in a poor experience if the resulting queries take a long time to execute. To access these options in **Power BI Desktop**, go to **File > Options and settings > Options** and select **Query reduction**. 
+
+   ![](media/desktop-directquery-about/directquery-about_03b.png)
+
+    Checking box selections on the **Query reduction** let you disable cross-highlighting throughout your entire report. You can also show an *Apply* button to slicers and/or filter selections, which lets you then make many slicer and filter selections before applying them, which results in no queries being sent until you select the **Apply** button on the slicer. Your selections are then be used to filter the data.
+
+    These options will apply to your report while you interact with it in **Power BI Desktop**, as well as when your users consume the report in the **Power BI service**.
+
 * **Apply filters first:** Always apply any applicable filters at the start of building a visual. For example, rather than drag in the TotalSalesAmount, and ProductName, then filter to a particular year, apply the filter on Year at the very start. This is because each step of building a visual will send a query, and whilst it is possible to then make another change before the first query has completed, this still leaves unnecessary load on the underlying source. By applying filters early, it generally makes those intermediate queries less costly. Also, failing to apply filters early can result in hitting the 1m row limit above.
 * **Limit the number of visuals on a page:** When a page is opened (or some page level slicer or filter changed) then all of the visuals on a page are refreshed. There is also a limit on the number of queries that are sent in parallel, hence as the number of visuals increases, some of the visuals will be refreshed in a serial manner, increasing the time taken to refresh the entire page. For this reason it's recommended to limit the number of visuals on a single page, and instead have more, simpler pages.
 * **Consider switching off interaction between visuals:** By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page. For example, having selected “1999” on the pie chart, the column chart is cross highlighted to show the sales by category for “1999”.                                                                  
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  However, this interaction can be controlled as described [in this article](service-reports-visual-interactions.md). In DirectQuery such cross-filtering and cross-highlighting requires queries to be sent to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long.
-* **Consider sharing the report only:** There are different ways of sharing content after publishing to the **Power BI service**. In the case of DirectQuery, it's advisable to only considering sharing the finished report, rather than allow other users to author new reports (and potentially encounter performance issues for the particular visuals that they build).
+  In DirectQuery such cross-filtering and cross-highlighting requires queries to be submitted to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. However, this interaction can be switched off, either for the entire report (as described above for *Query reduction options*), or on a case-by-case basis as described [in this article](service-reports-visual-interactions.md).
 
 In addition to the above list of suggestions, note that each of the following reporting capabilities can cause performance issues:
 
@@ -291,6 +298,8 @@ In addition to the above list of suggestions, note that each of the following re
 * **Median:** Generally, any aggregation (Sum, Count Distinct, so on) is pushed to the underlying source. However, this is not true for Median, as this aggregate is generally not supported by the underlying source. In such cases, the detail data is retrieved from the underlying source, and the Median calculated from the returned results. This is reasonable when the median is to be calculated over a relatively small number of results, but performance issues (or query failures due to the 1m row limit) will occur if the cardinality is large.  For example, Median Country Population might be reasonable, but Median Sales Price might not be.
 * **Advanced text filters (‘contains’ and similar):** When filtering on a text column, the advanced filtering allows filters like ‘contains’ and ‘begins with’ and so on. These filters can certainly result in degraded performance for some data sources. In particular, the default ‘contains’ filter should not be used if what is really required is an exact match (‘is’ or ‘is not’). Although the results might be the same, depending on the actual data, the performance might be drastically different due to the use of indexes.
 * **Multi select slicers:** By default, slicers only allow a single selection to be made. Allowing multi selection in filters can cause some performance issues, because as the user selects a set of items in the slicer (for example, the ten products they are interested in), then each new selection will result in  queries being sent to the backend source. Whilst the user can select the next item prior to the query completing, this does result in extra load on the underlying source.
+
+* **Consider switching off totals on visuals:** By default, tables and matrices display totals and subtotals. In many cases, separate queries must be sent to the underlying source to obtain the values for such totals. This applies whenever using *DistinctCount* aggregation, or in all cases when using DirectQuery over SAP BW or SAP HANA. Such totals should be switched off (by using the **Format** pane) if not required. 
 
 ### Diagnosing performance issues
 This section describes how to diagnose performance issues, or how to get more detailed information to allow the reports to be optimized.
