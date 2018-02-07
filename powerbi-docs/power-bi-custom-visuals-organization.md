@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 02/06/2018
 ms.author: maghan
 
 ---
@@ -40,11 +40,11 @@ Organization visuals are deployed and managed by the Power BI administrator from
 
 ## Using organizational custom visuals
 
-To learn more about how to use organizational custom visuals in the reports that you created, see the following article:[Learn more about importing organizational visuals into your reports](power-bi-custom-visuals.md).
+To learn more about how to use organizational custom visuals in the reports that you created, see the following article: [Learn more about importing organizational visuals into your reports](power-bi-custom-visuals.md).
  
 ## Administering organizational custom visuals
 
-To learn more about how to administer, deploy, and manage organizational custom visuals in your organization, see the following article: Learn more about deployment and management of organization custom visuals 
+To learn more about how to administer, deploy, and manage organizational custom visuals in your organization, see the following article: [Learn more about deployment and management of organization custom visuals](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
 > A custom visual can contain code with security or privacy risks. Make sure you trust the author and the source of any custom visual before deploying it to the organization repository. 
@@ -52,9 +52,9 @@ To learn more about how to administer, deploy, and manage organizational custom 
 
 ## Considerations and limitations
  
-Since organizational custom visuals is in preview, there are a handful of considerations and limitations that you need to be aware of and take into consideration:
+Since organizational custom visuals is in preview, there are a handful of considerations and limitations that you need to be aware of and take into consideration.
  
-Admin
+Admin:
 
 * Legacy custom visuals (such as custom visuals that are not built on top of the new versioned APIs) are not supported
 
