@@ -92,7 +92,8 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Enlighten World Flags](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380923) | |
 | [Force-Directed Graph](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380764) |[Video](https://youtu.be/YsTa7uyJ4sg) |
 | [Forecasting TBATS](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381326?src=office) | |
-| [Funnel with source]() | || [Gantt](https://store.office.com/gantt-WA104380765.aspx) |[Video](https://youtu.be/qJ7s_KrGiUU) |
+| [Funnel with Source by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381334) |[Video](https://youtu.be/R_EcimsLI8U) | 
+| [Gantt](https://appsource.microsoft.com/en-us/product/office/WA104380765) |[Video](https://youtu.be/qJ7s_KrGiUU) |
 | [Globe Data Bars](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381344) | |
 | [Hierarachy chart by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381333?src=office) | |
 | [Histogram](https://store.office.com/histogram-chart-WA104380776.aspx) | |
