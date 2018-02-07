@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/06/2018
 ms.author: davidi
 
 ---
@@ -42,7 +42,7 @@ To work around this error, you can turn on **Fast Combine**. **Fast Combine** wi
 > 
 
 ## What is Fast Combine?
-To learn more about privacy levels and Fast Combine, you can look at [Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). By default, the privacy level will be set to private which could result in the error mentioned above. This is because a setting of private will isolate the data source from other sources. An example of where this would be a problem would be a parameterized query getting inputs from another data source.
+To learn more about privacy levels and Fast Combine, you can look at [Privacy Levels](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). By default, the privacy level will be set to private which could result in the error mentioned above. This is because a setting of private will isolate the data source from other sources. An example of where this would be a problem would be a parameterized query getting inputs from another data source.
 
 Turning Fast Combine on will ignore the private setting and allow the execution to occur.
 
@@ -82,7 +82,7 @@ You can use the following steps to enable Fast Combine for your personal gateway
 
 ## Next steps
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
-[Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[Privacy Levels](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
 [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

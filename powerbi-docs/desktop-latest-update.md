@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 02/06/2018
 ms.author: davidi
 
 ---
 # What's new in the latest Power BI Desktop update?
 
-## February 2018 Update (2.55.5010.201)
+## February 2018 Update (2.55.5010.521)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -41,34 +41,34 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
 
-* Multi-select data points across multiple pages  [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Sync slicers across multiple pages of a report  [[article]](desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
-* Numeric range slicer improvement - whole number snapping (Preview)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
-* Faster geocoding for Bing maps (web Preview) - approximately 6x faster  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
-* Overflow data labels for bar and column charts visuals   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
-* Search the Formatting and Analytics panes  [[article]](desktop-analytics-pane.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
+* Multi-select data points across multiple pages  [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
+* Sync slicers across multiple pages of a report  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Numeric range slicer improvement - whole number snapping (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
+* Faster geocoding for Bing maps (web Preview) - up to 6x faster  [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
+* Overflow data labels for bar and column charts visuals   [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
+* Search the Formatting and Analytics panes  [[video]](https://youtu.be/KeVB5RwMzJo?t=14m46s)  [[article]](desktop-analytics-pane.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
 ### Custom visuals
 
-* Organization custom visuals (Preview)  [[article]](power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
+* Organization custom visuals (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s)  [[article]](power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
 ### Analytics
 
-* Set a custom date table  [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
-* Quick measures are now generally available  [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+* Set a custom date table  [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s)  [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+* Quick measures are now generally available  [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s)  [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 ### Data connectivity
 
-* Improvements to DirectQuery over SAP HANA (Preview)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
+* Improvements to DirectQuery over SAP HANA (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=30m1s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
 
 ### Other
 
-* DirectQuery performance improvements  [[article]](desktop-directquery-about.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
-* Open and save performance improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
-* *Show items with no data* improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
-* Persistent filters control for upcoming **Power BI service** feature  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
+* DirectQuery performance improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=32m24s)  [[article]](desktop-directquery-about.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
+* Open and save performance improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=33m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
+* *Show items with no data* improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=34m6s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
+* Persistent filters control for upcoming **Power BI service** feature  [[video]](https://youtu.be/KeVB5RwMzJo?t=34m56s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
 
 
 
@@ -76,6 +76,12 @@ The following updates are new to **Power BI Desktop** this month:
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
 Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
