@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 02/06/2018
 ms.author: yshoukry
 
 ---
@@ -56,7 +56,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/).
+The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
 
 <a name="FindingParams"></a>
 
