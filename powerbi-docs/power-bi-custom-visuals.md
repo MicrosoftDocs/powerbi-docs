@@ -38,6 +38,11 @@ Custom visuals can be in the form of 3 deployment channels:
 
 Custom visuals are packages that include code for rendering the data that is served to them. Anyone can create a custom visual and package it as a single .pbiviz file, that can be imported into a Power BI report.
 
+> [!WARNING]
+> A custom visual could contain code with security or privacy risks; Make sure you trust the author and the source of the custom visual before importing it to your report.
+> 
+> 
+
 ## Organization visuals (Preview)
 
 Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. This gives the admin the control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (i.e. update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
