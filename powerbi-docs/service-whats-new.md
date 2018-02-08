@@ -32,6 +32,23 @@ You can also check out the YouTube channels for information about "What's new" a
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+## January 2018
+*	Share and favorite Power BI reports.
+*	OAuth2 and DirectQuery Single Sign-on Support (SSO) for Azure SQL Database and Data Warehouse.
+*	In-region auditing: audit logs will now be stored in the same Office 365 region as their tenant.
+*	GA of SharePoint Online [Power BI report web part](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*	Admin control to turn off viewing custom visuals for all users in a tenant.
+*	Scheduled refresh support for Azure Analysis Services (AAS).
+
+## Previous months (2017)
+## October and November 2017
+*	Selective publish of content with [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+*	External user distribution with [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+* AI-powered app recommendations.
+* Dashboard on-tile UI updates.
+* E-mail subscriptions support for apps. 
+* Granular admin control for [publish to web](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
+
 ## September 2017
 * Share dashboards to free users with Premium.
 * Allocate capacities to suit your business needs with v-core pooling.
@@ -39,7 +56,6 @@ You can also check out the YouTube channels for information about "What's new" a
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
 * Improved load performance for [usage metrics](service-usage-metrics.md).
 
-## Previous months (2017)
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Get started with [Power BI service](service-connect-to-services.md) apps for online services.
