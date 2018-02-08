@@ -87,17 +87,6 @@ You can configure the privacy level for your data source. This controls how data
 
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings9.png)
 
-## 'Get Data' experience for Analysis Services in Power BI site
-A unique option for Analysis Services is to use Get Data within the Power BI service directly. You can connect to a live Analysis Services data source that is configured within the gateway without needing Power BI Desktop. Your account needs to be listed in the **Users** tab for the data source, under the gateway, for it to show up in the list. To connect to the data source, you can do the following.
-
-1. Within the Power BI service, select **Get Data**.
-2. Select **Databases**.
-3. Select **SQL Server Analysis Services** > **Connect**.
-4. Select a data source from the list. Any Analysis Services data source that you have access to will be listed here.
-5. Select the model that you want to connect to. Then select **Connect**.
-
-You will see a dataset show up with the name of the server. You can then select that dataset and begin to create reports on it. This will be working against live data.
-
 ## Usernames with Analysis Services
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
 
