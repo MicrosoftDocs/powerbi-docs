@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 02/07/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -44,6 +44,22 @@ Get started with these popular on-demand webinars
 ## Upcoming webinars
 
 Register to hear from Power BI experts and participate in live Q&A sessions
+
+**Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
+<br>by Mark Traverso and Miguel Martinez
+<br>*February 15th, 12:00PM PST, 3:00PM EST*
+
+Learn tips, tricks & best practices to achieve more in your day-to-day work using Office 365.
+
+[Register to watch on February 15th](https://aka.ms/Office365FinanceProsPBI)
+
+**Selling BI Solutions with Microsoft**
+<br>by Tamer Farag
+<br>*February 15th, 8:00AM PST, 11:00AM EST*
+
+Join this webinar to learn about how to successfully partner with Microsoft to capture the Business Intelligence market opportunity. Get an overview of our most up-to-date training resources, marketing materials, incentives and offers to help build and grow your practice. Plus, learn how to get showcased on PowerBI.com and AppSource.com to ensure your solutions and offers are front and center with Microsoft customers and sellers.
+
+[Register to watch on February 15th](https://infopedia.eventbuilder.com/event?eventid=l9d4s7)
 
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
 <br>by Miguel Martinez
