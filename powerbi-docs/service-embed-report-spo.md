@@ -94,12 +94,6 @@ Alternatively, you can grant users access to your report by doing the following.
 
 2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](service-share-dashboards.md).
 
-## Allowing Free users access to reports
-
-Free users can view reports that are embedded with the Power BI web part for SharePoint Online. You provide access to free users in the same way you do Pro users as described in [Granting access to reports](#granting-access-to-reports) above. The workspace, where the report is located, also has to be backed by Power BI Premium capacity. 
-
-For example, if you have a report, in an app workspace, you would have to assign the app workspace to a Power BI Premium capacity. You would also need to add the Free user to the list of members of that app workspace.
-
 ## Web part settings
 
 Below is a description of the settings that can be adjusted for the Power BI web part for SharePoint Online.
@@ -156,5 +150,5 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
 
