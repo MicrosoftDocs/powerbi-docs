@@ -854,7 +854,7 @@
     items: 
     - name: "Power BI apps for mobile devices"
       href: mobile-apps-for-mobile-devices.md
-    - name: "Find your dashboards and reports on your mobile device"
+    - name: "Find dashboards, reports, and apps on a mobile device"
       href: mobile-apps-find-content-mobile-devices.md
     - name: "What's new in the mobile apps for Power BI"
       href: mobile-whats-new-in-the-mobile-apps.md
@@ -872,7 +872,7 @@
       href: mobile-tiles-in-the-mobile-apps.md
     - name: "Share a dashboard from the Power BI mobile apps"
       href: mobile-share-dashboard-from-the-mobile-apps.md
-    - name: "Favorite items in the Power BI mobile apps"
+    - name: "Favorites in the Power BI mobile apps"
       href: mobile-apps-favorites.md
     - name: "Get Power BI data from the real world with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
