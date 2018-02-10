@@ -140,7 +140,7 @@ Network latency can impact report performance by increasing the time required fo
 
 Tools such as [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) can provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. If network latency is an issue, you can try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines. 
 
-To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
+To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
 
 ## Next steps
 - [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy), with all-around guidance on large-scale Power BI deployments 
