@@ -37,6 +37,14 @@ Tag reports as favorites so they appear on the **Favorites** page. Read more abo
 
 Now when someone shares a report with you, it's listed on the **Shared with me** page along with dashboards.
 
+### Improved hyperlink support
+
+You can now tap links in custom visuals to open them in your mobile browser.
+
+### Intune integration (Android)
+
+Support for conditional access using Intune mobile device management.
+
 ## December 2017
 
 ### Improved security management 

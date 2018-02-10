@@ -856,49 +856,49 @@
       href: mobile-apps-for-mobile-devices.md
     - name: "Find dashboards, reports, and apps on a mobile device"
       href: mobile-apps-find-content-mobile-devices.md
-    - name: "What's new in the mobile apps for Power BI"
+    - name: "What's new in the mobile apps"
       href: mobile-whats-new-in-the-mobile-apps.md
   - name: All mobile apps
     items: 
     - name: "Power BI for iOS apps"
       href: mobile-ios-ipad-iphone-apps.md
-    - name: "View on-premises reports and KPIs in the Power BI mobile apps"
+    - name: "View on-premises reports and KPIs in the mobile apps"
       href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-    - name: "Dashboards for mobile Power BI"
+    - name: "Dashboards in the mobile apps"
       href: mobile-apps-view-dashboard.md
-    - name: "Reports in the Power BI mobile apps"
+    - name: "Reports in the mobile apps"
       href: mobile-reports-in-the-mobile-apps.md
     - name: "Interact with tiles in the mobile apps"
       href: mobile-tiles-in-the-mobile-apps.md
     - name: "Share a dashboard from the Power BI mobile apps"
       href: mobile-share-dashboard-from-the-mobile-apps.md
-    - name: "Favorites in the Power BI mobile apps"
+    - name: "Favorites in the mobile apps"
       href: mobile-apps-favorites.md
-    - name: "Get Power BI data from the real world with the mobile apps"
+    - name: "Get  real-world Power BI data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
-    - name: "Scan a Power BI QR code from your phone"
+    - name: "Scan a QR code from your phone"
       href: mobile-apps-qr-code.md
-    - name: "Get notifications in the Power BI mobile apps"
+    - name: "Get notifications in the mobile apps"
       href: mobile-apps-notification-center.md
-    - name: "Annotate and share a tile, report, or visual in the mobile apps"
+    - name: "Annotate and share in the mobile apps"
       href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-    - name: "Set data alerts in the Power BI mobile apps"
+    - name: "Set data alerts in the mobile apps"
       href: mobile-set-data-alerts-in-the-mobile-apps.md
-    - name: "Filter a report by location in the Power BI mobile apps"
+    - name: "Filter a report by location in the mobile apps"
       href: mobile-apps-geographic-filtering.md
     - name: "Ask questions about your data in the iOS mobile apps (Tutorial)"
       href: mobile-apps-ios-qna.md
     - name: "Create a deep link that goes to a specific location"
       href: mobile-apps-deep-link-specific-location.md
-    - name: "View your data offline in the Power BI mobile apps"
+    - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "View and interact with Power BI reports optimized for your phone"
+    - name: "View and interact with reports optimized for your phone"
       href: mobile-apps-view-phone-report.md
     - name: "Configure mobile apps with Intune"
       href: service-admin-mobile-intune.md
     - name: "Using OAuth to connect to Reporting Services"
       href: mobile-oauth-ssrs.md
-    - name: "Supported languages in the Power BI mobile apps"
+    - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
   - name: iPad app (Power BI for iOS)
     items: 
@@ -910,7 +910,7 @@
       href: mobile-iphone-app-get-started.md
     - name: "Power BI Apple Watch app"
       href: mobile-apple-watch.md
-    - name: "Scan a barcode from the Power BI app on your iPhone"
+    - name: "Scan a barcode from the mobile app on your iPhone"
       href: mobile-apps-scan-barcode-iphone.md
   - name: Power BI app for Android phones
     items: 
@@ -926,7 +926,7 @@
     items: 
     - name: "Get started with the Power BI mobile app for Windows 10"
       href: mobile-windows-10-phone-app-get-started.md
-    - name: "View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10"
+    - name: "View Reporting Services mobile reports and KPIs on the mobile app for Windows 10"
       href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
     - name: "Pin a Power BI tile or dashboard to the Start screen"
       href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
