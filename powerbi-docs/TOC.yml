@@ -128,8 +128,6 @@
       href: service-connect-to-azure-consumption-insights.md
     - name: "Azure Search"
       href: service-connect-to-azure-search.md
-    - name: "Azure Security Center"
-      href: service-connect-to-azure-security-center.md
     - name: "Bing"
       href: service-connect-to-bing.md
     - name: "Circuit ID"
@@ -982,8 +980,6 @@
     items: 
     - name: "Create a custom visual with the Developer Tools"
       href: service-custom-visuals-getting-started-with-developer-tools.md
-    - name: "Review custom visuals for security and privacy"
-      href: service-custom-visuals-review-for-security-and-privacy.md
     - name: "Get a custom visual certified"
       href: power-bi-custom-visuals-certified.md
   - name: Push data into a dashboard
