@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/01/2017
-ms.author: sirsu
+ms.date: 02/07/2018
+ms.author: nikhilga
 
 ---
 # What's new in the Power BI service

@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 02/09/2018
 ms.author: maggies
 
 ---
@@ -26,6 +26,24 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the Power BI service](service-whats-new.md)  
+
+## January 2018
+
+### Report favorites
+
+Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+
+### View shared reports
+
+Now when someone shares a report with you, it's listed on the **Shared with me** page along with dashboards.
+
+### Improved hyperlink support
+
+You can now tap links in custom visuals to open them in your mobile browser.
+
+### Intune integration (Android)
+
+Support for conditional access using Intune mobile device management.
 
 ## December 2017
 
