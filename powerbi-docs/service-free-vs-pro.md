@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/02/2017
+ms.date: 02/13/2018
 ms.author: maghan
 
 ---
 # Power BI Free vs Pro
 Every user within Power BI is either Free or Pro. It is helpful to understand the differences between these two types of users.
 
-*All users* in the service are either Free or Pro. The main difference between a Free or Pro user is centered around sharing and collaboration. Only Pro users can publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashbaords and reports. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
+*All users* in the service are either Free or Pro. The main difference between a Free or Pro user is centered around sharing and collaboration. Only Pro users can publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashboards and reports. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
 
 If an app is published, and the app workspace it is for is assigned to Premium capacity, Free users can consume those apps.
 

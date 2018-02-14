@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/19/2017
+ms.date: 02/13/2018
 ms.author: maghan
 
 ---
@@ -107,7 +107,7 @@ public class PBITile
 ```
 
 #### Get tiles using the .NET SDK
-You can use the .NET SDK to retrieve a list of dashbaords instead of calling the REST API directly.
+You can use the .NET SDK to retrieve a list of dashboards instead of calling the REST API directly.
 
 ```
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
