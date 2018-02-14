@@ -47,7 +47,9 @@ To submit a custom visual for certification:
    * Title: Visual Certification Request    
    * Link to GitHub repository where the visual source code is hosted    
    * Adhere to the requirements (see above)    
-   * Pass the code and security review    2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
+   * Pass the code and security review    
+
+2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
 ## Removal of Power BI Certified custom visuals
 Microsoft, at its discretion, may remove a visual from the Certified list.  
