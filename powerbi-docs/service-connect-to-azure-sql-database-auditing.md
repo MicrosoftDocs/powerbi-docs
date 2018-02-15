@@ -56,7 +56,7 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
    - Enter the end date of audit logs you are interested in. Enter “\*” to load audit logs without an upper time limit.
    
    ![](media/service-connect-to-azure-sql-database-auditing/dbauditing_param.png)
-5. For Authentication Method, select **Key**, enter your** Account Key** \> **Sign In**.
+5. For Authentication Method, select **Key**, enter your **Account Key** \> **Sign In**.
    
    ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqlauditing3.png)
 6. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
