@@ -212,7 +212,7 @@ When setting backgrounds for report pages, choose colors that don’t overshadow
 
 You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements.  
 
-A study on the use of color and visualizations within Web pages found that higher contrast between colors increases the speed of comprehension (*The effect of text and background colour on visual search of Web pages** and **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics*.)
+A study on the use of color and visualizations within Web pages found that higher contrast between colors increases the speed of comprehension (The effect of text and background colour on visual search of Web pages and **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics**.)
 
 We’ve applied some color best practices to our example report (Figure 20 and 21) below. The most-notable was that we changed the background color to black.  The yellow was too bright and strained our eyes.  Also, on the “Count of athlete name by year and class” chart, the yellow portion of the bars disappeared into the yellow background.  Using a black (or white) background gives us maximum contrast and makes the visuals the focus of attention.
 
