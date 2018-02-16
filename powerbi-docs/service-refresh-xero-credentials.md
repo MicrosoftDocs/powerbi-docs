@@ -3,7 +3,7 @@ title: How to refresh your Xero content pack credentials
 description: If you use the Xero Power BI content pack, you may have experienced a problem with the content pack’s daily refresh due to a recent Power BI service incident.
 services: powerbi
 documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: yshoukry
+ms.author: sarinas
 
 ---
 # How to refresh your Xero content pack credentials if refresh failed
