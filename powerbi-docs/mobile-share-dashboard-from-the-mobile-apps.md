@@ -68,9 +68,7 @@ You can only unshare if you're the owner.
 2. Tap **Invite a colleague**, then type email addresses and a message to accompany your invitation.
 3. To allow resharing, leave **Allow recipients to reshare** selected.
    
-   > [!NOTE]
-   > Resharing allows your coworkers to forward the email invitation to others in your organization, either through the web or the mobile apps.
-   > 
+   Resharing allows your coworkers to forward the email invitation to others in your organization, either through the web or the mobile apps. 
 
 4. Tap **Send** in the upper-right corner.
    
@@ -106,11 +104,9 @@ You can only unshare if you're the owner.
 1. Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message.
 2. To allow resharing, leave **Allow recipients to share this dashboard** selected.
    
-   > [!NOTE]
-   > Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
-   > 
-   > 
-3. Tap the **Send** icon ![Send icon](media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) in the upper-right corner to send the mail.
+   Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
+   
+1. Tap the **Send** icon ![Send icon](media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) in the upper-right corner to send the mail.
    
    Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account
    
@@ -143,10 +139,8 @@ You can only unshare if you're the owner.
    ![Invite dialog box](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
 3. To allow resharing, leave **Allow recipients to reshare** selected.
    
-   > [!NOTE]
-   > Resharing allows your coworkers to share with others in your organization, either through the browser or the mobile apps.
-   > 
-   > 
+   Resharing allows your coworkers to share with others in your organization, either through the browser or the mobile apps.
+   
 1. Tap the **Send** icon ![Send icon](media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
    Your colleagues get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it, in a browser or in the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account

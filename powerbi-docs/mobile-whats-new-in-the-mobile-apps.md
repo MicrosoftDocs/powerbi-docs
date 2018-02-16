@@ -31,7 +31,7 @@ For related "What's New" information, see:
 
 ### Share reports
 
-Now you can share a report directly from the mobile apps.
+Now you can share a report directly from the mobile apps. Read more about [sharing dashboards and reports from the mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
 
 ## January 2018
 
