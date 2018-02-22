@@ -42,6 +42,7 @@
 
     },
     "fileMetadata": {},
+	"fileMetadataFiles": ["LocalizationGroupMetaDataBySubDict.json"],
     "template": [],
     "dest": "powerbi-docs"
   }
