@@ -3,7 +3,7 @@ title: Connect to VMob with Power BI
 description: VMob for Power BI
 services: powerbi
 documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
 ---
 # Connect to VMob with Power BI
