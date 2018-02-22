@@ -140,12 +140,12 @@ Roles can be provded with the identity in an embed token. If no role is provided
 **Using the CustomData feature**
 
 The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
-It is implemented for our customers as an alternative way to customize data consumption.
-It can be used inside the role DAX query, and it can be used without any role in a measure DAX query.
+You can use this as an alternative way to customize data consumption.
+You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
 CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
 
 > [!NOTE]
-> The CustomData feature will only work for models that reside in Azure Analysis Services, and it will only work in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must have username.
+> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must have username.
 >
 >
 
