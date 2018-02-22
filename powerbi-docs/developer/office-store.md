@@ -83,7 +83,7 @@ Follow the below steps to complete the submission.
    * *Submission title:* How your submission will be named in the developer center
    * *Version:* Your version number is auto-populated from your add-in app package.
    * *Release Date (UTC):* Select a date for your app to release to the store. If a future date is chosen, your app will not be available in the store until that date is reached.
-   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI custom visuals will be tagged.You may provide up to 2 additional categories, for help users easily search for your visual
+   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI custom visuals will be tagged. You may provide up to 2 additional categories, for help users easily search for your visual
    * *Testing notes:* optional, if you'd like to provide some instructions for the testers at Microsoft
    * *My app calls, supports, contains, or uses cryptography or encryption:* leave unchecked
    * *Make this add-in available in the Office add-in catalog on iPad:* leave unchecked
@@ -118,7 +118,7 @@ Follow the below steps to complete the submission.
     > If you select any other option other than free, or have an In-App purchase content in the submitted visual, the submission will be rejected.
     > 
     > 
-17. You can now select **Save as draft" and submit later, or select **Submit for approval** to submit the custom visual to the Office store.
+17. You can now select **Save as draft** and submit later, or select **Submit for approval** to submit the custom visual to the Office store.
 
 ## Tracking submission status and usage
 You can review the [validation policies](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).
