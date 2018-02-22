@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02//2018
+ms.date: 02/22/2018
 ms.author: maghan
 ---
 # Power BI admin portal
