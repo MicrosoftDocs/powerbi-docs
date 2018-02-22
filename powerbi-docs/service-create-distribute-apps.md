@@ -113,7 +113,7 @@ When the dashboards and reports in your app workspace are ready, you publish the
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. You can enable this setting in the [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal). Go [here](#how-to-enable-pushing-apps) for more details on distributing access.
+5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. You can enable this setting in the [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal). For some considerations go [here](#how-to-enable-pushing-apps).
 
     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
@@ -169,7 +169,7 @@ After you push an app, it will show up in the Apps list automatically. You can c
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-# Considerations
+# Considerations for automatically installing apps
 Here are some things to keep in mind when pushing apps to end users:
 
 * Pushing an app to users can take time. While most apps will install immediately for your users, pushing apps can take time.  It depends on the number of items in the app and the number of people given access. It’s recommended that you push apps during off hours with plenty of time before users need it. Verify with several users before sending broad communication about the app’s availability.
