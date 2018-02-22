@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 02/21/2018
 ms.author: mihart
 
 ---
@@ -53,44 +53,55 @@ Watch this video to see Will create a scatter chart and then follow the steps be
 
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Start on a [blank report page ](power-bi-report-add-page.md) and select the **Sales** \> **Sales Per Sq Ft** and **Sales** > **Total Sales Variance %** fields. If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+1. Select the yellow plus icon to create a [blank report page ](power-bi-report-add-page.md).
  
-2. From the Fields pane, select **District > District**.
-   
+2. From the Fields pane, select the following fields:
+   - **Sales** > **Sales Per Sq Ft**
+   - **Sales** > **Total Sales Variance %**
+   - **District** > **District**
+
     ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
-4. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
+
+    If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+
+3. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
+
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
-5. Drag **District** from **Details** to **Legend**.
-   
+
+4. Drag **District** from **Details** to **Legend**. This displays a scatter chart that plots **Total Sales Variance %** along the Y axis, and plots **Sales Per Square Feet** along the X axis. The data point colors represent districts:
+
     ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
-We now have a scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
+Now let's add a third dimension.
 
 ## Create a bubble chart
-1. From the Fields pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. 
+
+1. From the **Fields** pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. The data points expand to volumes proportionate with the sales value.
    
    ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
-2. Hover over a bubble.  The size of the bubble reflects the value of **This Year Sales**.
+
+2. Hover over a bubble. The size of the bubble reflects the value of **This Year Sales**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
-3. Optionally, [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number between 3,500 (default) and 10,000.
+
+    ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+
+   > [!NOTE]
+   > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users' expectations. Note that for higher numbers of data points, you should test the results on different form factors to ensure good performance.
+
+4. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md). To select the marker shape, expand the **Shapes** card, then select a marker shape.
+
+      ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    You can also change the marker shape to diamond, triangle, or square:
 
    ![Square marker](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-4. Optionally, to set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. The default is 3500. 
- 
-    ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
-
-   > [!NOTE]
-   > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users’ expectations.
-
-5.   Optionally, to select the marker shape, expand the **Shapes** card, then select a marker shape.
-
-      ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## Considerations and Troubleshooting
+
 ### **Your scatter chart has only one data point**
 Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
