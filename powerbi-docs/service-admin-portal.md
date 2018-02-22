@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/06/2018
+ms.date: 02//2018
 ms.author: maghan
 ---
 # Power BI admin portal
@@ -188,6 +188,14 @@ Users in the organization can publish content packs to the entire organization.
 ### Create template organizational content packs
 
 Users in the organization can create template content packs that use datasets built on one data source in Power BI Desktop.
+
+### Push apps to end users
+
+Users can share apps directly with end users without requiring installation from Appsource.
+
+![](media/service-admin-portal/powerbi-admin-pushapps01.png)
+
+If you would like more information on Push apps to end users then go [here](service-create-distribute-apps.md#how-to-enable-pushing-apps).
 
 ## Integration settings
 
