@@ -91,7 +91,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
      ![Customized image](media/service-create-distribute-apps/power-bi-apps-image.png)
 
 ## Publish your app
-When the dashboards and reports in your app workspace are ready, you publish them as an app. Remember that you don't have to publish all the reports and dashboards in the workspace. You can just publish the ones that are ready. 
+When the dashboards and reports in your app workspace are ready, you publish them as an app. Remember that you don't have to publish all the reports and dashboards in the workspace. You can just publish the ones that are ready.
 
 1. In the workspace list view, decide which dashboards and reports you want to include in the app.
 
@@ -113,7 +113,7 @@ When the dashboards and reports in your app workspace are ready, you publish the
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. You can enable this setting in the [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal). For some considerations go [here](#how-to-enable-pushing-apps).
+5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. You can enable this setting in the [Power BI Admin Portal](#how-to-enable-pushing-apps). You can learn more considerations for [pushing an app](#how-to-enable-pushing-apps).
 
     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
@@ -145,40 +145,31 @@ After you publish your app, you may want to change or update it. It’s easy to 
 
 The people you’ve published the app to automatically see the updated version of the app. 
 
-## Automatically install apps for end users
-You can automatically install apps for end users, making it easier for you to distribute the right apps to the right set of people.
+# Automatically install apps for end users
+You can automatically install apps for end users, making it easier to distribute the right apps to the right people or groups.
 
-Apps deliver data that your end users need to do their jobs. Now you can automatically install these apps in the Apps content list rather than you finding it from Microsoft AppSource or following an installation link. This capability makes it easier for you to roll out standard Power BI content to your users.
+Apps deliver data that your end users need to do their jobs. Now you can automatically install these apps in the Apps content list rather than you finding it from Microsoft AppSource, or following an installation link. This makes it easier for you to roll out standard Power BI content to your users.
 
-# How to enable pushing apps
-Your tenant admin enables the ability to push apps. This is done in the [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal) in **Tenant settings**.
-
-   ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-pushapps01.png)
-
-You can switch the setting to **Enabled** and then specify who gets this capability (entire org or specific security groups).
-
-Note: Remember that tenant setting changes can take some time to take effect, usually around 15 minutes.
-
-# How to install an app automatically for end users
-Once the admin has enabled the feature, the app publishers will have a new option available to **install the app automatically**. When the box is ***checked*** and the application publisher selects **Finish** (or **Update app**, for existing apps), the app will be pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
+## How to install an app automatically for end users
+Once the admin has enabled the feature, the app publishers have a new option available to **install the app automatically**. When the box is ***checked*** and the application publisher selects **Finish** (or **Update app**, for existing apps), the app will be pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-# How users get the apps that were pushed to them
-After you push an app, it will show up in the Apps list automatically. You can curate the apps that a user or job role in your organization need to have at their fingertips.
+## How users get the apps that were pushed to them
+After you push an app, it shows up in the Apps list automatically. You can curate the apps that a user or job role in your organization need to have at their fingertips.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-# Considerations for automatically installing apps
+### Considerations for automatically installing apps
 Here are some things to keep in mind when pushing apps to end users:
 
-* Pushing an app to users can take time. While most apps will install immediately for your users, pushing apps can take time.  It depends on the number of items in the app and the number of people given access. It’s recommended that you push apps during off hours with plenty of time before users need it. Verify with several users before sending broad communication about the app’s availability.
+* Installing an app automatically to users can take time. Most apps will install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
 * Refresh your browser. Before seeing the pushed app in the Apps list, the user may need to refresh, or close and reopen their browser.
 
-* If the user doesn’t immediately see the app in the Apps list. they should refresh or close and reopen their browser. Please wait 24 hours before reporting to an issue Microsoft.
+* If the user doesn’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
 
-* Don’t overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
+* Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
 
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.

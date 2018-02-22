@@ -191,11 +191,17 @@ Users in the organization can create template content packs that use datasets bu
 
 ### Push apps to end users
 
-Users can share apps directly with end users without requiring installation from Appsource.
+# How to enable Push apps
+Your tenant admin enables the ability to push apps in **Tenant settings**.
 
-![](media/service-admin-portal/powerbi-admin-pushapps01.png)
+   ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-pushapps01.png)
 
-If you would like more information on Push apps to end users then go [here](service-create-distribute-apps.md#how-to-enable-pushing-apps).
+You can switch the setting to **Enabled** and then specify who gets this capability (entire org or specific security groups).
+
+> [!NOTE]
+> Remember that tenant setting changes can take some time to take effect.
+>
+Go here to learn more about [Push apps](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## Integration settings
 
