@@ -137,6 +137,44 @@ An [on-premises data gateway](../service-gateway-onprem.md) is used when working
 
 Roles can be provded with the identity in an embed token. If no role is provided, the username that was provided will be used to resolve the associated roles.
 
+**Using the CustomData feature**
+
+The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
+You can use this as an alternative way to customize data consumption.
+You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
+CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
+
+> [!NOTE]
+> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must have username.
+>
+>
+
+**CustomData SDK Additions**
+
+CustomData string property was added to our effective identity in the token generation scenario.
+        
+        [JsonProperty(PropertyName = "customData")]
+        public string CustomData { get; set; }
+
+The identity can be created with custom data using the following call:
+
+        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+
+**CustomData SDK Usage**
+
+If you are calling the REST API, you can add custom data inside each identity, e.g.:
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "EffectiveIdentity",
+            "roles": [ "Role1", "Role2" ],
+            "customData": "MyCustomData",
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+
 ## Considerations and limitations
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
@@ -147,4 +185,3 @@ Roles can be provded with the identity in an embed token. If no role is provided
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
