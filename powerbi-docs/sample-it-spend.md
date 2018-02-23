@@ -31,7 +31,8 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix), or 
+[Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ### Get the content pack for this sample
 

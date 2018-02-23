@@ -35,7 +35,7 @@ This sample is part of a series that illustrates how you can use  Power BI with 
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529784).
 
 ### Get the content pack for this sample
 
