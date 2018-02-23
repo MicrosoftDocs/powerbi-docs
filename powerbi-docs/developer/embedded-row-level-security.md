@@ -145,7 +145,7 @@ You can use it inside the role DAX query, and you can use it without any role in
 CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
 
 > [!NOTE]
-> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must have username.
+> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
 >
 >
 
@@ -163,6 +163,8 @@ The identity can be created with custom data using the following call:
 **CustomData SDK Usage**
 
 If you are calling the REST API, you can add custom data inside each identity, e.g.:
+
+```
 {
     "accessLevel": "View",
     "identities": [
@@ -174,6 +176,7 @@ If you are calling the REST API, you can add custom data inside each identity, e
         }
     ]
 }
+```
 
 ## Considerations and limitations
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
