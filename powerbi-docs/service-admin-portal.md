@@ -199,7 +199,7 @@ You can switch the setting to **Enabled** and then specify who gets this capabil
 
 > [!NOTE]
 > Remember that tenant setting changes can take some time to take effect.
->
+
 Go here to learn more about [Push apps](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## Integration settings
