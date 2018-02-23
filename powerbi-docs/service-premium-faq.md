@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/20/2017
 ms.author: maghan
 
+LocalizationGroup: Premium
 ---
 # Power BI Premium FAQ
 Browse a list of frequently asked questions and answers about the Power BI Premium offering.

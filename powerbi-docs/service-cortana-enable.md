@@ -15,6 +15,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Enable Cortana to access Power BI reports (and their underlying datasets)
 You've read the [Introduction to Cortana and Power BI](service-cortana-intro.md) (if not, you might want to read that first and then come back). And now you want to try it out yourself.  Before you can ask natural language questions in Cortana and find answers from data stored in Power BI ***reports***, there are a few requirements. Specifically, you'll need to do the following.

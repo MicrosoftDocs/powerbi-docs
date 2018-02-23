@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # The report editor...Take a tour
 ## Editing reports in Power BI service and Power BI Desktop

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use a relative date slicer and filter in Power BI Desktop
 With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last thirty days (or month, or calendar months, and so on). And when you refresh the data, the relative time period automatically applies the appropriate relative date constraint.

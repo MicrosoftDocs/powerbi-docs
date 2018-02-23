@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Data from files
 ---
 # Get data from files
 ![](media/service-get-data-from-files/file_icons.png)

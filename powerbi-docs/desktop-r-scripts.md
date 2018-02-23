@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop
 You can run R scripts directly in **Power BI Desktop**, and import the resulting datasets into a Power BI Desktop data model.

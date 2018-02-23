@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Create and publish a Power BI organizational content pack (tutorial)
 > [!NOTE]

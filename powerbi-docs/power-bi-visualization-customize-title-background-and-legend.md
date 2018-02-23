@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Customize visualization titles, legends, and backgrounds (Tutorial)
 In this tutorial you'll learn a few different ways to customize your visualizations.   There are so many options for customizing your visualizations, the best way to learn about them all is by exploring the Formatting pane (select the paintroller icon).  To get you started, this article shows you how to customize a visualization title, legend, and background.  

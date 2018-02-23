@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # DirectQuery and SAP Business Warehouse (BW)
 You can connect to **SAP Business Warehouse (BW)** data sources directly using **DirectQuery**. Given the OLAP/multidimensional nature of SAP BW, there are many important differences between DirectQuery over SAP BW versus relational sources like SQL Server. These differences are summarized as follows:

@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/21/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Visualizations in Power BI reports
 Visualizations (aka visuals) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In Power BI service, visuals can be [pinned from reports to dashboards](service-dashboard-pin-tile-from-report.md). 

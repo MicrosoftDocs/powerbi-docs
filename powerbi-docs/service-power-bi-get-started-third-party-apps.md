@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: maghan
 
+LocalizationGroup: Get started
 ---
 # Get started with third party apps
 With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third party app which integrates Power BI tiles into a custom built web application. When you use a third party app, you will be asked to grant that application certain permissions to your Power BI account and resources. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See [Revoke third party app permissions](#revoke).

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/28/2017
 ms.author: amac
 
+LocalizationGroup: Samples
 ---
 # Download the Financial Sample workbook for Power BI
 Need some data to try with Power BI service? We have a simple Excel workbook of sample financial data available for download.  Here's how to download it:

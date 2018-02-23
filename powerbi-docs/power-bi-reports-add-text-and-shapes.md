@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Static content in Power BI reports
 Text boxes and shapes can be added to reports using Power BI service and Power BI Desktop. In both cases, you must have editing permissions for the report. If a report has been shared with you, you will not have access to Editing view. 

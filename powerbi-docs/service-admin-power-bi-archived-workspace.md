@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Power BI Archived Workspace
 With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department may choose to take over managing Power BI for users in your organization.  If this takeover occurs, you will benefit from central management of users and permissions in your organization and you may be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization. 

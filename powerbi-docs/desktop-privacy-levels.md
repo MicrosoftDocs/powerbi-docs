@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Power BI Desktop privacy levels
 In **Power BI Desktop**, privacy levels specify an isolation level that defines the degree that one data source will be isolated from other data sources. Although a restrictive isolation level blocks information from being exchanged between data sources, it may reduce functionality and impact performance.

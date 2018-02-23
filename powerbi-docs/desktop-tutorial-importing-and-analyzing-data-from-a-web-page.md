@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Analyzing Web page data using Power BI Desktop (tutorial)
 In this tutorial, you learn how to import a table of data from a Web page and create a report to visualize this data. As part of this process, you navigate across tables available on a web page, and apply data transformation steps to bring the table into a new shape.

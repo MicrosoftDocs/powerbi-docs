@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Filled maps (choropleths) in Power BI (Tutorial)
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    

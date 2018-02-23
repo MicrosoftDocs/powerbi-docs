@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/30/2018
 ms.author: davidi
 
+LocalizationGroup: Transform and shape data
 ---
 # Shape and combine data in Power BI Desktop
 With **Power BI Desktop**, you can connect to many different types of data sources, then shape the data to meet your needs. *Shaping* data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. *Combining* data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.

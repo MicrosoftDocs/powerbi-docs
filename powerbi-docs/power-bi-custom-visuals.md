@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: maghan
 
+LocalizationGroup: Visualizations
 ---
 # Custom visuals in Power BI
 When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download Power BI Desktop or open Power BI service (app.powerbi.com), this set of visuals comes "pre-packaged."

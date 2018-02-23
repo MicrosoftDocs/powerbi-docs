@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/07/2018
 ms.author: nikhilga
 
+LocalizationGroup: Get started
 ---
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:

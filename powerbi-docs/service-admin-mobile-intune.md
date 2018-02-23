@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Configure mobile apps with Microsoft Intune
 Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications, for iOS and Android, integrate with Intune to allow you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, controlling how data is handled by the application and even encrypting application data when the app is not in use.

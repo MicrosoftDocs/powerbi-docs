@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Get started with Power BI Q&A (Quickstart)
 ## Use Power BI Q&A with the Retail Analysis sample

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/10/2018
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # Delete almost anything in Power BI service
 This article teaches you how to delete a dashboard, report, workbook, dataset, app, visualization, and workspace in Power BI service.

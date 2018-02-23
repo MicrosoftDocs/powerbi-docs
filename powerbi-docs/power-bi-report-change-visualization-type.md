@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Change the type of visualization in a Power BI report
 Try different types of visualizations in Power BI service and Power BI Desktop to see which one illustrates your data best. 

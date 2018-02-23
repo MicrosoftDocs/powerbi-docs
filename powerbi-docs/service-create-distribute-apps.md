@@ -18,6 +18,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Create and publish apps with dashboards and reports in Power BI
 

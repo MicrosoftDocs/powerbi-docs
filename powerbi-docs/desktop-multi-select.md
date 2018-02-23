@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Multi-select data elements in visuals using Power BI Desktop
 

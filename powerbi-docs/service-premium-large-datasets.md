@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: v-mamcge
 
+LocalizationGroup: Premium
 ---
 
 # Power BI Premium support for large datasets

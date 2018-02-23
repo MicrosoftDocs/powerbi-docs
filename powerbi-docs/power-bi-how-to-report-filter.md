@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Take a tour of the report Filters pane
 This article takes a deep look at the report Filters pane. You'll see the pane in [Power BI service Editing View and Reading View](service-reading-view-and-editing-view.md) and in [Power BI Desktop Report view](desktop-report-view.md).

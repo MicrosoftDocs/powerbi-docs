@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Resolve Issues when Power BI Desktop will not launch
 In **Power BI Desktop**, users who installed and are running previous versions of the **Power BI on-premises data gateway** can be blocked from launching Power BI Desktop, due to administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine. 

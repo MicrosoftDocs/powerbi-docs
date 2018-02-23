@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Frequently asked questions about Power BI
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting Power BI Gateway - Personal
 The following goes through some common issues you may encounter when using the Power BI Gateway - Personal.

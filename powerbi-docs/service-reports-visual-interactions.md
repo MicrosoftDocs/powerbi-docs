@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/10/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Visualization interactions in a Power BI report
 If you have edit permissions for a report, you can use **Visual interactions** to change how visualizations on a report page impact each other. 

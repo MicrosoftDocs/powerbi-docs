@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Automatically generate data insights with Power BI
 Have a new dataset and not quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?

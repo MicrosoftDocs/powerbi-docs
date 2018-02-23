@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Facebook connector for Power BI Desktop
 The Facebook connector in **Power BI Desktop** relies on the Facebook Graph API. As such, features and availability may vary over time.

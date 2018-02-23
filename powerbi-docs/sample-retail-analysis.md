@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 

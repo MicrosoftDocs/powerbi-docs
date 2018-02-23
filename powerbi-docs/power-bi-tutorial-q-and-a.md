@@ -16,6 +16,7 @@ ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Tutorial: How to use Q&A to create visualizations and build reports
 The [Q&A overview](power-bi-q-and-a.md) introduced you to Power BI Q&A and made the distinction between *consumers* (have dashboards and reports shared with them) and *creators* (own the underlying reports and datasets). The first part of this tutorial is designed primarily for people consuming dashboards using Power BI service. And the second part is designed for people creating reports using either Power BI service or Power BI Desktop. [Q&A and Power BI mobile](mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/qanda.md) are covered in separate articles.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Error: We couldn't find any data in your Excel workbook
 

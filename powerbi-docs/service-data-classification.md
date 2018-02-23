@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: amac
 
+LocalizationGroup: Dashboards
 ---
 # Dashboard data classification
 Every dashboard is different, and depending on the data source you are connecting to, you will likely find that you and the colleagues you share with will need to take different precautions depending on the sensitivity of the data. Some dashboards should never be shared with those outside your company or printed out, while others can be shared freely. By using dashboard data classification, you will be able to raise awareness with those viewing your dashboards about what level of security should be used. You can tag your dashboards with classifications defined by your company’s IT department, so everyone viewing the content will have the same level of understanding around the sensitivity of the data.

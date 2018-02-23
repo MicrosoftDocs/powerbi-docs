@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop
 
