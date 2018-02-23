@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/07/2018
+ms.date: 02/22/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -35,6 +35,10 @@ Get started with these popular on-demand webinars
 <br>by Miranda Li
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Simply-Compelling-Seven-Tips-to-Better-Visualization-Design/m-p/173401?Is=Website)
 
+**Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
+<br>by Miguel Martinez
+<br>[Register and watch now](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
 **Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
 <br>by Carlos Otero and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
@@ -43,38 +47,7 @@ Get started with these popular on-demand webinars
 
 ## Upcoming webinars
 
-Register to hear from Power BI experts and participate in live Q&A sessions
-
-**Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
-<br>by Mark Traverso and Miguel Martinez
-<br>*February 15th, 12:00PM PST, 3:00PM EST*
-
-Learn tips, tricks & best practices to achieve more in your day-to-day work using Office 365.
-
-[Register to watch on February 15th](https://aka.ms/Office365FinanceProsPBI)
-
-**Selling BI Solutions with Microsoft**
-<br>by Tamer Farag
-<br>*February 15th, 8:00AM PST, 11:00AM EST*
-
-Join this webinar to learn about how to successfully partner with Microsoft to capture the Business Intelligence market opportunity. Get an overview of our most up-to-date training resources, marketing materials, incentives and offers to help build and grow your practice. Plus, learn how to get showcased on PowerBI.com and AppSource.com to ensure your solutions and offers are front and center with Microsoft customers and sellers.
-
-[Register to watch on February 15th](https://infopedia.eventbuilder.com/event?eventid=l9d4s7)
-
-**Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
-<br>by Miguel Martinez
-<br>*February 21st, 10:00AM PST, 1:00PM EST*
-
-Have you ever opened a Power BI Dashboard just to think, now what?  How do I navigate through this to find the data that’s important to me? Do you limit your use of filters & slicers for fear of ‘breaking something’?  Fear not, join us to learn how to navigate your way through a Power BI dashboard. We will walk you through common features used by other managers to drill down to the data you want, when you want it.
-
-[Register to watch on February 21st](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
-
-**Visualize public or private datasets with the new Power BI and data.world connector**
-<br>*February 22nd, 10:00AM PST, 1:00PM EST*
-
-In collaboration with data.world, Microsoft has released a new data connector that allows you to import data.world datasets into Power BI Desktop. Join us to learn how to take advantage of this great new connector and leverage the power of the data.world community to share and collaborate with others on your data story.
-
-[Register to watch on February 22nd](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+No webinars scheduled yet. Check back soon for more upcoming events
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -106,7 +79,15 @@ Watch recorded sessions at any time
 <br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
 <br>[Register and watch now](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
+**Visualize public or private datasets with the new Power BI and data.world connector**
+<br>by Patrick McGarry and Miguel Martinez
+<br>[Register and watch now](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
 ### Advanced Topics ###
+
+**Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
+<br>by Mark Traverso and Miguel Martinez
+<br>[Register and watch now](https://aka.ms/Office365FinanceProsPBI)
 
 **How to Implement a Successful Data Governance Strategy That Makes Your Organization More Secure**
 <br>by Ajay Anandan
