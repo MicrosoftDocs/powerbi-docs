@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/22/2018
+ms.date: 02/23/2018
 ms.author: maghan
 ---
 # Power BI admin portal
@@ -191,7 +191,6 @@ Users in the organization can create template content packs that use datasets bu
 
 ### Push apps to end users
 
-# How to enable Push apps
 Your tenant admin enables the ability to push apps in **Tenant settings**.
 
    ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-pushapps01.png)
