@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway FAQ
 <!-- Shared FAQ shared Include -->

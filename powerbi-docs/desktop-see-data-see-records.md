@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/22/2018
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Use See Data and See Records in Power BI Desktop
 In **Power BI Desktop** you can drill into the details of any visual, and see a textual representation of the data or individual data elements for a selected visual. These features are sometimes referred to as *click-through*, or *drill-through* or *drill-through to details*.

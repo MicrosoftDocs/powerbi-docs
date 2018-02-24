@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 05/30/2017
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI service (Tutorial)
 Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.

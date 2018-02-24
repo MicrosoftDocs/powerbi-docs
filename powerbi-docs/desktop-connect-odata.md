@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
 In Power BI Desktop, you can connect to an **OData feed** and use the underlying data just like any other data source in Power BI Desktop.

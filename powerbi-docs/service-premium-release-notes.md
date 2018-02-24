@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/11/2017
 ms.author: maghan
 
+LocalizationGroup: Premium
 ---
 # Power BI Premium release notes
 These are the release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes, and the ability to distribute content without per-user licenses for viewers.

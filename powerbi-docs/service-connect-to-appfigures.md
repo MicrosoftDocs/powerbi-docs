@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to appFigures with Power BI
 Tracking important statistics about your apps is easy with Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.

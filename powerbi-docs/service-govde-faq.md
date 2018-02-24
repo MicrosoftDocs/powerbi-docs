@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # Frequently Asked Questions for Power BI for Germany Cloud customers
 The **Power BI service** has a version available for European Union/European Free Trade Agreement (EU/EFTA) customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to EU/EFTA customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to government customers.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
 
+LocalizationGroup: Data from files
 ---
 # From Excel workbook to stunning report in no time
 Your manager wants to see a report on your latest sales figures combined with your last campaign impressions by the end of the day. But the latest data resides on various third party systems and on files in your laptop. In the past it’s taken hours to create visuals and format a report. You’re beginning to feel anxious.

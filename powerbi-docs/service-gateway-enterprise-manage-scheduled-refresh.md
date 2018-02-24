@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Manage your data source - Import/Scheduled Refresh
 Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.

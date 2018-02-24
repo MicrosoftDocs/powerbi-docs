@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Using R in Query Editor
 You can use **R**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of R into **Query Editor** lets you perform data cleansing using R, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **R** is a powerful language, and can be used in **Query Editor** to prepare your data model and create reports.

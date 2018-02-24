@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # How to make your Excel data work well with Q&A in Power BI
 If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...

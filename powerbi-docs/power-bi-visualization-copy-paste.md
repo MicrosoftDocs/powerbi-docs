@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Copy and paste a visualization in Power BI service and Power BI Desktop
 Copying and pasting a visualization requires edit permissions to the report. In Power BI service, this means opening the report in [Editing View](service-reading-view-and-editing-view.md).

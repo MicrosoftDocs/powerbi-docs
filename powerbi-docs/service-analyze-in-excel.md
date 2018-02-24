@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Reports
 ---
 # Analyze in Excel
 There are times when you may want to use Excel to view and interact with a dataset that you have Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.

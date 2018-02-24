@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting Analyze in Excel
 There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. This page provides solutions for common issues when using Analyze in Excel.

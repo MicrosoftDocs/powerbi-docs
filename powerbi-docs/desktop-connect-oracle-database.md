@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database
 In order to connect to an Oracle database with **Power BI Desktop**, the correct Oracle client software must be installed on the computer running Power BI Desktop. Which Oracle client software you use depends on which version of Power BI Desktop you have installed - the **32-bit** version or the **64-bit** version.

@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Featured dashboards in Power BI service
 ## Create a Featured dashboard

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Reading View and Editing View in Power BI service reports
 In Power BI service (not Power BI Desktop) there are two modes for viewing and interacting with reports: Reading view and Editing view. Reading view is available to all users and is especially designed for data *consumers* while Editing view is only available to report *creators* and owners. 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/14/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway (personal mode)
 You can use on-premises data sources, and create Power BI reports and dashboards, using a gateway. A **gateway** is software that facilitates access to data that is stored on a private, on-premises network, then enables you to use that data in online services like the **Power BI service**. The **on-premises data gateway (personal mode)** is a recently released update to the Power BI gateway that allows individuals to install a gateway on their own computer, and gain access to on-premises data.

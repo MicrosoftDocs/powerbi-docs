@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: maghan
 
+LocalizationGroup: Premium
 ---
 # Power BI Premium - what is it?
 Power BI Premium provides resources dedicated to running the Power BI service for your organization or team, giving you more dependable performance and larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user licenses for viewers.

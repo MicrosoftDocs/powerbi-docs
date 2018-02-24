@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to data in Power BI Desktop
 With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.

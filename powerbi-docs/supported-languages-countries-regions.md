@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/18/2017
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
 

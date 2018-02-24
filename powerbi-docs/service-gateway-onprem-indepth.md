@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway in-depth
 It's possible for users in your organization to access on-premises data (to which they already have access authorization), but before those users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway facilitates quick and secure behind-the-scenes communication between a user in the cloud, to your on-premises data source, and then back to the cloud.

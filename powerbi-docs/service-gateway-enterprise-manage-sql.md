@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Manage your data source - SQL Server
 Once you have installed the on-premises data gateway, you can add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.

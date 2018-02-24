@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Troux for Power BI
 With the Troux content pack, you can visualize your Enterprise Architecture repository in entirely new ways directly in Power BI. The content pack offers a set of insights on your business capabilities, the applications that deliver those capabilities, and the technologies that support those applications that can be fully customized using Power BI.

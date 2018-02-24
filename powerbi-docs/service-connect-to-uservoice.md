@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to UserVoice with Power BI
 Tracking and exploring your UserVoice data is easy with Power BI and the UserVoice content pack. Power BI retrieves your data, including tickets, suggestions and satisfaction ratings, then builds an out-of-box dashboard and reports based on that data.

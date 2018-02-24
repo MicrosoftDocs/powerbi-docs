@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Manage your data storage
 Learn how you can manage your individual, or app workspace, data storage to make sure you can continue to publish reports and datasets.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/05/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Interact with a report in Editing view in Power BI service
 Reports can be edited in Power BI service and Power BI Desktop -- if you have owner permissions. Unlike Desktop, Power BI service has two different modes for interacting with reports -- [Reading view](service-reading-view-and-editing-view.md) for report *consumers* and Editing view for report owners and creators. This article tutorial covers Editing view in Power BI service. 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/02/2018
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Row-level security (RLS) with Power BI
 <iframe width="560" height="315" src="https://www.youtube.com/embed/67fK0GoVQ80?showinfo=0" frameborder="0" allowfullscreen></iframe>

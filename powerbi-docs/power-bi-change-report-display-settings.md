@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Change the size of a report page (Tutorial)
 In the [previous article and video](power-bi-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Page view and Page Size are available in both Power BI service and Power BI Desktop, and look and function amost the same, but for this tutorial we're using Power BI service.

@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # **Recent** content in Power BI service
 

@@ -19,6 +19,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/19/2017
 ms.author: maghan
+LocalizationGroup: Share your work
 ---
 # Embed with report web part in SharePoint Online
 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Use the SAP BW Connector in Power BI Desktop
 With Power BI Desktop, you can access **SAP BusinessWarehouse (BW)** data.

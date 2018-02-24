@@ -18,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: maghan
+LocalizationGroup: Share your work
 ---
 # Publish to web from Power BI
 

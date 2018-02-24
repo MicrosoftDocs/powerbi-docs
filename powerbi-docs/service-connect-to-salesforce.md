@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Salesforce with Power BI
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.

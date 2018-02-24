@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to Excel in Power BI Desktop
 Connecting to an Excel workbook from Power BI Desktop is straightforward, and this article walks you through the steps.

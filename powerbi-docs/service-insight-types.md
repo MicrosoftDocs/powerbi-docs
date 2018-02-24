@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
 ## How does Insights work?

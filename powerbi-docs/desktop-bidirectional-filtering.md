@@ -18,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
+LocalizationGroup: Connect to data
 ---
 # Bidirectional cross-filtering using DirectQuery in Power BI Desktop
 

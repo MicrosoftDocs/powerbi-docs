@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Create a new Power BI report by importing a dataset
 You've read [Reports in Power BI](service-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  

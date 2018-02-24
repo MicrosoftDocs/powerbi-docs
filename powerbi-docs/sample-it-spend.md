@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
 

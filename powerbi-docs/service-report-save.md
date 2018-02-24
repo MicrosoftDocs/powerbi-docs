@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Save a report in Power BI service and Power BI Desktop
 After you make changes to a report in Power BI, you can save it, save it with a new name, or just close it without saving your changes. Say you open the report, create a visualization, and pin it to your dashboard. If you close it now without saving your changes, the tile remains on the dashboard, but the visualization isn't saved in the report. When you click that tile on the dashboard, the report opens, but the visualization doesn't exist in the report.

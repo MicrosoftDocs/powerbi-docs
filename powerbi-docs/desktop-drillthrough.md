@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use drillthrough in Power BI Desktop
 With **drillthrough** in **Power BI Desktop**, you can create a page in your report that focuses on a specific entity - such as a supplier, or customer, or manufacturer. With that focused report page, users can right-click on a data point in other report pages, and drillthrough to the focused page to get details that are filtered to that context.

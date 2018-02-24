@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Power BI Gateway - Personal
 > [!NOTE]

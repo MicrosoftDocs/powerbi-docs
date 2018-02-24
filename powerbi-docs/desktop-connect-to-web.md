@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to a web page from Power BI Desktop
 You can connect to a web page, and import its data into Power BI Desktop, to use in your visuals and in your data models.

@@ -18,6 +18,7 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: maggies
 
+LocalizationGroup: Model your data
 ---
 # Set geographic filters in Power BI Desktop for the mobile apps
 In Power BI Desktop, you can [categorize geographical data](desktop-data-categorization.md) for a column, so Power BI Desktop knows how to treat values in visuals in a report. As an added benefit, when you or your colleagues view that report in the Power BI mobile apps, Power BI automatically provides geographical filters that match where you are. 
