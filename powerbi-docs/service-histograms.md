@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Visualizations
 ---
 # Histograms
 There are several ways to build histograms in Power BI. We'll start with the simplest and go from there.

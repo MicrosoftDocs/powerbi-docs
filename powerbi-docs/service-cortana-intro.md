@@ -15,6 +15,7 @@ ms.workload: powerbi
 ms.date: 01/13/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Quickly find and view your Power BI data using Cortana for Power BI
 Use Cortana across your Windows 10 devices to get instant answers to your important business questions. By integrating with Power BI, Cortana can retrieve key information directly from Power BI dashboards and reports. All it takes is Windows 10 November 2015 version or later, Cortana, Power BI, and access to at least one dataset.

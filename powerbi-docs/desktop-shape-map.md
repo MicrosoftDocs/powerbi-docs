@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: davidi
 
+LocalizationGroup: Transform and shape data
 ---
 # Shape Maps in Power BI Desktop (Preview)
 In Power BI Desktop, you create a **Shape Map** visual to show relative comparisons of regions on a map by applying different colors to different regions. In contrast to the **Map** visual, **Shape Map** cannot show precise geographical locations of data points on a map; instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.

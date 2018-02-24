@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Refresh a dataset stored on OneDrive or SharePoint Online
 Importing files from OneDrive, or SharePoint Online, into the Power BI service is a great way to make sure the work you’re doing in **Power BI Desktop** stays in sync with the Power BI service.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/09/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # How should I collaborate and share in Power BI?
 

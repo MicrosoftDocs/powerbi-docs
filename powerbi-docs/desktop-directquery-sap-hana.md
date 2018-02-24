@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # DirectQuery and SAP HANA
 ‎You can connect to **SAP HANA** data sources directly using **DirectQuery**. There are two options when connecting to HANA:

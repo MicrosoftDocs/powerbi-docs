@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Basic Area chart (Tutorial)
 The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 

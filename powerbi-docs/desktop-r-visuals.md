@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R
 With **Power BI Desktop**, you can use **R** to visualize your data.

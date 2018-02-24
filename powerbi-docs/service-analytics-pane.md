@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Analytics pane in Power BI service
 With the **Analytics** pane in **Power BI service**, you can add dynamic *reference

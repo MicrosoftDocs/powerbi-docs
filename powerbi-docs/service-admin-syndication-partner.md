@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Unable to add Power BI to Office 365 partner subscription
 Office 365 allows companies to resell Office 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.

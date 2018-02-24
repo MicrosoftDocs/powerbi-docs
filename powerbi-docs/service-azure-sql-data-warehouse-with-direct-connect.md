@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: maghan
 
+LocalizationGroup: Data from databases
 ---
 # Azure SQL Data Warehouse with DirectQuery
 Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Configuring proxy settings for the on-premises data gateway
 Your work environment may require that you go through a proxy to access the internet. This could prevent the on-premises data gateway from connecting to the service.

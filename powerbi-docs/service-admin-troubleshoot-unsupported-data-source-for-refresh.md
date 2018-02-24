@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting unsupported data source for refresh
 You may see an error when trying to configured a dataset for scheduled refresh.

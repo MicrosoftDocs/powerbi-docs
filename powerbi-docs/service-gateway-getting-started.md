@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Getting started with Power BI gateways
 Welcome to the **Getting started with Power BI gateways** guide. This short walk-through gets you acquainted with what a gateway does, how it works, and how to get your own gateway installed, configured, and running.  

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: maghan
 
+LocalizationGroup: Visualizations
 ---
 # Using organization custom visuals in Power BI (Preview)
 

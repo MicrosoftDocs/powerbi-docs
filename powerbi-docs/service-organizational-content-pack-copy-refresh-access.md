@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Organizational content packs: Copy, refresh, and get access
 > [!NOTE]

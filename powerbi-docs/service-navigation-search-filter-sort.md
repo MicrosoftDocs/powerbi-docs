@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Get started
 ---
 # Navigation: searching, finding, and sorting content in Power BI service
 There are many ways to navigate your content in Power BI service. The content is organized within workspaces by type: dashboards, reports, workbooks, and datasets.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. These different pathways into your content allow you to quickly find what you need in Power BI service.  

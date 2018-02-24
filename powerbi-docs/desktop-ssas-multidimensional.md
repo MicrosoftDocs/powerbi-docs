@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to SSAS Multidimensional Models in Power BI Desktop
 With Power BI Desktop, you can access **SSAS Multidimensional models**, commonly referred to as **SSAS MD**.

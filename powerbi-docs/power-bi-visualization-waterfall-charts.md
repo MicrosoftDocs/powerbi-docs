@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Waterfall charts in Power BI (Tutorial)
 A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.

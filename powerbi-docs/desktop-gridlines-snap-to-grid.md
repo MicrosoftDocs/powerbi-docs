@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use gridlines and snap-to-grid in Power BI Desktop reports
 The **Power BI Desktop** report canvas provides gridlines that let you neatly align visuals on a report page, and also provides snap-to-grid functionality so visuals in your reports look clean, aligned, and evenly spaced.

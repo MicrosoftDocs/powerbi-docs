@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Use OneDrive for Business links in Power BI Desktop
 Many people have Excel workbooks stored on their OneDrive for Business drive that would be great for use with Power BI Desktop. With **Power BI Desktop**, you can use online links for **Excel** files stored in **OneDrive for Business** to create reports and visuals. You can use a **OneDrive for Business** group account, or your individual **OneDrive for Business** account.

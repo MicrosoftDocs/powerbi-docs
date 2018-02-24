@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # Rename almost anything in Power BI service
 This article teaches you how to rename a dashboard, report, report page, workbook, dataset, app, and workspace in Power BI service.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update?
 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
 Want to improve quick insights results?  If you are a datasest owner, try these:

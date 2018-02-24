@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use grouping and binning in Power BI Desktop
 When **Power BI Desktop** creates visuals, it aggregates your data into chunks (or **groups**) based on values found in the underlying data. Often that's fine, but there may be times when you want to refine how those chunks are presented. For example, you might want to place three categories of products in one larger category (one *group*). Or you might want to see sales figures put into bin-sizes of 1,000,000 dollars, instead of evenly-divided 923,983 dollars.

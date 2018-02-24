@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Using slicers Power BI Desktop
 

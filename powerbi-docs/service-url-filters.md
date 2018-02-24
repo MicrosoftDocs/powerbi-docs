@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Filter a report using query string parameters in the URL
 When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to do this is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire URL.
