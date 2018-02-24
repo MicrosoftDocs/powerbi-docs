@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI content into an application for your customers
+title: Embed Power BI content into an application for your customers for US Government
 description: Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers.
 services: powerbi
 documentationcenter: ''
@@ -49,7 +49,8 @@ This article shows the code used in the [Embedding for your organization sample]
     1. Overwrite Cloud.config file with GCCCloud.config content.
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.  
 	3. Add the GCC parameters in the web.config file as follows...
-    <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+,,,    
+<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
     <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
     <add key="apiUrl" value="https://api.powerbigov.us/" />
     <add key="embedUrlBase" value="https://app.powerbigov.us" />
