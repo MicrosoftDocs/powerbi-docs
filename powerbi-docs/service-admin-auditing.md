@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Using auditing within your organization
 

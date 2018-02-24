@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Duplicate a report page in Power BI
 Duplicating a report page requires edit permissions to the report. In Power BI service, this means opening the report in [Editing view](service-reading-view-and-editing-view.md). 

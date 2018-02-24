@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections
 ## What is on-premises data gateway?  What is a live connection?

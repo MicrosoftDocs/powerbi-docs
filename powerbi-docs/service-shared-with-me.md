@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Display the Power BI dashboards that have been shared with me
 ## Shared with me

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Troubleshooting
 ---
 # Using the same account for Power BI and Azure
 If you are a user of both Power BI and Azure, you may want to use the same login for both services so that you don't need to type in your password twice.

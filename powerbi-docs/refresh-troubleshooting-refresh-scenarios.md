@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Troubleshooting refresh scenarios
 Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service.

@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Page display settings in a Power BI report
 We understand it is critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues view those reports on screens with different aspect ratios and sizes. 

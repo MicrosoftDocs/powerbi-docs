@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Power BI Desktop Send a Smile Privacy Statement
 At Microsoft, we are working hard to protect your privacy, while delivering products that bring you the performance, power, and convenience you want. This Privacy Statement explains many of the data collection and use practices of Microsoft Power BI Desktop Feedback *Send a Smile*. It doesn’t apply to other online or offline Microsoft sites, products, or services.

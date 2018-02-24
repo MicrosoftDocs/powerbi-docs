@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to AT Internet Bridge with Power BI
 AT Internet helps you to extract immediate value from your data using its unified digital analytics platform, the Analytics Suite. The AT Internet Bridge content pack for Power BI includes data around visits, sources, localization and devices for your site.

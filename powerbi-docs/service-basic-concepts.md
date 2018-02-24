@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Get started
 ---
 # Power BI - basic concepts for Power BI service
 

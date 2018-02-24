@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from a report
 ## Pinning tiles from a report

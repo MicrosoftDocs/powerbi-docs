@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Remove your connection to a Power BI organizational content pack
 A coworker created a content pack. You discovered it in AppSource and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?

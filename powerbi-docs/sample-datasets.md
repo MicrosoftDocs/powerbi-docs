@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # What sample data is available to use with Power BI?
 Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset, but because you don't understand (yet) how Power BI works, you worry that you might somehow damage your dataset?

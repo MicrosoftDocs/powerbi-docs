@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/25/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use insights in Power BI Desktop (Preview)
 You can tell **Power BI Desktop** to explain increases or decreases in charts, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze > Explain the decrease** (or increase, if the previous bar was lower), and insight is delivered to you in an easy-to-use window.

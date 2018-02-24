@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Import and display KPIs in Power BI
 With **Power BI Desktop**, you can import and display KPIs in tables, matrixes, and cards.

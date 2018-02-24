@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Pin a tile to a dashboard from Q&A
 ## How to pin a tile from Q&A

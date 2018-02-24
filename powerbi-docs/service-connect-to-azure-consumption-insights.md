@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Microsoft Azure Consumption Insights with Power BI
 Explore and monitor your Microsoft Azure consumption data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.

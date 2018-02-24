@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Troubleshooting
 ---
 # Office 365 dedicated customers - known issues
 Power BI is now supported for Office 365 Dedicated customers.  If you are an O365 Dedicated customer, you can sign in with an account from that tenant and use Power BI. There are two known issues currently.

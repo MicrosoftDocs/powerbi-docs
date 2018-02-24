@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Tips for creating stunning reports
 Creating and working with reports in Power BI service and in Power BI Desktop is very similar, so most of these links apply to either.

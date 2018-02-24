@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Export data from visualizations
 If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](service-reports-show-data.md) or export that data to Excel as an .xlsx or .csv file.   

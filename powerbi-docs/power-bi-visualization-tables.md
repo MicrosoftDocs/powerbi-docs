@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Working with tables in Power BI reports and dashboards (Tutorial)
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.

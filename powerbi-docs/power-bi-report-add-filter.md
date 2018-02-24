@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Add a filter to a Power BI report (in Editing view)
 > [!TIP]

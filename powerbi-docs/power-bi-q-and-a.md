@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Q&A in Power BI service and Power BI Desktop
 ## What is Q&A?

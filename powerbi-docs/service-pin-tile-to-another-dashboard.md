@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
 ﻿One way to add a new [dashboard tile](service-dashboard-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 

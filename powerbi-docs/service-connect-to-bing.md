@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Bing with Power BI
 The Bing content pack will allow you to view analytics around Internet search activity for a term of your choice.

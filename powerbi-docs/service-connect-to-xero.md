@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Xero with Power BI
 Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI content pack. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days and return on investment.

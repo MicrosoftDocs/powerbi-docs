@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Using calculated columns in Power BI Desktop
 With calculated columns, you can add new data to a table already in your model. But instead of querying and loading values into your new column from a data source, you create a Data Analysis Expressions (DAX) formula that defines the column’s values. In Power BI Desktop, calculated columns are created by using the New Column feature in Report View.

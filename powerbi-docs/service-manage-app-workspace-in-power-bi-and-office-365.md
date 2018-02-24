@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Manage your app workspace in Power BI and Office 365
 As creator or admin of an [app workspace in Power BI](service-install-use-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
