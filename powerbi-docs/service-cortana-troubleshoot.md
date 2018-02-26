@@ -93,7 +93,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
    Because we got a result, we now know that Cortana **is** enabled in Power BI. That narrows down the problem to something on the Windows side or the Cortana language setting or having more than 100 datasets enabled for Cortana.
 
 ### Having trouble retrieving answers from a dashboard?
-Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the *Utterances** field.
+Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the **Utterances** field.
 
 ![Open Shared with me in Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 
