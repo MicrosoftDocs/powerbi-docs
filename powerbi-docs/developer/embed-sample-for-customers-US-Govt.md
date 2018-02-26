@@ -23,7 +23,7 @@ ms.author: maghan
 # Embed a Power BI dashboard, tile, or report into your application for US Government
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-Unlike the public cloud, the US Government cloud has 3 different category sections.
+Unlike the public cloud, the US Government cloud has three different category sections.
 
 * Government Community Cloud (GCC)
 
@@ -33,49 +33,53 @@ Unlike the public cloud, the US Government cloud has 3 different category sectio
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI US Government account** account. If you don't have an account set up, you can [sign up for a free Power BI account](../service-govus-signup.md#enroll-your-us-government-organization-in-the-power-bi-service).
+To get started with this walkthrough, you need a **Power BI US Government account** account. If you don't have an account set up, you can [sign up for a government Power BI account](../service-govus-signup.md).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
-> 
-> 
+>
+>
 
 To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
-This article shows the code used in the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) on GitHub. To follow along with this walkthrough, you can download the sample.
+This article shows the code used in the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) on GitHub. To follow along with this walkthrough, you can download the sample.
 
 * Government Community Cloud (GCC):
     1. Overwrite Cloud.config file with GCCCloud.config content.
-	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.  
-	3. Add the GCC parameters in the web.config file as follows...
-,,,    
+	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
+	3. Add the GCC parameters in the web.config file as follows.
+```
+ <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+ <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
+ <add key="apiUrl" value="https://api.powerbigov.us/" />
+ <add key="embedUrlBase" value="https://app.powerbigov.us" />
+```
+
+* Military Contractors (DoDCON):
+    1. Overwrite Cloud.config file with TBCloud.config content.
+	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
+	3. Add the DoDCON parameters in the web.config file as follows.
+```
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-    <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
-    <add key="apiUrl" value="https://api.powerbigov.us/" />
-    <add key="embedUrlBase" value="https://app.powerbigov.us" />
+<add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
+<add key="apiUrl" value="https://api.high.powerbigov.us/" />
+<add key="embedUrlBase" value="https://app.high.powerbigov.us" />
+```
 
-* Military Contractors (DoDCON) - https://app.high.powerbigov.us/apps
-    1. Overwrite Cloud.config file with GCCCloud.config content.
-	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.  
-	3. Add the DoDCON parameters in the web.config file as follows...
-    <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-    <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
-    <add key="apiUrl" value="https://api.high.powerbigov.us/" />
-    <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
-
-
-* Military (DoD) - https://app.mil.powerbigov.us/apps
-    1. Overwrite Cloud.config file with GCCCloud.config content.
-	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.  
-	3. Add the DoDCON parameters in the web.config file as follows...
-    <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-    <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
-    <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
-    <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />>
+* Military (DoD):
+    1. Overwrite Cloud.config file with PFCloud.config content.
+	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
+	3. Add the DoDCON parameters in the web.config file as follows.
+```
+<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
+<add key="apiUrl" value="https://api.mil.powerbigov.us/" />
+<add key="embedUrlBase" value="https://app.mil.powerbigov.us" />>
+```
 
 ## Step 1 - register an app in Azure AD
-You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md#register-an-azure-ad-app-to-embed-power-bi-content).
+You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md#register-an-azure-ad-app-to-embed-power-bi-content). Since there are three differernt category sections depending on what type of government you are in, there are three distinct URLs to register your application.
 
 * Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
 
@@ -83,10 +87,10 @@ You will need to register your application with Azure AD in order to make REST A
 
 * Military (DoD) - https://app.mil.powerbigov.us/apps
 
-If you downloaded the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
+If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are three different category sections depending on what type of government you are in, there are two distinct URLs to get an access token for your application.
 
 * Government Community Cloud (GCC) - login.microsoftonline.com
 
