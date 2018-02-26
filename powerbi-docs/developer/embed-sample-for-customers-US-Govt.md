@@ -7,7 +7,7 @@ author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
-tags: 'Power BI US Government Embed'
+tags: ''
 qualityfocus: no
 qualitydate: ''
 
@@ -49,21 +49,29 @@ This article shows the code used in the [Embedding for your customer sample](htt
     1. Overwrite Cloud.config file with GCCCloud.config content.
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the GCC parameters in the web.config file as follows.
+
 ```
- <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
- <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
- <add key="apiUrl" value="https://api.powerbigov.us/" />
- <add key="embedUrlBase" value="https://app.powerbigov.us" />
+<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+
+<add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
+
+<add key="apiUrl" value="https://api.powerbigov.us/" />
+
+<add key="embedUrlBase" value="https://app.powerbigov.us" />
 ```
 
 * Military Contractors (DoDCON):
     1. Overwrite Cloud.config file with TBCloud.config content.
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the DoDCON parameters in the web.config file as follows.
+
 ```
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
+
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
+
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
 ```
 
@@ -73,8 +81,11 @@ This article shows the code used in the [Embedding for your customer sample](htt
 	3. Add the DoDCON parameters in the web.config file as follows.
 ```
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
+
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
+
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />>
 ```
 
@@ -92,11 +103,11 @@ If you downloaded the [Embedding for your customer sample](https://github.com/Mi
 ## Step 2 - get an access token from Azure AD
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are three different category sections depending on what type of government you are in, there are two distinct URLs to get an access token for your application.
 
-* Government Community Cloud (GCC) - login.microsoftonline.com
+* Government Community Cloud (GCC) - [login.microsoftonline.com](login.microsoftonline.com)
 
-* Military Contractors (DoDCON) - login.microsoftonline.us
+* Military Contractors (DoDCON) - [login.microsoftonline.us](login.microsoftonline.us)
 
-* Military (DoD) - login.microsoftonline.us
+* Military (DoD) - [login.microsoftonline.us](login.microsoftonline.us)
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 
