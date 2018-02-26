@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Export a report from Power BI service to Desktop (Preview)
 In Power BI Desktop, you can export (also referred to as *download*) a report to Power BI service by saving the report and selecting **Publish**. You can also export in the other direction as well, and download a report from Power BI service to Desktop. The extension for files being exported, in either direction, is *.pbix*.

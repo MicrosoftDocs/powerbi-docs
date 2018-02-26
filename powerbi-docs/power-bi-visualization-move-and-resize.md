@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Move and resize a visualization in a report in Power BI service and Power BI Desktop
 Only report creators and owners can move and resize visualizations. In Power BI service (app.powerbi.com) this means opening the report in [Editing view](service-reading-view-and-editing-view.md).

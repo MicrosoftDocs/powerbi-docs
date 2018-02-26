@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/21/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
 

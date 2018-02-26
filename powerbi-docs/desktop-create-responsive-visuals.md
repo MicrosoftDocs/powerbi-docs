@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/13/2017
 ms.author: maggies
 
+LocalizationGroup: Create reports
 ---
 # Optimize a Power BI visual for any size
 You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size.

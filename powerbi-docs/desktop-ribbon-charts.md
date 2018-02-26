@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use ribbon charts in Power BI
 You can use **ribbon charts** in **Power BI** to visualize data, and quickly determine which category of data has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest rang (value) always displayed on top for each time period. Ribbon charts are available in **Power BI Desktop** starting with the September 2017 release, and in subsequent updates to the **Power BI service**.

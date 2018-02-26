@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: maghan
 
+LocalizationGroup: Get started
 ---
 # Power BI Free vs Pro
 Every user within Power BI is either Free or Pro. It is helpful to understand the differences between these two types of users.

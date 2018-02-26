@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
 With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.

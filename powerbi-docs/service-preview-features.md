@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Get started
 ---
 # Opt-in for Power BI preview features
 ## What are *preview features*?

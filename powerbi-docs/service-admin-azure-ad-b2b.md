@@ -18,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/07/2017
 ms.author: maghan
+LocalizationGroup: Administration
 ---
 # Distribute Power BI content to external guest users with Azure AD B2B
 

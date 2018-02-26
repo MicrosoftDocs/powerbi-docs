@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting tile errors
 Below are the common errors you may encounter with tiles along with an explanation.

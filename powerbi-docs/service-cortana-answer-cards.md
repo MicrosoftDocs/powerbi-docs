@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Create reports
 ---
 # Use Power BI service or Power BI Desktop to create a custom Answer Page for Cortana
 Use the full capabilities of Power BI to create special report pages, called *Cortana answer pages* (and sometimes called "Cortana answer cards") designed specifically to answer Cortana questions.

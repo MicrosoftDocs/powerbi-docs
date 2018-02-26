@@ -18,6 +18,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
 In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](service-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Dashboards in Power BI service
 

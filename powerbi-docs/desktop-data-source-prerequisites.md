@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Power BI Data Source Prerequisites
 For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data Sources](desktop-data-sources.md). The following table describes these requirements.

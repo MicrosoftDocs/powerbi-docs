@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Change how a chart is sorted in a Power BI report
 In a Power BI report, you can sort most visualizations alphabetically by the names of the categories in the chart, or by the numeric

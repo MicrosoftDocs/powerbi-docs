@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Disable privacy setting in Power BI Gateway - Personal
 > [!NOTE]

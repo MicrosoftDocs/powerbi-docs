@@ -18,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/23/2018
 ms.author: maghan
+LocalizationGroup: Administration
 ---
 # Power BI admin portal
 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Where is my Power BI tenant located?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>

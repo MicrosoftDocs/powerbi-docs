@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
 This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). ﻿

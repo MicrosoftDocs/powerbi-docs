@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 08/09/2017
 ms.author: maghan
 
+LocalizationGroup: Get started
 ---
 # Signing up for Power BI as an individual
 Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.

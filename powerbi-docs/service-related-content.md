@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Get started
 ---
 # View related content in Power BI service
 The **Related content** pane shows you how your Power BI service content -- dashboards, reports, and datasets -- are interconnected.  And it gets better, from this pane you can perform common task such as refreshing, renaming, generating insights, and so much more. Select a related report or dashboard, and it opens in your Power BI workspace.   

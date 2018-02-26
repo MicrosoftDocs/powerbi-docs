@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Ziosk Survey Analytics with Power BI
 Ziosk Survey Analytics content pack for Power BI offers restaurants with Ziosk tablets unparalleled access to insights provided by Ziosk survey data, including segmentation by day, location, employee, and more.

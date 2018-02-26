@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Share a filtered Power BI report with your coworkers
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI also offers [several other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md).

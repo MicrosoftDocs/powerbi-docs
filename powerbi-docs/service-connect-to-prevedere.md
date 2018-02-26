@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Prevedere with Power BI
 Gain access to exclusive and critical financial information to confidently and proactively drive your business forward.

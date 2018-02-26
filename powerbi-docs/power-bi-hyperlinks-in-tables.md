@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Hyperlinks in tables
 This topic teaches you how to use Power BI Desktop to create hyperlinks. Then, once created, use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes. 

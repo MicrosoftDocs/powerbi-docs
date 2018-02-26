@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Project Online: connect to data through Power BI Desktop
 You can connect to data in Project Online through Power BI Desktop.

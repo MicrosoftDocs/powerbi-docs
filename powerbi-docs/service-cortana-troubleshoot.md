@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Troubleshoot Cortana for Power BI
 This article is part of a series. If you haven't already, we recommend reading the following three articles.

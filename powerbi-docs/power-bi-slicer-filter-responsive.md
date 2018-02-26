@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/08/2017
 ms.author: maggies
 
+LocalizationGroup: Create reports
 ---
 # Create a responsive slicer you can resize in Power BI (Preview)
 

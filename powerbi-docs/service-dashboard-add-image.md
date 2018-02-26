@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Add an image to a Power BI dashboard
 There are several ways to add a standalone image to a dashboard: one way is to pin an image from a report to a dashboard and another way is to add it directly onto the dashboard using **Add tile**.  For more information, visit these articles:

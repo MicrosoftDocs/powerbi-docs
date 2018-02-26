@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Tutorial: Analyzing sales data from Excel and an OData feed
 With **Power BI Desktop**, you can connect to all sorts of different data sources, then combine and shape them in ways that facilitate making interesting, compelling data analysis and visualizations. In this tutorial, you'll learn how to combine data from two data sources. 

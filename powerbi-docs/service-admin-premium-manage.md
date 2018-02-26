@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 
+LocalizationGroup: Premium
 ---
 # Manage capacities within Power BI Premium and Power BI Embedded
 Learn how you can manage Power BI Premium and Power BI Embedded capacities which provides dedicated resources for your content.

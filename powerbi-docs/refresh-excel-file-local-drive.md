@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
 ## What’s supported?

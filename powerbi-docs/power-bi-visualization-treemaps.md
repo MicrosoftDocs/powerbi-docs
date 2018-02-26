@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Treemaps in Power BI (Tutorial)
 Treemaps display hierarchical data as a set of nested rectangles.  Each level of the hierarchy is represented by a colored rectangle (often called a "branch") containing other rectangles ("leaves").  The space inside each rectangle is allocated based on the quantitative value being measured, with the rectangles arranged in size from top left (largest) to bottom right (smallest).

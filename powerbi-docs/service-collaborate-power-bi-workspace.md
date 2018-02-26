@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/29/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Collaborate in your Power BI app workspace
 Power BI app workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. That's what workspaces are designed for -- collaboration. After you finish collaborating on your dashboards and reports with colleagues, then you package it as an app and distribute it. Read more about [creating apps and app workspaces in Power BI](service-create-distribute-apps.md). 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use Q&A in Power BI Desktop for natural language queries
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in **Power BI Desktop** lets you do.

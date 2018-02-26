@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/04/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Aggregates in Power BI visualizations
 ## What is an aggregate?

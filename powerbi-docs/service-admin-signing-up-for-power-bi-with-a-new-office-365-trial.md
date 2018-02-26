@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Signing up for Power BI with a new Office 365 Trial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>

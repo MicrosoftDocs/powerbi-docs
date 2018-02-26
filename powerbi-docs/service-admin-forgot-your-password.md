@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Troubleshooting
 ---
 # Forgot your password for Power BI?
 If you've forgotten your password, you can use the following link to request a password reset.

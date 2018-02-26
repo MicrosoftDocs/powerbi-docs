@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Visualization types in Power BI
 ## Power BI visualizations

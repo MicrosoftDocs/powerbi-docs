@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/09/2018
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
 Power BI runs in these browsers:

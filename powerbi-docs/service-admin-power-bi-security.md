@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Administration
 ---
 # Power BI Security
 For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://go.microsoft.com/fwlink/?LinkId=829185):

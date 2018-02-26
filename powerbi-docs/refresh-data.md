@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Data refresh in Power BI
 Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.

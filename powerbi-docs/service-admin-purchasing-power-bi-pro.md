@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Purchasing Power BI Pro
 Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:

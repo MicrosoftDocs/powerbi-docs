@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/21/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Usage metrics for dashboards and reports
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to ServiceNow with Power BI for incident reporting
 ServiceNow offers multiple products and solutions including business, operations and IT management to improve your business. This content pack includes multiple reports and insights on your open, recently resolved and recently closed incidents.  
