@@ -87,7 +87,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
 
-<add key="embedUrlBase" value="https://app.mil.powerbigov.us" />>
+<add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
 ## Step 1 - register an app in Azure AD
