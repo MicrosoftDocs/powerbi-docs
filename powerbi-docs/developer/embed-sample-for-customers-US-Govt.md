@@ -79,6 +79,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
     1. Overwrite Cloud.config file with PFCloud.config content.
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the DoDCON parameters in the web.config file as follows.
+
 ```
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
