@@ -79,7 +79,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 ```
 
 ## Step 1 - register an app in Azure AD
-You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md#register-an-azure-ad-app-to-embed-power-bi-content). Since there are three differernt category sections depending on what type of government you are in, there are three distinct URLs to register your application.
+You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are three differernt category sections depending on what type of government you are in, there are three distinct URLs to register your application.
 
 * Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
 
