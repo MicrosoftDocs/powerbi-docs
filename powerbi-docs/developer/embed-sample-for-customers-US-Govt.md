@@ -104,11 +104,11 @@ If you downloaded the [Embedding for your customer sample](https://github.com/Mi
 ## Step 2 - get an access token from Azure AD
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are three different category sections depending on what type of government you are in, there are two distinct URLs to get an access token for your application.
 
-* Government Community Cloud (GCC) - [login.microsoftonline.com](login.microsoftonline.com)
+* Government Community Cloud (GCC) - login.microsoftonline.com
 
-* Military Contractors (DoDCON) - [login.microsoftonline.us](login.microsoftonline.us)
+* Military Contractors (DoDCON) - login.microsoftonline.us
 
-* Military (DoD) - [login.microsoftonline.us](login.microsoftonline.us)
+* Military (DoD) - login.microsoftonline.us
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 
