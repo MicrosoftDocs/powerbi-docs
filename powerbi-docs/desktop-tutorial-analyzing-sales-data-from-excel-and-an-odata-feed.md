@@ -32,7 +32,8 @@ Here's what the final report will look like:
 
 ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
-To follow the steps in this tutorial you need the Products workbook, which you can download**:**[ click](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[ to download](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[. ](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)
+To follow the steps in this tutorial you need the Products workbook, which you can download: 
+**[Click here to download Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**
 
 In the **Save As** dialog box, name the file **Products.xlsx**.
 
@@ -60,7 +61,7 @@ Power BI Desktop includes Query Editor, which is where you shape and transform y
 
 ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
 
-### ﻿Step 3: Change the data type of the UnitsInStock column
+### Step 3: Change the data type of the UnitsInStock column
 When Query Editor connects to data, it reviews each field and to determine the best data type. For the Excel workbook, products in stock will always be a whole number, so in this step you confirm the **UnitsInStock** column’s datatype is Whole Number.
 
 1. Select the **UnitsInStock** column.
