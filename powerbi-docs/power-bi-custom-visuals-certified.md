@@ -129,6 +129,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Sunburst](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
 | [Table Heatmap](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
 | [Tachometer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380937) | [Video](https://youtu.be/C3OXdETbS9o) |
+| [Text Filter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Text Wrapper by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Thermometer](https://appsource.microsoft.com/en-us/product/office/WA104379807) | |
 | [Time series decomposition chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897) | |
