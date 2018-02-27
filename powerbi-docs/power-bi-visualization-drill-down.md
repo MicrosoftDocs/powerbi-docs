@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/19/2018
+ms.date: 02/26/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -95,32 +95,32 @@ This method uses the **Explore** dropdown from the top Power BI menu bar.
 6. To see the data in use for creating the visual, select **See data**. The data displays in a pane underneath the visual. This pane remains as you continue drilling through the visual. For more information, see [Show data used to create the visual](service-reports-show-data.md).
 
 ## Understanding the hierarchy axis and hierarchy group
-You can think of the hierarchy axis and the hierarchy group as the mechanisms that you use to increase and decrease the granularity of data you want to view. Any data that can be organized into categories and subcategories qualifies as having a hierarchy. This, of course, includes dates and times.
+You can think of the hierarchy axis and the hierarchy group as the mechanisms that you can use to increase and decrease the granularity of data you want to view. Any data that can be organized into categories and subcategories qualifies as having a hierarchy. This, of course, includes dates and times.
 
 You can create a visualization in Power BI to have a hierarchy by selecting one or more data fields to add to either the **Axis** well or the **Group** well, along with the data you want to examine as data fields in the **Values** well. You'll know if your data is hierarchical if Drill Mode icons appear on the upper-left and right corners of your visualization. 
 
 Essentially, its convenient to think of two types of hierarchical data:
 - Date and time data - If you have a data field with a DateTime data type, you already have hierarchical data. Power BI automatically creates a hierarchy for any data field whose values can be parsed into a [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) structure. You only need to add one DateTime field to the **Axis** or **Group** well.
-- Categorical data - If your data is derived from collections that contain sub-collections, or has a primary key or foreign key relationship, or otherwise has rows of data that share common values, you have hierarchical data you can peruse with Power BI.
+- Categorical data - If your data is derived from collections that contain sub-collections, or otherwise has rows of data that share common values, you have hierarchical data.
 
 Power BI enables you to expand by one or by all subsets. You can drill down through your data to see a single subset at each level, or to see all of the subsets simultaneously at each level. For example, you can drill down for a specific year, or see all of the results for each year as you go down the hierarchy. 
 Conversely, you can drill up in the same manner.
 
-The following section describe drilling down from the highest view, middle view, and lowest view.
+The following sections describe drilling down from the highest view, middle view, and lowest view.
 
 ### Hierarchical data and time data
 For this example, follow along with the [Retail Analysis sample](sample-datasets.md) and create a stacked column chart visualization that looks at **Month** (Axis) by **TotalSales** (Values).  
 
-Even though the Axis data field is **Month**, it still creates a **Year** category in the **Axis** well. This is because Power BI provides the full DateTime structure for all the values it reads. 
+Even though the Axis data field is **Month**, it still creates a **Year** category in the **Axis** well. This is because Power BI provides the full DateTime structure for all the values it reads. The top of the heirarchy shows data for the year.
 
 ![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-1.png)
 
 With Drill Down mode on, click the bar in the chart to go down one level of the hierarchy. You will see three bars for the data of the quarters available. 
-Then from the upper left icons, choose **Expand all down one level of the hierarchy**. Then do that again to get to the lowest level of the hierarchy.
+Then from the upper left icons, choose **Expand all down one level of the hierarchy**. Then do that again to get to the lowest level of the hierarchy, that shows results for each month.
 
 ![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-2.png)
 
-Apart from the visualization, we can see the hierarchy reflected in the data rendered for each report. The following table shows the results of **Show Data** in a report drilling down for a single month or all months. 
+Apart from the visualization, we can see the hierarchy reflected in the data rendered for each report. The following table shows the results of **Show Data** in a report drilling down from a single month or all months. 
 
 Notice that the data is the same for quarter and year reports, but after you drill down to the level of detail specified for **Values**, you can see how the single report gets more specific and the "all months" report has more data.
 
@@ -132,8 +132,8 @@ Notice that the data is the same for quarter and year reports, but after you dri
 
 
 ### Hierarchical category data
-Data that has modeled from collections and sub-collections is hierarchical, that is, typically seen as rows of data  whose shared properties have common values. 
-A good example of this is location data. Consider a table in a data source whose columns are Country, State, City, and Zip. Data that share the same Country, State, and City are hierarchical.
+Data that has modeled from collections and sub-collections is hierarchical. 
+A good example of this is location data. Consider a table in a data source whose columns are Country, State, City, and Zip. Data that shares the same Country, State, and City are hierarchical.
 
 For this example, follow along with the [Retail Analysis sample](sample-datasets.md). Create a stacked column chart visualization that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
 
