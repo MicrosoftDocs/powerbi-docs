@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
-ms.author: v-mamcge
+ms.date: 02/26/2018
+ms.author: jocaplan
 
 LocalizationGroup: Premium
 ---
