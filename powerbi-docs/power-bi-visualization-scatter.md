@@ -1,4 +1,4 @@
----
+8---
 title: Scatter charts in Power BI (Tutorial)
 description: 'Tutorial: Scatter Charts in Power BI'
 services: powerbi
@@ -84,7 +84,7 @@ Now let's add a third dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number between 3,500 (default) and 10,000.
+3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000.
 
     ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
