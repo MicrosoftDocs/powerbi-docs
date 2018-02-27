@@ -24,7 +24,7 @@ LocalizationGroup: Premium
 
 # Power BI Premium support for large datasets
 
-Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up to 10 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity.
+Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up to 10 GB in size. Once uploaded, a dataset can be refreshed to up to 12 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity.
  
 ## Best practices
 
