@@ -140,7 +140,7 @@ For this example, follow along with the [Retail Analysis sample](sample-datasets
 ![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-1.png)
 
 With Drill Down mode on, from the upper left icons, choose **Expand all down one level of the hierarchy** three times.
-You should be at the lowest level of the hierarchy.
+You should be at the lowest level of the hierarchy, which shows the results for Territory, City, and Postal Code.
 
 ![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-2.png)
 
