@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in Power BI service
 ![](media/service-dashboard-copy/power-bi-dashboard.png)

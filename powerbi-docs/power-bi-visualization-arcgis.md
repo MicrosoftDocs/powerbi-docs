@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/04/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # ArcGIS maps in Power BI service and Power BI Desktop by Esri
 This tutorial is written from the point of view of a person creating an ArcGIS map. Once a creator shares an ArcGIS map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).

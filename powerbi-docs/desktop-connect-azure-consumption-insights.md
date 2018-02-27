@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to Azure Consumption Insights in Power BI Desktop (Beta)
 With the **Azure Consumption Insights** connector, you can use **Power BI Desktop** to connect to Azure and get in-depth data and information about your organization's Azure services usage. You can also create measures, custom columns, and visuals to report and share about your organization's Azure usage. This release of the **Azure Consumption and Insights** connector is in Beta, and is subject to change.

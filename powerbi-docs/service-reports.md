@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Reports in Power BI
 ## What is a Power BI report?

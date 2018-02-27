@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/17/2017
 ms.author: maghan
 
+LocalizationGroup: Premium
 ---
 # How to purchase Power BI Premium
 Learn how to purchase Power BI Premium capacity for your organization.

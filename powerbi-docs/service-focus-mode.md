@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # Display a dashboard tile or report visual in focus mode
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>

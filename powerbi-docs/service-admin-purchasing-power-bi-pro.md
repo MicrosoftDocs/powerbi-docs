@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Purchasing Power BI Pro
 Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:
@@ -60,7 +61,7 @@ Then you can select **Start trial**.
 > With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](service-extended-pro-trial.md).
 
 ### What this looks like within the service
-When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
+When you are in the service, you can verify that you have a Pro trial account by going to the **gear** icon and selecting **Manage personal storage**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
 

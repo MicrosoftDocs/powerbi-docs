@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 11/28/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Administering Power BI in your organization
 Microsoft Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. To learn more, see [Get started with Power BI](service-get-started.md).

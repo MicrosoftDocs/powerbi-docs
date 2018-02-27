@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Azure Mobile Engagement with Power BI
 The Power BI Azure Mobile Engagement content pack allows to you quickly gain insights into your app data.

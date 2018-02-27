@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # DirectQuery for Oracle and Teradata Databases
 Please see [DirectQuery Data Sources](desktop-directquery-data-sources.md) for information about data sources and DirectQuery.

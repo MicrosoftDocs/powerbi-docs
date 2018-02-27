@@ -16,9 +16,10 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/22/2018
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Use See Data and See Records in Power BI Desktop
 In **Power BI Desktop** you can drill into the details of any visual, and see a textual representation of the data or individual data elements for a selected visual. These features are sometimes referred to as *click-through*, or *drill-through* or *drill-through to details*.
@@ -66,6 +67,9 @@ You can also focus on one data element in a visual, and drill into the data behi
 Once **See Records** is selected, **Power BI Desktop** focuses on that individual data element and dedicates the canvas area to displaying the data for that element, as shown in the following image.
 
 ![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+
+> [!NOTE]
+> You cannot save changes from data that is viewed (or modified by users) in the **See Records** view to a report.
 
 To get back to the report, select the **Back to Report** button in the upper left corner of the canvas.
 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: davidi
 
+LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PowerPoint (Preview)
 With Power BI, you can now publish your report to **Microsoft PowerPoint**, and easily create a slide deck based on your Power BI report. When you **export to PowerPoint**, the following occurs:

@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # Printing from Power BI service
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.

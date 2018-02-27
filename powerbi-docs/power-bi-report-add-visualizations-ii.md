@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Part 2, Add visualizations to a Power BI report (Tutorial)
 In [Part 1](power-bi-report-add-visualizations-ii.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # The Power BI samples, a tutorial
 

@@ -18,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: maghan
+LocalizationGroup: Share your work
 ---
 # Publish to web from Power BI
 
@@ -131,7 +132,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 **Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are not currently supported or available with Publish to web:
 
 1. Reports using row level security.
-2. Reports using Analysis Services Tablular hosted on premises.
+2. Reports using any Live Connection data source, including Analysis Services Tabular hosted on premises  Analysis Service Multidimensional, Azure Analysis Services, and Power BI Service.
 3. Reports shared to you directly or through an organizational content pack.
 4. Reports in a group in which you are not an edit member.
 5. "R" Visuals are not currently supported in Publish to web reports.

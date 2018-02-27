@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
 For detailed steps on setting up scheduled refresh, be sure to see [Refresh data in Power BI](refresh-data.md).

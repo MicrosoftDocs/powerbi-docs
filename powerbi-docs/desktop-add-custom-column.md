@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
 You can easily add a new custom column of data to your model using **Query Editor** in **Power BI Desktop**. You can create and rename your custom column using easy buttons to create [M formulas](https://msdn.microsoft.com/library/mt270235.aspx) that define your custom column. The M formula has a [comprehensive function reference content set](https://msdn.microsoft.com/library/mt779182.aspx). 

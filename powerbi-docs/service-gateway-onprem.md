@@ -16,9 +16,10 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/22/2018
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.

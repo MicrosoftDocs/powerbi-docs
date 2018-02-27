@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Set and use date tables in Power BI Desktop
 

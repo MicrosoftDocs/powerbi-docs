@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
 
+LocalizationGroup: Troubleshooting
 ---
 # Capturing additional diagnostic information
 ## Capturing Additional Diagnostic Information for Power BI

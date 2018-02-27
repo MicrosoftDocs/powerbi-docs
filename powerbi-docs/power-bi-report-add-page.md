@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Add a page to a Power BI report in Power BI service and Power BI Desktop
 No reason to crowd up a report page -- just add a new blank page. 

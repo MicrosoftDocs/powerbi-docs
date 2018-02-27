@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Tips for designing a great Power BI dashboard
 Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, that means making the most important information stand out, and making it clean and uncluttered.

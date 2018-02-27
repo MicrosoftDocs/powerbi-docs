@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
 
+LocalizationGroup: Reports
 ---
 
 # Power BI Performance Best Practices 

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour
 

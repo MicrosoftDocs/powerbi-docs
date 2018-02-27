@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Data alerts in Power BI service
 Set alerts to notify you when data in your dashboards changes beyond limits you set. 

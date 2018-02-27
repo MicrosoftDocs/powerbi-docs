@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Accessibility in Power BI Desktop reports
 **Power BI Desktop** has features that enable people with disabilities to more easily consume and interact with **Power BI Desktop** reports. These features include the ability to consume a report using the keyboard or a screen reader, tabbing to focus on various objects on a page, and thoughtful use of markers in visualizations.

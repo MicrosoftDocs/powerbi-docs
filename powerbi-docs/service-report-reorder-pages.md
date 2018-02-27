@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Reorder pages in a report in Power BI
 In Power BI, a report is made up of one or more pages.  Each page has a tab along the bottom.  To reorder a report, simply select and drag the tab to its new location.

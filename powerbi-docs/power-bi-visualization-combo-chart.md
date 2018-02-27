@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/21/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Combo Chart in Power  (Tutorial)
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.

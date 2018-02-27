@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Troubleshooting the on-premises data gateway
 This article discusses some common issues you may encounter when using the **on-premises data gateway**.

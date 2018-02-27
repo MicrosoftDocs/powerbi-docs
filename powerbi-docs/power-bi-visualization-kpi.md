@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # KPI visuals (Tutorial)
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).

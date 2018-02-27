@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: jastru
 
+LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
 ## Words and terminology that Q&A recognizes

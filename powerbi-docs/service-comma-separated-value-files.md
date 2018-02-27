@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Data from files
 ---
 # Get data from Comma Separated Value (.CSV) files
 ![](media/service-comma-separated-value-files/csv_icon.png)

@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
 QR codes in Power BI can connect anything in the real world directly to related BI information &#151; no navigation or search needed.

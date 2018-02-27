@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 02/19/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Drill down in a visualization in Power BI
 ## Drill down requires a hierarchy

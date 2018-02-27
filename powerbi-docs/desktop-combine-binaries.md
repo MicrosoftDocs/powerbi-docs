@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 
+LocalizationGroup: Transform and shape data
 ---
 # Combine binaries in Power BI Desktop
 One powerful approach to importing data into **Power BI Desktop** is to combine multiple files, which have the same schema, into a single logical table. With the November 2016 release of **Power BI Desktop** (and subsequent releases), this convenient and popular approach has been made more convenient and more expansive, as described in this article.

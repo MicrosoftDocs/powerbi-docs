@@ -20,6 +20,7 @@ ms.workload: powerbi
 ms.date: 01/10/2018
 ms.author: mihart
 
+LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in Power BI service
 When you make content a *favorite*,  you'll be able to access it from all of your workspaces.  Favorites are typically the content that you visit most often.

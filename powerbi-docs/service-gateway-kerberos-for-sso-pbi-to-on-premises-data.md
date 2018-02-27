@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 01/10/2018
 ms.author: davidi
 
+LocalizationGroup: Gateways
 ---
 # Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources
 You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway with Kerberos. The on-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.

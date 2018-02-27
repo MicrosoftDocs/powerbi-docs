@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Understanding the Power BI admin role
 Learn how you can use the Power BI admin role within your organization.

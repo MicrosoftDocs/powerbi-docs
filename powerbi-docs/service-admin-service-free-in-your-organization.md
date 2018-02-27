@@ -19,6 +19,7 @@ ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
 
+LocalizationGroup: Administration
 ---
 # Power BI (free) in your organization
 This will look at how the Power BI (free) offering can be used within your organization. An organization means that you have a tenant and can manage users and services within that tenant. As an administrator, you can control license assignment, or you can allow users to sign up as an individual. We will look at the Power BI (free) license and how you can control individual sign up.
