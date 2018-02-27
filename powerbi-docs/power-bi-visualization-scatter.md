@@ -84,14 +84,14 @@ Now let's add a third dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000.
+3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000 (default is 3500).
 
     ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
    > [!NOTE]
    > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users' expectations. Note that for higher numbers of data points, you should test the results on different form factors to ensure good performance.
 
-4. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md). To select the marker shape, expand the **Shapes** card, then select a marker shape.
+4. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md). To [improve accessibility](desktop-accessibility.md), consider adding marker shapes to each line. Using a different Marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other. To select the marker shape, expand the **Shapes** card, then select a marker shape.
 
       ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
