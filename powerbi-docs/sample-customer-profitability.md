@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 02/28/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -26,7 +26,6 @@ LocalizationGroup: Samples
 ## Overview of the Customer Profitability sample
 The “Customer Profitability Sample” content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
 
-<<<<<<< HEAD
 ![](media/sample-customer-profitability/power-bi-dash.png)
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Sample datasets](sample-datasets.md).
@@ -58,13 +57,6 @@ Alternatively, you can download the sample as a .pbix file, which is designed fo
 ### Get the Excel workbook for this sample
 
 If you want to dig into the datasource for this sample, it's also available as an [(Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, select **Power Pivot > Manage**.
-=======
-
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Sample datasets](sample-datasets.md).
-
-### Prerequisites
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Customer Profitability > Connect** to get your own copy of the sample.
->>>>>>> def2c8e086d65b6a3fb92247175730746226ae3e
 
 
 ## What is our dashboard telling us?
