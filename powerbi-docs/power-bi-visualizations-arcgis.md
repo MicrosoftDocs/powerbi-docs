@@ -42,7 +42,7 @@ The example we're using is the same ArcGIS map created in the [ArcGIS maps by es
 <br/>
 
 ## User consent
-The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
+The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by Esri(www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Selection tools
 ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data points can be selected at a time.
