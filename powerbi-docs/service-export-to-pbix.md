@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/02/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -26,7 +26,7 @@ In Power BI Desktop, you can export (also referred to as *download*) a report to
 
 There are a few limitations and considerations to keep in mind, which are discussed later in this article.
 
-![](media/service-export-to-pbix/power-bi-file-export.png)
+![File dropdown](media/service-export-to-pbix/power-bi-file-export.png)
 
 ## Download the report as a .pbix
 To download the .pbix file, follow these steps:
@@ -40,18 +40,18 @@ To download the .pbix file, follow these steps:
    > 
 3. While the .pbix file is being created, a status banner displays the progress. When the file is ready, you'll be asked to open or save the .pbix file. The name of the file matches the title of the report.
    
-    ![](media/service-export-to-pbix/power-bi-save-pbix.png)
+    ![open, save, or cancel](media/service-export-to-pbix/power-bi-save-pbix.png)
    
     You now have the option of opening the .pbix file in either Power BI service (app.powerbi.com) or Power BI Desktop.     
 4. To immediately open the report in Desktop, select **Open**. To save the file to a specific location, select **Save > Save-As**. If you haven't already, [install Power BI Desktop](desktop-get-the-desktop.md).
    
     When you open the report in Desktop, you may see a warning message letting you know that some features available in the Power BI service report may not be available in Desktop.
    
-    ![](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+    ![warning dialog](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
 
 5. The report editor in Desktop looks very much like the report editor in Power BI service.  
    
-    ![](media/service-export-to-pbix/power-bi-desktop.png)
+    ![Desktop report editor](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## Considerations and troubleshooting
 There are a few important considerations and limitations associated with downloading (exporting) a *.pbix* file from Power BI service.
