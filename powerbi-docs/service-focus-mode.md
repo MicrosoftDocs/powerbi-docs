@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -33,39 +33,41 @@ LocalizationGroup: Common tasks
 > Focus is different from [full screen mode](service-fullscreen-mode.md).
 > 
 ## Focus mode for dashboard tiles
-1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode** ![](media/service-focus-mode/power-bi-dashboard-focus-mode.png).  
+1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode** 
+
+    ![ellipses menu for tile](media/service-focus-mode/power-bi-dashboard-focus-mode.png).
    
 2. The tile opens and fills the entire report canvas. 
 
-   ![](media/service-focus-mode/power-bi-tile-focus.png)
+   ![tile fills report canvas](media/service-focus-mode/power-bi-tile-focus.png)
 
 3. Expand the Filters pane to see all filters applied to this visual.
    
-   ![](media/service-focus-mode/power-bi-focus-filters.png)
+   ![focus mode with Filters pane](media/service-focus-mode/power-bi-focus-filters.png)
 
 4. Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.
 
 5. Leave focus mode and return to the dashboard by selecting **< Exit focus mode** (in the top left corner of the visual).
    
-    ![](media/service-focus-mode/power-bi-tile-exit-focus.png)    
+    ![leave focus mode](media/service-focus-mode/power-bi-tile-exit-focus.png)    
 
 
 ## Focus mode for report visualizations
 
-1. Hover over the report visualization and select the **focus mode** icon ![](media/service-focus-mode/pbi_popout.jpg).  
+1. Hover over the report visualization and select the **focus mode** icon ![focus mode icon](media/service-focus-mode/pbi_popout.jpg).  
    
-   ![](media/service-focus-mode/power-bi-hover-focus.png)
+   ![focus icon displays on tile](media/service-focus-mode/power-bi-hover-focus.png)
 2. The visualization opens and fills the entire canvas. 
 
    
-   ![](media/service-focus-mode/power-bi-display-focus-newer2.png)
+   ![visual in focus mode](media/service-focus-mode/power-bi-display-focus-newer2.png)
 3. Expand the Filters pane to see all filters applied to this visual.
    
-   ![](media/service-focus-mode/power-bi-display-focus-filters.png)
+   ![focus mode with Filters screen](media/service-focus-mode/power-bi-display-focus-filters.png)
 4. Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.   
 5. Leave focus mode and return to the report by selecting **Back to report** (in the top left corner of the visual). 
    
-    ![](media/service-focus-mode/power-bi-exit-focus-report.png)  
+    ![leave focus mode](media/service-focus-mode/power-bi-exit-focus-report.png)  
 
 ## Go from focus mode to full screen mode
 Once in focus mode, the tile or visual can then be [viewed in full screen (TV mode.)](service-fullscreen-mode.md) Full screen mode displays without the distraction of menus and navigation buttons.
