@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -42,15 +42,15 @@ For more information, see:
 ## Enable Q&A
 Once you have the data gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
 
-1. In the upper-right corner of Power BI, select the cog icon ![](media/service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
+1. In the upper-right corner of Power BI, select the cog icon ![gear icon](media/service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
    
-   ![](media/service-q-and-a-direct-query/powerbi-settings.png)
+   ![Settings menu](media/service-q-and-a-direct-query/powerbi-settings.png)
 2. Select **datasets** and choose the dataset to enable for Q&A.
    
-   ![](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
+   ![Datasets screen of Settings menu](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
    
-    ![](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Q&A area expanded](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## What data is cached and how is privacy protected?
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.

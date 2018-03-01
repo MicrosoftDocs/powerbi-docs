@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -36,16 +36,16 @@ You can also export the data that is being used to create the visualization as a
 1. In Power BI service, open a report in [Reading view or Editing view](service-reading-view-and-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
 2. To display the data behind the visual, select **Explore** > **Show data**.
    
-   ![](media/service-reports-show-data/power-bi-show-data.png)
+   ![select Show Data](media/service-reports-show-data/power-bi-show-data.png)
 3. By default, the data displays below the visual.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data.png)
+   ![visual and data vertical display](media/service-reports-show-data/power-bi-explore-show-data.png)
 4. To change the orientation, select vertical layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![visual and data horizontal display](media/service-reports-show-data/power-bi-explore-show-data2.png)
 5. To export the data to a .csv file, select the ellipses and choose **Export data**.
    
-    ![](media/service-reports-show-data/power-bi-export-data-new.png)
+    ![select Export data](media/service-reports-show-data/power-bi-export-data-new.png)
    
     For more information on exporting the data to Excel, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 6. To hide the data, de-select **Explore** > **show data**.
