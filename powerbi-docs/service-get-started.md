@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -25,11 +25,11 @@ LocalizationGroup: Get started
 # Get started with Power BI service (app.powerbi.com)
 This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml#step-1).
 
-![](media/service-get-started/power-bi-components.png)
+![art showing relatioship between Desktop, service, mobile](media/service-get-started/power-bi-components.png)
 
 Power BI service has a free version and a Pro version. No matter which version you're using, *if you already have an account*, open a browser and type app.powerbi.com to open Power BI service. If you're a new user, we recommend starting at www.powerbi.com instead. From here you can learn more about Power BI before logging in to the service.  When you're ready to try it out, select the **Sign up free** link that you'll see in the upper right corner. If your administrator has already enabled Power BI for you, don't use the Sign up free button, but instead go directly to app.powerbi.com. 
 
-![](media/service-get-started/power-bi-sign-up.png)
+![Sign in or Sign up free](media/service-get-started/power-bi-sign-up.png)
 
 If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md).
 
@@ -55,27 +55,27 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
 2. Power BI opens in your browser. Select **Get Data** at the bottom of the left navigation bar.
    
-   ![](media/service-get-started/getdata3.png)
+   ![get data](media/service-get-started/getdata3.png)
 3. Select **Files**. 
    
-   ![](media/service-get-started/gs1.png)
+   ![get files](media/service-get-started/gs1.png)
 4. Browse to the file on your computer, and choose **Open**. If you saved it in  OneDrive for Business, select that option. If you saved it locally, select **Local file**. 
    
-   ![](media/service-get-started/gs2.png)
+   ![Get Data > Files screen](media/service-get-started/gs2.png)
 5. For this tutorial we're going to select **Import** to add the Excel file as a dataset that we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
    
-   ![](media/service-get-started/power-bi-import.png)
+   ![choose Import](media/service-get-started/power-bi-import.png)
 6. When your dataset is ready, select **View dataset** to open it in the report editor. 
 
-    ![](media/service-get-started/power-bi-gs.png)
+    ![Your dataset is ready dialog](media/service-get-started/power-bi-gs.png)
 
     Since we haven't yet created any visualizations, the report canvas will be blank.
 
-    ![](media/service-get-started/power-bi-report-editor.png)
+    ![blank report canvas](media/service-get-started/power-bi-report-editor.png)
 
 6. Take a look at the top menubar and notice that there is an option for **Reading view**. Since you have an option for Reading view, that means you are currently in **Editing view**. 
 
-    ![](media/service-get-started/power-bi-editing-view.png)
+    ![Reading view option](media/service-get-started/power-bi-editing-view.png)
 
     While in Editing view you can create and modify your reports because you are the *owner* of the report; you are a *creator*. When you share your report with colleagues, they'll only be able to interact with the report in Reading view; they are *consumers*. Learn more about [Reading view and Editing view](service-reading-view-and-editing-view.md).
     
@@ -88,49 +88,49 @@ Now that you've connected to data, start exploring.  When you've found something
     
 1. In the report editor, we'll use the **Fields** pane on the right side of the page to build a visualization.  Select the checkbox beside **Gross Sales** and  **Date**.
    
-   ![](media/service-get-started/fields.png)
+   ![Fields list](media/service-get-started/fields.png)
 
 2. Power BI analyzes the data and creates a visualization.  If you selected **Date** first, you'll see a table.  If you selected **Gross Sales** first, you'll see a chart. Switch to a different way of displaying your data. Let's see this data as a line chart. Select the line chart icon (also known as a template) from the **Visualizations pane**.
    
-   ![](media/service-get-started/gettingstart5new.png)
+   ![report editor with icon selected](media/service-get-started/gettingstart5new.png)
 
 3. This looks interesting, so let's *pin* it to a dashboard. Hover over the visualization and select the **Pin** icon.  When you pin this visualization, it is stored on your dashboard and kept up-to-date so you can track the latest value at a glance.
    
-   ![](media/service-get-started/pinnew.png)
+   ![pin icon](media/service-get-started/pinnew.png)
 
 5. Because this is a new report, you'll be prompted to save it before you can pin a visualization to a dashboard. Give your report a name (e.g., *Sales over time*) and select **Save and Continue**. 
    
-   ![](media/service-get-started/pbi_getstartsaveb4pinnew.png)
+   ![Save report dialog](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
 6. Let's pin the line chart to new dashboard and name it "Financial sample for tutorial". 
    
-   ![](media/service-get-started/power-bi-pin.png)
+   ![name the report](media/service-get-started/power-bi-pin.png)
    
  1. Select **Pin**.
    
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
-    ![](media/service-get-started/power-bi-pin-success.png)
+    ![Pinned to dashboard dialog](media/service-get-started/power-bi-pin-success.png)
 
 8. Select **Go to dashboard** to see the line chart pinned, as a tile, to your brand new dashboard. Make your dashboard even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning tiles](service-dashboard-edit-tile.md).
    
-   ![](media/service-get-started/power-bi-new-dashboard.png)
+   ![dashboar with visualization pinned](media/service-get-started/power-bi-new-dashboard.png)
    
    Select the new tile on your dashboard to return to the report any time. Power BI returns you to the report editor in Reading view. To switch back to Editing view, select **Edit report** from the top menubar. Once in Editing view, continue exploring and pinning tiles. 
 
 ## Step 3:  Continue the exploration with Q&A (natural language querying)
 1. For a quick exploration of your data, try asking a question in the Q&A box. The Q&A question box is located at the top of your dashboard (**Ask a question about your data**) and in the top menubar in your report (**Ask a question**). For example, try typing "what segment had the most revenue".
    
-   ![](media/service-get-started/powerbi-qna.png)
+   ![Q&A canvas](media/service-get-started/powerbi-qna.png)
 
-2. Q&A searches for an answer and presents it in the form of a visualization. Select the pin icon ![](media/service-get-started/pbi_pinicon.png) to show this visualization on your dashboard too.
+2. Q&A searches for an answer and presents it in the form of a visualization. Select the pin icon ![pin icon](media/service-get-started/pbi_pinicon.png) to show this visualization on your dashboard too.
 3. Pin the visualization to the "Financial Sample for tutorial" dashboard.
    
-    ![](media/service-get-started/power-bi-pin2.png)
+    ![Pin to dashboard dialog](media/service-get-started/power-bi-pin2.png)
 
 4. Return to your dashboard where you'll see the new tile.
 
-   ![](media/service-get-started/power-bi-final-dashboard.png)
+   ![dashboard with chart pinned](media/service-get-started/power-bi-final-dashboard.png)
 
 ## Next steps
 Ready to try more?  Here are some great ways to explore Power BI.

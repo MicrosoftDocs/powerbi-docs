@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -25,7 +25,7 @@ LocalizationGroup: Reports
 # Filter a report using query string parameters in the URL
 When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to do this is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire URL.
 
-![](media/service-url-filters/power-bi-report2.png)
+![Power BI report in the service](media/service-url-filters/power-bi-report2.png)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?list=PLv2BtOtLblH3YE_Ycas5B1GtcoFfJXavO&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -34,7 +34,7 @@ The syntax is fairly straightforward; start with the report URL, add a question 
 
 URL?filter=***Table***/***Field*** eq '***value***'
 
-![](media/service-url-filters/power-bi-filter-urls7b.png)
+![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * **Table** and **Field** names are case sensitive, **value** is not.
 * Fields that are hidden from report view can still be filtered.
@@ -47,7 +47,7 @@ If it's still confusing, continue reading and we'll break it down.
 ## Filter on a field
 Let’s assume that the URL to our report is the following.
 
-![](media/service-url-filters/power-bi-filter-urls6.png)
+![starting URL](media/service-url-filters/power-bi-filter-urls6.png)
 
 And we see in our map visualization (above) that we have stores in North Carolina.
 
@@ -59,7 +59,7 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 ?filter=Store/Territory eq 'NC'
 
-![](media/service-url-filters/power-bi-filter-urls7.png)
+![URL with filter](media/service-url-filters/power-bi-filter-urls7.png)
 
 >[!NOTE]
 >*NC* is a value stored in the **Territory** field of the **Store** table.

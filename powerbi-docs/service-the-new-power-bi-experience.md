@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -25,7 +25,7 @@ LocalizationGroup: Get started
 # Getting around in Power BI service
 ## The left navigation pane
 
-![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
+![left navpane](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
 
 **Quick reference guide**
 
@@ -61,61 +61,61 @@ Let's start by looking at how the basic content (dashboards, reports, datasets, 
 
 If you have Power BI Free, you'll only see one workspace -- **My Workspace**.
 
-![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
+![short video of workspace](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
 ### Favorite dashboards, reports, and apps
 **Favorites** lets you quickly access content that is most important to you.  
 
 1. With the dashboard or report open, select **Favorite** from the upper right corner.
    
-   ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
+   ![add favorite](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favorite** changes to **Unfavorite** and the star icon becomes yellow.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
+   ![remove favorite](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
 2. For an app, select **Apps** from the left navpane, hover over the app and choose the star to set it as a favorite.
 
 2. To display a list of all the content that you have added as favorites, in the left navpane, select the arrow to the right of **Favorites**. Because the left navpane is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
    
-    ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
+    ![favorites flyout](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
     From here you can select a dashboard, report, or app to open it.
 
 3. To open the **Favorites** pane, in the left navpane, select **Favorites** or select the Favorites icon ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
+   ![open Favorites screen](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
    From here you can open, find the content, unfavorite, or share content with colleagues.
 
 1. Another way to mark either a dashboard or report as a favorite is from the **Dashboards** or **Reports** workspace tab.  Just open the workspace to display the content view, and select the star icon to the left of the name.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
+   ![mark as favorite](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
 To learn more, see [Favorites](service-dashboard-favorite.md)
 
 ### Recents
-Quickly get to the content that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
+Quickly get to the content that youï¿½ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
+  ![Recents pane](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
 Similar to Favorites, you can quickly access your recents from anywhere in Power BI service by selecting the arrow next to **Recents** in the left navpane.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
+  ![Recents flyout](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
 To learn more, see [Recents in Power BI](service-recent.md)
 
 ### Apps
 An app is a collection of dashboards and reports built to deliver key metrics, all in one place. You can have apps internal to your organization, and also [apps for external services](service-connect-to-services.md) such as Google Analytics and Microsoft Dynamics CRM. 
 
-![](media/service-the-new-power-bi-experience/power-bi-apps.png)
+![Apps pane](media/service-the-new-power-bi-experience/power-bi-apps.png)
 
 To learn more, see **App workspaces** (below) and [What are Power BI apps](service-install-use-apps.md).
 
 ### Shared with me
-**Shared with me** is the location for all content that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what’s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
+**Shared with me** is the location for all content that colleagues have shared with you.  Filter by dashboard owner, use the search field to find whatï¿½s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
 
-![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
+![Shared with me pane](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
 To learn more, see [Shared with me](service-shared-with-me.md)
 
@@ -127,29 +127,29 @@ If you are not a member of an app workspace or an admin, you may not see any app
 #### My Workspace
 **My Workspace** stores all the content that you own. Think of it as your personal sandbox or work area for your own content. You can share content from My Workspace with colleagues. Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
-![](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
+![My Workspace screen](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
 #### App workspaces
-Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They’re the evolution of group workspaces – staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
+Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. Theyï¿½re the evolution of group workspaces ï¿½ staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
 
 To learn more, visit [Create and distribute an app in Power BI](service-create-distribute-apps.md#app-workspaces).
 
 As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
-![](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
+![App workspace](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
 Switch workspaces by selecting **Workspaces** in the left navpane.
 
-![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
+![Select a workspace](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### Search and sort content
 The content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name.
 
-![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
+![search for a dashboard](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
 You can also sort the content by name or owner.  
 
-![](media/service-the-new-power-bi-experience/power-bi-sort.png)
+![sort content](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 To learn more, see [Power BI navigation: search, sort, filter](service-navigation-search-filter-sort.md)
 

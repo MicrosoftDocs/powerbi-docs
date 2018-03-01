@@ -1,4 +1,4 @@
-8---
+---
 title: Scatter charts in Power BI (Tutorial)
 description: 'Tutorial: Scatter Charts in Power BI'
 services: powerbi
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/21/2018
+ms.date: 02/28/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
