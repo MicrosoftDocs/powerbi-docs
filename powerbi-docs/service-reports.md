@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -25,7 +25,7 @@ LocalizationGroup: Reports
 ## What is a Power BI report?
 A Power BI ***report*** is a multi-perspective view into a dataset, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your job role, you may be someone who *creates* reports and/or you may be someone who *consumes* or uses reports.
 
-![](media/service-reports/reportview.png)
+![report page](media/service-reports/reportview.png)
 
 This report has 3 pages (or tabs) and we're currently viewing the Store Sales Overview page. On this page are 6 different visualizations and a page title. Visualizations can be *pinned* to dashboards and when that pinned visualization is selected, it opens the report it was pinned from.
 

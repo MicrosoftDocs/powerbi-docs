@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -32,17 +32,17 @@ LocalizationGroup: Dashboards
 2. Open a [dashboard](service-dashboards.md).
 3. Hover over the tile you want to pin, select the ellipses (...) and choose **Pin tile**.  
    
-   ![](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
+   ![eellipses menu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * **Existing dashboard**: select the name of the dashboard from the dropdown.
    * **New dashboard**: type the name of the new dashboard.
    
-   ![](media/service-pin-tile-to-another-dashboard/pbi_pintoanotherdash.png)
+   ![Pin to Dashboard dialog](media/service-pin-tile-to-another-dashboard/pbi_pintoanotherdash.png)
 5. Select **Pin**.
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to the selected dashboard.
    
-   ![](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
+   ![Pinned to dashboard window](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
 6. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization.
 
 ## Next steps

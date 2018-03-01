@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -24,7 +24,7 @@ LocalizationGroup: Reports
 # Reading View and Editing View in Power BI service reports
 In Power BI service (not Power BI Desktop) there are two modes for viewing and interacting with reports: Reading view and Editing view. Reading view is available to all users and is especially designed for data *consumers* while Editing view is only available to report *creators* and owners. 
 
-![](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
+![artwork of report creators and report consumers](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## Report Reading view
 
@@ -81,17 +81,17 @@ Remember, only the report creator and owner(s) will be able to open a report in 
 
 1. By default, a report usually opens in Reading view. You can tell you're in Reading view if you see an option for **Edit report**. If **Edit report** is greyed out, you do not have permissions to open the report in Editing view.
 
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
+   ![Edit report greyed out](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
 2. If **Edit Report** is not greyed out, select it to open the report in Editing view. 
    
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
+   ![Edit report option](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
    
    The report is now in Editing view and uses the same [display settings](power-bi-report-display-settings.md) you last used in Reading view.
 
 2. To return to Reading view, select **Reading view** from the top navigation bar.
    
-    ![](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
+    ![Reading view option](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
 

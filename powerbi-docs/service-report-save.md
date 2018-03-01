@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -32,13 +32,13 @@ After you make changes to a report in Power BI, you can save it, save it with a 
 ### To save a report:
 1. If you attempt to navigate away from a report, and the report has changes, Power BI will display a prompt.
    
-   ![](media/service-report-save/power-bi-unsaved.png)
+   ![Save changes](media/service-report-save/power-bi-unsaved.png)
 2. Another way to save the report is to select **FILE** \> **Save** or **Save As**. If you are in [Reading view](service-reading-view-and-editing-view.md) you will only see the option to Save As. 
    
-   ![](media/service-report-save/power-bi-save-new.png)
+   ![Save report](media/service-report-save/power-bi-save-new.png)
 3. If this is a new report (Save), or a new version of an existing report (Save as), give it a descriptive name.  **The report will be added to the active workspace**.
    
-    ![](media/service-report-save/power-bi-save-dialog.png)
+    ![name the report](media/service-report-save/power-bi-save-dialog.png)
 
 ### Next steps
 Read more about [reports in Power BI](service-reports.md)
