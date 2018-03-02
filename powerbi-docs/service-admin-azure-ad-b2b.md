@@ -29,6 +29,7 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 >
 <br>
 
+
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
