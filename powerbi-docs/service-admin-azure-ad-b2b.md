@@ -27,6 +27,7 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 > [!NOTE]
 > You need to **Enable** the [Export and sharing settings](service-admin-portal.md#export-and-sharing-settings) feature in the Power BI admin portal Tenant settings before inviting guest users.
 
+
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
