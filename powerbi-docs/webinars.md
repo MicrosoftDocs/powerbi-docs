@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/22/2018
+ms.date: 03/01/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -47,7 +47,16 @@ Get started with these popular on-demand webinars
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events
+Register to hear from Power BI experts and participate in live Q&A sessions
+
+**Power BI adoption framework webinar series: Part 1 — Adoption: Adopt a data-driven culture**
+<br>by Manu Kanwarpal
+<br>*March 8th, 9:00AM PST, 12:00PM EST*
+
+Shift your organization’s mindset to a data-driven culture and register for the Webinar series that gives you an adoption framework for Power BI from Microsoft. Self-service business intelligence (BI) adoption is challenging and getting the tools is only the first step of your journey. Successful adoption requires a change in people, processes, and technology.
+This webinar is the first in a five-part series that unlocks the potential of Power BI for your organization.
+
+[Register to watch on March 8th](https://info.microsoft.com/ww-landing-powerbi-adoption.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 

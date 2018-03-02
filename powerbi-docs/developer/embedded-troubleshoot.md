@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 1/17/2018
+ms.date: 2/26/2018
 ms.author: maghan
 ---
 # Troubleshooting your embedded application
@@ -78,6 +78,7 @@ A fiddler capture may be required to investigate further. The required permissio
 
 A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
 
+* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
 * The authenticated user is not a member of the group (app workspace).
 * The authenticated user is not an admin of the group (app workspace).
