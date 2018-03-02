@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/23/2018
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
 ---
@@ -137,9 +137,11 @@ You could also enable the feature only for a specific group of users and also di
 ### Share content to external users
 
 Users in the organization can share dashboards with users outside the organization.
+
 ![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
 Here is the message that will appear when you share with an external user.
+
 ![](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### Publish to web

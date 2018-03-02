@@ -37,11 +37,11 @@ If you are part of an existing organization, that uses Office 365, you can still
 
 > [!NOTE]
 > If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
-> 
 >
-## What you need to sign up
-In order to sign up for Power BI, you need a working email address. A personal email address will not work when trying to sign up for Power BI.
 
+## What you need to sign up?
+
+In order to sign up for Power BI, you need a working email address. A personal email address will not work when trying to sign up for Power BI.
 
 ### What email address can be used with Power BI?
 Power BI requires that you use a work, or school, email address to sign up. You cannot sign up got Power BI using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
