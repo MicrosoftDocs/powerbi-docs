@@ -24,13 +24,10 @@ LocalizationGroup: Administration
 
 Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization, while still maintaining control over the internal data.
 
+> [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
+
 > [!NOTE]
 > You need to **Enable** the [Export and sharing settings](service-admin-portal.md#export-and-sharing-settings) feature in the Power BI admin portal Tenant settings before inviting guest users.
->
-<br>
-
-
-> [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
 > This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser. 
