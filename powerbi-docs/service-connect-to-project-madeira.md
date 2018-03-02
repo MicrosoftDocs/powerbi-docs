@@ -107,8 +107,8 @@ If you see this error after you enter your Project “Madeira” URL, make sure 
 **"Login failed"**
 If you get a "login failed" error when you log in to the dashboard, using your Project “Madeira” credentials, then this can be caused by one of the following issues:  
 
-    - The account you are using does not have permissions to read the Project “Madeira” data from your account. Verify your user account in Project "Madeira", and make sure that you have used the right web service access key as the password, and then try again.  
-    - The Project "Madeira" instance that you are trying to connect to does not have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.  
+   - The account you are using does not have permissions to read the Project “Madeira” data from your account. Verify your user account in Project "Madeira", and make sure that you have used the right web service access key as the password, and then try again.  
+   - The Project "Madeira" instance that you are trying to connect to does not have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.  
 
 **"Oops"**
 If you see an "Oops" error dialog after you pass the authentication dialog, this is most frequently caused by a problem connecting to the data for the content pack. Verify that the URL follows the pattern that was specified earlier:  
