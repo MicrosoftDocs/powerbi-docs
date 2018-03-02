@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/02/2018
 ms.author: mihart
 
 ---
@@ -33,7 +33,7 @@ Creating a dashboard is a **creator** feature and requires edit permissions to t
 >
 > 
 
-![](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 ## Video: Create a dashboard by pinning visuals and images from a report
 Watch Amanda create a new dashboard by pinning visualizations from a report. Then follow the steps below the video to try it out yourself, using the Procurement Analysis sample.
@@ -51,62 +51,62 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 3. Select **My Workspace**.
 4. From the left nav, select **Get Data**.
 
-    ![](media/service-dashboard-create/power-bi-get-data3.png)
+    ![left navpane](media/service-dashboard-create/power-bi-get-data3.png)
 5. Select **Files**.
 
-   ![](media/service-dashboard-create/power-bi-select-files.png)
+   ![Get files](media/service-dashboard-create/power-bi-select-files.png)
 6. Navigate to the location where you saved the Procurement Analysis sample Excel file. Select it and choose **Connect**.
 
-   ![](media/service-dashboard-create/power-bi-connectnew.png)
+   ![connect to files](media/service-dashboard-create/power-bi-connectnew.png)
 7. For this exercise, select **Import**.
 
-    ![](media/service-dashboard-create/power-bi-import.png)
+    ![OneDrive for Business window](media/service-dashboard-create/power-bi-import.png)
 8. When the Success message appears, select the **x** to close it.
 
-   ![](media/service-dashboard-create/power-bi-view-datasetnew.png)
+   ![success message](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 ### Open the report and pin some tiles to a dashboard
 1. Staying in the same workspace, select the **Reports** tab. The newly-imported report displays with a yellow asterisk. Select the report name to open it.
 
-    ![](media/service-dashboard-create/power-bi-reports.png)
+    ![reports tab](media/service-dashboard-create/power-bi-reports.png)
 2. The report opens in [Reading view](service-reading-view-and-editing-view.md). Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
     Select **Edit report** to open the report in Editing view.
 
-    ![](media/service-dashboard-create/power-bi-reading-view.png)
+    ![report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hover over a visualization to reveal the options available. To add a visualization to a dashboard, select the pin ![](media/service-dashboard-create/power-bi-pin-icon.png) icon.
 
-    ![](media/service-dashboard-create/power-bi-hover.png)
+    ![hover over tile](media/service-dashboard-create/power-bi-hover.png)
 4. Since we're creating a new dashboard, select the option for **New dashboard** and give it a name.
 
-   ![](media/service-dashboard-create/power-bi-pin-tile.png)
+   ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-pin-tile.png)
 5. When you select **Pin**, Power BI creates the new dashboard in the current workspace. When the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, choose **Save**.
 
-     ![](media/service-dashboard-create/power-bi-pin-success.png)
+     ![success message](media/service-dashboard-create/power-bi-pin-success.png)
 6. Power BI opens the new dashboard and there is one tile - the visualization you just pinned.
 
-   ![](media/service-dashboard-create/power-bi-pinned.png)
+   ![dashboard with one tile](media/service-dashboard-create/power-bi-pinned.png)
 7. To return to the report, select the tile. Pin a few more tiles to the new dashboard. This time when the **Pin to dashboard** window displays, select **Existing dashboard**.  
 
-   ![](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## Pin an entire report page to the dashboard
 Instead of pinning one visual at a time, you can [pin an entire report page as a *live tile*](service-dashboard-pin-live-tile-from-report.md). Let's do it.
 
 1. In the report editor, select the **Spend Overview** tab to open the 2nd page of the report.
 
-   ![](media/service-dashboard-create/power-bi-page-tab.png)
+   ![report tab](media/service-dashboard-create/power-bi-page-tab.png)
 
 2. You want all of these visuals on your dashboard.  In the upper-right corner of the menubar, select **Pin live page**. On a dashboard, live page tiles update each time the page is refreshed.
 
-   ![](media/service-dashboard-create/power-bi-pin-live.png)
+   ![upper-right of report editor](media/service-dashboard-create/power-bi-pin-live.png)
 
 3. When the **Pin to dashboard** window displays, select **Existing dashboard**.
 
-   ![](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. When the Success message appears, select **Go to dashboard**. There you'll see the tiles you pinned from the report. In the example below, we've pinned 2 tiles from page 1 of the report and one live tile that is page 2 of the report.
 
-   ![](media/service-dashboard-create/power-bi-dashboard.png)
+   ![dashboard](media/service-dashboard-create/power-bi-dashboard.png)
 
 Congratulations on creating your first dashboard! Now that you have a dashboard, there's so much more you can do with it.  Try one of the suggested **Next steps** below, or start playing and exploring on your own.   
 
