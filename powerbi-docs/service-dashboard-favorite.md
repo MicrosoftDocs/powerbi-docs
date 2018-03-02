@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 03/02/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -39,31 +39,31 @@ Watch Amanda add favorites to her workspace, then follow the step-by-step instru
 
 
 1. Open a dashboard or report that you use often. Even content that has been shared with you can be a *favorite*.
-2. From the upper right corner of Power BI service, select **Favorite** or the star ![](media/service-dashboard-favorite/power-bi-favorite-icon.png)  icon.
+2. From the upper right corner of Power BI service, select **Favorite** or the star ![star icon](media/service-dashboard-favorite/power-bi-favorite-icon.png)  icon.
    
-   ![](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
+   ![Favorite icon](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
    
    You can also favorite a dashboard or report from your workspace **Dashboards** or **Reports** content view tab.
    
-   ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
+   ![Dashboard tab with yellow star](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## Add an app as a *favorite*
 
 1. From the left navpane, select **Apps**.
 
-  ![](media/service-dashboard-favorite/power-bi-favorite-apps.png)
+   ![dashboard](media/service-dashboard-favorite/power-bi-favorite-apps.png)
 
-2. Hover over an app to display more detail.  Select the star ![](media/service-dashboard-favorite/power-bi-favorite-icon.png)  icon to set as a favorite.
+2. Hover over an app to display more detail.  Select the star ![star icon](media/service-dashboard-favorite/power-bi-favorite-icon.png)  icon to set as a favorite.
    
-   ![](media/service-dashboard-favorite/power-bi-favorite-app.png)
+   ![hover over app](media/service-dashboard-favorite/power-bi-favorite-app.png)
 
 ## Working with *favorites*
 1. To acccess your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
    
-   ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
-2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![](media/service-dashboard-favorite/power-bi-favorites-icon.png)  icon.  
+   ![Favorites flyout](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
+2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![star icon](media/service-dashboard-favorite/power-bi-favorites-icon.png)  icon.  
    
-    ![](media/service-dashboard-favorite/power-bi-favorites-screen.png)
+    ![favorite window](media/service-dashboard-favorite/power-bi-favorites-screen.png)
    
    From here you can take action: open, identify owners, and even share with your  colleagues.
 
@@ -72,7 +72,7 @@ No longer use a report as often as you used to?  You can unfavorite it. When you
 
 1. In the left navigation pane, select **Favorites** to open the **Favorites** screen.
    
-   ![](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
+   ![Favorites screen](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
 2. Select the yellow star next to the content to unfavorite.
 
 > **NOTE**: You can also unfavorite a dashboard, report, or app itself. Just open and de-select the yellow icon.   

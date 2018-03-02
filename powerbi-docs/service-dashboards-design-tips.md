@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/02/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -48,7 +48,7 @@ Display your dashboard in [full screen](service-fullscreen-mode.md) without dist
 
 ### Make the most important information biggest
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
-![](media/service-dashboards-design-tips/pbi_card.png)
+![Card visualization](media/service-dashboards-design-tips/pbi_card.png)
 
 But be sure to provide context.  
 
