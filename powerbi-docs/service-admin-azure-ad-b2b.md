@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
 ---
@@ -24,10 +24,18 @@ LocalizationGroup: Administration
 
 Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization, while still maintaining control over the internal data.
 
+> [!NOTE]
+> This feature is only active if in the Power BI admin portal Tenant settings the [Export and sharing settings](service-admin-portal.md#export-and-sharing-settings) is **enabled**.
+>
+
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
 > This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser. 
+
+## Who can you invite?
+
+You can invite guest users that use any email address including personal accounts such as gmail.com, outlook.com, or hotmail.com. In Azure B2B these are called “Social IDs”. For more information please reference [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## Invite guest users
 
@@ -59,8 +67,9 @@ The guest user needs to select **Get Started** in the email invitation they rece
 
 ### Ad-hoc invites
 
-To perform an invite at anytime, add the external user to the access list of an app when publishing it.
+To perform an invite at anytime, add the external user to your dashboard or report through the share UI, or your app through the access page.
 
+Here is an example of what to do when inviting an external user to use an app.
 ![External user added to App access list](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 The guest user will receive an email indicating the app has been shared with them.
@@ -93,6 +102,10 @@ Assigning a Power BI Pro license to the guest user, within your tenant, allows t
 The guest user already has a Power BI Pro license assigned within their tenant.
 
 ![Guest user brings their own license](media/service-admin-azure-ad-b2b/license-approach3.png)
+
+## Considerations for inviting users with personal accounts
+
+When you invite guest users that are using personal email accounts such as gmail.com, outlook.com, or hotmail.com you can follow this embedded video to see an example of how a user would [sign up](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience).
 
 ## Limitations
 
