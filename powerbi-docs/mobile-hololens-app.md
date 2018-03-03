@@ -96,7 +96,9 @@ You can scan a QR code with HoloLens in holographic view, just as you can [scan 
 - When you pin a report or visual, you dont see any cross-filtering or highlighting you may have set in Windows classic view.
 - Even if your coworkers have HoloLens, only you can see the visuals you pin in a location.
 
+## Next steps
 
+- [Get data from the real world with the Power BI mobile apps](mobile-apps-data-in-real-world-context.md)
 
  
 
