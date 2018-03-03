@@ -856,6 +856,8 @@
       href: mobile-apps-find-content-mobile-devices.md
     - name: "What's new in the mobile apps"
       href: mobile-whats-new-in-the-mobile-apps.md
+    - name: "Power BI app for HoloLens"
+      href: mobile-hololens-app.md     
   - name: All mobile apps
     items: 
     - name: "Power BI for iOS apps"
