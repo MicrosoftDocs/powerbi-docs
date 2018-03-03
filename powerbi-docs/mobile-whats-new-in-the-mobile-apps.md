@@ -27,6 +27,12 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the Power BI service](service-whats-new.md)  
 
+## March 2018
+
+### Power BI app for HoloLens
+
+View your dashboards and reports in HoloLens while immersed in the virtual world, or place them in specific locations in the context of your environment. Read more about new [Power BI mobile app for HoloLens](mobile-hololens-app.md).
+
 ## February 2018
 
 ### Share reports
