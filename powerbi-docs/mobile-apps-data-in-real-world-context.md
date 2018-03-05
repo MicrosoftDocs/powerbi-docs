@@ -24,7 +24,7 @@ ms.author: maggies
 Power BI mobile apps can connect the real world directly to related BI information, in a number of different ways. 
 
 ## QR codes for tiles
-Create a QR code for a report, or a tile in a dashboard, and put the QR code anywhere you want. When your colleagues scan the code with their iPhones, Android phones, or HoloLens, they see the tile you've associated with that QR code. On an iPhone, they see the tile in augmented reality.
+Create a QR code for a report, or a tile in a dashboard, and put the QR code anywhere you want. When your colleagues scan the code with their iPhones, Android phones, or Power BI for Mixed Reality, they see the tile you've associated with that QR code. On an iPhone, they see the tile in augmented reality.
 
 ![QR code](media/mobile-apps-data-in-real-world-context/power-bi-ios-qr-ar-scanner-small.png)
 
@@ -32,7 +32,7 @@ More about:
 
 * [Creating a QR code for a tile in Power BI](service-create-qr-code-for-tile.md)
 * [Scanning a Power BI QR code from your mobile device](mobile-apps-qr-code.md)
-* [Scanning a QR code with the Power BI mobile app for HoloLens](mobile-hololens-app.md#scan-a-qr-code-in-holographic-view).
+* [Scanning a QR code with Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-qr-code-in-holographic-view).
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones are coming soon), they see the report you've associated with that QR code. 

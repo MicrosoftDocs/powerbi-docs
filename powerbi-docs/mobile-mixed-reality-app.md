@@ -1,6 +1,6 @@
 ---
-title: Power BI app for HoloLens
-description: View your dashboards and reports in HoloLens, either immersed in the virtual world or in the context of your environment.
+title: Power BI for Mixed Reality
+description: View your dashboards and reports in Power BI for Mixed Reality, either immersed in the virtual world or in the context of your environment.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -20,17 +20,17 @@ ms.date: 03/02/2018
 ms.author: maggies
 
 ---
-# Power BI app for HoloLens
-View your dashboards and reports in HoloLens while immersed in the virtual world, or place them in specific locations in the context of your environment. 
+# Power BI for Mixed Reality
+View your dashboards and reports in Power BI for Mixed Reality while immersed in the virtual world, or place them in specific locations in the context of your environment. 
 
-Download the HoloLens app from the Windows store to view your dashboards and reports. Interact with them in the virtual world, then select the ones you want to place. 
+Download the Power BI for Mixed Reality app from the Windows store to view your dashboards and reports. Interact with them in the virtual world, then select the ones you want to place. 
 
 ## Two views: Windows classic and holographic
 
-The HoloLens Power BI app is based on the Windows Power BI mobile app with additional capabilities unique to HoloLens. When you start Power BI in HoloLens, you're in this "classic" Windows view of Power BI. In this view, you can navigate between the dashboards and reports you have access to. When you find the one you want, you can switch from the classic Windows view to the holographic experience. 
+Power BI for Mixed Reality is based on the Windows Power BI mobile app with additional capabilities unique to HoloLens. When you start Power BI for Mixed Reality, you're in this "classic" Windows view of Power BI. In this view, you can navigate between the dashboards and reports you have access to. When you find the one you want, you can switch from the classic Windows view to the holographic experience. 
 
 
-## HoloLens Windows classic view basics
+## Power BI for Mixed Reality Windows classic view basics
 
 If you're new to the HoloLens experience, this section is for you. Interacting with a HoloLens app is different from interacting with a computer, or even with a tablet or phone. In the Windows classic view, HoloLens apps respond to a set of gestures and voice commands that replace the traditional mouse and keyboard, or the phone tap. 
 

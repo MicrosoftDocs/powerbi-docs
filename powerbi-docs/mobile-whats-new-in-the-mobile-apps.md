@@ -29,9 +29,9 @@ For related "What's New" information, see:
 
 ## March 2018
 
-### Power BI app for HoloLens
+### Power BI for Mixed Reality
 
-View your dashboards and reports in HoloLens while immersed in the virtual world, or place them in specific locations in the context of your environment. Read more about new [Power BI mobile app for HoloLens](mobile-hololens-app.md).
+View your dashboards and reports in Power BI for Mixed Reality while immersed in the virtual world, or place them in specific locations in the context of your environment. Read more about new [Power BI for Mixed Reality](mobile-mixed-reality-app.md).
 
 ## February 2018
 
