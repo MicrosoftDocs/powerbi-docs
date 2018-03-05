@@ -1,6 +1,6 @@
 ---
 title: Power BI goes anywhere in mobile apps for your mobile device
-description: The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device.
+description: The Power BI mobile apps keep you connected to your data on-premises or in the cloud. View Power BI dashboards and reports on your mobile device.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -48,4 +48,5 @@ Read more about [configuring Power BI mobile apps for Android and iOS with Micro
 ## Next steps
 * [Power BI free vs. Pro licenses](service-free-vs-pro.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
 
