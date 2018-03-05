@@ -1,5 +1,5 @@
 ---
-title: Power BI for Mixed Reality
+title: Power BI for Mixed Reality (Preview)
 description: View your dashboards and reports in Power BI for Mixed Reality, either immersed in the virtual world or in the context of your environment.
 services: powerbi
 documentationcenter: ''
@@ -16,48 +16,48 @@ ms.devlang: NA
 ms.topic: 
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
+ms.date: 03/05/2018
 ms.author: maggies
 
 ---
-# Power BI for Mixed Reality
+# Power BI for Mixed Reality (Preview)
 View your dashboards and reports in Power BI for Mixed Reality while immersed in the virtual world, or place them in specific locations in the context of your environment. 
 
-Download the Power BI for Mixed Reality app from the Windows store to view your dashboards and reports. Interact with them in the virtual world, then select the ones you want to place. 
+Download the preview edition of the Power BI for Mixed Reality app from the Windows store to view your dashboards and reports. Interact with them in the virtual world, then select the ones you want to place. 
 
 ## Two views: Windows classic and holographic
 
-Power BI for Mixed Reality is based on the Windows Power BI mobile app with additional capabilities unique to HoloLens. When you start Power BI for Mixed Reality, you're in this "classic" Windows view of Power BI. In this view, you can navigate between the dashboards and reports you have access to. When you find the one you want, you can switch from the classic Windows view to the holographic experience. 
+Power BI for Mixed Reality is based on the Power BI Windows mobile app with additional capabilities unique to mixed reality. When you start Power BI for Mixed Reality, you're in this "classic" Windows view of Power BI. In this view, you can navigate between the dashboards and reports you have access to. When you find the one you want, you can switch from the classic Windows view to the holographic experience. 
+
+Read more about [Microsoft hand gestures in mixed reality](https://developer.microsoft.com/windows/mixed-reality/gestures).
 
 
-## Power BI for Mixed Reality Windows classic view basics
+## Windows classic view basics
 
-If you're new to the HoloLens experience, this section is for you. Interacting with a HoloLens app is different from interacting with a computer, or even with a tablet or phone. In the Windows classic view, HoloLens apps respond to a set of gestures and voice commands that replace the traditional mouse and keyboard, or the phone tap. 
+If you're new to the mixed-reality experience, this section is for you. Interacting with a mixed-reality app is different from interacting with a computer, or even with a tablet or phone. In the Windows classic view, mixed-reality apps respond to a set of gestures and voice commands that replace the traditional mouse and keyboard, or the phone tap. 
 
 **Air tap**
 
-The air tap is the most basic gesture you need to know to interact with almost every HoloLens app. You tap the thumb and forefinger together with your hand held upright, similar to a mouse click or select.  
+The air tap is the most basic gesture you need to know to interact with almost every mixed reality app. You tap the thumb and forefinger together with your hand held upright, similar to a mouse click or phone tap.  
 
-![HoloLens air tap gesture](media/mobile-hololens-app/power-bi-hololens-airtap.png)
+![Mixed reality air tap gesture](media/mobile-mixed-reality-app/power-bi-hololens-airtap.png)
 
-In Power BI you use an air tap in the Windows classic app anywhere you would use a mouse click. You can air tap to open a dashboard or report in your workspace, or air tap part of a visual to filter or cross highlight other visual, and so on.
+In Power BI you use an air tap in the Windows classic app anywhere you would use a mouse click. You can air tap to open a dashboard or report in your workspace, or air tap part of a visual to filter or cross highlight other visuals, and so on.
 
-![Hand airtapping in Power BI](media/mobile-hololens-app/power-bi-hololens-airtap-hand.png) 
+![Hand airtapping in Power BI](media/mobile-mixed-reality-app/power-bi-hololens-airtap-hand.png) 
 
 **Pin an item** 
 
-Tap the **Pin** icon ![Pin icon](media/mobile-hololens-app/power-bi-hololens-pin.png) to pin a dashboard, report, or visual from Windows classic view to holographic view. You can pin a number of items to holographic view. When you enter holographic view, you can place them in a specific location in the physical space -- for example, next to a particular piece of equipment.
+Tap the **Pin** icon ![Pin icon](media/mobile-mixed-reality-app/power-bi-hololens-pin.png) to pin a dashboard or report from Windows classic view to holographic view. You can pin a number of items to holographic view. 
 
 **Switch to holographic view**
 
-After you've pinned items in the Windows classic view, you air tap the **Full Screen** icon ![Full screen icon](media/mobile-hololens-app/power-bi-hololens-fullscreen.png) to switch to holographic view. 
-
-In holographic view, the visuals and reports are somewhat static. You can't interact with them, but they do refresh every minute or so, as data changes. 
+After you've pinned items in the Windows classic view, you air tap the **Full Screen** icon ![Full screen icon](media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) to switch to holographic view. 
 
 
-## HoloLens holographic view basics
+## Holographic view basics
 
-Now that you're in holographic view, voice commands complement the hand gestures. Here are some common voice commands.
+Now that you're in holographic view, all the artifacts you pinned are in your docking belt. You can place these pinned items in specific locations in the physical space -- for example, next to the piece of equipment that the item describes. In holographic view, voice commands complement the hand gestures. Here are some common voice commands.
 
 **"Follow me"** 
 
@@ -69,9 +69,9 @@ Use the “dock” command to place an artifact in your Power BI docking belt, s
 
 **"Place here"**
 
-This command places a visual on a wall or object, or hovering in space.
+This command places a dashboard or report on a wall or object, or hovering in space.
 
-![Placing a visual in space](media/mobile-hololens-app/power-bi-hololens-place-visuals.png)
+![Placing a dashboard in space](media/mobile-mixed-reality-app/power-bi-hololens-place-visuals.png)
 
 **"Go home"**
 
@@ -85,16 +85,21 @@ Use this command to remove an artifact from holographic view.
 
 Use this command to remove all artifacts from holographic view.
 
+
 ## Scan a QR code in holographic view
 
-You can scan a QR code with HoloLens in holographic view, just as you can [scan QR codes with the Power BI mobile apps](mobile-apps-qr-code.md) for iPhone and Android.
+You can scan a QR code in holographic view, just as you can [scan QR codes with the Power BI mobile apps](mobile-apps-qr-code.md) for iPhone and Android.
 
 - While in holographic view, gaze at a QR code. Power BI opens the report associated with that QR code.
 
 ## Limitations and considerations
 
-- When you pin a report or visual, you dont see any cross-filtering or highlighting you may have set in Windows classic view.
-- Even if your coworkers have HoloLens, only you can see the visuals you pin in a location.
+Here are a few limitations and considerations for holographic view.
+
+- You don't see cross-filtering or highlighting you may have set in Windows classic view.
+- Your view of your pinned dashboards and reports is private. We don't currently support shared experiences.
+- The dashboards and reports refresh every minute or so, as data changes.
+
 
 ## Next steps
 
