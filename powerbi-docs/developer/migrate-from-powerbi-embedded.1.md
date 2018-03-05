@@ -1,6 +1,6 @@
 ---
-title: How to migrate Power BI Workspace Collection Workspace Collection content to Power BI
-description: Learn how to migrate from Power BI Workspace Collection to the Power BI Embedded and leverage advances for embedding in apps.
+title: How to migrate Power BI Embedded workspace collection content to Power BI
+description: Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps.
 services: powerbi
 documentationcenter: ''
 author: markingmyname
@@ -11,33 +11,33 @@ tags: ''
 qualityfocus: no
 qualitydate: ''
 
-ms.Embedded: powerbi
+ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/05/2018
+ms.date: 03/04/2018
 ms.author: maghan
 
 ---
-# How to migrate Power BI Workspace Collection content to Power BI Embedded
-Learn how to migrate from Power BI Workspace Collection to Power BI Embedded and leverage advances for embedding in apps.
+# How to migrate Power BI Embedded workspace collection content to Power BI
+Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps.
 
-Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI Embedded.
+Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI service.
 
-With the introduction of Power BI Premium, Power BI Workspace Collection and Power BI Embedded are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
+With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
 
-The current Power BI Workspace Collection will continue to be available for a limited time following general availability of the converged offering: customers under an Enterprise Agreement will have access through the expiration of their existing agreements; customers that acquired Power BI Workspace Collection through Direct or CSP channels will enjoy access for one year from General Availability of Power BI Premium.  This article will provide some guidance for migrating from the Azure Workspace Collection to the new Power BI Embedded experience and what to expect for changes in your application.
+The current Power BI Embedded service will continue to be available for a limited time following general availability of the converged offering: customers under an Enterprise Agreement will have access to through the expiration of their existing agreements; customers that acquired Power BI Embedded through Direct or CSP channels will enjoy access for one year from General Availability of Power BI Premium.  This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
 
 > [!IMPORTANT]
-> While the migration will take a dependency on the Power BI Embedded, there is not a dependency on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application. You can use this embedding approach to Embedded non-Power BI users.
+> While the migration will take a dependency on the Power BI service, there is not a dependency on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application. You can use this embedding approach to service non-Power BI users.
 > 
 > 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 ## Prepare for the migration
-There are a few things you need to do to prepare for migrating from Power BI Workspace Collection to Power BI Embedded. You will need a tenant available, along with a user that has a Power BI Pro license.
+There are a few things you need to do to prepare for migrating from Power BI Embedded Azure service over to the Power BI service. You will need a tenant available, along with a user that has a Power BI Pro license.
 
 1. Make sure you have access to an Azure Active Directory (Azure AD) tenant.
    
@@ -64,7 +64,7 @@ The following accounts will need to exist within your tenant.
 2. Accounts for analysts that will create content.
    
     These users should be assigned to App workspaces as needed.
-3. An application *master* user account, or Embedded account.
+3. An application *master* user account, or service account.
    
     The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the App workspaces created for embedding.
    
@@ -97,16 +97,16 @@ You will need a user that has a Pro license in order to create an app workspace 
 > 
 
 ## Content migration
-Migrating your content from your workspace collections to Power BI Embedded can be done in parallel to your current solution and doesn’t require any downtime.
+Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
 
-A **migration tool** is available for you to use in order to assist with copying content from Power BI Workspace Collection to Power BI Embedded. Especially if you have a lot of content. For more information, see [Power BI Workspace Collection migration tool](migrate-tool.md).
+A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
 
 Content migration relies mainly on two APIs.
 
 1. Download PBIX - this API can download PBIX files which were uploaded to Power BI after October 2016.
 2. Import PBIX - this API uploads any PBIX to Power BI.
 
-For some related code snippets, see [Code snippets for migrating content from Power BI Workspace Collection](migrate-code-snippets.md).
+For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](migrate-code-snippets.md).
 
 ### Report types
 There are several types of reports, each requiring a somewhat different migration flow.
@@ -157,7 +157,7 @@ It is possible using some workarounds to migrate the push api report from PaaS t
 6. Rebind report to push api dataset.
 
 ## Create and upload new reports
-In addition to the content you migrated from the Power BI Workspace Collection, you can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
+In addition to the content you migrated from the Power BI Embedded Azure service, you can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
 ## Rebuild your application
 1. You will need to modify your application to use the Power BI REST APIs and the report location inside powerbi.com.
@@ -171,29 +171,29 @@ Within your application, you will map users that you manage within the applicati
 When you are ready to move to production, you will need to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
-* Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you neeed, see the [Workspace Collection analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
+* Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you neeed, see the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
 * Edit the App workspace and assign it to a Premium capacity under advanced.
  
     ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
     
-* Deploy your updated application to production and begin embedding reports from the Power BI Embedded.
+* Deploy your updated application to production and begin embedding reports from the Power BI service.
 
 ## After migration
 You should do some cleanup within Azure.
 
-* Remove all workspaces off of the deployed solution within the Azure Embedded of Power BI Workspace Collection.
+* Remove all workspaces off of the deployed solution within the Azure service of Power BI Embedded.
 * Delete any Workspace Collections that exist within Azure.
 
 ## Next steps
 [Embedding with Power BI](embedding.md)  
-[Power BI Workspace Collection migration tool](migrate-tool.md)  
-[Code snippets for migrating content from Power BI Workspace Collection](migrate-code-snippets.md)  
+[Power BI Embedded migration tool](migrate-tool.md)  
+[Code snippets for migrating content from Power BI Embedded](migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
-[Power BI Premium - what is it?](../Embedded-premium.md)  
+[Power BI Premium - what is it?](../service-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Workspace Collection analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
+[Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
