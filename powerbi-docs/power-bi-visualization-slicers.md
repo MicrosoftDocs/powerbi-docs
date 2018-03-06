@@ -97,7 +97,7 @@ There are a few limitations to using slicers in Power BI, which are the followin
 1. Slicers do not support input fields.
 2. A single slicer cannot be used across an entire report. A slicer only impacts the current page.
 3. Slicers cannot be pinned to a dashboard.
-4. Drilldown is not supported for slicers.    
+4. Drill down is not supported for slicers.    
 5. Slicers do not support Visual level filters.
 
 Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
