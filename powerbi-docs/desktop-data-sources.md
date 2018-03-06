@@ -26,11 +26,11 @@ With Power BI Desktop, you can connect to data from many different sources. A fu
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image.
 
-![](media/desktop-data-sources/data-sources_1.png)
+![Get Data](media/desktop-data-sources/data-sources_1.png)
 
 Selecting **More…** from the **Most Common** menu displays the **Get Data** window. You can also bring up the **Get Data** window (and bypass the **Most Common** menu) by selecting the **Get Data** **icon button** directly.
 
-![](media/desktop-data-sources/data-sources_2.png)
+![Get Data - All](media/desktop-data-sources/data-sources_2.png)
 
 > [!NOTE]
 > The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -56,11 +56,11 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
-* SharePoint Folder
+* SharePoint folder
 
 The following image shows the **Get Data** window for **File**.
 
-![](media/desktop-data-sources/data-sources_3.png)
+![Get Data - File](media/desktop-data-sources/data-sources_3.png)
 
 > [!NOTE]
 > In previous versions of Power BI Desktop, **CSV** and **Text** were separate data connection types. Those data connectors have been combined into **CSV/Text**.
@@ -69,19 +69,20 @@ The following image shows the **Get Data** window for **File**.
 
 The **Database** category provides the following data connections:
 
-* SQL Server Database
-* Access Database
-* SQL Server Analysis Services Database
-* Oracle Database
-* IBM DB2 Database
+* SQL Server database
+* Access database
+* SQL Server Analysis Services database
+* Oracle database
+* IBM DB2 database
 * IBM Informix database (Beta)
 * IBM Netezza (Beta)
-* MySQL Database
-* PostgreSQL Database
-* Sybase Database
-* Teradata Database
-* SAP HANA Database
-* SAP Business Warehouse server
+* MySQL database
+* PostgreSQL database
+* Sybase database
+* Teradata database
+* SAP HANA database
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (Beta)
 * Amazon Redshift
 * Impala
 * Google BigQuery (Beta)
@@ -94,11 +95,11 @@ The **Database** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Database**.
 
-![](media/desktop-data-sources/data-sources_4.png)
+![Get Data - Database](media/desktop-data-sources/data-sources_4.png)
 
 The **Azure** category provides the following data connections:
 
-* Azure SQL Database
+* Azure SQL database
 * Azure SQL Data Warehouse
 * Azure Analysis Services database (Beta)
 * Azure Blob Storage
@@ -107,10 +108,11 @@ The **Azure** category provides the following data connections:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (Beta)
+* HDInsight Interactive Query (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
-![](media/desktop-data-sources/data-sources_5.png)
+![Get Data - Azure](media/desktop-data-sources/data-sources_5.png)
 
 The **Online Services** category provides the following data connections:
 
@@ -118,6 +120,7 @@ The **Online Services** category provides the following data connections:
 * SharePoint Online List
 * Microsoft Exchange Online
 * Dynamics 365 (online)
+* Dynamics NAV (Beta)
 * Dynamics 365 for Financials (Beta)
 * Common Data Service (Beta)
 * Microsoft Azure Consumption Insights (Beta)
@@ -125,20 +128,21 @@ The **Online Services** category provides the following data connections:
 * Salesforce Objects
 * Salesforce Reports
 * Google Analytics
+* Adobe Analytics
 * appFigures (Beta)
 * comScore Digital Analytix (Beta)
 * Dynamics 365 for Customer Insights (Beta)
+* Data.World - Get Dataset (Beta)
 * Facebook
 * GitHub (Beta)
-* Kusto (Beta)
 * MailChimp (Beta)
+* Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise (Beta)
 * Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
-* SQL Sentry (Beta)
 * Stripe (Beta)
 * SweetIQ (Beta)
 * Troux (Beta)
@@ -149,11 +153,12 @@ The **Online Services** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/desktop-data-sources/data-sources_6b.png)
+![Get Data - Online Services](media/desktop-data-sources/data-sources_6b.png)
 
 The **Other** category provides the following data connections:
 
 * Vertica (Beta)
+* Kusto (Beta)
 * Web
 * SharePoint List
 * OData Feed
@@ -161,14 +166,14 @@ The **Other** category provides the following data connections:
 * Microsoft Exchange
 * Hadoop File (HDFS)
 * Spark (Beta)
-* R Script
+* R script
 * ODBC
 * OLE DB
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
 
-![](media/desktop-data-sources/data-sources_7a.png)
+![Get Data - Other](media/desktop-data-sources/data-sources_7a.png)
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
@@ -178,15 +183,15 @@ The following image shows the **Get Data** window for **Other**.
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![](media/desktop-data-sources/data-sources_7b.png)
+![Connect to Data](media/desktop-data-sources/data-sources_7b.png)
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
 
-![](media/desktop-data-sources/datasources_fromwebbox.png)
+![Web Data URL](media/desktop-data-sources/datasources_fromwebbox.png)
 
 When the URL or resource connection information is entered, select **OK**. Power BI Desktop makes the connection to the data source, and presents the available data sources in the **Navigator**.
 
-![](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Web Data Source](media/desktop-data-sources/datasources_fromnavigatordialog.png)
 
 You can either load the data by selecting the **Load** button at the bottom of the **Navigator** pane, or edit the query before loading data by selecting the **Edit** button.
 
@@ -195,9 +200,8 @@ That’s all there is to connecting to data sources in Power BI Desktop! Try con
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
-* [Query Overview with Power BI Desktop](desktop-query-overview.md)
-* [Data Types in Power BI Desktop](desktop-data-types.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)    
-
+* [Getting started with Power BI Desktop](desktop-getting-started.md)
+* [Query overview with Power BI Desktop](desktop-query-overview.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
+* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)    
