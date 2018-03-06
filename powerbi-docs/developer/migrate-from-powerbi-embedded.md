@@ -197,4 +197,3 @@ You should do some cleanup within Azure.
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
