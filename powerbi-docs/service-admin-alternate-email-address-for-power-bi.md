@@ -43,6 +43,15 @@ Sometimes you may want these emails delivered to an alternate email address rath
 > 
 > 
 
+## Updating through Azure Active Directory
+When capturing an Active Azure Directory (AAD) embed token for Power BI you can use 3 different types of emails to send notifications or invitations to. These are the main email address that is tied to the user’s AAD account, the UserPricnipleName (UPN) email address, or the “other” email address array attribute. Depending on a series of scenarios, Power BI will choose which one to use in certain situations.
+
+Email order of operations:
+* If the mail attribute in the AAD tenant’s user object is present, then that address will be used
+* If the UPN email is not a *.onmicrosoft.com domain, then that address will be used
+* If the “other” email array attribute in the AAD user object is present, then the first email in that list (since there can be a list of emails in this attribute) will be used
+* If all of the above conditions are not met, then the UPN address will be used
+
 ## Updating with PowerShell
 You can alternatively update the alternate email address via PowerShell for Azure Active Directory. This is done with the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) command.
 
