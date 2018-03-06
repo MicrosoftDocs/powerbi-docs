@@ -1,6 +1,6 @@
 ---
 title: Get started with the Power BI mobile app on Android tablets
-description: Learn how the Power BI mobile app for Android tablets brings Power BI to you anywhere, with mobile access to business information on premises and in the cloud.
+description: Learn how the Power BI mobile app for Android tablets brings Power BI to you anywhere, with mobile access to business information on-premises and in the cloud.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -140,3 +140,4 @@ Here are some other things you can do in the Android tablet app for Power BI wit
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
