@@ -347,9 +347,9 @@ The following updates were new to **Power BI Desktop** in July:
 -   Responsive layout for visuals (preview)  [[video]](https://youtu.be/4X96ow7FnSY?t=12m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
 -   New waterfall chart option - breakdown  [[video]](https://youtu.be/4X96ow7FnSY?t=14m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
 -   Custom visual updates  [[video]](https://youtu.be/4X96ow7FnSY?t=17m34s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisuals)
-    -   drill-down Choropleth  [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
-    -   drill-down Cartogram  [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
-    -   drill-down Player  [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
+    -   Drill down Choropleth  [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
+    -   Drill down Cartogram  [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
+    -   Drill down Player  [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
     -   Certified custom visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
 
 
@@ -828,7 +828,7 @@ The following updates are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Drill-down (or back up) on line charts [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
+-   Drill down (or back up) on line charts [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
 -   Continuous axis for the Date axis [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)  [[video]](https://youtu.be/0VvG7Eqoke8?t=3m48s)
 -   General availability of Inline Hierarchies [[article]](desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
 -   Predefined matrix styles (similar to table formatting in Excel) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
