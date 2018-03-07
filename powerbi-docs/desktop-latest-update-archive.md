@@ -1035,7 +1035,7 @@ In April, we showered our great Power BI customers with another collection of co
 
 -   Additional styles on a table, matrix, and multi-row card
 -   Trend lines on single visuals
--   New drill action â€“ **See Records**
+-   New drill action - **See Records**
 -   Map auto-zoom during drill/filter
 -   In-line hierarchy labels for expanded view (Preview - [see the article](desktop-inline-hierarchy-labels.md))
 
@@ -1056,7 +1056,7 @@ In April, we showered our great Power BI customers with another collection of co
     -   SparkPost
     -   tyGraph
 -   Conditional Columns
--   DirectQuery â€“ Specify DirectQuery vs. Import mode in data source dialogs
+-   DirectQuery - Specify DirectQuery vs. Import mode in data source dialogs
 -   Column type indicator in Query Editor preview column headers
 -   Reorder Queries and Query Groups using Drag & Drop gestures
 -   Query Management menu in the ribbon
@@ -1138,7 +1138,7 @@ We're leaping ahead with more updates this month! February brings 29 days to the
 ### Report View:
 
 -   See Data Behind a Visual (including *Export Data to CSV*)
--   Map improvements â€“ plot map with latitude/longitude only
+-   Map improvements - plot map with latitude/longitude only
 -   KPI consumption release support (including navigation hierarchy support and KPI trend for SSAS MD)
 -   SSAS Exploration Mode: Support for **Display** folders in the **Fields** pane
 -   Ribbon layout improvements: Contextual ribbon tab for **Report Tools**
@@ -1156,18 +1156,18 @@ We're leaping ahead with more updates this month! February brings 29 days to the
 ### Data Connectivity:
 
 -   **DirectQuery** support for Oracle and Teradata databases
--   **DirectQuery** â€“ support for creating Calculated Columns
+-   **DirectQuery** - support for creating Calculated Columns
 -   Support for publishing Analysis Services Live reports
 -   JSON File connector
 -   SQL Sentry connector
 -   Support for jagged CSV files
--   Exchange Connector â€“ OAuth support
--   SharePoint List Connector â€“ URL validation
--   Database Connectors â€“ ability to disable Navigation Columns in Query previews (Performance optimization)
--   Web Connector â€“ fine-grained scoping of Credentials
+-   Exchange Connector - OAuth support
+-   SharePoint List Connector - URL validation
+-   Database Connectors - ability to disable Navigation Columns in Query previews (Performance optimization)
+-   Web Connector - fine-grained scoping of Credentials
 -   **Enter Data** dialog UX enhancements
--   SAP HANA â€“ Support for single sign-on with Windows Authentication (Power BI Desktop only)
--   SAP HANA â€“ Support for **Field** labels
+-   SAP HANA - Support for single sign-on with Windows Authentication (Power BI Desktop only)
+-   SAP HANA - Support for **Field** labels
 -   Alphabetical sort of columns in **Choose Columns** builder
 -   Improved performance of renaming/removing/reordering columns
 -   Virtualized Preview in **Query Editor**
@@ -1291,7 +1291,7 @@ Another month, another big collection of new features and improvements for Power
 -   Slicer Selection Behaviors (single vs. multi-select)
 -   Control Z-order
 -   Background Colors for Slides
--   Interactions between Visuals â€“ Subview (tile by)
+-   Interactions between Visuals - Subview (tile by)
 -   Duplicate Pages
 -   Support for KPIs and Images in Tables, Matrices and Cards
 -   Better Tooltips on Area Charts & Line Charts
@@ -1360,8 +1360,8 @@ October brings another large collection of updates to Power BI Desktop:
 
 
 ### Data Transformations:
--   Filter by â€œnot earliest/latest dateâ€
--   Filter by â€œis in previous N minutes/hours/secondsâ€
+-   Filter by "not earliest/latest date"
+-   Filter by "is in previous N minutes/hours/seconds"
 -   Copy/Paste Queries between Power BI Desktop and Excel
 -   Support for Special Characters in Split Column
 -   Refresh Previews in Merge Queries dialog
@@ -1393,7 +1393,7 @@ The following massive collection of 44 features has been added to this update:
 - Support for inserting Shapes in the Report canvas
 - Fields pane improvements
 	- Search Box to make it easier to find fields by name
-	- â€œExpand/Collapse Allâ€ to improve navigation when there are multiple tables in the Fields pane
+	- "Expand/Collapse All" to improve navigation when there are multiple tables in the Fields pane
 	- Field well cardinality support, drag-replace for buckets with 1 item
 	- Additional Data Labels formatting options
 	- Chart Cartesian Axis Improvements:
@@ -1423,13 +1423,13 @@ The following massive collection of 44 features has been added to this update:
 - Support for on-premises Spark distributions
 - Support for SharePoint lists from non-English sites
 - Exchange connector - Enhanced support, now allowing connections to multiple mailboxes
-- Excel Workbook Connector â€“ Automatic Column Type detection when importing .XLS files
-- â€œSelect Related Tablesâ€ option when connecting to database sources
+- Excel Workbook Connector - Automatic Column Type detection when importing .XLS files
+- "Select Related Tables" option when connecting to database sources
 - Enhanced Active Directory connector credentials, allowing alternate Windows Credentials
 - Improved Function Invocation experience when loading functions from a data source (such as a database)
-- â€œImport Excel Workbook Contentsâ€ feature released last month now also supports external connections to Analysis Services tabular models
-- New option to â€œDelete Allâ€ entries in the Data Source Settings dialog
-- Option to â€œEnable Relationship Import during Refresh operationsâ€
+- "Import Excel Workbook Contents" feature released last month now also supports external connections to Analysis Services tabular models
+- New option to "Delete All" entries in the Data Source Settings dialog
+- Option to "Enable Relationship Import during Refresh operations"
 
 ### Data Transformations and Query Editor Improvements
 
@@ -1437,8 +1437,8 @@ The following massive collection of 44 features has been added to this update:
 - Filter date columns by earliest/latest date (dynamic filter)
 - Extract min/max date/time value from a column
 - Replace Values - Provision for specifying special characters
-- â€œDetect Column Typesâ€ option to trigger type detection on demand
-- â€œRefresh All Previewsâ€ to refresh all Query Editor previews with a single click
+- "Detect Column Types" option to trigger type detection on demand
+- "Refresh All Previews" to refresh all Query Editor previews with a single click
 - Performance Improvements:
 	- Choose Columns dialog: Faster user experience for dealing with wide tables
 	- Auto-filter & Expand/Aggregate popups: Faster for large number of values/fields
@@ -1511,7 +1511,7 @@ The following features have been added in this update:
 
 -   Support for Exchange UPN Credentials in the Exchange connector.ï»¿
 
-In addition to all these new features, weâ€™re also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
+In addition to all these new features, we're also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
 
 Take a look at the following video for more details:
 
@@ -1623,14 +1623,14 @@ The following features have been added or improved in this update:
 - Performance improvements
 - Dynamics CRM Online connector
 	> [!NOTE]
-	> Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. Weâ€™ll fix this issue in our March update. The temporary workaround is to connect to this feed using â€œFrom ODataâ€.*
+	> Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We'll fix this issue in our March update. The temporary workaround is to connect to this feed using "From OData".*
 - Navigator Dialog improvements
 	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
 	-   Show Selected Items option
 	-   Improved Search capabilities in the Navigator tree
 -   New Transformations
 	-   Age and Subtract operations for Date/Time columns
-	-   Aggregate Columns: Option to disable new columnsâ€™ prefix
+	-   Aggregate Columns: Option to disable new columns' prefix
 -   Field List improvements
 	-   Expand/Collapse tables
 	-   Hide/Unhide fields
