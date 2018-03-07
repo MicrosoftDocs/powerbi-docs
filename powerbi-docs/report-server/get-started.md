@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 3/5/2018
 ms.author: maghan
 
 ---
 # Get started with Power BI Report Server
-Create, deploy, and manage Power BI, mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
+Create, deploy, and manage Power BI, mobile and paginated reports on-premises with the range of ready-to-use tools and services that Power BI Report Server provides.
 
 ## Create, deploy, and manage reports
 Power BI Report Server is a solution that customers deploy on their own premises for creating, publishing, and managing reports, then delivering them to the right users in different ways, whether that’s viewing them in web browser, on their mobile device, or as an email in their in-box.
@@ -83,4 +83,5 @@ More [Report Server developer documentation](https://docs.microsoft.com/sql/repo
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 
