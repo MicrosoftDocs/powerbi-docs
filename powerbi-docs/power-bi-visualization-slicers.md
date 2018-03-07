@@ -48,7 +48,7 @@ Power BI slicers have the following limitations:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
-2. From the Fields pane, under District, select **District Manager** to display a new visualization.
+2. From the Fields pane, under District, select **District Manager** to create a new visualization.
     ![new chart](media/power-bi-visualization-slicers/1-new-vis.png)
 
 3. Select the Slicer icon []() in the Visualizations pane to convert the new visualization to a slicer. 
@@ -64,18 +64,22 @@ You can also select the slicer icon directly to create a new slicer, and then se
 
 ## Format the slicer
 Apply visual formatting to the District Manager slicer.
-1. With the slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting categories. 
+1. With the slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
     ![formatting](media/power-bi-visualization-slicers/3-format.png)
 2. Click the dropdown arrows next to each category to display and edit the options. 
 
 ### General options
 1. Select red under **Outline color** and change **Outline weight** to "2". This sets the color and thickness of the Header and Items outlines or underlines, when enabled. 
+    
     >[!NOTE]
     >Any border around the slicer itself is set under Border. 
+    
 2. Under Orientation, Vertical is the default, creating a vertical list slicer with selection boxes before the items. Choose **Horizontal** to produce a slicer with horizontally arranged items. Horizontal orientation can produce various arrangements of buttons or tiles, depending on slicer size and shape and item formatting. 
+    
     ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
-
+    
 3. Turn on **Responsive** layout, which changes the size and arrangement of horizontal slicer items depending on viewscreen size. At a very small size, the slicer becomes a filter icon. 
+    
     ![responsive](media/power-bi-visualization-slicers/5-responsive.png)
     >[!NOTE]
     >Responsive layout changes may override Heading and Item formatting that you set. 
@@ -96,11 +100,13 @@ The header is On by default, showing the data field name at the top of the slice
 
 ### Item options
 1. Format item text and background to make the **Font color** black, **Background** light red, **Text size** 10 pt, and **Font family** Arial. 
-2. Under Outline, choose Frame to draw a border around each item with the size and color you set under General options. Choose **None** to remove the borders. 
+2. Under Outline, choose Frame to draw a border around each item with the size and color you set under General options. 
+    
     ![formatted](media/power-bi-visualization-slicers/8-formatted.png)
+    
     >[!TIP]
     >- With Horizontal orientation, deselected items show the chosen text and background colors while selected items use the system default, usually black backgrounds with white text. 
-    >- With Vertical orientation, items always show the set colors. Selection boxes are always clear, or black if selected. 
+    >- With Vertical orientation, items always show the set colors. Selection boxes are always black when selected. 
 
 ### Other formatting options
 The other formatting options are off by default. When turned **On**: 
@@ -112,25 +118,26 @@ The other formatting options are off by default. When turned **On**:
 ## Sync slicers to other pages
 Starting with the February 2018 Power BI update, you can now sync and use a slicer on all pages in a report. 
 1. With the District Manager slicer selected, on the View menu, select **Sync slicers** in Power BI Desktop, or turn on **Sync slicers pane** in Power BI service. The Sync Slicers pane appears. 
+    
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
+    
 2. Select the report pages you want the slicer to sync with (left column), or click **Add to all** to select all report pages. 
 3. Select the pages on which you want the slicer control to be visible (right column). 
 
 >[!TIP]
 >Although a synced slicer is initially identical on all pages, you can move, size, and format it differently on different pages.  
 
-## Control which page visuals are affected by a slicer
+## Control the page visuals affected by a slicer
 By default, a slicer on a report page affects all other visualizations on that page. Use **Visual interactions** to prevent some page visualizations from being affected.
 
 1. With the slicer selected:
     - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
     - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
-Filter controls appear above all the visuals on the page.
-2. Select the **None** icon above a visual to make the slicer stop filtering it. Select the **Filter** icon to make the slicer start filtering the visual again. 
-    ![](media/power-bi-visualization-slicers/pbi-slicer-interactions.png)
-    ![](media/power-bi-visualization-slicers/filter-controls.png)
+Filter controls appear above all the visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
 
-See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information.
+2. Select the **None** icon above a visual to make the slicer stop filtering it. Select the **Filter** icon to make the slicer start filtering the visual again. 
+
+See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information about editing interactions.
 
 ## Next steps
 [Try it out -- it's free!](https://powerbi.com/)
