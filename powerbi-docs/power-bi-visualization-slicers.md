@@ -45,6 +45,8 @@ Power BI slicers have the following limitations:
 - Slicers do not support visual level filters.
 
 ## Create a slicer
+
+This tutorial uses a list slicer. Numeric and date/time data types can also have range slicers. See [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md) or the following video for more information about creating and using range slicers.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
@@ -59,7 +61,7 @@ Power BI slicers have the following limitations:
 You can also select the Slicer icon to create a new slicer, and then select or drag a data field to the Field box to populate it.
 
 >[!NOTE]
->This tutorial uses a list slicer. Numeric and date/time data types can also have range slider slicers. See [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md) for information about range slicers.
+
 
 >[!TIP]
 >You can sort list slicer items by data values. To sort slicer items in reverse alphabetical order, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager**. The setting is ascending alphabetical by default, but toggles between ascending and descending order. 
