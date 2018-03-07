@@ -38,14 +38,14 @@ To run the script in Power BI Desktop, make sure the script runs successfully in
 When preparing and running an R script in Power BI Desktop, there are a few limitations:
 
 * Only data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame
-* Columns that are typed as Complex and Vector are not imported, and are replaced with error values in the created table.
+* Columns that are typed as Complex and Vector are not imported, and are replaced with error values in the created table
 * Values that are N/A are translated to NULL values in Power BI Desktop
 * Any R script that runs longer than 30 minutes times out
 * Interactive calls in the R script, such as waiting for user input, halts the script’s execution
 * When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path
 
 ### Run your R script and import data
-1. In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R Script** as shown in the following image.
+1. In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R script** as shown in the following image.
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. If R is installed on your local machine, the latest installed version is selected as your R engine. Simply copy your script into the script window and select **OK**.
@@ -55,9 +55,9 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
    
    ![](media/desktop-r-scripts/r-scripts-3.png)
    
-   If R is installed is not identified, you can explicitly provide its location in the text box provided when you expand **R Installation Settings**. In the above image, the path *C:\Program Files\R\R-3.2.0* is explicitly provided in the text box.
+   If R is installed and is not identified, you can explicitly provide its location in the text box provided when you expand **R Installation Settings**. In the above image, the path *C:\Program Files\R\R-3.2.0* is explicitly provided in the text box.
    
-   R installation settings are centrally located in the R Scripting section of the Options dialog. To specify your R installation settings, select **File > Options and settings** and then **Options > R Scripting**. If multiple installations of R are available, a drop-down menu appears that allows you to  select which installation to use.
+   R installation settings are centrally located in the R Scripting section of the Options dialog. To specify your R installation settings, select **File > Options and settings** and then **Options > R scripting**. If multiple installations of R are available, a drop-down menu appears that allows you to  select which installation to use.
    
    ![](media/desktop-r-scripts/r-scripts-4.png)
 4. Select **OK** to run the R Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
