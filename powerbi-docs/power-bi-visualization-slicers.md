@@ -52,7 +52,7 @@ Power BI slicers have the following limitations:
     
     ![new chart](media/power-bi-visualization-slicers/1-new-vis.png)
     
-3. Select the **Slicer** icon ![slicer icon](media/slicer-icon.png) in the Visualizations pane to convert the new visualization to a slicer. 
+3. Select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the Visualizations pane to convert the new visualization to a slicer. 
     
     ![convert to slicer](media/power-bi-visualization-slicers/2-slicer.png)
 
