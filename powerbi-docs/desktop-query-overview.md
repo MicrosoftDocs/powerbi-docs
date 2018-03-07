@@ -99,7 +99,7 @@ The left pane displays the number of active queries, as well as the name of the 
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
 ## The center (data) pane
-In the center pane, or Data pane, date from the selected query is displayed. This is where much of the work of the Query view is accomplished.
+In the center pane, or Data pane, data from the selected query is displayed. This is where much of the work of the Query view is accomplished.
 
 In the following image, the Web data connection established earlier is displayed, the **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
 
