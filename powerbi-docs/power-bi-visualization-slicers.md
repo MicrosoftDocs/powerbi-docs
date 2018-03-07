@@ -49,32 +49,32 @@ Power BI slicers have the following limitations:
 
 1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, under District, select **District Manager** to create a new visualization.
+    
     ![new chart](media/power-bi-visualization-slicers/1-new-vis.png)
-
-3. Select the Slicer icon []() in the Visualizations pane to convert the new visualization to a slicer. 
+    
+3. Select the **Slicer** icon ![slicer icon](media/slicer-icon.png) in the Visualizations pane to convert the new visualization to a slicer. 
+    
     ![convert to slicer](media/power-bi-visualization-slicers/2-slicer.png)
 
-You can also select the slicer icon to create a new slicer, and then select or drag a data field to the Field box to populate it.
+You can also select the Slicer icon to create a new slicer, and then select or drag a data field to the Field box to populate it.
 
 >[!NOTE]
 >This tutorial uses a list slicer. Numeric and date/time data types can also have range slider slicers. See [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md) for information about range slicers.
 
 >[!TIP]
->You can sort list slicer items by data field values. To sort the items in reverse alphabetical order, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager**. The setting is ascending alphabetical by default, but toggles between ascending and descending order. 
+>You can sort list slicer items by data values. To sort slicer items in reverse alphabetical order, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager**. The setting is ascending alphabetical by default, but toggles between ascending and descending order. 
 
 ## Format the slicer
 Apply visual formatting to the District Manager slicer.
 1. With the slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
+    
     ![formatting](media/power-bi-visualization-slicers/3-format.png)
+    
 2. Click the dropdown arrows next to each category to display and edit the options. 
 
 ### General options
 1. Select red under **Outline color** and change **Outline weight** to "2". This sets the color and thickness of the header and item outlines or underlines, when enabled. 
-    
-    >[!NOTE]
-    >Any border around the slicer itself is set under Border. 
-    
-2. Under Orientation, Vertical is the default, creating a vertical list slicer with selection boxes before the items. Choose **Horizontal** to produce a slicer with horizontally arranged items. Horizontal orientation can produce various arrangements of text, buttons, or tiles, depending on the slicer size and shape and item formatting. 
+2. Under Orientation, Vertical is the default, creating a vertical list slicer with selection boxes before the items. Select **Horizontal** to produce a slicer with horizontally arranged items. Horizontal orientation can produce various arrangements of text, buttons, or tiles, depending on the slicer size and shape and item formatting. 
     
     ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
     
