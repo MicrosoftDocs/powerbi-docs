@@ -124,7 +124,7 @@ Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacit
 
 Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West US, and West US 2.
 
-### What type of content pack data cam be embedded?
+### What type of content pack data can be embedded?
 Power BI embedded supports embedding of several types of content from group workspaces: dashboards, tiles and reports. However, dashboards and tiles that are built from content pack datasets cannot be embedded, but reports built from a content pack dataset can be embedded.
 
 ## Licensing
