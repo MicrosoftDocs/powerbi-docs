@@ -172,6 +172,8 @@ Here are some things to keep in mind when pushing apps to end users:
 
 * Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
 
+* Guest users who have not accepted an invite will not get apps automatically installed for them.  
+
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.
 
