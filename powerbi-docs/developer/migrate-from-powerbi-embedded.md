@@ -23,9 +23,9 @@ ms.author: maghan
 # How to migrate Power BI Workspace Collection content to Power BI Embedded
 Learn how to migrate from Power BI Workspace Collection to Power BI Embedded and leverage advances for embedding in apps.
 
-Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance for Power BI Embedded.
+Microsoft recently [announced Power BI Embedded](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance.
 
-With the introduction of Power BI Premium, Power BI Workspace Collection and Power BI Embedded are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium.
+With the introduction of Power BI Embedded, developers can advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium.
 
 The current Power BI Workspace Collection will continue to be available for a limited time. Customers under an Enterprise Agreement will have access through the expiration of their existing agreements; customers that acquired Power BI Workspace Collection through Direct or CSP channels will enjoy access for one year from the General Availability release of Power BI Premium.  This article will provide some guidance for migrating from Power BI Workspace Collection to the new Power BI Embedded experience and what to expect for changes in your application.
 
