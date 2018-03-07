@@ -27,7 +27,7 @@ A VP of Sales wants to be able to look at several metrics for the entire divisio
 
 This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating and formatting a slicer and using it to filter a report. Have fun discovering ways to format and use slicers. 
 
-![](media/power-bi-visualization-slicers/slicer2.gif)
+![slicer](media/power-bi-visualization-slicers/slicer2.gif)
 
 ## When to use a slicer
 Slicers are a great choice when you want to:
@@ -49,45 +49,46 @@ Power BI slicers have the following limitations:
 
 1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
 2. From the Fields pane, under District, select **District Manager** to display a new visualization.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_chartfirst.png)
-3. Select the Slicer icon []() in the Visualizations pane to convert the new visualization to a slicer. 
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_select.png)
+    ![new chart](media/power-bi-visualization-slicers/1-new-vis.png)
 
-You can also select the slicer icon directly to create the new slicer, and then select or drag the **District Manager** data field to the Field box to populate it.
+3. Select the Slicer icon []() in the Visualizations pane to convert the new visualization to a slicer. 
+    ![convert to slicer](media/power-bi-visualization-slicers/2-slicer.png)
+
+You can also select the slicer icon directly to create a new slicer, and then select or drag the data field to the Field box to populate it.
 
 >[!NOTE]
 >Depending on the field data type, list, dropdown, or range slicer types may be available. To change the slicer type, click the carat dropdown in the top right corner of the slicer and select a different type. Formatting and sorting options are different depending on slicer type. See [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md) for information about range slicers.
 
 >[!TIP]
 >You can sort list slicer items by data field values. To sort slicer items, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager**. The setting toggles between ascending and descending alphabetical values. 
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_sort2.png)
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_sorted.png)
 
 ## Format the slicer
 Apply visual formatting to the District Manager slicer.
 1. With the slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting categories. 
+    ![formatting](media/power-bi-visualization-slicers/3-format.png)
 2. Click the dropdown arrows next to each category to display and edit the options. 
 
 ### General options
 1. Select red under **Outline color** and change **Outline weight** to "2". This sets the color and thickness of the Header and Items outlines or underlines, when enabled. 
->[!NOTE]
->Any border around the slicer itself is set under Border. 
+    >[!NOTE]
+    >Any border around the slicer itself is set under Border. 
 2. Under Orientation, Vertical is the default, creating a vertical list slicer with selection boxes before the items. Choose **Horizontal** to produce a slicer with horizontally arranged items. Horizontal orientation can produce various arrangements of buttons or tiles, depending on slicer size and shape and item formatting. 
+    ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
+
 3. Turn on **Responsive** layout, which changes the size and arrangement of horizontal slicer items depending on viewscreen size. At a very small size, the slicer becomes a filter icon. 
->[!NOTE]
->Responsive layout changes may override Heading and Item formatting that you set. 
+    ![responsive](media/power-bi-visualization-slicers/5-responsive.png)
+    >[!NOTE]
+    >Responsive layout changes may override Heading and Item formatting that you set. 
 4. Set the slicer position and size with numeric precision under **X Position**, **Y Position**, **Width**, and **Height**, or move and resize the slicer directly on the canvas, to produce different item sizes and arrangements. 
+    ![horizontal buttons](media/power-bi-visualization-slicers/6-buttons.png)
+
 See [Create a responsive slicer you can resize in Power BI](power-bi-slicer-filter-responsive.md) for more about horizontal orientation and responsive formatting.
 
 ### Selection Controls options
 1. Show Select All is Off by default. Turn it to **On** to add a Select All item to the slicer that selects or deselects all items when toggled. When all items are selected, clicking one item deselects it, allowing an "is-not"-type filter. 
+    ![select all](media/power-bi-visualization-slicers/7-select-all.png)
 2. Single Select is On by default. Clicking each item selects it, and holding down the CTRL key while clicking selects multiple items. Turn Single Select to **Off** to allow selecting multiple items without holding down the CTRL key. Clicking each item again deselects it. 
 
-![](media/power-bi-visualization-slicers/pbi_slicer_selectioncontrols2.png)
 ### Header options
 The header is On by default, showing the data field name at the top of the slicer. 
 1. Format header text to make the **Font color** red, **Text size** 14 pt, and **Font family** Arial Black. 
@@ -96,11 +97,10 @@ The header is On by default, showing the data field name at the top of the slice
 ### Item options
 1. Format item text and background to make the **Font color** black, **Background** light red, **Text size** 10 pt, and **Font family** Arial. 
 2. Under Outline, choose Frame to draw a border around each item with the size and color you set under General options. Choose **None** to remove the borders. 
->[!TIP]
->- With Horizontal orientation, deselected items show the chosen text and background colors while selected items use the system default, usually black backgrounds with white text. 
->- With Vertical orientation, items always show the set colors. Selection boxes are always clear, or black if selected. 
-   
-![](media/power-bi-visualization-slicers/pbi_slicer_font2.png)
+    ![formatted](media/power-bi-visualization-slicers/8-formatted.png)
+    >[!TIP]
+    >- With Horizontal orientation, deselected items show the chosen text and background colors while selected items use the system default, usually black backgrounds with white text. 
+    >- With Vertical orientation, items always show the set colors. Selection boxes are always clear, or black if selected. 
 
 ### Other formatting options
 The other formatting options are off by default. When turned **On**: 
@@ -112,10 +112,12 @@ The other formatting options are off by default. When turned **On**:
 ## Sync slicers to other pages
 Starting with the February 2018 Power BI update, you can now sync and use a slicer on all pages in a report. 
 1. With the District Manager slicer selected, on the View menu, select **Sync slicers** in Power BI Desktop, or turn on **Sync slicers pane** in Power BI service. The Sync Slicers pane appears. 
+    ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
 2. Select the report pages you want the slicer to sync with (left column), or click **Add to all** to select all report pages. 
 3. Select the pages on which you want the slicer control to be visible (right column). 
+
 >[!TIP]
->Although a synced slicer is initially identical on all pages, you can then move, size, and format it differently on different pages.  
+>Although a synced slicer is initially identical on all pages, you can move, size, and format it differently on different pages.  
 
 ## Control which page visuals are affected by a slicer
 By default, a slicer on a report page affects all other visualizations on that page. Use **Visual interactions** to prevent some page visualizations from being affected.
