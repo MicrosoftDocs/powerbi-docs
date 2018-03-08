@@ -119,26 +119,27 @@ The other formatting options are off by default. When turned **On**:
 - **Lock aspect:** Retains the shape of the slicer if it is resized.
 - **Border:** Adds a 1-pixel border around the slicer and sets its color. (This slicer border is separate from and unaffected by the General Outline settings.) 
 
-## Sync the slicer to other pages
-Starting with the February 2018 Power BI update, you can sync and use a slicer on all pages in a report. 
+## Sync and use the slicer on other pages
+Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
 1. With the District Manager slicer selected, on the View menu, select **Sync slicers** in Power BI Desktop, or turn on **Sync slicers pane** in Power BI service. The Sync Slicers pane appears. 
     
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-2. Select the report pages you want the slicer to sync with (left column), or click **Add to all** to select all report pages. 
-3. Select the pages on which you want the slicer control to be visible (right column). 
+2. In the first column, select **Overview** and any other pages you want the slicer to sync to, or click **Add to all** to make the slicer sync to all report pages.  
+3. In the next column, select **Overview** and any other pages on which you want the slicer to be visible. 
+4. Switch to the **Overview** page, and note the slicer and its effects on the other page visuals. 
+    - Try making and removing different selections and note how the visuals change.
+    - Change the size, shape, position, or formatting of the slicer on the Overview page, and note that the slicer you created on the new page does not change accordingly, although it reflects the selections made on any page. 
 
->[!TIP]
->Although synced slicers show the same data selection across pages, you can move, size, and format them differently on different pages.  
-
-## Control the page visuals affected by the slicer
+### Control which page visuals are affected by the slicer
 By default, a slicer on a report page affects all other visualizations on that page. Use **Visual interactions** to prevent some page visualizations from being affected.
 
-1. With the slicer selected:
+1. Change to the **Overview** page, and with the slicer selected:
     - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
     - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
-Filter controls appear above all the visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
-
+    
+    Filter controls appear above all the visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
+    
 2. Select the **None** icon above a visual to make the slicer stop filtering it. Select the **Filter** icon to make the slicer start filtering the visual again. 
 
 See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information about editing interactions.
