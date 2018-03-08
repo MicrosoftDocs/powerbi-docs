@@ -34,7 +34,7 @@ There are a handful of requirements and limitations for R packages:
 
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
 * The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. We encourage users to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
-* For **Power BI Desktop** has two variations for R packages:
+* The **Power BI Desktop** has two variations for R packages:
   
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
