@@ -29,7 +29,7 @@ In the future we plan to provide additional communication between Excel and Powe
 ## How do I import an Excel workbook?
 To import a workbook, from Power BI Desktop select **File -\> Import -\> Excel Workbook Contents**.
 
-![Import Excel workbook](media/desktop-import-excel-workbooks/importexceltopbi_1.png)
+![](media/desktop-import-excel-workbooks/importexceltopbi_1.png)
 
 A window appears, letting you select the workbook to import. There is currently no limitation on the size or number of objects in the workbook, but larger workbooks take longer for Power BI Desktop to analyze and import.
 
@@ -40,15 +40,15 @@ A window appears, letting you select the workbook to import. There is currently 
 
 Once a workbook is selected, Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). Note that this is a one-time event; once the Power BI Desktop file is created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified or changed (and saved, and shared) without affecting the original workbook.
 
-![Import progress](media/desktop-import-excel-workbooks/importexceltopbi_2.png)
+![](media/desktop-import-excel-workbooks/importexceltopbi_2.png)
 
 Once the import is finished, a **Summary** page is displayed that describes the items that were converted, and also lists any items that were not able to be imported.
 
-![Import summary](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
+![](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
 
 When you select **Close**, the report is loaded in Power BI Desktop. The following image shows Power BI Desktop after an Excel workbook was imported: Power BI Desktop automatically loaded the report based on the workbook contents.
 
-![Excel in Power BI](media/desktop-import-excel-workbooks/importexceltopbi_4.png)
+![](media/desktop-import-excel-workbooks/importexceltopbi_4.png)
 
 Now that the workbook is imported, you can continue working on the report – such as creating new visualizations, adding data, or creating new report pages – using any of the features and capabilities included in Power BI Desktop.
 

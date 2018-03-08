@@ -29,7 +29,7 @@ In order to connect to an Oracle database with **Power BI Desktop**, the correct
 ## Determining which version of Power BI Desktop is installed
 To determine which version of Power BI Desktop is installed, select **File > Help > About** then check the **Version:** line. In the following image, a 64-bit version of Power BI Desktop is installed:
 
-![About](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
+![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
 ## Installing the Oracle client
 For **32-bit** versions of Power BI Desktop, use the following link to download and install the **32-bit** Oracle client:
@@ -45,13 +45,13 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
 
 1. From the Get Data window, select **Database > Oracle Database**
    
-   ![Get Data - Oracle](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
+   ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 2. In the **Oracle Database** dialog that appears, provide the name of the server, and select **Connect**. If a SID is required, you can specify that using the format: *ServerName/SID*.
    
-   ![Oracle database](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+   ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. If you want to import data using a native database query, you can put your query in the **SQL Statement** box, available by expanding the **Advanced options** section of the **Oracle Database** dialog.
    
-   ![Oracle database - advanced](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
+   ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 4. Once your Oracle database information is entered into the Oracle Database dialog (including any optional information such as a SID or a native database query), select **OK** to connect.
 5. If the Oracle database requires database user credentials, input those credentials in the dialog when prompted.
 

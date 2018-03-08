@@ -47,19 +47,19 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 ### Run your R script and import data
 1. In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R script** as shown in the following image.
    
-   ![Get Data - R script](media/desktop-r-scripts/r-scripts-1.png)
+   ![](media/desktop-r-scripts/r-scripts-1.png)
 2. If R is installed on your local machine, the latest installed version is selected as your R engine. Simply copy your script into the script window and select **OK**.
    
-   ![Execute R script](media/desktop-r-scripts/r-scripts-2.png)
+   ![](media/desktop-r-scripts/r-scripts-2.png)
 3. If R is not installed, is not identified, or if there are multiple installations on your local machine, expand **R Installation Settings** to display installation options, or to select which installation you want to run the R script.
    
-   ![Execute R script - Installation Settings](media/desktop-r-scripts/r-scripts-3.png)
+   ![](media/desktop-r-scripts/r-scripts-3.png)
    
    If R is installed and is not identified, you can explicitly provide its location in the text box provided when you expand **R Installation Settings**. In the above image, the path *C:\Program Files\R\R-3.2.0* is explicitly provided in the text box.
    
    R installation settings are centrally located in the R Scripting section of the Options dialog. To specify your R installation settings, select **File > Options and settings** and then **Options > R scripting**. If multiple installations of R are available, a drop-down menu appears that allows you to  select which installation to use.
    
-   ![R Script Options](media/desktop-r-scripts/r-scripts-4.png)
+   ![](media/desktop-r-scripts/r-scripts-4.png)
 4. Select **OK** to run the R Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
 
 ### Refresh
