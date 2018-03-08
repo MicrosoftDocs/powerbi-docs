@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 03/07/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -29,6 +29,9 @@ You can connect to **SAP Business Warehouse (BW)** data sources directly using *
 * Given the unique nature of OLAP sources, there are additional restrictions (for both modelling and visualizations) that apply, in addition to the normal restrictions imposed for DirectQuery. These restrictions are described later in this article.
 
 In addition, it is *extremely important* to understand that there are many features of SAP BW that are not supported in Power BI, and that because of the nature of the public interface to SAP BW, there are important cases where the results seen through Power BI will not match those seen when using an SAP tool. These limitations are described later in this article. These limitations and behavior differences should be carefully reviewed, to ensure that the results seen through Power BI, as returned by the SAP public interface, are interpreted correctly.  
+
+> [!NOTE]
+> The ability to use DirectQuery over SAP BW was in preview until the March 2018 update to Power BI Desktop. During the preview, feedback and suggested improvements prompted a change that impacts reports that were created using that preview version. Now that General Availability (GA) of DirectQuery over SAP BW has released, you *must* discard any existing (preview-based) reports using DirectQuery over SAP BW that were created with the pre-GA version. In reports created with the pre-GA version of DirectQuery over SAP BW, errors will occur with those pre-GA reports upon invoking Refresh, as a result of attempting to refresh the metadata with any changes to the underlying SAP BW cube. Please re-create those reports from a blank report, using the GA version of DirectQuery over SAP BW. 
 
 ## Additional Modelling Restrictions
 The primary additional modelling restrictions when connecting to SAP BW using DirectQuery in Power BI are the following:
