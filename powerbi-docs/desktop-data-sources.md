@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -75,7 +75,7 @@ The **Database** category provides the following data connections:
 * Oracle database
 * IBM DB2 database
 * IBM Informix database (Beta)
-* IBM Netezza (Beta)
+* IBM Netezza
 * MySQL database
 * PostgreSQL database
 * Sybase database
@@ -101,7 +101,7 @@ The **Azure** category provides the following data connections:
 
 * Azure SQL database
 * Azure SQL Data Warehouse
-* Azure Analysis Services database (Beta)
+* Azure Analysis Services database
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
@@ -138,14 +138,14 @@ The **Online Services** category provides the following data connections:
 * MailChimp (Beta)
 * Marketo (Beta)
 * Mixpanel (Beta)
-* Planview Enterprise (Beta)
-* Projectplace (Beta)
+* Planview Enterprise One - PRM (Beta)
+* Planview Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
 * Stripe (Beta)
 * SweetIQ (Beta)
-* Troux (Beta)
+* Planview Enterprise One - CMT (Beta)
 * Twilio (Beta)
 * tyGraph (Beta)
 * Webtrends (Beta)
