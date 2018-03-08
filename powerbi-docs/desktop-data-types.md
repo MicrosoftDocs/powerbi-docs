@@ -122,7 +122,7 @@ For example, if a date is used in a subtraction operation with any other data ty
 > 
 > 
 
-**Multiplication(*)**
+**Multiplication (*)**
 
 | Operator(*) | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
