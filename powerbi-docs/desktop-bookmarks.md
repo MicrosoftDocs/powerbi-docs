@@ -1,5 +1,5 @@
 ---
-title: Using bookmarks in Power BI (Preview)
+title: Using bookmarks in Power BI 
 description: Bookmarks in Power BI Desktop let you save views and settings in your reports, and build story-like presentations
 services: powerbi
 documentationcenter: ''
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use bookmarks to share insights and build stories in Power BI (Preview)
+# Use bookmarks to share insights and build stories in Power BI 
 Using **bookmarks** in Power BI you can capture the currently configured view of a report page, including filtering and the state of visuals, and later go back to that state by simply selecting that saved bookmark. 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and subsequently step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. 
@@ -30,12 +30,14 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 
 There are many uses for bookmarking. You can use them to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename), and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. There may be other uses, too, based on how you think bookmarks could best be used.
 
-### Enable the bookmarks preview
-You can try the new **bookmarks** feature beginning with the **October 2017** release of **Power BI Desktop**, and for bookmark-enabled reports, in the **Power BI service** as well. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Bookmarks**. You'll need to restart Power BI Desktop after you make the selection.
+### Enable the bookmarks preview (versions prior to March 2018)
+Beginning with the March 2018 version fo Power BI Desktop, bookmarks are generally available. 
+
+We always suggest you upgrade to the most recent release. But if your version of Power BI Desktop is before that release, you can try the **bookmarks** feature beginning with the **October 2017** release of **Power BI Desktop**, and for bookmark-enabled reports, in the **Power BI service** as well. To enable the preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Bookmarks**. 
 
 ![Enable bookmarks in Options window](media/desktop-bookmarks/bookmarks_02.png)
 
-You'll need to restart **Power BI Desktop** after you make the selection.
+You'll need to restart **Power BI Desktop** after you make the selection to enable the preview version of bookmarks.
 
 ## Using bookmarks
 To use bookmarks, select the **View** ribbon, then select the box for **Bookmarks Pane**. 
@@ -144,14 +146,13 @@ In the **Power BI service** the **Bookmarks pane** operates just as it does in *
 Note that you must use the gray bookmark title bar to navigate through the bookmarks, and not the black arrows (the black arrows move you through report pages, not bookmarks).
 
 ## Limitations and considerations
-In this preview release of the **bookmarks**, there are a few limitations and considerations to keep in mind.
+In this release of the **bookmarks**, there are a few limitations and considerations to keep in mind.
 
 * Custom visuals do not work with bookmarking if they are the *source* of the filter. If you're using custom visuals to filter elements on a page (for example, the chiclet slicer) and return to that page using a bookmark, the page may be filtered but the custom visual won't be updated to show how the page is being filtered. 
 * Cross-highlighting status for a report pane is *not* saved when you create a bookmark. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
 * You *must* have at least one bookmark in your report, when you publish it to the **Power BI service**, in order for bookmarks to be available in the service. This is a requirement for each report you publish.
-* Since bookmarks are currently a Preview feature, they're not yet available in [**Power BI Desktop for Report Server**](report-server/quickstart-create-powerbi-report.md).
 
 ## Next steps
 For more information about features that are similar or interact with bookmarks, take a look at the following articles:

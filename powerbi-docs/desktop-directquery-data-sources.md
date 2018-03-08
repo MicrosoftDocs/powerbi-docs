@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -34,7 +34,8 @@ The following data sources support DirectQuery in Power BI:
 * IBM Netezza (Beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 and above)
-* SAP Business Warehouse (Beta)
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (Beta)
 * SAP HANA
 * Snowflake
 * Spark (Beta)  (version 0.9 and above)
