@@ -56,7 +56,7 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
-* SharePoint folder
+* SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
 
@@ -69,18 +69,18 @@ The following image shows the **Get Data** window for **File**.
 
 The **Database** category provides the following data connections:
 
-* SQL Server database
-* Access database
-* SQL Server Analysis Services database
-* Oracle database
-* IBM DB2 database
+* SQL Server Database
+* Access Database
+* SQL Server Analysis Services Database
+* Oracle Database
+* IBM DB2 Database
 * IBM Informix database (Beta)
 * IBM Netezza (Beta)
-* MySQL database
-* PostgreSQL database
-* Sybase database
-* Teradata database
-* SAP HANA database
+* MySQL Database
+* PostgreSQL Database
+* Sybase Database
+* Teradata Database
+* SAP HANA Database
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server (Beta)
 * Amazon Redshift
@@ -99,7 +99,7 @@ The following image shows the **Get Data** window for **Database**.
 
 The **Azure** category provides the following data connections:
 
-* Azure SQL database
+* Azure SQL Database
 * Azure SQL Data Warehouse
 * Azure Analysis Services database (Beta)
 * Azure Blob Storage
@@ -166,7 +166,7 @@ The **Other** category provides the following data connections:
 * Microsoft Exchange
 * Hadoop File (HDFS)
 * Spark (Beta)
-* R script
+* R Script
 * ODBC
 * OLE DB
 * Blank Query
@@ -200,8 +200,8 @@ That’s all there is to connecting to data sources in Power BI Desktop! Try con
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting started with Power BI Desktop](desktop-getting-started.md)
-* [Query overview with Power BI Desktop](desktop-query-overview.md)
-* [Data types in Power BI Desktop](desktop-data-types.md)
-* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)    
+* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [Query Overview with Power BI Desktop](desktop-query-overview.md)
+* [Data Types in Power BI Desktop](desktop-data-types.md)
+* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)    
