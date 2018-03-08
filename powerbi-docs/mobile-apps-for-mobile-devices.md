@@ -49,3 +49,4 @@ Read more about [configuring Power BI mobile apps for Android and iOS with Micro
 * [Power BI free vs. Pro licenses](service-free-vs-pro.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
+

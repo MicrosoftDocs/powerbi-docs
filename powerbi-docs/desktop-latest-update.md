@@ -16,18 +16,18 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/06/2018
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update?
 
-## February 2018 Update (2.55.5010.521)
+## March 2018 Update (2.56.5023.621)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
-Our hearts are full of love for the updates to **Power BI Desktop** this month, and we hope that you'll find them just as sweet as a box of chocolates.
+We're feeling lucky as a four-leaf clover about this month's updates to **Power BI Desktop**.
 
 The links beside each update mean the following:
 
@@ -42,46 +42,39 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
 
-* Multi-select data points across multiple pages  [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Sync slicers across multiple pages of a report  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
-* Numeric range slicer improvement - whole number snapping (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
-* Faster geocoding for Bing maps (web Preview) - up to 6x faster  [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
-* Overflow data labels for bar and column charts visuals   [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
-* Search the Formatting and Analytics panes  [[video]](https://youtu.be/KeVB5RwMzJo?t=14m46s)  [[article]](desktop-analytics-pane.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
-
+* Report page tooltips  [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[article]]()  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Bookmarking is now generally available  [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[article]](desktop-bookmarks.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
+* Display units and precision control for Table and Matrix columns  [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
+* Turn off the visual header in Reading mode for a report  [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
+* Improved default visual placement  [[video]](https://youtu.be/kuI6MMzDh34?t=14m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
 
 ### Custom visuals
 
-* Organization custom visuals (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s)  [[article]](power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
-
-
-### Analytics
-
-* Set a custom date table  [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s)  [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
-* Quick measures are now generally available  [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s)  [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+* Many new custom visuals  [[video]](https://youtu.be/kuI6MMzDh34?t=15m43s)  [[article]](power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
 
 ### Data connectivity
 
-* Improvements to DirectQuery over SAP HANA (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=30m1s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
+* Visual Studio Team Services connector improvements  [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#vsts) 
+* SAP HANA connector enhancements  [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#saphana) 
+  * DirectQuery multidimensional support is now generally available
+  * SSL certificate validation support
+* SAP BW DirectQuery now generally available  [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sapBW) 
+* Azure Analysis Services connector now generally available  [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#azureAS) 
 
 ### Other
 
-* DirectQuery performance improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=32m24s)  [[article]](desktop-directquery-about.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
-* Open and save performance improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=33m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
-* *Show items with no data* improvements  [[video]](https://youtu.be/KeVB5RwMzJo?t=34m6s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
-* Persistent filters control for upcoming **Power BI service** feature  [[video]](https://youtu.be/KeVB5RwMzJo?t=34m56s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
-
-
+* Improved error reporting  [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s)  [[article]](desktop-directquery-about.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors) 
+* View previous errors you've encountered  [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors) 
 
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kuI6MMzDh34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 > [!NOTE]
