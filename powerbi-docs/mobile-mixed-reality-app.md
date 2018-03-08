@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: 
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/05/2018
+ms.date: 03/07/2018
 ms.author: maggies
 
 ---
@@ -28,8 +28,6 @@ Download the preview edition of the Power BI for Mixed Reality app from the Wind
 ## Two views: Windows classic and holographic
 
 Power BI for Mixed Reality is based on the Power BI Windows mobile app with additional capabilities unique to mixed reality. When you start Power BI for Mixed Reality, you're in this "classic" Windows view of Power BI. In this view, you can navigate between the dashboards and reports you have access to. When you find the one you want, you can switch from the classic Windows view to the holographic experience. 
-
-Read more about [Microsoft hand gestures in mixed reality](https://developer.microsoft.com/windows/mixed-reality/gestures).
 
 
 ## Windows classic view basics
@@ -46,9 +44,11 @@ In Power BI you use an air tap in the Windows classic app anywhere you would use
 
 ![Hand airtapping in Power BI](media/mobile-mixed-reality-app/power-bi-hololens-airtap-hand.png) 
 
+Read more about [Microsoft hand gestures in mixed reality](https://developer.microsoft.com/windows/mixed-reality/gestures).
+
 **Pin an item** 
 
-Tap the **Pin** icon ![Pin icon](media/mobile-mixed-reality-app/power-bi-hololens-pin.png) to pin a dashboard or report from Windows classic view to holographic view. You can pin a number of items to holographic view. 
+Air tap the **Pin** icon ![Pin icon](media/mobile-mixed-reality-app/power-bi-hololens-pin.png) to pin a dashboard or report from Windows classic view to holographic view. You can pin a number of items to holographic view. 
 
 **Switch to holographic view**
 
@@ -86,9 +86,9 @@ Use this command to remove an artifact from holographic view.
 Use this command to remove all artifacts from holographic view.
 
 
-## Scan a QR code in holographic view
+## Scan a report QR code in holographic view
 
-You can scan a QR code in holographic view, just as you can [scan QR codes with the Power BI mobile apps](mobile-apps-qr-code.md) for iPhone and Android.
+You can scan the QR code for a report in holographic view, just as you can [scan QR codes with the Power BI mobile apps](mobile-apps-qr-code.md) for iPhone and Android.
 
 - While in holographic view, gaze at a QR code. Power BI opens the report associated with that QR code.
 
@@ -98,7 +98,7 @@ Here are a few limitations and considerations for holographic view.
 
 - You don't see cross-filtering or highlighting you may have set in Windows classic view.
 - Your view of your pinned dashboards and reports is private. We don't currently support shared experiences.
-- The dashboards and reports refresh every minute or so, as data changes.
+- The dashboards and reports refresh every 45 seconds, as data changes.
 
 
 ## Next steps

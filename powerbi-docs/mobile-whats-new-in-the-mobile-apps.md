@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/05/2018
+ms.date: 03/07/2018
 ms.author: maggies
 
 ---
@@ -29,7 +29,7 @@ For related "What's New" information, see:
 
 ## March 2018
 
-### Power BI for Mixed Reality
+### Power BI for Mixed Reality (Preview)
 
 In the latest move to bring data where you are, we've created Power BI for Mixed Reality. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality](mobile-mixed-reality-app.md).
 
@@ -38,6 +38,10 @@ In the latest move to bring data where you are, we've created Power BI for Mixed
 ### Share reports
 
 Now you can share a report directly from the mobile apps. Read more about [sharing dashboards and reports from the mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
+
+### Improved tooltips
+
+When you tap and hold on a report visual to access tooltips, you can now drag your finger across the visual to explore details about each data point along the way.
 
 ## January 2018
 
