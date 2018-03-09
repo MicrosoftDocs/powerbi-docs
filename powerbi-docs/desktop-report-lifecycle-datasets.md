@@ -98,7 +98,7 @@ When you select **Load** from the window, you establish a live connection to the
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_10.png)
 
-Now you (and others) can create and share custom reports and share them, all from the same dataset. This is a great way to have one knowledgeable person create a well-formed dataset (such as what Anna does), and allow many teammates use that shared dataset to create their own reports.
+Now you (and others) can create and share custom reports, all from the same dataset. This is a great way to have one knowledgeable person create a well-formed dataset (such as what Anna does), and allow many teammates use that shared dataset to create their own reports.
 
 > [!NOTE]
 > When you create reports based on dataset using a live connection to the **Power BI service**, you can only publish that report to the same Power BI service workspace that contains the dataset being used.
@@ -113,8 +113,8 @@ When using the **Power BI service live connection**, there are a few limitations
 * Since this is a live connection, left-navigation and modeling are disabled, similar to the behavior when connected to **SQL Server Analysis Services**.
 * Since this is a live connection, RLS (row- and role-level security), OneDrive for Business, and other such connection behaviors are enforced, just as they are when connected to **SQL Server Analysis Services**.
 * When selecting which dataset to connect to in the **Power BI service**, the search box only applies to workspaces that have been expanded.
-* If you modify the original shared .pbix file, the dataset and report that is shared in the **Power BI service** is overwritten.
-* You cannot replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
+* If the owner modifies the original shared .pbix file, the dataset and report that is shared in the **Power BI service** is overwritten.
+* Members of a workspace cannot replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
 * If you delete the shared dataset in the **Power BI service**, then other **Power BI Desktop** (.pbix files) will no longer work properly or display their visuals.
 * For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a .pbix report and dataset to the **Power BI service**.
 * For Content Packs from *My Organization*, once copied, you cannot replace the report created on the service and/or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
