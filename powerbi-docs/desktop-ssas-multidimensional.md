@@ -40,7 +40,7 @@ The following table shows the correspondence between multidimensional objects an
 | --- | --- |
 | Cube |Model |
 | Cube dimension |Table |
-| Dimension attributes (Keys), Name) |Columns |
+| Dimension attributes (Keys), Name |Columns |
 | Measure group |Table |
 | Measure |Measure |
 | Measures without associated Measure Group |Within table called *Measures* |
