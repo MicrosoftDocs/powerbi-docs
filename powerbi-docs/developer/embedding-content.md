@@ -85,6 +85,10 @@ If you are embedding dashboards and reports for your customers, those dashboards
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
+> [!NOTE]
+> A non-admin user can only create up to 250 groups. To create more groups, you can use a tenant admin account.
+>
+
 ### Create and upload your reports
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
