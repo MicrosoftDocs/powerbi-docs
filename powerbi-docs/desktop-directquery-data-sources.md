@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 03/09/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -60,11 +60,14 @@ The following table specifies whether an **on-premises data gateway** is require
 | Teradata Database |Yes |
 | Amazon Redshift |No |
 | Impala (version 2.x) |Yes |
-| Snowflake (Preview) |Not yet supported in the **Power BI service** |
+| Snowflake |Yes |
 | Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
-| Azure HDInsight Spark (Beta) |Not yet supported in the **Power BI service** |
-| IBM Netezza (Beta) |Not yet supported in the **Power BI service** |
-| SAP Buisness Warehouse (Beta) |Not yet supported in the **Power BI service** |
+| Azure HDInsight Spark (Beta) |No |
+| IBM Netezza |Yes |
+| SAP Buisness Warehouse Application Server |Yes |
+| SAP Buisness Warehouse Message Server |Not yet supported in the **Power BI service** |
+| Google BigQuery |No |
+
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:
