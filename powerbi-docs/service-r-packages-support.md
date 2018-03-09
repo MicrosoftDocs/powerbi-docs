@@ -33,12 +33,12 @@ Supported R packages for the **Power BI service** are found in the following sec
 There are a handful of requirements and limitations for R packages:
 
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. We encourage users to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
+* The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The **Power BI Desktop** has two variations for R packages:
   
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
-* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
+* For security and privacy reasons, R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service, are not supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ## R packages that are supported in Power BI

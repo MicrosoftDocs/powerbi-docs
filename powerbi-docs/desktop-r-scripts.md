@@ -28,7 +28,7 @@ You can run R scripts directly in **Power BI Desktop**, and import the resulting
 To run R scripts in Power BI Desktop, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ## Run R scripts
-With just a few steps in Power BI Desktop you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service. R scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
+With just a few steps in Power BI Desktop, you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service. R scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
 
 ### Prepare an R script
 To run an R script in Power BI Desktop, create the script in your local R development environment, and make sure it runs successfully.
@@ -45,7 +45,7 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 * When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path
 
 ### Run your R script and import data
-1. In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R script** as shown in the following image.
+1. In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R script** as shown in the following image:
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. If R is installed on your local machine, the latest installed version is selected as your R engine. Simply copy your script into the script window and select **OK**.

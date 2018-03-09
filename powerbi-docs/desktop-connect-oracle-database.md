@@ -41,7 +41,7 @@ For **64-bit** versions of Power BI Desktop, use the following link to download 
 * [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## Connect to an Oracle database
-Once the matching Oracle client driver is installed, you can connect to an Oracle database. Take the following steps to make the connection.
+Once the matching Oracle client driver is installed, you can connect to an Oracle database. To make the connection, take the following steps:
 
 1. From the Get Data window, select **Database > Oracle Database**
    

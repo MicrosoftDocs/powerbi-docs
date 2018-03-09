@@ -24,7 +24,7 @@ LocalizationGroup: Connect to data
 # Import Excel workbooks into Power BI Desktop
 With **Power BI Desktop**, you can easily import Excel workbooks that contain Power Query queries, Power Pivot models, and Power View worksheets into Power BI Desktop. Reports and visualizations are automatically created based on the Excel workbook, and once imported, you can continue to improve and refine those reports using Power BI Desktop, using the existing features and new features released with each Power BI Desktop monthly update.
 
-In the future we plan to provide additional communication between Excel and Power BI Desktop (such as import/export); this current ability to import workbooks into Power BI Desktop lets existing Excel users get started with Power BI Desktop.
+In the future, the plan is to provide additional communication between Excel and Power BI Desktop (such as import/export); this current ability to import workbooks into Power BI Desktop lets existing Excel users get started with Power BI Desktop.
 
 ## How do I import an Excel workbook?
 To import a workbook, from Power BI Desktop select **File -\> Import -\> Excel Workbook Contents**.
@@ -38,7 +38,7 @@ A window appears, letting you select the workbook to import. There is currently 
 > 
 > 
 
-Once a workbook is selected, Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). Note that this is a one-time event; once the Power BI Desktop file is created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified or changed (and saved, and shared) without affecting the original workbook.
+Once a workbook is selected, Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). This action is a one-time event; once the Power BI Desktop file is created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified or changed (and saved, and shared) without affecting the original workbook.
 
 ![](media/desktop-import-excel-workbooks/importexceltopbi_2.png)
 
@@ -60,13 +60,13 @@ Power BI Desktop can import the following elements, commonly referred to as *obj
 | Power Query queries |All Power Query queries from Excel are converted to queries in Power BI Desktop. If there were Query Groups defined in the Excel Workbook, the same organization will be replicated in Power BI Desktop. All queries are loaded unless they were set to “Only Create Connection” in Excel. The Load behavior can be customized from the **Properties** dialog in the **Home** tab of **Query Editor** in Power BI Desktop. |
 | Power Pivot External Data Connections |All Power Pivot External Data Connections will be converted to queries in Power BI Desktop. |
 | Linked Tables or Current Workbook tables |If there is a worksheet table in Excel linked to the Data Model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), the following options are presented:
-  1. Import the table to the Power BI Desktop file. This is a one-time snapshot of the data, after which you cannot edit the data in the table in Power BI Desktop. There is a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.    
+  1. Import the table to the Power BI Desktop file. This table is a one-time snapshot of the data, after which you cannot edit the data in the table in Power BI Desktop. There is a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.    
   2. Keep a connection to the original workbook. Alternatively, you can keep a connection to the original Excel Workbook and Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query created against an Excel workbook in Power BI Desktop. |
-| Data Model Calculated Columns, Measures, KPIs, Data Categories and Relationships |These Data Model objects are converted to the equivalent objects in Power BI Desktop. Note that there are certain Data Categories that are not available in Power BI Desktop yet, such as **Image**. In these cases, the Data Category information will be reset for the columns in question. |
+| Data Model Calculated Columns, Measures, KPIs, Data Categories, and Relationships |These Data Model objects are converted to the equivalent objects in Power BI Desktop. Note there are certain Data Categories that are not available in Power BI Desktop yet, such as **Image**. In these cases, the Data Category information will be reset for the columns in question. |
 | Power View Worksheets |A new report page is created for each Power View worksheet in Excel. The name and order of these report pages match the original Excel workbook. |
 
 ## Are there any limitations to importing a workbook?
-There are a few limitations to importing a workbook into Power BI Desktop, which are the following:
+There are a few limitations to importing a workbook into Power BI Desktop, which is the following list:
 
 1. **External Connections to Analysis Services Tabular Models:** In Excel 2013, it is possible to create a connection to SQL Server Analysis Services Tabular models and create Power View reports on top of these models without the need to import the data. This type of connection is currently not supported as part of importing Excel Workbooks into Power BI Desktop, but will be available in an upcoming update. In the meantime, you must recreate these external connections in Power BI Desktop.
 2. **Hierarchies:** This type of Data Model object is currently not supported in Power BI Desktop. As such, hierarchies are skipped as part of importing an Excel Workbook into Power BI Desktop.
