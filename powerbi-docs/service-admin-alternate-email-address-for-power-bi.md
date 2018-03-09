@@ -52,7 +52,7 @@ When capturing an Active Azure Directory (AAD) embed token for Power BI, you can
 
 Power BI selects which email to use based on the following criteria:
 1.  If the mail attribute in the AAD tenant’s user object is present, then Power BI uses that mail attribute for the email address
-2.  If the UPN email is *not* a ***.onmicrosoft.com** domain email address (the information after the "@" symbol), then Power BI uses that mail attribute for the email address
+2.  If the UPN email is *not* a **\*.onmicrosoft.com** domain email address (the information after the "@" symbol), then Power BI uses that mail attribute for the email address
 3.  If the “other” email array attribute in the AAD user object is present, then the first email in that list (since there can be a list of emails in this attribute) will be used
 4. If none of the above conditions are present, then the UPN address will be used
 
