@@ -110,7 +110,6 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight Spark (Beta)
 * HDInsight Interactive Query (Beta)
 
-
 The following image shows the **Get Data** window for **Azure**.
 
 ![](media/desktop-data-sources/data-sources_5.png)
@@ -129,6 +128,7 @@ The **Online Services** category provides the following data connections:
 * Salesforce Objects
 * Salesforce Reports
 * Google Analytics
+* Adobe Analytics
 * appFigures (Beta)
 * comScore Digital Analytix (Beta)
 * Dynamics 365 for Customer Insights (Beta)
@@ -136,6 +136,7 @@ The **Online Services** category provides the following data connections:
 * Facebook
 * GitHub (Beta)
 * MailChimp (Beta)
+* Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One - PRM (Beta)
 * Planview Projectplace (Beta)
@@ -204,4 +205,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [Data Types in Power BI Desktop](desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)    
-
