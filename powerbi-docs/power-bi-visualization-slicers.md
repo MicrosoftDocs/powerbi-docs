@@ -128,8 +128,8 @@ Starting with the February 2018 Power BI update, you can sync a slicer and use i
 2. In the first column, select **Overview** and any other pages you want the slicer to sync to, or click **Add to all** to make the slicer sync to all report pages.  
 3. In the next column, select **Overview** and any other pages on which you want the slicer to be visible. 
 4. Switch to the **Overview** page, and note the slicer and its effects on the other page visuals. 
-    - Make and remove different selections, and note how the other visuals change accordingly.
-    - Change the size, shape, position, or formatting of the slicer on this page, and note that the slicer formatting on other pages does not change accordingly, although it reflects the selections made on any page. 
+    - Make and remove different item selections, and note how the other visuals on the page change accordingly. Item selection on any page reflects across all synced pages.
+    - Change the size, shape, position, and/or formatting of the slicer on the Overview page. The slicer formatting on other synced pages does not change. 
 
 ### Control which page visuals are affected by the slicer
 By default, a slicer on a report page affects all other visualizations on that page. Use **Visual interactions** to prevent some page visualizations from being affected.
@@ -138,7 +138,7 @@ By default, a slicer on a report page affects all other visualizations on that p
     - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
     - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
     
-    Filter controls appear above all the visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
+    Filter controls appear above all the other visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
     
 2. Select the **None** icon above a visual to make the slicer stop filtering it. Select the **Filter** icon to make the slicer start filtering the visual again. 
 
