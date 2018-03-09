@@ -1,4 +1,3 @@
-
 ---
 title: 10 tips for getting help with your Power BI questions
 description: Here are 10 ways to get help when you have a question about how Power BI works
@@ -19,6 +18,7 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
+
 LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions
