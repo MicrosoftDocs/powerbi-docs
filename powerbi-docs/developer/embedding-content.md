@@ -86,7 +86,7 @@ If you are embedding dashboards and reports for your customers, those dashboards
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
 > [!NOTE]
-> A non-admin user can only create up to 250 groups. To create more groups, you need to use a tenant admin account.
+> A non-admin user can only create up to 250 app workspaces. To create more app workspaces, you need to use a tenant admin account.
 >
 
 ### Create and upload your reports
