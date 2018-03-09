@@ -47,7 +47,7 @@ Sometimes you may want these emails delivered to an alternate email address rath
 When capturing an Active Azure Directory (AAD) embed token for Power BI, you can use three different types of emails. The three different types are:
 
 * the main email address that is associated to a user’s AAD account
-* the UserPrincipleName (UPN) email address
+* the UserPrincipalName (UPN) email address
 * the “other” email address array attribute
 
 Power BI selects which email to use based on the following criteria:
