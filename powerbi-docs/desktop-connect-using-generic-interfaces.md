@@ -41,7 +41,7 @@ By providing the appropriate parameters in the connection windows that these gen
 
 In the following sections, you can find lists of data sources that can be accessed by these generic interfaces.
 
-Can't find the data source you wanted to use with **Power BI Desktop**? Visit [here](https://ideas.powerbi.com/) to submit your idea to the Power BI team's list of ideas and requests.
+Can't find the data source you wanted to use with **Power BI Desktop**? Submit your idea to the Power BI team's [list of ideas and requests](https://ideas.powerbi.com/).
 
 ## Data sources accessible through ODBC
 The **ODBC** connector in **Power BI Desktop** lets you import data from any third-party ODBC driver simply by specifying a **Data Source Name (DSN)** or a *connection string*. As an option, you can also specify a SQL statement to execute against the ODBC driver.
