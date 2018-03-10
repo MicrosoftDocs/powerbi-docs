@@ -26,7 +26,7 @@ This article describes data types supported in Power BI Desktop and Data Analysi
 
 When you load data into Power BI Desktop, it will attempt to convert the data type of the source column into a data type that better supports more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop will convert the entire column of data to a Whole Number data type, which is better suited for storing integers.
 
-This is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
+This concept is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
 
 ## Determine and specify a column’s data type
 In Power BI Desktop, you can determine and specify a column’s data type in the Query Editor, or in Data View or Report View:
@@ -39,21 +39,21 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types are loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
+The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 
 ### Number types
 Power BI Desktop supports three number types:
 
 **Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest value that can be represented in a Decimal Number type is 15 digits long.  The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers.
 
-**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative).  The Fixed Decimal Number type is useful in cases where rounding might introduce errors.  When you work with many numbers that have small fractional values they can sometimes accumulate and force a number to be just slightly off.  Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors.   If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot. 
+**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative).  The Fixed Decimal Number type is useful in cases where rounding might introduce errors.  When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off.  Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors.   If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot. 
 
 **Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).  It can represent the largest possible number of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
 
 ### Date/time types
 Power BI Desktop supports five Date/Time data types in Query View and three in the Report View and model.   Both Date/Time/Timezone and Duration are converted during load into the model.
 
-**Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33ms).  Dates between years 1900 and 9999 are supported.
+**Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  Dates between years 1900 and 9999 are supported.
 
 **Date** – Represents just a Date (no time portion).  When converted into the model, a Date is the same as a Date/Time value with zero for the fractional value.
 
@@ -64,7 +64,7 @@ Power BI Desktop supports five Date/Time data types in Query View and three in t
 **Duration** – Represents a length of time. It’s converted into a Decimal Number Type when loaded into the model.  As a Decimal Number type it can be added or subtracted from a Date/Time field with correct results.  As a Decimal Number type, you can easily use it in visualizations that show magnitude.
 
 ### Text type
-**Text** - A Unicode character data string. Can be strings, numbers or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
+**Text** - A Unicode character data string. Can be strings, numbers, or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
 
 ### True/false type
 **True/False** – A Boolean value of either a True or False.
@@ -106,7 +106,7 @@ For example, if a real number is used in an addition operation in combination wi
 
 **Subtraction (-)**
 
-In the following table the row header is the minuend (left side) and the column header is the subtrahend (right side).
+In the following table, the row header is the minuend (left side) and the column header is the subtrahend (right side).
 
 | Operator(-) | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ For example, if a date is used in a subtraction operation with any other data ty
 > 
 > 
 
-**Multiplication(*)**
+**Multiplication (*)**
 
 | Operator(*) | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
@@ -152,7 +152,7 @@ The following DAX expressions illustrate this behavior:
 
 =IF(FALSE()\>"true","Expression is true", "Expression is false"), returns "Expression is true"
 
-=IF("12"\>12,"Expression is true", "Expression is false"), returns "Expression is true".
+=IF("12"\>12,"Expression is true", "Expression is false"), returns "Expression is true"
 
 =IF("12"=12,"Expression is true", "Expression is false"), returns "Expression is false"
 
@@ -166,7 +166,7 @@ Conversions are performed implicitly for numeric or date/time types as described
 | Date/time |REAL |REAL |REAL |Date/Time |
 
 ### Handling blanks, empty strings, and zero values
-In DAX, a null, blank value, empty cell, or a missing value are all represented by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
+In DAX, a null, blank value, empty cell, or a missing value is all represented by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
 
 How blanks are handled in operations such as addition or concatenation depends on the individual function. The following table summarizes the differences between DAX and Microsoft Excel formulas, in the way that blanks are handled.
 
