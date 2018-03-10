@@ -664,11 +664,13 @@
       href: desktop-ssas-multidimensional.md
     - name: "Connect to CSV files in Power BI Desktop"
       href: desktop-connect-csv.md
-    - name: "Connect to an Impala database in Power BI Desktop (Preview)"
+    - name: "Connect to Adobe Analytics in Power BI Desktop (Preview)" 
+      href: desktop-connect-csv.md
+    - name: "Connect to an Impala database in Power BI Desktop"
       href: desktop-connect-impala.md
     - name: "Connect to an OData feed in Power BI Desktop"
       href: desktop-connect-odata.md
-    - name: "Connect to an Amazon Redshift database in Power BI Desktop (Preview)"
+    - name: "Connect to an Amazon Redshift database in Power BI Desktop"
       href: desktop-connect-redshift.md
     - name: "Connect to a Web page from Power BI Desktop"
       href: desktop-connect-to-web.md
@@ -768,6 +770,8 @@
       href: desktop-slicers.md
     - name: "Bookmarks in Power BI"
       href: desktop-bookmarks.md
+    - name: "Create custom report tooltips (preview)"
+      href: desktop-tooltips.md            
     - name: "Use Report themes"
       href: desktop-report-themes.md
     - name: "Use Quick Measures"
@@ -775,7 +779,7 @@
     - name: "Using What if parameters"
       href: desktop-what-if.md
     - name: "Use drillthrough"
-      href: desktop-drillthrough.md      
+      href: desktop-drillthrough.md        
     - name: "Use a relative date slicer and filter"
       href: desktop-slicer-filter-date-range.md      
     - name: "Accessibility in Power BI reports"
