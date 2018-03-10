@@ -27,7 +27,7 @@ In order to connect to an Oracle database with **Power BI Desktop**, the correct
 **Supported versions**: Oracle 9 and later, Oracle client software 8.1.7 and later.
 
 ## Determining which version of Power BI Desktop is installed
-To determine which version of Power BI Desktop is installed, select **File > About** then check the **Version:** line. In the following image, a 64-bit version of Power BI Desktop is installed:
+To determine which version of Power BI Desktop is installed, select **File > Help > About** then check the **Version:** line. In the following image, a 64-bit version of Power BI Desktop is installed:
 
 ![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
@@ -41,7 +41,7 @@ For **64-bit** versions of Power BI Desktop, use the following link to download 
 * [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## Connect to an Oracle database
-Once the matching Oracle client driver is installed, you can connect to an Oracle database. Take the following steps to make the connection.
+Once the matching Oracle client driver is installed, you can connect to an Oracle database. To make the connection, take the following steps:
 
 1. From the Get Data window, select **Database > Oracle Database**
    
