@@ -24,7 +24,7 @@ LocalizationGroup: Connect to data
 # Data sources in Power BI Desktop
 With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.
 
-To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image.
+To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image:
 
 ![](media/desktop-data-sources/data-sources_1.png)
 

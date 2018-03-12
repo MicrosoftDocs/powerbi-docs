@@ -24,7 +24,7 @@ LocalizationGroup: Connect to data
 # Connect to SSAS Multidimensional Models in Power BI Desktop
 With Power BI Desktop, you can access **SSAS Multidimensional models**, commonly referred to as **SSAS MD**.
 
-To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL Server Analysis Services Database** as shown in the following image.
+To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL Server Analysis Services Database** as shown in the following image:
 
 ![](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
@@ -34,7 +34,7 @@ To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL 
 The following sections describe features and capabilities of Power BI and SSAS MD connections.
 
 ### Tabular metadata of multidimensional models
-The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata, and based on the returned metadata, runs appropriate DAX queries against Analysis Services when you create a visualization such as a table, matrix, chart or slicer.
+The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata, and based on the returned metadata, runs appropriate DAX queries against Analysis Services when you create a visualization such as a table, matrix, chart, or slicer.
 
 | BISM-Multidimentional object | Tabular Metadata |
 | --- | --- |
@@ -49,13 +49,13 @@ The following table shows the correspondence between multidimensional objects an
 | KPI |KPI |
 | User/Parent-Child hierarchies |Hierarchies |
 
-### Measures, measure groups and KPIs
+### Measures, measure groups, and KPIs
 Measure groups in a multidimensional cube are exposed in Power BI as tables with the ∑ sign beside them in the **Fields** pane. Calculated measures that don't have an associated measure group are grouped under a special table called *Measures* in the tabular metadata.
 
-In a multidimensional model, you can define a set of measures or KPIs in a cube to be located within a *Display folder*, which can help simplify complex models. Power BI recognizes Display folders in tabular metadata, and shows measures and KPIs within the Display folders. KPIs in multidimensional databases support *Value*, *Goal*, *Status Graphic* and *Trend Graphic*.
+In a multidimensional model, you can define a set of measures or KPIs in a cube to be located within a *Display folder*, which can help simplify complex models. Power BI recognizes Display folders in tabular metadata, and shows measures and KPIs within the Display folders. KPIs in multidimensional databases support *Value*, *Goal*, *Status Graphic*, and *Trend Graphic*.
 
 ### Dimension attribute type
-Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country* and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to element in the **Field** pane in Power BI.
+Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to element in the **Field** pane in Power BI.
 
 Power BI can also render images when you provide a field containing URLs (Uniform Resource Locator) of the images. You can specify these fields as *ImageURL* type in SQL Server Data Tools (or subsequently in Power BI), and its type information is provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL, and display them in visuals.
 
@@ -68,7 +68,7 @@ Multidimensional models support creation of various types of *calculated members
 * Calculated members on attribute hierarchies and not sibling of *All*
 * Calculated members on user hierarchies
 
-Multidimensional model expose *calculated members on attribute hierarchies* as values of a column. There are a few additional options and constraints while exposing this type of calculated member:
+Multidimensional models expose *calculated members on attribute hierarchies* as values of a column. There are a few additional options and constraints while exposing this type of calculated member:
 
 * Dimension attribute can have an optional *UnknownMember*
 * An attribute containing calculated members cannot be the key attribute of the dimension, unless it is the only attribute of the dimension
