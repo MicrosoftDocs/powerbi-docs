@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -32,7 +32,7 @@ When connecting to a SAP HANA database, specify the server name and the port in 
 
 ![](media/desktop-sap-hana/sap-hana-2.png)
 
-In this release **SAP HANA** in [DirectQuery](desktop-use-directquery.md) mode is supported in Power BI Desktop and the Power BI Service, and you can publish and upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. You can also publish and upload reports to the Power BI Service when not using **SAP HANA** in DirectQuery mode.
+In this release **SAP HANA** in [DirectQuery](desktop-directquery-sap-hana.md) mode is supported in Power BI Desktop and the Power BI service, and you can publish and upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. You can also publish and upload reports to the Power BI Service when not using **SAP HANA** in DirectQuery mode.
 
 ### Supported features for SAP HANA
 This release has many capabilities for **SAP HANA**, as shown in the following list:
@@ -52,4 +52,12 @@ There are also a few limitations to using **SAP HANA**, shown below:
 * SMALLDECIMAL is not supported
 * VARBINARY is not supported
 * Valid Dates are between 1899/12/30 and 9999/12/31
+
+
+## Next steps
+For more information about DirectQuery, check out the following resources:
+
+* [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
+* [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
 

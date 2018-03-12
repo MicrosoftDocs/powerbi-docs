@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/09/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -34,7 +34,8 @@ The following data sources support DirectQuery in Power BI:
 * IBM Netezza (Beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 and above)
-* SAP Business Warehouse (Beta)
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (Beta)
 * SAP HANA
 * Snowflake
 * Spark (Beta)  (version 0.9 and above)
@@ -47,7 +48,7 @@ Data sources that are have **(Beta)** or **(Preview)** after their name are subj
 The only difference between **(Beta)** and **(Preview)** data sources is that **(Preview)** sources must be enabled as a Preview feature before they become available for use. To enable a **(Preview)** data connector, in **Power BI Desktop** go to **File > Options and Settings**, and then **Settings > Options > Preview features**.
 
 ## On-premises gateway requirements
-The following table specifies whether an **on-premises data gateway** is required to connect to the specified data source, after publishing a report to the **Power BI service**.
+The following table specifies whether an **On-premises data gateway** is required to connect to the specified data source, after publishing a report to the **Power BI service**.
 
 | Source | Gateway required? |
 | --- | --- |
@@ -59,11 +60,14 @@ The following table specifies whether an **on-premises data gateway** is require
 | Teradata Database |Yes |
 | Amazon Redshift |No |
 | Impala (version 2.x) |Yes |
-| Snowflake (Preview) |Not yet supported in the **Power BI service** |
+| Snowflake |Yes |
 | Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
-| Azure HDInsight Spark (Beta) |Not yet supported in the **Power BI service** |
-| IBM Netezza (Beta) |Not yet supported in the **Power BI service** |
-| SAP Buisness Warehouse (Beta) |Not yet supported in the **Power BI service** |
+| Azure HDInsight Spark (Beta) |No |
+| IBM Netezza |Yes |
+| SAP Buisness Warehouse Application Server |Yes |
+| SAP Buisness Warehouse Message Server |Not yet supported in the **Power BI service** |
+| Google BigQuery |No |
+
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:

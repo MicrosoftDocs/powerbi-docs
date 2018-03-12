@@ -17,99 +17,143 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/30/2017
-ms.author: mihart
+ms.date: 03/05/2018
+ms.author: v-thepet
 
 LocalizationGroup: Visualizations
 ---
-# Slicers in Power BI service (Tutorial)
-Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.
+# Slicers in Power BI (Tutorial)
+A VP of Sales wants to be able to look at several metrics for the entire division and for each individual District Manager. She could create a separate report for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in other visualizations in a report. Slicers are an alternate way of filtering.
 
-![](media/power-bi-visualization-slicers/slicer2.gif)
+This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating and formatting a slicer and using it to filter a report. Have fun discovering ways to format and use slicers. 
+
+![slicer](media/power-bi-visualization-slicers/slicer2.gif)
 
 ## When to use a slicer
-Slicers are a great choice in the following situations.
+Slicers are a great choice when you want to:
 
-* To display commonly-used or important filters on the report canvas for easier access.
-* To make it easier to see the current filtered state without having to open a drop-down list to find the filtering details.
-* When you want to hide columns you don't need but still be able to use them to filter - this makes for narrower, cleaner tables.
-* To create more focused reports - since slicers are floating objects you can put them next to the interesting part of the report you want your users to focus on.
+* Display commonly-used or important filters on the report canvas for easier access.
+* Make it easier to see the current filtered state without having to open a drop-down list. 
+* Filter by columns that are unneeded and hidden in the data tables.
+* Create more focused reports by putting slicers next to important visuals.
+
+Power BI slicers have the following limitations:
+
+- Slicers do not support input fields.
+- Slicers cannot be pinned to a dashboard.
+- Drilldown is not supported for slicers.
+- Slicers do not support visual level filters.
 
 ## Create a slicer
+
+This tutorial uses a list slicer. Numeric and date/time data types can have range slicers. See [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md) or the following video for more information about creating and using range slicers.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
+1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
+2. From the Fields pane, under District, select **District Manager** to create a new visualization.
+    
+    ![new chart](media/power-bi-visualization-slicers/1-new-vis.png)
+    
+3. Select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the Visualizations pane to convert the new visualization to a slicer. 
+    
+    ![convert to slicer](media/power-bi-visualization-slicers/2-slicer.png)
 
-1. Open the [Retail Analysis Sample](sample-retail-analysis.md) in [Editing View](service-interact-with-a-report-in-editing-view.md) and [add a new report page](power-bi-report-add-page.md).
-2. From the Fields pane, select **District > District Manager**.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_chartfirst.png)
-3. Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_select.png)
+You can also select the Slicer icon to create a new slicer, and then select or drag a data field to the Field box to populate it.
+
+>[!TIP]
+>You can sort list slicer items by data values. To sort slicer items in reverse alphabetical order, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager**. The setting is ascending alphabetical by default, but toggles between ascending and descending order. 
 
 ## Format the slicer
-1. With the slicer selected, in the Visualizations pane, select the paint roller icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the Format options.
-2. Select **General > Outline color** and choose dark blue and change the **Weight** to **6**.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_outline2.png)
-3. Under **Selection Controls**, by default, **Select All** is **Off** and **Single Select** is **On**. This means that I have to use the CTRL key to select more than one name at a time. Turn **Select All** to **On** and **Single Select** to **Off**.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_selectioncontrols2.png)
-   
-   * Notice that the slicer now has a **Select All** option at the top of the list. Toggle **Select All** to select all of the names or to select none of the names.
-   * And you can now select more than one name without having to use the CTRL key.
-4. Under **Items**, increase the text size to 14pt.  We want to be sure that our colleagues notice this slicer.
-5. Lastly, set **Font color** to a dark red.  This will distinguish the selected names from the unselected names in our slicer.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_font2.png)
-6. Have fun exploring the other options available for slicers.
+Apply visual formatting to the District Manager slicer.
+1. With the slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
+    
+    ![formatting](media/power-bi-visualization-slicers/3-format.png)
+    
+2. Click the dropdown arrows next to each category to display and edit the options. 
 
-## Use the slicer in a report
-1. Add some additional visualizations to the report page or open the [Retail Analysis sample report](sample-retail-analysis.md) and select the **District Monthly Sales** tab.
-   
-    ![](media/power-bi-visualization-slicers/power-bi-retail-sample.png)
-2. Slice the report page for Carlos. Notice how the other visualizations update to reflect these selections.
-   
-    ![](media/power-bi-visualization-slicers/slicer2.gif)
-3. Sort the slicer alphabetically by District Manager last name.  Select the ellipses (...) in the top right corner of the slicer and choose **District Manager**.
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_sort2.png)
-   
-    ![](media/power-bi-visualization-slicers/pbi_slicer_sorted.png)
+### General options
+1. Select red under **Outline color** and change **Outline weight** to "2". This sets the color and thickness of the header and item outlines or underlines, when enabled. 
+2. Under Orientation, Vertical is the default, creating a vertical list slicer with selection boxes before the items. Select **Horizontal** to produce a slicer with horizontally arranged items. Horizontal orientation can produce various arrangements of text, buttons, or tiles, depending on the slicer size and shape and item formatting. 
+    
+    ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
+    
+3. Turn on **Responsive** layout, which changes the size and arrangement of horizontal slicer items to match the slicer size and shape. At a very small size, the slicer becomes a filter icon. 
+    
+    ![responsive](media/power-bi-visualization-slicers/5-responsive.png)
+    
+    >[!NOTE]
+    >Responsive layout changes may override specific heading and item formatting that you set. 
+    
+4. Set the slicer position and size with numeric precision under **X Position**, **Y Position**, **Width**, and **Height**, or move and resize the slicer directly on the canvas, to produce different item sizes and arrangements such as a horizontal row of buttons. 
 
-## Control what effect the slicer has on other visuals on the page
-Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
+    ![horizontal buttons](media/power-bi-visualization-slicers/6-buttons.png)
 
-**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/power-bi-visualization-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](service-reading-view-and-editing-view.md).
+See [Create a responsive slicer you can resize in Power BI](power-bi-slicer-filter-responsive.md) for more about horizontal orientation and responsive formatting.
 
-1. Select the slicer to make it active and, from the menu bar, choose **Visual interactions**.
-   
-    ![](media/power-bi-visualization-slicers/pbi-slicer-interactions.png)
-2. Filter controls will appear above all the other visuals on the page. If the slicer should filter a visual, select the **Filter** icon.  If the slicer should have no effect on the visual, select the **None** icon.
-   
-    ![](media/power-bi-visualization-slicers/filter-controls.png)
+### Selection Controls options
+1. Show Select All is Off by default. Turn it to **On** to add a Select All item to the slicer that selects or deselects all items when toggled. When all items are selected, clicking one item deselects it, allowing an "is-not"-type filter. 
+    
+    ![select all](media/power-bi-visualization-slicers/7-select-all.png)
+    
+2. Single Select is On by default. Clicking each item selects it, and holding down the CTRL key while clicking selects multiple items. Turn Single Select to **Off** to allow selecting multiple items without holding down the CTRL key. Clicking each item again deselects it. 
 
-For more information, see [Visual interactions in a Power BI report](service-reports-visual-interactions.md).
+### Header options
+The header is On by default, showing the data field name at the top of the slicer. 
+1. Format the header text to make the **Font color** red, **Text size** 14 pt, and **Font family** Arial Black. 
+2. Under Outline, choose **Bottom only** to produce an underline with the size and color that you set under General options. 
 
-## Considerations and troubleshooting slicers in Power BI
-There are a few limitations to using slicers in Power BI, which are the following:
+### Item options
+1. Format item text and background to make the **Font color** black, **Background** light red, **Text size** 10 pt, and **Font family** Arial. 
+2. Under Outline, choose **Frame** to draw a border around each item with the size and color you set under General options. 
+    
+    ![formatted](media/power-bi-visualization-slicers/8-formatted.png)
+    
+    >[!TIP]
+    >- With Horizontal Orientation, deselected items show the chosen text and background colors, while selected items use the system default, usually black backgrounds with white text. 
+    >- With Vertical Orientation, items always show the set colors, and selection boxes are always black when selected. 
 
-1. Slicers do not support input fields.
-2. A single slicer cannot be used across an entire report. A slicer only impacts the current page.
-3. Slicers cannot be pinned to a dashboard.
-4. Drilldown is not supported for slicers.    
-5. Slicers do not support Visual level filters.
+### Other formatting options
+The other formatting options are off by default. When turned **On**: 
+- **Title:** Adds and formats a title (in addition to and independent of the header) at the top of the slicer. 
+- **Background:** Adds a background color to the overall slicer and sets its transparency.
+- **Lock aspect:** Retains the shape of the slicer if it is resized.
+- **Border:** Adds a 1-pixel border around the slicer and sets its color. (This slicer border is separate from and unaffected by the General Outline settings.) 
+
+## Sync and use the slicer on other pages
+Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
+1. With the District Manager slicer selected, on the View menu, select **Sync slicers** in Power BI Desktop, or turn on **Sync slicers pane** in Power BI service. The Sync Slicers pane appears. 
+    
+    ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
+    
+2. In the first column, select **Overview** and any other pages you want the slicer to sync to, or click **Add to all** to make the slicer sync to all report pages.  
+3. In the next column, select **Overview** and any other pages on which you want the slicer to be visible. 
+4. Switch to the **Overview** page, and note the slicer and its effects on the other page visuals. 
+    - Make and remove different item selections, and note how the other visuals on the page change accordingly. Item selection on any page reflects across all synced pages.
+    - Change the size, shape, position, and/or formatting of the slicer on the Overview page. The slicer formatting on other synced pages does not change. 
+
+### Control which page visuals are affected by the slicer
+By default, a slicer on a report page affects all other visualizations on that page. Use **Visual interactions** to prevent some page visualizations from being affected.
+
+1. On the **Overview** page, with the slicer selected:
+    - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
+    - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
+    
+    Filter controls appear above all the other visuals on the page. ![filter controls](media/power-bi-visualization-slicers/filter-controls.png)
+    
+2. Select the **None** icon above a visual to make the slicer stop filtering it. Select the **Filter** icon to make the slicer start filtering the visual again. 
+
+See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information about editing interactions.
+
+## Next steps
+[Try it out - it's free!](https://powerbi.com/)
 
 Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 
-## Next steps
- [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
-
- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
- [Power BI - Basic Concepts](service-basic-concepts.md)
-
-[Try it out -- it's free!](https://powerbi.com/)
-
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+[Add a visualization to a report](power-bi-report-add-visualizations-i.md)
+
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+[Power BI - Basic Concepts](service-basic-concepts.md)
 
