@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/11/2018
+ms.date: 03/12/2018
 ms.author: maghan
 ---
 # Embed your Power BI dashboards, reports and tiles
@@ -84,6 +84,10 @@ You will need to register your application with Azure AD in order to make REST A
 If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed within an app workspace. The *master* account, that was mentioned above, must be an admin of the app workspace.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
+
+> [!NOTE]
+> A non-admin user can only create up to 250 app workspaces. To create more app workspaces, you need to use a tenant admin account.
+>
 
 ### Create and upload your reports
 
