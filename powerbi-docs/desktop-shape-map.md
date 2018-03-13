@@ -56,7 +56,6 @@ Take the following steps to create a **Shape Map**:
    ![](media/desktop-shape-map/shape-map_3b.png)
    
    > [!NOTE]
-
 > In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
