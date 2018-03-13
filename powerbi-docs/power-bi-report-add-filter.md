@@ -33,7 +33,7 @@ This examples in this article show Power BI service. However, the steps are almo
 There are two modes for interacting with reports: [Reading View](service-reading-view-and-editing-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you've added.
-* In Reading View, you can interact with any report, drillthrough, page, and visual filters that already exist in the report. You cannot add new filters.
+* In Reading View, you can interact with any report, drillthrough, page, and visual filters that already exist in the report, but you cannot add new filters. The changes you make in the Filters pane are saved with the report -- even if you view the report in a mobile app.  
 
 > [!NOTE]
 > This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).

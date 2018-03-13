@@ -28,7 +28,7 @@ In Power BI service (not Power BI Desktop) there are two modes for viewing and i
 
 ## Report Reading view
 
- Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, and optionally with the same filters applied.  Consumers can interact with the reports, but cannot add new filters.
+ Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, and optionally with the same filters applied.  Consumers can interact with the reports, can change the existing filters (and these changes are saved with the report), but cannot add new filters.
 
 >**NOTE**: In certain circumstances, report consumers may see different data because of row level security and data permissions.
 

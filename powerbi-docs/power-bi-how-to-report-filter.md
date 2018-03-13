@@ -26,8 +26,10 @@ This article takes a deep look at the report Filters pane. You'll see the pane i
 
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](power-bi-reports-filters-and-highlighting.md).
 
-## Working with filters
-In Power BI Desktop, reports are opened in Data view. In Power BI service, reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing View, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot add new filters to the report.
+## Working with the report Filters pane
+In Power BI Desktop, reports are opened in Report view. In Power BI service, reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing view, and in Desktop Report view, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot add new filters to the report.
+
+In Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the creator defaults, select **Reset to default** from the top menubar.     
 
 ## Open the Filters pane
 When a report is open, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it. If you are in Power BI service Reading view, the only pane available on the right side is the Filters pane.
@@ -74,7 +76,7 @@ To display options for a particular filter, select the down arrow next to the fi
 ![](media/power-bi-how-to-report-filter/pbi_filterlistdropdown.jpg)
 
 ## Clear a filter
- In either advanced or basic filtering mode, select the eraser icon  ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) to reset the filter. 
+ In either advanced or basic filtering mode, select the eraser icon  ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) to clear the filter. 
 
 ## Add a filter
 * In Desktop and in Power BI service Editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).

@@ -52,8 +52,8 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 ## Filters in Reading view versus Editing view
 There are two modes for interacting with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
-* In Editing View, you can add report, page, drillthrough, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but cannot add new filters.
-* In Reading View, you can interact with any filters that already exist in the report, and save the selection you make, but you won't be able to add new filters.
+* In Editing View, you can add report, page, drillthrough, and visual filters. When you save the report, the filters are saved with the report -- even if you open it in a mobile app. People looking at the report in Reading View can interact with the filters you added, but cannot add new filters.
+* In Reading View, you can interact with any filters that already exist in the report, and save the selectiona you make.  But you won't be able to add new filters.
 
 ### The Filters pane in Reading View
 If you only have access to a report in Reading View, the Filters pane looks similar to this:
@@ -66,7 +66,7 @@ To see if any visual level filters exist, select a visual. In the image below, t
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
-In Reading View, explore the data by modifying the existing filters. Learn how in the article [Reading view and Editing view in Power BI service](service-reading-view-and-editing-view.md)
+In Reading View, explore the data by modifying the existing filters. The changes you make are saved with the report, even if you open the report in a mobile app. Learn how in the article [Reading view and Editing view in Power BI service](service-reading-view-and-editing-view.md)
 
 ### The Filters pane in Editing View
 When you have owner permissions for a report and open it in Editing View, you see that **Filters** is just one of several editing panes available.
