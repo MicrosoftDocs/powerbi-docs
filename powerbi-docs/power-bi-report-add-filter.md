@@ -39,12 +39,17 @@ There are two modes for interacting with reports: [Reading View](service-reading
 > This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).
 
 
-## Visual filters, page filters, drillthrough filters, and report filters
-**page filter** applies to all the visuals on the report page **visual filter** applies to a single visual on a report page
-**drillthrough filter** applies to a single entity in a report
-**report filter** applies to all pages in the report
+## Filters available in the Power BI *Filters* pane
+Whether you're using Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
 
-![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+There are four types of filters.
+
+- **page filter** applies to all the visuals on the report page     
+- **visual filter** applies to a single visual on a report page    
+- **drillthrough filter** applies to a single entity in a report    
+- **report filter** applies to all pages in the report    
+
+    ![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## Add a filter to a specific visualization (aka visual filter)
 There are 2 ways to do this: 
