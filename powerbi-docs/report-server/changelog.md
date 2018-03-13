@@ -31,7 +31,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Features
             - Please see [What's new in Power BI Report Server](whats-new.md)
         - Bug fixes
-            - Acessibility fixes
+            - Accessibility fixes
             - Security fixes
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
