@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/21/2017
+ms.date: 03/06/2018
 ms.author: maghan
 
 ---
-# Code snippets for migrating content from Power BI Embedded
-Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md#content-migration).
+# Code snippets for migrating content from Power BI Workspace Collection
+Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI workspace collection content to Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
 

@@ -95,7 +95,7 @@ If you have Power BI Free, you'll only see one workspace -- **My Workspace**.
 To learn more, see [Favorites](service-dashboard-favorite.md)
 
 ### Recents
-Quickly get to the content that you�ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
+Quickly get to the content that you've most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
 
   ![Recents pane](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
@@ -113,7 +113,7 @@ An app is a collection of dashboards and reports built to deliver key metrics, a
 To learn more, see **App workspaces** (below) and [What are Power BI apps](service-install-use-apps.md).
 
 ### Shared with me
-**Shared with me** is the location for all content that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what�s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
+**Shared with me** is the location for all content that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what's relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
 
 ![Shared with me pane](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
@@ -130,7 +130,7 @@ If you are not a member of an app workspace or an admin, you may not see any app
 ![My Workspace screen](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
 #### App workspaces
-Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They�re the evolution of group workspaces � staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
+Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They're the evolution of group workspaces ' staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
 
 To learn more, visit [Create and distribute an app in Power BI](service-create-distribute-apps.md#app-workspaces).
 

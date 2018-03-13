@@ -128,11 +128,11 @@ Through the SQL Profiler, you can identify the queries which are taking up the l
 
 ## Gateway best practices 
 
-The on-premises data gateway is a great tool for connecting the Power BI service with your on-premises data. At the same time, with poor planning, it can also become a bottleneck for report performance. This is especially true for DirectQuery/live connection datasets, where all queries and query responses pass through the gateway. The following are some best practices for ensuring highly performant gateways: 
+The On-premises data gateway is a great tool for connecting the Power BI service with your on-premises data. At the same time, with poor planning, it can also become a bottleneck for report performance. This is especially true for DirectQuery/live connection datasets, where all queries and query responses pass through the gateway. The following are some best practices for ensuring highly performant gateways: 
  
 - **Use the Enterprise mode**, as opposed to the personal mode. 
 - **Recommended hardware specs for the gateway** – 8 CPU cores, 16 GB RAM. 
-- **Set up monitoring** – set up performance monitoring on the gateway machine understand whether the gateway is becoming overloaded and becoming a bottleneck. For more information, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
+- **Set up monitoring** – set up performance monitoring on the gateway machine understand whether the gateway is becoming overloaded and becoming a bottleneck. For more information, see [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md).
 - **Scale up or scale out** – if the gateway is indeed becoming a bottleneck, then consider scaling up (that is, moving the gateway to a more powerful machine with more CPU and RAM) or scaling out (for example, splitting out datasets onto different gateways). 
 - **Separate import vs. DirectQuery** – if scaling out, consider separating the gateways responsible for import vs. those responsible for DirectQuery. 
  

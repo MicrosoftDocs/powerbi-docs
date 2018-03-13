@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -30,12 +30,16 @@ To use the **SAP BW Connector**, go through the following installation steps:
 1. Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available. The **SAP NetWeaver** library is usually included also in the SAP Client Tools installation.
    
    You may be able to search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the **SAP NetWeaver** library (32-bit or 64-bit) matches your **Power BI Desktop** installation, then install all files included in the **SAP NetWeaver RFC SDK** according to the SAP Note.
-2. The **Get Data** dialog includes an entry for **SAP Business Warehouse Server** in the **Database** category.
+2. The **Get Data** dialog includes an entry for **SAP Business Warehouse Application Server** and **SAP Business Warehouse Message Server** in the **Database** category.
    
    ![](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
 ## SAP BW Connector features
-The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. You can also use DirectQuery with the **SAP BW Connector**. You must specify a *Server*, *System Number* and *Client ID* to establish the connection.
+The **SAP BW Connectors** in Power BI Desktop lets you import data from your **SAP Business Warehouse Server** cubes, or you can use DirectQuery with the **SAP BW Connector**. 
+
+To learn more about the **SAP BW connector** and how to use it with DirectQuery, take a look at the [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md) article.
+
+When connecting, you must specify a *Server*, *System Number* and *Client ID* to establish the connection.
 
 ![](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
@@ -102,3 +106,9 @@ This section provides troubleshooting situations (and solutions) for working wit
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
 
+## Next steps
+For more information about SAP HANA and DirectQuery, check out the following resources:
+
+* [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
+* [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)

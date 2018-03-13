@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/15/2018
+ms.date: 03/07/2018
 ms.author: maghan
 ---
 # Frequently asked questions about Power BI Embedded
@@ -62,7 +62,7 @@ Power BI Embedded is now available.
 
 ## Technical
 
-### What is the difference between the A SKUs in Azure and EM SKUs in Office 365?
+### What is the difference between the A SKUs in Azure and the EM SKUs in Office 365?
 
 PowerBI.com is an enterprise solution that includes many capabilities like social collaboration, email subscription, etc. in a Software as a Service offering
 
@@ -124,6 +124,10 @@ Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacit
 
 Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West US, and West US 2.
 
+### What type of content pack data can be embedded?
+
+**Dashboards** and **tiles** that are built from content pack datasets *cannot* be embedded, however **reports** built from a content pack dataset *can* be embedded.
+
 ## Licensing
 
 ### How do I purchase Power BI Embedded?
@@ -166,7 +170,7 @@ Customers may change their usage on an hourly basis. There is no monthly or annu
 
 ### Where is Power BI Embedded available? US Government? Germany? China? What is the timing?
 
-Power BI Embedded will be available in Azure commercial clouds at GA.  Sovereign cloud availability will be added in the future.
+Power BI Embedded is available in Azure commercial clouds and in the US government cloud.  Sovereign cloud availability for Germany and China will be added in the future.
 
 ### Is Power BI Embedded available for non-profits and educational?
 

@@ -1,4 +1,4 @@
-## Install the on-premises data gateway
+## Install the On-premises data gateway
 The data gateway installs and runs on your computer. It is best to install the gateway on a machine that can be left running all the time.
 
 > [!NOTE]
@@ -15,9 +15,9 @@ There are a few things to note about insalling either mode of the gateway:
 
 * both gateways require 64-bit Windows operating systems
 * gateways can’t be installed on a domain controller
-* you can install up to two on-premises data gateways on the same computer, one running in each mode (personal and standard). 
+* you can install up to two On-premises data gateways on the same computer, one running in each mode (personal and standard). 
 * you cannot have more than one gateway running in the same mode on the same computer.
-* you can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
+* you can install multiple On-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
 * You can only have one Personal mode gateway running for each Power BI user. If you install another Personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
 
 ![On-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
