@@ -864,6 +864,8 @@
     items: 
     - name: "Power BI for iOS apps"
       href: mobile-ios-ipad-iphone-apps.md
+    - name: "Power BI for Mixed Reality"
+      href: mobile-mixed-reality-app.md     
     - name: "View on-premises reports and KPIs in the mobile apps"
       href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
     - name: "Dashboards in the mobile apps"
