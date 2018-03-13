@@ -1,6 +1,6 @@
 ---
-title: Power BI for Mixed Reality (Preview)
-description: View your dashboards and reports in Power BI for Mixed Reality, either immersed in the virtual world or in the context of your environment.
+title: Power BI for Mixed Reality app (Preview)
+description: View your dashboards and reports in the Power BI for Mixed Reality app, either immersed in the virtual world or in the context of your environment.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -16,12 +16,12 @@ ms.devlang: NA
 ms.topic: 
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/07/2018
+ms.date: 03/13/2018
 ms.author: maggies
 
 ---
-# Power BI for Mixed Reality (Preview)
-View your dashboards and reports in Power BI for Mixed Reality while immersed in the virtual world, or place them in specific locations in the context of your environment. 
+# Power BI for Mixed Reality app (Preview)
+View your dashboards and reports in the Power BI for Mixed Reality app while immersed in the virtual world, or place them in specific locations in the context of your environment. 
 
 Download the preview edition of the Power BI for Mixed Reality app from the Windows store to view your dashboards and reports. Interact with them in the virtual world, then select the ones you want to place. 
 

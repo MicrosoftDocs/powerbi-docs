@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/07/2018
+ms.date: 03/13/2018
 ms.author: maggies
 
 ---
@@ -29,9 +29,9 @@ For related "What's New" information, see:
 
 ## March 2018
 
-### Power BI for Mixed Reality (Preview)
+### Power BI for Mixed Reality app (Preview)
 
-In the latest move to bring data where you are, we've created Power BI for Mixed Reality. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality](mobile-mixed-reality-app.md).
+In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
 ## February 2018
 
