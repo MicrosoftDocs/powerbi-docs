@@ -38,9 +38,6 @@ There are two modes for interacting with reports: [Reading View](service-reading
 > [!NOTE]
 > This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).
 
->
-> 
-> 
 
 ## Visual filters, page filters, drillthrough filters, and report filters
 **page filter** applies to all the visuals on the report page **visual filter** applies to a single visual on a report page
