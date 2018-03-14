@@ -44,7 +44,7 @@ When we select **Load**, Power BI Desktop imports the selected items, and makes 
 
 That’s all there is to connecting to a web page and bringing its data into Power BI Desktop.
 
-From there, you can drag those fields onto the Report canvas and create all the visualizations you want. You can also work this the data from that Web page just like you would any other data – you can shape it, you can create relationships between it and other data sources in your model, and otherwise do what you’d like to create just the Power BI report you want.
+From there, you can drag those fields onto the Report canvas and create all the visualizations you want. You can also use the data from that Web page just like you would any other data – you can shape it, you can create relationships between it and other data sources in your model, and otherwise do what you’d like to create the Power BI report you want.
 
 To see connecting to a Web page in more depth and action, take a look at the [Power BI Desktop Getting Started Guide](desktop-getting-started.md).
 
