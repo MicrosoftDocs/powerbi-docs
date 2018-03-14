@@ -27,8 +27,6 @@ Learn how to upgrade Power BI Report Server.
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-![tip](media/upgrade/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
-
 ## Before you begin
 Before you upgrade a report server, it is recommended that you perform the following steps to back up your report server.
 

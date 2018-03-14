@@ -31,8 +31,6 @@ To download Power BI Report Server, go to [On-premises reporting with Power BI R
 
 Go to the Microsoft Download Center to download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017).
 
-![tip](media/quickstart-install-report-server/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
-
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Before you begin
