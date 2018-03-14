@@ -71,6 +71,23 @@ To use your **TopoJSON** map file, add a ShapeMap visual to your report and add 
 
 ![](media/desktop-shape-map/shape-map_6.png)
 
+## Sample Custom Map
+The *Offices of the United States Attorneys* releases an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
+
+https://www.justice.gov/usao/resources/annual-statistical-reports
+
+Since states can be divided into multiple districts, we have to use a custom shape map.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data.  The image below shows an example of this map.
+
+![](media/desktop-shape-map/shape-map_7a.png)
+
+You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains. 
+
+![](media/desktop-shape-map/shape-map_7b.png)
+
+If you’d like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
+
+* [Custom shape map demo .PBIX file](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+
 ## Getting map data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
 

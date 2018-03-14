@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 03/14/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -876,7 +876,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 
-## August 2016 Update (2.37.4464.321)
+## August 2016 Update (2.38.4491.282)
 
 August introduced a full harvest of new features for Power BI Desktop:
 

@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/13/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -103,16 +103,16 @@ Content packs are the only sample format that is available from within Power BI;
 ### Get and open a sample content pack in Power BI service
 1. Open Power BI service (app.powerbi.com) and log in.
 2. In the bottom left corner select **Get data**.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 3. On the Get Data page that appears, select the **Samples** icon.
-   
+
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Select one of the samples to open a description of that sample. Then choose **Connect**.  
-   
+
    ![](media/sample-datasets/power-bi-connect.png)
 5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
-   
+
    ![](media/sample-datasets/power-bi-asterisk.png)
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open Power BI service and explore.
@@ -121,7 +121,7 @@ Now that you have data, you're on your way.  Try out some of our tutorials using
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with Power BI service.  
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
-   
+
    * [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
    * [Supplier Quality Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529779)
    * [Human Resources Sample](http://go.microsoft.com/fwlink/?LinkId=529780)
@@ -131,35 +131,35 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
    * [Procurement Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529784)
    * [Sales and Marketing Sample](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Save the downloaded file. Where you save the file makes a difference.
-   
+
    * ![](media/sample-datasets/power-bi-local-file2.png)  **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can import your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
    * ![](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel, Power BI, or a .CSV file in-sync with your dataset, reports, and dashboards in Power BI. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
    * ![](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive - Personal** – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data > Files > OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
    * ![](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint Team-Sites**    Saving your Power BI files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 3. Open Power BI service (app.powerbi.com) and log in.
-   
+
    > [!TIP]
    > At this point you may want to create a new dashboard and name it after the file you plan on importing.  Otherwise, when you import the Excel dataset, Power BI won't create a new dashboard named after the sample but instead will add a tile to the dashboard that you currently have open. Selecting that tile will take you to the dataset's report. This isn't a major big deal as you can always create a new dashboard later, but starting with a new dashboard saves you a step or two.
-   > 
-   > 
+   >
+   >
 4. In the bottom left corner select **Get data**.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 5. On the Get Data page that appears, select **Files > Get**.
-   
+
      ![](media/sample-datasets/power-bi-files.png)
 6. Navigate to the location where you downloaded and saved the sample.
-   
+
    ![](media/sample-datasets/power-bi-files3.png)
 7. Select the file, in this case **Procurement Analysis Sample.xlsx** which was saved on OneDrive for Business, and choose **Connect**.
-   
+
    ![](media/sample-datasets/power-bi-connect2.png)
 8. Choose whether to import the data or to bring the workbook into Power BI and see it exactly as it is in Excel online.
-   
+
     ![](media/sample-datasets/power-bi-import.png)
 9. If you select **Import**, Power BI imports the sample workbook and adds it as a new dataset named **Procurement Analysis Sample**.  If the workbook has any Power View sheets, tables or ranges, or a data model, Power BI also creates a report (with the same name). And if you don't already have a dashboard open, Power BI creates a new dashboard. (If you had a dashboard open when you clicked **Get Data**, you'll see a new blank tile on that dashboard.  Clicking that tile will take you to the report for the dataset you just added). The new content is named after the sample and is marked with a yellow asterisk.
 10. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or simply use your Power BI left navbar to locate and open the associated report or dashboard.  
-    
+
      ![](media/sample-datasets/power-bi-ready.png)
 
 ### (Optional) Take a look at the Excel samples from inside Excel itself
@@ -167,18 +167,18 @@ Want to understand how the data in an Excel workbook gets converted to Power BI 
 
 * When you first open a sample workbook in Excel, you may see two warnings. The first says the workbook is in Protected View. Select **Enable Editing**. The second may say that the workbook has external data connections. Select **Enable Content**.
 * Each workbook contains several sheets. Because these Excel samples all have at least one Power View sheet with visualizations, when you import the Excel file into Power BI you'll end up with a dataset **and** a report.
-  
+
    You may need to [enable the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 * So where's the actual data? It's in the Power Pivot data model. To see the data, on the **PowerPivot** tab, select **Manage Data Model**.
-  
-    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
+
+    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 * The Info tab provides information about obviEnce, the company that created the sample.
 
 ## The Power BI samples as .pbix files
 Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using the links below.
-   
+
    * [Retail Analysis Sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail Analysis Sample PBIX.pbix)
    * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    * [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
@@ -189,7 +189,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
    * [Sales and Marketing Sample](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix)
 2. Save the downloaded file.
 3. From Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix.
-   
+
    ![](media/sample-datasets/power-bi-desktop-open.png)
 4. Select the .pbix file to open it in Desktop.
 
@@ -201,4 +201,3 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 [Data sources for Power BI](service-get-data.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
