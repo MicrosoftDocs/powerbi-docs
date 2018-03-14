@@ -32,7 +32,7 @@ You can connect to all sorts of different data sources when using **Power BI Des
 In short, the best practice for using import versus DirectQuery is the following:
 
 * You should **import** data to Power BI wherever possible. This takes advantage of the high performance query engine of Power BI, and provides a highly interactive and fully featured experience over your data.
-* If your goals can't be met by importing data, then consider using **DirectQuery**. For example, if the data is changing frequently and reports must reflect the latest data, DirectQuery may be best. However, using DirectQuery is  generally only be feasible when the underlying data source can provide interactive queries (less than 5 seconds) for the typical aggregate query, and is able to handle the query load that will be generated. Additionally, the list of limitations that accompany use of DirectQuery should be considered carefully, to ensure your goals can still be met.
+* If your goals can't be met by importing data, then consider using **DirectQuery**. For example, if the data is changing frequently and reports must reflect the latest data, DirectQuery may be best. However, using DirectQuery is  generally only feasible when the underlying data source can provide interactive queries (less than 5 seconds) for the typical aggregate query, and is able to handle the query load that will be generated. Additionally, the list of limitations that accompany use of DirectQuery should be considered carefully, to ensure your goals can still be met.
 
 The set of capabilities offered by Power BI for both connectivity modes – import and DirectQuery - will evolve over time. This will include providing more flexibility when using imported data, such that import can be used in more cases, as well as eliminating some of the drawbacks of using DirectQuery. Regardless of improvements, when using DirectQuery the performance of the underlying data source will always remain a major consideration. If that underlying data source is slow, then using DirectQuery for that source will remain unfeasible.
 
@@ -48,7 +48,7 @@ Power BI connects to a very large number of varied data sources, encompassing:
 * Simple files (Excel, JSON, others)
 * Other data sources (Spark, Web sites, Microsoft Exchange, others)
 
-For these sources, it's usually possible to import the data to Power BI. For some it is also possible to connect using DirectQuery. The exact set of sources that support DirectQuery is described in the [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md) article. More sources will be DirectQuery enabled in the future, focusing primarily on sources that can be expected to deliver good interactive query performance.
+For these sources, it's usually possible to import the data to Power BI. For some, it is also possible to connect using DirectQuery. The exact set of sources that support DirectQuery is described in the [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md) article. More sources will be DirectQuery enabled in the future, focusing primarily on sources that can be expected to deliver good interactive query performance.
 
 **SQL Server Analysis Services** is a special case. When connecting to SQL Server Analysis Services, you can choose to import the data, or use a *live connection*.  Using a live connection is similar to DirectQuery, in that no data is imported, and the underlying data source is always queried to refresh a visual, but a *live connection* is different in many other regards, so a different term (*live* versus *DirectQuery*) is used.
 
@@ -128,8 +128,8 @@ Similarly, there are limitations in the data transformations that can be applied
 
 Additionally, the query that results from the **Get Data** dialog or **Query Editor** will be used in a subselect within the queries generated and sent to retrieve the necessary data for a visual. Thus the query defined in Query Editor must be valid within this context. In particular, this means it is not possible to use a query using Common Table Expressions, nor one that invokes Stored Procedures.
 
-### Modelling limitations
-The term *modelling* in this context means the act of refining and enriching the raw data, as part of authoring a report using it. Examples include:
+### Modeling limitations
+The term *modeling* in this context means the act of refining and enriching the raw data, as part of authoring a report using it. Examples include:
 
 * Defining relationships between tables
 * Adding new calculations (calculated columns and measures)
@@ -281,7 +281,7 @@ When creating a report using a DirectQuery connection, adhere to the following g
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  In DirectQuery such cross-filtering and cross-highlighting requires queries to be submitted to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. However, this interaction can be switched off, either for the entire report (as described above for *Query reduction options*), or on a case-by-case basis as described [in this article](service-reports-visual-interactions.md).
+  In DirectQuery such cross-filtering and cross-highlighting require queries to be submitted to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. However, this interaction can be switched off, either for the entire report (as described above for *Query reduction options*), or on a case-by-case basis as described [in this article](service-reports-visual-interactions.md).
 
 In addition to the above list of suggestions, note that each of the following reporting capabilities can cause performance issues:
 
