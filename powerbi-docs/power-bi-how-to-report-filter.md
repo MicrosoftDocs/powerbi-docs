@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 03/15/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -42,17 +42,17 @@ Some of the filters have the word **All** next to them and this means that all v
 
 Anyone viewing this report can interact with these filters.
 
-* view the details of the filter by hovering and selecting the arrow next to the filter.
+* View the details of the filter by hovering and selecting the arrow next to the filter.
   
    ![](media/power-bi-how-to-report-filter/power-bi-expan-filter.png)
-* change the filter, for example, change **Lindseys** to **Fashions Direct**.
+* Change the filter, for example, change **Lindseys** to **Fashions Direct**.
   
      ![](media/power-bi-how-to-report-filter/power-bi-filter-chain.png)
 
 * Reset the filters to their original state by selecting **Reset to default** from the top menubar.    
     ![](media/power-bi-how-to-report-filter/power-bi-reset-to-default.png)
     
-* delete the filter by selecting the **x** next to the filter name.
+* Delete the filter by selecting the **x** next to the filter name.
   
   Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will no longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
   
