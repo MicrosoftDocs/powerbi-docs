@@ -51,7 +51,7 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
 * If you chose Select items and get data, in Navigator, select a Tabular model or perspective. You can further select only particular tables or columns to load. To shape your data before loading, click Edit to open Query Editor. When you’re ready, click Load to import the data into Power BI Desktop.
 
-![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
+  ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## Frequently Asked Questions
 **Question:** Do I need an On-premises data gateway?
@@ -70,7 +70,7 @@ If you choose select items and get data, you’re importing Tabular model data r
 
 **Question:** If I created a live connection, can I edit the model or query in Power BI Desktop?
 
-**Answer:** You can create report level measures in the Power BI Desktop, but all other query and modelling features are disabled when exploring live data.
+**Answer:** You can create report level measures in the Power BI Desktop, but all other query and modeling features are disabled when exploring live data.
 
 **Question:** If I created a live connection, is it secure?
 

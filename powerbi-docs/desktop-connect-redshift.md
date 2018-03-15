@@ -25,11 +25,11 @@ LocalizationGroup: Connect to data
 In **Power BI Desktop**, you can connect to an **Amazon Redshift** database and use the underlying data just like any other data source in Power BI Desktop.
 
 ## Connect to an Amazon Redshift database
-To connect to an **Amazon Redshift** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
+To connect to an **Amazon Redshift** database, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
 
 ![](media/desktop-connect-redshift/connect_redshift_3.png)
 
-In the **Amazon Redshift** window that appears, type or paste the name of your **Amazon Redshift** server and database into the box. As part of the *Server* field, users can specify a ort in the following format: *ServerURL:Port*
+In the **Amazon Redshift** window that appears, type or paste the name of your **Amazon Redshift** server and database into the box. As part of the *Server* field, users can specify a port in the following format: *ServerURL:Port*
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
@@ -43,7 +43,7 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 
 Once you make selections from the **Navigator** window, you can either **Load** or **Edit** the data.
 
-* If you choose to **Load** data, you'll prompted wither to use *Import* or *DirectQuery* mode to load the data. For more information, check out this [article that explains DirectQuery](desktop-use-directquery.md).
+* If you choose to **Load** data, you'll be prompted to use either *Import* or *DirectQuery* mode to load the data. For more information, check out this [article that explains DirectQuery](desktop-use-directquery.md).
 * If you select to **Edit** the data, **Query Editor** appears where you can apply all sorts of transformations and filters to the data, many of which are applied to the underlying **Amazon Redshift** database itself (if supported).
 
 ## Next steps

@@ -28,10 +28,12 @@ The following list describes all available videos about Power BI Desktop. Select
 
 - [High-level overview of Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA), from getting data and building a report to uploading this report to Power BI so it can be refreshed and shared with other users.  
   
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/Qgam9M8I0xA" frameborder="0" allowfullscreen></iframe>  
+  <iframe width="500" height="281" src="https://www.youtube.com/embed/Qgam9M8I0xA" frameborder="0" allowfullscreen></iframe> 
+  
 - Learn [how to build stunning reports](https://www.youtube.com/watch?v=ByIUx-HmQbw) using Power BI Desktop.
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/IMAsitQ2cAc" frameborder="0" allowfullscreen></iframe>  
+  
 - Understand how to [import, reshape and transform data using Query Editor](https://www.youtube.com/watch?v=ByIUx-HmQbw) in the Power BI Desktop.
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/ByIUx-HmQbw" frameborder="0" allowfullscreen></iframe>

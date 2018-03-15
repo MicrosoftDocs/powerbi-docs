@@ -22,7 +22,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
-You can establish a live connection to a shared dataset in the Power BI service, and create many different reports from the same dataset. This means you can create your perfect data model in Power BI Desktop, publish it to the Power BI service, then you and others can create multiple different reports (in separate .pbix files) from that same, common data model. This features is called **Power BI service Live connection**.
+You can establish a live connection to a shared dataset in the Power BI service, and create many different reports from the same dataset. This means you can create your perfect data model in Power BI Desktop, publish it to the Power BI service, then you and others can create multiple different reports (in separate .pbix files) from that same, common data model. This feature is called **Power BI service Live connection**.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_01.png)
 
@@ -56,7 +56,7 @@ In the following image, you see how Anna creates one **Power BI Desktop** report
 Now that we know how useful the **Power BI service live connection** is, and how you can use it as a best practice approach to report lifecycle management, let's walk through the steps that get us from Anna's great report (and dataset) to a shared dataset that teammates in her Power BI workspace can use.
 
 ### Publish a Power BI report and dataset
-The first step in managing the report lifecycle using a **Power BI service live connection** is to have a report (and dataset) that teammates want to use. So Anna must first **publish** her report from **Power BI Destkop**. She does this by selecting **Publish** from the **Home** ribbon in Power BI Desktop.
+The first step in managing the report lifecycle using a **Power BI service live connection** is to have a report (and dataset) that teammates want to use. So Anna must first **publish** her report from **Power BI Desktop**. She does this by selecting **Publish** from the **Home** ribbon in Power BI Desktop.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
