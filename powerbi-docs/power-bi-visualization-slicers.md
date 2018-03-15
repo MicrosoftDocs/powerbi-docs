@@ -23,7 +23,7 @@ ms.author: v-thepet
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI (Tutorial)
-You want your report readers to be able to look at sales metrics for the entire division, but also highlight performance for each individual District Manager for different time frames. You could create separate reports for each manager or filter values with dropdowns, or she could use slicers. Slicers are an alternate way of filtering that narrow the portion of the dataset shown in the other visualizations in a report. 
+You want your report readers to be able to look at overall sales metrics, but also highlight performance for individual District Managers and different time frames. You could create separate reports or comparative charts, or you could use slicers. Slicers are an alternate way of filtering that narrow the portion of the dataset shown in the other visualizations in a report. 
 
 This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating, formatting, and using a list slicer and a date slider slicer. Have fun discovering ways to format and use slicers. 
 
@@ -105,7 +105,7 @@ In the current report, the District Monthly Sales page has a District Manager sl
 >[!NOTE]
 >If you sync a slicer to a page but do not make it visible, selections made in other copies of the slicer still affect the data on the page. Conversely, if the slicer is made visible on a page but not synced, selections made in that copy of the slicer do not affect the slicer selections or data on the other pages.
  
-## Formatting slicers
+## Format slicers
 Different formatting options are available depending on the slicer type. By using Horizontal orientation, Responsive layout, and colored backgrounds with list type slicers, you can produce slicers with buttons or tiles rather than standard list items.
 1. With the District Manager slicer selected, in the Visualizations pane, select the Format icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
     
