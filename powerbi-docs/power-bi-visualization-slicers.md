@@ -23,9 +23,9 @@ ms.author: v-thepet
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI (Tutorial)
-You want your report readers to be able to look at overall sales metrics, but also highlight performance for individual District Managers and different time frames. You could create separate reports or comparative charts, or you could use slicers. Slicers are an alternate way of filtering that narrow the portion of the dataset shown in the other visualizations in a report. 
+You want your report readers to be able to look at overall sales metrics, but also highlight performance for individual District Managers and different time frames. You could create separate reports or comparative charts, or you could use slicers. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
 
-This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating, formatting, and using a list slicer and a date slider slicer. Have fun discovering ways to format and use slicers. 
+This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating, formatting, and using list and date range slicers. Have fun discovering ways to format and use slicers. 
 
 ![slicer](media/power-bi-visualization-slicers/slicer2.gif)
 
@@ -46,27 +46,29 @@ Power BI slicers have the following limitations:
 
 ## Create slicers
 
-To create new slicers, you can select the slicer icon and then select the data field to filter on, or you can select the data field first to create a visualization and then select the slicer icon to turn the visualization into a slicer. You can also drag the data field to the **Drag data fields here** box in the Visualizations pane. Different types of data fields create different types of slicers that have different options. 
+To create a new slicer, you can select the slicer icon and then select the data field to filter on (or drag it to the Fields box in the Visualizations pane), or you can select the data field first to create a visualization, and then select the slicer icon to turn the visualization into a slicer. Different data types create different types of slicers with different effects and options. 
 
-First, create a new slicer to filter data by District Manager. 
+**To create a new slicer to filter data by District Manager:**
+
 1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md). In Power BI service, click Edit Report at upper left. .
 2. On the Overview page, with nothing selected on canvas, select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the Visualizations pane to create a new slicer. 
 3. With the new slicer selected, select **District Manager** under District in the Fields pane to populate the slicer. The new slicer is a list with selection boxes before the names. 
 4. Resize and drag the slicer and the **This year sales by chain** chart on the canvas so they don't overlap.
 5. Select District Manager names on the slicer and note the effects on the other visualizations on the page. Hold down the CTRL key to select more than one name, and click a name again to deselect it. Selecting all names is the same as selecting none. 
 >[!TIP]
->List slicer items are sorted in ascending alphanumerical order by default. You can reverse the sort order to descending by selecting the ellipses (...) in the top right corner of the slicer and choosing **Sort by <field name>** in the dropdown. 
+>List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager** in the dropdown. 
 
-Now, create a second slicer based on Time. 
+**To create a new slicer to filter data by Date range:**
+
 1. With nothing selected on the canvas, drag the **Date** field under Time in the Fields pane to the **Field** box in the Visualizations pane to create a new visualization.
 2. With the new visualization selected, select the **Slicer** icon to convert the new visualization to a slicer. This slicer is a slider control with the date range populated.
 3. Resize and drag the slicer and the **This year sales by chain** chart on the canvas so they don't overlap.
-4. Slide the slicer to different ranges, or click a date field to pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
+4. Select different date ranges with the slider, or click a date field to type in a value or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
     >[!NOTE]
-    > Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
+    >Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 >[!TIP]
->Although the Date data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer type and selection options change. 
+>Although the Date data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
 
 For more about creating date and range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
