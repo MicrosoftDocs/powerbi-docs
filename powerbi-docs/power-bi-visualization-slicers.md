@@ -84,7 +84,7 @@ For more about creating date and numeric range slicers, watch the following vide
 ## Control which page visuals are affected by slicers
 By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders you just created, note the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
-You can use Visual interactions to exclude some page visualizations from being affected by others. On the Overview page, the Total Sales Variance by FiscalMonth and District Manager chart shows overall comparative data for District Managers by Month, which you want visible at all times. You can use Visual interactions to keep slicer selections from filtering this chart. 
+You can use Visual interactions to exclude some page visualizations from being affected by others. On the Overview page, the "Total Sales Variance by FiscalMonth and District Manager" chart shows overall comparative data for District Managers by Month, which you want to keep visible at all times. You can use Visual interactions to keep slicer selections from filtering this chart. 
 
 1. With the District Manager slicer selected:
     - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
@@ -132,7 +132,7 @@ Different formatting options are available depending on the slicer type. By usin
     
     ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
     
-3. Turn on **Responsive** layout to change the size and arrangement of the slicer items according to slicer size and shape. For list slicers, responsive layout is only available in horizontal orientation, and prevents items from being cut off. For range slider slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Rather than cut off data, both types of slicers become filter icons at a very small size. 
+3. Turn on **Responsive** layout to change the size and arrangement of the slicer items according to slicer size and shape. For list slicers, responsive layout is only available in horizontal orientation, and prevents items from being cut off. For range slider slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Both types of slicers become filter icons at a very small size. 
     
     ![responsive](media/power-bi-visualization-slicers/5-responsive.png)
     
@@ -168,9 +168,9 @@ The header is On by default, showing the data field name at the top of the slice
     >- With Vertical Orientation, items always show the set colors, and selection boxes are always black when selected. 
 
 ### Date/numeric inputs and Slider options (range slider slicers only)
-- Date/numeric inputs have similar options to Item options for list slicers, except no Outline or underline.
+- Date/numeric inputs have the same inputs as Item options for list slicers, except no Outline or underline.
 - Slider options allow you to set the color of the range slider, or turn it off, leaving only the numeric inputs.
-- 
+
 ### Other formatting options
 The other formatting options are off by default. When turned **On**: 
 - **Title:** Adds and formats a title (in addition to and independent of the header) at the top of the slicer. 
