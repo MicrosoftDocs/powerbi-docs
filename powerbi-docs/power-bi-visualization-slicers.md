@@ -62,9 +62,9 @@ To create a new slicer, you can select the slicer icon and then select the data 
 >[!TIP]
 >List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager** in the dropdown. 
 
-**To create a new slicer to filter data by Date range:**
+**To create a new slicer to filter data by date range:**
 
-1. With nothing selected on the canvas, drag the **Date** field, under Time in the Fields pane, to the **Values** box in the Visualizations pane to create a new visualization.
+1. With nothing selected on the canvas, drop down Time in the Fields pane, and drag **Date** in Power BI service, or **Month** in Power BI Desktop, to the **Values** box in the Visualizations pane to create a new visualization.
 2. With the new visualization selected, select the **Slicer** icon to convert the new visualization to a slicer. This slicer is a slider control with the date range populated.
     
     ![new range slicer](media/power-bi-visualization-slicers/2a-date-slicer.png)
@@ -76,7 +76,7 @@ To create a new slicer, you can select the slicer icon and then select the data 
     >Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 >[!TIP]
->Although the Date data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
+>Although the Date/Month data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
 
 For more about creating date and numeric range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
@@ -93,7 +93,7 @@ You can use Visual interactions to exclude some page visualizations from being a
    Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the Filter icons are selected.
    
 2. Select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make the slicer stop filtering it. 
-3. Select the **Date** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart is unchanged. 
+3. Select the **Date/Month** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart is unchanged. 
 
 See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information about editing interactions.
 
@@ -132,7 +132,7 @@ Different formatting options are available depending on the slicer type. By usin
     
     ![horizontal](media/power-bi-visualization-slicers/4-horizontal.png)
     
-3. Turn on **Responsive** layout to change the size and arrangement of the slicer items according to slicer size and shape. For list slicers, responsive layout is only available in horizontal orientation, and prevents items from being cut off. For range slider slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Both types of slicers become filter icons at a very small size. 
+3. Turn on **Responsive** layout to change the size and arrangement of slicer items according to viewscreen and slicer size. For list slicers, responsive layout is only available in horizontal orientation, and prevents items from being cut off on small screens. For range slider slicers, responsive formatting changes the style of the slider and provides more flexible resizing. Both types of slicers become filter icons at very small sizes. 
     
     ![responsive](media/power-bi-visualization-slicers/5-responsive.png)
     
@@ -168,7 +168,7 @@ The header is On by default, showing the data field name at the top of the slice
     >- With Vertical Orientation, items always show the set colors, and selection boxes are always black when selected. 
 
 ### Date/numeric inputs and Slider options (range slider slicers only)
-- Date/numeric inputs have the same inputs as Item options for list slicers, except no Outline or underline.
+- Date/numeric input options are the same as the Item options for list slicers, except there is no Outline or underline.
 - Slider options allow you to set the color of the range slider, or turn it off, leaving only the numeric inputs.
 
 ### Other formatting options
