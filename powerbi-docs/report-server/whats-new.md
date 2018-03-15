@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 03/14/2018
 ms.author: maggies
 
 ---
@@ -42,11 +42,25 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 - [Performance](#performance)
 - [Others](#other-improvements)
 
+### Highlights of this release
+
+Out of the whole long list of new features, these stand out as especially interesting.
+
+- [Rule-based conditional formatting for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting): Create rules to conditionally color the background or font color of a column based on specific business logic in your table or matrix.
+- [Show and hide pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages): You want readers to have access to your report, but some of the pages aren't quite finished. Now you can hide them until they're ready. Or you can hide pages from normal navigation, and readers can get to the page by bookmarks or drillthrough.
+- [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking): Speaking of bookmarking, create bookmarks to tell a story with the data in your report.
+    - [Cross-highlighting for bookmarks](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bookmarks maintain and display the cross-highlighted state of the report page at the time you created the bookmark.
+    - [More bookmark flexibility](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bookmarks reflect the properties you set in your report, and affect only the visuals you choose.
+- [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight): Select multiple data points in multiple charts and have the cross-filtering apply to the entire report.
+- [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers): A slicer can apply to one, two, or more pages in a report.
+- [Quick measures](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures): Create new measures based on existing measures and numerical columns in a table.
+- [Drilling down filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals): When you drill down in a given category in one visual, you can have it filter all the visuals on the page by that same category.
+
+
 ### Visuals updates
 
 - [Cell alignment for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment)
 - [Display units and precision control for table & matrix columns](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits)
-- [Rule-based conditional formatting for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 - [Overflow data labels for bar and column charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow)
 - [Control data label background color for Cartesian and maps visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
 - [Bar/column padding control](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding)
@@ -58,13 +72,7 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 
 ### Reporting
 
-- [Show and hide pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
-- [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
-    - [Cross-highlighting for bookmarks](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting)
-    - [More bookmark flexibility](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility)
 - [Turn off the visual header in reading mode for a report](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader)
-- [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
-- [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 - [Report options for slow data sources](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource)
 - [Improved default visual placement](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement)
 - [Control visual ordering through the selection pane](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane)
@@ -74,28 +82,10 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 
 ### Analytics
 
-- [Quick measures](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures)
 - [UTCNOW() and UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Mark custom date table](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 - [Drill filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 - [Cell-level formatting for multidimensional AS models for multi-row card](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
- 
-### Data connectivity and query editing
-
-- [Data.World connector](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#Data.World)
-- [HDInsight Interactive Query connector](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#HDInsightInteractiveQuery)
-- [IBM Netezza connector GA](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#IBMNetezza)
-- [Azure Analysis Services connector GA](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#AzureAS)
-- SAP BW connector improvements:
-    - [Support for connecting to an SAP BW Message Server](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#messageServer)
-    - [Support for Windows Authentication](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#WindowsAuth)
-    - [SAP BW DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sapBW)
-- SAP HANA connector enhancements
-    - [DirectQuery multidimensional support](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sapHanaDirectQuery)
-    - [SSL certificate validation support](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sslCertValidation)
-- [Support for Azure Active Directory authentication for Azure SQL Database & Data Warehouse connectors](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth)
-- [Impala connector – support for Windows Authentication](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#impala)
-- [Add Column From Examples improvements](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
  
 ### Performance
 
@@ -106,6 +96,7 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
  
 ### Other improvements
 
+- [Add Column From Examples improvements](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
 - [Consulting Services quick link](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#consultingServices)
 - [Improved error reporting](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
 - [View previous errors you’ve encountered](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
