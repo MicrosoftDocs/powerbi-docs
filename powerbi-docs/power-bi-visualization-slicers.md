@@ -55,6 +55,7 @@ To create a new slicer, you can select the slicer icon and then select the data 
 3. With the new slicer selected, select **District Manager** under District in the Fields pane to populate the slicer. The new slicer is a list with selection boxes before the names. 
 4. Resize and drag the slicer and the **This year sales by chain** chart on the canvas so they don't overlap.
 5. Select District Manager names on the slicer and note the effects on the other visualizations on the page. Hold down the CTRL key to select more than one name, and click a name again to deselect it. Selecting all names is the same as selecting none. 
+
 >[!TIP]
 >List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager** in the dropdown. 
 
@@ -64,48 +65,51 @@ To create a new slicer, you can select the slicer icon and then select the data 
 2. With the new visualization selected, select the **Slicer** icon to convert the new visualization to a slicer. This slicer is a slider control with the date range populated.
 3. Resize and drag the slicer and the **This year sales by chain** chart on the canvas so they don't overlap.
 4. Select different date ranges with the slider, or click a date field to type in a value or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
+    
     >[!NOTE]
     >Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 >[!TIP]
 >Although the Date data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
 
-For more about creating date and range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md).
+For more about creating date and numeric range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## Control which page visuals are affected by the slicers
-By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders you just created, note the effects on the other visualizations. The filtered data is an intersection of the values selected in both sliders. 
+By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders you just created, note the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
-On the Overview page, the Total Sales Variance by FiscalMonth and District Manager chart shows overall comparative data for District Managers by Month. It doesn't make sense for the slicers to filter this chart, so you can exclude it from being affected by the sliders by using **Visual interactions**. 
+On the Overview page, the Total Sales Variance by FiscalMonth and District Manager chart shows overall comparative data for District Managers by Month. It doesn't make sense for the slicers to filter this chart, so you can exclude it from being affected by using Visual interactions. 
 
 1. With the District Manager slicer selected:
     - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
     - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
-    
-    Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the Filter icons are selected.
-    
+   
+   Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the Filter icons are selected.
+   
 2. Select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make the slicer stop filtering it. 
-3. Select the **Date** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart remains unchanged. 
+3. Select the **Date** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart is unchanged. 
 
 See [Visual interactions in a Power BI report](service-reports-visual-interactions.md) for more information about editing interactions.
 
 ## Sync and use slicers on other pages
 Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
 
-In the current report, the District Monthly Sales page has a District Manager slicer that can have different items selected than the one on the Overview page. The New Stores page has only a store Name slicer, and the Sales Report page is an individual sales report for one District Manager. You can sync your new District Manager slicer to these pages so that selections made on any page affect visualizations on all the pages. 
+In the current report, the District Monthly Sales page already has a District Manager slicer that can have different item selections than the one on the Overview page. The New Stores page has only a Store Name slicer. You can sync your new District Manager slicer to these pages so that slicer selections on any page affect visualizations on all the pages. 
+
 1. On the View menu, select **Sync slicers** in Power BI Desktop, or turn on **Sync slicers pane** in Power BI service. The Sync Slicers pane appears. 
     
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
 2. On the Overview page, select the District Manager slicer. Note that the Overview and District Monthly Sales page are currently selected in the second column, under the Eye symbol, since the District Manager slicer appears on both pages. 
-2. In the first column, click **Add to all** (Power BI Desktop) or **Add and sync with all pages** (Power BI service) to make this slicer sync to all report pages. 
-3. In the next column, select any pages that are not selected already, to make the slicer visible on all pages. 
-4. Observe the effects of syncing the slicer and making it visible on the other pages. On the District Monthly Sales page, the District Manager slicer now shows the same selections as the one on the Overview page. On the New Stores page, the selections in the District Manager slicer affect the selections available in the store Name slicer. On the Sales Report page, the slicer is visible, but the page shows no data unless Valery Ushakov is selected. 
-    >[!NOTE]
-    >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move and resize the slicers on the various pages independently. 
-5. Select the District Manager slicer on the **Overview** page, and on the Sync Slicers pane, deselect the Sales Report page from showing or syncing this slicer. 
+2. In the first column, select the New Stores page and the District Monthly Sales page to sync this slicer to these report pages. 
+3. In the next column, select the New Stores page and leave the District Monthly Sales page selected, to make the slicer visible on these pages. 
+4. Observe the effects of syncing the slicer and making it visible on the other pages. On the District Monthly Sales page, the District Manager slicer now shows the same selections as the one on the Overview page. On the New Stores page, the selections in the District Manager slicer affect the selections available in the store Name slicer. 
+    
+    >[!TIP]
+    >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move, resize, and format the slicers on the various pages independently. 
+
 >[!NOTE]
->If you sync a slicer to a page but do not make it visible, selections made in other copies of the slicer still affect the data on the page. Conversely, if the slicer is made visible on a page but not synced, selections made in that copy of the slicer do not affect the slicer selections or data on the other pages.
+>If you sync a slicer to a page but do not make it visible, slicer selections made on the other pages still affect the data on the page.
  
 ## Format slicers
 Different formatting options are available depending on the slicer type. By using Horizontal orientation, Responsive layout, and colored backgrounds with list type slicers, you can produce slicers with buttons or tiles rather than standard list items.
