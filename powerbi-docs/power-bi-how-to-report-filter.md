@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/15/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -26,11 +26,13 @@ This article takes a deep look at the report Filters pane. You'll see the pane i
 
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](power-bi-reports-filters-and-highlighting.md).
 
-## Working with filters
-Reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing View, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot save filter changes to the report.
+## Working with the report Filters pane
+In Power BI Desktop, reports are opened in Report view. In Power BI service, reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing view, and in Desktop Report view, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot add new filters to the report.
 
-## Filters in Reading View
-When a report is open in Reading view, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it.
+In Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the creator defaults, select **Reset to default** from the top menubar.     
+
+## Open the Filters pane
+When a report is open, the Filters pane displays along the right side of the report canvas. If you don't see the pane, select the arrow in the top-right corner to expand it. If you are in Power BI service Reading view, the only pane available on the right side is the Filters pane.
 
 In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. There is one [Drillthrough filter](power-bi-report-add-filter.md), and the entire report has a filter too:  **FiscalYear** is 2013 or 2014.
 
@@ -40,20 +42,24 @@ Some of the filters have the word **All** next to them and this means that all v
 
 Anyone viewing this report can interact with these filters.
 
-* view the details of the filter by hovering and selecting the arrow next to the filter.
+* View the details of the filter by hovering and selecting the arrow next to the filter.
   
    ![](media/power-bi-how-to-report-filter/power-bi-expan-filter.png)
-* change the filter, for example, change **Lindseys** to **Fashions Direct**.
+* Change the filter, for example, change **Lindseys** to **Fashions Direct**.
   
      ![](media/power-bi-how-to-report-filter/power-bi-filter-chain.png)
-* delete the filter by selecting the **x** next to the filter name.
+
+* Reset the filters to their original state by selecting **Reset to default** from the top menubar.    
+    ![](media/power-bi-how-to-report-filter/power-bi-reset-to-default.png)
+    
+* Delete the filter by selecting the **x** next to the filter name.
   
-  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
+  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will no longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
   
   ![](media/power-bi-how-to-report-filter/power-bi-delete-filter.png)
 
 ## Filters in Editing View
-When a report is open in Editing View, the Filters pane displays along the right side of the report canvas in the bottom half of the **Visualization pane**. If you don't see the pane, select the arrow in the top-right corner to expand it.
+When a report is open in Desktop or in Power BI service Editing view, the Filters pane displays along the right side of the report canvas in the bottom half of the **Visualization pane**. If you don't see the pane, select the arrow in the top-right corner to expand it.
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
@@ -70,16 +76,16 @@ To display options for a particular filter, select the down arrow next to the fi
 ![](media/power-bi-how-to-report-filter/pbi_filterlistdropdown.jpg)
 
 ## Clear a filter
- In either advanced or basic filtering mode, select the eraser icon  ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) to reset the filter. 
+ In either advanced or basic filtering mode, select the eraser icon  ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) to clear the filter. 
 
 ## Add a filter
-* In Editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
+* In Desktop and in Power BI service Editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
 
 - **Dragging a new field into the Visual level filter area does not add that field to the visual**, but it does allow you to filter the visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 
-* All the fields that are used to create a visualization are also available as filters. First, select a visual to make it active. The fields that are being used in the visual are listed in the Visualizations pane (if you are in Editing view) and in the Filters pane under the **Visual level filters** heading.
+* All the fields that are used to create a visualization are also available as filters. First, select a visual to make it active. The fields that are being used in the visual are listed in the Visualizations pane and in the Filters pane under the **Visual level filters** heading.
   
    ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.png)  
   

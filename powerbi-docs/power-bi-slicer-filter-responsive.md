@@ -75,7 +75,7 @@ Read more about creating [reports optimized for the Power BI mobile apps](deskto
 
 ## Make a time or range slicer responsive
 
-You can follow the same steps to make a tile or range slicer responsive. After you set **Responsive** to **On**, you notice a few things:
+You can follow the same steps to make a time or range slicer responsive. After you set **Responsive** to **On**, you notice a few things:
 
 - Visuals optimize the order of input boxes depending on the size allowed on the canvas. 
 - Data-element display is optimized to make the slicer as usable as possible, based on the size it’s allowed on the canvas. 

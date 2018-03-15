@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/30/2017
-ms.author: mihart
+ms.author: maghan
 
 ---
 # Create an Azure Active Directory tenant to use with Power BI
