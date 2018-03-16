@@ -27,7 +27,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## March 2018
 - **Power BI Report Server**
-    - *Version ?1.2.6645.42113 (Build 15.0.2.373)?, Released: March ?31?, 2018*
+    - *Version 1.2.6648.38132 (Build 15.0.2.378), Released: March 19, 2018*
         - Security Updates
         - Accessibility Improvements
         - Bug fixes
@@ -40,7 +40,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Other stability and usability fixes
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - Version: ?2.56.5023.1001? (March 2018), Released: March ?31?, 2018
+    - Version: 2.56.5023.1043 (March 2018), Released: March 19, 2018
         - Contains changes required for connection with Power BI Report Server (March 2018)
 
 ## October 2017
