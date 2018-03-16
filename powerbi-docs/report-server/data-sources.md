@@ -31,6 +31,7 @@ These data sources are specific to Power BI reports used within Power BI Report 
 > 
 
 ## List of supported data sources
+
 Other data sources may work even though they aren't on the supported list.
 
 | **Data source** | **Cached data** | **Scheduled refresh** | **Live/DirectQuery** |
@@ -116,6 +117,78 @@ Other data sources may work even though they aren't on the supported list.
 > Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle and Teradata) and live connections assuming Kerberos is configured properly in your environment.
 > 
 > 
+
+## Supported authentication types for model refresh
+
+Report server does not support OAuth based authentication when performing schedule refresh.
+
+| **Data source** | **Anonymous** | **Username and password** | **Key** |
+| --- | --- | --- | --- |
+| SQL Server Database |No |Yes |Yes |
+| SQL Server Analysis Services |No |Yes |Yes |
+| Active Directory |No |Yes |Yes |
+| Azure Blob Storage |Yes |No |No |
+| Azure Table Storage |No |No |No |
+| IBM DB2 Database |No |Yes |Yes |
+| Microsoft Exchange |No |Yes |Yes |
+| Facebook |No |No |No |
+| File |No |Yes |Yes |
+| Folder |No |Yes |Yes |
+| Google Analytics |No |No |No |
+| Azure HDInsight (HDFS) |Yes |Yes |Yes |
+| Azure HDInsight Spark (Beta) |Yes |No |No |
+| IBM Informix database (Beta) |No |Yes |Yes |
+| MySQL Database |No |Yes |Yes |
+| OData Feed |Yes |Yes |Yes |
+| ODBC |Yes |Yes |Yes |
+| OleDb |Yes |Yes |Yes |
+| Oracle Database |No |Yes |Yes |
+| PostgreSQL Database |No |Yes |No |
+| Salesforce Objects |No |No |No |
+| Salesforce Reports |No |No |No |
+| SAP Business Warehouse server |No |Yes |Yes |
+| SAP HANA Database |No |Yes |Yes |
+| SharePoint Folder (on-premises) |Yes |Yes |Yes |
+| SharePoint List (on-premises) |Yes |Yes |Yes |
+| Sybase Database |No |Yes |Yes |
+| Teradata Database |No |Yes |Yes |
+| Web |Yes |Yes |Yes |
+
+## Supported authentication types for direct query
+
+Report server does not support OAuth based authentication for direct query.
+
+| **Data source** | **Anonymous** | **Username and password** | **Integrated** | **Key** |
+| --- | --- | --- | --- | --- |
+| SQL Server Database |No |Yes |Yes |Yes |
+| SQL Server Analysis Services |No |Yes |Yes |Yes |
+| Active Directory |No |Yes |Yes |Yes |
+| Azure Blob Storage |Yes |No |No |No |
+| Azure Table Storage |No |No |No |No |
+| IBM DB2 Database |No |Yes |Yes |Yes |
+| Microsoft Exchange |No |Yes |Yes |Yes |
+| Facebook |No |No |No |No |
+| File |No |Yes |Yes |Yes |
+| Folder |No |Yes |Yes |Yes |
+| Google Analytics |No |No |No |No |
+| Azure HDInsight (HDFS) |Yes |Yes |Yes |Yes |
+| Azure HDInsight Spark (Beta) |Yes |No |No |No |
+| IBM Informix database (Beta) |No |Yes |Yes |Yes |
+| MySQL Database |No |Yes |Yes |Yes |
+| OData Feed |Yes |Yes |Yes |Yes |
+| ODBC |Yes |Yes |Yes |Yes |
+| OleDb |Yes |Yes |Yes |Yes |
+| Oracle Database |No |Yes |Yes |Yes |
+| PostgreSQL Database |No |Yes |No |No |
+| Salesforce Objects |No |No |No |No |
+| Salesforce Reports |No |No |No |No |
+| SAP Business Warehouse server |No |Yes |Yes |Yes |
+| SAP HANA Database |No |Yes |Yes |Yes |
+| SharePoint Folder (on-premises) |Yes |Yes |Yes |Yes |
+| SharePoint List (on-premises) |Yes |Yes |Yes |Yes |
+| Sybase Database |No |Yes |Yes |Yes |
+| Teradata Database |No |Yes |Yes |Yes |
+| Web |Yes |Yes |Yes |Yes |
 
 ## Next steps
 Now that your data source is picked out, [create a report](quickstart-create-powerbi-report.md) using data from that data source.
