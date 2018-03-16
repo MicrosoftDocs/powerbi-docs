@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/14/2018
+ms.date: 03/15/2018
 ms.author: maggies
 
 ---
@@ -38,7 +38,6 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 - [Visuals](#visuals-updates)
 - [Reporting](#reporting)
 - [Analytics](#analytics)
-- [Data connectivity and query editing](#data-connectivity-and-query-editing)
 - [Performance](#performance)
 - [Others](#other-improvements)
 
@@ -46,15 +45,35 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 
 Out of the whole long list of new features, these stand out as especially interesting.
 
-- [Rule-based conditional formatting for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting): Create rules to conditionally color the background or font color of a column based on specific business logic in your table or matrix.
-- [Show and hide pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages): You want readers to have access to your report, but some of the pages aren't quite finished. Now you can hide them until they're ready. Or you can hide pages from normal navigation, and readers can get to the page by bookmarks or drillthrough.
-- [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking): Speaking of bookmarking, create bookmarks to tell a story with the data in your report.
-    - [Cross-highlighting for bookmarks](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bookmarks maintain and display the cross-highlighted state of the report page at the time you created the bookmark.
-    - [More bookmark flexibility](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bookmarks reflect the properties you set in your report, and affect only the visuals you choose.
-- [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight): Select multiple data points in multiple charts and have the cross-filtering apply to the entire report.
-- [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers): A slicer can apply to one, two, or more pages in a report.
-- [Quick measures](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures): Create new measures based on existing measures and numerical columns in a table.
-- [Drilling down filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals): When you drill down in a given category in one visual, you can have it filter all the visuals on the page by that same category.
+#### [Rule-based conditional formatting for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+ 
+Create rules to conditionally color the background or font color of a column based on specific business logic in your table or matrix.
+
+#### [Show and hide pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+
+You want readers to have access to your report, but some of the pages aren't quite finished. Now you can hide them until they're ready. Or you can hide pages from normal navigation, and readers can get to the page by bookmarks or drillthrough.
+#### [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+
+Speaking of bookmarking, create bookmarks to tell a story with the data in your report.
+
+- [Cross-highlighting for bookmarks](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bookmarks maintain and display the cross-highlighted state of the report page at the time you created the bookmark.
+- [More bookmark flexibility](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bookmarks reflect the properties you set in your report, and affect only the visuals you choose.
+
+#### [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+
+Select multiple data points in multiple charts and have the cross-filtering apply to the entire report.
+
+#### [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+
+A slicer can apply to one, two, or more pages in a report.
+
+#### [Quick measures](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+
+Create new measures based on existing measures and numerical columns in a table.
+
+#### [Drilling down filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+
+When you drill down in a given category in one visual, you can have it filter all the visuals on the page by that same category.
 
 
 ### Visuals updates
