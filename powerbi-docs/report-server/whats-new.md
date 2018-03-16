@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/15/2018
+ms.date: 03/16/2018
 ms.author: maggies
 
 ---
@@ -61,7 +61,7 @@ Speaking of bookmarking, create bookmarks to tell a story with the data in your 
 
 #### [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
-Select multiple data points in multiple charts and have the cross-filtering apply to the entire report.
+Select multiple data points in multiple charts and have the cross-filtering apply to the entire page.
 
 #### [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
