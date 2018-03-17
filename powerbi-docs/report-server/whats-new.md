@@ -39,6 +39,7 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 - [Reporting](#reporting)
 - [Analytics](#analytics)
 - [Performance](#performance)
+- [Report server](#report-server)
 - [Others](#other-improvements)
 
 ### Highlights of this release
@@ -52,6 +53,7 @@ Create rules to conditionally color the background or font color of a column bas
 #### [Show and hide pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 You want readers to have access to your report, but some of the pages aren't quite finished. Now you can hide them until they're ready. Or you can hide pages from normal navigation, and readers can get to the page by bookmarks or drillthrough.
+
 #### [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Speaking of bookmarking, create bookmarks to tell a story with the data in your report.
@@ -74,7 +76,6 @@ Create new measures based on existing measures and numerical columns in a table.
 #### [Drilling down filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 When you drill down in a given category in one visual, you can have it filter all the visuals on the page by that same category.
-
 
 ### Visuals updates
 
@@ -113,6 +114,13 @@ When you drill down in a given category in one visual, you can have it filter al
 - [Open and save performance improvements](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf)
 - [“Show items with no data” improvements](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData)
  
+### Report server 
+
+#### Export to accessible PDF
+
+When you export a paginated (RDL) report to PDF, you can now get an accessible/tagged PDF file. It's larger in size but easier for screen readers and other assistive technologies to read and navigate. You enable accessible PDF by setting the **AccessiblePDF** device information setting to **True**. See [PDF Device Information Settings](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) and [Changing Device Information Settings](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+
+
 ### Other improvements
 
 - [Add Column From Examples improvements](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
