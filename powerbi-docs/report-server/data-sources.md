@@ -118,7 +118,7 @@ Other data sources may work even though they aren't on the supported list.
 > 
 > 
 
-## List of data sources supporting model refresh
+## List of supported authentication methods for model refresh
 
 Report server does not support OAuth based authentication for model refresh.
 
@@ -154,7 +154,7 @@ Report server does not support OAuth based authentication for model refresh.
 | Teradata Database |No |Yes |Yes |
 | Web |Yes |Yes |Yes |
 
-## List of data sources supporting direct query
+## List of supported authentication methods for direct query
 
 Report server does not support OAuth based authentication for direct query.
 
