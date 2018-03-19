@@ -3,7 +3,7 @@ title: 'Quickstart: Install Power BI Report Server'
 description: Installing Power BI Reports Server itself is very quick. From downloading, to installing and configuring, you should be up and running within a few minutes.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/29/2018
-ms.author: maghan
+ms.date: 03/19/2018
+ms.author: maggies
 
 ---
 # Quickstart: Install Power BI Report Server
@@ -25,11 +25,7 @@ Installing Power BI Report Server itself is very quick. From downloading, to ins
 
 This is a quick look at how to install a report server if you just want to get up and running with a new server. For more detailed information on installing a report server, see [Install Power BI Report Server](install-report-server.md).
 
- **Download** ![download](media/quickstart-install-report-server/download.png "download")
-
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/). 
-
-Go to the Microsoft Download Center to download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017).
+## Video: Install Power BI Report Server
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -37,7 +33,10 @@ Go to the Microsoft Download Center to download [Microsoft Power BI Desktop](htt
 Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
 
 ## Step 1: Download
-Download the installation files, for Power BI Report Server, locally. To download Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
+
+To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Advanced download options**.
+
+Follow the instructions to download the installation files, for Power BI Report Server locally. 
 
 ![Download Power BI Report Server](media/quickstart-install-report-server/download-pbireportserver.png)
 
