@@ -118,9 +118,9 @@ Other data sources may work even though they aren't on the supported list.
 > 
 > 
 
-## Supported authentication types for model refresh
+## List of data sources supporting model refresh
 
-Report server does not support OAuth based authentication when performing schedule refresh.
+Report server does not support OAuth based authentication for model refresh.
 
 | **Data source** | **Anonymous** | **Username and password** | **Key** |
 | --- | --- | --- | --- |
@@ -154,7 +154,7 @@ Report server does not support OAuth based authentication when performing schedu
 | Teradata Database |No |Yes |Yes |
 | Web |Yes |Yes |Yes |
 
-## Supported authentication types for direct query
+## List of data sources supporting direct query
 
 Report server does not support OAuth based authentication for direct query.
 
