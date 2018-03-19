@@ -26,6 +26,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/report-server/release-notes.md", 
+            "redirect_url": "/power-bi/report-server/whats-new",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md", 
             "redirect_url": "/power-bi/mobile-windows-10-phone-app-get-started",
             "redirect_document_id": true
