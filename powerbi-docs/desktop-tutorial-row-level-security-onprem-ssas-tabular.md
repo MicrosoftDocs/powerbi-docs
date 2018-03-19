@@ -81,7 +81,7 @@ There are many published articles describing how to define row level dynamic sec
        =FALSE()
 
     This formula specifies that all columns resolve to the false Boolean condition; therefore, no columns for the **DimUserSecurity** table can be queried.
-1. Now we need to process and deploy the model. You can refer the [Deploy article](https://msdn.microsoft.com/library/hh231693.aspx) for assistance in deploying the model.
+1. Now we need to process and deploy the model. You can refer to the [Deploy article](https://msdn.microsoft.com/library/hh231693.aspx) for assistance in deploying the model.
 
 ## Task 3: Adding Data Sources within your On-premises data gateway
 1. Once your tabular model is deployed and ready for consumption, you need to add a data source connection to your on-premises Analysis Services tabular server within your Power BI portal.
@@ -89,7 +89,7 @@ There are many published articles describing how to define row level dynamic sec
 3. Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding a data source within the Power BI portal](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
-4. With the previous step complete, the gateway is configured and ready interact with your on-premises **Analysis Services** data source.
+4. With the previous step complete, the gateway is configured and ready to interact with your on-premises **Analysis Services** data source.
 
 ## Task 4: Creating report based on analysis services tabular model using Power BI desktop
 1. Launch **Power BI Desktop** and select **Get Data > Database**.
