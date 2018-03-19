@@ -141,7 +141,7 @@ Report server does not support OAuth based authentication for model refresh.
 | MySQL Database |No |Yes |Yes |
 | OData Feed |Yes |Yes |Yes |
 | ODBC |Yes |Yes |Yes |
-| OleDb |Yes |Yes |Yes |
+| Ole DB |Yes |Yes |Yes |
 | Oracle Database |No |Yes |Yes |
 | PostgreSQL Database |No |Yes |No |
 | Salesforce Objects |No |No |No |
@@ -177,7 +177,7 @@ Report server does not support OAuth based authentication for direct query.
 | MySQL Database |No |Yes |Yes |Yes |
 | OData Feed |Yes |Yes |Yes |Yes |
 | ODBC |Yes |Yes |Yes |Yes |
-| OleDb |Yes |Yes |Yes |Yes |
+| Ole DB |Yes |Yes |Yes |Yes |
 | Oracle Database |No |Yes |Yes |Yes |
 | PostgreSQL Database |No |Yes |No |No |
 | Salesforce Objects |No |No |No |No |
