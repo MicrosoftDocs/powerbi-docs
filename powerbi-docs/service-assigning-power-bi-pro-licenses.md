@@ -23,7 +23,7 @@ LocalizationGroup: Get started
 ---
 # Assigning Power BI Pro licenses
 
-Power BI license management is backed by Azure Active Directory (Azure AD). Accordingly, administrators can choose from a variety of management portals and PowerShell cmdlets to assign Power BI Pro licenses to users.
+Administrators can choose from a variety of management portals and PowerShell cmdlets to assign Power BI Pro licenses to users. Power BI license management is backed by Azure Active Directory (Azure AD).
 
 * Azure subscription owners can use the Azure Active Directory blade in the [Azure Portal](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0). 
 

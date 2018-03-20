@@ -23,7 +23,7 @@ LocalizationGroup: Get started
 ---
 # Purchasing Power BI Pro
 
-Power BI Pro is used for publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities. For more information about how Power BI Pro can benefit your organization, see [Power BI Pro in your organization](service-power-bi-pro-in-your-organization.md).
+With Power BI Pro you can publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. For more information about how Power BI Pro can benefit your organization, see [Power BI Pro in your organization](service-power-bi-pro-in-your-organization.md).
 
 ## Purchasing Power BI Pro through Office 365 Admin Center
 
