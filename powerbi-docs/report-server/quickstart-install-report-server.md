@@ -30,13 +30,13 @@ This is a quick look at how to install a report server if you just want to get u
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Before you begin
-Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
+Before you install Power BI Report Server, we recommend you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
 
 ## Step 1: Download
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Advanced download options**.
+To download Power BI Report Server and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**.
 
-Follow the instructions to download the installation files, for Power BI Report Server locally. 
+Follow the instructions to download the installation files locally for Power BI Report Server. 
 
 ![Download Power BI Report Server](media/quickstart-install-report-server/download-pbireportserver.png)
 

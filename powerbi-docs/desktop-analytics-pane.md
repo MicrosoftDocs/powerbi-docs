@@ -57,7 +57,7 @@ To view the available dynamic reference lines for a visual, follow these steps:
    ![](media/desktop-analytics-pane/analytics-pane_3.png)
 3. To create a new line, select **+ Add**. You can then specify a name for the line by double-clicking the text box, then typing in your name.
    
-   You have all sorts of options for your line, such as selecting its *color*, *transparency*, *style* and *position* (relative to the visual's data elements), and whether to include the label. And importantly, you can select which **Measure** in the visual you want your line to be based upon by selecting the **Measure** drop down, which is automatically populated with data elements from the visual. In this case, we'll select *Weather* as the measure, label it *Average Weather*, and customize a few of the other options as shown below.
+   You have all sorts of options for your line, such as selecting its *color*, *transparency*, *style* and *position* (relative to the visual's data elements), and whether to include the label. And importantly, you can select which **Measure** in the visual you want your line to be based upon by selecting the **Measure** drop-down, which is automatically populated with data elements from the visual. In this case, we'll select *Weather* as the measure, label it *Average Weather*, and customize a few of the other options as shown below.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
 4. If you want to have a data label appear, move the **Data label** slider on. When you do so, you get a whole host of additional options for your data label, as shown in the following image.
