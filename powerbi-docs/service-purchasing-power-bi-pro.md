@@ -27,7 +27,7 @@ Power BI Pro is used for publishing reports, sharing dashboards, collaborating w
 
 ## Purchasing Power BI Pro through Office 365 Admin Center
 
-Office IT Admins can purchase Power BI Pro either as part of an Office 365 Enterprise E5 subscription or as a separate Power BI Pro subscription. THen you can assign Power BI Pro licenses to the appropiate users. For more information about how to assign licenses, see [Assign licenses to users in Office 365](https://support.office.com/en-us/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+Office IT Admins can purchase Power BI Pro either as part of an Office 365 Enterprise E5 subscription or as a separate Power BI Pro subscription. Then you can assign Power BI Pro licenses to the appropiate users. For more information about how to assign licenses, see [Assign licenses to users in Office 365](https://support.office.com/en-us/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
 
 Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
 
@@ -42,11 +42,11 @@ Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
 
 4. Locate the desired subscription offering:
 
-    Under Enterprise Suite, Office 365 Enterprise E5
+    Under Enterprise Suite select Office 365 Enterprise E5
 
     ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-03.png)
 
-    Under Other Plans, Power BI Pro
+    Under Other Plans select Power BI Pro
 
     ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
 
@@ -55,14 +55,13 @@ Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
     ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 
 6. Choose Pay monthly or Pay for a full year according to your billing preference.
-7. Under How many users do you want? enter the desired number of licenses, and then click on Check out now or
-8. Add to cart and complete the transaction.
-9. Verify that the acquired subscription is now listed on the Subscriptions page.
+7. Under How many users do you want? enter the desired number of licenses, and then click on Check out now or Add to cart and complete the transaction.
+8. Verify that the acquired subscription is now listed on the Subscriptions page.
 
    ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-06.png)
 
 > [!NOTE]
-> You can add more licenses after the initial purchase. On the Subscriptions page, select the Power BI Pro subscription, and then click on Add/Remove licenses.
+> You can add more licenses after the initial purchase. Select the Power BI Pro subscription from the Subscriptions page, and then click on Add/Remove licenses.
 >
 
 ## Pricing

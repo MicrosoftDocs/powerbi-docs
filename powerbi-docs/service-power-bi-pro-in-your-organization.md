@@ -27,21 +27,13 @@ Power BI Pro is for a team that wants to share and collaborate with others to ma
 
 These features require a Power BI Pro license:
 
-* **Analyze data in Excel or Power BI Desktop**
+* **Analyze data in Excel or Power BI Desktop** Use Excel or Power BI Desktop to view and interact with a dataset published in Power BI. For more information, see [Analyze in Excel](service-analyze-in-excel.md).
 
-Use Excel or Power BI Desktop to view and interact with a dataset published in Power BI. For more information, see [Analyze in Excel](service-analyze-in-excel.md).
+* **Share dashboards and collaborate with workspaces** Power BI workspaces facilitate collaboration with colleagues on dashboards, reports, and datasets. For more information, see [Collaborate in your Power BI app workspace](service-collaborate-power-bi-workspace.md).
 
-* **Share dashboards and collaborate with workspaces**
+* **View shared content** Pro users can view dashboards and reports that are shared with them, interact with dashbaords and reports that are shareed with them, and re-share dashboards and reports that are shaed with them (if allowed). However, a Pro user cannot edit these dashboards or reports. For more information, see [Share your Power BI dashboards and reports with coworkers and others](service-share-dashboards.md).
 
-Power BI workspaces facilitate collaboration with colleagues on dashboards, reports, and datasets. For more information, see [Collaborate in your Power BI app workspace](service-collaborate-power-bi-workspace.md).
-
-* **View shared content**
-
-Pro users can view dashboards and reports that are shared with them, interact with dashbaords and reports that are shareed with them, and re-share dashboards and reports that are shaed with them (if allowed). However, a Pro user cannot edit these dashboards or reports. For more information, see [Share your Power BI dashboards and reports with coworkers and others](service-share-dashboards.md).
-
-* **Integrate content with Microsoft Teams**
-
-You can add a a Power BI tab in a Microsoft (MS) Teams channel. MS Teams automatically detects all the reports in the workspace. For more information, see [Power BI teams up with Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
+* **Integrate content with Microsoft Teams** You can add a a Power BI tab in a Microsoft (MS) Teams channel. MS Teams automatically detects all the reports in the workspace. For more information, see [Power BI teams up with Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
 
 ## Power BI Pro 60-day trial for individuals
 
@@ -59,7 +51,6 @@ When you try any of these features, you will be prompted to start your free tria
 Then you can select Start trial.
 
    ![image](media/service-power-bi-pro-in-your-organization/service-power-bi-pro-in-your-organization-03.png)
-
 
 > [!NOTE]
 > Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the manage storage page in Power BI.
