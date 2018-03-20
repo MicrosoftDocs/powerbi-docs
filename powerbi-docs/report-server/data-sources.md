@@ -120,119 +120,165 @@ Other data sources may work even though they aren't on the supported list.
 
 ## List of supported authentication methods for model refresh
 
-Report server does not support OAuth based authentication for model refresh. Some data sources such as Excel or Access Databases will involve a separate step like a File or Web step to connect to data.
+Report server does not support OAuth based authentication for model refresh. Some data sources such as Excel or Access Databases will make use of a separate step like File or Web to connect to data.
 
-
-| **Data source** | **Anonymous** | **Username and password** | **Key** |
-| --- | --- | --- | --- |
-| SQL Server Database |No |Yes |Yes |
-| SQL Server Analysis Services |No |Yes |Yes |
-| File |No |Yes |Yes |
-| Web |Yes |Yes |Yes |
-| Azure SQL Database |No |Yes |No |
-| Azure SQL Data Warehouse |No |Yes |No |
-| Active Directory |No |Yes |Yes |
-| Amazon Redshift |No |No |No |
-| Azure Blob Storage |Yes |No |No |
-| Azure Data Lake Store |Yes |No |No |
-| Azure HDInsight (HDFS) |No |Yes |Yes |
-| Azure HDInsight (Spark) |No |No |No |
-| Azure Table Storage |No |No |No |
-| Dynamics 365 (online) |No |No |No |
-| Facebook |No |No |No |
-| Folder |No |Yes |Yes |
-| Google Analytics |No |No |No |
-| Hadoop File (HDFS) |No |No |No |
-| IBM DB2 Database |No |Yes |Yes |
-| Impala |No |No |No |
-| Microsoft Exchange |No |Yes |Yes |
-| Microsoft Exchange Online |No |No |No |
-| MySQL Database |No |Yes |No |
-| ODBC |Yes |Yes |Yes |
-| OLE DB |Yes |Yes |Yes |
-| Oracle Database |No |Yes |Yes |
-| PostgreSQL Database |No |Yes |No |
-| Power BI service |No |No |No |
-| R Script |No |No |No |
-| Salesforce Objects |No |No |No |
-| Salesforce Reports ||No |No |No |
-| SAP Business Warehouse server |No |Yes |Yes |
-| SAP HANA Database |No |Yes |Yes |
-| SharePoint Folder (on-premises) |Yes |Yes |Yes |
-| SharePoint List (on-premises) |Yes |Yes |Yes |
-| SharePoint Online List |No |No |No |
-| Snowflake |No |No |No |
-| Sybase Database |No |Yes |Yes |
-| Teradata Database |No |Yes |Yes |
-| Web |Yes |Yes |Yes |
-| appFigures (Beta) |No |No |No |
-| Azure Analysis Services database (Beta) |No |No |No |
-| Azure Cosmos DB (Beta) |No |No |No |
-| Azure HDInsight Spark (Beta) |No |No |No |
-| Common Data Service (Beta) |No |No |No |
-| comScore Digital Analytix (Beta) |No |No |No |
-| Dynamics 365 for Customer Insights (Beta) |No |No |No |
-| Dynamics 365 for Financials (Beta) |No |No |No |
-| GitHub (Beta) |No |No |No |
-| Google BigQuery (Beta) |No |No |No |
-| IBM Informix database (Beta) |No |Yes |Yes |
-| IBM Netezza (Beta) |No |No |No |
-| Kusto (Beta) |No |No |No |
-| MailChimp (Beta) |No |No |No |
-| Microsoft Azure Consumption Insights (Beta) |No |No |No |
-| Mixpanel (Beta) |No |No |No |
-| Planview Enterprise (Beta) |No |No |No |
-| Projectplace (Beta) |No |No |No |
-| QuickBooks Online (Beta) |No |No |No |
-| Smartsheet |No |No |No |
-| Spark (Beta) |No |No |No |
-| SparkPost (Beta) |No |No |No |
-| SQL Sentry (Beta) |No |No |No |
-| Stripe (Beta) |No |No |No |
-| SweetIQ (Beta) |No |No |No |
-| Troux (Beta) |No |No |No |
-| Twilio (Beta) |No |No |No |
-| tyGraph (Beta) |No |No |No |
-| Vertica (Beta) |No |No |No |
-| Visual Studio Team Services (Beta) |No |No |No |
-| Webtrends (Beta) |No |No |No |
-| Zendesk (Beta) |No |No |No |
+| **Data source** | **Anonymous** | **Key** | **Username and password** | **Windows Authentication** |
+| --- | --- | --- | --- | --- |
+| SQL Server Database |No |No |Yes |Yes |
+| SQL Server Analysis Services |No |No |Yes |Yes |
+| Web |Yes |No |Yes |Yes |
+| Azure SQL Database |No |No |Yes |No |
+| Azure SQL Data Warehouse |No |No |Yes |No |
+| Active Directory |No |No |Yes |Yes |
+| Amazon Redshift |No |No |No |No |
+| Azure Blob Storage |Yes |Yes |No |No |
+| Azure Data Lake Store |No |No |No |No |
+| Azure HDInsight (HDFS) |Yes |No |No |Yes |
+| Azure HDInsight (Spark) |Yes |Yes |No |No |
+| Azure Table Storage |No |Yes |No |No |
+| Dynamics 365 (online) |No |No |No |No |
+| Facebook |No |No |No |No |
+| Folder |No |No |No |Yes |
+| Google Analytics |No |No |No |No |
+| Hadoop File (HDFS) |No |No |No |No |
+| IBM DB2 Database |No |No |Yes |Yes |
+| Impala |No |No |No |No |
+| Microsoft Exchange |No |No |No |No |
+| Microsoft Exchange Online |No |No |No |No |
+| MySQL Database |No |No |Yes |Yes |
+| OData Feed |Yes |Yes |Yes |Yes |
+| ODBC |Yes |No |Yes |Yes |
+| OLE DB |Yes |No |Yes |Yes |
+| Oracle Database |No |No |Yes |Yes |
+| PostgreSQL Database |No |No |Yes |No |
+| Power BI service |No |No |No |No |
+| R Script |No |No |No |No |
+| Salesforce Objects |No |No |No |No |
+| Salesforce Reports |No |No |No |No |
+| SAP Business Warehouse server |No |No |Yes |No |
+| SAP HANA Database |No |No |Yes |Yes |
+| SharePoint Folder (on-premises) |Yes |No |No |Yes |
+| SharePoint List (on-premises) |Yes |No |No |Yes |
+| SharePoint Online List |No |No |No |No |
+| Snowflake |No |No |No |No |
+| Sybase Database |No |No |Yes |Yes |
+| Teradata Database |No |No |Yes |Yes |
+| appFigures (Beta) |No |No |No |No |
+| Azure Analysis Services database (Beta) |No |No |No |No |
+| Azure Cosmos DB (Beta) |No |No |No |No |
+| Azure HDInsight Spark (Beta) |No |No |No |No |
+| Common Data Service (Beta) |No |No |No |No |
+| comScore Digital Analytix (Beta) |No |No |No |No |
+| Dynamics 365 for Customer Insights (Beta) |No |No |No |No |
+| Dynamics 365 for Financials (Beta) |No |No |No |No |
+| GitHub (Beta) |No |No |No |No |
+| Google BigQuery (Beta) |No |No |No |No |
+| IBM Informix database (Beta) |No |No |No |No |
+| IBM Netezza (Beta) |No |No |No |No |
+| Kusto (Beta) |No |No |No |No |
+| MailChimp (Beta) |No |No |No |No |
+| Microsoft Azure Consumption Insights (Beta) |No |No |No |No |
+| Mixpanel (Beta) |No |No |No |No |
+| Planview Enterprise (Beta) |No |No |No |No |
+| Projectplace (Beta) |No |No |No |No |
+| QuickBooks Online (Beta) |No |No |No |No |
+| Smartsheet |No |No |No |No |
+| Spark (Beta) |No |No |No |No |
+| SparkPost (Beta) |No |No |No |No |
+| SQL Sentry (Beta) |No |No |No |No |
+| Stripe (Beta) |No |No |No |No |
+| SweetIQ (Beta) |No |No |No |No |
+| Troux (Beta) |No |No |No |No |
+| Twilio (Beta) |No |No |No |No |
+| tyGraph (Beta) |No |No |No |No |
+| Vertica (Beta) |No |No |No |No |
+| Visual Studio Team Services (Beta) |No |No |No |No |
+| Webtrends (Beta) |No |No |No |No |
+| Zendesk (Beta) |No |No |No |No |
 
 ## List of supported authentication methods for direct query
 
 Report server does not support OAuth based authentication for direct query.
 
-| **Data source** | **Anonymous** | **Username and password** | **Integrated** | **Key** |
-| --- | --- | --- | --- | --- |
-| SQL Server Database |No |Yes |Yes |Yes |
-| SQL Server Analysis Services |No |Yes |Yes |Yes |
-| Active Directory |No |Yes |Yes |Yes |
-| Azure Blob Storage |Yes |No |No |No |
-| Azure Table Storage |No |No |No |No |
-| IBM DB2 Database |No |Yes |Yes |Yes |
-| Microsoft Exchange |No |Yes |Yes |Yes |
-| Facebook |No |No |No |No |
-| File |No |Yes |Yes |Yes |
-| Folder |No |Yes |Yes |Yes |
-| Google Analytics |No |No |No |No |
-| Azure HDInsight (HDFS) |Yes |Yes |Yes |Yes |
-| Azure HDInsight Spark (Beta) |Yes |No |No |No |
-| IBM Informix database (Beta) |No |Yes |Yes |Yes |
-| MySQL Database |No |Yes |Yes |Yes |
-| OData Feed |Yes |Yes |Yes |Yes |
-| ODBC |Yes |Yes |Yes |Yes |
-| Ole DB |Yes |Yes |Yes |Yes |
-| Oracle Database |No |Yes |Yes |Yes |
-| PostgreSQL Database |No |Yes |No |No |
-| Salesforce Objects |No |No |No |No |
-| Salesforce Reports |No |No |No |No |
-| SAP Business Warehouse server |No |Yes |Yes |Yes |
-| SAP HANA Database |No |Yes |Yes |Yes |
-| SharePoint Folder (on-premises) |Yes |Yes |Yes |Yes |
-| SharePoint List (on-premises) |Yes |Yes |Yes |Yes |
-| Sybase Database |No |Yes |Yes |Yes |
-| Teradata Database |No |Yes |Yes |Yes |
-| Web |Yes |Yes |Yes |Yes |
+| **Data source** | **Anonymous** | **Key** | **Username and password** | **Windows Authentication** | **Integrated** |
+| --- | --- | --- | --- | --- | --- |
+| SQL Server Database |No |No |Yes |Yes |Yes |
+| SQL Server Analysis Services |No |No |Yes |Yes |Yes |
+| Azure SQL Database |No |No |Yes |No |No |
+| Azure SQL Data Warehouse |No |No |Yes |No |No |
+| Excel |No |No |No |No |No |
+| Access Database |No |No |No |No |No |
+| Active Directory |No |No |No |No |No |
+| Amazon Redshift |No |No |No |No |No |
+| Azure Blob Storage |No |No |No |No |No |
+| Azure Data Lake Store |No |No |No |No |No |
+| Azure HDInsight (HDFS) |No |No |No |No |No |
+| Azure HDInsight (Spark) |No |No |No |No |No |
+| Azure Table Storage |No |No |No |No |No |
+| Dynamics 365 (online) |No |No |No |No |No |
+| Facebook |No |No |No |No |No |
+| Folder |No |No |No |No |No |
+| Google Analytics |No |No |No |No |No |
+| Hadoop File (HDFS) |No |No |No |No |No |
+| IBM DB2 Database |No |No |No |No |No |
+| Impala |No |No |No |No |No |
+| JSON |No |No |No |No |No |
+| Microsoft Exchange |No |No |No |No |No |
+| Microsoft Exchange Online |No |No |No |No |No |
+| MySQL Database |No |No |No |No |No |
+| OData Feed |No |No |No |No |No |
+| ODBC |No |No |No |No |No |
+| OLE DB |No |No |No |No |No |
+| Oracle Database |No |No |Yes |Yes |Yes |
+| PostgreSQL Database |No |No |No |No |No |
+| Power BI service |No |No |No |No |No |
+| R Script |No |No |No |No |No |
+| Salesforce Objects |No |No |No |No |No |
+| Salesforce Reports |No |No |No |No |No |
+| SAP Business Warehouse server |No |No |Yes |No |Yes |
+| SAP HANA Database |No |No |Yes |Yes |Yes |
+| SharePoint Folder (on-premises) |No |No |No |No |No |
+| SharePoint List (on-premises) |No |No |No |No |No |
+| SharePoint Online List |No |No |No |No |No |
+| Snowflake |No |No |No |No |No |
+| Sybase Database |No |No |No |No |No |
+| Teradata Database |No |No |Yes |Yes |Yes |
+| Text/CSV |No |No |No |No |No |
+| Web |No |No |No |No |No |
+| XML |No |No |No |No |No |
+| appFigures (Beta) |No |No |No |No |No |
+| Azure Analysis Services database (Beta) |No |No |No |No |No |
+| Azure Cosmos DB (Beta) |No |No |No |No |No |
+| Azure HDInsight Spark (Beta) |No |No |No |No |No |
+| Common Data Service (Beta) |No |No |No |No |No |
+| comScore Digital Analytix (Beta) |No |No |No |No |No |
+| Dynamics 365 for Customer Insights (Beta) |No |No |No |No |No |
+| Dynamics 365 for Financials (Beta) |No |No |No |No |No |
+| GitHub (Beta) |No |No |No |No |No |
+| Google BigQuery (Beta) |No |No |No |No |No |
+| IBM Informix database (Beta) |No |No |No |No |No |
+| IBM Netezza (Beta) |No |No |No |No |No |
+| Kusto (Beta) |No |No |No |No |No |
+| MailChimp (Beta) |No |No |No |No |No |
+| Microsoft Azure Consumption Insights (Beta) |No |No |No |No |No |
+| Mixpanel (Beta) |No |No |No |No |No |
+| Planview Enterprise (Beta) |No |No |No |No |No |
+| Projectplace (Beta) |No |No |No |No |No |
+| QuickBooks Online (Beta) |No |No |No |No |No |
+| Smartsheet |No |No |No |No |No |
+| Spark (Beta) |No |No |No |No |No |
+| SparkPost (Beta) |No |No |No |No |No |
+| SQL Sentry (Beta) |No |No |No |No |No |
+| Stripe (Beta) |No |No |No |No |No |
+| SweetIQ (Beta) |No |No |No |No |No |
+| Troux (Beta) |No |No |No |No |No |
+| Twilio (Beta) |No |No |No |No |No |
+| tyGraph (Beta) |No |No |No |No |No |
+| Vertica (Beta) |No |No |No |No |No |
+| Visual Studio Team Services (Beta) |No |No |No |No |No |
+| Webtrends (Beta) |No |No |No |No |No |
+| Zendesk (Beta) |No |No |No |No |No |
+
 
 ## Next steps
 Now that your data source is picked out, [create a report](quickstart-create-powerbi-report.md) using data from that data source.
