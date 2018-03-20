@@ -57,7 +57,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 ## List of custom visuals that have been certified
 | Link to AppSource | Link to video |
 | --- | --- |
-| [Association rules](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380815) | |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft Calendar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
@@ -74,11 +73,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Chord](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380761) | [Video](https://youtu.be/AQvd2FhRyCI) |
 | [Circular Gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380837) | [Video](https://youtu.be/9NHXALkBXuY) |
 | [Cluster Map](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380806) | |
-| [Clustering](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380861) | |
-| [Clustering With Outliers](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380889) | |
-| [Correlation plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380814) | |
 | [Cylindrical Gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380874) | [Video](https://youtu.be/DgdoWi7Gcxo) |
-| [Decision Tree Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380817) | |
 | [Dial Gauge](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381184) | |
 | [Dot Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380760) | |
 | [Dot Plot by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380949) | [Video](https://youtu.be/By16pX9KT40) |
@@ -94,8 +89,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Enlighten Stack Shuffle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380849) | |
 | [Enlighten Waffle Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380850) | |
 | [Force-Directed Graph](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380764) | [Video](https://youtu.be/YsTa7uyJ4sg) |
-| [Forecasting TBATS](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381326) | |
-| [Forecasting with ARIMA](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380888) | |
 | [Funnel with Source by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381334) | [Video](https://youtu.be/R_EcimsLI8U) |
 | [Gantt](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380765) | [Video](https://youtu.be/qJ7s_KrGiUU) |
 | [Gantt Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381364) | [Video](https://youtu.be/vJLV9JRCpI8) |
@@ -116,6 +109,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Play Axis (Dynamic Slicer)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Power KPI Matrix](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
+| [Pulse Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381006) | [Video](https://youtu.be/DQWdcQtjDVw) |
 | [Quadrant Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381011) | [Video](https://youtu.be/ppBnyhqWNC0) |
 | [Radar Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380771) | |
 | [Ring Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
@@ -124,7 +118,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Scroller](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381018) | |
 | [Smart Filter by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380859) | [Video](https://youtu.be/gcJsDDRQq28) |
 | [Sparkline by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |
-| [Spline chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380860) | |
 | [Stream Graph](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380772) | |
 | [Sunburst](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
 | [Table Heatmap](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
@@ -132,8 +125,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Text Filter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Text Wrapper by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Thermometer](https://appsource.microsoft.com/en-us/product/office/WA104379807) | |
-| [Time series decomposition chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897) | |
-| [Time Series Forecasting Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380816) | |
 | [Timeline Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) | [Video](https://youtu.be/ozMtZ4_NZ10) |
 | [Tornado chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380768) | [Video](https://www.youtube.com/watch?v=AQvd2FhRyCI) |
 | [Trading Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380823) | [Video](https://youtu.be/xhTR6y6J9Ko) |

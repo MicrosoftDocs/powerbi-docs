@@ -16,21 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/13/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 # Reading View and Editing View in Power BI service reports
-In Power BI service (not Power BI Desktop) there are two modes for viewing and interacting with reports: Reading view and Editing view. Reading view is available to all users and is especially designed for data *consumers* while Editing view is only available to report *creators* and owners. 
+In Power BI service (not Power BI Desktop) there are two modes for viewing and interacting with reports: Reading view and Editing view. Reading view is available to all users and is especially designed for data *consumers* while Editing view is only available to report *creators* and owners.
 
 ![artwork of report creators and report consumers](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## Report Reading view
 
- Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, with the same filters applied.  Consumers can interact with the reports, but cannot save changes.
+ Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, and optionally with the same filters applied.  Consumers can interact with the reports, can change the existing filters (and these changes are saved with the report), but cannot add new filters.
 
->**NOTE**: In certain circumstances, report consumers may see different data because of row level security and data permissions. 
+>**NOTE**: In certain circumstances, report consumers may see different data because of row level security and data permissions.
 
 ## Report Editing view
 
@@ -39,7 +39,7 @@ Editing view is only available to those who created the report or who [co-own a 
 Editing view is designed for report *creators*. This is where creators import and connect to datasets, explore the data, and build reports and dashboards. In Editing view *creators* can dig even deeper into their data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report. They can then share the reports they create with colleagues.
 
 ## Reading view versus Editing view
-This chart does not list all the report capabilities of Power BI service! It lists only those report tasks that are not available in **both** Reading view and Editing view. 
+This chart does not list all the report capabilities of Power BI service! It lists only those report tasks that are not available in **both** Reading view and Editing view.
 
 
 |Task  | Reading view  | Editing view |
@@ -49,7 +49,7 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Create or edit a report](service-report-create-new.md) | No  | Yes |
 | [Share a report](service-share-reports.md)| Yes | Yes, and can also manage permissions, including giving others *owner* permissions. |
 | [Create persistent (permanent) visual-level, drilthrough, page-level, and report-level filters from Filters pane](power-bi-report-add-filter.md) | No  | Yes |
-| [Use report Filters pane](power-bi-how-to-report-filter.md) | Yes, can use the existing filters but changes aren't saved with the report. | Yes |
+| [Use report Filters pane](power-bi-how-to-report-filter.md) | Yes, can use the existing filters and changes can be saved with the report, but new filters cannot be added. | Yes |
 | [Use the report Analytics pane](service-analytics-pane.md) | No | Yes |
 | [Report **View** options](power-bi-report-display-settings.md) | Yes, with some exceptions. | Yes, all, including gridlines, snap, and lock. |
 | [Create a refresh schedule](refresh-data.md) | No  | Yes |
@@ -83,14 +83,14 @@ Remember, only the report creator and owner(s) will be able to open a report in 
 
    ![Edit report greyed out](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
-2. If **Edit Report** is not greyed out, select it to open the report in Editing view. 
-   
+2. If **Edit Report** is not greyed out, select it to open the report in Editing view.
+
    ![Edit report option](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
-   
+
    The report is now in Editing view and uses the same [display settings](power-bi-report-display-settings.md) you last used in Reading view.
 
 2. To return to Reading view, select **Reading view** from the top navigation bar.
-   
+
     ![Reading view option](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
@@ -98,5 +98,4 @@ Remember, only the report creator and owner(s) will be able to open a report in 
 ### Next steps
 There are so many ways to interact with a report in Reading view, slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Reading view](service-interact-with-a-report-in-editing-view.md), describes some of these in detail.    
 Back to [reports in Power BI](service-reports.md)    
-More questions? [Try the Power BI Community](http://community.powerbi.com/) 
-
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

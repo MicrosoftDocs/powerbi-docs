@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/13/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -37,22 +37,22 @@ Want to follow along? This tutorial uses Power BI service and the "Customer Prof
 
 1. Open the Power BI service (app.powerbi.com) and log in.
 2. In the bottom left corner select **Get data**.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 3. On the Get Data page that appears, select the **Samples** icon.
-   
+
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Select the **Customer Profitability Sample**, then choose **Connect**.  
-   
+
    ![Get Data](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
-   
+
    ![Asterisk](media/sample-customer-profitability/supplier-sample-asterisk.png)
-  
+
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
-[Customer Profitability Sample](<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Profitability Sample PBIX.pbix)
+Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop.
+[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 
@@ -85,13 +85,13 @@ The tiles on the right side of the dashboard provide a team scorecard. The CFO n
 
 ![](media/sample-customer-profitability/power-bi-manager2.png)
 
-- All executives, except Carlos, have already exceeded their target sales. But Carlos' actual sales are the highest. 
+- All executives, except Carlos, have already exceeded their target sales. But Carlos' actual sales are the highest.
 - Annelie’s GM% is the lowest, but we see a steady increase since March.
-- Valery, on the other hand, has seen her GM% drop significantly. 
-- And Andrew had a volatile year. 
+- Valery, on the other hand, has seen her GM% drop significantly.
+- And Andrew had a volatile year.
 
 ## Explore the dashboard's underlying data
-This dashboard has tiles that link to a report and to an Excel workbook. 
+This dashboard has tiles that link to a report and to an Excel workbook.
 
 ### Open the Excel Online data source
 Two tiles on this dashboard, "Target vs Actual" and "Year Over Year Revenue Growth" were pinned from an Excel workbook. So when you select either of these tiles, Power BI opens the data source -- in this case, Excel Online.
@@ -110,14 +110,14 @@ Two tiles on this dashboard, "Target vs Actual" and "Year Over Year Revenue Grow
 
 4. Continue exploring, and if you find something interesting, select **Pin** ![](media/sample-customer-profitability/power-bi-excel-pin.png) from the upper-right corner to [pin it to a dashboard](service-dashboard-pin-tile-from-excel.md).
 
-5. Use your browser's back arrow to return to the dashboard. 
+5. Use your browser's back arrow to return to the dashboard.
 
 ### Open the underlying Power BI report
-The majority of the tiles on the Customer Profitability sample dashboard were pinned from the underlying Customer Profitability sample report. 
+The majority of the tiles on the Customer Profitability sample dashboard were pinned from the underlying Customer Profitability sample report.
 
-1. Select one of these tiles to open the report in Reading view. 
+1. Select one of these tiles to open the report in Reading view.
 
-2. The report has 3 pages. Each tab at the bottom of the report represents a page. 
+2. The report has 3 pages. Each tab at the bottom of the report represents a page.
 
     ![](media/sample-customer-profitability/power-bi-report-tabs.png)
 
@@ -153,10 +153,10 @@ How does profitability vary by industry? How do the products and customers break
 
 On the bubble chart, the CFO looks for the largest bubbles since these are the ones that have the biggest impact on revenue. Filtering the page by manager by clicking on their names in the area chart makes it easy to see each manager’s impact by industry segment.
 
-* Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%. 
-* Annelie's chart is similar, except that she concentrates on only a handful of industry segments with a focus on the Federal segment and a focus on Gladius product. 
-* Carlos has a clear focus on the Services segment, with good profit. He's greatly improved variance % for the High Tech segment and a new segment for him, Industrial, performed exceptionally well compared to budget. 
-* Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal. 
+* Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.
+* Annelie's chart is similar, except that she concentrates on only a handful of industry segments with a focus on the Federal segment and a focus on Gladius product.
+* Carlos has a clear focus on the Services segment, with good profit. He's greatly improved variance % for the High Tech segment and a new segment for him, Industrial, performed exceptionally well compared to budget.
+* Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal.
 * Valery, who is responsible for only one product, works in only 5 industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Does industry explain her negative performance?
 
 ### Executive Scorecard
@@ -172,9 +172,9 @@ For our analysis, it would be helpful to determine which industry generates the 
     ![](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Type **total revenue by industry for Valery**. Notice how the visualization updates as you type the question.
-   
+
     ![](media/sample-customer-profitability/power-bi-qna.png)
-   
+
    Distribution is the biggest revenue area for Valery.
 
 ### Dig deeper by adding filters
@@ -182,15 +182,15 @@ Let's take a look at the *Distribution* industry.
 
 1. Open the "Industry Margin Analysis" report page.
 2. Without selecting any visualizations on the report page, expand the filter pane on the right (if it isn't already expanded). The Filters pane should display only Page level filters.  
-   
+
    ![](media/sample-customer-profitability/power-bi-filters.png)
 3. Locate the filter for **Industry** and select the arrow to expand the list. Let's add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select only **Distribution.**  
-   
+
    ![](media/sample-customer-profitability/customer7.png)
 4. The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
-5. Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery. 
+5. Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery.
 6. To see actual revenue, use Q&A to ask **total revenue by executive for distribution by scenario**.  
-   
+
      ![](media/sample-customer-profitability/power-bi-qna2.png)
 
     We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
@@ -203,4 +203,3 @@ You can also [download just the dataset (Excel workbook) for this sample](http:/
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 
 [Back to Samples in Power BI](sample-datasets.md)  
-
