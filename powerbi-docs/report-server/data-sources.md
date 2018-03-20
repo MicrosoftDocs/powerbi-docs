@@ -120,39 +120,83 @@ Other data sources may work even though they aren't on the supported list.
 
 ## List of supported authentication methods for model refresh
 
-Report server does not support OAuth based authentication for model refresh.
+Report server does not support OAuth based authentication for model refresh. Some data sources such as Excel or Access Databases will involve a separate step like a File or Web step to connect to data.
+
 
 | **Data source** | **Anonymous** | **Username and password** | **Key** |
 | --- | --- | --- | --- |
 | SQL Server Database |No |Yes |Yes |
 | SQL Server Analysis Services |No |Yes |Yes |
-| Active Directory |No |Yes |Yes |
-| Azure Blob Storage |Yes |No |No |
-| Azure Table Storage |No |No |No |
-| IBM DB2 Database |No |Yes |Yes |
-| Microsoft Exchange |No |Yes |Yes |
-| Facebook |No |No |No |
 | File |No |Yes |Yes |
+| Web |Yes |Yes |Yes |
+| Azure SQL Database |No |Yes |No |
+| Azure SQL Data Warehouse |No |Yes |No |
+| Active Directory |No |Yes |Yes |
+| Amazon Redshift |No |No |No |
+| Azure Blob Storage |Yes |No |No |
+| Azure Data Lake Store |Yes |No |No |
+| Azure HDInsight (HDFS) |No |Yes |Yes |
+| Azure HDInsight (Spark) |No |No |No |
+| Azure Table Storage |No |No |No |
+| Dynamics 365 (online) |No |No |No |
+| Facebook |No |No |No |
 | Folder |No |Yes |Yes |
 | Google Analytics |No |No |No |
-| Azure HDInsight (HDFS) |Yes |Yes |Yes |
-| Azure HDInsight Spark (Beta) |Yes |No |No |
-| IBM Informix database (Beta) |No |Yes |Yes |
-| MySQL Database |No |Yes |Yes |
-| OData Feed |Yes |Yes |Yes |
+| Hadoop File (HDFS) |No |No |No |
+| IBM DB2 Database |No |Yes |Yes |
+| Impala |No |No |No |
+| Microsoft Exchange |No |Yes |Yes |
+| Microsoft Exchange Online |No |No |No |
+| MySQL Database |No |Yes |No |
 | ODBC |Yes |Yes |Yes |
-| Ole DB |Yes |Yes |Yes |
+| OLE DB |Yes |Yes |Yes |
 | Oracle Database |No |Yes |Yes |
 | PostgreSQL Database |No |Yes |No |
+| Power BI service |No |No |No |
+| R Script |No |No |No |
 | Salesforce Objects |No |No |No |
-| Salesforce Reports |No |No |No |
+| Salesforce Reports ||No |No |No |
 | SAP Business Warehouse server |No |Yes |Yes |
 | SAP HANA Database |No |Yes |Yes |
 | SharePoint Folder (on-premises) |Yes |Yes |Yes |
 | SharePoint List (on-premises) |Yes |Yes |Yes |
+| SharePoint Online List |No |No |No |
+| Snowflake |No |No |No |
 | Sybase Database |No |Yes |Yes |
 | Teradata Database |No |Yes |Yes |
 | Web |Yes |Yes |Yes |
+| appFigures (Beta) |No |No |No |
+| Azure Analysis Services database (Beta) |No |No |No |
+| Azure Cosmos DB (Beta) |No |No |No |
+| Azure HDInsight Spark (Beta) |No |No |No |
+| Common Data Service (Beta) |No |No |No |
+| comScore Digital Analytix (Beta) |No |No |No |
+| Dynamics 365 for Customer Insights (Beta) |No |No |No |
+| Dynamics 365 for Financials (Beta) |No |No |No |
+| GitHub (Beta) |No |No |No |
+| Google BigQuery (Beta) |No |No |No |
+| IBM Informix database (Beta) |No |Yes |Yes |
+| IBM Netezza (Beta) |No |No |No |
+| Kusto (Beta) |No |No |No |
+| MailChimp (Beta) |No |No |No |
+| Microsoft Azure Consumption Insights (Beta) |No |No |No |
+| Mixpanel (Beta) |No |No |No |
+| Planview Enterprise (Beta) |No |No |No |
+| Projectplace (Beta) |No |No |No |
+| QuickBooks Online (Beta) |No |No |No |
+| Smartsheet |No |No |No |
+| Spark (Beta) |No |No |No |
+| SparkPost (Beta) |No |No |No |
+| SQL Sentry (Beta) |No |No |No |
+| Stripe (Beta) |No |No |No |
+| SweetIQ (Beta) |No |No |No |
+| Troux (Beta) |No |No |No |
+| Twilio (Beta) |No |No |No |
+| tyGraph (Beta) |No |No |No |
+| Vertica (Beta) |No |No |No |
+| Visual Studio Team Services (Beta) |No |No |No |
+| Webtrends (Beta) |No |No |No |
+| Zendesk (Beta) |No |No |No |
 
 ## List of supported authentication methods for direct query
 
