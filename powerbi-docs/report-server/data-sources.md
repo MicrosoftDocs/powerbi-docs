@@ -200,7 +200,7 @@ Report server does not support OAuth based authentication for model refresh. Som
 
 Report server does not support OAuth based authentication for direct query.
 
-| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and password** | **Windows Authentication** | **Integrated** |
+| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server Database |No |No |Yes |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |Yes |
