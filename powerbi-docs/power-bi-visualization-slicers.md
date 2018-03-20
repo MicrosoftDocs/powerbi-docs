@@ -46,21 +46,21 @@ Power BI slicers have the following limitations:
 
 ## Create slicers
 
-To create a new slicer, you can select the slicer icon and then select the data field to filter on (or drag it to the Fields box in the Visualizations pane), or you can select the data field first to create a visualization, and then select the slicer icon to turn the visualization into a slicer. Different data types create different types of slicers, with different effects and options. 
+To create a new slicer, you can select the slicer icon and then select the data field to filter on (or drag it to the Fields box in the Visualizations pane), or you can select or drag the data field first to create a visualization, and then select the slicer icon to turn the visualization into a slicer. Different data types create different types of slicers, with different effects and options. 
 
 **To create a new slicer to filter data by District Manager:**
 
-1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md). In Power BI service, click **Edit Report** at upper left.
+1. In Power BI Desktop or Power BI service, open the [Retail Analysis Sample](sample-retail-analysis.md). In Power BI service, select **Edit Report** at upper left.
 2. On the Overview page, with nothing selected on the canvas, select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the Visualizations pane to create a new slicer. 
 3. With the new slicer selected, select **District Manager** under District in the Fields pane to populate the slicer. The new slicer is a list with selection boxes before the names. 
     
     ![new slicer](media/power-bi-visualization-slicers/2-slicer.png)
     
-4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slicer items get cut off if the slicer gets too small. 
-5. Select names on the slicer and note the effects on the other visualizations on the page. Click names again to deselect them, and hold down the CTRL key to select more than one name. Selecting all names has the same effect as selecting none. 
+4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slicer items are cut off if you resize the slicer too small. 
+5. Select names on the slicer and note the effects on the other visualizations on the page. Select names again to deselect them, and hold down the CTRL key to select more than one name. Selecting all names has the same effect as selecting none. 
 
 >[!TIP]
->List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager** in the dropdown. 
+>List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipses (...) in the top right corner of the slicer and choose **Sort by District Manager** in the drop-down list. 
 
 **To create a new slicer to filter data by date range:**
 
@@ -69,14 +69,14 @@ To create a new slicer, you can select the slicer icon and then select the data 
     
     ![new range slicer](media/power-bi-visualization-slicers/2a-date-slicer.png)
     
-4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slider resizes with the slicer size, but it disappears and the dates are cut off if the slicer gets too small. 
-4. Select different date ranges with the slider, or click a date field to type in a value or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
+4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slider resizes with the slicer size, but it disappears and the dates are cut off if you resize the slicer too small. 
+4. Select different date ranges with the slider, or select a date field to type in a value or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
     
     >[!NOTE]
     >Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 >[!TIP]
->Although the Date/Month data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper right of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
+>Although the Date/Month data field produces a Between range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper-right area of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
 
 For more about creating date and numeric range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
@@ -124,7 +124,7 @@ Different formatting options are available depending on the slicer type. By usin
     
     ![formatting](media/power-bi-visualization-slicers/3-format.png)
     
-2. Click the dropdown arrows next to each category to display and edit the options. 
+2. Select the drop-down arrows next to each category to display and edit the options. 
 
 ### General options
 1. Select red under **Outline color** and change **Outline weight** to "2". This sets the color and thickness of the header and item outlines or underlines, when enabled. 
@@ -146,11 +146,11 @@ Different formatting options are available depending on the slicer type. By usin
 See [Create a responsive slicer you can resize in Power BI](power-bi-slicer-filter-responsive.md) for more about horizontal orientation and responsive layout.
 
 ### Selection Controls options (list slicers only)
-1. Show Select All is Off by default. Turn it to **On** to add a Select All item to the slicer that selects or deselects all items when toggled. When all items are selected, clicking one item deselects it, allowing an "is-not"-type filter. 
+1. Show Select All is Off by default. Turn it to **On** to add a Select All item to the slicer that selects or deselects all items when toggled. When all items are selected, clicking or tapping one item deselects it, allowing an "is-not"-type filter. 
     
     ![select all](media/power-bi-visualization-slicers/7-select-all.png)
     
-2. Single Select is On by default. Clicking each item selects it, and holding down the CTRL key while clicking selects multiple items. Turn Single Select to **Off** to allow selecting multiple items without holding down the CTRL key. Clicking each item again deselects it. 
+2. Single Select is On by default. Clicking or tapping each item selects it, and holding down the CTRL key while clicking or tapping selects multiple items. Turn Single Select to **Off** to allow selecting multiple items without holding down the CTRL key. Clicking or tapping each item again deselects it. 
 
 ### Header options
 The header is On by default, showing the data field name at the top of the slicer. 
