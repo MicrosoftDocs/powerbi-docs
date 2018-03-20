@@ -43,7 +43,7 @@ Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
 4. Locate the desired subscription offering:
 
 Under Enterprise Suite, Office 365 Enterprise E5
-    
+
    ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-03.png)
 
 Under Other Plans, Power BI Pro
@@ -55,10 +55,11 @@ Under Other Plans, Power BI Pro
    ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 
 6. Choose Pay monthly or Pay for a full year according to your billing preference.
-7. Under How many users do you want? enter the desired number of licenses, and then click on Check out now or 8. Add to cart and complete the transaction.
+7. Under How many users do you want? enter the desired number of licenses, and then click on Check out now or
+8. Add to cart and complete the transaction.
 9. Verify that the acquired subscription is now listed on the Subscriptions page.
 
-   ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
+   ![image](media/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-06.png)
 
 > [!NOTE]
 > You can add more licenses after the initial purchase. On the Subscriptions page, select the Power BI Pro subscription, and then click on Add/Remove licenses.
