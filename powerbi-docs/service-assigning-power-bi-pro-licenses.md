@@ -23,7 +23,7 @@ LocalizationGroup: Get started
 ---
 # Assigning Power BI Pro licenses
 
-Power BI license management is backed by Azure Active Directory (Azure AD). Accordingly, administrators can choose from a variety of management portals and PowerShell cmdlets to assign Power BI Pro licenses to users:
+Power BI license management is backed by Azure Active Directory (Azure AD). Accordingly, administrators can choose from a variety of management portals and PowerShell cmdlets to assign Power BI Pro licenses to users.
 
 * Azure subscription owners can use the Azure Active Directory blade in the [Azure Portal](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0). 
 
@@ -57,7 +57,7 @@ Follow these steps to assign Pro licenses to individual user accounts if you are
 
 > [!NOTE]
 > While most licensing aspects can be managed, it is not possible to purchase Power BI Pro licenses in the Azure Portal. Use Office 365 admin center to purchase a Power BI Pro subscription. For more information, see [Purchasing Power BI Pro](https://docs.microsoft.com/en-us/power-bi/service-admin-purchasing-power-bi-pro).
-> 
+>
 
 ## Managing Power BI Pro licenses in the Office 365 admin center
 
@@ -88,9 +88,9 @@ Follow these steps to assign Pro licenses to individual user accounts if you are
 >
 
 ## Next steps
-[Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)  
-[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium announcement](https://aka.ms/pbipremium-announcement)  
+[Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)
+[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)
+[Power BI Premium announcement](https://aka.ms/pbipremium-announcement)
 [Find Power BI users that have signed in](service-admin-access-usage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
