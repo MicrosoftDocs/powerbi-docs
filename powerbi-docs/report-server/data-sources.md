@@ -122,7 +122,7 @@ Other data sources may work even though they aren't on the supported list.
 
 Report server does not support OAuth based authentication for model refresh. Some data sources such as Excel or Access Databases will make use of a separate step like File or Web to connect to data.
 
-| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and password** | **Windows Authentication** |
+| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** |
 | --- | --- | --- | --- | --- |
 | SQL Server Database |No |No |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |
@@ -200,7 +200,7 @@ Report server does not support OAuth based authentication for model refresh. Som
 
 Report server does not support OAuth based authentication for direct query.
 
-| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and password** | **Windows Authentication** | **Integrated Windows Authentication** |
+| **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server Database |No |No |Yes |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |Yes |
