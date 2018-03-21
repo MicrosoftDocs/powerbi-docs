@@ -39,7 +39,7 @@ Share dashboards and reports with users outside of your organization, directly f
 
 ### Persistent filters
 
-When you adjust filters and slicers in Power BI on the web, your filter choices are saved to your mobile app as well, so you can pick up where you left off.
+When you set filters and slicers in Power BI on the web, your filter choices are saved to your mobile app as well, so you can pick up where you left off.
 
 ### Refresh reports on the iPad
 

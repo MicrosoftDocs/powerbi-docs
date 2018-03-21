@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 03/20/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -29,7 +29,7 @@ This article provides lists of supported languages and countries/regions for the
 For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
 
 ## Languages for the Power BI service
-The Power BI service (in the browser) is available in the following 42 languages:
+The Power BI service (in the browser) is available in the following 44 languages:
 
 * Arabic
 * Basque - Basque
