@@ -46,7 +46,7 @@ Other data sources may work even though they aren't on the supported list.
 | Amazon Redshift |Yes |No |No |
 | Azure Blob Storage |Yes |Yes |No |
 | Azure Data Lake Store |Yes |No |No |
-| Azure HDInsight (HDFS) |Yes |Yes |No |
+| Azure HDInsight (HDFS) |Yes |No |No |
 | Azure HDInsight (Spark) |Yes |Yes |No |
 | Azure Table Storage |Yes |Yes |No |
 | Dynamics 365 (online) |Yes |No |No |
@@ -133,7 +133,7 @@ Report server does not support OAuth based authentication for model refresh. Som
 | Amazon Redshift |No |No |No |No |
 | Azure Blob Storage |Yes |Yes |No |No |
 | Azure Data Lake Store |No |No |No |No |
-| Azure HDInsight (HDFS) |Yes |No |No |Yes |
+| Azure HDInsight (HDFS) |No |No |No |No |
 | Azure HDInsight (Spark) |Yes |Yes |No |No |
 | Azure Table Storage |No |Yes |No |No |
 | Dynamics 365 (online) |No |No |No |No |
@@ -206,78 +206,10 @@ Report server does not support OAuth based authentication for direct query.
 | SQL Server Analysis Services |No |No |Yes |Yes |Yes |
 | Azure SQL Database |No |No |Yes |No |No |
 | Azure SQL Data Warehouse |No |No |Yes |No |No |
-| Excel |No |No |No |No |No |
-| Access Database |No |No |No |No |No |
-| Active Directory |No |No |No |No |No |
-| Amazon Redshift |No |No |No |No |No |
-| Azure Blob Storage |No |No |No |No |No |
-| Azure Data Lake Store |No |No |No |No |No |
-| Azure HDInsight (HDFS) |No |No |No |No |No |
-| Azure HDInsight (Spark) |No |No |No |No |No |
-| Azure Table Storage |No |No |No |No |No |
-| Dynamics 365 (online) |No |No |No |No |No |
-| Facebook |No |No |No |No |No |
-| Folder |No |No |No |No |No |
-| Google Analytics |No |No |No |No |No |
-| Hadoop File (HDFS) |No |No |No |No |No |
-| IBM DB2 Database |No |No |No |No |No |
-| Impala |No |No |No |No |No |
-| JSON |No |No |No |No |No |
-| Microsoft Exchange |No |No |No |No |No |
-| Microsoft Exchange Online |No |No |No |No |No |
-| MySQL Database |No |No |No |No |No |
-| OData Feed |No |No |No |No |No |
-| ODBC |No |No |No |No |No |
-| OLE DB |No |No |No |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
-| PostgreSQL Database |No |No |No |No |No |
-| Power BI service |No |No |No |No |No |
-| R Script |No |No |No |No |No |
-| Salesforce Objects |No |No |No |No |No |
-| Salesforce Reports |No |No |No |No |No |
 | SAP Business Warehouse server |No |No |Yes |No |Yes |
-| SAP HANA Database |No |No |Yes |Yes |Yes |
-| SharePoint Folder (on-premises) |No |No |No |No |No |
-| SharePoint List (on-premises) |No |No |No |No |No |
-| SharePoint Online List |No |No |No |No |No |
-| Snowflake |No |No |No |No |No |
-| Sybase Database |No |No |No |No |No |
+| SAP HANA Database |No |No |Yes |Yes |No |
 | Teradata Database |No |No |Yes |Yes |Yes |
-| Text/CSV |No |No |No |No |No |
-| Web |No |No |No |No |No |
-| XML |No |No |No |No |No |
-| appFigures (Beta) |No |No |No |No |No |
-| Azure Analysis Services database (Beta) |No |No |No |No |No |
-| Azure Cosmos DB (Beta) |No |No |No |No |No |
-| Azure HDInsight Spark (Beta) |No |No |No |No |No |
-| Common Data Service (Beta) |No |No |No |No |No |
-| comScore Digital Analytix (Beta) |No |No |No |No |No |
-| Dynamics 365 for Customer Insights (Beta) |No |No |No |No |No |
-| Dynamics 365 for Financials (Beta) |No |No |No |No |No |
-| GitHub (Beta) |No |No |No |No |No |
-| Google BigQuery (Beta) |No |No |No |No |No |
-| IBM Informix database (Beta) |No |No |No |No |No |
-| IBM Netezza (Beta) |No |No |No |No |No |
-| Kusto (Beta) |No |No |No |No |No |
-| MailChimp (Beta) |No |No |No |No |No |
-| Microsoft Azure Consumption Insights (Beta) |No |No |No |No |No |
-| Mixpanel (Beta) |No |No |No |No |No |
-| Planview Enterprise (Beta) |No |No |No |No |No |
-| Projectplace (Beta) |No |No |No |No |No |
-| QuickBooks Online (Beta) |No |No |No |No |No |
-| Smartsheet |No |No |No |No |No |
-| Spark (Beta) |No |No |No |No |No |
-| SparkPost (Beta) |No |No |No |No |No |
-| SQL Sentry (Beta) |No |No |No |No |No |
-| Stripe (Beta) |No |No |No |No |No |
-| SweetIQ (Beta) |No |No |No |No |No |
-| Troux (Beta) |No |No |No |No |No |
-| Twilio (Beta) |No |No |No |No |No |
-| tyGraph (Beta) |No |No |No |No |No |
-| Vertica (Beta) |No |No |No |No |No |
-| Visual Studio Team Services (Beta) |No |No |No |No |No |
-| Webtrends (Beta) |No |No |No |No |No |
-| Zendesk (Beta) |No |No |No |No |No |
 
 
 ## Next steps
