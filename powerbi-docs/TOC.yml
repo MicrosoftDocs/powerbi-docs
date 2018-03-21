@@ -215,7 +215,7 @@
     - name: "Dashboards in Power BI"
       href: service-dashboards.md
     - name: "Create a dashboard from a report"
-      href: service-dashboard-copy.md
+      href: service-dashboard-create.md
     - name: "Create a copy of a dashboard"
       href: service-dashboard-copy.md
     - name: "Dashboard tiles in Power BI"
@@ -362,8 +362,6 @@
       href: service-reading-view-and-editing-view.md
     - name: "Interact with a report in Editing View in Power BI"
       href: service-interact-with-a-report-in-editing-view.md
-    - name: "Tips and tricks for creating reports in Power BI service"
-      href: power-bi-reports-tips-and-tricks-for-creating.md
     - name: "Analytics pane"
       href: service-analytics-pane.md
     - name: "Usage metrics for reports"
@@ -864,8 +862,6 @@
     items: 
     - name: "Power BI for iOS apps"
       href: mobile-ios-ipad-iphone-apps.md
-    - name: "Power BI for Mixed Reality"
-      href: mobile-mixed-reality-app.md     
     - name: "View on-premises reports and KPIs in the mobile apps"
       href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
     - name: "Dashboards in the mobile apps"
@@ -1044,6 +1040,8 @@
       href: report-server/get-started.md
     - name: "What's new"
       href: report-server/whats-new.md
+    - name: "Release notes"
+      href: report-server/release-notes.md
     - name: "Change log"
       href: report-server/changelog.md
     - name: "Support timeline"
