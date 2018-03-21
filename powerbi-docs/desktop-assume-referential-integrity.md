@@ -42,10 +42,10 @@ The following example demonstrates how **Assume referential integrity** behaves 
 1. In the following image that shows the **Orders** table and the **Products** table, note that referential integrity exists between **Orders[ProductID]** and **Products[ProductID]**. The **[ProductID]** column in the **Orders** table is never *Null*, and every value also appears in the **Products** table. As such, **Assume Referential Integrity** should be set to get more efficient queries (using this setting does not change the values shown in visuals).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. In the next image, notice that no referential integirty exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume Referential Integrity** should *not* be set.
+2. In the next image, notice that no referential integrity exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume Referential Integrity** should *not* be set.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Finally, no referential integrity between **Orders[CustomerID]** and **Customers[CustID]** in the following tables; the **CustomerID** contains some values (in this case, *CustX*) that do not exist in the *Customers* table. As such, **Assume Referential Integrity** should *not* be set.
+3. Finally, no referential integrity exists between **Orders[CustomerID]** and **Customers[CustID]** in the following tables; the **CustomerID** contains some values (in this case, *CustX*) that do not exist in the *Customers* table. As such, **Assume Referential Integrity** should *not* be set.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
@@ -59,7 +59,7 @@ When selected, the setting is validated against the data to ensure there are no 
 In addition, the validation occurs at the time of editing the relationship, and does *not* reflect any subsequent changes to the data.
 
 ## What happens if you incorrectly set Assume referential integrity?
-If you set **Assume Referential Integrity** when there are referential integrity issues in the data will not result in errors. However, it will result in apparent inconsistencies in the data. For example, in the case of the relationship to the **Depots** table described above, it would result in the following:
+If you set **Assume Referential Integrity** when there are referential integrity issues in the data, this will not result in errors. However, it will result in apparent inconsistencies in the data. For example, in the case of the relationship to the **Depots** table described above, it would result in the following:
 
 * A visual showing the total *Order Qty* would show a value of 40
 * A visual showing the total *Order Qty by Depot City* would show a total value of only *30*, because it would not include Order ID 1, where **DepotID** is *Null*.

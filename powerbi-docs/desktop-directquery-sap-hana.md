@@ -40,13 +40,13 @@ Let's look at more detail about each of these two approaches, in turn.
 
 ## Treat SAP HANA as a multi-dimensional source (default)
 
-All new connections to SAP HANA use this connection method by default, treating SAP HANA as a multi-dimensional source. In order to treat a connection to SAP HANA as a relational source, you must select **File > Options and settings** then check the box under **Direct Query > Treat SAP HANA as a relational source**. While this feature is in **Preview**, reports created using the multi-dimensional approach *cannot* be published to the Power BI service, and doing so will result in errors when the report is opened within the Power BI service.  
+All new connections to SAP HANA use this connection method by default, treating SAP HANA as a multi-dimensional source. In order to treat a connection to SAP HANA as a relational source, you must select **File > Options and settings > Options**, then check the box under **Direct Query > Treat SAP HANA as a relational source**. While this feature is in **Preview**, reports created using the multi-dimensional approach *cannot* be published to the Power BI service, and doing so will result in errors when the report is opened within the Power BI service.  
 
 When connecting to SAP HANA as a multi-dimensional source, the following applies:
 
 * In the **Get Data Navigator**, a single SAP HANA view can be selected. It is not possible to select individual measures or attributes. There is no query defined at the time of connecting, which is different from importing data or when using DirectQuery while treating SAP HANA as a relational source. This also means that it's not possible to directly use a SAP HANA SQL query when selecting this connection method.
 
-* All the measures, hierarchies and attributes of the selected view will be displayed in the field list. 
+* All the measures, hierarchies, and attributes of the selected view will be displayed in the field list. 
 
 * As a measure is used in a visual, SAP HANA will be queried to retrieve the measure value at the level of aggregation necessary for the visual. So when dealing with non-additive measures (counters, ratios, and so on) all aggregations are performed by SAP HANA, and no further aggregation is performed by Power BI. 
 
@@ -54,30 +54,30 @@ When connecting to SAP HANA as a multi-dimensional source, the following applies
 
 Treating SAP HANA as a multi-dimensional source does not offer the greater flexibility provided by the alternative *relational* approach, but it is simpler, and ensures correct aggregate values when dealing with more complex SAP HANA measures, and generally results in higher performance. 
 
-The **Field** list will include all measures, attributes and hierarchies from the SAP HANA view. Note the following behaviors that apply when using this connection method:
+The **Field** list will include all measures, attributes, and hierarchies from the SAP HANA view. Note the following behaviors that apply when using this connection method:
 
 * Any attribute that is included in at least one hierarchy will be hidden by default. However, they can be seen if required by selecting **View hidden** from the context menu on the field list. From the same context menu they can be made visible, if required.
 
 * In SAP HANA, an attribute can be defined to use another attribute as its label. For example, **Product** (with values 1,2,3, and so on) could use **ProductName** (with values Bike,Shirt,Gloves, and so on) as its label. In this case, a single field **Product** will be shown in the field list, whose values will be the labels Bike, Shirt, Gloves, and so on, but which will be sorted by, and with uniqueness determined by, the key values 1,2,3. A hidden column **Product.Key** is also created, allowing access to the underlying key values if required. 
 
-Any variables defined in the underlying SAP HANA view are be displayed at the time of connecting, and the necessary values can be entered. Those values can subsequently be changed by selecting **Edit Queries** from the ribbon, and then **Edit Variables** from the drop down menu displayed. 
+Any variables defined in the underlying SAP HANA view will be displayed at the time of connecting, and the necessary values can be entered. Those values can subsequently be changed by selecting **Edit Queries** from the ribbon, and then **Manage Parameters** from the drop down menu displayed. 
 
-The modelling operations allowed are more restrictive than in the general case when using DirectQuery, given the need to ensure that correct aggregate data can always be obtained from SAP HANA. However, it's still possible to make many additions and changes, including defining measures, renaming and hiding fields, and defining display formats. All such changes will be preserved on refresh, and any non conflicting changes made to the SAP HANA view will be applied. 
+The modeling operations allowed are more restrictive than in the general case when using DirectQuery, given the need to ensure that correct aggregate data can always be obtained from SAP HANA. However, it's still possible to make many additions and changes, including defining measures, renaming and hiding fields, and defining display formats. All such changes will be preserved on refresh, and any non-conflicting changes made to the SAP HANA view will be applied. 
 
-### Additional Modelling Restrictions
+### Additional Modeling Restrictions
 
 The primary additional modeling restrictions when connecting to SAP HANA using DirectQuery (treat as multi-dimensional source) are the following: 
 
 * **No support for calculated columns:** The ability to create calculated columns is disabled. This also means that Grouping and Clustering, which create calculated columns, are not available.
 * **Additional limitations for measures:** There are additional limitations imposed on the DAX expressions that can be used in measures, to reflect the level of support offered by SAP HANA.
-* **No support for defining relationships:** Only a single view can be queries within a report, and as such, there's no support for defining relationships.
+* **No support for defining relationships:** Only a single view can be queried within a report, and as such, there's no support for defining relationships.
 * **No Data View:** The **Data View** normally displays the detail level data in the tables. Given the nature of OLAP sources such as SAP HANA, this view is not available over SAP HANA.
 * **Column and measure details are fixed:** The list of columns and measures seen in the field list are fixed by the underlying source, and cannot be modified. For example, it's not possible to delete a column, nor change its datatype (it can, however, be renamed).
 * **Additional limitations in DAX:** There are additional limitations on the DAX that can be used in measure definitions, to reflect limitations in the source. For example, it's not possible to use an aggregate function over a table.
 
 ### Additional Visualization Restrictions
 
-There are a few restrictions in visuals when connecting to SAP HANA using DirectQuery (treat as multi-dimensional source): 
+There are restrictions in visuals when connecting to SAP HANA using DirectQuery (treat as multi-dimensional source): 
 * **No aggregation of columns:** It's not possible to change the aggregation for a column on a visual, and it is always *Do Not Summarize*.
 
 ## Treat SAP HANA as a relational source 
@@ -135,14 +135,14 @@ This is because Power BI accesses SAP HANA using the SQL interface, and parent c
 * **Other hierarchy metadata** - The basic structure of hierarchies is displayed in Power BI, however some hierarchy metadata (such as controlling the behavior of ragged hierarchies) will have no effect.
 Again, this is due to the limitations imposed by the SQL interface.
 * **Connection using SSL** - You cannot connect to SAP HANA instances configured to use SSL.
-Support for Attribute views	Power BI can connect to Analytic and Calculation views, but cannot connect directly to Attribute views.
+* **Support for Attribute views** -	Power BI can connect to Analytic and Calculation views, but cannot connect directly to Attribute views.
 * **Support for Catalog objects** - Power BI cannot connect to Catalog objects.
 * **Change to Variables after publish** - You cannot change the values for any SAP HANA variables directly in the Power BI service, after the report is published. 
  
 ## Known issues 
 The following list describes all known issues when connecting to SAP HANA (DirectQuery) using Power BI. 
 
-* **SAP HANA issue when query for Counters, and other measures** - Incorrect data is returned from SAP HANA if connecting to an Analytical View, and a Counter measure and some other ratio measure, are included in the same visual. This is covered by SAP Note  2128928 (Unexpected results when query a Calculated Column and a Counter. The ratio measure will be incorrect in this case. 
+* **SAP HANA issue when query for Counters, and other measures** - Incorrect data is returned from SAP HANA if connecting to an Analytical View, and a Counter measure and some other ratio measure, are included in the same visual. This is covered by SAP Note  2128928 (Unexpected results when query a Calculated Column and a Counter). The ratio measure will be incorrect in this case. 
 
 * **Multiple Power BI columns from single SAP HANA column** - For some calculation views, where a SAP HANA column is used in more than one hierarchy, SAP HANA exposes this as two separate attributes. This results in two columns being created in Power BI.  Those columns are hidden by default, however, and all queries involving the hierarchies, or the columns directly, behave correctly. 
  
