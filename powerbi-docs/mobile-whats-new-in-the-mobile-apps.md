@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 03/20/2018
 ms.author: maggies
 
 ---
@@ -32,6 +32,18 @@ For related "What's New" information, see:
 ### Power BI for Mixed Reality app (Preview)
 
 In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+
+### Share reports and dashboards externally
+
+Share dashboards and reports with users outside of your organization, directly from the app. External sharing in enabled for both organizational and social accounts. 
+
+### Persistent filters
+
+When you adjust filters and slicers in Power BI on the web, your filter choices are saved to your mobile app as well, so you can pick up where you left off.
+
+### Refresh reports on the iPad
+
+Power BI reports now have a refresh button in the iPad app.
 
 ## February 2018
 
