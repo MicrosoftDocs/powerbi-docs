@@ -82,7 +82,7 @@ Your fully qualified server name and database name can be found in the Azure Pre
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
-> If the customer’s Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](https://docs.microsoft.com/en-us/power-bi/service-admin-where-is-my-tenant-located).
+> If your Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](https://docs.microsoft.com/en-us/power-bi/service-admin-where-is-my-tenant-located).
 >
 
 ## Next steps
