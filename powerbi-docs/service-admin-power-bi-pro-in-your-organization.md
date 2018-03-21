@@ -19,7 +19,7 @@ ms.workload: powerbi
 ms.date: 03/20/2018
 ms.author: maghan
 
-LocalizationGroup: Get started
+LocalizationGroup: Administration
 ---
 # Power BI Pro in your organization
 
