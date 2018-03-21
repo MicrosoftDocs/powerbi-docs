@@ -100,7 +100,7 @@ Start the process by using the "Reference" option on the query that has the fiel
 
 Next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column.  In Power BI Desktop, click **Manage Relationships** in the ribbon.  Create a relationsship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram. 
 
-Last step is to create the histogram.  Drag the Bucket field from the "Buckets" table.  Remove the default field from the resulting column chart.  Now from the "Details" table drag the histogram field into the same visual.  In the field well, change the default aggregate to Count.  The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire data set.
+Last step is to create the histogram.  Drag the Bucket field from the "Buckets" table.  Remove the default field from the resulting column chart.  Now from the "Details" table drag the histogram field into the same visual.  In the field well, change the default aggregate to Count.  The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire dataset.
 
 ### Histograms
 In Power BI Desktop, you can use a calculated field to define a Histogram.  Identify the table and column on which you want to create a histogram.  In the calculation area, type the following formula:
@@ -116,24 +116,24 @@ Often when loading detail data sets from multiple sources, issues like null valu
 
 Let's look at an example: 
 
-If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
+If we load data sets from of active customer support requests and another dataset of work items that have schemas as follows:
 
 > CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} 
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
 > 
 > 
 
-When we want to track all incidents and workitems that relate to a specific a CustomerName we cannot simply create a relationship between these two data sets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.  
+When we want to track all incidents and workitems that relate to a specific a CustomerName we cannot simply create a relationship between these two datasets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.  
 
 #### Creating relationships in Power BI Desktop when the data has null or blank values
 Often data sets contain columns with null or blank values.  This can cause problems when trying to use relationships.  You have essentially two options for addressing the issues.  You can remove the rows that have null or blank values.  You can do this using either the filter feature in the query tab or if you're merging queries, select the "keep only matching rows" option. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".   There's no right approach here - Filtering out rows at the query stage removes rows and can affect summary statistics and calculations.  The latter approach preserves that data rows but can make unrelated rows appear related in the model leading to miscalculations.  If you adopt the latter solution ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results.  Most importantly, evaluate which rows are kept/removed and understand overall impact on the analysis..  
 
 #### Creating relationships in Power BI Desktop when the data has duplicate values
-Often when loading detailed data sets from multiple sources, duplicate data values prevent you from creating relationships.  You can overcome this by creating a dimension table with the unique values from both data sets. 
+Often when loading detailed datasets from multiple sources, duplicate data values prevent you from creating relationships.  You can overcome this by creating a dimension table with the unique values from both data sets. 
 
 Let's look at an example: 
 
-If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
+If we load datasets from of active customer support requests and another dataset of work items that have schemas as follows:
 
 > CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} 
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
@@ -142,7 +142,7 @@ If we load data sets from of active customer support requests and another data s
 
 When we want to track all incidents and workitems that relate to a specific CustomerName we cannot simply create a relationship between these two data sets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship - see Creating relationships if my data has null or blank values.  There might be multiple WorkItems and CustomerIncidents for a single CustomerName.  
 
-To create a relationship in this case, we need to create a logical data set of all the CustomerNames across the two data sets.  In the Query tab, you can use the following sequence to create the logical data set:
+To create a relationship in this case, we need to create a logical dataset of all the CustomerNames across the two datasets.  In the Query tab, you can use the following sequence to create the logical dataset:
 
 1. Duplicate both queries, naming the first **Temp** and the second **CustomerNames**.
 2. In each query, remove all columns *except* the CustomerName column
@@ -156,10 +156,10 @@ Now you have a dimension table that you can use to relate to CustomerIndicents a
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
 
 #### Temporary columns can be deleted after computing a result
-Often you need to build a calculation in Power BI Desktop that transforms data from multiple columns into single new column.  This can be complex.  One easy way to overcome the problem is do decompose the operation into steps.  Start by duplicating the initial columns. Then build the steps a temporary columns. Then create the a column for the final result.  You can then delete the temporary columns so the final data set is not cluttered. This is possible because the query tab executes steps in order. 
+Often you need to build a calculation in Power BI Desktop that transforms data from multiple columns into single new column.  This can be complex.  One easy way to overcome the problem is do decompose the operation into steps.  Start by duplicating the initial columns. Then build the steps a temporary columns. Then create the a column for the final result.  You can then delete the temporary columns so the final dataset is not cluttered. This is possible because the query tab executes steps in order. 
 
 #### Duplicate or Reference queries followed by merge to original query
-Sometimes it's useful to compute summary statistics for a data set.  The easy way to do this is to duplicate or reference the query in the query tab. Then use **Group by** to compute the summary statistics.  Summary statistics help you normalize the data in the original data so they're more comparable as in .  This is especially useful for comparing individual values to the whole.  To do this go to the original query, and select the merge option.  Then merge the data from the summary statistics query matching on the appropriate identifiers.  Now you're ready to normalize the data as needed for your analysis.
+Sometimes it's useful to compute summary statistics for a dataset.  The easy way to do this is to duplicate or reference the query in the query tab. Then use **Group by** to compute the summary statistics.  Summary statistics help you normalize the data in the original data so they're more comparable as in .  This is especially useful for comparing individual values to the whole.  To do this go to the original query, and select the merge option.  Then merge the data from the summary statistics query matching on the appropriate identifiers.  Now you're ready to normalize the data as needed for your analysis.
 
 ### Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
