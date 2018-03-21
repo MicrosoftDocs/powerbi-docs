@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 03/21/2018
 ms.author: maghan
 
 ---
@@ -120,7 +120,7 @@ Other data sources may work even though they aren't on the supported list.
 
 ## List of supported authentication methods for model refresh
 
-Report server does not support OAuth based authentication for model refresh. Some data sources such as Excel or Access Databases will make use of a separate step like File or Web to connect to data.
+Power BI Report Server does not support OAuth-based authentication for model refresh. Some data sources such as Excel or Access databases make use of a separate step like File or Web to connect to data.
 
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** |
 | --- | --- | --- | --- | --- |
@@ -196,9 +196,9 @@ Report server does not support OAuth based authentication for model refresh. Som
 | Webtrends (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
 
-## List of supported authentication methods for direct query
+## List of supported authentication methods for DirectQuery
 
-Report server does not support OAuth based authentication for direct query.
+Power BI Report Server does not support OAuth-based authentication for DirectQuery.
 
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
