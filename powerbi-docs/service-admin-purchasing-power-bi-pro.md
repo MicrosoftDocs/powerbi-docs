@@ -73,11 +73,11 @@ For latest pricing information, see [Power BI Pricing](https://powerbi.microsoft
 <br/>
 [Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)
 <br/>
-[Power BI Pro in your organization](service-power-bi-pro-in-your-organization.md)
+[Power BI Pro in your organization](service-admin-power-bi-pro-in-your-organization.md)
 <br/>
 [Extended Pro Trial activation](service-extended-pro-trial.md)
 <br/>
-[Assigning Power BI Pro licenses](service-assigning-power-bi-pro-licenses.md)
+[Assigning Power BI Pro licenses](service-admin-assigning-power-bi-pro-licenses.md)
 <br/>
 [Power BI Premium - what is it?](service-admin-premium-manage.md)
 <br/>
