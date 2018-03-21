@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/21/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -32,6 +32,8 @@ LocalizationGroup: Common tasks
 > [!NOTE]
 > Focus is different from [full screen mode](service-fullscreen-mode.md).
 > 
+
+
 ## Focus mode for dashboard tiles
 1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode** 
 
@@ -59,7 +61,6 @@ LocalizationGroup: Common tasks
    ![focus icon displays on tile](media/service-focus-mode/power-bi-hover-focus.png)
 2. The visualization opens and fills the entire canvas. 
 
-   
    ![visual in focus mode](media/service-focus-mode/power-bi-display-focus-newer2.png)
 3. Expand the Filters pane to see all filters applied to this visual.
    
@@ -73,7 +74,7 @@ LocalizationGroup: Common tasks
 Once in focus mode, the tile or visual can then be [viewed in full screen (TV mode.)](service-fullscreen-mode.md) Full screen mode displays without the distraction of menus and navigation buttons.
 
 ## Considerations and troubleshooting
-* When using focus mode with a visualization in a report, you'll be able to view and modify all filters: Visual level, Page level and Report level.    
+* When using focus mode with a visualization in a report, you'll be able to view and modify all filters: Visual level, Page level, Drillthrough, and Report level.    
 * When using focus mode with a visualization on a dashboard, you'll be able to view and modify only the Visual level filter.
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
