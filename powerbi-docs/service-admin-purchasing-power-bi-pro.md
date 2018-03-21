@@ -23,7 +23,7 @@ LocalizationGroup: Administration
 ---
 # Purchasing Power BI Pro
 
-With Power BI Pro you can publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. For more information about how Power BI Pro can benefit your organization, see [Power BI Pro in your organization](service-power-bi-pro-in-your-organization.md).
+With Power BI Pro you can publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. For more information about how Power BI Pro can benefit your organization, see [Power BI Pro in your organization](service-admin-power-bi-pro-in-your-organization.md).
 
 ## Purchasing Power BI Pro through Office 365 Admin Center
 

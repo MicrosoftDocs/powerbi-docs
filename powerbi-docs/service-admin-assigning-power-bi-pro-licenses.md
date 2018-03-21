@@ -88,8 +88,6 @@ Follow these steps to assign Pro licenses to individual user accounts if you are
 >
 
 ## Next steps
-[Power BI Pro in your organization](service-admin-power-bi-pro-in-your-organization.md)
-<br/>
 [Extended Pro Trial activation](service-extended-pro-trial.md)
 <br/>
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)
