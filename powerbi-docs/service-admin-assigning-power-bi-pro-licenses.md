@@ -16,10 +16,10 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.author: maghan
 
-LocalizationGroup: Get started
+LocalizationGroup: Administration
 ---
 # Assigning Power BI Pro licenses
 
@@ -88,7 +88,9 @@ Follow these steps to assign Pro licenses to individual user accounts if you are
 >
 
 ## Next steps
-[Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)
+[Power BI Pro in your organization](service-admin-power-bi-pro-in-your-organization.md)
+</br>
+[Extended Pro Trial activation](service-extended-pro-trial.md)
 </br>
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)
 </br>

@@ -130,7 +130,7 @@ Why do people create dashboards?  Here are just some of the reasons:
 
 When you open a workspace, the associated dashboards are listed under the **Dashboards** tab. To open a dashboard, simply select it. When you open an app, you'll be presented with a dashboard.  Each dashboard represents a customized view of some subset of the underlying dataset(s).  If you own the dashboard, you'll also have edit access to the underlying dataset(s) and reports.  If the dashboard was shared with you, you'll be able to interact with the dashboard and any underlying reports, but will not be able to save any changes.
 
-There are many different ways that you, or a colleague, can [share a dashboar](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
+There are many different ways that you, or a colleague, can [share a dashboard](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
 
 
 > [!NOTE]
