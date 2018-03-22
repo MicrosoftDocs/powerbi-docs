@@ -3,7 +3,7 @@ title: Troubleshooting the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: maghan
 
 LocalizationGroup: Gateways
 ---
@@ -353,6 +353,41 @@ To determine the time it took to query the data source, you can do the following
    > 
    > 
 
+## Kerberos
+
+### ImpersonationLevel: Identification
+
+The ImpersonationLevel is related to the SPN setup or the local policy setting
+
+**Correction**
+
+Please follow these steps:
+1. Setup a SPN for the On-Premises Gateway
+2. Setup constrained delegation in your Active Directory (AD)
+
+### FailedToImpersonateUserException: Failed to create windows identity for user userid
+
+The FailedToImpersonateUserException will happen if you are not able to impersonate on behalf of another user. This could also happen if the account you are trying to impersonate is from another domain than the one the gateway service domain is on (this is a limitation).
+
+**Correction**
+* Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
+* Ensure that the userid it's trying to impersonate is a valid AD Account
+
+### General error; 1033 error while parsing protocol
+
+You will get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you will see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com'.”
+
+**Correction**
+* SAP HANA requires the impersonated user to use the SAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
+* In the logs you should see the SAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+
+### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
+
+You wil get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
+
+**Correction**
+* Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -379,4 +414,3 @@ For additional information about troubleshooting refresh scenarios, take a look 
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
