@@ -557,7 +557,7 @@
     - name: "Purchasing Power BI Pro"
       href: service-admin-purchasing-power-bi-pro.md
     - name: "Assigning Power BI Pro"
-      href: service-admin-assigning-power-bi-pro-licenses
+      href: service-admin-assigning-power-bi-pro-licenses.md
     - name: "Power BI Pro in your organization"
       href: service-admin-power-bi-pro-in-your-organization.md
     - name: "Power BI governance and deployment approaches"

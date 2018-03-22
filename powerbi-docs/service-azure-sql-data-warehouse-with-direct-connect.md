@@ -91,4 +91,3 @@ Your fully qualified server name and database name can be found in the Azure Pre
 [Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
