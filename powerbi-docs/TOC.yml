@@ -556,6 +556,10 @@
       href: service-admin-service-free-in-your-organization.md
     - name: "Purchasing Power BI Pro"
       href: service-admin-purchasing-power-bi-pro.md
+    - name: "Assigning Power BI Pro"
+      href: service-admin-assigning-power-bi-pro-licenses.md
+    - name: "Power BI Pro in your organization"
+      href: service-admin-power-bi-pro-in-your-organization.md
     - name: "Power BI governance and deployment approaches"
       href: service-admin-governance.md
     - name: "Power BI security"
@@ -698,8 +702,6 @@
       href: desktop-assume-referential-integrity.md
     - name: "Tutorial: Dynamic row level security with Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "DirectQuery for Oracle and Teradata databases"
-      href: desktop-directquery-for-oracle-teradata.md
     - name: "Use the SAP BW connector in Power BI Desktop (Preview)"
       href: desktop-sap-bw-connector.md
     - name: "Use OneDrive for Business links in Power BI Desktop"
