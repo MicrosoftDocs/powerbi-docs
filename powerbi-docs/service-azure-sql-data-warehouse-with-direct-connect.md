@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/21/2018
+ms.date: 03/22/2018
 ms.author: maghan
 
 LocalizationGroup: Data from databases
