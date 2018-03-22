@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/21/2018
+ms.date: 03/22/2018
 ms.author: maghan
 
 LocalizationGroup: Data from databases
@@ -91,4 +91,3 @@ Your fully qualified server name and database name can be found in the Azure Pre
 [Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
