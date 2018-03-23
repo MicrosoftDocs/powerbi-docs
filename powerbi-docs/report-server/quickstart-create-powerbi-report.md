@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 3/19/2018
+ms.date: 3/22/2018
 ms.author: maggies
 
 ---
@@ -51,7 +51,7 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
    
     It starts automatically and you're ready to go. You can tell you have the right version because "Power BI Desktop (March 2018)" is in the title bar.
 
-    ![Power BI Desktop March 2018 version](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
+    ![Power BI Desktop March 2018 version](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
 
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    
