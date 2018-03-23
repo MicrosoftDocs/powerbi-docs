@@ -375,11 +375,34 @@ The FailedToImpersonateUserException will happen if you are not able to imperson
 
 ### General error; 1033 error while parsing protocol
 
-You will get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you will see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com'.”
+You will get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you will see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
 
 **Correction**
-* SAP HANA requires the impersonated user to use the SAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
-* In the logs you should see the SAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+* SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* In the logs you should see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+
+  ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
 
 ### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
 
