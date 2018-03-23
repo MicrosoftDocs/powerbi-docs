@@ -33,7 +33,7 @@ Unlike the public cloud, the US Government cloud has three different category se
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI US Government account** account. If you don't have an account set up, you can [sign up for a government Power BI account](../service-govus-signup.md).
+To get started with this walkthrough, you need a **Power BI US Government account**. If you don't have an account set up, you can [sign up for a government Power BI account](../service-govus-signup.md).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).

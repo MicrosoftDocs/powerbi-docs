@@ -16,18 +16,16 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/22/2018
+ms.date: 03/26/2018
 ms.author: maghan
 
 ---
 # Embed a Power BI dashboard, tile, or report into your application for German Government
-Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
-
-Unlike the public cloud, the German Government cloud has a different category.
+Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for German government customers. This is typically the ISV scenario.
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI German Government account** account. If you don't have an account set up, you can [sign up for a government Power BI account](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+To get started with this walkthrough, you need a **Power BI German government account**. If you don't have an account set up, you can [sign up for a government Power BI account](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
@@ -39,24 +37,21 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 ## Download the sample
 This article shows the code used in the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) on GitHub. To follow along with this walkthrough, you can download the sample.
 
- 1. Overwrite Cloud.config file with Power BI in Germany content.
+ 1. Overwrite Cloud.config file with the Power BI in Germany content.
  2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
  3. Add the German parameters in the web.config file as follows.
 
 Germany parameters
-```
-    <add key="authorityUrl"                      value=https://login.microsoftonline.de/common/oauth2/authorize/" />
-    </br>
-    <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-    </br>
-    <add key="apiUrl" value="https://api.powerbi.de/" />
-    </br>
-    <add key="embedUrlBase" value="https://app.powerbi.de" />
-```
-## Step 1 - register an app in Azure AD
-You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content]( https://app.powerbi.de/apps).
 
-If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
+```
+<add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
+<add key="apiUrl" value="https://api.powerbi.de/" />
+<add key="embedUrlBase" value="https://app.powerbi.de" />
+```
+
+## Step 1 - register an app in Azure AD
+You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). You will need to go to https://app.powerbi.de/apps to register your app. Then go to portal.microsoftazure.de and update App permissions if needed and also click on "Grant permissions".
 
 ## Step 2 - get an access token from Azure AD
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). To get an access token for your application refer to https://login.microsoftonline.de.
