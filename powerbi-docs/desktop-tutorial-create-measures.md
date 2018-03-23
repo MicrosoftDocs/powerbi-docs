@@ -40,7 +40,7 @@ To change the type of aggregation to average, in the **Value** area of the Visua
 
 ![](media/desktop-tutorial-create-measures/meastut_salesamountaverage.png) ![](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
 
-We can change the type of aggregation depending on the result we want, but not all types of aggregation apply to just any numeric datatype. For example, for our SalesAmount field, Sum and Average make sense. Minimum and Maximum have their place as well. But, Count won’t really make much sense for our SalesAmount field because while its values are numeric, they’re really currency.
+We can change the type of aggregation depending on the result we want, but not all types of aggregation apply to every numeric datatype. For example, for our SalesAmount field, Sum and Average make sense. Minimum and Maximum have their place as well. But Count won’t really make much sense for our SalesAmount field because while its values are numeric, they’re really currency.
 
 Values calculated from measures change in response to your interactions with your report. For example, drag the **RegionCountryName** field from the **Geography** table to your chart to see the average sales amounts for each country.
 
@@ -50,7 +50,9 @@ When the result of a measure changes because of an interaction with your report,
 
 ## Create and use your own measures
 
-In most cases, Power BI automatically calculates and returns values according to the fields you’ve added and the types of aggregation you choose, but in some cases you might want to create your own measures to perform more complex, unique calculations. With Power BI Desktop, you create your own measures with the Data Analysis Expressions (DAX) formula language. DAX formulas use many of the same functions, operators, and syntax as Excel. However, DAX functions are designed to work with relational data and perform more dynamic calculations as you interact with your reports. There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. There are many resources to help you learn more about DAX. After you've finished this tutorial, be sure to see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
+In most cases, Power BI automatically calculates and returns values according to the types of fields and aggregations you choose, but in some cases you might want to create your own measures to perform more complex, unique calculations. With Power BI Desktop, you create your own measures with the Data Analysis Expressions (DAX) formula language. 
+
+DAX formulas use many of the same functions, operators, and syntax as Excel. However, DAX functions are designed to work with relational data and perform more dynamic calculations as you interact with your reports. There are over 200 DAX functions that do everything from simple aggregations like sum and average to more complex statistical and filtering functions. There are many resources to help you learn more about DAX. After you've finished this tutorial, be sure to see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
 When you create your own measure, it's added to the Fields list for the table you select and is called a *model* measure. Some advantages of model measures are that you can name them whatever you want, making them more identifiable; you can use them as an argument in other DAX expressions; and you can create measures that perform complex calculations very quickly.
 
@@ -75,7 +77,7 @@ You want to analyze your net sales by subtracting discounts and returns from sal
     
 2.  By default, a new measure is simply named Measure. If you don’t rename it, additional new measures will be named Measure 2, Measure 3, and so on. You want your measures to be more identifiable, so highlight **Measure** in the formula bar, and then type **Net Sales**.
     
-3.  Now you can begin entering your formula. After the equals sign, start to type **Sum**. As you type, a drop-down suggestion list appears, showing all the DAX functions beginning with the letters you type. Select **SUM** from the list, and then press Enter.
+3.  Now you can begin entering your formula. After the equals sign, start to type **Sum**. As you type, a drop-down suggestion list appears, showing all the DAX functions beginning with the letters you type. Scroll down to select **SUM** from the list, and then press Enter.
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
     
@@ -97,21 +99,21 @@ You want to analyze your net sales by subtracting discounts and returns from sal
 5.  To subtract the other two columns:
     1. After the closing parenthesis for the first expression, type a space, a minus operator (**-**), and another space. 
     2. Enter another SUM function, and start typing "DiscountAmount" until you can choose the **Sales[DiscountAmount]** column as the argument. 
-    3. Enter a closing parenthesis, space, another minus operator, space, another SUM function with **Sales[ReturnAmount]" as the argument, and another closing parenthesis.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
-    
-6.  Press Enter or click the checkmark in the formula bar to complete and validate the formula. The validated measure is now ready to use in the Field list for the Sales table. 
+    3. Enter a closing parenthesis, space, another minus operator, space, another SUM function with **Sales[ReturnAmount]** as the argument, and another closing parenthesis.
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
+6.  Press Enter or click the checkmark in the formula bar to complete and validate the formula. The validated measure is now ready to use in the Field list for the Sales table. 
+    
+    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
+    
 If you run out of room for entering a formula or want it to be on separate lines, select the down chevron on the right side of the formula bar to open up more space.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
-    
+
+![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
+
 You can separate parts of your formula on different lines by pressing Alt-Enter, or move things over by using Tab.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
+
+![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
 
 ### Use your measure in the report
 Now you can add your Net Sales measure to the report canvas, and net sales will be calculated for whatever other fields you add to the report. 
@@ -128,7 +130,7 @@ Now you can add your Net Sales measure to the report canvas, and net sales will 
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
     
-    The chart now uses two measures: SalesAmount, which was summed automatically, and the Net Sales measure you created. Each measure was calculated in the context of another field, RegionCountryName.
+The chart now uses two measures: SalesAmount, which was summed automatically, and the Net Sales measure you created. Each measure was calculated in the context of another field, RegionCountryName.
     
 ### Use your measure with a slicer
 
@@ -164,7 +166,7 @@ To find out which products have the highest net sales amount per unit sold, you 
     
     ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    You can also reference measures by just typing an opening bracket (**[**). The suggestion list will show only the measures you can add to your formula.
+    You can also reference measures by just typing an opening bracket (**[**). The suggestion list will show only measures to add to your formula.
     
     ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
@@ -178,17 +180,15 @@ To find out which products have the highest net sales amount per unit sold, you 
     
 5. Drag the **ProductCategory** field from the **ProductCategory** table into the chart. That shows more useful information. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
-    
 6. For a different look, change the chart visualization type to **Tree Map**.
     
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
+    ![](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png) ![](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
     
 7. Try removing the **ProductCategory** field, and dragging the **ProductName** field from the **Product** table into the chart instead. 
     
     ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
     
-8. Experiment with other ways to filter and format the visualization.
+8. Ok, now we're just playing, but you have to admit that's cool! Experiment with other ways to filter and format the visualization.
 
 ## What you've learned
 Measures give you a lot of power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the suggestion lists. You've also been introduced to context, where the result of calculations in measures change according to other fields, or by other expressions in your measure formula.
