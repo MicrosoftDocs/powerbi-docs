@@ -65,7 +65,7 @@ Scheduled refresh for imported datasets timeout after two hours. This timeout is
 
 ## Next steps
 [Data Refresh](refresh-data.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -160,7 +160,7 @@ To create an extended format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
+For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("\*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
 
 > [!NOTE]
 > You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
