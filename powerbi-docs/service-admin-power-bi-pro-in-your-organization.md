@@ -16,10 +16,10 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.author: maghan
 
-LocalizationGroup: Get started
+LocalizationGroup: Administration
 ---
 # Power BI Pro in your organization
 
@@ -103,7 +103,7 @@ You can purchase Power BI Pro through Microsoft Office 365 or through a certifie
 <br/>
 [Extended Pro Trial activation](service-extended-pro-trial.md)
 <br/>
-[Assigning Power BI Pro licenses](service-assigning-power-bi-pro-licenses.md)
+[Assigning Power BI Pro licenses](service-admin-assigning-power-bi-pro-licenses.md)
 <br/>
 [Power BI Premium - what is it?](service-admin-premium-manage.md)
 <br/>

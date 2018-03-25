@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kfile
-backup: sirsu
+backup: 
 editor: ''
 tags: ''
 qualityfocus: no
@@ -16,24 +16,36 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/07/2018
+ms.date: 03/23/2018
 ms.author: nikhilga
 
 LocalizationGroup: Get started
 ---
+---
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
-* [What's new in Power BI Desktop](desktop-latest-update.md)  
-* [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
-* [Power BI team blog](https://powerbi.microsoft.com/blog/)
+- [What's new in Power BI Desktop](desktop-latest-update.md)  
+- [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+- [Power BI team blog](https://powerbi.microsoft.com/blog/)
+- [Business Applications Spring ‘18 release notes](https://aka.ms/bagspring2018releasenotes_internal) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
 
 You can also check out the YouTube channels for information about "What's new" and features.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## January 2018
+## March 2018
+* [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI Service.
+* Share content with users using their personal e-mail accounts. Extension of [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
+
+## Previous months (2018)
+### February 2018
+* Automatically install [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) for end users.
+* P4 and P5 capacities on Power BI Premium
+* Preview of [Organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization).
+
+### January 2018
 *	Share and favorite Power BI reports.
 *	OAuth2 and DirectQuery Single Sign-on Support (SSO) for Azure SQL Database and Data Warehouse.
 *	In-region auditing: audit logs will now be stored in the same Office 365 region as their tenant.
