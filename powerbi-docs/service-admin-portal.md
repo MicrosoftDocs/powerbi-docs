@@ -322,7 +322,8 @@ Important: deletion is irreversible. Once deleted, the visual will immediately s
  
 ### How to update a visual
 
-If you'd like to update a visual in the repository, because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), upload the new file (make sure the Visual ID remains unchanged) as a new entrance in the list, make sure you provide the right details in the title and the description (e.g. "My Visual v2.0"). Next time users will enter the organization repository from Power BI Desktop, they will be able to import the new version, which will prompt them to replace the current version that they have in the report.
+If you'd like to update a visual in the repository, because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the "update" icon, and upload the new file (make sure the Visual ID remains unchanged), which will replace the previous file for all the reports throughout the organization. 
+Note: If the new vesrion might break the usage or data structure of the previous version, it is recommended not to replace the previous version, but to create a new listing (e.g. add a "version X.X" to the title so it is clear it is the same visual with different version) with the new version (again, make sure the Visual ID remains unchanged), so that existing reports do not break their functionality. Next time users will enter the organization repository from Power BI Desktop, they will be able to import the new version, which will prompt them to replace the current version that they have in the report.
  
 ## Next steps
 
