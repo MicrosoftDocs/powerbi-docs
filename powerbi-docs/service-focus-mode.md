@@ -17,17 +17,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/21/2018
+ms.date: 03/24/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Display a dashboard tile or report visual in focus mode
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
 
 ## What is focus mode?
-***Focus*** mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in focus mode, you can view and modify filters that were applied when this visual was created.  
+
+***Focus*** mode lets you expand (pop out) content to see more detail.  While in focus mode, you can view and modify filters that were applied when this visual was created.  In Power BI service you can use focus mode on a dashboard tile or report visual and in Power BI Desktop you can use focus mode on a [report visual](desktop-report-view.md).
 
 > [!NOTE]
 > Focus is different from [full screen mode](service-fullscreen-mode.md).
@@ -35,10 +37,11 @@ LocalizationGroup: Common tasks
 
 
 ## Focus mode for dashboard tiles
-1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode** 
+
+1. Hover over the tile visualization, select the ellipses (...) and choose **Open in focus mode**. 
 
     ![ellipses menu for tile](media/service-focus-mode/power-bi-dashboard-focus-mode.png).
-   
+
 2. The tile opens and fills the entire report canvas. 
 
    ![tile fills report canvas](media/service-focus-mode/power-bi-tile-focus.png)
