@@ -22,16 +22,16 @@ ms.author: davidi
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create your own measures in Power BI Desktop
-Some of the most powerful data analysis solutions in Power BI Desktop can be created by using measures. Measures help you by performing calculations on your data as you interact with your reports. This tutorial will guide you through understanding measures and creating your own basic measures in Power BI Desktop.
+You can create some of the most powerful data analysis solutions in Power BI Desktop by using measures. Measures help you by performing calculations on your data as you interact with your reports. This tutorial will guide you through understanding measures and creating your own basic measures in Power BI Desktop.
 
 ### Prerequisites
 - This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, working with multiple related tables, and adding fields to the Report Canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
   
-- Download the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company Contoso, Inc. Extract the file on your own computer, and open it in Power BI Desktop.
+- Download the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company Contoso, Inc. This data was imported from a database, so you won’t be able to connect to the datasource or view it in Query Editor. Extract the file on your own computer, and then open it in Power BI Desktop.
 
 ## Understand measures
 
-Measures are most often created for you automatically. Select the checkbox next to the **SalesAmount** field in the **Sales** table in the Fields well, or drag **SalesAmount** onto the report canvas. A new column chart visualization appears, showing the sum total of all SalesAmounts in the Sales table.
+Measures are most often created for you automatically. In the Contoso Sales Sample file, select the checkbox next to the **SalesAmount** field in the **Sales** table in the Fields well, or drag **SalesAmount** onto the report canvas. A new column chart visualization appears, showing the sum total of all SalesAmounts in the Sales table.
 
 ![SalesAmount chart](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
 
@@ -58,13 +58,13 @@ DAX formulas use many of the same functions, operators, and syntax as Excel form
 When you create your own measure, it's added to the Fields list for the table you select and is called a *model* measure. Some advantages of model measures are that you can name them whatever you want, making them more identifiable; you can use them as arguments in other DAX expressions; and you can make them perform complex calculations very quickly.
 
 >[!TIP]
->Starting with the February 2018 release of Power BI Desktop, many common calculations are available as **quick measures**, which write the DAX formulas for you based on your inputs to a dialog box. These quick, powerful calculations are great for learning DAX or kick-starting your own customized measures. To create or explore **quick measures**, select **New quick measure** in a table's **More options** list. See [Use quick measures to easily perform common and powerful calculations](desktop-quick-measures.md) for more about creating and using quick measures.
+>Starting with the February 2018 release of Power BI Desktop, many common calculations are available as **quick measures**, which write the DAX formulas for you based on your inputs to a dialog box. These quick, powerful calculations are also great for learning DAX or kick-starting your own customized measures. To create or explore **quick measures**, select **New quick measure** in a table's **More options** list or under **Calculations** in the Home tab of the ribbon. See [Use quick measures to easily perform common and powerful calculations](desktop-quick-measures.md) for more about creating and using quick measures.
 
 ### Create a measure
 
 You want to analyze your net sales by subtracting discounts and returns from total sales amounts. For whatever context exists in your visualization, you need a measure that subtracts the sum of DiscountAmount and ReturnAmount from the sum of SalesAmount. There's no field for Net Sales in the Fields list, but you have the building blocks to create your own measure to calculate net sales. 
 
-1.  Right-click, or select the **More options** ellipsis (...) next to the **Sales** table in the Fields well, and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
+1.  Right-click the **Sales** table in the Fields well, or hover over the table and select the **More options** ellipsis (...), and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
     
     ![New measure](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     
@@ -128,7 +128,7 @@ Now you can add your Net Sales measure to the report canvas, and calculate net s
     
     ![Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
-To see the difference between net sales and sales amount by country, select the **SalesAmount** field or drag it into the chart. 
+To see the difference between net sales and total sales by country, select the **SalesAmount** field or drag it into the chart. 
 
 ![Sales Amount and Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
@@ -158,7 +158,7 @@ You can add a slicer to further filter net sales and sales amounts by calendar y
     
     ![Chart sliced by Year](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 
-### Use your measure to create another measure
+### Use your measure in another measure
 
 You want to find out which products have the highest net sales amount per unit sold, so you need a measure that divides net sales by the quantity of units sold. You can create a new measure that divides the result of your Net Sales measure by the sum of Sales[SalesQuantity].
 
@@ -192,7 +192,7 @@ You want to find out which products have the highest net sales amount per unit s
     
     ![Treemap by Product Name](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
     
-8. Ok, now we're just playing, but you have to admit that's cool! Experiment with other ways to filter and format the visualization.
+Ok, now we're just playing, but you have to admit that's cool! Experiment with other ways to filter and format the visualization.
 
 ## What you've learned
 Measures give you a lot of power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the DAX suggestion lists. You've also been introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
