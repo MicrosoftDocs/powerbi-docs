@@ -37,7 +37,7 @@ The following image shows the **Query Settings** pane for a query that has been 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished.png)
 
-Using the retirement data from [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664), which we found by connecting to a Web data source, let’s shape that data to fit our needs.
+Using the retirement data from [Getting Started with Power BI Desktop](desktop-getting-started.md), which we found by connecting to a Web data source, let’s shape that data to fit our needs.
 
 For starters, one column's scores were not automatically transformed from text to numbers when Query Editor loaded the table, and we need them to be numbers. No problem – just right-click the column header, and select **Change Type \> Whole Number** to change them. To choose more than one column, first select a column then hold down **SHIFT**, select additional adjacent columns, and then right-click a column header to change all selected columns. You can also use the **CTRL** key to choose non-adjacent columns.
 
@@ -55,7 +55,7 @@ Before we can work with this query, we need to make a few changes to get its dat
 
 * *Remove the first column* – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this data source being a Web-based table
 * *Fix a few Errors* – one of the columns, **Health care quality**, contains a few ties in states' rankings, which was noted on the website by having the text *(tie)* after their numbers. That works well on the website, but it requires that we transform the column from text to data manually. It's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query
-* *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
+* *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it is simple
 
 To remove the first column, simply select the column and choose the **Home** tab from the ribbon, then **Remove Columns** as shown in the following figure.
 
@@ -136,7 +136,7 @@ We select **Table[edit]** because that includes the data we want, but it’s goi
 
 To get this data into shape, we take the following steps:
 
-* Remove the top two rows – they’re a result of the way that Web page’s table was created, and we don’t need them. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
+* Remove the top two row – it's a result of the way that Web page’s table was created, and we don’t need it. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
@@ -150,7 +150,7 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column2**, **Column3**, and then **Column5** through **Column10**. First select Column2, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
+* Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column1**, **Column3**, **Column4**, and then **Column6** through **Column11**. First select Column1, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
