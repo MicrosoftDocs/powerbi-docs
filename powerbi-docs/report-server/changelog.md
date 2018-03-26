@@ -27,6 +27,12 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## March 2018
 - **Power BI Report Server**
+    - *Version 1.2.6659.29714 (Build 15.0.2.385), Released: March 27, 2018*
+        - Bug fixes
+            - Fix for Export Data not working from Power BI Visuals
+            - Fix for images not being displayed correctly after upgrading to Power BI Report Server March release
+            - Fix for Test Connection not working correctly for SAP BW DataSources
+
     - *Version 1.2.6648.38132 (Build 15.0.2.378), Released: March 19, 2018*
         - Security Updates
         - Accessibility Improvements
