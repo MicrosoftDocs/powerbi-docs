@@ -31,7 +31,7 @@ You can create some of the most powerful data analysis solutions in Power BI Des
 
 ## Understand measures
 
-Measures are most often created for you automatically. In the Contoso Sales Sample file, select the checkbox next to the **SalesAmount** field in the **Sales** table in the Fields well, or drag **SalesAmount** onto the report canvas. A new column chart visualization appears, showing the sum total of all SalesAmounts in the Sales table.
+Measures are most often created for you automatically. In the Contoso Sales Sample file, select the checkbox next to the **SalesAmount** field in the **Sales** table in the Fields well, or drag **SalesAmount** onto the report canvas. A new column chart visualization appears, showing the sum total of all values in the SalesAmount column of the Sales table.
 
 ![SalesAmount chart](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
 
