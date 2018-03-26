@@ -39,6 +39,7 @@ You view your Power BI dashboards and reports in the Power BI service ([https://
 | [![Windows devices](media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](desktop-getting-started.md) |The Power BI mobile app for **Windows 10** runs on any Windows 10 device, including Windows 10 phones. Along with all the features of the other mobile apps, the Power BI mobile app for **Windows 10** offers some special functionality. For example, you can [pin a Power BI tile or dashboard to the Windows 10 Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) from the Power BI mobile app. Plus you can [run Power BI in presentation mode on Surface Hub](mobile-windows-10-app-presentation-mode.md) and in the Power BI mobile app for Windows 10. Get started with the [Power BI mobile app for Windows 10 devices](mobile-windows-10-phone-app-get-started.md). |
 
 ## Enterprise support for the Power BI mobile apps
+
 Organizations can use Microsoft Intune to manage devices and applications, including Power BI mobile apps for Android and iOS.
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
