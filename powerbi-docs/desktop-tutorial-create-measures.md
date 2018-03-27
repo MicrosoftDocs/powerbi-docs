@@ -58,7 +58,7 @@ DAX formulas use many of the same functions, operators, and syntax as Excel form
 When you create your own measure, it's added to the Fields list for the table you select and is called a *model* measure. Some advantages of model measures are that you can name them whatever you want, making them more identifiable; you can use them as arguments in other DAX expressions; and you can make them perform complex calculations very quickly.
 
 >[!TIP]
->Starting with the February 2018 release of Power BI Desktop, many common calculations are available as **quick measures**, which write the DAX formulas for you based on your inputs to a dialog box. These quick, powerful calculations are also great for learning DAX or kick-starting your own customized measures. To create or explore **quick measures**, select **New quick measure** in a table's **More options** list or under **Calculations** in the Home tab of the ribbon. See [Use quick measures to easily perform common and powerful calculations](desktop-quick-measures.md) for more about creating and using quick measures.
+>Starting with the February 2018 release of Power BI Desktop, many common calculations are available as **quick measures**, which write the DAX formulas for you based on your inputs to a dialog box. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. To create or explore **quick measures**, select **New quick measure** in a table's **More options** list or under **Calculations** in the Home tab of the ribbon. See [Use quick measures to easily perform common and powerful calculations](desktop-quick-measures.md) for more about creating and using quick measures.
 
 ### Create a measure
 
@@ -102,8 +102,8 @@ You want to analyze your net sales by subtracting discounts and returns from tot
     
 5.  To subtract the other two columns:
     1. After the closing parenthesis for the first expression, type a space, a minus operator (**-**), and another space. 
-    2. Enter another SUM function, and start typing "DiscountAmount" until you can choose the **Sales[DiscountAmount]** column as the argument. 
-    3. Enter a closing parenthesis, space, another minus operator, space, and another SUM function with **Sales[ReturnAmount]** as the argument and a closing parenthesis.
+    2. Enter another SUM function, and start typing "DiscountAmount" until you can choose the **Sales[DiscountAmount]** column as the argument. Add a closing parenthesis. 
+    3. Type a space, another minus operator, space, another SUM function with **Sales[ReturnAmount]** as the argument, and a closing parenthesis.
     
     ![Complete formula](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
@@ -115,7 +115,7 @@ If you run out of room for entering a formula or want it to be on separate lines
 
 ![Formula chevron](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
 
-You can separate parts of your formula on different lines by pressing Alt-Enter, or move things over by using Tab.
+You can separate parts of your formula on different lines by pressing **Alt-Enter**, or move things over by using **Tab**.
 
 ![Formula expanded](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
 
@@ -138,11 +138,11 @@ The chart now uses two measures: SalesAmount, which was summed automatically, an
 
 You can add a slicer to further filter net sales and sales amounts by calendar year.
     
-1.  Click a blank area next to the chart, then in **Visualizations**, click on the Table visualization. This creates a blank table visualization on the report canvas.
+1.  Click a blank area next to the chart, then in **Visualizations**, select the **Table** visualization. This creates a blank table visualization on the report canvas.
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_blanktable.png)
     
-2.  Drag the **Year** field from the **Calendar** table into the new blank table. Because Year is a numeric field, Power BI Desktop sums up its values, but that doesn’t make much sense as an aggregation. 
+2.  Drag the **Year** field from the **Calendar** table into the new blank table visualization. Because Year is a numeric field, Power BI Desktop sums up its values, but that doesn’t make much sense as an aggregation. 
     
     ![Year aggregation](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
     
@@ -154,7 +154,7 @@ You can add a slicer to further filter net sales and sales amounts by calendar y
 
     ![Change to slicer](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
     
-5.  Select any value in the Year slicer to filter all the other visualizations on the page accordingly. The Net Sales and SalesAmount measures re-calculate and display results in the context of the selected Year field. 
+5.  Select any value in the **Year** slicer to filter the **Net Sales and Sales Amount by Country** chart accordingly. The Net Sales and SalesAmount measures recalculate and display results in the context of the selected Year field. 
     
     ![Chart sliced by Year](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 
