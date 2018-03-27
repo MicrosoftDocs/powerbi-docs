@@ -315,7 +315,7 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premissese Gateway application
 
    ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
