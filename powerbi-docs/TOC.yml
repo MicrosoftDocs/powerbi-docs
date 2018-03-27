@@ -668,7 +668,7 @@
       href: desktop-ssas-multidimensional.md
     - name: "Connect to CSV files in Power BI Desktop"
       href: desktop-connect-csv.md
-    - name: "Connect to Adobe Analytics in Power BI Desktop (Preview)" 
+    - name: "Connect to Adobe Analytics in Power BI Desktop" 
       href: desktop-connect-adobe-analytics.md
     - name: "Connect to an Impala database in Power BI Desktop"
       href: desktop-connect-impala.md
