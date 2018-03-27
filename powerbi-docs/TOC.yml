@@ -669,7 +669,7 @@
     - name: "Connect to CSV files in Power BI Desktop"
       href: desktop-connect-csv.md
     - name: "Connect to Adobe Analytics in Power BI Desktop (Preview)" 
-      href: desktop-connect-csv.md
+      href: desktop-connect-adobe-analytics.md
     - name: "Connect to an Impala database in Power BI Desktop"
       href: desktop-connect-impala.md
     - name: "Connect to an OData feed in Power BI Desktop"
