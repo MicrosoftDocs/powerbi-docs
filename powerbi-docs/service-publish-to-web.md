@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 03/28/2018
 ms.author: maghan
 LocalizationGroup: Share your work
 ---
@@ -136,6 +136,8 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 3. Reports shared to you directly or through an organizational content pack.
 4. Reports in a group in which you are not an edit member.
 5. "R" Visuals are not currently supported in Publish to web reports.
+6. [Exporting Data from visuals in a report which has been published to web is not supported](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/16512895-export-data-from-embedded-code)
+7. [ArcGIS visuals are not supported](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/32207374-arcgis-publish-to-web)
 
 ## Tenant setting
 
