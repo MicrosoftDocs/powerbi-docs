@@ -394,7 +394,7 @@ You will get the 1033 error when your external Id that is configured in SAP HANA
 
 * In the logs you should see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
 
-  ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
@@ -412,10 +412,12 @@ You will get the 1033 error when your external Id that is configured in SAP HANA
 
 ### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
 
-You wil get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
+You will get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
 
 **Correction**
 * Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
+
+   ![delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
 
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
