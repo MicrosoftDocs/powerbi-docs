@@ -355,9 +355,15 @@ To determine the time it took to query the data source, you can do the following
 
 ## Kerberos
 
-### ImpersonationLevel: Identification
+If the underlying database server and On-Premises gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinegatewaycoredllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as starting point for troubleshooting.
+
+### ImpersonationLevel
 
 The ImpersonationLevel is related to the SPN setup or the local policy setting
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
 
 **Correction**
 
