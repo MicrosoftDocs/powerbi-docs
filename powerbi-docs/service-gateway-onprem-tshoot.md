@@ -355,7 +355,7 @@ To determine the time it took to query the data source, you can do the following
 
 ## Kerberos
 
-If the underlying database server and On-Premises gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinegatewaycoredllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as starting point for troubleshooting.
+If the underlying database server and On-Premises gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinegatewaycoredllconfig-1) on the gateway, and investigate based on the errors/traces in the gateway’s log files as starting point for troubleshooting.
 
 ### ImpersonationLevel
 
