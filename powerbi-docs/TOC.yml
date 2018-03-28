@@ -962,6 +962,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed Power BI content into an application for your customers for Sovereign Clouds"
+      href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: "Embed custom layouts into an app"
       href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
