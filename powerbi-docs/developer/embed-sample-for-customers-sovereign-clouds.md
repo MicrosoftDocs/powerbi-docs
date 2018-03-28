@@ -23,7 +23,7 @@ ms.author: maghan
 # Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-Unlike the public cloud, there are sovereign clouds that have different government affiliations.
+Power BI also supports sovereign (private) clouds as well as a public one. Each private cloud has its own  affiliation. The different private clouds are:
 
 * U.S. Government Community Cloud (GCC)
 
@@ -121,7 +121,7 @@ If you downloaded the [Embedding for your customer sample](https://github.com/Mi
 
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different private clouds affiliations, there are distinct URLs to get an access token for your application.
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different private cloud affiliations, there are distinct URLs to get an access token for your application.
 
 * Government Community Cloud (GCC) - https://login.microsoftonline.com
 
