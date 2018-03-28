@@ -23,7 +23,7 @@ ms.author: maghan
 # Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-Power BI also supports sovereign (private) clouds. Each private cloud has its own affiliation. The different private clouds are:
+Power BI also supports sovereign (private) clouds. Each sovereign cloud has its own affiliation. The different sovereign clouds are:
 
 * U.S. Government Community Cloud (GCC)
 
@@ -107,7 +107,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 ```
 
 ## Step 1 - register an app in Azure AD
-You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are differernt private cloud affiliations, there are distinct URLs to register your application.
+You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are differernt sovereign cloud affiliations, there are distinct URLs to register your application.
 
 * Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
 
@@ -121,7 +121,7 @@ If you downloaded the [Embedding for your customer sample](https://github.com/Mi
 
 
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different private cloud affiliations, there are distinct URLs to get an access token for your application.
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different sovereign cloud affiliations, there are distinct URLs to get an access token for your application.
 
 * Government Community Cloud (GCC) - https://login.microsoftonline.com
 
@@ -132,7 +132,6 @@ Within your application, you will first need to get an **access token**, from Az
 * Power BI for Germany cloud - https://login.microsoftonline.de
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
-
 
 ## Step 3 - get a content item
 To embed your Power BI content, you will need to do a couple of things to make sure it embeds correctly. While all of these steps can be done with the REST API directly, the sample application, and the examples here, are made with the .NET SDK.
@@ -273,7 +272,6 @@ var embedConfig = new EmbedConfig()
     Id = report.Id
 };
 ```
-
 ## Step 4 - load an item using JavaScript
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
@@ -403,6 +401,7 @@ An application sample of this is available within the [Embedding for your organi
 ```
 
 ## Next steps
+
 * A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * For more information about JavaScript API please reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 * For more information about for Power BI for Germany cloud please reference [Power BI for Germany cloud FAQ](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
