@@ -69,7 +69,7 @@ Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
 For latest pricing information, see [Power BI Pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 > [!NOTE]
-> Users with Pro licenses assigned will have 30 days of full access after the subscription ends, but after that the content moves back to free. When this happens you will see your subscription show as "expired" in teh admin portal.
+> Users with Pro licenses assigned will have 30 days of full access after the subscription ends, but after that the content moves back to free. When this happens you will see your subscription show as "expired" in the admin portal.
 >
 
 ## Next steps
