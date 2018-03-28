@@ -47,7 +47,7 @@ When you purchase Power BI Premium SKUs, your tenant will receive the correspond
 
 > [!NOTE]
 > You will have 30 days of full access after your subscription ends, but after that your content reverts to a shared capacity. Models that are > 1 GB will not be supported with a regular shared license.
-> 
+>
 
 ## Capacity admins
 > [!NOTE]
