@@ -23,7 +23,7 @@ ms.author: maghan
 # Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-Power BI also supports sovereign (private) clouds as well as a public one. Each private cloud has its own  affiliation. The different private clouds are:
+Power BI also supports sovereign (private) clouds. Each private cloud has its own affiliation. The different private clouds are:
 
 * U.S. Government Community Cloud (GCC)
 
