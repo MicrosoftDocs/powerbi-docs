@@ -3,7 +3,7 @@ title: On-premises data gateway
 description: This is an overview of the on-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 02/22/2018
-ms.author: davidi
+ms.date: 03/26/2018
+ms.author: maghan
 
 LocalizationGroup: Gateways
 ---
@@ -87,6 +87,11 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 <!-- How the gateway works -->
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
+
+## Limitations and Considerations
+* [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+) is not currently supported
+* [Access Online](https://products.office.com/en-us/access) is not currently supported
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
