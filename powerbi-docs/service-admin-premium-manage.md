@@ -46,7 +46,7 @@ To take advantage of dedicated capacity, you will need to purchase a subscriptio
 When you purchase Power BI Premium SKUs, your tenant will receive the corresponding number of v-cores for use in running capacities. For example, purchasing a Power BI Premium P3 SKU provides the tenant with 32 v-cores.
 
 > [!NOTE]
-> You will have 30 days of full access after your subscription ends. Once the subscription ends the models that are > 1 GB will not be supported.
+> You will have 30 days of full access after your subscription ends, but after that your content reverts to a shared capacity. Models that are > 1 GB will not be supported with a regular shared license.
 > 
 
 ## Capacity admins
