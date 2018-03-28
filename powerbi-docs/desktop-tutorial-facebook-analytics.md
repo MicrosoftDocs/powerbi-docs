@@ -22,57 +22,51 @@ ms.author: davidi
 LocalizationGroup: Learn more
 ---
 # Tutorial: Facebook analytics using Power BI Desktop
-In this tutorial you learn how to import and visualize data from **Facebook**. During the tutorial you'll learn how to connect to a specific Facebook page (the Power BI page), apply data transformation steps, and create some visualizations.
+In this tutorial you learn how to import data from Facebook into Power BI Desktop. You'll connect and import data from the Power BI Facebook page, apply transformations to the imported data, and use the data in a Power BI Desktop report.
 
-Here are the steps you'll take:
+## Connect to a Facebook page
 
-* **Task 1:** Connect to a Facebook Page
-* **Task 2**: Create visualizations using the Report view
-  
-  * **Step 1**: Create a Treemap visualization
-* **Task 3**: Shape data in the Query view
-  
-  * **Step 1**: Split the date-time column into two
-  * **Step 2**: Add an aggregate value from a related table
-* **Task 4**: Create additional visualizations using the Report view
-  
-  * **Step 1**: Load the query to your report
-  * **Step 2**: Create a Line chart and a Bar chart
-
-## **Task 1: Connect to a Facebook page**
-In this task you import data from the [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi)site (here's the URL: *https://www.facebook.com/microsoftbi )*.
-
-Anyone can connect to that page, and follow these steps - no special credentials (other than your own Facebook account, which you use in this step) are required.
+You don't need any special credentials to connect and import data from the [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi) page (*https://www.facebook.com/microsoftbi*) except for your personal Facebook account.
 
 ![](media/desktop-tutorial-facebook-analytics/1.png)
 
-1. In the **Getting Started** dialog or in the **Home ribbon tab**, select **Get Data.**
-2. The **Get Data** dialog appears, letting you select from all sorts of data sources. Select **Facebook** from the **Other** group.
+1. Open Power BI Desktop and select **Get data** in the **Getting Started** dialog, or in the **Home** ribbon tab, select **Get Data** and then select **More...**.
+
+   2. In the **Get Data** dialog, select **Facebook** from the **Online Services** group, and then select **Connect**.
    
    ![](media/desktop-tutorial-facebook-analytics/t_fb_getdataother.png)
    
-   When you select **Connect**, a dialog appears to alert you to the risks of using a third-party service.
+   A dialog appears to alert you to the risks of using a third-party service.
    
    ![](media/desktop-tutorial-facebook-analytics/t_fb_connectingtotps.png)
-3. When you select Continue, the **Facebook** dialog box appears where you can paste the page name (**microsoftbi**) into the **Username** text box. Select **Posts** from the **Connection** drop down.
+   
+3. Select **Continue**. The **Facebook** dialog box appears.
+   
+4. Type or paste the page name **microsoftbi** into the **Username** text box, select **Posts** from the **Connection** dropdown, and then select **OK**.
    
    ![](media/desktop-tutorial-facebook-analytics/2.png)
-4. Click **OK**.
-5. When prompted for credentials, sign in using your Facebook account and allow Power BI access through your account.
+   
+5. When prompted for credentials, sign in to your Facebook account, and allow Power BI access through your account.
    
    ![](media/desktop-tutorial-facebook-analytics/facebookcredentials.png)
 
-After establishing a connection to the page, you will see the data being loaded in the model. 
+   After connecting to the Power BI Facebook page, you see the page's **Posts** data in the model. Select **Load**.
+   
+   ![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadpreview.png)
+   
+   Once the data is loaded into Power BI Desktop, a new query called **Query1** appears in the Fields list of Power BI Desktop. 
+   
+6. To see and interact with the data in Power BI Desktop **Power Query Editor**, right-click **Query1**, or hover over it and select the **More options** ellipsis (...), and then select **Edit Query** from the menu. 
+   
+   You can also select **Edit Queries** from the **External data** area of the Home tab in the Power BI Desktop ribbon, and then select **Edit Queries** from the dropdown.
+   
+   The Power BI Desktop **Power Query Editor** window opens and displays the imported data from the Power BI Facebook page. Later in this tutorial, you will perform transformations on the data in the **Power Query Editor**.
+   
+   ![](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
+   
+7. For now, to load the data into Power BI Desktop, select **Close & Apply** from the **Home** tab of the ribbon.
 
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadpreview.png)
-
-From there, **Query Editor** displays the data. **Query Editor** is part of Power BI Desktop, but loads in a separate window, and is where you perform all your transformations on your data connections.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
-
-When your data is how you want it, you can load it into Power BI Desktop. Select **Load & Close** from the **Home** ribbon.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
+   ![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
 
 You'll see a dialog that displays the progress of loading the data into the Power BI Desktop data model.
 
@@ -82,12 +76,9 @@ Once loaded, you’ll be taken to the **Report** view where the columns from the
 
 ![](media/desktop-tutorial-facebook-analytics/fbdesigner1.png)
 
-## **Task 2: Create visualizations using the Report view**
-Now that you have landed the data from the page, you can quickly and easily gain insights about your data, using visualizations.
+## Create data visualizations in the report view
 
-**Step 1:** Create a Treemap visualization
-
-Creating a visualization is easy, we just drag a field from the **Field list** and drop it on the **Report canvas.**
+Now that you have landed the data from the Facebook page, you can quickly and easily gain insights about your data by using visualizations. Creating a visualization is easy; just drag a field from the **Fields** onto the report canvas.
 
 Drag the **type** field onto the **Report** canvas. Power BI Desktop creates a new visualization in the **Report canvas**. Next, drag **type** from **Fields** (the same field you just dragged onto the **Report** canvas) onto the **Value** area to create a **Bar** visualization.
 
