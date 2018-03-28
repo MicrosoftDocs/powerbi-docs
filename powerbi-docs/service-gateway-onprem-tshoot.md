@@ -361,15 +361,15 @@ If the underlying database server and On-Premises gateway are not configured pro
 
 ### ImpersonationLevel
 
-The ImpersonationLevel is related to the SPN setup or the local policy setting
+The ImpersonationLevel is related to the SPN setup or the local policy setting.
 
 ```
 [DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
 ```
 
-**Correction**
+**Solution**
 
-Please follow these steps:
+Follow these steps to solve the issue:
 1. Setup a SPN for the On-Premises Gateway
 2. Setup constrained delegation in your Active Directory (AD)
 
@@ -377,7 +377,7 @@ Please follow these steps:
 
 The FailedToImpersonateUserException will happen if you are not able to impersonate on behalf of another user. This could also happen if the account you are trying to impersonate is from another domain than the one the gateway service domain is on (this is a limitation).
 
-**Correction**
+**Solution**
 * Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
 * Ensure that the userid it's trying to impersonate is a valid AD Account
 
@@ -389,7 +389,7 @@ You will get the 1033 error when your external Id that is configured in SAP HANA
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
 ```
 
-**Correction**
+**Solution**
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
@@ -416,7 +416,7 @@ You will get the 1033 error when your external Id that is configured in SAP HANA
 
 You will get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
 
-**Correction**
+**Solution**
 * Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
 
    ![delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
