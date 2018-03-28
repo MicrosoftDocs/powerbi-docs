@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI content into an application for your customers for US Government
+title: Embed Power BI content into an application for your customers for sovereign clouds
 description: Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers.
 services: powerbi
 documentationcenter: ''
@@ -16,28 +16,29 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/27/2018
+ms.date: 03/28/2018
 ms.author: maghan
 
 ---
-# Embed a Power BI dashboard, tile, or report into your application for US Government
+# Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-Unlike the public cloud, the US Government cloud has three different category sections.
+Power BI also supports sovereign (private) clouds. Each sovereign cloud has its own affiliation. The different sovereign clouds are:
 
-* Government Community Cloud (GCC)
+* U.S. Government Community Cloud (GCC)
 
-* Military Contractors (DoDCON)
+* U. S. Military Contractors (DoDCON)
 
-* Military (DoD)
+* U. S. Military (DoD)
+
+* Power BI for Germany cloud
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI US Government account** account. If you don't have an account set up, you can [sign up for a government Power BI account](../service-govus-signup.md).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government, you can [sign up for a U. S. government Power BI account](../service-govus-signup.md) or [a Power BI for Germany cloud account](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
->
 >
 
 To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
@@ -90,8 +91,23 @@ This article shows the code used in the [Embedding for your customer sample](htt
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
+* Power BI for Germany cloud parameters
+	1. Overwrite Cloud.config file with Power BI for Germany cloud content.
+	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
+    3. Add the Power BI for Germany cloud parameters in the web.config file as follows.
+
+```
+<add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
+
+<add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
+
+<add key="apiUrl" value="https://api.powerbi.de/" />
+
+<add key="embedUrlBase" value="https://app.powerbi.de" />
+```
+
 ## Step 1 - register an app in Azure AD
-You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are three differernt category sections depending on what type of government you are in, there are three distinct URLs to register your application.
+You must register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are differernt sovereign cloud affiliations, there are distinct URLs to register your application.
 
 * Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
 
@@ -99,16 +115,21 @@ You must register your application with Azure AD in order to make REST API calls
 
 * Military (DoD) - https://app.mil.powerbigov.us/apps
 
+* Power BI for Germany cloud - https://app.powerbi.de/apps
+
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
+
 ## Step 2 - get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are three different category sections depending on what type of government you are in, there are two distinct URLs to get an access token for your application.
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different sovereign cloud affiliations, there are distinct URLs to get an access token for your application.
 
-* Government Community Cloud (GCC) - login.microsoftonline.com
+* Government Community Cloud (GCC) - https://login.microsoftonline.com
 
-* Military Contractors (DoDCON) - login.microsoftonline.us
+* Military Contractors (DoDCON) - http://login.microsoftonline.us
 
-* Military (DoD) - login.microsoftonline.us
+* Military (DoD) - https://login.microsoftonline.us
+
+* Power BI for Germany cloud - https://login.microsoftonline.de
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 
@@ -251,7 +272,6 @@ var embedConfig = new EmbedConfig()
     Id = report.Id
 };
 ```
-
 ## Step 4 - load an item using JavaScript
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
@@ -381,13 +401,13 @@ An application sample of this is available within the [Embedding for your organi
 ```
 
 ## Next steps
-A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
-More information is available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* For more information about JavaScript API please reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+* For more information about for Power BI for Germany cloud please reference [Power BI for Germany cloud FAQ](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
+* [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 
-
-Limitations
+Limitations and Considerations
 * GCC accounts only support P and EM capacities now
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

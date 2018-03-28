@@ -3,7 +3,7 @@ title: Troubleshooting the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: markingmyname
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: maghan
 
 LocalizationGroup: Gateways
 ---
@@ -315,11 +315,13 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TraceVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
+### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premissese Gateway application
+
+   ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Enabling TraceVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
+> Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
 > 
 > 
 
@@ -353,6 +355,72 @@ To determine the time it took to query the data source, you can do the following
    > 
    > 
 
+## Kerberos
+
+If the underlying database server and On-premises data gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
+
+### ImpersonationLevel
+
+The ImpersonationLevel is related to the SPN setup or the local policy setting.
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
+
+**Solution**
+
+Follow these steps to solve the issue:
+1. Setup a SPN for the On-Premises Gateway
+2. Setup constrained delegation in your Active Directory (AD)
+
+### FailedToImpersonateUserException: Failed to create windows identity for user userid
+
+The FailedToImpersonateUserException will happen if you are not able to impersonate on behalf of another user. This could also happen if the account you are trying to impersonate is from another domain than the one the gateway service domain is on (this is a limitation).
+
+**Solution**
+* Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
+* Ensure that the userid it's trying to impersonate is a valid AD Account
+
+### General error; 1033 error while parsing protocol
+
+You will get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you will see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
+
+**Solution**
+* SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* In the logs you should see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
+
+### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
+
+You will get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
+
+**Solution**
+* Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
+
+   ![delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -379,4 +447,3 @@ For additional information about troubleshooting refresh scenarios, take a look 
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
