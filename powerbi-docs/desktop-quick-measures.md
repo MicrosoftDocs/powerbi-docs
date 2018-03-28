@@ -22,11 +22,11 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use Quick measures to easily perform common and powerful calculations
-You can use **Quick measures** to quickly and easily perform common, powerful calculations. A **Quick measure** runs a set of DAX commands behind the scenes (you don’t have to write the DAX – it’s done for you) based input you provide in a dialog box, then presents the results for you to use in your report. Best of all, you can see the DAX that’s executed by the Quick measure, and jump-start or expand your own DAX knowledge.
+You can use **Quick measures** to quickly and easily perform common, powerful calculations. A **Quick measure** runs a set of DAX commands behind the scenes (you don’t have to write the DAX – it’s done for you) based on input you provide in a dialog box, then presents the results for you to use in your report. Best of all, you can see the DAX that’s executed by the Quick measure and jump-start or expand your own DAX knowledge.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
-You create **Quick measures** by right-clicking a field in the **Fields** well, then selecting **Quick measures** from the menu that appears. You can also right-click any value in the **Values** pane of an existing visual (such as the *Values* field in a *Bar chart* visual). There are many available categories of calculations, and ways to modify each calculation to fit your needs.
+You create **Quick measures** by right-clicking a field in the **Fields** well, then selecting **Quick measures** from the menu that appears. You can also right-click any value in the **Values** pane of an existing visual (such as the *Values* field in a *Bar chart* visual). There are many available categories of calculations and ways to modify each calculation to fit your needs.
 
 ### Quick measures now generally available
 
@@ -43,9 +43,9 @@ To create a **Quick measure**, right-click on a field (any field) in the **Field
 
 Modeling must be available on the dataset currently loaded in order for **Quick measures** to be available. As such, live connections (such as a connection to a Power BI service dataset) will not display the **Quick measures** menu item when the **Fields** list is right-clicked, with the exception of SSAS live connections. 
 
-When using SQL Server Analysis Services (SSAS) live connections, some **Quick measures** are available. **Power BI Desktop** displays only the collection of **Quick measures** that are supported for the version of SSAS to which the connection is made. So if you are connected to a SSAS live data source, and you do not see certain **Quick measures** in the list, it's because the SSAS version to which you are connected does not support the DAX measure used to implement that **Quick measure**.
+When using SQL Server Analysis Services (SSAS) live connections, some **Quick measures** are available. **Power BI Desktop** displays only the collection of **Quick measures** that are supported for the version of SSAS to which the connection is made. So, if you are connected to a SSAS live data source, and you do not see certain **Quick measures** in the list, it's because the SSAS version to which you are connected does not support the DAX measure used to implement that **Quick measure**.
 
-When selected from the right-click menu, the following **Quick measures** window appears, allowing you to select the calculation you want, and the fields against which you want to calculation to be run.
+When selected from the right-click menu, the following **Quick measures** window appears, allowing you to select the calculation you want and the fields against which you want the calculation to be run.
 
 ![](media/desktop-quick-measures/quick-measures_03.png)
 
@@ -56,14 +56,14 @@ When you select the drop-down menu, you're presented with the long list of avail
 There are five distinct groups of Quick measure calculation types, each with a collection of calculations. Those groups and calculations are the following:
 
 * **Aggregate per category**
-  * Average within category
-  * Variance within category
-  * Max within category
-  * Min within category
+  * Average per category
+  * Variance per category
+  * Max per category
+  * Min per category
   * Weighted average per category
 * **Filters**
   * Filtered value
-  * Difference from baseline
+  * Difference from filtered value
   * Percentage difference from filtered value
   * Sales from new categories
 * **Time intelligence**
@@ -89,7 +89,7 @@ There are five distinct groups of Quick measure calculation types, each with a c
   * Star rating
   * Concatenated list of values
 
-We anticipate adding to these calculations, and want to hear from you about which **Quick measures** you'd like to see, and if you have ideas (including underlying DAX formulas) for **Quick measures** that you'd like to submit for consideration. More on that at the end of this article.
+We anticipate adding to these calculations, want to hear from you about which **Quick measures** you'd like to see, and if you have ideas (including underlying DAX formulas) for **Quick measures** that you'd like to submit for consideration. More on that at the end of this article.
 
 ## Example of Quick measures
 Let's take a look at an example of these **Quick measures** in action.
@@ -98,7 +98,7 @@ The following **Matrix** visual shows a table of sales for various electronics p
 
 ![](media/desktop-quick-measures/quick-measures_05.png)
 
-When we right-click the **Values** field well and select **Quick measures**, we can select *Average within category* as the *Calculation*, then select *Sum of SalesAmount* as the *Base value*, then specify *SalesAmount* by dragging that field from the *Fields* box on the right pane, into the *Category* section on the left.
+When we right-click the **Values** field well and select **Quick measures**, we can select *Average per category* as the *Calculation*, then select *Sum of SalesAmount* as the *Base value*, then specify *SalesAmount* by dragging that field from the *Fields* box on the right pane, into the *Category* section on the left.
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
@@ -125,15 +125,15 @@ Another great advantage of the **Quick measures** feature is that it directly sh
 
 ![](media/desktop-quick-measures/quick-measures_10.png)
 
-This is nice by itself, since it shows you the formula behind the measure. But more importantly, perhaps, it lets you use **Quick measures** to see how the underlying DAX formulas should be created.
+This is nice by itself, since it shows you the formula behind the measure. But, more importantly, perhaps, it lets you use **Quick measures** to see how the underlying DAX formulas should be created.
 
-Imagine you need to do a year-over-year calculation, but you're not quite sure how to structure the DAX formula (or, you have no idea where to start!). Instead of banging your head on the desk, you could create a **Quick measure** using the **Year over year change** calculation, and see what happens. As in, create the **Quick measure** and see how it appears in your visual, see how the DAX formula worked, then make changes either directly to the DAX, or create another measure, until the calculations meet your needs or expectations.
+Imagine you need to do a year-over-year calculation, but you're not quite sure how to structure the DAX formula (or, you have no idea where to start!). Instead of banging your head on the desk, you could create a **Quick measure** using the **Year over year change** calculation and see what happens. As in, create the **Quick measure** and see how it appears in your visual, see how the DAX formula worked, then make changes either directly to the DAX, or create another measure until the calculations meet your needs or expectations.
 
 It's like having a quick teacher that immediately responds to your what-if questions by a few clicks. You can always delete those measures from your model if you don't like them - that's as easy as right-clicking the measure and selecting **delete**.
 
 ![](media/desktop-quick-measures/quick-measures_11.png)
 
-And once you do have the measure perfected, you can rename it however you'd like, using the same right-click menu.
+And, once you do have the measure perfected, you can rename it however you'd like, using the same right-click menu.
 
 ## Limitations and considerations
 There are a few limitations and considerations to keep in mind.
