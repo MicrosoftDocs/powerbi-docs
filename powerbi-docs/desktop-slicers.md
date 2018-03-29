@@ -55,7 +55,7 @@ For example, you can place a slicer on **Page 2** of your report, as shown in th
 
 Using the **Add to all** link in the pane applies the selected slicer to all pages in the report.
 
-Note that the selections shown on the **Sync Slicers** pane applies to the *selected slicer* only. You can apply multiple slicers to various pages, and use the pane to define how each slicer is individually applied across the various pages in your report. 
+Note that the selections shown on the **Sync Slicers** pane applies to the *selected slicer* only. You can apply multiple slicers to various pages and use the pane to define how each slicer is individually applied across the various pages in your report. 
 
 While your selection of slicers can be synchronized, other selections such as styling, editing, and deleting are *not* synchronized. 
 
