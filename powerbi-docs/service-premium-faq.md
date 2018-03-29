@@ -117,7 +117,7 @@ For information regarding the Extended Pro Trial offering, see [Extended Pro Tri
 
 ## Power BI Free
 **What capabilities are being added to the free service?**  
-Beginning June 1, 2017, the free service will have capabilities equivalent to Power BI Pro, except for sharing, enterprise distribution, and collaboration. This includes the same 10 GB workspace limit, up to 8 daily scheduled refreshes for datasets, and maximum 1M/hour streaming data rate. We’re also including access to all data sources, including those available through the on-premises data gateway.
+Beginning June 1, 2017, the free service will have capabilities equivalent to Power BI Pro, except for sharing, enterprise distribution, and collaboration. This includes the same 10 GB workspace limit, up to 8 daily scheduled refreshes for datasets, and maximum 1M/hour streaming data rate. We’re also including access to all data sources, including those available through the On-premises data gateway.
 
 **Which Power BI Pro capabilities are not available with the free service?**  
 Peer-to-peer dashboard sharing, app workspaces (previously referred to as group workspaces), Analyze in Excel and Power BI Apps (unless backed by Premium capacity) are capabilities limited to Power BI Pro.
