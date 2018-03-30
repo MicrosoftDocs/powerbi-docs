@@ -45,11 +45,9 @@ For starters, let's add a custom column to calculate rank based on all data bein
 
 In the **Custom Column** dialog, in **New column name**, enter _New Rank_, and in **Custom column formula**, enter the following:
 
-    ```
     ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
-    ```
 
-Make sure the status message reads _No syntax errors have been detected._ and click **OK**.
+Make sure the status message reads _'No syntax errors have been detected.'_ and click **OK**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
 
@@ -63,17 +61,17 @@ You can also *transform* column data types from the **Transform** ribbon. Here�
 
 ![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
-Note that in **Query Settings**, the **Applied Steps** reflect any shaping steps applied to the data. If I want to remove any step from the shaping process, I simply select the **X** to the left of the step. In the following image, **Applied Steps** reflects the steps so far: connecting to the website (**Source**); selecting the table (**Navigation**); and while loading the table, Query Editor automatically changed text-based number columns from *Text* to *Whole Number* (**Changed Type**). The last two steps show our previous actions with **Added Custom** and **Changed Type1**. One column of rankings was not automatically changed to a number-based type, and we'll find out why in the next few paragraphs.
+Note that in **Query Settings**, the **Applied Steps** reflect any shaping steps applied to the data. If I want to remove any step from the shaping process, I simply select the **X** to the left of the step. In the following image, **Applied Steps** reflects the steps so far: connecting to the website (**Source**); selecting the table (**Navigation**); and while loading the table, Query Editor automatically changed text-based number columns from *Text* to *Whole Number* (**Changed Type**). The last two steps show our previous actions with **Added Custom** and **Changed Type1**. 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
 
 Before we can work with this query, we need to make a few changes to get its data where we want it:
 
-* *Adjust the rankings by removing a column* - we have decided **Cost of living** is a non-factor in our results. This alone will not change the data, though it's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query.
-* *Fix a few errors* – since we removed a column, we now need to readjust our calculations in the **New Rank** column. This involves changing the formula.
+* *Adjust the rankings by removing a column* - we have decided **Cost of living** is a non-factor in our results. After removing this column, we find the issue that the data remains unchanged, though it's easy to fix using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query.
+* *Fix a few errors* – since we removed a column, we need to readjust our calculations in the **New Rank** column. This involves changing a formula.
 * *Sort the data* - based on the **New Rank** and **Rank** columns. 
-* *Replace data* - we will highlight how to replace a specific value and the value of inserting an **Applied Step**.
-* *Change the table name* – that **Table 0** is not a useful descriptor, but changing it is simple
+* *Replace data* - we will highlight how to replace a specific value and the need of inserting an **Applied Step**.
+* *Change the table name* – that **Table 0** is not a useful descriptor, but changing it is simple.
 
 To remove the **Cost of living** column, simply select the column and choose the **Home** tab from the ribbon, then **Remove Columns** as shown in the following figure.
 
@@ -97,32 +95,28 @@ To fix the errors, select the _New Rank_ column, then display the column's data 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
 
-Now you can change the formula to the following by removing the _Cost of living_ parameter and changing the divisor. 
+Now you can remove the _Cost of living_ parameter and decrement the divisor, by changing the formula to the following: 
 
-    ```
     Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
-    ```
 
-Select the green checkmark to the left of the formula box or press **Enter**, and the data should be replaced by revised values and the **Added Custom** step now completes *with no errors*.
+Select the green checkmark to the left of the formula box or press **Enter**, and the data should be replaced by revised values and the **Added Custom** step should now complete *with no errors*.
 
 > [!NOTE]
 > You can also **Remove Errors** (using the ribbon or the right-click menu), which removes any rows that have errors. In this case it would’ve removed all the rows from our data, and we didn’t want to do that – we like all our data, and want to keep it in the table.
 
-Now we need to sort the data based on the **New Rank** column. First select last applied step, **Changed Type1** to get to the most recent data. Then, select drop-down located next to the **New Rank** column header and select **Sort Ascending**.
+Now we need to sort the data based on the **New Rank** column. First select the last applied step, **Changed Type1** to get to the most recent data. Then, select drop-down located next to the **New Rank** column header and select **Sort Ascending**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_sort.png)
 
-Notice the data is now sorted according to **New Rank**, but if you look in the **Rank** column, you will notice the data is not sorted properly in cases where the **New Rank** value is a tie. To fix this, change the formula in the **Formula Bar** to the following:
+Notice the data is now sorted according to **New Rank**.  However, if you look in the **Rank** column, you will notice the data is not sorted properly in cases where the **New Rank** value is a tie. To fix this, select the **New Rank** column and change the formula in the **Formula Bar** to the following:
 
-    ```
     = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
-    ```
 
 Select the green checkmark to the left of the formula box or press **Enter**, and the rows should now be ordered in accordance with both _New Rank_ and _Rank_.
 
 In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Query Editor will automatically insert a new step directly after the currently selected **Applied Step**. Let's give that a try.
 
-First, we select the **Applied Step** prior to adding the custom column. This would be the _Removed Columns_ step. Here we will replace the value of the _Weather_ ranking in Arizona. Right-click the appropriate cell that contains Arizona's _Weather_ ranking and select *Replace Values...* from the menu that appears. Note which **Applied Step** is currently selected (the step prior to changing the type).
+First, select the **Applied Step** prior to adding the custom column; this would be the _Removed Columns_ step. Here we will replace the value of the _Weather_ ranking in Arizona. Right-click the appropriate cell that contains Arizona's _Weather_ ranking and select *Replace Values...* from the menu that appears. Note which **Applied Step** is currently selected (the step prior to the _Added Custom_ step).
 
 ![](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
 
@@ -132,7 +126,7 @@ Since we're inserting a step, Query Editor warns us about the danger of doing so
 
 Change the value to _51_ and the data for Arizona is replaced. When you create a new Applied Step, Query Editor names it based on the action - in this case, **Replaced Value**. When you have more than one step with the same name in your query, Query Editor adds a number (in sequence) to each subsequent **Applied Step** to differentiate between them.
 
-Now select the last **Applied Step**, _Sorted Rows_, and notice the data has changed regarding Arizona's ranking.  This is because we inserted the _Replaced Value_ step in the right place, before the _Added Custom_ step.
+Now select the last **Applied Step**, _Sorted Rows_, and notice the data has changed regarding Arizona's new ranking.  This is because we inserted the _Replaced Value_ step in the right place, before the _Added Custom_ step.
 
 Okay that was a little involved, but it was a good example of how powerful and versatile Query Editor can be.
 
