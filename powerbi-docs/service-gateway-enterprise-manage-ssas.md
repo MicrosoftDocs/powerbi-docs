@@ -1,6 +1,6 @@
 ---
 title: Manage your data source - Analysis Services
-description: How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode.
+description: How to manage the On-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -22,7 +22,7 @@ ms.author: davidi
 LocalizationGroup: Gateways
 ---
 # Manage your data source - Analysis Services
-Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+Once you have installed the On-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
 
@@ -73,7 +73,7 @@ You will then want to fill in the information for the data source which includes
 The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance.
 
 > [!NOTE]
-> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
+> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main On-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -142,11 +142,11 @@ In the **Power BI service** the following occurs:
        firstName.lastName@contoso.com
 
 > [!NOTE]
-> Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* sending the user name string to the on-premises data gateway.
+> Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* sending the user name string to the On-premises data gateway.
 > 
 > 
 
-On the on-premises data gateway with configurable Custom User Mapping, do the following:
+On the On-premises data gateway with configurable Custom User Mapping, do the following:
 
 1. Find Active Directory to search (automatic, or configurable)
 2. Look up the attribute of the AD Person (such as *Email*) based on incoming UPN string (“firstName.lastName@contoso.com”) from the **Power BI service**.
@@ -157,14 +157,14 @@ On the on-premises data gateway with configurable Custom User Mapping, do the fo
 How to configure your gateway to perform the AD Lookup:
 
 1. Download and install the latest gateway
-2. In the gateway, you need to change the **on-premises data gateway service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the gateway service for the change to take effect.  Go to the gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
+2. In the gateway, you need to change the **On-premises data gateway service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the gateway service for the change to take effect.  Go to the gateway app on your machine (search for “On-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
 3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
    
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
    
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
-5. Restart the **on-premises data gateway** service for the configuration change to take effect.
+5. Restart the **On-premises data gateway** service for the configuration change to take effect.
 
 ### Working with mapping rules
 To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
@@ -222,7 +222,7 @@ On the Users tab for the data source, you can add, and remove, users, or securit
 After you have created the data source, it will be available to use with either live connections, or through scheduled refresh.
 
 > [!NOTE]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the On-premises data gateway!
 > 
 > 
 
@@ -243,6 +243,6 @@ If you are listed in the **Users** tab of the data source configured within the 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -1,6 +1,6 @@
 ---
 title: Manage your data source - Oracle
-description: How to manage the on-premises data gateway and data sources that belong to that gateway.
+description: How to manage the On-premises data gateway and data sources that belong to that gateway.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -22,7 +22,7 @@ ms.author: davidi
 LocalizationGroup: Gateways
 ---
 # Manage your data source - Oracle
-Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
+Once you have installed the On-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -39,7 +39,7 @@ For **32-bit** versions of Power BI Desktop, use the following link to download 
 
 * [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-For **64-bit** versions of Power BI Desktop, or for the on-premises data gateway, use the following link to download and install the **64-bit** Oracle client:
+For **64-bit** versions of Power BI Desktop, or for the On-premises data gateway, use the following link to download and install the **64-bit** Oracle client:
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
@@ -99,7 +99,7 @@ You will then want to fill in the information for the data source which includes
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use an account that is created within Oracle instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
+> All queries to the data source will run using these credentials. For more information, see the main On-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -140,7 +140,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [!WARNING]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the On-premises data gateway!
 > 
 > 
 
@@ -174,12 +174,12 @@ These errors could occur if either the Oracle client is not installed, or if it 
 > 
 > 
 
-For additional troubleshooting information relating to the gateway, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
+For additional troubleshooting information relating to the gateway, see [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md).
 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
