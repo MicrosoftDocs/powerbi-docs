@@ -193,15 +193,17 @@ That's better, but the data labels all have a **.0** decimal place, which is dis
    - Right-clicking the column header and selecting **Change type > Whole Number**, or
    - Selecting **Data type: Decimal Number** in the **Transform** group of the Home tab, or the **Any Column** group of the **Transform** tab, and selecting **Whole Number**.
    
-   The icon in the column header changes to ***123***, denoting a whole number data type.
+   The icon in the column header changes to **123**, denoting a whole number data type.
    
    ![Change data type](media/desktop-tutorial-facebook-analytics/change-datatype.png)
    
 3. Select **Close & Apply**, or just **Apply** to apply the changes while keeping the Power Query Editor window open. Once the changes load, the data labels on the chart become whole numbers. 
    
+   ![Chart with whole numbers](media/desktop-tutorial-facebook-analytics/vis-3.png)
+   
 ### Create a date slicer
 
-You want to visualize the number of ocmments on posts over time. You can create a slicer visualization to filter the chart data to different time frames. 
+You want to visualize the number of comments on posts over time. You can create a slicer visualization to filter the chart data to different time frames. 
 
 1. Click a blank area of the canvas, and then select the **Slicer icon** in the Visualizations pane. 
    
@@ -228,11 +230,13 @@ You decide to give the chart a more descriptive and attractive title.
 
 Experiment with other formatting options and settings to change the appearance of your visualizations. 
 
+![Visualizations](media/desktop-tutorial-facebook-analytics/vis-1.png)
+
 ## Create more visualizations
 
 As you can see, it's easy to customize visualizations in your report to present the data in ways that you want. For example, try using the imported Facebook data to create this line chart showing number of comments over time.
 
-![Comments over time line chart](media/desktop-tutorial-facebook-analytics/moreviz.png)
+![Line chart](media/desktop-tutorial-facebook-analytics/moreviz.png)
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
