@@ -79,21 +79,22 @@ First, separate the date and time values in the **created_time** column to be mo
    
    The column splits into two columns that contain the strings before and after the **T** delimiter and are named **created_time.1** and **created_time.2**, respectively. Note that Power BI has automatically detected and changed the data types to **Date** for the first column and **Time** for the second column, and formatted the date and time values to be more readable.
    
+4. Rename the columns by double-clicking each column header, or selecting each column and then selecting **Rename** in the **Any Column** Group of the **Transform** tab in the ribbon, and typing new column headers **created_date** and **created_time**, respectively.
+   
    ![New date and time columns](media/desktop-tutorial-facebook-analytics/delimiter3.png)
    
-4. Rename the columns by double-clicking each column header, or selecting each column and then selecting **Rename** in the **Any Column** Group of the **Transform** tab in the ribbon, and typing new column headers **created_date** and **created_time**, respectively.
-
 ### Expand the nested column
 
-Now that the date and time data are how you want them, you'll expose comments data by expanding a nested column. 
+Now that the date and time data are the way you want them, you'll expose comments data by expanding a nested column. 
 
-1. Select the **object_link** column and then select the ![expand icon](media/desktop-tutorial-facebook-analytics/14.png) icon to open the **Expand/Aggregate** dialog. Select **connections**, and then select **OK**. The column heading changes to **object_link.connections**.
+1. Select the **object_link** column and then select the ![expand icon](media/desktop-tutorial-facebook-analytics/14.png) icon to open the **Expand/Aggregate** dialog. Select **connections**, and then select **OK**. 
    
    ![Expand object_link](media/desktop-tutorial-facebook-analytics/expand1.png)
    
+   The column heading changes to **object_link.connections**.
 2. Again select the ![expand icon](media/desktop-tutorial-facebook-analytics/14.png) icon at the top of the **object_link.connections** column, select **comments**, and then select **OK**. The column heading changes to **object_link.connections.comments**.
    
-3. Select the ![expand icon](media/desktop-tutorial-facebook-analytics/14.png) icon one more time, and this time select **Aggregate** instead of Expand in the dialog box. Select **# Count of id**, and then select **OK**. 
+3. Select the ![expand icon](media/desktop-tutorial-facebook-analytics/14.png) icon at the top of the **object_link.connections.comments** column, and this time select **Aggregate** instead of Expand in the dialog box. Select **# Count of id**, and then select **OK**. 
    
    ![Aggregate comments](media/desktop-tutorial-facebook-analytics/expand2.png)
    
@@ -131,6 +132,7 @@ When you are satisfied with the data, select **Close & Apply** > **Close & Apply
    ![New query](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
 ## Use the data in report visualizations 
+
 Now that you have imported data from the Facebook page, you can quickly and easily gain insights about your data by using visualizations. Creating a visualization is easy; just select a field or drag it from the **Fields** list onto the report canvas.
 
 ### Create a bar chart
@@ -145,17 +147,17 @@ Now that you have imported data from the Facebook page, you can quickly and easi
    
    ![Bar chart](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Select the ellipsis (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by number of comments. 
+4. Select the ellipsis (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
    
    ![Sort by number of comments](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Note that the most comments were associated with **Blank** (not in response to any post). To filter out the Blank row, select **message (all)** under **Filters** at the bottom of the Visualizations pane, select **Select All**, and then select **Blank** to deselect it. The Filters entry changes to **message is not (Blank)**, and Blank row disappears from the chart visualization. 
+5. Note that the most comments were associated with **Blank** (not in response to any post). To filter out the Blank row, select **message (all)** under **Filters** at the bottom of the Visualizations pane, select **Select All**, and then select **Blank** to deselect it. The Filters entry changes to **message is not (Blank)**, and the Blank row disappears from the chart visualization. 
    
    ![Filter out blank](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
 ### Format the chart
 
-This data is getting interesting, but you can't see much of the post texts in the chart. To show more of the post texts:
+The visualization is getting interesting, but you can't see much of the post text in the chart. To show more of the post text:
 
 1. Using the handles on the chart visualization, resize the chart to be as large as possible. 
    
@@ -170,7 +172,7 @@ This data is getting interesting, but you can't see much of the post texts in th
    
    ![Show more posts](media/desktop-tutorial-facebook-analytics/barchart5.png)
    
-The X axis (number of comments) of the chart does not show exact enough values, and seems lost at the bottom of the chart. You decide to use data labels instead. 
+The X axis (number of comments) of the chart does not show exact values, and looks lost at the bottom of the chart. You decide to use data labels instead. 
 
 1. Select the Format icon, and then select the slider next to **X-axis** to turn it **Off**. 
    
@@ -195,7 +197,7 @@ That's better, but the data labels all have a **.0** decimal place, which is dis
    
    ![Change data type](media/desktop-tutorial-facebook-analytics/change-datatype.png)
    
-3. Select **Close & Apply**, or just **Apply** to apply the changes while keeping the Power Query Editor window open. Return to the Power BI Desktop report view, and once the changes load, the data labels on the chart become whole numbers. 
+3. Select **Close & Apply**, or just **Apply** to apply the changes while keeping the Power Query Editor window open. Once the changes load, the data labels on the chart become whole numbers. 
    
 ### Create a date slicer
 
@@ -209,7 +211,7 @@ You want to visualize the number of ocmments on posts over time. You can create 
    
    ![Date range slider slicer](media/desktop-tutorial-facebook-analytics/slicer2.png)
    
-3. Move the slider handles to select different date ranges, and note how the chart data filters accordingly. You can also select the date fields in the slicer and type in specific dates, or choose them from the calendar popup.
+3. Move the slider handles to select different date ranges, and note how the chart data filters accordingly. You can also select the date fields in the slicer and type in specific dates, or choose them from a calendar popup.
     
    ![Slice data](media/desktop-tutorial-facebook-analytics/slicer3.png)
    
@@ -221,6 +223,7 @@ You decide to give the chart a more descriptive and attractive title.
 2. Change the **Title text** to **Comments per post**. 
 3. Select the dropdown arrow next to **Font color**, and select a green color to match the green bars of the visualization.
 4. Increase the **Text size** to **10**, and change the **Font family** to **Segoe (Bold)**.
+
 ![Format chart title](media/desktop-tutorial-facebook-analytics/formatting1.png)
 
 Experiment with other formatting options and settings to change the appearance of your visualizations. 
