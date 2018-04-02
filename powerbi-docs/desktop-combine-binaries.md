@@ -47,7 +47,7 @@ The **combine files** transform now behaves as follows:
 * The transform allows you to select a specific object from the first file, for example, an *Excel workbook*, to extract.
   
   ![](media/desktop-combine-binaries/combine-binaries_3.png)
-* The **combine files** then automatically does the following:
+* The **combine files** then automatically performs the following queries:
   
   * Creates an example query that performs all the required extraction steps in a single file.
   * Creates a *function query* that parameterizes the file/binary input to the *exemplar query*. The exemplar query and the function query are linked, so that changes to the exemplar query are reflected in the function query.
@@ -55,9 +55,9 @@ The **combine files** transform now behaves as follows:
     
     ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
-With the new behavior of **combine files**, you can easily combine all files/binaries within a given folder as long as they have the same file type and structure (as in, the same columns).
+With the new behavior of **combine files**, you can easily combine all files within a given folder as long as they have the same file type and structure (such as the same columns).
 
-In addition, you can easily apply additional transformation or extraction steps by modifying the automatically created *exemplar query*, without having to worry about modifying or creating additional *function query* steps; any changes to the *exemplar query* are automatically generated in the linked *function query*.
+In addition, you can easily apply additional transformation or extraction steps by modifying the automatically created *exemplar query*, without having to worry about modifying or creating additional *function query* steps. Any changes to the *exemplar query* are automatically generated in the linked *function query*.
 
 ## Next steps
 ﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
