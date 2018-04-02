@@ -69,17 +69,17 @@ For a step-by-step demonstration of connecting to data in Power BI Desktop, see 
 ## Shape and combine data
 You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **[Shape and Combine Data with Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
 
-In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
+In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (taken from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
 When you shape data, you transform a data source into the form and format that meets your needs. In this case, we don’t need that first column, titled *Header*, so we’ll remove it.
 
-In **Query Editor**, many commands can be found in the ribbon, and in a context-sensitive right-click menu. For example, when I right-click on the *Header* column, the menu that appears lets me remove the column. I could also select the column and then select the **Remove Columns** button from the ribbon.
+In **Query Editor**, many commands can be found in the ribbon, and in a context-sensitive right-click menu. For example, when you right-click on the *Header* column, the menu that appears lets you remove the column. You could also select the column and then select the **Remove Columns** button from the ribbon.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
-There are many other ways I could shape the data in this query; I could remove any number of rows from the top, or from the bottom; I could add columns, split columns, replace values, and perform other shaping tasks to direct Query Editor to get the data how I want it.
+There are many other ways you could shape the data in this query; you could remove any number of rows from the top, or from the bottom; you could add columns, split columns, replace values, and perform other shaping tasks to direct Query Editor to get the data how you want it.
 
 ## Group rows
 In Query Editor, you can group the values in multiple rows into a single value. This can be useful when summarizing the number of products offered, the total sales, or the count of students.
@@ -92,14 +92,16 @@ Let’s find out how many Agencies (this includes school districts, and other ed
 
 The **Group By…** window appears. When Query Editor groups rows, it creates a new column into which it places the **Group By** results. You can adjust the **Group By** operation in the following ways:
 
-1. *Group by* – this is the column to be grouped; Query Editor chooses the selected column, but you can change that in this window to any column in the table.
+1. *Group by* – this is the column to be grouped; Query Editor chooses the selected column, but you can change it in this window to be any column in the table.
 2. *New column name* – Query Editor suggests a name for the new column, based on the operation it applies to the column being grouped, but you can name the new column anything you want.
 3. *Operation* – here you specify the operation that Query Editor applies.
-4. *Add grouping* and *Add aggregation* – these options appear after selecting the **Advanced** option. You can perform grouping operations (**Group By** actions) on multiple columns, and perform multiple aggregations, all within the **Group By** window, and all in one operation. Query Editor creates a new column (based on your selections in this window) that operates on multiple columns. Select the **Add grouping** or **Add aggregation** button to add more groupings or aggregations to a **Group By** operation. You can remove a grouping or aggregation by selecting the **...** icon and selecting **Delete**, so go ahead and try it and see what it looks like. 
+4. *Add grouping* and *Add aggregation* – these options appear after selecting the **Advanced** option. You can perform grouping operations (**Group By** actions) on multiple columns, and perform multiple aggregations, all within the **Group By** window, and all in one operation. Query Editor creates a new column (based on your selections in this window) that operates on multiple columns. 
+
+Select the **Add grouping** or **Add aggregation** button to add more groupings or aggregations to a **Group By** operation. You can remove a grouping or aggregation by selecting the **...** icon and selecting **Delete**, so go ahead and try it and see what it looks like.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
-When we select **OK**, Query performs the **Group By** operation, and returns the results. Whew, look at that – Ohio, Texas, Illinois, and California each have over a thousand agencies!
+When we select **OK**, Query performs the **Group By** operation, and returns the results. Whew, look at that – Ohio, Texas, Illinois, and California now each have over a thousand agencies!
 
 ![](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
 
