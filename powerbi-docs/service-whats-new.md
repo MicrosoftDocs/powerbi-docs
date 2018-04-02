@@ -72,14 +72,14 @@ You can also check out the YouTube channels for information about "What's new" a
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Get started with [Power BI service](service-connect-to-services.md) apps for online services.
-* Connect to IBM Netezza with the on-premises data gateway through both import and DirectQuery connectivity modes.
+* Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
 * [Dynamic RLS](developer/embedded-row-level-security.md) now supported for Power BI Embedded.
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.
 
 ### July 2017
 * Support for [email subscriptions](service-report-subscribe.md) on dashboards.
 * Inspect and diagnose why the loading time is poor for dashboards using the Performance Inspector.
-* Snowflake and SAP BusinessWarehouse DirectQuery now supported for on-premises data gateway.
+* Snowflake and SAP BusinessWarehouse DirectQuery now supported for On-premises data gateway.
 * New [APIs to manage data refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) in Power BI service.
 
 ### June 2017
@@ -91,7 +91,7 @@ You can also check out the YouTube channels for information about "What's new" a
 
 ### April and May 2017
 * Measure and magnify your impact with [usage metrics for dashboard and report creators](service-usage-metrics.md).
-* Connect to PostgreSQL with the on-premises data gateway.
+* Connect to PostgreSQL with the On-premises data gateway.
 * Power BI SharePoint Web Part made available for all users.
 * Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Navigate to reports with multiple URL filter parameters.

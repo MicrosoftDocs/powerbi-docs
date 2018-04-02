@@ -75,7 +75,7 @@ And one more way to open a report is from a dataset. When you start from a datas
 
 ##  Still more ways to open a report
 As you get more comfortable navigating Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
-- From the left navpane using **Favorites**, **Recent**, **Apps*, and **Shared with me**. 
+- From the left navpane using **Favorites**, **Recent**, **Apps**, and **Shared with me**. 
 - Using [View related](service-related-content.md)
 - In an email when someone [shares with you](service-share-reports.md) or you [set an alert](service-set-data-alerts.md).    
 - From your [Notification center](service-notification-center.md)    
