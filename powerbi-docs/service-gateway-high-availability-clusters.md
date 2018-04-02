@@ -1,6 +1,6 @@
 ---
-title: High availability clusters for on-premises data gateway
-description: You can create clusters of on-premises data gateways to provide high availability for your enterprise.
+title: High availability clusters for On-premises data gateway
+description: You can create clusters of On-premises data gateways to provide high availability for your enterprise.
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -21,13 +21,13 @@ ms.author: davidi
 
 LocalizationGroup: Gateways
 ---
-# High availability clusters for on-premises data gateway
-You can create **high availability clusters** of **on-premises data gateway** installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. Such clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data resources. This article describes the steps you can take to create a high availability cluster of on-premises data gateways, and shares best practices when setting them up. High availability gateway clusters require the November 2017 update to on-premises data gateway, or later.
+# High availability clusters for On-premises data gateway
+You can create **high availability clusters** of **On-premises data gateway** installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. Such clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data resources. This article describes the steps you can take to create a high availability cluster of On-premises data gateways, and shares best practices when setting them up. High availability gateway clusters require the November 2017 update to On-premises data gateway, or later.
 
 
 ## Setting up high availability clusters of gateways
 
-During the **on-premises data gateway** installation process, you can specify whether the gateway should be added to an existing gateway cluster. 
+During the **On-premises data gateway** installation process, you can specify whether the gateway should be added to an existing gateway cluster. 
 
 ![](media/service-gateway-high-availability-clusters/gateway_clusters_01.png)
 
@@ -44,7 +44,7 @@ All new **Scheduled Refresh** requests and DirectQuery operations are automatica
 
 ## PowerShell support for gateway clusters
 
-PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work properly. The PowerShell scripts let users perform the following operations:
+PowerShell scripts are available in the On-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work properly. The PowerShell scripts let users perform the following operations:
 
 -   Retrieve the list of gateway clusters available for a user
 -   Retrieve the list of gateway instances registered in a cluster, as well as their online or offline status
@@ -60,7 +60,7 @@ In order to run the PowerShell commands in the table, you first need to take the
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
-3. Next, navigate to the on-premises data gateway installation folder in the PowerShell window, and import the necessary module using the following command:
+3. Next, navigate to the On-premises data gateway installation folder in the PowerShell window, and import the necessary module using the following command:
 
     ```
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
@@ -70,7 +70,7 @@ Once those steps are complete, you can use the commands in the following table t
 
 | **Command** | **Description** | **Parameters** |
 | --- | --- | --- |
-| *Login-OnPremisesDataGateway* |This command allows a user to log in to manage his or her on-premises data gateway clusters.  You must run this command and log in *before* other high availability commands can work properly. Note: the AAD auth token acquired as part of a Login call is only valid for 1 hour, after which it expires. You can re-run the Login command to acquire a new token.| AAD username and password (provided as part of the command execution, not initial invocation)|
+| *Login-OnPremisesDataGateway* |This command allows a user to log in to manage his or her On-premises data gateway clusters.  You must run this command and log in *before* other high availability commands can work properly. Note: the AAD auth token acquired as part of a Login call is only valid for 1 hour, after which it expires. You can re-run the Login command to acquire a new token.| AAD username and password (provided as part of the command execution, not initial invocation)|
 | *Get-OnPremisesDataGatewayClusters* | Retrieves the list of gateway clusters for the logged in user. | Optionally, you can pass formatting parameters to this command for better readability, such as: *Format-Table -AutoSize -Wrap* |
 | *Get-OnPremisesDataClusterGateways* | Retrieves the list of gateways within the specified cluster, as well as additional information for each gateway (online/offline status, machine name, so on) | *-ClusterObjectID xyz*  (where *xyz* is replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)|
 | *Set-OnPremisesDataGateway* | Lets you set property values for a given gateway within a cluster, including the ability to Enable/Disable a specific gateway instance  | *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command) *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
@@ -87,7 +87,7 @@ Once those steps are complete, you can use the commands in the following table t
 -   [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 -   [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 -   [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
--   [Configuring proxy settings for the on-premises data gateway](service-gateway-proxy.md)  
+-   [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
 -   [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

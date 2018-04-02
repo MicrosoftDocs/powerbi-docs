@@ -22,18 +22,18 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use bookmarks to share insights and build stories in Power BI 
-Using **bookmarks** in Power BI you can capture the currently configured view of a report page, including filtering and the state of visuals, and later go back to that state by simply selecting that saved bookmark. 
+Using **bookmarks** in Power BI help you capture the currently configured view of a report page, including filtering and the state of visuals, and later let you go back to that state by simply selecting the saved bookmark. 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and subsequently step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. 
 
 ![Bookmarks in Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
-There are many uses for bookmarking. You can use them to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename), and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. There may be other uses, too, based on how you think bookmarks could best be used.
+There are many uses for bookmarking. You can use them to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename) and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. There may be other uses, too, based on how you think bookmarks could best be used.
 
 ### Enable the bookmarks preview (versions prior to March 2018)
-Beginning with the March 2018 version fo Power BI Desktop, bookmarks are generally available. 
+Beginning with the March 2018 version of Power BI Desktop, bookmarks are generally available. 
 
-We always suggest you upgrade to the most recent release. But if your version of Power BI Desktop is before that release, you can try the **bookmarks** feature beginning with the **October 2017** release of **Power BI Desktop**, and for bookmark-enabled reports, in the **Power BI service** as well. To enable the preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Bookmarks**. 
+We always suggest you upgrade to the most recent release. But, if your version of Power BI Desktop is before that release, you can try the **bookmarks** feature beginning with the **October 2017** release of **Power BI Desktop**, and for bookmark-enabled reports, in the **Power BI service** as well. To enable the preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Bookmarks**. 
 
 ![Enable bookmarks in Options window](media/desktop-bookmarks/bookmarks_02.png)
 
@@ -60,7 +60,7 @@ Configure a report page the way you want it to appear in the bookmark. Once your
 
 ![Add a bookmark](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** create a bookmark and gives it a generic name. You can easily *rename* a bookmark, *delete* it, or *update* a bookmark by selecting the elipses next to the bookmark's name, then selecting an action from the menu that appears.
+**Power BI Desktop** creates a bookmark and gives it a generic name. You can easily *rename*, *delete*, or *update* a bookmark by selecting the elipses next to the bookmark's name, then selecting an action from the menu that appears.
 
 ![Select sub-menu for a bookmark by using the elipses](media/desktop-bookmarks/bookmarks_05.png)
 
@@ -69,7 +69,7 @@ Once you have a bookmark, you can display it by simply clicking on the bookmark 
 ## Arranging bookmarks
 As you create bookmarks, you might find that the order in which you create them isn't necessarily the same order you'd like to present them to your audience. No problem, you can easily rearrange the order of bookmarks.
 
-In the **Bookmarks** pane, simply drag-and-drop bookmars to change their order, as shown in the following image. The yellow bar between bookmarks designates where the dragged bookmark will be placed.
+In the **Bookmarks** pane, simply drag-and-drop bookmarks to change their order, as shown in the following image. The yellow bar between bookmarks designates where the dragged bookmark will be placed.
 
 ![Change bookmark order by drag-and-drop](media/desktop-bookmarks/bookmarks_06.png)
 
@@ -81,15 +81,15 @@ When you have a collection of bookmarks you would like to present, in order, you
 When in **View** mode, there are a few features to notice:
 
 1. The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
-2. The bookmark title bar has arrows that let you move to the next or previous bookmark
-3. You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane, or by selecting the **X** found in the bookmark title bar. 
+2. The bookmark title bar has arrows that let you move to the next or previous bookmark.
+3. You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane or by selecting the **X** found in the bookmark title bar. 
 
 ![Bookmark bookmark title bar features](media/desktop-bookmarks/bookmarks_07.png)
 
-When you're in **View** mode, you can close the **Bookmarks** pane (by clicking the X on that pane) to provide more space for your presentation. And while in **View** mode, all visuals are interactive and available for cross-highlighting, just as they would otherwise be when interacting with them. 
+When you're in **View** mode, you can close the **Bookmarks** pane (by clicking the X on that pane) to provide more space for your presentation. And, while in **View** mode, all visuals are interactive and available for cross-highlighting, just as they would otherwise be when interacting with them. 
 
 ## Visibility - using the Selection pane
-With the release of bookmarks, the new **Selection** pane is also introduced. The **Selection** pane provides a list of all objects on the current page, and allows you to select the object and specify whether a given object is visible. 
+With the release of bookmarks, the new **Selection** pane is also introduced. The **Selection** pane provides a list of all objects on the current page and allows you to select the object and specify whether a given object is visible. 
 
 ![Enable the Selection pane](media/desktop-bookmarks/bookmarks_08.png)
 

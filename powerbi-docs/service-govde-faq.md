@@ -40,7 +40,7 @@ The following questions and answers provide important information for Power BI P
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
-5. **Can I use Power BI Desktop, Power BI Mobile, on-premises data gateway and Publisher for Excel with the Power BI service for Germany cloud?**
+5. **Can I use Power BI Desktop, Power BI Mobile, On-premises data gateway and Publisher for Excel with the Power BI service for Germany cloud?**
    
    Yes. We've updated our Power BI client products to seamlessly work with the Power BI service for Germany cloud. Please login with your Power BI service for Germany cloud account to start using the same client products with Power BI service for Germany cloud. You can download the latest version of client products from the following locations:
    
