@@ -26,6 +26,8 @@ In **Power BI Desktop** you can drill into the details of a visualization, and s
 
 You can use **See Data** to view a text version of the values used in the selected visualization, or use **See Records** to view all the data for one selected record or data point. 
 
+![See Data and See Records](media/desktop-see-data-see-records/see-data-record.png)
+
 >[!IMPORTANT]
 >**See Data** and **See Records** support only the following visualization types:
 >  - Bar chart
@@ -50,7 +52,7 @@ You can also see data by right-clicking on a visualization, and then selecting *
 > [!NOTE]
 > You must be hovering over a data point in the visual for the right-click menu to be available.
 
-When you select **See Data** or **Show Data**, Power BI Desktop shows a canvas that displays both the visual and the textual representation of the data. In the *horizontal view*, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
+When you select **See Data** or **Show Data**, the Power BI Desktop canvas displays both the visual and the textual representation of the data. In the *horizontal view*, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
 
 ![horizontal view](media/desktop-see-data-see-records/see-data4a.png)
 
@@ -64,14 +66,14 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 ## Use See Records in Power BI Desktop
 
-You can also focus on one data record in a visualization, and drill into the data behind it. To use **See Records**, select a visualization, then select **See Records** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data row or record. 
+You can also focus on one data record in a visualization, and drill into the data behind it. To use **See Records**, select a visualization, then select **See Records** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data point or row. 
 
 ![See Records in ribbon](media/desktop-see-data-see-records/see-record1.png)
 
 > [!NOTE]
 > If the **See Records** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support **See Records**.
 
-You can also right-click on a data element and select **See Records** from the menu that appears.
+You can also right-click a data element and select **See Records** from the menu that appears.
 
 ![See Records by right-click](media/desktop-see-data-see-records/see-record2.png)
 
