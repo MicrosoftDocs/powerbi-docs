@@ -323,8 +323,8 @@ Important: deletion is irreversible. Once deleted, the visual will immediately s
  
 ### How to update a visual
 
-If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file will replace the previous file for all the reports throughout the organization. However, if the new version might break the usage or data structure of the previous version then replace the previous version with a new version of the same visual. For example, add a "version X.X" to the title so it's clear that it's the same visual with a different version to keep existing reports from losing functionality. Again, make sure the Visual ID remains unchanged. Next time users enter the organization repository from Power BI Desktop, they can import the new version, which will prompt them to replace the current version that they have in the report.
- 
+If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file will replace the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which will prompt them to replace the current version that they have in the report.
+
 ## Next steps
 
 [Understanding the Power BI admin role](service-admin-role.md)  
