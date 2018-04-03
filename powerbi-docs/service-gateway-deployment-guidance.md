@@ -22,13 +22,13 @@ ms.author: davidi
 LocalizationGroup: Gateways
 ---
 # Guidance for deploying a data gateway for Power BI
-This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **on-premises data gateway** setup.
+This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **On-premises data gateway** setup.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
-For more about **on-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
+For more about **On-premises data gateway**, including a link to install it, take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## Installation considerations for the on-premises data gateway
+## Installation considerations for the On-premises data gateway
 Before getting too far into the details of installation and deployment, there are a handful of considerations you should keep in mind. The following sections describe important things to keep in mind.
 
 ### Number of users
@@ -43,14 +43,14 @@ If users are all accessing a given report at the same time each day, you'll want
 There is a constraint in **Power BI** that allows only *one* gateway per *report*, so even if a report is based on multiple data sources, all such data sources must go through a single gateway. However, if a dashboard is based on *multiple* reports, you can use a dedicated gateway for each contributing report, and thereby distribute the gateway load among those multiple reports that contribute to that single dashboard.
 
 ### Connection type
-**Power BI** offers two types of connections, **DirectQuery** and **Import**. Not all data sources support both connection types, and many reasons may contribute to choosing one over the other, such as security requirements, performance, data limits, and data model sizes. You can learn more about connection type and supported data sources in the *list of available data source types* section of the [On-premises data gateway article](service-gateway-onprem.md).
+**Power BI** offers two types of connections: **DirectQuery** and **Import**. Not all data sources support both connection types, and many reasons may contribute to choosing one over the other, such as security requirements, performance, data limits, and data model sizes. You can learn more about connection type and supported data sources in the *list of available data source types* section of the [On-premises data gateway article](service-gateway-onprem.md).
 
 Depending on which type of connection are use, gateway usage can be different. For example, you should try to separate **DirectQuery** data sources from **Scheduled Refresh** data sources whenever possible (assuming they're in different reports and can be separated). Doing so prevents the gateway from having thousands of DirectQuery requests queued up, at the same time as the morning's scheduled refresh of a large size data model that's used for the company's main dashboard. Here's what to consider for each:
 
 * For **Scheduled Refresh**: depending on your query size and the number of refreshes occurring per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query is not folded, transformations occur on the gateway machine, and as such, the gateway machine benefits from having more available RAM.
 * For **DirectQuery**: a query is be sent each time any user opens the report or looks at data. So if you anticipate more than 1,000 users accessing the data concurrently, you'll want to make sure your computer has robust and capable hardware components. More CPU cores will result in better throughput for a **DirectQuery** connection.
 
-The requirements for a machine on which you install an **on-premises data gateway** are the following:
+The requirements for a machine on which you install an **On-premises data gateway** are the following:
 
 **Minimum:**
 
@@ -83,12 +83,12 @@ The *gateway counter*, in addition to your machine's counters, provide you with 
 
 These counters can be accessed from **Windows Performance Monitor**, and can be consumed by any reporting tools you use for this purpose. For a detailed walk-through of how to use the gateway performance monitor with Power BI, take a look at the following community-create blog post.
 
-* [Monitor on-premises data gateways](https://insightsquest.com/2016/08/08/monitor-on-premises-data-gateways/)
+* [Monitor On-premises data gateways](https://insightsquest.com/2016/08/08/monitor-on-premises-data-gateways/)
 
 #### Logs
 Configuration and service logs provide another dimension on what's happening with your gateway. Always check your gateway logs when your connection is not working as expected, as not all error messages are surfaced on the Power BI service.
 
-An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **on-premises data gateway** when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
+An easy way to view all the log files on your local machine is to use the *Export Logs* button on the **On-premises data gateway** when you re-open the gateway after the initial installation is complete, and then select **Diagnostics > Export Logs**.
 
 #### Additional logging
 By default the gateway performs basic logging. If you're investigating gateway issues, and need more information about query connection details, you can temporarily enable *verbose logging* to gather additional log information. To do this, in the installed gateway select **Diagnostics > Additional logging**.
@@ -142,7 +142,7 @@ From there, you can select a gateway and see the list of gateway administrators.
 
 ## Next steps
 [Configuring proxy settings](service-gateway-proxy.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [On-premises data gateway FAQ](service-gateway-onprem-faq.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

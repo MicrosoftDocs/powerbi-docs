@@ -23,7 +23,31 @@ ms.author: tankas
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md).
+For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+
+## March 2018
+- **Power BI Report Server**
+    - *Version 1.2.6660.39920 (Build 15.0.2.389), Released: March 28, 2018*
+        - Bug fixes
+            - For Power BI Reports (PBIX), fix for Export Data not working from Power BI Visuals
+            - For Power BI Reports (PBIX), fix for URL filters not working
+            - For Paginated Reports (RDL), fix for images not being displayed correctly in IE11 after upgrading to Power BI Report Server March release
+
+    - *Version 1.2.6648.38132 (Build 15.0.2.378), Released: March 19, 2018*
+        - Security Updates
+        - Accessibility Improvements
+        - Bug fixes
+            - For Paginated Reports (RDL), fix for parameters visibility in a linked report that is reverted after editing its properties
+            - Fix for web portal with custom forms authentication that is ignoring the sliding expiration cookie
+            - Fix for export to Word that creates unequal row height if row content is empty
+            - For Paginated Reports (RDL), fix for expression based connection string that is deleted when we change credential for data source
+            - Fix for ability to use KPI with text values
+            - For Paginated Report (RDL), fix for ability to assign a new dataset to an existing Paginated Report (RDL)
+            - Other stability and usability fixes
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - Version: 2.56.5023.1043 (March 2018), Released: March 19, 2018
+        - Contains changes required for connection with Power BI Report Server (March 2018)
 
 ## October 2017
 

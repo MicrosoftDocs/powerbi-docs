@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/15/2017
+ms.date: 03/22/2018
 ms.author: maggies
 
 ---
@@ -25,8 +25,7 @@ Learn how to install Power BI Desktop optimized for Power BI Report Server.
 
 To create Power BI reports for Power BI Report Server, you need to download and install Power BI Desktop optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features that aren't available in the Power BI Report Server version until after they're released. Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
-> [!NOTE]
-> You can install Power BI Desktop and Power BI Desktop optimized for Power BI Report Server side by side on the same computer.
+The good news is that you can install Power BI Desktop and Power BI Desktop optimized for Power BI Report Server side by side on the same computer.
 
 ## Download and install Power BI Desktop
 
@@ -36,7 +35,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or you can go directly to [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (Optimized for Power BI Report Server - October 2017) in the Microsoft Download Center.
+    Or you can go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Optimized for Power BI Report Server - March 2018) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 
@@ -54,7 +53,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 ## Verify you are using the correct version
 You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the release month and year of the release.
 
-![Title bar for Power BI Desktop optimized for Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
+![Title bar for Power BI Desktop optimized for Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
@@ -96,6 +95,13 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 * Custom visuals
 * Breadcrumbs
 * Geofiltering or bar codes
+
+## Power BI Desktop for earlier versions of Power BI Report Server
+
+If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Hre are the two previous versions.
+
+- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - October 2017](https://www.microsoft.com/download/details.aspx?id=56136))
+- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - June 2017](https://www.microsoft.com/download/details.aspx?id=55330))
 
 ## Next steps
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.

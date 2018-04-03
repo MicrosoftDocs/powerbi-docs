@@ -30,7 +30,7 @@ In the following sections, we describe how to adjust your model so it works well
 
 ## Add missing relationships
 
-If your model is missing relationships between tables, neither Power BI reports nor Q&A can interpret how to join those tables if you ask a questions about them. Relationships are the cornerstone of a good model. For example, you cannot ask for the “total sales for Seattle customers” if the relationship between the *orders* table and the *customers* table is missing. The following images show you examples of a model that needs work, and a model that is ready for Q&A.
+If your model is missing relationships between tables, neither Power BI reports nor Q&A can interpret how to join those tables if you ask a question about them. Relationships are the cornerstone of a good model. For example, you cannot ask for the “total sales for Seattle customers” if the relationship between the *orders* table and the *customers* table is missing. The following images show you examples of a model that needs work, and a model that is ready for Q&A.
 
 **Needs work**
 
@@ -47,7 +47,7 @@ The choice of tables and columns is very important for Q&A. For example, if you 
 
 While Q&A can do some basic word breaking and detection of plurals, Q&A assumes that your table and column names accurately reflect their content.
 
-Consider another example. Imagine you have a table named *Headcount* that contains first and last names and employee numbers, and you have another table named *Employees* contains employee numbers, job numbers and start dates. While this might be understood by people who are familiar with the model, someone else who asks “count the employees” is going to get a count of the rows from the “Employees” table, which is probably not what they had in mind, since that’s a count of every job each employee has ever had. It would be much better to rename those tables to truly reflect what they contain.
+Consider another example. Imagine you have a table named *Headcount* that contains first and last names and employee numbers, and you have another table named *Employees* that contains employee numbers, job numbers, and start dates. While this might be understood by people who are familiar with the model, someone else who asks “count the employees” is going to get a count of the rows from the “Employees” table, which is probably not what they had in mind, since that’s a count of every job each employee has ever had. It would be much better to rename those tables to truly reflect what they contain.
 
 **Needs work**
 
@@ -90,7 +90,7 @@ The **Sort By Column** property allows sorting on one column to automatically so
 
 Rest assured that we’re not suggesting you need to reshape your entire model. However, there are certain structures that are simply so difficult that Q&A isn’t going to handle them well. If you perform some basic normalization of the structure of your model, the usability of Power BI reports will increase significantly, as will the accuracy of Q&A results.
 
-The general rule you should follow is this: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So if your users talk about customers, there should be one *customer* object. And if your users talk about sales, there should be a one *sales* object. Sounds simple, doesn't it? Depending on the shape of the data you’re starting with, it can be. There are rich data shaping capabilities available in **Query Editor** if you need them, while many of the more straightforward transformations can happen simply using calculations in the Power BI model.
+The general rule you should follow is this: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. And, if your users talk about sales, there should be one *sales* object. Sounds simple, doesn't it? Depending on the shape of the data you’re starting with, it can be. There are rich data shaping capabilities available in **Query Editor** if you need them, while many of the more straightforward transformations can happen simply using calculations in the Power BI model.
 
 The following sections contain some common transformations you might need to perform.
 
@@ -110,7 +110,7 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 If you have property bags in your model, they should be restructured to have a single column per property. Property bags, while convenient for managing large numbers of properties, suffer from a number of inherent limitations that neither Power BI reports nor Q&A are designed to work around.
 
-For example, consider a *CustomerDemographics* table with CustomerID, Property, and Value columns, where each row represents a different property of the customer (for examples, age, marital status, city, etc). By overloading the meaning of the Value column based on the content of the Property column, it becomes impossible for Q&A to interpret most queries which reference it. A simple question such as “show the age of each customer” might happen to work, since it could be interpreted as “show the customers and customer demographics where property is age”. However, the structure of the model simply doesn’t support slightly more complex questions like “average age of customers in Chicago.” While users who directly author Power BI reports reports can sometimes find clever ways to get the data they are looking for, Q&A only works when each column has only a single meaning.
+For example, consider a *CustomerDemographics* table with CustomerID, Property, and Value columns, where each row represents a different property of the customer (for examples, age, marital status, city, etc). By overloading the meaning of the Value column based on the content of the Property column, it becomes impossible for Q&A to interpret most queries which reference it. A simple question such as “show the age of each customer” might happen to work, since it could be interpreted as “show the customers and customer demographics where property is age”. However, the structure of the model simply doesn’t support slightly more complex questions like “average age of customers in Chicago.” While users who directly author Power BI reports can sometimes find clever ways to get the data they are looking for, Q&A only works when each column has only a single meaning.
 
 **Needs work**
 
@@ -151,7 +151,7 @@ Similarly, if you have any full name columns for a person, you’ll want to add 
 
 ### Create new tables for multi-value columns
 
-Also a similar situation, if the source from which you're importing your data contains multi-value columns, Power BI reports (and Q&A) will not reach inside the column to parse out the contents. So if you have, for example, a Composer column that contains the names of multiple composers for a song, you should split it into multiple rows in a separate *Composers* table.
+Also a similar situation, if the source from which you're importing your data contains multi-value columns, Power BI reports (and Q&A) will not reach inside the column to parse out the contents. So, if you have, for example, a Composer column that contains the names of multiple composers for a song, you should split it into multiple rows in a separate *Composers* table.
 
 **Needs work**
 
@@ -177,11 +177,11 @@ The one exception to the “normalization is better” rule occurs when there is
 
 This step applies specifically to Q&A (and not to Power BI reports in general). Users often have a variety of terms they use to refer to the same thing, such as total sales, net sales, total net sales. Power BI’s model allows these synonyms to be added to tables and columns within the model. 
 
-This can be a very important step. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them, and are not choosing from a predefined list of columns. The more sensible synonyms you can add, the better your users' experience will be with your report. To add Synonyms, in **Relationships** view select the Synonyms button in the ribbon, as shown in the following image.
+This can be a very important step. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them, and are not choosing from a predefined list of columns. The more sensible synonyms you can add, the better your users' experience will be with your report. To add Synonyms, in **Relationships** view, select the Synonyms button in the ribbon, as shown in the following image.
 
 ![Add synonyms for Q&A](media/desktop-qna-in-reports/desktop-qna_21.png)
 
-The **Synonyms** field appears on the right side of **Power BI Desktop**, where you can add your synonyms, as showin in the following image.
+The **Synonyms** field appears on the right side of **Power BI Desktop**, where you can add your synonyms, as showing in the following image.
 
 ![Add synonyms for Q&A](media/desktop-qna-in-reports/desktop-qna_22.png)
 
