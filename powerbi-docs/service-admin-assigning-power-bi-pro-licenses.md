@@ -3,7 +3,7 @@ title: Assigning Power BI Pro licenses
 description: Assigning Power BI Pro licenses
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
