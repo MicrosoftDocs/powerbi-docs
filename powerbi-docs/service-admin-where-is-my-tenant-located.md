@@ -3,7 +3,7 @@ title: Where is my Power BI tenant located?
 description: Learn where your Power BI tenant is located and how that location is selected. This is important to understand as it can impact interactions you have with the service.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
