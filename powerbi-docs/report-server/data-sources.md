@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/21/2018
+ms.date: 04/02/2018
 ms.author: maghan
 
 ---
@@ -81,7 +81,7 @@ Other data sources may work even though they aren't on the supported list.
 | Web |Yes |Yes |No |
 | XML |Yes |Yes |No |
 | appFigures (Beta) |Yes |No |No |
-| Azure Analysis Services database (Beta) |Yes |No |No |
+| Azure Analysis Services database |Yes |No |Yes |
 | Azure Cosmos DB (Beta) |Yes |No |No |
 | Azure HDInsight Spark (Beta) |Yes |No |No |
 | Common Data Service (Beta) |Yes |No |No |
