@@ -3,7 +3,7 @@ title: On-premises data gateway (personal mode)
 description: Data gateway for Power BI that individuals can use for connecting to on-premises data
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/14/2017
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---

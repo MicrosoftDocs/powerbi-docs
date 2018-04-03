@@ -3,7 +3,7 @@ title: Getting started with Power BI gateways
 description: Learn the basics about data gateways for Power BI.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
