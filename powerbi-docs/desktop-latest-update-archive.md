@@ -295,7 +295,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Other:
 
--   Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](desktop-get-the-desktop.md#install-as-an-app-from-the-windows-store)
+-   Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](desktop-get-the-desktop.md#install-as-an-app-from-the-microsoft-store)
 -   Improved access to help content  [[video]](https://youtu.be/jksjtR8GnBE?t=28m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#help)
 
 
