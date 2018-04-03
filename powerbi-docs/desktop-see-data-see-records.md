@@ -22,71 +22,75 @@ ms.author: davidi
 LocalizationGroup: Learn more
 ---
 # Use See Data and See Records in Power BI Desktop
-In **Power BI Desktop** you can drill into the details of any visual, and see a textual representation of the data or individual data elements for a selected visual. These features are sometimes referred to as *click-through*, or *drill-through* or *drill-through to details*.
+In **Power BI Desktop** you can drill into the details of any visualization, and see a textual representation of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drill-through*, or *drill-through to details*.
 
-You can use **See Records** to view the underlying rows for one selected data element from a visual, or use **See Data** to view a textual version of the values used in the visual. There are some limitations to using **See Data** and **See Records**, which are discussed at the end of this article.
+You can use **See Data** to view a text version of the values used in the selected visualization, or use **See Records** to view all the data for one selected record or data point. 
+
+>[!IMPORTANT]
+>**See Data** and **See Records** support only the following visualization types:
+>  - Bar chart
+>  - Column chart
+>  - Donut chart
+>  - Filled map
+>  - Funnel
+>  - Map
+>  - Pie chart
+>  - Treemap
+
 
 ![](media/desktop-see-data-see-records/see-data-see-records_1.png)
 
-## Using See Data in Power BI Desktop
-The **See Data** button is located in the **Data / Drill** tab in the **Visual Tools** section of the ribbon.
+## Use See Data in Power BI Desktop
 
-![](media/desktop-see-data-see-records/see-data-see-records_2.png)
+**See Data** lets you see the data underlying a visualization. **See Data** shows in the **Data/Drill** tab in the **Visual Tools** section of the ribbon when you select a visualization.
 
-You can also **See Data** by right-clicking on a visual, then selecting **See Data** from the menu that appears.
+![See Data in ribbon](media/desktop-see-data-see-records/see-data1.png)
 
-![](media/desktop-see-data-see-records/see-data-see-records_3.png)
+You can also see data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears, or by selecting the **More options** ellipsis (...) in the upper-right corner of the visualization, and then selecting **Show Data**.
 
-> [!NOTE]
-> You must be hovering over a data point in the visual in order for the right-click menu to be available.
-> 
-> 
-
-When you select **See Data**, **Power BI Desktop** focuses on the visual and data you selected and dedicates the canvas space to displaying the visual and the textual representation of the data. The visual is displayed on the top half of the canvas, and the data is shown on the bottom half, as shown in the following image. This is the *horizontal* view.
-
-![](media/desktop-see-data-see-records/see-data-see-records_4.png)
-
-You can also switch to a *vertical view* (or back to *horizontal view*), by selecting the icon in the upper right corner.
-
-![](media/desktop-see-data-see-records/see-data-see-records_5.png)
-
-To get back to the report, select **< Back to Report** in the upper left corner of the canvas.
-
-![](media/desktop-see-data-see-records/see-data-see-records_6.png)
-
-## Using See Records in Power BI Desktop
-You can also focus on one data element in a visual, and drill into the data behind it. Once a visual is selected there are two ways to use **See Records**; you can enable the **See Records** toggle button in the **Data / Drill** ribbon and then click on a data element, or you can right-click on a data element and select **See Records** from the menu that appears.
-
-![](media/desktop-see-data-see-records/see-data-see-records_7.png)
+![Show Data by right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data by More Options](media/desktop-see-data-see-records/see-data2.png)
 
 > [!NOTE]
-> If the selected visual does not support **See Records** then the button on the ribbon is grayed out.
-> 
-> 
+> You must be hovering over a data point in the visual for the right-click menu to be available.
 
-Once **See Records** is selected, **Power BI Desktop** focuses on that individual data element and dedicates the canvas area to displaying the data for that element, as shown in the following image.
+When you select **See Data** or **Show Data**, Power BI Desktop shows a canvas that displays both the visual and the textual representation of the data. In the *horizontal* view, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+![horizontal view](media/desktop-see-data-see-records/see-data4a.png)
+
+You can toggle between a *vertical view* and the *horizontal view* by selecting the icon in the upper-right corner of the canvas.
+
+![vertical view toggle](media/desktop-see-data-see-records/see-data4.png)
+
+To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
+
+![Back to Report](media/desktop-see-data-see-records/see-data5.png)
+
+## Use See Records in Power BI Desktop
+
+You can also focus on one data record in a visualization, and drill into the data behind it. To use **See Records**, select a visualization, then select **See Records** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data row or record. 
+
+![See Records in ribbon](media/desktop-see-data-see-records/see-record1.png)
 
 > [!NOTE]
-> You cannot save changes from data that is viewed (or modified by users) in the **See Records** view to a report.
+> If the **See Records** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support **See Records**.
 
-To get back to the report, select the **Back to Report** button in the upper left corner of the canvas.
+You can also right-click on a data element and select **See Records** from the menu that appears.
 
-## Limitations
-There are a few limitations to consider when using **See Data** or **See Records**:
+![See Records by right-click](media/desktop-see-data-see-records/see-record2.png)
 
-* Only the following visual types are supported:
-  * **Bar**
-  * **Column**
-  * **Map**
-  * **Tree Map**
-  * **Filled Map**
-  * **Pie**
-  * **Donut**
-  * **Funnel**
-* You can't use **See Records** when your visual uses a calculated measure
-* You can't use **See Records** when connected to a live multidimensional (MD) model
+When you select **See Records** for a data element, the Power BI Desktop canvas displays all the data associated with the selected element. 
+
+![](media/desktop-see-data-see-records/see-record3.png)
+
+To get back to the report, select the **< Back to Report** button in the upper-left corner of the canvas.
+
+![](media/desktop-see-data-see-records/see-record4.png)
+
+> [!NOTE]
+>**See Records** has the following limitations:
+> - You can't change the data in the **See Records** view and save it back to the report.
+> - You can't use **See Records** when your visual uses a calculated measure.
+> - You can't use **See Records** when you are connected to a live multidimensional (MD) model.
 
 ## Next steps
 ﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
