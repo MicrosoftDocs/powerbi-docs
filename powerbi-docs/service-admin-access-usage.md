@@ -3,7 +3,7 @@ title: Find Power BI users that have signed in
 description: If you are a tenant admin, and want to see who has signed into Power BI, you can use the Azure Active Directory access and usage reports to gain visibility.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,8 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
-ms.author: maghan
+ms.date: 04/02/2018
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
