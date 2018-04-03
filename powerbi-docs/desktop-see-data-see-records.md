@@ -22,7 +22,7 @@ ms.author: davidi
 LocalizationGroup: Learn more
 ---
 # Use See Data and See Records in Power BI Desktop
-In **Power BI Desktop** you can drill into the details of any visualization, and see a textual representation of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drill-through*, or *drill-through to details*.
+In **Power BI Desktop** you can drill into the details of a visualization, and see a textual representation of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drill-through*, or *drill-through to details*.
 
 You can use **See Data** to view a text version of the values used in the selected visualization, or use **See Records** to view all the data for one selected record or data point. 
 
@@ -37,9 +37,6 @@ You can use **See Data** to view a text version of the values used in the select
 >  - Pie chart
 >  - Treemap
 
-
-![](media/desktop-see-data-see-records/see-data-see-records_1.png)
-
 ## Use See Data in Power BI Desktop
 
 **See Data** lets you see the data underlying a visualization. **See Data** shows in the **Data/Drill** tab in the **Visual Tools** section of the ribbon when you select a visualization.
@@ -48,16 +45,16 @@ You can use **See Data** to view a text version of the values used in the select
 
 You can also see data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears, or by selecting the **More options** ellipsis (...) in the upper-right corner of the visualization, and then selecting **Show Data**.
 
-![Show Data by right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data by More Options](media/desktop-see-data-see-records/see-data2.png)
+![Show Data by right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data by More Options](media/desktop-see-data-see-records/see-data3.png)
 
 > [!NOTE]
 > You must be hovering over a data point in the visual for the right-click menu to be available.
 
-When you select **See Data** or **Show Data**, Power BI Desktop shows a canvas that displays both the visual and the textual representation of the data. In the *horizontal* view, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
+When you select **See Data** or **Show Data**, Power BI Desktop shows a canvas that displays both the visual and the textual representation of the data. In the *horizontal view*, the visual is displayed on the top half of the canvas, and the data is shown on the bottom half. 
 
 ![horizontal view](media/desktop-see-data-see-records/see-data4a.png)
 
-You can toggle between a *vertical view* and the *horizontal view* by selecting the icon in the upper-right corner of the canvas.
+You can toggle between the horizontal view and a *vertical view* by selecting the icon in the upper-right corner of the canvas.
 
 ![vertical view toggle](media/desktop-see-data-see-records/see-data4.png)
 
