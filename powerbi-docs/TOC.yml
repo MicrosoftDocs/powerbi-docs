@@ -728,7 +728,7 @@
       href: desktop-common-query-tasks.md
     - name: "Use Shape Maps in Power BI Desktop (Preview)"
       href: desktop-shape-map.md
-    - name: "Combine binaries"
+    - name: "Combine files (binaries)"
       href: desktop-combine-binaries.md
   - name: Model your data
     items: 
