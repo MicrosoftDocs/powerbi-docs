@@ -50,7 +50,6 @@ Submission starts with sending an email to the Power BI custom visuals submissio
 > [!IMPORTANT]
 > You must fill the following fields in the pbiviz.json file: “description”, “supportUrl”, “author“, “name” and “email” before you create the .pbiviz package.
 > 
-> 
 
 Attach the .pbiviz file and the sample report .pbix file in your email. The Power BI team will reply back with instructions and a app package XML file to upload. This XML app package is required in order to submit your visual through the Office developer center.
 

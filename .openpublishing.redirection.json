@@ -16,7 +16,7 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "embed-sample-for-customers-us-government.md", 
+            "source_path": "embed-sample-for-customers-us-govt.md", 
             "redirect_url": "/power-bi/embed-sample-for-customers-sovereign-clouds",
             "redirect_document_id": true
         },
