@@ -127,7 +127,7 @@ When you are satisfied with the data, select **Close & Apply** > **Close & Apply
    
    ![Loading data](media/desktop-tutorial-facebook-analytics/t_fb_1-loading.png)
    
-   Once the data is loaded, it appears in the Report view as a new Query in the Field list.
+   Once the data is loaded, it appears in the Report view as a new Query in the Fields list.
    
    ![New query](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
@@ -151,13 +151,13 @@ Now that you have imported data from the Facebook page, you can quickly and easi
    
    ![Sort by number of comments](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Note that the most comments were associated with **Blank** (not in response to any post). To filter out the Blank row, select **message (all)** under **Filters** at the bottom of the Visualizations pane, select **Select All**, and then select **Blank** to deselect it. The Filters entry changes to **message is not (Blank)**, and the Blank row disappears from the chart visualization. 
+5. Note that the most comments were associated with **Blank** messages (these posts may have been stories, links, videos, or other non-text content). To filter out the Blank row, select **message (all)** under **Filters** at the bottom of the Visualizations pane, select **Select All**, and then select **Blank** to deselect it. The Filters entry changes to **message is not (Blank)**, and the Blank row disappears from the chart visualization. 
    
    ![Filter out blank](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
 ### Format the chart
 
-The visualization is getting interesting, but you can't see much of the post text in the chart. To show more of the post text:
+The visualization is getting more interesting, but you can't see much of the post text in the chart. To show more of the post text:
 
 1. Using the handles on the chart visualization, resize the chart to be as large as possible. 
    
@@ -168,7 +168,7 @@ The visualization is getting interesting, but you can't see much of the post tex
    
    ![Formatting changes](media/desktop-tutorial-facebook-analytics/barchart4.png)
    
-   The chart rows now show more of the post content. 
+   The chart now shows more of the post content. 
    
    ![Show more posts](media/desktop-tutorial-facebook-analytics/barchart5.png)
    
@@ -182,18 +182,18 @@ The X axis (number of comments) of the chart does not show exact values, and loo
    
 ### Edit the data type
 
-That's better, but the data labels all have a **.0** decimal place, which is distracting and misleading, since **Number of posts** is a whole number. You need to edit the data type to change Number of posts to a whole number.
+That's better, but the data labels all have a **.0** decimal place, which is distracting and misleading, since **Number of posts** must be a whole number. You need to change the data type of the **Number of posts** column to Whole Number.
 
 1. To edit the data type, right-click **Query1** in the Fields list, or hover over it and select the **More options** ellipsis (...), and then select **Edit Query**. You can also select **Edit Queries** from the **External data** area of the Home tab in the ribbon, and then select **Edit Queries** from the dropdown. The Power BI Desktop **Power Query Editor** opens in a separate window.
    
-   ![Edit Query from Fields list](media/desktop-tutorial-facebook-analytics/editquery1.png) ![Edit Queries from ribbon](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
+   ![Edit Query from Fields list](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Edit Queries from ribbon](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
-2. Select the **Number of comments** column, and change the data type to **Whole Number** by: 
+2. In the Power Query Editor, select the **Number of comments** column, and change the data type to **Whole Number** by either: 
    - Selecting the **1.2** icon next to the **Number of comments** column header, and selecting **Whole number** from the dropdown, or
    - Right-clicking the column header and selecting **Change type > Whole Number**, or
    - Selecting **Data type: Decimal Number** in the **Transform** group of the Home tab, or the **Any Column** group of the **Transform** tab, and selecting **Whole Number**.
    
-   The icon in the column header changes to **123**, denoting a whole number data type.
+   The icon in the column header changes to **123**, denoting a Whole Number data type.
    
    ![Change data type](media/desktop-tutorial-facebook-analytics/change-datatype.png)
    
@@ -205,7 +205,7 @@ That's better, but the data labels all have a **.0** decimal place, which is dis
 
 You want to visualize the number of comments on posts over time. You can create a slicer visualization to filter the chart data to different time frames. 
 
-1. Click a blank area of the canvas, and then select the **Slicer icon** in the Visualizations pane. 
+1. Click a blank area of the canvas, and then select the **Slicer icon** in the Visualizations pane. A blank slicer visualization appears. 
    
    ![Select slicer icon](media/desktop-tutorial-facebook-analytics/slicer1.png)
    
