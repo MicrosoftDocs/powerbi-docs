@@ -51,7 +51,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the GCC parameters in the web.config file as follows.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
@@ -66,7 +66,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the DoDCON parameters in the web.config file as follows.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
@@ -81,7 +81,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
 	3. Add the DoDCON parameters in the web.config file as follows.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
@@ -96,7 +96,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
     3. Add the Power BI for Germany cloud parameters in the web.config file as follows.
 
-```
+```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
@@ -139,7 +139,7 @@ To embed your Power BI content, you will need to do a couple of things to make s
 ### Create the Power BI Client with your access token
 With your access token, you will want to create your Power BI client object which will allow you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a *Microsoft.Rest.TokenCredentials* object.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Microsoft.PowerBI.Api.V2;
@@ -160,7 +160,7 @@ A sample of this is available within **Controllers\HomeController.cs** of the [A
 
 **Dashboards**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -173,7 +173,7 @@ Dashboard dashboard = dashboards.Value.FirstOrDefault();
 
 **Tile**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -194,7 +194,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 **Report**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -217,7 +217,7 @@ This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A s
 
 **Dashboard**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -236,7 +236,7 @@ var embedConfig = new EmbedConfig()
 
 **Tile**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -256,7 +256,7 @@ var embedConfig = new TileEmbedConfig()
 
 **Report**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -279,7 +279,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedDashboard.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="dashboardContainer"></div>
 <script>
@@ -317,7 +317,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedTile.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="tileContainer"></div>
 <script>
@@ -359,7 +359,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedReport.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
 <script>
