@@ -22,9 +22,9 @@ ms.author: davidi
 LocalizationGroup: Learn more
 ---
 # Use See Data and See Records in Power BI Desktop
-In **Power BI Desktop** you can drill into the details of a visualization, and see a textual representation of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drill-through*, or *drill-through to details*.
+In **Power BI Desktop** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drill-through*, or *drill-through to details*.
 
-You can use **See Data** to view a text version of the values used in the selected visualization, or use **See Records** to view all the data for one selected record or data point. 
+You can use **See Data** to view a textual version of the values used by the selected visualization, or use **See Records** to view all the data for one selected record or data point. 
 
 ![See Data and See Records](media/desktop-see-data-see-records/see-data-record.png)
 
@@ -41,13 +41,13 @@ You can use **See Data** to view a text version of the values used in the select
 
 ## Use See Data in Power BI Desktop
 
-**See Data** lets you see the data underlying a visualization. **See Data** shows in the **Data/Drill** tab in the **Visual Tools** section of the ribbon when you select a visualization.
+**See Data** shows you the data underlying a visualization. **See Data** appears in the **Data/Drill** tab in the **Visual Tools** section of the ribbon when a visualization is selected.
 
 ![See Data in ribbon](media/desktop-see-data-see-records/see-data1.png)
 
-You can also see data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears, or by selecting the **More options** ellipsis (...) in the upper-right corner of the visualization, and then selecting **Show Data**.
+You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting the **More options** ellipsis (...) in the upper-right corner of a visualization, and then selecting **Show Data**.
 
-![Show Data by right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data by More Options](media/desktop-see-data-see-records/see-data3.png)
+![Show Data right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data More Options](media/desktop-see-data-see-records/see-data3.png)
 
 > [!NOTE]
 > You must be hovering over a data point in the visual for the right-click menu to be available.
@@ -66,7 +66,7 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 ## Use See Records in Power BI Desktop
 
-You can also focus on one data record in a visualization, and drill into the data behind it. To use **See Records**, select a visualization, then select **See Records** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data point or row. 
+You can also focus on one data record in a visualization, and drill into the data behind it. To use **See Records**, select a visualization, then select **See Records** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data point or row on the visualization. 
 
 ![See Records in ribbon](media/desktop-see-data-see-records/see-record1.png)
 
@@ -81,7 +81,7 @@ When you select **See Records** for a data element, the Power BI Desktop canvas 
 
 ![](media/desktop-see-data-see-records/see-record3.png)
 
-To get back to the report, select the **< Back to Report** button in the upper-left corner of the canvas.
+To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
 
 ![](media/desktop-see-data-see-records/see-record4.png)
 
