@@ -131,7 +131,7 @@ Calculate the line total for each **Order\_Details** row:
 1. In the **Add Column** ribbon tab, click **Add** **Custom Column**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. In the **Add Custom Column** dialog box, in the **Custom Column Formula** textbox, enter **[Order\_Details.UnitPrice] \* [Order\_Details.Quantity]**.
+2. In the **Add Custom Column** dialog box, in the **Custom Column Formula** textbox, enter **[Order\_Details.UnitPrice]** \* **[Order\_Details.Quantity]**
 3. In the **New column name** textbox, enter **LineTotal**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
