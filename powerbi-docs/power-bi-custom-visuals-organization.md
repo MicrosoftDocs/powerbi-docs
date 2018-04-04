@@ -21,21 +21,15 @@ ms.author: maghan
 
 LocalizationGroup: Visualizations
 ---
-# Using organization custom visuals in Power BI (Preview)
+# Using organization custom visuals in Power BI
 
 You can use custom visuals in Power BI to create a unique type of visual that’s tailored to you, or the data insights you’re trying to convey. Often these custom visuals are created by developers, and they are often created when the multitude of visuals that are included in Power BI don’t quite meet their need. 
 
-In some organizations, custom visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop custom visuals, share them throughout their organization, and make sure they’re properly maintained. Power BI custom visuals (now in preview) lets organizations do just that. 
+In some organizations, custom visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop custom visuals, share them throughout their organization, and make sure they’re properly maintained. Power BI custom visuals  lets organizations do just that.
 
-The following image shows the process by which organization custom visuals (preview) in Power BI flows from administrator, through development and maintenance, all finally make their way to the data analyst.
+The following image shows the process by which organization custom visuals in Power BI flows from administrator, through development and maintenance, all finally make their way to the data analyst.
 
 ![](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
-
-## How to enable organizational custom visuals (preview)
-
-Organization custom visuals are currently in Preview, so you must enable the feature in Power BI Desktop. To enable this preview feature, from the ribbon select File > Options and settings > Options , then in the left pane select Preview features, then select the checkbox next to My organization custom visuals, as shown in the following image.
-
-![](media/power-bi-custom-visuals-organizational/custom-visual-org-02.jpg)
 
 Organization visuals are deployed and managed by the Power BI administrator from the Admin portal. Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop.
 
@@ -53,26 +47,16 @@ To learn more about how to administer, deploy, and manage organizational custom 
 
 ## Considerations and limitations
  
-Since organizational custom visuals is in preview, there are a handful of considerations and limitations that you need to be aware of and take into consideration.
+There are several considerations and limitations that you need to be aware of.
  
 Admin:
 
 * Legacy custom visuals (such as custom visuals that are not built on top of the new versioned APIs) are not supported
 
-* In-place update is not yet supported. To update a visual, you must upload a new version of the visual into the organization repository (also make sure it has the same Visual ID in the PBIVIZ file). Report authors can then import the new version into their report and do an in-place replace of their current version of the visual in the report.
-
-* If a custom visual is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deletion operation from the repository is not reversible.
+* If a custom visual is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deletion operation from the repository is not reversible. To temporarily disable a custom visual, use the "Disable" feature.
  
 End user:
 
-* Using the same visual (the same Visual ID) from the public marketplace (AppSource) and from the organization repository is not supported. In that circumstance, the latest visual that was imported will be used.
-
-* External sharing of organizational visuals in dashboards and reports is not supported. Users external to the organization that view a dashboard with an organizational custom visual will see a blank visual . 
-
 * Power BI Workspace Collection is not supported for organization visuals
 
-* Organization custom visuals in reports that are published to web will not render
-
 * Visio visual, PowerApps visual, and the GlobeMap visual from AppSource marketplace will not render if deployed through the organization repository
-
-* If the admin deletes a custom visual from the repository, and that visual is used in a report, the visual will stop rendering and must be removed from the report in order to save the report
