@@ -23,7 +23,7 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update?
 
-## April 2018 Update (2.57.5068.383)
+## April 2018 Update (2.57.5068.501)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
