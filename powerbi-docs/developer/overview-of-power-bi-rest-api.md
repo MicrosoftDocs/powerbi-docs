@@ -20,7 +20,7 @@ ms.date: 07/20/2017
 ms.author: maghan
 
 ---
-# What can developers do with Power BI?
+# What can developers do with the Power BI API?
 Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
 
 Developers can also build their own data visualizations that can be used in interactive reports and dashboards. 
