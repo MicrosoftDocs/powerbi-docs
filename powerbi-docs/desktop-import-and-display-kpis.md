@@ -31,7 +31,7 @@ Follow these steps to import and display KPIs.
 
 1. Import the Excel workbook into Power BI, using **File -> Import -> Excel workbook contents**. You can also [learn how to import workbooks](desktop-import-excel-workbooks.md). 
 
-1. After import into Power BI, your KPI will appear in the **Fields** pane, marked with the [](media/desktop-import-and-display-kpis/traffic.png) icon. To use a KPI in your report, be sure to expand its contents, exposing the **Value**, **Goal**, and **Status** fields.
+1. After import into Power BI, your KPI will appear in the **Fields** pane, marked with the ![traffic light](media/desktop-import-and-display-kpis/traffic.png) icon. To use a KPI in your report, be sure to expand its contents, exposing the **Value**, **Goal**, and **Status** fields.
 
     ![](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
 
