@@ -770,6 +770,8 @@
       href: desktop-insights.md
     - name: "Slicers in Power BI Desktop"
       href: desktop-slicers.md
+    - name: "Using buttons in Power BI"
+      href: desktop-buttons.md
     - name: "Bookmarks in Power BI"
       href: desktop-bookmarks.md
     - name: "Create custom report tooltips (preview)"
