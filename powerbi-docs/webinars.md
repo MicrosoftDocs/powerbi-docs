@@ -34,7 +34,7 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
 
 [Register to watch on April 11th - Service Managament](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-[Register to watch on April 17th - Security](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Register to watch on April 17th - Security](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 
 **Advanced Analytics with Excel and Power BI**
 <br>by Nagasaikiran Kambhampati and Miguel Martinez
