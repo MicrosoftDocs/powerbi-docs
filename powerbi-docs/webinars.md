@@ -38,7 +38,7 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 
 **Advanced Analytics with Excel and Power BI**
 <br>by Nagasaikiran Kambhampati and Miguel Martinez
-<br>*April 11th and April 17th, 9:00AM PST, 12:00PM EST*
+<br>*April 11th and April 17th, 12:00PM PST, 3:00PM EST*
 
 Join us for this webinar for an introduction on how Microsoft Excel and Power BI bring advanced analytics to the daily business decision process, allowing users to extract useful knowledge from data to solve problems.
 
