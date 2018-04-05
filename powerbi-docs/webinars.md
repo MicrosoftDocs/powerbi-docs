@@ -92,7 +92,7 @@ Watch recorded sessions at any time
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
-**Applied Intelligence for Sales & Service**
+**Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
