@@ -49,7 +49,7 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 
 ## Next steps
 * [Scan a barcode from the Power BI app on your iPhone](mobile-apps-scan-barcode-iphone.md)
-* [Issue with scanning barcodes on an iPhone](mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
+* [Issues with scanning barcodes on an iPhone](mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

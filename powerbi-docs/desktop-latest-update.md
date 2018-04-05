@@ -23,7 +23,7 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update?
 
-## April 2018 Update (2.57.5068.383)
+## April 2018 Update (2.57.5068.501)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -42,8 +42,8 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
 
-* Q&A Explorer  [[video]](https://youtu.be/W_Nb73Od_AI?t=13s) [[article]]()  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
-* Buttons to trigger actions  [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[article]](desktop-bookmarks.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
+* Q&A Explorer  [[video]](https://youtu.be/W_Nb73Od_AI?t=13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
+* Buttons to trigger actions  [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[article]](desktop-buttons.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
 * Combo chart line styles  [[video]](https://youtu.be/W_Nb73Od_AI?t=16m55s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#comboLines) 
 * Improved default sort for visuals  [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
 * Numeric slicer now generally available  [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
