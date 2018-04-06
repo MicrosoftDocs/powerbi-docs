@@ -994,6 +994,8 @@
       href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Get a custom visual certified"
       href: power-bi-custom-visuals-certified.md
+    - name: "Publish custom visuals to AppSource"
+      href: office-store.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"
