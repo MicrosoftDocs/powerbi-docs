@@ -3,7 +3,7 @@ title: Power BI Pro in your organization
 description: Power BI Pro in your organization 
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
