@@ -995,7 +995,7 @@
     - name: "Get a custom visual certified"
       href: power-bi-custom-visuals-certified.md
     - name: "Publish custom visuals to AppSource"
-      href: office-store.md
+      href: developer/office-store.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"
