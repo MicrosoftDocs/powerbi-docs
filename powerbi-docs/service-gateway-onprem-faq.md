@@ -3,7 +3,7 @@ title: On-premises data gateway FAQ
 description: This is the On-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---

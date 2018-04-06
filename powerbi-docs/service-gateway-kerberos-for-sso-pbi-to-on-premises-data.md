@@ -3,7 +3,7 @@ title: Use Kerberos on the on-premises gateway for SSO (single sign-on) from Pow
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/09/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---

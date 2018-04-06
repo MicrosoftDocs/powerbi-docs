@@ -3,7 +3,7 @@ title: Troubleshooting the On-premises data gateway
 description: This article provides ways for you to troubleshoot issues you are having with the On-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 03/23/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
