@@ -3,7 +3,7 @@ title: Forgot your password for Power BI?
 description: Forgot your password for Power BI?
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---
