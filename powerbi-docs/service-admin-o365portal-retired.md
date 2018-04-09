@@ -3,7 +3,7 @@ title: Power BI for Office 365 is retired
 description: Power BI for Office 365 is retired, learn how to use and administer today's Power BI.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: amandacofsky
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
