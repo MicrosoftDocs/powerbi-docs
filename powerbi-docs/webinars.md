@@ -16,12 +16,35 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 04/05/2018
 ms.author: maikelson
 ---
 # Power BI webinars
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
+
+## Upcoming webinars
+
+Register to hear from Power BI experts and participate in live Q&A sessions
+
+**Power BI adoption framework webinar series: Part 3 and 4 — Service Managament and Security**
+<br>by Manu Kanwarpal and Paul Henwood
+<br>*April 11th and April 17th, 9:00AM PST, 12:00PM EST*
+
+Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
+
+[Register to watch on April 11th - Service Managament](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Register to watch on April 17th - Security](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+
+**Advanced Analytics with Excel and Power BI**
+<br>by Nagasaikiran Kambhampati and Miguel Martinez
+<br>*April 11th and April 17th, 12:00PM PST, 3:00PM EST*
+
+Join us for this webinar for an introduction on how Microsoft Excel and Power BI bring advanced analytics to the daily business decision process, allowing users to extract useful knowledge from data to solve problems.
+
+[Register to watch on April 17th](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
+
+>[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
 ## Featured webinars
 
@@ -31,34 +54,23 @@ Get started with these popular on-demand webinars
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Simply Compelling – Seven Tips to Better Visualization Design**
-<br>by Miranda Li
-<br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Simply-Compelling-Seven-Tips-to-Better-Visualization-Design/m-p/173401?Is=Website)
+**Power BI Tricks, Tips and Tools from the owners of PowerBI.Tips**
+<br>by Mike Carlo and Seth Bauer
+<br>[Watch now](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Be a Full Stack Power BI Jedi – A walkthrough of Power BI most advanced features through Star Wars data**
+<br>by Gil Raviv
+<br>[Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
 **Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
 <br>by Carlos Otero and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 >[Browse the library of Power BI on-demand webinars from our community experts](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
-
-## Upcoming webinars
-
-Register to hear from Power BI experts and participate in live Q&A sessions
-
-**Power BI adoption framework webinar series: Part 1 — Adoption: Adopt a data-driven culture**
-<br>by Manu Kanwarpal
-<br>*March 8th, 9:00AM PST, 12:00PM EST*
-
-Shift your organization’s mindset to a data-driven culture and register for the Webinar series that gives you an adoption framework for Power BI from Microsoft. Self-service business intelligence (BI) adoption is challenging and getting the tools is only the first step of your journey. Successful adoption requires a change in people, processes, and technology.
-This webinar is the first in a five-part series that unlocks the potential of Power BI for your organization.
-
-[Register to watch on March 8th](https://info.microsoft.com/ww-landing-powerbi-adoption.html?Is=Website)
-
->[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
 ## On-Demand webinars
 
@@ -80,7 +92,7 @@ Watch recorded sessions at any time
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
-**Applied Intelligence for Sales & Service**
+**Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
@@ -92,6 +104,28 @@ Watch recorded sessions at any time
 <br>by Patrick McGarry and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
+### Community ###
+
+**Storytelling with your data and Power BI**
+<br>by Tristan Malherbe
+<br>[Watch now](https://www.youtube.com/watch?v=egk0suekwHo)
+
+**Practical DAX for Power BI**
+<br>by Phil Seamark
+<br>[Watch now](https://www.youtube.com/watch?v=1fGfqzS37qs)
+
+**Developing with Power BI Embedding – The April 2018 Update**
+<br>by Ted Pattison
+<br>[Watch now](https://www.youtube.com/watch?v=swnGlrRy588)
+
+**Power BI security deep dive**
+<br>by Kasper de Jonge
+<br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
+
+**Ask a Partner: Developing Custom Visuals for Power BI**
+<br>by Ted Pattison
+<br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
+
 ### Advanced Topics ###
 
 **Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
@@ -102,17 +136,9 @@ Watch recorded sessions at any time
 <br>by Ajay Anandan
 <br>[Register and watch now](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
 
-**Power BI security deep dive**
-<br>by Kasper de Jonge
-<br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
-
 **Accelerating modern BI adoption with Power BI Premium**
 <br>by Sirui Sun and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**Ask a Partner: Developing Custom Visuals for Power BI**
-<br>by Ted Pattison
-<br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
 **What's new and exciting in Power BI Report Server**
 <br>by Riccardo Muti, Chris Finlan and Chinmay Joshi
