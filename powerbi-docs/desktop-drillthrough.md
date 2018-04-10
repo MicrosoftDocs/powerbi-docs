@@ -37,7 +37,7 @@ When you add a field to the **Drillthrough filters** well, **Power BI Desktop** 
 
 ![](media/desktop-drillthrough/drillthrough_03.png)
 
-Since the back button is an image, you can replace the image of that visual with any image you want, and it will still operate as a back button so report consumers can go back to their original page. To use your own image for a back button, just place an image visual on the drillthrough page, then select the visual, and set the *Back button* slider to on. Your image now functions as a back button.
+Because the back button is an image, you can replace the image of that visual with any image you want, and it will still operate as a back button so report consumers can go back to their original page. To use your own image for a back button, just place an image visual on the drillthrough page, then select the visual, and set the *Back button* slider to on. Your image now functions as a back button.
 
 ![](media/desktop-drillthrough/drillthrough_05.png)
 
