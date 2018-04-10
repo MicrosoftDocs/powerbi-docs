@@ -88,6 +88,9 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Accessibility improvements
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.51.4885.3981 (October 2017), Released: April 10, 2018*
+        - Security Updates
+
     - *Version: 2.51.4885.2501 (October 2017), Released: January 10, 2018*
         - Security Updates
 
