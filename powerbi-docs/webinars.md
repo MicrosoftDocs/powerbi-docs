@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/05/2018
+ms.date: 04/11/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -27,14 +27,17 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
-**Power BI adoption framework webinar series: Part 3 and 4 — Service Managament and Security**
+**[Power BI adoption framework webinar series](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>by Manu Kanwarpal and Paul Henwood
-<br>*April 11th and April 17th, 9:00AM PST, 12:00PM EST*
+<br>*March, April and May 2018 9:00AM PST, 12:00PM EST*
 
 Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
 
-[Register to watch on April 11th - Service Managament](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Register to watch on April 17th - Security](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+[Register and watch now - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Register and watch now - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Register and watch now - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Register to watch on April 17th - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Register to watch on May 1st - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Advanced Analytics with Excel and Power BI**
 <br>by Nagasaikiran Kambhampati and Miguel Martinez
