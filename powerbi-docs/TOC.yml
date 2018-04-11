@@ -668,8 +668,8 @@
       href: desktop-ssas-multidimensional.md
     - name: "Connect to CSV files in Power BI Desktop"
       href: desktop-connect-csv.md
-    - name: "Connect to Adobe Analytics in Power BI Desktop (Preview)" 
-      href: desktop-connect-csv.md
+    - name: "Connect to Adobe Analytics in Power BI Desktop" 
+      href: desktop-connect-adobe-analytics.md
     - name: "Connect to an Impala database in Power BI Desktop"
       href: desktop-connect-impala.md
     - name: "Connect to an OData feed in Power BI Desktop"
@@ -728,7 +728,7 @@
       href: desktop-common-query-tasks.md
     - name: "Use Shape Maps in Power BI Desktop (Preview)"
       href: desktop-shape-map.md
-    - name: "Combine binaries"
+    - name: "Combine files (binaries)"
       href: desktop-combine-binaries.md
   - name: Model your data
     items: 
@@ -770,6 +770,8 @@
       href: desktop-insights.md
     - name: "Slicers in Power BI Desktop"
       href: desktop-slicers.md
+    - name: "Using buttons in Power BI"
+      href: desktop-buttons.md
     - name: "Bookmarks in Power BI"
       href: desktop-bookmarks.md
     - name: "Create custom report tooltips (preview)"
@@ -962,6 +964,8 @@
       href: developer/integrate-report.md
     - name: "Integrate a content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed Power BI content into an application for your customers for Sovereign Clouds"
+      href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: "Embed custom layouts into an app"
       href: developer/embedded-custom-layout.md
     - name: "Create an Azure Active Directory tenant"
@@ -990,6 +994,8 @@
       href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Get a custom visual certified"
       href: power-bi-custom-visuals-certified.md
+    - name: "Publish custom visuals to AppSource"
+      href: developer/office-store.md
   - name: Push data into a dashboard
     items: 
     - name: "Push data into a dashboard"

@@ -111,6 +111,8 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 * Donut
 * Table
 
+The percentile line is only available when using imported data in **Power BI Desktop** or when connected live to a model on a server running **Analysis Service 2016** or later, **Azure Analysis Services**, or a dataset on the Power BI service. 
+
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

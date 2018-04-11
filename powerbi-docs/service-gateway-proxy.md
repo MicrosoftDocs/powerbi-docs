@@ -1,9 +1,9 @@
 ---
-title: Configuring proxy settings for the on-premises data gateway
-description: Information regarding configuration of proxy settings for the on-premises data gateway.
+title: Configuring proxy settings for the On-premises data gateway
+description: Information regarding configuration of proxy settings for the On-premises data gateway.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,12 +17,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 11/21/2017
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
-# Configuring proxy settings for the on-premises data gateway
-Your work environment may require that you go through a proxy to access the internet. This could prevent the on-premises data gateway from connecting to the service.
+# Configuring proxy settings for the On-premises data gateway
+Your work environment may require that you go through a proxy to access the internet. This could prevent the On-premises data gateway from connecting to the service.
 
 ## Does your network use a proxy?
 The following post on superuser.com discusses how you can try to determine if you have a proxy on your network.
@@ -33,7 +33,7 @@ The following post on superuser.com discusses how you can try to determine if yo
 Proxy information is configured within a .NET configuration file. The location, and file names, will be different depending on the gateway you are using.
 
 ### On-premises data gateway
-There are two main configuration files that are involved with the on-premises data gateway.
+There are two main configuration files that are involved with the On-premises data gateway.
 
 **Configuration**
 
@@ -66,20 +66,20 @@ When configuring the proxy settings to use default credentials, as explained abo
 > 
 > 
 
-### Change the on-premises data gateway service account
-1. Change the Windows service account for the **on-premises data gateway service**.
+### Change the On-premises data gateway service account
+1. Change the Windows service account for the **On-premises data gateway service**.
    
     The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
    
     You will want to change the account on the **Log On** tab within the properties of the Windows service.
-2. Restart the **on-premises data gateway service**.
+2. Restart the **On-premises data gateway service**.
    
     From an admin command prompt, issue the following commands.
    
         net stop PBIEgwService
    
         net start PBIEgwService
-3. Start the **on-premises data gateway configurator**. You can select the windows start button and search for *on-premises data gateway*.
+3. Start the **On-premises data gateway configurator**. You can select the windows start button and search for *On-premises data gateway*.
 4. Sign in to Power BI.
 5. Restore the gateway using your recovery key.
    

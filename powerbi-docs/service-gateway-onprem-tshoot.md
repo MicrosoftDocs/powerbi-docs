@@ -1,9 +1,9 @@
 ---
-title: Troubleshooting the on-premises data gateway
-description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
+title: Troubleshooting the On-premises data gateway
+description: This article provides ways for you to troubleshoot issues you are having with the On-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
-# Troubleshooting the on-premises data gateway
-This article discusses some common issues you may encounter when using the **on-premises data gateway**.
+# Troubleshooting the On-premises data gateway
+This article discusses some common issues you may encounter when using the **On-premises data gateway**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -57,7 +57,7 @@ Information was received from the Power BI service, to the gateway. The informat
 At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Script error during sign into Power BI
-You may receive a script error when signing into Power BI as part of the on-premises data gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
+You may receive a script error when signing into Power BI as part of the On-premises data gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
 
 [MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
@@ -79,14 +79,14 @@ To correct this, do the following.
 1. Uninstall the gateway.
 2. Delete the following folder.
    
-        c:\Program Files\on-premises data gateway
+        c:\Program Files\On-premises data gateway
 3. Reinstall the gateway.
 4. Optionally apply the recovery key to restore an existing gateway.
 
 ### Support for TLS 1.1/1.2
-With the August 2017 update and beyond, the on-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the on-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 will end, so by then you must upgrade your on-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 will end, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
-It's important to note that TLS 1.0 is still supported by the on-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
+It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
@@ -116,7 +116,7 @@ This error could occur for different reasons. Be sure to validate that you can c
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownError**.
 
-You can also look in the Event Logs > **Applications and Services Logs** > **on-premises data gateway Service** for more details.
+You can also look in the Event Logs > **Applications and Services Logs** > **On-premises data gateway Service** for more details.
 
 ### Error: We encountered an error while trying to connect to <server>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
@@ -165,7 +165,7 @@ This will occur if you have a single row greater than 4 MB in size. You will nee
 ### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate.
 This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the netbios name for the server. This will cause a mismatch for the certificate. To resolve this issue, you will need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
-### I don't see the on-premises data gateway persent when configuring scheduled refresh.
+### I don't see the On-premises data gateway persent when configuring scheduled refresh.
 This could be because of a few different scenarios.
 
 1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
@@ -176,11 +176,11 @@ This could be because of a few different scenarios.
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.
 
 ## Reports
-### Report could not access the data source because you do not have access to our data source via an on-premises data gateway.
+### Report could not access the data source because you do not have access to our data source via an On-premises data gateway.
 This is usually caused by one of the following.
 
-1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
-2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, on-premises data gateway.
+1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the On-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the On-premises data gateway, needs to use an IP Address as well.
+2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, On-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
 If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid, or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
@@ -315,11 +315,13 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TraceVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
+### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premissese Gateway application.
+
+   ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Enabling TraceVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
+> Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
 > 
 > 
 
@@ -353,6 +355,72 @@ To determine the time it took to query the data source, you can do the following
    > 
    > 
 
+## Kerberos
+
+If the underlying database server and On-premises data gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
+
+### ImpersonationLevel
+
+The ImpersonationLevel is related to the SPN setup or the local policy setting.
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
+
+**Solution**
+
+Follow these steps to solve the issue:
+1. Setup a SPN for the On-Premises Gateway
+2. Setup constrained delegation in your Active Directory (AD)
+
+### FailedToImpersonateUserException: Failed to create windows identity for user userid
+
+The FailedToImpersonateUserException will happen if you are not able to impersonate on behalf of another user. This could also happen if the account you are trying to impersonate is from another domain than the one the gateway service domain is on (this is a limitation).
+
+**Solution**
+* Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
+* Ensure that the userid it's trying to impersonate is a valid AD Account
+
+### General error; 1033 error while parsing protocol
+
+You will get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you will see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
+
+**Solution**
+* SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you will see the 1033 error.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* In the logs you should see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
+
+### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
+
+You will get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
+
+**Solution**
+* Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
+
+   ![delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -379,4 +447,3 @@ For additional information about troubleshooting refresh scenarios, take a look 
 [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

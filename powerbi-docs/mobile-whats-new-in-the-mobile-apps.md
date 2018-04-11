@@ -13,10 +13,10 @@ qualitydate: ''
 
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/09/2018
 ms.author: maggies
 
 ---
@@ -27,11 +27,34 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](desktop-latest-update.md)  
 * [What's new in the Power BI service](service-whats-new.md)  
 
+## April 2018
+
+### Mobile drill-down and drill-up
+
+You can now drill down and drill up to dive into report visuals on your mobile device. To access this new feature, tap and hold to open the tooltip menu on a report visual, and then tap the drill buttons to explore your data in depth.
+
+### Persistent filters
+
+We recently updated report filters and slicers, so they are automatically saved from Power BI on the web to the Power BI mobile app. Now, filters and slicers you set in the mobile app are automatically saved to Power BI on the web.
+
+
 ## March 2018
 
 ### Power BI for Mixed Reality app (Preview)
 
 In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+
+### Share reports and dashboards externally
+
+Share dashboards and reports with users outside of your organization, directly from the app. External sharing in enabled for both organizational and social accounts. 
+
+### Persistent filters
+
+When you set filters and slicers in Power BI on the web, your filter choices are saved to your mobile app as well, so you can pick up where you left off.
+
+### Refresh reports on the iPad
+
+Power BI reports now have a refresh button in the iPad app.
 
 ## February 2018
 

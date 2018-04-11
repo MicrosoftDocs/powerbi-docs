@@ -26,12 +26,12 @@ You can create visually rich **report tooltips** that appear when you hover over
 
 ![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
 
-You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page will appear when you hover over the visual, filtered based on the datapoint over which your mouse is hovering. 
+You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint over which your mouse is hovering. 
 
-There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips, and what you must do to configure them.
+There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
 
 ### Enable the tooltips preview 
-Since report tooltips are currently in preview, before you can create report tooltips you need to enable them. To enable the report tooltips preview feature, select **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Bookmarks**. 
+Since report tooltips are currently in preview, before you can create report tooltips you need to enable them. To enable the report tooltips preview feature, select **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Report page tooltips**. 
 
 ![Enable preview feature of report tooltips](media/desktop-tooltips/desktop-tooltips_01.png)
 
@@ -88,7 +88,7 @@ To set a tooltip manually, select the visual for which you want to specify the m
 
 ![Tooltip card for an individual visual](media/desktop-tooltips/desktop-tooltips_09.png)
 
-Then in the **Page** dropdown, select the tooltip page you want to use for the selected visual. Note that only report pages that are specified as **Tooltip** pages show up in the dialog.
+Then, in the **Page** dropdown, select the tooltip page you want to use for the selected visual. Note that only report pages that are specified as **Tooltip** pages show up in the dialog.
 
 ![Select a tooltip page for manual tooltip](media/desktop-tooltips/desktop-tooltips_10.png)
 
@@ -96,7 +96,7 @@ Being able to manually set a tooltip has many uses. You can set a blank page for
 
 ## Reverting to default tooltips
 
-If you create a manual tooltip for a visual but you decide you want the default tooltip instead, you can always return to the default tooltip that Power BI provides. To do so, when a visual is selected and the **Tooltip** card is expanded, just select *Auto* from the **Page** dropdown to go back to the default.
+If you create a manual tooltip for a visual but decide you want the default tooltip instead, you can always return to the default tooltip that Power BI provides. To do so, when a visual is selected and the **Tooltip** card is expanded, just select *Auto* from the **Page** dropdown to go back to the default.
 
 ![Back to the default tooltip for a visual](media/desktop-tooltips/desktop-tooltips_11.png)
 
@@ -123,7 +123,7 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Limitations and considerations
 In this preview version of report **tooltips**, there are a few limitations and considerations to keep in mind.
 
-* Report tooltips are not supported when viewing reports in mobile apps, or in embedded environments, including Publish to web. 
+* Report tooltips are not supported when viewing reports in mobile apps or in embedded environments, including Publish to web. 
 * Report tooltips are not supported for custom visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 

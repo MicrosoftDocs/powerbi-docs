@@ -43,7 +43,7 @@ Combo charts are available in Power BI service and Power BI Desktop. This tutori
 ## Create a basic, single-axis, Combo Chart
 Watch Will create a combo chart using the Sales and Marketing sample.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
 <a name="create"></a>
 To create your own combo chart, sign in to Power BI service and select **Get Data \> Samples \> Retail Analysis Sample > Connect >Go to dashboard**.

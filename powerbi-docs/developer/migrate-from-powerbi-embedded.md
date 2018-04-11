@@ -55,8 +55,7 @@ The following accounts will need to exist within your tenant.
 
 > [!NOTE]
 > These accounts will need to have Power BI Pro licenses in order to use App workspaces.
-> 
-> 
+>
 
 1. A tenant admin user.
    
@@ -68,10 +67,13 @@ The following accounts will need to exist within your tenant.
    
     The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the App workspaces created for embedding.
    
-   > [!NOTE]
-   > This is just a regular user account in your organziation that will be used for the purposes of embedding.
-   > 
-   > 
+> [!NOTE]
+> This is just a regular user account in your organziation that will be used for the purposes of embedding.
+>
+
+> [!NOTE]
+> If App-Only Token Authentication is a requirement for your application, please click [here](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) to contact us.
+>
 
 ## App registration and permissions
 You will need to register an application within Azure AD and grant certain permissions.

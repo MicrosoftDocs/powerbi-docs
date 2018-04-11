@@ -3,7 +3,7 @@ title: Purchasing Power BI Pro
 description: Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
@@ -67,6 +67,10 @@ Follow these steps to purchase Power BI Pro if you are an Office IT Admin:
 ## Pricing
 
 For latest pricing information, see [Power BI Pricing](https://powerbi.microsoft.com/en-us/pricing/).
+
+> [!NOTE]
+> Users with Pro licenses assigned will have 30 days of full access after the subscription ends. When this happens you will see your subscription show as "expired" in the admin portal.
+>
 
 ## Next steps
 [Self-service sign up for Power BI](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
