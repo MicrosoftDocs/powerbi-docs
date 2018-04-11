@@ -16,11 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-<<<<<<< HEAD
 ms.date: 03/24/2018
-=======
-ms.date: 01/09/2018
->>>>>>> 5b871073ca53e3471db531d69285919f6274e73d
 ms.author: mihart
 
 LocalizationGroup: Reports
