@@ -41,8 +41,7 @@ Following are the steps to browse and select visuals from the online **AppSource
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
-2. On the [Power BI visuals](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) library page, select **Power BI visuals** from the list of Add-ins in the left pane. 
-
+2. On the [Power BI visuals](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) library page, select **Power BI visuals** from the list of Add-ins in the left pane.
 
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 

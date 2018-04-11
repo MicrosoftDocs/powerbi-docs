@@ -39,7 +39,7 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    
    ![](media/desktop-r-visuals/r-visuals-3.png)
 
-When you add an R visual to a report, **Power BI Desktop** does the following:
+   When you add an R visual to a report, **Power BI Desktop** does the following:
    
    - A placeholder R visual image appears on the report canvas.
    
