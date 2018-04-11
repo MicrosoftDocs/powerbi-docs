@@ -73,7 +73,7 @@ To create a new slicer, you can select the slicer icon and then select the data 
 4. Select different date ranges with the slider, or select a date field to type in a value or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
     
     >[!NOTE]
-    >Numeric and date/time data types produce range slider slicers by default. Starting with the February Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
+    >Numeric and date/time data types produce range slider slicers by default. Starting with the February 2018 Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 >[!TIP]
 >Although the **Month** data field produces a **Between** range slider slicer type by default, you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper-right area of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
@@ -103,11 +103,12 @@ Starting with the February 2018 Power BI update, you can sync a slicer and use i
 In the current report, the **District Monthly Sales** page also has a **District Manager** slicer, but it is not synced with the one you created on the **Overview** page (the two slicers can have different item selections). The **New Stores** page has only a **Store Name** slicer. You can sync your new **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages. 
 
 1. On the **View** menu, select **Sync slicers** in Power BI Desktop (or turn on **Sync slicers pane** in Power BI service). The **Sync Slicers** pane appears. 
-2. On the **Overview** page, select the **District Manager** slicer. Note that the **District Monthly Sales** page is already selected in the **Visible** column, because there is a District Manager slicer on that page, but it is not selected in the **Sync** column. 
+2. On the **Overview** page, select the **District Manager** slicer. Note that the **District Monthly Sales** page is already selected in the **Visible** column, because there is also a District Manager slicer on that page, but it is not selected in the **Sync** column. 
     
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
 3. In the **Sync** column, select the **New Stores** page and the **District Monthly Sales** page to sync the **Overview** slicer to those pages. 
+    
 3. In the **Visible** column, select the **New Stores** page and leave the **District Monthly Sales** page selected. 
 4. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, the **District Manager** slicer now shows the same selections as the one on the **Overview** page. On the **New Stores** page, the selections in the **District Manager** slicer affect the selections that are available in the **Store Name** slicer. 
     
