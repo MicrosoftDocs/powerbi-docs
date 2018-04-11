@@ -87,10 +87,10 @@ By default, slicers on report pages affect all the other visualizations on that 
 You can use **Visual interactions** to exclude some page visualizations from being affected by others. On the **Overview** page, the "Total Sales Variance by FiscalMonth and District Manager" chart shows overall comparative data for District Managers by Month, which you want to keep visible at all times. You can use **Visual interactions** to keep slicer selections from filtering this chart. 
 
 1. With the District Manager slicer selected:
-    - In Power BI Desktop, click the Format menu under Visual Tools and select **Edit interactions**.
+    - In Power BI Desktop, select the **Format** menu under **Visual Tools** and select **Edit interactions**.
     - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
    
-   Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the Filter icons are selected.
+   Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the **Filter** icons are selected.
    
 2. Select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make the slicer stop filtering it. 
 3. Select the **Month** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart is unchanged. 
