@@ -3,7 +3,7 @@ title: Signing up for Power BI with a new Office 365 Trial
 description: Signing up for Power BI with a new Office 365 Trial
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Administration
 ---

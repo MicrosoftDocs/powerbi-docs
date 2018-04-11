@@ -3,7 +3,7 @@ title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,8 +16,9 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
-ms.author: maghan
+ms.date: 04/02/2018
+ms.author: mblythe
+
 LocalizationGroup: Administration
 ---
 # Power BI admin portal
@@ -322,8 +323,8 @@ Important: deletion is irreversible. Once deleted, the visual will immediately s
  
 ### How to update a visual
 
-If you'd like to update a visual in the repository, because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), upload the new file (make sure the Visual ID remains unchanged) as a new entrance in the list, make sure you provide the right details in the title and the description (e.g. "My Visual v2.0"). Next time users will enter the organization repository from Power BI Desktop, they will be able to import the new version, which will prompt them to replace the current version that they have in the report.
- 
+If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file will replace the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which will prompt them to replace the current version that they have in the report.
+
 ## Next steps
 
 [Understanding the Power BI admin role](service-admin-role.md)  

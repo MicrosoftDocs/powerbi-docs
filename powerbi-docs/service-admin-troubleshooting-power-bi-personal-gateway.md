@@ -3,7 +3,7 @@ title: Troubleshooting Power BI Gateway - Personal
 description: Troubleshooting Power BI Gateway - Personal
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---

@@ -32,7 +32,6 @@ For detailed information about new features, see [What's new in Power BI Report 
             - For Power BI Reports (PBIX), fix for Export Data not working from Power BI Visuals
             - For Power BI Reports (PBIX), fix for URL filters not working
             - For Paginated Reports (RDL), fix for images not being displayed correctly in IE11 after upgrading to Power BI Report Server March release
-            - Fix for Test Connection not working correctly for SAP BW DataSources
 
     - *Version 1.2.6648.38132 (Build 15.0.2.378), Released: March 19, 2018*
         - Security Updates
@@ -89,6 +88,9 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Accessibility improvements
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.51.4885.3981 (October 2017), Released: April 10, 2018*
+        - Security Updates
+
     - *Version: 2.51.4885.2501 (October 2017), Released: January 10, 2018*
         - Security Updates
 

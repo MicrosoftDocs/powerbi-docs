@@ -1,5 +1,5 @@
 ---
-title: Connect to Adobe Analytics in Power BI Desktop (preview)
+title: Connect to Adobe Analytics in Power BI Desktop
 description: Easily connect to and use Adobe Analytics Power BI Desktop
 services: powerbi
 documentationcenter: ''
@@ -16,22 +16,15 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/09/2018
+ms.date: 04/04/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to Adobe Analytics in Power BI Desktop (preview)
+# Connect to Adobe Analytics in Power BI Desktop 
 In **Power BI Desktop**, you can connect to **Adobe Analytics** and use the underlying data just like any other data source in Power BI Desktop. 
 
 ![Get Data from Adobe Analytics](media/desktop-connect-adobe-analytics/connect-adobe-analytics_01.png)
-
-## Enable the Adobe Analytics connector preview 
-Since the **Adobe Analytics** connector is currently in preview, you need to enable the preview feature in order for the connector to be available in the **Get Data** window. To enable the connector preview, select **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Bookmarks**. 
-
-![Enable preview of Adobe Analytics connector in Options](media/desktop-connect-adobe-analytics/connect-adobe-analytics_02.png)
-
-You'll need to restart **Power BI Desktop** after you make the selection to enable the Adobe Analytics connector preview.
 
 ## Connect to Adobe Analytics data
 To connect to **Adobe Analytics** data, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Online Services** from the categories on the left, and you see **Adobe Analytics connector**.

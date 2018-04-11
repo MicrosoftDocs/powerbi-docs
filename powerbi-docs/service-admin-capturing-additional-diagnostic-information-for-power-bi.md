@@ -3,7 +3,7 @@ title: Capturing additional diagnostic information
 description: Capturing additional diagnostic information
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---

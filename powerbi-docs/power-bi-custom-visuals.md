@@ -44,7 +44,7 @@ Custom visuals are packages that include code for rendering the data that is ser
 > 
 > 
 
-## Organization visuals (Preview)
+## Organization visuals
 
 Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. This gives the admin the control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (i.e. update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
 

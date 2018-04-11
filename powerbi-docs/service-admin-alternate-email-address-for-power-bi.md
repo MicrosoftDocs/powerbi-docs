@@ -3,7 +3,7 @@ title: Using an alternate Email Address
 description: Using an alternate Email Address
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/08/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---
