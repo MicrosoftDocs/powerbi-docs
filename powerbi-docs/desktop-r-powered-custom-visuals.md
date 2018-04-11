@@ -91,7 +91,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 2. When you do so, the **Power BI Visuals** dialog appears, where you can scroll through the available custom visuals and select what you would like. You can search by name, select a catagory, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to **Power BI Desktop**.
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
+   ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
 ## Contribute R-powered custom visuals
 If you create your own R visuals for use in your reports, you can share those visual with the world by contributing your custom visual to the **custom visuals gallery**. Contributions are made through GitHub, and the process is outlined in the following location:
