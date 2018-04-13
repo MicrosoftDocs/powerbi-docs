@@ -17,17 +17,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
-# Opt-in for Power BI preview features
+# Opt-in for Power BI service preview features
 ## What are *preview features*?
-As we make improvements to Power BI, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
+As we make improvements to Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
 
 > [!TIP]
-> Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+> Preview features are also available for Power BI Desktop, for more information [visit the Power BI Desktop community forum](https://community.powerbi.com/t5/Desktop/bd-p/power-bi-designer).
 > 
 > 
 
