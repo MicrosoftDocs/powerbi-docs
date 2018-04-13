@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/27/2018
+ms.date: 04/13/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -70,7 +70,6 @@ There are many many ways to format a table and we'll only cover a few of them he
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * For the column headers we changed the background color, added an outline, and increased the font size. 
-  
     ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
 
   
