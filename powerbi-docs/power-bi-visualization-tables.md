@@ -1,5 +1,5 @@
 ---
-title: Tutorial -table visualizations in Power BI reports and dashboards (Tutorial)
+title: Table visualizations in Power BI reports and dashboards (Tutorial)
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 services: powerbi
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/13/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -70,6 +70,7 @@ There are many many ways to format a table and we'll only cover a few of them he
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * For the column headers we changed the background color, added an outline, and increased the font size. 
+  
     ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
 
   
