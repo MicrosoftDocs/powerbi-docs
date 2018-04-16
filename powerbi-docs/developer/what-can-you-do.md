@@ -11,6 +11,7 @@ ms.service: powerbi
 ms.custom: mvc
 ms.reviewer: ''
 manager: kfile
+Customer intent: As a developer, I want to know what all I can do with Power BI so that I can share data with my customers in multiple ways.
 ---
 
 # What can developers do with Power BI?
