@@ -187,8 +187,6 @@ If your organization already has an existing Office 365 environment and all user
 
 If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, we will create a user in the tenant and assign licenses based on the user’s work, or school, email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
 
-If you are managing your directory on-premises, and use Active Directory Federation Services (AD FS), Microsoft will not add users to your tenant, and users attempting to join your tenant will receive a message to contact their organization’s admin.
-
 If your organization does not have an Office 365 environment connected to your email domain, there will be no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to elect to take over as the tenant admin and manage them.
 
 ### How do we manage Power BI?
