@@ -14,7 +14,7 @@ manager: kfile
 ---
 
 # What can developers do with Power BI?
-With Power BI, developers can do different things when trying to incorporate their Power BI content into applications. 
+With Power BI, developers can do different things when trying to incorporate Power BI content into applications. 
 
 The different things developers can do with Power BI are:
 * Embedding Power BI dashboards, reports, or tiles into an application using REST APIs
