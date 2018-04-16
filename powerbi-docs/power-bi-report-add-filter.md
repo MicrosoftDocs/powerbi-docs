@@ -1,5 +1,5 @@
 ---
-title: Add a visualization or page or drillthrough or report filter to a report
+title: Add a visualization, page, drillthrough, or report filter to a report
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
 services: powerbi
 documentationcenter: ''
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
