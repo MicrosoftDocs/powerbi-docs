@@ -6,11 +6,11 @@
         href: service-get-started.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: Sign up and sign in"
+    - name: "Sign up and sign in"
       href: service-self-service-signup-for-power-bi.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Connect to a service"
+    - name: "Connect to a service"
       href: service-connect-to-services.md
   - name: Concepts
     items: 
@@ -464,15 +464,15 @@
   items:
   - name: Overview
     items: 
-    - name: "WHat is Power BI Desktop?"
+    - name: "What is Power BI Desktop?"
       href: desktop-getting-started.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: Install and run Power BI Desktop"
+    - name: "Install and run Power BI Desktop"
       href: desktop-get-the-desktop.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Connect to multiple data sources in Power BI Desktop"
+    - name: "Connect to multiple data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
   - name: Samples
     items: 
@@ -792,11 +792,11 @@
       href: mobile-apps-for-mobile-devices.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: View a dashboard in the iOS mobile app"
+    - name: "View a dashboard in the mobile app"
       href: mobile-apps-find-content-mobile-devices.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: View on-premises sample reports in the mobile apps"
+    - name: "View on-premises reports in the mobile apps"
       href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
   - name: Concepts
     items: 
@@ -884,7 +884,7 @@
       href: developer/what-can-you-do.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Embed your Power BI dashboards"
+    - name: "Embed your Power BI dashboards"
       href: developer/embed-sample-for-customers.md
   - name: Concepts
     items: 
@@ -993,15 +993,15 @@
       href: report-server/get-started.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: Create a Power BI report for a report server"
+    - name: "Create a Power BI report for a report server"
       href: report-server/quickstart-create-powerbi-report.md
   - name: Tutorials
     items: 
     - name: Admins
       items: 
-      - name: "Tutorial: Install a report server"
+      - name: "Install a report server"
         href: report-server/install-report-server.md
-      - name: "Tutorial: Find your product key"
+      - name: "Find your product key"
         href: report-server/find-product-key.md
     - name: Developers
       items: 
@@ -1105,11 +1105,11 @@
       href: service-gateway-getting-started.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: Install the on-premises data gateway"
+    - name: "Install the on-premises data gateway"
       href: service-gateway-onprem.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Connect to on-premises data in Analysis Services"
+    - name: "Connect to on-premises data in Analysis Services"
       href: service-gateway-enterprise-manage-ssas.md
   - name: Concepts
     items: 
@@ -1149,11 +1149,11 @@
       href: service-admin-administering-power-bi-in-your-organization.md
   - name: Quickstart
     items: 
-    - name: "Quickstart: Review your usage metrics"
+    - name: "Review your usage metrics"
       href: service-admin-portal.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Manage data capacity in Power BI"
+    - name: "Manage data capacity in Power BI"
       href: service-admin-manage-your-data-storage-in-power-bi.md
   - name: Concepts
     items: 
