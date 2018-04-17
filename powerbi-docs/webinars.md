@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/11/2018
+ms.date: 04/17/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -38,14 +38,6 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 <br>[Register and watch now - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
 <br>[Register to watch on April 17th - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Register to watch on May 1st - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
-
-**Advanced Analytics with Excel and Power BI**
-<br>by Nagasaikiran Kambhampati and Miguel Martinez
-<br>*April 11th and April 17th, 12:00PM PST, 3:00PM EST*
-
-Join us for this webinar for an introduction on how Microsoft Excel and Power BI bring advanced analytics to the daily business decision process, allowing users to extract useful knowledge from data to solve problems.
-
-[Register to watch on April 17th](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -130,6 +122,11 @@ Watch recorded sessions at any time
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
 ### Advanced Topics ###
+
+**Advanced Analytics with Excel and Power BI**
+<br>by Nagasaikiran Kambhampati and Miguel Martinez
+<br>[Register to watch](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
+<br>[Download the Advanced Analytics Starter Kit to follow along](https://aka.ms/pbiaawebinar)
 
 **Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
 <br>by Mark Traverso and Miguel Martinez
