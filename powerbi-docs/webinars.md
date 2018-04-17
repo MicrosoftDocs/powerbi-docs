@@ -45,7 +45,7 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 
 The human visual system has its own rules—we can easily see patterns presented to us in certain ways, but in other ways they're invisible. Therefore, we can apply rules for displaying information so that the important and informative patterns stand out. This session will walk you through a series of before-and-after case studies and teach you how to use visual perception to influence audience attention in data visualization design.
 
-<br>[Register to watch on April 18th](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
+[Register to watch on April 18th](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
