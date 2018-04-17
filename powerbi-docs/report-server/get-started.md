@@ -1,26 +1,27 @@
 ---
-title: Get started with Power BI Report Server
-description: 'Learn how to install Power BI Report Server. '
+# Mandatory fields. See more on aka.ms/skyeye/meta.
+title: What is Power BI Report Server?
+description: Get an overview of Power BI Report Server to understand how it fits in with SQL Server Reporting Services (SSRS) and the rest of Power BI.
 services: powerbi
-documentationcenter: ''
-author: markingmyname
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+keywords: 
+author: maggiesMSFT
+ms.author: maggies
+ms.date: 04/16/2018
+ms.topic: overview
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 3/5/2018
-ms.author: maghan
-
+manager: kfile
+# Optional fields. Don't forget to remove # if you need a field.
+# ms.custom: mvc
+# ms.devlang:devlang-from-white-list
+# ms.suite: 
+# ms.tgt_pltfrm:
+# ms.reviewer:
 ---
-# Get started with Power BI Report Server
+# What is Power BI Report Server?
+Introductory paragraph
+
+<Recommended conceptual art to help people understand what this product, technology or service is and does.>
+
 Create, deploy, and manage Power BI, mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
 
 ## Create, deploy, and manage reports
