@@ -16,7 +16,7 @@ manager: kfile
 # What can developers do with Power BI?
 
 ## What does it mean to be a Power BI developer?
-If you are a developer delivering reporting and analytics to your organization, Power BI lets you be productive and creative with what you can build. You will be able to help your customers access the data they need to make better decisions from within your application. For example, when you use Power BI Embedded on Azure, our API set makes it easy to embed analytics, even if you’ve already designed your app. With Power BI, developers have different options when trying to include Power BI content into applications.
+If you are a developer delivering reporting and analytics to your organization, Power BI lets you be productive and creative with what you can build. You will be able to help your customers access the data they need to make better decisions from within your application. For example, when you use Power BI Embedded on Azure, our API set makes it easy to embed analytics, even if you’ve already designed your application. With Power BI, developers have different options when trying to include Power BI content into applications.
 
 Some of the different options are:
 * Embed Power BI content using REST APIs
