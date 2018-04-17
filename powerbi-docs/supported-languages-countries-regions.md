@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/13/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -150,9 +150,9 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
-3. In the **Locale** box, select a different locale. 
+3. In the **Locale for import** box, select a different locale. 
    
-   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Select **OK**.
 
 ### Choose the language for the model in Power BI Desktop

@@ -1,5 +1,5 @@
 ---
-title: Quickly find and view your Power BI reports and dashboards using Cortana
+title: Quickly find and view your reports and dashboards using Cortana
 description: Use Cortana with Power BI to get answers from your data. Currently works with reports and dashboards.
 services: powerbi
 documentationcenter: ''

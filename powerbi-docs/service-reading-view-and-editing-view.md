@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -45,7 +45,6 @@ This chart does not list all the report capabilities of Power BI service! It lis
 |Task  | Reading view  | Editing view |
 |-------------------------|-------|-------|
 |**Reports, as a whole**  |
-||||
 | [Create or edit a report](service-report-create-new.md) | No  | Yes |
 | [Share a report](service-share-reports.md)| Yes | Yes, and can also manage permissions, including giving others *owner* permissions. |
 | [Create persistent (permanent) visual-level, drilthrough, page-level, and report-level filters from Filters pane](power-bi-report-add-filter.md) | No  | Yes |
@@ -60,12 +59,10 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Save a report](service-report-save.md) | Yes, but only using **Save as**. | Yes |
 | [Delete a report](service-delete.md) | No  | Yes |
 |**Report pages** |
-||||
 | [Add or rename a report page](power-bi-report-add-page.md)  | No  | Yes  |
 | [Duplicate a report page](power-bi-report-copy-paste-page.md) | No  | Yes |
 | [Delete report page](service-delete.md) | no | yes |
 |**Working with report visualizations**|
-||||
 | [Add visualizations to a report](power-bi-report-add-visualizations-i.md) | No  | Yes |
 | [Add text boxes, and shapes to a report](power-bi-reports-add-text-and-shapes.md) | No  | Yes |
 | [Use the report Formatting pane](service-the-report-editor-take-a-tour.md) | No | Yes |
