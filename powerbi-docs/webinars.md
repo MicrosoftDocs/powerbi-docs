@@ -39,7 +39,7 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 <br>[Register to watch on April 17th - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Register to watch on May 1st - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**[Simply Compelling — Tips for Better Visualization Design]**
+**Simply Compelling — Tips for Better Visualization Design**
 <br>by Miranda Li
 <br>*April 18th 2018 10:00AM PST, 1:00PM EST*
 
