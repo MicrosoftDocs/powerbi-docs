@@ -1,5 +1,5 @@
 ---
-title: Subscribe to Power BI reports and dashboards
+title: Subscribe to reports and dashboards in Power BI service
 description: Learn how to subscribe yourself and others to a snapshot of a Power BI report and dashboard.
 services: powerbi
 documentationcenter: ''
@@ -17,12 +17,12 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/21/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
-# Subscribe to a Power BI report or dashboard
+# Subscribe to a report or dashboard in Power BI service (app.powerbi.com)
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day to once a week. 
 
 The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](supported-languages-countries-regions.md)). If no language is defined, Power BI uses the language according to the locale setting in your current browser. To see or set your language preference, select the cog icon ![gear icon](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**. 

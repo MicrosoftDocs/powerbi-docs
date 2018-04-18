@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/11/2018
+ms.date: 04/17/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -33,19 +33,19 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
 
-[Register and watch now - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Register and watch now - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Register and watch now - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Register to watch on April 17th - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Register to watch on May 1st - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+[Register to watch on May 1st - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 
-**Advanced Analytics with Excel and Power BI**
-<br>by Nagasaikiran Kambhampati and Miguel Martinez
-<br>*April 11th and April 17th, 12:00PM PST, 3:00PM EST*
+**Simply Compelling — Tips for Better Visualization Design**
+<br>by Miranda Li
+<br>*April 18th 2018 10:00AM PST, 1:00PM EST*
 
-Join us for this webinar for an introduction on how Microsoft Excel and Power BI bring advanced analytics to the daily business decision process, allowing users to extract useful knowledge from data to solve problems.
+The human visual system has its own rules—we can easily see patterns presented to us in certain ways, but in other ways they're invisible. Therefore, we can apply rules for displaying information so that the important and informative patterns stand out. This session will walk you through a series of before-and-after case studies and teach you how to use visual perception to influence audience attention in data visualization design.
 
-[Register to watch on April 17th](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
+[Register to watch on April 18th](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -130,6 +130,11 @@ Watch recorded sessions at any time
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
 ### Advanced Topics ###
+
+**Advanced Analytics with Excel and Power BI**
+<br>by Nagasaikiran Kambhampati and Miguel Martinez
+<br>[Register to watch](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
+<br>[Download the Advanced Analytics Starter Kit to follow along](https://aka.ms/pbiaawebinar)
 
 **Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
 <br>by Mark Traverso and Miguel Martinez

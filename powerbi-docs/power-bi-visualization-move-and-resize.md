@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -40,9 +40,5 @@ In Power BI, open a report that has at least one visualization, or [create a new
 
 ## Next steps
 [Resize a visualization on a dashboard](service-dashboard-edit-tile.md)  
-
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)  
-
-[Power BI - Basic Concepts](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

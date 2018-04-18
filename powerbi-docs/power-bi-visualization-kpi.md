@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 03/21/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -73,11 +73,8 @@ KPIs are also available on your mobile devices – keeping you always connected 
 * If your KPI doesn't look like the one above, it may be because you need to sort by month. Since KPIs don't have a sort option, you'll need to sort by month *before* you convert your visualization to a KPI.
 
 ## Next steps
-[Reports in Power BI](service-reports.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
-
-[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
