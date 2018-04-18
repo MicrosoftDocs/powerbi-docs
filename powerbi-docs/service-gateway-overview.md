@@ -44,14 +44,14 @@ There are four main steps for using a gateway:
 
 1. **Install the gateway** on a local computer, using the appropriate mode
 2. **Add users to the gateway**, so they can access on-premises data sources
-3. **Connect to data sources**, so they can we be used in reports and dashboards
-4. **Refresh on-premises data**, so Power BI reports can be updated with fresh data
+3. **Connect to data sources**, so they can be used in reports and dashboards
+4. **Refresh on-premises data**, so Power BI reports are up to date
 
 Installing a gateway and adding users is easy; that's covered in [Quickstart: Install a Power BI gateway](service-gateway-install.md). Connecting to and refreshing data sources can get complex, because there are so many data sources and each has its own connection requirements and nuances. We'll cover that in later articles.
 
 ## How gateways work
 
-The gateway you install on a computer in your organization runs as a Windows service, **On-premises data gateway**. This local service is registered with the Gateway Cloud Service through Azure Service Bus. The following diagram shows the flow between on-premises data and cloud services that use the gateway.
+The gateway you install runs as a Windows service, **On-premises data gateway**. This local service is registered with the Gateway Cloud Service through Azure Service Bus. The following diagram shows the flow between on-premises data and the cloud services that use the gateway.
 
 ![Diagram with gateway data flow](media/service-gateway-overview/gateway-how-it-works.png)
 
