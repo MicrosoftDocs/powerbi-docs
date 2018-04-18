@@ -33,11 +33,11 @@ Register to hear from Power BI experts and participate in live Q&A sessions
 
 Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
 
-[Register and watch now - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Register and watch now - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Register and watch now - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Register to watch on April 17th - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Register to watch on May 1st - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+[Register to watch on May 1st - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 
 **Simply Compelling — Tips for Better Visualization Design**
 <br>by Miranda Li
