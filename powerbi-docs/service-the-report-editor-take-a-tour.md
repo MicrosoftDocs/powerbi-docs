@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -53,7 +53,6 @@ The content displayed in the report editor varies by selections you make in the 
 |  |  |
 | --- | --- |
 | ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>The top of the Visualization pane identifies the type of visual in use; in this example, a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane (you may have to scroll down) displays the fields being used in the visual. This chart is using FiscalMonth, DistrictManager, and Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down) displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, if you expand a table's name, the fields that make up that table. Yellow font lets you know  that at least one field from that table is being used in the visualization.<br><br></li><li>![paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for the selected visualization, select the paint roller icon.<br><br></li><li>![magnifying glass icon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul> |
-|  | |
 
 ## The Visualizations pane (from top to bottom)
 ![top of Visualization pane](media/service-the-report-editor-take-a-tour/selectviz.png)

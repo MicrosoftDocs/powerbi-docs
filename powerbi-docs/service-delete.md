@@ -1,5 +1,5 @@
 ---
-title: Delete a dashboard, report, workbook, dataset, or workspace from Power BI
+title: Delete a dashboard, report, workbook, dataset, or workspace
 description: Learn how to delete almost anything from Power BI
 services: powerbi
 documentationcenter: ''
@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/03/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks

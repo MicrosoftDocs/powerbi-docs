@@ -1,5 +1,5 @@
 ---
-title: Display dashboards, dashboard tiles, report pages, and report visualizations in full screen mode
+title: Display dashboards, tiles, report pages and visualizations in full screen mode
 description: Display dashboards, dashboard tiles, report visuals, and report pages in full screen Mode, aka *TV mode*.
 services: powerbi
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/24/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
