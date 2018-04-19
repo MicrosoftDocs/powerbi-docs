@@ -1,5 +1,4 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: What is Power BI Report Server?
 description: Get an overview of Power BI Report Server to understand how it fits in with SQL Server Reporting Services (SSRS) and the rest of Power BI.
 services: powerbi
@@ -10,48 +9,33 @@ ms.date: 04/16/2018
 ms.topic: overview
 ms.service: powerbi
 manager: kfile
-# Optional fields. Don't forget to remove # if you need a field.
-# ms.custom: mvc
-# ms.devlang:devlang-from-white-list
-# ms.suite: 
-# ms.tgt_pltfrm:
-# ms.reviewer:
+ms.custom: mvc
 ---
 # What is Power BI Report Server?
-Introductory paragraph
 
-<Recommended conceptual art to help people understand what this product, technology or service is and does.>
-
+Power BI Report Server is an on-premises report server for hosting Power BI reports, paginated reports, mobile reports, and KPIs, and the tools to create them.  
 Create, deploy, and manage Power BI, mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
 
-## Create, deploy, and manage reports
 Power BI Report Server is a solution that customers deploy on their own premises for creating, publishing, and managing reports, then delivering them to the right users in different ways, whether that’s viewing them in web browser, on their mobile device, or as an email in their in-box.
 
-Power BI Report Server offers a suite of products:
+Power BI Report Server is a suite of products:
 
-* A modern web portal you can view in any modern browser. In the web portal, you can organize and display reports and KPIs. You can also store Excel workbooks on the portal.
+* A web portal you can view in any modern browser. In the web portal, you can organize and display reports and KPIs. You can also store Excel workbooks on the portal.
 * Power BI reports, created with Power BI Desktop, that you can view within the web portal in your own environment.
 * Paginated reports so you can create modern-looking reports, with tools for creating them.
 * Mobile reports with a responsive layout that adapts to different devices and the different ways you hold them.
 
 Read on for more about each.
 
-### What's new in Power BI Report Server
-These sources will keep you up-to-date on new features in Power BI Report Server.
-
-* [What's New in Power BI Report Server](whats-new.md)
-* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 ## Web portal
 ![](media/get-started/web-portal.png)
 
-For end users of Power BI Report Server, the front door is a modern web portal you can view in any modern browser. You can access all your reports and KPIs in the new portal.
+The entry point for Power BI Report Server is a web portal you can view in any modern browser. You can access all your reports and KPIs in the new portal.
 
-You can apply your own custom [branding](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) to your web portal. And you can create KPIs right in the web portal. KPIs can surface key business metrics at a glance in the browser, without having to open a report.
+You can apply your own custom [branding](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) to your web portal. And you can create KPIs right in the web portal. KPIs can surface business metrics in the browser, without having to open a report.
 
-The content on the web portal is organized by type: Power BI reports, mobile reports, paginated reports and KPIs, plus Excel workbooks, shared datasets, and shared data sources to use as building blocks for your reports. You can store and manage them securely here, in the traditional folder hierarchy. You can tag your favorites, and you can manage the content if you have that role.
+You organize the content on the web portal in a traditional folder hierarchy, and you can tag favorites to show up at th .by type: Power BI reports, mobile reports, paginated reports and KPIs, plus Excel workbooks, shared datasets, and shared data sources to use as building blocks for your reports. You can store and manage them securely here,  You can tag your favorites, and you can manage the content if you have that role.
 
 And you can schedule report processing, access reports on demand, and subscribe to published reports in the new web portal.
 
