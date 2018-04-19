@@ -24,12 +24,7 @@
             "source_path": "powerbi-docs/service-connect-to-azure-security-center.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/power-bi-reports-tips-and-tricks-for-creating.md", 
-            "redirect_url": "/power-bi/desktop-tips-and-tricks-for-creating-reports",
-            "redirect_document_id": true
-        },
+        }, 
         {
             "source_path": "powerbi-docs/service-custom-visuals-review-for-security-and-privacy.md", 
             "redirect_url": "/power-bi/power-bi-custom-visuals",
