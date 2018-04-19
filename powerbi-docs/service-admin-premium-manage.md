@@ -134,23 +134,18 @@ You can assign additional **Capacity admins** for Power BI Premium capacities. A
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## Usage measurements (Power BI Premium)
-For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good (green)**, **Marginal (yellow)** and **Critical (red)**. We suggest monitoring these metrics to ensure that your users see good performance while using Premium content.
+For each capacity, you will be able to use usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest monitoring these metrics to ensure that your users see good performance while using premium content.
 
 **Power BI Embedded capacity usage is monitored within the Azure portal.**
-
-![](media/service-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
 
 | Metric | Description |
 | --- | --- |
 | CPU |CPU usage of your cores. |
-| Memory |Represents the memory pressure of your backend cores. Specifically, this is a metric of how often models are evicted from memory due to memory pressure from usage of multiple models. |
+| Memory Usage |Total Available Memory being used in your capacity, represented as gigabytes (GB) |
+| Memory Thrashing |Represents the memory pressure of your backend cores. Specifically, this is a metric of how often models are evicted from memory due to memory pressure from usage of multiple models. |
 | DQ/s |* We limit the total number of DirectQuery and live connection queries per second.<br/>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br/>* DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/>* This applies equally to on-premises and cloud connections. |
 
-When these metrics are marginal/critical, your users may see degradation of report and refresh performance, especially during peak load times.
-
-Metrics reflect utilization over the past week, and are designed to count instances when the capacity is overloaded, and is therefore providing less-than-optimal performance for your users.
-
-Each occurrence of *utilization over 80%* should be considered a potential case of performance degradation. Too many cases is a good indicator of significant performance problems for users.
+Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in five minute intervals for each day of the past week.
 
 ## Assign a workspace to a capacity
 There are a few ways that a workspace could be assigned to a capacity.
