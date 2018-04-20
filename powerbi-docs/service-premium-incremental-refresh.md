@@ -88,8 +88,6 @@ The header text explains the following:
 
 -   It is not possible to download the PBIX file containing an incremental-refresh policy from the Power BI service. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
 
-> [!NOTE]
-> We plan to soon remove the 10 GB limit in the Power BI service allowing dataset size to be limited only by the Premium capacity. This will allow datasets in the service to grow to sizes comparative with Azure Analysis Services.
 
 #### Refresh ranges
 
@@ -108,17 +106,22 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 > [!TIP]
 > The current design requires that the column to detect data changes is persisted and cached into memory by Power BI Desktop. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
 
-- Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
+> - Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
 
-- Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
+> - Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
 
-- We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
+> - We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
 
 Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics -- such as barrels per day in the oil and gas industry -- make no sense with partial days.
 
 Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January on February 12th.
+
+![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
+
+> [!NOTE]
+> Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
 
 ## Publish to the service
 
@@ -139,6 +142,10 @@ We realize this is not the ideal situation, so we plan to provide the ability to
 ### Increased dataset size
 
 We plan to soon remove the 10 GB limit in the Power BI service allowing dataset size to be limited only by the Premium capacity. This will allow datasets in the service to grow to sizes comparative with Azure Analysis Services.
+
+### Override effective date
+
+We plan to allow setting the effective date for a refresh operation. This will be useful to use with datasets like Adventure Works that don't have data up to the current date. It will also be useful for testing purposes.
 
 ## Deep dive: how incremental refresh works
 
