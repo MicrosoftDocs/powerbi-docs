@@ -3,7 +3,7 @@ title: Power BI Free vs Pro
 description: Every user within Power BI is either Free or Pro. It is helpful to understand the differences between these two types of users..
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Get started
 ---
