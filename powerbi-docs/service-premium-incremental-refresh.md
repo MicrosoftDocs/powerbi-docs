@@ -105,11 +105,11 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 
 > [!TIP]
 > The current design requires that the column to detect data changes is persisted and cached into memory by Power BI Desktop. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
-
+>
 > - Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
-
+>
 > - Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
-
+>
 > - We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
