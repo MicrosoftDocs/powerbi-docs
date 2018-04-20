@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/17/2018
+ms.date: 04/20/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -39,14 +39,6 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 <br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
 <br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 
-**Simply Compelling — Tips for Better Visualization Design**
-<br>by Miranda Li
-<br>*April 18th 2018 10:00AM PST, 1:00PM EST*
-
-The human visual system has its own rules—we can easily see patterns presented to us in certain ways, but in other ways they're invisible. Therefore, we can apply rules for displaying information so that the important and informative patterns stand out. This session will walk you through a series of before-and-after case studies and teach you how to use visual perception to influence audience attention in data visualization design.
-
-[Register to watch on April 18th](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
-
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
 ## Featured webinars
@@ -65,9 +57,9 @@ Get started with these popular on-demand webinars
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
 
-**Be a Full Stack Power BI Jedi – A walkthrough of Power BI most advanced features through Star Wars data**
-<br>by Gil Raviv
-<br>[Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
+**Simply Compelling — Tips for Better Visualization Design**
+<br>by Miranda Li
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
 **Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
 <br>by Carlos Otero and Miguel Martinez
@@ -139,6 +131,10 @@ Watch recorded sessions at any time
 **Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
 <br>by Mark Traverso and Miguel Martinez
 <br>[Register and watch now](https://aka.ms/Office365FinanceProsPBI)
+
+**Be a Full Stack Power BI Jedi – A walkthrough of Power BI most advanced features through Star Wars data**
+<br>by Gil Raviv
+<br>[Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
 **How to Implement a Successful Data Governance Strategy That Makes Your Organization More Secure**
 <br>by Ajay Anandan
