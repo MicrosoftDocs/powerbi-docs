@@ -173,7 +173,7 @@ The refresh operation with Run Date 12/12/2016 merges the days in November becau
 
 **Click on the image to load the Timeline Storyteller visual:**
 
-[![Merge partitions](media/service-premium-incremental-refresh/publish.png)](https://msit.powerbi.com/view?r=eyJrIjoiZmNiODUwNTctMWIwOC00MGFjLThhZTAtZGYwMzc1ZjQ1YjEyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+[![Merge partitions](media/service-premium-incremental-refresh/merge-partitions.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiZmNiODUwNTctMWIwOC00MGFjLThhZTAtZGYwMzc1ZjQ1YjEyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### Drop old partitions
 
@@ -183,7 +183,7 @@ The refresh operation with Run Date 1/2/2017 drops the partition for Q3 2016 bec
 
 **Click on the image to load the Timeline Storyteller visual:**
 
-[![Drop old partitions](media/service-premium-incremental-refresh/publish.png)](https://msit.powerbi.com/view?r=eyJrIjoiNGM3NGExODYtNWFkNy00MTJiLWE5ZmQtYzg5ODdkNWZhZjE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+[![Drop old partitions](media/service-premium-incremental-refresh/drop-old-partition.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiNGM3NGExODYtNWFkNy00MTJiLWE5ZmQtYzg5ODdkNWZhZjE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### Recovery from prolonged failure
 
@@ -195,4 +195,4 @@ The next refresh operation, with Run Date 1/16/2017, takes the opportunity to me
 
 **Click on the image to load the Timeline Storyteller visual:**
 
-[![Recovery from prolonged failure](media/service-premium-incremental-refresh/publish.png)](https://msit.powerbi.com/view?r=eyJrIjoiNGY4NWI0YmEtOGNhMS00NTcyLWIyODQtMWEwMDlmOTZiYjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+[![Recovery from prolonged failure](media/service-premium-incremental-refresh/recovery-failure.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiNGY4NWI0YmEtOGNhMS00NTcyLWIyODQtMWEwMDlmOTZiYjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
