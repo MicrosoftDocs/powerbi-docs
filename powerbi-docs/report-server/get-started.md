@@ -14,16 +14,10 @@ ms.custom: mvc
 ---
 # What is Power BI Report Server?
 
-Power BI Report Server is an on-premises report server for deploying and managing Power BI, paginated, and mobile reports, and KPIs, plus the tools to create them.  
-
-Power BI Report Server is a solution you deploy on premises for creating, publishing, and managing reports. 
-
 Power BI Report Server is a suite of products: an on-premises report server with a web portal in which you display and manage reports and KPIs, and the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
 
-A web portal you can view in any modern browser. In the web portal, you can organize and display reports and KPIs. You can also store Excel workbooks on the portal.
-
 ## Comparing Power BI Report Server 
-Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.PBIX) and Excel files. Like Reporting Services, Power BI Report Server is on premises, and hosts paginated reports (.RDLX). Power BI Report Server is a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server and more, with the addition of support for Power BI reports.
+Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.PBIX) and Excel files. Like Reporting Services, Power BI Report Server is on premises, and hosts paginated reports (.RDL). Power BI Report Server is a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server and more, with the addition of support for Power BI reports.
 
 ## Licensing Power BI Report Server
 Power BI Report Server is available through two different licenses: [Power BI Premium](../service-premium.md) and [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) with Software Assurance. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.  
@@ -40,20 +34,24 @@ More about the [Power BI Report Server web portal](https://docs.microsoft.com/sq
 ## Power BI reports
 ![](media/get-started/powerbi-reports.png)
 
-Power BI reports, created with Power BI Desktop, that you can view within the web portal in your own environment.
-A Power BI report is a multi-perspective view into a data model, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your job role, you may consume and use reports, or you may create them for others.
+Power BI reports (.PBIX), created with Power BI Desktop, that you can view within the web portal in your own environment.
+A Power BI report is a multi-perspective view into a data model, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your role, you may read and explore reports, or you may create them for others.
 
-Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
+Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
+
+Install [Power BI Desktop optimized for Power BI Report Server](quickstart-create-powerbi-report.md).
 
 ## Paginated reports
 ![](media/get-started/paginated-reports.png)
 
-Paginated reports are document-style reports, in which the more data you have, the more rows in the tables, and the more pages the report would have. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
+Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
 
 You can create modern-looking reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
-## SQL Server mobile reports
-Mobile reports have a responsive layout that adapts to different devices and the different ways you hold them.
+## Reporting Services mobile reports
+Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them.
+
+More about [Reporting Services mobile reports](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
 ## Report Server programming features
 Take advantage of Power BI Report Server programming features to extend and customize your reporting functionality, with APIs to integrate or extend data and report processing in custom applications.
