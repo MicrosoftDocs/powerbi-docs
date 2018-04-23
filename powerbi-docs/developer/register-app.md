@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 04/23/2018
 ms.author: maghan
 
 ---
@@ -55,6 +55,18 @@ Here's how to register your application with the Power BI App Registration Tool:
 7. Select **Register App**.
    
     You will then be provided with a **Client ID**. If you selected **Server-side Web app**, you will also receive a **Client Secret**. The **Client ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Client Secret**, you will need to create a new one within the Azure portal.
+
+8. You will need to navigate to Azure to select **Grant permissions**.
+> [!Note]
+> Must be a global admin in the Azure tenant to complete this
+>
+   1. Go to Azure.
+   2. Search and select **App registrations**.
+   3. Choose your app.
+   4. Select **Settings**.
+   5. Select **Required permissions**.
+   6. Select **Power BI Service** to verify the permissions that you selected from the App registration site.
+   7. Select **Grant Permissions**.
 
 You can now use the registered application as part of your custom application to interact with the Power BI service.
 
@@ -187,4 +199,5 @@ You will want to be logged in with either the *master* account, used for embeddi
 Now that you have registered your application within Azure AD, you will need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md) to learn more.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
 
