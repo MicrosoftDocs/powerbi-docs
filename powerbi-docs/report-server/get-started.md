@@ -6,7 +6,7 @@ keywords:
 author: maggiesMSFT
 ms.author: maggies
 ms.component: powerbi-report-server
-ms.date: 04/20/2018
+ms.date: 04/23/2018
 ms.topic: overview
 ms.service: powerbi
 manager: kfile
@@ -23,33 +23,32 @@ Power BI Report Server is similar to both SQL Server Reporting Services and the 
 Power BI Report Server is available through two different licenses: [Power BI Premium](../service-premium.md) and [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) with Software Assurance. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.  
 
 ## Web portal
-![](media/get-started/web-portal.png)
-
 The entry point for Power BI Report Server is a secure web portal you can view in any modern browser. Here, you can access all your reports and KPIs. The content on the web portal is organized in a traditional folder hierarchy. In your folders, content is grouped by type: Power BI reports, mobile reports, paginated reports, KPIs, and Excel workbooks, plus shared datasets and shared data sources to use as building blocks for your reports. You can tag favorites to view them in a single folder. And you can create KPIs right in the web portal. 
+
+![Power BI Report Server web portal](media/get-started/web-portal.png)
 
 Depending on your permissions, you can manage the content in the web portal. You can schedule report processing, access reports on demand, and subscribe to published reports. You can also apply your own custom [branding](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) to your web portal. 
 
 More about the [Power BI Report Server web portal](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## Power BI reports
-![](media/get-started/powerbi-reports.png)
+You create Power BI reports (.PBIX) with the version of Power BI Desktop optimized for the report server. Then you publish them to and view them in the web portal in your own environment.
 
-Power BI reports (.PBIX), created with Power BI Desktop, that you can view within the web portal in your own environment.
-A Power BI report is a multi-perspective view into a data model, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your role, you may read and explore reports, or you may create them for others.
+![Power BI reports in Power BI Report Server](media/get-started/powerbi-reports.png)
 
-Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
+A Power BI report is a multi-perspective view into a data model, with visualizations that represent different findings and insights from that data model.  A report can have a single visualization or pages full of visualizations. Depending on your role, you may read and explore reports, or you may create them for others.
 
 Install [Power BI Desktop optimized for Power BI Report Server](quickstart-create-powerbi-report.md).
 
 ## Paginated reports
-![](media/get-started/paginated-reports.png)
-
 Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
+
+![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
 You can create modern-looking reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## Reporting Services mobile reports
-Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them.
+Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them. You create them with SQL Server Mobile Report Publisher.
 
 More about [Reporting Services mobile reports](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
