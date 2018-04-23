@@ -1072,9 +1072,9 @@
       href: https://go.microsoft.com/fwlink/?linkid=848709
     - name: "Working with KPIs"
       href: https://go.microsoft.com/fwlink/?linkid=849021
-    - name: "Supported data sources"
+    - name: "Power BI report (.pbix) data sources"
       href: report-server/data-sources.md
-    - name: "Connect to data sources"
+    - name: "Paginated report (.rdl) data sources"
       href: report-server/connect-data-sources.md
     - name: "Access shared datasets as OData feeds "
       href: report-server/access-dataset-odata.md

@@ -1,6 +1,6 @@
 ---
 title: Power BI report data sources in Power BI Report Server
-description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
+description: Power BI reports (.pbix) can connect to a number of data sources. Depending on how data is used, different data sources are available.
 services: powerbi
 documentationcenter: ''
 author: markingmyname
@@ -16,19 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.author: maghan
 
 ---
-# Power BI report data sources in Power BI Report Server
-Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services.
+# Power BI report (.pbix) data sources in Power BI Report Server
+Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services.
 
-These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports, see [Data Sources Supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports (.rdl), see [Data Sources Supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 > [!IMPORTANT]
-> All data sources in a Power BI Desktop report must be supported to configure scheduled refresh.
-> 
-> 
+> All data sources in a Power BI Desktop report must support configuring scheduled refresh.
+>  
 
 ## List of supported data sources
 
@@ -213,7 +212,7 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 
 
 ## Next steps
-Now that your data source is picked out, [create a report](quickstart-create-powerbi-report.md) using data from that data source.
+Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
