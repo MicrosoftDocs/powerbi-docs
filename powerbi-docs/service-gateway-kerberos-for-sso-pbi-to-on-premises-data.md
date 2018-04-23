@@ -62,6 +62,7 @@ Here are additional details about those steps:
 
 > [!NOTE]
 > To enable SSO for SAP HANA:
+>
 > - Ensure the SAP HANA server is running the required minimum version, which depends on your SAP Hana server platform level:
 >     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
 >     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
