@@ -24,15 +24,13 @@ LocalizationGroup: Premium
 
 # Incremental refresh in Power BI Premium
 
-Less than a year since its [release](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-generally-available/), Power BI Premium has quickly become the tool of choice for enterprise organizations deploying high-performance, scalable BI systems in the cloud. Today, we are excited to announce the next step in our vision: Power BI Premium supports incremental refresh. Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
+Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
 
 - **Refreshes are faster.** Only data that has changed needs to be refreshed. For example, refresh only the last 5 days of a 10-year dataset.
 
 - **Refreshes are more reliable.** For example, it is not necessary to maintain long-running connections to volatile source systems.
 
 - **Resource consumption is reduced.** Data is not fully compressed when performing a refresh. Reducing the data to refresh reduces consumption of memory and other resources.
-
-Incremental refresh has traditionally been in the realm of Analysis Services for high-scale BI implementations. A sizeable proportion of Analysis Services models use incremental refresh. Whilst one of Analysis Services' greatest strengths, it's a feature that can require considerable time and effort to set up. With Power BI Premium, incremental refresh is simplified to essentially a dialog box with a few checkboxes and dropdowns!
 
 ## How to use incremental refresh
 
@@ -88,31 +86,29 @@ The header text explains the following:
 
 -   It is not possible to download the PBIX file containing an incremental-refresh policy from the Power BI service. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
 
-> [!NOTE]
-> We plan to soon remove the 10 GB limit in the Power BI service allowing dataset size to be limited only by the Premium capacity. This will allow datasets in the service to grow to sizes comparative with Azure Analysis Services.
 
 #### Refresh ranges
 
 The following example defines a refresh policy to store 5 years of data in total, and incrementally refresh 10 days of data. The first refresh may take longer to import all 5 years. Subsequent refreshes may be finished in seconds or minutes.
 
-**Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.**
-
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+**Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.**
 
 #### Detect data changes
 
-Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you check the Detect data changes checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This of course assumes such a column exists in the source system, which is typically for auditing purposes. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
+Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you check the Detect data changes checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
 
 ![Detect changes](media/service-premium-incremental-refresh/detect-changes.png)
 
 > [!TIP]
-> The current design requires that the column to detect data changes is persisted and cached into memory by Power BI Desktop. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
-
-- Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
-
-- Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
-
-- We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
+> The current design requires that the column to detect data changes is persisted and cached into memory. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
+>
+> - Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
+>
+> - Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
+>
+> - We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
 
@@ -120,13 +116,18 @@ Let's say your refresh is scheduled to run at 4:00 AM every morning. If data app
 
 Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January on February 12th.
 
+![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
+
+> [!NOTE]
+> Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
+
 ## Publish to the service
 
 Since incremental refresh is a Premium only feature, the publish dialog only allows selection of a workspace on Premium capacity.
 
 ![Publish to the service](media/service-premium-incremental-refresh/publish.png)
 
-You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes may be finished in seconds or minutes!
+You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker.
 
 ## Related items coming soon
 
@@ -140,6 +141,10 @@ We realize this is not the ideal situation, so we plan to provide the ability to
 
 We plan to soon remove the 10 GB limit in the Power BI service allowing dataset size to be limited only by the Premium capacity. This will allow datasets in the service to grow to sizes comparative with Azure Analysis Services.
 
+### Override effective date
+
+We plan to allow setting the effective date for a refresh operation. This will be useful to use with datasets like Adventure Works that don't have data up to the current date, and for testing purposes.
+
 ## Deep dive: how incremental refresh works
 
 This section provides detailed information on how incremental refresh works under the covers.
@@ -148,7 +153,7 @@ Like Analysis Services, Power BI uses partitioning for incremental refresh. Once
 
 Incremental refresh in Power BI Premium retains the minimum number of partitions to meet refresh policy requirements. Old partitions that go out of range are dropped, maintaining a rolling window. Partitions are opportunistically merged reducing the total number of partitions required. This improves compression and, in some cases, can improve query performance.
 
-The examples provided all share the same refresh policy:
+The examples provided in this section all share the same refresh policy:
 
 - Store rows in the last **1 Quarter**
 
@@ -166,11 +171,9 @@ This example shows that day partitions are automatically merged to the month lev
 
 The refresh operation with Run Date 12/12/2016 merges the days in November because they fall outside the incremental range.
 
-**To embed in web page:**
+**Click on the image to load the Timeline Storyteller visual:**
 
-```html
-<iframe width="800" height="600" src="https://msit.powerbi.com/view?r=eyJrIjoiZmNiODUwNTctMWIwOC00MGFjLThhZTAtZGYwMzc1ZjQ1YjEyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
-```
+[![Merge partitions](media/service-premium-incremental-refresh/merge-partitions.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiZmNiODUwNTctMWIwOC00MGFjLThhZTAtZGYwMzc1ZjQ1YjEyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### Drop old partitions
 
@@ -178,22 +181,18 @@ Old partitions that fall outside the total range, are removed.
 
 The refresh operation with Run Date 1/2/2017 drops the partition for Q3 2016 because it falls outside the total range.
 
-**To embed in web page:**
+**Click on the image to load the Timeline Storyteller visual:**
 
-```html
-<iframe width="800" height="600" src="https://msit.powerbi.com/view?r=eyJrIjoiNGM3NGExODYtNWFkNy00MTJiLWE5ZmQtYzg5ODdkNWZhZjE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
-```
+[![Drop old partitions](media/service-premium-incremental-refresh/drop-old-partition.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiNGM3NGExODYtNWFkNy00MTJiLWE5ZmQtYzg5ODdkNWZhZjE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### Recovery from prolonged failure
 
-This example simulates how the system recovers gracefully from prolonged failure. Let's say refresh doesn't run successfully because the data source credentials expired, and it takes 13 days to resolve. The incremental range is only 10 days.
+This example simulates how the system recovers gracefully from prolonged failure. Let's say refresh doesn't run successfully because data source credentials expired, and it takes 13 days to resolve. The incremental range is only 10 days.
 
-The next successful refresh operation, with Run Date 1/15/2017, needs to backfill the missing 13 days and refresh them. It also needs to refresh the previous 9 days because they were not refreshed by the normal schedule. In other words, the incremental range is increased from 10 to 22 days.
+The next successful refresh operation, with Run Date 1/15/2017, needs to backfill the missing 13 days and refresh them. It also needs to refresh the previous 9 days because they were not refreshed on the normal schedule. In other words, the incremental range is increased from 10 to 22 days.
 
 The next refresh operation, with Run Date 1/16/2017, takes the opportunity to merge the days in December and the months in the Q4 2016.
 
-**To embed in web page:**
+**Click on the image to load the Timeline Storyteller visual:**
 
-```html
-<iframe width="800" height="600" src="https://msit.powerbi.com/view?r=eyJrIjoiNGY4NWI0YmEtOGNhMS00NTcyLWIyODQtMWEwMDlmOTZiYjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
-```
+[![Recovery from prolonged failure](media/service-premium-incremental-refresh/recovery-failure.PNG)](https://msit.powerbi.com/view?r=eyJrIjoiNGY4NWI0YmEtOGNhMS00NTcyLWIyODQtMWEwMDlmOTZiYjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
