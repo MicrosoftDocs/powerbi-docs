@@ -62,12 +62,12 @@ Here are additional details about those steps:
 
 > [!NOTE]
 > To enable SSO for SAP HANA:
-> * Ensure the SAP HANA server is running the required minimum version, which depends on your SAP Hana server platform level:
->     * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
->     * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
->     * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Ensure the SAP HANA server is running the required minimum version, which depends on your SAP Hana server platform level:
+>     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 >
-> * On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+> - On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
 >
 > For more information about setting up and configuring single sign-on for SAP HANA using Kerberos, see the topic [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide and the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory]. 
 >
