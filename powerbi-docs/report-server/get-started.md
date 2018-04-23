@@ -16,6 +16,8 @@ ms.custom: mvc
 
 Power BI Report Server is a suite of products: an on-premises report server with a web portal in which you display and manage reports and KPIs, and the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
 
+![Power BI Report Server web portal](media/get-started/power-bi-report-server-overview.png)
+
 ## Comparing Power BI Report Server 
 Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.PBIX) and Excel files. Like Reporting Services, Power BI Report Server is on premises, and hosts paginated reports (.RDL). Power BI Report Server is a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server and more, with the addition of support for Power BI reports.
 
