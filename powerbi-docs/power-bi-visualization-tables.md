@@ -1,5 +1,5 @@
 ---
-title: Tutorial -table visualizations in Power BI reports and dashboards (Tutorial)
+title: Table visualizations in Power BI reports and dashboards (Tutorial)
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 services: powerbi
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -66,15 +66,21 @@ There are many many ways to format a table and we'll only cover a few of them he
 
 * Try formatting the table grid. Here we've added a blue vertical grid, added space to the rows, increased the outline and text size a bit.
   
-    ![](media/power-bi-visualization-tables/power-bi-table-grid2-new.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * For the column headers we changed the background color, added an outline, and increased the font size. 
   
-    ![](media/power-bi-visualization-tables/power-bi-table-column.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
+
   
     ![](media/power-bi-visualization-tables/power-bi-table-column2.png)
-* And after some additional formatting, here is our final table. Since there are so many formatting options, the best way to learn is to start with a plain table, open the Formatting pane  ![](media/power-bi-visualization-tables/power-bi-format.png) , and start exploring. 
+
+* You can even apply formatting to individual columns and column headers. Start by expanding **Field formatting** and selecting the column to format from the dropdown. Depending on the column values, Field formatting lets you set things like: display units, font color, number of decimal places, background, alignment, and more. Once you've adjusted the settings, decide whether to apply those settings to the header and totals row as well.
+
+    ![](media/power-bi-visualization-tables/power-bi-field-formatting.png)
+
+* And after some additional formatting, here is our final table. Since there are so many formatting options, the best way to learn is to start with the default formatting, open the Formatting pane  ![](media/power-bi-visualization-tables/power-bi-format.png) , and start exploring. 
   
     ![](media/power-bi-visualization-tables/power-bi-table-format.png)
 
