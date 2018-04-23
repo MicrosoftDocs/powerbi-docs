@@ -58,7 +58,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 8. You will need to navigate to Azure to select **Grant permissions**.
 > [!Note]
-> Must be a global admin in the Azure tenant to complete this
+    > Must be a global admin in the Azure tenant to complete this
 >
 
 1. Go to Azure.
