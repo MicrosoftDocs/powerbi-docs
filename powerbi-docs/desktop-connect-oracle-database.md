@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 4/24/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -46,7 +46,7 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
 1. From the Get Data window, select **Database > Oracle Database**
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. In the **Oracle Database** dialog that appears, provide the name of the server, and select **Connect**. If a SID is required, you can specify that using the format: *ServerName/SID*.
+2. In the **Oracle Database** dialog that appears, provide the name of the server, and select **Connect**. If a SID is required, you can specify that using the format: *ServerName/SID*, where SID is the unique name of the database. If the *ServerName/SID* format doesn't work, try using *ServerName/ServiceName*, where ServiceName is the alias used when connecting.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. If you want to import data using a native database query, you can put your query in the **SQL Statement** box, available by expanding the **Advanced options** section of the **Oracle Database** dialog.
