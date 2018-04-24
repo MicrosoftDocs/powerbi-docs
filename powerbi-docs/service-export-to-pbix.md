@@ -62,6 +62,7 @@ There are a few important considerations and limitations associated with downloa
 * This feature will not work with reports originally created in the **Power BI service**, including content packs.
 * You should always be using the latest version of **Power BI Desktop** when opening downloaded files. Downloaded *.pbix* files may not open in non-current versions of **Power BI Desktop**.
 * If your administrator has turned off the ability to export data, this feature will not be visible in the **Power BI service**.
+* Dataset with incremental refresh can't be downloaded to a *.pbix* file.
 
 ## Next steps
 View the **Guy in a Cube** one-minute video about this feature:
