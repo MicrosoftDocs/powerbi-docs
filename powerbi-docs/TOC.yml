@@ -848,10 +848,12 @@
       href: desktop-send-smile-privacy-statement.md
   - name: Troubleshooting
     items: 
+    - name: "Resolve issues during sign-in for Power BI Desktop"
+      href: desktop-troubleshooting-sign-in.md
+      - name: "Resolve issues when starting Power BI Desktop"
+      href: desktop-error-launching-desktop.md
     - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
       href: desktop-access-database-errors.md
-    - name: "Resolve issues when starting Power BI Desktop"
-      href: desktop-error-launching-desktop.md
 - name: Power BI Mobile Apps
   items:
   - name: Get started
