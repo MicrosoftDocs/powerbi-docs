@@ -1021,66 +1021,78 @@
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
-  - name: How to
+  - name: User handbook
     items: 
-    - name: Report Server basics
-      items: 
-      - name: "Quickstart: Getting around in Power BI Report Server"
-        href: report-server/getting-around.md
-      - name: "Install Power BI Desktop"
-        href: report-server/install-powerbi-desktop.md
-      - name: "Advanced Power BI reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848708
-      - name: "Advanced paginated reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848709
-      - name: "Working with KPIs"
-        href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: "Connect to data sources"
-        href: report-server/connect-data-sources.md
-      - name: "Overview"
-        href: report-server/user-handbook-overview.md
-      - name: "Tutorial: Create a paginated report for a report server"
-        href: report-server/quickstart-create-paginated-report.md
-      - name: "Access shared datasets as OData feeds "
-        href: report-server/access-dataset-odata.md
-      - name: "Configure scheduled refresh"
-        href: report-server/configure-scheduled-refresh.md
-      - name: "Add comments to a report"
-        href: report-server/add-comments.md
-      - name: "Subscriptions"
-        href: https://go.microsoft.com/fwlink/?linkid=851310
-      - name: "Using the mobile app"
-        href: https://go.microsoft.com/fwlink/?linkid=848711
-      - name: "Quickstart: Embed reports"
-        href: report-server/quickstart-embed.md
-      - name: "Troubleshoot scheduled refresh"
-        href: report-server/scheduled-refresh-troubleshoot.md
-    - name: Admins
-      items: 
-      - name: "Overview"
-        href: report-server/admin-handbook-overview.md
-      - name: "Upgrade a report server"
-        href: report-server/upgrade.md
-      - name: "Migrate a report server"
-        href: report-server/migrate-report-server.md
-      - name: "Configure Kerberos to use Power BI reports"
-        href: report-server/configure-kerberos-powerbi-reports.md
-      - name: "Host Excel workbooks"
-        href: report-server/excel-oos.md
-      - name: "Power BI report scheduled refresh"
-        href: report-server/scheduled-refresh.md
-      - name: "Quickstart: Install Power BI Report Server"
-        href: report-server/quickstart-install-report-server.md
-    - name: Developers
-      items: 
-      - name: "Quickstart: Embed reports"
-        href: report-server/quickstart-embed.md
-      - name: "Overview"
-        href: report-server/developer-handbook-overview.md
-      - name: "Report Viewer control"
-        href: https://go.microsoft.com/fwlink/?linkid=848724
-      - name: "Develop extensions"
-        href: https://go.microsoft.com/fwlink/?linkid=848723
+    - name: "Overview"
+      href: report-server/user-handbook-overview.md
+    - name: "Navigating content"
+      href: report-server/getting-around.md
+    - name: "Quickstart: Power BI reports"
+      href: report-server/quickstart-create-powerbi-report.md
+    - name: "Quickstart: Paginated reports"
+      href: report-server/quickstart-create-paginated-report.md
+    - name: "Advanced Power BI reports"
+      href: https://go.microsoft.com/fwlink/?linkid=848708
+    - name: "Power BI report scheduled refresh"
+      href: report-server/scheduled-refresh.md
+    - name: "Advanced paginated reports"
+      href: https://go.microsoft.com/fwlink/?linkid=848709
+    - name: "Working with KPIs"
+      href: https://go.microsoft.com/fwlink/?linkid=849021
+    - name: "Power BI report (.pbix) data sources"
+      href: report-server/data-sources.md
+    - name: "Paginated report (.rdl) data sources"
+      href: report-server/connect-data-sources.md
+    - name: "Access shared datasets as OData feeds "
+      href: report-server/access-dataset-odata.md
+    - name: "Configure scheduled refresh"
+      href: report-server/configure-scheduled-refresh.md
+    - name: "Add comments to a report"
+      href: report-server/add-comments.md
+    - name: "Subscriptions"
+      href: https://go.microsoft.com/fwlink/?linkid=851310
+    - name: "Using the mobile app"
+      href: https://go.microsoft.com/fwlink/?linkid=848711
+    - name: "Quickstart: Embed reports"
+      href: report-server/quickstart-embed.md
+    - name: "Troubleshoot scheduled refresh"
+      href: report-server/scheduled-refresh-troubleshoot.md
+  - name: Administrator handbook
+    items: 
+    - name: "Overview"
+      href: report-server/admin-handbook-overview.md
+    - name: "Hardware and software requirements"
+      href: report-server/system-requirements.md
+    - name: "Find your product key"
+      href: report-server/find-product-key.md
+    - name: "Quickstart: Install"
+      href: report-server/quickstart-install-report-server.md
+    - name: "Install a report server"
+      href: report-server/install-report-server.md
+    - name: "Install Power BI Desktop"
+      href: report-server/install-powerbi-desktop.md
+    - name: "Upgrade a report server"
+      href: report-server/upgrade.md
+    - name: "Migrate a report server"
+      href: report-server/migrate-report-server.md
+    - name: "Browser support"
+      href: report-server/browser-support.md
+    - name: "Configure Kerberos to use Power BI reports"
+      href: report-server/configure-kerberos-powerbi-reports.md
+    - name: "Capacity planning whitepaper"
+      href: report-server/capacity-planning.md
+    - name: "Host Excel workbooks"
+      href: report-server/excel-oos.md
+  - name: Developer handbook
+    items: 
+    - name: "Overview"
+      href: report-server/developer-handbook-overview.md
+    - name: "Report Viewer control"
+      href: https://go.microsoft.com/fwlink/?linkid=848724
+    - name: "Develop extensions"
+      href: https://go.microsoft.com/fwlink/?linkid=848723
+    - name: "Quickstart: Embed reports"
+      href: report-server/quickstart-embed.md
   - name: Reference
     items: 
     - name: "REST API"
