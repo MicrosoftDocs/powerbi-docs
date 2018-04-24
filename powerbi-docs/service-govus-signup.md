@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/27/2017
+ms.date: 04/24/2017
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -94,12 +94,7 @@ Go to **Billing > Subscriptions** and select **Power BI Pro for Government** sub
 ### Whitelisting Instructions
 *Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected. All existing (or new) US Government customers that purchase US Government **Power BI** services for the first time *must* initiate the following whitelisting process. The process must be done prior to setup or migration to US Government **Power BI** services. 
 
-To have your tenant *whitelisted* for the US Government cloud, fill out a support ticket that makes the request, from the following link. Note that only administrators can make this request:
-
-* [*Whitelisting* online support request ](https://powerbi.microsoft.com/clouds/)
-* Make sure you include the domain to be *whitelisted*, and the email for the Microsoft representative who is working with you on the process.
-
-The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
+To have your tenant *whitelisted* for the US Government cloud, contact the Microsoft account team for assistance with whiteplisting. Note that only administrators can make this request. The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
 
 Customers migrating from Power BI **Free** licenses to **Power BI US Government** (and by definition, migrating to the associated **Pro** license features described earlier in this article) will encounter the issues described in the following section of this article, until their tenant is *whitelisted* by the Power BI engineering team.
 
