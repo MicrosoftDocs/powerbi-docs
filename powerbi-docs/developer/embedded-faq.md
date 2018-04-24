@@ -130,10 +130,6 @@ Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan 
 
 Power BI Embedded is available through Azure.
 
-### How does the usage of Power BI Embedded show up on my bill?
-
-Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. Note that as long as your resource is active, you will be billed even if there is no usage. To stop being billed you need to actively pause your resource.
-
 ### What happens if I already purchased Power BI Premium and now I want some of the benefits of Power BI Embedded in Azure?
 
 Customers will continue to pay for any existing Power BI Premium purchases until the end of their current agreement term and then may switch their Power BI Premium purchases as necessary at that point.
@@ -141,6 +137,14 @@ Customers will continue to pay for any existing Power BI Premium purchases until
 ### Do I still have to buy Power BI Premium to get access to Power BI Embedded?
 
 No, Power BI Embedded includes the Azure based capacity that you need to deploy and distribute your solution to customers.
+
+### What’s the purchase commitment for Power BI Embedded? 
+
+Customers may change their usage on an hourly basis. There is no monthly or annual commitment for the Power BI Embedded service.
+
+### How does the usage of Power BI Embedded show up on my bill?
+
+Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. Note that as long as your resource is active, you will be billed even if there is no usage. To stop being billed you need to actively pause your resource.
 
 ### Who needs a Power BI Pro license for Power BI Embedded and why?
 
@@ -156,9 +160,9 @@ Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Pow
 
 Since Power BI Embedded is a part of Azure it is possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
 
-### What’s the purchase commitment for Power BI Embedded? 
+### Is there a limit to the number of embed tokens a Power BI master account can generate? 
 
-Customers may change their usage on an hourly basis. There is no monthly or annual commitment for the Power BI Embedded service.
+Yes, it is limited because these embed tokens are for development testing only. [A capacity must be purchased](#technical) for any production embedding scenario. There is no limit to embed token generation when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/en-us/library/mt846473.aspx) to check for how many free embed tokens have been used.
 
 ### Is Power BI Embedded available for sovereign clouds (US Government, Germany, China)?
 
@@ -168,8 +172,9 @@ Power BI Embedded is available for some [sovereign clouds](embed-sample-for-cust
 
 Non-profit and educational entities can purchase Azure. There is no special pricing for these types of customers in Azure.
 
-For more information, please see[Troubleshoot](embedded-troubleshoot.md)
+For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
 
 
