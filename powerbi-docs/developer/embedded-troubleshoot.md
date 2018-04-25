@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 2/26/2018
+ms.date: 04/23/2018
 ms.author: maghan
 ---
 # Troubleshooting your embedded application
@@ -87,15 +87,15 @@ A fiddler capture may be required to investigate further. There could be several
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
 ```
-	GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-	Host: wabi-us-north-central-redirect.analysis.windows.net
-	...
-	Authorization: Bearer eyJ0eXAiOi...
-	...
- 
-	HTTP/1.1 403 Forbidden
-	...
-	 
+    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+    Host: wabi-us-north-central-redirect.analysis.windows.net
+    ...
+    Authorization: Bearer eyJ0eXAiOi...
+    ...
+ 
+    HTTP/1.1 403 Forbidden
+    ...
+     
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
@@ -137,7 +137,8 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
-
-For answers to frequently asked questions, see the [Power BI Embedded FAQ](embedded-faq.md).
+For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+
