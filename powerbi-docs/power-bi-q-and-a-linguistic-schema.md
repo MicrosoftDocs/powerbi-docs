@@ -69,7 +69,7 @@ We recommend using Visual Studio Code to edit linguistic schema YAML files. Visu
 
 
 ## Working with linguistic schemas
-Linguistic schemas can be edited, imported, and exported in [Relationship view](desktop-relationship-view.md) in Power BI Desktop. One way to edit a linguistic schema is to [add synonyms to the **Synonyms** pane](desktop-qna-in-reports#normalize-your-model). This doesn't involve opening the YAML file.
+Linguistic schemas can be edited, imported, and exported in [Relationship view](desktop-relationship-view.md) in Power BI Desktop. One way to edit a linguistic schema is to [add synonyms to the **Synonyms** pane](desktop-qna-in-reports#normalize-your-model.md). This doesn't involve opening the YAML file.
 
 ![Synonyms pane](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
