@@ -1,5 +1,5 @@
 ---
-title: Display dashboards, dashboard tiles, report pages, and report visualizations in full screen mode
+title: Display dashboards, tiles, report pages and visualizations in full screen mode
 description: Display dashboards, dashboard tiles, report visuals, and report pages in full screen Mode, aka *TV mode*.
 services: powerbi
 documentationcenter: ''
@@ -17,16 +17,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
-# Full screen mode in Power BI
+# Full screen mode in Power BI service
 ## What is full screen mode?
 ![dashboard full screen mode before and after](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
-Display your content (dashboards, report pages, tiles, and visualizations) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV Mode. The functionality available in full screen mode varies by content.  
+Display your Power BI content (dashboards, report pages, tiles, and visualizations) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV Mode. The functionality available in full screen mode varies by content. 
+
+If you're using Power BI mobile, [full screen is available for Windows 10 mobile apps](mobile-windows-10-app-presentation-mode.md). Power BI Desktop doesn't have a full screen mode for reports or visualizations, but does have Fit to page for [Relationship view](desktop-report-view.md) and [focus mode for report visuals](service-focus-mode.md).
+
+ 
 
 Some uses for full screen mode are:
 
