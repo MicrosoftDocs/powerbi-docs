@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/20/2018
+ms.date: 04/26/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -38,6 +38,14 @@ Plan an effective rollout of Power BI for your organization and explore the nuan
 <br>[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
 <br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
 <br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+
+**Learn about Power BI Embedded in 20 minutes**
+<br>by Megan Asarrane and Colin Murphy
+<br>*May 23rd 2018 10:00AM PST, 1:00PM EST*
+
+This webinar is being presented to give an introduction to Power BI Embedded. By the end of this webinar, users should be able to understand what Power BI Embedded is, the next steps to get started with the product, and where to go for help/resources.
+
+[Register to watch on May 23rd](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
 
 >[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -128,8 +136,9 @@ Watch recorded sessions at any time
 <br>[Register to watch](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Download the Advanced Analytics Starter Kit to follow along](https://aka.ms/pbiaawebinar)
 
-**Office 365 Finance Pros Webinar Series - Episode 2: Automate Recurring Reports & Enable Self-Serve Analytics**
-<br>by Mark Traverso and Miguel Martinez
+**Office 365 Finance Pros Webinar Series**
+<br>by Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky and Miguel Martinez
+<br>Learn tips, tricks & best practices to achieve more in your day-to-day work using Office 365.
 <br>[Register and watch now](https://aka.ms/Office365FinanceProsPBI)
 
 **Be a Full Stack Power BI Jedi – A walkthrough of Power BI most advanced features through Star Wars data**
