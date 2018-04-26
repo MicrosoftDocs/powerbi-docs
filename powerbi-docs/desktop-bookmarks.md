@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -66,6 +66,10 @@ Configure a report page the way you want it to appear in the bookmark. Once your
 
 Once you have a bookmark, you can display it by simply clicking on the bookmark in the **Bookmarks** pane. 
 
+You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between visual types - in which case you would likely want to turn data properties off, so filters aren't reset as users change visual types. 
+
+To make such changes select the elipses next to the bookmark's name, as shown in the previous image, then select or unselect the checkmarks next to *Data*, *Display*, and other controls. 
+
 ## Arranging bookmarks
 As you create bookmarks, you might find that the order in which you create them isn't necessarily the same order you'd like to present them to your audience. No problem, you can easily rearrange the order of bookmarks.
 
@@ -102,13 +106,13 @@ When a bookmark is added, the visible status of each object is also saved based 
 It's important to note that **slicers** continue to filter a report page, regardless of whether they are visible. As such, you can create many different bookmarks, with different slicer settings, and make a single report page appear very different (and highlight different insights) in various bookmarks.
 
 ## Bookmarks for shapes and images
-You can also link shapes and images to bookmarks. With this feature, when you click on an object, it will show the bookmark associated with that object. 
+You can also link shapes and images to bookmarks. With this feature, when you click on an object, it will show the bookmark associated with that object. This can be especially useful when working with buttons; you can learn more by reading the article about [using buttons in Power BI](desktop-buttons.md). 
 
-To assign a bookmark to an object, select the object, then select **Link** from the **Format Shape** pane, as shown in the following image.
+To assign a bookmark to an object, select the object, then expand the **Action** seciton from the **Format Shape** pane, as shown in the following image.
 
 ![Add bookmark link to an object](media/desktop-bookmarks/bookmarks_10.png)
 
-Once you turn the **Link** slider to **On** you can select whether the object is a link, or a bookmark. If you select bookmark, you can then select which of your bookmarks the object is linked to.
+Once you turn the **Action** slider to **On** you can select whether the object is a back button, a bookmark, or a Q&A command. If you select bookmark, you can then select which of your bookmarks the object is linked to.
 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information, just by clicking on an object.
 
@@ -135,9 +139,7 @@ In contrast, when **Spotlight** is selected from the visual's elipses menu, the 
 If either mode is selected when a bookmark is added, that mode (focus or Spotlight) is retained in the bookmark.
 
 ## Bookmarks in the Power BI service
-When you publish a report to the **Power BI service** with at least one bookmark, you can view and interact with those bookmarks in the **Power BI service**. For each report you publish, you must have at least one bookmark created in the report, before you publish, for the bookmark feature to be available in the **Power BI service**.
-
-When bookmarks are available in a report, you can select **View > Selection pane** or **View > Bookmarks pane** to show each of those panes.
+When you publish a report to the **Power BI service** with at least one bookmark, you can view and interact with those bookmarks in the **Power BI service**. When bookmarks are available in a report, you can select **View > Selection pane** or **View > Bookmarks pane** to show each of those panes.
 
 ![View bookmarks and selection panes in the Power BI service](media/desktop-bookmarks/bookmarks_14.png)
 
@@ -148,11 +150,10 @@ Note that you must use the gray bookmark title bar to navigate through the bookm
 ## Limitations and considerations
 In this release of the **bookmarks**, there are a few limitations and considerations to keep in mind.
 
-* Custom visuals do not work with bookmarking if they are the *source* of the filter. If you're using custom visuals to filter elements on a page (for example, the chiclet slicer) and return to that page using a bookmark, the page may be filtered but the custom visual won't be updated to show how the page is being filtered. 
-* Cross-highlighting status for a report pane is *not* saved when you create a bookmark. 
+* Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact teh creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
-* You *must* have at least one bookmark in your report, when you publish it to the **Power BI service**, in order for bookmarks to be available in the service. This is a requirement for each report you publish.
+
 
 ## Next steps
 For more information about features that are similar or interact with bookmarks, take a look at the following articles:
