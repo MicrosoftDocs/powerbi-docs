@@ -39,7 +39,7 @@ To create a new column from an example, launch **Query Editor**. You can do this
 
 ![](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-In this article, we'll use data from the following Wikipedia article (it's a link, so you can click it to get the data for yourself and follow along):
+To get data from a web page, go to the **Home** tab, click **Get Data > Web**, then paste the URL into the dialog that appears. This article uses data from a Wikipedia article. You can click the following link to get the data for yourself and follow along:
 
 * [**List of states and territories of the United States**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
 
