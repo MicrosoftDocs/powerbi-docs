@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/09/2018
+ms.date: 04/23/2018
 ms.author: maggies
 
 ---
@@ -31,7 +31,7 @@ For related "What's New" information, see:
 
 ### Mobile drill-down and drill-up
 
-You can now drill down and drill up to dive into report visuals on your mobile device. To access this new feature, tap and hold to open the tooltip menu on a report visual, and then tap the drill buttons to explore your data in depth.
+You can now drill down and drill up to dive into report visuals on your mobile device. To access this new feature, tap and hold to open the tooltip menu on a report visual, and then tap the drill buttons to explore your data in depth. More about [drilling up and down in the mobile apps](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
 ### Persistent filters
 

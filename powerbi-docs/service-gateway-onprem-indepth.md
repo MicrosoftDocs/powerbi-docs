@@ -84,10 +84,7 @@ The cloud services only know about accounts within Azure Active Directory. It do
    You can create an account on the Azure portal, or within the Office 365 Admin Portal, and the account name matches the UPN of the local Active Directory account.
 2. You can use the [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) tool to synchronize local accounts to your Azure Active Directory tenant.
    
-   The Azure AD Connect tool provides options for directory and password synchronization. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
-3. You can configure Active Directory Federation Services (ADFS).
-   
-   You can associate your ADFS server to your AAD tenant with the [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) tool. ADFS makes use of the directory synchronization discussed above but allows for a single sign-on (SSO) experience. For example, if you are within your work network, when you to a cloud service, and go to sign in, you may not be prompted to enter a username or password. You will need to discuss with your IT Admin if this is available for your organization.
+   The Azure AD Connect tool provides options for directory synchronization and setting up authentication, including password hash sync, pass-through authentication, and federation. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
 
 Using Azure AD Connect ensures that the UPN will match between AAD and your local Active Directory.
 

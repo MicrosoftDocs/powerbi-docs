@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 04/13/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -69,11 +69,13 @@ You can change this dashboard to display your data any way you want. You can ask
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System requirements
-* Connected with a production Salesforce account that has API access enabled
-* Permission granted to the Power BI app during log-in
-* The account has sufficient API calls available to pull and refresh the data
-* A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application
+## System requirements and considerations
+- Connected with a production Salesforce account that has API access enabled
+- Permission granted to the Power BI app during log-in
+- The account has sufficient API calls available to pull and refresh the data
+- A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application
+- The Salesforce Reports API has a restriction that supports up to 2,000 rows of data.
+
 
 ## Troubleshooting
 If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.

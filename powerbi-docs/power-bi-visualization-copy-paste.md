@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -31,8 +31,6 @@ Copying and pasting a visualization requires edit permissions to the report. In 
 
 ### Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
-
-[Power BI - Basic Concepts](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

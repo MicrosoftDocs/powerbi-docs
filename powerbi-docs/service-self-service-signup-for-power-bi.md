@@ -3,7 +3,7 @@ title: Signing up for Power BI as an individual
 description: Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -17,7 +17,7 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 
 LocalizationGroup: Get started
 ---

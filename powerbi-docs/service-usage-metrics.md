@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -50,7 +50,7 @@ When you select **Usage metrics** or the icon ![usage metrics icon](media/servic
 
 Usage metrics reports won't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They cannot be added to an app. If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
 
-To dig down into the report data, or to build your own reports against the dataset, use **Save as** (see [Save the Usage Metrics report as a full-featured Power BI report](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report).
+To dig down into the report data, or to build your own reports against the dataset, use **Save as** (see [Save the Usage Metrics report as a full-featured Power BI report](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
 
 ## Open a Usage Metrics report for a dashboard or report
 1. Start in the workspace that contains the dashboard or report.
@@ -97,7 +97,7 @@ To dig down into the report data, or to build your own reports against the datas
 ### Report Usage Metrics report
 ![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
-## Save the Usage Metrics report as a full-featured Power BI report (personalize)
+## Save the Usage Metrics report as a full featured Power BI report (personalize)
 
 ![Save as](media/service-usage-metrics/power-bi-save-as.png)
 
