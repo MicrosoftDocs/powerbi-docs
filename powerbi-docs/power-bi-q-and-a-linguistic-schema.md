@@ -38,7 +38,7 @@ These phrasings come in a variety of shapes and sizes. Some correspond directly 
 Linguistic schemas are saved in a YAML format. This format is related to the very popular JSON format but provides a more flexible and easier-to-read syntax. Linguistic schemas can be edited, exported, and imported into Power BI Desktop.
 
 ## Prerequisites
-- f you haven't already read the article on [improving your data model for Q&A](desktop-qna-for-reports.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
+- f you haven't already read the article on [improving your data model for Q&A](desktop-qna-in-reports.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
 
 - There are two sides to Q&A.  The first side is the preparation, or "modeling."  The second side is asking questions and exploring the data, or "consuming." In some companies, employees known as Data Modelers or IT Admins may be the ones to assemble the datasets, create the data models, and publish the datasets to Power BI.  While a second set of employees may be the ones to "consume" the data online.  In other companies, these roles may be combined. 
 
