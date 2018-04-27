@@ -21,7 +21,6 @@ ms.author: chwade
 
 LocalizationGroup: Premium
 ---
-
 # Incremental refresh in Power BI Premium
 
 Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
@@ -30,7 +29,7 @@ Incremental refresh enables very large datasets in the Power BI Premium service 
 
 - **Refreshes are more reliable.** For example, it is not necessary to maintain long-running connections to volatile source systems.
 
-- **Resource consumption is reduced.** Data is not fully compressed when performing a refresh. Reducing the data to refresh reduces consumption of memory and other resources.
+- **Resource consumption is reduced.** Less data to refresh reduces overall consumption of memory and other resources.
 
 ## How to use incremental refresh
 
@@ -67,7 +66,9 @@ Ensure rows are filtered where the column value *is after or equal to* RangeStar
 
 Close and Apply from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
 
-### Define the refresh policy.
+### Define the refresh policy
+
+Incremental refresh is available on the context menu for tables, except for Live Connection models.
 
 ![Refresh policy](media/service-premium-incremental-refresh/refresh-policy.png)
 
@@ -104,11 +105,11 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 > [!TIP]
 > The current design requires that the column to detect data changes is persisted and cached into memory. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
 >
-> - Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
+> -> Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
 >
-> - Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
+> -> Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
 >
-> - We plan to allow customized polling queries defined using XMLA-endpoint programmability at a later date. This may be used to avoid persisting the column value altogether.
+> -> We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
 
@@ -129,70 +130,31 @@ Since incremental refresh is a Premium only feature, the publish dialog only all
 
 You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker.
 
+## Query timeouts
+
+The [troubleshooting refresh](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://msdn.microsoft.com/query-bi/m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+
+```
+let
+    Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
+    dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
+    #"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] >= RangeStart and [OrderDate] < RangeEnd)
+in
+    #"Filtered Rows"
+```
+
 ## Related items coming soon
 
 ### Update metadata
 
 Once the dataset is published and refreshed, if a change needs to be made to the model or reports, it needs to be republished from Power BI Desktop to the service. The current publish workflow detects when there is already a dataset with the same name and prompts if it should be overwritten. Overwriting a dataset in this way replaces the data within it. This could mean having to reload historical data when making minor changes, which can of course take a while.
 
-We realize this is not the ideal situation, so we plan to provide the ability to update and retain the data if possible. Incremental refresh will stay in public preview until this feature is released.
+We realize this is not the ideal situation, so we plan to provide the ability to update and retain the data upon publish. Incremental refresh will stay in public preview until this feature is released.
 
 ### Increased dataset size
 
-We plan to soon remove the 10 GB limit in the Power BI service allowing dataset size to be limited only by the Premium capacity. This will allow datasets in the service to grow to sizes comparative with Azure Analysis Services.
+We plan to remove the 10 GB dataset-size limit in the Power BI Premium service. This will allow datasets utilizing incremental refresh to grow to much larger sizes.
 
 ### Override effective date
 
 We plan to allow setting the effective date for a refresh operation. This will be useful to use with datasets like Adventure Works that don't have data up to the current date, and for testing purposes.
-
-## Deep dive: how incremental refresh works
-
-This section provides detailed information on how incremental refresh works under the covers.
-
-Like Analysis Services, Power BI uses partitioning for incremental refresh. Once XMLA-endpoints for Power BI Premium are available, the partitions will be visible like with Analysis Services. This [whitepaper](https://github.com/Microsoft/Analysis-Services/blob/master/AsPartitionProcessing/Automated%20Partition%20Management%20for%20Analysis%20Services%20Tabular%20Models.pdf) provides detailed information on partitioning in Analysis Services.
-
-Incremental refresh in Power BI Premium retains the minimum number of partitions to meet refresh policy requirements. Old partitions that go out of range are dropped, maintaining a rolling window. Partitions are opportunistically merged reducing the total number of partitions required. This improves compression and, in some cases, can improve query performance.
-
-The examples provided in this section all share the same refresh policy:
-
-- Store rows in the last **1 Quarter**
-
-- Refresh rows in the last **10 Days**
-
-- Detect data changes = False
-
-- Only refresh complete days = True
-
-The Power BI [Timeline Storyteller](https://timelinestoryteller.com/) visual is used to visualize the partitions. Click through to roll forward the Run Date and see the state of partitions on each date.
-
-### Merge partitions
-
-This example shows that day partitions are automatically merged to the month level once they go outside the incremental range. Partitions in the incremental range need to be maintained at daily grain to allow only those days to be refreshed.
-
-The refresh operation with Run Date 12/12/2016 merges the days in November because they fall outside the incremental range.
-
-**Click on the image to load the Timeline Storyteller visual:**
-
-[![Merge partitions](media/service-premium-incremental-refresh/merge-partitions.png)](https://msit.powerbi.com/view?r=eyJrIjoiZmNiODUwNTctMWIwOC00MGFjLThhZTAtZGYwMzc1ZjQ1YjEyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
-
-### Drop old partitions
-
-Old partitions that fall outside the total range, are removed.
-
-The refresh operation with Run Date 1/2/2017 drops the partition for Q3 2016 because it falls outside the total range.
-
-**Click on the image to load the Timeline Storyteller visual:**
-
-[![Drop old partitions](media/service-premium-incremental-refresh/drop-old-partition.png)](https://msit.powerbi.com/view?r=eyJrIjoiNGM3NGExODYtNWFkNy00MTJiLWE5ZmQtYzg5ODdkNWZhZjE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
-
-### Recovery from prolonged failure
-
-This example simulates how the system recovers gracefully from prolonged failure. Let's say refresh doesn't run successfully because data source credentials expired, and it takes 13 days to resolve. The incremental range is only 10 days.
-
-The next successful refresh operation, with Run Date 1/15/2017, needs to backfill the missing 13 days and refresh them. It also needs to refresh the previous 9 days because they were not refreshed on the normal schedule. In other words, the incremental range is increased from 10 to 22 days.
-
-The next refresh operation, with Run Date 1/16/2017, takes the opportunity to merge the days in December and the months in the Q4 2016.
-
-**Click on the image to load the Timeline Storyteller visual:**
-
-[![Recovery from prolonged failure](media/service-premium-incremental-refresh/recovery-failure.png)](https://msit.powerbi.com/view?r=eyJrIjoiNGY4NWI0YmEtOGNhMS00NTcyLWIyODQtMWEwMDlmOTZiYjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
