@@ -68,7 +68,7 @@ Close and Apply from the Power Query Editor. You should have a subset of the dat
 
 ### Define the refresh policy
 
-Incrmental refresh is available on the context menu for tables, except for Live Connection models.
+Incremental refresh is available on the context menu for tables, except for Live Connection models.
 
 ![Refresh policy](media/service-premium-incremental-refresh/refresh-policy.png)
 
@@ -132,7 +132,7 @@ You can now refresh the model. The first refresh may take longer to import the h
 
 ## Query timeouts
 
-As described by this [article](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios), refresh operations in the Power BI Premium service are subject to timeouts. Queries may be limited to the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the SQL Server command timeout documented [here](https://msdn.microsoft.com/query-bi/m/sql-database) is set to 2 hours in the following expression. Each period defined by the policy ranges submits a query on refresh observing the command timeout setting.
+The [troubleshooting refresh](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://msdn.microsoft.com/query-bi/m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```
 let
