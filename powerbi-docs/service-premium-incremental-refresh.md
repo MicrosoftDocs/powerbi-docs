@@ -83,7 +83,7 @@ The incremental refresh dialog is displayed. Use the toggle to enable the dialog
 
 The header text explains the following:
 
--   Incremental refresh is supported only for workspaces on Premium capacity.
+-   Incremental refresh is supported only for workspaces on Premium capacity. Refresh policies are defined in Power BI Desktop; they are applied by refresh operations in the service.
 
 -   It is not possible to download the PBIX file containing an incremental-refresh policy from the Power BI service. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
 
