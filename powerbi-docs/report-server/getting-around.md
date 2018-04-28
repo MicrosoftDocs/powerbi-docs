@@ -1,6 +1,6 @@
 ---
-title: Power BI Report Server web portal basics
-description: Read about navigating and working in the Power BI Report Server web portal.
+title: Quickstart: Get around in the Power BI Report Server web portal
+description: Create a VM with Power BI Report Server installed, and explore the web portal.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -10,18 +10,18 @@ editor: ''
 tags: ''
 qualityfocus: no
 qualitydate: ''
-
+ms.component: powerbi-report-server
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: article
+ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 04/27/2018
 ms.author: maggies
 
 ---
-# Navigating the Power BI Report Server web portal
-The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
+# Quickstart: Get around in the Power BI Report Server web portal
+In this quickstart, you create a virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
 
 ![Report Server web portal](media/getting-around/report-server-web-portal.png)
 
