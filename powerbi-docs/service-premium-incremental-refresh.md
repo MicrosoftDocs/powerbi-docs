@@ -154,19 +154,3 @@ let
 in
     #"Filtered Rows"
 ```
-
-## Related items coming soon
-
-### Update metadata
-
-Once the dataset is published and refreshed, if a change needs to be made to the model or reports, it needs to be republished from Power BI Desktop to the service. The current publish workflow detects when there is already a dataset with the same name and prompts if it should be replaced. Replacing a dataset in this way replaces the data within it. This could mean having to reload historical data when making minor changes, which can of course take a while.
-
-We realize this is not the ideal situation, so we plan to provide the ability to update and retain the data upon publish. Incremental refresh will stay in public preview until this feature is released.
-
-### Increased dataset size
-
-We plan to remove the 10 GB dataset-size limit in the Power BI Premium service. This will allow datasets utilizing incremental refresh to grow to much larger sizes.
-
-### Override current date
-
-We plan to allow setting the current date for a refresh operation. This will be useful to use with datasets like Adventure Works that don't have data up to the current date, and for testing purposes.
