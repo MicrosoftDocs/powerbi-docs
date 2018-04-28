@@ -1,5 +1,5 @@
 ---
-title: Quickstart: Create a VM with Power BI Report Server and explore the web portal
+title: 'Quickstart: Create a VM with Power BI Report Server and explore the web portal'
 description: Create a VM with Power BI Report Server installed, and explore the web portal.
 services: powerbi
 documentationcenter: ''
@@ -18,8 +18,8 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 04/27/2018
 ms.author: maggies
-
 ---
+
 # Quickstart: Create a VM with Power BI Report Server and explore the web portal
 In this quickstart, you create a virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
 
