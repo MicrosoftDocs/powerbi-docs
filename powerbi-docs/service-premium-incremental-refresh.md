@@ -60,7 +60,7 @@ Ensure rows are filtered where the column value *is after or equal to* RangeStar
 ![Filter rows](media/service-premium-incremental-refresh/filter-rows.png)
 
 > [!TIP]
-> While the data type of the parameters must be date/time, it is possible to convert them to match the specific requirements of the data source. For example, the following Power Query function converts a date/time value to resemble an integer surrogate key of the form *yyyymmdd*, which is common for data warehouses. The function can be called by the filter step.
+> While the data type of the parameters must be date/time, it is possible to convert them to match the requirements of the data source. For example, the following Power Query function converts a date/time value to resemble an integer surrogate key of the form *yyyymmdd*, which is common for data warehouses. The function can be called by the filter step.
 >
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
@@ -83,14 +83,22 @@ The incremental refresh dialog is displayed. Use the toggle to enable the dialog
 
 The header text explains the following:
 
--   Incremental refresh is supported only for workspaces on Premium capacity.
+-   Incremental refresh is supported only for workspaces on Premium capacity. Refresh policies are defined in Power BI Desktop; they are applied by refresh operations in the service.
 
 -   It is not possible to download the PBIX file containing an incremental-refresh policy from the Power BI service. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
 
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store 5 years of data in total, and incrementally refresh 10 days of data. The first refresh may take longer to import all 5 years. Subsequent refreshes may be finished in seconds or minutes.
+The following example defines a refresh policy to store 5 years of data in total, and incrementally refresh 10 days of data. If the dataset is refreshed daily, the following will be carried out for each refresh operation.
+
+-   Add a new day of data.
+
+-   Refresh 10 days up to the current date.
+
+-   Remove calendar years that are older than 5 years prior to the current date. For example, if the current date is January 1st 2019, the year 2013 is removed.
+
+The first refresh in the Power BI service may take longer to import all 5 years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
@@ -105,11 +113,11 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 > [!TIP]
 > The current design requires that the column to detect data changes is persisted and cached into memory. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
 >
-> -> Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
+> > Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
 >
-> -> Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
+> > Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
 >
-> -> We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
+> > We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
 
@@ -119,8 +127,12 @@ Another example is refreshing data from a financial system where data for the pr
 
 ![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
 
+#### Current date
+
+Manually-invoked refresh operations in the service use UTC time to determine the current date. Scheduled refresh operations observe the time zone specified in the scheduled refresh settings.
+
 > [!NOTE]
-> Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
+> The time zone can affect the current date and ranges.
 
 ## Publish to the service
 
@@ -142,19 +154,3 @@ let
 in
     #"Filtered Rows"
 ```
-
-## Related items coming soon
-
-### Update metadata
-
-Once the dataset is published and refreshed, if a change needs to be made to the model or reports, it needs to be republished from Power BI Desktop to the service. The current publish workflow detects when there is already a dataset with the same name and prompts if it should be overwritten. Overwriting a dataset in this way replaces the data within it. This could mean having to reload historical data when making minor changes, which can of course take a while.
-
-We realize this is not the ideal situation, so we plan to provide the ability to update and retain the data upon publish. Incremental refresh will stay in public preview until this feature is released.
-
-### Increased dataset size
-
-We plan to remove the 10 GB dataset-size limit in the Power BI Premium service. This will allow datasets utilizing incremental refresh to grow to much larger sizes.
-
-### Override effective date
-
-We plan to allow setting the effective date for a refresh operation. This will be useful to use with datasets like Adventure Works that don't have data up to the current date, and for testing purposes.
