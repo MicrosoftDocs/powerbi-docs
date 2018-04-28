@@ -26,9 +26,9 @@ LocalizationGroup: Gateways
 
 A Power BI gateway is software that you install within an on-premises network; it facilitates access to data in that network. It's like a gatekeeper that listens for connection requests, and grants them only when a users' requests meet certain criteria. This lets organizations keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in Power BI reports and dashboards.
 
-The following diagram shows a basic view, which we'll expand on later in this article.
+The following diagram shows a basic view, with the gateway handling requets from thr cloud for three on-premises compoters. We'll expand on this later in the article.
 
-![Gateway overview](media/service-gateway-overview/gateway-overview.png)
+![Gateway overview](media/service-gateway-getting-started/gateway-overview.png)
 
 ## Types of gateways
 
@@ -53,7 +53,7 @@ You have the option of installing a stand-alone gateway or adding a gateway to a
 
 The gateway you install runs as a Windows service, **On-premises data gateway**. This local service is registered with the Gateway Cloud Service through Azure Service Bus. The following diagram shows the flow between on-premises data and the cloud services that use the gateway.
 
-![Diagram with gateway data flow](media/service-gateway-overview/gateway-how-it-works.png)
+![Diagram with gateway data flow](media/service-gateway-getting-started/gateway-how-it-works.png)
 
 Queries and data flow:
 
