@@ -95,14 +95,14 @@ You can also give users and security groups administrative access to the gateway
 And that’s all there is to it. Remember that you need to add users to each data source to which you want to grant access. Each data source has a separate list of users, and you must add users to each data source separately.
 
 
-## Remove users from a data source
+### Remove users from a data source
 
 On the **Users** tab for the data source, you can remove users and security groups that use this data source.
 
 ![Remove user](media/service-gateway-manage/remove-user.png)
 
 
-## Add and remove administrators
+### Add and remove administrators
 
 On the **Administrators** tab for the gateway, add and remove users (or security groups) that can administer the gateway.
 
