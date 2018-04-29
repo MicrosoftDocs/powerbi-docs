@@ -24,73 +24,72 @@ LocalizationGroup: Gateways
 
 # Install a gateway for Power BI
 
-A Power BI gateway is software that you install within an on-premises network; it facilitates access to data in that network. In this article, you install a gateway and on a local computer.
+A Power BI gateway is software that you install within an on-premises network; it facilitates access to data in that network. As described in the [overview](service-gateway-getting-started.md), you can install a gateway in personal mode or standard mode (recommended). In standard mode, you can install a stand-alone gateway or add a gateway to a *cluster*, which is recommended for high availability. In this article, we show you how to install a standard gateway, then add another gateway to create a cluster.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 
-## Manage high availability clusters
-You can create *high availability clusters* of gateway installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. These clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data.
-
-During the **On-premises data gateway** installation process, you can specify whether the gateway should be added to an existing gateway cluster. 
-
-![](media/service-gateway-high-availability-clusters/gateway_clusters_01.png)
-
-In order to add a gateway to an existing cluster, you must provide the *recovery key* for the primary gateway instance for the cluster you want the new gateway to join. The primary gateway for the cluster must be running the gateway update from November 2017 or later. 
-
-
 ## Download and install a gateway
 
-The first step is to download the gateway from the Power BI service, and install it on your local computer.
+The gateway runs on the computer where you install it, so ensure that you install on a computer that is always on. For better performance and reliability, we recommend that the computer is on a wired network, rather than a wireless one.
 
-1. In the Power BI service, select the **download icon** in the upper right corner, and select **Data Gateway**.
+1. In the Power BI service in the upper right corner, select the **download icon** ![Download icon](media/service-gateway-install/icon-download.png) > **Data Gateway**.
 
-    ![](media/service-gateway-install/gw_gettingstarted_01.png)
+    ![Data Gateway](media/service-gateway-install/data-gateway.png)
 
-2. On the download page, click the **DOWNLOAD GATEWAY** button.
+2. On the download page, select the **DOWNLOAD GATEWAY** button.
 
-3. Read the information about gateways, then click **Next**.     
+3. Select **Next**.     
 
-    ![](media/service-gateway-install/gw_gettingstarted_02.png)
+    ![Data gateway installer](media/service-gateway-install/gateway-installer.png)
 
-    This screen gives you the ultra-condensed explanation of what a gateway does. It also provides a couple important **warnings** – when you install a gateway, it actually runs on the computer on which you perform the installation. And if that computer is turned off, so is the gateway (so it won’t work when it’s not running). Also, installing on a computer using a wireless network is not best, so you should use a computer connected to a wired network.
+4. Select **On-premises data gateway (recommended)** > **Next**.
 
-4. Select **On-premises data gateway**, then click **Next**.
+    ![Gateway type](media/service-gateway-install/gateway-type.png)
 
-    ![](media/service-gateway-install/gw_gettingstarted_03.png)
+5. Keep the default install path, and accept the terms > **Install**.
 
-    Here’s where you decide which gateway you’ll install – on-premises gateway, or a personal gateway. In this guide, we’ll install the **On-premises data gateway**.
-    
-    There are a few things to note at this decision point:
-    
-    * Both gateways require 64-bit Windows operating systems.
-    * Gateways can’t be installed on a domain controller.
-    * You can install up to two On-premises data gateways on the same computer, one running in each mode (personal and standard). 
-    * You cannot have more than one gateway running in the same mode on the same computer.
-    * You can install multiple On-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point).
-    * You can only have one personal mode gateway running for each Power BI user. If you install another personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
+    ![Install path](media/service-gateway-install/install-path.png)
 
-5. Keep the default install path, and click **Install**.
+6. Enter the account you use to sign in to Power BI > **Sign in**.
 
-    ![](media/service-gateway-install/gw_gettingstarted_06.png)
+    ![Email address](media/service-gateway-install/email-address.png)
 
-6. Enter the account you use to sign in to Power BI. The gateway is associated with your Power BI account, and you configure gateways from within the Power BI service.
+    The gateway is associated with your Power BI account, and you manage gateways from within the Power BI service. You're now signed in to your account.
 
-    ![](media/service-gateway-install/gw_gettingstarted_07.png)
+7. Select **Register a new gateway on this computer** > **Next**.
 
-    You’ll be signed in, as shown in the following image.
+    ![Register gateway](media/service-gateway-install/register-gateway.png)
 
-    ![](media/service-gateway-install/gw_gettingstarted_08.png)
+8. Enter a name for the gateway (must be unique across the tenant) and a recovery key. You need this key if you ever want to recover or move your gateway. Select **Configure**.
 
-7. Enter a **Recovery key**. You need this key if you ever want to recover or move your gateway. [TODO] - give some guidance on recovery key and gateway naming
+    ![Configure gateway](media/service-gateway-install/configure-gateway.png)
 
-    ![](media/service-gateway-install/gw_gettingstarted_09.png)
+    Notice the option **Add to an existing gateway cluster**. We'll use this option in the next section of the article.
 
-8. Review the information in the final window, then click **Close**.
+9. Review the information in the final window. Notice that the gateway is available for Power BI, and also PowerApps and Flow, because I use the same account for all three. Select **Close**.
 
-    ![](media/service-gateway-install/gw_gettingstarted_10.png)
+    ![Summary screen](media/service-gateway-install/summary-screen.png)
+
+Now you've successfully installed a gateway, you can add another gateway to create a cluster.
+
+
+## Add another gateway to create a cluster
+
+You can install only one standard gateway on a computer, so you must install the second gateway for the cluster on a different computer. This also makes sense in practical terms because you want redundancy in the cluster.
+
+1. Download the gateway to a different computer, and install it.
+
+2. After you've signed in to your Power BI account, register the gateway. Select **Add to an existing cluster**. Under **Available gateway clusters**, select the first gateway you installed (the *primary gateway*), and enter the recover key for that gateway. Select **Configure**.
+
+    ![Add a gateway to a cluster](media/service-gateway-install/add-cluster.png)
+
+During the **On-premises data gateway** installation process, you can specify whether the gateway should be added to an existing gateway cluster.
+
+In order to add a gateway to an existing cluster, you must provide the *Recovery key* for the primary gateway instance for the cluster you want the new gateway to join. The primary gateway for the cluster must be running the gateway update from November 2017 or later. 
 
 ## Next steps
+
 [Manage a Power BI gateway](service-gateway-manage.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

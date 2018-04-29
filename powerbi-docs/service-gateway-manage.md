@@ -24,7 +24,7 @@ LocalizationGroup: Gateways
 
 # Manage a Power BI gateway
 
-After you [install a Power BI data gateway](service-gateway-install.md), you can manage it through the **Manage gateways** area of the Power BI service, and with PowerShell scripts. This article focuses on the Power BI service. If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
+After you [install a Power BI data gateway](service-gateway-install.md), you can manage it through the **Manage gateways** area of the Power BI service, in the gateway app on your local computer, and with PowerShell scripts. This article focuses on the Power BI service. If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
 
 
 ## Manage data sources
@@ -65,7 +65,7 @@ You can now use this data source to include data from SQL Server in your Power B
 
 ## Remove a data source
 
-You can remove a data source if you're no longer using it. Be aware that removing a datasource breaks any dashboards and reports that rely on that data source.
+You can remove a data source if you're no longer using it. Be aware that removing a data source breaks any dashboards and reports that rely on that data source.
 
 To remove a data source, go to the data source then select **Remove**.
 
@@ -77,6 +77,7 @@ To remove a data source, go to the data source then select **Remove**.
 After you add a data source to a gateway, you give users and security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
 
 You can also give users and security groups administrative access to the gateway.
+
 
 ### Add users to a data source
 
@@ -118,15 +119,26 @@ When administrators use the **Manage gateways** menu item, found under the gear 
 All new **Scheduled Refresh** requests and DirectQuery operations are automatically routed to the primary instance of a given gateway cluster. If the primary gateway instance is not online, the request is routed to another gateway instance in the cluster.
 
 
-## Migrate, recover, or take over a gateway
+## Migrate, restore, or take over a gateway
 
-Select the gateway that you want to migrate, recover, or take over a gateway and supply the recovery key that you entered when you created the gateway.
+Run the gateway installer on the computer where you want to migrate, restore, or take over the gateway.
+
+1. Download the gateway and install it.
+
+2. After you've signed in to your Power BI account, register the gateway. Select **Migrate, restore or take over an existing gateway** > **Next**.
+
+    ![Register gateway](media/service-gateway-manage/register-gateway.png)
+
+3. Select from the available clusters and gateways, and enter the recover key for the selected gateway. Select **Configure**.
+
+    ![Migrate, restore, or take over](media/service-gateway-manage/migrate-restore-takeover.png)
+
 
 ## Restart a gateway
 
 The gateway runs as a Windows service. Like any Windows service, there multiple ways to start and stop it. Here is how you can do it from the command prompt.
 
-1. On the machine where the gateway is running, launch a command prompt with Administrator priveleges
+1. On the machine where the gateway is running, launch a command prompt with Administrator privileges
 
 2. Enter `net stop PBIEgwService` to stop the service.
 
