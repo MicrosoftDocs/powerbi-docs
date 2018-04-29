@@ -113,11 +113,11 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 > [!TIP]
 > The current design requires that the column to detect data changes is persisted and cached into memory. You may want to consider one of the following techniques to reduce cardinality and memory consumption.
 >
-> > Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
+> -> Persist only the maximum value of this column at time of refresh, perhaps using a Power Query function.
 >
-> > Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
+> -> Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
 >
-> > We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
+> -> We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
 
 #### Only refresh complete periods
 
@@ -127,12 +127,8 @@ Another example is refreshing data from a financial system where data for the pr
 
 ![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
 
-#### Current date
-
-Manually-invoked refresh operations in the service use UTC time to determine the current date. Scheduled refresh operations observe the time zone specified in the scheduled refresh settings.
-
 > [!NOTE]
-> The time zone can affect the current date and ranges.
+> Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
 
 ## Publish to the service
 
