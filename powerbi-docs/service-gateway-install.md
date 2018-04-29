@@ -84,9 +84,6 @@ You can install only one standard gateway on a computer, so you must install the
 
     ![Add a gateway to a cluster](media/service-gateway-install/add-cluster.png)
 
-During the **On-premises data gateway** installation process, you can specify whether the gateway should be added to an existing gateway cluster.
-
-In order to add a gateway to an existing cluster, you must provide the *Recovery key* for the primary gateway instance for the cluster you want the new gateway to join. The primary gateway for the cluster must be running the gateway update from November 2017 or later. 
 
 ## Next steps
 
