@@ -127,12 +127,8 @@ Another example is refreshing data from a financial system where data for the pr
 
 ![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
 
-#### Current date
-
-Manually-invoked refresh operations in the service use UTC time to determine the current date. Scheduled refresh operations observe the time zone specified in the scheduled refresh settings.
-
 > [!NOTE]
-> The time zone can affect the current date and ranges.
+> Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
 
 ## Publish to the service
 
