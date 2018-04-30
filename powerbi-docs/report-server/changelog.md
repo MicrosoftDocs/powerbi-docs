@@ -32,14 +32,14 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Enable migration of SQL Server Reporting Services 2017 catalogs
             - For Power BI Reports (PBIX)
                 - Report properties can be modified without breaking data sources 
-                - Report refresh is supported by deployments that use custom authentication
+                - Report refresh is supported when using custom authentication
             - For Paginated Reports (RDL)
                 - Enable nested usage of the lookup function in report expressions
                 - Linked reports respect page size defaults when printing
                 - Subscriptions can be created for linked reports that use cascading parameters
                 - Multi-value parameter defaults can be modified when using IE11
                 - Data-driven subscription delivery options can be modified
-                - Subscriptions can be viewed and edited during executing
+                - Subscriptions can be viewed and edited while the subscription is executing
                 - Credentials can be set for expression-based connection strings
             - For KPIs
                 - Trend lines are refreshed when data is updated
