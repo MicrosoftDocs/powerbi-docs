@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "powerbi-docs/personal-gateway.md",
+            "redirect_url": "/power-bi/service-gateway-personal-mode",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-gateway-enterprise.md",
             "redirect_url": "/power-bi/service-gateway-onprem",
             "redirect_document_id": true

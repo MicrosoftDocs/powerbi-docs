@@ -1115,36 +1115,21 @@
     items: 
     - name: "What are Power BI gateways?"
       href: service-gateway-getting-started.md
-  - name: Quickstart
-    items: 
-    - name: "Install the on-premises data gateway"
-      href: service-gateway-onprem.md
   - name: Tutorials
-    items: 
-    - name: "Connect to on-premises data in Analysis Services"
-      href: service-gateway-enterprise-manage-ssas.md
   - name: Concepts
-    items: 
-    - name: "On-premises data gateway - in-depth"
-      href: service-gateway-onprem-indepth.md
-    - name: "High availability clusters for on-premises data gateway"
-      href: service-gateway-high-availability-clusters.md      
+    items:
+    - name: "Guidance for deploying a data gateway"
+      href: service-gateway-deployment-guidance.md      
     - name: "On-premises data gateway FAQ"
       href: service-gateway-onprem-faq.md
-    - name: "On-premises data gateway (personal mode)"
-      href: service-gateway-personal-mode.md
-    - name: "Troubleshooting the on-premises data gateway"
-      href: service-gateway-onprem-tshoot.md
-    - name: "Guidance for deploying a data gateway"
-      href: service-gateway-deployment-guidance.md
   - name: How to
-    items: 
-    - name: "Power BI gateway - personal"
-      href: personal-gateway.md
-    - name: "Use Kerberos for single sign-on (SSO)"
-      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
-    - name: "Configuring proxy settings"
-      href: service-gateway-proxy.md
+    items:
+    - name: "Install gateways"
+      href: service-gateway-install.md
+    - name: "Manage gateways"
+      href: service-gateway-manage.md
+    - name: "Manage your enterprise data source - Analysis Services"
+      href: service-gateway-enterprise-manage-ssas.md
     - name: "Manage your enterprise data source - SAP HANA"
       href: service-gateway-enterprise-manage-sap.md
     - name: "Manage your enterprise data source - SQL"
@@ -1153,6 +1138,18 @@
       href: service-gateway-onprem-manage-oracle.md
     - name: "Manage your enterprise data source - import/scheduled refresh"
       href: service-gateway-enterprise-manage-scheduled-refresh.md
+    - name: "Use Kerberos for single sign-on (SSO)"
+      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
+    - name: "Configuring proxy settings"
+      href: service-gateway-proxy.md
+    - name: "On-premises data gateway - in-depth"
+      href: service-gateway-onprem-indepth.md
+    - name: "High availability clusters for on-premises data gateway"
+      href: service-gateway-high-availability-clusters.md
+    - name: "On-premises data gateway (personal mode)"
+      href: service-gateway-personal-mode.md
+    - name: "Troubleshooting the on-premises data gateway"
+      href: service-gateway-onprem-tshoot.md
 - name: Administration
   items:
   - name: Overview
