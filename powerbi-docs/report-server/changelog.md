@@ -27,6 +27,24 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## March 2018
 - **Power BI Report Server**
+    - *Version 1.2.6690.34729 (Build 15.0.2.402), Released: April 27, 2018*
+        - Bug fixes
+            - Enable migration of SQL Server Reporting Services 2017 catalogs
+            - For Power BI Reports (PBIX)
+                - Report properties can be modified without breaking data sources 
+                - Report refresh is supported by deployments that use custom authentication
+            - For Paginated Reports (RDL)
+                - Enable nested usage of the lookup function in report expressions
+                - Linked reports respect page size defaults when printing
+                - Subscriptions can be created for linked reports that use cascading paramaters
+                - Multi-value paramater defaults can be modified when using IE11
+                - Data driven subscription delivery options can be modified
+                - Subscriptions can be viewed and edited during executing
+                - Credentials can be set for expression based connection strings
+            - For KPIs
+                - Trend lines are refreshed when data is updated
+            - General stability improvements
+
     - *Version 1.2.6660.39920 (Build 15.0.2.389), Released: March 28, 2018*
         - Bug fixes
             - For Power BI Reports (PBIX), fix for Export Data not working from Power BI Visuals
@@ -116,7 +134,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
     - *Build 14.0.600.301, Released: July 11, 2017*
         - Bug Fixes
-            - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
+            - The `{{UserId}}` tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
             - Some images fail to render in Power BI Report Server reports
             - Unable to change the name of a Power BI Report in the Power BI Report Server
             - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
