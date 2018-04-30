@@ -63,7 +63,7 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 
 You can now use this data source to include data from SQL Server in your Power BI dashboards and reports.
 
-## Remove a data source
+### Remove a data source
 
 You can remove a data source if you're no longer using it. Be aware that removing a data source breaks any dashboards and reports that rely on that data source.
 
