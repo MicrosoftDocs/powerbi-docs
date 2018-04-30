@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/12/2018
+ms.date: 04/30/2018
 ms.author: chwade
 
 LocalizationGroup: Premium
@@ -46,17 +46,17 @@ Large datasets with potentially billions of rows may not fit into Power BI Deskt
 
 #### RangeStart and RangeEnd parameters
 
-To leverage incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved names RangeStart and RangeEnd.
+To leverage incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved names **RangeStart** and **RangeEnd**.
 
-In the Power Query Editor, click on Manage Parameters to define the parameters with default values.
+In the Power Query Editor, select **Manage Parameters** to define the parameters with default values.
 
 ![Manage parameters](media/service-premium-incremental-refresh/manage-parameters.png)
 
-With the parameters defined, you can apply the filter by selecting the Custom Filter menu option for a column.
+With the parameters defined, you can apply the filter by selecting the **Custom Filter** menu option for a column.
 
 ![Custom filter](media/service-premium-incremental-refresh/custom-filter.png)
 
-Ensure rows are filtered where the column value *is after or equal to* RangeStart and *before* RangeEnd.
+Ensure rows are filtered where the column value *is after or equal to* **RangeStart** and *before* **RangeEnd**.
 
 ![Filter rows](media/service-premium-incremental-refresh/filter-rows.png)
 
@@ -65,7 +65,7 @@ Ensure rows are filtered where the column value *is after or equal to* RangeStar
 >
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
-Close and Apply from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
+Select **Close and Apply** from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
 
 ### Define the refresh policy.
 
@@ -97,7 +97,7 @@ The following example defines a refresh policy to store 5 years of data in total
 
 #### Detect data changes
 
-Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you check the Detect data changes checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
+Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
 
 ![Detect changes](media/service-premium-incremental-refresh/detect-changes.png)
 
@@ -114,7 +114,7 @@ Incremental refresh of 10 days is of course much more efficient than full refres
 
 Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics -- such as barrels per day in the oil and gas industry -- make no sense with partial days.
 
-Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January on February 12th.
+Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
 
 ![Complete periods](media/service-premium-incremental-refresh/complete-periods.png)
 
