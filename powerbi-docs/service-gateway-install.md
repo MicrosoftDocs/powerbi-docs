@@ -76,7 +76,9 @@ Now you've successfully installed a gateway, you can add another gateway to crea
 
 ## Add another gateway to create a cluster
 
-You can install only one standard gateway on a computer, so you must install the second gateway for the cluster on a different computer. This also makes sense in practical terms because you want redundancy in the cluster.
+A cluster allows gateway administrators to avoid having a single point of failure for on-premises data access. If the primary gateway is unavailable, data requests are routed to the second gateway that you add, and so on. You can install only one standard gateway on a computer, so you must install the second gateway for the cluster on a different computer. This makes sense because you want redundancy in the cluster.
+
+High availability gateway clusters require the November 2017 update to On-premises data gateway, or later.
 
 1. Download the gateway to a different computer, and install it.
 
