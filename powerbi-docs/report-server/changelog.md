@@ -36,11 +36,11 @@ For detailed information about new features, see [What's new in Power BI Report 
             - For Paginated Reports (RDL)
                 - Enable nested usage of the lookup function in report expressions
                 - Linked reports respect page size defaults when printing
-                - Subscriptions can be created for linked reports that use cascading paramaters
-                - Multi-value paramater defaults can be modified when using IE11
-                - Data driven subscription delivery options can be modified
+                - Subscriptions can be created for linked reports that use cascading parameters
+                - Multi-value parameter defaults can be modified when using IE11
+                - Data-driven subscription delivery options can be modified
                 - Subscriptions can be viewed and edited during executing
-                - Credentials can be set for expression based connection strings
+                - Credentials can be set for expression-based connection strings
             - For KPIs
                 - Trend lines are refreshed when data is updated
             - General stability improvements
