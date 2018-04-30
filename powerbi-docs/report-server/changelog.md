@@ -4,7 +4,7 @@ description: This change log is for Power BI Report Server and lists new items a
 services: powerbi
 documentationcenter: ''
 author: jtarquino
-manager: jonhp
+manager: kfile
 backup: maggies
 editor: ''
 tags: ''
@@ -17,7 +17,7 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
-ms.author: tankas
+ms.author: jtarquino
 ---
 # Changelog for Power BI Report Server
 
@@ -31,16 +31,16 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Bug fixes
             - Enable migration of SQL Server Reporting Services 2017 catalogs
             - For Power BI Reports (PBIX)
-                - Report properties can be modified without breaking data sources 
-                - Report refresh is supported when using custom authentication
+                - Reports can be refresh when a server is configured to use custom authentication
+                - Modifying the properties of a report does not reset data source credentials
             - For Paginated Reports (RDL)
-                - Enable nested usage of the lookup function in report expressions
-                - Linked reports respect page size defaults when printing
+                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expresssions no longer result in `#Error`
+                - Linked reports respect the page size of the target report when printing
                 - Subscriptions can be created for linked reports that use cascading parameters
                 - Multi-value parameter defaults can be modified when using IE11
-                - Data-driven subscription delivery options can be modified
+                - Data-driven subscription delivery options are editable
                 - Subscriptions can be viewed and edited while the subscription is executing
-                - Credentials can be set for expression-based connection strings
+                - Setting data source credentials does not remove expression-based connection strings
             - For KPIs
                 - Trend lines are refreshed when data is updated
             - General stability improvements
@@ -60,7 +60,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Fix for export to Word that creates unequal row height if row content is empty
             - For Paginated Reports (RDL), fix for expression based connection string that is deleted when we change credential for data source
             - Fix for ability to use KPI with text values
-            - For Paginated Report (RDL), fix for ability to assign a new dataset to an existing Paginated Report (RDL)
+            - For Paginated Reports (RDL), fix for ability to assign a new dataset to an existing Paginated Report (RDL)
             - Other stability and usability fixes
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
