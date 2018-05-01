@@ -33,12 +33,12 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Every action such as selecting a column or adding a filter will send a query back to the database
 * Tiles are refreshed every hour (refresh does not need to be scheduled). This can be adjusted in the Advanced settings when you connect.
 * Q&A is not available for DirectQuery datasets
-* Schema changes afre not picked up automatically
+* Schema changes are not picked up automatically
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below. 
 
 ## Power BI Desktop and DirectQuery
-In order to connect to Azure SQL Database using DirectQuery, you will need to use Power BI Desktop. This approach provides additional flexability and capabilities. Reports created using Power BI Desktop can then be published to the Power BI service. You can learn more about how to connect to [Azure SQL Database using DirectQuery](desktop-use-directquery.md) within Power BI Desktop. 
+In order to connect to Azure SQL Database using DirectQuery, you will need to use Power BI Desktop. This approach provides additional flexibility and capabilities. Reports created using Power BI Desktop can then be published to the Power BI service. You can learn more about how to connect to [Azure SQL Database using DirectQuery](desktop-use-directquery.md) within Power BI Desktop. 
 
 ## Single sign-on
 
