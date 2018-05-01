@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.service: powerbi
 ms.custom: mvc
 manager: kfile
-#Customer intent: As a Power BI Report Server (PBI RS) developer, I want to embed my PBI RS reports in an iFrame, so that I can show my reports in other applications.
+#Customer intent: As a Power BI Report Server developer, I want to embed my PBI RS reports in an iFrame, so that I can show my reports in other applications.
 ---
 # Quickstart: Embed a Power BI Report Server report using an iFrame in SharePoint
 
