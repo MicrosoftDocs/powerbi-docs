@@ -1,6 +1,7 @@
 ---
 title: Embed a report using an iFrame
-description: Installing Power BI Reports Server itself is very quick. From downloading, to installing and configuring, you should be up and running services: powerbi
+description: Embedding Power BI Report Server report in an iFrame 
+services: powerbi
 author: markingmyname
 ms.date: 05/03/2018
 ms.topic: quickstart
