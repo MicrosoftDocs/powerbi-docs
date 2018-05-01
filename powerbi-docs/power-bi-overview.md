@@ -4,7 +4,6 @@ description: Overview of Power BI and how the different parts fit together - Pow
 services: powerbi
 author: mihart
 manager: kfile
-
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: overview
