@@ -84,7 +84,7 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name"ssl-setup"></a>
+<a name="ssl-setup"></a>
 
 ### Server Certificate setup
 To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
@@ -94,9 +94,24 @@ To enable a live preview of your visual, a trusted https server is needed. Befor
 > 
 > 
 
-To *add* a certificate, run the following command.
+To *create* a certificate, run the following command.
+
+    pbiviz --create-cert
+
+> [!NOTE]
+> You should see a message telling you the location path to the certificate and a newly generated Passphrase.
+> 
+> 
+
+
+To *install* the certificate, run the following command.
 
     pbiviz --install-cert
+    
+> [!NOTE]
+> You should see a message telling you to use your newly generated Passphrase to install a PFX certificate.
+> 
+> 
 
 **Windows OS**
 
