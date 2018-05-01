@@ -93,4 +93,4 @@ For example:
 [Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Quickstart: Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md)  
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/) 
