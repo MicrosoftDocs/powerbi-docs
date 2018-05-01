@@ -1,33 +1,42 @@
 ---
-title: Connect to GitHub with Power BI
+title: 'Tutorial: Connect to an online service, GitHub, with Power BI'
 description: GitHub for Power BI
-services: powerbi
-documentationcenter: ''
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
-backup: maggiesMSFT
+backup: SarinaJoan
 editor: ''
 tags: ''
 qualityfocus: no
 qualitydate: ''
 
 ms.service: powerbi
+ms.component: powerbi-service
+ms.custom: connect-to-services
 ms.devlang: NA
-ms.topic: article
+ms.topic: tutorial
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 05/01/2018
+ms.author: maggies
+#customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
 LocalizationGroup: Connect to services
 ---
-# Connect to GitHub with Power BI
-The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
+# Tutorial: Connect to an online service, GitHub, with Power BI
+In this tutorial, you connect to real data in the GitHub service. You'll connect to the Power BI content public repository (also known as repo) and see data for contributions, issues, pull requests, and active users. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
->[!NOTE]
->The content pack requires the GitHub account to have access to the repo. More details on requirements below.
+
+In this tutorial, you'll complete the following steps:
+
+> [!div class="checklist"]
+> * Sign up for a GitHub account, if you don't have one yet 
+> * Sign in to your Power BI account, or sign up, if you don't have one yet
+> * Open the Power BI service and go to AppSource
+> * Find the GitHub app in AppSource
+> * Enter the information for the Power BI public GitHub repo
+> * View the dashboad and report that Power BI has created with GitHub data
+> * Clean up resources by deleting the app
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -40,7 +49,8 @@ Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/gi
    
    ![](media/service-connect-to-github/github.png)
 4. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
-   
+   >[!NOTE]
+   >The content pack requires the GitHub account to have access to the repo. More details on requirements below.
    ![](media/service-connect-to-github/pbi_github1.png)
 5. Enter your GitHub credentials (this step might be skipped if you are already signed in with your browser). 
 6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
@@ -103,4 +113,7 @@ If necessary, you can verify your GitHub credentials.
 ## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
+
+Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
+
 
