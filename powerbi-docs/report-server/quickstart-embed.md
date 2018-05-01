@@ -21,6 +21,7 @@ If you're not signed up to use Power BI Report Server, [sign up for a free trial
 * You will need to have Power BI Report Server installed and configured.
 * You will need to have the Power BI Report Server Desktop tool installed.
 * You will need to have a SharePoint environment installed and configured. 
+
 ## Creating the Power BI Report Server report URL
 
 1. Download the sample from GitHub - [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
@@ -89,6 +90,7 @@ For example:
 10. Now you should see the report on the page.
 
     ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
+
 ## Next steps
 
 [Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
