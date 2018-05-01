@@ -22,24 +22,6 @@ ms.author: susuresh
 LocalizationGroup: Premium
 ---
 
-# How Power BI Premium Service Works
-
-Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up to 10 GB in size. Once uploaded, a dataset can be refreshed to up to 12 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity.
-
-## Best practices
-
-This section describes best practices for working with large datasets.
-
-**Large models can be very resource-intensive** on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
-
-
-   |SKU  |Size of .pbix   |
-   |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3    | up to 10 GB   |
-
-
    # How Power BI Premium Service Works
 
    ## Memory Management in Premium Capacity
