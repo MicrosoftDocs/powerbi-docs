@@ -24,6 +24,8 @@ LocalizationGroup: Premium
 
    # How Power BI Premium Service Works
 
+   This document will help you understand how Power BI Premium Service works. This knowledge is useful for better planning and management of your premium capacity.  
+
    ## Memory Management in Premium Capacity
 
    Your capacity memory is consumed by following:
