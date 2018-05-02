@@ -1175,7 +1175,7 @@
   - name: How to
     items: 
     - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq  
+      href: service-admin-faq.md
     - name: "How to purchase Power BI Premium"
       href: service-admin-premium-purchase.md
     - name: "Signing up for Power BI with a new Office 365 Trial"
