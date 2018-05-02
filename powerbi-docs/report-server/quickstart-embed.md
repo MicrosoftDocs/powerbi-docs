@@ -26,11 +26,13 @@ If you're not signed up to use Power BI Report Server, [sign up for a free trial
 
 1. Download the sample from GitHub - [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
 
-2. Open up the sample PBIX file from GitHub in the Power BI Report Server Desktop tool.
+![download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
+
+2. Open the sample PBIX file from GitHub in the Power BI Report Server Desktop tool.
 
     ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed_02.png)
 
-3. Save the report to the Power BI Report Server.
+3. Save the report to the **Power BI Report Server**.
 
     ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
@@ -43,35 +45,35 @@ Once you have your URL, you can create an iFrame within a SharePoint page, to ho
 
 For example:
 ```
-<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+http://myserver/reports/powerbi/Sales?rs:embed=true
 ```
 ## Embedding a Power BI Report Server report in a SharePoint iFrame
 
-1. Navigate to a SharePoint Site Contents page.
+1. Navigate to a SharePoint **Site Contents** page.
 
     ![Site Content Page](media/quickstart-embed/quickstart_embed_05.png)
 
-2. Choose which app from the Site Contents page to add the report to.
+2. Choose which app from the Site Contents page to add the report to. In this case we will use the custom list app **PBI RS embed test**.
 
     ![Site Content Page App](media/quickstart-embed/quickstart_embed_06.png)
 
-3. Select the gear on the top right and select Edit Page.
+3. Select the gear on the top right and select **Edit Page**.
 
     ![Edit Page option](media/quickstart-embed/quickstart_embed_07.png)
 
-4. Select Add Web Part
+4. Select **Add Web Part**.
 
     ![Add Web Part](media/quickstart-embed/quickstart_embed_08.png)
 
-5. Under Categories select Media and Content, Under Parts, select Content Editor, and then select Add.
+5. Under **Categories** select **Media and Content**, under **Parts**, select **Content Editor**, and then select **Add**.
 
     ![Select Content Editor Web Part](media/quickstart-embed/quickstart_embed_09.png)
 
-6. Select click here to add new content.
+6. Select **Click here to add new content**.
 
     ![Add new content](media/quickstart-embed/quickstart_embed_10.png)
 
-7. In the ribbon select the Format Text tab then select Edit Source.
+7. In the ribbon select the **Format Text** tab then select **Edit Source**.
 
      ![Edit Source](media/quickstart-embed/quickstart_embed_11.png)
 
@@ -79,11 +81,12 @@ For example:
 
     ![iFrame code](media/quickstart-embed/quickstart_embed_12.png)
 
-    ```
-    <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
-    ```
+For example:
+```
+<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+```
 
-9. In the ribbon select the Page tab and select Stop Editing.
+9. In the ribbon select the **Page** tab and select **Stop Editing**.
 
     ![Stop Editing](media/quickstart-embed/quickstart_embed_13.png)
 
