@@ -12,7 +12,7 @@ manager: kfile
 
  # Power BI Premium capacity resource management and optimization
 
- This article describes how the Power BI service uses premium capacity memory and provides tips on how you can optimize capacity memory in your solution.
+ This article describes how the Power BI premium service manages resources and provides tips on planning and optimizing your solution.
 
  ## Premium capacity memory management
 
