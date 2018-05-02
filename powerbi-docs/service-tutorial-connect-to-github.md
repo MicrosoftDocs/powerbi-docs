@@ -71,15 +71,17 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
  
    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
-8. Select the global navigaton icon to minimize the left navigation, so you have more room for the dashboard.
+8. Select the global navigaton icon to minimize the left navigation, so you have more room.
 
     ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Select the GitHub tile to open the GitHub dashboard.
+10. Select the GitHub tile from step 8. 
+    
+    The GitHub dashboard opens. This is live data, so the values you see may be different.
 
     ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
 
-    This is live data, so the values you see may be different.
+    
 
 ## Ask a question
 
@@ -101,11 +103,11 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
     ![Pull requests by month combo chart](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
 
-2. Select a user name in the Total pull requests by user chart, and see, for example, that they had more average hours than the total average for March.
+2. Select a user name in the **Total pull requests by user** chart, and see, as in this example, that they had more average hours than the total average for March.
 
     ![Power BI GitHub report highlighting](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-report-highlight.png)
 
-3. Select the Punch Card tab to view the next page in the report. 
+3. Select the **Punch Card** tab to view the next page in the report. 
  
     ![Power BI GitHub report Punch Card](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
