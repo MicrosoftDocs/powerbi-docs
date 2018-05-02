@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Connect to the online service GitHub with Power BI'
-description: Tutorial: Connect to the online service GitHub in the Power BI service
+description: In this tutorial you connect to the online service GitHub in the Power BI service
 author: maggiesMSFT
 manager: kfile
 backup: SarinaJoan
