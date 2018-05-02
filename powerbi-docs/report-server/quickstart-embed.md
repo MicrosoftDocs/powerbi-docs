@@ -12,7 +12,7 @@ manager: kfile
 ---
 # Quickstart: Embed a Power BI Report Server report using an iFrame in SharePoint Server
 
-In this quickstart you will learn how to embed a Power BI Report Server report by using an iFrame in a SharePoint page. If you are working with SharePoint Online, Power BI Report Server must be publicly accessible. In SharePoint Online, the Power BI Web Part that works with the Power BI service doesn’t work with Power BI Report Server.
+In this quickstart you will learn how to embed a Power BI Report Server report by using an iFrame in a SharePoint page. If you are working with SharePoint Online, Power BI Report Server must be publicly accessible. In SharePoint Online, the Power BI Web Part that works with the Power BI service doesn’t work with Power BI Report Server. 
 
 ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
 ## Prerequisites
