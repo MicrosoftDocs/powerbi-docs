@@ -1157,13 +1157,7 @@
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
   - name: Quickstart
-    items: 
-    - name: "Review your usage metrics"
-      href: service-admin-portal.md
   - name: Tutorials
-    items: 
-    - name: "Manage data capacity in Power BI"
-      href: service-admin-manage-your-data-storage-in-power-bi.md
   - name: Concepts
     items: 
     - name: "Power BI Premium - what is it?"
@@ -1180,6 +1174,8 @@
       href: service-admin-role.md
   - name: How to
     items: 
+    - name: "Frequently asked questions (FAQ)"
+      href: service-admin-faq  
     - name: "How to purchase Power BI Premium"
       href: service-admin-premium-purchase.md
     - name: "Signing up for Power BI with a new Office 365 Trial"
