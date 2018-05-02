@@ -97,8 +97,8 @@ Some **Year** cells only contain the word "Year" rather than year values. You ca
 Now that you have cleaned up the data in the **Year** column, you can work on the **Final Winner** column. Since you are only looking at the final winners data now, you can rename this column to **Country**. To rename the column:
 
 1. Double-click or tap and hold in the **Final Winner** column header, or 
-- Right-click the **Final Winners** column header, and select **Rename** from the dropdown, or 
-- Select the **Final Winners** column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon. 
+   - Right-click the **Final Winners** column header, and select **Rename** from the dropdown, or 
+   - Select the **Final Winners** column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon. 
    
    ![Rename dropdown](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) or ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
    
@@ -191,4 +191,5 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 * [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
+
 
