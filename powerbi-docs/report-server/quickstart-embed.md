@@ -27,7 +27,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
 1. Download the sample from GitHub - [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
 
-![download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
+    ![download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
 
 2. Open the sample PBIX file from GitHub in the Power BI Report Server Desktop tool.
 
