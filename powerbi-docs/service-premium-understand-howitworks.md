@@ -10,7 +10,7 @@ author: suds001
 manager: kfile
 ---
 
- # Power BI Premium capcacity memory use and optimization
+ # Power BI Premium capacity resource management and optimization
 
  This article describes how the Power BI service uses premium capacity memory and provides tips on how you can optimize capacity memory in your solution.
 
@@ -18,31 +18,31 @@ manager: kfile
 
  Premium capacity memory is consumed by:
 
-- Memory used by the loaded datasets
-- Memory used by dataset refresh (both scheduled and on-demand)
-- Memory used by report queries
+* Memory used by the loaded datasets
+* Memory used by dataset refresh (both scheduled and on-demand)
+* Memory used by report queries
 
- When a request is issued against a published dataset in your capacity, that dataset is loaded into memory from persistent storage (this is also called image load). Keeping the dataset loaded in memory helps in fast response to future queries to this dataset. In addition to the memory needed for keeping the dataset loaded in the memory, report queries and dataset refreshes also consume additional memory.
+When a request is issued against a published dataset in your capacity, that dataset is loaded into memory from persistent storage (this is also called image load). Keeping the dataset loaded in memory helps in fast response to future queries to this dataset. In addition to the memory needed for keeping the dataset loaded in the memory, report queries and dataset refreshes also consume additional memory.
 
- ### Dataset memory estimation
+### Dataset memory estimation
 
- When attempting to load a dataset into memory, Power BI estimates the amount of memory that dataset will require to complete the requested command. Datasets in memory tend to be larger in size than what they are when saved to disk. During refresh of a dataset, memory capacity requires at least double the amount of memory than required when it is idle.
+When attempting to load a dataset into memory, Power BI estimates the amount of memory that dataset will require to complete the requested command. Datasets in memory tend to be larger in size than what they are when saved to disk. During refresh of a dataset, memory capacity requires at least double the amount of memory than required when it is idle.
 
- ### Overcommitting capacity, eviction, and reloading of datasets
+### Overcommitting capacity, eviction, and reloading of datasets
 
- Power BI Premium gives you the advantage of overcommitting your capacity. For example, you can publish more datasets than capacity memory can hold. If the published datasets in your capacity need more memory than can fit in the capacity, some of the datasets will be stored seperately in a persistent storage. The persisitant storage is part of 100 TBs storage associated with each of your capacities.
+Power BI Premium gives you the advantage of overcommitting your capacity. For example, you can publish more datasets than capacity memory can hold. If the published datasets in your capacity need more memory than can fit in the capacity, some of the datasets will be stored seperately in a persistent storage. The persisitant storage is part of 100 TBs storage associated with each of your capacities.
 
- So, what datasets stay in memory and what happens to the other datasets? As described earlier, when a request is issued against a dataset, it is loaded into memory (image load). The request could be a report query or a refresh operation.
+So, what datasets stay in memory and what happens to the other datasets? As described earlier, when a request is issued against a dataset, it is loaded into memory (image load). The request could be a report query or a refresh operation.
 
- Because you can overcommit your capacity, your capacity may also face memory pressure. When capacity faces memory pressure (because a new dataset needs to be loaded or the queries on some loaded datasets increase the memory requirement), the node *evicts one or more datasets* occupying the capacity memory. Datasets that are idle (not getting interactive report queries or refreshes), are evicted first. If new commands are issued to the evicted dataset, the service attempts to reload this into memory, potentially evicting other datasets. This behavior allows for more efficient utilization by allowing the capacity to serve many more datasets than its memory can hold.
+Because you can overcommit your capacity, your capacity may also face memory pressure. When capacity faces memory pressure (because a new dataset needs to be loaded or the queries on some loaded datasets increase the memory requirement), the node *evicts one or more datasets* occupying the capacity memory. Datasets that are idle (not getting interactive report queries or refreshes), are evicted first. If new commands are issued to the evicted dataset, the service attempts to reload this into memory, potentially evicting other datasets. This behavior allows for more efficient utilization by allowing the capacity to serve many more datasets than its memory can hold.
 
- Loading a dataset into memory is a fairly costly operation. Depending on the dataset size, it can last from a couple of seconds to tens of seconds for a very large dataset. Premium capacity attempts to minimize the number of times the capacity will need to be loaded by keeping the datasets that are in use (active datasets) in memory for as long as possible. An active dataset means the dataset has received a query in the last *x* number of minutes (The number of minutes (*x*) is not yet determined. It's still being optimized as we learn more about workload patterns).  When additional memory is needed, some datasets will need to be evicted and the system will attempt to choose the one that has the least impact on the user experience.
+Loading a dataset into memory is a fairly costly operation. Depending on the dataset size, it can last from a couple of seconds to tens of seconds for a very large dataset. Premium capacity attempts to minimize the number of times the capacity will need to be loaded by keeping the datasets that are in use (active datasets) in memory for as long as possible. An active dataset means the dataset has received a query in the last *x* number of minutes (The number of minutes (*x*) is not yet determined. It's still being optimized as we learn more about workload patterns).  When additional memory is needed, some datasets will need to be evicted and the system will attempt to choose the one that has the least impact on the user experience.
 
- The eviction process itself is a fast operation. If the dataset is not in active use at the time of eviction, the user will not be able to determine much impact from the eviction. However, if too many datasets are in active use at the same time and there is not enough memory to hold them all, a lot of evictions can occur. This can lead to slow performance for users.
+The eviction process itself is a fast operation. If the dataset is not in active use at the time of eviction, the user will not be able to determine much impact from the eviction. However, if too many datasets are in active use at the same time and there is not enough memory to hold them all, a lot of evictions can occur. This can lead to slow performance for users.
 
- ### Dataset refresh memory requirement competing with an active dataset memory requirement
+### Dataset refresh memory requirement competing with an active dataset memory requirement
 
- Datasets can be refreshed on a schedule or on-demand by users. As described earlier, memory required for full refreshes are at least double the memory size of the loaded and idle datasets. Before refresh starts, a refresh memory requirement is estimated. If the total memory requirement is more than the available memory in the capacity, some datasets are evicted. Candidates for eviction are chosen in the following order:
+Datasets can be refreshed on a schedule or on-demand by users. As described earlier, memory required for full refreshes are at least double the memory size of the loaded and idle datasets. Before refresh starts, a refresh memory requirement is estimated. If the total memory requirement is more than the available memory in the capacity, some datasets are evicted. Candidates for eviction are chosen in the following order:
 
 1. Idle datasets (Not active. See active dataset definition earlier in this article).
 2. Datasets executing background commands (scheduled refresh and tile refresh queries).
