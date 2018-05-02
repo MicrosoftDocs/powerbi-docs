@@ -70,19 +70,19 @@ If an interactive query (report or refresh) is issued to any dataset in the capa
 
 ## CPU Resource Management in Premium Capacity
 
- There are 2 main sources that consume CPU resources:
+There are 2 main sources that consume CPU resources:
 
  • Queries coming through reports
 
  • Refreshes/ Processing
 
- ## Queries coming through the reports
+### Queries coming through the reports
 
- Report Queries consume CPU resources of your capacity. If your report has some queries that are inefficient or if you have many concurrent users, it can consume a lot of CPU resources and your existing capacity may not be sufficient to handle the load.
+Report Queries consume CPU resources of your capacity. If your report has some queries that are inefficient or if you have many concurrent users, it can consume a lot of CPU resources and your existing capacity may not be sufficient to handle the load.
 
- ## Refresh Parallelization Policy
+### Refresh Parallelization Policy
 
- Memory is not the only resource that can constrain refreshing of datasets. The number of v-cores on a server will also factor in. Since each refresh operation requires a certain number of v-cores, there is a limit as to how many refreshes can run in parallel. The limit per SKU is detailed in the below table. Additional refreshes that go beyond these limits will be queued.
+Memory is not the only resource that can constrain refreshing of datasets. The number of v-cores on a server will also factor in. Since each refresh operation requires a certain number of v-cores, there is a limit as to how many refreshes can run in parallel. The limit per SKU is detailed in the below table. Additional refreshes that go beyond these limits will be queued.
 
  | SKU  | Backend V-Cores  | Model refresh parallelism   |
  | --- | --- | --- |
@@ -103,7 +103,7 @@ If an interactive query (report or refresh) is issued to any dataset in the capa
 
  So, if your refreshes are getting delayed, you may want to check out the parallel refreshes supported by your capacity.
 
- # Understand These Concepts With Some Example Scenarios
+## Understand These Concepts With Some Example Scenarios
 
  **20 scheduled refreshes submitted all at the same time** – Power BI attempts to start the first x refreshes at the same time. The value for x is determined by the refresh parallelization policy for that SKU. Not all x refreshes will start at the same time if Power BI is unable to obtain enough memory by evicting inactive datasets. Any refresh that is unable to start, will be queued until it can.
 
@@ -119,7 +119,7 @@ If an interactive query (report or refresh) is issued to any dataset in the capa
 
 
 
-# Some Troubleshooting &amp; Testing Tips
+## Some Troubleshooting &amp; Testing Tips
 
 * In case of reports being slow or unresponsive, start by testing for just 1 user on your report. And then start increasing the concurrent user load to find the limit. In many cases, tuning your DAX (report queries) can drastically change the performance of your reports (and increase the concurrent number of users supported by your capacity)
 
