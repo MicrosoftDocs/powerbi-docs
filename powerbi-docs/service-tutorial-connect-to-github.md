@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Connect to the online service GitHub with Power BI'
-description: GitHub for Power BI
+description: Tutorial: Connect to the online service GitHub in the Power BI service
 author: maggiesMSFT
 manager: kfile
 backup: SarinaJoan
@@ -16,35 +16,33 @@ ms.devlang: NA
 ms.topic: tutorial
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/01/2018
+ms.date: 05/04/2018
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Connect to the online service GitHub with Power BI
-In this tutorial, you connect to real data in the GitHub service. You'll connect to the Power BI content public repository (also known as repo) and see data for contributions, issues, pull requests, and active users. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
-
-
+In this tutorial, you connect to real data in the GitHub service. You'll connect to the Power BI content public repository (also known as a *repo*) and see information: How many people contribute to the Power BI public content? Who contributes the most? Which day of the week has the most contributions? And answers to other questions. In the tutorial, you create a Power BI app with a dashboard and report that automatically show the data in an visual form.
 
 In this tutorial, you'll complete the following steps:
 
 > [!div class="checklist"]
 > * Sign up for a GitHub account, if you don't have one yet 
 > * Sign in to your Power BI account, or sign up, if you don't have one yet
-> * Open the Power BI service and go to AppSource
-> * Find the GitHub app in AppSource
+> * Open the Power BI service
+> * Find the GitHub app
 > * Enter the information for the Power BI public GitHub repo
-> * View the dashboad and report that Power BI has created with GitHub data
+> * View the dashboad and report with GitHub data
 > * Clean up resources by deleting the app
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Prerequisites
 
-To complete this tutorial, you need a GitHub account. 
+To complete this tutorial, you need a GitHub account, if you don't already have one. 
 
-- 
+- Sign up for a [GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/)
 
 
 ## How to connect
@@ -69,7 +67,7 @@ To complete this tutorial, you need a GitHub account.
    
    Now Power BI can connect with GitHub and connect to the data.  The data is refreshed once a day.
 
-8. After Power BI imports the data, select the new GitHub tile. 
+8. After Power BI imports the data, you see the new GitHub tile. 
  
    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
@@ -77,11 +75,13 @@ To complete this tutorial, you need a GitHub account.
 
     ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Select the tile to open the GitHub dashboard.
+10. Select the GitHub tile to open the GitHub dashboard.
 
     ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
 
-    This is live data, so the values may be different.
+    This is live data, so the values you see may be different.
+
+## Ask a question
 
 11. Put your cursor in **Ask a question about your data**, then select **pull requests**. 
 
@@ -93,61 +93,38 @@ To complete this tutorial, you need a GitHub account.
 
      Power BI creates a bar chart showing the number of pull requests per month.
 
-13. Select **Exit Q&A**, then select the  combo column-and-line chart Pull Requests by Month to open the related report.
+13. Select **Exit Q&A**.
+
+## View the GitHub report 
+
+1. In the GitHub dashboard, select the  combo column-and-line chart **Pull Requests by Month** to open the related report.
 
     ![Pull requests by month combo chart](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
-   
 
+2. Select a user name in the Total pull requests by user chart, and see, for example, that they had more average hours than the total average for March.
 
-**What now?**
+    ![Power BI GitHub report highlighting](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-report-highlight.png)
 
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+3. Select the Punch Card tab to view the next page in the report. 
+ 
+    ![Power BI GitHub report Punch Card](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-## What's included
-The following data is available from GitHub in Power BI:     
+    Apparently Tuesdays at 3 pm is the most common time and day of the week for *commits*, when people check in their work.
 
-| Table name | Description |
-| --- | --- |
-| Contributions |The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week. The top 100 contributors are included. |
-| Issues |List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo. |
-| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no issues in the repo. |
-| Users |This table provides a list of GitHub users or contributors who have made contributions, filed issues or solved Pull requests for the repo selected. |
-| Milestones |It has all the Milestones for the selected repo. |
-| DateTable |This tables contains dates from today and for years in the past that allow you to analyze your GitHub data by date. |
-| ContributionPunchCard |This table can be used as a contribution punch card for the selected repo. It shows commits by day of week and hour of day. This table is not connected to other tables in the model. |
-| RepoDetails |This table provides details for the repo selected. |
+## Clean up resources
 
-## System requirements
-* The GitHub account that has access to the repo.  
-* Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
-* Sufficient API calls available to pull and refresh the data.  
+Now that you've finished the tutorial, you can delete the GitHub app. 
 
-### De-authorize Power BI
-To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
+1. In the left navigation bar, select **Apps**.
+2. Hover over the GitHub tile and select the **Delete** garbage can.
 
-<a name="FindingParams"></a>
-
-## Finding parameters
-You can determine the owner and repository by looking at the repository in GitHub itself:
-
-![](media/service-tutorial-connect-to-github/github_ownerrepo.png)
-
-The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
-
-    <https://github.com/Azure/azure-sdk-for-php> .
-
-## Troubleshooting
-If necessary, you can verify your GitHub credentials.  
-
-1. In another browser window, go to the GitHub web site and log in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.    
-2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.  
-3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
+    ![Delete the GitHub app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
-* [Get data](service-get-data.md)
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
+In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics. 
+ 
+> [!div class="nextstepaction"]
+> [Connect to the online services you use](./service-connect-to-services.md)
 
 
