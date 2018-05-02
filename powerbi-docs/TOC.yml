@@ -18,8 +18,6 @@
       items: 
       - name: "Quick Insights in Power BI"
         href: service-insights.md
-      - name: "Purchasing Power BI Pro"
-        href: service-admin-purchasing-power-bi-pro.md
       - name: "Create a dashboard from a report"
         href: service-dashboard-create.md
       - name: "Get data from files"
@@ -1157,13 +1155,14 @@
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
   - name: Quickstart
-    items: 
-    - name: "Review your usage metrics"
-      href: service-admin-portal.md
+    items:
+    - name: "Purchase Power BI Pro"
+      href: service-admin-purchasing-power-bi-pro.md
+    - name: "Assign Power BI Pro licenses - Office 365"
+      href: service-admin-assigning-power-bi-pro-licenses.md
+    - name: "Assign Power BI Pro licenses - Azure"
+      href: service-admin-assigning-power-bi-pro-licenses.md
   - name: Tutorials
-    items: 
-    - name: "Manage data capacity in Power BI"
-      href: service-admin-manage-your-data-storage-in-power-bi.md
   - name: Concepts
     items: 
     - name: "Power BI Premium - what is it?"
@@ -1180,6 +1179,10 @@
       href: service-admin-role.md
   - name: How to
     items: 
+    - name: "Power BI admin portal"
+      href: service-admin-portal.md  
+    - name: "Frequently asked questions (FAQ)"
+      href: service-admin-faq.md
     - name: "How to purchase Power BI Premium"
       href: service-admin-premium-purchase.md
     - name: "Signing up for Power BI with a new Office 365 Trial"
