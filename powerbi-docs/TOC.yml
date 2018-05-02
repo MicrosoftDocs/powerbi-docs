@@ -1174,6 +1174,8 @@
       href: service-admin-role.md
   - name: How to
     items: 
+    - name: "Power BI admin portal"
+      href: service-admin-portal.md  
     - name: "Frequently asked questions (FAQ)"
       href: service-admin-faq.md
     - name: "How to purchase Power BI Premium"
