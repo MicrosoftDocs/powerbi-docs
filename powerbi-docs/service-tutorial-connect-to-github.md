@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Connect to an online service, GitHub, with Power BI'
+title: 'Tutorial: Connect to the online service GitHub with Power BI'
 description: GitHub for Power BI
 author: maggiesMSFT
 manager: kfile
@@ -22,7 +22,7 @@ ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
-# Tutorial: Connect to an online service, GitHub, with Power BI
+# Tutorial: Connect to the online service GitHub with Power BI
 In this tutorial, you connect to real data in the GitHub service. You'll connect to the Power BI content public repository (also known as repo) and see data for contributions, issues, pull requests, and active users. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
 
@@ -51,15 +51,15 @@ To complete this tutorial, you need a GitHub account.
 1. Sign in to the Power BI service (http://powerbi.com). 
 2. In the left navigation pane, select **Apps**, then **Get apps**.
    
-   ![Power BI Get apps](media/service-connect-to-github/power-bi-github-app-tutorial.png) 
+   ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
 3. Select **Apps**, type **github** in the search box > **Get it now**.
    
-   ![Power BI Get GitHub](media/service-connect-to-github/power-bi-github-app-tutorial-get-it-now.png) 
+   ![Power BI Get GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-get-it-now.png) 
 
 4. Enter the repository name and repository owner of the repo. The URL for this repo is https://github.com/MicrosoftDocs/powerbi-docs, so **Repository Owner** is **MicrosoftDocs**, and **Repository** is **powerbi-docs**. 
    
-    ![Power BI GitHub repo name](media/service-connect-to-github/power-bi-github-app-tutorial-repo-name.png)
+    ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-repo-name.png)
 
 5. Enter the GitHub credentials you created. Power BI might skip this step if you're already signed in to GitHub in your browser. 
 
@@ -71,31 +71,31 @@ To complete this tutorial, you need a GitHub account.
 
 8. After Power BI imports the data, select the new GitHub tile. 
  
-   ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-app-tutorial-tile.png) 
+   ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
 8. Select the global navigaton icon to minimize the left navigation, so you have more room for the dashboard.
 
-    ![Global navigation icon](media/service-connect-to-github/power-bi-global-navigation-icon.png)
+    ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
 10. Select the tile to open the GitHub dashboard.
 
-    ![GitHub dashboard in Power BI](media/service-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
+    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
 
     This is live data, so the values may be different.
 
 11. Put your cursor in **Ask a question about your data**, then select **pull requests**. 
 
-    ![Power BI Ask a question about your data](media/service-connect-to-github/power-bi-github-app-tutorial-ask-question.png)
+    ![Power BI Ask a question about your data](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question.png)
 
 12. Type **by month**.
  
-    ![Pull requests by month](media/service-connect-to-github/power-bi-github-app-tutorial-ask-question-by-month.png)
+    ![Pull requests by month](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question-by-month.png)
 
      Power BI creates a bar chart showing the number of pull requests per month.
 
 13. Select **Exit Q&A**, then select the  combo column-and-line chart Pull Requests by Month to open the related report.
 
-    ![Pull requests by month combo chart](media/service-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
+    ![Pull requests by month combo chart](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
    
 
 
@@ -131,7 +131,7 @@ To de-authorize Power BI from being connected to your GitHub repo you can Revoke
 ## Finding parameters
 You can determine the owner and repository by looking at the repository in GitHub itself:
 
-![](media/service-connect-to-github/github_ownerrepo.png)
+![](media/service-tutorial-connect-to-github/github_ownerrepo.png)
 
 The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
 
