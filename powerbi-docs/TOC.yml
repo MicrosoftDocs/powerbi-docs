@@ -995,14 +995,14 @@
     items: 
     - name: Admins
       items: 
-    - name: "Create a Power BI report for a report server"
-      href: report-server/quickstart-create-powerbi-report.md
-    - name: "Find your product key"
-      href: report-server/find-product-key.md
+      - name: "Create a Power BI report for a report server"
+        href: report-server/quickstart-create-powerbi-report.md
+      - name: "Find your product key"
+        href: report-server/find-product-key.md
     - name: Developers
       items:  
-    - name: "Embed reports"
-      href: report-server/quickstart-embed.md
+    -   name: "Embed reports"
+        href: report-server/quickstart-embed.md
   - name: Tutorials
     items: 
     - name: Admins
