@@ -103,4 +103,3 @@ If necessary, you can verify your GitHub credentials.
 ## Next steps
 * [Get started with Power BI](service-get-started.md)
 * [Get data](service-get-data.md)
-
