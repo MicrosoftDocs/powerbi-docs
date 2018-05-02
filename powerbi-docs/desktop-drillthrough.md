@@ -42,8 +42,8 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 ## Use your own image for a back button    
  Because the back button is an image, you can replace the image of that visual with any image you want, and it will still operate as a back button so report consumers can go back to their original page.
 
-1. To use your own image for a back button, place an image visual on the drillthrough page.
-2. Select the visual and set the **Back button** slider to on. Your image now functions as a back button.
+1. On the **Home** tab, click **Image**, then locate your image, and place it on the drillthrough page.
+2. Select your new image on the Drillthrough page and under the Format Image section, set the **Link** slider to on and set the **Type** to **Back**. Your image now functions as a back button.
 
     ![](media/desktop-drillthrough/drillthrough_05.png)
 
