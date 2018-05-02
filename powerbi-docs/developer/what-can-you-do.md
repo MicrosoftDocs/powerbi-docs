@@ -14,7 +14,7 @@ manager: kfile
 
 # What can developers do with Power BI?
 
-With Power BI, developers have different options when trying to include Power BI content into applications. These options incorporate **embedding with Power BI**, **custom visuals**, and **pushing data into Power BI**.
+Developers have different options trying to include Power BI content into applications. These options include **embedding with Power BI**, **custom visuals**, and **pushing data into Power BI**.
 
 ## Embedding
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you will have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
