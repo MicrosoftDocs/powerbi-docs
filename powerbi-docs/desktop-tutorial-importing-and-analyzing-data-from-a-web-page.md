@@ -23,32 +23,33 @@ LocalizationGroup: Learn more
 ---
 # Analyzing web page data using Power BI Desktop (tutorial)
 
-As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a web page into a report and create visualizations. In this tutorial, you learn how to use Power BI Desktop to:
+As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a web page into a report and create visualizations that show the data. In this tutorial, you learn how to use Power BI Desktop to:
 
 - Connect to a web data source and navigate across its available tables,
-- Shape and transform the data in the **Power Query Editor**,
-- Name your new query and import it into a Power BI Desktop report, and 
-- Create and edit a map and a pie chart to visualize your data.
+- Shape and transform data in the **Power Query Editor**,
+- Name a query and import it into a Power BI Desktop report, and 
+- Create and customize a map and a pie chart visualization.
 
 ## Connect to a web data source
 
 You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
-﻿﻿﻿![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+﻿﻿﻿![Wikipedia Results table](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
 To import the data:
 
-1. In the Power BI Desktop **Home** ribbon tab, select **Get Data**, and then select **Web**, or
-   1. In the Power BI Desktop **Getting Started** dialog, select **Get Data**.
-   2. In **Get Data** **All** (or **Other**) dialog box, select **Web**, and then select **Connect**. 
+1. In the Power BI Desktop **Home** ribbon tab, drop down the arrow next to **Get Data**, and then select **Web**.
    
-   ![Get Data from ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) or ![Get Data from dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web1.png)
+   ![Get Data from ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
+   
+   >[!NOTE]
+   >You can also select the **Get Data** item itself, or select **Get Data** from the Power BI **Get started** dialog, then select **Web** from the **All** or **Other** section of the **Get Data** dialog box, and then select **Connect**.
    
 2. In the **From Web** dialog box, paste the URL `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` into the **URL** text box, and then select **OK**.
    
     ![Get Data from dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
-   After connecting to the Wikipedia web page, the Power BI **Navigator** dialog box shows a list of available tables on the page. You can select any of these tables to preview its data. The **Results[edit]** table has the data you want, although it is not exactly in the shape you want. You will reshape and clean up the data before loading it into your report. 
+   After connecting to the Wikipedia web page, the Power BI **Navigator** dialog box shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results[edit]** table has the data you want, although it is not exactly in the shape you want. You will reshape and clean up the data before loading it into your report. 
    
    ![Navigator dialog box](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
    
@@ -63,7 +64,7 @@ To import the data:
    
 ## Shape data in Power Query Editor
 
-You want to make the data easier to scan by displaying only the years and winners, and rename a column. You can use the **Power Query Editor** to perform these data shaping and cleansing steps.
+You want to make the data easier to scan by displaying only the years and the countries that won. You can use the **Power Query Editor** to perform these data shaping and cleansing steps.
 
 First, remove all the columns except **Year** and **Final Winners** from the table.
 
@@ -89,24 +90,24 @@ Some **Year** cells only contain the word "Year" rather than year values. You ca
 
 1. Select the filter drop-down arrow on the **Year** column.
    
-2. In the drop-down, scroll down and clear the checkbox next to the **Year** option, and then select **OK** to remove the rows that only have "Year" in the **Year** column. 
+2. In the drop-down, scroll down and clear the checkbox next to the **Year** option, and then select **OK**, to remove the rows that only have the word "Year" in the **Year** column. 
 
    ![Filter data](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
 
-Now that you have cleaned up the data in the **Year** column, you can work on the **Final Winner** column. Since you are only looking at the final winners data, you will rename this column to **Country**.
+Now that you have cleaned up the data in the **Year** column, you can work on the **Final Winner** column. Since you are only looking at the final winners data now, you can rename this column to **Country**. To rename the column:
 
-1. Select the **Final Winner** column in the Query preview.
-   
-2. Right-click, and select **Rename** from the dropdown, or select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon. 
+1. Double-click or tap and hold in the **Final Winner** column header, or 
+- Right-click the **Final Winners** column header, and select **Rename** from the dropdown, or 
+- Select the **Final Winners** column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon. 
    
    ![Rename dropdown](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) or ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
    
-3. Type **Country** in the header and press **Enter** to rename the column.
+2. Type **Country** in the header and press **Enter** to rename the column.
 
 You also want to filter out rows like "2020" that have null values in the **Country** column. You could use the filter menu as you did with the **Year** values, or you can:
 
 1. Right-click on the **Country** cell in the **2020** row, which has the value *null*. 
-2. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that value.
+2. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
    
    ![Text filter](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
    

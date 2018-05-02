@@ -229,4 +229,3 @@ After you perform all these steps, you will have a Sales Report that combines da
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
-
