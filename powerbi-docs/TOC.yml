@@ -18,8 +18,6 @@
       items: 
       - name: "Quick Insights in Power BI"
         href: service-insights.md
-      - name: "Purchasing Power BI Pro"
-        href: service-admin-purchasing-power-bi-pro.md
       - name: "Create a dashboard from a report"
         href: service-dashboard-create.md
       - name: "Get data from files"
@@ -1157,6 +1155,13 @@
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
   - name: Quickstart
+    items:
+    - name: "Purchase Power BI Pro"
+      href: service-admin-purchasing-power-bi-pro.md
+    - name: "Assign Power BI Pro licenses - Office 365"
+      href: service-admin-assigning-power-bi-pro-licenses.md
+    - name: "Assign Power BI Pro licenses - Azure"
+      href: service-admin-assigning-power-bi-pro-licenses.md
   - name: Tutorials
   - name: Concepts
     items: 
