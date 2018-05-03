@@ -10,8 +10,8 @@
       href: service-self-service-signup-for-power-bi.md
   - name: Tutorials
     items: 
-    - name: "Connect to a service"
-      href: service-connect-to-services.md
+    - name: "Connect to the online service GitHub"
+      href: service-tutorial-connect-to-github.md
   - name: Concepts
     items: 
     - name: Working in Power BI
