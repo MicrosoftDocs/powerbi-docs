@@ -1,11 +1,11 @@
-### YamlMime:Tutorial
+.y### YamlMime:Tutorial
 title: Exploring data
 metadata:
   title: Exploring data | Microsoft Power BI
   description: Learn how to find, connect to, and interact with data in Power BI.
   audience: Business User
   level: Beginner
-  nextTutorialHref: powerbiandexcel
+  nextTutorialHref: powerbiandexcel.yml
   nextTutorialTitle: Power BI and Excel
   displayType: one-column
   author: davidiseminger
