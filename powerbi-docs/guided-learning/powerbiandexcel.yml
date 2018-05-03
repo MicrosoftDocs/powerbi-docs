@@ -5,7 +5,7 @@ metadata:
   description: Use Excel and Power BI together and create powerful, connected reports and visuals.
   audience: Business User
   level: Beginner
-  nextTutorialHref: publishingandsharing
+  nextTutorialHref: publishingandsharing.yml
   nextTutorialTitle: Publishing and sharing
   displayType: one-column
   author: davidiseminger
