@@ -2,8 +2,8 @@
   items:
   - name: Overview
     items: 
-      - name: "What is Power BI?"
-        href: service-get-started.md
+    - name: "What is Power BI?"
+      href: service-get-started.md
   - name: Quickstart
     items: 
     - name: "Sign up and sign in"
@@ -14,6 +14,46 @@
       href: service-tutorial-connect-to-github.md
   - name: Concepts
     items: 
+    - name: "What's new in the Power BI service"
+      href: service-whats-new.md
+    - name: Power BI basics
+      items: 
+      - name: "Power BI - basic concepts"
+        href: service-basic-concepts.md
+      - name: "Getting around in Power BI - navigation experience"
+        href: service-the-new-power-bi-experience.md
+      - name: "Searching and sorting content"
+        href: service-navigation-search-filter-sort.md
+      - name: "Related content"
+        href: service-related-content.md
+      - name: "Recent content"
+        href: service-recent.md
+      - name: "Opt-in for Power BI preview features"
+        href: service-preview-features.md
+      - name: "Dashboards in Power BI"
+        href: service-dashboards.md
+      - name: "Q&A in Power BI"
+        href: power-bi-q-and-a.md
+      - name: "Reports in Power BI"
+        href: service-reports.md
+      - name: "Introduction to Cortana for Power BI"
+        href: service-cortana-intro.md	
+      - name: "Dashboard tiles in Power BI"
+        href: service-dashboard-tiles.md
+      - name: "Shared with me"
+        href: service-shared-with-me.md
+      - name: "Data refresh in Power BI"
+        href: refresh-data.md
+      - name: "Frequently asked questions"
+        href: service-frequently-asked-questions.md
+      - name: "Power BI for US Government"
+        href: service-govus-overview.md
+      - name: "Power BI Free vs Pro"
+        href: service-free-vs-pro.md
+      - name: "10 tips for getting help"
+        href: service-tips-for-finding-help.md
+      - name: "About filters and highlighting in Power BI reports"
+        href: power-bi-reports-filters-and-highlighting.md
     - name: Working in Power BI
       items: 
       - name: "Quick Insights in Power BI"
@@ -30,82 +70,34 @@
         href: sample-datasets.md
       - name: "Visualizations in Power BI"
         href: power-bi-report-visualizations.md
-    - name: "Power BI - basic concepts"
-      href: service-basic-concepts.md
-    - name: "Getting around in Power BI - navigation experience"
-      href: service-the-new-power-bi-experience.md
-    - name: "Searching and sorting content"
-      href: service-navigation-search-filter-sort.md
-    - name: "Related content"
-      href: service-related-content.md
-    - name: "Opt-in for Power BI preview features"
-      href: service-preview-features.md
-    - name: "Dashboards in Power BI"
-      href: service-dashboards.md
-    - name: "Q&A in Power BI"
-      href: power-bi-q-and-a.md
-    - name: "Reports in Power BI"
-      href: service-reports.md
-    - name: "Install and use apps, with dashboards and reports"
-      href: service-install-use-apps.md
-    - name: "Display a dashboard tile in Focus mode"
-      href: service-focus-mode.md
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md	
-    - name: "Frequently asked questions"
-      href: service-frequently-asked-questions.md
-    - name: "What's new in the Power BI service"
-      href: service-whats-new.md
-    - name: "Power BI for US Government"
-      href: service-govus-overview.md
-    - name: "Power BI Free vs Pro"
-      href: service-free-vs-pro.md
-    - name: "10 tips for getting help"
-      href: service-tips-for-finding-help.md
-    - name: "About filters and highlighting in Power BI reports"
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: "Data sources for Power BI"
-      href: service-get-data.md
-    - name: "Extended Pro Trial activation"
-      href: service-extended-pro-trial.md
-    - name: "Microsoft Flow and Power BI"
-      href: service-flow-integration.md
-    - name: "FAQ for Power BI for Germany Cloud customers"
-      href: service-govde-faq.md
-    - name: "Power BI get started with third-party apps"
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: "Types of Quick Insights supported by Power BI"
-      href: service-insight-types.md
-    - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
-      href: service-aggregates.md
-    - name: "Page display settings in a Power BI report"
-      href: power-bi-report-display-settings.md
+      - name: "Data sources for Power BI"
+        href: service-get-data.md
+      - name: "Extended Pro Trial activation"
+        href: service-extended-pro-trial.md
+      - name: "Microsoft Flow and Power BI"
+        href: service-flow-integration.md
+      - name: "FAQ for Power BI for Germany Cloud customers"
+        href: service-govde-faq.md
+      - name: "Power BI get started with third-party apps"
+        href: service-power-bi-get-started-third-party-apps.md
+      - name: "Types of Quick Insights supported by Power BI"
+        href: service-insight-types.md        
+      - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
+        href: service-aggregates.md
+      - name: "Page display settings in a Power BI report"
+        href: power-bi-report-display-settings.md
   - name: How to
     items: 
-    - name: Power BI basics
-      items: 
-      - name: "Dashboard tiles in Power BI"
-        href: service-dashboard-tiles.md
-      - name: "Shared with me"
-        href: service-shared-with-me.md
-      - name: "Data refresh in Power BI"
-        href: refresh-data.md
-      - name: "Share dashboards and reports"
-        href: service-share-dashboards.md
-      - name: "Get started with Power BI Q&A"
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: "Tutorial: Interact with ArcGIS maps in Power BI"
-        href: power-bi-visualizations-arcgis.md
     - name: Power BI basics
       items: 
       - name: Common tasks
         items: 
         - name: "Favorite dashboards, reports, and apps in Power BI"
           href: service-dashboard-favorite.md
+        - name: "Display a dashboard tile in Focus mode"
+          href: service-focus-mode.md
         - name: "Print a dashboard, print a dashboard tile, print a report page"
           href: service-print.md
-        - name: "Recent content"
-          href: service-recent.md
         - name: "Subscribe to a report or dashboard"
           href: service-report-subscribe.md
         - name: "Rename content within Power BI"
@@ -120,20 +112,18 @@
           href: service-set-data-alerts.md
         - name: "Tips and tricks for asking questions with Q&A in Power BI"
           href: service-q-and-a-tips.md
+        - name: "Install and use apps, with dashboards and reports"
+          href: service-install-use-apps.md
         - name: "Find and connect to an organizational content pack"
           href: service-organizational-content-pack-find-and-open.md
+        - name: "Share dashboards and reports"
+          href: service-share-dashboards.md
+        - name: "Get started with Power BI Q&A"
+          href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Connect to services
         items: 
-        - name: "Adobe Analytics"
-          href: service-connect-to-adobe-analytics.md
-        - name: "Azure Audit Logs"
-          href: service-connect-to-azure-audit-logs.md
-        - name: "Google Analytics"
-          href: service-connect-to-google-analytics.md
-        - name: "Marketo"
-          href: service-connect-to-marketo.md
-        - name: "Salesforce"
-          href: service-connect-to-salesforce.md
+        - name: "Connect to the services you use"
+          href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
         - name: "Alpine Metrics Sales Predictions"
@@ -144,6 +134,8 @@
           href: service-connect-to-application-insights.md
         - name: "AT Internet Bridge"
           href: service-connect-to-at-internet.md
+        - name: "Azure Audit Logs"
+          href: service-connect-to-azure-audit-logs.md
         - name: "Azure Mobile Engagement"
           href: service-connect-to-azure-mobile.md
         - name: "Microsoft Azure Consumption Insights"
@@ -162,6 +154,8 @@
           href: service-connect-to-connect-to.md
         - name: "GitHub"
           href: service-connect-to-github.md
+        - name: "Google Analytics"
+          href: service-connect-to-google-analytics.md
         - name: "Insightly"
           href: service-connect-to-insightly.md
         - name: "IntelliBoard"
@@ -172,6 +166,8 @@
           href: service-connect-to-mailchimp.md
         - name: "Mandrill"
           href: service-connect-to-mandrill.md
+        - name: "Marketo"
+          href: service-connect-to-marketo.md
         - name: "Microsoft Azure Enterprise"
           href: service-connect-to-azure-enterprise.md
         - name: "Microsoft Dynamics AX"
@@ -196,6 +192,8 @@
           href: service-connect-to-projectplace.md
         - name: "QuickBooks Online"
           href: service-connect-to-quickbooks-online.md
+        - name: "Salesforce"
+          href: service-connect-to-salesforce.md
         - name: "SendGrid"
           href: service-connect-to-sendgrid.md
         - name: "ServiceNow Incidents"
@@ -380,6 +378,8 @@
           href: service-url-filters.md
         - name: "Best practices for building fast and reliable reports in Power BI"
           href: power-bi-reports-performance.md  
+        - name: "Tutorial: Interact with ArcGIS maps in Power BI"
+          href: power-bi-visualizations-arcgis.md
       - name: Data from files
         items: 
         - name: "Get data from Power BI Desktop files"
@@ -876,7 +876,7 @@
     items: 
     - name: "Supported languages in the Power BI mobile apps"
       href: mobile-apps-supported-languages.md
-- name: Power BI developer
+- name: Power BI for developers
   items:
   - name: Overview
     items: 
@@ -993,10 +993,14 @@
       href: report-server/get-started.md
   - name: Quickstart
     items: 
-    - name: "Create a Power BI report for a report server"
-      href: report-server/quickstart-create-powerbi-report.md
+    - name: "Explore Power BI Report Server in a VM"
+      href: report-server/quickstart-explore-report-server-web-portal.md
   - name: Tutorials
     items: 
+    - name: Report server basics
+      items: 
+      - name: "Create a Power BI report for a report server"
+        href: report-server/quickstart-create-powerbi-report.md
     - name: Admins
       items: 
       - name: "Install a report server"
@@ -1009,8 +1013,6 @@
     items: 
     - name: "What's new"
       href: report-server/whats-new.md
-    - name: "Release notes"
-      href: report-server/release-notes.md
     - name: "Change log"
       href: report-server/changelog.md
     - name: "Support timeline"
@@ -1021,78 +1023,78 @@
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
-  - name: User handbook
+    - name: Report server basics
+      items: 
+      - name: "Report server basics"
+        href: report-server/user-handbook-overview.md
+      - name: "Advanced Power BI reports"
+        href: https://go.microsoft.com/fwlink/?linkid=848708
+      - name: "Power BI report scheduled refresh"
+        href: report-server/scheduled-refresh.md
+      - name: "Advanced paginated reports"
+        href: https://go.microsoft.com/fwlink/?linkid=848709
+      - name: "Power BI report (.pbix) data sources"
+        href: report-server/data-sources.md
+      - name: "Paginated report (.rdl) data sources"
+        href: report-server/connect-data-sources.md
+      - name: "Subscriptions"
+        href: https://go.microsoft.com/fwlink/?linkid=851310
+      - name: "Using the mobile app"
+        href: https://go.microsoft.com/fwlink/?linkid=848711
+      - name: "Troubleshoot scheduled refresh"
+        href: report-server/scheduled-refresh-troubleshoot.md
+    - name: Report server for admins
+      items: 
+      - name: "Report server for admins"
+        href: report-server/admin-handbook-overview.md
+    - name: Report server for developers
+      items: 
+      - name: "Report server for developers"
+        href: report-server/developer-handbook-overview.md
+      - name: "Report Viewer control"
+        href: https://go.microsoft.com/fwlink/?linkid=848724
+      - name: "Develop extensions"
+        href: https://go.microsoft.com/fwlink/?linkid=848723
+      - name: "Quickstart: Embed reports"
+        href: report-server/quickstart-embed.md
+  - name: How to
     items: 
-    - name: "Overview"
-      href: report-server/user-handbook-overview.md
-    - name: "Navigating content"
-      href: report-server/getting-around.md
-    - name: "Quickstart: Power BI reports"
-      href: report-server/quickstart-create-powerbi-report.md
-    - name: "Quickstart: Paginated reports"
-      href: report-server/quickstart-create-paginated-report.md
-    - name: "Advanced Power BI reports"
-      href: https://go.microsoft.com/fwlink/?linkid=848708
-    - name: "Power BI report scheduled refresh"
-      href: report-server/scheduled-refresh.md
-    - name: "Advanced paginated reports"
-      href: https://go.microsoft.com/fwlink/?linkid=848709
-    - name: "Working with KPIs"
-      href: https://go.microsoft.com/fwlink/?linkid=849021
-    - name: "Power BI report (.pbix) data sources"
-      href: report-server/data-sources.md
-    - name: "Paginated report (.rdl) data sources"
-      href: report-server/connect-data-sources.md
-    - name: "Access shared datasets as OData feeds "
-      href: report-server/access-dataset-odata.md
-    - name: "Configure scheduled refresh"
-      href: report-server/configure-scheduled-refresh.md
-    - name: "Add comments to a report"
-      href: report-server/add-comments.md
-    - name: "Subscriptions"
-      href: https://go.microsoft.com/fwlink/?linkid=851310
-    - name: "Using the mobile app"
-      href: https://go.microsoft.com/fwlink/?linkid=848711
-    - name: "Quickstart: Embed reports"
-      href: report-server/quickstart-embed.md
-    - name: "Troubleshoot scheduled refresh"
-      href: report-server/scheduled-refresh-troubleshoot.md
-  - name: Administrator handbook
-    items: 
-    - name: "Overview"
-      href: report-server/admin-handbook-overview.md
-    - name: "Hardware and software requirements"
-      href: report-server/system-requirements.md
-    - name: "Find your product key"
-      href: report-server/find-product-key.md
-    - name: "Quickstart: Install"
-      href: report-server/quickstart-install-report-server.md
-    - name: "Install a report server"
-      href: report-server/install-report-server.md
-    - name: "Install Power BI Desktop"
-      href: report-server/install-powerbi-desktop.md
-    - name: "Upgrade a report server"
-      href: report-server/upgrade.md
-    - name: "Migrate a report server"
-      href: report-server/migrate-report-server.md
-    - name: "Browser support"
-      href: report-server/browser-support.md
-    - name: "Configure Kerberos to use Power BI reports"
-      href: report-server/configure-kerberos-powerbi-reports.md
-    - name: "Capacity planning whitepaper"
-      href: report-server/capacity-planning.md
-    - name: "Host Excel workbooks"
-      href: report-server/excel-oos.md
-  - name: Developer handbook
-    items: 
-    - name: "Overview"
-      href: report-server/developer-handbook-overview.md
-    - name: "Report Viewer control"
-      href: https://go.microsoft.com/fwlink/?linkid=848724
-    - name: "Develop extensions"
-      href: https://go.microsoft.com/fwlink/?linkid=848723
-    - name: "Quickstart: Embed reports"
-      href: report-server/quickstart-embed.md
+    - name: Report server basics
+      items: 
+      - name: "Manage content in the report server"
+        href: report-server/getting-around.md
+      - name: "Create a paginated report for a report server"
+        href: report-server/quickstart-create-paginated-report.md
+      - name: "Advanced Power BI reports"
+        href: https://go.microsoft.com/fwlink/?linkid=848708
+      - name: "Advanced paginated reports"
+        href: https://go.microsoft.com/fwlink/?linkid=848709
+      - name: "Work with KPIs"
+        href: https://go.microsoft.com/fwlink/?linkid=849021
+      - name: "Access shared datasets as OData feeds "
+        href: report-server/access-dataset-odata.md
+      - name: "Configure scheduled refresh"
+        href: report-server/configure-scheduled-refresh.md
+      - name: "Add comments to a report"
+        href: report-server/add-comments.md
+    - name: Report server for admins
+      items: 
+      - name: "Find your product key"
+        href: report-server/find-product-key.md
+      - name: "Quickstart: Install"
+        href: report-server/quickstart-install-report-server.md
+      - name: "Install a report server"
+        href: report-server/install-report-server.md
+      - name: "Install Power BI Desktop"
+        href: report-server/install-powerbi-desktop.md
+      - name: "Upgrade a report server"
+        href: report-server/upgrade.md
+      - name: "Migrate a report server"
+        href: report-server/migrate-report-server.md
+      - name: "Configure Kerberos to use Power BI reports"
+        href: report-server/configure-kerberos-powerbi-reports.md
+      - name: "Host Excel workbooks"
+        href: report-server/excel-oos.md
   - name: Reference
     items: 
     - name: "REST API"
