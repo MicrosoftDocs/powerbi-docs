@@ -1,6 +1,6 @@
 ---
 title: 'Quickstart: Explore Power BI Report Server in a VM'
-description: Create a VM with Power BI Report Server already installed, and explore the web portal.
+description: Create a virtual machine with Power BI Report Server already installed, and explore the web portal.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -22,54 +22,88 @@ ms.author: maggies
 ---
 
 # Quickstart: Explore the Power BI Report Server web portal in a VM
-In this quickstart, you create a virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
+In this quickstart, you create an Azure virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
 
 ![Report Server web portal](media/quickstart-explore-report-server-web-portal/report-server-web-portal.png)
-
-You can view the web portal in any modern browser. In the web portal, reports and KPIs are organized in folders, and you can mark them as favorites. You can also store Excel workbooks there. From the web portal, you can launch the tools you need to create reports:
-
-* **Power BI reports** created with Power BI Desktop: View them in the web portal and the Power BI mobile apps.
-* **Paginated reports** created in Report Builder: Modern-looking, fixed-layout documents optimized for printing.
-* **KPIs** created right in the web portal.
-
-In the web portal you can browse the report server folders or search for specific reports. You can view a report, its general properties and past copies of the report that are captured in report history. Depending on your permissions, you might also be able to subscribe to reports for delivery to your e-mail inbox or a shared folder on the file system.
 
 For this quickstart, you need an Azure subscription. If you don’t have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Create a Power BI Report Server VM
 
-Luckily, The Power BI team has create a VM that comes with Power BI Report Server already installed.
+Luckily, the Power BI team has created a VM that comes with Power BI Report Server already installed.
 
 1. In the Azure Marketplace, open [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+
 2. Select **Get it now**.
-3. If you agree to the provider's terms of use and privacy policy, select **Continue**.
+3. To agree to the provider's terms of use and privacy policy, select **Continue**.
 
     ![Create Power BI Report Server VM](media/quickstart-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
 
-4. **Step 1 Basics**, **VM Name**, call it **reportservervm**.
+4. **Step 1 Basics**, for **VM Name**, call it **reportservervm**.
+
 5. Create a user name and password.
+
 6. For **Resource group**, keep **Create new**, and call it **reportserverresourcegroup**.
+
 7. Keep the other defaults > **OK**.
 
     ![Name the VM and resource group](media/quickstart-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
 8. **Step 2 Settings**, keep the defaults > **OK**.
+
 9. **Step 3 Summary** > **OK**.
+
 10. **Step 4**, review the Terms of user and privacy policy > **Create**.
 
-    **Submitting deployment for Power BI Report Server** takes a several minutes.
+    The **Submitting deployment for Power BI Report Server** process takes a several minutes.
 
 ## Start your virtual machine
 
 1. In the Azure left navigation pane, select **Virtual machines**. 
+
 2. In the **Filter by name** box, type "report". 
-3. Select the name **REPORTSERVERVM**.
+
+3. Select the VM named **REPORTSERVERVM**.
+
+    ![View the virtual machine](media/quickstart-explore-report-server-web-portal/power-bi-report-server-view-virtual-machine.png)
 
 4. Under REPORTSERVERVM Virtual machine, select **Connect**.
 
     ![Connect to the virtual machine](media/quickstart-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-   
+5. In the Remote Desktop Connection dialog box, select **Connect**.
+
+6. Enter the name and password you created for the VM > **OK**.
+
+7. The next dialog box says the identity of the remote computer cannot be identified. Select **Yes**.
+
+   Voila -- your new VM opens.
+
+## Power BI Report Server on the VM
+
+![Power BI Report Server virtual machine starts](media/quickstart-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+
+|Number  |What it is  |
+|---------|---------|
+|![Number 1](media/quickstart-explore-report-server-web-portal/number-1.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
+|![Number 2](media/quickstart-explore-report-server-web-portal/number-2.png) | Sample Power BI (.PBIX) reports  |
+|![Number 3](media/quickstart-explore-report-server-web-portal/number-3.png) | Links to Power BI Report Server documentation   |
+|![Number 4](media/quickstart-explore-report-server-web-portal/number-4.png) | Starts Power BI Desktop optimized for Power BI Report Server (March 2018)  |
+|![Number 5](media/quickstart-explore-report-server-web-portal/number-5.png) | Opens Power BI Report Server web portal in the browser   |
+
+Double-click the **Report Server Web Portal** icon. The browser opens http://localhost/reports/browse.  
+
+![Power BI Report Server web portal](media/quickstart-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
+
+|Number  |What it is  |
+|---------|---------|
+|![Number 1](media/quickstart-explore-report-server-web-portal/number-1.png) | KPIs created in the web portal |
+|![Number 2](media/quickstart-explore-report-server-web-portal/number-2.png) |  Power BI (.PBIX) reports  |
+|![Number 3](media/quickstart-explore-report-server-web-portal/number-3.png) | Mobile reports created in SQL Server Mobile Report Publisher  |
+|![Number 4](media/quickstart-explore-report-server-web-portal/number-4.png) |  Paginated reports created in Report Builder or SQL Server Data Tools  |
+|![Number 5](media/quickstart-explore-report-server-web-portal/number-5.png) | Excel workbooks   | 
+|![Number 6](media/quickstart-explore-report-server-web-portal/number-6.png) | Data sources for paginated reports | 
+
 
 ## Tag your favorite reports and KPIs
 You can tag the reports and KPIs that you want to be favorites. They're easier to find because they're all gathered in a single Favorites folder, both in the web portal and in the Power BI mobile apps. 
