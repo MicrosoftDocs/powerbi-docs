@@ -5,7 +5,7 @@ metadata:
   description: Visualizations bring your data to life, and reveal insights that only compelling and amazing visual representations can. This section shows you how.
   audience: Business User
   level: Beginner
-  nextTutorialHref: exploringdata
+  nextTutorialHref: exploringdata.yml
   nextTutorialTitle: Exploring data
   displayType: one-column
   author: davidiseminger
