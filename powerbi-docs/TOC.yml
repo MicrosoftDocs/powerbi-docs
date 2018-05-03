@@ -466,8 +466,8 @@
       href: desktop-what-is-desktop.md
   - name: Quickstart
     items: 
-    - name: "Install and run Power BI Desktop"
-      href: desktop-get-the-desktop.md
+    - name: "Connect to data"
+      href: desktop-quickstart-connect-to-data.md
   - name: Tutorials
     items: 
     - name: "Connect to multiple data sources in Power BI Desktop"
@@ -506,6 +506,8 @@
       href: desktop-data-source-prerequisites.md
   - name: How to
     items: 
+    - name: "Get Power BI Desktop"
+      href: desktop-get-the-desktop.md
     - name: "Getting started guide for Power BI Desktop"
       href: desktop-getting-started.md
     - name: "Common query tasks in Power BI Desktop"
