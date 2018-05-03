@@ -5,7 +5,7 @@ metadata:
   description: Explore and learn the many ways you can get and work with data in Power BI.
   audience: Business User
   level: Beginner
-  nextTutorialHref: modeling
+  nextTutorialHref: modeling.yml
   nextTutorialTitle: Modeling
   displayType: one-column
   author: davidiseminger
