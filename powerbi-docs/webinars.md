@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/26/2018
+ms.date: 05/03/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -27,17 +27,13 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
-**[Power BI adoption framework webinar series](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
-<br>by Manu Kanwarpal and Paul Henwood
-<br>*March, April and May 2018 9:00AM PST, 12:00PM EST*
+**Beyond the Spreadsheet**
+<br>by Gohul Shanmugalingam
+<br>*May 9th 2018 10:00AM PST, 1:00PM EST*
 
-Plan an effective rollout of Power BI for your organization and explore the nuances of effective software as a service (SaaS) management. This is a five-part series that unlocks the potential of Power BI for your organization.
+Calling all Excel users and Analysts: work smarter, deliver more value, and focus on what matters. Learn how to make beautiful reports people want to use, share data visually in a way that colleagues can understand without an explanation, and make insights accessible to everyone that needs to make sense of information - wherever they are.
 
-[Register to watch on May 1st - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
-<br>[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+[Register to watch on May 9th](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
 **Learn about Power BI Embedded in 20 minutes**
 <br>by Megan Asarrane and Colin Murphy
@@ -135,6 +131,14 @@ Watch recorded sessions at any time
 <br>by Nagasaikiran Kambhampati and Miguel Martinez
 <br>[Register to watch](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Download the Advanced Analytics Starter Kit to follow along](https://aka.ms/pbiaawebinar)
+
+**[Power BI adoption framework webinar series](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+<br>by Manu Kanwarpal and Paul Henwood
+<br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Register and watch now - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Office 365 Finance Pros Webinar Series**
 <br>by Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky and Miguel Martinez
