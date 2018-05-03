@@ -5,7 +5,7 @@ metadata:
   description: Connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
   audience: Business User
   level: Beginner
-  nextTutorialHref: visualizations
+  nextTutorialHref: visualizations.yml
   nextTutorialTitle: Visualizations
   displayType: one-column
   author: davidiseminger
