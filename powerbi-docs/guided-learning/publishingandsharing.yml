@@ -5,7 +5,7 @@ metadata:
   description: Data is most powerful when shared with others - learn how to publish, export, share, and distribute your Power BI data insights.
   audience: Business User
   level: Beginner
-  nextTutorialHref: introductiontodax
+  nextTutorialHref: introductiontodax.yml
   nextTutorialTitle: Introduction to DAX
   displayType: one-column
   author: davidiseminger
