@@ -30,7 +30,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
     ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed_02.png)
 
-3. Save the report to the **Power BI Report Server**.
+3. Save the report to the **Power BI Report Server**. 
 
     ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
