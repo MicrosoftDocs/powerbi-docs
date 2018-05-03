@@ -24,7 +24,7 @@ LocalizationGroup: Gateways
 
 # Tutorial: Connect to on-premises data in SQL Server
 
-Power BI .
+An on-premises data gateway is software that you install within an on-premises network; it facilitates access to data in that network. In this tutorial you build a report in Power BI Desktop based on sample data in SQL Server. You then publish the report to the Power BI service, and configure a gateway so the the service can access the on-premises data. This access means the service can refresh the data to keep the report up to date.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
@@ -38,8 +38,8 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* SQL Server installed on a local 
-* An on-premises data gateway
+* [Install SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) on a local computer 
+* [Install an on-premises data gateway](service-gateway-install.md) on the same local computer (in production, it would typically be a different computer)
 
 
 ## Set up sample data
@@ -110,7 +110,7 @@ Update the data / refresh (does on-demand refresh work with gateways?)
 
 
 ## Clean up resources
-If you don't want to use the sample data anymore, use `DROP DATABASE` in SSMS. If you don't want to use the SQL Server data source, [remove the data source](release-power-bi-mvc.md#remove-a-data-source). 
+If you don't want to use the sample data anymore, use `DROP DATABASE TestGatewayDocs` in SSMS. If you don't want to use the SQL Server data source, [remove the data source](service-gateway-manage.md#remove-a-data-source). 
 
 
 ## Next steps
