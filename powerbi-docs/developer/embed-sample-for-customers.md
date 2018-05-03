@@ -2,26 +2,16 @@
 title: Embed Power BI content into an application for your customers
 description: Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers.
 services: powerbi
-documentationcenter: ''
 author: markingmyname
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.date: 05/03/2018
+ms.topic: tutorial
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/11/2018
-ms.author: maghan
-
+ms.custom: mvc
+manager: kfile
+#Customer intent: As an ISV developer, I want to embed my dashboard, report, or tile into an application so that I can share with customers.
 ---
-# Embed a Power BI dashboard, tile, or report into your application
-Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
+# Tutorial: Embed a Power BI dashboard, report, or tile into your application using app owns data
+Learn how to integrate or embed a dashboard, report, or tile into an application when embedding for your customers. This is typically a ISV scenario.
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
