@@ -3,7 +3,7 @@ title: Embed a report using an iFrame
 description: Embedding Power BI Report Server report in an iFrame in SharePoint Server
 services: powerbi
 author: markingmyname
-ms.date: 05/03/2018
+ms.date: 05/04/2018
 ms.topic: quickstart
 ms.service: powerbi
 ms.custom: mvc
@@ -17,7 +17,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
 ## Prerequisites
 * You will need to have [Power BI Report Server](https://powerbi.microsoft.com/en-us/report-server/) installed and configured.
-* You will need to have [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)installed.
+* You will need to have [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
 * You will need to have a [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install) environment installed and configured.
 
 ## Creating the Power BI Report Server report URL
@@ -26,7 +26,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
     ![download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Open the sample PBIX file from GitHub in Power BI Desktop optimized for Power BI Report Server.
+2. Open the sample PBIX file from GitHub in **Power BI Desktop optimized for Power BI Report Server**.
 
     ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -34,7 +34,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
     ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
-4. View report in the Web Portal.
+4. View report in the **Web Portal**.
 
     ![Web Portal](media/quickstart-embed/quickstart_embed_04.png)
 
@@ -52,7 +52,7 @@ Once you have your URL, you can create an iFrame within a SharePoint page, to ho
 
     ![Site Content Page](media/quickstart-embed/quickstart_embed_05.png)
 
-2. Choose the page where you want to add your PBI RS report.
+2. Choose the page where you want to add your report.
 
     ![Site Content Page App](media/quickstart-embed/quickstart_embed_06.png)
 
