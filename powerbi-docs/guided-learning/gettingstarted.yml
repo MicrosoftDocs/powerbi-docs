@@ -5,7 +5,7 @@ metadata:
   description: Learn what Power BI is, how its building blocks work together, and how you can use them to gain insights to your data.
   audience: Business User
   level: Beginner
-  nextTutorialHref: gettingdata
+  nextTutorialHref: gettingdata.yml
   nextTutorialTitle: Getting data
   displayType: one-column
   author: davidiseminger
