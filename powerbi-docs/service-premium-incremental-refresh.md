@@ -67,7 +67,7 @@ Ensure rows are filtered where the column value *is after or equal to* **RangeSt
 Select **Close and Apply** from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
 
 > [!NOTE]
-> The parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings.
+> Once published, the parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings.
 
 ### Define the refresh policy
 
@@ -88,7 +88,7 @@ The header text explains the following:
 
 -   Incremental refresh is supported only for workspaces on Premium capacity. Refresh policies are defined in Power BI Desktop; they are applied by refresh operations in the service.
 
--   It is not possible to download the PBIX file containing an incremental-refresh policy from the Power BI service. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
+-   If you are able to download the PBIX file containing an incremental-refresh policy from the Power BI service, it will not open in Power BI Desktop. You will soon be unable to download it at all. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
 
 #### Refresh ranges
 
