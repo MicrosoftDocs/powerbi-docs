@@ -57,7 +57,19 @@ Luckily, The Power BI team has create a VM that comes with Power BI Report Serve
 9. **Step 3 Summary** > **OK**.
 10. **Step 4**, review the Terms of user and privacy policy > **Create**.
 
-**Submitting deployment for Power BI Report Server** takes a several minutes.
+    **Submitting deployment for Power BI Report Server** takes a several minutes.
+
+## Start your virtual machine
+
+1. In the Azure left navigation pane, select **Virtual machines**. 
+2. In the **Filter by name** box, type "report". 
+3. Select the name **REPORTSERVERVM**.
+
+4. Under REPORTSERVERVM Virtual machine, select **Connect**.
+
+    ![Connect to the virtual machine](media/quickstart-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
+
+   
 
 ## Tag your favorite reports and KPIs
 You can tag the reports and KPIs that you want to be favorites. They're easier to find because they're all gathered in a single Favorites folder, both in the web portal and in the Power BI mobile apps. 
