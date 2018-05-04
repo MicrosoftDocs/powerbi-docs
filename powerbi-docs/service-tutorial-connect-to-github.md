@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Connect to the online service GitHub with Power BI'
-description: In this tutorial you connect to the online service GitHub in the Power BI service
+title: 'Tutorial: Connect to the GitHub app with Power BI'
+description: In this tutorial you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports.
 author: maggiesMSFT
 manager: kfile
 backup: SarinaJoan
@@ -16,16 +16,18 @@ ms.devlang: NA
 ms.topic: tutorial
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/04/2018
+ms.date: 05/05/2018
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
 LocalizationGroup: Connect to services
 ---
-# Tutorial: Connect to the online service GitHub with Power BI
-In this tutorial, you connect to real data in the GitHub service. You'll connect to the Power BI content public repository (also known as a *repo*) and see information: How many people contribute to the Power BI public content? Who contributes the most? Which day of the week has the most contributions? And answers to other questions. In the tutorial, you create a Power BI app with a dashboard and report that automatically show the data in an visual form.
+# Tutorial: Connect to the GitHub app with Power BI
+In this tutorial, you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports. You connect to the Power BI content public repository (also known as a *repo*) and see information: How many people contribute to the Power BI public content? Who contributes the most? Which day of the week has the most contributions? And answers to other questions. 
 
-In this tutorial, you'll complete the following steps:
+![The GitHub report in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
+
+In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
 > * Sign up for a GitHub account, if you don't have one yet 
@@ -42,7 +44,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 To complete this tutorial, you need a GitHub account, if you don't already have one. 
 
-- Sign up for a [GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/)
+- Sign up for a [GitHub account](https://docs.microsoft.com/contribute/get-started-setup-github)
 
 
 ## How to connect
