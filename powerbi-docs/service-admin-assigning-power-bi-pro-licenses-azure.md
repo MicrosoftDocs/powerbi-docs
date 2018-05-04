@@ -24,7 +24,7 @@ LocalizationGroup: Administration
 
 # Quickstart: Assign Power BI Pro licenses in Azure
 
-Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. This article explains how to assign Power BI Pro licenses in Azure. You can also [assign licenses in Office 365](service-admin-assigning-power-bi-pro-licenses.md.)
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. This article explains how to assign Power BI Pro licenses in Azure. You can also [assign licenses in Office 365](service-admin-assigning-power-bi-pro-licenses.md).
 
 
 ## Prerequisites
