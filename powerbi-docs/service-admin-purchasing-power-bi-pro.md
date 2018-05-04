@@ -36,7 +36,7 @@ You must be a member of the [**Global administrator** or **Billing administrator
 
 Follow these steps to purchase Power BI Pro licenses:
 
-1. Navigate to the [Office 365 admin center](https://portal.office.com/adminportal/home#/homepage).
+1. Open the [Office 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
 2. On the left navigation pane, select **Billing** > **Subscriptions**.
 

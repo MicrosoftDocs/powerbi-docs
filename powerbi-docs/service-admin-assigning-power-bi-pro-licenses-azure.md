@@ -1,5 +1,5 @@
 ---
-title: "Quickstart: Assign Power BI Pro licenses in Office 365"
+title: "Quickstart: Assign Power BI Pro licenses in Azure"
 description: Learn how to assign Power BI Pro licenses so that your users can access all content and capabilities in the Power BI service.
 services: powerbi
 documentationcenter: ''
@@ -22,17 +22,16 @@ ms.author: mblythe
 LocalizationGroup: Administration
 ---
 
-# Quickstart: Assign Power BI Pro licenses in Office 365
+# Quickstart: Assign Power BI Pro licenses in Azure
 
-Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. This article explains how to assign Power BI Pro licenses in Office 365.
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. This article explains how to assign Power BI Pro licenses in Azure.
 
 
 ## Prerequisites
 
-You must be a member of the [**Global administrator** or **User account administrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) role in Office 365.
+You must be an owner of the Azure subscription that Power BI uses for Active Directory lookups.
 
 You must [purchase at least one license](service-admin-purchasing-power-bi-pro.md) before you start.
-
 
 
 ## Assign licenses to individual user accounts
@@ -58,7 +57,6 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
     ![Verify license status](media/service-assigning-power-bi-pro-licenses/service-assigning-power-bi-pro-licenses-08.png)
 
 
-
 ## Next steps
 
 Now that you've assigned licenses, learn more about Power BI Pro.
@@ -67,6 +65,6 @@ Now that you've assigned licenses, learn more about Power BI Pro.
 
 [Find Power BI users that have signed in](service-admin-access-usage.md)
 
-[Assign licenses to users in Azure](service-admin-assigning-power-bi-pro-licenses-azure.md)
+[Assign licenses to users in Office 365](service-admin-assigning-power-bi-pro-licenses.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
