@@ -51,7 +51,7 @@ First, import the product data from the Excel Products.xlsx workbook into Power 
    
 A preview of the table opens in the **Power Query Editor**, where you can apply transformations to clean up the data. 
    
-![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/t_excelodata_3.png)
+![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
 >[!NOTE]
 >You can also open the **Power Query Editor** by selecting **Edit Queries** > **Edit Queries** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in **Report View**, and selecting **Edit Query**.
@@ -65,7 +65,7 @@ Your combined report will only use the **ProductID**, **ProductName**, **Quantit
 2. Right-click any of the selected headers and select **Remove Other Columns** from the dropdown, to remove all except the selected columns from the table. 
    You can also select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab. 
    
-   ![Remove other columns](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/anlayzingsalesdata_removeothercolumns.png)
+   ![Remove other columns](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
 
 ## Import the order data from an OData feed
 
@@ -81,7 +81,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
    
 3. In the **Navigator** pane, select the **Orders** table, and then select **OK** to load the data into **Power Query Editor**.
    
-   ![Navigator pane for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
+   ![Navigator pane for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
    
    >[!NOTE]
    >In **Navigator**, you can select a table name, without selecting the checkbox, to see a preview.
@@ -168,7 +168,7 @@ When you are satisfied with your transformed data, select **Close & Apply** > **
 
 Once the data is loaded, the queries appear in the **Fields** list in the Power BI Desktop Report view .
 
-![Queries in Fields list](media/desktop-tutorial-facebook-analytics/18.png)
+![Queries in Fields list](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
 ## Combine the two queries
 
