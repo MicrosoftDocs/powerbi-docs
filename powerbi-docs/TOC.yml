@@ -798,6 +798,8 @@
       href: mobile-apps-find-content-mobile-devices.md
   - name: Tutorials
     items: 
+    - name: "Tutorial: Ask questions in the iOS mobile apps"
+      href: mobile-apps-ios-qna.md
     - name: "View on-premises reports in the mobile apps"
       href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
   - name: Concepts
@@ -850,8 +852,6 @@
         href: mobile-oauth-ssrs.md
       - name: "Configure mobile apps with Intune"
         href: service-admin-mobile-intune.md
-      - name: "Ask questions about your data in the iOS mobile apps (Tutorial)"
-        href: mobile-apps-ios-qna.md
     - name: Android devices
       items: 
       - name: "Fixing 'your corporate SSL certificate is untrusted'"
