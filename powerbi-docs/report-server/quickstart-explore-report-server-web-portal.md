@@ -1,6 +1,6 @@
 ---
-title: 'Quickstart: Explore Power BI Report Server in a VM'
-description: Create a virtual machine with Power BI Report Server already installed, and explore the web portal.
+title: 'Tutorial: Explore Power BI Report Server in a VM'
+description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -21,12 +21,22 @@ ms.author: maggies
 #intent statement: As a Power BI admin or end user, I want to see how Power BI Report Server is structured, and where I go to manage my files.
 ---
 
-# Quickstart: Explore the Power BI Report Server web portal in a VM
-In this quickstart, you create an Azure virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
+# Tutorial: Explore the Power BI Report Server web portal in a VM
+In this tutorial, you create an Azure virtual machine with Power BI Report Server already installed, so you can experience viewing, editing, and managing sample Power BI and paginated reports, and KPIs.
 
-![Report Server web portal](media/quickstart-explore-report-server-web-portal/report-server-web-portal.png)
+![Report Server web portal](media/quickstart-explore-report-server-web-portal/power-bi-report-server-browser-in-vm-no-numbers.png)
 
-For this quickstart, you need an Azure subscription. If you don’t have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+Here are the tasks you'll do in this tutorial:
+
+> [!div class="checklist"]
+> * Create and connect to a VM
+> * Start and explore the Power BI Report Server web portal
+> * Tag a favorite item
+> * View and edit a Power BI report
+> * View, manage, and edit a paginated report
+> * View an Excel workbook in Excel Online
+
+For this tutorial, you need an Azure subscription. If you don’t have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Create a Power BI Report Server VM
 
@@ -105,45 +115,17 @@ Double-click the **Report Server Web Portal** icon. The browser opens http://loc
 |![Number 6](media/quickstart-explore-report-server-web-portal/number-6.png) | Data sources for paginated reports | 
 
 
-## Tag your favorite reports and KPIs
+## Tag your favorites
 You can tag the reports and KPIs that you want to be favorites. They're easier to find because they're all gathered in a single Favorites folder, both in the web portal and in the Power BI mobile apps. 
 
-1. Select the ellipsis (**…**) in the upper-right corner of the KPI or report that you want to make a favorite, and select **Add to Favorites**.
+1. Select the ellipsis (**…**) in the upper-right corner of the **Profit Margin** KPI > **Add to Favorites**.
    
-    ![Add to Favorites](media/quickstart-explore-report-server-web-portal/report-server-web-portal-favorite-ellipsis.png)
+    ![Add to Favorites](media/quickstart-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Select **Favorites** on the web portal ribbon to see it along with your other favorites on the Favorites page in the web portal.
    
-    ![View Favorites](media/quickstart-explore-report-server-web-portal/report-server-web-portal-favorites.png)
+    ![View Favorites](media/quickstart-explore-report-server-web-portal/power-bi-report-server-favorites.png)
    
-    Now in the Power BI mobile apps you see these favorites along with your favorite dashboards from the Power BI service.
-   
-    ![View Favorites in the mobile app](media/quickstart-explore-report-server-web-portal/power-bi-iphone-faves-report-server.png)
-
-## Hide or view items in the web portal
-You can hide items in the web portal, and you can choose to view hidden items.
-
-### Hide an item
-1. Select the ellipsis (...) in the upper-right corner of an item, then select **Manage**.
-   
-    ![Select manage](media/quickstart-explore-report-server-web-portal/report-server-web-portal-manage-ellipsis.png)
-2. Select **Hide this item**.
-   
-    ![Select Hide](media/quickstart-explore-report-server-web-portal/report-server-web-portal-hide-property.png)
-3. Select **Apply**.
-
-### View hidden items
-1. Select **Tiles** (or **List**) in the upper-right corner > **Show hidden items**.
-   
-    The items appear. They're grayed, but you can still open and edit them.
-   
-    ![Show hidden items](media/quickstart-explore-report-server-web-portal/report-server-web-portal-show-hidden-grayed.png)
-
-## Search for items
-You can enter a search team, and you will see everything you can access. The results are categorized into KPIs, reports, datasets, and other items. You can then interact with the results and add them to your favorites.  
-
-![Search for items](media/quickstart-explore-report-server-web-portal/report-server-web-portal-search.png)
-
-## Move or delete items in List view
+## View items in List view
 By default, the web portal displays its contents in Tile view.
 
 You can switch to List view, where it's easy to move or delete multiple items at a time. 
@@ -151,7 +133,102 @@ You can switch to List view, where it's easy to move or delete multiple items at
 1. Select **Tiles** > **List**.
    
     ![Switch views](media/quickstart-explore-report-server-web-portal/report-server-web-portal-list-view.png)
-2. Select the items, then select **Move** or **Delete**.
+
+2. Go back to Tiles view: Select **List** or **Tiles**.
+
+## Power BI reports
+
+1. In the web portal under **Power BI reports**, select **Sample Customer Overview Report**. The report opens in the browser.
+
+1. Select the United States block in the tree map to see how it highlights related values in the other visuals.
+
+    ![Power BI report highlighted](media/quickstart-explore-report-server-web-portal/power-bi-report-server-power-bi.png)
+
+1. Select **Edit in Power BI Desktop**.
+
+1. Select **Allow** to allow this web site to open a program on your computer. 
+
+     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (March 2018)". That's the version optimized for Power BI Report Server
+
+    ![Power BI Desktop](media/quickstart-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
+
+3. In the Fields pane, expand the Customers table and drag the Occupation field to Report level filters.
+
+    ![Drag a field to the Filters pane](media/quickstart-explore-report-server-web-portal/power-bi-report-server-desktop-filter.png)
+
+1. Save the report.
+
+1. Go back to the report in the browser and select the browser **Refresh** icon.
+
+    ![Browser Refresh icon](media/quickstart-explore-report-server-web-portal/power-bi-report-server-browser-refresh.png)
+
+8. Expand the **Filters** pane on the right to see the **Occupation** filter you added. Select **Professional**.
+
+    ![Filtered Power BI report](media/quickstart-explore-report-server-web-portal/power-bi-report-server-power-bi-filtered.png)
+
+3. Select **Browse** to go back to the web portal.
+
+## Paginated (.RDL) reports
+
+You can view and manage paginated reports, and launch Report Builder, from the web portal.
+
+### Manage a paginated report
+
+1. In the web portal under **Paginated reports**, select the ellipsis (...) next to **Sales Order** > **Manage**.
+
+1. Select **Parameters**, change the default value for **SalesOrderNumber** to **SO50689** > **Apply**.
+
+   ![Set report parameters](media/quickstart-explore-report-server-web-portal/power-bi-report-server-set-parameters.png)
+
+3. Select **Browse** to go back to the web portal.
+
+### View a paginated report
+
+1. Select **Sales Order** in the web portal.
+ 
+3.  You see it opened to the **Order** parameter you set, **SO50689**. 
+
+    ![Paginated report parameter](media/quickstart-explore-report-server-web-portal/power-bi-report-server-paginated.png)
+
+    You can change that parameter here, along with the other parameters, without changing the defaults.
+
+1. Select **Order** **SO48339** > **View Report**.
+
+4. You see that this is page 1 of 2. Select the right arrow to see the second page. The table continues on that page.
+
+    ![Paginated report page 2 of 2](media/quickstart-explore-report-server-web-portal/power-bi-report-server-paginated-2-of-2.png)
+
+5. Select **Browse** to go back to the web portal.
+
+### Edit a paginated report
+
+You can edit paginated reports in Report Builder, and you can start Report Builder right from the browser.
+
+1. In the web portal, select the ellipsis (...) next to **Sales Order** > **Edit in Report Builder**.
+
+1. Select **Allow** to allow this web site to open a program on your computer.
+
+1. The Sales Order report opens in Design View in Report Builder.
+
+    ![Design view, paginated report](media/quickstart-explore-report-server-web-portal/power-bi-report-server-paginated-design-view.png)
+
+1. Select **Run** to preview the report.
+
+    ![Preview a paginated report](media/quickstart-explore-report-server-web-portal/power-bi-report-server-paginated-preview.png)
+
+5. Close Report Builder and go back to the browser.
+
+## View Excel workbooks
+
+You can view and interact with Excel workbooks in Excel Online in Power BI Report Server. 
+
+1. Select the Excel workbook **Office Liquidation Sale.xlsx**. It may ask for credentials. Select **Cancel**. 
+    It opens in the web portal.
+1. Select **Appliance** in the slicer.
+
+    ![Excel Online in web portal](media/quickstart-explore-report-server-web-portal/power-bi-report-server-excel-online.png)
+
+1. Select **Browse** to go back to the web portal.
 
 ## Clean up resources
 

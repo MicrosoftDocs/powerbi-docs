@@ -993,24 +993,10 @@
     items: 
     - name: "What is Power BI Report Server?"
       href: report-server/get-started.md
-  - name: Quickstart
+  - name: Tutorials
     items: 
     - name: "Explore Power BI Report Server in a VM"
       href: report-server/quickstart-explore-report-server-web-portal.md
-  - name: Tutorials
-    items: 
-    - name: Report server basics
-      items: 
-      - name: "Create a Power BI report for a report server"
-        href: report-server/quickstart-create-powerbi-report.md
-    - name: Admins
-      items: 
-      - name: "Install a report server"
-        href: report-server/install-report-server.md
-      - name: "Find your product key"
-        href: report-server/find-product-key.md
-    - name: Developers
-      items: 
   - name: Concepts
     items: 
     - name: "What's new"
@@ -1063,6 +1049,8 @@
     items: 
     - name: Report server basics
       items: 
+      - name: "Create a Power BI report for a report server"
+        href: report-server/quickstart-create-powerbi-report.md
       - name: "Manage content in the report server"
         href: report-server/getting-around.md
       - name: "Create a paginated report for a report server"
@@ -1081,12 +1069,12 @@
         href: report-server/add-comments.md
     - name: Report server for admins
       items: 
-      - name: "Find your product key"
-        href: report-server/find-product-key.md
       - name: "Quickstart: Install"
         href: report-server/quickstart-install-report-server.md
       - name: "Install a report server"
         href: report-server/install-report-server.md
+      - name: "Find your product key"
+        href: report-server/find-product-key.md
       - name: "Install Power BI Desktop"
         href: report-server/install-powerbi-desktop.md
       - name: "Upgrade a report server"
