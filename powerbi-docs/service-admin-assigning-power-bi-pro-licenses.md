@@ -23,6 +23,8 @@ LocalizationGroup: Administration
 ---
 # Assigning Power BI Pro licenses
 
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. This article explains how to assign Power BI Pro licenses in Office 365.
+
 Administrators can choose from a variety of management portals and PowerShell cmdlets to assign Power BI Pro licenses to users. Power BI license management is backed by Azure Active Directory (Azure AD).
 
 * Azure subscription owners can use the Azure Active Directory blade in the [Azure Portal](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0). 
@@ -88,14 +90,11 @@ Follow these steps to assign Pro licenses to individual user accounts if you are
 >
 
 ## Next steps
+
 [Power BI Pro in your organization](service-admin-power-bi-pro-in-your-organization.md)
-</br>
-[Extended Pro Trial activation](service-extended-pro-trial.md)
-</br>
-[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)
-</br>
-[Power BI Premium announcement](https://aka.ms/pbipremium-announcement)
-</br>
+
+[Power BI Pricing](https://powerbi.microsoft.com/en-us/pricing/)
+
 [Find Power BI users that have signed in](service-admin-access-usage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
