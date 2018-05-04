@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Ask questions with Q&A virtual analyst in iOS apps - Power BI"
+title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps - Power BI'
 description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 services: powerbi
 documentationcenter: ''
@@ -24,7 +24,7 @@ ms.author: maggies
 ---
 # Tutorial: Ask questions about your data with the Q&A virtual analyst in iOS apps - Power BI
 
-The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst. In the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch, the Q&A virtual analyst is a conversational BI experience. The Q&A virtual analyst  accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). You can still type or say a question, and it also delivers data insights in context.
+The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst. In the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch, the Q&A virtual analyst is a conversational BI experience. The Q&A virtual analyst  accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). It delivers data insights in context, and you can type or speak your own question.
 
 Applies to:
 
@@ -43,7 +43,14 @@ In this tutorial, you will:
 > * Type questions about your data
 > * Speak questions about your data
 
-## Download the samples
+If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+
+## Prerequisites
+
+### Install the Power BI for iOS app
+
+
+### Download the samples
 The first step in the tutorial is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
 
 * In your workspace on the Power BI service ([https://powerbi.com](https://powerbi.com)):
