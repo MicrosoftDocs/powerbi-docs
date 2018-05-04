@@ -25,7 +25,7 @@ To get started with this walkthrough, you need a **Power BI Pro** account and a 
 * You need a [Power BI Pro](https://powerbi.microsoft.com/en-us/pricing/) account.
 * You need an [Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) account.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
-* You need a pre-built application (Here is an [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) to get started.)
+* You need a pre-built application (Here is an [App Owns Data application sample](https://github.com/Microsoft/PowerBI-Developer-Samples) to get started.)
 
 ## Setup your embedded analytics development environment
 
@@ -183,7 +183,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
-    ![report sample](media/embed-sample-for-customers/embed-sample-for-customer-02.png)
+    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-02.png)
 
 2. Open sample PBIX report in **Power BI Desktop**
 
@@ -201,7 +201,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 ### Download the sample to get started
 This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub.
 
-   ![report sample](media/embed-sample-for-customers/embed-sample-for-customer-01.png)
+   ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-01.png)
 
 ### Get an access token from Azure AD
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
