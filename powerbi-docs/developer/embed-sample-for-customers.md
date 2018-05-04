@@ -13,9 +13,13 @@ manager: kfile
 # Tutorial: Embed a Power BI dashboard, report, or tile into your application using app owns data
 Learn how to integrate or embed a dashboard, report, or tile into an application when embedding for your customers. This is typically a ISV scenario.
 
-![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
+![Embedded dashboard](media/embed-sample-for-customers/Azure-Portal-031.png)
 
 To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](../service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](../service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) for testing purposes.
+
+If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+## Prerequisites
+
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
