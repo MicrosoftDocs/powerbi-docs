@@ -13,7 +13,7 @@ qualitydate: ''
 ms.component: powerbi-report-server
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: quickstart
+ms.topic: tutorial
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 05/05/2018
@@ -67,7 +67,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
     The **Submitting deployment for Power BI Report Server** process takes a several minutes.
 
-## Start your virtual machine
+## Connect to your virtual machine
 
 1. In the Azure left navigation pane, select **Virtual machines**. 
 
@@ -91,6 +91,8 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 ## Power BI Report Server on the VM
 
+When your VM opens, here are the items you see on the desktop.
+
 ![Power BI Report Server virtual machine starts](media/quickstart-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
 
 |Number  |What it is  |
@@ -101,7 +103,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 |![Number 4](media/quickstart-explore-report-server-web-portal/number-4.png) | Starts Power BI Desktop optimized for Power BI Report Server (March 2018)  |
 |![Number 5](media/quickstart-explore-report-server-web-portal/number-5.png) | Opens Power BI Report Server web portal in the browser   |
 
-Double-click the **Report Server Web Portal** icon. The browser opens http://localhost/reports/browse.  
+Double-click the **Report Server Web Portal** icon. The browser opens http://localhost/reports/browse. In the web portal, you see various files grouped by type. 
 
 ![Power BI Report Server web portal](media/quickstart-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
@@ -124,6 +126,8 @@ You can tag the reports and KPIs that you want to be favorites. They're easier t
 2. Select **Favorites** on the web portal ribbon to see it along with your other favorites on the Favorites page in the web portal.
    
     ![View Favorites](media/quickstart-explore-report-server-web-portal/power-bi-report-server-favorites.png)
+
+3. Select **Browse** to go back to the web portal.
    
 ## View items in List view
 By default, the web portal displays its contents in Tile view.
@@ -134,9 +138,13 @@ You can switch to List view, where it's easy to move or delete multiple items at
    
     ![Switch views](media/quickstart-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
-2. Go back to Tiles view: Select **List** or **Tiles**.
+2. Go back to Tiles view: Select **List** > **Tiles**.
 
 ## Power BI reports
+
+You can view and interact with Power BI reports in the web portal, and start Power BI Desktop right from the web portal.
+
+### View Power BI reports
 
 1. In the web portal under **Power BI reports**, select **Sample Customer Overview Report**. The report opens in the browser.
 
@@ -144,11 +152,13 @@ You can switch to List view, where it's easy to move or delete multiple items at
 
     ![Power BI report highlighted](media/quickstart-explore-report-server-web-portal/power-bi-report-server-power-bi.png)
 
+### Edit in Power BI Desktop
+
 1. Select **Edit in Power BI Desktop**.
 
 1. Select **Allow** to allow this web site to open a program on your computer. 
 
-     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (March 2018)". That's the version optimized for Power BI Report Server
+     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (March 2018)". That's the version optimized for Power BI Report Server.
 
     ![Power BI Desktop](media/quickstart-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
 
@@ -232,14 +242,16 @@ You can view and interact with Excel workbooks in Excel Online in Power BI Repor
 
 ## Clean up resources
 
-Now that you've finished this quickstart, delete the resource group, virtual machine, and all related resources. 
+Now that you've finished this tutorial, delete the resource group, virtual machine, and all related resources. 
 
 - To do so, select the resource group for the VM and select **Delete**.
 
 ## Next steps
-[User handbook](user-handbook-overview.md)  
-[Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
-[Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
+
+In this tutorial, you've created a VM with Power BI Report Server. You've tried some of the functionality of the web portal, and you've opened a Power BI report and a paginated report in their respective editors. To learn more about creating reports for Power BI Report Server, continue on.
+
+> [!div class="nextstepaction"]
+> [Create a Power BI report for Power BI Report Server](./quickstart-create-powerbi-report.md)
 
 
 
