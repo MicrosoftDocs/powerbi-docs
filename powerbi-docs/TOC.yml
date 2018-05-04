@@ -1155,8 +1155,7 @@
     - name: "Assign Power BI Pro licenses - Office 365"
       href: service-admin-assigning-power-bi-pro-licenses.md
     - name: "Assign Power BI Pro licenses - Azure"
-      href: service-admin-assigning-power-bi-pro-licenses.md
-  - name: Tutorials
+      href: service-admin-assigning-power-bi-pro-licenses-azure.md
   - name: Concepts
     items: 
     - name: "Power BI Premium - what is it?"
