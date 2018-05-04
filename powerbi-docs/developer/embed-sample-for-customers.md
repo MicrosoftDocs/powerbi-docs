@@ -15,15 +15,16 @@ In this tutorial you will learn how to embed a report, dashboard or tile into an
 
 ![Embedded dashboard](media/embed-sample-for-customers/Azure-Portal-031.png)
 
+In this tutorial, you learn how to:
 >[!div class="checklist"]
 >* Register an application in Azure.
->* Embed a Report, Dashboard, or Tile in Power BI using Power BI Embedded in Axure.
-
-To get started with this walkthrough, you need a **Power BI Pro** account and a **Microsoft Azure** account. If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin. If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+>* Embed a Report, Dashboard, or Tile in Power BI using Power BI Embedded in Azure.
 
 ## Prerequisites
-* You need a [Power BI Pro](https://powerbi.microsoft.com/en-us/pricing/) account.
-* You need an [Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) account.
+To get started, you need a **Power BI Pro** account and a **Microsoft Azure** account.
+
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
 * You need a pre-built application (Here is an [App Owns Data application sample](https://github.com/Microsoft/PowerBI-Developer-Samples) to get started.)
 
@@ -39,7 +40,7 @@ You register your application with Azure Active Directory to allow your applicat
 
 2. Sign into the [Azure portal](https://portal.azure.com).
  
-    ![Azure Portal Main](media/embed-sample-for-customers/Azure-Portal-033.png)
+    ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-03.png)
 
 3. In the left-hand navigation pane, choose **More Services**, select **App Registrations** under **Security + Identity** and select **New application registration**.
    
@@ -193,7 +194,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
    ![PBI desktop report](media/embed-sample-for-customers/pbi-08.png)
 
-    Now you can view the report in the Powre BI service online
+    Now you can view the report in the Power BI service online
 
    ![PBI desktop report](media/embed-sample-for-customers/pbi-09.png)
 
@@ -327,7 +328,7 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-**Tile**
+**Tiles**
 
 ```
 using Microsoft.PowerBI.Api.V2;
@@ -471,7 +472,6 @@ You can use JavaScript to load a dashboard into a div element on your web page. 
     var tile = powerbi.embed(tileContainer, config);
 </script>
 ```
-
 ## Next steps
 * The above examples are based on this sample - [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples).
 * More Information about the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
