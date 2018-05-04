@@ -38,6 +38,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
+* [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/)
 * [Install SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) on a local computer 
 * [Install an on-premises data gateway](service-gateway-install.md) on the same local computer (in production, it would typically be a different computer)
 
@@ -59,8 +60,8 @@ You start by adding sample data to SQL Server, so you can use that data in the r
 
     CREATE TABLE Product (
         SalesDate DATE,
-        Product VARCHAR(100),
         Category  VARCHAR(100),
+        Product VARCHAR(100),
         Sales MONEY,
         Quantity INT
     )
@@ -95,12 +96,43 @@ You start by adding sample data to SQL Server, so you can use that data in the r
 
 Now that you have sample data in SQL Server, you connect to SQL Server in Power BI Desktop and build a report based on that data. You then publish the report to the Power BI service.
 
-Connect to data and import
-Build a report with one chart
-Publish to the service
+1. In Power BI Desktop, on the **Home** tab, select **Get Data** > **SQL Server**.
+
+2. Under **Server** enter your server name, and under **Database** enter "TestGatewayDocs". Select **OK**. 
+
+    ![Enter server and database](media/service-gateway-sql-tutorial/server-database.png)
+
+3. Verify your credentials, then select **Connect**.
+
+4. Under **Navigator**, select the **Product** table, then select **Load**.
+
+    ![Select Product table](media/service-gateway-sql-tutorial/select-product-table.png)
+
+5. In the Power BI Desktop **Report** view, in the **Visualizations** pane select the **Stacked column chart**.
+
+    ![Stacked column chart](media/service-gateway-sql-tutorial/column-chart.png)    
+
+6. With the column chart selected in the report canvas, in the **Fields** pane select the **Category** and **Sales** fields.  
+
+    ![Select fields](media/service-gateway-sql-tutorial/select-fields.png)
+
+    The chart should now look like the following.
+
+    ![Select Product table](media/service-gateway-sql-tutorial/finished-chart.png)
+
+    Notice that **SLR Camera** is the current sales leader. This will change when you update data and refresh the report later in this tutorial.
+
+7. Save the report with the name "TestGatewayDocs.pbix".
+
+8. On the **Home** tab select **Publish**, then select **My Workspace** > **Select**. Sign in to the Power BI service if you're asked to do so. 
+
+    ![Publish report](media/service-gateway-sql-tutorial/publish-report.png)
+
+9. On the **Success** screen, select **Open 'TestGatewayDocs.pbix' in Power BI**.
 
 
-## Add SQL Server as a data source
+## Add SQL Server as a gateway data source
+
 
 
 ## Configure and use data refresh
