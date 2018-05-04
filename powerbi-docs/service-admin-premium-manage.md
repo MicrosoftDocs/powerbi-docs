@@ -134,7 +134,7 @@ You can assign additional **Capacity admins** for Power BI Premium capacities. A
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## Usage measurements (Power BI Premium)
-For each capacity, you will be able to use usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest monitoring these metrics to ensure that your users see good performance while using premium content.
+For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
 
 ![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
 
@@ -143,16 +143,16 @@ For each capacity, you will be able to use usage measurements for CPU, Memory Us
 
 | Metric | Description |
 | --- | --- |
-| CPU |Number of times CPU has exceeded 80% utilization. |
-| Memory Thrashing |Represents the memory pressure of your backend cores. Specifically, this is a metric of how many times models are evicted from memory due to memory pressure from usage of multiple models. |
+| CPU |Number of times CPU exceeded 80% utilization. |
+| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
 | Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query count has exceeded 80% of the query limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
+| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
 
 Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
 
 ![Detailed usage chart](media/service-admin-premium-manage/premium-usage-detailed-chart.png)
 
-You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in five minute intervals for each day of the past week.
+You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## Assign a workspace to a capacity
 There are a few ways that a workspace could be assigned to a capacity.
