@@ -24,7 +24,8 @@ LocalizationGroup: Learn more
 # Tutorial: Combine sales data from Excel and an OData feed
 
 It's common to have data spread across multiple data sources, such as product information in one database and sales information in another. With **Power BI Desktop**, you can combine data from different sources to create interesting, compelling data analyses and visualizations. 
-In this tutorial, you learn how to combine data from two data sources, an Excel workbook that includes product information and an OData feed that contains orders data. After you import each dataset and perform transformation and aggregation steps, you combine the data from both sources to produce a **Total Sales per Product and Year** report with interactive visualizations. These techniques can also be applied to SQL Server queries, CSV files, and any other data sources in Power BI Desktop.
+
+In this tutorial, you learn how to combine data from two data sources: an Excel workbook that includes product information, and an OData feed that contains orders data. After you import each dataset and perform transformation and aggregation steps, you use data from both sources to produce a **Total Sales per Product and Year** report with interactive visualizations. These techniques can also be applied to SQL Server queries, CSV files, and any other data sources in Power BI Desktop.
 
 >[!NOTE]
 >In Power BI Desktop, there are often a few ways to accomplish a task. For example, many ribbon selections are also available by using a right-click or **More options** menu on a column or cell. Several alternate methods are described in the steps below. 
@@ -46,11 +47,11 @@ First, import the product data from the Excel Products.xlsx workbook into Power 
    
 4. In the **Navigator** pane, select the **Products** table and then select **Edit**.
    
-   ![Navigator pane](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
+   ![Navigator pane for Excel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
    
 A preview of the table opens in the **Power Query Editor**, where you can apply transformations to clean up the data. 
    
-![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/t_excelodata_3.png)
    
 >[!NOTE]
 >You can also open the **Power Query Editor** by selecting **Edit Queries** > **Edit Queries** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in **Report View**, and selecting **Edit Query**.
@@ -61,11 +62,10 @@ Your combined report will only use the **ProductID**, **ProductName**, **Quantit
 
 1. In **Power Query Editor**, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns (use **Ctrl**+**Click** to select more than one column, or **Shift**+**Click** to select columns that are next to other).
    
-2. Right-click and select **Remove Other Columns** from the dropdown, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table. 
+2. Right-click any of the selected headers and select **Remove Other Columns** from the dropdown, to remove all except the selected columns from the table. 
+   You can also select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab. 
    
-   ![Remove other columns dropdown](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png) or ![Remove other columns ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
+   ![Remove other columns](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/anlayzingsalesdata_removeothercolumns.png)
 
 ## Import the order data from an OData feed
 
@@ -73,22 +73,28 @@ Next, import the order data from the sample Northwind sales system OData feed.
 
 1. In **Power Query Editor**, select **New Source** and then select **OData feed**. 
    
+   ![Get OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
+   
 2. In the **OData Feed** dialog box, paste the URL for the Northwind OData feed, `http://services.odata.org/V3/Northwind/Northwind.svc/`, and select **OK**.
    
-3. In the **Navigator** pane, select the **Orders** table, and then select **Edit**.
+   ![OData feed dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
+3. In the **Navigator** pane, select the **Orders** table, and then select **OK** to load the data into **Power Query Editor**.
+   
+   ![Navigator pane for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
    
    >[!NOTE]
    >In **Navigator**, you can select a table name, without selecting the checkbox, to see a preview.
 
 ## Expand the order data
 
-When you connect to data sources with multiple tables, such as relational databases, you can use the references between tables to build up your query. The **Orders** table contains a reference to a nested **Order_Details** table, which has data about the individual products in each order. You can use the **Expand** operation to add the **ProductID**, **UnitPrice**, and **Quantity** columns from the related (**Order_Details**) table into the subject (**Orders**) table. 
+When you connect to data sources that have multiple tables, such as relational databases or the Northwind OData feed, you can use references between tables to build up your queries. The **Orders** table contains references to several related tables. You can add the **ProductID**, **UnitPrice**, and **Quantity** columns from the related **Order_Details** table into the subject (**Orders**) table by using the **Expand** operation. 
 
-1. In **Power Query Editor**, scroll to the **Order_Details** column.
+1. Scroll to the right in the **Orders** table until you can see the **Order_Details** column. Note that instead of data, it contains references to another table.
    
-2. In the **Order_Details** column header, select the **Expand** icon (![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)).
+   ![Order_Details column](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+   
+2. Select the **Expand** icon (![Expand icon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)) in the **Order_Details** column header. 
    
 3. In the **Expand** drop-down:
    
@@ -96,150 +102,160 @@ When you connect to data sources with multiple tables, such as relational databa
       
    2. Select **ProductID**, **UnitPrice**, and **Quantity**, and then select **OK**.
       
-      ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+      ![Expand dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 
-After you expand the **Order_Details** table, three new columns and additional rows are added to the **Orders** table, one for each row in the nested related table.
+After you expand the **Order_Details** table, the **Order_Details** column is replaced by the three new columns from the nested table, and there are new rows in the table for the added data from each order. 
+
+![Expanded columns](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
 ## Create a custom calculated column
 
-Power Query Editor lets you create calculations and custom fields to enrich your data. You can create a custom column that multiplies item quantity times item price, to calculate the total price for each line item in the order.
+Power Query Editor lets you create calculations and custom fields to enrich your data. Your custom column multiplies item quantity by item price, to calculate the total price for each line item in an order.
 
-1. In the **Add Column** ribbon tab, click **Add** > **Custom Column**.
+1. In the **Add Column** ribbon tab of Power Query Editor, select **Custom Column**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
+   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
    
-2. In the **Add Custom Column** dialog box, in the **Custom Column Formula** textbox, enter **[Order_Details.UnitPrice]** * **[Order_Details.Quantity]**.
-3. In the **New column name** textbox, enter **LineTotal**, and select **OK**.
+2. In the **Custom Column** dialog box, type **LineTotal** in the **New column name** field.
+
+3. in the **Custom column formula** field after the **= **, enter **[Order_Details.UnitPrice]** * **[Order_Details.Quantity]**. (You can also select each field name from the **Available columns** scroll box and select **<< Insert**, instead of typing them.) 
+3. Select **OK**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
+   ![Custom Column dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
 
 ## Set the data type for the new field
 
-When Power Query Editor connects to data, it determines the best data type for each field and displays the data accordingly. You can see the data types assigned to fields by the icons at the left of the headers, or under **Data Type:** in the **Transform** group of the **Home** ribbon tab. 
+When Power Query Editor connects to data, it determines the best data type for each field and displays the data accordingly. You can see the data types assigned to fields by the icons at the left of the headers, or under **Data Type** in the **Transform** group of the **Home** ribbon tab. 
+The new **LineTotal** column has a data type of **Any**, but its values are actually currency. To change the data type, right-click the **LineTotal** column header, select **Change Data Type** from the dropdown, and then select **Fixed decimal number**. 
 
-The new **LineTotal** column has a data type of **Any**. The calculated values will be currency, so to change the data type, either:
+![Change data type](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
 
-- Select the new **LineTotal** column, then select the dropdown arrow next to **Data Type** in the **Transform** area of the **Home** ribbon tab, and then select **Fixed decimal number**, or
-   
-- Right-click the **LineTotal** column header, choose **Change Data Type** from the dropdown, and then select **Fixed decimal number**. 
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_wholenumber.png)      
+>[!NOTE]
+>You can also select the **LineTotal** column, then select the dropdown arrow next to **Data Type** in the **Transform** area of the **Home** ribbon tab, and then select **Fixed decimal number**.
 
-## Clean up the orders columns
+## Clean up the orders query
 
-You can make the model easier to work with in reports by deleting, renaming, and reordering some of the columns.
+To make your model easier to work with in reports, you can delete, rename, and reorder some of the columns.
 
-Your report only uses the **OrderDate**, **ShipCity**, **ShipCountry**, **Order_Details.ProductID**, **Order_Details.UnitPrice**, and **Order_Details.Quantity** columns. With the Excel data, you used **Remove Other Columns**. Here, you remove selected columns.
-
-1. Select the **Order ID** and **Shipper** columns (use **Ctrl**+**Click** to select multiple columns). 
-   
-2. Right-click on either selected column header and click **Remove Columns**.
+Your report will only use the **OrderDate**, **ShipCity**, **ShipCountry**, **Order_Details.ProductID**, **Order_Details.UnitPrice**, and **Order_Details.Quantity** columns. You can select these columns and use **Remove Other Columns** as you did with the Excel data, or you can select all the columns except those listed, right-click on a selected column and select **Remove Columns**. 
 
 You can make the **Order_Details.ProductID**, **Order_Details.UnitPrice** and **Order_Details.Quantity** columns easier to use by removing the *Order_Details.* prefixes from the column names. To rename the columns to **ProductID**, **UnitPrice** and **Quantity**, respectively:
 
 1. Double-click or tap and hold each column header, or right-click the column header, and select **Rename** from the dropdown. 
    
-2. Delete the *Order_Details.* prefix, and then press **Enter**.
+2. Delete the *Order_Details.* prefix from the name, and then press **Enter**.
 
 Finally, to make the **LineTotal** column easier to access, drag and drop it to the left, just to the right of the **ShipCountry** column.
 
+![Cleaned up table](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+
 ## Review query steps
 
-As you shaped and transformed data in the Power Query Editor, each step was recorded in the **Applied Steps** area of the **Query Settings** pane at the right side of the Power Query Editor window. You can step back through the Applied Steps to see exactly what changes you made, and edit, delete, or rearrange them if necessary (although this can be risky, because changing preceding steps can break later steps). 
+As you shaped and transformed data in the Power Query Editor, each step was recorded in the **Applied Steps** area of the **Query Settings** pane on the right side of Power Query Editor. You can step back through the Applied Steps to review the changes you made, and edit, delete, or rearrange them if necessary (although this can be risky, because changing preceding steps can break later steps). 
 
-Navigate between your queries in the Power Query Editor by selecting each query in the **Queries** pane on the left. After applying the data transformations so far, the Applied Steps for your two queries should look like the following:
+Select each of your queries in the **Queries** pane on the left side of Power Query Editor. After applying the data transformations so far, the Applied Steps for your two queries should look like the following:
 
-![Applied Steps](media/desktop-tutorial-facebook-analytics/applied-steps.png)
+![Products query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Orders query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 >[!TIP]
 >Underlying the Applied Steps are formulas written in the **Power Query Language**, also known as the **M** language. To see and edit the formulas, select **Advanced Editor** in the **Query** group of the Home tab of the ribbon. 
 
 ## Import the transformed data
 
-When you are satisfied with your transformed data, select each query in the **Queries** pane of Power Query Editor, and then select **Close & Apply** > **Close & Apply** in the Home tab of the ribbon to import it into Power BI Desktop. 
+When you are satisfied with your transformed data, select **Close & Apply** > **Close & Apply** in the **Close** group of the **Home** ribbon tab, to import it into Power BI Desktop. 
 
-![Close & Apply](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
+![Close & Apply](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 
-Once the data is loaded, each query appears in the Power BI Desktop Report view as a new query in the **Fields** list.
+Once the data is loaded, the queries appear in the **Fields** list in the Power BI Desktop Report view .
 
-![New query](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+![Queries in Fields list](media/desktop-tutorial-facebook-analytics/18.png)
 
 ## Combine the two queries
 
-Power BI Desktop does not require you to combine queries to report on them. Instead, you can create relationships between datasets, based on fields they have in common. For more information about relationships, see [Create and manage relationships](desktop-create-and-manage-relationships.md).
+Power BI Desktop does not require you to combine queries to report on them. However, you can use relationships between datasets, based on fields they have in common, to extend and enrich your reports. For more details about relationships in Power BI Desktop, see [Create and manage relationships](desktop-create-and-manage-relationships.md).
 
-The Orders and Products datasets in this tutorial share a common *ProductID* field, so there can be a relationship between them based on that column. Power BI Desktop may detect the relationship automatically, or you can specify it in the Power BI Desktop **Manage Relationships** dialog. 
+The Orders and Products datasets in this tutorial share a common *ProductID* field, so there can be a relationship between them based on that column. Power BI Desktop may detect the relationship automatically, or you can manage it in the Power BI Desktop **Manage Relationships** dialog. 
 
 1. In Power BI Desktop Report view, select **Manage Relationships** in the **Relationships** area of the **Home** ribbon tab.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
+   ![Manage Relationships ribbon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
-2. See if Power BI Desktop automatically detects the relationship between the Products and Orders tables by selecting **Autodetect**. 
+2. In the **Manage Relationships** dialog, note that Power BI Desktop has already detected and listed an active relationship between the Products and Orders tables.  
    
-   >[!NOTE]
-   >- To change anything about the relationship, select it in the **Manage Relationships** dialog and select **Edit**. 
-   >- To create a new relationship, select **New** in the **Manage Relationships** dialog.
+   ![Manage Relationships dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
    
-3. Power BI Desktop has autodetected the relationship correctly, so select **Cancel** to close the **Manage Relationships** dialog.
+3. To view the relationship, select **Edit**. 
+   
+   ![Edit Relationship dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
+   
+4. Power BI Desktop has autodetected the relationship correctly, so you can select **Cancel** and then **Close** to exit the relationship dialogs.
 
-You can also visualize and manage the relationship between your tables by selecting **Relationship** view at the left side of the Power BI Desktop window.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
-7. We see the following, which visualizes the relationship between the queries.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
-8. When you double-click the arrow on the line that connects the to queries, an **Edit Relationship** dialog appears.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
-9. No need to make any changes, so we'll just select **Cancel** to close the **Edit Relationship** dialog.
+You can also view and manage the relationships between your queries by selecting the **Relationship** view at the left side of the Power BI Desktop window.
+
+![Relationship View](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
+
+Double-click the arrow on the line connecting the two queries to open the **Edit Relationship** dialog and view or change the relationship. Select **Cancel** to close the dialog without changes. 
+
+To get back to your report, select the **Report View** icon at left. 
+
+![Report View icon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
 ## Create visualizations using your data
 
-Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand your data. For more information about viewing and editing reports in Power BI Service (your site), see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
+In Power BI Desktop Report view, you can create a variety of visualizations to gain insights from your data. You can build reports with multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand your data. For more information about viewing and editing reports in Power BI Service (your site), see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
 
-Because there is a relationship between your datasets based on the **ProductID** field, you can mix fields from both of your queries in your visualizations. 
+You can use both of your data sets, and the relationship between them, to help visualize and and analyze your sales data. 
 
-Your first visualization is a bar chart showing units in stock for each product, which uses fields from the **Products** query. 
+First, create a bar chart that uses fields from both queries to show the quantity of each product sold. 
 
-1. Select **UnitsInStock** from **Products** in the **Fields** pane at the right, or drag it onto a blank space on the canvas. This creates a bar chart visualization showing the total number of all products in stock. 
+1. Select the **Quantity** field from **Orders** in the **Fields** pane at the right, or drag it onto a blank space on the canvas. This creates a bar chart showing the total quantity of products sold. 
    
-2. To show the number of each product in stock, with the bar chart selected, select **ProductName** from **Products** in the **Fields** pane. Or, you can drag the **ProductName** field to **Drag data fields here** under **Axis**, in the bottom half of the **Visualizations** pane next to the **Fields** pane. 
+2. Select **ProductName** from **Products** in the **Fields** pane, or drag it onto the chart, to show the quantity of each product sold. 
    
-3. To sort the chart by most to least units in stock, select the **More options** ellipsis (**...**) at the upper right of the visualization, and then select **Sort By UnitsInStock**.
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
-
-Your second visualization is a line chart showing **LineTotal** by **OrderDate**, from the **Orders** query. 
-
-1. With nothing selected on the canvas, select **OrderDate** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. 
+3. To sort the products by most to least sold, select the **More options** ellipsis (**...**) at the upper right of the visualization, and then select **Sort By Quantity**.
    
-2. With the new visualization selected, select **LineTotal** from **Orders**, or drag it on to the visualization. 
+4. Use the handles at the corners of the chart to enlarge it so more product names are visible. 
+   
+   ![Quantity by ProductName bar chart](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/19.png)
+
+Next, create a line chart showing order amounts (**LineTotal**) over time (**OrderDate**). 
+
+1. With nothing selected on the canvas, select **LineTotal** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. The bar chart shows the total amount of all orders. 
+   
+2. With the chart selected, select **OrderDate** from **Orders**, or drag it on to the chart. The chart now shows sales for each order date. 
    
 3. Change the new visualization to a line chart by selecting it, and then selecting the **Line chart** icon in the **Visualizations** pane.
-
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png)
-
-The third visualization is a map showing **LineTotals** by **ShipCountry**. 
-
-1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country names, and automatically creates a map visualization with a data point for each country that had orders. 
    
-2. To make the size of the data points reflect the amount of sales for each country, with the new visualization selected, drag the **LineTotal** field to **Drag data fields here** under **Values**, in the bottom half of the **Visualizations** pane. The size of the circles on the map now reflects the dollar amount of the orders from each country. 
+4. Resize the visualization by dragging the corners to to be able to see more data. 
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+   ![LineTotals by OrderDate line chart](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
+   
+   >[!TIP]
+   >If you only see Year data points on the chart (only three data points), drop down the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. 
+
+Finally, create a map visualization showing order amounts from each country. 
+
+1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country names, and automatically creates a map visualization, with a data point for each country that had orders. 
+   
+2. To make the sizes of the data points reflect the order amounts for each country, drag the **LineTotal** field onto the map, or drag it to **Drag data fields here** under **Size**, in the bottom half of the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country. 
+   
+   ![LineTotals by ShipCountry map visualization](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
 
 ## Interact with your report visuals to analyze further
 
-Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more information, see [Filtering and Highlighting in Reports](power-bi-reports-filters-and-highlighting.md). 
+Power BI Desktop lets you uncover further trends by interacting with visuals that cross-highlight and filter each other. For more information, see [Filtering and Highlighting in Reports](power-bi-reports-filters-and-highlighting.md). 
 
-Because of the relationship between your queries, interactions with one visualization will affect the visualizations from both queries. 
+Because of the relationship between your queries, interactions with one visualization will affect the other visualizations from both queries. 
 
-On the map visualization, select the circle centered in **Canada**. Note that the other two visuals are filtered to show Units in Stock and Line Totals just for Canada.
+On the map visualization, select the circle centered in **Canada**. Note that the other two visualizations filter to show LineTotals and Quantities just for Canada.
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+![Sales data filtered for Canada](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/22.png)
+
+If you select one of the products in the Quantity by ProductName chart, the map and line charts filter to reflect the Line Totals just for that product. 
 
 ## Complete Sales Analysis report
 
-You now have a Sales Report that combines data from the Products.xlsx Excel file and the Northwind OData feed, with report visuals that help analyze sales information from different countries. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) to share it with other Power BI users.
+You now have a Sales Report that combines data from the Products.xlsx Excel file and the Northwind OData feed, with report visuals that help analyze sales information for different countries, timeframes, and products. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) to share it with other Power BI users.
 
 ## Next steps
 * [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
