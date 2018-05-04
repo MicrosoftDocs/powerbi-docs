@@ -143,13 +143,16 @@ For each capacity, you will be able to use usage measurements for CPU, Memory Us
 
 | Metric | Description |
 | --- | --- |
-| CPU |CPU usage of your cores. |
-| Memory Usage |Total Available Memory being used in your capacity, represented as gigabytes (GB) |
-| Memory Thrashing |Represents the memory pressure of your backend cores. Specifically, this is a metric of how often models are evicted from memory due to memory pressure from usage of multiple models. |
-| DQ/s |* We limit the total number of DirectQuery and live connection queries per second.<br/>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br/>* DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/>* This applies equally to on-premises and cloud connections. |
+| CPU |Number of times CPU has exceeded 80% utilization. |
+| Memory Thrashing |Represents the memory pressure of your backend cores. Specifically, this is a metric of how many times models are evicted from memory due to memory pressure from usage of multiple models. |
+| Memory Usage |Average memory usage, represented in gigabytes (GB). |
+| DQ/s | Number of times Direct Query count has exceeded 80% of the query limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
 
+Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
 
-Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in five minute intervals for each day of the past week.
+![Detailed usage chart](media/service-admin-premium-manage/premium-usage-detailed-chart.png)
+
+You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in five minute intervals for each day of the past week.
 
 ## Assign a workspace to a capacity
 There are a few ways that a workspace could be assigned to a capacity.
