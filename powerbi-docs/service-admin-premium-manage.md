@@ -150,7 +150,15 @@ For each capacity, you can see usage measurements for CPU, Memory Usage, Memory 
 
 Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
 
-![Detailed usage chart](media/service-admin-premium-manage/premium-usage-detailed-chart.png)
+![Detailed usage chart CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
+
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detailed usage chart Memory Size](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
 
 You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 

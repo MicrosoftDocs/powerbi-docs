@@ -42,7 +42,7 @@ The eviction process itself is a fast operation. If the dataset is not in active
 
 ### Dataset refresh memory requirement competing with an active dataset memory requirement
 
-Datasets can be refreshed on a schedule or on-demand by users. As described earlier, memory required for full refreshes are at least double the memory size of the loaded and idle datasets. Before refresh starts, a refresh memory requirement is estimated. If the total memory requirement is more than the available memory in the capacity, some datasets are evicted. Candidates for eviction are chosen in the reverse order of most recently used datasets i.e. Service tries to keep as many recently used datasets as possible in the memory.
+Datasets can be refreshed on a schedule or on-demand by users. As described earlier, memory required for full refreshes are at least double the memory size of the loaded and idle datasets. Before refresh starts, a refresh memory requirement is estimated. If the total memory requirement is more than the available memory in the capacity, some datasets are evicted. Candidates for eviction are chosen in the reverse order of most recently used datasets i.e. service tries to keep as many recently used datasets as possible in the memory.
 
 If the required memory is not available despite eviction, refresh is queued to be retried. The service retries until it succeeds or a new refresh action begins.
 
