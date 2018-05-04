@@ -995,8 +995,16 @@
       href: report-server/get-started.md
   - name: Quickstart
     items: 
-    - name: "Create a Power BI report for a report server"
-      href: report-server/quickstart-create-powerbi-report.md
+    - name: Admins
+      items: 
+      - name: "Create a Power BI report for a report server"
+        href: report-server/quickstart-create-powerbi-report.md
+      - name: "Find your product key"
+        href: report-server/find-product-key.md
+    - name: Developers
+      items:  
+      -   name: "Embed reports"
+          href: report-server/quickstart-embed.md
   - name: Tutorials
     items: 
     - name: Admins
@@ -1055,8 +1063,6 @@
       href: https://go.microsoft.com/fwlink/?linkid=851310
     - name: "Using the mobile app"
       href: https://go.microsoft.com/fwlink/?linkid=848711
-    - name: "Quickstart: Embed reports"
-      href: report-server/quickstart-embed.md
     - name: "Troubleshoot scheduled refresh"
       href: report-server/scheduled-refresh-troubleshoot.md
   - name: Administrator handbook
@@ -1093,8 +1099,6 @@
       href: https://go.microsoft.com/fwlink/?linkid=848724
     - name: "Develop extensions"
       href: https://go.microsoft.com/fwlink/?linkid=848723
-    - name: "Quickstart: Embed reports"
-      href: report-server/quickstart-embed.md
   - name: Reference
     items: 
     - name: "REST API"
