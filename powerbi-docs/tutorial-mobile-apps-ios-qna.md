@@ -39,10 +39,9 @@ The Q&A virtual analyst is a conversational BI experience that accesses underlyi
 In this tutorial, you will:
 
 > [!div class="checklist"]
+> * Install the Power BI mobile app for iOS
 > * Download a Power BI sample dashboard and report
 > * See what featured insights the mobile app suggests
-> * Type questions about your data
-> * Speak questions about your data
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
@@ -113,5 +112,8 @@ OK, you're ready to view the sample on your iOS device.
 6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
 
 ## Next steps
-* [Q&A in the Power BI service](power-bi-q-and-a.md)
-* Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)
+
+You've tried the Q&A virtual assistant in the Power BI mobile apps for iOS. Learn more about Q&A in the Power BI service.
+> [!div class="nextstepaction"]
+> [Q&A in the Power BI service](/.power-bi-q-and-a.md)
+
