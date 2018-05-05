@@ -26,14 +26,14 @@ LocalizationGroup: Gateways
 
 An on-premises data gateway is software that you install within an on-premises network; it facilitates access to data in that network. In this tutorial you build a report in Power BI Desktop based on sample data imported from SQL Server. You then publish the report to the Power BI service, and configure a gateway so the service can access the on-premises data. This access means the service can refresh the data to keep the report up to date.
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Create a report from data in SQL Server
 > * Publish the report to the Power BI Service
 > * Add SQL Server as a gateway data source
 > * Refresh the data in the report
+
+If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 
 ## Prerequisites
@@ -83,7 +83,7 @@ You start by adding sample data to SQL Server, so you can use that data in the r
     INSERT INTO Product VALUES('2018-05-07','Digital SLR','SLR Camera',26576.00,88)
     ```
 
-3. Select the data from the table to verify what you inserted.
+3. Select the data from the table to verify it.
 
     ```sql
     SELECT * FROM Product
@@ -94,7 +94,7 @@ You start by adding sample data to SQL Server, so you can use that data in the r
 
 ## Build and publish a report
 
-Now that you have sample data in SQL Server, you connect to SQL Server in Power BI Desktop and build a report based on that data. You then publish the report to the Power BI service.
+Now that you have sample data to work with, you connect to SQL Server in Power BI Desktop and build a report based on that data. You then publish the report to the Power BI service.
 
 1. In Power BI Desktop, on the **Home** tab, select **Get Data** > **SQL Server**.
 
@@ -108,7 +108,7 @@ Now that you have sample data in SQL Server, you connect to SQL Server in Power 
 
     ![Select Product table](media/service-gateway-sql-tutorial/select-product-table.png)
 
-5. In the Power BI Desktop **Report** view, in the **Visualizations** pane select the **Stacked column chart**.
+5. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
 
     ![Stacked column chart](media/service-gateway-sql-tutorial/column-chart.png)    
 
@@ -133,7 +133,7 @@ Now that you have sample data in SQL Server, you connect to SQL Server in Power 
 
 ## Add SQL Server as a gateway data source
 
-In Power BI Desktop, you connect directly to SQL Server, but the service requires a gateway to act as a bridge. Now you add your instance of SQL Server as a data source for the gateway you created in a previous article (listed under [Prerequisites](#prereqisites)). 
+In Power BI Desktop, you connect directly to SQL Server, but the Power BI service requires a gateway to act as a bridge. Now you add your instance of SQL Server as a data source for the gateway you created in a previous article (listed under [Prerequisites](#prereqisites)). 
 
 1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-sql-tutorial/icon-gear.png) > **Manage gateways**.
 
@@ -179,7 +179,7 @@ You have a report published to the Power BI service, and the SQL Server data sou
 
 2. In the Power BI Service, in the left navigation pane, select **My Workspace**.
 
-3. Under **Datasets**, select **more** (**. . .**) for the **TestGatewayDocs** dataset > **Refresh now**.
+3. Under **Datasets**, for the **TestGatewayDocs** dataset select **more** (**. . .**) > **Refresh now**.
 
     ![Refresh now](media/service-gateway-sql-tutorial/refresh-now.png)
 
@@ -191,8 +191,10 @@ You have a report published to the Power BI service, and the SQL Server data sou
 
 6. Under **Schedule refresh**, set refresh to **On**, then select **Apply**. The dataset is refreshed daily by default.
 
+    ![Schedule refresh](media/service-gateway-sql-tutorial/schedule-refresh.png)
+
 ## Clean up resources
-If you don't want to use the sample data anymore, use `DROP DATABASE TestGatewayDocs` in SSMS. If you don't want to use the SQL Server data source, [remove the data source](service-gateway-manage.md#remove-a-data-source). 
+If you don't want to use the sample data anymore, run `DROP DATABASE TestGatewayDocs` in SSMS. If you don't want to use the SQL Server data source, [remove the data source](service-gateway-manage.md#remove-a-data-source). 
 
 
 ## Next steps
