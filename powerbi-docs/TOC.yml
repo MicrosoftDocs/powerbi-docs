@@ -316,7 +316,7 @@
           href: service-q-and-a-create-featured-questions.md
         - name: "Visualization types in Power BI"
           href: power-bi-visualization-types-for-reports-and-q-and-a.md
-	- name: "Work with the linguistic schema in Power BI Desktop"
+    	  - name: "Work with the linguistic schema in Power BI Desktop"
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
