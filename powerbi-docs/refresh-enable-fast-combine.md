@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 02/06/2018
+ms.date: 05/02/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh
