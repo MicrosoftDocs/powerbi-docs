@@ -46,7 +46,7 @@ Perhaps you view inventory and manufacturing progress in a real-time dashboard i
 A common flow of work in Power BI begins by connecting to data sources and building a report in **Power BI Desktop**. That report is then published from **Desktop** to **Power BI service**, and shared so users in **service** and **mobile** can *consume* (view and interact with) the report. 
 Sometimes, you may want to give colleagues permissions similar to your own (*creator* permissions) so that they can use **service** to edit reports, create dashboards, and share their work too.
 
-It doesn’t always happen this ways, although this is one of the more common workflows, and it shows how the three main Power BI elements complement one another.
+It doesn’t always happen this way, although this is one of the more common workflows, and it shows how the three main Power BI elements complement one another.
 
 But what if you're not ready to move to the cloud, and want to keep your reports behind a corporate firewall?  Read on.
 
