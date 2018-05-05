@@ -996,7 +996,7 @@
   - name: Tutorials
     items: 
     - name: "Explore Power BI Report Server in a VM"
-      href: report-server/quickstart-explore-report-server-web-portal.md
+      href: report-server/tutorial-explore-report-server-web-portal.md
   - name: Concepts
     items: 
     - name: "What's new"
