@@ -26,7 +26,7 @@ Now that you know the basics of Power BI, let's take a look around **Power BI se
 
 - If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-- Read [Power BI service basic concepts](service-basic-concepts)
+- Read [Power BI service basic concepts](service-basic-concepts.md)
 
 ## Open Power BI service and get some data
 We'll grab some sample data to use for our tour of Power BI service. There are all types of sample data we provide for you to explore, and this time we'll use the data about retail stores.    
