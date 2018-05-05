@@ -3,11 +3,11 @@
   - name: Overview
     items: 
     - name: "What is Power BI?"
-      href: service-get-started.md
+      href: power-bi-overview.md
   - name: Quickstart
     items: 
-    - name: "Sign up and sign in"
-      href: service-self-service-signup-for-power-bi.md
+    - name: "Find your way around in Power BI"
+      href: service-the-new-power-bi-experience.md
   - name: Tutorials
     items: 
     - name: "Connect to the online service GitHub"
@@ -316,6 +316,8 @@
           href: service-q-and-a-create-featured-questions.md
         - name: "Visualization types in Power BI"
           href: power-bi-visualization-types-for-reports-and-q-and-a.md
+        - name: "Work with the linguistic schema in Power BI Desktop"
+          href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
         - name: "Organizational content packs: Introduction"
