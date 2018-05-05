@@ -13,7 +13,7 @@ ms.devlang: NA
 ms.topic: quickstart
 ms.component: powerbi-service
 ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/06/2018
 ms.author: mihart
 #customer intent: As a PBI customer or potential customer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started

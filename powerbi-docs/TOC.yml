@@ -288,6 +288,8 @@
           href: service-cortana-enable.md
         - name: "Create featured questions for Power BI Q&A"
           href: service-q-and-a-create-featured-questions.md
+	- name: "Work with the linguistic schema in Desktop"
+          href: power-bi-q-and-a-linguistic-schema.md
     - name: Resources
       items:
         - name: "Tips and tricks for asking questions with Q&A in Power BI"
