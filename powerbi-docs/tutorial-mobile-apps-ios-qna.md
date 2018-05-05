@@ -60,7 +60,7 @@ The first step in the tutorial is to download the Opportunity Analysis sample in
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces**, **My Workspace**.
+2. In the left navigation pane, select **Workspaces** > **My Workspace**.
 
 3. In the lower-left corner select **Get data**.
    
@@ -110,6 +110,23 @@ OK, you're ready to view the sample on your iOS device.
 
     ![Insight 2 chart in focus mode](media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
 6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
+
+## Clean up resources
+
+When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset.
+
+1. Open the Power BI service (app.powerbi.com) and sign in.
+
+2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+
+3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Opportunity Analysis dashboard.
+
+    ![Delete the sample dashboard](media/tutorial-mobile-apps-ios-qna/power-bi-service-delete-opportunity-sample.png)
+
+4. Select the **Reports** tab and do the same for the Opportunity Analysis report.
+
+5. Select the **Datasets** tab and do the same for the Opportunity Analysis dataset.
+
 
 ## Next steps
 
