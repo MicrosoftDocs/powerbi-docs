@@ -38,7 +38,7 @@ These phrasings come in a variety of shapes and sizes. Some correspond directly 
 Linguistic schemas are saved in a YAML format. This format is related to the very popular JSON format but provides a more flexible and easier-to-read syntax. Linguistic schemas can be edited, exported, and imported into Power BI Desktop.
 
 ## Prerequisites
-- f you haven't already read the article on [improving your data model for Q&A](desktop-qna-in-reports.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
+- If you haven't already read the article on [improving your data model for Q&A](desktop-qna-in-reports.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
 
 - There are two sides to Q&A.  The first side is the preparation, or "modeling."  The second side is asking questions and exploring the data, or "consuming." In some companies, employees known as Data Modelers or IT Admins may be the ones to assemble the datasets, create the data models, and publish the datasets to Power BI.  While a second set of employees may be the ones to "consume" the data online.  In other companies, these roles may be combined. 
 
@@ -51,7 +51,7 @@ Linguistic schemas are saved in a YAML format. This format is related to the ver
 
 ### Set up an editor for YAML files
 We recommend using Visual Studio Code to edit linguistic schema YAML files. Visual Studio Code includes out-of-the-box support for YAML files and can be extended to specifically validate the Power BI linguistic schema format.
-1. Install [Visual Studio Code](https://code.visualstudio.com/)    
+1. Install [Visual Studio Code](https://code.visualstudio.com/).    
 
 2. Select the sample linguistic schema that you saved earlier: [YAML file](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
 4. Select **Visual Studio Code** and **Always use this app to open .yaml files**.
@@ -96,8 +96,8 @@ When you first export your linguistic schema from Desktop, most or all of the co
 When you import your linguistic schema file back into Power BI Desktop, anything that is marked **State: Generated** is actually ignored (and later regenerated) so if you’d like to make a change to some generated content, make sure to remove the corresponding **State: Generated** tag as well. Similarly, if you want to remove some generated content, you’ll need to change the **State: Generated** tag to **State: Deleted** so that it won’t be regenerated when you import your linguistic schema file.
 
 1. Open the dataset in Power BI Desktop *Relationship view*. 
-2. Select the **Modeling** tab and choose **Export linguistic schema**
-3. Select Visual Code (or another editor)
+2. Select the **Modeling** tab and choose **Export linguistic schema**.
+3. Select Visual Code (or another editor).
 4. Make your edits and save the YAML file.
 5. From Desktop, select **Relationship view > Modeling tab > Linguistic Schema > Imort linguistic schema**.
 6. Navigate to the location where you saved the edited YAML file and select it. A Success message lets you know that the linguistic schema YAML file was successfully imported.
@@ -353,7 +353,7 @@ Binding: {Table: Customers}
 Another example would be adding the alternate phrasing “employees sell customers products” to the “customers buy products from employees” relationship. Note that you do not need to add variations like “employees sell products **to customers**” or “products are sold to customers **by employees**”, since the “by” and “to” variations of the subject and indirect object are inferred automatically by Q&A.
 
 ## Considerations and troubleshooting
-- If you make a change to a .lsdl.yaml file that does not conform to the linguistic schema format, you would now see validation squiggles like this to indicate issues: 
+If you make a change to a .lsdl.yaml file that does not conform to the linguistic schema format, you would now see validation squiggles like this to indicate issues: 
 
     ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
