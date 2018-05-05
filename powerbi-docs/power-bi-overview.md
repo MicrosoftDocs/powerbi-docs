@@ -1,6 +1,6 @@
 ---
 title: What is Power BI?
-description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile.
+description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server.
 services: powerbi
 author: mihart
 manager: kfile
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.component: powerbi-service
-ms.date: 05/01/2018
+ms.date: 05/04/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -46,7 +46,16 @@ Perhaps you view inventory and manufacturing progress in a real-time dashboard i
 A common flow of work in Power BI begins by connecting to data sources and building a report in **Power BI Desktop**. That report is then published from **Desktop** to **Power BI service**, and shared so users in **service** and **mobile** can *consume* (view and interact with) the report. 
 Sometimes, you may want to give colleagues permissions similar to your own (*creator* permissions) so that they can use **service** to edit reports, create dashboards, and share their work too.
 
-It doesn’t always happen that way, although that is one of the more common workflows, and it shows how the three main Power BI elements complement one another.
+It doesn’t always happen this ways, although this is one of the more common workflows, and it shows how the three main Power BI elements complement one another.
+
+But what if you're not ready to move to the cloud, and want to keep your reports behind a corporate firewall?  Read on.
+
+## On-premises reporting with Power BI Report Server
+Create, deploy, and manage Power BI, mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
+
+![](media/power-bi-overview/power-bi-report-server2.png)
+
+Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that’s viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready. 
 
 ## Next steps
 
