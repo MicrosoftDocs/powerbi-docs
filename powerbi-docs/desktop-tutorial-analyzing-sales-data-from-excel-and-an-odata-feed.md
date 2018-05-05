@@ -34,7 +34,7 @@ In this tutorial, you learn how to combine data from two data sources: an Excel 
 
 First, import the product data from the Excel Products.xlsx workbook into Power BI Desktop.
 
-1. [Download the Products.xlsx Excel workbook Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), and save it as **Products.xlsx**.
+1. [Download the Products.xlsx Excel workbook](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), and save it as **Products.xlsx**.
    
 2. Select the dropdown arrow next to **Get Data** in the **Home** tab of the Power BI Desktop ribbon, and then select **Excel** from the **Most Common** dropdown. 
    
@@ -168,7 +168,7 @@ When you are satisfied with your transformed data, select **Close & Apply** > **
 
 ![Close & Apply](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 
-Once the data is loaded, the queries appear in the **Fields** list in the Power BI Desktop Report view .
+Once the data is loaded, the queries appear in the **Fields** list in the Power BI Desktop Report View .
 
 ![Queries in Fields list](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
@@ -178,7 +178,7 @@ Power BI Desktop does not require you to combine queries to report on them. Howe
 
 The Orders and Products datasets in this tutorial share a common *ProductID* field, so there is a relationship between them based on that column. 
 
-1. In Power BI Desktop Report view, select **Manage Relationships** in the **Relationships** area of the **Home** ribbon tab.
+1. In Power BI Desktop Report View, select **Manage Relationships** in the **Relationships** area of the **Home** ribbon tab.
    
    ![Manage Relationships ribbon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
@@ -196,13 +196,13 @@ You can also view and manage the relationships between your queries by selecting
 
 ![Relationship View](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
-To get back to Report view from Relationships view, select the **Report View** icon. 
+To get back to Report View from Relationships View, select the **Report View** icon. 
 
 ![Report View icon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 
 ## Create visualizations using your data
 
-In Power BI Desktop Report view, you can create a variety of visualizations to gain insights from your data. You can build reports with multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand your data. For more information about viewing and editing reports in Power BI Service (your site), see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
+In Power BI Desktop Report View, you can create a variety of visualizations to gain insights from your data. You can build reports with multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand your data. For more information about viewing and editing reports in Power BI Service (your site), see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
 
 You can use both of your data sets, and the relationship between them, to help visualize and and analyze your sales data. 
 
