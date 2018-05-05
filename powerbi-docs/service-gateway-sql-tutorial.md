@@ -24,7 +24,7 @@ LocalizationGroup: Gateways
 
 # Tutorial: Connect to on-premises data in SQL Server
 
-An on-premises data gateway is software that you install within an on-premises network; it facilitates access to data in that network. In this tutorial you build a report in Power BI Desktop based on sample data in SQL Server. You then publish the report to the Power BI service, and configure a gateway so the the service can access the on-premises data. This access means the service can refresh the data to keep the report up to date.
+An on-premises data gateway is software that you install within an on-premises network; it facilitates access to data in that network. In this tutorial you build a report in Power BI Desktop based on sample data imported from SQL Server. You then publish the report to the Power BI service, and configure a gateway so the service can access the on-premises data. This access means the service can refresh the data to keep the report up to date.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
@@ -33,7 +33,7 @@ In this tutorial, you learn how to:
 > * Create a report from data in SQL Server
 > * Publish the report to the Power BI Service
 > * Add SQL Server as a gateway data source
-> * Schedule refresh for the SQL Server data
+> * Refresh the data in the report
 
 
 ## Prerequisites
@@ -124,7 +124,7 @@ Now that you have sample data in SQL Server, you connect to SQL Server in Power 
 
 7. Save the report with the name "TestGatewayDocs.pbix".
 
-8. On the **Home** tab select **Publish**, then select **My Workspace** > **Select**. Sign in to the Power BI service if you're asked to do so. 
+8. On the **Home** tab select **Publish** > **My Workspace** > **Select**. Sign in to the Power BI service if you're asked to do so. 
 
     ![Publish report](media/service-gateway-sql-tutorial/publish-report.png)
 
@@ -133,13 +133,63 @@ Now that you have sample data in SQL Server, you connect to SQL Server in Power 
 
 ## Add SQL Server as a gateway data source
 
+In Power BI Desktop, you connect directly to SQL Server, but the service requires a gateway to act as a bridge. Now you add your instance of SQL Server as a data source for the gateway you created in a previous article (listed under [Prerequisites](#prereqisites)). 
+
+1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-sql-tutorial/icon-gear.png) > **Manage gateways**.
+
+    ![Manage gateways](media/service-gateway-sql-tutorial/manage-gateways.png)
+
+2. Select **Add data source**, and enter "test-sql-source" for **Data Source Name**.
+
+    ![Add data source](media/service-gateway-sql-tutorial/add-data-source.png)
+
+3. Select a **Data Source Type** of **SQL Server**, then enter other values as shown.
+
+    ![Enter data source settings](media/service-gateway-sql-tutorial/data-source-settings.png)
+
+    | Option | Value |
+    | ---    | ---   |
+    | **Data Source Name**       | test-sql-source      |
+    | **Data Source Type**       | SQL Server      |
+    | **Server**       |  The name of your SQL Server instance (must be identical to what you specified in Power BI Desktop)    |
+    | **Database**       | TestGatewayDocs      |
+    | **Authentication Method**       | Windows      |
+    | **Username**        |  The account, such as michael@contoso.com, you use to connect to SQL Server     |
+    | **Password**       |  The password for the account you use to connect to SQL Server    |
+
+4. Select **Add**. You see *Connection Successful* when the process succeeds.
+
+    ![Connection successful](media/service-gateway-sql-tutorial/connection-successful.png)
+
+    You can now use this data source to include data from SQL Server in your Power BI dashboards and reports.
 
 
 ## Configure and use data refresh
 
-Set up scheduled refresh
-Update the data / refresh (does on-demand refresh work with gateways?)
+You have a report published to the Power BI service, and the SQL Server data source configured. With these in place, you now make a change in the Product table, and that change flows through the gateway to the published report. You also configure scheduled refresh to handle any future changes.
 
+1. In SSMS, update data in the Product table.
+
+    ```sql
+    UPDATE Product
+	SET Sales = 32508, Quantity = 252
+	WHERE Product='Compact Digital'     
+
+    ```
+
+2. In the Power BI Service, in the left navigation pane, select **My Workspace**.
+
+3. Under **Datasets**, select **more** (**. . .**) for the **TestGatewayDocs** dataset > **Refresh now**.
+
+    ![Refresh now](media/service-gateway-sql-tutorial/refresh-now.png)
+
+4. Select **My Workspace** > **Reports** > **TestGatewayDocs**. See how the update flowed through, and the sales leader is now **Compact Digital**. 
+
+    ![Updated data](media/service-gateway-sql-tutorial/updated-data.png)
+
+5. Select **My Workspace** > **Reports** > **TestGatewayDocs**. Select **more** (**. . .**) > **Schedule refresh**.
+
+6. Under **Schedule refresh**, set refresh to **On**, then select **Apply**. The dataset is refreshed daily by default.
 
 ## Clean up resources
 If you don't want to use the sample data anymore, use `DROP DATABASE TestGatewayDocs` in SSMS. If you don't want to use the SQL Server data source, [remove the data source](service-gateway-manage.md#remove-a-data-source). 
@@ -151,7 +201,7 @@ In this tutorial, you learned how to:
 > * Create a report from data in SQL Server
 > * Publish the report to the Power BI Service
 > * Add SQL Server as a gateway data source
-> * Schedule refresh for the SQL Server data
+> * Refresh the data in the report
 
 Advance to the next article to learn more
 > [!div class="nextstepaction"]
