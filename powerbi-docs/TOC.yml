@@ -796,8 +796,6 @@
       href: mobile-apps-for-mobile-devices.md
   - name: Quickstart
     items: 
-    - name: "View a dashboard in the mobile app"
-      href: mobile-apps-find-content-mobile-devices.md
   - name: Tutorials
     items: 
     - name: "Tutorial: Ask questions in the iOS mobile apps"
@@ -1073,8 +1071,6 @@
         href: report-server/add-comments.md
     - name: Report server for admins
       items: 
-      - name: "Quickstart: Install"
-        href: report-server/quickstart-install-report-server.md
       - name: "Install a report server"
         href: report-server/install-report-server.md
       - name: "Find your product key"

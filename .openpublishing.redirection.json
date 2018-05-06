@@ -16,6 +16,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/quickstart-install-report-server.md", 
+            "redirect_url": "/power-bi/install-report-server",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md", 
             "redirect_url": "/power-bi/refresh-troubleshooting-refresh-scenarios",
             "redirect_document_id": true
