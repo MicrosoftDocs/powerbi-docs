@@ -995,6 +995,8 @@
     items: 
     - name: "What is Power BI Report Server?"
       href: report-server/get-started.md
+    - name: "Compare Power BI Report Server and the service"
+      href: report-server/compare-report-server-service.md
   - name: Tutorials
     items: 
     - name: "Explore Power BI Report Server in a VM"
