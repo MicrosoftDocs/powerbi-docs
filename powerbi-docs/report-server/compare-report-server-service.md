@@ -15,37 +15,38 @@ ms.custom: mvc
 ---
 # Comparing Power BI Report Server and the Power BI service
 
-
+Power BI Report Server and the Power BI service have a lot of similarities and some key differences. This table explains which is which.
 
 | Features | Power BI Report Server | Power BI Service | Notes
 |---------|---------|---------|---------|
-| Deployment | On-premises or Hosted Cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (Hosted Cloud) if licensed through Power BI Premium
-| Source Data | Cloud and/or On-Prem | Cloud and/or On-Prem |  
+| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium
+| Source Data | Cloud and/or on-premises | Cloud and/or on-premises |  
 | License | Power BI Premium or SQL Server EE with SA | Power BI Pro and/or Power BI Premium |  
-| Lifecycle | Modern Lifecycle Policy | Fully Managed Service |  
-| Release cycle | Once in 4 months | Once in a month | Latest features and fixes come to Power BI Service first. Most of the core functionalities make their way to the Power BI Report Server in the next couple of releases but some features are only meant for the Power BI Service.
-| Create Power BI reports | Yes | Yes |  
-| Gateway required | No | Yes for on-prem data sources |  
-| Real-time streaming | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-real-time-streaming
-| Dashboards | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-dashboards
-| Content packs | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-organizational-content-pack-introduction
-| Q&A | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-q-and-a
-| Quick Insight | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-insights
-| Analyze in Excel | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-analyze-in-excel
-| Paginated reports | Yes | No | Even though paginated reports are not available in Power BI Service, you can pin your paginated reports (SSRS) to Power BI Dashboards - https://docs.microsoft.com/en-us/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards
-| Mobile BI | Yes | Yes | https://powerbi.microsoft.com/en-us/mobile/
-| ARC GIS Maps | No | Yes | http://www.esri.com/software/arcgis/arcgis-maps-for-power-bi
-| Email Subscriptions | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-report-subscribe
+| Lifecycle | Modern lifecycle policy | Fully managed service |  
+| Release cycle | Once every 4 months | Once a month | Latest features and fixes come to Power BI Service first. Most core functionality makes its way to Power BI Report Server in the next couple of releases, but some features are only meant for the Power BI service.
+| Create Power BI reports in Power BI Desktop | Yes | Yes |  
+| Create Power BI reports in the browser | No | Yes |  
+| Gateway required | No | Yes for on-premises data sources |  
+| Real-time streaming | No | Yes | [Real-time streaming in Power BI](../service-real-time-streaming.md)
+| Dashboards | No | Yes | [Dashboards in the Power BI service](../service-dashboards.md) 
+| Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) 
+| Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) 
+| Q&A | No | Yes | [Q&A in Power BI service and Power BI Desktop](../power-bi-q-and-a.md) 
+| Quick insights | No | Yes | [Automatically generate data insights with Power BI](../service-insights.md) 
+| Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
+| Paginated reports | Yes | No | Paginated reports aren't available in the Power BI service, but you can [pin paginated report items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+| Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../mobile-apps-for-mobile-devices.md) 
+| ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../power-bi-visualization-arcgis.md)
+| Email subscriptions for Power BI reports | No | Yes | [Subscribe to a report or dashboard in Power BI service](../service-report-subscribe.md) 
+| Email subscriptions for paginated reports | Yes | No | [E-Mail delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services) after 
 | Data Alerts | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-set-data-alerts
 | Row level Security | Only through data source in Direct Query Mode | Available in both Direct Query (data source) & Import mode | https://docs.microsoft.com/en-us/power-bi/service-admin-rls
 | Full Screen mode | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-fullscreen-mode
 | Advanced O365 collaboration | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-collaborate-power-bi-workspace
 | R visuals | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-r-visuals
-| Distribute group of reports using apps | No | Yes | https://powerbi.microsoft.com/en-us/blog/distribute-to-large-audiences-with-power-bi-apps/
 | Preview Features | No | Yes | https://docs.microsoft.com/en-us/power-bi/service-preview-features
 | Custom Visuals | Yes | Yes | https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals
-| Power BI Desktop | Version optimized for Report Server and is available for download along with Report Server | Version optimized for Power BI Service and is available for download monthly | Power BI Desktop for Report Server - https://powerbi.microsoft.com/en-us/report-server/ 
-|   |   |   | Power BI Desktop for Service - https://powerbi.microsoft.com/en-us/desktop/
+| Power BI Desktop | Version optimized for Report Server and is available for download along with Report Server | Version optimized for Power BI Service and is available for download monthly | Power BI Desktop for Report Server - https://powerbi.microsoft.com/en-us/report-server/ <br> Power BI Desktop for Service - https://powerbi.microsoft.com/en-us/desktop/
 
 
 
