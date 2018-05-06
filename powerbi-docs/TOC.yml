@@ -796,8 +796,6 @@
       href: mobile-apps-for-mobile-devices.md
   - name: Quickstart
     items: 
-    - name: "View a dashboard in the mobile app"
-      href: mobile-apps-find-content-mobile-devices.md
   - name: Tutorials
     items: 
     - name: "View on-premises reports in the mobile apps"
@@ -824,6 +822,8 @@
         href: mobile-ipad-app-get-started.md
       - name: "Get started with the Power BI for Android tablet app"
         href: mobile-android-tablet-app-get-started.md
+      - name: "Find content in mobile apps"
+        href: mobile-apps-find-content-mobile-devices.md
       - name: "View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
       - name: "Share a dashboard from the Power BI mobile apps"
@@ -1071,8 +1071,6 @@
         href: report-server/add-comments.md
     - name: Report server for admins
       items: 
-      - name: "Quickstart: Install"
-        href: report-server/quickstart-install-report-server.md
       - name: "Install a report server"
         href: report-server/install-report-server.md
       - name: "Find your product key"

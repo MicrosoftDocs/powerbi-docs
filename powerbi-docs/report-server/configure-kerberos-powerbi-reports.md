@@ -220,7 +220,7 @@ While this configuration should work in most cases, with Kerberos, there can be 
 
 ## Next steps
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
