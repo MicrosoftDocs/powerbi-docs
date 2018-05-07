@@ -12,10 +12,10 @@ qualityfocus:  ''
 qualitydate: ''
 
 ms.service: powerbi
+ms.component: powerbi-service
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: mihart
 

@@ -6,7 +6,7 @@ keywords:
 author: maggiesMSFT
 ms.author: maggies
 ms.component: powerbi-report-server
-ms.date: 04/27/2018
+ms.date: 05/06/2018
 ms.topic: overview
 ms.service: powerbi
 manager: kfile
@@ -60,7 +60,7 @@ Take advantage of Power BI Report Server programming features to extend and cust
 More [Report Server developer documentation](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
 
 ## Next steps
-[Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
