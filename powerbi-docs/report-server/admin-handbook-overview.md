@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 05/05/2018
 ms.author: maghan
 
 ---
@@ -33,9 +33,8 @@ You will need to install Power BI Report Server to start using it. We have infor
 Before you start to install, upgrade or migrate to Power BI Report Server, take a look at the [system requirements](system-requirements.md) for the report server.
 
 ### Installing
-If you are deploying a new Power BI Report Server, you use the following documents to help you. A quickstart is available to jump right in. Or, you can look at the install document for full details.
+If you are deploying a new Power BI Report Server, you use the following document to help you. 
 
-* [Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)
 * [Install Power BI Report Server](install-report-server.md)
 
 ### Migration
@@ -52,7 +51,7 @@ The majority of your configuration will occur within the Report Server Configura
 Security and protection are important to every organization. You can learn about authentication, authorization, roles and permissions over in the [security](https://docs.microsoft.com/sql/reporting-services/security/reporting-services-security-and-protection) documentation.
 
 ## Next steps
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [How to find your report server product key](find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

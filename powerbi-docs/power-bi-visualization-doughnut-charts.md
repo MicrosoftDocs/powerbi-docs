@@ -1,6 +1,6 @@
 ---
-title: Doughnut charts in Power BI (Tutorial)
-description: 'Tutorial: Doughnut charts in Power BI'
+title: Doughnut charts in Power BI
+description: 'Doughnut charts in Power BI'
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -21,7 +21,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Doughnut charts in Power BI (Tutorial)
+# Doughnut charts in Power BI
 A  doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
 ## Create a doughnut chart

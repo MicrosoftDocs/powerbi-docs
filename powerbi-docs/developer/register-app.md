@@ -69,9 +69,6 @@ Here's how to register your application with the Power BI App Registration Tool:
 * Select **Power BI Service** to verify the permissions that you selected from the App registration site.
 * Select **Grant Permissions**.
 
-
-
-
 You can now use the registered application as part of your custom application to interact with the Power BI service.
 
 > [!IMPORTANT]

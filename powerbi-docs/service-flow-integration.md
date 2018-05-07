@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Power BI integration with Microsoft Flow'
+title: 'Power BI integration with Microsoft Flow'
 description: Learn how to create Flows triggered by Power BI data alerts.
 services: powerbi
 documentationcenter: ''

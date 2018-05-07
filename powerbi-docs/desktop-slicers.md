@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -39,7 +39,7 @@ You can add a slicer to a report by clicking on the **slicer** visual in the **V
 
 ![](media/desktop-slicers/desktop-slicers_02.png)
 
-Slicers behave similarly in both **Power BI Desktop** and the **Power BI service**. For a tutorial about using slicers, see [slicers in the Power BI service (tutorial)](power-bi-visualization-slicers.md).
+Slicers behave similarly in both **Power BI Desktop** and the **Power BI service**. For an article  about using slicers, see [slicers in the Power BI service](power-bi-visualization-slicers.md).
 
 ## Synchronize slicers across report pages
 
@@ -63,7 +63,7 @@ While your selection of slicers can be synchronized, other selections such as st
 
 You might also be interested in the following articles:
 
-* [Slicers in the Power BI service (tutorial)](power-bi-visualization-slicers.md)
+* [Slicers in the Power BI service](power-bi-visualization-slicers.md)
 * [Use the numeric range slicer in Power BI Desktop](desktop-slicer-numeric-range.md)
 * [Use a relative date slicer and filter in Power BI Desktop](desktop-slicer-filter-date-range.md)
 

@@ -56,7 +56,7 @@ He can add it to his report canvas along with the number of shipments. Very quic
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## Learn more
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

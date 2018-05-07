@@ -731,7 +731,7 @@ To do this, open the Formatting pane, expand **Y-Axis** and set **Show Secondary
 
 For more information:
 
-* [Tutorial: Combo chart in Power BI](power-bi-visualization-combo-chart.md)
+* [Combo chart in Power BI](power-bi-visualization-combo-chart.md)
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### Scatter Chart
@@ -809,8 +809,8 @@ KPIs show the value, status, goal, variance from the goal and trend in the same 
 
 For more information, see:
 
-* [Tutorial: Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
-* [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md)
+* [Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [KPIs in Power BI](power-bi-visualization-kpi.md)
 
 ## Conclusion
 Now it’s time for you to put these best practices to the test.  Keep in touch and share your own best practices. Don’t agree with our recommendations or found a great reason to “break the rules?”  We’d love to hear about those as well.  
