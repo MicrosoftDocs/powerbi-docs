@@ -88,8 +88,8 @@ Read more about [working with subscriptions in the web portal](https://docs.micr
 
 ## Next steps
 [User handbook](user-handbook-overview.md)  
-[Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
-[Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
+[Paginated reports](quickstart-create-paginated-report.md)  
+[Power BI reports](quickstart-create-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

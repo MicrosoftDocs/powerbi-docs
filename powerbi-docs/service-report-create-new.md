@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Create a new report from a dataset '
+title: 'Create a new report from a dataset '
 description: Create a new Power BI report from a dataset.
 services: powerbi
 documentationcenter: ''

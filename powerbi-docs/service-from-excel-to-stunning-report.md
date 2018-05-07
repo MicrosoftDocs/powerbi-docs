@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: From Excel workbook to stunning report in no time'
-description: 'Tutorial: From Excel workbook to stunning report in no time'
+title: 'From Excel workbook to stunning report in no time'
+description: 'From Excel workbook to stunning report in no time'
 services: powerbi
 documentationcenter: ''
 author: mihart

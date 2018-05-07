@@ -1,6 +1,6 @@
 ---
-title: Slicers in Power BI (Tutorial)
-description: 'Tutorial: Slicers in Power BI'
+title: Slicers in Power BI
+description: 'Slicers in Power BI'
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -22,7 +22,7 @@ ms.author: v-thepet
 
 LocalizationGroup: Visualizations
 ---
-# Slicers in Power BI (Tutorial)
+# Slicers in Power BI
 You want your report readers to be able to look at overall sales metrics, but also highlight performance for individual District Managers and different time frames. You could create separate reports or comparative charts, or you could use slicers. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
 
 This tutorial uses the free [Retail Analysis Sample](sample-retail-analysis.md) to walk you through creating, formatting, and using list and date range slicers. Have fun discovering ways to format and use slicers. 

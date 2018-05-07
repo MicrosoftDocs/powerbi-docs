@@ -63,8 +63,8 @@ You create these paginated reports with [Report Builder](https://docs.microsoft.
 
 ## Next steps
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
-[Quickstart: Paginated reports](quickstart-create-paginated-report.md)  
-[Quickstart: Power BI reports](quickstart-create-powerbi-report.md)
+[Paginated reports](quickstart-create-paginated-report.md)  
+[Power BI reports](quickstart-create-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
