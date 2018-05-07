@@ -20,7 +20,7 @@ ms.date: 05/07/2018
 ms.author: maggies
 
 ---
-# Manage content in the Power BI Report Server web portal 
+# Manage content in the web portal 
 The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
 
 ![Report Server web portal](media/getting-around/report-server-web-portal.png)
