@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Dynamic row level security with Analysis services tabular model in Power BI'
-description: 'Tutorial: Dynamic row level security with Analysis services tabular model'
+title: 'Dynamic row level security with Analysis services tabular model in Power BI'
+description: 'Dynamic row level security with Analysis services tabular model'
 services: powerbi
 documentationcenter: ''
 author: selvarms
@@ -21,7 +21,7 @@ ms.author: selvar
 
 LocalizationGroup: Connect to data
 ---
-# Tutorial: Dynamic row level security with Analysis services tabular model
+# Dynamic row level security with Analysis services tabular model
 This tutorial demonstrates the steps necessary to implement **row level security** within your **Analysis Services Tabular Model**, and shows how to use it in a Power BI report. The steps in this tutorial are designed to let you follow along and learn the steps necessary by completing on a sample dataset.
 
 During this tutorial, the following steps are described in detail, helping you understand what you need to do to implement dynamic row level security with Analysis Services tabular model:

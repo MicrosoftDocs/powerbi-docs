@@ -21,8 +21,11 @@ ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # Guidance for deploying a data gateway for Power BI
-This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the **On-premises data gateway** setup.
+
+This article provides guidance and considerations for deploying a data gateway in your network environment. A **gateway** is software that facilitates access to data that resides on a private, on-premises network, for subsequent use in a cloud service like Power BI. This article walks you through the deployment, and provides guidance for, the 
+**On-premises data gateway** setup.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 

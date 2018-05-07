@@ -150,7 +150,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 [User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
