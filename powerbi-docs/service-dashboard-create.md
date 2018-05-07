@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Create a Power BI dashboard from a report
+title: Create a Power BI dashboard from a report
 description: Create a Power BI dashboard from a report
 services: powerbi
 documentationcenter: ''

@@ -1,6 +1,6 @@
 ---
-title: Filled Maps (Choropleths) in Power BI (Tutorial)
-description: Documentation - tutorial on creating Filled Maps (Choropleths) in Power BI
+title: Filled Maps (Choropleths) in Power BI
+description: Documentation on creating Filled Maps (Choropleths) in Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -22,7 +22,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Filled maps (choropleths) in Power BI (Tutorial)
+# Filled maps (choropleths) in Power BI
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
 ![](media/power-bi-visualization-filled-maps-choropleths/large_map.png)

@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Combo Chart
+title: Combo Chart in Power BI
 description: This tutorial about Combo charts explains when to use them and how to build them in Power BI service and Desktop.
 services: powerbi
 documentationcenter: ''
@@ -22,7 +22,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Combo Chart in Power  (Tutorial)
+# Combo Chart in Power BI
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
 Combo charts can have one or two Y axes.
