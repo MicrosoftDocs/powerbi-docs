@@ -106,9 +106,8 @@ If your report server is an earlier version, you need the corresponding version 
 ## Next steps
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
 
-[Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
+[Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Get started with Power BI Desktop](../desktop-getting-started.md)  
-Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml#step-2)  
 [User handbook overview, Power BI Report Server](user-handbook-overview.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
