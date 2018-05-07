@@ -131,7 +131,7 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 There are so many great resources for creating reports in Power BI Desktop. These links are a good starting point.
 
 * [Get started with Power BI Desktop](../desktop-getting-started.md)
-* Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml#step-2)
+* Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 
 ### Power BI Report Server

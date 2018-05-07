@@ -35,7 +35,7 @@ To download the .pbix file, follow these steps:
 2. From the menubar, select **File > Download report**.
    
    > [!NOTE]
-   > The report must have been [created using Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) after November 23, 2016 - and updated since then - to be able to download the report. If it hasn't, the *Download Report* menu option in Power BI service is grayed out.
+   > The report must have been [created using Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) after November 23, 2016 - and updated since then - to be able to download the report. If it hasn't, the *Download Report* menu option in Power BI service is grayed out.
    > 
    > 
 3. While the .pbix file is being created, a status banner displays the progress. When the file is ready, you'll be asked to open or save the .pbix file. The name of the file matches the title of the report.

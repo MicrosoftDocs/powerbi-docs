@@ -51,7 +51,7 @@ The procedure for adding a hyperlink depends on whether you've imported the data
    * Select the chart to make it active.
    * Select the paint roller icon ![](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
    * Expand **Values**, locate **URL icon** and turn it to **On.**
-6. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml#step-2) and open the report in Power BI service. The hyperlinks will work there as well.
+6. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ### For data connected with DirectQuery
 You won't be able to create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn those into hyperlinks.
@@ -59,7 +59,7 @@ You won't be able to create a new column in DirectQuery mode.  But if your data 
 1. In Report view, create a table using a field that contains URLs.
 2. Select the column, and in the **Modeling** tab, choose the dropdown for **Data Category**.
 3. Select **Web URL**. The hyperlinks will be blue and underlined.
-4. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml#step-2) and open the report in Power BI service. The hyperlinks will work there as well.
+4. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
 Another way to add hyperlinks to your Power BI tables and matrixes is to create the hyperlinks in the dataset before you import/connect to that dataset from Power BI. This example uses an Excel workbook.
