@@ -163,7 +163,7 @@ Besides setting the language for the Power BI Desktop application, you can also 
 - The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
 
 > [!NOTE]
-> Power BI's internal data storage engine is not case-sensitive (or kana-sensitive) so 'a' and 'A' will be treated as equivalent.
+> Power BI’s model currently uses a locale that is not case-sensitive (or kana-sensitive) so “ABC” and “abc” will be treated as equivalent. If “ABC” is loaded into the database first, other strings that differ only by case such as “Abc” won’t be loaded as a separate value.
 > 
 >
 
