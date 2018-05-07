@@ -886,7 +886,7 @@
       href: developer/what-can-you-do.md
   - name: Tutorials
     items: 
-    - name: "Embed content with app owns data"
+    - name: "Embed content for customers"
       href: developer/embed-sample-for-customers.md
   - name: Concepts
     items: 

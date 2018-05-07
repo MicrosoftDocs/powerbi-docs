@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.custom: mvc
 manager: kfile
-#Customer intent: As an ISV developer, I want to embed my report, dashboard or tile into an application so that I can share with customers.
+#Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data. customers.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your customers
-As an ISV developer you can embed reports, dashbards, or tiles into an application so that you can deliver information to your customers. To integrate a report, dashboard, or tile into an application, you use the **Power BI** API, an **Azure Active Directory (Azure AD)** authorization **access token** and an embed token.
+As an ISV developer you can embed reports, dashbards, or tiles into an application so that your customers can share data. To integrate a report, dashboard, or tile into an application, you use the **Power BI** API, an **Azure Active Directory (Azure AD)** authorization **access token** and an embed token.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -220,7 +220,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
     * Fill in the pbuUsername with the master user Power BI account.
     * Fill in the pbiPassword with the password for the master user Power BI account.
 
-3. Run the application
+3. Run the application 
 
     ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
 
