@@ -11,6 +11,7 @@ ms.topic: overview
 ms.service: powerbi
 manager: kfile
 ms.custom: mvc
+#customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.
 ---
 # What is Power BI Report Server?
 
