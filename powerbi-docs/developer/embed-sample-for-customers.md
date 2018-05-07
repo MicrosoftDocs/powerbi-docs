@@ -184,7 +184,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
-    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-026-1.png)
 
 2. Open sample PBIX report in **Power BI Desktop**
 
