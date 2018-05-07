@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/02/2018
+ms.date: 05/07/2018
 ms.author: maggies
 
 ---
@@ -33,24 +33,8 @@ You can view the web portal in any modern browser. In the web portal, reports an
 
 In the web portal you can browse the report server folders or search for specific reports. You can view a report, its general properties and past copies of the report that are captured in report history. Depending on your permissions, you might also be able to subscribe to reports for delivery to your e-mail inbox or a shared folder on the file system.
 
-## Web portal tasks
-You can use the web portal for a number of tasks, including these:
-
-* View, search, print, and subscribe to reports.
-* Create, secure, and maintain the folder hierarchy to organize items on the server.
-* Configure report execution properties, report history, and report parameters.
-* Create shared schedules and shared data sources to make schedules and data source connections more manageable.
-* Create data-driven subscriptions to roll out reports to a large recipient list.
-* Create linked reports to reuse and re-purpose an existing report in different ways.
-* Download and open common tools such as Power BI Desktop (Report Server), Report Builder, and Mobile Report Publisher.
-* [Create KPIs](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
-* Send feedback or make feature requests.
-* [Branding the web portal](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal)
-* [Working with KPIs](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services)
-* [Working with shared datasets](https://docs.microsoft.com/sql/reporting-services/work-with-shared-datasets-web-portal)
-
 ## Web portal roles and permissions
-The web portal is a web application that runs in a browser. When you start the web portal, the pages, links, and options you see vary based on the permissions you have on the report server. If you're assigned to a role with full permissions, you have access to the complete set of application menus and pages for managing a report server. If you're assigned to a role with permissions to view and run reports, you only see the menus and pages you need for those activities. You can have different role assignments for different report servers, or even for the various reports and folders on a single report server.
+The web portal application runs in a browser. When you start the web portal, the pages, links, and options you see vary based on the permissions you have on the report server. If you're assigned to a role with full permissions, you have access to the complete set of application menus and pages for managing a report server. If you're assigned to a role with permissions to view and run reports, you only see the menus and pages you need for those activities. You can have different role assignments for different report servers, or even for the various reports and folders on a single report server.
 
 ## Start the web portal
 1. Open your web browser.

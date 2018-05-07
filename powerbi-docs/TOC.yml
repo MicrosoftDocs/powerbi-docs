@@ -20,8 +20,6 @@
       items: 
       - name: "Power BI - basic concepts"
         href: service-basic-concepts.md
-      - name: "Getting around in Power BI - navigation experience"
-        href: service-the-new-power-bi-experience.md
       - name: "Searching and sorting content"
         href: service-navigation-search-filter-sort.md
       - name: "Related content"
@@ -144,8 +142,6 @@
           href: service-connect-to-azure-search.md
         - name: "Azure Security Center"
           href: service-connect-to-azure-security-center.md
-        - name: "Bing"
-          href: service-connect-to-bing.md
         - name: "Circuit ID"
           href: service-connect-to-circuit-id.md
         - name: "ClickDimensions"
@@ -1013,16 +1009,12 @@
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
+    - name: "Report server for admins"
+      href: report-server/admin-handbook-overview.md
     - name: Report server basics
       items: 
-      - name: "Report server basics"
-        href: report-server/user-handbook-overview.md
-      - name: "Advanced Power BI reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848708
       - name: "Power BI report scheduled refresh"
         href: report-server/scheduled-refresh.md
-      - name: "Advanced paginated reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848709
       - name: "Power BI report (.pbix) data sources"
         href: report-server/data-sources.md
       - name: "Paginated report (.rdl) data sources"
@@ -1033,10 +1025,6 @@
         href: https://go.microsoft.com/fwlink/?linkid=848711
       - name: "Troubleshoot scheduled refresh"
         href: report-server/scheduled-refresh-troubleshoot.md
-    - name: Report server for admins
-      items: 
-      - name: "Report server for admins"
-        href: report-server/admin-handbook-overview.md
     - name: Report server for developers
       items: 
       - name: "Report server for developers"
@@ -1049,6 +1037,8 @@
         href: report-server/quickstart-embed.md
   - name: How to
     items: 
+    - name: "Install Power BI Desktop"
+      href: report-server/install-powerbi-desktop.md
     - name: Report server basics
       items: 
       - name: "Create a Power BI report for a report server"
@@ -1075,8 +1065,6 @@
         href: report-server/install-report-server.md
       - name: "Find your product key"
         href: report-server/find-product-key.md
-      - name: "Install Power BI Desktop"
-        href: report-server/install-powerbi-desktop.md
       - name: "Upgrade a report server"
         href: report-server/upgrade.md
       - name: "Migrate a report server"

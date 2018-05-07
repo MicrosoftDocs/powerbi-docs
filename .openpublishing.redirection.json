@@ -16,6 +16,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-bing.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/quickstart-install-report-server.md", 
             "redirect_url": "/power-bi/install-report-server",
             "redirect_document_id": true
@@ -43,6 +48,11 @@
         {
             "source_path": "powerbi-docs/report-server/release-notes.md", 
             "redirect_url": "/power-bi/report-server/whats-new",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/report-server/user-handbook-overview.md", 
+            "redirect_url": "/power-bi/report-server/get-started",
             "redirect_document_id": true
         },
         {
