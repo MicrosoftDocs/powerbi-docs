@@ -56,7 +56,7 @@ When you register an application, you receive a **Client ID**. The **Client ID**
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-    ![Azure Portal Main](media/embed-sample-for-customers/Azure-Portal-033.png)
+    ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-03.png)
 
 2. In the left-hand navigation pane, choose **More Services** and select **App Registrations**.
 
@@ -117,7 +117,7 @@ You need to be logged in with the *master* account, used for embedding, which ne
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-    ![Azure Portal Main](media/embed-sample-for-customers/Azure-Portal-033.png)
+    ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-03.png)
 
 2. In the left-hand navigation pane, choose **More Services** and select **Power BI Embedded**.
 
