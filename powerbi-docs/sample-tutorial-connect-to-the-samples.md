@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Using the Power BI samples.
-description: 'Tutorial: Using the Power BI samples'
+title: Using the Power BI samples
+description: 'Using the Power BI samples'
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -21,7 +21,7 @@ ms.author: mihart
 
 LocalizationGroup: Samples
 ---
-# The Power BI samples, a tutorial
+# The Power BI samples
 
 We recommend starting with the article [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
 
