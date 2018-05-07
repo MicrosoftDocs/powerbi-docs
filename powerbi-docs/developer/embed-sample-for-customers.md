@@ -3,6 +3,7 @@ title: Embed Power BI content into an application for your customers
 description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your customers.
 services: powerbi
 author: markingmyname
+ms.author: maghan
 ms.date: 05/07/2018
 ms.topic: tutorial
 ms.service: powerbi
@@ -134,7 +135,7 @@ You need to be logged in with the *master* account, used for embedding, which ne
 | A4 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
 | A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
 | A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
-
+</br>
 4. Now you can view the new **Power BI Embedded dedicated capacity** created.
 
     ![PBIE dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-019.png)
