@@ -13,7 +13,7 @@ ms.devlang: NA
 ms.topic: quickstart
 ms.component: powerbi-service
 ms.workload: powerbi
-ms.date: 05/06/2018
+ms.date: 05/07/2018
 ms.author: mihart
 #customer intent: As a PBI customer or potential customer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -38,8 +38,7 @@ We'll grab some sample data to use for our tour of Power BI service. There are a
 
     ![select the sample](media/service-the-new-power-bi-experience/power-bi-retail-sample.png)
 
-    Power BI service imports the sample and displays the dashboard. Dashboards are something that differentiate Power BI service from Power BI Desktop. The sample also includes a report and a dataset, which we'll visit later.  
-
+    Power BI service imports the sample and displays the dashboard. Dashboards are something that differentiate Power BI service from Power BI Desktop. The sample also includes a report and a dataset, which we'll visit later.
 
     ![](media/service-the-new-power-bi-experience/power-bi-dashboard.png)
 
