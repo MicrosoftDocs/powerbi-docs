@@ -1,5 +1,5 @@
 ---
-title: KPI visuals (Tutorial)
+title: KPI visuals
 description: create KPI in Power BI service and Power BI Desktop
 services: powerbi
 documentationcenter: ''
@@ -22,7 +22,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# KPI visuals (Tutorial)
+# KPI visuals
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 ## When to use a KPI

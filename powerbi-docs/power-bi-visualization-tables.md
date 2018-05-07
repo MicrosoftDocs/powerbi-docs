@@ -1,5 +1,5 @@
 ---
-title: Table visualizations in Power BI reports and dashboards (Tutorial)
+title: Table visualizations in Power BI reports and dashboards
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 services: powerbi
 documentationcenter: ''
@@ -22,7 +22,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Working with tables in Power BI reports and dashboards (Tutorial)
+# Working with tables in Power BI reports and dashboards
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
 
 ![](media/power-bi-visualization-tables/table.png)

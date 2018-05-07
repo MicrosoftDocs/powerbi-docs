@@ -49,6 +49,6 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 Read more about [configuring Power BI mobile apps for Android and iOS with Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## Next steps
-Quickstart: [View a dashboard in the mobile apps](mobile-apps-find-content-mobile-devices.md)
+[View a dashboard in the mobile apps](mobile-apps-find-content-mobile-devices.md)
 
 
