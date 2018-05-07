@@ -220,7 +220,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)    
 
-    * Fill in the **pbuUsername** with the master user Power BI account.
+    * Fill in the **pbiUsername** with the master user Power BI account.
     * Fill in the **pbiPassword** with the password for the master user Power BI account.
 
 3. Run the application!
