@@ -1,5 +1,5 @@
 ---
-title: Quickstart - The report editor...Take a tour
+title: The report editor...Take a tour
 description: The report editor...Take a tour.
 services: powerbi
 documentationcenter: ''

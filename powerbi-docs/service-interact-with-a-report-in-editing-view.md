@@ -1,5 +1,5 @@
 ---
-title: Interact with a report in Editing view (Tutorial)
+title: Interact with a report in Editing view
 description: Interact with a report in report Editing view in Power BI service
 services: powerbi
 documentationcenter: ''

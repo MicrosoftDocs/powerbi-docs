@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 05/02/2018
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -228,5 +228,3 @@ After you perform all these steps, you will have a Sales Report that combines da
 * [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
-
-
