@@ -12,7 +12,7 @@ manager: kfile
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data. customers.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your customers
-As an ISV developer you can embed reports, dashbards, or tiles into an application so that your customers can share data. To integrate a report, dashboard, or tile into an application, you use the **Power BI** API, an **Azure Active Directory (Azure AD)** authorization **access token** and an embed token.
+As an ISV developer you can embed reports, dashbards, or tiles into an application so that your customers can share data. This is typically an app owns data scenario where you need one master account to access Power BI content. To integrate a report, dashboard, or tile into an application, you use the **Power BI** API, an **Azure Active Directory (Azure AD)** authorization **access token** and an embed token.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -208,15 +208,15 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    * Fill in the **clientId** information with the Application Id from Azure.
+    * Fill in the **clientId** information with the **Application ID** from Azure.
 
     ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    * Fill in the **groupId** information with the app workspace GUID from Power BI.
+    * Fill in the **groupId** information with the **app workspace GUID** from Power BI.
 
     ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    * Fill in the **reportId** information with the report GUID from Power BI.
+    * Fill in the **reportId** information with the **report GUID** from Power BI.
 
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)    
 
@@ -225,7 +225,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 3. Run the application!
 
-    * First select **Run**. 
+    * First select **Run**.
 
     ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
 
@@ -233,9 +233,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
  
-Now you can view the report in yor aplication.
-
-   ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+    Now you can view the report in yor aplication.
+</br>
+    ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## Next steps
 * For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
