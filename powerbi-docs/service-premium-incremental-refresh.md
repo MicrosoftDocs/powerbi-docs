@@ -45,7 +45,7 @@ Large datasets with potentially billions of rows may not fit into Power BI Deskt
 
 #### RangeStart and RangeEnd parameters
 
-To leverage incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved names **RangeStart** and **RangeEnd**.
+To leverage incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**.
 
 In the Power Query Editor, select **Manage Parameters** to define the parameters with default values.
 
@@ -138,7 +138,7 @@ Since incremental refresh is a Premium only feature, the publish dialog only all
 
 ![Publish to the service](media/service-premium-incremental-refresh/publish.png)
 
-You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker.
+You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker because they use incremental refresh.
 
 ## Query timeouts
 
