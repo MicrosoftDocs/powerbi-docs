@@ -792,9 +792,13 @@
     items: 
     - name: "What are the Power BI mobile apps?"
       href: mobile-apps-for-mobile-devices.md
+  - name: Quickstarts
+    items:
+    - name: "Explore dashboards and reports"
+      href: mobile-apps-quickstart-view-dashboard-report.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Ask questions in the iOS mobile apps"
+    - name: "Ask questions in the iOS mobile apps"
       href: tutorial-mobile-apps-ios-qna.md
   - name: Concepts
     items: 

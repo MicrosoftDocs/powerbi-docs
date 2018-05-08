@@ -1,6 +1,6 @@
 ---
-title: 'Quickstart: View dashboards and reports in the Power BI mobile apps'
-description: In this quickstart, you interact with a sample dashboard and report in the Power BI mobile apps.
+title: 'Quickstart: Explore dashboards and reports in the Power BI mobile apps'
+description: In this quickstart, you explore a sample dashboard and report in the Power BI mobile apps.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -19,8 +19,8 @@ ms.date: 05/08/2018
 ms.author: maggies
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
-# Quickstart: View dashboards and reports in the Power BI mobile apps
-In this quickstart, you interact with a sample dashboard and report in the Power BI mobile app on an Android phone. You can also follow along in the other mobile apps. 
+# Quickstart: Explore dashboards and reports in the Power BI mobile apps
+In this quickstart, you explore a sample dashboard and report in the Power BI mobile app on an Android phone. You can also follow along in the other mobile apps. 
 
 Applies to:
 
