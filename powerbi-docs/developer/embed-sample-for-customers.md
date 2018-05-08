@@ -235,7 +235,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
  
     
     * Now you can view the report in yor aplication.
-    
+
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## Next steps
