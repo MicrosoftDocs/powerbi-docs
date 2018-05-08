@@ -20,15 +20,17 @@ ms.author: maggies
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: View dashboards and reports in the Power BI mobile apps
-In this quickstart, you interact with a sample dashboard and report in the Power BI mobile app for Android devices. You can also follow along in the other mobile apps. 
+In this quickstart, you interact with a sample dashboard and report in the Power BI mobile app on an Android phone. You can also follow along in the other mobile apps. 
 
 Applies to:
 
-| ![iPhone](media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android phone](media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android tablet](media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10 devices](media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| [iPhones](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPads](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android tablets](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Windows 10 devices](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| ![iPhone](media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android ](media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 devices](media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhone | iPad | Android | Windows 10 |
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. Reports are an interactive view of your data, with visuals representing different findings and insights from that data. 
+
+![Report in landscape mode](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
 ## Prerequisites
 
@@ -94,6 +96,8 @@ OK, you're ready to view the sample on your Android device.
 
 4. Tap the star icon ![Favorite star icon](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard.
 
+    When you make a favorite in the mobile app, it's a favorite in the Power BI service, and vice versa.
+
 4. Scroll down and tap the This Year's Sales, Last Year's Sales filled line chart.
 
     ![Tap a tile to go to focus mode](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
@@ -136,7 +140,11 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 2. In the left navigation pane, select **Workspaces** > **My Workspace**.
 
+    Notice the yellow star indicating it's a favorite?
+
 3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Retail Analysis dashboard.
+
+    ![Select the Delete icon](media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-delete-retail.png)
 
 4. Select the **Reports** tab and do the same for the Retail Analysis report.
 
