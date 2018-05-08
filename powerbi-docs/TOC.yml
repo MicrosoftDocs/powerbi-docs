@@ -1153,6 +1153,8 @@
     items: 
     - name: "Power BI Premium - what is it?"
       href: service-premium.md
+    - name: "Premium capacity memory use, optimization"
+      href: service-premium-understand-how-it-works.md
     - name: "Manage Power BI Premium"
       href: service-admin-premium-manage.md
     - name: "Support for large datasets"
