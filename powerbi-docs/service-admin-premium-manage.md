@@ -203,7 +203,7 @@ For the most part, users will not even need to know they are in a Premium capaci
 
 ![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
 
-## Power BI Report Server product key)
+## Power BI Report Server product key
 Within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchase a Power BI Premium SKU.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
