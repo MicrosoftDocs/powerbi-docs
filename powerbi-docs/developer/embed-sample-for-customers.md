@@ -184,7 +184,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
-    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-026-1.png)
 
 2. Open sample PBIX report in **Power BI Desktop**
 
@@ -208,22 +208,22 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    * Fill in the clientId information with the Application Id from Azure.
+    * Fill in the **clientId** information with the Application Id from Azure.
 
     ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    * Fill in the groupId information with the app workspace GUID from Power BI.
+    * Fill in the **groupId** information with the app workspace GUID from Power BI.
 
     ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    * Fill in the reportId information with the report GUID from Power BI.
+    * Fill in the **reportId** information with the report GUID from Power BI.
 
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)    
 
-    * Fill in the pbuUsername with the master user Power BI account.
-    * Fill in the pbiPassword with the password for the master user Power BI account.
+    * Fill in the **pbiUsername** with the master user Power BI account.
+    * Fill in the **pbiPassword** with the password for the master user Power BI account.
 
-3. Run the application 
+3. Run the application!
 
     ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
 
