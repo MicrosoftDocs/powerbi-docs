@@ -58,7 +58,7 @@ These versions support the Power BI for iOS app:
 ### Download the Opportunity Analysis sample
 The first step in the tutorial is to download the Opportunity Analysis sample in the Power BI service.
 
-1. Open the Power BI service (app.powerbi.com) and sign in.
+1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
 2. In the left navigation pane, select **Workspaces** > **My Workspace**.
 
@@ -78,7 +78,7 @@ The first step in the tutorial is to download the Opportunity Analysis sample in
   
    ![Opportunity Analysis Sample - Connect](media/tutorial-mobile-apps-ios-qna/opportunity-connect.png)
    
-5. Power BI imports the sample, adding a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
    
    ![Opportunity Analysis Sample dashboard](media/tutorial-mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
 

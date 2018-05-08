@@ -838,8 +838,6 @@
       items: 
       - name: "Get started with the Power BI for Android app"
         href: mobile-android-app-get-started.md
-      - name: "Get started with the Power BI for Android tablet app"
-        href: mobile-android-tablet-app-get-started.md
       - name: "Fixing 'your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
     - name: iOS
