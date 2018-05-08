@@ -52,8 +52,8 @@ When you purchase Power BI Premium SKUs, your tenant will receive the correspond
 ## Capacity admins
 > [!NOTE]
 > Capacity admins, for Power BI Embedded capacity, are defined within the Microsoft Azure portal.
-> 
-> 
+>
+>
 
 When you are assigned as a capacity admin to a capacity, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins (Power BI Premium only) or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
 
@@ -78,14 +78,14 @@ If you have available v-cores, setup your new capacity by doing the following.
 1. Select **Set up new capacity**.
 2. Give your capacity a **name**.
 3. Define who the capacity admin is for this capacity.
-   
+
     Capacity admins do not have to be a Power BI admin or an Office 365 Global admin. For more information, see [Power BI Premium capacity admins](#capacity-admins)
 4. Select your capacity size. Available options are dependent on how many available v-cores you have. You can't select an option that is larger than what you have available.
-   
+
     ![Available Premium capacity sizes](media/service-admin-premium-manage/premium-capacity-size.png)
 5. Select **Set up**.
 
-![Set up a new capacity](media/service-admin-premium-manage/set-up-capacity.png)
+    ![Set up a new capacity](media/service-admin-premium-manage/set-up-capacity.png)
 
 Capacity admins, as well as Power BI admins and Office 365 Global Admins, will then see the capacity listed within the admin portal.
 
@@ -100,15 +100,15 @@ Within the Premium capacity management screen, you can select the **gear icon (s
 
 > [!NOTE]
 > Power BI Embedded capacity settings are managed within the Microsoft Azure portal.
-> 
-> 
+>
+>
 
 ### Change capacity size (Power BI Premium)
 Power BI admins and Office 365 Global admins change Power BI Premium capacity size by selecting **Change capacity size**. Capacity admins who are not a Power BI admin or Office 365 Global admin will not have this option.
 
 ![Change Power BI Premium capacity size](media/service-admin-premium-manage/change-capacity-size.png)
 
-The **Change capacity size** screen lets you upgrade or downgrade your capacity size if you have the available resources. Administrators are free to create, resize and delete nodes, so long as they have the requisite number of v-cores. 
+The **Change capacity size** screen lets you upgrade or downgrade your capacity size if you have the available resources. Administrators are free to create, resize and delete nodes, so long as they have the requisite number of v-cores.
 
 P SKUs cannot be down graded to EM SKUs. You can hover over disabled options which provide an explanation.
 
@@ -126,31 +126,41 @@ You can assign additional **Capacity admins** for Power BI Premium capacities. A
 
 > [!NOTE]
 > For Power BI Embedded capacity, capacity admins are assigned within the Microsoft Azure portal.
-> 
-> 
+>
+>
 
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## Usage measurements (Power BI Premium)
-For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good (green)**, **Marginal (yellow)** and **Critical (red)**. We suggest monitoring these metrics to ensure that your users see good performance while using Premium content.
+For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
 
-**Power BI Embedded capacity usage is monitored within the Azure portal.**
+![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
 
-![](media/service-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
+> [!NOTE]
+> Power BI Embedded capacity usage is monitored within the Azure portal.
 
 | Metric | Description |
 | --- | --- |
-| CPU |CPU usage of your cores. |
-| Memory |Represents the memory pressure of your backend cores. Specifically, this is a metric of how often models are evicted from memory due to memory pressure from usage of multiple models. |
-| DQ/s |* We limit the total number of DirectQuery and live connection queries per second.<br/>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br/>* DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/>* This applies equally to on-premises and cloud connections. |
+| CPU |Number of times CPU exceeded 80% utilization. |
+| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
+| Memory Usage |Average memory usage, represented in gigabytes (GB). |
+| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
 
-When these metrics are marginal/critical, your users may see degradation of report and refresh performance, especially during peak load times.
+Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
 
-Metrics reflect utilization over the past week, and are designed to count instances when the capacity is overloaded, and is therefore providing less-than-optimal performance for your users.
+![Detailed usage chart CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
 
-Each occurrence of *utilization over 80%* should be considered a potential case of performance degradation. Too many cases is a good indicator of significant performance problems for users.
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detailed usage chart Memory Size](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## Assign a workspace to a capacity
 There are a few ways that a workspace could be assigned to a capacity.
@@ -162,7 +172,7 @@ Capacity admins, along with Power BI admins and Office 365 global admins, can bu
 
 1. Select **Assign workspaces**. This is listed in multiple places and will all perform the same task.
 2. Select either **The entire organization's workspaces** or **Specific workspaces by user**.
-   
+
    | Selection | Description |
    | --- | --- |
    | **The entire organization's workspaces** |Assigning the entire organization's workspaces to Premium capacity will assign all App Workspaces and My Workspaces, in your organization, to this Premium capacity. In addition, all current and future users will have the permission to reassign individual workspaces to this capacity. |
@@ -177,23 +187,23 @@ You can also assign an app workspace to a Premium capacity from the settings of 
 To move a workspace into capacity, you must have admin permissions to that workspace, and also capacity assignment permissions to that capacity. Notice that workspace admins can always remove a workspace from Premium capacity.
 
 1. Edit an app workspace by selecting the **ellipsis (...)** and selecting **Edit workspace**.
-   
+
     ![Edit workspace from ellipsis context menu](media/service-admin-premium-manage/edit-app-workspace.png)
 2. Within **Edit workspace**, expand **Advanced**.
 3. If you have been given capacity assignment permissions to any capacity, you will have the option to turn **Premium** on for this workspace.
 4. Select the capacity that you want to assign this App workspace to.
-   
+
     ![Capacity selection drop down](media/service-admin-premium-manage/app-workspace-advanced.png)
 5. Select **Save**.
 
 Once saved, the workspace, and all its contents, will be moved into Premium capacity without any experience interruption for end users.
 
 ## What Premium looks like for users
-For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity. 
+For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity.
 
 ![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
 
-## Power BI Report Server product key)
+## Power BI Report Server product key
 Within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchase a Power BI Premium SKU.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
@@ -208,4 +218,3 @@ For more information, see [Install Power BI Report Server](report-server/install
 Share published apps with Free users when you assign the workspace to a Premium capacity. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
