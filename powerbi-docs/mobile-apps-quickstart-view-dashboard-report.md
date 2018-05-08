@@ -1,5 +1,5 @@
 ---
-title: Quickstart: View dashboards and reports in the Power BI mobile apps
+title: 'Quickstart: View dashboards and reports in the Power BI mobile apps'
 description: In this quickstart, you interact with a sample dashboard and report in the Power BI mobile apps.
 services: powerbi
 documentationcenter: ''
