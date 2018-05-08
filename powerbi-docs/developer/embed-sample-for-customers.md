@@ -233,10 +233,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
  
-    
-    * Now you can view the report in yor aplication.
+Now you can view the report in yor aplication.
 
-    ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+   ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## Next steps
 * For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
