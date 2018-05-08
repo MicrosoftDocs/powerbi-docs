@@ -120,22 +120,13 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     ![Dashboard portrait view](media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-    Or just turn your phone sideways to view them in landscape mode on your phone.
-
-    > [AZURE.TIP] If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
+    If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 1. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
 3. To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**.   
-
-### View dashboards in landscape mode on your Android phone
-You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
-
-![Dashboard landscape](media/mobile-apps-view-dashboard/power-bi-android-landscape-dashboard.png)
-
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
 
 ## View dashboards on your Android tablet
 1. Open the Power BI app on your Android tablet and sign in.
