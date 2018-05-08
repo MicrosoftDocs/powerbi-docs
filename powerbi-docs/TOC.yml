@@ -558,6 +558,8 @@
       items: 
       - name: "Data sources in Power BI Desktop"
         href: desktop-data-sources.md
+      - name: "Connect to a Web page by example (preview)"
+        href: desktop-connect-to-web-by-example.md
       - name: "Connect to datasets in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks into Power BI Desktop"
@@ -1151,6 +1153,8 @@
     items: 
     - name: "Power BI Premium - what is it?"
       href: service-premium.md
+    - name: "Premium capacity memory use, optimization"
+      href: service-premium-understand-how-it-works.md
     - name: "Manage Power BI Premium"
       href: service-admin-premium-manage.md
     - name: "Support for large datasets"
