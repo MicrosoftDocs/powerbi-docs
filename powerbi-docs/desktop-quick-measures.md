@@ -138,9 +138,10 @@ And, once you do have the measure perfected, you can rename it however you'd lik
 ## Limitations and considerations
 There are a few limitations and considerations to keep in mind.
 
-* **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or most Live connections (SSAS live connections are supported, as previously explained).
+* **Quick measures** are only available if you can modify the model, which isn't the case when you're working with some Live connections (SSAS tabular live connections are supported, as previously explained).
 * The measure that's added to the **Fields** well can be used with any visual in the report.
 * You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
+* Time intelligence quick measures aren't available when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that get sent to your data source.
 
 > [!WARNING]
 > Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
@@ -148,7 +149,7 @@ There are a few limitations and considerations to keep in mind.
 > 
 
 ### Time intelligence and Quick measures
-Beginning with the October 2017 update to **Power BI Desktop**, you can use your own custom date tables with time intelligence **Quick measures**. If your data model has a custom date table, you can use the primary date column in that table for time intelligence quick measures. You *must* ensure that when the model was built, that primary date column in that table was marked as a Date table, as described in [this article](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
+Beginning with the October 2017 update to **Power BI Desktop**, you can use your own custom date tables with time intelligence **Quick measures**. If you're using an external tabular model then ensure that when the model was built, that primary date column in that table was marked as a Date table, as described in [this article](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). If you're importing your own date table then make sure to mark it as a date table, as described in [this article](https://docs.microsoft.com/power-bi/desktop-date-tables)
 
 ### Additional information and examples
 We anticipate providing examples and guidance for each of the **Quick measures** calculations, so please check back soon for updates on that focused article.
