@@ -130,7 +130,7 @@ OK, you're ready to view the sample on your Android device.
 
     ![New email message with snapshot and link](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-send-snapshot.png)
 
-    You can share this snapshot with anyone, in or out of your organization. If they're in your organization and have their own Power BI report, they'll be able to open the Retail Analysis sample report, too.
+    You can share this snapshot with anyone, in or out of your organization. If they're in your organization and have their own Power BI account, they'll be able to open the Retail Analysis sample report, too.
 
 ## Clean up resources
 
