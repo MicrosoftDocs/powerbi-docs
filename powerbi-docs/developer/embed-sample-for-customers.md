@@ -12,7 +12,7 @@ manager: kfile
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your customers
-With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application so that your customers can share data. This is typically an **ISV developer** scenario using an **app owns data** structure. **App owns data** means embedding Power BI content for your own customers. For example, the user of the Power BI content can view reports, dashboard or tiles without needing to log-in to **Power BI**. This tutorial demonstrates how to integrate or embed a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using **app owns data**.
+With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application so that your customers can share data. This is typically an **ISV developer** scenario using an **app owns data** structure. **App owns data** means embedding Power BI content for your own customers. For example, the user of the Power BI content can view reports, dashboards or tiles without needing to log-in to **Power BI**. This tutorial demonstrates how to integrate or embed a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using **app owns data**.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
