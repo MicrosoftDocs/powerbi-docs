@@ -34,7 +34,7 @@ The following image shows a bar chart visual for annual sales. When you right-cl
 
 ![Expand context menu](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-menu.png)
 
-> !NOTE]
+> [!NOTE]
 > As an alternative to right-clicking on a bar, you can select the *Expand* button on the top left of the visualization.
 
   ![Expand button](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
