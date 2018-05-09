@@ -16,7 +16,7 @@ description: Power BI Documentation
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
-                                <a href="service-get-started.md">
+                                <a href="power-bi-overview.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -35,7 +35,7 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="desktop-getting-started.md">
+                                <a href="desktop-what-is-desktop.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
