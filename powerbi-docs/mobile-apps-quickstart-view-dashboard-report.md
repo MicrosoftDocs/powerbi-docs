@@ -40,7 +40,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ### Install the Power BI for Android app
 [Download the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
-Power BI works on a number of different Android devices, running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
+Power BI works on Android devices running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
 
 ### Download the Retail Analysis sample
 The first step in the quickstart is to download the Retail Analysis sample in the Power BI service.
@@ -57,23 +57,23 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 
 3. In the lower-left corner select **Get data**.
    
-    ![Get Data](media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
+    ![Get Data](media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
 
 3. On the Get Data page, select the **Samples** icon.
    
-   ![Samples icon](media/tutorial-mobile-apps-ios-qna/power-bi-samples-icon.png)
+   ![Samples icon](media/mobile-apps-quickstart-view-dashboard-report/power-bi-samples-icon.png)
 
 4. Select the **Retail Analysis sample**.
  
-    ![Retail Analysis Sample](media/tutorial-mobile-apps-ios-qna/power-bi-rs.png)
+    ![Retail Analysis Sample](media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
  
 8. Select **Connect**.  
   
-   ![Retail Analysis Sample - Connect](media/tutorial-mobile-apps-ios-qna/retail16.png)
+   ![Retail Analysis Sample - Connect](media/mobile-apps-quickstart-view-dashboard-report/retail16.png)
    
 5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
    
-   ![Retail Analysis Sample dashboard](media/tutorial-mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
+   ![Retail Analysis Sample dashboard](media/mobile-apps-quickstart-view-dashboard-report/power-bi-service-opportunity-sample.png)
 
 OK, you're ready to view the sample on your Android device.
 
@@ -98,7 +98,7 @@ OK, you're ready to view the sample on your Android device.
 
     When you make a favorite in the mobile app, it's a favorite in the Power BI service, and vice versa.
 
-4. Scroll down and tap the This Year's Sales, Last Year's Sales filled line chart.
+4. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
     ![Tap a tile to go to focus mode](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
 
@@ -124,7 +124,7 @@ OK, you're ready to view the sample on your Android device.
  
     ![Annotate the page](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-annotate.png)
 
-12. Tap Share in the upper-right corner.
+12. Tap **Share** in the upper-right corner.
 
 1. Fill in their email addresses and add a message, if you so desire.  
 
@@ -144,7 +144,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Retail Analysis dashboard.
 
-    ![Select the Delete icon](media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-delete-retail.png)
+    ![Select the Delete icon](media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
 4. Select the **Reports** tab and do the same for the Retail Analysis report.
 
