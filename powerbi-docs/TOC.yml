@@ -792,9 +792,13 @@
     items: 
     - name: "What are the Power BI mobile apps?"
       href: mobile-apps-for-mobile-devices.md
+  - name: Quickstarts
+    items:
+    - name: "Explore dashboards and reports"
+      href: mobile-apps-quickstart-view-dashboard-report.md
   - name: Tutorials
     items: 
-    - name: "Tutorial: Ask questions in the iOS mobile apps"
+    - name: "Ask questions in the iOS mobile apps"
       href: tutorial-mobile-apps-ios-qna.md
   - name: Concepts
     items: 
@@ -840,8 +844,6 @@
       items: 
       - name: "Get started with the Power BI for Android app"
         href: mobile-android-app-get-started.md
-      - name: "Get started with the Power BI for Android tablet app"
-        href: mobile-android-tablet-app-get-started.md
       - name: "Fixing 'your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
     - name: iOS
