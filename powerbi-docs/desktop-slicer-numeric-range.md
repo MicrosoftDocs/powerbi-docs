@@ -61,7 +61,7 @@ A numeric range slicer will snap to whole numbers, unless it is a decimal range.
 
 
 ## Limitations and considerations
-The following limitations and considerations currently apply to the **numeric range slicer**
+The following limitations and considerations currently apply to the **numeric range slicer**:
 
 * The **numeric range slicer** currently filters every underlying row in the data, not any aggregated value. For example, if a *Sales Amount* field is used, each transaction based on *Sales Amount* would be filtered upon, not the sum of *Sales Amount* for each data point of a visual.
 * It does not currently work with Measures.
