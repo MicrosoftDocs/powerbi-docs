@@ -35,6 +35,14 @@ Calling all Excel users and Analysts: work smarter, deliver more value, and focu
 
 [Register to watch on May 9th](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
+**Draw the right insights with Power BI and Visio**
+<br>by Shakun Grover
+<br>*May 22nd 2018 10:00AM PST, 1:00PM EST*
+
+Join us for this webinar to learn how to combine Power BI dashboards and Microsoft Visio diagrams to create powerful visual insights. Visio and Power BI are highly visual and naturally complementary. Visio lets you create illustrative diagrams, such as interconnected workflows and real-world layouts. Power BI helps you build intuitive dashboards using charts and maps to measure key performance indicators and track goals.
+
+[Register to watch on May 22nd](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
+
 **Learn about Power BI Embedded in 20 minutes**
 <br>by Megan Asarrane and Colin Murphy
 <br>*May 23rd 2018 10:00AM PST, 1:00PM EST*
