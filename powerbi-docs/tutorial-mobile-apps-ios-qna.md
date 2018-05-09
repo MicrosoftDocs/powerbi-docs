@@ -17,7 +17,7 @@ ms.devlang: NA
 ms.topic: tutorial
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/08/2018
 ms.author: maggies
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 
@@ -58,9 +58,15 @@ These versions support the Power BI for iOS app:
 ### Download the Opportunity Analysis sample
 The first step in the tutorial is to download the Opportunity Analysis sample in the Power BI service.
 
-1. Open the Power BI service (app.powerbi.com) and sign in.
+1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
+
+1. Select the global navigation icon to open the left navigation.
+
+    ![global navigation icon](media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
 2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+
+    ![My Workspace](media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
 3. In the lower-left corner select **Get data**.
    
@@ -78,7 +84,7 @@ The first step in the tutorial is to download the Opportunity Analysis sample in
   
    ![Opportunity Analysis Sample - Connect](media/tutorial-mobile-apps-ios-qna/opportunity-connect.png)
    
-5. Power BI imports the sample, adding a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
    
    ![Opportunity Analysis Sample dashboard](media/tutorial-mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
 
