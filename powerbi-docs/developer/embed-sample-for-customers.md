@@ -113,11 +113,9 @@ You will need to enable additional permissions for your application in addition 
 | A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
 | A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
-Now you can view the new **Power BI Embedded dedicated capacity** created.
-
+Now you can view the new **Power BI Embedded dedicated capacity**.
 
    ![PBIE dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-019.png)
-
 
 ## Setup your Power BI environment
 
