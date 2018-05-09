@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Customer Profitability sample for Power BI: Take a tour'
+title: 'Customer Profitability sample for Power BI: Take a tour'
 description: 'Customer Profitability sample for Power BI: Take a tour'
 services: powerbi
 documentationcenter: ''
