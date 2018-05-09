@@ -12,7 +12,7 @@ manager: kfile
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your customers
-With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application so that your customers can share data. This is typically an ISV develoepr scenario using app owns data. This tutorial demonstrates how to integrate or embed a report into an application using the Power BI .NET SDK along with the Power BI JavaScript API when using **Power BI Embedded in Azure** for your customers.
+With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application so that your customers can share data. This is typically an **ISV developer** scenario using an **app owns data** structure. **App owns data** means embedding Power BI content for your own customers. For example, the user of the Power BI content can view reports, dashboard or tiles without needing to log-in to **Power BI**. This tutorial demonstrates how to integrate or embed a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using app owns data**.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -41,7 +41,7 @@ You register your application with Azure Active Directory to allow your applicat
  
     ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-3. In the left-hand navigation pane, choose **More Services**, select **App Registrations** under **Security + Identity** and select **New application registration**.
+3. In the left-hand navigation pane, choose **All Services**, select **App Registrations** and then select **New application registration**.
    
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
@@ -52,9 +52,7 @@ You register your application with Azure Active Directory to allow your applicat
 
 ### Apply permissions to your application within Azure Active Directory
 
-You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure Active Directory portal, or programmatically.
-
-You need to be logged in with the *master* account, used for embedding, which needs to be a global admin account.
+You will need to enable additional permissions for your application in addition to what was provided on the app registration page. You need to be logged in with the *master* account, used for embedding, which needs to be a global admin account.
 
 ### Use the Azure Active Directory portal
 
@@ -98,11 +96,11 @@ You need to be logged in with the *master* account, used for embedding, which ne
 
     ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-2. In the left-hand navigation pane, choose **More Services** and select **Power BI Embedded**.
+2. In the left-hand navigation pane, choose **All Services** and select **Power BI Embedded**.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
 
-3. Follow the prompts and fill in the proper information needed to create a new Power BI Embedded Dedicated Capacity, and then select **Create**. When choosing the **Pricing Tier**, review the table below to decide which tier bests suits your needs. Then select **Create** and wait for the resource to complete.
+3. Follow the prompts and fill in the proper information needed to create a new **Power BI Embedded** dedicated capacity, and then select **Create**. When choosing the **Pricing Tier**, review the table below to decide which tier bests suits your needs. Then select **Create** and wait for the resource to complete.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
 
@@ -127,7 +125,7 @@ Now you can view the new **Power BI Embedded dedicated capacity** created.
 
 If you are embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. The *master* account must be an admin of the app workspace.
 
-1. Start by creating the workspace. Select **workspaces** > **Create app workspace**. Create app workspace. This will be the place to put content that your application needs to access.
+1. Start by creating the workspace. Select **workspaces** > **Create app workspace**. This will be the place to put content that your application needs to access.
 
     ![Create Workspace](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
@@ -187,7 +185,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
       ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    * Fill in the **clientId** information with the **Application ID** from Azure. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId** follow these steps:
+    * Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId** follow these steps:
 
         1. Sign into the [Azure portal](https://portal.azure.com).
 
