@@ -41,8 +41,6 @@ To create a **Quick measure**, right-click on a field (any field) in the **Field
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
-Modeling must be available on the dataset currently loaded in order for **Quick measures** to be available. As such, live connections (such as a connection to a Power BI service dataset) will not display the **Quick measures** menu item when the **Fields** list is right-clicked, with the exception of SSAS live connections. 
-
 When using SQL Server Analysis Services (SSAS) live connections, some **Quick measures** are available. **Power BI Desktop** displays only the collection of **Quick measures** that are supported for the version of SSAS to which the connection is made. So, if you are connected to a SSAS live data source, and you do not see certain **Quick measures** in the list, it's because the SSAS version to which you are connected does not support the DAX measure used to implement that **Quick measure**.
 
 When selected from the right-click menu, the following **Quick measures** window appears, allowing you to select the calculation you want and the fields against which you want the calculation to be run.
@@ -141,7 +139,7 @@ There are a few limitations and considerations to keep in mind.
 * **Quick measures** are only available if you can modify the model, which isn't the case when you're working with some Live connections (SSAS tabular live connections are supported, as previously explained).
 * The measure that's added to the **Fields** well can be used with any visual in the report.
 * You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
-* Time intelligence quick measures aren't available when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that get sent to your data source.
+* You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that get sent to your data source.
 
 > [!WARNING]
 > Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
