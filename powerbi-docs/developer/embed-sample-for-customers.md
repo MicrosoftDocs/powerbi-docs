@@ -25,7 +25,7 @@ To get started, you need a **Power BI Pro** account and a **Microsoft Azure** ac
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
-* You need Visual Studio installed (version 2013 or later).
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
 ## Setup your embedded analytics development environment
 
@@ -98,11 +98,11 @@ You will need to enable additional permissions for your application in addition 
 
 2. In the left-hand navigation pane, choose **All Services** and select **Power BI Embedded**.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
+    ![PBIE search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
 
 3. Follow the prompts and fill in the proper information needed to create a new **Power BI Embedded** dedicated capacity, and then select **Create**. When choosing the **Pricing Tier**, review the table below to decide which tier bests suits your needs. Then select **Create** and wait for the resource to complete.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
+    ![PBIE setup](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
@@ -145,7 +145,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
-7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. THen select **Save**.
+7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. Then select **Save**.
 
     ![Adding Members](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
@@ -189,10 +189,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
         ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-        2. In the left-hand navigation pane, choose **More Services** and select **App Registrations**.
+        2. In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
         ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
         3. Select the application that you want to get the **clientId** for.
 
         ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
@@ -226,8 +225,8 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
-## Next steps
-* For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo).
-* More Information about the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
