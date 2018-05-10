@@ -24,22 +24,23 @@ LocalizationGroup: Administration
 
 # Track Power BI service health in Office 365
 
-The Office 365 admin center
+The Office 365 admin center provides important tools for Power BI administrators, including current and historical information about service health. To access this information, you must be in one of the following roles: Power BI Service Administrator, or Office 365 Global Administrator. For more information about roles, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md).
 
 
-Key points to make​
+1. Sign in to the [Office 365 admin center](https://portal.office.com/adminportal).
 
-How to get to the admin center, and in particular the health module​
+2. Select the **Service health** tile.
 
-You don’t need to subscribe to Office 365 to do this, anyone who is a tenant admin or power bi service admin can see this page​
+    ![Service health tile](media/service-admin-health/service-health-tile.png)
 
-How to view history
+    This shows the current state of services that your tenant uses.
 
+3. To see historical data, in the upper right of the list select **View history**, then select **Last 7 days** or **Last 30 days**. To return to current service health, select **View current status**.
 
-1. Sign in to the [Office 365 admin center]().
+4. In the current list select **N advisories** or **N incidents**, and review the results. In the graphic below, you see one of three active advisories.
 
-2. aaa
+    ![Active advisories](media/service-admin-health/active-advisories.png)
 
-3. bbb
+5. To see more information, select **Show details** for an item. In the graphic below, you see additional details, including recent status updates.
 
-4. ccc
+    ![Advisory details](media/service-admin-health/advisory-details.png)
