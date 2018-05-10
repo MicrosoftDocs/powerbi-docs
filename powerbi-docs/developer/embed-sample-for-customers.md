@@ -225,8 +225,8 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
-For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the[PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
-For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application then please visit the [troubleshoot](embedded-troubleshoot.md) page.
+For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
