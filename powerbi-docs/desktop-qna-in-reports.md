@@ -26,6 +26,11 @@ Using common phrases and natural language to ask questions of your data is power
 
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you'll need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A. 
 
+> [!NOTE]
+> Q&A is only available when working with a model that contains **imported** data. Live connections to SSAS and DirectQuery models are not supported.
+>
+>
+
 In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
 
 ## Add missing relationships
