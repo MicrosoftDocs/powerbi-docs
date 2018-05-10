@@ -98,11 +98,11 @@ You will need to enable additional permissions for your application in addition 
 
 2. In the left-hand navigation pane, choose **All Services** and select **Power BI Embedded**.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
+    ![PBIE search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
 
 3. Follow the prompts and fill in the proper information needed to create a new **Power BI Embedded** dedicated capacity, and then select **Create**. When choosing the **Pricing Tier**, review the table below to decide which tier bests suits your needs. Then select **Create** and wait for the resource to complete.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
+    ![PBIE setup](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
@@ -189,10 +189,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
         ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-        2. In the left-hand navigation pane, choose **More Services** and select **App Registrations**.
+        2. In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
         ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
         3. Select the application that you want to get the **clientId** for.
 
         ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
