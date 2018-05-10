@@ -145,7 +145,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
-7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. THen select **Save**.
+7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. Then select **Save**.
 
     ![Adding Members](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
