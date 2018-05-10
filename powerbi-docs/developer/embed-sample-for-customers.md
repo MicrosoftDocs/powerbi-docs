@@ -25,7 +25,7 @@ To get started, you need a **Power BI Pro** account and a **Microsoft Azure** ac
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
-* You need Visual Studio installed (version 2013 or later).
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
 ## Setup your embedded analytics development environment
 
@@ -145,7 +145,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
-7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. THen select **Save**.
+7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. Then select **Save**.
 
     ![Adding Members](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
