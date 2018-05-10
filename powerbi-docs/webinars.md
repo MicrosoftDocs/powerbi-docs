@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/03/2018
+ms.date: 05/09/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -27,13 +27,13 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Register to hear from Power BI experts and participate in live Q&A sessions
 
-**Beyond the Spreadsheet**
-<br>by Gohul Shanmugalingam
-<br>*May 9th 2018 10:00AM PST, 1:00PM EST*
+**Draw the right insights with Power BI and Visio**
+<br>by Shakun Grover
+<br>*May 22nd 2018 10:00AM PST, 1:00PM EST*
 
-Calling all Excel users and Analysts: work smarter, deliver more value, and focus on what matters. Learn how to make beautiful reports people want to use, share data visually in a way that colleagues can understand without an explanation, and make insights accessible to everyone that needs to make sense of information - wherever they are.
+Join us for this webinar to learn how to combine Power BI dashboards and Microsoft Visio diagrams to create powerful visual insights. Visio and Power BI are highly visual and naturally complementary. Visio lets you create illustrative diagrams, such as interconnected workflows and real-world layouts. Power BI helps you build intuitive dashboards using charts and maps to measure key performance indicators and track goals.
 
-[Register to watch on May 9th](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
+[Register to watch on May 22nd](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Learn about Power BI Embedded in 20 minutes**
 <br>by Megan Asarrane and Colin Murphy
@@ -80,6 +80,10 @@ Watch recorded sessions at any time
 **How to Design Visually Stunning Power BI Reports**
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Beyond the Spreadsheet**
+<br>by Gohul Shanmugalingam
+<br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
 **Transforming A Report From Good to GREAT!**
 <br>by Reid Havens

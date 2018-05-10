@@ -74,11 +74,11 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
 **Error: [Unable to combine data] &lt;query part&gt;/&lt;…&gt;/&lt;…&gt; is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.**
 
-**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](refresh-enable-fast-combine.md)
+**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using.
 
 **Error: Data source error: We cannot convert the value "\[Table\]" to type Table.**
 
-**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](refresh-enable-fast-combine.md)
+**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using.
 
 **Error: There is not enough space for this row.**
 
