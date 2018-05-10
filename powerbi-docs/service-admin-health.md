@@ -33,14 +33,14 @@ The Office 365 admin center provides important tools for Power BI administrators
 
     ![Service health tile](media/service-admin-health/service-health-tile.png)
 
-    This shows the current state of services that your tenant uses.
-
-3. To see historical data, in the upper right of the list select **View history**, then select **Last 7 days** or **Last 30 days**. To return to current service health, select **View current status**.
-
-4. In the current list select **N advisories** or **N incidents**, and review the results. In the graphic below, you see one of three active advisories.
+3. In the current list select **N advisories** or **N incidents**, and review the results. In the graphic below, you see one of three active advisories.
 
     ![Active advisories](media/service-admin-health/active-advisories.png)
 
-5. To see more information, select **Show details** for an item. In the graphic below, you see additional details, including recent status updates.
+4. To see more information, select **Show details** for an item. In the graphic below, you see additional details, including recent status updates.
 
     ![Advisory details](media/service-admin-health/advisory-details.png)
+
+    Scroll down to see more info, then close the pane when you're finished.
+
+5. To see historical information across all services, in the upper right of the main list select **View history**. Then select **Last 7 days** or **Last 30 days**. To return to current service health, select **View current status**.
