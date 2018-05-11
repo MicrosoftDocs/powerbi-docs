@@ -24,7 +24,7 @@ LocalizationGroup: Administration
 
 # Track Power BI service health in Office 365
 
-The Office 365 admin center provides important tools for Power BI administrators, including current and historical information about service health. To access this information, you must be in one of the following roles: Power BI Service Administrator, or Office 365 Global Administrator. For more information about roles, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md).
+The Office 365 admin center provides important tools for Power BI administrators, including current and historical information about service health. To access this information, you must be in one of the following roles: Power BI Service Administrator or Office 365 Global Administrator. For more information about roles, see [Administrator roles related to Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 
 1. Sign in to the [Office 365 admin center](https://portal.office.com/adminportal).
