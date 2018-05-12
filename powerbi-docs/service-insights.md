@@ -27,7 +27,7 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on an entire dataset (quick insights) or on a specific dashboard tile (scoped insights). You can even run insights on an insight!
 
-> **NOTE**: Insights do not work with DirectQuery - they only works with data uploaded to Power BI.
+> **NOTE**: Insights does not work with DirectQuery - it only works with data uploaded to Power BI.
 > 
 > 
 
