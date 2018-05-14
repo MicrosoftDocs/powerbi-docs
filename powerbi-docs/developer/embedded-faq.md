@@ -54,7 +54,7 @@ There may be some cases where an ISV (typically large) wants to use a P SKU to g
 
 ### How many embed tokens can I create?
 
-Embed tokens with PRO license are intended for development and dev testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/en-us/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
+Embed tokens with PRO license are intended for development and dev testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
 
 ## Technical
 
@@ -176,7 +176,7 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 
 ### Can I migrate from Power BI Workspace Collection to Power BI Embedded?
 
-1. You can use the migration tool to clone **Power BI Workspace Collection** content to Power BI - https://docs.microsoft.com/en-us/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+1. You can use the migration tool to clone **Power BI Workspace Collection** content to Power BI - https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
 
 2. Start with the **Power BI Embedded** application POC that use Power BI content.
 
@@ -185,7 +185,7 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 >[!Note]
 You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
 
-For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/en-us/power-bi/developer/migrate-from-powerbi-embedded)
+For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 
 ### Is Power BI Workspace Collection on a path to be deprecated?
 
