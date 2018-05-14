@@ -180,11 +180,10 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 
 2. Start with the **Power BI Embedded** application POC that use Power BI content.
 
+3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+
 >[!Note]
 You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
->
-
-3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
 
 For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/en-us/power-bi/developer/migrate-from-powerbi-embedded)
 
