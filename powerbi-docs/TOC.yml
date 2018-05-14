@@ -785,7 +785,6 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
-
 - name: Power BI mobile apps
   items:
   - name: Overview
@@ -917,6 +916,7 @@
     - name: "Integrate a Power BI report into an app (user owns data)"
       href: developer/integrate-report.md
     - name: "Integrate content into your application (app owns data)"
+      href: developer/embed-sample-for-customers.md
     - name: Embedding
       items: 
       - name: "Embedding with Power BI"
