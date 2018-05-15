@@ -27,6 +27,11 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 This article is the jumping off point for all things Q&A. Select a link below to learn how Q&A works in Power BI service (dashboards and reports), Power BI Desktop (reports), Power BI Embedded, and Power BI mobile.  
 
+> [!NOTE]
+> **Power BI Q&A** only supports answering natural language queries asked in English. You can also try out a preview feature for questions asked in Spanish. In **Power BI Desktop**, go to **File**, **Options and settings**, **Options** and look for the **Preview Features** tab. Check the box for **Spanish language support for Q&A**.  
+>
+>
+
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 
 Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. You’ll be delighted by the insights and discoveries you make.
