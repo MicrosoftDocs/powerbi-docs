@@ -470,6 +470,18 @@
     items: 
     - name: "Shape and combine multiple data sources"
       href: desktop-shape-and-combine-data.md
+    - name: "Importing and analyzing data from a Web Page using Power BI Desktop"
+      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+    - name: " Analyzing sales data from Excel and an OData feed"
+      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+    - name: "Create your own measures in Power BI Desktop"
+      href: desktop-tutorial-create-measures.md
+    - name: "Create calculated columns in Power BI Desktop"
+      href: desktop-tutorial-create-calculated-columns.md
+    - name: "Facebook analytics using Power BI Desktop"
+      href: desktop-tutorial-facebook-analytics.md
+    - name: "Dynamic row level security with Analysis Services tabular model"
+      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
   - name: Samples
     items: 
     - name: "Download the Financial Sample workbook for Power BI"
@@ -526,18 +538,6 @@
       href: desktop-connect-to-data.md
     - name: "Publish from Power BI Desktop"
       href: desktop-upload-desktop-files.md
-    - name: "Importing and analyzing data from a Web Page using Power BI Desktop"
-      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-    - name: " Analyzing sales data from Excel and an OData feed"
-      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-    - name: "Create your own measures in Power BI Desktop"
-      href: desktop-tutorial-create-measures.md
-    - name: "Create calculated columns in Power BI Desktop"
-      href: desktop-tutorial-create-calculated-columns.md
-    - name: "Facebook analytics using Power BI Desktop"
-      href: desktop-tutorial-facebook-analytics.md
-    - name: "Dynamic row level security with Analysis Services tabular model"
-      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Custom visualizations in Power BI"
       href: power-bi-custom-visuals.md
     - name: "Custom visuals for organizations in Power BI"
@@ -785,7 +785,6 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
-
 - name: Power BI mobile apps
   items:
   - name: Overview
@@ -917,6 +916,7 @@
     - name: "Integrate a Power BI report into an app (user owns data)"
       href: developer/integrate-report.md
     - name: "Integrate content into your application (app owns data)"
+      href: developer/embed-sample-for-customers.md
     - name: Embedding
       items: 
       - name: "Embedding with Power BI"
@@ -1152,53 +1152,57 @@
     - name: "Assign Power BI Pro licenses - Azure"
       href: service-admin-assigning-power-bi-pro-licenses-azure.md
   - name: Concepts
-    items: 
-    - name: "Power BI Premium - what is it?"
-      href: service-premium.md
-    - name: "Premium capacity memory use, optimization"
-      href: service-premium-understand-how-it-works.md
-    - name: "Manage Power BI Premium"
-      href: service-admin-premium-manage.md
-    - name: "Support for large datasets"
-      href: service-premium-large-datasets.md
-    - name: "Incremental refresh"
-      href: service-premium-incremental-refresh.md
-    - name: "Power BI Premium FAQ"
-      href: service-premium-faq.md
-    - name: "Power BI Premium release notes"
-      href: service-premium-release-notes.md
+    items:
+    - name: "Power BI Premium"
+      items:
+      - name: "Power BI Premium - what is it?"
+        href: service-premium.md
+      - name: "Premium capacity memory use, optimization"
+        href: service-premium-understand-how-it-works.md
+      - name: "Purchase Power BI Premium"
+        href: service-admin-premium-purchase.md
+      - name: "Manage Power BI Premium"
+        href: service-admin-premium-manage.md
+      - name: "Support for large datasets"
+        href: service-premium-large-datasets.md
+      - name: "Incremental refresh"
+        href: service-premium-incremental-refresh.md
+      - name: "Power BI Premium FAQ"
+        href: service-premium-faq.md
+      - name: "Power BI Premium release notes"
+        href: service-premium-release-notes.md
     - name: "Administration role in Office 365"
       href: service-admin-role.md
+    - name: "Frequently asked questions (FAQ)"
+      href: service-admin-faq.md
   - name: How to
     items: 
     - name: "Power BI admin portal"
-      href: service-admin-portal.md  
-    - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
-    - name: "How to purchase Power BI Premium"
-      href: service-admin-premium-purchase.md
+      href: service-admin-portal.md
     - name: "Signing up for Power BI with a new Office 365 Trial"
       href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
     - name: "Where is my tenant located?"
       href: service-admin-where-is-my-tenant-located.md
+    - name: "Find users that have signed in"
+      href: service-admin-access-usage.md
+    - name: "Auditing Power BI"
+      href: service-admin-auditing.md
+    - name: "Track service health"
+      href: service-admin-health.md
+    - name: "Closing your Power BI account"
+      href: service-admin-closing-your-account.md
     - name: "Power BI (free) in your organization"
       href: service-admin-service-free-in-your-organization.md
     - name: "Power BI and ExpressRoute"
       href: service-admin-power-bi-expressroute.md
-    - name: "Auditing Power BI"
-      href: service-admin-auditing.md
     - name: "Using Azure AD B2B"
       href: service-admin-azure-ad-b2b.md
-    - name: "Find users that have signed in"
-      href: service-admin-access-usage.md
     - name: "Row-level security with Power BI"
       href: service-admin-rls.md
     - name: "Power BI archived workspace"
       href: service-admin-power-bi-archived-workspace.md
     - name: "Unable to add Power BI to O365 partner"
       href: service-admin-syndication-partner.md
-    - name: "Closing your Power BI account"
-      href: service-admin-closing-your-account.md
     - name: "Configure mobile apps with Intune"
       href: service-admin-mobile-intune.md
   - name: Resources
