@@ -35,7 +35,7 @@ Power BI also supports sovereign (private) clouds. Each sovereign cloud has its 
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government, you can [sign up for a U. S. government Power BI account](../service-govus-signup.md) or [a Power BI for Germany cloud account](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government, you can [sign up for a U. S. government Power BI account](../service-govus-signup.md) or [a Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
@@ -404,7 +404,7 @@ An application sample of this is available within the [Embedding for your organi
 
 * A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * For more information about JavaScript API please reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-* For more information about for Power BI for Germany cloud please reference [Power BI for Germany cloud FAQ](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
+* For more information about for Power BI for Germany cloud please reference [Power BI for Germany cloud FAQ](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 
 Limitations and Considerations
