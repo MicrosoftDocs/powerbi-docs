@@ -131,6 +131,8 @@ You should contact the owner of the SharePoint Online page to help you resolve t
   1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
+  
+  3. Azure B2B Guest users accounts are not supported. Users will see the Power BI logo that shows the part is loading, but it will not show the report.
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 

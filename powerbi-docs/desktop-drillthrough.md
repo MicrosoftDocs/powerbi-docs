@@ -61,6 +61,14 @@ When you then drillthrough on a visual, you can see which filters were applied a
 
 Note that you could do this with tooltips pages, but that would be an odd experience (the tooltip would not appear to be working properly), so doing so with tooltips is not recommended.
 
+## Add a measure to drillthrough
+
+In addition to passing all filters to the drillthrough window, you can also add a measure (or a summarized numeric column) to the drillthrough area. Simply drag the drillthrough field to the Drillthrough card to apply it. 
+
+![add a measure to drillthrough](media/desktop-drillthrough/drillthrough_08.png)
+
+When you add a measure (or summarized numeric column), you can drill to the page when the field is used in the *Value* area of a visual.
+
 And, that's all there is to using **drillthrough** in your reports. It's a great way to get an expanded view on the entity information you select for your drillthrough filter.
 
 ## Next steps

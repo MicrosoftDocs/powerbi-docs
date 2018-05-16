@@ -147,7 +147,7 @@ Users will see different options in the UI based on what the publish to web sett
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
-|**Publish to web** under report's **File** menu.|Enabled for all|Not visable for all|Only visable for authorized users or groups.|
+|**Publish to web** under report's **File** menu.|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
 |**Embed codes** within admin portal|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status will display **Disabled**|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status will display as **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
