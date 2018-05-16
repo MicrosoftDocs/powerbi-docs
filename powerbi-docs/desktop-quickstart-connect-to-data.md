@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-desktop
 ms.topic: quickstart
 ms.date: 05/07/2018
 ms.author: davidi

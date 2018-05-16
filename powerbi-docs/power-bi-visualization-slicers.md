@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/05/2018
 ms.author: v-thepet

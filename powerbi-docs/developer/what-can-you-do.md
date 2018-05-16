@@ -6,7 +6,7 @@ ms.author: maghan
 ms.date: 05/03/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.

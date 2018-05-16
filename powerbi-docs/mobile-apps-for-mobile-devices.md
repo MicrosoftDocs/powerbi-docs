@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-mobile
 ms.topic: overview
 ms.date: 04/26/2018
 ms.author: maggies

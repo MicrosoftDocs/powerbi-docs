@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/23/2017
 ms.author: mihart

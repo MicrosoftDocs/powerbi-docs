@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/17/2017
 ms.author: mblythe
