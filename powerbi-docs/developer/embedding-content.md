@@ -85,7 +85,7 @@ If you are embedding dashboards and reports for your customers, those dashboards
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
-You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly setup your embedded analytics development environment. There are 2 experiences you can sample: **Embed for customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution, and an **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution.
+You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly setup your embedded analytics development environment.
 
 ## Step 2: Embed your content
 
@@ -149,8 +149,6 @@ If you are embedding for your customers, do the following.
     ![Assign app workspace to capacity](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
-
-
 
 ## Admin settings
 
