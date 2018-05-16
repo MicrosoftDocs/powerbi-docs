@@ -1,14 +1,13 @@
 ---
 title: What is Power BI Report Server?
 description: Get an overview of Power BI Report Server to understand how it fits in with SQL Server Reporting Services (SSRS) and the rest of Power BI.
-services: powerbi
 keywords: 
 author: maggiesMSFT
 ms.author: maggies
-ms.component: powerbi-report-server
 ms.date: 05/07/2018
 ms.topic: overview
 ms.service: powerbi
+ms.component: powerbi-service
 manager: kfile
 ms.custom: mvc
 #customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.

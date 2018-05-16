@@ -1,21 +1,13 @@
 ---
 title: Overview of Q&A in Power BI service and Desktop
 description: Documentation overview topic for Power BI Q&A natural language queries.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus:  ''
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 

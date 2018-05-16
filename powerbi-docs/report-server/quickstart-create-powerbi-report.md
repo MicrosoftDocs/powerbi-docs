@@ -1,21 +1,13 @@
 ---
 title: 'Create a Power BI report for Power BI Report Server'
 description: Learn how to create a Power BI report for Power BI Report Server in a few simple steps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 3/22/2018
 ms.author: maggies
 

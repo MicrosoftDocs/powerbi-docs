@@ -1,21 +1,13 @@
 ---
 title: "Tutorial: Connect to on-premises data in SQL Server"
 description: Learn how to use SQL Server as a gateway data source, including how to refresh data.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-service
 ms.topic: tutorial
-ms.tgt_pltfrm: na
-ms.workload: powerbi
 ms.date: 05/03/2018
 ms.author: mblythe
 

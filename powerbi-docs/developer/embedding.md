@@ -1,15 +1,16 @@
 ---
 title: Embedding with Power BI
 description: Power BI offers APIs for embedding your dashboards and reports into applications.
-services: powerbi
 author: markingmyname
-ms.author: maghan
-ms.date: 11/30/2017
-ms.topic: 
-ms.service: powerbi
-ms.custom: 
 manager: kfile
-#Customer intent:
+ms.reviewer: ''
+
+ms.service: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 11/30/2017
+ms.author: maghan
+
 ---
 
 # Embedding with Power BI

@@ -1,21 +1,13 @@
 ---
 title: 'Error: We couldn''t find any data in your Excel workbook'
 description: 'Error: We couldn''t find any data in your Excel workbook'
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 

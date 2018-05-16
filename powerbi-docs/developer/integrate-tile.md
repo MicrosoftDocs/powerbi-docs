@@ -1,21 +1,13 @@
 ---
 title: Integrate a Power BI tile into an app for your organization
 description: Walkthrough to integrate a tile into an app, sample code
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
 

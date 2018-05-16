@@ -1,21 +1,13 @@
 ---
 title: Annotate and share in Power BI mobile apps
 description: 'Read about annotating and sharing tiles, reports, and visuals from the Microsoft Power BI mobile app for iOS and Android. '
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 02/28/2017
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
 

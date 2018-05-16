@@ -2,8 +2,9 @@
 title: Power BI Premium capacity memory use and optimization
 description: Understand Power BI Premium capacity memory management and optimization.
 ms.date: 04/30/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: powerbi
+ms.component: powerbi-service
 ms.author: susuresh
 ms.reviewer: susuresh
 author: suds001
