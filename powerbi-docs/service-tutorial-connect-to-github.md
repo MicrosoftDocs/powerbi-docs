@@ -3,19 +3,12 @@ title: 'Tutorial: Connect to the GitHub app with Power BI'
 description: In this tutorial you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports.
 author: maggiesMSFT
 manager: kfile
-backup: SarinaJoan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: SarinaJoan
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.custom: connect-to-services
-ms.devlang: NA
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/05/2018
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."

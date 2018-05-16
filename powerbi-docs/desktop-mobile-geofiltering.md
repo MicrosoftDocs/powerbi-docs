@@ -1,20 +1,12 @@
 ---
 title: Set geographic filters in Power BI Desktop for the mobile apps
 description: When you set geographic filtering in your model in Power BI Desktop, you can filter data for your location automatically in the Power BI mobile apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 

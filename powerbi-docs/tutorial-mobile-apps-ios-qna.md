@@ -1,22 +1,13 @@
 ---
 title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps - Power BI'
 description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
-ms.devlang: NA
+ms.component: powerbi-service
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: maggies
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 

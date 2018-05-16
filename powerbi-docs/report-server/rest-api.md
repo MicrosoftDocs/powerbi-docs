@@ -1,21 +1,13 @@
 ---
 title: Power BI Report Server release notes
 description: The REST API provides programmatic access to the objects in a Power BI Report Server catalog.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
 

@@ -1,21 +1,13 @@
 ---
 title: Part 2, Add visualizations to a Power BI report
 description: 'Part 2, Add visualizations to a Power BI report'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 

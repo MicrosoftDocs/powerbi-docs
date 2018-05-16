@@ -1,21 +1,13 @@
 ---
 title: Overview of the Power BI Filters pane
 description: Overview pf the report Filters pane in Power BI service and Power BI dashboard
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/15/2018
 ms.author: mihart
 

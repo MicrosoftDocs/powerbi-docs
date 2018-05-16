@@ -470,6 +470,18 @@
     items: 
     - name: "Shape and combine multiple data sources"
       href: desktop-shape-and-combine-data.md
+    - name: "Importing and analyzing data from a Web Page using Power BI Desktop"
+      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+    - name: " Analyzing sales data from Excel and an OData feed"
+      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+    - name: "Create your own measures in Power BI Desktop"
+      href: desktop-tutorial-create-measures.md
+    - name: "Create calculated columns in Power BI Desktop"
+      href: desktop-tutorial-create-calculated-columns.md
+    - name: "Facebook analytics using Power BI Desktop"
+      href: desktop-tutorial-facebook-analytics.md
+    - name: "Dynamic row level security with Analysis Services tabular model"
+      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
   - name: Samples
     items: 
     - name: "Download the Financial Sample workbook for Power BI"
@@ -526,18 +538,6 @@
       href: desktop-connect-to-data.md
     - name: "Publish from Power BI Desktop"
       href: desktop-upload-desktop-files.md
-    - name: "Importing and analyzing data from a Web Page using Power BI Desktop"
-      href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-    - name: " Analyzing sales data from Excel and an OData feed"
-      href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-    - name: "Create your own measures in Power BI Desktop"
-      href: desktop-tutorial-create-measures.md
-    - name: "Create calculated columns in Power BI Desktop"
-      href: desktop-tutorial-create-calculated-columns.md
-    - name: "Facebook analytics using Power BI Desktop"
-      href: desktop-tutorial-facebook-analytics.md
-    - name: "Dynamic row level security with Analysis Services tabular model"
-      href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Custom visualizations in Power BI"
       href: power-bi-custom-visuals.md
     - name: "Custom visuals for organizations in Power BI"

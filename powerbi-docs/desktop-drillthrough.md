@@ -1,21 +1,13 @@
 ---
 title: Use drillthrough in Power BI Desktop
 description: Learn how to drill down into data, on a new report page, in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 
@@ -68,6 +60,14 @@ When you then drillthrough on a visual, you can see which filters were applied a
 ![transient filters in italics](media/desktop-drillthrough/drillthrough_07.png)
 
 Note that you could do this with tooltips pages, but that would be an odd experience (the tooltip would not appear to be working properly), so doing so with tooltips is not recommended.
+
+## Add a measure to drillthrough
+
+In addition to passing all filters to the drillthrough window, you can also add a measure (or a summarized numeric column) to the drillthrough area. Simply drag the drillthrough field to the Drillthrough card to apply it. 
+
+![add a measure to drillthrough](media/desktop-drillthrough/drillthrough_08.png)
+
+When you add a measure (or summarized numeric column), you can drill to the page when the field is used in the *Value* area of a visual.
 
 And, that's all there is to using **drillthrough** in your reports. It's a great way to get an expanded view on the entity information you select for your drillthrough filter.
 

@@ -1,12 +1,12 @@
 ---
 title: Embed a report using an iFrame
 description: Embedding Power BI Report Server report in an iFrame in SharePoint Server
-services: powerbi
 author: markingmyname
 ms.author: maghan 
 ms.date: 05/04/2018
 ms.topic: quickstart
 ms.service: powerbi
+ms.component: powerbi-service
 ms.custom: mvc
 manager: kfile
 #Customer intent: As a Power BI Report Server developer, I want to embed my PBI RS reports in an iFrame, so that I can show my reports in other applications.
