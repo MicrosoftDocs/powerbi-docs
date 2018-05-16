@@ -12,15 +12,15 @@ manager: kfile
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your customers
-With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application so that your customers can share data. This is typically an **ISV developer** scenario using an **app owns data** structure. **App owns data** means embedding Power BI content for your own customers. For example, the user of the Power BI content can view reports, dashboards or tiles without needing to log-in to **Power BI**. This tutorial demonstrates how to integrate or embed a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using **app owns data**.
+With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application using **app owns data**. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically an **ISV developer** scenario. As an **ISV developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users of the application to have a Power BI license, or even be aware that it’s Power BI under the hood. This tutorial demonstrates how to integrate a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using **app owns data**.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
 >* Register an application in Azure.
->* Embed a report, dashboard, or tile into an application using Power BI Embedded in Azure.
+>* Embed a report into an application using Power BI Embedded in Azure.
 
 ## Prerequisites
-To get started, you need a **Power BI Pro** account and a **Microsoft Azure** account.
+To get started, you need a **Power BI Pro** account which will be your **master account** and a **Microsoft Azure** subscription.
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
@@ -29,7 +29,7 @@ To get started, you need a **Power BI Pro** account and a **Microsoft Azure** ac
 
 ## Setup your embedded analytics development environment
 
-Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment is setup to allow for embedding. As part of the setup, you will need to do the following.
+Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment is set up to allow for embedding. As part of the setup, you will need to do the following.
 
 ### Register an application in Azure Active Directory (Azure AD)
 
@@ -90,33 +90,6 @@ You will need to enable additional permissions for your application in addition 
    
     ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
-### Create your Power BI Embedded dedicated capacity in Azure
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-
-    ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
-
-2. In the left-hand navigation pane, choose **All Services** and select **Power BI Embedded**.
-
-    ![PBIE search](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
-
-3. Follow the prompts and fill in the proper information needed to create a new **Power BI Embedded** dedicated capacity, and then select **Create**. When choosing the **Pricing Tier**, review the table below to decide which tier bests suits your needs. Then select **Create** and wait for the resource to complete.
-
-    ![PBIE setup](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
-
-| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
-| --- | --- | --- | --- | --- | --- |
-| A1 |1 v-cores |.5 cores, 3GB RAM |.5 cores | 5 per second |1-300 |
-| A2 |2 v-cores |1 core, 5GB RAM |1 core | 10 per second |301-600 |
-| A3 |4 v-cores |2 cores, 10GB RAM |2 cores | 15 per second |601-1,200 |
-| A4 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
-| A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
-| A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
-
-Now you can view the new **Power BI Embedded dedicated capacity**.
-
-   ![PBIE dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-019.png)
-
 ## Setup your Power BI environment
 
 ### Create an app workspace
@@ -145,10 +118,6 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
-7. Expand **Advanced**, then enable **Dedicated capacity**, then select the **Power BI Embedded dedicated capacity** you created. Then select **Save**.
-
-    ![Adding Members](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
-
 Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
    ![New workspace](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
@@ -174,6 +143,10 @@ You can create your reports and datasets using Power BI Desktop and then publish
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
 
 ## Embed your content
+
+Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to [get an Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using app owns data before you make calls to the Power BI API.
+
+Follow these steps to start embedding your content using a sample application.
 
 1. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
@@ -217,7 +190,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
 
-    Then select **Embed Report**. Depending on which content you choose to test with - reports, dasboards or tiles - then select that option in the application.
+    Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
 
     ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
  
@@ -225,8 +198,30 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
-For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+## Move to production
+
+Now that your done developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
+
+### Create a dedicated capacity
+By creating a dedicated capacity you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these will be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure.
+
+>[!Note]
+>Embed tokens with PRO license are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must  purchase a capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate when a dedicated capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
+>
+### Assign app workspace to dedicated capacity
+
+Once dedicated capacity is created, assign the app workspace to the dedicated capacity. To complete this, follow these steps.
+
+1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace your embedding your content with. Then select **Edit workspaces**.
+
+    ![Edit Workspace](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
+
+2. Expand **Advanced**, then enable **Dedicated capacity**, then select the dedicated capacity you created. Then select **Save**.
+
+    ![Assign dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+
+For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
 For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
