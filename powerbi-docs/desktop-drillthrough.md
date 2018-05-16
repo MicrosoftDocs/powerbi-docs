@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/16/2018
+ms.date: 05/17/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
