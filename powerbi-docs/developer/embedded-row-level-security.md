@@ -1,21 +1,13 @@
 ---
 title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
 

@@ -1,15 +1,11 @@
 ---
 title: What is Power BI?
 description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server.
-services: powerbi
 author: mihart
 manager: kfile
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: overview
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.component: powerbi-service
+ms.topic: overview
 ms.date: 05/07/2018
 ms.author: mihart
 

@@ -1,21 +1,13 @@
 ---
 title: Find dashboards, reports, apps in the Power BI mobile apps
 description: Read about where to find your dashboards, reports, and apps in the Power BI mobile apps, depending on where they came from.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: maggies
 
