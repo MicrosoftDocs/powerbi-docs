@@ -8,10 +8,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/30/17
-ms.author: mihart
+ms.date: 11/30/2017
+ms.author: maghan
 
 ---
+
 # Embedding with Power BI
 Power BI offers APIs for embedding your dashboards and reports into applications. The Power BI APIs offer a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding content.
 
