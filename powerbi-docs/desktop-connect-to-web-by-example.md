@@ -44,14 +44,14 @@ If you want to follow along, you can use the [Microsoft Store URL](https://www.m
 
 ![Web dialog](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
-When you select **OK**, you're taken to the **Navigator** dialog where any auto-detected tables from the Web page are presented. In the case shown in the image below, no tables were found, but there is a button on the bottom of the page called **Extract table using examples** that let's you provide examples.
+When you select **OK**, you're taken to the **Navigator** dialog where any auto-detected tables from the Web page are presented. In the case shown in the image below, no tables were found, but there is a button on the bottom of the page called **Extract table using examples** that lets you provide examples.
 
 
 ![Navigator window](media/desktop-connect-to-web-by-example/web-by-example_05.png)
 
 Selecting the **Extract table using examples** presents an interactive window where you can preview the content of the Web page, and enter sample values of the data you would like to extract. 
 
-In this example, we'll extract the *Name* and *Price* for each of the games on the page. We can do that by specifying a couple of exapmes from teh page for each column, as shown in the following image. As those examples are typed in, **Power Query** (which is the underlying technology that extracts the data from the Web page) is able to extract data that fits the pattern of example entries using smart data extraction algorithms.
+In this example, we'll extract the *Name* and *Price* for each of the games on the page. We can do that by specifying a couple of examples from the page for each column, as shown in the following image. As those examples are typed in, **Power Query** (which is the underlying technology that extracts the data from the Web page) is able to extract data that fits the pattern of example entries using smart data extraction algorithms.
 
 ![data by example](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
