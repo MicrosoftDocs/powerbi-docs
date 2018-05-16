@@ -1,22 +1,15 @@
 ---
 title: Interacting with an ArcGIS map that has been shared with you
 description: 'Using ArcGis map in reading view '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 tags: power bi, service, desktop, mobile
 featuredvideoid: ''
-qualityfocus: monitoring
-qualitydate: 06/23/2017
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 

@@ -1,21 +1,13 @@
 ---
 title: Power BI report data sources in Power BI Report Server
 description: Power BI reports (.pbix) can connect to a number of data sources. Depending on how data is used, different data sources are available.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
 

@@ -1,21 +1,13 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: 
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/09/2018
 ms.author: nikhilga
 

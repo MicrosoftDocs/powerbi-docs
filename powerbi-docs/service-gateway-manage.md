@@ -1,21 +1,13 @@
 ---
 title: "Manage a gateway for Power BI"
 description: Learn how to manage a gateway so you can connect to on-premises data in Power BI.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
 
