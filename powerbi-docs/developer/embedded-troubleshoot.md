@@ -4,9 +4,8 @@ description: This article discusses some common issues you may encounter when em
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
@@ -54,7 +53,7 @@ Please provide the request id when approaching Microsoft support.
 
 **App registration failure**
 
-Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be  an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
 **Power BI Service does not appear in Azure portal when registering a new App**
 
@@ -132,5 +131,3 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
-

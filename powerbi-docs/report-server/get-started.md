@@ -7,7 +7,7 @@ ms.author: maggies
 ms.date: 05/07/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 #customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.
