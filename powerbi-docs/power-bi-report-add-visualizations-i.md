@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: mihart

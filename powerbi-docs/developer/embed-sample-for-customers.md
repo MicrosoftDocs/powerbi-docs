@@ -6,7 +6,7 @@ ms.author: maghan
 ms.date: 05/07/2018
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.

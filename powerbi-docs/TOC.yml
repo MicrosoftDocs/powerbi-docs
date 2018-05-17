@@ -140,8 +140,6 @@
           href: service-connect-to-azure-consumption-insights.md
         - name: "Azure Search"
           href: service-connect-to-azure-search.md
-        - name: "Azure Security Center"
-          href: service-connect-to-azure-security-center.md
         - name: "Circuit ID"
           href: service-connect-to-circuit-id.md
         - name: "ClickDimensions"
@@ -416,8 +414,6 @@
           href: refresh-csv-file-onedrive.md
         - name: "Troubleshooting refresh scenarios"
           href: refresh-troubleshooting-refresh-scenarios.md
-        - name: "Disable privacy settings"
-          href: refresh-enable-fast-combine.md
       - name: Troubleshooting
         items: 
         - name: "Forgot your password for Power BI?"
