@@ -51,7 +51,7 @@ A planned invite is performed within the Microsoft Azure Portal in Azure AD or u
 
 4. Select **Invite**.
 
-To invite more than one guest user, use PowerShell. For more information, see [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples).
+To invite more than one guest user, use PowerShell. For more information, see [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/b2b/code-samples).
 
 The guest user needs to select **Get Started** in the email invitation they receive. The guest user is then added to the tenant.
 
