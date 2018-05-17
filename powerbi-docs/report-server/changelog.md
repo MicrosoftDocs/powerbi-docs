@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggies
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/11/2017
 ms.author: jtarquino

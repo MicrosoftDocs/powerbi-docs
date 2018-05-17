@@ -7,7 +7,7 @@ ms.reviewer: davidi
 editor: davidi
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: selvar
