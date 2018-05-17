@@ -1,26 +1,18 @@
 ---
-title: 'Quickstart: Create a Power BI report for Power BI Report Server'
+title: 'Create a Power BI report for Power BI Report Server'
 description: Learn how to create a Power BI report for Power BI Report Server in a few simple steps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 3/22/2018
 ms.author: maggies
 
 ---
-# Quickstart: Create a Power BI report for Power BI Report Server
+# Create a Power BI report for Power BI Report Server
 You can store and manage Power BI reports on premises in the Power BI Report Server web portal, just as you can store Power BI reports in the cloud in the Power BI service (https://powerbi.com). You create and edit reports in Power BI Desktop, and publish them to the web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on a mobile device.
 
 ![Power BI report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
@@ -128,11 +120,9 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 ## Next steps
 ### Power BI Desktop
-There are so many great resources for creating reports in Power BI Desktop. These links are a good starting point.
+There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
 * [Get started with Power BI Desktop](../desktop-getting-started.md)
-* Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml#step-2)
-
 
 ### Power BI Report Server
 * [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  

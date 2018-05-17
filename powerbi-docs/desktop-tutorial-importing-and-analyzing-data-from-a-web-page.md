@@ -1,27 +1,19 @@
 ---
-title: 'Tutorial: Importing and analyzing data from a web page using Power BI Desktop'
-description: 'Tutorial: Importing and analyzing data from a web page using Power BI Desktop'
-services: powerbi
-documentationcenter: ''
+title: 'Tutorial: Import and analyze data from a web page using Power BI Desktop'
+description: 'Tutorial: Import and analyze data from a web page using Power BI Desktop'
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 
 LocalizationGroup: Learn more
 ---
-# Analyzing web page data using Power BI Desktop (tutorial)
+# Tutorial: Analyze web page data using Power BI Desktop
 
 As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a web page into a report and create visualizations that show the data. In this tutorial, you learn how to use Power BI Desktop to:
 
@@ -176,7 +168,7 @@ Your map visualization now looks like this:
 ### Change the visualization type
 You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualization** pane. For example, your map visualization is missing the data for the Soviet Union and Czechoslovakia, because those countries no longer exist on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values. 
 
-To change the map to a pie chart, select it and then select the **Pie chart** icon in the **Visualization** pane. 
+To change the map to a pie chart, select the map and then select the **Pie chart** icon in the **Visualization** pane. 
    
 ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
 

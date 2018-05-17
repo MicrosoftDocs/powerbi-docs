@@ -1,22 +1,14 @@
 ---
 title: What's new in Power BI Report Server
 description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/19/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/19/2018
 ms.author: maggies
 
 ---
@@ -25,12 +17,17 @@ Learn about what's new in Power BI Report Server. This covers the major feature 
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-For related "What's New" information, see:
+Also check these sources to keep up-to-date on new features in Power BI Report Server.
+
+* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
+
+For related Power BI "What's New" information, see:
 
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
-* [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
 ## March 2018 release
 
@@ -205,7 +202,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 ## Next steps
 [User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

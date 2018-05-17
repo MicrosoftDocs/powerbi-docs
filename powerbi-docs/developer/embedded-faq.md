@@ -1,21 +1,13 @@
 ---
 title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
 ---
@@ -54,7 +46,7 @@ There may be some cases where an ISV (typically large) wants to use a P SKU to g
 
 ### How many embed tokens can I create?
 
-Embed tokens with PRO license are intended for development and dev testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased.
+Embed tokens with PRO license are intended for development and dev testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
 
 ## Technical
 
@@ -160,10 +152,6 @@ Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Pow
 
 Since Power BI Embedded is a part of Azure it is possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
 
-### Is there a limit to the number of embed tokens a Power BI master account can generate? 
-
-Yes, it is limited because these embed tokens are for development testing only. [A capacity must be purchased](#technical) for any production embedding scenario. There is no limit to embed token generation when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/en-us/library/mt846473.aspx) to check for how many free embed tokens have been used.
-
 ### Is Power BI Embedded available for sovereign clouds (US Government, Germany, China)?
 
 Power BI Embedded is available for some [sovereign clouds](embed-sample-for-customers-sovereign-clouds.md). It still is **NOT** available for the China cloud.
@@ -172,9 +160,47 @@ Power BI Embedded is available for some [sovereign clouds](embed-sample-for-cust
 
 Non-profit and educational entities can purchase Azure. There is no special pricing for these types of customers in Azure.
 
+## Power BI Workspace Collection
+
+### What is Power BI Workspace Collection?
+
+**Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution that is based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authnticate the application to power BI.
+
+### Can I migrate from Power BI Workspace Collection to Power BI Embedded?
+
+1. You can use the migration tool to clone **Power BI Workspace Collection** content to Power BI - https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+
+2. Start with the **Power BI Embedded** application POC that use Power BI content.
+
+3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+
+>[!Note]
+You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
+
+For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+
+### Is Power BI Workspace Collection on a path to be deprecated?
+
+Yes, but customers that are already using the **Power BI Workspace Collection** solution can continue to use it until it is deprecated. Customers can also create new workspace collections, and any **Power BI Embedded** applications that still use the **Power BI Workspace Collection** solution.
+
+However, this also means that new features are not added to any **Power BI Workspace Collection** solutions, and that customers are encouraged to plan their migration to the new **Power BI Embedded** solution.
+### When will Power BI Workspace Collection support be discontinued?
+
+Customers that are already using the **Power BI Workspace Collections** solution can continue to use it until the end of June 2018 or until the end of their support agreement.
+
+### In what regions can PBI Workspace Collection be created?
+
+The available regions are Australia Southeast, Brazil South, Canada Central, East US 2, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West India, and West US.
+
+### Why should I migrate from PBI Workspace Collection to Power BI Embedded?
+
+There are new features and capabilities that are introduced in the **Power BI Embedded** solution that you can't do with **Power BI Workspace Collection**.
+
+Some of the features are:
+* All the PBI data sources are supported as oppose to the 2 data sources that are with **Power BI Workspace Collection**). 
+* New features such as Q&A, Refresh, bookmarks, dashboard & tile embed, custom menu etc are only supported in the **Power BI Embedded** solution.
+* Capacity billing model.
+
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
-
-

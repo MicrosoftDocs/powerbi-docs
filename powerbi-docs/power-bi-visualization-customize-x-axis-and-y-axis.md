@@ -1,28 +1,20 @@
 ---
-title: Customize X-axis and Y-axis properties (Tutorial)
-description: 'Tutorial: Customize X-axis and Y-axis properties'
-services: powerbi
-documentationcenter: ''
+title: Customize X-axis and Y-axis properties
+description: 'Customize X-axis and Y-axis properties'
 author: mihart
 manager: kfile
-backup: ''
+ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 05/16/2017
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Customize X-axis and Y-axis properties (Tutorial)
+# Customize X-axis and Y-axis properties
 In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes or can be customized; Pie charts, for example, don't have axes. And customization options vary from visual to visual, too many options to cover in a single article. So we'll take a look at some of the most-used axes customizations and get you comfortable using the visual formatting tab in the Power BI report canvas.  
 
 > [!NOTE]

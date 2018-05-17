@@ -1,27 +1,19 @@
 ---
-title: Quickstart - Get started with Power BI Q&A 
-description: 'Quickstart: get started with Q&A in Power BI service using the Retail Analysis sample'
-services: powerbi
-documentationcenter: ''
+title: Get started with Power BI Q&A 
+description: 'Get started with Q&A in Power BI service using the Retail Analysis sample'
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
-# Get started with Power BI Q&A (Quickstart)
+# Get started with Power BI Q&A
 ## Use Power BI Q&A with the Retail Analysis sample
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this quickstart we'll look at 2 different ways of creating the same visualization: first, building it in a report and, second, asking a question with Q&A. We'll use Power BI service, but the process is almost identical using Power BI Desktop.
 

@@ -1,21 +1,13 @@
 ---
 title: Tips for creating stunning reports
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 'willthom'
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: 'willthom'
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 
@@ -165,7 +157,7 @@ Sometimes it's useful to compute summary statistics for a dataset.  The easy way
 ### Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX.
 
-[QuickStart: Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 

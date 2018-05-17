@@ -1,27 +1,19 @@
 ---
-title: Basic Area chart (Tutorial)
-description: 'Tutorial: Basic Area chart.'
-services: powerbi
-documentationcenter: ''
+title: Basic Area chart
+description: 'Basic Area chart.'
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Basic Area chart (Tutorial)
+# Basic Area chart
 The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
 
 Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.

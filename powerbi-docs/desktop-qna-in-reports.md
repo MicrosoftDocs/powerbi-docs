@@ -1,21 +1,13 @@
 ---
 title: Using Q&A in Power BI Desktop
 description: You can now use natural language queries in Power BI Desktop, using Q&A
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 
@@ -25,6 +17,11 @@ LocalizationGroup: Create reports
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in **Power BI Desktop** lets you do.
 
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you'll need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A. 
+
+> [!NOTE]
+> Q&A is only available when working with a model that contains **imported** data. Live connections to SSAS and DirectQuery models are not supported.
+>
+>
 
 In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
 
