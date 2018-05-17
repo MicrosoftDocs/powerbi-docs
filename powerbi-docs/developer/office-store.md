@@ -4,7 +4,6 @@ description: Learn how you can publish your custom visual to AppSource for other
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual

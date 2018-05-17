@@ -4,7 +4,6 @@ description: Learn about the steps you need to take to embed Power BI content wi
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual

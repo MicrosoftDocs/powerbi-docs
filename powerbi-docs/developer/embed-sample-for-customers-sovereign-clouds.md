@@ -4,7 +4,6 @@ description: Learn how to integrate, or embed, a dashboard, tile or report, into
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
