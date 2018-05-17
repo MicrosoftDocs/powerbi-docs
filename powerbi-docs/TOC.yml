@@ -922,7 +922,7 @@
       - name: "Get a custom visual certified"
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
-        href: developer/office-store.md        
+        href: developer/office-store.md      
     - name: Embedding
       items: 
       - name: "Embedding with Power BI"
