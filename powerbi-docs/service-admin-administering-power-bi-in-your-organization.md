@@ -7,7 +7,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/01/2018
 ms.author: mblythe
 
