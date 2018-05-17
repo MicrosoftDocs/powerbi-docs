@@ -158,18 +158,18 @@ Follow these steps to start embedding your content using a sample application.
 
     * Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId** follow these steps:
 
-        1. Sign into the [Azure portal](https://portal.azure.com).
+    1. Sign into the [Azure portal](https://portal.azure.com).
 
         ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-        2. In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
+    2. In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
         ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-        3. Select the application that you want to get the **clientId** for.
+    3. Select the application that you want to get the **clientId** for.
 
         ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-      4. You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
+    4. You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
 
         ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)     
 
