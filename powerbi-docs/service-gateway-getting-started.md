@@ -1,21 +1,13 @@
 ---
 title: What are Power BI gateways?
 description: Learn the basics about data gateways for Power BI.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 

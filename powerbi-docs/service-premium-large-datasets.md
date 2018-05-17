@@ -1,21 +1,13 @@
 ---
 title: Power BI Premium support for large datasets
 description: Power BI Premium now supports datasets up to 10 GB.
-services: powerbi
-documentationcenter: ''
 author: jocaplan
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 02/27/2018
 ms.author: jocaplan
 

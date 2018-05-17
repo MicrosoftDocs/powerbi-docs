@@ -1,21 +1,13 @@
 ---
 title: "Quickstart: Purchase Power BI Pro licenses"
 description: Learn how to purchase Power BI Pro licenses so that your users can access all content and capabilities in the Power BI service.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/03/2018
 ms.author: mblythe
 

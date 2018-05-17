@@ -1,21 +1,13 @@
 ---
 title: Track Power BI service health in Office 365
 description: Learn how to view current and historical service health in the Office 365 admin center.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 05/09/2018
 ms.author: mblythe
 

@@ -140,8 +140,6 @@
           href: service-connect-to-azure-consumption-insights.md
         - name: "Azure Search"
           href: service-connect-to-azure-search.md
-        - name: "Azure Security Center"
-          href: service-connect-to-azure-security-center.md
         - name: "Circuit ID"
           href: service-connect-to-circuit-id.md
         - name: "ClickDimensions"
@@ -416,8 +414,6 @@
           href: refresh-csv-file-onedrive.md
         - name: "Troubleshooting refresh scenarios"
           href: refresh-troubleshooting-refresh-scenarios.md
-        - name: "Disable privacy settings"
-          href: refresh-enable-fast-combine.md
       - name: Troubleshooting
         items: 
         - name: "Forgot your password for Power BI?"
@@ -901,8 +897,6 @@
       href: developer/qanda.md
   - name: How to
     items: 
-    - name: "Create a custom visual with the Developer Tools"
-      href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "How to embed your content"
       href: developer/embedding-content.md
     - name: "Push data into a dashboard"
@@ -917,6 +911,18 @@
       href: developer/integrate-report.md
     - name: "Integrate content into your application (app owns data)"
       href: developer/embed-sample-for-customers.md
+    - name: "Integrate content into your application for sovereign clouds (app owns data)"
+      href: developer/embed-sample-for-customers-sovereign-clouds.md
+    - name: Create a custom visual
+      items: 
+      - name: "Create a custom visual with the Developer Tools"
+        href: service-custom-visuals-getting-started-with-developer-tools.md      
+      - name: "Review custom visuals for security and privacy"
+        href: service-custom-visuals-review-for-security-and-privacy.md
+      - name: "Get a custom visual certified"
+        href: power-bi-custom-visuals-certified.md
+      - name: "Publish custom visuals to AppSource"
+        href: developer/office-store.md      
     - name: Embedding
       items: 
       - name: "Embedding with Power BI"
@@ -935,12 +941,6 @@
         href: developer/migrate-code-snippets.md
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
-    - name: Create a custom visual
-      items: 
-      - name: "Review custom visuals for security and privacy"
-        href: service-custom-visuals-review-for-security-and-privacy.md
-      - name: "Get a custom visual certified"
-        href: power-bi-custom-visuals-certified.md
     - name: Push data into a dashboard
       items: 
       - name: "Register an app with Azure AD"
@@ -979,7 +979,7 @@
       href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
     items: 
-    - name: "JavaScript embed demo"
+    - name: "JavaScript Playground Sample"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Samples"
       href: https://go.microsoft.com/fwlink/?linkid=851293
@@ -1129,10 +1129,12 @@
       href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
     - name: "Configuring proxy settings"
       href: service-gateway-proxy.md
-    - name: "On-premises data gateway - in-depth"
-      href: service-gateway-onprem-indepth.md
     - name: "High availability clusters for on-premises data gateway"
       href: service-gateway-high-availability-clusters.md
+    - name: "On-premises data gateway"
+      href: service-gateway-onprem.md
+    - name: "On-premises data gateway - in-depth"
+      href: service-gateway-onprem-indepth.md
     - name: "On-premises data gateway (personal mode)"
       href: service-gateway-personal-mode.md
     - name: "Troubleshooting the on-premises data gateway"
@@ -1191,6 +1193,8 @@
       href: service-admin-health.md
     - name: "Closing your Power BI account"
       href: service-admin-closing-your-account.md
+    - name: "Power BI Pro in your organization"
+      href: service-admin-power-bi-pro-in-your-organization.md
     - name: "Power BI (free) in your organization"
       href: service-admin-service-free-in-your-organization.md
     - name: "Power BI and ExpressRoute"

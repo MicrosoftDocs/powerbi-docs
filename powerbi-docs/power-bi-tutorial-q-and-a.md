@@ -1,18 +1,12 @@
 ---
 title: Tutorial - using Q&A on a dashboard or in a report
 description: Tutorial on how to use Power BI Q&A to create new visualizations on dashboards and in reports.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
-tags: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 

@@ -1,21 +1,13 @@
 ---
 title: Incremental refresh in Power BI Premium
 description: Learn how to enable very large datasets in the Power BI Premium service.
-services: powerbi
-documentationcenter: ''
 author: christianwade
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 04/30/2018
 ms.author: chwade
 
