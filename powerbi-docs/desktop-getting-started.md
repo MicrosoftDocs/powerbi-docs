@@ -325,6 +325,10 @@ For more information about creating, sharing, and modifying dashboards, see [Sha
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 
+## Diagnostics
+
+Power BI desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to connect to and perform traces for diagnostic purposes. *Making any changes to the model is not supported! Changes to the model may lead to corruption and data loss.*
+
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
@@ -333,4 +337,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
-
