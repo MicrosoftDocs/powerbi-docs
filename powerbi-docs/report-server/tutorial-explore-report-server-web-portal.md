@@ -46,7 +46,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 6. For **Resource group**, keep **Create new**, and call it **reportserverresourcegroup**.
 
-    If you go through the tutorial more than once, you need to get it a different name after the first time. You can't use the same name twice in one subscription.
+    If you go through the tutorial more than once, you need to get the resource group a different name after the first time. You can't use the same resource group name twice in one subscription. 
 
 7. Keep the other defaults > **OK**.
 
