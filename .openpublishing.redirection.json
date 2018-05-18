@@ -16,6 +16,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/mobile-apps-find-content-mobile-devices.md",
+            "redirect_url": "/power-bi/mobile-apps-quickstart-view-dashboard-report",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-optimize-dashboard-phone-view.md",
+            "redirect_url": "/power-bi/mobile-apps-view-phone-report",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/mobile-android-tablet-app-get-started.md",
             "redirect_url": "/power-bi/mobile-android-app-get-started",
             "redirect_document_id": true

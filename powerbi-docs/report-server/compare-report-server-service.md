@@ -7,7 +7,7 @@ ms.author: maggies
 ms.date: 05/07/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.

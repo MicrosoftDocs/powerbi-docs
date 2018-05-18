@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/22/2018
 ms.author: maggies
@@ -123,6 +123,7 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
 * [Get started with Power BI Desktop](../desktop-getting-started.md)
+* Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 ### Power BI Report Server
 * [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
