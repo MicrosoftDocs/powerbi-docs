@@ -10,12 +10,14 @@
       href: service-the-new-power-bi-experience.md
   - name: Tutorials
     items: 
-    - name: "Connect to the online service GitHub"
+    - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
+    - name: "Self-service sign-up"
+      href: service-self-service-signup-for-power-bi.md 
     - name: Power BI basics
       items: 
       - name: "Power BI - basic concepts"
@@ -56,16 +58,12 @@
       items: 
       - name: "Quick Insights in Power BI"
         href: service-insights.md
-      - name: "Create a dashboard from a report"
-        href: service-dashboard-create.md
       - name: "Get data from files"
         href: service-get-data-from-files.md
       - name: "Open a Power BI report in Reading view or Editing view"
         href: service-reading-view-and-editing-view.md
       - name: "The report editor...Take a tour"
         href: service-the-report-editor-take-a-tour.md
-      - name: "Samples for Power BI"
-        href: sample-datasets.md
       - name: "Visualizations in Power BI"
         href: power-bi-report-visualizations.md
       - name: "Data sources for Power BI"
@@ -124,6 +122,8 @@
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
+        - name: "Adobe Analytics"
+          href: service-connect-to-adobe-analytics.md
         - name: "Alpine Metrics Sales Predictions"
           href: service-connect-to-alpine-metrics.md
         - name: "appFigures"
@@ -248,8 +248,6 @@
           href: service-publish-to-powerpoint.md
     - name: Working in Power BI
       items: 
-      - name: "Using the Power BI sample content packs"
-        href: sample-tutorial-connect-to-the-samples.md
       - name: "From Excel workbook to stunning report in no time"
         href: service-from-excel-to-stunning-report.md
       - name: "Use Q&A to create visualizations and build reports"
@@ -268,6 +266,8 @@
         href: refresh-scheduled-refresh.md
       - name: Dashboards
         items: 
+        - name: "Create a dashboard from a report"
+          href: service-dashboard-create.md
         - name: "Create a copy of a dashboard"
           href: service-dashboard-copy.md
         - name: "Pin a tile to a Power BI dashboard from a report"
@@ -314,19 +314,15 @@
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
-        - name: "Organizational content packs: Introduction"
-          href: service-organizational-content-pack-introduction.md
-        - name: "Create and publish an organizational content pack"
-          href: service-organizational-content-pack-create-and-publish.md
         - name: "Share a filtered report"
           href: service-share-reports.md
         - name: "Publish from Power BI to the web"
           href: service-publish-to-web.md
         - name: "Embed report in SharePoint Online"
           href: service-embed-report-spo.md
-        - name: "Connect to files on your group's OneDrive for Business"
+        - name: "Connect to files on your group's OneDrive"
           href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-        - name: "Collaborate in your Power BI group workspace"
+        - name: "Collaborate in your group workspace"
           href: service-collaborate-power-bi-workspace.md
         - name: "Manage your group in Power BI and Office 365"
           href: service-manage-app-workspace-in-power-bi-and-office-365.md
@@ -334,6 +330,10 @@
           href: service-organizational-content-pack-manage-update-delete.md
         - name: "Organizational content packs: Copy, refresh, and get access"
           href: service-organizational-content-pack-copy-refresh-access.md
+        - name: "Organizational content packs: Introduction"
+          href: service-organizational-content-pack-introduction.md
+        - name: "Create and publish an organizational content pack"
+          href: service-organizational-content-pack-create-and-publish.md
         - name: "Remove your connection to an organizational content pack"
           href: service-organizational-content-pack-disconnect.md
         - name: "Share a dashboard that links to an Excel workbook on OneDrive for Business"
@@ -446,9 +446,13 @@
           href: service-refresh-xero-credentials.md
   - name: Resources
     items: 
-    - name: "Supported browsers for Power BI"
+    - name: "Videos"
+      href: videos.md
+    - name: "Webinars"
+      href: webinars.md
+    - name: "Supported browsers"
       href: service-browser-support.md
-    - name: "Supported languages and countries/regions for Power BI"
+    - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
     - name: "Whitepapers"
       href: whitepapers.md
@@ -480,24 +484,28 @@
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
   - name: Samples
     items: 
-    - name: "Download the Financial Sample workbook for Power BI"
-      href: sample-financial-download.md
-    - name: "Supplier Quality Analysis sample for Power BI: Take a tour"
-      href: sample-supplier-quality.md
-    - name: "IT Spend Analysis sample for Power BI: Take a tour"
-      href: sample-it-spend.md
-    - name: "Sales and Marketing sample for Power BI: Take a tour"
-      href: sample-sales-and-marketing.md
-    - name: "Customer Profitability sample for Power BI: Take a tour"
+    - name: "Samples for Power BI"
+      href: sample-datasets.md
+    - name: "Using the sample content packs"
+      href: sample-tutorial-connect-to-the-samples.md
+    - name: "Customer Profitability sample: Take a tour"
       href: sample-customer-profitability.md
+    - name: "IT Spend Analysis sample: Take a tour"
+      href: sample-it-spend.md
     - name: "Human Resources sample: Take a tour"
       href: sample-human-resources.md
-    - name: "Opportunity Analysis sample for Power BI: Take a tour"
+    - name: "Opportunity Analysis sample: Take a tour"
       href: sample-opportunity-analysis.md
     - name: "Procurement Analysis sample: Take a tour"
       href: sample-procurement.md
-    - name: "Retail Analysis sample for Power BI: Take a tour"
+    - name: "Retail Analysis sample: Take a tour"
       href: sample-retail-analysis.md 
+    - name: "Sales and Marketing sample: Take a tour"
+      href: sample-sales-and-marketing.md
+    - name: "Supplier Quality Analysis sample: Take a tour"
+      href: sample-supplier-quality.md
+    - name: "Download the Financial Sample workbook"
+      href: sample-financial-download.md
   - name: Concepts
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
@@ -809,6 +817,8 @@
       items: 
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Power BI for Mixed Reality app (Preview)"
+        href: mobile-mixed-reality-app.md
       - name: "Share a dashboard from the Power BI mobile apps"
         href: mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
@@ -840,7 +850,7 @@
       - name: "Get started with the Power BI for Android app"
         href: mobile-android-app-get-started.md
       - name: "Fixing 'your corporate SSL certificate is untrusted'"
-        href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+        href: mobile-android-error-update-android-system-webview.md
     - name: iOS
       items: 
       - name: "Get started with the Power BI for iOS app"
@@ -1007,8 +1017,6 @@
       href: report-server/changelog.md
     - name: "Support timeline"
       href: report-server/support-timeline.md
-    - name: "Supported data sources"
-      href: report-server/data-sources.md
     - name: "Hardware and software requirements"
       href: report-server/system-requirements.md
     - name: "Browser support"
@@ -1019,9 +1027,9 @@
       items: 
       - name: "Power BI report scheduled refresh"
         href: report-server/scheduled-refresh.md
-      - name: "Power BI report (.pbix) data sources"
+      - name: "Power BI report data sources"
         href: report-server/data-sources.md
-      - name: "Paginated report (.rdl) data sources"
+      - name: "Paginated report data sources"
         href: report-server/connect-data-sources.md
       - name: "Subscriptions"
         href: https://go.microsoft.com/fwlink/?linkid=851310
@@ -1051,10 +1059,6 @@
         href: report-server/getting-around.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
-      - name: "Advanced Power BI reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848708
-      - name: "Advanced paginated reports"
-        href: https://go.microsoft.com/fwlink/?linkid=848709
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds "
