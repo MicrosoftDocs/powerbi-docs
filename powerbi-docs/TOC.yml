@@ -94,6 +94,8 @@
           href: service-print.md
         - name: "Subscribe to a report or dashboard"
           href: service-report-subscribe.md
+	- name: "Many ways to open a report"
+          href: service-report-open.md
         - name: "Rename content within Power BI"
           href: service-rename.md
         - name: "Display dashboards and reports in Full Screen mode (TV mode)"
