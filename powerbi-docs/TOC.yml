@@ -849,7 +849,9 @@
       items: 
       - name: "Get started with the Power BI for Android app"
         href: mobile-android-app-get-started.md
-      - name: "Fixing 'your corporate SSL certificate is untrusted'"
+      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
+        href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: "Fixing 'Need to update Android System Webview'"
         href: mobile-android-error-update-android-system-webview.md
     - name: iOS
       items: 
