@@ -1,21 +1,13 @@
 ---
 title: Create reports optimized for the Power BI phone apps
 description: Learn how to optimize report pages in Power BI Desktop for the Power BI phone apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 12/08/2017
 ms.author: maggies
 

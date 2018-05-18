@@ -1,21 +1,13 @@
 ---
 title: Use developer tools to create custom visuals
 description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
 
@@ -84,7 +76,7 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name"ssl-setup"></a>
+<a name="ssl-setup"></a>
 
 ### Server Certificate setup
 To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
@@ -94,9 +86,24 @@ To enable a live preview of your visual, a trusted https server is needed. Befor
 > 
 > 
 
-To *add* a certificate, run the following command.
+To *create* a certificate, run the following command.
+
+    pbiviz --create-cert
+
+> [!NOTE]
+> You should see a message telling you the location path to the certificate and a newly generated Passphrase.
+> 
+> 
+
+
+To *install* the certificate, run the following command.
 
     pbiviz --install-cert
+    
+> [!NOTE]
+> You should see a message telling you to use your newly generated Passphrase to install a PFX certificate.
+> 
+> 
 
 **Windows OS**
 

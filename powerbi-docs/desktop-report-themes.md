@@ -1,21 +1,13 @@
 ---
 title: Use Report Themes in Power BI Desktop (Preview)
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 
@@ -146,7 +138,7 @@ The basic JSON file has five required lines:
 
 * **name** - this is the theme name, which is the only required field
 * **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
-* **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
+* **background**, **foreground** and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To create an extended format JSON file, with more detailed and granular control over formatting, you need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
 

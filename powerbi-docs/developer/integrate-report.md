@@ -1,21 +1,13 @@
 ---
 title: Integrate a Power BI report into an app for your organization
 description: Learn how to integrate, or embed, a report into a web app using the Power BI APIs.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/05/2017
 ms.author: maghan
 

@@ -1,21 +1,13 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 04/23/2018
 ms.author: maggies
 
@@ -285,7 +277,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 #### Android devices
 **Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
 
-**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) collected in one convenient location. 
+**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) collected in one convenient location. 
 
 #### iOS devices
 **Links** URLs in tiles and visualizations are now clickable, and open in a browser.

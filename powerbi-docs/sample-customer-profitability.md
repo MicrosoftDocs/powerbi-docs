@@ -1,21 +1,13 @@
 ---
-title: 'Tutorial - Customer Profitability sample for Power BI: Take a tour'
+title: 'Customer Profitability sample for Power BI: Take a tour'
 description: 'Customer Profitability sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 

@@ -1,22 +1,14 @@
 ---
-title: Create ArcGIS maps by ESRI in Power BI (Tutorial)
+title: Create ArcGIS maps by ESRI in Power BI
 description: 'Create an ArcGIS maps by ESRI in Power BI '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: lukaszp
-editor: ''
-tags: ''
+ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 

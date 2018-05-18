@@ -1,21 +1,13 @@
 ---
 title: Changelog for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
 manager: kfile
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggies
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 12/11/2017
 ms.author: jtarquino
 ---
@@ -150,7 +142,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 [User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

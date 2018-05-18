@@ -1,22 +1,14 @@
 ---
 title: Certified Power BI custom visualizations
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
 

@@ -1,21 +1,12 @@
 ---
 title: How to migrate Power BI Workspace Collection Workspace Collection content to Power BI
 description: Learn how to migrate from Power BI Workspace Collection to the Power BI Embedded and leverage advances for embedding in apps.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.Embedded: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.topic: conceptual
 ms.date: 03/06/2018
 ms.author: maghan
 

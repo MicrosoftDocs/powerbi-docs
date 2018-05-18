@@ -1,21 +1,13 @@
 ---
 title: Hardware and Software Requirements for installing Power BI Report Server
 description: Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
 
@@ -73,7 +65,7 @@ You can use a live connection against tabular or multidimensional instances. You
 ## Next steps
 [User handbook](user-handbook-overview.md)  
 [Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

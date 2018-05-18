@@ -1,21 +1,13 @@
 ---
 title: Manage your app workspace in Power BI and Office 365
 description: App workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your app workspaces in Power BI and also in Office 365.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 

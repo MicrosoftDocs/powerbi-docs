@@ -1,21 +1,13 @@
 ---
 title: Install Power BI Desktop optimized for Power BI Report Server
 description: Learn how to install Power BI Desktop optimized for Power BI Report Server
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: maggies
 
@@ -106,9 +98,9 @@ If your report server is an earlier version, you need the corresponding version 
 ## Next steps
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
 
-[Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
+[Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Get started with Power BI Desktop](../desktop-getting-started.md)  
-Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)  
+Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 [User handbook overview, Power BI Report Server](user-handbook-overview.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
