@@ -97,7 +97,7 @@ There may be some cases where this will be helpful when you'd like to see differ
 ## Considerations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
-* In Power BI Report Server, you can [pass report parameters](pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine. 
+* In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine. 
 * Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
 * Field type has to be number or string.
 * Table and field names cannot have any spaces.
