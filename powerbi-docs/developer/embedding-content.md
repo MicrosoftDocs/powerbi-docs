@@ -4,7 +4,6 @@ description: Learn about the steps you need to take to embed Power BI content wi
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
@@ -31,6 +30,11 @@ Before you start embedding dashboards and reports into your application, you nee
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
 * [Register your Azure Active Directory application and permissions](embedding-content.md#appreg)
+
+You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
+There are two experiences you can sample:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically an **ISV developer** scenario.
+* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having users in your organziation being able to login and access Power BI content in an application.
 
 > [!NOTE]
 > Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
@@ -84,8 +88,6 @@ If you are embedding dashboards and reports for your customers, those dashboards
 ### Create and upload your reports
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
-
-You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly setup your embedded analytics development environment.
 
 ## Step 2: Embed your content
 
