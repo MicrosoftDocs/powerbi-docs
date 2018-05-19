@@ -24,7 +24,7 @@ There are two experiences you can sample:
 * **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically an **ISV developer** scenario.
 * **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having users in your organziation being able to login and access Power BI content in an application.
 
-![PBIE sample](media/what-can-you-do/what-can-you-do-01.png)
+![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
 ## Develop custom visuals
 Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convenience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, conditions, loops, etc. If you don't want to use any of those features, you can just write plain css in the less file.
