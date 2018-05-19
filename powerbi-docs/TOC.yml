@@ -1013,7 +1013,7 @@
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
-    - name: "Report server for admins"
+    - name: "Administrator overview"
       href: report-server/admin-handbook-overview.md
     - name: Report server basics
       items: 
