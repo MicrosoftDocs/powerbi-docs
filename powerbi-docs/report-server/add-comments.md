@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 05/18/2018
 ms.author: maggies
 
 ---
@@ -41,7 +41,7 @@ Depending on your permissions, you can:
 * See all comments; post, edit, and delete your own; and delete other people’s.
 
 ## Next steps
-* [Power BI Report Server user handbook](user-handbook-overview.md)  
+* [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

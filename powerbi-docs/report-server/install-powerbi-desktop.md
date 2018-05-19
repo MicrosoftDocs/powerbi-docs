@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 05/18/2018
 ms.author: maggies
 
 ---
@@ -101,7 +101,7 @@ Now that you have Power BI Desktop installed, you can start creating Power BI re
 [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Get started with Power BI Desktop](../desktop-getting-started.md)  
 Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
-[User handbook overview, Power BI Report Server](user-handbook-overview.md)
+[What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/19/2018
+ms.date: 05/19/2018
 ms.author: maggies
 
 ---
@@ -33,7 +33,7 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 
 ## Next steps
 [What's new in Power BI Report Server](whats-new.md)  
-[User handbook](user-handbook-overview.md)  
+[What is Power BI Report Server?](get-started.md)
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 

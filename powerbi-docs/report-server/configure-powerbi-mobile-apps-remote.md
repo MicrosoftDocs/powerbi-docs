@@ -21,20 +21,21 @@ In this article, learn how to use your organization's MDM tool to configure Powe
 
 ## Create the app configuration policy in MDM tool 
 
-As admin, these are the steps you follow in Intune to create the app configuration policy. The steps and experience of building the app configuration policy may vary between MDM tools. 
+As admin, these are the steps you follow in Intune to create the app configuration policy. The steps and experience of building the app configuration policy may be different in other MDM tools. 
 
 1. Connect your MDM tool. 
 2. Create and name a new app configuration policy. 
 3. Choose which users to distribute this app configuration policy to. 
-4. Create key-value pairs. The following table spells out the pairs.
+4. Create key-value pairs. 
 
+The following table spells out the pairs.
 
-    |Key  |Type  |Description  |
-    |---------|---------|---------|
-    | com.microsoft.powerbi.mobile.ServerURL | String | Report Server URL </br> Should start with http/https |
-    | com.microsoft.powerbi.mobile.ServerUsername | String | [optional] </br> The username to use for connecting the server. </br> If one does not exist, the app prompts the user to type the username for the connection.| 
-    | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional] </br> Default value is “Report server” </br> A friendly name used in the app to represent the server | 
-    | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Default value is True </br> If set to “True” then this overrides any Report Server definition already in the mobile device (existing servers already configured will be deleted). </br> Override set to True also prevents the user from removing that configuration. </br> Set to “False” adds the pushed values, leaving any existing settings. </br> If the same server URL is already configured in the mobile app, then the app leaves that configuration as is and doesn't ask the user to re-authenticate  for the same server. |
+|Key  |Type  |Description  |
+|---------|---------|---------|
+| com.microsoft.powerbi.mobile.ServerURL | String | Report Server URL </br> Should start with http/https |
+| com.microsoft.powerbi.mobile.ServerUsername | String | [optional] </br> The username to use for connecting the server. </br> If one does not exist, the app prompts the user to type the username for the connection.| 
+| com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional] </br> Default value is “Report server” </br> A friendly name used in the app to represent the server | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Default value is True </br> If set to “True” then this overrides any Report Server definition already in the mobile device (existing servers already configured will be deleted). </br> Override set to True also prevents the user from removing that configuration. </br> Set to “False” adds the pushed values, leaving any existing settings. </br> If the same server URL is already configured in the mobile app, then the app leaves that configuration as is and doesn't ask the user to re-authenticate  for the same server. |
 
 
 ## End users connecting to a report server

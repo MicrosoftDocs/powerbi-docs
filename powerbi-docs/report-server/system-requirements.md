@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/18/2018
 ms.author: maghan
 
 ---
@@ -63,7 +63,7 @@ You can use a live connection against tabular or multidimensional instances. You
 | 2016 and later |Standard SKU or higher |
 
 ## Next steps
-[User handbook](user-handbook-overview.md)  
+[What is Power BI Report Server?](get-started.md)  
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
