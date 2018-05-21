@@ -35,7 +35,7 @@ There are two experiences you can go through:
 * **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
 * **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
 
-However, if you choose to setup the emnvironment manually, you can continue to follow the instructions below.
+However, if you choose to setup the environment manually, you can continue to follow the instructions below.
 
 > [!NOTE]
 > Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
