@@ -20,9 +20,9 @@ Developers have different options trying to include Power BI content into applic
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you will have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
 Go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
-There are two experiences you can sample:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically an **ISV developer** scenario.
-* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having users in your organziation being able to login and access Power BI content in an application.
+There are two experiences you can go through:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
+* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 

@@ -29,12 +29,13 @@ Before you start embedding dashboards and reports into your application, you nee
 
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
-* [Register your Azure Active Directory application and permissions](embedding-content.md#appreg)
 
-You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
-There are two experiences you can sample:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically an **ISV developer** scenario.
-* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having users in your organziation being able to login and access Power BI content in an application.
+You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application. 
+There are two experiences you can go through:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
+* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
+
+However, if you choose to setup the emnvironment manually, you can continue to follow the instructions below.
 
 > [!NOTE]
 > Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
