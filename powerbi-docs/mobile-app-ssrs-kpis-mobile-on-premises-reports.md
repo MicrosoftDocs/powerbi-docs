@@ -1,7 +1,7 @@
 ---
 title: View on-premises reports and KPIs in the Power BI mobile apps
 description: The Power BI mobile apps offer live, touch-enabled mobile access to your on-premises business information in SQL Server Reporting Services and Power BI Report Server.
-author: maggiesMSFTmaggiesMSFT
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
