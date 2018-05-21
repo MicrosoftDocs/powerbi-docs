@@ -208,6 +208,7 @@ By creating a dedicated capacity you can take advantage of having a dedicated re
 >[!Note]
 >Embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
 >
+
 ### Assign app workspace to dedicated capacity
 
 Once dedicated capacity is created, assign the app workspace to the dedicated capacity. To complete this, follow these steps.
