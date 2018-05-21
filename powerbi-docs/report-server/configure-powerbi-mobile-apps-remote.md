@@ -1,5 +1,5 @@
 ---
-title: Configure Power BI iOS mobile app access to report servers remotely
+title: Configure Power BI iOS mobile app access to a report server remotely
 description: Learn how to configure the iOS mobile apps remotely for your report server.
 author: maggiesMSFT
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 05/21/2018
 ms.author: maggies
 
 ---
-# Configure Power BI iOS mobile app access to report servers remotely
+# Configure Power BI iOS mobile app access to a report server remotely
 
-In this article, learn how to use your organization's MDM tool to configure Power BI iOS mobile app access to report servers. To set this up, Power BI administrators create an app configuration policy with the required information to be pushed to the app. 
+In this article, learn how to use your organization's MDM tool to configure Power BI iOS mobile app access to a report server. To set this up, IT administrators create an app configuration policy with the required information to be pushed to the app. 
 
  Then, Power BI iOS mobile app users can connect to their organization's report server more easily because the report server connection is already configured. 
 

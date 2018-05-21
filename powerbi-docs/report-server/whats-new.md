@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 05/21/2018
 ms.author: maggies
 
 ---
@@ -33,7 +33,7 @@ For related Power BI "What's New" information, see:
 
 ### Configure Power BI iOS mobile apps for report servers remotely
 
-You can now use your organization's MDM tool to configure Power BI iOS mobile app access to report servers. See [Configure Power BI iOS mobile app access to report servers remotely](configure-powerbi-mobile-apps-remote.md) for details.
+As an IT admin, you can now use your organization's MDM tool to remotely configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](configure-powerbi-mobile-apps-remote.md) for details.
 
 ## March 2018 release
 
