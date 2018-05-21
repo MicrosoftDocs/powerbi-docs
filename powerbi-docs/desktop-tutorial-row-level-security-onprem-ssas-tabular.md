@@ -8,8 +8,8 @@ editor: davidi
 
 ms.service: powerbi
 ms.component: powerbi-desktop
-ms.topic: conceptual
-ms.date: 10/12/2017
+ms.topic: tutorial
+ms.date: 10/21/2017
 ms.author: selvar
 
 LocalizationGroup: Connect to data
