@@ -79,7 +79,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
 ## Connect to an on-premises report server in iOS
 
-If you're viewing Power BI in the iOS mobile app, your report server admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
+If you're viewing Power BI in the iOS mobile app, your IT admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
 
 1. You see a message that your mobile app is configured with a report server. Tap **Sign in**.
 
