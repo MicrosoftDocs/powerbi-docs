@@ -7,8 +7,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/02/2018
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: v-thepet
 
 LocalizationGroup: Learn more
