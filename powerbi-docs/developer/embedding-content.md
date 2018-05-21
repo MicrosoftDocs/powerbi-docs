@@ -33,7 +33,7 @@ Before you start embedding dashboards and reports into your application, you nee
 You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application. 
 There are two experiences you can go through:
 * **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
-* **Embed for your organization** - when you are interested in an [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
+* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
 
 However, if you choose to setup the emnvironment manually, you can continue to follow the instructions below.
 
