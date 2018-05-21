@@ -17,7 +17,7 @@ With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles
 In this tutorial, you learn how to:
 >[!div class="checklist"]
 >* Register an application in Azure.
->* Embed a report into an application using Power BI Embedded in Azure.
+>* Embed a Power BI report into an application.
 
 ## Prerequisites
 To get started, you need a **Power BI Pro** account which will be your **master account** and a **Microsoft Azure** subscription.
@@ -206,8 +206,9 @@ Now that your done developing your application, it is time to back your app work
 By creating a dedicated capacity you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these will be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure.
 
 >[!Note]
->Embed tokens with PRO license are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must  purchase a capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate when a dedicated capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
+>Embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
 >
+
 ### Assign app workspace to dedicated capacity
 
 Once dedicated capacity is created, assign the app workspace to the dedicated capacity. To complete this, follow these steps.
