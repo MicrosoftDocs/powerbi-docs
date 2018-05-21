@@ -1,14 +1,14 @@
 ---
 title: View on-premises reports and KPIs in the Power BI mobile apps
 description: The Power BI mobile apps offer live, touch-enabled mobile access to your on-premises business information in SQL Server Reporting Services and Power BI Report Server.
-author: maggiesMSFT
+author: maggiesMSFTmaggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 05/21/2018
 ms.author: maggies
 
 ---
@@ -42,7 +42,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
    
    ![Reporting Services samples](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
-## Connect to an on-premises server
+## Connect to an on-premises report server
 You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI mobile apps. 
 
 1. On your mobile device, open the Power BI app.
@@ -77,7 +77,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
    
    ![Report server in the left navigation pane](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## Connect to a report server in iOS
+## Connect to an on-premises report server in iOS
 
 If you're viewing Power BI in the iOS mobile app, your report server admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
 
@@ -87,7 +87,7 @@ If you're viewing Power BI in the iOS mobile app, your report server admin may h
 
 2.  On the **Connect to server** page, the report server details already filled in. Tap **Connect**.
 
-    ![Report server details filled in](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-connect-server.png)
+    ![Report server details filled in](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
 
 3. Type a password to authenticate, then tap **Sign in**. 
 

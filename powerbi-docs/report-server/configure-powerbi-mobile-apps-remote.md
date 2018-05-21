@@ -48,7 +48,7 @@ After you publish the app configuration policy, users and devices that belong to
 
 2.  On the **Connect to server** page, the report server details already filled in. They tap **Connect**.
 
-    ![Report server details filled in](media/configure-powerbi-mobile-apps-remote/power-bi-config-connect-server.png)
+    ![Report server details filled in](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configure-connect-server.png)
 
 3. They type a password to authenticate, then tap **Sign in**. 
 
