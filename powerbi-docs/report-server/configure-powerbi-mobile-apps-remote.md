@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 05/22/2018
 ms.author: maggies
 
 ---
@@ -21,7 +21,7 @@ In this article, learn how to use your organization's MDM tool to configure Powe
 
 ## Create the app configuration policy in MDM tool 
 
-As admin, these are the steps you follow in Intune to create the app configuration policy. The steps and experience of building the app configuration policy may be different in other MDM tools. 
+As admin, these are the steps you follow in Microsoft Intune to create the app configuration policy. The steps and experience of building the app configuration policy may be different in other MDM tools. 
 
 1. Connect your MDM tool. 
 2. Create and name a new app configuration policy. 
@@ -37,6 +37,9 @@ The following table spells out the pairs.
 | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional] </br> Default value is “Report server” </br> A friendly name used in the app to represent the server | 
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Default value is True </br> If set to “True” then this overrides any Report Server definition already in the mobile device (existing servers already configured will be deleted). </br> Override set to True also prevents the user from removing that configuration. </br> Set to “False” adds the pushed values, leaving any existing settings. </br> If the same server URL is already configured in the mobile app, then the app leaves that configuration as is and doesn't ask the user to re-authenticate  for the same server. |
 
+Here's an example of setting the configuration policy using Intune.
+
+![Intune configuraton settings](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
 ## End users connecting to a report server
 
