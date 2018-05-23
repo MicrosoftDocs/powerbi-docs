@@ -11,7 +11,7 @@ ms.devlang: ''
 ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 09/09/2015
+ms.date: 05/09/2018
 ms.author: mblythe
 
 ---
@@ -160,13 +160,13 @@ Create a reference to the root repository by entering these commands. This sets 
 
 Public repo:
 
-        cd powerbi-docs
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
+        cd powerbi-content
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/MicrosoftDocs/powerbi-docs.git
         git fetch upstream
 
 Private repo:
 
-        cd powerbi-docs-pr
+        cd powerbi-content-pr
         git remote add upstream https://[your GitHub user name]:[token]@github.com/MicrosoftDocs/powerbi-docs-pr.git
         git fetch upstream
 
@@ -178,13 +178,13 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 1. Start Git Bash, and switch into powerbi-content or powerbi-content-pr:
    
    ````
-   cd powerbi-content
+   cd powerbi-docs
    ````
    
    or
    
    ````
-   cd powerbi-content-pr
+   cd powerbi-docs-pr
    ````
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
    
