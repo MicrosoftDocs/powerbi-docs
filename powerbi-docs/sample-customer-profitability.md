@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 05/22/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -44,7 +44,7 @@ Want to follow along? This tutorial uses Power BI service and the "Customer Prof
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop.
-[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 

@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/18/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -94,9 +94,10 @@ Once you've filtered the report using query string parameters, you can pin visua
 
 There may be some cases where this will be helpful when you'd like to see different results; filtered on the dashboard and unfiltered in the report.
 
-## Limitations and troubleshooting
+## Considerations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
+* In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine. 
 * Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
 * Field type has to be number or string.
 * Table and field names cannot have any spaces.
