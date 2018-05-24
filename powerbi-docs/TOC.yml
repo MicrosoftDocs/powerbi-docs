@@ -1105,7 +1105,7 @@
     items: 
       - name: "Capacity planning whitepaper"
         href: report-server/capacity-planning.md
-- name: Gateways
+- name: Gateways 
   items:
   - name: Overview
     items: 
