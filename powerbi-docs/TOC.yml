@@ -992,7 +992,9 @@
     - name: "Custom Visuals Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
-    items: 
+    items:
+    - name: "Onboarding Experience Tool"
+      href: https://aka.ms/embedsetup
     - name: "JavaScript Playground Sample"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Samples"
