@@ -8,7 +8,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/11/2017
+ms.date: 03/31/2018
 ms.author: jtarquino
 ---
 # Changelog for Power BI Report Server
@@ -140,8 +140,8 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## Next steps
 
-[User handbook](user-handbook-overview.md)  
-[Administrator handbook](admin-handbook-overview.md)  
+[What is Power BI Report Server?](get-started.md)
+[Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

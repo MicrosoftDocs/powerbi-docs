@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 3/22/2018
+ms.date: 05/18/2018
 ms.author: maggies
 
 ---
@@ -127,6 +127,6 @@ There are so many great resources for creating reports in Power BI Desktop. This
 
 ### Power BI Report Server
 * [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
-* [Power BI Report Server user handbook](user-handbook-overview.md)  
+* [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
