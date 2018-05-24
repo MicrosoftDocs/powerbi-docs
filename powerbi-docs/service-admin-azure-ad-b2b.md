@@ -27,7 +27,7 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 
 ## Who can you invite?
 
-You can invite guest users that use any email address including personal accounts such as gmail.com, outlook.com, or hotmail.com. In Azure B2B these are called “Social IDs”. For more information please reference [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+You can invite guest users that use any email address including personal accounts such as gmail.com, outlook.com, or hotmail.com. In Azure B2B these are called “Social IDs”. For more information please reference [Azure B2B](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## Invite guest users
 
@@ -97,7 +97,7 @@ The guest user already has a Power BI Pro license assigned within their tenant.
 
 ## Considerations and Limitations
 
-* When you invite guest users that are using personal email accounts such as gmail.com, outlook.com, or hotmail.com you can follow this [embedded video](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) to see an example of how a user would sign up.
+* When you invite guest users that are using personal email accounts such as gmail.com, outlook.com, or hotmail.com you can follow this [embedded video](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-redemption-experience) to see an example of how a user would sign up.
 * External B2B guests are limited to consumption of content only. External B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content.
 * This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser.
 * This feature is not currently available with the Power BI SharePoint Online report web part.

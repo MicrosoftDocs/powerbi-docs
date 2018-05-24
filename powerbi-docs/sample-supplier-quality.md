@@ -29,7 +29,7 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), or
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), or
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529779).
 
 ### Get the content pack for this sample
