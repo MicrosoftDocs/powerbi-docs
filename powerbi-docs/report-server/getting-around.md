@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 05/24/2018
 ms.author: maggies
 
 ---
@@ -63,9 +63,7 @@ Power BI Report Server offers detailed control of the items you store on the web
 Read more about [working with subscriptions in the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## Next steps
-[User handbook](user-handbook-overview.md)  
-[Paginated reports](quickstart-create-paginated-report.md)  
-[Power BI reports](quickstart-create-powerbi-report.md)
+[What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -8,20 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 05/21/2018
 ms.author: maggies
 
 ---
 # View on-premises report server reports and KPIs in the Power BI mobile apps
+
+The Power BI mobile apps deliver live, touch-enabled mobile access to your on-premises business information in Power BI Report Server and SQL Server 2016 Reporting Services (SSRS).
+
 Applies to:
 
 | ![iPhone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android phone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android tablet](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |
 
-The Power BI mobile apps deliver live, touch-enabled mobile access to your on-premises business information in Power BI Report Server and SQL Server 2016 Reporting Services (SSRS). 
 
- ![Report Server home in the mobile apps](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
+![Report Server home in the mobile apps](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
 
 ## First things first
 **The mobile apps are where you view Power BI content, not where you create it.**
@@ -40,7 +42,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
    
    ![Reporting Services samples](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
-## Connect to an on-premises server
+## Connect to an on-premises report server
 You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI mobile apps. 
 
 1. On your mobile device, open the Power BI app.
@@ -74,6 +76,24 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 6. Now you see the server in the left navigation bar--in this example, called "power bi report server."
    
    ![Report server in the left navigation pane](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+
+## Connect to an on-premises report server in iOS
+
+If you're viewing Power BI in the iOS mobile app, your IT admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
+
+1. You see a message that your mobile app is configured with a report server. Tap **Sign in**.
+
+    ![Sign in to the report server](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
+
+2.  On the **Connect to server** page, the report server details already filled in. Tap **Connect**.
+
+    ![Report server details filled in](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
+
+3. Type a password to authenticate, then tap **Sign in**. 
+
+    ![Report server details filled in](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+
+Now you can view and interact with KPIs and Power BI reports stored on the report server.
 
 ## View Power BI reports and KPIs in the Power BI app
 Power BI reports, Reporting Services mobile reports, and KPIs are displayed in the same folders they're in on the Reporting Services web portal. 

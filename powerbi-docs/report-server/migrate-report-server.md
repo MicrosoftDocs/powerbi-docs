@@ -95,7 +95,7 @@ Migrating from one Power BI Reprot Server is the same process as migrating from 
 * Perform any cleanup needed for the old Power BI Report Server installation.
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
+[Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Script with the rs.exe Utility and the Web Service](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
