@@ -20,9 +20,9 @@ Developers have different options trying to include Power BI content into applic
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you will have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
 Go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
-There are two experiences you can go through:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
-* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
+Choose the solution that is right for you and your customers:
+* [Embedding for your customers](https://aka.ms/embedsetup/AppOwnsData) - when you are interested in an app owns data solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** or **developers**. [Embedding for your customers](embedding-content.md#embedding-for-your-customers) provides the ability to embed reports and dashboards to users who don't have an account for Power BI. Your customers don't need to know anything about Power BI to take advantage of the application.
+* [Embedding for your organization](https://aka.ms/embedsetup/UserOwnsData) - when you are interested in a user owns data solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application. [Embedding for your organization](embedding-content.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
