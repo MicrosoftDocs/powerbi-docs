@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/12/2018
+ms.date: 05/25/2018
 ms.author: maghan
 ---
 # Embed your Power BI dashboards, reports and tiles
@@ -30,15 +30,16 @@ Before you start embedding dashboards and reports into your application, you nee
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
 
-You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application. 
-There are two experiences you can go through:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
-* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
+You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
-However, if you choose to setup the environment manually, you can continue to follow the instructions below.
+Choose the solution that is right for you:
+* **Embedding for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding-content.md#embedding-for-your-customers) provides the ability to embed reports and dashboards to users who don't have a Power BI account or even know what Power BI is.
+* **Embedding for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding-content.md#embedding-for-your-organization) allows you to extend the Power BI service.
+
+However, if you choose to set up the environment manually, you can continue below.
 
 > [!NOTE]
-> Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
+> Dedicated capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
 
 ### <a name="azureadtenant"></a>Azure Active Directory tenant
 

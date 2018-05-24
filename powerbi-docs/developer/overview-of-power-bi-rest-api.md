@@ -48,10 +48,11 @@ The Power BI Developer samples include items for embedding dashboards, reports a
 ## Developer tools
 The following are tools you can use to aid in your development of Power BI items.
 
-Go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
-There are two experiences you can go through:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. This is typically a scenario for **ISVs** and **developers**.
-* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. **User owns data** is about having Power BI users in your organization accessing Power BI content through an external application.
+You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application on how to embed Power BI content specifically.
+
+Choose the solution that is right for you:
+* **Embedding for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding-content.md#embedding-for-your-customers) provides the ability to embed reports and dashboards to users who don't have a Power BI account or even know what Power BI is.
+* **Embedding for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding-content.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
 For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
