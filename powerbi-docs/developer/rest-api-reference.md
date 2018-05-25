@@ -8,12 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/05/2017
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
 # Power BI REST API Reference
 Power BI is a cloud-based service that you can use to build custom dashboard applications. The Power BI REST API is a REST-based API that provides programmatic access to **Dashboard** resources such as **Datasets**, **Tables**, and **Rows** in Power BI.
+
+[!INCLUDE [gdpr-hybrid-note](../includes/gdpr-hybrid-note.md)]
 
 The Power BI REST API has the following operations:
 
