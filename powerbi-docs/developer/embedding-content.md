@@ -4,11 +4,10 @@ description: Learn about the steps you need to take to embed Power BI content wi
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/12/2018
+ms.date: 05/25/2018
 ms.author: maghan
 ---
 # Embed your Power BI dashboards, reports and tiles
@@ -30,10 +29,17 @@ Before you start embedding dashboards and reports into your application, you nee
 
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
-* [Register your Azure Active Directory application and permissions](embedding-content.md#appreg)
+
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
+
+Choose the solution that is right for you:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+
+However, if you choose to set up the environment manually, you can continue below. 
 
 > [!NOTE]
-> Power BI capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
+> Dedicated capacity is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
 
 ### <a name="azureadtenant"></a>Azure Active Directory tenant
 
@@ -147,8 +153,6 @@ If you are embedding for your customers, do the following.
     ![Assign app workspace to capacity](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
-
-
 
 ## Admin settings
 
