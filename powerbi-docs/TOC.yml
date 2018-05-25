@@ -953,7 +953,7 @@
         href: developer/migrate-code-snippets.md
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
-    - name: Push data into a dashboard
+    - name: Push data
       items: 
       - name: "Push data into a dashboard"
         href: developer/walkthrough-push-data.md
