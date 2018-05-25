@@ -3,7 +3,7 @@ title: Embed Power BI content into an application for your customers
 description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your customers.
 author: markingmyname
 ms.author: maghan 
-ms.date: 05/07/2018
+ms.date: 05/25/2018
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
@@ -31,6 +31,9 @@ To get started, you need a **Power BI Pro** account which will be your **master 
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment is set up to allow for embedding. As part of the setup, you will need to do the following.
 
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started and download a sample application that helps you walk through creating an evnironment and embedding a report.
+
+However, if you choose to set up the environment manually, you can continue below.
 ### Register an application in Azure Active Directory (Azure AD)
 
 You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. This allows you to establish an identity for your application and specify permissions to Power BI REST resources.

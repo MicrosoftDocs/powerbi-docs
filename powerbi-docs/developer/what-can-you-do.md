@@ -3,7 +3,7 @@ title: What can developers do with Power BI?
 description: Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.
 author: markingmyname
 ms.author: maghan
-ms.date: 05/03/2018
+ms.date: 05/25/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-developer
@@ -19,7 +19,13 @@ Developers have different options trying to include Power BI content into applic
 ## Embedding
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you will have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
-![PBIE sample](media/what-can-you-do/what-can-you-do-01.png)
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
+
+Choose the solution that is right for you: 
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+
+![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
 ## Develop custom visuals
 Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convenience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, conditions, loops, etc. If you don't want to use any of those features, you can just write plain css in the less file.
