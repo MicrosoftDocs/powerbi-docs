@@ -907,8 +907,6 @@
       href: developer/embedded-row-level-security.md
     - name: "FAQ"
       href: developer/embedded-faq.md
-    - name: "Embedding Q&A"
-      href: developer/qanda.md
   - name: How to
     items: 
     - name: Create a custom visual
@@ -927,8 +925,6 @@
         href: developer/embedding.md
       - name: "How to embed your content"
         href: developer/embedding-content.md
-      - name: "How to migrate Power BI Embedded"
-        href: developer/migrate-from-powerbi-embedded.md
       - name: "Integrate a dashboard into an app (user owns data)"
         href: developer/integrate-dashboard.md
       - name: "Integrate a Power BI tile into an app (user owns data)"
@@ -947,6 +943,10 @@
         href: developer/register-app.md
       - name: "Authenticate to Power BI service"
         href: developer/get-azuread-access-token.md
+      - name: "Embedding Q&A"
+        href: developer/qanda.md
+      - name: "How to migrate Power BI Embedded"
+        href: developer/migrate-from-powerbi-embedded.md      
       - name: "Power BI Embedded migration tool"
         href: developer/migrate-tool.md
       - name: "Migration code snippets"
