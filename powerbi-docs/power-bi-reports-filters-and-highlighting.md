@@ -45,7 +45,7 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 There are two modes for interacting with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, drillthrough, and visual filters. When you save the report, the filters are saved with the report -- even if you open it in a mobile app. People looking at the report in Reading View can interact with the filters you added, but cannot add new filters.
-* In Reading View, you can interact with any filters that already exist in the report, and save the selectiona you make.  But you won't be able to add new filters.
+* In Reading View, you can interact with any filters that already exist in the report, and save the selection you make.  But you won't be able to add new filters.
 
 ### The Filters pane in Reading View
 If you only have access to a report in Reading View, the Filters pane looks similar to this:
