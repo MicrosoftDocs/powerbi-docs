@@ -30,7 +30,7 @@ Before you start embedding dashboards and reports into your application, you nee
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
 
-You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
 Choose the solution that is right for you:
 * **Embedding for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
