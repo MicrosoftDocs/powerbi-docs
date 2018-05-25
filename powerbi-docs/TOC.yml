@@ -901,32 +901,14 @@
     items: 
     - name: "What can I do with the Power BI API?"
       href: developer/overview-of-power-bi-rest-api.md
-    - name: "FAQ"
-      href: developer/embedded-faq.md
     - name: "Power BI permissions"
       href: developer/power-bi-permissions.md
     - name: "Row-level security (RLS)"
       href: developer/embedded-row-level-security.md
-    - name: "Embedding Q&A"
-      href: developer/qanda.md
+    - name: "FAQ"
+      href: developer/embedded-faq.md
   - name: How to
     items: 
-    - name: "How to embed your content"
-      href: developer/embedding-content.md
-    - name: "Push data into a dashboard"
-      href: developer/walkthrough-push-data.md
-    - name: "How to migrate Power BI Embedded"
-      href: developer/migrate-from-powerbi-embedded.md
-    - name: "Integrate a dashboard into an app (user owns data)"
-      href: developer/integrate-dashboard.md
-    - name: "Integrate a Power BI tile into an app (user owns data)"
-      href: developer/integrate-tile.md
-    - name: "Integrate a Power BI report into an app (user owns data)"
-      href: developer/integrate-report.md
-    - name: "Integrate content into your application (app owns data)"
-      href: developer/embed-sample-for-customers.md
-    - name: "Integrate content into your application for sovereign clouds (app owns data)"
-      href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Create a custom visual
       items: 
       - name: "Create a custom visual with the Developer Tools"
@@ -937,10 +919,22 @@
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md      
-    - name: Embedding
+    - name: Embedding 
       items: 
       - name: "Embedding with Power BI"
         href: developer/embedding.md
+      - name: "How to embed your content"
+        href: developer/embedding-content.md
+      - name: "Integrate a dashboard into an app (user owns data)"
+        href: developer/integrate-dashboard.md
+      - name: "Integrate a Power BI tile into an app (user owns data)"
+        href: developer/integrate-tile.md
+      - name: "Integrate a Power BI report into an app (user owns data)"
+        href: developer/integrate-report.md
+      - name: "Integrate content into your application (app owns data)"
+        href: developer/embed-sample-for-customers.md
+      - name: "Integrate content into your application for sovereign clouds (app owns data)"
+        href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Embed custom layouts into an app"
         href: developer/embedded-custom-layout.md
       - name: "Create an Azure Active Directory tenant"
@@ -949,14 +943,20 @@
         href: developer/register-app.md
       - name: "Authenticate to Power BI service"
         href: developer/get-azuread-access-token.md
+      - name: "Embedding Q&A"
+        href: developer/qanda.md
+      - name: "How to migrate Power BI Embedded"
+        href: developer/migrate-from-powerbi-embedded.md      
       - name: "Power BI Embedded migration tool"
         href: developer/migrate-tool.md
       - name: "Migration code snippets"
         href: developer/migrate-code-snippets.md
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
-    - name: Push data into a dashboard
+    - name: Push data
       items: 
+      - name: "Push data into a dashboard"
+        href: developer/walkthrough-push-data.md
       - name: "Register an app with Azure AD"
         href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: "Get an authentication access token"
@@ -992,7 +992,9 @@
     - name: "Custom Visuals Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Resources
-    items: 
+    items:
+    - name: "Onboarding Experience Tool for embedding"
+      href: https://aka.ms/embedsetup
     - name: "JavaScript Playground Sample"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Samples"
@@ -1103,7 +1105,7 @@
     items: 
       - name: "Capacity planning whitepaper"
         href: report-server/capacity-planning.md
-- name: Gateways
+- name: Gateways 
   items:
   - name: Overview
     items: 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/25/2018
 ms.author: maghan
 ---
 # Frequently asked questions about Power BI Embedded
@@ -96,6 +96,9 @@ Power BI Embedded will continue to use Azure AD for authentication of the master
 The authentication and authorization of the application users will be implemented by the ISV, the ISV can implement their own authentication for their applications.
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
+
+To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries. There are client libraries available for multiple platforms.
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
 
 ### How is Power BI Embedded different from other Azure services?
 

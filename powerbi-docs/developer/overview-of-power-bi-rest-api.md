@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/20/2017
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
@@ -48,7 +48,13 @@ The Power BI Developer samples include items for embedding dashboards, reports a
 ## Developer tools
 The following are tools you can use to aid in your development of Power BI items.
 
-* [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo)
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application on how to embed Power BI content.
+
+Choose the solution that is right for you:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+
+For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
 ## Next steps
 [Push data into a dataset](walkthrough-push-data.md)  
@@ -56,4 +62,3 @@ The following are tools you can use to aid in your development of Power BI items
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
