@@ -10,7 +10,6 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-
 ---
 # Integrate a report into an app for your organization
 Learn how to integrate, or embed, a report into a web app using REST API calls along with the Power BI JavaScript API when embedding for your organization.
