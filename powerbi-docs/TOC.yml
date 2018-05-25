@@ -919,7 +919,7 @@
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md      
-    - name: Embedding
+    - name: Embedding 
       items: 
       - name: "Embedding with Power BI"
         href: developer/embedding.md
