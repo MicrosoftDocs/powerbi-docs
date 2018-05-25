@@ -1,22 +1,14 @@
 ---
 title: 'IT Spend Analysis sample for Power BI: Take a tour'
 description: 'IT Spend Analysis sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/20/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/20/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -32,7 +24,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix), or 
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT-Spend-Analysis-Sample-PBIX.pbix), or 
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ### Get the content pack for this sample

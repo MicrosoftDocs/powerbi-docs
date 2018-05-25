@@ -1,20 +1,12 @@
 ---
 title: Using buttons in Power BI 
 description: Buttons in Power BI Desktop let you make reports and dashboards that behave like apps, and deepen engagement with users
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/04/2018
 ms.author: davidi
 

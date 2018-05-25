@@ -1,22 +1,14 @@
 ---
 title: 'Human Resources sample: Take a tour'
 description: 'Human Resources sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/22/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -36,7 +28,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix), or 
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix), or 
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780).
 
 ### Get the content pack for this sample

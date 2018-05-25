@@ -1,20 +1,12 @@
 ---
 title: Install and use apps with dashboards and reports in Power BI
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 10/02/2017
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: maggies
 

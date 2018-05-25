@@ -1,22 +1,14 @@
 ---
 title: 'Create a paginated report for Power BI Report Server'
 description: Learn how to create a paginated report for Power BI Report Server in a few simple steps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
 
 ---
@@ -98,7 +90,7 @@ When your report is ready, save it to Power BI Report Server.
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
 
 * [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Power BI Report Server user handbook](user-handbook-overview.md)  
+* [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

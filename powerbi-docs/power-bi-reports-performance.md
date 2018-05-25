@@ -1,22 +1,14 @@
 ---
 title: Power BI performance best practices
 description: This article provides guidance for building fast and reliable reports in Power BI
-services: powerbi
-documentationcenter: ''
 author: MarkMcGeeAtAquent
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: v-mamcge
 
 LocalizationGroup: Reports
@@ -94,8 +86,14 @@ Note that for DirectQuery and live connection, this query cache is updated on a 
 ## Understand custom visual performance 
 Be sure to put each custom visual through its paces to ensure high performance. Poorly optimized custom visuals can negatively affect the performance of the entire report. 
  
-## Deep-dive into query performance with SQL Profiler and Power BI Desktop 
-For a deeper dive into which visuals are taking up the most time and resources, you can connect SQL Profiler to Power BI Desktop to get all full view of query performance. Instructions as follows: 
+## Deep-dive into query performance with SQL Profiler and Power BI Desktop
+
+For a deeper dive into which visuals are taking up the most time and resources, you can connect SQL Profiler to Power BI Desktop to get all full view of query performance.
+
+> [!NOTE]
+> Power BI desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to connect to and perform traces for diagnostic purposes. *Making any changes to the model is not supported! Changes to the model may lead to corruption and data loss.*
+
+Instructions as follows:
   
 1. **Install SQL Server Profiler and run Power BI Desktop** 
 

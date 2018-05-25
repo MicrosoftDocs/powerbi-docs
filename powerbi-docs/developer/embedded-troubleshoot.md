@@ -1,21 +1,12 @@
 ---
 title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
 ---
@@ -62,7 +53,7 @@ Please provide the request id when approaching Microsoft support.
 
 **App registration failure**
 
-Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be  an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
 **Power BI Service does not appear in Azure portal when registering a new App**
 
@@ -78,7 +69,7 @@ A fiddler capture may be required to investigate further. The required permissio
 
 A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
 
-* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
+* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
 * The authenticated user is not a member of the group (app workspace).
 * The authenticated user is not an admin of the group (app workspace).
@@ -140,5 +131,3 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
-

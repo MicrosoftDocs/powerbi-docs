@@ -1,12 +1,12 @@
 ---
 title: What can developers do with Power BI?
 description: Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.
-services: powerbi
 author: markingmyname
 ms.author: maghan
 ms.date: 05/03/2018
 ms.topic: overview
 ms.service: powerbi
+ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.

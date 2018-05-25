@@ -1,22 +1,14 @@
 ---
 title: What's new in Power BI Report Server
 description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/19/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/21/2018
 ms.author: maggies
 
 ---
@@ -36,6 +28,12 @@ For related Power BI "What's New" information, see:
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+
+## May 2018
+
+### Configure Power BI iOS mobile apps for report servers remotely
+
+As an IT admin, you can now use your organization's MDM tool to remotely configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](configure-powerbi-mobile-apps-remote.md) for details.
 
 ## March 2018 release
 
@@ -208,7 +206,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 * Enhanced collaboration in reports with comments
 
 ## Next steps
-[User handbook](user-handbook-overview.md)  
+[What is Power BI Report Server?](get-started.md) 
 [Administrator handbook](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

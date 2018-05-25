@@ -1,22 +1,14 @@
 ---
 title: Get started formatting Power BI visualizations
 description: 'Customize visualization title, background, and legend'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 

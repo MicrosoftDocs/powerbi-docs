@@ -1,21 +1,13 @@
 ---
 title: Distribute Power BI content to external guest users with Azure AD B2B
 description: Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 
@@ -35,7 +27,7 @@ Power BI integrates with Azure Active Directory Business-to-business (Azure AD B
 
 ## Who can you invite?
 
-You can invite guest users that use any email address including personal accounts such as gmail.com, outlook.com, or hotmail.com. In Azure B2B these are called “Social IDs”. For more information please reference [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+You can invite guest users that use any email address including personal accounts such as gmail.com, outlook.com, or hotmail.com. In Azure B2B these are called “Social IDs”. For more information please reference [Azure B2B](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## Invite guest users
 
@@ -59,7 +51,7 @@ A planned invite is performed within the Microsoft Azure Portal in Azure AD or u
 
 4. Select **Invite**.
 
-To invite more than one guest user, use PowerShell. For more information, see [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples).
+To invite more than one guest user, use PowerShell. For more information, see [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/b2b/code-samples).
 
 The guest user needs to select **Get Started** in the email invitation they receive. The guest user is then added to the tenant.
 
@@ -105,10 +97,10 @@ The guest user already has a Power BI Pro license assigned within their tenant.
 
 ## Considerations and Limitations
 
-* When you invite guest users that are using personal email accounts such as gmail.com, outlook.com, or hotmail.com you can follow this [embedded video](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) to see an example of how a user would sign up.
+* When you invite guest users that are using personal email accounts such as gmail.com, outlook.com, or hotmail.com you can follow this [embedded video](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-redemption-experience) to see an example of how a user would sign up.
 * External B2B guests are limited to consumption of content only. External B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content.
 * This feature is not currently available with the Power BI mobile apps. On a mobile device, you can view Power BI content shared using Azure AD B2B in a browser.
-* Using guest users with Power BI is not supported within sovereign clouds (government).
+* This feature is not currently available with the Power BI SharePoint Online report web part.
 
 ## Next steps
 

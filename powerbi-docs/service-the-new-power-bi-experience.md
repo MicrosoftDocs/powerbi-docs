@@ -1,19 +1,15 @@
 ---
 title: Getting around in Power BI service
 description: Overview of the Power BI navigation experience
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
+ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: quickstart
 ms.component: powerbi-service
-ms.workload: powerbi
-ms.date: 05/07/2018
+ms.topic: quickstart
+ms.date: 05/18/2018
 ms.author: mihart
 #customer intent: As a PBI customer or potential customer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -126,6 +122,19 @@ You can also sort the content by name or owner.
 ![sort content](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 To learn more, see [Power BI navigation: search, sort, filter](service-navigation-search-filter-sort.md)
+
+## Clean up resources
+After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.
+
+1. Open the Power BI service (app.powerbi.com) and sign in.    
+2. In the left navigation pane, select **Workspaces > My Workspace**.  
+    Notice the yellow star indicating it's a favorite?    
+3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Retail Analysis dashboard.    
+
+    ![delete dashboard](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
+
+4. Select the **Reports** tab and do the same for the Retail Analysis report.
+1. Select the **Datasets** tab and do the same for the Retail Analysis dataset.
 
 ## Next steps
 

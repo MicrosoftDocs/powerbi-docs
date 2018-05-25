@@ -1,21 +1,13 @@
 ---
 title: Frequently Asked Questions for Power BI for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 
@@ -75,7 +67,7 @@ The following questions and answers provide important information for Power BI P
 ### Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
 * [Getting started with Power BI Desktop](desktop-getting-started.md)
 

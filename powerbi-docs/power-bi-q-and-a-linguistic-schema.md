@@ -1,22 +1,14 @@
 ---
 title: Editing Q&A linguistic schema and adding phrasings
 description: How to use Power BI Desktop to edit the linguistic schema used by Power BI Q&A.
-services: powerbi
-documentationcenter: ''
 author: willthom
 manager: kfile
-backup: 'mihart'
-editor: ''
-tags: ''
-qualityfocus:  ''
-qualitydate: ''
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/20/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/22/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -58,10 +50,7 @@ We recommend using Visual Studio Code to edit linguistic schema YAML files. Visu
 
     ![How do you want to open this file](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
 
-4. In Visual Studio Code, install the YAML Support by Red Hat extension.
-
-   
-
+4. In Visual Studio Code, install the YAML Support by Red Hat extension.    
     a. Select the **Extensions** tab (last one on the left) or CTRL+SHIFT+X.    
     ![extensions icon](media/power-bi-q-and-a-linguistic-schema/power-bi-extensions.png)    
     b. Search for "yaml" and select **YAML Support by Red Hat** in the list.    

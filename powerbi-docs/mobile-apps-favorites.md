@@ -1,21 +1,13 @@
 ---
 title: Favorites in the Power BI mobile apps
 description: Read about making and viewing your favorite Power BI dashboards, reports, and apps, plus Power BI Report Server and Reporting Services reports and KPIs in the mobile apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
 

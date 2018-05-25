@@ -1,21 +1,13 @@
 ---
 title: Find Power BI users that have signed in
 description: If you are a tenant admin, and want to see who has signed into Power BI, you can use the Azure Active Directory access and usage reports to gain visibility.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 
@@ -65,7 +57,7 @@ Within the Activity screen, you can select **Download** in the toolbar. This wil
 You can use PowerShell to export the sign-in data. A [sample](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) is available within the Azure AD documentation.
 
 > [!NOTE]
-> For the PowerShell sample to work, be sure to follow the [prerequisites to access the Azure AD reporting API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
+> For the PowerShell sample to work, be sure to follow the [prerequisites to access the Azure AD reporting API](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites).
 > 
 > 
 

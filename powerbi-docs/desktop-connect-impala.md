@@ -1,21 +1,13 @@
 ---
 title: Connect to an Impala database in Power BI Desktop
 description: Easily connect to and use an Impala database in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 
@@ -33,7 +25,7 @@ In the **Impala** window that appears, type or paste the name of your Impala ser
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-When prompted, put in your username and password, or connect anonymously - either is supported.
+When prompted, enter your credentials, or connect anonymously. The Impala connector supports Anonymouse, Basic (username + password), and Windows authentication.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
@@ -49,10 +41,10 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 ## Considerations and Limitations
 There are a few limits and considerations to keep in mind with the **Impala** connector:
 
-* Future plans include enabling refresh support using the **Power BI Gateway**.
+* The Impala connector is supported on the On-Premises data gateway, using any of the three supported authentication mechanisms.
 
 ## Next steps
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)

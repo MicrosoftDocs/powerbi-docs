@@ -1,29 +1,21 @@
 ---
 title: Get started with Power BI service
 description: Get started with Power BI service
-services: powerbi
-documentationcenter: ''
 author: adamw
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-qualityfocus: monitoring
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Get started with Power BI service (app.powerbi.com)
-This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml#step-1).
+This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml?tutorial-step=1).
 
 ![art showing relatioship between Desktop, service, mobile](media/service-get-started/power-bi-components.png)
 

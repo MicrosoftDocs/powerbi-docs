@@ -1,21 +1,13 @@
 ---
 title: Power BI Premium FAQ
 description: Browse a list of frequently asked questions and answers about the Power BI Premium offering.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/20/2017
 ms.author: mblythe
 

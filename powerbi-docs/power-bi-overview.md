@@ -1,16 +1,12 @@
 ---
 title: What is Power BI?
 description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server.
-services: powerbi
 author: mihart
 manager: kfile
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: overview
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.component: powerbi-service
-ms.date: 05/07/2018
+ms.topic: overview
+ms.date: 05/17/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -58,4 +54,4 @@ Create, deploy, and manage Power BI, mobile and paginated reports on premises wi
 Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that’s viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready. 
 
 ## Next steps
-[Sign in and connect to a service](/power-bi/service-tutorial-connect-to-github.md)
+[Sign in and connect to a service](service-the-new-power-bi-experience.md)

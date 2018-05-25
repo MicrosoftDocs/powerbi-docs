@@ -1,21 +1,13 @@
 ---
 title: Install Power BI Report Server
 description: 'Learn how to install Power BI Report Server.'
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/19/2018
 ms.author: maggies
 ---
@@ -134,7 +126,7 @@ You need to open up the TCP port that you have configured for your Web Service U
 * To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
+[Administrator overview](admin-handbook-overview.md)  
 [How to find your report server product key](find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  

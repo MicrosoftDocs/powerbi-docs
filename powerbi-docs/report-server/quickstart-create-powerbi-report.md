@@ -1,22 +1,14 @@
 ---
 title: 'Create a Power BI report for Power BI Report Server'
 description: Learn how to create a Power BI report for Power BI Report Server in a few simple steps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 3/22/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
 
 ---
@@ -131,9 +123,10 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
 * [Get started with Power BI Desktop](../desktop-getting-started.md)
+* Guided learning: [Getting started with Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 ### Power BI Report Server
 * [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
-* [Power BI Report Server user handbook](user-handbook-overview.md)  
+* [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

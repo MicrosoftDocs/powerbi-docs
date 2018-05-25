@@ -1,20 +1,13 @@
 ---
 title: 'Quickstart: Explore dashboards and reports in the Power BI mobile apps'
 description: In this quickstart, you explore a sample dashboard and report in the Power BI mobile apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: 
-ms.devlang: NA
+ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: maggies
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.

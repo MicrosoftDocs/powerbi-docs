@@ -1,22 +1,13 @@
 ---
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.component: powerbi-report-server
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-report-server
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/18/2018
 ms.author: maggies
 #intent statement: As a Power BI admin or end user, I want to see how Power BI Report Server is structured, and where I go to manage my files.
 ---
@@ -55,6 +46,8 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 6. For **Resource group**, keep **Create new**, and call it **reportserverresourcegroup**.
 
+    If you go through the tutorial more than once, you need to give the resource group a different name after the first time. You can't use the same resource group name twice in one subscription. 
+
 7. Keep the other defaults > **OK**.
 
     ![Name the VM and resource group](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
@@ -87,7 +80,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 7. The next dialog box says the identity of the remote computer cannot be identified. Select **Yes**.
 
-   Voila -- your new VM opens.
+   Voila, your new VM opens.
 
 ## Power BI Report Server on the VM
 
@@ -161,6 +154,8 @@ You can view and interact with Power BI reports in the web portal, and start Pow
      The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (March 2018)". That's the version optimized for Power BI Report Server.
 
     ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
+
+     Use the version of Power BI Desktop that's installed on the VM. You can't go across domains to upload a report.
 
 3. In the Fields pane, expand the Customers table and drag the Occupation field to Report level filters.
 
@@ -248,7 +243,9 @@ Now that you've finished this tutorial, delete the resource group, virtual machi
 
 ## Next steps
 
-In this tutorial, you've created a VM with Power BI Report Server. You've tried some of the functionality of the web portal, and you've opened a Power BI report and a paginated report in their respective editors. To learn more about creating reports for Power BI Report Server, continue on.
+In this tutorial, you've created a VM with Power BI Report Server. You've tried some of the functionality of the web portal, and you've opened a Power BI report and a paginated report in their respective editors. This VM has SQL Server Analysis Services data sources installed, so you can try creating your own Power BI and paginated reports with those same data sources. 
+
+To learn more about creating reports for Power BI Report Server, continue on.
 
 > [!div class="nextstepaction"]
 > [Create a Power BI report for Power BI Report Server](./quickstart-create-powerbi-report.md)

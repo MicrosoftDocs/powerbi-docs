@@ -1,21 +1,13 @@
 ---
 title: Configuring proxy settings for the On-premises data gateway
 description: Information regarding configuration of proxy settings for the On-premises data gateway.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 

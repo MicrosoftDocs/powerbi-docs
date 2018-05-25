@@ -1,22 +1,14 @@
 ---
 title: Hardware and Software Requirements for installing Power BI Report Server
 description: Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maghan
 
 ---
@@ -62,7 +54,7 @@ Power BI Report Server will install default values to configure the core setting
  While the report server can be installed in an environment that has a Read-Only Domain Controller (RODC), Reporting Services needs access to a Read-Write Domain Controller to function properly. If Reporting Services only has access to a RODC, you may encounter errors when trying to administer the service.
 
 ## Power BI reports and Analysis Services live connections
-You can use a live connection against tabular or multidimensional instances. Your Analysis Services server has to me the proper version and edition to work properly.
+You can use a live connection against tabular or multidimensional instances. Your Analysis Services server has to be the proper version and edition to work properly.
 
 | **Server version** | **Required SKU** |
 | --- | --- |
@@ -71,8 +63,8 @@ You can use a live connection against tabular or multidimensional instances. You
 | 2016 and later |Standard SKU or higher |
 
 ## Next steps
-[User handbook](user-handbook-overview.md)  
-[Administrator handbook](admin-handbook-overview.md)  
+[What is Power BI Report Server?](get-started.md)  
+[Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

@@ -1,21 +1,13 @@
 ---
 title: Custom visualizations in Power BI
 description: Custom visualizations in Power BI
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: maghan
 
@@ -58,10 +50,10 @@ What is AppSource? Simply put, it is the place to find apps, add-ins, and extens
 
 ### Certified visuals
 
-Power BI certified visuals are marketplace visuals that have passed additional rigorous testing for quality, and are supported in additional scenarios, such as [email subscriptions](https://docs.microsoft.com/en-us/power-bi/service-report-subscribe), and [export to PowerPoint](https://docs.microsoft.com/en-us/power-bi/service-publish-to-powerpoint).
-To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified).
+Power BI certified visuals are marketplace visuals that have passed additional rigorous testing for quality, and are supported in additional scenarios, such as [email subscriptions](https://docs.microsoft.com/power-bi/service-report-subscribe), and [export to PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
+To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Get started with Developer Tools](https://docs.microsoft.com/en-us/power-bi/service-custom-visuals-getting-started-with-developer-tools) and learn how to [publish custom visuals to AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Get started with Developer Tools](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools) and learn how to [publish custom visuals to AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
 ### Import a custom visuals from a file
 

@@ -1,21 +1,13 @@
 ---
 title: See data and records in Power BI Desktop visuals
 description: Use the See Data and See Records features of Power BI Desktop to drill into details
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: davidi
 

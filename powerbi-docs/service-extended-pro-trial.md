@@ -1,21 +1,13 @@
 ---
 title: Extended Pro Trial activation
 description: Starting on June 1, 2017, all eligible users will be able to opt-in to the Extended Pro Trial for the Power BI service.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 07/18/2017
 ms.author: maghan
 
