@@ -21,7 +21,7 @@ The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) ha
 
 You can go through the new [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
-Choose the solution that is right for you:
+Choose the solution that is right for you: 
 * **Embedding for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
 * **Embedding for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
