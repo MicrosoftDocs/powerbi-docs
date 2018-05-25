@@ -5,11 +5,10 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/19/2017
+ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
 ---
@@ -138,7 +137,9 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 * You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
-* The Power BI web part is not available in [national clouds](https://powerbi.microsoft.com/en-us/clouds/). 
+* The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
+
+* The classic SharePoint Server is not supported with this web part.
 
 ## Next steps
 
