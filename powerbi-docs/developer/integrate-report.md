@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/05/2017
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
@@ -28,6 +28,10 @@ To integrate a report into a web app, you use the **Power BI** REST API, or the 
 
 ## Download the sample
 This article shows the code used in the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
+
+You can also go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application.
+
+However, if you choose to set up the environment manually, you can continue below.
 
 ## Step 1 - register an app in Azure AD
 You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md).
