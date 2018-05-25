@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
@@ -16,6 +16,8 @@ ms.author: maghan
 Power BI Report Server support Representational State Transfer (REST) APIs. The REST APIs are service endpoints that support a set of HTTP operations (methods), which provide create, retrieve, update, or delete access for resources within a report server.
 
 The REST API provides programmatic access to the objects in a Power BI Report Server catalog. Examples of objects are folders, reports, KPIs, data sources, datasets, refresh plans, subscriptions, and more. Using the REST API, you can, for example, navigate the folder hierarchy, discover the contents of a folder, or download a report definition. You can also create, update, and delete objects. Examples of working with objects are upload a report, execute a refresh plan, delete a folder, and so on.
+
+[!INCLUDE [gdpr-hybrid-note](../includes/gdpr-hybrid-note.md)]
 
 ## Components of a REST API request/response
 A REST API request/response pair can be separated into five components:
