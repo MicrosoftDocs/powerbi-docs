@@ -43,7 +43,7 @@ If you pin visuals from a report to the dashboard, the pinned tiles are automati
 ## Common Issues
 
 * Cannot load the model schema error - This error occurs when the user connecting to SSAS does not have access to the SSAS database, cube and model.
-
+</br>
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [Manage Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
