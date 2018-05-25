@@ -7,7 +7,7 @@ ms.reviewer: ''
 
 ms.Embedded: powerbi
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
@@ -23,9 +23,14 @@ The current Power BI Workspace Collection will continue to be available for a li
 > [!IMPORTANT]
 > While the migration will take a dependency on Power BI Embedded, there is not a dependency on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application. You can use this embedding approach to Embedded non-Power BI users.
 > 
-> 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+
+Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Onboarding experience tool](https://aka.ms/embedsetup).
+
+Choose the solution that is right for you:
+* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
 ## Prepare for the migration
 There are a few things you need to do to prepare for migrating from Power BI Workspace Collection to Power BI Embedded. You will need a tenant available, along with a user that has a Power BI Pro license.

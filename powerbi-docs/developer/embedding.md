@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
@@ -48,11 +48,12 @@ To embed dashboards, reports and tiles, you would use the same APIs that you wou
 > [!IMPORTANT]
 > While embedding has a dependency on the Power BI service, there is not a dependency on Power BI for your customers. They do not need to sign up for Power BI to view the embedded content in your application.
 > 
-> 
 
 When you are ready to move to production, your app workspace must be assigned to a capacity. Power BI Embedded, within Microsoft Azure, offers capacity to use with your applications.
 
 For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](embedding-content.md).
+
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started and download a sample application that walks you through embedding a report into your application.
 
 If you were using the Power BI Workspace Collections service within Azure, see [Migrate content from the Power BI Workspace Collections Azure service](migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
