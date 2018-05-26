@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/13/2018
+ms.date: 05/26/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -74,7 +74,7 @@ Select a field on the report canvas to filter and highlight the rest of the page
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
-When you exit the report, your changes are saved. To undo your filtering, select **Reset to default** from the top menubar.
+When you exit the report, your changes are saved. To undo your filtering, and return to the default filtering, slicing, drill, and sorting set by the report author -- select **Reset to default** from the top menubar.
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 

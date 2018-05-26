@@ -9,7 +9,7 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.author: v-thepet
 
 LocalizationGroup: Visualizations
@@ -39,6 +39,13 @@ Power BI slicers have the following limitations:
 ## Create slicers
 
 To create a new slicer, you can select the slicer icon and then select the data field to filter on (or drag it to the **Fields** box in the **Visualizations** pane), or you can select or drag the data field first to create a visualization, and then select the slicer icon to turn the visualization into a slicer. Different data types create different types of slicers, with different effects and options. 
+
+The first time you change a report, the button for **Reset to default** lights up. This is a reminder that you've made a change to the original report settings. If you navigate away from the report, that change is saved (persists). When you return to the report you don't have to re-slice the report.  However, if you'd like to reset the report to the author's default settings, select the **Reset to default** button from the top menubar.
+
+![revert to default button](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+
+> [!NOTE]
+> If your **Reset to default** button remains disabled, it either means the report author has disabled the feature for the report or the report contains a custom visual. Simply hover over the button to read the tooltip for an explanation. 
 
 **To create a new slicer to filter data by District Manager**
 

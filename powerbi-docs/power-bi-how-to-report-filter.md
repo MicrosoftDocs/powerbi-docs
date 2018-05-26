@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/15/2018
+ms.date: 05/25/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -19,7 +19,7 @@ This article takes a deep look at the report Filters pane. You'll see the pane i
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](power-bi-reports-filters-and-highlighting.md).
 
 ## Working with the report Filters pane
-In Power BI Desktop, reports are opened in Report view. In Power BI service, reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing view, and in Desktop Report view, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters, but cannot add new filters to the report.
+In Power BI Desktop, reports are opened in Report view. In Power BI service, reports can be opened in [Editing view or Reading view](service-reading-view-and-editing-view.md). In Editing view, and in Desktop Report view, report owners can [add filters to a report](power-bi-report-add-filter.md) and those filters are saved with the report. People viewing the report in Reading view can interact with the filters and save their changes, but cannot add new filters to the report.
 
 In Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the creator defaults, select **Reset to default** from the top menubar.     
 
