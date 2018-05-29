@@ -9,7 +9,7 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 05/28/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -77,7 +77,7 @@ Now let's add a third dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000 (default is 3500).
+3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000. As you get into the higher numbers, we suggest testing first to ensure good performance. 
 
     ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 

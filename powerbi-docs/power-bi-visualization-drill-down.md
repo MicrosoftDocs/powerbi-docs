@@ -1,5 +1,5 @@
 ---
-title: Drill down in a visualization in Power BI
+title: Drill mode in a visualization in Power BI
 description: This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop.
 author: mihart
 manager: kfile
@@ -9,13 +9,14 @@ featuredvideoid: MNAaHw4PxzE
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2018
+ms.date: 05/26/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Drill down in a visualization in Power BI
-## Drill down requires a hierarchy
+# Drill mode in a visualization in Power BI
+
+## Drill requires a hierarchy
 When a visual has a hierarchy, you can drill down to reveal additional details. For example, you might have a visualization that looks at Olympic medal count by a hierarchy made up of sport, discipline, and event. By default, the visualization would show medal count by sport -- gymnastics, skiing, aquatics, and so on. But, because it has a hierarchy, selecting one of the visual elements (such as a bar, line, or bubble), would display an increasingly more-detailed picture. Select the **aquatics** element to see data for swimming, diving, and water polo.  Select the **diving** element to see details for springboard, platform, and synchronized diving events.
 
 You can add hierarchies to reports you own, but not to those shared with you.
@@ -33,65 +34,135 @@ Dates are an unique type of hierarchy. When you add a date field to a visualizat
 > To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU)
 > 
 > 
+## Prerequisites
 
-## Two methods to drill down
-You have two ways to drill down (and up) in your visualization.  Both are described in this article. Both methods accomplish the same thing, so use whichever one you enjoy most.
+1. In Power BI service or Desktop, drill requires a visualization with a hierarchy. 
+   
+2. To follow along, [open the Retail Analysis sample](sample-datasets.md) and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  The treemap has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, and so on. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
+
+2. Understanding how the various drill icons work together can be confusing, so let's filter the treemap to show only 2 of the smaller territories: **KY** and **TN**. Select the treemap and under **Visual level filters** expand **Territory** and select **KY** and **TN**.
+
+    ![filter for KY and TN](media/power-bi-visualization-drill-down/power-bi-filter.png)    
+
+   Now only two territories display in the treemap.
+
+   ![double drill icon](media/power-bi-visualization-drill-down/power-bi-territories.png)
+
+## Three ways to access the drill features
+You have several options for accessing the drill down, drill up, and expand features for visualizations that have hierarchies. This article shows you how to use the first option below. Once you understand the basics of drill down and expand, all three of these methods accomplish the same things, try them out and pick the one that you enjoy the most.
+
+- Hover over a visualization to see and use the icons.  
+
+    ![drill pathway](media/power-bi-visualization-drill-down/power-bi-hover.png)
+
+- Right-click a visualization to reveal and use the menu.
+    
+    ![contextual menu](media/power-bi-visualization-drill-down/power-bi-drill-menu.png)
+
+- From the Power BI menu bar, select the **Explore** button.
+
+   ![](media/power-bi-visualization-drill-down/power-bi-explore.png)
+
+## Drill pathways
+### Drill down
+You have several ways to drill into your visualization. ***Drill down*** takes you to the next level in the hierarchy, so if you're looking at the **Territory** level, you can drill down to city level then postalcode level and finally name level. Each step in the path shows you new information.
+
+![drill pathway](media/power-bi-visualization-drill-down/power-bi-drill-path.png)
+
+### Expand
+
+***Expand*** adds an additional hierarchy level to the current view. So if you're looking at the **Territory** level, you can expand and add city, postalcode,and name detail to your treemap. Each step in the path shows you the same information and adds on one level of new information.
+
+![expand pathway](media/power-bi-visualization-drill-down/power-bi-expand-path.png)
+
+You can also choose whether to drill down or expand on one field at a time or on all fields at a time. 
+
+## Drill down all fields at a time
+
+1. Start at the top level of the treemap showing data for KY and TN. Widen your treemap by selecting one of the handles and dragging to the right. 
+
+    ![treemap showing 2 states](media/power-bi-visualization-drill-down/power-bi-drill-down.png) .
+
+2. To drill down ***all fields at once***, select the double arrow in the upper-left corner of the visualization  ![double drill down icon](media/power-bi-visualization-drill-down/power-bi-drill-icon3.png) . Your treemap now shows city data for Kentucky and Tennessee. 
+
+    ![double drill icon](media/power-bi-visualization-drill-down/power-bi-drill-down1.png)
+   
+5. Drill down one more time to the postalcode level of the hierarchy.
+
+    ![double drill icon](media/power-bi-visualization-drill-down/power-bi-drill-down2.png)
+
+3. To drill back up, select the up arrow in the upper-left corner of the visualization ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png).
+
+
+## Drill down one field at a time
+This method uses the drill down icon that appears in the top right corner of the visualization itself. 
+
+1. Select the drill down icon to turn it on ![drill down turned on](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png). Now you have the option of drilling down ***one field at a time***. 
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon-new.png)
+
+   If you don't turn on drill down, selecting a visual element (such as a bar or bubble or leaf) will not drill down but will instead cross-filter the other charts on the report page.
+
+2. Select the *leaf* for **TN**. Your treemap now displays all the cities in Tennessee that have a store. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+2. At this point you can continue drilling down for Tennesee or you can drill down for a particular Tennesee city or you can expand instead (see **Expand all fields at once**, below). Let's continue to drill down one field at a time.  Select **Knoxville, TN**. Your treemap now displays the postalcode for your store in Knoxville. 
+
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one2.png)
+
+    Notice that the title changes as you drill down and back up again.  
+
+## Expand all and expand one field at a time
+Having a treemap that shows us only a postalcode isn't very informative.  So let's expand down one level in the hierarchy.  
+
+1. With the treemap active, select the *expand down* icon ![expand down icon](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png)  . Your treemap now shows 2 levels of our hierarchy: postalcode and store name. 
+
+    ![showing postalcode and store name](media/power-bi-visualization-drill-down/power-bi-expand1.png)
+
+2. To see all 4 hierarchy levels of data for Tennesee, select the drill up arrow until you reach the second level, **Total units this year by territory and city**, of your treemap. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+
+3. Make sure drill down is still turned on ![drill down turned on](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png) , and select the *expand down* icon ![expand down icon](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png). Your treemap now shows some additional detail; instead of only showing city and state it now also shows us postalcode. 
+
+    ![double drill icon](media/power-bi-visualization-drill-down/power-bi-expand-one3.png)
+
+4. Select the *expand down* icon one more time to display all 4 hierarchy levels of detail for Tennesee on your treemap. Hover over a leaf to see even more detail.
+
+   ![treemap showing Tennesee data](media/power-bi-visualization-drill-down/power-bi-expand-all.png)
+
+## Drilling filters other visuals
+As you work in Drill mode, you get to decide how drill down and expanding impacts the other visualizations on the page. 
+
+By default, drilling will not filter other visuals in a report. But this feature can be enabled in Power BI Desktop and Power BI service. 
+
+1. In Desktop, select the **Format** tab and select the checkbox for **Drilling filters other visuals**.
+
+    ![setting in Power BI Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters-desktop.png)
+
+2. Now when you drill down (or drill up or expand) in a visual with a hierarchy, that action filters the other visuals on the page. 
+
+    ![setting in Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters.png)
+
+    ![setting in Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters2.png)
 
 > [!NOTE]
-> To follow along, [open the Retail Analysis sample](sample-datasets.md) in Power BI service and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
-> 
-> 
+> To enable this in Power BI service, from the top menubar, select **Visual interactions > Drilling filters other visuals**.
+>
+> ![setting in Power BI service](media/power-bi-visualization-drill-down/power-bi-drill-filters-service.png)
 
-## Method One for drill down
-This method uses the drill icons that appear in the top corners of the visualization itself.
 
-1. In Power BI, open a report in [Reading view or Editing view](service-reading-view-and-editing-view.md). Drill requires a visualization with a hierarchy. 
-   
-   A hierarchy is shown in the animation below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, and so on. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. To enable drill down, select the arrow icon in the upper-right corner of the visualization. When the icon is dark, drill is enabled. If you don't turn on drill, selecting a visual element (such as a bar or bubble) will cross-filter the other charts on the report page.    
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon.png)
-3. To drill down **one field at a time**, select one of the elements in your visualization. In a bar chart, this means clicking one of the bars. In a treemap, this means clicking one of the **leaves**. Notice that the title changes as you drill down and back up again. In this animation, it changes from "Total Units This Year by Territory" to "Total Units This Year by Territory and City" and then to "Total Units This Year by Territory, City and Postal Code" to "Total Units This Year by Territory, City, Postal Code, and Name. And to drill back up, select the **Drill Up** icon ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png) in the upper-left corner of the visualization as shown below.
-   
-   ![](media/power-bi-visualization-drill-down/drill.gif)
-4. To drill down ***all fields at once***, select the double arrow in the upper-left corner of the visualization.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillall.png)
-5. To drill back up, select the up arrow in the upper-left corner of the visualization.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillup2.png)
-
-## Method Two for drill down
-This method uses the **Explore** dropdown from the top Power BI menu bar.
-
-1. In Power BI, open a report in [Reading view or Editing view](service-reading-view-and-editing-view.md). Drill requires a visualization with a hierarchy. 
-   
-   A hierarchy is shown in the image below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, and so on. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. To enable drill down, select a visualization to make it active and from the Power BI top menu bar, select **Explore** > **Drill Down**. The drill-down icon in the upper-right corner of the visualization changes to a black background. ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-explore2.png)
-3. Once enabled, drill down one field at a time by selecting one of the treemap leaves. In this example, the territory named **NC** is selected to see total units sold this year in North Carolina by city.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drilldown-1.png)
-4. To drill down all fields at once, select **Explore** > **Show Next Level**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-show-next-level.png)
-5. To drill back up, select **Explore** > **Drill Up**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-up2.png)
-
-6. To see the data in use for creating the visual, select **See data**. The data displays in a pane underneath the visual. This pane remains as you continue drilling through the visual. For more information, see [Show data used to create the visual](service-reports-show-data.md).
 
 ## Understanding the hierarchy axis and hierarchy group
 You can think of the hierarchy axis and the hierarchy group as the mechanisms that you can use to increase and decrease the granularity of data you want to view. Any data that can be organized into categories and subcategories qualifies as having a hierarchy. This, of course, includes dates and times.
 
-You can create a visualization in Power BI to have a hierarchy by selecting one or more data fields to add to either the **Axis** well or the **Group** well, along with the data you want to examine as data fields in the **Values** well. You'll know if your data is hierarchical if Drill Mode icons appear on the upper-left and right corners of your visualization. 
+You can create a visualization in Power BI to have a hierarchy by selecting one or more data fields to add to either the **Axis** well or the **Group** well, along with the data you want to examine as data fields in the **Values** well. You'll know if your data is hierarchical if *Drill mode* icons appear on the upper-left and right corners of your visualization. 
 
-Essentially, its convenient to think of two types of hierarchical data:
+Essentially, it's convenient to think of two types of hierarchical data:
 - Date and time data - If you have a data field with a DateTime data type, you already have hierarchical data. Power BI automatically creates a hierarchy for any data field whose values can be parsed into a [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) structure. You only need to add one DateTime field to the **Axis** or **Group** well.
 - Categorical data - If your data is derived from collections that contain sub-collections, or otherwise has rows of data that share common values, you have hierarchical data.
 
