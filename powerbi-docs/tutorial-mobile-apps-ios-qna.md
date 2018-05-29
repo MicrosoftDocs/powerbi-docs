@@ -129,5 +129,5 @@ When you've finished the tutorial, you can delete the Opportunity Analysis sampl
 
 You've tried the Q&A virtual assistant in the Power BI mobile apps for iOS. Learn more about Q&A in the Power BI service.
 > [!div class="nextstepaction"]
-> [Q&A in the Power BI service](/.power-bi-q-and-a.md)
+> [Q&A in the Power BI service](power-bi-q-and-a.md)
 

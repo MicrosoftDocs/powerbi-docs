@@ -46,7 +46,7 @@ The Power BI Report Server deployment consisted of the following virtual machine
 See Appendix 1.1 Power BI Report Server Topology and Appendix 1.2 Power BI Report Server Virtual Machine Configuration for a thorough configuration of each virtual machine used in the topology.
 
 ### Tests
-The tests used in the load test runs are publicly available in a GitHub project called Reporting Services LoadTest   (See https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
+The tests used in the load test runs are publicly available in a GitHub project called [Reporting Services LoadTest](https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
 
 * Tests simulating rendering Power BI reports,
 * Tests simulating rendering mobile reports,
