@@ -128,7 +128,7 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
-## Onboarding Experience tool for embedding
+## Onboarding experience tool for embedding
 
 You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
