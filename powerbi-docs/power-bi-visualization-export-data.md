@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/25/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -81,6 +81,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
 * Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.
 * Custom visuals, and R visuals, are not currently supported.
 * Export data is not available for users outside of your organization who are using a dashboard that has been shared with them. 
+* In Power BI, a field (column) can be renamed by double-clicking the field and typing a new name.  This new name is referred to as an *alias*. It is possible that a Power BI report can end up with duplicate field names but Excel does not allow duplicates.  So when the data is exported to Excel, the field aliases revert to their original field (column) names.  
 * If there is unicode character in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode characters are currency symbols and foreign words. The workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
   
   1. Open Excel
