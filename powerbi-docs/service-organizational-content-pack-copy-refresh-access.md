@@ -3,7 +3,7 @@ title: 'Organizational content packs: Access and copy'
 description: Read about creating copies of and troubleshooting access to organizational content packs in Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: 
 
 ms.service: powerbi
 ms.component: powerbi-service
@@ -15,8 +15,7 @@ LocalizationGroup: Share your work
 ---
 # Organizational content packs: Copy, refresh, and get access
 > [!NOTE]
-> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](service-install-use-apps.md).
-> 
+> Content packs aren't available in the new workspace experiences preview. When the new workspace experiences is generally available, you won't be able to use content packs in newly created workspaces. If you haven't already, start migrating your content packs into apps. Learn [more about the new workspace experience](service-create-workspaces.md).
 > 
 
 When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](service-organizational-content-pack-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.

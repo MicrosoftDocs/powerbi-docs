@@ -3,18 +3,21 @@ title: Manage your app workspace in Power BI and Office 365
 description: App workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your app workspaces in Power BI and also in Office 365.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: 
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 05/29/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Manage your app workspace in Power BI and Office 365
 As creator or admin of an [app workspace in Power BI](service-install-use-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
+
+> [!NOTE]
+> The new workspace experience preview will change how Power BI workspaces work with Office 365 groups. Read about [creating the new workspaces (preview)](service-create-workspaces.md)
 
 **In Power BI** you can:
 
@@ -58,7 +61,7 @@ You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or memb
    ![](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ## Add an image and set other workspace properties in the Office 365 group
-When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](service-create-distribute-apps.md#add-an-image-to-your-app-optional) section of the article [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](service-create-workspaces.md#add-an-image-to-your-app-optional) section of the article [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 1. In the Outlook for Office 365 view of your app workspace, select the group image to edit group workspace properties.
    
