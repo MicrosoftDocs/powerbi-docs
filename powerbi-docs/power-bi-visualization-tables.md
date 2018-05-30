@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -115,6 +115,9 @@ With conditional formatting for tables, you can specify customized cell backgrou
 Sometimes Power BI will truncate a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.
 
 ![](media/power-bi-visualization-tables/resizetable.gif)
+
+## Considerations and troubleshooting
+* When applying column formatting, you can only choose one alignment option per column: Auto, Left, Center, Right. Usually, a column contains all text or all numbers, and not a mix. But in cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languagues where you read left-to-right.   
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
