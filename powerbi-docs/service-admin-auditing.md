@@ -21,6 +21,9 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 
 You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
 
+[!NOTE]
+Power BI Auditing feature only Audits actions performed by users like "View Report", "View Dashboard", etc. It does not audit permissions. 
+
 ## Requirements
 You must meet these requirements to access audit logs:
 
