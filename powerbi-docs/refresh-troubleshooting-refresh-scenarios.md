@@ -55,6 +55,14 @@ The maximum size for datasets imported into the **Power BI service** is 1 GB. Th
 ## Scheduled refresh timeout
 Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you are encountering this limit, you can consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
 
+## "Access to the resource is forbidden"  
+This error could come because of expired cached credential. Clear Internet browser cache by going to https://app.powerbi.com?alwaysPromptForContentProviderCreds=true (this link works only if you are signed in). This will force to update the credentials. 
+	
+	
+## Data refresh failure because of password change or credential expired. 
+Data refresh could also fail due to expired cached credential. Clear Internet browser cache by going to https://app.powerbi.com?alwaysPromptForContentProviderCreds=true (this link works only if you are signed in). This will force to update the credentials.
+
+
 ## Next steps
 [Data Refresh](refresh-data.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
