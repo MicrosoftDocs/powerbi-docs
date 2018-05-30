@@ -618,8 +618,6 @@
         href: desktop-directquery-sap-hana.md
       - name: "Assume referential integrity setting in Power BI Desktop"
         href: desktop-assume-referential-integrity.md
-      - name: "DirectQuery for Oracle and Teradata databases"
-        href: desktop-directquery-for-oracle-teradata.md
       - name: "Use the SAP BW connector in Power BI Desktop (Preview)"
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links in Power BI Desktop"
