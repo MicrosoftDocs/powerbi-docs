@@ -81,4 +81,10 @@ Once you create a Power BI Desktop file with an explore live connection, there m
 2. Enter the new server name.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_dialog.png)
+   
+   
+## Troubleshooting 
+The following list describes all known issues when connecting to SQL Server Analysis Services (SSAS) or Azure Analysis Services. 
+
+* **Error : Couldn't load model schema** - This error usually occurs when the user connecting to Analysis Services does not have access to database/model.
 
