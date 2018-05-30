@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -58,7 +58,9 @@ For information about using the FILTERS pane, see [Add a filter to a report](pow
 
 To highlight one particular area in your chart, select that area or its top border.  Unlike other visualization types, if there are other visualizations on the same page, highlighting a basic area charts does not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page. To learn more, see [Visual interactions in reports](service-reports-visual-interactions.md)
 
-## Considerations and troubleshooting
+
+## Considerations and troubleshooting   
+* [Make the report more accessible for people with disabilities](desktop-accessibility.md)
 * Basic area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using line charts. When you need to compare volume to more than three measures, try using treemap.
 
 ## Next steps
