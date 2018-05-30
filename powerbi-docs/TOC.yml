@@ -234,6 +234,8 @@
           href: service-dashboard-featured.md
         - name: "Power BI Unified Notification Center"
           href: service-notification-center.md
+        - name: "Dashboard themes"
+          href: service-dashboard-themes.md
       - name: Reports
         items: 
         - name: "Change how a chart is sorted in a Power BI report"
