@@ -8,7 +8,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 05/30/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -70,7 +70,12 @@ You can change this dashboard to display your data any way you want. You can ask
 
 
 ## Troubleshooting
-If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
+If you encounter any errors, please review the requirements above. Also note the ability to log in to a custom or sandbox domain is not currently supported.
+
+### "Unable to connect to the remote server" message
+
+If you get a message "Unable to connect to the remote server" when trying to connect to your Salesforce account, see this solution on the Outsystems forum: [[Salesforce Connector] Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+
 
 ## Next steps
 [Get Started with Power BI](service-get-started.md)
