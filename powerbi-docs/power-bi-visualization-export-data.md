@@ -28,7 +28,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 2. Choose the  **Export data** icon.
    
     ![](media/power-bi-visualization-export-data/pbi_export_dash.png)
-3. The data is exported to a .csv file. If the visual is filtered, then the downloaded data will also be filtered.
+3. The data is exported to a .csv file. If the visual is filtered, then the downloaded data will also be filtered.    
 4. Your browser will prompt you to save the file.  Once saved, open the .csv file in Excel.
    
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
@@ -79,7 +79,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
 * Export using *Underlying data* will not work if the *Show items with no data* option is enabled for the visualization being exported.
 * When using DirectQuery, the maximum amount of data that can be exported is 16 MB. This may result in exporting less than the maximum number of rows, especially if there are many columns, data that is difficult to compress, and other factors that increase file size and decrease number of rows exported.
 * Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.
-* Custom visuals, and R visuals, are not currently supported.
+* Custom visuals and R visuals, are not currently supported.
 * Export data is not available for users outside of your organization who are using a dashboard that has been shared with them. 
 * In Power BI, a field (column) can be renamed by double-clicking the field and typing a new name.  This new name is referred to as an *alias*. It is possible that a Power BI report can end up with duplicate field names but Excel does not allow duplicates.  So when the data is exported to Excel, the field aliases revert to their original field (column) names.  
 * If there is unicode character in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode characters are currency symbols and foreign words. The workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:

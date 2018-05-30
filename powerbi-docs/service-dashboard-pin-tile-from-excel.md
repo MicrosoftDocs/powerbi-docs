@@ -9,7 +9,7 @@ featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 05/02/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -62,14 +62,14 @@ One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within
     ![Pinned to dashboard dialog](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Select **Go to dashboard**. From here you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization. By default, selecting the pinned tile opens the workbook in Power BI.
 
-## Pin an entire table or pivot chart to a dashboard
-Follow the steps above except instead of selecting a range of cells, select an entire table or pivot table.
+## Pin an entire table or PivotTable to a dashboard
+Follow the steps above except instead of selecting a range of cells, select an entire table or PivotTable.
 
-To pin a table, select the entire range of the table and be sure to include the headers.  To pin a pivot table, be sure to include every visible part of the pivot table, including filters if used.
+To pin a table, select the entire range of the table and be sure to include the headers.  To pin a PivotTable, be sure to include every visible part of the PivotTable, including filters if used.
 
  ![select cells](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
-A tile created from a table or pivot table will show the entire table.  If you add/remove/filter rows or columns in the original workbook, they will also be added/removed/filtered in the tile.
+A tile created from a table or PivotTable will show the entire table.  If you add/remove/filter rows or columns in the original workbook, they will also be added/removed/filtered in the tile.
 
 ## View the workbook linked to the tile
 Selecting a workbook tile opens the linked workbook in Power BI. Since the workbook file is located on the owner’s OneDrive for Business, viewing the workbook requires you have Read permissions for the workbook. If you do not have permission, you will receive an error message.  
