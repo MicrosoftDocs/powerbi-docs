@@ -74,7 +74,7 @@ If you encounter any errors, please review the requirements above. Also note the
 
 ### "Unable to connect to the remote server" message
 
-If you get a message "Unable to connect to the remote server" when trying to connect to your Salesforce account, see this solution on the Outsystems forum: [[Salesforce Connector] Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+If you get a message "Unable to connect to the remote server" when trying to connect to your Salesforce account, see this solution on the Outsystems forum: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## Next steps
