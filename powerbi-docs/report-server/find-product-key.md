@@ -30,7 +30,7 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 ![Power BI Report Server product key](media/find-product-key/pbirs-product-key-dialog.png)
 
-## Purchased Software Assurance agreeemnt
+## Purchased Software Assurance agreement
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Look under the latest service pack, for the latest version of SQL Server. If you don't see it there, look under the RTM release of the latest SQL Server version.
 
 > [!NOTE]
