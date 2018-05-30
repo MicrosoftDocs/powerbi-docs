@@ -19,7 +19,7 @@ When you connect to your QuickBooks Online data from Power BI you immediately ge
 Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/services/quickbooks-online) for Power BI.
 
 >[!NOTE]
->To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
+>To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials. You can't use this connector with QuickBooks Desktop software. 
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
