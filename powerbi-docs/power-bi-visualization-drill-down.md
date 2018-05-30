@@ -33,7 +33,7 @@ Dates are an unique type of hierarchy. When you add a date field to a visualizat
 > [!NOTE]
 > To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU)
 > 
-> 
+
 ## Prerequisites
 
 1. In Power BI service or Desktop, drill requires a visualization with a hierarchy. 
