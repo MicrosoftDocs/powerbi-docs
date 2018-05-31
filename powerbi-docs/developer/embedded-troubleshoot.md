@@ -132,16 +132,17 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 
 You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
-### Common Issues
-
-Some common issues you might encounter when testing with the Onboarding experience tool are:
-#### Prerequisites for using the Onboarding experience tool
+#### Verify that you have all the proper prerequisites before using the Onboarding experience tool
 You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+
+### Common Issues
+
+Some common issues you might encounter when testing with the Onboarding experience tool are:
 
 #### Using the Embed for your customers sample application
 
@@ -155,7 +156,7 @@ The following error message appears when running the sample app: "Password is em
 
 If you are working on the **Embed for your organization** sample then you need to run the **User Owns Data** sample application when you have completed the wizard.
 
-When I run the **Embed for your organization** sample app I get the following error: "AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: 'Client ID.'" This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use "http://localhost:13526/" as the redirect URL.
+When you run the **Embed for your organization** sample app you get the following error: "AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: 'Client ID.'" This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use "http://localhost:13526/" as the redirect URL.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
