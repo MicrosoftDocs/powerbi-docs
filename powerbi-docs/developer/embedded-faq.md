@@ -218,7 +218,7 @@ The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickl
 
 Use "PowerBI-Developer-Samples-master\App Owns Data" and open the "PowerBIEmbedded_AppOwnsData.sln".
 
-### I've downloaded the sample app, which solution should I use?
+### I've downloaded the Embed for my organization sample app, which solution should I use?
 
 Use the OpenPowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app\pbi-saas-embed-report.sln.
 
