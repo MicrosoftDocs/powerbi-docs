@@ -132,9 +132,45 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 
 You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
-Pick the solution that best matches your application for a troubleshooting comparison:
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+### Common Issues
+
+Some common issues you might encounter when testing with the Onboarding experience tool are:
+#### Prerequisites for using the Onboarding experience tool
+To get started, you need a **Power BI Pro** account and a **Microsoft Azure** subscription.
+
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+
+#### Embed for your customers
+
+If you are working on the **Embed for your customers** sample then you need to download the **Apps Owns Data** sample applicatio when you have compelted the wizard.
+
+When selecting **"Grant permissions"** (the Grant permissions step), you get the following error: "AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>." The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. The issue is caused by a time interval from completing the application registration process to when it is available to external APIs.
+
+##### Using the sample application
+
+The following error message appears when running the sample app: "Password is empty. Please fill password of Power BI username in web.config."  This error occurs because the only value that is not being injected into the sample application is your user password. Then open the Web.config file in the solution and fill the pbiPassword field with your user's password.
+
+#### Embed for your organization
+
+If you are working on the **Embed for your organization** sample then you need to download the **User Owns Data** sample applicatio when you have compelted the wizard.
+
+##### Using the sample application
+
+When I run the Embed for your customers sample app I get the following error: "AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: 'Client ID.'" This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use "http://localhost:13526/" as the redirect URL.
+
+##### Update Data:
+I would like to edit my registered application, how can I do it?
+You can learn how to edit AAD registered applications here
+ 
+•	I would like to edit my Power BI user profile or data, how can I do it?
+You can learn how to edit your Power BI data here
+ 
+
+
+
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
