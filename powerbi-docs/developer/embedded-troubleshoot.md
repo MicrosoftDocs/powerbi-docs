@@ -161,17 +161,6 @@ If you are working on the **Embed for your organization** sample then you need t
 
 When I run the Embed for your customers sample app I get the following error: "AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: 'Client ID.'" This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use "http://localhost:13526/" as the redirect URL.
 
-##### Update Data:
-I would like to edit my registered application, how can I do it?
-You can learn how to edit AAD registered applications here
- 
-•	I would like to edit my Power BI user profile or data, how can I do it?
-You can learn how to edit your Power BI data here
- 
-
-
-
-
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
