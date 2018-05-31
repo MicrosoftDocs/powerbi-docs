@@ -4,7 +4,6 @@ description: This migration tool can be used to copy your reports from the Power
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
