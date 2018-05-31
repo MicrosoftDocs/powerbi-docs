@@ -9,7 +9,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 05/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -102,6 +102,7 @@ From here you might want to:
 
 * [Add the combo chart as a dashboard tile](service-dashboard-tiles.md).
 * [Save the report](service-report-save.md).
+* [Make the report more accessible for people with disabilities](desktop-accessibility.md)
 
 ## Cross-highlighting and cross-filtering
 

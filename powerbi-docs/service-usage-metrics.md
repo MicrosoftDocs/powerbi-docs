@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/27/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -17,8 +17,7 @@ LocalizationGroup: Dashboards
 # Usage metrics for dashboards and reports
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
 
-> [!NOTE]
-> Usage metrics will track usage of reports that are embedded in SharePoint Online. They will also track embedding of dashboards and reports via both the “user owns credentials” and “app owns credentials” flow. Usage metrics will not track usage of reports embedding via [publish to web](service-publish-to-web.md).
+Usage metrics will track usage of reports that are embedded in SharePoint Online. They will also track embedding of dashboards and reports via both the “user owns credentials” and “app owns credentials” flow. Usage metrics will not track usage of reports embedding via [publish to web](service-publish-to-web.md).
 
 These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace.
 
