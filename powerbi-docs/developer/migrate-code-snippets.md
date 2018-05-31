@@ -4,7 +4,6 @@ description: Here are some code snippets of basic operations needed for content 
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
