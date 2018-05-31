@@ -214,13 +214,11 @@ The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickl
 * [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
 * [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 
-### I've downloaded the Embed for your customers sample app, which solution should I use?
+### I've downloaded the sample app, which solution do I choose?
 
-Use "PowerBI-Developer-Samples-master\App Owns Data" and open the "PowerBIEmbedded_AppOwnsData.sln".
+If you are working with the **Embed for your customers** experience, save and unzip the **PowerBI-Developer-Samples.zip** file. Then open the **PowerBI-Developer-Samples-master\App Owns Data** folder and run the **PowerBIEmbedded_AppOwnsData.sln** file.
 
-### I've downloaded the Embed for my organization sample app, which solution should I use?
-
-Use the OpenPowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app\pbi-saas-embed-report.sln.
+If you are working with the **Embed for your organization** experience, save and unzip the **PowerBI-Developer-Samples.zip** file. Then open the **PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app** folder and run the **pbi-saas-embed-report.sln** file.
 
 ### How can I edit my registered application?
 
