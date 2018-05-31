@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 05/30/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -18,7 +18,7 @@ With **Dashboard Themes** you can apply a color theme to your entire dashboard, 
 
 ![example dashboard with theme](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
-Changing the colors of the report visuals on the dashboard will not affect the visuals in the report. Also, when you pin tiles from reports and choose a destination theme, the dashboard theme will persist and override the report visual colors.
+Changing the colors of the report visuals on the dashboard will not affect the visuals in the report. Also, when you pin tiles from a report that already has a [report theme applied](/desktop-report-themes.md), you'll have the choice to keep the current theme or use the dashboard theme.
 
 
 ## Prerequisites
@@ -26,7 +26,7 @@ Changing the colors of the report visuals on the dashboard will not affect the v
 
 
 ## How Dashboard Themes work
-To get started, open a dashboard that you created (or have edit permission) and want to customize, select the ellipses and choose **Dashboard theme**. 
+To get started, open a dashboard that you created (or have edit permission) and want to customize. Select the ellipsis (...), and choose **Dashboard theme**. 
 
 ![dashboard theme option](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 
@@ -74,8 +74,19 @@ Like the built-in and custom options, when the theme is uploaded, the colors wil
     ![new theme applied](media/service-dashboard-themes/power-bi-json.png)
 
 ## Considerations and limitations
+
+* If your report is using a different theme from the dashboard theme, you can control whether the visual retains current theme, or uses the dashboard theme to achieve consistency across visuals from various sources. When pinning a tile to a dashboard, to keep the report theme, select **Keep current theme**. The visual, on the dashboard, will retain the report theme, including transparency settings. 
+
+    The only time you'll see **Tile Theming** options is if you created the report in Power BI Desktop, [added a report theme](desktop-report-themes.md), and then published the report to Power BI service. 
+
+    ![Keep current theme selected](media/service-dashboard-themes/power-bi-keep-current.png)
+
+    Try re-pinning the tile and selecting **Use dashboard theme**.
+
+    ![Use destination theme](media/service-dashboard-themes/power-bi-use-destination.png)
+
 * Dashboard themes are currently not supported when viewing the dashboard embedded using the REST API, on mobile devices, or by external users.    
-* Dashboard themes cannot be applied to pinned live report pages or images.
+* Dashboard themes cannot be applied to pinned live report pages, iframe tiles, SSRS tiles, workbook tiles, or images.
 * Dashboard themes can be viewed on mobile devices but creating a dashboard theme can only be done in Power BI service. 
 * Dashboard custom themes only work with tiles pinned from reports. 
-* If transparency isn't working, you may have selected "keep report theme" when pinning the tile to your dashboard.  Try re-pinning the tile and selecting **Use dashboard theme**. 
+
