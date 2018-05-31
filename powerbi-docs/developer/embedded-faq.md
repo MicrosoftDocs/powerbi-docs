@@ -216,17 +216,17 @@ The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickl
 
 ### I've downloaded the sample app, which solution do I choose?
 
-If you are working with the **Embed for your customers** experience, save and unzip the **PowerBI-Developer-Samples.zip** file. Then open the **PowerBI-Developer-Samples-master\App Owns Data** folder and run the **PowerBIEmbedded_AppOwnsData.sln** file.
+If you are working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
 
-If you are working with the **Embed for your organization** experience, save and unzip the **PowerBI-Developer-Samples.zip** file. Then open the **PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app** folder and run the **pbi-saas-embed-report.sln** file.
+If you are working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
 
 ### How can I edit my registered application?
 
-You can learn how to edit AAD registered applications [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application)
+You can learn how to edit AAD registered applications [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
 
 ### How can I edit my Power BI user profile or data?
 
-You can learn how to edit your Power BI data [here](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts)
+You can learn how to edit your Power BI data [here](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 
