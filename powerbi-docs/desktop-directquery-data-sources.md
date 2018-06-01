@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/09/2018
+ms.date: 06/02/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -38,6 +38,10 @@ The following data sources support DirectQuery in Power BI:
 Data sources that are have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that  that opening a published report or exploring the dataset can result in an error.
 
 The only difference between **(Beta)** and **(Preview)** data sources is that **(Preview)** sources must be enabled as a Preview feature before they become available for use. To enable a **(Preview)** data connector, in **Power BI Desktop** go to **File > Options and Settings > Options**, and then select **Preview features**.
+
+> [!NOTE]
+> DirectQuery queries to SQL Server require authentication using current Windows authentication credentials or database credentials to establish access. Alternate credentials are not supported.
+>
 
 ## On-premises gateway requirements
 The following table specifies whether an **On-premises data gateway** is required to connect to the specified data source, after publishing a report to the **Power BI service**.
