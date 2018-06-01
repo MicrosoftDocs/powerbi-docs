@@ -45,7 +45,7 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 
 5. For SQL Server, you would choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication).  If you choose **Basic**, enter the credentials for your data source.
 
-6. Under **Advanced settings**, optionally configure the [privacy level]((https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
+6. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
 
     ![Advanced settings](media/service-gateway-manage/advanced-settings.png)
 
