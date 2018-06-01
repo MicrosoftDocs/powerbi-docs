@@ -115,6 +115,14 @@ When administrators use the **Manage gateways** menu item, found under the gear 
 All new **Scheduled Refresh** requests and DirectQuery operations are automatically routed to the primary instance of a given gateway cluster. If the primary gateway instance is not online, the request is routed to another gateway instance in the cluster.
 
 
+## Share a gateway
+
+You can't *share* a gateway per se, but you can add administrators to the gateway, and you can add users to the gateway's data sources. 
+
+After you install a gateway, you are by default the administrator of that gateway. As shown earlier, you can add other people as administrators. These administrators can add data sources, configure, and remove the gateway.
+
+You can also assign users to the data sources you create under each of your gateways. Users can then use those data sources to refresh Power BI reports. They can't, however, change any of the data sources or the gateway settings.
+
 ## Migrate, restore, or take over a gateway
 
 Run the gateway installer on the computer where you want to migrate, restore, or take over the gateway.
