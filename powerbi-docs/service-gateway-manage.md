@@ -16,7 +16,10 @@ LocalizationGroup: Gateways
 
 # Manage a Power BI gateway
 
-After you [install a Power BI data gateway](service-gateway-install.md), you can manage it through the **Manage gateways** area of the Power BI service, in the gateway app on your local computer, and with PowerShell scripts. This article focuses on the Power BI service. If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
+After you [install a Power BI data gateway](service-gateway-install.md), you can manage it through the **Manage gateways** area of the Power BI service, in the gateway app on your local computer, and with PowerShell scripts. This article focuses on the Power BI service. 
+
+
+If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
 
 
 ## Manage data sources
