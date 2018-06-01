@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/02/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -52,9 +52,10 @@ Some of the features that are available in the commercial version of the **Power
 
 * **Embed in SharePoint Online** - it is not possible to embed content in SharePoint Online using the Power BI web part.
 * **Power BI US Government** is only available as a **Pro** license. Any references to Power BI (Free) licenses in an admin portal (or as users) are running in a commercial Power BI service cloud.
-* **Auditing** - auditing is not available through the Office 365 Security and Compliance portal.
+* **Auditing** - auditing is now available through the Office 365 Security and Compliance portal, as of June 2018.
 * **Power BI content in Cortana** - Power BI results will not show up in Cortana search results, which includes results for your Power BI content (dashboards, reports, apps) as well as results that show Cortana-optimized report pages for specific keywords.
-* **External user sharing** - sharing is allowed within a Power BI tenant only; you cannot share with users outside of your Power BI tenant.
+* **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant.
+* **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
