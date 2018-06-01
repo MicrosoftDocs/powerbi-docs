@@ -574,6 +574,8 @@
         href: desktop-import-excel-workbooks.md
       - name: "Connect to data using generic interfaces"
         href: desktop-connect-using-generic-interfaces.md
+      - name: "Connect to Adobe Analytics"
+        href: desktop-connect-adobe-analytics.md        
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: "Running R scripts in Power BI Desktop"
@@ -791,6 +793,8 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
+    - name: "Manage the Power BI Desktop sign-in form"
+      href: desktop-admin-sign-in-form.md      
 - name: Power BI mobile apps
   items:
   - name: Overview

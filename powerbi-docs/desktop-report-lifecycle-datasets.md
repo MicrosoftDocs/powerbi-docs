@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/02/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -32,6 +32,8 @@ Everyone loves her report, and her dataset, and that's where the trouble would b
 
 ### Connect to a Power BI service dataset using a live connection
 Once Anna creates her report (and creates the dataset it's based upon), she publishes it to the **Power BI service**, it shows up in her team's workspace in the Power BI service. Now it's available for everyone in her workspace to see and use.
+
+To learn more about workspaces, see [app workspaces](service-create-distribute-apps.md#app-workspaces).
 
 Other members of her workspace can now establish a live connection to Anna's shared data model (using the **Power BI service live connection** feature), and create their own unique reports, from *her original dataset*.
 

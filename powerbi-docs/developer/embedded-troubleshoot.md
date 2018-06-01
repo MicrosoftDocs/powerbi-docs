@@ -132,9 +132,48 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 
 You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
-Pick the solution that best matches your application for a troubleshooting comparison:
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+### Prerequisites
+
+Verify that you have all the proper prerequisites before using the Onboarding experience tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
+
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+
+### Common Issues
+
+Some common issues you might encounter when testing with the Onboarding experience tool are:
+
+#### Using the Embed for your customers sample application
+
+If you are working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+
+When selecting **Grant permissions** (the Grant permissions step), you get the following error:
+
+    AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>
+
+The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it is available to external APIs.
+
+The following error message appears when running the sample app:
+
+    Password is empty. Please fill password of Power BI username in web.config.
+
+This error occurs because the only value that is not being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
+
+#### Using the Embed for your organization sample application
+
+If you are working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
+
+When you run the **Embed for your organization** sample app, you get the following error:
+
+    AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
+
+This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use *http://localhost:13526/* as the redirect URL.
+
+If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
+
+If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
