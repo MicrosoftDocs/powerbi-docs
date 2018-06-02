@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 06/01/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle those together into *apps* which you can distribute to your whole organization or to specific people or groups. 
 
-![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 Now Power BI is introducing a new workspace experience. When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the group administration is in Power BI, not in Office 365. You can add an Office 365 group to the workspace if you want, along with security groups and distribution lists. 
 
@@ -80,7 +80,7 @@ During the preview period, you can convert your old workspaces to new ones manua
 
 1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**.
    
-     ![Create app workspace](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Create app workspace](media/service-create-workspaces/power-bi-create-app-workspace.png)
    
     This will be the place to put content that you and your colleagues collaborate on.
 
@@ -88,17 +88,17 @@ During the preview period, you can convert your old workspaces to new ones manua
    
      This will be the name of the app, too.
    
-     ![Name the workspace](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
+     ![Name the workspace](media/service-create-workspaces/power-bi-apps-create-workspace-name.png)
 
 3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
    
-     ![Set Private or Public](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
+     ![Set Private or Public](media/service-create-workspaces/power-bi-apps-create-workspace-private-public.png)
    
     You can't change the Public/Private setting after you've created the group.
 
 4. You can also choose if members can **edit** or have **view-only** access.
    
-     ![Set edit or view-only](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
+     ![Set edit or view-only](media/service-create-workspaces/power-bi-apps-create-workspace-members-edit.png)
    
      Only add people to the app workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
 
@@ -106,7 +106,7 @@ During the preview period, you can convert your old workspaces to new ones manua
 
 6. Decide whether each person is a member or an admin.
    
-     ![Set Member or Admin](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-admin.png)
+     ![Set Member or Admin](media/service-create-workspaces/power-bi-apps-create-workspace-admin.png)
    
     Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
@@ -117,7 +117,7 @@ Power BI creates the workspace and opens it. It appears in the list of workspace
 
 You can tell you're in a new workspace by the banner at the top: New Workspaces Preview.
 
-![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Edit workspace](media/service-create-workspaces/power-bi-apps-edit-workspace-ellipsis.png)
 
 
 ## Create an app workspace based on an Office 365 group

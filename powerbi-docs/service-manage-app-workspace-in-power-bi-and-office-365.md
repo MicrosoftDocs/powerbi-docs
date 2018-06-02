@@ -37,7 +37,7 @@ You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or memb
 ## Edit your app workspace in Power BI
 1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (**…**) next to your workspace name > **Edit workspace**. 
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    > [!NOTE]
    > You only see **Edit workspace** if you’re an app workspace admin.
@@ -45,34 +45,34 @@ You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or memb
    > 
 2. Here you can rename, add or remove members, or delete the app workspace. 
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-edit-workspace.png)
+   ![Edit workspace dialog box](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-edit-workspace.png)
 3. Select **Save** or **Cancel**.
 
 ## Edit Power BI app workspace properties in Office 365
 1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (**…**) next to your workspace name > **Members**. 
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    This opens the Outlook for Office 365 group view of your app workspace.
    
    You may need to sign into your corporate account.
 2. Tap the ellipsis (**…**) next to a member's name to make the member an admin or delete the member from the app workspace. 
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
+   ![Edit a group in Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ## Add an image and set other workspace properties in the Office 365 group
-When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](service-create-workspaces.md#add-an-image-to-your-app-optional) section of the article [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+When you distribute your app from the app workspace, the image you add here will be the image for your app. See the [Add an image to your app](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) section of the article [Create the new workspaces](service-create-workspaces.md).
 
 1. In the Outlook for Office 365 view of your app workspace, select the group image to edit group workspace properties.
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
+   ![Edit group icon](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
 2. You can edit the name, description, and language, add an image, and set other properties here.
    
-   ![](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgrpo365dialog.png)
+   ![Edit group dialog box](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgrpo365dialog.png)
 3. Select **Save** or **Discard**.
 
 ## Next steps
 * [What are apps in Power BI?](service-install-use-apps.md)
-* [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
+* [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
