@@ -25,13 +25,19 @@ With the new workspace experiences, now in preview, you can create collections o
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
 
 ## Apps and organizational content packs
-Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences preview. Once the new workspace experiences is generally available, you will not be able to use content packs in newly created workspaces. If you have not already, start migrating your content packs into Apps.
+Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences preview. After the new workspace experiences is generally available, you won't be able to use content packs in newly created workspaces. If you haven'tt already, start migrating your content packs to apps.
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Workspaces
 *Workspaces* are the places where you create apps, so you need to create a workspace first, before you create the app. If you’ve ever worked in a group workspace in Power BI, then app workspaces will be familiar. Read more about [creating workspaces](service-create-workspaces.md).
+
+## Licenses for apps
+Each member of an app workspace needs a Power BI Pro license. For app users, there are two options.
+
+* Option 1: All business users need **Power BI Pro** licenses to view your app. 
+* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
@@ -88,17 +94,17 @@ After you publish your app, you may want to change or update it. It’s easy to 
 
 The people you’ve published the app to automatically see the updated version of the app. 
 
-# Automatically install apps for end users
+## Automatically install apps for end users
 You can automatically install apps for end users, making it easier to distribute the right apps to the right people or groups.
 
 Apps deliver data that your end users need to do their jobs. Now you can automatically install these apps in the Apps content list rather than you finding it from Microsoft AppSource, or following an installation link. This makes it easier for you to roll out standard Power BI content to your users.
 
-## How to install an app automatically for end users
+### How to install an app automatically for end users
 Once the admin has enabled the feature, the app publishers have a new option available to **install the app automatically**. When the box is ***checked*** and the application publisher selects **Finish** (or **Update app**, for existing apps), the app will be pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-## How users get the apps that were pushed to them
+### How users get the apps that were pushed to them
 After you push an app, it shows up in the Apps list automatically. You can curate the apps that a user or job role in your organization need to have at their fingertips.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
