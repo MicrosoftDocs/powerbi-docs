@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 03/23/2018
+ms.date: 06/02/2018
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -149,6 +149,9 @@ You will need to work with your domain administrators to verify the trust relati
 **Unable to see the data gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
+
+### Error: You don't have any gateway installed or configured for the data sources in this dataset
+Ensure that you have added one or more data sources to the gateway, as described in [Add a data source](service-gateway-manage.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage gateways**, try clearing your browser cache or signing out of the service then signing back in.
 
 ## Datasets
 ### Error: There is not enough space for this row.

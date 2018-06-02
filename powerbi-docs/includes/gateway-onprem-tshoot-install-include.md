@@ -24,3 +24,6 @@ You can force the gateway to communicate with Azure Service Bus using HTTPS inst
 ### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
 You may receive this error if you are trying to install the gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the gateway on a machine that is not a domain controller.
 
+### Installation fails
+You may encounter installation failures if the anti-virus software on the installation machine is out of date. You can either update the anti-virus installation, or disable anti-virus only for the duration of the gateway installation to complete, then re-enable anti-virus.
+
