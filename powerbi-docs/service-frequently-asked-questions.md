@@ -1,4 +1,4 @@
-e---
+---
 title: Frequently asked questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps.
 author: maggiesMSFT
