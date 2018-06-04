@@ -100,6 +100,8 @@ With *drill through*, when you tap a specific part of a visual, Power BI takes y
 
 When you drill through, the back button takes you back to the previous report page.
 
+Read about how to [add drill-through in Power BI Desktop](desktop-drillthrough.md).
+
 ## Go back to My Workspace
 * Tap the arrow next to the report name > tap **My Workspace**.
   
