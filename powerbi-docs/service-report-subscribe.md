@@ -57,7 +57,7 @@ Whether you're subscribing to a dashboard or report, the process is very similar
    
    ![Related datasets](media/service-report-subscribe/power-bi-view-related-screen.png)
 
-## How the email schedule for reports is determined
+## How the email schedule is determined
 The following table describes how frequently you will receive an email. It all depends on the connection method of the dataset upon which the dashboard or report is based (DirectQuery, Live connection, imported to Power BI, or Excel file in OneDrive or SharePoint Online) and on the subscription options available and selected (daily, weekly, or none).
 
 |  | **DirectQuery** | **Live Connect** | **Scheduled refresh (import)** | **Excel file in OneDrive/SharePoint Online** |
