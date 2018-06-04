@@ -16,12 +16,16 @@ LocalizationGroup: Gateways
 
 # Manage a Power BI gateway
 
-After you [install a Power BI data gateway](service-gateway-install.md), you can manage it through the **Manage gateways** area of the Power BI service, in the gateway app on your local computer, and with PowerShell scripts. This article focuses on the Power BI service. If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
+After you [install a Power BI data gateway](service-gateway-install.md), you manage it based on your requirements. In this topic, you learn how to: add and remove data sources and users; restart a gateway; and migrate, restore, take over, and remove a gateway. 
+
+You can manage a gateway through the **Manage gateways** area of the Power BI service, in the gateway app on your local computer, and with PowerShell scripts. This article focuses on the Power BI service. 
+
+If you've just installed a gateway, we recommend that you next [add a data source](#add-a-data-source), and then [add users](#add-users-to-a-data-source) so they can access the data source.
 
 
 ## Manage data sources
 
-Power BI supports many on-premises data sources, and each has its own requirements. For this example, we'll show you how to add SQL Server as a data source, but the steps are similar for other data sources.
+Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we'll show you how to add SQL Server as a data source, but the steps are similar for other data sources.
 
 
 ### Add a data source
@@ -110,6 +114,14 @@ When administrators use the **Manage gateways** menu item, found under the gear 
 
 All new **Scheduled Refresh** requests and DirectQuery operations are automatically routed to the primary instance of a given gateway cluster. If the primary gateway instance is not online, the request is routed to another gateway instance in the cluster.
 
+
+## Share a gateway
+
+You can't *share* a gateway per se, but you can add administrators to the gateway, and you can add users to the gateway's data sources. 
+
+After you install a gateway, you are by default the administrator of that gateway. As shown earlier, you can add other people as administrators. These administrators can add data sources, configure, and remove the gateway.
+
+You can also assign users to the data sources you create under each of your gateways. Users can then use those data sources to refresh Power BI reports. They can't, however, change any of the data sources or the gateway settings.
 
 ## Migrate, restore, or take over a gateway
 
