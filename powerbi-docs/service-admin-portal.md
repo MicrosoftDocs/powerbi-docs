@@ -88,7 +88,7 @@ When you click **Go to O365 Admin Center**, you go directly to the Office 365 ad
 
 ## Audit logs
 
-The third tab, in the admin portal, is **Audit logs**. The logs are located within the Office 365 Security & Compliance center. This section allows you to quickly access that area within Office 365. 
+The third tab, in the admin portal, is **Audit logs**. The logs are located within the Office 365 Security & Compliance center. This section allows you to quickly access that area within Office 365.
 
 For more information about audit logs, see [Auditing Power BI in your organization](service-admin-auditing.md)
 
@@ -223,8 +223,6 @@ Users in the organization can use the ArcGIS Maps for Power BI (Preview) visuali
 ### Enable custom visuals for the entire organization
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
-![Custom visuals settings](media/service-admin-portal/powerbi-admin-custom-visuals.png)
-
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
@@ -243,7 +241,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting needs to be enabled for audit log entries to be recorded.
+This setting needs to be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
