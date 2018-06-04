@@ -1,3 +1,4 @@
+
 ---
 title: Configuring proxy settings for the On-premises data gateway
 description: Information regarding configuration of proxy settings for the On-premises data gateway.
@@ -47,6 +48,19 @@ The default proxy configuration is the following.
     </system.net>
 
 The default configuration works with Windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator.
+
+In addition to using default credentials, you can add a <proxy> element to define proxy server settings in more detail. For example, you can specify that your On-premises data gateway should always use the proxy even for local resources by setting the bypassonlocal parameter to false. This can help in troubleshooting situations if you want to track all https requests originating from an On-premises data gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
+
+    <system.net>
+        <defaultProxy useDefaultCredentials="true">
+            <proxy  
+                autoDetect="false"  
+                proxyaddress="http://192.168.1.10:3128"  
+                bypassonlocal="false"  
+                usesystemdefault="true"
+            />  
+        </defaultProxy>
+    </system.net>
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

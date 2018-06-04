@@ -4,7 +4,6 @@ description: Learn how to migrate from Power BI Workspace Collection to the Powe
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 05/25/2018
@@ -65,10 +64,6 @@ The following accounts will need to exist within your tenant.
    
 > [!NOTE]
 > This is just a regular user account in your organziation that will be used for the purposes of embedding.
->
-
-> [!NOTE]
-> If App-Only Token Authentication is a requirement for your application, please click [here](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) to contact us.
 >
 
 ## App registration and permissions
