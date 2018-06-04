@@ -241,7 +241,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting needs to be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later.
+This setting needs to be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
