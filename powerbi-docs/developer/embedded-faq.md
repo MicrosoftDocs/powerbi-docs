@@ -97,8 +97,7 @@ The authentication and authorization of the application users will be implemente
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries. There are client libraries available for multiple platforms.
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
+To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
 ### How is Power BI Embedded different from other Azure services?
 

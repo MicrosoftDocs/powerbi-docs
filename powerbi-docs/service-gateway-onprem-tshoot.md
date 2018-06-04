@@ -150,6 +150,9 @@ You will need to work with your domain administrators to verify the trust relati
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
+### Error: You don't have any gateway installed or configured for the data sources in this dataset
+Ensure that you have added one or more data sources to the gateway, as described in [Add a data source](service-gateway-manage.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage gateways**, try clearing your browser cache or signing out of the service then signing back in.
+
 ## Datasets
 ### Error: There is not enough space for this row.
 This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.

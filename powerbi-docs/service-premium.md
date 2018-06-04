@@ -57,9 +57,8 @@ By default, your workspace will be in shared capacity. This includes your person
 ### Premium capacity nodes
 Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offerings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available. For information regarding embedded analytics capacity planning, see [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy).
 
-* P nodes can be used for embedded or service deployments
-* EM nodes can be used for embedded deployments only
-* EM1 and EM2 
+* P nodes can be used for embedded or service deployments.
+* EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
 >[!NOTE]
 >Links in this table only operate properly for users who are Office 365 global admins - others receive a 404 error. 
