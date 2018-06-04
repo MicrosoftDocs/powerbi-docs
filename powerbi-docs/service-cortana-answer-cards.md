@@ -42,6 +42,12 @@ A *Cortana answer page* in a report is sized specifically for Cortana so that Co
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)
 3. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
+
+> [!NOTE]
+> At the moment, Cortana answer pages don't support images having static images shown in them. You can include images in table or matrix visuals that are dynamically pulled in based on a URL in your data. 
+> 
+> 
+
 4. Ensure that all visuals fit within the page borders. Optionally, modify display settings, data labels, colors, and backgrounds.  
    
     ![](media/service-cortana-answer-cards/pbi_cortana_modify-new.png)
