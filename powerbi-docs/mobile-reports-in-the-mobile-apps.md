@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/04/2018
 ms.author: maggies
 
 ---
@@ -91,6 +91,14 @@ If a report author has added drill-down capability to a visual, on an iPad or a 
 * To drill back up, tap the up arrow in the upper-left corner.
   
   ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+
+## Drill through from one page to another
+
+With *drill through*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. In the following example, when you tap the value in the gauge, you can choose between drilling through to **spent by business area** or **planning by business area**.
+
+![Power BI mobile drill through report](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+When you drill through, the back button takes you back to the previous report page.
 
 ## Go back to My Workspace
 * Tap the arrow next to the report name > tap **My Workspace**.
