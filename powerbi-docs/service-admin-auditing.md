@@ -25,11 +25,11 @@ You can filter the audit data by date range, user, dashboard, report, dataset an
 You must meet these requirements to access audit logs:
 
 - To access the auditing section of the Office 365 Security & Compliance Center, you must have an Exchange Online license (included with Office 365 Enterprise E3 and E5 subscriptions).
-- You must either be a global admin or have an Exchange admin role that provides access to the audit log. 
 
-  Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+- You must either be a global admin or have an Exchange admin role that provides access to the audit log. Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
 
 - If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must get a direct link to the Office 365 Security & Compliance Center.
+
 - To view audit logs for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
 
 ## Accessing your audit logs
