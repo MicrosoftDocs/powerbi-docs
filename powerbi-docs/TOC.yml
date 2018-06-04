@@ -817,9 +817,9 @@
       href: mobile-apps-data-in-real-world-context.md
     - name: "View your data offline in the Power BI mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for Mixed Reality app (Preview)"
+    - name: "Power BI for Mixed Reality app"
       href: mobile-mixed-reality-app.md
-      - name: How to
+  - name: How to
     items: 
     - name: All mobile apps
       items: 
