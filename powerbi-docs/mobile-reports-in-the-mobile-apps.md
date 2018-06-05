@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 06/05/2018
 ms.author: maggies
 
 ---
@@ -101,11 +101,6 @@ With *drillthrough*, when you tap a specific part of a visual, Power BI takes yo
 When you drill through, the back button takes you back to the previous report page.
 
 Read about how to [add drill-through in Power BI Desktop](desktop-drillthrough.md).
-
-## Go back to My Workspace
-* Tap the arrow next to the report name > tap **My Workspace**.
-  
-  ![Go back up](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)

@@ -799,7 +799,7 @@
   items:
   - name: Overview
     items: 
-    - name: "What are the Power BI mobile apps?"
+    - name: "What are the mobile apps?"
       href: mobile-apps-for-mobile-devices.md
   - name: Quickstarts
     items:
@@ -811,13 +811,13 @@
       href: tutorial-mobile-apps-ios-qna.md
   - name: Concepts
     items: 
-    - name: "What's new in the mobile apps for Power BI"
+    - name: "What's new in the mobile appsI"
       href: mobile-whats-new-in-the-mobile-apps.md
-    - name: "Get Power BI data from the real world with the mobile apps"
+    - name: "Get real-world data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
-    - name: "View your data offline in the Power BI mobile apps"
+    - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for Mixed Reality app"
+    - name: "Power BI for Mixed Reality app (Preview)"
       href: mobile-mixed-reality-app.md
   - name: How to
     items: 
@@ -853,7 +853,7 @@
         href: service-admin-mobile-intune.md
     - name: Android devices
       items: 
-      - name: "Get started with the Power BI for Android app"
+      - name: "Get started with the Android app"
         href: mobile-android-app-get-started.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
@@ -861,7 +861,7 @@
         href: mobile-android-error-update-android-system-webview.md
     - name: iOS
       items: 
-      - name: "Get started with the Power BI for iOS app"
+      - name: "Get started with the iOS app"
         href: mobile-iphone-app-get-started.md
       - name: "Get started with the iPad app"
         href: mobile-ipad-app-get-started.md
@@ -869,27 +869,27 @@
         href: mobile-apps-ios-qna.md
       - name: "Power BI Apple Watch app"
         href: mobile-apple-watch.md
-      - name: "Scan a barcode from the Power BI app on your iPhone"
+      - name: "Scan a barcode from the app on your iPhone"
         href: mobile-apps-scan-barcode-iphone.md
       - name: "Power BI for iOS apps"
         href: mobile-ios-ipad-iphone-apps.md
     - name: iOS and Android
       items: 
-      - name: "Annotate and share a tile, report, or visual in the mobile apps"
+      - name: "Annotate and share in the mobile apps"
         href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
     - name: Power BI app for Windows 10 devices
       items: 
-      - name: "Get started with the Power BI mobile app for Windows 10"
+      - name: "Get started with the mobile app for Windows 10"
         href: mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: "View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10"
+      - name: "View Reporting Services mobile reports and KPIs on the app for Windows 10"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
       - name: "View Power BI on Surface Hub"
         href: mobile-windows-10-app-presentation-mode.md
   - name: Resources
     items: 
-    - name: "Supported languages in the Power BI mobile apps"
+    - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
