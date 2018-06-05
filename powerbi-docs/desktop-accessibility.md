@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -62,6 +62,23 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 * Make sure your reports have sufficient contrast between text and any background colors.
 * Use text sizes and fonts that are easily readable. Small text size, or fonts that might be difficult to read, are unhelpful for accessibility.
 * Include a title, axis labels, and data labels in all visuals.
+
+## High contrast support for reports
+
+When you use high contrast modes in Windows, those settings and the palette you select are also applied to reports in **Power BI Desktop**. 
+
+![High contrast windows settings](media/desktop-accessibility/accessibility_05.png)
+
+**Power BI Desktop** automatically detects which high contrast theme is being used in Windows, and applies those settings to your reports. Those high contrast colors will follow the report when published to the Power BI service, or elsewhere.
+
+![High contrast windows settings](media/desktop-accessibility/accessibility_05b.png)
+
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View > High contrast colors** and then select the theme you would like to apply to the report.
+
+![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility_06.png)
+
+When in **Power BI Desktop**, notice that some areas such as the **Visualizations** and **Fields** fields do not reflect the selection of high contrast Windows color schemes. Future releases will apply high contrast to other areas of Power BI Desktop.
+
 
 ## Considerations and limitations
 There are a few known issues and limitations with the accessibility features, described in the following list:
