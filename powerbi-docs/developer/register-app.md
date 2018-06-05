@@ -152,8 +152,8 @@ You want to be logged in with either the *master* account, used for embedding or
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used by a tenant admin to grant permissions to all users in the tenant.
-   * **Principal** is used to grant permission to a specific user. In this case, an additional property should be added to the request's body - “principalId”=”{User_ObjectId}”.
+   * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
+   * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
     
     *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
    
@@ -175,8 +175,8 @@ You want to be logged in with either the *master* account, used for embedding or
    
     The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-    * **AllPrincipals** can only be used by a tenant admin to grant permissions to all users in the tenant.
-    * **Principal** is used to grant permission to a specific user. In this case, an additional property should be added to the request's body - “principalId”=”{User_ObjectId}”.
+    * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
+    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
     
     *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
 
