@@ -917,8 +917,6 @@
       items: 
       - name: "Create a custom visual with the Developer Tools"
         href: service-custom-visuals-getting-started-with-developer-tools.md      
-      - name: "Review custom visuals for security and privacy"
-        href: service-custom-visuals-review-for-security-and-privacy.md
       - name: "Get a custom visual certified"
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
