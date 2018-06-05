@@ -1,6 +1,6 @@
 ---
-title: Power BI for Mixed Reality app
-description: View your dashboards and reports in the Power BI for Mixed Reality app, either immersed in the virtual world or in the context of your environment.
+title: Power BI for Mixed Reality app (Preview)
+description: View your dashboards and reports in the Power BI for Mixed Reality app (Preview), either immersed in the virtual world or in the context of your environment.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/01/2018
+ms.date: 06/05/2018
 ms.author: maggies
 
 ---
-# Power BI for Mixed Reality app
-View your dashboards and reports in the Power BI for Mixed Reality app while immersed in the virtual world, or place them in specific locations in the context of your environment. 
+# Power BI for Mixed Reality app (Preview)
+View your dashboards and reports in the Power BI for Mixed Reality app (Preview) while immersed in the virtual world, or place them in specific locations in the context of your environment. 
 
 [Download the Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) app from the Windows store: In the Windows Store, it's called "Power BI Mobile." Interact with your dashboards and reports in the virtual world, then select the ones you want to place. 
 
