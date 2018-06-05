@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -25,7 +25,7 @@ In the **Amazon Redshift** window that appears, type or paste the name of your *
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
-When prompted, put in your username and password.
+When prompted, put in your username and password. You should use the server name that precisely matches the SSL certificate to avoid errors. 
 
 ![](media/desktop-connect-redshift/connect_redshift_5.png)
 
