@@ -159,7 +159,7 @@ If you are embedding for your customers, do the following.
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
 >[!Note]
->[Set up your embedded analytics environment for your customer.](#step-1-setup-your-embedded-analytics-development-environment)
+>[Set up your embedded analytics environment for your customers.](#step-1-setup-your-embedded-analytics-development-environment) 
 >
 
 ## Admin settings
