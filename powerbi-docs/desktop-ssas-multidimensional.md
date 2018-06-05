@@ -94,3 +94,7 @@ The following features of SSAS MD are supported in Power BI Desktop:
   * ImageUrls
   * Dimension security
 
+## Troubleshooting 
+The following list describes all known issues when connecting to SQL Server Analysis Services (SSAS). 
+
+* **Error : Couldn't load model schema** - This error usually occurs when the user connecting to Analysis Services does not have access to database/cube.

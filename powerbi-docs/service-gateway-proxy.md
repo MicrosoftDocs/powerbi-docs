@@ -90,6 +90,10 @@ When configuring the proxy settings to use default credentials, as explained abo
 5. Restore the gateway using your recovery key.
    
     This will allow the new service account to be able to decrypt stored credentials for data sources.
+    
+> [!NOTE]
+> When you change the service account directly using Services Control panel, it does not update ACLs automatically. You need to ensure that new service account has access to the installation files and folder. You can find Gateway Installation folder under C:\Program Files\On-premises data gateway. 
+> 
 
 ## Next steps
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
