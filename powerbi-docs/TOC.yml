@@ -902,17 +902,19 @@
     - name: "Embed content for customers"
       href: developer/embed-sample-for-customers.md
   - name: Concepts
-    items:
+    items: 
+    - name: Working with Power BI REST APIs
+      items: 
+      - name: "What can I do with the Power BI API?"
+      href: developer/overview-of-power-bi-rest-api.md
+    - name: "Create a custom visual with the Developer Tools"
+      href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Power BI permissions"
       href: developer/power-bi-permissions.md
     - name: "Row-level security (RLS)"
       href: developer/embedded-row-level-security.md
     - name: "FAQ"
       href: developer/embedded-faq.md    
-    - name: Working with Power BI REST APIs    
-    items:
-    - name: "What can I do with the Power BI API?"
-      href: developer/overview-of-power-bi-rest-api.md
   - name: How to
     items: 
     - name: Create a custom visual
