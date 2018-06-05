@@ -32,7 +32,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 3. Provide an **App Name**.
 4. The App type selection depends on the type of application you are using.
    
-   * Use **Native app** for apps that run on client devices. *You need to choose ***Native app*** if you are embedding content for your customers regardless of what the actual application is. Even for web applications.*
+   * Use **Native app** for apps that run on client devices. You need to choose **Native app** if you are embedding content for your customers regardless of what the actual application is. Even for web applications.
    * Use **Server-side Web app** for web apps or web APIs.
 
 5. Enter a value for **Redirect URL** and **Home Page URL**. The **Redirect URL** works with any valid URL.
