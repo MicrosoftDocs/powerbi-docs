@@ -130,7 +130,7 @@ Free users can consume content that is embedded from an app workspace (group) if
 > You must be a Global or Billing Admin, within your tenant, to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](../service-admin-premium-purchase.md).
 
 >[!Note]
->Use the [Onboarding experience tool](#step-1-setup-your-embedded-analytics-development-environment) to get started on embedding for your organization quickly.
+>Use the [Onboarding experience tool](#step-1-setup-your-embedded-analytics-development-environment) to set up your embedded analytics environment for your organization.
 >
 
 ### Embedding for your customers
@@ -159,7 +159,7 @@ If you are embedding for your customers, do the following.
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
 >[!Note]
->Use the [Onboarding experience tool](#step-1-setup-your-embedded-analytics-development-environment) to get started on embedding for your customers quickly.
+>Use the [Onboarding experience tool](#step-1-setup-your-embedded-analytics-development-environment) to set up your embedded analytics environment for your customers.
 >
 
 ## Admin settings
