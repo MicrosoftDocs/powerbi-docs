@@ -4,13 +4,11 @@ description: Learn how to register an application within Azure Active Directory 
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-
 ---
 # Register an Azure AD app to embed Power BI content
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
@@ -34,8 +32,9 @@ Here's how to register your application with the Power BI App Registration Tool:
 3. Provide an **App Name**.
 4. The App type selection will depend on the type of application you are using.
    
-   * Use **Server-side Web app** for web apps or web APIs.
    * Use **Native app** for apps that run on client devices. ***You will also choose **Native app** if you are embedding content for your customers regardless of what the actual application is. Even for web applications.***
+   * Use **Server-side Web app** for web apps or web APIs.
+
 5. Enter a value for **Redirect URL** and **Home Page URL**. Any valid URL will work.
    
     **Home Page URL** is only available if you choose **Server-side Web app** for the applciation type.
@@ -115,8 +114,14 @@ You will want to be logged in with either the *master* account, used for embeddi
    
     ![](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-   
-    ![](media/register-app/powerbi-embedded-azuread-app-permissions01.png)
+
+![](media/register-app/powerbi-embedded-azuread-app-permissions01.png)
+
+> [!Note]
+> This is not a required permission for embedding. This permission is needed for managing the directory, like creating users programmatically or getting list of users from Graph API. For more information refer to [Graph API permissions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-permission-scopes)
+>
+
+
 4. Within **Required permissions**, select **Power BI Service (Power BI)**.
    
     ![](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
@@ -152,6 +157,8 @@ You will want to be logged in with either the *master* account, used for embeddi
     }
     ```
 4. Grant App Permission to PowerBI API
+
+If you are using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType** to **Principal**.
    
     ```
     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -171,9 +178,10 @@ You will want to be logged in with either the *master* account, used for embeddi
     The value for **consentType** will depend on the user performing the request. You can supply either **AllPrincipals** or **Principal**. **AllPrincipals** can only be used by an administrator to grant permission to all users. **Principal** is used to grant permission to a specific user. 
    
     The permission grant is needed for the *master account* to avoid being prompted for consent by Azure AD. 
+
+    In case of one user consent, an additional property should be added to the request's body - “principalId”=”{User_ObjectId}”
    
-    If you are using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType** to **Principal**.
-   
+
     ```
     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
     Authorization: Bearer ey..qw
@@ -181,6 +189,7 @@ You will want to be logged in with either the *master* account, used for embeddi
     { 
     "clientId":"{Service_Plan_ID}",
     "consentType":"AllPrincipals",
+    “principalId”:”{User_ObjectId}”
     "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
     "scope":"User.Read Directory.AccessAsUser.All",
     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
