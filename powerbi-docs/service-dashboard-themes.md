@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 06/05/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -18,7 +18,7 @@ With **Dashboard Themes** you can apply a color theme to your entire dashboard, 
 
 ![example dashboard with theme](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
-Changing the colors of the report visuals on the dashboard will not affect the visuals in the report. Also, when you pin tiles from a report that already has a [report theme applied](/desktop-report-themes.md), you'll have the choice to keep the current theme or use the dashboard theme.
+Changing the colors of the report visuals on the dashboard will not affect the visuals in the report. Also, when you pin tiles from a report that already has a [report theme applied](desktop-report-themes.md), you'll have the choice to keep the current theme or use the dashboard theme.
 
 
 ## Prerequisites
