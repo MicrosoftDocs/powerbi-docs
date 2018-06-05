@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/01/2018
+ms.date: 06/04/2018
 ms.author: maggies
 
 ---
@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Mobile drill-through -- all mobile apps
 
-You can drill through from a selected data point to another report page in the mobile apps, if the report author has defined that action. If the report author has defined a back button, you can now navigate back to the previous page.
+You can drill through from a selected data point to another report page in the mobile apps, if the report author has defined that action. If the report author has defined a back button, you can now navigate back to the previous page. 
 
 ### Dashboard themes -- all mobile apps
 

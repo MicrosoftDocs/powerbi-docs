@@ -77,24 +77,24 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
    ![Sort a visual](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
-## Drill down on an iPad or a tablet
-If a report author has added drill-down capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
+## Drill down and up in a visual
+If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
 
-> [!NOTE]
-> Currently, drill-down doesn't work on maps in the iPad or tablet.
-> 
-> 
+* Tap a data point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
+  
+  ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Tap a visual. If it has up and down arrows in the upper corners ![Drill up, down icons](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
+* To drill back up, tap the up arrow in the tooltip.
   
-  ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* To drill back up, tap the up arrow in the upper-left corner.
-  
-  ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
+
+* You can also drill down in all the data points in a visual. Open it in focus mode, tap Explore icon, then choose the show all the next level, or expand to show the current and the next level.
+
+   ![Power BI drill down all](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
 
 ## Drill through from one page to another
 
-With *drill through*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. In the following example, when you tap the value in the gauge, you can choose between drilling through to **spent by business area** or **planning by business area**.
+With *drillthrough*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. In the following example, when you tap the value in the gauge, you can choose between drilling through to **spent by business area** or **planning by business area**.
 
 ![Power BI mobile drill through report](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
 
