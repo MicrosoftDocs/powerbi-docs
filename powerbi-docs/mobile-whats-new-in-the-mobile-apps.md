@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/05/2018
 ms.author: maggies
 
 ---
@@ -21,9 +21,26 @@ For related "What's New" information, see:
 
 ## May 2018
 
-### Configure Power BI iOS mobile apps for report servers remotely
+### Mobile drill-through: all mobile apps
+
+You can drill through from a selected data point to another report page in the mobile apps, if the report author has defined that action. 
+
+### Back button: all mobile apps
+
+Now when you navigate through a report by swiping, choosing a report page on the action bar, or using drill-through, the back button takes you back to the previous page you were looking at. 
+
+### Dashboard themes: all mobile apps
+
+When report authors customize dashboard themes in the Power BI service, the look and feel of the dashboard will change in the mobile app, too. However, you won't see background images.
+
+### iOS: Configure Power BI iOS mobile app access to a report server remotely
 
 Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](report-server/configure-powerbi-mobile-apps-remote.md) for details.
+
+### Power BI for Mixed Reality app (Preview)
+
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+
 
 ## April 2018
 
