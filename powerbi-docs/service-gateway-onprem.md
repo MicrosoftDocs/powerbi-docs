@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 06/05/2018
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -44,7 +44,9 @@ You can use a live connection against tabular or multidimensional instances.
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## Download and install the On-premises data gateway
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925). 
+
+Note that updating the On-premises data gateway is achieved by reinstalling the gateway, as described in this section. When updating the gateway (by reinstalling), your existing gateways settings are retained.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -53,9 +55,8 @@ To download the gateway, select **Data Gateway** under the Downloads menu. Downl
 
 ## Install the gateway in personal mode
 > [!NOTE]
-> Personal will only work with Power BI.
-> 
-> 
+> The Personal version of gateway only works with Power BI.
+
 
 After the personal gateway is installed, you will need to launch the **Power BI Gateway - Personal Configuration Wizard**.
 

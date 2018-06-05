@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -94,6 +94,14 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 * **Display:** At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
 * **Windows Display settings:** If your display settings are set to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that must be closed or responded to in order to proceed using **Power BI Desktop**. If you encounter this issue, check your **Display settings** by going to **Settings > System > Display** in Windows, and use the slider to return display settings to 100%.
 * **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
+
+## Considerations and Limitations
+
+Some users encounter an error similar to the following when using an outdated version of **Power BI Desktop**: 
+
+    "We weren't able to restore the saved database to the model" 
+
+Updating to the current version of Power BI Desktop usually solves this issue.
 
 ## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:

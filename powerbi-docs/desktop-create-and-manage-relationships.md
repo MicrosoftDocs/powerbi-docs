@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -32,6 +32,16 @@ On the **Home** tab, click **Manage Relationships** \> **AutoDetect**.
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
 By default, Power BI Desktop will automatically configure the Cardinality (direction), Cross filter direction, and Active properties for your new relationship; however, you can change these if necessary. To learn more, see the Understanding additional options section later in this article.
+
+Note that you'll see an error that states *One of the columns must have unique values* if none of the tables selected for the relationship has unique values. At least one table in a relationship *must* have a distinct, unique list of key values, which is a common requirement for all relational database technologies. 
+
+If you encounter that error, there are a couple ways to fix the issue:
+
+* Use "Remove Duplicate Rows" to create a column with unique values. The drawback to this approach is that you will lose information when duplicate rows are removed, and often a key (row) is duplicated for good reason.
+* Add an intermediary table made of the list of distinct key values to the model, which will then be linked to both original columns in the relationship.
+
+For more detailed information, see the [blog post](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/) that discusses this in detail.
+
 
 ## Edit a relationship
 1. On the **Home** tab, click **Manage Relationships**.
