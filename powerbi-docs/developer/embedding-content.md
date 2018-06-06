@@ -93,7 +93,11 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 ## Step 2: Embed your content
 
-Within your application, you need to authenticate with Power BI. If you are embedding content for your customers, you store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you need to authenticate with Power BI. If you are embedding content for your customers, you store the credentials for the *master* account within your application.
+
+> [!NOTE]
+> For more information about authenticating users while embedding for your customers, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+>
 
 Once authenticated, within your application, use the Power BI REST APIs and JavaScript APIs to embed dashboards and reports into your application. 
 
