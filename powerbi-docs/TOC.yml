@@ -909,6 +909,8 @@
         href: developer/overview-of-power-bi-rest-api.md
       - name: "Power BI REST API limitations"
         href: developer/api-rest-api-limitations.md
+      - name: "Dataset properties"
+        href: developer/api-dataset-properties.md
     - name: "Create a custom visual with the Developer Tools"
       href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Power BI permissions"
@@ -977,7 +979,7 @@
         href: developer/walkthrough-push-data-add-rows.md
       - name: "Complete code listing"
         href: developer/walkthrough-push-data-complete-code.md
-      - name: "Retention Policy"
+      - name: "Automatic retention policy for real-time data"
         href: developer/api-automatic-retention-policy-for-real-time-data.md
     - name: Content Pack Certification
       items: 
