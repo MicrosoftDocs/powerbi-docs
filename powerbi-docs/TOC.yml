@@ -911,6 +911,10 @@
         href: developer/api-rest-api-limitations.md
       - name: "Dataset properties"
         href: developer/api-dataset-properties.md
+      - name: "Data model versioning"
+        href: developer/api-data-model-versioning.md
+      - name: "REST API supported data types"
+        href: developer/api-supported-data-types.md
     - name: "Create a custom visual with the Developer Tools"
       href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Power BI permissions"

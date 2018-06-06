@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/08/2018
 ---
 
 # Automatic retention policy for real-time data
