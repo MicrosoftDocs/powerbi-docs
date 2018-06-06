@@ -994,7 +994,7 @@
   - name: Reference
     items: 
     - name: "REST APIs"
-      href: developer/rest-api-reference.md
+      href: https://docs.microsoft.com/rest/api/power-bi/
     - name: "Power BI C# Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848273
     - name: ".NET SDK Download"
