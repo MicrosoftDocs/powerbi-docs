@@ -28,9 +28,9 @@ The following Data Model additions are considered safe and do not require servic
 * Adding a type definition or enumeration  
 * Adding any annotation to a model element that does not need to be understood by the client to interact with the service correctly  
   
-Clients SHOULD be prepared for services to make such incremental changes to their model. In particular, clients should be prepared to receive properties and derived types not previously defined by the service.  
+Clients ***SHOULD*** be prepared for services to make such incremental changes to their model. In particular, clients should be prepared to receive properties and derived types not previously defined by the service.  
   
-Services SHOULD NOT change their data model depending on the authenticated user. If the data model is user or user group dependent, all changes MUST be safe changes as defined in this section when comparing the full model to the model visible to users with limited authorizations.  
+Services ***SHOULD NOT*** change their data model depending on the authenticated user. If the data model is user or user group dependent, all changes MUST be safe changes as defined in this section when comparing the full model to the model visible to users with limited authorizations.  
   
 For more about OData Data Model standards, see [OData Version 4.0 Part 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   

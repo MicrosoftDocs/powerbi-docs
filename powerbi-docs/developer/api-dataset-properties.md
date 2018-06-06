@@ -11,10 +11,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ---
 
+# Dataset Properties
+
 The current v1 of datasets API only allows for a dataset to be created with a name and a collection of tables. Each table can have a name and a collection of columns. Each column has a name and datatype. We are expanding these properties most notably with support for measures and relationships between tables. The complete list of supported properties for this release is as follows:
 
 > [!IMPORTANT]  
-It can be accessed at [https://api.powerbi.com/v1.0/myorg/datasets](https://docs.microsoft.com/rest/api/power-bi/datasets).
+It can be accessed at the [Datasets Operation Groups](https://docs.microsoft.com/rest/api/power-bi/datasets) page.
 >
 
 ## Dataset
