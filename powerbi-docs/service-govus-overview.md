@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -88,6 +88,11 @@ The following questions (and answers) are provided to help you quickly get infor
 | Commercial version URL | US Government version URL |
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+
+**Question:** My account is provisioned in more than one sovereign cloud. When using **Power BI Desktop**, how do I select which which cloud to connect to?
+
+**Answer:** Beginning with the July 2018 release of **Power BI Desktop**, you can choose which cloud you want to use when signing in to **Power BI Desktop**.
+
 
 ## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
