@@ -102,7 +102,7 @@ GenerateToken can fail, with effective identity supplied, for a few different re
 
 To verify which it is, try the following.
 
-* Execute the [get dataset](https://msdn.microsoft.com/library/mt784653.aspx). Is the property IsEffectiveIdentityRequired true?
+* Execute [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). Is the property IsEffectiveIdentityRequired true?
 * Username is mandatory for any EffectiveIdentity.
 * If IsEffectiveIdentityRolesRequired is true, Role is required.
 * DatasetId is mandatory for any EffectiveIdentity.

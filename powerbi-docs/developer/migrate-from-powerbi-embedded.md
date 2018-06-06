@@ -154,7 +154,7 @@ In addition to the content you migrated from the Power BI Workspace Collection, 
 
 ## Rebuild your application
 1. You will need to modify your application to use the Power BI REST APIs and the report location inside powerbi.com.
-2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an [embed token](https://msdn.microsoft.com/library/mt784614.aspx) to allow this user to act on behalf of other users.
+2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an [embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) to allow this user to act on behalf of other users.
 3. Embed your reports from powerbi.com into your application.
 
 ## Map your users to a Power BI user
