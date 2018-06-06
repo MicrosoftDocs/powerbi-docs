@@ -77,7 +77,7 @@ The Power BI service also attempts to detect the high contrast settings selected
 
 ![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility_06.png)
 
-When in **Power BI Desktop**, notice that some areas such as the **Visualizations** and **Fields** fields do not reflect the selection of high contrast Windows color schemes. Future releases will apply high contrast to other areas of Power BI Desktop.
+When in **Power BI Desktop**, notice that some areas such as the **Visualizations** and **Fields** fields do not reflect the selection of high contrast Windows color schemes.
 
 
 ## Considerations and limitations

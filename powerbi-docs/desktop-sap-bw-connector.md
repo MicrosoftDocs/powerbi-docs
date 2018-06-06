@@ -95,7 +95,7 @@ You must create a new connection to use Implementation 2.0 of the SAP BW Connect
 
 2. You're presented with the new connection dialog, which allows selection of the implementation. Selecting **Implementation 2.0**, as shown in the following image, enables the Execution mode, Batch size and Enable characteristic structures options.
 
-![SAP connection dialog](media/desktop-sap-bw-connector/sap_bw_7.png)
+    ![SAP connection dialog](media/desktop-sap-bw-connector/sap_bw_7.png)
 
 3. Select **OK**, and subsequently, the **Navigator** experience is the same as described in the earlier section for the standard SAP BW Connector. 
 
