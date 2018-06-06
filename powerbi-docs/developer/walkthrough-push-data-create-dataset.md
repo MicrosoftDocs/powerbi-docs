@@ -15,13 +15,13 @@ ms.author: maghan
 # Step 3: Create a dataset in Power BI
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
-In **step 2** of Push data into a dataset, [Get an authentication access token](walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
+In **step 2** of Push data into a dataset, [Get an authentication access token](walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation.
 
 To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dataset, the target resource is a **Dataset**. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](walkthrough-push-data-get-token.md) to a request header:
 
-When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created. 
+When you call the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation, a new dataset is created. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -224,10 +224,11 @@ Below is the [complete code listing](#code).
 ## Next steps
 [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
 [Get an authentication access token](walkthrough-push-data-get-token.md)  
-[Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
+[PostDataset](https://docs.microsoft.com/rest/api/power-bi/datasets_postdataset)  
+[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/datasets_postdatasetingroup)  
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
