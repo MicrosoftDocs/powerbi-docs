@@ -64,7 +64,8 @@ The following accounts need to exist within your tenant and have a Power BI Pro 
 It is recommended that your organization/tenant Global Admin user should not be used as account your application uses if embedding for your customers. This is to minimize access that the application account has within your tenant. The admin user is required to be an admin of all the app workspaces created for embedding.
 
 > [!NOTE]
-> If your app uses the token response *client.Reports.GenerateTokenInGroup(...)*, you need to be an owner of the workspace. Even if your workspace is set up to > be public, private with users, or private with edit
+> If your app uses the token response *client.Reports.GenerateTokenInGroup(...)*, you need to be an owner of the workspace. Even if your workspace is set up to be public, private with users, or private with edit.
+>
 
 #### Accounts for analysts that create content
 
