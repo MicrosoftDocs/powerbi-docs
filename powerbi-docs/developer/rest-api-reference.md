@@ -24,7 +24,7 @@ The Power BI REST API has the following operations:
 * Row operations: Add Rows and Delete Rows.
 * Group operations: Get Groups.
 
-To learn more about the Power BI REST API, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx).
+To learn more about the Power BI REST API, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

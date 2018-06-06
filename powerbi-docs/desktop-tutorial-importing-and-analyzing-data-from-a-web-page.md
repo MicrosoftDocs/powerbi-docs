@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -26,7 +26,9 @@ As a long-time soccer fan, you want to report on the UEFA European Championship 
 
 You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
-﻿﻿﻿![Wikipedia Results table](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+![Wikipedia Results table](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+
+Note that Web connections are only established using basic authentication. Web sites requiring authentication may not work properly with the Web connector.
 
 To import the data:
 
