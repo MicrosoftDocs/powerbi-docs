@@ -71,9 +71,9 @@ Applying the filter, the way we did here, will filter down all records in the **
 ## Applying user and role to an embed token
 Now that you have your Power BI Desktop roles configured, there is some work needed in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
-The [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
+The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
 
 * **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.

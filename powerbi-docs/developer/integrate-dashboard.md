@@ -24,7 +24,7 @@ To get started with this walkthrough, you need a **Power BI** account. If you do
 > 
 > 
 
-To integrate a dashboard into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a dashboard into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
 This article shows the code used in the [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
@@ -40,12 +40,12 @@ If you downloaded the [Integrate a dashboard sample](https://github.com/Microsof
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ## Step 3 - get a dashboard
-To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id.
+To get a **Power BI** dashboard, you use the [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### Get dashboards using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a single dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. 
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) operation. The [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) operation returns a list of dashboards. You can get a single dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. 
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
@@ -254,7 +254,7 @@ Tile Clicked
 ```
 
 ## Working with groups (app workspaces)
-For embedding a dashboard from a group (app workspace), you will want to get the list of all available dashboards within a group using the following REST API call. To find more information about this REST API call, see [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). You will need to have permission in the group for the request to return results.
+For embedding a dashboard from a group (app workspace), you will want to get the list of all available dashboards within a group using the following REST API call. To find more information about this REST API call, see [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). You will need to have permission in the group for the request to return results.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards

@@ -100,7 +100,7 @@ Add this code to Program {...}.
        #endregion
 ```
 
-After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
+After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation to create a dataset to push data into a dashboard.
 
 The next step shows you how to [create a dataset in Power BI](walkthrough-push-data-create-dataset.md).
 
@@ -177,6 +177,6 @@ Below is the [complete code listing](#code).
 [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
 [Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

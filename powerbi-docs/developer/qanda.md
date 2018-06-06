@@ -89,7 +89,7 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## Embed token
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token for Q&A](https://msdn.microsoft.com/library/mt784614.aspx#qanda).
+Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## Next steps
 To give Q&A embedding a try, check out the [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/).

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -71,11 +71,12 @@ The calculated members of user hierarchies are not exposed in Power BI. Rather, 
 ### Security
 Multidimensional models support dimension and cell level security by way of *Roles*. When you connect to a cube with Power BI, you are authenticated and evaluated for appropriate permissions. When a user has *dimension security* applied, the respective dimension members are not seen by the user in Power BI. However, when a user has a *cell security* permission defined, where certain cells are restricted, then that user cannot connect to the cube using Power BI.
 
-## Limitations of SSAS Multidimensional Models in Power BI Desktop
+## Considerations and Limitations
 There are certain limitations to using **SSAS MD**:
 
 * Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
 * *Actions* and *Named Sets* are not exposed to Power BI, but you can still connect to cubes that also contain *Actions* or *Named sets* and create visuals and reports.
+* You may encounter an issue where Power BI displays metadata for an SSAS model, but you're unable to retreive data from the model. This can occur when you have the 32-bit version of the MSOLAP provider installed on your system, and do not have the 64-bit version. Installing the 64-bit version may resolve the issue.
 
 ## Supported Features of SSAS MD in Power BI Desktop
 The following features of SSAS MD are supported in Power BI Desktop:
