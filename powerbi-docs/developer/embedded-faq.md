@@ -45,7 +45,7 @@ There may be some cases where an ISV (typically large) wants to use a P SKU to g
 
 ### How many embed tokens can I create?
 
-Embed tokens with PRO license are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check the usage value that indicates the current embedded usage in percentage.
+Embed tokens with PRO license are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must  [purchase a capacity](#technical) for embedding in a production environment. There is no limit to how many embed tokens you can generate when a capacity is purchased. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
 
 ## Technical
 
