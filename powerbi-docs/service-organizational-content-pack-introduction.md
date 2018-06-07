@@ -8,14 +8,14 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2018
+ms.date: 06/07/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Intro to organizational content packs in Power BI
 > [!NOTE]
-> Content packs aren't available in the new workspace experiences preview. When the new workspace experiences is generally available, you won't be able to use content packs in newly created workspaces. If you haven't already, start migrating your content packs into apps. Learn [more about the new workspace experience](service-create-workspaces.md). 
+> You can't create organizational content packs or use them as a data source in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-workspaces.md).
 > 
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in AppSource. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.

@@ -8,14 +8,14 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2018
+ms.date: 06/08/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Create and publish a Power BI organizational content pack (tutorial)
 > [!NOTE]
-> Content packs aren't available in the new workspace experiences preview. When the new workspace experiences is generally available, you won't be able to use content packs in newly created workspaces. If you haven't already, start migrating your content packs into apps. Learn [more about the new workspace experience](service-create-workspaces.md).
+> You can't create organizational content packs or use them as a data source in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-workspaces.md).
 > 
 
 In this tutorial you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
