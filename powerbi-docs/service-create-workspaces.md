@@ -18,9 +18,9 @@ In Power BI, you can create *workspaces*, places to collaborate with colleagues 
 
 ![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
-Now Power BI is introducing a new workspace experience. When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the group administration is in Power BI, not in Office 365. You can add an Office 365 group to the workspace if you want, along with security groups and distribution lists. 
+Now Power BI is introducing a new workspace experience. When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the group administration is in Power BI, not in Office 365. 
 
-You can add security groups, distribution lists, Office 365 groups, and individuals to these workspaces as members, contributors, or admins. Everyone you add to an app workspace needs a Power BI Pro license. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience, or even to your entire organization. 
+You can still add an Office 365 group to the workspace if you want, along with security groups, distribution lists, and individuals. You add them to the new workspaces as members, contributors, or admins. Everyone you add to an app workspace needs a Power BI Pro license. In the workspace you can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -65,15 +65,15 @@ During the preview period, you can convert your old app workspaces to new ones m
 
 1. Select **Access**.
 
-1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](#roles-in-the-new-workspaces) for an explanation of the different roles.
+1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
     ![Workspaces add members, admins, contributors](media/service-create-workspaces/power-bi-access-add-members.png)
 
 9. Select **Add** > **Close**.
-10. 
-Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
-You can tell you're in a new workspace by the banner at the top: New Workspaces Preview.
+1. Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions.
+
+     ![Edit settings and access for a workspace](media/service-create-workspaces/power-bi-edit-workspace.png)
 
 ## Create an app workspace based on an Office 365 group
 
