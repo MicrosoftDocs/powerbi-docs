@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 06/06/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -21,38 +21,6 @@ In Power BI, you can create *workspaces*, places to collaborate with colleagues 
 Now Power BI is introducing a new workspace experience. When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the group administration is in Power BI, not in Office 365. You can add an Office 365 group to the workspace if you want, along with security groups and distribution lists. 
 
 You can add security groups, distribution lists, Office 365 groups, and individuals to these workspaces as members, contributors, or admins. Everyone you add to an app workspace needs a Power BI Pro license. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience, or even to your entire organization. 
-
-## Roles in the new workspaces
-
-The new workspaces offer more roles than the old workspaces had: admins, members, and contributors.
-
-**Admins can:**
-
-- Update and delete the workspace. 
-- Add/remove people, including other admins.
-- Delete the workspace.
-- Change metadata.
-
-**Members can:** 
-
-– Add members or others with lower permissons.
-- Publish and update apps.
-- Share items and share apps.
-
-**Contributors can:** 
-
-– Create, edit, and delete content in the workspace. 
-- Publish reports to the workspace, delete content.
-- Can’t give new people access to content; can’t share new content, but can share with someone with whom the app is already shared. 
-- Can’t modify the members of the group.
-
-## Distribute an app
-
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Read more about [distributing apps](service-create-distribute-apps.md).
-
-When you distribute an app from a new workspace, app recipients can save a copy of the app to their own My Workspace. They can modify their own copy independent of the app you distributed. Their copy still maintains its connection to the underlying dataset. If you update and redistribute your app, you're not updating their version.
-
-Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -91,12 +59,18 @@ During the preview period, you can convert your old app workspaces to new ones m
 
 1. For example, select **Samples** > **Customer Profitability Sample**.
 
-    Now in the workspace content list, you see **New workspaces preview**, and a new action, **Access**.
+    Now in the workspace content list, you see **New workspaces preview**. Because you're an admin, you also see a new action, **Access**.
+
+    ![Workspaces preview content list](media/service-create-workspaces/power-bi-workspaces-preview-content-list.png)
 
 1. Select **Access**.
-2. 
-3. 
 
+1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](#roles-in-the-new-workspaces) for an explanation of the different roles.
+
+    ![Workspaces add members, admins, contributors](media/service-create-workspaces/power-bi-access-add-members.png)
+
+9. Select **Add** > **Close**.
+10. 
 Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
 You can tell you're in a new workspace by the banner at the top: New Workspaces Preview.
@@ -138,21 +112,45 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 ## Add content to your app workspace
 
-After you've created an app workspace of either the new or old style, it's time to add content to it. Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can publish the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
+After you've created an app workspace of either the new or old style, it's time to add content to it. Adding content is similar in the two workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the old workspaces you can also connect to organizational  content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the new workspaces, you can't connect to content packs.
 
-* [Connect to services](service-connect-to-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
-* [Get data from files](service-get-data-from-files.md) such as Excel, CSV, or Power BI Desktop (PBIX) files.
+When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
 
-When you view content in an app workspace, the owner is shown as the name of the app workspace.
+## Roles in the new workspaces
 
-## Publish your app
-When the dashboards and reports in your app workspace are ready, you publish them as an app. Remember that you don't have to publish all the reports and dashboards in the workspace. You can just publish the ones that are ready.
+The new workspaces offer more roles than the old workspaces had: admins, members, and contributors.
+
+**Admins can:**
+
+- Update and delete the workspace. 
+- Add/remove people, including other admins.
+- Delete the workspace.
+- Change metadata.
+
+**Members can:** 
+
+- Add members or others with lower permissons.
+- Publish and update apps.
+- Share items and share apps.
+
+**Contributors can:** 
+
+- Create, edit, and delete content in the workspace. 
+- Publish reports to the workspace, delete content.
+- Can’t give new people access to content; can’t share new content, but can share with someone with whom the app is already shared. 
+- Can’t modify the members of the group.
+
+## Distribute an app
+
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. 
+
+Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Power BI apps FAQ
 ### How are the new app workspaces different from existing app workspaces?
 * Creating app workspaces won't create corresponding entities in Office 365 like group workspaces do. You can create any number of app workspaces without worrying about different Office 365 groups being created behind the scenes (you can still add an Office 365 group to your workspace). 
 * In existing app workspaces, you can add only individuals to the members and admin lists. In the new app workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier management. 
-- You can still create an organizational content pack from an existing app workspace. You can't create one from the new app workspaces. 
+- You can create an organizational content pack from an existing app workspace. You can't create one from the new app workspaces. 
 
 ### How are apps different from organizational content packs?
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps. Apps and content packs have a few major differences. 
