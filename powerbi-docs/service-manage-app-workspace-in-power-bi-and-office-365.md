@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2018
+ms.date: 06/07/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 As creator or admin of an [app workspace in Power BI](service-install-use-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
 
 > [!NOTE]
-> The new workspace experience preview will change how Power BI workspaces work with Office 365 groups. Read about [creating the new workspaces (preview)](service-create-workspaces.md)
+> The new workspace experience preview will change the relationship between Power BI workspaces and Office 365 groups. You won't automatically be creating an Office 365 group every time you create one of the new workspaces, and you won't see other Office 365 groups in the list of workspaces in Power BI. Read about [creating the new workspaces (preview)](service-create-workspaces.md)
 
 **In Power BI** you can:
 

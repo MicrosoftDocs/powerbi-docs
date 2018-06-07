@@ -17,8 +17,6 @@ In Power BI, *apps* bring related dashboards and reports together, all in one pl
 
 ![Apps in Power BI](media/service-install-use-apps/power-bi-apps-left-nav.png)
 
-Power BI is releasing a preview of a new app workspace experience. The new apps have several advantages over the older ones. You can create your own copy of a new app, in your My Workspace, and modify it however you want. It maintains its connection to the original dataset.
-
 Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
@@ -39,7 +37,7 @@ When you click the link in email the Power BI service ([https://powerbi.com](htt
 
 **On your iOS or Android mobile device** 
 
-When you click the link in email on your mobile device, the app installs automatically and opens the app content list. 
+When you click the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
 
 ![App content list on mobile device](media/service-install-use-apps/power-bi-app-index-it-spend-360.png)
 
@@ -58,11 +56,6 @@ You can also find and install any apps that you have access to from Microsoft Ap
 Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. You can also [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
 
 ![Export data from a Power BI visual](media/service-install-use-apps/power-bi-service-export-data-visual.png)
-
-You can't save changes you make to this version of the app, but you can make your own copy.
-
-## Make your own copy of an app
-
 
 
 

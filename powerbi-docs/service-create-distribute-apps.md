@@ -7,20 +7,20 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 06/07/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Publish apps with dashboards and reports in Power BI
 
-In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place, and then publish them to large groups of people in your organization. 
+In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. Read more about [creating app workspaces](service-create-workspaces.md).
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards.  
 
-With the new workspace experiences, now in preview, you can create collections of dashboards and reports and publish them as apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
+With the new app workspace experiences, now in preview, you can create collections of dashboards and reports and publish them as apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
 
@@ -132,6 +132,7 @@ Any member of an app workspace can unpublish the app.
 This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the app workspace or its contents.
 
 ## Next steps
+* [Create an app workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-install-use-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)

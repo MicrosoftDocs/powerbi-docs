@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2018
+ms.date: 06/07/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 After you've [created an app workspace in Power BI](service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI app workspace. You can continue updating the files you store in OneDrive, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 > [!NOTE]
-> The new workspace experience preview will change how Power BI workspaces work with Office 365 groups. Read about [creating the new workspaces (preview)](service-create-workspaces.md)
+> The new workspace experience preview will change the relationship between Power BI workspaces and Office 365 groups. You won't automatically be creating an Office 365 group every time you create one of the new workspaces, and you won't see other Office 365 groups in the list of workspaces in Power BI. Read about [creating the new workspaces (preview)](service-create-workspaces.md)
 
 Adding files to your app workspace is a two-step process: 
 
