@@ -30,7 +30,7 @@ The On-premises data gateway enables you to merge or append on-premises and clou
 
     ![Refresh through this gateway cluster](media/service-gateway-mashup-on-premises-cloud/refresh-gateway-cluster.png)
 
-3. Under this gateway cluster, add any on-premises data sources used in your queries, as described in [Add a data source](service-gateway-enterprise-manage-scheduled-refresh#add-a-data-source). You don't need to add the cloud data sources here.
+3. Under this gateway cluster, add any on-premises data sources used in your queries, as described in [Add a data source](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source). You don't need to add the cloud data sources here.
 
 4. Upload to the Power BI service your Power BI Desktop file with the queries that combine on-premises and cloud data sources.
 
@@ -46,4 +46,4 @@ The On-premises data gateway enables you to merge or append on-premises and clou
 
 ## Next steps
 
-To learn more about data refresh for gateways, see [Using the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh#using-the-data-source-for-scheduled-refresh).
+To learn more about data refresh for gateways, see [Using the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#using-the-data-source-for-scheduled-refresh).
