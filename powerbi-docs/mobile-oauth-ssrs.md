@@ -1,6 +1,6 @@
 ---
-title: Using OAuth to connect to Reporting Services
-description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app in order to connect to Reporting Services 2016 or later.
+title: Using OAuth to connect to Power BI Report Server and SSRS
+description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to SQL Server Reporting Services 2016 or later.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 06/07/2018
 ms.author: maghan
 
 ---
-# Using OAuth to connect to Reporting Services
-Learn how to configure your environment to support OAuth authentication with the Power BI mobile app in order to connect to Reporting Services 2016 or later.
+# Using OAuth to connect to Power BI Report Server and SSRS
+Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to Power BI Report Server and SQL Server Reporting Services 2016 or later.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-In the past, the Power BI mobile app only supported basic authentication, over HTTPS, to Reporting Services in order to display Mobile Reports or KPIs. Many organizations do not allow this type of configuration due to security concerns. With an update to the Power BI mobile app, you can now use OAuth to connect to Reporting Services. Windows Server 2016 provides some improvements to the Web Application Proxy role to allow this type of authentication.
+You can use OAuth to connect to Power BI Report Server and Reporting Services to display mobile reports or KPIs. Windows Server 2016 provides some improvements to the Web Application Proxy (WAP) role to allow this type of authentication. Note that this configuration doesn’t support viewing Power BI reports in the Power BI mobile apps. However, you can view them in a browser on a mobile device. To view Power BI Reports in the mobile app, you must use Windows authentication.
 
 ## Requirements
 Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You do not need to have a Windows 2016 functional level domain.
@@ -199,7 +199,8 @@ After you select **Sign in**, you will see the elements from your Reporting Serv
 You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure AD FS 2016 and Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
 ## Troubleshooting
-**You receive the error Failed to login to SSRS server. Please verify server configuration.**
+
+### You receive the error Failed to login to SSRS server. Please verify server configuration.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
