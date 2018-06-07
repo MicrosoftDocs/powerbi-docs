@@ -49,7 +49,7 @@ Lastly, if we select **Greater than or equal to**, then the right (highest value
 
 ## Snap to whole numbers with the numeric range slicer
 
-A numeric range slicer will snap to whole numbers, unless it is a decimal range. This lets your slicer to cleanly align who whole numbers. 
+A numeric range slicer will snap to whole numbers if the data type of the underlying field is **Whole Number**. This lets your slicer to cleanly align who whole numbers. **Decimal Number** type fields let you enter or select fractions of a number. The formatting applied in the textbox matches the formatting set on the field, even though you can type in or select more precise numbers.
 
 
 ## Limitations and considerations
@@ -57,3 +57,4 @@ The following limitations and considerations currently apply to the **numeric ra
 
 * The **numeric range slicer** currently filters every underlying row in the data, not any aggregated value. For example, if a *Sales Amount* field is used, each transaction based on *Sales Amount* would be filtered upon, not the sum of *Sales Amount* for each data point of a visual.
 * It does not currently work with Measures.
+* You can type any number into the textboxes on a numeric slicer, even if it is outside the range of values in the underlying column. This lets you set up filters if you know the data may change in future.
