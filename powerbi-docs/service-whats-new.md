@@ -20,7 +20,7 @@ Check this page for known issues and recently released features in the **Power B
 - [What's new in Power BI Desktop](desktop-latest-update.md)  
 - [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
-- [Business Applications Spring ‘18 release notes](https://aka.ms/bagspring2018releasenotes_internal) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
+- [Business Applications Spring ‘18 release notes](http://aka.ms/businessappsreleasenotes) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
 
 You can also check out the YouTube channels for information about "What's new" and features.
 
