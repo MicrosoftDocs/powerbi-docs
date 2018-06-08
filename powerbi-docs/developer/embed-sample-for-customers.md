@@ -88,7 +88,7 @@ You will need to enable additional permissions for your application in addition 
     ![Select delegated permissions](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
     
     >[!Note]
-    >Granting some permissions will require an Admin approval.  These are denoted by a column labeled **Requires Admin**.  Items labeled yes with a green circle and check box.
+    >Granting some permissions will require an Admin approval.  These are denoted by a column labeled **Requires Admin** with a green circle marked yes.
 
 8. Within **Required permissions**, select **Grant Permissions**.
    
