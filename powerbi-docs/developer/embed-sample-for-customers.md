@@ -83,9 +83,12 @@ You will need to enable additional permissions for your application in addition 
 
     ![Select PBI Services](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
+7. Select all permissions under **Delegated Permissions**. You can quickly select all **Delegated Permissions** by clicking the square next to the **Delegated Permissions** column header, or you can select them one by one. Select **Save** when done.
    
     ![Select delegated permissions](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
+    
+    >[!Note]
+    >Granting some permissions will require an Admin approval.  These are denoted by a column labeled **Requires Admin** with a green circle marked *Yes*.
 
 8. Within **Required permissions**, select **Grant Permissions**.
    
