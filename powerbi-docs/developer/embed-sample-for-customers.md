@@ -121,9 +121,9 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace unless they have view-only access. Both admins and members can publish the app.
 
-Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
+    Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
-   ![New workspace](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
+    ![New workspace](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
 
 ### Create and publish your reports
 
@@ -157,32 +157,32 @@ Follow these steps to start embedding your content using a sample application.
 
 2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **groupId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
 
-      ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+    ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
     Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId** follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
-        ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
     In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
-        ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
     Select the application that you want to get the **clientId** for.
 
-        ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
     You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
 
-        ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
     Fill in the **groupId** information with the **app workspace GUID** from Power BI.
 
-        ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     Fill in the **reportId** information with the **report GUID** from Power BI.
 
-        ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+    ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
     * Fill in the **pbiUsername** with the master user Power BI account.
     * Fill in the **pbiPassword** with the password for the master user Power BI account.
