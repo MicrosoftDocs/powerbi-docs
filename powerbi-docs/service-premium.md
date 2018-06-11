@@ -32,11 +32,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 | **Refresh rate** |8/day |Not restricted |
 | **Isolation with dedicated hardware** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 | **Enterprise Distribution to** ***all users*** | | |
-| Apps |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
+| Apps and sharing |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
 | Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
 | **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
-*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint. A Pro license is required for other activities that are not listed, such as creating reports on shared datasets and Analyze in Excel. Learn more about [Power BI Free vs Pro](service-free-vs-pro.md) functionality.*  
+*<sup>1</sup> Free user consumption includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, data alerts, export to CSV, Excel and PowerPoint. Pro users can subscribe free users to email subscriptions. A Pro license is required for other activities that are not listed, such as creating reports on shared datasets and Analyze in Excel. Learn more about [Power BI Free vs Pro](service-free-vs-pro.md) functionality.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
