@@ -25,7 +25,7 @@ In the **Impala** window that appears, type or paste the name of your Impala ser
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-When prompted, enter your credentials, or connect anonymously. The Impala connector supports Anonymouse, Basic (username + password), and Windows authentication.
+When prompted, enter your credentials, or connect anonymously. The Impala connector supports Anonymous, Basic (username + password), and Windows authentication.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
