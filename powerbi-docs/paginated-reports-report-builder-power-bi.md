@@ -54,9 +54,9 @@ When you finish designing the report, what you've really created is a report def
   
 ## See Also  
 
-[Install Report Builder](../../reporting-services/install-windows/install-report-builder.md)
+**Install Report Builder**
 
-[Tutorial: Creating a Quick Chart Report Offline](../../reporting-services/report-builder/tutorial-create-a-quick-chart-report-offline-report-builder.md)  
+**Tutorial: Creating a Quick Chart Report Offline**
  Introduces Report Builder and the wizards available to help you create reports. The tutorial provides a set of sample data so you don't need to connect to a data source to get started.  
   
 
