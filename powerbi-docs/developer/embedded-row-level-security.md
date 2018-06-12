@@ -173,7 +173,7 @@ If you are calling the REST API, you can add custom data inside each identity, e
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
 * Analysis Services live connections are supported for on-premises servers.
-* Azure Analysis Services live connections support filtering by roles, but not dynamic by username, dynamic filtering can be done using CustomData.
+* Azure Analysis Services live connections support filtering by roles, but not dynamic by username. Dynamic filtering can be done using CustomData.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment will not occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
