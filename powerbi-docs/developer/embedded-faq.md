@@ -3,12 +3,12 @@ title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: markingmyname
 manager: kfile
+ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
+ms.date: 06/08/2018
 ---
 # Frequently asked questions about Power BI Embedded
 
@@ -88,6 +88,58 @@ Monitoring through Azure is on the near-term roadmap. The Azure resource, Power 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
 While there is no automated scaling now, all the APIs are available to scale at any time.
+
+### Why creating/scaling/resuming a capacity results in putting the capacity into a suspended state?
+
+The provisioning of a capacity (scale/resume/create) may fail. The caller of the provisioning call should check the ProvisioningState of a capacity using Get Details API: [Capacities - Get Details](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+
+### Why can I only create PBIE in a specific region?
+
+You can only create PBIE capacities for your PBI tenant region.
+
+### How can I find what is my PBI tenant region?
+
+You can use the PBI portal to understand what is your PBI Tenant region.
+
+https://app.powerbi.com/ > ? > About Power BI
+
+![About Power BI](media/embedded-faq/about-01.png)
+![Tenant region](media/embedded-faq/tenant-location-01.png)
+
+### What is supported with the communicating sequential processes (CSP) channel?
+
+* You can create PBIE for your tenant with subscription type CSP
+* Partner account can sign in to customer tenant and purchase PBIE for customer tenant specify customer tenant user as Power BI capacity admin
+
+### Why do I get an unsupported account message?
+
+Power BI requires you to sign up with an organizational account. Trying to signup for Power BI using a MSA (Microsoft account) isn't supported.
+
+### Can I use APIs to create & manage Azure capacities?
+
+Yes, there are Powershell cmdlets and ARM APIs you can use to create & manage PBIE resources.
+
+* Rest APIs - https://docs.microsoft.com/rest/api/power-bi-embedded/
+* Powershell cmdlets - https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
+
+### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
+
+In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your applciation to be assign to a dedicated capacity.
+
+### What are the Azure regions PBI Embedded is available?
+
+[PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
+
+Available regions (16 - same regions as Power BI)
+* US (6) - East US, East US 2, North Central US, South Central US, West US, West US 2
+* Europe (2) - North Europe, West Europe
+* Asia Pacific (2) - Southeast Asia, East Asia
+* Brazil (1) - Brazil South
+* Japan (1) - Japan East
+* Australia (1) - Australia Southeast
+* India (1) - West India
+* Canada (1) - Canada Central
+* United Kingdom (1) - UK South
 
 ### What is the authentication model for Power BI Embedded?
 
