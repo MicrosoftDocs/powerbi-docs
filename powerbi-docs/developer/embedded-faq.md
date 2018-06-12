@@ -106,21 +106,7 @@ https://app.powerbi.com/ > ? > About Power BI
 ![About Power BI](media/embedded-faq/about-01.png)
 ![Tenant region](media/embedded-faq/tenant-location-01.png)
 
-### What do I need for a PBIE POC?
-
-For https://docs.microsoft.com/en-us/power-bi/developer/embedding#embedding-for-your-customers
-
-You need to:
-1. [Register AAD application](https://docs.microsoft.com/en-us/power-bi/developer/register-app#register-with-the-power-bi-app-registration-tool)
-2. Create Power BI content using Power BI desktop and Power BI portal
-3. [Develop the application that embeds the Power BI objects and use the master user (a Power BI pro user) to consume it on behalf of the application's customers](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content)
-
-For POC, you can use Power BI shared capacity This means you don't need to purchase a dedicated capacity, and you can use Power BI shared capacity with small usage volume that is needed for POC.
-
-> [!Note]
-> POC volume is limited, once you exceed POC volume limit, EmbedToken will start failing.
-
-### CSP channel - what is supported?
+### What is supported with the communicating sequential processes (CSP) channel?
 
 * You can create PBIE for your tenant with subscription type CSP
 * Partner account can sign in to customer tenant and purchase PBIE for customer tenant specify customer tenant user as Power BI capacity admin
