@@ -24,6 +24,9 @@ Power BI Report Server is similar to both SQL Server Reporting Services and the 
 ## Licensing Power BI Report Server
 Power BI Report Server is available through two different licenses: [Power BI Premium](../service-premium.md) and [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) with Software Assurance. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.  
 
+> [!NOTE]
+> For Power BI Premium, Power BI Report Server is only included with P SKUs. It is not included with EM SKUs.
+
 ## Web portal
 The entry point for Power BI Report Server is a secure web portal you can view in any modern browser. Here, you can access all your reports and KPIs. The content on the web portal is organized in a traditional folder hierarchy. In your folders, content is grouped by type: Power BI reports, mobile reports, paginated reports, KPIs, and Excel workbooks, plus shared datasets and shared data sources to use as building blocks for your reports. You can tag favorites to view them in a single folder. And you can create KPIs right in the web portal. 
 
