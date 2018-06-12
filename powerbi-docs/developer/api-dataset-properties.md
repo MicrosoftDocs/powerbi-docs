@@ -1,6 +1,6 @@
 ---
-title: Automatic retention policy for real-time data
-description: Learn about the automatic retention policy in the Power BI service
+title: Power BI dataset properties
+description: Learn about the properties of Power BI dataset APIs
 author: markingmyname
 manager: kfile
 ms.author: maghan
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ---
 
-# Dataset Properties
+# Dataset properties
 
 The current v1 of datasets API only allows for a dataset to be created with a name and a collection of tables. Each table can have a name and a collection of columns. Each column has a name and datatype. We are expanding these properties most notably with support for measures and relationships between tables. The complete list of supported properties for this release is as follows:
 

@@ -29,7 +29,7 @@ Here are some of the things you can do with the Power BI APIs.
 > 
 > 
 
-## Power BI Developer Samples
+## Power BI Developer samples
 The Power BI Developer samples include items for embedding dashboards, reports and tiles.
 
 [Power BI Developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples)

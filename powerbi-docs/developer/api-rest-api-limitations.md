@@ -26,7 +26,7 @@ ms.date: 06/08/2018
 * 5,000,000 max rows stored per table in ‘none retention policy’ dataset  
 * 4,000 characters per value for string column in POST rows operation
   
-## See also  
+## See also
 
 [Azure AD service limits and restrictions](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)

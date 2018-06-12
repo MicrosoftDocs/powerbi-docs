@@ -1,5 +1,5 @@
 ---
-title: Data Model Versioning
+title: Power BI data model versioning
 description: Data Model exposed by an OData Service
 author: markingmyname
 manager: kfile
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ---
 
-# Data Model Versioning
+# Data Model versioning
 
 The Data Model exposed by an OData Service, such as the Power BI data model, defines a contract between the OData service and its clients. Services are allowed to extend their model only to the degree that it does not break existing clients. Breaking changes, such as removing properties or changing the type of existing properties, require that a new service version is provided at a different service root URL for the new model.  
   
@@ -34,5 +34,5 @@ Services ***SHOULD NOT*** change their data model depending on the authenticated
   
 For more about OData Data Model standards, see [OData Version 4.0 Part 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
-## See also  
+## See also
 [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)  
