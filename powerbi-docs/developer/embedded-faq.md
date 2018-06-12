@@ -151,6 +151,18 @@ If you already have an Azure AD tenant, you can use your existing directory, or 
 
 To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
+### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
+
+It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
+The Application needs to be configured to require permissions to PowerBI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify PowerBI resource URL as the resource ID, see below a code snippet showing how this can be done:
+
+```csharp
+var context = new AD.AuthenticationContext(authorityUrl);
+var userAssertion = new AD.UserAssertion(userAccessToken);
+var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
+var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
+```
+
 ### How is Power BI Embedded different from other Azure services?
 
 The ISV/developer must have a Power BI account before the purchase of Power BI Embedded in Azure. Your Power BI Embedded deploy region is determined by your Power BI account. Manage your Power BI Embedded resource in Azure to:
