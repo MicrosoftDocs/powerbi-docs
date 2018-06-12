@@ -214,10 +214,13 @@ Users in the organization can use Excel to view and interact with on-premises Po
 > [!NOTE]
 > Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.
 
-### User ArcGIS Maps for Power BI (Preview)
+### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
 
+### Use global search for Power BI (Preview)
+
+Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
 
 ## Custom visuals settings
 ### Enable custom visuals for the entire organization
