@@ -795,6 +795,13 @@
       href: desktop-accessibility.md
     - name: "Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md      
+- name: Paginated reports in Power BI
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports?
+      href: paginated-reports-report-builder-power-bi.md
+  
 - name: Power BI mobile apps
   items:
   - name: Overview
