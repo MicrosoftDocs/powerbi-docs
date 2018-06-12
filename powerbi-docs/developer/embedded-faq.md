@@ -119,7 +119,7 @@ For POC, you can use Power BI shared capacity This means you don't need to purch
 
 > [!Note]
 > POC volume is limited, once you exceed POC volume limit, EmbedToken will start failing.
->
+
 ### CSP channel - what is supported?
 
 * You can create PBIE for your tenant with subscription type CSP
