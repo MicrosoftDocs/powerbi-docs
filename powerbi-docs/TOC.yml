@@ -1151,6 +1151,8 @@
       href: service-gateway-onprem-manage-oracle.md
     - name: "Manage your enterprise data source - import/scheduled refresh"
       href: service-gateway-enterprise-manage-scheduled-refresh.md
+    - name: "Merge on-premises and cloud data sources"
+      href: service-gateway-mashup-on-premises-cloud.md
     - name: "Use Kerberos for single sign-on (SSO)"
       href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
     - name: "Configuring proxy settings"
