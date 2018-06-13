@@ -903,14 +903,24 @@
       href: developer/embed-sample-for-customers.md
   - name: Concepts
     items: 
-    - name: "What can I do with the Power BI API?"
-      href: developer/overview-of-power-bi-rest-api.md
+    - name: Working with Power BI REST APIs
+      items:
+      - name: "What can I do with the Power BI API?"
+        href: developer/overview-of-power-bi-rest-api.md
+      - name: "Power BI REST API limitations"
+        href: developer/api-rest-api-limitations.md
+      - name: "Dataset properties"
+        href: developer/api-dataset-properties.md
+      - name: "Data model versioning"
+        href: developer/api-data-model-versioning.md
+    - name: "Create a custom visual with the Developer Tools"
+      href: service-custom-visuals-getting-started-with-developer-tools.md
     - name: "Power BI permissions"
       href: developer/power-bi-permissions.md
     - name: "Row-level security (RLS)"
       href: developer/embedded-row-level-security.md
     - name: "FAQ"
-      href: developer/embedded-faq.md
+      href: developer/embedded-faq.md    
   - name: How to
     items: 
     - name: Create a custom visual
@@ -971,6 +981,8 @@
         href: developer/walkthrough-push-data-add-rows.md
       - name: "Complete code listing"
         href: developer/walkthrough-push-data-complete-code.md
+      - name: "Automatic retention policy for real-time data"
+        href: developer/api-automatic-retention-policy-for-real-time-data.md
     - name: Content Pack Certification
       items: 
       - name: "Content Pack Certification Program"
