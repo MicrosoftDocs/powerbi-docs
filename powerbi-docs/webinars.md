@@ -16,7 +16,7 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/14/2018
+ms.date: 06/13/2018
 ms.author: maikelson
 ---
 # Power BI webinars
