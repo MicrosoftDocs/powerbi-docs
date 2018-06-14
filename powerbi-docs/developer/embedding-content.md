@@ -29,6 +29,9 @@ Before you start embedding dashboards and reports into your application, you nee
 
 * [Make sure you have an Azure Active Directory tenant](embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](embedding-content.md#proaccount)
+* [App registration and permissions](embedding-content.md#appreg)
+* [Create app workspaces](embedding-content.md#appws)
+* [Create and upload your reports](embedding-content.md#createreports)
 
 You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
@@ -61,7 +64,7 @@ The following accounts need to exist within your tenant and have a Power BI Pro 
 
 #### An organization/tenant admin user
 
-It is recommended that your organization/tenant Global Admin user should not be used as account your application uses if embedding for your customers. This is to minimize access that the application account has within your tenant. The admin user is reccommended to be an admin of all the app workspaces created for embedding.
+It is recommended that your organization/tenant Global Admin user should not be used as account your application uses if embedding for your customers. This is to minimize access that the application account has within your tenant. The admin user is required to be an admin of all the app workspaces created for embedding.
 
 #### Accounts for analysts that create content
 
@@ -77,7 +80,7 @@ The master account is just a regular user with a Power BI Pro license that you u
 
 You need to register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md).
 
-### Create app workspaces
+### <a name="appws"></a>Create app workspaces
 
 If you are embedding dashboards and reports for your customers, those dashboards and reports have to be placed in an app workspace. The *master* account, which was mentioned above, must be an admin of the app workspace.
 
@@ -87,13 +90,17 @@ If you are embedding dashboards and reports for your customers, those dashboards
 > A non-admin user can only create up to 250 app workspaces. To create more app workspaces, you need to use a tenant admin account.
 >
 
-### Create and upload your reports
+### <a name="createreports"></a>Create and upload your reports
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license to publish to an app workspace.
 
 ## Step 2: Embed your content
 
-Within your application, you need to authenticate with Power BI. If you are embedding content for your customers, you store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you need to authenticate with Power BI. If you are embedding content for your customers, you store the credentials for the *master* account within your application.
+
+> [!NOTE]
+> For more information about authenticating users while embedding for your customers, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+>
 
 Once authenticated, within your application, use the Power BI REST APIs and JavaScript APIs to embed dashboards and reports into your application. 
 
