@@ -20,7 +20,7 @@ To get started with this walkthrough, you need a **Power BI Pro** account. If yo
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
 > 
 
-To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-C#) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
 This article shows the code used in the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) on GitHub. To follow along with this walkthrough, you can download the sample.
@@ -41,7 +41,7 @@ To embed your Power BI content, you will need to do a couple of things to make s
 ### Create the Power BI Client with your access token
 With your access token, you will want to create your Power BI client object which will allow you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a *Microsoft.Rest.TokenCredentials* object.
 
-```Csharp
+```C#
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Microsoft.PowerBI.Api.V2;
@@ -62,7 +62,7 @@ A sample of this is available within **Controllers\HomeController.cs** of the [A
 
 **Dashboards**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -75,7 +75,7 @@ Dashboard dashboard = dashboards.Value.FirstOrDefault();
 
 **Tile**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -96,7 +96,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 **Report**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -119,7 +119,7 @@ This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A s
 
 **Dashboard**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -138,7 +138,7 @@ var embedConfig = new EmbedConfig()
 
 **Tile**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -158,7 +158,7 @@ var embedConfig = new TileEmbedConfig()
 
 **Report**
 
-```Csharp
+```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -182,7 +182,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedDashboard.cshtml**
 
-```javascript
+```JavaScript
 <script src="~/scripts/powerbi.js"></script>
 <div id="dashboardContainer"></div>
 <script>
@@ -220,7 +220,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedTile.cshtml**
 
-```javascript
+```JavaScript
 <script src="~/scripts/powerbi.js"></script>
 <div id="tileContainer"></div>
 <script>
@@ -262,7 +262,7 @@ An application sample of this is available within the [Embedding for your organi
 
 **Views\Home\EmbedReport.cshtml**
 
-```javascript
+```JavaScript
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
 <script>
