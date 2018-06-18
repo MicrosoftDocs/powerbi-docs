@@ -893,129 +893,372 @@
       href: mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
-  - name: Overview
-    items: 
-    - name: "What can developers do with Power BI?"
-      href: developer/what-can-you-do.md
-  - name: Tutorials
-    items: 
-    - name: "Embed content for customers"
-      href: developer/embed-sample-for-customers.md
-  - name: Concepts
-    items: 
-    - name: Working with Power BI REST APIs
-      items:
-      - name: "What can I do with the Power BI API?"
-        href: developer/overview-of-power-bi-rest-api.md
-      - name: "Power BI REST API limitations"
-        href: developer/api-rest-api-limitations.md
-      - name: "Dataset properties"
-        href: developer/api-dataset-properties.md
-      - name: "Data model versioning"
-        href: developer/api-data-model-versioning.md
-    - name: "Create a custom visual with the Developer Tools"
-      href: service-custom-visuals-getting-started-with-developer-tools.md
-    - name: "Power BI permissions"
-      href: developer/power-bi-permissions.md
-    - name: "Row-level security (RLS)"
-      href: developer/embedded-row-level-security.md
-    - name: "FAQ"
-      href: developer/embedded-faq.md    
-  - name: How to
-    items: 
-    - name: Create a custom visual
-      items: 
-      - name: "Create a custom visual with the Developer Tools"
-        href: service-custom-visuals-getting-started-with-developer-tools.md      
-      - name: "Get a custom visual certified"
-        href: power-bi-custom-visuals-certified.md
-      - name: "Publish custom visuals to AppSource"
-        href: developer/office-store.md      
-    - name: Embedding 
-      items: 
-      - name: "Embedding with Power BI"
-        href: developer/embedding.md
-      - name: "How to embed your content"
-        href: developer/embedding-content.md
-      - name: "Integrate a dashboard into an app (user owns data)"
-        href: developer/integrate-dashboard.md
-      - name: "Integrate a Power BI tile into an app (user owns data)"
-        href: developer/integrate-tile.md
-      - name: "Integrate a Power BI report into an app (user owns data)"
-        href: developer/integrate-report.md
-      - name: "Integrate content into your application (app owns data)"
-        href: developer/embed-sample-for-customers.md
-      - name: "Integrate content into your application for sovereign clouds (app owns data)"
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
-      - name: "Embed custom layouts into an app"
-        href: developer/embedded-custom-layout.md
-      - name: "Create an Azure Active Directory tenant"
-        href: developer/create-an-azure-active-directory-tenant.md
-      - name: "Register an application"
-        href: developer/register-app.md
-      - name: "Authenticate to Power BI service"
-        href: developer/get-azuread-access-token.md
-      - name: "Embedding Q&A"
-        href: developer/qanda.md
-      - name: "How to migrate Power BI Embedded"
-        href: developer/migrate-from-powerbi-embedded.md      
-      - name: "Power BI Embedded migration tool"
-        href: developer/migrate-tool.md
-      - name: "Migration code snippets"
-        href: developer/migrate-code-snippets.md
-      - name: "Troubleshooting your embedded application"
-        href: developer/embedded-troubleshoot.md
-    - name: Push data
-      items: 
-      - name: "Push data into a dashboard"
-        href: developer/walkthrough-push-data.md
-      - name: "Register an app with Azure AD"
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: "Get an authentication access token"
-        href: developer/walkthrough-push-data-get-token.md
-      - name: "Create a dataset"
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: "Get a dataset to add rows"
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: "Add rows to a table"
-        href: developer/walkthrough-push-data-add-rows.md
-      - name: "Complete code listing"
-        href: developer/walkthrough-push-data-complete-code.md
-      - name: "Automatic retention policy for real-time data"
-        href: developer/api-automatic-retention-policy-for-real-time-data.md
-    - name: Content Pack Certification
-      items: 
-      - name: "Content Pack Certification Program"
-        href: developer/service-content-pack-overview.md
-      - name: "Template Content Pack authoring"
-        href: developer/template-content-pack-authoring.md
-      - name: "Template Content Pack testing"
-        href: developer/template-content-pack-testing.md
-      - name: "Template Content Pack experiences"
-        href: developer/template-content-pack-experience.md
-  - name: Reference
-    items: 
-    - name: "REST APIs"
-      href: https://docs.microsoft.com/rest/api/power-bi/
-    - name: "Power BI C# Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848273
-    - name: ".NET SDK Download"
-      href: https://go.microsoft.com/fwlink/?linkid=848274
-    - name: "JavaScript Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848276
-    - name: "Custom Visuals Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848277
-  - name: Resources
+  - name: Embedded Analytics
     items:
-    - name: "Onboarding Experience Tool for embedding"
-      href: https://aka.ms/embedsetup
-    - name: "JavaScript Playground Sample"
-      href: https://go.microsoft.com/fwlink/?linkid=848279
-    - name: "Samples"
-      href: https://go.microsoft.com/fwlink/?linkid=851293
-    - name: "Power BI community"
-      href: https://go.microsoft.com/fwlink/?linkid=848280
-    - name: "Stack Overflow"
+    - name: Overview
+      items: 
+      - name: "What can developers do with Power BI?"
+        href: developer/what-can-you-do.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: developer/embed-sample-for-customers.md
+    - name: Concepts
+      items: 
+      - name: Working with Power BI REST APIs
+        items:
+        - name: "What can I do with the Power BI API?"
+          href: developer/overview-of-power-bi-rest-api.md
+        - name: "Power BI REST API limitations"
+          href: developer/api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: developer/api-dataset-properties.md
+        - name: "Data model versioning"
+          href: developer/api-data-model-versioning.md
+      - name: "Create a custom visual with the Developer Tools"
+        href: service-custom-visuals-getting-started-with-developer-tools.md
+      - name: "Power BI permissions"
+        href: developer/power-bi-permissions.md
+      - name: "Row-level security (RLS)"
+        href: developer/embedded-row-level-security.md
+      - name: "FAQ"
+        href: developer/embedded-faq.md    
+    - name: How to
+      items: 
+      - name: Create a custom visual
+        items: 
+        - name: "Create a custom visual with the Developer Tools"
+          href: service-custom-visuals-getting-started-with-developer-tools.md      
+        - name: "Get a custom visual certified"
+          href: power-bi-custom-visuals-certified.md
+        - name: "Publish custom visuals to AppSource"
+          href: developer/office-store.md      
+      - name: Embedding 
+        items: 
+        - name: "Embedding with Power BI"
+          href: developer/embedding.md
+        - name: "How to embed your content"
+          href: developer/embedding-content.md
+        - name: "Integrate a dashboard into an app (user owns data)"
+          href: developer/integrate-dashboard.md
+        - name: "Integrate a Power BI tile into an app (user owns data)"
+          href: developer/integrate-tile.md
+        - name: "Integrate a Power BI report into an app (user owns data)"
+          href: developer/integrate-report.md
+        - name: "Integrate content into your application (app owns data)"
+          href: developer/embed-sample-for-customers.md
+        - name: "Integrate content into your application for sovereign clouds (app owns data)"
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
+        - name: "Embed custom layouts into an app"
+          href: developer/embedded-custom-layout.md
+        - name: "Create an Azure Active Directory tenant"
+          href: developer/create-an-azure-active-directory-tenant.md
+        - name: "Register an application"
+          href: developer/register-app.md
+        - name: "Authenticate to Power BI service"
+          href: developer/get-azuread-access-token.md
+        - name: "Embedding Q&A"
+          href: developer/qanda.md
+        - name: "How to migrate Power BI Embedded"
+          href: developer/migrate-from-powerbi-embedded.md      
+        - name: "Power BI Embedded migration tool"
+          href: developer/migrate-tool.md
+        - name: "Migration code snippets"
+          href: developer/migrate-code-snippets.md
+        - name: "Troubleshooting your embedded application"
+          href: developer/embedded-troubleshoot.md
+      - name: Push data
+        items: 
+        - name: "Push data into a dashboard"
+          href: developer/walkthrough-push-data.md
+        - name: "Register an app with Azure AD"
+          href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+        - name: "Get an authentication access token"
+          href: developer/walkthrough-push-data-get-token.md
+        - name: "Create a dataset"
+          href: developer/walkthrough-push-data-create-dataset.md
+        - name: "Get a dataset to add rows"
+          href: developer/walkthrough-push-data-get-datasets.md
+        - name: "Add rows to a table"
+          href: developer/walkthrough-push-data-add-rows.md
+        - name: "Complete code listing"
+          href: developer/walkthrough-push-data-complete-code.md
+        - name: "Automatic retention policy for real-time data"
+          href: developer/api-automatic-retention-policy-for-real-time-data.md
+      - name: Content Pack Certification
+        items: 
+        - name: "Content Pack Certification Program"
+          href: developer/service-content-pack-overview.md
+        - name: "Template Content Pack authoring"
+          href: developer/template-content-pack-authoring.md
+        - name: "Template Content Pack testing"
+          href: developer/template-content-pack-testing.md
+        - name: "Template Content Pack experiences"
+          href: developer/template-content-pack-experience.md
+    - name: Reference
+      items: 
+      - name: "REST APIs"
+        href: https://docs.microsoft.com/rest/api/power-bi/
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+    - name: Resources
+  - name: Develop Custom Visuals
+    items:
+    - name: Overview
+      items: 
+      - name: "What can developers do with Power BI?"
+        href: developer/what-can-you-do.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: developer/embed-sample-for-customers.md
+    - name: Concepts
+      items: 
+      - name: Working with Power BI REST APIs
+        items:
+        - name: "What can I do with the Power BI API?"
+          href: developer/overview-of-power-bi-rest-api.md
+        - name: "Power BI REST API limitations"
+          href: developer/api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: developer/api-dataset-properties.md
+        - name: "Data model versioning"
+          href: developer/api-data-model-versioning.md
+      - name: "Create a custom visual with the Developer Tools"
+        href: service-custom-visuals-getting-started-with-developer-tools.md
+      - name: "Power BI permissions"
+        href: developer/power-bi-permissions.md
+      - name: "Row-level security (RLS)"
+        href: developer/embedded-row-level-security.md
+      - name: "FAQ"
+        href: developer/embedded-faq.md    
+    - name: How to
+      items: 
+      - name: Create a custom visual
+        items: 
+        - name: "Create a custom visual with the Developer Tools"
+          href: service-custom-visuals-getting-started-with-developer-tools.md      
+        - name: "Get a custom visual certified"
+          href: power-bi-custom-visuals-certified.md
+        - name: "Publish custom visuals to AppSource"
+          href: developer/office-store.md      
+      - name: Embedding 
+        items: 
+        - name: "Embedding with Power BI"
+          href: developer/embedding.md
+        - name: "How to embed your content"
+          href: developer/embedding-content.md
+        - name: "Integrate a dashboard into an app (user owns data)"
+          href: developer/integrate-dashboard.md
+        - name: "Integrate a Power BI tile into an app (user owns data)"
+          href: developer/integrate-tile.md
+        - name: "Integrate a Power BI report into an app (user owns data)"
+          href: developer/integrate-report.md
+        - name: "Integrate content into your application (app owns data)"
+          href: developer/embed-sample-for-customers.md
+        - name: "Integrate content into your application for sovereign clouds (app owns data)"
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
+        - name: "Embed custom layouts into an app"
+          href: developer/embedded-custom-layout.md
+        - name: "Create an Azure Active Directory tenant"
+          href: developer/create-an-azure-active-directory-tenant.md
+        - name: "Register an application"
+          href: developer/register-app.md
+        - name: "Authenticate to Power BI service"
+          href: developer/get-azuread-access-token.md
+        - name: "Embedding Q&A"
+          href: developer/qanda.md
+        - name: "How to migrate Power BI Embedded"
+          href: developer/migrate-from-powerbi-embedded.md      
+        - name: "Power BI Embedded migration tool"
+          href: developer/migrate-tool.md
+        - name: "Migration code snippets"
+          href: developer/migrate-code-snippets.md
+        - name: "Troubleshooting your embedded application"
+          href: developer/embedded-troubleshoot.md
+      - name: Push data
+        items: 
+        - name: "Push data into a dashboard"
+          href: developer/walkthrough-push-data.md
+        - name: "Register an app with Azure AD"
+          href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+        - name: "Get an authentication access token"
+          href: developer/walkthrough-push-data-get-token.md
+        - name: "Create a dataset"
+          href: developer/walkthrough-push-data-create-dataset.md
+        - name: "Get a dataset to add rows"
+          href: developer/walkthrough-push-data-get-datasets.md
+        - name: "Add rows to a table"
+          href: developer/walkthrough-push-data-add-rows.md
+        - name: "Complete code listing"
+          href: developer/walkthrough-push-data-complete-code.md
+        - name: "Automatic retention policy for real-time data"
+          href: developer/api-automatic-retention-policy-for-real-time-data.md
+      - name: Content Pack Certification
+        items: 
+        - name: "Content Pack Certification Program"
+          href: developer/service-content-pack-overview.md
+        - name: "Template Content Pack authoring"
+          href: developer/template-content-pack-authoring.md
+        - name: "Template Content Pack testing"
+          href: developer/template-content-pack-testing.md
+        - name: "Template Content Pack experiences"
+          href: developer/template-content-pack-experience.md
+    - name: Reference
+      items: 
+      - name: "REST APIs"
+        href: https://docs.microsoft.com/rest/api/power-bi/
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+    - name: Resources
+      items:
+      - name: "Onboarding Experience Tool for embedding"
+        href: https://aka.ms/embedsetup
+      - name: "JavaScript Playground Sample"
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Samples"
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI community"
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: "Stack Overflow"
+      href: https://go.microsoft.com/fwlink/?linkid=848281
+  - name: Automation
+    items:
+    - name: Overview
+      items: 
+      - name: "What can developers do with Power BI?"
+        href: developer/what-can-you-do.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: developer/embed-sample-for-customers.md
+    - name: Concepts
+      items: 
+      - name: Working with Power BI REST APIs
+        items:
+        - name: "What can I do with the Power BI API?"
+          href: developer/overview-of-power-bi-rest-api.md
+        - name: "Power BI REST API limitations"
+          href: developer/api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: developer/api-dataset-properties.md
+        - name: "Data model versioning"
+          href: developer/api-data-model-versioning.md
+      - name: "Create a custom visual with the Developer Tools"
+        href: service-custom-visuals-getting-started-with-developer-tools.md
+      - name: "Power BI permissions"
+        href: developer/power-bi-permissions.md
+      - name: "Row-level security (RLS)"
+        href: developer/embedded-row-level-security.md
+      - name: "FAQ"
+        href: developer/embedded-faq.md    
+    - name: How to
+      items: 
+      - name: Create a custom visual
+        items: 
+        - name: "Create a custom visual with the Developer Tools"
+          href: service-custom-visuals-getting-started-with-developer-tools.md      
+        - name: "Get a custom visual certified"
+          href: power-bi-custom-visuals-certified.md
+        - name: "Publish custom visuals to AppSource"
+          href: developer/office-store.md      
+      - name: Embedding 
+        items: 
+        - name: "Embedding with Power BI"
+          href: developer/embedding.md
+        - name: "How to embed your content"
+          href: developer/embedding-content.md
+        - name: "Integrate a dashboard into an app (user owns data)"
+          href: developer/integrate-dashboard.md
+        - name: "Integrate a Power BI tile into an app (user owns data)"
+          href: developer/integrate-tile.md
+        - name: "Integrate a Power BI report into an app (user owns data)"
+          href: developer/integrate-report.md
+        - name: "Integrate content into your application (app owns data)"
+          href: developer/embed-sample-for-customers.md
+        - name: "Integrate content into your application for sovereign clouds (app owns data)"
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
+        - name: "Embed custom layouts into an app"
+          href: developer/embedded-custom-layout.md
+        - name: "Create an Azure Active Directory tenant"
+          href: developer/create-an-azure-active-directory-tenant.md
+        - name: "Register an application"
+          href: developer/register-app.md
+        - name: "Authenticate to Power BI service"
+          href: developer/get-azuread-access-token.md
+        - name: "Embedding Q&A"
+          href: developer/qanda.md
+        - name: "How to migrate Power BI Embedded"
+          href: developer/migrate-from-powerbi-embedded.md      
+        - name: "Power BI Embedded migration tool"
+          href: developer/migrate-tool.md
+        - name: "Migration code snippets"
+          href: developer/migrate-code-snippets.md
+        - name: "Troubleshooting your embedded application"
+          href: developer/embedded-troubleshoot.md
+      - name: Push data
+        items: 
+        - name: "Push data into a dashboard"
+          href: developer/walkthrough-push-data.md
+        - name: "Register an app with Azure AD"
+          href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+        - name: "Get an authentication access token"
+          href: developer/walkthrough-push-data-get-token.md
+        - name: "Create a dataset"
+          href: developer/walkthrough-push-data-create-dataset.md
+        - name: "Get a dataset to add rows"
+          href: developer/walkthrough-push-data-get-datasets.md
+        - name: "Add rows to a table"
+          href: developer/walkthrough-push-data-add-rows.md
+        - name: "Complete code listing"
+          href: developer/walkthrough-push-data-complete-code.md
+        - name: "Automatic retention policy for real-time data"
+          href: developer/api-automatic-retention-policy-for-real-time-data.md
+      - name: Content Pack Certification
+        items: 
+        - name: "Content Pack Certification Program"
+          href: developer/service-content-pack-overview.md
+        - name: "Template Content Pack authoring"
+          href: developer/template-content-pack-authoring.md
+        - name: "Template Content Pack testing"
+          href: developer/template-content-pack-testing.md
+        - name: "Template Content Pack experiences"
+          href: developer/template-content-pack-experience.md
+    - name: Reference
+      items: 
+      - name: "REST APIs"
+        href: https://docs.microsoft.com/rest/api/power-bi/
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+    - name: Resources
+      items:
+      - name: "Onboarding Experience Tool for embedding"
+        href: https://aka.ms/embedsetup
+      - name: "JavaScript Playground Sample"
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Samples"
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI community"
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: "Stack Overflow"
       href: https://go.microsoft.com/fwlink/?linkid=848281
 - name: Power BI Report Server
   items:
