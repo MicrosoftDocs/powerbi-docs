@@ -1,24 +1,17 @@
 ---
 title: Analyze in Excel
 description: Learn about how to analyze Power BI datasets in Excel
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/22/2018
 ms.author: davidi
 
+LocalizationGroup: Reports
 ---
 # Analyze in Excel
 There are times when you may want to use Excel to view and interact with a dataset that you have Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
@@ -29,6 +22,7 @@ There are a few requirements for using **Analyze in Excel**:
 * **Analyze in Excel** is supported for Microsoft Excel 2010 SP1 and later.
 * Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*.
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
+* **Analyze in Excel** requires a Pro license. To learn more about the differences in functionality between Free and Pro licenses, take a look at [Power BI Free versus Pro](service-free-vs-pro.md). 
 
 ## How does it work?
 When you select **Analyze in Excel** from the ellipses menu (the ...) associated with a dataset or report in **Power BI**, Power BI creates an .ODC file and downloads it from the browser to your computer.
@@ -100,3 +94,5 @@ When a user with whom you’ve shared your workbook opens the workbook, they’l
 
 Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
 
+## Troubleshooting
+There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. [This page provides solutions for common issues when using Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md)

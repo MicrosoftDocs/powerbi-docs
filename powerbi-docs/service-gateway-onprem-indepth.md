@@ -1,27 +1,20 @@
 ---
 title: On-premises data gateway in-depth
 description: This article looks at the on-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway in-depth
-It's possible for users in your organization to access on-premises data (to which they already have access authorization), but before those users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway facilitates quick and secure behind-the-scenes communication between a user in the cloud, to your on-premises data source, and then back to the cloud.
+It's possible for users in your organization to access on-premises data (to which they already have access authorization), but before those users can connect to your on-premises data source, an On-premises data gateway needs to be installed and configured. The gateway facilitates quick and secure behind-the-scenes communication between a user in the cloud, to your on-premises data source, and then back to the cloud.
 
 Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.
 
@@ -83,10 +76,7 @@ The cloud services only know about accounts within Azure Active Directory. It do
    You can create an account on the Azure portal, or within the Office 365 Admin Portal, and the account name matches the UPN of the local Active Directory account.
 2. You can use the [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) tool to synchronize local accounts to your Azure Active Directory tenant.
    
-   The Azure AD Connect tool provides options for directory and password synchronization. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
-3. You can configure Active Directory Federation Services (ADFS).
-   
-   You can associate your ADFS server to your AAD tenant with the [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) tool. ADFS makes use of the directory synchronization discussed above but allows for a single sign-on (SSO) experience. For example, if you are within your work network, when you to a cloud service, and go to sign in, you may not be prompted to enter a username or password. You will need to discuss with your IT Admin if this is available for your organization.
+   The Azure AD Connect tool provides options for directory synchronization and setting up authentication, including password hash sync, pass-through authentication, and federation. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
 
 Using Azure AD Connect ensures that the UPN will match between AAD and your local Active Directory.
 
@@ -116,13 +106,13 @@ Sometimes installing the gateway fails. Or, maybe the gateway seems to install o
 
 In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your gateway is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## Next steps
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

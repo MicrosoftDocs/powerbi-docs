@@ -1,23 +1,14 @@
 ---
 title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 1/17/2018
-ms.author: asaxton
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 04/23/2018
+ms.author: maghan
 ---
 # Troubleshooting your embedded application
 
@@ -62,7 +53,7 @@ Please provide the request id when approaching Microsoft support.
 
 **App registration failure**
 
-Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be  an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
 **Power BI Service does not appear in Azure portal when registering a new App**
 
@@ -78,6 +69,7 @@ A fiddler capture may be required to investigate further. The required permissio
 
 A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
 
+* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
 * The authenticated user is not a member of the group (app workspace).
 * The authenticated user is not an admin of the group (app workspace).
@@ -86,15 +78,15 @@ A fiddler capture may be required to investigate further. There could be several
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
 ```
-	GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-	Host: wabi-us-north-central-redirect.analysis.windows.net
-	...
-	Authorization: Bearer eyJ0eXAiOi...
-	...
- 
-	HTTP/1.1 403 Forbidden
-	...
-	 
+    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+    Host: wabi-us-north-central-redirect.analysis.windows.net
+    ...
+    Authorization: Bearer eyJ0eXAiOi...
+    ...
+ 
+    HTTP/1.1 403 Forbidden
+    ...
+     
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
@@ -110,7 +102,7 @@ GenerateToken can fail, with effective identity supplied, for a few different re
 
 To verify which it is, try the following.
 
-* Execute the [get dataset](https://msdn.microsoft.com/library/mt784653.aspx). Is the property IsEffectiveIdentityRequired true?
+* Execute [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). Is the property IsEffectiveIdentityRequired true?
 * Username is mandatory for any EffectiveIdentity.
 * If IsEffectiveIdentityRolesRequired is true, Role is required.
 * DatasetId is mandatory for any EffectiveIdentity.
@@ -136,7 +128,53 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
+## Onboarding experience tool for embedding
 
-For answers to frequently asked questions, see the [Power BI Embedded FAQ](embedded-faq.md).
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
+
+### Prerequisites
+
+Verify that you have all the proper prerequisites before using the Onboarding experience tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
+
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+
+### Common Issues
+
+Some common issues you might encounter when testing with the Onboarding experience tool are:
+
+#### Using the Embed for your customers sample application
+
+If you are working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+
+When selecting **Grant permissions** (the Grant permissions step), you get the following error:
+
+    AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>
+
+The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it is available to external APIs.
+
+The following error message appears when running the sample app:
+
+    Password is empty. Please fill password of Power BI username in web.config.
+
+This error occurs because the only value that is not being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
+
+#### Using the Embed for your organization sample application
+
+If you are working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
+
+When you run the **Embed for your organization** sample app, you get the following error:
+
+    AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
+
+This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use *http://localhost:13526/* as the redirect URL.
+
+If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
+
+If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+
+For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

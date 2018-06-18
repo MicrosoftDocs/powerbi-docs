@@ -1,24 +1,17 @@
 ---
 title: Supported languages and countries/regions for Power BI
 description: See the lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/18/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/13/2018
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
 
@@ -28,7 +21,7 @@ This article provides lists of supported languages and countries/regions for the
 For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
 
 ## Languages for the Power BI service
-The Power BI service (in the browser) is available in the following 42 languages:
+The Power BI service (in the browser) is available in the following 44 languages:
 
 * Arabic
 * Basque - Basque
@@ -149,9 +142,9 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
-3. In the **Locale** box, select a different locale. 
+3. In the **Locale for import** box, select a different locale. 
    
-   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Select **OK**.
 
 ### Choose the language for the model in Power BI Desktop
@@ -161,6 +154,11 @@ Besides setting the language for the Power BI Desktop application, you can also 
 - How we compare and sort strings. For example, because Turkish has two of the letter i, depending on the collation of your database, the two can end up in different orders when sorting. 
 - The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
 
+> [!NOTE]
+> Power BI’s model currently uses a locale that is not case-sensitive (or kana-sensitive) so “ABC” and “abc” will be treated as equivalent. If “ABC” is loaded into the database first, other strings that differ only by case such as “Abc” won’t be loaded as a separate value.
+> 
+>
+
 Here's how to set the model language.
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
@@ -169,6 +167,10 @@ Here's how to set the model language.
 
     ![Set model language in Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> Once created, the language of a Power BI model can't be changed.
+> 
+>
 
 ## Languages for the help documentation
 Help is localized in these 10 languages: 

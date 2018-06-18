@@ -1,24 +1,17 @@
 ---
 title: 10 tips for getting help with your Power BI questions
 description: Here are 10 ways to get help when you have a question about how Power BI works
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions
 Do you ever get frustrated using Power BI, ​​or struggle because you can't get ​​answers to your Power BI questions​ when you need them -- i.e. "just-in-time"? ​
@@ -48,12 +41,12 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 ## 6 Attend training
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
-* [Guided learning](guided-learning/gettingstarted.yml#step-1) on the Power BI site.
+* [Guided learning](guided-learning/gettingstarted.yml?tutorial-step=1) on the Power BI site.
 * [Free Power BI  webinars](webinars.md), live and on-demand, on the Power BI site.
 
 You can find additional options online, such as:
 
-* **edX.org** offers a free course, [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4). 
+* **edX.org** offers a free course, [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4).
 * **Lynda.com** offers has courses such as [Power BI Pro Essential Training](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
 * Look for in-person "**Dashboard in a Day**" training sessions.
 
@@ -64,15 +57,14 @@ Ask questions and find answers in the [Power BI community](http://community.powe
 Join a [Power BI user group](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups) and ask your group for help in answering your questions. Or you start your own user group and create a community of people who help each other out, focused on your needs: in your area, for your data, in your time zone.
 
 ## 9 Check the service status
-If you're having an issue with the service, it may be that the service itself is having issues. [Check the Support page](https://powerbi.microsoft.com/support/) for any reports. 
+If you're having an issue with the service, it may be that the service itself is having issues. [Check the Support page](https://powerbi.microsoft.com/support/) for any reports.
 
 ## 10 Just try it
-If all else fails, the final tip is to observe the system. Often, people ask what capabilities Power BI has. You can often answer this type of question by going into the Power BI service or Power BI Desktop, looking at the options in the user interface, and then trying to use them. 
+If all else fails, the final tip is to observe the system. Often, people ask what capabilities Power BI has. You can often answer this type of question by going into the Power BI service or Power BI Desktop, looking at the options in the user interface, and then trying to use them.
 
 For example, say you're wondering if you can share dashboards with a security group. To answer that question, go to the sharing dialog box and try adding a security group. Either way, you'll have your answer after this test.
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md) 
+* [Get started with Power BI](service-get-started.md)
 * Try asking the [Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
-

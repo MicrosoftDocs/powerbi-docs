@@ -1,27 +1,20 @@
 ---
 title: Use Report Themes in Power BI Desktop (Preview)
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 06/02/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Use Report Themes in Power BI Desktop (Preview)
-With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or any other color theme you might want to apply a report. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme (a few exceptions apply, described later in this article).
+With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or any other color theme you might want to apply. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme (a few exceptions apply, described later in this article).
 
 ![](media/desktop-report-themes/report-themes_1.png)
 
@@ -58,7 +51,7 @@ That JSON file has the following required lines:
 
 * **name** - this is the theme name, which is the only required field
 * **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
-* **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
+* **background**, **foreground**, and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To apply a style to a **table** or **matrix** visual, select the visual and in the **Visualizations** pane select the **Format** section, then expand **Matrix style** and select a style from the **Style** drop-down.
 
@@ -74,7 +67,7 @@ For easy cut-and-paste to create your own JSON file, here's the text of the *St 
         "tableAccent": "#568410"
     }
 
-From there you can enter your own color hexcode for your selected colors.
+From there, you can enter your own color hexcode for your selected colors.
 
 Beginning with the September 2017 release of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you only define the formatting that you want to affect, and anything *not* specified in your JSON file simply reverts to the Power BI default settings.
 
@@ -87,7 +80,7 @@ For information about the format of the detailed JSON file, see the **Report the
 ## How Report Theme colors stick to your reports
 When you publish your report to the **Power BI service**, your Report Theme colors stay with it.
 
-In addition, the **Data colors** section of the **Format** panel reflect your Report Theme. For example, after applying the multitude of green and brown colors from the **St. Patrick's Day** theme, when we select a visual and go to **Format > Data colors** we see the following.
+In addition, the **Data colors** section of the **Format** panel reflect your Report Theme. For example, after applying the multitude of green and brown colors from the **St. Patrick's Day** theme, when we select a visual and go to **Format > Data colors**, we see the following.
 
 ![](media/desktop-report-themes/report-themes_8.png)
 
@@ -96,7 +89,7 @@ See all that green? That's because those colors were part of the **Report Theme*
 ### Situations when Report Theme colors won't stick to your reports
 If you apply a custom color set (or individual color) to a particular data point in a visual, applying a Report Theme will *not* override that customized data point color.
 
-In addition, if you've manually set a data point's color using the Theme colors section of the color palette, that (or those) colors will *not* be updated when you apply a new Report Theme. To get your default colors back (so they'll update when you apply a new Report Theme), you can select **Revert to default** in the **Theme colors** palette.
+In addition, if you've manually set a data point's color using the Theme colors section of the color palette, that color (or colors) will *not* be updated when you apply a new Report Theme. To get your default colors back (so they'll update when you apply a new Report Theme), you can select **Revert to default** in the **Theme colors** palette.
 
 ![](media/desktop-report-themes/report-themes_9.png)
 
@@ -145,7 +138,7 @@ The basic JSON file has five required lines:
 
 * **name** - this is the theme name, which is the only required field
 * **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
-* **background**, **foreground** and **tableAccent** - These values are colors that should be used in **table** and **matrix** visuals. How these colors are used depends on the specific table or matrix style applied. The **table** and **matrix** visuals apply these styles by default.
+* **background**, **foreground** and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To create an extended format JSON file, with more detailed and granular control over formatting, you need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
 
@@ -159,7 +152,7 @@ To create an extended format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
+For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("\*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
 
 > [!NOTE]
 > You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.

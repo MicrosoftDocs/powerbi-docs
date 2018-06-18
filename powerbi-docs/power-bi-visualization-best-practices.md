@@ -1,24 +1,17 @@
 ---
 title: Best design practices for reports and visuals (whitepaper)
 description: 'Whitepaper: best practices for designing reports in Power BI'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Best design practices for reports and visuals
 <!-- Shared newnav Include -->
@@ -49,7 +42,7 @@ Creating a report starts before you build your first visual because a good repor
 
 The answer to those questions will drive your design. Every report tells a story. Make sure that story matches the business need. It may be tempting to add visuals that show dramatic insights, but if those insights don’t match the business need, then the report won’t be useful – and in fact your users might be distracted by those visuals. Also, you may find that the information needed to make that decision cannot be gleaned from this data. Can this report be used to measure what is needed?
 
-Reports can be used to monitor, uncover, track, predict, measure, manage, test, and more. If, for example, the business need is a sales report that measures performance, then you might design a report that looks at current sales, compares it to previous sales, compares to competitors, and includes some KPIs that trigger alerts.  Perhaps readers can drill down into the sales numbers to see store closures or supply chain issues that may be impacting sales.  Another drilldown might be the ability to look at sales by store, region, product, season, and more.
+Reports can be used to monitor, uncover, track, predict, measure, manage, test, and more. If, for example, the business need is a sales report that measures performance, then you might design a report that looks at current sales, compares it to previous sales, compares to competitors, and includes some KPIs that trigger alerts.  Perhaps readers can drill down into the sales numbers to see store closures or supply chain issues that may be impacting sales.  Another drill down might be the ability to look at sales by store, region, product, season, and more.
 
 Know the customers for the report and design a report that uses familiar terminology and provides data at a level of detail and complexity on par with the customers’ level of knowledge. Have more than one type of customer? One size doesn’t always fit all; design separate report pages based on expertise and be sure to label each page clearly so customers can self-identify. Another option is to use slicers so customers can tailor the page to fit them. Involve the customer in the planning stage and avoid the mistake of building what you think they need.  Be prepared to start over and to iterate.
 
@@ -212,7 +205,7 @@ When setting backgrounds for report pages, choose colors that don’t overshadow
 
 You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements.  
 
-A study on the use of color and visualizations within Web pages found that higher contrast between colors increases the speed of comprehension (*The effect of text and background colour on visual search of Web pages** and **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics*.)
+A study on the use of color and visualizations within Web pages found that higher contrast between colors increases the speed of comprehension (The effect of text and background colour on visual search of Web pages and **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics**.)
 
 We’ve applied some color best practices to our example report (Figure 20 and 21) below. The most-notable was that we changed the background color to black.  The yellow was too bright and strained our eyes.  Also, on the “Count of athlete name by year and class” chart, the yellow portion of the bars disappeared into the yellow background.  Using a black (or white) background gives us maximum contrast and makes the visuals the focus of attention.
 
@@ -651,7 +644,7 @@ If line charts are the standard for looking at data over time, bar charts are th
 
 For more details on Bar and Column charts:
 
-* [Bar charts 101](http://blog.newscred.com/article/data-visualization-101-bar-charts/3c53044d4add7c31e79a3f80128771f4?page=thankyou)
+* [Bar charts 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Data Visualization Catalogue: Bar Chart](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 * [Data Visualization Catalogue: Multi-set Bar Chart](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
@@ -730,7 +723,7 @@ To do this, open the Formatting pane, expand **Y-Axis** and set **Show Secondary
 
 For more information:
 
-* [Tutorial: Combo chart in Power BI](power-bi-visualization-combo-chart.md)
+* [Combo chart in Power BI](power-bi-visualization-combo-chart.md)
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### Scatter Chart
@@ -808,8 +801,8 @@ KPIs show the value, status, goal, variance from the goal and trend in the same 
 
 For more information, see:
 
-* [Tutorial: Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
-* [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md)
+* [Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [KPIs in Power BI](power-bi-visualization-kpi.md)
 
 ## Conclusion
 Now it’s time for you to put these best practices to the test.  Keep in touch and share your own best practices. Don’t agree with our recommendations or found a great reason to “break the rules?”  We’d love to hear about those as well.  

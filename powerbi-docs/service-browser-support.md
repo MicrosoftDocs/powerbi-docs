@@ -1,24 +1,17 @@
 ---
 title: Supported browsers for Power BI
 description: See a list of browsers that support Power BI
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/18/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/13/2018
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
 Power BI runs in these browsers:

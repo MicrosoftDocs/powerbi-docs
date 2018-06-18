@@ -1,24 +1,17 @@
 ---
 title: Using an alternate Email Address
 description: Using an alternate Email Address
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 08/09/2017
-ms.author: asaxton
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/08/2018
+ms.author: mblythe
 
+LocalizationGroup: Troubleshooting
 ---
 # Using an alternate Email Address
 By default, the email address you used to sign up to Power BI with is used to send you updates about activity in Power BI.  For example, when someone sends you a sharing invitation it will go to this address.
@@ -41,6 +34,19 @@ Sometimes you may want these emails delivered to an alternate email address rath
 > Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
 > 
 > 
+
+## Updating through Azure Active Directory
+When capturing an Active Azure Directory (AAD) embed token for Power BI, you can use three different types of emails. The three different types are:
+
+* the main email address that is associated to a user’s AAD account
+* the UserPrincipalName (UPN) email address
+* the “other” email address array attribute
+
+Power BI selects which email to use based on the following criteria:
+1.  If the mail attribute in the AAD tenant’s user object is present, then Power BI uses that mail attribute for the email address
+2.  If the UPN email is *not* a **\*.onmicrosoft.com** domain email address (the information after the "@" symbol), then Power BI uses that mail attribute for the email address
+3.  If the “other” email array attribute in the AAD user object is present, then the first email in that list (since there can be a list of emails in this attribute) will be used
+4. If none of the above conditions are present, then the UPN address will be used
 
 ## Updating with PowerShell
 You can alternatively update the alternate email address via PowerShell for Azure Active Directory. This is done with the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) command.

@@ -1,53 +1,43 @@
 ---
 title: What can developers do with Power BI?
 description: Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+author: markingmyname
+ms.author: maghan
+ms.date: 05/25/2018
+ms.topic: overview
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 07/20/2017
-ms.author: asaxton
-
+ms.component: powerbi-developer
+ms.custom: mvc
+manager: kfile
+#Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.
 ---
+
 # What can developers do with Power BI?
-Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.
+
+Developers have different options trying to include Power BI content into applications. These options include **embedding with Power BI**, **custom visuals**, and **pushing data into Power BI**.
 
 ## Embedding
-The Power BI service and Power BI Embedded in Azure are coming together to offer a single API for embedding your dashboards and reports. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. For more information, see [Embedding with Power BI](embedding.md).
+The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you will have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
-![](media/what-can-you-do/powerbi-embed-sample.png)
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
-## Custom visuals
-Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript which is a superset of JavaScript that supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convinence, we use the Less pre-compiler which supports some advanced features such as nesting, variables, mixins, conditions, loops, etc. If you don't want to use any of those features, you can just write plain css in the less file.
+Choose the solution that is right for you:
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 
-For more information about how to develop and publish a custom visual, see [Publish custom visuals to the Office store](office-store.md).
+![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
-![](media/what-can-you-do/powerbi-custom-visual-store.png)
+## Develop custom visuals
+Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convenience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, conditions, loops, etc. If you don't want to use any of those features, you can just write plain css in the less file.
+
+![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
 ## Push data into Power BI
 You can use the Power BI API to push data into a dataset. This allows you to add a row to a table within a dataset. The new data can then be reflected in tiles on a dashboard and within visuals within your report.
 
-For more information, see [Push data into a dashboard](walkthrough-push-data.md)
+![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
 ## Next steps
 [Embedding with Power BI](embedding.md)  
-[How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
-[JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [Publish custom visuals to the Office store](office-store.md)  
-[Power BI Visuals Git repo](https://github.com/Microsoft/PowerBI-visuals)  
-[JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
+[Push data into a dashboard](walkthrough-push-data.md)

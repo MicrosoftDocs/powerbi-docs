@@ -1,24 +1,17 @@
 ---
 title: Connect to IntelliBoard with Power BI
 description: IntelliBoard for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to IntelliBoard with Power BI
 IntelliBoard offers simplified access to your Moodle learning management system data through reporting services. The IntelliBoard content pack for Power BI offers additional analytics, including metrics on your courses, registered users, overall performance, and your LMS activity.

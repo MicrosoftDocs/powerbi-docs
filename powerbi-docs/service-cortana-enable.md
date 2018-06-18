@@ -1,20 +1,16 @@
 ---
 title: Activate Cortana for Power BI
 description: Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from Windows devices.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Enable Cortana to access Power BI reports (and their underlying datasets)
 You've read the [Introduction to Cortana and Power BI](service-cortana-intro.md) (if not, you might want to read that first and then come back). And now you want to try it out yourself.  Before you can ask natural language questions in Cortana and find answers from data stored in Power BI ***reports***, there are a few requirements. Specifically, you'll need to do the following.

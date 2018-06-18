@@ -1,26 +1,24 @@
 ---
 title: Power BI Desktop Send a Smile Privacy Statement
 description: Power BI Desktop Send a Smile Privacy Statement
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/06/2018
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Power BI Desktop Send a Smile Privacy Statement
+
+Beginning with the March 2018 version of **Power BI Desktop**, error reporting uses the Windows Error Reporting platform rather than the *Send a Smile* or *Send a Frown* functionality. You can get more information about the Windows Error Reporting platform in the [Windows Privacy blog](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
+
+## For versions of Power BI Desktop prior to March 2018
+
 At Microsoft, we are working hard to protect your privacy, while delivering products that bring you the performance, power, and convenience you want. This Privacy Statement explains many of the data collection and use practices of Microsoft Power BI Desktop Feedback *Send a Smile*. It doesn’t apply to other online or offline Microsoft sites, products, or services.
 
 Except as otherwise described in this statement, *Send a Smile* doesn’t send personal information to Microsoft. Information that is sent to Microsoft isn’t shared outside of Microsoft and its controlled subsidiaries and affiliates without your permission.

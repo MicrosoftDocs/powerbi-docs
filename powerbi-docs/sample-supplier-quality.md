@@ -1,24 +1,17 @@
 ---
 title: 'Supplier Quality Analysis sample for Power BI: Take a tour'
 description: 'Supplier Quality Analysis sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/19/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour
 
@@ -36,7 +29,8 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), or
+[Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529779).
 
 ### Get the content pack for this sample
 

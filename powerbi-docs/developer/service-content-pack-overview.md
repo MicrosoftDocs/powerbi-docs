@@ -1,22 +1,14 @@
 ---
 title: Overview of the Power BI service content pack program
 description: Content Pack Certification Program
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/04/2018
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 02/20/2018
 ms.author: maghan
 
 ---
@@ -61,9 +53,9 @@ Content packs provide insights and metrics focused on a specific business scenar
 * Consider offering more than one content pack for separate unique scenarios  
 
 ## Frequently asked questions
-**Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?**
+**Can I as a third party, build a Power BI Service content pack for a SaaS application that I don’t own?**
 
-No, we currently require signing a partner agreement with the owner of the SaaS application prior to publishing the content pack in the service.
+We require signing a partner agreement with the owner of the SaaS application prior to publishing a content pack in the service. As a third-party, you will need to facilitate signing of the partner agreement with the SaaS application owner.
 
 **I don’t have a public developer API for my service. Can I still build a Power BI service content pack that pulls the data directly from the data storage?**
 
@@ -73,9 +65,13 @@ No, Power BI service content packs require a developer API that is accessible th
 
 Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](template-content-pack-authoring.md#dashboard) article.
 
+**I have a content pack published in Power BI. How can I update it?**
+
+Published content packs can be updated once a month. Update requests submitted to [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com) before the last day of the current month, will be published in the first week of the following month.
+
 **I have more questions about service Content Packs. How can I contact you?**
 
-Feel free to email us your questions at pbiservicesapps@microsoft.com
+Feel free to email us your questions at [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.

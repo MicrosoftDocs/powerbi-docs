@@ -1,74 +1,42 @@
 ---
 title: Using auditing within your organization
 description: Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
-ms.author: asaxton
+ms.component: powerbi-admin
+ms.topic: conceptual
+ms.date: 04/10/2018
+ms.author: mblythe
 
+LocalizationGroup: Administration
 ---
 # Using auditing within your organization
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and Compliance Center or use PowerShell.
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management.
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management. You can use Power BI auditing to audit actions performed by users, such as "View Report" and "View Dashboard". You cannot use auditing to audit permissions. 
 
 You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
-
-> [!NOTE]
-> The auditing feature in Power BI is in preview and is available in all data regions.
 
 ## Requirements
 You must meet these requirements to access audit logs:
 
 - To access the auditing section of the Office 365 Security & Compliance Center, you must have an Exchange Online license (included with Office 365 Enterprise E3 and E5 subscriptions).
-- You must either be a global admin or have an Exchange admin role that provides access to the audit log. 
 
-  Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+- You must either be a global admin or have an Exchange admin role that provides access to the audit log. Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
 
 - If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must get a direct link to the Office 365 Security & Compliance Center.
 
-## Enabling auditing functionality in the Power BI admin portal
-
-You will need to enable auditing for your organization in order to work with the reports. You can do this within the tenant settings of the admin portal.
-
-1. Select the **gear icon** in the upper right.
-
-2. Select **Admin Portal**.
-   
-   ![](media/service-admin-auditing/powerbi-admin.png)
-
-3. Select **Tenant settings**.
-   
-   ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
-
-4. Switch on **Create audit logs for internal activity auditing and compliance purposes**.
-
-5. Select **Apply**.
-
-Power BI will start logging various activities that your users perform in Power BI. The logs take up to 48 hours to show up in the O365 Security & Compliance Center. For more information about what activities are logged, see [List of activities audited by Power BI](#list-of-activities-audited-by-power-bi).
-
-> [!NOTE]
-> To enable auditing for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
+- To view audit logs for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
 
 ## Accessing your audit logs
 
-To audit your Power BI logs, you must visit the O365 Security & Compliance Center.
+To audit your Power BI logs, visit the O365 Security & Compliance Center.
+
+There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 1. Select the **gear icon** in the upper right.
 
@@ -84,8 +52,7 @@ To audit your Power BI logs, you must visit the O365 Security & Compliance Cente
 
 Alternatively, you can browse to [Office 365 | Security & Compliance](https://protection.office.com/#/unifiedauditlog).
 
-> [!NOTE]
-> To provide non-administrator accounts with access to the audit log, you will need to assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
+To provide non-administrator accounts with access to the audit log, you will need to assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
 
 ## Search only Power BI activities
 

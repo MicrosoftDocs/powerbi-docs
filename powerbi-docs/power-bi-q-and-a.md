@@ -1,30 +1,28 @@
 ---
 title: Overview of Q&A in Power BI service and Desktop
 description: Documentation overview topic for Power BI Q&A natural language queries.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus:  ''
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # Q&A in Power BI service and Power BI Desktop
 ## What is Q&A?
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 This article is the jumping off point for all things Q&A. Select a link below to learn how Q&A works in Power BI service (dashboards and reports), Power BI Desktop (reports), Power BI Embedded, and Power BI mobile.  
+
+> [!NOTE]
+> **Power BI Q&A** only supports answering natural language queries asked in English. You can also try out a preview feature for questions asked in Spanish. In **Power BI Desktop**, go to **File**, **Options and settings**, **Options** and look for the **Preview Features** tab. Check the box for **Spanish language support for Q&A**.  
+>
+>
 
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 

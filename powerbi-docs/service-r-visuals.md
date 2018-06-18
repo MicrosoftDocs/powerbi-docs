@@ -1,24 +1,17 @@
 ---
 title: Create advanced analytics and visualizations using R scripts in Power BI
 description: Use R scripts in Power BI to create advanced analytics and advanced visualizations
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Visualizations
 ---
 # Creating R visuals in the Power BI service
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.

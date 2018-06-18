@@ -1,37 +1,28 @@
 ---
 title: Using the Analytics pane in Power BI Desktop
 description: Create dynamic reference lines for visuals in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Create reports
 ---
 # Using the Analytics pane in Power BI Desktop
-With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
+With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
-> 
-> 
 
-## Enable Forecasting (Preview)
-In addition, with the September 2016 release of **Power BI Desktop** (version 2.39.4526.362 or later), you can also perform *forecasting* from the **Analytics** pane. You must enable this preview feature, by going to **File > Options and settings > Options** then selecting **Preview Features** from the left pane. Select the checkbox next to **Forecasting** to enable the feature, as shown in the following image. You'll need to restart **Power BI Desktop** for your changes to take effect.
+## Search within the Analytics pane
+Beginning with the February 2018 release of **Power BI Desktop** (version 2.55.5010.201 or later), you can search within the **Analytics** pane, which is a sub-section of the **Visualizations** pane. As shown in the image below, search box appears when the **Analytics** pane is selected.
 
 ![](media/desktop-analytics-pane/analytics-pane_1b.png)
 
@@ -58,7 +49,7 @@ To view the available dynamic reference lines for a visual, follow these steps:
    ![](media/desktop-analytics-pane/analytics-pane_3.png)
 3. To create a new line, select **+ Add**. You can then specify a name for the line by double-clicking the text box, then typing in your name.
    
-   You have all sorts of options for your line, such as selecting its *color*, *transparency*, *style* and *position* (relative to the visual's data elements), and whether to include the label. And importantly, you can select which **Measure** in the visual you want your line to be based upon by selecting the **Measure** drop down, which is automatically populated with data elements from the visual. In this case, we'll select *Weather* as the measure, label it *Average Weather*, and customize a few of the other options as shown below.
+   You have all sorts of options for your line, such as selecting its *color*, *transparency*, *style* and *position* (relative to the visual's data elements), and whether to include the label. And importantly, you can select which **Measure** in the visual you want your line to be based upon by selecting the **Measure** drop-down, which is automatically populated with data elements from the visual. In this case, we'll select *Weather* as the measure, label it *Average Weather*, and customize a few of the other options as shown below.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
 4. If you want to have a data label appear, move the **Data label** slider on. When you do so, you get a whole host of additional options for your data label, as shown in the following image.
@@ -111,6 +102,8 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 * Pie chart
 * Donut
 * Table
+
+The percentile line is only available when using imported data in **Power BI Desktop** or when connected live to a model on a server running **Analysis Service 2016** or later, **Azure Analysis Services**, or a dataset on the Power BI service. 
 
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:

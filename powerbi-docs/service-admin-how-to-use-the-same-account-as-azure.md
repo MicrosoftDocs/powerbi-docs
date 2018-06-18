@@ -1,24 +1,17 @@
 ---
 title: Using the same account for Power BI and Azure
 description: How to use the same account login for Power BI and Azure
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: asaxton
+ms.author: mblythe
 
+LocalizationGroup: Troubleshooting
 ---
 # Using the same account for Power BI and Azure
 If you are a user of both Power BI and Azure, you may want to use the same login for both services so that you don't need to type in your password twice.

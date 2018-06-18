@@ -1,24 +1,17 @@
 ---
 title: Connect to Microsoft Azure Enterprise with Power BI
 description: Microsoft Azure Enterprise for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Microsoft Azure Enterprise with Power BI
 Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.

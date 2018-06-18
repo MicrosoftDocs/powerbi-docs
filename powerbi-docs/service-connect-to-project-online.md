@@ -1,24 +1,17 @@
 ---
 title: Connect to Project Online with Power BI
 description: Project Online for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Project Online with Power BI
 Microsoft Project Online is a flexible online solution for project portfolio management (PPM) and everyday work. Project Online enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Online content pack for Power BI allows you to explore your project data with out-of-box metrics such as portfolio status and project compliance.
@@ -41,6 +34,9 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 5. For Authentication Method, select **oAuth2** \> **Sign In**. When prompted, enter your Project Online credentials and follow the authentication process.
    
     ![](media/service-connect-to-project-online/creds.png)
+    
+Note that you need to have Portfolio Viewer, Portfolio Manager or Administrator permissions for the Project Web App you are connecting to.
+
 6. You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
    
    ![](media/service-connect-to-project-online/dashboard2.png)

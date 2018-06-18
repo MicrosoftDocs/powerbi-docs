@@ -1,29 +1,22 @@
 ---
 title: Using calculated columns in Power BI Desktop
 description: Calculated columns in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Using calculated columns in Power BI Desktop
 With calculated columns, you can add new data to a table already in your model. But instead of querying and loading values into your new column from a data source, you create a Data Analysis Expressions (DAX) formula that defines the column’s values. In Power BI Desktop, calculated columns are created by using the New Column feature in Report View.
 
-Unlike custom columns created as part of a query by using Add Custom Column in Query Editor, calculated columns created in Report View or Data View are based on data you’ve already loaded into the model. For example, you might choose to concatenate values from two different columns in two different but related tables , perform addition, or extract sub-strings.
+Unlike custom columns created as part of a query by using Add Custom Column in Query Editor, calculated columns created in Report View or Data View are based on data you’ve already loaded into the model. For example, you might choose to concatenate values from two different columns in two different but related tables, perform addition, or extract substrings.
 
 Calculated columns you create appear in the Fields list just like any other field, but they’ll have a special icon showing its values are the result of a formula. You can name your columns whatever you want, and add them to a report visualization just like other fields.
 
@@ -50,12 +43,12 @@ Now Jeff has the field he wants.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-He can add it to his report canvas along with the number of shipments. Very quickly and with minimal effort, Jeff now has a City, State field. He can add to just about any type of visualization. Jeff even sees that when he creates a map visualization, Power BI Desktop even knows how to read the City, State values in his new column.
+He can add it to his report canvas along with the number of shipments. Very quickly and with minimal effort, Jeff now has a City, State field he can add to just about any type of visualization. Jeff sees that when he creates a map visualization, Power BI Desktop even knows how to read the City, State values in his new column.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## Learn more
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

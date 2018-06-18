@@ -1,24 +1,17 @@
 ---
 title: Unable to add Power BI to O365 partner
 description: Unable to add Power BI to an Office 365 syndication partner. The syndicated model is a purchasing model used by Office 365.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/05/2017
-ms.author: asaxton
+ms.author: mblythe
 
+LocalizationGroup: Administration
 ---
 # Unable to add Power BI to Office 365 partner subscription
 Office 365 allows companies to resell Office 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.
@@ -62,10 +55,6 @@ If you want to buy a subscription to Power BI Pro or Power BI Premium, you will 
 
 * Your partner agrees to add Power BI to their portfolio so that you can purchase from them.
 * Your partner is able to transition you to a model where you can buy Power BI directly from Microsoft or another partner who offers Power BI.
-
-This video looks at Office 365 syndication and purchasing Power BI:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C357phT94A8" frameborder="0" allowfullscreen></iframe>
 
 ## Next steps
 [Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  

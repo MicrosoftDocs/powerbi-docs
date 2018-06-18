@@ -1,31 +1,23 @@
 ---
 title: Add rows to a table
 description: Walkthrough to push data - Add rows to a Power BI table
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Step 5: Add rows to a Power BI table
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
-In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a **Power BI** dataset. 
+In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation to add rows to a **Power BI** dataset. 
 
-When you call the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation, you add rows to a dataset.
+When you call the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation, you add rows to a dataset.
 
 ![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
@@ -312,9 +304,8 @@ Below is the [complete code listing](#code).
     }
 
 ## Next steps
-[Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

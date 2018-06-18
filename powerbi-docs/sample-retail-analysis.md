@@ -1,24 +1,17 @@
 ---
 title: 'Retail Analysis sample for Power BI: Take a tour'
 description: 'Retail Analysis sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/17/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: mihart
 
+LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
@@ -28,7 +21,8 @@ This industry sample dashboard and underlying report analyze retail sales data o
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a content pack, .pbix file, or Excel workbook.
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778).
+
 
 ### Get the content pack for this sample
 
@@ -163,7 +157,8 @@ This is a safe environment to play in. You can always choose not to save your ch
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 
 ## Next steps
-* [Download the Retail Analysis sample content pack](sample-tutorial-connect-to-the-samples.md)    
+* [Download the Retail Analysis sample content pack](sample-tutorial-connect-to-the-samples.md)
+* [Download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Get data (for Power BI)](service-get-data.md)    
 * [Power BI - Basic Concepts](service-basic-concepts.md)    

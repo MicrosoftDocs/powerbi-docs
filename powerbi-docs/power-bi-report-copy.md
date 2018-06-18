@@ -1,27 +1,19 @@
-
 ---
-title: Copy a Power BI report
-description: Create a new Power BI report from another report.
-services: powerbi
-documentationcenter: ''
+title: Copy a report in Power BI service
+description: Create a new Power BI report from another report in Power BI service.
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/08/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/24/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
-# Create a new report from an existing report
+# Create a new report from an existing report (copy a report)
 Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
 
 1. [Open a report](service-report-open.md).
@@ -44,3 +36,5 @@ Maybe you have a report that already connects to your dataset and has some visua
 [Create new visualizations](power-bi-report-add-visualizations-ii.md)
 
 [Delete visualizations](service-delete.md) you don't need
+
+[Create a report using Power BI Desktop](desktop-report-view.md)

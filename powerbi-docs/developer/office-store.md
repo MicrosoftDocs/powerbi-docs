@@ -1,23 +1,14 @@
 ---
 title: Publish custom visuals to AppSource
 description: Learn how you can publish your custom visual to AppSource for others to discover and use.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/5/2017
-ms.author: asaxton
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/02/2018
+ms.author: maghan
 
 ---
 # Publish custom visuals to AppSource
@@ -30,13 +21,13 @@ Once you have created your custom visual, you may want to publish it AppSource f
 What is AppSource? Simply put, it is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, Cortana Intelligence, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Preparing to submit your custom visual
-One you're done coding and testing your custom visual and have packaged it into a pbiviz file, you should also have the following ready for your submission.
+Once you're done coding and testing your custom visual and have packaged it into a pbiviz file, you should also have the following ready for your submission.
 
 | Item | Required | Description |
 | --- | --- | --- |
 | Pbiviz package contains all the required metadata |Yes |Visual name<br>Display name<br>GUID<br>Version<br>Description<br>Author name and email |
-| Sample .pbix report file |Yes |To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like. |
-| Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height). It can be no larger than 512kb for the file size. |
+| Sample .pbix report file |Yes |To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like.<br>The sample .pbix report file must work offline, without any external connection |
+| Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height). **Important!** Please review the [short guide](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) carefully before submitting the Icon. |
 | Screenshots |Yes |You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366px (width) x 768px (height). It can be no larger than 1024kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.* |
 | Support download link |Yes |Provide the URL to support customers who have issues with your visual. The format of your URL should include https:// or http://. |
 | Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. The format of your link should include https:// or http://. |
@@ -46,6 +37,10 @@ One you're done coding and testing your custom visual and have packaged it into 
 
 ## Submitting to Power BI
 Submission starts with sending an email to the Power BI custom visuals submission team. You can email [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+
+> [!IMPORTANT]
+> You must fill the following fields in the pbiviz.json file: “description”, “supportUrl”, “author“, “name” and “email” before you create the .pbiviz package.
+> 
 
 Attach the .pbiviz file and the sample report .pbix file in your email. The Power BI team will reply back with instructions and a app package XML file to upload. This XML app package is required in order to submit your visual through the Office developer center.
 
@@ -83,7 +78,7 @@ Follow the below steps to complete the submission.
    * *Submission title:* How your submission will be named in the developer center
    * *Version:* Your version number is auto-populated from your add-in app package.
    * *Release Date (UTC):* Select a date for your app to release to the store. If a future date is chosen, your app will not be available in the store until that date is reached.
-   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI custom visuals will be tagged.You may provide up to 2 additional categories, for help users easily search for your visual
+   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI custom visuals will be tagged. You may provide up to 2 additional categories, for help users easily search for your visual
    * *Testing notes:* optional, if you'd like to provide some instructions for the testers at Microsoft
    * *My app calls, supports, contains, or uses cryptography or encryption:* leave unchecked
    * *Make this add-in available in the Office add-in catalog on iPad:* leave unchecked
@@ -118,7 +113,7 @@ Follow the below steps to complete the submission.
     > If you select any other option other than free, or have an In-App purchase content in the submitted visual, the submission will be rejected.
     > 
     > 
-17. You can now select **Save as draft" and submit later, or select **Submit for approval** to submit the custom visual to the Office store.
+17. You can now select **Save as draft** and submit later, or select **Submit for approval** to submit the custom visual to the Office store.
 
 ## Tracking submission status and usage
 You can review the [validation policies](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).

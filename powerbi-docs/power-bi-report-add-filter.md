@@ -1,46 +1,51 @@
 ---
-title: Add a visualization or page or drillthrough or report filter to a report
+title: Add a visualization, page, drillthrough, or report filter to a report
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/08/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/26/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
-# Add a filter to a Power BI report (in Editing view)
+# Add a filter to a Power BI service report (in Editing view)
 > [!TIP]
 > We recommend first reading [About filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).
+
+This examples in this article show Power BI service. However, the steps are almost identical in Power BI Desktop.
 > 
 > 
 
 ## What is the difference between report filters in Editing View versus Reading View
 There are two modes for interacting with reports: [Reading View](service-reading-view-and-editing-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
-* In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
-* In Reading View, you can interact with any report, page and visual filters that already exist in the report, but you won't be able to save your filter changes.
+* In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you've added.
+* In Reading View, you can interact with any report, drillthrough, page, and visual filters that already exist in the report, but you cannot add new filters. However, the changes you make in the Filters pane are saved with the report -- even if you view the report in a mobile app and even if you leave the report and return to it later.  
 
 > [!NOTE]
-> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).
-> 
-> 
+> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).
 
-## Visual filters, page filters, drillthrough filters, and report filters
-A **page filter** applies to all the visuals on the report page. A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.
 
-![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+## Filters available in the Power BI *Filters* pane
+Whether you're using Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
+
+There are four types of filters.
+
+- **page filter** applies to all the visuals on the report page     
+- **visual filter** applies to a single visual on a report page    
+- **drillthrough filter** applies to a single entity in a report    
+- **report filter** applies to all pages in the report    
+
+    ![filter pane in Reading view](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+
+Because filters *persist*, when you navigate away from the report, Power BI retains the filter, slicer, and other data view changes that you've made. So you'll be able to pick up where you left off when you return to the report. If you do not want your filter changes to persist, select **Reset to default** from the top menubar.
+
+![persistent filter button](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## Add a filter to a specific visualization (aka visual filter)
 There are 2 ways to do this: 
@@ -126,17 +131,18 @@ Let's see how the drillthrough filter works.
 3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
 4. Select the values you want to filter (see [How to use report filters](power-bi-how-to-report-filter.md)).
 
-The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+    The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 1. Select the back arrow to return to the previous report page.
 
-## Troubleshooting
-### Why your visual level filter and page level filter may return different results
-When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](service-aggregates.md).  
+## Considerations and troubleshooting
 
-When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
+- There are situations where your visual level filter and page level filter may return different results.  For example, when you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](service-aggregates.md).  
 
-If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)
+    Then, when you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
+
+- If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)    
+- If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
 
 ## Next steps
  [How to use report filters](power-bi-how-to-report-filter.md)

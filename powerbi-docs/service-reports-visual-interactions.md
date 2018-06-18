@@ -1,25 +1,18 @@
 ---
 title: Change how visuals interact in a report
 description: Documentation for how to set Visual interactions in a Microsoft Power BI service report and a Power BI Desktop report.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/10/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 02/28/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Visualization interactions in a Power BI report
 If you have edit permissions for a report, you can use **Visual interactions** to change how visualizations on a report page impact each other. 
@@ -41,24 +34,24 @@ This article shows you how to use **Visual interactions** in Power BI service [E
 2. Display the **Visual Interactions** options.
     - In Power BI service, select the dropdown from the report menubar.
 
-       ![](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
+       ![Visual interactions dropdown](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
 
     - In Desktop, select **Format > Interactions**.
 
-        ![](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
+        ![select Format then Interactions](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
 
 3. To turn on the visualization interaction controls, select **Edit interactions**. Power BI adds cross-filter and cross-highlight icons to all of the other visualizations on the report page.
    
-    ![](media/service-reports-visual-interactions/power-bi-icons-on.png)
+    ![report with Visual interactions turned on](media/service-reports-visual-interactions/power-bi-icons-on.png)
 3. Determine what impact the selected visualization should have on the others.  And, optionally, repeat for all other visualizations on the report page.
    
-   * If it should cross-filter the visualization, select the **filter** icon ![](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
-   * If it should cross-highlight the visualization, select the **highlight** icon ![](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
-   * If it should have no impact, select the **no impact** icon ![](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
+   * If it should cross-filter the visualization, select the **filter** icon ![filter icon](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
+   * If it should cross-highlight the visualization, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
+   * If it should have no impact, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
 
 4. To turn on drilling controls, select **Drilling filters other visuals**.  Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection. 
 
-   ![](media/service-reports-visual-interactions/drill2.gif)
+   ![video of turning on drilling controls](media/service-reports-visual-interactions/drill2.gif)
 
 ### Next steps
 [How to use report filters](power-bi-how-to-report-filter.md)

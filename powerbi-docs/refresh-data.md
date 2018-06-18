@@ -1,24 +1,17 @@
 ---
 title: Data refresh in Power BI
 description: Data refresh in Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Data refresh in Power BI
 Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.
@@ -158,11 +151,11 @@ Refresh capabilities for a dataset included within an organization content pack 
 To learn more, see [Introduction to organizational content packs](service-organizational-content-pack-introduction.md).
 
 ## Live connections and DirectQuery to on-premises data sources
-With the on-premises data gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
+With the On-premises data gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
 
 When connecting to a SQL Service Analysis Services (SSAS) data source using a Live connection, unlike DirectQuery, the Live connection to a SSAS source can run against the cache, even upon loading a report. This behavior improves load performance for the report. You can request the latest data from the SSAS data source by using the **refresh** button. Owners of SSAS data sources can configure the scheduled cache refresh frequency for the dataset to ensure reports are as up to date as they require. 
 
-When you configure a data source with the on-premises data gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
+When you configure a data source with the On-premises data gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
 
 > [!NOTE]
 > If your dataset is configured for a live or DirectQuery connection, datasets are refreshed approximately each hour or when interaction with the data occurs. You can manually adjust the *refresh frequency* in the *Scheduled cache refresh* option in the Power BI service.

@@ -1,32 +1,26 @@
 ---
 title: Use Kerberos on the on-premises gateway for SSO (single sign-on) from Power BI to on-premises data sources
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/10/2018
-ms.author: davidi
+ms.component: powerbi-gateways
+ms.topic: conceptual
+ms.date: 03/09/2018
+ms.author: mblythe
 
+LocalizationGroup: Gateways
 ---
 # Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources
-You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway with Kerberos. The on-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
+You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your On-premises data gateway with Kerberos. The On-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
 
 The following data sources are currently supported, SQL Server, SAP HANA, and Teradata, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx).
 
 * SQL Server
 * SAP HANA
+* SAP BW
 * Teradata
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source.  When single sign-on is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
@@ -60,15 +54,18 @@ Here are additional details about those steps:
 
 
 > [!NOTE]
-> To enable SSO for SAP HANA, you need to ensure the following HANA-specific configurations are met for SAP:
->    1. Ensure the SAP HANA server is running version 2.00.022* or higher / later. 
->    2. On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+> To enable SSO for SAP HANA:
 >
-> The following links to patches and upgrades from SAP may be useful. Note that you must log in to the following resources using your SAP Support account, and that SAP may change or update these links.
-> 
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Ensure the SAP HANA server is running the required minimum version, which depends on your SAP Hana server platform level:
+>     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+>
+> - On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
+>
+> For more information about setting up and configuring single sign-on for SAP HANA using Kerberos, see the topic [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide and the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory]. 
+>
+>
 
 
 ## Errors from an insufficient Kerberos configuration
@@ -85,8 +82,8 @@ The result is that the because of insufficient Kerberos configuration, the gatew
 ## Preparing for Kerberos Constrained Delegation
 Several items must be configured in order for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
-### Prerequisite 1: Install & configure the on-premises data gateway
-This release of the on-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
+### Prerequisite 1: Install & configure the On-premises data gateway
+This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
 ### Prerequisite 2: Run the gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
@@ -95,10 +92,10 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
-* If you started with a previous version of the on-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
+* If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
   
   * [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
-  * If you already installed the Preview version of the on-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
+  * If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
 > [!NOTE]
 > If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
@@ -178,7 +175,7 @@ Given those example names and settings, the configuration steps are the followin
     
     Right-click and open the **Properties** for **Impersonate a client after authentication** and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 17. From the list of policies under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
-18. Restart the **on-premises data gateway** service process.
+18. Restart the **On-premises data gateway** service process.
 
 ## Running a Power BI report
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
@@ -188,9 +185,9 @@ After all the configuration steps outlined earlier in this article have been com
 This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
 
 ## Switching the gateway to a domain account
-Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **on-premises data gateway** user interface. Here are the steps necessary to do so.
+Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **On-premises data gateway** user interface. Here are the steps necessary to do so.
 
-1. Launch the **on-premises data gateway** configuration tool.
+1. Launch the **On-premises data gateway** configuration tool.
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_10.png)
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
@@ -200,7 +197,7 @@ Earlier in this article, we discussed switching the gateway from a local service
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
 ## Next steps
-For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
+For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
 
 * [On-premises data gateway](service-gateway-onprem.md)
 * [DirectQuery in Power BI](desktop-directquery-about.md)

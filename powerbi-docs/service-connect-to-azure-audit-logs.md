@@ -1,24 +1,17 @@
 ---
 title: Connect to Azure Audit Logs with Power BI
 description: Azure Audit Logs for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/16/2017
-ms.author: yshoukry
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 02/06/2018
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Azure Audit Logs with Power BI
 With the Azure Audit Logs content pack you can analyze and visualize the information stored in the audit logs. Power BI retrieves your data, builds an out-of-the box dashboard, and creates reports based on that data.
@@ -56,7 +49,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/).
+The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
 
 <a name="FindingParams"></a>
 

@@ -1,23 +1,16 @@
 ---
 title: Create and publish apps with dashboards and reports in Power BI
 description: Learn how to create and publish apps, which are collections of dashboards and reports built to deliver key metrics for your organization.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 02/22/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Create and publish apps with dashboards and reports in Power BI
 
@@ -62,6 +55,8 @@ Adding content is just like adding content to your My Workspace, except the othe
 * [Connect to services](service-connect-to-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 * [Get data from files](service-get-data-from-files.md) such as Excel, CSV, or Power BI Desktop (PBIX) files.
 
+When you view content in an app workspace, the owner is shown as the name of the app workspace.
+
 ## Add an image to your app (optional)
 By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
 
@@ -89,7 +84,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
      ![Customized image](media/service-create-distribute-apps/power-bi-apps-image.png)
 
 ## Publish your app
-When the dashboards and reports in your app workspace are ready, you publish them as an app. Remember that you don't have to publish all the reports and dashboards in the workspace. You can just publish the ones that are ready. 
+When the dashboards and reports in your app workspace are ready, you publish them as an app. Remember that you don't have to publish all the reports and dashboards in the workspace. You can just publish the ones that are ready.
 
 1. In the workspace list view, decide which dashboards and reports you want to include in the app.
 
@@ -99,23 +94,23 @@ When the dashboards and reports in your app workspace are ready, you publish the
 
      ![Warning about related dashboard](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
-1. Select the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
+2. Select the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
    
      ![Publish app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-2. On **Details**, fill in the description to help people find the app. You can set a background color to personalize it.
+3. On **Details**, fill in the description to help people find the app. You can set a background color to personalize it.
    
      ![App details](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-3. On **Content**, you see the content that’s going to be published as part of the app – everything that you've selected in that workspace. You can also set the app landing page – the dashboard or report people will see first when they go to your app. You can choose **None**. Then they’ll land on a list of all the content in the app. 
+4. On **Content**, you see the content that’s going to be published as part of the app – everything that you've selected in that workspace. You can also set the app landing page – the dashboard or report people will see first when they go to your app. You can choose **None**. Then they’ll land on a list of all the content in the app. 
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients.
+5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. You can enable this setting in the [Power BI Admin Portal](#how-to-enable-pushing-apps). You can learn more considerations for [pushing an app](#how-to-enable-pushing-apps).
 
     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-5. When you select **Finish**, you see a message confirming it’s ready to publish. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
+6. When you select **Finish**, you see a message confirming it’s ready to publish. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
    
      ![App finish](media/service-create-distribute-apps/power-bi-apps-success.png)
 
@@ -133,7 +128,7 @@ After you publish your app, you may want to change or update it. It’s easy to 
    
      The app workspace is your staging area, so your changes aren't pushed live to the app until you publish again. This lets you make changes without affecting the published apps.  
  
-1. Go back to the app workspace list of contents and select **Update app**.
+3. Go back to the app workspace list of contents and select **Update app**.
    
      ![Update app button](media/service-create-distribute-apps/power-bi-app-update-button.png)
 
@@ -142,6 +137,34 @@ After you publish your app, you may want to change or update it. It’s easy to 
      ![Update app button](media/service-create-distribute-apps/power-bi-app-update-complete.png)
 
 The people you’ve published the app to automatically see the updated version of the app. 
+
+# Automatically install apps for end users
+You can automatically install apps for end users, making it easier to distribute the right apps to the right people or groups.
+
+Apps deliver data that your end users need to do their jobs. Now you can automatically install these apps in the Apps content list rather than you finding it from Microsoft AppSource, or following an installation link. This makes it easier for you to roll out standard Power BI content to your users.
+
+## How to install an app automatically for end users
+Once the admin has enabled the feature, the app publishers have a new option available to **install the app automatically**. When the box is ***checked*** and the application publisher selects **Finish** (or **Update app**, for existing apps), the app will be pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
+
+![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-access.png)
+
+## How users get the apps that were pushed to them
+After you push an app, it shows up in the Apps list automatically. You can curate the apps that a user or job role in your organization need to have at their fingertips.
+
+![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+
+### Considerations for automatically installing apps
+Here are some things to keep in mind when pushing apps to end users:
+
+* Installing an app automatically to users can take time. Most apps will install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
+
+* Refresh your browser. Before seeing the pushed app in the Apps list, the user may need to refresh, or close and reopen their browser.
+
+* If the user doesn’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
+
+* Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
+
+* Guest users who have not accepted an invite will not get apps automatically installed for them.  
 
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.
@@ -162,7 +185,7 @@ With this release, we have renamed all group workspaces to app workspaces. You c
 ### How are apps different from organizational content packs?
 Apps are an evolution and simplification of content packs, with a few major differences. 
 
-* After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This makes it easy for business users to continue to navigate to them over time.  
+* After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. We believe this makes apps easier to understand and maintain over the long run. See the roadmap section of the Power BI blog for more on how we plan to improve this area. 
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
 
@@ -174,5 +197,5 @@ With apps, you can publish a read-only version of your app workspace to large au
 ## Next steps
 * [Install and use apps in Power BI](service-install-use-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
+* [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

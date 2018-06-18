@@ -1,36 +1,21 @@
 ---
-title: Configure your report server to host Excel workbooks using Office Online Server (OOS)
-description: In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+title: Host Excel workbooks using Office Online Server (OOS) - Power BI Report Server
+description: In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using Office Online Server (OOS).
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 08/23/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 04/23/2018
 ms.author: maghan
 
 ---
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
-In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server, giving them a single location to publish and view their self-service Microsoft BI content.
+In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Your report server becomes a single location to publish and view self-service Microsoft BI content.
 
-> [!NOTE]
-> This is a preview feature included in the August 2017 preview release. For more information, see [What's new in Power BI Report Server](whats-new.md).
-> 
-> 
-
-![Excel reports being viewed from the report server web portal.](media/excel-oos/excel-in-pbirs.png)
-
-This is accomplished by making use of [Office Online Server](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
+![Excel reports viewed from the report server web portal](media/excel-oos/excel-in-pbirs.png)
 
 ## Prepare server to run Office Online Server
 Perform these procedures on the server that will run Office Online Server. This server must be Windows Server 2012 R2 or Windows Server 2016. Windows Server 2016 requires Office Online Server April 2017 or later.
@@ -179,8 +164,8 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 * You will have read only capability with workbooks.
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Administrator overview](admin-handbook-overview.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

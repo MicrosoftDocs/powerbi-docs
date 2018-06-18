@@ -1,24 +1,17 @@
 ---
 title: Query overview in Power BI Desktop
 description: Query overview in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop
 With **Power BI Desktop** you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
@@ -98,7 +91,7 @@ The left pane displays the number of active queries, as well as the name of the 
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
 ## The center (data) pane
-In the center pane, or Data pane, date from the selected query is displayed. This is where much of the work of the Query view is accomplished.
+In the center pane, or Data pane, data from the selected query is displayed. This is where much of the work of the Query view is accomplished.
 
 In the following image, the Web data connection established earlier is displayed, the **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
 

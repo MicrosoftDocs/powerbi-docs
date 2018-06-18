@@ -1,24 +1,17 @@
 ---
 title: Tips and tricks for asking questions with Q&A in Power BI
 description: Tips and tricks for asking questions with Q&A in Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: jastru
 
+LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
 ## Words and terminology that Q&A recognizes
@@ -90,9 +83,6 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 * auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 * restates the question based on the data in the underlying dataset(s). This helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
 * dims words it does not understand.
-
-## Combine results from more than one dataset
-One of Power BI's most powerful features is the ability to combine data from different datasets.  So don't limit your questions to a single dataset -- ask questions that retrieve data from more than one dataset. For example, if my dashboard has tiles from the Retail Analysis Sample and a state population dataset, I can ask *show count of stores by state population as bar chart descending*.
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.

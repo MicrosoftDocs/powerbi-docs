@@ -1,27 +1,20 @@
 ---
 title: Manage your SAP HANA data source
-description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to SAP HANA.
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+description: How to manage the On-premises data gateway and data sources that belong to that gateway. This article is specific to SAP HANA. 
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 
+LocalizationGroup: Gateways
 ---
 # Manage your SAP HANA data source
-Once you have installed the on-premises data gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SAP HANA data source either for scheduled refresh or for DirectQuery.
+Once you have installed the On-premises data gateway , you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SAP HANA data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -56,7 +49,7 @@ You can then select the **Data Source Type** from the list.
 You will then want to fill in the information for the data source which includes the **Server**, **Username** and **Password**.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
+> All queries to the data source will run using these credentials. For more information, see the main On-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored.
 > 
 > 
 
@@ -97,7 +90,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [!NOTE]
-> Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> Server and database name have to match between Power BI Desktop and the data source within the On-premises data gateway!
 > 
 > 
 
@@ -118,6 +111,6 @@ If you are listed in the **Users** tab of the data source configured within the 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

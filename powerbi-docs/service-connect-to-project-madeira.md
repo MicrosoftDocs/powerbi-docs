@@ -1,24 +1,17 @@
 ---
 title: Connect to Project Madeira with Power BI
 description: Project Madeira for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Project "Madeira" with Power BI
 Getting insights into your Project “Madeira” data is easy with Power BI and the Project “Madeira” content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
@@ -44,7 +37,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
     >[!NOTE]
     >You must be a superuser in Project “Madeira”.
    
-    ![](media/service-connect-to-project-madeira/creds.png)
+   ![](media/service-connect-to-project-madeira/creds.png)
 6. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your account.  
    
     ![](media/service-connect-to-project-madeira/dashboard.png)
@@ -94,19 +87,20 @@ When you choose OK, a key is created, so you can copy it copy it to the Password
 ## Troubleshooting
 The Power BI dashboard relies on the published web services that are listed above, and it will show data from the demonstration company or your own company if you import data from your current finance solution. However, if something goes wrong, this section provides a workaround for the most typical issues.
 
-**"Parameter validation failed, please make sure all parameters are valid" **
+**"Parameter validation failed, please make sure all parameters are valid"**
+
 If you see this error after you enter your Project “Madeira” URL, make sure the following requirements are satisfied:  
 
-    - The URL follows exactly this pattern https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-    - Delete any text after the company name in parenthesis  
-    - Make sure there are no trailing forward slash at the end of the URL.  
-    - Make sure the URL is uses a secure connection as indicated by the URL starting with https.  
+   - The URL follows exactly this pattern https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
+   - Delete any text after the company name in parenthesis  
+   - Make sure there are no trailing forward slash at the end of the URL.  
+   - Make sure the URL is uses a secure connection as indicated by the URL starting with https.  
 
 **"Login failed"**
 If you get a "login failed" error when you log in to the dashboard, using your Project “Madeira” credentials, then this can be caused by one of the following issues:  
 
-    - The account you are using does not have permissions to read the Project “Madeira” data from your account. Verify your user account in Project "Madeira", and make sure that you have used the right web service access key as the password, and then try again.  
-    - The Project "Madeira" instance that you are trying to connect to does not have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.  
+   - The account you are using does not have permissions to read the Project “Madeira” data from your account. Verify your user account in Project "Madeira", and make sure that you have used the right web service access key as the password, and then try again.  
+   - The Project "Madeira" instance that you are trying to connect to does not have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.  
 
 **"Oops"**
 If you see an "Oops" error dialog after you pass the authentication dialog, this is most frequently caused by a problem connecting to the data for the content pack. Verify that the URL follows the pattern that was specified earlier:  

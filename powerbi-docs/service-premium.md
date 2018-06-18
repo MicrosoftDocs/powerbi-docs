@@ -1,24 +1,17 @@
 ---
 title: Power BI Premium - what is it?
 description: Power BI Premium is dedicated capacity for your organization or team, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/05/2017
-ms.author: asaxton
+ms.component: powerbi-admin
+ms.topic: conceptual
+ms.date: 02/05/2018
+ms.author: mblythe
 
+LocalizationGroup: Premium
 ---
 # Power BI Premium - what is it?
 Power BI Premium provides resources dedicated to running the Power BI service for your organization or team, giving you more dependable performance and larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user licenses for viewers.
@@ -43,7 +36,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 | Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
 | **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
-*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint.*  
+*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint. A Pro license is required for other activities that are not listed, such as creating reports on shared datasets and Analyze in Excel. Learn more about [Power BI Free vs Pro](service-free-vs-pro.md) functionality.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
@@ -62,24 +55,25 @@ By default, your workspace will be in shared capacity. This includes your person
 <a name="premiumskus"/>
 
 ### Premium capacity nodes
-Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available. For information regarding embedded analytics capacity planning, see [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy).
+Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offerings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available. For information regarding embedded analytics capacity planning, see [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy).
 
-* P nodes can be used for embedded or service deployments
-* EM nodes can be used for embedded deployments only
-* EM1 and EM2 
-* Links in this table only operate properly for users who are Office 365 global admins - others receive a 404 error. 
+* P nodes can be used for embedded or service deployments.
+* EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
-| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour | Availability |
+>[!NOTE]
+>Links in this table only operate properly for users who are Office 365 global admins - others receive a 404 error. 
+
+| Capacity Node | Total v-cores<br/>*(Backend + frontend)* | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Max page renders at peak hour | Availability |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |.5 cores, 2.5GB RAM |.5 cores |3.75 per second |150-300 |Available |
-| [EM2 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-cores |1 core, 5GB RAM |1 core |7.5 per second |301-600 |Available |
-| [EM3 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |Available |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |Available ([month to month](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is also available) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |Available |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |Available |
+| [EM1 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |.5 v-cores, 2.5GB RAM |.5 v-cores |3.75 per second |150-300 |Available |
+| [EM2 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-cores |1 v-core, 5GB RAM |1 v-core |7.5 per second |301-600 |Available |
+| [EM3 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-cores |2 v-cores, 10GB RAM |2 v-cores | |601-1,200 |Available |
+| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-cores |4 v-cores, 25GB RAM |4 v-cores |30 per second |1,201-2,400 |Available ([month to month](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is also available) |
+| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-cores |8 v-cores, 50GB RAM |8 v-cores |60 per second |2,401-4,800 |Available |
+| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-cores |16 v-cores, 100GB RAM |16 v-cores |120 per second |4,801-9600 |Available |
 
-* The frontend cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
-* The backend cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+* The frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
+* The backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Power BI Report Server
 Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see [Get started with Power BI Report Server](report-server/get-started.md).

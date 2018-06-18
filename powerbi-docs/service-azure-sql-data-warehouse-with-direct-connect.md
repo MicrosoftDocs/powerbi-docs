@@ -1,24 +1,17 @@
 ---
 title: Azure SQL Data Warehouse with DirectQuery
 description: Azure SQL Data Warehouse with DirectQuery
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 08/10/2017
-ms.author: asaxton
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/22/2018
+ms.author: maghan
 
+LocalizationGroup: Data from databases
 ---
 # Azure SQL Data Warehouse with DirectQuery
 Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
@@ -80,9 +73,13 @@ Your fully qualified server name and database name can be found in the Azure Pre
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
+> [!NOTE]
+> If your Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+>
+
 ## Next steps
 [Get started with Power BI](service-get-started.md)  
 [Get Data for Power BI](service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
 
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

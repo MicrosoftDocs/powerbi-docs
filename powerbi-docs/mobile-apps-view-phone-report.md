@@ -1,22 +1,14 @@
 ---
 title: View Power BI reports optimized for your phone
 description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/04/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 03/22/2018
 ms.author: maggies
 
 ---
@@ -44,7 +36,7 @@ All the other features of Power BI reports still work in phone-optimized reports
 * [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
 ## Filter the report page on a phone
-If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. 
+If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone filtered to the values being filtered in the report on the web, with a message that there are active filters on the page. You can change the filters on your phone.
 
 1. Tap the filter icon ![Phone filter icon](media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.

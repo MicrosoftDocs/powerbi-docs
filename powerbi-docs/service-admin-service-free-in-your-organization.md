@@ -1,24 +1,17 @@
 ---
 title: Power BI (free) in your organization
 description: This article looks at your options for Power BI (free) from an organization perspective. If you are the Administrator of your tenant, this will show you how to manage free sign ups.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/05/2017
-ms.author: asaxton
+ms.author: mblythe
 
+LocalizationGroup: Administration
 ---
 # Power BI (free) in your organization
 This will look at how the Power BI (free) offering can be used within your organization. An organization means that you have a tenant and can manage users and services within that tenant. As an administrator, you can control license assignment, or you can allow users to sign up as an individual. We will look at the Power BI (free) license and how you can control individual sign up.

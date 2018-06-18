@@ -1,24 +1,17 @@
 ---
 title: Connect to Snowflake computing warehouse in Power BI Desktop
 description: Easily connect to and use a Snowflake computing warehouse in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to Snowflake in Power BI Desktop
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. 
@@ -29,7 +22,7 @@ In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and 
 > 
 
 ## Connect to a Snowflake computing warehouse
-To connect to a **Snowflake** computing warehouse select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Snowflake**.
+To connect to a **Snowflake** computing warehouse, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Snowflake**.
 
 ![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
 

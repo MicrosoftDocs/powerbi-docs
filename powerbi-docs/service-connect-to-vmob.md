@@ -1,24 +1,17 @@
 ---
 title: Connect to VMob with Power BI
 description: VMob for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to VMob with Power BI
 Tracking and exploring your VMob data is easy with Power BI and the VMob content pack. Power BI will retrieve the following data: User Statistics for all time and in the last 30 days, Retail KPI for the last 30 days and Campaign Performance for the last 30 days.

@@ -1,24 +1,17 @@
 ---
 title: Card visualizations (aka big number tiles)
 description: Create a Card visualization in Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/24/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/26/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Card visualizations
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard or report, such as total sales, market share year over year, or total opportunities. This type of visualization is called a *Card*. As with almost all of the native Power BI visualizations, Cards can be created using the report editor or Q&A.
@@ -87,6 +80,25 @@ The Q&A question box is the easiest way to make a Card. The Q&A question box is 
 - If you do not see a question box at all, contact your system or tenant administrator.    
 - If you are using Desktop and double-clicking empty space in a report doesn't open Q&A, you may need to enable it.  Select **File > Options and Settings > Options > Preview features > Q&A** and restart Desktop.
 
+## Format a card
+You have many options for changing labels, text, color and more. The best way to learn is to create a card and then explore the Formatting pane. Here are just a few of the formatting options available. 
+
+1. Start by selecting the paintbrush icon to open the Formatting pane. 
+
+    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+2. Expand **Data label** and change the color, size, and font family. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
+
+3.  Expand **Category label** and change the color and size.
+
+    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+
+4. Expand **Background** and move the slider to On.  Now you can change the background color and transparency.
+
+    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+
+5. Continue to explore the formatting options until your card is exactly how you'd like it. 
+
+    ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## Next steps
 [Dashboard tiles in Power BI](service-dashboard-tiles.md)

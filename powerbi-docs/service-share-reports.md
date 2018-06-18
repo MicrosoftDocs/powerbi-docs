@@ -1,25 +1,18 @@
 ---
 title: Filter and share Power BI reports with coworkers
 description: Learn how to share a filtered Power BI report with coworkers in your organization.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: lukaszp
-editor: ''
-tags: ''
+ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
-qualityfocus: complete
-qualitydate: 06/22/2016
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Share a filtered Power BI report with your coworkers
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI also offers [several other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md).

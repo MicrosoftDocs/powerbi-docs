@@ -4,8 +4,6 @@ A lot of issues can surface when the gateway version is out of date.  It is a go
 ## Common issues
 Here are a few common issues and resolutions that have helped a number of customers in environments that restrict internet access.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### Authentication to proxy server
 Your proxy may require authentication from a domain user account. By default, the gateway uses a Service SID for the windows service log on user. Changing the log on user to a domain user can help with this. For more information, see [Changing the gateway service account to a domain user](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
@@ -23,4 +21,7 @@ You can force the gateway to communicate with Azure Service Bus using HTTPS inst
 ## Installation
 ### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
 You may receive this error if you are trying to install the gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the gateway on a machine that is not a domain controller.
+
+### Installation fails
+You may encounter installation failures if the anti-virus software on the installation machine is out of date. You can either update the anti-virus installation, or disable anti-virus only for the duration of the gateway installation to complete, then re-enable anti-virus.
 

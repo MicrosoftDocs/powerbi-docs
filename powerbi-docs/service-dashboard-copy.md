@@ -1,28 +1,21 @@
 ---
 title: Create a copy of a Power BI dashboard
 description: 'How to duplicate a Power BI dashboard '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/17/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in Power BI service
-![](media/service-dashboard-copy/power-bi-dashboard.png)
+![dashboard](media/service-dashboard-copy/power-bi-dashboard.png)
 
  There are many different reasons to make a copy of a dashboard. Maybe you want to make changes and test its performance against the original; or create slightly different versions to distribute by colleague, region, or team. Perhaps a colleague admires your dashboard design and wants to use it for reporting out to her managers. Another reason would be if you have a new database with the same data structure and data types and want to reuse the dashboard you've already created -- this too can be done but would require some work in Power BI Desktop. 
 
@@ -33,13 +26,13 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
 1. Open the dashboard.
 2. From the top-right corner, select the ellipses (...) and choose **Duplicate dashboard**.
    
-   ![](media/service-dashboard-copy/power-bi-dulicate.png)
+   ![ellipses menu](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Give the dashboard a name and select **Duplicate**. 
    
-   ![](media/service-dashboard-copy/power-bi-name.png)
+   ![Duplicate dashboard dialog](media/service-dashboard-copy/power-bi-name.png)
 4. The new dashboard is saved in the same workspace as the original. 
    
-   ![](media/service-dashboard-copy/power-bi-copied.png)
+   ![Dashboards tab](media/service-dashboard-copy/power-bi-copied.png)
 
 5.    Open the new dashboard and edit as needed. Here are some things you might want to do next:    
     a. [Move, rename, resize or even delete tiles](service-dashboard-edit-tile.md).  

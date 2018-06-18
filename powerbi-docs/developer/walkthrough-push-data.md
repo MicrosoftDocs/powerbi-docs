@@ -1,23 +1,15 @@
 ---
 title: Push data into a dataset
 description: Push data into a Power BI dataset
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 01/05/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Push data into a Power BI dataset
@@ -35,14 +27,14 @@ Before you get started pushing data into a dataset, you need an Azure Active Dir
 The next section is a general discussion of Power BI API operations that push data.
 
 ## Power BI API operations to push data
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation along with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation. To find a dataset, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) operation to get a list of group id's.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation along with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation. To find a dataset, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation to get a list of group id's.
 
 Here are the operations to push data into a dataset:
 
-* [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-* [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-* [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
-* [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
+* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
 You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](http://json.org/).
 
@@ -117,10 +109,6 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 
 ## Next steps
 [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
-[Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
-[Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
-[Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introducing JSON](http://json.org/)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -1,22 +1,14 @@
 ---
 title: Get started with the Power BI mobile app on an iPhone
 description: Learn how the Microsoft Power BI for iOS app on the iPhone brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 05/04/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 01/25/2018
 ms.author: maggies
 
 ---
@@ -28,9 +20,9 @@ The Microsoft Power BI for iOS app on the iPhone or iPod Touch delivers the mobi
 You create Power BI reports in Power BI Desktop, and publish them:
 
 * [Publish them to the Power BI service](service-get-started.md), and create dashboards.
-* [Publish them on-premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
+* [Publish them on premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
 
-Then in the Power BI app for the iPhone, you interact with your dashboards and reports, whether on-premises or in the cloud.
+Then in the Power BI app for the iPhone, you interact with your dashboards and reports, whether on premises or in the cloud.
 
 Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -38,7 +30,7 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 [Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPhone or iPod Touch.
 
 > [!NOTE]
-> You can run the Power BI for iOS app on iPhone 5 and above, with iOS 9.0 or later. You can also run it on an iPod Touch with iOS 9.0 or later.
+> You can run the Power BI for iOS app on iPhone 5 and above, with iOS 10 or later. You can also run it on an iPod Touch with iOS 10 or later.
 > 
 > 
 
@@ -137,4 +129,5 @@ Here are some other things you can do in the iPhone app with dashboards and repo
 ### See also
 * [Get started with Power BI](service-get-started.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
 

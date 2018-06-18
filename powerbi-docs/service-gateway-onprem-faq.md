@@ -1,24 +1,17 @@
 ---
 title: On-premises data gateway FAQ
-description: This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+description: This is the On-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 
+LocalizationGroup: Gateways
 ---
 # On-premises data gateway FAQ
 <!-- Shared FAQ shared Include -->
@@ -29,7 +22,7 @@ ms.author: davidi
 **Answer:** No. This is not supported at this time.
 
 **Question:** Can I use the gateway to connect to a multidimensional (OLAP) instance.  
-**Answer:** Yes! The on-premises data gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
+**Answer:** Yes! The On-premises data gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
 
 **Question:** What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
 **Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure.
@@ -57,7 +50,7 @@ ms.author: davidi
 **Question:** Do I need to upgrade the personal gateway?
 **Answer:** No, you can keep using the personal gateway for Power BI.
 
-**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the on-premises data gateway?  
+**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the On-premises data gateway?  
 **Answer:** About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.
 
 **Question:** Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario?  
@@ -75,6 +68,6 @@ ms.author: davidi
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

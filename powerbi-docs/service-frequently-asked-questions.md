@@ -1,31 +1,24 @@
 ---
 title: Frequently asked questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 04/04/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/05/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+sktopms.date: 06/01/2018
 ms.author: maggies
 
+LocalizationGroup: Get started
 ---
 # Frequently asked questions about Power BI
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## What is Microsoft Power BI?
-[Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life.
+Power BI is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [What is Power BI](power-bi-overview.md).
 
 ## What’s the difference between Power BI and Power BI Pro?
 Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, scheduling data refresh more frequent than daily, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
@@ -36,42 +29,26 @@ Power BI Desktop are free. There is a 60-day free trial available for Power BI P
 ## What if I have questions about Power BI Premium?
 For questions related to Power BI Premium, see [Power BI Premium FAQ](service-premium-faq.md).
 
-## Are users who signed up after May 3, 2017 eligible for the Extended Pro Trial?
-Users who signed up to Power BI (free) on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.
-
-## How do I find out who in my organization is eligible for the Extended Pro Trial?
-While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization. Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
-
-> [!NOTE]
-> The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.
-> 
-> 
+## How do I find out who in my organization has a Power BI account?
+You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
 
 ## What is Power BI Desktop?
-[Power BI Desktop](https://powerbi.microsoft.com/designer) is a free desktop application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service by providing advanced data exploration, shaping, modeling, and report creation with highly interactive visualizations. You can save your work to a file, and publish your data and reports right to your Power BI site to share with others.
+Power BI Desktop is a free desktop application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service by providing advanced data exploration, shaping, modeling, and report creation with highly interactive visualizations. You can save your work to a file, and publish your data and reports right to your Power BI site to share with others. Read more about [What is Power BI Desktop](desktop-what-is-desktop.md).
 
 ## What do I need to use Power BI?
-Just a Web browser and work email address.
-
->[!NOTE]
->Work email addresses ending in .gov and .mil aren’t currently supported.
+Just a Web browser and work email address. You can sign up with a .gov and .mil email address. See [Enroll your US Government organization in the Power BI service](service-govus-signup.md) for more information 
 
 ## Why do I have to sign up with my work email?
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](service-self-service-signup-for-power-bi.md).
 
-## Which work email addresses are supported?
-Work email addresses ending in **.edu** and **.org** are supported.
-
-Those ending in **.gov** and **.mil** aren’t currently supported.
-
 ## Is government, academic and non-profit pricing available for Power BI?
-Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. Power BI is not yet available for the US Government Community Cloud (GCC).
+Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. 
 
 ## Is Power BI available on-premises?
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
 ### On-premises data gateway
-With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [on-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
 
 ### Power BI Report Server
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
@@ -138,7 +115,7 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 ## What happens if my Power BI Pro license expires?
 There is a 30-day grace period after a Power BI Pro license expires.
 
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## Does Power BI meet national, regional, and industry-specific compliance requirements?
 Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).

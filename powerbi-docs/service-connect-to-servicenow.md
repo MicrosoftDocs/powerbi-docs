@@ -1,24 +1,17 @@
 ---
 title: Connect to ServiceNow with Power BI
 description: ServiceNow for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to ServiceNow with Power BI for incident reporting
 ServiceNow offers multiple products and solutions including business, operations and IT management to improve your business. This content pack includes multiple reports and insights on your open, recently resolved and recently closed incidents.  

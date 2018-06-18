@@ -1,27 +1,18 @@
 ---
 title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 07/21/2017
-ms.author: asaxton
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 03/06/2018
+ms.author: maghan
 
 ---
-# Code snippets for migrating content from Power BI Embedded
-Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md#content-migration).
+# Code snippets for migrating content from Power BI Workspace Collection
+Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI workspace collection content to Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
 
@@ -146,7 +137,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
     }
 
     var basicCreds = new BasicCreds() { user = <sqldb_username>, pwd = <sqldb_password> };
-    var body = new SetCredsRequestBody() { credentialType = "Basic", basicCreds = basicCreds };
+    var body = new SetCredsRequestBody() { credentialType = "Basic", basicCredentials = basicCreds };
 
     var url = string.Format("https://api.powerbi.com/v1.0/myorg/gateways/{0}/datasources/{1}", <gateway_id>, <datasource_id>);
     var request = new HttpRequestMessage(new HttpMethod("PATCH"), url);

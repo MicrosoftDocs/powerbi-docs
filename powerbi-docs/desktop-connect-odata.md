@@ -1,24 +1,17 @@
 ---
 title: Connect to an OData feed in Power BI Desktop
 description: Easily connect to and use an OData feed in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
 In Power BI Desktop, you can connect to an **OData feed** and use the underlying data just like any other data source in Power BI Desktop.

@@ -1,24 +1,17 @@
 ---
 title: Office 365 dedicated customers - known issues
 description: Support for Office 365 dedicated customers - known issues. This topic describes issues specific to an Office 365 Dedicated customer. This includes limitations to the group feature as well as the iPhone app with vanity domains.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: asaxton
+ms.author: mblythe
 
+LocalizationGroup: Troubleshooting
 ---
 # Office 365 dedicated customers - known issues
 Power BI is now supported for Office 365 Dedicated customers.  If you are an O365 Dedicated customer, you can sign in with an account from that tenant and use Power BI. There are two known issues currently.

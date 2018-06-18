@@ -1,27 +1,20 @@
 ---
 title: Connect to data in Power BI Desktop
 description: Connect to data in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Connect to data in Power BI Desktop
-With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.
+With Power BI Desktop, you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.
 
 There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting the **File** ribbon, then **Get Data \> More**.
 
@@ -76,7 +69,7 @@ Of course, this is a simple model with a single data connection; most Power BI D
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
+Want to give us feedback? Great – use the **Submit an Idea** menu item in Power BI Desktop or visit [Community Feedback](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). We look forward to hearing from you!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

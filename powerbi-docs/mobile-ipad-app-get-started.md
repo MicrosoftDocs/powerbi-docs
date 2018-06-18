@@ -1,22 +1,14 @@
 ---
 title: Get started with the Power BI mobile app on an iPad
 description: Learn how the Microsoft Power BI for iOS app on the iPad brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: 08/08/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 01/25/2018
 ms.author: maggies
 
 ---
@@ -28,9 +20,9 @@ The Microsoft Power BI for iOS on the iPad delivers the mobile BI experience for
 You create Power BI reports in Power BI Desktop, and publish them:
 
 * [Publish them to the Power BI service](service-get-started.md), and create dashboards.
-* [Publish them on-premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
+* [Publish them on premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
 
-Then in the Power BI app for the iPad, you interact with your dashboards and reports, whether on-premises or in the cloud.
+Then in the Power BI app for the iPad, you interact with your dashboards and reports, whether on premises or in the cloud.
 
 Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -38,7 +30,7 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 [Download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store.
 
 > [!NOTE]
-> Your iPad needs to be running at least iOS 9.0. 
+> Your iPad needs to be running at least iOS 10. 
 > 
 > 
 
@@ -135,4 +127,5 @@ Here are some other things you can do in the iPad app with dashboards and report
 ### See also
 * [Get started with Power BI](service-get-started.md)  
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/)
+
 

@@ -1,24 +1,17 @@
 ---
 title: Power BI performance best practices
 description: This article provides guidance for building fast and reliable reports in Power BI
-services: powerbi
-documentationcenter: ''
 author: MarkMcGeeAtAquent
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: v-mamcge
 
+LocalizationGroup: Reports
 ---
 
 # Power BI Performance Best Practices 
@@ -93,8 +86,14 @@ Note that for DirectQuery and live connection, this query cache is updated on a 
 ## Understand custom visual performance 
 Be sure to put each custom visual through its paces to ensure high performance. Poorly optimized custom visuals can negatively affect the performance of the entire report. 
  
-## Deep-dive into query performance with SQL Profiler and Power BI Desktop 
-For a deeper dive into which visuals are taking up the most time and resources, you can connect SQL Profiler to Power BI Desktop to get all full view of query performance. Instructions as follows: 
+## Deep-dive into query performance with SQL Profiler and Power BI Desktop
+
+For a deeper dive into which visuals are taking up the most time and resources, you can connect SQL Profiler to Power BI Desktop to get all full view of query performance.
+
+> [!NOTE]
+> Power BI desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to connect to and perform traces for diagnostic purposes. *Making any changes to the model is not supported! Changes to the model may lead to corruption and data loss.*
+
+Instructions as follows:
   
 1. **Install SQL Server Profiler and run Power BI Desktop** 
 
@@ -127,11 +126,11 @@ Through the SQL Profiler, you can identify the queries which are taking up the l
 
 ## Gateway best practices 
 
-The on-premises data gateway is a great tool for connecting the Power BI service with your on-premises data. At the same time, with poor planning, it can also become a bottleneck for report performance. This is especially true for DirectQuery/live connection datasets, where all queries and query responses pass through the gateway. The following are some best practices for ensuring highly performant gateways: 
+The On-premises data gateway is a great tool for connecting the Power BI service with your on-premises data. At the same time, with poor planning, it can also become a bottleneck for report performance. This is especially true for DirectQuery/live connection datasets, where all queries and query responses pass through the gateway. The following are some best practices for ensuring highly performant gateways: 
  
 - **Use the Enterprise mode**, as opposed to the personal mode. 
 - **Recommended hardware specs for the gateway** – 8 CPU cores, 16 GB RAM. 
-- **Set up monitoring** – set up performance monitoring on the gateway machine understand whether the gateway is becoming overloaded and becoming a bottleneck. For more information, see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md).
+- **Set up monitoring** – set up performance monitoring on the gateway machine understand whether the gateway is becoming overloaded and becoming a bottleneck. For more information, see [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md).
 - **Scale up or scale out** – if the gateway is indeed becoming a bottleneck, then consider scaling up (that is, moving the gateway to a more powerful machine with more CPU and RAM) or scaling out (for example, splitting out datasets onto different gateways). 
 - **Separate import vs. DirectQuery** – if scaling out, consider separating the gateways responsible for import vs. those responsible for DirectQuery. 
  
@@ -140,7 +139,7 @@ Network latency can impact report performance by increasing the time required fo
 
 Tools such as [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) can provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. If network latency is an issue, you can try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines. 
 
-To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
+To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
 
 ## Next steps
 - [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy), with all-around guidance on large-scale Power BI deployments 

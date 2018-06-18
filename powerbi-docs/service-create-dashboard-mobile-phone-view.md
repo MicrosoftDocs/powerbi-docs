@@ -1,24 +1,17 @@
 ---
 title: Create a view of a Power BI dashboard for mobile phones
 description: Learn how to create a customized view of a dashboard in the Power BI service specifically for viewing on mobile phones.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 
+LocalizationGroup: Dashboards
 ---
 # Create a view of a Power BI dashboard optimized for mobile phones
 When you view dashboards in the Power BI mobile app on a phone, you notice the dashboard tiles are laid out one after another, all the same size. In the Power BI service, you can create a customized view of any dashboard that you own, specifically for phones.

@@ -1,24 +1,17 @@
 ---
 title: Add a page or duplicate a page in a report 
 description: Add a page to a Power BI report in Power BI service and Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Add a page to a Power BI report in Power BI service and Power BI Desktop
 No reason to crowd up a report page -- just add a new blank page. 

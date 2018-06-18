@@ -1,22 +1,14 @@
 ---
 title: Explore reports in the Power BI mobile apps
-description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. '
-services: powerbi
-documentationcenter: ''
+description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps.'
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/23/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 06/05/2018
 ms.author: maggies
 
 ---
@@ -47,7 +39,9 @@ Power BI reports are stored in different places in the mobile app, depending on 
   ![Phone report in landscape mode](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## View reports optimized for phones
-Power BI report authors can create a report layout specifically optimized for phones. Report pages optimized for phones have added functionality: for example, you can drill down and sort in visuals in focus mode, and you can access the [filters the report author added to the report page](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). In a list of reports, an optimized report has a special icon ![Phone report icon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Power BI report authors can create a report layout specifically optimized for phones. Report pages optimized for phones have added functionality: for example, you can drill down and sort in visuals, and you can access the [filters the report author added to the report page](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). The report opens on your phone filtered to the values being filtered in the report on the web, with a message that there are active filters on the page. You can change the filters on your phone.
+
+In a list of reports, an optimized report has a special icon ![Phone report icon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Open phone report](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -59,8 +53,8 @@ When you view that report on a phone, it opens in portrait view.
 
 Read more about [reports optimized for phone view](mobile-apps-view-phone-report.md).
 
-## Use slicers to filter a report page
-When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](power-bi-visualization-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
+## Use slicers to filter a report
+When designing a report in Power BI Desktop or the Power BI service, consider [adding slicers to a report page](power-bi-visualization-slicers.md). You and your colleagues can use the slicers to filter the page in a browser and in the mobile apps. When you view the report on a phone, you can see and interact with the slicers in landscape mode and in a page optimized for the phone's portrait mode. If you select a value in a slicer or filter in the browser, the value will be selected when you view the page in the mobile app, too. You see a message that there are active filters on the page.  
 
 * When you select a value in a slicer on the report page, it filters the other visuals on the page.
   
@@ -68,7 +62,7 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
   
   In this illustration, the slicer is filtering the column chart to show only July values.
 
-## Cross-filter and highlight a Power BI report page
+## Cross-filter and highlight a report
 When you select a value in a visual, it doesn't filter the other visuals. It highlights the related values in the other visuals.
 
 * Tap a value in a visual.
@@ -83,25 +77,30 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
    ![Sort a visual](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
-## Drill down and up in a visual on an iPad or a tablet
-If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
+## Drill down and up in a visual
+If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
 
-> [!NOTE]
-> Currently, drill-down doesn't work on maps in the iPad or tablet.
-> 
-> 
+* Tap a data point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
+  
+  ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Tap a visual. If it has up and down arrows in the upper corners ![Drill up, down icons](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
+* To drill back up, tap the up arrow in the tooltip.
   
-  ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* To drill back up, tap the up arrow in the upper-left corner.
-  
-  ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Drill up](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-## Go back to My Workspace
-* Tap the arrow next to the report name > tap **My Workspace**.
-  
-  ![Go back up](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
+* You can also drill down in all the data points in a visual. Open it in focus mode, tap Explore icon, then choose the show all the next level, or expand to show the current and the next level.
+
+   ![Power BI drill down all](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
+
+## Drill through from one page to another
+
+With *drillthrough*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. In the following example, when you tap the value in the gauge, you can choose between drilling through to **spent by business area** or **planning by business area**.
+
+![Power BI mobile drill through report](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+When you drill through, the back button takes you back to the previous report page.
+
+Read about how to [add drill-through in Power BI Desktop](desktop-drillthrough.md).
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)

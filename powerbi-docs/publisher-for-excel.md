@@ -1,24 +1,17 @@
 ---
 title: Power BI publisher for Excel
 description: Learn how to use the Power BI publisher for Excel
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Dashboards
 ---
 # Power BI publisher for Excel
 With Microsoft **Power BI publisher for Excel**, you can take snapshots of your most important insights in Excel, like PivotTables, charts, and ranges and pin them to dashboards in Power BI.

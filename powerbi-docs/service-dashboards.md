@@ -1,30 +1,23 @@
 ---
 title: what is a Power BI dashboard?
 description: Dashboards are a key feature of Power BI service.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 04/05/2017
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/18/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Dashboards in Power BI service
 
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
-![](media/service-dashboards/power-bi-dashboard2.png)
+![dashboard](media/service-dashboards/power-bi-dashboard2.png)
 
 The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](service-basic-concepts.md).
 
@@ -35,7 +28,7 @@ The visualizations you see on the dashboard are called *tiles* and are *pinned* 
 
 The visualizations on a dashboard come from reports and each report is based on one dataset. In fact, one way to think of a dashboard is as an entryway into the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that was used to create it.
 
-![](media/service-dashboards/power-bi-diagram.png)
+![diagram showing relationship between dashboards, reports, datasets](media/service-dashboards/power-bi-diagram.png)
 
 ## Advantages of dashboards
 Dashboards are a wonderful way to monitor your business, to look for answers, and to see all of your most-important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud-born data, providing a consolidated view regardless of where the data lives.

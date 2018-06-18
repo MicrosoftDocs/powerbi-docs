@@ -1,25 +1,18 @@
 ---
-title: Tips and Tricks for Map visualizations including integration with Bing Maps
+title: Tips and Tricks for maps (including Bing Maps integration)
 description: 'Tips and Tricks for Power BI Map visualizations, visuals, locations, longitude and latitude, and how they work with Bing Maps. '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
-qualityfocus: monitoring
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/18/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Tips and Tricks for Power BI Map visualizations
 Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries can't create the map visualization on its own, it enlists the help of Bing Maps. 

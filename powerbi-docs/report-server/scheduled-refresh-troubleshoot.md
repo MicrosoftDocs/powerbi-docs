@@ -1,21 +1,13 @@
 ---
 title: Troubleshoot scheduled refresh in Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with scheduled refresh in Power BI Report Server.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
 
@@ -57,7 +49,6 @@ The following settings can be used to affect scheduled refresh. Settings set wit
 
 | Setting | Description |
 | --- | --- |
-| EnablePowerBIReportEmbeddedModels |Enables or disables the ability to use imported data within your reports. Valid values are True or False. |
 | MaxFileSizeMb |Maximum file size for uploaded reports. Default is 1000 MB (1 GB). Maximum value is 2000 MB (2 GB). |
 | ModelCleanupCycleMinutes |Defines how often the model is checked to evict it from memory. Default is 15 minutes. |
 | ModelExpirationMinutes |Defines how long until the model expires based on the last time used and is evicted. Default is 60 minutes. |

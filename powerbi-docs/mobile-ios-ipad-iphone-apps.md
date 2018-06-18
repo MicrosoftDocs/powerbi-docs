@@ -1,21 +1,13 @@
 ---
 title: Explore your data on the Power BI mobile app for iOS devices
 description: View and engage with your Power BI dashboards and reports, and Reporting Services mobile reports and KPIs, on your iPad, iPhone, Apple Watch, and iPod Touch.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
 

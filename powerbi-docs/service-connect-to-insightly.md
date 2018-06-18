@@ -1,24 +1,17 @@
 ---
 title: Connect to Insightly with Power BI
 description: Insightly for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Insightly with Power BI
 Visualize and share your Insightly CRM data in Power BI with the Insightly content pack. Connect to Power BI using your Insightly API key to view and build reports and dashboards from your CRM data. With Power BI, you can analyze your data in new ways, create powerful graphs and charts, and display contacts, leads, and organizations on a map.

@@ -1,28 +1,21 @@
 ---
 title: 'Organizational content packs: Access and copy'
 description: Read about creating copies of and troubleshooting access to organizational content packs in Power BI
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/08/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Organizational content packs: Copy, refresh, and get access
 > [!NOTE]
-> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](service-install-use-apps.md).
+> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We plan to deprecate organizational content packs soon, so we recommend using apps instead. Learn [more about apps](service-install-use-apps.md).
 > 
 > 
 

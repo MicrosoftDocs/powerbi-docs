@@ -1,24 +1,17 @@
 ---
 title: Frequently Asked Questions for Power BI for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # Frequently Asked Questions for Power BI for Germany Cloud customers
 The **Power BI service** has a version available for European Union/European Free Trade Agreement (EU/EFTA) customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to EU/EFTA customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to government customers.
@@ -39,7 +32,7 @@ The following questions and answers provide important information for Power BI P
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
-5. **Can I use Power BI Desktop, Power BI Mobile, on-premises data gateway and Publisher for Excel with the Power BI service for Germany cloud?**
+5. **Can I use Power BI Desktop, Power BI Mobile, On-premises data gateway and Publisher for Excel with the Power BI service for Germany cloud?**
    
    Yes. We've updated our Power BI client products to seamlessly work with the Power BI service for Germany cloud. Please login with your Power BI service for Germany cloud account to start using the same client products with Power BI service for Germany cloud. You can download the latest version of client products from the following locations:
    
@@ -74,7 +67,7 @@ The following questions and answers provide important information for Power BI P
 ### Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
 * [Getting started with Power BI Desktop](desktop-getting-started.md)
 

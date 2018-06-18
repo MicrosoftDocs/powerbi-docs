@@ -1,24 +1,17 @@
 ---
 title: Connect to Salesforce with Power BI
 description: Salesforce for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/16/2017
-ms.author: yshoukry
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/30/2018
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Salesforce with Power BI
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
@@ -68,14 +61,21 @@ You can change this dashboard to display your data any way you want. You can ask
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System requirements
-* Connected with a production Salesforce account that has API access enabled
-* Permission granted to the Power BI app during log-in
-* The account has sufficient API calls available to pull and refresh the data
-* A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application
+## System requirements and considerations
+- Connected with a production Salesforce account that has API access enabled
+- Permission granted to the Power BI app during log-in
+- The account has sufficient API calls available to pull and refresh the data
+- A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application
+- The Salesforce Reports API has a restriction that supports up to 2,000 rows of data.
+
 
 ## Troubleshooting
-If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
+If you encounter any errors, please review the requirements above. Also note the ability to log in to a custom or sandbox domain is not currently supported.
+
+### "Unable to connect to the remote server" message
+
+If you get a message "Unable to connect to the remote server" when trying to connect to your Salesforce account, see this solution on the Outsystems forum: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+
 
 ## Next steps
 [Get Started with Power BI](service-get-started.md)

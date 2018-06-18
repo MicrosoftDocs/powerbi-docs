@@ -1,23 +1,15 @@
 ---
 title: Integrate a Power BI tile into an app for your organization
 description: Walkthrough to integrate a tile into an app, sample code
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/19/2017
-ms.author: asaxton
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 02/13/2018
+ms.author: maghan
 
 ---
 # Integrate a tile into an app (user owns data)
@@ -32,7 +24,7 @@ To get started with this walkthrough, you need a **Power BI** account. If you do
 > 
 > 
 
-To integrate a tile into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a tile. Then, you load the tile using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a tile into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a tile. Then, you load the tile using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
 This article shows the code used in the [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
@@ -48,12 +40,12 @@ If you downloaded the [integrate-tile-web-app](https://github.com/Microsoft/Powe
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ## Step 3 - get a tile
-To get a **Power BI** tile, you use the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation which gets a list of **Power BI** tiles from a given dashboard. From the list of tiles, you can get a tile id and embed URL.
+To get a **Power BI** tile, you use the [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) operation which gets a list of **Power BI** tiles from a given dashboard. From the list of tiles, you can get a tile id and embed URL.
 
 A dashboard ID will need to be retrieved first before you can get the tile. For information on how to retrieve a dashbaord, see [Integrate a dashboard into an app (user owns data)](integrate-dashboard.md).
 
 ### Get tiles using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation. The [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation returns a list of tiles. You can get a single tile from the list of tiles. Below is a complete C# method to get a tile. 
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) operation. The [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) operation returns a list of tiles. You can get a single tile from the list of tiles. Below is a complete C# method to get a tile. 
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
@@ -107,7 +99,7 @@ public class PBITile
 ```
 
 #### Get tiles using the .NET SDK
-You can use the .NET SDK to retrieve a list of dashbaords instead of calling the REST API directly.
+You can use the .NET SDK to retrieve a list of dashboards instead of calling the REST API directly.
 
 ```
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -220,7 +212,7 @@ If you downloaded and ran the [integrate-tile-web-app](https://github.com/Micros
 ![Embedded tile in web application](media/integrate-tile/powerbi-embedded-tile.png)
 
 ## Working with groups (app workspaces)
-For embedding a tile from a group (app workspace), you will want to get the list of all available tiles within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx). You will need to have permission in the group for the request to return results.
+For embedding a tile from a group (app workspace), you will want to get the list of all available tiles within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). You will need to have permission in the group for the request to return results.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards/{dashboard_id}/tiles

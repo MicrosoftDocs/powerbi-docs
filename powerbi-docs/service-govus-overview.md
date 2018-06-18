@@ -1,24 +1,17 @@
 ---
 title: Power BI for United States Government customers - Overview
 description: For U.S. Government customers, learn about the features and limitations for the Power BI US Government service
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/23/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/05/2018
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # Power BI for US Government customers
 The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
@@ -57,9 +50,12 @@ In the public cloud the IP spaces are available, but for the government cloud, y
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
+* **Embed in SharePoint Online** - it is not possible to embed content in SharePoint Online using the Power BI web part.
 * **Power BI US Government** is only available as a **Pro** license. Any references to Power BI (Free) licenses in an admin portal (or as users) are running in a commercial Power BI service cloud.
-* **Auditing** - auditing is not available through the Office 365 Security and Compliance portal.
+* **Auditing** - auditing is now available through the Office 365 Security and Compliance portal, as of June 2018.
 * **Power BI content in Cortana** - Power BI results will not show up in Cortana search results, which includes results for your Power BI content (dashboards, reports, apps) as well as results that show Cortana-optimized report pages for specific keywords.
+* **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant.
+* **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
@@ -93,12 +89,17 @@ The following questions (and answers) are provided to help you quickly get infor
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
+**Question:** My account is provisioned in more than one sovereign cloud. When using **Power BI Desktop**, how do I select which which cloud to connect to?
+
+**Answer:** Beginning with the July 2018 release of **Power BI Desktop**, you can choose which cloud you want to use when signing in to **Power BI Desktop**.
+
+
 ## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
 * [Getting started with Power BI Desktop](desktop-getting-started.md)
 

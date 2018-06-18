@@ -1,148 +1,132 @@
 ---
 title: 'Tutorial: Create calculated columns in Power BI Desktop'
 description: 'Tutorial: Create calculated columns in Power BI Desktop'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: davidi
 
+LocalizationGroup: Learn more
 ---
 # Tutorial: Create calculated columns in Power BI Desktop
-Sometimes the data you’re analyzing just doesn’t contain a particular field you need to get the results you’re after. This is where calculated columns come in. Calculated columns use Data Analysis Expressions (DAX) formulas to define a column’s values. Those values can be just about anything, whether it be putting together text values from a couple of different columns elsewhere in the model, or calculating a numeric value from other values. For example, let’s say your data has a City and State columns (as fields in the Fields list), but you want a single Location field that has both as a single value, like Miami, FL. This is precisely what calculated columns are for.
 
-Calculated columns are similar to measures in that both are based on a DAX formula, but they differ in how they are used. Measures are most often used in the Values area of a visualization, to calculate results based on other fields you have on a row in a table, or in an Axis, Legend, or Group area of a visualization. Calculated columns on the other hand are used when you want the column’s results on that row in the table, or in the Axis, Legend, or Group area.
+Sometimes the data you’re analyzing doesn’t contain a particular field you need to get the results you’re after. This is where *calculated columns* come in. Calculated columns use Data Analysis Expressions (DAX) formulas to define a column’s values, anything from putting together text values from a couple of different columns to calculating a numeric value from other values. For example, let’s say your data has **City** and **State** fields, but you want a single **Location** field that has both, like "Miami, FL". This is precisely what calculated columns are for.
 
-This tutorial will guide you through understanding and creating some of your own calculated columns in Power BI Desktop. It’s intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Query to import data, working with multiple related tables, and adding fields to the Report Canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
+Calculated columns are similar to [measures](desktop-tutorial-create-measures.md) in that both are based on DAX formulas, but they differ in how they are used. You often use measures in a visualization's **Values** area, to calculate results based on other fields. You use calculated columns as new **Fields** in the rows, axes, legends, and group areas of visualizations.
 
-To complete the steps in this tutorial, you’ll need to download the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file. This is the same sample file used for the [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) tutorial. It already includes sales data from the fictitious company, Contoso, Inc. Because data in the file was imported from a database, you won’t be able to connect to the datasource or view it in Query Editor. When you have the file on your own computer, go ahead and open it in Power BI Desktop.
+This tutorial will guide you through understanding and creating some calculated columns and using them in report visualizations in Power BI Desktop. 
 
-## Let’s create a calculated column
-Let’s say we want to display product categories together with product subcategories in a single value on rows, like Cell phones – Accessories, Cell phones – Smart phones & PDAs, and so on. In Report View or Data View (we're using Report View here), If we look at our product tables in the Fields list, we see there’s no field that gives is what we want. We do, however, have a ProductCategory field and a ProductSubcategory field, each in their own tables.
+### Prerequisites
+- This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already know how to use **Get Data** and the **Power Query Editor** to import data, work with multiple related tables, and add fields to the Report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
+  
+- The tutorial uses the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), the same sample used for the [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) tutorial. This sales data from the fictitious company Contoso, Inc. was imported from a database, so you won’t be able to connect to the data source or view it in the Power Query Editor. Download and extract the file on your own computer, and then open it in Power BI Desktop.
 
- ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_nonewcol.png)
+## Create a calculated column with values from related tables
 
-We’ll create a new calculated column to combine values from these two column into new values for our new column. Interestingly enough, we need to combine data from two different tables into a single column. Because we’re going to use DAX to create our new column, we can leverage the full power of the model we already have, including the relationships between different tables that already exist.
+In your Sales Report, you want to display product categories and subcategories as single values, like "Cell phones – Accessories", "Cell phones – Smartphones & PDAs", and so on. There's no field in the **Fields** list that gives you that data, but there is a **ProductCategory** field and a **ProductSubcategory** field, each in its own table. You can create a calculated column that combines values from these two columns. DAX formulas can leverage the full power of the model you already have, including relationships between different tables that already exist. 
 
-### To create a ProductFullCategory column
-1.  Right click, or click the down arrow on the **ProductSubcategory** table in the Fields list, and then click **New Column**. This will make sure our new column is added to the ProductSubcategory table.
+ ![Columns in Fields list](media/desktop-tutorial-create-calculated-columns/create1.png)
+
+1.  Select the **More options** ellipsis (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumn.png)
+    ![New Column](media/desktop-tutorial-create-calculated-columns/create2.png)
     
-    The formula bar appears along the top of the Report canvas or Data grid. This is where we can rename our column and enter a DAX formula.
+    The formula bar appears along the top of the Report canvas, ready for you to name your column and enter a DAX formula.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumnformula.png)
+    ![Formula bar](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-    By default a new calculated column is simply named Column. If we don’t rename it, when we create another, it will be named Column 2, Column 3, and so on. We want our columns to be more identifiable, so we’ll give our new column a new name.
+2.  By default, a new calculated column is simply named Column. If you don’t rename it, additional new columns will named Column 2, Column 3, and so on. You want your column to be more identifiable, so since the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
     
-2.  Since the **Column** name is already highlighted in the formula bar, just type **ProductFullCategory**.
+3.  You want the values in your new column to start with the ProductCategory name. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
     
-    Now we can begin entering our formula. We want the values in our new column to start with the ProductCategory name from the ProductCategory table. Because this column is in a different, but related table, we’re going to use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help us get it.
+    After the equals sign, type **r**. A dropdown suggestion list shows all of the DAX functions beginning with the letter R. Selecting each function shows a description of its effect. As you type, the suggestion list scales closer to the function you need. Select **RELATED**, and then press **Enter**.
     
-3.  After the equals sign, type **R**. You’ll see a dropdown suggestion list appear with all of the DAX functions beginning with the letter R. The more we type, the more the suggestion list is scaled closer to the function we need. Next to the function you’ll see a description of the function. Select **RELATED** by scrolling down, and then pressing Enter.
+    ![Choose RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_1.png)
+    An opening parenthesis appears, along with another suggestion list of the related columns you can pass to the RELATED function, with descriptions and details on expected parameters. 
     
-    An opening parenthesis appears along with another suggestion list of all of the available columns we can pass to the RELATED function. A description and details on what parameters are expected is also shown.
+    ![Choose ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_2.png)
-    
-    An expression always appears between an opening and closing parenthesis. In this case, our expression is going to contain a single argument passed to the RELATED function; a related column to return values from. The list of columns is automatically narrowed down to show only the columns that are related. In this case, we want the ProductCategory column in the ProductCategory table.
-    
-    Select **ProductCategory[ProductCategory]**, and then type a closing parenthesis.
+4.  You want the **ProductCategory** column from the **ProductCategory** table. Select **ProductCategory[ProductCategory]**, press **Enter**, and then type a closing parenthesis.
     
     > [!TIP]
-    > Syntax errors are most often caused by a missing or misplaced closing parenthesis. But often Power BI Desktop will add it if you forget.
-    > 
-    > 
+    > Syntax errors are most often caused by a missing or misplaced closing parenthesis, although sometimes Power BI Desktop will add it for you.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_3.png)
+4. You want dashes and spaces to separate the ProductCategories and ProductSubcategories in the new values, so after the closing parenthesis of the first expression, type a space, ampersand (**&**), double-quote (**"**), space, dash (**-**), another space, another double-quote, and another ampersand. Your formula should now look like this:
     
-4. We want to add a dash symbol to separate each value, so after the closing parenthesis of the first expression, type a space, ampersand (&), quote, space, dash (-), another space, a closing quote, and then another ampersand. Your formula should now look like this:
-    
-    **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &**
+    `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
-    > Click the down chevron on the right side of the formula bar to expand the formula editor. Click Alt & Enter to move down a line, and Tab to move things over.
-    > 
-    > 
+    > If you need more room, select the down chevron on the right side of the formula bar to expand the formula editor. In the editor, press **Alt + Enter** to move down a line, and **Tab** to move things over.
     
-5.  Finally, enter another opening bracket and then select the **[ProductSubcategory]** column to finish the formula. Your formula should look like this:
+5.  Enter an opening bracket (**[**), and then select the **[ProductSubcategory]** column to finish the formula. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_5.png)
+    ![Choose ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
-    You’ll notice we didn’t use another RELATED function in the second expression calling the ProductSubcategory column. This is because this column is already in the same table we’re creating our new column in. We can enter [ProductCategory] with the table name (fully qualified) or without (non-qualified).
+    You didn’t need to use another RELATED function to call the ProductSubcategory table in the second expression, because you are creating the calculated column in this table. You can enter [ProductSubcategory] with the table name prefix (fully-qualified) or without (non-qualified).
     
-6.  Complete the formula by pressing Enter or clicking on the checkmark in the formula bar. The formula is validated and added to the field list in the **ProductSubcategory** table.
+6.  Complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the **ProductFullCategory** column name appears in the **ProductSubcategory** table in the Fields list. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_6.png)
+    ![Finished ProductFullCategory column](media/desktop-tutorial-create-calculated-columns/create7.png)
     
-    You’ll notice calculated columns get a special icon in the field list. This shows they contain a formula. They’ll only appear like this in Power BI Desktop. In the PowerBI service (your Power BI site), there’s no way to change a formula, so a calculated column field doesn’t have an icon.
+    >[!NOTE]
+    >In Power BI Desktop, calculated columns get a special icon in the field list, showing that they contain formulas. In the Power BI service (your Power BI site), there’s no way to change formulas, so calculated columns don't have icons.
     
-## Let’s add our new column to a report
-Now we can add our new ProductFullCategory column to the report canvas. Let’s look at SalesAmount by ProductFullCategory.
+## Use your new column in a report
 
-Drag the **ProductFullCategory** column from the **ProductSubcategory** table onto the Report canvas, and then drag the **SalesAmount** field from the **Sales** table into the chart.
+Now you can use your new ProductFullCategory column to look at SalesAmount by ProductFullCategory.
 
-![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_report_1.png)
+1. Select or drag the **ProductFullCategory** column from the **ProductSubcategory** table onto the Report canvas to create a table showing all ProductFullCategory names.
+   
+   ![ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis1.png)
+    
+2. Select or drag the **SalesAmount** field from the **Sales** table into the table to show the Sales Amount for each Product Full Category.
+   
+   ![SalesAmount by ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis2.png)
+    
+## Create a calculated column that uses an IF function
 
-## Let’s create another
-Now that you know how to create a calculated column, let’s create another.
+The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that Active store sales are clearly separated from Inactive store sales in your report by creating an Active StoreName field. In the new Active StoreName calculated column, each Active store will appear with the store's full name, while inactive stores will be grouped together under "Inactive". 
 
-The Contoso Sales Sample for Power BI Desktop model contains sales data for both active and inactive stores. We want to make it really clear that data shown for inactive stores is identified as such. In-effect, we want a field named Active StoreName. To do this, we’ll create another column. In this case, when a store is inactive, we want our new Active StoreName column (as a field) to show the store’s name as “Inactive”, but show the store’s real name when it’s an active store.
+Fortunately, the Stores table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new Active StoreName column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's Status and return a particular value depending on the result. If a store's Status is "On", the formula will return the store's name. If it’s "Off", the formula will assign an Active StoreName of "Inactive". 
 
-Fortunately, our Stores table has a column named Status, with a value of On for active stores, and Off for inactive stores. We can test values for each row in the Status column to create new values in our new column.
 
-### To create an Active StoreName column
-1.  Create a new calculated column named **Active StoreName** in the **Stores** table.
+1.  Create a new calculated column in the **Stores** table and name it **Active StoreName** in the formula bar.
     
-    For this column, our DAX formula is going to check each stores status. If a stores status is On, our formula will return the stores name. If it’s Off, it will have the name, “Inactive”. To do this, we’ll use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test the stores status and return a particular value if the result is true or false.
+2.  After the **=** sign, begin typing **IF**. The suggestion list will show what you can add. Select **IF**.
     
-2.  Begin typing **IF**. The suggestion list will show what we can add. Select **IF**.
+    ![Select IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_1.png)
+3.  The first argument for IF is a logical test of whether a store's Status is "On". Type an opening bracket **[** , which lists columns from the Stores table, and select **[Status]**.
     
-    The first argument for IF is a logical test. We want to test whether or not a store has a status of “On”.
+    ![Select Status](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-3.  Type an opening bracket **[** , which allows us to select columns from the Stores table. Select **[Status]**.
+4.  Right after **[Status]**, type **="On"**, and then type a comma (**,**) to end the argument. The tooltip suggests that you now need to add a value to return when the result is TRUE.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_2.png)
+    ![Add TRUE value](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-4.  Right after **[Status]**, type **="On"**,  then enter a comma (**,**) to enter the second argument. The tooltip suggests we need to add the value for when the result is true.
+5.  If the store's status is "On", you want to show the store’s name. Type an opening bracket (**[**) and select the **[StoreName]** column, and then type another comma. The tooltip now indicates that you need to add a value to return when the result is FALSE. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_3.png)
+    ![Add FALSE value](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-5.  If the store is On, we want to show the store’s name. Type an opening bracket **[** and select the **[StoreName]** column, and then type another comma so we can enter our third argument.
+6.  You want the value to be *Inactive*, so type **"Inactive"**, and then complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the new column's name appears in the **Stores** table in the Fields list.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step5.png)
+    ![Active StoreName column](media/desktop-tutorial-create-calculated-columns/if5.png)
     
-6.  We need to add a value for when the result is false, in this case we want the value to be **“Inactive”**.
+8.  You can use your new Active StoreName column in visualizations just like any other field. To show SalesAmounts by Active StoreName, select the **Active StoreName** field or drag it onto the canvas, and then select the **SalesAmount** field or drag it into the table. In this table, active stores appear individually by name, but inactive stores are grouped together at the end as *Inactive*. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step6.png)
+    ![SalesAmount by Active StoreName table](media/desktop-tutorial-create-calculated-columns/if6.png)
     
-7.  Complete the formula by pressing Enter or clicking on the checkmark in the formula bar. The formula is validated and added to the field list in the Stores table.
-    
-    Just like any other field, we can use our new Active StoreName column in visualizations. In this chart, stores with a status of On are shown individually by name, but stores with a status of Off are grouped together and shown as Inactive. 
-    
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_viz.png)
-    
-## What we’ve learned
-Calculated columns can enrich our data, providing easier insights. We've learned how to create calculated columns by using the formula bar, how to use the suggestions list, and how to best name our new columns.
+## What you've learned
+Calculated columns can enrich your data and provide easier insights. You've learned how to create calculated columns in the field list and formula bar, use suggestion lists and tooltips to help construct your formulas, call DAX functions like RELATED and IF with the appropriate arguments, and use your calculated columns in report visualizations.
 
 ## Next steps
-If you want to take a deeper dive into DAX formulas, and create calculated columns with more advanced DAX formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
+If you want to take a deeper dive into DAX formulas and create calculated columns with more advanced formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
 

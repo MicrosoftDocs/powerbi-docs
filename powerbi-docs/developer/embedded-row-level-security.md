@@ -1,23 +1,14 @@
 ---
 title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
-ms.author: asaxton
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 02/22/2018
+ms.author: maghan
 
 ---
 # Use row-level security with Power BI embedded content
@@ -80,9 +71,9 @@ Applying the filter, the way we did here, will filter down all records in the **
 ## Applying user and role to an embed token
 Now that you have your Power BI Desktop roles configured, there is some work needed in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
-The [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
+The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
 
 * **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
@@ -131,20 +122,60 @@ The effective identity that is provided for the username property must be a Wind
 
 **On-premises data gateway configuration**
 
-An [on-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 **Use of roles**
 
 Roles can be provded with the identity in an embed token. If no role is provided, the username that was provided will be used to resolve the associated roles.
 
+**Using the CustomData feature**
+
+The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
+You can use this as an alternative way to customize data consumption.
+You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
+CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
+
+> [!NOTE]
+> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
+>
+>
+
+**CustomData SDK Additions**
+
+CustomData string property was added to our effective identity in the token generation scenario.
+        
+        [JsonProperty(PropertyName = "customData")]
+        public string CustomData { get; set; }
+
+The identity can be created with custom data using the following call:
+
+        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+
+**CustomData SDK Usage**
+
+If you are calling the REST API, you can add custom data inside each identity, e.g.:
+
+```
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "EffectiveIdentity",
+            "roles": [ "Role1", "Role2" ],
+            "customData": "MyCustomData",
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+```
+
 ## Considerations and limitations
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
 * Analysis Services live connections are supported for on-premises servers.
-* Azure Analysis Services live connections support filtering by roles, but not dynamic by username.
+* Azure Analysis Services live connections support filtering by roles, but not dynamic by username. Dynamic filtering can be done using CustomData.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment will not occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

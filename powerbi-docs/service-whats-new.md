@@ -1,36 +1,62 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: sirsu
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: 
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 09/01/2017
-ms.author: sirsu
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/09/2018
+ms.author: nikhilga
 
+LocalizationGroup: Get started
+---
 ---
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
-* [What's new in Power BI Desktop](desktop-latest-update.md)  
-* [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
-* [Power BI team blog](https://powerbi.microsoft.com/blog/)
+- [What's new in Power BI Desktop](desktop-latest-update.md)  
+- [What's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+- [Power BI team blog](https://powerbi.microsoft.com/blog/)
+- [Business Applications Spring ‘18 release notes](http://aka.ms/businessappsreleasenotes) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
 
 You can also check out the YouTube channels for information about "What's new" and features.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
+
+## April 2018
+* [Power BI GDPR Whitepaper](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* Power BI Service [audit logs](https://docs.microsoft.com/power-bi/service-admin-auditing) turned-on by default for Office 365 tenant.
+
+## Previous months (2018)
+### March 2018
+* [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI Service.
+* Share content with users using their personal e-mail accounts. Extension of [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
+
+### February 2018
+* Automatically install [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) for end users.
+* P4 and P5 capacities on Power BI Premium
+* Preview of [Organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization).
+
+### January 2018
+*	Share and favorite Power BI reports.
+*	OAuth2 and DirectQuery Single Sign-on Support (SSO) for Azure SQL Database and Data Warehouse.
+*	In-region auditing: audit logs will now be stored in the same Office 365 region as their tenant.
+*	GA of SharePoint Online [Power BI report web part](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*	Admin control to turn off viewing custom visuals for all users in a tenant.
+*	Scheduled refresh support for Azure Analysis Services (AAS).
+
+## Previous months (2017)
+## October and November 2017
+*	Selective publish of content with [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+*	External user distribution with [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+* AI-powered app recommendations.
+* Dashboard on-tile UI updates.
+* E-mail subscriptions support for apps. 
+* Granular admin control for [publish to web](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## September 2017
 * Share dashboards to free users with Premium.
@@ -39,18 +65,17 @@ You can also check out the YouTube channels for information about "What's new" a
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
 * Improved load performance for [usage metrics](service-usage-metrics.md).
 
-## Previous months (2017)
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Get started with [Power BI service](service-connect-to-services.md) apps for online services.
-* Connect to IBM Netezza with the on-premises data gateway through both import and DirectQuery connectivity modes.
+* Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
 * [Dynamic RLS](developer/embedded-row-level-security.md) now supported for Power BI Embedded.
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.
 
 ### July 2017
 * Support for [email subscriptions](service-report-subscribe.md) on dashboards.
 * Inspect and diagnose why the loading time is poor for dashboards using the Performance Inspector.
-* Snowflake and SAP BusinessWarehouse DirectQuery now supported for on-premises data gateway.
+* Snowflake and SAP BusinessWarehouse DirectQuery now supported for On-premises data gateway.
 * New [APIs to manage data refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) in Power BI service.
 
 ### June 2017
@@ -62,7 +87,7 @@ You can also check out the YouTube channels for information about "What's new" a
 
 ### April and May 2017
 * Measure and magnify your impact with [usage metrics for dashboard and report creators](service-usage-metrics.md).
-* Connect to PostgreSQL with the on-premises data gateway.
+* Connect to PostgreSQL with the On-premises data gateway.
 * Power BI SharePoint Web Part made available for all users.
 * Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Navigate to reports with multiple URL filter parameters.
@@ -590,7 +615,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 13, 2015**
 
-* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](service-connect-to-azure-sql-database-auditing.md).
+* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard. This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](service-connect-to-azure-sql-database-auditing.md).
 * You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](service-azure-sql-database-with-direct-connect.md) for more information.
 
 **May 7, 2015**
@@ -613,9 +638,9 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **March 31, 2015**
 
-* **GitHub **dashboards have new visuals that focus on community building, improved calculations, and improved layout
-* **SendGrid **dashboards have new visuals and a new layout to help you find better insights
-* You can now use** treemaps in Q&A** by using the phrase 'as treemap' at the end of your query
+* **GitHub** dashboards have new visuals that focus on community building, improved calculations, and improved layout
+* **SendGrid** dashboards have new visuals and a new layout to help you find better insights
+* You can now use **treemaps in Q&A** by using the phrase 'as treemap' at the end of your query
 * You can now **pin treemaps** from Q&A and reports 
 * Lots of bug fixes!
 

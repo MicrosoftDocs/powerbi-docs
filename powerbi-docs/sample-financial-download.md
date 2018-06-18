@@ -1,24 +1,17 @@
 ---
 title: Download the Financial Sample workbook for Power BI
 description: Download the Financial Sample workbook for Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/28/2017
+ms.component: powerbi-desktop
+ms.topic: sample
+ms.date: 05/21/2018
 ms.author: amac
 
+LocalizationGroup: Samples
 ---
 # Download the Financial Sample workbook for Power BI
 Need some data to try with Power BI service? We have a simple Excel workbook of sample financial data available for download.  Here's how to download it:

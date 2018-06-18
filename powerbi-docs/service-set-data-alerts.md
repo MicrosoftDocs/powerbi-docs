@@ -1,34 +1,27 @@
 ---
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 02/28/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Data alerts in Power BI service
 Set alerts to notify you when data in your dashboards changes beyond limits you set. 
 
-Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
+You can set alerts on tiles if you have a Power BI Pro license, or if a dashboard has been shared with you from a [Premium capacity](service-premium.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
 
 Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](service-flow-integration.md).
 
-![](media/service-set-data-alerts/powerbi-alert-types-new.png)
+![tiles](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
@@ -44,15 +37,15 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
 1. Start on a dashboard. From a dashboard gauge, KPI, or card tile, select the ellipses.
    
-   ![](media/service-set-data-alerts/powerbi-card.png)
-2. Select the bell icon ![](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total stores**.
+   ![Total Stores tile](media/service-set-data-alerts/powerbi-card.png)
+2. Select the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total stores**.
    
 1. To start, select **+ Add alert rule**, ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
    
-   ![](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![Manage alerts window](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our Notification center. And we'll have Power BI send us an email as well.
    
-   ![](media/service-set-data-alerts/power-bi-set-alert-details.png)
+   ![Manage alerts window, set Threshold](media/service-set-data-alerts/power-bi-set-alert-details.png)
 5. Select **Save**.
 
 ## Receiving alerts
@@ -62,13 +55,13 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
 
 1. If you've set the alert to send you an email, you'll find something like this in your Inbox.
    
-   ![](media/service-set-data-alerts/powerbi-alerts-email.png)
+   ![Alert email](media/service-set-data-alerts/powerbi-alerts-email.png)
 2. Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
    
-   ![](media/service-set-data-alerts/powerbi-alert-notifications.png)
+   ![Notification icon in Power BI service](media/service-set-data-alerts/powerbi-alert-notifications.png)
 3. Open your Notification center to see the alert details.
    
-    ![](media/service-set-data-alerts/powerbi-alert-notfication.png)
+    ![read the Alert](media/service-set-data-alerts/powerbi-alert-notfication.png)
    
    > [!NOTE]
    > Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
@@ -79,23 +72,23 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
 There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
-1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
+1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts.png).
+    ![Manage alerts window](media/service-set-data-alerts/powerbi-see-alerts.png).
 2. To modify an alert, select the arrow to the left of the alert name.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
+    ![arrow next to Alert name](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
 3. To delete an alert, select the trashcan to the right of the alert name.
    
-      ![](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
+      ![trashcan icon selected](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
 
 ### From the Power BI settings menu
 1. Select the gear icon from the Power BI menubar.
    
-    ![](media/service-set-data-alerts/powerbi-gear-icon.png).
+    ![gear icon](media/service-set-data-alerts/powerbi-gear-icon.png).
 2. Under **Settings** select **Alerts**.
    
-    ![](media/service-set-data-alerts/powerbi-alert-settings.png)
+    ![Alerts tab of Settings window](media/service-set-data-alerts/powerbi-alert-settings.png)
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
 ## Tips and troubleshooting

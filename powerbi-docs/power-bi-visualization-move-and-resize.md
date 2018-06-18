@@ -1,24 +1,17 @@
 ---
 title: Move, resize, and pop out a visualization
 description: Move and resize a visualization in a report in Power BI service and Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/23/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
 # Move and resize a visualization in a report in Power BI service and Power BI Desktop
 Only report creators and owners can move and resize visualizations. In Power BI service (app.powerbi.com) this means opening the report in [Editing view](service-reading-view-and-editing-view.md).
@@ -39,9 +32,5 @@ In Power BI, open a report that has at least one visualization, or [create a new
 
 ## Next steps
 [Resize a visualization on a dashboard](service-dashboard-edit-tile.md)  
-
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)  
-
-[Power BI - Basic Concepts](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -1,24 +1,17 @@
 ---
 title: Use OneDrive for Business links in Power BI Desktop
 description: Use OneDrive for Business links in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/05/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Use OneDrive for Business links in Power BI Desktop
 Many people have Excel workbooks stored on their OneDrive for Business drive that would be great for use with Power BI Desktop. With **Power BI Desktop**, you can use online links for **Excel** files stored in **OneDrive for Business** to create reports and visuals. You can use a **OneDrive for Business** group account, or your individual **OneDrive for Business** account.
@@ -55,7 +48,7 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
 A **Navigator** window appears, allowing you to select from the list of tables, sheets, and ranges found in the Excel workbook. From there, you can use the OneDrive for Business file just like any other Excel file, and create reports and use it in datasets like you would with any other data source.
 
 > [!NOTE]
-> To use **OneDrive for Business** file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when configuring your refresh settings. Otherwise you may encounter an error (such as *Failed to update data source credentials*) when you attempt to connect or to refresh. Selecting **OAuth2** as the authentication method remedies that credentials error.
+> To use a **OneDrive for Business** file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when configuring your refresh settings. Otherwise, you may encounter an error (such as *Failed to update data source credentials*) when you attempt to connect or to refresh. Selecting **OAuth2** as the authentication method remedies that credentials error.
 > 
 > 
 

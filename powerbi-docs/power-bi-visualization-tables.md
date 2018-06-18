@@ -1,27 +1,20 @@
 ---
-title: Tutorial -table visualizations in Power BI reports and dashboards (Tutorial)
+title: Table visualizations in Power BI reports and dashboards
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
-# Working with tables in Power BI reports and dashboards (Tutorial)
+# Working with tables in Power BI reports and dashboards
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
 
 ![](media/power-bi-visualization-tables/table.png)
@@ -65,15 +58,21 @@ There are many many ways to format a table and we'll only cover a few of them he
 
 * Try formatting the table grid. Here we've added a blue vertical grid, added space to the rows, increased the outline and text size a bit.
   
-    ![](media/power-bi-visualization-tables/power-bi-table-grid2-new.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * For the column headers we changed the background color, added an outline, and increased the font size. 
   
-    ![](media/power-bi-visualization-tables/power-bi-table-column.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
+
   
     ![](media/power-bi-visualization-tables/power-bi-table-column2.png)
-* And after some additional formatting, here is our final table. Since there are so many formatting options, the best way to learn is to start with a plain table, open the Formatting pane  ![](media/power-bi-visualization-tables/power-bi-format.png) , and start exploring. 
+
+* You can even apply formatting to individual columns and column headers. Start by expanding **Field formatting** and selecting the column to format from the dropdown. Depending on the column values, Field formatting lets you set things like: display units, font color, number of decimal places, background, alignment, and more. Once you've adjusted the settings, decide whether to apply those settings to the header and totals row as well.
+
+    ![](media/power-bi-visualization-tables/power-bi-field-formatting.png)
+
+* And after some additional formatting, here is our final table. Since there are so many formatting options, the best way to learn is to start with the default formatting, open the Formatting pane  ![](media/power-bi-visualization-tables/power-bi-format.png) , and start exploring. 
   
     ![](media/power-bi-visualization-tables/power-bi-table-format.png)
 
@@ -116,6 +115,9 @@ With conditional formatting for tables, you can specify customized cell backgrou
 Sometimes Power BI will truncate a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.
 
 ![](media/power-bi-visualization-tables/resizetable.gif)
+
+## Considerations and troubleshooting
+* When applying column formatting, you can only choose one alignment option per column: Auto, Left, Center, Right. Usually, a column contains all text or all numbers, and not a mix. But in cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languagues where you read left-to-right.   
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

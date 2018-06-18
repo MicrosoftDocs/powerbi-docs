@@ -1,23 +1,15 @@
 ---
 title: Testing template content packs for Power BI
 description: Template Content Pack Testing
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Testing template content packs for Power BI

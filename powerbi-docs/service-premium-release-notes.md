@@ -1,24 +1,17 @@
 ---
 title: Power BI Premium release notes
 description: Read release notes for Power BI Premium, a dedicated capacity for your organization or team.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/11/2017
-ms.author: asaxton
+ms.author: mgblythe
 
+LocalizationGroup: Premium
 ---
 # Power BI Premium release notes
 These are the release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes, and the ability to distribute content without per-user licenses for viewers.

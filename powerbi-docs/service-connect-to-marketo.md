@@ -1,24 +1,17 @@
 ---
 title: Connect to Marketo with Power BI
 description: Marketo for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Marketo with Power BI
 The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data.
@@ -44,7 +37,7 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
    
    ![](media/service-connect-to-marketo/pbi_marketosignin.png)
    
-   This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
+   This gives the *Marketo for Power BI* content pack access to your [Marketo analytics](https://powerbi.microsoft.com/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
 6. Once connected to your Marketo account, a dashboard with all your data is loaded:
    
    ![](media/service-connect-to-marketo/pbi_marketodash.png)

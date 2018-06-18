@@ -1,27 +1,20 @@
 ---
-title: Tutorial - Combo Chart
+title: Combo Chart in Power BI
 description: This tutorial about Combo charts explains when to use them and how to build them in Power BI service and Desktop.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
-qualityfocus: monitoring
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/21/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
-# Combo Chart in Power  (Tutorial)
+# Combo Chart in Power BI
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
 Combo charts can have one or two Y axes.
@@ -42,7 +35,7 @@ Combo charts are available in Power BI service and Power BI Desktop. This tutori
 ## Create a basic, single-axis, Combo Chart
 Watch Will create a combo chart using the Sales and Marketing sample.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
 <a name="create"></a>
 To create your own combo chart, sign in to Power BI service and select **Get Data \> Samples \> Retail Analysis Sample > Connect >Go to dashboard**.
@@ -109,6 +102,7 @@ From here you might want to:
 
 * [Add the combo chart as a dashboard tile](service-dashboard-tiles.md).
 * [Save the report](service-report-save.md).
+* [Make the report more accessible for people with disabilities](desktop-accessibility.md)
 
 ## Cross-highlighting and cross-filtering
 

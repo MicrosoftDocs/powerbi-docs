@@ -1,25 +1,18 @@
 ---
 title: Pin a tile to a Power BI dashboard from a report
 description: Pin a tile to a Power BI dashboard from a report.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from a report
 ## Pinning tiles from a report
@@ -43,7 +36,7 @@ Now create your own dashboard using one of the Power BI sample reports.
 
 1. Hover over the visualization you want to pin, and select the pin ![](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png) icon. Power BI opens the **Pin to dashboard** screen.
    
-     ![](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
+     ![Pin to dashboard window](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Decide whether to pin to an existing dashboard or new dashboard.
    
    * Existing dashboard: select the name of the dashboard from the dropdown. Dashboards that have been shared with you will not appear in the dropdown.
@@ -53,7 +46,7 @@ Now create your own dashboard using one of the Power BI sample reports.
    
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
-   ![](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
+   ![success message](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
 5. From the navigation pane, select the dashboard with the new tile. Select the tile to jump back into the report. Or, [edit the tile display and behavior](service-dashboard-edit-tile.md).
 
 ## Pin an entire report page

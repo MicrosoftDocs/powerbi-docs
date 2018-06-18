@@ -1,24 +1,17 @@
 ---
 title: Use DirectQuery in Power BI Desktop
 description: Use DirectQuery, also called a Live connection, in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/25/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Connect to data
 ---
 # Use DirectQuery in Power BI Desktop
 With **Power BI Desktop**, when you connect to your data source, it is always possible to import a copy of the data into the **Power BI Desktop**. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
@@ -58,7 +51,7 @@ There are currently a few limitations to using **DirectQuery**:
 * By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
 * There is a 1 million row limit for returning data when using **DirectQuery**. This does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
 
-To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options** and then **Settings > Options and settings > DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode**. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
+To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options and settings > Options** and then **DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode*. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using **DirectQuery**:
@@ -73,13 +66,13 @@ The following three points should be taken into consideration when using **Direc
       the maximum allowed size of '1000000' rows.
   
   This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
-* **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implement with DirectQuery sources and use RLS. [Learn more about RLS](service-admin-rls.md).
+* **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implemented with DirectQuery sources should use RLS. [Learn more about RLS](service-admin-rls.md).
 * **Supported features** - Not all features in **Power BI Desktop** are supported in **DirectQuery** mode, or have some limitations. In addition, there are some capabilities in the Power BI service (such as *Quick Insights*) that are not available for datasets using **DirectQuery**. As such, the limitation of such features when using **DirectQuery** should be taken into consideration when determining whether to use **DirectQuery**.   
 
 ## Publish to the Power BI service
 Reports created using **DirectQuery** can be published to the Power BI Service.
 
-If the data source used does not need the **on-premises data gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), credentials must be provided before the published report will be displayed in the Power BI Service.
+If the data source used does not need the **On-premises data gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), credentials must be provided before the published report will be displayed in the Power BI Service.
 
 You can provide credentials by selecting the **Settings** gear icon in Power BI, then select **Settings**.
 
@@ -91,7 +84,7 @@ Power BI displays the **Settings** window. From there, select the **Datasets** t
 
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to such data sources results in an error.
 
-For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **on-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about on-premises data gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-premises data gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## Next steps
 For more information about **DirectQuery**, check out the following resources:

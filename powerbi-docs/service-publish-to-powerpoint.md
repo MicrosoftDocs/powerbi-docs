@@ -1,24 +1,17 @@
 ---
 title: Export reports from Power BI to PowerPoint (Preview)
 description: Learn how to export a Power BI report to PowerPoint.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PowerPoint (Preview)
 With Power BI, you can now publish your report to **Microsoft PowerPoint**, and easily create a slide deck based on your Power BI report. When you **export to PowerPoint**, the following occurs:
@@ -61,6 +54,8 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 1. The first page of the slide deck includes the name of your report, and a link so that you can **View in Power BI** the report on which the slide deck is based.
 2. You get some useful information about the report, too, including the *last data refresh* on which the exported report is based, and the *downloaded at* time and date, which is the time and date when the Power BI report was exported into a PowerPoint file.
 3. Each report page is a separate slide, as shown in the left navigation pane.
+4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Settings > General > Language**. For locale information, see [Supported languages and countries/regions for Power BI](supported-languages-countries-regions.md).
+5. The PowerPoint presentation includes a cover slide with the exported time in the correct time zone.
 
 When you go into an individual slide, you'll notice that each report page is an independent image.
 

@@ -1,24 +1,17 @@
 ---
 title: DAX basics in Power BI Desktop
 description: DAX basics in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # DAX basics in Power BI Desktop
 This article is for users new to Power BI Desktop. It’s meant to give you a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve a number of basic calculation and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a few quizzes to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
@@ -27,7 +20,7 @@ This article is for users new to Power BI Desktop. It’s meant to give you a qu
 DAX is a collection of functions, operators, and constants that can be used in a formula, or expression, to calculate and return one or more values. Stated more simply, DAX helps you create new information from data already in your model.
 
 ## Why is DAX so important?
-It’s quite easy to create a new Power BI Desktop file and import some data into it. You can even create reports that show valuable insights without using any DAX formulas at all. But, what if you need to analyze growth percentage across product categories and for different date ranges? Or, you need calculate year-over-year growth compared to market trends? DAX formulas provide this capability and many other important capabilities as well. Learning how to create effective DAX formulas will help you get the most out of your data. When you get the information you need, you can begin to solve real business problems that affect your bottom line. This is the power in Power BI, and DAX will help you get there.
+It’s quite easy to create a new Power BI Desktop file and import some data into it. You can even create reports that show valuable insights without using any DAX formulas at all. But, what if you need to analyze growth percentage across product categories and for different date ranges? Or, you need to calculate year-over-year growth compared to market trends? DAX formulas provide this capability and many other important capabilities as well. Learning how to create effective DAX formulas will help you get the most out of your data. When you get the information you need, you can begin to solve real business problems that affect your bottom line. This is the power in Power BI, and DAX will help you get there.
 
 ## Prerequisites
 You might already be familiar with creating formulas in Microsoft Excel. That knowledge will be helpful in understanding DAX, but even if you have no experience with Excel formulas, the concepts described here will help you get started creating DAX formulas and solving real-world BI problems right away.
@@ -36,7 +29,7 @@ We’re going to focus on understanding DAX formulas used in calculations, more 
 
 **Example Workbook**
 
-The best way to learn DAX is to create some basic formulas, use it with some actual data, and see the results for yourself. The examples and tasks here use the Contoso Sales Sample for Power BI Desktop Preview file. This is the same sample file used in the Tutorial: Create your own measures in Power BI Desktop article. You can download it [here](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
+The best way to learn DAX is to create some basic formulas, use it with some actual data, and see the results for yourself. The examples and tasks here use the Contoso Sales Sample for Power BI Desktop Preview file. This is the same sample file used in the [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) article. Here is the [sample file](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) to download.
 
 ## Let's begin!
 We will frame our understanding of DAX around three fundamental concepts: *Syntax*, *Functions*, and *Context*. Of course, there are other important concepts in DAX, but understanding these three concepts will provide the best foundation on which to build your DAX skills.
@@ -68,7 +61,7 @@ When trying to understand a DAX formula, it is often helpful to break down each 
 
 When added to a report, this measure calculates and returns values by summing up sales amounts for each of the other fields we include, for example, Cell Phones in the USA.
 
-You might be thinking ‘Isn’t this measure doing the same thing as if I were to just add the SalesAmount field to my report?’ Well, yes. But, there’s a good reason to create our own measure that sums up values from the SalesAmount field: We can use it as an argument in other formulas. This may seem a little confusing now, but as your DAX formula skills grow, knowing this will make your formulas and your model more efficient. In-fact, you’ll see the Total Sales measure showing up as an argument in other formulas later on.
+You might be thinking ‘Isn’t this measure doing the same thing as if I were to just add the SalesAmount field to my report?’ Well, yes. But, there’s a good reason to create our own measure that sums up values from the SalesAmount field: We can use it as an argument in other formulas. This may seem a little confusing now, but as your DAX formula skills grow, knowing this will make your formulas and your model more efficient. In fact, you’ll see the Total Sales measure showing up as an argument in other formulas later on.
 
 Let’s go over a few more things about this formula. In particular, we introduced a function, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Functions are pre-written formulas that make it easier to do complex calculations and manipulations with numbers, dates, time, text, and more. You will learn more about functions later.
 
@@ -79,7 +72,7 @@ You also see the column [SalesAmount] was preceded by the table Sales in which t
 > 
 > 
 
-It’s important your formulas have the correct syntax. In most cases, if the syntax is not correct, a syntax error will be returned. In other cases, the syntax may be correct, but the values returned might not be what you are expecting. The DAX editor in Power BI Desktop includes suggestions; a feature used to create syntactically correct formulas by helping you select the correct elements.
+It’s important your formulas have the correct syntax. In most cases, if the syntax is not correct, a syntax error will be returned. In other cases, the syntax may be correct, but the values returned might not be what you are expecting. The DAX editor in Power BI Desktop includes a suggestions feature, used to create syntactically correct formulas by helping you select the correct elements.
 
 Let’s create a simple formula. This task will help you further understand formula syntax and how the suggestions feature in the formula bar can help you.
 
@@ -96,18 +89,17 @@ To complete this task, you’ll need to open the Contoso Sales Sample Power BI D
     
 4.  Between the parentheses, type **CALCULATE**, followed by an opening parenthesis.
     
-    You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and second, a filter.
+    You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and the second is a filter.
    
 5.  Between the parenthesis **()** for the **CALCULATE** function, type **Sales[SalesAmount]**. This is the first expression argument for our CALCULATE function.
     
-6.  Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis..
+6.  Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis.
     
     You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.
     
 7.  Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
     
     The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.
-    >
     
 8.  Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
     
@@ -121,7 +113,7 @@ You did it! You just created a measure using DAX, and not an easy one at that. W
 
 ![](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
 
-You were just introduced to several important aspects of DAX formulas. First, this formula included two functions. Notice [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), a time intelligence, function is nested as an argument passed to [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx), a filter function. DAX formulas can contain up to 64 nested functions. It’s unlikely a formula would ever contain so many nested functions. In fact, such a formula would be very difficult to create and debug, and it probably wouldn’t be very fast either.
+You were just introduced to several important aspects of DAX formulas. First, this formula included two functions. Notice [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), a time intelligence function, is nested as an argument passed to [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx), a filter function. DAX formulas can contain up to 64 nested functions. It’s unlikely a formula would ever contain so many nested functions. In fact, such a formula would be very difficult to create and debug, and it probably wouldn’t be very fast either.
 
 In this formula, you also used filters. Filters narrow down what will be calculated. In this case, you selected one filter as an argument, which is actually the result of another function. You will learn more about filters later.
 
@@ -140,15 +132,15 @@ Answers are provided at the end of this article.
 ### Functions
 Functions are predefined formulas that perform calculations by using specific values, called arguments, in a particular order or structure. Arguments can be other functions, another formula, expression, column references, numbers, text, logical values such as TRUE or FALSE, or constants.
 
-DAX includes the following categories of functions: [Date and Time](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx)[,](https://msdn.microsoft.com/library/ee634552.aspx)[Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logical](https://msdn.microsoft.com/library/ee634365.aspx)[,](https://msdn.microsoft.com/library/ee634365.aspx)[Mathematical](https://msdn.microsoft.com/library/ee634241.aspx), [Statistical](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/Child](https://msdn.microsoft.com/library/mt150102.aspx) and [Other](https://msdn.microsoft.com/library/mt150101.aspx) functions. If you’re familiar with functions in Excel formulas, many of the functions in DAX will appear similar to you; however, DAX functions are unique in the following ways:
+DAX includes the following categories of functions: [Date and Time](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logical](https://msdn.microsoft.com/library/ee634365.aspx), [Mathematical](https://msdn.microsoft.com/library/ee634241.aspx), [Statistical](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/Child](https://msdn.microsoft.com/library/mt150102.aspx), and [Other](https://msdn.microsoft.com/library/mt150101.aspx) functions. If you’re familiar with functions in Excel formulas, many of the functions in DAX will appear similar to you; however, DAX functions are unique in the following ways:
 
 * A DAX function always references a complete column or a table. If you want to use only particular values from a table or column, you can add filters to the formula.
 * If you need to customize calculations on a row-by-row basis, DAX provides functions that let you use the current row value or a related value as a kind of argument, to perform calculations that vary by context. You will learn more about context later.
 * DAX includes many functions that return a table rather than a value. The table is not displayed, but is used to provide input to other functions. For example, you can retrieve a table and then count the distinct values in it, or calculate dynamic sums across filtered tables or columns.
 * DAX includes a variety of time intelligence functions. These functions let you define or select date ranges, and perform dynamic calculations based on them. For example, you can compare sums across parallel periods.
-* Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in-mind, in Power BI Desktop, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.
+* Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in mind, in Power BI Desktop, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.
   
-  As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).
+  As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of the DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).
 
 ### Functions QuickQuiz
 1. What does a function always reference?
@@ -168,7 +160,7 @@ Row context is most easily thought of as the current row. It applies whenever a 
 
 Filter context is a little more difficult to understand than row context. You can most easily think of filter context as: One or more filters applied in a calculation that determines a result or value.
 
-Filter context doesn’t exist in-place of row context; rather, it applies in addition to row context. For example, to further narrow down the values to include in a calculation, you can apply a filter context which not only specifies the row context, but also specifies only a particular value (filter) in that row context.
+Filter context doesn’t exist in-place of row context; rather, it applies in addition to row context. For example, to further narrow down the values to include in a calculation, you can apply a filter context, which not only specifies the row context, but also specifies only a particular value (filter) in that row context.
 
 Filter context is easily seen in your reports. For example, when you add TotalCost to a visualization, and then add Year and Region, you are defining a filter context that selects a subset of data based on a given year and region.
 

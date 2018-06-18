@@ -1,24 +1,17 @@
 ---
 title: How to make your Excel data work well with Q&A in Power BI
 description: How to make your data work well with Q&A in Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/18/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/01/2018
 ms.author: mihart
 
+LocalizationGroup: Ask questions of your data
 ---
 # How to make your Excel data work well with Q&A in Power BI
 If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...

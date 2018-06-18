@@ -1,24 +1,17 @@
 ---
 title: Data categorization in Power BI Desktop
 description: Data categorization in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Data categorization in Power BI Desktop
 In **Power BI Desktop**, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
@@ -36,7 +29,7 @@ Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation
 **To specify a Data Category**
 
 1. In Report View or Data View, in the **Fields** list, select the field you want to be sorted by a different categorization.
-2. On the ribbon, in the **Data Tools Modeling** tab, click on the **Data Category:** drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
+2. On the ribbon, in the **Modeling** tab, click on the **Data Category:** drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

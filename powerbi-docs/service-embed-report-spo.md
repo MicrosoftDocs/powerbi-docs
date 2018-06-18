@@ -1,24 +1,16 @@
 ---
 title: Embed with report web part in SharePoint Online
 description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
-
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/19/2017
-ms.author: asaxton
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/25/2018
+ms.author: maghan
+LocalizationGroup: Share your work
 ---
 # Embed with report web part in SharePoint Online
 
@@ -94,12 +86,6 @@ Alternatively, you can grant users access to your report by doing the following.
 
 2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](service-share-dashboards.md).
 
-## Allowing Free users access to reports
-
-Free users can view reports that are embedded with the Power BI web part for SharePoint Online. You provide access to free users in the same way you do Pro users as described in [Granting access to reports](#granting-access-to-reports) above. The workspace, where the report is located, also has to be backed by Power BI Premium capacity. 
-
-For example, if you have a report, in an app workspace, you would have to assign the app workspace to a Power BI Premium capacity. You would also need to add the Free user to the list of members of that app workspace.
-
 ## Web part settings
 
 Below is a description of the settings that can be adjusted for the Power BI web part for SharePoint Online.
@@ -144,10 +130,16 @@ You should contact the owner of the SharePoint Online page to help you resolve t
   1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
+  
+  3. Azure B2B Guest users accounts are not supported. Users will see the Power BI logo that shows the part is loading, but it will not show the report.
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
 * You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+
+* The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
+
+* The classic SharePoint Server is not supported with this web part.
 
 ## Next steps
 
@@ -156,5 +148,5 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
 

@@ -1,25 +1,18 @@
 ---
 title: Power BI Notification Center
 description: The Notification Center is a sequential feed of information related to your Power BI experience.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/23/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Power BI Notifications
 The Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, alerts you've set, and more. You can [set alerts in the Power BI service](service-set-data-alerts.md) and also in the Power BI mobile apps.
@@ -31,13 +24,13 @@ Watch Amanda review notifications she's received, manage her notifications, and 
 
 1. When you log in to Power BI, any new notifications that were sent to you while you were offline are added to your feed. If you do have new notifications, Power BI displays a yellow bubble with the number of new items.
    
-   ![](media/service-notification-center/power-bi-new-notification.png)
+   ![new Notification icon](media/service-notification-center/power-bi-new-notification.png)
 2. In the Power BI menubar, select the Notifications icon.
    
-   ![](media/service-notification-center/power-bi-notifications-icon.png)
+   ![top menubar with Notifications icon selected](media/service-notification-center/power-bi-notifications-icon.png)
 3. Notifications are displayed with the most-recent on top and unread messages highlighted. Notifications are retained for 90 days, unless you delete them sooner or reach the maximum limit of 100.
    
-   ![](media/service-notification-center/power-bi-notifications.png)
+   ![Notification Center](media/service-notification-center/power-bi-notifications.png)
 4. To dismiss a notification, select the X icon.
 
 ### Next steps

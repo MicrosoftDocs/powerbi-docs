@@ -1,22 +1,14 @@
 ---
 title: Capacity planning guidance for Power BI Report Server
 description: This paper offers guidance on capacity planning for Power BI Report Server by sharing results of load test executions of various workloads.
-services: powerbi
-documentationcenter: ''
 author: parthsha
 manager: kfile
-backup: maghan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maghan
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 3/5/2018
 ms.author: pashah
 
 ---
@@ -39,7 +31,7 @@ Under a four-server topology of Power BI Report Server and the expectation that 
 In each run, the most overwhelmed resource was CPU. Due to this, increasing the number of cores to Power BI Report Server would yield a higher gain in the reliability of the system than increasing the amount of memory or hard-disk space. 
 
 ## Test methodology
-The testing topology used was based on Microsoft Azure Virtual Machines instead of vendor-specific physical hardware. All machines were hosted in US regions. This reflects the general trend of hardware virtualization both on premises and in the public cloud. 
+The testing topology used was based on Microsoft Azure Virtual Machines instead of vendor-specific physical hardware. All machines were hosted in US regions. This reflects the general trend of hardware virtualization both on-premises and in the public cloud. 
 
 ### Power BI Report Server topology
 The Power BI Report Server deployment consisted of the following virtual machines:
@@ -54,14 +46,14 @@ The Power BI Report Server deployment consisted of the following virtual machine
 See Appendix 1.1 Power BI Report Server Topology and Appendix 1.2 Power BI Report Server Virtual Machine Configuration for a thorough configuration of each virtual machine used in the topology.
 
 ### Tests
-The tests used in the load test runs are publicly available in a GitHub project called Reporting Services LoadTest   (See https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
+The tests used in the load test runs are publicly available in a GitHub project called [Reporting Services LoadTest](https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
 
 * Tests simulating rendering Power BI reports,
 * Tests simulating rendering mobile reports,
 * Tests simulating rendering small and large paginated reports, and 
 * Tests simulating performing various types of web portal  operations. 
 
-All tests were written to perform an end-to-end operation (such as rendering a report, creating a new data source, etc.). They accomplish this by making one or more web requests to the report server (via APIs). In the real world, a user may need to perform a few intermediate operations to complete one of these end-to-end operations. For example, to render a report a user will need to go to the web portal, navigate to the folder where the report is, then click the report to render it. While tests don’t perform all the operations needed to accomplish an end-to-end task, they still impose most of the load that Power BI Report Server would experience  . You can learn more about the different types of reports used as well as the variety of operations performed by exploring the GitHub project.
+All tests were written to perform an end-to-end operation (such as rendering a report, creating a new data source, etc.). They accomplish this by making one or more web requests to the report server (via APIs). In the real world, a user may need to perform a few intermediate operations to complete one of these end-to-end operations. For example, to render a report a user will need to go to the web portal, navigate to the folder where the report is, then click the report to render it. While tests don’t perform all the operations needed to accomplish an end-to-end task, they still impose most of the load that Power BI Report Server would experience. You can learn more about the different types of reports used as well as the variety of operations performed by exploring the GitHub project.
 
 ### Workloads
 There are 2 workload profiles used in testing: Power BI Report Heavy and Paginated Report Heavy. The table below describes the distribution of requests executed against the Report Server.
@@ -145,4 +137,5 @@ If you’d like to run the Reporting Services LoadTest tool against your or a Mi
 5. Once you finish deploying the environment, follow the instructions listed on https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution to run the tests.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 

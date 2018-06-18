@@ -1,24 +1,17 @@
 ---
 title: Optimize your data for Power BI quick insights
 description: Optimize your data for Power BI quick insights. If Power BI doesn't find insights in your data, here are some things you can do
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2017
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
 Want to improve quick insights results?  If you are a datasest owner, try these:

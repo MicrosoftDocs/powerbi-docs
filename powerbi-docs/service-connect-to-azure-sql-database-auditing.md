@@ -1,24 +1,17 @@
 ---
 title: SQL Database Auditing content pack
 description: SQL Database Auditing content pack for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # SQL Database Auditing content pack for Power BI
 The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
@@ -56,7 +49,7 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
    - Enter the end date of audit logs you are interested in. Enter “\*” to load audit logs without an upper time limit.
    
    ![](media/service-connect-to-azure-sql-database-auditing/dbauditing_param.png)
-5. For Authentication Method, select **Key**, enter your** Account Key** \> **Sign In**.
+5. For Authentication Method, select **Key**, enter your **Account Key** \> **Sign In**.
    
    ![](media/service-connect-to-azure-sql-database-auditing/pbi_sqlauditing3.png)
 6. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.

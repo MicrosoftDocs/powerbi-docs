@@ -1,24 +1,17 @@
 ---
 title: Refresh a dataset created from a comma separated value (.csv) file on OneDrive
 description: Refresh a dataset created from a comma separated value (.csv) file on OneDrive
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from a .CSV file on OneDrive or SharePoint Online
 ## What are the advantages?

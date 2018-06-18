@@ -1,25 +1,18 @@
 ---
 title: Power BI service- basic concepts
 description: Power BI service workspaces, dashboards, reports, datasets, and workbooks.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 
+LocalizationGroup: Get started
 ---
 # Power BI - basic concepts for Power BI service
 
@@ -129,7 +122,7 @@ Why do people create dashboards?  Here are just some of the reasons:
 
 When you open a workspace, the associated dashboards are listed under the **Dashboards** tab. To open a dashboard, simply select it. When you open an app, you'll be presented with a dashboard.  Each dashboard represents a customized view of some subset of the underlying dataset(s).  If you own the dashboard, you'll also have edit access to the underlying dataset(s) and reports.  If the dashboard was shared with you, you'll be able to interact with the dashboard and any underlying reports, but will not be able to save any changes.
 
-There are many different ways that you, or a colleague, can [share a dashboar](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
+There are many different ways that you, or a colleague, can [share a dashboard](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
 
 
 > [!NOTE]

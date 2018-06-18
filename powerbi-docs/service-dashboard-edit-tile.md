@@ -1,25 +1,18 @@
 ---
-title: Tutorial - Edit a dashboard tile  
+title: Edit a dashboard tile  
 description: This tutorial takes your from creating a tile and pinning it to a dashboard, to learning how to edit that dashboard tile -- resize, move, rename, pin, delete, add hyperlink.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/20/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/02/2018
 ms.author: mihart
 
+LocalizationGroup: Dashboards
 ---
 # Edit or remove a dashboard tile
 
@@ -51,23 +44,23 @@ This article covers the following.
 ## Create a new visualization and pin it to the dashboard
 1. From the IT Spend Analysis dashboard, select the "Amount" tile to open the report.
 
-    ![](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
+    ![Amount tile](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
 
 2. Open the report in Editing view by selecting **Edit report** from the top menubar.
 
 3. Add a new report page by selecting the plus sign (+) at the bottom of the report.
 
-    ![](media/service-dashboard-edit-tile/power-bi-add-page.png)
+    ![plus icon](media/service-dashboard-edit-tile/power-bi-add-page.png)
 
 4. From the FIELDS pane, select **Fact > Amount** and **Business Area > Business Area**.
  
 5. From the VISUALIZATIONS pane, select the Donut chart icon to convert the visualization to a Donut chart.
 
-    ![](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
+    ![Visualizations pane](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
 
 5. Select the pin icon and pin the Donut chart to the IT Spend Analysis sample dashboard.
 
-   ![](media/service-dashboard-edit-tile/power-bi-pin.png)
+   ![hover over tile](media/service-dashboard-edit-tile/power-bi-pin.png)
 
 6. When the "Success"message appears, select **Go to dashboard**. You will be prompted to save your changes. Select **Save**.
 
@@ -83,24 +76,23 @@ On the dashboard, locate the new tile. Select and hold the tile to drag it to a 
 ## Resize the tile
 You can make tiles many different sizes -- from 1x1 tile units up to 5x5. Select and drag the handle (in the bottom right corner) to resize the tile.
 
-![](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
+![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
 ## The ellipses (...) menu
 
 1. Select the ellipses (...) in the upper-right corner of the tile. 
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile.png)
+   ![tile ellipses](media/service-dashboard-edit-tile/power-bi-tile.png)
 
 2. Hover over the "Account" tile and select the ellipses to display the options. The options available will vary by tile type.  For example, the options available for a live tile are different from options available for a standard visualization tile. Also, if a dashboard has been shared with you (you are not the owner), you will have fewer options.
 
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
+   ![ellipses options menu](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 3. Select **Edit details** to open the "Tile details" window. 
 
     Change the title and default behavior of the tile.  For example, you may decide that when a *consumer* selects a tile, instead of opening the report that was used to create that tile, a new dashboard displays instead.  
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 
 <a name="rename"></a>
@@ -108,7 +100,7 @@ You can make tiles many different sizes -- from 1x1 tile units up to 5x5. Select
 ### Rename the tile
 At the top of the "Tile details" window, change **Title** to **Amount spent**.
 
-![](media/service-dashboard-edit-tile/power-bi-tile-title.png)
+![Tile details window](media/service-dashboard-edit-tile/power-bi-tile-title.png)
 
 
 <a name="hyperlink"></a>
@@ -120,27 +112,27 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 2. Select **Link to a dashboard or report in the current workspace** and then select from the dropdown.  In this example I've selected the Human Resources sample dashboard. If you don't have this sample already in your workspace, you can add it and come back to this step, or you can select a different dashboard. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-custom-link.png)
+    ![Functionality dialog](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
 3. Select **Apply**.
 
 4. The new title displays on the tile.  And, when you select the tile, Power BI opens the Human Resources dashboard. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-title.png)
+    ![tile title](media/service-dashboard-edit-tile/power-bi-title.png)
 
 <a name="different"></a>
 
 ### Pin the tile to a different dashboard
-1. From the ellipses dropdown menu, select **Pin tile** ![](media/service-dashboard-edit-tile/pinnooutline.png) .
+1. From the ellipses dropdown menu, select **Pin tile** ![pin icon](media/service-dashboard-edit-tile/pinnooutline.png) .
 2. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard. 
    
-   ![](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+   ![Pin to dashboard dialog](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
 3. Select **Pin**.
 
 <a name="delete"></a>
 
 ### Delete the tile
-1. To permanently remove a tile from a dashboard, select  **Delete tile** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) from the ellipses dropdown menu. 
+1. To permanently remove a tile from a dashboard, select  **Delete tile** ![delete icon](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) from the ellipses dropdown menu. 
 
 2. Deleting a tile does not delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization has not been deleted from the report. 
 

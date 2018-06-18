@@ -1,24 +1,17 @@
 ---
 title: Refresh a dataset created from an Excel workbook - cloud
 description: Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
 You can import Excel workbooks that are stored on your local machine, or in cloud storage such as OneDrive for Business or SharePoint Online. We will look at the advantages of using cloud storage for your excel files. For more information on how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
@@ -102,7 +95,7 @@ Be sure to leave the **Send refresh failure notification email to me checked**. 
 ## Troubleshooting
 Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
 
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 

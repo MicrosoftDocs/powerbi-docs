@@ -1,32 +1,27 @@
 ---
 title: On-premises data gateway
-description: This is an overview of the on-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data.
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+description: This is an overview of the On-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data.
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
-ms.date: 01/10/2018
-ms.author: davidi
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/05/2018
+ms.author: mblythe
 
+LocalizationGroup: Gateways
 ---
+
 # On-premises data gateway
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
+
+The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
 
 You can use a single gateway with different services at the same time. If you are using Power BI as well as PowerApps, a single gateway can be used for both. It is dependent on the account you sign in with.
 
 > [!NOTE]
-> The on-premises data gateway implements data compression, and transport encryption, in all modes.
+> The On-premises data gateway implements data compression, and transport encryption, in all modes.
 > 
 > 
 
@@ -48,8 +43,10 @@ You can use a live connection against tabular or multidimensional instances.
 <!-- Shared Install steps Include -->
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
-## Download and install the on-premises data gateway
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [on-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+## Download and install the On-premises data gateway
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925). 
+
+Note that updating the On-premises data gateway is achieved by reinstalling the gateway, as described in this section. When updating the gateway (by reinstalling), your existing gateways settings are retained.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -58,9 +55,8 @@ To download the gateway, select **Data Gateway** under the Downloads menu. Downl
 
 ## Install the gateway in personal mode
 > [!NOTE]
-> Personal will only work with Power BI.
-> 
-> 
+> The Personal version of gateway only works with Power BI.
+
 
 After the personal gateway is installed, you will need to launch the **Power BI Gateway - Personal Configuration Wizard**.
 
@@ -87,8 +83,23 @@ When you add a data source to the gateway, you need to provide credentials for t
 <!-- How the gateway works -->
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
+## Limitations and Considerations
+* [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+) is not currently supported
+* [Access Online](https://products.office.com/en-us/access) is not currently supported
+
+## Tenant level administration 
+
+There is currently no single place where tenant administrators  can manage all the gateways that other users have installed and configured.  If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+
+## Enabling outbound Azure connections 
+The On-premises data gateway relies on Azure Service Bus for cloud connectivity and correspondingly establishes outbound connections to its associated Azure region. By default, this is the location of your Power BI tenant. See Where is my [Power BI tenant located?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
+> [!NOTE]
+> The IP address ranges might change over time, so make sure you download the latest information on a regular basis. 
+
 ## Troubleshooting
-If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
+If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
 
 If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md).
 
@@ -100,6 +111,6 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
-[Configuring proxy settings for the on-premises data gateway](service-gateway-proxy.md)  
+[Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

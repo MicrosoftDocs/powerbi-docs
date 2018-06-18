@@ -1,24 +1,17 @@
 ---
 title: Power BI Security
 description: Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: erikri
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-admin
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Administration
 ---
 # Power BI Security
 For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -60,5 +53,5 @@ For more information, please visit the [Microsoft Trust Center](https://www.micr
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
-An exception is connections to **SQL Server Analysis Services** using the **on-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](service-gateway-onprem-indepth.md).
+An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](service-gateway-onprem-indepth.md).
 

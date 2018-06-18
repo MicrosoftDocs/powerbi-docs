@@ -1,24 +1,17 @@
 ---
 title: Connect to Application Insights Connect to  Power BI
 description: Application Insights for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Application Insights with Power BI
 Use Power BI to create powerful custom dashboards from [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
@@ -58,7 +51,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 ## What's included
 The Application Insights content pack includes the following tables and metrics:  
 
-     ´´´
+    ´´´
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   
@@ -75,7 +68,7 @@ The Application Insights content pack includes the following tables and metrics:
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
     - PageViewsByCountryDailyLast30Days  
-   ´´´ 
+    ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 

@@ -1,23 +1,15 @@
 ---
 title: Q&A in Power BI Embedded
 description: Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Q&A in Power BI Embedded
@@ -97,7 +89,7 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## Embed token
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token for Q&A](https://msdn.microsoft.com/library/mt784614.aspx#qanda).
+Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## Next steps
 To give Q&A embedding a try, check out the [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/).

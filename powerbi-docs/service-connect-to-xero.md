@@ -1,24 +1,17 @@
 ---
 title: Connect to Xero with Power BI
 description: Xero  for Power BI
-services: powerbi
-documentationcenter: ''
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
-ms.author: yshoukry
+ms.author: sarinas
 
+LocalizationGroup: Connect to services
 ---
 # Connect to Xero with Power BI
 Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI content pack. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days and return on investment.

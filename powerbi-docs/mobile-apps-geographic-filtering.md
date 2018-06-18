@@ -1,21 +1,13 @@
 ---
 title: Filter report by geographic location in a Power BI mobile app
 description: Learn how you can filter a report by your geographic location in the Microsoft Power BI mobile apps, if the report owner set geographic tags.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 02/09/2018
 ms.author: maggies
 
 ---

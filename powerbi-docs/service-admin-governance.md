@@ -1,24 +1,17 @@
 ---
 title: Governance and deployment approaches
 description: Whitepaper to learn about concepts, options and suggestions for governance within the Power BI ecosystem.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: asaxton
+ms.author: mblythe
 
+LocalizationGroup: Administration
 ---
 # Governance and deployment approaches
 Over the last few decades companies have become increasingly aware of the need to strategically leverage data assets to profit from market opportunities. Either by performing competitive analysis or by understanding operational patterns, many organizations now understand they can benefit from having a data strategy as a way to stay ahead of their competition.  

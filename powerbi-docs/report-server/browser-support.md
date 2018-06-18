@@ -1,22 +1,14 @@
 ---
 title: Browser support for Power BI Report Server
 description: Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 06/13/2018
 ms.author: maghan
 
 ---
@@ -42,7 +34,7 @@ The following is the current list of browsers supported for the web portal.
 * Mozilla Firefox (+)
 
 **Apple iOS**  
-*iPhone and iPad with iOS 9*
+*iPhone and iPad with iOS 10*
 
 * Apple Safari (+)
 
@@ -116,8 +108,8 @@ Use a browser that has script support enabled. If the browser cannot run scripts
   **(+)** Latest publicly released version
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Administrator overview](admin-handbook-overview.md)  
+[Install Power BI Report Server](install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

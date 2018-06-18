@@ -1,23 +1,15 @@
 ---
 title: Install Power BI Report Server
-description: 'Learn how to install Power BI Report Server. '
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+description: 'Learn how to install Power BI Report Server.'
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/08/2017
-ms.author: maghan
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 03/19/2018
+ms.author: maggies
 ---
 # Install Power BI Report Server
 
@@ -25,16 +17,13 @@ Learn how to install Power BI Report Server.
 
  **Download** ![download](media/install-report-server/download.png "download")
 
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/). For Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
-
-![tip](media/install-report-server/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
+To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**. 
 
 ## Before you begin
-Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
+Before you install Power BI Report Server, we recommend you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
 
 ### Power BI Report Server product key
+
 #### Power BI Premium
 If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
 
@@ -48,12 +37,9 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
 
 ## Install your report server
-Installing Power BI Report Server is straight forward. There are only a few steps to install the files.
+Installing Power BI Report Server is straightforward. There are only a few steps to install the files.
 
-> [!NOTE]
-> You do not need a SQL Server Database Engine server available at the time of install. You will need one to configure Reporting Services after install.
-> 
-> 
+You don't need a SQL Server Database Engine server available at the time of install. You will need one to configure Reporting Services after install.
 
 1. Find the location of PowerBIReportServer.exe and launch the installer.
 2. Select **Install Power BI Report Server**.
@@ -78,15 +64,14 @@ Installing Power BI Report Server is straight forward. There are only a few step
    
     ![Specify install path](media/install-report-server/pbireportserver-install-file-path.png)
    
-   > [!NOTE]
-   > The default path is C:\Program Files\Microsoft Power BI Report Server.
-   > 
-   > 
-7. After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.
+    The default path is C:\Program Files\Microsoft Power BI Report Server.
+
+1. After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.
    
     ![Configure the report server](media/install-report-server/pbireportserver-configure.png)
 
-## Configuration your report server
+## Configuring your report server
+
 After you select **Configure Report Server** in the setup, you will be presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
 You need to [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) to complete the initial configuration of Reporting Services. A SQL Server Database server is required to complete this step.
@@ -137,7 +122,7 @@ You need to open up the TCP port that you have configured for your Web Service U
 * To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
+[Administrator overview](admin-handbook-overview.md)  
 [How to find your report server product key](find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  

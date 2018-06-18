@@ -1,27 +1,22 @@
 ---
-title: Interact with a report in Editing view (Tutorial)
+title: Interact with a report in Editing view
 description: Interact with a report in report Editing view in Power BI service
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/05/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Interact with a report in Editing view in Power BI service
-Reports can be edited in Power BI service and Power BI Desktop -- if you have owner permissions. Unlike Desktop, Power BI service has two different modes for interacting with reports -- [Reading view](service-reading-view-and-editing-view.md) for report *consumers* and Editing view for report owners and creators. This article tutorial covers Editing view in Power BI service. 
+Reports can be created and edited in Power BI service and Power BI Desktop. In Power BI service, reports can be created and edited in **Editing view**. And in Power BI Desktop, reports can be created and edited in [**Report view**](desktop-report-view.md). This article covers Editing view in Power BI service. 
+
+Power BI service has two different modes for interacting with reports -- [Reading view](service-reading-view-and-editing-view.md) for report *consumers* and Editing view for report owners and creators.  A Power BI Pro license is required for sharing reports as well as for editing reports created by others. If you're a Power BI free user, you'll still be able to create reports, but you won't be able to use [sharing](service-share-reports.md).    
 
 In report Editing view, you have lots of flexibility in both exploring and designing a report. All the [Reading view](service-reading-view-and-editing-view.md) functionality is available -- plus lots more. Editing view is only available to the person who created the report or to colleagues who [co-own a report as a member or admin of an app workspace](service-create-distribute-apps.md).
 
@@ -38,6 +33,9 @@ Take a look at the list of topics under the **Reports** header in the Table of C
 * Showing data used to create the visualization 
 * Setting up drillthrough
 * Duplicating a report page
+
+## Considerations and troubleshooting
+A Power BI Pro license is required to edit reports created by others as well as to share your reports with others.  If you're a Power BI free user, you'll still be able to create reports, but you won't be able to use [sharing](service-share-reports.md).
 
 
 ## Next steps

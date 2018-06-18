@@ -1,23 +1,15 @@
 ---
 title: Author template content packs in Power BI
 description: Template Content Pack Authoring
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: asaxton
+ms.author: maghan
 
 ---
 # Author template content packs in Power BI
@@ -133,7 +125,7 @@ As listed in the above sections, currently the template content packs have a set
 | Supported | *Not Supported* |
 | --- | --- |
 | Datasets built in PBI Desktop |*Datasets from  other content packs or inputs such as Excel files* |
-| Data source supported for cloud Scheduled Data refresh |*Direct query or on-prem connecitivty is not supported* |
+| Data source supported for cloud Scheduled Data refresh |*Direct query or on-premises connectivity is not supported* |
 | Queries returning consistent schema or errors where appropriate |*Dynamic or custom schemas* |
 | One data source per dataset |*Multiple data sources such as mashups or URLs that are detected as mutliple data sources* |
 | Parameters of type text |*Other parameter types (such as date) or "list allowed of values"* |

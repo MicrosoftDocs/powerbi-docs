@@ -1,24 +1,17 @@
 ---
 title: Using calculated tables in Power BI Desktop
 description: Calculated tables in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 
+LocalizationGroup: Model your data
 ---
 # Using calculated tables in Power BI Desktop
 With calculated tables, you can add a new table to the model. But instead of querying and loading values into your new table's columns from a data source, you create a Data Analysis Expressions (DAX) formula that defines the table’s values. In Power BI Desktop, calculated tables are created by using the New Table feature in Report View or Data View.
@@ -32,7 +25,7 @@ Just like normal tables, calculated tables can have relationships with other tab
 Calculated tables calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need.
 
 ## Let’s look at an example
-Jeff, a project manager at Contoso, has a table with employees on the in Northwest and another table with employees in the Southwest. Jeff wants to put the two tables together into a single table.
+Jeff, a project manager at Contoso, has a table with employees in the Northwest and another table with employees in the Southwest. Jeff wants to put the two tables together into a single table.
 
 **NorthwestEmployees**
 
@@ -74,16 +67,15 @@ problems. We’ve only provided a quick introduction to calculated tables
 here. As you start working with calculated tables, here are some of the
 more common DAX table functions you might find useful:
 
-&lt;TABLE&gt;
-DISTINCT
-VALUES
-CROSSJOIN
-UNION
-NATURALINNERJOIN
-NATURALLEFTOUTERJOIN
-INTERSECT
-CALENDAR
-CALENDARAUTO
+* DISTINCT
+* VALUES
+* CROSSJOIN
+* UNION
+* NATURALINNERJOIN
+* NATURALLEFTOUTERJOIN
+* INTERSECT
+* CALENDAR
+* CALENDARAUTO
 
 See the [DAX Function Reference](https://msdn.microsoft.com/ee634396.aspx) for these and
 other table returning DAX functions.

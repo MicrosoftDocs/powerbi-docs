@@ -1,22 +1,14 @@
 ---
 title: View dashboards and reports in the Power BI mobile apps
 description: Create or connect to dashboards and reports in the Power BI service. Then view them in the Power BI mobile apps.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 07/08/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/16/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/07/2018
 ms.author: maggies
 
 ---
@@ -35,7 +27,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 To see dashboards and reports on your mobile device, you need to create or connect to them in a Web browser. 
 
 1. Go to the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) and [sign up for an account](service-self-service-signup-for-power-bi.md).
-2. [Create your own Power BI dashboards and report](service-get-started.md), or connect to existing [Power BI apps](service-connect-to-services.md) for a variety of services, such as [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) and [Adobe Analyics](service-connect-to-adobe-analytics.md).
+2. [Create your own Power BI dashboards and report](service-get-started.md), or connect to existing [Power BI apps](service-connect-to-services.md) for a variety of services, such as [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) and [Adobe Analytics](service-connect-to-adobe-analytics.md).
 
 Here's a Power BI dashboard in the Power BI service:
 
@@ -112,31 +104,21 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
    ![Dashboard home](media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
 
-     -     Yellow stars ![Favorite star](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+    Yellow stars ![Favorite star](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
 
-     -     A notation below a dashboard name (in this case, "MBI") ![Data classification](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
-
+    A notation below a dashboard name (in this case, "MBI") ![Data classification](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](service-data-classification.md).
 
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
     ![Dashboard portrait view](media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-     Or just turn your phone sideways to view them in landscape mode on your phone.
-
-    > [AZURE.TIP] If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
+    If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 1. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
 3. To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**.   
-
-### View dashboards in landscape mode on your Android phone
-You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
-
-![Dashboard landscape](media/mobile-apps-view-dashboard/power-bi-android-landscape-dashboard.png)
-
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
 
 ## View dashboards on your Android tablet
 1. Open the Power BI app on your Android tablet and sign in.

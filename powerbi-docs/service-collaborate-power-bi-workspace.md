@@ -1,24 +1,17 @@
 ---
 title: Collaborate in your Power BI app workspace
 description: Read about collaborating on Power BI Desktop files in your app workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 09/14/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 01/29/2018
 ms.author: maggies
 
+LocalizationGroup: Share your work
 ---
 # Collaborate in your Power BI app workspace
 Power BI app workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. That's what workspaces are designed for -- collaboration. After you finish collaborating on your dashboards and reports with colleagues, then you package it as an app and distribute it. Read more about [creating apps and app workspaces in Power BI](service-create-distribute-apps.md). 

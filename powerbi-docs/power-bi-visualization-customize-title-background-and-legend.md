@@ -1,27 +1,20 @@
 ---
-title: Get started formatting Power BI visualizations (Tutorial)
-description: 'Tutorial: Customize visualization title, background, and legend'
-services: powerbi
-documentationcenter: ''
+title: Get started formatting Power BI visualizations
+description: 'Customize visualization title, background, and legend'
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
-# Customize visualization titles, legends, and backgrounds (Tutorial)
+# Customize visualization titles, legends, and backgrounds
 In this tutorial you'll learn a few different ways to customize your visualizations.   There are so many options for customizing your visualizations, the best way to learn about them all is by exploring the Formatting pane (select the paintroller icon).  To get you started, this article shows you how to customize a visualization title, legend, and background.  
 
 Not all visualizations can be customized, [see the complete list](#list).  

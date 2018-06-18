@@ -1,27 +1,20 @@
 ---
-title: KPI visuals (Tutorial)
+title: KPI visuals
 description: create KPI in Power BI service and Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
-qualityfocus: no
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: mihart
 
+LocalizationGroup: Visualizations
 ---
-# KPI visuals (Tutorial)
+# KPI visuals
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 ## When to use a KPI
@@ -72,11 +65,8 @@ KPIs are also available on your mobile devices – keeping you always connected 
 * If your KPI doesn't look like the one above, it may be because you need to sort by month. Since KPIs don't have a sort option, you'll need to sort by month *before* you convert your visualization to a KPI.
 
 ## Next steps
-[Reports in Power BI](service-reports.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
-
-[Power BI - Basic Concepts](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

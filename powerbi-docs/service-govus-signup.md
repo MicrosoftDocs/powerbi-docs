@@ -1,24 +1,17 @@
 ---
 title: Sign Up for Power BI for United States Government customers
 description: For U.S. Government customers, learn how to sign up your US Government organization for the Power BI US Government service
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/24/2017
 ms.author: davidi
 
+LocalizationGroup: Get started
 ---
 # Enroll your US Government organization in the Power BI service
 The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
@@ -42,12 +35,14 @@ If your organization is a new **Office Government Cloud** customer, follow these
 
 > [!NOTE]
 > These steps should be performed by the portal administrator.
-> 
-> 
+>
 
-1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
-    >[!NOTE]
-    >If you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
+1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government).
+
+>[!NOTE]
+>If you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
+>
+
 2. Select Office G3 and complete the form for an Office trial
 3. Once you are an Office Cloud customer continue on with the steps below for "Existing Office Government Cloud customers"
 
@@ -91,12 +86,7 @@ Go to **Billing > Subscriptions** and select **Power BI Pro for Government** sub
 ### Whitelisting Instructions
 *Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected. All existing (or new) US Government customers that purchase US Government **Power BI** services for the first time *must* initiate the following whitelisting process. The process must be done prior to setup or migration to US Government **Power BI** services. 
 
-To have your tenant *whitelisted* for the US Government cloud, fill out a support ticket that makes the request, from the following link. Note that only administrators can make this request:
-
-* [*Whitelisting* online support request ](https://powerbi.microsoft.com/clouds/)
-* Make sure you include the domain to be *whitelisted*, and the email for the Microsoft representative who is working with you on the process.
-
-The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
+To have your tenant *whitelisted* for the US Government cloud, contact the Microsoft account team for assistance with whiteplisting. Note that only administrators can make this request. The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
 
 Customers migrating from Power BI **Free** licenses to **Power BI US Government** (and by definition, migrating to the associated **Pro** license features described earlier in this article) will encounter the issues described in the following section of this article, until their tenant is *whitelisted* by the Power BI engineering team.
 
@@ -129,7 +119,7 @@ To identifying users in your tenant that are running the Free license of Power B
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Overview of Power BI for US Government](service-govus-overview.md)
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
 * [Getting started with Power BI Desktop](desktop-getting-started.md)
 

@@ -1,24 +1,17 @@
 ---
 title: Aggregates (sum, average, maximum, etc.) in visualizations
 description: Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: modifying
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/04/2018
 ms.author: mihart
 
+LocalizationGroup: Reports
 ---
 # Aggregates in Power BI visualizations
 ## What is an aggregate?

@@ -1,21 +1,13 @@
 ---
 title: Upgrade Power BI Report Server
 description: Learn how to upgrade Power BI Report Server.
-services: powerbi
-documentationcenter: ''
-author: guyinacube
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: maghan
 
@@ -26,8 +18,6 @@ Learn how to upgrade Power BI Report Server.
  **Download** ![download](media/upgrade/download.png "download")
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-![tip](media/upgrade/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](release-notes.md).
 
 ## Before you begin
 Before you upgrade a report server, it is recommended that you perform the following steps to back up your report server.
@@ -73,7 +63,7 @@ Upgrading Power BI Report Server is straight forward. There are only a few steps
 After the report server is upgrade, you will want to make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
+[Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  

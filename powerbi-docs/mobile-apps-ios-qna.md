@@ -1,72 +1,84 @@
 ---
-title: Ask questions with Q&A virtual analyst in iOS apps - Power BI
-description: In this tutorial, try asking questions about this sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
-services: powerbi
-documentationcenter: ''
+title: 'Q&A virtual analyst in iOS apps - Power BI'
+description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/05/2018
 ms.author: maggies
+#customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 
 ---
-# Ask questions about your data with the Q&A virtual analyst in iOS apps - Power BI
+# Q&A virtual analyst in iOS apps - Power BI
+
+The easiest way to learn about your data is to ask questions about it in your own words. In this article, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch. 
+
 Applies to:
 
 | ![iPhone](media/mobile-apps-ios-qna/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-ios-qna/ipad-logo-50-px.png) |
 |:--- |:--- |
 | iPhones |iPads |
 
-The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, try asking questions and viewing featured insights about sample data with the Q&A virtual analyst.
+The Q&A virtual analyst is a conversational BI experience that accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). It suggests data insights, and you can type or speak your own questions.
 
 ![Top sales Q&A virtual analyst](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
-In the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch, the Q&A virtual analyst is a conversational BI experience that enhances the previous version of Q&A in iOS. The Q&A virtual analyst still accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). You can still type or say a question, and it also delivers data insights in context.
+If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-## Download the samples
-The first step in the tutorial is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
+## Prerequisites
 
-* In your workspace on the Power BI service ([https://powerbi.com](https://powerbi.com)):
+### Install the Power BI for iOS app
+[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
 
-  * Select **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect**.
-  * After the Opportunity Analysis Sample finishes downloading, select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**.
+These versions support the Power BI for iOS app:
+- iPad with iOS 10 or later.
+- iPhone 5 and above, with iOS 10 or later. 
+- iPod Touch with iOS 10 or later.
 
-## Try featured insights
-1. On your iPhone or iPad, open the Power BI app and navigate to the Opportunity Analysis Sample dashboard.
-2. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+### Download samples
+The first step is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
 
-     ![Opportunity Analysis Sample dashboard](media/mobile-apps-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
+**Get the Retail Analysis sample**
 
-     The Power BI Q&A virtual analyst offers some suggestions to get started.
+1. Open the Power BI service (app.powerbi.com) and sign in.
 
-     ![featured insights button](media/mobile-apps-ios-qna/power-bi-ios-qna-suggest-insights.png)
-3. Tap **featured insights**.
+2. In the left navigation pane, select **Workspaces**, **My Workspace**.
 
-     The Q&A virtual analyst suggests some insights.
-4. Scroll to the right and tap **Insight 2**.
+3. In the lower-left corner select **Get data**.
+   
+    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
 
-    ![Insight 2 button](media/mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
+3. On the Get Data page, select the **Samples** icon.
+   
+   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
 
-     The Q&A virtual analyst displays Insight 2.
+4. Select the **Retail Analysis Sample**.
+ 
+    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-rs.png)
+ 
+8. Select **Connect**.  
+  
+   ![Retail Analysis Sample](media/mobile-apps-ios-qna/retail16.png)
+   
+5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace.
+   
+   ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
-    ![Insight 2](media/mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
-5. Tap the chart to open it in focus mode.
+**Get the Opportunity Analysis sample**
 
-    ![Insight 2 chart in focus mode](media/mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
-6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
+- Go through the same steps as you did for the Retail Analysis sample, but in Step 4, select the **Opportunity Analysis sample**.
+
+    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-oa.png)
+  
+OK, you're ready to view the samples on your iOS device.
 
 ## Try asking questions on your iPhone or iPad
-1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
+1. On your iPhone or iPad, Tap the global navigation button ![Global navigation button](media/mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) > **Workspaces** > **My Workspace**, and open the Retail Analysis Sample dashboard.
+
 2. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
      The Q&A virtual analyst offers some suggestions to get started.
 3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).

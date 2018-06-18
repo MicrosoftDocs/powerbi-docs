@@ -1,24 +1,17 @@
 ---
 title: Troubleshooting tile errors
 description: Common errors that may be encountered when a tile tries to refresh
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting tile errors
 Below are the common errors you may encounter with tiles along with an explanation.
@@ -67,7 +60,7 @@ This is usually a transient issue. If you try again later and you still see this
 If you are still having an issue, please [contact support](https://support.powerbi.com) to investigate further.
 
 ## Next steps
-[Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
