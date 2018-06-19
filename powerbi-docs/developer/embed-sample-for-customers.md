@@ -219,6 +219,94 @@ Follow these steps to start embedding your content using a sample application.
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
+### Get the content item you want to embed
+Use the Power BI client object to retrieve a reference to the item you want to embed. You can embed reports, dashboards, or tiles or reports. Here is a code  example of how to retrieve the first report from a given workspace.
+
+A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) sample.
+
+```C#
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// You will need to provide the GroupID where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+
+// Get the first report in the group.
+Report report = reports.Value.FirstOrDefault();
+```
+
+### Create the embed token
+An embed token needs to be generated which can be used from the JavaScript API. The embed token will be specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
+
+A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) sample.
+
+This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
+
+```C#
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// Generate Embed Token.
+var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+
+// Generate Embed Configuration.
+var embedConfig = new EmbedConfig()
+{
+    EmbedToken = tokenResponse,
+    EmbedUrl = report.EmbedUrl,
+    Id = report.Id
+};
+```
+
+### Load an item using JavaScript
+You can use JavaScript to load a report into a div element on your web page. The sample uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
+
+A sample of this is available within **Views\Home\EmbedDashboard.cshtml** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
+
+For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+
+```JavaScript
+<script src="~/scripts/powerbi.js"></script>
+<div id="reportContainer"></div>
+<script>
+    // Read embed application token from Model
+    var accessToken = "@Model.EmbedToken.Token";
+
+    // Read embed URL from Model
+    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
+
+    // Read report Id from Model
+    var embedReportId = "@Model.Id";
+
+    // Get models. models contains enums that can be used.
+    var models = window['powerbi-client'].models;
+
+    // Embed configuration used to describe the what and how to embed.
+    // This object is used when calling powerbi.embed.
+    // This also includes settings and options such as filters.
+    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
+    var config = {
+        type: 'report',
+        tokenType: models.TokenType.Embed,
+        accessToken: accessToken,
+        embedUrl: embedUrl,
+        id: embedReportId,
+        permissions: models.Permissions.All,
+        settings: {
+            filterPaneEnabled: true,
+            navContentPaneEnabled: true
+        }
+    };
+
+    // Get a reference to the embedded report HTML element
+    var reportContainer = $('#reportContainer')[0];
+
+    // Embed the report and display it within the div container.
+    var report = powerbi.embed(reportContainer, config);
+</script>
+```
+
 ## Move to production
 
 Now that you're done developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
@@ -226,11 +314,9 @@ Now that you're done developing your application, it is time to back your app wo
 ### Create a dedicated capacity
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure.
 
->[!Note]
->Embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage.
->
+Embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
-### Assign app workspace to dedicated capacity
+### Assign an app workspace to a dedicated capacity
 
 Once dedicated capacity is created, assign the app workspace to the dedicated capacity. To complete this, follow these steps.
 
@@ -241,8 +327,6 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
 2. Expand **Advanced**, then enable **Dedicated capacity**, then select the dedicated capacity you created. Then select **Save**.
 
     ![Assign dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
-
-For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
 For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
