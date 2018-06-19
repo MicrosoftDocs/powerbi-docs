@@ -22,7 +22,7 @@ For customers and users without Power BI licenses, you can embed dashboards and 
 To view a sample of how embedding works, see the [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 ## Embedding for your organization
-Embedding for your organization allows you to extend the Power BI service. This requires that users of your application sign into the Power BI service when they want to view their content. Once someone in your organization signs in, they will only have access to dashboards and reports that they own or that have been shared with them in the Power BI service. 
+Embedding for your organization allows you to extend the Power BI service. This requires that users of your application sign into the Power BI service when they want to view their content. Once someone in your organization signs in, they will only have access to dashboards and reports that they own or that have been shared with them in the Power BI service.
 
 *Examples of embedding for your organization include internal web application, the SharePoint Online web part and Microsoft Teams integration.*
 
@@ -37,7 +37,7 @@ Self-service capabilities, such as edit, save and more, are available through th
 You can go through the [Onboarding experience tool to embed for your organization](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that walks you through integrating a report for your organization.
 
 ## Embedding for your customers
-Embedding for your customers provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Your customers don't need to know anything about Power BI. At least one Power BI Pro account is needed to create an embedded application. The Power BI Pro account acts as a master account for your application. Think of this as a proxy account. The Power BI Pro account also allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned/managed by your application. 
+Embedding for your customers provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Your customers don't need to know anything about Power BI. At least one Power BI Pro account is needed to create an embedded application. The Power BI Pro account acts as a master account for your application. Think of this as a proxy account. The Power BI Pro account also allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned/managed by your application.
 
 *An example of embedding for your customers is an ISV application being sold to other companies.*
 

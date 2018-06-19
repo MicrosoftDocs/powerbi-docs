@@ -905,16 +905,6 @@
         href: developer/embed-sample-for-customers.md
     - name: Concepts
       items: 
-      - name: Working with Power BI REST APIs
-        items:
-        - name: "What can I do with the Power BI API?"
-          href: developer/overview-of-power-bi-rest-api.md
-        - name: "Power BI REST API limitations"
-          href: developer/api-rest-api-limitations.md
-        - name: "Dataset properties"
-          href: developer/api-dataset-properties.md
-        - name: "Data model versioning"
-          href: developer/api-data-model-versioning.md
       - name: "Power BI permissions"
         href: developer/power-bi-permissions.md
       - name: "Row-level security (RLS)"
@@ -1020,7 +1010,17 @@
     - name: Tutorials
       items: 
     - name: Concepts
-      items: 
+      items:
+      - name: Working with Power BI REST APIs
+        items:
+        - name: "What can I do with the Power BI API?"
+          href: developer/overview-of-power-bi-rest-api.md
+        - name: "Power BI REST API limitations"
+          href: developer/api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: developer/api-dataset-properties.md
+        - name: "Data model versioning"
+          href: developer/api-data-model-versioning.md
     - name: How to
       items: 
       - name: "Push data into a dashboard"
