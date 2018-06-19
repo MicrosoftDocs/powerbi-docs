@@ -89,15 +89,15 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
 
     The original plotting command was the following:
 
-    corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
+    plt.matshow(dataset.corr('pearson'))
 
     With a few changes in the Python script, the command is now the following:
 
-    corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
+    plt.matshow(dataset.corr('kendall'))
 
-    As a result, the Python visual now plots circles, only considers at the upper half, and reorders the matrix to cluster correlated attributes, as shown in the following image.
+    As a result, the Python visual now plots using Kendall Tau correlation coefficient, as shown in the following image.
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+    ![](media/desktop-python-visuals/python-visuals-7.png)
 
     When executing a Python script that results in an error, the Python visual is not plotted and an error message is displayed on the canvas. For details on the error, select **See details** from the Python visual error on the canvas.
 
