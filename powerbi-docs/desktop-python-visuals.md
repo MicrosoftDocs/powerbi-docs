@@ -22,14 +22,14 @@ With **Power BI Desktop**, you can use **Python** to visualize your data.
 ## Enable Python visuals
 To enable Python visuals, select **File > Options and settings > Options** and in the **Options** page that appears, make sure your local Python installation is specified in the **Python Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of Python is **C:\Python27** and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local Python installation you want **Power BI Desktop** to use.
    
-   ![](media/desktop-r-visuals/r-visuals-2.png)
+   ![](media/desktop-python-visuals/python-visuals-1.png)
 
 Once you specify your Python installation, you’re ready to begin creating Python visuals.
 
 ## Create Python visuals in Power BI Desktop
 1. Select the **Python Visual** icon in the **Visualization** pane, as shown in the following image, to add an Python visual.
    
-   ![](media/desktop-r-visuals/r-visuals-3.png)
+   ![](media/desktop-python-visuals/python-visuals-2.png)
 
    When you add an Python visual to a report, **Power BI Desktop** does the following:
    
@@ -37,7 +37,7 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
    
    - The **Python script editor** appears along the bottom of the center pane.
    
-   ![](media/desktop-r-visuals/r-visuals-4.png)
+   ![](media/desktop-python-visuals/python-visuals-3.png)
 
 2. Next, add fields you want to consume in your Python script to the **Values** section in the **Fields** well, just as you would with any other **Power BI Desktop** visual. 
     
@@ -59,7 +59,7 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
    * The default aggregation is *do not summarize*
    * Similar to table visuals, fields are grouped and duplicate rows only appear once
    
-   ![](media/desktop-r-visuals/r-visuals-5.png)
+   ![](media/desktop-python-visuals/python-visuals-5.png)
    
    > [!TIP]
    > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, you can add an index field to your dataset that causes all rows to be considered unique and which prevents grouping.
@@ -79,11 +79,11 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
 
     The following image shows an example of the correlation plot code, and it plots the correlations between attributes of different types of cars.
 
-    ![](media/desktop-r-visuals/r-visuals-6.png)
+    ![](media/desktop-python-visuals/python-visuals-6.png)
 
 5. To get a larger view of the visualizations, you can minimize the **Python script editor**. And, of course, like other visuals in **Power BI Desktop**, you can cross filter the correlation plot by selecting only sport cars in the donut visual (the round visual on the right, in the above example image).
 
-    ![](media/desktop-r-visuals/r-visuals-7.png)
+    ![](media/desktop-python-visuals/python-visuals-7.png)
 
 6. You can also modify the Python script to customize the visual, and take advantage of the power of Python by adding parameters to the plotting command.
 
@@ -97,11 +97,11 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
 
     As a result, the Python visual now plots circles, only considers at the upper half, and reorders the matrix to cluster correlated attributes, as shown in the following image.
 
-    ![](media/desktop-r-visuals/r-visuals-8.png)
+    ![](media/desktop-python-visuals/python-visuals-8.png)
 
     When executing a Python script that results in an error, the Python visual is not plotted and an error message is displayed on the canvas. For details on the error, select **See details** from the Python visual error on the canvas.
 
-    ![](media/desktop-r-visuals/r-visuals-9.png)
+    ![](media/desktop-python-visuals/python-visuals-9.png)
 
     > **Python scripts security:** Python visuals are created from Python scripts, which could contain code with security or privacy risks. When attempting to view or interact with an Python visual for the first time, a user is presented with a security warning message. Only enable Python visuals if you trust the author and source, or after you review and understand the Python script.
     > 
