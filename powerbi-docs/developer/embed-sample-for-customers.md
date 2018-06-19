@@ -149,6 +149,24 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to [get an Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using app owns data before you make calls to the Power BI API.
 
+To embed your Power BI content, you need to do a couple of things to make sure it embeds correctly. While all of these steps can be done with the REST API directly, the steps to follow the sample application below, and the examples described in this article, are made with the .NET SDK.
+
+To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
+
+```C#
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Microsoft.Rest;
+using Microsoft.PowerBI.Api.V2;
+
+var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+
+// Create a Power BI Client object. It will be used to call Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
+{
+    // Your code to embed items.
+}
+```
+
 Follow these steps to start embedding your content using a sample application.
 
 1. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
