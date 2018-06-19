@@ -987,16 +987,6 @@
           href: power-bi-custom-visuals-certified.md
         - name: "Publish custom visuals to AppSource"
           href: developer/office-store.md      
-      - name: Content Pack Certification
-        items: 
-        - name: "Content Pack Certification Program"
-          href: developer/service-content-pack-overview.md
-        - name: "Template Content Pack authoring"
-          href: developer/template-content-pack-authoring.md
-        - name: "Template Content Pack testing"
-          href: developer/template-content-pack-testing.md
-        - name: "Template Content Pack experiences"
-          href: developer/template-content-pack-experience.md
     - name: Reference
       items: 
       - name: "Custom Visuals Git Repo"

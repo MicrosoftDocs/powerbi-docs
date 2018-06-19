@@ -4,7 +4,6 @@ description: Power BI offers APIs for embedding your dashboards and reports into
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
