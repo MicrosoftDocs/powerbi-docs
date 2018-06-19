@@ -20,7 +20,7 @@ You can run Python scripts directly in **Power BI Desktop**, and import the resu
 To run Python scripts in Power BI Desktop, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/). The current release of Python scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ## Run Python scripts
-With just a few steps in Power BI Desktop, you can run Python scripts and create a data model, from which you can create reports, and share them on the Power BI service. Python scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
+With just a few steps in Power BI Desktop, you can run Python scripts and create a data model, from which you can create reports, and share them on the Power BI service.
 
 ### Prepare an Python script
 To run an Python script in Power BI Desktop, create the script in your local Python development environment, and make sure it runs successfully.
@@ -37,19 +37,17 @@ When preparing and running an Python script in Power BI Desktop, there are a few
 ### Run your Python script and import data
 1. In Power BI Desktop, the Python Script data connector is found in **Get Data**. To run your Python Script, select **Get Data &gt; More...**, then select **Other &gt; Python script** as shown in the following image:
    
-   ![](media/desktop-r-scripts/r-scripts-1.png)
+   ![](media/desktop-python-scripts/python-scripts-1.png)
 2. If Python is installed on your local machine, the latest installed version is selected as your Python engine. Simply copy your script into the script window and select **OK**.
    
-   ![](media/desktop-r-scripts/r-scripts-2.png)
-3. If Python is not installed, is not identified, or if there are multiple installations on your local machine, expand **Python Installation Settings** to display installation options, or to select which installation you want to run the Python script.
+   ![](media/desktop-python-scripts/python-scripts-2.png)
+3. If Python is not installed, is not identified, or if there are multiple installations on your local machine, warning will be displayed.
    
-   ![](media/desktop-r-scripts/r-scripts-3.png)
+   ![](media/desktop-python-scripts/python-scripts-3.png)
    
-   If Python is installed and is not identified, you can explicitly provide its location in the text box provided when you expand **Python Installation Settings**. In the above image, the path *C:\Python27\* is explicitly provided in the text box.
+   Python installation settings are centrally located in the Python Scripting section of the Options dialog. To specify your Python installation settings, select **File > Options and settings** and then **Options > Python scripting**. If multiple installations of Python are available, a drop-down menu appears that allows you to select which installation to use. You can also select **Other** and give custom path.
    
-   Python installation settings are centrally located in the Python Scripting section of the Options dialog. To specify your Python installation settings, select **File > Options and settings** and then **Options > Python scripting**. If multiple installations of RPython are available, a drop-down menu appears that allows you to select which installation to use.
-   
-   ![](media/desktop-r-scripts/r-scripts-4.png)
+   ![](media/desktop-python-scripts/python-scripts-4.png)
 4. Select **OK** to run the Python Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
 
 ### Refresh
