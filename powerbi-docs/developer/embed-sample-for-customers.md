@@ -153,7 +153,7 @@ To embed your Power BI content, you need to do a few of things to make sure it e
 
 To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
 
-```C#
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Microsoft.PowerBI.Api.V2;
@@ -224,7 +224,7 @@ You can use the Power BI client object to retrieve a reference to the item you w
 
 A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
 
-```C#
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -242,7 +242,7 @@ A sample of this is available within **Controllers\HomeController.cs** from the 
 
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
-```C#
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
