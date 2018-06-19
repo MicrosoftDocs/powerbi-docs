@@ -7,20 +7,18 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2018
+ms.date: 06/18/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Publish apps with dashboards and reports in Power BI
 
-In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. Read more about [creating app workspaces](service-create-workspaces.md).
+In Power BI, you can publish *apps* with collections of related dashboards and reports. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. Read more about [creating app workspaces](service-create-workspaces.md).
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards.  
-
-With the new app workspace experiences, now in preview, you can create collections of dashboards and reports and publish them as apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
+Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
 
@@ -37,7 +35,7 @@ Apps are the evolution of organizational content packs. Content packs aren't ava
 Each member of an app workspace needs a Power BI Pro license. For app users, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
+* Option 2: If your app resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
@@ -95,22 +93,20 @@ After you publish your app, you may want to change or update it. It’s easy to 
 The people you’ve published the app to automatically see the updated version of the app. 
 
 ## Automatically install apps for end users
-You can automatically install apps for end users, making it easier to distribute the right apps to the right people or groups.
-
-Apps deliver data that your end users need to do their jobs. Now you can automatically install these apps in the Apps content list rather than you finding it from Microsoft AppSource, or following an installation link. This makes it easier for you to roll out standard Power BI content to your users.
+Apps deliver data that your end users need to do their jobs. If an admin gives you permissions, you can automatically install apps for end users, making it easier to distribute the right apps to the right people or groups. Your app will appear automatically in your end users' Apps content list rather than them having to find it from Microsoft AppSource, or following an installation link. This makes it easier for you to roll out standard Power BI content to your users.
 
 ### How to install an app automatically for end users
-Once the admin has enabled the feature, the app publishers have a new option available to **install the app automatically**. When the box is ***checked*** and the application publisher selects **Finish** (or **Update app**, for existing apps), the app will be pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
+Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Finish** (or **Update app**, for existing apps), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-access.png)
 
 ### How users get the apps that were pushed to them
-After you push an app, it shows up in the Apps list automatically. You can curate the apps that a user or job role in your organization need to have at their fingertips.
+After you push an app, it shows up in the Apps list automatically. You can curate the apps that specific users or job roles in your organization needs to have at their fingertips.
 
 ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### Considerations for automatically installing apps
-Here are some things to keep in mind when pushing apps to end users:
+Here are things to keep in mind when pushing apps to end users:
 
 * Installing an app automatically to users can take time. Most apps will install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
@@ -120,7 +116,7 @@ Here are some things to keep in mind when pushing apps to end users:
 
 * Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
 
-* Guest users who have not accepted an invite will not get apps automatically installed for them.  
+* Guest users who have not accepted an invite won't get apps automatically installed for them.  
 
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.
