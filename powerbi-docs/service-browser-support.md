@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 06/13/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
