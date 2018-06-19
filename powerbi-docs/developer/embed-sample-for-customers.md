@@ -89,7 +89,7 @@ You need to enable additional permissions for your application in addition to wh
 
 8. Within **Required permissions**, select **Grant Permissions**.
    
-    The **Grant Permissions** action is needed for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you need to grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you need to grant permissions only to the *master account* for this application.
+    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you need to grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you need to grant permissions only to the *master account* for this application.
    
     ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
@@ -160,7 +160,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
+// Create a Power BI Client object. It is used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -177,7 +177,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId** follow these steps:
+    Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId**, follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
@@ -202,8 +202,8 @@ Follow these steps to start embedding your content using a sample application.
 
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-    * Fill in the **pbiUsername** with the master user Power BI account.
-    * Fill in the **pbiPassword** with the password for the master user Power BI account.
+    * Fill in the **pbiUsername** with the Power BI master user account.
+    * Fill in the **pbiPassword** with the password for the Power BI master user account.
 
 3. Run the application!
 
@@ -220,15 +220,15 @@ Follow these steps to start embedding your content using a sample application.
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ### Get the content item you want to embed
-Use the Power BI client object to retrieve a reference to the item you want to embed. You can embed reports, dashboards, or tiles or reports. Here is a code  example of how to retrieve the first report from a given workspace.
+You can use the Power BI client object to retrieve a reference to the item you want to embed. Here is a code sample of how to retrieve the first report from a given workspace.
 
-A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) sample.
+A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
 
 ```C#
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
 
 // Get the first report in the group.
@@ -236,9 +236,9 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### Create the embed token
-An embed token needs to be generated which can be used from the JavaScript API. The embed token will be specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
+An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
-A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) sample.
+A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
 
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
@@ -309,7 +309,7 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 ## Move to production
 
-Now that you're done developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
+Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
 
 ### Create a dedicated capacity
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure.
