@@ -943,8 +943,6 @@
         href: developer/integrate-tile.md
       - name: "Integrate a Power BI report into an app (user owns data)"
         href: developer/integrate-report.md
-      - name: "Integrate content into your application (app owns data)"
-        href: developer/embed-sample-for-customers.md
       - name: "Integrate content into your application for sovereign clouds (app owns data)"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Embed custom layouts into an app"
