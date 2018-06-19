@@ -29,7 +29,7 @@ These restrictions and notes may change as we continue to improve the experience
 ## Using the 'Open in Power BI' button
 
 > [!Important]
-> We have been improving our connectivity to Azure SQL Data Warehouse.  For the best experience, which allows for full data modeling, connect from Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Azure SQL Data Warehouse in the Power BI service is now deprecated.
+> We have been improving our connectivity to Azure SQL Data Warehouse.  For the best experience to connect to your Azure SQL Data Warehouse data source, use Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Azure SQL Data Warehouse in the Power BI service is now deprecated.
 >
 
 The easiest way to move between your SQL Data Warehouse and Power BI is with the **Open in Power BI** button within the Azure Preview Portal. This button allows you to seamlessly begin creating new dashboards in Power BI.
