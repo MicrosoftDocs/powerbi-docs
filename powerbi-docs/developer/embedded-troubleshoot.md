@@ -63,7 +63,7 @@ At least one user must be signed up for Power BI. If you do not see **Power BI S
 
 **API call returning 400**
 
-If you are using Power BI embedded and utilizing Azure AD Direct Authentication and facing issues with logging in such as **Unauthorized_client** or **Error validating credentials** then you’ve tried to sign in too many times with an incorrect user ID or password."  This is because direct authentication has been turned off for all customers as of 6/14/2018.
+If you are using Power BI embedded and utilizing Azure AD Direct Authentication and facing issues with logging in such as **Unauthorized_client** or **Error validating credentials** then you’ve tried to sign in too many times with an incorrect user ID or password. This is because direct authentication has been turned off for all customers as of 6/14/2018.
 
 We recommend to use the [Azure AD Conditional Access](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) support for blocking legacy authentication or use [Azure AD Directory Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
 
