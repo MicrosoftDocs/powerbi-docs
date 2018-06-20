@@ -1,15 +1,15 @@
 ---
 title: Template content pack experiences in Power BI
 description: Template Content Pack Experiences
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Template content pack experiences in Power BI
