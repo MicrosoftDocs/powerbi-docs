@@ -4,13 +4,11 @@ description: Azure SQL Database with DirectQuery
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 06/20/2018
 ms.author: maghan
-
 LocalizationGroup: Data from databases
 ---
 # Azure SQL Database with DirectQuery
@@ -27,7 +25,11 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Q&A is not available for DirectQuery datasets
 * Schema changes are not picked up automatically
 
-These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below. 
+These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.
+
+> [!Important]
+> We have been improving our connectivity to Azure SQL Database.  For the best experience to connect to your Azure SQL Database data source, use Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Azure SQL Database in the Power BI service is now deprecated.
+>
 
 ## Power BI Desktop and DirectQuery
 In order to connect to Azure SQL Database using DirectQuery, you will need to use Power BI Desktop. This approach provides additional flexibility and capabilities. Reports created using Power BI Desktop can then be published to the Power BI service. You can learn more about how to connect to [Azure SQL Database using DirectQuery](desktop-use-directquery.md) within Power BI Desktop. 
