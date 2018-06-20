@@ -28,7 +28,7 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.
 
 > [!Important]
-> We have been improving our connectivity to Azure SQL Data Warehouse.  For the best experience to connect to your Azure SQL Data Warehouse data source, use Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Azure SQL Data Warehouse in the Power BI service is now deprecated.
+> We have been improving our connectivity to Azure SQL Database.  For the best experience to connect to your Azure SQL Database data source, use Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Azure SQL Database in the Power BI service is now deprecated.
 >
 
 ## Power BI Desktop and DirectQuery
