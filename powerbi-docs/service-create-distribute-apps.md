@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 06/19/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -21,6 +21,8 @@ In Power BI, you can publish *apps* with collections of related dashboards and r
 Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
+
+**Did you know?** Power BI is previewing a new workspace experience. Read [Create the new workspaces (preview)](service-create-the-new-workspaces.md) to see how workspaces will change in the future. 
 
 ## Apps and organizational content packs
 Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences preview. After the new workspace experiences is generally available, you won't be able to use content packs in newly created workspaces. If you haven'tt already, start migrating your content packs to apps.

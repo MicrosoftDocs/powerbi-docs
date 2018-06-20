@@ -308,6 +308,8 @@
           href: service-share-dashboards.md
         - name: "Create app workspaces"
           href: service-create-workspaces.md
+        - name: "Create the new workspaces (preview)"
+          href: service-create-the-new-workspaces.md
         - name: "Distribute apps with dashboards and reports"
           href: service-create-distribute-apps.md
         - name: "Share a filtered report"

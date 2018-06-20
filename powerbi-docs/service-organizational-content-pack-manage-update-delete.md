@@ -8,14 +8,14 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 06/19/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 > [!NOTE]
-> You can't create organizational content packs or use them as a data source in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-workspaces.md).
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
