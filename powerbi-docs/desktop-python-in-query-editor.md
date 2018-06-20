@@ -24,19 +24,19 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
 
 1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get Data > CSV** from the **Home** ribbon in **Power BI Desktop**.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
 2. Select the file and select **Open**, and the CSV is displayed in the **CSV file** dialog.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
 3. Once the data is loaded, you'll see it in the **Fields** pane in Power BI Desktop.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
 4. Open **Query Editor** by selecting **Edit Queries** from the **Home** tab in **Power BI Desktop**.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
 5. In the **Transform** tab, select **Run Python Script** and the **Run Python Script** editor appears (shown in the next step). Notice that rows 15 and 20 suffer from missing data, as do other rows you can't see in the following image. The steps below show how Python can (and will) complete those rows for you.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. For this example, enter the following script code:
    
        library(mice)
@@ -53,13 +53,13 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
    
    When put into the **Run Python Script** dialog, the code looks like the following:
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5b.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
 7. After selecting **OK**, **Query Editor** displays a warning about data privacy.
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
 8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
    
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
+   ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
    Notice a new column in the **Fields** pane called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
    
@@ -69,7 +69,7 @@ With just five lines of Python script, **Query Editor** filled in the missing va
 ## Creating visuals from Python script data
 Now we can create a visual to see how the Python script code using the *mice* library completed the missing values, as shown in the following image:
 
-![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
+![](media/desktop-python-in-query-editor/python-in-query-editor-8a.png)
 
 Once that visual is complete, and any other visuals you might want to create using **Power BI Desktop**, you can save the **Power BI Desktop** file (which saves as a .pbix file) and then use the data model, including the Python scripts that are part of it, in the Power BI service.
 
@@ -88,11 +88,11 @@ There are some limitations to queries that include Python scripts created in **Q
 
 * All Python data source settings must be set to *Public*, and all other steps in a query created in **Query Editor** must also be public. To get to data source settings, in **Power BI Desktop** select **File > Options and settings > Data source settings**.
   
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
+  ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
   From the **Data Source Settings** dialog, select the data source(s) and then select **Edit Permissions...** and ensure that the **Privacy Level** is set to *Public*.
   
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
+  ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * To enable scheduled refresh of your Python visuals or dataset, you need to enable **Scheduled refresh** and have a **Personal Gateway** installed on the computer that houses the workbook and the Python installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
 
 There are all sorts of things you can do with Python and custom queries, so explore and shape your data just the way you want it to appear.
