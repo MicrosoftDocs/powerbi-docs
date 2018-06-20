@@ -61,6 +61,40 @@ At least one user must be signed up for Power BI. If you do not see **Power BI S
 
 ## REST API
 
+**API call returning 400**
+
+If you are using Power BI embedded and utilizing Azure AD Direct Authentication and facing issues with logging in such as **Unauthorized_client** or **Error validating credentials** then you’ve tried to sign in too many times with an incorrect user ID or password."  This is because direct authentication has been turned off for all customers as of 6/14/2018.
+
+We recommend to use the [Azure AD Conditional Access](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) support for blocking legacy authentication or use [Azure AD Directory Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+
+However, there is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+**We recommend you enable this only on a per-app basis and only as needed for a workaround.**
+
+To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
+
+1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Run the following powershell commands line-by-line (making sure the variable $sp doesn’t have more than 1 application as a result).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+After assigning the policy, please wait approximately 15-20 seconds for propagation before testing.
+
 **API call returning 401**
 
 A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
@@ -127,10 +161,6 @@ If the user is unable to see the report or dashboard, make sure the report or da
 **Report or dashboard is performing slowly**
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
-
-## Authentication
-
-
 
 ## Onboarding experience tool for embedding
 
