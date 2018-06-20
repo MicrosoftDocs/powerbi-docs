@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 ---
 # Organizational content packs: Copy, refresh, and get access
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
  
 

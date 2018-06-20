@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 ---
 # Find and connect to an organizational content pack
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs into apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in AppSource.  Browse or search AppSource to find and open organizational content packs.
