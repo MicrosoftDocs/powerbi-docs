@@ -241,7 +241,7 @@ Report report = reports.Value.FirstOrDefault();
 ### Create the embed token
 An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
-*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
+*You can see examples of this within each content item task from the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**.
 
