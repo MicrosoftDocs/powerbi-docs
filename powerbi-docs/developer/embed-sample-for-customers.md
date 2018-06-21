@@ -200,11 +200,11 @@ Follow these steps to start embedding your content using a sample application.
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## Embed your content within your application
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
+Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
 
-Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to [get an Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/).
+Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
-To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
+To create the Power BI Client with your **access token**, you want to create your Power BI client object which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). This is done by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -269,7 +269,7 @@ You can use JavaScript to load a report into a div element on your web page.
 
 Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-*A sample of adding a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>
