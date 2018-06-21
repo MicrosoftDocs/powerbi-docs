@@ -266,7 +266,7 @@ A sample of this is available within **Views\Home\EmbedDashboard.cshtml** from t
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
-```JavaScript
+```javascript
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
 <script>
