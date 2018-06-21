@@ -200,7 +200,7 @@ Follow these steps to start embedding your content using a sample application.
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## Embed your content within your application
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
+Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
 Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
