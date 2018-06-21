@@ -1,15 +1,15 @@
 ---
 title: Overview of the Power BI service content pack program
 description: Content Pack Certification Program
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Overview of the Power BI service content pack program

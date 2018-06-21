@@ -1,15 +1,15 @@
 ---
 title: Author template content packs in Power BI
 description: Template Content Pack Authoring
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Author template content packs in Power BI
