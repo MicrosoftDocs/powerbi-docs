@@ -899,8 +899,10 @@
       href: developer/what-can-you-do.md
   - name: Tutorials
     items: 
-    - name: "Embed content for customers"
+    - name: "Embed content for your customers"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed content for your organization"
+      href: developer/embed-sample-for-your-organization.md
   - name: Concepts
     items: 
     - name: Working with Power BI REST APIs
