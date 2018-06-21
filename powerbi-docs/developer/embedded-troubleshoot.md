@@ -61,9 +61,42 @@ At least one user must be signed up for Power BI. If you do not see **Power BI S
 
 ## REST API
 
-**API call returning 400**
+**API call returning 401**
 
-If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as **Unauthorized_client**, **Error validating credentials** or **you’ve tried to sign in too many times with an incorrect user ID or password**, that is because direct authentication has been turned off as of 6/14/2018.
+A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
+
+**API call returning 403**
+
+A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
+
+* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* The Azure AD auth token expired.
+* The authenticated user is not a member of the group (app workspace).
+* The authenticated user is not an admin of the group (app workspace).
+* The authorization header may not be listed correctly. Make sure there are no typos.
+
+The backend of the application may need to refresh the auth token before calling GenerateToken.
+
+```
+    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+    Host: wabi-us-north-central-redirect.analysis.windows.net
+    ...
+    Authorization: Bearer eyJ0eXAiOi...
+    ...
+ 
+    HTTP/1.1 403 Forbidden
+    ...
+     
+    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
+
+## Authentication
+
+**Authentication failed with AADSTS70002 or AADSTS50053**
+
+**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
+
+If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error":"unauthorized_client","error_description":"AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018.
 
 We recommend to use the [Azure AD Conditional Access](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) support for blocking legacy authentication or use [Azure AD Directory Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
 
@@ -94,35 +127,6 @@ Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id
 ```
 
 After assigning the policy, please wait approximately 15-20 seconds for propagation before testing.
-
-**API call returning 401**
-
-A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
-
-**API call returning 403**
-
-A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
-
-* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
-* The Azure AD auth token expired.
-* The authenticated user is not a member of the group (app workspace).
-* The authenticated user is not an admin of the group (app workspace).
-* The authorization header may not be listed correctly. Make sure there are no typos.
-
-The backend of the application may need to refresh the auth token before calling GenerateToken.
-
-```
-    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-    Host: wabi-us-north-central-redirect.analysis.windows.net
-    ...
-    Authorization: Bearer eyJ0eXAiOi...
-    ...
- 
-    HTTP/1.1 403 Forbidden
-    ...
-     
-    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
 
 **Generate token fails when providing effective identity**
 
