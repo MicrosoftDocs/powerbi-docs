@@ -3,7 +3,7 @@ title: Find and connect to organizational content packs - Power BI
 description: Find and open an organizational content pack in Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: 
+ms.reviewer: lukaszp
 
 ms.service: powerbi
 ms.component: powerbi-service

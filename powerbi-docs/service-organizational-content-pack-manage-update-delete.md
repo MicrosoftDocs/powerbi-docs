@@ -3,7 +3,7 @@ title: 'Organizational content packs: Manage and update'
 description: Read about managing, updating, and deleting organizational content packs in Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 
 ms.service: powerbi
 ms.component: powerbi-service

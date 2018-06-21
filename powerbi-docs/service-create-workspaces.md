@@ -1,9 +1,9 @@
 ---
 title: Create workspaces with your colleagues in Power BI
-description: Learn how to create the workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
+description: Learn how to create workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
-
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Create workspaces with your colleagues in Power BI
 
-In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle those together into *apps* which you can distribute to your whole organization or to specific people or groups. 
+In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle those together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
 ![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
@@ -73,9 +73,7 @@ In the current workspaces you can also connect using organizational content pack
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. 
-
-Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Power BI apps FAQ
 

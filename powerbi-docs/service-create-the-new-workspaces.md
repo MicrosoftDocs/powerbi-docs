@@ -3,7 +3,7 @@ title: Create the new workspaces (preview) - Power BI
 description: Learn how to create the new workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
-
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
@@ -29,7 +29,7 @@ During the preview period, old and new workspaces can coexist side by side, and 
 
 ## Convert old app workspaces to new app workspaces
 
-During the preview period, you can't convert your old app workspaces to new ones automatically. You can however create a new app workspace and publish your content to the new location. 
+During the preview period, you can't automatically convert your old app workspaces to new ones. You can however create a new app workspace and publish your content to the new location. 
 
 When the new workspaces are generally available (GA), you can opt in to migrate the old ones automatically. At some point after GA, you'll have to migrate them.
 
@@ -77,7 +77,7 @@ When the new workspaces are generally available (GA), you can opt in to migrate 
 
 ## Add content to your app workspace
 
-After you've created an app workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the current workspaces you can also connect to organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the new workspaces, you can't connect to content packs.
+After you've created an app workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the new workspaces, you can't connect to organizational content packs, or third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the current workspaces you can connect to content packs.
 
 When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
 
@@ -90,11 +90,11 @@ With the new workspaces preview, you can't create or consume organizational cont
 
 ## Roles in the new workspaces
 
-Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to user groups: security groups, Office 365 groups, distribution lists, and individuals. 
+Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
 When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission. A user who's in several user groups with different roles gets the highest level of permission granted them. 
 
-The new workspaces offer more roles than the old workspaces had: admins, members, and contributors.
+The new workspaces offer three roles: admins, members, and contributors.
 
 **Admins can:**
 
@@ -115,41 +115,39 @@ The new workspaces offer more roles than the old workspaces had: admins, members
 
 - Create, edit, and delete content in the workspace. 
 - Publish reports to the workspace, delete content.
-- Can’t give new people access to content; can’t share new content, but can share with someone with whom the workspace, item, or the app is already shared. 
+- Can’t give new people access to content; can’t share new content, but can share with someone with whom the workspace, item, or app is already shared. 
 - Can’t modify the members of the group.
  
-We’re building Request Access workflows throughout the service so users who don’t have access can request it, on an as-needed basis. Request Access workflows currently exist for dashboards, reports, and apps.
+We’re building Request Access workflows throughout the service so users who don’t have access can request it. Request Access workflows currently exist for dashboards, reports, and apps.
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. 
-
-Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Power BI apps FAQ
 
-### How are the new app workspaces different from existing app workspaces?
+### How are the new app workspaces different from current app workspaces?
 * Creating app workspaces won't create corresponding entities in Office 365 like current app workspaces do. (You can still add an Office 365 group to your workspace by assigning it a role). 
-* In existing app workspaces, you can add only individuals to the members and admin lists. In the new app workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
-- You can create an organizational content pack from an existing app workspace. You can't create one from the new app workspaces.
-- You can consume an organizational content pack from an existing app workspaces. You can’t consume one from the new app workspaces.
-- During the preview some capabilities aren't enabled yet for new app workspaces. See the next section, [Other planned new workspace features ](service-create-the-new-workspaces.md#other-planned-new-app-workspace-preview-features), for details.
+* In current app workspaces, you can add only individuals to the members and admin lists. In the new app workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
+- You can create an organizational content pack from a current app workspace. You can't create one from the new app workspaces.
+- You can consume an organizational content pack from a current app workspace. You can’t consume one from the new app workspaces.
+- During the preview some capabilities aren't enabled yet for new app workspaces. See the next section, [Other planned new workspace features](service-create-the-new-workspaces.md#other-planned-new-app-workspace-preview-features), for details.
 
 ## Other planned new app workspace preview features
 
-Some other new app workspace preview features are still being developed, but aren't there yet as we launch the preview:
+Some other new app workspace preview features are still being developed, but aren't available yet as we launch the preview:
 
-•	No **Leave workspace** button.
-•	Usage metrics aren't supported yet.
-•	Having Azure B2B guest users isn't supported yet.
-•	How Premium works: You can assign and create workspaces in a Premium capacity, but to move a workspace between capacities, go to the workspace’s settings.
-•	SharePoint web part embedding isn't supported yet.
-•	No **OneDrive** button for Office 365 groups in Get Data/Files.
+- No **Leave workspace** button.
+- Usage metrics aren't supported yet.
+- Having Azure B2B guest users isn't supported yet.
+- How Premium works: You can assign and create workspaces in a Premium capacity, but to move a workspace between capacities, go to the workspace’s settings.
+- SharePoint web part embedding isn't supported yet.
+- No **OneDrive** button for Office 365 groups in Get Data/Files.
 
-Some features work differently from existing app workspaces. These differences are intentional, based on feedback we’ve received from customers and will enable a more flexible approach to collaboration with workspaces:
+Some features work differently from current app workspaces in the new app workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
 
-•	Members can or can't reshare: replaced by the Contributor role
-•	Read-only workspaces: replaced by a forthcoming Viewer role, which allows read-only access to content in a workspace.
+- Members can or can't reshare: replaced by the Contributor role
+- Read-only workspaces: replaced by a forthcoming Viewer role, which allows read-only access to content in a workspace.
 
 
 ## Next steps
