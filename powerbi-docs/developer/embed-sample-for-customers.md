@@ -145,27 +145,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
 
-## Embed your content
+## Embed your content within a sample application
 
 Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to [get an Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using app owns data before you make calls to the Power BI API.
-
-To embed your Power BI content, you need to do a few of things to make sure it embeds correctly. While all of these steps can be done with the REST API directly, the steps to follow the sample application below, and the examples described in this article, are made with the .NET SDK.
-
-To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
-
-```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
-
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
-
-// Create a Power BI Client object. It is used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Your code to embed items.
-}
-```
 
 Follow these steps to start embedding your content using a sample application.
 
@@ -219,10 +201,34 @@ Follow these steps to start embedding your content using a sample application.
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
+## Embed your content within your application
+
+Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
+
+Within your application, you first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](https://review.docs.microsoft.com/power-bi/developer/get-azuread-access-token?branch=pr-en-us-791).
+
+*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
+
+To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
+
+```csharp
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Microsoft.Rest;
+using Microsoft.PowerBI.Api.V2;
+
+var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+
+// Create a Power BI Client object. It is used to call Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
+{
+    // Your code to embed items.
+}
+```
+
 ### Get the content item you want to embed
 You can use the Power BI client object to retrieve a reference to the item you want to embed. Here is a code sample of how to retrieve the first report from a given workspace.
 
-A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
+*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -238,9 +244,11 @@ Report report = reports.Value.FirstOrDefault();
 ### Create the embed token
 An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
-A sample of this is available within **Controllers\HomeController.cs** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
+*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
 
-This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
+This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**.
+
+*A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs** file.*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -262,7 +270,7 @@ var embedConfig = new EmbedConfig()
 ### Load an item using JavaScript
 You can use JavaScript to load a report into a div element on your web page. The sample uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-A sample of this is available within **Views\Home\EmbedDashboard.cshtml** from the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData).
+*A sample of this is available within the **Views\Home\EmbedDashboard.cshtml** file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
