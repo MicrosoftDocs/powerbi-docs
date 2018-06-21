@@ -204,7 +204,7 @@ Even though the steps to embed your content can be done with the [Power BI REST 
 
 Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to [get an Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/).
 
-*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
+*You can see examples of this within each content item task from the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 To create the Power BI Client with your access token, you want to create your Power BI client object which allows you to interact with the Power BI APIs. This is done by wrapping the AccessToken with a ***Microsoft.Rest.TokenCredentials*** object.
 
@@ -225,7 +225,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ### Get the content item you want to embed
 You can use the Power BI client object to retrieve a reference to the item you want to embed. Here is a code sample of how to retrieve the first report from a given workspace.
 
-*You can see examples of this within each content item task from the **Controllers\HomeController.cs** file in the [sample application](#embed-your-content-within-a-sample-application).*
+*You can see examples of this within each content item task from the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -245,7 +245,7 @@ An embed token needs to be generated which can be used from the JavaScript API. 
 
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**.
 
-*A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs** file.*
+*A sample of these are available within the Models\EmbedConfig.cs file and the Models\TileEmbedConfig.cs file.*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -267,7 +267,7 @@ var embedConfig = new EmbedConfig()
 ### Load an item using JavaScript
 You can use JavaScript to load a report into a div element on your web page. The sample uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-*A sample of this is available within the **Views\Home\EmbedDashboard.cshtml** file in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of this is available within the Views\Home\EmbedDashboard.cshtml file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
