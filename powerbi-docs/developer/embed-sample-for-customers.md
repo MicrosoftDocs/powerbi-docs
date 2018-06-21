@@ -221,11 +221,11 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### Get the content item you want to embed
-You can use the Power BI client object to retrieve a reference to the item you want to embed. Here is a code sample of how to retrieve the first report from a given workspace.
+You can use the Power BI client object to retrieve a reference to the item you want to embed.
 
-Here is a sample of adding a report item to your application.
+Here is a code sample of how to retrieve the first report from a given workspace.
 
-*A sample of getting a content item (report, dashboard, or tile) that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of getting a content item whether it is a report, dashboard, or tile that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -265,9 +265,9 @@ var embedConfig = new EmbedConfig()
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs file**.
 
 ### Load an item using JavaScript
-You can use JavaScript to load a report into a div element on your web page. The sample uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
+You can use JavaScript to load a report into a div element on your web page. 
 
-Here is a sample of adding a report item to your application.
+Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
 *A sample of adding a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
 
