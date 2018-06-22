@@ -39,15 +39,13 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
    ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. For this example, enter the following script code:
    
-       library(mice)
-       tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
-       completedData <- complete(tempData,1)
-       output <- dataset
-       output$completedValues <- completedData$"SMI missing values"
+       import pandas as pd
+       completedData = dataset.fillna(method='backfill', inplace=False)
+       dataset["completedValues"] =  completedData["SMI missing values"]
    
    > [!NOTE]
-   > You'll need to have the *mice* library installed in your Python environment for the previous script code to work properly. To install mice, run the following command in your Python installation:
-   > |      > install.packages('mice')
+   > You'll need to have the *pandas* library installed in your Python environment for the previous script code to work properly. To install pandas, run the following command in your Python installation:
+   > |      > pip install pandas
    > 
    > 
    
@@ -61,13 +59,13 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
-   Notice a new column in the **Fields** pane called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
+   Notice a new column in the **Fields** pane called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. Take a look at how Python handles that in the next section.
    
 
 With just five lines of Python script, **Query Editor** filled in the missing values with a predictive model.
 
 ## Creating visuals from Python script data
-Now we can create a visual to see how the Python script code using the *mice* library completed the missing values, as shown in the following image:
+Now we can create a visual to see how the Python script code using the *pandas* library completed the missing values, as shown in the following image:
 
 ![](media/desktop-python-in-query-editor/python-in-query-editor-8a.png)
 
