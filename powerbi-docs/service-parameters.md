@@ -37,4 +37,4 @@ Once the parameters are defined in Desktop, when that [report is published to Po
 
 
 ## Next steps
-An ad-hoc way to add simple parameters is by [modifying the URL](service-url-filters).
+An ad-hoc way to add simple parameters is by [modifying the URL](service-url-filters.md).
