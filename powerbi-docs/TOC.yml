@@ -12,6 +12,8 @@
     items: 
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
+    - name: "Get started with Power BI"
+      href: service-get-started.md
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -382,6 +384,8 @@
           href: service-excel-workbook-files.md
         - name: "Get data from Power BI Desktop files"
           href: service-desktop-files.md
+        - name: "Parameters settings for datasets"
+          href: service-parameters.md
         - name: "Get data from comma separated value (.csv) files"
           href: service-comma-separated-value-files.md
         - name: "Real-time streaming in Power BI (Preview)"

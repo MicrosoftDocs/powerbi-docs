@@ -1,6 +1,6 @@
 ---
-title: Get started with Power BI service
-description: Get started with Power BI service
+title: Get started with Power BI service (Power BI online)
+description: Get started with Power BI online (app.powerbi.com)
 author: adamw
 manager: kfile
 ms.reviewer: ''
@@ -9,17 +9,35 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 06/22/2018
 ms.author: mihart
+# Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
 LocalizationGroup: Get started
+
 ---
-# Get started with Power BI service (app.powerbi.com)
-This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](guided-learning/gettingstarted.yml?tutorial-step=1).
+# Tutorial: Get started with Power BI service (app.powerbi.com)
+This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](power-bi-overview.md).
 
-![art showing relatioship between Desktop, service, mobile](media/service-get-started/power-bi-components.png)
+![art showing relationship between Desktop, service, mobile](media/service-get-started/power-bi-components.png)
 
-Power BI service has a free version and a Pro version. No matter which version you're using, *if you already have an account*, open a browser and type app.powerbi.com to open Power BI service. If you're a new user, we recommend starting at www.powerbi.com instead. From here you can learn more about Power BI before logging in to the service.  When you're ready to try it out, select the **Sign up free** link that you'll see in the upper right corner. If your administrator has already enabled Power BI for you, don't use the Sign up free button, but instead go directly to app.powerbi.com. 
+In this tutorial, you complete the following steps:
+
+> [!div class="checklist"]
+> * Learn the difference between "free" and Pro versions of Power BI
+> * Find other getting started content for Power BI service
+> * Sign in to your Power BI online account, or sign up, if you don't have one yet
+> * Open the Power BI service
+> * Get some data and open it in report view
+> * Use that data to create visualizations and save as a report
+> * Create a dashboard by pinning tiles from the report
+> * Add another visualization to your dashboard using the Q&A natural language tool
+> * Clean up resources by deleting the dataset, report, and dashboard
+
+## Sign up for Power BI service
+If you're not signed up for Power BI, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+
+If you already have an account, open a browser and type app.powerbi.com to open Power BI service. 
 
 ![Sign in or Sign up free](media/service-get-started/power-bi-sign-up.png)
 
@@ -32,10 +50,9 @@ Visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBH
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
-> 
-> 
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
+## What is Power BI service?
+Microsoft Power BI service is sometimes referred to as Power BI online or app.powerbi.com. Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
 
 If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by connecting to Salesforce to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](service-create-distribute-apps.md) have been published for you.
 
@@ -124,26 +141,21 @@ Now that you've connected to data, start exploring.  When you've found something
 
    ![dashboard with chart pinned](media/service-get-started/power-bi-final-dashboard.png)
 
+## Clean up resources
+Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
+
+1. In the left navigation bar, select **My Workspace**.
+2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
+3. Select the ellipses (...) > **Delete**.
+
+    ![Delete the dataset](media/service-get-started/power-bi-delete.jpg)
+
+    Deleting the dataset will also delete the report and the dashboard. 
+
+
 ## Next steps
 Ready to try more?  Here are some great ways to explore Power BI.
 
-* [Connect to another dataset](service-get-data.md).
-* [Share your dashboard](service-share-dashboards.md) with your colleagues.
-* Read [tips for designing dashboards](service-dashboards-design-tips.md).
-* View your dashboards with a [Power BI app on a mobile device](mobile-apps-for-mobile-devices.md)
-
-Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
-
-* [Learn how reports, datasets, dashboards, and tiles all fit together](service-basic-concepts.md)
-* Visit our [Power BI Guided Learning](guided-learning/index.md) site and take a few (very short) courses
-* Watch some [Power BI videos](videos.md)
-* [See what samples we have available for you to use](sample-datasets.md)
-
-### Stay in touch with Power BI
-* Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
-* Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
-* Watch our [Power BI Getting Started webinars](webinars.md) on demand
-* Not sure where to go for help? See our [10 tips for getting help](service-tips-for-finding-help.md) page
-
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+> [!div class="nextstepaction"]
+> [Connect to the online services you use](./service-connect-to-services.md)
 
