@@ -12,7 +12,7 @@ ms.author: maghan
 
 ---
 # Publish custom visuals to AppSource
-Learn how you can publish your custom visual to AppSource for others to discover and use. office
+Learn how you can publish your custom visual to AppSource for others to discover and use.
 
 Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
 
