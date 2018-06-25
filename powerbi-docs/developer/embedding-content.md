@@ -124,7 +124,7 @@ Moving to production requires a few extra steps.
 
 If you are embedding for your organization, you only need to let people know how to get to your application. 
 
-Free users can consume content that is embedded from an app workspace (group) if dedicated capacity backs that workspace. List the Free user as a member of app workspace (group); otherwise, you receive a 401 unauthorized error. The following table lists the available Power BI Premium SKUs available within Office 365.
+All users, regardless of the license they're assigned, can consume content that is embedded from an app workspace (group), if dedicated capacity backs that workspace. That said, you must explicitly add to the app workspace any users who don't have a Power BI Pro license; otherwise, you receive a 401 unauthorized error. The following table lists the available Power BI Premium SKUs available within Office 365.
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
