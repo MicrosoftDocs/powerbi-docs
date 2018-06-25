@@ -32,7 +32,7 @@ Power BI enables administrators to script common tasks with PowerShell cmdlets. 
 | **Restore-PowerBIWorkspace** | Groups\_RestoreDeletedGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId}/restore | Restores a deleted workspace. |
 | **Set-PowerBIWorkspace** | Groups\_UpdateGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId} | Updates the properties of a given workspace. |
 | **Get-PowerBIDataset -WorkspaceId** | Groups\_GetDatasetsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/datasets | Gets the datasets within a given workspace. |
-| **Export-PowerBIReport** | Reports\_ExportReportAsAdmin | /v1.0/myorg/admin/reports/{reportkey}/export | Exports a give report to a local file. |
+| **Export-PowerBIReport** | Reports\_ExportReportAsAdmin | N/A | Exports a give report to a local file. |
 | **Get-PowerBIReport** | Reports\_GetReportsAsAdmin | /v1.0/myorg/admin/reports | Gets the full list of reports in a Power BI tenant. |
 | **Get-PowerBIDashboard** | Dashboards\_GetDashboardsAsAdmin | /v1.0/myorg/admin/dashboards | Gets the full list of dashboards in a Power BI tenant. |
 | **Get-PowerBIDashboard -WorkspaceId** | Groups\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Gets the dashboards within a given workspace. |
