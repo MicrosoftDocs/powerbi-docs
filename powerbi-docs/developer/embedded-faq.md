@@ -70,7 +70,7 @@ Here is a partial list of differences you may use with each.
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase     |Azure portal |Office |Office |
-|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Share content with Power BI FREE users outside PowerBI.com and embed in other SaaS applications (SharePoint, Teams) |* Embed content in your own application<br>* Share content with Power BI FREE users outside PowerBI.com and embed in other SaaS applications (SharePoint, Teams)<br>* Share content with Power BI FREE users through PowerBI.com  |
+|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Share content with any Power BI user outside PowerBI.com, and embed in other SaaS applications (SharePoint, Teams) |* Embed content in your own application<br>* Share content with any Power BI user outside PowerBI.com, and embed in other SaaS applications (SharePoint, Teams)<br>* Share content with any Power BI user through PowerBI.com  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams |Combine embedding in applications and use the Power BI Service in the same capacity |
