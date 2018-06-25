@@ -23,9 +23,7 @@ Power BI is a cloud-based business analytics service that enables anyone to visu
 ## What’s the difference between Power BI Pro and Power BI Premium?
 Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. 
 
-Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring per-user licenses for recipients viewing the content. 
-
-Learn more about [the capabilities of Power BI Pro and Power BI Premium](service-free-vs-pro.md).
+Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring per-user licenses for recipients viewing the content.
 
 ## How much does Power BI cost?
 Power BI Desktop is free. There is a 60-day free trial available for Power BI Pro. Read about pricing at [Power BI pricing](https://powerbi.microsoft.com/pricing).
