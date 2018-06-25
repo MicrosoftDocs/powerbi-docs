@@ -75,7 +75,7 @@ There are several tools related to Power BI administration, which are covered in
 | Office 365 Security & Compliance Center |<ul><li>Review and manage auditing of events</ul>|
 | Azure Active Directory (AAD) in the Azure portal |<ul><li>Configure conditional access to Power BI resources through AAD<br><li>Provision Power BI Embedded capacity</ul>|
 | PowerShell cmdlets |<ul><li>Manage workspaces and other aspects of Power BI through scripts</ul>|
-| Administrative APIs |<ul><li>Build custom administrative tools to facilitate the work of a Power BI admin. For example, Power BI Desktop can use these APIs to build reports based on data related to administration</ul>|
+| Administrative APIs and SDK |<ul><li>Build custom administrative tools to facilitate the work of a Power BI admin. For example, Power BI Desktop can use these APIs to build reports based on data related to administration</ul>|
 
 ## Next steps
 
