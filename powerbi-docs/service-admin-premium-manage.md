@@ -207,6 +207,6 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 For more information, see [Install Power BI Report Server](report-server/install-report-server.md).
 
 ## Next steps
-Share published apps with Free users when you assign the workspace to a Premium capacity. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+Share published apps with users. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
