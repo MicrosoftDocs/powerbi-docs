@@ -35,7 +35,8 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 > 
 
 ## Sign up for the Power BI service
-Go to Power BI (https://powerbi.com) for the service, if you haven't already. It's free.
+If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and under **Power BI - Cloud collaboration and sharing**, select **Try free**.
+
 
 ## Get started with the Power BI app
 1. In the iPhone, open the Power BI app.
