@@ -37,7 +37,7 @@ Power BI enables administrators to script common tasks with PowerShell cmdlets. 
 | **Get-PowerBIDashboard** | Dashboards\_GetDashboardsAsAdmin | /v1.0/myorg/admin/dashboards | Gets the full list of dashboards in a Power BI tenant. |
 | **Get-PowerBIDashboard -WorkspaceId** | Groups\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Gets the dashboards within a given workspace. |
 | **Get-PowerBITile -DashboardId** | Dashboards\_GetTilesAsAdmin | /v1.0/myorg/admin/dashboards/{dashboard\_id}/tiles | Gets the tiles of a given dashboard. |
-| **Get-PowerBIReport** | Groups\_GetReportsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/reports | Gets the reports within a given workspace. |
+| **Get-PowerBIReport -WorkspaceId** | Groups\_GetReportsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/reports | Gets the reports within a given workspace. |
 | **Get-PowerBIImport** | Imports\_GetImportsAsAdmin | /v1.0/myorg/admin/imports | Gets the full list of imports in a Power BI tenant. |
 | **Connect-PowerBIServiceAccount** | N/A | N/A | Login to Power BI and start a session. |
 | **Disconnect-PowerBIServiceAccount** | N/A | N/A | Logout of Power BI and close the existing session. |
