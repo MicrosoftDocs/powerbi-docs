@@ -30,7 +30,7 @@ Knowing how your content is being used helps you demonstrate your impact and pri
 Running usage metrics reports is only available in Power BI service.  However, if you save a usage metrics report or pin it to a dashboard, you will be able to open and interact with that report on mobile devices.
 
 ### Prerequisites
-- The usage metrics feature captures usage information from all users, both Free and Pro. However, a Pro license is required to run and access the usage metrics data.
+- The usage metrics feature captures usage information from all users, regardless of the license they're assigned. However, a Power BI Pro license is required to run and access the usage metrics data.
 - Usage metrics are provided on dashboards or reports in the selected workspace. To  access usage metrics for a particular dashboard or report, you must:    
     • Have edit access to that dashboard or report   
     • Have a Pro license

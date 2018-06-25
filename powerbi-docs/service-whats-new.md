@@ -59,7 +59,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Granular admin control for [publish to web](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## September 2017
-* Share dashboards to free users with Premium.
+* In Premium capacity, share dashboards to users who don't have a Power BI Pro license.
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
@@ -218,7 +218,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Analyze in Excel***
 
-* [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+* [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users, regardless of the license they're assigned.
 * Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
@@ -564,7 +564,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **July 24, 2015**
 
-* We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
+* We're excited to announce our "general availability" (GA) release of Power BI. Sign up today for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 * [Power BI groups](service-create-distribute-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](service-organizational-content-pack-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
