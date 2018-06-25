@@ -1241,6 +1241,10 @@
       href: service-admin-syndication-partner.md
     - name: "Configure mobile apps with Intune"
       href: service-admin-mobile-intune.md
+  - name: Reference
+    items: 
+    - name: "PowerShell, REST APIs, and .NET SDK"
+      href: service-admin-reference.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
