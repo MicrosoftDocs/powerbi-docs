@@ -14,7 +14,7 @@ ms.author: mblythe
 LocalizationGroup: Administration
 ---
 
-# PowerShell cmdlets, REST APIs, and SDK for Power BI administration
+# PowerShell cmdlets, REST APIs, and .NET SDK for Power BI administration
 Power BI enables administrators to script common tasks with PowerShell cmdlets. It also exposes REST APIs and provides a .NET SDK for developing administrative solutions. This topic shows a list of cmdlets and the corresponding SDK method and REST API endpoint. For more information, see:
 
   - PowerShell [download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) and [documentation](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps)
