@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 # Power BI Premium release notes
 These are the release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes, and the ability to distribute content without per-user licenses for viewers.
 
-* Users with Power BI Free licenses can now view dashboards shared with them from Premium workspaces in the Power BI service.
+* All users, regardless of license type, can now view dashboards shared with them from Premium workspaces in the Power BI service.
 * Capacity admins now automatically get capacity assignment permissions.
 * Dynamic row-level security (RLS) is now available for embedded use cases. For more information, see [Row-level security (RLS) with embedded analytics](developer/embedded-row-level-security.md).
 * Distributing Power BI apps to users in other AAD tenants using powerbi.com is not yet supported. We are working on enabling this.
