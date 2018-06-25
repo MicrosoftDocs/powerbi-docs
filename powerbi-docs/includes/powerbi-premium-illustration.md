@@ -6,7 +6,7 @@
 
    * Sharing an app requires a Pro license, but consuming an app doesn't.
 
-   * All dashboard recipients can set data alerts, regardless of their license type.
+   * All dashboard recipients, regardless of the license they're assigned, can set data alerts.
 
    * REST APIs for embedding use a service account with a Pro license, rather than a user account.
 
