@@ -24,7 +24,6 @@ This tutorial helps you get started with ***Power BI service***. For an understa
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
-> * Learn the difference between "free" and Pro versions of Power BI
 > * Find other getting started content for Power BI service
 > * Sign in to your Power BI online account, or sign up, if you don't have one yet
 > * Open the Power BI service
@@ -61,7 +60,7 @@ Read about all the other ways to [get data for Power BI](service-get-data.md).
 ## Step 1: Get data
 Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
+1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
 2. Power BI opens in your browser. Select **Get Data** at the bottom of the left navigation bar.
    
    ![get data](media/service-get-started/getdata3.png)
