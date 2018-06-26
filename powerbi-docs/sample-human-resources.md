@@ -51,7 +51,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
- * [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+ * [Human Resources Sample PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.

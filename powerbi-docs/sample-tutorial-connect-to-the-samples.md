@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 06/23/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
