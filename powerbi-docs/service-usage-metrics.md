@@ -30,7 +30,7 @@ Knowing how your content is being used helps you demonstrate your impact and pri
 Running usage metrics reports is only available in Power BI service.  However, if you save a usage metrics report or pin it to a dashboard, you will be able to open and interact with that report on mobile devices.
 
 ### Prerequisites
-- The usage metrics feature captures usage information from all users, both Free and Pro. However, a Pro license is required to run and access the usage metrics data.
+- The usage metrics feature captures usage information from all users, regardless of the license they're assigned. However, a Power BI Pro license is required to run and access the usage metrics data.
 - Usage metrics are provided on dashboards or reports in the selected workspace. To  access usage metrics for a particular dashboard or report, you must:    
     • Have edit access to that dashboard or report   
     • Have a Pro license
@@ -60,11 +60,8 @@ To dig down into the report data, or to build your own reports against the datas
 
 5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menubar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard you can monitor the usage metrics more-easily or share them with others.
    
-   > **NOTE**: If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
-   > 
-   > 
-
-<br><br>
+    > [!NOTE]
+    > If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
 
 ## What metrics are reported?
 | Metric | Dashboard | Report | Description |
@@ -143,6 +140,8 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 3. Enable (or disable) usage metrics and select **Apply**.
    
     ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
 
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 

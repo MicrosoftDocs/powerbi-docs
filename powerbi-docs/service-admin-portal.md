@@ -96,6 +96,8 @@ For more information about audit logs, see [Auditing Power BI in your organizati
 
 The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a given feature to be available to a specific group. If this is the case, you can switch it off in your tenant.
 
+For example, per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
+
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
@@ -231,7 +233,7 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 
 ## R visuals settings
 
-### Interact with an dshare R visuals
+### Interact with and share R visuals
 
 Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
 

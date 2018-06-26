@@ -16,11 +16,10 @@ LocalizationGroup: Gateways
 # Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources
 You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your On-premises data gateway with Kerberos. The On-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
 
-The following data sources are currently supported, SQL Server, SAP HANA, and Teradata, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx).
+The following data sources are currently supported, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx):
 
 * SQL Server
 * SAP HANA
-* SAP BW
 * Teradata
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source.  When single sign-on is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
