@@ -17,7 +17,7 @@ Learn how to integrate, or embed, a tile into a web app using REST API calls alo
 
 ![Embedded tile in web application](media/integrate-tile/powerbi-embedded-tile.png)
 
-To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](../service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) for testing purposes.
+To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI Pro trial](../service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) for testing purposes.
 
 > [!NOTE]
 > Looking to embed a tile for your customers, using an embedtoken, instead? See, [Integrate a dashboard, tile, or report into your application for your customers](embed-sample-for-customers.md).

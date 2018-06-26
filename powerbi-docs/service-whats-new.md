@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/06/2018
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -27,11 +27,19 @@ You can also check out the YouTube channels for information about "What's new" a
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## April 2018
+## May 2018
+* [Theme dashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) in the Power BI service.
+* [Incremental refresh](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) with Premium.
+* Request access workflow for [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Get Data updates to make it easier for users to find [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Settings to turn on and off [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI service.
+* Azure B2B invite workflow improvements for reports.
+
+## Previous months (2018)
+### April 2018
 * [Power BI GDPR Whitepaper](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Power BI Service [audit logs](https://docs.microsoft.com/power-bi/service-admin-auditing) turned-on by default for Office 365 tenant.
 
-## Previous months (2018)
 ### March 2018
 * [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI Service.
 * Share content with users using their personal e-mail accounts. Extension of [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
