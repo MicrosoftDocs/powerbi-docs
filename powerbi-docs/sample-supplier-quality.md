@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 06/26/2018
 ms.author: mihart
 
 LocalizationGroup: Samples
@@ -53,7 +53,7 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
- * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+ * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier%20Quality%20Analysis%20Sample%20PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529779) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
