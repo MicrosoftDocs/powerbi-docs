@@ -141,6 +141,8 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
    
     ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
+By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
+
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 
 ## Considerations and limitations
