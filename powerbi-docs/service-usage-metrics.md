@@ -60,11 +60,8 @@ To dig down into the report data, or to build your own reports against the datas
 
 5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menubar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard you can monitor the usage metrics more-easily or share them with others.
    
-   > **NOTE**: If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
-   > 
-   > 
-
-<br><br>
+    > [!NOTE]
+    > If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
 
 ## What metrics are reported?
 | Metric | Dashboard | Report | Description |
