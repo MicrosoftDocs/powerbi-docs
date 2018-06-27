@@ -77,8 +77,8 @@ Your other option for registering your application is to do so directly in the A
     ![](media/register-app/azuread-new-app-registration.png)
 5. Follow the prompts and create a new application.
    
-   * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users can sign in e.g. http://localhost:13526.
-   * For Native Applications, provide a Redirect URI, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g http://myapplication/redirect
+   * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users can sign in e.g. `http://localhost:13526`.
+   * For Native Applications, provide a Redirect URI, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g `http://myapplication/redirect`
 
 For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
