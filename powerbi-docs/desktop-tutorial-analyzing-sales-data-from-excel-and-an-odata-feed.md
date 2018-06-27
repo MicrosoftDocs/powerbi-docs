@@ -216,7 +216,7 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
    
 2. With the chart selected, select **OrderDate** from **Orders**, or drag it onto the chart. The chart now shows line totals for each order date. 
    
-3. Resize the visualization by dragging the corners to to be able to see more data. 
+3. Resize the visualization by dragging the corners to be able to see more data. 
    
    ![LineTotals by OrderDate line chart](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
    
