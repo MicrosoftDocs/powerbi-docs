@@ -196,7 +196,7 @@ To get back to Report View from Relationships View, select the **Report View** i
 
 In Power BI Desktop Report View, you can create a variety of visualizations to gain insights from your data. You can build reports with multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand your data. For more information about viewing and editing reports in Power BI Service (your site), see [Edit a Report](service-interact-with-a-report-in-editing-view.md).
 
-You can use both of your data sets, and the relationship between them, to help visualize and and analyze your sales data. 
+You can use both of your data sets, and the relationship between them, to help visualize and analyze your sales data. 
 
 First, create a stacked column chart that uses fields from both queries to show the quantity of each product ordered. 
 
