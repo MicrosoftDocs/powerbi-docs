@@ -22,7 +22,7 @@ You'll then be prompted to launch the configuration wizard to set up your gatewa
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3b.png)
 
-You'll be asked first to sign in to your Power BI service account, and then to log in to the machine's Windows account, since the gateway service runs under your account.
+You'll be asked first to sign in to your Power BI service account, and then to sign in to the machine's Windows account, since the gateway service runs under your account.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3c.png)
 
