@@ -54,7 +54,7 @@ We'll create the table pictured above to display sales values by item category. 
      ![](media/power-bi-visualization-tables/pbi_pintile.png)
 
 ## Format the table
-There are many many ways to format a table and we'll only cover a few of them here. A great way to learn about the other formatting options is to open the Formatting pane (paint roller icon ![](media/power-bi-visualization-tables/power-bi-format.png)) and explore.
+There are many ways to format a table and we'll only cover a few of them here. A great way to learn about the other formatting options is to open the Formatting pane (paint roller icon ![](media/power-bi-visualization-tables/power-bi-format.png)) and explore.
 
 * Try formatting the table grid. Here we've added a blue vertical grid, added space to the rows, increased the outline and text size a bit.
   
