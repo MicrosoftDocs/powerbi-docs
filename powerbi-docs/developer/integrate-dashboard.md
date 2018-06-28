@@ -242,7 +242,7 @@ dashboard.on("error", function (event) {
 });
 ```
 
-If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app), clicking on a tile will output text below the dashboard. The text will look similar to the following. This would allow you to log that a tile was clicked, and then navigate the user to the appropriate location.
+If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/User%20Owns%20Data/integrate-dashboard-web-app), clicking on a tile will output text below the dashboard. The text will look similar to the following. This would allow you to log that a tile was clicked, and then navigate the user to the appropriate location.
 
 ```
 Tile Clicked
