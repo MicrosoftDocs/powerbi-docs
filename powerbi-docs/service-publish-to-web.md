@@ -130,7 +130,8 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 5. "R" Visuals are not currently supported in Publish to web reports.
 6. Exporting Data from visuals in a report which has been published to the web
 7. ArcGIS Maps for Power BI visuals
-8. [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
+8. Reports containing report-level DAX measures
+9. [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
 
 ## Tenant setting
 
