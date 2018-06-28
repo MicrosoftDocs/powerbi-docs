@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 06/27/2018
 ms.author: maggies
 
 ---
@@ -51,7 +51,8 @@ When you're offline with Power BI on your mobile device, you may encounter these
 * Power BI can cache up to 250 MB of data offline.
 * Some tile types require an active server connection, so they aren't available offline &#151; for example, Bing map tiles and some custom tiles.
 * Whole Excel workbooks in Power BI aren't available offline.
-* You can see Reporting Services mobile reports and KPIs offline, if you have viewed them while connected. They don't refresh in the background. They refresh every time you open them. 
+* You can see Reporting Services mobile reports and KPIs offline, if you have viewed them while connected. They don't refresh in the background. They refresh every time you open them.
+* In the Power BI mobile apps, you can't see Power BI Desktop (.pbix) files saved to Power BI Report Server. 
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
