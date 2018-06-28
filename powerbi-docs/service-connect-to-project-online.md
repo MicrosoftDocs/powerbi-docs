@@ -57,6 +57,7 @@ Note that you need to have Portfolio Viewer, Portfolio Manager or Administrator 
 * While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 **Expand the Content Pack**
+
 Download the [GitHub PBIT file](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) to further customize and update the Content Pack
 
 ## Next steps
