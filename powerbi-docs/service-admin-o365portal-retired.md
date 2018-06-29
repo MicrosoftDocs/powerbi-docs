@@ -26,6 +26,6 @@ For more information, see [Power BI admin portal](service-admin-portal.md).
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Getting started with Power BI Desktop](desktop-getting-started.md)
+[What is Power BI Desktop?](desktop-what-is-desktop.md)
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)

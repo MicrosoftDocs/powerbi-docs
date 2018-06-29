@@ -199,7 +199,7 @@ That’s all there is to connecting to data sources in Power BI Desktop! Try con
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Types in Power BI Desktop](desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
