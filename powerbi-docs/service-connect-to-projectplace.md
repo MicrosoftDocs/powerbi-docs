@@ -54,7 +54,7 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 To import your Projectplace data into Power BI, you must be a Projectplace user. This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and under **Power BI - Cloud collaboration and sharing**, select **Try free**. Then click **Get Data**.
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

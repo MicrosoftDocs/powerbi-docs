@@ -101,5 +101,5 @@ There are all sorts of things you can do with Power BI. For more information and
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
-* [Getting started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

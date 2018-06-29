@@ -68,5 +68,5 @@ If you're still having issues, open a support ticket to reach the Power BI team:
 ## Next steps
 [Get Data for Power BI](service-get-data.md)
 
-[Get Started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
