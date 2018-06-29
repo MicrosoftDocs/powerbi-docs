@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -191,6 +191,6 @@ Read more about [creating a phone view of a dashboard](service-create-dashboard-
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

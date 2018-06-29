@@ -68,7 +68,7 @@ In addition, the following model types and data sources are currently not suppor
 ## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
