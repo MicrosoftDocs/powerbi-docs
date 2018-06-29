@@ -226,7 +226,7 @@ With Q&A, you ask questions about your data in your own words, and Power BI prov
 Now you can have connections to up to five SQL Server Reporting Services (SSRS) servers at the same time.
 
 #### Android tablets
-**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI on your Android tablet](mobile-android-tablet-app-get-started.md).
+**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI on your Android tablet](mobile-android-app-get-started.md).
 
 #### iOS and Android devices
 **New menu for dashboard tiles** Navigate to the underlying report, expand the tile, or manage an alert, all directly from a menu on the tile on a dashboard. 
@@ -294,7 +294,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 #### Android tablets
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
-* Experience [Power BI on your Android tablet](mobile-android-tablet-app-get-started.md)
+* Experience [Power BI on your Android tablet](mobile-android-app-get-started.md)
 * Explore [Reporting Services mobile reports and KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### Android devices
