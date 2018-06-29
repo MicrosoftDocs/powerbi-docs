@@ -72,7 +72,7 @@ No longer use a report as often as you used to?  You can unfavorite it. When you
 > 
 
 ## Next steps
-[Get Started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

@@ -227,7 +227,7 @@ This area of the screen contains additional options for interacting with the con
    ![](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)  
+[What is Power BI?](power-bi-overview.md)  
 [Navigation: Getting around in Power BI service](service-the-new-power-bi-experience.md)
 [Power BI videos](videos.md)  
 [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
