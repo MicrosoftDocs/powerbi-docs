@@ -82,7 +82,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
     By default it searches all dashboards and reports, but you can search just one or the other.
 
 ## Find your content in the Power BI mobile apps
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![Left navigation pane](media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 

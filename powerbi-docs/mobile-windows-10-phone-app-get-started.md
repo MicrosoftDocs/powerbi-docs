@@ -83,7 +83,7 @@ Find your dashboards, reports, and apps quickly by typing in the search box, alw
    ![Relevant search results](media/mobile-windows-10-phone-app-get-started/pbi_win10_search_m.png)
 
 ## Find your content in the Power BI mobile apps
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![Power BI left navigation](media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
