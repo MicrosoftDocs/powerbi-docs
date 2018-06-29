@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -134,6 +134,7 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 * To **undo** your last action, or last few actions, press CTRL+Z.
 
 ## Next steps
+* [What is Power BI?](power-bi-overview.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 

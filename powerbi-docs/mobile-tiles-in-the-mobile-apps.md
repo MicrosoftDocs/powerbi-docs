@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -122,6 +122,6 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

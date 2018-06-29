@@ -106,7 +106,7 @@ Updating to the current version of Power BI Desktop usually solves this issue.
 ## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)

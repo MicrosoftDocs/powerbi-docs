@@ -65,4 +65,4 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
 
 ## Next steps
 [Get data for Power BI](service-get-data.md)
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
