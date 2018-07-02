@@ -4,9 +4,6 @@
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
-    - name: "PowerApps overview"
-      href: https://review.docs.microsoft.com/powerapps/maker/index?branch=master
-      maintainContext: true
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"
@@ -1242,6 +1239,9 @@
     items: 
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
+    - name: "Power BI cmdlets for PowerShell"
+      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      maintainContext: true
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
