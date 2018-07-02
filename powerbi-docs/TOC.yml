@@ -1239,6 +1239,9 @@
     items: 
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
+    - name: "Power BI cmdlets for PowerShell"
+      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      maintainContext: true
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
