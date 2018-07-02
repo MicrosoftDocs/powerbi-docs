@@ -48,9 +48,9 @@ Here's how to register your application with the Power BI App Registration Tool:
     You are then provided a **Client ID**, and if you select **Server-side Web app**, you receive a **Client Secret**. The **Client ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Client Secret**, you need to create a new one within the Azure portal.
 
 8. You need to navigate to Azure to select **Grant permissions**.
-> [!Note]
+   > [!Note]
     > Must be a global admin in the Azure tenant to complete this
->
+   >
 
 * Go to Azure.
 * Search and select **App registrations**.
@@ -155,44 +155,44 @@ You want to be logged in with either the *master* account, used for embedding or
    * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
     
-    *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
+     *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
    
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
+     ```
+     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+     Authorization: Bearer ey..qw
+     Content-Type: application/json
+     { 
+     "clientId":"{Service_Plan_ID}",
+     "consentType":"AllPrincipals",
+     "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
+     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+     "startTime":"2017-03-29T14:35:32.4933413+03:00"
+     }
+     ```
 
-5.  Grant App Permissions to Azure Active Directory (AAD)
+5. Grant App Permissions to Azure Active Directory (AAD)
    
-    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
+   The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-    * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
-    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
+   * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
+   * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
     
-    *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
+   *Grant permissions* is needed for the master account to avoid being prompted for consent by Azure AD which is not possible when doing non-interactive sign-in.
 
- ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
- ```
+   ```
+   Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+   Authorization: Bearer ey..qw
+   Content-Type: application/json
+   { 
+   "clientId":"{Service_Plan_ID}",
+   "consentType":"AllPrincipals",
+   "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
+   "scope":"User.Read Directory.AccessAsUser.All",
+   "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+   "startTime":"2017-03-29T14:35:32.4933413+03:00"
+   }
+   ```
 
 ## Next steps
 Now that you have registered your application within Azure AD, you need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md) to learn more.

@@ -73,7 +73,7 @@ To display options for a particular filter, select the down arrow next to the fi
 ## Add a filter
 * In Desktop and in Power BI service Editing view, add a filter to a visual, page, drillthrough, or report by selecting a field from the Fields pane and dragging it into the appropriate filter well, where you see the words **Drag fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
 
-- **Dragging a new field into the Visual level filter area does not add that field to the visual**, but it does allow you to filter the visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
+* **Dragging a new field into the Visual level filter area does not add that field to the visual**, but it does allow you to filter the visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 

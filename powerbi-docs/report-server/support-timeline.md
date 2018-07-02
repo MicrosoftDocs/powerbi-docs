@@ -23,6 +23,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
     ![Graph illustrating the support timeframe](media/support-timeline/report-server-support-timeline-mar-2018.png)
 
 ## Version history
+
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
 | June 2017 |June 12, 2017 |June 12, 2018 |

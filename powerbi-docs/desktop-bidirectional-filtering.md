@@ -28,13 +28,11 @@ To enable cross-filtering, in the **Edit Relationship** dialog for a relationshi
 
 * The **Cross filter direction** must be set to **Both**
 * The **Apply security filter in both directions** must also be selected
-  
+
   ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as *joe@contoso.com*) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipleName*.
-> 
-> 
+> When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as <em>joe@contoso.com</em>) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipleName*.
 
 For more information, and for examples of how bidirectional cross-filtering works, check out the [whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentioned earlier in this article.
 

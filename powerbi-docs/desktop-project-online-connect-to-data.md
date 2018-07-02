@@ -21,7 +21,7 @@ You can connect to data in Project Online through Power BI Desktop.
 
 ### Step 2: Connect to Project Online with OData
 1. Open **Power BI Desktop**.
-2. On the *Welcome* screen, select **﻿Get Data.**﻿
+2. On the *Welcome* screen, select <strong>﻿Get Data.</strong>﻿
 3. Choose **﻿OData feed**﻿ and select **﻿Connect**﻿.
 4. ﻿Enter the address for your OData feed in the URL box, and then click OK.
    

@@ -22,7 +22,7 @@ Getting an online link from **OneDrive for Business** does require a few specifi
 1. Navigate to your OneDrive for Business location using a browser. Right-click the file you want to use, and select **Open in Excel**.
    
    > [!NOTE]
-> Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your **OneDrive for Business** browser interface. You can use any option that allows you to open the file in Excel.
+   > Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your **OneDrive for Business** browser interface. You can use any option that allows you to open the file in Excel.
    > 
    > 
    

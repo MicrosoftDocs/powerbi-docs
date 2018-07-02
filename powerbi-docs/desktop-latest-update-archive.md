@@ -251,7 +251,7 @@ The links beside each update mean the following:
 * **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 * Some features have an **[article]** that provides more detail.
 * Most features are explained in the monthly update **[blog]** post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+* Lastly, some features are self-explanatory and don't need and article or video.
 
 You can also watch the **Latest Updates** video for this month from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
@@ -1840,15 +1840,15 @@ The following features have been added or improved in this update:
 	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
 	-   Show Selected Items option
 	-   Improved Search capabilities in the Navigator tree
--   New Transformations
-	-   Age and Subtract operations for Date/Time columns
-	-   Aggregate Columns: Option to disable new columns' prefix
--   Field List improvements
-	-   Expand/Collapse tables
-	-   Hide/Unhide fields
-	-   Optimized layout (spacing, margins, and fonts)
--   Report Pages Navigation - Keyboarding support
--   Lots of bug fixes
+- New Transformations
+  -   Age and Subtract operations for Date/Time columns
+  -   Aggregate Columns: Option to disable new columns' prefix
+- Field List improvements
+  -   Expand/Collapse tables
+  -   Hide/Unhide fields
+  -   Optimized layout (spacing, margins, and fonts)
+- Report Pages Navigation - Keyboarding support
+- Lots of bug fixes
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 
