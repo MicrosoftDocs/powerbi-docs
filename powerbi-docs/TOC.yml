@@ -5,7 +5,7 @@
     - name: "What is Power BI?"
       href: power-bi-overview.md
     - name: "PowerApps overview"
-      href: https://docs.microsoft.com/powerapps/maker/index
+      href: https://review.docs.microsoft.com/powerapps/maker/index?branch=master
       maintainContext: true
   - name: Quickstarts
     items: 
