@@ -4,6 +4,9 @@
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
+    - name: "PowerApps overview"
+      href: https://docs.microsoft.com/powerapps/maker/index
+      maintainContext: true
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"
