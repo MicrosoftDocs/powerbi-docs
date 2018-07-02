@@ -50,7 +50,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
 ### On-premises data gateway
-With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](service-gateway-personal-mode.md).
 
 ### Power BI Report Server
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
