@@ -166,7 +166,7 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
-**AADSTS90094: The grant requires admin permission**
+**AADSTS90094: The grant requires admin permission** 
 
 **_Symptoms_**
 When a non-admin user attempts to sign-in to an application for the first and grant consent she gets the following error:
