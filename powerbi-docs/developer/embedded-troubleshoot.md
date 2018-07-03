@@ -187,7 +187,7 @@ Several fixes are possible:
 1. In Azure Portal navigate to "Azure Active Directory" => "Users and groups" => "User settings"
 2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
 
-    ![Consent Test Fix](media/embedded-troubleshoot/consent-test-01.png)
+    ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
 
 *Grant permissions by an admin*
 Grant permissions to the application by an admin - either for the entire tenant or for a specific user.
