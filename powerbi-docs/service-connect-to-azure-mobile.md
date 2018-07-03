@@ -38,7 +38,7 @@ Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/gr
    
     ![](media/service-connect-to-azure-mobile/dashboard.png)
 
-   **What now?**
+## What now?
 
 * Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.

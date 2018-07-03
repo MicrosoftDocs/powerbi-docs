@@ -28,12 +28,10 @@ Tables are a great choice:
 
 > [!NOTE]
 > If a table has too many values, consider converting it to a matrix and/or using drilldown.
-> 
-> 
-> ## Prerequisites
->  - Power BI service or Power BI Desktop
->  - Retail Analysis sample
 
+## Prerequisites
+- Power BI service or Power BI Desktop
+- Retail Analysis sample
 
 ## Create a table
 We'll create the table pictured above to display sales values by item category. To follow along, sign in to Power BI service and select **Get Data \> Samples \> Retail Analysis Sample > Connect** and choose **Go to dashboard. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If a report has been shared with you, you won't be able to create visualizations in reports.
