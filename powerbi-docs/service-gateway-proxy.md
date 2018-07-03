@@ -1,4 +1,3 @@
-
 ---
 title: Configuring proxy settings for the On-premises data gateway
 description: Information regarding configuration of proxy settings for the On-premises data gateway.
@@ -74,23 +73,23 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ### Change the On-premises data gateway service account
 1. Change the Windows service account for the **On-premises data gateway service**.
-   
+
     The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
-   
+
     You will want to change the account on the **Log On** tab within the properties of the Windows service.
 2. Restart the **On-premises data gateway service**.
-   
+
     From an admin command prompt, issue the following commands.
-   
+
         net stop PBIEgwService
-   
+
         net start PBIEgwService
 3. Start the **On-premises data gateway configurator**. You can select the windows start button and search for *On-premises data gateway*.
 4. Sign in to Power BI.
 5. Restore the gateway using your recovery key.
-   
+
     This will allow the new service account to be able to decrypt stored credentials for data sources.
-    
+
 > [!NOTE]
 > When you change the service account directly using Services Control panel, it does not update ACLs automatically. You need to ensure that new service account has access to the installation files and folder. You can find Gateway Installation folder under C:\Program Files\On-premises data gateway. 
 > 

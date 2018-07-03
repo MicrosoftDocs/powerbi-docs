@@ -18,9 +18,9 @@ You've read [Reports in Power BI](service-reports.md) and now you want to create
 
 > **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
 > 
-### Prerequisites
-- Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
-- Retail Analysis sample dataset
+> ### Prerequisites
+> - Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
+> - Retail Analysis sample dataset
 
 ## Import the dataset
 This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
