@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/03/2018
 ms.author: maghan
 ---
 # Troubleshooting your embedded application
@@ -165,6 +165,32 @@ If the user is unable to see the report or dashboard, make sure the report or da
 **Report or dashboard is performing slowly**
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
+
+**AADSTS90094: The grant requires admin permission**
+
+**_Symptoms_**
+When a non-admin user attempts to sign-in to an application for the first and grant consent she gets the following error:
+* ConsentTest needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+* AADSTS90094: The grant requires admin permission.
+
+    ![Consent Test](media/embedded-troubleshoot/consent-test-01.png)
+
+An admin user can sign-in and grant consent successfully.
+
+**_Root cause_**
+User consent is disabled for the tenant.
+
+**_Fix_**
+Several fixes are possible:
+
+*Enable user consent for the entire tenant (all users, all applications)*
+1. In Azure Portal navigate to "Azure Active Directory" => "Users and groups" => "User settings"
+2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
+
+    ![Consent Test Fix](media/embedded-troubleshoot/consent-test-01.png)
+
+*Grant permissions by an admin*
+Grant permissions to the application by an admin - either for the entire tenant or for a specific user.
 
 ## Onboarding experience tool for embedding
 
