@@ -30,3 +30,9 @@ At the higher security setting, if there are custom connectors on your system, y
 ![A dialog will describe Custom Connectors that can't load due to security settings, in this case TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
 
 To resolve this, you need to change your security settings to the lower setting as described above, and restart Power BI.
+
+## Certified Connectors
+
+A limited subset of data extensions will be considered 'Certified'. This means that it will be released in context via the Get Data dialogue, but the responsible party for maintenance and support is still the third party developer. While Microsoft distributes these, we are not responsible for their uptime or continued functionality.
+
+If you would like a custom connector to be certified, please have your vendor reach out to Microsoft.
