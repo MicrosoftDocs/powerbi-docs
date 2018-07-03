@@ -1,3 +1,19 @@
+---
+title: Connector Extensibility in Power BI
+description: Connector extensibility capabilities, features, security settings, and certified connectors
+author: cpopell
+manager: kfile
+ms.reviewer: ''
+
+ms.service: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 7/3/2018
+ms.author: gepopell
+
+LocalizationGroup: Connect to data
+---
+
 # Connector Extensibility in Power BI
 
 In Power BI, customers and developers are able to extend the number of data sources that can be connected to in a variety of ways. While we offer the ability to connect to a variety of generic data sources (ODBC, OData, Oledb, Web, CSV, XML, JSON), we also offer the ability for developers to create data extensions that we call 'Custom Connectors', as well as certify them to make them 'Certified Connectors'.
