@@ -112,9 +112,9 @@ Or if you don’t have that in your data, create a field that concatenates your 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
 ## Next steps
- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Try it out -- it's free!](https://powerbi.com/)  
+[Sign up for a free trial](https://powerbi.microsoft.com/get-started/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

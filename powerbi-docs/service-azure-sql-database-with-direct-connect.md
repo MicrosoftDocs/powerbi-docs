@@ -55,6 +55,6 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ## Next steps
 [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md)  
-[Get started with Power BI](service-get-started.md)  
+[What is Power BI?](power-bi-overview.md)  
 [Get Data for Power BI](service-get-data.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

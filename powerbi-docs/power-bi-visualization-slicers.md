@@ -179,7 +179,7 @@ The other formatting options are off by default. When turned **On**:
 - **Border:** Adds a 1-pixel border around the slicer and sets its color. (This slicer border is separate from and unaffected by the General Outline settings.) 
 
 ## Next steps
-[Try it out - it's free!](https://powerbi.com/)
+[Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
 Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 

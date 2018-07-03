@@ -21,7 +21,7 @@ If you are a tenant admin, and want to see who has signed into Power BI, you can
 You can access the activity report within the [new](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) and the [classic](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Azure Active Directory (Azure AD) portals. While the video above uses the classic portal as an example, this article will highlight the new portal.
 
 > [!NOTE]
-> This activity report includes both Power BI (Free) and Pro users but does not identify them by which license they have.
+> This activity report doesn't identify the type of license each user has.
 > 
 > 
 

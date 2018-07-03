@@ -31,7 +31,7 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 3. Select **UserVoice**, then select **Get**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name.
+4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly `https://fabrikam.uservoice.com` replacing "fabrikam" with your product or service name.
    
    >[!NOTE]
    >There is no trailing slash at the end and the connection is in http**s**.
@@ -59,7 +59,7 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 
 If you see this error after typing your UserVoice URL. Make sure the following requirements are satisfied:
 
-* The URL follows exactly this pattern "https://fabrikam.uservoice.com" replacing "fabrikam" with your correct UserVoice URL prefix.
+* The URL follows exactly this pattern `https://fabrikam.uservoice.com` replacing "fabrikam" with your correct UserVoice URL prefix.
 * Make sure all the letters are lower case.
 * Make sure the URL is in 'http**s**'.
 * Make sure there are no trailing forward slash at the end of the URL.

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: sample
-ms.date: 05/21/2018
+ms.date: 06/23/2018
 ms.author: amac
 
 LocalizationGroup: Samples

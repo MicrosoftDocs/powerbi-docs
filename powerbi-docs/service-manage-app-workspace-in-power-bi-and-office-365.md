@@ -29,7 +29,7 @@ As creator or admin of an [app workspace in Power BI](service-install-use-apps.m
 * See the group email address.
 * Delete the group.
 
-You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or member of an app workspace. Your app users need a Power BI Pro license, too, unless your app workspace is in a Power BI Premium capacity. Then business users can access your app with a Power BI free license instead. Read [What is Power BI Premium?](service-premium.md) for details.
+You need a [Power BI Pro](service-free-vs-pro.md) license to be an admin or member of an app workspace. Your app users need a Power BI Pro license, too, unless your app workspace is in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Edit your app workspace in Power BI
 1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (**…**) next to your workspace name > **Edit workspace**. 

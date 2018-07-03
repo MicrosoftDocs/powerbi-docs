@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/22/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -85,7 +85,6 @@ Like the built-in and custom options, when the theme is uploaded, the colors wil
 
     ![Use destination theme](media/service-dashboard-themes/power-bi-use-destination.png)
 
-* Dashboard themes are currently not supported when viewing the dashboard embedded using the REST API, on mobile devices, or by external users.    
 * Dashboard themes cannot be applied to pinned live report pages, iframe tiles, SSRS tiles, workbook tiles, or images.
 * Dashboard themes can be viewed on mobile devices but creating a dashboard theme can only be done in Power BI service. 
 * Dashboard custom themes only work with tiles pinned from reports. 
