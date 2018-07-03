@@ -56,7 +56,7 @@ One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within
    * Existing dashboard: select the name of the dashboard from the dropdown.
    * New dashboard: type the name of the new dashboard.
    
-    ![Pin to dashboard dialog](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![Pin to dashboard dialog](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Select **Pin**. A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard. 
    
     ![Pinned to dashboard dialog](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)

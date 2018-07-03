@@ -1,4 +1,5 @@
 ## List of available data source types
+
 | **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** |
 | --- | --- | --- | --- |
 | Analysis Services Tabular |Yes |Yes |

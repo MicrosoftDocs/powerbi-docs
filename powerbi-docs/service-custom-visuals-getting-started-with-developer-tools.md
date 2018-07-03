@@ -28,14 +28,14 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
 1. Download and install [NodeJS](https://nodejs.org). Version 4.0 or later is required but it is recommended to have 5.0 or later.
 2. Install the command line tools. Run the following command from a command prompt.
-   
+
         npm install -g powerbi-visuals-tools
 3. You can confirm that the tools are installed by running the following command without any parameters.
-   
+
         pbiviz
-   
+
     You should see the help output.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -55,22 +55,22 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -99,7 +99,7 @@ To *create* a certificate, run the following command.
 To *install* the certificate, run the following command.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > You should see a message telling you to use your newly generated Passphrase to install a PFX certificate.
 > 
@@ -108,20 +108,20 @@ To *install* the certificate, run the following command.
 **Windows OS**
 
 1. Select **Install Certificate...**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Select **Current User** and then select **Next**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Select **Place all certificate in the following store** and select **Browse...**.
 4. Select **Trusted Root Certification Authorities** and then select **OK**. Select **Next**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Select **Finish**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Select **Yes** on the security warning dialog.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Close any browsers that you have open.
 
@@ -133,13 +133,13 @@ To *install* the certificate, run the following command.
 **OSX**
 
 1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Select **Always Trust** and close the window.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Enter your username and password. Select **Update Settings**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Close any browsers that you have open.
 
@@ -153,15 +153,15 @@ To enable a live preview of your custom visual, follow these steps. This allows 
 
 1. Browse and sign into [app.powerbi.com](https://app.powerbi.com).
 2. Select the **gear icon** and then select **Settings**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Select **Developer** and then select **Enable developer visual for testing**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Select the **Developer Visual** in the **Visualization** pane.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Create a new visual](#create-a-new-visual) in this article.
    > 
@@ -192,11 +192,11 @@ You can run your visual by doing the following.
 1. Open a prompt.
 2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
 3. Run the following command.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 If you are in the wrong location, you will see an error similar to the following.
@@ -245,7 +245,7 @@ You can package your visual by doing the following.
 1. Open a prompt.
 2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
 3. Run the following command.
-   
+
     ```
     pbiviz package
     ```
@@ -290,6 +290,7 @@ This would update yoru visual to API version 1.2.0. You can replace `1.2.0` with
 Your visual project is the folder that gets created when you run the `pbiviz new` command. 
 
 ### File structure
+
 | Item | Description |
 | --- | --- |
 | assets/ |Used to store visual assets (icon, screenshots, etc). |

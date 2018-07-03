@@ -112,7 +112,7 @@ Instructions as follows:
    [msmdsrv.exe] 
 
    Look for the port used by msmdsrv.exe, and write it for later use. In this case, you could use port 55786. 
-3.  **Connect SQL Server Profiler to Power BI Desktop** 
+3. **Connect SQL Server Profiler to Power BI Desktop** 
 
    - Start SQL Server Profiler from the **Start** menu 
    - **File** > **New Trace** 

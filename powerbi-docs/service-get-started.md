@@ -106,23 +106,23 @@ Now that you've connected to data, start exploring.  When you've found something
    
    ![pin icon](media/service-get-started/pinnew.png)
 
-5. Because this is a new report, you'll be prompted to save it before you can pin a visualization to a dashboard. Give your report a name (e.g., *Sales over time*) and select **Save and Continue**. 
+4. Because this is a new report, you'll be prompted to save it before you can pin a visualization to a dashboard. Give your report a name (e.g., *Sales over time*) and select **Save and Continue**. 
    
    ![Save report dialog](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-6. Let's pin the line chart to new dashboard and name it "Financial sample for tutorial". 
+5. Let's pin the line chart to new dashboard and name it "Financial sample for tutorial". 
    
    ![name the report](media/service-get-started/power-bi-pin.png)
    
- 1. Select **Pin**.
+1. Select **Pin**.
    
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
     ![Pinned to dashboard dialog](media/service-get-started/power-bi-pin-success.png)
 
-8. Select **Go to dashboard** to see the line chart pinned, as a tile, to your brand new dashboard. Make your dashboard even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning tiles](service-dashboard-edit-tile.md).
+6. Select **Go to dashboard** to see the line chart pinned, as a tile, to your brand new dashboard. Make your dashboard even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning tiles](service-dashboard-edit-tile.md).
    
-   ![dashboar with visualization pinned](media/service-get-started/power-bi-new-dashboard.png)
+   ![Dashboard with visualization pinned](media/service-get-started/power-bi-new-dashboard.png)
    
    Select the new tile on your dashboard to return to the report any time. Power BI returns you to the report editor in Reading view. To switch back to Editing view, select **Edit report** from the top menubar. Once in Editing view, continue exploring and pinning tiles. 
 
