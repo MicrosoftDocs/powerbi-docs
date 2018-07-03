@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/06/2018
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -27,11 +27,19 @@ You can also check out the YouTube channels for information about "What's new" a
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## April 2018
+## May 2018
+* [Theme dashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) in the Power BI service.
+* [Incremental refresh](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) with Premium.
+* Request access workflow for [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Get Data updates to make it easier for users to find [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Settings to turn on and off [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI service.
+* Azure B2B invite workflow improvements for reports.
+
+## Previous months (2018)
+### April 2018
 * [Power BI GDPR Whitepaper](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Power BI Service [audit logs](https://docs.microsoft.com/power-bi/service-admin-auditing) turned-on by default for Office 365 tenant.
 
-## Previous months (2018)
 ### March 2018
 * [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI Service.
 * Share content with users using their personal e-mail accounts. Extension of [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
@@ -59,7 +67,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Granular admin control for [publish to web](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## September 2017
-* Share dashboards to free users with Premium.
+* In Premium capacity, share dashboards to users who don't have a Power BI Pro license.
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
@@ -218,7 +226,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Analyze in Excel***
 
-* [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+* [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users, regardless of the license they're assigned.
 * Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
@@ -564,7 +572,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **July 24, 2015**
 
-* We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
+* We're excited to announce our "general availability" (GA) release of Power BI. Sign up today for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 * [Power BI groups](service-create-distribute-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](service-organizational-content-pack-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
@@ -658,7 +666,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 * Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)  
+[What is Power BI?](power-bi-overview.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

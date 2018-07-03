@@ -29,7 +29,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
     ![](media/service-connect-to-project-madeira/services.png)
 3. Select **Project "Madeira"**, then select **Get**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. When prompted, enter your Project “Madeira” URL. The URL needs to follow the following pattern exactly https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') with your Project “Madeira” company name. Note that there is no trailing slash at the end, and the connection is must be https. See details on finding this URL [below](#FindingParams).  
+4. When prompted, enter your Project “Madeira” URL. The URL needs to follow the following pattern exactly <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>') with your Project “Madeira” company name. Note that there is no trailing slash at the end, and the connection is must be https. See details on finding this URL [below](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. When prompted, select Basic as the Authentication Method, enter your Project “Madeira” email address as the username, and then enter the web service access key for your Project “Madeira” account as the password. If you are already signed in to Project “Madeira” in your browser, you may not be prompted for credentials. See details on generating this access key [below](#FindingParams).  
@@ -91,10 +91,10 @@ The Power BI dashboard relies on the published web services that are listed abov
 
 If you see this error after you enter your Project “Madeira” URL, make sure the following requirements are satisfied:  
 
-   - The URL follows exactly this pattern https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-   - Delete any text after the company name in parenthesis  
-   - Make sure there are no trailing forward slash at the end of the URL.  
-   - Make sure the URL is uses a secure connection as indicated by the URL starting with https.  
+- The URL follows exactly this pattern https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')  
+- Delete any text after the company name in parenthesis  
+- Make sure there are no trailing forward slash at the end of the URL.  
+- Make sure the URL is uses a secure connection as indicated by the URL starting with https.  
 
 **"Login failed"**
 If you get a "login failed" error when you log in to the dashboard, using your Project “Madeira” credentials, then this can be caused by one of the following issues:  
@@ -104,16 +104,16 @@ If you get a "login failed" error when you log in to the dashboard, using your P
 
 **"Oops"**
 If you see an "Oops" error dialog after you pass the authentication dialog, this is most frequently caused by a problem connecting to the data for the content pack. Verify that the URL follows the pattern that was specified earlier:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 A common mistake is to specify the full URL for a specific web service:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Or you might have forgotten to specify the company name:   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

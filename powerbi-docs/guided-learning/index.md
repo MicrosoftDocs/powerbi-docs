@@ -43,7 +43,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Review and what's next</a>
+                                <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Review and what&#39;s next</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                           </ul>
@@ -271,7 +271,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Create custom Q&A suggestions</a>
+                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Create custom Q&amp;A suggestions</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">

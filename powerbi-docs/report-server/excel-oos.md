@@ -74,7 +74,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parameters**
 
-* **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as http://servername.contoso.com.
+* **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as `http://servername.contoso.com`.
 * **–ExternalURL** is the FQDN that can be accessed on the Internet.
 * **–CertificateName** is the friendly name of the certificate.
 
@@ -87,7 +87,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Parameters**
 
-* **–InternalURL** is the name of the server that runs Office Online Server, such as http://servername.
+* **–InternalURL** is the name of the server that runs Office Online Server, such as `http://servername`.
 * **–AllowHttp** configures the farm to use HTTP.
 
 ### Verify that the Office Online Server farm was created successfully

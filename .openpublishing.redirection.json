@@ -26,6 +26,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/mobile-ipad-app-get-started.md",
+            "redirect_url": "/power-bi/mobile-iphone-app-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-ios-ipad-iphone-apps.md",
+            "redirect_url": "/power-bi/mobile-iphone-app-get-started",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/mobile-android-tablet-app-get-started.md",
             "redirect_url": "/power-bi/mobile-android-app-get-started",
             "redirect_document_id": true

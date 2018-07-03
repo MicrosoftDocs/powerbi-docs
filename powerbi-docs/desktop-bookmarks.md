@@ -52,15 +52,15 @@ Configure a report page the way you want it to appear in the bookmark. Once your
 
 ![Add a bookmark](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** creates a bookmark and gives it a generic name. You can easily *rename*, *delete*, or *update* a bookmark by selecting the elipses next to the bookmark's name, then selecting an action from the menu that appears.
+**Power BI Desktop** creates a bookmark and gives it a generic name. You can easily *rename*, *delete*, or *update* a bookmark by selecting the ellipses next to the bookmark's name, then selecting an action from the menu that appears.
 
-![Select sub-menu for a bookmark by using the elipses](media/desktop-bookmarks/bookmarks_05.png)
+![Select sub-menu for a bookmark by using the ellipses](media/desktop-bookmarks/bookmarks_05.png)
 
 Once you have a bookmark, you can display it by simply clicking on the bookmark in the **Bookmarks** pane. 
 
 You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between visual types - in which case you would likely want to turn data properties off, so filters aren't reset as users change visual types. 
 
-To make such changes select the elipses next to the bookmark's name, as shown in the previous image, then select or unselect the checkmarks next to *Data*, *Display*, and other controls. 
+To make such changes select the ellipses next to the bookmark's name, as shown in the previous image, then select or unselect the check marks next to *Data*, *Display*, and other controls. 
 
 ## Arranging bookmarks
 As you create bookmarks, you might find that the order in which you create them isn't necessarily the same order you'd like to present them to your audience. No problem, you can easily rearrange the order of bookmarks.
@@ -100,7 +100,7 @@ It's important to note that **slicers** continue to filter a report page, regard
 ## Bookmarks for shapes and images
 You can also link shapes and images to bookmarks. With this feature, when you click on an object, it will show the bookmark associated with that object. This can be especially useful when working with buttons; you can learn more by reading the article about [using buttons in Power BI](desktop-buttons.md). 
 
-To assign a bookmark to an object, select the object, then expand the **Action** seciton from the **Format Shape** pane, as shown in the following image.
+To assign a bookmark to an object, select the object, then expand the **Action** section from the **Format Shape** pane, as shown in the following image.
 
 ![Add bookmark link to an object](media/desktop-bookmarks/bookmarks_10.png)
 
@@ -116,7 +116,7 @@ Another feature released with bookmarks is **Spotlight**. With **Spotlight** you
 Let's compare **Spotlight** to **focus** mode to see how they differ.
 
 1. In **focus** mode, you can have one visual fill the entire canvas by selecting the **focus mode** icon.
-2. Using **Spotlight**, you can hightlight one visual in its original size, by making all other visuals on the page fade to near transparency. 
+2. Using **Spotlight**, you can highlight one visual in its original size, by making all other visuals on the page fade to near transparency. 
 
 ![Compare focus mode to spotlight](media/desktop-bookmarks/bookmarks_11.png)
 
@@ -124,7 +124,7 @@ When the visual in the previous image has its **focus** icon clicked, the page l
 
 ![focus mode](media/desktop-bookmarks/bookmarks_12.png)
 
-In contrast, when **Spotlight** is selected from the visual's elipses menu, the page looks like what you seen here:
+In contrast, when **Spotlight** is selected from the visual's ellipses menu, the page looks like what you seen here:
 
 ![spotlight mode](media/desktop-bookmarks/bookmarks_13.png)
 
@@ -142,7 +142,7 @@ Note that you must use the gray bookmark title bar to navigate through the bookm
 ## Limitations and considerations
 In this release of the **bookmarks**, there are a few limitations and considerations to keep in mind.
 
-* Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact teh creator of that custom visual and ask them to add support for bookmarks to their visual. 
+* Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
 

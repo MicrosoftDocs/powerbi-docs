@@ -36,23 +36,23 @@ Power BI Desktop creates an empty **Shape Map** visual design canvas.
 Take the following steps to create a **Shape Map**:
 
 1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) onto the **Location** bucket, and a data measure field into the **Color saturation** bucket (you won't see a map yet).
-   
+
    > [!NOTE]
-> See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
+   > See the section titled **Getting Map Data**, below, for information on how to quickly get map data to test **Shape Map**.
    > 
    > 
-   
+
    ![](media/desktop-shape-map/shape-map_3a.png)
 2. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point the rendering appears, as shown in the following image.
-   
+
    ![](media/desktop-shape-map/shape-map_3b.png)
-   
+
    > [!NOTE]
-> In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+   > In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
 3. You can then modify the map projection and zooming settings, as well as the colors of data points, from the **Format** settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
-   
+
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. You can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
@@ -110,6 +110,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Australia: States
+
 | id | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
@@ -122,6 +123,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
 ### Austria: States
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
@@ -135,6 +137,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
 ### Brazil: States
+
 | id |
 | --- |
 | Tocantins |
@@ -170,6 +173,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | Litigated Zone 4 |
 
 ### Canada: Provinces
+
 | id | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
@@ -187,6 +191,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | ca-ab |CA-AB |Alberta |AB |
 
 ### France: Regions
+
 | id | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
@@ -213,6 +218,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | Aquitaine |Aquitaine |Aquitaine |
 
 ### Germany: States
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
@@ -233,6 +239,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
 ### Ireland: Counties
+
 | id |
 | --- |
 | Wicklow |
@@ -263,6 +270,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | Carlow |
 
 ### Italy: Regions
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
@@ -287,6 +295,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
 ### Mexico: States
+
 | id | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
@@ -323,6 +332,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
 ### Netherlands: Provinces
+
 | id | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
@@ -339,6 +349,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
 ### UK: Countries
+
 | id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
@@ -347,6 +358,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | gb-eng |GB-ENG |England |
 
 ### USA: States
+
 | id | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
