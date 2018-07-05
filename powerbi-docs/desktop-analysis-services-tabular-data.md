@@ -20,7 +20,9 @@ Let’s take a closer look.
 
 **Explore by using a live connection** – When using a live connection, items in your Tabular model or perspective, like tables, columns, and measures appear in your Power BI Desktop Fields list. You can use Power BI Desktop’s advanced visualization and report tools to explore your Tabular model in new, highly interactive ways.
 
-When connecting live, no data from the Tabular model is imported into Power BI Desktop. Each time you interact with a visualization, Power BI Desktop queries the Tabular model and calculates the results you see. You’re always looking at the latest data. Keep in-mind, Tabular models are highly secure. Items that appear in Power BI Desktop depend on your permissions for the Tabular model you’re connected to.
+When connecting live, no data from the Tabular model is imported into Power BI Desktop. Each time you interact with a visualization, Power BI Desktop queries the Tabular model and calculates the results you see. You’re always looking at the latest data that is available in the Tabular model, either from the last processing time, or from Direct Query tables available in the Tabular Model. 
+
+Keep in-mind, that Tabular models are highly secure. Items that appear in Power BI Desktop depend on your permissions for the Tabular model you’re connected to.
 
 When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, an On-premises data gateway must be installed and configured by an administrator. To learn more, see [On-premises data gateway](service-gateway-onprem.md).
 
