@@ -92,7 +92,7 @@ The backend of the application may need to refresh the auth token before calling
 
 ## Authentication
 
-**Authentication failed with AADSTS70002 or AADSTS50053**
+### Authentication failed with AADSTS70002 or AADSTS50053
 
 **(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
 
@@ -146,7 +146,7 @@ To verify which it is, try the following.
 * DatasetId is mandatory for any EffectiveIdentity.
 * For Analysis Services, the master user has to be a gateway admin.
 
-**AADSTS90094: The grant requires admin permission** 
+### AADSTS90094: The grant requires admin permission
 
 **_Symptoms_**
 When a non-admin user attempts to sign-in to an application for the first and grant consent she gets the following error:
@@ -161,6 +161,7 @@ An admin user can sign-in and grant consent successfully.
 User consent is disabled for the tenant.
 
 **_Fix_**
+
 Several fixes are possible:
 
 *Enable user consent for the entire tenant (all users, all applications)*
