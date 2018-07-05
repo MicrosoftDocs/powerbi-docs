@@ -93,5 +93,5 @@ If necessary, you can verify your GitHub credentials.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * [Get data](service-get-data.md)

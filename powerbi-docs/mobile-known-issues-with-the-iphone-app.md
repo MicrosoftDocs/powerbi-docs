@@ -13,6 +13,7 @@ ms.author: maggies
 
 ---
 # Fixing "communication failures" in iOS mobile apps - Power BI
+
 | ![iPhone](media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:--- |:--- |
 | iPhones |iPads |

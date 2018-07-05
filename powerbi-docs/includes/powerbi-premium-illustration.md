@@ -3,14 +3,18 @@
 1. Items within a Premium capacity
    
    * Accessing app workspaces (as members or admins) and publishing apps requires a Power BI Pro license.
-   * App readers can be Power BI Pro or free users.
-   * Sharing requires a Power BI Pro license but recipients can be Power BI Pro or free users.
-   * Whether they have a Power BI Pro or free license, dashboard recipients can set data alerts.
-   * REST APIs for embedding utilize a service account, with a Power BI Pro license, rather than a user.
+
+   * Sharing an app requires a Pro license, but consuming an app doesn't.
+
+   * All dashboard recipients, regardless of the license they're assigned, can set data alerts.
+
+   * REST APIs for embedding use a service account with a Pro license, rather than a user account.
+
 2. My workspace in Shared capacity
    
-   * Sharing requires a Pro license. Recipients also need Pro licenses.
+   * Sharing and consuming an app both require a Pro license.
+
 3. App workspaces in Shared capacity
    
-   * Any app usage requires Pro licenses.
+   * Any app usage requires a Pro license.
 

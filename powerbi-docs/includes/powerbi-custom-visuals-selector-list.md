@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 
 <html>
   <head>
       <meta charset="utf-8" />
       <title>example-azure-selector-list</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
-.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) &gt; :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
 .markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
 .markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
@@ -17,8 +17,8 @@
 .markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
 .markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
 .markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
-.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
-.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) &gt; p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) &gt; ul, .markdown-preview:not([data-use-github-style]) &gt; ol { margin-bottom: 1.5em; }
 .markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
 .markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
 .markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
@@ -27,9 +27,9 @@
 .markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
 .markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
 .markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
-.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
-.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
-.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] { font-family: &#39;Helvetica Neue&#39;, Helvetica, &#39;Segoe UI&#39;, Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] &gt; :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] &gt; :last-child { margin-bottom: 0px !important; }
 .markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
 .markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
 .markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
@@ -56,13 +56,13 @@
 .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
 .markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
 .markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] li &gt; p { margin-top: 16px; }
 .markdown-preview[data-use-github-style] dl { padding: 0px; }
 .markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
 .markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
 .markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
-.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] blockquote &gt; :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote &gt; :last-child { margin-bottom: 0px; }
 .markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
 .markdown-preview[data-use-github-style] table th { font-weight: bold; }
 .markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
@@ -71,24 +71,24 @@
 .markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
 .markdown-preview[data-use-github-style] .emoji { max-width: none; }
 .markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame &gt; span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
 .markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
 .markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
 .markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center &gt; span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
 .markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
 .markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right &gt; span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
 .markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
 .markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-right &gt; span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
 .markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
-.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: &quot; &quot;; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
-.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] pre &gt; code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
 .markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
 .markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
 .markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
@@ -172,7 +172,7 @@ pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-
 }
 pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
 .host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
-  content: "";
+  content: &quot;&quot;;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -429,26 +429,26 @@ pre.editor-colors .fold-marker:after,
 .source.java-properties .meta.key-pair {
   color: #e06c75;
 }
-.source.java-properties .meta.key-pair > .punctuation {
+.source.java-properties .meta.key-pair &gt; .punctuation {
   color: #abb2bf;
 }
-.source.json .meta.structure.dictionary.json > .string.quoted.json {
+.source.json .meta.structure.dictionary.json &gt; .string.quoted.json {
   color: #e06c75;
 }
-.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+.source.json .meta.structure.dictionary.json &gt; .string.quoted.json &gt; .punctuation.string {
   color: #e06c75;
 }
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+.source.json .meta.structure.dictionary.json &gt; .value.json &gt; .string.quoted.json,
+.source.json .meta.structure.array.json &gt; .value.json &gt; .string.quoted.json,
+.source.json .meta.structure.dictionary.json &gt; .value.json &gt; .string.quoted.json &gt; .punctuation,
+.source.json .meta.structure.array.json &gt; .value.json &gt; .string.quoted.json &gt; .punctuation {
   color: #98c379;
 }
-.source.json .meta.structure.dictionary.json > .constant.language.json,
-.source.json .meta.structure.array.json > .constant.language.json {
+.source.json .meta.structure.dictionary.json &gt; .constant.language.json,
+.source.json .meta.structure.array.json &gt; .constant.language.json {
   color: #56b6c2;
 }
-.source.ruby .constant.other.symbol > .punctuation {
+.source.ruby .constant.other.symbol &gt; .punctuation {
   color: inherit;
 }
 .source.python .keyword.operator.logical.python {

@@ -35,7 +35,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 To submit a custom visual for certification:
 
 1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:    
-   
+
    * Title: Visual Certification Request    
    * Link to GitHub repository where the visual source code is hosted    
    * Adhere to the requirements (see above)    
@@ -47,6 +47,7 @@ To submit a custom visual for certification:
 Microsoft, at its discretion, may remove a visual from the Certified list.  
 
 ## List of custom visuals that have been certified
+
 | Link to AppSource | Link to video |
 | --- | --- |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
@@ -123,6 +124,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Text Filter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Text Wrapper by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Thermometer by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380847) | [Video](https://youtu.be/SPX9mgrAdBc) |
+| [Time Brush Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380798) | |
 | [Timeline Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) | [Video](https://youtu.be/ozMtZ4_NZ10) |
 | [Timeline by CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381427) | [Video](https://youtu.be/szNi9YgXFJc) |
 | [Tornado chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380768) | [Video](https://www.youtube.com/watch?v=AQvd2FhRyCI) |

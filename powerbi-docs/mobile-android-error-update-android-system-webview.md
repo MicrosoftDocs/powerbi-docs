@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -26,6 +26,6 @@ Turns out you actually need to upgrade your Chrome app.
 
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

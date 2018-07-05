@@ -94,6 +94,7 @@ So, for our Sales Marketing dataset example, you would pass a JSON string such a
 For a Power BI table schema, you can use the following data types.
 
 ## Power BI table data types
+
 | **Data type** | **Restrictions** |
 | --- | --- |
 | Int64 |Int64.MaxValue and Int64.MinValue not allowed. |

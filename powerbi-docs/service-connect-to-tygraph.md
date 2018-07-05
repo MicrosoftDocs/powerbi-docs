@@ -38,7 +38,7 @@ Connect to [tyGraph for Power BI](https://app.powerbi.com/getdata/services/tygra
    
     **If you are not a Yammer Verified Admin**
    
-    The tyGraph content pack requires a tyGraph account created by a Yammer verified administrator. Once created, supplemental keys can be issued to users within the same organization. If your verified admin has not yet created a tyGraph account, contact them to have them do so. If they have, you can request a key by sending an email to <mailto:support@unlimitedviz.com>.
+    The tyGraph content pack requires a tyGraph account created by a Yammer verified administrator. Once created, supplemental keys can be issued to users within the same organization. If your verified admin has not yet created a tyGraph account, contact them to have them do so. If they have, you can request a key by sending an email to <support@unlimitedviz.com>.
    
     ![](media/service-connect-to-tygraph/creds.png)
 6. After successful authentication, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
