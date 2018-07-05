@@ -1,9 +1,9 @@
 ---
 title: Embed Power BI content into an application for your organization
-description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your customers.
+description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your organization.
 author: markingmyname
 ms.author: maghan 
-ms.date: 06/20/2018
+ms.date: 07/13/2018
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
@@ -41,17 +41,17 @@ You register your application with Azure Active Directory to allow your applicat
 1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
 
 2. Sign into the [Azure portal](https://portal.azure.com).
- 
-    ![Azure Portal Main](media/embed-sample-for-organization/embed-sample-for-organization-002.png)
+
+    ![Azure Portal Main](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
 3. In the left-hand navigation pane, choose **All Services**, select **App Registrations** and then select **New application registration**.
-   
-    ![App registration search](media/embed-sample-for-organization/embed-sample-for-organization-003.png)</br>
-    ![New App registration](media/embed-sample-for-organization/embed-sample-for-organization-004.png)
 
-4. Follow the prompts and create a new application. For apps owns data you need to use **Native** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: http://localhost:13526/redirect).
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)</br>
+    ![New App registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-    ![Create App](media/embed-sample-for-organization/embed-sample-for-organization-005.png)
+4. Follow the prompts and create a new application. For **user owns data** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: http://localhost:13526/redirect).
+
+    ![Create App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### Apply permissions to your application within Azure Active Directory
 
@@ -60,38 +60,32 @@ You need to enable additional permissions for your application in addition to wh
 ### Use the Azure Active Directory portal
 
 1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
-   
-    ![Choosing App](media/embed-sample-for-organization/embed-sample-for-organization-006.png)
+
+    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
 2. Select **Settings**, then under **API Access** select **Required permissions**.
-   
-    ![Required Permissions](media/embed-sample-for-organization/embed-sample-for-organization-008.png)
+
+    ![Required Permissions](media/embed-sample-for-your-organization/embed-sample-for-your-organization-008.png)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-   
-    ![Windows Azure AD Permissions](media/embed-sample-for-organization/embed-sample-for-organization-011.png)
+
+    ![Windows Azure AD Permissions](media/embed-sample-for-your-organization/embed-sample-for-your-organization-011.png)
 
 4. Select **Add**.
 
-    ![Add Permissions](media/embed-sample-for-organization/embed-sample-for-organization-012.png)
+    ![Add Permissions](media/embed-sample-for-your-organization/embed-sample-for-your-organization-012.png)
 
 5. Select **Select an API**.
 
-    ![Add API Access](media/embed-sample-for-organization/embed-sample-for-organization-013.png)
+    ![Add API Access](media/embed-sample-for-your-organization/embed-sample-for-your-organization-013.png)
 
 6. Select **Power BI Service**, then select **Select**.
 
-    ![Select PBI Services](media/embed-sample-for-organization/embed-sample-for-organization-014.png)
+    ![Select PBI Services](media/embed-sample-for-your-organization/embed-sample-for-your-organization-014.png)
 
 7. Select all permissions under **Delegated Permissions**. You need to select them one by one to save the selections. Select **Save** when done.
-   
-    ![Select delegated permissions](media/embed-sample-for-organization/embed-sample-for-organization-015.png)
 
-8. Within **Required permissions**, select **Grant Permissions**.
-   
-    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you need to grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you need to grant permissions only to the *master account* for this application.
-   
-    ![Grant permissions within required permissions dialog](media/embed-sample-for-organization/embed-sample-for-organization-016.png)
+    ![Select delegated permissions](media/embed-sample-for-your-organization/embed-sample-for-your-organization-015.png)
 
 ## Setup your Power BI environment
 
@@ -101,21 +95,21 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
 1. Start by creating the workspace. Select **workspaces** > **Create app workspace**. This is where you place the content that your application needs to access.
 
-    ![Create Workspace](media/embed-sample-for-organization/embed-sample-for-organization-020.png)
+    ![Create Workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
 
 2. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID. This needs to be the name of the app, too.
 
-    ![Name Workspace](media/embed-sample-for-organization/embed-sample-for-organization-021.png)
+    ![Name Workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-021.png)
 
 3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
 
-    ![Private/Public](media/embed-sample-for-organization/embed-sample-for-organization-022.png)
+    ![Private/Public](media/embed-sample-for-your-organization/embed-sample-for-your-organization-022.png)
 
     You can't change the Public/Private setting after you've created the group.
 
 4. You can also choose if members can **edit** or have **view-only** access.
 
-    ![Adding Members](media/embed-sample-for-organization/embed-sample-for-organization-023.png)
+    ![Adding Members](media/embed-sample-for-your-organization/embed-sample-for-your-organization-023.png)
 
 5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
 
@@ -123,7 +117,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
     Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
-    ![New workspace](media/embed-sample-for-organization/embed-sample-for-organization-025.png)
+    ![New workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
 ### Create and publish your reports
 
@@ -131,19 +125,19 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
-    ![report sample](media/embed-sample-for-organization/embed-sample-for-organization-026-1.png)
+    ![report sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
 
 2. Open sample PBIX report in **Power BI Desktop**
 
-   ![PBI desktop report](media/embed-sample-for-organization/embed-sample-for-organization-027.png)
+   ![PBI desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
 3. Publish to the **app workspace**
 
-   ![PBI desktop report](media/embed-sample-for-organization/embed-sample-for-organization-028.png)
+   ![PBI desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
     Now you can view the report in the Power BI service online.
 
-   ![PBI desktop report](media/embed-sample-for-organization/embed-sample-for-organization-029.png)
+   ![PBI desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
 
 ## Embed your content using the sample application
 
@@ -151,36 +145,36 @@ Follow these steps to start embedding your content using a sample application.
 
 1. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
-    ![App Owns Data application sample](media/embed-sample-for-organization/embed-sample-for-organization-026.png)
+    ![App Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
 2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **groupId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
 
-    ![Web Config file](media/embed-sample-for-organization/embed-sample-for-organization-030.png)
+    ![Web Config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
     Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId**, follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
-    ![Azure Portal Main](media/embed-sample-for-organization/embed-sample-for-organization-002.png)
+    ![Azure Portal Main](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
     In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
-    ![App registration search](media/embed-sample-for-organization/embed-sample-for-organization-003.png)
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
     Select the application that you want to get the **clientId** for.
 
-    ![Choosing App](media/embed-sample-for-organization/embed-sample-for-organization-006.png)
+    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
     You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
 
-    ![clientId](media/embed-sample-for-organization/embed-sample-for-organization-007.png)
+    ![clientId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
     Fill in the **groupId** information with the **app workspace GUID** from Power BI.
 
-    ![groupId](media/embed-sample-for-organization/embed-sample-for-organization-031.png)
+    ![groupId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
     Fill in the **reportId** information with the **report GUID** from Power BI.
 
-    ![reportId](media/embed-sample-for-organization/embed-sample-for-organization-032.png)
+    ![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-032.png)
 
     * Fill in the **pbiUsername** with the Power BI master user account.
     * Fill in the **pbiPassword** with the password for the Power BI master user account.
@@ -189,127 +183,219 @@ Follow these steps to start embedding your content using a sample application.
 
     First select **Run** in **Visual Studio**.
 
-    ![Run the application](media/embed-sample-for-organization/embed-sample-for-organization-033.png)
+    ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
     Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
 
-    ![Select a content](media/embed-sample-for-organization/embed-sample-for-organization-034.png)
+    ![Select a content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
     Now you can view the report in the sample application.
 
-    ![View application](media/embed-sample-for-organization/embed-sample-for-organization-035.png)
+    ![View application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## Embed your content within your application
 Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
-Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
+To integrate a report into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-To create the Power BI Client with your **access token**, you want to create your Power BI client object which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). This is done by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
+## Download the sample
+This article shows the code used in the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
+
+You can also go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application.
+
+However, if you choose to set up the environment manually, you can continue below.
+
+## Step 1 - register an app in Azure AD
+You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md).
+
+If you downloaded the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), you use the **Client ID** and **Client Secret** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in the *cloud.config* file.
+
+![](media/integrate-report/powerbi-embed-dashboard-register-app4.png)
+
+## Step 2 - get an access token from Azure AD
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+
+## Step 3 - get a report
+To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report id.
+
+### Get reports using an access token
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation. The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete C# method to get a report. 
+
+To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
+
+#### Get reports with the REST API
+**Default.aspx.cs**
 
 ```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
+using Newtonsoft.Json;
 
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
-
-// Create a Power BI Client object. It is used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
+//Get a Report. In this sample, you get the first Report.
+protected void GetReport(int index)
 {
-    // Your code to embed items.
+    //Configure Reports request
+    System.Net.WebRequest request = System.Net.WebRequest.Create(
+        String.Format("{0}/Reports",
+        baseUri)) as System.Net.HttpWebRequest;
+
+    request.Method = "GET";
+    request.ContentLength = 0;
+    request.Headers.Add("Authorization", String.Format("Bearer {0}", accessToken.Value));
+
+    //Get Reports response from request.GetResponse()
+    using (var response = request.GetResponse() as System.Net.HttpWebResponse)
+    {
+        //Get reader from response stream
+        using (var reader = new System.IO.StreamReader(response.GetResponseStream()))
+        {
+            //Deserialize JSON string
+            PBIReports Reports = JsonConvert.DeserializeObject<PBIReports>(reader.ReadToEnd());
+
+            //Sample assumes at least one Report.
+            //You could write an app that lists all Reports
+            if (Reports.value.Length > 0)
+            {
+                var report = Reports.value[index];
+
+                txtEmbedUrl.Text = report.embedUrl;
+                txtReportId.Text = report.id;
+                txtReportName.Text = report.name;
+            }
+        }
+    }
+}
+
+//Power BI Reports used to deserialize the Get Reports response.
+public class PBIReports
+{
+    public PBIReport[] value { get; set; }
+}
+public class PBIReport
+{
+    public string id { get; set; }
+    public string name { get; set; }
+    public string webUrl { get; set; }
+    public string embedUrl { get; set; }
 }
 ```
 
-### Get the content item you want to embed
-You can use the Power BI client object to retrieve a reference to the item you want to embed.
-
-Here is a code sample of how to retrieve the first report from a given workspace.
-
-*A sample of getting a content item whether it is a report, dashboard, or tile that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
+#### Get reports using the .NET SDK
+You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly.
 
 ```csharp
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+var tokenCredentials = new TokenCredentials(<ACCESS TOKEN>, "Bearer");
 
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
-### Create the embed token
-An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
-
-Here is a sample of adding an embed token for a report to your application.
-
-*A sample of creating an embed token for a report, dashboard, or tile is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
+// Create a Power BI Client object. It will be used to call Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
+    // Get the first report all reports in that workspace
+    ODataResponseListReport reports = client.Reports.GetReports();
+
+    Report report = reports.Value.FirstOrDefault();
+
+    var embedUrl = report.EmbedUrl;
+}
 ```
 
-This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs file**.
+## Step 4 - load a report using JavaScript
+You can use JavaScript to load a report into a div element on your web page.
 
-### Load an item using JavaScript
-You can use JavaScript to load a report into a div element on your web page. 
-
-Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
-
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
+**Default.aspx**
 
 ```javascript
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
+<!-- Embed Report-->
+<div> 
+    <asp:Panel ID="PanelEmbed" runat="server" Visible="true">
+        <div>
+            <div><b class="step">Step 3</b>: Embed a report</div>
 
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
+            <div>Enter an embed url for a report from Step 2 (starts with https://):</div>
+            <input type="text" id="tb_EmbedURL" style="width: 1024px;" />
+            <br />
+            <input type="button" id="bEmbedReportAction" value="Embed Report" />
+        </div>
 
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
+        <div id="reportContainer"></div>
+    </asp:Panel>
+</div>
+```
 
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
+**Site.master**
+
+```javascript
+window.onload = function () {
+    // client side click to embed a selected report.
+    var el = document.getElementById("bEmbedReportAction");
+    if (el.addEventListener) {
+        el.addEventListener("click", updateEmbedReporte, false);
+    } else {
+        el.attachEvent('onclick', updateEmbedReport);
+    }
+
+    // handle server side post backs, optimize for reload scenarios
+    // show embedded report if all fields were filled in.
+    var accessTokenElement = document.getElementById('MainContent_accessTokenTextbox');
+    if (accessTokenElement !== null) {
+        var accessToken = accessTokenElement.value;
+        if (accessToken !== "")
+            updateEmbedReport();
+    }
+};
+
+// update embed report
+function updateEmbedReport() {
+
+    // check if the embed url was selected
+    var embedUrl = document.getElementById('tb_EmbedURL').value;
+    if (embedUrl === "")
+        return;
+
+    // get the access token.
+    accessToken = document.getElementById('MainContent_accessTokenTextbox').value;
 
     // Embed configuration used to describe the what and how to embed.
     // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
     // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
     var config = {
         type: 'report',
-        tokenType: models.TokenType.Embed,
         accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
+        embedUrl: embedUrl
     };
 
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
+    // Grab the reference to the div HTML element that will host the report.
+    var reportContainer = document.getElementById('reportContainer');
 
     // Embed the report and display it within the div container.
     var report = powerbi.embed(reportContainer, config);
-</script>
+
+    // report.on will add an event handler which prints to Log window.
+    report.on("error", function (event) {
+        var logView = document.getElementById('logView');
+        logView.innerHTML = logView.innerHTML + "Error<br/>";
+        logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
+        logView.innerHTML = logView.innerHTML + "---------<br/>";
+    });
+}
+```
+
+If you downloaded and ran the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), the sample will look similar to below.
+
+![Embedded report sample](media/integrate-report/powerbi-embedded-report.png)
+
+## Working with groups (app workspaces)
+For embedding a report from a group (app workspace), you will want to get the list of all available reports within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). You will need to have permission in the group for the request to return results.
+
+```HTTPS
+https://api.powerbi.com/v1.0/myorg/groups/{group_id}/reports
+```
+
+The above API returns the list of the available reports. Each report has an EmbedUrl property which is already constructed to support group embedding.
+
+```HTTPS
+https://app.powerbi.com/reportEmbed?reportId={report_id}&groupId={group_id}
 ```
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
@@ -329,11 +415,11 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
-    ![Edit Workspace](media/embed-sample-for-organization/embed-sample-for-organization-036.png)
+    ![Edit Workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 
 2. Expand **Advanced**, then enable **Dedicated capacity**, then select the dedicated capacity you created. Then select **Save**.
 
-    ![Assign dedicated capacity](media/embed-sample-for-organization/embed-sample-for-organization-024.png)
+    ![Assign dedicated capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
 For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
