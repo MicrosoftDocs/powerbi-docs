@@ -139,15 +139,17 @@ In Power BI Desktop, you connect directly to SQL Server, but the Power BI servic
 
     ![Enter data source settings](media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    | Option | Value |
-    | ---    | ---   |
-    | **Data Source Name**       | test-sql-source      |
-    | **Data Source Type**       | SQL Server      |
-    | **Server**       |  The name of your SQL Server instance (must be identical to what you specified in Power BI Desktop)    |
-    | **Database**       | TestGatewayDocs      |
-    | **Authentication Method**       | Windows      |
-    | **Username**        |  The account, such as michael@contoso.com, you use to connect to SQL Server     |
-    | **Password**       |  The password for the account you use to connect to SQL Server    |
+
+   |          Option           |                                               Value                                                |
+   |---------------------------|----------------------------------------------------------------------------------------------------|
+   |   **Data Source Name**    |                                          test-sql-source                                           |
+   |   **Data Source Type**    |                                             SQL Server                                             |
+   |        **Server**         | The name of your SQL Server instance (must be identical to what you specified in Power BI Desktop) |
+   |       **Database**        |                                          TestGatewayDocs                                           |
+   | **Authentication Method** |                                              Windows                                               |
+   |       **Username**        |             The account, such as michael@contoso.com, you use to connect to SQL Server             |
+   |       **Password**        |                   The password for the account you use to connect to SQL Server                    |
+
 
 4. Select **Add**. You see *Connection Successful* when the process succeeds.
 
@@ -164,8 +166,8 @@ You have a report published to the Power BI service, and the SQL Server data sou
 
     ```sql
     UPDATE Product
-	SET Sales = 32508, Quantity = 252
-	WHERE Product='Compact Digital'     
+    SET Sales = 32508, Quantity = 252
+    WHERE Product='Compact Digital'     
 
     ```
 

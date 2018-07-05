@@ -53,9 +53,9 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
    - **Sales** > **Total Sales Variance %**
    - **District** > **District**
 
-    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
+     ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 
-    If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+     If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
 
 3. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
 
