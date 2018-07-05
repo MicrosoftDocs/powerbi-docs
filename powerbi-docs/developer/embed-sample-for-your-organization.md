@@ -147,11 +147,11 @@ Follow these steps to start embedding your content using a sample application.
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **groupId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
+2. Open up the Cloud.config file in the sample application. There are 2 fields you need to fill in to run the application successfully. The **ClientID**, the and the **ClientSecret**.
 
-    ![Web Config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
+    ![Cloud Config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId**, follow these steps:
+    Fill in the **ClientID** information with the **Application ID** from **Azure**. The **ClientID** is used by the application to identify itself to the users from which you're requesting permissions. To get the **ClientID**, follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
@@ -160,24 +160,17 @@ Follow these steps to start embedding your content using a sample application.
     In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
     ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-    Select the application that you want to get the **clientId** for.
+    Select the application that you want to get the **ClientID** for.
 
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
     You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
 
-    ![clientId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+    ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    Fill in the **groupId** information with the **app workspace GUID** from Power BI.
+    Fill in the **ClientSecret** information with the **Application Secret** from the Power BI sample.
 
-    ![groupId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
-
-    Fill in the **reportId** information with the **report GUID** from Power BI.
-
-    ![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-032.png)
-
-    * Fill in the **pbiUsername** with the Power BI master user account.
-    * Fill in the **pbiPassword** with the password for the Power BI master user account.
+    ![ClientSecret](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
 3. Run the application!
 
@@ -185,7 +178,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
+    Then select **Get Report**.
 
     ![Select a content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
