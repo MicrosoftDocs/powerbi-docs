@@ -143,9 +143,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 Follow these steps to start embedding your content using a sample application.
 
-1. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
+1. Download the [User Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
-    ![App Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
+    ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
 2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **groupId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
 
@@ -198,24 +198,17 @@ Even though the steps to embed your content can be done with the [Power BI REST 
 
 To integrate a report into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-## Download the sample
-This article shows the code used in the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
-
-You can also go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application.
-
-However, if you choose to set up the environment manually, you can continue below.
-
-## Step 1 - register an app in Azure AD
+## Register an app in Azure AD
 You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md).
 
 If you downloaded the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), you use the **Client ID** and **Client Secret** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in the *cloud.config* file.
 
 ![](media/integrate-report/powerbi-embed-dashboard-register-app4.png)
 
-## Step 2 - get an access token from Azure AD
+## Get an access token from Azure AD
 Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
-## Step 3 - get a report
+## Get a report
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
@@ -300,7 +293,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 }
 ```
 
-## Step 4 - load a report using JavaScript
+## Load a report using JavaScript
 You can use JavaScript to load a report into a div element on your web page.
 
 **Default.aspx**
