@@ -60,7 +60,7 @@ Here's how:
 3. In the **District** table, enter the following DAX expression: **[District Manager] = USERNAME()**.
    
     ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you just created, along with **Other user**. Enter **Andrew Ma** for the user.
+4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you just created, along with **Other users**. Enter **AndrewMa** for the user.
    
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    
