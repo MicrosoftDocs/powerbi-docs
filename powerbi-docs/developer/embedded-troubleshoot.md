@@ -102,7 +102,7 @@ We recommend to use the [Azure AD Conditional Access](https://cloudblogs.microso
 
 However, there is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-**We recommend you enable this only on a per-app basis and only as needed for a workaround.**
+**_We recommend you enable this only as a per-app basis and only as needed for a workaround._**
 
 To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
@@ -146,26 +146,6 @@ To verify which it is, try the following.
 * DatasetId is mandatory for any EffectiveIdentity.
 * For Analysis Services, the master user has to be a gateway admin.
 
-## Data sources
-
-**ISV wants to have different credentials for the same data source**
-
-A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users context, and embed using the Azure AD token of that user.
-
-## Content rendering
-
-**Rendering, or consumption, of embedded content fails or times out**
-
-Make sure the embed token did not expire. Make sure you are checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
-
-**Report or dashboard does not load**
-
-If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard will not work within your application if it doesn't load within powerbi.com.
-
-**Report or dashboard is performing slowly**
-
-Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
-
 **AADSTS90094: The grant requires admin permission** 
 
 **_Symptoms_**
@@ -191,6 +171,26 @@ Several fixes are possible:
 
 *Grant permissions by an admin*
 Grant permissions to the application by an admin - either for the entire tenant or for a specific user.
+
+## Data sources
+
+**ISV wants to have different credentials for the same data source**
+
+A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users context, and embed using the Azure AD token of that user.
+
+## Content rendering
+
+**Rendering, or consumption, of embedded content fails or times out**
+
+Make sure the embed token did not expire. Make sure you are checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+
+**Report or dashboard does not load**
+
+If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard will not work within your application if it doesn't load within powerbi.com.
+
+**Report or dashboard is performing slowly**
+
+Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
 ## Onboarding experience tool for embedding
 
