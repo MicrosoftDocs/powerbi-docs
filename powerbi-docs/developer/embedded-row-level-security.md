@@ -64,7 +64,7 @@ Here's how:
    
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    
-    The reports will now show data as if you were signed in as **Andrew Ma**.
+    The reports will now show data as if you were signed in as **AndrewMa**.
 
 Applying the filter, the way we did here, will filter down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables will not be filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
