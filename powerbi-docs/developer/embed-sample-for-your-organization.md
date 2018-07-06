@@ -411,6 +411,10 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
 
     ![Assign dedicated capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
+3. After you select **Save** you should see a **diamond** next to the app workspace name.
+
+    ![app workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+
 For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
