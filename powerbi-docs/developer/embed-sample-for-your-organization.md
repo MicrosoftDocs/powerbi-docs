@@ -143,7 +143,7 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 Follow these steps to start embedding your content using a sample application.
 
-1. Download the [User Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.  There are 3 different sample applications, one for [reports](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), one for [dashboards](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), and one for [tiles](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app).  We will be reffering to the **reports** application as we discuss the steps below.
+1. Download the [User Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.  There are 3 different sample applications, one for [reports](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), one for [dashboards](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), and one for [tiles](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app).  THis article refers to the **reports** application as we discuss the steps below.
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
@@ -160,7 +160,8 @@ Follow these steps to start embedding your content using a sample application.
     In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
     ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-    Select the application that you want to get the **ClientID** for.
+
+    Select the application that will need to use the **ClientID**.
 
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
@@ -197,10 +198,10 @@ Follow these steps to start embedding your content using a sample application.
 ## Embed your content within your application
 Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
-To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same **access token**. The **Power BI Rest API** provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same **access token**. The **Power BI Rest API** provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Get an access token from Azure AD
-Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ## Get a report
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI reports**. From the list of reports, you can get a report id.
@@ -280,7 +281,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 var tokenCredentials = new TokenCredentials(<ACCESS TOKEN>, "Bearer");
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
+// Create a Power BI Client object. It is used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Get the first report all reports in that workspace
@@ -376,7 +377,7 @@ function updateEmbedReport() {
 ```
 
 ## Working with groups (app workspaces)
-For embedding a report from a group (app workspace), you will want to get the list of all available reports within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). You will need to have permission in the group for the request to return results.
+For embedding a report from a group (app workspace), you want to get the list of all available reports within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). You  need to have permissions in the group for the request to return results.
 
 ```HTTPS
 https://api.powerbi.com/v1.0/myorg/groups/{group_id}/reports
