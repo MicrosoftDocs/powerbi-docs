@@ -49,7 +49,7 @@ You register your application with Azure Active Directory to allow your applicat
     ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)</br>
     ![New App registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Follow the prompts and create a new application. For **user owns data** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: http://localhost:13526/redirect).
+4. Follow the prompts and create a new application. For **user owns data** you need to use **Web app/API** for the application type. You also need to provide a **Sign-on URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: http://localhost:13526/).
 
     ![Create App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
