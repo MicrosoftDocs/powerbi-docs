@@ -168,9 +168,17 @@ Follow these steps to start embedding your content using a sample application.
 
     ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    Fill in the **ClientSecret** information with the **Application Secret** from the Power BI sample.
+    Fill in the **ClientSecret** information with the [Application Secret](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/key-vault) from **Azure**.
 
     ![ClientSecret](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+
+     Fill in the **groupId** information with the **app workspace GUID** from Power BI.
+
+    ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+
+    Fill in the **reportId** information with the **report GUID** from Power BI.
+
+    ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Run the application!
 
