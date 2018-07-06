@@ -139,11 +139,11 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 3. Publish to the **app workspace**
 
-   ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
+   ![Publish desktop report](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
 
     Now you can view the report in the Power BI service online.
 
-   ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
+   ![PBI desktop report view in service](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
 
 ## Embed your content using the sample application
 
