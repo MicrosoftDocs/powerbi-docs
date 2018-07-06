@@ -199,17 +199,22 @@ Even though the steps to embed your content can be done with the [Power BI REST 
 
 To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same **access token**. The **Power BI Rest API** provides programmatic access to certain **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
+## Get an access token from Azure AD
+Within your application, you will first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+
 ## Get a report
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI reports**. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
-With the **access token** you retrieved, you can call the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation. The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete **C# method** to get a report.
+With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation. The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete **C# method** to get a report.
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
 #### Get reports with the REST API
 
-**Default.aspx.cs**
+Here is a code sample of how to retrieve reports with the **REST API**.
+
+*A sample of getting a content item whether it is a report, dashboard, or tile that you want to embed is available within the **_Default.aspx.cs_** file in the [sample application](#embed-your-content-using-the-sample-application).*
 
 ```csharp
 using Newtonsoft.Json;
@@ -266,6 +271,8 @@ public class PBIReport
 #### Get reports using the .NET SDK
 You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly.
 
+Here is a code sample of how to list reports.
+
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V2;
@@ -288,7 +295,9 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## Load a report using JavaScript
 You can use JavaScript to load a report into a div element on your web page.
 
-**Default.aspx**
+Here is a code sample of how to retrieve a report from a given workspace.
+
+*A sample of loading a content item whether it is a report, dashboard, or tile that you want to embed is available within the **_Default.aspx_** file in the [sample application](#embed-your-content-using-the-sample-application).*
 
 ```javascript
 <!-- Embed Report-->
