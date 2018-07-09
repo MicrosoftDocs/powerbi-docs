@@ -29,7 +29,7 @@ If you are not able to purchase Power BI directly, and depending on what type of
 
 [Power BI (free)](#power-bi-free)
 
-[Power BI Pro and Premium](#power-bi-pro)
+[Power BI Pro and Premium](#power-bi-pro-and-premium)
 
 ## Power BI (free)
 If you are happy with the free offering for Power BI, you can sign up for the free service. By default, individual sign-ups, also known as ad-hoc subscriptions, are disabled. When you try to sign up for Power BI, you will see a message indicating that your IT department has turned off sign up for Microsoft Power BI.

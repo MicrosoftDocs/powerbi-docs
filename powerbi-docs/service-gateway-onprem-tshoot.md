@@ -189,7 +189,7 @@ To confirm this, you can do the following.
 
 Optionally, you can see what Power BI gets from Azure Active Directory.
 
-1. Browse to [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper right.
 3. Run the following query. You will see a rather large JSON response.
 
