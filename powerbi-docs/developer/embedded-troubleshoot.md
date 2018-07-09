@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.author: maghan
 ---
 # Troubleshooting your embedded application
@@ -96,13 +96,11 @@ The backend of the application may need to refresh the auth token before calling
 
 **(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
 
-If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018.
+If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
 
-We recommend to use the [Azure AD Conditional Access](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) support for blocking legacy authentication or use [Azure AD Directory Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-However, there is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
-
-**_We recommend you enable this only as a per-app basis and only as needed for a workaround._**
+We recommend you enable this only as a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
