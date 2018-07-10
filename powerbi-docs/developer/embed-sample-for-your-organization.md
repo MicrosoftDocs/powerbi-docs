@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-#Customer intent: As a developer, I want to embed Power BI content into an application, so users of my organization can share data.
+#Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your organization
-With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. **User owns data** is about having an application that allows you to extend the Power BI service. This requires that users of your application sign into Power BI when they want to view their content. Once someone in your organization signs in, they will only have access to content that they own or that have been shared with them in the Power BI service. This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization using **user owns data**.
+This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization using **user owns data**. With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. **User owns data** is about having an application that allows you to extend the Power BI service.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -55,7 +55,7 @@ You register your application with Azure Active Directory to allow your applicat
 
 ### Apply permissions to your application within Azure Active Directory
 
-You need to enable additional permissions for your application in addition to what was provided on the app registration page. You need to be logged in with the *master* account, used for embedding, which needs to be a global admin account.
+You need to enable additional permissions for your application in addition to what was provided on the app registration page. You need to be logged in with a *global admin* account to enable permissions.
 
 ### Use the Azure Active Directory portal
 
@@ -91,7 +91,7 @@ You need to enable additional permissions for your application in addition to wh
 
 ### Create an app workspace
 
-If you are embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. The *master* account must be an admin of the app workspace.
+If you are embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace.
 
 1. Start by creating the workspace. Select **workspaces** > **Create app workspace**. This is where you place the content that your application needs to access.
 
@@ -376,29 +376,14 @@ function updateEmbedReport() {
 }
 ```
 
-## Working with groups (app workspaces)
-For embedding a report from a group (app workspace), you want to get the list of all available reports within a group's dashboard using the following REST API call. To find more information about this REST API call, see [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). You  need to have permissions in the group for the request to return results.
-
-```HTTPS
-https://api.powerbi.com/v1.0/myorg/groups/{group_id}/reports
-```
-
-The above API returns the list of the available reports. Each report has an EmbedUrl property which is already constructed to support group embedding.
-
-```HTTPS
-https://app.powerbi.com/reportEmbed?reportId={report_id}&groupId={group_id}
-```
-
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
-
 ## Move to production
 
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure or using [Power BI Premium ](../service-admin-premium-purchase.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
 
-Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
+Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage.
 
 ### Assign an app workspace to a dedicated capacity
 
@@ -415,7 +400,5 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
 3. After you select **Save** you should see a **diamond** next to the app workspace name.
 
     ![app workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
-
-For further questions about Power BI Embedded, please visit the [FAQ](embedded-faq.md) page.  If you are having issues with Power Bi Embedded within your application, then please visit the [troubleshoot](embedded-troubleshoot.md) page.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
