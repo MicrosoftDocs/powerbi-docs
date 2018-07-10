@@ -4,7 +4,7 @@ description: Learn how to integrate, or embed, a report or dashboard from a Powe
 author: markingmyname
 ms.author: maghan 
 ms.date: 07/13/2018
-ms.topic: tutorial
+ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
