@@ -207,7 +207,7 @@ Within your application, you first need to get an **access token**, from Azure A
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI reports**. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
-With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation. The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports. Below is a complete **C# method** to get a report.
+The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports.
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
@@ -270,9 +270,7 @@ public class PBIReport
 ```
 
 #### Get reports using the .NET SDK
-You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly.
-
-Here is a code sample of how to list reports.
+You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly. Here is a code sample of how to list reports.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -402,3 +400,6 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
     ![app workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
+> [!div class="nextstepaction"]
+> [Embed for 3rd party customers](embed-sample-for-customers.md)
