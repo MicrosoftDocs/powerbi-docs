@@ -150,5 +150,4 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
-
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
