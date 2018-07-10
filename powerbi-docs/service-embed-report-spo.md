@@ -123,7 +123,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 ## Known issues and limitations
 
-* **Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"**
+* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
   If you receive this error, please try one of the following.
   
@@ -140,6 +140,8 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 * The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
 
 * The classic SharePoint Server is not supported with this web part.
+
+* To view Power BI content via a SharePoint web part, users need to be members of both the **Power BI app workspace** and the **SharePoint page**.
 
 ## Next steps
 
