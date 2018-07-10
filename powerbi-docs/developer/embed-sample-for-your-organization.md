@@ -403,3 +403,4 @@ More questions? [Try asking the Power BI Community](http://community.powerbi.com
 
 > [!div class="nextstepaction"]
 > [Embed for 3rd party customers](embed-sample-for-customers.md)
+> [Embed from apps](embed-from-apps.md)
