@@ -215,7 +215,7 @@ To make the REST API call, you must include an *Authorization* header in the for
 
 Here is a code sample of how to retrieve reports with the **REST API**.
 
-*A sample of getting a content item whether it is a report, dashboard, or tile that you want to embed is available within the **_Default.aspx.cs_** file in the [sample application](#embed-your-content-using-the-sample-application).*
+*A sample of getting a content item that you want to embed (report, dashboard, or tile) is available within the **_Default.aspx.cs_** file in the [sample application](#embed-your-content-using-the-sample-application).*
 
 ```csharp
 using Newtonsoft.Json;
