@@ -117,7 +117,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
     Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
-    ![New workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+    ![Create Workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
 ### Create and publish your reports
 
