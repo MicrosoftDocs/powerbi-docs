@@ -1,5 +1,5 @@
 ---
-title: Embed reports or dashboards from apps and not from app workspaces
+title: Embed reports or dashboards from apps
 description: Learn how to integrate, or embed, a report or dashboard from a Power BI app and not from an app workspace.
 author: markingmyname
 ms.author: maghan 
@@ -12,7 +12,7 @@ manager: kfile
 #Customer intent: As a developer, I want to embed Power BI content into an application from an app, so users of an organization can share data.
 ---
 
-# Embed reports or dashboards from apps and not from app workspaces
+# Embed reports or dashboards from apps
 
 In Power BI, you can create apps to bring related dashboards and reports together, all in one place, and then publish them to large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users, so you can share content with them using Power BI Apps. We would like to share few quick steps on how to accomplish embedding of content out of a published Power BI App and into a third-party application.
 
