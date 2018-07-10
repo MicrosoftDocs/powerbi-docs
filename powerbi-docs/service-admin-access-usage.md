@@ -22,8 +22,6 @@ You can access the activity report within the [new](https://docs.microsoft.com/a
 
 > [!NOTE]
 > This activity report doesn't identify the type of license each user has.
-> 
-> 
 
 ## Requirements
 The following are requirements to view the sign-in activity report.
@@ -66,7 +64,7 @@ Sign-in related data can be available for up to 30 days. For more information, s
 
 ## Next steps
 [Sign-in activity reports in the Azure Active Directory portal (New Portal)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[View your access and usage reports (Classic Portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
+[View your access and usage reports (Classic Portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
 [Sign-in sample PowerShell script](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Azure Active Directory report retention policies](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
 [Using auditing within your organization](service-admin-auditing.md)  
