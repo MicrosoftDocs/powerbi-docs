@@ -190,7 +190,7 @@ Follow these steps to start embedding your content using a sample application.
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
     Select **Settings**.
-    
+
     ![Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
     Select **Keys**.
