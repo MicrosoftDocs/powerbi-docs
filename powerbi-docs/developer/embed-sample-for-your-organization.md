@@ -153,7 +153,9 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Cloud Config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fill in the **ClientID** information with the **Application ID** from **Azure**. The **ClientID** is used by the application to identify itself to the users from which you're requesting permissions. To get the **ClientID**, follow these steps:
+    Fill in the **ClientID** information with the **Application ID** from **Azure**. The **ClientID** is used by the application to identify itself to the users from which you're requesting permissions.
+
+    To get the **ClientID**, follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
@@ -163,7 +165,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    Select the application that will need to use the **ClientID**.
+    Select the application that needs to use the **ClientID**.
 
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
@@ -171,9 +173,34 @@ Follow these steps to start embedding your content using a sample application.
 
     ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    Fill in the **ClientSecret** information with the [Application Secret](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/key-vault) from **Azure**.
+    Fill in the **ClientSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
 
-    ![ClientSecret](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    To get the **ClientSecret**, follow these steps:
+
+    Sign into the [Azure portal](https://portal.azure.com).
+
+    ![Azure Portal Main](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+
+    In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
+
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+
+    Select the application that needs to use the **ClientSecret**.
+
+    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+
+    Select **Settings**.
+    
+    ![Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+
+    Select **Keys**.
+
+    ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+
+    Fill in the **Description** with a name and select a **Duration** period, then select **Save** to get the **Value** for your application. If you lose the **Key Value**, you need to create a new one within the **Azure portal**.
+
+    ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+
 
      Fill in the **groupId** information with the **app workspace GUID** from Power BI.
 
