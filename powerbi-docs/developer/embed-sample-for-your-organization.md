@@ -403,7 +403,7 @@ function updateEmbedReport() {
 }
 ```
 
-## Using Power BI Premium dedicated capacity
+## Using a Power BI Premium dedicated capacity
 
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
@@ -429,7 +429,7 @@ Once dedicated capacity is created, assign the app workspace to the dedicated ca
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 ## Next steps
-In this tutorial, you've learned how to embed Power BI content into an application using  **Power BI Premium** and your **organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
+In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)
