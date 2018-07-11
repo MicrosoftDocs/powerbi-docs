@@ -51,7 +51,7 @@ You register your application with Azure Active Directory to allow your applicat
     ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)</br>
     ![New App registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Follow the prompts and create a new application. For **user owns data** you need to use **Web app/API** for the application type. You also need to provide a **Sign-on URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: http://localhost:13526/).
+4. Follow the prompts and create a new application. For **user owns data** you need to use **Web app/API** for the application type. You also need to provide a **Sign-on URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (e. g. http://localhost:13526/).
 
     ![Create App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
@@ -169,7 +169,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
+    You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **ClientID** for the application.
 
     ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
@@ -200,7 +200,6 @@ Follow these steps to start embedding your content using a sample application.
     Fill in the **Description** with a name and select a **Duration** period, then select **Save** to get the **Value** for your application. If you lose the **Key Value**, you need to create a new one within the **Azure portal**.
 
     ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
-
 
      Fill in the **groupId** information with the **app workspace GUID** from Power BI.
 
@@ -408,11 +407,11 @@ function updateEmbedReport() {
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. If a workspace is unassigned to a dedicated capacity, it is considered a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
 
 ### Assign an app workspace to a dedicated capacity
 
-Once dedicated capacity is created, assign the app workspace to the dedicated capacity. To complete this, follow these steps.
+Once a dedicated capacity is created, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
