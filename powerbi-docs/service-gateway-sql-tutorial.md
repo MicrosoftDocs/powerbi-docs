@@ -125,7 +125,7 @@ Now that you have sample data to work with, you connect to SQL Server in Power B
 
 ## Add SQL Server as a gateway data source
 
-In Power BI Desktop, you connect directly to SQL Server, but the Power BI service requires a gateway to act as a bridge. Now you add your instance of SQL Server as a data source for the gateway you created in a previous article (listed under [Prerequisites](#prereqisites)). 
+In Power BI Desktop, you connect directly to SQL Server, but the Power BI service requires a gateway to act as a bridge. Now you add your instance of SQL Server as a data source for the gateway you created in a previous article (listed under [Prerequisites](#prerequisites)). 
 
 1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-sql-tutorial/icon-gear.png) > **Manage gateways**.
 
