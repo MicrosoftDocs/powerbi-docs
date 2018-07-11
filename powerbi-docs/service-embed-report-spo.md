@@ -78,7 +78,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the app workspace within the Power BI service. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 Alternatively, you can grant users access to your report by doing the following.
 
@@ -140,8 +140,6 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 * The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
 
 * The classic SharePoint Server is not supported with this web part.
-
-* To view Power BI content via a SharePoint web part, users need to be members of both the **Power BI app workspace** and the **SharePoint page**.
 
 ## Next steps
 
