@@ -376,14 +376,12 @@ function updateEmbedReport() {
 }
 ```
 
-## Move to production
+## Using Power BI Premium dedicated capacity
 
-Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
+Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
-
-Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage.
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
 
 ### Assign an app workspace to a dedicated capacity
 
@@ -407,6 +405,7 @@ More questions? [Try asking the Power BI Community](http://community.powerbi.com
 In this tutorial, you've learned how to embed Power BI content into an application using  **Power BI Premium** and your **organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
 
 > [!div class="nextstepaction"]
-> > [Embed from apps](embed-from-apps.md)
-></br>
+> [Embed from apps](embed-from-apps.md)
+
+> [!div class="nextstepaction"]
 >[Embed for 3rd party customers](embed-sample-for-customers.md)
