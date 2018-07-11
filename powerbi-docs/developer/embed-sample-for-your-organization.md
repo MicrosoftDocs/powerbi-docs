@@ -197,7 +197,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    Fill in the **Description** with a name and select a **Duration** period, then select **Save** to get the **Value** for your application. If you lose the **Key Value**, you need to create a new one within the **Azure portal**.
+    Fill in the **Description** with a name and select a **Duration**, then select **Save** to get the **Value** for your application. If you lose the **Key Value**, you need to create a new one within the **Azure portal**.
 
     ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
