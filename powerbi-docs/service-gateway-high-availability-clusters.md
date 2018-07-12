@@ -14,7 +14,9 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 ---
 # High availability clusters for On-premises data gateway
-You can create **high availability clusters** of **On-premises data gateway** installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. Such clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data resources. This article describes the steps you can take to create a high availability cluster of On-premises data gateways, and shares best practices when setting them up. High availability gateway clusters require the November 2017 update to On-premises data gateway, or later.
+You can create **high availability clusters** of **On-premises data gateway** installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. Such clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data resources. The Power BI service always uses the primary gateway in the cluster, unless it’s not available. In that case, the service switches to the next gateway in the cluster, and so on.
+
+This article describes the steps you can take to create a high availability cluster of On-premises data gateways, and shares best practices when setting them up. High availability gateway clusters require the November 2017 update to On-premises data gateway, or later.
 
 
 ## Setting up high availability clusters of gateways
