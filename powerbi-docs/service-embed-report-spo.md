@@ -78,7 +78,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the app workspace within the Power BI service. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 Alternatively, you can grant users access to your report by doing the following.
 
@@ -123,7 +123,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 ## Known issues and limitations
 
-* **Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"**
+* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
   If you receive this error, please try one of the following.
   
@@ -148,5 +148,4 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
-
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
