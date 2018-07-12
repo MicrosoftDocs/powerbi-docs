@@ -16,7 +16,7 @@ manager: kfile
 
 In **Power BI**, you can create apps to bring related **dashboards** and **reports** together, all in one place, and then publish them to large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users, so you can share content with them using Power BI Apps. We would like to share a few quick steps on how to accomplish embedding of content out of a published Power BI App and into a third-party application.
 
-## How to grab Report embed URL for embedding:
+## How to grab Report embed URL for embedding
 
 1. Instantiate the application in a user workspace (‘My Workspace’) by either sharing with yourself or guiding another user to go through this flow.
 
@@ -28,10 +28,20 @@ In **Power BI**, you can create apps to bring related **dashboards** and **repor
 
     ![Embed from Apps](media/embed-from-apps/embed-from-app.png)
 
-## How to grab Dashboard embed URL for embedding:
+## How to grab Dashboard embed URL for embedding
 
 1. Instantiate the application in a user workspace (‘My Workspace’) by either sharing with yourself or guiding another user to go through this flow.
 
 2. Call GetDashboards REST API and extract the corresponding dashboard embedURL field out of the response (please note that the REST call shouldn’t have a workspace identifier as part of the URL as the app got instantiated in the user’s workspace).
 
 3. Use the embed URL retrieved in step 4 to use with our JS SDK.
+
+## Next Steps
+
+Also review how to embed from app worksapces for your 3rd party customer and for your organization.
+
+> [!div class="nextstepaction"]
+>[Embed for 3rd party customers](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Embed for your organization](embed-sample-for-your-organization.md)
