@@ -52,6 +52,7 @@ During the Preview phase of this feature, there are several limitations:
 
 * Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the On-premises data gateway will be rolled out over time.
 * Full support for row level security defined in SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+* Object level security (OLS) is not supported. Q&A does not respect object level security and can reveal table or column names to users who don't have access to them. You should enable RLS to ensure data values are secured appropriately as well. 
 * Live connections are only supported with the On-premises data gateway. As a result, this cannot be used with the personal gateway.
 
 ## Next steps

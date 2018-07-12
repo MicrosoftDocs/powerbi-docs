@@ -100,6 +100,6 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 ## Next steps
 [Create a Microsoft Flow that includes a data alert](service-flow-integration.md)    
 [Set data alerts on your mobile device](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Get started with Power BI](service-get-started.md)    
+[What is Power BI?](power-bi-overview.md)    
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

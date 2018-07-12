@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -18,12 +18,12 @@ With Power BI Desktop, you can access **SAP Business Warehouse (BW)** data.
 
 For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
 
-Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either the standard **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connectint to SAP BW from Power BI Desktop.
+Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connectint to SAP BW from Power BI Desktop.
 
 We suggest you use the **Implementation 2.0 SAP Connector** whenever possible.
 
-## Installation of the standard SAP BW Connector
-We recommend using the Implementation 2.0 SAP Connector whenever possible (see instructions in the following section). This section describes installation of the standard **SAP BW Connector**, which you can install by taking the following installation steps:
+## Installation of version 1 of the SAP BW Connector
+We recommend using the Implementation 2.0 SAP Connector whenever possible (see instructions in the following section). This section describes installation of version 1 of the **SAP BW Connector**, which you can install by taking the following installation steps:
 
 1. Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available. The **SAP NetWeaver** library is usually included also in the SAP Client Tools installation.
    
@@ -50,11 +50,11 @@ When installing, in the **Optional setup steps** window, make sure you select th
 ![SAP optional setup steps](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> The standard SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the standard version, the Netweaver DLLs are not required.
+> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the the first version, the Netweaver DLLs are not required.
 
 
-## Standard SAP BW Connector features
-The standard **SAP BW Connector** in Power BI Desktop let you import data from your **SAP Business Warehouse Server** cubes, or use DirectQuery. 
+## Version 1 SAP BW Connector features
+The version 1 **SAP BW Connector** in Power BI Desktop let you import data from your **SAP Business Warehouse Server** cubes, or use DirectQuery. 
 
 To learn more about the **SAP BW connector** and how to use it with DirectQuery, take a look at the [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md) article.
 
@@ -97,7 +97,7 @@ You must create a new connection to use Implementation 2.0 of the SAP BW Connect
 
     ![SAP connection dialog](media/desktop-sap-bw-connector/sap_bw_7.png)
 
-3. Select **OK**, and subsequently, the **Navigator** experience is the same as described in the earlier section for the standard SAP BW Connector. 
+3. Select **OK**, and subsequently, the **Navigator** experience is the same as described in the earlier section for the version 1 SAP BW Connector. 
 
 ### New options for Implementation 2.0 
 
@@ -111,7 +111,7 @@ Implementation 2.0 supports the following options:
 
     The default value for this option is SapBusinessWarehouseExecutionMode.BasXmlGzip.
 
-    Using *SapBusinessWarehouseExecutionMode.BasXmlGzip* may improve performance when experiencing high latency for large datasets or for large datasets.
+    Using *SapBusinessWarehouseExecutionMode.BasXmlGzip* may improve performance when experiencing high latency for large datasets.
 
 2. **BatchSize** - Specifies the maximum number of rows that will be retrieved at a time when executing an MDX statement. A small number of rows will translate into more calls to the server while retrieving a large dataset. A large number of rows may improve performance, but could cause memory issues on the SAP BW server. The default value is 50000 rows.
 
@@ -159,7 +159,7 @@ Changing existing reports to use **Implementation 2.0** is only possible in Impo
 
     ![query snippet](media/desktop-sap-bw-connector/sap_bw_12.png)
 
-4. Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with the standard SAP BW Connector. However, there may be some differences due to the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
+4. Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with version 1 of the SAP BW Connector. However, there may be some differences due to the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
 
 ## Troubleshooting
 This section provides troubleshooting situations (and solutions) for working with th **SAP BW** connector.

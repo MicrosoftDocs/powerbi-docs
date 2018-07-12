@@ -12,6 +12,8 @@
     items: 
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
+    - name: "Get started with Power BI"
+      href: service-get-started.md
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -394,6 +396,8 @@
           href: service-excel-workbook-files.md
         - name: "Get data from Power BI Desktop files"
           href: service-desktop-files.md
+        - name: "Parameters settings for datasets"
+          href: service-parameters.md
         - name: "Get data from comma separated value (.csv) files"
           href: service-comma-separated-value-files.md
         - name: "Real-time streaming in Power BI (Preview)"
@@ -875,16 +879,12 @@
       items: 
       - name: "Get started with the iOS app"
         href: mobile-iphone-app-get-started.md
-      - name: "Get started with the iPad app"
-        href: mobile-ipad-app-get-started.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile-apps-ios-qna.md
       - name: "Power BI Apple Watch app"
         href: mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile-apps-scan-barcode-iphone.md
-      - name: "Power BI for iOS apps"
-        href: mobile-ios-ipad-iphone-apps.md
     - name: iOS and Android
       items: 
       - name: "Annotate and share in the mobile apps"
@@ -935,8 +935,6 @@
         href: developer/integrate-tile.md
       - name: "Integrate a Power BI report into an app (user owns data)"
         href: developer/integrate-report.md
-      - name: "Integrate content into your application (app owns data)"
-        href: developer/embed-sample-for-customers.md
       - name: "Integrate content into your application for sovereign clouds (app owns data)"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Embed custom layouts into an app"
@@ -1265,6 +1263,13 @@
       href: service-admin-syndication-partner.md
     - name: "Configure mobile apps with Intune"
       href: service-admin-mobile-intune.md
+  - name: Reference
+    items: 
+    - name: "PowerShell, REST APIs, and .NET SDK"
+      href: service-admin-reference.md
+    - name: "Power BI cmdlets for PowerShell"
+      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      maintainContext: true
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
 ---
 # Embedding with Power BI
@@ -23,7 +23,7 @@ To view a sample of how embedding works, see the [JavaScript embed sample](https
 ## Embedding for your organization
 Embedding for your organization allows you to extend the Power BI service. This requires that users of your application sign into the Power BI service when they want to view their content. Once someone in your organization signs in, they will only have access to dashboards and reports that they own or that have been shared with them in the Power BI service.
 
-*Examples of embedding for your organization include internal web application, the SharePoint Online web part and Microsoft Teams integration.*
+*Examples of embedding for your organization include internal web application, the SharePoint Online web part and [Microsoft Teams integration (you must have Admin rights)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 For embedding for your organization, see the following:
 

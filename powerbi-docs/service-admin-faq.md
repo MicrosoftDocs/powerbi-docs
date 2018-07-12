@@ -37,14 +37,13 @@ This article addresses frequently asked questions for Power BI administration. F
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Are there any additional things I should be prepared for?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Is this free? Will I be charged for these licenses?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Where is my Power BI tenant located?](#where-is-my-power-bi-tenant-located)
 * [What is the Power BI SLA (Service Level Agreement)?](#what-is-the-power-bi-sla)
 
 **Security in Power BI**
 
 * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [How does security work in Power BI?](#how-does-security-work-in-power-bi?)
+* [How does security work in Power BI?](#how-does-security-work-in-power-bi)
 
 ## Sign up for Power BI
 ### How do users sign up for Power BI?
@@ -232,9 +231,6 @@ You might experience an increase in password reset requests. For information abo
 
 You can remove a user from your tenant via the standard process in the Office 365 admin center. However, if the user still has an active email address from your organization, they will be able to rejoin unless you block all users from joining.
 
-### Is this free? Will I be charged for these licenses?
-The **Power BI (free)** licenses are for the free version of Power BI. If you're interested in additional capabilities, take a look at the [Power BI Pro version](service-premium.md).
-
 ### Where is my Power BI tenant located?
 To learn how to find where your Power BI tenant is located, also known as a data region, see [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
 
@@ -252,7 +248,6 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Power BI admin portal](service-admin-portal.md)  
 [Understanding the Power BI admin role](service-admin-role.md)  
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)  

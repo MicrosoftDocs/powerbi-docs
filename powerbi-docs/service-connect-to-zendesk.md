@@ -80,6 +80,6 @@ Your Zendesk URL will be the same as the URL you use to sign into your Zendesk a
 If you are having issues connecting, please check your Zendesk URL and confirm you're using an Zendesk administrator account.
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * [Get data](service-get-data.md)
 

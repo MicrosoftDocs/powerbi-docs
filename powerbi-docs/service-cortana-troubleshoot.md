@@ -26,7 +26,7 @@ This article is part of a series. If you haven't already, we recommend reading t
 If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
 ## Why doesn't Cortana find answers from my Power BI reports or dashboards?
-1. Do you have a Power BI account?  If not, [sign up, it's free](service-self-service-signup-for-power-bi.md).
+1. Do you have a Power BI account?  If not, [sign up for a free trial](https://powerbi.microsoft.com/get-started/).
 2. Is Cortana working?  Do you see the Cortana icon in your taskbar?
 
     ![](media/service-cortana-troubleshoot/power-bi-cortana-icon.png)
