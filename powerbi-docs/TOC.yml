@@ -899,8 +899,10 @@
       href: developer/what-can-you-do.md
   - name: Tutorials
     items: 
-    - name: "Embed content for customers"
+    - name: "Embed content for your customers"
       href: developer/embed-sample-for-customers.md
+    - name: "Embed content for your organization"
+      href: developer/embed-sample-for-your-organization.md
   - name: Concepts
     items: 
     - name: Working with Power BI REST APIs
@@ -937,12 +939,8 @@
         href: developer/embedding.md
       - name: "How to embed your content"
         href: developer/embedding-content.md
-      - name: "Integrate a dashboard into an app (user owns data)"
-        href: developer/integrate-dashboard.md
-      - name: "Integrate a Power BI tile into an app (user owns data)"
-        href: developer/integrate-tile.md
-      - name: "Integrate a Power BI report into an app (user owns data)"
-        href: developer/integrate-report.md
+      - name: "How to embed from an app"
+        href: developer/embed-from-apps.md
       - name: "Integrate content into your application for sovereign clouds (app owns data)"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Embed custom layouts into an app"
