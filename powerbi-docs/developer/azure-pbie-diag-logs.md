@@ -98,50 +98,6 @@ The Metrics category logs the same [Server metrics](https://docs.microsoft.com/a
 
     If you want to change how your diagnostic logs are saved at any point in the future, you can return to this page to modify settings.
 
-### PowerShell
-
-Here are the basic commands to get you going. If you want step-by-step help on setting up logging to a storage account by using PowerShell, see the tutorial later in this article.
-
-To enable metrics and diagnostics logging by using PowerShell, use the following commands:
-
-* To enable storage of diagnostics logs in a storage account, use this command:
-
-   ```powershell
-   Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -StorageAccountId [your storage account id] -Enabled $true
-   ```
-
-   The storage account ID is the resource ID for the storage account where you want to send the logs.
-
-* To enable streaming of diagnostics logs to an event hub, use this command:
-
-   ```powershell
-   Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -ServiceBusRuleId [your service bus rule id] -Enabled $true
-   ```
-
-   The Azure Service Bus rule ID is a string with this format:
-
-   ```powershell
-   {service bus resource ID}/authorizationrules/{key name}
-   ```
-
-* To enable sending diagnostics logs to a Log Analytics workspace, use this command:
-
-   ```powershell
-   Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -WorkspaceId [resource id of the log analytics workspace] -Enabled $true
-   ```
-
-* You can obtain the resource ID of your Log Analytics workspace by using the following command:
-
-   ```powershell
-   (Get-AzureRmOperationalInsightsWorkspace).ResourceId
-   ```
-
-You can combine these parameters to enable multiple output options.
-
-### REST API
-
-Learn how to [change diagnostics settings by using the Azure Monitor REST API](https://msdn.microsoft.com/library/azure/dn931943.aspx). 
-
 ### Resource Manager template
 
 Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
@@ -152,4 +108,4 @@ Logs are typically available within a couple hours of setting up logging. It's u
 
 * Use standard Azure access control methods to secure your logs by restricting who can access them.
 * Delete logs that you no longer want to keep in your storage account.
-* Be sure to set a retention period for so old logs are deleted from your storage account.
+* Be sure to set a retention period for so old logs are deleted from your storage account. 
