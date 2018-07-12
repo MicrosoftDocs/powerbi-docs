@@ -12,7 +12,7 @@ manager: kfile
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your organization
-This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization. With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. **User owns data** is about having an application that allows you to extend the Power BI service.
+This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization. With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. With **User owns data**, your application can extend the Power BI service.
 
 ![View application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
