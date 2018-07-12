@@ -199,24 +199,22 @@ If you have multiple subscriptions, you might have to specify a specific one tha
 Get-AzureRmSubscription
 ```
 
-Then, to specify the subscription that's associated with the Azure Analysis Services account you are logging, type:
+Then, to specify the subscription that's associated with the Power BI Embedded account you are logging, type:
 
 ```powershell
 Set-AzureRmContext -SubscriptionId <subscription ID>
 ```
 
-> [!NOTE]
-> If you have multiple subscriptions associated with your account, it is important to specify the subscription.
+If you have multiple subscriptions associated with your account, it is important to specify the subscription.
 
 ### Create a new storage account for your logs
 
 You can use an existing storage account for your logs, provided it's in the same subscription as your server. For this tutorial you create a new storage account dedicated to Analysis Services logs. To make it easy, you're storing the storage account details in a variable named **sa**.
 
-You also use the same resource group as the one that contains your Analysis Services server. Substitute values for `awsales_resgroup`, `awsaleslogs`, and `West Central US` with your own values:
+You also use the same resource group as the one that contains your Analysis Services server. Substitute values for `pbiembedtest`, `pbiembedtest`, and `West Central US` with your own values:
 
 ```powershell
-$sa = New-AzureRmStorageAccount -ResourceGroupName awsales_resgroup `
--Name awsaleslogs -Type Standard_LRS -Location 'West Central US'
+$sa = New-AzureRmStorageAccount -ResourceGroupName pbiembedtest -Name pbiembedtest -Type Standard_LRS -Location 'West Central US'
 ```
 
 ### Identify the server account for your logs
@@ -224,8 +222,7 @@ $sa = New-AzureRmStorageAccount -ResourceGroupName awsales_resgroup `
 Set the account name to a variable named **account**, where ResourceName is the name of the account.
 
 ```powershell
-$account = Get-AzureRmResource -ResourceGroupName awsales_resgroup `
--ResourceName awsales -ResourceType "Microsoft.AnalysisServices/servers"
+$account = Get-AzureRmResource -ResourceGroupName pbiembedtest -ResourceName pbiembedtest -ResourceType "Microsoft.powerbiembedded"
 ```
 
 ### Enable logging
@@ -239,11 +236,11 @@ Set-AzureRmDiagnosticSetting  -ResourceId $account.ResourceId -StorageAccountId 
 The output should look something like this:
 
 ```powershell
-StorageAccountId            : 
+StorageAccountId            :
 /subscriptions/a23279b5-xxxx-xxxx-xxxx-47b7c6d423ea/resourceGroups/awsales_resgroup/providers/Microsoft.Storage/storageAccounts/awsaleslogs
 ServiceBusRuleId            :
 EventHubAuthorizationRuleId :
-Metrics                    
+Metrics
     TimeGrain       : PT1M
     Enabled         : False
     RetentionPolicy
@@ -251,7 +248,7 @@ Metrics
     Days    : 0
 
 
-Logs                       
+Logs
     Category        : Engine
     Enabled         : True
     RetentionPolicy
@@ -287,6 +284,8 @@ Set-AzureRmDiagnosticSetting -ResourceId $account.ResourceId`
 
 ## Next steps
 
-Learn more about [Azure resource diagnostic logging](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs).
+> [!div class="nextstepaction"]
+> Learn about [Azure resource diagnostic logging](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
-See [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting) in PowerShell help.
+> [!div class="nextstepaction"]
+> See [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting) in PowerShell help.
