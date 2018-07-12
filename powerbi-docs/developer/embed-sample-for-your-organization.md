@@ -149,7 +149,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Open up the Cloud.config file in the sample application. There are 2 fields you need to fill in to run the application successfully. The **ClientID**, the and the **ClientSecret**.
+2. Open up the Cloud.config file in the sample application. There are a few fields you need to populate to run the application successfully. The **ClientID**, the and the **ClientSecret**.
 
     ![Cloud Config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
@@ -197,7 +197,7 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    Fill in the **Description** with a name and select a **Duration**, then select **Save** to get the **Value** for your application. If you lose the **Key Value**, you need to create a new one within the **Azure portal**.
+    Fill in the **Description** with a name and select a **Duration**, then select **Save** to get the **Value** for your application. Once you close the **Keys** blade after saving the **key value**, the value field shows only as **_Hidden_**, and at that point, you are not able to retrieve the **key value**. If you lose the **key value**, you need to create a new one within the **Azure portal**.
 
     ![Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
