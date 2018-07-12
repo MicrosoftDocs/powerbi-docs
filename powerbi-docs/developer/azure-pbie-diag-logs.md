@@ -10,11 +10,9 @@ ms.date: 07/31/2018
 ms.reviewer: ''
 
 ---
-# Setup diagnostic logging
+# Diagnostic logging for Power BI Embedded
 
 An important part of the [Power BI Embedded](https://docs.microsoft.com/azure/power-bi-embedded/) solution in Azure is monitoring how your capacities are performing. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite). 
-
-![Diagnostic logging to Storage, Event Hubs, or Log Analytics](./media/analysis-services-logging/aas-logging-overview.png)
 
 ## What's logged?
 
@@ -182,13 +180,8 @@ To learn more about using the new Log Search query language, see [Understanding 
 > [!TIP]
 > Have a great Log Analytics query you want to share? If you have a GitHub account, you can add it to this article. Just click **Edit** at the top-right of this page.
 
-## Tutorial - Turn on logging by using PowerShell
+## Turn on logging by using PowerShell
 In this quick tutorial, you create a storage account in the same subscription and resource group as your Analysis Service server. You then use Set-AzureRmDiagnosticSetting to turn on diagnostics logging, sending output to the new storage account.
-
-### Prerequisites
-To complete this tutorial, you must have the following resources:
-
-* An existing Azure Analysis Services server. For instructions on creating a server resource, see [Create a server in Azure portal](analysis-services-create-server.md), or [Create an Azure Analysis Services server by using PowerShell](analysis-services-create-powershell.md).
 
 ### </a>Connect to your subscriptions
 
