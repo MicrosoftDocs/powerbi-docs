@@ -102,13 +102,13 @@ Checking the **AllMetrics** option logs the data of all the metrics that you can
     * **Engine**. Select this option to log xEvents. If you're archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
     * **AllMetrics**. Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
-        ![Diagnostics settings](media/azure-pbie-diag-logs/diag-settings.png)
-
 3. Click **Save**.
 
     If you receive an error that says "Failed to update diagnostics for \<workspace name>. The subscription \<subscription id> is not registered to use microsoft.insights." follow the [Troubleshoot Azure Diagnostics](https://docs.microsoft.com/azure/log-analytics/log-analytics-azure-storage) instructions to register the account, then retry this procedure.
 
     If you want to change how your diagnostic logs are saved at any point in the future, you can return to this page to modify settings.
+
+    ![Diagnostics settings](media/azure-pbie-diag-logs/diag-settings.png)
 
 ### PowerShell
 
