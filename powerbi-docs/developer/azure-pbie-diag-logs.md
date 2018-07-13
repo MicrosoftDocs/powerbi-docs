@@ -138,11 +138,11 @@ You can combine these parameters to enable multiple output options.
 
 ### REST API
 
-Learn how to [change diagnostics settings by using the Azure Monitor REST API](https://msdn.microsoft.com/library/azure/dn931931.aspx). 
+Learn how to [change diagnostics settings by using the Azure Monitor REST API](https://docs.microsoft.com/en-us/rest/api/monitor/). 
 
 ### Resource Manager template
 
-Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](../monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template.md). 
+Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
 
 ## Manage your logs
 
@@ -158,8 +158,6 @@ Metrics and server events are integrated with xEvents in Log Analytics for side-
 
 To view your diagnostic data in Log Analytics, open the Log Search page from the left menu or the Management area, as shown below.
 
-![Log Search options in the Azure portal](./media/analysis-services-logging/aas-logging-open-log-search.png)
-
 Now that you've enabled data collection, in **Log Search**, click **All collected data**.
 
 In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine and Service events. Notice a Log Analytics query is created on-the-fly. The EventClass\_s field contains xEvent names, which may look familiar if you've used xEvents for on-premises logging.
@@ -167,24 +165,6 @@ In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnost
 Click **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
 Be sure to see Log Analytics, which provides a website with enhanced query, dashboarding, and alerting capabilities on collected data.
-
-### Queries
-
-There are hundreds of queries you can use. Here are a few to get you started.
-To learn more about using the new Log Search query language, see [Understanding log searches in Log Analytics](../log-analytics/log-analytics-log-search-new.md). 
-
-* Query return queries submitted to Azure Analysis Services that took over five minutes (300,000 milliseconds) to complete.
-
-    ```
-    search * | where ( Type == "AzureDiagnostics" ) | where ( EventClass_s == "QUERY_END" ) | where toint(Duration_s) > 300000
-    ```
-
-* Identify scale out replicas.
-
-    ```
-    search * | summarize count() by ServerName_s
-    ```
-    When using scale-out, you can identify read-only replicas because the ServerName\_s field values have the replica instance number appended to the name. The resource field contains the Azure resource name, which matches the server name that the users see. The IsQueryScaleoutReadonlyInstance_s field equals true for replicas.
 
 ## Turn on logging by using PowerShell
 You can create a storage account in the same subscription and resource group as your Power BI Embedded capacity. You then use Set-AzureRmDiagnosticSetting to turn on diagnostics logging, sending output to the new storage account.
@@ -211,9 +191,7 @@ Then, to specify the subscription that's associated with the Powre BI Embedded a
 Set-AzureRmContext -SubscriptionId <subscription ID>
 ```
 
-> [!NOTE]
-> If you have multiple subscriptions associated with your account, it is important to specify the subscription.
->
+If you have multiple subscriptions associated with your account, it is important to specify the subscription.
 
 ### Create a new storage account for your logs
 
@@ -297,7 +275,7 @@ Set-AzureRmDiagnosticSetting -ResourceId $account.ResourceId`
 You can learn more about Azure resource diagnostic logging.
 
 > [!div class="nextstepaction"]
-> [Azure resource diagnostic logging](../monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs.md)
+> [Azure resource diagnostic logging](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
 > [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting) in PowerShell help.
+> [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
