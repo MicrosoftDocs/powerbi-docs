@@ -12,15 +12,24 @@ ms.reviewer: ''
 ---
 # Diagnostic logging for Power BI Embedded
 
-An important part of the [Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) solution in Azure is monitoring how your capacities are performing. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
+With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you will be able to log many events from your capacity, pour them into any analytics tool and get insights on the behavior of your resource. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
+
+Using Diagnostics can answer many scenarios, such as:
+
+* Detection of long-running or problematic queries.
+* Detecting errors when reaching the limit of your capacity.
+* Derivation of [capacity Metrics](https://powerbi.microsoft.com/en-us/blog/power-bi-developer-community-april-update/).
+* Tracking usage of specific datasets.
 
 ## What's logged?
 
-You can select **Engine**, or the **AllMetrics** categories.
+You can select **Engine** or the **AllMetrics** categories.
 
 ### Engine
 
 Selecting **Engine** logs all [xEvents](https://docs.microsoft.com/sql/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events). You cannot select individual events.
+
+The engine category instructs the resource to log the following Events, and on each of the events there are properties:
 
 | Event Name | Event Description |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,9 +77,11 @@ Selecting **Engine** logs all [xEvents](https://docs.microsoft.com/sql/analysis-
 | RequestParameters |  |  |
 | RequestProperties |  |  |
 
-### AllMetrics
+### Metrics
 
-The Metrics category logs the same [Server metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics) displayed in Metrics.
+Checking the **AllMetrics** will log the data of all the metrics that can be used on a Power BI Embedded resource.
+
+   ![Show Metrics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-02.png)
 
 ## Setup diagnostics logging
 
@@ -84,11 +95,14 @@ The Metrics category logs the same [Server metrics](https://docs.microsoft.com/a
 
     * **Name**. Enter a name for the logs to create.
 
-    * **Archive to a storage account**. To use this option, you need an existing storage account to connect to. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account). Follow the instructions to create a Resource Manager, general-purpose account, then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu.
-    * **Stream to an event hub**. To use this option, you need an existing Event Hub namespace and event hub to connect to. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). Then return to this page in the portal to select the Event Hub namespace and policy name.
-    * **Send to Log Analytics**. To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-activity).
+    * **Archive to a storage account**. To use this option, you need an existing storage account to connect to. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account). Follow the instructions to create a Resource Manager, general-purpose account, then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log files are stored in JSON format
+    * **Stream to an event hub**. To use this option, you need an existing Event Hub namespace and event hub to connect to. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). Then return to this page in the portal to select the Event Hub namespace and policy name. This allows broad integration with, for example, big-data systems.
+    * **Send to Log Analytics**. To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages the particularly useful [Azure Log Analytics](Azure Log Analytics), which provides built in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-powerbi).
+    For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-activity).
     * **Engine**. Select this option to log xEvents. If you're archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are autodeleted after the retention period expires.
-    * **Metrics**. Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are autodeleted after the retention period expires.
+    * **AllMetrics**. Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are autodeleted after the retention period expires.
+
+        ![Diagnostics settings](media/azure-pbie-diag-logs/diag-settings.png)
 
 3. Click **Save**.
 
