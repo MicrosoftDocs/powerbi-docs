@@ -211,11 +211,11 @@ If you have multiple subscriptions associated with your account, it is essential
 
 You can use an existing storage account for your logs, provided it's in the same subscription as your server. For this tutorial, you create a new storage account dedicated to Power BI Embedded logs. To make it easy, you're storing the storage account details in a variable named **sa**.
 
-You also use the same resource group as the one that contains your Power BI Embedded Azure service. Substitute values for `awsales_resgroup`, `awsaleslogs`, and `West Central US` with your values:
+You also use the same resource group as the one that contains your Power BI Embedded Azure service. Substitute values for `pbie_resgroup`, `pbielogs`, and `West Central US` with your values:
 
 ```powershell
-$sa = New-AzureRmStorageAccount -ResourceGroupName awsales_resgroup `
--Name awsaleslogs -Type Standard_LRS -Location 'West Central US'
+$sa = New-AzureRmStorageAccount -ResourceGroupName pbie_resgroup `
+-Name pbielogs -Type Standard_LRS -Location 'West Central US'
 ```
 
 ### Identify the server account for your logs
@@ -223,8 +223,8 @@ $sa = New-AzureRmStorageAccount -ResourceGroupName awsales_resgroup `
 Set the account name to a variable named **account**, where ResourceName is the name of the account.
 
 ```powershell
-$account = Get-AzureRmResource -ResourceGroupName awsales_resgroup `
--ResourceName awsales -ResourceType "Microsoft.AnalysisServices/servers"
+$account = Get-AzureRmResource -ResourceGroupName pbie_resgroup `
+-ResourceName pbie -ResourceType "Microsoft.AnalysisServices/servers"
 ```
 
 ### Enable logging
@@ -239,7 +239,7 @@ The output should look something like this:
 
 ```powershell
 StorageAccountId            : 
-/subscriptions/a23279b5-xxxx-xxxx-xxxx-47b7c6d423ea/resourceGroups/awsales_resgroup/providers/Microsoft.Storage/storageAccounts/awsaleslogs
+/subscriptions/a23279b5-xxxx-xxxx-xxxx-47b7c6d423ea/resourceGroups/pbie_resgroup/providers/Microsoft.Storage/storageAccounts/pbielogs
 ServiceBusRuleId            :
 EventHubAuthorizationRuleId :
 Metrics                    
@@ -266,8 +266,8 @@ Logs
 
 
 WorkspaceId                 :
-Id                          : /subscriptions/a23279b5-xxxx-xxxx-xxxx-47b7c6d423ea/resourcegroups/awsales_resgroup/providers/microsoft.analysisservic
-es/servers/awsales/providers/microsoft.insights/diagnosticSettings/service
+Id                          : /subscriptions/a23279b5-xxxx-xxxx-xxxx-47b7c6d423ea/resourcegroups/pbie_resgroup/providers/microsoft.analysisservic
+es/servers/pbie/providers/microsoft.insights/diagnosticSettings/service
 Name                        : service
 Type                        :
 Location                    :
