@@ -10,9 +10,9 @@ ms.date: 07/31/2018
 ms.reviewer: ''
 ---
 
-# Diagnostic logging for Power BI Embedded
+# Diagnostic logging for Power BI Embedded in Azure
 
-With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can log many events from your capacity, pour them into an analytics tool and get insights on the behavior of your resource. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
+With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can log many events from your capacity, pour them into an analytics tool and get insights into the behavior of your resource. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
 
 Using Diagnostics can answer many scenarios, such as:
 
@@ -79,7 +79,7 @@ The engine category instructs the resource to log the following Events, and on e
 
 ### Metrics
 
-Checking the **AllMetrics** logs the data of all the metrics that can be used on a Power BI Embedded resource.
+Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
 
    ![Show Metrics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-02.png)
 
@@ -95,8 +95,8 @@ Checking the **AllMetrics** logs the data of all the metrics that can be used on
 
     * **Name**. Enter a name for the logs to create.
 
-    * **Archive to a storage account**. To use this option, you need an existing storage account to connect to. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account). Follow the instructions to create a Resource Manager, general-purpose account, then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log files are stored in JSON format
-    * **Stream to an event hub**. To use this option, you need an existing Event Hub namespace and event hub to connect to. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). Then return to this page in the portal to select the Event Hub namespace and policy name. This allows broad integration with, for example, big-data systems.
+    * **Archive to a storage account**. To use this option, you need to connect to an existing storage account. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account). Follow the instructions to create a Resource Manager, general-purpose account, then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log file storage is in JSON format.
+    * **Stream to an event hub**. To use this option, you need to connect to an existing Event Hub namespace and event hub. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). Then return to this page in the portal to select the Event Hub namespace and policy name.
     * **Send to Log Analytics**. To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages the particularly useful [Azure Log Analytics](Azure Log Analytics), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-powerbi).
     For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-activity).
     * **Engine**. Select this option to log xEvents. If you're archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
@@ -112,7 +112,7 @@ Checking the **AllMetrics** logs the data of all the metrics that can be used on
 
 ### PowerShell
 
-Here are the basic commands to get you going. If you want step-by-step help on setting up logging to a storage account by using PowerShell, see the tutorial later in this article.
+Here are the necessary commands to get you going.
 
 To enable metrics and diagnostics logging by using PowerShell, use the following commands:
 
@@ -160,11 +160,11 @@ Learn how to [enable diagnostics settings at resource creation by using a Resour
 
 ## Manage your logs
 
-Logs are typically available within a couple hours of setting up logging. It's up to you to manage your logs in your storage account:
+Logs are typically available within a couple of hours after setting up logging. It's up to you to manage your logs in your storage account:
 
 * Use standard Azure access control methods to secure your logs by restricting who can access them.
 * Delete logs that you no longer want to keep in your storage account.
-* Be sure to set a retention period for so old logs are deleted from your storage account.
+* Be sure to set a retention period, so old logs are deleted from your storage account.
 
 ## View logs in Log Analytics
 
@@ -178,7 +178,7 @@ In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnost
 
 Click **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
-Be sure to see Log Analytics, which provides a website with enhanced query, dashboarding, and alerting capabilities on collected data.
+Be sure to see Log Analytics, which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
 
 ## Turn on logging by using PowerShell
 You can create a storage account in the same subscription and resource group as your Power BI Embedded capacity. You then use Set-AzureRmDiagnosticSetting to turn on diagnostics logging, sending output to the new storage account.
@@ -191,7 +191,7 @@ Start an Azure PowerShell session and sign in to your Azure account with the fol
 Connect-AzureRmAccount
 ```
 
-In the pop-up browser window, enter your Azure account user name and password. Azure PowerShell gets all the subscriptions that are associated with this account and by default, uses the first one.
+In the pop-up browser window, enter your Azure account username and password. Azure PowerShell gets all the subscriptions that are associated with this account and by default, uses the first one.
 
 If you have multiple subscriptions, you might have to specify a specific one that was used to create your Azure Key Vault. Type the following to see the subscriptions for your account:
 
@@ -199,19 +199,19 @@ If you have multiple subscriptions, you might have to specify a specific one tha
 Get-AzureRmSubscription
 ```
 
-Then, to specify the subscription that's associated with the Power BI Embedded account you are logging, type:
+To specify the subscription that's associated with the Power BI Embedded account, type:
 
 ```powershell
 Set-AzureRmContext -SubscriptionId <subscription ID>
 ```
 
-If you have multiple subscriptions associated with your account, it is important to specify the subscription.
+If you have multiple subscriptions associated with your account, it is essential to specify the subscription.
 
 ### Create a new storage account for your logs
 
-You can use an existing storage account for your logs, provided it's in the same subscription as your server. For this tutorial you create a new storage account dedicated to Power BI Embedded logs. To make it easy, you're storing the storage account details in a variable named **sa**.
+You can use an existing storage account for your logs, provided it's in the same subscription as your server. For this tutorial, you create a new storage account dedicated to Power BI Embedded logs. To make it easy, you're storing the storage account details in a variable named **sa**.
 
-You also use the same resource group as the one that contains your Power BI Embedded Azure service. Substitute values for `awsales_resgroup`, `awsaleslogs`, and `West Central US` with your own values:
+You also use the same resource group as the one that contains your Power BI Embedded Azure service. Substitute values for `awsales_resgroup`, `awsaleslogs`, and `West Central US` with your values:
 
 ```powershell
 $sa = New-AzureRmStorageAccount -ResourceGroupName awsales_resgroup `
@@ -276,7 +276,7 @@ Tags                        :
 
 This confirms that logging is now enabled for the server, saving information to the storage account.
 
-You can also set retention policy for your logs so older logs are automatically deleted. For example, set retention policy using **-RetentionEnabled** flag to **$true**, and set **-RetentionInDays** parameter to **90**. Logs older than 90 days are automatically deleted.
+You can also set the retention policy for your logs, so older logs are automatically deleted. For example, set retention policy using **-RetentionEnabled** flag to **$true**, and set **-RetentionInDays** parameter to **90**. Logs older than 90 days are automatically deleted.
 
 ```powershell
 Set-AzureRmDiagnosticSetting -ResourceId $account.ResourceId`
