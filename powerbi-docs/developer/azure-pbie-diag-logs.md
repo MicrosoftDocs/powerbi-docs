@@ -12,7 +12,7 @@ ms.reviewer: ''
 ---
 # Diagnostic logging for Power BI Embedded
 
-With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you will be able to log many events from your capacity, pour them into any analytics tool and get insights on the behavior of your resource. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
+With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can log many events from your capacity, pour them into any analytics tool and get insights on the behavior of your resource. With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/), and export them to [Log Analytics](https://azure.microsoft.com/services/log-analytics/), a service of [Azure](https://www.microsoft.com/cloud-platform/operations-management-suite).
 
 Using Diagnostics can answer many scenarios, such as:
 
@@ -79,7 +79,7 @@ The engine category instructs the resource to log the following Events, and on e
 
 ### Metrics
 
-Checking the **AllMetrics** will log the data of all the metrics that can be used on a Power BI Embedded resource.
+Checking the **AllMetrics** logs the data of all the metrics that can be used on a Power BI Embedded resource.
 
    ![Show Metrics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-02.png)
 
