@@ -905,52 +905,20 @@
       href: mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
-<<<<<<< HEAD
   - name: Embedded Analytics
     items:
     - name: Overview
-=======
-  - name: Overview
-    items: 
-    - name: "What can developers do with Power BI?"
-      href: developer/what-can-you-do.md
-  - name: Tutorials
-    items: 
-    - name: "Embed content for your customers"
-      href: developer/embed-sample-for-customers.md
-    - name: "Embed content for your organization"
-      href: developer/embed-sample-for-your-organization.md
-  - name: Concepts
-    items: 
-    - name: Working with Power BI REST APIs
-      items:
-      - name: "What can I do with the Power BI API?"
-        href: developer/overview-of-power-bi-rest-api.md
-      - name: "Power BI REST API limitations"
-        href: developer/api-rest-api-limitations.md
-      - name: "Dataset properties"
-        href: developer/api-dataset-properties.md
-      - name: "Data model versioning"
-        href: developer/api-data-model-versioning.md
-    - name: "Create a custom visual with the Developer Tools"
-      href: service-custom-visuals-getting-started-with-developer-tools.md
-    - name: "Power BI permissions"
-      href: developer/power-bi-permissions.md
-    - name: "Row-level security (RLS)"
-      href: developer/embedded-row-level-security.md
-    - name: "FAQ"
-      href: developer/embedded-faq.md    
-  - name: How to
-    items: 
-    - name: Create a custom visual
->>>>>>> 3497bcb30147558250168fc0cd73cac3a3dbaa9d
       items: 
       - name: "What can developers do with Power BI?"
         href: developer/what-can-you-do.md
+      - name: "Embedding with Power BI"
+        href: developer/embedding.md
     - name: Tutorials
       items: 
       - name: "Embed content for customers"
         href: developer/embed-sample-for-customers.md
+      - name: "Embed content for your organization"
+        href: developer/embed-sample-for-your-organization.md
     - name: Concepts
       items: 
       - name: "Power BI permissions"
@@ -961,8 +929,6 @@
         href: developer/embedded-faq.md    
     - name: How to
       items: 
-      - name: "Embedding with Power BI"
-        href: developer/embedding.md
       - name: "How to embed your content"
         href: developer/embedding-content.md
       - name: "How to embed from an app"
@@ -983,8 +949,6 @@
         href: developer/migrate-from-powerbi-embedded.md      
       - name: "Power BI Embedded migration tool"
         href: developer/migrate-tool.md
-      - name: "Migration code snippets"
-        href: developer/migrate-code-snippets.md
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
     - name: Reference
@@ -997,6 +961,8 @@
         href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "JavaScript Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Migration code snippets"
+        href: developer/migrate-code-snippets.md
     - name: Resources
       items:
       - name: "Onboarding Experience Tool for embedding"
@@ -1013,12 +979,25 @@
     items:
     - name: Overview
       items: 
-      - name: "Create a custom visual with the Developer Tools"
-        href: service-custom-visuals-getting-started-with-developer-tools.md
+      - name: "Adding Custom visuals into Power BI"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
     - name: Tutorials
-      items: 
+      items:
+      - name: "Developing a Power BI Custom Visual"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
-      items:     
+      items:
+      - name: "Using Capabilities"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: "Data View Mappings"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/ 
+      - name: "Objects and Properties"
+      - name: "https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/  
+      - name: "Advanced Edit Mode"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/
+      - name: "Migrating to versioned API guide"
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/migrating-to-versioned-api-guide/
     - name: How to
       items: 
       - name: Create a custom visual
