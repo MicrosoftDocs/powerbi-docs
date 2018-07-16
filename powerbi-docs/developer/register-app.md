@@ -17,7 +17,6 @@ You register your application with Azure AD to allow your application access to 
 
 > [!IMPORTANT]
 > Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration doesn't complete successfully.
-> 
 
 There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/) or you can do it directly within the Azure portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. Use the Azure portal if you want to make changes to your app.
 
@@ -168,7 +167,6 @@ You want to be logged in with either the *master* account, used for embedding or
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
-
 5. Grant App Permissions to Azure Active Directory (AAD)
    
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.

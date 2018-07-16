@@ -38,7 +38,7 @@ In **Power BI**, you can create apps to bring related **dashboards** and **repor
 
 ## Next Steps
 
-Also review how to embed from app worksapces for your 3rd party customer and for your organization.
+Also, review how to embed from app workspaces for your 3rd party customers and your organization.
 
 > [!div class="nextstepaction"]
 >[Embed for 3rd party customers](embed-sample-for-customers.md)
