@@ -339,13 +339,13 @@
         - name: Certification
           items: 
           - name: "Content Pack Certification Program"
-            href: developer/service-content-pack-overview.md
+            href: service-content-pack-overview.md
           - name: "Template Content Pack authoring"
-            href: developer/template-content-pack-authoring.md
+            href: template-content-pack-authoring.md
           - name: "Template Content Pack testing"
-            href: developer/template-content-pack-testing.md
+            href: template-content-pack-testing.md
           - name: "Template Content Pack experiences"
-            href: developer/template-content-pack-experience.md
+            href: template-content-pack-experience.md
       - name: Reports
         items: 
         - name: "Create a new report from an existing report"

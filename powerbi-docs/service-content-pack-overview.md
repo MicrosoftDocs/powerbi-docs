@@ -4,18 +4,17 @@ description: Content Pack Certification Program
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/20/2018
 ms.author: maggies
-
 ---
+
 # Overview of the Power BI service content pack program
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
 
-ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. 
+ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure.
 
 These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](template-content-pack-experience.md).
 
@@ -78,4 +77,3 @@ For support during development, please use [https://powerbi.microsoft.com/suppor
 
 ## Next step
 [Authoring](template-content-pack-authoring.md)
-

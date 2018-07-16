@@ -4,14 +4,13 @@ description: Template Content Pack Authoring
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-
 ---
+
 # Author template content packs in Power BI
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
