@@ -988,7 +988,7 @@
     - name: Concepts
       items:
       - name: "Using Capabilities"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/capabilities/
       - name: "Data View Mappings"
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/ 
       - name: "Objects and Properties"
@@ -1021,15 +1021,15 @@
   - name: Automation
     items:
     - name: Overview
-      items: 
+      items:
+        - name: "What can I do with the Power BI API?"
+          href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
       items: 
     - name: Concepts
       items:
       - name: Working with Power BI REST APIs
         items:
-        - name: "What can I do with the Power BI API?"
-          href: developer/overview-of-power-bi-rest-api.md
         - name: "Power BI REST API limitations"
           href: developer/api-rest-api-limitations.md
         - name: "Dataset properties"
