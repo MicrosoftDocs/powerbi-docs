@@ -27,8 +27,6 @@ You can select **Engine** and/or the **AllMetrics** categories.
 
 ### Engine
 
-Selecting **Engine** logs all [xEvents](https://docs.microsoft.com/sql/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events). You cannot select individual events.
-
 The engine category instructs the resource to log the following Events, and on each of the events there are properties:
 
 | Event Name | Event Description |
@@ -68,16 +66,16 @@ The engine category instructs the resource to log the following Events, and on e
 | Error | 0 | Error number of a given event. |
 | TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Text data associated with the event. |
 | ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Name of the database in which the statement of the user is running. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
 | SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
 | ApplicationName | null | Name of the client application that created the connection to the server. |
-| CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Name of the server producing the event. |
+| CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
 | RequestParameters |  |  |
 | RequestProperties |  |  |
 
-### Metrics
+### AllMetrics
 
 Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
 
@@ -103,8 +101,6 @@ Checking the **AllMetrics** option logs the data of all the metrics that you can
     * **AllMetrics**. Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
 3. Click **Save**.
-
-    If you receive an error that says "Failed to update diagnostics for \<workspace name>. The subscription \<subscription id> is not registered to use microsoft.insights." follow the [Troubleshoot Azure Diagnostics](https://docs.microsoft.com/azure/log-analytics/log-analytics-azure-storage) instructions to register the account, then retry this procedure.
 
     If you want to change how your diagnostic logs are saved at any point in the future, you can return to this page to modify settings.
 
@@ -174,11 +170,11 @@ To view your diagnostic data in Log Analytics, open the Log Search page from the
 
 Now that you've enabled data collection, in **Log Search**, click **All collected data**.
 
-In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine and Service events. Notice a Log Analytics query is created on-the-fly. The EventClass\_s field contains xEvent names, which may look familiar if you've used xEvents for on-premises logging.
+In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine events. Notice a Log Analytics query is created on-the-fly. The EventClass\_s field contains xEvent names, which may look familiar if you've used xEvents for on-premises logging.
 
 Click **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
-Be sure to see Log Analytics, which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
+Be sure to see [Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/), which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
 
 ## Turn on logging by using PowerShell
 You can create a storage account in the same subscription and resource group as your Power BI Embedded capacity. You then use Set-AzureRmDiagnosticSetting to turn on diagnostics logging, sending output to the new storage account.
