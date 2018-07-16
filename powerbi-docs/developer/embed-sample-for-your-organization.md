@@ -399,7 +399,8 @@ function updateEmbedReport() {
         logView.innerHTML = logView.innerHTML + "Error<br/>";
         logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
         logView.innerHTML = logView.innerHTML + "---------<br/>";
-    });
+    }
+  );
 }
 ```
 
