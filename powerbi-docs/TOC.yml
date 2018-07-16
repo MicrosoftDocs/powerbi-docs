@@ -921,12 +921,12 @@
         href: developer/embed-sample-for-your-organization.md
     - name: Concepts
       items: 
-      - name: "Power BI permissions"
-        href: developer/power-bi-permissions.md
       - name: "Row-level security (RLS)"
         href: developer/embedded-row-level-security.md
       - name: "FAQ"
-        href: developer/embedded-faq.md    
+        href: developer/embedded-faq.md
+      - name: "Power BI permissions"
+        href: developer/power-bi-permissions.md 
     - name: How to
       items: 
       - name: "How to embed your content"
@@ -935,8 +935,6 @@
         href: developer/embed-from-apps.md
       - name: "Integrate content into your application for sovereign clouds (app owns data)"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
-      - name: "Embed custom layouts into an app"
-        href: developer/embedded-custom-layout.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
@@ -947,22 +945,16 @@
         href: developer/qanda.md
       - name: "How to migrate Power BI Embedded"
         href: developer/migrate-from-powerbi-embedded.md      
-      - name: "Power BI Embedded migration tool"
-        href: developer/migrate-tool.md
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
     - name: Reference
       items: 
-      - name: "REST APIs"
-        href: https://docs.microsoft.com/rest/api/power-bi/
-      - name: "Power BI C# Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: ".NET SDK Download"
         href: https://go.microsoft.com/fwlink/?linkid=848274
-      - name: "JavaScript Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848276
       - name: "Migration code snippets"
         href: developer/migrate-code-snippets.md
+      - name: "Embed custom layouts into an app"
+        href: developer/embedded-custom-layout.md
     - name: Resources
       items:
       - name: "Onboarding Experience Tool for embedding"
@@ -974,7 +966,9 @@
       - name: "Power BI community"
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
-      href: https://go.microsoft.com/fwlink/?linkid=848281
+        href: https://go.microsoft.com/fwlink/?linkid=848281
+      - name: "Power BI Embedded migration tool"
+        href: developer/migrate-tool.md
   - name: Develop Custom Visuals
     items:
     - name: Overview
@@ -1025,20 +1019,8 @@
         - name: "What can I do with the Power BI API?"
           href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
-      items: 
-    - name: Concepts
       items:
-      - name: Working with Power BI REST APIs
-        items:
-        - name: "Power BI REST API limitations"
-          href: developer/api-rest-api-limitations.md
-        - name: "Dataset properties"
-          href: developer/api-dataset-properties.md
-        - name: "Data model versioning"
-          href: developer/api-data-model-versioning.md
-    - name: How to
-      items: 
-      - name: "Push data into a dashboard"
+      - name: "Push data into a dataset"
         href: developer/walkthrough-push-data.md
       - name: "Register an app with Azure AD"
         href: developer/walkthrough-push-data-register-app-with-azure-ad.md
@@ -1050,14 +1032,32 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
-      - name: "Complete code listing"
-        href: developer/walkthrough-push-data-complete-code.md
+    - name: Concepts
+      items:
+      - name: Push data
+        items:
+        - name: "Power BI REST API limitations"
+          href: developer/api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: developer/api-dataset-properties.md
+        - name: "Data model versioning"
+          href: developer/api-data-model-versioning.md
       - name: "Automatic retention policy for real-time data"
         href: developer/api-automatic-retention-policy-for-real-time-data.md
-    - name: Reference
+    - name: How to
       items: 
+      - name: "Complete code listing"
+        href: developer/walkthrough-push-data-complete-code.md
+    - name: Reference
+      items:
+      - name: "REST APIs"
+        href: https://docs.microsoft.com/rest/api/power-bi
     - name: Resources
       items:
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
 - name: Power BI Report Server
   items:
   - name: Overview
