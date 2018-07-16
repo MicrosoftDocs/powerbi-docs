@@ -14,7 +14,7 @@ ms.author: maggies
 # Author template content packs in Power BI
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
-* Queries allow you to [connect](../desktop-connect-to-data.md) and [transform](../desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
+* Queries allow you to [connect](desktop-connect-to-data.md) and [transform](../desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * Data model to create [relationships](../desktop-create-and-manage-relationships.md), [measures](../desktop-measures.md), and Q&A improvements  
 * Report [pages](../desktop-report-view.md) include visuals and filters to provide insights into your data  
 * [Dashboard](../service-dashboards.md) and [tiles](../service-dashboard-create.md) offer an overview of the insights included  
@@ -35,8 +35,8 @@ You can use the Data Connectors that are available out of the box in Power BI De
 
 > [!NOTE]
 > If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you will need to develop your own Data Connector to allow Power BI Desktop to successfully connects and authenticates to your API. For details on how to develop your own Data Connector for your Content Pack, check the Data Connectors documentation [here](https://aka.ms/DataConnectors). 
-> 
-> 
+>
+>
 
 ### Consider the source
 The queries define the data that will be included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.
@@ -51,22 +51,24 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 
 > [!NOTE]
 > Template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](template-content-pack-testing.md#templates) portion all values provided by the users will be literal.
-> 
-> 
+>
+>
 
 ### Additional query tips
-* Ensure all columns are typed appropriately  
+
+* Ensure all columns are typed appropriately
 * Columns have informative names (see Q&A)  
 * For shared logic, consider using functions or queries  
 * Privacy levels are not currently supported in the service - if you get a prompt about privacy levels, you may need to re-write the query to use relative paths  
 
 ## Data Model
+
 A well-defined data model will ensure your customers can easily and intuitively interact with the content pack. Create the data model in the Power BI Desktop.
 
 > [!NOTE]
 > Much of the basic modelling (typing, column names) should be done in the [queries](#queries).
-> 
-> 
+>
+>
 
 ### Q&A
 The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and that your columns are properly named in the [queries](#queries).
@@ -85,8 +87,8 @@ The report pages offer additional insight into the data included in your content
 
 > [!NOTE]
 > Only one report may be included in a content pack, take advantage of the different pages to call out particular sections of your scenario.
-> 
-> 
+>
+>
 
 ### Additional report tips
 * Use more than one visual per page for cross-filtering  
@@ -106,8 +108,8 @@ To create a dashboard for your template content pack, simply upload your PBIX th
 
 > [!NOTE]
 > Template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
-> 
-> 
+>
+>
 
 ### Additional dashboard tips
 * Maintain the same theme when pinning so that the tiles on your dashboard are consistent  
@@ -132,4 +134,3 @@ As listed in the above sections, currently the template content packs have a set
 
 ## Next step
 [Content Pack Testing and Submission](template-content-pack-testing.md)
-
