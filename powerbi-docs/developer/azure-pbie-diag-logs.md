@@ -18,7 +18,7 @@ Using Diagnostics can answer a few scenarios, such as:
 
 * Detection of long-running or problematic queries.
 * Detecting errors when reaching the limit of your capacity.
-* Derivation of [capacity Metrics](https://powerbi.microsoft.com/en-us/blog/power-bi-developer-community-april-update/).
+* Derivation of [capacity metrics](https://powerbi.microsoft.com/en-us/blog/power-bi-developer-community-april-update/).
 * Tracking usage of specific datasets.
 
 ## What's logged?
