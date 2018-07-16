@@ -905,9 +905,45 @@
       href: mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
+<<<<<<< HEAD
   - name: Embedded Analytics
     items:
     - name: Overview
+=======
+  - name: Overview
+    items: 
+    - name: "What can developers do with Power BI?"
+      href: developer/what-can-you-do.md
+  - name: Tutorials
+    items: 
+    - name: "Embed content for your customers"
+      href: developer/embed-sample-for-customers.md
+    - name: "Embed content for your organization"
+      href: developer/embed-sample-for-your-organization.md
+  - name: Concepts
+    items: 
+    - name: Working with Power BI REST APIs
+      items:
+      - name: "What can I do with the Power BI API?"
+        href: developer/overview-of-power-bi-rest-api.md
+      - name: "Power BI REST API limitations"
+        href: developer/api-rest-api-limitations.md
+      - name: "Dataset properties"
+        href: developer/api-dataset-properties.md
+      - name: "Data model versioning"
+        href: developer/api-data-model-versioning.md
+    - name: "Create a custom visual with the Developer Tools"
+      href: service-custom-visuals-getting-started-with-developer-tools.md
+    - name: "Power BI permissions"
+      href: developer/power-bi-permissions.md
+    - name: "Row-level security (RLS)"
+      href: developer/embedded-row-level-security.md
+    - name: "FAQ"
+      href: developer/embedded-faq.md    
+  - name: How to
+    items: 
+    - name: Create a custom visual
+>>>>>>> 3497bcb30147558250168fc0cd73cac3a3dbaa9d
       items: 
       - name: "What can developers do with Power BI?"
         href: developer/what-can-you-do.md
@@ -929,12 +965,8 @@
         href: developer/embedding.md
       - name: "How to embed your content"
         href: developer/embedding-content.md
-      - name: "Integrate a dashboard into an app (user owns data)"
-        href: developer/integrate-dashboard.md
-      - name: "Integrate a Power BI tile into an app (user owns data)"
-        href: developer/integrate-tile.md
-      - name: "Integrate a Power BI report into an app (user owns data)"
-        href: developer/integrate-report.md
+      - name: "How to embed from an app"
+        href: developer/embed-from-apps.md
       - name: "Integrate content into your application for sovereign clouds (app owns data)"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Embed custom layouts into an app"
