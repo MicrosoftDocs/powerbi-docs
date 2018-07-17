@@ -62,7 +62,7 @@ The Acumatica OData endpoint is formatted as follows and should us HTTPS:
 
     https://[sitedomain]/odata/[companyname]
 
-The Application Site Domain can be found in your browser’s address bar when you’re signed into Acumatica. In the example below, the site domain is “https://pbi.acumatica.com” so the OData endpoint to provide would be “https://pbi.acumatica.com/odata”.
+The Application Site Domain can be found in your browser’s address bar when you’re signed into Acumatica. In the example below, the site domain is `https://pbi.acumatica.com` so the OData endpoint to provide would be `https://pbi.acumatica.com/odata`.
 
  ![](media/service-connect-to-acumatica/url.png)
 

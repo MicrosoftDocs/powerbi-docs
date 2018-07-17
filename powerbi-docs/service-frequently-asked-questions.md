@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -20,17 +20,19 @@ LocalizationGroup: Get started
 ## What is Microsoft Power BI?
 Power BI is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [What is Power BI](power-bi-overview.md).
 
-## What’s the difference between Power BI and Power BI Pro?
-Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, scheduling data refresh more frequent than daily, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
+## What’s the difference between Power BI Pro and Power BI Premium?
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. 
+
+Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring per-user licenses for recipients viewing the content.
 
 ## How much does Power BI cost?
-Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. Read about pricing at [Power BI pricing](https://powerbi.microsoft.com/pricing).
+Power BI Desktop is free. There is a 60-day free trial available for Power BI Pro. Read about pricing at [Power BI pricing](https://powerbi.microsoft.com/pricing).
 
 ## What if I have questions about Power BI Premium?
 For questions related to Power BI Premium, see [Power BI Premium FAQ](service-premium-faq.md).
 
 ## How do I find out who in my organization has a Power BI account?
-You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
+You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report does not indicate what type of license each user has. It only reports which users have signed in to Power BI and when they logged in. For more information, see [Find Power BI users that have signed in](service-admin-access-usage.md).
 
 ## What is Power BI Desktop?
 Power BI Desktop is a free desktop application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service by providing advanced data exploration, shaping, modeling, and report creation with highly interactive visualizations. You can save your work to a file, and publish your data and reports right to your Power BI site to share with others. Read more about [What is Power BI Desktop](desktop-what-is-desktop.md).
@@ -48,7 +50,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
 ### On-premises data gateway
-With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](personal-gateway.md).
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises data gateway](service-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](service-gateway-personal-mode.md).
 
 ### Power BI Report Server
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
@@ -132,6 +134,7 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 * To **undo** your last action, or last few actions, press CTRL+Z.
 
 ## Next steps
+* [What is Power BI?](power-bi-overview.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 

@@ -27,19 +27,19 @@ In the [previous article and video](power-bi-report-display-settings.md) you lea
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
 
-    * In Reading view you'll see this.
+   * In Reading view you'll see this.
 
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-    * In Editing view you'll see this.
+   * In Editing view you'll see this.
 
-    ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
+     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
-1. Let's see how the page looks using the **Actual size** setting.
+3. Let's see how the page looks using the **Actual size** setting.
 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
    Not great, the dashboard now has double scrollbars.
-2. Switch to **Fit to Width**.
+4. Switch to **Fit to Width**.
 
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_width.png)
 

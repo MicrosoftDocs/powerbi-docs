@@ -9,7 +9,7 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 06/22/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations

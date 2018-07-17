@@ -8,7 +8,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -344,7 +344,7 @@ Another example would be adding the alternate phrasing “employees sell custome
 ## Considerations and troubleshooting
 If you make a change to a .lsdl.yaml file that does not conform to the linguistic schema format, you would now see validation squiggles like this to indicate issues: 
 
-    ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

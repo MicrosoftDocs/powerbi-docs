@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/05/2017
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -117,6 +117,6 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 
 ## Next steps
 * [Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

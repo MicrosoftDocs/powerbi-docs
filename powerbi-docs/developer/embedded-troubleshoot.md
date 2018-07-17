@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/09/2018
 ms.author: maghan
 ---
 # Troubleshooting your embedded application
@@ -90,6 +90,42 @@ The backend of the application may need to refresh the auth token before calling
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+## Authentication
+
+### Authentication failed with AADSTS70002 or AADSTS50053
+
+**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
+
+If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
+
+There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+We recommend you enable this only as a per-app basis.
+
+To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
+
+1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Run the following powershell commands line-by-line (making sure the variable $sp doesn’t have more than 1 application as a result).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+After assigning the policy, please wait approximately 15-20 seconds for propagation before testing.
+
 **Generate token fails when providing effective identity**
 
 GenerateToken can fail, with effective identity supplied, for a few different reasons.
@@ -107,6 +143,31 @@ To verify which it is, try the following.
 * If IsEffectiveIdentityRolesRequired is true, Role is required.
 * DatasetId is mandatory for any EffectiveIdentity.
 * For Analysis Services, the master user has to be a gateway admin.
+
+### AADSTS90094: The grant requires admin permission
+
+**_Symptoms:_**</br>
+When a non-admin user attempts to sign-in to an application for the first and grant consent she gets the following error:
+* ConsentTest needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+* AADSTS90094: The grant requires admin permission.
+
+    ![Consent Test](media/embedded-troubleshoot/consent-test-01.png)
+
+An admin user can sign-in and grant consent successfully.
+
+**_Root cause:_**</br>
+User consent is disabled for the tenant.
+
+**_Several fixes are possible:_**
+
+*Enable user consent for the entire tenant (all users, all applications)*
+1. In Azure Portal navigate to "Azure Active Directory" => "Users and groups" => "User settings"
+2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
+
+    ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
+
+*Grant permissions by an admin*
+Grant permissions to the application by an admin - either for the entire tenant or for a specific user.
 
 ## Data sources
 
@@ -169,7 +230,7 @@ When you run the **Embed for your organization** sample app, you get the followi
 
     AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
 
-This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use *http://localhost:13526/* as the redirect URL.
+This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `http://localhost:13526/` as the redirect URL.
 
 If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
 

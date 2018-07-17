@@ -42,7 +42,7 @@ Check out the following collection of sources and content for more videos.
 * [Guy in a Cube channel](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) - fresh videos on Power BI features and capabilities
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
