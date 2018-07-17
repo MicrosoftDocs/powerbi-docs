@@ -85,7 +85,7 @@ The layout of your report elements impacts comprehension and guides the reader t
 Let’s take a closer look at alignment.
 
 #### Alignment
-Alignment doesn’t mean that that the different components need to be the same size or that you must have the same number of components on each row of the report. It just means that there is a structure to the page that aids in navigation and readability.
+Alignment doesn’t mean that the different components need to be the same size or that you must have the same number of components on each row of the report. It just means that there is a structure to the page that aids in navigation and readability.
 
 We can see in our updated report below that the report components are now aligned on the left and right edges and each report row is aligned horizontally and vertically as well. Our slicers are to the left of the visuals they impact.
 

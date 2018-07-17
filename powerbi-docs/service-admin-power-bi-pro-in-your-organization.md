@@ -25,7 +25,7 @@ These features require a Power BI Pro license:
 
 * **View shared content** - Pro users can view dashboards and reports that are shared with them, interact with dashbaords and reports that are shareed with them, and re-share dashboards and reports that are shaed with them (if allowed). However, a Pro user cannot edit these dashboards or reports. For more information, see [Share your Power BI dashboards and reports with coworkers and others](service-share-dashboards.md).
 
-* **Integrate content with Microsoft Teams** - You can add a a Power BI tab in a Microsoft (MS) Teams channel. MS Teams automatically detects all the reports in the workspace. For more information, see [Power BI teams up with Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
+* **Integrate content with Microsoft Teams** - You can add a Power BI tab in a Microsoft (MS) Teams channel. MS Teams automatically detects all the reports in the workspace. For more information, see [Power BI teams up with Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
 
 ## Power BI Pro 60-day trial for individuals
 

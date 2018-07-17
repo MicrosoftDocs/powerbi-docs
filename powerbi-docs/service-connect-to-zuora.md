@@ -28,7 +28,7 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
 3. Select **Zuora** \>  **Get**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
+4. Specify your Zuora URL. This is typically "<https://www.zuora.com>", see details on [finding those parameters](#FindingParams) below.
 
    ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
@@ -64,7 +64,7 @@ It also includes these calculated measures:
 | Measure | Description | Pseudo-Calculation |
 | --- | --- | --- |
 | Account: Payments |Total payment amounts in a time period, based on payment effective date. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
-| Account: Refunds |Total refund amounts in a time period, based on refund refund date. Amount is reported as a negative number. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
+| Account: Refunds |Total refund amounts in a time period, based on refund date. Amount is reported as a negative number. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
 | Account: Net Payments |Account Payments plus Account Refunds in a time period. |Account.Payments + Account.Refunds |
 | Account: Active Accounts |The count of accounts that were active in a time period. Subscriptions must have started before (or on) time period start date. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
 | Account: Average Recurring Revenue |Gross MRR per active account in a time period. |Gross MRR / Account.ActiveAccounts |
