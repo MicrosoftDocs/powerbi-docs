@@ -68,7 +68,7 @@ You choose whether to turn on responsiveness for each visual. Read more about [o
   
    ![Removing a visual](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
-## Enhance slicers to to work well in phone reports
+## Enhance slicers to work well in phone reports
 Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in phone reports:
 
 * Decide if report readers can select only one or more than one item.
