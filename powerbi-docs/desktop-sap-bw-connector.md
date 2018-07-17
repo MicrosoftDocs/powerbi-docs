@@ -50,7 +50,7 @@ When installing, in the **Optional setup steps** window, make sure you select th
 ![SAP optional setup steps](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the the first version, the Netweaver DLLs are not required.
+> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the first version, the Netweaver DLLs are not required.
 
 
 ## Version 1 SAP BW Connector features
