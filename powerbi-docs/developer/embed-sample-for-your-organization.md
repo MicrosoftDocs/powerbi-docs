@@ -11,6 +11,7 @@ ms.custom: mvc
 manager: kfile
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
+
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your organization
 This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization. With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. **User owns data** lets your application extend the Power BI service.
 
@@ -228,10 +229,10 @@ Even though the steps to embed your content can be done with the [Power BI REST 
 
 To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same **access token**. The **Power BI Rest API** provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-## Get an access token from Azure AD
+### Get an access token from Azure AD
 Within your application, you first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
-## Get a report
+### Get a report
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI reports**. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
@@ -319,7 +320,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 }
 ```
 
-## Load a report using JavaScript
+### Load a report using JavaScript
 You can use JavaScript to load a report into a div element on your web page.
 
 Here is a code sample of how to retrieve a report from a given workspace.
@@ -398,7 +399,8 @@ function updateEmbedReport() {
         logView.innerHTML = logView.innerHTML + "Error<br/>";
         logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
         logView.innerHTML = logView.innerHTML + "---------<br/>";
-    });
+    }
+  );
 }
 ```
 
@@ -425,8 +427,6 @@ Once a dedicated capacity is created, you can assign your app workspace to that 
 
     ![app workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
 ## Next steps
 In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
 
@@ -435,3 +435,5 @@ In this tutorial, you've learned how to embed Power BI content into an applicati
 
 > [!div class="nextstepaction"]
 >[Embed for 3rd party customers](embed-sample-for-customers.md)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
