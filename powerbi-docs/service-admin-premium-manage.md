@@ -14,11 +14,11 @@ ms.author: mblythe
 LocalizationGroup: Premium
 ---
 # Manage capacities within Power BI Premium and Power BI Embedded
-Learn how you can manage Power BI Premium and Power BI Embedded capacities which provides dedicated resources for your content.
+Learn how you can manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
 
-Capacity is the heard of the Power BI Premium and Power BI Embedded offerings.
+Capacity is the heart of the Power BI Premium and Power BI Embedded offerings.
 
 ## What is capacity?
 Capacity is the set of resources reserved for the exclusive use by you. Having capacity allows you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
@@ -28,6 +28,16 @@ Capacity is all transparent to your end users. They will continue to use Power B
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
 For more information, see [What is Power BI Premium?](service-premium.md).
+
+### Capacity admins
+> [!NOTE]
+> Capacity admins, for Power BI Embedded capacity, are defined within the Microsoft Azure portal.
+
+When you are assigned as a capacity admin to a capacity, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins (Power BI Premium only) or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
+
+Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization. Capacity admins do not have access to all Power BI admin areas by default such as usage metrics, audit logs or tenant settings. Capacities admins also do not have permissions to set up new capacities or change the SKU of existing capacities. Only Global admins or Power BI service administrators have access to those items.
+
+All Office 365 Global admins and Power BI admins are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
 
 ## Purchase capacity
 To take advantage of dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center or create a Power BI Embedded resource within the Microsoft Azure portal. For more information, see the following:
@@ -39,21 +49,9 @@ When you purchase Power BI Premium SKUs, your tenant will receive the correspond
 
 > [!NOTE]
 > You will have 30 days of full access after your subscription ends, but after that your content reverts to a shared capacity. Models that are > 1 GB will not be supported with a regular shared license.
->
 
-## Capacity admins
-> [!NOTE]
-> Capacity admins, for Power BI Embedded capacity, are defined within the Microsoft Azure portal.
->
->
 
-When you are assigned as a capacity admin to a capacity, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins (Power BI Premium only) or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
-
-Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization. Capacity admins do not have access to all Power BI admin areas by default such as usage metrics, audit logs or tenant settings. Capacities admins also do not have permissions to set up new capacities or change the SKU of existing capacities. Only Global admins or Power BI service administrators have access to those items.
-
-All Office 365 Global admins and Power BI admins are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
-
-## Managing capacity
+## Manage capacity
 After you have purchased capacity nodes within Office 365, you will then need to set up a new capacity. This is done through the [Power BI admin portal](service-admin-portal.md). Within the admin portal, you will see a section called **Capacity settings**. This is where you will manage Power BI Premium capacities for your organization.
 
 ![Capacity settings within the admin portal](media/service-admin-premium-manage/admin-portal-premium.png)
@@ -92,8 +90,6 @@ Within the Premium capacity management screen, you can select the **gear icon (s
 
 > [!NOTE]
 > Power BI Embedded capacity settings are managed within the Microsoft Azure portal.
->
->
 
 ### Change capacity size (Power BI Premium)
 Power BI admins and Office 365 Global admins change Power BI Premium capacity size by selecting **Change capacity size**. Capacity admins who are not a Power BI admin or Office 365 Global admin will not have this option.
@@ -124,35 +120,6 @@ You can assign additional **Capacity admins** for Power BI Premium capacities. A
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
-
-## Usage measurements (Power BI Premium)
-For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
-
-![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Power BI Embedded capacity usage is monitored within the Azure portal.
-
-| Metric | Description |
-| --- | --- |
-| CPU |Number of times CPU exceeded 80% utilization. |
-| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
-| Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
-
-Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
-
-![Detailed usage chart CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detailed usage chart Memory Size](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## Assign a workspace to a capacity
 There are a few ways that a workspace could be assigned to a capacity.
@@ -189,6 +156,36 @@ To move a workspace into capacity, you must have admin permissions to that works
 5. Select **Save**.
 
 Once saved, the workspace, and all its contents, will be moved into Premium capacity without any experience interruption for end users.
+
+
+## Monitor capacity usage
+For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
+
+![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
+
+> [!NOTE]
+> Power BI Embedded capacity usage is monitored within the Azure portal.
+
+| Metric | Description |
+| --- | --- |
+| CPU |Number of times CPU exceeded 80% utilization. |
+| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
+| Memory Usage |Average memory usage, represented in gigabytes (GB). |
+| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
+
+Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
+
+![Detailed usage chart CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
+
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detailed usage chart Memory Size](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## What Premium looks like for users
 For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity.

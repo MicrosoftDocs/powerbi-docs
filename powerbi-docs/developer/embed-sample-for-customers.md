@@ -49,7 +49,7 @@ You register your application with Azure Active Directory to allow your applicat
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Follow the prompts and create a new application. For apps owns data you need to use **Native** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/redirect`).
+4. Follow the prompts and create a new application. For apps owns data you need to use **Native** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
 
     ![Create App](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
@@ -139,11 +139,11 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 3. Publish to the **app workspace**
 
-   ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
+   ![Publish desktop report](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
 
     Now you can view the report in the Power BI service online.
 
-   ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
+   ![PBI desktop report view in service](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
 
 ## Embed your content using the sample application
 

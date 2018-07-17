@@ -28,7 +28,7 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
 3. Select **Zuora** \>  **Get**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
+4. Specify your Zuora URL. This is typically "<https://www.zuora.com>", see details on [finding those parameters](#FindingParams) below.
 
    ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.

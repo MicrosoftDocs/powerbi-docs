@@ -37,26 +37,26 @@ To follow along, sign into Power BI service (app.powerbi.com) and [open the Reta
 
 1. Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 2. In the Visualizations pane, select the paintroller icon to reveal the formatting options.  and select **Title** to expand that section.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 3. Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 4. Change **Title Text** by typing **Store count by month opened** in the text field.  
 5. Change **Font color** to orange and **Background Color** to yellow.
-   
+
    * Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
    * Select the dropdown to close the color window.  
      ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
-   
+
    You can always revert to the default colors by selecting **Revert to default** in the color window.
 6. Increase the text size to 12.
 7. The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
    ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
-   
+
     At this point in the tutorial, your column chart **title** should look like something like this:  
     ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
-   
+
     To revert all the title customization we've done so far, select **Revert To Default**, at the bottom of the **Title** customization pane.  
     ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -65,29 +65,30 @@ With the same column chart selected, expand the Background options.
 
 1. Turn the background on and off by selecting the On (or Off) slider. For now, leave it **On**.
 2. Change the background color to 74% grey.
-   
+
    * Select the dropdown and choose a grey color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
    * Change Transparency to 74%.   
      ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
-   
+
    To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background** customization pane.
 
 ## Customize visualization legends
 1. Open the **Overview** report page and select the "Total Sales Variance by FiscalMonth and District Manager" chart.
 2. In the Visualization tab, select the paintbrush icon to open the formatting pane.  
 3. Expand **Legend** options.
-   
+
       ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 4. Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
 5. Move the legend to the left side of the visualization.    
 6. Add a legend title by toggling **Title** to **On** and, in the **Legend name** field, typing **Managers**.
    ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
-   
+
    To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend** customization pane.
 
 <a name="list"></a>
 
 ## Visualization types that can be customized
+
 | Visualization | Title | Background | Legend |
 |:--- |:--- |:--- |:--- |
 | area |yes |yes |yes |
