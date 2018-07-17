@@ -92,18 +92,18 @@
         },
         {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md", 
-            "redirect_url": "/powerbi-docs/developer/embed-sample-for-your-organization",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/integrate-report.md", 
-            "redirect_url": "/powerbi-docs/developer/embed-sample-for-your-organization",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/integrate-tile.md", 
-            "redirect_url": "/powerbi-docs/developer/embed-sample-for-your-organization",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
         }
         
     ]
