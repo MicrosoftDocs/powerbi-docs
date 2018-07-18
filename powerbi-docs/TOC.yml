@@ -984,8 +984,7 @@
       - name: "Data View Mappings"
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/ 
       - name: "Objects and Properties"
-      - name: "https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/  
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/
       - name: "Advanced Edit Mode"
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/
       - name: "Migrating to versioned API guide"
