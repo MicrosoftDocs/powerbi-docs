@@ -1000,8 +1000,6 @@
         href: developer/office-store.md   
     - name: Reference
       items: 
-      - name: "Custom Visuals Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848277
       - name: "APIs"
         href: https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/
     - name: Resources
@@ -1009,7 +1007,9 @@
       - name: "Create a custom visual with the Developer Tools"
         href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
-        href: https://microsoft.github.io/PowerBI-visuals/samples/  
+        href: https://microsoft.github.io/PowerBI-visuals/samples/
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277  
   - name: Automation
     items:
     - name: Overview
