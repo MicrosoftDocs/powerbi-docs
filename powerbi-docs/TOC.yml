@@ -949,10 +949,10 @@
       items: 
       - name: ".NET SDK Download"
         href: https://go.microsoft.com/fwlink/?linkid=848274
-      - name: "Migration code snippets"
-        href: developer/migrate-code-snippets.md
       - name: "Embed custom layouts into an app"
         href: developer/embedded-custom-layout.md
+      - name: "Migration code snippets"
+        href: developer/migrate-code-snippets.md
     - name: Resources
       items:
       - name: "Dev Center"
@@ -1025,18 +1025,6 @@
         href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
       items:
-      - name: "Push data into a dataset"
-        href: developer/walkthrough-push-data.md
-      - name: "Register an app with Azure AD"
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: "Get an authentication access token"
-        href: developer/walkthrough-push-data-get-token.md
-      - name: "Create a dataset"
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: "Get a dataset to add rows"
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: "Add rows to a table"
-        href: developer/walkthrough-push-data-add-rows.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
@@ -1050,13 +1038,25 @@
         - name: "Data model versioning"
           href: developer/api-data-model-versioning.md
     - name: How to
-      items: 
-      - name: "Complete code listing"
-        href: developer/walkthrough-push-data-complete-code.md
+      items:
+      - name: "Push data into a dataset"
+        href: developer/walkthrough-push-data.md
+      - name: "Register an app with Azure AD"
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: "Get an authentication access token"
+        href: developer/walkthrough-push-data-get-token.md
+      - name: "Create a dataset"
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: "Get a dataset to add rows"
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: "Add rows to a table"
+        href: developer/walkthrough-push-data-add-rows.md
     - name: Reference
       items:
       - name: "REST APIs"
         href: https://docs.microsoft.com/rest/api/power-bi
+      - name: "Complete code listing"
+        href: developer/walkthrough-push-data-complete-code.md
     - name: Resources
       items:
       - name: "Dev Center"
