@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Premium
 ---
 # Multi-Geo support in Power BI Premium (Preview)
-Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. You may choose to deploy content to any of the following geos (geographies):
+Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. You may choose to deploy content to any of the following geos:
 
 - United States 
 - Canada 
@@ -25,6 +25,8 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 - India 
 - Asia Pacific 
 - Australia 
+
+A geo (geography) can contain more than one region. For example, the United States is a geo, and West Central US and South Central US are regions in the United States. 
 
 Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
@@ -72,7 +74,7 @@ In the Admin Portal, you can view all the capacities for your Power BI tenant an
 If you need to change the region for existing content, you have two options.
 
 - Create a second capacity and move workspaces. Free users won't experience any downtime as long as the tenant has spare v-cores.
-- Temporarily move back to shared capacity from Premium. You don't need extra v-cores, but free users will experience some downtime.
+- If creating a second capacity isn't an option, you can temporarily move the content back to shared capacity from Premium. You don't need extra v-cores, but free users will experience some downtime.
 
 
 ## Move content out of Multi-Geo  
