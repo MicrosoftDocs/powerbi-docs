@@ -909,8 +909,6 @@
     items:
     - name: Overview
       items: 
-      - name: "What can developers do with Power BI?"
-        href: developer/what-can-you-do.md
       - name: "Embedding with Power BI"
         href: developer/embedding.md
     - name: Tutorials
