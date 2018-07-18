@@ -1,5 +1,5 @@
 ---
-title: Multi-geo support in Power BI Premium (Preview)
+title: Multi-Geo support in Power BI Premium (Preview)
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
 author: maggiesMSFT
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/17/2018
+ms.date: 07/18/2018
 ms.author: maggies
 
 LocalizationGroup: Premium
 ---
-# Multi-geo support in Power BI Premium (Preview)
-Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant with Power BI Premium. You may choose to deploy content to any of the following regions:
+# Multi-Geo support in Power BI Premium (Preview)
+Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. You may choose to deploy content to any of the following geos (geographies):
 
 - United States 
 - Canada 
@@ -26,17 +26,17 @@ Learn how you can deploy content to datacenters in regions other than the home r
 - Asia Pacific 
 - Australia 
 
-Multi-geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
+Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
-## Using multi-geo
+## Using Multi-Geo
 
-For new capacities, enable multi-geo by selecting a region other than the default region from the dropdown.  Each available capacity shows the region where it's currently located, such as **West Central US**.
+For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown.  Each available capacity shows the region where it's currently located, such as **West Central US**.
 
-![Capacity size: select a region. Power BI multi-geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
+![Capacity size: select a region. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
   
 After you've created capacity, it remains in that region, and any workspaces created will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
 
-![Edit workspace: Choose an available capacity. Power BI multi-geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Edit workspace: Choose an available capacity. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 You see this message to confirm the change. 
 
@@ -46,7 +46,7 @@ You don't need to reset the gateway credentials during a migration at this time.
    
 During migration, certain operations may fail, such as publishing new datasets or scheduled data refresh.  
 
-The following items are stored in the Premium region when multi-geo is enabled:
+The following items are stored in the Premium region when Multi-Geo is enabled:
  
 - Models (.ABF files) for import and Direct Query datasets
 - Query cache
@@ -67,9 +67,17 @@ In the Admin Portal, you can view all the capacities for your Power BI tenant an
 
 ![View premium capacities](media/service-admin-premium-multi-geo/power-bi-multi-geo-premium-capacities.png) 
 
-## Moving content out of multi-geo  
+## Change the region for existing content
 
-You can take workspaces out of multi-geo capacity one of two ways:
+If you need to change the region for existing content, you have two options.
+
+- Create a second capacity and move workspaces. Free users won't experience any downtime as long as the tenant has spare v-cores.
+- Temporarily move back to shared capacity from Premium. You don't need extra v-cores, but free users will experience some downtime.
+
+
+## Move content out of Multi-Geo  
+
+You can take workspaces out of Multi-Geo capacity one of two ways:
 
 - Delete the current capacity where the workspace is located.  This moves the workspace back to shared capacity in the home region.
 - Migrate individual workspaces back to Premium capacity located in the home tenant.
@@ -80,7 +88,9 @@ Confirm that any movement you initiate between regions follows all corporate and
 
 A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies. 
 
-When moving data from one region to another in a multi-geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
+When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
+
+Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
 
 ## Next steps
 
