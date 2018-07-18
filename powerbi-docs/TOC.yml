@@ -955,18 +955,26 @@
         href: developer/embedded-custom-layout.md
     - name: Resources
       items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Onboarding Experience Tool for embedding"
         href: https://aka.ms/embedsetup
       - name: "JavaScript Playground Sample"
         href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Power BI JavaScript wiki"
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: "Samples"
         href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI Embedded migration tool"
+        href: developer/migrate-tool.md
       - name: "Power BI community"
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-      - name: "Power BI Embedded migration tool"
-        href: developer/migrate-tool.md
   - name: Develop Custom Visuals
     items:
     - name: Overview
@@ -1001,6 +1009,8 @@
         href: https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/
     - name: Resources
       items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Create a custom visual with the Developer Tools"
         href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
@@ -1011,8 +1021,8 @@
     items:
     - name: Overview
       items:
-      - name: "What is Power BI data automation?"
-        href: developer/push-data-overview.md
+      - name: "What can I do with the Power BI API?"
+        href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
       items:
       - name: "Push data into a dataset"
@@ -1029,8 +1039,6 @@
         href: developer/walkthrough-push-data-add-rows.md
     - name: Concepts
       items:
-      - name: "What can I do with the Power BI API?"
-        href: developer/overview-of-power-bi-rest-api.md
       - name: "Automatic retention policy for real-time data"
         href: developer/api-automatic-retention-policy-for-real-time-data.md
       - name: Push data
@@ -1051,10 +1059,12 @@
         href: https://docs.microsoft.com/rest/api/power-bi
     - name: Resources
       items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Power BI C# Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848273
-      - name: "JavaScript Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
 - name: Power BI Report Server
   items:
   - name: Overview

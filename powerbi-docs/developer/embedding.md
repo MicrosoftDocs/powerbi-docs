@@ -41,7 +41,7 @@ For embedding for your organization, see the following:
 
 Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-You can go through the [Onboarding experience tool](#embedding-with-power-bi) to embed for your organization to quickly get started and download a sample application that walks you through integrating a report for your organization.
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to embed for your organization to quickly get started and download a sample application that walks you through integrating a report for your organization.
 
 ## Embedding for your customers
 Embedding for your customers provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Your customers don't need to know anything about Power BI. At least one Power BI Pro account is needed to create an embedded application. The Power BI Pro account acts as a master account for your application. Think of this as a proxy account. The Power BI Pro account also allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned/managed by your application.
@@ -59,7 +59,7 @@ When you are ready to move to production, your app workspace assignment to a ded
 
 For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](embedding-content.md).
 
-You can go through the [Onboarding experience tool](#embedding-with-power-bi) to quickly get started and download a sample application that walks you through integrating a report into your application.
+You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started and download a sample application that walks you through integrating a report into your application.
 
 If you were using the Power BI Workspace Collections service within Azure, see [Migrate content from the Power BI Workspace Collections Azure service](migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
