@@ -27,9 +27,7 @@ Embedding for your organization allows you to extend the Power BI service. This 
 
 For embedding for your organization, see the following:
 
-* [Integrate a report into an app](integrate-report.md)
-* [Integrate a dashboard into an app](integrate-dashboard.md)
-* [Integrate a tile into an app](integrate-tile.md)
+* [Integrate a report into an app](embed-sample-for-your-organization.md)
 
 Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
@@ -46,7 +44,6 @@ To embed dashboards, reports and tiles, you would use the same APIs that you wou
 
 > [!IMPORTANT]
 > While embedding has a dependency on the Power BI service, there is not a dependency on Power BI for your customers. They do not need to sign up for Power BI to view the embedded content in your application.
-> 
 
 When you are ready to move to production, your app workspace must be assigned to a capacity. Power BI Embedded, within Microsoft Azure, offers capacity to use with your applications.
 
@@ -67,4 +64,3 @@ If you were using the Power BI Workspace Collections service within Azure, see [
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
