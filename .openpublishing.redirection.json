@@ -104,7 +104,7 @@
             "source_path": "powerbi-docs/developer/integrate-tile.md", 
             "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
             "redirect_document_id": false
-        }
+        },
         {
             "source_path": "powerbi-docs/developer/service-content-pack-overview.md", 
             "redirect_url": "/power-bi/service-content-pack-overview",
