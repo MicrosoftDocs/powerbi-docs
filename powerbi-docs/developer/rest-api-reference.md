@@ -4,7 +4,6 @@ description: Power BI REST API Reference
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
@@ -27,4 +26,3 @@ The Power BI REST API has the following operations:
 To learn more about the Power BI REST API, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
