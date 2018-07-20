@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
 ---
+
 # Register an Azure AD app to embed Power BI content
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
 
