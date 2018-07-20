@@ -1025,6 +1025,8 @@
         href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
       items:
+      - name: "Push data into a dataset"
+        href: developer/walkthrough-push-data.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
@@ -1039,8 +1041,6 @@
           href: developer/api-data-model-versioning.md
     - name: How to
       items:
-      - name: "Push data into a dataset"
-        href: developer/walkthrough-push-data.md
       - name: "Register an app with Azure AD"
         href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: "Get an authentication access token"
