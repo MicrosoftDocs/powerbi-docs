@@ -115,10 +115,8 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Limitations and considerations
 In this preview version of report **tooltips**, there are a few limitations and considerations to keep in mind.
 
-* Report tooltips are not supported when viewing reports in mobile apps or in embedded environments, including Publish to web. 
-* Report tooltips are not supported for custom visuals. 
-* Clusters are not currently supported as fields that can be shown in report tooltips. 
-* When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
+* Report tooltips are not supported when viewing reports in mobile apps. 
+* Report tooltips are not supported for custom visuals.   
 
 
 ## Next steps
