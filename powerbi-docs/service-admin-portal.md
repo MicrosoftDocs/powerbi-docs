@@ -265,7 +265,7 @@ Users in the organization can tag dashboards with classifications indicating das
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
 
-## Capacity Settings
+## Capacity Settings 
 
 ### Premium settings
 
