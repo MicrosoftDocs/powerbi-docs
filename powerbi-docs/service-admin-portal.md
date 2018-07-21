@@ -4,15 +4,14 @@ description: The admin portal allows for tenant management of Power BI in your o
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
-
 LocalizationGroup: Administration
 ---
+
 # Power BI admin portal
 
 The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
@@ -266,13 +265,17 @@ Users in the organization can tag dashboards with classifications indicating das
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
 
-## Premium settings
+## Capacity Settings
 
-The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
+### Premium settings
+
+The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization can see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 
 For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+
+### Power BI Embedded
 
 ## Embed codes
 
