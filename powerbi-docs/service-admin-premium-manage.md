@@ -159,9 +159,9 @@ Once saved, the workspace, and all its contents, will be moved into Premium capa
 
 ## Configure workloads
 
-By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Power BI dataflows**.
+By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports**.
 
-Enable workloads using the Power BI admin portal or our REST API. For **Power BI dataflows**, the capacity and the tenant must be in the same region. 
+Enable workloads using the Power BI admin portal or our REST API.
 
 ![Configure workloads in the admin portal](media/service-admin-premium-manage/admin-portal-workloads.png)
 
@@ -170,7 +170,7 @@ The following table shows the default and minimum memory values, based on the di
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Paginated reports   | 50% default; 25% minimum | 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum |
-| dataflows | 15% default; no minimum  | 15% default; no minimum  | 15% default; no minimum | 15% default; no minimum  |
+|
 
 ## Monitor capacity usage
 For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:

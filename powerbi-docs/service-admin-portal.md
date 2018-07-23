@@ -265,17 +265,25 @@ Users in the organization can tag dashboards with classifications indicating das
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
 
-## Capacity Settings 
+## Capacity Settings
 
 ### Premium settings
 
-The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization can see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
+The Premium settings tab allows you to manage any Power BI Premium (Em or P SKU) capacities that have been purchased for your organization. All users within your organization can see the Premium settings tab, but only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
 
-![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
+![Power BI Premium admin settings](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 
-For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+For more information about how to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+
+### Power BI Embedded settings
 
 ### Power BI Embedded
+
+The Power BI Embedded settings tab allows you to manage Power BI Embedded (A SKU) capacities that have been purchased for your customer.  If a user does not have any permissions, If a user does not have any permissions, the following message appears.
+
+![Powre BI Embedded admin settings](media/service-admin-portal/power-bi-embedded-capacity-admin-settings.png)
+
+For more information about how to manage Power BI Embedded (A SKU) settings, see [Manage Power BI Embedded capacities](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
 
 ## Embed codes
 
