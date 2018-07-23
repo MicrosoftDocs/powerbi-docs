@@ -147,7 +147,7 @@ So the major difference between **Many to Many** relationships and the more typi
 
     ![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
 
-Because of this, care should be taken to ensure that calculations using *ALL(<Table>)*, such as *% of grand total*, are returning the intended results. 
+Because of this, care should be taken to ensure that calculations using *ALL(\<Table>)*, such as *% of grand total*, are returning the intended results. 
 
 
 ## Limitations and considerations
