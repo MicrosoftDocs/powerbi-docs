@@ -87,7 +87,7 @@ This article shows the code used in the [Embedding for your customer sample](htt
 <add key="embedUrlBase" value="https://app.powerbi.de" />
 ```
 
-* Power BI for China cloud parameters
+* Power BI in China cloud parameters
 	1. Overwrite Cloud.config file with [Power BI in China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
 	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
     3. Add the Power BI for China cloud parameters in the web.config file as follows.
