@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -115,6 +115,7 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Limitations and considerations
 In this preview version of report **tooltips**, there are a few limitations and considerations to keep in mind.
 
+* Beginning with the July 2018 release of **Power BI Desktop**, Table and Matrix visuals are supported for tooltips. 
 * Report tooltips are not supported when viewing reports in mobile apps or in embedded environments, including Publish to web. 
 * Report tooltips are not supported for custom visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
