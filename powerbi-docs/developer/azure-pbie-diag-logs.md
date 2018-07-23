@@ -21,66 +21,6 @@ Using Diagnostics can answer a few scenarios, such as:
 * Derivation of [capacity metrics](https://powerbi.microsoft.com/en-us/blog/power-bi-developer-community-april-update/).
 * Tracking usage of specific datasets.
 
-## What's logged?
-
-You can select **Engine** and/or the **AllMetrics** categories.
-
-### Engine
-
-The engine category instructs the resource to log the following Events, and on each of the events there are properties:
-
-| Event Name | Event Description |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Audit Login | Records all new connection events since the trace started such as when a client requested a connection to a server running an instance of Microsoft SQL Server Analysis Services. |
-| Session Initialize | Collects the session initialization events. |
-| Vertipaq Query Begin | VertiPaq SE query begin |
-| Query Begin | Collects all query begin events since the trace started. |
-| Query End | Collects all query end events since the trace started. |
-| Vertipaq Query End | VertiPaq SE query end |
-| Audit Logout | Records all-new disconnect events since the trace started such as when a client issues a disconnect command. |
-| Error | Records all new error events since the trace started. |
-
-</br>
-</br>
-
-| Property Name | Vertipaq Query End Example | Property Description |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| EventClass | XM_SEQUERY_END | Event Class is used to categorize events. |
-| EventSubclass | 0 | Event Subclass provides additional information about each event class. (e.g. 0: VertiPaq Scan) |
-| RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Root activity ID. |
-| CurrentTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
-| StartTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
-| JobID | 0 | Job ID for progress. |
-| ObjectID | 464 | Object ID |
-| ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Object path. A comma-separated list of parents, starting with the object's parent. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Object reference. Encoded as XML for all parents, using tags to describe the object. |
-| EndTime | 2018-04-06T18:30:11.9137358Z | Time at which the event ended. |
-| Duration | 0 | Amount of time (in milliseconds) taken by the event. |
-| SessionType | User | Session type (what entity caused the operation). |
-| ProgressTotal | 0 | Progress total. |
-| IntegerData | 0 | Integer data. |
-| Severity | 0 | Severity level of an exception. |
-| Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
-| Error | 0 | Error number of a given event. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Text data associated with the event. |
-| ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
-| SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
-| SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
-| ClientProcessID | null | The process ID of the client application. |
-| ApplicationName | null | Name of the client application that created the connection to the server. |
-| CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
-
-### AllMetrics
-
-Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
-
-   ![Show Metrics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-02.png)
-
 ## Setup diagnostics logging
 
 ### Azure portal
@@ -153,6 +93,66 @@ Learn how to [change diagnostics settings by using the Azure Monitor REST API](h
 ### Resource Manager template
 
 Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
+
+## What's logged?
+
+You can select **Engine** and/or the **AllMetrics** categories.
+
+### Engine
+
+The engine category instructs the resource to log the following Events, and on each of the events there are properties:
+
+|     Event Name     |     Event Description     |
+|----------------------------|----------------------------------------------------------------------------------|
+|    Audit Login    |    Records all new connection to   the engine events since the trace started.    |
+|    Session Initialize    |    Records all session   initialization events since the trace started.    |
+|    Vertipaq Query Begin    |    Records all VertiPaq SE query   begin events since the trace started.    |
+|    Query Begin    |    Records all query begin events   since the trace started.    |
+|    Query End    |    Records all query end events   since the trace started.    |
+|    Vertipaq Query End    |    Records all VertiPaq SE query   end events since the trace started.    |
+|    Audit Logout    |    Records all disconnect from   engine events since the trace started.    |
+|    Error    |    Records all engine error   events since the trace started.    |
+
+</br>
+</br>
+
+| Property Name | Vertipaq Query End Example | Property Description |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| EventClass | XM_SEQUERY_END | Event Class is used to categorize events. |
+| EventSubclass | 0 | Event Subclass provides additional information about each event class. (e.g. 0: VertiPaq Scan) |
+| RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Root activity ID. |
+| CurrentTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
+| StartTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
+| JobID | 0 | Job ID for progress. |
+| ObjectID | 464 | Object ID |
+| ObjectType | 802012 | ObjectType |
+| ObjectName | SalesLT Customer | ObjectName |
+| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Object path. A comma-separated list of parents, starting with the object's parent. |
+| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Object reference. Encoded as XML for all parents, using tags to describe the object. |
+| EndTime | 2018-04-06T18:30:11.9137358Z | Time at which the event ended. |
+| Duration | 0 | Amount of time (in milliseconds) taken by the event. |
+| SessionType | User | Session type (what entity caused the operation). |
+| ProgressTotal | 0 | Progress total. |
+| IntegerData | 0 | Integer data. |
+| Severity | 0 | Severity level of an exception. |
+| Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
+| Error | 0 | Error number of a given event. |
+| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Text data associated with the event. |
+| ConnectionID | 3 | Unique connection ID. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
+| SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
+| SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
+| ClientProcessID | null | The process ID of the client application. |
+| ApplicationName | null | Name of the client application that created the connection to the server. |
+| CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
+| RequestParameters |  |  |
+| RequestProperties |  |  |
+
+### AllMetrics
+
+Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
+
+   ![Show Metrics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-02.png)
 
 ## Manage your logs
 
