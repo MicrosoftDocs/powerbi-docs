@@ -530,6 +530,12 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Composite models in Power BI Desktop (Preview)"
+      href: desktop-composite-models.md
+    - name: "Many-to-many relationships in Power BI Desktop (Preview)"
+      href: desktop-many-to-many-relationships.md
+    - name: "Storage mode in Power BI Desktop (Preview)"
+      href: desktop-storage-mode.md
     - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
@@ -670,6 +676,8 @@
         href: desktop-import-and-display-kpis.md
     - name: Create reports
       items: 
+      - name: "Visual elements for reports"
+        href: desktop-visual-elements-for-reports.md        
       - name: "Q&A in Power BI Desktop"
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
@@ -1025,6 +1033,8 @@
         href: developer/overview-of-power-bi-rest-api.md
     - name: Tutorials
       items:
+      - name: "Push data into a dataset"
+        href: developer/walkthrough-push-data.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
@@ -1039,8 +1049,6 @@
           href: developer/api-data-model-versioning.md
     - name: How to
       items:
-      - name: "Push data into a dataset"
-        href: developer/walkthrough-push-data.md
       - name: "Register an app with Azure AD"
         href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: "Get an authentication access token"
@@ -1247,6 +1255,8 @@
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
         href: service-premium-incremental-refresh.md
+      - name: "Multi-Geo support (Preview)"
+        href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
       - name: "Power BI Premium release notes"
