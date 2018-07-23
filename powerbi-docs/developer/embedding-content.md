@@ -104,15 +104,13 @@ Within your application, you need to authenticate with Power BI. If you are embe
 
 Once authenticated, within your application, use the Power BI REST APIs and JavaScript APIs to embed dashboards and reports into your application. 
 
-For **embedding for your organization**, see the following walkthroughs:
+For **embedding for your organization**, see the following walkthrough:
 
-* [Integrate a dashboard into an app](integrate-dashboard.md)
-* [Integrate a tile into an app](integrate-tile.md)
-* [Integrate a report into an app](integrate-report.md)
+* [Integrate a report into an app](embed-sample-for-your-organization.md)
 
 For **embedding with your customers**, which is typical for ISVs, see the following:
 
-* [Integrate a dashboard, tile, or report into your application](embed-sample-for-customers.md)
+* [Integrate a report into your application](embed-sample-for-customers.md)
 
 When embedding for your customers, an embed token is required. To learn more see, [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
