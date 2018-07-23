@@ -80,6 +80,10 @@ Each visual also has a card in the **Formatting** section of the **Visualization
 > [!NOTE]
 > The visibility of toggles do not affect your report when you are authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.
 
+For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports** and then selecting the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
+
+![Settings in the Power BI service to use improved visual headers](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
+
 ### Enabling improved visual headers for existing reports
 
 The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in **Power BI Desktop** by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
