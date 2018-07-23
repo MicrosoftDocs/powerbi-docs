@@ -24,7 +24,7 @@ Power BI also supports sovereign (private) clouds. Each sovereign cloud has its 
 
 * Power BI for Germany cloud
 
-* Power BI for China cloud
+* Power BI in China cloud
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
@@ -110,7 +110,7 @@ You must register your application with Azure AD in order to make REST API calls
 
 * Power BI for Germany cloud - https://app.powerbi.de/apps
 
-Power BI in China cloud - https://app.powerbi.cn/apps
+* Power BI in China cloud - https://app.powerbi.cn/apps
 
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
