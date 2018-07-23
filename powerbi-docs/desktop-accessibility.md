@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -43,8 +43,12 @@ You can press **Alt+Shift+F11** to present an accessible version of the *Show da
 
 > [!NOTE]
 > The Show data feature is only accessible to a screen reader through this keyboard shortcut. If you open Show data through the option in the visual header, it will not be accessible to a screen reader.
-> 
-> 
+
+Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use CTRL+right arrow (control plus the right arrow key) to move through the various controls within the slicer. For example, when you initially press CTRL+right arrow the focus is on the eraser, and pressing the SPACE bar is equivalent to clicking on the eraser button, which erases all values on the slicer. 
+
+You can move through the controls in a slicer by pressing the TAB key. Pressing the TAB key when on the eraser moves to the drop-down button; another TAB then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
+
+![Press CTRL+(right arrow key) in Power BI Desktop to adjust element or values in a slicer, press SPACE to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
 
 These accessibility additions were created to let users fully consume Power BI reports using a screen reader and keyboard navigation.
 
