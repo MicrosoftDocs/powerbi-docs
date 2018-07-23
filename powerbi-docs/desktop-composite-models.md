@@ -22,7 +22,7 @@ Previously in **Power BI Desktop** when you used a DirectQuery in a report, no o
 The **composite models** capability in **Power BI Desktop** consists of three related features:
 
 * **Composite models** - allows a report to have multiple data connections, including DirectQuery connections or import, in any combination thereof.
-* **Many-to-many relationships** - with **composite models** you can establish **many-to-many relationships** between tables, removing requirements for unique values in tables, and revoving prior work-arounds such as introducing new tables just to establish relationships. 
+* **Many-to-many relationships** - with **composite models** you can establish **many-to-many relationships** between tables, removing requirements for unique values in tables, and removing prior work-arounds such as introducing new tables just to establish relationships. 
 * **Storage mode** - you can now specify which visuals require a query to back-end data sources, and those that do no require it are imported even if based on DirectQuery, improving performance and reducing back-end load. Previously, even simple visuals like slicers initiated queries being sent to back-end sources. 
 
 This collection of three related features for **composite models** are each described in separate articles:
