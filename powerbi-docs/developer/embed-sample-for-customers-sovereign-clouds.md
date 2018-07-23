@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2018
+ms.date: 07/31/2018
 ms.author: maghan
-
 ---
+
 # Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
@@ -23,6 +23,8 @@ Power BI also supports sovereign (private) clouds. Each sovereign cloud has its 
 * U. S. Military (DoD)
 
 * Power BI for Germany cloud
+
+* Power BI for China cloud
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
@@ -44,11 +46,8 @@ This article shows the code used in the [Embedding for your customer sample](htt
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.powerbigov.us" />
 ```
 
@@ -59,11 +58,8 @@ This article shows the code used in the [Embedding for your customer sample](htt
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
 ```
 
@@ -74,11 +70,8 @@ This article shows the code used in the [Embedding for your customer sample](htt
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
@@ -89,12 +82,21 @@ This article shows the code used in the [Embedding for your customer sample](htt
 
 ```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbi.de/" />
-
 <add key="embedUrlBase" value="https://app.powerbi.de" />
+```
+
+* Power BI for China cloud parameters
+	1. Overwrite Cloud.config file with [Power BI in China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
+	2. Update clientid (Native app client id), groupid, user (your master user) and password in Web.config file.
+    3. Add the Power BI for China cloud parameters in the web.config file as follows.
+
+```xml
+<add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://analysis.chinacloudapi.cn/powerbi/api" />
+<add key="apiUrl" value="https://api.powerbi.cn/" />
+<add key="embedUrlBase" value="https://app.powerbi.cn" />
 ```
 
 ## Step 1 - register an app in Azure AD
@@ -107,6 +109,8 @@ You must register your application with Azure AD in order to make REST API calls
 * Military (DoD) - https://app.mil.powerbigov.us/apps
 
 * Power BI for Germany cloud - https://app.powerbi.de/apps
+
+Power BI in China cloud - https://app.powerbi.cn/apps
 
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
@@ -121,6 +125,8 @@ Within your application, you will first need to get an **access token**, from Az
 * Military (DoD) - https://login.microsoftonline.us
 
 * Power BI for Germany cloud - https://login.microsoftonline.de
+
+* Power BI in China cloud - https://login.microsoftonline.cn
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 
