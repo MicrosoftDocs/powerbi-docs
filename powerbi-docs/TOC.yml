@@ -958,11 +958,11 @@
       - name: Manage capacity
         items:
         - name: Create capacity
-          href: developer/create-capacity.md
+          href: developer/azure-pbie-create-capacity.md
         - name: Scale capacity
-          href: developer/scale-capacity.md
+          href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start capacity
-          href: developer/pause-start.md
+          href: developer/azure-pbie-pause-start.md
       - name: Migrate
         items:
         - name: "How to migrate from Power BI Workspace Collections"
