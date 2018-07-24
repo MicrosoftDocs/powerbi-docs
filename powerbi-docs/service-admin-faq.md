@@ -43,7 +43,7 @@ This article addresses frequently asked questions for Power BI administration. F
 **Security in Power BI**
 
 * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [How does security work in Power BI?](#how-does-security-work-in-power-bi?)
+* [How does security work in Power BI?](#how-does-security-work-in-power-bi)
 
 ## Sign up for Power BI
 ### How do users sign up for Power BI?

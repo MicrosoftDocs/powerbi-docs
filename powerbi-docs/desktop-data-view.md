@@ -40,6 +40,6 @@ You can also filter and sort data in **Data View**. Each column shows an icon th
 
 ![Sort and filter in Data view in Power BI Desktop](media/desktop-data-view/dataview_sort-and-filter.png)
 
-You can filter individual values, or use advanced filtering based on the the data in the column. 
+You can filter individual values, or use advanced filtering based on the data in the column. 
 
 

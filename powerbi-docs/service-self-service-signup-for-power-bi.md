@@ -28,8 +28,7 @@ As an individual you have several options to sign up and begin using Power BI. Y
 If you are part of an existing organization, that uses Office 365, you can still sign up for a free account. Your IT Admin also has some options to purchase Power BI Pro and assign licenses. For more information about what options are available as an IT Admin, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
 > [!NOTE]
-> If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
->
+> If you are in an organization, individual sign up may be disabled. If you get an error indicating that sign up is disabled, contact your IT department for more information.
 
 ## What you need to sign up?
 

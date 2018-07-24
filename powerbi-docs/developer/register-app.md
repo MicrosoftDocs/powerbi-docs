@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
 ---
+
 # Register an Azure AD app to embed Power BI content
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
 
@@ -17,8 +18,6 @@ You register your application with Azure AD to allow your application access to 
 
 > [!IMPORTANT]
 > Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration doesn't complete successfully.
-> 
-> 
 
 There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/) or you can do it directly within the Azure portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. Use the Azure portal if you want to make changes to your app.
 
@@ -39,7 +38,7 @@ Here's how to register your application with the Power BI App Registration Tool:
    
     **Home Page URL** is only available if you choose **Server-side Web app** for the application type.
    
-    For the *embedding for your customers* and *integrate-dashboard-web-app* samples, the redirect URL is `http://localhost:13526/redirect`. For the report and tile sample, the redirect URL is `http://localhost:13526/`.
+    For the *embedding for your customers* and *integrate-dashboard-web-app* samples, the **Redirect URL** is `http://localhost:13526/Redirect`. For the report and tile sample, the **Redirect URL** is `http://localhost:13526/`.
 6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md).
    
     ![](media/register-app/app-registration-apis.png)
@@ -77,7 +76,7 @@ Your other option for registering your application is to do so directly in the A
 5. Follow the prompts and create a new application.
    
    * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users can sign in e.g. `http://localhost:13526`.
-   * For Native Applications, provide a Redirect URI, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g `http://myapplication/redirect`
+   * For Native Applications, provide a **Redirect URI**, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g `http://myapplication/Redirect`
 
 For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
@@ -169,7 +168,6 @@ You want to be logged in with either the *master* account, used for embedding or
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
-
 5. Grant App Permissions to Azure Active Directory (AAD)
    
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
