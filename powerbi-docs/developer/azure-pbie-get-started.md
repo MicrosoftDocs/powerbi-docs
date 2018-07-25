@@ -16,7 +16,7 @@ ms.date: 07/31/2018
 
 **Power BI Embedded** offers independent software vendors (ISVs) and developers a way to quickly add stunning visuals, reports, and dashboards into their applications through a capacity-based, hourly metered model.
 
-![Diagram of embedding flow](media/get-started/introduction.png)
+![Diagram of embedding flow](media/azure-pbie-get-started/introduction.png)
 
 Power BI Embedded has benefits for an ISV, their developers, and customers. For example, an ISV can start creating visuals for free with Power BI Desktop. ISVs can achieve faster time to market by minimizing visual analytic development efforts and stand out among the competition with differentiated data experiences. ISVs also can opt to charge a premium for the additional value created with embedded analytics.
 
@@ -36,16 +36,16 @@ We have samples to help get you started. For a walkthrough of the sample, see [I
 
 ## Get capacity and move to production
 
-Create Power BI Embedded capacity within Microsoft Azure to move your application to production. For information on how to create capacity, see [Create Power BI Embedded capacity in the Azure portal](create-capacity.md).
+Create Power BI Embedded capacity within Microsoft Azure to move your application to production. For information on how to create capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 > [!IMPORTANT]
-> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to an embed token generation when a dedicated capacity is purchased. Go to [Get Available Features](https://msdn.microsoft.com/library/mt846473.aspx) to check for the current embedded usage in percentage.
+> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to an embed token generation when a dedicated capacity is purchased. Go to [Get Available Features](https://docs.microsoft.com/en-us/rest/api/power-bi/availablefeatures) to check for the current embedded usage in percentage.
 
 Manage your capacity within the Power BI admin portal. Assign a workspace admin to assist with your app workspaces. For more information, see [Manage capacities within Power BI Premium and Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-admin-premium-manage/).
 
 ## Next steps
 
-If you are ready to create Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](create-capacity.md).
+If you are ready to create Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 If you are looking for a walkthrough sample, see [Integrate a dashboard, tile, or report into your application](https://powerbi.microsoft.com/documentation/powerbi-developer-embed-sample-app-owns-data/).
 
