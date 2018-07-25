@@ -319,7 +319,20 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity. Dedicated capacity is required to move to production.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity, these need to be in a shared capacity. You can create a dedicated capacity using the [Power BI Embedded dedicated capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) solution in Azure.
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. For workspaces that are not assigned to a dedicated capacity are in a shared capacity. You can purchase a dedicated capacity within the [Microsoft Azure portal](https://portal.azure.com). For details on how to create Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+Use the table below to understand which Power BI Embedded capacity SKU you may need.
+
+| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
+| --- | --- | --- | --- | --- | --- |
+| A1 |1 v-cores |.5 cores, 3GB RAM |.5 cores | 5 per second |1-300 |
+| A2 |2 v-cores |1 core, 5GB RAM |1 core | 10 per second |301-600 |
+| A3 |4 v-cores |2 cores, 10GB RAM |2 cores | 15 per second |601-1,200 |
+| A4 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
+| A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
+| A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
+
+For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
 Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
