@@ -61,7 +61,6 @@ Here is a partial list of differences you may use with each.
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | (A SKUs) | (EM SKUs) | (P SKUs) |
 | Embed artifacts from a Power BI App   workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
-| Power BI license required to   consume reports | No | Yes | Yes |
 | Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
 | Consume Power BI reports in   SharePoint | No | Yes | Yes |
 | Consume Power BI reports in   Dynamics | No | Yes | Yes |
