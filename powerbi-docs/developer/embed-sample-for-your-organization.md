@@ -420,7 +420,10 @@ The following table lists the available Power BI Premium SKUs available in [Offi
 | EM3 |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |
 | P1 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
 | P2 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
-| P3 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
+| P3 |32 cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
+| P4 |64 cores |32 cores, 200 GB RAM |32 cores |240 per second |9601-19200
+| P5 |128 cores |64 cores, 400 GB RAM |64 cores |480 per second |19201-38400
+
 
 ### Assign an app workspace to a dedicated capacity
 
