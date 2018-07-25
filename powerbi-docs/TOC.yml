@@ -944,7 +944,7 @@
     - name: How to
       items: 
       - name: "How to embed your content"
-        href: developer/embedding-content.md
+        href: developer/embedding-content.md 
       - name: "How to embed from an app"
         href: developer/embed-from-apps.md
       - name: "Create an Azure Active Directory tenant"
