@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 07/31/2018
 ---
 
-# Scale your Power BI Embedded capacity
+# Scale your Power BI Embedded capacity in the Azure portal
 
 This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure. Scaling allows you to increase or decrease the size of your capacity.
 
