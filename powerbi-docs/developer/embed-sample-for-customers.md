@@ -352,6 +352,8 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 
     ![app workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
+With Power BI Embedded capacities, you cannot access Power BI content with a FREE Power BI license.
+
 ## Next steps
 In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your organization.
 
