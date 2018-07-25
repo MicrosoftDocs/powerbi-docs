@@ -127,7 +127,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embedding-content.md", 
-            "redirect_url": "/power-bi/embed-sample-for-customers.md",
+            "redirect_url": "/power-bi/developer/embed-sample-for-customers.md",
             "redirect_document_id": true
         }
         
