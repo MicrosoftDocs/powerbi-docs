@@ -321,7 +321,7 @@ Now that you've completed developing your application, it is time to back your a
 ### Create a dedicated capacity
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. You can purchase a dedicated capacity within the [Microsoft Azure portal](https://portal.azure.com). For details on how to create Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
-Use the table below to understand which Power BI Embedded capacity best fits yoru needs.
+Use the table below to determine which Power BI Embedded capacity best fits your needs.
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
@@ -338,7 +338,7 @@ Using embed tokens with PRO licenses are intended for development testing, so th
 
 ### Assign an app workspace to a dedicated capacity
 
-Once a dedicated capacity is created, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
+Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
