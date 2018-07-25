@@ -9,7 +9,7 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -44,9 +44,9 @@ Or, you might want to watch this video first before reading the rest of this art
 The 4 major building blocks of Power BI are: ***dashboards***, ***reports***, ***workbooks***, and ***datasets***. And they're all organized into ***workspaces***. It's important to understand workspaces before we dig into the 4 building blocks, so let's start there. 
 
 ## Workspaces
-Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: **My workspace* and app workspaces. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited 
+Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited. 
 
-- *My workspace* is the personal workspace for any Power BI customer to work with their content. Only you have access to your My workspace. If you want to share any of your content, you have several choices: create an app workspace where you bundle content into an *app* and make it available to others in your organization, or create an app workspace and give colleagues access to that workspace so you can share and collaborate.     
+- *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in an app workspace.      
 -  *App workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your app workspaces and collaborate on dashboards, reports, workbooks, and datasets. All app workspace members need Power BI Pro licenses, but app consumers (the colleagues who have access to the apps) don't necessarily need Pro licenses.  
 
 To learn more, see the **Share your work** section of the Table of contents, starting with [How should I collaborate and share dashboards and reports](service-how-to-collaborate-distribute-dashboards-reports.md)

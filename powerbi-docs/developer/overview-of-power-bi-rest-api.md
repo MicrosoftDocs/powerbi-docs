@@ -53,6 +53,11 @@ Choose the solution that is right for you:
 
 For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
+## Push data into Power BI
+You can use the Power BI API to push data into a dataset. This allows you to add a row to a table within a dataset. The new data can then be reflected in tiles on a dashboard and within visuals within your report.
+
+![Push data sample](media/what-can-you-do/powerbi-push-data.png)
+
 ## Next steps
 [Push data into a dataset](walkthrough-push-data.md)  
 [Getting started with custom visuals developer tools](../service-custom-visuals-getting-started-with-developer-tools.md) 

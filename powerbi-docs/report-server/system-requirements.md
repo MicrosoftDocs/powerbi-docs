@@ -16,6 +16,7 @@ ms.author: maghan
 Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
 
 ## Processor, Memory, and Operating System Requirements
+
 | Component | Requirement |
 | --- | --- |
 | .NET Framework |4.6<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.6 (Web Installer) for Windows](http://support.microsoft.com/kb/3045560).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.6 see [.NET Framework Deployment Guide for Developers](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](http://support.microsoft.com/kb/2919355) before installing .NET Framework 4.6. |

@@ -89,6 +89,41 @@
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md", 
             "redirect_url": "/power-bi/mobile-windows-10-phone-app-get-started",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/integrate-dashboard.md", 
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/integrate-report.md", 
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/integrate-tile.md", 
+            "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/service-content-pack-overview.md", 
+            "redirect_url": "/power-bi/service-content-pack-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/template-content-pack-authoring.md", 
+            "redirect_url": "/power-bi/template-content-pack-authoring",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/template-content-pack-experience.md", 
+            "redirect_url": "/power-bi/template-content-pack-experience",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/template-content-pack-testing.md", 
+            "redirect_url": "/power-bi/template-content-pack-testing",
+            "redirect_document_id": true
         }
         
     ]

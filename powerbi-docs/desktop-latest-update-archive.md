@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/23/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -24,12 +24,59 @@ The links beside each update mean the following:
 * **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 * Some features have an **[article]** that provides more detail.
 * Most features are explained in the monthly update **[blog]** post.
-* Lastly, some features are self-explanatory and don't need and article or video.
+* Lastly, some features are self-explanatory and don't need an article or video.
 
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
+
+## June 2018 Update (2.59.5135.101)
+
+The sun was shining on this month's updates, with features and improvements that warmed up your reports and let you bask in the insights they provided.
+
+The following updates were new to **Power BI Desktop** in June:
+
+### Reporting
+
+* High contrast support for reports  [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[article]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
+* Donut radius control  [[video]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
+* Pie and donut detail labels position control  [[video]](https://youtu.be/4VpGtWSrssE?t=7m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
+* Format data labels separately for each measure in a combo chart  [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
+* Longer phone reports  [[video]](https://youtu.be/4VpGtWSrssE?t=11m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
+
+### Custom visuals
+
+* Two new custom visuals  [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
+
+### Modeling
+* Filtering and sorting in data view  [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[article]](desktop-data-view.md#filtering-in-data-view)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
+* Improved locale filtering   [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
+
+### Data connectivity
+
+* SAP BusinessWarehouse connector improvements (new driver and improved performance, plus improved support for hierarchy variables)  [[video]](https://youtu.be/4VpGtWSrssE?t=21m6s) [[article]](desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#sapBW) 
+* Spark connector now supports Windows Authentication  [[video]](https://youtu.be/4VpGtWSrssE?t=24m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#spark) 
+* OData V4 connector enhancements [[video]](https://youtu.be/4VpGtWSrssE?t=25m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#oData) 
+* ODBC connector improvements (folding support for Top Rows, ability to filter navigation by DSN catalog) [[video]](https://youtu.be/4VpGtWSrssE?t=26m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#odbc) 
+
+### Other
+
+* Sovereign cloud selector [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+
+
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4VpGtWSrssE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## May 2018 Update (2.58.5103.281)
 
@@ -251,7 +298,7 @@ The links beside each update mean the following:
 * **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 * Some features have an **[article]** that provides more detail.
 * Most features are explained in the monthly update **[blog]** post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+* Lastly, some features are self-explanatory and don't need and article or video.
 
 You can also watch the **Latest Updates** video for this month from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
@@ -1840,15 +1887,15 @@ The following features have been added or improved in this update:
 	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
 	-   Show Selected Items option
 	-   Improved Search capabilities in the Navigator tree
--   New Transformations
-	-   Age and Subtract operations for Date/Time columns
-	-   Aggregate Columns: Option to disable new columns' prefix
--   Field List improvements
-	-   Expand/Collapse tables
-	-   Hide/Unhide fields
-	-   Optimized layout (spacing, margins, and fonts)
--   Report Pages Navigation - Keyboarding support
--   Lots of bug fixes
+- New Transformations
+  -   Age and Subtract operations for Date/Time columns
+  -   Aggregate Columns: Option to disable new columns' prefix
+- Field List improvements
+  -   Expand/Collapse tables
+  -   Hide/Unhide fields
+  -   Optimized layout (spacing, margins, and fonts)
+- Report Pages Navigation - Keyboarding support
+- Lots of bug fixes
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

@@ -15,9 +15,8 @@ ms.date: 06/08/2018
 
 The current v1 of datasets API only allows for a dataset to be created with a name and a collection of tables. Each table can have a name and a collection of columns. Each column has a name and datatype. We are expanding these properties most notably with support for measures and relationships between tables. The complete list of supported properties for this release is as follows:
 
-> [!IMPORTANT]  
-It can be accessed at the [Datasets Operation Groups](https://docs.microsoft.com/rest/api/power-bi/datasets) page.
->
+> [!IMPORTANT]
+> It can be accessed at the [Datasets Operation Groups](https://docs.microsoft.com/rest/api/power-bi/datasets) page.
 
 ## Dataset
 
@@ -58,7 +57,7 @@ name     | String        |  User defined name of the measure.       |  False    
 expression     | String        | A valid DAX expression.        | False        |  True       
 formatString     | String        |  A string describing how the value should be formatted when it is displayed. To learn more about string formatting, see [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx).       | False        | False        
 isHidden     | String        |  If true, table will be hidden from client tools.       |  False       | False       
-  
+
 ## Relationship
 
 Name  |Type  |Description  |Read Only  |Required 

@@ -31,12 +31,12 @@ This article covers the following.
 * [Pin a tile to a different dashboard](#different)
 * [Delete a tile](#delete)
   
- > [!TIP]
- > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](service-dashboard-tiles.md).
 
- ### Prerequisites
- 1. To follow along, open Power BI service (not Power BI Desktop) and [download the IT Spend Analysis sample](sample-it-spend.md). When the "Success" message appears, select **Go to dashboard**
+  
+## Prerequisites
+To follow along, open Power BI service (not Power BI Desktop) and [download the IT Spend Analysis sample](sample-it-spend.md). When the "Success" message appears, select **Go to dashboard**
 
 - - -
 <a name="create"></a>

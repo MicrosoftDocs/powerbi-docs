@@ -309,7 +309,7 @@ The **Power BI** service displays the first page of the report. Along the bottom
 
 You can make changes to a report in the **Power BI** service by selecting **Edit Report** from the top of the report canvas.
 
-To save your report, select **File \> Save As** from the service. There are all sorts of interesting visuals you can create in the **Power BI** service from your report, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service**[, see Tips for designing a great dashboard](service-dashboards-design-tips.md)**.
+To save your report, select **File \> Save As** from the service. There are all sorts of interesting visuals you can create in the **Power BI** service from your report, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service<strong>[, see Tips for designing a great dashboard](service-dashboards-design-tips.md)</strong>.
 
  ![](media/desktop-getting-started/gsg_share5.png)
 
