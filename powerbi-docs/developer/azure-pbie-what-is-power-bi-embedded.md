@@ -9,7 +9,7 @@ ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
 ms.reviewer: ''
-ms.date: 07/31/2018
+ms.date: 07/31/2018 
 ---
 
 # What is Power BI Embedded in Azure? 

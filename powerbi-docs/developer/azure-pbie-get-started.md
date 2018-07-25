@@ -8,7 +8,7 @@ manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 07/31/2018
 ---
 
