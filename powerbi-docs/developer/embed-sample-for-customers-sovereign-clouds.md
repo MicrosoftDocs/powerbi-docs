@@ -2,13 +2,13 @@
 title: Embed Power BI content into an application for your customers for sovereign clouds
 description: Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 07/26/2018
-ms.author: maghan
 ---
 
 # Tutorial: Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
@@ -89,8 +89,8 @@ This article shows the code used in the [Embedding for your customer sample](htt
 <add key="embedUrlBase" value="https://app.powerbi.de" />
 ```
 
-* Power BI in China cloud parameters
-	1. Overwrite Cloud.config file with [Power BI in China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
+* Power BI for China cloud parameters
+	1. Overwrite Cloud.config file with [Power BI for China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
 	2. Update clientid (Native app client id), groupid, the user (your master user) and password in Web.config file.
     3. Add the Power BI for China cloud parameters in the web.config file as follows.
 
@@ -112,7 +112,7 @@ You must register your application with Azure AD to make REST API calls. For mor
 
 * Power BI for Germany cloud - https://app.powerbi.de/apps
 
-* Power BI in China cloud - https://app.powerbi.cn/apps
+* Power BI for China cloud - https://app.powerbi.cn/apps
 
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you would use the **Client ID** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **clientId** in the *web.config* file.
 
@@ -128,7 +128,7 @@ Within your application, you need to get an **access token**, from Azure AD, bef
 
 * Power BI for Germany cloud - https://login.microsoftonline.de
 
-* Power BI in China cloud - https://login.microsoftonline.cn
+* Power BI for China cloud - https://login.microsoftonline.cn
 
 You can see examples of this within each content item task in **Controllers\HomeController.cs**.
 
