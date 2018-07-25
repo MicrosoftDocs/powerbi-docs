@@ -40,7 +40,7 @@ To complete this quickstart, you need:
 
 5. Fill in the required information and then select **Create**.
 
-    ![Fields to fill out to create new capacity](media/create-capacity/azure-portal-create-power-bi-embedded.png)
+    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
     |Setting |Description |
     |---------|---------|
@@ -55,7 +55,7 @@ To complete this quickstart, you need:
 
 Creation usually takes under a minute; often just a few seconds. If you select **Pin to dashboard**, you can navigate to your dashboard to see your new capacity. Alternatively, you can navigate to **All services** > **Power BI Embedded** to see if your capacity is ready.
 
-![Azure portal dashboard with Power BI Embedded capacity](media/create-capacity/azure-portal-dashboard.png)
+![Azure portal dashboard with Power BI Embedded capacity](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
 ## Next steps
 
