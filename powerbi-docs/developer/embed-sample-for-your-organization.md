@@ -409,9 +409,11 @@ function updateEmbedReport() {
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. If a workspace is unassigned to a dedicated capacity, it is considered a shared capacity. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
 
-All users, regardless of the license they're assigned, can consume content that is embedded from an app workspace (group), if dedicated capacity backs that workspace. That said, you must explicitly add to the app workspace any users who don't have a Power BI Pro license; otherwise, you receive a 401 unauthorized error. The following table lists the available Power BI Premium SKUs available within Office 365.
+All Power BI licensed users, can consume content that is embedded from an app workspace that has a Premium capacity.
+
+The following table lists the available Power BI Premium SKUs available in [Office 365](../service-admin-premium-purchase.md).
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
@@ -422,7 +424,7 @@ All users, regardless of the license they're assigned, can consume content that 
 
 ### Assign an app workspace to a dedicated capacity
 
-Once a dedicated capacity is created, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
+Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
