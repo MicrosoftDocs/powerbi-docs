@@ -2,20 +2,16 @@
 title: Get started with Microsoft Power BI Embedded | Microsoft Docs
 description: Power BI Embedded into your business intelligence application
 services: power-bi-embedded
-documentationcenter: ''
 author: markingmyname
+ms.author: maghan
 manager: kfile
 editor: ''
 tags: ''
-ms.assetid: 4787cf44-5d1c-4bc3-b3fd-bf396e5c1176
 ms.service: power-bi-embedded
-ms.devlang: NA
-ms.topic: hero-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/11/2018
-ms.author: maghan
+ms.topic: conceptual
+ms.date: 07/31/2018
 ---
+
 # Get started with Microsoft Power BI Embedded
 
 **Power BI Embedded** offers independent software vendors (ISVs) and developers a way to quickly add stunning visuals, reports, and dashboards into their applications through a capacity-based, hourly metered model.

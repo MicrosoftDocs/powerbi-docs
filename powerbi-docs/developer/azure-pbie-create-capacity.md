@@ -7,9 +7,9 @@ ms.author: maghan
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
-ms.topic: overview
+ms.topic: conceptual
 ms.reviewer: ''
-ms.date: 05/31/2018
+ms.date: 07/31/2018
 ---
 # Create Power BI Embedded capacity in the Azure portal
 
@@ -24,9 +24,9 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 To complete this quickstart, you need:
 
 * **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
-* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (AAD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts are not supported. To learn more, see [Authentication and user permissions](../analysis-services/analysis-services-manage-users.md).
+* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (AAD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts are not supported. To learn more, see [Authentication and user permissions](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
 * **Power BI tenant:** At least one account in your AAD tenant must have signed up for Power BI.
-* **Resource group:** Use a resource group you already have or [create a new one](../azure-resource-manager/resource-group-overview.md).
+* **Resource group:** Use a resource group you already have or [create a new one](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
 
@@ -46,7 +46,7 @@ To complete this quickstart, you need:
     |---------|---------|
     |**Resource name**|A name to identify the capacity. The resource name is displayed within the Power BI admin portal in addition to the Azure portal.|
     |**Subscription**|The subscription you would like to create the capacity against.|
-    |**Resource group**|The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](../azure-resource-manager/resource-group-overview.md).|
+    |**Resource group**|The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).|
     |**Power BI capacity administrator**|Power BI capacity administrators can view the capacity in the Power BI admin portal and give assignment permissions to other users. By default, the capacity administrator is your account. The capacity administrator must be within your Power BI tenant.|
     |**Location**|The location where Power BI is hosted for your tenant. This setting is resolved automatically, and a different location cannot be selected.|
     |**Pricing tier**|Select the SKU (v-core count and memory size) that meets your needs.  For details, see [Power BI Embedded pricing](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
@@ -61,7 +61,7 @@ Creation usually takes under a minute; often just a few seconds. If you select *
 
 To use your new Power BI Embedded capacity, browse to the Power BI admin portal to assign workspaces. For more information, see [Manage capacities within Power BI Premium and Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-admin-premium-manage/).
 
-If you don't need to use this capacity, you can pause it to stop billing. For more information, see [Pause and start your Power BI Embedded capacity in the Azure portal](pause-start.md).
+If you don't need to use this capacity, you can pause it to stop billing. For more information, see [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 To begin embedding Power BI content within your application, see [How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
