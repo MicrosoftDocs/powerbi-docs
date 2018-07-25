@@ -50,6 +50,6 @@ Using the REST API, Power BI Embedded allows developing with any language.
 
 See the [pricing page](https://azure.microsoft.com/pricing/details/power-bi-embedded/) for capacity node details.
 
-To create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](create-capacity.md)
+To create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)
 
 To begin embedding your Power BI content, see [How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
