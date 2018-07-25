@@ -409,7 +409,16 @@ function updateEmbedReport() {
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. If a workspace is unassigned to a dedicated capacity, it is considered a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. If a workspace is unassigned to a dedicated capacity, it is considered a shared capacity. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
+
+All users, regardless of the license they're assigned, can consume content that is embedded from an app workspace (group), if dedicated capacity backs that workspace. That said, you must explicitly add to the app workspace any users who don't have a Power BI Pro license; otherwise, you receive a 401 unauthorized error. The following table lists the available Power BI Premium SKUs available within Office 365.
+
+| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
+| --- | --- | --- | --- | --- | --- |
+| EM3 |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |
+| P1 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
+| P2 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
+| P3 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
 ### Assign an app workspace to a dedicated capacity
 
