@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/24/2018
 ms.author: davidi
 
 LocalizationGroup: Data from databases
@@ -48,7 +48,7 @@ You can expand as much as you need with Azure and Power BI. Harness multi-source
 ### Connect your app data using Power BI APIs
 You can use Power BI to gain insight on your existing apps, too. With the Power BI API, application developers can send entire data sets to Power BI programmatically. Need continuous updates? With the Power BI APIs, developers can send real-time data updates to get started quickly, and then grow into using Azure Stream Analytics when scale requirements merit doing so.
 
-There's lots of information about Power BI APIs in the [Power BI Developer Portal](http://dev.powerbi.com). You can also learn about what others are doing programmatically with Power BI in the [Power BI developer blog](http://blogs.msdn.com/powerbidev). There's also a page dedicated to [getting you started with Power BI development](https://msdn.microsoft.com/library/dn889824.aspx).
+There's lots of information about Power BI APIs in the [Power BI Developer Portal](http://dev.powerbi.com). 
 
 ### What could you do with Azure and Power BI?
 There are all sorts of scenarios where **Azure** and **Power BI** can be combined - the possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](http://go.microsoft.com/fwlink/?LinkId=535031&clcid=0x409), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.
