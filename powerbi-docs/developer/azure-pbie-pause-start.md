@@ -29,19 +29,19 @@ Pausing your capacity prevents you from being billed. Pausing your capacity is g
 
 2. Select **All services** > **Power BI Embedded** to see your capacities.
 
-    ![All services within Azure portal](media/pause-start/azure-portal-more-services.png)
+    ![All services within Azure portal](media/azure-pbie-pause-start/azure-portal-more-services.png)
 
 3. Select the capacity you want to pause.
 
-    ![Power BI Embedded capacity list within Azure portal](media/pause-start/azure-portal-capacity-list.png)
+    ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-pause-start/azure-portal-capacity-list.png)
 
 4. Select **Pause** within the capacity details.
 
-    ![Pause your capacity](media/pause-start/azure-portal-pause-capacity.png)
+    ![Pause your capacity](media/azure-pbie-pause-start/azure-portal-pause-capacity.png)
 
 5. Select **Yes**, which confirms you want to pause the capacity.
 
-    ![Confirm pause](media/pause-start/azure-portal-confirm-pause.png)
+    ![Confirm pause](media/azure-pbie-pause-start/azure-portal-confirm-pause.png)
 
 ## Start your capacity
 
@@ -51,25 +51,25 @@ Resume usage by starting your capacity. Starting your capacity also resumes bill
 
 2. Select **All services** > **Power BI Embedded** to see your capacities.
 
-    ![All services within Azure portal](media/pause-start/azure-portal-more-services.png)
+    ![All services within Azure portal](media/azure-pbie-pause-start/azure-portal-more-services.png)
 
 3. Select the capacity you want to start.
 
-    ![Power BI Embedded capacity list within Azure portal](media/pause-start/azure-portal-capacity-list.png)
+    ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-pause-start/azure-portal-capacity-list.png)
 
 4. Select **Start** within the capacity details.
 
-    ![Start your capacity](media/pause-start/azure-portal-start-capacity.png)
+    ![Start your capacity](media/azure-pbie-pause-start/azure-portal-start-capacity.png)
 
 5. Select **Yes**, which confirms you want to start the capacity.
 
-    ![Confirm start](media/pause-start/azure-portal-confirm-start.png)
+    ![Confirm start](media/azure-pbie-pause-start/azure-portal-confirm-start.png)
 
 If any content is assigned to this capacity, it is available once started.
 
 ## Next steps
 
-If you want to scale your capacity up or down, see [Scale your Power BI Embedded capacity](scale-capacity.md).
+If you want to scale your capacity up or down, see [Scale your Power BI Embedded capacity](azure-pbie-scale-capacity.md).
 
 To begin embedding Power BI content within your application, see [How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
