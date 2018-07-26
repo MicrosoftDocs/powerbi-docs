@@ -63,15 +63,14 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 ## General site usage
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |
-|--------------------|-------------------------|-------------------|------------------------------|---|
-| General Site Usage | Backend APIs | Required | *.analysis.windows.net |  |
-| General Site Usage | Marketing Messages | Optional | dynmsg.modpim.com |  |
-| General Site Usage | NPS Survey | Optional | nps.onyx.azure.net |  |
-| General Site Usage | O365 Waffle Menu | Required | *.microsoft.com |  |
-| General Site Usage | O365 Waffle Menu | Required | *.office365.com |  |
-| General Site Usage | Portal | Required | app.powerbi.com |  |
-| General Site Usage | Telemetry (AppInsights) | Required | dc.services.visualstudio.com |  |
+|     Row     |       Purpose     |       Destination     |       Port     |       CIDR Address     |          ExpressRoute for Office 365 BGP Communities         |
+|-------------|-----------------------------------|-------------------------------------|----------------|------------------------|--------------------------------------------------------------|
+| 1 | Required: Backend APIs | *.analysis.windows.net | N/A | N/A | N/A |
+| 2 | Required: O365 Waffle Menu | *.microsoft.com, *.office365.com | N/A  | N/A | N/A | N/A |
+| 3 | Required: Portal  | app.powerbi.com | N/A | N/A | N/A |
+| 4 | Required: Telemetry (AppInsights) | dc.services.visualstudio.com | N/A | N/A | N/A |
+| 5 | Optional: Marketing Messages  | dynmsg.modpim.com  | N/A | N/A | N/A |
+| 6 | Optional: NPS Surveys  | nps.onyx.azure.net | N/A | N/A | N/A |
 
 ## Get Data
 
@@ -122,4 +121,3 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 | Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office.com |  |
 | Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office365.com |  |
 | Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | d3js.org |  |
-
