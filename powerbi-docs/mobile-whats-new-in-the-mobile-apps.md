@@ -186,7 +186,7 @@ Go to Shared with me in the mobile app menu to see all the content that's been s
 **New menu: Apps**
 An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
 
-Read more about [how your Power BI content is organized](mobile-apps-find-content-mobile-devices.md).
+Read more about [how your Power BI content is organized](mobile-apps-quickstart-view-dashboard-report.md).
 
 #### iOS and Android devices
 **Power BI Report Server preview**
@@ -249,7 +249,7 @@ With Q&A, you ask questions about your data in your own words, and Power BI prov
 Now you can have connections to up to five SQL Server Reporting Services (SSRS) servers at the same time.
 
 #### Android tablets
-**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI on your Android tablet](mobile-android-tablet-app-get-started.md).
+**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI on your Android tablet](mobile-android-app-get-started.md).
 
 #### iOS and Android devices
 **New menu for dashboard tiles** Navigate to the underlying report, expand the tile, or manage an alert, all directly from a menu on the tile on a dashboard. 
@@ -317,7 +317,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 #### Android tablets
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
-* Experience [Power BI on your Android tablet](mobile-android-tablet-app-get-started.md)
+* Experience [Power BI on your Android tablet](mobile-android-app-get-started.md)
 * Explore [Reporting Services mobile reports and KPIs on your Android tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### Android devices
@@ -538,7 +538,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](service-connect-to-bing.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](service-connect-to-services.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 

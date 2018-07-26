@@ -530,6 +530,12 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Composite models in Power BI Desktop (Preview)"
+      href: desktop-composite-models.md
+    - name: "Many-to-many relationships in Power BI Desktop (Preview)"
+      href: desktop-many-to-many-relationships.md
+    - name: "Storage mode in Power BI Desktop (Preview)"
+      href: desktop-storage-mode.md
     - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
@@ -670,6 +676,8 @@
         href: desktop-import-and-display-kpis.md
     - name: Create reports
       items: 
+      - name: "Visual elements for reports"
+        href: desktop-visual-elements-for-reports.md        
       - name: "Q&A in Power BI Desktop"
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
@@ -799,6 +807,8 @@
       href: desktop-data-types.md
     - name: "Power BI Desktop privacy levels"
       href: desktop-privacy-levels.md
+    - name: "Connector extensibility in Power BI"
+      href: desktop-connector-extensibility.md
   - name: Resources
     items: 
     - name: "Power BI Desktop videos"
@@ -1247,6 +1257,8 @@
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
         href: service-premium-incremental-refresh.md
+      - name: "Multi-Geo support (Preview)"
+        href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
       - name: "Power BI Premium release notes"
