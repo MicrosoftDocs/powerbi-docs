@@ -31,10 +31,9 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 ## Authentication
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |
-|----------------|-------------|-------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Auth | Login page | Required | https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity |
-|  |  |  |  |  |  |
+|     Row     |     Purpose     |     Destination     |       Port     |     CIDR Address     |        ExpressRoute for Office 365 BGP   Communities         |
+|-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Required: Login page | https://support.office.com/ | N/A | N/A | N/A |
 
 ## Custom Visuals
 
@@ -74,50 +73,16 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 ## Get Data
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |
-|----------------|-------------------------------------|-------------------|-------------------------------------|---|
-| Get Data | AppSource | Required | *.azureedge.net |  |
-| Get Data | AppSource | Required | *.azureedge.net |  |
-| Get Data | AppSource | Required | *.blob.core.windows.net |  |
-| Get Data | AppSource | Required | *.doubleclick.net |  |
-| Get Data | AppSource | Required | *.google-analytics.com |  |
-| Get Data | AppSource | Required | appsource.microsoft.com |  |
-| Get Data | AppSource | Required | c.s-microsoft.com |  |
-| Get Data | AppSource | Required | google-analytics.com |  |
-| Get Data | AppSource | Required | login.microsoftonline.com |  |
-| Get Data | AppSource | Required | login.windows.net |  |
-| Get Data | AppSource | Required | secure.aadcdn.microsoftonline-p.com |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.azureedge.net |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.live.com |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.live.com |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.live.com |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.live.net |  |
-| Get Data | Import Files From OneDrive Personal | Optional | *.live.net |  |
-| Get Data | Import Files From OneDrive Personal | Optional | auth.gfx.ms |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.doubleclick.net |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.doubleclick.net |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.ggpht.com |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.google.com |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.googlevideo.com |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.youtube.com |  |
-| Get Data | Power BI in 60 Seconds video | Optional | *.ytimg.com |  |
-| Get Data | Power BI in 60 Seconds video | Optional | fonts.gstatic.com |  |
-| Get Data | PubNub streaming data sources | Optional | *.pubnub.com |  |
+|     Row     |     Purpose     |     Destination     |       Port     |     CIDR Address     |        ExpressRoute for Office 365 BGP   Communities         |
+|-------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Required: AppSource | *.azureedge.net, *.azureedge.net, *.blob.core.windows.net,   *.doubleclick.net, *.google-analytics.com,    appsource.microsoft.com,    c.s-microsoft.com, google-analytics.com,  login.microsoftonline.com,   login.windows.net, secure.aadcdn.microsoftonline-p.com | N/A | N/A | N/A |
+| 2 | Optional: Import Files From OneDrive Personal | *.azureedge.net, *.live.net, auth.gfx.ms | N/A | N/A | N/A |
+| 3 | Optional:  Power BI in   60 Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com,  *.googlevideo.com, *.youtube.com,  *.ytimg.com,  fonts.gstatic.com | N/A | N/A | N/A |
+| 4 | Optional: PubNub streaming data sources | *.pubnub.com | N/A | N/A | N/A |
 
 ## O365
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |
-|------------------------------|------------------------------------------|-------------------|----------------------|---|
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.microsoft.com |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.msocdn.com |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.office.com |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.office.com |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.office.net |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.office365.com |  |
-| Scenarios Which Rely on O365 | Managing Users (done in O365 portal) | Required | *.skype.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.microsoft.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | *.office365.com |  |
-| Scenarios Which Rely on O365 | Viewing Audit Logs (done in O365 portal) | Required | d3js.org |  |
+|     Row     |     Purpose     |     Destination     |       Port     |     CIDR Address     |        ExpressRoute for Office 365 BGP   Communities         |
+|-------------|----------------------------------------------------|--------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Required: Managing Users (done in O365 portal) | *.microsoft.com, *.msocdn.com, *.office.com, *.office.net,  *.office365.com,   *.skype.com | N/A | N/A | N/A |
+| 2 | Required: Viewing Audit Logs (done in O365 portal) | *.microsoft.com,  *.office.com,   *.office365.com, d3js.org | N/A | N/A | N/A |
