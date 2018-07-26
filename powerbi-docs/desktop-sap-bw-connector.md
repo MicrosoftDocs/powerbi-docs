@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/26/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -16,9 +16,9 @@ LocalizationGroup: Connect to data
 # Use the SAP BW Connector in Power BI Desktop
 With Power BI Desktop, you can access **SAP Business Warehouse (BW)** data.
 
-For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
+For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see the article [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connectint to SAP BW from Power BI Desktop.
+Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
 
 We suggest you use the **Implementation 2.0 SAP Connector** whenever possible.
 
@@ -34,9 +34,9 @@ We recommend using the Implementation 2.0 SAP Connector whenever possible (see i
 
 ## Installation of Implementation 2.0 SAP Connector
 
-**Implementation 2.0** of the SAP Connector requires the SAP .NET Connector 3.0. You can [download the SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300) from SAP’s website using the following link:
+**Implementation 2.0** of the SAP Connector requires the SAP .NET Connector 3.0. You can [download the SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) from SAP’s website using the following link:
 
-* [SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300)
+* [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html)
 
 Access to the download requires a valid S-user. Customers are encouraged to contact their SAP Basis team to get the SAP .NET Connector 3.0. 
 
@@ -50,7 +50,7 @@ When installing, in the **Optional setup steps** window, make sure you select th
 ![SAP optional setup steps](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the the first version, the Netweaver DLLs are not required.
+> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the first version, the Netweaver DLLs are not required.
 
 
 ## Version 1 SAP BW Connector features
@@ -203,6 +203,7 @@ This section provides troubleshooting situations (and solutions) for working wit
 For more information about SAP and DirectQuery, check out the following resources:
 
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw)
