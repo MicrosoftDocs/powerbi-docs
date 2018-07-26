@@ -23,7 +23,7 @@ In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) i
 4. In Report view, add this field to the visuals you want filtered by the barcode.
 5. Save the report and publish it to the Power BI service.
 
-Now when you open the scanner on the [Power BI app for iPhone](mobile-ios-ipad-iphone-apps.md) and scan a barcode, you see this report in the list of reports. When you open the report, its visuals are filtered by the product barcode you scanned.
+Now when you open the scanner on the [Power BI app for iPhone](mobile-iphone-app-get-started.md) and scan a barcode, you see this report in the list of reports. When you open the report, its visuals are filtered by the product barcode you scanned.
 
 ## Supported barcode formats
 These are the barcodes Power BI recognizes if you can tag them in a Power BI report: 
