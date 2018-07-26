@@ -411,8 +411,6 @@ Now that you've completed developing your application, it is time to back your a
 ### Create a dedicated capacity
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
 
-All Power BI licensed users, can consume content that is embedded from an app workspace that has a Premium capacity.
-
 The following table lists the available Power BI Premium SKUs available in [Office 365](../service-admin-premium-purchase.md).
 
 | Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
@@ -423,7 +421,6 @@ The following table lists the available Power BI Premium SKUs available in [Offi
 | P3 |32 cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 | P4 |64 cores |32 cores, 200 GB RAM |32 cores |240 per second |9601-19200
 | P5 |128 cores |64 cores, 400 GB RAM |64 cores |480 per second |19201-38400
-
 
 ### Assign an app workspace to a dedicated capacity
 
