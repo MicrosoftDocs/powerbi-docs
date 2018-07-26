@@ -28,7 +28,7 @@ Power BI service separates your workspace content by type: dashboards, reports, 
 ________________________________________
 
 ## Searching and sorting in workspaces
-A workspace has four content tabs: Dashboards, Reports, Workbooks, and Datasets.  Each of these tabs contains a search field and a sort button.  When you're starting out with Power BI service, you might not find these helpful because you'll have only one or two items per tab.  However, over time you may may end up with long lists of content.  Use searching and sorting to easily find what you need.
+A workspace has four content tabs: Dashboards, Reports, Workbooks, and Datasets.  Each of these tabs contains a search field and a sort button.  When you're starting out with Power BI service, you might not find these helpful because you'll have only one or two items per tab.  However, over time you may end up with long lists of content.  Use searching and sorting to easily find what you need.
 
 ![Dashboards tab](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 
