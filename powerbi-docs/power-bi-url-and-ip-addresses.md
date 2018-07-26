@@ -38,23 +38,17 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 ## Custom Visuals
 
-|    Row    |    Purpose    |    Destination    |    Port    |    CIDR Address    |       ExpressRoute for Office 365 BGP Communities        |
-|-------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------|----------------------------------------------------------|
-|    1    |    Required: Import a Custom Visual from Marketplace Interface and from   a file     |                  *.bing.com                      *.microsoft.com                         *.microsoft.com                         *.microsoft.com                         *.microsoft.com                         *.msecnd.net                         *.msecnd.net                         *.osi.office.net                         ajax.aspnetcdn.com                         nexus.ensighten.com                         store.office.com                         *.azureedge.net                         *.azureedge.net
+| Row | Purpose | Destination | Port | CIDR Address | ExpressRoute for Office 365 BGP Communities |
+|-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
+| 1 | Required: Import a Custom Visual from Marketplace Interface and from   a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | N/A | N/A | N/A |
 
-## Integration
+## Report and dashboard integration
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |
-|-----------------------------------|-----------------------------------|-------------------|----------------------------------|---|
-| Dashboard & Report   Integrations | Bing Maps Integration | Optional | *.dynamic.tiles.virtualearth.net |  |
-| Dashboard & Report   Integrations | Bing Maps Integration | Optional | *.virtualearth.net |  |
-| Dashboard & Report   Integrations | Bing Maps Integration | Optional | bing.com |  |
-| Dashboard & Report   Integrations | Bing Maps Integration | Optional | platform.bing.com |  |
-| Dashboard & Report   Integrations | Excel Integration | Optional | *.cdn.office.net |  |
-| Dashboard & Report   Integrations | Excel Integration | Optional | *.microsoft.com |  |
-| Dashboard & Report   Integrations | Excel Integration | Optional | *.officeapps.live.com |  |
-| Dashboard & Report   Integrations | Viewing a report published to web | Required | *.analysis.windows.net |  |
-
+|     Row     |     Purpose     |     Destination     |       Port     |     CIDR Address     |        ExpressRoute for Office 365 BGP   Communities         |
+|-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Required: Viewing a report published to web | *.analysis.windows.net | N/A | N/A | N/A |
+| 2 | Optional: Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net,   *.virtualearth.net | N/A | N/A | N/A |
+| 3 | Optional: Excel Integration | *.microsoft.com, *.officeapps.live.com, *.cdn.office.net,  | N/A | N/A | N/A |
 ## External related sites
 
 | Feature   Area | Description | Required/Optional | Address to Whitelist |  |
