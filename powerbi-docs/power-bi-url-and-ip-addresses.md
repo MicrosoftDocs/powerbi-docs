@@ -49,52 +49,17 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 | 1 | Required: Viewing a report published to web | *.analysis.windows.net | N/A | N/A | N/A |
 | 2 | Optional: Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net,   *.virtualearth.net | N/A | N/A | N/A |
 | 3 | Optional: Excel Integration | *.microsoft.com, *.officeapps.live.com, *.cdn.office.net,  | N/A | N/A | N/A |
+
 ## External related sites
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |
-|------------------------|----------------------------------------------------------------------------------------------------------------|-------------------|----------------------------------|---|
-| External Related Sites | community.powerbi.com - Community site | Optional | *.lithium.com |  |
-| External Related Sites | community.powerbi.com - Community site | Optional | *.microsoft.com |  |
-| External Related Sites | community.powerbi.com - Community site | Optional | *.microsoft.com |  |
-| External Related Sites | community.powerbi.com - Community site | Optional | community.powerbi.com |  |
-| External Related Sites | community.powerbi.com - Community site | Optional | powerbicdn.azureedge.net |  |
-| External Related Sites | community.powerbi.com - Community site | Optional | www.google-analytics.com |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | *.akamaized.net |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | *.microsoft.com |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | *.microsoft.com |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | *.msecnd.net |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | ajax.aspnetcdn.com |  |
-| External Related Sites | docs.microsoft.com - Documentation site | Optional | www.google-analytics.com |  |
-| External Related Sites | Download sources (Power BI Desktop, etc) | Optional | download.microsoft.com |  |
-| External Related Sites | External redirects | Optional | aka.ms |  |
-| External Related Sites | External redirects | Optional | go.microsoft.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.gstatic.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.gstatic.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.microsoft.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.s-microsoft.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.uvcdn.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | *.wp.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | ajax.aspnetcdn.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | code.jquery.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | ideas.powerbi.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | maxcdn.bootstrapcdn.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | nexus.ensighten.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | pbiwebprod.blob.core.windows.net |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | powerbi.uservoice.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | secure.gravatar.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | ssl.google-analytics.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | widget.uservoice.com |  |
-| External Related Sites | ideas.powerbi.com - Ideas site | Optional | www.google.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | ajax.aspnetcdn.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | amp.azure.net |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | cdn.optimizely.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | google-analytics.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | maxcdn.bootstrapcdn.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | netdna.bootstrapcdn.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | powerbi.microsoft.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | powerbicdn.azureedge.net |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | support.powerbi.com |  |
-| External Related Sites | powerbi.microsoft.com - Landing page, Learn More links,   Support site, download links, partner showcase, etc. | Optional | www.powerbi.com |  |
+|     Row     |     Purpose     |     Destination     |       Port     |     CIDR Address     |        ExpressRoute for Office 365 BGP   Communities         |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Optional: community.powerbi.com   - Community site  | *.lithium.com, *.microsoft.com,   community.powerbi.com, powerbicdn.azureedge.net,  www.google-analytics.com | N/A | N/A | N/A |
+| 2 | Optional: docs.microsoft.com -   Documentation site | *.akamaized.net,   *.microsoft.com, *.msecnd.net, ajax.aspnetcdn.com, www.google-analytics.com | N/A | N/A | N/A |
+| 3 | Optional: Download sources   (Power BI Desktop, etc) | download.microsoft.com | N/A | N/A | N/A |
+| 4 | Optional: External redirects | aka.ms, go.microsoft.com  | N/A | N/A | N/A |
+| 5 | Optional: ideas.powerbi.com -   ideas site | *.gstatic.com, *.gstatic.com,   *.microsoft.com, *.uvcdn.com, *.wp.com, ajax.aspnetcdn.com, code.jquery.com,   ideas.powerbi.com, maxcdn.bootstrapcdn.com, nexus.ensighten.com,   pbiwebprod.blob.core.windows.net, powerbi.uservoice.com, secure.gravatar.com,   ssl.google-analytics.com, widget.uservoice.com, www.google.com  | N/A | N/A | N/A |
+| 6 | Optional: powerbi.microsoft.com   - Landing page, Learn More links,     Support site, download links, partner showcase, etc.  | ajax.aspnetcdn.com,   amp.azure.net, cdn.optimizely.com, google-analytics.com,   maxcdn.bootstrapcdn.com,    netdna.bootstrapcdn.com,    powerbi.microsoft.com,powerbicdn.azureedge.net, support.powerbi.com,  www.powerbi.com | N/A | N/A | N/A |
 
 ## General site usage
 
