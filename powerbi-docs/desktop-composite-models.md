@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/26/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -108,7 +108,7 @@ As shown in the following image, which is based on the new data and relationship
 
 ## Setting storage mode
 
-Each table in a **comnposite model** has a **storage mode** that indicates whether the table is based on DirectQuery or import. **Storage mode** can be viewed and modified in the **Property** pane. To get there, select **Properties** from the **Fields** list right-click context menu. The following image shows the **storage mode** (shortened to **Storage ...** in the image, due to the width of the pane).
+Each table in a **composite model** has a **storage mode** that indicates whether the table is based on DirectQuery or import. **Storage mode** can be viewed and modified in the **Property** pane. To get there, select **Properties** from the **Fields** list right-click context menu. The following image shows the **storage mode** (shortened to **Storage ...** in the image, due to the width of the pane).
 
 ![Storage mode setting](media/desktop-composite-models/composite-models_15.png)
 
