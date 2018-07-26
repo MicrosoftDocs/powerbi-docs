@@ -38,38 +38,9 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 ## Custom Visuals
 
-| Feature   Area | Description | Required/Optional | Address to Whitelist |  |  |
-|----------------|---------------------------------------------------|-------------------|-------------------------|---|---|
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.bing.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.microsoft.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.microsoft.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.microsoft.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.microsoft.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.msecnd.net |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.msecnd.net |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | *.osi.office.net |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | ajax.aspnetcdn.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | nexus.ensighten.com |  |  |
-| Custom Visuals | Import a Custom Visual From Marketplace Interface | Required | store.office.com |  |  |
-| Custom Visuals | Import Custom Visual from File or Marketplace | Required | *.azureedge.net |  |  |
-| Custom Visuals | Import Custom Visual from File or Marketplace | Required | *.azureedge.net |  |  |
-| Custom Visuals | Import Custom Visual from File or Marketplace | Required | *.blob.core.windows.net |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.azureedge.net |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.azureedge.net |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.blob.core.windows.net |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.microsoft.com |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.powerapps.com |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | *.sharepointonline.com |  |  |
-| Custom Visuals | PowerApps Custom Visual | Optional | api.powerapps.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.akamaihd.net |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.cdn.office.net |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.cdn.office.net |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.microsoft.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.office365.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.officeapps.live.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.sharepoint.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.sharepointonline.com |  |  |
-| Custom Visuals | Visio Custom Visual | Optional | *.sharepointonline.com |  |  |
+|    Row    |    Purpose    |    Destination    |    Port    |    CIDR Address    |       ExpressRoute for Office 365 BGP Communities        |
+|-------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------|----------------------------------------------------------|
+|    1    |    Required: Import a Custom Visual from Marketplace Interface and from   a file     |                  *.bing.com                      *.microsoft.com                         *.microsoft.com                         *.microsoft.com                         *.microsoft.com                         *.msecnd.net                         *.msecnd.net                         *.osi.office.net                         ajax.aspnetcdn.com                         nexus.ensighten.com                         store.office.com                         *.azureedge.net                         *.azureedge.net
 
 ## Integration
 
