@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/25/2018
+ms.date: 06/13/2018
 ms.author: maghan
 
 ---

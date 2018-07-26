@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 06/20/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -18,17 +18,15 @@ In Power BI, you can create *apps* to bring related dashboards and reports toget
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards.  
-
-With Power BI apps, now in preview, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
+Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names and locations of all these dashboards. With Power BI apps, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install them automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](service-install-use-apps.md).
 
 ### Licenses for apps
-As an app creator you need a Power BI Pro license. For your app users, there are two options.
+As an app creator you need a Power BI Pro license. For your app users, there are two options to view your app.
 
-* Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
+* Option 1: An app user has been assigned a **Power BI Pro** license. 
+* Option 2: An app user hasn't been assigned a **Power BI Pro** license, but the app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ### Apps and organizational content packs
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps.

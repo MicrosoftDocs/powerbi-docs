@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -36,7 +36,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *For example, in this line chart, the selected values are for **This Year Sales** and **Last Year Sales** in **August**.*  
+   <em>For example, in this line chart, the selected values are for **This Year Sales</em>* and **Last Year Sales** in **August**.*  
    
    In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
    
@@ -88,7 +88,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
    
-    [Share a snapshot of the tile](mobile-share-tile-windows-10-phone-app.md).
+    [Share a snapshot of the tile](mobile-windows-10-phone-app-get-started.md).
    
     Tap **Open Report** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the underlying report](mobile-reports-in-the-mobile-apps.md).
    
@@ -103,7 +103,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *In this bar chart, the values for the **Decor** bar are shown at the top of the chart.*
+   <em>In this bar chart, the values for the **Decor</em>* bar are shown at the top of the chart.*
    
    Tap the **Full screen** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
    
@@ -116,12 +116,12 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Tap the Share Snapshot icon ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) to [share a tile](mobile-share-tile-windows-10-phone-app.md) with others.   
+   Tap the Share Snapshot icon ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) to [share a tile](mobile-windows-10-phone-app-get-started.md) with others.   
    
    Tap the Open Report icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) that the tile is based on. 
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

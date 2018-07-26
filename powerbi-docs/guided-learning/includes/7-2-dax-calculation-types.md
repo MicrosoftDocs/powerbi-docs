@@ -57,7 +57,7 @@ The required elements for a calculated measure are the same as they are for a ca
 * a new measure name
 * at least one function or expression
 
-> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

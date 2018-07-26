@@ -23,6 +23,10 @@ Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports b
 
 You can use the following steps to connect to your Spark on Azure HDInsight data source using DirectQuery within the Power BI service.
 
+> [!Important]
+> We have been improving our connectivity to Spark.  For the best experience to connect to your Spark data source, use Power BI Desktop.  Once you've built your model and report, you can publish it to the Power BI service.  The direct connector for Spark in the Power BI service is now deprecated.
+>
+
 1. Select **Get Data** at the bottom of the left navigation pane.
    
      ![](media/spark-on-hdinsight-with-direct-connect/spark-getdata.png)
@@ -67,7 +71,7 @@ You can also allocate additional resources within the Azure portal under **Confi
 
 ## Next steps
 [Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
-[Get started with Power BI](service-get-started.md)  
+[What is Power BI?](power-bi-overview.md)  
 [Get Data for Power BI](service-get-data.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

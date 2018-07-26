@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
 
 ---
@@ -19,7 +19,7 @@ The Android app for Microsoft Power BI delivers the mobile BI experience for Pow
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
-* [Publish them to the Power BI service](service-get-started.md), and create dashboards.
+* [Publish them to the Power BI service](power-bi-overview.md), and create dashboards.
 * [Publish them on premises to Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
 
 Then in the Power BI app for Android, you interact with your dashboards and reports, whether on premises or in the cloud.
@@ -82,7 +82,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
     By default it searches all dashboards and reports, but you can search just one or the other.
 
 ## Find your content in the Power BI mobile apps
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![Left navigation pane](media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
@@ -132,7 +132,7 @@ Here are some other things you can do in the Android device app for Power BI wit
 
 ### See also
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 

@@ -4,13 +4,11 @@ description: What can I do with the Power BI API
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-
 ---
 # What can developers do with the Power BI API?
 Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
@@ -31,7 +29,7 @@ Here are some of the things you can do with the Power BI APIs.
 > 
 > 
 
-## Power BI Developer Samples
+## Power BI Developer samples
 The Power BI Developer samples include items for embedding dashboards, reports and tiles.
 
 [Power BI Developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples)
@@ -54,6 +52,11 @@ Choose the solution that is right for you:
 * [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 
 For a full sample of using the JavaScript API, you can use the [Playground tool ](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visitng the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+
+## Push data into Power BI
+You can use the Power BI API to push data into a dataset. This allows you to add a row to a table within a dataset. The new data can then be reflected in tiles on a dashboard and within visuals within your report.
+
+![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
 ## Next steps
 [Push data into a dataset](walkthrough-push-data.md)  

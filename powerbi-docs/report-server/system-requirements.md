@@ -1,5 +1,5 @@
 ---
-title: Hardware and Software Requirements for installing Power BI Report Server
+title: Hardware and software requirements for installing Power BI Report Server
 description: Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
 author: markingmyname
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/13/2018
 ms.author: maghan
 
 ---
@@ -16,6 +16,7 @@ ms.author: maghan
 Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
 
 ## Processor, Memory, and Operating System Requirements
+
 | Component | Requirement |
 | --- | --- |
 | .NET Framework |4.6<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.6 (Web Installer) for Windows](http://support.microsoft.com/kb/3045560).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.6 see [.NET Framework Deployment Guide for Developers](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](http://support.microsoft.com/kb/2919355) before installing .NET Framework 4.6. |
@@ -37,8 +38,6 @@ SQL Server is used to host the report server databases. The SQL Server Database 
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
 
 Creating the report server database on a remote computer requires that you configure the connection to use a domain user account or a service account that has network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

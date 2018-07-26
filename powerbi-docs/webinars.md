@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/13/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -17,25 +17,9 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-Register to hear from Power BI experts and participate in live Q&A sessions
+No webinars scheduled yet. Check back soon for more upcoming events.
 
-**Draw the right insights with Power BI and Visio**
-<br>by Shakun Grover
-<br>*May 22nd 2018 10:00AM PST, 1:00PM EST*
-
-Join us for this webinar to learn how to combine Power BI dashboards and Microsoft Visio diagrams to create powerful visual insights. Visio and Power BI are highly visual and naturally complementary. Visio lets you create illustrative diagrams, such as interconnected workflows and real-world layouts. Power BI helps you build intuitive dashboards using charts and maps to measure key performance indicators and track goals.
-
-[Register to watch on May 22nd](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
-
-**Learn about Power BI Embedded in 20 minutes**
-<br>by Megan Asarrane and Colin Murphy
-<br>*May 23rd 2018 10:00AM PST, 1:00PM EST*
-
-This webinar is being presented to give an introduction to Power BI Embedded. By the end of this webinar, users should be able to understand what Power BI Embedded is, the next steps to get started with the product, and where to go for help/resources.
-
-[Register to watch on May 23rd](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
-
->[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
+>[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
@@ -73,15 +57,27 @@ Watch recorded sessions at any time
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
+**Learn about Power BI Embedded in 20 minutes**
+<br>by Megan Asarrane and Colin Murphy
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
+
 **Beyond the Spreadsheet**
 <br>by Gohul Shanmugalingam
 <br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
+
+**Draw the right insights with Power BI and Visio**
+<br>by Shakun Grover
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Transforming A Report From Good to GREAT!**
 <br>by Reid Havens
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### Partners ###
+
+**Boost Your BI with Location Intelligence**
+<br>by Scott Ball from Esri and Enrique Plaza from Microsoft
+<br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
 **Improving Profitability in Healthcare**
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
@@ -167,7 +163,7 @@ Watch recorded sessions at any time
 
 - [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [Get started with Power BI](service-get-started.md)
+- [What is Power BI?](power-bi-overview.md)
 
 - Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 06/22/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -85,7 +85,7 @@ The layout of your report elements impacts comprehension and guides the reader t
 Let’s take a closer look at alignment.
 
 #### Alignment
-Alignment doesn’t mean that that the different components need to be the same size or that you must have the same number of components on each row of the report. It just means that there is a structure to the page that aids in navigation and readability.
+Alignment doesn’t mean that the different components need to be the same size or that you must have the same number of components on each row of the report. It just means that there is a structure to the page that aids in navigation and readability.
 
 We can see in our updated report below that the report components are now aligned on the left and right edges and each report row is aligned horizontally and vertically as well. Our slicers are to the left of the visuals they impact.
 
@@ -785,8 +785,6 @@ In general, bar/column/line charts will serve most purposes. It’s well underst
 He does explain the one time where pie charts can be useful, when comparing part-to-whole relationships. But even this is rarely significantly-better than, say, a 100% stacked bar chart.
 
 Another fun article (and animation) about pie charts can be found on the [Darkhorse Analytics site](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
-
-Or read an opposing point of view, [Why Tufte is flat-out wrong about pie charts](http://speakingppt.com/2013/03/18/why-tufte-is-flat-out-wrong-about-pie-charts/)
 
 #### Radial Gauges & KPIs
 ![](media/power-bi-visualization-best-practices/power-bi-gauge.png)

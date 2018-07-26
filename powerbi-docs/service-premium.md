@@ -32,11 +32,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 | **Refresh rate** |8/day |Not restricted |
 | **Isolation with dedicated hardware** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 | **Enterprise Distribution to** ***all users*** | | |
-| Apps |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
+| Apps and sharing |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
 | Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
 | **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
-*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint. A Pro license is required for other activities that are not listed, such as creating reports on shared datasets and Analyze in Excel. Learn more about [Power BI Free vs Pro](service-free-vs-pro.md) functionality.*  
+*<sup>1</sup> For more information, see [User capabilities with Power BI Pro and Power BI Premium](service-free-vs-pro.md) functionality.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
@@ -47,7 +47,7 @@ When a workspace is backed by premium capacity, you enjoy the benefits of Power 
 * Scheduled refreshes: users prior were limited to 8x a day when scheduling refreshes with imported models. This limitation is lifted for datasets in Premium workspaces. This does not apply to the scheduled cache refresh settings for DirectQuery. Those remain the same between Premium and Shared capacities.
 * Isolation with dedicated hardware – by nature of shared capacity, the performance of your reports and dashboards may be impacted by the resource demands of other workloads in the capacity, despite our safeguards against it. Conversely, Premium provides more consistent, dependable performance for your workloads by isolating it from unrelated workloads.
 
-If an app is backed by premium capacity (i.e. it was published from an app workspace that is currently assigned to Premium), the published app can then be used by any user in your organization regardless of the license they are assigned. This means that even Power BI Free users can use those published apps.
+If an app is backed by premium capacity (i.e. it was published from an app workspace that is currently assigned to Premium), the published app can then be used by any user in your organization regardless of the license they are assigned.
 
 ### Shared capacity
 By default, your workspace will be in shared capacity. This includes your personal *My workspace* along with App workspaces. A Shared capacity is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers.

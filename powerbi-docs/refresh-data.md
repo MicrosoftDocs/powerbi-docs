@@ -97,6 +97,7 @@ Data refresh is supported for Power BI Desktop files and Excel workbooks that co
 Keeping your files on OneDrive, or SharePoint Online, and connecting to them from Power BI, provides a great amount of flexibility. But with all that flexibility, it also makes it one of the most challenging to understand. Scheduled refresh for files stored in OneDrive, or SharePoint Online, are different from package refresh. You can learn more in the [Types of refresh](#types-of-refresh) section.
 
 ### Power BI Desktop file
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Get Data (on the ribbon) is used to connect to and query data from any listed online data source. |No |Yes |No (see below) |
@@ -113,6 +114,7 @@ Keeping your files on OneDrive, or SharePoint Online, and connecting to them fro
 For details, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
 
 ### Excel workbook
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Tables of data in a worksheet not loaded into the Excel data model. |Yes, hourly *(OneDrive/SharePoint Online only)* |Manual only *(OneDrive/SharePoint Online only)* |No |
@@ -127,6 +129,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on OneD
 For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
 
 ### Comma separated value (.csv) file on OneDrive or SharePoint Online
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Simple comma separated value |Yes, hourly |Manual only |No |
@@ -141,6 +144,7 @@ There are two types of content packs in Power BI:
 **Organizational content packs**: created and shared by users in your own organization. Content pack consumers cannot setup a refresh schedule or manually refresh. Only the content pack creator can setup refresh for the datasets in the content pack. Refresh settings are inherited with the dataset.
 
 ### Content packs from online services
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Online services in Get Data &gt; Services |Yes |Yes |No |
@@ -233,7 +237,7 @@ In this case, you can manually refresh the data in the SalesReport.xlsx dataset 
 > 
 > 
 
-To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises data gateway](service-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
+To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](service-gateway-personal-mode.md), [On-premises data gateway](service-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
 
 ### Power BI Desktop file with data from an OData feed
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
@@ -266,7 +270,7 @@ For more information about troubleshooting, see [Tools for troubleshooting refre
 ## Next steps
 [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
 [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

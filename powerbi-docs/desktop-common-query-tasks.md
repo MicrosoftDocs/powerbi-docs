@@ -34,7 +34,7 @@ The first data connection is an Excel workbook. The other is a Web resource (whi
 The steps necessary to connect to both of those data sources is where the common Query tasks begin.
 
 ## Connect to data
-To connect to data in Power BI Desktop, select the **Get Data** button from the **Home** tab on the ribbon. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select the **More...** button at the bottom of the menu. For more information, see [Data Sources in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
+To connect to data in Power BI Desktop, select the **Get Data** button from the **Home** tab on the ribbon. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select the **More...** button at the bottom of the menu. For more information, see [Data Sources in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -56,10 +56,10 @@ Select **OK**, and like before, Power BI Desktop inspects the workbook and prese
 
 Other data connections are similar. If authentication is required to make a data connection, Power BI Desktop prompts you for the appropriate credentials.
 
-For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to Data in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
+For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to Data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## Shape and combine data
-You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **[Shape and Combine Data with Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
+You can easily shape and combine data with Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see **[Shape and Combine Data with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 In the previous section we connected to two sets of data – an Excel workbook, and a Web resource. Once loaded in Query Editor we see the following, with the query from the Web page selected (taken from the available queries listed in the **Queries** pane, on the left side of the Query Editor window).
 
@@ -214,7 +214,7 @@ The formula categories for Query Editor are the following:
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)

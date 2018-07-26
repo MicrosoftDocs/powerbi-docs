@@ -27,12 +27,12 @@ This article discusses some common issues you may encounter when using the **On-
 The gateway runs as a Windows service, so you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
 
 * To stop the service, run this command:
-  
+
     '''
     net stop PBIEgwService
     '''
 * To start the service, run this command:
-  
+
     '''
     net start PBIEgwService
     '''
@@ -70,7 +70,7 @@ To correct this, do the following.
 
 1. Uninstall the gateway.
 2. Delete the following folder.
-   
+
         c:\Program Files\On-premises data gateway
 3. Reinstall the gateway.
 4. Optionally apply the recovery key to restore an existing gateway.
@@ -129,11 +129,11 @@ You can confirm this by doing the following.
 
 1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this reproduces the error.
 2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is tool is normally found on a domain controller. You will need to know what the distinguished domain name is for the account and pass that to the tool.
-   
+
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-   
+
     You want to see something similar to the following in the results.
-   
+
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
@@ -184,15 +184,15 @@ To confirm this, you can do the following.
 
 1. Find the effective username within the [gateway logs](#logs).
 2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see what the UPN should be. The UPN will look like an email address.
-   
+
         whoami /upn
 
 Optionally, you can see what Power BI gets from Azure Active Directory.
 
-1. Browse to [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper right.
 3. Run the following query. You will see a rather large JSON response.
-   
+
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
 
@@ -206,7 +206,7 @@ You can find the data center region you are in by doing the following:
 1. Select the **?** in the upper right of the Power BI service.
 2. Select **About Power BI**.
 3. Your data region will be listed in **Your data is stored in**.
-   
+
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
@@ -329,6 +329,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 <a name="activities"></a>
 
 ### Activity Types
+
 | Activty Type | Description |
 | --- | --- |
 | MGEQ |Queries executed over ADO.NET. This includes DirectQuery data sources. |
@@ -342,9 +343,9 @@ To determine the time it took to query the data source, you can do the following
 2. Search for an [Activity Type](#activities) to find the query. An example of this would be MGEQ.
 3. Make note of the second GUID as this is the request id.
 4. Continue to search for MGEQ until you find the FireActivityCompletedSuccessfullyEvent entry with the duration. You can verify the entry has the same request id. Duration will be in milliseconds.
-   
+
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-   
+
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent is a verbose entry. This entry will not be logged unless TraceVerbosity is at level 5.
    > 
@@ -423,12 +424,12 @@ You will get the -10709 Connection failed error message if your delegation is no
 When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
-   
+
     ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](refresh-troubleshooting-refresh-scenarios.md) article.
