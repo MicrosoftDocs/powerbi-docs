@@ -422,6 +422,10 @@ The following table lists the available Power BI Premium SKUs available in [Offi
 | P4 |64 cores |32 cores, 200 GB RAM |32 cores |240 per second |9601-19200
 | P5 |128 cores |64 cores, 400 GB RAM |64 cores |480 per second |19201-38400
 
+*With **_Power BI Premium (EM SKUS)_**, you can access content with a FREE Power BI license when trying to embed with MS Office apps, but **you can't access** content with a FREE Power BI license when trying to use **_Powerbi.com_** or using **_Power BI mobile_**.*
+
+*With **_Power BI Premium (P SKUs)_**, you can access content with a FREE Power BI license when trying to **_embed with MS Office apps_**, with **_using Powerbi.com_**, and with **_using Power BI mobile_**.*
+
 ### Assign an app workspace to a dedicated capacity
 
 Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.

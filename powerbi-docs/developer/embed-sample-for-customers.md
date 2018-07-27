@@ -334,6 +334,8 @@ Use the table below to determine which Power BI Embedded capacity best fits your
 
 For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
+With Power BI Embedded capacities (A SKUs), you cannot access Power BI content with a FREE Power BI license.
+
 Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
 ### Assign an app workspace to a dedicated capacity
@@ -351,8 +353,6 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 3. After you select **Save** you should see a **diamond** next to the app workspace name.
 
     ![app workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
-
-With Power BI Embedded capacities (A SKUs), you cannot access Power BI content with a FREE Power BI license.
 
 ## Next steps
 In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your organization.
