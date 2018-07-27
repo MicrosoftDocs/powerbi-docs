@@ -30,7 +30,7 @@ For the initial release of paginated reports in the Power BI service, you create
 - SQL Server Analysis Services via a gateway
 - Oracle via a gateway
  
-Paginated reports can have a number of different data sources. They don't have the concept of a data model, unlike Power BI reports.
+A single paginated report can have a number of different data sources. They don't have an underlying data model, unlike Power BI reports.
 
 ## Design your report  
 
