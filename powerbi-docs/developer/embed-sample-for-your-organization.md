@@ -413,14 +413,14 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 The following table lists the available Power BI Premium SKUs available in [Office 365](../service-admin-premium-purchase.md).
 
-| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
+| Capacity Node | Total v-cores<br/>*(Backend + Frontend)* | Backend v-cores | Frontend v-cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
-| EM3 |4 v-cores |2 cores, 10GB RAM |2 cores | |601-1,200 |
-| P1 |8 v-cores |4 cores, 25GB RAM |4 cores |30 per second |1,201-2,400 |
-| P2 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
-| P3 |32 cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
-| P4 |64 cores |32 cores, 200 GB RAM |32 cores |240 per second |9601-19200
-| P5 |128 cores |64 cores, 400 GB RAM |64 cores |480 per second |19201-38400
+| EM3 |4 v-cores |2 v-cores, 10GB RAM |2 v-cores | |601-1,200 |
+| P1 |8 v-cores |4 v-cores, 25GB RAM |4 v-cores |30 per second |1,201-2,400 |
+| P2 |16 v-cores |8 v-cores, 50GB RAM |8 v-cores |60 per second |2,401-4,800 |
+| P3 |32 v-cores |16 v-cores, 100GB RAM |16 v-cores |120 per second |4,801-9600 |
+| P4 |64 v-cores |32 v-cores, 200 GB RAM |32 v-cores |240 per second |9601-19200
+| P5 |128 v-cores |64 v-cores, 400 GB RAM |64 v-cores |480 per second |19201-38400
 
 *With **_Power BI Premium (EM SKUS)_**, you can access content with a FREE Power BI license when trying to embed with MS Office apps, but **you can't access** content with a FREE Power BI license when trying to use **_Powerbi.com_** or using **_Power BI mobile_**.*
 
