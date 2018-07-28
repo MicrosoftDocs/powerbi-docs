@@ -829,6 +829,10 @@
     items: 
     - name: What are paginated reports?
       href: paginated-reports-report-builder-power-bi.md
+  - name: Quickstarts
+    items:
+    - name: "Create a paginated report"
+      href: paginated-reports-quickstart-chart.md
   
 - name: Power BI mobile apps
   items:
