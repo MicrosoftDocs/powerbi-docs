@@ -332,11 +332,11 @@ Use the table below to determine which Power BI Embedded capacity best fits your
 | A5 |16 v-cores |8 cores, 50GB RAM |8 cores |60 per second |2,401-4,800 |
 | A6 |32 v-cores |16 cores, 100GB RAM |16 cores |120 per second |4,801-9600 |
 
-For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
-
-With Power BI Embedded capacities (A SKUs), you cannot access Power BI content with a FREE Power BI license.
+**_With A SKUs, you cannot access Power BI content with a FREE Power BI license._**
 
 Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
+
+For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
 ### Assign an app workspace to a dedicated capacity
 
