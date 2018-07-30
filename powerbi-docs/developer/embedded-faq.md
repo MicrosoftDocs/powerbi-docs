@@ -66,7 +66,7 @@ Here is a partial list of differences you may use with each.
 | Consume Power BI reports in   Dynamics | No | Yes | Yes |
 | Consume Power BI reports in Teams | No | Yes | Yes |
 | Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
-| Access content with a FREE   Power BI license embedded in MS Office apps | No | Yes | Yes |
+| Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
 
 ### Power BI now offers three SKUs for embedding: A SKUs, EM SKUs and P SKUs. Which one should I purchase for my scenario?
 
