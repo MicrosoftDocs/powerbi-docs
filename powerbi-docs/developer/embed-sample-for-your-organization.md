@@ -415,7 +415,9 @@ The following table lists the available Power BI Premium SKUs available in [Offi
 
 | Capacity Node | Total v-cores<br/>*(Backend + Frontend)* | Backend v-cores | Frontend v-cores | DirectQuery/live connection limits | Max page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
-| EM3 |4 v-cores |2 v-cores, 10GB RAM |2 v-cores | |601-1,200 |
+| EM1 |1 v-cores |.5 v-cores, 10GB RAM |.5 v-cores |3.75 per second |150-300 |
+| EM2 |2 v-cores |1 v-cores, 10GB RAM |1 v-cores |7.5 per second |301-600 |
+| EM3 |4 v-cores |2 v-cores, 10GB RAM |2 v-cores |15 per second |601-1,200 |
 | P1 |8 v-cores |4 v-cores, 25GB RAM |4 v-cores |30 per second |1,201-2,400 |
 | P2 |16 v-cores |8 v-cores, 50GB RAM |8 v-cores |60 per second |2,401-4,800 |
 | P3 |32 v-cores |16 v-cores, 100GB RAM |16 v-cores |120 per second |4,801-9600 |
