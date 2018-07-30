@@ -447,12 +447,12 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. You can do this through the [Power BI admin portal](../service-admin-portal.md).
 
 ## Next steps
-In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
+In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your customers.
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Embed for 3rd party customers](embed-sample-for-customers.md)
+>[Embed for your customers](embed-sample-for-customers.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

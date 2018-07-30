@@ -355,10 +355,7 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
     ![app workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## Next steps
-In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your organization.
-
-> [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
 
 > [!div class="nextstepaction"]
 >[Embed for your organziation](embed-sample-for-your-organization.md)
