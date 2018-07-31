@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -29,7 +29,7 @@ This collection of three related features for **composite models** are each desc
 
 * **Composite models** are described in detail in this article.
 * **Many-to-many relationships** are described in their own article, [many-to-many relationships in Power BI Desktop (Preview)](desktop-many-to-many-relationships.md).
-* **Storage mode** is desribed in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
+* **Storage mode** is described in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
 
 ## Enabling the composite models preview feature
 
