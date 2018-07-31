@@ -168,7 +168,7 @@ You want to be logged in with either the *master* account, used for embedding or
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
-    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98* is not universal but it is tenant dependant. This value is the objectId of the “Power BI Service” application in the AAD tenant.
+    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is not universal but it is tenant dependant. This value is the objectId of the “Power BI Service” application in the AAD tenant.
 
     The user can quickly get this value in the Azure Portal:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
