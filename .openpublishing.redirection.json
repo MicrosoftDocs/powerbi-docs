@@ -124,6 +124,11 @@
             "source_path": "powerbi-docs/developer/template-content-pack-testing.md", 
             "redirect_url": "/power-bi/template-content-pack-testing",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedding-content.md", 
+            "redirect_url": "/power-bi/developer/embed-sample-for-customers",
+            "redirect_document_id": true
         }
         
     ]

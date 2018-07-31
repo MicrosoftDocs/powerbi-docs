@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/19/2018
 ms.author: davidi
 
 LocalizationGroup: Visualizations
@@ -93,7 +93,7 @@ In this first image, notice how the bars in the chart reflect the gradient shown
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
 
-Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes, which are below the **Minimum** and **Maximum** color selectors (shown in the following image). Let’s set **Minimum** to 20,000,000, and set **Maximum** to 20,000,000.
+Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes, which are below the **Minimum** and **Maximum** color selectors (shown in the following image). Let’s set **Minimum** to 20,000,000, and set **Maximum** to 20,000,001.
 
 By setting those values, gradient is no longer applied to values on the chart that are below **Minimum** or above **Maximum**; any bar with a value over **Maximum** value is colored green, and any bar with a value under **Minimum** value is colored red.
 
