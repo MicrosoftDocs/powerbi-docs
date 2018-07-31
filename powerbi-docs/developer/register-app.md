@@ -171,8 +171,8 @@ You want to be logged in with either the *master* account, used for embedding or
     The resource id used *c78b2585-1df6-41de-95f7-dc5aeb7dc98e* is not universal but it is tenant dependant. This value is the objectId of the “Power BI Service” Application in the AAD tenant.
 
     The user can quickly get this value in the Azure Portal:
-    a. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
-    b. Search for “Power BI Service” in the SearchBox
+    1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
+    2. Search for “Power BI Service” in the SearchBox
 
 5. Grant App Permissions to Azure Active Directory (AAD)
    
