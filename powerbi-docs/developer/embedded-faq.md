@@ -212,6 +212,8 @@ It is required that any analyst that needs to add reports to a Power BI workspac
 
 Because Power BI Embedded allows use of the Power BI portal for managing and validating embedded content, the Power BI Pro license is required to authenticate the App inside PowerBI.com to get access to the reports in the right repositories.
 
+However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your own application, the end-user does not need a Pro license as he isn't required to be a Power BI user at all.
+
 ### Can I get started for free?
 
 Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Power BI Embedded.
