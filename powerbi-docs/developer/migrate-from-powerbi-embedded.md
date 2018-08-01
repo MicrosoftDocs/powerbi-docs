@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 ms.Embedded: powerbi
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/30/2018
 ms.author: maghan
 
 ---

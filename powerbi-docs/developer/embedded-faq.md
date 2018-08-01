@@ -66,7 +66,7 @@ Here is a partial list of differences you may use with each.
 | Consume Power BI reports in   Dynamics | No | Yes | Yes |
 | Consume Power BI reports in Teams | No | Yes | Yes |
 | Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
-| Access content with a FREE   Power BI license embedded in MS Office apps | No | Yes | Yes |
+| Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
 
 ### Power BI now offers three SKUs for embedding: A SKUs, EM SKUs and P SKUs. Which one should I purchase for my scenario?
 
@@ -211,6 +211,8 @@ Power BI Embedded bills on a predictable hourly rate based on the type of node(s
 It is required that any analyst that needs to add reports to a Power BI workspace, any developer that requires use of the REST APIs, any tenant admin that needs to manage the Power BI tenant and capacity will need a Power BI Pro license.
 
 Because Power BI Embedded allows use of the Power BI portal for managing and validating embedded content, the Power BI Pro license is required to authenticate the App inside PowerBI.com to get access to the reports in the right repositories.
+
+However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your own application, the end-user does not need a Pro license as he isn't required to be a Power BI user at all.
 
 ### Can I get started for free?
 
