@@ -56,9 +56,7 @@ When you view your paginated report in the Power BI service, you can export it t
   
 ## Limitations and considerations
 
-You can only publish paginated reports to your My Workspace, and your My Workspace needs to be in a Power BI Premium capacity.
-
-Here are some other features that won't be supported in the initial release:
+Here are some other features that aren't supported in the initial release:
 
 - Interactive features such as document maps and show/hide buttons.
 - Subreports and drillthrough reports.
@@ -66,11 +64,12 @@ Here are some other features that won't be supported in the initial release:
 - Shared data sources and shared datasets.
 - Power BI datasets.
 - Visuals from Power BI reports.
+- Paginated reports in apps. You can share a paginated report from an app workspace, but you can't include it when you publish the app from that workspace.
  
 ## See also  
 
 - [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
 
-- [Quickstart: Create a paginated report](paginated-reports-quickstart-chart.md) and upload it to the Power BI service. Introduces Report Builder and the wizards available to help you create reports. The tutorial provides a set of sample data so you don't need to connect to a data source to get started.  
+- Quickstart: Create a paginated report 
   
 
