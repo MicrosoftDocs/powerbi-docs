@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: quickstart
-ms.date: 07/28/2018
+ms.date: 08/01/2018
 ms.author: maggies
 ---
 
@@ -27,7 +27,7 @@ To create the paginated report:
 To upload your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
-- Your **My Workspace** on the service needs to be in a [Power BI Premium capacity](service-premium.md). Look for the diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-chart/premium-diamond.png) next to My Workspace.
+- Your **My Workspace** or app workspace on the service needs to be in a [Power BI Premium capacity](service-premium.md). Look for the diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-chart/premium-diamond.png) next to the workspace name.
 
 ## Create the pie chart
   
@@ -115,6 +115,8 @@ To upload your paginated report to the Power BI service:
      "Report Builder New Chart Run"  
   
      Now that you've made your pie chart report, you can play with it. 
+
+18. Save the report to your local computer.
   
 ## Make the chart bigger  
 You may want the pie chart to be bigger. 
@@ -150,11 +152,11 @@ Notice the design surface gets larger as you drag.
 
 Now that you've created this paginated report, it's time to upload it to the service.
 
-1. In the Power BI service (http://app.powerbi.com), go to your My Workspace. It needs to have a diamond icon next to the name to show that it's in a Premium capacity.
+1. In the Power BI service (http://app.powerbi.com), go to the workspace. It needs to have a diamond icon next to the name to show that it's in a Premium capacity.
     
     ![Diamond Premium icon](media/paginated-reports-quickstart-chart/power-bi-paginated-my-workspace-premium.png)
 
-    If your My Workspace isn't in a Premium capacity, when you try to upload your report you see the message, "Unable to upload paginated report." Contact your Power BI administrator to move your My Workspace.
+    If the workspace isn't in a Premium capacity, when you try to upload your report you see the message, "Unable to upload paginated report." Contact your Power BI administrator to move the workspace.
 
 1. Select **Get Data**.
 2. In the **Files** box > **Get**.
