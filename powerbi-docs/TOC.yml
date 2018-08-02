@@ -831,7 +831,9 @@
       href: paginated-reports-report-builder-power-bi.md
   - name: Quickstarts
     items:
- 
+     - name: Create a paginated report and upload it
+      href: paginated-reports-quickstart-aw.md
+
 - name: Power BI mobile apps
   items:
   - name: Overview
