@@ -409,11 +409,28 @@ function updateEmbedReport() {
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. If a workspace is unassigned to a dedicated capacity, it is considered a shared capacity. You can create a dedicated capacity using [Power BI Premium ](../service-admin-premium-purchase.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
+
+The following table lists the available Power BI Premium SKUs available in [Office 365](../service-admin-premium-purchase.md).
+
+| Capacity Node | Total v-cores<br/>*(Backend + Frontend)* | Backend v-cores | Frontend v-cores | DirectQuery/live connection limits | Max page renders at peak hour |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 v-cores |.5 v-cores, 10GB RAM |.5 v-cores |3.75 per second |150-300 |
+| EM2 |2 v-cores |1 v-cores, 10GB RAM |1 v-cores |7.5 per second |301-600 |
+| EM3 |4 v-cores |2 v-cores, 10GB RAM |2 v-cores |15 per second |601-1,200 |
+| P1 |8 v-cores |4 v-cores, 25GB RAM |4 v-cores |30 per second |1,201-2,400 |
+| P2 |16 v-cores |8 v-cores, 50GB RAM |8 v-cores |60 per second |2,401-4,800 |
+| P3 |32 v-cores |16 v-cores, 100GB RAM |16 v-cores |120 per second |4,801-9600 |
+| P4 |64 v-cores |32 v-cores, 200 GB RAM |32 v-cores |240 per second |9601-19200
+| P5 |128 v-cores |64 v-cores, 400 GB RAM |64 v-cores |480 per second |19201-38400
+
+*With **_EM SKUS_**, **you can** access content with a FREE Power BI license when trying to embed with **_MS Office apps_**, but **you can't access** content with a FREE Power BI license when using **_Powerbi.com_** or using **_Power BI mobile_**.*
+
+*With **_P SKUs_**, **you can** access content with a FREE Power BI license when trying to embed with **_MS Office apps_**, with using **_Powerbi.com_**, or with **_using Power BI mobile_**.*
 
 ### Assign an app workspace to a dedicated capacity
 
-Once a dedicated capacity is created, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
+Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
@@ -427,13 +444,17 @@ Once a dedicated capacity is created, you can assign your app workspace to that 
 
     ![app workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## Admin settings
+
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. You can do this through the [Power BI admin portal](../service-admin-portal.md).
+
 ## Next steps
-In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for 3rd party customers.
+In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your customers.
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Embed for 3rd party customers](embed-sample-for-customers.md)
+>[Embed for your customers](embed-sample-for-customers.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

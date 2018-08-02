@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 06/30/2018
 ms.author: maghan
-
 ---
+
 # Code snippets for migrating content from Power BI Workspace Collection
 Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI workspace collection content to Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
