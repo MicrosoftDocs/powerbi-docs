@@ -81,7 +81,7 @@ You're sharing a snapshot of the tile, report, or visual, and your recipients se
 
 More about [annotating and sharing tiles, reports, and visuals](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
-You can also [share a snapshot of a tile](mobile-share-tile-windows-10-phone-app.md) from the Power BI app for Windows 10 devices.
+You can also [share a snapshot of a tile](mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
 
 ## Print or save as PDF or other static file
 You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](service-print.md).

@@ -8,7 +8,11 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+<<<<<<< HEAD
 ms.date: 06/19/2018
+=======
+ms.date: 07/19/2018
+>>>>>>> e65b2a9f76cf1bb77e40cf239ac48be234e35398
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -47,7 +51,7 @@ When you make and save a change to the dashboard that you included in a content 
 4. Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
    
    * For group members who haven't customized the content pack, the update is automatically applied.
-   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render.    
+   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. However, if the content pack owner deletes the dataset the content pack is based on, then the whole report will be gone.  
 
 ## Update the audience: expand or restrict access
 Another modification available to content pack creators is expanding and restricting access to the content pack.  Perhaps you published a content pack to a broad audience and you've decided to restrict access to a smaller group.  
