@@ -1,5 +1,5 @@
 ---
-title: Power BI URLs and IP addresses
+title: Power BI URLs
 description: Endpoints should be reachable for customers using Power BI
 author: markingmyname
 ms.author: maghan
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ---
 
-# Power BI URLs and IP address ranges
+# Power BI URLs
 
 **Power BI** requires connectivity to the Internet. The endpoints below should be reachable for customers using **Power BI**.
 
