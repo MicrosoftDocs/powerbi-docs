@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -151,7 +151,6 @@ Some other new app workspace preview features are still being developed, but are
 
 - No **Leave workspace** button.
 - Usage metrics aren't supported yet.
-- Having Azure B2B guest users isn't supported yet.
 - How Premium works: You can assign and create workspaces in a Premium capacity, but to move a workspace between capacities, go to the workspace’s settings.
 - SharePoint web part embedding isn't supported yet.
 - No **OneDrive** button for Office 365 groups in Get Data/Files.

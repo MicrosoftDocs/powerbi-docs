@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2018
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -39,7 +39,7 @@ App workspaces provide roles that determine what permissions your coworkers have
 
 ![App workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Some users naturally put content in their My workspace and share it out. App workspaces are better at collaboration than My workspaces because they provide co-ownership of content. You and your entire team can easily make updates or give others access. My workspace is best used by individuals for one-off or personal content.
+Some users naturally put content in their My Workspace and share it out. App workspaces are better at collaboration than My Workspace because they provide co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
 
 Let’s imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. If a specific colleague needs to own the dashboard and keep it up to date, or needs access to all the content in the app workspace, it may be best to add them to the workspace. If your colleague just needs to see that dashboard and not all the content in the workspace, you again can choose from a set of alternatives. If the dashboard is part of a bigger set of content you need to distribute to many colleagues, then publishing an app is likely the best choice. However, if the colleague just needs that one dashboard, then sharing the dashboard could be the best path forward. 
 
