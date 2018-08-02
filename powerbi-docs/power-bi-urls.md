@@ -15,11 +15,11 @@ ms.date: 08/06/2018
 
 Power BI requires connectivity to the Internet. The endpoints below should be reachable for customers using Power BI.
 
-To use Power BI, you must be able to connect to the endpoints marked required in the tables below.
+To use Power BI, you must be able to connect to the endpoints marked **required** in the tables below.
 
 Power BI is requested from browsers, clients, and servers to require an authenticated user to be passed.
 
-Wildcards represent all levels under the root domain, and we use N/A when information isn't available. The Destination column is a list with FQDN/domain, links to the [O365 URL site](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity), along with port information.
+Wildcards represent all levels under the root domain, and we use N/A when information isn't available. The Destination column is a list with FQDN/domains, links to the [O365 URL site](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity), along with port information.
 
 For any remaining optional FQDNs, wildcards, DNS, CDN, CRL, or other unpublished destinations requested by Power BI, ensure clients can access them over the Internet.
 
