@@ -42,6 +42,11 @@ Power BI Desktop supports three number types:
 
 **Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).  It can represent the largest possible number of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
 
+> [!NOTE]
+>  The Power BI Desktop data model supports 64 bit integer values, but the largest number the visuals can safely express is 9,007,199,254,740,991 (2^53-1) due to JavaScript limitations. If you work with numbers in your data model above this, you can reduce the size through calculations before adding them to a visual 
+> 
+>
+
 ### Date/time types
 Power BI Desktop supports five Date/Time data types in Query View and three in the Report View and model.   Both Date/Time/Timezone and Duration are converted during load into the model.
 
