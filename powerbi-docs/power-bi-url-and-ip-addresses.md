@@ -13,9 +13,9 @@ ms.date: 08/06/2018
 
 # Power BI URLs and IP address ranges
 
-**Power BI** requires connectivity to the Internet. The endpoints below should be reachable for customers using **Power BI**, including Government Community Cloud (GCC).
+**Power BI** requires connectivity to the Internet. The endpoints below should be reachable for customers using **Power BI**.
 
-Please read each service introduction for more info. Wildcards represent all levels under the root domain and we use N/A when information is not available. Destinations are listed with FQDN/domain only, CIDR prefixes only, or a pairing of FQDNs that represent specific CIDR prefixes along with Port(s) information.
+Please read each service introduction for more info. Wildcards represent all levels under the root domain, and we use N/A when information is not available. Destinations are listed with FQDN/domain, links to other sites that have more detail only, along with port information.
 
 For any remaining optional FQDNs, wildcards, DNS, CDN, CRL, or other unpublished destinations requested by **Power BI**, ensure clients can access them over the Internet.
 
@@ -41,7 +41,7 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | Required: Import a custom visual from the Marketplace Interface and from a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 80, 443 |
+| 1 | Required: Import a custom visual from the Marketplace Interface and a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 80, 443 |
 | 2 | Optional: PowerApps | Go [here](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) for more details | N/A |
 | 3 | Optional: Visio | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
 | 4 | Optional: Bing Maps | bing.com, *.dynamic.tiles.virtualearth.net, platform.bing.com, *.virtualearth.net  | TCP 80, 443 |
@@ -60,10 +60,10 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
 | 1 | Optional: community.powerbi.com   - Community site  |  community.powerbi.com | TCP 80, 443 |
 | 2 | Optional: docs.microsoft.com -   Documentation site | docs.microsoft.com | TCP 80, 443 |
-| 3 | Optional: Download sources   (Power BI Desktop, etc) | download.microsoft.com | TCP 80, 443 |
+| 3 | Optional: Download sources   (Power BI Desktop, etc.) | download.microsoft.com | TCP 80, 443 |
 | 4 | Optional: External redirects | aka.ms, go.microsoft.com  | TCP 80, 443 | |
 | 5 | Optional: ideas.powerbi.com - ideas site | ideas.powerbi.com | TCP 80, 443 |
-| 6 | Optional: powerbi.microsoft.com (such as: the landing page, the support site, etc.) | powerbi.microsoft.com | TCP 80, 443 |
+| 6 | Optional: powerbi.microsoft.com (e.g. the landing page, the support site, etc.) | powerbi.microsoft.com | TCP 80, 443 |
 
 ## General site usage
 
@@ -84,10 +84,3 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 | 2 | Optional: Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
 | 3 | Optional:  Power BI in   60 Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com,  *.googlevideo.com, *.youtube.com,  *.ytimg.com,  fonts.gstatic.com | TCP 80, 443 | |
 | 4 | Optional: PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
-
-## O365
-
-|     Row     |     Purpose     |     Destination     |       Port(s)     |
-|-------------|----------------------------------------------------|--------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: Managing Users (done in O365 Port(s)al) | *.microsoft.com, *.msocdn.com, *.office.com, *.office.net,  *.office365.com,   *.skype.com | TCP 80, 443 |
-| 2 | Required: Viewing Audit Logs (done in O365 Port(s)al) | *.microsoft.com,  *.office.com,   *.office365.com, d3js.org | TCP 80, 443 |
