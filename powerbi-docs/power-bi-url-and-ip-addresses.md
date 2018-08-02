@@ -24,17 +24,27 @@ To use **Power BI**, you must be able to connect to the endpoints marked require
 ### Portal and shared FQDNs
 Power BI is requested from browsers, clients, and servers to require an authenticated user to be passed.
 
+## Administration
+
+|     Row     |     Purpose     |     Destination     |       Port(s)
+|-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
+| 1 | Required: Managing Users (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
+| 2 | Required: Viewing Audit Logs (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
+
 ## Authentication
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: Login page | https://support.office.com/ | TCP 443 |
+| 1 | Required: Login page | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) for more details | N/A |
 
 ## Custom visuals
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | Required: ImPort(s) a Custom Visual from Marketplace Interface and from   a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 80, 443 | ||
+| 1 | Required: Import a custom visual from the Marketplace Interface and from a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 80, 443 |
+| 2 | Optional: PowerApps | Go [here](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) for more details | N/A |
+| 3 | Optional: Visio | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
+| 4 | Optional: Bing Maps | bing.com, *.dynamic.tiles.virtualearth.net, platform.bing.com, *.virtualearth.net  | TCP 80, 443 |
 
 ## Dashboard and Report integration
 
@@ -42,18 +52,18 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 |-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
 | 1 | Required: Viewing a report published to web | *.analysis.windows.net | TCP 80, 443 |
 | 2 | Optional: Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net,   *.virtualearth.net | TCP 80, 443 | |
-| 3 | Optional: Excel Integration | Go [here](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details  | N/A |
+| 3 | Optional: Excel Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details  | N/A |
 
 ## External related sites
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Optional: community.powerbi.com   - Community site  | *.lithium.com, *.microsoft.com,   community.powerbi.com, powerbicdn.azureedge.net,  www.google-analytics.com | TCP 80, 443 |
-| 2 | Optional: docs.microsoft.com -   Documentation site | *.akamaized.net,   *.microsoft.com, *.msecnd.net, ajax.aspnetcdn.com, www.google-analytics.com | TCP 80, 443 |
+| 1 | Optional: community.powerbi.com   - Community site  |  community.powerbi.com | TCP 80, 443 |
+| 2 | Optional: docs.microsoft.com -   Documentation site | docs.microsoft.com | TCP 80, 443 |
 | 3 | Optional: Download sources   (Power BI Desktop, etc) | download.microsoft.com | TCP 80, 443 |
 | 4 | Optional: External redirects | aka.ms, go.microsoft.com  | TCP 80, 443 | |
-| 5 | Optional: ideas.powerbi.com - ideas site | *.gstatic.com, *.gstatic.com, *.microsoft.com, *.uvcdn.com, *.wp.com, ajax.aspnetcdn.com, code.jquery.com,   ideas.powerbi.com, maxcdn.bootstrapcdn.com, nexus.ensighten.com,   pbiwebprod.blob.core.windows.net, powerbi.uservoice.com, secure.gravatar.com,   ssl.google-analytics.com, widget.uservoice.com, www.google.com  | TCP 80, 443 |
-| 6 | Optional: powerbi.microsoft.com - Landing page, learn more links, support site, download links, partner showcase, etc.  | ajax.aspnetcdn.com,   amp.azure.net, cdn.optimizely.com, google-analytics.com,   maxcdn.bootstrapcdn.com,    netdna.bootstrapcdn.com,    powerbi.microsoft.com,powerbicdn.azureedge.net, support.powerbi.com,  www.powerbi.com | TCP 80, 443 |
+| 5 | Optional: ideas.powerbi.com - ideas site | ideas.powerbi.com | TCP 80, 443 |
+| 6 | Optional: powerbi.microsoft.com (such as: the landing page, the support site, etc.) | powerbi.microsoft.com | TCP 80, 443 |
 
 ## General site usage
 
@@ -70,10 +80,10 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: AppSource | *.azureedge.net, *.azureedge.net, *.blob.core.windows.net,   *.doubleclick.net, *.google-analytics.com,    appsource.microsoft.com,    c.s-microsoft.com, google-analytics.com,  login.microsoftonline.com,   login.windows.net, secure.aadcdn.microsoftonline-p.com | TCP 80, 443 |
-| 2 | Optional: ImPort(s) Files From OneDrive Personal | *.azureedge.net, *.live.net, auth.gfx.ms | TCP 80, 443 |
+| 1 | Required: AppSource | appsource.microsoft.com | TCP 80, 443 |
+| 2 | Optional: Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
 | 3 | Optional:  Power BI in   60 Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com,  *.googlevideo.com, *.youtube.com,  *.ytimg.com,  fonts.gstatic.com | TCP 80, 443 | |
-| 4 | Optional: PubNub streaming data sources | *.pubnub.com | TCP 80, 443 |
+| 4 | Optional: PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
 
 ## O365
 
