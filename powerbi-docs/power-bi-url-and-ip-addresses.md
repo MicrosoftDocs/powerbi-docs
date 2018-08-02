@@ -31,13 +31,13 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
 | 1 | Required: Login page | https://supPort(s).office.com/ | TCP 443 |
 
-## To view custom visuals
+## Custom visuals
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
 | 1 | Required: ImPort(s) a Custom Visual from Marketplace Interface and from   a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 80, 443 | ||
 
-## RePort(s) and dashboard integration
+## Reports and dashboard integration
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
