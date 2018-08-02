@@ -8,11 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-<<<<<<< HEAD
-ms.date: 06/19/2018
-=======
 ms.date: 07/19/2018
->>>>>>> e65b2a9f76cf1bb77e40cf239ac48be234e35398
 ms.author: maggies
 
 LocalizationGroup: Share your work
