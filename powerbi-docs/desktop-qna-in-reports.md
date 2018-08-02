@@ -23,6 +23,11 @@ To enable Q&A to successfully interpret the large collection of questions it's c
 >
 >
 
+> [!NOTE]
+> Q&A requires the following C runtime update if you're using a version of Windows prior to Windows 10. You can try installing important updates from Windows Update or manually install the required component from Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+>
+>
+
 In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
 
 ## Add missing relationships
