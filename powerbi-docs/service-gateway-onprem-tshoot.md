@@ -39,7 +39,7 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
     net start PBIEgwService
     '''
 
-### Error: Failed to create gateway. Please try again
+### Error: Failed to create a gateway. Please try again
 
 All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
@@ -55,7 +55,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 ### Script error during sign into Power BI
 
-You may receive a script error when signing into Power BI as part of the On-premises data gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
+You may receive a script error when signing into Power BI as part of the On-premises data gateway configuration. Installing the following security update resolves the issue. This can be installed via Windows Update.
 
 [MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
@@ -100,7 +100,7 @@ It's important to note that TLS 1.0 is still supported by the On-premises data g
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
-Within **Show details**, it should display the error message received from the data source. For SQL Server, you should see something like the following.
+Within **Show details**, it displays the error message received from the data source. For SQL Server, you see something like the following.
 
     Login failed for user 'username'.
 
@@ -110,7 +110,7 @@ Verify that you have the correct username and password. Also verify that those c
 
 We were able to connect to the server, but not to the database supplied. Verify the name of the database, and that the user credential as the proper permission to access that database.
 
-Within **Show details**, it should display the error message received from the data source. For SQL Server, you should see something like the following.
+Within **Show details**, it displays the error message received from the data source. For SQL Server, you see something like the following.
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
@@ -141,7 +141,7 @@ Domains with Pre-Windows 2000 compatibility access have the TGGAU attribute enab
 You can confirm this by doing the following.
 
 1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this reproduces the error.
-2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is tool is normally found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
+2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is a tool normally found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
 
@@ -151,7 +151,7 @@ You can confirm this by doing the following.
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
 
-To correct this issue, you need to enable TGGAU on account used for the Analysis Services windows service.
+To correct this issue, you need to enable TGGAU on the account used for the Analysis Services windows service.
 
 **Another possibility for username or password incorrect**
 
@@ -177,7 +177,7 @@ This occurs if you have a single row greater than 4 MB in size. You need to dete
 
 This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the NetBIOS name for the server. This causes a mismatch for the certificate. To resolve this issue, you need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
-### I don't see the On-premises data gateway persent when configuring scheduled refresh
+### I don't see the On-premises data gateway present when configuring scheduled refresh
 
 This could be because of a few different scenarios.
 
@@ -185,7 +185,7 @@ This could be because of a few different scenarios.
 2. Your account is not listed in the **Users** tab of the data source within the gateway configuration. You need to get with the administrator of the gateway to be added to that list.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
-### Error: The received uncompressed data on the gateway client has exceeded limit
+### Error: The received uncompressed data on the gateway client has exceeded the limit
 
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) helps.
 
@@ -205,7 +205,7 @@ If this report is making use of a live Analysis Services connection, you could b
 To confirm this, you can do the following.
 
 1. Find the effective username within the [gateway logs](#logs).
-2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see what the UPN should be. The UPN looks like an email address.
+2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see the UPN . The UPN looks like an email address.
 
         whoami /upn
 
@@ -213,7 +213,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
 1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper right.
-3. Run the following query. You should see a rather large JSON response.
+3. Run the following query. You see a rather large JSON response.
 
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
@@ -227,7 +227,7 @@ You can find the data center region you are in by doing the following:
 
 1. Select the **?** in the upper right of the Power BI service.
 2. Select **About Power BI**.
-3. Your data region should be listed in **Your data is stored in**.
+3. Your data region is listed in **Your data is stored in**.
 
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
@@ -239,9 +239,9 @@ If you are still not getting anywhere, you could try getting a network trace usi
 
 ### Performance Counters
 
-There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helpful to understanding if we have a large load of activity and may need to make a new gateway. These counters do not reflect how long something takes.
+There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helpful to understand if we have a large load of activity and may need to make a new gateway. These counters do not reflect how long something takes.
 
-These counters can be access through the Windows Performance Monitor tool.
+These counters can be accessed through the Windows Performance Monitor tool.
 
 ![](media/service-gateway-onprem-tshoot/gateway-perfmon.png)
 
@@ -281,14 +281,14 @@ Here is a listing of the available performance counters.
 | # of OLEDB open connection executed / sec |Number of OLEDB open connection actions executed per second (succeeded or failed). |
 | # of OLEDB open connection failed / sec |Number of OLEDB open connection actions failed per second. |
 | # of OLEDB queries executed / sec |Number of OLEDB multiple resultset queries executed per second (succeeded or failed). |
-| # of OLEDB queries failed / sec |Number of OLEDB mutiple resultset failed queries executed per second. |
+| # of OLEDB queries failed / sec |Number of OLEDB multiple resultset failed queries executed per second. |
 | # of OLEDB single resultset queries executed / sec |Number of OLEDB single resultset queries executed per second (succeeded or failed). |
 | # of queries failed / sec |Number of failed queries executed per second. |
 | # of single result set OLEDB queries failed / sec |Number of single resultset OLEDB failed queries executed per second. |
 
 ## Reviewing slow performing queries
 
-You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
+You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long-running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
 
 You need to modify two configuration files to determine the duration of a query.
 
@@ -338,7 +338,7 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 
 ### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 
-Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premissese Gateway application.
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premises Gateway application.
 
    ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
 
@@ -357,7 +357,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 
 ### Activity Types
 
-| Activty Type | Description |
+| Activity Type | Description |
 | --- | --- |
 | MGEQ |Queries executed over ADO.NET. This includes DirectQuery data sources. |
 | MGEO |Queries executed over OLEDB. This includes SAP HANA and Analysis Services 2016. |
@@ -387,7 +387,7 @@ You can test to see if your firewall, or proxy, may be blocking connections by r
 > [!NOTE]
 > Test-NetConnection is only available on Windows Server 2012 R2 and later. It is also available on Windows 8.1 and later. On earlier OS versions, you can use Telnet to test port connectivity.
 
-The results should look similar to the following. The difference is with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
+The results look similar to the following. The difference is with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
 
     ComputerName           : watchdog.servicebus.windows.net
     RemoteAddress          : 70.37.104.240
@@ -454,18 +454,18 @@ The FailedToImpersonateUserException happens if you are not able to impersonate 
 
 ### General error; 1033 error while parsing protocol
 
-You get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you should see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
+You get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
 
 ```
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
 ```
 
 **Solution**
-* SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you should see the 1033 error.
+* SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you see the 1033 error.
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
-* In the logs you should see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
+* In the logs you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com)
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
@@ -485,7 +485,7 @@ You get the 1033 error when your external Id that is configured in SAP HANA is n
 
 ### [SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
 
-You should get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
+You get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
 
 **Solution**
 * Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
@@ -497,7 +497,7 @@ You should get the -10709 Connection failed error message if your delegation is 
 
 ### Refresh History
 
-When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you need to create a support request. You can view both scheduled, as well as on-demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
 
