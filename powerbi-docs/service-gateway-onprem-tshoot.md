@@ -41,7 +41,7 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
 
 ### Error: Failed to create a gateway. Please try again
 
-All of the details are available, but the call to the Power BI service returned an error. The error and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
+All of the details are available, but the call to the Power BI service returned an error. The error and an activity ID are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
@@ -49,7 +49,7 @@ This could also be due to proxy configuration issues. The user interface does no
 
 Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Alternatively, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
 
-### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
+### Error: Power BI service reported local gateway as unreachable. Restart the gateway and try again
 
 At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details.
 
@@ -151,15 +151,15 @@ You can confirm this by doing the following.
 
 To correct this issue, you need to enable TGGAU on the account used for the Analysis Services windows service.
 
-**Another possibility for username or password incorrect**
+#### Another possibility for username or password incorrect
 
 This error could also be caused if the Analysis Services server is in a different domain than the users and there is not a two-way trust established.
 
 You need to work with your domain administrators to verify the trust relationship between domains.
 
-**Unable to see the data gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
+#### Unable to see the data gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service
 
-Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list can see the data source listed in the Analysis Services list.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gatewaycheck with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list can see the data source listed in the Analysis Services list.
 
 ### Error: You don't have any gateway installed or configured for the data sources in this dataset
 
@@ -167,7 +167,7 @@ Ensure that you have added one or more data sources to the gateway, as described
 
 ## Datasets
 
-### Error: There is not enough space for this row.
+### Error: There is not enough space for this row
 
 This occurs if you have a single row greater than 4 MB in size. You need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
@@ -179,7 +179,7 @@ This can occur when the certificate CN is for the servers fully qualified domain
 
 This could be because of a few different scenarios.
 
-1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
+1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case-sensitive.
 2. Your account is not listed in the **Users** tab of the data source within the gateway configuration. You need to get with the administrator of the gateway to be added to that list.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
@@ -196,7 +196,7 @@ This is usually caused by one of the following.
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the On-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the On-premises data gateway, needs to use an IP Address as well.
 2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing On-premises data gateway.
 
-### Error: Data source access error. Please contact the gateway administrator.
+### Error: Data source access error. Please contact the gateway administrator
 
 If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
 
@@ -227,7 +227,7 @@ You can find the data center region you are in by doing the following:
 2. Select **About Power BI**.
 3. Your data region is listed in **Your data is stored in**.
 
-    ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
+    ![Data region](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
@@ -402,7 +402,7 @@ The network ports test is a tool to check if your gateway can access the correct
 
 #### Start a new test
 
-To run a new network ports test, in the On-premises data gateway user interfa.
+To run a new network ports test, in the On-premises data gateway user interface.
 
 ![Start Port Test](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
 
@@ -443,18 +443,20 @@ Follow these steps to solve the issue:
 The FailedToImpersonateUserException happens if you are not able to impersonate on behalf of another user. This could also happen if the account you are trying to impersonate is from another domain than the one the gateway service domain is on (this is a limitation).
 
 **Solution**
+
 * Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
 * Ensure that the userid it's trying to impersonate is a valid AD Account
 
 ### General error; 1033 error while parsing protocol
 
-You get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
+You get the 1033 error when your external ID that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
 
 ```
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
 ```
 
 **Solution**
+
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in AD (user alias). If this is not correct, you see the 1033 error.
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
@@ -482,6 +484,7 @@ You get the 1033 error when your external Id that is configured in SAP HANA is n
 You get the -10709 Connection failed error message if your delegation is not configured correctly in AD.
 
 **Solution**
+
 * Ensure you have the SAP Hana server on the delegation tab in AD for the gateway service account
 
    ![delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
