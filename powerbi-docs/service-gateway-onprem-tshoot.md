@@ -139,7 +139,7 @@ Domains with Pre-Windows 2000 compatibility access have the TGGAU attribute enab
 You can confirm this by doing the following.
 
 1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this reproduces the error.
-2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is a tool normally found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
+2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is a tool generally found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
 
@@ -159,7 +159,7 @@ You need to work with your domain administrators to verify the trust relationshi
 
 #### Unable to see the data gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service
 
-Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gatewaycheck with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list can see the data source listed in the Analysis Services list.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list can see the data source listed in the Analysis Services list.
 
 ### Error: You don't have any gateway installed or configured for the data sources in this dataset
 
@@ -189,7 +189,7 @@ The exact limitation is 10 GB of uncompressed data per table. If you are hitting
 
 ## Reports
 
-### Report could not access the data source because you do not have access to our data source via an On-premises data gateway.
+### Report could not access the data source because you do not have access to our data source via an On-premises data gateway
 
 This is usually caused by one of the following.
 
@@ -249,8 +249,8 @@ There are general groupings of these counters.
 | --- | --- |
 | ADO.NET |This is used for any DirectQuery connection. |
 | ADOMD |This is used for Analysis Services 2014 and earlier. |
-| OLEDB |This is used by certain data sources. This includes SAP HANA and Analysis Service 2016 or later. |
-| Mashup |This includes any imported data source. If you are scheduling refresh or doing an on-demand refresh, it will go through the mashup engine. |
+| OLEDB |Certain data sources use this. This includes SAP HANA and Analysis Service 2016 or later. |
+| Mashup |This includes any imported data source. If you are scheduling refresh or doing an on-demand refresh, it goes through the mashup engine. |
 
 Here is a listing of the available performance counters.
 
@@ -334,12 +334,12 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 
 ### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 
-Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premises Gateway application.
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting begins to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premises Gateway application.
 
    ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
+> Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you need to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
@@ -394,7 +394,7 @@ The results look similar to the following. The difference is with TcpTestSucceed
 
 If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#ports)
 
-The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you will want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
+The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
 
 ### Network Ports Test
 
@@ -422,7 +422,7 @@ The test results list all the servers, ports, and IP addresses that are required
 
 ## Kerberos
 
-If the underlying database server and On-premises data gateway are not configured properly for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
+If the underlying database server and On-premises data gateway are not appropriately configured for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
 
 ### ImpersonationLevel
 
@@ -447,7 +447,7 @@ The FailedToImpersonateUserException happens if you are not able to impersonate 
 * Verify that the configuration is correct as per the steps in the ImpersonationLevel section above
 * Ensure that the userid it's trying to impersonate is a valid AD Account
 
-### General error; 1033 error while parsing protocol
+### General error; 1033 error while parsing the protocol
 
 You get the 1033 error when your external ID that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
 
