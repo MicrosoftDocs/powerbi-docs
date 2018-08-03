@@ -277,7 +277,7 @@ For more information about how to manage Premium settings, see [Manage Power BI 
 
 ### Power BI Embedded settings
 
-The Power BI Embedded settings tab allows you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you can [manage embedded capacities in Azure](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.PowerBIDedicated%2Fcapacities) from **the Azure Portal**.
+The Power BI Embedded settings tab allows you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you can [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
 
 ![Power BI Embedded admin settings](media/service-admin-portal/manage-pbie-capacities-01.png)
 
