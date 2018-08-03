@@ -9,7 +9,7 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mblythe
-LocalizationGroup: Gateways
+LocalizationGroup: Gateways 
 
 ---
 # Troubleshooting the On-premises data gateway

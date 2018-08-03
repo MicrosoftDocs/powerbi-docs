@@ -9,7 +9,7 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mblythe
-LocalizationGroup: Gateways
+LocalizationGroup: Gateways 
 ---
 
 # Use data connectors with on-premises data gateway
@@ -22,26 +22,26 @@ When you build reports in Power BI Desktop that use custom data connectors, you 
 
 ### Here is a guide on how to enable and use this capability
 
-When you install the July 2018 version of the on-premises data gateway or a later version, you’ll see a “Connectors” tab in the configurator with an option to choose a folder to load the custom connectors from. Make sure you pick a folder that can be accessed by the user running the gateway service (which is “NT SERVICE\PBIEgwService” by default). The gateway will automatically load the custom connector files located in that folder and you should see them in the list of the data connectors.
+When you install the July 2018 version of the On-premises data gateway or a later version, you’ll see a “Connectors” tab in the configurator with an option to choose a folder from which to load custom connectors. Make sure you pick a folder that can be accessed by the user running the gateway service (which is “NT SERVICE\PBIEgwService” by default). The gateway automatically loads the custom connector files located in that folder, and you should see them in the list of the data connectors.
 
 ![Custom connector 1](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
 If you are using the personal version of the on-premises data gateway, you should be able at this point to upload your Power BI report to the Power BI service and use the gateway to refresh it.
 
-For the enterprise version of the gateway however, you still need to create a data source for your custom connector. In the gateway settings page in the Power BI service, you will see a new option when you select the gateway cluster to allow using custom connectors with this cluster. Make sure all gateways in the cluster are updated to the July 2018 release or later for this option to be available. Now select that option to enable using custom connectors with this cluster.
+For the enterprise version of the gateway, you still need to create a data source for your custom connector. In the gateway settings page in the Power BI service, you should see a new option when you select the gateway cluster to allow using custom connectors with this cluster. Make sure all gateways in the cluster have the July 2018 update release or later for this option to be available. Now select that option to enable using custom connectors with this cluster.
 
 ![Custom connector 2](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
 
-When this option is enabled, you will now see your custom connectors as available data sources that you can create under this gateway cluster. Once a data source is created for your new custom connector, you can now refresh Power BI reports using that custom connector in the Power BI service.
+When this option is enabled, you now see your custom connectors as available data sources that you can create under this gateway cluster. Once you create a data source your new custom connector, you can now refresh Power BI reports using that custom connector in the Power BI service.
 
 ![Custom connector 3](media/service-gateway-custom-connectors/gateway-onprem-customconnector3.png)
 
-### A few important things to note
+### Considerations and limitations
 
-- Make sure the folder you create is accessible to the background gateway service. Typically, folders under your user’s Windows folder or system folders won’t be accessible. The gateway configurator will show a message if the folder is not accessible (this doesn't apply for the personal version of the gateway)
-- For custom connectors to work with the on-premises data gateway, they need to implement a “TestConnection” section in the custom connector’s code. This is not required when using custom connectors with Power BI Desktop, so you could have one that works with the Desktop but not with the gateway for this reason. Please refer to [this documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) on how to implement a TestConnection section.
-- Custom connectors with OAuth authentication are not yet supported in this release. The OAuth support will be coming soon via a service update.
-- Custom connectors using Direct Query are also not supported yet. This support should arrive with a later update.
+* Make sure the folder you create is accessible to the background gateway service. Typically, folders under your user’s Windows folder or system folders won’t be accessible. The gateway configurator shows a message if the folder is not accessible (this doesn't apply for the personal version of the gateway)
+* For custom connectors to work with the on-premises data gateway, they need to implement a “TestConnection” section in the custom connector’s code. This is not required when using custom connectors with Power BI Desktop, so you could have one that works with the Desktop but not with the gateway for this reason. Please refer to [this documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) on how to implement a TestConnection section.
+* Custom connectors with OAuth authentication are not supported.
+* Custom connectors using Direct Query are not supported.
 
 ## Next steps
 
