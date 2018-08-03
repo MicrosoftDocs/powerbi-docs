@@ -36,6 +36,12 @@ When administrators use the **Manage gateways** menu item, found under the gear 
 
 All new **Scheduled Refresh** requests and DirectQuery operations are automatically routed ot the primary instance of a given gateway cluster. If the primary gateway instance is not online, the request is routed to another gateway instance in the cluster.
 
+## Distribute requests traffic across all gateways in a cluster
+
+You can choose to allow traffic to be distributed across all gateways in a cluster. In the **Manage gateways** page in the **Power BI service**, when you click on a gateway cluster in the list on the left navigation tree, you can enable the option to "Distribute requests across all active gateways in this cluster"
+
+![](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+
 ## PowerShell support for gateway clusters
 
 PowerShell scripts are available in the On-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work properly. The PowerShell scripts let users perform the following operations:

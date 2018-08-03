@@ -14,6 +14,7 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 ---
 # Troubleshooting the On-premises data gateway
+
 This article discusses some common issues you may encounter when using the **On-premises data gateway**.
 
 <!-- Shared Community & support links Include -->
@@ -23,7 +24,9 @@ This article discusses some common issues you may encounter when using the **On-
 [!INCLUDE [gateway-onprem-tshoot-install-include](./includes/gateway-onprem-tshoot-install-include.md)]
 
 ## Configuration
+
 ### How to restart the gateway
+
 The gateway runs as a Windows service, so you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
 
 * To stop the service, run this command:
@@ -38,22 +41,27 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
     '''
 
 ### Error: Failed to create gateway. Please try again.
+
 All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
 ### Error: Failed to update gateway details.  Please try again.
+
 Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
+
 At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Script error during sign into Power BI
+
 You may receive a script error when signing into Power BI as part of the On-premises data gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
 
 [MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
 ### Gateway configuration failed with a null reference exception
+
 You may encounter an error similar to the following.
 
         Failed to update gateway details.  Please try again.
@@ -76,6 +84,7 @@ To correct this, do the following.
 4. Optionally apply the recovery key to restore an existing gateway.
 
 ### Support for TLS 1.1/1.2
+
 With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 will end, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
 It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
@@ -89,7 +98,9 @@ It's important to note that TLS 1.0 is still supported by the On-premises data g
 > 
 
 ## Data sources
+
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
+
 Within **Show details**, it should display the error message received from the data source. For SQL Server, you should see something like the following.
 
     Login failed for user 'username'.
@@ -104,6 +115,7 @@ Within **Show details**, it should display the error message received from the d
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
 ### Error: Unable to Connect. Details: "Unknown error in data gateway"
+
 This error could occur for different reasons. Be sure to validate that you can connect to the data source from the machine hosting the gateway. This could be the result of the server not being accessible.
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownError**.
@@ -111,6 +123,7 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 You can also look in the Event Logs > **Applications and Services Logs** > **On-premises data gateway Service** for more details.
 
 ### Error: We encountered an error while trying to connect to <server>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
+
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
@@ -151,16 +164,21 @@ You will need to work with your domain administrators to verify the trust relati
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
 ### Error: You don't have any gateway installed or configured for the data sources in this dataset
+
 Ensure that you have added one or more data sources to the gateway, as described in [Add a data source](service-gateway-manage.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage gateways**, try clearing your browser cache or signing out of the service then signing back in.
 
 ## Datasets
+
 ### Error: There is not enough space for this row.
+
 This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
 ### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate.
+
 This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the netbios name for the server. This will cause a mismatch for the certificate. To resolve this issue, you will need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
 ### I don't see the On-premises data gateway persent when configuring scheduled refresh.
+
 This could be because of a few different scenarios.
 
 1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
@@ -168,16 +186,20 @@ This could be because of a few different scenarios.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
 ### Error: The received uncompressed data on the gateway client has exceeded limit.
+
 The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.
 
 ## Reports
+
 ### Report could not access the data source because you do not have access to our data source via an On-premises data gateway.
+
 This is usually caused by one of the following.
 
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the On-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the On-premises data gateway, needs to use an IP Address as well.
 2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, On-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
+
 If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid, or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
 
 To confirm this, you can do the following.
@@ -212,9 +234,11 @@ You can find the data center region you are in by doing the following:
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
 ## Performance
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### Performance Counters
+
 There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helpful to understanding if we have a large load of activity and may need to make a new gateway. These counters will not reflect how long something takes.
 
 These counters can be access through the Windows Performance Monitor tool.
@@ -263,11 +287,13 @@ Here is a listing of the available performance counters.
 | # of single result set OLEDB queries failed / sec |Number of single resultset OLEDB failed queries executed per second. |
 
 ## Reviewing slow performing queries
+
 You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
 
 You will need to modify two configuration files to determine the duration of a query.
 
 ### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file, change the `EmitQueryTraces` value from `False` to `True`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Enabling `EmitQueryTraces` will begin to log queries that are sent from the gateway to a data source.
 
 > [!IMPORTANT]
@@ -311,6 +337,7 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
 ### Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TracingVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration. You can also enable verbose entries by enabling the "Additional Logging" button in the On-Premissese Gateway application.
 
    ![additional logging](media/service-gateway-onprem-tshoot/additional-logging.png)
@@ -348,8 +375,56 @@ To determine the time it took to query the data source, you can do the following
 
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent is a verbose entry. This entry will not be logged unless TraceVerbosity is at level 5.
-   > 
-   > 
+
+## Firewall or Proxy
+
+For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI gateways](../service-gateway-proxy.md).
+
+You can test to see if your firewall, or proxy, may be blocking connections by running [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) from a PowerShell prompt. This will test connectivity to the Azure Service Bus. This only tests network connectivity and doesn't have anything to do with the cloud server service or the gateway. It helps to determine if your machine can actually get out to the internet.
+
+    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+
+> [!NOTE]
+> Test-NetConnection is only available on Windows Server 2012 R2 and later. It is also available on Windows 8.1 and later. On earlier OS versions, you can use Telnet to test port connectivity.
+
+The results should look similar to the following. The difference will be with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
+
+    ComputerName           : watchdog.servicebus.windows.net
+    RemoteAddress          : 70.37.104.240
+    RemotePort             : 5672
+    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+    SourceAddress          : 10.120.60.105
+    PingSucceeded          : False
+    PingReplyDetails (RTT) : 0 ms
+    TcpTestSucceeded       : True
+
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](../service-gateway-onprem.md#ports)
+
+The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you will want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
+
+### Network Ports Test
+
+The network ports test is a tool to check if your gateway can access the correct ports for all remote servers that are required by your gateway for transferring data. If the network ports test fails to connect to any of the ports, your gateway may experience network issues. If you are currently experiencing network issues with your gateway, run a network ports test to ensure that you have the optimal network environment.  
+
+#### Start a new test
+
+To run a new network ports test, in the On-premises data gateway user interface, select Diagnostics, and then select the Start new test link near the bottom of the page, as shown in the following image. To start a new network ports test, you must be signed into the On-premises data gateway user interface
+
+![Start Port Test](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
+
+When executing the network ports test, your gateway will retrieve a list of ports and servers from Azure Service Bus and then it will attempt to connect to all the servers and ports. When the Start new test link reappears, the network ports test has finished executing.  
+
+#### Test results
+
+A summary of the test can be seen below the Start new test link as Recent test results. The two results are Completed (Succeeded) and Completed (Failed, see last test results). If the test succeeded, then your gateway successfully connected to all the required ports. If the test failed, then your network environment may be blocking these required ports and servers. 
+
+![Port test results](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result.png)
+
+To view the results of the last completed test, select the Open last completed test results link, as seen below. The test results will open in Windows’ default text editor.  
+
+The test results list all the servers, ports, and IP addresses that are required by your gateway. If the test results display Closed for any ports as shown below, ensure that your network environment is not blocking the connection. You may need to contact your network administrator to open the required ports.
+
+![Port test result file](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result-file.png)
 
 ## Kerberos
 
@@ -421,6 +496,7 @@ You will get the -10709 Connection failed error message if your delegation is no
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
 ### Refresh History
+
 When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
