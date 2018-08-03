@@ -4,20 +4,19 @@ description: You can create clusters of On-premises data gateways to provide hig
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.author: mblythe
-
 LocalizationGroup: Gateways
 ---
+
 # High availability clusters for On-premises data gateway
+
 You can create **high availability clusters** of **On-premises data gateway** installations, to ensure your organization can access on-premises data resources used in Power BI reports and dashboards. Such clusters allow gateway administrators to group gateways to avoid single points of failure in accessing on-premises data resources. The Power BI service always uses the primary gateway in the cluster, unless it’s not available. In that case, the service switches to the next gateway in the cluster, and so on.
 
 This article describes the steps you can take to create a high availability cluster of On-premises data gateways, and shares best practices when setting them up. High availability gateway clusters require the November 2017 update to On-premises data gateway, or later.
-
 
 ## Setting up high availability clusters of gateways
 
@@ -26,7 +25,6 @@ During the **On-premises data gateway** installation process, you can specify wh
 ![](media/service-gateway-high-availability-clusters/gateway_clusters_01.png)
 
 In order to add a gateway to an existing cluster, you must provide the *Recovery key* for the primary gateway instance for the cluster you want the new gateway to join. The primary gateway for the cluster must be running the gateway update from November 2017 or later. 
-
 
 ## Managing a gateway cluster
 
@@ -76,7 +74,6 @@ Once those steps are complete, you can use the commands in the following table t
 | *Set-OnPremisesDataGateway* | Lets you set property values for a given gateway within a cluster, including the ability to Enable/Disable a specific gateway instance  | *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command) *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
 | *Get-OnPremisesDataGatewayStatus* | Lets you retrieve the status for a given gateway instance within a cluster  | *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
 | *Remove-OnPremisesDataGateway*  | Lets you remove a gateway instance from a cluster - note that the primary gateway in the cluster cannot be removed until all other gateways in the cluster have been removed.| *-ClusterObjectID xyz* (*xyz* should be replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (*abc* should be replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
-
 
 ## Next steps
 
