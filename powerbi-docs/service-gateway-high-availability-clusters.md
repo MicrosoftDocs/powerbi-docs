@@ -38,7 +38,7 @@ All new **Scheduled Refresh** requests and DirectQuery operations are automatica
 
 You can choose to allow traffic to be distributed across all gateways in a cluster. In the **Manage gateways** page in the **Power BI service**, when you click on a gateway cluster in the list on the left navigation tree, you can enable the option to "Distribute requests across all active gateways in this cluster."
 
-![](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+![Load balance](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
 
 ## PowerShell support for gateway clusters
 

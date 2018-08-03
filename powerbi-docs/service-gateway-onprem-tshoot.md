@@ -41,13 +41,13 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
 
 ### Error: Failed to create a gateway. Please try again
 
-All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
+All of the details are available, but the call to the Power BI service returned an error. The error and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
 ### Error: Failed to update gateway details.  Please try again
 
-Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
+Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Alternatively, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
 
@@ -93,8 +93,6 @@ It's important to note that TLS 1.0 is still supported by the On-premises data g
 
 > [!NOTE]
 > Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-> 
-> 
 
 ## Data sources
 
@@ -175,7 +173,7 @@ This occurs if you have a single row greater than 4 MB in size. You need to dete
 
 ### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate
 
-This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the NetBIOS name for the server. This causes a mismatch for the certificate. To resolve this issue, you need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
+This can occur when the certificate CN is for the servers fully qualified domain name (FQDN), but you only supplied the NetBIOS name for the server. This causes a mismatch for the certificate. To resolve this issue, you need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
 
 ### I don't see the On-premises data gateway present when configuring scheduled refresh
 
@@ -187,7 +185,7 @@ This could be because of a few different scenarios.
 
 ### Error: The received uncompressed data on the gateway client has exceeded the limit
 
-The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) helps.
+The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly constant, long string values and instead using a normalized key or removing the column (if not in use) helps.
 
 ## Reports
 
@@ -196,11 +194,11 @@ The exact limitation is 10 GB of uncompressed data per table. If you are hitting
 This is usually caused by one of the following.
 
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the On-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the On-premises data gateway, needs to use an IP Address as well.
-2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, On-premises data gateway.
+2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing On-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
 
-If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid, or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
+If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
 
 To confirm this, you can do the following.
 
@@ -218,7 +216,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map usernames](service-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
+If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map usernames](service-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin or local Active Directory admin, to get your UPN changed.
 
 <!-- Shared Troubleshooting Firewall/Proxy Include -->
 [!INCLUDE [gateway-onprem-tshoot-firewall-include](./includes/gateway-onprem-tshoot-firewall-include.md)]
@@ -276,15 +274,15 @@ Here is a listing of the available performance counters.
 | # of Mashup open connection failed / sec |Number of Mashup open connection actions failed per second. |
 | # of Mashup queries executed / sec |Number of Mashup queries executed per second (succeeded or failed). |
 | # of Mashup queries failed / sec |Number of Mashup failed queries executed per second |
-| # of multiple result set OLEDB queries failed / sec |Number of multiple resultset OLEDB failed queries executed per second. |
-| # of OLEDB multiple resultset queries executed / sec |Number of OLEDB multiple resultset queries executed per second (succeeded or failed). |
+| # of multiple result set OLEDB queries failed / sec |Number of multiple result set OLEDB failed queries executed per second. |
+| # of OLEDB multiple result set queries executed / sec |Number of OLEDB multiple result set queries executed per second (succeeded or failed). |
 | # of OLEDB open connection executed / sec |Number of OLEDB open connection actions executed per second (succeeded or failed). |
 | # of OLEDB open connection failed / sec |Number of OLEDB open connection actions failed per second. |
-| # of OLEDB queries executed / sec |Number of OLEDB multiple resultset queries executed per second (succeeded or failed). |
-| # of OLEDB queries failed / sec |Number of OLEDB multiple resultset failed queries executed per second. |
-| # of OLEDB single resultset queries executed / sec |Number of OLEDB single resultset queries executed per second (succeeded or failed). |
+| # of OLEDB queries executed / sec |Number of OLEDB multiple result set queries executed per second (succeeded or failed). |
+| # of OLEDB queries failed / sec |Number of OLEDB multiple result set failed queries executed per second. |
+| # of OLEDB single result set queries executed / sec |Number of OLEDB single result set queries executed per second (succeeded or failed). |
 | # of queries failed / sec |Number of failed queries executed per second. |
-| # of single result set OLEDB queries failed / sec |Number of single resultset OLEDB failed queries executed per second. |
+| # of single result set OLEDB queries failed / sec |Number of single result set OLEDB failed queries executed per second. |
 
 ## Reviewing slow performing queries
 
@@ -298,8 +296,6 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file
 
 > [!IMPORTANT]
 > Enabling EmitQueryTraces could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you can need to set EmitQueryTraces to False. It is not recommended to leave this setting enabled long term.
-> 
-> 
 
 ```
 <setting name="EmitQueryTraces" serializeAs="String">
@@ -344,8 +340,6 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 
 > [!IMPORTANT]
 > Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
-> 
-> 
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
@@ -398,7 +392,7 @@ The results look similar to the following. The difference is with TcpTestSucceed
     PingReplyDetails (RTT) : 0 ms
     TcpTestSucceeded       : True
 
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](../service-gateway-onprem.md#ports)
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#ports)
 
 The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you will want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
 
@@ -408,7 +402,7 @@ The network ports test is a tool to check if your gateway can access the correct
 
 #### Start a new test
 
-To run a new network ports test, in the On-premises data gateway user interface, select Diagnostics, and then select the Start new test link near the bottom of the page, as shown in the following image. To start a new network ports test, you must be signed into the On-premises data gateway user interface
+To run a new network ports test, in the On-premises data gateway user interfa.
 
 ![Start Port Test](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
 
@@ -457,7 +451,7 @@ The FailedToImpersonateUserException happens if you are not able to impersonate 
 You get the 1033 error when your external Id that is configured in SAP HANA is not matching the login if the user is impersonated using the UPN (alias@domain.com). In the logs you see the “Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com' at the top of the error logs as seen below.”
 
 ```
-[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
 ```
 
 **Solution**
