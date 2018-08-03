@@ -277,13 +277,13 @@ For more information about how to manage Premium settings, see [Manage Power BI 
 
 ### Power BI Embedded settings
 
-### Power BI Embedded
+The Power BI Embedded settings tab allows you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer.  since the A SKUs can only be purchased in Azure, you can link to **Azure** to manage your capacities from **the Azure Portal**.
 
-The Power BI Embedded settings tab allows you to manage Power BI Embedded (A SKU) capacities that have been purchased for your customer.  If a user does not have any permissions, If a user does not have any permissions, the following message appears.
+![Power BI Embedded admin settings](media/service-admin-portal/manage-pbie-capacities-01.png)
 
-![Powre BI Embedded admin settings](media/service-admin-portal/power-bi-embedded-capacity-admin-settings.png)
+![Power BI Embedded admin settings details](media/service-admin-portal/manage-pbie-capacities-02.png)
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [Manage Power BI Embedded capacities](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
+For more information about how to manage Power BI Embedded (A SKU) settings, see [Manage Power BI Embedded capacities](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
 ## Embed codes
 
