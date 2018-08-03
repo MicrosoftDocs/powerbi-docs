@@ -41,13 +41,13 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
 
 ### Error: Failed to create a gateway. Please try again
 
-All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
+All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
 ### Error: Failed to update gateway details.  Please try again
 
-Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
+Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
 
@@ -84,7 +84,7 @@ To correct this, do the following.
 
 ### Support for TLS 1.1/1.2
 
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 ended, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 ended, so by then, you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
 It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
@@ -104,7 +104,7 @@ Within **Show details**, it displays the error message received from the data so
 
     Login failed for user 'username'.
 
-Verify that you have the correct username and password. Also verify that those credentials can successfully connect to the data source. Make sure the account being used matches the **Authentication Method**.
+Verify that you have the correct username and password. Also, verify that those credentials can successfully connect to the data source. Make sure the account being used matches the **Authentication Method**.
 
 ### Error: Unable to Connect. Details: "Cannot connect to the database"
 
@@ -368,7 +368,7 @@ To determine the time it took to query the data source, you can do the following
 
 1. Open the gateway log.
 2. Search for an [Activity Type](#activities) to find the query. An example of this would be MGEQ.
-3. Make note of the second GUID as this is the request id.
+3. Make a note of the second GUID as this is the request id.
 4. Continue to search for MGEQ until you find the FireActivityCompletedSuccessfullyEvent entry with the duration. You can verify the entry has the same request id. Duration is in milliseconds.
 
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
@@ -380,7 +380,7 @@ To determine the time it took to query the data source, you can do the following
 
 For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md).
 
-You can test to see if your firewall, or proxy, may be blocking connections by running [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) from a PowerShell prompt. This tests connectivity to the Azure Service Bus. This only tests network connectivity and doesn't have anything to do with the cloud server service or the gateway. It helps to determine if your machine can actually get out to the internet.
+You can test to see if your firewall, or proxy, may be blocking connections by running [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) from a PowerShell prompt. This tests connectivity to the Azure Service Bus. This only tests network connectivity and don't have anything to do with the cloud server service or the gateway. It helps to determine if your machine can actually get out to the internet.
 
     Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
 
@@ -441,7 +441,7 @@ The ImpersonationLevel is related to the SPN setup or the local policy setting.
 **Solution**
 
 Follow these steps to solve the issue:
-1. Setup a SPN for the On-Premises Gateway
+1. Setup an SPN for the On-Premises Gateway
 2. Setup constrained delegation in your Active Directory (AD)
 
 ### FailedToImpersonateUserException: Failed to create windows identity for user userid
@@ -497,7 +497,7 @@ You get the -10709 Connection failed error message if your delegation is not con
 
 ### Refresh History
 
-When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you need to create a support request. You can view both scheduled, as well as on-demand, refreshes. Here is how you can get to the **Refresh History**.
+When using the gateway for a scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you need to create a support request. You can view both scheduled, as well as on-demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
 
