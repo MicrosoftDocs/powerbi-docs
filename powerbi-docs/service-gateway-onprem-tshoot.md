@@ -4,14 +4,13 @@ description: This article provides ways for you to troubleshoot issues you are h
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/06/2018
 ms.author: mblythe
-
 LocalizationGroup: Gateways
+
 ---
 # Troubleshooting the On-premises data gateway
 
@@ -378,7 +377,7 @@ To determine the time it took to query the data source, you can do the following
 
 ## Firewall or Proxy
 
-For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI gateways](../service-gateway-proxy.md).
+For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md).
 
 You can test to see if your firewall, or proxy, may be blocking connections by running [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) from a PowerShell prompt. This will test connectivity to the Azure Service Bus. This only tests network connectivity and doesn't have anything to do with the cloud server service or the gateway. It helps to determine if your machine can actually get out to the internet.
 

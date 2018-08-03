@@ -4,18 +4,17 @@ description: You can use custom data connectors with on-premises data gateway.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/30/2018
+ms.date: 08/06/2018
 ms.author: mblythe
-
 LocalizationGroup: Gateways
 ---
+
 # Use data connectors with on-premises data gateway
 
-Data Connectors for Power BI enable you to connect to and access data from an application, service, or data source. You can develop custom data connectors and use them in Power BI Desktop. 
+Data Connectors for Power BI enable you to connect to and access data from an application, service, or data source. You can develop custom data connectors and use them in Power BI Desktop.
 
 To learn more about how to develop custom data connectors for Power BI, check out our documentation [here](http://aka.ms/dataconnectors).
 
@@ -25,17 +24,17 @@ When you build reports in Power BI Desktop that use custom data connectors, you 
 
 When you install the July 2018 version of the on-premises data gateway or a later version, you’ll see a “Connectors” tab in the configurator with an option to choose a folder to load the custom connectors from. Make sure you pick a folder that can be accessed by the user running the gateway service (which is “NT SERVICE\PBIEgwService” by default). The gateway will automatically load the custom connector files located in that folder and you should see them in the list of the data connectors.
 
-![](gateway-onprem-customconnector1.png)
+![Custom connector 1](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
 If you are using the personal version of the on-premises data gateway, you should be able at this point to upload your Power BI report to the Power BI service and use the gateway to refresh it.
 
 For the enterprise version of the gateway however, you still need to create a data source for your custom connector. In the gateway settings page in the Power BI service, you will see a new option when you select the gateway cluster to allow using custom connectors with this cluster. Make sure all gateways in the cluster are updated to the July 2018 release or later for this option to be available. Now select that option to enable using custom connectors with this cluster.
 
-![](gateway-onprem-customconnector2.png)
+![Custom connector 2](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
 
 When this option is enabled, you will now see your custom connectors as available data sources that you can create under this gateway cluster. Once a data source is created for your new custom connector, you can now refresh Power BI reports using that custom connector in the Power BI service.
 
-![](gateway-onprem-customconnector3.png)
+![Custom connector 3](media/service-gateway-custom-connectors/gateway-onprem-customconnector3.png)
 
 ### A few important things to note
 
@@ -46,14 +45,14 @@ When this option is enabled, you will now see your custom connectors as availabl
 
 ## Next steps
 
--   [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
--   [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
--   [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
--   [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
--   [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
--   [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
--   [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
--   [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
--   [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+* [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
+* [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
+* [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
+* [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
+* [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
+* [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
+* [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
+* [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
