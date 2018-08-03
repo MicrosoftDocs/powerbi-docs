@@ -283,7 +283,7 @@ The Power BI Embedded settings tab allows you to view your Power BI Embedded (A 
 
 ![Power BI Embedded admin settings details](media/service-admin-portal/manage-pbie-capacities-02.png)
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [Manage Power BI Embedded capacities](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
