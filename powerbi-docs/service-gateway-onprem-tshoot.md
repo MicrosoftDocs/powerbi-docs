@@ -33,21 +33,22 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
     '''
     net stop PBIEgwService
     '''
+
 * To start the service, run this command:
 
     '''
     net start PBIEgwService
     '''
 
-### Error: Failed to create a gateway. Please try again
+### Error: Failed to create a gateway. Try again
 
-All of the details are available, but the call to the Power BI service returned an error. The error and an activity ID are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
+All of the details are available, but the call to the Power BI service returned an error. The error and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](service-gateway-proxy.md)
 
-### Error: Failed to update gateway details.  Please try again
+### Error: Failed to update gateway details. Please try again
 
-Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Alternatively, a symmetric key generation failed. The inner exception is displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
+Information was received from the Power BI service to the gateway. The information was passed onto the local windows service, but it failed to return. Alternatively, a symmetric key generation failed. The inner exception is displayed under **Show details**. To get more details, you can collect and review the logs mentioned below.
 
 ### Error: Power BI service reported local gateway as unreachable. Restart the gateway and try again
 
