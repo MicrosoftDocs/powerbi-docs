@@ -8,17 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
 # Measures in Power BI Desktop
+
 **Power BI Desktop** helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 
 Measures are used in some of the most common data analysis; for example, sums, averages, minimum or maximum values, counts, or more advanced calculations you create yourself using a DAX formula. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look.
 
 ## Understanding measures
+
 In **Power BI Desktop**, measures are created and used in **Report View** or **Data View**. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
@@ -29,6 +31,7 @@ In **Power BI Desktop**, measures are created and used in **Report View** or **D
 > 
 
 ## Data Analysis Expressions
+
 Measures calculate a result from an expression formula. When you create your own measures, you’ll use the [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating measures to calculate results for just about any data analysis need.
 
 DAX formulas are a lot like Excel formulas. DAX even has many of the same functions like DATE, SUM, and LEFT. But, DAX’s functions are meant to work with relational data like we have in Power BI Desktop.
@@ -49,6 +52,14 @@ Jan then drags her new Projected Sales measure into the chart.
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
 Very quickly and with minimal effort, Jan now has a measure to calculate projected sales. She can  further analyze her projections by filtering on specific resellers or by adding other fields to her report.
+
+## Data categories for measures
+
+You can also pick data categories for measures. 
+
+Among other things, this enables you to use measures to dynamically create URLs, and mark the data catagory as a Web URL. 
+
+You could create tables that displays the measures as Web URLs, and be able to click on the URL that's created based on your selection. This is especially useful when you want to link to other Power BI reports with [URL filter parameters](service-url-filters.md).
 
 ## Learn more
 We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md), where you can download a sample file and get step-by-step lessons on how to create more measures.  

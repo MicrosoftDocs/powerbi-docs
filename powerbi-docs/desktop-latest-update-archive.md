@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,10 +30,66 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
+## July 2018 Update (2.60.5169.3201)
+
+July's big updates were worthy of a fireworks show in their own right, with long-requested data and reporting features that launch your visuals sky-high, and burst with arcing displays of colorful insights.
+
+The following updates are new to **Power BI Desktop** in July:
+
+### Modeling
+
+* Composite models (Preview)  [[video]](https://youtu.be/Mtig3rmIUe0?t=15s)  [[article]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+* Many-to-many relationships (Preview) (associated with composite models)   [[video]](https://youtu.be/Mtig3rmIUe0?t=4m53s)  [[article]](desktop-many-to-many-relationships.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+* Storage mode  (Preview) (associated with composite models)   [[video]](https://youtu.be/Mtig3rmIUe0?t=15s)  [[article]](desktop-storage-mode.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+
+
+### Reporting
+
+* New visual header with more flexibility and formatting  [[video]](https://youtu.be/Mtig3rmIUe0?t=8m26s)  [[article]](desktop-visual-elements-for-reports.md#using-improved-visual-headers-in-power-bi-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visualHeader) 
+* Wallpaper formatting  [[video]](https://youtu.be/Mtig3rmIUe0?t=14m19s)  [[article]](desktop-visual-elements-for-reports.md#using-wallpaper-in-power-bi-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#wallpaper) 
+* Theming update - more visual and page control (Preview)  [[video]](https://youtu.be/Mtig3rmIUe0?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#theme) 
+* Tooltips for table and matrix  [[video]](https://youtu.be/Mtig3rmIUe0?t=22m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#tableTooltips) 
+* Turn tooltips off for visuals  [[video]](https://youtu.be/Mtig3rmIUe0?t=22m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#tooltips) 
+* Slicer accessibility  [[video]](https://youtu.be/Mtig3rmIUe0?t=27m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#slicerAccessibility) 
+* Formatting pane improvements  [[video]](https://youtu.be/Mtig3rmIUe0?t=30m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#formattingPane) 
+* Stepped line support for line and combo charts  [[video]](https://youtu.be/Mtig3rmIUe0?t=32m46s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#steppedLine) 
+* Turn off combo chart data labels for individual series  [[video]](https://youtu.be/Mtig3rmIUe0?t=34m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#comboDataLabels) 
+* Sorting experience improvement  [[video]](https://youtu.be/Mtig3rmIUe0?t=35m44s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#sorting) 
+
+### Analytics
+
+* Distribution factor insights  [[video]](https://youtu.be/Mtig3rmIUe0?t=37m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
+
+### Custom visuals
+
+* Power BI certified category  [[video]](https://youtu.be/Mtig3rmIUe0?t=41m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#certifiedVisuals) 
+* Disabling specific organizational visuals  [[video]](https://youtu.be/Mtig3rmIUe0?t=42m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#orgCustomVisuals) 
+* Four new custom visuals  [[video]](https://youtu.be/Mtig3rmIUe0?t=44m)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
+
+### Data connectivity
+
+* IBM DB2 DirectQuery connector (Preview)  [[video]](https://youtu.be/Mtig3rmIUe0?t=54m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#IBMDB2) 
+* Improvements to Web By Example connector  [[video]](https://youtu.be/Mtig3rmIUe0?t=54m53s)  [[article]](desktop-connect-to-web-by-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#WebByExample) 
+* SAP HANA - default values for variables in Variable Input experience [[video]](https://youtu.be/Mtig3rmIUe0?t=56m19s)  [[article]](desktop-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#SAPHANA) 
+
+
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mtig3rmIUe0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## June 2018 Update (2.59.5135.101)
 
-The sun was shining on this month's updates, with features and improvements that warmed up your reports and let you bask in the insights they provided.
+The sun was shining on June's updates, with features and improvements that warmed up your reports and let you bask in the insights they provided.
 
 The following updates were new to **Power BI Desktop** in June:
 

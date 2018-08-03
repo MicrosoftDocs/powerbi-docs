@@ -1,5 +1,5 @@
 ---
-title: Use Report Themes in Power BI Desktop (Preview)
+title: Use Report Themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use Report Themes in Power BI Desktop (Preview)
+# Use Report Themes in Power BI Desktop
 With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or any other color theme you might want to apply. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme (a few exceptions apply, described later in this article).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -22,10 +22,14 @@ Applying a **Report Theme** requires a JSON file, using a basic structure, which
 
 Beginning with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements using a JSON file, and customize (and standardize) nearly all elements using the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
 
-### Enable Report Themes in Preview
-You can try the new **Report Themes** feature beginning with the **March 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Custom Report Themes**. You'll need to restart **Power BI Desktop** after you make the selection.
+### Enable Report Themes
+As of the August 2018 release of **Power BI Desktop**, report theming is generally available and does not need to be enabled. 
+
+If you're using an earlier version of **Power BI Desktop**, you can enable it as a preview feature by selecting **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Custom Report Themes**. You'll need to restart **Power BI Desktop** after you make the selection.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## How Report Themes work
 To apply a Report Theme to a Power BI Desktop report, select **Switch Theme** button from the **Home** ribbon, then select **Import Theme** from the drop-down.
