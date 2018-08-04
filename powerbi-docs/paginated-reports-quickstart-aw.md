@@ -1,20 +1,20 @@
 ---
-title: "Quickstart: Create a paginated report and upload it to the Power BI service | Microsoft Docs"
-description: In this quickstart, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
+title: "Tutorial: Create a paginated report and upload it to the Power BI service | Microsoft Docs"
+description: In this tutorial, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: report-builder
-ms.topic: quickstart
-ms.date: 08/01/2018
+ms.topic: tutorial
+ms.date: 08/03/2018
 ms.author: maggies
 ---
 
-# Quickstart: Create a paginated report and upload it to the Power BI service
+# Tutorial: Create a paginated report and upload it to the Power BI service
 
-In this quickstart, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
+In this tutorial, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
  
@@ -24,9 +24,7 @@ These are the prerequisites for creating the paginated report:
 
 - Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
 
-- Follow the quickstart, [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
-
-- Install [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+- Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
 
 These are the prerequisites for uploading your paginated report to the Power BI service:
 
@@ -41,11 +39,11 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
      "Report Builder Get Started" image
   
-     If the **Getting Started** dialog box does not open, select **File** > **New**. The **New Report or Dataset** dialog box has most of the same contents as the **Getting Started** dialog box.  
+     If the **Getting Started** dialog box does not open, select **File** > **New**. The **New Report or Dataset** dialog box is similar to the **Getting Started** dialog box.  
   
 2.  In the left pane, verify that **New Report** is selected.  
   
-3.  In the right pane, select **Chart Wizard**, and then select **Create**.  
+3.  In the right pane, select **Table or Matrix Wizard**, and then select **Create**.  
   
 4.  In the **Choose a dataset** page, select **Create a dataset**, and then select **Next**.  
   
@@ -53,7 +51,7 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
      The **Data Source Properties** dialog box opens.  
   
-6.  You can name a data source anything you want, using characters and underscores. In the **Name** box, type **MyAzureReport**.  
+6.  You can name a data source anything you want, using characters and underscores. In the **Name** box, type **MyAzureDataSource**.  
   
 7.  In the **Select connection type** box, select **Microsoft Azure SQL Database**.  
   
@@ -61,23 +59,23 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 
 9. Go back to the Azure portal and select **SQL databases**.
 
-1. Select the Azure SQL database you created in the quickstart, [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
+1. Select the Azure SQL database you created in the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
 
-1. On the Overview tab, copy the value in the Server name box
+1. On the **Overview** tab, copy the value in the **Server name** box.
 
-1. In Report Builder in the Connection Properties dialog box, under Server name paste the server name you copied. 
+1. In Report Builder in the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
 
-1. For Log on to the server, make sure Use SQL Server Authentication is selected, then type the user name and password you created in Azure for the sample database.
+1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
-1. Uder Connect to a database, select the drop-down arrow and select the database name you created in Azure.
+1. Uder **Connect to a database**, select the drop-down arrow and select the database name you created in Azure.
 
-1. Select Test Connection. You see the Test results message that Test connection succeeded.
+1. Select **Test Connection**. You see the **Test results** message that **Test connection succeeded**.
 
-1. Select OK > OK. 
+1. Select **OK** > **OK**. 
 
 1. In the **Connection string** box, Report Builder displays the connection string you just created. 
 
-1. Select OK.
+1. Select **OK**.
   
 9. In the **Choose a connection to a data source** page, select the data source connection you just created (you see "(in this Report)") under the name > **Next**.  
 
