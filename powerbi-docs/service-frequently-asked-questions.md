@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -43,8 +43,8 @@ Just a Web browser and work email address. You can sign up with a .gov and .mil 
 ## Why do I have to sign up with my work email?
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](service-self-service-signup-for-power-bi.md).
 
-## Is government, academic and non-profit pricing available for Power BI?
-Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. 
+## Is government, academic and nonprofit pricing available for Power BI?
+Yes, nonprofit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. 
 
 ## Is Power BI available on-premises?
 The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 

@@ -33,7 +33,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
    ![](media/service-connect-to-acumatica/acumatica.png)
 4. Enter your Acumatica OData endpoint. An OData endpoint allows an external system to request data from Acumatica. Acumatica OData endpoint is formatted as follows and should us HTTPS:
    
-     https://[sitedomain]/odata/[companyname]
+     `https://[sitedomain]/odata/[companyname]`
    
    The Company Name is only required if you have a multi-company deployment. More information about finding this parameter in your Acumatica account is included below.
    
