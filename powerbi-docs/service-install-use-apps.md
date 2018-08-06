@@ -3,11 +3,11 @@ title: Install and use apps with dashboards and reports in Power BI
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
+
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 01/24/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -17,11 +17,11 @@ In Power BI, *apps* bring related dashboards and reports together, all in one pl
 
 ![Apps in Power BI](media/service-install-use-apps/power-bi-apps-left-nav.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in the app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
-Planning to author an app? See [Create workspaces with your colleagues in Power BI](service-create-distribute-apps.md) for more information.
+Planning to author an app? See [Create and publish apps in Power BI](service-create-distribute-apps.md) for more information.
 
 ## Get a new app
 You can get apps in a few different ways. The app author can install the app automatically in your Power BI account, or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
@@ -37,7 +37,7 @@ When you click the link in email the Power BI service ([https://powerbi.com](htt
 
 **On your iOS or Android mobile device** 
 
-When you click the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
+When you click the link in email on your mobile device, the app installs automatically and opens the app content list. 
 
 ![App content list on mobile device](media/service-install-use-apps/power-bi-app-index-it-spend-360.png)
 
@@ -53,11 +53,11 @@ You can also find and install any apps that you have access to from Microsoft Ap
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. You can also [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
+
+You can't save changes you make, but you can always [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report.
 
 ![Export data from a Power BI visual](media/service-install-use-apps/power-bi-service-export-data-visual.png)
-
-
 
 ## Next steps
 * [Create and publish apps in Power BI](service-create-distribute-apps.md)

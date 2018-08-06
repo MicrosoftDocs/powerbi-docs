@@ -3,19 +3,20 @@ title: Intro to organizational content packs in Power BI
 description: Read about packaging up your dashboards, reports, Excel workbooks, and datasets into organizational content packs you can share with your coworkers.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
+ms.reviewer: ajayan
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 06/07/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Intro to organizational content packs in Power BI
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We plan to deprecate organizational content packs soon, so we recommend using apps instead. Learn [more about apps](service-install-use-apps.md).
+> 
 > 
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in AppSource. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.
