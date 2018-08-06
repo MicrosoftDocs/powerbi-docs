@@ -146,6 +146,10 @@ By default, per-user data is enabled for usage metrics, and content creator acco
 
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 
+## Usage metrics in national clouds
+
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics are not available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/en-us/clouds/).
+
 ## Considerations and limitations
 Q:    I can't run usage metrics on a dashboard or report    
 A:    You can only see usage metrics for content you own or have permissions to edit.
