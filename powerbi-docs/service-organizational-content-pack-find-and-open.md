@@ -3,25 +3,25 @@ title: Find and connect to organizational content packs - Power BI
 description: Find and open an organizational content pack in Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Find and connect to an organizational content pack
-> [!NOTE]
-> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We plan to deprecate organizational content packs soon, so we recommend using apps instead. Learn [more about apps](service-install-use-apps.md).
-> 
-> 
 
 When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in AppSource.  Browse or search AppSource to find and open organizational content packs.
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
+
+> [!NOTE]
+> You can't create or install organizational content packs in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> 
 
 ## Find an organizational content pack
 [Power BI Pro](https://powerbi.microsoft.com/pricing) users can all go to AppSource, which displays content packs shared to their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  
