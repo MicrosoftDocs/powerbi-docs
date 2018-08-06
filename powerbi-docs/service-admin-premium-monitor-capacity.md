@@ -26,7 +26,7 @@ Today, the Premium Capacity admin portal provides four gauges that indicate the 
 
 The **filters applied to all pages** allow you to select a capacity, dataset and/or date range within the past week to apply the selection to all the relevant pages and tiles in this report. If nothing is selected, the report defaults to show the past week’s metrics on every capacity you own.
 
-![Filters applies to all pages](media/service-premium-monitor-capacity/filters-applied-to-all-pages.png)
+![Filters that apply to all pages](media/service-premium-monitor-capacity/filters-applied-to-all-pages.png)
 
 ## Summary
 
@@ -68,7 +68,7 @@ The **Refreshes page** table lists out the complete refreshes, success measures,
 
 ## Queries
 
-The **Queries page** table lists out the total query count, success and failure count and average/max query duration sliced by datasets in the past seven days. The bottom chart shows the queries vs. memory consumption in GB split by one-hour buckets reported in local time. The top bar charts list the top 5 datasets by an average of the max and the average time it took to complete the query. Multiple high refresh wait times spikes are indicative of the capacity running hot.
+The **Queries page** table lists out the total query count, success, and failure count and average/max query duration sliced by datasets in the past seven days. The bottom chart shows the queries vs. memory consumption in GB split by one-hour buckets reported in local time. The top bar charts list the top 5 datasets by an average of the max and the average time it took to complete the query. Multiple high refresh wait times spikes are indicative of the capacity running hot.
 
 ![Premium queries report](media/service-premium-monitor-capacity/premium-queries-report.png)
 
@@ -80,7 +80,7 @@ The **Datasets page** shows complete datasets evicted due to memory pressure by 
 
 ## System
 
-The **System page** shows the CPU High utilization (number of times exceeded 80% utilization), Direct Query/Live connections high utilization and Memory Consumption.
+The **System page** shows the CPU High utilization (number of times exceeded 80% utilization), Direct Query/Live connections high utilization, and Memory Consumption.
 
 ![Premium System report](media/service-premium-monitor-capacity/premium-system-report.png)
 
