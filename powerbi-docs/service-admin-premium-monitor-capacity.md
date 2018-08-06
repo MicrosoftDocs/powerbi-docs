@@ -89,4 +89,4 @@ The **System page** shows the CPU High utilization (number of times exceeded 80%
 Now that you have gone through the report to monitor Power BI Premium capacities, you can learn more about monitoring capacity usage for Power BI Premium capacities.
 
 > [!div class="nextstepaction"]
-> [Monitor capacity usage](.(service-admin-premium-manage.md#monitor-capacity-usage)
+> [Monitor capacity usage](service-admin-premium-manage.md#monitor-capacity-usage)
