@@ -53,7 +53,7 @@ This page summarizes:
     * Total number of failed refreshes in the past seven days
     * Total number of failed refreshes due to out of memory
     * Average refresh duration is measured in minutes, the time taken to complete the operation
-    * Average refresh wait time is measured in minutes, the average lag between the scheduled time and start of the operation.
+    * Average refresh wait-time is measured in minutes, the average lag between the scheduled time and start of the operation.
     * Total number of queries run in the past seven days
     * Total number of successful queries in the past seven days
     * Total number of failed queries in the past seven days
@@ -62,13 +62,13 @@ This page summarizes:
 
 ## Refreshes
 
-The **Refreshes page** table lists out the complete refreshes, success measures, average/max refresh wait time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait times split by one-hour buckets reported in local time. The top bar charts list the top five datasets by the total of the max time it took to complete the dataset to refresh (refresh duration), and max refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
+The **Refreshes page** table lists out the complete refreshes, success measures, average/max refresh wait-time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait-times split by one-hour buckets reported in local time. The top bar charts list the top five datasets by the total of the max time it took to complete the dataset to refresh (refresh duration), and max refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
 
 ![Premium refresh report](media/service-premium-monitor-capacity/premium-refresh-report.png)
 
 ## Queries
 
-The **Queries page** table lists out the total query count, success, and failure count and average/max query duration sliced by datasets in the past seven days. The bottom chart shows the queries vs. memory consumption in GB split by one-hour buckets reported in local time. The top bar charts list the top five datasets by an average of the max and the average time it took to complete the query. Multiple high refresh wait times spikes are indicative of the capacity running hot.
+The **Queries page** table lists out the total query count, success, and failure count and average/max query duration sliced by datasets in the past seven days. The bottom chart shows the queries vs. memory consumption in GB split by one-hour buckets reported in local time. The top bar charts list the top five datasets by an average of the max and the average time it took to complete the query. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
 
 ![Premium queries report](media/service-premium-monitor-capacity/premium-queries-report.png)
 
