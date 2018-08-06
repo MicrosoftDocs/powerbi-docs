@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 08/06/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -69,7 +69,7 @@ When you view content in the content list of an app workspace, the app workspace
 
 Apps are provided for all the third-party services Power BI supports, making it easy for you to get data from the services you use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. You can publish organizational apps to give your users the data they need.
 
-In the current workspaces you can also connect using organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Organizational content packs should be migrated to apps, because we will remove this capability in the future.
+In the current workspaces you can also connect using organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Consider migrating your organizational content packs to apps.
 
 ## Distribute an app
 

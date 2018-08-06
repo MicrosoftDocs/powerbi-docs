@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 08/06/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -128,5 +128,5 @@ This action uninstalls the app for everyone you've published it to, and they no 
 * [Create an app workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-install-use-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
-* [Power BI Admin Portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)
+* [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
