@@ -3,19 +3,20 @@ title: 'Organizational content packs: Manage and update'
 description: Read about managing, updating, and deleting organizational content packs in Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
+ms.reviewer: ajayan
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 07/19/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We plan to deprecate organizational content packs soon, so we recommend using apps instead. Learn [more about apps](service-install-use-apps.md).
+> 
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.

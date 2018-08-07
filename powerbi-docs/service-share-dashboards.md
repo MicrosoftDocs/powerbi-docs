@@ -9,7 +9,7 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 01/18/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -87,8 +87,6 @@ Only the dashboard or report owner can turn resharing on and off.
 
 4. In the **Remove access** dialog box, decide if you want to remove access to related content, too, such as reports and datasets. If you remove items with a warning icon ![Power BI warning icon](media/service-share-dashboards/power-bi-warning-icon.png), it's best to remove related content because it won't display properly.
 
-    ![Power BI sharing warning dialog box](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
-
 ## Share a dashboard or report with people outside your organization
 When you share with people outside your organization, they get an email with a link to the shared dashboard or report, and they have to sign in to Power BI to see it. If they don't have a Power BI Pro license, they can sign up for a license after clicking the link.
 
@@ -143,8 +141,6 @@ If so, you need to grant them permission to the underlying dataset. Here's how.
 ### I can't share a dashboard or report
 
 To share a dashboard or report, you need permission to reshare the underlying content -- any related reports and datasets. If you see a message saying you can't share, ask the report author to give you re-share permission for those reports and datasets.
-
-!["Unable to share" message](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
 
 
 ## Next steps
