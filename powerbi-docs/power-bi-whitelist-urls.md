@@ -21,8 +21,6 @@ Power BI is requested from browsers, clients, and servers to require an authenti
 
 Wildcards represent all levels under the root domain, and we use N/A when information isn't available. The Destination column is a list with FQDN/domains, links to the [O365 URL site](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity), along with port information.
 
-For any remaining optional FQDNs, wildcards, DNS, CDN, CRL, or other unpublished destinations requested by Power BI, ensure clients can access them over the Internet.
-
 ## Administration
 
 Power BI depends on the required endpoints in the Office 365 portal. Power BI also depends on Office 365 authentication and identity sections to function. To use any Office 365 services, you must be able to connect to the endpoints marked required in the table below.
@@ -105,5 +103,5 @@ To be able to get data from specific data sources such as OneDrive, you must be 
 |-------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
 | 1 | Required: AppSource | appsource.microsoft.com | TCP 443 |
 | 2 | Optional: Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
-| 3 | Optional: Power BI in 60 Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
+| 3 | Optional: Power BI in 60-Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
 | 4 | Optional: PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
