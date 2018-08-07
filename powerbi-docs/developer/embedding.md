@@ -2,13 +2,13 @@
 title: Embedding with Power BI
 description: Power BI offers APIs for embedding your dashboards and reports into applications.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
 ms.date: 07/31/2018
-ms.author: maghan
 ---
 
 # Embedding with Power BI
@@ -34,7 +34,7 @@ To view a sample of how embedding works, see the [JavaScript embed sample](https
 
 ## Embedding for your organization
 
-**Embedding for your organization** allows you to extend the Power BI service. This requires that users of your application sign into the Power BI service when they want to view their content. Once someone in your organization signs in, they will only have access to dashboards and reports that they own or that have been shared with them in the Power BI service.
+**Embedding for your organization** allows you to extend the Power BI service. Embedding for your organziation requires that users of your application sign into the Power BI service when they want to view their content. Once someone in your organization signs in, they will only have access to dashboards and reports that they own or that have been shared with them in the Power BI service.
 
 *Examples of embedding for your organization include internal applications, such as [SharePoint Online](https://powerbi.microsoft.com/en-us/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams integration (you must have Admin rights)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/), and [Microsoft Dynamics](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
 
@@ -48,9 +48,9 @@ You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/Us
 
 ## Embedding for your customers
 
-**Embedding for your customers** provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Embedding for your customers is also known as **Power BI Embedded**.
+**Embedding for your customers** lets you embed dashboards and reports for users who don't have an account for Power BI. Embedding for your customers is also known as Power BI Embedded.
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) is a **Mircosoft Azure** service that offers independent software vendors (ISVs) and developers the ability to quickly embed for customers stunning visuals, reports, and dashboards into an application through a capacity-based, hourly metered model.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) is a **Microsoft Azure** service that lets independent software vendors (ISVs) and developers quickly embed visuals, reports, and dashboards into an application through a capacity-based, hourly metered model.
 
 ![Embedding flow for embedding for your customers](media/embedding/powerbi-embed-flow.png)
 
@@ -58,7 +58,7 @@ You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/Us
 
 With Power BI Embedded, your customers don't need to know anything about Power BI. You only need one Power BI Pro account to create an embedded application. The Power BI Pro account acts as a master account for your application (think of this as a proxy account). The Power BI Pro account also allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned/managed by your application.
 
-Developers can spend time focused on building the core competency of their application rather than spending time developing visuals and analytics. Developers can rapidly meet customer report and dashboard demands and can embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
+Developers using Power BI Embedded can spend time focused on building the core competency of their application rather than spending time developing visuals and analytics. Developers can rapidly meet customer report and dashboard demands and can embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
 
 > [!IMPORTANT]
 > While embedding has a dependency on the Power BI service, there is not a dependency on Power BI for your customers. They do not need to sign up for Power BI to view the embedded content in your application.
