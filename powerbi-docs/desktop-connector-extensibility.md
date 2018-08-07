@@ -18,7 +18,7 @@ LocalizationGroup: Connect to data
 
 In Power BI, customers and developers can extend the data sources to which they can connect in many ways, such as using existing connectors and generic data sources (such as ODBC, OData, Oledb, Web, CSV, XML, JSON). In addition to those data sources, developers can create data extensions referred to as **Custom Connectors**, and certify a connector to make them become **Certified Connectors**.
 
-In previous versions of Power BI, the ability to use **Custom Connectors** was enabled using a feature switch. Now there is a menu that allows you to securely control the level of custom code you want to allow to run on your system: all custom connectors, or only connectors that are certified and distributed by Microsoft in the **Get Data** dialogue.
+Currently, the ability to use **Custom Connectors** is enabled using a feature switch. In preparation for moving this feature from beta to general availability, we've added a menu that allows you to securely control the level of custom code you want to allow to run on your system: all custom connectors, or only connectors that are certified and distributed by Microsoft in the **Get Data** dialogue.
 
 ## Custom connectors
 
@@ -51,4 +51,4 @@ To resolve the error and use those connectors, you must change your security set
 
 A limited subset of data extensions are considered **Certified**, and such certified connectors are available using the **Get Data** dialogue, but the responsible party for maintenance and support is still the third party developer who created the connector. While Microsoft distributes these, we are not responsible for their performance or continued functionality.
 
-If you would like a custom connector to be certified, please have your vendor contact Microsoft.
+If you would like a custom connector to be certified, please have your vendor contact DataConnectors (at) Microsoft.com
