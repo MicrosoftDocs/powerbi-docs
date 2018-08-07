@@ -48,13 +48,13 @@ You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/Us
 
 ## Embedding for your customers
 
-**Embedding for your customers** lets you embed dashboards and reports for users who don't have an account for Power BI. Embedding for your customers is also known as Power BI Embedded.
+**Embedding for your customers** lets you embed dashboards and reports for users who don't have an account for Power BI. Embedding for your customers is also known as **Power BI Embedded**.
 
 [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) is a **Microsoft Azure** service that lets independent software vendors (ISVs) and developers quickly embed visuals, reports, and dashboards into an application through a capacity-based, hourly metered model.
 
 ![Embedding flow for embedding for your customers](media/embedding/powerbi-embed-flow.png)
 
-**Power BI Embedded** has benefits for an ISV, their developers, and customers. For example, an ISV can start creating visuals for free with Power BI Desktop. ISVs can achieve faster time to market by minimizing visual analytic development efforts and stand out among the competition with differentiated data experiences. ISVs also can opt to charge a premium for the additional value created with embedded analytics.
+Power BI Embedded has benefits for an ISV, their developers, and customers. For example, an ISV can start creating visuals for free with Power BI Desktop. ISVs can achieve faster time to market by minimizing visual analytic development efforts and stand out among the competition with differentiated data experiences. ISVs also can opt to charge a premium for the additional value created with embedded analytics.
 
 With Power BI Embedded, your customers don't need to know anything about Power BI. You only need one Power BI Pro account to create an embedded application. The Power BI Pro account acts as a master account for your application (think of this as a proxy account). The Power BI Pro account also allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned/managed by your application.
 
