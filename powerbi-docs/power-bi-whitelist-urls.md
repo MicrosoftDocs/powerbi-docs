@@ -32,8 +32,8 @@ The administration URLs are not just for the Office 365 portal; they are also fo
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: Managing Users (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
-| 2 | Required: Viewing Audit Logs (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
+| 1 | **Required:** Managing Users (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
+| 2 | **Required:** Viewing Audit Logs (O365 portal) | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
 
 ## Authentication
 
@@ -44,7 +44,7 @@ If you’re using Active Directory Federation Services (AD FS) with your deploym
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: Login page | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) for more details | N/A |
+| 1 | **Required:** Login page | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) for more details | N/A |
 
 ## Custom visuals
 
@@ -54,10 +54,10 @@ Power BI depends on the required endpoints to be able to view and access the cus
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | Required: Import a custom visual from the Marketplace Interface and a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 443 |
-| 2 | Optional: PowerApps | Go [here](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) for more details | N/A |
-| 3 | Optional: Visio | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
-| 4 | Optional: Bing Maps | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net, *.virtualearth.net | TCP 443 |
+| 1 | **Required:** Import a custom visual from the Marketplace Interface and a file | *.bing.com, *.microsoft.com, *.msecnd.net, *.msecnd.net,  *.osi.office.net, ajax.aspnetcdn.com, nexus.ensighten.com, store.office.com, *.azureedge.net, *.azureedge.net | TCP 443 |
+| 2 | **Optional:** PowerApps | Go [here](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) for more details | N/A |
+| 3 | **Optional:** Visio | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
+| 4 | **Optional:** Bing Maps | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net, *.virtualearth.net | TCP 443 |
 
 ## Dashboard and Report integration
 
@@ -65,9 +65,9 @@ Power BI depends on the required endpoints to be able to integrate your dashboar
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: Viewing a report published to web | *.analysis.windows.net | TCP 443 |
-| 2 | Optional: Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net, *.virtualearth.net | TCP 443 | |
-| 3 | Optional: Excel Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
+| 1 | **Required:** Viewing a report published to web | *.analysis.windows.net | TCP 443 |
+| 2 | **Optional:** Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net, *.virtualearth.net | TCP 443 | |
+| 3 | **Optional:** Excel Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
 
 ## External related sites
 
@@ -75,12 +75,12 @@ To reach out to other sites related to Power BI such as the community page or th
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Optional: The community page  |  community.powerbi.com | TCP 443 |
-| 2 | Optional: The ideas page | ideas.powerbi.com | TCP 443 |
-| 3 | Optional: The documentation page | docs.microsoft.com | TCP 443 |
-| 4 | Optional: Download sources (Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
-| 5 | Optional: External redirects | aka.ms, go.microsoft.com  | TCP 443 |
-| 6 | Optional: The landing page and the support page | powerbi.microsoft.com | TCP 443 |
+| 1 | **Optional:** The community page  |  community.powerbi.com | TCP 443 |
+| 2 | **Optional:** The ideas page | ideas.powerbi.com | TCP 443 |
+| 3 | **Optional:** The documentation page | docs.microsoft.com | TCP 443 |
+| 4 | **Optional:** Download sources (Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
+| 5 | **Optional:** External redirects | aka.ms, go.microsoft.com  | TCP 443 |
+| 6 | **Optional:** The landing page and the support page | powerbi.microsoft.com | TCP 443 |
 
 ## General site usage
 
@@ -88,12 +88,12 @@ To use some essential features with Power BI such as Backend APIs or using the P
 
 |     Row     |       Purpose     |       Destination     |       Port(s)     |
 |-------------|-----------------------------------|-------------------------------------|----------------|------------------------|--------------------------------------------------------------|
-| 1 | Required: Backend APIs | *.analysis.windows.net | TCP 443 |
-| 2 | Required: Office 365 Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
-| 3 | Required: Portal | app.powerbi.com | TCP 443 |
-| 4 | Required: Telemetry (AppInsights) | dc.services.visualstudio.com | TCP 443 |
-| 5 | Optional: Marketing Messages  | dynmsg.modpim.com | TCP 443 |
-| 6 | Optional: NPS Surveys  | nps.onyx.azure.net | TCP 443 |
+| 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
+| 2 | **Required:** Office 365 Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
+| 3 | **Required:** Portal | app.powerbi.com | TCP 443 |
+| 4 | **Required:** Telemetry (AppInsights) | dc.services.visualstudio.com | TCP 443 |
+| 5 | **Optional:** Marketing Messages  | dynmsg.modpim.com | TCP 443 |
+| 6 | **Optional:** NPS Surveys  | nps.onyx.azure.net | TCP 443 |
 
 ## Get Data
 
@@ -101,7 +101,7 @@ To be able to get data from specific data sources such as OneDrive, you must be 
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | Required: AppSource | appsource.microsoft.com | TCP 443 |
-| 2 | Optional: Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
-| 3 | Optional: Power BI in 60-Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
-| 4 | Optional: PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
+| 1 | **Required:** AppSource | appsource.microsoft.com | TCP 443 |
+| 2 | **Optional:** Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
+| 3 | **Optional:** Power BI in 60-Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
+| 4 | **Optional:** PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
