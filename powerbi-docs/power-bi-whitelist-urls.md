@@ -27,8 +27,8 @@ Power BI depends on the required endpoints in the Office 365 portal. Power BI al
 
 The administration URLs are not just for the Office 365 portal; they are also for the Power BI admin portal.
 
->![Note]
->The Office 365 admin portal is integrated with the Power BI Portal.
+> [!NOTE]
+> The Office 365 admin portal is integrated with the Power BI Portal.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
