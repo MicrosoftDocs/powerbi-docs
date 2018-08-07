@@ -143,7 +143,7 @@ Domains with Pre-Windows 2000 compatibility access have the TGGAU attribute enab
 You can confirm this by doing the following.
 
 1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this reproduces the error.
-2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is a tool generally found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
+2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is a tool found on a domain controller. You need to know what the distinguished domain name is for the account and pass that to the tool.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
 
