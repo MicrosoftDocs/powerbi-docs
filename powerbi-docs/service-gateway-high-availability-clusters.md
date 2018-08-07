@@ -2,13 +2,13 @@
 title: High availability clusters for On-premises data gateway
 description: You can create clusters of On-premises data gateways to provide high availability for your enterprise.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mblythe
 LocalizationGroup: Gateways 
 ---
 

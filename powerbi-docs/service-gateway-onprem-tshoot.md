@@ -2,19 +2,19 @@
 title: Troubleshooting the On-premises data gateway
 description: This article provides ways for you to troubleshoot issues you are having with the On-premises data gateway. It provides potential workarounds to known issues, as well as tools to assist you.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mblythe
 LocalizationGroup: Gateways 
 ---
 
 # Troubleshooting the On-premises data gateway
 
-This article discusses some common issues you may encounter when using the **On-premises data gateway**.
+This article discusses some common issues when using the **On-premises data gateway**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -26,7 +26,7 @@ This article discusses some common issues you may encounter when using the **On-
 
 ### How to restart the gateway
 
-The gateway runs as a Windows service, so you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
+The gateway runs as a Windows service, so you can start and stop it in a few ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
 
 * To stop the service, run this command:
 
@@ -67,14 +67,14 @@ You may encounter an error similar to the following.
         Failed to update gateway details.  Please try again.
         Error updating gateway configuration.
 
-This includes a stack trace, and that stack trace may include the following.
+This includes a stack trace, and that stack trace may include the following message.
 
         Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.CouldNotUpdateGatewayConfigurationException: Error updating gateway configuration. ----> System.ArgumentNullException: Value cannot be null.
         Parameter name: serviceSection
 
 If you are upgrading from an older gateway, we preserve the config file. There may be a section that is missing. When the gateway tries to read it, we can get the above null reference exception.
 
-To correct this, do the following.
+To correct this, do the following steps.
 
 1. Uninstall the gateway.
 2. Delete the following folder.
@@ -85,9 +85,12 @@ To correct this, do the following.
 
 ### Support for TLS 1.1/1.2
 
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On November 1st 2017 support for TLS 1.0 ended, so by then, you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. You must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
 
-It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
+>[!NOTE]
+>Support for TLS 1.0 ended on November 1, 2017.
+
+It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1, 2017, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
@@ -204,7 +207,7 @@ If this report is making use of a live Analysis Services connection, you could b
 To confirm this, you can do the following.
 
 1. Find the effective username within the [gateway logs](#logs).
-2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see the UPN . The UPN looks like an email address.
+2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see the UPN. The UPN looks like an email address.
 
         whoami /upn
 
@@ -275,12 +278,12 @@ Here is a listing of the available performance counters.
 | # of Mashup open connection failed / sec |Number of Mashup open connection actions failed per second. |
 | # of Mashup queries executed / sec |Number of Mashup queries executed per second (succeeded or failed). |
 | # of Mashup queries failed / sec |Number of Mashup failed queries executed per second |
-| # of multiple result set OLEDB queries failed / sec |Number of multiple result set OLEDB failed queries executed per second. |
-| # of OLEDB multiple result set queries executed / sec |Number of OLEDB multiple result set queries executed per second (succeeded or failed). |
+| # of multiple result sets of OLEDB queries failed / sec |Number of multiple result sets of OLEDB failed queries executed per second. |
+| # of OLEDB multiple result sets of queries executed / sec |Number of OLEDB multiple result sets of queries executed per second (succeeded or failed). |
 | # of OLEDB open connection executed / sec |Number of OLEDB open connection actions executed per second (succeeded or failed). |
 | # of OLEDB open connection failed / sec |Number of OLEDB open connection actions failed per second. |
-| # of OLEDB queries executed / sec |Number of OLEDB multiple result set queries executed per second (succeeded or failed). |
-| # of OLEDB queries failed / sec |Number of OLEDB multiple result set failed queries executed per second. |
+| # of OLEDB queries executed / sec |Number of OLEDB multiple result sets of queries executed per second (succeeded or failed). |
+| # of OLEDB queries failed / sec |Number of OLEDB multiple result sets of failed queries executed per second. |
 | # of OLEDB single result set queries executed / sec |Number of OLEDB single result set queries executed per second (succeeded or failed). |
 | # of queries failed / sec |Number of failed queries executed per second. |
 | # of single result set OLEDB queries failed / sec |Number of single result set OLEDB failed queries executed per second. |
