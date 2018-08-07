@@ -72,10 +72,10 @@ For details on how to embed, see [How to embed your Power BI dashboards, reports
 You can now try to embed Power BI content into an application, or try to embed Power BI content for your customers.
 
 > [!div class="nextstepaction"]
-> [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
+> [Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [Embed for your organization](embed-sample-for-your-organization.md)
+> [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
