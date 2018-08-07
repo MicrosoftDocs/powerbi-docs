@@ -32,9 +32,6 @@ Everyone you add to an app workspace needs a Power BI Pro license. In the worksp
 Because this is a preview feature, there are some limitations that you should be aware of. See <section link> later in this article for an explanation of the current limitations. 
 With the new workspaces, we are redesigning some features. See < section link> later in this article for an explanation of the changes you can expect to be permanent along with the preview.
 
-## Video: Apps and app workspaces
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ## Roll out new app workspaces
 
 During the preview period, old and new workspaces can coexist side by side, and you can create either. When the preview for new workspaces ends and they're generally available, old workspaces can still exist for a time. You won't be able to create them, and you'll need to prepare to migrate your workspaces to the new workspaces infrastructure. Don’t worry, you will have several months to complete migration.
