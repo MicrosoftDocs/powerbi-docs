@@ -17,7 +17,7 @@ In this quickstart, you explore a sample dashboard and report in the Power BI mo
 
 Applies to:
 
-| ![iPhone](media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android ](media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 devices](media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
+| ![iPhone](media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 devices](media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
