@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 This article aims to give an in-depth overview of the Power BI report built using Power BI diagnostic APIs to support admins in monitoring the health of their capacities.  With this information, you can take appropriate steps to scale up or down as needed based on the metrics provided.
 
-![Usage in 7 days](media/service-premium-monitor-capacity/usage-in-days.png)
+![Usage in 7 days](media/service-admin-premium-monitor-capacity/usage-in-days.png)
 
 The Premium Capacity setting in the admin portal provides four gauges that indicate the loads placed and the resources utilized by your capacity for the past seven days. These four tiles work on an hourly time window that indicates how many hours in the past seven days the corresponding metric was above 80%. This metric indicates a potential degradation for the end-user experience. This new report is intended to complement the existing tiles in a more granular way, focusing on better, and more informative metrics that measure real end-user issues.
 
@@ -42,11 +42,9 @@ Click on the app to open it. Once the app is open, a dashboard appears showing a
 
 ## Overview of the report
 
-![Premium report overview](media/service-premium-monitor-capacity/premium-report-overview.png)
-
 The **filters applied to all pages** allow you to select a capacity, a dataset, and/or a date range within the past seven days. These filters apply the selection to all the relevant pages and tiles in this report. If nothing is selected, the report defaults to show the past week’s metrics on every capacity you own.
 
-![Filters that apply to all pages](media/service-premium-monitor-capacity/filters-applied-to-all-pages.png)
+![Premium report overview](media/service-admin-premium-monitor-capacity/premium-report-overview.png)
 
 ## Summary
 
@@ -80,29 +78,31 @@ This page summarizes:
     * Average queries duration is measured in minutes, the time taken to complete the operation
     * Total number of models evicted due to memory pressure
 
+![Filters that apply to all pages](media/service-admin-premium-monitor-capacity/filters-applied-to-all-pages.png)
+
 ## Refreshes
 
 The **Refreshes page** table lists out the complete refreshes, success measures, average/max refresh wait-time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait-times split by one-hour buckets reported in local time. The top bar charts list the top five datasets by the total of the max time it took to complete the dataset to refresh (refresh duration), and max refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
 
-![Premium refresh report](media/service-premium-monitor-capacity/premium-refresh-report.png)
+![Premium refresh report](media/service-admin-premium-monitor-capacity/premium-refresh-report.png)
 
 ## Queries
 
 The **Queries page** table lists out the total query count, success, and failure count and average/max query duration sliced by datasets in the past seven days. The bottom chart shows the queries vs. memory consumption in GB split by one-hour buckets reported in local time. The top bar charts list the top five datasets by an average of the max and the average time it took to complete the query. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
 
-![Premium queries report](media/service-premium-monitor-capacity/premium-queries-report.png)
+![Premium queries report](media/service-admin-premium-monitor-capacity/premium-queries-report.png)
 
 ## Datasets
 
 The **Datasets page** shows complete datasets evicted due to memory pressure by the hour.
 
-![Premium datasets report](media/service-premium-monitor-capacity/premium-datasets-report.png)
+![Premium datasets report](media/service-admin-premium-monitor-capacity/premium-datasets-report.png)
 
 ## System
 
 The **System page** shows the CPU High utilization (number of times exceeded 80% utilization), Direct Query/Live connections high utilization, and Memory Consumption.
 
-![Premium System report](media/service-premium-monitor-capacity/premium-system-report.png)
+![Premium System report](media/service-admin-premium-monitor-capacity/premium-system-report.png)
 
 ## Next Steps
 
