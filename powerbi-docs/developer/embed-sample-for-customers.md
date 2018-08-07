@@ -241,6 +241,8 @@ Report report = reports.Value.FirstOrDefault();
 ### Create the embed token
 An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
+For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+
 Here is a sample of adding an embed token for a report to your application.
 
 *A sample of creating an embed token for a report, dashboard, or tile is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
@@ -312,8 +314,6 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 </script>
 ```
 
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You also can get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
-
 ## Move to production
 
 Now that you've completed developing your application, it is time to back your app workspace with a dedicated capacity. Dedicated capacity is required to move to production.
@@ -358,6 +358,6 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
 
 > [!div class="nextstepaction"]
->[Embed for your organziation](embed-sample-for-your-organization.md)
+>[Embed for your organization](embed-sample-for-your-organization.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
