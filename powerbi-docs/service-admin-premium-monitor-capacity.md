@@ -18,7 +18,21 @@ This article aims to give an in-depth overview of the Power BI report built usin
 
 ![Usage in 7 days](media/service-premium-monitor-capacity/usage-in-days.png)
 
-Today, the Premium Capacity admin portal provides four gauges that indicate the load placed and resource utilized by your capacity in past week.  These four tiles work on an hourly time window and indicate how many hours in the past week the corresponding metric was above 80% utilization indicating potentially a degraded end-user experience. The new report is intended to complement the existing tiles in a more granular way focusing on better and informative metrics measures indicative of real issues.
+Today, the Premium Capacity admin portal provides four gauges that indicate the load placed and resource utilized by your capacity in past week. These four tiles work on an hourly time window and indicate how many hours in the past week the corresponding metric was above 80% utilization indicating potentially a degraded end-user experience. The new report is intended to complement the existing tiles in a more granular way focusing on better and informative metrics measures indicative of real issues.
+
+## Installing the app
+
+Installing the Premium Capacity Monitoring App:
+
+1. Go the "Apps" menu in the Power BI website
+
+2. Click get apps.
+
+3. Click on "Get apps" and in the “Apps” category, search for “Power BI Premium Capacity Monitoring”.
+
+4. Subscribe to install the app.
+
+Now you have the app installed and can see metrics about the capacities in your organization. Let's take a look at some of the key new metrics now available.
 
 ## Overview of the report
 
