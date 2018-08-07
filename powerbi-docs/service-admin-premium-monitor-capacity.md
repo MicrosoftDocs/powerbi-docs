@@ -12,33 +12,39 @@ ms.date: 08/08/2018
 LocalizationGroup: Premium 
 ---
 
-# Using the report to monitor Power BI Premium in your organization
+# Using the report to monitor Power BI Premium capacities in your organization
 
-This article aims to give an in-depth overview of the Power BI report built using Power BI diagnostic APIs to support admins in monitoring the health of their capacity and taking appropriate steps to scale up or down as needed based on the metrics provided.
+This article aims to give an in-depth overview of the Power BI report built using Power BI diagnostic APIs to support admins in monitoring the health of their capacities.  With this information, you can take appropriate steps to scale up or down as needed based on the metrics provided.
 
 ![Usage in 7 days](media/service-premium-monitor-capacity/usage-in-days.png)
 
-Today, the Premium Capacity admin portal provides four gauges that indicate the load placed and resource utilized by your capacity in past week. These four tiles work on an hourly time window and indicate how many hours in the past week the corresponding metric was above 80% utilization indicating potentially a degraded end-user experience. The new report is intended to complement the existing tiles in a more granular way focusing on better and informative metrics measures indicative of real issues.
+The Premium Capacity setting in the admin portal provides four gauges that indicate the loads placed and the resources utilized by your capacity for the past seven days. These four tiles work on an hourly time window that indicates how many hours in the past seven days the corresponding metric was above 80%. This metric indicates a potential degradation for the end-user experience. This new report is intended to complement the existing tiles in a more granular way, focusing on better, and more informative metrics that measure real end-user issues.
 
 ## Installing the app
 
-Installing the Premium Capacity Monitoring App:
+to Install the Premium Capacity Monitoring App, follow the steps below:
 
-1. Go the "Apps" menu in the Power BI website
+1. Go to the **Apps** menu in the Power BI site
+
+![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. Click get apps.
 
-3. Click on "Get apps" and in the “Apps” category, search for “Power BI Premium Capacity Monitoring”.
+3. Click on **Get apps**, and in the **Apps** category, search for **Power BI Premium Capacity Monitoring**.
+
+![Select the app](media/service-admin-premium-monitor-capacity/report-app.png)
 
 4. Subscribe to install the app.
 
-Now you have the app installed and can see metrics about the capacities in your organization. Let's take a look at some of the key new metrics now available.
+Now that you've installed the app, you can see metrics about the capacities in your organization. Let's take a look at some of the key new metrics now available.
+
+Click on the app to open it. Once the app is open, a dashboard appears showing an aggregated summary of all the capacities in which you have admin rights.
 
 ## Overview of the report
 
 ![Premium report overview](media/service-premium-monitor-capacity/premium-report-overview.png)
 
-The **filters applied to all pages** allow you to select a capacity, dataset and/or date range within the past week to apply the selection to all the relevant pages and tiles in this report. If nothing is selected, the report defaults to show the past week’s metrics on every capacity you own.
+The **filters applied to all pages** allow you to select a capacity, a dataset, and/or a date range within the past seven days. These filters apply the selection to all the relevant pages and tiles in this report. If nothing is selected, the report defaults to show the past week’s metrics on every capacity you own.
 
 ![Filters that apply to all pages](media/service-premium-monitor-capacity/filters-applied-to-all-pages.png)
 
