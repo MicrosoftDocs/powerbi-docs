@@ -396,7 +396,7 @@ The results look similar to the following. The difference is with TcpTestSucceed
     PingReplyDetails (RTT) : 0 ms
     TcpTestSucceeded       : True
 
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#ports)
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](https://docs.microsoft.com/power-bi/service-gateway-onprem#ports)
 
 The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
 
