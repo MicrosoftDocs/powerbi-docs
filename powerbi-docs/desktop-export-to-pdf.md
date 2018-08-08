@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 08/08/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -28,7 +28,7 @@ When you select **File > Export to PDF** the export is initiated, and a dialog a
 
 When the export completes, the PDF is loaded into the default PDF viewer on the computer. 
 
-## Considerations and Limitations
+## Considerations and limitations
 There are a few considerations to keep in mind with the **Export to PDF** feature:
 
 * The **Export to PDF** feature is only available with **Power BI Desktop**, and is not currently available in the **Power BI service**.
