@@ -2,18 +2,18 @@
 title: Manage capacities within Power BI Premium and Power BI Embedded
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/10/2017
-ms.author: mblythe
-
+ms.date: 08/10/2018
 LocalizationGroup: Premium
 ---
+
 # Manage capacities within Power BI Premium and Power BI Embedded
+
 Learn how you can manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
@@ -21,6 +21,7 @@ Learn how you can manage Power BI Premium and Power BI Embedded capacities, whic
 Capacity is the heart of the Power BI Premium and Power BI Embedded offerings.
 
 ## What is capacity?
+
 Capacity is the set of resources reserved for the exclusive use by you. Having capacity allows you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
 
 Capacity is all transparent to your end users. They will continue to use Power BI or your application as usual. They don't have to be aware that some (or all) of the content is hosted in your dedicated capacity. For your users, everything works exactly as before.
@@ -30,6 +31,7 @@ Capacity is all transparent to your end users. They will continue to use Power B
 For more information, see [What is Power BI Premium?](service-premium.md).
 
 ### Capacity admins
+
 > [!NOTE]
 > Capacity admins, for Power BI Embedded capacity, are defined within the Microsoft Azure portal.
 
@@ -40,6 +42,7 @@ Each capacity has its own admins. Defining a capacity admin to one capacity does
 All Office 365 Global admins and Power BI admins are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
 
 ## Purchase capacity
+
 To take advantage of dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center or create a Power BI Embedded resource within the Microsoft Azure portal. For more information, see the following:
 
 * **Power BI Premium:** [How to purchase Power BI Premium](service-admin-premium-purchase.md)
@@ -50,8 +53,8 @@ When you purchase Power BI Premium SKUs, your tenant will receive the correspond
 > [!NOTE]
 > You will have 30 days of full access after your subscription ends, but after that your content reverts to a shared capacity. Models that are > 1 GB will not be supported with a regular shared license.
 
-
 ## Manage capacity
+
 After you have purchased capacity nodes within Office 365, you will then need to set up a new capacity. This is done through the [Power BI admin portal](service-admin-portal.md). Within the admin portal, you will see a section called **Capacity settings**. This is where you will manage Power BI Premium capacities for your organization.
 
 ![Capacity settings within the admin portal](media/service-admin-premium-manage/admin-portal-premium.png)
@@ -59,6 +62,7 @@ After you have purchased capacity nodes within Office 365, you will then need to
 Selecting **Capacity settings** will take you to the capacity management screen defaulting to Power BI Premium.
 
 ### Setting up a new capacity (Power BI Premium)
+
 The number of v-cores will reflect the amount used and the amount available to create capacities with. The amount of v-cores available to your organization is based on the Premium SKUs that you have purchased. For example, purchasing a P3 and a P2 would result in 48 available cores – 32 from the P3 and 16 from the P2.
 
 ![Used and available v-cores for Power BI Premium](media/service-admin-premium-manage/admin-portal-v-cores.png)
@@ -80,6 +84,7 @@ If you have available v-cores, setup your new capacity by doing the following.
 Capacity admins, as well as Power BI admins and Office 365 Global Admins, will then see the capacity listed within the admin portal.
 
 ### Capacity settings
+
 Within the Premium capacity management screen, you can select the **gear icon (settings)** under actions. This will allow you to rename or delete a capacity. It will also indicate who the service admins are, the SKU/size of the capacity and what region the capacity is in.
 
 ![Capacity actions within the capacity management area](media/service-admin-premium-manage/capacity-actions.png)
@@ -92,6 +97,7 @@ Within the Premium capacity management screen, you can select the **gear icon (s
 > Power BI Embedded capacity settings are managed within the Microsoft Azure portal.
 
 ### Change capacity size (Power BI Premium)
+
 Power BI admins and Office 365 Global admins change Power BI Premium capacity size by selecting **Change capacity size**. Capacity admins who are not a Power BI admin or Office 365 Global admin will not have this option.
 
 ![Change Power BI Premium capacity size](media/service-admin-premium-manage/change-capacity-size.png)
@@ -103,6 +109,7 @@ P SKUs cannot be down graded to EM SKUs. You can hover over disabled options whi
 ![Change Power BI Premium capacity size drop down](media/service-admin-premium-manage/change-capacity-size2.png)
 
 ### Capacity assignment
+
 You can manage a capacity by selecting the name of the capacity. This will take you to the capacity management screen.
 
 ![Select capacity name to get to capacity assignment screen](media/service-admin-premium-manage/capacity-assignment.png)
@@ -110,21 +117,22 @@ You can manage a capacity by selecting the name of the capacity. This will take 
 If no workspaces have been assigned to the capacity, you will see a message allowing you to **Assign workspaces**.
 
 #### User permissions
+
 You can assign additional **Capacity admins** for Power BI Premium capacities. As well as assign users that will have **capacity assignment permissions**. Users that have assignment permissions can assign an app workspace to the capacity if they are an admin of that workspace. They can also assign their personal *My Workspace* to the capacity. Users with assignment permissions will not have access to the admin portal.
 
 > [!NOTE]
 > For Power BI Embedded capacity, capacity admins are assigned within the Microsoft Azure portal.
->
->
 
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## Assign a workspace to a capacity
+
 There are a few ways that a workspace could be assigned to a capacity.
 
 ### Capacity management in admin portal
+
 Capacity admins, along with Power BI admins and Office 365 global admins, can bulk assign workspaces within the premium capacity management section of the admin portal. When you manage a capacity, you will see a **Workspaces** section that allows you to assign workspaces.
 
 ![Workspace assignment area of capacity management](media/service-admin-premium-manage/capacity-manage-workspaces.png)
@@ -141,6 +149,7 @@ Capacity admins, along with Power BI admins and Office 365 global admins, can bu
 This option does not allow you to assign specific workspaces to a capacity.
 
 ### App workspace settings
+
 You can also assign an app workspace to a Premium capacity from the settings of that workspace. To assign an app workspace to a premium capacity, do the following.
 
 To move a workspace into capacity, you must have admin permissions to that workspace, and also capacity assignment permissions to that capacity. Notice that workspace admins can always remove a workspace from Premium capacity.
@@ -173,6 +182,7 @@ The following table shows the default and minimum memory values, based on the di
 |
 
 ## Monitor capacity usage
+
 For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
 
 ![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
@@ -202,11 +212,13 @@ Metrics reflect utilization over the past week.  If you'd like to see a more det
 You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## What Premium looks like for users
+
 For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity.
 
 ![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
 
 ## Power BI Report Server product key
+
 Within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchase a Power BI Premium SKU.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
@@ -218,6 +230,7 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 For more information, see [Install Power BI Report Server](report-server/install-report-server.md).
 
 ## Next steps
+
 Share published apps with users. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
