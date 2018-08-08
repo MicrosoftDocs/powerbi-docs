@@ -112,8 +112,6 @@
           href: service-install-use-apps.md
         - name: "Find and connect to an organizational content pack"
           href: service-organizational-content-pack-find-and-open.md
-        - name: "Share dashboards and reports"
-          href: service-share-dashboards.md
         - name: "Get started with Power BI Q&A"
           href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Connect to services
@@ -306,9 +304,15 @@
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
-        - name: "How should I collaborate and share dashboards and reports?"
+        - name: "How should I collaborate and share?"
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-        - name: "Create and distribute apps with dashboards and reports"
+        - name: "Share dashboards and reports"
+          href: service-share-dashboards.md
+        - name: "Create app workspaces"
+          href: service-create-workspaces.md
+        - name: "Create the new workspaces (preview)"
+          href: service-create-the-new-workspaces.md
+        - name: "Publish apps with dashboards and reports"
           href: service-create-distribute-apps.md
         - name: "Share a filtered report"
           href: service-share-reports.md
@@ -682,8 +686,10 @@
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
         href: desktop-analytics-pane.md
-      - name: "Using insights in Power BI Desktop"
+      - name: "Using insights to explain increases and decreases"
         href: desktop-insights.md
+      - name: "Using insights to find where distribution is different in charts"
+        href: desktop-insights-find-where-different.md
       - name: "Bookmarks in Power BI"
         href: desktop-bookmarks.md
       - name: "Use Report themes"
@@ -807,6 +813,8 @@
       href: desktop-data-types.md
     - name: "Power BI Desktop privacy levels"
       href: desktop-privacy-levels.md
+    - name: "Connector extensibility in Power BI"
+      href: desktop-connector-extensibility.md
   - name: Resources
     items: 
     - name: "Power BI Desktop videos"
@@ -917,14 +925,18 @@
     items:
     - name: Overview
       items: 
-      - name: "Embedding with Power BI"
+      - name: "What is embedding with Power BI"
         href: developer/embedding.md
+      - name: "What is Power BI Embedded in Azure"
+        href: developer/azure-pbie-what-is-power-bi-embedded.md
     - name: Tutorials
       items: 
       - name: "Embed content for customers"
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
+      - name: "Integrate content into your application for sovereign clouds"
+        href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
       items: 
       - name: "Row-level security (RLS)"
@@ -935,12 +947,8 @@
         href: developer/power-bi-permissions.md 
     - name: How to
       items: 
-      - name: "How to embed your content"
-        href: developer/embedding-content.md
       - name: "How to embed from an app"
         href: developer/embed-from-apps.md
-      - name: "Integrate content into your application for sovereign clouds (app owns data)"
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
@@ -949,18 +957,36 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "How to migrate Power BI Embedded"
-        href: developer/migrate-from-powerbi-embedded.md      
       - name: "Troubleshooting your embedded application"
         href: developer/embedded-troubleshoot.md
+      - name: Manage capacities in Azure
+        items:
+        - name: Create a capacity in Azure
+          href: developer/azure-pbie-create-capacity.md
+        - name: Scale a capacity in Azure
+          href: developer/azure-pbie-scale-capacity.md
+        - name: Pause and start a capacity in Azure
+          href: developer/azure-pbie-pause-start.md
+      - name: Migrate from Workspace Collections
+        items:
+        - name: "How to migrate from Power BI Workspace Collections"
+          href: developer/migrate-from-powerbi-embedded.md  
+        - name: Migration tool
+          href: developer/migrate-tool.md
+        - name: "Migration code snippets"
+          href: developer/migrate-code-snippets.md
     - name: Reference
       items:
+      - name: APIs
+        items:
+        - name: Azure Resource Management REST APIs
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        - name: Power BI REST APIs
+          href: https://msdn.microsoft.com/library/mt147898.aspx
       - name: ".NET SDK Download"
         href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "Embed custom layouts into an app"
         href: developer/embedded-custom-layout.md
-      - name: "Migration code snippets"
-        href: developer/migrate-code-snippets.md
     - name: Resources
       items:
       - name: "Dev Center"
@@ -977,8 +1003,6 @@
         href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: "Samples"
         href: https://go.microsoft.com/fwlink/?linkid=851293
-      - name: "Power BI Embedded migration tool"
-        href: developer/migrate-tool.md
       - name: "Power BI community"
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
@@ -1063,8 +1087,6 @@
       items:
       - name: "REST APIs"
         href: https://docs.microsoft.com/rest/api/power-bi
-      - name: "Power BI REST API Reference"
-        href: developer/rest-api-reference.md
       - name: "Complete code listing"
         href: developer/walkthrough-push-data-complete-code.md
     - name: Resources
@@ -1255,6 +1277,8 @@
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
         href: service-premium-incremental-refresh.md
+      - name: "Multi-Geo support (Preview)"
+        href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
       - name: "Power BI Premium release notes"

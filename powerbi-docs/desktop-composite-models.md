@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -29,7 +29,7 @@ This collection of three related features for **composite models** are each desc
 
 * **Composite models** are described in detail in this article.
 * **Many-to-many relationships** are described in their own article, [many-to-many relationships in Power BI Desktop (Preview)](desktop-many-to-many-relationships.md).
-* **Storage mode** is desribed in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
+* **Storage mode** is described in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
 
 ## Enabling the composite models preview feature
 
@@ -108,7 +108,7 @@ As shown in the following image, which is based on the new data and relationship
 
 ## Setting storage mode
 
-Each table in a **comnposite model** has a **storage mode** that indicates whether the table is based on DirectQuery or import. **Storage mode** can be viewed and modified in the **Property** pane. To get there, select **Properties** from the **Fields** list right-click context menu. The following image shows the **storage mode** (shortened to **Storage ...** in the image, due to the width of the pane).
+Each table in a **composite model** has a **storage mode** that indicates whether the table is based on DirectQuery or import. **Storage mode** can be viewed and modified in the **Property** pane. To get there, select **Properties** from the **Fields** list right-click context menu. The following image shows the **storage mode** (shortened to **Storage ...** in the image, due to the width of the pane).
 
 ![Storage mode setting](media/desktop-composite-models/composite-models_15.png)
 

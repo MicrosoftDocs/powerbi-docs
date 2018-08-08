@@ -122,6 +122,7 @@ In this preview version of report **tooltips**, there are a few limitations and 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
 
 
+
 ## Next steps
 For more information about features that are similar or interact with report tooltips, take a look at the following articles:
 

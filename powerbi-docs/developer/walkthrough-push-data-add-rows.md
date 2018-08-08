@@ -2,16 +2,15 @@
 title: Add rows to a table
 description: Walkthrough to push data - Add rows to a Power BI table
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-
+ms.date: 08/01/2018
 ---
+
 # Step 5: Add rows to a Power BI table
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
@@ -303,9 +302,10 @@ Below is the [complete code listing](#code).
         }
     }
 
+Although, we specify that we **_//Get the first id_** in the code above, the correct thing to do is search the dataset by name.
+
 ## Next steps
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
