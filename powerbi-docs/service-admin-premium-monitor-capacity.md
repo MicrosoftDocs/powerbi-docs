@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 08/10/2018
 LocalizationGroup: Premium 
 ---
 
