@@ -4,14 +4,13 @@ description: Information regarding configuration of proxy settings for the On-pr
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
-
 LocalizationGroup: Gateways
+
 ---
 # Configuring proxy settings for the On-premises data gateway
 Your work environment may require that you go through a proxy to access the internet. This could prevent the On-premises data gateway from connecting to the service.

@@ -21,8 +21,8 @@ This article offers guidance for building fast and reliable reports in Power BI.
 
 The more data that a visual needs to display, the slower that visual will be to load. While this principle seems obvious, it can be easy to forget. For example: suppose you have a large dataset. Atop of that, you build a report with a table of the table. End users use slicers on the page to get to the rows they wanted – typically they’re only interested in a few dozen rows.
 
-A common mistake is to have the default view of the table be unfiltered - i.e. all 100M+ rows. The data for these rows must be loaded into memory and uncompressed at every refresh. This created huge memory loads. The solution: reduce the max number of items that the table displayed using the “Top N” filter. The max item can be much larger than what users would need, for example, 10,000. As a result, the end user experience was unchanged, but memory utilization of the report dropped multiple orders of magnitude, and performance improved accordingly. 
- 
+A common mistake is to have the default view of the table be unfiltered - i.e. all 100M+ rows. The data for these rows must be loaded into memory and uncompressed at every refresh. This created huge memory loads. The solution: reduce the max number of items that the table displayed using the “Top N” filter. The max item can be much larger than what users would need, for example, 10,000. As a result, the end user experience was unchanged, but memory utilization of the report dropped multiple orders of magnitude, and performance improved accordingly.
+
 A similar approach to the above is strongly suggested for all visuals on your reports. Ask yourself, is all the data in this visual needed? Are there ways to filter down the amount of data shown in the visual with minimal impact to the end user experience? Note that tables in particular can be very expensive. 
  
 ## Limit visuals on report pages 

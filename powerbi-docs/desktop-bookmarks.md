@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -109,6 +109,33 @@ Once you turn the **Action** slider to **On** you can select whether the object 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information, just by clicking on an object.
 
 When you are in editing mode you can use ctrl+click to follow the link, and when not in edit mode, simply click the object to follow the link. 
+
+## Bookmark groups
+
+Beginning with the August 2018 release of **Power BI Desktop**, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
+
+To create a bookmark group, hold down the CTRL key and select the bookmarks you want to include in the group, then click the elipses beside any of the selected bookmarks, and select **Group** from the menu that appears.
+
+![Create a bookmark group](media/desktop-bookmarks/bookmarks_15.png)
+
+**Power BI Desktop** automatically names the group *Group 1*. Fortunately, you can just double-click on the name and rename it to whatever you want.
+
+![Rename a bookmark group](media/desktop-bookmarks/bookmarks_16.png)
+
+With any bookmark group, clicking on the bookmark group's name only expands or collapses the group of bookmarks, and does not represent a bookmark by itself. 
+
+When using the **View** feature of bookmarks, the following applies:
+
+* If the selected bookmark is in a group when you select **View** from bookmarks, only the bookmarks *in that group* are shown in the viewing session. 
+
+* If the selected bookmark is not a group, or is on the top level (such as the name of a bookmark group), then all bookmarks for the entire report are played, including bookmarks in any group. 
+
+To ungroup bookmarks, just select any bookmark in a group, click the ellipses, and then select **Ungroup** from the menu that appears. 
+
+![Ungroup a bookmark group](media/desktop-bookmarks/bookmarks_17.png)
+
+Note that selecting **Ungroup** for any bookmark from a group takes all bookmarks out of the group (it deletes the group, but not the bookmarks themselves). So to remove a single bookmark from a group, you need to **Ungroup** any member from that group, which deletes the grouping, then select the members you want in the new group (using CTRL and clicking each bookmark), and select **Group** again. 
+
 
 ## Using Spotlight
 Another feature released with bookmarks is **Spotlight**. With **Spotlight** you can draw attention to a specific chart, for example, when presenting your bookmarks in **View** mode.
