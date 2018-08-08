@@ -943,6 +943,8 @@
       items: 
       - name: "Row-level security (RLS)"
         href: developer/embedded-row-level-security.md
+      - name: "Azure diagnostic logging for Power BI Embedded"
+        href: developer/azure-pbie-diag-logs.md
       - name: "FAQ"
         href: developer/embedded-faq.md
       - name: "Power BI permissions"
