@@ -25,6 +25,7 @@ You can use a single gateway with different services at the same time. If you ar
 [!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-requirements-include.md)]
 
 ### Limitations of Analysis Services live connections
+
 You can use a live connection against tabular or multidimensional instances.
 
 | **Server version** | **Required SKU** |
@@ -114,4 +115,5 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 [On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
 [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
