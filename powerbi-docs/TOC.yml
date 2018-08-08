@@ -112,8 +112,6 @@
           href: service-install-use-apps.md
         - name: "Find and connect to an organizational content pack"
           href: service-organizational-content-pack-find-and-open.md
-        - name: "Share dashboards and reports"
-          href: service-share-dashboards.md
         - name: "Get started with Power BI Q&A"
           href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Connect to services
@@ -306,9 +304,15 @@
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
-        - name: "How should I collaborate and share dashboards and reports?"
+        - name: "How should I collaborate and share?"
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-        - name: "Create and distribute apps with dashboards and reports"
+        - name: "Share dashboards and reports"
+          href: service-share-dashboards.md
+        - name: "Create app workspaces"
+          href: service-create-workspaces.md
+        - name: "Create the new workspaces (preview)"
+          href: service-create-the-new-workspaces.md
+        - name: "Publish apps with dashboards and reports"
           href: service-create-distribute-apps.md
         - name: "Share a filtered report"
           href: service-share-reports.md
@@ -678,6 +682,8 @@
       items: 
       - name: "Visual elements for reports"
         href: desktop-visual-elements-for-reports.md        
+      - name: "Export to PDF and print reports"
+        href: desktop-export-to-pdf.md             
       - name: "Q&A in Power BI Desktop"
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
