@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 08/08/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -54,7 +54,7 @@ The basic JSON file selected in the previous section (the *St Patricks Day.json*
 That JSON file has the following required lines:
 
 * **name** - this is the theme name, which is the only required field
-* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
+* **dataColors** - A list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
 * **background**, **foreground**, and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To apply a style to a **table** or **matrix** visual, select the visual and in the **Visualizations** pane select the **Format** section, then expand **Matrix style** and select a style from the **Style** drop-down.
@@ -71,7 +71,7 @@ For easy cut-and-paste to create your own JSON file, here's the text of the *St 
         "tableAccent": "#568410"
     }
 
-From there, you can enter your own color hexcode for your selected colors.
+From there, you can enter your own color hex code for your selected colors.
 
 Beginning with the September 2017 release of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you only define the formatting that you want to affect, and anything *not* specified in your JSON file simply reverts to the Power BI default settings.
 
@@ -100,7 +100,7 @@ In addition, if you've manually set a data point's color using the Theme colors 
 Also, many **Custom Visuals** will not apply Report Themes.
 
 ## Report Theme files you can use right now
-Want to get started with **Report Themes**? Great! Here are a handful of ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report, along with an image of that Report Theme applied to the report used in this article.
+Want to get started with **Report Themes**? Great! Here are a few ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report, along with an image of that Report Theme applied to the report used in this article.
 
 * The [theme](https://go.microsoft.com/fwlink/?linkid=843924) used in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of **Report Themes**, called [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
@@ -141,7 +141,7 @@ Here are a few more report themes you can use as starting points, too:
 The basic JSON file has five required lines:
 
 * **name** - this is the theme name, which is the only required field
-* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
+* **dataColors** - A list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
 * **background**, **foreground** and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
 
 To create an extended format JSON file, with more detailed and granular control over formatting, you need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
