@@ -21,7 +21,7 @@ Using Diagnostics can answer a few scenarios, such as:
 * Derivation of [capacity metrics](https://powerbi.microsoft.com/en-us/blog/power-bi-developer-community-april-update/).
 * Tracking usage of specific datasets.
 
-## Setup diagnostics logging
+## Set up diagnostics logging
 
 ### Azure portal
 
@@ -128,15 +128,46 @@ Logs are typically available within a couple of hours after setting up logging. 
 
 Metrics and server events are integrated with xEvents in Log Analytics for side-by-side analysis. Log Analytics can also be configured to receive events from other Azure services providing a holistic view of diagnostic logging data across your architecture.
 
-To view your diagnostic data in Log Analytics, open the Log Search page from the left menu or the Management area, as shown below.
+To view your diagnostic data in Log Analytics, open the **Logs** page from the left menu or the Management area, as shown below.
 
-Now that you've enabled data collection, in **Log Search**, click **All collected data**.
+![Log Analytics page](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics.png)
 
-In **Type**, click **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine events. Notice a Log Analytics query is created on-the-fly. The EventClass\_s field contains xEvent names, which may look familiar if you've used xEvents for on-premises logging.
+Now that you've enabled data collection, in **Logs**, click **All collected data**.
+
+![All collected Data](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-all-collected-data.png)
+
+In **Type**, select **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine events. Notice a Log Analytics query is created on-the-fly.
+
+![Azure Diagnostics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-azure-diagnostics.png)
 
 Click **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
 Be sure to see [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
+
+### Queries
+
+There are hundreds of queries you can use. Here are a few to get you started. To learn more about using the new Log Search query language, see [Understanding log searches in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
+
+* Query return that took less than five minutes (300,000 milliseconds) to complete.
+
+    ```
+    search *
+    | where Type == "AzureDiagnostics"
+    | where ( OperationName == "QueryEnd" )
+    | where toint(Duration_s) < 300000
+    ```
+    
+    ![Duration query results](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-duration-query.png)
+
+* Identify capacity names.
+
+    ```
+    search *
+    | where ( Type == "AzureDiagnostics" )
+    | summarize count() by CapacityName_s 
+    ```
+    
+    ![Capacity Name query results](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-capacity-name-query.png)
 
 ## Next steps
 
