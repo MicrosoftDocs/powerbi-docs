@@ -26,13 +26,13 @@ to Install the Premium Capacity Monitoring App, follow the steps below:
 
 1. Go to the **Apps** menu in the Power BI site
 
-![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
+    ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. Click get apps.
 
 3. Click on **Get apps**, and in the **Apps** category, search for **Power BI Premium Capacity Monitoring**.
 
-![Select the app](media/service-admin-premium-monitor-capacity/report-app.png)
+    ![Select the app](media/service-admin-premium-monitor-capacity/report-app.png)
 
 4. Subscribe to install the app.
 
