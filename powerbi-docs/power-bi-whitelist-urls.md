@@ -13,46 +13,40 @@ ms.date: 08/10/2018
 
 # Power BI URLs
 
-**The Power BI service (online)** requires connectivity to the Internet. The endpoints below should be reachable for customers using the Power BI service.
+**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using Power BI.
 
-To use the Power BI service, you must have access to connect to the endpoints marked **required** in the tables below.
+To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, as well as any endpoints marked **required on linked pages**.
 
-Power BI is requested from browsers, clients, and servers to require an authenticated user to be passed. The Power BI service only requires TCP Port 443.
+Power BI service only requires TCP Port 443 to be opened for the listed endpoints.
 
-Wildcards represent all levels under the root domain, and we use N/A when information isn't available. The Destination column is a list with FQDN/domains, links to the [O365 URL site](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity), along with port information.
+Wildcards ( represented by an asterisk (*) ) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external pages which contain further endpoint information.
 
-The information in the tables below only reference the **public cloud**. The **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced in the tables below.
+The information in the tables below only references the **public cloud**. This means that the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced in the tables below.
 
 ## Authentication
 
-Power BI depends on the required endpoints in the Office 365 portal and the Office 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints marked required in the table below. If your organization uses **Azure AD Connect (AAD Connect)**, **AD FS**, or **multi-factor authentication**, you can find the associated endpoints below.
-
-### Authentication and identity FQDNs
-
-If you’re using Active Directory Federation Services (AD FS) with your deployment, you can also use AD FS client access policies with Windows Server 2012 R2 or client access policies with AD FS 2.0 to further restrict and control access to Office 365.
+Power BI depends on the required endpoints in the Office 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked page below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | **Required:** Sign-in page | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) for more details | N/A |
+| 1 | **Required:** Authentication and identity | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) for more details | N/A |
 
 ## General site usage
 
-To access some general information with Power BI, you must connect to the endpoints marked required in the table below.
+For general usage of Power BI, you must be able to connect to the endpoints in the table and linked pages below.
 
 |     Row     |       Purpose     |       Destination     |       Port(s)     |
 |-------------|-----------------------------------|-------------------------------------|----------------|------------------------|--------------------------------------------------------------|
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
 | 2 | **Required:** Office 365 Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) for more details | N/A |
 | 3 | **Required:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Required:** Telemetry (AppInsights) | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Optional:** Marketing Messages  | dynmsg.modpim.com | TCP 443 |
-| 6 | **Optional:** NPS Surveys  | nps.onyx.azure.net | TCP 443 |
+| 4 | **Required:** Service Telemetry | dc.services.visualstudio.com | TCP 443 |
+| 5 | **Optional:** Informational Messages | dynmsg.modpim.com | TCP 443 |
+| 6 | **Optional:** NPS Surveys | nps.onyx.azure.net | TCP 443 |
 
 ## Administration
 
-Power BI depends on the required endpoints in the Office 365 portal. Power BI also depends on Office 365 authentication and identity sections. To use any Office 365 services, you must be able to connect to the endpoints marked required in the table below.
-
-The administration URLs are not just for the Office 365 portal; they are also for the Power BI admin portal.
+To perform administrative functions within Power BI, you must be able to connect to the endpoints in the linked pages below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
@@ -61,30 +55,28 @@ The administration URLs are not just for the Office 365 portal; they are also fo
 
 ## Get Data
 
-To be able to get data from specific data sources such as OneDrive, you must be able to connect to the endpoints marked required in the table below.
+To be able to get data from specific data sources such as OneDrive, you must be able to connect to the endpoints in the table below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | **Required:** AppSource | appsource.microsoft.com | TCP 443 |
+| 1 | **Required:** AppSource (internal or external apps in Power BI) | appsource.microsoft.com | TCP 443 |
 | 2 | **Optional:** Import Files From OneDrive Personal | Go [here](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) for more details | N/A |
-| 3 | **Optional:** Power BI in 60-Seconds video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
+| 3 | **Optional:** Power BI in 60-Seconds tutorial video | *.doubleclick.net, *.ggpht.com, *.google.com, *.googlevideo.com, *.youtube.com, *.ytimg.com,  fonts.gstatic.com | TCP 443 |
 | 4 | **Optional:** PubNub streaming data sources | Go [here](https://support.pubnub.com/support/solutions/articles/14000043522) for more details | N/A |
 
 ## Dashboard and Report integration
 
-Power BI depends on the required endpoints to be able to integrate your dashboards and report with your applications. You must be able to connect to the endpoints marked required in the table below.
+Power BI depends on certain endpoints to be able to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked pages below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | **Required:** Viewing a report published to web | *.analysis.windows.net | TCP 443 |
-| 2 | **Optional:** Bing Maps Integration | bing.com, platform.bing.com, *.dynamic.tiles.virtualearth.net, *.virtualearth.net | TCP 443 | |
-| 3 | **Optional:** Excel Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
+| 1 | **Optional:** Excel Integration | Go [here](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) for more details | N/A |
 
 ## Custom visuals
 
 You can use [custom visuals](power-bi-custom-visuals.md) in Power BI to create a unique type of visual that’s tailored to you, or the data insights you’re trying to convey.
 
-Power BI depends on the required endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints marked required in the table below.
+Power BI depends on certain endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints in the table and linked pages below.
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
@@ -95,7 +87,7 @@ Power BI depends on the required endpoints to be able to view and access the cus
 
 ## External related sites
 
-To reach out to other sites related to Power BI such as the community page or the ideas page, you must be able to connect to the endpoints marked required in the table below.
+To visit external sites related to Power BI such as the community site or the documentation site, you must be able to connect to the endpoints in the table below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
