@@ -22,7 +22,7 @@ The Power BI online service only requires TCP Port 443 to be opened for the list
 Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites, which contain further endpoint information.
 
 >[!Important]
->The information in the tables below only references the **public cloud**, but the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced.
+>The information in the tables below don't represent the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud**.
 
 ## Authentication
 
