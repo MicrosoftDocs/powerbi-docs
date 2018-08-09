@@ -15,13 +15,13 @@ ms.date: 08/10/2018
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using Power BI.
 
-To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, as well as any endpoints marked **required on linked sites**.
+To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required on the linked sites**.
 
 Power BI service only requires TCP Port 443 to be opened for the listed endpoints.
 
-Wildcards ( represented by an asterisk (*) ) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites which contain further endpoint information.
+Wildcards (represented by an asterisk (*)) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites, which contain further endpoint information.
 
-The information in the tables below only references the **public cloud**. This means that the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced in the tables below.
+The information in the tables below only references the **public cloud**. The **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced in the tables below.
 
 ## Authentication
 
@@ -87,7 +87,7 @@ Power BI depends on certain endpoints to be able to view and access the custom v
 
 ## External related sites
 
-To visit external sites related to Power BI such as the community site or the documentation site, you must be able to connect to the endpoints in the table below.
+To visit external sites that are related to Power BI such as the community site or the documentation site, you must be able to connect to the endpoints in the table below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
