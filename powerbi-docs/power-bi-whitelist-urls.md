@@ -13,13 +13,13 @@ ms.date: 08/10/2018
 
 # Power BI URLs
 
-**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using the Power BI onlkine service.
+**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using the Power BI online service.
 
 To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites**.
 
 The Power BI online service only requires TCP Port 443 to be opened for the listed endpoints.
 
-Wildcards (represented by an asterisk) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites, which contain further endpoint information.
+Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites, which contain further endpoint information.
 
 >[!Important]
 >The information in the tables below only references the **public cloud**, but the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced.
