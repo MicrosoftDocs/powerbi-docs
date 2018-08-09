@@ -25,7 +25,7 @@ Using Diagnostics can answer a few scenarios, such as:
 
 ### Azure portal
 
-1. In [Azure portal](https://portal.azure.com) > Power BI embedded resource, click **Diagnostic logs** in the left navigation, and then click **Turn on diagnostics**.
+1. In [Azure portal](https://portal.azure.com) > Power BI Embedded resource, click **Diagnostic logs** in the left navigation, and then click **Turn on diagnostics**.
 
     ![Turn on diagnostic logging for Power BI Embedded in the Azure portal](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 
@@ -35,9 +35,9 @@ Using Diagnostics can answer a few scenarios, such as:
 
     * **Archive to a storage account** - To use this option, you need to connect to an existing storage account. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account), and follow the instructions to create a storage account. Then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log file storage is in JSON format.
     * **Stream to an event hub** - To use this option, you need to connect to an existing Event Hub namespace and event hub. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages the particularly useful [Azure Log Analytics](Azure Log Analytics), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
+    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages the particularly useful [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
     For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
-    * **Engine** - Select this option to log the set of engine [xEvents listed above](#whats-logged) below.
+    * **Engine** - Select this option to log the set of engine [events listed](#whats-logged) below.
     * **AllMetrics** - Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
 3. Click **Save**.
@@ -45,6 +45,40 @@ Using Diagnostics can answer a few scenarios, such as:
     If you want to change how your diagnostic logs are saved at any point in the future, you can return to this page to modify settings.
 
     ![Diagnostics settings](media/azure-pbie-diag-logs/diag-settings.png)
+
+### Using PowerShell to enable diagnostics
+
+To enable metrics and diagnostics logging by using PowerShell, use the following commands:
+
+* To enable storage of diagnostics logs in a storage account, use this command:
+
+    ```powershell
+    Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -StorageAccountId [your storage account id] -Enabled $true
+    ```
+    The storage account ID is the resource ID for the storage account where you want to send the logs.
+
+* To enable streaming of diagnostics logs to an event hub, use this command:
+
+    ```powershell
+    Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -ServiceBusRuleId [your service bus rule id] -Enabled $true
+    ```
+* The Azure Service Bus rule ID is a string with this format:
+
+    ```powershell
+    {service bus resource ID}/authorizationrules/{key name}
+    ```
+
+* To enable sending diagnostics logs to a Log Analytics workspace, use this command:
+
+    ```powershell
+        Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -WorkspaceId [resource id of the log analytics workspace] -Enabled $true
+    ```
+
+* You can obtain the resource ID of your Log Analytics workspace by using the following command:
+
+    ```powershell
+    (Get-AzureRmOperationalInsightsWorkspace).ResourceId
+    ```
 
 You can combine these parameters to enable multiple output options.
 
@@ -62,7 +96,7 @@ You can select **Engine** and/or the **AllMetrics** categories.
 
 ### Engine
 
-The engine category instructs the resource to log the following Events, and on each of the events there are properties:
+The engine category instructs the resource to log the following events, and on each of the events there are properties:
 
 |     Event Name     |     Event Description     |
 |----------------------------|----------------------------------------------------------------------------------|
