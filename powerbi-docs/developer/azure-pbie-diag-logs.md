@@ -35,14 +35,14 @@ Using Diagnostics can answer a few scenarios, such as:
 
     * **Archive to a storage account** - To use this option, you need to connect to an existing storage account. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account), and follow the instructions to create a storage account. Then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log file storage is in JSON format.
     * **Stream to an event hub** - To use this option, you need to connect to an existing Event Hub namespace and event hub. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages the particularly useful [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
+    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages [Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
     For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
     * **Engine** - Select this option to log the set of engine [events listed](#whats-logged) below.
     * **AllMetrics** - Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
 3. Click **Save**.
 
-    If you want to change how your diagnostic logs are saved at any point in the future, you can return to this page to modify settings.
+    To change how your diagnostic logs are saved, you can return to this page to modify settings.
 
     ![Diagnostics settings](media/azure-pbie-diag-logs/diag-settings.png)
 
@@ -115,7 +115,7 @@ The engine category instructs the resource to log the following events, and on e
 | Property Name | Vertipaq Query End Example | Property Description |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Event Class is used to categorize events. |
-| EventSubclass | 0 | Event Subclass provides additional information about each event class. (e.g. 0: VertiPaq Scan) |
+| EventSubclass | 0 | Event Subclass provides additional information about each event class. (for example, 0: VertiPaq Scan) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Root activity ID. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
@@ -160,7 +160,7 @@ Logs are typically available within a couple of hours after setting up logging. 
 
 ## View logs in Log Analytics
 
-Metrics and server events are integrated with xEvents in Log Analytics for side-by-side analysis. Log Analytics can also be configured to receive events from other Azure services providing a holistic view of diagnostic logging data across your architecture.
+Metrics and server events are integrated with xEvents in Log Analytics for side-by-side analysis. Log Analytics can also be configured to receive events from other Azure services that provide a holistic view of diagnostic logging data across your architecture.
 
 To view your diagnostic data in Log Analytics, open the **Logs** page from the left menu or the Management area, as shown below.
 
