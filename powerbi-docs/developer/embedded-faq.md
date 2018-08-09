@@ -57,29 +57,32 @@ Power BI Embedded is a set of APIs available for developers to create an embedde
 
 Here is a partial list of differences you may use with each.
 
-|Feature  |Power BI Embedded<br>(A SKUs) |Power BI Premium Capacity<br>(EM SKUS)  | 
-|---------|---------|---------|
-|Embed artifacts from a Power BI App workspaces     |Azure capacity |Office 365 capacity |
-|Power BI license required to consume reports |No  |Yes |
-|Consume Power BI reports in an Embedded application |Yes  |Yes |
-|Consume Power BI reports in SharePoint |No |Yes |
-|Consume Power BI reports in Teams |No |Yes |
+| Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
+|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
+|   | (A SKUs) | (EM SKUs) | (P SKUs) |
+| Embed artifacts from a Power BI App   workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
+| Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
+| Consume Power BI reports in   SharePoint | No | Yes | Yes |
+| Consume Power BI reports in   Dynamics | No | Yes | Yes |
+| Consume Power BI reports in Teams | No | Yes | Yes |
+| Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
+| Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
 
 ### Power BI now offers three SKUs for embedding: A SKUs, EM SKUs and P SKUs. Which one should I purchase for my scenario?
 
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase     |Azure portal |Office |Office |
-|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Embed content in other SaaS applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Embed content in your own application<br>* Embed content in other SaaS applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
+|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams |Combine embedding in applications and use the Power BI Service in the same capacity |
 
 ### What are the prerequisites to create a PBIE capacity in Azure?
 
-- You need to sign in to your organizational directory (MSA accounts are not supported).
-- You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
-- You need to have an Azure subscription in your organizational directory.
+* You need to sign in to your organizational directory (MSA accounts are not supported).
+* You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
+* You need to have an Azure subscription in your organizational directory.
 
 ### How can I monitor capacity consumption?
 
@@ -208,6 +211,8 @@ Power BI Embedded bills on a predictable hourly rate based on the type of node(s
 It is required that any analyst that needs to add reports to a Power BI workspace, any developer that requires use of the REST APIs, any tenant admin that needs to manage the Power BI tenant and capacity will need a Power BI Pro license.
 
 Because Power BI Embedded allows use of the Power BI portal for managing and validating embedded content, the Power BI Pro license is required to authenticate the App inside PowerBI.com to get access to the reports in the right repositories.
+
+However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your own application, the end-user does not need a Pro license as he isn't required to be a Power BI user at all.
 
 ### Can I get started for free?
 

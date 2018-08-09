@@ -32,7 +32,7 @@ This URI opens the Power BI mobile app to a specific dashboard:
 
 To find the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
 
-https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**
+`https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**`
 
 If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>` either before or after the dashboard ID. For example, 
 
@@ -47,7 +47,7 @@ This URI opens a specific tile in focus in the Power BI mobile app:
 
 To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service (https://powerbi.com) and open the tile in focus mode. For example, see the highlighted sections of this URL:
 
-https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+`https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
 
 For this tile, the URI would be:
 

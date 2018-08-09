@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2018
+ms.date: 08/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -89,7 +89,6 @@ The following image shows the **Get Data** window for **Database**.
 The **Power BI** category provides the following data connections:
 
 * Power BI datasets
-* Power BI datapools (beta)
 
 The following image shows the **Get Data** window for **Power BI**.
 
@@ -164,7 +163,7 @@ The **Other** category provides the following data connections:
 * Active Directory
 * Microsoft Exchange
 * Hadoop File (HDFS)
-* Spark (Beta)
+* Spark
 * R Script
 * ODBC
 * OLE DB

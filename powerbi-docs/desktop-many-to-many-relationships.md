@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -22,14 +22,14 @@ With the **Many-to-many relationship** feature in **Power BI Desktop** you can j
 The **many-to-many relationships** capability in **Power BI Desktop** is part of a collection of three related features:
 
 * **Composite models** - allows a report to have multiple data connections, including DirectQuery connections or import, in any combination thereof.
-* **Many-to-many relationships** - with **composite models** you can establish **many-to-many relationships** between tables, removing requirements for unique values in tables, and revoving prior work-arounds such as introducing new tables just to establish relationships. 
+* **Many-to-many relationships** - with **composite models** you can establish **many-to-many relationships** between tables, removing requirements for unique values in tables, and removing prior work-arounds such as introducing new tables just to establish relationships. 
 * **Storage mode** - you can now specify which visuals require a query to back-end data sources, and those that do no require it are imported even if based on DirectQuery, improving performance and reducing back-end load. Previously, even simple visuals like slicers initiated queries being sent to back-end sources. 
 
 This collection of three related features for **composite models** are each described in separate articles:
 
 * **Composite models** are described in detail in the [composite models in Power BI Desktop (Preview)](desktop-composite-models.md) article.
 * **Many-to-many relationships** are described in this article.
-* **Storage mode** is desribed in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
+* **Storage mode** is described in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
 
 ## Enabling the many-to-many relationships preview feature
 
@@ -46,7 +46,7 @@ You'll need to restart **Power BI Desktop** for the feature to be enabled.
 
 Prior to availability of **many-to-many relationships**, when defining a relationship between two tables in Power BI, at least one of the columns involved in the relationship had to contain unique values. In many circumstances though, no column in the table contained unique values. 
 
-For example, two tables may have a column containing the *Country*, butthe values of *Country* were not unique in either table. To join between such tables, it was necessary to create a workaround such as introducing additional tables into the model that contained the necessary unique values. The feature **many-to-many relationships** provides an alternative approach, allowing such tables to be joined directly using a relationship with a cardinality of **Many-to-many**.  
+For example, two tables may have a column containing the *Country*, but the values of *Country* were not unique in either table. To join between such tables, it was necessary to create a workaround such as introducing additional tables into the model that contained the necessary unique values. The feature **many-to-many relationships** provides an alternative approach, allowing such tables to be joined directly using a relationship with a cardinality of **Many-to-many**.  
 
 ## Using many-to-many relationships
 
@@ -106,7 +106,7 @@ A visual showing *State* (from the *CityData* table) along with the total *Popul
 
 Note that given the use of the state from the *CityData* table in this workaround, only those *State*s in that table are listed (and thus, TX is excluded). Also, unlike the case of **Many-1** relationships, while the total row includes all *Sales* (including those of TX) the details do not include a blank row covering such mismatched rows. Similarly there would be no blank row covering any *Sales* for which there was a null value for the *State*.
 
-If *City* were also added to that visual, then whie the population per *City* is known, the *Sales* shown for *City* would simply repeat the *Sales* for the corresponding *State* (as is normally the case when grouping on a column that is not related to some aggregate measure), as shown in the following image.
+If *City* were also added to that visual, then while the population per *City* is known, the *Sales* shown for *City* would simply repeat the *Sales* for the corresponding *State* (as is normally the case when grouping on a column that is not related to some aggregate measure), as shown in the following image.
 
 ![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 

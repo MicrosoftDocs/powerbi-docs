@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 07/24/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -42,4 +42,5 @@ You can also filter and sort data in **Data View**. Each column shows an icon th
 
 You can filter individual values, or use advanced filtering based on the data in the column. 
 
-
+> [!NOTE]
+> When a Power BI model is created in a different culture than your current user interface (for example, the model was created in US English and you are viewing it in Spanish), the search box will not appear in the Data View user interface for anything other than text fields.

@@ -8,7 +8,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
+
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -27,7 +28,7 @@ The common query tasks demonstrated here are the following:
 
 We’ll use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
 
-The first data connection is an Excel workbook. The other is a Web resource (which is also used in other Power BI Desktop help content) which can be accessed from here:
+The first data connection is an Excel workbook, which you can download from [this link](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). The other is a Web resource (which is also used in other Power BI Desktop help content) which can be accessed from here:
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
