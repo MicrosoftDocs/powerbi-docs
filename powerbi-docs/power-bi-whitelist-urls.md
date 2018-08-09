@@ -15,17 +15,17 @@ ms.date: 08/10/2018
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using Power BI.
 
-To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, as well as any endpoints marked **required on linked pages**.
+To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, as well as any endpoints marked **required on linked sites**.
 
 Power BI service only requires TCP Port 443 to be opened for the listed endpoints.
 
-Wildcards ( represented by an asterisk (*) ) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external pages which contain further endpoint information.
+Wildcards ( represented by an asterisk (*) ) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination** column is a list with FQDN/domains and links to external sites which contain further endpoint information.
 
 The information in the tables below only references the **public cloud**. This means that the **U. S. Government cloud**, **the Germany cloud**, and **the China cloud** *aren't* referenced in the tables below.
 
 ## Authentication
 
-Power BI depends on the required endpoints in the Office 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked page below.
+Power BI depends on the required endpoints in the Office 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked site below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
@@ -33,7 +33,7 @@ Power BI depends on the required endpoints in the Office 365 authentication and 
 
 ## General site usage
 
-For general usage of Power BI, you must be able to connect to the endpoints in the table and linked pages below.
+For general usage of Power BI, you must be able to connect to the endpoints in the table and linked sites below.
 
 |     Row     |       Purpose     |       Destination     |       Port(s)     |
 |-------------|-----------------------------------|-------------------------------------|----------------|------------------------|--------------------------------------------------------------|
@@ -46,7 +46,7 @@ For general usage of Power BI, you must be able to connect to the endpoints in t
 
 ## Administration
 
-To perform administrative functions within Power BI, you must be able to connect to the endpoints in the linked pages below.
+To perform administrative functions within Power BI, you must be able to connect to the endpoints in the linked sites below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)
 |-------------|----------------------|-----------------------------|----------------|----------------------|--------------------------------------------------------------|
@@ -66,7 +66,7 @@ To be able to get data from specific data sources such as OneDrive, you must be 
 
 ## Dashboard and Report integration
 
-Power BI depends on certain endpoints to be able to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked pages below.
+Power BI depends on certain endpoints to be able to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked sites below.
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|---------------------------------------------|-------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
@@ -76,7 +76,7 @@ Power BI depends on certain endpoints to be able to support your dashboards and 
 
 You can use [custom visuals](power-bi-custom-visuals.md) in Power BI to create a unique type of visual that’s tailored to you, or the data insights you’re trying to convey.
 
-Power BI depends on certain endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints in the table and linked pages below.
+Power BI depends on certain endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints in the table and linked sites below.
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
@@ -91,9 +91,9 @@ To visit external sites related to Power BI such as the community site or the do
 
 |     Row     |     Purpose     |     Destination     |       Port(s)     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------|--------------------------------------------------------------|
-| 1 | **Optional:** The community page  |  community.powerbi.com | TCP 443 |
-| 2 | **Optional:** The ideas page | ideas.powerbi.com | TCP 443 |
-| 3 | **Optional:** The documentation page | docs.microsoft.com | TCP 443 |
+| 1 | **Optional:** The community site | community.powerbi.com | TCP 443 |
+| 2 | **Optional:** The ideas site | ideas.powerbi.com | TCP 443 |
+| 3 | **Optional:** The documentation site | docs.microsoft.com | TCP 443 |
 | 4 | **Optional:** Download sources (e. g. Power BI Desktop) | download.microsoft.com | TCP 443 |
-| 5 | **Optional:** External redirects | aka.ms, go.microsoft.com  | TCP 443 |
-| 6 | **Optional:** The landing page and the support page | powerbi.microsoft.com | TCP 443 |
+| 5 | **Optional:** Landing site and support site | powerbi.microsoft.com | TCP 443 |
+| 6 | **Optional:** External redirects to the sites listed above | aka.ms, go.microsoft.com  | TCP 443 |
