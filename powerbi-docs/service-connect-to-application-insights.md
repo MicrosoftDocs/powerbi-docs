@@ -19,7 +19,7 @@ Use Power BI to create powerful custom dashboards from [Application Insights](ht
 Connect to the [Application Insights content pack for Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->This integration method is now **deprecated**. To learn more about the preferred method of connecting Application Insights to PowerBI use the [export analytic query functionality](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
+>This integration method is now **deprecated**. To learn more about the preferred method of connecting Application Insights to Power BI use the [export analytic query functionality](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
