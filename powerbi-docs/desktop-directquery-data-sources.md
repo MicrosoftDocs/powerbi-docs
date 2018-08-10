@@ -19,7 +19,7 @@ LocalizationGroup: Connect to data
 The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
-* Azure Data Bricks
+* Azure Databricks
 * Azure HDInsight Spark (Beta)
 * Azure SQL Database
 * Azure SQL Data Warehouse
@@ -36,7 +36,7 @@ The following data sources support DirectQuery in Power BI:
 * Teradata Database
 * Vertica (Beta)
 
-Data sources that are have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
+Data sources that have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
 
 The only difference between **(Beta)** and **(Preview)** data sources is that **(Preview)** sources must be enabled as a Preview feature before they become available for use. To enable a **(Preview)** data connector, in **Power BI Desktop** go to **File > Options and Settings > Options**, and then select **Preview features**.
 
