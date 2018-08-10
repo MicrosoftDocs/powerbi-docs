@@ -17,7 +17,7 @@ ms.date: 08/10/2018
 
 To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
-Endpoints marked optional may be **_whitelisted_** for specific functionality to work.
+Endpoints marked **optional** may be **_whitelisted_** for specific functionality to work.
 
 The Power BI online service only requires TCP Port 443 to be opened for the listed endpoints.
 
@@ -32,7 +32,7 @@ Power BI depends on the required endpoints in the Office 365 authentication and 
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | **Required:** Authentication and identity | [See the "Office 365 authentication and identity" section on the Office 365 whitelist site](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) | N/A |
+| 1 | **Required:** Authentication and identity | See the [Office 365 authentication and identity" section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_identity) | N/A |
 
 ## General site usage
 
@@ -41,11 +41,11 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
-| 2 | **Required:** Office 365 Integration | [See the "Office 365 portal and shared" section on the Office 365 whitelist site](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) | N/A |
+| 2 | **Required:** Office 365 integration | See the [Office 365 portal and shared section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) | N/A |
 | 3 | **Required:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Required:** Service Telemetry | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Optional:** Informational Messages | dynmsg.modpim.com | TCP 443 |
-| 6 | **Optional:** NPS Surveys | nps.onyx.azure.net | TCP 443 |
+| 4 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
+| 5 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
+| 6 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
 
 ## Administration
 
@@ -53,8 +53,7 @@ To perform administrative functions within Power BI, you must be able to connect
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | **Required:** Managing Users (O365 portal) | [See the "Office 365 portal and shared section" on the Office 365 whitelist site](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) | N/A |
-| 2 | **Required:** Viewing Audit Logs (O365 portal) | [See the "Office 365 portal and shared" section on the Office 365 whitelist site](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) | N/A |
+| 1 | **Required:** For managing users and viewing audit logs (O365 portal) | See the [Office 365 portal and shared section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_portal-identity) from the Office 365 whitelist site | N/A |
 
 ## Get Data
 
@@ -63,9 +62,9 @@ To be able to get data from specific data sources such as OneDrive, you must be 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
 | 1 | **Required:** AppSource (internal or external apps in Power BI) | appsource.microsoft.com | TCP 443 |
-| 2 | **Optional:** Import Files From OneDrive Personal | [See the "Required URLs and ports for OneDrive" site](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) | N/A |
+| 2 | **Optional:** Import files From OneDrive personal | See the [Required URLs and ports for OneDrive site](https://support.office.com/en-ie/article/required-urls-and-ports-for-onedrive-ce15d2cc-52ef-42cd-b738-d9c6f9b03f3a) | N/A |
 | 3 | **Optional:** Power BI in 60-Seconds tutorial video | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
-| 4 | **Optional:** PubNub streaming data sources | [See PubNub documentation.](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
+| 4 | **Optional:** PubNub streaming data sources | [See PubNub documentation](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
 
 ## Dashboard and Report integration
 
@@ -73,20 +72,18 @@ Power BI depends on certain endpoints to be able to support your dashboards and 
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | **Required:** Excel Integration | [See the "Office Online" section on the Office 365 whitelist](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) | N/A |
+| 1 | **Required:** Excel integration | See the [Office Online section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) from the Office 365 whitelist site | N/A |
 
 ## Custom visuals
-
-You can use [custom visuals](power-bi-custom-visuals.md) in Power BI to create a unique type of visual that’s tailored to you, or the data insights you’re trying to convey.
 
 Power BI depends on certain endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints in the table and linked sites below.
 
 | Row | Purpose | Destination | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | **Required:** Import a custom visual from the Marketplace Interface and a file | *.microsoft.com </br> *.bing.com </br> *.msecnd.net </br> *.osi.office.net </br> *.azureedge.net </br> ajax.aspnetcdn.com </br> nexus.ensighten.com </br> store.office.com | TCP 443 |
+| 1 | **Required:** Import a custom visual from the Marketplace interface and a file | *.microsoft.com </br> *.bing.com </br> *.msecnd.net </br> *.osi.office.net </br> *.azureedge.net </br> ajax.aspnetcdn.com </br> nexus.ensighten.com </br> store.office.com | TCP 443 |
 | 2 | **Optional:** Bing Maps | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
-| 3 | **Optional:** PowerApps | [See the "Required services" section on the PowerApps system requirements site](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) | N/A |
-| 4 | **Optional:** Visio | [See the "Office Online" section on the Office 365 whitelist site](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) | N/A |
+| 3 | **Optional:** PowerApps | See the [Required services section](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
+| 4 | **Optional:** Visio | See the [Office Online section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) from the Office 365 whitelist site | N/A |
 
 ## External related sites
 
