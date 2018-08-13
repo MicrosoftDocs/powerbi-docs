@@ -31,7 +31,7 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 ![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
-* **Table** and **Field** names are case sensitive, **value** is not.
+* **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
 
 ### Field types
@@ -120,7 +120,7 @@ Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data 
 Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3rd 2018 or start with August 4th 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results will include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
 
 ## Special characters in URL filters
-Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* (**_x**) and the 4-digit **Unicode**. If the Unicode is less than 4 characters, you'll need to pad it with zeroes. Here are some examples.
+Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* (**_x**) and the 4-digit **Unicode**. If the Unicode is fewer than 4 characters, you'll need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
@@ -158,7 +158,7 @@ This will be helpful when you want to see different results; filtered on the das
 ## Considerations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
-* When using the *in* operator, the values to the right of *in* must be either a comma separated list enclosed in parentheses.    
+* When using the *in* operator, the values to the right of *in* must be either a comma-separated list enclosed in parentheses.    
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.    
 * Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
 * The long data type is (2^53-1) due to Javascript limitations.
