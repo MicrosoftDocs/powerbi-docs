@@ -1018,19 +1018,19 @@
     - name: Tutorials
       items:
       - name: "Developing a Power BI Custom Visual"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
       - name: "Using Capabilities"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/capabilities/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/ 
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/ 
       - name: "Objects and Properties"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
       - name: "Advanced Edit Mode"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
       - name: "Migrating to versioned API guide"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/migrating-to-versioned-api-guide/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
     - name: How to
       items:
       - name: "Get a custom visual certified"
@@ -1044,7 +1044,7 @@
     - name: Resources
       items:
       - name: "Dev Center"
-        href: https://powerbi.microsoft.com/en-us/developers/
+        href: https://powerbi.microsoft.com/developers/
       - name: "Create a custom visual with the Developer Tools"
         href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
