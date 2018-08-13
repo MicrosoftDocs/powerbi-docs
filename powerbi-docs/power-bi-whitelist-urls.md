@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 08/13/2018
 ---
 
 # Power BI URLs
@@ -84,16 +84,3 @@ Power BI depends on certain endpoints to be able to view and access the custom v
 | 2 | **Optional:** Bing Maps | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
 | 4 | **Optional:** Visio | See the [Office Online section](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_officeonline) from the Office 365 whitelist site | N/A |
-
-## External related sites
-
-To visit external sites that are related to Power BI such as the community site or the documentation site, you must be able to connect to the endpoints in the table below.
-
-| Row | Purpose | Destination(s) | Port(s) |
-|-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
-| 1 | **Optional:** The community site | community.powerbi.com | TCP 443 |
-| 2 | **Optional:** The ideas site | ideas.powerbi.com | TCP 443 |
-| 3 | **Optional:** The documentation site | docs.microsoft.com | TCP 443 |
-| 4 | **Optional:** Download sources (e. g. Power BI Desktop) | download.microsoft.com | TCP 443 |
-| 5 | **Optional:** Landing site and support site | powerbi.microsoft.com | TCP 443 |
-| 6 | **Optional:** External redirects to the sites listed above | aka.ms </br> go.microsoft.com | TCP 443 |
