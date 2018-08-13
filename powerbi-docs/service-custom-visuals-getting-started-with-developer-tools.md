@@ -174,10 +174,10 @@ You can now begin developing your visual.
 You can create a new visual project by running the following command.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-You can replace *My Visual Name* with the name you want to give the visual. This can be changed later by modifying the `name` and `displayName` fields within the generated `pbiviz.json` file.
+You can replace *MyVisualName* with the name you want to give the visual. This can be changed later by modifying the `name` and `displayName` fields within the generated `pbiviz.json` file.
 
 This command will create a new folder in the direct where the command was run. It will generate a basic starter template for your visual. Once the command completes, you can open the directory and use your favorite editor to start working on your new visual.
 
