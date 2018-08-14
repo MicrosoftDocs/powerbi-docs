@@ -33,9 +33,9 @@ For related Power BI "What's New" information, see:
 
  August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
-- [Reporting]()
-- [Analytics]()
-- [Modeling]()
+- [Reporting](#reporting)
+- [Analytics](#analytics)
+- [Modeling](#modeling)
 
 Out of the whole long list of new features, these stand out as especially interesting.
 
