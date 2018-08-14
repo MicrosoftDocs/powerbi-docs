@@ -25,7 +25,7 @@ Using Diagnostics can answer a few scenarios, such as:
 
 ### Azure portal
 
-1. In [Azure portal](https://portal.azure.com) > Power BI Embedded resource, click **Diagnostic logs** in the left navigation, and then click **Turn on diagnostics**.
+1. In [Azure portal](https://portal.azure.com) > Power BI Embedded resource, select **Diagnostic logs** in the left navigation, and then select **Turn on diagnostics**.
 
     ![Turn on diagnostic logging for Power BI Embedded in the Azure portal](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 
@@ -40,7 +40,7 @@ Using Diagnostics can answer a few scenarios, such as:
     * **Engine** - Select this option to log the set of engine [events listed](#whats-logged) below.
     * **AllMetrics** - Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
-3. Click **Save**.
+3. Select **Save**.
 
     To change how your diagnostic logs are saved, you can return to this page to modify settings.
 
@@ -166,15 +166,15 @@ To view your diagnostic data in Log Analytics, open the **Logs** page from the l
 
 ![Log Analytics page](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics.png)
 
-Now that you've enabled data collection, in **Logs**, click **All collected data**.
+Now that you've enabled data collection, in **Logs**, select **All collected data**.
 
 ![All collected Data](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-all-collected-data.png)
 
-In **Type**, select **AzureDiagnostics**, and then click **Apply**. AzureDiagnostics includes Engine events. Notice a Log Analytics query is created on-the-fly.
+In **Type**, select **AzureDiagnostics**, and then select **Apply**. AzureDiagnostics includes Engine events. Notice a Log Analytics query is created on-the-fly.
 
 ![Azure Diagnostics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-azure-diagnostics.png)
 
-Click **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
+Select **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
 Be sure to see [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
 
@@ -190,7 +190,7 @@ There are hundreds of queries you can use. Here are a few to get you started. To
     | where ( OperationName == "QueryEnd" )
     | where toint(Duration_s) < 300000
     ```
-    
+
     ![Duration query results](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-duration-query.png)
 
 * Identify capacity names.
@@ -200,7 +200,7 @@ There are hundreds of queries you can use. Here are a few to get you started. To
     | where ( Type == "AzureDiagnostics" )
     | summarize count() by CapacityName_s 
     ```
-    
+
     ![Capacity Name query results](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-capacity-name-query.png)
 
 ## Next steps
