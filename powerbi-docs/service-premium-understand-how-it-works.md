@@ -5,9 +5,9 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: powerbi
 ms.component: powerbi-admin
-ms.author: susuresh
-ms.reviewer: susuresh
-author: suds001
+ms.author: mblythe
+ms.reviewer: mblythe
+author: mgblythe
 manager: kfile
 ---
 
