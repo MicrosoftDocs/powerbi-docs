@@ -180,7 +180,7 @@ While we are making updates to tooltips to support table and matrix, we also add
 #### Slicer accessibility
 
 Being able to interact with and change slicer values is one of the most important tasks for any report consumer, and for a while this wasn’t available to users who relied solely on a keyboard to navigate. We’re very happy to announce that keyboard and screen reader users can now go beyond consuming a report as is and can start interacting with slicers on their reports.
-When you want to explore the current state of a slicer using just a keyboard, the first thing you’ll need to do is enter into the slicer. You can do this with the Ctrl+Right Arrow keyboard shortcut. This will move your focus to the first element inside the slicer. You can then tab around the various components of the slicer, such as the clear icon, dropdowns and text fields to update values, and the slicer type dropdown. As your focus moves, helpful information is also read out by the screen reader, if you have one on.
+When you want to explore the current state of a slicer using just a keyboard, the first thing you’ll need to do is enter into the slicer. You can do this with the Ctrl+Right Arrow keyboard shor0tcut. This will move your focus to the first element inside the slicer. You can then tab around the various components of the slicer, such as the clear icon, dropdowns and text fields to update values, and the slicer type dropdown. As your focus moves, helpful information is also read out by the screen reader, if you have one on.
 This is a big step forward in terms of accessibility and we have even more accessibility features planned for the coming months.
 
 #### Formatting pane improvements
