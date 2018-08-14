@@ -13,7 +13,7 @@ ms.date: 08/15/2018
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
+Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -29,7 +29,7 @@ For related Power BI "What's New" information, see:
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 
-## Auguast 2018
+## August 2018
 
  August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
@@ -37,7 +37,7 @@ For related Power BI "What's New" information, see:
 - [Analytics](#analytics)
 - [Modeling](#modeling)
 
-Out of the whole long list of new features, these stand out as especially interesting.
+Out of the whole long list of new features, these features stand out as especially interesting.
 
 #### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#theming)
 
@@ -49,8 +49,7 @@ Out of the whole long list of new features, these stand out as especially intere
 
 #### Report Theming
 
-We are very excited to announce we’ve added report theming to this release of Power BI Report Server, which will allow you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts will automatically update to use the theme colors, and you’ll have access to the theme colors from the color palette.
-You can upload a theme file using the Import Theme option under the Switch Theme button.
+We've added report theming to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you’ll have access to the theme colors from the color palette. You can upload a theme file using the Import Theme option under the Switch Theme button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:
@@ -65,19 +64,15 @@ Here is a simple sample JSON theme that just updates the default colors of the r
 }
 ```
 
-When the theme is uploaded, the colors will automatically be applied to all charts.
+When the theme is uploaded, the colors are automatically applied to all charts. You’ll also see the colors in the color palette, so you can use them in other places as well.
 
-You’ll also see the colors in the color palette, so you will be able to use them in other places as well.
-
-Applied theme colors will follow your reports when you save them to Power BI Report Server.
+Applied theme colors follow your reports when you save them to Power BI Report Server.
 If you are looking for some examples to get started, you can download the theme I used in this example, a theme that is more color blind user friendly than our default, or if you are feeling nostalgic, a zip file of all the Power View themes. You can find other themes or submit your own theme on our report theme gallery in the Power BI Community. You can also read our documentation to learn more about all the properties you can control through theming.
 
 #### Buttons to trigger actions
 
 Now that we have several different actions that can be triggered by just a click on a shape or image, we decided it was time to add a button control to Power BI as well. These new buttons are geared towards letting you create an app-like experience with interactive elements in your report.
 A button can be inserted from the ribbon, by picking on of several icons or selecting a blank button. Once on your page, you can choose to add text, change the icon, add a fill color or give your button an outline. You have lots of control around the look of the icon and text including size, color, and alignment. Once you pick your default look for your button, you can then use the dropdown to change how it looks on hover or when it is being clicked on.
-
-As with images and shapes, you can pick the action that will be performed on click through the Action card. Currently these actions include ‘back’ and a specific bookmark. For certain icon types, we will have a default action assigned.
 
 #### Combo chart line styles
 
@@ -86,30 +81,27 @@ You can now change your combo chart lines to different styles and have that opti
 #### Improved default sort for visuals
 
 One of our goals is to make it fast and easy for you to create beautiful, well formatted reports. We’ve improved our default visual sort, so you won’t need to change it nearly as frequently.
-Our new logic for sorting visuals is:
 
-1.	If your visual uses a column that has an associated order-by column, we will sort by that by default (you can set this up using the Sort by column feature)
-2.	Otherwise, if your field is a date field, we will sort in chronological order
-3.	Lastly, if you don’t have an order-by column or date field, we will sort by the measure descending.
-Of course, as always we will always respect any sort order you manually pick.
+Our new logic for sorting visuals is as follows:
+
+1. If your visual uses a column that has an associated order-by column, then we sort by that by default (you can set this up using the Sort by column feature)
+2. Otherwise, if your field is a date field, then we sort in chronological order
+3. Lastly, if you don’t have an order-by column or date field, then we sort by the measure descending.
+
+Of course, we always respect any sort order you manually choose.
 
 #### Numeric range slicer
 
-The numeric range is generally available to use, and therefore, is now part of the Power BI Desktop for Report Server. You’ll see it a slicer type option for numeric column without needing to turn on a preview feature. Additionally, any newly created slicers using numeric columns will default to the between mode of the numeric range slicer.
+The numeric range is generally available to use, and therefore, is now part of the Power BI Desktop for Report Server. You’ll see it a slicer type option for numeric column without needing to turn on a preview feature. Additionally, any newly created slicers using numeric columns default to the between mode of the numeric range slicer.
 
 #### Advanced slicer syncing
 
-The Advanced section of Slicer syncing pane allows you to create custom groups of slicers to sync. By default synced slicers will be put a group with a name that matches the field used in the slicer but you can override this with any name you want. This means you can create separate groups to sync slicers that use the same field; for example you’ve got two slicers using the same field on the same page, and you want to sync one of them with a slicer on another page.
-You can also put slicers that use different fields in the same group; for example you’ve got two different date fields and you want to have the selected date sync between the slicers. If the value selected in the first slicer doesn’t exist in the second slicer, you’ll see it appear at the bottom of the list of values.
-
-You can also check the Sync field changes to other slicers. With this option checked, if you swap the field used in the slicer, all the synced slicers will update to use the same field.
+The Advanced section of Slicer syncing pane allows you to create custom groups of slicers to sync. By default synced slicers are put in a group with a name that matches the field used in the slicer but you can override this with any name you want. This means you can create separate groups to sync slicers that use the same field; for example you’ve got two slicers using the same field on the same page, and you want to sync one of them with a slicer on another page.
+You can also put slicers that use different fields in the same group; for example you’ve got two different date fields and you want to have the selected date sync between the slicers. If the value selected in the first slicer doesn’t exist in the second slicer, you’ll see it appear at the bottom of the list of values. You can also check the Sync field changes to other slicers. With this option checked, if you swap the field used in the slicer, all the synced slicers update to use the same field.
 
 #### Log axis improvements
 
-We’ve greatly improved log axis in your cartesian charts.
-You should now be able to select log scale for the numeric axis of any cartesian chart, including combo chart, when you have data that is completely positive or completely negative. Reference lines should also observe the log scale and will cause the scale to resize to accommodate them.
-
-If you have data that crosses zero, you’ll now get a helpful warning in the property pane, and the scale type will revert to linear. Once your data is updated to no longer include both positive and negative values, the visual will start to use the log axis again.
+We’ve greatly improved log axis in your cartesian charts. You should now be able to select log scale for the numeric axis of any cartesian chart, including combo chart, when you have data that is completely positive or completely negative. Reference lines should also observe the log scale and cause the scale to resize to accommodate them. If you have data that crosses zero, you’ll now get a helpful warning in the property pane, and the scale type reverts to linear. Once your data is updated to no longer include both positive and negative values, the visual starts to use the log axis again.
 
 #### Data label options for funnel chart
 
