@@ -33,17 +33,17 @@ For related Power BI "What's New" information, see:
 
  August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
-[Reporting]()
-[Analytics]()
-[Modeling]()
+- [Reporting]()
+- [Analytics]()
+- [Modeling]()
 
 Out of the whole long list of new features, these stand out as especially interesting.
 
-#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#theming) 
+#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#theming)
 
 #### [Conditional formatting improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#conditionalFormattingField)
 
-### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#tableTooltips)
+#### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#tableTooltips)
 
 ### Reporting
 
@@ -87,15 +87,18 @@ You can now change your combo chart lines to different styles and have that opti
 
 One of our goals is to make it fast and easy for you to create beautiful, well formatted reports. We’ve improved our default visual sort, so you won’t need to change it nearly as frequently.
 Our new logic for sorting visuals is:
+
 1.	If your visual uses a column that has an associated order-by column, we will sort by that by default (you can set this up using the Sort by column feature)
 2.	Otherwise, if your field is a date field, we will sort in chronological order
 3.	Lastly, if you don’t have an order-by column or date field, we will sort by the measure descending.
 Of course, as always we will always respect any sort order you manually pick.
 
 #### Numeric range slicer
-The numeric range is generally available to use, and therefore, is now part of the Power BI Desktop for Report Server. You’ll see it a slicer type option for numeric column without needing to turn on a preview feature. Additionally, any newly created slicers using numeric columns will default to the between mode of the numeric range slicer. 
+
+The numeric range is generally available to use, and therefore, is now part of the Power BI Desktop for Report Server. You’ll see it a slicer type option for numeric column without needing to turn on a preview feature. Additionally, any newly created slicers using numeric columns will default to the between mode of the numeric range slicer.
 
 #### Advanced slicer syncing
+
 The Advanced section of Slicer syncing pane allows you to create custom groups of slicers to sync. By default synced slicers will be put a group with a name that matches the field used in the slicer but you can override this with any name you want. This means you can create separate groups to sync slicers that use the same field; for example you’ve got two slicers using the same field on the same page, and you want to sync one of them with a slicer on another page.
 You can also put slicers that use different fields in the same group; for example you’ve got two different date fields and you want to have the selected date sync between the slicers. If the value selected in the first slicer doesn’t exist in the second slicer, you’ll see it appear at the bottom of the list of values.
 
@@ -224,33 +227,128 @@ If you decide later you don't want that group anymore, just use Ungroup to stop 
 When you use View to play a bookmark group, it will only include the bookmarks in that group.
 
 Playing from a bookmark at the root level, such as Default View in this example, will still play through all bookmarks in your pane.
-Slicer restatement
+
+#### Slicer restatement
+
 If you are using the list slicer, you can now add a restatement, similar to the restatement in the dropdown slicer, to the slicer header through an option in the Slicer header card in the formatting pane.
- 
-Report page tooltips
+
+#### Report page tooltips
+
 We are very excited to announce that our report page tooltips feature is included in this update of Power BI Report Server. This feature lets you design a report page to be used as a custom tooltip for other visuals in your report. This gives you full flexibility to design whatever kind of custom tooltips you want, from using cards to show detailed information to miniature drillthrough pages shown on hover.
 To start creating your custom report page tooltips, first you have to design the tooltip you want to show. We recommend you use a smaller page size, so you don’t have to worry about the tooltip being too large to show on your normal report pages. We have added a new page size template called Tooltip to use as a starting point, but you can use any page size you want.
- 
+
 While designing your tooltip, we recommend viewing it in Actual size, so you know exactly what your tooltip will look like on hover.
- 
+
 Once you’ve finished creating your tooltip report page, you’ll need to mark the page as a tooltip so we know you want to use it as such.
- 
+
 From here, there are two ways you can start using this tooltip in your report. The first is to tie it to a specific field using the Tooltip fields bucket below the Filters pane. This behaves similarly to the drillthrough fields bucket. Any fields you put into the tooltip fields bucket will be tied to this tooltip. If you use this field in charts throughout your report, this tooltip will be used instead of the default Power BI tooltip. You can put both categorical and numerical fields in this bucket, including measures.
 For example, if I put SalesAmount in the Tooltip fields bucket…
- 
+
 That page will be used as a tooltip in other visuals using the SalesAmount field.
- 
+
 The other way you can tie a custom tooltip page to your visuals is to manually set it through the Tooltip card in the formatting pane. In the card, you can set any page that’s marked as a Tooltip page, even if it doesn’t have anything in the Tooltip field bucket, to be the tooltip for this visual. This is useful if you want to design a tooltip to be used for a specific visual.
- 
+
 Another use case is to manually override the automatically selected tooltip if we picked the wrong one to use. For example, in the chart above, if I had one tooltip tied to the Units field and one tied to the Category field (the two fields used to create the chart), we’d pick one of these tooltips to use automatically. If you didn’t like the tooltip we picked, you can use this manual override to pick the other one.
 If you manually override the tooltip in this card, you can always go back to our “automatic” selection by selecting Auto in the dropdown list. You can also completely turn the report page tooltips off for a chart by setting the tooltip type dropdown to Default. This will force a chart to use Power BI’s default tooltip, even if there are matching report page tooltips in the report.
- 
+
 There are a couple of other things to consider when building report page tooltips. First, when using these custom tooltips for line charts, you will only get one tooltip for all lines in the chart, as you do today. The field in the legend does not get passed through as a filter on the tooltip. In the example below, the tooltip is showing all units sold on that day across all three classes: Deluxe, Economy, and Regular.
- 
+
 Second, when a chart is being cross-highlighted, the report page tooltips will always show the cross-highlighted data, even if you are hovering over the “faded out” section of the data point. To see the unfiltered data in the tooltip, you will need to clear the highlighting.
 
+### Analytics
 
+#### New DAX function: COMBINEVALUES()
 
+This month’s update adds a new DAX function COMBINEVALUES(), that allows multi part keys to be handled in a more efficient way when using DirectQuery.  
+Power BI doesn’t directly support relationships that use multi-part keys. For example, consider the relationship between Shipment, and OrderLine. If an OrderLine is uniquely identified by a combination of OrderID and LineID, then the relationship from Shipment to  OrderLine would need to use those pair of columns. The common workaround is to create a calculated column on each table, that combines the values with some separator. For example:
+Key = CONCATENATE(CONCATENATE([OrderID],":"),[LineID])
+Then the relationship can be defined as normal. The problem with this workaround is when you're using DirectQuery since now cases which require a join between the two tables will send a SQL query that joins on an expression. This often results in indexes no longer being used, and therefore a less efficient query.
+Our new COMBINEVALUES takes as arguments a separator (e.x. “:”) and one or more expressions. It will concatenate the values of all the expressions, with the given separator. For example, in the case above, the calculated column can now be defined using the expression:
+Key = COMBINEVALUES(":",[OrderID],[LineID])
+This is still simply a DAX expression, and the calculated columns are still used in the relationship as before. The difference is that this is then optimized, such that upon joining using this relationship, the condition defined in the SQL query decomposes back to use the underlying columns [OrderID] and [LineID] directly. This generally results a much more efficient SQL query.
+As another use case for this new DAX function, you might also want to use this function to join a set of values with a common delimiter without having a set of nested CONCATENATE() functions.
+
+#### Measure drillthrough
+
+In our previous Power BI Report Server release, we added a drillthrough experience that allows you to move from one page to another carrying specified filters through. You’d set this up by creating your drillthrough page (i.e. the page you want to land on) and then adding any categorical fields to the Drillthrough filters bucket in the filter pane as you want.
+
+Any fields you put in this bucket would be tied to the page. Any chart in the rest of the report that uses that field could be right-clicked on to move to the drillthrough page.
+This is a very powerful feature but was limited that only filters on the fields explicitly placed in the Drillthrough filters bucket would be carried through. There was no way to carry the entire filter context of your data point through the drillthrough page.
+We are closing this gap by allowing you to carry all filters through. When you are setting up your drillthrough page, if you want all filters to pass through and not just the fields placed in the bucket, you can turn the Pass all filters toggle on.
+
+Once the toggle is on, whenever you right click on a data point and drillthrough, all filter context from the source page is passed to the drillthrough page. You’ll be able to see a restatement of all these filters in the Drillthrough bucket.
+
+With the toggled turned off, only filters on the columns specified will be carried through.
+With this drillthrough update, you can also now use measures and summarized numeric columns in the drillthrough bucket. You can pick if you want to allow drillthrough on numeric columns when used as a category (e.g. a chart showing number of reviews by rating) or summarized (e.g. a chart showing average rating by category).
+
+The Pass all filters option is on by default for new drillthrough pages and off by default for existing pages.
+
+#### Conditional formatting by a different field
+
+We are very excited to announce a major improvement for our conditional formatting experience, the ability to formatting a column by a different field in your model.
+Now, whenever you open the conditional formatting dialog, you’ll see two new dropdowns. The first, Based on field, is where you can pick what field from your model to base your rules on, and the second, Summarization, is where you’ll pick the aggregation type for that field. You'll be able to see what field in your table or matrix is being formatted currently through the title of the dialog.
+
+The field and summarization type to color by are auto-populated with the same column in your table you’ve chosen to format, so you won’t have to do any extra configurations unless you want to customize it.
+When you do customize the field for the color to be based on, you’ll get a similar experience to the field list where you can expand and collapse tables in your model and search to help you find the field you’re looking for.
+
+In the below example, I’m using showing the total sales by product and coloring that column by the average net satisfaction of the product.
+
+You can also pick a new source of formatting when using the Color by rules version of conditional formatting.
+With this update we are also opening up conditional formatting to text and date fields as well, as long as you choose a numeric value to format on.
+
+A common use case for this would be to create a measure in your model that does your custom business logic, such as comparing target vs. actuals and the use Color by rules to format the text based on the result. For example, you could create a measure to return a -1, 0, or 1 if a product is under, at, or above its sales expectations, and then in Color by rules mode chose to format the product name red if the measure returns -1, yellow if it returns 0, and green if it returns 1.
+Conditional formatting by values
+Another new conditional formatting type we have this month is Format by field value. Format by field value will let you use a measure or column that specifies a color, either through a hex code or name and applies that color to the background or font color.
+For example, each product in my model has a color. Instead of showing the color name, I’d prefer if the cell was filled with the color instead.
+
+With this feature all I have to do is pick to format that color by the color name. I’ll do that by opening the conditional formatting dialog for the Color column in my table.
+
+And then in the dialog, pick to format by Field value. The dialog defaults to the color column with First for summarization. Since I’m always only going to have one color value per table row, this is exactly what I want and I just need to select okay.
+
+If I repeat this for font color as well, the whole column will be filled with the product color, which makes it easier for me to identify with a glance which product color I’m currently looking at.
+
+Another great use case for this is to set up a DAX calculation based on your business logic that outputs different hex codes. You can then format by that calculation without having to worry about creating a bunch of rules in the conditional formatting dialog.
+For example, you could use a switch statement to create your KPI…
+
+… pick to conditionally format by that measure…
+
+… and see the results in your table or matrix.
+
+### Modeling
+
+#### Filtering and sorting in data view
+
+We are very excited to announce the addition of filtering and sorting in the data view. For every column in your model, you can now see the sort direction if it is applied on that column and either filter individual values out or using advanced filtering options for that column type.
+
+#### Improved locale formatting
+
+We are vastly increasing the number of specific locales we support for formatting when viewing your reports in Power BI Report Server. With this update we are adding support for a total of 670 locales. For example, you’ll now see support for Mexico’s variant of Spanish along with many other Spanish variants. In Desktop, we detect and use the "date, time, and number formatting" format set for the operating system. IE and Edge will pass this same OS locale through, but other browsers often have their own, separate, language and region settings.
+
+Make sure to use the default data format for your field if you want the the system locale settings to flow through. You can tell you are using system locale formatting by the * next to the format.
+
+#### Data categories for measures
+
+You can now pick data categories for measures. This means you can do things like use measures to dynamically create URLs and mark the data category as a Web URL. Then when you display it in tables, you’ll be able to click on the URL that’s created based on your selection!
+
+Another great use case for this feature is to create DAX measures to create interesting insights such as sparklines using SVG images. If you are interested in doing this, but aren’t sure how, you should watch our Quick measures gallery in the Community, as I know some members of the community are planning on adding examples there soon.
+
+#### Statistical DAX functions
+
+We’ve added several new functions that expand the statistical capabilities of DAX.
+
+- NORM.DIST
+- NORM.S.DIST
+- NORM.INV
+- NORM.S.INV
+- T.DIST
+- T.DIST.RT
+- T.DIST.2T
+- T.INV
+- T.INV.2T
+
+These match the behaviors of their Excel counterparts, so it should be easy to migrate to if you’re used to doing these statistic operations there.
+
+That’s all for this release! We hope that you enjoy these updates and please don’t forget to leave your feedback in the comments below.
 
 ## May 2018
 

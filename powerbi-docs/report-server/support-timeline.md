@@ -40,4 +40,3 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
