@@ -29,7 +29,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 
 |  | Shared capacity | Power BI Premium capacity |
 | --- | --- | --- |
-| **Refresh rate** |8/day |Not restricted |
+| **Refresh rate** |8/day |48/day |
 | **Isolation with dedicated hardware** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 | **Enterprise Distribution to** ***all users*** | | |
 | Apps and sharing |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
