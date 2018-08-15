@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/14/2018
-ms.author: willt
+ms.author: willthom
 
 LocalizationGroup: Learn more
 ---
