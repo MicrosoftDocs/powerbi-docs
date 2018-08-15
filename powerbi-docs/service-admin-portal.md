@@ -126,7 +126,7 @@ The next few sections provide an overview of the different types of tenant setti
 ### Create workspaces (preview)
 Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content.
 
-For more information, see [Create the new workspaces](service-create-the-new-workspaces.md)
+For more information, see [Create the new workspaces](service-create-the-new-workspaces.md).
 
 ## Export and sharing settings
 
@@ -255,7 +255,7 @@ This setting needs to be enabled for audit log entries to be recorded. There can
 ### Usage metrics for content creators
 Users in the organization can see usage metrics for dashboards and reports they created. [Learn more](service-usage-metrics.md).
 
-You can switch the setting to Enabled and then specify who can see usage metrics (entire org or specific security groups).
+You can switch the setting to **Enabled** and then specify who can see usage metrics (entire org or specific security groups).
 
 > [!NOTE]
 > Remember that tenant setting changes can take some time to take effect.
@@ -263,7 +263,7 @@ You can switch the setting to Enabled and then specify who can see usage metrics
 ### Per-user data in usage metrics for content creators
 Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md).
 
-You can switch the setting to Enabled and then specify who can see display names and email addresses in the usage metrics (entire org or specific security groups).
+You can switch the setting to **Enabled** and then specify who can see display names and email addresses in the usage metrics (entire org or specific security groups).
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
 
