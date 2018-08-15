@@ -74,6 +74,19 @@ The report page tooltips feature is included in the August 2018 update of Power 
 
 We’ve greatly improved log axis in your cartesian charts. You should now be able to select log scale for the numeric axis of any cartesian chart, including combo chart, when you have data that is completely positive or completely negative.
 
+#### SAP HANA SSO Direct Query
+
+SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Reports.
+
+>[!Note] This scenario is supported only when SAP HANA is treated as a relational data source with reports you’ve created in Power BI desktop.  To enable this in Power BI Desktop, in the DirectQuery menu under Options, check the “Treat SAP HANA as a relational source” and click OK.
+>
+
+#### Custom Visuals
+
+- The API version shipped with this release is xx.xx
+
+- Custom Visuals now fall back to a previous version compatible with the current version of the server API (if available).
+
 ### Reporting
 
 - Report Theming
