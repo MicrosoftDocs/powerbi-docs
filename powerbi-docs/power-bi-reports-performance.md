@@ -43,10 +43,10 @@ For more guidance on optimizing data sources for DirectQuery, see [DirectQuery i
  
 ## DirectQuery and Live connection: understand underlying data source performance 
 
-In the DirectQuery or live connection case, when users visit a Power BI report, Power BI sends queries in real-time to the underlying data source. Once the data source returns with the query data, then the report is rendered. As a result, your report performance in these cases depends largely on the performance of the underlying data source. 
- 
-In these cases, it will be important to understand the performance of your underlying data source. Different data sources will have different tools for understanding query performance. For example, SQL Server and Azure SQL provide the Query Store, which captures a history of queries and their runtime statistics. 
- 
+In the DirectQuery or live connection case, when users visit a Power BI report, Power BI sends queries in real-time to the underlying data source. Once the data source returns with the query data, then the report is rendered. As a result, your report performance in these cases depends largely on the performance of the underlying data source.
+
+In these cases, it will be important to understand the performance of your underlying data source. Different data sources will have different tools for understanding query performance. For example, SQL Server and Azure SQL provide the Query Store, which captures a history of queries and their runtime statistics.
+
 As a rule of thumb, when deploying Power BI reports built on DirectQuery and live connection, try out what your end users will do in Power BI Desktop. If the report is slow to load in Power BI Desktop, it will almost certainly be slow to load in the service for your end users. 
  
 ## DirectQuery best practices 
