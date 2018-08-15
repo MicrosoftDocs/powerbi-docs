@@ -83,9 +83,9 @@ SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Re
 
 #### Custom Visuals
 
-- The API version shipped with this release is xx.xx
+- The API version shipped with this release is xx.xx.
 
-- Custom Visuals now fall back to a previous version compatible with the current version of the server API (if available).
+- Now custom visuals can fall back to a previous version compatible with the current version of the server API (if available).
 
 ### Reporting
 
