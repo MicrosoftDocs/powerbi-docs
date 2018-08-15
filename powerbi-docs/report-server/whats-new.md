@@ -13,7 +13,7 @@ ms.date: 08/15/2018
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
+Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -29,9 +29,9 @@ For related Power BI "What's New" information, see:
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 
-## August 2018
+## August 2018 release
 
- August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+The August 2018 release sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
 - [Reporting](#reporting)
 - [Analytics](#analytics)
@@ -41,37 +41,68 @@ For related Power BI "What's New" information, see:
 
 Out of the whole long list of new features, these stand out as especially interesting.
 
-#### [Export to PDF](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#print)
+#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#theming)
 
-Want to easily print or email copies of your reports out to others in your company. You can now export all visible report pages to PDF. This new option is under the File menu.
+Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the Import Theme option under the Switch Theme button.
 
-#### [Create bookmark groups](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#bookmarks)
+A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
+Here is a simple sample JSON theme that just updates the default colors of the report:
 
-If you are using bookmarks extensively, you like have sets of bookmarks with different purposes. For example, you may have different bookmarks per organizational division using your report, or perhaps you have a set of bookmarks for navigation and several sets of bookmarks for different presentations.
-In these cases, it’s important to clearly separate out each group of bookmarks, and now separating bookmarks got much easier to do with the introduction of bookmarking grouping. Bookmark grouping lets you collect a set of bookmarks together and give it a name. Each group can be expanded and collapsed for easy viewing.
+```json
+{
+"name": "waveform",
+"dataColors": [ "#31B6FD", "#4584D3", "#5BD078", "#A5D028", "#F5C040", "#05E0DB", "#3153FD", "#4C45D3", "#5BD0B0", "#54D028", "#D0F540", "#057BE0" ],
+"background":"#FFFFFF",
+"foreground": "#F2F2F2",
+"tableAccent":"#5BD078"
+}
+```
 
-#### [Bookmarking](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### [Conditional formatting improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#conditionalFormattingField)
 
-Speaking of bookmarking, create bookmarks to tell a story with the data in your report.
+#### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#tableTooltips)
 
-- [Cross-highlighting for bookmarks](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bookmarks maintain and display the cross-highlighted state of the report page at the time you created the bookmark.
-- [More bookmark flexibility](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bookmarks reflect the properties you set in your report, and affect only the visuals you choose.
+### Reporting
 
-#### [Multi-select data points across multiple charts](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+- Report Theming
+- Buttons to trigger actions
+- Combo chart line styles
+- Improved default sort for visuals
+- Numeric slicer
+- Advanced slicer syncing
+- Log axis improvements
+- Data label options for funnel chart
+- Set line stroke width to zero
+- High contrast support for reports
+- Donut radius control
+- Pie and donut detail labels position control
+- Format data labels separately for each measure in a combo chart
+- New visual header with more flexibility and formatting
+- Wallpaper formatting
+- Tooltips for table & matrix
+- Turn tooltips off for visuals
+- Slicer accessibility
+- Formatting pane improvements
+- Stepped line support for line and combo charts
+- Sorting experience improvement
+- Print reports through Export to PDF (in Power BI Desktop)
+- Create bookmark groups
+- Slicer restatement
+- Report page tooltips
 
-Select multiple data points in multiple charts and have the cross-filtering apply to the entire page.
+### Analytics
 
-#### [Sync slicers across multiple pages of your report](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+- New DAX function: COMBINEVALUES()
+- Measure drillthrough
+- Conditional formatting by a different field
+- Conditional formatting by values
 
-A slicer can apply to one, two, or more pages in a report.
+### Modeling
 
-#### [Quick measures](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
-
-Create new measures based on existing measures and numerical columns in a table.
-
-#### [Drilling down filters other visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
-
-When you drill down in a given category in one visual, you can have it filter all the visuals on the page by that same category.
+- Filtering and sorting in data view
+- Improved locale formatting
+- Data categories for measures
+- Statistical DAX functions
 
 ## May 2018
 
@@ -81,7 +112,7 @@ As an IT admin, you can now use your organization's MDM tool to remotely configu
 
 ## March 2018 release
 
-March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area: 
 - [Visuals](#visuals-updates)
 - [Reporting](#reporting)
 - [Analytics](#analytics)
@@ -256,7 +287,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 * Power BI Report Server Preview made available
 * Ability to publish Power BI reports on-premises
-  * Support for custom visuals
+  * Suppport for custom visuals
   * Support for Analysis Services live connections only with more data sources to come.
   * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 * Enhanced collaboration in reports with comments
@@ -270,4 +301,3 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
