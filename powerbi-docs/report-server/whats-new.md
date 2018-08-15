@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 08/16/2018
 ---
 
 # What's new in Power BI Report Server
@@ -78,8 +78,8 @@ We’ve greatly improved log axis in your cartesian charts. You should now be ab
 
 SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Reports.
 
->[!Note] This scenario is supported only when SAP HANA is treated as a relational data source with reports you’ve created in Power BI desktop.  To enable this in Power BI Desktop, in the DirectQuery menu under Options, check the “Treat SAP HANA as a relational source” and click OK.
->
+>[!Note]
+>This scenario is supported only when SAP HANA is treated as a relational data source with reports you’ve created in Power BI desktop.  To enable this in Power BI Desktop, in the DirectQuery menu under Options, check the “Treat SAP HANA as a relational source” and click OK.
 
 #### Custom Visuals
 
