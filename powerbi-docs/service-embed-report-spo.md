@@ -28,7 +28,7 @@ There are a few requirements in order for **Embed in SharePoint Online** reports
 
 ## Embed your report
 
-In order to embed your report into SharePoint Online, you will first need to get the URL for the report and then use that URL with the new Power BI web part within SharePoint Online.
+In order to embed your report into SharePoint Online, you first need to get the URL for the report and then use that URL with the new Power BI web part within SharePoint Online.
 
 ### Get a URL to your report
 
@@ -45,7 +45,7 @@ In order to embed your report into SharePoint Online, you will first need to get
     ![](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
    > [!NOTE]
-   > You can also use the URL that is displayed in your web browser's address bar when viewing a report. That URL will contain the report page you are currently viewing. You will need to remove the report section, from the URL, if you want to use a different page.
+   > You can also use the URL that is displayed in your web browser's address bar when viewing a report. That URL contains the report page you are currently viewing. You need to remove the report section, from the URL, if you want to use a different page.
 
 ### Add the Power BI report to a SharePoint Online page
 
@@ -65,7 +65,7 @@ In order to embed your report into SharePoint Online, you will first need to get
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Past the report URL into the property pane. This is the URL you copied from the steps above. The report will load automatically.
+4. Past the report URL into the property pane. This is the URL you copied from the steps above. The report loads automatically.
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -80,7 +80,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
 Alternatively, you can grant users access to your report by doing the following.
 
@@ -96,17 +96,17 @@ Below is a description of the settings that can be adjusted for the Power BI web
 
 | Property | Description |
 | --- | --- |
-| Page name |Sets the default page that is shown by the web part. Select a value from the drop down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
+| Page name |Sets the default page that is shown by the web part. Select a value from the drop-down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
 | Display |Option to adjust how the report is fit within the SharePoint Online page. |
 | Show Navigation Pane |Shows or hides the page navigation pane. |
 | Show Filter Pane |Shows or hides the filter pane. |
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign-in using multi-factor authentication, you may be asked to sign-in with a security device to verify your identity. This will occur if you did not sign-in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
+If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign-in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
 
 > [!NOTE]
-> Multi-factor authentication is not yet supported with Azure Active Directory 2.0. Users will receive a message saying *error*. If the user signs-in again to SharePoint Online using their security device, they may be able to view the report.
+> Multi-factor authentication is not yet supported with Azure Active Directory 2.0. Users receive a message saying *error*. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Reports that do not load
 
@@ -131,9 +131,9 @@ You should contact the owner of the SharePoint Online page to help you resolve t
   
   1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
-  2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
+  2. If your user account requires multi-factor authentication (MFA), ensure you sign in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
   
-  3. Azure B2B Guest users accounts are not supported. Users will see the Power BI logo that shows the part is loading, but it will not show the report.
+  3. Azure B2B Guest users accounts are not supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
