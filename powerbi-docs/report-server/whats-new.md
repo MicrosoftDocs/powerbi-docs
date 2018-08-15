@@ -41,7 +41,7 @@ August 2018 sees many new features added to the version of Power BI Desktop opti
 
 Out of the whole long list of new features, these features stand out as especially interesting.
 
-#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming)
+#### Report theming
 
 Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
