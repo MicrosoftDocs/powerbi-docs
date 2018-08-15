@@ -29,7 +29,7 @@ For related Power BI "What's New" information, see:
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 
-## August 2018 release
+## August 2018
 
 The August 2018 release sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
@@ -41,7 +41,7 @@ The August 2018 release sees many new features added to the version of Power BI 
 
 Out of the whole long list of new features, these stand out as especially interesting.
 
-#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#theming)
+#### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming)
 
 Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the Import Theme option under the Switch Theme button.
 
@@ -58,13 +58,13 @@ Here is a simple sample JSON theme that just updates the default colors of the r
 }
 ```
 
-#### [Conditional formatting improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#conditionalFormattingField)
+#### [Conditional formatting improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
 
-#### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/preview/#tableTooltips)
+#### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
 
 ### Reporting
 
-- Report Theming
+- [Report Theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming))
 - Buttons to trigger actions
 - Combo chart line styles
 - Improved default sort for visuals
@@ -110,7 +110,7 @@ Here is a simple sample JSON theme that just updates the default colors of the r
 
 As an IT admin, you can now use your organization's MDM tool to remotely configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](configure-powerbi-mobile-apps-remote.md) for details.
 
-## March 2018 release
+## March 2018
 
 March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area: 
 - [Visuals](#visuals-updates)
