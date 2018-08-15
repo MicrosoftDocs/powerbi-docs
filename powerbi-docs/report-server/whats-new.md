@@ -70,7 +70,7 @@ Another new conditional formatting type is the **Format by field** value. The Fo
 
 The report page tooltips feature is included in the August 2018 update of Power BI Report Server. This feature lets you design a report page to be used as a custom tooltip for other visuals in your report.
 
-### Log axis improvements
+#### Log axis improvements
 
 We’ve greatly improved log axis in your cartesian charts. You should now be able to select log scale for the numeric axis of any cartesian chart, including combo chart, when you have data that is completely positive or completely negative.
 
