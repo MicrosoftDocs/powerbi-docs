@@ -51,4 +51,4 @@ To resolve the error and use those connectors, you must change your security set
 
 A limited subset of data extensions are considered **Certified**, and such certified connectors are available using the **Get Data** dialogue, but the responsible party for maintenance and support is still the third-party developer who created the connector. While Microsoft distributes these connectors, we are not responsible for their performance or continued functionality.
 
-If you would like a custom connector to be certified, have your vendor contact DataConnectors (at) Microsoft.com
+If you would like a custom connector to be certified, have your vendor contact dataconnectors@microsoft.com.
