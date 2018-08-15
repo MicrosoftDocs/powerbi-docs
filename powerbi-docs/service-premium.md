@@ -1,7 +1,7 @@
 ---
 title: Power BI Premium - what is it?
 description: Power BI Premium is dedicated capacity for your organization or team, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
-author: m GBlythe
+author: mgblythe
 manager: kfile
 ms.reviewer: ''
 
