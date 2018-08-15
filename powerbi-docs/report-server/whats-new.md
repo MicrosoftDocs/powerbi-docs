@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
+ms.date: 08/15/2018
 ---
 
 # What's new in Power BI Report Server
