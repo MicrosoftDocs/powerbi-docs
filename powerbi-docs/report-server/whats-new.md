@@ -13,7 +13,7 @@ ms.date: 08/15/2018
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
+Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -31,19 +31,19 @@ For related Power BI "What's New" information, see:
 
 ## August 2018
 
-The August 2018 release sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
 
 - [Reporting](#reporting)
 - [Analytics](#analytics)
 - [Modeling](#modeling)
 
-### Highlights of this release
+### Highlights of the August 2018 release
 
-Out of the whole long list of new features, these stand out as especially interesting.
+Out of the whole long list of new features, these features stand out as especially interesting.
 
 #### [Report theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming)
 
-Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the Import Theme option under the Switch Theme button.
+Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:
@@ -58,13 +58,25 @@ Here is a simple sample JSON theme that just updates the default colors of the r
 }
 ```
 
-#### [Conditional formatting improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
+#### Conditional formatting by a different field
 
-#### [Report page tooltips](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
+The ability to format a column by a different field in your model is one of the significant improvements to conditional formatting.
+
+#### Conditional formatting by values
+
+Another new conditional formatting type is the **Format by field** value. The Format by field value lets you use a measure or column that specifies a color, either through a hex code or name, and applies that color to the background or font color.
+
+#### Report page tooltips
+
+The report page tooltips feature is included in the August 2018 update of Power BI Report Server. This feature lets you design a report page to be used as a custom tooltip for other visuals in your report.
+
+### Log axis improvements
+
+We’ve greatly improved log axis in your cartesian charts. You should now be able to select log scale for the numeric axis of any cartesian chart, including combo chart, when you have data that is completely positive or completely negative.
 
 ### Reporting
 
-- [Report Theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming))
+- Report Theming
 - Buttons to trigger actions
 - Combo chart line styles
 - Improved default sort for visuals
@@ -112,7 +124,8 @@ As an IT admin, you can now use your organization's MDM tool to remotely configu
 
 ## March 2018
 
-March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area: 
+March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+
 - [Visuals](#visuals-updates)
 - [Reporting](#reporting)
 - [Analytics](#analytics)
@@ -120,9 +133,9 @@ March 2018 sees many, many new features added to the version of Power BI Desktop
 - [Report server](#report-server)
 - [Others](#other-improvements)
 
-### Highlights of this release
+### Highlights of the March 2018 release
 
-Out of the whole long list of new features, these stand out as especially interesting.
+Out of the whole long list of new features, these features stand out as especially interesting.
 
 #### [Rule-based conditional formatting for table and matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
@@ -205,7 +218,7 @@ When you export a paginated (RDL) report to PDF, you can now get an accessible/t
 - [Improved error reporting](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
 - [View previous errors you’ve encountered](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
 
-## October 2017 release
+## October 2017
 
 ### Power BI report data sources
 
