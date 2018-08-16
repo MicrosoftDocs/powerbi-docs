@@ -122,7 +122,7 @@ Special characters and spaces require some additional formatting. When your quer
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
 |**Table Name**     | Space: 0x20        |  Table_x0020_Name       |
-|**Column@Number**     |   @: 0x40     |  Column_x0040_Number       |
+|**Column****@****Number**     |   @: 0x40     |  Column_x0040_Number       |
 |**[Column]**     |  [:0x005B ]:0x0050       |  _x0058_Column_x0050       |
 |**Column+Plus**     | +:0x2B        |  Column_x002B_Plus       |
 
