@@ -39,7 +39,7 @@ August 2018 sees many new features added to the version of Power BI Desktop opti
 
 ### Highlights of the August 2018 release
 
-Out of the whole long list of new features, these features stand out as especially interesting.
+Out of the whole long list of new features, these features stand out as especially interesting. For more information, see our [blog post](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/).
 
 #### Report theming
 
