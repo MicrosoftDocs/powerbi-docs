@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -108,8 +108,8 @@ The new workspaces offer three roles: admins, members, and contributors.
 **Members can:** 
 
 - Add members or others with lower permissions.
-- Publish and update apps.
-- Share items and share apps.
+- Publish and update an app.
+- Share an item or share an app.
 - Allow others to reshare items.
 - Do everything contributors can do.
 
@@ -125,7 +125,7 @@ We’re building Request Access workflows throughout the service so users who do
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Convert old app workspaces to new app workspaces
 
@@ -157,7 +157,7 @@ Some other new app workspace preview features are still being developed, but are
 Some features work differently from current app workspaces in the new app workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
 
 - Members can or can't reshare: replaced by the Contributor role
-- Read-only workspaces: replaced by a forthcoming Viewer role, which allows read-only access to content in a workspace.
+- Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to a forthcoming Viewer role, which allows similar read-only access to the content in a workspace.
 
 ## Known issues
 
