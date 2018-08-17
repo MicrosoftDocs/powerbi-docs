@@ -104,7 +104,7 @@ Now that you have sample data to work with, you connect to SQL Server in Power B
 
     ![Stacked column chart](media/service-gateway-sql-tutorial/column-chart.png)    
 
-6. With the column chart selected in the report canvas, in the **Fields** pane select the **Category** and **Sales** fields.  
+6. With the column chart selected in the report canvas, in the **Fields** pane select the **Product** and **Sales** fields.  
 
     ![Select fields](media/service-gateway-sql-tutorial/select-fields.png)
 
