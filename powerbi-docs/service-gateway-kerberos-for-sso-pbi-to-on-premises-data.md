@@ -47,9 +47,7 @@ Here are additional details about those steps:
    - The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
    
    > [!NOTE]
-   > Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
-   > 
-   > 
+   > Regarding the service SID: If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
 
 > [!NOTE]
