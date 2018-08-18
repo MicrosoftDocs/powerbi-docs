@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 08/17/2018
 ms.author: maggies
 
 ---
@@ -80,7 +80,7 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 ## Drill down and up in a visual
 If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
 
-* Tap a data point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
+* Tap and hold a specific bar or point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
   
   ![Drill down in a visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
