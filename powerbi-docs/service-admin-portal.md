@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -96,36 +96,37 @@ For more information about audit logs, see [Auditing Power BI in your organizati
 
 The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a given feature to be available to a specific group. If this is the case, you can switch it off in your tenant.
 
-For example, per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
 
-Settings can have three states based on the settings that you supplied.
+Settings can have three states:
 
-### Disabled for the entire organization
+* **Disabled for the entire organization**: You can disable a feature and make it so users will not be able to use it.
 
-You can disable a feature and make it so users will not be able to use it.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Enabled for the entire organization**: You can enable a feature for the entire organization which will let all users have access to that feature.
 
-### Enabled for the entire organization
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-You can enable a feature for the entire organization which will let all users have access to that feature.
+* **Enabled for a subset of the organization**: You can also enable a feature for a portion of your organization. This can happen in a few different ways. You can enable it for your entire organization except for a specific group of users.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### Enabled for a subset of the organization
+    You could also enable the feature only for a specific group of users and also disable it for a group of users. This would make sure that certain users do not have access to the feature even if they are in the allowed group.
 
-You can also enable a feature for a portion of your organization. This can happen in a few different ways. You can enable it for your entire organization except for a specific group of users.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+The next few sections provide an overview of the different types of tenant settings.
 
-You could also enable the feature only for a specific group of users and also disable it for a group of users. This would make sure that certain users do not have access to the feature even if they are in the allowed group.
+## Workspace settings
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### Create workspaces (preview)
+Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content.
+
+For more information, see [Create the new workspaces](service-create-the-new-workspaces.md).
 
 ## Export and sharing settings
 
@@ -240,7 +241,7 @@ Users in the organization can interact with and share visuals created with R scr
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
-## Audit settings
+## Audit and usage settings
 
 ### Create audit logs for internal activity auditing and compliance
 
@@ -250,6 +251,25 @@ This setting needs to be enabled for audit log entries to be recorded. There can
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
+
+### Usage metrics for content creators
+Users in the organization can see usage metrics for dashboards and reports they created. [Learn more](service-usage-metrics.md).
+
+You can switch the setting to **Enabled** and then specify who can see usage metrics (entire org or specific security groups).
+
+> [!NOTE]
+> Remember that tenant setting changes can take some time to take effect.
+
+### Per-user data in usage metrics for content creators
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md).
+
+You can switch the setting to **Enabled** and then specify who can see display names and email addresses in the usage metrics (entire org or specific security groups).
+
+Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
+
+> [!NOTE]
+> Remember that tenant setting changes can take some time to take effect.
+
 
 ## Dashboard settings
 
@@ -266,9 +286,9 @@ Users in the organization can tag dashboards with classifications indicating das
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
 
-## Premium settings
+## Capacity settings
 
-The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
+The Capacity settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 

@@ -112,8 +112,6 @@
           href: service-install-use-apps.md
         - name: "Find and connect to an organizational content pack"
           href: service-organizational-content-pack-find-and-open.md
-        - name: "Share dashboards and reports"
-          href: service-share-dashboards.md
         - name: "Get started with Power BI Q&A"
           href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Connect to services
@@ -306,9 +304,15 @@
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
         items: 
-        - name: "How should I collaborate and share dashboards and reports?"
+        - name: "How should I collaborate and share?"
           href: service-how-to-collaborate-distribute-dashboards-reports.md
-        - name: "Create and distribute apps with dashboards and reports"
+        - name: "Share dashboards and reports"
+          href: service-share-dashboards.md
+        - name: "Create app workspaces"
+          href: service-create-workspaces.md
+        - name: "Create the new workspaces (preview)"
+          href: service-create-the-new-workspaces.md
+        - name: "Publish apps with dashboards and reports"
           href: service-create-distribute-apps.md
         - name: "Share a filtered report"
           href: service-share-reports.md
@@ -678,6 +682,8 @@
       items: 
       - name: "Visual elements for reports"
         href: desktop-visual-elements-for-reports.md        
+      - name: "Export to PDF and print reports"
+        href: desktop-export-to-pdf.md             
       - name: "Q&A in Power BI Desktop"
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
@@ -948,6 +954,8 @@
       items: 
       - name: "Row-level security (RLS)"
         href: developer/embedded-row-level-security.md
+      - name: "Azure diagnostic logging for Power BI Embedded"
+        href: developer/azure-pbie-diag-logs.md
       - name: "FAQ"
         href: developer/embedded-faq.md
       - name: "Power BI permissions"
@@ -1023,19 +1031,19 @@
     - name: Tutorials
       items:
       - name: "Developing a Power BI Custom Visual"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
       - name: "Using Capabilities"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/capabilities/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/ 
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/ 
       - name: "Objects and Properties"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
       - name: "Advanced Edit Mode"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
       - name: "Migrating to versioned API guide"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/migrating-to-versioned-api-guide/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
     - name: How to
       items:
       - name: "Get a custom visual certified"
@@ -1049,7 +1057,7 @@
     - name: Resources
       items:
       - name: "Dev Center"
-        href: https://powerbi.microsoft.com/en-us/developers/
+        href: https://powerbi.microsoft.com/developers/
       - name: "Create a custom visual with the Developer Tools"
         href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
@@ -1252,6 +1260,8 @@
       href: service-gateway-onprem-indepth.md
     - name: "On-premises data gateway (personal mode)"
       href: service-gateway-personal-mode.md
+    - name: "Custom Connectors"
+      href: service-gateway-custom-connectors.md
     - name: "Troubleshooting the on-premises data gateway"
       href: service-gateway-onprem-tshoot.md
 - name: Administration
@@ -1290,10 +1300,10 @@
         href: service-premium-faq.md
       - name: "Power BI Premium release notes"
         href: service-premium-release-notes.md
-    - name: "Administration role in Office 365"
-      href: service-admin-role.md
-    - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
+      - name: "Administration role in Office 365"
+        href: service-admin-role.md
+      - name: "Frequently asked questions (FAQ)"
+        href: service-admin-faq.md
   - name: How to
     items: 
     - name: "Power BI admin portal"

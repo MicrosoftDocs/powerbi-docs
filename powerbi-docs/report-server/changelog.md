@@ -17,6 +17,18 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## August 2018
+- **Power BI Report Server**
+    - *Version 1.3.6801.38816 (Build 15.0.2.540), Released: August 15, 2018*
+        - Features
+            - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports
+            - Custom Visual API shipped with release  - version 1.13.0
+            - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.61.5192.64 (August 2018), Released: August 15, 2018*
+        - Contains changes required for connection with Power BI Report Server (August 2018)         
+        
 ## March 2018
 - **Power BI Report Server**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), Released: April 27, 2018*
