@@ -87,7 +87,7 @@ SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Re
 
 - Now custom visuals can fall back to a previous version compatible with the current version of the server API (if available).
 
-### Reporting
+### Reporting 
 
 - [Report Theming](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming)
 - [Buttons to trigger actions](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#buttons)
