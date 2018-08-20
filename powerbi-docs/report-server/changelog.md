@@ -26,7 +26,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - *Version: 2.61.5192.64 (August 2018), Released: August 15, 2018*
+    - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
         - Contains changes required for connection with Power BI Report Server (August 2018)         
         
 ## March 2018
