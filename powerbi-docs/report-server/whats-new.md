@@ -303,7 +303,7 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 
 ### Support for new table and matrix visuals
 
-Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side-by-side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
+Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side by side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
 
 ## June 2017
 
@@ -313,7 +313,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 * Power BI Report Server Preview made available
 * Ability to publish Power BI reports on-premises
-  * Suppport for custom visuals
+  * support for custom visuals
   * Support for **Analysis Services live connections** only with more data sources to come.
   * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 * Enhanced collaboration in reports with comments
