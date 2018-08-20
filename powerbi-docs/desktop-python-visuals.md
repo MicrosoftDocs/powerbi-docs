@@ -27,11 +27,11 @@ To enable Python visuals, select **File > Options and settings > Options** and i
 Once you specify your Python installation, you’re ready to begin creating Python visuals.
 
 ## Create Python visuals in Power BI Desktop
-1. Select the **Python Visual** icon in the **Visualization** pane, as shown in the following image, to add an Python visual.
+1. Select the **Python Visual** icon in the **Visualization** pane, as shown in the following image, to add a Python visual.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   When you add an Python visual to a report, **Power BI Desktop** does the following:
+   When you add a Python visual to a report, **Power BI Desktop** does the following:
    
    - A placeholder Python visual image appears on the report canvas.
    
@@ -111,7 +111,7 @@ Once you specify your Python installation, you’re ready to begin creating Pyth
 Python visuals in **Power BI Desktop** has a few limitations:
 
 * Data size limitations – data used by the Python visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
-* Calculation time limitation – if an Python visual calculation exceeds five minutes the execution times out, resulting in an error.
+* Calculation time limitation – if a Python visual calculation exceeds five minutes the execution times out, resulting in an error.
 * Relationships – as with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
 * Python visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself is not interactive and cannot be the source of cross-filtering.
 * Python visuals respond to highlighting other visuals, but you cannot click on elements in the Python visual in order to cross filter other elements.

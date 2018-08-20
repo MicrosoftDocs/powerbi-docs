@@ -22,12 +22,12 @@ To run Python scripts in Power BI Desktop, you need to install **Python** on you
 ## Run Python scripts
 With just a few steps in Power BI Desktop, you can run Python scripts and create a data model, from which you can create reports, and share them on the Power BI service.
 
-### Prepare an Python script
-To run an Python script in Power BI Desktop, create the script in your local Python development environment, and make sure it runs successfully.
+### Prepare a Python script
+To run a Python script in Power BI Desktop, create the script in your local Python development environment, and make sure it runs successfully.
 
 To run the script in Power BI Desktop, make sure the script runs successfully in a new and unmodified workspace. This means that all packages and dependencies must be explicitly loaded and run.
 
-When preparing and running an Python script in Power BI Desktop, there are a few limitations:
+When preparing and running a Python script in Power BI Desktop, there are a few limitations:
 
 * Only Pandas data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame
 * Any Python script that runs longer than 30 minutes times out
