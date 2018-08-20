@@ -239,7 +239,7 @@ Power BI reports in Power BI Report Server can connect to a variety of data sour
 
 ### Scheduled data refresh for imported data
 
-In Power BI Report Server, you can set up scheduled data refresh to keep data up to date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
+In Power BI Report Server, you can set up scheduled data refresh to keep data up-to-date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
 
 ### Editing Power BI reports from the server
 
@@ -314,7 +314,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 * Power BI Report Server Preview made available
 * Ability to publish Power BI reports on-premises
   * Suppport for custom visuals
-  * Support for Analysis Services live connections only with more data sources to come.
+  * Support for **Analysis Services live connections** only with more data sources to come.
   * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 * Enhanced collaboration in reports with comments
 
