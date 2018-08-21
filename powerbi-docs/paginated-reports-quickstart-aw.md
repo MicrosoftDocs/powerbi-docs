@@ -57,17 +57,21 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
 8.  Select **Build** next to the **Connection string** box. 
 
+## In Azure
+
 9. Go back to the Azure portal and select **SQL databases**.
 
 1. Select the Azure SQL database you created in the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
+## In Report Builder
+
 1. In Report Builder in the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
-1. Uder **Connect to a database**, select the drop-down arrow and select the database name you created in Azure.
+1. Under **Connect to a database**, select the drop-down arrow and select the database name you created in Azure.
 
 1. Select **Test Connection**. You see the **Test results** message that **Test connection succeeded**.
 

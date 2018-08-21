@@ -23,7 +23,7 @@ Paginated reports have their own design tool, Report Builder. If you've created 
      
 ## Report from a variety of data sources
 
-A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself, rather than connecting to shared data sources or datasets on a server. You create reports in Report Builder on your local machine. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to for the initial release:
+A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself, rather than connecting to shared data sources or datasets on a server. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to for the initial release:
 
 - Azure SQL Database and Data Warehouse
 - SQL Server via a gateway
