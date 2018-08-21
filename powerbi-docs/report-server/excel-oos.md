@@ -52,7 +52,7 @@ If you plan to use any Excel Online features that utilize external data access (
 1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
 2. Run Setup.exe.
 3. On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and select **Continue**.
-4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example,*C:\Program Files\Microsoft Office Web Apps*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
+4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, C:\Program Files\Microsoft Office Web Apps*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
 
     We recommend that you install Office Online Server on the system drive.
 
@@ -166,7 +166,7 @@ On the **General** page of **Site settings**, enter the OOS discovery url. The O
 
 To get to **Site settings**, select the **gear icon** in the upper right and select **Site settings**.
 
-Only a user with the **System Administrator** role will see the Office Onlien Server discovery url setting.
+Only a user with the **System Administrator** role will see the Office Online Server discovery url setting.
 
 ![Site settings for Power BI Report Server.](media/excel-oos/reportserver-site-settings.png)
 
