@@ -12,9 +12,7 @@ ms.date: 08/20/2018
 ms.author: maggies
 ---
 # Create an embedded data source and embedded dataset for a paginated report in the Power BI service
-Embedded datasets are for use in a single paginated report. To create a dataset, you need an embedded data source. You create the embedded dataset in Report Design View in Report Builder, while you're creating your report.
-  
-For more information, see [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md).  
+Embedded datasets are contained in a single paginated report, for use in that report. To create a dataset, you need a data source. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources. You create the embedded data source and dataset in Report Builder, while you're creating your report. Here's how you can create both by using the wizards in Report Builder.
   
 ## Create the embedded data source
   
@@ -37,6 +35,7 @@ For more information, see [Report Embedded Datasets and Shared Datasets &#40;Rep
 6. In the **Data Source Properties** dialog box, give the data source a name, using characters and underscores.
   
 7.  Select the **Select connection type**. Currently, paginated reports in Power BI can connect to these data sources:
+
     - Azure SQL Database and Data Warehouse
     - SQL Server (via a gateway)
     - SQL Server Analysis Services (via a gateway)
@@ -54,11 +53,11 @@ For more information, see [Report Embedded Datasets and Shared Datasets &#40;Rep
 1. In the **Choose a connection to a data source** page, make sure your new data source is selected (you see "(in this Report)" below the name) > select **Next**.  
   
   
-## To create a dataset from a SQL Server relational database  
+## Create the embedded dataset
   
-1. In the **Design a query** page, select tables and fields in this view, or select **Text** to write a query using the query language of the data source, or **Import** to import the query from an existing report.  
+1. In the **Design a query** page, select tables and fields in this view. You can also select **Text** to write a query using the query language of the data source or **Import** to import the query from an existing report.  
 
-2. Add filters or parameters and group or aggregate the fields
+2. Add filters or parameters and group or aggregate the fields.
 
 1. Select **Run Query** to test it, then select **Next**. 
 
@@ -68,8 +67,9 @@ For more information, see [Report Embedded Datasets and Shared Datasets &#40;Rep
   
 6. Select **Next**. On the **Preview** page, you see the fields and layout you've chosen. Select **Finish**. 
   
-   The data source, dataset, and dataset field collection appear in the Report Data pane.  
-  
-## See Also  
+   The data source, dataset, and dataset field collection appear in the Report Data pane, and you can continue designing your paginated report.  
+ 
+ 
+## Next steps 
 
-  
+[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  

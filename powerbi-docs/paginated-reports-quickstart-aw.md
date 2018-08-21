@@ -142,6 +142,7 @@ Now that you've created this paginated report, it's time to upload it to the ser
 
 ## Next steps
 
-
+[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
   
 

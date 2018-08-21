@@ -29,7 +29,7 @@ In this article, you learn how to create and modify an embedded data source in a
   
         -   Type the connection string directly in the **Connection string** text box. For a list of example connection strings, see [Data Connections, Data Sources, and Connection Strings in Report Builder](http://msdn.microsoft.com/library/7e103637-4371-43d7-821c-d269c2cc1b34).  
   
-        -   Click the expression (**fx)** button to create an expression that evaluates to a connection string. In the **Expression** dialog box, type the expression in the Expression pane. [!INCLUDE[clickOK](../../includes/clickok-md.md)]  
+        -   Click the expression (**fx)** button to create an expression that evaluates to a connection string. In the **Expression** dialog box, type the expression in the Expression pane. Select **OK**. 
   
         -   Click **Build** to open the **Connection Properties** dialog box for the data source type that you chose in step 2.  
   
@@ -39,9 +39,10 @@ In this article, you learn how to create and modify an embedded data source in a
   
      Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify Credentials in Report Builder](http://msdn.microsoft.com/library/7412ce68-aece-41c0-8c37-76a0e54b6b53).  
   
-5.  [!INCLUDE[clickOK](../../includes/clickok-md.md)]  
+5.  Select **OK**.  
   
      The data source appears in the Report Data pane.  
-  
 
-  
+## Next steps
+
+[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
