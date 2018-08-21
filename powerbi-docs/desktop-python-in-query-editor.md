@@ -92,6 +92,7 @@ There are some limitations to queries that include Python scripts created in **Q
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * To enable scheduled refresh of your Python visuals or dataset, you need to enable **Scheduled refresh** and have a **Personal Gateway** installed on the computer that houses the workbook and the Python installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
+* Nested tables (table of tables) are currently not supported 
 
 There are all sorts of things you can do with Python and custom queries, so explore and shape your data just the way you want it to appear.
 

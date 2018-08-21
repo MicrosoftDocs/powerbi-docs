@@ -33,6 +33,7 @@ When preparing and running a Python script in Power BI Desktop, there are a few 
 * Any Python script that runs longer than 30 minutes times out
 * Interactive calls in the Python script, such as waiting for user input, halts the script’s execution
 * When setting the working directory within the Python script, you *must* define a full path to the working directory, rather than a relative path
+* Nested tables (table of tables) are currently not supported 
 
 ### Run your Python script and import data
 1. In Power BI Desktop, the Python Script data connector is found in **Get Data**. To run your Python Script, select **Get Data &gt; More...**, then select **Other &gt; Python script** as shown in the following image:
