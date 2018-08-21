@@ -2,24 +2,24 @@
 title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/21/2018
 ---
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
-* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+* Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## General
 
 ### What is Power BI Embedded?
 
-Microsoft Power BI Embedded allows application developers to embed stunning, fully interactive reports, dashboards and tiles into applications without the time and expense of building their own data visualizations and controls from the ground-up.
+Microsoft Power BI Embedded (PBIE) allows application developers to embed stunning, fully interactive reports, into applications without the time and expense of building their own data visualizations and controls from the ground-up.
 
 ### Who is the target audience for Power BI Embedded?
 
@@ -120,14 +120,14 @@ Power BI requires you to sign up with an organizational account. Trying to signu
 
 ### Can I use APIs to create & manage Azure capacities?
 
-Yes, there are Powershell cmdlets and ARM APIs you can use to create & manage PBIE resources.
+Yes, there are Powershell cmdlets and Azure Resource Manager (ARM) APIs you can use to create & manage PBIE resources.
 
 * Rest APIs - https://docs.microsoft.com/rest/api/power-bi-embedded/
 * Powershell cmdlets - https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your applciation to be assign to a dedicated capacity.
+In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assign to a dedicated capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -157,7 +157,7 @@ To get an AAD token, you can use one of the Azure Active Directory Authenticatio
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
 
 It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
-The Application needs to be configured to require permissions to PowerBI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify PowerBI resource URL as the resource ID, see below a code snippet showing how this can be done:
+The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -234,7 +234,7 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 
 ### What is Power BI Workspace Collection?
 
-**Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution that is based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authnticate the application to power BI.
+**Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution that is based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authenticate the application to Power BI.
 
 ### Can I migrate from Power BI Workspace Collection to Power BI Embedded?
 
@@ -268,7 +268,7 @@ There are new features and capabilities that are introduced in the **Power BI Em
 
 Some of the features are:
 * All the PBI data sources are supported as oppose to the 2 data sources that are with **Power BI Workspace Collection**). 
-* New features such as Q&A, Refresh, bookmarks, dashboard & tile embed, custom menu etc are only supported in the **Power BI Embedded** solution.
+* New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
 ## Onboarding Experience tool for embedding
