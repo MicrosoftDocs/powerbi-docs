@@ -108,7 +108,7 @@ After the farm is created, details about the farm are displayed in the Windows P
 
 If Office Online Server works as expected, you should see a Web Application Open Platform Interface Protocol (WOPI)-discovery XML file in your web browser. The first few lines of that file should resemble the following example:
 
-```powershell
+```
 <?xml version="1.0" encoding="utf-8" ?> 
 - <wopi-discovery>
 - <net-zone name="internal-http">
@@ -175,11 +175,7 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 ## Limitations and considerations
 
-<<<<<<< HEAD
 * You will have read only capability with workbooks.
-=======
-* You will have read-only capability with workbooks.
->>>>>>> 2229a9d6f6ec6565af03843bb5d1e5ce2b7c953f
 
 ## Next steps
 
