@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 08/03/2018
+ms.date: 08/21/2018
 ms.author: maggies
 ---
 
@@ -24,12 +24,12 @@ These are the prerequisites for creating the paginated report:
 
 - Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
 
-- Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
+- Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab.
 
 These are the prerequisites for uploading your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
-- Your **My Workspace** or app workspace on the service needs to be in a [Power BI Premium capacity](service-premium.md). Look for the diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- Your **My Workspace** or another app workspace on the service needs to be in a [Power BI Premium capacity](service-premium.md). Look for the diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
 
 ## Create the paginated report
   
@@ -37,11 +37,9 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
      The **Getting Started** dialog box opens.  
   
-     "Report Builder Get Started" image
+     ![Report Builder Getting Started](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
   
-     If the **Getting Started** dialog box does not open, select **File** > **New**. The **New Report or Dataset** dialog box is similar to the **Getting Started** dialog box.  
-  
-2.  In the left pane, verify that **New Report** is selected.  
+1.  In the left pane, verify that **New Report** is selected.  
   
 3.  In the right pane, select **Table or Matrix Wizard**, and then select **Create**.  
   
@@ -61,7 +59,7 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 
 9. Go back to the Azure portal and select **SQL databases**.
 
-1. Select the Azure SQL database you created in the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
+1. Select the Azure SQL database you created in the quickstart Create an Azure SQL database sample  in the Azure portal in the Prerequisites section of this article.
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
