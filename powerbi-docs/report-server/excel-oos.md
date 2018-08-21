@@ -128,6 +128,7 @@ Set-OfficeWebAppsFarm -ExcelWorkbookSizeMax 100
 ```
 
 ## Using EffectiveUserName with Analysis Services
+
 To allow for live connections to Analysis Services, for connections within an Excel workbook that make use of EffectiveUserName. For OOS to make use of EffectiveUserName, you will need to add the machine account of the OOS server as an administrator for the Analysis Services instance. Management Studio for SQL Server 2016 or later is needed to do this.
 
 Only embedded Analysis Services connections are currently supported within an Excel workbook. The user's account will need to have permission to connect to Analysis Services as the ability to proxy the user is not available.
@@ -174,7 +175,11 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 ## Limitations and considerations
 
+<<<<<<< HEAD
 * You will have read only capability with workbooks.
+=======
+* You will have read-only capability with workbooks.
+>>>>>>> 2229a9d6f6ec6565af03843bb5d1e5ce2b7c953f
 
 ## Next steps
 
