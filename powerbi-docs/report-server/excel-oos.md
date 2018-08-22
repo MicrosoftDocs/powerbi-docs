@@ -32,7 +32,7 @@ Perform these procedures on the server that will run Office Online Server. This 
     ```
 
     **Windows Server 2016:**
-   
+
     ```
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
@@ -52,9 +52,9 @@ If you plan to use any Excel Online features that utilize external data access (
 1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
 2. Run Setup.exe.
 3. On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and select **Continue**.
-4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, *C:\Program Files\Microsoft Office Web Apps*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
+4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, C:\Program Files\Microsoft Office Web Apps*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
 
-    **_We recommend that you install Office Online Server on the system drive._**
+    We recommend that you install Office Online Server on the system drive.
 
 5. When Setup finishes installing Office Online Server, select **Close**.
 
@@ -175,7 +175,7 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 ## Limitations and considerations
 
-* You will have read-only capability with workbooks.
+* You will have read only capability with workbooks.
 
 ## Next steps
 
