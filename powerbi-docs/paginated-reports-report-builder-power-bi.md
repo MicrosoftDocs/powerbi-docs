@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 08/20/2018
+ms.date: 08/21/2018
 ms.author: maggies
 
 ---
@@ -16,6 +16,10 @@ ms.author: maggies
 Paginated reports are designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page, and display all the data in a table, for example, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
 Report Builder is the standalone tool for authoring paginated reports. You can preview your report in Report Builder and publish your report to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
+
+Paginated reports can have many pages. The report in the following example has 563 pages, each laid out exactly, with one page per invoice and repeating headers and footers.
+
+![Paginated report in the Power BI service](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 ## Create reports in Report Builder
 
