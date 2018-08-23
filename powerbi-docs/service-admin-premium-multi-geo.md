@@ -83,9 +83,9 @@ You can take workspaces out of Multi-Geo capacity one of two ways:
 - Delete the current capacity where the workspace is located.  This moves the workspace back to shared capacity in the home region.
 - Migrate individual workspaces back to Premium capacity located in the home tenant.
 
-## Multi-Geo support in Power BI Embedded (Preview)
+## Multi-Geo support with Power BI Embedded (Preview)
 
-Based on the same feature sets and limitations, Multi-geo is now available for Preview to customers using A capacities for Power BI Embedded. Learn more on Multi-geo capabilities and supported regions.
+[Multi-geo is also available for Preview to customers using A capacities for Power BI Embedded](developer/embedded-multi-geo.md).
 
 ## Limitations and considerations
 
