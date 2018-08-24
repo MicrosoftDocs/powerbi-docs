@@ -14,9 +14,9 @@ LocalizationGroup: Embedded
 
 # Multi-Geo support in Power BI Embedded (Preview)
 
-ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps, can now deploy their data in different regions around the world.
-
 Based on the same feature set and limitations that Power BI Premium supports using Multi-Geo (Preview), now customers using **A capacities** can use Multi-Geo options. [Learn more on Multi-Geo capabilities and supported regions](../service-admin-premium-Multi-Geo.md).
+
+This means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps, can now deploy their data in different regions around the world.
 
 ## Creating new Power BI Embedded Capacity resource with Multi-Geo
 
@@ -71,7 +71,7 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 ## Next steps
 
-Learn more about how Power BI Embedded capacities and Multi-Geo options for all capacities by referencing the links below.
+Learn more about Power BI Embedded capacities and Multi-Geo options for all capacities by referencing the links below.
 
 > [!div class="nextstepaction"]
 > [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)

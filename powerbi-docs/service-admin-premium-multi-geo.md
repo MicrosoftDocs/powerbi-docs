@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/18/2018
+ms.date: 08/31/2018
 LocalizationGroup: Premium 
 ---
 
@@ -83,10 +83,6 @@ You can take workspaces out of Multi-Geo capacity one of two ways:
 - Delete the current capacity where the workspace is located.  This moves the workspace back to shared capacity in the home region.
 - Migrate individual workspaces back to Premium capacity located in the home tenant.
 
-## Multi-Geo support with Power BI Embedded (Preview)
-
-[Multi-geo is also available for Preview to customers using A capacities for Power BI Embedded](developer/embedded-multi-geo.md).
-
 ## Limitations and considerations
 
 Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
@@ -99,6 +95,10 @@ Multi-Geo doesn't result in better performance in general. Loading reports and d
 
 ## Next steps
 
-[Power BI Premium: What is it?](service-premium.md)
+> [!div class="nextstepaction"]
+> [Power BI Premium: What is it?](service-premium.md)
+
+> [!div class="nextstepaction"]
+> [Multi-Geo in Power BI Embedded capacities](developer/embedded-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
