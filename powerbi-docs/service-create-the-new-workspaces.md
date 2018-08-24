@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 08/24/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -24,13 +24,13 @@ With the new workspaces preview you can now:
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
  
-When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access
+When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access. Because workspace administration is now in Power BI, Power BI admins decide who in an organization can create workspaces. See the [Power BI admin portal article, Workspaces section](service-admin-portal.md#workspace-settings) for details. 
 
 You add user groups or individuals to the new workspaces as members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in multiple user groups, they get highest level of permission provided by the role.  See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
-Everyone you add to an app workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium Capacity.
-Because this is a preview feature, there are some limitations that you should be aware of. See <section link> later in this article for an explanation of the current limitations. 
-With the new workspaces, we are redesigning some features. See < section link> later in this article for an explanation of the changes you can expect to be permanent along with the preview.
+Everyone you add to an app workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+
+With the new workspaces, we are redesigning some features. See [App workspace features that work differently](#app-workspace-features-that-work-differently) later in this article for an explanation of the changes you can expect to be permanent along with the preview. Because this is a preview feature, there are some limitations that you should be aware of. See [Known issues](#known-issues) later in this article for an explanation of the current limitations. 
 
 ## Roll out new app workspaces
 
