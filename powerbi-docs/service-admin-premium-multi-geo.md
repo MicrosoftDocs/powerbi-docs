@@ -85,20 +85,17 @@ You can take workspaces out of Multi-Geo capacity one of two ways:
 
 ## Limitations and considerations
 
-Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
+- Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 
-A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies. 
+- A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 
-When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
+- When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 
-Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
+- Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI Premium: What is it?](service-premium.md)
-
-> [!div class="nextstepaction"]
-> [Multi-Geo in Power BI Embedded capacities](developer/embedded-multi-geo.md)
+- [Power BI Premium: What is it?](service-premium.md)
+- [Multi-Geo for Power BI Embedded capacities](developer/embedded-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

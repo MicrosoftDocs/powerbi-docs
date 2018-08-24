@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo support in Power BI Embedded (Preview)
+title: Multi-Geo support for Power BI Embedded (Preview)
 description: Learn how you can deploy content to data centers in regions other than the home region of the Power BI Embedded.  
 author: markingmyname
 ms.author: maghan
@@ -12,7 +12,7 @@ ms.date: 08/31/2018
 LocalizationGroup: Embedded
 ---
 
-# Multi-Geo support in Power BI Embedded (Preview)
+# Multi-Geo support for Power BI Embedded (Preview)
 
 Based on the same feature set and limitations that Power BI Premium supports using Multi-Geo (Preview), now customers using **A capacities** can use Multi-Geo options. [Learn more on Multi-Geo capabilities and supported regions](../service-admin-premium-Multi-Geo.md).
 
@@ -65,21 +65,21 @@ To support management of capacities with Multi-Geo through API, we have made som
 ## Limitations and considerations
 
 * Confirm that any movement you initiate between regions follows all corporate and government compliance requirements before initiating data transfer.
+
 * A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between different geographies.
+
 * When moving data from one region to another in a Multi-Geo environment, the source data may stay in the region from which the data was moved for up to 30 days. During that time, users don't have access to it. It's removed from this region and destroyed during the 30-day period.
+
 * Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involve requests to the home region for metadata.
 
 ## Next steps
 
 Learn more about Power BI Embedded capacities and Multi-Geo options for all capacities by referencing the links below.
 
-> [!div class="nextstepaction"]
-> [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
+* [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
 
-> [!div class="nextstepaction"]
-> [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
+* [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 
-> [!div class="nextstepaction"]
-> [Multi-Geo in Power BI Premium capacities](../service-admin-premium-multi-geo.md)
+* [Multi-Geo in Power BI Premium capacities](../service-admin-premium-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
