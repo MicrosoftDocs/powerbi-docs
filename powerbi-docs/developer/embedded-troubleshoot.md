@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
+ms.date: 08/31/2018
 ms.author: maghan
 ---
+
 # Troubleshooting your embedded application
 
 This article discusses some common issues you may encounter when embedding content from Power BI.
@@ -32,7 +33,7 @@ F12 will launch the developer window within your browser. This provides the abil
 
 This code snippet shows how to extract the error details from HTTP exception:
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -46,6 +47,7 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
+
 We recommend logging the request ids (and error details for troubleshooting).
 Please provide the request id when approaching Microsoft support.
 
@@ -188,6 +190,34 @@ If the user is unable to see the report or dashboard, make sure the report or da
 **Report or dashboard is performing slowly**
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
+
+## Getting the IError object from an *error* event
+
+### Typical errors when embedding for Power BI users
+
+| Message | Detailed Message | Error Code | Possible reason(s) |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
+| PowerBIEntityNotFound | Get report failed | 404 | * Wrong report Id </br> * Report doesn’t exist  |
+| Invalid parameters | powerbiToken parameter not specified | N/A | * No access token provided </br> * No report id provided |
+| LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token </br> * Embed type does not match token type |
+| PowerBINotAuthorizedException | Get report failed | 401 | * Wrong group Id </br> * Unauthorized group |
+| TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | * Capacity paused </br> * Capacity deleted |
+
+### Typical errors when embedding for non-Power BI users (using an Embed Token)
+
+| Message | Detailed Message | Error Code | Reason(s) |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
+| LoadReportFailed | Get report failed | 404 | * Wrong report Id </br> * Report doesn’t exist  |
+| LoadReportFailed | Get report failed | 403 | Report Id does not match token |
+| LoadReportFailed | Get report failed | 500 | Report provided Id is not a Guid |
+| Invalid parameters | powerbiToken parameter not specified | N/A | * No access token provided </br> * No report id provided |
+| LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | Wrong token type, Bad Token |
+| PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group Id |
+| TokenExpired | Access   token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query   data Expired token |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | * Capacity paused </br> * Capacity deleted |
 
 ## Onboarding experience tool for embedding
 
