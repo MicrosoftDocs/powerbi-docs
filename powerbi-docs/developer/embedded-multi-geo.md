@@ -14,7 +14,7 @@ LocalizationGroup: Embedded
 
 # Multi-Geo support in Power BI Embedded (Preview)
 
-ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps, can now deploy their data in many different regions across the world.
+ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps, can now deploy their data in different regions aroound the world.
 
 Based on the same feature set and limitations that Power BI Premium supports using Multi-Geo (Preview), now customers using. **A capacity** can now use Multi-Geo. [Learn more on Multi-Geo capabilities and supported regions](../service-admin-premium-Multi-Geo.md).
 
@@ -60,20 +60,20 @@ It’s important to note that if you decide to delete a capacity without reassig
 
 To support management of capacities with Multi-Geo through API, we have made some changes to existing APIs:
 
-1. ‘Get Capacities’- The API returns a list of capacities with access to the user. The response now includes an additional property called ‘region,’ that specifies the capacity’s location.
-2. ‘Assign To Capacity’- The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
-3. Azure Resource Manager API - all of the Azure Resource Manager API operations, including ‘Create’ and ‘Delete,’ supports Multi-Geo.
+1. **Get Capacities** - The API returns a list of capacities with access to the user. The response now includes an additional property called ‘region,’ that specifies the capacity’s location.
+2. **Assign To Capacity** - The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
+3. **Azure Resource Manager API** - all of the Azure Resource Manager API operations, including ‘Create’ and ‘Delete,’ supports Multi-Geo.
 
 ## Limitations and considerations
 
-Confirm that any movement you initiate between regions follows all corporate and government compliance requirements before initiating data transfer.
-
-A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between different geographies.
-
-When moving data from one region to another in a Multi-Geo environment, the source data may stay in the region from which the data was moved for up to 30 days. During that time, users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-
-Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involve requests to the home region for metadata.
+* Confirm that any movement you initiate between regions follows all corporate and government compliance requirements before initiating data transfer.
+* A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between different geographies.
+* When moving data from one region to another in a Multi-Geo environment, the source data may stay in the region from which the data was moved for up to 30 days. During that time, users don't have access to it. It's removed from this region and destroyed during the 30-day period.
+* Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involve requests to the home region for metadata.
 
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [Power BI Premium Multi-Geo](../service-admin-premium-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
