@@ -269,3 +269,5 @@ If you would like to edit your Power BI user profile or data, then learn how to 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+If you require further assistance then please [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) and provide all of the error message(s) you encounter.
