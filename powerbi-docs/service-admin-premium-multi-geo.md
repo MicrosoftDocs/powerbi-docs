@@ -28,7 +28,7 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 
 Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
-Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded (Preview)](embedded-multi-geo.md).
+Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded (Preview)](developer/embedded-multi-geo.md).
 
 ## Using Multi-Geo
 
