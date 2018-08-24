@@ -22,15 +22,15 @@ Based on the same feature set and limitations that Power BI Premium supports usi
 
 In the **Create resource** screen, you need to choose the location of your capacity. Until now, it was limited only to the location of your Azure tenant, so only a single location was available. With Multi-Geo, you can choose between different regions to deploy your capacity.
 
-![Power BI Embedded Multi-Geo setup](media/embedded-multi-geo.md/pbie-multi-geo-setup.png)
+![Power BI Embedded Multi-Geo setup](media/embedded-multi-geo/pbie-multi-geo-setup.png)
 
 Notice that when opening the location drop-down menu, your home tenant is the default selection.
   
-![Power BI Embedded Multi Geo default location](media/embedded-multi-geo.md/pbie-multi-geo-default-location.png)
+![Power BI Embedded Multi Geo default location](media/embedded-multi-geo/pbie-multi-geo-default-location.png)
 
 When choosing a different location, a message prompts you to make sure you're aware of the selection.
 
-![Location change](media/embedded-multi-geo.md/pbie-multi-geo-location-change.png)
+![Location change](media/embedded-multi-geo/pbie-multi-geo-location-change.png)
 
 [Learn more on how to create a Power BI Embedded capacity in Azure](azure-pbie-what-is-power-bi-embedded.md).
 
@@ -38,11 +38,11 @@ When choosing a different location, a message prompts you to make sure you're aw
 
 You can see your capacities location easily when going to the main Power BI Embedded management page in the Azure portal.
 
-![Capacities with different locations](media/embedded-multi-geo.md/pbie-multi-geo-location-different.png)
+![Capacities with different locations](media/embedded-multi-geo/pbie-multi-geo-location-different.png)
 
 It’s also available in the Admin Portal in Powerbi.com. In the Admin portal, choose ‘Capacity settings,’ and then switch to ‘Power BI Embedded’ tab.
 
-![View in admin portal](media/embedded-multi-geo.md/pbie-multi-geo-admin-portal.png)
+![View in admin portal](media/embedded-multi-geo/pbie-multi-geo-admin-portal.png)
 
 ## Manage existing capacities location
 
