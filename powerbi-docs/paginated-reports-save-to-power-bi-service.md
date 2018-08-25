@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 08/24/2018
 ms.author: maggies
 ---
 
@@ -26,17 +26,31 @@ If your report data source is on premises, then you need to create a gateway aft
 
 1. Select **Get Data**.
 
+    ![Power BI Get Data](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+
 1. In the **Files** box, select **Get**.
+
+    ![Power BI Get Files](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-files-get.png)
 
 1. Select **Local file** > browse to the paginated report > **Open**.
 
+    ![Select Local File](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-local-file.png)
+
 1. Select **Continue** > **Edit credentials**.
+
+    ![Select Edit credentials](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-edit-credentials.png)
 
 1. Configure your credentials > **Sign in**.
 
+    ![Edit credentials](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
+
    You see your report in the list of reports.
 
-1. Select it to open it in the Power BI service.
+    ![Paginated report in Reports list](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
+
+1. Select it to open it in the Power BI service. It if has parameters, you need to select them before you can view the report.
+ 
+    ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
 ## Create a gateway to an on-premises data source
 
@@ -51,4 +65,5 @@ Just like any other Power BI report, if the report data source is on premises, t
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+

@@ -846,9 +846,9 @@
   - name: How to
     items: 
     - name: Create an embedded data source
-      href: paginated-reports-create-embedded-dataset.md
+      href: paginated-reports-create-embedded-data-source.md
     - name: Create an embedded dataset
-      href: paginated-reports-embedded-data-source.md
+      href: paginated-reports-embedded-dataset.md
     - name: Publish a paginated report
       href: paginated-reports-save-to-power-bi-service.md
     - name: View a paginated report

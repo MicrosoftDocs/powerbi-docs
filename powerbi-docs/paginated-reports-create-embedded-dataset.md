@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 08/24/2018
 ms.author: maggies
 ---
 # Create an embedded dataset for a paginated report in the Power BI service
@@ -25,7 +25,7 @@ Before you can create the dataset, you need to create a data source. See [Embedd
    ![New Dataset](media/paginated-reports-create-embedded-dataset/power-bi-paginated-new-dataset.png)  
 
 3. Under **Query type**, select the type of command or query to use for the dataset. 
-    - **Text** runs a query to retrieve data from the database. It's the default and is used for most queries. Type a query or import a pre-existing query by selecting **Import**. Select the **Expression** (*fx*) button to edit the expression. To edit the selected data source query, select **Query Designer**. If you use a query designer to build a query, the text of the query appears in this box. 
+    - **Text** runs a query to retrieve data from the database. It's the default and is used for most queries. Type a query or import a pre-existing query by selecting **Import**. To build the query graphically, select **Query Designer**. If you use the query designer to build a query, the text of the query will appear in this box. Select the **Expression** (**fx**) button to use an expression to dynamically generate the query. 
     - **Table** selects all the fields within a table. Enter the name of the table that you want to use as a dataset.
     - **Stored Procedure** runs a stored procedure by name.
 
@@ -50,4 +50,7 @@ Before you can create the dataset, you need to create a data source. See [Embedd
  
 ## Next steps 
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  
+- [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
+- [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)
+
