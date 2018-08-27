@@ -1,14 +1,14 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-author: nikhilga
+author: mihart
 manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 08/27/2018
 ms.author: nikhilga
 
 LocalizationGroup: Get started
