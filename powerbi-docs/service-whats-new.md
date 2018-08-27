@@ -1,7 +1,7 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-author: mihart
+author: nikhilga
 manager: kfile
 ms.reviewer: 
 
@@ -27,7 +27,18 @@ You can also check out the YouTube channels for information about "What's new" a
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## May 2018
+## August 2018
+* Power BI [Report URL filter](https://docs.microsoft.com/en-us/power-bi/service-url-filters) improvements.
+
+## Previous months (2018)
+### July 2018
+* [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/en-us/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI Administrators.
+
+### June 2018
+* Sharing reports with filters and slicers.
+* New and improved UX for [gateway connections](https://powerbi.microsoft.com/en-us/blog/easier-set-up-of-datasets-in-power-bi/) and setting up datasets.
+
+### May 2018
 * [Theme dashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) in the Power BI service.
 * [Incremental refresh](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) with Premium.
 * Request access workflow for [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
@@ -35,7 +46,6 @@ You can also check out the YouTube channels for information about "What's new" a
 * Settings to turn on and off [Persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) in the Power BI service.
 * Azure B2B invite workflow improvements for reports.
 
-## Previous months (2018)
 ### April 2018
 * [Power BI GDPR Whitepaper](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Power BI Service [audit logs](https://docs.microsoft.com/power-bi/service-admin-auditing) turned-on by default for Office 365 tenant.
