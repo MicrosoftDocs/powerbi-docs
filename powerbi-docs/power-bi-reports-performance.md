@@ -107,7 +107,7 @@ Instructions as follows:
 
    The output should be a list of applications and their open ports, for example:  
 
-   TCP    [::1]:55786            [::1]:55830            ESTABLISHED 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 
