@@ -191,33 +191,37 @@ If the user is unable to see the report or dashboard, make sure the report or da
 
 Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
 
-## Getting the IError object from an *error* event
+## Troubleshooting your embedded application with the IError object
+
+Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/powerbi-javascript/wiki) to debug your application and better understand the cause of your errors.
+
+You should look at the appropriate common errors table. For example, the table that fits the embed type that was used, and compares the **IError properties** with the ones in the table.
 
 ### Typical errors when embedding for Power BI users
 
 | Message | Detailed Message | Error Code | Possible reason(s) |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| PowerBIEntityNotFound | Get report failed | 404 | * Wrong report Id </br> * Report doesn’t exist  |
-| Invalid parameters | powerbiToken parameter not specified | N/A | * No access token provided </br> * No report id provided |
-| LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token </br> * Embed type does not match token type |
-| PowerBINotAuthorizedException | Get report failed | 401 | * Wrong group Id </br> * Unauthorized group |
+| PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong report Id <li> Report doesn’t exist  |
+| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No report id provided |
+| LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token * Embed type does not match token type |
+| PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group Id <li> Unauthorized group |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | * Capacity paused </br> * Capacity deleted |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
 
 | Message | Detailed Message | Error Code | Reason(s) |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| LoadReportFailed | Get report failed | 404 | * Wrong report Id </br> * Report doesn’t exist  |
+| LoadReportFailed | Get report failed | 404 | <li> Wrong report Id <li> Report doesn’t exist  |
 | LoadReportFailed | Get report failed | 403 | Report Id does not match token |
 | LoadReportFailed | Get report failed | 500 | Report provided Id is not a Guid |
-| Invalid parameters | powerbiToken parameter not specified | N/A | * No access token provided </br> * No report id provided |
+| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No report id provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | Wrong token type, Bad Token |
 | PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group Id |
 | TokenExpired | Access   token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query   data Expired token |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | * Capacity paused </br> * Capacity deleted |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ## Onboarding experience tool for embedding
 
