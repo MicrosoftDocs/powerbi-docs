@@ -8,13 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-<<<<<<< HEAD
 ms.date: 08/27/2018
-=======
-ms.date: 08/15/2018
-ms.author: mblythe
-
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 LocalizationGroup: Administration
 ---
 
@@ -112,21 +106,13 @@ Settings can have three states:
 
     ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-<<<<<<< HEAD
-You can disable a feature and make it so users aren't able to use it.
-=======
 * **Enabled for the entire organization**: You can enable a feature for the entire organization which will let all users have access to that feature.
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 
     ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
 * **Enabled for a subset of the organization**: You can also enable a feature for a portion of your organization. This can happen in a few different ways. You can enable it for your entire organization except for a specific group of users.
 
-<<<<<<< HEAD
-You can enable a feature for the entire organization which lets all users have access to that feature.
-=======
     ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 
     You could also enable the feature only for a specific group of users and also disable it for a group of users. This would make sure that certain users do not have access to the feature even if they are in the allowed group.
 
