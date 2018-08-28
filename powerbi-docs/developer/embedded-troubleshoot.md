@@ -96,9 +96,9 @@ The backend of the application may need to refresh the auth token before calling
 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
-**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user id or password)**
+**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)**
 
-If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
+If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
 
 There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -205,7 +205,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token * Embed type does not match token type |
-| PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong Group ID <li> Unauthorized group |
+| PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group Id <li> Unauthorized group |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
@@ -216,10 +216,10 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
 | LoadReportFailed | Get report failed | 403 | Report ID does not match token |
-| LoadReportFailed | Get report failed | 500 | Report provided Id is not a guid |
+| LoadReportFailed | Get report failed | 500 | Report provided ID is not a guid |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | Wrong token type, Bad Token |
-| PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize Group ID |
+| PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group Id |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
