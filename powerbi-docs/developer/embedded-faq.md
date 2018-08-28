@@ -10,6 +10,7 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/21/2018
 ---
+
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
@@ -62,9 +63,9 @@ Here is a partial list of differences you may use with each.
 |   | (A SKUs) | (EM SKUs) | (P SKUs) |
 | Embed artifacts from a Power BI App   workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
 | Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
-| Consume Power BI reports in   SharePoint | No | Yes | Yes |
-| Consume Power BI reports in   Dynamics | No | Yes | Yes |
-| Consume Power BI reports in Teams (desktop app only) | No | Yes | Yes |
+| Consume Power BI reports in SharePoint | No | Yes | Yes |
+| Consume Power BI reports in Dynamics | No | Yes | Yes |
+| Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |
 | Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
 | Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
 
@@ -73,10 +74,10 @@ Here is a partial list of differences you may use with each.
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase     |Azure portal |Office |Office |
-|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (desktop app only)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (desktop app only)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
+|Use cases |* Embed content in your own application |<li> Embed content in your own application <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) |<li> Embed content in your own application <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
-|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (desktop app only) |Combine embedding in applications and use the Power BI Service in the same capacity |
+|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
 
 ### What are the prerequisites to create a PBIE capacity in Azure?
 
