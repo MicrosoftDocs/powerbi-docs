@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.author: maggies
 ---
 
@@ -55,17 +55,13 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
 8.  Select **Build** next to the **Connection string** box. 
 
-## In Azure
-
-9. Go back to the Azure portal and select **SQL databases**.
+9. **In Azure:** Go back to the Azure portal and select **SQL databases**.
 
 1. Select the Azure SQL database you created in the quickstart Create an Azure SQL database sample  in the Azure portal in the Prerequisites section of this article.
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
-## In Report Builder
-
-1. In Report Builder in the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
+2. **In Report Builder** in the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
@@ -85,14 +81,14 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
 10. In the **Design a query** page...  
   
-1.      "Report Builder New Chart Run"  
+1.  "Report Builder New Chart Run"  
   
-     Now that you've made your pie chart report, you can play with it. 
+     Now that you've made your chart report, you can play with it. 
 
 18. Save the report to your local computer.
   
 ## Make the chart bigger  
-You may want the pie chart to be bigger. 
+You may want the chart to be bigger. 
 
 1. On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
  
@@ -102,12 +98,12 @@ Notice the design surface gets larger as you drag.
   
 ## Add a report title  
 
-1. Select the words **Chart title** at the top of the page, then type **Sales Pie Chart**.  
+1. Select the words **Chart title** at the top of the page, then type **Sales Chart**.  
 2. With the title selected, in the Properties pane, change **Color** to **Blue**.
   
 ## Add percentages  
  
-1.  Right-click the pie chart and select **Show Data Labels**. The data labels appear within each slice on the pie chart.  
+1.  Right-click the chart and select **Show Data Labels**. The data labels appear within each slice on the chart.  
   
 2.  Right-click the labels and select **Series Label Properties**. The **Series Label Properties** dialog box appears.  
   
@@ -141,6 +137,4 @@ Now that you've created this paginated report, it's time to upload it to the ser
 ## Next steps
 
 [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
-  
 

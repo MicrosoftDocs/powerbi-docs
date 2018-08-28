@@ -13,7 +13,7 @@ ms.author: maggies
 
 ---
 # What are paginated reports in Power BI Premium? (Preview)
-Paginated reports are designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page, and display all the data in a table, for example, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
+Paginated reports are reports designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page, and display all the data in a table, for example, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
 Report Builder is the standalone tool for authoring paginated reports. You can preview your report in Report Builder and publish your report to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
 
@@ -56,12 +56,13 @@ Everything in a paginated report, from the report itself to every text box, imag
 When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, http://app.powerbi.com, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
 
 ## View your paginated report
-When you view your paginated report in the Power BI service, you can export it to a number of Web-oriented, page-oriented, and desktop application formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel.  
+You can view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. In the Power BI service, you can export the report to a number of Web-oriented, page-oriented, and desktop application formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
   
 ## Limitations and considerations
 
 Here are some other features that aren't supported in the initial release:
 
+- Pinning report pages or visuals to Power BI dashboards.
 - Interactive features such as document maps and show/hide buttons.
 - Subreports and drillthrough reports.
 - Subscriptions.
@@ -74,6 +75,6 @@ Here are some other features that aren't supported in the initial release:
 
 - [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
 
-- [Tutorial: Create a paginated report ](paginated-reports-quickstart-aw.md)
+- [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
   
 

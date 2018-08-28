@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 08/28/2018
 ms.author: maggies
 ---
 
@@ -48,7 +48,7 @@ If your report data source is on premises, then you need to create a gateway aft
 
     ![Paginated report in Reports list](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 
-1. Select it to open it in the Power BI service. It if has parameters, you need to select them before you can view the report.
+1. Select it to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
  
     ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
@@ -65,5 +65,6 @@ Just like any other Power BI report, if the report data source is on premises, t
 
 ## Next steps
 
+- [View a paginated report in the Power BI service](paginated-reports-view-in-power-bi-service.md)
 - [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
 

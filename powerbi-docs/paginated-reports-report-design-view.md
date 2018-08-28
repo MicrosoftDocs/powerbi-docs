@@ -1,5 +1,5 @@
 ---
-title: "Getting around Report Design View for paginated reports in Power BI | Microsoft Docs"
+title: "Getting around in Report Design View for paginated reports in Power BI | Microsoft Docs"
 description: Report Design View in Report Builder is the design space for creating paginated reports that you can publish in the Power BI service.  
 author: maggiesMSFT
 manager: kfile
@@ -8,10 +8,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.author: maggies
 ---
-# Getting around Report Design View for paginated reports in Power BI
+# Getting around in Report Design View for paginated reports in Power BI
 
 Report Design View in Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
 
@@ -24,7 +24,7 @@ Report Design View in Report Builder is the design space for creating paginated 
 5.  [Grouping pane](#grouping-pane) 
 6.  [Current report status bar](#current-report-status-bar)  
   
-## Report Data pane  
+## 1 Report Data pane  
  From the Report Data pane, you define the report data and report resources that you need for a report before you design your report layout. For example, you can add data sources, datasets, calculated fields, report parameters, and images to the Report Data pane.  
   
  After you add items to the Report Data pane, drag fields to report items on the design surface to control where data appears in the report.  
@@ -39,7 +39,7 @@ Report Design View in Report Builder is the design space for creating paginated 
 > [!NOTE]  
 >  You can use the **New** button to add a new item to the Report Data pane. You can add multiple datasets from the same data source or from other data sources to the report. You can add shared datasets from the report server. To add a new dataset from the same data source, right-click a data source, and then click **Add Dataset**.  
   
-## Report design surface  
+## 2 Report design surface  
  The Report Builder report design surface is the main work area for designing your reports. To place report items such as data regions, subreports, text boxes, images, rectangles, and lines in your report, you add them from the ribbon or the Report Part Gallery to the design surface. There, you can add groups, expressions, parameters, filters, actions, visibility, and formatting to your report items.  
   
  You can also change the following:  
@@ -57,12 +57,12 @@ The design surface size might be different from the page size print area you spe
   
 To display the ruler, on the **View** tab, select the **Ruler** check box.  
   
-## Parameters pane  
+## 3 Parameters pane  
  With report parameters, you can control report data, connect related reports together, and vary report presentation. The  Parameters pane provides a flexible layout for the report parameters.  
   
  Read more about Report Parameters   
   
-## Properties pane
+## 4 Properties pane
  Every item in a report, including data regions, images, text boxes, and the report body itself, has properties associated with it. For example, the BorderColor property for a text box shows the color value of the text box's border, and the PageSize property for the report shows the page size of the report.  
   
  These properties are displayed in the Properties pane. The properties in the pane change depending on the report item that you select.  
@@ -88,7 +88,7 @@ To display the ruler, on the **View** tab, select the **Ruler** check box.
  The Properties pane has three buttons at the top of pane: Category, Alphabetize, and Property Pages. Click the Category and Alphabetize buttons to switch between the Properties pane views. Click the **Property Pages** button to open the properties dialog box for a selected report item.  
   
   
-## Grouping pane
+## 5 Grouping pane
 
  Groups are used to organize your report data into a visual hierarchy and to calculate totals. You can view the row and column groups within a data region on the design surface and also in the Grouping pane. The Grouping pane has two panes: Row Groups and Column Groups. When you select a data region, the Grouping pane displays all the groups within that data region as a hierarchical list: Child groups appear indented under their parent groups.  
   
@@ -98,20 +98,7 @@ To display the ruler, on the **View** tab, select the **Ruler** check box.
   
  For more information, see Grouping Pane and Understanding Groups.  
   
-## Preview your report in run mode  
- In report design view, you are not working with the actual data but a representation of the data indicated by the field name or expression. When you want to see the actual data displayed in the context of the report that you designed, you can run the report to preview the data from the underlying database displayed in the report layout. Switching between designing and running your report allows you to adjust its design and see the results immediately. To preview your report, click **Run** in the **Views** group on the ribbon.  
-  
- When you click **Run**, Report Builder connects to the report data sources, caches the data on your computer, combines the data and the layout and then renders the report in the HTML Viewer. You can run your report as often as you like while you continue to design it. When you are satisfied with your report, you can save the report to the report server where other individuals with the appropriate permissions can view your report.  
-   
- Read more about Previewing a Report in Report Builder.
-  
-### Run a report with parameters  
- When you run your report, it is processed automatically. If the report contains parameters, all the parameters must have default values before the report can run automatically. If a parameter does not have a default value, when you run the report you need to choose a value for the parameter, and then click **View Report** on the Run tab. For more information, see Report Parameters.  
-  
-### Print Preview  
- When you preview a report in run mode, it resembles a report produced in HTML. The preview is not HTML, but the layout and pagination of the report is similar to HTML output. You can change the view to represent a printed report by switching to print preview mode. Click the **Print Preview** button on the **Run** tab. The report will display as though it were on a physical page. This view resembles the output produced by the Image and PDF rendering extensions. Print Preview is not an image or PDF file, but the layout and pagination of the report are similar to the output of those formats.  
-  
-## Current report status bar
+## 6 Current report status bar
 
 The current report status bar shows the name of the server the report is connected to, or it shows "No current report server." You can select **Connect** to connect to a server.
 

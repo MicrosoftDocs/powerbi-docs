@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 08/28/2018
 ms.author: maggies
 ---
 # Create an embedded data source for paginated reports in the Power BI service
@@ -42,7 +42,7 @@ Paginated reports connect to on-premises data sources by way of a gateway. You s
   
     -   Select **Build** to open the **Connection Properties** dialog box for the data source you chose in step 2.  
   
-       Fill in the fields in the **Connection Properties** dialog box as appropriate for the data source type. Connection properties include the type of data source, the name of the data source, and the credentials to use. After you specify values in this dialog box, select **Test Connection** to verify that the data source is available and that the credentials you specified are correct.  
+        Fill in the fields in the **Connection Properties** dialog box as appropriate for the data source type. Connection properties include the type of data source, the name of the data source, and the credentials to use. After you specify values in this dialog box, select **Test Connection** to verify that the data source is available and that the credentials you specified are correct.  
   
 4.  Select **Credentials**.  
   
