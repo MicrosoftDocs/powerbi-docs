@@ -10,7 +10,6 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/21/2018
 ---
-
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
