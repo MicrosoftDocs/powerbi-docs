@@ -36,8 +36,10 @@ The procedure for adding a hyperlink depends on whether you've imported the data
     ![](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
 3. Select **Web URL**.
 4. Switch to Report view and create a table or matrix using the field categorized as a Web URL. The hyperlinks will be blue and underlined.
-   
     ![](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
+> **NOTE**: The URLS must start with **http:// , https://** or **www**.
+> 
+>   
 5. If you don't want to display a long URL in a table, you can display a hyperlink icon  ![](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
    
    * Select the chart to make it active.
