@@ -2,43 +2,41 @@
 title: Custom visualizations in Power BI
 description: Custom visualizations in Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/06/2018
-ms.author: maghan
 
 LocalizationGroup: Visualizations
 ---
 # Custom visuals in Power BI
+
 When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download Power BI Desktop or open Power BI service (app.powerbi.com), this set of visuals comes "pre-packaged."
 
 ![](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
 But you are not limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
 
-Custom visuals are created by developers, using the custom visuals SDK, to enable business users to see their data in a way that fits the business best. Report authors can then import the custom visuals files into their reports and use them as any other Power BI visuals. Custom visuals are 1st class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
+Custom visuals are created by developers, using the custom visuals SDK, to enable business users to see their data in a way that fits the business best. Report authors can then import the custom visuals files into their reports and use them as any other Power BI visuals. Custom visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
 
-Custom visuals can be in the form of 3 deployment channels:
+Custom visuals can be in the form of three deployment channels:
 * Custom visual files
 * Organization visuals
 * Marketplace visuals
 
 ## Custom visual files
 
-Custom visuals are packages that include code for rendering the data that is served to them. Anyone can create a custom visual and package it as a single .pbiviz file, that can be imported into a Power BI report.
+Custom visuals are packages that include code for rendering the data that is served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can be imported into a Power BI report.
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; Make sure you trust the author and the source of the custom visual before importing it to your report.
-> 
-> 
 
 ## Organization visuals
 
-Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. This gives the admin the control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (i.e. update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
+Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. This gives the admin the control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (e.g. update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
 
 To get more information about organization custom visuals please [read more about organizational visuals](power-bi-custom-visuals-organization.md).
 
@@ -55,7 +53,7 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 
 Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Get started with Developer Tools](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools) and learn how to [publish custom visuals to AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
-### Import a custom visuals from a file
+### Import a custom visual from a file
 
 1. Select the ellipses from the bottom of the Visualizations pane.
 
@@ -65,7 +63,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
 
-3. From the Open file menu, select the .pbiviz file that you want to import and then select Open. The icon for the custom visual is added to the bottom of your Visualizations pane and is now available for use in your report.
+3. From the Open file menu, select the `.pbiviz` file that you want to import and then select Open. The icon for the custom visual is added to the bottom of your Visualizations pane and is now available for use in your report.
 
     ![](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
@@ -90,8 +88,9 @@ Are you a Web developer and interested in creating your own visualizations and a
 5. Import the custom visual by selecting **Add**. The icon for the custom visual is added to the bottom of your Visualizations pane and is now available for use in your report.
 
     ![](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
- 
+
 ## Download or import custom visuals from Microsoft AppSource
+
 You have two options for downloading and importing custom visuals; from within Power BI and from the AppSource website.
 
 ### Import custom visuals from within Power BI
@@ -134,11 +133,11 @@ You have two options for downloading and importing custom visuals; from within P
 
     ![](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
-3. AppSource displays a tile for each custom visual.  Each tile has a snapshot of the custom visual and gives a brief description and a download link. To see more details, select the tile. 
+3. AppSource displays a tile for each custom visual.  Each tile has a snapshot of the custom visual and gives a brief description and a download link. To see more details, select the tile.
 
     ![](media/power-bi-custom-visuals/powerbi-custom-select-visual.png)
 
-4. On the detail page you can view screenshots, videos, detailed description and more. Dowload the custom visual by selecting **Get it now** and then agreeing to the Terms of use. 
+4. On the detail page you can view screenshots, videos, detailed description and more. Download the custom visual by selecting **Get it now** and then agreeing to the Terms of use.
 
     ![](media/power-bi-custom-visuals/power-bi-appsource-get.png)
 
@@ -152,9 +151,9 @@ You have two options for downloading and importing custom visuals; from within P
 
     ![](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
-6. Save the .pbiviz file and then open Power BI.
+6. Save the '.pbiviz' file and then open Power BI.
 
-7. Import the .pbiviz file into your report (See [Import a custom visual from a file](#import-a-custom-visuals-from-a-file) section above)
+7. Import the '.pbiviz' file into your report (See [Import a custom visual from a file](#import-a-custom-visuals-from-a-file) section above)
 
 ## Considerations and troubleshooting
 

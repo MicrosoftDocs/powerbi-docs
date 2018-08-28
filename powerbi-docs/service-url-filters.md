@@ -2,37 +2,44 @@
 title: Add Power BI report parameters using the url
 description: Filter a report using URL query string parameters, even filter on more than one field.
 author: mihart
-manager: kfile
+manager: annebe
 ms.reviewer: ''
 featuredvideoid: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 08/09/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 # Filter a report using query string parameters in the URL
-When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to do this is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire URL.
+When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to pre-filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to do this is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire new URL.
 
 ![Power BI report in the service](media/service-url-filters/power-bi-report2.png)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?list=PLv2BtOtLblH3YE_Ycas5B1GtcoFfJXavO&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+## Uses for query string parameters
+Say you're working in Power BI Desktop and you want to create a report that has links to other Power BI reports -- but you want to show only some of the information in the other reports. First, filter the reports using query string parameters and save the URLs. Next, create a table in Desktop with these new report URLs.  Then publish and share the report.
+
+Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, she creates a report that generates a filtered report URL dynamically based on the selection her customer makes in the current report. When customers select the URL, they see only the intended information. 
 
 ## Query string parameter syntax for filtering
-The syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
+With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
 
 URL?filter=***Table***/***Field*** eq '***value***'
 
 ![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
-* **Table** and **Field** names are case sensitive, **value** is not.
+* **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
-* **Value** has to be enclosed with single quotes.
-* Field type has to be a number or string
-* Table and field names cannot have any spaces.
+
+### Field types
+Field type can be a number, datetime, or string and the type used must match the type set in the dataset.  For example, specifying a table column of type "string" won't work if you're looking for a datetime or numeric value in a dataset column set as a date (for example, Table/StringColumn eq 1).
+
+* **Strings** must be enclosed with single quotes - 'manager name'.
+* **Numbers** require no special formatting
+* **Dates and times** must be enclosed with single quotes and preceded by the word **DateTime**.
 
 If it's still confusing, continue reading and we'll break it down.  
 
@@ -56,7 +63,6 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 >[!NOTE]
 >*NC* is a value stored in the **Territory** field of the **Store** table.
 > 
-> 
 
 Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
 
@@ -69,7 +75,7 @@ You can also filter on multiple fields by adding additional parameters to your U
 ?filter=Store/Territory eq 'NC'
 ```
 
-To filter on additional fields, add an `and` and another field in the same format as above. Here is an example.
+To filter on additional fields, add an **and** and another field in the same format as above. Here is an example.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -77,8 +83,57 @@ To filter on additional fields, add an `and` and another field in the same forma
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
+## Operators
+Power BI supports many operators in addition to **and**. The table below lists those operators along with the content type they support.
 
-### Using DAX to filter on multiple values
+|operator  | definition | string  | number | Date |  Example|
+|---------|---------|---------|---------|---------|---------|
+|**and**     | and |  yes      | yes |  yes|  product/price le 200 and price gt 3.5 |
+|**eq**     | equals |  yes      | yes   |  yes       | Address/City eq 'Redmond' |
+|**ne**     | not equal |   yes      | yes  | yes        |  Address/City ne 'London' |
+|**ge**     |  greater than or equal       | no | yes |yes |  product/price ge 10
+|**gt**     | greater than        |no | yes | yes  | product/price gt 20
+|**le**     |   less than or equal      | no | yes | yes  | product/price le 100
+|**lt**     |  less than       | no | yes | yes |  product/price lt 20
+|**in****     |  including       | no | no |  yes | Student/Age in (27, 29)
+
+
+\** When using **in**, the values to the right of **in** can be a comma-separated list enclosed in parentheses, or a single expression that returns a collection.
+
+### Numeric data types
+A Power BI URL filter can include numbers in the following formats.
+
+|Number type  |Example  |
+|---------|---------|
+|**integer**     |   5      |
+|**long**     |   5L or 5l      |
+|**double**     |   5.5 or 55e-1 or 0.55e+1 or 5D or 5d or 0.5e1D or 0.5e1d or 5.5D or 5.5d or 55e-1D or 55e-1d     |
+|**decimal**     |   5M or 5m or 5.5M or 5.5m      |
+|**float**     | 5F or 5f or 0.5e1F or 0.5e-1d        |
+
+### Date data types
+Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00). What that means is that when you specify a date as YYYY-MM-DD, Power BI interprets it as YYYY-MM-DDT00:00:00.
+
+Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3rd 2018 or start with August 4th 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results will include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
+
+## Special characters in URL filters
+Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* (**_x**) and the 4-digit **Unicode**. If the Unicode is fewer than 4 characters, you'll need to pad it with zeroes. Here are some examples.
+
+|Identifier  |Unicode  | Coding for Power BI  |
+|---------|---------|---------|
+|**Table Name**     | Space: 0x20        |  Table_x0020_Name       |
+|**Column**@**Number**     |   @: 0x40     |  Column_x0040_Number       |
+|**[Column]**     |  [:0x005B ]:0x0050       |  _x0058_Column_x0050       |
+|**Column+Plus**     | +:0x2B        |  Column_x002B_Plus       |
+
+Table_x0020_Name/Column_x002B_Plus eq 3
+![table visual rendering special characters](media/service-url-filters/power-bi-special-characters1.png)
+
+
+Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
+![table visual rendering special characters](media/service-url-filters/power-bi-special-characters2.png)
+
+### Use DAX to filter on multiple values
 Another way to filter on multiple fields is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
 
 For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name cannot have any spaces. Here is the DAX formula for that column.
@@ -90,18 +145,22 @@ Publish the report to Power BI service and then use the URL query string to filt
     https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## Pin a tile from a filtered report
-Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard. The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
+Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard.  The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
 
-There may be some cases where this will be helpful when you'd like to see different results; filtered on the dashboard and unfiltered in the report.
+This will be helpful when you want to see different results; filtered on the dashboard and unfiltered in the report.
+
+> [!NOTE]
+> Pinned [live report page](service-dashboard-pin-live-tile-from-report.md) tiles do not yet support URL filters. 
 
 ## Considerations and troubleshooting
 There are a couple of things to be aware of when using the query string parameters.
 
-* In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine. 
+* When using the *in* operator, the values to the right of *in* must be either a comma-separated list enclosed in parentheses.    
+* In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.    
 * Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
-* Field type has to be number or string.
-* Table and field names cannot have any spaces.
-
+* The long data type is (2^53-1) due to Javascript limitations.
+* Pinned *live report page* tiles do not yet support URL filters. 
+ 
 ## Next steps
 [Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)

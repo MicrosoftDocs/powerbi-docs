@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/24/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -24,13 +24,13 @@ With the new workspaces preview you can now:
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
  
-When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access
+When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access. Because workspace administration is now in Power BI, Power BI admins decide who in an organization can create workspaces. See the [Power BI admin portal article, Workspaces section](service-admin-portal.md#workspace-settings) for details. 
 
 You add user groups or individuals to the new workspaces as members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in multiple user groups, they get highest level of permission provided by the role.  See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
-Everyone you add to an app workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium Capacity.
-Because this is a preview feature, there are some limitations that you should be aware of. See <section link> later in this article for an explanation of the current limitations. 
-With the new workspaces, we are redesigning some features. See < section link> later in this article for an explanation of the changes you can expect to be permanent along with the preview.
+Everyone you add to an app workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+
+With the new workspaces, we are redesigning some features. See [App workspace features that work differently](#app-workspace-features-that-work-differently) later in this article for an explanation of the changes you can expect to be permanent along with the preview. Because this is a preview feature, there are some limitations that you should be aware of. See [Known issues](#known-issues) later in this article for an explanation of the current limitations. 
 
 ## Roll out new app workspaces
 
@@ -108,8 +108,8 @@ The new workspaces offer three roles: admins, members, and contributors.
 **Members can:** 
 
 - Add members or others with lower permissions.
-- Publish and update apps.
-- Share items and share apps.
+- Publish and update an app.
+- Share an item or share an app.
 - Allow others to reshare items.
 - Do everything contributors can do.
 
@@ -125,7 +125,7 @@ We’re building Request Access workflows throughout the service so users who do
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Convert old app workspaces to new app workspaces
 
@@ -157,7 +157,7 @@ Some other new app workspace preview features are still being developed, but are
 Some features work differently from current app workspaces in the new app workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
 
 - Members can or can't reshare: replaced by the Contributor role
-- Read-only workspaces: replaced by a forthcoming Viewer role, which allows read-only access to content in a workspace.
+- Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to a forthcoming Viewer role, which allows similar read-only access to the content in a workspace.
 
 ## Known issues
 
