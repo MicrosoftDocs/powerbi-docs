@@ -79,7 +79,7 @@ Here is a partial list of differences you may use with each.
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
 
-### What are the prerequisites to create a PBIE capacity in Azure? 
+### What are the prerequisites to create a PBIE capacity in Azure?
 
 * You need to sign in to your organizational directory (MSA accounts are not supported).
 * You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 

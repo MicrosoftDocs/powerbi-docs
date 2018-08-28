@@ -197,7 +197,7 @@ Use the [**IError object** returned by the *error* event from the **JavaScript S
 
 After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the possible reason(s) for the failure.
 
-### Typical errors when embedding for Power BI users 
+### Typical errors when embedding for Power BI users
 
 | Message | Detailed Message | Error Code | Possible reason(s) |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
