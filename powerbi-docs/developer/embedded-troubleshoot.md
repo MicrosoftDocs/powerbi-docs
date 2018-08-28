@@ -2,14 +2,15 @@
 title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.author: maghan
 ---
+
 # Troubleshooting your embedded application
 
 This article discusses some common issues you may get when embedding content from Power BI.
@@ -18,7 +19,7 @@ This article discusses some common issues you may get when embedding content fro
 
 ### Fiddler Trace
 
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This tool may show errors and other related information.
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
 ![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
@@ -47,8 +48,8 @@ public static string GetExceptionText(this HttpOperationException exc)
 }
 ```
 
-We recommend logging the request IDs (and error details for troubleshooting).
-Provide the request id when approaching Microsoft support.
+We recommend logging the Request ID (and error details for troubleshooting).
+Provide the Request ID when approaching Microsoft support.
 
 ## App registration
 
@@ -95,7 +96,7 @@ The backend of the application may need to refresh the auth token before calling
 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
-**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
+**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user id or password)**
 
 If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
 
@@ -194,7 +195,7 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 
 Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/powerbi-javascript/wiki) to debug your application and better understand the cause of your errors.
 
-You should look at the appropriate common errors table. For example, the table that fits the embed type that was used, and compares the **IError properties** with the ones in the table.
+After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the possible reason(s) for the failure.
 
 ### Typical errors when embedding for Power BI users
 
@@ -273,4 +274,4 @@ For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
-If you require further assistance, then please [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) and provide all of the error message(s) you encounter.
+If you require further assistance, then please [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error message(s) you encounter.
