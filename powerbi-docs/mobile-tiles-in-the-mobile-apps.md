@@ -24,10 +24,6 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 Then in the Power BI mobile apps, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 
 ## Tiles in the iOS apps
-> [!NOTE]
-> You can [create picture tiles with your iPhone app](mobile-iphone-app-get-started.md) and save them to your dashboards.
-> 
-> 
 
 1. Open a [dashboard in the mobile app for iOS](mobile-apps-view-dashboard.md).
 2. Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In focus mode you can:
@@ -36,7 +32,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>For example, in this line chart, the selected values are for **This Year Sales**</em> and **Last Year Sales** in **August**.\*  
+   *For example, in this line chart, the selected values are for **This Year Sales** and **Last Year Sales** in **August**.*  
    
    In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
    
@@ -103,7 +99,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>In this bar chart, the values for the **Decor**</em> bar are shown at the top of the chart.\*
+   *In this bar chart, the values for the **Decor** bar are shown at the top of the chart.*
    
    Tap the **Full screen** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
    
