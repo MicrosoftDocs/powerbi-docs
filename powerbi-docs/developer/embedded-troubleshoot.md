@@ -55,7 +55,7 @@ Provide the Request ID when approaching Microsoft support.
 
 **App registration failure**
 
-Error messages within the Azure portal or the Power BI app registration page mentions insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page mention insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
 **Power BI Service does not appear in the Azure portal when registering a new App**
 
@@ -149,7 +149,7 @@ To verify which it is, try the following.
 ### AADSTS90094: The grant requires admin permission
 
 **_Symptoms:_**</br>
-When a non-admin user attempts to sign-in to an application for the first and grant consent she gets the following error:
+When a non-admin user attempts to sign in to an application for the first and grant consent she gets the following error:
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
 * AADSTS90094: The grant requires admin permission.
 
@@ -238,7 +238,7 @@ Verify that you have all the proper prerequisites before using the Onboarding ex
 
 ### Common Issues
 
-Some common issues you might encounter when testing with the Onboarding experience tool are:
+Some common issues you might encounter while testing with the Onboarding experience tool are:
 
 #### Using the Embed for your customers sample application
 
