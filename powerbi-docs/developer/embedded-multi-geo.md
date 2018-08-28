@@ -50,7 +50,7 @@ You can't change a Power BI Embedded resource location once you've created a new
 
 To move your Power BI content to a different region, follow these steps:
 
-1. Create a new capacity in a different region.
+1. [Create a new capacity](azure-pbie-create-capacity.md) in a different region.
 2. Assign all workspaces from the existing capacity to the new capacity.
 3. Delete or pause the old capacity.
 
