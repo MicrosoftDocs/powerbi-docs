@@ -10,22 +10,21 @@ ms.topic: conceptual
 ms.date: 08/31/2018
 ms.author: maghan
 ---
-
 # Troubleshooting your embedded application
 
-This article discusses some common issues you may encounter when embedding content from Power BI.
+This article discusses some common issues you may get when embedding content from Power BI.
 
 ## Tools for troubleshooting
 
 ### Fiddler Trace
 
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This may show errors and other related information.
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
 ![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
-### F12 in Browser for front end debugging
+### F12 in Browser for front-end debugging
 
-F12 will launch the developer window within your browser. This provides the ability to look at network traffic and other information.
+F12 launches the developer window within your browser. This tool provides the ability to look at network traffic and other information.
 
 ![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
@@ -48,16 +47,16 @@ public static string GetExceptionText(this HttpOperationException exc)
 }
 ```
 
-We recommend logging the request ids (and error details for troubleshooting).
-Please provide the request id when approaching Microsoft support.
+We recommend logging the request IDs (and error details for troubleshooting).
+Provide the request id when approaching Microsoft support.
 
 ## App registration
 
 **App registration failure**
 
-Error messages within the Azure portal or the Power BI app registration page will mention insufficient privileges. In order to register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page mentions insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
-**Power BI Service does not appear in Azure portal when registering a new App**
+**Power BI Service does not appear in the Azure portal when registering a new App**
 
 At least one user must be signed up for Power BI. If you do not see **Power BI Service** listed within the API list, no user is signed up for Power BI.
 
@@ -69,9 +68,9 @@ A fiddler capture may be required to investigate further. The required permissio
 
 **API call returning 403**
 
-A fiddler capture may be required to investigate further. There could be several reason for a 403 error.
+A fiddler capture may be required to investigate further. There could be several reasons for a 403 error.
 
-* The user have exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens, and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* The user has exceeded the amount of embed token that can be generated on a shared capacity. You need to purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
 * The authenticated user is not a member of the group (app workspace).
 * The authenticated user is not an admin of the group (app workspace).
@@ -98,7 +97,7 @@ The backend of the application may need to refresh the auth token before calling
 
 **(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password)**
 
-If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
+If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
 
 There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -108,7 +107,7 @@ To create this policy, you need to be a **Global Administrator** for the directo
 
 1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Run the following powershell commands line-by-line (making sure the variable $sp doesn’t have more than 1 application as a result).
+2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn’t have more than 1 application as a result).
 
 ```powershell
 Connect-AzureAD
@@ -169,27 +168,27 @@ User consent is disabled for the tenant.
     ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
 
 *Grant permissions by an admin*
-Grant permissions to the application by an admin - either for the entire tenant or for a specific user.
+Grant permissions to the application by an admin - either for the entire tenant or a specific user.
 
 ## Data sources
 
 **ISV wants to have different credentials for the same data source**
 
-A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users context, and embed using the Azure AD token of that user.
+A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users contexts, and embed using the Azure AD token of that user.
 
 ## Content rendering
 
-**Rendering, or consumption, of embedded content fails or times out**
+**Rendering, or consumption, of embedded content, fails or times out**
 
 Make sure the embed token did not expire. Make sure you are checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
 
 **Report or dashboard does not load**
 
-If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard will not work within your application if it doesn't load within powerbi.com.
+If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard doesn't work within your application if it doesn't load within powerbi.com.
 
 **Report or dashboard is performing slowly**
 
-Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding apis.
+Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding APIs.
 
 ## Troubleshooting your embedded application with the IError object
 
@@ -207,7 +206,7 @@ You should look at the appropriate common errors table. For example, the table t
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token * Embed type does not match token type |
 | PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group Id <li> Unauthorized group |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
 
@@ -216,12 +215,12 @@ You should look at the appropriate common errors table. For example, the table t
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | LoadReportFailed | Get report failed | 404 | <li> Wrong report Id <li> Report doesn’t exist  |
 | LoadReportFailed | Get report failed | 403 | Report Id does not match token |
-| LoadReportFailed | Get report failed | 500 | Report provided Id is not a Guid |
+| LoadReportFailed | Get report failed | 500 | Report provided Id is not a guid |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No report id provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | Wrong token type, Bad Token |
 | PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group Id |
-| TokenExpired | Access   token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query   data Expired token |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server, and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
+| TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ## Onboarding experience tool for embedding
 
@@ -274,4 +273,4 @@ For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
-If you require further assistance then please [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) and provide all of the error message(s) you encounter.
+If you require further assistance, then please [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) and provide all of the error message(s) you encounter.
