@@ -36,7 +36,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>For example, in this line chart, the selected values are for **This Year Sales</em>* and **Last Year Sales** in **August**.*  
+   <em>For example, in this line chart, the selected values are for **This Year Sales**</em> and **Last Year Sales** in **August**.\*  
    
    In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
    
@@ -103,7 +103,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>In this bar chart, the values for the **Decor</em>* bar are shown at the top of the chart.*
+   <em>In this bar chart, the values for the **Decor**</em> bar are shown at the top of the chart.\*
    
    Tap the **Full screen** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
    
