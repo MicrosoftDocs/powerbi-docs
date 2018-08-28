@@ -14,13 +14,13 @@ LocalizationGroup: Embedded
 
 # Multi-Geo support for Power BI Embedded (Preview)
 
-Based on the same feature set and limitations that Power BI Premium supports using Multi-Geo (Preview), now customers using **Power BI Embedded** can set up an **A capacity** using **Multi-Geo** capabilities. [Learn more about Multi-Geo capabilities and supported regions](../service-admin-premium-Multi-Geo.md).
+**Multi-Geo support for Power BI Embedded (Preview)** means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world.
 
-**Multi-Geo support for Power BI Embedded (Preview)** means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps, can now deploy their data in different regions around the world.
+ This means that customers using **Power BI Embedded** can set up an **A capacity** using **Multi-Geo** options, based on the same features and limitations that [Power BI Premium supports using Multi-Geo](../service-admin-premium-Multi-Geo.md).
 
 ## Creating new Power BI Embedded Capacity resource with Multi-Geo
 
-In the **Create resource** screen, you need to choose the location of your capacity. Until now, it was limited only to the location of your Azure tenant, so only a single location was available. With Multi-Geo, you can choose between different regions to deploy your capacity.
+In the **Create resource** screen, you need to choose the location of your capacity. Until now, it was limited only to the location of your Power BI tenant, so only a single location was available. With Multi-Geo, you can choose between different regions to deploy your capacity.
 
 ![Power BI Embedded Multi-Geo setup](media/embedded-multi-geo/pbie-multi-geo-setup.png)
 
@@ -42,6 +42,8 @@ It’s also available in the Admin Portal in Powerbi.com. In the Admin portal, c
 
 ![View in admin portal](media/embedded-multi-geo/pbie-multi-geo-admin-portal.png)
 
+[Learn more about creating capacities with Power BI Embedded.](azure-pbie-create-capacity.md)
+
 ## Manage existing capacities location
 
 You can't change a Power BI Embedded resource location once you've created a new capacity.
@@ -52,7 +54,7 @@ To move your Power BI content to a different region, follow these steps:
 2. Assign all workspaces from the existing capacity to the new capacity.
 3. Delete or pause the old capacity.
 
-It’s important to note that if you decide to delete a capacity without reassigning its content, all the content in that capacity moves to a shared capacity, which is in your home tenant.
+It’s important to note that if you decide to delete a capacity without reassigning its content, all the content in that capacity moves to a shared capacity, which is in your home region.
 
 ## API support for Multi-Geo
 
@@ -60,7 +62,7 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 1. **[Get Capacities](https://docs.microsoft.com/en-us/rest/api/power-bi/capacities/getcapacities)** - The API returns a list of capacities with access to the user. The response now includes an additional property called ‘region,’ that specifies the capacity’s location.
 2. **[Assign To Capacity](https://docs.microsoft.com/en-us/rest/api/power-bi/capacities)** - The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
-3. **[Azure Resource Manager API](https://docs.microsoft.com/en-us/rest/api/apimanagement/api)** - all of the Azure Resource Manager API operations, including *Create* and *Delete*, supports Multi-Geo.
+3. **[Azure Resource Manager API](https://docs.microsoft.com/en-us/rest/api/power-bi-embedded/capacities)** - all of the Azure Resource Manager API operations, including *Create* and *Delete*, supports Multi-Geo.
 
 ## Limitations and considerations
 
