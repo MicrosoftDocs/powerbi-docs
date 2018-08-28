@@ -163,7 +163,7 @@ User consent is disabled for the tenant.
 **_Several fixes are possible:_**
 
 *Enable user consent for the entire tenant (all users, all applications)*
-1. In Azure Portal navigate to "Azure Active Directory" => "Users and groups" => "User settings"
+1. In the Azure portal navigate to "Azure Active Directory" => "Users and groups" => "User settings"
 2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
 
     ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
@@ -202,10 +202,10 @@ After acquiring the IError object, you should look at the appropriate common err
 | Message | Detailed Message | Error Code | Possible reason(s) |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong report Id <li> Report doesn’t exist  |
-| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No report id provided |
+| PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
+| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token * Embed type does not match token type |
-| PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group Id <li> Unauthorized group |
+| PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong Group ID <li> Unauthorized group |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
@@ -214,12 +214,12 @@ After acquiring the IError object, you should look at the appropriate common err
 | Message | Detailed Message | Error Code | Reason(s) |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| LoadReportFailed | Get report failed | 404 | <li> Wrong report Id <li> Report doesn’t exist  |
-| LoadReportFailed | Get report failed | 403 | Report Id does not match token |
+| LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
+| LoadReportFailed | Get report failed | 403 | Report ID does not match token |
 | LoadReportFailed | Get report failed | 500 | Report provided Id is not a guid |
-| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No report id provided |
+| Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | Wrong token type, Bad Token |
-| PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group Id |
+| PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize Group ID |
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
