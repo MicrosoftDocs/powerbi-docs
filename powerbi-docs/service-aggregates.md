@@ -2,13 +2,13 @@
 title: Aggregates (sum, average, maximum, etc.) in visualizations
 description: Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/04/2018
+ms.date: 08/29/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -135,6 +135,10 @@ A4:  And a third possibility is that you're using the field for an axis. On a ba
 
 >[!NOTE]
 >The exception to this rule is scatter charts, which *require* aggregated values for the X and Y axes.
+
+Q:  Why can't I aggregate text fields for SSAS data sources?
+
+A:  Live connections to SSAS MD do not allow for any client-side aggregations. This includes first, last, avg, min, max, and sum.
 
 Q:  I have a scatter chart and I want my field to *not* aggregate.  How do I do this?
 
