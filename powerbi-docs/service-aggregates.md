@@ -22,15 +22,15 @@ When Power BI service and Power BI Desktop create visualizations, they may aggre
 First, let's take a look at data *types* because the type of data determines how, and if, it can be aggregated.
 
 ## Types of data
-Most datasets have more than one type of data. At the most basic level, the data is either numeric or it is not. Numeric data can be aggregated using a sum, average, count, minimum, variance, and much more. Even textual data, often called *categorical* data, can be aggregated. If you try to aggregate a categorical fields (by placing it in a numeric only bucket like **Values** or **Tooltips**), Power BI will count the occurrences of each category or count the distinct occurrences of each category. And special types of data, like dates, have a few of their own aggregate options: earliest, latest, first, and last. 
+Most datasets have more than one type of data. At the most basic level, the data is either numeric or it is not. Numeric data can be aggregated using a sum, average, count, minimum, variance, and much more. Even textual data, often called *categorical* data, can be aggregated. If you try to aggregate a categorical field (by placing it in a numeric only bucket like **Values** or **Tooltips**), Power BI will count the occurrences of each category or count the distinct occurrences of each category. And special types of data, like dates, have a few of their own aggregate options: earliest, latest, first, and last. 
 
 In the example below:
-- **Units Sold** and **Manufacturing Price** are columns that contains numeric data
+- **Units Sold** and **Manufacturing Price** are columns that contain numeric data
 -  **Segment**, **Country**, **Product**, **Month**, and **Month Name** contain categorical data
 
    ![](media/service-aggregates/power-bi-aggregate-chart.png)
 
-When creating a visualization in Power BI, numeric fields will be aggregated (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***, "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***. Some numeric fields are referred to as **measures**. It's easy to identify measaures in the Power BI report editor -- measures are shown with the ∑ symbol in the Fields list. For more information see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).
+When creating a visualization in Power BI, numeric fields will be aggregated (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***, "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***. Some numeric fields are referred to as **measures**. It's easy to identify measures in the Power BI report editor -- measures are shown with the ∑ symbol in the Fields list. For more information, see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).
 
 ![](media/service-aggregates/power-bi-aggregate-fields.png)
 
@@ -39,14 +39,14 @@ When creating a visualization in Power BI, numeric fields will be aggregated (th
 ## Why don't aggregates work the way I want them to?
 Working with aggregates in Power BI service can be confusing; maybe you have a numeric field and Power BI won't let you change the aggregation. Or maybe you have a field, like a year, and you don't want to aggregate it, you just want to count the number of occurrences.
 
-Most often, the source of the problem is how the field was defined in the dataset. Maybe the field is defined as text and that explains why it can't be summed or averaged. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program that was used to create the dataset (e.g., Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
+Most often, the source of the problem is how the field was defined in the dataset. Maybe the field is defined as text and that explains why it can't be summed or averaged. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program that was used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
 
-To help you navigate the confusion we have a special section at the end of this article called **Considerations and troubleshooting**.  If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com) for a quick response directly from the Power BI team.
+To help you navigate the confusion, we have a special section at the end of this article called **Considerations and troubleshooting**.  If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com) for a quick response directly from the Power BI team.
 
 ## Change how a numeric field is aggregated
 Say you have a chart that sums the units sold for different products, but you'd rather have the average. 
 
-1. Create a chart that uses a category and a measure. In this example we're using Units Sold by Product.  By default, Power BI creates a chart that sums the units sold (measure in the Value well) for each product (category in the Axis well).
+1. Create a chart that uses a category and a measure. In this example, we're using Units Sold by Product.  By default, Power BI creates a chart that sums the units sold (measure in the Value well) for each product (category in the Axis well).
 
    ![](media/service-aggregates/power-bi-aggregate-sum.png)
 
@@ -74,7 +74,7 @@ Some of the options that may be available for aggregating a field:
 * **Count (Distinct).** This counts the number of different values in that field.
 * **Standard deviation.**
 * **Variance**.
-* **Median**.  Shows the median (middle) value. This is the value that has the same number of items above and below.  If there are 2 medians, Power BI averages them.
+* **Median**.  Shows the median (middle) value. This is the value that has the same number of items above and below.  If there are two medians, Power BI averages them.
 
 For example, this data:
 
@@ -125,9 +125,9 @@ A:  The field you've selected is likely a calculated measure or advanced measure
 
 Q:  My field **is** numeric, why are my only choices **Count** and **Distinct count**?
 
-A1:  The likely explanation is that the dataset owner has, accidentally or intentionally, *not* classified the field as a number. For example, if a dataset has a **year** field, the dataset owner may categorize that as text because it is more likely that the **year** field will be counted (i.e., number of people born in 1974) and not that it will be summed or averaged. If you are the owner, you can open the dataset in Power BI Desktop and use the **Modeling** tab to change the data type.  
+A1:  The likely explanation is that the dataset owner has, accidentally or intentionally, *not* classified the field as a number. For example, if a dataset has a **year** field, the dataset owner may categorize that as text because it is more likely that the **year** field will be counted (for example, number of people born in 1974) and not that it will be summed or averaged. If you are the owner, you can open the dataset in Power BI Desktop and use the **Modeling** tab to change the data type.  
 
-A2: If the field has a calculator icon, that means it's a *calculated measure* and each calculated measure has its own hard-coded formula that can only be changed by a dataset owner. The calculation being used may be a simple aggregation like an average or sum, but it may also be something more complicated like a "percent of contribution to parent category" or "running total since start of the year". Power BI isn't going to sum or average the results but will instead just re-calculate (using the hard-coded formula) for each data point.
+A2: If the field has a calculator icon, that means it's a *calculated measure* and each calculated measure has its own hard-coded formula that can only be changed by a dataset owner. The calculation being used may be a simple aggregation like an average or sum, but it may also be something more complicated like a "percent of contribution to parent category" or "running total since start of the year". Power BI isn't going to sum or average the results but will instead just recalculate (using the hard-coded formula) for each data point.
 
 A3:  Another possibility is that you've dropped the field into a *bucket* that only allows categorical values.  In that case, your only options will be count and distinct count.
 
