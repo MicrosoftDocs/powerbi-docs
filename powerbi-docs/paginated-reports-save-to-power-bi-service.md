@@ -14,9 +14,24 @@ ms.author: maggies
 
 # Publish a paginated report to the Power BI service
 
-In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the worksapce is in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
+In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the workspace is in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
 
-If your report data source is on premises, then you need to create a gateway after you upload the report.
+If your report data source is on premises, then you need to [create a gateway](#create-a-gateway-to-an-on-premises-data-source) after you upload the report.
+
+## Add a workspace to a Premium capacity
+
+If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the name, you need to add the workspace to a Premium capacity. 
+
+1. Select **Workspaces**, select the ellipsis (**...**) next to the workspace name, then select **Edit workspace**.
+
+    ![Select Edit workspace](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
+
+1. In the **Edit workspace** dialog box, expand **Advanced**, then slide **Dedicated capacity** to **On**.
+
+    ![Select Dedicated capacity](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace-dialog.png)
+
+   You may not be able to change it. If not, then contact your Power BI Premium admin to give you permissions to add your workspace to a Premium capacity.
+
 
 ## Upload a paginated report to the Power BI service
 
@@ -61,6 +76,10 @@ Just like any other Power BI report, if the report data source is on premises, t
    ![Manage the paginated report](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
 1. See the Power BI service article [Install a gateway](service-gateway-install.md) for details and next steps.
+
+### Gateway limitations
+
+Currently gateways don't supprt multi-value parameters.
 
 
 ## Next steps
