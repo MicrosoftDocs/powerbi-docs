@@ -13,20 +13,11 @@ LocalizationGroup: Premium
 ---
 
 # Power BI Premium - what is it?
-<<<<<<< HEAD
-
-Power BI Premium provides resources dedicated to running the Power BI service for your organization or team, giving you more dependable performance and larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user licenses for viewers.
-=======
 Power BI Premium provides resources dedicated to running the Power BI service for your organization or team. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user licenses for viewers.
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 
 You can take advantage of Power BI Premium by assigning workspaces to a Premium capacity. *Premium capacity* is a dedicated resource for your organization. For workspaces that are not assigned to a premium capacity, these are in a shared capacity.
 
-<<<<<<< HEAD
-*Shared capacity* is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure the quality of the experience for all users.
-=======
 With *shared capacity*, your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure quality of the experience for all users.
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -88,10 +79,6 @@ Power BI Premium is available in node configurations with different v-core capac
 * The backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Power BI Report Server
-<<<<<<< HEAD
-
-=======
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 Power BI Premium includes the right to run Power BI Report Server on-premises. For more information, see [Get started with Power BI Report Server](report-server/get-started.md).
 
 ## Next steps
