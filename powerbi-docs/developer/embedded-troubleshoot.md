@@ -193,11 +193,11 @@ Open the file from Power BI Desktop, or within powerbi.com, and verify that perf
 
 ## Troubleshooting your embedded application with the IError object
 
-Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/powerbi-javascript/wiki) to debug your application and better understand the cause of your errors.
+Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) to debug your application and better understand the cause of your errors.
 
 After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the possible reason(s) for the failure.
 
-### Typical errors when embedding for Power BI users 
+### Typical errors when embedding for Power BI users
 
 | Message | Detailed Message | Error Code | Possible reason(s) |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
