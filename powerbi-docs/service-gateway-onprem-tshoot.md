@@ -278,7 +278,7 @@ Here is a listing of the available performance counters.
 | # of Mashup open connection failed / sec |Number of Mashup open connection actions failed per second. |
 | # of Mashup queries executed / sec |Number of Mashup queries executed per second (succeeded or failed). |
 | # of Mashup queries failed / sec |Number of Mashup failed queries executed per second |
-| # of multiple result sets of OLEDB queries failed / sec |Number of multiple result sets of OLEDB failed queries executed per second. |
+| # of OLEDB multiple result set queries failed / sec |Number of multiple result sets of OLEDB failed queries executed per second. |
 | # of OLEDB multiple result sets of queries executed / sec |Number of OLEDB multiple result sets of queries executed per second (succeeded or failed). |
 | # of OLEDB open connection executed / sec |Number of OLEDB open connection actions executed per second (succeeded or failed). |
 | # of OLEDB open connection failed / sec |Number of OLEDB open connection actions failed per second. |
