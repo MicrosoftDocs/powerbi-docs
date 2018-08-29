@@ -30,7 +30,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
     ![Select Dedicated capacity](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace-dialog.png)
 
-   You may not be able to change it. If not, then contact your Power BI Premium admin to give you permissions to add your workspace to a Premium capacity.
+   You may not be able to change it. If not, then contact your Power BI Premium capacity admin to give you assignment rights to add your workspace to a Premium capacity.
 
 
 ## Upload a paginated report to the Power BI service

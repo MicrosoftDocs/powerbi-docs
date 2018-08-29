@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 08/20/2018
+ms.date: 08/28/2018
 ms.author: maggies
 ---
 
