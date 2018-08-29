@@ -30,7 +30,8 @@ The **Capacity settings** area of the admin portal provides four gauges that ind
 | CPU |Number of times CPU exceeded 80% utilization. |
 | Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
 | Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
+| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> * We limit the total number of DirectQuery and live connection queries per second.* The limits are 30/s for P1, 60/s for P2 and 120/s for P3. * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br>* This applies equally to on-premises and cloud connections. |
+| --- | --- |
 
 Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity. The following chart shows details for the CPU metric.
 
@@ -58,11 +59,9 @@ To install the Premium Capacity Monitoring App, follow these steps:
 
 Now that you've installed the app, you can see metrics about the capacities in your organization. Let's take a look at some of the key metrics that are available.
 
-Click on the app to open it. Once the app is open, a dashboard appears showing an aggregated summary of all the capacities in which you have admin rights.
-
 ## App dashboard and filtering
 
-After you install the app, click to open it. The app shows a dashboard with a summary of all the capacities for which you're an admin.
+After you install the app, click to open it. The app shows a dashboard with a summary of all the capacities for which you have admin rights.
 
 ![Premium report overview](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
@@ -78,9 +77,10 @@ The **Summary page** shows a view of the capacity based on entities, system, and
 
 | **Area** | **Metrics** |
 | --- | --- |
-| **Entities** | * The number of capacities you own<br<br> * The distinct number of datasets in your capacity<br<br> * The distinct number of workspaces in your capacity |
-| **System** | * The average memory usage in GB over the past seven days<br<br> * Highest memory consumption in GB in the past seven days and the local time it occurred.<br<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days split into 3-minute buckets<br<br> * Most times the CPU exceeded 80% in the past seven days split by hour buckets and the local time it occurred.<br<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days split into 3-minute buckets<br<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days split by hour buckets and the local time it occurred. |
-| **Dataset workloads** | * Total number of refreshes in the past seven days<br<br> * Total number of successful refreshes in the past seven days<br<br> * Total number of failed refreshes in the past seven days<br<br> * Total number of failed refreshes due to out of memory<br<br> * Average refresh duration is measured in minutes, the time taken to complete the operation<br<br> * Average refresh wait-time is measured in minutes, the average lag between the scheduled time and start of the operation.<br<br> * Total number of queries run in the past seven days<br<br> * Total number of successful queries in the past seven days<br<br> * Total number of failed queries in the past seven days<br<br> * Average queries duration is measured in minutes, the time taken to complete the operation<br<br> * Total number of models evicted due to memory pressure |
+| **Entities** | * The number of capacities you own<br> * The distinct number of datasets in your capacity<br> * The distinct number of workspaces in your capacity |
+| **System** | * The average memory usage in GB over the past seven days<br> * Highest memory consumption in GB in the past seven days and the local time it occurred.<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days split into 3-minute buckets<br> * Most times the CPU exceeded 80% in the past seven days split by hour buckets and the local time it occurred.<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days split into 3-minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days split by hour buckets and the local time it occurred. |
+| **Dataset workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is measured in minutes, the time taken to complete the operation<br> * Average refresh wait-time is measured in minutes, the average lag between the scheduled time and start of the operation.<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average queries duration is measured in minutes, the time taken to complete the operation<br> * Total number of models evicted due to memory pressure |
+| --- | --- |
 
 ## Refreshes page
 
@@ -111,4 +111,4 @@ The **System page** shows the CPU High utilization (number of times exceeded 80%
 Now that you have gone through the report to monitor Power BI Premium capacities, you can learn more about optimizing capacities.
 
 > [!div class="nextstepaction"]
-> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works)
+> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
