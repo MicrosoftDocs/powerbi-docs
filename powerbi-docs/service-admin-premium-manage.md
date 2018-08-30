@@ -159,33 +159,8 @@ Once saved, the workspace, and all its contents, will be moved into Premium capa
 
 
 ## Monitor capacity usage
-For each capacity, you can see usage measurements for CPU, Memory Usage, Memory Thrashing and Direct Query. We suggest keeping tab on these metrics to ensure that your users see good performance on your capacity:
 
-![Usage for last seven days](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Power BI Embedded capacity usage is monitored within the Azure portal.
-
-| Metric | Description |
-| --- | --- |
-| CPU |Number of times CPU exceeded 80% utilization. |
-| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
-| Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> <br> * We limit the total number of DirectQuery and live connection queries per second.<br><br>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br><br> * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/><br>* This applies equally to on-premises and cloud connections. |
-
-Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity.  These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.  
-
-![Detailed usage chart CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detailed usage chart Memory Size](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detailed usage chart Memory Thrashing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
+Power BI provides an app for monitoring capacity usage. For more information, see [Monitor Power BI Premium capacities in your organization](service-admin-premium-monitor-capacity.md).
 
 ## What Premium looks like for users
 For the most part, users will not even need to know they are in a Premium capacity. Their dashboards and reports will just work. As a visual hint, you will see a diamond icon next to workspaces that are in a Premium capacity.
