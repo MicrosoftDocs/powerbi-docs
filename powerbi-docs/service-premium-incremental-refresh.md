@@ -39,6 +39,12 @@ Large datasets with potentially billions of rows may not fit into Power BI Deskt
 
 To leverage incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**.
 
+Once published, the parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings.
+
+It is important that the filter is pushed to the source system when queries are submitted for refresh operations. This means the data source should support "query folding". Given the various levels of query-folding support for each data source, it is recommeded that you verify the filter logic is included in the source queries. If this does not occur, each query will request all the data from the source, which defeats the object of incremental refresh.
+
+The filter will be used to partition the data into ranges in the Power BI service. It is not designed to support updating this the filtered date column. An update will be interpreted as an insertion and a deletion (not an update). If the deletion occurs in the historical range and not the incremental range, it won’t get picked up.
+
 In the Power Query Editor, select **Manage Parameters** to define the parameters with default values.
 
 ![Manage parameters](media/service-premium-incremental-refresh/manage-parameters.png)
@@ -57,9 +63,6 @@ Ensure rows are filtered where the column value *is after or equal to* **RangeSt
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Select **Close and Apply** from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
-
-> [!NOTE]
-> Once published, the parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings.
 
 ### Define the refresh policy
 
@@ -98,9 +101,11 @@ The first refresh in the Power BI service may take longer to import all 5 years.
 
 **Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.**
 
+### Advanced policy options
+
 #### Detect data changes
 
-Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
+Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which are normally auditing columns. **This should not be the same column used to partition the data with the RangeStart/RangeEnd parameters.** The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
 
 ![Detect changes](media/service-premium-incremental-refresh/detect-changes.png)
 
