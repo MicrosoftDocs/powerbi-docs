@@ -923,6 +923,8 @@
       href: mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
+  - name: "What can developers do with Power BI"
+    href: developer/what-can-you-do.md
   - name: Embedded Analytics
     items:
     - name: Overview
