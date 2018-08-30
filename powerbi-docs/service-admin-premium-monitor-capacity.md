@@ -110,7 +110,7 @@ These charts are summarized on an hourly basis for the past week, and can help i
 
 You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
-## Next Steps
+## Next steps
 
 Now that you understand how to monitor Power BI Premium capacities, learn more about optimizing capacities.
 
