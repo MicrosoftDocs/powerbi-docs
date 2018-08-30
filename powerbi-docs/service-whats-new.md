@@ -32,11 +32,11 @@ You can also check out the YouTube channels for information about "What's new" a
 
 ## Previous months (2018)
 ### July 2018
-* [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/en-us/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI Administrators.
+* [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/en-us/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI administrators.
 
 ### June 2018
 * Sharing reports with filters and slicers.
-* New and improved UX for [gateway connections](https://powerbi.microsoft.com/en-us/blog/easier-set-up-of-datasets-in-power-bi/) and setting up datasets.
+* New and improved user interface for [gateway connections](https://powerbi.microsoft.com/en-us/blog/easier-set-up-of-datasets-in-power-bi/) and setting up datasets.
 
 ### May 2018
 * [Theme dashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) in the Power BI service.
