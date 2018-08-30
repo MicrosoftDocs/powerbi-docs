@@ -49,7 +49,7 @@ The **Filters applied to all pages** tab allows you to select a capacity, a data
 
 The **Summary** tab shows a view of the capacity based on entities, system, and datasets.
 
-![Filters that apply to all pages](media/service-admin-premium-monitor-capacity/filters-applied-to-all-pages.png)
+![Filters that apply to all pages](media/service-admin-premium-monitor-capacity/premium-summary-report.png)
 
 | **Area** | **Metrics** |
 | --- | --- |
