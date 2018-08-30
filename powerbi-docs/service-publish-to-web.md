@@ -2,16 +2,16 @@
 title: Publish to web from Power BI
 description: With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
 ---
+
 # Publish to web from Power BI
 
 With Power BI **Publish to web**, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
@@ -123,15 +123,16 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 
 **Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are **not currently supported or available** with Publish to web:
 
-1. Reports using row level security.
-2. Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
-3. Reports shared to you directly or through an organizational content pack.
-4. Reports in a group in which you are not an edit member.
-5. "R" Visuals are not currently supported in Publish to web reports.
-6. Exporting Data from visuals in a report which has been published to the web
-7. ArcGIS Maps for Power BI visuals
-8. Reports containing report-level DAX measures
-9. [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
+- Reports using row level security.
+- Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
+- Reports shared to you directly or through an organizational content pack.
+- Reports in a group in which you are not an edit member.
+- "R" Visuals are not currently supported in Publish to web reports.
+- Exporting Data from visuals in a report which has been published to the web
+- ArcGIS Maps for Power BI visuals
+- Reports containing report-level DAX measures
+- Single sign-on data query models
+- [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
 
 ## Tenant setting
 
