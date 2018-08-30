@@ -297,15 +297,9 @@ Users in the organization can embed Power BI dashboards and reports in Software 
 
 The Premium settings tab allows you to manage any Power BI Premium (Em or P SKU) capacities that have been purchased for your organization. All users within your organization can see the Premium settings tab, but only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
 
-<<<<<<< HEAD
 ![Power BI Premium admin settings](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
 
 For more information about how to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
-=======
-## Capacity settings
-
-The Capacity settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
->>>>>>> b063b830e9e28c9cc29c6dae96cfc1c034f62af6
 
 ### Power BI Embedded settings
 
