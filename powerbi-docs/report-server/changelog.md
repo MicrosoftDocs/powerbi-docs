@@ -19,7 +19,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## August 2018
 - **Power BI Report Server**
-    - *Version 1.3.6813.37954 (Build 15.0.2.554), Released: August 28, 2018*
+    - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 31, 2018*
         - Bug fixes
             - Fixed an issue when server was upgraded from earlier versions of PBI Report Server where a binding redirect was not updated, customers saw this :      
             *`
