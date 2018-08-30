@@ -16,14 +16,14 @@ LocalizationGroup: Share your work
 
 With Power BI **Publish to web**, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 
-You can also easily edit, update, refresh or un-share your published visuals.
+You can also easily edit, update, refresh, or unshare your published visuals.
 
 > [!WARNING]
 > When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. This includes detail level data that is aggregated in your reports. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 ## How to use Publish to Web
 
-**Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web is not supported. Please review the **Warning** earlier in this article before using Publish to web.
+**Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web is not supported. Review the **Warning** earlier in this article before using Publish to web.
 
 You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
 
@@ -60,7 +60,7 @@ The following table provides guidance about the View Mode, and how it will appea
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame, you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
 | ![](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
 | ![](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available. |
 
@@ -72,7 +72,7 @@ The embed code you receive after you Publish to web will look like the following
 
 You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
 
-To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accomodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
+To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accommodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
 | Ratio | Size | Dimension (Width x Height) |
 | --- | --- | --- |
@@ -140,7 +140,7 @@ Power BI administrators can enable or disable the publish to web feature. They m
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
-|**Publish to web** under report's **File** menu.|Enabled for all|Not visable for all|Only visable for authorized users or groups.|
+|**Publish to web** under report's **File** menu.|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
 |**Embed codes** within admin portal|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status will display **Disabled**|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status will display as **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
