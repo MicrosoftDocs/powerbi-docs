@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/27/2018
+ms.date: 09/03/2018
 ms.author: jocaplan
 
 LocalizationGroup: Premium
@@ -22,7 +22,12 @@ Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up 
 
 This section describes best practices for working with large datasets.
 
-**Large models can be very resource-intensive** on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
+**Large models can be very resource-intensive** on your capacity; we recommend at least a P1 SKU for any models larger than 1 GB. 
+Although publishing large models to workspaces backed by A SKUs up to A3 might work, refreshing them will not.
+
+**Note: Publishing large models to A and EM SKUs might return errors that won't be specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. Developers are working on improving the error messages for these scenarios.
+
+The following table describes recommended SKUs for various .pbix sizes:
 
 
    |SKU  |Size of .pbix   |
@@ -31,7 +36,7 @@ This section describes best practices for working with large datasets.
    |P2    | < 6 GB        |
    |P3    | up to 10 GB   |
 
-
+**Note: The Power BI Embedded A4 SKU is equal to the P1, A5 = P2 and A6 = P3.
 
 **Your .pbix files represent data in a highly compressed state**. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
 
