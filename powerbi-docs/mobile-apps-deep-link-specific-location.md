@@ -64,7 +64,7 @@ This URI opens a specific report in the Power BI mobile app:
 
 To find the 36-character report object id, navigate to the specific report in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
 
-https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
 
 ## Open to a specific report page
 This URI opens a specific report page in the Power BI mobile app:
@@ -75,7 +75,7 @@ The report page is called "ReportSection" followed by a number. Again, open the 
 
 For example, see the highlighted section of this URL:
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
 
 ## Open in full-screen mode
 Add the parameter in bold to open to a specific report in full-screen mode:
@@ -91,7 +91,7 @@ You can also add context in the string. Then if you need to contact us, we can u
 
 For example, see the highlighted section of this URL: 
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
