@@ -36,7 +36,7 @@ Custom visuals allow you to create your own visuals for use within Power BI repo
 
 ## [Using API automation](walkthrough-push-data.md)
 
-You can use the Power BI API to push data into a dataset. Using push data allows you to add a row to a table within a dataset. The new data can then be viewed in tiles on a dashboard and within visuals in your report.
+You can use the Power BI APIs to push data into a dataset. Using API automation, you can add rows to a table within a dataset. The new data can then be viewed in tiles on a dashboard and within visuals in your report.
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
