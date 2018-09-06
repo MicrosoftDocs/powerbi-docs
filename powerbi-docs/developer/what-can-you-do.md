@@ -16,7 +16,7 @@ ms.date: 09/25/2018
 
 Developers have different options trying to include Power BI content into applications. As a developer, you can use these options include **embedding with Power BI**, **custom visuals**, and **pushing data into Power BI**.
 
-## [Embedding Power BI content](embedding.md)
+## Embedding Power BI content
 
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This feature means you have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways, and app workspaces – when embedding your content.
 
@@ -28,20 +28,20 @@ Choose the solution that is right for you:
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
-## [Develop custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)
+## Develop custom visuals
 
 Custom visuals allow you to create your own visuals for use within Power BI reports. Custom visuals are written in TypeScript, which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (css). For your convenience, we use the Less pre-compiler, which supports some advanced features such as nesting, variables, conditions, loops, and other features. If you don't want to use any of those features, you can just write plain css in the less file.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-## [Using API automation](walkthrough-push-data.md)
+## Using API automation
 
-You can use the Power BI APIs to push data into a dataset. Using API automation, you can add rows to a table within a dataset. The new data can then be viewed in tiles on a dashboard and within visuals in your report.
+You can use the Power BI APIs to push data into a dataset. Using API automation, you can add rows to a table within a data set. The new data can then be viewed in tiles on a dashboard and within visuals in your report.
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
 ## Next steps
 
 [Embedding with Power BI](embedding.md)  
-[Publish custom visuals to the Office store](office-store.md)  
-[Push data into a dashboard](walkthrough-push-data.md)
+[Developing a Power BI custom visuals](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)  
+[Push data into a dataset](walkthrough-push-data-create-dataset.md)

@@ -1025,7 +1025,7 @@
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
     - name: Tutorials
       items:
-      - name: "Developing a Power BI Custom Visual"
+      - name: "Developing a Power BI custom visual"
         href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
