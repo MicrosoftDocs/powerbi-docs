@@ -992,6 +992,8 @@
         items:
         - name: Create a capacity in Azure
           href: developer/azure-pbie-create-capacity.md
+        - name: Create a capacity using Multi-Geo in Azure
+          href: developer/embedded-multi-geo.md
         - name: Scale a capacity in Azure
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
@@ -1012,6 +1014,8 @@
           href: https://docs.microsoft.com/rest/api/power-bi-embedded/
         - name: Power BI REST APIs
           href: https://msdn.microsoft.com/library/mt147898.aspx
+        - name: Power BI REST API Reference
+          href: developer/rest-api-reference.md
       - name: ".NET SDK Download"
         href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "Embed custom layouts into an app"
@@ -1116,6 +1120,8 @@
       items:
       - name: "REST APIs"
         href: https://docs.microsoft.com/rest/api/power-bi
+      - name: "Power BI REST API Reference"
+        href: developer/rest-api-reference.md
       - name: "Complete code listing"
         href: developer/walkthrough-push-data-complete-code.md
     - name: Resources
@@ -1304,6 +1310,8 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
+      - name: "Power BI Premium monitor capacity report"
+        href: service-admin-premium-monitor-capacity.md
       - name: "Support for large datasets"
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
