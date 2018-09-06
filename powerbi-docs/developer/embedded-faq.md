@@ -10,6 +10,7 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/21/2018
 ---
+
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
@@ -271,11 +272,11 @@ Some of the features are:
 * New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
-## Onboarding Experience tool for embedding
+## Embedding startup tool for embedding
 
-### What is the Onboarding experience tool?
+### What is the Embedding startup tool?
 
-The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding startup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 

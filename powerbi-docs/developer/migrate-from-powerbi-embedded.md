@@ -25,7 +25,7 @@ The current Power BI Workspace Collection will continue to be available for a li
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Onboarding experience tool](https://aka.ms/embedsetup).
+Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Embedding startup tool](https://aka.ms/embedsetup).
 
 Choose the solution that is right for you:
 * **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
