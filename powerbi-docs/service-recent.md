@@ -2,14 +2,14 @@
 title: Display recently-visited content in Power BI
 description: documentation for recents in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 09/01/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -18,11 +18,11 @@ LocalizationGroup: Common tasks
 
 
 ## What is recent content
-Recent content is the last items you visited, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks across all of your workspaces.
+Recent content is the last items you visited in Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks across all of your workspaces.
 
 ![Recent content window](media/service-recent/power-bi-recent-screen.png)
 
-Watch Amanda demonstrate how **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda demonstrate how the Power BI service **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
