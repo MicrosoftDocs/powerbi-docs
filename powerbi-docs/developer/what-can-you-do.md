@@ -44,7 +44,7 @@ You can use the Power BI APIs to push data into a dataset. Using API automation,
 
 [Embedding with Power BI](embedding.md)  
 
-[Developing a Power BI custom visuals](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
+[Developing a Power BI custom visual](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
 [Push data into a dataset](walkthrough-push-data.md)
 
