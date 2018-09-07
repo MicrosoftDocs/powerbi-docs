@@ -2,13 +2,13 @@
 title: Overview of Q&A in Power BI service and Desktop
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 08/18/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -44,11 +44,9 @@ In addition to using Q&A to explore their data, creators and dataset owners can 
 
 ## How does Q&A know how to answer questions?
 ### Which datasets does Q&A use?
-How does Q&A know how to answer data-specific questions? It relies on the names of the tables, columns, and calculated fields in the underlying dataset. So what you (or the dataset owner) call things is important!
+How does Q&A know how to answer data-specific questions? It relies on the names of the tables, columns, and calculated fields in the underlying dataset. So what the dataset owner calls things is important! If you're having trouble getting answers to your Q&A questions, talk with the dataset owner to see if she can make the dataset more user-friendly.
 
-For example, suppose you had an Excel table named “Sales”, with columns titled “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”. You could ask questions about any of those entities.  You could ask "show *sales*, "total *profit* by *month*", "sort *products* by *units sold*", and more.
-
-Q&A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&A dropdown.
+Q&A can answer questions that are based on how the dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&A dropdown.
 
 * If the visualizations' axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*, or show *sales* by month as a bar chart."
 * If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which *salesperson* had the lowest *sales* in *Florida* in *2013*."
@@ -82,10 +80,7 @@ and Q&A will suggest these questions to your colleagues.
 [Enable Q&A for your on-premises datasets](service-q-and-a-direct-query.md)
 If you need a gateway to connect to the dataset, use Power BI settings to turn Q&A on and off.
 
-[Tutorial: Use Q&A with the Retail Sales sample n Power BI service](power-bi-visualization-introduction-to-q-and-a.md):
+[Tutorial: Use Q&A with the Retail Sales sample in Power BI service](power-bi-visualization-introduction-to-q-and-a.md):
 Use Q&A in a realistic industry tutorial.
-
-[Make your data work well with Q&A](service-prepare-data-for-q-and-a.md):
-Are you the person creating datasets and data models?  Then this topic is for you.
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
