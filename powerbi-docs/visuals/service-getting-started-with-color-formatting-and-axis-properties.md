@@ -89,12 +89,12 @@ There are all sorts of colors to choose from, and many more customizations you c
 
 ## Setting color from text values
 
-Beginning with the August 2018 **Power BI Desktop** update, you can set colors by the text value, or hex code, for a given report element. For more information, please see [conditional formatting in tables](desktop-conditional-table-formatting.md).
+Beginning with the August 2018 **Power BI Desktop** update, you can set colors by the text value, or hex code, for a given report element. For more information, please see [conditional formatting in tables](../desktop-conditional-table-formatting.md).
 
 
 ## Next steps
 For more information, see the following article:  
 
 * [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Conditional formatting in tables](desktop-conditional-table-formatting.md)
+* [Conditional formatting in tables](../desktop-conditional-table-formatting.md)
 

@@ -43,7 +43,7 @@ Want to watch someone else create a treemap first?  Skip to 2:10 in this video t
 Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service (not Desktkop) and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But if someone shares a report with you, you won't be able to add new visualizations.
 
 1. Select the "Total stores" tile to open the Retail Analysis sample report.    
-2. Open [Editing View](service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
+2. Open [Editing View](../service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
 3. Convert the chart to a treemap.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
@@ -58,11 +58,11 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample. 
    > 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Add the treemap as a dashboard tile (pin the visual)](service-dashboard-tiles.md). 
-7. [Save the report](service-report-save.md).
+6. [Add the treemap as a dashboard tile (pin the visual)](../service-dashboard-tiles.md). 
+7. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
 
 Highlighting a Category or Details in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
 
@@ -72,11 +72,11 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
 2. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](service-reports-visual-interactions.md)
+3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../service-reports-visual-interactions.md)
 
 ## Next steps
-[ Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
-[Power BI - Basic Concepts](service-basic-concepts.md)  
+[ Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)  
+[Power BI - Basic Concepts](../service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  
 

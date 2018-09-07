@@ -14,7 +14,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Move and resize a visualization in a report in Power BI service and Power BI Desktop
-Only report creators and owners can move and resize visualizations. In Power BI service (app.powerbi.com) this means opening the report in [Editing view](service-reading-view-and-editing-view.md).
+Only report creators and owners can move and resize visualizations. In Power BI service (app.powerbi.com) this means opening the report in [Editing view](../service-reading-view-and-editing-view.md).
 
 ## Open the report
 In Power BI, open a report that has at least one visualization, or [create a new visualization](power-bi-report-add-visualizations-i.md). 
@@ -31,6 +31,6 @@ In Power BI, open a report that has at least one visualization, or [create a new
   ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## Next steps
-[Resize a visualization on a dashboard](service-dashboard-edit-tile.md)  
+[Resize a visualization on a dashboard](../service-dashboard-edit-tile.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

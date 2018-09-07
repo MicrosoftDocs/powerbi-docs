@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 ## Power BI visualizations
 We'll be adding new visualizations, stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [custom visuals](power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](developer/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [custom visuals](power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/office-store.md).  
 
 ## List of visualizations available in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
@@ -28,7 +28,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 >[!TIP]
 >The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see [Tutorial: Basic Area chart](power-bi-visualization-basic-area-chart.md).
+For more information, see [Tutorial: Basic Area chart](../power-bi-visualization-basic-area-chart.md).
 
 ### Bar and column charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png) 
@@ -103,7 +103,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [Tutorial: ArcGIS maps in Power BI](power-bi-visualization-arcgis.md).
+For more information, see [Tutorial: ArcGIS maps in Power BI](../power-bi-visualization-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -135,7 +135,7 @@ For more information, see [Tutorial: Slicers in Power BI](power-bi-visualization
 ### Standalone images
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-For more information, see [Add an image widget to a dashboard](service-dashboard-add-widget.md).
+For more information, see [Add an image widget to a dashboard](../service-dashboard-add-widget.md).
 
 ### Tables
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
@@ -172,9 +172,9 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
 
-[Reports in Power BI](service-reports.md)
+[Reports in Power BI](../service-reports.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

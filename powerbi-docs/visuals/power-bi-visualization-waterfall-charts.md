@@ -65,18 +65,18 @@ We'll create a waterfall chart that displays sales variance (estimated sales ver
     Our map supports our theory.  It shows that these 2 territories had the highest value of sales last year (bubble size) and this year (bubble shading).
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
 
 Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
 ## Next steps
-[Reports in Power BI](service-reports.md)
+[Reports in Power BI](../service-reports.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

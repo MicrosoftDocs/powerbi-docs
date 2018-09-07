@@ -41,7 +41,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ### Step 1: Open the Financial Sample Excel file
-1. [Download the sample Financial Excel file](sample-financial-download.md) if you haven't already. Remember where you saved it.
+1. [Download the sample Financial Excel file](../sample-financial-download.md) if you haven't already. Remember where you saved it.
 
 2. Open the file in ***Power BI service*** by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
 
@@ -87,8 +87,8 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
 ### Step 5: Save your report
-1. [Save the report](service-report-save.md).
-2. [Add the gauge chart as a dashboard tile](service-dashboard-tiles.md). 
+1. [Save the report](../service-report-save.md).
+2. [Add the gauge chart as a dashboard tile](../service-dashboard-tiles.md). 
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
@@ -111,9 +111,9 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 [Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
-[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)
+[Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[ Power BI - Basic Concepts](service-basic-concepts.md)
+[ Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

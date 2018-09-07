@@ -49,9 +49,9 @@ Watch this video to see Will create a Funnel chart using the Sales and Marketing
 
 Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
 
-These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
+These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Start on a [blank report page ](power-bi-report-add-page.md) and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+1. Start on a [blank report page ](../power-bi-report-add-page.md) and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
    
     ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
@@ -66,21 +66,21 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
    * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Add the Funnel as a dashboard tile](service-dashboard-tiles.md). 
-6. [Save the report](service-report-save.md).
+5. [Add the Funnel as a dashboard tile](../service-dashboard-tiles.md). 
+6. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
 
 Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](service-reports-visual-interactions.md)
+2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../service-reports-visual-interactions.md)
 
 ## Create a funnel chart in Q&A
-Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](service-basic-concepts.md).
+Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](../service-basic-concepts.md).
 
 1. On the Opportunity Analysis Sample dashboard, begin typing your question in the Q&A question box.
    
@@ -91,9 +91,9 @@ Open the Opportunity Analysis Sample dashboard, or any other dashboard that has 
 ## Next steps
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)
+[Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

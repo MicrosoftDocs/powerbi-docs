@@ -65,7 +65,7 @@ To highlight one particular area in your chart, select that area or its top bord
 
 ## Next steps
 [Reports in Power BI](service-reports.md)  
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)  
+[Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)  
 [Power BI - Basic Concepts](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

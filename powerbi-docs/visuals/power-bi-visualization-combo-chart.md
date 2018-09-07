@@ -42,7 +42,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 
 1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 2. Select **Edit Report** to open the report in Editing View.
-3. [Add a new report page](power-bi-report-add-page.md).
+3. [Add a new report page](../power-bi-report-add-page.md).
 4. Create a column chart that displays this year's sales and gross margin by month.
 
     a.  From the Fields pane, select **Sales** \> **This Year Sales** > **Value**.
@@ -100,13 +100,13 @@ In this task, we'll compare gross margin and sales.
 
 From here you might want to:
 
-* [Add the combo chart as a dashboard tile](service-dashboard-tiles.md).
-* [Save the report](service-report-save.md).
-* [Make the report more accessible for people with disabilities](desktop-accessibility.md)
+* [Add the combo chart as a dashboard tile](../service-dashboard-tiles.md).
+* [Save the report](../service-report-save.md).
+* [Make the report more accessible for people with disabilities](../desktop-accessibility.md)
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](service-reports-visual-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
 
 ## Next steps
 
@@ -114,6 +114,6 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

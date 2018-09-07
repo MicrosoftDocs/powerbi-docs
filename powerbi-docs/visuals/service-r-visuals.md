@@ -25,17 +25,17 @@ The following image shows a Power BI dashboard with a collection of R visuals us
 
 ![](media/service-r-visuals/r-visuals-service_1.png)
 
-R visuals are created in a [Power BI Desktop report](desktop-get-the-desktop.md), like the report shown in the following image.
+R visuals are created in a [Power BI Desktop report](../desktop-get-the-desktop.md), like the report shown in the following image.
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 
-Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](desktop-r-visuals.md).
+Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](../desktop-r-visuals.md).
 
 Note that in the service not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
 You can download this [sample Power BI Desktop file](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix file) that contains a few R visuals to see how this works, and to experiment.
 
-R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](service-share-dashboards.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
+R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](../service-share-dashboards.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
 
 As you can see in the following image, R visuals in the Power BI service, either in dashboards or reports, largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
 
@@ -60,9 +60,9 @@ As another example, the following image shows the error message that appears whe
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](service-premium.md)
+R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-premium.md)
 
-Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md) for more information.
+Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](../service-admin-purchasing-power-bi-pro.md) for more information.
 
 The following table describes R visuals capabilities based on licensing.
 
@@ -94,7 +94,7 @@ R packages are collections of R functions, data, and compiled code that are comb
 
 **Power BI Desktop** can use any type of R packages without limitation. You can install R packages for use in **Power BI Desktop** on your own (using the [RStudio IDE](https://www.rstudio.com/), for example).
 
-R visuals in the **Power BI service** are supported by the packages found in the **Supported Packages** section found in [this article](service-r-packages-support.md). If you don't find a package you're interested in among the supported packages list, you can request the support of the package. See [R packages in the Power BI service](service-r-packages-support.md) for information on how to request support.
+R visuals in the **Power BI service** are supported by the packages found in the **Supported Packages** section found in [this article](../service-r-packages-support.md). If you don't find a package you're interested in among the supported packages list, you can request the support of the package. See [R packages in the Power BI service](../service-r-packages-support.md) for information on how to request support.
 
 ### Requirements and Limitations of R packages
 There are a handful of requirements and limitations for R packages:
@@ -105,11 +105,11 @@ There are a handful of requirements and limitations for R packages:
   
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
-* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See [R packages in the Power BI service](service-r-packages-support.md) for a list of supported and unsupported R packages.
+* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See [R packages in the Power BI service](../service-r-packages-support.md) for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ### Supported Packages:
 For a long list of supported R packages (and the short list of unsupported packages) please see the following article:
 
-* [R packages in the Power BI service](service-r-packages-support.md)
+* [R packages in the Power BI service](../service-r-packages-support.md)
 

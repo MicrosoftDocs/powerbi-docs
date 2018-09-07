@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 ---
 # Best design practices for reports and visuals
 <!-- Shared newnav Include -->
-[!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
+[!INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
 
 ## Introduction
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report.  Many of these best practices apply to dashboard design as well.
@@ -444,7 +444,7 @@ To keep your report page from looking too confusing or too busy, be consistent i
 #### Sorting
 A really simple opportunity to provide faster insight is to set the sorting of visuals. For example, sorting bar charts in descending or ascending order based on the value in the bars enables you to quickly show significant incremental information without using more real estate.
 
-To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](power-bi-report-change-sort.md).
+To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](../power-bi-report-change-sort.md).
 
 #### Chart interaction and interplay
 One of the most compelling feature of Power BI is the ability to edit the way charts interact with each other.  By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter which saves you real estate on your page. To do this, select **Visual Interactions** from the menubar.
@@ -453,7 +453,7 @@ One of the most compelling feature of Power BI is the ability to edit the way ch
 
 **Figure 34: Visual interactions**
 
-Then, for each visual on the page, decide whether you want the selected visual to filter, highlight, or do nothing. Not all visuals can be highlighted, and for those the highlight control won't be available. For more information, see [Visual interactions in Power BI](service-reports-visual-interactions.md).
+Then, for each visual on the page, decide whether you want the selected visual to filter, highlight, or do nothing. Not all visuals can be highlighted, and for those the highlight control won't be available. For more information, see [Visual interactions in Power BI](../service-reports-visual-interactions.md).
 
 > [!TIP]
 > For readers who’re new to Power BI, this ability to click and interact with reports may not be instantly obvious. Add text boxes to help them understand what they can click on to find more insights.
@@ -577,7 +577,7 @@ After
 3. Filled map: changed the **Data colors** to make it stand out more. Turned **Diverging** on and set the **Minimum** to pink and the **Maximum** to red.
 4. Tree map: removed filter which was set for only USA. Set the **Data labels** to 1 decimal place. The visual was using the Class field which isn’t very useful since it will almost always be 33% (Gold/Silver/Bronze).  Selected a different more-interesting field,  gender. Changed Aquatics to blue and Athletics to grey for design.
 5. Top bar chart:  shortened the title, removed data labels, turned legend title off. Changed word order of title to match the chart below.
-6. Bottom bar chart: sorted by year ascending to match chart above. Changed colors to match class. Changed title. Turned off legend for more space for data. Turned on data labels which won't show up in the report (because the visual is too small for the labels to be readable) but will show when the visual is opened in Focus mode. [Learn about Focus mode](service-focus-mode.md). Added Count of Event (Distinct) to **Tooltips** so now when you hover over a stacked column, the tooltips also tell you how many events were contested that year.
+6. Bottom bar chart: sorted by year ascending to match chart above. Changed colors to match class. Changed title. Turned off legend for more space for data. Turned on data labels which won't show up in the report (because the visual is too small for the labels to be readable) but will show when the visual is opened in Focus mode. [Learn about Focus mode](../service-focus-mode.md). Added Count of Event (Distinct) to **Tooltips** so now when you hover over a stacked column, the tooltips also tell you how many events were contested that year.
 7. Visual Interactions: turned off interactions for both cards since I always want them to show total games and sports.
 
 ## Visual types and best practices
@@ -613,7 +613,7 @@ The example below shows the trends in the number of medals awarded and the numbe
 
 For more information, see:
 
-* [Customize the X and Y axes](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Customize the X and Y axes](../power-bi-visualization-customize-x-axis-and-y-axis.md)
 * [Line charts and irregular intervals](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)
 * [Line charts 101](http://www.columnfivemedia.com/data-visualization-101-line-charts)
 
@@ -636,7 +636,7 @@ If line charts are the standard for looking at data over time, bar charts are th
 * When an entire Bar/Column chart doesn’t fit into the allotted space, Power BI adds scrollbars. When possible, and if it makes sense, structure the visual and report to show the entire chart so the reader gets an overview of the entire distribution.  Unfortunately this is not possible in our example given the significant number of countries around the world.
   
   One way to limit the values included is to use a filter. For example, add a Visual level filter that shows the country only if unemployment rate is above 20%.
-* Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](power-bi-visualization-drill-down.md).
+* Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](../power-bi-visualization-drill-down.md).
   
   ![](media/power-bi-visualization-best-practices/power-bi-drill.png)
   

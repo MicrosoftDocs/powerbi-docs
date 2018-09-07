@@ -16,12 +16,12 @@ LocalizationGroup: Visualizations
 # Card visualizations
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard or report, such as total sales, market share year over year, or total opportunities. This type of visualization is called a *Card*. As with almost all of the native Power BI visualizations, Cards can be created using the report editor or Q&A.
 
-![card visualization](media/power-bi-visualization-card/pbi_opptuntiescard.png)
+![card visualization](./media/power-bi-visualization-card/pbi_opptuntiescard.png)
 
 ## Create a card using the report editor
-These instructions use the Retail Analysis Sample. To follow along, [download the sample](sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
+These instructions use the Retail Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Start on a [blank report page ](power-bi-report-add-page.md) and select the **Store** \> **Open store count** field. If you're using Power BI service, you'll need to open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+1. Start on a [blank report page ](../power-bi-report-add-page.md) and select the **Store** \> **Open store count** field. If you're using Power BI service, you'll need to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
     Power BI creates a column chart with the one number.
 
@@ -41,19 +41,19 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
 
    ![](media/power-bi-visualization-card/power-bi-pin-success-message.png)
-9. Select **Go to dashboard**. There, you can [edit and move](service-dashboard-edit-tile.md) the pinned visualization.
+9. Select **Go to dashboard**. There, you can [edit and move](../service-dashboard-edit-tile.md) the pinned visualization.
 
 
 ## Create a card from the Q&A question box
 The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI service (app.powerbi.com) from a dashboard or report. The steps below describe creating a Card from a Power BI service dashboard. If you'd like to create a card using Q&A in Power BI Desktop, [follow these instructions](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) for the Q&A preview for Desktop reports.
 
-1. Create a [dashboard](service-dashboards.md) and [get data](service-get-data.md). This example uses the [Opportunity Analysis sample](sample-opportunity-analysis.md).
+1. Create a [dashboard](../service-dashboards.md) and [get data](../service-get-data.md). This example uses the [Opportunity Analysis sample](../sample-opportunity-analysis.md).
 
 1. At the top of your dashboard, start typing what you want to know about your data in the question box. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**TIP**: From a Power BI service report, in [Editing view](service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
+>**TIP**: From a Power BI service report, in [Editing view](../service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
 
 3. For example, type "number of opportunities" in the question box.
 
@@ -72,7 +72,7 @@ The Q&A question box is the easiest way to make a Card. The Q&A question box is 
    A Success message (near the upper right corner) lets you know the visualization was added, as a tile, to your dashboard.  
 
    ![](media/power-bi-visualization-card/power-bi-success.png)
-7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
+7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](../service-dashboard-edit-tile.md) on your dashboard.
 
    ![](media/power-bi-visualization-card/power-bi-pinned.png)
 
@@ -101,10 +101,10 @@ You have many options for changing labels, text, color and more. The best way to
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## Next steps
-[Dashboard tiles in Power BI](service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](../service-dashboard-tiles.md)
 
-[Dashboards in Power BI](service-dashboards.md)
+[Dashboards in Power BI](../service-dashboards.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
