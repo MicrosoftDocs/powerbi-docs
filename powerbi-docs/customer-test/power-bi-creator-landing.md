@@ -6,7 +6,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landingpage
-ms.date: 09/04/2018
+ms.date: 09/07/2018
 ms.author: maggies
 layout: landingpage
 
