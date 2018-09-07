@@ -2,14 +2,14 @@
 title: Radial gauge charts in Power BI  
 description: 'Radial Gauge charts in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 08/21/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -52,22 +52,22 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 ### Step 2: Create a gauge to track Gross Sales
 1. In the **Fields** pane, select **Gross Sales**.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
-2. Change the aggregation to **Average**.
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gross-sales.png)
+2. Change the aggregation to **Average**. In the **Value** field, select the dropdown and select **Average**.
    
    ![](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
-3. Select the gauge icon ![](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) to convert the Column Chart to a gauge.
+3. Select the gauge icon ![](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) to convert the column chart to a gauge.
    
-   By default, Power BI creates a Gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
+   By default, Power BI creates a gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $184.21K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-184.png)
 
 ### Step 3: Set a target value
 1. Drag **COGS** to the **Target value** well.
 2. Change the aggregation to **Average**.
-   Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
+   Power BI adds a needle to represent our target value of **$146K**. Notice that we've exceeded our target.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-cogs.png)
    
    > [!NOTE]
    > You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
@@ -94,7 +94,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
 2. Open the formatting pane by selecting the paint roller icon.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-max.png)
 3. Expand the **Gauge axis** and enter values for **Min** and **Max**.
    
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-axis.png)
@@ -108,8 +108,6 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 ## Next steps
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Add a visualization to a report](power-bi-report-add-visualizations-i.md)
 
 [Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)
 

@@ -2,14 +2,14 @@
 title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 09/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -74,7 +74,7 @@ To follow along, open the [Procurement analysis sample report](sample-procuremen
    ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## Export underlying data details
-What you see when you select **Underlying data** can vary. Understanding these details may require the help of your Admin or IT department. In Power BI Desktop or service, in the reporting view, a *measure* displays  in the Fields list with a calculator icon ![showing icon](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Measures are created in Power BI Desktop not Power BI service.
+What you see when you select **Underlying data** can vary. Understanding these details may require the help of your Admin or IT department. In Power BI Desktop or service, in the reporting view, a *measure* displays in the Fields list with a calculator icon ![showing icon](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Measures are created in Power BI Desktop not Power BI service.
 
 
 | Visual contains |                                                                              What you'll see in export                                                                              |
