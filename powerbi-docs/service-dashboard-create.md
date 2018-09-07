@@ -1,5 +1,5 @@
 ---
-title: Create a Power BI dashboard from a report
+title: Create a Power BI service dashboard from a report
 description: Create a Power BI dashboard from a report
 author: mihart
 manager: kfile
@@ -9,11 +9,11 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
 
 ---
-# Create a Power BI dashboard from a report
+# Create a Power BI dashboard in Power BI service
 You've read [Dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard - from a report, from scratch, from a dataset, by duplicating an existing dashboard, and more.  
 
 It can seem overwhelming when you're first getting started, so we'll start by creating a quick and easy dashboard by pinning visualizations from a report that's already been built. Once you complete this quickstart, you'll have a good understanding of the relationship between dashboards and reports, opening Editing view in the report editor, pinning tiles, and navigating between a dashboard and a report. Then use the links in the Table of Contents on the left or the **Next steps** at the bottom to move on to more-advanced topics.
