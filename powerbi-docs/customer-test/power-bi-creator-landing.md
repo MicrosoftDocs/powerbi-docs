@@ -32,7 +32,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Get started creating with Power BI</h3> 
-                                                                                      <p>See how these services, apps, and connectors work together to create interactive insights.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../desktop-what-is-desktop.md">Start with Power BI Desktop</a></li> 
                                                                                                      <li><a style="text-decoration: underline;" href="../power-bi-overview.md">Start with the Power BI service</a></li> 
@@ -54,7 +54,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Connect to data</h3> 
-                                                                                      <p>Connect to the world of data, in the cloud and on-premises. Set up gateways and data refresh.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../desktop-quickstart-connect-to-data.md">Connect to data in Power BI Desktop </a></li> 
                                                                                                      <li><a style="text-decoration: underline;" href="../service-connect-to-services.md">Connect to online services</a></li> 
@@ -76,7 +76,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Transform, shape, & model data</h3> 
-                                                                                      <p>Shape your data. Then consolidate multiple data sources into a single query.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../desktop-common-query-tasks.md">Shape data in the Query Editor</a></li> 
                                                                                                      <li><a style="text-decoration: underline;" href="../service-admin-rls.md">Row-level security in Power BI Desktop</a></li> 
@@ -98,7 +98,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Create reports, visuals, & dashboards</h3> 
-                                                                                      <p>Reports offer insights into datasets, with tables and visuals. Dashboards are a high-level view.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../desktop-report-view.md">Reports in Power BI Desktop</a></li> 
                                                                                                      <li><a style="text-decoration: underline;" href="../power-bi-report-add-visualizations-i.md">Add a visual to a report</a></li> 
@@ -120,7 +120,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Share your work</h3> 
-                                                                                      <p>Share dashboards and reports with coworkers and others, in and out of your organization.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../service-how-to-collaborate-distribute-dashboards-reports.md">How should I collaborate and share?</a></li>
                                                                                                      <li><a style="text-decoration: underline;" href="../service-create-workspaces.md">App workspaces in the Power BI service    </a></li> 
@@ -141,7 +141,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         </div>
                                                                         <div class="cardText"> 
                                                                                       <h3>Develop for Power BI</h3> 
-                                                                                      <p>Check out the options developers have for including Power BI content in apps.</p>
+                                                                                      <p></p>
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../developer/azure-pbie-what-is-power-bi-embedded.md">Power BI Embedded in Azure</a></li> 
                                                                                                      <li><a style="text-decoration: underline;" href="../service-custom-visuals-getting-started-with-developer-tools.md">Develop custom visuals</a></li> 
