@@ -784,57 +784,57 @@
       - name: APIs
         items:
         - name: Azure Resource Management REST APIs
-          href: ../https://docs.microsoft.com/rest/api/power-bi-embedded/
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
         - name: Power BI REST APIs
-          href: ../https://msdn.microsoft.com/library/mt147898.aspx
+          href: https://msdn.microsoft.com/library/mt147898.aspx
         - name: Power BI REST API Reference
           href: ../developer/rest-api-reference.md
       - name: ".NET SDK Download"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848274
+        href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "Embed custom layouts into an app"
         href: ../developer/embedded-custom-layout.md
     - name: Resources
       items:
       - name: "Dev Center"
-        href: ../https://powerbi.microsoft.com/en-us/developers/
+        href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Onboarding Experience Tool for embedding"
-        href: ../https://aka.ms/embedsetup
+        href: https://aka.ms/embedsetup
       - name: "JavaScript Playground Sample"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848279
+        href: https://go.microsoft.com/fwlink/?linkid=848279
       - name: "Power BI JavaScript wiki"
-        href: ../https://github.com/Microsoft/powerbi-javascript/wiki
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
       - name: "JavaScript Git Repo"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848276
+        href: https://go.microsoft.com/fwlink/?linkid=848276
       - name: "Power BI C# Git Repo"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848273
+        href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: "Samples"
-        href: ../https://go.microsoft.com/fwlink/?linkid=851293
+        href: https://go.microsoft.com/fwlink/?linkid=851293
       - name: "Power BI community"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848280
+        href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848281
+        href: https://go.microsoft.com/fwlink/?linkid=848281
   - name: Develop Custom Visuals
     items:
     - name: Overview
       items: 
       - name: "Adding Custom visuals into Power BI"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
     - name: Tutorials
       items:
       - name: "Developing a Power BI Custom Visual"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
       - name: "Using Capabilities"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/ 
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/ 
       - name: "Objects and Properties"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
       - name: "Advanced Edit Mode"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
       - name: "Migrating to versioned API guide"
-        href: ../https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
+        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
     - name: How to
       items:
       - name: "Get a custom visual certified"
@@ -844,17 +844,17 @@
     - name: Reference
       items: 
       - name: "APIs"
-        href: ../https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/
+        href: https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/
     - name: Resources
       items:
       - name: "Dev Center"
-        href: ../https://powerbi.microsoft.com/developers/
+        href: https://powerbi.microsoft.com/developers/
       - name: "Create a custom visual with the Developer Tools"
         href: ../service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
-        href: ../https://microsoft.github.io/PowerBI-visuals/samples/
+        href: https://microsoft.github.io/PowerBI-visuals/samples/
       - name: "Custom Visuals Git Repo"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848277  
+        href: https://go.microsoft.com/fwlink/?linkid=848277  
   - name: Automation
     items:
     - name: Overview
@@ -892,7 +892,7 @@
     - name: Reference
       items:
       - name: "REST APIs"
-        href: ../https://docs.microsoft.com/rest/api/power-bi
+        href: https://docs.microsoft.com/rest/api/power-bi
       - name: "Power BI REST API Reference"
         href: ../developer/rest-api-reference.md
       - name: "Complete code listing"
@@ -900,11 +900,11 @@
     - name: Resources
       items:
       - name: "Dev Center"
-        href: ../https://powerbi.microsoft.com/en-us/developers/
+        href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Power BI C# Git Repo"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848273
+        href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: ".NET SDK Download"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848274
+        href: https://go.microsoft.com/fwlink/?linkid=848274
 - name: Power BI Report Server
   items:
   - name: Overview
@@ -940,9 +940,9 @@
       - name: "Paginated report data sources"
         href: ../report-server/connect-data-sources.md
       - name: "Subscriptions"
-        href: ../https://go.microsoft.com/fwlink/?linkid=851310
+        href: https://go.microsoft.com/fwlink/?linkid=851310
       - name: "Using the mobile app"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848711
+        href: https://go.microsoft.com/fwlink/?linkid=848711
       - name: "Troubleshoot scheduled refresh"
         href: ../report-server/scheduled-refresh-troubleshoot.md
     - name: Report server for developers
@@ -950,9 +950,9 @@
       - name: "Report server for developers"
         href: ../report-server/developer-handbook-overview.md
       - name: "Report Viewer control"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848724
+        href: https://go.microsoft.com/fwlink/?linkid=848724
       - name: "Develop extensions"
-        href: ../https://go.microsoft.com/fwlink/?linkid=848723
+        href: https://go.microsoft.com/fwlink/?linkid=848723
       - name: "Embed reports"
         href: ../report-server/quickstart-embed.md
   - name: How to
@@ -968,7 +968,7 @@
       - name: "Create a paginated report for a report server"
         href: ../report-server/quickstart-create-paginated-report.md
       - name: "Work with KPIs"
-        href: ../https://go.microsoft.com/fwlink/?linkid=849021
+        href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds "
         href: ../report-server/access-dataset-odata.md
       - name: "Configure scheduled refresh"
@@ -996,13 +996,13 @@
     - name: "REST API"
       href: ../report-server/rest-api.md
     - name: "WMI"
-      href: ../https://go.microsoft.com/fwlink/?linkid=848719
+      href: https://go.microsoft.com/fwlink/?linkid=848719
     - name: "SOAP APIs"
-      href: ../https://go.microsoft.com/fwlink/?linkid=848721
+      href: https://go.microsoft.com/fwlink/?linkid=848721
     - name: "URL Access"
-      href: ../https://go.microsoft.com/fwlink/?linkid=848722
+      href: https://go.microsoft.com/fwlink/?linkid=848722
     - name: "Extensions"
-      href: ../https://go.microsoft.com/fwlink/?linkid=848723
+      href: https://go.microsoft.com/fwlink/?linkid=848723
   - name: Resources
     items: 
       - name: "Capacity planning whitepaper"
@@ -1136,7 +1136,7 @@
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: ../service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
-      href: ../https://docs.microsoft.com/en-us/powershell/power-bi/
+      href: https://docs.microsoft.com/en-us/powershell/power-bi/
       maintainContext: true
   - name: Resources
     items: 

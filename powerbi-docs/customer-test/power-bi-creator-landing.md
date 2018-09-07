@@ -124,7 +124,6 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                                       <ul>
                                                                                                      <li><a style="text-decoration: underline;" href="../service-how-to-collaborate-distribute-dashboards-reports.md">How should I collaborate and share?</a></li>
                                                                                                      <li><a style="text-decoration: underline;" href="../service-create-workspaces.md">App workspaces in the Power BI service    </a></li> 
-                                                                                                     <li><a style="text-decoration: underline;" href="consumer/mobile-share-dashboard-from-the-mobile-apps.md">Share a dashboard from the mobile apps</a></li> 
                                                                                       </ul> 
                                                                         </div> 
                                                           </div> 
