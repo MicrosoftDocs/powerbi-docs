@@ -29,7 +29,7 @@ Watch Amanda customize her X and Y axes and demonstrate the various ways to cont
 
 ## Customizing visualization X-axes in reports
 ## Create a stacked chart visualization
-Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](sample-datasets.md).
+Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](../service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](../sample-datasets.md).
 
 1. Create a new column chart that shows this year's sales and last year's sales value by fiscal month.
 2. Convert it to a Stacked column chart.
@@ -74,7 +74,7 @@ To revert all the X-axis customization you've done so far, select **Revert To De
      ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-complete.png)
 
 ## Customizing visualizations with dual Y-axes
-First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](visuals/power-bi-visualization-combo-chart.md). Then you'll format the dual Y-axes.
+First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](power-bi-visualization-combo-chart.md). Then you'll format the dual Y-axes.
 
 ### Create a chart with two Y-axes
 1. Create a new line chart that tracks **Sales > Gross Margin last year %** by **Time > FiscalMonth**.
@@ -121,18 +121,18 @@ With a visualization this complicated, it helps to add axes titles.  Titles help
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
 
-For more information, see [Tips and tricks for color formatting, labeling, and axis properties](visuals/service-tips-and-tricks-for-color-formatting.md).
+For more information, see [Tips and tricks for color formatting, labeling, and axis properties](service-tips-and-tricks-for-color-formatting.md).
 
 ## Considerations and troubleshooting
 If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical.
 
 ## Next steps
-More about [Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)
+More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Customize t](visuals/power-bi-visualization-customize-title-background-and-legend.md)[itles, backgrounds, and legends](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+[Customize t](power-bi-visualization-customize-title-background-and-legend.md)[itles, backgrounds, and legends](power-bi-visualization-customize-title-background-and-legend.md)
 
-[Customize colors and axis properties](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+[Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

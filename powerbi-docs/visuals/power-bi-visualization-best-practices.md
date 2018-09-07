@@ -613,7 +613,7 @@ The example below shows the trends in the number of medals awarded and the numbe
 
 For more information, see:
 
-* [Customize the X and Y axes](../power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Customize the X and Y axes](power-bi-visualization-customize-x-axis-and-y-axis.md)
 * [Line charts and irregular intervals](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)
 * [Line charts 101](http://www.columnfivemedia.com/data-visualization-101-line-charts)
 

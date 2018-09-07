@@ -114,7 +114,7 @@ With the same column chart selected, expand the Background options.
 | waterfall |yes |yes |yes |
 
 ## Next steps
-[Customize X-axis and Y-axis](../power-bi-visualization-customize-x-axis-and-y-axis.md)  
+[Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI - Basic Concepts](../service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
