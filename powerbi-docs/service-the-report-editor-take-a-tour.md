@@ -123,7 +123,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 ## Next Steps:
 [Create a report](service-report-create-new.md)
 
-Read more about reports in [Power BI service](service-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](mobile-apps-view-phone-report.md).
+Read more about reports in [Power BI service](service-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Power BI - Basic Concepts](service-basic-concepts.md)﻿
 
