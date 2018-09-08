@@ -30,7 +30,7 @@ Choose the solution that is right for you:
 
 ## Developing custom visuals
 
-You can use custom visuals with Power BI to create a unique type of visual that’s tailored to you or your company, or the data insights you’re trying to convey. Often these custom visuals are created by developers. They're usually built when the multitude of visuals that are included with Power BI don’t quite meet your needs.
+You can use custom visuals with Power BI to create a unique type of visual that’s tailored to you or your company, or the data insights you’re trying to convey. Often these custom visuals are created by developers. They're built when the multitude of visuals that are included with Power BI don’t quite meet your needs.
 
 Custom visuals allow you to create your visuals for use within Power BI reports. Custom visuals are written in TypeScript, which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (CSS). For your convenience, we use the Less pre-compiler, which supports some advanced features such as nesting, variables, conditions, loops, and other features. If you don't want to use any of those features, you can write plain CSS in the less file.
 
