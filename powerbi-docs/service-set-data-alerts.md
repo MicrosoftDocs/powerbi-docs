@@ -2,14 +2,14 @@
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -38,18 +38,18 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 1. Start on a dashboard. From a dashboard gauge, KPI, or card tile, select the ellipses.
    
    ![Total Stores tile](media/service-set-data-alerts/powerbi-card.png)
-2. Select the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total stores**.
+2. Select the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png), or **Manage alerts**, to add one or more alerts for **Total stores**.
    
-1. To start, select **+ Add alert rule**, ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
+1. On the **Manage alerts** pane, select **+ Add alert rule**.  Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
    
    ![Manage alerts window](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our Notification center. And we'll have Power BI send us an email as well.
    
    ![Manage alerts window, set Threshold](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Select **Save**.
+5. Select **Save and close**.
 
 ## Receiving alerts
-When the data being tracked reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
+When the data being tracked reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour, or more than 24 hours (depending on the option you selected), since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
 
 Next, Power BI sends an alert to your notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
 
@@ -100,6 +100,4 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 ## Next steps
 [Create a Microsoft Flow that includes a data alert](service-flow-integration.md)    
 [Set data alerts on your mobile device](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[What is Power BI?](power-bi-overview.md)    
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -2,13 +2,13 @@
 title: Visualization types in Power BI
 description: Visualization types in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/19/2018
+ms.date: 09/04/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -118,6 +118,14 @@ For more information, see [Tutorial: Filled Maps in Power BI](power-bi-visualiza
 
 ### Pie charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+### Ribbon charts
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+>[!TIP]
+>Determine which category of data has the highest rank.
+
+For more information, see [Use Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 ### Scatter and Bubble charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
