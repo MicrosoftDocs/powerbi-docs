@@ -34,7 +34,7 @@ And for even more choices, visit the [Microsoft AppSource community site](https:
 [Create visualizations](power-bi-report-add-visualizations-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
-Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](service-custom-visuals-getting-started-with-developer-tools.md) to create a new visualization type and [share it with the community](../developer/office-store.md)
+Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../service-custom-visuals-getting-started-with-developer-tools.md) to create a new visualization type and [share it with the community](../developer/office-store.md)
 
 ## Change the visualization type
 Try [changing the type of visualization](power-bi-report-change-visualization-type.md) to see which works best with your data.
