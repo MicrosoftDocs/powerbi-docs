@@ -55,15 +55,7 @@ Note: When the Power BI dataflows connector appears in an upcoming monthly updat
 
 
 ## Next steps
-There are all sorts of interesting things you can do with Power BI dataflows. For more information, check out the following resources:
-
-* [Self-service data prep with dataflows](service-dataflows-overview.md)
-* [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
-
-There are also articles about **Power BI Desktop** that you might find useful:
+There are all sorts of interesting things you can do with Power BI data connections, as well as articles about **Power BI Desktop** that you might find useful:
 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
