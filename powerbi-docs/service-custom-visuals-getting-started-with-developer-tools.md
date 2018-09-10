@@ -2,17 +2,17 @@
 title: Use developer tools to create custom visuals
 description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 11/30/2017
-ms.author: maghan
-
 ---
+
 # Use developer tools to create custom visuals
+
 Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 
 > [!NOTE]
@@ -21,9 +21,11 @@ Custom visuals allow you to meet your users' needs and match your app's design. 
 > 
 
 ## Requirements
+
 * NodeJS 4.0+ Required (5.0 or later recommended) [Download NodeJS](https://nodejs.org)
 
 ## Install NodeJS and the Power BI tools
+
 In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command line tools.
 
 1. Download and install [NodeJS](https://nodejs.org). Version 4.0 or later is required but it is recommended to have 5.0 or later.
@@ -79,6 +81,7 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 <a name="ssl-setup"></a>
 
 ### Server Certificate setup
+
 To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
 
 > [!NOTE]
@@ -149,6 +152,7 @@ To *install* the certificate, run the following command.
 > 
 
 ## Enable live preview of developer visual
+
 To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
 
 1. Browse and sign into [app.powerbi.com](https://app.powerbi.com).
@@ -171,6 +175,7 @@ To enable a live preview of your custom visual, follow these steps. This allows 
 You can now begin developing your visual.
 
 ## Create a new visual
+
 You can create a new visual project by running the following command.
 
 ```
@@ -182,6 +187,7 @@ You can replace *MyVisualName* with the name you want to give the visual. This c
 This command will create a new folder in the direct where the command was run. It will generate a basic starter template for your visual. Once the command completes, you can open the directory and use your favorite editor to start working on your new visual.
 
 ## Testing your visual in Power BI
+
 You can test your visual within the Power BI service within reports and dashboards.
 
 <a name="running-your-visual"></a>
@@ -216,6 +222,7 @@ If you are in the wrong location, you will see an error similar to the following
 ```
 
 ### Viewing your visual in Power BI
+
 To view your visual in a report, go to that report and select the visual within the **Visualizations** pane.
 
 > [!NOTE]
@@ -238,6 +245,7 @@ You will then see the starter template for the visual.
 | Send feedback |Let us know if there is anyway we can improve the experience! (Requires GitHub account) |
 
 ## Package your visual for use in Power BI Desktop and distribution
+
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/), or share it with the community in the [Power BI Visual gallery](https://visuals.powerbi.com), you'll need to generate a `pbiviz` file.
 
 You can package your visual by doing the following.
@@ -253,9 +261,11 @@ You can package your visual by doing the following.
 This command will create a `pbiviz` in the `dist/` directory of your visual project. If there is already a `pbiviz` file present, it will be overwritten.
 
 ## Updating the visuals API version
+
 When you create a visual using `pbiviz new`, a copy of the appropriate API type definitions and json schemas are copied into your visual's directory. You can use the `pbiviz update` command to update these files if needed. This can be useful if we release a fix for a past API version or if you want to update to the latest API version.
 
 ### Updating your existing API version
+
 If we release an update to an existing API, you can get the latest version by doing the following.
 
 ```
@@ -269,6 +279,7 @@ pbiviz update
 This will download the latest tools from npm which include the updated type definitions and schemas. Using `pbiviz update` will overwrite the `apiVersion` property in your *pbiviz.json* fiel with the latest version.
 
 ### Upgrading to a different API version
+
 You can update to a different API version by using the same steps as mentioned above. You can explicitly specify the API version you want to use.
 
 ```
@@ -287,6 +298,7 @@ This would update yoru visual to API version 1.2.0. You can replace `1.2.0` with
 > 
 
 ## Inside the visual project
+
 Your visual project is the folder that gets created when you run the `pbiviz new` command. 
 
 ### File structure
@@ -304,6 +316,7 @@ Your visual project is the folder that gets created when you run the `pbiviz new
 | tsconfig.json |Typescript compiler settings. Learn more about [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html). |
 
 ### pbiviz.json
+
 This file is the main configuration file for your visual. It contains metadata, as well as information about your files, needed to build your visual.
 
 ```
@@ -332,6 +345,7 @@ This file is the main configuration file for your visual. It contains metadata, 
 ```
 
 ### Visual source (TypeScript)
+
 Visual code should be written in TypeScript, which is a superset of JavaScript that support more advanced features and early access to ES6/ES7 functionality.
 
 All TypeScript files should be stored in the `src/` directory and added to the `files` array in `tsconfig.json`. This allows the TypeScript compiler to load them and in what order.
@@ -343,6 +357,7 @@ You can create as many files and classes as you need to create your visual.
 Learn more about [TypeScript](http://www.typescriptlang.org/).
 
 ### Visual style (Less)
+
 Visual styling is handled using cascading style sheets (CSS). For your convience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, mixins, conditions, loops, etc. If you don't want to use any of these features, you can just write plain CSS in the Less file.
 
 All Less files should be stored in the `style/` directory. The file specified under the `style` field within your `pbiviz.json` file will be loaded. Any additional files should be loaded using `@import`.
@@ -350,12 +365,15 @@ All Less files should be stored in the `style/` directory. The file specified un
 Learn more about [Less](http://lesscss.org/).
 
 ## Debugging
+
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
 ## Submit your visual to AppSource
+
 You can list your visual for others to use but submitting it to AppSource. For more information on this process, see [publish custom visuals to AppSource](developer/office-store.md).
 
 ## Troubleshooting
+
 **Pbiviz command not found (or similar errors)**
 
 If you run `pbiviz` in your terminal / command line, you should see the help screen. If not, it is not installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
@@ -384,6 +402,7 @@ Run the visual server with the command `pbiviz start` in your terminal / command
 For more information, see [Running your visual](#running-your-visual) or [Server certificate setup](#ssl-setup).
 
 ## Next steps
+
 [Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Publish custom visuals to the Office store](developer/office-store.md)  
@@ -391,4 +410,3 @@ For more information, see [Running your visual](#running-your-visual) or [Server
 [Less CSS](http://lesscss.org/)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
