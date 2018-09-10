@@ -2,7 +2,7 @@
 title: Slicers in Power BI
 description: 'Slicers in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 

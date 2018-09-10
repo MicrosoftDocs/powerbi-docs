@@ -2,7 +2,7 @@
 title: Scatter charts in Power BI
 description: 'Scatter Charts in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
 

@@ -2,7 +2,7 @@
 title: Histograms
 description: Histograms
 author: davidiseminger
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

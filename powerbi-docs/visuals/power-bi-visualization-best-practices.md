@@ -2,7 +2,7 @@
 title: Best design practices for reports and visuals (whitepaper)
 description: 'Whitepaper: best practices for designing reports in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

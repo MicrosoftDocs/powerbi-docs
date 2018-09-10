@@ -2,7 +2,7 @@
 title: Funnel charts
 description: 'Funnel charts in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 

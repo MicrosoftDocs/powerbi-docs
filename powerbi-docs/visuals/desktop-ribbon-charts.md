@@ -2,7 +2,7 @@
 title: Use ribbon charts in Power BI
 description: Create and consume ribbon charts in the Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

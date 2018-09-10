@@ -2,7 +2,7 @@
 title: Getting started with color formatting and axis properties
 description: Getting started with color formatting and axis properties
 author: davidiseminger
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

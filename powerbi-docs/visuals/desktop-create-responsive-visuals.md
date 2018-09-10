@@ -2,7 +2,7 @@
 title: Optimize a Power BI visual for any size
 description: Learn how to optimize visuals in existing reports in Power BI Desktop and the Power BI service for the Power BI phone apps.
 author: maggiesMSFT
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

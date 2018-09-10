@@ -2,7 +2,7 @@
 title: Copy and paste a visualization in Power BI
 description: Copy and paste a visualization in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

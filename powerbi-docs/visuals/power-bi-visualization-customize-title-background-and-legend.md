@@ -2,7 +2,7 @@
 title: Get started formatting Power BI visualizations
 description: 'Customize visualization title, background, and legend'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 

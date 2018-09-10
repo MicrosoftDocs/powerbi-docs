@@ -2,7 +2,7 @@
 title: Basic Area chart
 description: 'Basic Area chart.'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

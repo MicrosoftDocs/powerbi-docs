@@ -2,7 +2,7 @@
 title: Using slicers Power BI Desktop
 description: You can use slicers in Power BI Desktop to filter, highlight, and customize reports
 author: davidiseminger
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

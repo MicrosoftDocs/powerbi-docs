@@ -2,7 +2,7 @@
 title: Interacting with an ArcGIS map that has been shared with you
 description: 'Using ArcGis map in reading view '
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 tags: power bi, service, desktop, mobile
 featuredvideoid: ''

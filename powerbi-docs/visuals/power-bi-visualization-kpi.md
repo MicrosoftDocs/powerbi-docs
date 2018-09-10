@@ -2,7 +2,7 @@
 title: KPI visuals
 description: create KPI in Power BI service and Power BI Desktop
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 

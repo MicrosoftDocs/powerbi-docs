@@ -2,7 +2,7 @@
 title: Card visualizations (aka big number tiles)
 description: Create a Card visualization in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Move, resize, and pop out a visualization
 description: Move and resize a visualization in a report in Power BI service and Desktop
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

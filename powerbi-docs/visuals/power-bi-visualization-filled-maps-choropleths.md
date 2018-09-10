@@ -2,7 +2,7 @@
 title: Filled Maps (Choropleths) in Power BI
 description: Documentation on creating Filled Maps (Choropleths) in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 

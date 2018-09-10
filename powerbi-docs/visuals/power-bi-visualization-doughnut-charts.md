@@ -2,7 +2,7 @@
 title: Doughnut charts in Power BI
 description: 'Doughnut charts in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
