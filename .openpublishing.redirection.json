@@ -281,11 +281,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/xxx.md", 
-            "redirect_url": "/power-bi/visuals/xxx",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/power-bi-visualization-types-for-reports-and-q-and-a.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
             "redirect_document_id": true
