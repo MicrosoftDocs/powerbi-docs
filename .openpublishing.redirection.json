@@ -135,6 +135,180 @@
             "redirect_url": "/power-bi/developer/embed-sample-for-customers",
             "redirect_document_id": true
         }
-        
+        {
+            "source_path": "powerbi-docs/desktop-create-responsive-visuals.md", 
+            "redirect_url": "/power-bi/visuals/desktop-create-responsive-visuals",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/desktop-matrix-visual.md", 
+            "redirect_url": "/power-bi/visuals/desktop-matrix-visual",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/desktop-ribbon-charts.md", 
+            "redirect_url": "/power-bi/visuals/desktop-ribbon-charts",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/desktop-shape-map.md", 
+            "redirect_url": "/power-bi/visuals/desktop-shape-map",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/desktop-slicer-filter-date-range.md", 
+            "redirect_url": "/power-bi/visuals/desktop-slicer-filter-date-range",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/desktop-slicers.md", 
+            "redirect_url": "/power-bi/visuals/desktop-slicers",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-map-tips-and-tricks",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-report-add-visualizations-i.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-report-add-visualizations-ii.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-ii",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-report-change-visualization-type.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-change-visualization-type",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-report-visualizations.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-basic-area-chart.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-basic-area-chart",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-best-practices.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-best-practices",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-card.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-combo-chart.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-combo-chart",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-copy-paste.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-copy-paste",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-customize-title-background-and-legend.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-customize-x-axis-and-y-axis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-customize-x-axis-and-y-axis",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-doughnut-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-doughnut-charts",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-filled-maps-choropleths.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-filled-maps-choropleths",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-funnel-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-funnel-charts",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-kpi.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-kpi",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-move-and-resize.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-move-and-resize",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-radial-gauge-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-radial-gauge-charts",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualizations-arcgis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-scatter.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-scatter",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-slicers.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-tables.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-tables",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-treemaps.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-treemaps",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/xxx.md", 
+            "redirect_url": "/power-bi/visuals/xxx",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-types-for-reports-and-q-and-a.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/service-getting-started-with-color-formatting-and-axis-properties.md", 
+            "redirect_url": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/service-histograms.md", 
+            "redirect_url": "/power-bi/visuals/service-histograms",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/service-r-visuals.md", 
+            "redirect_url": "/power-bi/visuals/service-r-visuals",
+            "redirect_document_id": true
+        }
+        {
+            "source_path": "powerbi-docs/service-tips-and-tricks-for-color-formatting.md", 
+            "redirect_url": "/power-bi/visuals/service-tips-and-tricks-for-color-formatting",
+            "redirect_document_id": true
+        }     
     ]
 }
