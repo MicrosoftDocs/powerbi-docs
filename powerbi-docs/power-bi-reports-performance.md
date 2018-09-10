@@ -26,7 +26,7 @@ A common mistake is to have the default view of the table be unfiltered - i.e. a
 A similar approach to the above is strongly suggested for all visuals on your reports. Ask yourself, is all the data in this visual needed? Are there ways to filter down the amount of data shown in the visual with minimal impact to the end user experience? Note that tables in particular can be very expensive. 
  
 ## Limit visuals on report pages 
-The above principle applies equally to the number of visuals on a particular report. It is highly recommended that you limit the number of visuals on a particular report to only what is necessary. Drill-through pages are a great way to provide additional details without jamming more visuals into the report.  
+The above principle applies equally to the number of visuals on a particular report. It's highly recommended you limit the number of visuals on a particular report to only what is necessary. Drill-through pages are a great way to provide additional details without jamming more visuals into the report.  
  
 ## Optimize your model 
 Some best practices: 
@@ -35,7 +35,7 @@ Some best practices: 
 - Avoid distinct counts on fields with high cardinality – i.e. millions of distinct values.  
 - Take steps to avoid fields with unnecessary precision and high cardinality. For example, you could split highly unique datetime values into separate columns – e.g. month, year, date, etc. Or, where possible, use rounding on high-precision fields to decrease cardinality – (e.g. 13.29889 -> 13.3). 
 - Use integers instead of strings, where possible. 
-- Be wary of DAX functions which need to test every row in a table – e.g. RANKX – in the worst case, these functions can exponentially increase run-time and memory requirements given linear increases in table size. 
+- Be wary of DAX functions, which need to test every row in a table – e.g. RANKX – in the worst case, these functions can exponentially increase run-time and memory requirements given linear increases in table size. 
 - When connecting to data sources via DirectQuery, consider indexing columns that are commonly filtered or sliced again – this will greatly improve report responsiveness.  
  
 
@@ -56,7 +56,7 @@ The following section describes general best practices for connecting via Direct
 - Push calculated columns and measures to the source where possible – the closer they are to the source, the higher the likelihood of performance. 
 - Optimize! Understand the execution plans for your queries, add indices for commonly filtered columns, etc. 
 
-### Modelling guidance 
+### Modeling guidance 
 - Start in the Power BI Desktop. 
 - Avoid complex queries in Query Editor. 
 - Do not use relative date filtering in the Query Editor.  
@@ -78,7 +78,7 @@ Visuals pinned to dashboards are served by the query cache when the dashboard is
 > When you pin live report tiles a dashboard, they are not served from the query cache – instead, they behave like reports, and make queries to back-end cores on the fly. 
  
 
-As the name suggests, retrieving the data from the query cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often used and highly requested visuals to the dashboards. In this way, dashboards become a valuable “first line of defense” which provide consistent performance with less load on the capacity. Users can still click through to the report to dig into the details.  
+As the name suggests, retrieving the data from the query cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often used and highly requested visuals to the dashboards. In this way, dashboards become a valuable “first line of defense”, which provide consistent performance with less load on the capacity. Users can still click through to the report to dig into the details.  
  
 
 Note that for DirectQuery and live connection, this query cache is updated on a periodic basis by querying the data source. By default, this happens every hour, though it can be configured in dataset settings. Each query cache update will send queries to the underlying data source to update the cache. The number of queries generated depends on the number of visuals pinned to dashboards relying on that data source. Notice that if row-level security is enabled, queries are generated for each different security context. For example, if you have two different roles that your users fall into, with two different views of the data, then during query cache refresh, two sets of queries are generated. 
@@ -107,7 +107,7 @@ Instructions as follows:
 
    The output should be a list of applications and their open ports, for example:  
 
-   TCP    [::1]:55786            [::1]:55830            ESTABLISHED 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 
@@ -139,7 +139,7 @@ Network latency can impact report performance by increasing the time required fo
 
 Tools such as [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) can provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. If network latency is an issue, you can try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines. 
 
-To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is capable of creating faster, more reliable network connections between your clients and Azure datacenters. 
+To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is able of creating faster, more reliable network connections between your clients and Azure datacenters. 
 
 ## Next steps
 - [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy), with all-around guidance on large-scale Power BI deployments 
