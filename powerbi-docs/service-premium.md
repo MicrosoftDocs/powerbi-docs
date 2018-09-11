@@ -41,7 +41,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 
 To start using a Power BI Premium capacity, you need to assign a workspace to a capacity. When premium capacity backs a workspace, you get:
 
-* **Scheduled refreshes**: With shared capacity, scheduled refreshes for imported model datasets are limited to 8 times per a day. For datasets in Premium workspaces, you can schedule refreshes up to 48 times per day. This does not apply to the scheduled cache refresh settings for DirectQuery. Those remain the same between Premium and Shared capacities.
+* **Scheduled refreshes**: With shared capacity, scheduled refreshes for imported model datasets are limited to 8 times per a day. For datasets in Premium workspaces, you can schedule refreshes up to 48 times per day. Increased scheduled refreshes doesn't apply to scheduled cache refresh settings for DirectQuery, which remain the same between Premium and Shared capacities.
 * **Isolation with dedicated hardware**: Given the nature of shared capacity, the performance of your reports and dashboards may be impacted by the resource demands of other workloads in the capacity, despite our safeguards against it. Premium capacity however, provides more consistent, dependable performance for your workloads by isolating it from unrelated workloads.
 
 If an app is backed by Premium capacity (that is, it was published from an app workspace that is currently assigned to Premium), the published app can then be used by any user in your organization regardless of the license they are assigned.
