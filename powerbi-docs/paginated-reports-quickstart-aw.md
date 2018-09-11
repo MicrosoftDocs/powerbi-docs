@@ -44,8 +44,12 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 3.  In the right pane, select **Table or Matrix Wizard**, and then select **Create**.  
   
 4.  In the **Choose a dataset** page, select **Create a dataset**, and then select **Next**.  
+
+    ![Create a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
-5.  In the **Choose a connection to a data source** page, select **New**.  
+5.  In the **Choose a connection to a data source** page, select **New**. 
+
+    ![New data source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
   
      The **Data Source Properties** dialog box opens.  
   
@@ -55,9 +59,11 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
 8.  Select **Build** next to the **Connection string** box. 
 
+    ![Data source properties - Build](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
+
 9. **In Azure:** Go back to the Azure portal and select **SQL databases**.
 
-1. Select the Azure SQL database you created in the quickstart Create an Azure SQL database sample  in the Azure portal in the Prerequisites section of this article.
+1. Select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the Prerequisites section of this article.
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
@@ -66,26 +72,45 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
 1. Under **Connect to a database**, select the drop-down arrow and select the database name you created in Azure.
+ 
+    ![Data source connection properties](media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png)
 
 1. Select **Test Connection**. You see the **Test results** message that **Test connection succeeded**.
 
 1. Select **OK** > **OK**. 
 
-1. In the **Connection string** box, Report Builder displays the connection string you just created. 
+   Now in the **Connection string** box, Report Builder displays the connection string you just created. 
+
+    ![Data source connection string](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png)
 
 1. Select **OK**.
   
 9. In the **Choose a connection to a data source** page, select the data source connection you just created (you see "(in this Report)") under the name > **Next**.  
 
+    ![My Azure data source](media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png)
+
 10. Type the same user name and password in the box. 
   
-10. In the **Design a query** page...  
-  
-1.  "Report Builder New Chart Run"  
-  
-     Now that you've made your chart report, you can play with it. 
+10. In the **Design a query** page, expand SalesLT, expand Tables, and select these tables:
 
-18. Save the report to your local computer.
+    - Address
+    - Customer
+    - Product
+    - ProductCategory
+    - SalesOrderDetail
+    - SalesOrderHeader
+
+     Because **Relationships** > **Auto Detect** is selected, Report Builder detects that these tables are related. 
+    
+    ![Design a query](media/paginated-reports-quickstart-aw/power-bi-paginated-design-query.png)
+ 
+1.  Select **Run Query**. Report Builder displays the **Query results**. 
+ 
+     ![Query results](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
+
+18. Select **Next**.
+
+1. Drag the ruler to make the design surface 7 inches wide. This is the width of the print area, so that leaves 3/4 inch margins on each side.
   
 ## Make the chart bigger  
 You may want the chart to be bigger. 
