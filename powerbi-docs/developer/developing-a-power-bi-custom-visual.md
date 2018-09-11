@@ -13,13 +13,15 @@ ms.date: 09/17/2018
 
 # Tutorial: Developing a Power BI Custom Visual
 
-We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub. Along with the visualization framework, we’ve provided our test suite and tools to help the community build high-quality custom visuals for Power BI.
+We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
 
-This tutorial show you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
+Along with the visualization framework, we’ve provided our test suite and tools to help the community build high-quality custom visuals for Power BI.
+
+This tutorial shows you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
 
 When imported into your Power BI Desktop report, the cards will be modified to become Circle Cards.
 
-![Power BI Custom Visual sample output](media/develop-a-power-bi-custom-visual/circle-cards.png)
+  ![Power BI Custom Visual sample output](media/develop-a-power-bi-custom-visual/circle-cards.png)
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -38,11 +40,11 @@ In this tutorial, you learn how to:
 
 ## Sign in to Power BI
 
-1. Navigate to [Power BI](https://powerbi.microsoft.com) and select **Sign In** (located at the top-right corner).
+1. Navigate to [Power BI](https://powerbi.microsoft.com) and select **Sign In** (located at the top-right corner) of the page.
 
 2. When prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
-3. Complete the sign in process.
+3. Complete the sign-in process.
 
 4. If prompted to stay signed in, click Yes.
 
@@ -66,11 +68,11 @@ In addition to the prerequisites, there are a few more tools you need to install
 
 ### Installing Packages
 
-1. You need to install the pbiviz package next.
+Now you need to install the pbiviz package.
 
-2. Once the computer has been restarted, login in, and then open Windows PowerShell (do not open an *ISE* window).
+1. Open Windows PowerShell after the computer has been restarted.
 
-3. To install pbiviz, enter the following command.
+2. To install pbiviz, enter the following command.
 
    ```powershell
    npm i -g powerbi-visuals-tools
@@ -84,9 +86,11 @@ In addition to the prerequisites, there are a few more tools you need to install
   pbiviz --create-cert
   ```
 
-2. Copy the passphrase (do not select the quotes).
+You should return a result that produces a *passphrase*. In this case the *passphrase* is **_15105661266553327_**.
 
-3. To install the certificate, enter the following command.
+  ![Cert created via PowerShell](media/develop-a-power-bi-custom-visual/cert-create.png)
+
+2. Now we need to install the certificate. to install the certificate, enter the following command.
 
   ```powershell
   pbiviz --install-cert
@@ -94,32 +98,156 @@ In addition to the prerequisites, there are a few more tools you need to install
 
 4. In the Certificate Import Wizard, ensure that the store location is set to Current User. Then select *Next*.
 
-![Cert install](media/develop-a-power-bi-custom-visual/install-cert.png)
+      ![Cert install](media/develop-a-power-bi-custom-visual/install-cert-powershell.png)
 
-At the **File to Import** step, select *Next*.
+5. At the **File to Import** step, select *Next*.
 
-At the **Private Key Protection** step, in the Password box, paste the passphrase copied to the clipboard.
+6. At the **Private Key Protection** step, in the Password box, paste the passphrase you recieved from creating the cert.  Again, in this case it is **_15105661266553327_**.
+   
+      ![Copy passphrase](media/develop-a-power-bi-custom-visual/cert-install-wizard-show-passphrase.png)
 
-Click Next.
+7. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
 
-At the Certificate Store step, select the Place All Certificates in the Following Store option.
+      ![All certs in the following store](media/develop-a-power-bi-custom-visual/all-certs-in-the-following-store.png)
 
+8. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
 
-Click Browse.
+      ![Trusted root cert](media/develop-a-power-bi-custom-visual/trusted-root-cert.png)
 
-In the Select Certificate Store window, select Trusted Root Certification Authorities.
+9. To complete the import, click Finish.
 
+10. If you receive a security warning, click Yes.
 
-Click OK.
+    ![Security warning](media/develop-a-power-bi-custom-visual/cert-security-warning.png)
 
-In the Certificate Import Wizard, click Next.
+11. When notified that the import was successful, click OK.
 
-To complete the import, click Finish.
+    ![Cert import successful](media/develop-a-power-bi-custom-visual/cert-import-successful.png)
 
-If you receive a security warning, click Yes.
+> ![Important}
+> Do not close the Windows PowerShell session.
 
-When notified that the import was successful, click OK.
+## Creating a Custom Visual
 
-In the Certificate window, click OK.
+Now that you have setup your environment it is time to create your custom visual.
 
-Leave Windows PowerShell open.
+The full source code for this tutorial is avalable [here](https://github.com/uve/circlecard).
+
+1. In Windows PowerShell, verify that the Power BI Visual Tools package has been installed.
+
+    ```powershell
+    pbiviz
+    ```
+  You should see the help output.
+
+    <pre><code>
+         +syyso+/
+    oms/+osyhdhyso/
+    ym/       /+oshddhys+/
+    ym/              /+oyhddhyo+/
+    ym/                     /osyhdho
+    ym/                           sm+
+    ym/               yddy        om+
+    ym/         shho /mmmm/       om+
+     /    oys/ +mmmm /mmmm/       om+
+    oso  ommmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   +dmd+ smmmh +mmmm /mmmm/       om+
+         /hmdo +mmmm /mmmm/ /so+//ym/
+               /dmmh /mmmm/ /osyhhy/
+                 //   dmmd
+                       ++
+
+       PowerBI Custom Visual Tool
+
+    Usage: pbiviz [options] [command]
+
+    Commands:
+
+    new [name]        Create a new visual
+    info              Display info about the current visual
+    start             Start the current visual
+    package           Package the current visual into a pbiviz file
+    update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
+    help [cmd]        display help for [cmd]
+
+    Options:
+
+    -h, --help      output usage information
+    -V, --version   output the version number
+    --install-cert  Install localhost certificate
+    </code></pre>
+
+<a name="ssl-setup"></a>
+
+2. Review the output, including the list of supported commands.
+
+    ![Supported commands](media/develop-a-power-bi-custom-visual/powershell-supported-commands.png) 
+
+3. Navigate to your Workspace folder, using the folder path you used to install the course files.  In this case we saved our files to the workspace folder in the c drive.
+
+    ```
+    cd C:\Workspace
+    ```
+4. To create a custom visual project, enter the following command. CircleCard is the name of the project.
+
+    ```powershell
+    pbiviz new CircleCard
+    ```
+5. Navigate to the project folder.
+
+    ```powershell
+    cd CircleCard
+    ```
+    ![New CircleCard result](media/develop-a-power-bi-custom-visual/new-circle-card-result.png)
+
+6. Start the custom visual. YoUr CircleCard visual is now running while being hosted on your computer.
+
+    ```powershell
+    pbiviz start
+    ```
+    
+    ![Start running the custom visual](media/develop-a-power-bi-custom-visual/start-running-custom-visual-powershell.png)
+
+> ![Important}
+> Do not close the Windows PowerShell session.
+
+### Testing the Custom Visual
+
+Now we are going to test the CircleCard custom visual by uploading a Power BI Desktop report, and then editing the report to display the custom visual.
+
+1. Select **Settings**.
+
+      Power BI settings](media/develop-a-power-bi-custom-visual/power-bi-settings.png)
+
+2. Select **Developer** then check the **Enable Developer Visual for testing** checkbox.
+
+    ![Developer page settings](media/develop-a-power-bi-custom-visual/developer-page-settings.png)
+
+3. Upload a Power BI Desktop report.  
+
+    Get Data > Files > Local File.
+
+    You can download a smaple Power BI Desktop report [here](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix).
+
+    ![Get Data](media/develop-a-power-bi-custom-visual/get-data.png)
+    ![Local File](media/develop-a-power-bi-custom-visual/local-file.png)
+
+    Now to view the report, select **US_Sales_Analysis** from the **Report** section in the navigation pane on the left.
+ 
+    ![Custom Visual Desktop sample](media/develop-a-power-bi-custom-visual/custom-visual-sample.png)
+
+4. Now you need to edit the report while in te Power BI service.
+    
+    Go to **Edit report**.
+
+    ![Edit report](media/develop-a-power-bi-custom-visual/edit-report.png)
+
+5. Select the **Developer Visual** from the **Visualizations** pane.
+
+    ![Developer visual](media/develop-a-power-bi-custom-visual/developer-visual.png)
+
+    > ![Note]
+    > This visualization represents the custom visual that you started on your computer. It is only available when the developer settings have been enabled.
