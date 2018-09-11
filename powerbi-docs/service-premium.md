@@ -8,16 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2018
+ms.date: 10/11/2018
 LocalizationGroup: Premium
 ---
 
 # Power BI Premium - what is it?
 Power BI Premium provides resources dedicated to running the Power BI service for your organization or team. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user licenses for viewers.
 
-You can take advantage of Power BI Premium by assigning workspaces to a Premium capacity. *Premium capacity* is a dedicated resource for your organization. For workspaces that are not assigned to a premium capacity, these are in a shared capacity.
-
-With *shared capacity*, your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure quality of the experience for all users.
+You can take advantage of Power BI Premium by assigning workspaces to a *Premium capacity*. Premium capacity is a dedicated resource for your organization. Workspaces not assigned to a premium capacity are in a *shared capacity*. With shared capacity, your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure quality of the experience for all users.
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -37,18 +35,18 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 | **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
 *<sup>1</sup> For more information, see [User capabilities with Power BI Pro and Power BI Premium](service-free-vs-pro.md) functionality.*  
-*<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
+*<sup>2</sup> Future enhancements coming to Power BI Premium.*
 
 ### Premium capacity
 
-To start using a Power BI Premium capacity, you need to assign a workspace to a capacity. For more information on how to assign a workspace to a premium capacity, see [Manage Power BI Premium](service-admin-premium-manage.md).
+To start using a Power BI Premium capacity, you need to assign a workspace to a capacity. When premium capacity backs a workspace, you get:
 
-When premium capacity backs a workspace, you enjoy the benefits of Power BI Premium.
+* **Scheduled refreshes**: With shared capacity, scheduled refreshes for imported model datasets are limited to 8 times per a day. For datasets in Premium workspaces, you can schedule refreshes up to 48 times per day. This does not apply to the scheduled cache refresh settings for DirectQuery. Those remain the same between Premium and Shared capacities.
+* **Isolation with dedicated hardware**: Given the nature of shared capacity, the performance of your reports and dashboards may be impacted by the resource demands of other workloads in the capacity, despite our safeguards against it. Premium capacity however, provides more consistent, dependable performance for your workloads by isolating it from unrelated workloads.
 
-* **Scheduled refreshes**: With shared capacity, scheduled refreshes for imported models are limited to 8 times per a day. The number of refresh is increased to 48 times per day for datasets in Premium workspaces. This does not apply to the scheduled cache refresh settings for DirectQuery. Those remain the same between Premium and Shared capacities.
-* **Isolation with dedicated hardware**: given the nature of shared capacity, the performance of your reports and dashboards may be impacted by the resource demands of other workloads in the capacity, despite our safeguards against it. Conversely, Premium provides more consistent, dependable performance for your workloads by isolating it from unrelated workloads.
+If an app is backed by Premium capacity (that is, it was published from an app workspace that is currently assigned to Premium), the published app can then be used by any user in your organization regardless of the license they are assigned.
 
-If an app is backed by premium capacity (that is, it was published from an app workspace that is currently assigned to Premium), the published app can then be used by any user in your organization regardless of the license they are assigned.
+To learn more about assigning workspaces to a premium capacity, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ### Shared capacity
 
@@ -79,7 +77,7 @@ Power BI Premium is available in node configurations with different v-core capac
 * The backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Power BI Report Server
-Power BI Premium includes the right to run Power BI Report Server on-premises. For more information, see [Get started with Power BI Report Server](report-server/get-started.md).
+Power BI Premium also includes being able to run Power BI Report Server on-premises in your organization. To learn more, see [Get started with Power BI Report Server](report-server/get-started.md).
 
 ## Next steps
 [Power BI Premium FAQ](service-premium-faq.md)  
