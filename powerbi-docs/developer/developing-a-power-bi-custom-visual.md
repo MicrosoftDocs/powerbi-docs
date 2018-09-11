@@ -86,7 +86,7 @@ Now you need to install the pbiviz package.
   pbiviz --create-cert
   ```
 
-You should return a result that produces a *passphrase*. In this case the *passphrase* is **_15105661266553327_**.
+You should return a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
 
   ![Cert created via PowerShell](media/develop-a-power-bi-custom-visual/cert-create.png)
 
@@ -186,7 +186,7 @@ The full source code for this tutorial is avalable [here](https://github.com/uve
 
     ![Supported commands](media/develop-a-power-bi-custom-visual/powershell-supported-commands.png) 
 
-3. Navigate to your Workspace folder, using the folder path you used to install the course files.  In this case we saved our files to the workspace folder in the c drive.
+3. Navigate to your Workspace folder, using the folder path you used to install the course files.  In this case, we saved our files to the workspace folder in the c drive.
 
     ```
     cd C:\Workspace
@@ -251,3 +251,20 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
     > ![Note]
     > This visualization represents the custom visual that you started on your computer. It is only available when the developer settings have been enabled.
+
+6. Notice that a visualization was added to the report canvas.
+    
+    ![New visual](media/develop-a-power-bi-custom-visual/new-visual-in-report.png)
+
+    > !{Note}
+    > This is a very simple visual that displays the number of times its Update method has been called. At this stage the visual does not yet retrieve any data.
+
+7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
+
+    ![Quantity Sales](media/develop-a-power-bi-custom-visual/quantity-sales.png)
+    
+8. Then to test the new visual, resize the visual and notice the update value increments.
+
+    ![Resize visual](media/develop-a-power-bi-custom-visual/resize-visual.png)
+
+In PowerShell, to stop the custom visual running, enter Ctrl+C, and when prompted to terminate the batch job, enter Y, and then press Enter.
