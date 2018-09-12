@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -49,6 +49,7 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
+* PDF (Beta)
 * SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
@@ -75,7 +76,8 @@ The **Database** category provides the following data connections:
 * Impala
 * Google BigQuery
 * Snowflake
-* Exasol
+* Exasol (Beta)
+* Jethro (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -89,6 +91,7 @@ The following image shows the **Get Data** window for **Database**.
 The **Power BI** category provides the following data connections:
 
 * Power BI datasets
+* Power BI dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power BI**.
 
@@ -104,7 +107,7 @@ The **Azure** category provides the following data connections:
 * Azure Cosmos DB (Beta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
-* Azure HDInsight Spark (Beta)
+* Azure HDInsight Spark
 * HDInsight Interactive Query (Beta)
 * Azure KustoDB (beta)
 
@@ -165,6 +168,7 @@ The **Other** category provides the following data connections:
 * Hadoop File (HDFS)
 * Spark
 * R Script
+* Python script
 * ODBC
 * OLE DB
 * Blank Query

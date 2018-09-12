@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -32,7 +32,17 @@ If you're using an earlier version of **Power BI Desktop**, you can enable it as
 We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## How Report Themes work
-To apply a Report Theme to a Power BI Desktop report, select **Switch Theme** button from the **Home** ribbon, then select **Import Theme** from the drop-down.
+To apply a Report Theme to a Power BI Desktop report, you can either select from among the available built-in report themes, or import a custom theme.
+
+To select from available built-in report themes, select **Switch Theme** button from the **Home** ribbon, then select one of the included themes from the drop-down menu.
+
+![select a report theme](media/desktop-report-themes/report-themes_2a.png)
+
+Your report theme is applied to the report, and you're ready to go.
+
+### Importing Report Themes
+
+To import a custom Report Theme, select **Switch Theme** button from the **Home** ribbon, then select **Import Theme** from the drop-down.
 
 ![](media/desktop-report-themes/report-themes_3.png)
 
