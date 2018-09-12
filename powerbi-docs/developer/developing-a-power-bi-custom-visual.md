@@ -19,7 +19,7 @@ Along with the visualization framework, we’ve provided our test suite and tool
 
 This tutorial shows you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
 
-When imported into your Power BI Desktop report, the cards will be modified to become Circle Cards.
+In the Power BI Desktop report, the cards will be modified to become Circle Cards.
 
   ![Power BI Custom Visual sample output](media/develop-a-power-bi-custom-visual/circle-cards.png)
 
@@ -102,7 +102,7 @@ You should return a result that produces a *passphrase*. In this case, the *pass
 
 5. At the **File to Import** step, select *Next*.
 
-6. At the **Private Key Protection** step, in the Password box, paste the passphrase you recieved from creating the cert.  Again, in this case it is **_15105661266553327_**.
+6. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
    
       ![Copy passphrase](media/develop-a-power-bi-custom-visual/cert-install-wizard-show-passphrase.png)
 
@@ -131,7 +131,7 @@ You should return a result that produces a *passphrase*. In this case, the *pass
 
 Now that you have setup your environment it is time to create your custom visual.
 
-The full source code for this tutorial is avalable [here](https://github.com/uve/circlecard).
+The full source code for this tutorial is available [here](https://github.com/uve/circlecard).
 
 1. In Windows PowerShell, verify that the Power BI Visual Tools package has been installed.
 
@@ -208,7 +208,7 @@ The full source code for this tutorial is avalable [here](https://github.com/uve
     ```powershell
     pbiviz start
     ```
-    
+
     ![Start running the custom visual](media/develop-a-power-bi-custom-visual/start-running-custom-visual-powershell.png)
 
 > ![Important}
@@ -230,17 +230,17 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
     Get Data > Files > Local File.
 
-    You can download a smaple Power BI Desktop report [here](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix).
+    You can download a sample Power BI Desktop report [here](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix).
 
     ![Get Data](media/develop-a-power-bi-custom-visual/get-data.png)
     ![Local File](media/develop-a-power-bi-custom-visual/local-file.png)
 
     Now to view the report, select **US_Sales_Analysis** from the **Report** section in the navigation pane on the left.
- 
+
     ![Custom Visual Desktop sample](media/develop-a-power-bi-custom-visual/custom-visual-sample.png)
 
 4. Now you need to edit the report while in te Power BI service.
-    
+
     Go to **Edit report**.
 
     ![Edit report](media/develop-a-power-bi-custom-visual/edit-report.png)
@@ -253,7 +253,7 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
     > This visualization represents the custom visual that you started on your computer. It is only available when the developer settings have been enabled.
 
 6. Notice that a visualization was added to the report canvas.
-    
+
     ![New visual](media/develop-a-power-bi-custom-visual/new-visual-in-report.png)
 
     > !{Note}
@@ -262,9 +262,38 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
 
     ![Quantity Sales](media/develop-a-power-bi-custom-visual/quantity-sales.png)
-    
+
 8. Then to test the new visual, resize the visual and notice the update value increments.
 
     ![Resize visual](media/develop-a-power-bi-custom-visual/resize-visual.png)
 
 In PowerShell, to stop the custom visual running, enter Ctrl+C, and when prompted to terminate the batch job, enter Y, and then press Enter.
+
+## Adding Visual Elements
+
+Now you need to install the D3 JavaScript library. This includes the typings and the configure file dependencies.
+
+Then you can develop the custom visual to display a circle with text.
+
+> ![Note]
+> D3 is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented SVG, HTML5, and CSS standards.
+
+1. To install D3 in PowerShell, enter the following command. For your convenience, many text entries in this tutorial can be copied from this [repository](https://github.com/uve/circlecard).
+
+    ```powershell
+    npm i d3@3.5.5 --save
+    ```
+
+2. To install type definitions for D3 library, enter the following command. This command installs TypeScript definitions based on JavaScript files, enabling you to develop the custom visual in TypeScript (which is a superset of JavaScript). Visual Studio Code is an ideal IDE for developing TypeScript applications.
+
+    ```powershell
+    npm i @types/d3@3.5
+    ```
+
+3. Launch Visual Studio Code.
+
+    You can launch Visual Studio Code from powershell by using the command *code .*.
+
+4. In the Explorer pane, expand the node_modules folder to verify that the D3 library was installed.
+    
+    ![D3 Library in visual Studio code](media/develop-a-power-bi-custom-visual/d3-library.png)
