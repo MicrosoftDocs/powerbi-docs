@@ -165,7 +165,7 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized fo
 
 ## Power BI service *and* Power BI Desktop
 
-### Read the whitepaper: [Principles for designing Power BI reports](power-bi-visualization-best-practices.md)
+### Read the whitepaper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md)
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report. Many of these best practices apply to dashboard design as well.
 
 ### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
@@ -207,7 +207,7 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Pay attention to how [charts are sorted](power-bi-report-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.    
 
-For more visualization-specific guidance, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### Learn more about Best Practice Dashboard Design
 A few of our favorite books include:
