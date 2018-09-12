@@ -24,10 +24,10 @@ Custom visuals allow you to meet your users' needs and match your app's design. 
 
 ## Install NodeJS and the Power BI tools
 
-In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command line tools.
+In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command-line tools.
 
 1. Download and install [NodeJS](https://nodejs.org). Version 4.0 or later is required but it is recommended to have 5.0 or later.
-2. Install the command line tools. Run the following command from a command prompt.
+2. Install the command-line tools. Run the following command from a command prompt.
 
         npm install -g powerbi-visuals-tools
 3. You can confirm that the tools are installed by running the following command without any parameters.
@@ -80,12 +80,10 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
 ### Server Certificate setup
 
-To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
+To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate, which will allow visual assets to load in your web browser. 
 
 > [!NOTE]
 > This is a one-time setup for your developer workstation.
-> 
-> 
 
 To *create* a certificate, run the following command.
 
@@ -93,9 +91,6 @@ To *create* a certificate, run the following command.
 
 > [!NOTE]
 > You should see a message telling you the location path to the certificate and a newly generated Passphrase.
-> 
-> 
-
 
 To *install* the certificate, run the following command.
 
@@ -103,8 +98,6 @@ To *install* the certificate, run the following command.
 
 > [!NOTE]
 > You should see a message telling you to use your newly generated Passphrase to install a PFX certificate.
-> 
-> 
 
 **Windows OS**
 
@@ -128,12 +121,10 @@ To *install* the certificate, run the following command.
 
 > [!NOTE]
 > If the certificate is not recognized, you may need to restart your computer.
-> 
-> 
 
 **OSX**
 
-1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
+1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double-click on the certificate.
 
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Select **Always Trust** and close the window.
@@ -146,10 +137,8 @@ To *install* the certificate, run the following command.
 
 > [!NOTE]
 > If the certificate is not recognized, you may need to restart your computer.
-> 
-> 
 
-## Enable live preview of developer visual
+## Enable a live preview of the developer visual
 
 To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
 
@@ -166,8 +155,7 @@ To enable a live preview of your custom visual, follow these steps. This allows 
 
    > [!NOTE]
    > This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Create a new visual](#create-a-new-visual) in this article.
-   > 
-   > 
+
 5. Select the visual in the report canvas. You can bind data in the same way you do other visuals.
 
 You can now begin developing your visual.
@@ -176,7 +164,7 @@ You can now begin developing your visual.
 
 You can create a new visual project by running the following command.
 
-```
+```powershell
 pbiviz new MyVisualName
 ```
 
@@ -191,13 +179,14 @@ You can test your visual within the Power BI service within reports and dashboar
 <a name="running-your-visual"></a>
 
 ### Running your visual
+
 You can run your visual by doing the following.
 
 1. Open a prompt.
 2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
 3. Run the following command.
 
-    ```
+    ```powershell
     pbiviz start
     ```
 
@@ -205,7 +194,7 @@ You can run your visual by doing the following.
 
 If you are in the wrong location, you will see an error similar to the following.
 
-```
+```powershell
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
         at e (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:67:35)
         at Function.loadVisualPackage (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:62:16)
@@ -225,10 +214,8 @@ To view your visual in a report, go to that report and select the visual within 
 
 > [!NOTE]
 > You must run the `pbiviz start` command before doing this as discribed in the [Running your visual](#running-your-visual) section.
-> 
-> 
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Power BI developer visual selection](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 You will then see the starter template for the visual.
 
@@ -238,7 +225,7 @@ You will then see the starter template for the visual.
 | --- | --- |
 | Refresh visual |Manually refresh the visual if auto reload is disabled. |
 | Toggle auto reload |When turned on, the visual will automatically update every time you save your visual file. |
-| Show dataview |Shows the visual's underlying data view for debugging |
+| Show data view |Shows the visual's underlying data view for debugging |
 | Get help |Documentation within GitHub |
 | Send feedback |Let us know if there is anyway we can improve the experience! (Requires GitHub account) |
 
@@ -252,7 +239,7 @@ You can package your visual by doing the following.
 2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
 3. Run the following command.
 
-    ```
+    ```powershell
     pbiviz package
     ```
 
@@ -266,7 +253,7 @@ When you create a visual using `pbiviz new`, a copy of the appropriate API type 
 
 If we release an update to an existing API, you can get the latest version by doing the following.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -280,7 +267,7 @@ This will download the latest tools from npm which include the updated type defi
 
 You can update to a different API version by using the same steps as mentioned above. You can explicitly specify the API version you want to use.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -292,8 +279,6 @@ This would update yoru visual to API version 1.2.0. You can replace `1.2.0` with
 
 > [!WARNING]
 > The default API version used by the tools will always be the stable version of the API. Any versions later than the default API version are unstable and subject to change. They may have unexpected behaviors and behave differently between the Power BI service and Power BI Desktop. For the current stable API version, see the [change log](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). For more information about pre-release versions, see the [roadmap](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
-> 
-> 
 
 ## Inside the visual project
 
@@ -388,8 +373,6 @@ If you don't see it, make sure you have enabled it within the Power BI settings.
 
 > [!NOTE]
 > The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
-> 
-> 
 
 For more information, see [Enable live preview of developer visual](#enable-live-preview-of-developer-visual)...
 
