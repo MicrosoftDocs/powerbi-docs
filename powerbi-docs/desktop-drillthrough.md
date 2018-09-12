@@ -75,5 +75,5 @@ And, that's all there is to using **drillthrough** in your reports. It's a great
 
 You might also be interested in the following articles:
 
-* [Using slicers Power BI Desktop](desktop-slicers.md)
+* [Using slicers Power BI Desktop](visuals/desktop-slicers.md)
 

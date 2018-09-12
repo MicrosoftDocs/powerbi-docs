@@ -56,7 +56,7 @@ With Power BI and Power BI Desktop, you can securely connect to your own on-prem
 Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/get-started.md).
 
 ### Power BI mobile apps
-You can also [view on-premises Power BI reports, Reporting Services mobile reports, and KPIs with the Power BI mobile apps](mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
+You can also [view on-premises Power BI reports, Reporting Services mobile reports, and KPIs with the Power BI mobile apps](consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
 
 ## Does Power BI support mobile devices?
 Yes. Power BI has native apps for Android phones and tablets, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  

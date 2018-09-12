@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ---
 # Tutorial: How to use Q&A to create visualizations and build reports
-The [Q&A overview](power-bi-q-and-a.md) introduced you to Power BI Q&A and made the distinction between *consumers* (have dashboards and reports shared with them) and *creators* (own the underlying reports and datasets). The first part of this tutorial is designed primarily for people consuming dashboards using Power BI service. And the second part is designed for people creating reports using either Power BI service or Power BI Desktop. [Q&A and Power BI mobile](mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/qanda.md) are covered in separate articles.
+The [Q&A overview](power-bi-q-and-a.md) introduced you to Power BI Q&A and made the distinction between *consumers* (have dashboards and reports shared with them) and *creators* (own the underlying reports and datasets). The first part of this tutorial is designed primarily for people consuming dashboards using Power BI service. And the second part is designed for people creating reports using either Power BI service or Power BI Desktop. [Q&A and Power BI mobile](consumer/mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/qanda.md) are covered in separate articles.
 
 Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visualizations, dig into those visuals, and pin them to dashboards.
 
@@ -40,7 +40,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-list.png)
 
-3. As you type a question, Q&A picks the best [visualization ](power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
+3. As you type a question, Q&A picks the best [visualization ](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-viz.png)
 
@@ -78,7 +78,7 @@ In order to use Q&A in reports, you must have edit permissions for the report an
 
    ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-suggestions.png)
 
-4. As you type a question, Q&A picks the best [visualization ](power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
+4. As you type a question, Q&A picks the best [visualization ](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
 
    ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-visual.png)
 
