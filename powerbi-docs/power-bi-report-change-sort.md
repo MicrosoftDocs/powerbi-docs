@@ -48,7 +48,7 @@ In some cases, you may be able to sort the visual the way you'd like, for exampl
 * In Excel, ensure that your numerical columns are tagged as "whole number" or "decimal" and not as "text."
 
 ## Next steps
-More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).
+More about [Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md).
 
 [Power BI - Basic Concepts](service-basic-concepts.md)
 

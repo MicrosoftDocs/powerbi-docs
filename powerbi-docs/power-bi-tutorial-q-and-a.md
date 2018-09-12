@@ -40,7 +40,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-list.png)
 
-3. As you type a question, Q&A picks the best [visualization ](power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
+3. As you type a question, Q&A picks the best [visualization ](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
 
    ![](media/power-bi-tutorial-q-and-a/powerbi-qna-viz.png)
 
@@ -78,7 +78,7 @@ In order to use Q&A in reports, you must have edit permissions for the report an
 
    ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-suggestions.png)
 
-4. As you type a question, Q&A picks the best [visualization ](power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
+4. As you type a question, Q&A picks the best [visualization ](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
 
    ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-visual.png)
 

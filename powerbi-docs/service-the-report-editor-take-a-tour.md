@@ -61,7 +61,7 @@ To remove a field from the visualization, select the **X** to the right of the f
 
 ![Remove StoreType from Legend](media/service-the-report-editor-take-a-tour/deletefield.png)
 
-For more information, see [Add visualizations to a Power BI report](power-bi-report-add-visualizations-i.md)
+For more information, see [Add visualizations to a Power BI report](visuals/power-bi-report-add-visualizations-i.md)
 
 ### Format your visuals
 Select the paint roller icon to display the Format pane. The option available depend on the type of visualization selected.
@@ -70,9 +70,9 @@ Select the paint roller icon to display the Format pane. The option available de
 
 The formatting possibilities are almost endless.  To learn more, explore on your own, or visit these articles:
 
-* [Customizing  visualization title, background and legend](power-bi-visualization-customize-title-background-and-legend.md)
-* [Color formatting](service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Customizing X-axis and Y-axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Customizing  visualization title, background and legend](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Color formatting](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+* [Customizing X-axis and Y-axis properties](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### Add analytics to your visualizations
 Select the magnifying glass icon to display the Analytics pane. The option available depend on the type of visualization selected.
