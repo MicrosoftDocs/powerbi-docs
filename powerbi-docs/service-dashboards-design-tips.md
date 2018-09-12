@@ -19,7 +19,7 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 Here are a few tips.
 
 > [!TIP]
-> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](power-bi-visualization-best-practices.md).
+> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -47,7 +47,7 @@ If the text and visualizations on your dashboard are all the same size, your rea
 
 But be sure to provide context.  
 
-Read about [creating a tile with just a number](power-bi-visualization-card.md).
+Read about [creating a tile with just a number](visuals/power-bi-visualization-card.md).
 
 ## Put the most important information in the upper corner
 Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
@@ -64,7 +64,7 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Pay attention to how [charts are sorted](power-bi-report-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
 
-For more visualization-specific guidance, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## Learning More about Best Practice Dashboard Design
 To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:

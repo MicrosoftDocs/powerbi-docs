@@ -55,13 +55,13 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Duplicate a report page](power-bi-report-copy-paste-page.md) | No  | Yes |
 | [Delete report page](service-delete.md) | no | yes |
 |**Working with report visualizations**|
-| [Add visualizations to a report](power-bi-report-add-visualizations-i.md) | No  | Yes |
+| [Add visualizations to a report](visuals/power-bi-report-add-visualizations-i.md) | No  | Yes |
 | [Add text boxes, and shapes to a report](power-bi-reports-add-text-and-shapes.md) | No  | Yes |
 | [Use the report Formatting pane](service-the-report-editor-take-a-tour.md) | No | Yes |
 | [Set visual interactions](service-reports-visual-interactions.md) | No  | Yes |
 | [Show data used to create the visualization](service-reports-show-data.md) | No  | Yes |
 | [Configure drilling](power-bi-visualization-drill-down.md) | No  | Yes |
-| [Change the visualization being used](power-bi-report-change-visualization-type.md) | No | Yes|
+| [Change the visualization being used](visuals/power-bi-report-change-visualization-type.md) | No | Yes|
 | [Delete a visualization, text box, or shape](service-delete.md)| No | Yes |
 
 

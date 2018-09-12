@@ -138,7 +138,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 ## Next steps
 [Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)      
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualizations in Power BI](power-bi-report-visualizations.md)  
+[Visualizations in Power BI](visuals/power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Publish custom visuals to Microsoft AppSource](developer/office-store.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

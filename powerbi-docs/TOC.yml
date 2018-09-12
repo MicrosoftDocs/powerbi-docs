@@ -67,7 +67,7 @@
       - name: "The report editor...Take a tour"
         href: service-the-report-editor-take-a-tour.md
       - name: "Visualizations in Power BI"
-        href: power-bi-report-visualizations.md
+        href: visuals/power-bi-report-visualizations.md
       - name: "Data sources for Power BI"
         href: service-get-data.md
       - name: "Extended Pro Trial activation"
@@ -299,7 +299,7 @@
         - name: "Create featured questions for Power BI Q&A"
           href: service-q-and-a-create-featured-questions.md
         - name: "Visualization types in Power BI"
-          href: power-bi-visualization-types-for-reports-and-q-and-a.md
+          href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
         - name: "Work with the linguistic schema in Power BI Desktop"
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
@@ -391,7 +391,7 @@
         - name: "Best practices for building fast and reliable reports in Power BI"
           href: power-bi-reports-performance.md  
         - name: "Interact with ArcGIS maps in Power BI"
-          href: power-bi-visualizations-arcgis.md
+          href: visuals/power-bi-visualizations-arcgis.md
       - name: Data from files
         items: 
         - name: "From Excel workbook to stunning report in no time"
@@ -534,6 +534,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Aggregations in Power BI Desktop (Preview)"
+      href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop (Preview)"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
@@ -577,15 +579,15 @@
     - name: "Custom visuals for organizations in Power BI"
       href: power-bi-custom-visuals-organization.md      
     - name: "Part I, Add visualizations to a Power BI report"
-      href: power-bi-report-add-visualizations-i.md
+      href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
-      href: power-bi-report-add-visualizations-ii.md
+      href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Basic area chart"
-      href: power-bi-visualization-basic-area-chart.md
+      href: visuals/power-bi-visualization-basic-area-chart.md
     - name: "Combo chart in Power BI"
-      href: power-bi-visualization-combo-chart.md
+      href: visuals/power-bi-visualization-combo-chart.md
     - name: "Customize visualization title, background, and legend"
-      href: power-bi-visualization-customize-title-background-and-legend.md
+      href: visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: "ArcGIS in Power BI"
       href: power-bi-visualization-arcgis.md
     - name: Connect to data
@@ -600,8 +602,10 @@
         href: desktop-import-excel-workbooks.md
       - name: "Connect to data using generic interfaces"
         href: desktop-connect-using-generic-interfaces.md
+      - name: "Connect to a PDF file"
+        href: desktop-connect-pdf.md        
       - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md        
+        href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: "Running R scripts in Power BI Desktop"
@@ -659,7 +663,7 @@
     - name: Transform and shape data
       items: 
       - name: "Use Shape Maps in Power BI Desktop (Preview)"
-        href: desktop-shape-map.md
+        href: visuals/desktop-shape-map.md
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
     - name: Model your data
@@ -681,7 +685,9 @@
     - name: Create reports
       items: 
       - name: "Visual elements for reports"
-        href: desktop-visual-elements-for-reports.md        
+        href: desktop-visual-elements-for-reports.md   
+      - name: "Create tooltips based on report pages"
+        href: desktop-tooltips.md        
       - name: "Export to PDF and print reports"
         href: desktop-export-to-pdf.md             
       - name: "Q&A in Power BI Desktop"
@@ -703,13 +709,13 @@
       - name: "Use drillthrough"
         href: desktop-drillthrough.md      
       - name: "Use a relative date slicer and filter"
-        href: desktop-slicer-filter-date-range.md      
+        href: visuals/desktop-slicer-filter-date-range.md      
       - name: "Use grouping and binning"
         href: desktop-grouping-and-binning.md
       - name: "Ribbon charts"
-        href: desktop-ribbon-charts.md
+        href: visuals/desktop-ribbon-charts.md
       - name: "Use the new matrix visual"
-        href: desktop-matrix-visual.md
+        href: visuals/desktop-matrix-visual.md
       - name: "Create Power BI visuals using R"
         href: desktop-r-visuals.md
       - name: "Use R-powered custom visuals"
@@ -725,7 +731,7 @@
       - name: "Add a custom column"
         href: desktop-add-custom-column.md
       - name: "Create responsive visuals in Power BI"
-        href: desktop-create-responsive-visuals.md
+        href: visuals/desktop-create-responsive-visuals.md
       - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
@@ -751,19 +757,19 @@
     - name: Visualizations
       items: 
       - name: "Visualization best practices"
-        href: power-bi-visualization-best-practices.md
+        href: visuals/power-bi-visualization-best-practices.md
       - name: "See the data used to create the visual"
         href: service-reports-show-data.md
       - name: "Change the type of visualization in a Power BI report"
-        href: power-bi-report-change-visualization-type.md
+        href: visuals/power-bi-report-change-visualization-type.md
       - name: "Getting started with color formatting and axis properties"
-        href: service-getting-started-with-color-formatting-and-axis-properties.md
+        href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
       - name: "Tips and tricks for color formatting in Power BI"
-        href: service-tips-and-tricks-for-color-formatting.md
+        href: visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a visualization in Power BI"
-        href: power-bi-visualization-copy-paste.md
+        href: visuals/power-bi-visualization-copy-paste.md
       - name: "Move, resize, and pop out a visualization in a Power BI report"
-        href: power-bi-visualization-move-and-resize.md
+        href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Drill down in a visualization in Power BI"
         href: power-bi-visualization-drill-down.md
       - name: "Hyperlinks in tables"
@@ -771,37 +777,37 @@
       - name: "Add a hyperlink to a Text Box in a Power BI report"
         href: service-add-hyperlink-to-text-box.md
       - name: "Histograms"
-        href: service-histograms.md
+        href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
-        href: power-bi-map-tips-and-tricks.md
+        href: visuals/power-bi-map-tips-and-tricks.md
       - name: "Text boxes in Power BI reports"
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
-        href: power-bi-visualization-customize-x-axis-and-y-axis.md
+        href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "Doughnut charts in Power BI"
-        href: power-bi-visualization-doughnut-charts.md
+        href: visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (Choropleths) in Power BI"
-        href: power-bi-visualization-filled-maps-choropleths.md
+        href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
-        href: power-bi-visualization-funnel-charts.md
+        href: visuals/power-bi-visualization-funnel-charts.md
       - name: "KPI Visuals"
-        href: power-bi-visualization-kpi.md
+        href: visuals/power-bi-visualization-kpi.md
       - name: "Radial gauge charts in Power BI"
-        href: power-bi-visualization-radial-gauge-charts.md
+        href: visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Scatter charts in Power BI"
-        href: power-bi-visualization-scatter.md
+        href: visuals/power-bi-visualization-scatter.md
       - name: "Slicers in Power BI"
-        href: power-bi-visualization-slicers.md
+        href: visuals/power-bi-visualization-slicers.md
       - name: "Working with tables"
-        href: power-bi-visualization-tables.md
+        href: visuals/power-bi-visualization-tables.md
       - name: "Treemaps in Power BI"
-        href: power-bi-visualization-treemaps.md
+        href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
-        href: power-bi-visualization-waterfall-charts.md
+        href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Cards (big number tiles) in Power BI"
-        href: power-bi-visualization-card.md
+        href: visuals/power-bi-visualization-card.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
-        href: service-r-visuals.md
+        href: visuals/service-r-visuals.md
     - name: Troubleshooting
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
@@ -861,93 +867,93 @@
   - name: Overview
     items: 
     - name: "What are the mobile apps?"
-      href: mobile-apps-for-mobile-devices.md
+      href: consumer/mobile/mobile-apps-for-mobile-devices.md
   - name: Quickstarts
     items:
     - name: "Explore dashboards and reports"
-      href: mobile-apps-quickstart-view-dashboard-report.md
+      href: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
   - name: Tutorials
     items: 
     - name: "Ask questions in the iOS mobile apps"
-      href: tutorial-mobile-apps-ios-qna.md
+      href: consumer/mobile/tutorial-mobile-apps-ios-qna.md
   - name: Concepts
     items: 
     - name: "What's new in the mobile apps"
-      href: mobile-whats-new-in-the-mobile-apps.md
+      href: consumer/mobile/mobile-whats-new-in-the-mobile-apps.md
     - name: "Get real-world data with the mobile apps"
-      href: mobile-apps-data-in-real-world-context.md
+      href: consumer/mobile/mobile-apps-data-in-real-world-context.md
     - name: "View your data offline in the mobile apps"
-      href: mobile-apps-offline-data.md
+      href: consumer/mobile/mobile-apps-offline-data.md
     - name: "Power BI for Mixed Reality app (Preview)"
-      href: mobile-mixed-reality-app.md
+      href: consumer/mobile/mobile-mixed-reality-app.md
   - name: How to
     items: 
     - name: All mobile apps
       items: 
       - name: "View on-premises reports in the mobile apps"
-        href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+        href: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: "Share a dashboard from the Power BI mobile apps"
-        href: mobile-share-dashboard-from-the-mobile-apps.md
+        href: consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
-        href: mobile-tiles-in-the-mobile-apps.md
+        href: consumer/mobile/mobile-tiles-in-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
-        href: mobile-apps-favorites.md
+        href: consumer/mobile/mobile-apps-favorites.md
       - name: "Set data alerts in the Power BI mobile apps"
-        href: mobile-set-data-alerts-in-the-mobile-apps.md
+        href: consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"
-        href: mobile-apps-notification-center.md
+        href: consumer/mobile/mobile-apps-notification-center.md
       - name: "Create a deep link that goes to a specific location"
-        href: mobile-apps-deep-link-specific-location.md
+        href: consumer/mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
-        href: mobile-apps-geographic-filtering.md
+        href: consumer/mobile/mobile-apps-geographic-filtering.md
       - name: "Scan a Power BI QR code from your phone"
-        href: mobile-apps-qr-code.md
+        href: consumer/mobile/mobile-apps-qr-code.md
       - name: "Dashboards for mobile Power BI"
-        href: mobile-apps-view-dashboard.md
+        href: consumer/mobile/mobile-apps-view-dashboard.md
       - name: "View reports optimized for your phone"
-        href: mobile-apps-view-phone-report.md
+        href: consumer/mobile/mobile-apps-view-phone-report.md
       - name: "Reports in the mobile apps"
-        href: mobile-reports-in-the-mobile-apps.md
+        href: consumer/mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Using OAuth to connect to Reporting Services"
-        href: mobile-oauth-ssrs.md
+        href: consumer/mobile/mobile-oauth-ssrs.md
       - name: "Configure mobile apps with Intune"
         href: service-admin-mobile-intune.md
     - name: Android devices
       items: 
       - name: "Get started with the Android app"
-        href: mobile-android-app-get-started.md
+        href: consumer/mobile/mobile-android-app-get-started.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
-        href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+        href: consumer/mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
       - name: "Fixing 'Need to update Android System Webview'"
-        href: mobile-android-error-update-android-system-webview.md
+        href: consumer/mobile/mobile-android-error-update-android-system-webview.md
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
-        href: mobile-iphone-app-get-started.md
+        href: consumer/mobile/mobile-iphone-app-get-started.md
       - name: "Q&A virtual analyst in iOS mobile apps"
-        href: mobile-apps-ios-qna.md
+        href: consumer/mobile/mobile-apps-ios-qna.md
       - name: "Power BI Apple Watch app"
-        href: mobile-apple-watch.md
+        href: consumer/mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
-        href: mobile-apps-scan-barcode-iphone.md
+        href: consumer/mobile/mobile-apps-scan-barcode-iphone.md
     - name: iOS and Android
       items: 
       - name: "Annotate and share in the mobile apps"
-        href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+        href: consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
     - name: Power BI app for Windows 10 devices
       items: 
       - name: "Get started with the mobile app for Windows 10"
-        href: mobile-windows-10-phone-app-get-started.md
+        href: consumer/mobile/mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
-        href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+        href: consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
       - name: "View Reporting Services mobile reports and KPIs on the app for Windows 10"
-        href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+        href: consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
       - name: "View Power BI on Surface Hub"
-        href: mobile-windows-10-app-presentation-mode.md
+        href: consumer/mobile/mobile-windows-10-app-presentation-mode.md
   - name: Resources
     items: 
     - name: "Supported languages in the mobile apps"
-      href: mobile-apps-supported-languages.md
+      href: consumer/mobile/mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
   - name: Embedded Analytics
