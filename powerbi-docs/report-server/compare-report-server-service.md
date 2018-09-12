@@ -35,7 +35,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../service-insights.md) 
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
 | Paginated reports | Yes | No | Paginated reports aren't available in the Power BI service, but you can [pin paginated report items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
-| Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../mobile-apps-for-mobile-devices.md) 
+| Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../power-bi-visualization-arcgis.md)
 | Email subscriptions for Power BI reports | No | Yes | [Subscribe to a report or dashboard](../service-report-subscribe.md) in the Power BI service 
 | Email subscriptions for paginated reports | Yes | No | [E-Mail delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
