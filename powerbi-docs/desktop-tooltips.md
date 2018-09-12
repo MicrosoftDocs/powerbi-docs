@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 09/10/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Create tooltips based on report pages in Power BI Desktop (preview)
+# Create tooltips based on report pages in Power BI Desktop
 You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page. 
 
 ![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -23,11 +23,15 @@ You can create as many tooltip pages as you want. Each tooltip page can be assoc
 There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
 
 ### Enable the tooltips preview 
-Since report tooltips are currently in preview, before you can create report tooltips you need to enable them. To enable the report tooltips preview feature, select **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Report page tooltips**. 
+As of the September 2018 release of **Power BI Desktop**, tooltips are generally available and do not need to be enabled. 
+
+If you're using an earlier version of **Power BI Desktop**, you can enable it as a preview feature by selecting **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Report page tooltips**. 
 
 ![Enable preview feature of report tooltips](media/desktop-tooltips/desktop-tooltips_01.png)
 
 You'll need to restart **Power BI Desktop** after you make the selection to enable the preview version of report tooltips.
+
+We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## Create a report tooltip page
 To get started, create a new report page by clicking the **+** button, found along the bottom of the **Power BI Desktop** canvas, in the page tabs area. The button is located beside the last page in the report. 
@@ -113,8 +117,9 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 
 
 ## Limitations and considerations
-In this preview version of report **tooltips**, there are a few limitations and considerations to keep in mind.
+There are a few limitations and considerations for **tooltips** to keep in mind.
 
+* Beginning with the September 2018 release of **Power BI Desktop**, which marked the general availablity of tooltips, Card visuals also support tooltips.
 * Beginning with the July 2018 release of **Power BI Desktop**, Table and Matrix visuals are supported for tooltips. 
 * Report tooltips are not supported when viewing reports in mobile apps or in embedded environments, including Publish to web. 
 * Report tooltips are not supported for custom visuals. 

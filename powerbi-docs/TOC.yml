@@ -534,6 +534,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Aggregations in Power BI Desktop (Preview)"
+      href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop (Preview)"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
@@ -600,8 +602,10 @@
         href: desktop-import-excel-workbooks.md
       - name: "Connect to data using generic interfaces"
         href: desktop-connect-using-generic-interfaces.md
+      - name: "Connect to a PDF file"
+        href: desktop-connect-pdf.md        
       - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md        
+        href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
       - name: "Running R scripts in Power BI Desktop"
@@ -681,7 +685,9 @@
     - name: Create reports
       items: 
       - name: "Visual elements for reports"
-        href: desktop-visual-elements-for-reports.md        
+        href: desktop-visual-elements-for-reports.md   
+      - name: "Create tooltips based on report pages"
+        href: desktop-tooltips.md        
       - name: "Export to PDF and print reports"
         href: desktop-export-to-pdf.md             
       - name: "Q&A in Power BI Desktop"
