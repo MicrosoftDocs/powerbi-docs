@@ -54,7 +54,7 @@ When you view that report on a phone, it opens in portrait view.
 Read more about [reports optimized for phone view](mobile-apps-view-phone-report.md).
 
 ## Use slicers to filter a report
-When designing a report in Power BI Desktop or the Power BI service, consider [adding slicers to a report page](../../power-bi-visualization-slicers.md). You and your colleagues can use the slicers to filter the page in a browser and in the mobile apps. When you view the report on a phone, you can see and interact with the slicers in landscape mode and in a page optimized for the phone's portrait mode. If you select a value in a slicer or filter in the browser, the value will be selected when you view the page in the mobile app, too. You see a message that there are active filters on the page.  
+When designing a report in Power BI Desktop or the Power BI service, consider [adding slicers to a report page](../../visuals/power-bi-visualization-slicers.md). You and your colleagues can use the slicers to filter the page in a browser and in the mobile apps. When you view the report on a phone, you can see and interact with the slicers in landscape mode and in a page optimized for the phone's portrait mode. If you select a value in a slicer or filter in the browser, the value will be selected when you view the page in the mobile app, too. You see a message that there are active filters on the page.  
 
 * When you select a value in a slicer on the report page, it filters the other visuals on the page.
   

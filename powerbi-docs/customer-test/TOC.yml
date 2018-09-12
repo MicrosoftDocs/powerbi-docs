@@ -685,7 +685,7 @@
       - name: "Treemaps in Power BI"
         href: ../power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
-        href: ../power-bi-visualization-waterfall-charts.md
+        href: ../visuals/power-bi-visualization-waterfall-charts.md
       - name: "Cards (big number tiles) in Power BI"
         href: ../power-bi-visualization-card.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"

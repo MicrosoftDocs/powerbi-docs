@@ -177,7 +177,7 @@
     - name: Power BI app for Windows 10 devices
       items: 
       - name: "Get started with the mobile app for Windows 10"
-        href: ../../mobile-windows-10-phone-app-get-started.md
+        href: ../../consumer/mobile/mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: ../../mobile-pin-dashboard-start-screen-windows-10-phone-app.md
       - name: "View Reporting Services mobile reports and KPIs on the app for Windows 10"

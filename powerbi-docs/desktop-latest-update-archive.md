@@ -348,7 +348,7 @@ The following updates were new to **Power BI Desktop** in February 2018:
 ### Reporting
 
 * Multi-select data points across multiple pages  [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Sync slicers across multiple pages of a report  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Sync slicers across multiple pages of a report  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](visuals/desktop-slicers.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
 * Numeric range slicer improvement - whole number snapping (Preview)  [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
 * Faster geocoding for Bing maps (web Preview) - up to 6x faster  [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
 * Overflow data labels for bar and column charts visuals   [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
@@ -619,7 +619,7 @@ The following updates are new to **Power BI Desktop** in September:
 ### Report View:
 
 -   Drillthrough to another report page [[video]](https://youtu.be/moTQJlnClJw?t=19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#drillthrough) [[article]](desktop-drillthrough.md)
--   Ribbon chart  [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[article]](desktop-ribbon-charts.md)
+-   Ribbon chart  [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[article]](visuals/desktop-ribbon-charts.md)
 -   Insights about Explain the increase / Explain the decrease  [[video]](https://youtu.be/moTQJlnClJw?t=13m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#insights) [[article]](desktop-insights.md)
 -   Theming preview update - chart style controls [[video]](https://youtu.be/moTQJlnClJw?t=19m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#theming) [[article]](desktop-report-themes.md)
 -   Accessibility improvements  [[video]](https://youtu.be/moTQJlnClJw?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibility) [[article]](desktop-accessibility.md)
@@ -758,7 +758,7 @@ The following updates were new to **Power BI Desktop** in June:
 -   Visual font family setting [[video]](https://youtu.be/YlNVE5dgcSI?t=6m59s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#fonts)
 -   Horizontal image slicer [[video]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#imageSlicer)
 -   Combo chart formatting updates [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
--   Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
+-   Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](visuals/power-bi-map-tips-and-tricks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
 -   High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
 -   Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
@@ -848,7 +848,7 @@ The following updates were new to Power BI Desktop in April 2017:
 ### Report View:
 
 -   Rename axis titles [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
--   New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+-   New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](visuals/desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
 
 ### Analytics:
 
@@ -890,7 +890,7 @@ The following updates were new to Power BI Desktop in March 2017:
 
 ### Report View:
 
--   New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
+-   New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](visuals/desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
 -   Numeric range slicer (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
 -   Data labels on pie and donut visuals - percent of total [[video]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
 -   Cross-highlight using multiple series [[video]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
@@ -1245,7 +1245,7 @@ July brought another great collection of new features and highly anticipated dat
 ### Report View:
 
 -   Predefined table styles [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[video]](https://youtu.be/g8ccfjffWmw?t=1m25s)
--   Shape Maps update - use custom maps [[article]](desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)  [[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
+-   Shape Maps update - use custom maps [[article]](visuals/desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)  [[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
 ### Data Connectors:
 
@@ -1286,7 +1286,7 @@ June provided a shining collection of interesting updates for Power BI Desktop.
 
 ### Report View:
 
--   New visual - Shape Maps [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](desktop-shape-map.md)
+-   New visual - Shape Maps [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](visuals/desktop-shape-map.md)
 -   Searchable slicers [[video]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Configurable line chart labels [[video]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   New sign-in entry points [[video]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)

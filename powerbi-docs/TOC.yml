@@ -67,7 +67,7 @@
       - name: "The report editor...Take a tour"
         href: service-the-report-editor-take-a-tour.md
       - name: "Visualizations in Power BI"
-        href: power-bi-report-visualizations.md
+        href: visuals/power-bi-report-visualizations.md
       - name: "Data sources for Power BI"
         href: service-get-data.md
       - name: "Extended Pro Trial activation"
@@ -299,7 +299,7 @@
         - name: "Create featured questions for Power BI Q&A"
           href: service-q-and-a-create-featured-questions.md
         - name: "Visualization types in Power BI"
-          href: power-bi-visualization-types-for-reports-and-q-and-a.md
+          href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
         - name: "Work with the linguistic schema in Power BI Desktop"
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
@@ -391,7 +391,7 @@
         - name: "Best practices for building fast and reliable reports in Power BI"
           href: power-bi-reports-performance.md  
         - name: "Interact with ArcGIS maps in Power BI"
-          href: power-bi-visualizations-arcgis.md
+          href: visuals/power-bi-visualizations-arcgis.md
       - name: Data from files
         items: 
         - name: "From Excel workbook to stunning report in no time"
@@ -579,15 +579,15 @@
     - name: "Custom visuals for organizations in Power BI"
       href: power-bi-custom-visuals-organization.md      
     - name: "Part I, Add visualizations to a Power BI report"
-      href: power-bi-report-add-visualizations-i.md
+      href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
-      href: power-bi-report-add-visualizations-ii.md
+      href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Basic area chart"
-      href: power-bi-visualization-basic-area-chart.md
+      href: visuals/power-bi-visualization-basic-area-chart.md
     - name: "Combo chart in Power BI"
-      href: power-bi-visualization-combo-chart.md
+      href: visuals/power-bi-visualization-combo-chart.md
     - name: "Customize visualization title, background, and legend"
-      href: power-bi-visualization-customize-title-background-and-legend.md
+      href: visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: "ArcGIS in Power BI"
       href: power-bi-visualization-arcgis.md
     - name: Connect to data
@@ -663,7 +663,7 @@
     - name: Transform and shape data
       items: 
       - name: "Use Shape Maps in Power BI Desktop (Preview)"
-        href: desktop-shape-map.md
+        href: visuals/desktop-shape-map.md
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
     - name: Model your data
@@ -709,13 +709,13 @@
       - name: "Use drillthrough"
         href: desktop-drillthrough.md      
       - name: "Use a relative date slicer and filter"
-        href: desktop-slicer-filter-date-range.md      
+        href: visuals/desktop-slicer-filter-date-range.md      
       - name: "Use grouping and binning"
         href: desktop-grouping-and-binning.md
       - name: "Ribbon charts"
-        href: desktop-ribbon-charts.md
+        href: visuals/desktop-ribbon-charts.md
       - name: "Use the new matrix visual"
-        href: desktop-matrix-visual.md
+        href: visuals/desktop-matrix-visual.md
       - name: "Create Power BI visuals using R"
         href: desktop-r-visuals.md
       - name: "Use R-powered custom visuals"
@@ -731,7 +731,7 @@
       - name: "Add a custom column"
         href: desktop-add-custom-column.md
       - name: "Create responsive visuals in Power BI"
-        href: desktop-create-responsive-visuals.md
+        href: visuals/desktop-create-responsive-visuals.md
       - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
@@ -757,19 +757,19 @@
     - name: Visualizations
       items: 
       - name: "Visualization best practices"
-        href: power-bi-visualization-best-practices.md
+        href: visuals/power-bi-visualization-best-practices.md
       - name: "See the data used to create the visual"
         href: service-reports-show-data.md
       - name: "Change the type of visualization in a Power BI report"
-        href: power-bi-report-change-visualization-type.md
+        href: visuals/power-bi-report-change-visualization-type.md
       - name: "Getting started with color formatting and axis properties"
-        href: service-getting-started-with-color-formatting-and-axis-properties.md
+        href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
       - name: "Tips and tricks for color formatting in Power BI"
-        href: service-tips-and-tricks-for-color-formatting.md
+        href: visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a visualization in Power BI"
-        href: power-bi-visualization-copy-paste.md
+        href: visuals/power-bi-visualization-copy-paste.md
       - name: "Move, resize, and pop out a visualization in a Power BI report"
-        href: power-bi-visualization-move-and-resize.md
+        href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Drill down in a visualization in Power BI"
         href: power-bi-visualization-drill-down.md
       - name: "Hyperlinks in tables"
@@ -777,37 +777,37 @@
       - name: "Add a hyperlink to a Text Box in a Power BI report"
         href: service-add-hyperlink-to-text-box.md
       - name: "Histograms"
-        href: service-histograms.md
+        href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
-        href: power-bi-map-tips-and-tricks.md
+        href: visuals/power-bi-map-tips-and-tricks.md
       - name: "Text boxes in Power BI reports"
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
-        href: power-bi-visualization-customize-x-axis-and-y-axis.md
+        href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "Doughnut charts in Power BI"
-        href: power-bi-visualization-doughnut-charts.md
+        href: visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (Choropleths) in Power BI"
-        href: power-bi-visualization-filled-maps-choropleths.md
+        href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
-        href: power-bi-visualization-funnel-charts.md
+        href: visuals/power-bi-visualization-funnel-charts.md
       - name: "KPI Visuals"
-        href: power-bi-visualization-kpi.md
+        href: visuals/power-bi-visualization-kpi.md
       - name: "Radial gauge charts in Power BI"
-        href: power-bi-visualization-radial-gauge-charts.md
+        href: visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Scatter charts in Power BI"
-        href: power-bi-visualization-scatter.md
+        href: visuals/power-bi-visualization-scatter.md
       - name: "Slicers in Power BI"
-        href: power-bi-visualization-slicers.md
+        href: visuals/power-bi-visualization-slicers.md
       - name: "Working with tables"
-        href: power-bi-visualization-tables.md
+        href: visuals/power-bi-visualization-tables.md
       - name: "Treemaps in Power BI"
-        href: power-bi-visualization-treemaps.md
+        href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
-        href: power-bi-visualization-waterfall-charts.md
+        href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Cards (big number tiles) in Power BI"
-        href: power-bi-visualization-card.md
+        href: visuals/power-bi-visualization-card.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
-        href: service-r-visuals.md
+        href: visuals/service-r-visuals.md
     - name: Troubleshooting
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
