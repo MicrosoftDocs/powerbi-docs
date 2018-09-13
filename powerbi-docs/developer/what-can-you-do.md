@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 09/25/2018
+ms.date: 09/14/2018
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.
 ---
 
@@ -38,7 +38,11 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ## Using API automation
 
-You can use the Power BI APIs to push data into a dataset. Using API automation, you can add rows to a table within a data set. The new data can then be viewed in tiles on a dashboard and within visuals in your report.
+Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
+
+Developers can also build their own data visualizations that can be used in interactive reports and dashboards.
+
+Here are some of the things you can do with the Power BI APIs.
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
@@ -50,4 +54,4 @@ You can use the Power BI APIs to push data into a dataset. Using API automation,
 
 [Push data into a dataset](walkthrough-push-data.md)
 
-[Build with Power BI](https://powerbi.microsoft.com/developers/)
+[Power BI Developer Center](https://powerbi.microsoft.com/developers/)
