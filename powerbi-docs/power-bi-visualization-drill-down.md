@@ -222,7 +222,7 @@ Apart from the visualization, we can see the hierarchy reflected in the data ren
   ![](media/power-bi-visualization-drill-down/power-bi-change-data-type2.png)
 
 ## Next steps
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)
+[Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)
 
 [Power BI reports](service-reports.md)
 

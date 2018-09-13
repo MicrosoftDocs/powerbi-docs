@@ -14,7 +14,7 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](mobile-iphone-app-get-started.md).
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](consumer/mobile/mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](consumer/mobile/mobile-iphone-app-get-started.md).
 
 ## Dashboard tiles
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
@@ -90,7 +90,7 @@ When you select a tile, what happens next depends on how the tile was created an
 * If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## Next steps
-[Create a Card (big number tile) for your dashboard](power-bi-visualization-card.md)
+[Create a Card (big number tile) for your dashboard](visuals/power-bi-visualization-card.md)
 
 [Dashboards in Power BI](service-dashboards.md)  
 

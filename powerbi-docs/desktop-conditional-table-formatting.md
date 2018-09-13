@@ -131,5 +131,5 @@ There are many more variations you could create, just by using your imagination 
 ## Next steps
 For more information, see the following article:  
 
-* [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
+* [Tips and tricks for color formatting in Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
 
