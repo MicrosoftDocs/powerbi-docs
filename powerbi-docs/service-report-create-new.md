@@ -49,7 +49,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 > 
 
 ## Add a Radial Gauge to the report
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](power-bi-report-visualizations.md) for displaying this type of information.
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](visuals/power-bi-report-visualizations.md) for displaying this type of information.
 
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    

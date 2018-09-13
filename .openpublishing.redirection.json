@@ -134,7 +134,341 @@
             "source_path": "powerbi-docs/developer/embedding-content.md", 
             "redirect_url": "/power-bi/developer/embed-sample-for-customers",
             "redirect_document_id": true
-        }
-        
+        },
+        {
+            "source_path": "powerbi-docs/mobile-android-app-error-corporate-ssl-account-is-untrusted.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-android-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-android-app-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-android-error-update-android-system-webview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-android-error-update-android-system-webview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-app-windows-10-ssrs-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apple-watch.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apple-watch",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-data-in-real-world-context.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-data-in-real-world-context",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-deep-link-specific-location.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-deep-link-specific-location",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-favorites.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-favorites",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-for-mobile-devices.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-geographic-filtering.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-geographic-filtering",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-ios-qna.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-ios-qna",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-notification-center.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-notification-center",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-offline-data.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-offline-data",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-qr-code.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-qr-code",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-quickstart-view-dashboard-report.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-quickstart-view-dashboard-report",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-scan-barcode-iphone.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode-iphone",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-supported-languages.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-supported-languages",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-view-dashboard.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-view-dashboard",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-apps-view-phone-report.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-view-phone-report",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-iphone-app-get-started.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-iphone-app-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-known-issues-with-the-iphone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-known-issues-with-the-iphone-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-mixed-reality-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-mixed-reality-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-oauth-ssrs.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-oauth-ssrs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-reports-in-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-reports-in-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-set-data-alerts-in-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-share-dashboard-from-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-share-dashboard-from-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-tiles-in-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-tiles-in-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-whats-new-in-the-mobile-apps.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-whats-new-in-the-mobile-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-windows-10-app-presentation-mode.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-app-presentation-mode",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/tutorial-mobile-apps-ios-qna.md",
+            "redirect_url": "/power-bi/consumer/mobile/tutorial-mobile-apps-ios-qna",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-create-responsive-visuals.md", 
+            "redirect_url": "/power-bi/visuals/desktop-create-responsive-visuals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-matrix-visual.md", 
+            "redirect_url": "/power-bi/visuals/desktop-matrix-visual",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-ribbon-charts.md", 
+            "redirect_url": "/power-bi/visuals/desktop-ribbon-charts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-shape-map.md", 
+            "redirect_url": "/power-bi/visuals/desktop-shape-map",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-slicer-filter-date-range.md", 
+            "redirect_url": "/power-bi/visuals/desktop-slicer-filter-date-range",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-slicers.md", 
+            "redirect_url": "/power-bi/visuals/desktop-slicers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-map-tips-and-tricks",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-add-visualizations-i.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-add-visualizations-ii.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-ii",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-change-visualization-type.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-change-visualization-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-visualizations.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-basic-area-chart.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-basic-area-chart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-best-practices.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-best-practices",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-card.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-combo-chart.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-combo-chart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-copy-paste.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-copy-paste",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-customize-title-background-and-legend.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-customize-x-axis-and-y-axis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-customize-x-axis-and-y-axis",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-doughnut-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-doughnut-charts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-filled-maps-choropleths.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-filled-maps-choropleths",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-funnel-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-funnel-charts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-kpi.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-kpi",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-move-and-resize.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-move-and-resize",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-radial-gauge-charts.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-radial-gauge-charts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualizations-arcgis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-scatter.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-scatter",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-slicers.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-tables.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-tables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-treemaps.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-treemaps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-types-for-reports-and-q-and-a.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-getting-started-with-color-formatting-and-axis-properties.md", 
+            "redirect_url": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-histograms.md", 
+            "redirect_url": "/power-bi/visuals/service-histograms",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-r-visuals.md", 
+            "redirect_url": "/power-bi/visuals/service-r-visuals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-tips-and-tricks-for-color-formatting.md", 
+            "redirect_url": "/power-bi/visuals/service-tips-and-tricks-for-color-formatting",
+            "redirect_document_id": true
+        }     
     ]
 }
