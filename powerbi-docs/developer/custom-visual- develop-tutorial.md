@@ -21,7 +21,7 @@ This tutorial shows you how to develop a Power BI custom visual named Circle Car
 
 In the Power BI Desktop report, the cards will be modified to become Circle Cards.
 
-  ![Power BI Custom Visual sample output](media/develop-a-power-bi-custom-visual/circle-cards.png)
+  ![Power BI Custom Visual sample output](media/custom-visual-develop-tutorial/circle-cards.png)
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -62,7 +62,7 @@ In addition to the prerequisites, there are a few more tools you need to install
 
 3. Run the installer, and then follow the installation steps. Accept the terms of the license agreement and all defaults.
 
-   ![ Node.js setup](media/develop-a-power-bi-custom-visual/node-js-setup.png)
+   ![ Node.js setup](media/custom-visual-develop-tutorial/node-js-setup.png)
 
 4. Restart the computer.
 
@@ -88,7 +88,7 @@ Now you need to install the pbiviz package.
 
 You should return a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
 
-  ![Cert created via PowerShell](media/develop-a-power-bi-custom-visual/cert-create.png)
+  ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
 2. Now we need to install the certificate. to install the certificate, enter the following command.
 
@@ -98,31 +98,31 @@ You should return a result that produces a *passphrase*. In this case, the *pass
 
 4. In the Certificate Import Wizard, ensure that the store location is set to Current User. Then select *Next*.
 
-      ![Cert install](media/develop-a-power-bi-custom-visual/install-cert-powershell.png)
+      ![Cert install](media/custom-visual-develop-tutorial/install-cert-powershell.png)
 
 5. At the **File to Import** step, select *Next*.
 
 6. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
    
-      ![Copy passphrase](media/develop-a-power-bi-custom-visual/cert-install-wizard-show-passphrase.png)
+      ![Copy passphrase](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
 7. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
 
-      ![All certs in the following store](media/develop-a-power-bi-custom-visual/all-certs-in-the-following-store.png)
+      ![All certs in the following store](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
 8. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
 
-      ![Trusted root cert](media/develop-a-power-bi-custom-visual/trusted-root-cert.png)
+      ![Trusted root cert](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
 9. To complete the import, click Finish.
 
 10. If you receive a security warning, click Yes.
 
-    ![Security warning](media/develop-a-power-bi-custom-visual/cert-security-warning.png)
+    ![Security warning](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
 11. When notified that the import was successful, click OK.
 
-    ![Cert import successful](media/develop-a-power-bi-custom-visual/cert-import-successful.png)
+    ![Cert import successful](media/custom-visual-develop-tutorial/cert-import-successful.png)
 
 > ![Important}
 > Do not close the Windows PowerShell session.
@@ -184,7 +184,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
 
 2. Review the output, including the list of supported commands.
 
-    ![Supported commands](media/develop-a-power-bi-custom-visual/powershell-supported-commands.png) 
+    ![Supported commands](media/custom-visual-develop-tutorial/powershell-supported-commands.png) 
 
 3. Navigate to your Workspace folder, using the folder path you used to install the course files.  In this case, we saved our files to the workspace folder in the c drive.
 
@@ -201,7 +201,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
     ```powershell
     cd CircleCard
     ```
-    ![New CircleCard result](media/develop-a-power-bi-custom-visual/new-circle-card-result.png)
+    ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
 
 6. Start the custom visual. YoUr CircleCard visual is now running while being hosted on your computer.
 
@@ -209,7 +209,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
     pbiviz start
     ```
 
-    ![Start running the custom visual](media/develop-a-power-bi-custom-visual/start-running-custom-visual-powershell.png)
+    ![Start running the custom visual](media/custom-visual-develop-tutorial/start-running-custom-visual-powershell.png)
 
 > ![Important}
 > Do not close the Windows PowerShell session.
@@ -220,11 +220,11 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
 1. Select **Settings**.
 
-      Power BI settings](media/develop-a-power-bi-custom-visual/power-bi-settings.png)
+      Power BI settings](media/custom-visual-develop-tutorial/power-bi-settings.png)
 
 2. Select **Developer** then check the **Enable Developer Visual for testing** checkbox.
 
-    ![Developer page settings](media/develop-a-power-bi-custom-visual/developer-page-settings.png)
+    ![Developer page settings](media/custom-visual-develop-tutorial/developer-page-settings.png)
 
 3. Upload a Power BI Desktop report.  
 
@@ -232,40 +232,40 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
     You can download a sample Power BI Desktop report [here](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix).
 
-    ![Get Data](media/develop-a-power-bi-custom-visual/get-data.png)
-    ![Local File](media/develop-a-power-bi-custom-visual/local-file.png)
+    ![Get Data](media/custom-visual-develop-tutorial/get-data.png)
+    ![Local File](media/custom-visual-develop-tutorial/local-file.png)
 
     Now to view the report, select **US_Sales_Analysis** from the **Report** section in the navigation pane on the left.
 
-    ![Custom Visual Desktop sample](media/develop-a-power-bi-custom-visual/custom-visual-sample.png)
+    ![Custom Visual Desktop sample](media/custom-visual-develop-tutorial/custom-visual-sample.png)
 
 4. Now you need to edit the report while in te Power BI service.
 
     Go to **Edit report**.
 
-    ![Edit report](media/develop-a-power-bi-custom-visual/edit-report.png)
+    ![Edit report](media/custom-visual-develop-tutorial/edit-report.png)
 
 5. Select the **Developer Visual** from the **Visualizations** pane.
 
-    ![Developer visual](media/develop-a-power-bi-custom-visual/developer-visual.png)
+    ![Developer visual](media/custom-visual-develop-tutorial/developer-visual.png)
 
     > ![Note]
     > This visualization represents the custom visual that you started on your computer. It is only available when the developer settings have been enabled.
 
 6. Notice that a visualization was added to the report canvas.
 
-    ![New visual](media/develop-a-power-bi-custom-visual/new-visual-in-report.png)
+    ![New visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
     > !{Note}
     > This is a very simple visual that displays the number of times its Update method has been called. At this stage the visual does not yet retrieve any data.
 
 7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
 
-    ![Quantity Sales](media/develop-a-power-bi-custom-visual/quantity-sales.png)
+    ![Quantity Sales](media/custom-visual-develop-tutorial/quantity-sales.png)
 
 8. Then to test the new visual, resize the visual and notice the update value increments.
 
-    ![Resize visual](media/develop-a-power-bi-custom-visual/resize-visual.png)
+    ![Resize visual](media/custom-visual-develop-tutorial/resize-visual.png)
 
 To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to terminate the batch job, enter Y, then press Enter.
 
@@ -299,16 +299,16 @@ This command installs TypeScript definitions based on JavaScript files, enabling
 
 4. In the **Explorer pane**, expand the **node_modules** folder to verify that the **d3 library** was installed.
 
-    ![D3 Library in visual Studio code](media/develop-a-power-bi-custom-visual/d3-library.png)
+    ![D3 Library in visual Studio code](media/custom-visual-develop-tutorial/d3-library.png)
 
 5. Notice the TypeScript file, **index.d.ts**, by expanding node_modules > @types > d3 in the **Explorer pane**.
 
-    ![Index.d.ts file](media/develop-a-power-bi-custom-visual/index.d.ts.png)
+    ![Index.d.ts file](media/custom-visual-develop-tutorial/index-d-ts.png)
 
 6. Open the **tsconfig.json** file if you need to make some changes.
 
-    ![Tsconfig file](media/develop-a-power-bi-custom-visual/tsconfig-json.png)
-    ![Ts code](media/develop-a-power-bi-custom-visual/tsconfig-json-code.png)
+    ![Tsconfig file](media/custom-visual-develop-tutorial/tsconfig-json.png)
+    ![Ts code](media/custom-visual-develop-tutorial/tsconfig-json-code.png)
 
 7. Save the **tsconfig.json** file.
 
@@ -319,7 +319,7 @@ This command installs TypeScript definitions based on JavaScript files, enabling
     ```javascript
     "node_modules/d3/d3.min.js"
     ```
-    ![Adding node_modules/d3/d3.min.js](media/develop-a-power-bi-custom-visual/adding-node-module.png)
+    ![Adding node_modules/d3/d3.min.js](media/custom-visual-develop-tutorial/adding-node-module.png)
 
 10. Save the **pbiviz.json** file changes.
 
@@ -368,7 +368,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
      private textLabel: d3.Selection<SVGElement>; 
     ```
 
-    ![Visual.ts file class-level properties](media/develop-a-power-bi-custom-visual/visual-ts-file-class-level-properties.png)
+    ![Visual.ts file class-level properties](media/custom-visual-develop-tutorial/visual-ts-file-class-level-properties.png)
 
 4. Add the following code to the *constructor*.
 
@@ -390,7 +390,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     To format the code in document, right-click anywhere in the visual Studio Code document, and then select **Format Document**.
 
-      ![Format document](media/develop-a-power-bi-custom-visual/format-document.png)
+      ![Format document](media/custom-visual-develop-tutorial/format-document.png)
 
     To improve readability, it is recommended that you format the document every time that paste in code snippets.
 
@@ -458,7 +458,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 1. Navigate back to the Power BI report.
 2. In the toolbar floating above the developer visual, select the **Toggle Auto Reload**.
 
-    ![Toggle auto reload](media/develop-a-power-bi-custom-visual/toggle-auto-reload.png)
+    ![Toggle auto reload](media/custom-visual-develop-tutorial/toggle-auto-reload.png)
 
     This option ensures that the visual is automatically reloaded each time you save project changes.
 
@@ -466,7 +466,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
 4. Verify that the visual looks like the following.
 
-    ![Circle developer visual](media/develop-a-power-bi-custom-visual/circle-developer-visual.png)
+    ![Circle developer visual](media/custom-visual-develop-tutorial/circle-developer-visual.png)
 
 5. Resize the visual.
 
