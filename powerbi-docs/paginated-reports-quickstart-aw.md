@@ -39,17 +39,15 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
      ![Report Builder Getting Started](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
   
-1.  In the left pane, verify that **New Report** is selected.  
+1.  In the left pane, verify that **New Report** is selected, and in the right pane, select **Table or Matrix Wizard**.  
   
-3.  In the right pane, select **Table or Matrix Wizard**, and then select **Create**.  
-  
-4.  In the **Choose a dataset** page, select **Create a dataset**, and then select **Next**.  
+4.  In the **Choose a dataset** page, select **Create a dataset** > **Next**.  
 
     ![Create a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  In the **Choose a connection to a data source** page, select **New**. 
 
-    ![New data source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
+    ![New data source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source-connection.png)
   
      The **Data Source Properties** dialog box opens.  
   
