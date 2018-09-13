@@ -30,11 +30,15 @@ Choose the solution that is right for you:
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
+Go [here](embedding.md) to learn more about embedding with Power BI.
+
 ## Developing custom visuals
 
-You can use custom visuals with Power BI to create a unique type of visual that’s tailored to you or your company, or the data insights you’re trying to convey. Often these custom visuals are created by developers. They're built when the multitude of visuals that are included with Power BI don’t quite meet your needs.
+You can use custom visuals with Power BI to create a unique type of visual that’s tailored to you or your company. Often these custom visuals are created by developers. They're built when the multitude of visuals that are included with Power BI don’t quite meet your needs.
 
 Custom visuals allow you to create your visuals for use within Power BI reports. Custom visuals are written in TypeScript, which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (CSS). For your convenience, we use the Less pre-compiler, which supports some advanced features such as nesting, variables, conditions, loops, and other features. If you don't want to use any of those features, you can write plain CSS in the less file.
+
+Go [here](https://microsoft.github.io/PowerBI-visuals/docs/overview/) to start learning more about custom visual development.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -44,9 +48,9 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 Developers can also build their own data visualizations that can be used in interactive reports and dashboards.
 
-Here are some of the things you can do with the Power BI APIs.
-
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
+
+Go [here](overview-of-power-bi-rest-api.md) to see some of the things you can do with the Power BI APIs.
 
 ## Next steps
 
@@ -54,6 +58,6 @@ Here are some of the things you can do with the Power BI APIs.
 
 [Developing a Power BI custom visual](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
-[Push data into a dataset](walkthrough-push-data.md)
+[What can developers do with the Power BI API?](overview-of-power-bi-rest-api.md)
 
 [Power BI Developer Center](https://powerbi.microsoft.com/developers/)
