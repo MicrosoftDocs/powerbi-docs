@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 08/28/2018
+ms.date: 09/13/2018
 ms.author: maggies
 ---
 
@@ -47,11 +47,11 @@ These are the prerequisites for uploading your paginated report to the Power BI 
   
 5.  In the **Choose a connection to a data source** page, select **New**. 
 
-    ![New data source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source-connection.png)
+    ![New data source](media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png)
   
      The **Data Source Properties** dialog box opens.  
   
-6.  You can name a data source anything you want, using characters and underscores. In the **Name** box, type **MyAzureDataSource**.  
+6.  You can name a data source anything you want, using characters and underscores. For this tutorial, in the **Name** box, type **MyAzureDataSource**.  
   
 7.  In the **Select connection type** box, select **Microsoft Azure SQL Database**.  
   
@@ -61,11 +61,11 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 
 9. **In Azure:** Go back to the Azure portal and select **SQL databases**.
 
-1. Select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the Prerequisites section of this article.
+1. Select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the **Prerequisites** section of this article.
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
-2. **In Report Builder** in the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
+2. **In Report Builder**: In the **Connection Properties** dialog box, under **Server name** paste the server name you copied. 
 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
@@ -98,15 +98,17 @@ These are the prerequisites for uploading your paginated report to the Power BI 
     - SalesOrderDetail
     - SalesOrderHeader
 
-     Because **Relationships** > **Auto Detect** is selected, Report Builder detects that these tables are related. 
+     Because **Relationships** > **Auto Detect** is selected, Report Builder detects the relationships between these tables. 
     
     ![Design a query](media/paginated-reports-quickstart-aw/power-bi-paginated-design-query.png)
  
-1.  Select **Run Query**. Report Builder displays the **Query results** > **Next**. 
+1.  Select **Run Query**. Report Builder displays the **Query results**. 
  
      ![Query results](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
 
-18. In the **Choose a dataset** page, choose the dataset you just created > **Next**..
+18. Select **Next**. 
+
+19. In the **Choose a dataset** page, choose the dataset you just created > **Next**.
 
     ![Choose a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-choose-dataset.png)
 
@@ -122,7 +124,7 @@ These are the prerequisites for uploading your paginated report to the Power BI 
     - UnitPrice
     - LineTotal
 
-    Note that the fields in the **Values** box are sums.
+    Note that Report Builder automatically made the fields in the **Values** box sums.
 
     ![Arrange fields](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png)
 
@@ -142,15 +144,16 @@ Let's pause for a moment to look at the results of the wizard.
 
 3. Order Qty, Unit Price, and Line Total are all sums, and each row group has a subtotal. 
 
-    Notice you're still not seeing actual data values. You need to run the report to see them.
+    You still don't see actual data values. You need to run the report to see them.
 
 4. In the Properties pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
 
-5. In the Grouping pane, you see the three row groups you created in the matrix in the wizard: 
+5. In the Grouping pane, you see the three row groups you created in the wizard: 
 
     - CompanyName
     - Sales Order
     - Product Name
+
     This matrix doesn't have any column groups.
 
 ### Run the report
@@ -159,17 +162,17 @@ To see the actual values, you need to run the report.
 
 1. Select **Run** in the **Home** toolbar.
 
-   Now you're seeing the values. Note that Report Builder says it's page **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieved enough data for a few pages at a time. The question mark indicates that Report Builder hasn't loaded all the data yet.
+   Now you see the values. The matrix has many more rows than you saw in Design view! Note that Report Builder says it's page **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder hasn't loaded all the data yet.
 
    ![Run the report](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
-2. Select **Print Layout**. This is how the report will look when you print it. Note it how has 33 pages.
+2. Select **Print Layout**. This is how the report will look when you print it. Note that Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
 
 ## Design the report
 
+Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks.
 
-
-
+- On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
 
 ### Set page width
 
@@ -181,40 +184,72 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
     If you don’t see the Properties pane, click the **View** tab > **Properties**.
 
-2. Expand **Margins** and change Left and Right from 1in to 0.75in. 
+2. Expand **Margins** and change **Left** and **Right** from 1in to 0.75in. 
 
     ![Set page margins](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
   
-## Make the chart bigger  
-You may want the chart to be bigger. 
+### Add a report title  
 
-1. On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
+1. Select the words **Click to add title** at the top of the page, then type **Sales by Company**.  
+
+2. Select the title text, and in the Properties pane under **Font**, change **Color** to **Blue**.
+  
+### Add a page number
+
+
+### Make the table wider  
+
+Now you can the matrix big enough to fill the width of the page, and make the text columns wider so the names don't scroll as much. 
  
-2. Select the chart, but not on any element in the chart, and drag the lower-right corner to resize it.  
+2. Select the matrix, then select the Company Name column.
 
-Notice the design surface gets larger as you drag.
-  
-## Add a report title  
+3. Hover over the gray bar at the top of the matrix at the right edge of the Company Name column, and drag to the right, until the column ends at 1 3/8 inches. 
 
-1. Select the words **Chart title** at the top of the page, then type **Sales Chart**.  
-2. With the title selected, in the Properties pane, change **Color** to **Blue**.
-  
-## Add percentages  
+    ![Drag the right edge of the column](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png)
+
+4. Drag the right edge of Product name until the column ends at 3 3/4 inches.   
+
+Now the matrix is almost as wide as the print area.
+
+### Format the currency
+
+If you noticed when you ran the report, the dollar amounts aren't formatted as currency yet.
+
+1. Select the upper-left [Sum(OrderQty)] cell, hold down the Shift key, and select lower-right [Sum(LineTotal)] cell.
+
+    ![Select cells with currency values](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
+
+2. On the **Home** tab, select the dollar sign (**$**) currency symbol, then select the arrow next to **Placeholder styles** > **Sample Values**.
  
-1.  Right-click the chart and select **Show Data Labels**. The data labels appear within each slice on the chart.  
-  
-2.  Right-click the labels and select **Series Label Properties**. The **Series Label Properties** dialog box appears.  
-  
-3.  In the **Label data** box, type **#PERCENT{P0}**.  
-  
-     The **{P0}** gives you the percentage without decimal places. If you type just **#PERCENT**, your numbers will have two decimal places. **#PERCENT** is a keyword that performs a calculation or function for you; there are many others.  
-     
-4. Select **Yes** to confirm you want to set **UseValueAsLabel** to **False**.
+    ![Show sample values](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 
-5. On the **Font** tab, select **Bold** and change **Color** to **White**.
+    Now you can see the values are formatted as currency.
 
-6. Select **OK**.     
-  
+    ![Currency sample values](media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png)
+
+### Add column headers on each page
+
+One more formatting improvement before publishing the report to the Power BI service: making the column headers show up on each page in the report.
+
+1. In the far-right end of the top bar in the Grouping pane, select the drop-down arrow > **Advanced Mode**.
+
+    ![Turn on Advanced Mode](media/paginated-reports-quickstart-aw/power-bi-paginated-advanced-mode.png)
+
+2. Select the top **Static** bar in the **Row Groups**. You see that the Company Name cell in the matrix is selected.
+
+   ![Select static group](media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png)
+
+3. In the **Properties** pane, you're looking at the properties for **Tablix Member**. Set **KeepWithGroup** to **After** and **RepeatOnNewPage** to **True**.
+
+    ![Set RepeatOnNewPage](media/paginated-reports-quickstart-aw/power-bi-paginated-repeat-on-new-page.png)
+
+4. It's time to run the report and see how it looks now.
+
+5. Select **Run** on the **Home** tab.
+
+6. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see:
+
+ 
 ##  Upload the report to the Power BI service
 
 Now that you've created this paginated report, it's time to upload it to the service.
