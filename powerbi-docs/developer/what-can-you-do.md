@@ -23,7 +23,9 @@ The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) ha
 You can go through the [Embedding startup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
 Choose the solution that is right for you:
+
 * [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
+
 * [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
@@ -38,7 +40,7 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ## Using API automation
 
-Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real-time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
+Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real time. You can also integrate Power BI tiles and reports into apps.
 
 Developers can also build their own data visualizations that can be used in interactive reports and dashboards.
 
