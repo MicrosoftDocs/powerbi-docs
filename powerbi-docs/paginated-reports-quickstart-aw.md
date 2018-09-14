@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a paginated report and upload it to the Power BI service | Microsoft Docs"
-description: In this tutorial, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
+description: In this tutorial, you connect to a sample Azure SQL database, and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 09/13/2018
+ms.date: 09/14/2018
 ms.author: maggies
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
 
-In this tutorial, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
+In this tutorial, you connect to a sample Azure SQL database, and use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
 
 ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
-In this tutorial, you complete these steps:
+Here are the steps you complete in this tutorial:
 
 > [!div class="checklist"]
 > * Create an Azure sample database.
@@ -35,7 +35,7 @@ These are the prerequisites for creating the paginated report:
 
 - Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
 
-- Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab, and remember the user name and password you created in Azure.
+- Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
 These are the prerequisites for uploading your paginated report to the Power BI service:
 
@@ -94,7 +94,7 @@ These are the prerequisites for uploading your paginated report to the Power BI 
 
 1. Select **OK**.
   
-9. In the **Choose a connection to a data source** page, select the data source connection you just created (you see "(in this Report)") under the name > **Next**.  
+9. In the **Choose a connection to a data source** page, you see "(in this Report)" under the data source connection you just created. Select that data source  > **Next**.  
 
     ![My Azure data source](media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png)
 
@@ -151,7 +151,7 @@ Let's pause for a moment to look at the results of the wizard.
 
 1. In the Report Data pane, you see the embedded Azure data source and the embedded dataset based on it, both of which you created. 
 
-2. The design surface is about six inches wide. On the design surface, you see the matrix, displaying column headings and placeholder values. The matrix has six columns and appears to be only five rows tall. 
+2. The design surface is about 6 inches wide. On the design surface, you see the matrix, displaying column headings and placeholder values. The matrix has six columns and appears to be only five rows tall. 
 
 3. Order Qty, Unit Price, and Line Total are all sums, and each row group has a subtotal. 
 
@@ -177,11 +177,11 @@ To see the actual values, you need to run the report.
 
    ![Run the report](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
-2. Select **Print Layout**. This is how the report will look when you print it. Note that Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
+2. Select **Print Layout**. The report will look like this when you print it. Note that Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
 
-## Design the report
+## Format the report
 
-Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks. You can run the report after every step, if you want, to see how it's coming along.
+Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks. You can run the report after every step, if you want to see how it's coming along.
 
 - On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
 
@@ -225,11 +225,11 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 ### Make the table wider  
 
-Now you can the matrix big enough to fill the width of the page, and make the text columns wider so the names don't scroll as much. 
+Now you can make the matrix wide enough to fill the width of the page, and make the text columns wider so the names don't scroll as much. 
  
-2. Select the matrix, then select the Company Name column.
+1. Select the matrix, then select the Company Name column.
 
-3. Hover over the gray bar at the top of the matrix at the right edge of the Company Name column, and drag to the right, until the column ends at 1 3/8 inches. 
+3. Hover over the gray bar at the top of the matrix at the right edge of the Company Name column. Drag to the right, until the column ends at 1 3/8 inches. 
 
     ![Drag the right edge of the column](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png)
 
@@ -269,7 +269,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
     ![Set RepeatOnNewPage](media/paginated-reports-quickstart-aw/power-bi-paginated-repeat-on-new-page.png)
 
-4. It's time to run the report and see how it looks now.
+    It's time to run the report and see how it looks now.
 
 5. Select **Run** on the **Home** tab.
 
