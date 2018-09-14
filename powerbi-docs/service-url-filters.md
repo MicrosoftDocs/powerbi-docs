@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/09/2018
+ms.date: 09/14/2018
 LocalizationGroup: Reports
 ---
 
