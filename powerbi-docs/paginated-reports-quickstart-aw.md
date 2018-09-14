@@ -16,6 +16,17 @@ ms.author: maggies
 
 In this tutorial, you connect to a sample Azure SQL database and use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
 
+![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
+
+In this tutorial, you complete these steps:
+
+> [!div class="checklist"]
+> * Create an Azure sample database.
+> * Create a matrix in Report Builder with the help of a wizard.
+> * Format the report with title, page numbers, and column headings on each page.
+> * Format the currency.
+> * Upload the report to the Power BI service.
+
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
  
 ## Prerequisites  
@@ -29,7 +40,7 @@ These are the prerequisites for creating the paginated report:
 These are the prerequisites for uploading your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
-- Your **My Workspace** or another app workspace on the service needs to be in a [Power BI Premium capacity](service-premium.md). Look for the diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- Your need an app workspace on the service in a [Power BI Premium capacity](service-premium.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
 
 ## Create the matrix with a wizard
   
@@ -170,7 +181,7 @@ To see the actual values, you need to run the report.
 
 ## Design the report
 
-Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks.
+Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks. You can run the report after every step, if you want, to see how it's coming along.
 
 - On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
 
@@ -196,6 +207,21 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
   
 ### Add a page number
 
+You noticed the report has a date and time stamp in the footer. You can add a page number to the footer, too.
+
+1. At the bottom of the design surface, you see [&ExecutionTime] on the right in the footer. 
+
+2. In the Report Data pane, expand the Built-in Fields folder, and drag **Page Number** to the left side of the footer, at the same height as [&ExecutionTime].
+
+3. Drag the right side of the [&PageNumber] box to make it square.
+
+4. On the **Insert** tab, select **Text Box**.
+
+5. Click to the right of [&PageNumber], type "of", then make the text box square.
+
+6. Drag **Overall Total Pages** to the footer, to the right of "of", then drag its right side to make it square, too.
+
+    ![Drag page numbers](media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png)
 
 ### Make the table wider  
 
@@ -247,25 +273,55 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 5. Select **Run** on the **Home** tab.
 
-6. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see:
-
+6. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
  
-##  Upload the report to the Power BI service
+    ![Finished page](media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png)
 
-Now that you've created this paginated report, it's time to upload it to the service.
+7. Save the report to your computer.
+ 
+##  Upload the report to the service
 
-1. In the Power BI service (http://app.powerbi.com), go to the workspace. It needs to have a diamond icon next to the name to show that it's in a Premium capacity.
+Now that you've created this paginated report, it's time to upload it to the Power BI service.
+
+1. In the Power BI service (http://app.powerbi.com) in the left navigation, select **Workspaces** > **Create app workspace**.
+
+2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
+
+3. Select the arrow next to **Advanced** and turn **Dedicated capacity** on. 
+
+    ![Create workspace in Premium capacity](media/paginated-reports-quickstart-aw/power-bi-paginated-create-workspace-premium-capacity.png)
+
+    If you can't turn it on, you need to ask your Power BI admin to give you permission to add the workspace to the dedicated Premium capacity.
+
+4. Choose an **available dedicated capacity for this workspace**, if necessary > **Save**.
     
-    ![Diamond Premium icon](media/paginated-reports-quickstart-aw/power-bi-paginated-my-workspace-premium.png)
+    ![Diamond Premium icon](media/paginated-reports-quickstart-aw/power-bi-paginated-diamond-icon.png)
 
     If the workspace isn't in a Premium capacity, when you try to upload your report you see the message, "Unable to upload paginated report." Contact your Power BI administrator to move the workspace.
 
-1. Select **Get Data**.
+1. In your new workspace, select **Get Data**.
+
 2. In the **Files** box > **Get**.
+
 3. Select **Local File**, navigate to where you saved the file > **Open**.
-   Power BI imports your file.
 
+   Power BI imports your file, and you see it under **Reports** on the App list page.
 
+    ![Report in App list](media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png)
+
+4. Select the report to view it.
+
+5. If you get an error, you may need to re-enter your credentials. Select the **Manage** icon.
+
+    ![Manage your report](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
+
+6. Select **Edit credentials** and enter the credentials you used in Azure when you created the Azure database.
+
+    ![Edit report credentials](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
+
+7. Now you can view your paginated report in the the Power BI service.
+
+    ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
 ## Next steps
 
