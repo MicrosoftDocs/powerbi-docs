@@ -122,11 +122,11 @@ A Power BI URL filter can include numbers in the following formats.
 
 Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00). What that means is that when you specify a date as YYYY-MM-DD, Power BI interprets it as YYYY-MM-DDT00:00:00.
 
-Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3rd 2018 or start with August 4th 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results will include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
+Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3rd 2018 or start with August 4th 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
 
 ## Special characters in URL filters
 
-Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with (**_x**), then the 4-digit **Unicode**, and followed by another underscore. If the Unicode is fewer than 4 characters, you'll need to pad it with zeroes. Here are some examples.
+Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with and underscore and an X (**_x**), then the 4-digit **Unicode**, and followed by another underscore. If the Unicode is fewer than 4 characters, you need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
@@ -156,9 +156,9 @@ Publish the report to Power BI service and then use the URL query string to filt
 
 ## Pin a tile from a filtered report
 
-Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard.  The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
+Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard.  The tile on the dashboard displays the filtered data and selecting that dashboard tile opens the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile doesn't match the data displayed in the report visualization.
 
-This will be helpful when you want to see different results; filtered on the dashboard and unfiltered in the report.
+This is helpful when you want to see different results; filtered on the dashboard and unfiltered in the report.
 
 ## Considerations and troubleshooting
 

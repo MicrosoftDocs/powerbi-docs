@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ---
 # Create reports optimized for the Power BI phone apps
-You can improve the experience of viewing your reports on a phone in the mobile apps by creating a version of the report specifically for the phone. In Power BI Desktop or in the Power BI service, you adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
+You can improve the experience of viewing your reports on a phone in the mobile apps by creating a version of the report specifically for the phone. In Power BI Desktop and in the Power BI service, you adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the phone report. Your report readers can see them and filter the report with them.
 
 ![Optimized report on a phone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

@@ -20,9 +20,9 @@ Because the Power BI Windows app is integrated into Azure Active Directory, you 
 
 SSO is enabled only for Windows devices managed by Windows Azure Active Directory. 
 
-To simplify the sign-in process, when you install the app for the first time, the app automatically tries to authenticate you to the Power BI service using SSO. Only if this process doesn't succeed does the app ask you to provide your credentials for Power BI.  
+To simplify the sign-in process, when you install the app for the first time the app automatically tries to authenticate you to the Power BI service using SSO. Only if this process doesn't succeed does the app ask you to provide your credentials for Power BI.  
 
-If you're already using the Power BI mobile app for Windows, when you upgrade to the new version of the app, you can also use SSO. Sign out of the app, close it, and re-open it. When the app re-opens the app, it automatically tries to use your current Windows credentials to authenticate against the Power BI service. 
+If you're already using the Power BI mobile app for Windows, when you upgrade to the new version of the app you can also use SSO. Sign out of the app, close it, and reopen it. When the app reopens, it automatically tries to use your current Windows credentials to authenticate against the Power BI service. 
 
 If you don’t want to use your current Windows active session credentials to sign in to Power BI, just go to **Settings**, sign out, and sign in with different credentials. 
 

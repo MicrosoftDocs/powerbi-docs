@@ -35,8 +35,8 @@ Read the Power BI [blog post about dashboard comments](https://powerbi.microsoft
 
 ### Single Sign-On (Windows)
 
-Single Sign-On is one of the most requested capabilities for Power BI mobile for Windows. 
-Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. 
+Single Sign-On (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
+Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. Read more about [SSO and the Windows mobile apps](mobile-windows-10-app-single-sign-on-sso.md).
 
 
 ## July 2018

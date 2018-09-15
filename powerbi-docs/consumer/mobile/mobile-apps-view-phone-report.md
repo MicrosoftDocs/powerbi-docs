@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
 
 ---
@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |
 | iPhones |Android phones |
 
-When you create a Power BI report in Power BI Desktop, you can also [create a version of that report optimized for viewing](../../desktop-create-phone-report.md) in the Power BI app on a phone.
+When you create a Power BI report in Power BI Desktop or in the Power BI service, you can also [create a version of that report optimized for viewing](../../desktop-create-phone-report.md) in the Power BI app on a phone.
 
 Then, when you open a Power BI report on a phone, Power BI detects if the report has been optimized for phones and automatically opens the optimized report in portrait view.
 
