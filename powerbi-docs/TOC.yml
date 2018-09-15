@@ -863,8 +863,6 @@
     items: 
     - name: All mobile apps
       items: 
-      - name: "View on-premises reports in the mobile apps"
-        href: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: "Share a dashboard from the Power BI mobile apps"
         href: consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
@@ -879,18 +877,12 @@
         href: consumer/mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: consumer/mobile/mobile-apps-geographic-filtering.md
-      - name: "Scan a Power BI QR code from your phone"
-        href: consumer/mobile/mobile-apps-qr-code.md
       - name: "Dashboards for mobile Power BI"
         href: consumer/mobile/mobile-apps-view-dashboard.md
-      - name: "View reports optimized for your phone"
-        href: consumer/mobile/mobile-apps-view-phone-report.md
       - name: "Reports in the mobile apps"
         href: consumer/mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Using OAuth to connect to Reporting Services"
         href: consumer/mobile/mobile-oauth-ssrs.md
-      - name: "Configure mobile apps with Intune"
-        href: service-admin-mobile-intune.md
     - name: Android devices
       items: 
       - name: "Get started with the Android app"
@@ -911,18 +903,26 @@
         href: consumer/mobile/mobile-apps-scan-barcode-iphone.md
     - name: iOS and Android
       items: 
+      - name: "View on-premises reports in the mobile apps"
+        href: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "View reports optimized for your phone"
+        href: consumer/mobile/mobile-apps-view-phone-report.md
+      - name: "Scan a Power BI QR code from your phone"
+        href: consumer/mobile/mobile-apps-qr-code.md
       - name: "Annotate and share in the mobile apps"
         href: consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
     - name: Power BI app for Windows 10 devices
       items: 
-      - name: "Get started with the mobile app for Windows 10"
+      - name: "Get started with the Windows 10 app"
         href: consumer/mobile/mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: consumer/mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: "View Reporting Services mobile reports and KPIs on the app for Windows 10"
+      - name: "View Reporting Services mobile reports and KPIs"
         href: consumer/mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
       - name: "View Power BI on Surface Hub"
         href: consumer/mobile/mobile-windows-10-app-presentation-mode.md
+      - name: "Single Sign-On in the Windows app"
+        href: consumer/mobile/mobile-windows-10-app-single-sign-on-sso.md
   - name: Resources
     items: 
     - name: "Supported languages in the mobile apps"

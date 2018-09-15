@@ -101,7 +101,7 @@ Power BI supports many operators in addition to **and**. The table below lists t
 |**gt**     | greater than        |no | yes | yes  | product/price gt 20
 |**le**     |   less than or equal      | no | yes | yes  | product/price le 100
 |**lt**     |  less than       | no | yes | yes |  product/price lt 20
-|**in****     |  including       | no | no |  yes | Student/Age in (27, 29)
+|**in****     |  including       | yes | yes |  yes | Student/Age in (27, 29)
 
 
 \** When using **in**, the values to the right of **in** can be a comma-separated list enclosed in parentheses, or a single expression that returns a collection.
@@ -126,14 +126,14 @@ Why does this distinction matter? Let's say you create a query string parameter 
 
 ## Special characters in URL filters
 
-Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* (**_x**) and the 4-digit **Unicode**. If the Unicode is fewer than 4 characters, you'll need to pad it with zeroes. Here are some examples.
+Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with (**_x**), then the 4-digit **Unicode**, and followed by another underscore. If the Unicode is fewer than 4 characters, you'll need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
-|**Table Name**     | Space: 0x20        |  Table_x0020_Name       |
-|**Column**@**Number**     |   @: 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [:0x005B ]:0x0050       |  _x0058_Column_x0050       |
-|**Column+Plus**     | +:0x2B        |  Column_x002B_Plus       |
+|**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
+|**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
+|**[Column]**     |  [ is 0x005B ] is 0x0050       |  _x0058_Column_x0050       |
+|**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
 ![table visual rendering special characters](media/service-url-filters/power-bi-special-characters1.png)
