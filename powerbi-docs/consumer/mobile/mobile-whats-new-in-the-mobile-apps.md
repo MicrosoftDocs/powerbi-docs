@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
 
 ---
@@ -18,6 +18,26 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## September 2018
+
+### Phone report editing in the browser (all devices)
+
+Now you can create a phone report layout for a report that is already published in the Power BI service, and not just in Power BI Desktop. You create it in Edit mode in your browser.
+
+### Dashboard commenting (iOS and Android) 
+
+You can add comments directly to dashboards and specific tiles to discuss your data, and anyone viewing the dashboard will see your comments. You can also pull others in your organization into the conversation by @mentioning them. Those you’ve @mentioned receive a push notification with your message to their mobile phone.
+
+Currently available for iOS and Android devices. Windows support coming soon.
+
+Read the Power BI [blog post about dashboard comments](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### Single Sign-On (Windows)
+
+Single Sign-On is one of the most requested capabilities for Power BI mobile for Windows. 
+Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. 
+
 
 ## July 2018
 
