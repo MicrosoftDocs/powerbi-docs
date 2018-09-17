@@ -488,7 +488,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 1. In Visual Studio code, in the **capabilities.json** file, from inside the **dataRoles** array, remove all content (lines 3-12).
 
-2. Inside the **dataRoles** array, insert the following code.
+2. Inside the **dataRoles** array, insert the following code.84
 
     ```json
     {
@@ -499,4 +499,8 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     ```
     The **dataRoles** array now defines a single data role of type **measure**, that is named measure, and will be displayed as **Measure** This data role will allow passing in either a measure field, or a field that is summarized.
 
+    The **dataRoles** array now defines a single data role of type measure, that is named measure, and will be displayed as Measure This data role will allow passing in either a measure field, or a field that is summarized.
 
+3. From inside the dataViewMappings array, remove all content.
+
+    Inside the **dataViewMappings** array, insert the following content.
