@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 09/17/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -85,9 +85,11 @@ Here is a partial list of differences you may use with each.
 * You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
 * You need to have an Azure subscription in your organizational directory.
 
-### How can I monitor capacity consumption?
+### How can I monitor Power BI Embedded capacity consumption?
 
-Monitoring through Azure is on the near-term roadmap. The Azure resource, Power BI Embedded, will include monitoring KPIs that will show health, and usage.
+You can monitor **Power BI Embedded** through [Azure diagnostics logging](azure-pbie-diag-logs.md).
+
+You can monitor **Power BI Embedded capacities** in your organization by downloading the [metric app](../service-admin-premium-monitor-capacity.md#monitor-power-bi-embedded-capacity) from Power BI.
 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
