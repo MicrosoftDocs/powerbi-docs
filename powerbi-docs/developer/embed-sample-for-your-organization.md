@@ -13,6 +13,7 @@ manager: kfile
 ---
 
 # Tutorial: Embed a Power BI report, dashboard or tile into an application for your organization
+
 This tutorial demonstrates how to integrate a report into an application using the **Power BI .NET SDK** along with the **Power BI JavaScript API** when embedding **Power BI** into an application for your organization. With **Power BI**, you can embed reports, dashboards, or tiles into an application using **user owns data**. **User owns data** lets your application extend the Power BI service.
 
 ![View application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
@@ -23,6 +24,7 @@ In this tutorial, you learn how to:
 >* Embed a Power BI report into an application.
 
 ## Prerequisites
+
 To get started, you need a **Power BI Pro** account and a **Microsoft Azure** subscription.
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
@@ -34,9 +36,10 @@ To get started, you need a **Power BI Pro** account and a **Microsoft Azure** su
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment is set up to allow for embedding. As part of the setup, you need to do the following.
 
-You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
 However, if you choose to set up the environment manually, you can continue below.
+
 ### Register an application in Azure Active Directory (Azure AD)
 
 You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. This allows you to establish an identity for your application and specify permissions to Power BI REST resources.
@@ -225,17 +228,21 @@ Follow these steps to start embedding your content using a sample application.
     ![View application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## Embed your content within your application
+
 Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
 To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory (AD) authorization **access token** to get a report. Then, you load the report using the same **access token**. The **Power BI Rest API** provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### Get an access token from Azure AD
+
 Within your application, you first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ### Get a report
+
 To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation which gets a list of **Power BI reports**. From the list of reports, you can get a report id.
 
 ### Get reports using an access token
+
 The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports.
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
@@ -299,6 +306,7 @@ public class PBIReport
 ```
 
 #### Get reports using the .NET SDK
+
 You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly. Here is a code sample of how to list reports.
 
 ```csharp
@@ -321,6 +329,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### Load a report using JavaScript
+
 You can use JavaScript to load a report into a div element on your web page.
 
 Here is a code sample of how to retrieve a report from a given workspace.
@@ -409,6 +418,7 @@ function updateEmbedReport() {
 Now that you've completed developing your application, it is time to back your app workspace with dedicated capacity.
 
 ### Create a dedicated capacity
+
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity using [Power BI Premium](../service-premium.md).
 
 The following table lists the available Power BI Premium SKUs available in [Office 365](../service-admin-premium-purchase.md).
@@ -449,6 +459,7 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off for a tenant. Power BI admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. You can do this through the [Power BI admin portal](../service-admin-portal.md).
 
 ## Next steps
+
 In this tutorial, you've learned how to embed Power BI content into an application using your **Power BI organization account**. You can now try to embed Power BI content into an application using apps.  You can also try to embed Power BI content for your customers.
 
 > [!div class="nextstepaction"]
