@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/17/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -240,7 +240,7 @@ The following model replicates *Month*, *Quarter*, *Semester*, and *Year* in the
 
 The following table shows the entries set in the **Manage aggregations** dialog for the **Sales Agg** table. The GroupBy entries where **Date** is the detail table are mandatory to hit aggregations for queries that group by the Date attributes. As in the previous example, the GroupBy entries for CustomerKey and ProductSubcategoryKey do not affect aggregation hits because of the presence of relationships (again with the exception of DISTINCTCOUNT).
 
-![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
+![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_04.jpg)
 
 > Note:
 > This model requires that the **Date** table be in DirectQuery mode to fill in the manage aggregations dialog, because it is a detail table. This is a Preview limitation that we intend to remove for General Availability.
