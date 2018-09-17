@@ -64,11 +64,11 @@ You need to enable additional permissions for your application in addition to wh
 ### Use the Azure Active Directory portal
 
 1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
-   
+
     ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
 2. Select **Settings**, then under **API Access** select **Required permissions**.
-   
+
     ![Required Permissions](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
