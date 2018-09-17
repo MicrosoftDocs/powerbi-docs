@@ -52,7 +52,7 @@ Developers can also build their own data visualizations that can be used in inte
 
 Go [here](overview-of-power-bi-rest-api.md) to see some of the things you can do with the Power BI APIs.
 
-## Next steps
+## Next steps 
 
 [Embedding with Power BI](embedding.md)  
 
