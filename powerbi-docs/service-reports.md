@@ -23,7 +23,7 @@ This report has 3 pages (or tabs) and we're currently viewing the Store Sales Ov
 
 If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](service-basic-concepts.md)
 
-Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](mobile-reports-in-the-mobile-apps.md).
+Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](consumer/mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.

@@ -241,7 +241,7 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 
 ### Interact with and share R visuals
 
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
+Users in the organization can interact with and share visuals created with R scripts. [Learn more](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.

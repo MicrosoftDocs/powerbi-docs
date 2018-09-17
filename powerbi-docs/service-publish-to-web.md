@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2018
+ms.date: 09/13/2018
 LocalizationGroup: Share your work
 ---
 
@@ -56,7 +56,7 @@ The following steps describe how to use **Publish to web**.
 
 When you embed content within a blog post, you typically need to fit it within a specific size of the screen.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given area of the iFrame, so you also need to set an appropriate View Mode when editing the report.
 
-The following table provides guidance about the View Mode, and how it will appear when embedded.
+The following table provides guidance about the View Mode, and how it will appear when embedded. 
 
 | View Mode | How it looks when embedded |
 | --- | --- |

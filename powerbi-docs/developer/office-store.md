@@ -27,7 +27,7 @@ Once you're done coding and testing your custom visual and have packaged it into
 | --- | --- | --- |
 | Pbiviz package contains all the required metadata |Yes |Visual name<br>Display name<br>GUID<br>Version<br>Description<br>Author name and email |
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like.<br>The sample .pbix report file must work offline, without any external connection |
-| Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height). **Important!** Please review the [short guide](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) carefully before submitting the Icon. |
+| Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height). **Important!** Please review the [short guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) carefully before submitting the Icon. |
 | Screenshots |Yes |You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366px (width) x 768px (height). It can be no larger than 1024kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.* |
 | Support download link |Yes |Provide the URL to support customers who have issues with your visual. The format of your URL should include https:// or http://. |
 | Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. The format of your link should include https:// or http://. |
@@ -125,7 +125,7 @@ Once your visual is created, you can optionally get your visual certified. This 
 
 ## Next steps
 [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Visualizations in Power BI](../power-bi-report-visualizations.md)  
+[Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
 [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
 

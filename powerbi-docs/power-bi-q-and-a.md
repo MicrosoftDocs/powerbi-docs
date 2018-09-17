@@ -67,7 +67,7 @@ For information about keywords that Q&A recognizes, see [Tips for asking questio
 [Overview: How to use Q&A in Power BI dashboards and reports](power-bi-tutorial-q-and-a.md):
 Step by step instructions for using Q&A and an overview of how it all works.
 
-[Microsoft Power BI mobile app](mobile-apps-ios-qna.md)
+[Microsoft Power BI mobile app](consumer/mobile/mobile-apps-ios-qna.md)
 For iOS on iPads, iPhones, and iPod Touch devices.
 
 [Microsoft Power BI Embedded](developer/qanda.md)

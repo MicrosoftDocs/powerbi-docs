@@ -74,7 +74,7 @@ Here is a partial list of differences you may use with each.
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase  |Azure portal |Office |Office |
-|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
+|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
@@ -128,7 +128,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager (ARM) APIs you can 
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
+In order to [promote your solution to production](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -153,11 +153,11 @@ The authentication and authorization of the application users will be implemente
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
+To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
 
-It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
+It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
 The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
 
 ```csharp
@@ -295,7 +295,7 @@ You can learn how to edit AAD registered applications [here](https://docs.micros
 
 ### How can I edit my Power BI user profile or data?
 
-You can learn how to edit your Power BI data [here](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+You can learn how to edit your Power BI data [here](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 

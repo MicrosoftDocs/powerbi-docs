@@ -100,13 +100,13 @@ The backend of the application may need to refresh the auth token before calling
 
 If you are using Power BI Embedded and utilizing Azure AD Direct Authentication, and you are receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication has been turned off as of 6/14/2018 by default.
 
-There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+There is a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this only as a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn’t have more than 1 application as a result).
 
@@ -270,7 +270,7 @@ This is because the redirect URL specified for the web-server application is dif
 
 If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
 
-If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
