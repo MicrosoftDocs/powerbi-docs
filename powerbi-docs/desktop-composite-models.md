@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -160,12 +160,13 @@ Additionally, the use of **many-to-many** relationships means that separate quer
 
 There are a few limitations for this release of **composite models**.
 
-The following multidimensional sources cannot be used with **composite models**:
+The following Live Connect (multidimensional) sources cannot be used with **composite models**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI datasets
+* Azure Analysis Services
 
 When connecting to those multidimensional sources using DirectQuery, you cannot also connect to another DirectQuery source, nor combine with imported data.
 
