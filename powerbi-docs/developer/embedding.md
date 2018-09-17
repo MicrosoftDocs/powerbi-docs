@@ -13,9 +13,9 @@ ms.date: 07/31/2018
 
 # Embedding with Power BI
 
-The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This means you have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
+The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This feature means you have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
-You can go through the [Onboarding experience tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
 Choose the solution that is right for you:
 
@@ -44,7 +44,7 @@ For embedding for your organization, see the following:
 
 Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-You can go through the [Onboarding experience tool](https://aka.ms/embedsetup/UserOwnsData) to embed for your organization to quickly get started and download a sample application that walks you through integrating a report for your organization.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to embed for your organization to quickly get started and download a sample application that walks you through integrating a report for your organization.
 
 ## Embedding for your customers
 
