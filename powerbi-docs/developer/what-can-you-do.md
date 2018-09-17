@@ -46,7 +46,7 @@ Go [here](https://microsoft.github.io/PowerBI-visuals/docs/overview/) to start l
 
 Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real time. You can also integrate Power BI tiles and reports into apps.
 
-Developers can also build their own data visualizations that can be used in interactive reports and dashboards.
+Some other things you can do with the Power BI APIs are extend an existing business workflow to push key data into a Power BI dashboard, authenticate to Power BI, and create a custom visual for Power BI.
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
