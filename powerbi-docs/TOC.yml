@@ -929,6 +929,8 @@
       href: consumer/mobile/mobile-apps-supported-languages.md
 - name: Power BI for developers
   items:
+  - name: "What can developers do with Power BI"
+    href: developer/what-can-you-do.md
   - name: Embedded Analytics
     items:
     - name: Overview
@@ -1029,7 +1031,7 @@
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
     - name: Tutorials
       items:
-      - name: "Developing a Power BI Custom Visual"
+      - name: "Developing a Power BI custom visual"
         href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
