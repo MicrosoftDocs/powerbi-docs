@@ -1007,7 +1007,7 @@
       items:
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/en-us/developers/
-      - name: "Embedding setup tool for embedding"
+      - name: "Embedding setup tool"
         href: https://aka.ms/embedsetup
       - name: "JavaScript Playground Sample"
         href: https://go.microsoft.com/fwlink/?linkid=848279
