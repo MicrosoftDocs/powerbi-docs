@@ -48,7 +48,7 @@ The Power BI Developer samples include items for embedding dashboards, reports a
 
 The following are tools you can use to aid in your development of Power BI items.
 
-You can go through the [Embedding startup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application on how to embed Power BI content.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application on how to embed Power BI content.
 
 Choose the solution that is right for you:
 

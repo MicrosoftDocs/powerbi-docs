@@ -225,13 +225,13 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Could not render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
-## Embedding startup tool for embedding
+## Embedding setup tool for embedding
 
-You can go through the [Embedding startup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
 ### Prerequisites
 
-Verify that you have all the proper prerequisites before using the Embedding startup tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
+Verify that you have all the proper prerequisites before using the Embedding setup tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
@@ -240,7 +240,7 @@ Verify that you have all the proper prerequisites before using the Embedding sta
 
 ### Common Issues
 
-Some common issues you might encounter while testing with the Embedding startup tool are:
+Some common issues you might encounter while testing with the Embedding setup tool are:
 
 #### Using the Embed for your customers sample application
 

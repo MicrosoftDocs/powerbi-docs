@@ -36,7 +36,7 @@ To get started, you need a **Power BI Pro** account and a **Microsoft Azure** su
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment is set up to allow for embedding. As part of the setup, you need to do the following.
 
-You can go through the [Embedding startup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
 However, if you choose to set up the environment manually, you can continue below.
 

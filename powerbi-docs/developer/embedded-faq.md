@@ -272,11 +272,11 @@ Some of the features are:
 * New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
-## Embedding startup tool for embedding
+## Embedding setup tool for embedding
 
-### What is the Embedding startup tool?
+### What is the Embedding setup tool?
 
-The [Embedding startup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
