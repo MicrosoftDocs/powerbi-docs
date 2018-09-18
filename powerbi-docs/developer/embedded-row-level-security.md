@@ -2,16 +2,17 @@
 title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/22/2018
-ms.author: maghan
-
+ms.date: 09/18/2018
 ---
+
 # Use row-level security with Power BI embedded content
+
 Row level security (RLS) can be used to restrict user access to data within dashboards, tiles, reports, and datasets. Multiple, different users can work with those same artifacts all while seeing different data. Embedding supports RLS.
 
 If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You will need to configure the embed token to account for the user and role. Read on to learn how to do this.
@@ -32,6 +33,7 @@ For the rest of this article, we’ll provide an example of authoring RLS, and t
 ![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## Adding roles with Power BI Desktop
+
 Our Retail Analysis sample shows sales for all the stores in a retail chain. Without RLS, no matter which district manager signs in and views the report, they’ll see the same data. Senior management has determined each district manager should only see the sales for the stores they manage, and to do this, we can use RLS.
 
 RLS is authored in Power BI Desktop. When the dataset and report are opened, we can switch to diagram view to see the schema:
@@ -52,38 +54,39 @@ Based on this schema, if we apply a filter to the **District Manager** column in
 Here's how:
 
 1. On the **Modeling** tab, select **Manage Roles**.
-   
+
     ![Modeling tab within Power BI Desktop](media/embedded-row-level-security/powerbi-embedded-manage-roles.png)
 2. Create a new role called **Manager**.
-   
+
     ![Create new role](media/embedded-row-level-security/powerbi-embedded-new-role.png)
 3. In the **District** table, enter the following DAX expression: **[District Manager] = USERNAME()**.
-   
+
     ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you just created, along with **Other users**. Enter **AndrewMa** for the user.
-   
+
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
-   
+
     The reports will now show data as if you were signed in as **AndrewMa**.
 
 Applying the filter, the way we did here, will filter down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables will not be filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
 ## Applying user and role to an embed token
+
 Now that you have your Power BI Desktop roles configured, there is some work needed in your application to take advantage of the roles.
 
 Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
 The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you will need to pass the following as part of the identity.
 
-* **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed.
+* **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed. Your username can be created with *ASCII* characters.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
-* **dataset (mandatory)** – The dataset that is applicable for the artifact you are embedding. 
+* **dataset (mandatory)** – The dataset that is applicable for the artifact you are embedding.
 
-You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**. 
+You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**.
 
 For example, you could change the [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) sample. *Home\HomeController.cs line 76 and 77* could be updated from:
 
-```
+```csharp
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
 
@@ -92,7 +95,7 @@ var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, repo
 
 to
 
-```
+```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
 
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
@@ -100,7 +103,7 @@ var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "r
 
 If you are calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a user name, list of string roles and list of string datasets, e.g.:
 
-```
+```json
 {
     "accessLevel": "View",
     "identities": [
@@ -116,6 +119,7 @@ If you are calling the REST API, the updated API now accepts an additional JSON 
 Now, with all the pieces together, when someone logs into your application to view this artifact, they’ll only be able to see the data that they are allowed to see, as defined by our row-level security.
 
 ## Working with Analysis Services live connections
+
 Row-level security can be used with Analysis Services live connections for on-premises servers. There are a few specific concepts that you should understand when using this type of connection.
 
 The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
@@ -137,13 +141,11 @@ CustomData feature is part of our token generation functionality for the followi
 
 > [!NOTE]
 > The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
->
->
 
 **CustomData SDK Additions**
 
 CustomData string property was added to our effective identity in the token generation scenario.
-        
+
         [JsonProperty(PropertyName = "customData")]
         public string CustomData { get; set; }
 
@@ -155,7 +157,7 @@ The identity can be created with custom data using the following call:
 
 If you are calling the REST API, you can add custom data inside each identity, e.g.:
 
-```
+```json
 {
     "accessLevel": "View",
     "identities": [
@@ -170,10 +172,11 @@ If you are calling the REST API, you can add custom data inside each identity, e
 ```
 
 ## Considerations and limitations
+
 * Assignment of users to roles within the Power BI service does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
 * Analysis Services live connections are supported for on-premises servers.
-* Azure Analysis Services live connections support filtering by roles, but not dynamic by username. Dynamic filtering can be done using CustomData.
+* Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment will not occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
