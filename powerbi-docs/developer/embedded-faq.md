@@ -87,9 +87,11 @@ Here is a partial list of differences you may use with each.
 
 ### How can I monitor Power BI Embedded capacity consumption?
 
-You can monitor **Power BI Embedded** through [Azure diagnostic logging](azure-pbie-diag-logs.md).
+You can monitor **Power BI Embedded capacities**  through the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded-settings).
 
-You can monitor **Power BI Embedded capacities** in your organization by downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) from Power BI.
+You can monitor **Power BI Embedded capacities** in your organization by downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+
+You can monitor **Power BI Embedded capacities** through [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
