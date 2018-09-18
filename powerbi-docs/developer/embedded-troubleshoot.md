@@ -258,7 +258,8 @@ The following error message appears when running the sample app:
 
 This error occurs because the only value that is not being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
 
-Error - AADSTS50079: The user is required to use multi-factor authentication.
+If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+
     Need to use an AAD account that does not have MFA enabled.
 
 #### Using the Embed for your organization sample application
@@ -274,6 +275,10 @@ This is because the redirect URL specified for the web-server application is dif
 If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
 
 If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
