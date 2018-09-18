@@ -30,7 +30,7 @@ Choose the solution that is right for you:
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
-Go [here](embedding.md) to learn more about embedding with Power BI.
+To learn more about embedding with Power BI, see [Embedding with Power BI](embedding.md).
 
 ## Developing custom visuals
 
@@ -40,7 +40,7 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-Go [here](https://microsoft.github.io/PowerBI-visuals/docs/overview/) to start learning more about custom visual development.
+To start learning more about custom visual development, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)
 
 ## Using API automation
 
@@ -50,7 +50,7 @@ Developers can also build their own data visualizations that can be used in inte
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
-Go [here](overview-of-power-bi-rest-api.md) to see some of the things you can do with the Power BI APIs.
+To see some of the things you can do with the Power BI APIs, see [Overview of Power BI REST APIs](overview-of-power-bi-rest-api.md) 
 
 ## Next steps
 
