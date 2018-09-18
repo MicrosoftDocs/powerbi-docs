@@ -79,18 +79,18 @@ A fiddler capture may be required to investigate further. There could be several
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## Authentication
 
@@ -225,7 +225,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Could not render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
-## Embedding setup tool for embedding
+## Embedding setup tool
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
@@ -257,6 +257,9 @@ The following error message appears when running the sample app:
     Password is empty. Please fill password of Power BI username in web.config.
 
 This error occurs because the only value that is not being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
+
+Error - AADSTS50079: The user is required to use multi-factor authentication.
+    Need to use an AAD account that does not have MFA enabled.
 
 #### Using the Embed for your organization sample application
 
