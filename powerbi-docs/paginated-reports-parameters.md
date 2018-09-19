@@ -8,24 +8,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 09/18/2018
 ms.author: maggies
 ---
 # Create parameters for paginated reports in the Power BI service
 
-In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and your report readers can change the selection.  
+In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values, and your report readers can change the selection.  
+
+The following illustration shows Design view in Report Builder for a report with the parameters **@BuyingGroup**, **@Customer**, **@FromDate** and **@ToDate**. 
   
-Image: Report Builder Parameter Dataset Properties
+![Parameters in Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
  This image from Report Builder shows:  
   
 1.  The report parameters in the Report Data pane.  
   
-2.  The dataset with the parameters.  
+2.  The table with one of the parameters in the dataset.  
   
-3.  The Parameters pane.  
+3.  The Parameters pane. You can customize the layout of parameters in the parameters pane. 
   
-4.  The parameters listed in the Dataset Properties dialog box.  
+4.  The parameters @FromDate and @ToDate have the data type **DateTime**. When viewing the report, you can either type a date in the text box or choose a date in the calendar control. 
+
+5.  One of the parameters in the **Dataset Properties** dialog box.  
 
   
 ## Create or edit a report parameter  
@@ -58,6 +62,6 @@ Image: Report Builder Parameter Dataset Properties
   
 ## Next steps
 
-For in-depth information about parameters in paginated reports, see this article in the SQL Server Reporting Services documentation:
-  
-[Report Parameters (Report Builder and Report Designer)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
+See [View parameters for paginated reports](paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
+
+For in-depth information about parameters in paginated reports, see the [Report Parameters (Report Builder and Report Designer)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer) article in the SQL Server Reporting Services documentation  
