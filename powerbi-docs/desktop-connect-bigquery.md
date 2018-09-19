@@ -36,7 +36,7 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 ## Considerations and Limitations
 There are a few limits and considerations to keep in mind with the Google **BigQuery** connector:
 
-* The Google BigQuery connector is availablle in Power BI Desktop and in the Power BI service. In the Power BI service, the connector can be accessed using the Cloud-to-Cloud connection from Power BI to Google BigQuery.
+* The Google BigQuery connector is available in Power BI Desktop and in the Power BI service. In the Power BI service, the connector can be accessed using the Cloud-to-Cloud connection from Power BI to Google BigQuery.
 
 You can use Power BI with the Google BigQuery **Billing Project**. By default, Power BI uses the first project from the list returned for the user. To customize the behavior of the Billing Project when using it with Power BI, take the following steps:
 
