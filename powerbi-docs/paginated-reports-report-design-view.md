@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 08/28/2018
+ms.date: 09/18/2018
 ms.author: maggies
 ---
 # Getting around in Report Design View for paginated reports in Power BI

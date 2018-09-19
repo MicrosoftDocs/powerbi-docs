@@ -849,6 +849,8 @@
     items: 
     - name: Get around Report Design View
       href: paginated-reports-report-design-view.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
   - name: How to
     items: 
     - name: Create an embedded data source

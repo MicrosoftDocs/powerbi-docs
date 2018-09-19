@@ -1,6 +1,6 @@
 ---
-title: "Paginated reports in Power BI Premium: Frequently asked questions (Preview)"
-description: Paginated reports are reports that can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
+title: "Paginated reports in Power BI: Frequently asked questions (Preview)"
+description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -12,9 +12,9 @@ ms.date: 09/18/2018
 ms.author: maggies
 
 ---
-# What are paginated reports in Power BI Premium? (Preview)
+# Paginated reports in Power BI: Frequently asked questions (Preview)
 
-Paginated reports are reports designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page, and display all the data in a table, for example, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
+This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
 This article answers many of the most common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
 
@@ -51,21 +51,21 @@ Also, the audit logs provide the following events for paginated reports:
 
 ### Can I monitor this workload through the Premium Capacity Monitoring App?
 
-Not yet, but monitoring will be available at public preview for you as a new tab in the existing report with the same relevant details as you have for your Power BI datasets.
+Not yet. Monitoring will be available at public preview as a new tab in the existing report with the same relevant details you have for your Power BI datasets.
 
 ### Why aren’t paginated reports available in the regular Power BI service?
 
-There is a technical blocker for this because of the flexibility that RDL reports provide, and would be problematic allowing them to run in a multi-tenant environment until we have the proper level of code isolation between customers.  We’re actively looking at potential solutions for this.
+There is a technical blocker because of the flexibility that RDL reports provide. It would be problematic allowing them to run in a multi-tenant environment until we have the proper level of code isolation between customers.  We’re actively looking at potential solutions.
 
 ### Do I need a Pro license to create and publish paginated reports?
 
-Yes, you won’t be able to upload reports to the workspace without a Pro license.  You may download and try Report Builder without 
+Yes. You can't upload reports to the workspace without a Pro license. You may download and try Report Builder without the Pro license, but not publish the paginated reports you create. 
 
-### What is I have a paginated report in a workspace and the paginated report workload is turned off?
+### What if I have a paginated report in a workspace and the paginated report workload is turned off?
 
-Your report will be unavailable to view until the workload is turned back on and receive an error message.  You can still delete the report if you’d like from the workspace.
+You can't view your report until the workload is turned back on, and you receive an error message. You can still delete the report from the workspace.
 
-### What is default memory for each of the Premium SKUs supported for paginated reports?
+### What is the default memory for each of the Premium SKUs supported for paginated reports?
 
 | | P1/A4 | P2/A5 | P3/A6 | 
 |---------|---------|---------|---------|
