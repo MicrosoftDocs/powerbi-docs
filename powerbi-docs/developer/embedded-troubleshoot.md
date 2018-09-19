@@ -79,18 +79,18 @@ A fiddler capture may be required to investigate further. There could be several
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## Authentication
 
@@ -225,7 +225,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Could not render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
-## Embedding setup tool for embedding
+## Embedding setup tool
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
@@ -258,6 +258,10 @@ The following error message appears when running the sample app:
 
 This error occurs because the only value that is not being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
 
+If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+
+    Need to use an AAD account that does not have MFA enabled.
+
 #### Using the Embed for your organization sample application
 
 If you are working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
@@ -271,6 +275,10 @@ This is because the redirect URL specified for the web-server application is dif
 If you would like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
 
 If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
