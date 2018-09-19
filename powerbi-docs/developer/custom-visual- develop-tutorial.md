@@ -38,18 +38,6 @@ In this tutorial, you learn how to:
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
-## Sign in to Power BI
-
-1. Navigate to [Power BI](https://powerbi.microsoft.com) and select **Sign In** (located at the top-right corner) of the page.
-
-2. When prompted to update the password, reenter the provided password, and then enter and confirm a new password.
-
-3. Complete the sign-in process.
-
-4. If prompted to stay signed in, click Yes.
-
-5. Leave the Internet Explorer window open.
-
 ## Setting Up the Developer Environment
 
 In addition to the prerequisites, there are a few more tools you need to install.
@@ -68,7 +56,7 @@ In addition to the prerequisites, there are a few more tools you need to install
 
 ### Installing Packages
 
-Now you need to install the pbiviz package.
+Now you need to install the **pbiviz** package.
 
 1. Open Windows PowerShell after the computer has been restarted.
 
@@ -86,7 +74,7 @@ Now you need to install the pbiviz package.
   pbiviz --create-cert
   ```
 
-You should return a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
+  You should return a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
 
   ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -96,31 +84,31 @@ You should return a result that produces a *passphrase*. In this case, the *pass
   pbiviz --install-cert
   ```
 
-4. In the Certificate Import Wizard, ensure that the store location is set to Current User. Then select *Next*.
+3. In the Certificate Import Wizard, ensure that the store location is set to Current User. Then select *Next*.
 
       ![Cert install](media/custom-visual-develop-tutorial/install-cert-powershell.png)
 
-5. At the **File to Import** step, select *Next*.
+4. At the **File to Import** step, select *Next*.
 
-6. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
-   
+5. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
+
       ![Copy passphrase](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-7. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
+6. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
 
       ![All certs in the following store](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-8. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
+7. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
 
       ![Trusted root cert](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-9. To complete the import, click Finish.
+8. To complete the import, click Finish.
 
-10. If you receive a security warning, click Yes.
+9. If you receive a security warning, click Yes.
 
     ![Security warning](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-11. When notified that the import was successful, click OK.
+10. When notified that the import was successful, click OK.
 
     ![Cert import successful](media/custom-visual-develop-tutorial/cert-import-successful.png)
 
@@ -442,8 +430,6 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     At line 14, remove the entire objects element (lines 14-60).
 
-    You will develop the visual formatting options later in this lab.
-
 8. Save the **capabilities.json** file.
 
 9. In PowerShell, start the custom visual.
@@ -564,3 +550,27 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     ```typescript
     .text(dataView.metadata.columns[0].displayName)
     ```
+    ![Replace textLabel](media/custom-visual-develop-tutorial/text-label-replace.png)
+
+4. Save the *visual.ts* file.
+
+5. In **Power BI**, review the visual, which now displays the value and the display name.
+
+You have now configured the data roles, and bound the visual to the dataview.
+
+## Adding formatting options
+
+You are now going to add common properties to the visual.
+
+1. In **Power BI**, select the **Format page**. you should see a message that reads - *Formatting options are unavailable for this visual.*
+
+    ![Formatting paintbrush](media/custom-visual-develop-tutorial/format-paintbrush.png)
+
+2. In **Visual Studio Code**, open the *capabilities.json* file.
+
+3. Before the **dataViewMappings** array, add the **objects** object (after line 8).
+
+    ```json
+    "objects": {},
+    ```
+    ![Add objects](media/custom-visual-develop-tutorial/add-objects.png)
