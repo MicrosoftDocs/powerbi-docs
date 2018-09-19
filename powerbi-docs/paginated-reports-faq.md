@@ -67,9 +67,11 @@ You can't view your report until the workload is turned back on, and you receive
 
 ### What is the default memory for each of the Premium SKUs supported for paginated reports?
 
-| | P1/A4 | P2/A5 | P3/A6 | 
-|---------|---------|---------|---------|
-| Paginated reports | 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum  |
+Default memory in each Premium SKU for paginated reports:
+
+| P1/A4 | P2/A5 | P3/A6 | 
+|---------|---------|---------|
+| 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum  |
  
 ## General
 
@@ -139,7 +141,7 @@ No, e-mail subscriptions are coming later.
 
 ### What features from SSRS will you be supporting in the Power BI service?
 
-Our plan is to provide as close to parity between the two products as possible.  Certain things about SSRS and Power BI may not make sense to try and change to fit existing SSRS patterns, like the different permission models in Power BI, but we will be looking for feedback from customers and partners to make those types of decisions.
+Our plan is to provide as close to parity between the two products as possible.  Certain things about SSRS and Power BI may not make sense to try to change to fit existing SSRS patterns, like the different permission models in Power BI, but we will be looking for feedback from customers and partners to make those types of decisions.
 
 ### Can I run custom code in my report?
 
@@ -177,7 +179,7 @@ Yes, but not until the core set of supported features in the Power BI service ar
 
 We're not currently planning a single authoring tool, but we are looking at ways to potentially distribute the authoring tools together as a single BI suite vs. having individual downloads/branding.
 
-### Is there for paginated reports in the Power BI service?
+### Is there a report viewer control for paginated reports in the Power BI service?
 
 No, a report viewer control isn’t available currently.
 

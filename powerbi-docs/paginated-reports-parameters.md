@@ -19,8 +19,6 @@ The following illustration shows Design view in Report Builder for a report with
   
 ![Parameters in Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
- This image from Report Builder shows:  
-  
 1.  The report parameters in the Report Data pane.  
   
 2.  The table with one of the parameters in the dataset.  
