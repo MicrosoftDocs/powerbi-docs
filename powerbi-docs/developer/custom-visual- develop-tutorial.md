@@ -19,7 +19,7 @@ Along with the visualization framework, we’ve provided our test suite and tool
 
 This tutorial shows you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
 
-In the Power BI Desktop report, the cards will be modified to become Circle Cards.
+In the Power BI Desktop report, the cards are modified to become Circle Cards.
 
   ![Power BI Custom Visual sample output](media/custom-visual-develop-tutorial/circle-cards.png)
 
@@ -337,7 +337,6 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     * All lines of code from the constructor.
     * All lines of code from the update method.
     * All remaining lines within the module, including the parseSettings and enumerateObjectInstances methods.
-    * You will add these methods back later in the tutorial.
 
     Verify that the module code looks like the following.
 
@@ -433,9 +432,9 @@ Now we can explore how to develop the custom visual to show a circle and sample 
          "text-anchor": "middle"
      })
      .style("font-size", fontSizeLabel + "px");
-        ```
+    ```
 
-    This code sets the width and height of the visual, and then initializes the attributes and styles of the visual lelements.
+*This code sets the width and height of the visual, and then initializes the attributes and styles of the visual lelements.*
 
 6. Save the **visual.ts** file.
 
@@ -472,7 +471,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     Notice that the circle and text value scales to fit the available dimension of the visual.
 
-    The update method is called continuously with each resize, and this results in the fluid rescaling of the visual elements.*
+    The update method is called continuously with each resize, and this results in the fluid rescaling of the visual elements.
 
     You have now developed the visual elements.
 
@@ -488,7 +487,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 1. In Visual Studio code, in the **capabilities.json** file, from inside the **dataRoles** array, remove all content (lines 3-12).
 
-2. Inside the **dataRoles** array, insert the following code.84
+2. Inside the **dataRoles** array, insert the following code.
 
     ```json
     {
@@ -497,10 +496,71 @@ Modify the **capabilities.json** file to define the data role and data view mapp
      "kind": "Measure"
     }
     ```
-    The **dataRoles** array now defines a single data role of type **measure**, that is named measure, and will be displayed as **Measure** This data role will allow passing in either a measure field, or a field that is summarized.
+    The **dataRoles** array now defines a single data role of type **measure**, that is named **measure**, and displays as **Measure**. This data role allows passing either a measure field, or a field that is summarized.
 
-    The **dataRoles** array now defines a single data role of type measure, that is named measure, and will be displayed as Measure This data role will allow passing in either a measure field, or a field that is summarized.
+3. From inside the **dataViewMappings** array, remove all content (lines 10-31).
 
-3. From inside the dataViewMappings array, remove all content.
+4. Inside the **dataViewMappings** array, insert the following content.
 
-    Inside the **dataViewMappings** array, insert the following content.
+    ```json
+            {
+            "conditions": [
+                { "measure": { "max": 1 } }
+            ],
+            "single": {
+                "role": "measure"
+            }
+           }
+    ```
+    The **dataViewMappings** array now defines one field can be passed to the data role named **measure**.
+
+5. Save the capabilities.json file.
+
+6. In Power BI, notice that the that the visual now can be configured with **Measure**.
+
+    ![Quantity Measure](media/custom-visual-develop-tutorial/quantity_measure.png)
+
+    > [!Note]
+    > The visual project does not yet include data binding logic.
+
+### Exploring the Dataview
+
+1. In the toolbar floating above the visual, click **Show Dataview**.
+
+    ![Show Dataview](media/custom-visual-develop-tutorial/show-dataview-toolbar.png)
+
+2. Expand down into **single**, and then notice the value.
+
+    ![Expand down to value](media/custom-visual-develop-tutorial/value-display-in-visual.png)
+
+3. Expand down into **metadata**, and then into the **columns** array, and in particular notice the **format** and **displayName** values.
+
+    ![Displayname value](media/custom-visual-develop-tutorial/displayname-and-format-metadata.png)
+
+4. To toggle back to the visual, in the toolbar floating above the visual, click **Show Dataview**.
+
+    ![Toggle back](media/custom-visual-develop-tutorial/show-dataview-toolbar-revert.png)
+
+### Configuring Data Binding
+
+1. In **Visual Studio Code**, in the *visual.ts* file, add the following statement as the first statement of the update method.
+
+    ```typescript
+    let dataView: DataView = options.dataViews[0];
+    ```
+    ![Dataview in Update array](media/custom-visual-develop-tutorial/dataview-in-update-array.png)
+
+    This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
+
+2. In the **update** method, replace **.text(“Value”)** with the following...
+
+    ```typescript
+    .text(dataView.single.value as string)
+    ```
+    ![Replace textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
+
+3. In the **update** method, replace **.text(“Label”)** with the following...
+
+    ```typescript
+    .text(dataView.metadata.columns[0].displayName)
+    ```
