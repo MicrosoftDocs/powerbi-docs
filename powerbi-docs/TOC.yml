@@ -608,6 +608,14 @@
         href: desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
+      - name: "Running Python scripts in Power BI Desktop"
+        href: desktop-python-scripts.md
+      - name: "Using Python in Power Query Editor"
+        href: desktop-python-in-query-editor.md
+      - name: "Use an external Python IDE with Power BI"
+        href: desktop-python-ide.md
+      - name: "Create Power BI visuals using Python"
+        href: desktop-python-visuals.md
       - name: "Running R scripts in Power BI Desktop"
         href: desktop-r-scripts.md
       - name: "Using R in Query Editor"
