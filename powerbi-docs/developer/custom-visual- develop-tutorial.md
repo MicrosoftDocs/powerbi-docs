@@ -574,3 +574,18 @@ You are now going to add common properties to the visual.
     "objects": {},
     ```
     ![Add objects](media/custom-visual-develop-tutorial/add-objects.png)
+
+4. Save the *capabilities.json* file.
+
+5. In **Power BI**, review the formatting options again.
+
+    > [!Note]
+    > If you do not see the formatting options change then select **Reload Custom Visual**.
+
+    ![View formatting options](media/custom-visual-develop-tutorial/view-formatting-options.png)
+
+6. Set the Title option to Off. Notice that the visual no longer displays the measure name at the top-left corner.
+
+    ![Tile option is off](media/custom-visual-develop-tutorial/tile-option-off.png)
+    
+    ![No name tile](media/custom-visual-develop-tutorial/no-name-tile.png)
