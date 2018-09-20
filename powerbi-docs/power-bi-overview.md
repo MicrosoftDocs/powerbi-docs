@@ -54,5 +54,5 @@ Create, deploy, and manage Power BI, mobile and paginated reports on premises wi
 Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that’s viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready.
 
 ## Next steps
-[Sign in, get some data, and learn your way around Power BI service](service-the-new-power-bi-experience.md)   
+[Sign in, get some data, and learn your way around Power BI service](consumer/end-user-experience.md)   
 [Tutorial: Get started with Power BI service](service-get-started.md)

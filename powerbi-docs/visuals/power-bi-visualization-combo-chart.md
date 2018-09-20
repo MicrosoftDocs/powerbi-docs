@@ -100,13 +100,13 @@ In this task, we'll compare gross margin and sales.
 
 From here you might want to:
 
-* [Add the combo chart as a dashboard tile](../service-dashboard-tiles.md).
+* [Add the combo chart as a dashboard tile](../consumer/end-user-tiles.md).
 * [Save the report](../service-report-save.md).
 * [Make the report more accessible for people with disabilities](../desktop-accessibility.md)
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../consumer/end-user-interactions.md) to change this default behavior.
 
 ## Next steps
 
@@ -114,6 +114,6 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

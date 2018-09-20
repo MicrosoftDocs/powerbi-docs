@@ -134,11 +134,11 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
 You can improve the results you and your customers get when they use the Q&A virtual analyst on a dataset, either by asking more targeted questions or by enhancing the dataset.
 
 ### How to ask questions
-* Follow these [tips for asking questions in Q&A](../../service-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
+* Follow these [tips for asking questions in Q&A](../end-user-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
 
 ### How to enhance the dataset
 * Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../service-prepare-data-for-q-and-a.md).
 
 ## Next steps
-* [Q&A in the Power BI service](../../power-bi-q-and-a.md)
+* [Q&A in the Power BI service](../end-user-q-and-a.md)
 * Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)
