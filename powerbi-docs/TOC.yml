@@ -632,11 +632,13 @@
         href: desktop-ssas-multidimensional.md
       - name: "Connect to CSV files in Power BI Desktop"
         href: desktop-connect-csv.md
-      - name: "Connect to an Impala database in Power BI Desktop (Preview)"
+      - name: "Connect to a Google BigQuery database in Power BI Desktop"
+        href: desktop-connect-bigquery.md        
+      - name: "Connect to an Impala database in Power BI Desktop"
         href: desktop-connect-impala.md
       - name: "Connect to an OData feed in Power BI Desktop"
         href: desktop-connect-odata.md
-      - name: "Connect to an Amazon Redshift database in Power BI Desktop (Preview)"
+      - name: "Connect to an Amazon Redshift database in Power BI Desktop"
         href: desktop-connect-redshift.md
       - name: "Connect to a Web page from Power BI Desktop"
         href: desktop-connect-to-web.md
