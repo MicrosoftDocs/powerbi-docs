@@ -74,7 +74,7 @@ Now you need to install the **pbiviz** package.
   pbiviz --create-cert
   ```
 
-  You should return a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
+  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
 
   ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -84,7 +84,7 @@ Now you need to install the **pbiviz** package.
   pbiviz --install-cert
   ```
 
-3. In the Certificate Import Wizard, ensure that the store location is set to Current User. Then select *Next*.
+3. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
 
       ![Cert install](media/custom-visual-develop-tutorial/install-cert-powershell.png)
 
@@ -618,18 +618,60 @@ You are now going to add common properties to the visual.
              "description": "The circle thickness.",
              "type": {
                  "numeric": true
+                 }
              }
          }
      }
- }
     ```
 
     The JSON fragment describes a group named circle which consists of two options named circleColor and circleThickness.
 
    ![Circle thickness code](media/custom-visual-develop-tutorial/circle-thickness-code.png)
 
-3. Save the *capabilities.json* file.
+3. Save the **capabilities.json** file.
 
-4. In the **Explorer pane**, from inside the *src* folder, and then select *settings.ts*. *This file represents the settings for the starter visual*.
+4. In the **Explorer pane**, from inside the **src** folder, and then select **settings.ts**. *This file represents the settings for the starter visual*.
 
-5. In the *settings.ts* file, replace the two classes with the following code.
+5. In the **settings.ts** file, replace the two classes with the following code.
+
+    ```typescript
+    export class CircleSettings {
+     public circleColor: string = "white";
+     public circleThickness: number = 2;
+    }
+    export class VisualSettings extends DataViewObjectsParser {
+     public circle: CircleSettings = new CircleSettings();
+    }
+    ```
+
+    ![Module classes](media/custom-visual-develop-tutorial/module-classes.png)
+
+    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the **capabilities.json** file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle** which matches the object defined in the *capabilities.json* file, and which returns an instance of **CircleSettings**.
+
+6. Save the **settings.ts** file.
+
+7. Open the **visual.ts** file.
+
+8. In the **Visual** class, add the following property.
+
+    ```typescript
+    private visualSettings: VisualSettings;
+    ```
+    This property will store a reference to the VisualSettings object, describing the visual settings.
+
+    ![Visual class add](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+
+9. In the **Visual** class, add the following method before the **update** method. This method is used to populate the formatting options.
+
+    ```typescript
+    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
+     const settings: VisualSettings = this.visualSettings ||
+    VisualSettings.getDefault() as VisualSettings;
+     return VisualSettings.enumerateObjectInstances(settings, options);
+    }
+    ```
+    This method is used to populate the formatting options.
+
+    ![Visual settings object](media/custom-visual-develop-tutorial/visual-settings-object.png)
+
+10. In the **update** method, after the declaration of the **radius** variable, add the following code.
