@@ -675,3 +675,11 @@ You are now going to add common properties to the visual.
     ![Visual settings object](media/custom-visual-develop-tutorial/visual-settings-object.png)
 
 10. In the **update** method, after the declaration of the **radius** variable, add the following code.
+
+    ```typescript
+    this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);
+    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness)this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
+    ```
+    This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, converting it to 0 if negative, or 10 if it's a value greater than 10.
+
+    ![Radius variable](media/custom-visual-develop-tutorial/radius.png)
