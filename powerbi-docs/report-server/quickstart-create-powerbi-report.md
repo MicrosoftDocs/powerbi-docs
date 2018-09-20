@@ -88,36 +88,6 @@ When your report is ready, you save it to the Power BI Report Server you chose i
    
     ![View the report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
 
-## Considerations and limitations
-Reports in Power BI Report Server and in the Power BI service (http://powerbi.com) act almost exactly the same, but a few features are different.
-
-### In a browser
-Power BI Report Server reports support all visualizations, including:
-
-* Custom visuals
-
-Power BI Report Server reports don’t support:
-
-* R visuals
-* ArcGIS maps
-* Breadcrumbs
-* Power BI Desktop preview features
-
-### In the Power BI mobile apps
-Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
-
-* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
-  
-    ![Report optimized for phones](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
-
-Power BI Report Server reports don’t support these features in the Power BI mobile apps:
-
-* R visuals
-* ArcGIS maps
-* Custom visuals
-* Breadcrumbs
-* Geofiltering or bar codes
-
 ## Next steps
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
