@@ -584,8 +584,52 @@ You are now going to add common properties to the visual.
 
     ![View formatting options](media/custom-visual-develop-tutorial/view-formatting-options.png)
 
-6. Set the Title option to Off. Notice that the visual no longer displays the measure name at the top-left corner.
+6. Set the **Title** option to *Off*. Notice that the visual no longer displays the measure name at the top-left corner.
 
     ![Tile option is off](media/custom-visual-develop-tutorial/tile-option-off.png)
-    
+
     ![No name tile](media/custom-visual-develop-tutorial/no-name-tile.png)
+
+### Adding Custom Formatting Options
+
+ You can add custom properties to enable configuring the color of the circle, and also the border width.
+
+1. In PowerShell, stop the custom visual.
+
+2. In Visual Studio Code, in the *capabilities.json* file, insert the following JSON fragment into the **objects** object.
+
+    ```json
+    "circle": {
+     "displayName": "Circle",
+     "properties": {
+         "circleColor": {
+             "displayName": "Color",
+             "description": "The fill color of the circle.",
+             "type": {
+                 "fill": {
+                     "solid": {
+                         "color": true
+                     }
+                 }
+             }
+         },
+         "circleThickness": {
+             "displayName": "Thickness",
+             "description": "The circle thickness.",
+             "type": {
+                 "numeric": true
+             }
+         }
+     }
+ }
+    ```
+
+    The JSON fragment describes a group named circle which consists of two options named circleColor and circleThickness.
+
+   ![Circle thickness code](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+
+3. Save the *capabilities.json* file.
+
+4. In the **Explorer pane**, from inside the *src* folder, and then select *settings.ts*. *This file represents the settings for the starter visual*.
+
+5. In the *settings.ts* file, replace the two classes with the following code.
