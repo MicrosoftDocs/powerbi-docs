@@ -41,7 +41,7 @@
       - name: "Introduction to Cortana for Power BI"
         href: service-cortana-intro.md	
       - name: "Dashboard tiles in Power BI"
-        href: consumer/end-user-dashboard-tiles.md
+        href: consumer/end-user-tiles.md
       - name: "Shared with me"
         href: consumer/end-user-shared-with-me.md
       - name: "Data refresh in Power BI"
