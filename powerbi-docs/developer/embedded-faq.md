@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 09/17/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -79,15 +79,19 @@ Here is a partial list of differences you may use with each.
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
 
-### What are the prerequisites to create a PBIE capacity in Azure? 
+### What are the prerequisites to create a PBIE capacity in Azure?
 
 * You need to sign in to your organizational directory (MSA accounts are not supported).
 * You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
 * You need to have an Azure subscription in your organizational directory.
 
-### How can I monitor capacity consumption?
+### How can I monitor Power BI Embedded capacity consumption?
 
-Monitoring through Azure is on the near-term roadmap. The Azure resource, Power BI Embedded, will include monitoring KPIs that will show health, and usage.
+* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded-settings).
+
+* Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+
+* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
