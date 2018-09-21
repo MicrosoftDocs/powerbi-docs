@@ -35,7 +35,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../service-insights.md) 
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
 | Paginated reports | Yes | No | Paginated reports aren't available in the Power BI service, but you can [pin paginated report items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
-| Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../mobile-apps-for-mobile-devices.md) 
+| Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../power-bi-visualization-arcgis.md)
 | Email subscriptions for Power BI reports | No | Yes | [Subscribe to a report or dashboard](../service-report-subscribe.md) in the Power BI service 
 | Email subscriptions for paginated reports | Yes | No | [E-Mail delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
@@ -43,7 +43,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Row-level security | Only through data source in DirectQuery mode | Available in both DirectQuery (data source) & Import mode | [Row-level security (RLS)](../service-admin-rls.md) with Power BI 
 | Full screen mode | No | Yes | [Full screen mode](../service-fullscreen-mode.md) in the Power BI service 
 | Advanced Office 365 collaboration | No | Yes | [Collaborate in an app workspace](../service-collaborate-power-bi-workspace.md) with Office 365 
-| R visuals | No | Yes | [Create R visuals](../service-r-visuals.md) in the Power BI service  
+| R visuals | No | Yes | [Create R visuals](../visuals/service-r-visuals.md) in the Power BI service  
 | Preview features | No | Yes | [Opt in for Power BI service preview](../service-preview-features.md) features 
 | Custom visuals | Yes | Yes | [Custom visuals in Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](http://aka.ms/pbidesktopstore)

@@ -187,7 +187,7 @@ Help is localized in these 10 languages:
 * Spanish - español
 
 ## Next steps
-* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](mobile-apps-supported-languages.md) for details.
+* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](consumer/mobile/mobile-apps-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
