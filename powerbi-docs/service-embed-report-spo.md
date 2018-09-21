@@ -80,7 +80,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](consumer/end-user-create-apps.md).
 
 Alternatively, you can grant users access to your report by doing the following.
 
@@ -137,7 +137,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
-* You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 * The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
 
@@ -146,7 +146,7 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 ## Next steps
 
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Create and distribute an app in Power BI](service-create-distribute-apps.md)  
+[Create and distribute an app in Power BI](consumer/end-user-create-apps.md)  
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 

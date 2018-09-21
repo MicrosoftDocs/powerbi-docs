@@ -58,7 +58,7 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample. 
    > 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Add the treemap as a dashboard tile (pin the visual)](../service-dashboard-tiles.md). 
+6. [Add the treemap as a dashboard tile (pin the visual)](../consumer/end-user-tiles.md). 
 7. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
@@ -72,11 +72,11 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
 2. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../service-reports-visual-interactions.md)
+3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../consumer/end-user-interactions.md)
 
 ## Next steps
 [ Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)  
-[Power BI - Basic Concepts](../service-basic-concepts.md)  
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  
 

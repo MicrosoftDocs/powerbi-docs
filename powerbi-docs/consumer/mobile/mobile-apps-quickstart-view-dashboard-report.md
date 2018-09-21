@@ -149,5 +149,5 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 In this quickstart, you explored a sample dashboard and report on your Android device. Read more about working in the Power BI service. 
 
 > [!div class="nextstepaction"]
-> [Quickstart: Getting around in the Power BI service](../../service-the-new-power-bi-experience.md)
+> [Quickstart: Getting around in the Power BI service](../end-user-experience.md)
 

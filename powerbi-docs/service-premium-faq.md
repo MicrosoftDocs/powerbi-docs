@@ -98,7 +98,7 @@ For more information about Power BI Report Server, see [Get started with Power B
 **What are Power BI Apps?**  
 We are evolving content packs into Power BI apps to improve how users discover and explore insights at enterprise scale. Available today, Power BI apps offer a simplified way of deploying dashboards and reports to specific people, groups or an entire organization. Business users can easily install these apps and navigate them with ease, centralizing content in one place and updating automatically. 
 
-For more information about Apps, see [What are apps in Power BI?](service-install-use-apps.md).
+For more information about Apps, see [What are apps in Power BI?](consumer/end-user-apps.md).
 
 **Are you making changes to Power BI Pro, Power BI Free, Power BI Desktop, et al. as part of the Power BI Premium rollout?**  
 Today we’re also simplifying the distinction between Power BI Pro and the free service. We’ve received feedback that while the free service is intended for personal use and Power BI Pro enables collaboration, functional differences between them have created confusion for users. Going forward, we will improve the free service to have the same functionality as Power BI Pro, but will limit sharing and collaboration features to only Power BI Pro users.

@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 # Add a page to a Power BI report in Power BI service and Power BI Desktop
 No reason to crowd up a report page -- just add a new blank page. 
 
-Adding and duplicating report pages require edit permissions to the report. In Power BI service, this means opening the report in [Editing view](service-reading-view-and-editing-view.md). 
+Adding and duplicating report pages require edit permissions to the report. In Power BI service, this means opening the report in [Editing view](consumer/end-user-reading-view.md). 
 
 ## Add a new blank page
 Select the yellow plus icon and then type a new name for the page.  
@@ -31,9 +31,9 @@ From the top control bar, in [Editing view](service-interact-with-a-report-in-ed
 Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.  For more information, see [renaming in Power BI service](service-rename.md)
 
 ## Next steps
-Read more about [reports in Power BI](service-reports.md)
+Read more about [reports in Power BI](consumer/end-user-reports.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

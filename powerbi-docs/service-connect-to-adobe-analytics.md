@@ -90,7 +90,7 @@ If you're seeing an error after providing your credentials indicating you do not
 If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today. However, we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
 
 ## Next steps
-* [What are apps in Power BI?](service-install-use-apps.md)
+* [What are apps in Power BI?](consumer/end-user-apps.md)
 * [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

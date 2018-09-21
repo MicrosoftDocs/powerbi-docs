@@ -66,7 +66,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
    * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Add the Funnel as a dashboard tile](../service-dashboard-tiles.md). 
+5. [Add the Funnel as a dashboard tile](../consumer/end-user-tiles.md). 
 6. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
@@ -77,10 +77,10 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../service-reports-visual-interactions.md)
+2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../consumer/end-user-interactions.md)
 
 ## Create a funnel chart in Q&A
-Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](../service-basic-concepts.md).
+Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](../consumer/end-user-basic-concepts.md).
 
 1. On the Opportunity Analysis Sample dashboard, begin typing your question in the Q&A question box.
    
@@ -93,7 +93,7 @@ Open the Opportunity Analysis Sample dashboard, or any other dashboard that has 
 
 [Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
