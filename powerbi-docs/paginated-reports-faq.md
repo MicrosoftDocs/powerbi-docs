@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 09/18/2018
+ms.date: 09/20/2018
 ms.author: maggies
 
 ---
@@ -26,7 +26,7 @@ The paginated reports workload is available on P1 – P3 SKUs for public preview
 
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
-Currently, you may only reserve 50% of the memory for this workload.  We plan to raise this to 100% later in the preview period.
+Currently, you may only reserve 50% of the memory for this workload. 
 
 ### How do I turn on/off my paginated reports workload?
 
@@ -63,7 +63,7 @@ Yes. You can't upload reports to the workspace without a Pro license. You may do
 
 ### What if I have a paginated report in a workspace and the paginated report workload is turned off?
 
-You can't view your report until the workload is turned back on, and you receive an error message. You can still delete the report from the workspace.
+You receive an error message, and you can't view your report until the workload is turned back on. You can still delete the report from the workspace.
 
 ### What is the default memory for each of the Premium SKUs supported for paginated reports?
 
@@ -83,7 +83,7 @@ Power BI reports are optimized for exploration and interactivity.  A sales repor
 
 ### The documentation says Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
 
-Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren’t yet supported. See  A full list of unsupported features is available later in the FAQ.  
+Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren’t yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) available later in this FAQ.  
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
@@ -91,7 +91,7 @@ You need to download the report from the server, than upload it to Power BI thro
 
 ### Can I open reports and publish directly to the service?
 
-We will add support for opening reports and publishing them directly to the service from Report Builder at some point, like you can with Power BI Desktop.
+At this point, no. We'll add support for opening reports and publishing them directly to the service from Report Builder at some point, like you can with Power BI Desktop.
 
 ### What data sources do you support currently for paginated reports?
 
@@ -161,11 +161,11 @@ Not yet, but we absolutely plan to support this scenario.
 
 ### Can I share my paginated report content through a Power BI app?
 
-Currently you can share individual paginated reports with other users through the sharing action in the portal. We don’t yet support sharing in an app, but expect to soon. We’ll have the sharing button in the toolbar soon as well.
+Currently you can share individual paginated reports with other users through the sharing action in the portal. We don’t yet support sharing in an app, but expect to soon. We’ll have the sharing button in the toolbar as well.
 
 ### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
 
-We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from an consumer perspective, it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
+We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from an consumer perspective it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
 
 ### Are you planning to create a new authoring tool for paginated reports in the Power BI service?  We can’t do everything we need to with Report Builder today.
 
@@ -183,7 +183,7 @@ We're not currently planning a single authoring tool, but we are looking at ways
 
 No, a report viewer control isn’t available currently.
 
-### Can you search for paginated reports from the new Home experience in the Power BI service work?
+### Can you search for paginated reports from the new Home experience in the Power BI service?
 
 No, you can't currently search for your paginated reports from Home.  You do see them, however, in the other parts of the new Home experience.
 
