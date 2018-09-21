@@ -54,7 +54,7 @@ Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/
 * Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Troubleshooting
 **“Oops! An error has occurred"**
