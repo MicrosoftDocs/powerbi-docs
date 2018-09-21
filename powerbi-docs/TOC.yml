@@ -7,7 +7,7 @@
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"
-      href: service-the-new-power-bi-experience.md
+      href: consumer/end-user-experience.md
   - name: Tutorials
     items: 
     - name: "Connect to a GitHub sample"
@@ -23,31 +23,31 @@
     - name: Power BI basics
       items: 
       - name: "Power BI - basic concepts"
-        href: service-basic-concepts.md
+        href: consumer/end-user-basic-concepts.md
       - name: "Searching and sorting content"
         href: service-navigation-search-filter-sort.md
       - name: "Related content"
-        href: service-related-content.md
+        href: consumer/end-user-related.md
       - name: "Recent content"
-        href: service-recent.md
+        href: consumer/end-user-recent.md
       - name: "Opt-in for Power BI preview features"
-        href: service-preview-features.md
+        href: consumer/end-user-preview-features.md
       - name: "Dashboards in Power BI"
-        href: service-dashboards.md
+        href: consumer/end-user-dashboards.md
       - name: "Q&A in Power BI"
-        href: power-bi-q-and-a.md
+        href: consumer/end-user-q-and-a.md
       - name: "Reports in Power BI"
-        href: service-reports.md
+        href: consumer/end-user-reports.md
       - name: "Introduction to Cortana for Power BI"
         href: service-cortana-intro.md	
       - name: "Dashboard tiles in Power BI"
-        href: service-dashboard-tiles.md
+        href: consumer/end-user-tiles.md
       - name: "Shared with me"
-        href: service-shared-with-me.md
+        href: consumer/end-user-shared-with-me.md
       - name: "Data refresh in Power BI"
         href: refresh-data.md
       - name: "Frequently asked questions"
-        href: service-frequently-asked-questions.md
+        href: consumer/end-user-faq.md
       - name: "Power BI for US Government"
         href: service-govus-overview.md
       - name: "Power BI Free vs Pro"
@@ -59,11 +59,11 @@
     - name: Working in Power BI
       items: 
       - name: "Quick Insights in Power BI"
-        href: service-insights.md
+        href: consumer/end-user-insights.md
       - name: "Get data from files"
         href: service-get-data-from-files.md
       - name: "Open a Power BI report in Reading view or Editing view"
-        href: service-reading-view-and-editing-view.md
+        href: consumer/end-user-reading-view.md
       - name: "The report editor...Take a tour"
         href: service-the-report-editor-take-a-tour.md
       - name: "Visualizations in Power BI"
@@ -79,7 +79,7 @@
       - name: "Power BI get started with third-party apps"
         href: service-power-bi-get-started-third-party-apps.md
       - name: "Types of Quick Insights supported by Power BI"
-        href: service-insight-types.md        
+        href: consumer/end-user-insight-types.md
       - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
         href: service-aggregates.md
       - name: "Page display settings in a Power BI report"
@@ -91,33 +91,33 @@
       - name: Common tasks
         items: 
         - name: "Favorite dashboards, reports, and apps in Power BI"
-          href: service-dashboard-favorite.md
+          href: consumer/end-user-favorite.md
         - name: "Display a dashboard tile in Focus mode"
-          href: service-focus-mode.md
+          href: consumer/end-user-focus.md
         - name: "Print a dashboard, print a dashboard tile, print a report page"
-          href: service-print.md
+          href: consumer/end-user-print.md
         - name: "Rename content within Power BI"
           href: service-rename.md
         - name: "Display dashboards and reports in Full Screen mode (TV mode)"
           href: service-fullscreen-mode.md
         - name: "Remove content within Power BI"
-          href: service-delete.md
+          href: consumer/end-user-delete.md
         - name: "Enroll your US Government organization"
           href: service-govus-signup.md
         - name: "Data alerts in Power BI service"
           href: service-set-data-alerts.md
         - name: "Tips and tricks for asking questions with Q&A in Power BI"
-          href: service-q-and-a-tips.md
+          href: consumer/end-user-q-and-a-tips.md
         - name: "Install and use apps, with dashboards and reports"
-          href: service-install-use-apps.md
+          href: consumer/end-user-apps.md
         - name: "Find and connect to an organizational content pack"
-          href: service-organizational-content-pack-find-and-open.md
+          href: consumer/end-user-content-pack.md
         - name: "Get started with Power BI Q&A"
           href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Connect to services
         items: 
         - name: "Connect to the services you use"
-          href: service-connect-to-services.md
+          href: consumer/end-user-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
         - name: "Adobe Analytics"
@@ -227,29 +227,29 @@
       - name: Dashboards
         items: 
         - name: "Featured dashboards in Power BI"
-          href: service-dashboard-featured.md
+          href: consumer/end-user-featured.md
         - name: "Power BI Unified Notification Center"
-          href: service-notification-center.md
+          href: consumer/end-user-notification-center.md
         - name: "Dashboard themes"
           href: service-dashboard-themes.md
       - name: Reports
         items: 
         - name: "Many ways to open a report"
-          href: service-report-open.md
+          href: consumer/end-user-report-open.md
         - name: "Change how a chart is sorted in a Power BI report"
-          href: power-bi-report-change-sort.md
+          href: consumer/end-user-change-sort.md
         - name: "Export data from a visualization"
-          href: power-bi-visualization-export-data.md
+          href: consumer/end-user-export-data.md
         - name: "How to use report filters"
-          href: power-bi-how-to-report-filter.md
+          href: consumer/end-user-report-filter.md
         - name: "Subscribe to a report or dashboard"
-          href: service-report-subscribe.md
+          href: consumer/end-user-subscribe.md
       - name: Publish
         items: 
         - name: "Power BI publisher for Excel"
           href: publisher-for-excel.md
         - name: "Publish to PowerPoint"
-          href: service-publish-to-powerpoint.md
+          href: consumer/end-user-powerpoint.md
     - name: Working in Power BI
       items: 
       - name: Dashboards
@@ -291,7 +291,7 @@
         - name: "Use Q&A to create visualizations and build reports"
           href: power-bi-tutorial-q-and-a.md
         - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
-          href: service-q-and-a-direct-query.md
+          href: consumer/end-user-q-and-a-direct-query.md
         - name: "Make your data work well with Q&A in Power BI"
           href: service-prepare-data-for-q-and-a.md
         - name: "Enable Cortana for Power BI"
@@ -313,7 +313,7 @@
         - name: "Create the new workspaces (preview)"
           href: service-create-the-new-workspaces.md
         - name: "Publish apps with dashboards and reports"
-          href: service-create-distribute-apps.md
+          href: consumer/end-user-create-apps.md
         - name: "Share a filtered report"
           href: service-share-reports.md
         - name: "Publish from Power BI to the web"
@@ -355,7 +355,7 @@
         - name: "Create a new report from an existing report"
           href: power-bi-report-copy.md
         - name: "Recent content"
-          href: service-recent.md
+          href: consumer/end-user-recent.md
         - name: "Add a page to a Power BI report"
           href: power-bi-report-add-page.md
         - name: "Add a filter to a report in Power BI"
@@ -369,7 +369,7 @@
         - name: "Analyze in Excel"
           href: service-analyze-in-excel.md
         - name: "Change how visuals interact in a report"
-          href: service-reports-visual-interactions.md
+          href: consumer/end-user-interactions.md
         - name: "Tips and tricks for creating reports in Power BI service"
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: "Analytics pane"
@@ -379,7 +379,7 @@
         - name: "Create a QR code for a report"
           href: service-create-qr-code-for-report.md
         - name: "Change the display settings for a page in a Power BI report"
-          href: power-bi-change-report-display-settings.md
+          href: consumer/end-user-report-view.md
         - name: "Reorder pages in a report in Power BI"
           href: service-report-reorder-pages.md
         - name: "Duplicate a report page in Power BI"
@@ -475,7 +475,7 @@
     - name: "Webinars"
       href: webinars.md
     - name: "Supported browsers"
-      href: service-browser-support.md
+      href: consumer/end-user-browsers.md
     - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
     - name: "Whitepapers"
@@ -769,7 +769,7 @@
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
       - name: "See the data used to create the visual"
-        href: service-reports-show-data.md
+        href: consumer/end-user-show-data.md
       - name: "Change the type of visualization in a Power BI report"
         href: visuals/power-bi-report-change-visualization-type.md
       - name: "Getting started with color formatting and axis properties"
@@ -781,7 +781,7 @@
       - name: "Move, resize, and pop out a visualization in a Power BI report"
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Drill down in a visualization in Power BI"
-        href: power-bi-visualization-drill-down.md
+        href: consumer/end-user-drill.md
       - name: "Hyperlinks in tables"
         href: power-bi-hyperlinks-in-tables.md
       - name: "Add a hyperlink to a Text Box in a Power BI report"

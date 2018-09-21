@@ -63,7 +63,7 @@ If your dashboard has a title with more than one word, Cortana will only return 
 ### Cortana and Reports
  Cortana can find answers in reports that have [pages designed specifically for display by Cortana](service-cortana-answer-cards.md). Simply ask questions using the title or keywords from one of these specialty report pages.  
 
-The underlying technology for reports is using [Microsoft's Power BI Q&A](power-bi-q-and-a.md).
+The underlying technology for reports is using [Microsoft's Power BI Q&A](consumer/end-user-q-and-a.md).
 
 When you ask a question in Cortana, Power BI answers from report pages designed specifically for Cortana. Potential answers are determined by Cortana on the fly directly from the Cortana *answer cards* already created in Power BI.  To further explore an answer, simply open a result in Power BI.
 

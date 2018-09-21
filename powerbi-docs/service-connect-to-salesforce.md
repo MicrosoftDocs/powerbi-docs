@@ -52,14 +52,18 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
+You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](consumer/end-user-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard
+<<<<<<< HEAD
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report
+=======
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+>>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements and considerations
 - Connected with a production Salesforce account that has API access enabled

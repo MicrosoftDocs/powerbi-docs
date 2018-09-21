@@ -34,7 +34,7 @@ After you create a Power BI Desktop file, if you publish it to your Power BI app
    
     ![Reports tab](media/service-collaborate-power-bi-workspace/power-bi-workspace-report.png)
    
-    From here, it's like any other report in Power BI. You and others in your app workspace can [modify the report](service-reports.md) and save tiles to a dashboard of your choosing.
+    From here, it's like any other report in Power BI. You and others in your app workspace can [modify the report](consumer/end-user-reports.md) and save tiles to a dashboard of your choosing.
 
 ## Collaborate in Office 365
 Collaborating in Office 365 starts from the app workspace in Power BI.
@@ -73,7 +73,7 @@ Collaborating in Office 365 starts from the app workspace in Power BI.
 If you’re owner or admin for an app workspace, you can also add or remove workspace members. Read more about [managing your Power BI app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Next steps
-* [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
+* [Create apps and app workspaces in Power BI](consumer/end-user-create-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

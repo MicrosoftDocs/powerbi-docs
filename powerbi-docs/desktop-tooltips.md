@@ -132,5 +132,5 @@ There are a few limitations and considerations for **tooltips** to keep in mind.
 For more information about features that are similar or interact with report tooltips, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 

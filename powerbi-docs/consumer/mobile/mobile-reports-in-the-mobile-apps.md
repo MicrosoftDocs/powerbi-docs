@@ -78,7 +78,7 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 * To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
 ## Drill down and up in a visual
-If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](../../power-bi-visualization-drill-down.md) in Power BI Desktop or the Power BI service. 
+If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](../end-user-drill.md) in Power BI Desktop or the Power BI service. 
 
 * Tap and hold a specific bar or point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
   
