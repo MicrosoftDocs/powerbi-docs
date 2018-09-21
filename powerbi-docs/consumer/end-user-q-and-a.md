@@ -2,7 +2,7 @@
 title: Overview of Q&A in Power BI service and Desktop
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

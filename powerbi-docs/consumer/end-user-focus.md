@@ -2,7 +2,7 @@
 title: Focus mode - zoom in on a single visualization to see more detail.
 description: Documentation for displaying a Power BI dashboard tile or report visualizations in focus mode, aka pop out.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 

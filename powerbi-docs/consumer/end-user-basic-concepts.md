@@ -2,7 +2,7 @@
 title: Power BI service- basic concepts
 description: Power BI service workspaces, dashboards, reports, datasets, and workbooks.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 

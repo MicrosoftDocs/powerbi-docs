@@ -2,7 +2,7 @@
 title: View related content in Power BI service
 description: Navigation made easier, view related content in dashboards, reports, and datasets
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 

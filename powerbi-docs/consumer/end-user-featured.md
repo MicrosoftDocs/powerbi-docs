@@ -2,7 +2,7 @@
 title: Featured dashboards in Power BI
 description: Documentation on how to create a Featured dashboard in Power BI service
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 

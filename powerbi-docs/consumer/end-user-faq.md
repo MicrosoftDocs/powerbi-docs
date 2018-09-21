@@ -1,15 +1,15 @@
 ---
 title: Frequently asked questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps.
-author: maggiesMSFT
-manager: kfile
+author: mihart
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: maggies
+ms.author: mihart
 
 LocalizationGroup: Get started
 ---
