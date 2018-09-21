@@ -19,7 +19,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. **You [add tiles to a dashboard in the Power BI service](../../service-dashboard-tiles.md).** 
+Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. **You [add tiles to a dashboard in the Power BI service](../end-user-tiles.md).** 
 
 Then in the Power BI mobile apps, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 

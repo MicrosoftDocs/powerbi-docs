@@ -70,13 +70,13 @@ For information about using the Filters pane, see [Add a filter to a report](../
 Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
 ## Next steps
-[Reports in Power BI](../service-reports.md)
+[Reports in Power BI](../consumer/end-user-reports.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

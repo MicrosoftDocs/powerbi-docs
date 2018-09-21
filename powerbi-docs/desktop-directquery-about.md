@@ -273,7 +273,7 @@ When creating a report using a DirectQuery connection, adhere to the following g
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  In DirectQuery such cross-filtering and cross-highlighting require queries to be submitted to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. However, this interaction can be switched off, either for the entire report (as described above for *Query reduction options*), or on a case-by-case basis as described [in this article](service-reports-visual-interactions.md).
+  In DirectQuery such cross-filtering and cross-highlighting require queries to be submitted to the underlying source, so the interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. However, this interaction can be switched off, either for the entire report (as described above for *Query reduction options*), or on a case-by-case basis as described [in this article](consumer/end-user-interactions.md).
 
 In addition to the above list of suggestions, note that each of the following reporting capabilities can cause performance issues:
 

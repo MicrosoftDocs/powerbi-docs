@@ -53,7 +53,7 @@ Say you want to distribute your dashboard to a broad audience. You and your cowo
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator give you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md). 
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator give you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](consumer/end-user-create-apps.md). 
 
 After they install an app, they can view it in their browser or mobile device.
 
@@ -84,7 +84,7 @@ More about [annotating and sharing tiles, reports, and visuals](consumer/mobile/
 You can also [share a snapshot of a tile](consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
 
 ## Print or save as PDF or other static file
-You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](service-print.md).
+You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](consumer/end-user-print.md).
 
 ## Publish to the web
 
@@ -95,7 +95,7 @@ You can publish Power BI reports to the whole Internet by embedding interactive 
 
 ## Next steps
 * [Share dashboards with coworkers and others](service-share-dashboards.md)
-* [Create and publish an app in Power BI](service-create-distribute-apps.md)
+* [Create and publish an app in Power BI](consumer/end-user-create-apps.md)
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

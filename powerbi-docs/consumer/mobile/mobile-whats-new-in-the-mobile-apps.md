@@ -196,7 +196,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](../../service-install-use-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](../end-user-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices
@@ -558,7 +558,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../../service-connect-to-services.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../end-user-connect-to-services.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 
