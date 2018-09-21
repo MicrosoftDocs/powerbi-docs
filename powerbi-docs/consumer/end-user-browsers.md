@@ -1,15 +1,15 @@
 ---
 title: Supported browsers for Power BI
 description: See a list of browsers that support Power BI
-author: maggiesMSFT
-manager: kfile
+author: mihart
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/13/2018
-ms.author: maggies
+ms.author: mihart
 
 LocalizationGroup: Get started
 ---
