@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 # R packages in the Power BI service
 You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages are not.
 
-The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](service-r-visuals.md) article.
+The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](visuals/service-r-visuals.md) article.
 
 ## Request support for a new R package
 Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, you can send an email with your request to the [R in Power BI Feedback Team](mailto:rinpbifb@microsoft.com).
@@ -936,7 +936,7 @@ The following table shows which packages are **not supported** in the Power BI s
 ## Next steps
 For more information about R in Power BI, take a look at the following articles:
 
-* [Creating R visuals in the Power BI service](service-r-visuals.md)
+* [Creating R visuals in the Power BI service](visuals/service-r-visuals.md)
 * [Create Power BI visuals using R](desktop-r-visuals.md)
 * [Running R scripts in Power BI Desktop](desktop-r-scripts.md)
 * [Using R in Query Editor](desktop-r-in-query-editor.md)

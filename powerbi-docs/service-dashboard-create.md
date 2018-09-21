@@ -21,7 +21,7 @@ It can seem overwhelming when you're first getting started, so we'll start by cr
 ## Who can create a dashboard?
 Creating a dashboard is a **creator** feature and requires edit permissions to the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspaceABC and then adds you as a member of that workspace, you and David will both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](service-install-use-apps.md) (you are **consuming** the report), you won't be able to pin tiles to a dashboard.
 
-> **NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop. Dashboards can't be created in Power BI mobile, but they can be [viewed and shared](mobile-apps-view-dashboard.md).
+> **NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop. Dashboards can't be created in Power BI mobile, but they can be [viewed and shared](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 

@@ -40,7 +40,7 @@ If you already have an account, open a browser and type app.powerbi.com to open 
 
 ![Sign in or Sign up free](media/service-get-started/power-bi-sign-up.png)
 
-If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md).
+If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).

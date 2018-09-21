@@ -2,24 +2,25 @@
 title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 09/17/2018
 ---
+
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
-* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+* Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## General
 
 ### What is Power BI Embedded?
 
-Microsoft Power BI Embedded allows application developers to embed stunning, fully interactive reports, dashboards and tiles into applications without the time and expense of building their own data visualizations and controls from the ground-up.
+Microsoft Power BI Embedded (PBIE) allows application developers to embed stunning, fully interactive reports, into applications without the time and expense of building their own data visualizations and controls from the ground-up.
 
 ### Who is the target audience for Power BI Embedded?
 
@@ -41,7 +42,7 @@ Power BI Embedded is for ISVs or developers who are building applications and wa
 
 The recommendation of Microsoft is that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution, and ISVs buy Power BI Embedded, cloud-powered embedded analytics components. However, there are no restrictions on which product a customer can buy.
 
-There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. And of course, some Enterprises may decide to use A SKUs in Azure if they are only interested in building line of business applications and embedding analytics into them and are not interested in using the pre-packaged Power BI service.
+There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. And of course, some Enterprises may decide to use A SKUs in Azure if they are only interested in building line-of-business applications and embedding analytics into them and are not interested in using the pre-packaged Power BI service.
 
 ### How many embed tokens can I create?
 
@@ -62,9 +63,9 @@ Here is a partial list of differences you may use with each.
 |   | (A SKUs) | (EM SKUs) | (P SKUs) |
 | Embed artifacts from a Power BI App   workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
 | Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
-| Consume Power BI reports in   SharePoint | No | Yes | Yes |
-| Consume Power BI reports in   Dynamics | No | Yes | Yes |
-| Consume Power BI reports in Teams | No | Yes | Yes |
+| Consume Power BI reports in SharePoint | No | Yes | Yes |
+| Consume Power BI reports in Dynamics | No | Yes | Yes |
+| Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |
 | Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
 | Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
 
@@ -72,11 +73,11 @@ Here is a partial list of differences you may use with each.
 
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
-|Purchase     |Azure portal |Office |Office |
-|Use cases |* Embed content in your own application |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Embed content in your own application<br>* Embed content in other MS Office applications ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
+|Purchase  |Azure portal |Office |Office |
+|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
-|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams |Combine embedding in applications and use the Power BI Service in the same capacity |
+|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
 
 ### What are the prerequisites to create a PBIE capacity in Azure?
 
@@ -84,9 +85,13 @@ Here is a partial list of differences you may use with each.
 * You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
 * You need to have an Azure subscription in your organizational directory.
 
-### How can I monitor capacity consumption?
+### How can I monitor Power BI Embedded capacity consumption?
 
-Monitoring through Azure is on the near-term roadmap. The Azure resource, Power BI Embedded, will include monitoring KPIs that will show health, and usage.
+* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded-settings).
+
+* Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+
+* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
@@ -116,18 +121,18 @@ https://app.powerbi.com/ > ? > About Power BI
 
 ### Why do I get an unsupported account message?
 
-Power BI requires you to sign up with an organizational account. Trying to signup for Power BI using a MSA (Microsoft account) isn't supported.
+Power BI requires you to sign up with an organizational account. Trying to sign up for Power BI using an MSA (Microsoft account) isn't supported.
 
 ### Can I use APIs to create & manage Azure capacities?
 
-Yes, there are Powershell cmdlets and ARM APIs you can use to create & manage PBIE resources.
+Yes, there are Powershell cmdlets and Azure Resource Manager (ARM) APIs you can use to create & manage PBIE resources.
 
 * Rest APIs - https://docs.microsoft.com/rest/api/power-bi-embedded/
 * Powershell cmdlets - https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your applciation to be assign to a dedicated capacity.
+In order to [promote your solution to production](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -152,12 +157,12 @@ The authentication and authorization of the application users will be implemente
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
+To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
 
-It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
-The Application needs to be configured to require permissions to PowerBI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify PowerBI resource URL as the resource ID, see below a code snippet showing how this can be done:
+It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
+The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -234,7 +239,7 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 
 ### What is Power BI Workspace Collection?
 
-**Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution that is based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authnticate the application to power BI.
+**Power BI Workspace Collection** (**Power BI Embedded** Version 1) is a solution that is based on the **Power BI Workspace Collection** Azure resource. This solution allows you to create **Power BI Embedded** applications for your customers using Power BI content under the **Power BI Workspace Collection** solution, dedicated APIs, and workspace collection keys to authenticate the application to Power BI.
 
 ### Can I migrate from Power BI Workspace Collection to Power BI Embedded?
 
@@ -268,14 +273,14 @@ There are new features and capabilities that are introduced in the **Power BI Em
 
 Some of the features are:
 * All the PBI data sources are supported as oppose to the 2 data sources that are with **Power BI Workspace Collection**). 
-* New features such as Q&A, Refresh, bookmarks, dashboard & tile embed, custom menu etc are only supported in the **Power BI Embedded** solution.
+* New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
-## Onboarding Experience tool for embedding
+## Embedding setup tool for embedding
 
-### What is the Onboarding experience tool?
+### What is the Embedding setup tool?
 
-The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
@@ -294,7 +299,7 @@ You can learn how to edit AAD registered applications [here](https://docs.micros
 
 ### How can I edit my Power BI user profile or data?
 
-You can learn how to edit your Power BI data [here](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+You can learn how to edit your Power BI data [here](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 

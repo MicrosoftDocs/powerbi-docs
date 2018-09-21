@@ -31,7 +31,7 @@ Connect to [Dynamics Marketing content pack](https://app.powerbi.com/getdata/ser
 3. Select **Microsoft Dynamics Marketing** \> **Get**.
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/mdmarketing.png)
-4. Provide the OData URL associated with your account.  This will be in the form  "https://[instance\_name].marketing.dynamics.com/analytics."
+4. Provide the OData URL associated with your account.  This will be in the form  "`https://[instance\_name].marketing.dynamics.com/analytics.`"
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynmktgserviceurl.png)
 5. When prompted, provide your credentials (this step might be skipped if you are already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:

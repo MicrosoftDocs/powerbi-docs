@@ -2,19 +2,19 @@
 title: Dashboard tiles in Power BI service
 description: All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](mobile-iphone-app-get-started.md).
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](consumer/mobile/mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](consumer/mobile/mobile-iphone-app-get-started.md).
 
 ## Dashboard tiles
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
@@ -63,9 +63,9 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    
    * [Open the worksheet that was used to create this tile ](service-reports.md) ![worksheet icon](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [View in focus mode ](service-focus-mode.md) ![focus icon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [View in focus mode ](service-focus-mode.md) ![focus icon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![export data icon](media/service-dashboard-tiles/export-icon.png)
-     * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![edit icon](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Edit title and subtitle, add a hyperlink](service-dashboard-edit-tile.md) ![edit icon](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Run insights ](service-insights.md) ![insights icon](media/service-dashboard-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](service-pin-tile-to-another-dashboard.md)
        ![pin icon](media/service-dashboard-tiles/pin-icon.jpg)
@@ -90,7 +90,7 @@ When you select a tile, what happens next depends on how the tile was created an
 * If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## Next steps
-[Create a Card (big number tile) for your dashboard](power-bi-visualization-card.md)
+[Create a Card (big number tile) for your dashboard](visuals/power-bi-visualization-card.md)
 
 [Dashboards in Power BI](service-dashboards.md)  
 
