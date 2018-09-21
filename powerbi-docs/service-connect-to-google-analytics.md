@@ -67,7 +67,7 @@ Still having issues? Open a support ticket to reach the Power BI team:
 * From the Power BI Support site (where you're reading this article), select **Contact Support** on the right side of the page.
 
 ## Next steps
-* [What are apps in Power BI?](service-install-use-apps.md)
+* [What are apps in Power BI?](consumer/end-user-apps.md)
 * [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

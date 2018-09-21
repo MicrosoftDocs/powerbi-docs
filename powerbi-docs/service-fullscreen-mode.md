@@ -20,7 +20,7 @@ LocalizationGroup: Common tasks
 
 Display your Power BI content (dashboards, report pages, tiles, and visualizations) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV mode. The functionality available in full screen mode varies by content. 
 
-If you're using Power BI mobile, [full screen is available for Windows 10 mobile apps](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop doesn't have a full screen mode for reports or visualizations, but does have Fit to page for [Relationship view and Report view](desktop-report-view.md) and [focus mode for report visuals](service-focus-mode.md).
+If you're using Power BI mobile, [full screen is available for Windows 10 mobile apps](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop doesn't have a full screen mode for reports or visualizations, but does have Fit to page for [Relationship view and Report view](desktop-report-view.md) and [focus mode for report visuals](consumer/end-user-focus.md).
 
  
 
@@ -32,7 +32,7 @@ Some uses for full screen mode are:
 * reviewing in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report or dashboard
 
 > **NOTE**:
-> Full screen mode is different from [Focus (pop out) mode](service-focus-mode.md).
+> Full screen mode is different from [Focus (pop out) mode](consumer/end-user-focus.md).
 > 
 > 
 
@@ -75,7 +75,7 @@ Watch Amanda open and navigate her dashboard in full screen mode and then apply 
       ![](media/service-fullscreen-mode/exit-fullscreen-new.png)
 
 ## Visualizations and dashboard tiles in full screen mode
-1. To display dashboard tiles and report visualizations in full screen mode, you must start with that tile or visualization already in [Focus mode](service-focus-mode.md). 
+1. To display dashboard tiles and report visualizations in full screen mode, you must start with that tile or visualization already in [Focus mode](consumer/end-user-focus.md). 
    
     ![](media/service-fullscreen-mode/power-bi-focus3.png)
 2. Then, select the Full screen icon ![full screen icon](media/service-fullscreen-mode/power-bi-full-screen-icon.png)  for that tile or  visual. The tile or visual will display full screen without menus or navigation bars.
@@ -83,8 +83,8 @@ Watch Amanda open and navigate her dashboard in full screen mode and then apply 
     ![](media/service-fullscreen-mode/power-bi-fullscreen.png)
 
 ## Next steps
-[Dashboards in Power BI](service-dashboards.md)  
-[Focus mode](service-focus-mode.md)    
+[Dashboards in Power BI](consumer/end-user-dashboards.md)  
+[Focus mode](consumer/end-user-focus.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

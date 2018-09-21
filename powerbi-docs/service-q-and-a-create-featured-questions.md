@@ -43,8 +43,8 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md).
    ![map visualization](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### Next steps
-[Q&A in Power BI](power-bi-q-and-a.md)  
+[Q&A in Power BI](consumer/end-user-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](power-bi-visualization-introduction-to-q-and-a.md)  
-[Power BI - Basic Concepts](service-basic-concepts.md)  
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

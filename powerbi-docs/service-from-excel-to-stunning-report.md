@@ -94,6 +94,6 @@ Next steps
 
 * [Get started with Power BI service](service-get-started.md)
 * [Get started with Power BI Desktop](desktop-getting-started.md)
-* [Power BI - Basic Concepts](service-basic-concepts.md)
+* [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

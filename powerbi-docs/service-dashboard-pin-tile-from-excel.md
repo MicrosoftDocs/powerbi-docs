@@ -45,7 +45,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
     ![Excel Online in Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## Pin a range of cells to a dashboard
-One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
+One way to add a new [dashboard tile](consumer/end-user-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
 1. Highlight the cells that you'd like to pin to a dashboard.
    

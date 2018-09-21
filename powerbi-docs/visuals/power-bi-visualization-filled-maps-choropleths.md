@@ -105,7 +105,7 @@ If you do not have access to latitude and longitude data, [follow these instruct
 For more help with Map visualizations, see [Tips and tricks for map visualizations](power-bi-map-tips-and-tricks.md).
 
 ## Next steps
-[Add the filled map as a dashboard tile (pin the visual)](../service-dashboard-tiles.md)    
+[Add the filled map as a dashboard tile (pin the visual)](../consumer/end-user-tiles.md)    
  [Add a visualization to a report](power-bi-report-add-visualizations-i.md)  
  [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Change the type of visualization being used](power-bi-report-change-visualization-type.md)      
