@@ -683,3 +683,37 @@ You are now going to add common properties to the visual.
     This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, converting it to 0 if negative, or 10 if it's a value greater than 10.
 
     ![Radius variable](media/custom-visual-develop-tutorial/radius.png)
+
+11. For the **circle element**, modify the value passed to the **fill style** to the following expression.
+
+    ```typescript
+    this.visualSettings.circle.circleColor
+    ```
+
+    ![Circle element fill](media/custom-visual-develop-tutorial/circle-element-fill.png)
+
+12. For the **circle element**, modify the value passed to the **stroke-width style** to the following expression.
+
+    ```typescript
+    this.visualSettings.circle.circleThickness
+    ```
+
+    ![Circle Stroke-width](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+
+13. Save the visual.ts file.
+
+14. In PowerShell, start the visual.
+
+    ```powershell
+    pbiviz start
+    ```
+
+15. In **Power BI**, in the toolbar floating above the visual, click **Toggle Auto Reload**.
+
+16. In the **visual format** options, expand **Circle**.
+
+    ![Circle format](media/custom-visual-develop-tutorial/circle-format.png)
+
+    Modify the **color** and **thickness** option.
+
+    Modify the **thickness** option to a value less than zero, and a value greater than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
