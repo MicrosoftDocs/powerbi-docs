@@ -2,7 +2,7 @@
 title: Opt-in for preview features
 description: How to turn on (and off) Power BI features that are in Preview.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 

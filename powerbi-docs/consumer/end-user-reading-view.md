@@ -2,7 +2,7 @@
 title: Report Reading view and Editing view in Power BI service
 description: High level overview of the differences between Reading view and Editing view for Power BI service reports
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -1,15 +1,15 @@
 ---
 title: Connect to the services you use with Power BI
 description: Connect to a number of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics.
-author: maggiesMSFT
-manager: kfile
+author: mihart
+manager: kvivek
 ms.reviewer: 
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2018
-ms.author: maggies
+ms.author: mihart
 
 LocalizationGroup: Connect to services
 ---

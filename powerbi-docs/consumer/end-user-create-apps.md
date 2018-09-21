@@ -1,14 +1,14 @@
 ---
 title: Publish apps with dashboards and reports in Power BI
 description: Learn how to publish apps, which are collections of dashboards and reports built to deliver key metrics for your organization.
-author: maggiesMSFT
-manager: kfile
+author: mihart
+manager: kvivek
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: maggies
+ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
