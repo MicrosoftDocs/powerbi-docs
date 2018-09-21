@@ -2,7 +2,7 @@
 title: Display the Power BI content that has been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 

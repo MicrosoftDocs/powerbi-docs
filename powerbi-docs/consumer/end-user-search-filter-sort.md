@@ -2,7 +2,7 @@
 title: Searching and sorting your content in Power BI service
 description: documentation for sorting, and sorting content in Power BI workspaces
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Drill mode in a visualization in Power BI
 description: This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
 

@@ -2,7 +2,7 @@
 title: what is a Power BI dashboard?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

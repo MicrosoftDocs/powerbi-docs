@@ -2,7 +2,7 @@
 title: Open a report in Reading view or Editing view in Power BI service
 description: Open a Power BI report in Reading view or Editing view
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Change the size of a report page
 description: 'Change the display settings for a page in a Power BI report'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Reports in Power BI
 description: Reports in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
