@@ -178,7 +178,7 @@ Single-click
 
 * an icon or heading to open in content view
 * an arrowright (>) to open a flyout menu for Favorites, Recent, and Workspaces. 
-* a chevron icon () to display the **My Workspace** scrollable list of dashboards, reports, workbooks, and datasets.
+* a chevron icon (V) to display the **My Workspace** scrollable list of dashboards, reports, workbooks, and datasets.
 * a dataset to explore it
 
 ### 2. **Canvas** 
