@@ -22,7 +22,7 @@ Watch Will add some featured questions to Power BI Q&A and then use those featur
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile-apps-ios-qna.md) and Power BI Desktop Q&A Preview. But creating the questions is only available in Power BI service (app.powerbi.com).
+> Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](consumer/mobile/mobile-apps-ios-qna.md) and Power BI Desktop Q&A Preview. But creating the questions is only available in Power BI service (app.powerbi.com).
 > 
 
 This article uses the [Retail Analysis Sales sample](sample-datasets.md).

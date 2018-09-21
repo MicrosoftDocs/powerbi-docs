@@ -22,7 +22,7 @@ A Power BI ***dashboard*** is a single page, often called a canvas, that uses vi
 The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](service-basic-concepts.md).
 
 > [!NOTE]
-> Dashboards are a feature of Power BI service and are not available in Power BI Desktop. Dashboards can't be created on mobile devices but they can be [viewed and shared](mobile-apps-view-dashboard.md).
+> Dashboards are a feature of Power BI service and are not available in Power BI Desktop. Dashboards can't be created on mobile devices but they can be [viewed and shared](consumer/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 

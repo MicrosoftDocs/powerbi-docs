@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -167,12 +167,13 @@ When selected in *Data view**, **Dual** and **Import** tables show cached data. 
 
 There are a few limitations for this release of **storage mode**, and its correlation with **composite models**.
 
-The following multidimensional sources cannot be used with **composite models**:
+The following Live Connect (multidimensional) sources cannot be used with **composite models**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI datasets
+* Azure Analysis Services
 
 When connecting to those multidimensional sources using DirectQuery, you cannot also connect to another DirectQuery source, nor combine with imported data.
 

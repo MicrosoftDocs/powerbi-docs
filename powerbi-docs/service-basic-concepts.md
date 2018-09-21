@@ -107,10 +107,10 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 
 ### Dig deeper
 * [Reports in Power BI service and Power BI Desktop](service-reports.md)
-* [Reports in Power BI mobile apps](mobile-reports-in-the-mobile-apps.md)
+* [Reports in Power BI mobile apps](consumer/mobile/mobile-reports-in-the-mobile-apps.md)
 
 ## Dashboards
-A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
+A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](visuals/power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
 
 Why do people create dashboards?  Here are just some of the reasons:
 
@@ -178,7 +178,7 @@ Single-click
 
 * an icon or heading to open in content view
 * an arrowright (>) to open a flyout menu for Favorites, Recent, and Workspaces. 
-* a chevron icon () to display the **My Workspace** scrollable list of dashboards, reports, workbooks, and datasets.
+* a chevron icon (V) to display the **My Workspace** scrollable list of dashboards, reports, workbooks, and datasets.
 * a dataset to explore it
 
 ### 2. **Canvas** 

@@ -19,6 +19,15 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## August 2018
 - **Power BI Report Server**
+    - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 30, 2018*
+        - Bug fixes
+            - Fixed an issue when server was upgraded from earlier versions of PBI Report Server where a binding redirect was not updated, customers saw this :      
+            *`
+            Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
+             `*
+             
+            - Bug for Data Label Transparency is now fixed.
+            
     - *Version 1.3.6801.38816 (Build 15.0.2.540), Released: August 15, 2018*
         - Features
             - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports

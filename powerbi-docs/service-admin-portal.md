@@ -8,18 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 06/28/2017
 ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
+
 # Power BI admin portal
 
 The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
 Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
-All users will see **Admin portal** under the gear icon. If they are not an admin, they will only see the **Premium settings** section, and they will only see the capacities they have rights to manage.
+All users can see **Admin portal** under the gear icon. If they are not an admin, they can only see the **Premium settings** section, and they can only see the capacities they have rights to manage.
 
 ## How to get to the admin portal
 
@@ -48,9 +49,9 @@ The first tab, in the admin portal, is **Usage metrics**. The usage metrics repo
 > [!NOTE]
 > The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
 
-Once the dashboard loads, you will see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
+Once the dashboard loads, you can see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
 
-Here’s a breakdown of what you will see in each tile:
+Here’s a breakdown of what you can see in each tile:
 
 * Distinct count of all dashboards, reports, and datasets in the user workspace
   
@@ -72,7 +73,7 @@ Here’s a breakdown of what you will see in each tile:
   
     ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-The second section shows the same type of information, but based on groups. This will let you see which groups in your organization are most active and what kind of information they are using.
+The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of information they are using.
 
 With this information, you will be able to get real insights into how people are using Power BI across your organization, and be able to recognize those users, and groups, who are very active in your organization.
 
@@ -136,7 +137,7 @@ Users in the organization can share dashboards with users outside the organizati
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Here is the message that will appear when you share with an external user.
+Here is the message that appears when you share with an external user.
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
@@ -146,13 +147,13 @@ Users in the organization can publish reports to the web. [Learn more](service-p
 
 ![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 
-Users will see different options in the UI based on what the publish to web setting is.
+Users can see different options in the UI based on what the publish to web setting is.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
 |**Publish to web** under report's **File** menu.|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status will display **Disabled**|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status will display as **infringed**.|
+|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status displays as **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ### Export data
@@ -162,7 +163,7 @@ Users in the organization can export data from a tile or visualization. [Learn m
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
+> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
 
 ### Export reports as PowerPoint presentations
 
@@ -206,16 +207,18 @@ Go here to learn more about [Push apps](service-create-distribute-apps.md#how-to
 ## Integration settings
 
 ### Ask questions about data using Cortana
+
 Users in the organization can ask questions about their data using Cortana.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
 ### Use Analyze in Excel with on-premises datasets
+
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
 
 > [!NOTE]
-> Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.
+> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature.
 
 ### Use ArcGIS Maps for Power BI
 
@@ -226,7 +229,9 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
 
 ## Custom visuals settings
+
 ### Enable custom visuals for the entire organization
+
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 > [!NOTE]
@@ -236,7 +241,7 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 
 ### Interact with and share R visuals
 
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](service-r-visuals.md)
+Users in the organization can interact with and share visuals created with R scripts. [Learn more](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -284,15 +289,27 @@ Users in the organization can tag dashboards with classifications indicating das
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application.
 
-## Capacity settings
+## Capacity Settings
 
-The Capacity settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
+### Premium settings
 
-![](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
+The Premium settings tab allows you to manage any Power BI Premium (Em or P SKU) capacities that have been purchased for your organization. All users within your organization can see the Premium settings tab, but only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
 
-For more information about to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+![Power BI Premium admin settings](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
+
+For more information about how to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
+
+### Power BI Embedded settings
+
+The Power BI Embedded settings tab allows you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you can [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
+
+![Power BI Embedded admin settings](media/service-admin-portal/manage-pbie-capacities-01.png)
+
+![Power BI Embedded admin settings details](media/service-admin-portal/manage-pbie-capacities-02.png)
+
+For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
@@ -303,10 +320,10 @@ As an administrator, you can view the embed codes that are generated for your te
 ## Organization visuals
 
 The organization visuals tab enables you to deploy and manage custom visuals inside your organization, so you can easily deploy proprietary custom visuals in the organization, for report authors to easily discover and import those visuals directly from Power BI Desktop into their reports.
- 
+
 The page shows all the custom visuals that are currently deployed in the organization repository.
- 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+![Org admin visual](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### Add a new custom visual
 
@@ -316,29 +333,41 @@ To add a new custom visual to the list, select **Add a custom visual**
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the origination repository.
-> 
 
 Fill in the fields:
- 
+
 * Choose a .pbiviz file (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
+
 Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards. Read more about custom visuals security.
- 
+
 * Name your custom visuals (required): give a short title to the visual so Power BI Desktop users easily understand what it does
- 
-* Icon (required): The icon file that will be shown in the Power BI Desktop UI.
- 
+
+* Icon (required): The icon file that is shown in the Power BI Desktop UI.
+
 * Description: a short description of the visual to provide more context and education to the user
- 
-Select "Apply" to initiate the upload request. If successful you will see the new item in the list. If failed, you will get an  appropriate error message
- 
+
+Select "Apply" to initiate the upload request. If successful you can see the new item in the list. If failed, you can get an appropriate error message
+
 ### Delete a custom visual from the list
 
 Select the trash bin icon to permanently delete the visual from the repository.
-Important: deletion is irreversible. Once deleted, the visual will immediately stop rendering in existing reports. Even if you upload the same visual again, it will not replace the previous one that was deleted, users will have to import the new visual again and replace the instance they have in their reports.
- 
+Important: deletion is irreversible. Once deleted, the visual immediately stops rendering in existing reports. Even if you upload the same visual again, it won't replace the previous one that was deleted, users can import the new visual again and replace the instance they have in their reports.
+
+### Disable a custom visual in the list
+
+To disable the visual from the organizational store, select the gear icon. In the **Access** section, disable the custom visual.
+
+After you disable the visual, the visual won't render in existing reports, and it displays the error message below.
+
+*This custom visual is no longer available. Please contact your administrator for details.*
+
+However, visuals that are bookmarked still work.
+
+After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser in the Power BI service to see the updates.
+
 ### How to update a visual
 
-If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file will replace the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which will prompt them to replace the current version that they have in the report.
+If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
 ## Next steps
 
