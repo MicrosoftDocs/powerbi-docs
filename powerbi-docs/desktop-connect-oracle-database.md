@@ -47,3 +47,9 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
 4. Once your Oracle database information is entered into the Oracle Database dialog (including any optional information such as a SID or a native database query), select **OK** to connect.
 5. If the Oracle database requires database user credentials, input those credentials in the dialog when prompted.
 
+
+## Troubleshooting
+You may be unable to connect to Oracle with Power BI desktop downloaded from Microsoft Store. This is caused by an oracle driver isue.
+You can either:
+1. Download the Power BI Desktop from https://powerbi.microsoft.com/desktop
+2. If you get Power BI Desktop from Microsoft Store, copy oraons.dll from product\12.X.X\client_X into product\12.X.X\client_X\bin. The X’s represent version/client directory numbers.
