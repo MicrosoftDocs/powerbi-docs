@@ -12,9 +12,9 @@ ms.date: 08/29/2018
 LocalizationGroup: Premium 
 ---
 
-# Monitor Power BI Premium capacities in your organization
+# Monitor Power BI Premium and Power BI Embedded capacities
 
-This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities. 
+This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities.
 
 You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
 
@@ -37,7 +37,8 @@ You can go straight to the [Premium Capacity Metrics app](https://app.powerbi.co
 
 Now that you've installed the app, you can see metrics about the capacities in your organization. Let's take a look at some of the key metrics that are available.
 
-## Use the metrics app 
+## Use the metrics app
+
 When you open the app, it first shows a dashboard with a summary of all the capacities for which you have admin rights.
 
 ![Premium report overview](media/service-admin-premium-monitor-capacity/app-dashboard.png)
