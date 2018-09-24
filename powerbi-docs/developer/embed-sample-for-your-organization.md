@@ -42,7 +42,7 @@ Before you start embedding reports, dashboards, or tiles into your application, 
 
 ### Register an application in Azure Active Directory
 
-To allow your application access to the Power BI REST APIs, register your application with Azure Active Directory. This allows you to establish an identity for your application and specify permissions to Power BI REST resources.
+To give your application access to the Power BI REST APIs, register your application with Azure Active Directory. Then you can establish an identity for your application and specify permissions to Power BI REST resources.
 
 1. Accept the [Microsoft Power BI API terms](https://powerbi.microsoft.com/api-terms).
 
@@ -62,7 +62,7 @@ To allow your application access to the Power BI REST APIs, register your applic
 
 ### Apply permissions to your application within Azure Active Directory
 
-You need to enable permissions for your application in addition to what you provided on the app registration page. You need to be logged in with a global admin account to enable permissions.
+You need to enable permissions for your application in addition to what you provided on the app registration page. You need to be signed in with a global admin account to enable permissions.
 
 ### Use the Azure Active Directory portal
 
@@ -202,7 +202,7 @@ To start embedding your content by using a sample application, follow these step
 
             ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Fill in the **Description** with a name and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** blade after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, you need to create a new one within the Azure portal.
+    1. Fill in the **Description** with a name and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, you need to create a new one within the Azure portal.
 
         ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
@@ -230,17 +230,17 @@ To start embedding your content by using a sample application, follow these step
 
 ## Embed your content within your application
 
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
+Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
 
-To integrate a report into a web app, you use the **Power BI REST API**, or the **Power BI C# SDK**, and an Azure Active Directory authorization **access token** to get a report. Then you load the report by using the same **access token**. The **Power BI Rest API** provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a report into a web app, you use the Power BI REST API or the Power BI C# SDK. You also use an Azure Active Directory authorization access token to get a report. Then you load the report by using the same access token. The Power BI Rest API provides programmatic access to specific Power BI resources. For more information, see [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### Get an access token from Azure AD
 
-Within your application, you first need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you first need to get an access token from Azure AD before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ### Get a report
 
-To get a **Power BI** report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI reports. From the list of reports, you can get a report ID.
+To get a Power BI report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI reports. From the list of reports, you can get a report ID.
 
 ### Get reports by using an access token
 
@@ -250,9 +250,10 @@ To make the REST API call, you must include an *Authorization* header in the for
 
 #### Get reports with the REST API
 
-Here's a code sample of how to retrieve reports with the **REST API**:
+The following code sample shows you how to retrieve reports with the **REST API**:
 
-*A sample of getting a content item that you want to embed is available within the **_Default.aspx.cs_** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.*
+> [!NOTE]  
+> A sample of getting a content item that you want to embed is available within the **Default.aspx.cs** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.
 
 ```csharp
 using Newtonsoft.Json;
@@ -308,7 +309,7 @@ public class PBIReport
 
 #### Get reports by using the .NET SDK
 
-You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly. Here's a code sample of how to list reports:
+You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly. The following code sample shows you how to list reports:
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -331,10 +332,10 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 ### Load a report by using JavaScript
 
-You can use JavaScript to load a report into a div element on your web page. Here's a code sample of how to retrieve a report from a given workspace:
+You can use JavaScript to load a report into a div element on your web page. The following code sample shows you how to retrieve a report from a given workspace:
 
-> [!NOTE]
-> A sample of loading a content item that you want to embed is available within the **_Default.aspx_** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.
+> [!NOTE]  
+> A sample of loading a content item that you want to embed is available within the **Default.aspx** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.
 
 ```javascript
 <!-- Embed Report-->
@@ -415,7 +416,7 @@ function updateEmbedReport() {
 
 ## Using a Power BI Premium dedicated capacity
 
-Now that you've completed developing your application, it's time to back your app workspace with dedicated capacity.
+Now that you've completed developing your application, it's time to back your app workspace with a dedicated capacity.
 
 ### Create a dedicated capacity
 
@@ -423,20 +424,19 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 The following table lists the available Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
-| Capacity node | Total v-cores<br/>*(Back end + front end)* | Back end v-cores | Front end v-cores | DirectQuery/live connection limits | Maximum page renders at peak hour |
+| Capacity node | Total vCores<br/>(back end + front end) | Back end vCores | Front end vCores | DirectQuery/live connection limits | Maximum page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 v-core |0.5 v-core, 10 GB RAM |0.5 v-core |3.75 per second |150-300 |
-| EM2 |2 v-cores |1 v-core, 10 GB RAM |1 v-cores |7.5 per second |301-600 |
-| EM3 |4 v-cores |2 v-cores, 10 GB RAM |2 v-cores |15 per second |601-1,200 |
-| P1 |8 v-cores |4 v-cores, 25 GB RAM |4 v-cores |30 per second |1,201-2,400 |
-| P2 |16 v-cores |8 v-cores, 50 GB RAM |8 v-cores |60 per second |2,401-4,800 |
-| P3 |32 v-cores |16 v-cores, 100 GB RAM |16 v-cores |120 per second |4,801-9600 |
-| P4 |64 v-cores |32 v-cores, 200 GB RAM |32 v-cores |240 per second |9601-19200
-| P5 |128 v-cores |64 v-cores, 400 GB RAM |64 v-cores |480 per second |19201-38400
+| EM1 |1 vCore |0.5 vCore, 10 GB RAM |0.5 vCore |3.75 per second |150-300 |
+| EM2 |2 vCores |1 vCore, 10 GB RAM |1 vCores |7.5 per second |301-600 |
+| EM3 |4 vCores |2 vCores, 10 GB RAM |2 vCores |15 per second |601-1,200 |
+| P1 |8 vCores |4 vCores, 25 GB RAM |4 vCores |30 per second |1,201-2,400 |
+| P2 |16 vCores |8 vCores, 50 GB RAM |8 vCores |60 per second |2,401-4,800 |
+| P3 |32 vCores |16 vCores, 100 GB RAM |16 vCores |120 per second |4,801-9,600 |
+| P4 |64 vCores |32 vCores, 200 GB RAM |32 vCores |240 per second |9,601-19,200 |
+| P5 |128 vCores |64 vCores, 400 GB RAM |64 vCores |480 per second |19,201-38,400 |
 
 > [!NOTE]
 > - With EM SKUs, you can access content with a free Power BI license when you're trying to embed with Microsoft Office apps. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
-
 > - With P SKUs, you can access content with a free Power BI license when you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile.
 
 ### Assign an app workspace to a dedicated capacity
@@ -461,7 +461,7 @@ Global admins or Power BI service administrators can turn the ability to use the
 
 ## Next steps
 
-In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers.
+In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers:
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)
