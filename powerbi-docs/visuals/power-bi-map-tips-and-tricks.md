@@ -85,7 +85,7 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 * The second option, ![drilldown with maps](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Next steps
-[Drill down in a Power BI visualization](../power-bi-visualization-drill-down.md)
+[Drill down in a Power BI visualization](../consumer/end-user-drill.md)
 
 [Power Bi visualizations](power-bi-report-visualizations.md)
 

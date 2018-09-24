@@ -2,7 +2,7 @@
 title: Visualization types in Power BI
 description: Visualization types in Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -172,9 +172,9 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
 
-[Reports in Power BI](../service-reports.md)
+[Reports in Power BI](../consumer/end-user-reports.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

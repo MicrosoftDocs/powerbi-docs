@@ -158,7 +158,7 @@ Users can see different options in the UI based on what the publish to web setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. [Learn more](power-bi-visualization-export-data.md)
+Users in the organization can export data from a tile or visualization. [Learn more](consumer/end-user-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
@@ -167,13 +167,13 @@ Users in the organization can export data from a tile or visualization. [Learn m
 
 ### Export reports as PowerPoint presentations
 
-Users in the organization can export Power BI reports as PowerPoint files. [Learn more](service-publish-to-powerpoint.md)
+Users in the organization can export Power BI reports as PowerPoint files. [Learn more](consumer/end-user-powerpoint.md)
 
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### Print dashboards and reports
 
-Users in the organization can print dashboards and reports. [Learn more](service-print.md)
+Users in the organization can print dashboards and reports. [Learn more](consumer/end-user-print.md)
 
 ![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
@@ -202,7 +202,7 @@ You can switch the setting to **Enabled** and then specify who gets this capabil
 > [!NOTE]
 > Remember that tenant setting changes can take some time to take effect.
 
-Go here to learn more about [Push apps](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
+Go here to learn more about [Push apps](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## Integration settings
 

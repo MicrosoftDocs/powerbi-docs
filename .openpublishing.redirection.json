@@ -469,6 +469,196 @@
             "source_path": "powerbi-docs/service-tips-and-tricks-for-color-formatting.md", 
             "redirect_url": "/power-bi/visuals/service-tips-and-tricks-for-color-formatting",
             "redirect_document_id": true
-        }     
+        },     
+        {
+            "source_path": "powerbi-docs/power-bi-change-report-display-settings.md",
+            "redirect_url": "/power-bi/consumer/end-user-report-view",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-how-to-report-filter.md",
+            "redirect_url": "/power-bi/consumer/end-user-report-filter",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-q-and-a.md",
+            "redirect_url": "/power-bi/consumer/end-user-q-and-a",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-change-sort.md",
+            "redirect_url": "/power-bi/consumer/end-user-change-sort",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-drill-down.md",
+            "redirect_url": "/power-bi/consumer/end-user-drill",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-visualization-export-data.md",
+            "redirect_url": "/power-bi/consumer/end-user-export-data",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-basic-concepts.md",
+            "redirect_url": "/power-bi/consumer/end-user-basic-concepts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-browser-support.md",
+            "redirect_url": "/power-bi/consumer/end-user-browsers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-services.md",
+            "redirect_url": "/power-bi/consumer/end-user-connect-to-services",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-create-distribute-apps.md",
+            "redirect_url": "/power-bi/consumer/end-user-create-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-dashboard-favorite.md",
+            "redirect_url": "/power-bi/consumer/end-user-favorite",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-dashboard-featured.md",
+            "redirect_url": "/power-bi/consumer/end-user-featured",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-dashboards.md",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-dashboard-tiles.md",
+            "redirect_url": "/power-bi/consumer/end-user-tiles",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-delete.md",
+            "redirect_url": "/power-bi/consumer/end-user-delete",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-focus-mode.md",
+            "redirect_url": "/power-bi/consumer/end-user-focus",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-frequently-asked-questions.md",
+            "redirect_url": "/power-bi/consumer/end-user-faq",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-insights.md",
+            "redirect_url": "/power-bi/consumer/end-user-insights",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-insight-types.md",
+            "redirect_url": "/power-bi/consumer/end-user-insight-types",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-install-use-apps.md",
+            "redirect_url": "/power-bi/consumer/end-user-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-navigation-search-filter-sort.md",
+            "redirect_url": "/power-bi/consumer/end-user-search-filter-sort",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-notification-center.md",
+            "redirect_url": "/power-bi/consumer/end-user-notification-center",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-organizational-content-pack-find-and-open.md",
+            "redirect_url": "/power-bi/consumer/end-user-content-pack",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-preview-features.md",
+            "redirect_url": "/power-bi/consumer/end-user-preview-features",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-print.md",
+            "redirect_url": "/power-bi/consumer/end-user-print",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
+            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-q-and-a-direct-query.md",
+            "redirect_url": "/power-bi/consumer/end-user-q-and-a-direct-query",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-q-and-a-tips.md",
+            "redirect_url": "/power-bi/consumer/end-user-q-and-a-tips",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-recent.md",
+            "redirect_url": "/power-bi/consumer/end-user-recent",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-related-content.md",
+            "redirect_url": "/power-bi/consumer/end-user-related",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-report-open.md",
+            "redirect_url": "/power-bi/consumer/end-user-report-open",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-reports.md",
+            "redirect_url": "/power-bi/consumer/end-user-reports",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-reports-show-data.md",
+            "redirect_url": "/power-bi/consumer/end-user-show-data",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-report-subscribe.md",
+            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-reports-visual-interactions.md",
+            "redirect_url": "/power-bi/consumer/end-user-interactions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-shared-with-me.md",
+            "redirect_url": "/power-bi/consumer/end-user-shared-with-me",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-the-new-power-bi-experience.md",
+            "redirect_url": "/power-bi/consumer/end-user-experience",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": true
+        }
     ]
 }

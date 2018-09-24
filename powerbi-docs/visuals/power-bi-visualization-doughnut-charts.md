@@ -39,13 +39,13 @@ These instructions use the Retail Analysis Sample to create a doughnut chart tha
 * Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
 
 ## Next steps
-[Reports in Power BI](../service-reports.md)
+[Reports in Power BI](../consumer/end-user-reports.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

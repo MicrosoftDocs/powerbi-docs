@@ -23,7 +23,7 @@ Q&A can work on any uploaded Excel file that has tables, ranges, or contains a P
 ### How Q&A works with Excel
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. It also has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](power-bi-q-and-a.md), and [visualization types you can specify in a Q&A query](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](consumer/end-user-q-and-a.md), and [visualization types you can specify in a Q&A query](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### Prepare an Excel dataset for Q&A
 Q&A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
@@ -40,8 +40,8 @@ Here are some tips for making the most of Q&A in your workbook.
 * Open the dataset in Power BI Desktop and create new columns, create calculated measures, concatenate fields to create unique values, classify data by type (e.g., dates, strings, geography, images, URLs), and more.
 
 ## Next steps
-Back to [Q&A in Power BI](power-bi-q-and-a.md)  
-[Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
+Back to [Q&A in Power BI](consumer/end-user-q-and-a.md)  
+[Prepare on-premises datasets for Q&A](consumer/end-user-q-and-a-direct-query.md)   
 [Q&A quickstart](power-bi-visualization-introduction-to-q-and-a.md)  
 [Get data (for Power BI)](service-get-data.md)  
 
