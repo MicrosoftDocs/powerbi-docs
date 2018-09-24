@@ -1,6 +1,6 @@
 ---
 title: KPI visuals
-description: In this tutorial you will create a KPI in Power BI Desktop
+description: In this tutorial you will create KPI visuals in Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
-# Tutorial: Create a KPI visuals
+# Tutorial: Create KPI visuals
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
