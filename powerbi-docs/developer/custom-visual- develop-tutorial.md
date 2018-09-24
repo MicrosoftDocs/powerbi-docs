@@ -283,7 +283,11 @@ This command installs TypeScript definitions based on JavaScript files, enabling
 
 3. Launch [Visual Studio Code](https://code.visualstudio.com/).
 
-    You can launch **Visual Studio Code** from powershell by using the command *code .*.
+    You can launch **Visual Studio Code** from powershell by using the follwoing command.
+
+    ```powershell
+    code .
+    ```
 
 4. In the **Explorer pane**, expand the **node_modules** folder to verify that the **d3 library** was installed.
 
@@ -502,7 +506,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 5. Save the **capabilities.json** file.
 
-6. In Power BI, notice that the that the visual now can be configured with **Measure**.
+6. In Power BI, notice that the visual now can be configured with **Measure**.
 
     ![Quantity Measure](media/custom-visual-develop-tutorial/quantity_measure.png)
 
@@ -538,14 +542,14 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
-2. In the **update** method, replace **.text(“Value”)** with the following...
+2. In the **update** method, replace **.text(“Value”)** with the following.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Replace textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. In the **update** method, replace **.text(“Label”)** with the following...
+3. In the **update** method, replace **.text(“Label”)** with the following.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)
@@ -624,7 +628,7 @@ You are now going to add common properties to the visual.
      }
     ```
 
-    The JSON fragment describes a group named circle which consists of two options named circleColor and circleThickness.
+    The JSON fragment describes a group named circle, which consists of two options named circleColor and circleThickness.
 
    ![Circle thickness code](media/custom-visual-develop-tutorial/circle-thickness-code.png)
 
@@ -732,7 +736,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
     ![Display Name Viz](media/custom-visual-develop-tutorial/display-name-viz.png)
 
-4. For the **description** property, enter the following text...
+4. For the **description** property, enter the following text.
 
     *Displays a formatted measure value inside a circle*
 
@@ -760,7 +764,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
     ![Dist folder](media/custom-visual-develop-tutorial/dist-folder.png)
 
-Now the package is output to the **dist** folder of the project. The package contain everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
+Now the package is output to the **dist** folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
 
 ## Importing the Custom Visual to Power BI Desktop
 
