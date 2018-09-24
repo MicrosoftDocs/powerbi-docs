@@ -50,18 +50,18 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Open the report in Report view and [select the yellow tab to add a new page](power-bi-report-add-page.md).    
+1. Open the report in Report view and [select the yellow tab to add a new page](../power-bi-report-add-page.md).    
 2. From the Fields pane, select **Sales > Total Units This Year**.  This will be the indicator.
 3. Add **Time > FiscalMonth**.  This will be represent the trend.
 4. IMPORTANT: Sort the chart by **FiscalMonth**. Once you convert the visualization to a KPI, there is no option to sort.
 
-    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
+    ![](../media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
    
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+    ![](../media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 6. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field.
    
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+    ![]../(media/power-bi-visualization-kpi/power-bi-kpi-done.png)
 7. Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
    
    * **Indicator** - controls the indicator’s display units and decimal places.
