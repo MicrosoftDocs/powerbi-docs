@@ -117,7 +117,7 @@ Now you need to install the **pbiviz** package.
 
 ## Creating a Custom Visual
 
-Now that you have setup your environment it is time to create your custom visual.
+Now that you have setup your environment, it is time to create your custom visual.
 
 The full source code for this tutorial is available [here](https://github.com/uve/circlecard).
 
@@ -128,7 +128,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
     ```
   You should see the help output.
 
-    <pre><code>
+   <pre><code>
          +syyso+/
     oms/+osyhdhyso/
     ym/       /+oshddhys+/
@@ -734,4 +734,54 @@ Enter property values for the custom visual project, update the icon file, and t
 
 4. For the **description** property, enter the following text...
 
-    Displays a formatted measure value inside a circle
+    *Displays a formatted measure value inside a circle*
+
+5. Optionally, in the **author** object, enter your details.
+
+6. Save the **pbiviz.json** file.
+
+7. In the **assets** object, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
+
+8. In Windows Explorer, copy the icon.png file, and then paste it to replace the default file located at assets folder.
+
+9. In Visual Studio Code, in the Explorer pane, expand the assets folder, and then select the icon.png file.
+
+10. Review the icon.
+
+    ![Viz pane image](media/custom-visual-develop-tutorial/viz-pane-image.png)
+
+11. In Visual Studio Code, ensure that all files are saved.
+
+12. To package the custom visual, in PowerShell, enter the following command.
+
+    ```powershell
+    pbiviz package
+    ```
+
+    ![Dist folder](media/custom-visual-develop-tutorial/dist-folder.png)
+
+Now the package is output to the dist folder of the project. The package contain everything required to import the custom visual into either the Power BI service, or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
+
+## Importing the Custom Visual
+
+Now you can open the Power BI Desktop report, and import the Circle Card custom visual.
+
+1. Open **Power BI Desktop**, create new report with any *sample dataset*
+
+2. In the **_Visualizations_** pane, select the **ellipsis**, and then select **Import** from File.
+
+    ![Add custom viz to desktop](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+
+3. In the **import window**, click **Import**.
+
+4. In the Open window, navigate to the **dist** folder in your project directory.
+
+5. Select the **circleCard.pbiviz** file, and then select **Open**.
+
+6. When the visual has successfully imported, select **OK**.
+
+7. Verify that the visual has been added to the **_Visualizations_** pane.
+
+    ![View in PBI Desktop viz pane](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+
+8. Hover over the **Circle Card** icon, and notice the tooltip that appears.
