@@ -1,7 +1,7 @@
 ---
 title: The report editor...Take a tour
 description: The report editor...Take a tour.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---

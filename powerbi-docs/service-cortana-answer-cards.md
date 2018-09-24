@@ -1,7 +1,7 @@
 ---
 title: Create custom Power BI answer pages for Cortana
 description: Create custom answer pages for Cortana in Power BI
-author: yaron
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
