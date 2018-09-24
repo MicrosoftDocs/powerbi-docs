@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 09/17/2018
+ms.date: 09/24/2018
 ---
 
 # Tutorial: Developing a Power BI Custom Visual
@@ -117,7 +117,7 @@ Now you need to install the **pbiviz** package.
 
 ## Creating a Custom Visual
 
-Now that you have setup your environment, it is time to create your custom visual.
+Now that you have set up your environment, it is time to create your custom visual.
 
 The full source code for this tutorial is available [here](https://github.com/uve/circlecard).
 
@@ -204,7 +204,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
 
 ### Testing the Custom Visual
 
-Now we are going to test the CircleCard custom visual by uploading a Power BI Desktop report, and then editing the report to display the custom visual.
+Now we are going to test the CircleCard custom visual by uploading a Power BI Desktop report and then editing the report to display the custom visual.
 
 1. Select **Settings**.
 
@@ -227,7 +227,7 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
     ![Custom Visual Desktop sample](media/custom-visual-develop-tutorial/custom-visual-sample.png)
 
-4. Now you need to edit the report while in te Power BI service.
+4. Now you need to edit the report while in the Power BI service.
 
     Go to **Edit report**.
 
@@ -245,7 +245,7 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
     ![New visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
     > !{Note}
-    > This is a very simple visual that displays the number of times its Update method has been called. At this stage the visual does not yet retrieve any data.
+    > This is a very simple visual that displays the number of times its Update method has been called. At this stage, the visual does not yet retrieve any data.
 
 7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
 
@@ -259,7 +259,7 @@ To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to 
 
 ## Adding Visual Elements
 
-Now you need to install the **D3 JavaScript library**. This includes the typings and the configure file dependencies.
+Now you need to install the **D3 JavaScript library**.
 
 Then you can develop the custom visual to display a circle with text.
 
@@ -315,7 +315,7 @@ This command installs TypeScript definitions based on JavaScript files, enabling
 
 Now we can explore how to develop the custom visual to show a circle and sample text.
 
-1. In the **Explorer pane**, expand the **src** folder, and then select **visual.ts**.
+1. In the **Explorer pane**, expand the **src** folder and then select **visual.ts**.
 
 > ![Note]
 > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI custom visual packages is granted free of charge under the terms of the MIT License. As part of the agreement, you must leave the comments at the top of the file.
@@ -373,9 +373,9 @@ Now we can explore how to develop the custom visual to show a circle and sample 
                                  .classed("textLabel", true);
     ```
 
-    This code adds an SVG group inside the visual, and then adds three shapes: a circle and two text elements.
+    This code adds an SVG group inside the visual and then adds three shapes: a circle and two text elements.
 
-    To format the code in document, right-click anywhere in the visual Studio Code document, and then select **Format Document**.
+    To format the code in the document, right-click anywhere in the **Visual Studio Code document**, and then select **Format Document**.
 
       ![Format document](media/custom-visual-develop-tutorial/format-document.png)
 
@@ -422,7 +422,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
      .style("font-size", fontSizeLabel + "px");
     ```
 
-*This code sets the width and height of the visual, and then initializes the attributes and styles of the visual lelements.*
+*This code sets the width and height of the visual, and then initializes the attributes and styles of the visual elements.*
 
 6. Save the **visual.ts** file.
 
@@ -457,7 +457,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     Notice that the circle and text value scales to fit the available dimension of the visual.
 
-    The update method is called continuously with each resize, and this results in the fluid rescaling of the visual elements.
+    The update method is called continuously with resizing the visual, and this results in the fluid rescaling of the visual elements.
 
     You have now developed the visual elements.
 
@@ -500,7 +500,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     ```
     The **dataViewMappings** array now defines one field can be passed to the data role named **measure**.
 
-5. Save the capabilities.json file.
+5. Save the **capabilities.json** file.
 
 6. In Power BI, notice that the that the visual now can be configured with **Measure**.
 
@@ -509,7 +509,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     > [!Note]
     > The visual project does not yet include data binding logic.
 
-### Exploring the Dataview
+### Exploring the dataview
 
 1. In the toolbar floating above the visual, click **Show Dataview**.
 
@@ -529,7 +529,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 ### Configuring Data Binding
 
-1. In **Visual Studio Code**, in the *visual.ts* file, add the following statement as the first statement of the update method.
+1. In **Visual Studio Code**, in the **visual.ts** file, add the following statement as the first statement of the update method.
 
     ```typescript
     let dataView: DataView = options.dataViews[0];
@@ -552,11 +552,11 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     ```
     ![Replace textLabel](media/custom-visual-develop-tutorial/text-label-replace.png)
 
-4. Save the *visual.ts* file.
+4. Save the **visual.ts** file.
 
 5. In **Power BI**, review the visual, which now displays the value and the display name.
 
-You have now configured the data roles, and bound the visual to the dataview.
+You have now configured the data roles and bound the visual to the dataview.
 
 ## Adding formatting options
 
@@ -575,7 +575,7 @@ You are now going to add common properties to the visual.
     ```
     ![Add objects](media/custom-visual-develop-tutorial/add-objects.png)
 
-4. Save the *capabilities.json* file.
+4. Save the **capabilities.json** file.
 
 5. In **Power BI**, review the formatting options again.
 
@@ -596,7 +596,7 @@ You are now going to add common properties to the visual.
 
 1. In PowerShell, stop the custom visual.
 
-2. In Visual Studio Code, in the *capabilities.json* file, insert the following JSON fragment into the **objects** object.
+2. In Visual Studio Code, in the **capabilities.json** file, insert the following JSON fragment into the **objects** object.
 
     ```json
     "circle": {
@@ -657,7 +657,7 @@ You are now going to add common properties to the visual.
     ```typescript
     private visualSettings: VisualSettings;
     ```
-    This property will store a reference to the VisualSettings object, describing the visual settings.
+    This property stores a reference to the **VisualSettings** object, describing the visual settings.
 
     ![Visual class add](media/custom-visual-develop-tutorial/visual-class-add-on.png)
 
@@ -716,7 +716,7 @@ You are now going to add common properties to the visual.
 
     Modify the **color** and **thickness** option.
 
-    Modify the **thickness** option to a value less than zero, and a value greater than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
+    Modify the **thickness** option to a value less than zero, and a value higher than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
 
 ## Packaging the Custom Visual
 
@@ -760,13 +760,13 @@ Enter property values for the custom visual project, update the icon file, and t
 
     ![Dist folder](media/custom-visual-develop-tutorial/dist-folder.png)
 
-Now the package is output to the dist folder of the project. The package contain everything required to import the custom visual into either the Power BI service, or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
+Now the package is output to the **dist** folder of the project. The package contain everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
 
-## Importing the Custom Visual
+## Importing the Custom Visual to Power BI Desktop
 
 Now you can open the Power BI Desktop report, and import the Circle Card custom visual.
 
-1. Open **Power BI Desktop**, create new report with any *sample dataset*
+1. Open **Power BI Desktop**, create a new report with any *sample dataset*
 
 2. In the **_Visualizations_** pane, select the **ellipsis**, and then select **Import** from File.
 
@@ -785,3 +785,7 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
     ![View in PBI Desktop viz pane](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
 
 8. Hover over the **Circle Card** icon, and notice the tooltip that appears.
+
+## Next Steps
+
+[Publish custom visuals to AppSource](office-store.md)
