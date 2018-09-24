@@ -21,7 +21,7 @@ With the **Matrix** visual feature, you can create matrix visuals (sometimes als
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
 > [!NOTE]
-> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](desktop-report-themes.md) for more information about themes.
+> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](desktop-report-themes.md) for more information about themes.
 > 
 > 
 
@@ -38,11 +38,11 @@ In this example, each row in the **Matrix** visual farthest to the right is show
 When looking at total and subtotals, remember that those values are based on the underlying data, and not solely based on the visible values. 
 
 
-## Using drill-down with the Matrix visual
-With the **Matrix** visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill-down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these work.
+## Using drill down with the Matrix visual
+With the **Matrix** visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
-### Drill-down on row headers
-In the **Visualizations** pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill-down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill-down (and then back up) through that hierarchy, and analyze the data at each level.
+### Drill down on row headers
+In the **Visualizations** pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
 In the following image, the **Rows** section contains *Category* and *SubCategory*, creating a grouping (or hierarchy) in the rows that we can drill through.
 
@@ -52,7 +52,7 @@ When the visual has grouping created in the **Rows** section, the visual itself 
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill-down (or back up) through the hierarchy. In this case, we can drill down from *Category* to *SubCategory*, as shown in the following image, where the drill-down one level icon (the pitchfork) has been selected.
+Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Category* to *SubCategory*, as shown in the following image, where the drill down one level icon (the pitchfork) has been selected.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -62,7 +62,7 @@ In addition to using those icons, you can right-click on any of those row header
 
 Notice there are a few options from the menu that appears, which generate different results:
 
-Selecting **Drill Down** expands the matrix for *that* row level, *excluding* all other row headings except the row header that was right-clicked. In the following image, *Computers* was right-clicked, and **Drill Down** was selected. Notice that other top-level rows no longer appear in the matrix. This is a useful feature, and becomes especially cool when we get to the **cross-highlighting** section.
+Selecting **Drill Down** expands the matrix for *that* row level, *excluding* all other row headings except the row header that was right-clicked. In the following image, *Computers* was right-clicked, and **Drill Down** was selected. Notice that other top-level rows no longer appear in the matrix. This way to drill is a useful feature, and becomes especially cool when we get to the **cross-highlighting** section.
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
@@ -70,18 +70,18 @@ You can click the **Drill up** icon to get back to the previous top-level view. 
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-When you click on the **Drill up** icon in the upper-left corner to have the matrix show all top-level categories, then right-click again and select **Expand to next level**, you see the following:
+When you click on the **Drill up** icon in the upper-left corner to have the matrix show all top-level categories, then right-click again and select **Expand to next level**, you see the following visual.
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
 You can also use the **Include** and **Exclude** menu items to keep (or remove, respectively) the right-clicked row (and any subcategories) from the matrix.
 
-### Drill-down on column headers
-Similar to the ability to drill-down on Rows, you can also drill-down on **Columns**. In the following image, you can see that there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Class* and *Color*.
+### Drill down on column headers
+Similar to the ability to drill down on Rows, you can also drill down on **Columns**. In the following image, you can see that there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Class* and *Color*.
 
 ![](media/desktop-matrix-visual/matrix-visual_10.png)
 
-In the **Matrix** visual, when we right-click a column, we see the option to drill-down. In the following image, we right-click on *Deluxe* and select **Drill Down**.
+In the **Matrix** visual, when we right-click a column, we see the option to drill down. In the following image, we right-click on *Deluxe* and select **Drill Down**.
 
 ![](media/desktop-matrix-visual/matrix-visual_11.png)
 
@@ -89,17 +89,17 @@ When you select **Drill Down**, the next level of the column hierarchy for *Delu
 
 ![](media/desktop-matrix-visual/matrix-visual_12.png)
 
-The rest of the right-click menu items work on columns in the same way they do for rows (see the previous section, **Drill-down on row headers**). You can **Show Next Level**, **Expand to next level**, **Include**, or **Exclude** your columns just as you can with rows.
+The rest of the right-click menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level**, **Expand to next level**, **Include**, or **Exclude** your columns just as you can with rows.
 
 > [!NOTE]
-> The drill-down and drill-up icons in the upper-left of the matrix visual only apply to rows. In order to drill-down on columns, you must use the right-click menu.
+> The drill down and drill up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
 > 
 > 
 
 ## Stepped layout with matrix visuals
 The **Matrix** visual automatically indents subcategories in a hierarchy beneath each parent, which is called a **Stepped layout**.
 
-In the *original* version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a completely separate column.
+In the *original* version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a separate column.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
@@ -118,14 +118,14 @@ You can turn subtotals on or off in matrix visuals, for both rows and columns. I
 
 ![](media/desktop-matrix-visual/matrix-visual_20.png)
 
-In the **Format** section of the **Visualizations** pane, expand the **Subtotals** card and turn the **Row subtotals** slider to **Off**. When you do so, the subtotals are not shown.
+In the **Format** section of the **Visualizations** pane, expand the **Subtotals** card, and turn the **Row subtotals** slider to **Off**. When you do so, the subtotals are not shown.
 
 ![](media/desktop-matrix-visual/matrix-visual_21.png)
 
 The same process applies for column subtotals.
 
 ## Cross-highlighting with matrix visuals
-With the **Matrix** visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a **Matrix** and that column is highlighted, as are any other visuals on the report page. This has been a common feature of other visuals and data point selections, so now the **Matrix** visual offers the same function.
+With the **Matrix** visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a **Matrix** and that column is highlighted, as are any other visuals on the report page. This type of cross-highlighting has been a common feature of other visuals and data point selections, so now the **Matrix** visual offers the same function.
 
 In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
@@ -139,7 +139,7 @@ To apply conditional formatting, you can do either of the following when a matri
 * In the **Fields** pane, right-click the Field, and select **Conditional formatting** from the menu.
   
   ![](media/desktop-matrix-visual/matrix-visual_17.png)
-* Or, in the **Format** pane, expand the **Conditional formatting** card and for either **Background color scales** or **Font color scales**, turn the slider to **On**. Turning either option on displays a link for *Advanced controls*, which lets you customize the colors and values for the color formatting.
+* Or, in the **Format** pane, expand the **Conditional formatting** card and for either **Background color scales** or **Font color scales**, turn the slider to **On**. Turning on either option displays a link for *Advanced controls*, which lets you customize the colors and values for the color formatting.
   
   ![](media/desktop-matrix-visual/matrix-visual_18.png)
 

@@ -14,9 +14,9 @@ ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
 # Shape Maps in Power BI Desktop (Preview)
-In Power BI Desktop, you create a **Shape Map** visual to show relative comparisons of regions on a map by applying different colors to different regions. In contrast to the **Map** visual, **Shape Map** cannot show precise geographical locations of data points on a map; instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
+Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-**Shape Map** visuals are based on ESRI/TopoJSON maps which have the compelling ability to use custom maps that you can create, such as geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
+**Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are:geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
 
 ## Creating Shape Maps
 You can test the **Shape Map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use Custom Maps**.
@@ -43,7 +43,7 @@ Take the following steps to create a **Shape Map**:
    > 
 
    ![](media/desktop-shape-map/shape-map_3a.png)
-2. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point the rendering appears, as shown in the following image.
+2. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point, the rendering appears, as shown in the following image.
 
    ![](media/desktop-shape-map/shape-map_3b.png)
 
@@ -64,7 +64,7 @@ To use your **TopoJSON** map file, add a ShapeMap visual to your report and add 
 ![](media/desktop-shape-map/shape-map_6.png)
 
 ## Sample Custom Map
-The *Offices of the United States Attorneys* releases an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
+The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
 
 https://www.justice.gov/usao/resources/annual-statistical-reports
 
