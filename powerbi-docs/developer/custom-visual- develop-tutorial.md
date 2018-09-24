@@ -717,3 +717,21 @@ You are now going to add common properties to the visual.
     Modify the **color** and **thickness** option.
 
     Modify the **thickness** option to a value less than zero, and a value greater than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
+
+## Packaging the Custom Visual
+
+Enter property values for the custom visual project, update the icon file, and then package the custom visual.
+
+1. In **PowerShell**, stop the custom visual.
+
+2. Open the **pbiviz.json** file in **Visual Studio Code**.
+
+3. In the **visual** object, modify the **displayName** property to *Circle Card*.
+
+    In the **Visualizations** pane, hovering over the icon reveals the display name.
+
+    ![Display Name Viz](media/custom-visual-develop-tutorial/display-name-viz.png)
+
+4. For the **description** property, enter the following text...
+
+    Displays a formatted measure value inside a circle
