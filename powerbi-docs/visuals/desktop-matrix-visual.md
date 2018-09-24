@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -21,7 +21,7 @@ With the **Matrix** visual feature, you can create matrix visuals (sometimes als
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
 > [!NOTE]
-> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
+> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](desktop-report-themes.md) for more information about themes.
 > 
 > 
 
@@ -151,8 +151,8 @@ Either approach achieves the same result. Selecting *Advanced controls* displays
 
 You might also be interested in the following articles:
 
-* [Use gridlines and snap-to-grid in Power BI Desktop reports](../desktop-gridlines-snap-to-grid.md)
-* [Data sources in Power BI Desktop](../desktop-data-sources.md)
-* [Data types in Power BI Desktop](../desktop-data-types.md)
+* [Use gridlines and snap-to-grid in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
 
  

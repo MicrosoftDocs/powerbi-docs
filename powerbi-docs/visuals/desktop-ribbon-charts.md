@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -40,10 +40,10 @@ These formatting options for ribbon charts let you adjust the following:
 ## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
-* [Query Overview with Power BI Desktop](../desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](../desktop-data-sources.md)
-* [Connect to Data in Power BI Desktop](../desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](../desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](../desktop-common-query-tasks.md)   
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [Query Overview with Power BI Desktop](desktop-query-overview.md)
+* [Data Sources in Power BI Desktop](desktop-data-sources.md)
+* [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
+* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 
