@@ -69,7 +69,7 @@ To dig down into the report data, or to build your own reports against the datas
 
 | Metric | Dashboard | Report | Description |
 | --- | --- | --- | --- |
-| Distribution method slicer |yes |yes |How users got access to the content. There are 3 possible methods: users can access the dashboard or report by being members of an [app workspace](service-the-new-power-bi-experience.md), by having the content [shared with them](service-share-dashboards.md), or by installing a content pack/app.  Note that views through an app are counted as "content pack." |
+| Distribution method slicer |yes |yes |How users got access to the content. There are 3 possible methods: users can access the dashboard or report by being members of an [app workspace](consumer/end-user-experience.md), by having the content [shared with them](service-share-dashboards.md), or by installing a content pack/app.  Note that views through an app are counted as "content pack." |
 | Platforms slicer |yes |yes |Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps. |
 | Report page slicer |no |yes |If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page will appear in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations. |
 | Views per day |yes |yes |Total number of views per day - a view is defined as a user loading a report page or dashboard. |
@@ -177,6 +177,6 @@ A:    The usage metrics report only includes reports (or dashboards) that have b
 
 ## Next steps
 
-[Favorite a dashboard](service-dashboard-favorite.md)
+[Favorite a dashboard](consumer/end-user-favorite.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.author: v-thepet
+ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
@@ -94,7 +94,7 @@ You can use **Visual interactions** to exclude some page visualizations from bei
 2. Select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make the slicer stop filtering it. 
 3. Select the **Month** slicer, and again select the **None** icon above the **Total Sales Variance by FiscalMonth and District Manager** chart to make this slicer stop filtering it. Now, as you select names and date ranges in the slicers, the Total Sales Variance by FiscalMonth and District Manager chart is unchanged. 
 
-See [Visual interactions in a Power BI report](../service-reports-visual-interactions.md) for more information about editing interactions.
+See [Visual interactions in a Power BI report](../consumer/end-user-interactions.md) for more information about editing interactions.
 
 ## Sync and use slicers on other pages
 Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
@@ -189,5 +189,5 @@ More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 

@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Reports
 ---
 # Duplicate a report page in Power BI
-Duplicating a report page in Power BI service or Power BI Desktop requires edit permissions to the report. In Power BI service, this means opening the report in [Editing view](service-reading-view-and-editing-view.md). 
+Duplicating a report page in Power BI service or Power BI Desktop requires edit permissions to the report. In Power BI service, this means opening the report in [Editing view](consumer/end-user-reading-view.md). 
 
 
 1. In Power BI, open a report that has at least one page. 
@@ -32,7 +32,7 @@ Duplicating a report page in Power BI service or Power BI Desktop requires edit 
 ### Next steps
 More about [Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)    
 [Add a new page to a report](power-bi-report-add-page.md)    
-[Power BI - Basic Concepts](service-basic-concepts.md)    
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

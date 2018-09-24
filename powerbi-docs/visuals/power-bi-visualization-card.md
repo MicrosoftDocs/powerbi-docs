@@ -47,13 +47,13 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
 ## Create a card from the Q&A question box
 The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI service (app.powerbi.com) from a dashboard or report. The steps below describe creating a Card from a Power BI service dashboard. If you'd like to create a card using Q&A in Power BI Desktop, [follow these instructions](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) for the Q&A preview for Desktop reports.
 
-1. Create a [dashboard](../service-dashboards.md) and [get data](../service-get-data.md). This example uses the [Opportunity Analysis sample](../sample-opportunity-analysis.md).
+1. Create a [dashboard](../consumer/end-user-dashboards.md) and [get data](../service-get-data.md). This example uses the [Opportunity Analysis sample](../sample-opportunity-analysis.md).
 
 1. At the top of your dashboard, start typing what you want to know about your data in the question box. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**TIP**: From a Power BI service report, in [Editing view](../service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
+>**TIP**: From a Power BI service report, in [Editing view](../consumer/end-user-reading-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
 
 3. For example, type "number of opportunities" in the question box.
 
@@ -101,10 +101,10 @@ You have many options for changing labels, text, color and more. The best way to
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## Next steps
-[Dashboard tiles in Power BI](../service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
 
-[Dashboards in Power BI](../service-dashboards.md)
+[Dashboards in Power BI](../consumer/end-user-dashboards.md)
 
-[Power BI - Basic Concepts](../service-basic-concepts.md)
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
