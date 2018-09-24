@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 09/24/2018
 ms.author: mihart
 
 ---
@@ -103,6 +103,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Linear Gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
 | [LineDot Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |
 | [Mekko Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380785) | [Video](https://youtu.be/90FLCKpgicA) |
+| [Multi KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381763) | |
 | [Overview by CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381477) | |
 | [Play Axis (Dynamic Slicer)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
