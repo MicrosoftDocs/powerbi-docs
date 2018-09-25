@@ -31,7 +31,7 @@ Any visual with X and Y axes, and slicers, can resize responsively.
    
     ![Responsive on](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
-     Now when you [create a report optimized for the phone](desktop-create-phone-report.md) and add this visual, it will resize gracefully.
+     Now when you [create a report optimized for the phone](../consumer/mobile/desktop-create-phone-report.md) and add this visual, it will resize gracefully.
 
 ## Turn on responsiveness in the Power BI service
 You can turn on responsiveness for a visual in an older report in the Power BI service. You need to be able to edit the report.
@@ -42,10 +42,10 @@ You can turn on responsiveness for a visual in an older report in the Power BI s
    
     ![Responsive on](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
-     Now when you [create a phone view of this report](desktop-create-phone-report.md) and add this visual, it will resize gracefully.
+     Now when you [create a phone view of this report](../consumer/mobile/desktop-create-phone-report.md) and add this visual, it will resize gracefully.
 
 ## Next steps
-* [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
-* [View Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
+* [Create reports optimized for the Power BI phone apps](../consumer/mobile/desktop-create-phone-report.md)
+* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
