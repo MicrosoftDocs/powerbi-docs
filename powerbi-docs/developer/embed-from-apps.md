@@ -14,13 +14,13 @@ manager: kfile
 
 # Embed reports or dashboards from apps
 
-In Power BI, you can create apps to bring related dashboards and reports together, all in one place. Then you can publish them to large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users. So you can share content with them by using Power BI apps. We want to share a few quick steps on how to accomplish embedding of content out of a published Power BI app and into a third-party application.
+In Power BI, you can create apps to bring related dashboards and reports together, all in one place. Then you publish them to large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users. So you can share content with them by using Power BI apps. This article gives you a few quick steps to embed content out of a published Power BI app and into a third-party application.
 
 ## How to grab a report embedURL for embedding
 
-1. Instantiate the application in a user workspace, **My Workspace**, either by sharing with yourself or by guiding another user to go through this flow.
+1. Instantiate the application in a user workspace, **My Workspace**. Either share with yourself or guide another user to go through this flow.
 
-2. Open your desired report in the Power BI service.
+2. Open the report you want in the Power BI service.
 
 3. Go to **File** > **Embed In SharePoint Online** and grab the report embedURL from there. It can be seen in the following snapshot. Or call the GetReports/GetReport REST API and extract the corresponding report embedURL field out of the response. The REST call shouldn’t have a workspace identifier as part of the URL as the app got instantiated in the user’s workspace.
 
@@ -30,7 +30,7 @@ In Power BI, you can create apps to bring related dashboards and reports togethe
 
 ## How to grab a dashboard embedURL for embedding
 
-1. Instantiate the application in a user workspace, **My Workspace**, either by sharing with yourself or by guiding another user to go through this flow.
+1. Instantiate the application in a user workspace, **My Workspace**. Either share with yourself or guide another user to go through this flow.
 
 2. Call the GetDashboards REST API and extract the corresponding dashboard embedURL field out of the response. The REST call shouldn’t have a workspace identifier as part of the URL as the app got instantiated in the user’s workspace.
 

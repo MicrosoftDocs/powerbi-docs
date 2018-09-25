@@ -14,7 +14,7 @@ manager: kfile
 
 # Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
 
-This tutorial demonstrates how to integrate a report into an application by using the Power BI .NET SDK along with the Power BI JavaScript API when embedding Power BI into an application for your organization. With Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
+This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK along with the Power BI JavaScript API to embed Power BI into an application for your organization. With Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
 
 ![View an application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
@@ -29,14 +29,14 @@ To get started, you need a Power BI Pro account and a Microsoft Azure subscripti
 
 * If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* You need to have your own [Azure Active Directory (Azure AD) tenant](create-an-azure-active-directory-tenant.md) setup.
-* You need [Visual Studio](https://www.visualstudio.com/) installed, version 2013 or later.
+* Set up your own [Azure Active Directory (Azure AD) tenant](create-an-azure-active-directory-tenant.md).
+* Install [Visual Studio](https://www.visualstudio.com/), version 2013 or later.
 
 ## Set up your embedded analytics development environment
 
-Before you start embedding reports, dashboards, or tiles into your application, you need to make sure your environment is set up to allow for embedding. As part of the setup, you need to take one of these actions:
+Before you start embedding reports, dashboards, or tiles into your application, make sure your environment is set up to allow for embedding. As part of the setup, take one of these actions:
 
-- You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that you walks you through creating an environment and embedding a report.
+- You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that walks you through creating an environment and embedding a report.
 
 - If you choose to set up the environment manually, take the steps in the following sections.
 
@@ -56,13 +56,13 @@ To give your application access to the Power BI REST APIs, register your applica
 
     ![New app registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Follow the prompts and create a new application. For **user owns data**, you need to use **Web app / API** for the application type. You also need to provide a sign-on URL that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
+4. Follow the prompts and create a new application. For **user owns data**, use **Web app / API** for the application type. You must also provide a sign-on URL that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
 
     ![Create an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### Apply permissions to your application within Azure Active Directory
 
-You need to enable permissions for your application in addition to what you provided on the app registration page. You need to be signed in with a global admin account to enable permissions.
+You must enable permissions for your application in addition to what you provided on the app registration page. Sign in with a global admin account to enable permissions.
 
 ### Use the Azure Active Directory portal
 
@@ -90,7 +90,7 @@ You need to enable permissions for your application in addition to what you prov
 
     ![Select Power BI Service](media/embed-sample-for-your-organization/embed-sample-for-your-organization-014.png)
 
-7. Select all permissions under **Delegated Permissions**. You need to select them one by one to save the selections. Select **Save** when you're done.
+7. Select all permissions under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when you're done.
 
     ![Select delegated permissions](media/embed-sample-for-your-organization/embed-sample-for-your-organization-015.png)
 
@@ -100,7 +100,7 @@ You need to enable permissions for your application in addition to what you prov
 
 If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace:
 
-1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. This is where you place the content that your application needs to access.
+1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. This workspace is where you place the content that your application needs to access.
 
     ![Create a workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
 
@@ -108,7 +108,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
     ![Name a workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-021.png)
 
-3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means that only members of the workspace can see its contents.
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means that only members of the workspace can see its contents.
 
     ![Choose Private or Public](media/embed-sample-for-your-organization/embed-sample-for-your-organization-022.png)
 
@@ -122,7 +122,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
 6. Decide whether each person is a member or an admin. Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace unless they have view-only access. Both admins and members can publish the app.
 
-    Now you can view the new workspace. Power BI creates the workspace and opens it. It appears in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
+    Now you can view the new workspace. Power BI creates the workspace and opens it. It shows in the list of workspaces in which you’re a member. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
     ![Create a workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
@@ -154,7 +154,7 @@ To start embedding your content by using a sample application, follow these step
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Open up the **Cloud.config** file in the sample application. There are a few fields you need to populate to run the application successfully: **ClientID** and **ClientSecret**.
+2. Open up the **Cloud.config** file in the sample application. There are a few fields you must populate to run the application successfully: **ClientID** and **ClientSecret**.
 
     ![Cloud.config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
@@ -202,7 +202,7 @@ To start embedding your content by using a sample application, follow these step
 
             ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Fill in the **Description** with a name and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, you need to create a new one within the Azure portal.
+    1. Fill in the **Description** with a name and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one within the Azure portal.
 
         ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
@@ -236,7 +236,7 @@ To integrate a report into a web app, you use the Power BI REST API or the Power
 
 ### Get an access token from Azure AD
 
-Within your application, you first need to get an access token from Azure AD before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
+Within your application, you must get an access token from Azure AD before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
 
 ### Get a report
 
@@ -424,16 +424,16 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 The following table lists the available Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
-| Capacity node | Total vCores<br/>(back end + front end) | Back end vCores | Front end vCores | DirectQuery/live connection limits | Maximum page renders at peak hour |
+| Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits | Maximum page renders at peak hour |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0.5 vCore, 10 GB RAM |0.5 vCore |3.75 per second |150-300 |
-| EM2 |2 vCores |1 vCore, 10 GB RAM |1 vCores |7.5 per second |301-600 |
-| EM3 |4 vCores |2 vCores, 10 GB RAM |2 vCores |15 per second |601-1,200 |
-| P1 |8 vCores |4 vCores, 25 GB RAM |4 vCores |30 per second |1,201-2,400 |
-| P2 |16 vCores |8 vCores, 50 GB RAM |8 vCores |60 per second |2,401-4,800 |
-| P3 |32 vCores |16 vCores, 100 GB RAM |16 vCores |120 per second |4,801-9,600 |
-| P4 |64 vCores |32 vCores, 200 GB RAM |32 vCores |240 per second |9,601-19,200 |
-| P5 |128 vCores |64 vCores, 400 GB RAM |64 vCores |480 per second |19,201-38,400 |
+| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |150-300 |
+| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |301-600 |
+| EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |601-1,200 |
+| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |1,201-2,400 |
+| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |2,401-4,800 |
+| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |4,801-9,600 |
+| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |9,601-19,200 |
+| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |19,201-38,400 |
 
 > [!NOTE]
 > - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
@@ -457,7 +457,7 @@ After you create a dedicated capacity, you can assign your app workspace to that
 
 ## Admin settings
 
-Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can do this through the [Power BI admin portal](../service-admin-portal.md).
+Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../service-admin-portal.md).
 
 ## Next steps
 
