@@ -436,8 +436,8 @@ The following table lists the available Power BI Premium SKUs available in [Micr
 | P5 |128 vCores |64 vCores, 400 GB RAM |64 vCores |480 per second |19,201-38,400 |
 
 > [!NOTE]
-> - With EM SKUs, you can access content with a free Power BI license when you're trying to embed with Microsoft Office apps. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
-> - With P SKUs, you can access content with a free Power BI license when you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile.
+> - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
+> - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 
 ### Assign an app workspace to a dedicated capacity
 
