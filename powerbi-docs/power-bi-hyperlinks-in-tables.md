@@ -1,7 +1,7 @@
 ---
 title: How to add a hyperlink to a table
 description: Hyperlinks in tables
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/22/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
