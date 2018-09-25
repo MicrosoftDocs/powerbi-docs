@@ -23,7 +23,9 @@ In Microsoft Power BI Desktop, you can specify the *storage mode* of tables, whi
 Setting the storage mode provides many advantages. You can set storage mode for each table individually in your model. This action enables a single dataset, which provides the following benefits:
 
 * **Query performance**: As users interact with visuals in Power BI reports, Data Analysis Expressions (DAX) queries are submitted to the dataset. Caching data into memory by properly setting the storage mode can boost the query performance and interactivity of your reports.
+
 * **Large datasets**: Tables that are not cached do not consume memory for caching purposes. You can enable interactive analysis over large datasets that are too big or expensive to completely cache into memory. You can choose which tables are worth caching, and which are not.
+
 * **Data refresh optimization**: Tables that are not cached don't need to be refreshed. You can reduce refresh times by caching only the data that's necessary to meet your service level agreements and your business requirements.
 
 * **Near-real time requirements**: Tables with near-real time requirements might benefit from not being cached, to reduce data latency.
@@ -156,18 +158,18 @@ The queries displayed in the previous section show that **Dual** tables sometime
 The *Dual* storage mode is a performance optimization. It should be used only in ways that do not compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) article.
 
 ## Data view
-If at least one table in the dataset has its storage mode set to either *Import* or *Dual*, the **Data view** tab is displayed.
+If at least one table in the dataset has its storage mode set to either **Import** or **Dual**, the **Data view** tab is displayed.
 
 ![Data view in Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
 
-When they are selected in **Data view**, **Dual** and **Import** tables show cached data. DirectQuery tables do not show data, and a message is displayed that states that DirectQuery tables cannot be shown.
+When they are selected in **Data view**, the **Dual** and **Import** tables show cached data. DirectQuery tables do not show data, and a message is displayed that states that DirectQuery tables cannot be shown.
 
 
 ## Limitations and considerations
 
-There are a few limitations for this release of *storage mode* and its correlation with *composite models*.
+There are a few limitations for this release of storage mode and its correlation with composite models.
 
-The following Live Connect (multi-dimensional) sources cannot be used with *composite models*:
+The following Live Connect (multi-dimensional) sources cannot be used with composite models:
 
 * SAP HANA
 * SAP Business Warehouse
@@ -177,13 +179,13 @@ The following Live Connect (multi-dimensional) sources cannot be used with *comp
 
 When you connect to those multi-dimensional sources by using DirectQuery, you can neither connect to another DirectQuery source nor combine it with imported data.
 
-The existing limitations of using DirectQuery still apply when you use **composite models**. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the *QuickInsights* and *Q&A* features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
+The existing limitations of using DirectQuery still apply when you use composite models. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
 
 ## Next steps
 
 For more information about composite models and DirectQuery, see the following articles:
 * [Composite models in Power BI Desktop (preview)](desktop-composite-models.md)
 * [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md)
-* [Using DirectQuery in Power BI](desktop-directquery-about.md)
+* [Use DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
 
