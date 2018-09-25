@@ -22,9 +22,6 @@ You can monitor capacity with the Power BI Premium Capacity Metrics app or in th
 
 You can go straight to the [Premium Capacity Metrics app](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) or install it like you do other apps in Power BI.
 
-> [!IMPORTANT]
-> To install and use this app, you must be a capacity admin for at least one capacity. Being a Power BI admin is not sufficient. 
-
 1. In Power BI, click **Apps**.
 
     ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
