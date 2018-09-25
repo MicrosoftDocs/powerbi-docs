@@ -1,7 +1,7 @@
 ---
 title: Interact with a report in Editing view
 description: Interact with a report in report Editing view in Power BI service
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---

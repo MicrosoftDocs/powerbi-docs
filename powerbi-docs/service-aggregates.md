@@ -1,7 +1,7 @@
 ---
 title: Aggregates (sum, average, maximum, etc.) in visualizations
 description: Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
-author: mihart
+author: mgblythe
 manager: kvivek
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/29/2018
-ms.author: mihart
+ms.author: mblythe
 
 LocalizationGroup: Reports
 ---

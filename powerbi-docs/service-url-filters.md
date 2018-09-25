@@ -1,9 +1,9 @@
 ---
 title: Add Power BI report parameters using the url
 description: Filter a report using URL query string parameters, even filter on more than one field.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

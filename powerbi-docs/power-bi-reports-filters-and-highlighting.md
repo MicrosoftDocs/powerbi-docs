@@ -1,7 +1,7 @@
 ---
 title: About filters and highlighting in Power BI reports
 description: About filters and highlighting in Power BI reports
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/26/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---

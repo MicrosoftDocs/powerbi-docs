@@ -9,7 +9,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/11/2018
+ms.date: 09/24/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -76,4 +76,4 @@ KPIs are also available in Power BI service and on your mobile devices – keepi
 * If your KPI doesn't look like the one above, it may be because you need to sort by fiscalmonth. Since KPIs don't have a sort option, you'll need to sort by fiscalmonth *before* you convert your visualization to a KPI.
 
 > [!div class="nextstepaction"]
-> [Create a slicer](power-bi-report-visualizations.md)
+> [Create a gauge visual](power-bi-visualization-radial-gauge-charts.md)
