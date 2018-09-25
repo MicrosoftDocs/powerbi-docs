@@ -37,13 +37,7 @@ These formatting options for ribbon charts let you adjust the following:
 * **Transparency** specifies how transparent the ribbons are, with the default set to 30.
 * **Border** lets you place a dark border on the top and bottom of the ribbons. By default, borders are off.
 
-## Next steps
-For more information about **Power BI Desktop**, and how to get started, check out the following articles.
+## Next step
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
-* [Query Overview with Power BI Desktop](../desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](../desktop-data-sources.md)
-* [Connect to Data in Power BI Desktop](../desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](../desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](../desktop-common-query-tasks.md)   
+[Shape and Combine Data with Power BI Desktop](../desktop-shape-and-combine-data.md)
 
