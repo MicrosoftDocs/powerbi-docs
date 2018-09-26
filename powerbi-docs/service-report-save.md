@@ -1,7 +1,7 @@
 ---
 title: Save a report in Power BI
 description: Save a report in Power BI service and Power BI Desktop
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
