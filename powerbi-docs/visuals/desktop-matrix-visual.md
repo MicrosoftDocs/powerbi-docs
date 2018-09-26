@@ -149,6 +149,6 @@ Either approach achieves the same result. Selecting *Advanced controls* displays
 
 ## Next steps
 
-[Scatter and bubble charts in Power BI](visuals/power-bi-visualization-scatter.md)
+[Scatter and bubble charts in Power BI](power-bi-visualization-scatter.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
