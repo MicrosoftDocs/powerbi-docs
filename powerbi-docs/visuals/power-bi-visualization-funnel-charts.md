@@ -88,7 +88,7 @@ Open the Opportunity Analysis Sample dashboard, or any other dashboard that has 
    
 2. Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
-## Next step
+## Next steps
 
 [Gauges in Power BI](power-bi-visualization-radial-gauge-charts.md)
 

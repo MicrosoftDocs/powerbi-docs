@@ -112,7 +112,7 @@ To create a new field, [use the Power BI Desktop Query Editor to add an Index Co
 
 ## Next step
 
-[High density scatter charts](desktop-high-density-scatter-chart.md)
+[High density scatter charts](desktop-high-density-scatter-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 

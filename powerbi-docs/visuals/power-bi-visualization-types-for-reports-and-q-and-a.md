@@ -164,7 +164,7 @@ For more information, see [Add an image widget to a dashboard](../service-dashbo
 
 For more information, see [Working with tables in Power BI](power-bi-visualization-tables.md).
 
-### Tree Maps
+### Treemaps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
 For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps.md).
