@@ -15,13 +15,13 @@ LocalizationGroup: Transform and shape data
 ---
 # Composite models in Power BI Desktop (preview)
 
-Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections, whether DirectQuery or import, were allowed for that report. With composite models, that restriction is removed, and a report can seamlessly include data connections from more than one DirectQuery or import data connection, in any combination you choose.
+Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections, whether DirectQuery or Import, were allowed for that report. With composite models, that restriction is removed, and a report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
 ![Composite models in Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
 The composite models capability in Power BI Desktop consists of three related features:
 
-* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or import, in any combination. This article describes composite models in detail.
+* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or Import, in any combination. This article describes composite models in detail.
 
 * **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables, which removes requirements for unique values in tables and removes previous workarounds, such as introducing new tables just to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
@@ -45,9 +45,9 @@ With composite models, you can connect to a variety of data sources when you use
 When you use DirectQuery, composite models makes it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
 
 * Combines data from one or more DirectQuery sources.
-* Combines data from DirectQuery sources and import data.
+* Combines data from DirectQuery sources and Import data.
 
-For example, by using composite models, you can build a model that combines sales data from an enterprise data warehouse with data on sales targets that is in a departmental SQL Server database, along with some data imported from a spreadsheet. A model that combines data from more than one DirectQuery source or that combines DirectQuery with imported data is referred to as a *composite model*.
+For example, by using composite models, you can build a model that combines sales data from an enterprise data warehouse with data on sales targets that is in a departmental SQL Server database, along with some data imported from a spreadsheet. A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is referred to as a *composite model*.
 
 > [!NOTE]
 > While composite models are in preview, it is not possible to publish composite models to the Power BI service. 
@@ -71,7 +71,7 @@ But what if you have some information about the product manager who's assigned t
 
 It might be possible to import that sales data from the data warehouse (instead of using DirectQuery), at which point it could be combined with data imported from the spreadsheet. However, that approach is unreasonable, given the reasons that lead to using DirectQuery in the first place. The reasons could include some combination of the security rules enforced in the underlying source, the need to be able to view the latest data, and the sheer scale of the data. 
 
-That's where composite models come in. Composite models give you the option of connecting to the data warehouse by using DirectQuery, and then also using GetData for additional sources. In this case, we establish the DirectQuery connection to the corporate data warehouse, use GetData and choose Excel, navigate to the spreadsheet containing our local data, and then import the sheet containing the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
+That's where composite models come in. Composite models give you the option of connecting to the data warehouse by using DirectQuery, and then also using GetData for additional sources. In this case, we establish the DirectQuery connection to the corporate data warehouse, use GetData, choose Excel, and then navigate to the spreadsheet containing our local data. We then import the spreadsheet containing the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
 
 ![Navigator window](media/desktop-composite-models/composite-models_06.png)
 
@@ -83,7 +83,7 @@ Similarly, looking at the **Relationship** view in Power BI Desktop, we now see 
 
 ![Relationship view of tables](media/desktop-composite-models/composite-models_08.png)
 
-We now need to relate these tables to the other tables in the model. We do this as we always have, by creating a relationship between the *Bike* table (in SQL Server) and the **ProductManagers** table (that is imported), such as between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier in this article, all relationships that go across source must have *many-to-many* cardinality, which is the default cardinality that is selected. 
+We now need to relate these tables to the other tables in the model. We do this as we always have, by creating a relationship between the **Bike** table (in SQL Server) and the **ProductManagers** table (that is imported). That is, the relationship is between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier in this article, all relationships that go across source must have *many-to-many* cardinality, which is the default, selected cardinality. 
 
 ![The "Create relationship" window](media/desktop-composite-models/composite-models_09.png)
 
@@ -91,11 +91,11 @@ Now that we've created this relationship, it's displayed in the **Relationship**
 
 ![The new Relationship view](media/desktop-composite-models/composite-models_10.png)
 
-With those table relationships established, we can now create visuals by using any of the fields in the **Fields** list, seamlessly blending data from multiple sources. For example, the following image displays the total *SalesAmount* for each *Product Manager*. 
+With the table relationships established, we can now create visuals by using any of the fields in the **Fields** list, seamlessly blending data from multiple sources. For example, the following image displays the total *SalesAmount* for each *Product Manager*. 
 
 ![The Fields pane](media/desktop-composite-models/composite-models_11.png)
 
-This example shows a common case of a *dimension* table (such as *Product* or *Customer*) that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to different sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. You can use *GetData* to connect to that data as you usually would, as shown in the following image: 
+The following example displays a common case of a *dimension* table (such as *Product* or *Customer*) that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to different sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. You can use *GetData* to connect to that data as you usually would, as shown in the following image: 
 
 ![The Navigator window](media/desktop-composite-models/composite-models_12.png)
 
@@ -109,7 +109,7 @@ As shown in the following image, which is based on the new data and relationship
 
 ## Set the storage mode
 
-Each table in a composite model has a storage mode that indicates whether the table is based on DirectQuery or import. The storage mode can be viewed and modified in the **Property** pane. To display the storage mode, right-click a table in the **Fields** list, and then select **Properties**. The following image shows the storage mode (shortened to **Storage ...** in the image) for the **SalesTargets** table.
+Each table in a composite model has a storage mode that indicates whether the table is based on DirectQuery or Import. The storage mode can be viewed and modified in the **Property** pane. To display the storage mode, right-click a table in the **Fields** list, and then select **Properties**. The following image shows the storage mode (shortened to **Storage ...** in the image) for the **SalesTargets** table.
 
 ![Storage mode setting](media/desktop-composite-models/composite-models_15.png)
 
@@ -117,9 +117,9 @@ The storage mode can also be viewed on the tooltip for each table.
 
 ![Tooltip displaying the storage mode](media/desktop-composite-models/composite-models_16.png)
 
-For any Power BI Desktop file (a *.pbix* file) that contains some tables from DirectQuery and some import tables, the status bar displays a storage mode of **Mixed**. You can click that term in the status bar and easily switch all tables to import.
+For any Power BI Desktop file (a *.pbix* file) that contains some tables from DirectQuery and some Import tables, the status bar displays a storage mode called **Mixed**. You can click that term in the status bar and easily switch all tables to Import.
 
-Details about storage mode are described in full in the [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md) article.  
+For more information about storage mode, see [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md).  
 
 ## Calculated tables
 
@@ -173,9 +173,9 @@ The following Live Connect (multi-dimensional) sources cannot be used with compo
 * Power BI datasets
 * Azure Analysis Services
 
-When you connect to those multi-dimensional sources by using DirectQuery, you can neither connect to another DirectQuery source nor combine it with imported data.
+When you connect to those multi-dimensional sources by using DirectQuery, you can neither connect to another DirectQuery source nor combine it with Import data.
 
-The existing limitations of using DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
+The existing limitations of using DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an Import table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
 
 ## Next steps
 
