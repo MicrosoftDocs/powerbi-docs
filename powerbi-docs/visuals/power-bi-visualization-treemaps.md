@@ -19,7 +19,15 @@ Treemaps display hierarchical data as a set of nested rectangles.  Each level of
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-For example, if I'm analyzing my sales, I might have top-level rectangles, also called *branches*, for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**.  My category rectangles would contain smaller rectangles, also called *leaves*, for the clothing manufacturers within that category. And these smaller rectangles would be sized and shaded based on the number sold.  In the **Urban** branch above, lots of `Maximus` clothing was sold, less `Natura` and `Fama`, and very little `Leo`.  So, the **Urban** branch of my Treemap would have the largest rectangle for `Maximus` (in the top left corner), slightly smaller rectangles for `Natura` and `Fama`, lots of other rectangles representing all the other clothing sold, and a tiny rectangle for `Leo`.  And I could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; the larger the rectangle and the darker the shading, the higher the value.
+For example, if I'm analyzing my sales, I might have top-level rectangles, also called *branches*, for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**.  My category rectangles would be split into smaller rectangles, also called *leaves*, for the clothing manufacturers within that category. And these smaller rectangles would be sized and shaded based on the number sold.  
+
+In the **Urban** branch above, lots of `Maximus` clothing was sold, less `Natura` and `Fama`, and few `Leo`.  So, the **Urban** branch of my Treemap would have:
+* the largest rectangle for `Maximus` in the top left corner
+* slightly smaller rectangles for `Natura` and `Fama`
+* lots of other rectangles for all the other clothing sold, and 
+* a tiny rectangle for `Leo`.  
+
+And I could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; larger and darker rectangles mean higher value.
 
 ## When to use a treemap
 Treemaps are a great choice:
@@ -40,14 +48,14 @@ Want to watch someone else create a treemap first?  Skip to 2:10 in this video t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service (not Desktop) and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But if someone shares a report with you, you won't be able to add new visualizations.
+Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But you can't add visualizations to a report that soeone has shared with you.  
 
 1. Select the "Total stores" tile to open the Retail Analysis sample report.    
 2. Open [Editing View](../service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
 3. Convert the chart to a treemap.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
-4. Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles reflects total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Men's** category has the highest sales and the **Hosiery** category has the lowest.   
+4. Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles is based on total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Men's** category has the highest sales and the **Hosiery** category has the lowest.   
    ![](media/power-bi-visualization-treemaps/power-bi-complete.png)   
 5. Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
    ![](media/power-bi-visualization-treemaps/power-bi-details.png)
@@ -64,7 +72,7 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample. 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
 
-Highlighting a Category or Detail in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
+Highlighting a Category or Detail in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to this report page or copy the treemap to one of the other non-blank pages in this report.
 
 1. On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
