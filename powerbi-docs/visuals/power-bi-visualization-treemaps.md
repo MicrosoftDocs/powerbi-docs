@@ -9,7 +9,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2018
+ms.date: 08/23/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -48,23 +48,23 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample. 
 3. Convert the chart to a treemap.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
 4. Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles reflects total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.   
-   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)   
+   ![](media/power-bi-visualization-treemaps/power-bi-complete.png)   
 5. Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
-   ![](media/power-bi-visualization-treemaps/treemap_addgroup_new.png)
+   ![](media/power-bi-visualization-treemaps/power-bi-details.png)
    
    > [!NOTE]
    > Color Saturation and Details cannot be used at the same time.
    > 
    > 
-5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
+5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Fashions Direct** in the **090-Home** rectangle reveals the tooltip for Fashion Direct's portion of the Home category.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Add the treemap as a dashboard tile (pin the visual)](../consumer/end-user-tiles.md). 
+6. [Add the treemap as a dashboard tile (pin the visual)](../service-dashboard-tiles.md). 
 7. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
 
-Highlighting a Category or Details in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
+Highlighting a Category or Detail in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
 
 1. On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
@@ -72,11 +72,10 @@ Highlighting a Category or Details in a treemap cross-highlights and cross-filte
 2. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../consumer/end-user-interactions.md)
+3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](service-reports-visual-interactions.md)
 
-## Next steps
-[ Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)  
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)  
+## Next step
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+[Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md)
 
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
