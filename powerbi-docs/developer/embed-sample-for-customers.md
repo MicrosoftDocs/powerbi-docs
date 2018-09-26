@@ -170,6 +170,7 @@ Follow these steps to start embedding your content using a sample application.
     In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+
     Select the application that you want to get the **clientId** for.
 
     ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
