@@ -80,7 +80,7 @@ Highlighting a Category or Detail in a treemap cross-highlights and cross-filter
 2. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](service-reports-visual-interactions.md)
+3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../service-reports-visual-interactions.md)
 
 ## Next step
 

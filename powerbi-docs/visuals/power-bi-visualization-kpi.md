@@ -70,6 +70,6 @@ KPIs are also available in Power BI service and on your mobile devices – keepi
 
 ## Next steps
 
-[Basic maps in Power BI](power-bi-maps-tips-and-tricks.md)
+[Basic maps in Power BI](power-bi-map-tips-and-tricks.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
