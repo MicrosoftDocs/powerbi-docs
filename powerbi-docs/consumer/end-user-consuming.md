@@ -24,9 +24,3 @@ As a consumer, you won't have access to the full capabilities of Power BI -- and
 
 As you read through the articles for consumers, you'll learn the terminology, you'll get a tour of Power BI service, figure out how to navigate to content, and then learn how to interact with that content.  So let's get started!
 
-Up next...
-[Basic concepts for Power BI consumers](end-user-basic-concepts.md)
-
-[Take a tour of Power BI service](end-user-tour.md)    
-
-Or jump right in using Power BI service with the [Power BI consumer quickstart](power-bi-quickstart.md).
