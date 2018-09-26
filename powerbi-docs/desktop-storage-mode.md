@@ -34,7 +34,7 @@ Setting the storage mode provides many advantages. You can set storage mode for 
 
 The storage mode setting in Power BI Desktop is one of three related features:
 
-* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
+* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
 
 * **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables, which removes requirements for unique values in tables and removes prior workarounds, such as introducing new tables just to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
