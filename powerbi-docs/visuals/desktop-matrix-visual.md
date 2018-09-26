@@ -149,10 +149,6 @@ Either approach achieves the same result. Selecting *Advanced controls* displays
 
 ## Next steps
 
-You might also be interested in the following articles:
+[Scatter and bubble charts in Power BI](visuals/power-bi-visualization-scatter.md)
 
-* [Use gridlines and snap-to-grid in Power BI Desktop reports](../desktop-gridlines-snap-to-grid.md)
-* [Data sources in Power BI Desktop](../desktop-data-sources.md)
-* [Data types in Power BI Desktop](../desktop-data-types.md)
-
- 
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

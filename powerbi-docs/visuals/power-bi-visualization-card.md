@@ -100,5 +100,7 @@ You have many options for changing labels, text, color and more. The best way to
 
     ![Card after all formatting done](media/power-bi-visualization-card/power-bi-formatted.png)
 
-## Next step
+## Next steps
 [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
+
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

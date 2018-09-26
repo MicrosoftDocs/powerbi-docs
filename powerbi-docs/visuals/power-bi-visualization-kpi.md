@@ -1,6 +1,6 @@
 ---
 title: KPI visuals
-description: In this tutorial you will create KPI visuals in Power BI Desktop
+description: Create KPI visuals in Power BI 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
-# Tutorial: Create KPI visuals
+# KPI visuals
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -23,13 +23,6 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 * [Power BI Desktop - it's free!](https://powerbi.microsoft.com/en-us/get-started/)
 * [The Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-
-## In this tutorial you will learn
-> [!div class="checklist"]
-> * How to create a KPI
-> * The best situations for a KPI visual
-> * How to format a KPI
-> * Requirements for KPI visuals
 
 ## When to use a KPI
 KPIs are a great choice:
@@ -50,18 +43,18 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Open the report in Report view and [select the yellow tab to add a new page](../power-bi-report-add-page.md).    
+1. Open the report in Report view and [select the yellow tab to add a new page](power-bi-report-add-page.md).    
 2. From the Fields pane, select **Sales > Total Units This Year**.  This will be the indicator.
 3. Add **Time > FiscalMonth**.  This will be represent the trend.
 4. IMPORTANT: Sort the chart by **FiscalMonth**. Once you convert the visualization to a KPI, there is no option to sort.
 
-    ![](../media/power-bi-visualization-kpi/power-bi-chart.png)
+    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
    
-    ![](../media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 6. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field.
    
-    ![]../(media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
 7. Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
    
    * **Indicator** - controls the indicator’s display units and decimal places.
@@ -75,5 +68,8 @@ KPIs are also available in Power BI service and on your mobile devices – keepi
 ## Considerations and troubleshooting
 * If your KPI doesn't look like the one above, it may be because you need to sort by fiscalmonth. Since KPIs don't have a sort option, you'll need to sort by fiscalmonth *before* you convert your visualization to a KPI.
 
-> [!div class="nextstepaction"]
-> [Create a gauge visual](power-bi-visualization-radial-gauge-charts.md)
+## Next steps
+
+[Basic maps in Power BI](power-bi-maps-tips-and-tricks.md)
+
+[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
