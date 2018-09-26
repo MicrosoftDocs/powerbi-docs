@@ -51,7 +51,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
 
 These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Start on a [blank report page ](../power-bi-report-add-page.md) and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+1. Start on a [blank report page ](../power-bi-report-add-page.md) and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
    
     ![select Sales Stage](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
@@ -77,7 +77,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
    ![short video showing visual interactions](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](service-reports-visual-interactions.md)
+2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../service-reports-visual-interactions.md)
 
 ## Create a funnel chart using Q&A
 Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](../service-basic-concepts.md).

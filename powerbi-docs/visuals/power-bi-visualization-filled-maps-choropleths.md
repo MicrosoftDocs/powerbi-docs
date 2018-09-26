@@ -51,11 +51,11 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### Get data and add a new blank page to the report
-1. To create your own filled map, [download the Sales and Marketing sample](sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
+1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
 2. When the success message appears, close it and select the **Reports** tab. Then choose **Sales and Marketing Sample** to open the report.
 
    ![Reports content list](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
-3. Power BI opens the report. Select **Edit report** to open the report in [Editing View](service-interact-with-a-report-in-editing-view.md).
+3. Power BI opens the report. Select **Edit report** to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
 4. Add a new page by selecting the yellow plus sign at the bottom of the report canvas.
 
@@ -82,7 +82,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
    ![Sentiment in the Color saturation field well](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
 8. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
    ![black dialog showing state and sentiment](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Save the report](service-report-save.md).
+9. [Save the report](../service-report-save.md).
 ##    Adjust the color formatting
 Power BI gives you plenty of control over the appearance of your filled map.
 1. Select the paintroller icon to open the Formatting pane.
