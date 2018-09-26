@@ -25,10 +25,10 @@ Power BI permissions give an application the ability to take certain actions on 
 | Create content (preview) |App can automatically create content and datasets for a user. |Content.Create |
 | View users Groups |The app can view all groups that the signed in user belongs to. |Group.Read |
 | View all Groups |The app can view all groups that the signed in user belongs to. |Group.Read.All |
+| Read and write all Groups |The app can view and write to all the groups for the signed in user and any groups that the user has access to. This does not provide rights to create a new group. |Group.ReadWrite.All |
 | View all Dashboards (preview) |The app can view all dashboards for the signed in user and dashboards that the user has access to. |Dashboard.Read.All |
 | View all Reports (preview) |The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure. |Report.Read.All |
 | Read and write all Reports |The app can view and write to all the reports for the signed in user and any reports that the user has access to. This does not provide rights to create a new report. |Report.ReadWrite.All |
-| Read and write all Groups |The app can view and write to all the groups for the signed in user and any groups that the user has access to. This does not provide rights to create a new group. |Group.ReadWrite.All |
 | Read and write all Capacities |The app can view and write to all the capacities for the signed in user and any capacity that the user has access to. This does not provide rights to create a new capacity. |Capacities.ReadWrite.All |
 | Read all Capacities |The app can view and write to all the capacities for the signed in user and any capacities that the user has access to. This does not provide rights to create a new capacity. |Capacities.Read.All |
 | Read and write all content in tenant |Users can make calls to all Get\POST\PATCH admin APIs |N/A |
