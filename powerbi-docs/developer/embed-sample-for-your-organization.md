@@ -14,7 +14,7 @@ manager: kfile
 
 # Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
 
-This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK along with the Power BI JavaScript API to embed Power BI into an application for your organization. With Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
+This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK along with the Power BI JavaScript API to embed Power BI into an application for your organization. In Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
