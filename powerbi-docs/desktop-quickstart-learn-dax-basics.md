@@ -87,11 +87,11 @@ To complete this task, you’ll need to open the Contoso Sales Sample Power BI D
 
    You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and the second is a filter.
    
-4. After the opening parenthesis **(** for the **CALCULATE** function, type **SUM** followed by an opening parenthesis **(**. Now we need to pass an argument to the SUM function.
+4. After the opening parenthesis **(** for the **CALCULATE** function, type **SUM** followed by another opening parenthesis **(**. Now we need to pass an argument to the SUM function.
 
-5. Begin typing **Sal**, and then select **Sales[SalesAmount]**, followed by a closing parentesis **)**. This is the first expression argument for our CALCULATE function.
+5. Begin typing **Sal**, and then select **Sales[SalesAmount]**, followed by a closing parenthesis **)**. This is the first expression argument for our CALCULATE function.
     
-6. Type a comma (**,**) folllowed by a space to specify the first filter, and then type **PREVIOUSQUARTER**. This will be our filter.
+6. Type a comma (**,**) followed by a space to specify the first filter, and then type **PREVIOUSQUARTER**. This will be our filter.
     
    You’ll use the PREVIOUSQUARTER time intelligence function to filter SUM results by the previous quarter.
     
@@ -99,7 +99,7 @@ To complete this task, you’ll need to open the Contoso Sales Sample Power BI D
     
    The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates. In our case, that's the DateKey column in the Calendar table.
     
-8. Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by typing two closing parentheses **))**.
+8. Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by typing two closing parenthesis **))**.
     
    Your formula should now look like this:
     
