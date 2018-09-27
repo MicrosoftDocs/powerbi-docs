@@ -54,7 +54,7 @@ The **Filters applied to all pages** tab enables you to select a capacity, a dat
 
 ### Datasets tab
 
-The data set tab provides the bulk of the metrics in the app. Use the four buttons at the top of the tab to navigate to different areas: **Summary**, **Refreshes**, **Queries**, and **Datasets**.
+The **Datasets** tab provides the bulk of the metrics in the app. Use the four buttons at the top of the tab to navigate to different areas: **Summary**, **Refreshes**, **Queries**, and **Datasets**.
 
 ![Datasets tab](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
@@ -62,7 +62,7 @@ The data set tab provides the bulk of the metrics in the app. Use the four butto
 
 The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads.
 
-| **Area** | **Metrics** |
+| | **Metrics** |
 | --- | --- |
 | **Entities** | * The number of capacities you own<br> * The distinct number of datasets in your capacity<br> * The distinct number of workspaces in your capacity |
 | **System** | * The average memory usage in GB over the past seven days<br> * Highest memory consumption in GB in the past seven days and the local time it occurred<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred |
@@ -83,7 +83,7 @@ The **Datasets** area shows complete datasets evicted due to memory pressure by 
 
 ### System tab
 
-The **System** tab shows the CPU high utilization (number of times exceeded 80% utilization), direct query/live connections high utilization, and memory consumption.
+The **System** tab shows times of high CPU utilization (number of times exceeded 80% utilization), high direct query/live connections utilization, and memory consumption.
 
 ![Premium System report](media/service-admin-premium-monitor-capacity/system-tab.png)
 
