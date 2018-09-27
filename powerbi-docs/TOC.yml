@@ -369,7 +369,7 @@
         - name: "Analyze in Excel"
           href: service-analyze-in-excel.md
         - name: "Change how visuals interact in a report"
-          href: consumer/end-user-interactions.md
+          href: service-reports-visual-interactions.md
         - name: "Tips and tricks for creating reports in Power BI service"
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: "Analytics pane"
@@ -734,8 +734,6 @@
         href: desktop-gridlines-snap-to-grid.md
       - name: "High density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "High density scatter charts"
-        href: desktop-high-density-scatter-charts.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -806,6 +804,8 @@
         href: visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Scatter charts in Power BI"
         href: visuals/power-bi-visualization-scatter.md
+      - name: "High density scatter charts"
+        href: visuals/desktop-high-density-scatter-charts.md
       - name: "Slicers in Power BI"
         href: visuals/power-bi-visualization-slicers.md
       - name: "Working with tables"
