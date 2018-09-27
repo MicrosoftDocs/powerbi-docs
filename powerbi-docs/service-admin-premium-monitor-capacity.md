@@ -60,6 +60,8 @@ The **Datasets** tab provides the bulk of the metrics in the app. Use the four b
 
 #### Summary area
 
+![Summary button](media/service-admin-premium-monitor-capacity/summary-button.png)
+
 The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads.
 
 | | **Metrics** |
@@ -71,13 +73,19 @@ The **Summary** area shows a view of your capacities based on entities, system r
 
 #### Refreshes area
 
-The **Refreshes** area lists out the complete refreshes, success measures, average/max refresh wait-time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait-times split into one hour buckets, reported in local time. The top bar charts list the top five datasets by the total of the max time it took to complete the dataset to refresh (refresh duration), and max refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
+![Refreshes button](media/service-admin-premium-monitor-capacity/refreshes-button.png)
+
+The **Refreshes** area lists out the complete refreshes, success measures, average/max refresh wait-time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait-times split into one hour buckets, reported in local time. The top bar charts list the top five datasets by the average time it took to complete the dataset to refresh (refresh duration), and average refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
 
 #### Queries area
+
+![Queries button](media/service-admin-premium-monitor-capacity/queries-button.png)
 
 The **Queries** area lists out the total number of queries run, total number of queries wait count for Live query/Direct query, average/max duration , average/max wait time reported in milliseconds sliced by datasets , workspace and hourly buckets in the past seven days. The bottom charts shows the query counts, average duration (in milliseconds) and average wait time(in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time. The two top right charts list the top five datasets by the average query duration and wait time it took to complete the queries. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed.
 
 #### Datasets area
+
+![Datasets button](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 The **Datasets** area shows complete datasets evicted due to memory pressure by the hour.
 
