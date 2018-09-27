@@ -9,7 +9,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/25/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -52,9 +52,9 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
     c.  Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Select the ellipses (...) in the upper-right corner of the visualization, and select **Sort by FiscalMonth**. You may have to select it twice to sort ascending or descending.
+5. Select the ellipses (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipses again and choose either **Sort ascending** or **Sort descending**.
 
-6. Convert the column chart to a combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
+6. Convert the column chart to a combo chart. There are two combo charts available: **Line and stacked column** and **Line and clustered column**. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
@@ -68,7 +68,8 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 ## Create a combo chart with two axes
 In this task, we'll compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin last year %** by **Month**.  In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+1. Create a new line chart that tracks **Gross Margin last year %** by **Month**. Select the ellipses to sort it by **Month** and **Ascending**.  
+In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **Gross Margin Last Year %** is much smaller than the scale of **Sales** which makes it difficult to compare.      
@@ -77,7 +78,7 @@ In this task, we'll compare gross margin and sales.
 3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures sales dollars and the right measures percentage.
+4. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures sales dollars and the right measures percentage. And we see the answer to our question; yes, we do see a similar pattern.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -100,20 +101,16 @@ In this task, we'll compare gross margin and sales.
 
 From here you might want to:
 
-* [Add the combo chart as a dashboard tile](../consumer/end-user-tiles.md).
+* [Add the combo chart as a dashboard tile](../service-dashboard-tiles.md).
 * [Save the report](../service-report-save.md).
-* [Make the report more accessible for people with disabilities](../desktop-accessibility.md)
+* [Make the report more accessible for people with disabilities](../desktop-accessibility.md).
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../consumer/end-user-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
 
-## Next steps
+## Next step
 
-[Overview of visualizations in Power BI reports](power-bi-report-visualizations.md)
+[Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
