@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 This article describes previous updates to **Power BI Desktop**. For the most current month's release, check out [**Power BI Desktop** latest updates](desktop-latest-update.md).
 
-You can always [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+You can always [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
 The links beside each update mean the following:
 
