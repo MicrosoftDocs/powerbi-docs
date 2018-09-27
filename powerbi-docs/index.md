@@ -22,7 +22,7 @@ description: Power BI documentation
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/index/PowerBI_EA1E.svg" alt="" />
+                                                        <img src="./media/index/PowerBI_EA1E.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -60,7 +60,7 @@ description: Power BI documentation
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/power-bi/media/index/power-bi-Admin_F286.svg" alt="" />
+                                                        <img src="./media/index/power-bi-Admin_F286.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
