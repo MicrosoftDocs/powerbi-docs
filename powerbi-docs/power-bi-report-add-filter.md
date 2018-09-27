@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 09/27/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -34,13 +34,17 @@ Because filters *persist*, when you navigate away from the report Power BI retai
 ![persistent filter button](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## Add a filter to a visual
-There are 2 ways to add a filter to a specific visual (aka visual filter). 
+You can add a filter to a specific visual in two different ways (aka, a "visual filter"). 
 
-* Filter a field that is already being used by the visualization
+* Filter a field that is already being used by the visualization.
 * Identify a field that is not already being used by the visualization, and add that field directly to the **Visual level filters** bucket.
 
+By the way, this procedure uses the Retail Analysis sample, if you'd like to download it and follow along. Download the [Retail Analysis sample](sample-retail-analysis.md).
+
 ### Filter the fields in the visual
-1. Open your [report in Editing View](consumer/end-user-reading-view.md).
+
+
+1. Open your [report in Editing View](service-the-report-editor-take-a-tour.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
@@ -51,32 +55,37 @@ There are 2 ways to add a filter to a specific visual (aka visual filter).
    ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. At this point we'll add a filter to a field already being used by the visualization. 
    
-   * Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
+    Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**.
      
-      ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
-   * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](consumer/end-user-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
+    ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
+   Set either **Basic**, **Advanced**, or **Top N** filtering controls. In this example we'll search in Basic filtering for **cha** and select those five stores.
      
-      ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
-   * The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+    ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
+   The visual changes to reflect the new filter. If you save your report with the filter, report readers will see the visual filtered to begin with, and can interact with the filter in Reading View, selecting or clearing values.
      
-      ![](media/power-bi-report-add-filter/power-bi-filter-effect.png)
-5. Now let's add a totally new field, as a Visual level filter, to our visualization.
+    ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+
+### Filter with a field that's not in the visual
+
+Now let's add a totally new field, as a Visual level filter, to our visualization.
    
-   * From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket and select only Andrew Ma. 
+1. From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket, search for **an**, and select those three managers. 
      
-      ![](media/power-bi-report-add-filter/power-bi-andrew.png)
-   * Notice that **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
+     ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
+   Notice **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
      
-      ![](media/power-bi-report-add-filter/power-bi-visualization.png)
-   * And, the visualization itself is now filtered to show only Andrew's sales this year for the specified stores.
+     ![](media/power-bi-report-add-filter/power-bi-visualization.png)
+    And the visualization itself is now filtered to show only those managers' sales this year for the specified stores.
      
-     ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
+     ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+
+    If you save your report with this filter, report readers can interact with the **District Manager** filter in Reading View, selecting or clearing values.
 
 ## Add a filter to an entire page (aka page view filter)
-1. Open your [report in Editing View](consumer/end-user-reading-view.md).
+1. Open your [report in Editing View](service-the-report-editor-take-a-tour.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new page level filter, and drag it into the **Page level filters** area.  
-4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](consumer/end-user-report-filter.md)).
+4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
    
    All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
    
@@ -112,10 +121,10 @@ Let's see how the drillthrough filter works.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## Add a filter to an entire report (aka Report filter)
-1. Open your [report in Editing View](consumer/end-user-reading-view.md).
+1. Open your [report in Editing View](service-the-report-editor-take-a-tour.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
-4. Select the values you want to filter (see [How to use report filters](consumer/end-user-report-filter.md)).
+4. Select the values you want to filter.
 
     The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
@@ -131,9 +140,9 @@ Let's see how the drillthrough filter works.
 - If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
 
 ## Next steps
- [How to use report filters](consumer/end-user-report-filter.md)
+[Take a tour of the report Filters pane](consumer/end-user-report-filter.md)
 
-  [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
+[Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
 [Interact with filters and highlighting in report Reading View](consumer/end-user-reading-view.md)
 
