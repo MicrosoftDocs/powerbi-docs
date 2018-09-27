@@ -53,7 +53,8 @@ The Q&A question box is the easiest way to make a Card. The Q&A question box is 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**TIP**: From a Power BI service report, in [Editing view](../service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
+> [!TIP]
+> From a Power BI service report, in [Editing view](../service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
 
 3. For example, type "number of opportunities" in the question box.
 
