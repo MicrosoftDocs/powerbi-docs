@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/19/2018
+ms.date: 09/25/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -28,10 +28,10 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 >[!TIP]
 >The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see [Tutorial: Basic Area chart](power-bi-visualization-basic-area-chart.md).
+For more information, see [Basic Area chart](power-bi-visualization-basic-area-chart.md).
 
 ### Bar and column charts
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png) 
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
 
  ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
 
@@ -52,7 +52,7 @@ For more information, see [Create a Card (big number tile)](power-bi-visualizati
 >[!TIP]
 >A Combo chart combines a column chart and a line chart. Choose from *Line and Stacked Column* and *Line and Clustered Column*.
 
-For more information, see [Tutorial: Combo charts in Power BI](power-bi-visualization-combo-chart.md).
+For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
 
 ### Doughnut charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
@@ -60,7 +60,7 @@ For more information, see [Tutorial: Combo charts in Power BI](power-bi-visualiz
 >[!TIP]
 >Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see [Tutorial: Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
+For more information, see [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md).
 
 ### Funnel charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
@@ -68,7 +68,7 @@ For more information, see [Tutorial: Doughnut charts in Power BI](power-bi-visua
 >[!TIP]
 >Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see [Tutorial: Funnel Charts in Power BI](power-bi-visualization-funnel-charts.md).
+For more information, see [Funnel Charts in Power BI](power-bi-visualization-funnel-charts.md).
 
 ### Gauge charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
@@ -76,7 +76,7 @@ For more information, see [Tutorial: Funnel Charts in Power BI](power-bi-visuali
 >[!TIP]
 >Displays current status in the context of a goal.
 
-For more information, see [Tutorial: Gauge Charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
+For more information, see [Gauge Charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 
 ### KPIs
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
@@ -84,7 +84,7 @@ For more information, see [Tutorial: Gauge Charts in Power BI](power-bi-visualiz
 >[!TIP]
 >Displays progress toward a measurable goal.
 
-For more information, see [Tutorial: KPIs in Power BI](power-bi-visualization-kpi.md).
+For more information, see [KPIs in Power BI](power-bi-visualization-kpi.md).
 
 ### Line charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
@@ -103,7 +103,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [Tutorial: ArcGIS maps in Power BI](../power-bi-visualization-arcgis.md).
+For more information, see [ArcGIS maps in Power BI](../power-bi-visualization-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -111,10 +111,21 @@ For more information, see [Tutorial: ArcGIS maps in Power BI](../power-bi-visual
 >[!TIP]
 >The more intense the color, the larger the value.
 
-For more information, see [Tutorial: Filled Maps in Power BI](power-bi-visualization-filled-maps-choropleths.md).
+For more information, see [Filled Maps in Power BI](power-bi-visualization-filled-maps-choropleths.md).
+
+### Maps: Shape maps
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
+
+>[!TIP]
+>Compares regions by color.
+
+For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
+
 
 ### Matrix
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+
+For more information, see [Matrix visuals in Power BI](desktop-shape-map.md).
 
 ### Pie charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
@@ -125,12 +136,20 @@ For more information, see [Tutorial: Filled Maps in Power BI](power-bi-visualiza
 >[!TIP]
 >Display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
 
-For more information, see [Tutorial: Scatter charts in Power BI](power-bi-visualization-scatter.md).
+For more information, see [Scatter charts in Power BI](power-bi-visualization-scatter.md).
+
+### Scatter-high density
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
+
+>[!TIP]
+>Too many data points on a visual can bog it down, so a sophisticated sampling algorithm is used to ensure the accuracy of the visualization.
+
+For more information, see [High Density Scatter charts in Power BI](desktop-high-density-scatter-charts.md).
 
 ### Slicers
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
-For more information, see [Tutorial: Slicers in Power BI](power-bi-visualization-slicers.md).
+For more information, see [Slicers in Power BI](power-bi-visualization-slicers.md).
 
 ### Standalone images
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
@@ -145,10 +164,10 @@ For more information, see [Add an image widget to a dashboard](../service-dashbo
 
 For more information, see [Working with tables in Power BI](power-bi-visualization-tables.md).
 
-### Tree Maps
+### Treemaps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
-For more information, see [Tutorial: Treemaps in Power BI](power-bi-visualization-treemaps.md).
+For more information, see [Treemaps in Power BI](power-bi-visualization-treemaps.md).
 
 >[!TIP]
 >Are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles.
@@ -159,7 +178,7 @@ For more information, see [Tutorial: Treemaps in Power BI](power-bi-visualizatio
 >[!TIP]
 >Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see [Tutorial Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
+For more information, see [Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 
 ## Tell Q&A which visualization to use
 When typing natural language queries with Power BI Q&A, you can specify the visualization type in your query.  For example:
@@ -177,4 +196,3 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
