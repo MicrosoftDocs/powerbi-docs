@@ -68,11 +68,11 @@ As you can see in the preceding image, there's blank *ProductName* row that's as
 
 * Any rows in the *ProductSales* table for which there is no corresponding row in the *Product* table. There's a referential integrity issue, as we see for product *C* in this example.
 
-* Any rows in the *ProductSales* table for which the foreign key column is Null. 
+* Any rows in the *ProductSales* table for which the foreign key column is null. 
 
 For these reasons, in both cases the blank row accounts for sales where the *ProductName* and *Price* are unknown.
 
-However, it sometime happens that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
+However, it sometimes happens that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
 
 * The *Sales* table contains sales data by *State*, with each row containing the sales amount for the type of sale in that state (including CA, WA, and TX). 
 
@@ -99,13 +99,13 @@ You could either leave the workaround table visible or hide it so that it does n
 
 ![Relationship view](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-A visual showing *State* (from the *CityData* table) along with the total *Population* and total *Sales* would then be as follows:
+A visual that displays *State* (from the *CityData* table), along with total *Population* and total *Sales*, would then appear as follows:
 
 ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 Note that given the use of the state from the *CityData* table in this workaround, only those states in that table are listed (and, thus, TX is excluded). Also, unlike *Many-1* relationships, while the total row includes all *Sales* (including those of TX), the details do not include a blank row covering such mismatched rows. Similarly, there would be no blank row covering *Sales* for which there is a null value for the *State*.
 
-If *City* were also added to that visual, although the population per *City* is known, the *Sales* shown for *City* would simply repeat the *Sales* for the corresponding *State*. This is normally the case when grouping on a column is not related to some aggregate measure, as shown in the following image:
+If *City* were also added to that visual, although the population per *City* is known, the *Sales* shown for *City* would simply repeat the *Sales* for the corresponding *State*. This is normally the case when the grouping in a column is unrelated to some aggregate measure, as shown in the following image:
 
 ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
@@ -113,11 +113,11 @@ If the new *Sales* table were defined to be the union of all *States* in this wo
 
 ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-In that case and as shown in the visual, *TX* (with *Sales* data but unknown *Population* data), and *New York* (with known *Population* data but no *Sales* data) would be included. 
+In the preceding case and as shown in the visual, *TX* (with *Sales* data but unknown *Population* data) and *New York* (with known *Population* data but no *Sales* data) would be included. 
 
-As you can see, this workaround was not optimal and has many issues. With the creation of *many-to-many* relationships, these issues are addressed, as described in the following section.
+As you can see, this workaround is not optimal and has many issues. With the creation of *many-to-many* relationships, these issues are addressed as described in the following section.
 
-## Using many-to-many relationships instead of the workaround
+## Use many-to-many relationships instead of the workaround
 
 In versions of Power BI Desktop starting with July 2018, you can directly relate tables such as those that are described in the previous section without needing to resort to similar workarounds. It's now possible to set the cardinality of a relationship to *Many to Many*, which indicates that neither table contains unique values. For such relationships, you can still control which table filters the other table, or apply bi-directional filtering where both tables filter each other.  
 
@@ -138,7 +138,7 @@ The major differences between *Many to Many* relationships and the more typical 
 
 * The values shown do not include a blank row that accounts for any mismatched rows in the other table. Nor do the values account for rows where the column used in the relationship in the other table is null.
 * It is not possible to use the `RELATED()` function, because more than one row could be related.
-* Using the `ALL()` function on a table does not remove filters that are applied to other tables related to it by a *Many to Many* relationship. For example, in the preceding example, a measure defined as shown in the following script would not remove filters on columns in the related *CityData* table:
+* Using the `ALL()` function on a table does not remove filters that are applied to other tables related to it by a *Many to Many* relationship. For example, in the preceding example, a measure that's defined as shown in the following script would not remove filters on columns in the related *CityData* table:
 
     ![Script example](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
 
@@ -146,7 +146,7 @@ The major differences between *Many to Many* relationships and the more typical 
 
     ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
 
-Because of this, care should be taken to ensure that calculations using `ALL(\<Table>)`, such as *% of grand total*, are returning the intended results. 
+Because of this, take care to ensure that calculations that use `ALL(\<Table>)`, such as *% of grand total*, are returning the intended results. 
 
 
 ## Limitations and considerations
@@ -163,7 +163,7 @@ The following Live Connect (multi-dimensional) sources cannot be used with compo
 
 When you connect to these multi-dimensional sources by using DirectQuery, you can neither connect to another DirectQuery source nor combine it with imported data.
 
-The existing limitations of using DirectQuery still apply when you use many-to-many relationships. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
+The existing limitations of using DirectQuery still apply when you use many-to-many relationships. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any of the tables within it has a storage mode of DirectQuery. 
 
 ## Next steps
 
