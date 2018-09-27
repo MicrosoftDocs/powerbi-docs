@@ -90,8 +90,8 @@
         href: ../../service-report-open.md
       - name: "Change how a chart is sorted in a Power BI report"
         href: ../../power-bi-report-change-sort.md
-      - name: "Export data from a visualization"
-        href: ../../power-bi-visualization-export-data.md
+#      - name: "Export data from a visualization"
+#        href: ../../power-bi-visualization-export-data.md
       - name: "How to use report filters"
         href: ../../power-bi-how-to-report-filter.md
       - name: "Subscribe to a report or dashboard"

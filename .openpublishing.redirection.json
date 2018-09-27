@@ -496,11 +496,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/power-bi-visualization-export-data.md",
-            "redirect_url": "/power-bi/consumer/end-user-export-data",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-basic-concepts.md",
             "redirect_url": "/power-bi/consumer/end-user-basic-concepts",
             "redirect_document_id": true
@@ -638,11 +633,6 @@
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
             "redirect_url": "/power-bi/consumer/end-user-subscribe",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-reports-visual-interactions.md",
-            "redirect_url": "/power-bi/consumer/end-user-interactions",
             "redirect_document_id": true
         },
         {

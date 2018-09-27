@@ -266,8 +266,8 @@
         href: ../service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
         href: ../service-analyze-in-excel.md
-      - name: "Change how visuals interact in a report"
-        href: ../service-reports-visual-interactions.md
+#      - name: "Change how visuals interact in a report"
+#        href: ../service-reports-visual-interactions.md
       - name: "Tips and tricks for creating reports in Power BI service"
         href: ../power-bi-reports-tips-and-tricks-for-creating.md
       - name: "Analytics pane"
