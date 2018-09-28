@@ -16,12 +16,12 @@ description: Power BI documentation
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
-                                <br>
                                 <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
+                                                    <br>
                                                     <div class="cardImage">
                                                         <img src="./media/index/PowerBI-4x_EA1E-01.svg" alt="" />
                                                     </div>
