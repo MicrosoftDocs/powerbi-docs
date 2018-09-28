@@ -1,4 +1,4 @@
-﻿- name: "Power BI documentation"
+- name: "Power BI documentation"
   href: index.md
 - name: "Power BI for report designers"
   href: power-bi-creator-landing.md
@@ -256,8 +256,6 @@
         href: desktop-gridlines-snap-to-grid.md
       - name: "High density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "High density scatter charts"
-        href: desktop-high-density-scatter-charts.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -324,6 +322,8 @@
         href: visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Scatter charts in Power BI"
         href: visuals/power-bi-visualization-scatter.md
+      - name: "High density scatter charts"
+        href: visuals/desktop-high-density-scatter-charts.md
       - name: "Slicers in Power BI"
         href: visuals/power-bi-visualization-slicers.md
       - name: "Working with tables"
