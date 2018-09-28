@@ -300,8 +300,6 @@
           href: service-cortana-enable.md
         - name: "Create featured questions for Power BI Q&A"
           href: service-q-and-a-create-featured-questions.md
-        - name: "Visualization types in Power BI"
-          href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
         - name: "Work with the linguistic schema in Power BI Desktop"
           href: power-bi-q-and-a-linguistic-schema.md
       - name: Share your work
@@ -584,14 +582,8 @@
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-ii.md
-    - name: "Basic area chart"
-      href: visuals/power-bi-visualization-basic-area-chart.md
-    - name: "Combo chart in Power BI"
-      href: visuals/power-bi-visualization-combo-chart.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "ArcGIS in Power BI"
-      href: power-bi-visualization-arcgis.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -768,6 +760,8 @@
       items: 
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
+      - name: "Visualization types in Power BI"
+        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Show the data used to create the visual"
         href: consumer/end-user-show-data.md
       - name: "Export the data used to create the visual"
@@ -796,6 +790,14 @@
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+      - name: "ArcGIS in Power BI"
+        href: power-bi-visualization-arcgis.md
+      - name: "Basic area chart"
+        href: visuals/power-bi-visualization-basic-area-chart.md
+      - name: "Cards (big number tiles) in Power BI"
+        href: visuals/power-bi-visualization-card.md
+      - name: "Combo chart in Power BI"
+        href: visuals/power-bi-visualization-combo-chart.md
       - name: "Doughnut charts in Power BI"
         href: visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (Choropleths) in Power BI"
@@ -804,6 +806,8 @@
         href: visuals/power-bi-visualization-funnel-charts.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
+      - name: "Create advanced analytics and visualizations using R scripts in Power BI"
+        href: visuals/service-r-visuals.md
       - name: "Radial gauge charts in Power BI"
         href: visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Scatter charts in Power BI"
@@ -812,16 +816,12 @@
         href: visuals/desktop-high-density-scatter-charts.md
       - name: "Slicers in Power BI"
         href: visuals/power-bi-visualization-slicers.md
-      - name: "Working with tables"
+      - name: "Tables in Power BI"
         href: visuals/power-bi-visualization-tables.md
       - name: "Treemaps in Power BI"
         href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
         href: visuals/power-bi-visualization-waterfall-charts.md
-      - name: "Cards (big number tiles) in Power BI"
-        href: visuals/power-bi-visualization-card.md
-      - name: "Create advanced analytics and visualizations using R scripts in Power BI"
-        href: visuals/service-r-visuals.md
     - name: Troubleshooting
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
