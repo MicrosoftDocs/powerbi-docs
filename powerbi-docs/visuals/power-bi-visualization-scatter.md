@@ -9,7 +9,7 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -110,7 +110,7 @@ Or if you don’t have that in your data, create a field that concatenates your 
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
-## Next step
+## Next steps
 
 [High density scatter charts](desktop-high-density-scatter-charts.md)
 
