@@ -16,6 +16,7 @@ description: Power BI documentation
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
+                                <br>
                                 <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
