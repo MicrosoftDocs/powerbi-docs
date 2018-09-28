@@ -5,7 +5,7 @@
   - name: Quickstarts
     expanded: true
     items: 
-    - name: "Find your way around in Power BI"
+    - name: "Find your way around"
       href: end-user-experience.md
   - name: Concepts
     items: 
@@ -17,25 +17,25 @@
         href: end-user-related.md
       - name: "Recent content"
         href: end-user-recent.md
-      - name: "Opt-in for Power BI preview features"
+      - name: "Opt-in for preview features"
         href: end-user-preview-features.md
-      - name: "Dashboards in Power BI"
+      - name: "Dashboards"
         href: end-user-dashboards.md
+      - name: "Dashboard tiles"
+        href: end-user-tiles.md
       - name: "Q&A in Power BI"
         href: end-user-q-and-a.md
-      - name: "Reports in Power BI"
+      - name: "Reports"
         href: end-user-reports.md
-      - name: "Dashboard tiles in Power BI"
-        href: end-user-tiles.md
+      - name: "Open a report in Reading view"
+        href: end-user-reading-view.md
       - name: "Shared with me"
         href: end-user-shared-with-me.md
       - name: "Frequently asked questions"
         href: end-user-faq.md
-      - name: "Quick Insights in Power BI"
+      - name: "Quick Insights"
         href: end-user-insights.md
-      - name: "Open a Power BI report in Reading view or Editing view"
-        href: end-user-reading-view.md
-      - name: "Types of Quick Insights supported by Power BI"
+      - name: "Types of Quick Insights"
         href: end-user-insight-types.md 
   - name: How to
     items: 
@@ -43,53 +43,51 @@
       items: 
       - name: "Display a dashboard tile in Focus mode"
         href: end-user-focus.md
-      - name: "Favorite dashboards, reports, and apps in Power BI"
+      - name: "Favorite dashboards, reports, and apps"
         href: end-user-favorite.md
-      - name: "Print a dashboard, print a dashboard tile, print a report page"
+      - name: "Print a dashboard, tile, or report page"
         href: end-user-print.md
-      - name: "Remove content within Power BI"
+      - name: "Remove content"
         href: end-user-delete.md
-      - name: "Tips and tricks for asking questions with Q&A in Power BI"
+      - name: "Tips for asking questions with Q&A"
         href: end-user-q-and-a-tips.md
-      - name: "Install and use apps, with dashboards and reports"
+      - name: "Install and use apps"
         href: end-user-apps.md
-      - name: "Find and connect to an organizational content pack"
+      - name: "Connect to an organizational content pack"
         href: end-user-content-pack.md
-    - name: Connect to services
-      items: 
       - name: "Connect to the services you use"
         href: end-user-connect-to-services.md
     - name: Dashboards
       items: 
-      - name: "Featured dashboards in Power BI"
+      - name: "Featured dashboards"
         href: end-user-featured.md
-      - name: "Power BI Unified Notification Center"
+      - name: "Unified Notification Center"
         href: end-user-notification-center.md
     - name: Reports
       items: 
       - name: "Many ways to open a report"
         href: end-user-report-open.md
-      - name: "Export data from a visualization"
-        href: end-user-export-data.md
-      - name: "Change how a chart is sorted in a Power BI report"
-        href: end-user-change-sort.md
       - name: "How to use report filters"
         href: end-user-report-filter.md
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
       - name: "Change how visuals interact in a report"
         href: end-user-interactions.md
-      - name: "Change the display settings for a page in a Power BI report"
+      - name: "Change display settings for a page in a report"
         href: end-user-report-view.md
     - name: Visualizations
       items: 
-      - name: "Drill down in a visualization in Power BI"
+      - name: "Drill down in a visualization"
         href: end-user-drill.md
       - name: "See the data used to create the visual"
         href: end-user-show-data.md
+      - name: "Export data from a visualization"
+        href: end-user-export-data.md
+      - name: "Change how a chart is sorted in a report"
+        href: end-user-change-sort.md
     - name: Ask questions of your data
       items:
-      - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
+      - name: "Using Q&A with a Gateway — Enterprise data (Preview)"
         href: end-user-q-and-a-direct-query.md
     - name: Publish
       items: 
@@ -131,21 +129,21 @@
     items: 
     - name: All mobile apps
       items: 
-      - name: "Share a dashboard from the Power BI mobile apps"
+      - name: "Share a dashboard from the mobile apps"
         href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
         href: mobile/mobile-apps-favorites.md
-      - name: "Set data alerts in the Power BI mobile apps"
+      - name: "Set data alerts in the mobile apps"
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-      - name: "Get notifications in the Power BI mobile apps"
+      - name: "Get notifications in the mobile apps"
         href: mobile/mobile-apps-notification-center.md
-      - name: "Create a deep link that goes to a specific location"
+      - name: "Create a deep link to a specific location"
         href: mobile/mobile-apps-deep-link-specific-location.md
-      - name: "Filter a report by location in the Power BI mobile apps"
+      - name: "Filter a report by location in the mobile apps"
         href: mobile/mobile-apps-geographic-filtering.md
-      - name: "Dashboards for mobile Power BI"
+      - name: "Dashboards for the mobile apps"
         href: mobile/mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
         href: mobile/mobile-reports-in-the-mobile-apps.md

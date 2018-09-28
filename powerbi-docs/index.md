@@ -45,7 +45,7 @@ description: Power BI documentation
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI for designers</h3>
+                                                    <h3>Power BI for report designers</h3>
                                                     <p>Are you a Power BI report designer? Learn how to connect to data, design queries, and create reports and dashboards.</p>
                                                 </div>
                                             </div>
