@@ -1,5 +1,3 @@
-- name: "Power BI documentation"
-  href: index.md
 - name: "Power BI for report designers"
   href: power-bi-creator-landing.md
 - name: Power BI Desktop
@@ -9,6 +7,7 @@
     - name: "What is Power BI Desktop?"
       href: desktop-what-is-desktop.md
   - name: Quickstarts
+    expanded: true
     items: 
     - name: "Connect to data"
       href: desktop-quickstart-connect-to-data.md

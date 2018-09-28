@@ -1,10 +1,9 @@
-﻿- name: "Power BI documentation"
-  href: ../index.md
-- name: "Power BI for consumers"
+﻿- name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
 - name: Power BI service
   items:
   - name: Quickstarts
+    expanded: true
     items: 
     - name: "Find your way around in Power BI"
       href: end-user-experience.md
