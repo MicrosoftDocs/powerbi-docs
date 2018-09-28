@@ -111,7 +111,7 @@ description: Power BI documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="/guided-learning/index.md">
+                                <a href="guided-learning/index.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
