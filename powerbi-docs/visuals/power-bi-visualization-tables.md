@@ -14,7 +14,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Working with tables in Power BI reports and dashboards
+# Tables in Power BI reports and dashboards
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
 
 ![](media/power-bi-visualization-tables/table.png)
@@ -116,7 +116,7 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 ## Considerations and troubleshooting
 * When applying column formatting, you can only choose one alignment option per column: Auto, Left, Center, Right. Usually, a column contains all text or all numbers, and not a mix. But in cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languagues where you read left-to-right.   
 
-## Next step
+## Next steps
 
 [Treemaps in Power BI](power-bi-visualization-treemaps.md)
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 09/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -190,9 +190,3 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
-
-[Reports in Power BI](../consumer/end-user-reports.md)
-
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)

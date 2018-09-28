@@ -9,7 +9,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 09/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -52,7 +52,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
     c.  Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Select the ellipses (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipses again and choose either **Sort ascending** or **Sort descending**.
+5. Select the ellipsis (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipsis again and choose either **Sort ascending** or **Sort descending**.
 
 6. Convert the column chart to a combo chart. There are two combo charts available: **Line and stacked column** and **Line and clustered column**. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
@@ -68,7 +68,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 ## Create a combo chart with two axes
 In this task, we'll compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin last year %** by **Month**. Select the ellipses to sort it by **Month** and **Ascending**.  
+1. Create a new line chart that tracks **Gross Margin last year %** by **Month**. Select the ellipsis to sort it by **Month** and **Ascending**.  
 In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -109,7 +109,7 @@ From here you might want to:
 
 Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
 
-## Next step
+## Next steps
 
 [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
 
