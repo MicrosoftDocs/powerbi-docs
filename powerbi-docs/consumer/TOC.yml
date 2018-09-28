@@ -45,12 +45,8 @@
         href: end-user-focus.md
       - name: "Favorite dashboards, reports, and apps"
         href: end-user-favorite.md
-      - name: "Print a dashboard, tile, or report page"
-        href: end-user-print.md
       - name: "Remove content"
         href: end-user-delete.md
-      - name: "Tips for asking questions with Q&A"
-        href: end-user-q-and-a-tips.md
       - name: "Install and use apps"
         href: end-user-apps.md
       - name: "Connect to an organizational content pack"
@@ -87,14 +83,16 @@
         href: end-user-change-sort.md
     - name: Ask questions of your data
       items:
-      - name: "Using Q&A with a Gateway — Enterprise data (Preview)"
+      - name: "Tips for asking questions with Q&A"
+        href: end-user-q-and-a-tips.md
+      - name: "Use Q&A with a Gateway — Enterprise data (Preview)"
         href: end-user-q-and-a-direct-query.md
-    - name: Publish
+    - name: Share your work
       items: 
       - name: "Publish to PowerPoint"
         href: end-user-powerpoint.md
-    - name: Share your work
-      items: 
+      - name: "Print a dashboard, tile, or report page"
+        href: end-user-print.md
       - name: "Publish apps with dashboards and reports"
         href: end-user-create-apps.md
   - name: Resources
