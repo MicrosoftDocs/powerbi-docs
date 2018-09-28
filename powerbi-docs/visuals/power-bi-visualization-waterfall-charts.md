@@ -9,7 +9,7 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/20/2018
+ms.date: 09/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -69,7 +69,7 @@ For information about using the Filters pane, see [Add a filter to a report](../
 
 Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
-## Next step
+## Next steps
 
 [Visual interactions](../service-reports-visual-interactions.md)
 
