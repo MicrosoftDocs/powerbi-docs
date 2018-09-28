@@ -21,7 +21,6 @@ description: Power BI documentation
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <br>
                                                     <div class="cardImage">
                                                         <img src="./media/index/PowerBI-4x_EA1E-01.svg" alt="" />
                                                     </div>

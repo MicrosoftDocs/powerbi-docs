@@ -6,7 +6,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landingpage
-ms.date: 09/27/2018
+ms.date: 09/28/2018
 ms.author: maggies
 layout: landingpage
 
@@ -29,10 +29,9 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                       <h3>Get started with Power BI</h3> 
                                                                                       <p></p>
                                                                                             <a href="end-user-consumer.md">What can I do as a Power BI consumer?</a><br/> 
-                                                                                            <a href="end-user-tour.md">Getting around the Power BI service</a><br/> 
+                                                                                            <a href="end-user-experience.md">Getting around the Power BI service</a><br/> 
                                                                                             <a href="end-user-basic-concepts.md">Basic concepts</a><br/>
                                                                                             <a href="../service-get-started.md">Get started tutorial</a><br/>
-                                                                                            <a href="end-user-glossary.md">Glossary</a>
                                                                         </div> 
                                                           </div> 
                                            </div> 
