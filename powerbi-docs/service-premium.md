@@ -34,7 +34,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 | Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
 | **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
 
-*<sup>1</sup> For more information, see [Power BI features by license type](features-license-type.md).*  
+*<sup>1</sup> For more information, see [Power BI features by license type](service-features-license-type.md).*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium.*
 
 ### Premium capacity

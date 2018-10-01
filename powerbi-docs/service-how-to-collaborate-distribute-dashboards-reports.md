@@ -25,7 +25,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 - Printing reports.
 * Publishing to the web for public web sites, where anyone in the world can see and interact with it.
 
-No matter which option you choose, to share a dashboard you need a [Power BI Pro license](features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
