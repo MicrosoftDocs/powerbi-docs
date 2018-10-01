@@ -76,5 +76,4 @@ You can also allocate additional resources within the Azure portal under **Confi
 [Get Data for Power BI](service-get-data.md)
 [Use Kerberos on the On-premises gateway for SSO](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)
 
-</br>
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
