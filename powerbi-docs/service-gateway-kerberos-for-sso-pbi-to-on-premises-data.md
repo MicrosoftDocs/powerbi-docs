@@ -105,7 +105,7 @@ While it is technically possible for a domain administrator to temporarily or pe
 
 To properly configure the system, we need to configure or validate the following two items:
 
-1. If needed, configure an SPN for the gateway service domain account (if none are created yet).
+1. If needed, configure an SPN for the gateway service domain account.
 2. Configure delegation settings on the gateway service domain account.
 
 Note that you must be a domain administrator to perform those two configuration steps.
