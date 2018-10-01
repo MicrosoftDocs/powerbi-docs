@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/26/2018
+ms.date: 10/01/2018
 ---
 
 # Power BI permissions
@@ -21,13 +21,13 @@ Power BI permissions give an application the ability to take certain actions on 
 | --- | --- | --- |
 | View all Datasets |The app can view all datasets for the signed in user and datasets that the user has access to. |Dataset.Read.All |
 | Read and Write all Datasets |The app can view and write to all datasets for the signed in user and datasets that the user has access to. |Dataset.ReadWrite.All |
-| Add data to a user's dataset (preview) |Gives an app access to add or delete a user's dataset rows. This permission does not grant the app access to the user's data. |Data.Alter_Any |
-| Create content (preview) |App can automatically create content and datasets for a user. |Content.Create |
+| Add data to a user's dataset |Gives an app access to add or delete a user's dataset rows. This permission does not grant the app access to the user's data. |Data.Alter_Any |
+| Create content |App can automatically create content and datasets for a user. |Content.Create |
 | View users Groups |The app can view all groups that the signed in user belongs to. |Group.Read |
 | View all Groups |The app can view all groups that the signed in user belongs to. |Group.Read.All |
-| Read and write all Groups |The app can view and write to all the groups for the signed in user and any groups that the user has access to. This does not provide rights to create a new group. |Group.ReadWrite.All |
-| View all Dashboards (preview) |The app can view all dashboards for the signed in user and dashboards that the user has access to. |Dashboard.Read.All |
-| View all Reports (preview) |The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure. |Report.Read.All |
+| Read and write all Groups |The app can view and write to all the groups for the signed in user and any groups that the user has access to. |Group.ReadWrite.All |
+| View all Dashboards |The app can view all dashboards for the signed in user and dashboards that the user has access to. |Dashboard.Read.All |
+| View all Reports |The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure. |Report.Read.All |
 | Read and write all Reports |The app can view and write to all the reports for the signed in user and any reports that the user has access to. This does not provide rights to create a new report. |Report.ReadWrite.All |
 | Read and write all Capacities |The app can view and write to all the capacities for the signed in user and any capacity that the user has access to. This does not provide rights to create a new capacity. |Capacities.ReadWrite.All |
 | Read all Capacities |The app can view and write to all the capacities for the signed in user and any capacities that the user has access to. This does not provide rights to create a new capacity. |Capacities.Read.All |
