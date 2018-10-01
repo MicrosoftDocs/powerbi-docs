@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 03/09/2018
+ms.date: 10/01/2018
 LocalizationGroup: Gateways
 ---
 
@@ -21,6 +21,7 @@ The following data sources are currently supported, all based on [Kerberos Const
 * SQL Server
 * SAP HANA
 * Teradata
+* Spark
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source.  When single sign-on is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
 
@@ -104,7 +105,7 @@ While it is technically possible for a domain administrator to temporarily or pe
 
 To properly configure the system, we need to configure or validate the following two items:
 
-1. If needed, configure an SPN for the gateway service domain account (if none are created yet).
+1. If needed, configure an SPN for the gateway service domain account.
 2. Configure delegation settings on the gateway service domain account.
 
 Note that you must be a domain administrator to perform those two configuration steps.
@@ -135,7 +136,7 @@ The second configuration requirement is the delegation settings on the gateway s
 
 We need to configure **Kerberos Constrained Delegation** with protocol transiting. With constrained delegation, you must be explicit with which services you want to delegate to – for example, only your SQL Server or your SAP HANA server will accept delegation calls from the gateway service account.
 
-This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, so on). To learn how to configure those data source server SPNs, please refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
+This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, Spark, and so on). To learn how to configure those data source server SPNs, please refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
 
 In the following steps we assume an on-premises environment with two machines: a gateway machine and a database server (SQL Server database), and for the sake of this example we'll also assume the following settings and names:
 
@@ -161,7 +162,7 @@ Given those example names and settings, the configuration steps are the followin
 
     ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_06.png)
 13. Select **OK**.
-    
+
     Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), the gateway service account must be granted the local policy “Impersonate a client after authentication”. You can perform/verify this with the Local Group Policy Editor (**gpedit**).
 14. On the gateway machine, run: *gpedit.msc*
 15. Navigate to **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
