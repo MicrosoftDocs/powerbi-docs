@@ -9,7 +9,7 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -19,9 +19,9 @@ A scatter chart always has two value axes to show one set of numerical data alon
 
 A bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
-![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+![sample bubble chart](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
-You can set the number of data points  
+You can set the number of data points, up to a maximum of 10,000.  
 
 ## When to use a scatter chart or bubble chart
 ### Scatter charts are a great choice:
@@ -46,7 +46,7 @@ Watch this video to see Will create a scatter chart and then follow the steps be
 
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Select the yellow plus icon to create a [blank report page ](../power-bi-report-add-page.md).
+1. Open the report in Editing view and select the yellow plus icon to create a [blank report page ](../power-bi-report-add-page.md).
  
 2. From the Fields pane, select the following fields:
    - **Sales** > **Sales Per Sq Ft**
@@ -77,20 +77,20 @@ Now let's add a third dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000. As you get into the higher numbers, we suggest testing first to ensure good performance. 
+3. To set the number of data points to show in your bubble chart, in the **Formatting** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000. As you get into the higher numbers, we suggest testing first to ensure good performance. 
 
-    ![Data Volume](./media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+    ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
    > [!NOTE]
    > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users' expectations. Note that for higher numbers of data points, you should test the results on different form factors to ensure good performance.
 
 4. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md). To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. Using a different Marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other. To select the marker shape, expand the **Shapes** card, then select a marker shape.
 
-      ![Marker shape](./media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+      ![Marker shape](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    You can also change the marker shape to diamond, triangle, or square:
 
-   ![Square marker](./media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+   ![Square marker](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
 
 ## Considerations and Troubleshooting
@@ -100,8 +100,7 @@ Does your scatter chart have only one data point that aggregates all the values 
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
-Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
-Like a simple row number or ID field:
+Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot; like a simple row number or ID field.
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
@@ -112,9 +111,8 @@ Or if you don’t have that in your data, create a field that concatenates your 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
 ## Next steps
+
+[High density scatter charts](desktop-high-density-scatter-charts.md)
+
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Sign up for a free trial](https://powerbi.microsoft.com/get-started/)  
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

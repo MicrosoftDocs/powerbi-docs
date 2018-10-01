@@ -9,7 +9,7 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 09/27/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -35,32 +35,32 @@ We'll create a waterfall chart that displays sales variance (estimated sales ver
 
 1. Select the **Datasets** tab and scroll to the new "Retail Analysis Sample" dataset.  Select the **Create report** icon to open the dataset in report editing view. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
-2. From the **Fields** pane, select **Sales \> Total Sales Variance**. If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
-3. Convert the chart to a **Waterfall**. 
+    ![Datasets tab highlighted](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
+2. From the **Fields** pane, select **Sales \> Total Sales Variance**. 
+3. Convert the chart to a **Waterfall**. If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
    
-    ![](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualization templates](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
 4. Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![waterfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 5. Sort the waterfall chart chronologically. From the top-right corner of the chart, select the ellipses (...) and choose **FiscalMonth**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort.png)
+    ![choose sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![reslt of new sort ascending](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Dig in a little more to see what's contributing most to the changes month to month. Drag **Store** > **Territory** to the **Breakdown** bucket.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 7. By default, Power BI adds the top 5 contributors to increases or decreases by month. But we're only interested in the top 2 contributors.  In the Formatting pane, select **Breakdown** and set **Maximum** to 2.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Formatting > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
    
     A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, negative and positive, in our waterfall chart. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-8. This is an interesting finding. Do Ohio and Pennsylvania have such a significant impact because sales in these 2 territories are much higher than the other territories?  We can check that. Create a map that looks at sales by territory.  
+    ![waterfall chart](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+8. This is an interesting finding. Do Ohio and Pennsylvania have such a significant impact because sales in these 2 territories are much higher than the other territories?  We can check that. Create a map that looks at this year sales value and last year sales by territory.  
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
+    ![map close-up on PA and Ohio](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
    
     Our map supports our theory.  It shows that these 2 territories had the highest value of sales last year (bubble size) and this year (bubble shading).
 
@@ -70,13 +70,7 @@ For information about using the Filters pane, see [Add a filter to a report](../
 Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
 ## Next steps
-[Reports in Power BI](../consumer/end-user-reports.md)
+
+[Visual interactions](../service-reports-visual-interactions.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)
-
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
