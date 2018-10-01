@@ -1,12 +1,12 @@
 ---
-title: Power BI for consumers
+title: Power BI for report consumers
 description: Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landingpage
-ms.date: 09/28/2018
+ms.date: 10/01/2018
 ms.author: maggies
 layout: landingpage
 
@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
 ---
 
-# Power BI for consumers
+# Power BI for report consumers
 
 Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them. Welcome!
 
