@@ -181,6 +181,7 @@ Given those example names and settings, the configuration steps are the followin
 18. Restart the **On-premises data gateway** service process.
 
 ## Running a Power BI report
+
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
 
 ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_09.png)
