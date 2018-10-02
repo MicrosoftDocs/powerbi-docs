@@ -24,42 +24,34 @@ You can use the following keyboard shortcuts to increase your productivity and t
 
 |Keyboard Command  |Result  |
 |---------|---------|
-|Ctrl+X   | Cut line (empty selection) |
 |Ctrl+C  | Copy line (empty selection) |
-|Alt+ ↑ / ↓  | Move line up/down |
-|Shift+Alt + ↓ / ↑  |Copy line up/down  |
-|Ctrl+Shift+K  |Delete line  |
+|Ctrl+G  |Go to line… |
+|Ctrl+I  |Select current line  |
+|Ctrl+M  |Toggle Tab moves focus |
+|Ctrl+U  |Undo last cursor operation  |
+|Ctrl+X   | Cut line (empty selection) |
 |Ctrl+Enter  |Insert line below  |
 |Ctrl+Shift+Enter  |Insert line above  |
 |Ctrl+Shift+\  |Jump to matching bracket  |
+|Ctrl+Shift+K  |Delete line  |
 |Ctrl+] / [  |Indent/outdent line  |
-|Home / End  |Go to beginning/end of line  |
 |Ctrl+Home  |Go to beginning of file  |
 |Ctrl+End  |Go to end of file  |
 |Ctrl+↑ / ↓   |Scroll line up/down  |
-|Alt+PgUp / PgDn  |Scroll page up/down  |
-
-|Keyboard Command  |Result  |
-|---------|---------|
-|Ctrl+G  |Go to line… |
-|Ctrl+M  |Toggle Tab moves focus |
-
-|Keyboard Command  |Result  |
-|---------|---------|
-|Alt+Click  |Insert cursor  |
-|Ctrl+Alt+ ↑ / ↓  |Insert cursor above / below  |
-|Ctrl+U  |Undo last cursor operation  |
-|Shift+Alt+I  |Insert cursor at end of each line selected |
-|Ctrl+I  |Select current line  |
-|Ctrl+Shift+L  |Select all occurrences of current |selection  
-|Ctrl+F2  |Select all occurrences of current word | 
-|Shift+Alt+→  |Expand selection  |
-|Shift+Alt+←  |Shrink selection |
-|Shift+Alt + (drag mouse) |Column (box) selection  |
 |Ctrl+Shift+Alt + (arrow key)  |Column (box) selection  |
 |Ctrl+Shift+Alt +PgUp/PgDn  |Column (box) selection page up/down |
-
-
+|Ctrl+Shift+L  |Select all occurrences of current selection |
+|Ctrl+Alt+ ↑ / ↓  |Insert cursor above / below  |
+|Ctrl+F2  |Select all occurrences of current word | 
+|Shift+Alt + (drag mouse) |Column (box) selection  |
+|Shift+Alt + ↓ / ↑  |Copy line up/down  |
+|Shift+Alt+→  |Expand selection  |
+|Shift+Alt+←  |Shrink selection |
+|Shift+Alt+I  |Insert cursor at end of each line selected |
+|Alt+ ↑ / ↓  | Move line up/down |
+|Alt+PgUp / PgDn  |Scroll page up/down  |
+|Alt+Click  |Insert cursor  |
+|Home / End  |Go to beginning/end of line  |
 
 ## Next steps
 
