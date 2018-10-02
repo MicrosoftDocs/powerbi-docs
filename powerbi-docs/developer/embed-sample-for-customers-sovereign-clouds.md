@@ -4,7 +4,6 @@ description: Learn how to integrate, or embed, a dashboard, tile or report, into
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
@@ -410,3 +409,4 @@ Limitations and Considerations
 * GCC accounts only support P and EM capacities now
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
