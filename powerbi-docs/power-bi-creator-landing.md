@@ -5,7 +5,7 @@ author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: landingpage
+ms.topic: landing-page
 ms.date: 09/24/2018
 ms.author: maggies
 layout: landingpage
