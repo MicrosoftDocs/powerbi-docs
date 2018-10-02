@@ -50,7 +50,7 @@ Follow these steps to purchase Power BI Pro licenses:
 
     ![Power BI subscription](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
 
-5. Hover over the ellipses (…) for the desired subscription, and select **Buy now**.
+5. Hover over the ellipsis (**. . .**) for the desired subscription, and select **Buy now**.
 
     ![Buy Now](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 
