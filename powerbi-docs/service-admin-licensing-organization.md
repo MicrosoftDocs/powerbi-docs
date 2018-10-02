@@ -52,15 +52,15 @@ Keep the following in mind before you follow the steps to sign up:
 
 1. On the left navigation pane, select **Billing** then **Subscriptions**.
 
-   ![Billing and subscriptions](media/service-power-bi-pro-in-your-organization/service-power-bi-pro-in-your-organization-05.png)
+   ![Billing and subscriptions](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
 1. On the right side, select **Add subscriptions**.
 
-   ![Add subscriptions](media/service-power-bi-pro-in-your-organization/service-power-bi-pro-in-your-organization-06.png)
+   ![Add subscriptions](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
 
 1. Under **Other Plans**, hover over the ellipsis (**. . .**) for Power BI Pro and select **Start free trial**.
 
-   ![Start free trial](media/service-power-bi-pro-in-your-organization/service-power-bi-pro-in-your-organization-07.png) 
+   ![Start free trial](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
 
 1. On the order confirmation screen, select **Try now**.
 
@@ -90,7 +90,7 @@ This block of licenses is available after the first time someone signs up for Po
 
 1. In the Office 365 admin center, under **Billing** > **Licenses**, check for **unlimited**.
 
-    ![Unlimited free license block](media/service-admin-service-free-in-your-organization/unlimited-licenses.png)
+    ![Unlimited free license block](media/service-admin-licensing-organization/unlimited-licenses.png)
 
 1. If the block is available, you can now [assign licenses in Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc). If the block isn't available, you have two choices:
 
@@ -108,7 +108,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 1. Under **Other Plans**, hover over the ellipsis (**. . .**) for Power BI (free) and select **Buy now**.
 
-    ![Buy now - Power BI (free)](media/service-admin-service-free-in-your-organization/buy-powerbi-free.png)
+    ![Buy now - Power BI (free)](media/service-admin-licensing-organization/buy-powerbi-free.png)
 
 1. Enter the number of licenses you want to add and select **Check out now** or **Add to cart**.
 
@@ -120,7 +120,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 1. If you decide later that you want to add more licenses, you can go back to **Add subscriptions**, and select **Change license quantity** for Power BI (free).
 
-    ![Change license quantity](media/service-admin-service-free-in-your-organization/change-license-quantity.png)
+    ![Change license quantity](media/service-admin-licensing-organization/change-license-quantity.png)
 
 ### Enable or disable individual user sign up in Azure Active Directory
 
@@ -135,7 +135,7 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
      connect-msolservice -credential $msolcred
     ```
 
-   ![Azure Active Directory sign in](media/service-admin-service-free-in-your-organization/aad-signin.png)
+   ![Azure Active Directory sign in](media/service-admin-licensing-organization/aad-signin.png)
 
 1. Once you are signed in, run the following command to see how your tenant is currently configured.
 
