@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 10/06/2018
 ---
 
 # Tutorial: Developing a Power BI Custom Visual
@@ -174,24 +174,19 @@ The full source code for this tutorial is available [here](https://github.com/uv
 
     ![Supported commands](media/custom-visual-develop-tutorial/powershell-supported-commands.png) 
 
-3. Navigate to your Workspace folder, using the folder path you used to install the course files.  In this case, we saved our files to the workspace folder in the c drive.
-
-    ```
-    cd C:\Workspace
-    ```
-4. To create a custom visual project, enter the following command. CircleCard is the name of the project.
+3. To create a custom visual project, enter the following command. CircleCard is the name of the project.
 
     ```powershell
     pbiviz new CircleCard
     ```
-5. Navigate to the project folder.
+4. Navigate to the project folder.
 
     ```powershell
     cd CircleCard
     ```
     ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
 
-6. Start the custom visual. YoUr CircleCard visual is now running while being hosted on your computer.
+5. Start the custom visual. YoUr CircleCard visual is now running while being hosted on your computer.
 
     ```powershell
     pbiviz start
