@@ -66,7 +66,7 @@ Keep the following in mind before you follow the steps to sign up:
 
 1. On the order receipt, select **Continue**.
 
-Now you can [assign licenses in Office 365](service-admin-premium-purchase.md#assign-licenses-in-office-365).
+Now you can [assign licenses in Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 ## Manage Power BI free licenses
 
@@ -92,7 +92,7 @@ This block of licenses is available after the first time someone signs up for Po
 
     ![Unlimited free license block](media/service-admin-service-free-in-your-organization/unlimited-licenses.png)
 
-1. If the block is available, you can now [assign licenses in Office 365](service-admin-premium-purchase.md#assign-licenses-in-office-365). If the block isn't available, you have two choices:
+1. If the block is available, you can now [assign licenses in Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc). If the block isn't available, you have two choices:
 
     * Have a member of your organization sign up individually, which triggers the creation of the unlimited block.
 
@@ -116,7 +116,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
     There is no purchase when using this approach, although you will need to either enter your credit card information for billing, or choose to be invoiced.
 
-1. You can now [assign licenses in Office 365](service-admin-premium-purchase.md#assign-licenses-in-office-365).
+1. You can now [assign licenses in Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 1. If you decide later that you want to add more licenses, you can go back to **Add subscriptions**, and select **Change license quantity** for Power BI (free).
 
