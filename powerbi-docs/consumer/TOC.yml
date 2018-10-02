@@ -1,0 +1,193 @@
+﻿- name: "Power BI for consumers"
+  href: power-bi-consumer-landing.md
+- name: Power BI service
+  items:
+  - name: Quickstarts
+    expanded: true
+    items: 
+    - name: "Find your way around"
+      href: end-user-experience.md
+  - name: Concepts
+    items: 
+      - name: "Power BI - basic concepts"
+        href: end-user-basic-concepts.md
+      - name: "Searching and sorting content"
+        href: end-user-search-filter-sort.md
+      - name: "Related content"
+        href: end-user-related.md
+      - name: "Recent content"
+        href: end-user-recent.md
+      - name: "Opt-in for preview features"
+        href: end-user-preview-features.md
+      - name: "Dashboards"
+        href: end-user-dashboards.md
+      - name: "Dashboard tiles"
+        href: end-user-tiles.md
+      - name: "Q&A in Power BI"
+        href: end-user-q-and-a.md
+      - name: "Reports"
+        href: end-user-reports.md
+      - name: "Open a report in Reading view"
+        href: end-user-reading-view.md
+      - name: "Shared with me"
+        href: end-user-shared-with-me.md
+      - name: "Frequently asked questions"
+        href: end-user-faq.md
+      - name: "Quick Insights"
+        href: end-user-insights.md
+      - name: "Types of Quick Insights"
+        href: end-user-insight-types.md 
+  - name: How to
+    items: 
+    - name: Common tasks
+      items: 
+      - name: "Display a dashboard tile in Focus mode"
+        href: end-user-focus.md
+      - name: "Favorite dashboards, reports, and apps"
+        href: end-user-favorite.md
+      - name: "Remove content"
+        href: end-user-delete.md
+      - name: "Install and use apps"
+        href: end-user-apps.md
+      - name: "Connect to an organizational content pack"
+        href: end-user-content-pack.md
+      - name: "Connect to the services you use"
+        href: end-user-connect-to-services.md
+    - name: Dashboards
+      items: 
+      - name: "Featured dashboards"
+        href: end-user-featured.md
+      - name: "Unified Notification Center"
+        href: end-user-notification-center.md
+    - name: Reports
+      items: 
+      - name: "Many ways to open a report"
+        href: end-user-report-open.md
+      - name: "How to use report filters"
+        href: end-user-report-filter.md
+      - name: "Subscribe to a report or dashboard"
+        href: end-user-subscribe.md
+      - name: "Change how visuals interact in a report"
+        href: end-user-interactions.md
+      - name: "Change display settings for a page in a report"
+        href: end-user-report-view.md
+    - name: Visualizations
+      items: 
+      - name: "Drill down in a visualization"
+        href: end-user-drill.md
+      - name: "See the data used to create the visual"
+        href: end-user-show-data.md
+      - name: "Export data from a visualization"
+        href: end-user-export-data.md
+      - name: "Change how a chart is sorted in a report"
+        href: end-user-change-sort.md
+    - name: Ask questions of your data
+      items:
+      - name: "Tips for asking questions with Q&A"
+        href: end-user-q-and-a-tips.md
+      - name: "Use Q&A with a Gateway — Enterprise data (Preview)"
+        href: end-user-q-and-a-direct-query.md
+    - name: Share your work
+      items: 
+      - name: "Publish to PowerPoint"
+        href: end-user-powerpoint.md
+      - name: "Print a dashboard, tile, or report page"
+        href: end-user-print.md
+      - name: "Publish apps with dashboards and reports"
+        href: end-user-create-apps.md
+  - name: Resources
+    items: 
+    - name: "Supported browsers"
+      href: end-user-browsers.md
+- name: Power BI mobile apps
+  items:
+  - name: Overview
+    items: 
+    - name: "What are the mobile apps?"
+      href: mobile/mobile-apps-for-mobile-devices.md
+  - name: Quickstarts
+    items:
+    - name: "Explore dashboards and reports"
+      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+  - name: Tutorials
+    items: 
+    - name: "Ask questions in the iOS mobile apps"
+      href: mobile/tutorial-mobile-apps-ios-qna.md
+  - name: Concepts
+    items: 
+    - name: "What's new in the mobile apps"
+      href: mobile/mobile-whats-new-in-the-mobile-apps.md
+    - name: "Get real-world data with the mobile apps"
+      href: mobile/mobile-apps-data-in-real-world-context.md
+    - name: "View your data offline in the mobile apps"
+      href: mobile/mobile-apps-offline-data.md
+    - name: "Power BI for Mixed Reality app (Preview)"
+      href: mobile/mobile-mixed-reality-app.md
+  - name: How to
+    items: 
+    - name: All mobile apps
+      items: 
+      - name: "Share a dashboard from the mobile apps"
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+      - name: "Interact with tiles in the mobile apps"
+        href: mobile/mobile-tiles-in-the-mobile-apps.md
+      - name: "Favorites in the mobile apps"
+        href: mobile/mobile-apps-favorites.md
+      - name: "Set data alerts in the mobile apps"
+        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+      - name: "Get notifications in the mobile apps"
+        href: mobile/mobile-apps-notification-center.md
+      - name: "Create a deep link to a specific location"
+        href: mobile/mobile-apps-deep-link-specific-location.md
+      - name: "Filter a report by location in the mobile apps"
+        href: mobile/mobile-apps-geographic-filtering.md
+      - name: "Dashboards for the mobile apps"
+        href: mobile/mobile-apps-view-dashboard.md
+      - name: "Reports in the mobile apps"
+        href: mobile/mobile-reports-in-the-mobile-apps.md
+      - name: "Using OAuth to connect to Reporting Services"
+        href: mobile/mobile-oauth-ssrs.md
+    - name: Android devices
+      items: 
+      - name: "Get started with the Android app"
+        href: mobile/mobile-android-app-get-started.md
+      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
+        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: "Fixing 'Need to update Android System Webview'"
+        href: mobile/mobile-android-error-update-android-system-webview.md
+    - name: iOS
+      items: 
+      - name: "Get started with the iOS app"
+        href: mobile/mobile-iphone-app-get-started.md
+      - name: "Q&A virtual analyst in iOS mobile apps"
+        href: mobile/mobile-apps-ios-qna.md
+      - name: "Power BI Apple Watch app"
+        href: mobile/mobile-apple-watch.md
+      - name: "Scan a barcode from the app on your iPhone"
+        href: mobile/mobile-apps-scan-barcode-iphone.md
+    - name: iOS and Android
+      items: 
+      - name: "View on-premises reports in the mobile apps"
+        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "View reports optimized for your phone"
+        href: mobile/mobile-apps-view-phone-report.md
+      - name: "Scan a Power BI QR code from your phone"
+        href: mobile/mobile-apps-qr-code.md
+      - name: "Annotate and share in the mobile apps"
+        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+    - name: Power BI app for Windows 10 devices
+      items: 
+      - name: "Get started with the Windows 10 app"
+        href: mobile/mobile-windows-10-phone-app-get-started.md
+      - name: "Pin a dashboard to the Start screen"
+        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+      - name: "View Reporting Services mobile reports and KPIs"
+        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+      - name: "View Power BI on Surface Hub"
+        href: mobile/mobile-windows-10-app-presentation-mode.md
+      - name: "Single Sign-On in the Windows app"
+        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+  - name: Resources
+    items: 
+    - name: "Supported languages in the mobile apps"
+      href: mobile/mobile-apps-supported-languages.md
