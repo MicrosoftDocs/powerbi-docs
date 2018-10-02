@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
-* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+* You need [Visual Studio Code](https://www.visualstudio.com/) installed.
 
 ## Setting Up the Developer Environment
 
