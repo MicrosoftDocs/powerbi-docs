@@ -2,11 +2,11 @@
 title: What is Power BI?
 description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server, Power BI embedded.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/22/2018
+ms.date: 09/22/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 # What is Power BI?
 **Power BI** is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses, **Power BI** lets you easily connect to your data sources, visualize (or discover) what’s important, and share that with anyone or everyone you want.
 
-![diagram showing innput sources for Power BI](media/power-bi-overview/power-bi-input.png)
+![diagram showing input sources for Power BI](media/power-bi-overview/power-bi-input-new.png)
 
 **Power BI** can be simple and fast – capable of creating quick insights from an Excel spreadsheet or a local database. But **Power BI** is also robust and enterprise-grade, ready for extensive modeling and real-time analytics, as well as custom development. So it can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
 
@@ -38,6 +38,12 @@ You also might use each element of **Power BI** at different times, depending on
 
 Perhaps you view inventory and manufacturing progress in a real-time dashboard in the service, and also use **Power BI Desktop** to create reports for your own team about customer engagement statistics. How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation – but each part of Power BI is available to you, which is why it’s so flexible and compelling.
 
+To explore documents that pertain to your role:
+- Power BI for [***designers***](desktop-what-is-desktop.md)
+- Power BI for [***consumers***](consumer/end-user-consuming.md)
+- Power BI for [***developers***](developer/what-can-you-do.md)
+- Power BI for [***administrators***](service-admin-administering-power-bi-in-your-organization.md)
+
 ## The flow of work in Power BI
 A common flow of work in Power BI begins by connecting to data sources and building a report in **Power BI Desktop**. That report is then published from **Desktop** to **Power BI service**, and shared so users in **service** and **mobile** can *consume* (view and interact with) the report.
 Sometimes, you may want to give colleagues permissions similar to your own (*creator* permissions) so that they can use **service** to edit reports, create dashboards, and share their work too.
@@ -54,5 +60,5 @@ Create, deploy, and manage Power BI, mobile and paginated reports on premises wi
 Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that’s viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready.
 
 ## Next steps
-[Sign in, get some data, and learn your way around Power BI service](consumer/end-user-experience.md)   
+[Sign in, get some data, and learn your way around Power BI service](service-the-new-power-bi-experience.md)   
 [Tutorial: Get started with Power BI service](service-get-started.md)

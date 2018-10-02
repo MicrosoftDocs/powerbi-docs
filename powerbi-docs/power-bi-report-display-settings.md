@@ -1,7 +1,7 @@
 ---
 title: Page display settings and page view settings for a report
 description: Page display settings and page view settings for a report
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/24/2017
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
