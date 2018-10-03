@@ -14,7 +14,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-## Add comments to a visualization
+# Add comments to a visualization
 Add a personal comment or start a conversation about a visualization with your colleagues. The **comment** feature is just one of the ways a *consumer* can interact with a visualization. 
 
 ![comments video](media/end-user-comment/comment.gif)
