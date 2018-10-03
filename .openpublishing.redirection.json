@@ -659,6 +659,31 @@
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-free-vs-pro.md",
+            "redirect_url": "/power-bi/service-features-license-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-power-bi-pro-in-your-organization.md",
+            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-service-free-in-your-organization.md",
+            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses.md",
+            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
+            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": false
         }
     ]
 }
