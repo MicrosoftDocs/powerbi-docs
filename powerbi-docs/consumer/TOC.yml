@@ -58,7 +58,7 @@
       - name: "Shared with me"
         href: end-user-shared-with-me.md
       - name: "Find and connect to organizational content packs"
-	href: end-user-content-pack.md
+        href: end-user-content-pack.md
     - name: Ask questions of your data
       items:
       - name: "Q&A in Power BI"
@@ -66,13 +66,13 @@
       - name: "Tips and tricks for asking questions with Q&A in Power BI"
         href: end-user-q-and-a-tips.md
   - name: Resources
-    items: 
+    items:
     - name: "Glossary and terminology"
       href: end-user-glossary.md
     - name: "Supported browsers"
       href: end-user-browsers.md
     - name: "Types of Quick Insights supported by Power BI"
-      href: end-user-insight-types.md 
+      href: end-user-insight-types.md
 - name: Power BI mobile apps
   items:
   - name: Overview
