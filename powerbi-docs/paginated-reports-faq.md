@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 09/20/2018
+ms.date: 10/04/2018
 ms.author: maggies
 
 ---
@@ -27,6 +27,10 @@ The paginated reports workload is available on P1 – P3 SKUs for public preview
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
 Currently, you may only reserve 50% of the memory for this workload. 
+
+### How does user access work for paginated reports?
+
+User access for paginated reports is the same as user access for all other content in the Power BI service 
 
 ### How do I turn on/off my paginated reports workload?
 
