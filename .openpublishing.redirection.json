@@ -11,6 +11,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/customer-test/consumer/power-bi-consumer-overview.md",
+            "redirect_url": "/power-bi/consumer/power-bi-consumer-landing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/customer-test/power-bi-creator-landing.md",
+            "redirect_url": "/power-bi/power-bi-creator-landing",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/personal-gateway.md",
             "redirect_url": "/power-bi/service-gateway-personal-mode",
             "redirect_document_id": true
@@ -22,22 +32,22 @@
         },
         {
             "source_path": "powerbi-docs/mobile-apps-find-content-mobile-devices.md",
-            "redirect_url": "/power-bi/mobile-apps-quickstart-view-dashboard-report",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-quickstart-view-dashboard-report",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apps-optimize-dashboard-phone-view.md",
-            "redirect_url": "/power-bi/mobile-apps-view-phone-report",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-view-phone-report",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-ipad-app-get-started.md",
-            "redirect_url": "/power-bi/mobile-iphone-app-get-started",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/mobile/mobile-iphone-app-get-started",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-ios-ipad-iphone-apps.md",
-            "redirect_url": "/power-bi/mobile-iphone-app-get-started",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-iphone-app-get-started",
             "redirect_document_id": false
         },
         {
@@ -649,6 +659,31 @@
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-free-vs-pro.md",
+            "redirect_url": "/power-bi/service-features-license-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-power-bi-pro-in-your-organization.md",
+            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-service-free-in-your-organization.md",
+            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses.md",
+            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
+            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": false
         }
     ]
 }

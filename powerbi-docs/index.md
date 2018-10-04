@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 title: Power BI documentation
 description: Power BI documentation
+ms.service: powerbi
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -22,7 +23,7 @@ description: Power BI documentation
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI-4x_EA1E-01.svg" alt="" />
+                                                        <img src="./media/index/powerbi-4x_ea1e-01-resized-with-ratio.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

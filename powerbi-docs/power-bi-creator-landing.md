@@ -5,7 +5,7 @@ author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: landingpage
+ms.topic: landing-page
 ms.date: 09/24/2018
 ms.author: maggies
 layout: landingpage
@@ -43,7 +43,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                         <div class="cardText"> 
                                                                                       <h3>Power BI licensing</h3> 
                                                                                       <p></p>
-                                                                                            <a href="service-admin-power-bi-pro-in-your-organization.md">Power BI Pro in your organization</a><br/> 
+                                                                                            <a href="service-admin-licensing-organization.md">Power BI licensing in your organization</a><br/> 
                                                                                             <a href="service-premium.md">Power BI Premium: What is it?</a> 
                                                                         </div> 
                                                           </div> 

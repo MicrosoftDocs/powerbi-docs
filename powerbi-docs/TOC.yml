@@ -1,6 +1,4 @@
-- name: "Power BI for report designers"
-  href: power-bi-creator-landing.md
-- name: Power BI Desktop
+﻿- name: Power BI Desktop
   items:
   - name: Overview
     items: 
@@ -295,6 +293,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Add a hyperlink to a Text Box in a Power BI report"
         href: service-add-hyperlink-to-text-box.md
+      - name: "Change how visuals interact in a report"
+        href: service-reports-visual-interactions.md
       - name: "Histograms"
         href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
@@ -385,8 +385,8 @@
       href: refresh-data.md
     - name: "Power BI for US Government"
       href: service-govus-overview.md
-    - name: "Power BI Free vs Pro"
-      href: service-free-vs-pro.md
+    - name: "Features by license type"
+      href: service-features-license-type.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
     - name: "About filters and highlighting in Power BI reports"
@@ -1101,14 +1101,6 @@
     items: 
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
-  - name: Quickstarts
-    items:
-    - name: "Purchase Power BI Pro"
-      href: service-admin-purchasing-power-bi-pro.md
-    - name: "Assign Power BI Pro licenses - Office 365"
-      href: service-admin-assigning-power-bi-pro-licenses.md
-    - name: "Assign Power BI Pro licenses - Azure"
-      href: service-admin-assigning-power-bi-pro-licenses-azure.md
   - name: Concepts
     items:
     - name: "Power BI Premium"
@@ -1133,16 +1125,24 @@
         href: service-premium-faq.md
       - name: "Power BI Premium release notes"
         href: service-premium-release-notes.md
-      - name: "Administration role in Office 365"
-        href: service-admin-role.md
-      - name: "Frequently asked questions (FAQ)"
-        href: service-admin-faq.md
+    - name: "Administration role in Office 365"
+      href: service-admin-role.md
+    - name: "Frequently asked questions (FAQ)"
+      href: service-admin-faq.md
   - name: How to
     items: 
     - name: "Power BI admin portal"
       href: service-admin-portal.md
-    - name: "Signing up for Power BI with a new Office 365 Trial"
-      href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - name: "Licensing and sign-up"
+      items:
+      - name: "Licensing for your organization"
+        href: service-admin-licensing-organization.md
+      - name: "Purchase Power BI Pro"
+        href: service-admin-purchasing-power-bi-pro.md
+      - name: "Sign up with an Office 365 Trial"
+        href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      - name: "Add Power BI with an Office 365 partner"
+        href: service-admin-syndication-partner.md
     - name: "Where is my tenant located?"
       href: service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
@@ -1153,10 +1153,6 @@
       href: service-admin-health.md
     - name: "Closing your Power BI account"
       href: service-admin-closing-your-account.md
-    - name: "Power BI Pro in your organization"
-      href: service-admin-power-bi-pro-in-your-organization.md
-    - name: "Power BI (free) in your organization"
-      href: service-admin-service-free-in-your-organization.md
     - name: "Power BI and ExpressRoute"
       href: service-admin-power-bi-expressroute.md
     - name: "Using Azure AD B2B"
@@ -1165,8 +1161,6 @@
       href: service-admin-rls.md
     - name: "Power BI archived workspace"
       href: service-admin-power-bi-archived-workspace.md
-    - name: "Unable to add Power BI to O365 partner"
-      href: service-admin-syndication-partner.md
     - name: "Configure mobile apps with Intune"
       href: service-admin-mobile-intune.md
   - name: Reference
