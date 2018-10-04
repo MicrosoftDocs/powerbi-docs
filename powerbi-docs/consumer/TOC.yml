@@ -1,5 +1,3 @@
-- name: "Power BI documentation"
-  href: ../index.md
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
 - name: Power BI service
