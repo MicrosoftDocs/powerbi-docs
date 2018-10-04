@@ -179,14 +179,14 @@ The full source code for this tutorial is available [here](https://github.com/uv
     ```powershell
     pbiviz new CircleCard
     ```
+    ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
+
 4. Navigate to the project folder.
 
     ```powershell
     cd CircleCard
     ```
-    ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
-
-5. Start the custom visual. YoUr CircleCard visual is now running while being hosted on your computer.
+5. Start the custom visual. Your CircleCard visual is now running while being hosted on your computer.
 
     ```powershell
     pbiviz start
@@ -254,19 +254,22 @@ To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to 
 
 ## Adding Visual Elements
 
-Now you need to install the **D3 JavaScript library**.
+Now you need to install the **D3 JavaScript library**. D3 is a JavaScript library for producing dynamic, interactive data
+visualizations in web browsers. It makes use of widely implemented SVG
+HTML5, and CSS standards.
 
-Then you can develop the custom visual to display a circle with text.
+Now you can develop the custom visual to display a circle with text.
 
 > ![Note]
-> D3 is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented SVG, HTML5, and CSS standards.
+> Many text entries in this tutorial can be copied from [here](https://github.com/uve/circlecard).
 
 1. To install the **D3 library** in PowerShell, enter the command below.
 
     ```powershell
     npm i d3@3.5.5 --save
     ```
-Many text entries in this tutorial can be copied from [here](https://github.com/uve/circlecard).
+
+    ![Install D3 library](media/custom-visual-develop-tutorial/install-d3-library.png)
 
 2. To install type definitions for the **D3 library**, enter the command below.
 
@@ -274,7 +277,9 @@ Many text entries in this tutorial can be copied from [here](https://github.com/
     npm i @types/d3@3.5
     ```
 
-This command installs TypeScript definitions based on JavaScript files, enabling you to develop the custom visual in TypeScript (which is a superset of JavaScript). Visual Studio Code is an ideal IDE for developing TypeScript applications.
+    ![Install D3 library](media/custom-visual-develop-tutorial/install-d3-library-type-def.png)
+
+    This command installs TypeScript definitions based on JavaScript files, enabling you to develop the custom visual in TypeScript (which is a superset of JavaScript). Visual Studio Code is an ideal IDE for developing TypeScript applications.
 
 3. Launch [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -292,23 +297,16 @@ This command installs TypeScript definitions based on JavaScript files, enabling
 
     ![Index.d.ts file](media/custom-visual-develop-tutorial/index-d-ts.png)
 
-6. Open the **tsconfig.json** file if you need to make some changes.
+6. Select the **pbiviz.json** file.
 
-    ![Tsconfig file](media/custom-visual-develop-tutorial/tsconfig-json.png)
-    ![Ts code](media/custom-visual-develop-tutorial/tsconfig-json-code.png)
-
-7. Save the **tsconfig.json** file.
-
-8. Select the **pbiviz.json** file.
-
-9. To register the **d3 library**, enter the following file reference into the externalJS array. Be sure to add a *comma* after the existing file reference.
+7. To register the **d3 library**, enter the following file reference into the externalJS array. Be sure to add a *comma* after the existing file reference.
 
     ```javascript
     "node_modules/d3/d3.min.js"
     ```
     ![Adding node_modules/d3/d3.min.js](media/custom-visual-develop-tutorial/adding-node-module.png)
 
-10. Save the **pbiviz.json** file changes.
+8. Save the **pbiviz.json** file changes.
 
 ### Developing the Visual Elements
 
