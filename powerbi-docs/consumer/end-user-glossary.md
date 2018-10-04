@@ -17,7 +17,8 @@ The Power BI service may introduce terminology that is unfamiliar or confusing. 
 This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article.
 
 ## A
-**account**   
+
+**account**
 There are different types of Power BI accounts.  A Power BI Pro account is a paid monthly subscription.  A Power BI Free account enables viewing of content that’s hosted on Power BI Premium capacity.  
 
 **admin portal**
@@ -38,7 +39,9 @@ To write lines, text, or stamps on a snapshot copy of a tile, report, or visual 
 **answer card, answer page**
 See Cortana answer card.
 
-**app, apps**  
+**app, apps**
+
+ 
 **app workspace**
 All workspaces in Power BI except for My workspace are now app workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.  
 
