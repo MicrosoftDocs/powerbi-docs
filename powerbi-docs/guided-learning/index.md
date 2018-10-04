@@ -2,7 +2,7 @@
 title: Microsoft Power BI Guided Learning
 description: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
 layout: LandingPage
-ms.service: power-bi
+ms.service: powerbi
 ---
 <div id="main" class="v2">
     <div class="container">
