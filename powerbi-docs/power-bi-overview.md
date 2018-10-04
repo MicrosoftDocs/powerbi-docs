@@ -40,7 +40,7 @@ Perhaps you view inventory and manufacturing progress in a real-time dashboard i
 
 To explore documents that pertain to your role:
 - Power BI for [***designers***](desktop-what-is-desktop.md)
-- Power BI for [***consumers***](consumer/end-user-consuming.md)
+- Power BI for [***consumers***](consumer/end-user-consumer.md)
 - Power BI for [***developers***](developer/what-can-you-do.md)
 - Power BI for [***administrators***](service-admin-administering-power-bi-in-your-organization.md)
 
