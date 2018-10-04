@@ -454,7 +454,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     Notice that the circle and text value scales to fit the available dimension of the visual.
 
-    The update method is called continuously with resizing the visual, and this results in the fluid rescaling of the visual elements.
+    The update method is called continuously with resizing the visual, and it results in the fluid rescaling of the visual elements.
 
     You have now developed the visual elements.
 
@@ -535,7 +535,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
-2. In the **update** method, replace **.text(“Value”)** with the following.
+2. In the **update** method, replace.text(“Value”)** with the following.
 
     ```typescript
     .text(dataView.single.value as string)
@@ -565,7 +565,7 @@ You are now going to add common properties to the visual.
 
 2. In **Visual Studio Code**, open the *capabilities.json* file.
 
-3. Before the **dataViewMappings** array, add the **objects** object (after line 8).
+3. Before the **dataViewMappings** array, add **objects** (after line 8).
 
     ```json
     "objects": {},
@@ -643,7 +643,7 @@ You are now going to add common properties to the visual.
 
     ![Module classes](media/custom-visual-develop-tutorial/module-classes.png)
 
-    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the **capabilities.json** file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle** which matches the object defined in the *capabilities.json* file, and which returns an instance of **CircleSettings**.
+    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the **capabilities.json** file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle**, which matches the object defined in the *capabilities.json* file, and returns an instance of **CircleSettings**.
 
 6. Save the **settings.ts** file.
 
@@ -656,7 +656,7 @@ You are now going to add common properties to the visual.
     ```
     This property stores a reference to the **VisualSettings** object, describing the visual settings.
 
-    ![Visual class add](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Add visual class](media/custom-visual-develop-tutorial/visual-class-add-on.png)
 
 9. In the **Visual** class, add the following method before the **update** method. This method is used to populate the formatting options.
 
@@ -687,7 +687,7 @@ You are now going to add common properties to the visual.
     this.visualSettings.circle.circleColor
     ```
 
-    ![Circle element fill](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Fills the circle element](media/custom-visual-develop-tutorial/circle-element-fill.png)
 
 12. For the **circle element**, modify the value passed to the **stroke-width style** to the following expression.
 
@@ -727,7 +727,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
     In the **Visualizations** pane, hovering over the icon reveals the display name.
 
-    ![Display Name Viz](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Display Name visual](media/custom-visual-develop-tutorial/display-name-viz.png)
 
 4. For the **description** property, enter the following text.
 
