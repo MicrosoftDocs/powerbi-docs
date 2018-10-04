@@ -87,7 +87,7 @@ The header text explains the following:
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store data for 5 full calendar years plus data for the current year up to the current date, and incrementally refresh 10 days of data. After the initial load, if the dataset is refreshed daily, the following will be carried out for each (incremental) refresh operation.
+The following example defines a refresh policy to store data for 5 full calendar years plus data for the current year up to the current date, and incrementally refresh 10 days of data. The first refresh operation will load historical data. Subsequent refreshes, if performed daily, will carry out the following for each (incremental) refresh operation.
 
 -   Add a new day of data.
 
