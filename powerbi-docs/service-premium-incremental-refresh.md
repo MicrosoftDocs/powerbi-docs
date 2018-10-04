@@ -95,7 +95,7 @@ The following example defines a refresh policy to store data for 5 full calendar
 
 -   Remove calendar years that are older than 5 years prior to the current date. For example, if the current date is January 1st 2019, the year 2013 is removed.
 
-The first refresh in the Power BI service may take longer to import all 5 years. Subsequent refreshes may be finished in a fraction of the time.
+The first refresh in the Power BI service may take longer to import all 5 full calendar years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
