@@ -2,6 +2,10 @@
   href: power-bi-consumer-landing.md
 - name: Power BI service
   items:
+  - name: Overview
+    items: 
+      - name: "Power BI consumers and designers"
+        href: end-user-consumer.md
   - name: Quickstarts
     expanded: true
     items: 

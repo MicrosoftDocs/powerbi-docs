@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 title: Power BI documentation
 description: Power BI documentation
+ms.service: power-bi
 ---
 <div id="main" class="v2">
     <div class="container">
