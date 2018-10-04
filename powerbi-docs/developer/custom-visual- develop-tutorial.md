@@ -283,7 +283,7 @@ Now you can develop the custom visual to display a circle with text.
 
 3. Launch [Visual Studio Code](https://code.visualstudio.com/).
 
-    You can launch **Visual Studio Code** from powershell by using the follwoing command.
+    You can launch **Visual Studio Code** from powershell by using the following command.
 
     ```powershell
     code .
