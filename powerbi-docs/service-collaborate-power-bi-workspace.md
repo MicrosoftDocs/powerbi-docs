@@ -19,7 +19,7 @@ Power BI app workspaces are great places to collaborate with your colleagues on 
 > [!NOTE]
 > The new workspace experience preview will change the relationship between Power BI workspaces and Office 365 groups. You won't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces (preview)](service-create-the-new-workspaces.md)
 
-App workspaces are only available with [Power BI Pro](service-free-vs-pro.md).
+App workspaces are only available with a [Power BI Pro license](service-features-license-type.md).
 
 ## Collaborate on Power BI Desktop files in your app workspace
 After you create a Power BI Desktop file, if you publish it to your Power BI app workspace, then everyone in your workspace can collaborate on it.
@@ -34,7 +34,7 @@ After you create a Power BI Desktop file, if you publish it to your Power BI app
    
     ![Reports tab](media/service-collaborate-power-bi-workspace/power-bi-workspace-report.png)
    
-    From here, it's like any other report in Power BI. You and others in your app workspace can [modify the report](service-reports.md) and save tiles to a dashboard of your choosing.
+    From here, it's like any other report in Power BI. You and others in your app workspace can [modify the report](consumer/end-user-reports.md) and save tiles to a dashboard of your choosing.
 
 ## Collaborate in Office 365
 Collaborating in Office 365 starts from the app workspace in Power BI.
@@ -73,7 +73,7 @@ Collaborating in Office 365 starts from the app workspace in Power BI.
 If you’re owner or admin for an app workspace, you can also add or remove workspace members. Read more about [managing your Power BI app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Next steps
-* [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
+* [Create apps and app workspaces in Power BI](consumer/end-user-create-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

@@ -73,7 +73,7 @@ In the current workspaces you can also connect using organizational content pack
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](consumer/end-user-create-apps.md) for details.
 
 ## Power BI apps FAQ
 
@@ -88,7 +88,7 @@ Apps are the evolution of organizational content packs. If you have organization
 See [How are the new app workspaces different from existing app workspaces?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) to compare the current and new app workspaces. 
 
 ## Next steps
-* [Install and use apps in Power BI](service-install-use-apps.md)
-* [Power BI apps for external services](service-connect-to-services.md)
+* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Power BI apps for external services](consumer/end-user-connect-to-services.md)
 - [Create the new workspaces (preview)](service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

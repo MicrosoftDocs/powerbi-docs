@@ -1,7 +1,7 @@
 ---
 title: Edit a dashboard tile  
 description: This tutorial takes your from creating a tile and pinning it to a dashboard, to learning how to edit that dashboard tile -- resize, move, rename, pin, delete, add hyperlink.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
@@ -32,7 +32,7 @@ This article covers the following.
 * [Delete a tile](#delete)
   
   > [!TIP]
-  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](service-dashboard-tiles.md).
+  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](consumer/end-user-tiles.md).
 
   
 ## Prerequisites
@@ -138,11 +138,11 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 - - -
 ## Next steps
-[Dashboard tiles in Power BI](service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](consumer/end-user-tiles.md)
 
-[Dashboards in Power BI](service-dashboards.md)
+[Dashboards in Power BI](consumer/end-user-dashboards.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

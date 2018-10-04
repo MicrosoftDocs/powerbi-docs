@@ -1,7 +1,7 @@
 ---
 title: Add a visualization, page, drillthrough, or report filter to a report
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/26/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
@@ -22,13 +22,13 @@ This examples in this article show Power BI service. However, the steps are almo
 > 
 
 ## What is the difference between report filters in Editing View versus Reading View
-There are two modes for interacting with reports: [Reading View](service-reading-view-and-editing-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
+There are two modes for interacting with reports: [Reading View](consumer/end-user-reading-view.md) and [Editing View](service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
 * In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you've added.
 * In Reading View, you can interact with any report, drillthrough, page, and visual filters that already exist in the report, but you cannot add new filters. However, the changes you make in the Filters pane are saved with the report -- even if you view the report in a mobile app and even if you leave the report and return to it later.  
 
 > [!NOTE]
-> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](service-reading-view-and-editing-view.md).
+> This article describes how to create filters in report **Editing View**.  For more information on filters in Reading View, see [interacting with filters in report Reading View](consumer/end-user-reading-view.md).
 
 
 ## Filters available in the Power BI *Filters* pane
@@ -54,7 +54,7 @@ There are 2 ways to do this:
 * by identifying a field that is not already being used by the visualization, and adding that field directly to the **Visual level filters** bucket.
 
 ### By filtering the fields already in the visualization
-1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
+1. Open your [report in Editing View](consumer/end-user-reading-view.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
@@ -68,7 +68,7 @@ There are 2 ways to do this:
    * Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
      
       ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
-   * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
+   * Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](consumer/end-user-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
      
       ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
    * The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
@@ -87,10 +87,10 @@ There are 2 ways to do this:
      ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
 
 ## Add a filter to an entire page (aka page view filter)
-1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
+1. Open your [report in Editing View](consumer/end-user-reading-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new page level filter, and drag it into the **Page level filters** area.  
-4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)).
+4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](consumer/end-user-report-filter.md)).
    
    All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
    
@@ -126,10 +126,10 @@ Let's see how the drillthrough filter works.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## Add a filter to an entire report (aka Report filter)
-1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
+1. Open your [report in Editing View](consumer/end-user-reading-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
-4. Select the values you want to filter (see [How to use report filters](power-bi-how-to-report-filter.md)).
+4. Select the values you want to filter (see [How to use report filters](consumer/end-user-report-filter.md)).
 
     The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
@@ -145,13 +145,13 @@ Let's see how the drillthrough filter works.
 - If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
 
 ## Next steps
- [How to use report filters](power-bi-how-to-report-filter.md)
+ [How to use report filters](consumer/end-user-report-filter.md)
 
   [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-[Interact with filters and highlighting in report Reading View](service-reading-view-and-editing-view.md)
+[Interact with filters and highlighting in report Reading View](consumer/end-user-reading-view.md)
 
-[Change how report visuals cross-filter and cross-highlight each other](service-reports-visual-interactions.md)
+[Change how report visuals cross-filter and cross-highlight each other](consumer/end-user-interactions.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

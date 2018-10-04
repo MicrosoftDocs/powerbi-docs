@@ -9,7 +9,7 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 09/24/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -19,7 +19,7 @@ If you have edit permissions for a report, you can use **Visual interactions** t
 
 By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page.
 For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
-See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). And if you have a visualization that supports [drilling](power-bi-visualization-drill-down.md), by default, drilling one visualization has no impact on the other visualizations on the report page. But both of these default behaviors can be overridden, and interactions set, on a per-visualization basis.
+See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). And if you have a visualization that supports [drilling](consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. But both of these default behaviors can be overridden, and interactions set, on a per-visualization basis.
 
 This article shows you how to use **Visual interactions** in Power BI service [Editing view](service-interact-with-a-report-in-editing-view.md) and in Power BI Desktop. If a report has been shared with you, you will not be able to change the Visual interactions settings.
 
@@ -52,13 +52,4 @@ This article shows you how to use **Visual interactions** in Power BI service [E
 4. To turn on drilling controls, select **Drilling filters other visuals**.  Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection. 
 
    ![video of turning on drilling controls](media/service-reports-visual-interactions/drill2.gif)
-
-### Next steps
-[How to use report filters](power-bi-how-to-report-filter.md)
-
-[Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
-
-[Power BI - Basic Concepts](service-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

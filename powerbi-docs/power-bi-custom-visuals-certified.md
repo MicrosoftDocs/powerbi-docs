@@ -9,13 +9,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 09/24/2018
 ms.author: mihart
 
 ---
 # Getting a custom visual *certified*
 ## What is meant by *certified*?
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](service-report-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
+A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](consumer/end-user-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
 
 Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) to learn how.
 
@@ -103,6 +103,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Linear Gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
 | [LineDot Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |
 | [Mekko Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380785) | [Video](https://youtu.be/90FLCKpgicA) |
+| [Multi KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381763) | |
 | [Overview by CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381477) | |
 | [Play Axis (Dynamic Slicer)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |

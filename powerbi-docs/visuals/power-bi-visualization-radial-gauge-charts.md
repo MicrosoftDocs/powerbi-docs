@@ -2,14 +2,14 @@
 title: Radial gauge charts in Power BI  
 description: 'Radial Gauge charts in Power BI'
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 09/21/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -88,7 +88,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 ### Step 5: Save your report
 1. [Save the report](../service-report-save.md).
-2. [Add the gauge chart as a dashboard tile](../service-dashboard-tiles.md). 
+2. [Add the gauge chart as a dashboard tile](../service-dashboard-pin-tile-from-report.md). 
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
@@ -106,14 +106,8 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 6. Optionally, continue formatting your gauge chart.
 
-## Next steps
+## Next step
+
+[Gauges in Power BI](power-bi-visualization-kpi.md)
+
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Add a visualization to a report](power-bi-report-add-visualizations-i.md)
-
-[Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)
-
-[ Power BI - Basic Concepts](../service-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

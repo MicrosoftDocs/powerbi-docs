@@ -1,7 +1,7 @@
 ---
 title: The report editor...Take a tour
 description: The report editor...Take a tour.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
@@ -19,13 +19,13 @@ LocalizationGroup: Reports
 The report editor in Power BI service and the report editor in Power BI Desktop are very similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
 ## The difference between report *creators* and report *consumers*
-The ability to create and edit a report is restricted to report owners (aka *creators*). If you are *consuming* a report that has been shared with you, you'll still be able to open and interact with the report in Power BI service [Reading view only](service-reading-view-and-editing-view.md), but won't have all the robust and extensive features available to the report creator.  
+The ability to create and edit a report is restricted to report owners (aka *creators*). If you are *consuming* a report that has been shared with you, you'll still be able to open and interact with the report in Power BI service [Reading view only](consumer/end-user-reading-view.md), but won't have all the robust and extensive features available to the report creator.  
 
-To learn more about report Reading view, see [Reading view and Editing view in Power BI service](service-reading-view-and-editing-view.md) 
+To learn more about report Reading view, see [Reading view and Editing view in Power BI service](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-In Power BI service, the *report editor* is only available in [Editing View](service-reading-view-and-editing-view.md). To open a report in Editing view, you must be a report owner or creator.
+In Power BI service, the *report editor* is only available in [Editing View](consumer/end-user-reading-view.md). To open a report in Editing view, you must be a report owner or creator.
 
 The Power BI report editor is made up of 3 sections:  
 
@@ -123,9 +123,9 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 ## Next Steps:
 [Create a report](service-report-create-new.md)
 
-Read more about reports in [Power BI service](service-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](consumer/mobile/mobile-apps-view-phone-report.md).
+Read more about reports in [Power BI service](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI - Basic Concepts](service-basic-concepts.md)﻿
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)﻿
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
