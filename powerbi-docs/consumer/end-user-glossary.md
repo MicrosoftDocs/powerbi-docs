@@ -6,7 +6,7 @@ author: mihart
 
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 08/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and t hey don't get confused or frustrated and instead get the result they expect.
 ---
@@ -16,38 +16,47 @@ The Power BI service may introduce terminology that is unfamiliar or confusing. 
 
 This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article.
 
-![A](#A)[B](#B)[C](#C)[D](#D)[E](#E)[F](#F)[G](#G)[H](#H)[I](#I)[J](#J)[K](#K)[L](#L)[M](#M)[N](#N)[O](#O)[P](#P)[Q](#Q)[R](#R)[S](#S)[T](#T)[U](#U)[V](#V)[W](#W)[X](#X)[Y](#Y)[Z](#Z)
-
 ## A
-***account***   
+**account**   
 There are different types of Power BI accounts.  A Power BI Pro account is a paid monthly subscription.  A Power BI Free account enables viewing of content that’s hosted on Power BI Premium capacity.  
 
-***admin portal***
+**admin portal**
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Office 365, Azure, and PowerApps use admin center.)
-***aggregates***
+
+**aggregates**
 When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement.
+
 **aggregation**
 The reduction of rows in underlying data sources to fit in a model. The result is an aggregate.
+
 **alert, alerts**
 A feature that notifies users of changes in the data based on limits they set. Alerts can be set on tiles pinned from report visuals. Users receive alerts on the service and on their mobile app.
+
 **annotate**
 To write lines, text, or stamps on a snapshot copy of a tile, report, or visual on the Power BI mobile app for iOS and Android devices.
+
 **answer card, answer page**
 See Cortana answer card.
+
 **app, apps**  
 **app workspace**
 All workspaces in Power BI except for My workspace are now app workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.  
+
 **AppSource**
+
 **ArcGIS for Power BI**
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
+
 **assign**
 [Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity.  
 
 ## B
 
 **BI, business intelligence**
+
 **bookmark**
-A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service.  
+A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
+  
 **breadcrumbs**
 The navigation at the top left to quickly navigate between app workspaces.
 
@@ -74,6 +83,7 @@ The content index for an app.
 **content pack**
 
 **content view**
+
 **Cortana answer card**
 The dedicated report page to include in a Power BI report to be able to create custom Cortana answers.
 
@@ -107,8 +117,10 @@ See connectors
 **Desktop**
 First instance: Power BI Desktop
 Subsequent mentions: Desktop
+
+
 **diamond**
-[Power BI Premium] The shape of the icon that signifies a workspace is a Premium capacity workspace.
+Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
 
 **drill up, drill down, drillthrough**
 
@@ -125,6 +137,8 @@ A common standard across the internet. In Power BI, the customer can generate an
 
 **embedding**
 In the Power BI developer offering, the process of integrating analytics into apps using the Power BI REST APIs and the Power BI SDK.
+
+
 **environment**
 [Power BI Desktop, Power BI Mobile, etc.] Use Power BI environment. For multi-tenant customers, use this term to refer to choosing the tenant to connect to.
 It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
@@ -278,7 +292,7 @@ The ability to type natural language questions about a dataset and get responses
 **query string parameter**  
 Add to a URL to pre-filter the results seen in a Power BI report. In the broadest sense, a query string recovers information from a database.
 
-**Quick Insights
+**Quick Insights**
 
 
 **quick measures**
@@ -336,7 +350,8 @@ The container in the left nav that holds all the individual artifacts that were 
 **snapshot**
 
 
-**SQL Server Analysis Services (SSAS)**  
+**SQL Server Analysis Services (SSAS)** 
+ 
 **SQL Server Reporting Services (SSRS)**
 
 **streaming data**
@@ -377,6 +392,7 @@ Containers for dashboards, reports, and datasets in Power BI. See app workspace 
 ## X
 **x-axis**  
  The axis along the bottom, the horizontal axis.
+
 ## Y
 **y-axis**
 The axis along the side, the vertical axis.
