@@ -2,7 +2,7 @@
   href: ../index.md
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
-- name: Power BI for consumers
+- name: Power BI service
   items:
   - name: Overview
     items: 
