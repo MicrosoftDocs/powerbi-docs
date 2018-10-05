@@ -3,12 +3,12 @@ title: Embed Power BI content into an application for your organization
 description: Learn how to integrate, or embed, a report, dashboard, or tile into a web app by using the Power BI APIs for your organization.
 author: markingmyname
 ms.author: maghan 
-ms.date: 07/13/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
+ms.date: 07/13/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
