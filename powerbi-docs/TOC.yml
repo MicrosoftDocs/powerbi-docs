@@ -377,10 +377,12 @@
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
+    - name: "Basic concepts"
+      href: service-basic-concepts.md
     - name: "Self-service sign-up"
       href: service-self-service-signup-for-power-bi.md 
     - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md	
+      href: service-cortana-intro.md
     - name: "Data refresh in Power BI"
       href: refresh-data.md
     - name: "Power BI for US Government"
@@ -581,6 +583,10 @@
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
       items: 
+      - name: "Power BI Dashboard"
+        href: service-dashboards.md
+      - name: "Dashboard tiles"
+        href: service-dashboard-tiles.md
       - name: "Create a dashboard from a report"
         href: service-dashboard-create.md
       - name: "Create a copy of a dashboard"
@@ -671,6 +677,8 @@
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Share dashboards and reports"
         href: service-share-dashboards.md
+      - name: "Create and share apps"
+        href: service-create-distribute-apps.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
