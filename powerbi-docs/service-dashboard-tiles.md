@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/5/2018
+ms.date: 10/4/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
