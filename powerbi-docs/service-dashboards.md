@@ -1,15 +1,15 @@
 ---
 title: what is a dashboard for Power BI service consumers?
 description: Dashboards are a key feature of Power BI service.
-author: mihart
-manager: kvivek
+author: maggieMSFT
+manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/02/2018
-ms.author: mihart
+ms.author: maggie
 
 LocalizationGroup: Dashboards
 ---
@@ -27,7 +27,7 @@ Depending on your role, you may be someone who creates dashboards for your own u
 
 ### If you will be receiving and consuming dashboards
 
-The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard, from reports, by dashboard *creators*. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](basic-concepts.md).
+The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard, from reports, by dashboard *creators*. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](service-basic-concepts.md).
 
 > [!IMPORTANT]
 > [Power BI Pro](service-free-vs-pro.md) is required for viewing a shared dashboard.
