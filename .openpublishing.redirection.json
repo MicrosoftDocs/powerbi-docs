@@ -531,9 +531,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-delete.md",
-            "redirect_url": "/power-bi/consumer/end-user-delete",
-            "redirect_document_id": true
+            "source_path": "/power-bi/consumer/end-user-delete.md",
+            "redirect_url": "powerbi-docs/service-delete",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-focus-mode.md",
@@ -608,6 +608,11 @@
         {
             "source_path": "powerbi-docs/service-report-open.md",
             "redirect_url": "/power-bi/consumer/end-user-report-open",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "/power-bi/consumer/end-user-delete.md",
+            "redirect_url": "powerbi-docs/service-delete",
             "redirect_document_id": true
         },
         {

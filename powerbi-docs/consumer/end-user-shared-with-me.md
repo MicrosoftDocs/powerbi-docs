@@ -9,16 +9,17 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
 ## Shared with me
-![Share icon](./media/end-user-shared-with-me/power-bi-share-dash.png)
 
 When a colleague shares content with you, using the **Share** button, it appears in your **Shared with me** container. The dashboard or report is only available from **Shared with me** and not available from **Apps**.
+
+![Share icon](./media/end-user-shared-with-me/power-bi-share-dash.png)
 
 Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](../service-premium.md) for details.
 

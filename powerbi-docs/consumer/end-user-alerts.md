@@ -1,6 +1,6 @@
 ---
 title: Tutorial:Set data alerts in the Power BI service
-description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
+description: In this tutorial you'll learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,7 +9,7 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 09/28/2018
+ms.date: 10/08/2018
 ms.author: mihart
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notofied when important data changes above/below my set threshhold.
 LocalizationGroup: Dashboards
@@ -27,9 +27,9 @@ Only you can see the alerts you set, even if you share your dashboard. Data aler
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
 > 
 
-
+This tutorial covers the following.
 > [!div class="checklist"]
-> * who can set alerts
+> * Who can set alerts
 > * Which visuals support alerts
 > * Who can see my alerts
 > * Do alerts work on Power BI Desktop and mobile
@@ -111,6 +111,6 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 Instructions for deleting alerts are explained above. In brief, select the gear icon from the Power BI menubar. Under **Settings** select **Alerts** and delete the alert.
 
 > [!div class="nextstepaction"]
-> [Set data alerts on your mobile device](mobile-set-data-alerts-in-the-mobile-apps.md
+> [Set data alerts on your mobile device](mobile-set-data-alerts-in-the-mobile-apps.md)
 
 

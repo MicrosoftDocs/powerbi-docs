@@ -21,9 +21,9 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Select **Microsoft Dynamics NAV**, then select **Get**.  
+3. Select **Microsoft Dynamics NAV**, then select **Get**.  
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
-2. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
+4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
@@ -33,12 +33,12 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
      
      An easy way to obtain this URL is in Dynamics NAV to go to Web Services, find the powerbifinance web service and copy the OData URL, but leaving out the “/powerbifinance” from the URL string.  
      ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
-3. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
+5. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
    
     You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
    
     ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
-4. Power BI will retrieve your Microsoft Dynamics NAV data and create a ready-to-use dashboard and report for you.   
+6. Power BI will retrieve your Microsoft Dynamics NAV data and create a ready-to-use dashboard and report for you.   
    ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## View the dashboard and reports

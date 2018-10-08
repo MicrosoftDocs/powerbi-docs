@@ -22,7 +22,8 @@ In Power BI service (not Power BI Desktop) there are two modes for viewing and i
 
  Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](../service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, and optionally with the same filters applied.  Consumers can interact with the reports, can change the existing filters (and these changes are saved with the report), but cannot add new filters.
 
->**NOTE**: In certain circumstances, report consumers may see different data because of row level security and data permissions.
+> [!NOTE]
+> In certain circumstances, report consumers may see different data because of row level security and data permissions.
 
 ## Report Editing view
 
@@ -84,7 +85,6 @@ Remember, only the report creator and owner(s) will be able to open a report in 
 
 
 
-### Next steps
+## Next steps
 There are so many ways to interact with a report in Reading view, slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Reading view](../service-interact-with-a-report-in-editing-view.md), describes some of these in detail.    
 Back to [reports in Power BI](end-user-reports.md)    
-More questions? [Try the Power BI Community](http://community.powerbi.com/)

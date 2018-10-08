@@ -23,16 +23,16 @@ You can create customized dashboards and reports by starting from the [Google An
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Select **Google Analytics** \> **Get**.
+3. Select **Google Analytics** \> **Get**.
    
    ![](media/service-connect-to-google-analytics/ga.png)
-2. When prompted, enter your Google Analytics credentials. Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Google authentication flow, which may include 2-factor authentication if you have it configured.
+4. When prompted, enter your Google Analytics credentials. Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Google authentication flow, which may include 2-factor authentication if you have it configured.
    
    ![](media/service-connect-to-google-analytics/creds.png)
-3. Click **Accept** to allow Power BI to access your Google Analytics data.
+5. Click **Accept** to allow Power BI to access your Google Analytics data.
    
    ![](media/service-connect-to-google-analytics/googleanalytics.png)
-4. Power BI connects to a specific Google Analytics View. Select the account name, property name and view name you’d like to connect to. This information can be found in your Google Analytics account, either in the top left or on the **Home** tab. See details below. 
+6. Power BI connects to a specific Google Analytics View. Select the account name, property name and view name you’d like to connect to. This information can be found in your Google Analytics account, either in the top left or on the **Home** tab. See details below. 
    
    ![](media/service-connect-to-google-analytics/params2.png)
 5. Click **Connect** to begin the import process. 
@@ -40,7 +40,7 @@ You can create customized dashboards and reports by starting from the [Google An
 ## View the Google Analytics dashboard and reports
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 

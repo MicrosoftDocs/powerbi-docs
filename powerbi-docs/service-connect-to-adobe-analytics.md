@@ -21,26 +21,26 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Select **Adobe Analytics** \>  **Get**.
+3. Select **Adobe Analytics** \>  **Get**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. Power BI connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
+4. Power BI connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Adobe Analytics credentials. 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Adobe Analytics credentials. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Click **Accept** to allow Power BI to access your Adobe Analytics data.
+6. Click **Accept** to allow Power BI to access your Adobe Analytics data.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. After you approve, the import process begins automatically. 
+7. After you approve, the import process begins automatically. 
 
 ## View the Adobe Analytics dashboard and reports
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 

@@ -9,15 +9,12 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/01/2018
+ms.date: 10/01/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # **Recent** content in Power BI service
-
-
-## What is recent content
 Recent content is the last items you visited in Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks across all of your workspaces.
 
 ![Recent content window](./media/end-user-recent/power-bi-recent-screen.png)

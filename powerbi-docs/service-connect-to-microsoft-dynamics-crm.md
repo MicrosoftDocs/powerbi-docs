@@ -22,17 +22,16 @@ This connection requires **Microsoft Dynamics CRM Online 2016 or later**. More d
 
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Select **Microsoft Dynamics CRM Sales Manager** or **Microsoft Dynamics CRM Service Manager** and click **Connect**.
+3. Select **Microsoft Dynamics CRM Sales Manager** or **Microsoft Dynamics CRM Service Manager** and click **Connect**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
+4. Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. When prompted, provide your credentials (this step might be skipped if you're already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
+5. When prompted, provide your credentials (this step might be skipped if you're already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. After connecting, you'll see a dashboard customized for a Sales Manager or Service Manager, populated with your own data:
+6. After connecting, you'll see a dashboard customized for a Sales Manager or Service Manager, populated with your own data:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
