@@ -17,7 +17,7 @@ LocalizationGroup: Connect to services
 
 After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
-![Google analytics app in the Power BI mobile app](../media/service-connect-to-services/power-bi-service-mobile-app-240.png)
+![Google analytics app in the Power BI mobile app](media/end-user-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## Get started
 [!INCLUDE [powerbi-service-apps-get-more-apps](.././includes/powerbi-service-apps-get-more-apps.md)]
@@ -27,10 +27,10 @@ When the import is complete, the new app appears on the Apps page.
 
 1. Select **Apps** in the left navigation pane > select the app.
    
-     ![Apps page](../media/service-connect-to-services/power-bi-service-apps-open-app.png)
+     ![Apps page](media/end-user-connect-to-services/power-bi-service-apps-open-app.png)
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
    
-    ![Google Analytics dashboard](../media/service-connect-to-services/googleanalytics2.png)
+    ![Google Analytics dashboard](media/end-user-connect-to-services/googleanalytics2.png)
    
     You can filter and highlight the data in the report, but you can't save your changes.
 
@@ -45,7 +45,7 @@ While Power BI is first connecting to the service, you may see an empty set of t
 
 * Select the question mark icon (**?**) in the upper-right corner >  **Get help**.
   
-    ![Get help icon](../media/service-connect-to-services/power-bi-service-get-help.png)
+    ![Get help icon](media/end-user-connect-to-services/power-bi-service-get-help.png)
 
 **Missing information**  
 The dashboard and reports include content from the service focused on a specific scenario and do not include all the information from the service. If there's a specific metric that you're not seeing in the content pack, please add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.

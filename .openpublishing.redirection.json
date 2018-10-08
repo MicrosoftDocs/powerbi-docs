@@ -556,11 +556,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-install-use-apps.md",
-            "redirect_url": "/power-bi/consumer/end-user-apps",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-navigation-search-filter-sort.md",
             "redirect_url": "/power-bi/consumer/end-user-search-filter-sort",
             "redirect_document_id": true
