@@ -111,6 +111,6 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 Instructions for deleting alerts are explained above. In brief, select the gear icon from the Power BI menubar. Under **Settings** select **Alerts** and delete the alert.
 
 > [!div class="nextstepaction"]
-> [Set data alerts on your mobile device](mobile-set-data-alerts-in-the-mobile-apps.md)
+> [Set data alerts on your mobile device](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 
 
