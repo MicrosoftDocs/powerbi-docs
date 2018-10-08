@@ -28,7 +28,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Gateway required | No | Yes for on-premises data sources |  
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../service-real-time-streaming.md)
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) 
-| Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../consumer/end-user-create-apps.md) 
+| Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) 
 | Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) 
 | Connect to services like Salesforce | No | Yes | [Connect to the services you use](../consumer/end-user-connect-to-services.md) with the Power BI service
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../consumer/end-user-q-and-a.md) 
