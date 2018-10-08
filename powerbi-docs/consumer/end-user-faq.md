@@ -73,7 +73,7 @@ The following resources are available to help get your started:
 * [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
-* [Get started with Power BI](service-get-started.md) article
+* [Get started with Power BI](../service-get-started.md) article
 * [Join our community](https://community.powerbi.com/) and ask questions
 * See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
 
