@@ -95,7 +95,7 @@ If you see an "Oops" error dialog after you pass the authentication dialog box, 
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## Next steps
-* [What are apps in Power BI?](consumer/end-user-apps.md)
+* [What are apps in Power BI?](service-create-distribute-apps.md)
 * [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

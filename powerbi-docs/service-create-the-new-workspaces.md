@@ -169,5 +169,5 @@ The following issues are known, and fixes are under development:
 ## Next steps
 
 - [Create the current workspaces](service-create-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

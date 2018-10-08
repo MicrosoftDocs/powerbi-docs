@@ -88,7 +88,7 @@ Apps are the evolution of organizational content packs. If you have organization
 See [How are the new app workspaces different from existing app workspaces?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) to compare the current and new app workspaces. 
 
 ## Next steps
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Install and use apps in Power BI](service-create-distribute-apps.md)
 * [Power BI apps for external services](consumer/end-user-connect-to-services.md)
 - [Create the new workspaces (preview)](service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
