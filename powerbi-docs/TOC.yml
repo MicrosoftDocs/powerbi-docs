@@ -427,6 +427,8 @@
         href: service-set-data-alerts.md
       - name: "Get started with Power BI Q&A"
         href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: "Delete almost anything in Power BI"
+        href: service-delete.md
     - name: Connect to services
       items: 
       - name: "Acumatica"
@@ -679,6 +681,8 @@
         href: service-share-dashboards.md
       - name: "Create and share apps"
         href: service-create-distribute-apps.md
+      - name: "Install and use apps"
+        href: service-install-use-apps.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
