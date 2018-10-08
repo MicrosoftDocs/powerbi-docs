@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/08/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -53,7 +53,7 @@ You can also find and install any apps that you have access to from Microsoft Ap
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. You can also [export the data to Excel ](power-bi-visualization-export-data.md) from a table or other visual in a report. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. You can also [export the data to Excel ](visuals/power-bi-visualization-export-data.md) from a table or other visual in a report. Read about [interacting with reports in Power BI](service-reading-view-and-editing-view.md). 
 
 ![Export data from a Power BI visual](media/service-install-use-apps/power-bi-service-export-data-visual.png)
 
