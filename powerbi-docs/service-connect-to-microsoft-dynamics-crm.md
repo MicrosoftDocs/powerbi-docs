@@ -151,7 +151,7 @@ If you do not have CRM Online 2016 or later, use the Power BI Desktop to connect
 If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records," consider connecting directly from the Power BI Desktop or leveraging the CRM solution template.
 
 ## Next steps
-* [What are apps in Power BI?](consumer/end-user-apps.md)
+* [What are apps in Power BI?](service-create-distribute-apps.md)
 * [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

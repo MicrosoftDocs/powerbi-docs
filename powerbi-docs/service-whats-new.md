@@ -590,7 +590,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * We're excited to announce our "general availability" (GA) release of Power BI. Sign up today for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
-* [Power BI groups](consumer/end-user-create-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
+* [Power BI groups](service-create-distribute-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](service-organizational-content-pack-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 * [Bring in whole Excel files](service-excel-workbook-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
 * [Bring in CSV files](service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.

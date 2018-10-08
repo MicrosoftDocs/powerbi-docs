@@ -9,12 +9,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 
 ---
 # Create a Power BI dashboard from a report
-You've read [Dashboards in Power BI](consumer/end-user-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard - from a report, from scratch, from a dataset, by duplicating an existing dashboard, and more.  
+You've read [Dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard - from a report, from scratch, from a dataset, by duplicating an existing dashboard, and more.  
 
 It can seem overwhelming when you're first getting started, so we'll start by creating a quick and easy dashboard by pinning visualizations from a report that's already been built. Once you complete this quickstart, you'll have a good understanding of the relationship between dashboards and reports, opening Editing view in the report editor, pinning tiles, and navigating between a dashboard and a report. Then use the links in the Table of Contents on the left or the **Next steps** at the bottom to move on to more-advanced topics.
 
@@ -61,7 +61,7 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 1. Staying in the same workspace, select the **Reports** tab. The newly-imported report displays with a yellow asterisk. Select the report name to open it.
 
     ![reports tab](media/service-dashboard-create/power-bi-reports.png)
-2. The report opens in [Reading view](consumer/end-user-reading-view.md). Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
+2. The report opens in [Reading view](service-interact-with-a-report-in-reading-view.md). Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
     Select **Edit report** to open the report in Editing view.
 
     ![report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
@@ -104,9 +104,9 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 
 ## Next steps
 * [Resize and move tiles](service-dashboard-edit-tile.md)
-* [All about dashboard tiles](consumer/end-user-tiles.md)
-* [Share your dashboard by creating an app](consumer/end-user-create-apps.md)
-* [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+* [All about dashboard tiles](service-dashboard-tiles.md)
+* [Share your dashboard by creating an app](service-install-use-apps.md)
+* [Power BI - Basic Concepts](service-basic-concepts.md)
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

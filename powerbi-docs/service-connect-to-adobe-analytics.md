@@ -78,16 +78,16 @@ The Company value can be found in the top right of your account once you're sign
 
 **Report Suite ID**
 
-The Suite ID is created when the Report Suite is created. You can contact your administrator to identify the ID value. Note that this is not the Report Suite name.
+The Suite ID is created when the Report Suite is created. You can contact your administrator to identify the ID value. This is not the Report Suite name.
 
 From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
 ![](media/service-connect-to-adobe-analytics/reportsuiteid.png)
 
 ## Troubleshooting
-If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
+If you're seeing an error after providing your credentials indicating you do not have permissions, confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
 
-If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today. However, we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
+If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today. However, we're considering updates to better support larger instances, provide feedback to the Power BI team at https://ideas.powerbi.com
 
 ## Next steps
 * [What are apps in Power BI?](service-create-distribute-apps.md)

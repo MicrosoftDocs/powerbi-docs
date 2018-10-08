@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -26,7 +26,7 @@ In Power BI service (not Power BI Desktop) there are two modes for viewing and i
 
 ## Report Editing view
 
-Editing view is only available to those who created the report or who [co-own a report as a member or admin of an app workspace](end-user-create-apps.md).
+Editing view is only available to those who created the report or who [co-own a report as a member or admin of an app workspace](../service-create-distribute-apps.md).
 
 Editing view is designed for report *creators*. This is where creators import and connect to datasets, explore the data, and build reports and dashboards. In Editing view *creators* can dig even deeper into their data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report. They can then share the reports they create with colleagues.
 
@@ -49,11 +49,11 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [View Usage metrics ](../service-usage-metrics.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [View related](end-user-related.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [Save a report](../service-report-save.md) | Yes, but only using **Save as**. | Yes |
-| [Delete a report](end-user-delete.md) | No  | Yes |
+| [Delete a report](../service-delete.md) | No  | Yes |
 |**Report pages** |
 | [Add or rename a report page](../power-bi-report-add-page.md)  | No  | Yes  |
 | [Duplicate a report page](../power-bi-report-copy-paste-page.md) | No  | Yes |
-| [Delete report page](end-user-delete.md) | no | yes |
+| [Delete report page](../service-delete.md) | no | yes |
 |**Working with report visualizations**|
 | [Add visualizations to a report](../visuals/power-bi-report-add-visualizations-i.md) | No  | Yes |
 | [Add text boxes, and shapes to a report](../power-bi-reports-add-text-and-shapes.md) | No  | Yes |
@@ -62,7 +62,7 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Show data used to create the visualization](end-user-show-data.md) | No  | Yes |
 | [Configure drilling](end-user-drill.md) | No  | Yes |
 | [Change the visualization being used](../visuals/power-bi-report-change-visualization-type.md) | No | Yes|
-| [Delete a visualization, text box, or shape](end-user-delete.md)| No | Yes |
+| [Delete a visualization, text box, or shape](../service-delete.md)| No | Yes |
 
 
 ## Navigating between Editing view and Reading view

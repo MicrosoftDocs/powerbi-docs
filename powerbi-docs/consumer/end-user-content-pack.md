@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -46,6 +46,6 @@ If the content pack owner changes the content pack, and:
 
 ## Next steps
 * [Intro to organizational content packs](../service-organizational-content-pack-introduction.md)  
-* [Create and distribute an app in Power BI](end-user-create-apps.md)
+* [Create and distribute an app in Power BI](service-create-distribute-appss.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
