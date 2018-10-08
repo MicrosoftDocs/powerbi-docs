@@ -35,10 +35,10 @@ If you have more than five recently-visited items, select **See all** to open th
 
 ![display all recent content](./media/end-user-recent/power-bi-recent-list.png)
 
-From here you can interact with the content as you would on the individual [**Dashboards**](end-user-dashboards.md), [**Reports**](end-user-reports.md), and **Workbooks** tabs, and on the [**Apps**](end-user-apps.md) screen.
+From here you can interact with the content as you would on the individual [**Dashboards**](end-user-dashboards.md), [**Reports**](end-user-reports.md), and **Workbooks** tabs, and on the apps <!--[**Apps**](end-user-apps.md)--> screen.
 
 ## Next steps
-[Power BI service Apps](end-user-apps.md)
+<!--[Power BI service Apps](end-user-apps.md)-->
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

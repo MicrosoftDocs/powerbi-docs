@@ -17,27 +17,25 @@ LocalizationGroup: Connect to services
 
 After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
-![Google analytics app in the Power BI mobile app](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
+![Google analytics app in the Power BI mobile app](../media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## Get started
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](.././includes/powerbi-service-apps-get-more-apps.md)]
 
 ## View the dashboard and reports
 When the import is complete, the new app appears on the Apps page.
 
 1. Select **Apps** in the left navigation pane > select the app.
    
-     ![Apps page](media/service-connect-to-services/power-bi-service-apps-open-app.png)
+     ![Apps page](../media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
    
-    ![Google Analytics dashboard](media/service-connect-to-services/googleanalytics2.png)
+    ![Google Analytics dashboard](../media/service-connect-to-services/googleanalytics2.png)
    
     You can filter and highlight the data in the report, but you can't save your changes.
 
 ## What's included
 After connecting to a service, you see a newly created app with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and may not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
-
-You can also use [Power BI Desktop](desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
 For more details on connecting to specific services, please refer to the individual help pages.
 
@@ -47,7 +45,7 @@ While Power BI is first connecting to the service, you may see an empty set of t
 
 * Select the question mark icon (**?**) in the upper-right corner >  **Get help**.
   
-    ![Get help icon](media/service-connect-to-services/power-bi-service-get-help.png)
+    ![Get help icon](../media/service-connect-to-services/power-bi-service-get-help.png)
 
 **Missing information**  
 The dashboard and reports include content from the service focused on a specific scenario and do not include all the information from the service. If there's a specific metric that you're not seeing in the content pack, please add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.
@@ -58,7 +56,7 @@ Do you use a service you'd like to suggest for a Power BI app? Go to the [Power 
 Do you have a service you'd like to build an app for? [Submit your nomination](https://azure.microsoft.com/marketplace/programs/certified/apply/) and select "Publish a Power BI Content Pack" to get started.
 
 ## Next steps
-* [What are apps in Power BI?](service-install-use-apps.md)
-* [Get data in Power BI](service-get-data.md)
+* [What are apps in Power BI?](../service-install-use-apps.md)
+* [Get data in Power BI](../service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

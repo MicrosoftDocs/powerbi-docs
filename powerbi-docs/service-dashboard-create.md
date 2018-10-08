@@ -61,7 +61,7 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 1. Staying in the same workspace, select the **Reports** tab. The newly-imported report displays with a yellow asterisk. Select the report name to open it.
 
     ![reports tab](media/service-dashboard-create/power-bi-reports.png)
-2. The report opens in [Reading view](service-interact-with-a-report-in-reading-view.md). Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
+2. The report opens in Reading view. Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
     Select **Edit report** to open the report in Editing view.
 
     ![report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)

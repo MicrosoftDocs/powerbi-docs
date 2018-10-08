@@ -17,11 +17,11 @@ LocalizationGroup: Dashboards
 # Tutorial: Set data alerts in Power BI service
 Set alerts to notify you when data in your dashboards changes beyond limits you set. 
 
-You can set alerts on tiles if you have a Power BI Pro license, or if a dashboard has been shared with you from a [Premium capacity](service-premium.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
+You can set alerts on tiles if you have a Power BI Pro license, or if a dashboard has been shared with you from a [Premium capacity](../service-premium.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
 
-Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. 
+Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. 
 
-![tiles](media/service-set-data-alerts/powerbi-alert-types-new.png)
+![tiles](../media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
@@ -79,7 +79,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    > 
 
 ## Managing alerts
-There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
