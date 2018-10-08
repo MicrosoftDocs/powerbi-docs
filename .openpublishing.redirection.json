@@ -531,8 +531,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "/powerbi-docs/consumer/end-user-delete.md",
-            "redirect_url": "../service-delete",
+            "source_path": "powerbi-docs/consumer/end-user-delete.md",
+            "redirect_url": "/power-bi/service-delete",
             "redirect_document_id": false
         },
         {
