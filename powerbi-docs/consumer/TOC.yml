@@ -51,6 +51,8 @@
         href: end-user-recent.md
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
+      - name: "Create an app in Power BI service"
+        href: end-user-create-apps.md
     - name: Get data
       items: 
       - name: "Shared with me"

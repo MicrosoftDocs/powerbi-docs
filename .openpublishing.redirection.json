@@ -511,11 +511,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-basic-concepts.md",
-            "redirect_url": "/power-bi/consumer/end-user-basic-concepts",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-browser-support.md",
             "redirect_url": "/power-bi/consumer/end-user-browsers",
             "redirect_document_id": true
@@ -526,11 +521,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-create-distribute-apps.md",
-            "redirect_url": "/power-bi/consumer/end-user-create-apps",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true
@@ -538,16 +528,6 @@
         {
             "source_path": "powerbi-docs/service-dashboard-featured.md",
             "redirect_url": "/power-bi/consumer/end-user-featured",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-dashboards.md",
-            "redirect_url": "/power-bi/consumer/end-user-dashboards",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-dashboard-tiles.md",
-            "redirect_url": "/power-bi/consumer/end-user-tiles",
             "redirect_document_id": true
         },
         {
