@@ -21,8 +21,6 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
-Planning to author an app? See [Create workspaces with your colleagues in Power BI](end-user-create-apps.md) for more information.
-
 ## Get a new app
 You can get apps in a few different ways. The app author can install the app automatically in your Power BI account, or send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 
@@ -60,7 +58,5 @@ Now you can explore the data in the dashboards and reports in the app. You have 
 
 
 ## Next steps
-* [Create and publish apps in Power BI](end-user-create-apps.md)
 * [Power BI apps for external services](end-user-connect-to-services.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

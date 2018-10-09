@@ -1,5 +1,5 @@
 ---
-title: what is a dashboard for Power BI service consumers?
+title: What is a dashboard for Power BI service consumers?
 description: Dashboards are a key feature of Power BI service.
 author: maggieMSFT
 manager: kfile
