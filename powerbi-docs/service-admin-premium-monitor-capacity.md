@@ -18,7 +18,7 @@ This article provides an overview of monitoring the metrics for your Power BI Pr
 
 You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
 
-[!VIDEO https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Install the Premium Capacity Metrics app
 
