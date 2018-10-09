@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -22,11 +22,12 @@ In Power BI service (not Power BI Desktop) there are two modes for viewing and i
 
  Reading view is your way to explore and interact with the report -- it's a fun and safe way to play with and get to know your data. Reading view is designed for report *consumers*; those who open reports from Apps or who have reports [shared with them](../service-share-dashboards.md). Reading view ensures that every single consumer of a specific report is seeing the same report, the same visualizations, and optionally with the same filters applied.  Consumers can interact with the reports, can change the existing filters (and these changes are saved with the report), but cannot add new filters.
 
->**NOTE**: In certain circumstances, report consumers may see different data because of row level security and data permissions.
+> [!NOTE]
+> In certain circumstances, report consumers may see different data because of row level security and data permissions.
 
 ## Report Editing view
 
-Editing view is only available to those who created the report or who [co-own a report as a member or admin of an app workspace](end-user-create-apps.md).
+Editing view is only available to those who created the report or who [co-own a report as a member or admin of an app workspace](../service-create-distribute-apps.md).
 
 Editing view is designed for report *creators*. This is where creators import and connect to datasets, explore the data, and build reports and dashboards. In Editing view *creators* can dig even deeper into their data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report. They can then share the reports they create with colleagues.
 
@@ -49,11 +50,11 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [View Usage metrics ](../service-usage-metrics.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [View related](end-user-related.md) | Yes, on the report canvas. | Yes, in the report list (content view) |
 | [Save a report](../service-report-save.md) | Yes, but only using **Save as**. | Yes |
-| [Delete a report](end-user-delete.md) | No  | Yes |
+| [Delete a report](../service-delete.md) | No  | Yes |
 |**Report pages** |
 | [Add or rename a report page](../power-bi-report-add-page.md)  | No  | Yes  |
 | [Duplicate a report page](../power-bi-report-copy-paste-page.md) | No  | Yes |
-| [Delete report page](end-user-delete.md) | no | yes |
+| [Delete report page](../service-delete.md) | no | yes |
 |**Working with report visualizations**|
 | [Add visualizations to a report](../visuals/power-bi-report-add-visualizations-i.md) | No  | Yes |
 | [Add text boxes, and shapes to a report](../power-bi-reports-add-text-and-shapes.md) | No  | Yes |
@@ -62,7 +63,7 @@ This chart does not list all the report capabilities of Power BI service! It lis
 | [Show data used to create the visualization](end-user-show-data.md) | No  | Yes |
 | [Configure drilling](end-user-drill.md) | No  | Yes |
 | [Change the visualization being used](../visuals/power-bi-report-change-visualization-type.md) | No | Yes|
-| [Delete a visualization, text box, or shape](end-user-delete.md)| No | Yes |
+| [Delete a visualization, text box, or shape](../service-delete.md)| No | Yes |
 
 
 ## Navigating between Editing view and Reading view
@@ -84,7 +85,6 @@ Remember, only the report creator and owner(s) will be able to open a report in 
 
 
 
-### Next steps
+## Next steps
 There are so many ways to interact with a report in Reading view, slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Reading view](../service-interact-with-a-report-in-editing-view.md), describes some of these in detail.    
 Back to [reports in Power BI](end-user-reports.md)    
-More questions? [Try the Power BI Community](http://community.powerbi.com/)

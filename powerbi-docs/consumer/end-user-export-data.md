@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 08/25/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -51,7 +51,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 4. Select the ellipses in the top right corner of the visualization. Choose  **Export data**.
 
    ![](media/end-user-export-data/power-bi-export-data2.png)
-5. In Power BI online, if your visualization has an aggregate (one example would be if you changed **Count** to *average*, **sum** or *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. In Power BI Desktop, you'll only have the option for **Summarized data** For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+5. In Power BI online, if your visualization has an aggregate (one example would be if you changed **Count** to *average*, *sum* or *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. In Power BI Desktop, you'll only have the option for **Summarized data** For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
 
     ![](media/end-user-export-data/power-bi-export-data5.png)
 6. Select **Summarized data** > **Export** and choose either .xlsx or .csv. Power BI exports the data.  If you have applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
