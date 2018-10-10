@@ -20,21 +20,21 @@ As a Power BI administrator, you might need to restart a Premium capacity. This 
 
 ## Why does Power BI provide this option? 
 
-Power BI gives users the ability to perform complex analyses on huge amounts of data. Unfortunately, users can cause performance issues by overloading the service with jobs, writing overly complex queries, creating circular references, and so on.
+Power BI gives users the ability to perform complex analyses on huge amounts of data. Unfortunately, users can cause performance issues by overloading the Power BI service with jobs, writing overly complex queries, creating circular references, and so on.
 
 Power BI shared capacity offers some protection from such cases by imposing limits on file sizes, refresh schedules, and other aspects of the service. In a Power BI Premium capacity, by contrast, most of those limits are raised. As a result, a single report with a bad DAX expression or a very complex model can cause significant performance issues. When processed, the report can consume all of the resources available on the capacity. 
 
-Power BI is constantly improving in how it protects Premium capacity users against such issues. We are also empowering administrators with the tools to analyze when capacities are overburdened and why. See our [short training session](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) and [longer training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2174) for more details. At the same time, we want to give you the ability to mitigate significant issues when they occur. The quickest way to mitigate these issues is to restart the capacity.
+Power BI is constantly improving in how it protects Premium capacity users against such issues. We are also empowering administrators with the tools to analyze when capacities are overburdened and why. For more information, see our [short training session](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) and [longer training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2174). At the same time, you need the ability to mitigate significant issues when they occur. The quickest way to mitigate these issues is to restart the capacity.
 
 ## Is the restart process safe? Will I lose any data?
 
-All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. Restarting a capacity does cause ongoing scheduled refreshes to stop and restart. Incomplete ad-hoc refreshes stop and will not be restarted. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
+All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. Restarting a capacity does cause ongoing scheduled refreshes to stop and restart. Incomplete ad-hoc refreshes stop and won't be restarted. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
 
 ## How do I restart a capacity?
 
 Follow these steps to restart a capacity.
 
-1. In the the Power BI admin portal, on the **Capacity Settings** tab, navigate to your capacity. 
+1. In the Power BI admin portal, on the **Capacity Settings** tab, navigate to your capacity. 
 
 1. Add the **CapacityRestart** *feature flag* to your capacity URL: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
 
@@ -48,7 +48,7 @@ Follow these steps to restart a capacity.
 
 ## How can I prevent issues from happening in the future? 
 
-The best way to prevent issues is to educate users about efficient data modeling. See our [training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2170) for more details.
+The best way to prevent issues is to educate users about efficient data modeling. For more information, see our [training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2170).
 
 We also recommend that you [monitor your capacities](service-admin-premium-monitor-capacity.md) regularly to look for trends that indicate underlying issues. We plan regular releases of the monitoring app and other tools so that you can monitor and manage your capacities more effectively.
 
