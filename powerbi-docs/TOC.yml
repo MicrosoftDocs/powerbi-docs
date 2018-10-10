@@ -875,6 +875,8 @@
         href: developer/custom-visual-develop-tutorial.md
       - name: "Adding formatting options"
         href: developer/custom-visual-develop-tutorial-format-options.md
+      - name: "AppSource"
+        href: developer/office-store.md
     - name: Concepts
       items:
       - name: "Using Capabilities"
