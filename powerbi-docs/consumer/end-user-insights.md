@@ -37,7 +37,8 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 
  ## Interact with the insight cards
    * Filter the visualizations.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
-    ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insights-on-insights.png)
+
+     ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insights-on-insights.png)
    
    * Run insights on the insight card itself. This is often referred to as **related insights**. In the upper-right corner, select the lightbulb icon ![Get insights icon](./media/end-user-insights/power-bi-bulb-icon.png)  or **Get insights**.
      
