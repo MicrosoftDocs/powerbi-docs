@@ -201,7 +201,7 @@ The full source code for this tutorial is available [here](https://github.com/uv
 
 Now we are going to test the CircleCard custom visual by uploading a Power BI Desktop report and then editing the report to display the custom visual.
 
-1. Sign in to [PowerBI.com](www.powerbi.com) > go to the **Gear icon** > then select **Settings**.
+1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) > go to the **Gear icon** > then select **Settings**.
 
       ![Power BI settings](media/custom-visual-develop-tutorial/power-bi-settings.png)
 
