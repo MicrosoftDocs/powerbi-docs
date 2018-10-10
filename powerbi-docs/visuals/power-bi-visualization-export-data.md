@@ -100,11 +100,9 @@ Power BI report designers control the types of data export options that are avai
 
     ![desktop report settings](media/power-bi-visualization-export-data/desktop-report-settings.png)
 
-
 4. Make your selection from the **Export data** dropdown.
 
 You can also update this setting in Power BI service.  
-
 
 It is important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings. 
 

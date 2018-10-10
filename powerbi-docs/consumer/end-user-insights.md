@@ -9,7 +9,7 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/05/2018
+ms.date: 10/10/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -37,16 +37,17 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 
  ## Interact with the insight cards
    * Filter the visualizations.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
-        ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insights-on-insights.png)
+    ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insights-on-insights.png)
    
    * Run insights on the insight card itself. This is often referred to as **related insights**. In the upper-right corner, select the lightbulb icon ![Get insights icon](./media/end-user-insights/power-bi-bulb-icon.png)  or **Get insights**.
      
-       ![menubar showing Get Insights icon](./media/end-user-insights/power-bi-autoinsights-tile.png)
+     ![menubar showing Get Insights icon](./media/end-user-insights/power-bi-autoinsights-tile.png)
      
      The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
      
-       ![insights on insights](./media/end-user-insights/power-bi-insights-on-insights-new.png)
-4. To return to the original insights canvas, from the upper left corner, select **Exit Focus mode**.
+     ![insights on insights](./media/end-user-insights/power-bi-insights-on-insights-new.png)
+
+To return to the original insights canvas, from the upper left corner, select **Exit Focus mode**.
 
 ## Considerations and troubleshooting
 - **View insights** does not work with DirectQuery - it only works with data uploaded to Power BI.

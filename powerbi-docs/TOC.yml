@@ -287,6 +287,8 @@
         href: visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a visualization in Power BI"
         href: visuals/power-bi-visualization-copy-paste.md
+      - name: "Export the data used to create the visualization"
+        href: visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visualization in a Power BI report"
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Hyperlinks in tables"
