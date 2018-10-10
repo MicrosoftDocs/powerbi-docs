@@ -15,6 +15,12 @@ ms.date: 10/11/2018
 
 In this tutorial you are going to add common properties to the visual.
 
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> * Add visual properties.
+> * Package the visual.
+> * Import the custom visual into a Power BI Desktop report.
+
 1. In **Power BI**, select the **Format page**.
 
     You should see a message that reads - *Formatting options are unavailable for this visual.*
@@ -34,7 +40,7 @@ In this tutorial you are going to add common properties to the visual.
 
 5. In **Power BI**, review the formatting options again.
 
-    > ![Note]
+    > [!Note]
     > If you do not see the formatting options change then select **Reload Custom Visual**.
 
     ![View formatting options](media/custom-visual-develop-tutorial/view-formatting-options.png)
@@ -47,7 +53,7 @@ In this tutorial you are going to add common properties to the visual.
 
 ## Adding Custom Formatting Options
 
- You can add custom properties to enable configuring the color of the circle, and also the border width.
+You can add custom properties to enable configuring the color of the circle, and also the border width.
 
 1. In PowerShell, stop the custom visual.
 
@@ -163,7 +169,7 @@ In this tutorial you are going to add common properties to the visual.
     pbiviz start
     ```
 
-15. In **Power BI**, in the toolbar floating above the visual, click **Toggle Auto Reload**.
+15. In **Power BI**, in the toolbar floating above the visual, select **Toggle Auto Reload**.
 
 16. In the **visual format** options, expand **Circle**.
 
@@ -227,7 +233,7 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
     ![Add custom viz to desktop](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
 
-3. In the **import window**, click **Import**.
+3. In the **import window**, select **Import**.
 
 4. In the Open window, navigate to the **dist** folder in your project directory.
 

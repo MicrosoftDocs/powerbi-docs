@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 10/11/2018
 ---
 
 # Publish custom visuals to AppSource
 
 Learn how you can publish your custom visual to AppSource for others to discover and use.
 
-Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preparation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
+Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preparation that needs to be done before you can do that. For more information on how to create a custom visual, see [Developing a Power BI Custom Visual](custom-visual-develop-tutorial.md).
 
    ![Office store](media/office-store/AppSource_01.jpg)
 
