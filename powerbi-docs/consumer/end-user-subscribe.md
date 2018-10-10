@@ -75,6 +75,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 ## Considerations and troubleshooting
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS you will not be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription
+* Certain settings your organization may have enabled in Azure Active Directory may limit the ability to use e-mail subscriptions in Power BI.  This includes, but isn't limited to, having multi-factor authentication or IP range restrictions when users access data sources.
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 * Email subscriptions do not support most [custom visuals](../power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](../power-bi-custom-visuals-certified.md).  
 * Email subscriptions do not support R-powered custom visuals at this time.  
