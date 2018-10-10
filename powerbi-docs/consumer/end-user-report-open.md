@@ -53,7 +53,7 @@ Power BI *designers* can share a report directly with you by clicking a **Share*
    ![fit to page](./media/end-user-report-open/power-bi-report2.png)
 
 ### Open a report that is part of an app
-If you've received apps from colleagues or from AppSource, those apps are available from your Home page and from the **Apps** container on your left nav bar. An [app](end-usesr-apps.md) is a bundle of dashboards and reports.
+If you've received apps from colleagues or from AppSource, those apps are available from your Home page and from the **Apps** container on your left nav bar. An [app](end-user-apps.md) is a bundle of dashboards and reports.
 
 1. Go back to your Home page by selecting **Home (Preview)** from the left nav bar.
 
