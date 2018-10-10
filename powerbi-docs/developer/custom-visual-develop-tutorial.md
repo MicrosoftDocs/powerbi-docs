@@ -35,7 +35,7 @@ In this tutorial, you learn how to:
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
 
-## Setting Up the Developer Environment
+## Setting Up the developer environment
 
 In addition to the prerequisites, there are a few more tools you need to install.
 
@@ -51,7 +51,7 @@ In addition to the prerequisites, there are a few more tools you need to install
 
 4. Restart the computer.
 
-### Installing Packages
+### Installing packages
 
 Now you need to install the **pbiviz** package.
 
@@ -63,7 +63,7 @@ Now you need to install the **pbiviz** package.
    npm i -g powerbi-visuals-tools
    ```
 
-### Creating and Installing a Certificate
+### Creating and installing a certificate
 
 1. To create a certificate, enter the following command.
 
@@ -112,7 +112,7 @@ Now you need to install the **pbiviz** package.
 > [!Important]
 > Do not close the Windows PowerShell session.
 
-## Creating a Custom Visual
+## Creating a custom visual
 
 Now that you have set up your environment, it is time to create your custom visual.
 
@@ -191,10 +191,10 @@ You can [download](https://github.com/uve/circlecard) the full source code for t
 
     ![Start running the custom visual](media/custom-visual-develop-tutorial/start-running-custom-visual-PowerShell.png)
 
-    > [!Important]
-    > Do not close the Windows PowerShell session.
+> [!Important]
+> Do not close the Windows PowerShell session.
 
-### Testing the Custom Visual
+### Testing the custom visual
 
 In this section, we are going to test the CircleCard custom visual by uploading a Power BI Desktop report and then editing the report to display the custom visual.
 
@@ -249,7 +249,7 @@ In this section, we are going to test the CircleCard custom visual by uploading 
 
 To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to terminate the batch job, enter Y, then press Enter.
 
-## Adding Visual Elements
+## Adding visual elements
 
 Now you need to install the **D3 JavaScript library**. D3 is a JavaScript library for producing dynamic, interactive data
 visualizations in web browsers. It makes use of widely implemented SVG
@@ -305,7 +305,7 @@ Now you can develop the custom visual to display a circle with text.
 
 8. Save the **pbiviz.json** file changes.
 
-### Developing the Visual Elements
+### Developing the visual elements
 
 Now we can explore how to develop the custom visual to show a circle and sample text.
 
@@ -432,7 +432,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     pbiviz
     ```
 
-### Toggle Auto Reload
+### Toggle auto reload
 
 1. Navigate back to the Power BI report.
 2. In the toolbar floating above the developer visual, select the **Toggle Auto Reload**.
@@ -461,7 +461,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
 Define the data roles and data view mappings, and then modify the custom visual logic to display the value and display name of a measure.
 
-### Configuring the Capabilities
+### Configuring the capabilities
 
 Modify the **capabilities.json** file to define the data role and data view mappings.
 
@@ -521,7 +521,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     ![Toggle back](media/custom-visual-develop-tutorial/show-dataview-toolbar-revert.png)
 
-### Configuring Data Binding
+### Configuring data binding
 
 1. In **Visual Studio Code**, in the **visual.ts** file, add the following statement as the first statement of the update method.
 

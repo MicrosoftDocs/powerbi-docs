@@ -13,13 +13,15 @@ ms.date: 10/11/2018
 
 # Tutorial: Adding formatting options to a Power BI custom visual
 
-In this tutorial you are going to add common properties to the visual.
+In this tutorial we go through how to add common properties to the visual.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Add visual properties.
 > * Package the visual.
-> * Import the custom visual into a Power BI Desktop report.
+> * Import the custom visual to a Power BI Desktop report.
+
+## Adding formatting options
 
 1. In **Power BI**, select the **Format page**.
 
@@ -51,7 +53,7 @@ In this tutorial, you learn how to:
 
     ![No name tile](media/custom-visual-develop-tutorial/no-name-tile.png)
 
-## Adding Custom Formatting Options
+### Adding custom formatting options
 
 You can add custom properties to enable configuring the color of the circle, and also the border width.
 
@@ -179,7 +181,7 @@ You can add custom properties to enable configuring the color of the circle, and
 
     Modify the **thickness** option to a value less than zero, and a value higher than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
 
-## Packaging the Custom Visual
+## Packaging the custom visual
 
 Enter property values for the custom visual project, update the icon file, and then package the custom visual.
 
@@ -223,7 +225,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
 Now the package is output to the **dist** folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
 
-## Importing the Custom Visual to Power BI Desktop
+## Importing the custom visual to Power BI Desktop
 
 Now you can open the Power BI Desktop report, and import the Circle Card custom visual.
 
