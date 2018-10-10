@@ -1,6 +1,6 @@
 ---
-title: Use developer tools to create custom visuals
-description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
+title: Developing a Power BI Custom Visual
+description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/06/2018
+ms.date: 10/11/2018
 ---
 
 # Tutorial: Developing a Power BI Custom Visual
@@ -112,7 +112,7 @@ Now you need to install the **pbiviz** package.
 
     ![Cert import successful](media/custom-visual-develop-tutorial/cert-import-successful.png)
 
-> ![Important}
+> ![Important]
 > Do not close the Windows PowerShell session.
 
 ## Creating a Custom Visual
@@ -194,16 +194,16 @@ The full source code for this tutorial is available [here](https://github.com/uv
 
     ![Start running the custom visual](media/custom-visual-develop-tutorial/start-running-custom-visual-powershell.png)
 
-> ![Important}
+> ![Important]
 > Do not close the Windows PowerShell session.
 
 ### Testing the Custom Visual
 
 Now we are going to test the CircleCard custom visual by uploading a Power BI Desktop report and then editing the report to display the custom visual.
 
-1. Select **Settings**.
+1. Sign in to [PowerBI.com](www.powerbi.com) > go to the **Gear icon** > then select **Settings**.
 
-      Power BI settings](media/custom-visual-develop-tutorial/power-bi-settings.png)
+      ![Power BI settings](media/custom-visual-develop-tutorial/power-bi-settings.png)
 
 2. Select **Developer** then check the **Enable Developer Visual for testing** checkbox.
 
@@ -239,7 +239,7 @@ Now we are going to test the CircleCard custom visual by uploading a Power BI De
 
     ![New visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
-    > !{Note}
+    > ![Note]
     > This is a very simple visual that displays the number of times its Update method has been called. At this stage, the visual does not yet retrieve any data.
 
 7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
@@ -299,7 +299,7 @@ Now you can develop the custom visual to display a circle with text.
 
 6. Select the **pbiviz.json** file.
 
-7. To register the **d3 library**, enter the following file reference into the externalJS array. Be sure to add a *comma* after the existing file reference.
+7. To register the **d3 library**, enter the following file reference into the externalJS array. Be sure to add a *comma* between the existing file reference and the new file reference.
 
     ```javascript
     "node_modules/d3/d3.min.js"
@@ -503,7 +503,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     ![Quantity Measure](media/custom-visual-develop-tutorial/quantity_measure.png)
 
-    > [!Note]
+    > ![Note]
     > The visual project does not yet include data binding logic.
 
 ### Exploring the dataview
@@ -576,7 +576,7 @@ You are now going to add common properties to the visual.
 
 5. In **Power BI**, review the formatting options again.
 
-    > [!Note]
+    > ![Note]
     > If you do not see the formatting options change then select **Reload Custom Visual**.
 
     ![View formatting options](media/custom-visual-develop-tutorial/view-formatting-options.png)
