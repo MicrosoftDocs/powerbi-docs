@@ -18,29 +18,32 @@ There are many ways to navigate your content in Power BI service. The content is
 
 ## Navigation within workspaces
 
-Power BI *consumer* typically have only one workspace: **My workspace**. **My workspace** will only have content if you've downloaded Micrsoft samples or created or downloaded your own content.  
+Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will only have content if you've downloaded Microsoft samples or created or downloaded your own content.  
 
-Within **My workspace**, Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains 2 dashboards, 6 reports, 1 workbook, and 5 datasets.
+Within **My workspace**, Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboards, two reports, no workbook, and two datasets.
 
 ![video](./media/end-user-search-sort/nav.gif)
 
 ________________________________________
 
 ## Navigation using the left navbar
-The left navpane classifies your content in ways that make it even easier to find what you need, quickly.  
+The left nav bar classifies your content in ways that make it even easier to find what you need, quickly.  
 
-![left navpane](./media/end-user-search-sort/power-bi-newnav2.png)
+![left nav bar](./media/end-user-search-sort/power-bi-newnav2.png)
 
 
-Content that is shared with you is available in **Shared with me**, and your last-viewed content is available in **Recent**. Your apps can be found by selecting **Apps**, and **Home** is a single page view of your most important content plus more.
+- Content that is shared with you is available in **Shared with me**.
+- Your last-viewed content is available in **Recent**. 
+- Your apps can be found by selecting **Apps**.
+- **Home** is a single page view of your most important content and suggested content and learning sources.
 
-Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, this is the dashboard that will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left navbar.
+Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left navbar.
 
 ![Favorites flyout](./media/end-user-search-sort/power-bi-favorite-flyout.png).
 
 
 ## Considerations and troubleshooting
-* For datasets, **Sort by** is not available by owner.
+* For datasets, **Sort by** isn't available by owner.
 
 ## Next steps
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
