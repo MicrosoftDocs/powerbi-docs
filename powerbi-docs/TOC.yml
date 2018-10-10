@@ -872,7 +872,9 @@
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
-        href: developer/custom-visual- develop-tutorial.md
+        href: developer/custom-visual-develop-tutorial.md
+      - name: "Adding formatting options"
+        href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Concepts
       items:
       - name: "Using Capabilities"
