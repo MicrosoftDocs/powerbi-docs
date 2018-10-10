@@ -32,6 +32,8 @@
       items:
       - name: "Reports"
         href: end-user-reports.md
+      - name: "View a report"
+        href: end-user-report-open.md
       - name: "How to use filters in reports"
         href: end-user-report-filter.md
     - name: Visualizations
