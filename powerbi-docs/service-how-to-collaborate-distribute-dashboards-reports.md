@@ -53,7 +53,7 @@ Say you want to distribute your dashboard to a broad audience. You and your cowo
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator give you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](consumer/end-user-create-apps.md). 
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator give you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md). 
 
 After they install an app, they can view it in their browser or mobile device.
 
@@ -95,7 +95,7 @@ You can publish Power BI reports to the whole Internet by embedding interactive 
 
 ## Next steps
 * [Share dashboards with coworkers and others](service-share-dashboards.md)
-* [Create and publish an app in Power BI](consumer/end-user-create-apps.md)
+* [Create and publish an app in Power BI](service-create-distribute-apps.md)
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

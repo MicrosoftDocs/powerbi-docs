@@ -1,5 +1,3 @@
-- name: "Power BI documentation"
-  href: ../index.md
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
 - name: Power BI service
@@ -14,6 +12,10 @@
     items: 
     - name: "Find your way around in Power BI"
       href: end-user-experience.md
+  - name: Tutorials
+    items:
+    - name: "Create a dashboard alert"
+      href: end-user-alerts.md 
   - name: How to
     items: 
     - name: Dashboards
@@ -28,6 +30,8 @@
         href: end-user-comment.md
     - name: Reports
       items:
+      - name: "Reports"
+        href: end-user-reports.md
       - name: "How to use filters in reports"
         href: end-user-report-filter.md
     - name: Visualizations
@@ -38,7 +42,6 @@
         href: end-user-drill.md
       - name: "Export data from a visualization"
         href: end-user-export-data.md
-
     - name: Common tasks
       items: 
       - name: "Display in focus mode and full screen mode"
@@ -55,8 +58,12 @@
         href: end-user-subscribe.md
     - name: Get data
       items: 
+      - name: "What are apps?"
+        href: end-user-apps.md
       - name: "Shared with me"
         href: end-user-shared-with-me.md
+      - name: "Connect to services"
+        href: end-user-connect-to-services.md
       - name: "Find and connect to organizational content packs"
         href: end-user-content-pack.md
     - name: Ask questions of your data
