@@ -251,5 +251,8 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
 ## Next Steps
 
+> [!div class="previousstepaction"]
+> [Developing a Power BI Custom Visual](custom-visual-develop-tutorial.md)
+
 > [!div class="nextstepaction"]
 > [Publish custom visuals to AppSource](office-store.md)
