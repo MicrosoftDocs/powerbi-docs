@@ -94,9 +94,12 @@ Power BI report designers control the types of data export options that are avai
 
 1. To set these options, start in Power BI Desktop.
 
-2. From the upper left corner, select **File** > **Options and Settings** > **Options**.  
+2. From the upper left corner, select **File** > **Options and Settings** > **Options**. 
 
 3. Under **Current file** select **Report settings**.
+
+    ![desktop report settings](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
 
 4. Make your selection from the **Export data** dropdown.
 

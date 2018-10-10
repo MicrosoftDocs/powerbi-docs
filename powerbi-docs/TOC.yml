@@ -421,6 +421,8 @@
         href: service-rename.md
       - name: "Display dashboards and reports in Full Screen mode (TV mode)"
         href: service-fullscreen-mode.md
+      - name: "Quick Insights in Power BI"
+        href: service-insights.md
       - name: "Enroll your US Government organization"
         href: service-govus-signup.md
       - name: "Data alerts in Power BI service"
