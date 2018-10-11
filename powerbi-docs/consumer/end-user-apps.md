@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/09/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -29,13 +29,13 @@ The easiest way to install a new app yourself is to get a direct link from the a
 
 **On your computer** 
 
-When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
+Select the link in email to open Power BI service ([https://powerbi.com](https://powerbi.com)) in a browser. Confirm you want to install the app and it opens to the app landing page.
 
 ![App landing page in the Power BI service](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **On your iOS or Android mobile device** 
 
-When you click the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
+When you select the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
 
 ![App content list on mobile device](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -45,7 +45,7 @@ You can also find and install any apps that you have access to from Microsoft Ap
 1. Select **Apps** ![Apps in the left navigation pane](./media/end-user-apps/power-bi-apps-bar.png) > **Get apps**. 
    
      ![The Get apps icon](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
+2. In AppSource under **My organization**, search to narrow the results and find the app you're looking for.
    
      ![In AppSource under My organization](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. Select **Get it now** to add it to your Apps page. 

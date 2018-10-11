@@ -287,6 +287,8 @@
         href: visuals/service-tips-and-tricks-for-color-formatting.md
       - name: "Copy and paste a visualization in Power BI"
         href: visuals/power-bi-visualization-copy-paste.md
+      - name: "Export the data used to create the visualization"
+        href: visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visualization in a Power BI report"
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Hyperlinks in tables"
@@ -421,6 +423,8 @@
         href: service-rename.md
       - name: "Display dashboards and reports in Full Screen mode (TV mode)"
         href: service-fullscreen-mode.md
+      - name: "Quick Insights in Power BI"
+        href: service-insights.md
       - name: "Enroll your US Government organization"
         href: service-govus-signup.md
       - name: "Data alerts in Power BI service"
