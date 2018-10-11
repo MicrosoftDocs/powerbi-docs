@@ -121,7 +121,7 @@ You can also sort the content by name or owner.
 
 ![sort content](./media/end-user-experience/power-bi-sort.png)
 
-To learn more, see [Power BI navigation: search, sort, filter](end-user-search-filter-sort.md)
+To learn more, see [Power BI navigation: search, sort, filter](end-user-search-sort.md)
 
 ## Clean up resources
 After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.

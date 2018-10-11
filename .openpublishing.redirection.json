@@ -546,11 +546,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-insights.md",
-            "redirect_url": "/power-bi/consumer/end-user-insights",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-insight-types.md",
             "redirect_url": "/power-bi/consumer/end-user-insight-types",
             "redirect_document_id": true
@@ -559,6 +554,11 @@
             "source_path": "powerbi-docs/service-navigation-search-filter-sort.md",
             "redirect_url": "/power-bi/consumer/end-user-search-filter-sort",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/end-user-search-filter-sort.md",
+            "redirect_url": "/power-bi/consumer/end-user-search-sort",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-notification-center.md",

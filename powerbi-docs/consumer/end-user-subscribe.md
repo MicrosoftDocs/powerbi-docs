@@ -50,12 +50,9 @@ Whether you're subscribing to a dashboard or report, the process is very similar
    
    ![email snapshot of dashboard](./media/end-user-subscribe/power-bi-dashboard-email-new.jpg)
    
-   > [!TIP]
-   > Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard or the dataset associated with the report. (If you don't have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.) To find out which datasets are being used, select the **View related** icon ![View related icon](./media/end-user-subscribe/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![refresh icon](./media/end-user-subscribe/power-bi-refresh.png). 
-   > 
-   > 
+Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the name of the underlying dataset(s), select **View related** from the top menubar.
    
-   ![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
+![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 ## How the email schedule is determined
 The following table describes how frequently you will receive an email. It all depends on the connection method of the dataset upon which the dashboard or report is based (DirectQuery, Live connection, imported to Power BI, or Excel file in OneDrive or SharePoint Online) and on the subscription options available and selected (daily, weekly, or none).
