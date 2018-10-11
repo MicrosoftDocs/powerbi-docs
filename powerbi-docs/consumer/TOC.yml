@@ -64,6 +64,8 @@
         href: end-user-subscribe.md
       - name: "Search and sort content in Power BI"
         href: end-user-search-sort.md
+      - name: "Search, filter, and sort content in Power BI"
+        href: end-user-search-filter-sort.md
       - name: "View automatic insights for dashboard tiles"
         href: end-user-insights.md
     - name: Get data
