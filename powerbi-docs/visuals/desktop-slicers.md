@@ -64,7 +64,7 @@ The group name provides additional flexibility with slicers. You can create sepa
 
 ## How filtering affects selection in slicers
 
-If you make a selection in a slicer, and then apply a filter that would normally remove the selected item, you'll see it is retained at the bottom of the list of items in the slicer. This means that if the filter is removed, the selection is still applied from the slicer. You'll notice that if you un-select the item from the slicer it disappears from the list.
+If you make a selection in a slicer and then apply a filter that would normally remove the selected item, it remains at the bottom of the list of items in the slicer. If the filter is removed, the selection is still there in the slicer. You'll notice that if you unselect the item from the slicer it disappears from the list.
 
 ![retained selection in slicers](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
