@@ -62,6 +62,7 @@ This feature lets you create a custom group of slicers to keep synchronized. A d
 
 The group name provides additional flexibility with slicers. You can create separate groups to sync slicers that use the same field, or put slicers that use different fields into the same group. 
 
+## Retained selection
 
 ## Next steps
 
