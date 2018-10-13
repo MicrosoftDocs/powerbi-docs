@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/08/2018
+ms.date: 10/11/2018
 ms.author: mihart
 layout: landingpage
 
@@ -30,9 +30,9 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                             <a href="end-user-consumer.md">What can I do as a Power BI consumer?</a><br/> 
                                                                                             <a href="../service-get-started.md">Get started tutorial</a><br/>
                                                                                             View a <a href="end-user-report-open.md">report</a> | <a href="end-user-dashboard-open.md">dashboard</a> | <a href="end-user-apps.md">app</a><br/> 
-                                                                                           <!-- <a href="end-user-filter.md">View filters in your reports</a><br/> 
+                                                                                           <a href="end-user-filter.md">View filters in your reports</a><br/> 
                                                                                             <a href="end-user-collaborate.md">Collaborate</a><br/> 
-                                                                                            <a href="end-user-subscribe.md">Subscribe to a report or dashboard</a><br/> -->
+                                                                                            <!--<a href="end-user-subscribe.md">Subscribe to a report or dashboard</a><br/> -->
                                                                         </div> 
                                                           </div> 
                                            </div> 
@@ -64,7 +64,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                             <a href="end-user-q-and-a.md">Q&A natural language search box</a><br/> 
                                                                                             <a href="end-user-focus.md">Change display settings</a><br/> 
                                                                                             <a href="end-user-filters.md">Learn to use filters</a><br> 
-                                                                                            <!--<a href="end-user-insights.md">Generate automatic insights</a><br/> -->
+                                                                                            <a href="end-user-insights.md">Generate automatic insights</a><br/> 
                                                                         </div> 
                                                           </div> 
                                            </div> 
