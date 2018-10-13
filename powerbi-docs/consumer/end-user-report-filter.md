@@ -1,6 +1,6 @@
 ---
-title: Overview of the Power BI Filters pane for consumers
-description: Overview of the report Filters pane in Power BI service 
+title: Add a report filter
+description: How to add a filter to a report in Power BI service 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
