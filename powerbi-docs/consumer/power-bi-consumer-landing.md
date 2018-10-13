@@ -30,9 +30,8 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                             <a href="end-user-consumer.md">What can I do as a Power BI consumer?</a><br/> 
                                                                                             <a href="../service-get-started.md">Get started tutorial</a><br/>
                                                                                             View a <a href="end-user-report-open.md">report</a> | <a href="end-user-dashboard-open.md">dashboard</a> | <a href="end-user-apps.md">app</a><br/> 
-                                                                                           <a href="end-user-filter.md">View filters in your reports</a><br/> 
-                                                                                            <a href="end-user-collaborate.md">Collaborate</a><br/> 
-                                                                                            <!--<a href="end-user-subscribe.md">Subscribe to a report or dashboard</a><br/> -->
+                                                                                            <!--<a href="end-user-collaborate.md">Collaborate</a><br/> -->
+                                                                                            <a href="end-user-subscribe.md">Subscribe to a report or dashboard</a><br/> -->
                                                                         </div> 
                                                           </div> 
                                            </div> 
@@ -47,7 +46,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                       <p></p>
                                                                                             <a href="end-user-basic-concepts.md">Basic concepts</a><br/>
                                                                                             <a href="end-user-experience.md">Getting around the Power BI service</a><br/> 
-                                                                                            <a href="../powerbi-overview.md">Learn about all the different Power BI tools</a><br/> 
+                                                                                            <a href="../power-bi-overview.md">Learn about all the different Power BI tools</a><br/> 
                                                                                             <!--<a href="end-user-faq.md">FAQ: Frequently Asked Questions</a> -->
                                                                         </div> 
                                                           </div> 
@@ -63,7 +62,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                                       <p></p>
                                                                                             <a href="end-user-q-and-a.md">Q&A natural language search box</a><br/> 
                                                                                             <a href="end-user-focus.md">Change display settings</a><br/> 
-                                                                                            <a href="end-user-filters.md">Learn to use filters</a><br> 
+                                                                                            <a href="end-user-report-filter.md">Learn to use report-filters</a><br> 
                                                                                             <a href="end-user-insights.md">Generate automatic insights</a><br/> 
                                                                         </div> 
                                                           </div> 
