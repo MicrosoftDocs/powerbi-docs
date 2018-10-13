@@ -1,6 +1,6 @@
 ---
-title: View a report in Power BI service
-description: Open a Power BI report in Reading view.
+title: View a report in Power BI service for consumers.
+description: This topic shows Power BI consumers and end users had to open and view a Power BI report.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -12,8 +12,8 @@ ms.date: 10/10/2018
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it's been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
-# View a report in Power BI service (app.powerbi.com)
-A report is one or more pages of visuals. Reports are  created by Power BI *report designers* and [shared with you directly](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). 
+# View a report in Power BI service for *consumers*
+A report is one or more pages of visuals. Reports are  created by Power BI *report designers* and [shared with *consumers* directly](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). 
 
 There are many different ways to open a report and we'll show you two of them: open from the Home page and open from a dashboard. 
 
@@ -38,7 +38,7 @@ Power BI *designers* can share a report directly with you by clicking a **Share*
    
    ![shared with me section of Home page](./media/end-user-report-open/power-bi-shared.png)
 
-4. Simply select one of the report cards to open the report.
+4. Simply select one of the report *cards* to open the report.
 
    ![report page](./media/end-user-report-open/power-bi-report1.png)
 
@@ -61,10 +61,10 @@ If you've received apps from colleagues or from AppSource, those apps are availa
 
    ![Home page](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. If selecting the app:
+8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard, a report, or an app content list. If selecting the app:
     - opens the report, you're all set.
     - opens a dashboard, see [Open a report from a dashboard](#Open-a-report-from-a-dashboard), below.
-
+    - opens the app content list, under **Reports** select the report to open it.
 
 
 ## Open a report from a dashboard
@@ -80,16 +80,16 @@ Reports can be opened from a dashboard. Most dashboard tiles are *pinned* from r
 
 > [!NOTE]
 > Not all tiles lead to a report. 
->If you select a tile that was [created with Q&A](../service-dashboard-pin-tile-from-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), the **Edit tile** wizard will open.  
+>If you select a tile that was [created with Q&A](../end-user-q-and-a.md), the Q&A screen will open. 
+>If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen.  
 
 
 ##  Still more ways to open a report
 As you get more comfortable navigating Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
 - From the left navpane using **Favorites** and **Recent**    
 - Using [View related](end-user-related.md)    
-- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](../service-set-data-alerts.md)    
-- From your [Notification center]    (end-user-notification-center.md)    
+- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](../end-user-alerts.md)    
+- From your [Notification center](end-user-notification-center.md)    
 - and more
 
 ## Next steps
