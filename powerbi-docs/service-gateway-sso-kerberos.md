@@ -16,6 +16,8 @@ LocalizationGroup: Gateways
 
 INTRO with link back to overview
 
+https://technet.microsoft.com/library/jj553400.aspx
+
 ## From overview
 
    - The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
