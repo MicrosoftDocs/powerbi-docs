@@ -48,10 +48,7 @@ Here are additional details about those steps:
 
 ## Next steps
 
-For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
+Now that you understand the basics of SSO, read more detailed information about Kerberos and SAML:
 
-* [On-premises data gateway](service-gateway-onprem.md)
-* [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
-* [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-* [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
+* [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)
