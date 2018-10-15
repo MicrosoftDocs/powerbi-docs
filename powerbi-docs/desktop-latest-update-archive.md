@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 10/15/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -67,7 +67,7 @@ The following updates were new to **Power BI Desktop** this month:
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
