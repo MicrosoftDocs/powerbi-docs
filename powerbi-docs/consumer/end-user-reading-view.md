@@ -32,7 +32,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Reading view
 Reading view is available in Power BI service for report *consumers*. When a colleague shares a report with you), Reading view is your way to explore and interact with the report. 
 
-The other Power BI service report mode is [Editing view](service-interact-with-a-report-in-editing-view.md), which is available to report *designers*.  
+The other Power BI service report mode is [Editing view](,,/service-interact-with-a-report-in-editing-view.md), which is available to report *designers*.  
 
 Reading view is a powerful and safe way to explore your dashboards and reports. While you slice and dice the dashboards and reports shared with you, the underlying data sets remain intact and unchanged. 
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/13/2018
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it's been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
@@ -80,7 +80,7 @@ Reports can be opened from a dashboard. Most dashboard tiles are *pinned* from r
 
 > [!NOTE]
 > Not all tiles lead to a report. 
->If you select a tile that was [created with Q&A](../end-user-q-and-a.md), the Q&A screen will open. 
+>If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
 >If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen.  
 
 
@@ -88,7 +88,7 @@ Reports can be opened from a dashboard. Most dashboard tiles are *pinned* from r
 As you get more comfortable navigating Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
 - From the left navpane using **Favorites** and **Recent**    
 - Using [View related](end-user-related.md)    
-- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](../end-user-alerts.md)    
+- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
 - and more
 
