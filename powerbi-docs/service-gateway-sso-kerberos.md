@@ -18,12 +18,14 @@ Use [Kerberos constrained delegation](https://technet.microsoft.com/library/jj55
 
 ## Supported data sources
 
-The following data sources are currently supported:
+We currently support the following data sources:
 
 * SQL Server
 * SAP HANA
 * Teradata
 * Spark
+
+We also support SAP HANA with [Security Assertion Markup Language (SAML)](service-gateway-sso-saml.md).
 
 ### SAP HANA
 
@@ -82,15 +84,15 @@ First, determine whether an SPN was already created for the domain account used 
 
 3. In the search result, right-click on the gateway service account and select **Properties**.
 
-If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about configuring Delegation settings.
+4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about configuring Delegation settings.
 
-If there is no **Delegation** tab on the **Properties** dialog, you can manually create an SPN on that account which adds the **Delegation** tab (that is the easiest way to configure delegation settings). Creating an SPN can be done using the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
+    If there is no **Delegation** tab on the **Properties** dialog, you can manually create an SPN on that account which adds the **Delegation** tab (that is the easiest way to configure delegation settings). Creating an SPN can be done using the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
 
-For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
+    For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
 
-![Set SPN](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_05.png)
+    ![Set SPN](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_05.png)
 
-With that step completed, we can move on to configuring delegation settings.
+    With that step completed, we can move on to configuring delegation settings.
 
 ### Configure delegation settings on the gateway service account
 
@@ -131,11 +133,9 @@ Given those example names and settings, the configuration steps are the followin
 
 11. Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN.
 
-12. The dialog box will look similar to the following if you selected **Expanded**.
+12. The dialog box will look similar to the following if you selected **Expanded**. Select **OK**.
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_06.png)
-
-13. Select **OK**.
 
 Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), the gateway service account must be granted the local policy “Impersonate a client after authentication”. You can perform/verify this with the Local Group Policy Editor (**gpedit**).
 

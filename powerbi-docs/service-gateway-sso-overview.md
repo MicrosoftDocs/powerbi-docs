@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your On-premises data gateway either with Kerberos constrained delegation or Security Assertion Markup Language (SAML). The On-premises data gateway facilitates SSO using DirectQuery, which it uses to connect to on-premises data sources.
 
-The following data sources are currently supported:
+We currently support the following data sources:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
 * SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) and [SAML](service-gateway-sso-saml.md)
