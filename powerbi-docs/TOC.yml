@@ -347,6 +347,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Formula editor shortcuts for Power BI Desktop"
+      href: desktop-formula-editor.md      
     - name: "Power BI Desktop privacy levels"
       href: desktop-privacy-levels.md
     - name: "Connector extensibility in Power BI"
