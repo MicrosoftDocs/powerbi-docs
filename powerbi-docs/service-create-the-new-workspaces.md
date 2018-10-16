@@ -125,7 +125,7 @@ We’re building Request Access workflows throughout the service so users who do
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](consumer/end-user-create-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
 ## Convert old app workspaces to new app workspaces
 
@@ -167,7 +167,6 @@ The following issues are known, and fixes are under development:
 - After a workspace is moved from a Premium capacity to shared capacity, in some cases, free users and user groups will continue to receive emails, though they should not. The issue occurs when the My Workspace of the user creating the subscription is in a Premium capacity.
 
 ## Next steps
-
-- [Create the current workspaces](service-create-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Create the current workspaces](service-create-workspaces.md)
+* [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

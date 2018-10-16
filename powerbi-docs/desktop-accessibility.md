@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -57,6 +57,8 @@ These accessibility additions were created to let users fully consume Power BI r
 ## Tips for creating accessible reports
 The following tips can help you create **Power BI Desktop** reports that are more accessible.
 
+### General tips for accessible reports
+
 * For **Line**, **Area**, and **Combo** visuals, as well as for **Scatter** and **Bubble** visuals, turn markers on, and use a different *Marker shape* for each line.
   
   * To turn *Markers* on, select the **Format** section in the **Visualizations** pane, expand the **Shapes** section, then scroll down to find the **Markers** toggle and turn it to *On*.
@@ -76,6 +78,13 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 * Include a title, axis labels, and data labels in all visuals.
 * Use meaningful titles for all report pages.
 * Avoid decorative shapes and images in your report if possible, as they are included in the tab order of the report. If you need to include decorative objects in your report, update the object's alt text to let screen reader users know that it is for decoration.
+
+### Arranging items in Field buckets
+Beginning with the October 2018 release of **Power BI Desktop**, the **Fields** well can be navigated with a keyboard and interacts with screen readers. 
+
+To improve the process of creating reports with screen readers, a context menu is available to allow moving fields in the well up or down in the **Fields** list, or moving the field to other wells, such as **Legend** or **Value** or others.
+
+![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility_09.png)
 
 ## High contrast support for reports
 

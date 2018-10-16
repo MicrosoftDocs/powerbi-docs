@@ -3,12 +3,12 @@ title: Embed Power BI content into an application for your customers
 description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your customers.
 author: markingmyname
 ms.author: maghan 
-ms.date: 06/20/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
+ms.date: 06/20/2018
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -53,7 +53,7 @@ You register your application with Azure Active Directory to allow your applicat
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Follow the prompts and create a new application. For apps owns data you need to use **Native** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
+4. Follow the prompts and create a new application. For app owns data you need to use **Native** for the application type. You also need to provide a **Redirect URI**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
 
     ![Create App](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
@@ -72,7 +72,7 @@ You need to enable additional permissions for your application in addition to wh
     ![Required Permissions](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-   
+
     ![Windows Azure AD Permissions](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
 4. Select **Add**.
@@ -88,13 +88,13 @@ You need to enable additional permissions for your application in addition to wh
     ![Select PBI Services](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
 7. Select all permissions under **Delegated Permissions**. You need to select them one by one to save the selections. Select **Save** when done.
-   
+
     ![Select delegated permissions](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
 8. Within **Required permissions**, select **Grant Permissions**.
-   
+
     The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you need to grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you need to grant permissions only to the *master account* for this application.
-   
+
     ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
 ## Set up your Power BI environment
@@ -167,9 +167,10 @@ Follow these steps to start embedding your content using a sample application.
 
     ![Azure Portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    In the left-hand navigation pane, choose **All Services** and select **App Registrations**.
+    In the left-hand navigation pane, choose **All Services**, and select **App Registrations**.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+
     Select the application that you want to get the **clientId** for.
 
     ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
@@ -272,6 +273,7 @@ var embedConfig = new EmbedConfig()
 This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs file**.
 
 ### Load an item using JavaScript
+
 You can use JavaScript to load a report into a div element on your web page.
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.

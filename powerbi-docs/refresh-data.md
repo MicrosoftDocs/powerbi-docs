@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -207,8 +207,6 @@ Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream An
 | **Data source** | **Automatic** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Custom apps developed with the Power BI Rest API or Microsoft Stream Analytics |Yes, live streaming |No |No |
-
-To learn more, see [Create a real-time dashboard in Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## Configure scheduled refresh
 To learn how to configure scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md)

@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
 ---
 
@@ -132,7 +132,7 @@ Special characters and spaces require some additional formatting. When your quer
 |---------|---------|---------|
 |**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [ is 0x005B ] is 0x0050       |  _x0058_Column_x0050       |
+|**[Column]**     |  [ is 0x0058 ] is 0x0050       |  _x0058_Column_x0050       |
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
@@ -168,6 +168,7 @@ There are a couple of things to be aware of when using the query string paramete
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.
 * Query string filtering does not work with [Publish to web](service-publish-to-web.md) or Power BI Embedded.   
 * The long data type is (2^53-1) due to Javascript limitations.
+* Report URL filters have a 10-expression limit (10 filters connected by AND).
 
 ## Next steps
 

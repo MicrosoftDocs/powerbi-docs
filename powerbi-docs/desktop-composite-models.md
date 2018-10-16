@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -50,7 +50,7 @@ When you use DirectQuery, composite models makes it possible to create a Power B
 For example, by using composite models, you can build a model that combines sales data from an enterprise data warehouse with data on sales targets that is in a departmental SQL Server database, along with some data imported from a spreadsheet. A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is referred to as a *composite model*.
 
 > [!NOTE]
-> While composite models are in preview, it is not possible to publish composite models to the Power BI service. 
+> Beginning with the October 2018 release of Power BI Desktop, you *can* publish composite models to the Power BI service. For scheduled refresh and dashboard tile refresh, composite models in the Power BI service behave in the same way as Import models. 
 
 You can create relationships between tables as you always have, even when those tables come from different sources, with the following restriction: any relationships that are cross-source must be defined as having a cardinality of *many-to-many*, regardless of their actual cardinality. The behavior of such relationships is then the same as normal for *many-to-many* relationships, as described in [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md). 
 

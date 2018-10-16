@@ -147,13 +147,38 @@ On the On-premises data gateway with configurable Custom User Mapping, do the fo
 How to configure your gateway to perform the AD Lookup:
 
 1. Download and install the latest gateway
+
 2. In the gateway, you need to change the **On-premises data gateway service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the gateway service for the change to take effect.  Go to the gateway app on your machine (search for “On-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
-3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
+3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. These configurations are case-sensitive so make sure they match the values in Active Directory.
+
+    ![Azure Active Directory settings](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    If no value is provided for the ADServerPath configuration, the gateway uses the default Global Catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon as in the following example.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    The gateway parses the values for ADServerPath from left to right until it finds a match. If no match is found then the original UPN is used. Make sure the account running the gateway service (PBIEgwService) has query permissions to all AD servers that you specify in ADServerPath.
+
+    The gateway supports two types of ADServerPath, as in the following examples.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Restart the **On-premises data gateway** service for the configuration change to take effect.
 
 ### Working with mapping rules

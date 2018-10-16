@@ -9,7 +9,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 05/18/2018
+ms.date: 10/02/2018
 ms.author: mihart
 #customer intent: As a PBI customer or potential customer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -34,7 +34,7 @@ We'll grab some sample data to use for our tour of Power BI service. There are a
 
     ![select the sample](./media/end-user-experience/power-bi-retail-sample.png)
 
-    Power BI service imports the sample and displays the dashboard. Dashboards are something that differentiate Power BI service from Power BI Desktop. The sample also includes a report and a dataset, which we'll visit later.
+    Power BI service imports the sample and displays the dashboard. Dashboards are something that differentiates Power BI service from Power BI Desktop. The sample also includes a report and a dataset, which we'll visit later.
 
     ![](media/end-user-experience/power-bi-dashboard.png)
 
@@ -121,7 +121,7 @@ You can also sort the content by name or owner.
 
 ![sort content](./media/end-user-experience/power-bi-sort.png)
 
-To learn more, see [Power BI navigation: search, sort, filter](end-user-search-filter-sort.md)
+To learn more, see [Power BI navigation: search, sort, filter](end-user-search-sort.md)
 
 ## Clean up resources
 After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.
