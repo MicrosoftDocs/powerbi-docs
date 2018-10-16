@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 ---
 # Composite models in Power BI Desktop (preview)
 
-Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections, whether DirectQuery or Import, were allowed for that report. With composite models, that restriction is removed, and a report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
+Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections - whether DirectQuery or Import - were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
 ![Composite models in Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -63,7 +63,7 @@ As an example of a *composite model*, consider a report that has connected to a 
 
 ![Relationship view for composite models](media/desktop-composite-models/composite-models_04.png)
 
-At this point you could build simple visuals by using fields from this source. For example, the following image shows total sales amount by *ProductName*, for a selected quarter. 
+At this point, you could build simple visuals by using fields from this source. For example, the following image shows total sales by *ProductName*, for a selected quarter. 
 
 ![Visual based on data](media/desktop-composite-models/composite-models_05.png)
 
@@ -83,7 +83,7 @@ Similarly, looking at the **Relationship** view in Power BI Desktop, we now see 
 
 ![Relationship view of tables](media/desktop-composite-models/composite-models_08.png)
 
-We now need to relate these tables to the other tables in the model. We do this as we always have, by creating a relationship between the **Bike** table (in SQL Server) and the **ProductManagers** table (that is imported). That is, the relationship is between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier in this article, all relationships that go across source must have *many-to-many* cardinality, which is the default, selected cardinality. 
+We now need to relate these tables to the other tables in the model. We do so as we always have, by creating a relationship between the **Bike** table (in SQL Server) and the **ProductManagers** table (that is imported). That is, the relationship is between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier in this article, all relationships that go across source must have *many-to-many* cardinality, which is the default, selected cardinality. 
 
 ![The "Create relationship" window](media/desktop-composite-models/composite-models_09.png)
 
@@ -103,7 +103,7 @@ Then, much as we did earlier in this example, we can create relationships betwee
 
 ![The Relationship view with many tables](media/desktop-composite-models/composite-models_13.png)
 
-As shown in the following image, which is based on the new data and relationships we just created, the visual at the lower left shows total *Sales Amount* versus *Target*, with the variance calculation showing the difference, where *Sales Amount* and *Target* are coming from two different SQL Server databases. 
+As shown in the following image, which is based on the new data and relationships we created, the visual at the lower left shows total *Sales Amount* versus *Target*, with the variance calculation showing the difference, where *Sales Amount* and *Target* are coming from two different SQL Server databases. 
 
 ![Image showing more data](media/desktop-composite-models/composite-models_14.png)
 
@@ -133,31 +133,31 @@ Composite models have some security implications. A query sent to one data sourc
 
 ![Script showing security implications](media/desktop-composite-models/composite-models_17.png)
 
-Because of this, information that is stored in the spreadsheet is now being included in a query sent to the relational database. If this information is confidential, the security implications should be considered. In particular, consider the following:
+Consequently, information that's stored in the spreadsheet is now being included in a query that's sent to the relational database. If this information is confidential, the security implications should be considered. In particular, consider the following points:
 
-* Any administrator of the database who can view traces or audit logs would be able to view this information, even if they do not have permissions to the data in its original source (in this case, permissions to the Excel file).
+* Any administrator of the database who can view traces or audit logs would be able to view this information, even if they don't have permissions to the data in its original source. In this example, they would need permissions to the Excel file.
 
-* The encryption settings for each source should be considered, to avoid information being retrieved from one source using an encrypted connection, but then inadvertently having it included in a query sent to another source by using an unencrypted connection. 
+* The encryption settings for each source should be considered. You want to avoid retrieving information from one source via an encrypted connection and then inadvertently having it included in a query sent to another source via an unencrypted connection. 
 
-Power BI Desktop displays a warning message when an action is taken to create a composite model, to allow confirmation that any security implications have been considered.  
+To allow confirmation that any security implications have been considered, Power BI Desktop displays a warning message when an action is taken to create a composite model.  
 
-For similar reasons, exercise care when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, it means that information retrieved from one source, using the credentials of the user who opens the file, would be sent to another data source as part of the query. In this case, it could be viewed by the malicious author of the Power BI Desktop file. Therefore, when you open a Power BI Desktop file for the first time, if it contains multiple sources, a warning is displayed. This warning is similar to the warning that's displayed when you open a file that contains native SQL queries.  
+For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that's retrieved from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. Therefore, when you open a Power BI Desktop file for the first time, if it contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
 ## Performance implications  
 
-When you use DirectQuery, you should always consider performance, primarily to ensure that the back-end source has sufficient resources to provide a good experience for users. A good experience means that visuals should refresh in five seconds or less. You should also adhere to the performance advice in the [Use DirectQuery in Power BI](desktop-directquery-about.md) article. 
+When you use DirectQuery, you should always consider performance, primarily to ensure that the back-end source has sufficient resources to provide a good experience for users. A good experience means that the visuals refresh in five seconds or less. You should also follow the performance advice in the [Use DirectQuery in Power BI](desktop-directquery-about.md) article. 
 
 Using composite models adds additional performance considerations. A single visual can result in sending queries to multiple sources, which often passes the results from one query across to a second source. This situation can result in the following forms of execution:
 
-* **A SQL query that includes a large number of literal values**: For example, a visual requesting total *Sales Amount* (from the SQL database) for a set of selected *Product Managers* (from the related table that was imported from a spreadsheet) would first need to find which *Products* were managed by those product managers. This all must happen before the visual sends a SQL query that includes all of the product IDs in a *WHERE* clause.
+* **A SQL query that includes a large number of literal values**: For example, a visual that requests total *Sales Amount* (from the SQL database) for a set of selected *Product Managers* - from the related table that was imported from a spreadsheet - would first need to find which *Products* were managed by those product managers. This sequence must happen before the visual sends a SQL query that includes all of the product IDs in a *WHERE* clause.
 
-* **A SQL query that queries at a lower level of granularity, with the data then being aggregated locally**: To continue with the preceding example, as the number of *Products* meeting the filter criteria on *Product Manager* becomes very large, at a certain point it becomes inefficient or unfeasible to include them all in a *WHERE* clause. Instead, it's necessary to query the relational source at the lower level of *Product*, and then locally aggregate the results. If the cardinality of *Products* exceeds a limit of 1 million, the query will fail.
+* **A SQL query that queries at a lower level of granularity, with the data then being aggregated locally**: To continue with the preceding example, as the number of *Products* meeting the filter criteria on *Product Manager* grows large, at a certain point it becomes inefficient or unfeasible to include them all in a *WHERE* clause. Instead, it's necessary to query the relational source at the lower level of *Product* and then locally aggregate the results. If the cardinality of *Products* exceeds a limit of 1 million, the query fails.
 
 * **Multiple SQL queries, one per group by value**: When the aggregation uses **DistinctCount** and is grouped by some column from another source, and if the external source does not support efficient passing of many literal values that define the grouping, it's necessary to send one SQL query per group by value. 
 
-   For example, a visual that requests a distinct count of *CustomerAccountNumber* (from the SQL Server table) by *Product Manager* (from the related table that was imported from a spreadsheet) would need to pass in the details from the *Product Managers* table in the query sent to SQL Server. Over other sources (Redshift, for example), this is unfeasible. Instead, there would be one SQL query sent per *Sales Manager* (up to some practical limit, at which point the query would fail). 
+   For example, a visual that requests a distinct count of *CustomerAccountNumber* (from the SQL Server table) by *Product Manager* - from the related table that was imported from a spreadsheet - would need to pass in the details from the *Product Managers* table in the query that's sent to SQL Server. Over other sources (Redshift, for example), this action is unfeasible. Instead, there would be one SQL query sent per *Sales Manager* - up to some practical limit, at which point the query would fail. 
 
-Each of these cases has its own implications on performance, and the exact details vary for each data source. A good rule of thumb is that, while the cardinality of the columns used in the relationship joining the two sources remains low (a few thousand), performance should not be significantly affected. As this cardinality grows, you should pay more attention to the impact on the resulting performance. 
+Each of these cases has its own implications on performance, and the exact details vary for each data source. A good rule of thumb is that, although the cardinality of the columns used in the relationship joining the two sources remains low (a few thousand), performance should not be affected. As this cardinality grows, you should pay more attention to the impact on the resulting performance. 
 
 Additionally, the use of *many-to-many* relationships means that separate queries must be sent to the underlying source for each total or subtotal level, rather than aggregating the detailed values locally. As such, a simple table visual with totals would send two SQL queries, rather than one. 
 
@@ -173,9 +173,9 @@ The following Live Connect (multi-dimensional) sources cannot be used with compo
 * Power BI datasets
 * Azure Analysis Services
 
-When you connect to those multi-dimensional sources by using DirectQuery, you can neither connect to another DirectQuery source nor combine it with Import data.
+When you connect to those multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with Import data.
 
-The existing limitations of using DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an Import table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are not available on a model if any of the tables within it has a storage mode of DirectQuery. 
+The existing limitations of using DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an Import table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features aren't available on a model if any of the tables within it has a storage mode of DirectQuery. 
 
 ## Next steps
 
