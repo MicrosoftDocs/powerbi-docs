@@ -1188,6 +1188,8 @@
     - name: "Power BI cmdlets for PowerShell"
       href: https://docs.microsoft.com/en-us/powershell/power-bi/
       maintainContext: true
+    - name: Service URL reference
+      href: power-bi-whitelist-urls.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
