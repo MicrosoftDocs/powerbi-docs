@@ -24,21 +24,21 @@ Setting the storage mode provides many advantages. You can set storage mode for 
 
 * **Query performance**: As users interact with visuals in Power BI reports, Data Analysis Expressions (DAX) queries are submitted to the dataset. Caching data into memory by properly setting the storage mode can boost the query performance and interactivity of your reports.
 
-* **Large datasets**: Tables that are not cached do not consume memory for caching purposes. You can enable interactive analysis over large datasets that are too big or expensive to completely cache into memory. You can choose which tables are worth caching, and which are not.
+* **Large datasets**: Tables that aren't cached don't consume memory for caching purposes. You can enable interactive analysis over large datasets that are too big or expensive to completely cache into memory. You can choose which tables are worth caching, and which aren't.
 
-* **Data refresh optimization**: Tables that are not cached don't need to be refreshed. You can reduce refresh times by caching only the data that's necessary to meet your service level agreements and your business requirements.
+* **Data refresh optimization**: Tables that aren't cached don't need to be refreshed. You can reduce refresh times by caching only the data that's necessary to meet your service level agreements and your business requirements.
 
 * **Near-real time requirements**: Tables with near-real time requirements might benefit from not being cached, to reduce data latency.
 
-* **Writeback**: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can reflect changes immediately, which allows instant analysis of the effects.
+* **Writeback**: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can display changes immediately, which allows instant analysis of the effects.
 
 The storage mode setting in Power BI Desktop is one of three related features:
 
-* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
+* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
 
 * **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. *Many-to-many relationships* removes requirements for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
-* **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals such as slicers initiated queries that were sent to back-end sources. Storage mode is described further in this article.
+* **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources. Storage mode is described further in this article.
 
 ## Enable the storage mode preview feature
 
@@ -46,7 +46,7 @@ The storage mode feature is in preview, and it must be enabled in Power BI Deskt
 
 ![The "Preview features" pane](media/desktop-composite-models/composite-models_02.png)
 
-To enable the feature, you need to restart Power BI Desktop.
+To enable the feature, restart Power BI Desktop.
 
 ![The "Feature requires a restart" window](media/desktop-composite-models/composite-models_03.png)
 
@@ -64,15 +64,15 @@ There are three values for storage mode:
 
 * **Import**: When the value is set to **Import**, imported tables are cached. Queries submitted to the Power BI dataset that return data from Import tables can be fulfilled only from cached data.
 
-* **DirectQuery**: With this setting, DirectQuery tables are not cached. Queries that you submit to the Power BI dataset - for example, Data Analysis Expressions (DAX) queries - and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source - for example, SQL.
+* **DirectQuery**: With this setting, DirectQuery tables aren't cached. Queries that you submit to the Power BI dataset - for example, Data Analysis Expressions (DAX) queries - and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source - for example, SQL.
 
 * **Dual**: Dual tables can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
 
-Changing a table to **Import** is an *irreversible* operation. This property cannot be changed back to either DirectQuery or Dual.
+Changing a table to **Import** is an *irreversible* operation. This property can't be changed back to either DirectQuery or Dual.
 
 ## Constraints on DirectQuery and Dual tables
 
-Dual tables are subject to the same constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
+Dual tables have the same constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## Relationship rules on tables with different storage modes
 
@@ -153,16 +153,16 @@ The following query is interesting because it combines both columns. This query 
 
 ## Caches should be kept in sync
 
-The queries displayed in the previous section show that **Dual** tables sometimes hit the cache and sometimes do not. As a result, if the cache is out of date, different values can be returned. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It is your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
+The queries displayed in the previous section show that **Dual** tables sometimes hit the cache and sometimes don't. As a result, if the cache is out of date, different values can be returned. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It is your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
 
-The *Dual* storage mode is a performance optimization. It should be used only in ways that do not compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) article.
+The *Dual* storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) article.
 
 ## Data view
 If at least one table in the dataset has its storage mode set to either **Import** or **Dual**, the **Data view** tab is displayed.
 
 ![Data view in Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
 
-When they are selected in **Data view**, the **Dual** and **Import** tables show cached data. DirectQuery tables do not show data, and a message is displayed that states that DirectQuery tables cannot be shown.
+When they are selected in **Data view**, the **Dual** and **Import** tables show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables cannot be shown.
 
 
 ## Limitations and considerations
