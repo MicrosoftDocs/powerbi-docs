@@ -16,7 +16,7 @@ LocalizationGroup: Transform and shape data
 
 # Storage mode in Power BI Desktop (preview)
 
-In Microsoft Power BI Desktop, you can specify the *storage mode* of tables, which gives you control over whether table data is cached in-memory for reports. 
+In Microsoft Power BI Desktop, you can specify the *storage mode* of tables. *Storage mode* lets you control whether Power BI Desktop caches table data in-memory for reports. 
 
 ![Storage mode in Power BI Desktop](media/desktop-storage-mode/storage-mode_01.png)
 
@@ -36,7 +36,7 @@ The storage mode setting in Power BI Desktop is one of three related features:
 
 * **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
 
-* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables, which removes requirements for unique values in tables and removes prior workarounds, such as introducing new tables just to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
+* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. *Many-to-many relationships* removes requirements for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals such as slicers initiated queries that were sent to back-end sources. Storage mode is described further in this article.
 
@@ -64,11 +64,11 @@ There are three values for storage mode:
 
 * **Import**: When the value is set to **Import**, imported tables are cached. Queries submitted to the Power BI dataset that return data from Import tables can be fulfilled only from cached data.
 
-* **DirectQuery**: With this setting, DirectQuery tables are not cached. Queries that are submitted to the Power BI dataset (for example, DAX queries) and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that are submitted to the data source use the query language for that data source (for example, SQL).
+* **DirectQuery**: With this setting, DirectQuery tables are not cached. Queries that you submit to the Power BI dataset - for example, Data Analysis Expressions (DAX) queries - and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source - for example, SQL.
 
-* **Dual**: Dual tables can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. In some cases, queries are fulfilled from cached data; in other cases, queries are fulfilled by executing an on-demand query to the data source.
+* **Dual**: Dual tables can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
 
-Changing a table to **Import** is an *irreversible* operation; this property cannot be changed back to either DirectQuery or Dual.
+Changing a table to **Import** is an *irreversible* operation. This property cannot be changed back to either DirectQuery or Dual.
 
 ## Constraints on DirectQuery and Dual tables
 
@@ -97,12 +97,12 @@ Let’s say all tables in this model are DirectQuery to begin with. If we then c
 
 The dimension tables (*Customer*, *Date*, and *Geography*) must be set to **Dual** to comply with the previously described relationship rules. Instead of having to set these tables to **Dual** ahead of time, you can set them in a single operation.
 
-The propagation logic is designed to help with models that contain many tables. Let’s say you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop figures out the minimum set of dimension tables that need to be set to **Dual**, so you don’t have to do so.
+The propagation logic is designed to help with models that contain many tables. Let’s say you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop calculates the minimum set of dimension tables that must be set to **Dual**, so you don’t have to.
 
 The propagation logic traverses only to the one side of **1-to-many** relationships.
 
-* Changing the *Customer* table to **Import** (instead of changing *SurveyResponse*) is not allowed because of its relationships to the DirectQuery tables *Sales* and *SurveyResponse*.
-* Changing the *Customer* table to **Dual** (instead of changing *SurveyResponse*) is allowed. The propagation logic sets the *Geography* table also to **Dual**.
+* Changing the *Customer* table to **Import** - instead of changing *SurveyResponse* - is not allowed because of its relationships to the DirectQuery tables *Sales* and *SurveyResponse*.
+* Changing the *Customer* table to **Dual** - instead of changing *SurveyResponse* - is allowed. The propagation logic also sets the *Geography* table to **Dual**.
 
 ## Storage mode usage example
 Let's continue with the example from the previous section, and imagine applying the following storage mode property settings:
@@ -117,10 +117,10 @@ Let's continue with the example from the previous section, and imagine applying 
 
 
 Setting these storage mode properties results in the following behaviors, assuming that the *Sales* table has significant data volume.
-* Dimension tables (*Date*, *Customer*, and *Geography*) are cached, so initial report load times should be fast when they retrieve slicer values to display.
-* By not caching the *Sales* table, you'll get the following results:
+* Power BI Desktop caches dimension tables - *Date*, *Customer*, and *Geography* - so load times of initial reports should be fast when they retrieve slicer values to display.
+* By not caching the *Sales* table, Power BI Desktop provides the following results:
     * Data-refresh times are improved, and memory consumption is reduced.
-    * Report queries that are based on the *Sales* table run in DirectQuery mode, which might take longer but are closer to real-time because no caching latency is introduced.
+    * Report queries that are based on the *Sales* table run in DirectQuery mode. These queries might take longer but are closer to real-time because no caching latency is introduced.
 
 * Report queries that are based on the *SurveyResponse* table are returned from the in-memory cache and, therefore, should be relatively fast.
 
@@ -144,7 +144,7 @@ The following query refers only to a column from the *Sales* table, which is in 
 
 ![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_07.png)
 
-The following query is interesting because it combines both columns. This query will not hit the cache. You might initially expect it to retrieve *CalendarYear* values from the cache and *SalesAmount* values from the source and then combine the results, but this approach would be less efficient than submitting the SUM/GROUP BY operation to the source system. If the operation is pushed down to the source, the number of rows returned will likely be far less. 
+The following query is interesting because it combines both columns. This query doesn't hit the cache. You might initially expect it to retrieve *CalendarYear* values from the cache and *SalesAmount* values from the source and then combine the results, but this approach is less efficient than submitting the SUM/GROUP BY operation to the source system. If the operation is pushed down to the source, the number of rows returned will likely be far less. 
 
 ![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_08.png)
 
@@ -153,7 +153,7 @@ The following query is interesting because it combines both columns. This query 
 
 ## Caches should be kept in sync
 
-The queries displayed in the previous section show that **Dual** tables sometimes hit the cache and sometimes do not hit the cache. Because of this, if the cache is out of date, different values can be returned. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It is your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
+The queries displayed in the previous section show that **Dual** tables sometimes hit the cache and sometimes do not. As a result, if the cache is out of date, different values can be returned. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It is your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
 
 The *Dual* storage mode is a performance optimization. It should be used only in ways that do not compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) article.
 
