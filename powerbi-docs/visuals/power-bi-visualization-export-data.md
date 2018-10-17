@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -88,9 +88,12 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 ### Set the export options
 Power BI report designers control the types of data export options that are available for their consumers. The choices are:
-- Allow export of only summarized (this is the default for reports) 
-- Allow exporting of summarized and underlying data  
+- Allow export of only summarized data (this is the default for new reports) 
+- Allow exporting of summarized and underlying data (this was the default prior to October 2018) 
 - Don't allow exporting of any data  
+
+    > [!IMPORTANT]
+    > We recommend that report designers revisit old reports and manually reset the export option as needed.
 
 1. To set these options, start in Power BI Desktop.
 
