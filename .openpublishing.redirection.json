@@ -586,11 +586,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-q-and-a-direct-query.md",
-            "redirect_url": "/power-bi/consumer/end-user-q-and-a-direct-query",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
             "redirect_url": "/power-bi/consumer/end-user-q-and-a-tips",
             "redirect_document_id": true
