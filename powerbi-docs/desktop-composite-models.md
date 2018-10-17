@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Composite models in Power BI Desktop (preview)
+# Use composite models in Power BI Desktop (preview)
 
 Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections&mdash;whether DirectQuery or Import&mdash;were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
@@ -76,7 +76,7 @@ At this point, you could build simple visuals by using fields from this source. 
 
 ![Visual based on data](media/desktop-composite-models/composite-models_05.png)
 
-But what if you have some information about the product manager who's assigned to each product, along with the marketing priority, where that data is maintained in an Office Excel spreadsheet? Let's say you want to view *Sales Amount* by *Product Manager*. It might not be possible to add this local data to the corporate data warehouse, or it might take months at best. 
+But what if you have data in an Office Excel spreadsheet about the product manager who's assigned to each product, along with the marketing priority? If you want to view *Sales Amount* by *Product Manager*, it might not be possible to add this local data to the corporate data warehouse. Or it might take months at best. 
 
 It might be possible to import that sales data from the data warehouse, instead of using DirectQuery. And the sales data could then be combined with the data that you imported from the spreadsheet. However, that approach is unreasonable, for the reasons that lead to using DirectQuery in the first place. The reasons could include:
 
@@ -84,7 +84,7 @@ It might be possible to import that sales data from the data warehouse, instead 
 * The need to be able to view the latest data.
 * The sheer scale of the data. 
 
-Here's where composite models come in. Composite models give you the option of connecting to the data warehouse by using DirectQuery and then using GetData for additional sources. In this example, we first establish the DirectQuery connection to the corporate data warehouse. We use GetData, choose Excel, and then navigate to the spreadsheet that contains our local data. Finally, we import the spreadsheet that contains the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
+Here's where composite models come in. Composite models let you connect to the data warehouse by using DirectQuery and then use GetData for additional sources. In this example, we first establish the DirectQuery connection to the corporate data warehouse. We use GetData, choose Excel, and then navigate to the spreadsheet that contains our local data. Finally, we import the spreadsheet that contains the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
 
 ![Navigator window](media/desktop-composite-models/composite-models_06.png)
 
@@ -112,7 +112,7 @@ The following example displays a common case of a *dimension* table&mdash;such a
 
 ![The Navigator window](media/desktop-composite-models/composite-models_12.png)
 
-As we did earlier, we can now create relationships between the new table and other tables in the model, and then create visuals that combine their data. Let's look again at the **Relationships** view, where we've established the new relationships:
+As we did earlier, we can create relationships between the new table and other tables in the model and then create visuals that combine the table data. Let's look again at the **Relationships** view, where we've established the new relationships:
 
 ![The Relationship view with many tables](media/desktop-composite-models/composite-models_13.png)
 
@@ -138,21 +138,21 @@ For more information about storage mode, see [Storage mode in Power BI Desktop (
 
 You can add calculated tables to a model that uses DirectQuery. The Data Analysis Expressions (DAX) that define the calculated table can reference either imported or DirectQuery tables or a combination of the two. 
 
-Calculated tables are always imported, and their data is refreshed when the table is refreshed. If a calculated table refers to a DirectQuery table, visuals that refer to the DirectQuery table always show the latest values in the underlying source. Alternatively, visuals that refer to the calculated table show the values at the time when the calculated table was last refreshed.
+Calculated tables are always imported, and their data is refreshed when you refresh the tables. If a calculated table refers to a DirectQuery table, visuals that refer to the DirectQuery table always show the latest values in the underlying source. Alternatively, visuals that refer to the calculated table show the values at the time when the calculated table was last refreshed.
 
 ## Security implications 
 
-Composite models have some security implications. A query sent to one data source can include data values that have been retrieved from another source. In the earlier example, the visual that shows *Sales Amount* by *Product Manager* results in a SQL query being sent to the **Sales** relational database. That SQL query might contain the names of *Product Managers* and their associated *Products*. 
+Composite models have some security implications. A query sent to one data source can include data values that have been retrieved from another source. In the earlier example, the visual that shows *Sales Amount* by *Product Manager* sends a SQL query to the **Sales** relational database. That SQL query might contain the names of *Product Managers* and their associated *Products*. 
 
 ![Script showing security implications](media/desktop-composite-models/composite-models_17.png)
 
 Consequently, information that's stored in the spreadsheet is now included in a query that's sent to the relational database. If this information is confidential, you should consider the security implications. In particular, consider the following points:
 
-* Any administrator of the database who can view traces or audit logs would be able to view this information, even if they lack permissions to the data in its original source. In this example, the administrator would need permissions to the Excel file.
+* Any administrator of the database who can view traces or audit logs could view this information, even without permissions to the data in its original source. In this example, the administrator would need permissions to the Excel file.
 
 * The encryption settings for each source should be considered. You want to avoid retrieving information from one source via an encrypted connection and then inadvertently including it in a query that's sent to another source via an unencrypted connection. 
 
-To allow confirmation that you have considered any security implications, Power BI Desktop displays a warning message when an action is taken to create a composite model.  
+To allow confirmation that you have considered any security implications, Power BI Desktop displays a warning message when when you create a composite model.  
 
 For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. Therefore, when you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
