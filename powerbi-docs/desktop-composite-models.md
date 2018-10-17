@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 ---
 # Composite models in Power BI Desktop (preview)
 
-Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections - whether DirectQuery or Import - were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
+Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections&mdash;whether DirectQuery or Import&mdash;were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
 ![Composite models in Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -45,7 +45,7 @@ With composite models, you can connect to a variety of data sources when you use
 * By importing data to Power BI, which is the most common way to get data.
 * By connecting directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](desktop-directquery-about.md).
 
-When you use DirectQuery, composite models makes it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
+When you use DirectQuery, *composite models* makes it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
 
 * Combines data from one or more DirectQuery sources.
 * Combines data from DirectQuery sources and Import data.
@@ -68,7 +68,7 @@ You can create relationships between tables as you always have, even when those 
 
 ## Example of a composite model
 
-For an example of a *composite model*, consider a report that has connected to a corporate data warehouse (in SQL Server) by using DirectQuery. In this instance, the data warehouse contains *Sales by Country*, *Quarter*, and *Bike (Product)* data, as shown in the following image:
+For an example of a *composite model*, consider a report that has connected to a corporate data warehouse in SQL Server by using DirectQuery. In this instance, the data warehouse contains *Sales by Country*, *Quarter*, and *Bike (Product)* data, as shown in the following image:
 
 ![Relationship view for composite models](media/desktop-composite-models/composite-models_04.png)
 
@@ -108,7 +108,7 @@ We can now create visuals by using any of the fields in the **Fields** list. Thi
 
 ![The Fields pane](media/desktop-composite-models/composite-models_11.png)
 
-The following example displays a common case of a *dimension* table (such as *Product* or *Customer*) that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to various sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. As usual, you can use *GetData* to connect to that data, as shown in the following image: 
+The following example displays a common case of a *dimension* table&mdash;such as *Product* or *Customer*&mdash;that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to various sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. As usual, you can use *GetData* to connect to that data, as shown in the following image: 
 
 ![The Navigator window](media/desktop-composite-models/composite-models_12.png)
 
@@ -122,7 +122,7 @@ The next image is based on the new data and relationships we created. The visual
 
 ## Set the storage mode
 
-Each table in a composite model has a storage mode that indicates whether the table is based on DirectQuery or Import. The storage mode can be viewed and modified in the **Property** pane. To display the storage mode, right-click a table in the **Fields** list, and then select **Properties**. The following image shows the storage mode (shortened to **Storage ...** in the image) for the **SalesTargets** table.
+Each table in a composite model has a storage mode that indicates whether the table is based on DirectQuery or Import. The storage mode can be viewed and modified in the **Property** pane. To display the storage mode, right-click a table in the **Fields** list, and then select **Properties**. The following image shows the storage mode for the **SalesTargets** table.
 
 ![Storage mode setting](media/desktop-composite-models/composite-models_15.png)
 
