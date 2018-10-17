@@ -157,11 +157,11 @@ Follow these steps to start embedding your content using a sample application.
 
     ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **groupId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
+2. Open up the Web.config file in the sample application. There are 5 fields you need to fill in to run the application successfully. The **clientId**, the **workspaceId**, the **reportId**, the **pbiUsername** and the **pbiPassword**.
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Fill in the **clientId** information with the **Application ID** from **Azure**. The **clientId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **clientId**, follow these steps:
+    Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **applicationId**, follow these steps:
 
     Sign into the [Azure portal](https://portal.azure.com).
 
@@ -171,17 +171,17 @@ Follow these steps to start embedding your content using a sample application.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    Select the application that you want to get the **clientId** for.
+    Select the application that you want to get the **applicationId** for.
 
     ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **clientId** for the application.
+    You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Fill in the **groupId** information with the **app workspace GUID** from Power BI.
+    Fill in the **workspaceId** information with the **app workspace GUID** from Power BI.
 
-    ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     Fill in the **reportId** information with the **report GUID** from Power BI.
 
@@ -238,8 +238,8 @@ Here is a code sample of how to retrieve the first report from a given workspace
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -259,7 +259,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
