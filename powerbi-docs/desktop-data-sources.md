@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -71,13 +71,15 @@ The **Database** category provides the following data connections:
 * Teradata Database
 * SAP HANA Database
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (Beta)
+* SAP Business Warehouse Message Server
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (Beta)
 * Exasol (Beta)
 * Jethro (Beta)
+* Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -108,7 +110,7 @@ The **Azure** category provides the following data connections:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* HDInsight Interactive Query (Beta)
+* HDInsight Interactive Query
 * Azure KustoDB (beta)
 
 The following image shows the **Get Data** window for **Azure**.
@@ -120,10 +122,10 @@ The **Online Services** category provides the following data connections:
 * SharePoint Online List
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (Beta)
+* Dynamics NAV
 * Dynamics 365 Business Central
-* Common Data Service for Apps(Beta)
-* Common Data Service (Beta)
+* Dynamics 365 Business Central (on-premises)
+* Common Data Service for Apps (Beta)
 * Microsoft Azure Consumption Insights (Beta)
 * Visual Studio Team Services (Beta)
 * Salesforce Objects
@@ -159,7 +161,7 @@ The following image shows the **Get Data** window for **Online Services**.
 
 The **Other** category provides the following data connections:
 
-* Vertica (Beta)
+* Vertica
 * Web
 * SharePoint List
 * OData Feed
@@ -171,6 +173,8 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* Denado
+* Paxata (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
