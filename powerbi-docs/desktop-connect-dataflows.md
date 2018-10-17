@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -54,8 +54,17 @@ To use this preview version of the **Power BI dataflows connector**, you must be
 Note: When the Power BI dataflows connector appears in an upcoming monthly update to **Power BI Desktop**, you *must* delete this downloaded .MEZ file from your **Documents > Power BI Desktop > Custom connectors** folder to avoid conflicts. 
 
 
+
 ## Next steps
-There are all sorts of interesting things you can do with Power BI data connections, as well as articles about **Power BI Desktop** that you might find useful:
+There are all sorts of interesting things you can do with Power BI dataflows. For more information, check out the following resources:
+
+* [Self-service data prep with dataflows](service-dataflows-overview.md)
+* [Create and use dataflows in Power BI](service-dataflows-create-use.md)
+* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+
+There are also articles about **Power BI Desktop** that you might find useful:
 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
