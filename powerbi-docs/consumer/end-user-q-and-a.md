@@ -19,6 +19,8 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 **Power BI Q&A** only supports answering natural language queries asked in English. There is a preview available for Spanish that can be enabled by your Power BI administrator.
+
+**Power BI Q&A** is available with a Pro or Premium license. 
 >
 
 ![q&a created treemap](media/end-user-q-and-a/power-bi-qna.png)
@@ -76,5 +78,5 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 
 ![featured question outlined](media/end-user-q-and-a/power-bi-featured-q.png)
 
-##Next steps
+## Next steps
 
