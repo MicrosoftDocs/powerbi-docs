@@ -41,7 +41,7 @@ You can also select **Add linked entities** from the **Add entities** menu item 
 
 And you can choose the **Power BI dataflows** connector from the **Choose data source** list.
 
-![Linked entities from the Dataflows connector](media/service-dataflows-linked-entities/linked-entities_01.png)
+![Linked entities from the Dataflows connector](media/service-dataflows-linked-entities/linked-entities_02.png)
 
 To link entities, you must sign in with your Power BI credentials.
 
@@ -74,7 +74,7 @@ There are a few limitations to keep in mind when working with linked entities:
 
 * There is a maximum of five referencing hops
 * Cyclic dependences of linked entities are not allowed
-* The dataflow must reside in a [new Power BI workspaces](service-create-the-new-workspaces.md)
+* The dataflow must reside in a [new Power BI workspace](service-create-the-new-workspaces.md)
 
 
 ## Next Steps
