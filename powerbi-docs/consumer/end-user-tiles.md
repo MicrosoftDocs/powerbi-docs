@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 09/21/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -64,7 +64,7 @@ Grab a tile and [move it around on the dashboard](../service-dashboard-edit-tile
    * [Open the worksheet that was used to create this tile ](end-user-reports.md) ![worksheet icon](./media/end-user-tiles/power-bi-open-worksheet.png)  
      
     * [View in focus mode ](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Export the data used in the tile](../power-bi-visualization-export-data.md) ![export data icon](./media/end-user-tiles/export-icon.png)
+     * [Export the data used in the tile](../visuals/power-bi-visualization-export-data.md) ![export data icon](./media/end-user-tiles/export-icon.png)
      * [Edit title and subtitle, add a hyperlink](../service-dashboard-edit-tile.md) ![edit icon](./media/end-user-tiles/pencil-icon.jpg)
      * [Run insights ](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](../service-pin-tile-to-another-dashboard.md)
