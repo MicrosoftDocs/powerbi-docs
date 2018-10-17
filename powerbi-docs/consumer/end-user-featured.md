@@ -9,7 +9,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/16/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
