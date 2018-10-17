@@ -23,7 +23,7 @@ The composite models capability in Power BI Desktop consists of three related fe
 
 * **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or Import, in any combination. This article describes composite models in detail.
 
-* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables, which removes requirements for unique values in tables and removes previous workarounds, such as introducing new tables just to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
+* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. This approachh removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals such as slicers initiated queries that were sent to back-end sources. For more information, see [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md).
 
@@ -40,14 +40,16 @@ To enable the feature, you need to restart Power BI Desktop.
 
 ## Use composite models
 
-With composite models, you can connect to a variety of data sources when you use Power BI Desktop or the Power BI service, and you can make those data connections in various ways. You can import data to Power BI, which is the most common way to get data, or you can connect directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](desktop-directquery-about.md).
+With composite models, you can connect to a variety of data sources when you use Power BI Desktop or the Power BI service. You can make those data connections in a couple of ways:
+* By importing data to Power BI, which is the most common way to get data.
+* By connecting directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](desktop-directquery-about.md).
 
 When you use DirectQuery, composite models makes it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
 
 * Combines data from one or more DirectQuery sources.
 * Combines data from DirectQuery sources and Import data.
 
-For example, by using composite models, you can build a model that combines sales data from an enterprise data warehouse with data on sales targets that is in a departmental SQL Server database, along with some data imported from a spreadsheet. A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is referred to as a *composite model*.
+For example, by using composite models, you can build a model that combines sales data from an enterprise data warehouse, sales-target data from a departmental SQL Server database, and data that's imported from a spreadsheet. A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is called a *composite model*.
 
 > [!NOTE]
 > Beginning with the October 2018 release of Power BI Desktop, you *can* publish composite models to the Power BI service. For scheduled refresh and dashboard tile refresh, composite models in the Power BI service behave in the same way as Import models. 
@@ -57,9 +59,9 @@ You can create relationships between tables as you always have, even when those 
 > [!NOTE]
 > Within the context of composite models, all imported tables are effectively a single source, regardless of the actual underlying data source from which they are imported.   
 
-## Example of using composite models
+## Example of a composite model
 
-As an example of a *composite model*, consider a report that has connected to a corporate data warehouse (in SQL Server) by using DirectQuery, where the data warehouse contains *Sales by Country*, *Quarter*, and *Bike (Product)* data, as shown in the following image:
+For an example of a *composite model*, consider a report that has connected to a corporate data warehouse (in SQL Server) by using DirectQuery. In this instance, the data warehouse contains *Sales by Country*, *Quarter*, and *Bike (Product)* data, as shown in the following image:
 
 ![Relationship view for composite models](media/desktop-composite-models/composite-models_04.png)
 
@@ -67,15 +69,18 @@ At this point, you could build simple visuals by using fields from this source. 
 
 ![Visual based on data](media/desktop-composite-models/composite-models_05.png)
 
-But what if you have some information about the product manager who's assigned to each product, along with the marketing priority, where that data is maintained in an Office Excel spreadsheet? You might want to view *Sales Amount* by *Product Manager*, yet having this local data added to the corporate data warehouse would likely be unfeasible, or take months at best. 
+But what if you have some information about the product manager who's assigned to each product, along with the marketing priority, where that data is maintained in an Office Excel spreadsheet? Let's say you want to view *Sales Amount* by *Product Manager*. It might not be possible to add this local data to the corporate data warehouse, or it might take months at best. 
 
-It might be possible to import that sales data from the data warehouse (instead of using DirectQuery), at which point it could be combined with data imported from the spreadsheet. However, that approach is unreasonable, given the reasons that lead to using DirectQuery in the first place. The reasons could include some combination of the security rules enforced in the underlying source, the need to be able to view the latest data, and the sheer scale of the data. 
+It might be possible to import that sales data from the data warehouse, instead of using DirectQuery. And the sales data could then be combined with the data that you imported from the spreadsheet. However, that approach is unreasonable, for the reasons that lead to using DirectQuery in the first place. The reasons could include:
+* Some combination of the security rules enforced in the underlying source.
+* The need to be able to view the latest data.
+* The sheer scale of the data. 
 
-That's where composite models come in. Composite models give you the option of connecting to the data warehouse by using DirectQuery, and then also using GetData for additional sources. In this case, we establish the DirectQuery connection to the corporate data warehouse, use GetData, choose Excel, and then navigate to the spreadsheet containing our local data. We then import the spreadsheet containing the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
+Here's where composite models come in. Composite models give you the option of connecting to the data warehouse by using DirectQuery, and then also using GetData for additional sources. In this case, we establish the DirectQuery connection to the corporate data warehouse, use GetData, choose Excel, and then navigate to the spreadsheet that contains our local data. We then import the spreadsheet that contains the *Product Names*, the assigned *Sales Manager*, and the *Priority*.  
 
 ![Navigator window](media/desktop-composite-models/composite-models_06.png)
 
-Now in the **Fields** list, you can see the original *Bike* table (from SQL Server) and a new **ProductManagers** table (with the data from imported from Excel). 
+Now in the **Fields** list, you can see the original *Bike* table from SQL Server and a new **ProductManagers** table, which contains the data that's imported from Excel. 
 
 ![Fields view of tables](media/desktop-composite-models/composite-models_07.png)
 
