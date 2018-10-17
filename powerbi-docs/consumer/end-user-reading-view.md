@@ -4,7 +4,7 @@ description: In this quickstart, **consumers** will learn how to work with Power
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kfile
+manager: kvivek
 backup: ''
 editor: ''
 tags: ''
@@ -19,7 +19,7 @@ ms.author: mihart
 ---
 <!-- once the sample aps are live, change this so consumers can follow along -->
 # Quickstart: learn about the Power BI capabilities for ***consumers***
-In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights.
+In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **consumers**.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
@@ -28,7 +28,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 <!-- app from AppSource -->
 
 ## Reading view
-Reading view is available in Power BI service for report *consumers*. When a colleague shares a report with you), Reading view is your way to explore and interact with the report. 
+Reading view is available in Power BI service for report *consumers*. When a colleague shares a report with you, Reading view is your way to explore and interact with the report. 
 
 The other Power BI service report mode is [Editing view](../service-interact-with-a-report-in-editing-view.md), which is available to report *designers*.  
 
@@ -46,7 +46,7 @@ In Power BI, *apps* bundle related dashboards and reports together, all in one p
 2. In AppSource under **My organization**, search to narrow the results and find the app you're looking for.
    
      ![In AppSource under My organization](./media/end-user-reading-view/power-bi-appsource.png)
-3. Select **Get it now** to add it to your Apps page. 
+3. Select **Get it now** to add it to your Apps container. 
 
 ### View a dashboard
 This app opens to a dashboard. A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
@@ -110,7 +110,7 @@ Reports can be opened from a dashboard. Most dashboard tiles are *pinned* from r
 ### Adjust the display dimensions
 Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  
 
-1. To adjust, from the top menubarm select **View**.
+1. To adjust, from the top menu bar select **View**.
 
     ![report View menu](media/end-user-reading-view/power-bi-fit.png)
 
@@ -119,13 +119,13 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
     ![report View Fit to page](media/end-user-reading-view/power-bi-report-fit.png)    
 
 ### Use the report Filters pane
-If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report.
+If the report author added filters to a page in a report, you can interact with them and save your changes with the report.
 
-1. Select the Filter icon in the upper-right corner.
+1. Select the **Filters** icon in the upper-right corner.
    
    ![select the filters icon](media/end-user-reading-view/filters.png)  
 
-2. You'll see all filters that have been applied to the visual you have selected (Visual level filters), across the whole report page (Page level filters), and across the entire report (Report level filters).
+2. Select a visual to make it active. You'll see all filters that have been applied to that visual (Visual level filters), across the whole report page (Page level filters), and across the entire report (Report level filters).
    
    ![types of report filters](media/end-user-reading-view/power-bi-reading-filters.png)
 
@@ -135,23 +135,13 @@ If the report author added filters to a page in a report, you can interact with 
 
 4. Make changes to the filters and see how the visuals are impacted.  
    
-   * In this example, we have a Page level filter for **Chain**. Change it to **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other.
-     
-     ![change a page level filter](media/end-user-reading-view/power-bi-filter-chain.png)
-   * Or completely remove filtering on **Chain** by selecting the eraser icon ![](media/end-user-reading-view/power-bi-eraser-icon.png) or by selecting both chain stores.
-   * Select the **District** page level filter and switch to **Advanced filtering**. Filter to show only districts that start with **FD** and don't contain the number 4.
      
      ![advanced filtering](media/end-user-reading-view/power-bi-advanced-filter.png)
 
-For more information, see [Add a filter to a report](../power-bi-report-add-filter.md) and [About filters and highlighting in reports](../power-bi-reports-filters-and-highlighting.md).
-
 ### See how all the visuals on a page are interconnected
-Cross-highlight and cross-filter the related visualizations on a page. The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations that use that same value will change based on that selection.
+Cross-highlight and cross-filter the related visualizations on a page. The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations that use that same value will change based on your selection.
 
 ![cross highlight](media/end-user-reading-view/pagefilter3b.gif)
-
-> [!NOTE]
-> To select more than one element in a visualization, hold down the CTRL key.
 > 
 ### Display details on a visualization
 Hover over visual elements to see the details
@@ -161,14 +151,14 @@ Hover over visual elements to see the details
 Visuals on a report page can be sorted and saved that way. 
 
 1. Hover over a visual to make it active.    
-2. Select the ellipses (...) to open sorting options.
+2. Select the ellipsis (...) to open sorting options.
 
     ![sort a chart](media/end-user-reading-view/sort.gif) 
 
 ###  Open the **Selection** pane
 Easily navigate between the visualizations on the report page. 
 
-1. Select **View > Selection pane > On** to open the Selection pane. Toggle **Selection pane** to On.
+1. Select **View > Selection pane** to open the Selection pane. Toggle **Selection pane** to On.
 
     ![Turn on the report Selection pane](media/end-user-reading-view/power-bi-selection-pane2.png)
 
