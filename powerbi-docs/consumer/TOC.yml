@@ -12,6 +12,8 @@
     items: 
     - name: "Find your way around in Power BI"
       href: end-user-experience.md
+    - name: "What can I do with Power BI?"
+      href: end-user-reading-view.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
@@ -42,10 +44,10 @@
       items: 
       - name: "What can I do with visualizations?"
         href: end-user-visualizations.md
+      - name: "Show the data that was used to create the visualization"
+        href: end-user-show-data.md
       - name: "Drill down in a visualization in Power BI"
         href: end-user-drill.md
-      - name: "Export data from a visualization"
-        href: end-user-export-data.md
     - name: Common tasks
       items: 
       - name: "Different ways to zoom into content using Focus and Full screen modes"
