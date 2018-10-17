@@ -82,7 +82,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 
 There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
-Alternatively, you can grant users access to your report by doing the following.
+Alternatively, you can grant users access to your report by following the steps below.
 
 1. Add a tile from the report to a dashboard.
 
@@ -103,7 +103,7 @@ Below is a description of the settings that can be adjusted for the Power BI web
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign-in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
+If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
 
 > [!NOTE]
 > Multi-factor authentication is not yet supported with Azure Active Directory 2.0. Users receive a message saying *error*. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
@@ -121,7 +121,7 @@ There are two common reasons for this message.
 1. You do not have access to the report.
 2. The report was deleted.
 
-You should contact the owner of the SharePoint Online page to help you resolve the issue.
+Contact the owner of the SharePoint Online page to help you resolve the issue.
 
 ## Known issues and limitations
 
