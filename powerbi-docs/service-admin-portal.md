@@ -158,7 +158,7 @@ Users can see different options in the UI based on what the publish to web setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. [Learn more](consumer/end-user-export-data.md)
+Users in the organization can export data from a tile or visualization. [Learn more](power-bi-visualization-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 

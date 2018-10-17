@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 10/16/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -41,7 +41,7 @@ Here are some tips for making the most of Q&A in your workbook.
 
 ## Next steps
 Back to [Q&A in Power BI](consumer/end-user-q-and-a.md)  
-[Prepare on-premises datasets for Q&A](consumer/end-user-q-and-a-direct-query.md)   
+[Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
 [Q&A quickstart](power-bi-visualization-introduction-to-q-and-a.md)  
 [Get data (for Power BI)](service-get-data.md)  
 

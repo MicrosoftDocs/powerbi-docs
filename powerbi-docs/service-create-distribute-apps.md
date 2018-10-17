@@ -127,6 +127,6 @@ This action uninstalls the app for everyone you've published it to, and they no 
 ## Next steps
 * [Create an app workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
-* [Power BI apps for external services](power-bi-connect-to-services.md)
+* [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -29,7 +29,7 @@ Since Power BI Q&A uses the text and schema values from your data source to dete
 For more information, see:
 
 * What is the [On-premises data gateway](service-gateway-onprem.md)?
-* [Introduction to Power BI Q&A](../end-user-q-and-a.md)
+* [Introduction to Power BI Q&A](../consumer/end-user-q-and-a.md)
 
 ## Enable Q&A
 Once you have the data gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
@@ -58,8 +58,8 @@ During the Preview phase of this feature, there are several limitations:
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
 [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Power BI - Basic Concepts](../end-user-basic-concepts.md)  
-[Power BI Q&A Overview](../end-user-q-and-a.md)  
+[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)  
+[Power BI Q&A Overview](../consumer/end-user-q-and-a.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -44,8 +44,6 @@
         href: end-user-visualizations.md
       - name: "Drill down in a visualization in Power BI"
         href: end-user-drill.md
-      - name: "Export data from a visualization"
-        href: end-user-export-data.md
     - name: Common tasks
       items: 
       - name: "Different ways to zoom into content using Focus and Full screen modes"
