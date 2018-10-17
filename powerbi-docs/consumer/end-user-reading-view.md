@@ -74,14 +74,14 @@ It's not necessary to open Power BI to monitor a dashboard.  You can subscribe i
     Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the name of the underlying dataset(s), select **View related** from the top menubar.
 
 ### View related content
-The Related content pane shows you how your Power BI service content -- dashboards, reports, and datasets -- are interconnected. Not only does the pane display the related content, it also allows you take action on the content and easily navigate between the related content.
+The **Related content** pane shows you how your Power BI service content -- dashboards, reports, and datasets -- are interconnected. Not only does the pane display the related content, it also allows you take action on the content and easily navigate between the related content.
 
 From a dashboard or report, select **View related** from the top menubar.
 
 ![related content](./media/end-user-reading-view/power-bi-view-related-dashboard.png)
 
 ### Use Q&A to ask questions using natural language
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "show me count of large opportunities by sales stage as a funnel." 
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A question box is available at the top of your dashboard. For example, "show me count of large opportunities by sales stage as a funnel." 
 
 ![Q&A](./media/end-user-reading-view/power-bi-qna.png)
 
@@ -145,10 +145,11 @@ Cross-highlight and cross-filter the related visualizations on a page. The visua
 > 
 ### Display details on a visualization
 Hover over visual elements to see the details
+
 ![hover to see details](media/end-user-reading-view/amarillachart.png)
 
 ### Sort a visualization
-Visuals on a report page can be sorted and saved that way. 
+Visuals on a report page can be sorted and saved with your changes applied. 
 
 1. Hover over a visual to make it active.    
 2. Select the ellipsis (...) to open sorting options.
