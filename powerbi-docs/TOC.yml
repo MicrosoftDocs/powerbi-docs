@@ -635,7 +635,7 @@
       items: 
       - name: "Create a new report from an existing report"
         href: power-bi-report-copy.md
-      - name: "Add a page to a eport"
+      - name: "Add a page to a report"
         href: power-bi-report-add-page.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
