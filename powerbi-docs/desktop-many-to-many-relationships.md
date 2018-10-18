@@ -169,4 +169,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Composite models in Power BI Desktop (preview)](desktop-composite-models.md)
 * [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI Desktop](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery in Power BI Desktop](desktop-directquery-data-sources.md)
