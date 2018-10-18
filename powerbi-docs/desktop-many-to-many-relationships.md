@@ -39,7 +39,7 @@ To enable the feature, you need to restart Power BI Desktop.
 
 ## What *many-to-many relationships* solves
 
-Before the *many-to-many relationships* feature became available, the relationship between two tables was defined in Power BI. At that time, at least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values. 
+Before the *many-to-many relationships* feature became available, the relationship between two tables was defined in Power BI. At least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values. 
 
 For example, two tables might have had a column labeled *Country*, but the values of *Country* weren't unique in either table. To join such tables, it was necessary to create a workaround. One such workaround might be to introduce into the model additional tables with the necessary unique values. With the *many-to-many relationships* feature, you can join such tables directly by using a relationship with a cardinality of **Many to-Many**.  
 
@@ -69,9 +69,9 @@ As you can see in the preceding image, there's blank *ProductName* row that's as
 
 * Any rows in the *ProductSales* table for which the foreign key column is null. 
 
-For these reasons, in both cases the blank row accounts for sales where the *ProductName* and *Price* are unknown.
+For these reasons, the blank row in both cases accounts for sales where the *ProductName* and *Price* are unknown.
 
-However, it sometimes happens that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
+It sometimes happens that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
 
 * The *Sales* table displays sales data by *State*, and each row contains the sales amount for the type of sale in that state. The states include CA, WA, and TX. 
 
@@ -122,13 +122,13 @@ As of the July 2018 version of Power BI Desktop, you can directly relate tables,
 > [!NOTE]
 > The ability to create *many-to-many relationships* is in preview. While it's in preview, it's not possible to publish to the Power BI service models that use *many-to-many relationships*. 
 
-In Power BI Desktop, the cardinality defaults to *Many to Many* when it determines that neither table contains unique values for the columns in the relationship. In such cases, a warning is displayed to confirm that relationship-setting is your intended behavior, rather than being the unintended effect of a data issue. 
+In Power BI Desktop, the cardinality defaults to *Many to Many* when it determines that neither table contains unique values for the columns in the relationship. In such cases, a warning is displayed to confirm that relationship-setting is your intended behavior and not the unintended effect of a data issue. 
 
 For example, when you create a relationship directly between *CityData* and *Sales*&mdash;where filters should flow from *CityData* to *Sales*&mdash;Power BI Desktop displays the **Edit relationship** window as shown in the following image:
 
 ![The "Edit relationship" window](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-The resulting **Relationship** view would then display the direct, many-to-many relationship between the two tables. The tables' appearance in the **Fields** list, and their subsequent behavior when the visuals are created, is a result similar to when we applied the previously described workaround. In the workaround, the extra table that displays the distinct *State* data isn't made visible. For example, as described in the preceding section, a visual showing *State*, *Population*, and *Sales* data would be displayed as follows:
+The resulting **Relationship** view would then display the direct, many-to-many relationship between the two tables. The tables' appearance in the **Fields** list, and their subsequent behavior when the visuals are created, is similar to when we applied the workaround. In the workaround, the extra table that displays the distinct *State* data isn't made visible. For example, as described in the preceding section, a visual showing *State*, *Population*, and *Sales* data would be displayed as follows:
 
 ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
@@ -136,7 +136,7 @@ The major differences between *many-to-many relationships* and the more typical 
 
 * The values shown don't include a blank row that accounts for mismatched rows in the other table. Nor do the values account for rows where the column used in the relationship in the other table is null.
 * It isn't possible to use the `RELATED()` function, because more than one row could be related.
-* Using the `ALL()` function on a table doesn't remove filters that are applied to other, related tables by a many-to-many relationship. For example, in the preceding example, a measure that's defined as shown in the following script would not remove filters on columns in the related *CityData* table:
+* Using the `ALL()` function on a table doesn't remove filters that are applied to other, related tables by a many-to-many relationship. In the preceding example, a measure that's defined as shown in the following script would not remove filters on columns in the related *CityData* table:
 
     ![Script example](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
 
