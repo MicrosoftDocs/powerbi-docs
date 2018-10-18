@@ -48,7 +48,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
 1. Open the desired page in SharePoint Online and select **Edit**.
 
-    ![SP edit page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
+    ![SP edits page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
     Or, create a new modern site page by selecting **+ New** within SharePoint Online.
 
@@ -62,7 +62,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Past the report URL into the property pane. This is the URL you copied from the steps above. The report loads automatically.
+4. Past the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -127,11 +127,11 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 ## Known issues and limitations
 
-* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
+* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
-  If you receive this error, please try one of the following.
+  If you receive this error, try one of the troubleshooting steps below.
   
-  1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
+  1. Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
   
