@@ -1,7 +1,7 @@
 ---
 title: Power BI Premium capacity memory use and optimization
 description: Understand Power BI Premium capacity memory management and optimization.
-ms.date: 04/30/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: powerbi
 ms.component: powerbi-admin
@@ -11,31 +11,29 @@ author: mgblythe
 manager: kfile
 ---
 
-# Power BI Premium capacity resource management and optimization
+# Microsoft Power BI Premium capacity resource management and optimization
 
-This article describes how the Power BI premium service manages resources and provides tips on planning and optimizing your solution.
+This article describes how Power BI Premium manages resources; the article also provides tips on planning and optimizing your solution on Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium.md).
 
 ## Premium capacity memory management
 
  Premium capacity memory is consumed by:
 
-* Memory used by the loaded datasets
-* Memory used by dataset refresh (both scheduled and on-demand)
-* Memory used by report queries
+* The datasets that are loaded into memory
+* Dataset refresh (both scheduled and on-demand)
+* Report queries
 
-When a request is issued against a published dataset in your capacity, that dataset is loaded into memory from persistent storage (this is also called image load). Keeping the dataset loaded in memory helps in fast response to future queries to this dataset. In addition to the memory needed for keeping the dataset loaded in the memory, report queries and dataset refreshes also consume additional memory.
+When a request is issued against a published dataset in your capacity, that dataset is loaded into memory from persistent storage (this is also called image load). Keeping the dataset loaded in memory helps in fast response to future queries to this dataset. In addition to the memory needed for keeping the dataset loaded in the memory, report queries and dataset refreshes consume additional memory.
 
 ### Dataset memory estimation
 
-When attempting to load a dataset into memory, Power BI estimates the amount of memory that dataset will require to complete the requested command. Datasets in memory tend to be larger in size than what they are when saved to disk. During refresh of a dataset, memory capacity requires at least double the amount of memory than required when it is idle.
+When attempting to load a dataset into memory, Power BI estimates the amount of memory that the dataset will require to complete the requested command. Datasets in memory tend to be larger in size than they are when saved to disk. During refresh of a dataset, Power BI requires at least double the amount of memory than required when the dataset is idle.
 
 ### Overcommitting capacity, eviction, and reloading of datasets
 
-Power BI Premium gives you the advantage of overcommitting your capacity. For example, you can publish more datasets than capacity memory can hold. If the published datasets in your capacity need more memory than can fit in the capacity, some of the datasets will be stored separately in a persistent storage. The persistent storage is part of 100 TBs storage associated with each of your capacities.
+Power BI Premium gives you the advantage of *overcommitting* your capacity. For example, you can publish more datasets than your capacity can hold. If the published datasets need more memory than what's available in the capacity, some of the datasets will be stored separately in persistent storage. The persistent storage is part of the 100-TB of storage associated with each of your capacities.
 
-So, what datasets stay in memory and what happens to the other datasets? As described earlier, when a request is issued against a dataset, it is loaded into memory (image load). The request could be a report query or a refresh operation.
-
-Because you can overcommit your capacity, your capacity may also face memory pressure. When capacity faces memory pressure (because a new dataset needs to be loaded or the queries on some loaded datasets increase the memory requirement), the node *evicts one or more datasets* occupying the capacity memory. Datasets that are inactive (i.e. there is no query/refresh operation currently executing) are evicted first, and the order of eviction is in a ‘least recently used’ (LRU) manner. If new commands are issued to the evicted dataset, the service attempts to reload this into memory, potentially evicting other datasets. This behavior allows for more efficient utilization by allowing the capacity to serve many more datasets than its memory can hold.
+So what datasets stay in memory and what happens to the other datasets? As described earlier, when a request is issued against a dataset, it is loaded into memory (image load). The request could be a report query or a refresh operation. But because you can overcommit your capacity, the capacity may also face memory pressure. When a capacity faces memory pressure, the node *evicts* one or more datasets from memory. Datasets that are inactive (i.e. there is no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU). If new commands are issued to the evicted dataset, the service attempts to reload the dataset into memory, potentially evicting other datasets. This behavior allows for more efficient utilization by allowing the capacity to serve many more datasets than its memory can hold.
 
 Loading a dataset into memory is a fairly costly operation. Depending on the dataset size, it can last from a couple of seconds for small datasets to tens of seconds or even minutes for big datasets like ~10 GB datasets. Premium capacity attempts to minimize the number of times the capacity will need to be loaded by keeping the least recently used datasets in memory for as long as possible. When additional memory is needed, some datasets will need to be evicted and the system will attempt to choose the one that has the least impact on the user experience. When additional memory is needed, some datasets will need to be evicted and the system will attempt to choose the one that has the least impact on the user experience. For example, the system will avoid evicting datasets which were actively used within the last few minutes, because they are likely to be queried again very soon.
 
