@@ -37,41 +37,38 @@ In order to embed your report into SharePoint Online, you first need to get the 
 2. Select the **File** menu item.
 
 3. Select **Embed in SharePoint Online**.
-   
-    ![](media/service-embed-report-spo/powerbi-file-menu.png)
+
+    ![File menu](media/service-embed-report-spo/powerbi-file-menu.png)
 
 4. Copy URL from dialog.
 
-    ![](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
-
-   > [!NOTE]
-   > You can also use the URL that is displayed in your web browser's address bar when viewing a report. That URL contains the report page you are currently viewing. You need to remove the report section, from the URL, if you want to use a different page.
+    ![Embed link](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### Add the Power BI report to a SharePoint Online page
 
 1. Open the desired page in SharePoint Online and select **Edit**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
+    ![SP edit page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
     Or, create a new modern site page by selecting **+ New** within SharePoint Online.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
+    ![SP new page](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
 2. Select **+** and select the **Power BI** web part.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
+    ![SP new web part](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
 3. Select **Add report**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
+    ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
 4. Past the report URL into the property pane. This is the URL you copied from the steps above. The report loads automatically.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
+    ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
 5. Select **Publish** to make the change visible to your SharePoint Online users.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
+    ![SP report loaded](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
 ## Granting access to reports
 
