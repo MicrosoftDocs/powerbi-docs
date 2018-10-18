@@ -18,12 +18,12 @@ Using common phrases and natural language to ask questions of your data is power
 
 But for even better Q&A interactions, there are ways to improve the answers -- one way is by editing the linguistic schema. 
 
-It all starts with your enterprise data.  The better the data model, the easier it will be for users to get quality answers. One way to improve the model is to add a linguistic schema that defines and categorizes terminology and relationships between table and column names in your dataset. Power BI Desktop is where you manage your linguistic shemas. 
+It all starts with your enterprise data.  The better the data model, the easier it will be for users to get quality answers. One way to improve the model is to add a linguistic schema that defines and categorizes terminology and relationships between table and column names in your dataset. Power BI Desktop is where you manage your linguistic schemas. 
 
 ## What is a linguistic schema
 A linguistic schema describes terms and phrases that Q&A should understand for objects within a dataset, including parts of speech, synonyms, and phrasings that relate to that dataset. When you import or connect to a dataset, Power BI creates a linguistic schema based on the structure of the dataset. When you ask Q&A a question, it looks for matches and relationships in the data to figure out the intention of your question. For example, it looks for nouns, verbs, adjectives, phrasings, and other elements. And it looks for relationships, such as which columns are objects of a verb. 
 
-You're probably farmiliar with parts of speech (if not, see below), but phrasings may be a new term for you.  A phrasing is how you talk about (or “phrase”) the relationships between things. For example, to describe the relationship between customers and products, you might say “customers buy products”. Or to describe the relationship between customers and ages, you might say “ages indicate how old customers are”. Or to describe the relationship between customers and phone numbers, you might simply say “customers have phone numbers”.
+You're probably familiar with parts of speech (if not, see below), but phrasings may be a new term for you.  A phrasing is how you talk about (or “phrase”) the relationships between things. For example, to describe the relationship between customers and products, you might say “customers buy products”. Or to describe the relationship between customers and ages, you might say “ages indicate how old customers are”. Or to describe the relationship between customers and phone numbers, you might simply say “customers have phone numbers”.
 
 These phrasings come in a variety of shapes and sizes. Some correspond directly with relationships in the data model. Some relate columns with their containing tables. Others relate multiple tables and columns together in complex relationships. In all cases, they describe how things are related using everyday terms.
 
@@ -63,7 +63,7 @@ Linguistic schemas can be edited, imported, and exported in [Relationship view](
 ![Synonyms pane](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
 
- The other way to edit a linguistic schema is to export and edit the YAML file directly.  When you edit a linguistic schema YAML file, you tag columns in the table as different grammatic elements, and define words that a colleague might use to phrase a question. For instance, you state the columns that are the subject and the object of the verb. You add alternative words that colleagues can use to refer to tables, columns, and measures in your model. 
+ The other way to edit a linguistic schema is to export and edit the YAML file directly.  When you edit a linguistic schema YAML file, you tag columns in the table as different grammatical elements, and define words that a colleague might use to phrase a question. For instance, you state the columns that are the subject and the object of the verb. You add alternative words that colleagues can use to refer to tables, columns, and measures in your model. 
 
 ![sample linguistic schema yaml file](media/power-bi-q-and-a-linguistic-schema/power-bi-linguistic-schema.png)
 
@@ -88,7 +88,7 @@ When you import your linguistic schema file back into Power BI Desktop, anything
 2. Select the **Modeling** tab and choose **Export linguistic schema**.
 3. Select Visual Code (or another editor).
 4. Make your edits and save the YAML file.
-5. From Power BI Desktop, select **Relationship view > Modeling tab > Linguistic Schema > Imort linguistic schema**.
+5. From Power BI Desktop, select **Relationship view > Modeling tab > Linguistic Schema > Import linguistic schema**.
 6. Navigate to the location where you saved the edited YAML file and select it. A Success message lets you know that the linguistic schema YAML file was successfully imported.
 
     ![Success message](media/power-bi-q-and-a-linguistic-schema/power-bi-success.png)
@@ -130,7 +130,7 @@ To understand the different types of phrasings, you’re first going to need to 
 
 
 ## Attribute phrasings
-Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host coutries have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
+Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host countries have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
 - Which customers have orders?
 - List host cities by country ascending
 - Show orders that have chai
