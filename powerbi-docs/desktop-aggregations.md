@@ -87,10 +87,13 @@ For more information on the **Dual** storage mode, see the [storage mode](deskto
 ### Strong vs. weak relationships
 Aggregations hits based on relationships require strong relationships.
 
-Strong relationships include the following combinations (many side -> one side) where both tables are from a *single source*.
-* Dual -> Dual
-* Import -> Dual or Import
-* DirectQuery -> Dual or DirectQuery
+Strong relationships include the following combinations where both tables are from a *single source*.
+
+| Table on the *many* side | Table on the *1* side |
+| ------------- |----------------------| 
+| Dual          | Dual                 | 
+| Import        | Import or Dual       | 
+| DirectQuery   | DirectQuery or Dual  | 
 
 The only case where a *cross-source* relationship is considered strong is if both tables are Import. Many-to-many relationships are always considered weak.
 
