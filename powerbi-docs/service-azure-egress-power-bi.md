@@ -15,7 +15,11 @@ LocalizationGroup: Data from databases
 ---
 # Power BI and Azure egress
 
+When using Power BI with Azure data sources, you can avoid Azure egress charges by making sure your Power BI tenant is in the same region as your Azure data sources.
+
 When your Power BI tenant is deployed in the same Azure region as you deploy your data sources, you do not incur egress charges for scheduled refresh and DirectQuery interactions. 
+
+## Determining where your Power BI tenant is located
 
 To find out where your Power BI tenant is located, see the [where is my Power BI tenant located](service-admin-where-is-my-tenant-located.md) article.
 
