@@ -83,7 +83,8 @@ Alternatively, you can share a report directly with users by embedding the repor
 
    ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
 
-**_The user needs access to both the SharePoint page and the report to see the report in the SharePoint page._**
+> [!NOTE]
+> **The user needs access to both the SharePoint page and the report to see the report on the SharePoint page.**
 
 ## Multi-factor authentication
 
