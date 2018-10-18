@@ -21,12 +21,12 @@ Using **aggregations** in Power BI enables interactive analysis over big data in
 
 The following list provides advantages to using **aggregations**:
 
-* **Query performance over large datasets** - as users interact with visuals on Power BI reports, DAX queries are submitted to the dataset. Boost query speeds by caching data at the aggregated level, using a fraction of the resources required at the detail level. Unlock big data in a way that wouldn't otherwise be possible.
+* **Query performance over big data** - as users interact with visuals on Power BI reports, DAX queries are submitted to the dataset. Boost query speeds by caching data at the aggregated level, using a fraction of the resources required at the detail level. Unlock big data in a way that would otherwise be impossible.
 * **Data refresh optimization** - reduce cache sizes and refresh times by caching data at the aggregated level. Speed up the time to make data available for users.
 * **Achieve balanced architectures** - allow the Power BI in-memory cache to handle aggregated queries, which it does effectively. Limit queries sent to the data source in DirectQuery mode, helping stay within concurrency limits. Queries that do get through tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
 
 ### Table-level storage
-Table-level storage is normally used with the aggregations feature. See the [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md) article for more information.
+Table-level storage is normally used with the aggregations feature. See the [storage mode in Power BI Desktop](desktop-storage-mode.md) article for more information.
 
 ### Data source types
 Aggregations are used with data sources representing dimensional models, such as a data warehouses and data marts, as well as Hadoop-based big-data sources. This article describes typical modeling differences in Power BI for each type of data source.
@@ -53,7 +53,7 @@ Consider the following model, which is from a single data source. Let’s say al
 
 Instead, we create the **Sales Agg** table as an aggregation table. It's at a higher granularity than **Sales**, and so it will contain far fewer rows. The number of rows should equal the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. Instead of billions, it might be millions of rows, which are much easier to manage.
 
-Let's assume that the following dimension tables are the most commonly used for the queries with high business value. They're the tables that can filter **Sales Agg** using *one-to-many* (or *many-to-one*) relationships. Other relationship types such as *many-to-many* or *multi-source* are not considered for aggregations.
+Let's assume that the following dimension tables are the most commonly used for the queries with high business value. They're the tables that can filter **Sales Agg** using *one-to-many* (or *many-to-one*) relationships.
 
 * Geography
 * Customer
@@ -73,7 +73,7 @@ Let's continue with the example we're using. We set the storage mode of **Sales 
 
 ![setting the storage mode](media/desktop-aggregations/aggregations_04.jpg)
 
-When we do so, the following dialog appears, letting us know that the related dimension tables will be set to storage mode **Dual**. 
+When we do so, the following dialog appears, letting us know that the related dimension tables can be set to storage mode **Dual**. 
 
 ![storage mode dialog](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -84,8 +84,20 @@ Setting them to **Dual** allows the related dimension tables to act as either Im
 
 For more information on the **Dual** storage mode, see the [storage mode](desktop-storage-mode.md) article.
 
-> Note:
-> The **Sales Agg** table is hidden. Aggregation tables should be hidden from consumers of the dataset. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
+### Strong vs. weak relationships
+Aggregations hits based on relationships require strong relationships.
+
+Strong relationships include the following combinations (many side -> one side) where both tables are from a *single source*.
+* Dual -> Dual
+* Import -> Dual or Import
+* DirectQuery -> Dual or DirectQuery
+
+The only case where a *cross-source* relationship is considered strong is if both tables are Import. Many-to-many relationships are always considered weak.
+
+For *cross-source* aggregation hits that do not depend on relationships, please see section below on aggreations based on group-by columns.
+
+### Aggregation table is hidden
+The **Sales Agg** table is hidden. Aggregation tables should always be hidden from consumers of the dataset. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
 
 ### Manage aggregations dialog
 Next we define the aggregations. Select the **Manage aggregations** context menu for the **Sales Agg** table, by right-clicking on the table.
