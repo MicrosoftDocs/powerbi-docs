@@ -664,6 +664,13 @@
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
             "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-release-notes.md",
+            "redirect_url": "/power-bi/service-whats-new",
+            "redirect_document_id": true
         }
     ]
 }
+
+
