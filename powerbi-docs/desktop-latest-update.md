@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update?
 
-## October 2018 Update (2.62.5222.582)
+## October 2018 Update (2.63.3272.40262)
 
 Our October updates are spooky-good, frighteningly helpful, and sweeter than an orange bucket full of candy. 
 
