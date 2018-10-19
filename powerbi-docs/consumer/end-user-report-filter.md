@@ -1,6 +1,6 @@
 ---
-title: Overview of the Power BI Filters pane for consumers
-description: Overview of the report Filters pane in Power BI service 
+title: Add a report filter
+description: How to add a filter to a report in Power BI service for consumers
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/19/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -25,7 +25,7 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 ![report in browser](media/end-user-report-filter/power-bi-expanded.png)
 
-The Filters pane contains filters that were added to the report by the report *designer*. *Consumers* like you, can interact with the filters and save your changes, but cannot add new filters to the report.
+The Filters pane contains filters that were added to the report by the report *designer*. *Consumers* like you, can interact with the filters and save your changes, but cannot add new filters to the report. For example, in the screenshot above the designer added two page level filters: Segment and Year. You can interact and change these filters, but you cannot add a third page level filter.
 
 In Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the designer's defaults, select **Reset to default** from the top menubar.     
 
@@ -36,11 +36,15 @@ In this example, we've selected a visual that has 6 filters. The report page als
 
 ![list of filters](media/end-user-report-filter/power-bi-filter-list.png)
 
-Some of the filters have the word **All** next to them and this means that all values are being included in the filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
+Some of the filters have the word **All** next to them and this means that all values are being included in the filter.  For example, **Chain(All)** in the screenshot above tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 Anyone viewing this report can interact with these filters.
 
-* View the details of the filter by hovering and selecting the arrow next to the filter.
+- Search in page, visual, report, and drillthrough filters, to find and select the value you want. 
+
+    ![Search in a filter](media/end-user-report-filter/power-bi-filter-search.png)
+
+- View the details of the filter by hovering and selecting the arrow next to the filter.
   
    ![shows Lindseys selected](media/end-user-report-filter/power-bi-expan-filter.png)
 * Change the filter, for example, change **Lindseys** to **Fashions Direct**.
@@ -52,9 +56,11 @@ Anyone viewing this report can interact with these filters.
     
 * Delete the filter by selecting the **x** next to the filter name.
   
-  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will no longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![eraser icon](media/end-user-report-filter/power-bi-eraser-icon.png).
+    ![x highlighted](media/end-user-report-filter/power-bi-delete-filter.png)
+
+  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will no longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![ eraser icon ](media/end-user-report-filter/power-bi-eraser-icon.png).
   
-  ![x highlighted](media/end-user-report-filter/power-bi-delete-filter.png)
+  
 
 
 
@@ -66,14 +72,14 @@ Anyone viewing this report can interact with these filters.
 ### List mode
 Ticking a checkbox either selects or deselects the value. The **All** checkbox can be used to toggle the state of all checkboxes on or off. The checkboxes represent all the available values for that field.  As you adjust the filter, the restatement updates to reflect your choices. 
 
-![list mode filter](media/end-user-report-filter/pbi_restatement.png)
+![list mode filter](media/end-user-report-filter/power-bi-restatement-new.png)
 
-Note how the restatement now says "is Amarilla or Carretera"
+Note how the restatement now says "is Mar, Apr or May".
 
 ### Advanced mode
 Select **Advanced Filtering** to switch to advanced mode. Use the dropdown controls and text boxes to identify which fields to include. By choosing between **And** and **Or**, you can build complex filter expressions. Select the **Apply Filter** button when you've set the values you want.  
 
-![advanced mode](media/end-user-report-filter/aboutfilters.png)
+![advanced mode](media/end-user-report-filter/power-bi-advanced.png)
 
 ## Types of filters: numeric field filters
 ### List mode
@@ -82,7 +88,7 @@ If the values are finite, selecting the field name displays a list.  See **Text 
 ### Advanced mode
 If the values are infinite or represent a range, selecting the field name opens the advanced filter mode. Use the dropdown and text boxes to specify a range of values that you want to see. 
 
-![advanced filter](media/end-user-report-filter/pbi_dropdown-and-text.png)
+![advanced filter](media/end-user-report-filter/power-bi-dropdown-and-text.png)
 
 By choosing between **And** and **Or**, you can build complex filter expressions. Select the **Apply Filter** button when you've set the values you want.
 
