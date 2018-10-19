@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 10/19/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -25,7 +25,7 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 ![report in browser](media/end-user-report-filter/power-bi-expanded.png)
 
-The Filters pane contains filters that were added to the report by the report *designer*. *Consumers* like you, can interact with the filters and save your changes, but cannot add new filters to the report.
+The Filters pane contains filters that were added to the report by the report *designer*. *Consumers* like you, can interact with the filters and save your changes, but cannot add new filters to the report. For example, in the screenshot above the designer added two page level filters: Segment and Year. You can interact and change these filters, but you cannot add a third page level filter.
 
 In Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the designer's defaults, select **Reset to default** from the top menubar.     
 
@@ -40,7 +40,7 @@ Some of the filters have the word **All** next to them and this means that all v
 
 Anyone viewing this report can interact with these filters.
 
-- You can search in page, visual, and report filters, to find and select the value you want. 
+- Search in page, visual, report, and drillthrough filters, to find and select the value you want. 
 
     ![Search in a filter](media/end-user-report-filter/power-bi-filter-search.png)
 
