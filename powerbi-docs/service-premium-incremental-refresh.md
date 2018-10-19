@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/30/2018
+ms.date: 10/19/2018
 ms.author: chwade
 
 LocalizationGroup: Premium
@@ -40,6 +40,7 @@ Large datasets with potentially billions of rows may not fit into Power BI Deskt
 To use incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**.
 
 Once published, the parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings in the service.
+
 It is important that the filter is pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support "query folding". Most data sources that support SQL queries support query folding. Data sources such as flat files, blobs, web, and OData feeds typically do not. Given the various levels of query-folding support for each data source, it is recommended that you verify that the filter logic is included in the source queries. In cases where the filter is not supported by the data source backend, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
 
 The filter will be used to partition the data into ranges in the Power BI service. It is not designed to support updating the filtered date column. An update will be interpreted as an insertion and a deletion (not an update). If the deletion occurs in the historical range and not the incremental range, it won’t get picked up. This can cause data refresh failures due to partition-key conflicts.
@@ -86,7 +87,7 @@ The header text explains the following:
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store five years of data in total, and incrementally refresh 10 days of data. If the dataset is refreshed daily, the following will be carried out for each refresh operation.
+The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh 10 days of data. The first refresh operation will load historical data. Subsequent refreshes will be incremental, and (if scheduled to run daily) carry out the following operations.
 
 - Add a new day of data.
 
@@ -94,7 +95,7 @@ The following example defines a refresh policy to store five years of data in to
 
 - Remove calendar years that are older than five years prior to the current date. For example, if the current date is January 1 2019, the year 2013 is removed.
 
-The first refresh in the Power BI service may take longer to import all five years. Subsequent refreshes may be finished in a fraction of the time.
+The first refresh in the Power BI service may take longer to import all five full calendar years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
