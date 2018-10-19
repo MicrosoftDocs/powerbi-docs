@@ -1,6 +1,6 @@
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
-- name: Power BI service
+- name: Power BI service for consumers
   items:
   - name: Overview
     items: 
@@ -24,6 +24,8 @@
       items:
       - name: "Dashboards"
         href: end-user-dashboards.md
+      - name: "View a dashboard"
+        href: end-user-dashboard-open.md
       - name: "Featured dashboards"
         href: end-user-featured.md
       - name: "Dashboard tiles"

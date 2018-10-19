@@ -9,7 +9,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/11/2018
+ms.date: 10/18/2018
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -81,7 +81,7 @@ Open the dashboard by selecting the dashboard name.
    
     We have only one favorite so far. Favorites can be dashboards, reports, or apps.  
 
-1. Another way to mark either a dashboard or report as a favorite is from the **Dashboards** or **Reports** workspace tab.  Open the **Reports** tab, and select the star icon to the left of the report name.
+1. Another way to mark either a dashboard or report as a favorite is from the **Dashboards** or **Reports** content view tab.  Open the **Reports** tab, and select the star icon to the left of the report name.
    
    ![mark as favorite](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -106,7 +106,7 @@ To learn more, see [Favorites](end-user-favorite.md)
 
     From the flyout, select content to open it.
 
-2. Sometimes you don't want to open recent content, but want to view information or take other action, such as view Insights, or export to Excel. In cases like these, open the **Recents** pane by selecting **Recent** or its icon from the left navpane. If you had more than one workspace, this list would include content from across all of your workspaces.
+2. Sometimes you don't want to simply open recent content, but want to view information or take other action, such as view Insights, or export to Excel. In cases like these, open the **Recents** pane by selecting **Recent** or its icon from the left navpane. If you had more than one workspace, this list would include content from all of your workspaces.
 
    ![Recents pane](./media/end-user-experience/power-bi-recent.png)
 
@@ -117,13 +117,15 @@ The content view makes it easier to search, filter and sort your content. To sea
 
 Since you only have one sample, searching and sorting isn't necessary.  But when you have long lists of dashboards, reports, workbooks, and datasets, you'll find searching and sorting extremely helpful.
 
-![search for a dashboard](./media/end-user-experience/power-bi-search-sort.png)
+![search for a report](./media/end-user-experience/power-bi-search.png)
 
-You can also sort the content by name or owner.  
+You can also sort the content by name or owner. Notice the up arrow to the right of **Name**. We're currently sorting 83 items alphabetically by name, ascending. To change the sort order to descending, select **Name**. The up arrow changes to a down arrow.
 
-![sort content](./media/end-user-experience/power-bi-sort.png)
+![sort content](./media/end-user-experience/power-bi-sort-new.png)
 
-To learn more, see [Power BI navigation: search, sort, filter](end-user-search-sort.md)
+Not all columns can be sorted. Hover over the column headings to discover which are able to be sorted.
+
+To learn more, see [Power BI navigation: search and sort](end-user-search-sort.md)
 
 ## Clean up resources
 After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.
