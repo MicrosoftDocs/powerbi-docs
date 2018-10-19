@@ -22,7 +22,7 @@ We currently support SAP HANA with SAML. For more information about setting up a
 
 We support additional data sources with [Kerberos](service-gateway-sso-kerberos.md).
 
-## Configuring SAML for the gateway and data source
+## Configuring the gateway and data source
 
 To use SAML, you first generate a certificate for the SAML identity provider, then map a Power BI user to the identity.
 

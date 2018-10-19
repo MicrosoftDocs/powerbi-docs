@@ -40,7 +40,7 @@ Here are additional details about those steps:
 
 2. The gateway needs to map the Azure Active Directory UPN to a local Active Directory identity.
 
-   a.  If AAD DirSync (also known as *AAD Connect*) is configured, then the mapping works automatically in the gateway.
+   a.  If Azure AD DirSync (also known as *Azure AD Connect*) is configured, then the mapping works automatically in the gateway.
 
    b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
 

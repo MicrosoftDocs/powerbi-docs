@@ -53,10 +53,10 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Service account](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_04.png)
 
-To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
+To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
 > [!NOTE]
-> If AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
+> If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied based on the service SID, instead of domain account).
 
 ### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
 
@@ -201,7 +201,7 @@ And the technical details associated with the error message (DM_GWPipeline_Gatew
 
 ![Server unreachable](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_03.png)
 
-The result is that the because of insufficient Kerberos configuration, the gateway could not impersonate the originating user properly, and the database connection attempt failed.
+The result is that the gateway could not impersonate the originating user properly, and the database connection attempt failed.
 
 ## Next steps
 
