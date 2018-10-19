@@ -9,7 +9,7 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/13/2018
+ms.date: 10/18/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -31,7 +31,7 @@ To get started, simply open a browser and type **app.powerbi.com**. The very fir
 
 ![](media/end-user-basic-concepts/power-bi-open.png)
 
-As you use Power BI, you'll personalize what you see when you open the website each time.  For example, some people like Power BI to open to the Home screen while others have a favorite dashboard they want to see first. Don't worry, we'll teach you how to do this. 
+As you use Power BI, you'll personalize what you see when you open the website each time.  For example, some people like Power BI to open to the Home page while others have a favorite dashboard they want to see first. Don't worry, we'll teach you how to do this. 
 - [Home preview](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
 - [Set content as **featured**](end-user-featured.md) 
 
@@ -103,7 +103,7 @@ Visualizations are also available from the community and these are called *custo
 * can be used on many different dashboards
 __________________________________________________
 ## Reports
-A Power BI report is one or more pages of visualizations, graphics, and text. All of the visualizations in a report come from a single dataset. *Designers* share reports with *consumers* who interact with the reports in *Reading view*.
+A Power BI report is one or more pages of visualizations, graphics, and text. All of the visualizations in a report come from a single dataset. *Designers* share reports with *consumers* who [interact with the reports in *Reading view*](end-user-reading-view.md).
 
 ![report with tabs](media/end-user-basic-concepts/power-bi-report2.png)
 
