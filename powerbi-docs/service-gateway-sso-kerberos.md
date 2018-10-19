@@ -51,7 +51,7 @@ This release of the On-premises data gateway supports an in-place upgrade, as we
 
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
 
-![Service account](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_04.png)
+![Service account](media/service-gateway-sso-kerberos/service-account.png)
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
@@ -90,7 +90,7 @@ First, determine whether an SPN was already created for the domain account used 
 
     For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
 
-    ![Set SPN](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_05.png)
+    ![Set SPN](media/service-gateway-sso-kerberos/set-spn.png)
 
     With that step completed, we can move on to configuring delegation settings.
 
@@ -135,7 +135,7 @@ Given those example names and settings, the configuration steps are the followin
 
 12. The dialog box will look similar to the following if you selected **Expanded**. Select **OK**.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_06.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
 Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), the gateway service account must be granted the local policy “Impersonate a client after authentication”. You can perform/verify this with the Local Group Policy Editor (**gpedit**).
 
@@ -143,11 +143,11 @@ Finally, on the machine running the gateway service (**PBIEgwTestGW** in our exa
 
 1. Navigate to **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
 
-    ![User rights assignment](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_07.png)
+    ![User rights assignment](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
 1. From the list of policies under **User Rights Assignment**, select **Impersonate a client after authentication**.
 
-    ![Impersonate a client](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_08.png)
+    ![Impersonate a client](media/service-gateway-sso-kerberos/impersonate-client.png)
 
     Right-click and open the **Properties** for **Impersonate a client after authentication**, and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 
@@ -171,7 +171,7 @@ If you're using SAP HANA, we recommend following these additional steps, which c
 
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source. Then under its **Advanced Settings** enable SSO, and publish reports and datasets binding to that data source.
 
-![Advanced settings](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_09.png)
+![Advanced settings](media/service-gateway-sso-kerberos/advanced-settings.png)
 
 This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
 
@@ -181,7 +181,7 @@ Earlier in this article, we discussed switching the gateway from a local service
 
 1. Launch the **On-premises data gateway** configuration tool.
 
-   ![Gateway desktop app](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_10.png)
+   ![Gateway desktop app](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
 
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
 
@@ -189,17 +189,17 @@ Earlier in this article, we discussed switching the gateway from a local service
 
 4. Select **Change account** to start the guided walk-through, as shown in the following image.
 
-   ![Change account](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_11.png)
+   ![Change account](media/service-gateway-sso-kerberos/change-account.png)
 
 ## Errors from an insufficient Kerberos configuration
 
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
 
-![Couldn't load data](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_02.png)
+![Load data error](media/service-gateway-sso-kerberos/load-data-error.png)
 
 And the technical details associated with the error message (DM_GWPipeline_Gateway_ServerUnreachable) may look like the following:
 
-![Server unreachable](media/service-gateway-sso-kerberos/kerberos-sso-on-prem_03.png)
+![Server unreachable](media/service-gateway-sso-kerberos/server-unreachable.png)
 
 The result is that the gateway could not impersonate the originating user properly, and the database connection attempt failed.
 
