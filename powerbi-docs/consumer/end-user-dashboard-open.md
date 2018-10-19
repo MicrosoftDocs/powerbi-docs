@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -22,18 +22,16 @@ Power BI consumers spend a lot of time viewing dashboards. Dashboards are design
 Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
 
 ## Open a dashboard
-Dashboards can be opened from many locations in Power BI service.  The key is figuring out which content is a dashboard (versus a report, for example). Once you've identified a dashboard, opening it is simple - just click and the dashboard fills your Power BI canvas.
+
 
 
 |              |         |
 |------------|--------------------------------|
-|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |The easiest way to identify a dashboard is to look for this <br>dashboard icon. When you locate content with this icon, select it to open the dashboard. |
+|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards can be opened from many locations in Power BI service. <br> Just look for this dashboard icon. Once you've identified a <br>dashboard, opening it is simple - just select it and the dashboard fills <br>your Power BI canvas. |
 |                    |          |
 
 ![dashboard icon](media/end-user-dashboard-open/opendash.gif)
- 
 
-<!--insert aGIF-->
 
 You may find dashboards in all of the containers in the left navigation bar. 
 - **Home** (Preview)
@@ -47,5 +45,3 @@ You may find dashboards in all of the containers in the left navigation bar.
 ## Next steps
 * Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../sample-tutorial-connect-to-the-samples.md).
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.
-* Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](end-user-alerts.md).
-* Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](end-user-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization. 

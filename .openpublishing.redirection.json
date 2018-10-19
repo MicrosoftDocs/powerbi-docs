@@ -126,6 +126,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-export-data.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/template-content-pack-experience.md", 
             "redirect_url": "/power-bi/template-content-pack-experience",
             "redirect_document_id": true
@@ -259,6 +264,11 @@
             "source_path": "powerbi-docs/consumer/end-user-consuming.md",
             "redirect_url": "/power-bi/consumer/end-user-consumer",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-install-use-apps.md",
+            "redirect_url": "/power-bi/consumer/end-user-apps",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/mobile-mixed-reality-app.md",
@@ -578,11 +588,6 @@
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
             "redirect_url": "/power-bi/consumer/end-user-powerpoint",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-q-and-a-direct-query.md",
-            "redirect_url": "/power-bi/consumer/end-user-q-and-a-direct-query",
             "redirect_document_id": true
         },
         {
