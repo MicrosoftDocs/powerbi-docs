@@ -11,11 +11,9 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ---
 
-
-
 # Power BI URLs
 
-**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the Internet. The endpoints below should be reachable for customers using the Power BI online service.
+**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
 
 To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
@@ -59,7 +57,7 @@ To perform administrative functions within Power BI, you must be able to connect
 
 ## Getting data
 
-To be able to get data from specific data sources such as OneDrive, you must be able to connect to the endpoints in the table below.
+To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the table below. Access to additional internet domains and URLs may be required for specific data sources used within your organization.
 
 | Row | Purpose | Destination(s) | Port(s) |
 |-----|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------|---------------------------------------------|
