@@ -5,7 +5,7 @@ layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
 ms.date: 10/01/2018
-ms.topic: 
+ms.topic: hub-page
 
 ---
 <div id="main" class="v2">
