@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
+ms.date: 10/17/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -154,13 +154,13 @@ To embed your content by using a sample application, follow these steps:
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Open the **Cloud.config** file in the sample application. There are a few fields you must populate to run the application successfully: **ClientID** and **ClientSecret**.
+2. Open the **Cloud.config** file in the sample application. There are a few fields you must populate to run the application successfully: **ApplicationID** and **ApplicationSecret**.
 
     ![Cloud.config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fill in the **ClientID** information with the **Application ID** from Azure. The **ClientID** is used by the application to identify itself to the users you're requesting permissions from.
+    Fill in the **ApplicationID** information with the **Application ID** from Azure. The **ApplicationID** is used by the application to identify itself to the users you're requesting permissions from.
 
-    To get the **ClientID**, follow these steps:
+    To get the **ApplicationID**, follow these steps:
 
     1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -170,17 +170,17 @@ To embed your content by using a sample application, follow these steps:
 
         ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Select the application that needs to use the **ClientID**.
+    1. Select the application that needs to use the **ApplicationID**.
 
         ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. You should see an **Application ID** that's listed as a GUID. Use this **Application ID** as the **ClientID** for the application.
+    1. You should see an **Application ID** that's listed as a GUID. Use this **Application ID** as the **ApplicationID** for the application.
 
-        ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Fill in the **ClientSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
+    1. Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
 
-    1. To get the **ClientSecret**, follow these steps:
+    1. To get the **ApplicationSecret**, follow these steps:
 
         1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -190,7 +190,7 @@ To embed your content by using a sample application, follow these steps:
 
             ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Select the application that needs to use the **ClientSecret**.
+        1. Select the application that needs to use the **ApplicationSecret**.
 
             ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
