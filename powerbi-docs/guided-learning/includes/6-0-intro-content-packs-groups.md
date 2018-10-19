@@ -2,8 +2,6 @@ Welcome to the **Publishing and Sharing** section of the **Guided Learning** cou
 
 Now that you've learned how Excel and Power BI work seamlessly together, and you've learned all about the visuals you can create in reports and dashboards, you likely want to share them with your coworkers and friends. With Power BI, **publishing and sharing** are easy to accomplish.
 
-This section shows you just how easy it is to bring Excel workbooks into Power BI, and demonstrates that Power BI and Excel make a great partnership.
-
 ## Share and collaborate with colleagues in Power BI
 *Get introduced to the tools that make sharing and collaborating easier with Power BI*
 

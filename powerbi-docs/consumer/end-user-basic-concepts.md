@@ -161,7 +161,6 @@ You can get apps in a few different ways. The app designer can install the app a
 
 Once the app is installed, just select it from your Apps list and select which dashboard or report to open and explore first.   
 
-
 I hope this article gave you an understanding of the building blocks that make up Power BI service for consumers. 
 
 ## Next steps
