@@ -17,7 +17,7 @@ LocalizationGroup: Premium
 
 Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
 
-- **Refreshes are faster.** Only data that has changed needs to be refreshed. For example, refresh only the last 5 days of a 10-year dataset.
+- **Refreshes are faster.** Only data that has changed needs to be refreshed. For example, refresh only the last five days of a 10-year dataset.
 
 - **Refreshes are more reliable.** For example, it is not necessary to maintain long-running connections to volatile source systems.
 
@@ -86,15 +86,15 @@ The header text explains the following:
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store 5 years of data in total, and incrementally refresh 10 days of data. If the dataset is refreshed daily, the following will be carried out for each refresh operation.
+The following example defines a refresh policy to store five years of data in total, and incrementally refresh 10 days of data. If the dataset is refreshed daily, the following will be carried out for each refresh operation.
 
 - Add a new day of data.
 
 - Refresh 10 days up to the current date.
 
-- Remove calendar years that are older than 5 years prior to the current date. For example, if the current date is January 1st 2019, the year 2013 is removed.
+- Remove calendar years that are older than five years prior to the current date. For example, if the current date is January 1 2019, the year 2013 is removed.
 
-The first refresh in the Power BI service may take longer to import all 5 years. Subsequent refreshes may be finished in a fraction of the time.
+The first refresh in the Power BI service may take longer to import all five years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
@@ -104,7 +104,7 @@ The first refresh in the Power BI service may take longer to import all 5 years.
 
 #### Detect data changes
 
-Incremental refresh of 10 days is of course much more efficient than full refresh of 5 years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. **This should not be the same column used to partition the data with the RangeStart/RangeEnd parameters.** The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
+Incremental refresh of 10 days is of course much more efficient than full refresh of five years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. **This should not be the same column used to partition the data with the RangeStart/RangeEnd parameters.** The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
 
 ![Detect changes](media/service-premium-incremental-refresh/detect-changes.png)
 
