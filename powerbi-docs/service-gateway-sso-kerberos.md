@@ -191,6 +191,173 @@ Earlier in this article, we discussed switching the gateway from a local service
 
    ![Change account](media/service-gateway-sso-kerberos/change-account.png)
 
+## Configuring SAP BW for SSO
+
+Now that you understand how Kerberos works with a gateway, you can configure SSO for your SAP Business Warehouse (SAP BW). The following steps assume you've already [prepared for Kerberos constrained delegation](#preparing-for-kerberos-constrained-delegation), as described earlier in this article.
+
+### Install SAP BW components
+
+If you haven't set up SAP gsskrb5 and gx64krb5 on your client machine(s) and your SAP BW Application Server, complete this section. If you have already completed this setup (e.g. you've already created a Service User for your BW server and mapped an SPN to it), you may skip some parts of this section.
+
+1. Download gsskrb5/gx64krb5 from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll/gx64krb5.dll.
+
+1. Put the library in a location on your Gateway machine accessible by your Gateway instance (and also by SAP GUI if you want to test the SSO connection using SAP GUI / Logon).
+
+1. Put another copy on your BW server machine in a location accessible by the BW server.
+
+1. On the client and server machines, set the SNC\_LIB and SNC\_LIB\_64 environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
+
+### Complete the gateway configuration for SAP BW
+
+In addition to gateway configuration you've already done, there are a few additional SAP BW-specific steps. The [**Configure delegation settings on the gateway service account**](https://docs.microsoft.com/en-us/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data#configure-delegation-settings-on-the-gateway-service-account) section of the documentation assumes you've already configured SPNs for your underlying data sources. To complete this configuration for SAP BW:
+
+1. On an Active Directory Domain Controller, create a Service User (initially just a plain Active Directory user) for your BW Application Server in your Active Directory environment and assign an SPN to it. The assigned SPN **must** start with SAP/. What comes after the SAP/ is up to you; one option is to use the BW server's Service User's username. For example, if you create BWServiceUser@\<DOMAIN\> as your Service User, you could use the SPN SAP/BWServiceUser. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would execute the following command from a cmd window on a Domain Controller machine: setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser.
+
+1. Give the Service User access to your BW Application Server instance:
+
+    1. On the BW server machine, add the Service User to the Local Admin group for your BW server by opening the Computer Management program and double-clicking on the Local Admin group for your server. E.g. see the screenshot below for the "BW5" server:
+
+        ![Computer management](media/service-gateway-sso-kerberos/computer-management.png)
+
+    1. Double-click on the Local Admin group, then click Add to add your BW Service User to the group. Use the Check Names button to ensure you've typed in the name correctly. Click OK.
+
+1. Set the BW Server's Service User as the user that starts the BW Server Service on the BW server machine.
+
+    1. Open the "Run" program and type in "Services.msc". Look for the service corresponding to your BW Application Server instance. Right-click on it and choose "Properties". E.g.:
+    
+        ![Server properties](media/service-gateway-sso-kerberos/server-properties.png)
+    
+    1. Switch to the "Log on" tab and change the user to your BW Service User, as specified above. Enter the user's password and hit OK.
+
+1. Logon to your server in SAP GUI / Logon and set the following profile parameters using the RZ10 transaction:
+
+    1. Set the snc/identity/as profile parameter to p:\<the BW service user you've created\>, e.g. p:BWServiceUser@MYDOMAIN.COM. Note the p: that precedes the Service User's UPN.
+
+    1. Set the snc/gssapi\_lib profile parameter to \<path to gsskrb5.dll/gx64krb5.dll on the server machine (the library you'll use depends on OS bitness)\>. Remember to put the library in a location the BW Application Server can access.
+
+    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options are for allowing clients to connect to the BW server using SAP Logon / GUI without having SNC configured.
+
+        | **Setting** | **Value** |
+        | --- | --- |
+        | snc/data\_protection/max | 3 |
+        | snc/data\_protection/min | 1 |
+        | snc/data\_protection/use | 9 |
+        | snc/accept\_insecure\_cpic | 1 |
+        | snc/accept\_insecure\_gui | 1 |
+        | snc/accept\_insecure\_r3int\_rfc | 1 |
+        | snc/accept\_insecure\_rfc | 1 |
+        | snc/permit\_insecure\_start | 1 |
+
+    1. Set the property snc/enable to 1.
+
+1. After setting these profile parameters, open the SAP Management Console on the server machine and restart the BW instance. If the server won't start, double-check that you've set the profile parameters correctly. More information on profile parameter settings can be found [here](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). You can also consult section our troubleshooting information later in this section if you encounter problems.
+
+### Map Azure AD users to SAP BW users
+
+Map an Active Directory user to an SAP BW Application Server user and test the SSO connection in SAP GUI / Logon.
+
+1. Login to your BW server using SAP GUI / Logon. Execute transaction SU01.
+
+1. In the User box, type in the BW user you want to enable SSO connections for (in the screenshot above we're setting permissions for BIUSER). Click the Edit icon near the top-left of the SAP Logon window (the image of a pen).
+
+    ![User maintenance](media/service-gateway-sso-kerberos/user-maintenance.png)
+
+1. Click on the SNC tab. In the SNC name input box, type p:\<your active directory user\>@\<your domain\>. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization you want to enable SSO access to the BW Application Server for. For example, if you want to enable SSO access for the user [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), you would enter p:testuser@TESTDOMAIN.COM.
+
+    ![Maintain users](media/service-gateway-sso-kerberos/maintain-users.png)
+
+1. Hit the save icon (the floppy disk near the top left corner of the screen).
+
+### Verify sign-in using SSO
+
+Verify that you can login to the server using SAP Logon / SAP GUI via SSO as the Active Directory user you've just enabled SSO access for.
+
+1. Login to a machine on which SAP Logon is installed **as the Active Directory user you just enabled SSO access for** and launch SAP GUI/Logon. Create a new connection.
+
+1. In the Create New System Entry window, select User Specified System and hit Next.
+
+    ![New system entry](media/service-gateway-sso-kerberos/new-system-entry.png)
+
+1. Fill in the appropriate details on the next page, including the Application Server, Instance Number, and System ID, and hit Finish.
+
+1. Right-click the new connection and select Properties. Click on the Network tab. In the SNC Name window enter p:\<the BW service user's UPN\>, e.g. p:BWServiceUser@MYDOMAIN.COM.
+
+    ![System entry properties](media/service-gateway-sso-kerberos/system-entry-properties.png)
+
+1. Hit OK. Now, double-click the connection you just created to attempt an SSO connection to the service. If this connection succeeds, proceed to the next step. Otherwise, review the earlier steps in this document to make sure they've been completed correctly, or review the troubleshooting section below. Note that if you can't connect to the BW server via SSO in this context you will not be able to connect to the BW server using SSO in the Gateway context.
+
+### Troubleshoot installation and connections
+
+If you encounter any issues, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI / Logon.
+
+1. Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps, particularly if the BW server won't start after the profile parameters have been changed.
+
+1. If you're unable to start the BW service due to a "logon failure" you may have provided the wrong password when setting the BW "start-as" user. You can verify the password by logging in to a machine in your Active Directory environment as the BW service user.
+
+1. If you get errors about SQL credentials preventing the server from starting, verify that you've granted the Service User access to the BW database.
+
+1. "(GSS-API) specified target is unknown or unreachable": this usually means you have the wrong SNC Name name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application aside from the Service User's UPN.
+
+1. "(GSS-API) An invalid name was supplied": make sure "p:" is in the value of the server's SNC identity profile parameter.
+
+1. "(SNC error) the specified module could not be found": this is usually caused by putting the gsskrb5.dll/gx64krb5.dll somewhere that requires elevated privileges (administrator rights) to access.
+
+### Add registry entries
+
+Add required registry entries to the registry of the machine that the Gateway is installed on, and set the required Gateway configuration parameters
+
+1. Execute the following commands in a cmd window:
+
+    1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
+
+    1. REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
+
+1. Open the main Gateway configuration file, Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll. By default, this file is stored at C:\Program Files\On-premises data gateway.
+
+1. Set the **ADUserNameLookupProperty** to msDS-cloudExtensionAttribute1 and **ADUserNameReplacementProperty** to SAMAccountName. Save the configuration file.
+
+1. Restart the Gateway service via the Services tab of Task Manager (right-click, Restart)
+
+    ![Restart gateway](media/service-gateway-sso-kerberos/restart-gateway.png)
+
+### Set Azure AD properties
+
+Set the msDS-cloudExtensionAttribute1 property of the Active Directory user you mapped to a BW user in in the step "Map Azure AD users to SAP BW users" to the PBI Service user you want to enable Kerberos SSO for.
+
+1. Login to a Domain Controller machine as an administrator user. One way to set the msDS-cloudExtensionAttribute1 property is via the Active Directory Users and Computers MMC snap-in (note that other methods can also be used). Open the Users folder in the snap-in window and double-click on the Active Directory user you mapped to a BW user in the step "Map Azure AD users to SAP BW users".
+
+1. Click on the Attribute Editor tab. If you don't see this tab, you'll need to search for directions on how to enable it or use another method to set the msDS-cloudExtensionAttribute1 property. Select one of the attributes and hit the 'm' key to navigate to the Active Directory properties that start with 'm'. Locate the msDS-cloudExtensionAttribute1 property and double-click it. Set the value to the username you use to login to Power BI Service, then hit OK. E.g.:
+
+    ![Edit attribute](media/service-gateway-sso-kerberos/edit-attribute.png)
+
+1. Hit Apply. Verify that the correct value has been set in the Value column.
+
+### Add a new BW Application Server data source to the Power BI Service
+
+Follow [these instructions](https://docs.microsoft.com/en-us/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data#running-a-power-bi-report) to add the BW data source to your Gateway in PBI Service.
+
+1. In the data source configuration window, enter the Application Server's Hostname, System Number, and client ID as you would to login to your BW server from Power BI Desktop. For Authentication Method, select Windows.
+
+1. In the SNC Partner Name field, enter the value stored in the server's snc/identity/as profile parameter **with SAP/ added between the p: and the rest of the identity.** For example, if the snc identity of the server is p:BWServiceUser@MYDOMAIN.COM, you should enter p:SAP/BWServiceUser@MYDOMAIN.COM. in the SNC Partner Name input box.
+
+1. For the SNC Library, select SNC\_LIB or SNC\_LIB\_64.
+
+1. The Username and Password should be the username and password of an Active Directory user with permission to login to the BW server via SSO (i.e. an Active Directory user that has been mapped to a BW user via the SU01 transaction). These credentials will only be used if the "Use SSO via Kerberos for DirectQuery queries" box is **not** checked.
+
+1. Check the "Use SSO via Kerberos for DirectQuery queries" box and hit Apply. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
+
+### Test your setup
+
+Publish a **DirectQuery** report from Power BI Desktop to Power BI Service to test your setup. Make sure you're logged-in to PBI Service as the user that you set the msDS-cloudExtensionAttribute1 property to. If the setup has been completed successfully, you should be able to create a report based off the published dataset in Power BI Service and pull data through the visuals in the report.
+
+### Troubleshooting Gateway Connectivity Issues
+
+1. Check the Gateway logs. Open the Gateway Configuration program, select Diagnostics, and click on Export Logs. The most recent errors will be at the bottom of any log files you examine.
+
+    ![Gateway diagnostics](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
+
+1. Turn on BW tracing and review the generated log files. There are several different types of BW tracing available. Consult the SAP documentation for more information.
+
 ## Errors from an insufficient Kerberos configuration
 
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
