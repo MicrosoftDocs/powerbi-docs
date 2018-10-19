@@ -4,6 +4,9 @@ hide_bc: true
 title: Power BI documentation
 description: Power BI documentation
 ms.service: powerbi
+ms.author: maggiesMSFT
+ms.topic:
+ms:date: 10/01/2018
 ---
 <div id="main" class="v2">
     <div class="container">
