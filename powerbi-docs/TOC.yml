@@ -975,6 +975,8 @@
     items: 
     - name: "Explore Power BI Report Server in a VM"
       href: report-server/tutorial-explore-report-server-web-portal.md
+    - name: "Enter data directly in a paginated report"
+      href: paginated-reports-enter-data.md
   - name: Concepts
     items: 
     - name: "What's new"

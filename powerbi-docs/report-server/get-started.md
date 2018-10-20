@@ -46,11 +46,11 @@ A Power BI report is a multi-perspective view into a data model, with visualizat
 Install [Power BI Desktop optimized for Power BI Report Server](quickstart-create-powerbi-report.md).
 
 ## Paginated reports
-Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
+Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files. 
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
-You can create modern-looking reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+You can create modern-looking reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt). 
 
 ## Reporting Services mobile reports
 Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them. You create them with SQL Server Mobile Report Publisher.
