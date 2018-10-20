@@ -1099,8 +1099,14 @@
       href: service-gateway-enterprise-manage-scheduled-refresh.md
     - name: "Merge on-premises and cloud data sources"
       href: service-gateway-mashup-on-premises-cloud.md
-    - name: "Use Kerberos for single sign-on (SSO)"
-      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
+    - name: "Enable single sign-on (SSO)"
+      items:
+      - name: "Single sign-on (SSO) - overview"
+        href: service-gateway-sso-overview.md
+      - name: "Single sign-on (SSO) - Kerberos"
+        href: service-gateway-sso-kerberos.md
+      - name: "Single sign-on (SSO) - SAML"
+        href: service-gateway-sso-saml.md
     - name: "Configuring proxy settings"
       href: service-gateway-proxy.md
     - name: "High availability clusters for on-premises data gateway"
