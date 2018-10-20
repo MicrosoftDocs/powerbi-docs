@@ -36,7 +36,7 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 
 1. On the **Home** tab, select **Image**. Then locate your image, and place it on the drillthrough page.
 
-2. Select your new image on the drillthrough page. Under the **Format Image** section, set the **Link** slider to **On**, and set then set the **Type** to **Back**. Your image now functions as a back button.
+2. Select your new image on the drillthrough page. Under the **Format Image** section, set the **Link** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
 
     ![Use image for back](media/desktop-drillthrough/drillthrough_05.png)
 

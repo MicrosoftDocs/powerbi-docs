@@ -20,7 +20,7 @@ With **Report Themes** you can apply a color theme to your entire report, such a
 
 Applying a **Report Theme** requires a JSON file that uses a basic structure, which you can then import into Power BI Desktop and apply to your report. The JSON file structure, and the process of importing are quick and easy (it's just a few button clicks).
 
-Startig with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You can also customize (and standardize) nearly all elements by using the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
+Starting with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You can also customize (and standardize) nearly all elements by using the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
 
 ### Enable Report themes
 As of the August 2018 release of **Power BI Desktop**, report theming is generally available and does not need to be enabled. 
