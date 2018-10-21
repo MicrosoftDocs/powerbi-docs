@@ -78,7 +78,7 @@ With Power BI Premium. the same number of virtual cores an organization provisio
 
 For more information, see [Get started with Power BI Report Server](report-server/get-started.md).
 
-## Next steps
+**Next steps**
 
 [What is Power BI Premium?](service-premium.md)
 [Power BI Premium release notes](service-premium-release-notes.md)

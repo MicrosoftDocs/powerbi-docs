@@ -36,7 +36,7 @@ Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up 
 
 **While the per-query memory and time constraints are much higher in Premium capacity**, it is highly recommended that you use filters and slicers to limit visuals to display only what is necessary.
 
-## Next steps
+**Next steps**
 
 [What is Power BI Premium?](service-premium.md)
 [Power BI Premium release notes](service-premium-release-notes.md)
