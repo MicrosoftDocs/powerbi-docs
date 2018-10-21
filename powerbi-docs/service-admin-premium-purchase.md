@@ -24,6 +24,8 @@ For more information about Power BI Premium, see [What is Power BI Premium?](ser
 
 > [!IMPORTANT]
 > Authors of content still need a Power BI Pro license, even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
+>
+>If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are > 1 GB will are not supported in shared capacity.
 
 ## Create a new tenant with Power BI Premium P1
 
