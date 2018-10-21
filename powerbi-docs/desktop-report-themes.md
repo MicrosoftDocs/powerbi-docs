@@ -20,10 +20,10 @@ With **Report Themes** you can apply a color theme to your entire report, such a
 
 When you apply a **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report. The JSON file structure, and the process of importing are quick and easy (it's just a few button clicks).
 
-Starting with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You can also customize and standardize nearly all elements. To customize, you use the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
+Starting with the September 2017 version of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You also have the ability to customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to give you full control over how your reports look and feel, to a granular level.
 
 ### Enable Report themes
-As of the August 2018 release of **Power BI Desktop**, report theming is generally available and does not need to be enabled. 
+Starting with the August 2018 version of **Power BI Desktop**, report theming is generally available and doesn't need to be enabled. 
 
 If you're using an earlier version of **Power BI Desktop**, you can enable it as a preview feature by taking the following steps: 
 
@@ -34,7 +34,7 @@ You'll need to restart **Power BI Desktop** after you make the selection.
 
 ![Custom report themes](media/desktop-report-themes/report-themes_2.png)
 
-We recommend that you always upgrade to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
+We always recommend that you upgrade to the most recent version of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## How Report Themes work
 To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes or import a custom theme.
@@ -62,7 +62,7 @@ When the theme file has loaded successfully, Power BI Desktop lets you know.
 Now that we've imported a theme file, let's take a look at the simple and straightforward JSON file structure.
 
 ## Structure of a Report Theme JSON file
- When opened in an editor, the basic JSON file that we selected in the previous section (the *St Patrick's Day.json* file), looks like the following:
+ When opened in an editor, the basic JSON file that we selected in the previous section (the *St Patrick's Day.json* file), looks like the following screenshot:
 
 ![St. Patrick's day JSON file](media/desktop-report-themes/report-themes_6.png)
 
@@ -70,7 +70,7 @@ That JSON file has the following required lines:
 
 * **name**: The theme name, which is the only required field.
 
-* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired.
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as you want.
 
 * **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. 
   - **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. 
@@ -96,18 +96,18 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
 
 From there, you can enter your own color hex code for your selected colors.
 
-Starting with the September 2017 release of **Power BI Desktop** the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to affect, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
+Starting with the September 2017 version of **Power BI Desktop** the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to affect, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
 The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family. Or you can turn off data labels for specific chart types.
 
-With the ability to use a granular JSON file, you can create a theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
+When you use a granular JSON file, you can create a theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
 
 For information about the format of the detailed JSON file, see the **Report theme JSON file format** section at the end of this article.
 
 ## How Report Theme colors stick to your reports
 When you publish your report to the **Power BI service**, your Report Theme colors stay with it.
 
-In addition, the **Data colors** section of the **Format** panel reflect your Report Theme. For example, after we apply the multitude of green and brown colors from the **St. Patrick's Day** theme, we select a visual. Then we go to **Format > Data colors** and see the following.
+The **Data colors** section of the **Format** panel reflects your Report Theme. For example, after we apply the multitude of green and brown colors from the **St. Patrick's Day** theme, we select a visual. Then we go to **Format > Data colors** and see the following information:
 
 ![Visualizations](media/desktop-report-themes/report-themes_8.png)
 
@@ -116,11 +116,11 @@ See all that green? That's because those colors were part of the **Report Theme*
 ### Situations when Report Theme colors won't stick to your reports
 Let's say you apply a custom color set (or individual color) to a particular data point in a visual. When you apply a Report Theme, it will *not* override that customized data point color.
 
-In addition, let's say you've manually set the color of a data point color by using the Theme colors section of the color palette. That color (or colors) will *not* be updated when you apply a new Report Theme. To get your default colors back (so they'll update when you apply a new Report Theme), select **Revert to default** in the **Theme colors** palette.
+In addition, let's say you've manually set the color of a data point color by using the Theme colors section of the color palette. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
 
 ![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
-Also, many **Custom Visuals** will not apply Report Themes.
+Also, many **Custom Visuals** won't apply to Report Themes.
 
 ## Report Theme files you can use right now
 Want to get started with **Report Themes**? Great! Here are a few ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report. We've also included an image of the Report Theme that's applied to the report in this article.
@@ -179,7 +179,7 @@ To create an extended-format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections, you can list a specific visual and cardName. You can also use an asterisk ("\*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family to use throughout all visuals in your report.
+For the **visualName** and **cardName** sections, you can list a specific visual and cardName. You can also use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family to use throughout the visuals in your report.
 
 > [!NOTE]
 > You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.

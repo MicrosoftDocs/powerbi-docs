@@ -21,7 +21,7 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 ## Using drillthrough
 1. To use **drillthrough**, create a report page that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
 
-    For example, let's say you're interested in providing drillthrough for manufacturers. Then you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
+    For example, let's say you want to provide drillthrough for manufacturers. Then you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
 
 2. Then, on that drillthrough page, in the **Fields** section of the **Visualizations** pane, drag the field for which you drillthrough into the **Drillthrough filters** well.
 
@@ -55,23 +55,23 @@ To keep all applied filters, in the **Drillthrough** section of the **Visualizat
 
 ![Keep all filters](media/desktop-drillthrough/drillthrough_06.png)
 
-In versions of **Power BI Desktop** prior to May 2018, the behavior is equivalent to having this toggle set to **off**.
+In versions of **Power BI Desktop** that were released before May 2018, the behavior is the same as having this toggle set to **off**.
 
 When you then drill through on a visual, you can see which filters were applied as a result of the source visual having temporary filters applied. In the drillthrough window, those transient filters are shown in italics. 
 
 ![Transient filters in italics](media/desktop-drillthrough/drillthrough_07.png)
 
-You could do this with tooltips pages, but that would be an odd experience because the tooltip would not appear to be working properly. For this reason, so doing so with tooltips is not recommended.
+You could do this with tooltips pages, but that would be an odd experience because the tooltip wouldn't appear to be working properly. For this reason, so doing so with tooltips isn't recommended.
 
 ## Add a measure to drillthrough
 
-In addition to passing all filters to the drillthrough window, you can also add a measure or a summarized numeric column to the drillthrough area. Drag the drillthrough field to the drillthrough card to apply it. 
+Besides passing all filters to the drillthrough window, you can also add a measure or a summarized numeric column to the drillthrough area. Drag the drillthrough field to the drillthrough card to apply it. 
 
 ![Add a measure to drillthrough](media/desktop-drillthrough/drillthrough_08.png)
 
 When you add a measure or summarized numeric column, you can drill through to the page when the field is used in the *Value* area of a visual.
 
-That's all there is to using **drillthrough** in your reports. It's a great way to get an expanded view on the entity information you select for your drillthrough filter.
+That's all there is to using **drillthrough** in your reports. It's a great way to get an expanded view of the entity information that you selected for your drillthrough filter.
 
 ## Next steps
 
