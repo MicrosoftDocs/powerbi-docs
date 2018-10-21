@@ -14,20 +14,20 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use drillthrough in Power BI Desktop
-With **drillthrough** in **Power BI Desktop**, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. With that focused report page, users can right-click on a data point in other report pages and drill through to the focused page to get details that are filtered to that context.
+With **drillthrough** in **Power BI Desktop**, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. Users can right-click on a data point in other report pages and drill through to the focused page to get details that are filtered to that context.
 
 ![Using drillthrough](media/desktop-drillthrough/drillthrough_01.png)
 
 ## Using drillthrough
-1. To use **drillthrough**, create a report page that has visuals you want to see for the type of entity on which you'll provide drillthrough. 
+1. To use **drillthrough**, create a report page that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
 
-    For example, if you're interested in providing drillthrough for manufacturers, you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
+    For example, let's say you're interested in providing drillthrough for manufacturers. Then you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
 
 2. Then, on that drillthrough page, in the **Fields** section of the **Visualizations** pane, drag the field for which you drillthrough into the **Drillthrough filters** well.
 
     ![Drillthrough well](media/desktop-drillthrough/drillthrough_02.png)
 
-    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports, and lets users who are consuming your report in the **Power BI service** easily get back to the report page from which they came (the page from which they selected to drill through).
+    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports. The button lets users who are consuming your report in the **Power BI service** easily get back to the report page from which they came.
 
     ![Drillthrough image](media/desktop-drillthrough/drillthrough_03.png)
 
@@ -40,17 +40,18 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 
     ![Use image for back](media/desktop-drillthrough/drillthrough_05.png)
 
-     Now when users right-click a data point in your report that uses the field you put into the **Drillthrough filters** correctly, a context menu appears that supports drillthrough to that page.
+    
+     Now users can right-click a data point in your report and get a context menu that supports drillthrough to that page. 
 
     ![Drillthrough menu](media/desktop-drillthrough/drillthrough_04.png)
 
-    When report consumers choose to drill through, the page is filtered to show information about the data point on which they right-clicked. For example, if they right-clicked on a data point about Contoso (a manufacturer), and selected to drill through, the drillthrough page they are taken to is filtered to Contoso.
+    When report consumers choose to drill through, the page is filtered to show information about the data point on which they right-clicked. For example, lets say they right-clicked on a data point about Contoso (a manufacturer), and selected to drill through. The drillthrough page they go to is filtered to Contoso.
 
 ## Pass all filters in drillthrough
 
 Beginning with the May 2018 version of **Power BI Desktop**, you can pass all applied filters to the drillthrough window. For example, you can select only a certain category of products and the visuals filtered to that category, and then select drillthrough. You might be interested in what that drillthrough would look like with all those filters applied.
 
-To keep all applied filters, in the **Drillthrough** section of the **Visualizations** pane, simply set the **Pass all filters** toggle to **on**. 
+To keep all applied filters, in the **Drillthrough** section of the **Visualizations** pane, set the **Pass all filters** toggle to **on**. 
 
 ![Keep all filters](media/desktop-drillthrough/drillthrough_06.png)
 
@@ -60,15 +61,15 @@ When you then drill through on a visual, you can see which filters were applied 
 
 ![Transient filters in italics](media/desktop-drillthrough/drillthrough_07.png)
 
-Note that you could do this with tooltips pages, but that would be an odd experience because the tooltip would not appear to be working properly. For this reason, so doing so with tooltips is not recommended.
+You could do this with tooltips pages, but that would be an odd experience because the tooltip would not appear to be working properly. For this reason, so doing so with tooltips is not recommended.
 
 ## Add a measure to drillthrough
 
-In addition to passing all filters to the drillthrough window, you can also add a measure (or a summarized numeric column) to the drillthrough area. Simply drag the drillthrough field to the drillthrough card to apply it. 
+In addition to passing all filters to the drillthrough window, you can also add a measure or a summarized numeric column to the drillthrough area. Drag the drillthrough field to the drillthrough card to apply it. 
 
 ![Add a measure to drillthrough](media/desktop-drillthrough/drillthrough_08.png)
 
-When you add a measure (or summarized numeric column), you can drill through to the page when the field is used in the *Value* area of a visual.
+When you add a measure or summarized numeric column, you can drill through to the page when the field is used in the *Value* area of a visual.
 
 That's all there is to using **drillthrough** in your reports. It's a great way to get an expanded view on the entity information you select for your drillthrough filter.
 
