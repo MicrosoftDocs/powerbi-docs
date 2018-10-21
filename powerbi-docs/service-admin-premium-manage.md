@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/10/2017
+ms.date: 10/20/2018
 ms.author: mblythe
 
 LocalizationGroup: Premium
 ---
 # Manage capacities within Power BI Premium and Power BI Embedded
-Learn how you can manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
+
+*Capacity* is the heart of the Power BI Premium and Power BI Embedded offerings. Learn how you can manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
 
-Capacity is the heart of the Power BI Premium and Power BI Embedded offerings.
-
 ## What is capacity?
+
 Capacity is the set of resources reserved for the exclusive use by you. Having capacity allows you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
 
 Capacity is all transparent to your end users. They will continue to use Power BI or your application as usual. They don't have to be aware that some (or all) of the content is hosted in your dedicated capacity. For your users, everything works exactly as before.

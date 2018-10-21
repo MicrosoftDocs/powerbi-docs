@@ -38,7 +38,7 @@ Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up 
 
 ## Next steps
 
-[Power BI Premium - what is it?](service-premium.md)
+[What is Power BI Premium?](service-premium.md)
 [Power BI Premium release notes](service-premium-release-notes.md)
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
