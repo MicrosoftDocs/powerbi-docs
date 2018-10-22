@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
+ms.date: 10/24/2018
 ---
 
 # Use row-level security with Power BI embedded content
 
-Row level security (RLS) can be used to restrict user access to data within dashboards, tiles, reports, and datasets. Multiple, different users can work with those same artifacts all while seeing different data. Embedding supports RLS.
+**Row-level security (RLS)** can be used to restrict user access to data within dashboards, tiles, reports, and datasets. Multiple, different users can work with those same artifacts all while seeing different data. Embedding supports RLS.
 
-If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! You need to configure the embed token to account for the user and role. Read on to learn how to do this.
+If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! Configure the embed token to account for the user and role.
 
 If you are embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There is nothing more you need to do in your application. For more information, see [Row-Level security (RLS) with Power BI](../service-admin-rls.md).
 
@@ -34,7 +34,7 @@ For the rest of this article, there is an example of authoring RLS, and then con
 
 ## Adding roles with Power BI Desktop
 
-Our Retail Analysis sample shows sales for all the stores in a retail chain. Without RLS, no matter which district manager signs in and views the report, they’ll see the same data. Senior management has determined each district manager should only see the sales for the stores they manage, and to do this, we can use RLS.
+Our **Retail Analysis sample** shows sales for all the stores in a retail chain. Without RLS, no matter which district manager signs in and views the report, they all see the same data. Senior management has determined each district manager should only see the sales for the stores they manage. Using RLS allows Senior management to restrict data based on a district manager.
 
 RLS is authored in Power BI Desktop. When the dataset and report are opened, we can switch to diagram view to see the schema:
 
@@ -49,7 +49,7 @@ Here are a few things to notice with this schema:
   
     ![Rows within District table](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Based on this schema, if we apply a filter to the **District Manager** column in the **District** table, and if that filter matches the user viewing the report, that filter filters down the **Store** and **Sales** tables to only show data for that district manager.
+Based on this schema, if we apply a filter to the **District Manager** column in the **District** table, and if that filter matches the user viewing the report, that filter down the **Store** and **Sales** tables to only show data for that district manager.
 
 Here's how:
 
@@ -59,14 +59,14 @@ Here's how:
 2. Create a new role called **Manager**.
 
     ![Create new role](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. In the **District** table, enter the following DAX expression: **[District Manager] = USERNAME()**.
+3. In the **District** table, enter this DAX expression: **[District Manager] = USERNAME()**.
 
     ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you just created, along with **Other users**. Enter **AndrewMa** for the user.
+4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you created, along with **Other users**. Enter **AndrewMa** for the user.
 
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    The reports show data as if you were signed in as **AndrewMa**.
+    The reports show data as if you are signed in as **AndrewMa**.
 
 Applying the filter, the way we did here, filters down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables are not filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
@@ -74,9 +74,9 @@ Applying the filter, the way we did here, filters down all records in the **Dist
 
 Now that you have your Power BI Desktop roles configured, there is some work needed in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you’ll need to pass some additional context as part of your embed token in the form of identities. This is done by way [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can do this by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
-The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the following as part of the identity.
+The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the below pieces as part of the identity.
 
 * **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed. Your username can be created with *ASCII* characters.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
@@ -101,7 +101,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-If you are calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a user name, list of string roles and list of string datasets, e.g.:
+If you are calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a user name, list of string roles and list of string datasets. 
+
+Use the following code below as an example:
 
 ```json
 {
@@ -124,15 +126,15 @@ Row-level security can be used with Analysis Services live connections for on-pr
 
 The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
 
-**On-premises data gateway configuration**
+### On-premises data gateway configuration
 
 An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security is not applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
-**Use of roles**
+### Use of roles
 
 Roles can be provided with the identity in an embed token. If no role is provided, the username that was provided can be used to resolve the associated roles.
 
-**Using the CustomData feature**
+### Using the CustomData feature
 
 The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
 You can use this as an alternative way to customize data consumption.
@@ -155,7 +157,7 @@ The identity can be created with custom data using the following call:
 
 **CustomData SDK Usage**
 
-If you are calling the REST API, you can add custom data inside each identity, e.g.:
+If you are calling the REST API, you can add custom data inside each identity, for example:
 
 ```json
 {
@@ -170,6 +172,14 @@ If you are calling the REST API, you can add custom data inside each identity, e
     ]
 }
 ```
+
+## Using RLS vs JavaScript filters
+
+When deciding on how to filter data in a report, you can choose from two different methods.  You can use **row-level security (RLS)** or use **JavaScript filters**.
+
+[Row-level security (RLS)](../desktop-rls.md) is a feature that filters data at the data model level. RLS is secure because it is done on the backend and is encrypted when it gets to the client level. When filtering data securely, we recommend using RLS.  With RLS, you can filter data by configuring RLS settings in a Power BI report, by configuring roles at the data source level (Azure Analysis Services live connection only), or programmatically with an embed token (`EffectiveIdentity`). When using an embed token, the actual filter passes through the embed token for a specific session.
+
+Using [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) is not a security feature, it is a filter feature, so it doesn't restrict data. JavaScript filters apply filters at the client level for filtering data to users.  
 
 ## Considerations and limitations
 
