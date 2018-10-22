@@ -177,10 +177,10 @@ If you are calling the REST API, you can add custom data inside each identity, f
 
 When deciding on how to filter data in a report, you can choose from two different methods.  You can use **row-level security (RLS)** or use **JavaScript filters**.
 
-[Row-level security](../desktop-rls.md) is a feature that filters data at the data model level. RLS is secure because it is done on the backend and is encrypted when it gets to the client level. When filtering data securely, we recommend using RLS.  You can filter data with RLS by using one of the options below.
+[Row-level security](../service-admin-rls.md) is a feature that filters data at the data model level. RLS is secure because it is done on the backend and is encrypted when it gets to the client level. When filtering data securely, we recommend using RLS.  You can filter data with RLS by using one of the options below.
 
-* Configuring roles in a Power BI report.
-* Configuring roles at the data source level (Azure Analysis Services live connection only).
+* [Configuring roles in a Power BI report](../desktop-rls.md).
+* Configuring roles at the data source level (Analysis Services live connection only).
 * Programmatically with an [Embed Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to filter data only and not to secure data filtering. JavaScript filters are not used to secure data because it applies filters at the client level for users.
