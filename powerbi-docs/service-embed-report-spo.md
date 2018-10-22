@@ -150,6 +150,6 @@ Contact the owner of the SharePoint Online page to help you resolve the issue.
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
 [Share a dashboard with colleagues and others](service-share-dashboards.md)  
-[Power BI Premium - what is it?](service-premium.md)  
+[What is Power BI Premium?](service-premium.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

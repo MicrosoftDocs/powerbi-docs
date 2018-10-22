@@ -1149,8 +1149,6 @@
         href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
-      - name: "Power BI Premium release notes"
-        href: service-premium-release-notes.md
     - name: "Administration role in Office 365"
       href: service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
