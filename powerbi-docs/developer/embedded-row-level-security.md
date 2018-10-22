@@ -27,7 +27,7 @@ To take advantage of RLS, it’s important you understand three main concepts; U
 
 **Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../desktop-rls.md).
 
-**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. This could be as simple as “Country = USA” or something much more dynamic.
+**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as “Country = USA” or something much more dynamic.
 For the rest of this article, there is an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
 
 ![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
@@ -74,11 +74,11 @@ Applying the filter, the way we did here, filters down all records in the **Dist
 
 Now that you have your Power BI Desktop roles configured, there is some work needed in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can do this by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
 The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the below pieces as part of the identity.
 
-* **username (mandatory)** – This is a string that can be used to help identify the user when applying RLS rules. Only a single user can be listed. Your username can be created with *ASCII* characters.
+* **username (mandatory)** – A string that can be used to help identify the user when applying RLS rules. Only a single user can be listed. Your username can be created with *ASCII* characters.
 * **roles (mandatory)** – A string containing the roles to select when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
 * **dataset (mandatory)** – The dataset that is applicable for the artifact you are embedding.
 
@@ -137,7 +137,7 @@ Roles can be provided with the identity in an embed token. If no role is provide
 ### Using the CustomData feature
 
 The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
-You can use this as an alternative way to customize data consumption.
+You can use CUSTOMDATA() function as an alternative way to customize data consumption.
 You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
 CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
 
@@ -177,7 +177,7 @@ If you are calling the REST API, you can add custom data inside each identity, f
 
 When deciding on how to filter data in a report, you can choose from two different methods.  You can use **row-level security (RLS)** or use **JavaScript filters**.
 
-[Row-level security (RLS)](../desktop-rls.md) is a feature that filters data at the data model level. RLS is secure because it is done on the backend and is encrypted when it gets to the client level. When filtering data securely, we recommend using RLS.  With RLS, you can filter data by configuring RLS settings in a Power BI report, by configuring roles at the data source level (Azure Analysis Services live connection only), or programmatically with an embed token (`EffectiveIdentity`). When using an embed token, the actual filter passes through the embed token for a specific session.
+[Row-level security](../desktop-rls.md) is a feature that filters data at the data model level. RLS is secure because it is done on the backend and is encrypted when it gets to the client level. When filtering data securely, we recommend using RLS.  You can filter data with RLS by configuring roles in a Power BI report, by configuring roles at the data source level (Azure Analysis Services live connection only), or programmatically with an embed token using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
 Using [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) is not a security feature, it is a filter feature, so it doesn't restrict data. JavaScript filters apply filters at the client level for filtering data to users.  
 
