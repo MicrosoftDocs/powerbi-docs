@@ -1151,8 +1151,6 @@
         href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
-      - name: "Power BI Premium release notes"
-        href: service-premium-release-notes.md
     - name: "Administration role in Office 365"
       href: service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
@@ -1198,6 +1196,8 @@
     - name: "Power BI cmdlets for PowerShell"
       href: https://docs.microsoft.com/en-us/powershell/power-bi/
       maintainContext: true
+    - name: Service URL reference
+      href: power-bi-whitelist-urls.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
