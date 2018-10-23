@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 08/28/2018
+ms.date: 10/22/2018
 ms.author: maggies
 ---
 
@@ -30,7 +30,7 @@ Creating a paginated report has just one prerequisite:
   
      The **Getting Started** dialog box opens.  
   
-     ![Report Builder Getting Started](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
+     ![Report Builder Getting Started ](media/paginated-reports-tutorial-enter-data/power-bi-paginated-get-started.png)
   
 1.  In the left pane, verify that **New Report** is selected.  
   
@@ -38,7 +38,7 @@ Creating a paginated report has just one prerequisite:
   
 4.  In the **Choose a dataset** page, select **Create a dataset**, and then select **Next**.  
 
-    ![Create a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![Create a dataset](media/paginated-reports-tutorial-enter-data/power-bi-paginated-create-dataset.png)
   
 5.  In the **Choose a connection to a data source** page, select **New**. 
 
@@ -58,7 +58,7 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 2. Expand **Margins** and change Left and Right from 1in to 0.75in. 
 
-    ![Set page margins](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
+    ![Set page margins](media/paginated-reports-tutorial-enter-data/power-bi-paginated-set-margins.png)
   
 ## Make the chart bigger  
 You may want the chart to be bigger. 
@@ -81,5 +81,5 @@ Now that you've created this paginated report, it's time to upload it to the rep
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+[What is Power BI Report Server?](report-server/get-started.md)
 
