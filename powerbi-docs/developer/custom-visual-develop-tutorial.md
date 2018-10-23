@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/11/2018
+ms.date: 10/30/2018
 ---
 
 # Tutorial: Developing a Power BI Custom Visual
@@ -116,7 +116,7 @@ Now you need to install the **pbiviz** package.
 
 Now that you have set up your environment, it is time to create your custom visual.
 
-You can [download](https://github.com/uve/circlecard) the full source code for this tutorial.
+You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the full source code for this tutorial.
 
 1. In Windows PowerShell, verify that the Power BI Visual Tools package has been installed.
 

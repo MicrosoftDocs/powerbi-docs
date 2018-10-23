@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 10/30/2018
 ---
 
 # Publish custom visuals to AppSource
