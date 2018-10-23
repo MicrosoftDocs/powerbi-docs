@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use drillthrough in Power BI Desktop
-With **drillthrough** in **Power BI Desktop**, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. Users can right-click on a data point in other report pages and drill through to the focused page to get details that are filtered to that context.
+With **drillthrough** in **Power BI Desktop**, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. Users can right-click on a data point in other report pages. Then they can drill through to the focused page to get details that are filtered to that context.
 
 ![Using drillthrough](media/desktop-drillthrough/drillthrough_01.png)
 
@@ -23,11 +23,11 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 
     For example, let's say you want to provide drillthrough for manufacturers. Then you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
 
-2. Then, on that drillthrough page, in the **Fields** section of the **Visualizations** pane, drag the field for which you drillthrough into the **Drillthrough filters** well.
+2. Then, on that drillthrough page, in the **Fields** section of the **Visualizations** pane, drag the field for which you want to enable drillthrough into the **Drillthrough filters** well.
 
     ![Drillthrough well](media/desktop-drillthrough/drillthrough_02.png)
 
-    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports. The button lets users who are consuming your report in the **Power BI service** easily get back to the report page from which they came.
+    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports. Uawea who are consuming your report in the **Power BI service** can use this button to get back to the report page from which they came.
 
     ![Drillthrough image](media/desktop-drillthrough/drillthrough_03.png)
 

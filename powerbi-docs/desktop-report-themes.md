@@ -20,7 +20,7 @@ With **Report Themes** you can apply a color theme to your entire report, such a
 
 When you apply a **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report. The JSON file structure, and the process of importing are quick and easy (it's just a few button clicks).
 
-Starting with the September 2017 version of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You also have the ability to customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to give you full control over how your reports look and feel, to a granular level.
+Starting with the September 2017 version of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You can also customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to give you full control over how your reports look and feel, to a granular level.
 
 ### Enable Report themes
 Starting with the August 2018 version of **Power BI Desktop**, report theming is generally available and doesn't need to be enabled. 
@@ -70,7 +70,7 @@ That JSON file has the following required lines:
 
 * **name**: The theme name, which is the only required field.
 
-* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as you want.
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
 
 * **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. 
   - **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. 
@@ -102,7 +102,7 @@ The advantages of creating a JSON file are many. For example, you can specify th
 
 When you use a granular JSON file, you can create a theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
 
-For information about the format of the detailed JSON file, see the **Report theme JSON file format** section at the end of this article.
+For information about the format of the detailed JSON file, see the **Report theme JSON file format** section later in this article.
 
 ## How Report Theme colors stick to your reports
 When you publish your report to the **Power BI service**, your Report Theme colors stay with it.
@@ -116,7 +116,7 @@ See all that green? That's because those colors were part of the **Report Theme*
 ### Situations when Report Theme colors won't stick to your reports
 Let's say you apply a custom color set (or individual color) to a particular data point in a visual. When you apply a Report Theme, it will *not* override that customized data point color.
 
-In addition, let's say you've manually set the color of a data point color by using the Theme colors section of the color palette. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
+In addition, maybe you want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
 
 ![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
@@ -164,10 +164,10 @@ Here are a few more report themes you can use as starting points:
 The basic JSON file has five required lines:
 
 * **name** : The theme name, which is the only required field
-* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired.
-* **background**, **foreground** and **tableAccent**: These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
+* **background**, **foreground**, and **tableAccent**: These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
 
-To create an extended-format JSON file, with more detailed and granular control over formatting. You also need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
+To create an extended-format JSON file, with more detailed and granular control over formatting. You also need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following format:
 
     visualStyles: {
         visualName: {
@@ -179,7 +179,7 @@ To create an extended-format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections, you can list a specific visual and cardName. You can also use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family to use throughout the visuals in your report.
+For the **visualName** and **cardName** sections, use a specific visual and cardName. Use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can also use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family for the visuals.
 
 > [!NOTE]
 > You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.

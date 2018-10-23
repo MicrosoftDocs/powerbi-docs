@@ -21,7 +21,7 @@ To connect to an **Impala** database, select **Get Data** from the **Home** ribb
 
 ![Get Data](media/desktop-connect-impala/connect_impala_2.png)
 
-In the **Impala** window that appears, type or paste the name of your Impala server into the box, and then select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. Learn more about [using DirectQuery](desktop-use-directquery.md).
+In the **Impala** window that appears, type or paste the name of your Impala server into the box, and then select **OK**. You can **Import** data directly into Power BI or you can use **DirectQuery**. Learn more about [using DirectQuery](desktop-use-directquery.md).
 
 ![Impala window](media/desktop-connect-impala/connect_impala_3a.png)
 
@@ -34,7 +34,7 @@ When prompted, enter your credentials or connect anonymously. The Impala connect
 > 
 > 
 
-After you successfully connect, a **Navigator** window appears and displays the data that's available on the server. Then you can select one or multiple elements from this data to import and use in **Power BI Desktop**.
+After you connect, a **Navigator** window appears and displays the data that's available on the server. Then you can choose elements from this data to import and use in **Power BI Desktop**.
 
 ![Navigator window](media/desktop-connect-impala/connect_impala_5.png)
 
