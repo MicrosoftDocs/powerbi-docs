@@ -58,8 +58,6 @@ There's lots of information about Power BI APIs in the [Power BI Developer Porta
 
 Embed stunning, interactive data visualizations in applications, websites, portals, and more, to showcase your business data in context. Using [Power BI Embedded in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices.
 
-There's lots of information about Power BI Embedded in the [Power BI Developer Portal].
-
 ## What could you do with Azure and Power BI?
 
 There are all sorts of scenarios where **Azure** and **Power BI** can be combined - the possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.
