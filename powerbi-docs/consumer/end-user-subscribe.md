@@ -50,12 +50,9 @@ Whether you're subscribing to a dashboard or report, the process is very similar
    
    ![email snapshot of dashboard](./media/end-user-subscribe/power-bi-dashboard-email-new.jpg)
    
-   > [!TIP]
-   > Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard or the dataset associated with the report. (If you don't have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.) To find out which datasets are being used, select the **View related** icon ![View related icon](./media/end-user-subscribe/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![refresh icon](./media/end-user-subscribe/power-bi-refresh.png). 
-   > 
-   > 
+Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the name of the underlying dataset(s), select **View related** from the top menubar.
    
-   ![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
+![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 ## How the email schedule is determined
 The following table describes how frequently you will receive an email. It all depends on the connection method of the dataset upon which the dashboard or report is based (DirectQuery, Live connection, imported to Power BI, or Excel file in OneDrive or SharePoint Online) and on the subscription options available and selected (daily, weekly, or none).
@@ -75,6 +72,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 ## Considerations and troubleshooting
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS you will not be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription
+* Certain settings your organization may be configured in Azure Active Directory which may limit the ability to use e-mail subscriptions in Power BI.  This includes, but isn't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 * Email subscriptions do not support most [custom visuals](../power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](../power-bi-custom-visuals-certified.md).  
 * Email subscriptions do not support R-powered custom visuals at this time.  

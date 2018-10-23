@@ -58,7 +58,7 @@ If you want to buy a subscription to Power BI Pro or Power BI Premium, you will 
 
 ## Next steps
 [Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  
-[Power BI Premium - what is it?](service-premium.md)
+[What is Power BI Premium?](service-premium.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
