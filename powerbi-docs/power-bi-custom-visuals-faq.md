@@ -14,24 +14,25 @@ LocalizationGroup: Visualizations
 
 # Frequently asked questions
 
-## Organization cutom visuals
+## Organization custom visuals
 
 **How can the admin manage the organizational custom visuals?**
 
-In the Admin portal, under the "Organizational custom visuals" tab the admin can see and [manage all the organizational custom visuals in the enterprise](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#organization-visuals): add, disable, enable and delete.
-There is no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop or Service. The organizational custom visuals can be found from the built-in store (in desktop and service) under the "MY ORGANIZATION" tab. Once the admin uploaded a new organizational custom visual’s version everyone in the organization gets the same updated version. Report authors do not need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals will be automatically updated! The update mechanism is similar to the marketplace visuals.
+In the Admin portal, under the "Organizational custom visuals" tab the admin can see and [manage all the organizational custom visuals in the enterprise](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#organization-visuals): add, disable, enable, and delete.
+There is no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop or Service. The organizational custom visuals can be found from the built-in store (in desktop and service) under the "MY ORGANIZATION" tab. Once the admin uploads a new organizational custom visual’s version, everyone in the organization gets the same updated version. Report authors do not need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals are automatically updated! The update mechanism is similar to the marketplace visuals.
 
-**If the administrator uploads a custom visual from the public marketplace to the organizational store will it be automatically updated once the vendor updates the visual in the public marketplace?**
+**If an admin uploads a custom visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?**
 
 No, there is no automatic update from the public marketplace.
 It is the Admin's responsibility to update the organizational custom visuals' version if desired.
   
 **Is there a way to disable the organizational store?**
 
-No, users will always see the "MY ORGANIZATION" tab from the Power BI desktop and service. Admin can disable or delete all organizational custom visuals from the admin portal and the organizational store will simply be empty.
+No, users always see the "MY ORGANIZATION" tab from the Power BI desktop and service. Admin can disable or delete all organizational custom visuals from the admin portal and the organizational store is empty.
   
-**If the administrator disables custom visuals from the Admin portal (Tenant settings) will users still have access to the organizational custom visuals?**
-Yes, if the admin disables the custom visuals from the admin portal that will not affect the organizational store. In fact, that is one of the organizational store use-cases, some organization disable custom visuals and enables only hand-picked visuals that were imported and uploaded by the Power BI administrator to the organizational store. Note that disabling the custom visuals from the Admin portal is not enforced in Power BI Desktop. Desktop users will still be able to add and use custom visuals from the public marketplace to their reports. However, those public custom visuals will stop rendering once published to Power BI Service and will issue appropriate error. Users using Power BI Service, though, will not be able to import custom visuals from the public marketplace but only visuals from the organizational store. That is because the custom visuals setting in the admin portal is enforced in the Service.
+**If the administrator disables custom visuals from the Admin portal (Tenant settings) do users still have access to the organizational custom visuals?**
+
+Yes, if the admin disables the custom visuals from the admin portal, it doesn’t affect the organizational store. That is one of the organizational store use-cases, some organization disable custom visuals and enables only hand-picked visuals that were imported and uploaded by the Power BI administrator to the organizational store. Note that disabling the custom visuals from the Admin portal is not enforced in Power BI Desktop. Desktop users can still be able to add and use custom visuals from the public marketplace to their reports. However, those public custom visuals that stop rendering once published to the Power BI Service issue an appropriate error. Users using the Power BI Service,  are not able to import custom visuals from the public marketplace but only visuals from the organizational store. That is because the custom visuals setting in the admin portal is enforced in the Service.
 
 **Why organizational store and organizational custom visuals is a great enterprise solution?**
 
@@ -41,7 +42,7 @@ Yes, if the admin disables the custom visuals from the admin portal that will no
 
 * Security and supportability, new versions of organizational custom visuals are updated automatically in all reports similar to marketplace visuals.
 
-* Users in the organization using the organizational custom visuals needs to be logged-in to see and use the organizational custom visuals which is a security element for organization.
+* Users in the organization using the organizational custom visuals needs to be logged-in to see and use the organizational custom visuals, which are a security element for organization.
 
 * Admins can control which custom visuals to be available in the organization.
 
