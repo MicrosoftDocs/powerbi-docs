@@ -27,12 +27,12 @@ With **drillthrough** in **Power BI Desktop**, you can create a page in your rep
 
     ![Drillthrough well](media/desktop-drillthrough/drillthrough_02.png)
 
-    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports. Uawea who are consuming your report in the **Power BI service** can use this button to get back to the report page from which they came.
+    When you add a field to the **Drillthrough filters** well, **Power BI Desktop** automatically creates a *back* button visual. That visual becomes a button in published reports. Users who are consuming your report in the **Power BI service** can use this button to get back to the report page from which they came.
 
     ![Drillthrough image](media/desktop-drillthrough/drillthrough_03.png)
 
 ## Use your own image for a back button    
- Because the back button is an image, you can replace the image of that visual with any image you want. It will still operate as a back button so that report consumers can go back to their original page.
+ Because the back button is an image, you can replace the image of that visual with any image you want. It will still operate as a back button so that report consumers can go back to their original page. To use your own image for a back button, take the following steps:
 
 1. On the **Home** tab, select **Image**. Then locate your image, and place it on the drillthrough page.
 
