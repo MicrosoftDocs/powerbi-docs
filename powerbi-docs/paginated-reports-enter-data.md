@@ -8,25 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 10/22/2018
 ms.author: maggies
 ---
 
 # Enter data directly in a paginated report in Power BI Report Server
 
-In this article, you see how you can enter data directly into a paginated report in Report Builder. new version of SQL Server 2016 Report Builder contains a new feature – the ability to enter data directly into an RDL report as an embedded dataset.  This feature is similar to the one found in Power BI Desktop. Now, you can either type the data in directly into a dataset in your report, or paste it in from another program like Microsoft Excel. After you've created a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus you can add more than one table and join them in a query. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
+In this article, you see how you can enter data directly into a paginated report in Report Builder. The new version of SQL Server 2016 Report Builder contains a new feature – the ability to enter data directly into an RDL report as an embedded dataset.  This feature is similar to the one found in Power BI Desktop. Now, you can either type the data in directly into a dataset in your report, or paste it in from another program like Microsoft Excel. After you've created a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus you can add more than one table and join them in a query. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
  
 ## Prerequisite
 
-To enter data directly in a paginated report, you need to install the new version of [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
+To enter data directly in a paginated report, install the new version of [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
 
 ## Get started
 
-After you’ve downloaded and installed Report Builder, you follow the same workflow you’ve previously used to add an embedded data source and dataset to your report.  Under Data Sources, you see a new option labeled “Enter Data” to select.  You only need to set this data source up once. After that, you can create multiple tables of entered data as separate datasets using that single data source.
+After you’ve downloaded and installed Report Builder, you follow the same workflow you’ve previously used to add an embedded data source and dataset to your report. Under Data Sources, you see a new option labeled “Enter Data” to select.  You only need to set this data source up once. After that, you can create multiple tables of entered data as separate datasets using that single data source.
 
 image
 
 To begin entering data in a new table, create a new dataset in your report and hit the “Query Designer” button to start entering data into the table that appears.
+
+1. In the Report Data pane, select **New** > **Dataset**.
+2. In the **Dataset Properties** dialog box, select **Use a dataset embedded in my report**.
+3. Next to **Data source**, select **New**.
+4. In the **Data Source Properties** dialog box, select **Use a connection embedded in my report**.
+5. In the **Select connection type** box, select **ENTER DATA** > **OK**.
+6. Back in the **Dataset Properties** dialog box, select **Query Designer**.
+7. In the **Query Designer** pane, type or paste your data in the table.
 
 image
 
@@ -54,5 +62,4 @@ That’s it – you can now publish your reports that use this new functionality
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
-
+[What is Power BI Report Server?](report-server/get-started.md)
