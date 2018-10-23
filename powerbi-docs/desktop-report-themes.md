@@ -51,7 +51,7 @@ To import a custom Report Theme, select the **Switch Theme** button from the **H
 
 ![Import theme](media/desktop-report-themes/report-themes_3.png)
 
-A window appears that lets you browse to the location of the JSON theme file. Power BI Desktop looks for JSON files because JSON is the Power BI Report Theme File type. In the following image, a handful of holiday theme files are available. We'll choose a holiday theme for March.
+A window appears that lets you browse to the location of the JSON theme file. Power BI Desktop looks for JSON files because JSON is the Power BI Report Theme file type. In the following image, a handful of holiday theme files are available. We'll choose a holiday theme for March.
 
 ![Holiday theme](media/desktop-report-themes/report-themes_4.png)
 
@@ -74,7 +74,7 @@ That JSON file has the following required lines:
 
 * **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. 
   - **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. 
-  - **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style that's applied. 
+  - **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. 
   - **table** and **matrix** visuals apply these styles by default.
 
 To apply a style to a **table** or **matrix** visual, take the following steps: 
@@ -116,7 +116,7 @@ See all that green? That's because those colors were part of the **Report Theme*
 ### Situations when Report Theme colors won't stick to your reports
 Let's say you apply a custom color set (or individual color) to a particular data point in a visual. When you apply a Report Theme, it will *not* override that customized data point color.
 
-In addition, maybe you want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
+Maybe you also want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
 
 ![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
@@ -165,9 +165,9 @@ The basic JSON file has five required lines:
 
 * **name** : The theme name, which is the only required field
 * **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
-* **background**, **foreground**, and **tableAccent**: These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
+* **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
 
-To create an extended-format JSON file, with more detailed and granular control over formatting. You also need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following format:
+To create an extended-format JSON file, with more detailed and granular control over formatting, you also need to add a **visualStyles** section to the JSON file. You nest the formatting specifics in the  **visualStyles** section. The  **visualStyles** section looks similar to the following format:
 
     visualStyles: {
         visualName: {
