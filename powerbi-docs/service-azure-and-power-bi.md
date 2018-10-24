@@ -48,11 +48,13 @@ You can expand as much as you need with Azure and Power BI. Harness multi-source
 
 ![Azure Complex](media/service-azure-and-power-bi/azure_4_complex.png)
 
-## Connect your app data using Power BI APIs
+## Context insights with Power BI Embedded analytics
 
-You can use Power BI to gain insight on your existing apps, too. With the Power BI API, application developers can send entire data sets to Power BI programmatically. Need continuous updates? With the Power BI APIs, developers can send real-time data updates to get started quickly, and then grow into using Azure Stream Analytics when scale requirements merit doing so.
+Embed stunning, interactive data visualizations in applications, websites, portals, and more, to leverage your business data for creating insights and driving actions in context. Using [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices.  Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](http://dev.powerbi.com).
+
+For more information see [What can developers do with Power BI?](developer/what-can-you-do.md).
 
 ## Embed your Power BI data within your app
 
