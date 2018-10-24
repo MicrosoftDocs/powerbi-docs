@@ -9,16 +9,16 @@ The On-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for
 > [!NOTE]
 > If you selected personal mode, you configure the Windows service account separately.
 
-If you encounter issues with your proxy server, due to authentication, you may want to change the Windows service account to a domain user or managed service account. You can learn how to change the account in [proxy configuration](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
+If you encounter authentication issues with your proxy server, try changing the Windows service account to a domain user or managed service account. For more information, see [proxy configuration](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
 ## Ports
 
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports.
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 through 9354.  The gateway does not require inbound ports.
 
 It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. The gateway will communicate with Azure Service Bus using the IP address along with the fully qualified domain name (FQDN). If you are forcing the gateway to communicate using HTTPS it will strictly use FQDN only, and no communication will happen using IP addresses.
 
 > [!NOTE]
-> The IP Addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 does not mean 10.0.0.0 thru 10.0.0.24. Learn more about the [CIDR notation](http://whatismyipaddress.com/cidr).
+> The IP Addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 does not mean 10.0.0.0 through 10.0.0.24. Learn more about the [CIDR notation](http://whatismyipaddress.com/cidr).
 
 Here is a listing of the fully qualified domain names used by the gateway.
 
@@ -49,9 +49,9 @@ You can force the gateway to communicate with Azure Service Bus using HTTPS inst
 </setting>
 ```
 
-The value for the *ServiceBusSystemConnectivityModeString* parameter is case sensitive. Valid values are *AutoDetect* and *Https*.
+The value for the *ServiceBusSystemConnectivityModeString* parameter is case-sensitive. Valid values are *AutoDetect* and *Https*.
 
-Alternatively, you can force the gateway to adopt this behavior using the gateway user interface, beginning with the [March 2017](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/) release. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
+Alternatively, you can force the gateway to adopt this behavior using the gateway user interface. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 
@@ -63,9 +63,9 @@ For future reference, you can restart the *gateway Windows service* from the use
 
 ## Support for TLS 1.1/1.2
 
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. On March 15th 2018, support for TLS 1.0 will end, including the gateway's ability to interact with the **Power BI service** using TLS 1.0, so by then you must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+The On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway used TLS 1.0 by default. On March 15th 2018, support for TLS 1.0 will ended, including the gateway's ability to interact with the **Power BI service** using TLS 1.0. You must upgrade your On-premises data gateway installations to ensure your gateways continue to operate.
 
-It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1st, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
+It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
@@ -75,7 +75,7 @@ It's important to note that TLS 1.0 is still supported by the On-premises data g
 
 ## How to restart the gateway
 
-The gateway runs as a windows service. You can start and stop it like any windows service. There are multiple ways to do this. Here is how you can do it from the command prompt.
+The gateway runs as a windows service. You can start and stop it like any windows service. Here is how you can do it from the command prompt.
 
 1. On the machine where the gateway is running, launch an admin command prompt.
 2. Use the following command to stop the service.
