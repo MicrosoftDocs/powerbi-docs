@@ -8,7 +8,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -91,7 +91,6 @@ Access to the Zuora API is required.
 Provide the URL you typically sign into to access your Zuora data. The valid options are:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
 * The URL corresponding to your serivce instance  
 
 ## Troubleshooting

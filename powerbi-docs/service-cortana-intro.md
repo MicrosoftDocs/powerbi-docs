@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2018
+ms.date: 10/24/2018
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
@@ -25,7 +25,7 @@ For a while now you've been able to [use Cortana to retrieve certain types of re
 > 
 > 
 
-The underlying technology is using [Microsoft's Azure Search Service](). This search service provides extra capabilities such as smart ranking, error correction, and auto complete.
+The underlying technology is using [Microsoft Azure Search Service](https://docs.microsoft.com/azure/search/). This search service provides extra capabilities such as smart ranking, error correction, and auto complete.
 
 Both Cortana experiences will exist side-by-side.
 
