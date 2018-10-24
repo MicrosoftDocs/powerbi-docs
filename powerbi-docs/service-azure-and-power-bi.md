@@ -14,7 +14,7 @@ LocalizationGroup: Data from databases
 
 # Azure and Power BI
 
-With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premises, straightforward or complex, single-sourced or massively scaled, warehoused or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
+With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premises, straightforward, or complex, single-sourced or massively scaled, warehoused, or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
 
 ![Azure](media/service-azure-and-power-bi/azure_1.png)
 
@@ -50,11 +50,11 @@ You can expand as much as you need with Azure and Power BI. Harness multi-source
 
 ## Context insights with Power BI Embedded analytics
 
-Embed stunning, interactive data visualizations in applications, websites, portals, and more, to leverage your business data for creating insights and driving actions in context. Using [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices.  Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
+Embed stunning, interactive data visualizations in applications, websites, portals, and more, to take advantage of your business data. With [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices.  Power BI used with embedding analytics is to help you through your journey from Data -> Knowledge -> Insights -> Actions.  Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](http://dev.powerbi.com).
 
-For more information see [What can developers do with Power BI?](developer/what-can-you-do.md).
+For more information, see [What can developers do with Power BI?](developer/what-can-you-do.md).
 
 ## Embed your Power BI data within your app
 
