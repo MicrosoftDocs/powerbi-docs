@@ -112,9 +112,10 @@ Rather than go into troubleshooting gateway issues here, we’ve put a series of
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## Next steps
-[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
-[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)
-[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)
+
+[Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
