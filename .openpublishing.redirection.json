@@ -1,11 +1,6 @@
 {
     "redirections": [
         {
-            "source_path": "powerbi-docs/power-bi-whitelist-urls.md",
-            "redirect_url": "/power-bi/service-admin-administering-power-bi-in-your-organization",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/refresh-enable-fast-combine.md",
             "redirect_url": "/power-bi/service-gateway-personal-mode",
             "redirect_document_id": false
@@ -669,6 +664,11 @@
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
             "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-release-notes.md",
+            "redirect_url": "/power-bi/service-whats-new",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md",
