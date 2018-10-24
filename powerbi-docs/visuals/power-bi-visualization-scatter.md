@@ -14,14 +14,14 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Scatter charts and bubble charts in Power BI
+# Scatter charts, bubble charts, and dot plot charts in Power BI
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
 A bubble chart replaces data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
 ![sample bubble chart](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
-A dot plot chart is similar to a bubble chart except that you can plot numerical or categorical data along the X axis. 
+A dot plot chart is similar to a bubble chart and scatter chart except that you can plot numerical or categorical data along the X axis. 
 
 ![sample bubble chart](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -41,6 +41,9 @@ You can set the number of data points, up to a maximum of 10,000.
 * if your data has 3 data series that each contain a set of values.
 * to present financial data.  Different bubble sizes are useful to visually emphasize specific values.
 * to use with quadrants.
+
+### Dot plot charts are a great choice in place of a scatter or bubble:
+* if you want to include categorical data along the X axis
 
 ## Create a scatter chart
 Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
