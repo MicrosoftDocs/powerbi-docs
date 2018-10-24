@@ -793,7 +793,7 @@
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
-      - name: "Integrate content into your application for sovereign clouds"
+      - name: "Embed content for sovereign clouds"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
       items: 
