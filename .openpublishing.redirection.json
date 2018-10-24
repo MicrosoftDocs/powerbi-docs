@@ -81,6 +81,11 @@
             "redirect_document_id": false
         }, 
         {
+            "source_path": "powerbi-docs/service-connect-to-project-madeira.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "powerbi-docs/service-custom-visuals-review-for-security-and-privacy.md", 
             "redirect_url": "/power-bi/power-bi-custom-visuals",
             "redirect_document_id": true
