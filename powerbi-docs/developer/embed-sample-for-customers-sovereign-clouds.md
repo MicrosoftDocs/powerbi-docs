@@ -12,7 +12,7 @@ ms.date: 10/25/2018
 
 # Tutorial: Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 
-Learn how to integrate a dashboard, tile, or report, into your web applications using the Power BI .NET SDK along with the Power BI JavaScript API when embedding data for your customers.
+Learn how to embed a dashboard, tile, or report, into your web applications using the Power BI .NET SDK along with the Power BI JavaScript API when integrating data for your customers.
 
 Power BI also supports sovereign (private) clouds.
 
