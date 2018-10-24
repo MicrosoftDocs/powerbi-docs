@@ -49,7 +49,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 

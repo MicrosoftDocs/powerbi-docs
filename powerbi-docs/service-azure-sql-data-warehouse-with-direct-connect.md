@@ -84,6 +84,6 @@ Your fully qualified server name and database name can be found in the Azure Pre
 ## Next steps
 [What is Power BI?](power-bi-overview.md)  
 [Get Data for Power BI](service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
+[Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
