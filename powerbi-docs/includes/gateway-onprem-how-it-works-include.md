@@ -5,8 +5,6 @@ Let’s first look at what happens when a user interacts with an element connect
 
 > [!NOTE]
 > For Power BI, you will need to configure a data source for the gateway.
-> 
-> 
 
 1. A query will be created by the cloud service, along with the encrypted credentials for the on-premises data source, and sent to the queue for the gateway to process.
 2. The gateway cloud service will analyze the query and will push the request to the [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/).
