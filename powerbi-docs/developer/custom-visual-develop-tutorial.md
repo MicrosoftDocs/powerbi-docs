@@ -11,7 +11,7 @@ ms.topic: tutorial
 ms.date: 10/25/2018
 ---
 
-# Tutorial: Developing a Power BI Custom Visual
+# Tutorial: Developing a Power BI custom visual
 
 We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
 
@@ -35,11 +35,11 @@ In this tutorial, you learn how to:
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
 
-## Setting Up the developer environment
+## Setting up the developer environment
 
 In addition to the prerequisites, there are a few more tools you need to install.
 
-### Installing Node.js
+### Installing node.js
 
 1. To install Node.js, in a web browser, navigate to [Node.js](https://nodejs.org).
 
@@ -59,17 +59,17 @@ Now you need to install the **pbiviz** package.
 
 2. To install pbiviz, enter the following command.
 
-   ```powershell
-   npm i -g powerbi-visuals-tools
-   ```
+    ```powershell
+    npm i -g powerbi-visuals-tools
+    ```
 
 ### Creating and installing a certificate
 
 1. To create a certificate, enter the following command.
 
-  ```powershell
-  pbiviz --create-cert
-  ```
+    ```powershell
+    pbiviz --create-cert
+    ```
 
   It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
 
@@ -77,9 +77,9 @@ Now you need to install the **pbiviz** package.
 
 2. Now we need to install the certificate. to install the certificate, enter the following command.
 
-  ```powershell
-  pbiviz --install-cert
-  ```
+    ```powershell
+    pbiviz --install-cert
+    ```
 
 3. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
 
@@ -123,10 +123,10 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
     ```powershell
     pbiviz
     ```
-  You should see the help output.
+    You should see the help output.
 
-   <pre><code>
-         +syyso+/
+    <pre><code>
+        +syyso+/
     oms/+osyhdhyso/
     ym/       /+oshddhys+/
     ym/              /+oyhddhyo+/
@@ -134,18 +134,18 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
     ym/                           sm+
     ym/               yddy        om+
     ym/         shho /mmmm/       om+
-     /    oys/ +mmmm /mmmm/       om+
+        /    oys/ +mmmm /mmmm/       om+
     oso  ommmh +mmmm /mmmm/       om+
-   ymmmy smmmh +mmmm /mmmm/       om+
-   ymmmy smmmh +mmmm /mmmm/       om+
-   ymmmy smmmh +mmmm /mmmm/       om+
-   +dmd+ smmmh +mmmm /mmmm/       om+
-         /hmdo +mmmm /mmmm/ /so+//ym/
-               /dmmh /mmmm/ /osyhhy/
-                 //   dmmd
-                       ++
+    ymmmy smmmh +mmmm /mmmm/       om+
+    ymmmy smmmh +mmmm /mmmm/       om+
+    ymmmy smmmh +mmmm /mmmm/       om+
+    +dmd+ smmmh +mmmm /mmmm/       om+
+            /hmdo +mmmm /mmmm/ /so+//ym/
+                /dmmh /mmmm/ /osyhhy/
+                    //   dmmd
+                        ++
 
-       PowerBI Custom Visual Tool
+        PowerBI Custom Visual Tool
 
     Usage: pbiviz [options] [command]
 
@@ -165,7 +165,7 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name="ssl-setup"></a>
+    <a name="ssl-setup"></a>
 
 2. Review the output, including the list of supported commands.
 
