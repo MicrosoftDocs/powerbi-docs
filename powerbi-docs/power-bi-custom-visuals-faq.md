@@ -32,11 +32,11 @@ No, users always see the "MY ORGANIZATION" tab from the Power BI desktop and ser
   
 **If the administrator disables custom visuals from the Admin portal (Tenant settings) do users still have access to the organizational custom visuals?**
 
-Yes, if the admin disables the custom visuals from the admin portal, it doesn’t affect the organizational store. That is one of the organizational store use-cases, some organization disable custom visuals and enables only hand-picked visuals that were imported and uploaded by the Power BI administrator to the organizational store. Note that disabling the custom visuals from the Admin portal is not enforced in Power BI Desktop. Desktop users can still be able to add and use custom visuals from the public marketplace to their reports. However, those public custom visuals that stop rendering once published to the Power BI Service issue an appropriate error. Users using the Power BI Service,  are not able to import custom visuals from the public marketplace but only visuals from the organizational store. That is because the custom visuals setting in the admin portal is enforced in the Service.
+Yes, if the admin disables the custom visuals from the admin portal, it doesn’t affect the organizational store. Some organizations disable custom visuals and enable only hand-picked visuals that were imported and uploaded by the Power BI administrator to the organizational store. Disabling the custom visuals from the Admin portal is not enforced in Power BI Desktop. Desktop users can still be able to add and use custom visuals from the public marketplace in their reports. However, those public custom visuals stop rendering once published to the Power BI Service and issue an appropriate error. When using the Power BI service,  you are not able to import custom visuals from the public marketplace. Only visuals from the organizational store can be imported because the custom visuals setting in the admin portal is enforced in the Power BI service.
 
 **Why organizational store and organizational custom visuals is a great enterprise solution?**
 
-* Everyone gets the same visual version which is controlled by the Power BI administrator. Once the admin updates the visual's version in the admin portal, all the users in the organization get the updated version automatically.
+* Everyone gets the same visual version, which is controlled by the Power BI administrator. Once the admin updates the visual's version in the admin portal, all the users in the organization get the updated version automatically.
 
 * No need to share visual files by email or shared folders anymore! One place, visible to all members who are logged-in.
 
