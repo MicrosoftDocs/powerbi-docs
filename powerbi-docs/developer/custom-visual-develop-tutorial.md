@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 10/26/2018
 ---
 
 # Tutorial: Developing a Power BI custom visual
