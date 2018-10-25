@@ -158,7 +158,7 @@ Users can see different options in the UI based on what the publish to web setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. [Learn more](consumer/end-user-export-data.md)
+Users in the organization can export data from a tile or visualization. [Learn more](visuals/power-bi-visualization-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
@@ -202,7 +202,7 @@ You can switch the setting to **Enabled** and then specify who gets this capabil
 > [!NOTE]
 > Remember that tenant setting changes can take some time to take effect.
 
-Go here to learn more about [Push apps](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
+Go here to learn more about [Push apps](service-create-distribute-apps.md).
 
 ## Integration settings
 

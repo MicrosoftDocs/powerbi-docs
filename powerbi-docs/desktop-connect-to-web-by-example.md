@@ -1,5 +1,5 @@
 ---
-title: Extract data from a Web page by example in Power BI Desktop (Preview)
+title: Extract data from a Web page by example in Power BI Desktop
 description: Extract data from a Web page by providing an example of what you want to pull
 author: davidiseminger
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/23/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Get data from a Web page by providing an example (Preview)
+# Get data from a Web page by providing an example
 
 Getting data from a web page lets users easily extract data from web pages, and import that data into **Power BI Desktop**. Often however, data on Web pages aren't in tidy tables that are easy to extract, so getting data from such pages - even if it's structured and consistent -  can be challenging. 
 
@@ -22,13 +22,6 @@ There is a solution. With the **Get Data from Web by example** feature, you can 
 ![Get data from web by example](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## Enabling the preview feature Get Data from Web by example
-
-The **Get Data from Web by example** is in Preview, and must be enabled in **Power BI Desktop**. To enable it, select **File > Options and Settings > Options > Preview Features**, then select the **New from Web experience** checkbox. You'll need to restart Power BI Desktop after you make the selection.
-
-![enable the preview feature](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Once the preview feature is enabled you're ready to start using it. 
 
 ## Using Get Data from Web by example
 
@@ -54,6 +47,8 @@ Selecting the **Extract table using examples** presents an interactive window wh
 In this example, we'll extract the *Name* and *Price* for each of the games on the page. We can do that by specifying a couple of examples from the page for each column, as shown in the following image. As those examples are typed in, **Power Query** (which is the underlying technology that extracts the data from the Web page) is able to extract data that fits the pattern of example entries using smart data extraction algorithms.
 
 ![data by example](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+
+> Note: Value suggestions only include values less than or equal to 128 characters in length.
 
 Once we're happy with the data extracted from the Web page, we select **OK** to go to **Query Editor**, where we can apply more transformations or shape the data, such as combining this data with other data our sources.
 

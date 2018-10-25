@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -188,9 +188,9 @@ Next, we define the aggregation mappings in the **Manage aggregations** dialog. 
 
 ![Manage aggregations dialog for the Driver Activity Agg table](media/desktop-aggregations/aggregations_11.jpg)
 
-The following table shows the aggregations for the **Sales Agg** table.
+The following table shows the aggregations for the **Driver Activity Agg** table.
 
-![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_02.jpg)
+![Driver Activity Agg aggregations table](media/desktop-aggregations/aggregations-table_02.jpg)
 
 ### Group by columns
 
@@ -226,9 +226,9 @@ The table specified in the **Detail Table** column is **Driver Activity**, not *
 
 ![Manage aggregations dialog](media/desktop-aggregations/aggregations_14.jpg)
 
-The following table shows the aggregations for the **Sales Agg** table.
+The following table shows the aggregations for the **Driver Activity Agg2** table.
 
-![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
+![Driver Activity Agg2 aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
 
 ## Aggregations based on group-by columns combined with relationships
 
