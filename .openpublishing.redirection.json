@@ -62,8 +62,8 @@
         },
         {
             "source_path": "powerbi-docs/quickstart-install-report-server.md", 
-            "redirect_url": "/power-bi/install-report-server",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/report-server/install-report-server",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md", 
@@ -77,6 +77,11 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-security-center.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-project-madeira.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
         }, 
@@ -97,7 +102,7 @@
         },
         {
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md", 
-            "redirect_url": "/power-bi/mobile-windows-10-phone-app-get-started",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
             "redirect_document_id": true
         },
         {
@@ -557,8 +562,8 @@
         },
         {
             "source_path": "powerbi-docs/service-navigation-search-filter-sort.md",
-            "redirect_url": "/power-bi/consumer/end-user-search-filter-sort",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-search-sort",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/end-user-search-filter-sort.md",
