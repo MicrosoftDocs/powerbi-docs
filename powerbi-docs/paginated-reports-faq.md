@@ -34,7 +34,7 @@ User access for paginated reports is the same as user access for all other conte
 
 ### How do I turn on/off my paginated reports workload?
 
-The capacity admin can enable or disable this in the capacity admin portal page.  
+The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  
 
 ### How can I monitor usage of paginated reports in my tenant?
 
@@ -81,7 +81,7 @@ Default memory in each Premium SKU for paginated reports:
 
 ### When should I use a paginated report vs. a Power BI report?
 
-Paginated reports are best for scenarios that require a highly-formatted, pixel-perfect output optimized for printing or PDF generation.  A profit and loss statement is a good example of the type of report you would probably want to create as a paginated report.  
+Paginated reports are best for scenarios that require a highly formatted, pixel-perfect output optimized for printing or PDF generation.  A profit and loss statement is a good example of the type of report you would probably want to create as a paginated report.  
 
 Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
@@ -91,11 +91,11 @@ Yes, but the Power BI service only allows you to upload a single item at a time,
 
 ### What version(s) of Report Builder do you support?
 
-Use the latest version of SQL Server 2016 Report Builder to author and publish your reports to the Power BI service. Install [Report Builder from the Microsoft Download Center](www.microsoft.com/download/details.aspx?id=53613).
+Use the latest version of SQL Server 2016 Report Builder to author and publish your reports to the Power BI service. Install [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
-You need to download the report from the server, than upload it to Power BI through the portal.  There is no migration tool available at this time, but we’re looking at creating one after we’ve finished public preview and gotten the right level of feature parity between the products.
+You need to download the report from the server, then upload it to Power BI through the portal.  There is no migration tool available at this time, but we’re looking at creating one after we’ve finished public preview and gotten the right level of feature parity between the products.
 
 ### Can I open reports and publish directly to the service?
 
@@ -133,7 +133,7 @@ Currently you need to store a user name and password with the data source in the
 
 Not yet, but this support is planned soon.
 
-### Can I use stored procedures throught the Gateway?
+### Can I use stored procedures through the Gateway?
 
 You can use a store procedure through the Gateway, but not if the stored procedure has parameters.
 
@@ -163,7 +163,7 @@ Not at all.  This new offering offers customers a cloud-based option for their p
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-We plan to support this scenario with the existing Power BI APIs, but we don’t yet have a timeframe on when this would be available.
+We plan to support this scenario with the existing Power BI APIs, but we don’t yet have a timeframe on when this scenario will be available.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -175,7 +175,7 @@ Currently you can share individual paginated reports with other users through th
 
 ### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
 
-We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from an consumer perspective it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
+We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from a consumer perspective it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this feature parity is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
 
 ### Are you planning to create a new authoring tool for paginated reports in the Power BI service?  We can’t do everything we need to with Report Builder today.
 
@@ -199,7 +199,5 @@ No, you can't currently search for your paginated reports from Home.  You do see
 
 ## Next steps
 
-- [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
+- [Install Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
-  
-
