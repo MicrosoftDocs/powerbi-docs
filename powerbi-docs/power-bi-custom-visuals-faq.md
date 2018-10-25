@@ -14,18 +14,16 @@ LocalizationGroup: Visualizations
 
 # Frequently asked questions about Power BI custom visuals
 
-## Organization custom visuals
-
 **How can the admin manage the organizational custom visuals?**
 
-In the Admin portal, under the "Organizational custom visuals" tab the admin can see and [manage all the organizational custom visuals in the enterprise](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#organization-visuals): add, disable, enable, and delete.
+In the Admin portal, under the "Organizational custom visuals" tab the admin can see and [manage all the organizational custom visuals in the enterprise](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): add, disable, enable, and delete.
 There is no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop or Service. The organizational custom visuals can be found from the built-in store (in desktop and service) under the "MY ORGANIZATION" tab. Once the admin uploads a new organizational custom visual’s version, everyone in the organization gets the same updated version. Report authors do not need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals are automatically updated! The update mechanism is similar to the marketplace visuals.
 
 **If an admin uploads a custom visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?**
 
 No, there is no automatic update from the public marketplace.
 It is the Admin's responsibility to update the organizational custom visuals' version if desired.
-  
+
 **Is there a way to disable the organizational store?**
 
 No, users always see the "MY ORGANIZATION" tab from the Power BI desktop and service. Admin can disable or delete all organizational custom visuals from the admin portal and the organizational store is empty.
