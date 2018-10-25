@@ -137,7 +137,7 @@ Your matrix or table may have content that you'd like to use in other applicatio
 
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
 
-![copy options](media/desktop-matrix-visual/power-bi-copy.png)
+    ![copy options](media/desktop-matrix-visual/power-bi-copy.png)
 
 * To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
 

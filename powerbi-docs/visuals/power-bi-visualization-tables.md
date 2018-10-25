@@ -16,6 +16,7 @@ LocalizationGroup: Visualizations
 ---
 # Tables in Power BI reports and dashboards
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
+
 ![](media/power-bi-visualization-tables/table.png)
 
 Create tables  in reports and cross-highlight elements within the table with other visuals on the same report page.  In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications.
@@ -117,6 +118,7 @@ Your table or matrix may have content that you'd like to use in other applicatio
     ![copy options](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
 * To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
+
     ![copy options](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
     The copy includes the column and row headers.
