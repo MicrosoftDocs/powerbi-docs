@@ -1,6 +1,6 @@
 ---
 title: Adding formatting options to a Power BI custom visual
-description: Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI.
+description: A tutorial on how to develop Power BI custom visual format options 
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 10/26/2018
 ---
 
 # Tutorial: Adding formatting options to a Power BI custom visual
