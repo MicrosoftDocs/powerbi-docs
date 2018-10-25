@@ -42,9 +42,9 @@ You can use a live connection against tabular or multidimensional instances.
 
 ## Download and install the On-premises data gateway
 
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925). 
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Note that updating the On-premises data gateway is achieved by reinstalling the gateway, as described in this section. When updating the gateway (by reinstalling), your existing gateways settings are retained.
+Note that you update the On-premises data gateway by installing the gateway again, as described in this section. As long as you install a newer version of the gateway, your existing settings are retained. If you install the same version, it treats this as a complete reinstall, and your settings are not retained.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
