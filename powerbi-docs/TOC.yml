@@ -881,6 +881,8 @@
         href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
     - name: Concepts
       items:
+      - name: "FAQ"
+        href: developer/power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
