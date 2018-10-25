@@ -882,7 +882,7 @@
     - name: Concepts
       items:
       - name: "FAQ"
-        href: power-bi-custom-visuals-faq.md
+        href: power-bi-custom-visuals-faq.md 
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
