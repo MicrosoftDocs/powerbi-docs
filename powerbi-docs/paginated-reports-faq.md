@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 10/04/2018
+ms.date: 10/24/2018
 ms.author: maggies
 
 ---
@@ -89,6 +89,10 @@ Power BI reports are optimized for exploration and interactivity.  A sales repor
 
 Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren’t yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) available later in this FAQ.  
 
+### What version(s) of Report Builder do you support?
+
+Use the latest version of SQL Server 2016 Report Builder to author and publish your reports to the Power BI service. Install [Report Builder from the Microsoft Download Center](www.microsoft.com/download/details.aspx?id=53613).
+
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
 You need to download the report from the server, than upload it to Power BI through the portal.  There is no migration tool available at this time, but we’re looking at creating one after we’ve finished public preview and gotten the right level of feature parity between the products.
@@ -96,18 +100,6 @@ You need to download the report from the server, than upload it to Power BI thro
 ### Can I open reports and publish directly to the service?
 
 At this point, no. We'll add support for opening reports and publishing them directly to the service from Report Builder at some point, like you can with Power BI Desktop.
-
-### What data sources do you support currently for paginated reports?
-
-We support Azure SQL Database, and SQL Server and SQL Server Analysis Services using the on-premises Gateway.
-
-### What authentication methods do you support?
-
-You need to store a user name and password with the data source currently in the portal or gateway.  Additional authentication methods to support things like row-level security are coming later in the preview.
-
-### What version(s) of Report Builder do you support?
-
-Use the latest version of SQL Server 2016 Report Builder to author and publish your reports to the Power BI service. Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968).
 
 ### What paginated report features in SSRS aren’t yet supported in Power BI?
 
@@ -127,9 +119,23 @@ Toggle and interactive sort aren't yet in production, but are expected soon.
 
 You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.
 
+### What data sources do you support currently for paginated reports?
+
+We support Azure SQL Database, and SQL Server and SQL Server Analysis Services (SSAS) tabular models using the on-premises Gateway. We don’t currently support SSAS multidimensional (MDX) models.
+
+When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
+
+### What authentication methods do you support?
+
+Currently you need to store a user name and password with the data source in the portal or gateway.  Additional authentication methods to support things like row-level security are coming later in the preview.
+
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
 Not yet, but this support is planned soon.
+
+### Can I use stored procedures throught the Gateway?
+
+You can use a store procedure through the Gateway, but not if the stored procedure has parameters.
 
 ### What export formats are available for my report in the Power BI service?
 
