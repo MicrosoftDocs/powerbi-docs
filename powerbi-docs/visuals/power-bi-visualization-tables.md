@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -18,6 +18,8 @@ LocalizationGroup: Visualizations
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
 
 ![](media/power-bi-visualization-tables/table.png)
+
+Create tables  in reports and cross-highlight elements within the table with other visuals on the same report page.  In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications.
 
 ## When to use a table
 Tables are a great choice:
@@ -104,9 +106,24 @@ With conditional formatting for tables, you can specify customized cell backgrou
 6. To remove conditional formatting from a visualization, just right-click the field again, and select **Remove Conditional Formatting**.
 
 > [!TIP]
-> Conditional formatting is also available from the Formatting pane (paintroller icon). Select the value to format and then set **Color scales** or **Data bars** to On to apply the default settings or, to customize the settings, select **Advanced controls**.
+> Conditional formatting is also available from the Formatting pane (paintroller icon). Select the value to format and then set **Color scales** or **Data bars** to **On** to apply the default settings or, to customize the settings, select **Advanced controls**.
 > 
-> 
+## Copy values from Power BI tables for use in other applications
+
+Your table or matrix may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard, and paste into the other application.
+
+
+* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
+
+    ![copy options](media/power-bi-visualization-tables/power-bi-copy-value.png)
+
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
+
+    ![copy options](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+
+    The copy includes the column and row headers.
+
+    ![paste into Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## Adjust the column width of a table
 Sometimes Power BI will truncate a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.

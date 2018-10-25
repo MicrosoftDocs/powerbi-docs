@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/01/2018
+ms.date: 10/20/2018
 ---
 
 # Embed with report web part in SharePoint Online
@@ -37,41 +37,38 @@ In order to embed your report into SharePoint Online, you first need to get the 
 2. Select the **File** menu item.
 
 3. Select **Embed in SharePoint Online**.
-   
-    ![](media/service-embed-report-spo/powerbi-file-menu.png)
+
+    ![File menu](media/service-embed-report-spo/powerbi-file-menu.png)
 
 4. Copy URL from dialog.
 
-    ![](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
-
-   > [!NOTE]
-   > You can also use the URL that is displayed in your web browser's address bar when viewing a report. That URL contains the report page you are currently viewing. You need to remove the report section, from the URL, if you want to use a different page.
+    ![Embed link](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### Add the Power BI report to a SharePoint Online page
 
 1. Open the desired page in SharePoint Online and select **Edit**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
+    ![SP edits page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
     Or, create a new modern site page by selecting **+ New** within SharePoint Online.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
+    ![SP new page](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
 2. Select **+** and select the **Power BI** web part.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
+    ![SP new web part](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
 3. Select **Add report**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
+    ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Past the report URL into the property pane. This is the URL you copied from the steps above. The report loads automatically.
+4. Past the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
+    ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
 5. Select **Publish** to make the change visible to your SharePoint Online users.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
+    ![SP report loaded](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
 ## Granting access to reports
 
@@ -82,24 +79,12 @@ Embedding a report in SharePoint Online does not automatically give users permis
 
 There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
 
-Alternatively, you can grant users access to your report by following the steps below.
+Alternatively, you can share a report directly with users by embedding the report within an app. The app must be preinstalled for the report to embed. You can set up the app to be preinstalled by using the **Install app automatically** feature.
 
-1. Add a tile from the report to a dashboard.
+   ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
 
-2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](service-share-dashboards.md).
-
-## Web part settings
-
-Below is a description of the settings that can be adjusted for the Power BI web part for SharePoint Online.
-
-![](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
-
-| Property | Description |
-| --- | --- |
-| Page name |Sets the default page that is shown by the web part. Select a value from the drop-down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
-| Display |Option to adjust how the report is fit within the SharePoint Online page. |
-| Show Navigation Pane |Shows or hides the page navigation pane. |
-| Show Filter Pane |Shows or hides the filter pane. |
+> [!NOTE]
+> **The user needs access to both the SharePoint page and the report to see the report on the SharePoint page.**
 
 ## Multi-factor authentication
 
@@ -108,13 +93,26 @@ If your Power BI environment requires you to sign in using multi-factor authenti
 > [!NOTE]
 > Multi-factor authentication is not yet supported with Azure Active Directory 2.0. Users receive a message saying *error*. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
+## Web part settings
+
+Below is a description of the settings that can be adjusted for the Power BI web part for SharePoint Online.
+
+![SP web part properties](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
+
+| Property | Description |
+| --- | --- |
+| Page name |Sets the default page that is shown by the web part. Select a value from the drop-down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
+| Display |Option to adjust how the report is fit within the SharePoint Online page. |
+| Show Navigation Pane |Shows or hides the page navigation pane. |
+| Show Filter Pane |Shows or hides the filter pane. |
+
 ## Reports that do not load
 
 Your report may not load within the Power BI web part and may show the following message.
 
 *This content isn't available.*
 
-![](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Report not found message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 There are two common reasons for this message.
 
@@ -123,13 +121,17 @@ There are two common reasons for this message.
 
 Contact the owner of the SharePoint Online page to help you resolve the issue.
 
+## Licensing
+
+Users viewing a report in SharePoint need either a **Power BI Pro license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](service-admin-premium-purchase.md)**.
+
 ## Known issues and limitations
 
-* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
+* Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
-  If you receive this error, please try one of the following.
+  If you receive this error, try one of the troubleshooting steps below.
   
-  1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
+  1. Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
   2. If your user account requires multi-factor authentication (MFA), ensure you sign in to SharePoint using your multi-factor authentication device (phone app, smart card, etc.)
   

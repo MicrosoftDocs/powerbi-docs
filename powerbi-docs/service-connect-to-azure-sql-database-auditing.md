@@ -14,7 +14,7 @@ ms.author: sarinas
 LocalizationGroup: Connect to services
 ---
 # SQL Database Auditing content pack for Power BI
-The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
+The Power BI content pack for Azure [SQL Database Auditing](/azure/sql-database/sql-database-auditing/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
 
 Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getdata/services/sql-db-auditing) for Power BI.
 

@@ -4,7 +4,7 @@ description: Get an overview of Power BI Report Server to understand how it fits
 keywords: 
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 10/24/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
@@ -64,7 +64,7 @@ More [Report Server developer documentation](https://docs.microsoft.com/sql/repo
 
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
-[Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
