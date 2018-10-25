@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/30/2018
+ms.date: 10/26/2018
 ---
 
 # Tutorial: Adding formatting options to a Power BI custom visual
@@ -249,7 +249,4 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
 8. Hover over the **Circle Card** icon, and notice the tooltip that appears.
 
-## Next Steps
-
-> [!div class="nextstepaction"]
-> [Publish custom visuals to AppSource](office-store.md)
+If you would like to learn more about how to publish your newly developed custom visual to be consumed by others, please reference [Publish custom visuals to AppSource](office-store.md).
