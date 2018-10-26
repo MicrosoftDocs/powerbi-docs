@@ -225,7 +225,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
 Now the package is output to the **dist** folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
 
-## Importing the custom visual to Power BI Desktop
+## Importing the custom visual
 
 Now you can open the Power BI Desktop report, and import the Circle Card custom visual.
 
