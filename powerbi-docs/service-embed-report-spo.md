@@ -77,13 +77,13 @@ Embedding a report in SharePoint Online does not automatically give users permis
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. This makes sure that users can view the contents of that group. For more information, see how to [manage an app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. For more information, see how to [manage an app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Alternatively, you can share a report directly with users by embedding the report within an app. There are a few steps to follow for embedding a report within an app.  
 
 1. The author of the app is a Pro user.
 
-2. The author creates a report in an app workspace, where the app workspace needs to be set as a Premium workspace.
+2. The author creates a report in an app workspace. *To share with **Power BI free users**, the app workspace needs to be set as a **Premium workspace**.*
 
 3. The author publishes the app then installs it.
 
@@ -93,18 +93,18 @@ Alternatively, you can share a report directly with users by embedding the repor
 
 5. The author opens the app and goes to the report.
 
-6. The author copies the embed report URL from the app. *Do Not use the report URL from the app workspace*.
+6. The author copies the embed report URL from the report installed by the app. *Do Not use the original report URL from the app workspace.*
 
 7. Create a new team site in SharePoint Online.
 
 8. Add the report URL copied from step 6 to the Power BI web part.
 
-9. Add all end users who are going to consume the data to the SharePoint Online page you created.
+9. Add all end users and/or groups who are going to consume the data on the SharePoint Online page and in the Power BI App you created.
+
+    > [!NOTE]
+    > **Users or groups need access to both the SharePoint Online page and the report in the Power BI app to see the report on the SharePoint page.**
 
 10. Now the end user can go to the team site in SharePoint Online and view the reports on the page.
-
-> [!NOTE]
-> **The user needs access to both the SharePoint page and the report to see the report on the SharePoint page.**
 
 ## Multi-factor authentication
 
