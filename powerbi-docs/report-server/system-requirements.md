@@ -1,6 +1,6 @@
 ---
 title: Hardware and software requirements for installing Power BI Report Server
-description: Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
+description: Here are the minimum hardware and software requirements to install and run Power BI Report Server.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
@@ -13,7 +13,7 @@ ms.author: maghan
 
 ---
 # Hardware and software requirements for installing Power BI Report Server
-Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
+Here are the minimum hardware and software requirements to install and run Power BI Report Server.
 
 ## Processor, Memory, and Operating System Requirements
 
@@ -45,6 +45,7 @@ Creating the report server database on a remote computer requires that you confi
 Power BI Report Server will install default values to configure the core settings required to make a report server operational. It has the following requirements:
 
 * A SQL Server Database Engine must be available after setup and before you configure the database for the report server. The Database Engine instance hosts the report server database that Reporting Services Configuration Manager will create. The Database Engine is not required for the actual setup experience.
+- See [Reporting Services Features Supported by the Editions of SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) for information about the different editions of SQL Server.
 * The user account used to run Setup must be a member of the local Administrators group.
 * The user account used for Reporting Services Configuration Manager must have permission to access and create databases on the Database Engine instance that hosts the report server databases.
 * Setup must be able to use the default values to reserve the URLs that provide access to the report server and the web portal. These values are port 80, a strong wildcard, and the virtual directory names in the format **ReportServer** and **Reports**.
