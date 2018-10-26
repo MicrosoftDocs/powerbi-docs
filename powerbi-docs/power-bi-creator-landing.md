@@ -6,8 +6,9 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 09/24/2018
+ms.date: 10/26/2018
 ms.author: maggies
+author: maggiesMSFT
 layout: landingpage
 
 LocalizationGroup: Get started
