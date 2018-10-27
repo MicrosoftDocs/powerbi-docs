@@ -8,11 +8,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 10/26/2018
 LocalizationGroup: Visualizations
 ---
 
-# Using organization custom visuals in Power BI
+# Use organization custom visuals in Power BI
 
 You can use custom visuals in Power BI to create a unique type of visual that’s tailored to you, or the data insights you’re trying to convey. Often these custom visuals are created by developers, and they are often created when the multitude of visuals that are included in Power BI don’t quite meet their need. 
 
@@ -20,15 +20,13 @@ In some organizations, custom visuals are even more important – they might be 
 
 The following image shows the process by which organization custom visuals in Power BI flow from administrator, through development and maintenance, all finally make their way to the data analyst.
 
-![](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
+![Custom visual pic](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
 
 Organization visuals are deployed and managed by the Power BI administrator from the Admin portal. Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop.
 
-## Using organizational custom visuals
-
 To learn more about how to use organizational custom visuals in the reports that you created, see the following article: [Learn more about importing organizational visuals into your reports](power-bi-custom-visuals.md).
 
-## Administering organizational custom visuals
+## Administer organizational custom visuals
 
 To learn more about how to administer, deploy, and manage organizational custom visuals in your organization, see the following article: [Learn more about deployment and management of organization custom visuals](https://go.microsoft.com/fwlink/?linkid=866790).
 
@@ -47,6 +45,6 @@ Admin:
 
 End user:
 
-* Organizational custom visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-subscribe). Only [certified custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified) imported directly from the marketplace supports these features.
+* Organizational custom visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified) imported directly from the marketplace supports these features.
 
 * Visio visual, PowerApps visual, the Mapbox visual, and the GlobeMap visual from AppSource marketplace will not render if deployed through the organization repository.
