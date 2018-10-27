@@ -878,7 +878,9 @@
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: developer/custom-visual-develop-tutorial.md
+      - name: "Adding formatting options"
+        href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
       - name: "Custom visuals FAQ"
