@@ -51,7 +51,7 @@ When you import data into Excel, follow these tips:
 * **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
 ## Workbook Size Optimizer
-If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. [Download Workbook Size Optimizer](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. [Download Workbook Size Optimizer](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## Related info
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
