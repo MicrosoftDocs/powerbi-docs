@@ -110,7 +110,7 @@ The results presented in this paper were derived from executing a specific set o
 ### 1 Topology
 **1.1 Power BI Report Server Topology**
 
-To focus solely on Power BI Report Server behavior under different configurations, the VM configuration  for each type of machine (except for the machine hosting Power BI Report Server) was fixed. Each machine was provisioned according to the second-generation (v2) D Series machines with Premium Storage Disks. You can find detailed information about each VM size under the “General Purpose” section on https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+To focus solely on Power BI Report Server behavior under different configurations, the VM configuration  for each type of machine (except for the machine hosting Power BI Report Server) was fixed. Each machine was provisioned according to the second-generation (v2) D Series machines with Premium Storage Disks. You can find detailed information about each VM size under the “General Purpose” section on https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Virtual Machine Type | Processor | Memory | Azure VM Size |
 | --- | --- | --- | --- |
@@ -120,7 +120,7 @@ To focus solely on Power BI Report Server behavior under different configuration
 
 **1.2 Power BI Report Server Virtual Machine Configuration** 
 
-Different configurations of processor and memory were used for the Virtual Machine hosting Power BI Report Server. Unlike the other VMs, this machine was provisioned according to the third-generation (v3) D Series Machines with Premium Storage Disks. You can find detailed information about this VM size under the “General Purpose” section on https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Different configurations of processor and memory were used for the Virtual Machine hosting Power BI Report Server. Unlike the other VMs, this machine was provisioned according to the third-generation (v3) D Series Machines with Premium Storage Disks. You can find detailed information about this VM size under the “General Purpose” section on https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Virtual Machine | Processor | Memory | Azure VM Size |
 | --- | --- | --- | --- |
