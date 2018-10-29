@@ -49,4 +49,4 @@ End user:
 
 * Visio visual, PowerApps visual, the Mapbox visual, and the GlobeMap visual from AppSource marketplace will not render if deployed through the organization repository.
 
-For more information and answers to questions, visit [Frequently Asked Questions](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+For more information and answers to questions, visit [frequently asked questions](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
