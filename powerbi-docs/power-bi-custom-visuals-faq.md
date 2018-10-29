@@ -8,11 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 10/29/2018
 LocalizationGroup: Visualizations
 ---
 
 # Frequently asked questions about Power BI custom visuals
+
+## Organizational custom visuals
 
 **How can the admin manage the organizational custom visuals?**
 
@@ -45,3 +47,9 @@ Yes, if the admin disables the custom visuals from the admin portal, it doesn’
 * Admins can control which custom visuals to be available in the organization.
 
 * Admins can enable/disable visuals for testing from the admin portal. Better security enforcement as those visuals will be allowed for organizational members only.
+
+## Certified custom visuals
+
+**What are certified custom visuals?**
+
+Certified custom visuals are visuals in the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that met certain [specified](power-bi-custom-visuals-certified.md) code requirements and testing by the Power BI team.  The tests performed are designed to check that the visual does not access external services or resources; however, Microsoft is not the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
