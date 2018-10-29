@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/26/2018
+ms.date: 10/29/2018
 LocalizationGroup: Visualizations
 ---
 
@@ -48,3 +48,5 @@ End user:
 * Organizational custom visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified) imported directly from the marketplace supports these features.
 
 * Visio visual, PowerApps visual, the Mapbox visual, and the GlobeMap visual from AppSource marketplace will not render if deployed through the organization repository.
+
+For more information and answers to questions, visit [Frequently Asked Questions](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
