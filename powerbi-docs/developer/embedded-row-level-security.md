@@ -185,14 +185,14 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Granular access to the data can only be applied with RLS and not through client-side filtering APIs.
 
-There’s often confusion around when to use RLS vs. JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view. The question is who should have control to decide what the end user can or should see, the ISV developer or the end user?
+There’s often confusion around when to use RLS vs. JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
 
 In an RLS case, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
 
 In a client-side filtering case, the ISV might decide what the end user sees at the initial view, but the ISV cannot control changes the end user might apply to the view itself. Even though data filtering can happen on the backend, it’s triggered by the JavaScript client code, and therefore it can be changed by an end user, and cannot be considered secure.
 
 > [!NOTE]
-> The user can choose to completely remove the filters, even if the ISV application doesn’t display the filters/slicers for the user to interact with and applies them through the JavaScript APIs).
+> The user can choose to completely remove the filters, even if the ISV application doesn’t display the filters/slicers for the user to interact with and applies them through the JavaScript APIs.
 
 ## Considerations and limitations
 
