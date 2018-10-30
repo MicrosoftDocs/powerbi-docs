@@ -95,7 +95,7 @@ There is currently no single place where tenant administrators  can manage all t
 ## Enabling outbound Azure connections
 
 The On-premises data gateway relies on Azure Service Bus for cloud connectivity and correspondingly establishes outbound connections to its associated Azure region. By default, this is the location of your Power BI tenant. See Where is my [Power BI tenant located?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
+If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
 > [!NOTE]
 > The IP address ranges might change over time, so make sure you download the latest information on a regular basis. 
 

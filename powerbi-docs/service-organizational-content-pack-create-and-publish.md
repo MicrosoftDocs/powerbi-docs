@@ -67,7 +67,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
       ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
-      > If members of the group can't view the Excel workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+      > If members of the group can't view the Excel workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
       > 
       > 
 4. Select **Publish** to add the content pack to the group's organizational content pack library.  
@@ -89,6 +89,6 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 * [Intro to organizational content packs](service-organizational-content-pack-introduction.md)  
 * [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md)  
 * [Create a group in Power BI](service-create-distribute-apps.md)  
-* [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+* [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -34,7 +34,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 ## Connect to an organizational content pack
 * Select **Get it now** to connect to the content pack and add it to your active workspace. New dashboards, reports, Excel workbooks, and datasets are starred with a yellow asterisk.
 
-If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 The content pack is locked. You can [save your own copy of the dashboard and reports](../service-organizational-content-pack-copy-refresh-access.md). 
 
