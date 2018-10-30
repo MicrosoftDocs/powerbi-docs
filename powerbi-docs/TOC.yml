@@ -69,6 +69,8 @@
       href: desktop-directquery-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
+    - name: "Custom visuals FAQ"
+      href: power-bi-custom-visuals-faq.md
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
@@ -799,7 +801,7 @@
         href: developer/embedded-row-level-security.md
       - name: "Azure diagnostic logging for Power BI Embedded"
         href: developer/azure-pbie-diag-logs.md
-      - name: "FAQ"
+      - name: "Embedding FAQ"
         href: developer/embedded-faq.md
       - name: "Power BI permissions"
         href: developer/power-bi-permissions.md 
@@ -878,7 +880,9 @@
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: developer/custom-visual-develop-tutorial.md
+      - name: "Adding formatting options"
+        href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
       - name: "Using Capabilities"
@@ -1190,7 +1194,7 @@
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
-      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      href: https://docs.microsoft.com/powershell/power-bi/
       maintainContext: true
     - name: Service URL reference
       href: power-bi-whitelist-urls.md
@@ -1200,5 +1204,3 @@
       href: service-admin-governance.md
     - name: "Power BI security"
       href: service-admin-power-bi-security.md
-    - name: "Power BI for Office 365 is transitioned to Power BI"
-      href: service-admin-o365portal-retired.md
