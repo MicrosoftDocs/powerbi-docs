@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -16,22 +16,23 @@ LocalizationGroup: Administration
 
 # Power BI admin portal
 
-The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
+The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
-Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
-
-All users can see **Admin portal** under the gear icon. If they are not an admin, they can only see the **Premium settings** section, and they can only see the capacities they have rights to manage.
+The full admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## How to get to the admin portal
 
 Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
-2. Select **Admin Portal**.
 
-![](media/service-admin-portal/powerbi-admin-settings.png)
+1. Select **Admin portal**.
 
-Within the portal, there are six tabs. These are described below.
+    ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
+
+There are seven tabs in the portal. The rest of this article provides information about each of these tabs.
+
+![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -39,95 +40,91 @@ Within the portal, there are six tabs. These are described below.
 * [Tenant settings](#tenant-settings)
 * [Premium settings](#premium-settings)
 * [Embed codes](#embed-codes)
-* [Organization visuals](#Organization-visuals)
-
-![](media/service-admin-portal/powerbi-admin-landing-page.png)
+* [Organization visuals](#organization-visuals)
 
 ## Usage metrics
-The first tab, in the admin portal, is **Usage metrics**. The usage metrics report gives you the ability to monitor usage within Power BI for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
+
+The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
 
 > [!NOTE]
 > The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
 
-Once the dashboard loads, you can see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
+Once the dashboard loads, you see two sections of tiles. The first section includes usage data for individual users, and the second section has similar information for groups in your organization.
 
 Here’s a breakdown of what you can see in each tile:
 
 * Distinct count of all dashboards, reports, and datasets in the user workspace
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
+    ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack two different users connected to, its count would be 6 (1 + 3 + 2)
+* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2)
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
+    ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files or databases.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
+    ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
 * A view of your top users based on how many dashboards they have, both dashboards they created themselves and dashboards shared to them.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
+    ![Top users - dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
 * A view of your top users based on how many reports they have
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
+    ![Top users - reports](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of information they are using.
+The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of content they are consuming.
 
-With this information, you will be able to get real insights into how people are using Power BI across your organization, and be able to recognize those users, and groups, who are very active in your organization.
+With this information, you can get real insights into how people are using Power BI across your organization, and be able to recognize those users and groups who are very active in your organization.
 
 ## Users
 
-The second tab, in the admin portal, is **Manage Users**. User management, for Power BI, is done in the Office 365 admin center, so this section allows you to quickly reach the area to manage users, admins, and groups within Office 365.
+You manage Power BI users, groups, and admins in the Office 365 admin center. The **Users** tab provides a link to the admin center for your tenant.
 
-![](media/service-admin-portal/powerbi-admin-manage-users.png)
-
-When you click **Go to O365 Admin Center**, you go directly to the Office 365 admin center landing page, to manage the users of your tenant.
-
-![](media/service-admin-portal/powerbi-admin-o365-admin-center.png)
+![Go to O365 Admin Center](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## Audit logs
 
-The third tab, in the admin portal, is **Audit logs**. The logs are located within the Office 365 Security & Compliance center. This section allows you to quickly access that area within Office 365.
-
-For more information about audit logs, see [Auditing Power BI in your organization](service-admin-auditing.md)
+You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center for your tenant. [Learn more](service-admin-auditing.md)
 
 ## Tenant settings
 
-The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a given feature to be available to a specific group. If this is the case, you can switch it off in your tenant.
+The **Tenant settings** tab enables fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+The following image shows the first two sections of the **Tenant settings** tab.
+
+![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
-> It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
+> It can take up to 10 minutes for a setting change to take effect for everyone in your tenant.
 
 Settings can have three states:
 
-* **Disabled for the entire organization**: You can disable a feature and make it so users will not be able to use it.
+* **Disabled for the entire organization**: No one in your organization can use this feature.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+    ![Disabled all setting](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Enabled for the entire organization**: You can enable a feature for the entire organization which will let all users have access to that feature.
+* **Enabled for the entire organization**: Everyone in your organization can use this feature.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![Enabled all setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Enabled for a subset of the organization**: You can also enable a feature for a portion of your organization. This can happen in a few different ways. You can enable it for your entire organization except for a specific group of users.
+* **Enabled for a subset of the organization**: A specific subset of users or groups in your organization can use this feature.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+    You can enable the feature for your entire organization, except for a specific group of users.
 
-    You could also enable the feature only for a specific group of users and also disable it for a group of users. This would make sure that certain users do not have access to the feature even if they are in the allowed group.
+    ![Enabled subset setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+    You can also enable the feature only for a specific group of users and also disable it for a group of users. Using this approach ensures that certain users do not have access to the feature even if they are in the allowed group.
+
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 The next few sections provide an overview of the different types of tenant settings.
 
 ## Workspace settings
 
 ### Create workspaces (preview)
-Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content.
 
-For more information, see [Create the new workspaces](service-create-the-new-workspaces.md).
+Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. [Learn more](service-create-the-new-workspaces.md)
 
 ## Export and sharing settings
 
@@ -135,19 +132,21 @@ For more information, see [Create the new workspaces](service-create-the-new-wor
 
 Users in the organization can share dashboards with users outside the organization.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Here is the message that appears when you share with an external user.
+The following image shows the message that appears when you share with an external user.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### Publish to web
 
 Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md)
 
-![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
 
-Users can see different options in the UI based on what the publish to web setting is.
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Users see different options in the UI based on what the **Publish to web** setting is.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
@@ -160,7 +159,9 @@ Users can see different options in the UI based on what the publish to web setti
 
 Users in the organization can export data from a tile or visualization. [Learn more](visuals/power-bi-visualization-export-data.md)
 
-![](media/service-admin-portal/powerbi-admin-export-data.png)
+The following image shows the option to export data from a tile.
+
+![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
@@ -169,7 +170,9 @@ Users in the organization can export data from a tile or visualization. [Learn m
 
 Users in the organization can export Power BI reports as PowerPoint files. [Learn more](consumer/end-user-powerpoint.md)
 
-![](media/service-admin-portal/powerbi-admin-powerpoint.png)
+The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations** setting is enabled.
+
+![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### Print dashboards and reports
 
