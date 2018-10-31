@@ -679,6 +679,11 @@
             "source_path": "powerbi-docs/service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md",
             "redirect_url": "/power-bi/service-gateway-sso-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
+            "redirect_url": "/power-bi/service-admin-portal",
+            "redirect_document_id": false
         }
     ]
 }
