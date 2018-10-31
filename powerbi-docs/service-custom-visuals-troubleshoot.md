@@ -17,23 +17,17 @@ ms.date: 11/03/2018
 
 If you run `pbiviz` in your terminal / command line, you should see the help screen. If not, it is not installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
 
-For more information, see [Install NodeJS and the Power BI tools](#install-nodejs-and-the-power-bi-tools)...
-
 **Cannot find the debug visual in the Visualizations tab**
 
 The debug visual looks like a prompt icon within the **Visualizations** tab.
 
 ![Visual selection](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have enabled it within the Power BI settings. 
+If you don't see it, make sure you have enabled it within the Power BI settings.
 
 > [!NOTE]
 > The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
 
-For more information, see [Enable live preview of developer visual](#enable-live-preview-of-developer-visual)...
-
 **Can't contact visual server**
 
-Run the visual server with the command `pbiviz start` in your terminal / command line from the root of your visual project. If the server is running, it is likely that your SSL vertificates weren't installed correctly.
-
-For more information, see [Running your visual](#running-your-visual) or [Server certificate setup](#ssl-setup).
+Run the visual server with the command `pbiviz start` in your terminal / command line from the root of your visual project. If the server is running, it is likely that your SSL certificates weren't installed correctly.
