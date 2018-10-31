@@ -251,4 +251,6 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
 ## Next Steps
 
-If you would like to learn more about how to publish your newly developed custom visual to be consumed by others, please reference [Publish custom visuals to AppSource](office-store.md).
+You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process, please reference [Publish custom visuals to AppSource](office-store.md).
+
+For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).

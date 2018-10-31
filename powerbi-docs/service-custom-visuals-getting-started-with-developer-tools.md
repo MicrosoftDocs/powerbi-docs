@@ -367,7 +367,7 @@ For more information, see [Install NodeJS and the Power BI tools](#install-nodej
 
 The debug visual looks like a prompt icon within the **Visualizations** tab.
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Visual selection](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 If you don't see it, make sure you have enabled it within the Power BI settings. 
 
