@@ -1,6 +1,6 @@
 ---
 title: The new Filters experience in Power BI reports (Preview)
-description: Add a page filter, visualization filter, or report filter to a report in Power BI
+description: Filters in Power BI are getting new functionality and a new design. 
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -15,13 +15,13 @@ LocalizationGroup: Reports
 ---
 # The new Filters experience in Power BI reports (Preview)
 
-This article spells out the new filter experience -- filters in Power BI are getting new functionality and a new design. Report designers in Power BI Desktop and in the Power BI service can now design the filters pane to look like and act with the whole report. 
+This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. Report designers in Power BI Desktop and in the Power BI service can now design the filters pane to look like and act with the whole report. 
  
 Default view (no additional customization applied)
 
 As a report designer, here's what you can do with the new filters:
 
-- Show read only view of filters in the visual header, so consumers know exactly what filters or slicers are affecting a given visual
+- Show a read-only view of filters in the visual header, so consumers know exactly what filters or slicers are affecting a given visual
 - Format and customize the filter pane so that it feels part of your report
 - Flexibility of defining default expand / collapsed filter pane at report load time for consumers
 - Hide the entire filter pane or specific filters that you don’t want report consumers to see
