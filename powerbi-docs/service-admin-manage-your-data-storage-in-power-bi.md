@@ -18,10 +18,10 @@ Learn how you can manage your individual, or app workspace, data storage to make
 
 Users and app workspaces have their own data capacities
 
-* All users have a maximum 10 GB data storage.
-* Users with a Power BI Pro license can create app workspaces, with a maximum 10 GB data storage each.
+* All users have a maximum 10-GB data storage.
+* Users with a Power BI Pro license can create app workspaces, with a maximum 10-GB data storage each.
 
-At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and app workspaces in the tenant.
+At the tenant level, total usage can’t exceed 10-GB per Pro user across all Pro users and app workspaces in the tenant.
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
