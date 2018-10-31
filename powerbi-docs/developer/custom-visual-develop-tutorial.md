@@ -34,7 +34,7 @@ In this tutorial, you learn how to:
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
-* You need **PowerShell** version 4 or later.
+* You need [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later.
 
 ## Setting up the developer environment
 
