@@ -13,7 +13,7 @@ ms.date: 11/02/2018
 
 # Troubleshooting Power BI custom visual
 
-## Developer
+## Developing custom visuals
 
 **Pbiviz command not found (or similar errors)**
 
@@ -25,9 +25,9 @@ For more information, see [Install NodeJS and the Power BI tools](#install-nodej
 
 The debug visual looks like a prompt icon within the **Visualizations** tab.
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Visual selection](../media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have enabled it within the Power BI settings. 
+If you don't see it, make sure you have enabled it within the Power BI settings.
 
 > [!NOTE]
 > The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
