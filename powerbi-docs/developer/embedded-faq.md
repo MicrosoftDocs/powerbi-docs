@@ -87,7 +87,7 @@ Here is a partial list of differences you may use with each.
 
 ### How can I monitor Power BI Embedded capacity consumption?
 
-* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded-settings).
+* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded).
 
 * Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
 
