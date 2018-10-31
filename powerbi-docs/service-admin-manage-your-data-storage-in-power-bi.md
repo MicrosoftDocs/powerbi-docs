@@ -1,7 +1,7 @@
 ---
 title: Manage your data storage
 description: Learn how you can manage your individual, or app workspace, data storage to make sure you can continue to publish reports and datasets.
-author: mgblythe
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: maggies
 
 LocalizationGroup: Administration
 ---
