@@ -132,7 +132,7 @@ Users in the organization can create app workspaces to collaborate on dashboards
 
 ### Share content to external users
 
-Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards#share-a-dashboard-or-report-with-people-outside-your-organization)
+Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -192,7 +192,7 @@ The following image shows the **File** menu for a report when the **Print dashbo
 
 ### Publish content packs and apps to the entire organization
 
-Users in the organization can publish content packs and apps to the entire organization, rather than just specific groups. [Learn more](service-organizational-content-pack-manage-update-delete)
+Users in the organization can publish content packs and apps to the entire organization, rather than just specific groups. [Learn more](service-organizational-content-pack-manage-update-delete.md)
 
 The following image shows the **My entire organization** option when creating a content pack.
 
@@ -200,7 +200,7 @@ The following image shows the **My entire organization** option when creating a 
 
 ### Create template organizational content packs and apps
 
-Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring)
+Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
@@ -292,7 +292,7 @@ Users in the organization can access workspaces to connect to data and author co
 
 ### Import data into Power BI
 
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files)
+Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
 
 ## Capacity Settings
 
@@ -318,7 +318,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ## Organization visuals
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
