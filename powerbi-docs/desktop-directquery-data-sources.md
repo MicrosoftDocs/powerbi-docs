@@ -61,8 +61,8 @@ The following table specifies whether an **On-premises data gateway** is require
 | Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
 | Azure HDInsight Spark (Beta) |No |
 | IBM Netezza |Yes |
-| SAP Buisness Warehouse Application Server |Yes |
-| SAP Buisness Warehouse Message Server |Not yet supported in the **Power BI service** |
+| SAP Business Warehouse Application Server |Yes |
+| SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
 | Google BigQuery |No |
 
 
