@@ -106,7 +106,7 @@
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: "Custom visuals troubleshoot"
-      href: power-bi-custom-visuals-troubleshoot.md 
+      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
