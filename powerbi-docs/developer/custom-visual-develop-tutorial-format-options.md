@@ -249,6 +249,8 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
 8. Hover over the **Circle Card** icon, and notice the tooltip that appears.
 
+## Debugging
+
 For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
 ## Next Steps

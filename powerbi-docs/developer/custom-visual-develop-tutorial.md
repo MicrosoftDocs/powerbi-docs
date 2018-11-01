@@ -34,7 +34,7 @@ In this tutorial, you learn how to:
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
-* You need [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the **Terminal** for OSX users.
+* You need [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Setting up the developer environment
 
@@ -575,6 +575,8 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 You have now configured the data roles and bound the visual to the dataview.
 
 In the next tutorial you learn how to add formatting options to the custom visual.
+
+## Debugging
 
 For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
