@@ -107,7 +107,7 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
 
 From there, you can enter your own color hex code for your selected colors.
 
-Starting with the September 2017 version of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to affect, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
+Starting with the September 2017 version of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
 The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family. Or you can turn off data labels for specific chart types.
 
