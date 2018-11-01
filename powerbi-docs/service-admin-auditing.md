@@ -103,7 +103,7 @@ To display these details, select **More information**. All Power BI entries have
 
    ![Audit details](media/service-admin-auditing/audit-details.png)
 
-## Export the Power BI audit log
+## Export search results
 
 To export the Power BI audit log to a csv file, follow these steps.
 
@@ -132,7 +132,7 @@ Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType Power
 
 For another example of using PowerShell with audit logs, see [Using Power BI audit log and PowerShell to assign Power BI Pro licenses](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
-## List of activities audited by Power BI
+## Activities audited by Power BI
 
 | Activity or event                          | Logged every time…                                    | Additional details                                                                         |
 |--------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
