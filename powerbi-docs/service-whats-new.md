@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -208,7 +208,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](consumer/end-user-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Local File Support for Excel Reports](service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **April 28, 2016**
@@ -590,7 +590,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * We're excited to announce our "general availability" (GA) release of Power BI. Sign up today for [Power BI Pro](service-self-service-signup-for-power-bi.md). As part of the GA release, we are offering some great new features:
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
-* [Power BI groups](consumer/end-user-create-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
+* [Power BI groups](service-create-distribute-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](service-organizational-content-pack-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 * [Bring in whole Excel files](service-excel-workbook-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
 * [Bring in CSV files](service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.

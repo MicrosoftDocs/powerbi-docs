@@ -42,7 +42,7 @@ But first, a word about Q&A. Q&A is Power BI's natural language search tool. You
 |Hover over a visualization to reveal additional details and tooltips.     |    yes     |   yes      | yes  |
 |Cross-filter and cross-highlight other visualizations on the page.     |   no      |   yes      | na  |
 |[Show the data used to create the visualization](end-user-show-data.md).     |  no       |   yes      | yes  |
-| [Change the way the visualization is sorted](end-user-search-filter-sort.md). | no  | yes  | no  |
+| [Change the way the visualization is sorted](end-user-search-sort.md). | no  | yes  | no  |
 | Add a spotlight to a visualization. | no  | yes  |  no |
 | Analyze (depending on visualization type). | no  | yes  | no  |
 

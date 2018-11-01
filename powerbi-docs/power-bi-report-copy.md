@@ -35,6 +35,6 @@ Maybe you have a report that already connects to your dataset and has some visua
 ## Next Steps:
 [Create new visualizations](visuals/power-bi-report-add-visualizations-ii.md)
 
-[Delete visualizations](consumer/end-user-delete.md) you don't need
+[Delete visualizations](service-delete.md) you don't need
 
 [Create a report using Power BI Desktop](desktop-report-view.md)

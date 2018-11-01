@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 08/16/2018
+ms.date: 10/13/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -23,4 +23,11 @@ If you're new to Power BI, we recommend first reading the [Power BI overview](..
 As a consumer, you won't have access to the full capabilities of Power BI -- and that's ok, because your job isn't to build dashboards and reports. Your job is to use Power BI for analysis, monitoring, exploration, and decision-making.
 
 As you read through the articles for consumers, you'll learn the terminology, you'll get a tour of Power BI service, figure out how to navigate to content, and then learn how to interact with that content.  So let's get started!
+
+## Next steps
+
+[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)
+
+<!-- [Get started guide for *consumers*] -->
+[Get started using Power BI service](../service-get-started.md)
 

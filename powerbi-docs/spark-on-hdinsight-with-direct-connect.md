@@ -53,7 +53,7 @@ The username and password can also be found in the Azure portal.
 
 ## Limitations
 
-These restrictions and notes may change as we continue to improve the experiences. Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
+These restrictions and notes may change as we continue to improve the experiences. Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](/azure/hdinsight/spark/apache-spark-use-bi-tools/)
 
 * The Power BI service only supports a configuration of Spark 2.0 and HDInsight 3.5.
 * Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
@@ -71,9 +71,9 @@ You can also allocate additional resources within the Azure portal under **Confi
 
 ## Next steps
 
-[Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
+[Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
 [What is Power BI?](power-bi-overview.md)  
 [Get Data for Power BI](service-get-data.md)
-[Use Kerberos on the On-premises gateway for SSO](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)
+[Use Kerberos on the On-premises gateway for SSO](service-gateway-sso-kerberos.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
