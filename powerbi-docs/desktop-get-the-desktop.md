@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 11/01/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -97,11 +97,35 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 
 ## Considerations and Limitations
 
+We always want your experience with Power BI Desktop to be great. There may be occasions when you run into an issue with Power BI Desktop, so this section contains solutions or suggestions to address issues that might arise. 
+
+### Issues when using previous releases of Power BI Desktop
+
 Some users encounter an error similar to the following when using an outdated version of **Power BI Desktop**: 
 
     "We weren't able to restore the saved database to the model" 
 
 Updating to the current version of Power BI Desktop usually solves this issue.
+
+### Disabling notifications
+We recommend updating to the most recent version of Power BI Desktop to take advantage of advances in features, perfromance, stability, and other improvements. Some organizations may not want users to update to each new version. You can disable notifications by modifying the registry with the following steps:
+
+1. Using the Registry Editor, navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
+2. Create a new entry there with the following settings: *REG_DWORD : DisableUpdateNotification*
+3. Set the value of that new entry to **1**.
+
+You'll need to restart your computer for the change to take effect.
+
+### Power BI Desktop loads with a partial screen
+
+In certain circumstances, including certain screen resolution configurations, some users may see Power BI Desktop render content with large black areas. This is generally a result of recent operating system updates that affect how items are rendered, rather than a direct result of how Power BI Desktop presents content. Regardless, large black areas are not as compelling as great visuals, so to address this issue, take the following steps:
+
+1. Press the Start key and type the world *blurry* into the search bar that appears.
+2. In the dialog that appears, select the option: *Let Windows fix apps that are blurry.*
+3. Restart Power BI Desktop.
+
+This issue may resolve after subsequent Windows updates are released. 
+ 
 
 ## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
