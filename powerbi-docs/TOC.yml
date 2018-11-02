@@ -249,8 +249,6 @@
         href: desktop-r-powered-custom-visuals.md
       - name: "Use gridlines and snap-to-grid"
         href: desktop-gridlines-snap-to-grid.md
-      - name: "High density line sampling"
-        href: desktop-high-density-sampling.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -323,6 +321,8 @@
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: "High density line sampling"
+        href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
