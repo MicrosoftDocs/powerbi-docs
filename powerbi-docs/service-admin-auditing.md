@@ -134,45 +134,85 @@ For another example of using PowerShell with audit logs, see [Using Power BI aud
 
 ## Activities audited by Power BI
 
-| Activity or event                          | Logged every time…                                    | Additional details                                                                         |
-|--------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Added data source to Power BI gateway      | A data source is added to the gateway                 | Gateway Name<br/> Gateway Type<br/> Datasource Name<br/> Datasource Type                   |
-| AddGroupMembers                            | A member is added to a Power BI group workspace       | Group name<br/> Email addresses                                                            |
-| Analyzed Power BI dataset                  | A Power BI dataset is analyzed in Excel               |                                                                                            |
-| Changed Power BI gateway admins            | The admins of a gateway are changed (added/removed)   | Gateway Name<br/> Users Added<br/> Users Removed                                           |
-| Changed Power BI gateway data source users | The users of a gateway are changed (added/removed)    | Gateway Name<br/> Users Added<br/> Users Removed                                           |
-| Create dataset                             | A dataset is created                                  | Dataset Name<br/> DataConnectivityMode                                                     |
-| Create Power BI app                        | A Power BI app is created                             | App name<br/> Permissions<br/> Workspace Name                                              |
-| Create report                              | A new report is created                               | Report Name<br/> Dataset Name                                                              |
-| Created Power BI gateway                   | A new gateway is created                              | Gateway Name<br/> Gateway Type                                                             |
-| CreateDashboard                            | A new dashboard is created                            | Dashboard name                                                                             |
-| CreateGroup                                | A group is created                                    | Group name                                                                                 |
-| CreateOrgApp                               | An organizational content pack is created             | Organizational Content Pack name<br/> Dashboard names<br/> Report names<br/> Dataset names |
-| Delete Dataset                             | A dataset is deleted                                  | Dataset Name<br/> DataConnectivityMode                                                     |
-| Deleted Power BI gateway                   | A gateway is deleted                                  | Gateway Name<br/> Gateway Type                                                             |
-| DeleteDashboard                            | A dashboard is deleted                                | Dashboard name                                                                             |
-| DeleteDataset                              | A dataset is deleted                                  | Dataset name                                                                               |
-| DeleteReport                               | A report is deleted                                   | Report name                                                                                |
-| Downloaded Power BI report                 | A report is downloaded                                | Report Name<br/> Dataset Name                                                              |
-| Edit Report                                | A report is edited                                    | Report Name<br/> Dataset Name                                                              |
-| EditDashboard                              | A dashboard is renamed                                | Dashboard name                                                                             |
-| ExploreDataset                             | You explore a dataset by selecting it                 | Dataset name                                                                               |
-| ExportReport                               | Data is exported from a report tile                   | Report name<br/> Dataset name                                                              |
-| ExportTile                                 | Data is exported from a dashboard tile                | Tile name<br/> Dataset name                                                                |
-| Install Power BI app                       | A Power BI app is installed                           | App name                                                                                   |
-| OptInForProTrial                           | A user chooses to try Power BI Pro within the service | email address                                                                              |
-| PrintDashboard                             | A dashboard is printed                                | Dashboard name<br/> Dataset name                                                           |
-| PrintReport                                | A report is printed                                   | Report name<br/> Dataset name                                                              |
-| PublishToWebReport                         | A report is Published To Web                          | Report Name<br/> Dataset name                                                              |
-| Removed data source from Power BI gateway  | A data source is removed from a gateway               | Gateway Name<br/> Gateway Type<br/> Datasource Name<br/> Datasource Type                   |
-| SetScheduledRefresh                        | A new refresh is scheduled for a dataset              | Dataset Name<br/> Refresh Frequency (in minutes)                                           |
-| ShareDashboard                             | A dashboard is shared                                 | Dashboard name<br/>Recipient Email<br/> Dataset name<br/> Reshare permissions              |
-| Started Power BI extended trial            | A user accepts the extended pro trial                 |                                                                                            |
-| Update Power BI app                        | A Power BI app is updated                             | App name<br/> Permissions<br/> Workspace Name                                              |
-| UpdatedAdminFeatureSwitch                  | An admin feature switch is changed                    | Switch name<br/> New switch state                                                          |
-| ViewDashboard                              | A dashboard is viewed                                 | Dashboard name                                                                             |
-| ViewReport                                 | A report is viewed                                    | Report name                                                                                |
-|   |   |
+The following activities are audited by Power BI.
+
+* AddDatasourceToGateway
+* AddGroupMembers
+* AnalyzedByExternalApplication
+* AnalyzeInExcel
+* AttachDataflowStorageAccount
+* BindToGateway
+* ChangeCapacityState
+* ChangeGatewayAdministrators
+* ChangeGatewayDatasourceUsers
+* CreateApp
+* CreateDashboard
+* CreateDataflow
+* CreateDataset
+* CreateEmailSubscription
+* CreateFolder
+* CreateGateway
+* CreateGroup
+* CreateOrgApp
+* CreateReport
+* DeleteComment
+* DeleteDashboard
+* DeleteDataflow
+* DeleteDataset
+* DeleteEmailSubscription
+* DeleteFolder
+* DeleteGateway
+* DeleteGroup
+* DeleteGroupMembers
+* DeleteOrgApp
+* DeleteReport
+* DownloadReport
+* EditDataset
+* EditReport
+* ExportDataflow
+* ExportReport
+* ExportTile
+* GenerateDataflowSasToken
+* GenerateEmbedToken
+* GetDatasources
+* Import
+* InstallApp
+* MigrateWorkspaceIntoCapacity
+* OptInForProTrial
+* PostComment
+* PrintDashboard
+* PrintReport
+* PublishToWebReport
+* RefreshDataset
+* RemoveDatasourceFromGateway
+* RemoveWorkspacesFromCapacity
+* RenameDashboard
+* SetAllConnections
+* SetScheduledRefresh
+* SetScheduledRefreshOnDataflow
+* ShareDashboard
+* ShareReport
+* TakeOverDataset
+* TakeOverDatasource
+* UnpublishApp
+* UpdateApp
+* UpdateCapacityAdmins
+* UpdateCapacityDisplayName
+* UpdateCapacityResourceGovernanceSettings
+* UpdateCapacityUsersAssignment
+* UpdatedAdminFeatureSwitch
+* UpdateDataflow
+* UpdateDatasetParameters
+* UpdateDatasourceCredentials
+* UpdateDatasources
+* UpdateEmailSubscription
+* UpdateFolder
+* UpdateFolderAccess
+* ViewDashboard
+* ViewDataflow
+* ViewReport
+* ViewTile
+* ViewUsageMetrics
 
 ## Next steps
 
