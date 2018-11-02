@@ -68,29 +68,6 @@ And then you can see the results, shown as *EnrichedAccount* in the following im
 
 And that's it - the transformation is performed on the data in the dataflow that resides in your Power BI Premium subscription, not on the source data.
 
-## Dataflow capabilities on Power BI Premium
-
-For dataflow features and workloads to operate on a Power BI Premium subscription, the dataflow workload for that Premium capacity must be turned on. You can learn more about Power BI Premium in the [what is Power BI Premium](service-premium.md) article. 
-
-The following table describes dataflow features and their capacities when using a Power BI Pro account, and how that compares to using Power BI Premium.
-
-
-|Dataflow capability | Power BI Pro |	Power BI Premium |
-|---------|---------|---------|
-|Scheduled refresh|	8 per day|	48|
-|Total Storage|	10 GB/user	|100 TB/node|
-|Dataflow Authoring with Power Query Online| 	+	|+|
-|Dataflow Management within Power BI| 	+|	+|
-|Dataflows Data Connector in the Power BI Desktop| 	+|	+|
-|Integration with Azure|  	+|	+|
-|Computed Entities (in-storage transformations via M) |	|	+|
-|New connectors|	+|	+|
-|Dataflow incremental refresh|	|	+|
-|Running on Power BI Premium capacity / Parallel execution of transforms|	|	+|
-|Dataflow linked entities| |		+|
-|Standardized Schema / Built-In Support for the Common Data Model| 	+|	+|
-
-
 ## Considerations and limitations
 
 It's important to note that if you remove the workspace from Power BI Premium capacity, the associated dataflow will no longer refresh. 

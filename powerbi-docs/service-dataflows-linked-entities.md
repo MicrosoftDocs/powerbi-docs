@@ -21,7 +21,7 @@ When you link entities between dataflows, you can reuse entities that have alrea
 
 ![Linked entities in Power BI](media/service-dataflows-linked-entities/linked-entities_00.png)
 
-Linked entities are **read only**. If you want to create transformations for a linked entity, you must create a new computed entity with a reference to the linked entity. And if you choose to modify a linked entity, which is not a recommended practice, you lose the link and the data will be re-ingested from the source. That means you would need to  maintain that entity in your own dataflow.
+Linked entities are **read only**. If you want to create transformations for a linked entity, you must create a new computed entity with a reference to the linked entity.
 
 ## Linked entity availability
 
@@ -39,10 +39,6 @@ You can also select **Add linked entities** from the **Add entities** menu item 
 
 ![Linked entities in Power BI](media/service-dataflows-linked-entities/linked-entities_01.png)
 
-And you can choose the **Power BI dataflows** connector from the **Choose data source** list.
-
-![Linked entities from the Dataflows connector](media/service-dataflows-linked-entities/linked-entities_02.png)
-
 To link entities, you must sign in with your Power BI credentials.
 
 A **Navigator** window opens and lets you choose a set of entities to which you can connect. The entities displayed are entities for which you have permissions, across all workspaces in your Power BI tenant. 
@@ -58,7 +54,7 @@ The default refresh logic of linked entities changes, based on whether the sourc
 
 Refresh for links from entities in different workspaces behave like an external data source. When the dataflow refreshes, it takes the latest data for the entity from the source dataflow. If the source dataflow refreshes, it doesn’t automatically impact the data in the destination dataflow.
 
-### Links in the same workspace – incremental refresh
+### Links in the same workspace
 
 When refresh of the data for a source dataflow occurs, that event automatically triggers a refresh process for dependent entities in all destination dataflows in the same workspace, including any calculated entities based on them. All other entities in the destination dataflow are refreshed according to dataflow schedule. Entities that depend on more than one source update their data whenever any of their sources updates successfully.
 

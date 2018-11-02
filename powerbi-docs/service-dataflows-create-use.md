@@ -21,7 +21,7 @@ A **dataflow** is a collection of *entities* (entities are similar to tables) th
 
 Once you create a dataflow, you can use **Power BI Desktop** and the **Power BI service** to create datasets, reports, dashboards, and apps that are based on the data you put into Power BI dataflows, and thereby gain insights into your business activities.
 
-![Use dataflows in Power BI](media/service-dataflows-create-use/dataflows-create-use_01.png)
+![Use dataflows in Power BI](media/service-dataflows-create-use/dataflows-create-use_01a.png)
 
 There are three primary steps to using a dataflow:
 
@@ -37,24 +37,24 @@ In the following sections, we look at each of these steps and become familiar wi
 ## Creating a dataflow
 To create a dataflow, launch the Power BI service in a browser then select an **app workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
 
-![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02.png)
+![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
 Once you’re in an **app workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
 
 It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **app workspace** who have read or write permissions to the app workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
 
-![The + Create button in the Power BI service to create a dataflow](media/service-dataflows-create-use/dataflows-create-use_03.png)
+![The + Create button in the Power BI service to create a dataflow](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
 From there, you add **Entities**, which we describe more in the next section.
 
-![Add Entities to a dataflow](media/service-dataflows-create-use/dataflows-create-use_04.png)
+![Add Entities to a dataflow](media/service-dataflows-create-use/dataflows-create-use_04a.png)
 
 ### Add Entities
 
 An **entity** is a set of fields that are used to store data, much like a table within a database. 
 In the following image, you see the selection of data sources from which you can ingest data to Power BI.
 
-![Choose data source to add entities](media/service-dataflows-create-use/dataflows-create-use_05.png)
+![Choose data source to add entities](media/service-dataflows-create-use/dataflows-create-use_05a.png)
 
 When you select a data source, you’re prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 
@@ -70,11 +70,15 @@ Once you select the data for use in the entity, you can use dataflow editor to s
 
 Once you select which data from your source to use for your entity, you can shape your data selection into a form that works best for your entity, using a Power Query editing experience, similar to the **Power Query Editor** in **Power BI Desktop**. You can learn more about Power Query (Power Query is incorporated into Power BI Desktop as the Power Query Editor) in the [Query overview article](desktop-query-overview.md) for Power BI Desktop. 
 
-### Dataflows and Microsoft’s Common Data Model (CDM)
+If you want to see the code that Query Editor is creating with each step, or want to create your own shaping code, you can use the **Advanced Editor**. 
 
-Dataflows entities include new tools to easily map your business data to the Common Data Model (Microsoft’s standardized schema), enrich it with Microsoft and third-party data, and gain simplified access to machine learning. These new capabilities can be leveraged to provide intelligent and actionable insights into your business data. Once you’ve completed any transformations in the Edit Queries step, you can map columns from your data source tables to standard entity fields. Standard entities have a known schema defined by the common data model.
+![Use the Advanced editor](media/service-dataflows-create-use/dataflows-create-use_07b.png)
 
-Get more information about this approach, and about the Common Data Model, from [Github](https://github.com/Microsoft/CDM).
+### Dataflows and the Common Data Model (CDM)
+
+Dataflows entities include new tools to easily map your business data to the Common Data Model (Microsoft’s standardized schema), enrich it with Microsoft and third-party data, and gain simplified access to machine learning. These new capabilities can be leveraged to provide intelligent and actionable insights into your business data. Once you’ve completed any transformations in the Edit Queries step, you can map columns from your data source tables to standard entity fields as defined by the Common Data Model. Standard entities have a known schema defined by the common data model.
+
+Get more information about this approach, and about the Common Data Model, from the [what is the Common Data Model](https://docs.microsoft.com/powerapps/common-data-model/overview) article.
 
 To leverage the Common Data Model with your dataflow, click on the **Map to Standard** transformation in the **Edit Queries** dialog. In the **Map Entities** screen that appears, you can select the standard entity to which you want to map.
 
@@ -126,7 +130,7 @@ For more information about scheduling refresh, see the article about [configurin
 
 Once you’ve created your dataflow and you have scheduled the refresh frequency for each data source that will populate the model, you’re ready for the third and final step, which is connecting to your dataflow from within **Power BI Desktop**. 
 
-To connect to the dataflow, in Power BI Desktop select **Get Data > Power BI > Power BI dataflows (beta)** as shown in the following image.
+To connect to the dataflow, in Power BI Desktop select **Get Data > Power BI > Power BI dataflows (Beta)** as shown in the following image.
 
 ![Connect to dataflows from Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 

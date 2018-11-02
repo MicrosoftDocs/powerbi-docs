@@ -33,7 +33,7 @@ To use an on-premises data source in a dataflow, any user creating the dataflow 
 
 When creating a dataflow, select an on-premises data source from the data sources list, as shown in the following image.
 
-![Choose an on-premises data source](media/service-dataflows-onpremises-gateways/onpremises-gateways_02.png)
+![Choose an on-premises data source](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
 Once you make your selection, you're prompted to provide the connection details for the Enterprise Gateway that will be used to access the on-premises data. You must select the gateway itself, and provide credentials for the selected gateway. Only gateways for which the user is an administrator appear in the drop-down list.
 
@@ -58,8 +58,6 @@ You can change the Enterprise Gateway used for a given dataflow in two ways:
 2. **From the settings screen** - you can change the assigned gateway using the settings screen for the dataflow in the Power BI service.
 
 To learn more about Enterprise Gateways, see [On-premises data gateway](service-gateway-onprem.md).
-
-
 
 ## Considerations and limitations
 
