@@ -8,13 +8,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-<<<<<<< HEAD
-ms.date: 06/28/2017
-=======
 ms.date: 10/30/2018
 ms.author: mblythe
-
->>>>>>> 3d83befed0e08540070a22e42b452dff6670bab5
 LocalizationGroup: Administration
 ---
 
