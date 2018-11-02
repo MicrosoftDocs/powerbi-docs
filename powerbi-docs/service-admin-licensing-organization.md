@@ -148,6 +148,9 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
 
+> [!NOTE]
+> The AllowAdHocSubscriptions flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities.
+
 ## Next steps
 
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
