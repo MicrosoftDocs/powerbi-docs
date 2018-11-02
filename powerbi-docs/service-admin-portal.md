@@ -2,15 +2,14 @@
 title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
-
 LocalizationGroup: Administration
 ---
 
@@ -87,6 +86,8 @@ You manage Power BI users, groups, and admins in the Office 365 admin center. Th
 
 You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center for your tenant. [Learn more](service-admin-auditing.md)
 
+To use audit logs, make sure the [**Create audit logs for internal activity auditing and compliance**](#create-audit-logs-for-internal-activity-auditing-and-compliance) setting is enabled.
+
 ## Tenant settings
 
 The **Tenant settings** tab enables fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
@@ -130,7 +131,7 @@ Users in the organization can create app workspaces to collaborate on dashboards
 
 ### Share content to external users
 
-Users in the organization can share dashboards with users outside the organization.
+Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -178,40 +179,37 @@ The following image shows the **File** menu for a report when the **Export repor
 
 Users in the organization can print dashboards and reports. [Learn more](consumer/end-user-print.md)
 
-![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
+The following image shows the option to print a dashboard.
 
-![](media/service-admin-portal/powerbi-admin-print-report.png)
+![Print dashboard](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
-## Content pack settings
+The following image shows the **File** menu for a report when the **Print dashboards and reports** setting is enabled.
 
-### Publish content packs to the entire organization
+![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
-Users in the organization can publish content packs to the entire organization.
+## Content pack and app settings
 
-![](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
+### Publish content packs and apps to the entire organization
 
-### Create template organizational content packs
+Users in the organization can publish content packs and apps to the entire organization, rather than just specific groups. [Learn more](service-organizational-content-pack-manage-update-delete.md)
 
-Users in the organization can create template content packs that use datasets built on one data source in Power BI Desktop.
+The following image shows the **My entire organization** option when creating a content pack.
+
+![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
+
+### Create template organizational content packs and apps
+
+Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
-Your tenant admin enables the ability to push apps in **Tenant settings**.
-
-   ![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-pushapps01.png)
-
-You can switch the setting to **Enabled** and then specify who gets this capability (entire org or specific security groups).
-
-> [!NOTE]
-> Remember that tenant setting changes can take some time to take effect.
-
-Go here to learn more about [Push apps](service-create-distribute-apps.md).
+Users can share apps directly with end users without requiring installation from AppSource. [Learn more](service-create-distribute-apps.md)
 
 ## Integration settings
 
 ### Ask questions about data using Cortana
 
-Users in the organization can ask questions about their data using Cortana.
+Users in the organization can ask questions about their data using Cortana. [Learn more](service-cortana-enable.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -255,35 +253,26 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting needs to be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+This setting must be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
 ### Usage metrics for content creators
-Users in the organization can see usage metrics for dashboards and reports they created. [Learn more](service-usage-metrics.md).
 
-You can switch the setting to **Enabled** and then specify who can see usage metrics (entire org or specific security groups).
-
-> [!NOTE]
-> Remember that tenant setting changes can take some time to take effect.
+Users in the organization can see usage metrics for dashboards and reports they create. [Learn more](service-usage-metrics.md)
 
 ### Per-user data in usage metrics for content creators
-Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md).
 
-You can switch the setting to **Enabled** and then specify who can see display names and email addresses in the usage metrics (entire org or specific security groups).
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md)
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
-
-> [!NOTE]
-> Remember that tenant setting changes can take some time to take effect.
-
 
 ## Dashboard settings
 
 ### Data classification for dashboards
 
-Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](service-data-classification.md)
+Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](service-data-classification.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -292,69 +281,79 @@ Users in the organization can tag dashboards with classifications indicating das
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application.
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
+
+## Workspaces and import settings
+
+### Author content in workspaces
+
+Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
+
+### Import data into Power BI
+
+Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
 
 ## Capacity Settings
 
-### Premium settings
+### Power BI Premium
 
-The Premium settings tab allows you to manage any Power BI Premium (Em or P SKU) capacities that have been purchased for your organization. All users within your organization can see the Premium settings tab, but only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
+The **Power BI Premium** tab enables you to manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. All users within your organization can see the **Power BI Premium** tab, but they only see contents within it if they are assigned as either a *Capacity admin* or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
 
-![Power BI Premium admin settings](media/service-admin-portal/premium-settings-no-access.png "No access to Premium settings")
+![No access to Premium settings](media/service-admin-portal/premium-settings-no-access.png)
 
 For more information about how to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
-### Power BI Embedded settings
+### Power BI Embedded
 
-The Power BI Embedded settings tab allows you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you can [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
-
-![Power BI Embedded admin settings](media/service-admin-portal/manage-pbie-capacities-01.png)
-
-![Power BI Embedded admin settings details](media/service-admin-portal/manage-pbie-capacities-02.png)
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
 
 For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
-![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
+As an administrator, you can view the embed codes that are generated for your tenant. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
 
-As an administrator, you can view the embed codes that are generated for your tenant. You have the actions of viewing the report and deleting the embed code to revoke it.
+![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
 ## Organization visuals
 
-The organization visuals tab enables you to deploy and manage custom visuals inside your organization, so you can easily deploy proprietary custom visuals in the organization, for report authors to easily discover and import those visuals directly from Power BI Desktop into their reports.
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
-The page shows all the custom visuals that are currently deployed in the organization repository.
+> [!WARNING]
+> A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
+
+The following image shows all the custom visuals that are currently deployed in an organization's repository.
 
 ![Org admin visual](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### Add a new custom visual
 
-To add a new custom visual to the list, select **Add a custom visual**
+To add a new custom visual to the list, follow these steps. 
 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+1. In the right pane, select **Add a custom visual**.
 
-> [!WARNING]
-> A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the origination repository.
+    ![Custom visuals form](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
-Fill in the fields:
+1. Fill in the **Add custom visual** form:
 
-* Choose a .pbiviz file (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
+    * **Choose a .pbiviz file** (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
 
-Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards. Read more about custom visuals security.
+    Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards.
 
-* Name your custom visuals (required): give a short title to the visual so Power BI Desktop users easily understand what it does
+    * **Name your custom visual** (required): give a short title to the visual so Power BI Desktop users easily understand what it does
 
-* Icon (required): The icon file that is shown in the Power BI Desktop UI.
+    * **Icon**: The icon file that is shown in the Power BI Desktop UI.
 
-* Description: a short description of the visual to provide more context and education to the user
+    * **Description**: a short description of the visual to provide more context and education to the user
 
-Select "Apply" to initiate the upload request. If successful you can see the new item in the list. If failed, you can get an appropriate error message
+1. Select **Add** to initiate the upload request. If successful you can see the new item in the list. If failed, you can get an appropriate error message
 
 ### Delete a custom visual from the list
 
-Select the trash bin icon to permanently delete the visual from the repository.
-Important: deletion is irreversible. Once deleted, the visual immediately stops rendering in existing reports. Even if you upload the same visual again, it won't replace the previous one that was deleted, users can import the new visual again and replace the instance they have in their reports.
+To permanently delete a visual, select the trash bin icon for the visual in the repository.
+
+> [!IMPORTANT]
+> Deletion is irreversible. Once deleted, the visual immediately stops rendering in existing reports. Even if you upload the same visual again, it won't replace the previous one that was deleted. However, users can import the new visual again and replace the instance they have in their reports.
 
 ### Disable a custom visual in the list
 
@@ -368,15 +367,16 @@ However, visuals that are bookmarked still work.
 
 After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser in the Power BI service to see the updates.
 
-### How to update a visual
+### Update a visual
 
-If you'd like to update a visual in the repository because there is a new version of the visual (e.g. bug fixes, new functionality, etc.), select the **Update** icon, and upload the new file. Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
+To update the visual from the organizational store, select the gear icon. Browse and upload a new version of the visual.
+
+Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
 ## Next steps
 
-[Understanding the Power BI admin role](service-admin-role.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 [Manage Power BI Premium](service-admin-premium-manage.md)  
-[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
