@@ -139,6 +139,7 @@ In order to [promote your solution to production](https://docs.microsoft.com/pow
 [PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - see Product availability manager
 
 Available regions (16 - same regions as Power BI)
+
 * US (6) - East US, East US 2, North Central US, South Central US, West US, West US 2
 * Europe (2) - North Europe, West Europe
 * Asia Pacific (2) - Southeast Asia, East Asia
@@ -159,7 +160,7 @@ If you already have an Azure AD tenant, you can use your existing directory, or 
 
 To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
-### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
+### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
 
 It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
 The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
@@ -189,6 +190,16 @@ Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan 
 
 **Dashboards** and **tiles** that are built from content pack datasets *cannot* be embedded, however **reports** built from a content pack dataset *can* be embedded.
 
+### What is the difference between using RLS for data filters and JavaScript filters?
+
+There’s often confusion around when to use RLS vs. JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
+
+In an RLS case, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
+
+In a client-side filtering case, the ISV might decide what the end user sees at the initial view, but the ISV cannot control changes the end user might apply to the view itself. Even though data filtering can happen on the backend, it’s triggered by the JavaScript client code, and therefore it can be changed by an end user, and cannot be considered secure.
+
+Please reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
+
 ## Licensing
 
 ### How do I purchase Power BI Embedded?
@@ -203,7 +214,7 @@ Customers will continue to pay for any existing Power BI Premium purchases until
 
 No, Power BI Embedded includes the Azure based capacity that you need to deploy and distribute your solution to customers.
 
-### What’s the purchase commitment for Power BI Embedded? 
+### What’s the purchase commitment for Power BI Embedded?
 
 Customers may change their usage on an hourly basis. There is no monthly or annual commitment for the Power BI Embedded service.
 
@@ -276,7 +287,7 @@ Some of the features are:
 * New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
-## Embedding setup tool for embedding
+## Embedding setup tool
 
 ### What is the Embedding setup tool?
 

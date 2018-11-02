@@ -136,17 +136,20 @@ Roles can be provided with the identity in an embed token. If no role is provide
 
 ### Using the CustomData feature
 
-The CustomData feature allows passing free text (string) using the CustomData connection string property, a value to be used by AS (via the CUSTOMDATA() function).
-You can use CUSTOMDATA() function as an alternative way to customize data consumption.
+The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using Analysis Services as your data source.
+
+The CustomData feature allows passing free text (string) using the CustomData connection string property. This value is used by Analysis Services via the CUSTOMDATA() function.
+
+You can use the CUSTOMDATA() function as an alternative way to customize data consumption.
+
 You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
 CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
 
-> [!NOTE]
-> The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
+The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
 
-**CustomData SDK Additions**
+#### CustomData SDK Additions
 
-CustomData string property was added to our effective identity in the token generation scenario.
+The CustomData string property was added to our effective identity in the token generation scenario.
 
         [JsonProperty(PropertyName = "customData")]
         public string CustomData { get; set; }
@@ -155,7 +158,7 @@ The identity can be created with custom data using the following call:
 
         public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
 
-**CustomData SDK Usage**
+#### CustomData SDK Usage
 
 If you are calling the REST API, you can add custom data inside each identity, for example:
 
@@ -173,6 +176,30 @@ If you are calling the REST API, you can add custom data inside each identity, f
 }
 ```
 
+Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
+
+1. Create your Azure Analysis Services database.
+
+    ![Analyis Services database](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Create a Role in the Analysis Services server
+
+    ![Create Role](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Set your Row filter DAX query using CustomData().
+
+    ![Set Row Filter](media/embedded-row-level-security/azure-analysis-services-database-row-filters.png)
+
+4. Build a PBI report and publish it to a workspace with dedicated capacity
+
+    ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+5. Use the Power BI APIs to use the CustomData() feature in your application
+
+    ![Before Custom Data is applied](media/embedded-row-level-security/customdata-before.png)
+
+    ![After CustomData is applied](media/embedded-row-level-security/customdata-after.png)
+
 ## Using RLS vs JavaScript filters
 
 When deciding on filtering your data in a report, you can use **row-level security (RLS)** or **JavaScript filters**.
@@ -184,15 +211,6 @@ When deciding on filtering your data in a report, you can use **row-level securi
 * Programmatically with an [Embed Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Granular access to the data can only be applied with RLS and not through client-side filtering APIs.
-
-There’s often confusion around when to use RLS vs. JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
-
-In an RLS case, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
-
-In a client-side filtering case, the ISV might decide what the end user sees at the initial view, but the ISV cannot control changes the end user might apply to the view itself. Even though data filtering can happen on the backend, it’s triggered by the JavaScript client code, and therefore it can be changed by an end user, and cannot be considered secure.
-
-> [!NOTE]
-> The user can choose to completely remove the filters, even if the ISV application doesn’t display the filters/slicers for the user to interact with and applies them through the JavaScript APIs.
 
 ## Considerations and limitations
 
