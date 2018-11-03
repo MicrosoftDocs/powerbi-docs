@@ -8,51 +8,71 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/25/2018
+ms.date: 11/02/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # The new Filters experience in Power BI reports (Preview)
 
-This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. Report designers in Power BI Desktop and in the Power BI service can now design the filters pane to look like and act with the whole report. 
+This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. When you design reports in Power BI Desktop and in the Power BI service, you can make the Filters pane to look like and act with the whole report. In the new experience, the old Filters pane acts as a filter editing pane, and the new Filter pane is the only one your report consumers see.
  
 Default view (no additional customization applied)
 
 As a report designer, here's what you can do with the new filters:
 
-- Show a read-only view of filters in the visual header, so consumers know exactly what filters or slicers are affecting a given visual
-- Format and customize the filter pane so that it feels part of your report
-- Flexibility of defining default expand / collapsed filter pane at report load time for consumers
-- Hide the entire filter pane or specific filters that you don’t want report consumers to see
-- Control and even bookmark the visibility, open, and collapsed state of the new filter pane
-- Lock filters that you don’t want consumers to edit
+- Show a read-only view of filters in the visual header, so consumers know exactly what filters or slicers are affecting a given visual.
+- Format and customize the filter pane so that it feels part of your report.
+- Define whether the Filters pane is open or collapsed by default when a consumer opens the report.
+- Hide the entire filter pane or specific filters that you don’t want report consumers to see.
+- Control and even bookmark the visibility, open, and collapsed state of the new filter pane.
+- Lock filters that you don’t want consumers to edit.
 
 ## Turn on the new filter experience 
 
-Since this new filter experience is in Preview, you must first enable it in Power BI Desktop. To do so, select File > Options and Settings > Options > Preview Features, then select the New filter experience checkbox. You’ll need to restart Power BI Desktop after you make this selection.
- 
+### Turn on new filters for all new reports
 
-Once this experience has been enabled, all new reports you create will be enabled for this experience by default. 
-If desired, you can also enable this experience for an old report. To configure this experience per old report, select File > Options and Settings > Options > Report settings. Keep in mind you’ll need to restart Power BI Desktop after you make a configuration change.
- 
-Once the experience is enabled, the new filter pane and the read only filter view per visual will start working. 
-Building the new filter pane
-Once the new filter pane is enabled, you’ll see it attached to the report page. It will be formatted by default based on your current report settings. This new filter pane is what your report consumers will see when you publish your report, and the older filter pane now acts as a filter editing pane. This means you can update existing filters through the new pane, but you’ll use the older filter pane to configure which filters to include.
-Note: Wondering why we have two filter panes? The new filter pane gives you a taste of what your report consumers will see without publishing the report (same as any other visual in your report). In a few months, we will remove the old filter pane and the new pane will be used to add new filters as well.
-To start with building your new filter pane, drag and drop the fields of interest into the filter editor pane. 
- 
+Because this new filter experience is in Preview, you must first enable it in Power BI Desktop. 
 
+1. Select **File** > **Options and Settings** > **Options** > **Preview Features**, then select the **New filter experience** checkbox. 
+2. Restart Power BI Desktop to see the new filter experience in all new reports.
 
-Report creator can completely hide the filter pane from the report consumers by clicking on the eye icon as highlighted above.
-Report creators can also use the filter editing pane to lock or hide individual filter cards. As you toggle these settings in the editor, you’ll see the changes reflected in the new filter pane. Hiding filter cards is typically useful if report authors are trying to hide data cleanup filters that exclude nulls or unexpected values. It is important to note that hidden filters will not show up in read only per visual filter pop-up.
+After you enable the new filter experience, it's enabled  by default for all new reports you create.  
+
+### Turn on new filters for an existing report
+
+You can also enable the new filters for existing reports.
+
+1. In an existing report, select **File** > **Options and Settings** > **Options** > **Report settings**. 
+2. Restart Power BI Desktop to see the new filter experience in this report.
  
+After you restart Power BI Desktop, you can start working with the filter editing pane and the read-only filter pane.
+
+## Build the new filter pane
+
+After you enable the new filter pane, you see it to the right of the report page, formatted by default based on your current report settings. The old filter pane now acts as the filter editing pane. The new filter pane shows you what your report consumers will see when you publish your report. You can update existing filters in the new pane, but you use the older filter pane to configure which filters to include.
+
+1. First decide if you want your report consumers to see the filter pane. If you want them to see it, select the eye icon ![Eye icon](media/power-bi-report-filter-preview/power-bi-filter-off-eye-icon.png) next to Filters.
+
+2. To start building your new filter pane, drag fields of interest into the filter editing pane either as visual, page, or report level filters. You see them in the new Filters pane.
+
+  ![power-bi-filters-new-filters-pane.png](media/power-bi-report-filter-preview/power-bi-filters-new-filters-pane.png)
+ 
+## Lock or hide filters
+
+You can lock or hide individual filter cards. If you lock a filter, your report consumers can see but not change it. If you hide it, they can't even see it. Hiding filter cards is typically useful if you need to hide data cleanup filters that exclude nulls or unexpected values. 
+
+- In the filter editing pane, select or clear the **Lock filter** or **Hide filter** icons in a filter card.
+
+   ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-hide-lock.gif)
+
+As you turn these settings on and off in the filter editing pane, you see the changes reflected in the new filter pane. Note that hidden filters will not show up in read only per visual filter pop-up.
+ 
+## Formatting the new filter pane
 
 When building your filter pane, you can also configure your filter pane state to flow with your report bookmarks. The pane’s open, close, and visibility state are all bookmarkable.
  
 
-
-Formatting the new filter pane
 A big part of this new experience is that you can now format the filter pane to match the look and feel of your report.
 Report authors can format the following for the filter pane: 
 •	Background color of the filter pane
