@@ -132,7 +132,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                                       <h3>Develop for Power BI</h3> 
                                                                                       <p></p>
                                                                                             <a href="developer/embedding.md">Embedding with Power BI</a><br/> 
-                                                                                            <a href="custom-visual-develop-tutorial.md">Develop custom visuals</a><br/> 
+                                                                                            <a href="developer/custom-visual-develop-tutorial.md">Develop custom visuals</a><br/> 
                                                                                             <a href="https://docs.microsoft.com/rest/api/power-bi">Power BI REST APIs</a>
                                                                         </div> 
                                                           </div> 
