@@ -21,7 +21,7 @@ When you run `pbiviz` in your terminal's command line, you should see the help s
 
 The debug visual looks like a prompt icon within the **Visualizations** tab.
 
-![Visual selection](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
 If you don't see it, make sure you have enabled it within the Power BI settings.
 

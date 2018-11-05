@@ -686,9 +686,9 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial.md",
-            "redirect_url": "/power-bi/service-custom-visuals-getting-started-with-developer-tools",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/service-custom-visuals-getting-started-with-developer-tools.md",
+            "redirect_url": "/power-bi/developer/custom-visual-develop-tutorial",
+            "redirect_document_id": false
         }
     ]
 }
