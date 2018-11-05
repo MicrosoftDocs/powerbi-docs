@@ -101,7 +101,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-If you are calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a user name, list of string roles and list of string datasets. 
+If you are calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a username, list of string roles and list of string datasets. 
 
 Use the following code below as an example:
 
@@ -136,16 +136,16 @@ Roles can be provided with the identity in an embed token. If no role is provide
 
 ### Using the CustomData feature
 
-The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using Analysis Services as your data source.
+The CustomData feature only works for models that reside in **Azure Analysis Services**, and it only works in live mode. Unlike users and roles, the Customdata feature can't be set inside a .pbix file. When generating a token with the Customdata feature, you need to have a username.
 
-The CustomData feature allows passing free text (string) using the CustomData connection string property. This value is used by Analysis Services via the CUSTOMDATA() function.
+The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
-You can use the CUSTOMDATA() function as an alternative way to customize data consumption.
+The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services use this value via the *CUSTOMDATA()* function.
+
+The only way to have dynamic RLS (which uses dynamic values for filter evaluation) in **Azure Analysis Services**, is using the *CUSTOMDATA()* function.
 
 You can use it inside the role DAX query, and you can use it without any role in a measure DAX query.
 CustomData feature is part of our token generation functionality for the following artifacts: dashboard, report, and tile. Dashboards can have multiple CustomData identities (one per tile/model).
-
-The CustomData feature will only work for models that reside in Azure Analysis Services, and it only works in live mode. Unlike users and roles, the custom data feature can't be set inside a .pbix file. When generating a token with the custom data feature you must a have user name.
 
 #### CustomData SDK Additions
 
@@ -178,29 +178,67 @@ If you are calling the REST API, you can add custom data inside each identity, f
 
 Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
 
-1. Create your Azure Analysis Services database.
+1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
 
-    ![Analyis Services database](media/embedded-row-level-security/azure-analysis-services-database.png)
+    ![Create an Azure Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
-2. Create a Role in the Analysis Services server
+    ![Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Create a Role in the Analysis Services server.
 
     ![Create Role](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
 
-3. Set your Row filter DAX query using CustomData().
+3. Set your Row filter DAX query using the *CUSTOMDATA()* function.
 
     ![Set Row Filter](media/embedded-row-level-security/azure-analysis-services-database-row-filters.png)
 
-4. Build a PBI report and publish it to a workspace with dedicated capacity
+4. Build a PBI report and publish it to a workspace with dedicated capacity.
 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
-5. Use the Power BI APIs to use the CustomData() feature in your application
+5. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
+
+    Here is some sample code.
+
+    ```csharp
+    // create 'EffectiveIdentity' to use with 'CustomData'
+
+    // set properties separately
+    var effectiveIdentity = new EffectiveIdentity();
+    effectiveIdentity.Username = username;
+    effectiveIdentity.Datasets = new string[] { report.DatasetId };
+
+    // check for roles
+    if (!string.IsNullOrEmpty(roles))
+    {
+    effectiveIdentity.Roles = roles.Split(',');
+    }
+
+    // check for customdata
+    if (!string.IsNullOrEmpty(customData))
+    {
+    effectiveIdentity.CustomData = customData;
+    }
+
+    // Generate Embed Token with effective identities.
+    generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { effectiveIdentity });
+    }
+    // if username is empty, roles or customeData are not empty 
+    else if (string.IsNullOrEmpty(username) && (!string.IsNullOrEmpty(roles) || !string.IsNullOrEmpty(customData)))
+    {
+    result.ErrorMessage = "Failed to generate embed token.";
+
+    return View(result);
+    }
+    ```
+6. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
 
     ![Before Custom Data is applied](media/embedded-row-level-security/customdata-before.png)
 
+    Then apply the Customdata value(s) to see how the report displays a different set of data.
     ![After CustomData is applied](media/embedded-row-level-security/customdata-after.png)
 
-## Using RLS vs JavaScript filters
+## Using RLS vs. JavaScript filters
 
 When deciding on filtering your data in a report, you can use **row-level security (RLS)** or **JavaScript filters**.
 
