@@ -190,13 +190,13 @@ Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan 
 
 **Dashboards** and **tiles** that are built from content pack datasets *cannot* be embedded, however **reports** built from a content pack dataset *can* be embedded.
 
-### What is the difference between using RLS for data filters and JavaScript filters?
+### What is the difference between using RLS vs. JavaScript filters?
 
 There’s often confusion around when to use RLS vs. JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
 
-In an RLS case, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
+For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
 
-In a client-side filtering case, the ISV might decide what the end user sees at the initial view, but the ISV cannot control changes the end user might apply to the view itself. Even though data filtering can happen on the backend, it’s triggered by the JavaScript client code, and therefore it can be changed by an end user, and cannot be considered secure.
+For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but the ISV cannot control changes the end user might apply to the view itself. Even though data filtering can happen on the backend, it’s triggered by the JavaScript client code, and therefore it can be changed by an end user, and cannot be considered secure.
 
 Please reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
