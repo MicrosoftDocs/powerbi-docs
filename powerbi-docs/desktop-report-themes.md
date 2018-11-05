@@ -107,7 +107,7 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
 
 From there, you can enter your own color hex code for your selected colors.
 
-Starting with the September 2017 version of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to affect, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
+Starting with the September 2017 version of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
 The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family. Or you can turn off data labels for specific chart types.
 
@@ -134,23 +134,23 @@ Maybe you also want to manually set the color of a data point color by using the
 Also, many **Custom Visuals** won't apply to Report Themes.
 
 ## Report Theme files you can use right now
-Want to get started with **Report Themes**? Great! Here are a few ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report. We've also included an image of the Report Theme that's applied to the report in this article.
+Want to get started with **Report Themes**? Here are a few ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report. We've also included an image of the Report Theme that's applied to the report in this article.
 
 * The [theme](https://go.microsoft.com/fwlink/?linkid=843924) used in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of **Report Themes**, called [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
-![The waverform.json theme](media/desktop-report-themes/report-themes_10.png)
+  ![The waverform.json theme](media/desktop-report-themes/report-themes_10.png)
 
 * The [theme that's easier to read for the visually impaired](https://go.microsoft.com/fwlink/?linkid=843923) than the default color theme. It's called [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
-![The ColorblindSafe-Longer.json theme.](media/desktop-report-themes/report-themes_11.png)
+  ![The ColorblindSafe-Longer.json theme.](media/desktop-report-themes/report-themes_11.png)
 
 * A group of [Power View themes](https://go.microsoft.com/fwlink/?linkid=843925) wrapped in a zip file, including one called [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925), which is shown below.
 
-![The Apothecary.json theme](media/desktop-report-themes/report-themes_12.png)
+  ![The Apothecary.json theme](media/desktop-report-themes/report-themes_12.png)
 
-* Lastly, here's one that is love-ly (the *Valentine's Day* theme) and sure to get your attention.
+* Lastly, here's the *Valentine's Day* theme.
 
-![The Valentine's Day theme](media/desktop-report-themes/report-themes_13.png)
+  ![The Valentine's Day theme](media/desktop-report-themes/report-themes_13.png)
 
 Rather than give you a download, we've provided the code for the Valentine's day JSON file:
 
@@ -162,7 +162,7 @@ Rather than give you a download, we've provided the code for the Valentine's day
         "tableAccent": "#990011"
     }
 
-**Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. Enjoy them; they're easy!
+**Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. 
 
 Here are a few more report themes you can use as starting points:
 
@@ -193,7 +193,7 @@ To create an extended-format JSON file, with more detailed and granular control 
 For the **visualName** and **cardName** sections,   use a specific visual and cardName. Use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can also use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family for the visuals.
 
 > [!NOTE]
-> You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
+> You only need to specify the formatting elements you want to adjust. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
 > 
 > 
 
