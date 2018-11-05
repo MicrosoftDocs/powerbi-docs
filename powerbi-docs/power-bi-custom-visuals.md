@@ -156,10 +156,15 @@ You have two options for downloading and importing custom visuals; from within P
 
 7. Import the '.pbiviz' file into your report (See [Import a custom visual from a file](#import-a-custom-visuals-from-a-file) section above)
 
-## Considerations and troubleshooting
+## Considerations and limitations
 
-- A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
+* A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
 
-- If you don't see a **Visualizations** pane, that means you do not have edit permissions for the report.  You can only add custom visuals to reports you can edit, not to reports that have been shared with you.
+* If you don't see a **Visualizations** pane, that means you do not have edit permissions for the report.  You can only add custom visuals to reports you can edit, not to reports that have been shared with you.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+## Next Steps
+
+* For more information and answers to questions, visit [frequently asked questions](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+* For information about troubleshooting, visit [Troubleshooting your Power BI custom visuals](power-bi-custom-visuals-troubleshoot.md).
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/).
