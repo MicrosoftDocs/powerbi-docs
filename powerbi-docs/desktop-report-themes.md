@@ -174,7 +174,7 @@ Here are a few more report themes you can use as starting points:
 ## Report theme JSON file format
 The basic JSON file has five required lines:
 
-* **name** : The theme name, which is the only required field
+* **name**: The theme name, which is the only required field.
 * **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
 * **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
 
