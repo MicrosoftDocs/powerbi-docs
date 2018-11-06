@@ -20,13 +20,13 @@ Paginated reports have a their own icon, ![Paginated report icon](media/paginate
 
 You can also export paginated reports to a number of formats: 
 
-    - Microsoft Excel
-    - Microsoft Word
-    - Microsoft PowerPoint
-    - PDF
-    - Comma-separated values
-    - XML
-    - Web archive (.mhtml)
+- Microsoft Excel
+- Microsoft Word
+- Microsoft PowerPoint
+- PDF
+- Comma-separated values
+- XML
+- Web archive (.mhtml)
 
 ## View a paginated report
 
