@@ -61,7 +61,7 @@ The **Filters** tab enables you to select a capacity, a date range, and other op
 
 * **(B)** Name and **(C)** information are updated based on what you select in **(A)**, allowing you to filter on a workload by name. For example, in the image above, **Dataflows** is selected, showing **Dataflows Name** and **Dataflows Information**.
 
-* **(E)** Capacity information, which indicates if datasets, paginated reports, or dataflows are enabled for a capacity.
+* **(D)** Capacity information, which indicates if datasets, paginated reports, or dataflows are enabled for a capacity.
 
 ### Datasets tab
 
@@ -71,7 +71,7 @@ Use the buttons at the top of the **Datasets** tab to navigate to different area
 
 #### Summary area
 
-The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads.
+The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads. It shows the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
@@ -86,7 +86,7 @@ The **Refreshes** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Refresh reliability** | * Total Count: Total refreshes for each workspace<br> * Reliability: the percentage of the refresh that completed<br> * Avg Wait Time: The average lag between the scheduled time and start of a refresh for the workspace, in minutes<br> * Max Wait Time: The maximum wait time for the workspace, in minutes <br> * Avg Duration: The average duration of refresh for the workspace, in minutes<br> * Max Duration: The duration of the longest-running refresh for the workspace, in minutes |
+| **Refresh reliability** | * Total Count: Total refreshes for each workspace<br> * Reliability: the percentage of refreshes that completed for each workspace<br> * Avg Wait Time: The average lag between the scheduled time and start of a refresh for the workspace, in minutes<br> * Max Wait Time: The maximum wait time for the workspace, in minutes <br> * Avg Duration: The average duration of refresh for the workspace, in minutes<br> * Max Duration: The duration of the longest-running refresh for the workspace, in minutes |
 | **Top 5 Datasets by Average Refresh Duration** | * The five datasets with the longest average refresh duration in minutes |
 | **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average refresh wait time,  in minutes |
 | **Hourly Average Refresh Wait Times** | * The average refresh wait time, split into one hour buckets, reported in local time. Multiple spikes with high refresh wait times are indicative of the capacity running hot. |
@@ -99,7 +99,7 @@ The **Query Durations** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days * Total: The total number of queries run for the workspace<br> * Average: The average query duration for the workspace, in milliseconds<br> Max: The duration of the longest-running query in the workspace, in milliseconds|
+| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the workspace<br> * Average: The average query duration for the workspace, in milliseconds<br> Max: The duration of the longest-running query in the workspace, in milliseconds|
 | **Query Duration Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 30ms, 30-100ms, 100-300ms, 300ms-1sec, 1sec-3sec, 3sec-10sec, 10sec-30sec, and > 30 seconds intervals. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed. |
 | **Top 5 Datasets by Average Duration** | * The five datasets with the longest average query duration, in milliseconds |
 | **Direct Query / Live Connections (> 80% Utilization)** | * The times that a direct query or live connection exceeded 80% CPU utilization, split into one hour buckets, reported in local time |
@@ -112,7 +112,7 @@ The **Query Waits** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days * Total: The total number of queries run for the workspace<br> * Wait count: The number of queries in the workspace that waited on system resources before starting execution <br> * Average: The average query wait time for the workspace, in milliseconds<br> Max: The duration of the longest-waiting query in the workspace, in milliseconds|
+| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the workspace<br> * Wait count: The number of queries in the workspace that waited on system resources before starting execution <br> * Average: The average query wait time for the workspace, in milliseconds<br> Max: The duration of the longest-waiting query in the workspace, in milliseconds|
 | **Wait Time Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 50ms , 50-100ms , 100-200ms , 200-400ms 400ms-1sec , 1 sec-5 sec and > 5 seconds intervals |
 | **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average wait time to start executing a query,  in milliseconds |
 | **Hourly Query Wait Counts and Times** | * Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time |
@@ -125,7 +125,7 @@ The **Datasets** area contains the following metrics.
 | **Report section** | **Metrics** |
 | --- | --- |
 | **Dataset Eviction Counts** | * Total: The total number of dataset *evictions* for each capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU).|
-| **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets reported in local time |
+| **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
 |  |  |
 
 ### Paginated reports tab
@@ -141,6 +141,8 @@ abc
 The **System** tab shows CPU and memory consumption across all capacities and workloads.
 
 ![Premium System report](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+The **System** tab contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
