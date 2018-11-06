@@ -125,7 +125,7 @@ Deleting an app from your app list page does not delete the app for other member
 
    ![select Apps](media/service-delete/power-bi-delete-app.png)
 
-   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to re-send it, you can find the original email with the link to the app, you can check your [Notifications center](service-notification-center.md) to see if the notification for that app is still listed, or you can check your organization's [AppSource](service-install-use-apps.md).
+   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to re-send it, you can find the original email with the link to the app, you can check your [Notifications center](service-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](consumer/end-user-apps.md).
 
 ## Considerations and troubleshooting
 This article covered how to delete the major building blocks of Power BI service. But there are more things that you can delete in Power BI.  

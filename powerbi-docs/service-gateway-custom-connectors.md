@@ -51,6 +51,6 @@ When this option is enabled, you now see your custom connectors as available dat
 * [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 * [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 * [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
-* [Use Kerberos for SSO (single sign-on) from Power BI to On-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Use Kerberos for SSO (single sign-on) from Power BI to On-premises data sources](service-gateway-sso-kerberos.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

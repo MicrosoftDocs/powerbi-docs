@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 10/23/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -47,6 +47,8 @@ Selecting the **Extract table using examples** presents an interactive window wh
 In this example, we'll extract the *Name* and *Price* for each of the games on the page. We can do that by specifying a couple of examples from the page for each column, as shown in the following image. As those examples are typed in, **Power Query** (which is the underlying technology that extracts the data from the Web page) is able to extract data that fits the pattern of example entries using smart data extraction algorithms.
 
 ![data by example](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+
+> Note: Value suggestions only include values less than or equal to 128 characters in length.
 
 Once we're happy with the data extracted from the Web page, we select **OK** to go to **Query Editor**, where we can apply more transformations or shape the data, such as combining this data with other data our sources.
 
