@@ -19,15 +19,15 @@ With **dataflows**, you can create a collection of data from various sources, cl
 
 ![Dataflows and gateways](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> Note: The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
->
+> [!NOTE]
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
  
 ## Configuring an Enterprise Gateway for use with dataflows
 
 To use an on-premises data source in a dataflow, any user creating the dataflow must have an **Enterprise Gateway** installed and configured. The user creating the dataflow also must be the Enterprise Gateway's administrator in order to use that gateway for a dataflow.
 
-> Note: Dataflows are only supported using Enterprise Gateways.
->
+> [!NOTE]
+> Dataflows are only supported using Enterprise Gateways.
 
 ## Using an on-premises data source in a dataflow
 
@@ -53,7 +53,8 @@ You can change the Enterprise Gateway used for a given dataflow in two ways:
 
 1. **From the authoring tool** – you can change the gateway assigned to all of your queries using the dataflow authoring tool.
 
-    > Note: The dataflow will try to find or create the required datasources using the new gateway. If it cannot do so, you will not be able to change the gateway until all needed dataflows are available from the selected gateway.
+    > [!NOTE]
+    > The dataflow will try to find or create the required datasources using the new gateway. If it cannot do so, you will not be able to change the gateway until all needed dataflows are available from the selected gateway.
 
 2. **From the settings screen** - you can change the assigned gateway using the settings screen for the dataflow in the Power BI service.
 
@@ -68,8 +69,6 @@ There are a few known limitations to using Enterprise Gateways and dataflows:
 * If several gateways are needed, the best practice is to build several dataflows (one for each gateway) and use the compute or entity reference capabilities to unify the data.
 * Dataflows are only supported using enterprise gateways. Personal gateways will not be available for selection in the drop down lists and settings screens.
 
-You can read more about compute in dataflows here. <provide link to compute how to>
-You can read more about entity reference in dataflows here <provide link to entity ref here>
 
 ## Next Steps
 

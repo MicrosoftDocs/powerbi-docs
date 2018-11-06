@@ -80,7 +80,7 @@ The following articles may be useful as you create or work with dataflows.
 * [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:

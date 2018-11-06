@@ -28,8 +28,9 @@ There are two ways you can connect dataflow data to Power BI:
 
 The following sections describe how to create computed entities on your dataflow data.
 
-> Note: The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
->
+> [!NOTE]
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+
 
 ## How to create computed entities 
 
@@ -80,7 +81,7 @@ This article described computed entities and dataflows available in the Power BI
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:

@@ -17,14 +17,15 @@ LocalizationGroup: Data from files
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics, to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With **self-service data prep** for big data in Power BI, you can go from data to Power BI insights with just a few clicks.
 
-![Use dataflows in Power BI](media/service-dataflows-overview/powerbi-dataflows_01a.png)
+![Use dataflows in Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
 Power BI introduces **dataflows** to help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Dataflows are used to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. In addition, the new model-driven calculation engine that's part of dataflows makes the process of data preparation more manageable, more deterministric, and less cumbersome for data analysts and report creators alike. Similar to how spreadsheets handle recalculations for all affected formulas, dataflows manage changes for an entity or data element on your behalf, automating updates, and alleviating what used to be tedious and time consuming logic checks for even a basic data refresh. With dataflows, tasks that once required data scientists to oversee (and many hours or days to complete) can now be handled with a few clicks by analysts and report creators. 
 
 Data is stored as entities in [the **Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) in Azure Data Lake Storage Gen2. Dataflows are created and managed in app workspaces by using the Power BI service.  
 
-> Note: The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
->
+> [!NOTE]
+> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+
  
 **Dataflows** are designed to use the **Common Data Model**, a standardized, modular, extensible collection of data schemas published by Microsoft that are designed to make it easier for you to build, use, and analyze data. With this model, you can go from data sources to Power BI dashboards with nearly zero friction.
 
@@ -43,9 +44,6 @@ Here are some examples of how dataflows can work for you:
 * Organizations can map their data to standard entities in the Common Data Model or create their own custom entities. These entities can then be used as building blocks to create reports, dashboards, and apps that work out of the box, and distribute them to users across their organization. 
 
 * Using the extensive collection of Microsoft data connectors, organizations can connect their own data sources to dataflows, using Power Query to map the data from its origin and bring it into Power BI. Once that data is imported by a dataflow (and refreshed at a specified frequency), those dataflow entities may be used in the Power BI Desktop application to create compelling reports and dashboards. 
-
-* Developers who create their own model.json must set up their own Azure Data Lake Storage Gen2 instance and populate it in the defined model. Developers can create the (single) model.json file for the model, or they can use APIs to bring data into the model for subsequent creation of Power BI analytics.
-
 
 ## How to use dataflows
 
@@ -66,11 +64,6 @@ Power BI can be configured to store dataflow data in your organization’s Azure
 
 Power BI can also connect to folders with schematized data in the Common Data Model format, which are stored your organization’s Azure Data Lake Storage account. These folders can be created by services such as Azure data services. By connecting to these folders, analysts can work seamlessly with this data in Power BI. 
 
-### Add CSV data from Azure Blob Storage
-
-You can also add CSV data from **Azure Blob Storage** containers into Power BI as dataflows. These dataflows cannot be edited or modifying in the Power BI service, but their data can be accessed and read using the dataflow connector. 
-
-This is an advanced featurea and is available only using the programmatic interfaces for dataflows. To learn more about how to add CSV file data from **Azure Blob Storage** containers to Power BI, you can download and read the [step-by-step guide to adding an external dataflow to Power BI](https://go.microsoft.com/fwlink/?linkid=2012815&clcid=0x409).
 
 ## Dataflow capabilities on Power BI Premium
 
@@ -117,7 +110,7 @@ This article provided an overview of self service data prep for big data in Powe
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:

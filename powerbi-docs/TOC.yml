@@ -774,7 +774,7 @@
       - name: "Computed entities with Power BI Premium"
         href: service-dataflows-computed-entities-premium.md
       - name: "Using dataflows with on-premises data sources"
-        href: service-dataflows-onpremises-gateways.md    
+        href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows (preview)"
         href: service-dataflows-linked-entities.md      
       - name: "Using incremental refresh with dataflows (preview)"

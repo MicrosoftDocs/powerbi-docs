@@ -31,8 +31,8 @@ There are three primary steps to using a dataflow:
 
 In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let’s get started.
 
-> Note: The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
->
+> [!NOTE]
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Creating a dataflow
 To create a dataflow, launch the Power BI service in a browser then select an **app workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
@@ -66,7 +66,7 @@ Once connected, you can select which data to use for your entity. When you choos
 
 Once you select the data for use in the entity, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
 
-### Using the dataflow editor to shape your entities
+### Using the dataflow editor
 
 Once you select which data from your source to use for your entity, you can shape your data selection into a form that works best for your entity, using a Power Query editing experience, similar to the **Power Query Editor** in **Power BI Desktop**. You can learn more about Power Query (Power Query is incorporated into Power BI Desktop as the Power Query Editor) in the [Query overview article](desktop-query-overview.md) for Power BI Desktop. 
 
@@ -107,7 +107,7 @@ When you’re ready and select the **Save** button, a window appears that lets y
 
 Great – now you’re ready for the next step, which is scheduling the refresh frequency of your data sources.
 
-## Schedule the refresh frequency of your data sources
+## Schedule the refresh frequency
 
 Once your dataflow has been saved, you’ll want to schedule the refresh frequency for each of your connected data sources.
 
@@ -126,7 +126,7 @@ When you select the **Schedule refresh** icon you’re taken to the **Schedule r
 For more information about scheduling refresh, see the article about [configuring scheduled refresh](refresh-scheduled-refresh.md), which describes the refresh behavior of Power BI datasets. Dataflows behave the same behavior as Power BI datasets in terms of refresh settings. 
 
 
-## Connect to your dataflow using Power BI Desktop
+## Connect to your dataflow in Power BI Desktop
 
 Once you’ve created your dataflow and you have scheduled the refresh frequency for each data source that will populate the model, you’re ready for the third and final step, which is connecting to your dataflow from within **Power BI Desktop**. 
 
@@ -141,7 +141,7 @@ You can also use the **search bar**, near the top of the window, to quickly find
 When you select the entity and then select the **Load** button, the entities appear in the **Fields** pane in **Power BI Desktop**, and appear and behave just like **tables** from any other dataset.
 
 
-## Troubleshooting data connections for dataflows
+## Troubleshooting data connections
 
 There may be occasions when connecting to data sources for dataflows run into issues. This section provides troubleshooting tips when such issues arise. 
 
@@ -155,7 +155,7 @@ This article described how you can create your own **dataflow** and create a dat
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
 
 For more information about the Common Data Model, you can read its overview article:

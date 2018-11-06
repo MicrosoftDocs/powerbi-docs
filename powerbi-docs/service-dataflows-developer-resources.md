@@ -15,6 +15,11 @@ LocalizationGroup: Data from files
 ---
 # Developer resources for Power BI dataflows (Preview)
 
+There are many ways to use dataflows with no code, by creating or connecting to entities in the Power BI service and connecting to them in Power BI Desktop. Many organizations want the flexibility to develop their own solutions. This article provides information about the Power BI REST API and other developer resources.
+
+
+## Developer resources
+
 The following developer resources are available for working with Power BI dataflows:
 
 
@@ -30,7 +35,7 @@ This article provided information about developer resources for dataflows. For m
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-onpremises-gateways.md)
+* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
