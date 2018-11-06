@@ -33,7 +33,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
    You may not be able to change it. If not, then contact your Power BI Premium capacity admin to give you assignment rights to add your workspace to a Premium capacity.
 
 
-## Upload a paginated report to the Power BI service
+## Upload a paginated report
 
 1. Create your paginated report in Report Builder and save it to your local computer.
 
@@ -67,7 +67,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
  
     ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
-## Create a gateway to an on-premises data source
+## Create a gateway
 
 Just like any other Power BI report, if the report data source is on premises, then you need to create or connect to a gateway to access the data.
 

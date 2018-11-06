@@ -17,6 +17,8 @@ In this article, you learn how to interact with parameters for paginated reports
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters for **Buying Group**, **Location**, a **From Date**, and a **To Date**.  
 
+## Parameters pane in the Power BI service
+
 ![View paginated report with parameters](media/paginated-reports-view-parameters/power-bi-paginated-view-parameters.png)
   
 1.  **Parameters pane** The report viewer toolbar displays a prompt such as "Required" or a default value for each parameter.    

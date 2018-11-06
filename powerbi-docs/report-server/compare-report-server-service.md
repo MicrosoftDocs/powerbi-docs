@@ -16,6 +16,8 @@ ms.custom: mvc
 
 Power BI Report Server and the Power BI service have a lot of similarities and some key differences. This table explains which is which.
 
+## Features of Power BI Report Server and the Power BI service
+
 | Features | Power BI Report Server | Power BI Service | Notes
 |---------|---------|---------|---------|
 | Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium
