@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.author: maggies
 ---
 # Create an embedded dataset for a paginated report in the Power BI service

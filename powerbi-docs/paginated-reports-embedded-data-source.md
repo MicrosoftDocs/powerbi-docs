@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 11/05/2018
 ms.author: maggies
 ---
 # Create an embedded data source for paginated reports in the Power BI service
