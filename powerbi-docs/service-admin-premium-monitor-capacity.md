@@ -18,6 +18,8 @@ This article provides an overview of monitoring the metrics for your Power BI Pr
 
 You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
 
+**The current version of the app is 1.8 (released November 7, 2018).**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Install the Premium Capacity Metrics app
@@ -42,21 +44,30 @@ When you open the app, it first shows a dashboard with a summary of all the capa
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-The report has three tabs, which we describe in more detail in the following sections.
+Click the dashboard to go to the underlying report. The report has six tabs, which we describe in more detail in the following sections.
 
-* **Filters applied to all pages**: enables you to filter the other pages in the report to a specific capacity.
-* **Datasets**: provides detailed metrics on the health of the datasets within your capacities.
-* **System**: gives overall capacity metrics including memory and CPU high utilization. 
+* **Filters**: enables you to filter the other pages in the report to a specific capacity.
+* **Datasets**: detailed metrics on the health of the Power BI datasets in your capacities.
+* **Paginated reports**: detailed metrics on the health of the paginated reports in your capacities.
+* **Dataflows**: detailed refresh metrics for dataflows in your capacities.
+* **System**: overall capacity metrics including memory and CPU high utilization.
+* **Display Names and IDs**: names, IDs, and owners for capacities, workspaces, and workloads.
 
-### Filters applied to all pages tab
+### Filters tab
 
-The **Filters applied to all pages** tab enables you to select a capacity, a dataset, and a date range within the past seven days. Filters are then applied to all the relevant pages and tiles in the report. If no filters are selected, the report defaults to show the past week’s metrics on every capacity you own.
+The **Filters** tab enables you to select a capacity, a date range, and other options. Filters are then applied to all the relevant pages and tiles in the report. If no filters are selected, the report defaults to show the past week’s metrics on every capacity you own.
 
 ![Filters tab](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
+* **(A)** Select **Datasets**, **Paginated Reports**, or **Dataflows** to set filters for each workload.
+
+* **(B)** Name and **(C)** information are updated based on what you select in **(A)**, allowing you to filter on a workload by name. For example, in the image above, **Dataflows** is selected, showing **Dataflows Name** and **Dataflows Information**.
+
+* **(E)** Capacity information, which indicates if datasets, paginated reports, or dataflows are enabled for a capacity.
+
 ### Datasets tab
 
-The **Datasets** tab provides the bulk of the metrics in the app. Use the buttons at the top of the tab to navigate to different areas: **Summary**, **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
+Use the buttons at the top of the **Datasets** tab to navigate to different areas: **Summary**, **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
 
 ![Datasets tab](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
@@ -64,16 +75,25 @@ The **Datasets** tab provides the bulk of the metrics in the app. Use the button
 
 The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads.
 
-| | **Metrics** |
+| **Report section** | **Metrics** |
 | --- | --- |
 | **Entities** | * The number of capacities you own<br> * The distinct number of datasets in your capacity<br> * The distinct number of workspaces in your capacity |
 | **System** | * The average memory usage in GB over the past seven days<br> * Highest memory consumption in GB in the past seven days and the local time it occurred<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred |
-| **Dataset Workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is measured in minutes, the time taken to complete the operation<br> * Average refresh wait-time is measured in minutes, the average lag between the scheduled time and start of the operation<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average query duration is measured in minutes, the time taken to complete the operation<br> * Total number of models evicted due to memory pressure |
+| **Dataset Workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is measured in minutes, the time taken to complete the operation<br> * Average refresh wait time is measured in minutes, the average lag between the scheduled time and start of the operation<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average query duration is measured in minutes, the time taken to complete the operation<br> * Total number of models evicted due to memory pressure |
 |  |  |
 
 #### Refreshes area
 
-The **Refreshes** area lists out the complete refreshes, success measures, average/max refresh wait-time and average/max refresh duration sliced by datasets in the past seven days. The bottom two charts show the refreshes vs. memory consumption in GB and average wait-times split into one hour buckets, reported in local time. The top bar charts list the top five datasets by the average time it took to complete the dataset to refresh (refresh duration), and average refresh waits time. Multiple high refresh wait-time spikes are indicative of the capacity running hot.
+The **Refreshes** area contains the following metrics.
+
+| **Report section** | **Metrics** |
+| --- | --- |
+| **Refresh reliability** | * Total refreshes for the dataset<br> * Reliability of the refresh: the percentage of refresh that completed <br> * Avg Wait Time: measured in minutes, the average lag between the scheduled time and start of the operation<br> * Max Wait Time<br> * Avg Duration<br> * Max duration |
+| **Top 5 Datasets by Average Refresh Duration** | * The five datasets with the longest average refresh duration in minutes |
+| **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average refresh wait time  in minutes |
+| **Hourly Average Refresh Wait Times** | * Average refresh wait time, split into one hour buckets, reported in local time. Multiple spikes with high refresh wait times are indicative of the capacity running hot. |
+| **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
+|  |  |
 
 #### Query Durations area
 
@@ -97,11 +117,23 @@ The lower right chart lists the top five datasets by the average wait time it to
 
 The **Datasets** area shows complete datasets evicted due to memory pressure by the hour.
 
+### Paginated reports tab
+
+abc
+
+### Dataflows tab
+
+abc
+
 ### System tab
 
 The **System** tab shows times of high CPU utilization (number of times exceeded 80% utilization), high direct query/live connections utilization, and memory consumption.
 
 ![Premium System report](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+### Display Names and IDs tab
+
+abc
 
 ## Monitor Power BI Embedded capacity
 
