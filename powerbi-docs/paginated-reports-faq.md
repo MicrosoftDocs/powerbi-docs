@@ -73,11 +73,10 @@ You receive an error message, and you can't view your report until the workload 
 
 Default memory in each Premium SKU for paginated reports:
 
-|P1 or A4  |P2 or A5  |P3 or A6  |
-|---------|---------|---------|
-|20% default; 10% minimum   | 10% default; 5% minimum | 5% default; 2.5% minimum |
-|  |  |  |
- 
+- **P1/A4**: 20% default; 10% minimum
+- **P2/A5**: 10% default; 5% minimum
+- **P3/A6**: 5% default; 2.5% minimum
+
 ## General
 
 ### When should I use a paginated report vs. a Power BI report?
