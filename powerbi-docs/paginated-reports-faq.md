@@ -1,5 +1,5 @@
 ---
-title: "Paginated reports in Power BI: Frequently asked questions (Preview)"
+title: "Paginated reports in Power BI: FAQ (Preview)"
 description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
 author: maggiesMSFT
 manager: kfile
@@ -12,11 +12,11 @@ ms.date: 11/05/2018
 ms.author: maggies
 
 ---
-# Paginated reports in Power BI: Frequently asked questions (Preview)
+# Paginated reports in Power BI: FAQ (Preview)
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
-This article answers many of the most common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
+This article answers many common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
 
 ## Administration
 
@@ -57,7 +57,7 @@ Also, the audit logs provide the following events for paginated reports:
 
 Not yet. Monitoring will be available at public preview as a new tab in the existing report with the same relevant details you have for your Power BI datasets.
 
-### Why aren’t paginated reports available in the regular Power BI service?
+### Why are paginated reports only available in Power BI Premium?
 
 There is a technical blocker because of the flexibility that RDL reports provide. It would be problematic allowing them to run in a multi-tenant environment until we have the proper level of code isolation between customers.  We’re actively looking at potential solutions.
 
@@ -73,9 +73,9 @@ You receive an error message, and you can't view your report until the workload 
 
 Default memory in each Premium SKU for paginated reports:
 
-| P1/A4 | P2/A5 | P3/A6 | 
+|P1/A4  |P2/A5  |P3/A6  |
 |---------|---------|---------|
-| 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum  |
+|20% default; 10% minimum   | 10% default; 5% minimum | 5% default; 2.5% minimum |
  
 ## General
 

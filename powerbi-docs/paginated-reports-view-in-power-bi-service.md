@@ -19,6 +19,7 @@ In this article, you learn about viewing a paginated report to the Power BI serv
 Paginated reports have a their own icon, ![Paginated report icon](media/paginated-reports-view-in-power-bi-service/power-bi-paginated-report-icon.png).
 
 You can also export paginated reports to a number of formats: 
+
     - Microsoft Excel
     - Microsoft Word
     - Microsoft PowerPoint

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a paginated report and upload it to the Power BI service | Microsoft Docs"
-description: In this tutorial, you connect to a sample Azure SQL database, and use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
+description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: tutorial
-ms.date: 11/05/2018
+ms.date: 11/06/2018
 ms.author: maggies
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
 
-In this tutorial, you connect to a sample Azure SQL database, and use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
+In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
 
 ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -31,13 +31,13 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
  
 ## Prerequisites  
 
-These are the prerequisites for creating the paginated report:
+Here are the prerequisites for creating the paginated report:
 
 - Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
 
 - Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
-These are the prerequisites for uploading your paginated report to the Power BI service:
+Here are the prerequisites for uploading your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
 - Your need an app workspace on the service in a [Power BI Premium capacity](service-premium.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
@@ -135,7 +135,7 @@ These are the prerequisites for uploading your paginated report to the Power BI 
     - UnitPrice
     - LineTotal
 
-    Note that Report Builder automatically made the fields in the **Values** box sums.
+    Report Builder automatically made the fields in the **Values** box sums.
 
     ![Arrange fields](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png)
 
@@ -177,11 +177,11 @@ To see the actual values, you need to run the report.
 
    ![Run the report](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
-2. Select **Print Layout**. The report will look like this when you print it. Note that Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
+2. Select **Print Layout**. The report will be in this format when you print it. Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
 
 ## Format the report
 
-Now that you have a report with a matrix that wraps to 33 pages, let's add some other features and improve how it looks. You can run the report after every step, if you want to see how it's coming along.
+Now you have a report with a matrix that wraps to 33 pages. Let's add some other features and improve how it looks. You can run the report after every step, if you want to see how it's coming along.
 
 - On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
 
@@ -211,7 +211,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 1. At the bottom of the design surface, you see [&ExecutionTime] on the right in the footer. 
 
-2. In the Report Data pane, expand the Built-in Fields folder, and drag **Page Number** to the left side of the footer, at the same height as [&ExecutionTime].
+2. In the Report Data pane, expand the Built-in Fields folder. Drag **Page Number** to the left side of the footer, at the same height as [&ExecutionTime].
 
 3. Drag the right side of the [&PageNumber] box to make it square.
 
@@ -287,7 +287,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 
-3. Select the arrow next to **Advanced** and turn **Dedicated capacity** on. 
+3. Select the arrow next to **Advanced** and turn on **Dedicated capacity**. 
 
     ![Create workspace in Premium capacity](media/paginated-reports-quickstart-aw/power-bi-paginated-create-workspace-premium-capacity.png)
 
@@ -311,7 +311,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 4. Select the report to view it.
 
-5. If you get an error, you may need to re-enter your credentials. Select the **Manage** icon.
+5. If you get an error, you may need to reenter your credentials. Select the **Manage** icon.
 
     ![Manage your report](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
