@@ -18,7 +18,7 @@ ms.date: 10/30/2018
 
 A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](consumer/end-user-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [craete custom visuals](developer/custom-visual-develop-tutorial.md) to learn how.
+Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) to learn how.
 
 ## Certification requirements
 

@@ -31,3 +31,7 @@ If you don't see it, make sure you have enabled it within the Power BI settings.
 **Can't contact visual server**
 
 Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server is running, it is likely that your SSL certificates weren't installed correctly.
+
+## Next Steps
+
+For more information and answers to questions, visit [frequently asked questions](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
