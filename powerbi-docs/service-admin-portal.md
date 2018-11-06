@@ -303,7 +303,7 @@ Users in the organization can create and use dataflows.
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
-## Capacity Settings
+## Capacity settings
 
 ### Power BI Premium
 

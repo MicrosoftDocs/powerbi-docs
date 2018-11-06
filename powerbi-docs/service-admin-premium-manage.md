@@ -57,7 +57,7 @@ Think of a workload in Power BI as one of the many services you can expose to us
 
 We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other.
 
-## Enable workloads in the Power BI admin portal
+### Enable workloads in the Power BI admin portal
 
 To enable workloads, follow these steps.
 
