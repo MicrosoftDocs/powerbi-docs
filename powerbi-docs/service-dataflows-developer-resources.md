@@ -20,7 +20,6 @@ The following developer resources are available for working with Power BI datafl
 
 | Dataflow resource | Description |
 | --- | --- |
-| [Adding an external dataflow to Power BI](https://go.microsoft.com/fwlink/?linkid=2012815&clcid=0x409) | This step-by-step guides you through creating a dataflow in your own storage account, and adding a reference to it in Power BI. |
 | [Power BI dataflow REST API Reference](http://download.microsoft.com/download/5/4/0/540DAA5B-6760-4BDF-A089-8C3DBA8BB4DD/Power%20BI%20dataflow%20REST%20API%20reference.docx)    | A complete reference guide to the dataflow REST API.|
 
 
