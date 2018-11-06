@@ -77,8 +77,8 @@ The following table shows the default and minimum memory values, based on the di
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Paginated reports <sup>1</sup>   | 50% default; 25% minimum | 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum |
-| Dataflows | 15% default; no minimum  | 15% default; no minimum  | 15% default; no minimum | 15% default; no minimum  |
+| Paginated reports | 50% default; 25% minimum | 20% default; 10% minimum | 10% default; 5% minimum | 5% default; 2.5% minimum |
+| Dataflows | 15% default; 8% minimum  | 15% default; 4% minimum  | 15% default; 2% minimum | 15% default; 1% minimum  |
 | | | | | |
 
 ### Considerations for paginated reports
