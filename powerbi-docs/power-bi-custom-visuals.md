@@ -80,7 +80,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 3. Select **MY ORGANIZATION** from the top tab menu.
 
-    !visual org 3](media/power-bi-custom-visuals/power-bi-visual-org-03.png)
+    ![visual org 3](media/power-bi-custom-visuals/power-bi-visual-org-03.png)
 
 4. Scroll through the list to find the visual to import.
 

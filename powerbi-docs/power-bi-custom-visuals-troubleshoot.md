@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ---
 
-# Troubleshooting your Power BI custom visuals
+# Troubleshoot Power BI custom visuals
+
+## Debug
 
 **Pbiviz command not found (or similar errors)**
 
@@ -32,6 +34,6 @@ If you don't see it, make sure you have enabled it within the Power BI settings.
 
 Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server is running, it is likely that your SSL certificates weren't installed correctly.
 
-## Next Steps
+## Next steps
 
 For more information and answers to questions, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).

@@ -34,7 +34,7 @@ In this tutorial, you learn how to:
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
-* You need [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* You need [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Setting up the developer environment
 
@@ -580,7 +580,7 @@ In the next tutorial you learn how to add formatting options to the custom visua
 
 For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Adding formatting options](custom-visual-develop-tutorial-format-options.md)
