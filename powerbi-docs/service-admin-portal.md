@@ -294,6 +294,15 @@ Users in the organization can access workspaces to connect to data and author co
 
 Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
 
+## Dataflow settings (preview)
+
+### Create and use dataflows (preview)
+
+Users in the organization can create and use dataflows.
+
+> [!NOTE]
+> This setting applies to the entire organization and cannot be limited to specific groups.
+
 ## Capacity Settings
 
 ### Power BI Premium
