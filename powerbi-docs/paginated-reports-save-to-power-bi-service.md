@@ -84,6 +84,6 @@ Currently gateways don't supprt multi-value parameters.
 
 ## Next steps
 
-- [View a paginated report in the Power BI service](paginated-reports-view-in-power-bi-service.md)
+- [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
 

@@ -396,7 +396,7 @@
     - name: Publish a paginated report
       href: paginated-reports-save-to-power-bi-service.md
     - name: View a paginated report
-      href: paginated-reports-view-in-power-bi-service.md
+      href: paginated-reports-view-power-bi-service.md
     - name: Interact with parameters
       href: paginated-reports-view-parameters.md
 
