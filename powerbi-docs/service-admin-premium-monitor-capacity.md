@@ -28,11 +28,11 @@ You can go straight to the [Premium Capacity Metrics app](https://app.powerbi.co
 
     ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
-2. On the right side, click **Get apps**.
+1. On the right side, click **Get apps**.
 
-3. In the **Apps** category, search for **Power BI Premium Capacity Metrics app**.
+1. In the **Apps** category, search for **Power BI Premium Capacity Metrics app**.
 
-4. Subscribe to install the app.
+1. Subscribe to install the app.
 
 Now that you've installed the app, you can see metrics about the capacities in your organization. Let's take a look at some of the key metrics that are available.
 
@@ -45,10 +45,15 @@ When you open the app, it first shows a dashboard with a summary of all the capa
 Click the dashboard to go to the underlying report. The report has six tabs, which we describe in more detail in the following sections.
 
 * **Filters**: enables you to filter the other pages in the report to a specific capacity.
+
 * **Datasets**: detailed metrics on the health of the Power BI datasets in your capacities.
+
 * **Paginated reports**: detailed metrics on the health of the paginated reports in your capacities.
+
 * **Dataflows**: detailed refresh metrics for dataflows in your capacities.
+
 * **System**: overall capacity metrics including memory and CPU high utilization.
+
 * **Display Names and IDs**: names, IDs, and owners for capacities, workspaces, and workloads.
 
 ### Filters tab
@@ -128,14 +133,6 @@ The **Datasets** area contains the following metrics.
 | **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
 |  |  |
 
-### Paginated reports tab
-
-abc
-
-### Dataflows tab
-
-abc
-
 ### System tab
 
 The **System** tab shows CPU and memory consumption across all capacities and workloads.
@@ -150,15 +147,12 @@ The **System** tab contains the following metrics.
 | **Memory consumption** | * Memory consumption in the past seven days, split into three minute buckets |
 |  |  |
 
-### Display Names and IDs tab
-
-abc
-
 ## Monitor Power BI Embedded capacity
 
 You can also use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacities in Power BI Embedded. Those capacities will show up in the report as long as you are an admin of the capacity. However, refresh of the report fails unless you grant certain permissions to Power BI on your A SKUs:
 
 1. Open your capacity in the Azure portal.
+
 1. Click **Access control (IAM)**, and add the “Power BI Premium” app to the reader role. If you are unable to find the app by name, you can also add it by its client Id: cb4dc29f-0bf4-402a-8b30-7511498ed654.
 
     ![Permissions for Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
