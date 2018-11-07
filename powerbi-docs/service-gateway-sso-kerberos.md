@@ -354,8 +354,6 @@ If you don't have Azure AD DirSync configured, follow these steps for **every Po
 
         If you don't see this tab, you'll need to search for directions on how to enable it or use another method to set the msDS-cloudExtensionAttribute1 property. Select one of the attributes and then the 'm' key to navigate to the Active Directory properties that start with 'm'. Locate the msDS-cloudExtensionAttribute1 property and double-click it. Set the value to the username you use to sign in to the Power BI Service, in the form YourUser@YourDomain.
 
-        ![String attribute editor](media/service-gateway-sso-kerberos/string-attribute-editor.png)
-
     1. Select **OK**.
 
         ![Edit attribute](media/service-gateway-sso-kerberos/edit-attribute.png)
