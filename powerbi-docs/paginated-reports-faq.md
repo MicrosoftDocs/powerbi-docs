@@ -57,10 +57,6 @@ Also, the audit logs provide the following events for paginated reports:
 
 Not yet. Monitoring will be available at public preview as a new tab in the existing report with the same relevant details you have for your Power BI datasets.
 
-### Why are paginated reports only available in Power BI Premium?
-
-There is a technical blocker because of the flexibility that RDL reports provide. It would be problematic allowing them to run in a multi-tenant environment until we have the proper level of code isolation between customers.  We’re actively looking at potential solutions.
-
 ### Do I need a Pro license to create and publish paginated reports?
 
 Yes. You can't upload reports to the workspace without a Pro license. You may download and try Report Builder without the Pro license, but not publish the paginated reports you create. 
