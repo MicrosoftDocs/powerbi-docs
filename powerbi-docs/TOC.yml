@@ -371,7 +371,38 @@
       href: desktop-accessibility.md
     - name: "Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md      
-- name: Power BI service
+- name: Paginated reports in Power BI
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports? (Preview)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Tutorials
+    items:
+    - name: Create a paginated report and upload it
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View
+      href: paginated-reports-report-design-view.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
+    - name: Create an embedded data source
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create parameters 
+      href: paginated-reports-parameters.md
+    - name: Publish a paginated report
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: View a paginated report
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interact with parameters
+      href: paginated-reports-view-parameters.md
+
+- name: Power BI mobile apps
   items:
   - name: Overview
     items: 
