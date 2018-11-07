@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 11/07/2018
 ms.author: maggies
 
 ---
@@ -18,6 +18,26 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## October 2018
+
+### Paginated report preview (all devices)
+
+Paginated reports are now available on Power BI service. Users with access to paginated reports in Power BI Service can also access these reports from their mobile app. 
+
+Read the Power BI [blog post about Paginated reports in mobile](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### Shared credentials (iOS)
+
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+
+### In-app URLs (iOS) 
+
+Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
+
+### iOS12 and watchOS 5 support 
+
+we have updated Power BI app for iOS to work seamlessly with the new OS on mobile devices and watch.
 
 ## September 2018
 
