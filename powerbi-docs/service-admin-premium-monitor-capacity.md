@@ -117,7 +117,7 @@ The **Query Waits** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Wait count: The number of queries in the dataset that waited on system resources before starting execution <br> * Average: The average query wait time for the dataset, in milliseconds<br> Max: The duration of the longest-waiting query in the dataset, in milliseconds|
+| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Wait count: The number of queries in the dataset that waited on system resources before starting execution <br> * Average: The average query wait time for the dataset, in milliseconds<br> * Max: The duration of the longest-waiting query in the dataset, in milliseconds|
 | **Wait Time Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 50ms , 50-100ms , 100-200ms , 200-400ms 400ms-1sec , 1 sec-5 sec and > 5 seconds intervals |
 | **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average wait time to start executing a query,  in milliseconds |
 | **Hourly Query Wait Counts and Times** | * Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time |
