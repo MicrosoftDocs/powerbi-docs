@@ -58,7 +58,7 @@ The following updates are new to **Power BI Desktop** this month:
 * SAP BW connector implementation v2 now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[article]](desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
 * SAP BW Message Server Connector now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
 * Vertica connector now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Dynamics NAV and Dynamics 365 buisness Central connectors now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Dynamics NAV and Dynamics 365 business Central connectors now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
 * New Dynamics 365 business Central On-premises connector   [[video]](https://youtu.be/MhrhIXNtelw?t=219)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
 
 ### Data preparation

@@ -105,6 +105,8 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: "Custom visuals troubleshoot"
+      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -927,8 +929,6 @@
       items:
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/developers/
-      - name: "Create a custom visual with the Developer Tools"
-        href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
         href: https://microsoft.github.io/PowerBI-visuals/samples/
       - name: "Custom Visuals Git Repo"
