@@ -24,7 +24,7 @@ Here are some of the things you can do with the Power BI APIs.
 | Embed dashboards, reports, and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports, and tiles](embedding-content.md) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](walkthrough-push-data.md) |
 | Authenticate to Power BI. |[Authenticate to Power BI](get-azuread-access-token.md) |
-| Create a custom visual. |[Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Create a custom visual. |[Developing a Power BI custom visual](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
@@ -67,7 +67,7 @@ You can use the Power BI API to push data into a dataset. This feature allows yo
 ## Next steps
 
 [Push data into a dataset](walkthrough-push-data.md)  
-[Getting started with custom visuals developer tools](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Developing a Power BI custom visual](custom-visual-develop-tutorial.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

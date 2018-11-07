@@ -35,8 +35,6 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |This paper introduces the security model for tabular BI semantic and Power BI. You will learn how to create roles, implement dynamic security, configure impersonation settings, manage roles, and choose a method for connecting to models that works in your network security context. | April 2016 |
 | [Power BI and GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| This link takes you to the list of whitepapers on the Service Trust Portal, including the Microsoft Power BI GDPR whitepaper. | April 2018 |
 
-
-
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

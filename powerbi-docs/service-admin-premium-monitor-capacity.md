@@ -91,8 +91,8 @@ The **Refreshes** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Refresh reliability** | * Total Count: Total refreshes for each workspace<br> * Reliability: the percentage of refreshes that completed for each workspace<br> * Avg Wait Time: The average lag between the scheduled time and start of a refresh for the workspace, in minutes<br> * Max Wait Time: The maximum wait time for the workspace, in minutes <br> * Avg Duration: The average duration of refresh for the workspace, in minutes<br> * Max Duration: The duration of the longest-running refresh for the workspace, in minutes |
-| **Top 5 Datasets by Average Refresh Duration** | * The five datasets with the longest average refresh duration in minutes |
+| **Refresh reliability** | * Total Count: Total refreshes for each dataset<br> * Reliability: the percentage of refreshes that completed for each dataset<br> * Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataset, in minutes<br> * Max Wait Time: The maximum wait time for the dataset, in minutes <br> * Avg Duration: The average duration of refresh for the dataset, in minutes<br> * Max Duration: The duration of the longest-running refresh for the dataset, in minutes |
+| **Top 5 Datasets by Average Refresh Duration** | * The five datasets with the longest average refresh duration, in minutes |
 | **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average refresh wait time,  in minutes |
 | **Hourly Average Refresh Wait Times** | * The average refresh wait time, split into one hour buckets, reported in local time. Multiple spikes with high refresh wait times are indicative of the capacity running hot. |
 | **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
@@ -104,7 +104,7 @@ The **Query Durations** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the workspace<br> * Average: The average query duration for the workspace, in milliseconds<br> Max: The duration of the longest-running query in the workspace, in milliseconds|
+| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Average: The average query duration for the dataset, in milliseconds<br> * Max: The duration of the longest-running query in the dataset, in milliseconds|
 | **Query Duration Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 30ms, 30-100ms, 100-300ms, 300ms-1sec, 1sec-3sec, 3sec-10sec, 10sec-30sec, and > 30 seconds intervals. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed. |
 | **Top 5 Datasets by Average Duration** | * The five datasets with the longest average query duration, in milliseconds |
 | **Direct Query / Live Connections (> 80% Utilization)** | * The times that a direct query or live connection exceeded 80% CPU utilization, split into one hour buckets, reported in local time |
@@ -117,7 +117,7 @@ The **Query Waits** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the workspace<br> * Wait count: The number of queries in the workspace that waited on system resources before starting execution <br> * Average: The average query wait time for the workspace, in milliseconds<br> Max: The duration of the longest-waiting query in the workspace, in milliseconds|
+| **Query Wait Times** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Wait count: The number of queries in the dataset that waited on system resources before starting execution <br> * Average: The average query wait time for the dataset, in milliseconds<br> * Max: The duration of the longest-waiting query in the dataset, in milliseconds|
 | **Wait Time Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 50ms , 50-100ms , 100-200ms , 200-400ms 400ms-1sec , 1 sec-5 sec and > 5 seconds intervals |
 | **Top 5 Datasets by Average Wait Time** | * The five datasets with the longest average wait time to start executing a query,  in milliseconds |
 | **Hourly Query Wait Counts and Times** | * Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time |
@@ -133,11 +133,45 @@ The **Datasets** area contains the following metrics.
 | **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
 |  |  |
 
+### Paginated reports tab
+
+The **Paginated reports** tab shows detailed metrics on the health of the paginated reports in your capacities.
+
+![Paginated reports tab](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
+
+The **Paginated reports** tab contains the following metrics.
+
+| **Report section** | **Metrics** |
+| --- | --- |
+| **Overall usage** | * Total Views: The number of times that the report has been viewed by a user<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time: The time it takes for all phases of the report, in milliseconds|
+| **Top 5 Reports by Average Data Retrieval Time** | * The five reports with the longest average data retrieval time, in milliseconds |
+| **Top 5 Reports by Average Report Processing Time** | * The five reports with the longest average report processing time, in milliseconds |
+| **Hourly Durations** | * Data retrieval vs. processing and rendering time, split into one hour buckets, reported in local time |
+| **Hourly Results** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
+|  |  |
+
+### Dataflows tab
+
+The **Dataflows** tab shows detailed refresh metrics for dataflows in your capacities.
+
+![Dataflows tab](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
+
+The **Dataflows** tab contains the following metrics.
+
+| **Report section** | **Metrics** |
+| --- | --- |
+| **Refresh** | * Total: Total refreshes for each dataflow<br> * Reliability: the percentage of refreshes that completed for each dataflow<br> * Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataflow, in minutes<br> * Max Wait Time: The maximum wait time for the dataflow, in minutes <br> * Avg Duration: The average duration of refresh for the dataflow, in minutes<br> * Max Duration: The duration of the longest-running refresh for the dataflow, in minutes |
+| **Top 5 dataflows by Average Refresh Duration** | * The five dataflows with the longest average refresh duration, in minutes |
+| **Top 5 dataflows by Average Wait Time** | * The five dataflows with the longest average refresh wait time,  in minutes |
+| **Hourly Average Refresh Wait Times** | * The average refresh wait time, split into one hour buckets, reported in local time. Multiple spikes with high refresh wait times are indicative of the capacity running hot. |
+| **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
+|  |  |
+
 ### System tab
 
 The **System** tab shows CPU and memory consumption across all capacities and workloads.
 
-![Premium System report](media/service-admin-premium-monitor-capacity/system-tab.png)
+![System tab](media/service-admin-premium-monitor-capacity/system-tab.png)
 
 The **System** tab contains the following metrics.
 
@@ -146,6 +180,10 @@ The **System** tab contains the following metrics.
 | **CPU Metrics (> 80% Utilization)** | * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets |
 | **Memory consumption** | * Memory consumption in the past seven days, split into three minute buckets |
 |  |  |
+
+### Display Names and IDs tab
+
+The **Display Names and IDs** tab contains the names, IDs, and owners for capacities, workspaces, and workloads.
 
 ## Monitor Power BI Embedded capacity
 
