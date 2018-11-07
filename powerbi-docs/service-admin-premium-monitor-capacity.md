@@ -104,7 +104,7 @@ The **Query Durations** area contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Average: The average query duration for the dataset, in milliseconds<br> Max: The duration of the longest-running query in the dataset, in milliseconds|
+| **Query Durations** | * Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br> * Total: The total number of queries run for the dataset<br> * Average: The average query duration for the dataset, in milliseconds<br> * Max: The duration of the longest-running query in the dataset, in milliseconds|
 | **Query Duration Distribution** | * The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 30ms, 30-100ms, 100-300ms, 300ms-1sec, 1sec-3sec, 3sec-10sec, 10sec-30sec, and > 30 seconds intervals. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed. |
 | **Top 5 Datasets by Average Duration** | * The five datasets with the longest average query duration, in milliseconds |
 | **Direct Query / Live Connections (> 80% Utilization)** | * The times that a direct query or live connection exceeded 80% CPU utilization, split into one hour buckets, reported in local time |
@@ -143,7 +143,7 @@ The **Paginated reports** tab contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Overall usage** | * Total Views: The number of times that the report has been viewed by a user<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time" The time it takes for all phases of the report, in milliseconds|
+| **Overall usage** | * Total Views: The number of times that the report has been viewed by a user<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time: The time it takes for all phases of the report, in milliseconds|
 | **Top 5 Reports by Average Data Retrieval Time** | * The five reports with the longest average data retrieval time, in milliseconds |
 | **Top 5 Reports by Average Report Processing Time** | * The five reports with the longest average report processing time, in milliseconds |
 | **Hourly Durations** | * Data retrieval vs. processing and rendering time, split into one hour buckets, reported in local time |
