@@ -1,5 +1,5 @@
 ---
-title: Use single sign-on (SSO) from Power BI to on-premises data sources
+title: Use single sign-on (SSO) to on-premises data sources
 description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
 author: mgblythe
 ms.author: mblythe
