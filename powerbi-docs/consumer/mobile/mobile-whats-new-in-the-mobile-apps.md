@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 11/08/2018
 ms.author: maggies
 
 ---
@@ -25,7 +25,7 @@ For related "What's New" information, see:
 
 Paginated reports are now available on Power BI service. Users with access to paginated reports in Power BI Service can also access these reports from their mobile app. 
 
-Read the Power BI [blog post about Paginated reports in mobile](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+Read the Power BI [blog post about paginated reports in mobile](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
 
 ### Shared credentials (iOS)
 
