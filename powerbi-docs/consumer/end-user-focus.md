@@ -49,10 +49,10 @@ Some uses for full screen mode are:
 
 ![dashboard full screen mode before and after](media/end-user-focus/power-bi-focus-compare.png)
 
-While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In Power BI service you can use focus mode on a dashboard tile or report visual.
+While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In Power BI service, you can use focus mode on a dashboard tile or report visual.
 
 ## Working in full screen mode
-To open either a dashboard or report page in full screen mode, simply select the full screen icon from the top navigation bar ![full screen icon](media/end-user-focus/power-bi-full-screen-icon.png). Once you're in full screen mode, moving  your mouse or cursor reveals a contextual menu. Because full screen is available for such a wide variety of content, the options in the contextual menu are each a little different but fairly self-explanatory.  Simply hover over an icon for a definition.
+To open either a dashboard or report page in full screen mode, select the full screen icon ![full screen icon](media/end-user-focus/power-bi-full-screen-icon.png) from the top navigation bar. Once you're in full screen mode, moving  your mouse or cursor reveals a contextual menu. Because full screen is available for such a wide variety of content, the options in the contextual menu are each a little different but fairly self-explanatory.  Simply hover over an icon for a definition.
 
 Menu for dashboards    
 ![Menu for dashboards](media/end-user-focus/power-bi-full-screen-menu-dashboard.png)    
@@ -108,7 +108,7 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 
 
 ## Focus mode for report visualizations
-1. Open a report in Power BI service.  In this example we'll demonstrate using the Retail Analysis sample.
+1. Open a report in Power BI service.  In this example, we'll demonstrate using the Retail Analysis sample.
 
 1. After the report opens, select the **District Monthly Sales tab**.
 
@@ -118,7 +118,7 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 2. The visualization opens and fills the entire canvas.
 
    ![visual in focus mode](media/end-user-focus/power-bi-display-focus-newer2.png)
-3. Optionally, expand the Filters pane to interact with the filters applied to this visual. Dig into the data looking for new insights and answers to questions. As a *consumer*, you can't add new filters, change the fields being used in the visualizations, or create new visualizations.  However, any modifications you make to the existing filters are saved when you exit Power BI. If  you don't want Power BI to remember your modifications, select **Reset to default** ![reset to default button](media/end-user-focus/power-bi-resets.png).  
+3. Optionally, expand the Filters pane to interact with the filters applied to this visual. Dig into the data looking for new insights and answers to questions. As a *consumer*, you can't add new filters, change the fields being used in the visualizations, or create new visualizations.  However, any modifications you make to the existing filters are saved when you exit Power BI. If  you don't want Power BI to remember your modifications, select **Reset to default**. ![reset to default button](media/end-user-focus/power-bi-resets.png)  
 
    ![focus mode with Filters screen](media/end-user-focus/power-bi-display-focus-filters3.png)
 
@@ -131,4 +131,4 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 * When using focus mode with a visualization on a dashboard, you'll be able to view and interact with only the Visual level filter.
 
 ## Next steps
-[View settings for reports](end-user-reports-view.md)
+[View settings for reports](end-user-report-view.md)
