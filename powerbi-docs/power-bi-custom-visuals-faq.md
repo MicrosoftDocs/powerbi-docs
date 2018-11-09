@@ -53,3 +53,7 @@ Yes, if the admin disables the custom visuals from the admin portal, it doesn’
 **What are certified custom visuals?**
 
 Certified custom visuals are visuals in the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that met certain [specified](power-bi-custom-visuals-certified.md) code requirements and testing by the Power BI team.  The tests performed are designed to check that the visual does not access external services or resources; however, Microsoft is not the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
+
+## Next steps
+
+For information about troubleshooting, visit [Troubleshooting your Power BI custom visuals](power-bi-custom-visuals-troubleshoot.md).

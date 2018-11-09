@@ -70,7 +70,7 @@ Once that slider is set to on, you specify the fields for which you want the rep
 
 ![Add fields to determine where the tooltip will appear](media/desktop-tooltips/desktop-tooltips_08.png)
  
-You can include both categorical and numberical fields in the **Tooltips fields** bucket, including measures.
+You can include both categorical and numerical fields in the **Tooltips fields** bucket, including measures.
 
 Once completed, the tooltip report page you created will be used as a tooltip in visuals in the report that use any fields you placed into the **Tooltips fields** bucket, replacing the default Power BI tooltip.
 
