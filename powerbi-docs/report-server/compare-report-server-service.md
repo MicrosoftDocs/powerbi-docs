@@ -43,7 +43,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Email subscriptions for paginated reports | Yes | No | [E-Mail delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Data alerts | No | Yes | [Data alerts](../service-set-data-alerts.md) in the Power BI service
 | Row-level security | Only through data source in DirectQuery mode | Available in both DirectQuery (data source) & Import mode | [Row-level security (RLS)](../service-admin-rls.md) with Power BI 
-| Full screen mode | No | Yes | [Full screen mode](../service-fullscreen-mode.md) in the Power BI service 
+| Full screen mode | No | Yes | [Full screen mode](../consumer/end-user-focus.md) in the Power BI service 
 | Advanced Office 365 collaboration | No | Yes | [Collaborate in an app workspace](../service-collaborate-power-bi-workspace.md) with Office 365 
 | R visuals | No | Yes | [Create R visuals](../visuals/service-r-visuals.md) in the Power BI service  
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features 
