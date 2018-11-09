@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/08/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. When you design reports in Power BI Desktop or in the Power BI service, you can make the Filters pane to look like and act with the whole report. In the new experience, the old Filters pane acts as a filter editing pane, and the new Filter pane is the only one your report consumers see. 
  
-Default view (no additional customization applied)
+![Default view (no additional customization applied)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
 As a report designer, here's what you can do with the new filters:
 
