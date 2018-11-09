@@ -1,6 +1,6 @@
 ---
 title: Hardware and software requirements for installing Power BI Report Server
-description: Here are the minimum hardware and software requirements to install and run Power BI Report Server.
+description: This article lays out  the minimum hardware and software requirements to install and run Power BI Report Server.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 11/08/2018
 ms.author: maghan
 
 ---
 # Hardware and software requirements for installing Power BI Report Server
-Here are the minimum hardware and software requirements to install and run Power BI Report Server.
+This article lays out the minimum hardware and software requirements to install and run Power BI Report Server.
 
 ## Processor, Memory, and Operating System Requirements
 
