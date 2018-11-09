@@ -30,7 +30,7 @@ As a report designer, here's what you can do with the new filters:
 
 ## Turn on the new filter experience 
 
-You enable the new experience in Power BI Desktop, and then you can modify filters there and in the Power BI service (https://app.powerbi.com). Because this new filter experience is in Preview, you must first enable it in Power BI Desktop. 
+You enable the new experience in Power BI Desktop. Then you can modify filters there or in the Power BI service (https://app.powerbi.com). Because this new filter experience is in Preview, you must first enable it in Power BI Desktop. 
 
 ### Turn on new filters for all new reports
 
@@ -70,7 +70,7 @@ You can lock or hide individual filter cards. If you lock a filter, your report 
 
    ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-hide-lock.gif)
 
-As you turn these settings on and off in the filter editing pane, you see the changes reflected in the new filter pane. Note that hidden filters will not show up in read only per visual filter pop-up.
+As you turn these settings on and off in the filter editing pane, you see the changes reflected in the new filter pane. Hidden filters don't show up in the filter pop-up for a visual.
 
 You can also configure your filter pane state to flow with your report bookmarks. The pane’s open, close, and visibility state are all bookmarkable.
  
@@ -107,7 +107,7 @@ You can also format these elements for filter cards, depending on if they're app
 
 ## View filters for a visual in Reading mode
 
-In Reading mode, you can hover over a visual and see a pop-up with all the filters, slicers, and so on affecting that visual. The formatting of the pop-up is the same as the filter pane formatting. 
+In Reading mode, you can hover over a visual and see a pop-up with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up is the same as the filter pane formatting. 
 
 ![Filters affecting a visual](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 
@@ -130,7 +130,7 @@ In coming months we plan to incorporate the following improvements:
 - Single filter pane experience for report creators 
 - More formatting options
 
-Give the new filter experience a try and provide us your feedback for this feature and how we can continue to improve this experience! 
+Give the new filter experience a try. Provide us your feedback for this feature and how we can continue to improve this experience. 
 
 ## Next steps
 [How to use report filters](consumer/end-user-report-filter.md)
