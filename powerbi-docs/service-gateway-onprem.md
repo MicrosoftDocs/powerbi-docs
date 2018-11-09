@@ -113,7 +113,7 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
+[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)  
 [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
