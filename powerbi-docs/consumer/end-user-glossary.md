@@ -6,7 +6,7 @@ author: mihart
 
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and t hey don't get confused or frustrated and instead get the result they expect.
 ---
