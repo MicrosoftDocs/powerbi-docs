@@ -55,13 +55,13 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
 3. Select a visual to make it active. All the fields being used by the visual are in the **Fields** pane and also listed in the **Filters** pane, under the **Visual level filters** heading.
    
    ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
-4. At this point we'll add a filter to a field already being used by the visualization. 
+4. At this point, we'll add a filter to a field already being used by the visualization. 
    
-    Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**.
+    Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example, we'll filter **StoreNumberName**.
      
     ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
-    Set either **Basic**, **Advanced**, or **Top N** filtering controls. In this example we'll search in Basic filtering for **cha** and select those five stores.
+    Set either **Basic**, **Advanced**, or **Top N** filtering controls. In this example, we'll search in Basic filtering for **cha** and select those five stores.
      
     ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
@@ -73,7 +73,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
 
 Now let's add a new field to our visualization as a visual-level filter.
    
-1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket, search for **an**, and select those three managers. 
+1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example, we'll drag **District Manager** into the **Visual level filters** bucket, search for **an**, and select those three managers. 
      
     ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -95,7 +95,7 @@ You can also add a filter to an entire page (a page-view filter)
 3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it into the **Page level filters** area.  
 4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
    
-   All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
+   All the visualization on the page, impacted by this filter, are redrawn to reflect the change. 
    
    ![](media/power-bi-report-add-filter/filterpage.gif)
 
@@ -107,7 +107,7 @@ With drillthrough in Power BI service and Power BI Desktop, you can create a *de
 ### Create a drillthrough filter
 To follow along, open the Customer Profitability sample in Editing view. Let's say that you want a page that focuses on Executive business areas.   
 
-1. Add a new page to the report and name it **Team Executive**. This will be the drillthrough *destination* page.
+1. Add a new page to the report and name it **Team Executive**. This page will be the drillthrough *destination*.
 2. Add visualizations that track key metrics for the team executives' business areas.    
 3. Add **Executive > Executive Name** to the Drillthrough filters well.    
    
@@ -142,7 +142,7 @@ Let's see how the drillthrough filter works.
 
 - There are situations where your visual-level filter and page-level filter may return different results.  For example, when you add a visual-level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](service-aggregates.md).  
 
-    Then, when you add a page-level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
+    Then, when you add a page-level filter, Power BI filters without aggregating.  It doesn't aggregate because a page can have many visuals, each of which can utilize different aggregation types.  So the filter is applied on each data row.
 
 - If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)    
 - If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
