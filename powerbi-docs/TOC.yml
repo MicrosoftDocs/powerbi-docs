@@ -231,6 +231,8 @@
         href: desktop-bookmarks.md
       - name: "Use Report themes"
         href: desktop-report-themes.md
+      - name: "Try the new filter experience"
+        href: power-bi-report-filter-preview.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"

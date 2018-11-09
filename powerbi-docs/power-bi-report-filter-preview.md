@@ -13,7 +13,7 @@ ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# The new Filters experience in Power BI reports (Preview)
+# The new filter experience in Power BI reports (Preview)
 
 This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. When you design reports in Power BI Desktop or in the Power BI service, you can make the Filters pane to look like and act with the whole report. In the new experience, the old Filters pane acts as a filter editing pane, and the new Filter pane is the only one your report consumers see. 
  
