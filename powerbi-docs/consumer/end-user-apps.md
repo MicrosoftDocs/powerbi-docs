@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 11/09/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
