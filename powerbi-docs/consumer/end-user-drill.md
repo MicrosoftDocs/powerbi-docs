@@ -174,7 +174,7 @@ The following sections describe drilling down from the highest view, middle view
 ### Hierarchical data and time data
 For this example, follow along with the [Retail Analysis sample](../sample-datasets.md) and create a stacked column chart visualization that looks at **Month** (Axis) by **TotalSales** (Values).  
 
-Even though the Axis data field is **Month**, it still creates a **Year** category in the **Axis** well. This is because Power BI provides the full DateTime structure for all the values it reads. The top of the heirarchy shows data for the year.
+Even though the Axis data field is **Month**, it still creates a **Year** category in the **Axis** well. This is because Power BI provides the full DateTime structure for all the values it reads. The top of the hierarchy shows data for the year.
 
 ![](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
 
