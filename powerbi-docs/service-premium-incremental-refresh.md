@@ -39,7 +39,7 @@ Large datasets with potentially billions of rows may not fit into Power BI Deskt
 
 To use incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**.
 
-Once published, the parameter values are overriden automatically by the Power BI service. There is no need to set them in dataset settings in the service.
+Once published, the parameter values are overridden automatically by the Power BI service. There is no need to set them in dataset settings in the service.
 
 It is important that the filter is pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support "query folding". Most data sources that support SQL queries support query folding. Data sources such as flat files, blobs, web, and OData feeds typically do not. Given the various levels of query-folding support for each data source, it is recommended that you verify that the filter logic is included in the source queries. In cases where the filter is not supported by the data source backend, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
 
