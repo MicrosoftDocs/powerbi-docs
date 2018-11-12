@@ -19,6 +19,7 @@ LocalizationGroup: Connect to data
 The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
+* Azure Databricks
 * Azure HDInsight Spark (Beta)
 * Azure SQL Database
 * Azure SQL Data Warehouse
