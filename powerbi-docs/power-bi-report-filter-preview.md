@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 11/12/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -45,9 +45,6 @@ You can also enable the new filters for existing reports.
 
 1. In an existing report, select **File** > **Options and Settings** > **Options**
 2. Under **Report settings**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
-3. Restart Power BI Desktop to see the new filter experience in this report.
- 
-After you restart Power BI Desktop, you can start working with the filter editing pane and the read-only filter pane.
 
 ## Build the new filter pane
 
@@ -59,7 +56,7 @@ After you enable the new filter pane, you see it to the right of the report page
 
     ![power-bi-filters-new-filters-pane.png](media/power-bi-report-filter-preview/power-bi-filters-new-filters-pane.png)
 
-When you add a visual to a report canvas, Power BI automatically adds a filter for each filed in the visual. Power BI doesn't add those automatic filters to the read-only filter pane. You have to select the eye icon to add them explicitly.
+When you add a visual to a report canvas, Power BI automatically adds a filter for each field in the visual. Power BI doesn't add those automatic filters to the read-only filter pane. You have to select the eye icon to add them explicitly.
 
  
 ## Lock or hide filters
