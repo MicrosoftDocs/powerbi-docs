@@ -9,9 +9,9 @@ Following is a list of the current limitations for row-level security on cloud m
 ## Known issues
 There is a known issue where an error message results when trying to publish from Power BI Desktop if it was previously published. The scenario is as follows.
 
-1. Anna has a dataset that is publised to the Power BI service and has configured RLS.
-2. Anna updates the report in Power BI Desktop and re-publishes.
+1. Anna has a dataset that is published to the Power BI service and has configured RLS.
+2. Anna updates the report in Power BI Desktop and republishes.
 3. Anna receives an error.
 
-**Workaround:** Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by selecting **Get Data** > **Files**. 
+**Workaround:** Republish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by selecting **Get Data** > **Files**. 
 
