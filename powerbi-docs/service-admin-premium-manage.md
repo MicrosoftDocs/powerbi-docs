@@ -53,11 +53,9 @@ For the most part, users don't need to know they are in a Premium capacity. Thei
 
 ## Configure workloads
 
-By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. For more information, see [Workloads in Premium capacity](service-premium.md#workloads-in-premium-capacity).
+By default, capacities for Power BI Premium and Power BI Embedded support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. For more information, see [Workloads in Premium capacity](service-premium.md#workloads-in-premium-capacity).
 
-### Enable workloads in the Power BI admin portal
-
-To enable workloads, follow these steps.
+To enable workloads in the Power BI admin portal, follow these steps.
 
 1. Under **Capacity settings**, select a capacity.
 
