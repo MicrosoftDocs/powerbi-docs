@@ -337,7 +337,7 @@ We were feeling lucky as a four-leaf clover about March's updates to **Power BI 
 
 ### Reporting
 
-* Report page tooltips  [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[article]]()  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Report page tooltips  [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
 * Bookmarking is now generally available  [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[article]](desktop-bookmarks.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
 * Display units and precision control for Table and Matrix columns  [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
 * Turn off the visual header in Reading mode for a report  [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 

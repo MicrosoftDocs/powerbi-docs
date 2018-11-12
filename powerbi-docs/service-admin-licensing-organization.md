@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 10/30/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -147,6 +147,9 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
+
+> [!NOTE]
+> The AllowAdHocSubscriptions flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities.
 
 ## Next steps
 
