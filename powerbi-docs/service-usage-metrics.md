@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
 ---
 
@@ -65,7 +65,7 @@ To dig down into the report data, or to build your own reports against the datas
     > [!NOTE]
     > If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
 
-## What metrics are reported?
+## Which metrics are reported?
 
 | Metric | Dashboard | Report | Description |
 | --- | --- | --- | --- |
@@ -158,6 +158,15 @@ When disabling usage metrics for their entire organization, admins can use the *
 Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics are not available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## Considerations and limitations
+
+It's important to understand that differences that can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *Usage metrics* are collected on the client. Because of that difference, aggregate counts of activities in audit logs may not always match usage metrics, because of the following:
+
+* Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
+* Certain types of views are not inclded in usage metrics, as described earlier in this article.
+* Usage metrics may sometimes overcount activities, in situations where the lcient refreshes without the need for a request being sent back to the Power BI service.
+
+
+In addition to potential differences between usage metrics and audit logs, the following questions and answers about usage metrics may be helpful for users and administrators:
 
 Q:    I can't run usage metrics on a dashboard or report
 A:    You can only see usage metrics for content you own or have permissions to edit.
