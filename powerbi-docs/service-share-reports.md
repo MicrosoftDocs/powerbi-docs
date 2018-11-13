@@ -45,7 +45,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
    
    app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
 
-3. [Share the report](service-share-dashboards.md), but clear the **Send email notificaton to recipients** check box. 
+3. [Share the report](service-share-dashboards.md), but clear the **Send email notification to recipients** check box. 
 
     ![Share report dialog box](media/service-share-reports/power-bi-share-report-dialog.png)
 
