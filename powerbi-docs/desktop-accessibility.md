@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -17,11 +17,6 @@ LocalizationGroup: Create reports
 Power BI has features that enable people with disabilities to more easily consume and interact with Power BI reports. These features include the ability to consume a report using the keyboard or a screen reader, tabbing to focus on various objects on a page, and thoughtful use of markers in visualizations.
 
 ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
-> 
-> 
 
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
 Beginning with the September 2017 release of **Power BI Desktop**, you can press the **?** key to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
@@ -112,12 +107,26 @@ There are a few known issues and limitations with the accessibility features, de
 * If you are using Narrator, there are some limitations around navigating Show data as an HTML table.
 
 ## Keyboard Shortcuts
+Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in Power BI Desktop, these shortcuts work in the following experiences as well:
+
+* Q&A Explorer dialog
+* Getting Started dialog
+* File menu and About dialog
+* Warning bar
+* File Restore dialog
+* Frowns dialog
+
+In our continued effort to improve accessibility, the previous list of experiences also support screen readers and high contrast settings.
+
+
 ### Frequently used shortcuts
 | To do this           | Press                |
 | :------------------- | :------------------- |
 | Move focus between sections  | Ctrl + F6 |
 | Move focus forward in section | Tab         |
 | Move focus backward in section | Shift + Tab |
+| Select or de-select an object | Enter or Space |
+| Multi-select objects | Ctrl + Space |
 
 ### On visual
 | To do this           | Press                |

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,8 +26,6 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 
 > [!NOTE]
 > The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
-> 
-> 
 
 ## Data Sources
 Data types are organized in the following categories:
@@ -76,15 +74,14 @@ The **Database** category provides the following data connections:
 * Impala
 * Google BigQuery
 * Snowflake
+* BI Connector
+* Exasol
 * Dremio (Beta)
-* Exasol (Beta)
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
-> 
-> 
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -107,11 +104,11 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure KustoDB (beta)
+* Azure Data Explorer (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -127,7 +124,8 @@ The **Online Services** category provides the following data connections:
 * Dynamics 365 Business Central (on-premises)
 * Common Data Service for Apps (Beta)
 * Microsoft Azure Consumption Insights (Beta)
-* Visual Studio Team Services (Beta)
+* Azure DevOps (Beta)
+* Azure DevOps Server (Beta)
 * Salesforce Objects
 * Salesforce Reports
 * Google Analytics
@@ -183,8 +181,6 @@ The following image shows the **Get Data** window for **Other**.
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
-> 
-> 
 
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
