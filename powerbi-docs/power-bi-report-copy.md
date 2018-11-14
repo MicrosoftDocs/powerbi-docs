@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 # Create a new report from an existing report (copy a report)
 Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
 
-1. [Open a report](service-report-open.md).
+1. [Open a report](consumer/end-user-report-open.md).
 2. From the **File** menu, select **Save As**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)
@@ -33,7 +33,7 @@ Maybe you have a report that already connects to your dataset and has some visua
 5. Have fun updating and editing your new report.
 
 ## Next Steps:
-[Create new visualizations](power-bi-report-add-visualizations-ii.md)
+[Create new visualizations](visuals/power-bi-report-add-visualizations-ii.md)
 
 [Delete visualizations](service-delete.md) you don't need
 

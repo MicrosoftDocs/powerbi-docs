@@ -14,7 +14,7 @@ ms.author: mihart
 LocalizationGroup: Reports
 ---
 # Create a new report in Power BI service by importing a dataset
-You've read [Reports in Power BI](service-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
+You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
 
 > **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
 > 
@@ -49,7 +49,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 > 
 
 ## Add a Radial Gauge to the report
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](power-bi-report-visualizations.md) for displaying this type of information.
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](visuals/power-bi-report-visualizations.md) for displaying this type of information.
 
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    

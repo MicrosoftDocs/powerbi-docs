@@ -29,7 +29,7 @@ You can add comments to reports, including Power BI reports, within the web port
     Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
    
    > [!TIP]
-   > Did you know? You can [annotate Power BI reports in the Power BI mobile apps](../mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) and share the annotated reports with others.
+   > Did you know? You can [annotate Power BI reports in the Power BI mobile apps](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) and share the annotated reports with others.
    > 
    > 
 

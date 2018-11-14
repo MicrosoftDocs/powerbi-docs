@@ -70,6 +70,6 @@ You can try or test the buttons you create for your report by using *CTRL+CLICK*
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 

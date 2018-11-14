@@ -8,8 +8,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 09/17/2018
 ---
+
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
@@ -73,20 +74,24 @@ Here is a partial list of differences you may use with each.
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase  |Azure portal |Office |Office |
-|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
+|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br></br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/en-us/)  |
 |Billing |Hourly |Monthly |Monthly |
 |Commitment  |No commitment |Yearly  |Monthly/Yearly |
 |Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |Can be used to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
 
-### What are the prerequisites to create a PBIE capacity in Azure? 
+### What are the prerequisites to create a PBIE capacity in Azure?
 
 * You need to sign in to your organizational directory (MSA accounts are not supported).
 * You need to have a Power BI tenant, i.e., at least one user in your directory has signed up to Power BI. 
 * You need to have an Azure subscription in your organizational directory.
 
-### How can I monitor capacity consumption?
+### How can I monitor Power BI Embedded capacity consumption?
 
-Monitoring through Azure is on the near-term roadmap. The Azure resource, Power BI Embedded, will include monitoring KPIs that will show health, and usage.
+* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded).
+
+* Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+
+* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
 ### Will my capacity scale automatically to adjust to the consumption of my app?
 
@@ -127,7 +132,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager (ARM) APIs you can 
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-In order to [promote your solution to production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
+In order to [promote your solution to production](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -152,11 +157,11 @@ The authentication and authorization of the application users will be implemente
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
+To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario? 
 
-It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
+It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
 The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
 
 ```csharp
@@ -271,11 +276,11 @@ Some of the features are:
 * New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
 
-## Onboarding Experience tool for embedding
+## Embedding setup tool for embedding
 
-### What is the Onboarding experience tool?
+### What is the Embedding setup tool?
 
-The [Onboarding experience tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
@@ -294,7 +299,7 @@ You can learn how to edit AAD registered applications [here](https://docs.micros
 
 ### How can I edit my Power BI user profile or data?
 
-You can learn how to edit your Power BI data [here](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+You can learn how to edit your Power BI data [here](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 

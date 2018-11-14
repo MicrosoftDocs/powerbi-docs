@@ -1,7 +1,7 @@
 ---
 title: Get started with Power BI Q&A 
 description: 'Get started with Q&A in Power BI service using the Retail Analysis sample'
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 01/16/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
@@ -53,7 +53,7 @@ How would we go about creating this same line chart using Q&A?
 4. To pin the chart to your dashboard, select the pin icon ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## Next steps
-[Q&A in Power BI](power-bi-q-and-a.md)
+[Q&A in Power BI](consumer/end-user-q-and-a.md)
 
 [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 

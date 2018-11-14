@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/19/2018
+ms.date: 09/19/2018
 ms.author: maggies
 ---
 # Install Power BI Report Server
@@ -25,11 +25,11 @@ Before you install Power BI Report Server, we recommend you review the [Hardware
 ### Power BI Report Server product key
 
 #### Power BI Premium
-If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
+If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. This is only available for Global Admins or users assigned the Power BI service administrator role.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
-Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
+Selecting **Power BI Report Server key** displays a dialog contain your product key. You can copy it and use it with the installation.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
 
@@ -72,7 +72,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
 ## Configuring your report server
 
-After you select **Configure Report Server** in the setup, you will be presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
+After you select **Configure Report Server** in the setup, you're presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
 You need to [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) to complete the initial configuration of Reporting Services. A SQL Server Database server is required to complete this step.
 

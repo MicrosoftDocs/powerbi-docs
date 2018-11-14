@@ -194,5 +194,5 @@ The **Synonyms** field appears on the right side of **Power BI Desktop**, where 
 For more information about features that are in Power BI Desktop, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 

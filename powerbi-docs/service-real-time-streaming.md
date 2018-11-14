@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -61,7 +61,7 @@ The following table (or matrix, if you like) describes the three types of datase
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> See [this MSDN article](https://msdn.microsoft.com/library/dn950053.aspx) for information on **Push** limits on how much data can be pushed in.
+> See [this article](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) for information on **Push** limits on how much data can be pushed in.
 > 
 > 
 
@@ -80,14 +80,12 @@ Let's take a look at each of those approaches in turn.
 **Power BI REST APIs** can be used to create and send data to **push** datasets and to and **streaming** datasets. 
 When you create a dataset using Power BI REST APIs, the *defaultMode* flag specifies whether the dataset is push or streaming. If no *defaultMode* flag is set, the dataset defaults to a **push** dataset.
 
-If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **push** *and* **streaming** dataset, providing the benefits of both dataset types. The REST API [article for **Create dataset**](https://msdn.microsoft.com/library/mt203562.aspx) demonstrates creating a streaming dataset, and shows the *defaultMode* flag in action.
+If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **push** *and* **streaming** dataset, providing the benefits of both dataset types. 
 
 > [!NOTE]
 > When using datasets with the *defaultMode* flag set to *pushStreaming*, if a request exceeds the 15Kb size restriction for a **streaming** dataset, but is less than the 16MB size restriction of a **push** dataset, the request will succeed and the data will be updated in the push dataset. However, any streaming tiles will temporarily fail.
-> 
-> 
 
-Once a dataset is created, use the REST APIs to push data using the [**Add rows** API](https://msdn.microsoft.com/library/mt203561.aspx), as [demonstrated in this article](https://msdn.microsoft.com/library/mt203561.aspx).
+Once a dataset is created, use the REST APIs to push data using the [**PostRows** API](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 All requests to REST APIs are secured using **Azure AD OAuth**.
 
@@ -156,9 +154,9 @@ The next sections look at each option in turn.
 
 ![](media/service-real-time-streaming/real-time-streaming_5.png)
 
-If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://msdn.microsoft.com/library/dn877544.aspx).
+If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://docs.microsoft.com/rest/api/power-bi/).
 
-Once you successfully create your data stream, you're provided with a REST API URL endpoint, which you application can call using *POST* requests to push your data to Power BI **streaming data** dataset you created.
+Once you successfully create your data stream, you're provided with a REST API URL endpoint, which your application can call using *POST* requests to push your data to Power BI **streaming data** dataset you created.
 
 When making *POST* requests, you should ensure the request body matches the sample JSON provided by the Power BI user interface. For example, wrap your JSON objects in an array.
 
@@ -220,16 +218,16 @@ For push datasets, assuming you have a timestamp in the schema, you can try crea
 Unfortunately, this is not available at this time.
 
 #### Given the previous question, how can I do any modeling on real-time datasets?
-Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use the update dataset/table REST APIs to add measures and relationships. You can get more information from the [Update Table Schema article](https://msdn.microsoft.com/library/mt203560.aspx), and the [Dataset properties article](https://msdn.microsoft.com/library/mt742155.aspx).
+Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use the update dataset/table REST APIs to add measures and relationships. 
 
 #### How can I clear all the values on a push dataset? How about streaming dataset?
-On a push dataset, you can use the delete rows REST API call. Separately, you can also use this handy tool, which is a wrapper around the REST APIs. There is currently no way to clear data from a streaming dataset, though the data will clear itself after an hour.
+On a push dataset, you can use the delete rows REST API call. There is currently no way to clear data from a streaming dataset, though the data will clear itself after an hour.
 
 #### I set up an Azure Stream Analytics output to Power BI, but I don’t see it appearing in Power BI – what’s wrong?
 Here’s a checklist you can use to troubleshoot the issue:
 
 1. Restart the Azure Stream Analytics job (jobs created before the streaming GA release will require a restart)
-2. Try re-authorizing your Power BI connection in Azure Stream Analytics
+2. Try reauthorizing your Power BI connection in Azure Stream Analytics
 3. Which workspace did you specify in the Azure Stream Analytics output? In the Power BI service, are you checking in that (same) workspace?
 4. Does the Azure Stream Analytics query explicitly output to the Power BI output? (using the INTO keyword)
 5. Does the Azure Stream Analytics job have data flowing through it? The dataset will only get created when there is data being transmitted.
@@ -238,9 +236,6 @@ Here’s a checklist you can use to troubleshoot the issue:
 ## Next steps
 Here are a few links you might find useful when working with real-time streaming in Power BI:
 
-* [Overview of the Power BI REST API with real-time data](https://msdn.microsoft.com/library/dn877544.aspx)
-* [Power BI REST API limitations](https://msdn.microsoft.com/library/dn950053.aspx)
-* [REST API article for **Create dataset**](https://msdn.microsoft.com/library/mt203562.aspx)
-* [**Add Rows** Power BI REST API](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Overview of the Power BI REST API with real-time data](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 

@@ -167,7 +167,6 @@ The following issues are known, and fixes are under development:
 - After a workspace is moved from a Premium capacity to shared capacity, in some cases, free users and user groups will continue to receive emails, though they should not. The issue occurs when the My Workspace of the user creating the subscription is in a Premium capacity.
 
 ## Next steps
-
-- [Create the current workspaces](service-create-workspaces.md)
-* [Install and use apps in Power BI](service-install-use-apps.md)
+* [Create the current workspaces](service-create-workspaces.md)
+* [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

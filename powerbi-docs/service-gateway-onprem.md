@@ -42,9 +42,9 @@ You can use a live connection against tabular or multidimensional instances.
 
 ## Download and install the On-premises data gateway
 
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925). 
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Note that updating the On-premises data gateway is achieved by reinstalling the gateway, as described in this section. When updating the gateway (by reinstalling), your existing gateways settings are retained.
+Note that you update the On-premises data gateway by installing the gateway again, as described in this section. As long as you install a newer version of the gateway, your existing settings are retained. If you install the same version, it treats this as a complete reinstall, and your settings are not retained.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -84,7 +84,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## Limitations and Considerations
 
-* [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+* [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ) is not currently supported
 * [Access Online](https://products.office.com/en-us/access) is not currently supported
 
@@ -113,7 +113,7 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
+[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)  
 [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

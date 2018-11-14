@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -20,8 +20,6 @@ Beginning with the June 2017 release of the **Power BI Desktop** and updates to 
 
 > [!NOTE]
 > The **High Density Sampling** algorithm described in this article is available in both **Power BI Desktop** and the **Power BI service**.
-> 
-> 
 
 ## How high density line sampling works
 Previously, **Power BI** selected a collection of sample data points in the full range of underlying data in a deterministic fashion. For example, for high-density data on a visual spanning one calendar year, there might be 350 sample data points displayed in the visual, each of which was selected to ensure the full range of data (the overall series of underlying data) was represented in the visual. To help understand how this happens, imagine plotting a stock price over a one-year period,and selecting 365 data points to create a line chart visual (that's one data point for each day).
@@ -38,17 +36,25 @@ For a high-density visual, **Power BI** intelligently slices your data into high
 ### Minimum and maximum values for high density line visuals
 For any given visualization, the following visual limitations apply:
 
-* **3,500** is the maximum number of data points *displayed* on the visual, regardless of the number of underlying data points or series. As such, if you have 10 series with 350 data points each, the visual has reached its maximum overall data points limit. If you have one series, it may have up to 3,500 data points if the new algorithm deems that the best sampling for the underlying data.
+* **3,500** is the maximum number of data points *displayed* on most visuals, regardless of the number of underlying data points or series (see the *exceptions* in the following bullet list). As such, if you have 10 series with 350 data points each, the visual has reached its maximum overall data points limit. If you have one series, it may have up to 3,500 data points if the new algorithm deems that the best sampling for the underlying data.
+
 * There is a maximum of **60 series** for any visual. If you have more than 60 series, break up the data and create multiple visuals with 60 or fewer series each. It's good practice to use a **slicer** to show only segments of the data (only certain series). For example, if you're displaying all subcategories in the legend, you could use a slicer to filter by the overall category on the same report page.
+
+The maximum number of data limits is higher for the following visual types, which are *exceptions* to the 3,500 data point limit:
+
+* **150,000** data points maximum for R visuals.
+* **30,000** data points for custom visuals.
+* **10,000** data points for scatter charts (scatter charts default to 3,500)
+* **3,500** for all other visuals
 
 These parameters ensure that visuals in Power BI Desktop render very quickly, are responsive to interaction with users, and do not result in undue computational overhead on the computer rendering the visual.
 
 ### Evaluating representative data points for high density line visuals
-When the number of underlying data points exceeds the maximum data points that can be represented in the visual (exceeds 3,500), a process called *binning* begins, which chunks the underlying data into groups called *bins*, and then iteratively refines those bins.
+When the number of underlying data points exceeds the maximum data points that can be represented in the visual, a process called *binning* begins, which chunks the underlying data into groups called *bins*, and then iteratively refines those bins.
 
 The algorithm creates as many bins as possible to create the greatest granularity for the visual. Within each bin, the algorithm finds the minimum and maximum data value, to ensure that important and significant values (for example, outliers) are captured and displayed in the visual. Based on the results of the binning and subsequent evaluation of the data by Power BI, the minimum resolution for the x-axis for the visual is determined – to ensure maximum granularity for the visual.
 
-As mentioned previously, the minimum granularity for each series is 350 points, the maximum is 3,500.
+As mentioned previously, the minimum granularity for each series is 350 points, the maximum is 3,500 for most visuals, with the *exceptions* listed in the previous paragraphs.
 
 Each bin is represented by two data points, which become the bin's representative data points in the visual. The data points are simply the high and low value for that bin, and by selecting the high and low, the binning process ensures any important high value, or significant low value, is captured and rendered in the visual.
 

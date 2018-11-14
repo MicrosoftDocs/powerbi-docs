@@ -25,7 +25,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 - Printing reports.
 * Publishing to the web for public web sites, where anyone in the world can see and interact with it.
 
-No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-free-vs-pro.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
@@ -79,12 +79,12 @@ In the Power BI mobile apps for iOS and Android devices, you can annotate a tile
 
 You're sharing a snapshot of the tile, report, or visual, and your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license, or the content is in a [Premium capacity](service-premium.md), and you've shared the object with them already, they can open it. You can send snapshots of tiles to anyone &#151; not just coworkers in the same email domain.
 
-More about [annotating and sharing tiles, reports, and visuals](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
+More about [annotating and sharing tiles, reports, and visuals](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
-You can also [share a snapshot of a tile](mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
+You can also [share a snapshot of a tile](consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
 
 ## Print or save as PDF or other static file
-You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](service-print.md).
+You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](consumer/end-user-print.md).
 
 ## Publish to the web
 

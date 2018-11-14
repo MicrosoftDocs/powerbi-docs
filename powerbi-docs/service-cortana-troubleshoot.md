@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Cortana for Power BI
 description: If you're having trouble using Cortana with Power BI, try these suggestions.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---

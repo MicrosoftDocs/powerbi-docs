@@ -1,7 +1,7 @@
 ---
 title: How to add a hyperlink to a table
 description: Hyperlinks in tables
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/22/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
@@ -84,9 +84,9 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 
 
 ## Next steps
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)
+[Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

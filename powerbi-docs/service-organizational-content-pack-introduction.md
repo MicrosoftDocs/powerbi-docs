@@ -29,7 +29,7 @@ In AppSource, you can browse or search for content packs published to the entire
 The dashboards, reports, and Excel workbooks are read-only, but you can copy and use the dashboards and reports as a starting point for creating your own personalized version of the content pack.
 
 > [!NOTE]
-> Organizational content packs are only available when you and your colleagues have [Power BI Pro](service-free-vs-pro.md).
+> Organizational content packs are only available when you and your colleagues have [Power BI Pro licenses](service-features-license-type.md).
 > 
 > 
 
@@ -38,7 +38,7 @@ Publishing an organizational content pack adds it to AppSource.  This centralize
 
 * To view AppSource, select **Get Data** > **My Organization** > **Get**.
 
-Read more about [finding and opening organizational content packs](service-organizational-content-pack-find-and-open.md).
+Read more about [finding and opening organizational content packs](consumer/end-user-content-pack.md).
 
 ## The life cycle of an organizational content pack
 Any Power BI Pro user can create, publish, and access organizational content packs. Only the content pack creator can modify the workbook and dataset, schedule refresh, and delete it.
@@ -73,6 +73,6 @@ All distribution group members have the same permissions to the data as the cont
 ## Next steps
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* [Power BI - Basic Concepts](service-basic-concepts.md)
+* [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -1,7 +1,7 @@
 ---
 title: Power BI Videos
 description: Power BI Videos and link to YouTube channel.
-author: mihart
+author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/19/2018
-ms.author: mihart
+ms.author: davidi
 
 ---
 # Power BI videos

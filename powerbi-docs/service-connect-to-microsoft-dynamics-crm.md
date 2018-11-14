@@ -14,7 +14,7 @@ ms.author: sarinas
 LocalizationGroup: Connect to services
 ---
 # Connect to Microsoft Dynamics CRM with Power BI
-Microsoft Dynamics CRM Online for Power BI allows you to easily access and analyze your data. Power BI uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more. After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
+Microsoft Dynamics CRM Online for Power BI allows you to easily access and analyze your data. Power BI uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users, and more. After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
 Connect to Dynamics CRM Online [Sales Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) or [Service Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service). Read more about [Dynamics CRM Online integration](https://powerbi.microsoft.com/integrations/microsoft-dynamicscrm) with Power BI.
 
@@ -22,17 +22,16 @@ This connection requires **Microsoft Dynamics CRM Online 2016 or later**. More d
 
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Select **Microsoft Dynamics CRM Sales Manager** or **Microsoft Dynamics CRM Service Manager** and click **Connect**.
+3. Select **Microsoft Dynamics CRM Sales Manager** or **Microsoft Dynamics CRM Service Manager** and click **Connect**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
+4. Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. When prompted, provide your credentials (this step might be skipped if you are already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
+5. When prompted, provide your credentials (this step might be skipped if you're already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. After connecting, you'll see a dashboard customized for a Sales Manager or Service Manager, populated with your own data:
+6. After connecting, you'll see a dashboard customized for a Sales Manager or Service Manager, populated with your own data:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
@@ -44,9 +43,9 @@ This connection requires **Microsoft Dynamics CRM Online 2016 or later**. More d
 ## What's included
 The sections below detail what's included for the [Sales Manager](#Sales) and [Service Manager](#Service) personas.
 
-Note that data in addition is limited based on the security role assigned to the Dynamics CRM Online user.
+Data is limited based on the security role assigned to the Dynamics CRM Online user.
 
-The dashboard and reports are meant to provide operational reporting on near term data with focus on a team or group. Each query is limited to retrieve a maximum of 100K records from Dynamics CRM Online. If this limit is exceeded due to high volume of data in your organization, provisioning will fail as data refresh Dynamics CRM online will be terminated. If your account is too large, consider connecting through the Power BI Desktop to build a custom solution.
+The dashboard and reports are meant to provide operational reporting on near term data with focus on a team or group. Each query is limited to retrieve a maximum of 100K records from Dynamics CRM Online. If this limit is exceeded because of high volume of data in your organization, provisioning will fail as data refresh Dynamics CRM online will be terminated. If your account is too large, consider connecting through the Power BI Desktop to build a custom solution.
 
 <a name="Sales"></a>
 
@@ -70,13 +69,13 @@ They also contain key charts such as:
 
 These metrics and charts help to understand your sales organization performance and analyze sales pipeline across your sales team.
 
-Following table lists the CRM entities available for thsi service and also gives details on the filters applied to each of the entity records.
+Following table lists the CRM entities available for this service and also gives details on the filters applied to each of the entity records.
 
 | CRM Entity | Filters applied |
 | --- | --- |
-| Account |All accounts which have related opportunities that have been modified in the last 365 days. |
+| Account |All accounts, which have related opportunities that have been modified in the last 365 days. |
 | Activity |All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
-| Business Unit |All business units which are not disabled <br> [isdisabled] = false |
+| Business Unit |All business units, which are not disabled <br> [isdisabled] = false |
 | Lead |All leads modified in the last 180 days <br> [modifiedon] > today - 180 days |
 | Opportunity |All opportunities modified in last 365 days <br> [modifiedon] > today - 365 days |
 | Opportunity Product |All opportunity products modified in last 365 days <br> [modifiedon] > today - 365 days |
@@ -97,7 +96,7 @@ These dashboard and reports contain key metrics such as:
 * Total Active Cases  
 * Number of Times KB Article Used in cases and more.    
 
-They also contains key charts such as:   
+They also contain key charts such as:   
 
 * Case Volume Trends for Incoming Cases, Resolved Cases, Escalated Cases   
 * Case Volume by various dimensions such as Origin, Location, Priority, Type  
@@ -114,11 +113,11 @@ Following table lists the CRM entities available for this service, as well as de
 | Activity |All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
 | Case |All cases modified in the last 90 days <br> [modifiedon] > today - 90 days |
 | Case Resolution Activity |All case resolution activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
-| Contact |All contacts which have related cases that have been modified in the last 90 days. |
+| Contact |All contacts, which have related cases that have been modified in the last 90 days. |
 | Knowledge Article |All latest version of knowledge articles  <br> [islatestversion] = true |
-| Knowledge Article Incident |All knowledge article incidents which are modified in the last 90 days <br> [modifiedon] > today - 90 days |
+| Knowledge Article Incident |All knowledge article incidents, which are modified in the last 90 days <br> [modifiedon] > today - 90 days |
 | Queue |All active queues  <br> [statecode] = 0 |
-| Queue Item |All case related queue items created on the past 365 days  <br> [createdon] > today - 365 days and <br> [objecttypecode] = 112 |
+| Queue Item |All case-related queue items created on the past 365 days  <br> [createdon] > today - 365 days and <br> [objecttypecode] = 112 |
 | User |All active users <br>  [isdisabled] = false |
 
 <a name="Requirements"></a>
@@ -151,7 +150,7 @@ If you do not have CRM Online 2016 or later, use the Power BI Desktop to connect
 If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records," consider connecting directly from the Power BI Desktop or leveraging the CRM solution template.
 
 ## Next steps
-* [What are apps in Power BI?](service-install-use-apps.md)
+* [What are apps in Power BI?](service-create-distribute-apps.md)
 * [Get data in Power BI](service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

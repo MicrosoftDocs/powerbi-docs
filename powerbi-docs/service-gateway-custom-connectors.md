@@ -40,8 +40,6 @@ When this option is enabled, you now see your custom connectors as available dat
 
 * Make sure the folder you create is accessible to the background gateway service. Typically, folders under your user’s Windows folder or system folders won’t be accessible. The gateway configurator shows a message if the folder is not accessible (this doesn't apply for the personal version of the gateway)
 * For custom connectors to work with the On-premises data gateway, they need to implement a “TestConnection” section in the custom connector’s code. This is not required when using custom connectors with Power BI Desktop. You can have one that works with the Desktop, but not with the gateway for this reason. Please refer to [this documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) on how to implement a TestConnection section.
-* Custom connectors with OAuth authentication are not supported.
-* Custom connectors using Direct Query are not supported.
 
 ## Next steps
 
@@ -53,6 +51,6 @@ When this option is enabled, you now see your custom connectors as available dat
 * [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 * [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 * [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
-* [Use Kerberos for SSO (single sign-on) from Power BI to On-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Use Kerberos for SSO (single sign-on) from Power BI to On-premises data sources](service-gateway-sso-kerberos.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

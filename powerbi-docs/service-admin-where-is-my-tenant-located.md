@@ -8,36 +8,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 10/31/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
+
 # Where is my Power BI tenant located?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Learn where your Power BI tenant is located and how that location is selected. This is important to understand as it can impact interactions you have with the service.
+Learn where your Power BI tenant is located and how that location is selected. Understanding the location is important, because it can impact the interactions you have with the service.
 
 ## How to determine where your Power BI tenant is located
-The find the region your tenant is in, you can do the following.
 
-1. Select the **?** within the Power BI service.
-2. Select **About Power BI**.
-3. Look for the value next to **Your data is stored in**. This is the region you are located in.
+To find the region your tenant is in, follow these steps.
 
-![](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
+1. In the Power BI service, in the top menu, select help (**?**) then **About Power BI**.
+
+1. Look for the value next to **Your data is stored in**. This is the region where your tenant is located.
+
+    ![Data region](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 
 ## How the data region is selected
-The data region is based on the country that was selected when the tenant was first created. This applies to sign up for Office 365 in addition to Powe rBI as this information is shared. If this is a new tenant, when you sign up, you will see a country drop down.
 
-![](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
+The data region is based on the country you select when you create the tenant. This applies to sign up for Office 365 in addition to Power BI, because this information is shared. If this is a new tenant, select the appropriate country from the list when you sign up.
 
-This selection is what drives the location of where your data will be stored. Power BI will pick a data region closest to this selection.
+![Country selection](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
-> [!WARNING]
-> This selection cannot be changed!
-> 
-> 
+Power BI picks a data region closest to this selection, which determines where data is stored for your tenant.
+
+> [!IMPORTANT]
+> You cannot change this selection after you create the tenant.
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

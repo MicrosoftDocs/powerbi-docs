@@ -2,13 +2,13 @@
 title: Dashboard tiles in Power BI service
 description: All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS).
 author: mihart
-manager: annbe
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 10/3/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -64,7 +64,7 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    * [Open the worksheet that was used to create this tile ](service-reports.md) ![worksheet icon](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
     * [View in focus mode ](service-focus-mode.md) ![focus icon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
-     * [Export the data used in the tile](power-bi-visualization-export-data.md) ![export data icon](media/service-dashboard-tiles/export-icon.png)
+     * [Export the data used in the tile](visuals/power-bi-visualization-export-data.md) ![export data icon](media/service-dashboard-tiles/export-icon.png)
      * [Edit title and subtitle, add a hyperlink](service-dashboard-edit-tile.md) ![edit icon](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Run insights ](service-insights.md) ![insights icon](media/service-dashboard-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](service-pin-tile-to-another-dashboard.md)

@@ -15,7 +15,7 @@ LocalizationGroup: Model your data
 # Set geographic filters in Power BI Desktop for the mobile apps
 In Power BI Desktop, you can [categorize geographical data](desktop-data-categorization.md) for a column, so Power BI Desktop knows how to treat values in visuals in a report. As an added benefit, when you or your colleagues view that report in the Power BI mobile apps, Power BI automatically provides geographical filters that match where you are. 
 
-For example, say you're a sales manager traveling to meet customers, and you'd like to quickly filter the total sales and revenue for the specific customer you're planning to visit. You want to break out the data for your current location, whether by state, city, or an actual address. Later, if you have time left, you'd like to visit other customers located nearby. You can [filter the report by your location to find those customers](mobile-apps-geographic-filtering.md).
+For example, say you're a sales manager traveling to meet customers, and you'd like to quickly filter the total sales and revenue for the specific customer you're planning to visit. You want to break out the data for your current location, whether by state, city, or an actual address. Later, if you have time left, you'd like to visit other customers located nearby. You can [filter the report by your location to find those customers](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 > [!NOTE]
 > You can only filter by location in the mobile app if the geographic names in the report are in English &#150; for example, "New York City" or "Germany".
@@ -48,12 +48,12 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 2. Publish the report to the Power BI service.
 
 ## View the report in Power BI mobile app
-1. Open the report in any of the [Power BI mobile apps](mobile-apps-for-mobile-devices.md).
+1. Open the report in any of the [Power BI mobile apps](consumer/mobile/mobile-apps-for-mobile-devices.md).
 2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
    
     ![Geo filter in mobile app](media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-Read more about [filtering a report by location in the Power BI mobile apps](mobile-apps-geographic-filtering.md).
+Read more about [filtering a report by location in the Power BI mobile apps](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 ## Next steps
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md)  

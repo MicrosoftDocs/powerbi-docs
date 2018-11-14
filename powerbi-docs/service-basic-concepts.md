@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 This article assumes that you've already [signed up for Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md).
 
-When you open the Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
+When you open the Power BI service, you'll see a **_dashboard_** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -41,10 +41,10 @@ Or, you might want to watch this video first before reading the rest of this art
 
 
 ## Power BI concepts
-The 4 major building blocks of Power BI are: ***dashboards***, ***reports***, ***workbooks***, and ***datasets***. And they're all organized into ***workspaces***. It's important to understand workspaces before we dig into the 4 building blocks, so let's start there. 
+The 4 major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, and **_datasets_**. And they're all organized into **_workspaces_**. It's important to understand workspaces before we dig into the 4 building blocks, so let's start there.
 
 ## Workspaces
-Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited. 
+Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in an app workspace.      
 -  *App workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your app workspaces and collaborate on dashboards, reports, workbooks, and datasets. All app workspace members need Power BI Pro licenses, but app consumers (the colleagues who have access to the apps) don't necessarily need Pro licenses.  
@@ -68,30 +68,30 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 * can be used over and over in one or in many workspaces.
 * can be used in many different reports.
 * Visualizations from that one dataset can display on many different dashboards.
-  
+
   ![](media/service-basic-concepts/drawing2.png)
 
 To [connect to or import a dataset](service-get-data.md), select **Get Data** (at the bottom of the left navigation) or select **+ Create > Dataset** (in the upper right corner). Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
-If you're [part of an ***app workspace***](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
+If you're [part of an **_app workspace_**](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
 
 Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
 ### Dig deeper
-* [Power BI Premium - what is it?](service-premium.md)
+* [What is Power BI Premium?](service-premium.md)
 * [Get data for Power BI](service-get-data.md)
 * [Sample datasets for Power BI](sample-datasets.md)
 
 ## Reports
-A Power BI report is one or more pages of visualizations (charts and graphs like line charts, pie charts, treemaps, and many more). Visualizations are also called ***visuals***. All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and [apps](service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations (charts and graphs like line charts, pie charts, treemaps, and many more). Visualizations are also called **_visuals_**. All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and [apps](service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
 
-There are 2 modes to view and interact with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  Only the person who created the report, co-owners, and those granted permission, have access to all of the exploring, designing, building, and sharing capabilities of ***Editing View*** for that report. And the people they share the report with can explore and interact with the report using ***Reading View***.   
+There are 2 modes to view and interact with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  Only the person who created the report, co-owners, and those granted permission, have access to all of the exploring, designing, building, and sharing capabilities of **_Editing View_** for that report. And the people they share the report with can explore and interact with the report using **_Reading View_**.   
 
-When you open a workspace, the associated reports are listed under the **Reports** tab. Each listed report represents one or more pages of visualizations based on only one of the underlying datasets. To open a report, simply select it. 
+When you open a workspace, the associated reports are listed under the **Reports** tab. Each listed report represents one or more pages of visualizations based on only one of the underlying datasets. To open a report, simply select it.
 
-When you open an app, you'll be presented with a dashboard.  To access an underlying report, select a dashboard tile (more on these later) that was pinned from a report. Keep in mind that not all tiles are pinned from reports, so you may have to click a few tiles to find a report. 
+When you open an app, you'll be presented with a dashboard.  To access an underlying report, select a dashboard tile (more on these later) that was pinned from a report. Keep in mind that not all tiles are pinned from reports, so you may have to click a few tiles to find a report.
 
-By default, the report opens in Reading view.  Just select **Edit report** to open it in Editing view (if you have the necessary permissions). 
+By default, the report opens in Reading view.  Just select **Edit report** to open it in Editing view (if you have the necessary permissions).
 
 In the example below, I've selected the "Sales and marketing" app workspace and clicked the tab for **Reports**.
 
@@ -102,7 +102,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 * is contained in a single workspace
 * can be associated with multiple dashboards within that workspace (tiles pinned from that one report can appear on multiple dashboards).
 * can be created using data from one dataset. (the slight exception to this is that Power BI Desktop can combine more than 1 dataset into a single report and that report can be imported into Power BI)
-  
+
   ![](media/service-basic-concepts/drawing3new.png)
 
 ### Dig deeper
@@ -110,7 +110,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 * [Reports in Power BI mobile apps](mobile-reports-in-the-mobile-apps.md)
 
 ## Dashboards
-A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md). 
+A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md).
 
 Why do people create dashboards?  Here are just some of the reasons:
 
@@ -127,7 +127,7 @@ There are many different ways that you, or a colleague, can [share a dashboard](
 
 > [!NOTE]
 > Pinning and tiles are covered in more detail below under the heading "Dashboard with tiles."
-> 
+>
 
 **ONE** dashboard...
 
@@ -135,17 +135,17 @@ There are many different ways that you, or a colleague, can [share a dashboard](
 * can display visualizations from many different datasets
 * can display visualizations from many different reports
 * can display visualizations pinned from other tools (e.g., Excel)
-  
+
   ![](media/service-basic-concepts/drawing1.png)
 
 ### Dig deeper
 * [Create a new blank dashboard and then get some data](service-dashboard-create.md) .
-* [Duplicate a dashboard](service-dashboard-copy.md) 
+* [Duplicate a dashboard](service-dashboard-copy.md)
 * [Create a phone view of a dashboard](service-create-dashboard-mobile-phone-view.md)
 
 
 ## Workbooks
-Workbooks are a special type of dataset. If you've read the **Datasets** section above, you know almost all you need to know about workbooks. But you may be wondering why sometimes Power BI classifies an Excel workbook as a **Dataset** and other times as a **Workbook**. 
+Workbooks are a special type of dataset. If you've read the **Datasets** section above, you know almost all you need to know about workbooks. But you may be wondering why sometimes Power BI classifies an Excel workbook as a **Dataset** and other times as a **Workbook**.
 
 When you use **Get data** with Excel files, you have the option to *Import* or *Connect* to the file. When you choose Connect, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets right to your dashboards.
 
@@ -161,7 +161,7 @@ We've covered workspaces and building blocks. Let's take another look at the Pow
 
 ![](media/service-basic-concepts/completenewest.png)
 
-### 1. **Navigation pane** (left nav)
+### 1. **Navigation pane** (left navpane)
 Use the navigation pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
 
   ![](media/service-basic-concepts/power-bi-navigation.png)
@@ -177,12 +177,12 @@ Use the navigation pane to locate and move between your workspaces and the Power
 Single-click
 
 * an icon or heading to open in content view
-* an arrowright (>) to open a flyout menu for Favorites, Recent, and Workspaces. 
+* an arrowright (>) to open a flyout menu for Favorites, Recent, and Workspaces.
 * a chevron icon () to display the **My Workspace** scrollable list of dashboards, reports, workbooks, and datasets.
 * a dataset to explore it
 
-### 2. **Canvas** 
-Because we've opened a dashboard, the canvas area displays visualization tiles. If, for example, we had opened the report editor, the canvas area would display a report page. 
+### 2. **Canvas**
+Because we've opened a dashboard, the canvas area displays visualization tiles. If, for example, we had opened the report editor, the canvas area would display a report page.
 
 Dashboards are composed of [tiles](service-dashboard-tiles.md).  Tiles are created in report Editing view, Q&A, other dashboards, and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
@@ -199,7 +199,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
-### 4. **Icon buttons** 
+### 4. **Icon buttons**
 The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
@@ -212,7 +212,7 @@ Notice the "C" icon after the dashboard title. This dashboard has a [data classi
 ![](media/service-basic-concepts/power-bi-title.png)
 
 ### 6. **Office 365 app launcher**
-With the app launcher, all your Office 365 apps are easily available with one click. From here you can quickly launch your email, documents, calendar, and more. 
+With the app launcher, all your Office 365 apps are easily available with one click. From here you can quickly launch your email, documents, calendar, and more.
 
 ![Office app launncher](media/service-basic-concepts/power-bi-waffle.png)
 
@@ -233,4 +233,3 @@ This area of the screen contains additional options for interacting with the con
 [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

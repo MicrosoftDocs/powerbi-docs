@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2018
+ms.date: 09/19/2018
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or you can go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Optimized for Power BI Report Server - March 2018) in the Microsoft Download Center.
+    Or you can go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (Optimized for Power BI Report Server - August 2018) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 
@@ -37,7 +37,8 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
-1. After you download the installer, run the Power BI Desktop (October 2017) Setup Wizard.
+1. After you download the installer, run the Power BI Desktop (August 2018) Setup Wizard.
+
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
     It starts automatically and you're ready to go.
@@ -45,7 +46,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 ## Verify you are using the correct version
 You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the release month and year of the release.
 
-![Title bar for Power BI Desktop optimized for Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
@@ -59,7 +60,7 @@ You can always open the version of Power BI Desktop you want to use first. And t
 Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, will always open the correct version of Power BI Destop.
 
 ## Considerations and limitations
-Reports in Power BI Report Server and in the Power BI service (http://powerbi.com) act almost exactly the same, but a few features are different.
+Power BI reports in Power BI Report Server, in the Power BI service (http://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
 
 ### In a browser
 Power BI Report Server reports support all visualizations, including:
@@ -74,11 +75,11 @@ Power BI Report Server reports don’t support:
 * Power BI Desktop preview features
 
 ### In the Power BI mobile apps
-Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../mobile-apps-for-mobile-devices.md), including:
+Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
 
-* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
+* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
   
-    ![Report optimized for phones](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Report optimized for phones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
 Power BI Report Server reports don’t support these features in the Power BI mobile apps:
 

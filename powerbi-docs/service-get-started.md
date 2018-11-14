@@ -1,7 +1,7 @@
 ---
 title: Get started with Power BI service (Power BI online)
 description: Get started with Power BI online (app.powerbi.com)
-author: adamw
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.author: mihart
+ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
 LocalizationGroup: Get started
@@ -40,7 +40,7 @@ If you already have an account, open a browser and type app.powerbi.com to open 
 
 ![Sign in or Sign up free](media/service-get-started/power-bi-sign-up.png)
 
-If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md).
+If you're looking for help with Power BI Desktop, see [Get started with Desktop](desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
@@ -51,7 +51,7 @@ Visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBH
 > 
 
 ## What is Power BI service?
-Microsoft Power BI service is sometimes referred to as Power BI online or app.powerbi.com. Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
+Microsoft Power BI service is sometimes referred to as Power BI online or app.powerbi.com. Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md).
 
 If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by connecting to Salesforce to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](service-create-distribute-apps.md) have been published for you.
 
@@ -85,7 +85,7 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 
     ![Reading view option](media/service-get-started/power-bi-editing-view.png)
 
-    While in Editing view you can create and modify your reports because you are the *owner* of the report; you are a *creator*. When you share your report with colleagues, they'll only be able to interact with the report in Reading view; they are *consumers*. Learn more about [Reading view and Editing view](service-reading-view-and-editing-view.md).
+    While in Editing view you can create and modify your reports because you are the *owner* of the report; you are a *creator*. When you share your report with colleagues, they'll only be able to interact with the report in Reading view; they are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
     
     A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md)
    > 
@@ -156,5 +156,5 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 Ready to try more?  Here are some great ways to explore Power BI.
 
 > [!div class="nextstepaction"]
-> [Connect to the online services you use](./service-connect-to-services.md)
+> [Connect to the online services you use](consumer/end-user-connect-to-services.md)
 

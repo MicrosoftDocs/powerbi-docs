@@ -39,7 +39,7 @@ DAX formulas are a lot like Excel formulas. DAX even has many of the same functi
 ## Let’s look at an example
 Jan is a sales manager at Contoso. She’s been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year’s sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Jan imports last year’s sales data into Power BI Desktop. She finds the SalesAmount field in the Reseller Sales table. Because the imported imported only contains sales amounts for last year, Jan renames the SalesAmount field to Last Years Sales. Jan then drag Last Years Sales onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
+To report the estimates, Jan imports last year’s sales data into Power BI Desktop. She finds the SalesAmount field in the Reseller Sales table. Because the imported data only contains sales amounts for last year, Jan renames the SalesAmount field to Last Years Sales. Jan then drag Last Years Sales onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
 
 Jan notices that even though she did not specify a calculation herself, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in Last Years Sales.
 

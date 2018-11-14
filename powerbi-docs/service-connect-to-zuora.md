@@ -8,7 +8,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -28,22 +28,22 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
 3. Select **Zuora** \>  **Get**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Specify your Zuora URL. This is typically "<https://www.zuora.com>", see details on [finding those parameters](#FindingParams) below.
+4. Specify your Zuora URL. The URL is typically "<https://www.zuora.com>", see details on [finding those parameters](#FindingParams) below.
 
    ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The content pack uses the Zuora AQUA API to pull in the following tables:
@@ -91,11 +91,10 @@ Access to the Zuora API is required.
 Provide the URL you typically sign into to access your Zuora data. The valid options are:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
-* The URL corresponding to your serivce instance  
+* The URL corresponding to your service instance  
 
 ## Troubleshooting
-The Zuora content pack pulls in many different aspects of your Zuora account. If you don't use certain features you may see correpesonding tiles/reports empty. If you have any issues loading, please contact Power BI Support.
+The Zuora content pack pulls in many different aspects of your Zuora account. If you don't use certain features, you may see corresponding tiles/reports empty. Contact Power BI Support if you have any issues loading.
 
 ## Next steps
 [Get started in Power BI](service-get-started.md)

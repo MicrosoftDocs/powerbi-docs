@@ -85,6 +85,6 @@ Once those steps are complete, you can use the commands in the following table t
 -   [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
 -   [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)
 -   [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
--   [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+-   [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

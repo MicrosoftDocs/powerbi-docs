@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -40,13 +40,12 @@ When you create a bookmark, the following elements are saved with the bookmark:
 
 * The current page
 * Filters
-* Slicers
+* Slicers, including slicer type (for example, dropdown or list) and slicer state
+* Visual selection state (such as cross-highlight filters)
 * Sort order
 * Drill location
 * Visibility (of an object, using the **Selection** pane)
 * The focus or **Spotlight** modes of any visible object
-
-Bookmarks do not currently save the cross-highlighting state. 
 
 Configure a report page the way you want it to appear in the bookmark. Once your report page and visuals are arranged how you want them, select **Add** from the **Bookmarks** pane to add a bookmark. 
 
@@ -128,7 +127,7 @@ When using the **View** feature of bookmarks, the following applies:
 
 * If the selected bookmark is in a group when you select **View** from bookmarks, only the bookmarks *in that group* are shown in the viewing session. 
 
-* If the selected bookmark is not a group, or is on the top level (such as the name of a bookmark group), then all bookmarks for the entire report are played, including bookmarks in any group. 
+* If the selected bookmark is not in a group, or is on the top level (such as the name of a bookmark group), then all bookmarks for the entire report are played, including bookmarks in any group. 
 
 To ungroup bookmarks, just select any bookmark in a group, click the ellipses, and then select **Ungroup** from the menu that appears. 
 
@@ -178,5 +177,5 @@ In this release of the **bookmarks**, there are a few limitations and considerat
 For more information about features that are similar or interact with bookmarks, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 
