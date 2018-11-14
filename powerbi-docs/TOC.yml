@@ -53,9 +53,11 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Modeling view in Power BI Desktop (Preview)"
+      href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
-    - name: "Composite models in Power BI Desktop (Preview)"
+    - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
       href: desktop-many-to-many-relationships.md
@@ -771,17 +773,17 @@
       items: 
       - name: "Self-service data prep with dataflows (preview)"
         href: service-dataflows-overview.md
-      - name: "Create and use dataflows"
+      - name: "Create and use dataflows (preview)"
         href: service-dataflows-create-use.md
-      - name: "Computed entities with Power BI Premium"
+      - name: "Computed entities with Power BI Premium (preview)"
         href: service-dataflows-computed-entities-premium.md
-      - name: "Using dataflows with on-premises data sources"
+      - name: "Using dataflows with on-premises data sources (preview)"
         href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows (preview)"
         href: service-dataflows-linked-entities.md      
       - name: "Using incremental refresh with dataflows (preview)"
         href: service-dataflows-incremental-refresh.md                  
-      - name: "Developer resources for dataflows"
+      - name: "Developer resources for dataflows (preview)"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
