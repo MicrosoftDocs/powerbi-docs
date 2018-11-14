@@ -16,8 +16,15 @@ ms.date: 10/30/2018
 
 ## What are **_certified_** custom visuals?
 
-Certified custom visuals are visuals in the **marketplace** that have met certain **specified code**
-requirements that have been tested by the Power BI team. Once a custom visual has been certified, it offers more features.  For exmaple, certified custom visuals can **export to PowerPoint**, **be displayed in emails** when a user subscribes to report pages, **be added to the Power BI service and to Power BI Desktop reports**, and **viewed in Power BI mobile and Power BI Embedded**.
+Certified custom visuals are visuals in the **marketplace** that meet certain **specified code**
+requirements that the **Microsoft Power BI team** testing has approved. Once a custom visual is certified, it offers more features.
+
+Here is a list of the certified custom visual features:
+
+* The ability to export to PowerPoint.
+* The ability to display a custom visual in emails when a user subscribes to report pages.
+* The ability to add the custom visual to the Power BI service and to a Power BI Desktop report.
+* the ability to viewa custom visual in Power BI mobile and Power BI Embedded.
 
 The tests performed are designed to check that the visual does not access external services or resources. **Microsoft** is *not* the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
@@ -29,7 +36,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 ## Removal of Power BI Certified custom visuals
 
-Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-that-have-been-certified)at its discretion.
+Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-that-have-been-certified) at its discretion.
 
 ## Getting a custom visual certified
 
@@ -38,7 +45,7 @@ Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-
 To get your custom visual *certified*, make sure your custom visual complies to the below:  
 
 * Microsoft AppSource approved. Your custom visual should be in our marketplace.
-* Custom visual is written with Versioned API 1.2 or higher
+* Custom visual is written with Versioned API 1.2 or higher.
 * Code repository available for review by Power BI team (for example, source code (JS or TS) in human readable format available to us, for example,  through GitHub). Note you don’t have to publicly share your code in Github.  
 * Uses only public reviewable OSS components. We can't verify a custom visual using a commercial component. Doesn't access external services or resources, including but not limited to no HTTP/S or WebSocket requests go out of Power BI context to any services. For example, some visuals such as map visuals send data to the backend server for additional processing. Backend returns the aggregated data for rendering.
 
