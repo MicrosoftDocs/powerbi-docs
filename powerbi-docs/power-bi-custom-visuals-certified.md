@@ -12,40 +12,49 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ---
 
-# Getting a custom visual *certified*
+# Certified custom visuals
 
-## What is meant by *certified*?
+## What are **_certified_** custom visuals?
 
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](consumer/end-user-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
+Certified custom visuals are visuals in the **marketplace** that have met certain **specified code**
+requirements thathas been tested by the Power BI team. Once a custom visual has been certified, it offers more features.  For exmaple, certified custom visuals can **export to PowerPoint**, **be displayed in emails** when a user subscribes to report pages, **be added to the Power BI service and to Power BI Desktop reports**, and **viewed in Power BI mobile and Power BI Embedded**.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) to learn how.
+The tests performed are designed to check that the visual does not access external services or resources. **Microsoft** is *not* the author of third party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
-## Certification requirements
+Certification process is an optional process and it is up to the developers to decide if they want their visual in the marketplace to be certified.  
 
-* Microsoft AppSource approved
-* Custom visual is written with Versioned API 1.2 or higher
-* Code repository available for review (e.g., Visual Code available to us through GitHub)
-* Uses only public reviewable OSS components
-* Does not access external services or resources
+**Uncertified visuals** do not necessarily mean unsafe visuals. Some visuals can’t be certified because they don’t comply to one or more of the certification requirements, for example connecting to external service like map visuals, or visuals using commercial libraries.
 
-> **TIP**: We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
-
-## Process for submitting a custom visual for Certification
-
-To submit a custom visual for certification:
-
-1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:    
-
-   * Title: Visual Certification Request
-   * Link to GitHub repository where the visual source code is hosted
-   * Adhere to the requirements (see above)
-   * Pass the code and security review
-
-2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
+Are you a Web developer and interested in creating your own visualizations and adding them to **Microsoft AppSource**? See **Develop a Power BI custom visual to learn how**.
 
 ## Removal of Power BI Certified custom visuals
 
-Microsoft, at its discretion, may remove a visual from the Certified list.  
+Microsoft can remove a visual from the Certified list at its discretion.
+
+## Getting a custom visual certified
+
+### Certification requirements
+
+To get your custom visual *certified*, please make sure your custom visual complies to the below:  
+
+* Microsoft AppSource approved. Your custom visual should be in our marketplace.
+* Custom visual is written with Versioned API 1.2 or higher 
+* Code repository available for review by Power BI team (e.g., source code (JS or TS) in human readable format available to us for example through GitHub). Note you don’t have to publicly share your code in Github.  
+* Uses only public reviewable OSS components. We will not be able to verify custom visual using a commercial component. Does not access external services or resources, including but not limited to no HTTP/S or WebSocket requests go out of Power BI context to any services. For example some visuals such as map visuals send data to the backend server for additional processing. Backend returns the aggregated data for rendering.
+
+> [!TIP] We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
+
+## Process for submitting a custom visual for certification
+
+To submit a custom visual for certification:
+
+1. Send an email to Power BI Custom Visuals Support team (pbicvsupport@microsoft.com). In the email, include the following information:
+    a. Title: Visual Certification Request
+    b. Link to GitHub repository where the human readable source code is hosted
+    c. [Adhere to the requirements](#certification-requirements)
+    d. Pass the code review
+
+2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below) or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
 ## List of custom visuals that have been certified
 
