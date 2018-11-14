@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 This article assumes that you've already [signed up for Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md).
 
-When you open the Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
+When you open the Power BI service, you'll see a **_dashboard_** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -41,7 +41,7 @@ Or, you might want to watch this video first before reading the rest of this art
 
 
 ## Power BI concepts
-The 4 major building blocks of Power BI are: ***dashboards***, ***reports***, ***workbooks***, and ***datasets***. And they're all organized into ***workspaces***. It's important to understand workspaces before we dig into the 4 building blocks, so let's start there.
+The 4 major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, and **_datasets_**. And they're all organized into **_workspaces_**. It's important to understand workspaces before we dig into the 4 building blocks, so let's start there.
 
 ## Workspaces
 Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited.
@@ -73,7 +73,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 
 To [connect to or import a dataset](service-get-data.md), select **Get Data** (at the bottom of the left navigation) or select **+ Create > Dataset** (in the upper right corner). Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
-If you're [part of an ***app workspace***](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
+If you're [part of an **_app workspace_**](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
 
 Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
@@ -83,9 +83,9 @@ Datasets can be refreshed, renamed, explored, and removed. Use a dataset to crea
 * [Sample datasets for Power BI](sample-datasets.md)
 
 ## Reports
-A Power BI report is one or more pages of visualizations (charts and graphs like line charts, pie charts, treemaps, and many more). Visualizations are also called ***visuals***. All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and [apps](service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations (charts and graphs like line charts, pie charts, treemaps, and many more). Visualizations are also called **_visuals_**. All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and [apps](service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
 
-There are 2 modes to view and interact with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  Only the person who created the report, co-owners, and those granted permission, have access to all of the exploring, designing, building, and sharing capabilities of ***Editing View*** for that report. And the people they share the report with can explore and interact with the report using ***Reading View***.   
+There are 2 modes to view and interact with reports: [Reading view and Editing view](service-reading-view-and-editing-view.md).  Only the person who created the report, co-owners, and those granted permission, have access to all of the exploring, designing, building, and sharing capabilities of **_Editing View_** for that report. And the people they share the report with can explore and interact with the report using **_Reading View_**.   
 
 When you open a workspace, the associated reports are listed under the **Reports** tab. Each listed report represents one or more pages of visualizations based on only one of the underlying datasets. To open a report, simply select it.
 
