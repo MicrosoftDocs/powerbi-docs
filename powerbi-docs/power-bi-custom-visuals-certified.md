@@ -24,9 +24,9 @@ Here is a list of the certified custom visual features:
 * The ability to export to PowerPoint.
 * The ability to display a custom visual in emails when a user subscribes to report pages.
 * The ability to add the custom visual to the Power BI service and to a Power BI Desktop report.
-* the ability to viewa custom visual in Power BI mobile and Power BI Embedded.
+* the ability to view a custom visual in Power BI mobile and Power BI Embedded.
 
-The tests performed are designed to check that the visual does not access external services or resources. **Microsoft** is *not* the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
+The tests performed are designed to check the visual does not access external services or resources. **Microsoft** is *not* the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
 The certification process is an optional process, and it is up to the developers to decide if they want their visual in the marketplace to be certified.  
 
@@ -49,7 +49,8 @@ To get your custom visual *certified*, make sure your custom visual complies to 
 * Code repository available for review by Power BI team (for example, source code (JS or TS) in human readable format available to us, for example,  through GitHub). Note you don’t have to publicly share your code in Github.  
 * Uses only public reviewable OSS components. We can't verify a custom visual using a commercial component. Doesn't access external services or resources, including but not limited to no HTTP/S or WebSocket requests go out of Power BI context to any services. For example, some visuals such as map visuals send data to the backend server for additional processing. Backend returns the aggregated data for rendering.
 
-> [!TIP] We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
+> [!TIP]
+> We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
 
 ## Process for submitting a custom visual for certification
 
