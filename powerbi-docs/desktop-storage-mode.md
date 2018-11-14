@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -40,16 +40,6 @@ The storage mode setting in Power BI Desktop is one of three related features:
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources. Storage mode is described further in this article.
 
-## Enable the storage mode preview feature
-
-The storage mode feature is in preview, and it must be enabled in Power BI Desktop. To enable storage mode, select **File** > **Options and Settings** > **Options** > **Preview Features**, and then select the **Composite Models** check box. 
-
-![The "Preview features" pane](media/desktop-composite-models/composite-models_02.png)
-
-To enable the feature, restart Power BI Desktop.
-
-![The "Feature requires a restart" window](media/desktop-composite-models/composite-models_03.png)
-
 ## Use the storage mode property
 
 Storage mode is a property that you can set on each table in your model. To set the storage mode, in the **Fields** pane, right-click the table whose properties you want to set, and then select **Properties**.
@@ -72,19 +62,7 @@ Changing a table to **Import** is an *irreversible* operation. This property can
 
 ## Constraints on DirectQuery and Dual tables
 
-Dual tables have the same constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
-
-## Relationship rules on tables with different storage modes
-
-Relationships must comply with rules that are based on the storage mode of the related tables. This section provides examples of valid combinations. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
-
-On a dataset with a single data source, the following *1-to-many* relationship combinations are valid:
-
-| Table on the *many* side | Table on the *1* side |
-| ------------- |----------------------| 
-| Dual          | Dual                 | 
-| Import        | Import or Dual       | 
-| DirectQuery   | DirectQuery or Dual  | 
+Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## Propagation of Dual
 Consider the following simple model, where all the tables are from a single source that supports Import and DirectQuery.
@@ -95,14 +73,11 @@ Let’s say all tables in this model are DirectQuery to begin with. If we then c
 
 ![Storage mode warning window](media/desktop-storage-mode/storage-mode_05.png)
 
-The dimension tables (*Customer*, *Date*, and *Geography*) must be set to **Dual** to comply with the previously described relationship rules. Instead of having to set these tables to **Dual** ahead of time, you can set them in a single operation.
+The dimension tables (*Customer*, *Geography* and *Date*) may be set to **Dual** to reduce the number of weak relationships in the dataset, and improve performance. Weak relationships normally involve at least one DirectQuery table where join logic cannot be pushed to the source systems. The fact that **Dual** tables can act as either DirectQuery or Import helps avoid this.
 
 The propagation logic is designed to help with models that contain many tables. Let’s say you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop calculates the minimum set of dimension tables that must be set to **Dual**, so you don’t have to.
 
 The propagation logic traverses only to the one side of **1-to-many** relationships.
-
-* Changing the *Customer* table to **Import** - instead of changing *SurveyResponse* - is not allowed because of its relationships to the DirectQuery tables *Sales* and *SurveyResponse*.
-* Changing the *Customer* table to **Dual** - instead of changing *SurveyResponse* - is allowed. The propagation logic also sets the *Geography* table to **Dual**.
 
 ## Storage mode usage example
 Let's continue with the example from the previous section, and imagine applying the following storage mode property settings:
@@ -188,4 +163,3 @@ For more information about composite models and DirectQuery, see the following a
 * [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md)
 * [Use DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
-
