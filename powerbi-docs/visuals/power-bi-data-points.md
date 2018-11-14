@@ -15,10 +15,10 @@ LocalizationGroup: Visualizations
 ---
 # Introduction
 
-When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have pedabytes of data points. This article explains the strategies used by Power BI to render visualizations.
+When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
 ## Data reduction strategies
-Every visual employs one or more *data reduction strategy* in order to handle the potentially large volumes of data being analyzed. Even a simple table employs a strategy to avoid loading the entire dataset to the client.  The reduction strategy being used varies by visual type. Each visual selects from the supported *data reduction strategies* as part of generating the data request sent to the server. 
+Every visual employs one or more *data reduction strategies* in order to handle the potentially large volumes of data being analyzed. Even a simple table employs a strategy to avoid loading the entire dataset to the client.  The reduction strategy being used varies by visual type. Each visual selects from the supported *data reduction strategies* as part of generating the data request sent to the server. 
 
 Each visual controls the parameters on those strategies to influence the overall amount of data.   
 
@@ -29,7 +29,7 @@ For each strategy, there are defaults based on the shape and type of data being 
 * **TopN**: Show only the first N items
 * **Simple Sample**: Show the first, last, and N evenly distributed items in between.
 * **BottomN**: Show only the last N items.  Useful for monitoring frequently updated data.
-* **High density sampling** - An improved sampling algorithm that better respects outliers and/or the shape of a curve.
+* **High-density sampling** - An improved sampling algorithm that better respects outliers and/or the shape of a curve.
     * **Binned line sampling** - Sample data points based on outliers in bins across an axis
 	* **Overlapping points sampling** - Sample data points based on overlapping values to preserve outliers
 
@@ -41,7 +41,7 @@ For more information, see [What's new in Analysis Services](https://docs.microso
 ## Dynamic limits
 In addition to the strategies above, visuals with two hierarchies of grouping columns (axis and legend, or category and series) use one additional strategy called *dynamic limits*.  Dynamic limits are designed to better balance data points. 
 
-Dynamic limits provide a better selection of points for sparse data than static limits would. For example, a visual could be configure to select 100 categories and 10 series with a total of 1000 points. But the actual data has 50 categories and 20 series.  At query runtime, dynamic limits selects all 20 series to fill up the 1000 points requested.
+Dynamic limits provide a better selection of points for sparse data than static limits would. For example, a visual could be configured to select 100 categories and 10 series with a total of 1000 points. But the actual data has 50 categories and 20 series.  At query runtime, dynamic limits selects all 20 series to fill up the 1000 points requested.
 
 Dynamic limits are automatically applied when the server is capable as detailed below:
 
@@ -49,7 +49,7 @@ Dynamic limits are automatically applied when the server is capable as detailed 
 
 * In Desktop and Power BI service when using an imported model, Direct Query, live connect to the service, or live connect to AS PaaS. 
 
-* In Power BI Service, when connecting through an on-premises gateway to on-premises SSAS, we cannot use dynamic limits. The on-premises gateway does not fully support the dynamic limits strategy which returns a different structure of result sets from the on-premises SSAS.  
+* In Power BI Service, when connecting through an on-premises gateway to on-premises SSAS, we cannot use dynamic limits. The on-premises gateway does not fully support the dynamic limits strategy that returns a different structure of result sets from the on-premises SSAS.  
 
 ## Strategies and data point limits by visual type
 
@@ -69,7 +69,7 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
 - Values: Virtualization by using Window of 200 rows at a time
 
 ### Combo chart
- Uses the same strategies as column chart. Note that the line in the **combo chart** does not use the high density algorithm that the **line chart** uses.
+ Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high density algorithm that the **line chart** uses.
 
 ### Custom visuals
 Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use
@@ -105,11 +105,11 @@ See [High density sampling](../desktop-high-density-sampling.md)
 Depending on the configuration, a map can have:
 - Location: Top 3,500
 - Location, Size: Top 3,500
-- Location, Lat and Long aggregates (+/-Size): Top 3,500
-- Latitude Lat, Longitude Long: see [High density scatter](desktop-high-density-scatter-charts.md)
-- Latitude Lat, Longitude Long, Size: Top 3,500
-- Legend, Latitude Lat, Longitude Long: see [High density scatter](desktop-high-density-scatter-charts.md)
-- Legend, Latitude Lat, Longitude Long, Size: Top 233 legends, Top 15 latitude and longitude  (this could use statistics or dynamic limits)
+- Location, Latitude and Longitude aggregates (+/-Size): Top 3,500
+- Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Latitude, Longitude, Size: Top 3,500
+- Legend, Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (this could use statistics or dynamic limits)
 - Location, Legend, Latitude Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (this could use statistics or dynamic limits)
 
 ### Matrix
@@ -152,7 +152,7 @@ The filled map can use statistics or dynamic limits.
 ### Table
 - Values: Virtualization (data windowing) by using Window of 500 rows at a time
 
-### Treemap (this could use statistics or dynamic limits)
+### Tree map (this could use statistics or dynamic limits)
 - Max points: 3,500
 - Group: Top 500
 - Details: Top 20
