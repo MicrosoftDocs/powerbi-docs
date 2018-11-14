@@ -2,7 +2,7 @@
 
 Following is a list of the current limitations for row-level security on cloud models.
 
-* If you previously defined roles and rules in the Power BI service, you must recreate them in Power BI Desktop.
+* If you previously defined roles and rules in the Power BI service, you must re-create them in Power BI Desktop.
 
 * You can define RLS only on the datasets created with Power BI Desktop. If you want to enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. [Learn more](../desktop-import-excel-workbooks.md)
 
