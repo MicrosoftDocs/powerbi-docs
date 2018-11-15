@@ -1,7 +1,7 @@
 ---
 title: Change how visuals interact in a report
 description: Documentation for how to set Visual interactions in a Microsoft Power BI service report and a Power BI Desktop report.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/24/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---

@@ -1,15 +1,15 @@
 ---
 title: Edit Q&A linguistic schema and add phrasings - Power BI
 description: How to use Power BI Desktop to edit the linguistic schema used by Power BI Q&A.
-author: willthom
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: 'mihart'
+ms.reviewer: willthom
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
