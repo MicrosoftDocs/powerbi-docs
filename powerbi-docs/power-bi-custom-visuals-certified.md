@@ -46,7 +46,7 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
     >[!Note]
     > You don’t have to publicly share your code in Github.
 
-* Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and don't have known vulnerabilities). We can't verify a custom visual using a commercial component. Doesn't access external services or resources, including but not limited to no HTTP/S or WebSocket requests go out of Power BI context to any services. For example, some visuals such as map visuals send data to the backend server for additional processing. Backend returns the aggregated data for rendering.
+* Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and don't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
 * Does not access external services or resources, including but not limited to, no HTTP/S or WebSocket requests go out of Power BI
 
