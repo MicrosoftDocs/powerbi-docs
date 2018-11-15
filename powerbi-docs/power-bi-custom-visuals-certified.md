@@ -1,5 +1,5 @@
 ---
-title: Certified Power BI custom visualizations
+title: Certified Power BI custom visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
 author: markingmyname
 ms.author: maghan
