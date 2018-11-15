@@ -16,7 +16,11 @@ LocalizationGroup: Premium
 
 This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities.
 
-You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options. **The current version of the app is 1.8 (released November 7, 2018).**
+You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
+
+**The current version of the app is 1.9 (released November 14, 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -82,7 +86,7 @@ The **Summary** area shows a view of your capacities based on entities, system r
 | --- | --- |
 | **Entities** | * The number of capacities you own<br> * The distinct number of datasets in your capacity<br> * The distinct number of workspaces in your capacity |
 | **System** | * The average memory usage in GB over the past seven days<br> * Highest memory consumption in GB in the past seven days and the local time it occurred<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred |
-| **Dataset Workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is the time taken to complete the operation, in minutes<br> * Average refresh wait time is the average lag between the scheduled time and start of the operation, in minutes<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average query duration is the time taken to complete the operation, in minutes<br> * Total number of models evicted due to memory pressure |
+| **Dataset Workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is the time taken to complete the operation, in minutes<br> * Average refresh wait time is the average lag between the scheduled time and start of the operation, in minutes<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average query duration is the time taken to complete the operation, in minutes<br> * Total number of models evicted due to memory pressure<br> * Average size of datasets <br> * Average count of datasets loaded into memory |
 |  |  |
 
 #### Refreshes area
@@ -131,6 +135,8 @@ The **Datasets** area contains the following metrics.
 | --- | --- |
 | **Dataset Eviction Counts** | * Total: The total number of dataset *evictions* for each capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU).|
 | **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Hourly Loaded Dataset Counts** | * Number of datasets loaded into memory vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Data Sizes**  | * Max size: The maximum size of the dataset in MB for the period shown |
 |  |  |
 
 ### Paginated reports tab

@@ -1,15 +1,15 @@
 ---
 title: Take a tour of the samples available with Power BI
 description: Sample content packs, PBIX files, and Excel datasets for Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
