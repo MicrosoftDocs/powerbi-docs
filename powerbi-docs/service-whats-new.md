@@ -652,7 +652,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 23, 2015**
 
-* You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](service-connect-to-microsoft-dynamics-marketing.md) for more information.
+* You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) for more information.
 
 **April 15, 2015**
 
