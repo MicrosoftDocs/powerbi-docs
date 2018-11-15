@@ -15,8 +15,8 @@ ms.date: 11/13/2018
 
 ## Visuals with in-app purchase
 
-Until recently the Marketplace (AppSource) accepted only free Power Bl visuals. This policy is changing so that visuals with in-app purchases (IAP) may also be submitted to AppSource.
-Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements, as described in our documentation. 
+Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with in-app purchases (IAP) may also be submitted to the **&ppSource**.
+Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in our documentation.
 
 > [!Note]
 > For the visual to be certified, it must not access external services or resources.
