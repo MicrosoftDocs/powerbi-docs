@@ -16,6 +16,7 @@ LocalizationGroup: Connect to services
 # Connect to the services you use with Power BI
 You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 
+
 Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). The Power BI team adds new services regularly.
 
 ![AppSource apps](media/service-connect-to-services/overview.png)
