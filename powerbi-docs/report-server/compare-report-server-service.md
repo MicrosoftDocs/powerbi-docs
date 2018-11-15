@@ -4,7 +4,7 @@ description: This article compares the features of Power BI Report Server and th
 keywords: 
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/06/2018
+ms.date: 11/14/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
@@ -45,7 +45,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Row-level security | Only through data source in DirectQuery mode | Available in both DirectQuery (data source) & Import mode | [Row-level security (RLS)](../service-admin-rls.md) with Power BI 
 | Full screen mode | No | Yes | [Full screen mode](../consumer/end-user-focus.md) in the Power BI service 
 | Advanced Office 365 collaboration | No | Yes | [Collaborate in an app workspace](../service-collaborate-power-bi-workspace.md) with Office 365 
-| R visuals | No | Yes | [Create R visuals](../visuals/service-r-visuals.md) in the Power BI service  
+| R visuals | No | Yes | [Create R visuals](../desktop-r-visuals.md) in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R visuals to Power BI Report Server.  
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features 
 | Custom visuals | Yes | Yes | [Custom visuals in Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](http://aka.ms/pbidesktopstore)
