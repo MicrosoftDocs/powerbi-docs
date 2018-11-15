@@ -16,7 +16,9 @@ LocalizationGroup: Premium
 
 This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities.
 
-You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options. **The current version of the app is 1.8 (released November 7, 2018).**
+You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
+
+**The current version of the app is 1.9 (released November 14, 2018).**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -131,6 +133,8 @@ The **Datasets** area contains the following metrics.
 | --- | --- |
 | **Dataset Eviction Counts** | * Total: The total number of dataset *evictions* for each capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU).|
 | **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Hourly Loaded Dataset Counts** | * Number of datasets loaded into memory vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Data Sizes**  | * Max size: The maximum size of the dataset in MB for the period shown |
 |  |  |
 
 ### Paginated reports tab
