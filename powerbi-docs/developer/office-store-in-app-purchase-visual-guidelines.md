@@ -15,8 +15,8 @@ ms.date: 11/13/2018
 
 ## Visuals with in-app purchase
 
-Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with in-app purchases (IAP) may also be submitted to the **&ppSource**.
-Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in our documentation.
+Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with in-app purchases (IAP) may also be submitted to the **AppSource**.
+Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in the [Certified custom visuals article](../power-bi-custom-visuals-certified.md).
 
 > [!Note]
 > For the visual to be certified, it must not access external services or resources.
@@ -27,8 +27,13 @@ Developers upload their IAP visuals to AppSource via the Seller Dashboard, as th
 
 ### What is a Power BI visual with IAP features?
 
-An IAP visual is free visual and offers free features, but also has additional features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins. 
-Developers may use any third-party payment system for those purchases. Refer to our store policy.
+An IAP visual is free visual and offers free features, but also has additional features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
+Developers may use any third-party payment system for those purchases. Refer to our store [policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+This section describes the specifications for adding logos and logotypes in IAP visuals.
+
+> [!NOTE]
+> Logos are allowed in edit mode only. Logos can't be displayed in view mode.
 
 ![definitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 
