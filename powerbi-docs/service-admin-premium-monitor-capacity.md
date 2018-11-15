@@ -20,6 +20,8 @@ You can monitor capacity with the Power BI Premium Capacity Metrics app or in th
 
 **The current version of the app is 1.9 (released November 14, 2018).**
 
+.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Install the Premium Capacity Metrics app
