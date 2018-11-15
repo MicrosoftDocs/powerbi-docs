@@ -16,23 +16,18 @@ ms.date: 11/20/2018
 
 ## What are **_certified_** custom visuals?
 
-Certified custom visuals are visuals in the **marketplace** that meet certain **specified code**
-requirements that the **Microsoft Power BI team** testing has approved. Once a custom visual is certified, it offers more features.
+Certified custom visuals are visuals in the **Marketplace** that meet certain **specified code**
+requirements that the **Microsoft Power BI team** has tested and approved. Once a custom visual is certified, it offers more features. Such as you can [export to PowerPoint](consumer/end-user-powerpoint.md), and you can display the visual in emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md).
 
-Here is a list of the certified custom visual features:
-
-* The ability to export to PowerPoint.
-* The ability to display a custom visual in emails when a user subscribes to report pages.
-* The ability to add the custom visual to the Power BI service and to a Power BI Desktop report.
-* the ability to view a custom visual in Power BI mobile and Power BI Embedded.
+**Certified custom visuals** are used like [standard custom visuals](power-bi-custom-visuals.md). Certified custom visuals can be added to the **Power BI service**, a **Power BI Desktop report**, and viewed with **Power BI mobile** and **Power BI Embedded**.
 
 The tests performed are designed to check the visual does not access external services or resources. **Microsoft** is *not* the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
 The certification process is an optional process, and it is up to the developers to decide if they want their visual in the marketplace to be certified.  
 
-**Uncertified visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the certification requirements. For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+**Uncertified custom visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](#getting-a-custom-visual certified). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to **Microsoft AppSource**? See **Develop a Power BI custom visual to learn how**.
+Are you a Web developer and interested in creating your own visualizations and adding them to **[Microsoft AppSource](https://appsource.microsoft.com)**? See **[Develop a Power BI custom visual to learn how](developer/custom-visual-develop-tutorial.md)**.
 
 ## Removal of Power BI Certified custom visuals
 
