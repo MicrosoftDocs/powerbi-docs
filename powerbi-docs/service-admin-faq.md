@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -237,7 +237,7 @@ For information about the Power BI SLA (Service Level Agreement), see the [Licen
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### How does security work in Power BI?
 
