@@ -32,7 +32,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) 
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) 
 | Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) 
-| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../consumer/end-user-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to sevices. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details.
+| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../consumer/service-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to sevices. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details.
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) 
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 

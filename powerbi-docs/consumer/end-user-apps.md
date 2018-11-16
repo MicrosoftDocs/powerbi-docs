@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
-In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization create and distribute apps with key business information. [External services](../power-bi-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
+In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization create and distribute apps with key business information. [External services](../service-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
@@ -58,5 +58,5 @@ Now you can explore the data in the dashboards and reports in the app. You have 
 
 
 ## Next steps
-[Power BI apps for external services](../power-bi-connect-to-services.md)
+[Power BI apps for external services](../service-connect-to-services.md)
 
