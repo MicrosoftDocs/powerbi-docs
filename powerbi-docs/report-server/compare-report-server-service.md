@@ -4,7 +4,7 @@ description: This article compares the features of Power BI Report Server and th
 keywords: 
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/14/2018
+ms.date: 11/16/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
@@ -32,11 +32,11 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) 
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) 
 | Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) 
-| Connect to services like Salesforce | No | Yes | [Connect to the services you use](../consumer/end-user-connect-to-services.md) with the Power BI service
+| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../consumer/end-user-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to sevices. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details.
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) 
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
-| Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports-report-builder-power-bi.md) in preview
+| Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports-report-builder-power-bi.md) in preview in a Premium capacity
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../power-bi-visualization-arcgis.md)
 | Email subscriptions for Power BI reports | No | Yes | [Subscribe to a report or dashboard](../consumer/end-user-subscribe.md) in the Power BI service 
