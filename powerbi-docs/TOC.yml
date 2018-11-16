@@ -495,8 +495,6 @@
         href: service-connect-to-microsoft-dynamics-ax.md
       - name: "Microsoft Dynamics CRM"
         href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics Marketing"
-        href: service-connect-to-microsoft-dynamics-marketing.md
       - name: "Microsoft Dynamics NAV"
         href: service-connect-to-microsoft-dynamics-nav.md
       - name: "Office365Mon"
