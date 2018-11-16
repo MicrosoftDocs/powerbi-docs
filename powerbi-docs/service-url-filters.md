@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
 ---
 
@@ -164,7 +164,7 @@ This discrepancy is helpful when you want to see different results; filtered on 
 
 There are a couple of things to be aware of when using the query string parameters.
 
-* When using the *in* operator, the values to the right of *in* must be either a comma-separated list enclosed in parentheses.    
+* When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters aren't prefixed because they're passed directly to the report processing engine.
 * Query string filtering doesn't work with [Publish to web](service-publish-to-web.md).
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
