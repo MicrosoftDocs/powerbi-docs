@@ -42,7 +42,7 @@ Field type can be a number, datetime, or string and the type used must match the
 
 * **Strings** must be enclosed with single quotes - 'manager name'.
 * **Numbers** require no special formatting
-* **Dates and times** must be enclosed with single quotes and preceded by the word **DateTime**.
+* **Dates and times** must be enclosed with single quotes. In OData v3 they must be preceded by the word datetime, but datetime isn’t needed in OData v4.
 
 If it's still confusing, continue reading and we'll break it down.  
 
