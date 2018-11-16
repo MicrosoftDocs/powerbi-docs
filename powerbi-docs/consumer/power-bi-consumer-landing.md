@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/24/2018
+ms.date: 11/07/2018
 ms.author: mihart
 layout: landingpage
 
