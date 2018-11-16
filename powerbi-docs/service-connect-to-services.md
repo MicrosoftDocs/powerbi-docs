@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2018
+ms.date: 01/29/2018
 ms.author: maggies
 
 LocalizationGroup: Connect to services
