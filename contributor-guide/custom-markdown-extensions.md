@@ -169,7 +169,7 @@ Two-way selectors lets users select a topics from a two way matrix. This is esse
 * You do not need a list item for every point in your matrix, but do only have an item where a topic URL exists and is not a duplicate.
 * The link can be any URL, although it is generally another GitHub topic.
 
-See [Get started with Mobile Services](http://azure.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
+See [Get started with Mobile Services](http://azure.microsoft.com/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
 
 ![Two-way selectors example](./media/custom-markdown-extensions/selector-list.png)
 

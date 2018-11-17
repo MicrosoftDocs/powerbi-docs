@@ -15,7 +15,7 @@ ms.date: 10/30/2018
 
 Learn how you can publish your custom visual to AppSource for others to discover and use.
 
-Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preparation that needs to be done before you can do that. For more information on how to create a custom visual, see [Developing a Power BI Custom Visual](custom-visual-develop-tutorial.md).
+Once you have created your custom visual, you may want to publish it AppSource for others to discover and use. There is some preparation that needs to be done before you can do that. For more information on how to create a custom visual, see Developing a [Power BI Custom Visual](custom-visual-develop-tutorial.md).
 
    ![Office store](media/office-store/AppSource_01.jpg)
 
@@ -142,7 +142,7 @@ Once your visual is created, you can optionally get your visual certified. This 
 
 ## Next steps
 
-[Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Developing a Power BI custom visual](custom-visual-develop-tutorial.md)  
 [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
 [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)

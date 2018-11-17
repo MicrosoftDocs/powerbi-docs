@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -18,17 +18,14 @@ Power BI has features that enable people with disabilities to more easily consum
 
 ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
 
-> [!NOTE]
-> These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
-> 
-> 
-
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
 Beginning with the September 2017 release of **Power BI Desktop**, you can press the **?** key to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
 
 ![Press ? key in Power BI Desktop to show accessibility keyboard shortcuts](media/desktop-accessibility/accessibility_03.png)
 
 With the accessibility enhancements, you can consume a Power BI report with a keyboard or a screen reader with the following techniques:
+
+When viewing a report, generally you should have scan mode off.
 
 You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl+F6**.
 
@@ -44,7 +41,7 @@ You can press **Alt+Shift+F11** to present an accessible version of the *Show da
 ![Press Alt+Shift+F11 in Power BI Desktop to display an accessible See Data window for a visual](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> The Show data feature is only accessible to a screen reader through this keyboard shortcut. If you open Show data through the option in the visual header, it will not be accessible to a screen reader.
+> The Show data feature is only accessible to a screen reader through this keyboard shortcut. If you open Show data through the option in the visual header, it will not be accessible to a screen reader. When using Show data, turn on scan mode to take advantage of all the hot keys your screen reader provides.
 
 Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use CTRL+right arrow (control plus the right arrow key) to move through the various controls within the slicer. For example, when you initially press CTRL+right arrow the focus is on the eraser, and pressing the SPACE bar is equivalent to clicking on the eraser button, which erases all values on the slicer. 
 
@@ -108,6 +105,69 @@ There are a few known issues and limitations with the accessibility features, de
 
 * When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader of choice prior to opening any files in Power BI Desktop.
 * If you are using Narrator, there are some limitations around navigating Show data as an HTML table.
+
+## Keyboard Shortcuts
+Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in Power BI Desktop, these shortcuts work in the following experiences as well:
+
+* Q&A Explorer dialog
+* Getting Started dialog
+* File menu and About dialog
+* Warning bar
+* File Restore dialog
+* Frowns dialog
+
+In our continued effort to improve accessibility, the previous list of experiences also support screen readers and high contrast settings.
+
+
+### Frequently used shortcuts
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Move focus between sections  | Ctrl + F6 |
+| Move focus forward in section | Tab         |
+| Move focus backward in section | Shift + Tab |
+| Select or de-select an object | Enter or Space |
+| Multi-select objects | Ctrl + Space |
+
+### On visual
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Move focus to visual menu | Alt + Shift + F10 |
+| Show data | Alt + Shift +F11  |
+
+### Pane Navigation
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Open a context menu | <ul><li>Windows keyboard: Windows context key + F10.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: Shift + F10</li></ul> |
+
+### Slicer
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Interact with a slicer | Ctrl + Right arrow key |
+
+### Selection Pane
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Activate selection pane | F6 |
+| Move an object up in the layering | Ctrl + Shift + F |
+| Move an object down in the layering | Ctrl + Shift + B |
+| Hide / show (toggle) an object | Ctrl + Shift + S |
+
+### DAX Editor
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Move line up / down | Alt + Up arrow key / Down arrow key |
+| Copy line up / down | Shift + Alt + Up arrow key / Down arrow key |
+| Insert line below | Ctrl + Enter |
+| Insert line above | Ctrl + Shift + Enter |
+| Jump to matching bracket | Ctrl + Shift + \ |
+| Indent / outdent line | Ctrl + ] / [ |
+| Insert cursor | Alt + Click |
+| Select current line | Ctrl + I |
+| Select all occurrences of current selection | Ctrl + Shift + L |
+| Select all occurrences of current word | Ctrl + F2 |
+
+
+
 
 ## Next steps
 * [Use Report Themes in Power BI Desktop (Preview)](desktop-report-themes.md)

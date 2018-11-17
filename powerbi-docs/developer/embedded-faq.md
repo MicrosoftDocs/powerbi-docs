@@ -114,10 +114,10 @@ https://app.powerbi.com/ > ? > About Power BI
 ![About Power BI](media/embedded-faq/about-01.png)
 ![Tenant region](media/embedded-faq/tenant-location-01.png)
 
-### What is supported with the communicating sequential processes (CSP) channel?
+### What is supported with the Cloud Solution Provider (CSP) channel?
 
 * You can create PBIE for your tenant with subscription type CSP
-* Partner account can sign in to customer tenant and purchase PBIE for customer tenant specify customer tenant user as Power BI capacity admin
+* Partner account can sign in to customer tenant and purchase PBIE for customer tenant, specify customer tenant user as Power BI capacity admin
 
 ### Why do I get an unsupported account message?
 

@@ -1,5 +1,5 @@
 ---
-title: Use composite models in Power BI Desktop (preview)
+title: Use composite models in Power BI Desktop
 description: Create data models with multiple data connections and many-to-many relationships in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Use composite models in Power BI Desktop (preview)
+# Use composite models in Power BI Desktop
 
 Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections&mdash;whether DirectQuery or Import&mdash;were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
@@ -26,16 +26,6 @@ The composite models capability in Power BI Desktop consists of three related fe
 * **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals such as slicers initiated queries that were sent to back-end sources. For more information, see [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md).
-
-## Enable the composite models preview feature
-
-The composite models feature is in preview, and it must be enabled in Power BI Desktop. To enable composite models, select **File** > **Options and Settings** > **Options** > **Preview Features**, and then select the **Composite Models** check box. 
-
-![The "Preview features" pane](media/desktop-composite-models/composite-models_02.png)
-
-To enable the feature, you need to restart Power BI Desktop.
-
-![The "Feature requires a restart" window](media/desktop-composite-models/composite-models_03.png)
 
 
 ## Use composite models
