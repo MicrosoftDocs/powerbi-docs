@@ -1,5 +1,5 @@
 ---
-title: Configure Power BI iOS mobile app access to a report server remotely
+title: Configure iOS mobile app access to a report server remotely
 description: Learn how to configure the iOS mobile apps remotely for your report server.
 author: maggiesMSFT
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
 
 ---
