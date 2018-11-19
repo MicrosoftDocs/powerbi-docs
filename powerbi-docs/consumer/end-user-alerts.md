@@ -11,7 +11,7 @@ ms.component: powerbi-service
 ms.topic: tutorial
 ms.date: 10/08/2018
 ms.author: mihart
-#Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notofied when important data changes above/below my set threshhold.
+#Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notofied when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
 # Tutorial: Set data alerts in Power BI service

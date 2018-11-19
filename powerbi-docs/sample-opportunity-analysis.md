@@ -1,15 +1,15 @@
 ---
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
 description: 'Opportunity Analysis sample for Power BI: Take a tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/20/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---

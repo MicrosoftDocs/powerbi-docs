@@ -1,5 +1,5 @@
 ---
-title: Use SAML on the on-premises gateway for single sign-on (SSO) from Power BI to on-premises data sources
+title: Use SAML for single sign-on (SSO) to on-premises data sources
 description: Configure your gateway with Security Assertion Markup Language (SAML) to enable single sign-on (SSO) from Power BI to on-premises data sources.
 author: mgblythe
 ms.author: mblythe

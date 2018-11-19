@@ -2,48 +2,49 @@
 title: Certified Power BI custom visualizations
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
-
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-
 ---
+
 # Getting a custom visual *certified*
+
 ## What is meant by *certified*?
+
 A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](consumer/end-user-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Get started with Developer Tools](service-custom-visuals-getting-started-with-developer-tools.md) to learn how.
-
+Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) to learn how.
 
 ## Certification requirements
-* Microsoft AppSource approved    
-* Custom visual is written with Versioned API 1.2 or higher    
-* Code repository available for review (e.g., Visual Code available to us through GitHub)    
-* Uses only public reviewable OSS components    
-* Does not access external services or resources    
+
+* Microsoft AppSource approved
+* Custom visual is written with Versioned API 1.2 or higher
+* Code repository available for review (e.g., Visual Code available to us through GitHub)
+* Uses only public reviewable OSS components
+* Does not access external services or resources
 
 > **TIP**: We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
-> 
-> 
 
 ## Process for submitting a custom visual for Certification
+
 To submit a custom visual for certification:
 
 1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:    
 
-   * Title: Visual Certification Request    
-   * Link to GitHub repository where the visual source code is hosted    
-   * Adhere to the requirements (see above)    
-   * Pass the code and security review    
+   * Title: Visual Certification Request
+   * Link to GitHub repository where the visual source code is hosted
+   * Adhere to the requirements (see above)
+   * Pass the code and security review
 
 2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
 ## Removal of Power BI Certified custom visuals
+
 Microsoft, at its discretion, may remove a visual from the Certified list.  
 
 ## List of custom visuals that have been certified
@@ -138,10 +139,11 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Word Cloud](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
 
 ## Next steps
-[Getting started with custom visuals developer tools (Preview)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualizations in Power BI](visuals/power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-[Publish custom visuals to Microsoft AppSource](developer/office-store.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
+* [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md)
+* [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Visualizations in Power BI](visuals/power-bi-report-visualizations.md)  
+* [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
+* [Publish custom visuals to Microsoft AppSource](developer/office-store.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -8,12 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 11/09/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # SQL Database Auditing content pack for Power BI
+
+> [!IMPORTANT]
+> The SQL Database Auditing content pack has been deprecated, and is no longer available.
+ 
 The Power BI content pack for Azure [SQL Database Auditing](/azure/sql-database/sql-database-auditing/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
 
 Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getdata/services/sql-db-auditing) for Power BI.

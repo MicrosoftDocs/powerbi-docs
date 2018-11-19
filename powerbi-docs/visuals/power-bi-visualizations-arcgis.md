@@ -4,13 +4,12 @@ description: 'Using ArcGis map in reading view as a Power BI report consumer'
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-tags: power bi, service, desktop, mobile
 featuredvideoid: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.author: mihart
 
 ---
@@ -20,7 +19,7 @@ This topic is written from the point of view of a person *consuming* an ArcGIS m
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
 > [!TIP]
-> GIS stands for Geographic Information Science.
+> GIS stands for Geographic Information System.
 > 
 
 The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](../power-bi-visualization-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).

@@ -53,9 +53,11 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Modeling view in Power BI Desktop (Preview)"
+      href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
-    - name: "Composite models in Power BI Desktop (Preview)"
+    - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
       href: desktop-many-to-many-relationships.md
@@ -105,6 +107,8 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: "Custom visuals troubleshoot"
+      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -229,6 +233,8 @@
         href: desktop-bookmarks.md
       - name: "Use Report themes"
         href: desktop-report-themes.md
+      - name: "Try the new filter experience"
+        href: power-bi-report-filter-preview.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"
@@ -249,8 +255,6 @@
         href: desktop-r-powered-custom-visuals.md
       - name: "Use gridlines and snap-to-grid"
         href: desktop-gridlines-snap-to-grid.md
-      - name: "High density line sampling"
-        href: desktop-high-density-sampling.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -323,6 +327,8 @@
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: "High density line sampling"
+        href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
@@ -368,7 +374,7 @@
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
     - name: "Manage the Power BI Desktop sign-in form"
-      href: desktop-admin-sign-in-form.md      
+      href: desktop-admin-sign-in-form.md
 - name: Power BI service
   items:
   - name: Overview
@@ -427,8 +433,6 @@
       items: 
       - name: "Rename content within Power BI"
         href: service-rename.md
-      - name: "Display dashboards and reports in Full Screen mode (TV mode)"
-        href: service-fullscreen-mode.md
       - name: "Quick Insights in Power BI"
         href: service-insights.md
       - name: "Enroll your US Government organization"
@@ -489,8 +493,6 @@
         href: service-connect-to-microsoft-dynamics-ax.md
       - name: "Microsoft Dynamics CRM"
         href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics Marketing"
-        href: service-connect-to-microsoft-dynamics-marketing.md
       - name: "Microsoft Dynamics NAV"
         href: service-connect-to-microsoft-dynamics-nav.md
       - name: "Office365Mon"
@@ -765,6 +767,24 @@
         href: refresh-troubleshooting-tile-errors.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
+    - name: Self-service data prep
+      items: 
+      - name: "Self-service data prep with dataflows (preview)"
+        href: service-dataflows-overview.md
+      - name: "Create and use dataflows (preview)"
+        href: service-dataflows-create-use.md
+      - name: "Computed entities with Power BI Premium (preview)"
+        href: service-dataflows-computed-entities-premium.md
+      - name: "Using dataflows with on-premises data sources (preview)"
+        href: service-dataflows-on-premises-gateways.md    
+      - name: "Link entities between dataflows (preview)"
+        href: service-dataflows-linked-entities.md      
+      - name: "Using incremental refresh with dataflows (preview)"
+        href: service-dataflows-incremental-refresh.md                  
+      - name: "Developer resources for dataflows (preview)"
+        href: service-dataflows-developer-resources.md
+      - name: "Connect to dataflows in Power BI Desktop"
+        href: desktop-connect-dataflows.md  
   - name: Resources
     items: 
     - name: "Videos"
@@ -775,6 +795,36 @@
       href: supported-languages-countries-regions.md
     - name: "Whitepapers"
       href: whitepapers.md
+- name: Paginated reports in Power BI
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports? (Preview)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Tutorials
+    items:
+    - name: Create a paginated report and upload it
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View
+      href: paginated-reports-report-design-view.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
+    - name: Create an embedded data source
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create parameters 
+      href: paginated-reports-parameters.md
+    - name: Publish a paginated report
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: View a paginated report
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interact with parameters
+      href: paginated-reports-view-parameters.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
@@ -909,8 +959,6 @@
       items:
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/developers/
-      - name: "Create a custom visual with the Developer Tools"
-        href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
         href: https://microsoft.github.io/PowerBI-visuals/samples/
       - name: "Custom Visuals Git Repo"
