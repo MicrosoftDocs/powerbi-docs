@@ -34,7 +34,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
-* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [If I have multiple domains, can I control the Office 365 tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)

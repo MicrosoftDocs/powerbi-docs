@@ -20,7 +20,7 @@ Office 365 enables companies to resell Office 365 bundled and integrated with th
 
 If you are interested in acquiring Power BI alongside your Office 365 subscription, we recommend you contact your partner to do so. If your partner does not currently offer Power BI, you have different options to pursue.
 
-# Work with your partner to purchase Power BI
+## Work with your partner to purchase Power BI
 
 If you want to buy a subscription to Power BI Pro or Power BI Premium, work with your partner to consider what options you have:
 
@@ -28,7 +28,7 @@ If you want to buy a subscription to Power BI Pro or Power BI Premium, work with
 
 * Your partner is able to transition you to a model where you can buy Power BI directly from Microsoft or another partner who offers Power BI.
 
-# Purchase from Microsoft or another channel
+## Purchase from Microsoft or another channel
 
 Depending on the relationship with your partner, you might be able to purchase Power BI directly from Microsoft or another partner. You can verify whether you can add Power BI subscriptions in the Office 365 admin portal (requires membership in the Global Administrator or Billing Administrator role).
 
