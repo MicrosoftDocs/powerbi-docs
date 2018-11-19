@@ -30,6 +30,8 @@ When you select **Load**, Power BI Desktop creates a new table from your data, a
 
 ![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
 
+If you want to modify the entered data, you can open this talbe in **Power Query**. Then, nagivate to **Query Settings** -> **Applied Steps**, double click the first step named **Source** to open the **Create Data** window again for modification.
+
 And that’s it – it’s that easy to enter data into Power BI Desktop.
 
 You’re now ready to use the data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
