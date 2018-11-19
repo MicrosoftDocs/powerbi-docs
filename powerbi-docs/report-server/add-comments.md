@@ -1,5 +1,5 @@
 ---
-title: Add comments to a report in a report server - Power BI Report Server
+title: Add comments to a report in Power BI Report Server
 description: Learn how to add comments to a Power BI or a paginated report on a Power BI Report Server or SQL Server Reporting Services report server.
 author: maggiesMSFT
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 11/15/2018
 ms.author: maggies
 
 ---
-# Add comments to a report in a report server
-You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permissions can see the comments for the report. See the [Permssions](#permissions) section below for details.
+# Add comments to a report in a report server - Power BI Report Server
+You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permissions can see the comments for the report. See the [Permissions](#permissions) section below for details.
 
 ## Add or view comments
 1. Open a paginated or Power BI report on a report server.
