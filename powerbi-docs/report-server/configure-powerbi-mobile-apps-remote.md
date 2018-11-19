@@ -39,7 +39,7 @@ The following table spells out the pairs.
 
 Here's an example of setting the configuration policy using Intune.
 
-![Intune configuraton settings](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
+![Intune configuration settings](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
 ## End users connecting to a report server
 
