@@ -48,7 +48,7 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
 
 * Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and don't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
-* Does not access external services or resources, including but not limited to, no HTTP/S or WebSocket requests go out of Power BI
+* Does not access external services or resources, including but not limited to, no HTTP/S or WebSocket requests go out of Power BI to any services. 
 
 > [!TIP]
 > We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
