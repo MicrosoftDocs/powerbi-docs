@@ -1,5 +1,5 @@
 ---
-title: In-app Purchase Power BI Visuals Guidelines
+title: Additional purchase may be required -  Power BI Visuals Guidelines
 description: Learn how you can publish your custom visual to AppSource for others to discover and use it via a purchase.
 author: markingmyname
 ms.author: maghan
@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ---
 
-# In-app purchase visuals guidelines
+# Additional purchase may be required visuals guidelines
 
-## Visuals with in-app purchase
+## Visuals with additional purchase may be required 
 
-Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with in-app purchases (IAP) may also be submitted to the **AppSource**.
+Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with "additional purchase may be required" price-tag may also be submitted to the **AppSource**. Additional purchase may be required visuals are similar to in-app purchase (IAP) adds-in in office store. 
 Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in the [Certified custom visuals article](../power-bi-custom-visuals-certified.md).
 
 > [!Note]
@@ -56,6 +56,3 @@ Use the landing page to clarify to users how they can use your visual and where 
 ### License key and token
 
 For user convenience, add license key or token related fields at the top of the format pane, so they are better located for users.
-
-> [!Note]
-> License information can't include Pll (personally identifiable information). For example, a license can't contain email addresses.
