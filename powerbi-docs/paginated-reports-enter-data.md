@@ -24,7 +24,7 @@ In this article, you learn about a feature in the new version of SQL Server 2016
 
 ## Get started
 
-After you’ve downloaded and installed Report Builder, you follow the same workflow you’ve previously used to add an embedded data source and dataset to your report. Under **Data Sources**, you see a new option, **Enter Data**.  You only need to set up this data source once in a report. After that, you can create multiple tables of entered data as separate datasets, all using that single data source.
+After you’ve downloaded and installed Report Builder, you follow the same workflow you use to add an embedded data source and dataset to your report. In the following procedure, under **Data Sources** you see a new option: **Enter Data**.  You only need to set up this data source once in a report. After that, you can create multiple tables of entered data as separate datasets, all using that single data source.
 
 1. In the **Report Data** pane, select **New** > **Dataset**.
 
