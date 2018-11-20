@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: conceptual
-ms.date: 10/26/2018
+ms.date: 11/19/2018
 ms.author: maggies
 ---
 
@@ -41,7 +41,7 @@ After you’ve downloaded and installed Report Builder, you follow the same work
     ![ENTER DATA data source](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
 1. Back in the **Dataset Properties** dialog box, select **Query Designer**.
-2. In the **Query Designer** pane, click in the second row and type or paste your data in the table.
+2. In the **Query Designer** pane, right-click and paste your data in the table.
 
     ![Enter data in the Query Designer](media/paginated-reports-enter-data/paginated-enter-data.png)
 
@@ -53,19 +53,17 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
     ![Set column names](media/paginated-reports-enter-data/paginated-column-name.png)
 
-    By default, the data type for each column is a String.  
-
-9. To change the data type, if you want, right-click the column header > **Change Type**, and set it to another data type, such as Date or Integer.
+1. If the first row contains column headings, right-click and delete it.
+    
+9. By default, the data type for each column is String. To change the data type, right-click the column header > **Change Type**, and set it to another data type, such as Date or Float.
 
     ![Change data type](media/paginated-reports-enter-data/paginated-data-type.png)
 
-1. Delete that blank first row.
-    
 1. When you’ve finished creating the table, select **OK**.  
 
     ![XML data structure](media/paginated-reports-enter-data/paginated-xml-data.png)
 
-    Notice the query that’s generated is the same as you’d see with an XML data source. Under the covers, that’s what we’re using as the data provider.  We’ve just re-purposed it to enable this scenario as well.
+    The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve just re-purposed it to enable this scenario as well.
 
 12. Select **OK**.
 
@@ -75,9 +73,13 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
 Now you can use your dataset as the basis for data visualizations in your report. You can also add another dataset and use the same data source for it.
 
+## Upload the paginated report to the Power BI service
+
+Now that paginated reports are supported in the Power BI service in preview, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for more information.
+
 ## Upload the paginated report to a report server
 
-You may want to upload your completed paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your RsReportServer.config as an additional data extension. Back up your RsReportServer.config file before you make the change, in case you run into any issues.
+You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your RsReportServer.config as an additional data extension. Back up your RsReportServer.config file before you make the change, in case you run into any issues.
 
 ```
 <Extension Name=”ENTERDATA” Type=”Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions”>
@@ -95,4 +97,5 @@ That’s it – you can now publish reports that use this new functionality to y
 
 ## Next steps
 
+[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
 [What is Power BI Report Server?](report-server/get-started.md)
