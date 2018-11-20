@@ -45,15 +45,11 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
     ![Enter data in the Query Designer](media/paginated-reports-enter-data/paginated-enter-data.png)
 
-    Or paste a table.
-
-    ![Paste a table in the Query Designer](media/paginated-reports-enter-data/paginated-paste-data.png)
-
 1. To set the column names, double-click each **NewColumn** and type the column name.
 
     ![Set column names](media/paginated-reports-enter-data/paginated-column-name.png)
 
-1. If the first row contains column headings, right-click and delete it.
+1. If the first row contains column headings from the original data, right-click and delete it.
     
 9. By default, the data type for each column is String. To change the data type, right-click the column header > **Change Type**, and set it to another data type, such as Date or Float.
 
