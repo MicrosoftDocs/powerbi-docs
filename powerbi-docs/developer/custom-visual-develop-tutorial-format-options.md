@@ -13,7 +13,7 @@ ms.date: 11/06/2018
 
 # Tutorial: Adding formatting options to a Power BI custom visual
 
-In this tutorial we go through how to add common properties to the visual.
+In this tutorial, we go through how to add common properties to the visual.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -255,4 +255,4 @@ For tips about debugging your custom visual, see the [debugging guide](https://m
 
 ## Next steps
 
-You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process, please reference [Publish custom visuals to AppSource](office-store.md).
+You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish custom visuals to AppSource](office-store.md).
