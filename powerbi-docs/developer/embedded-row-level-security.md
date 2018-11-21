@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 11/21/2018
 ---
 
 # Use row-level security with Power BI embedded content
@@ -198,7 +198,14 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
 5. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
 
-    Here is some sample code.
+    Here is some sample code for adding the fields to the HomeController.cs file.
+
+    ```csharp
+        //public async Task<ActionResult> EmbedReport(string username, string roles)
+        public async Task<ActionResult> EmbedReport(string username, string roles, string customData)
+    ```
+
+    Here is some sample code for creating EffectiveIdentity in the HomeController.cs file.
 
     ```csharp
     // create 'EffectiveIdentity' to use with 'CustomData'
@@ -211,26 +218,37 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     // check for roles
     if (!string.IsNullOrEmpty(roles))
     {
-    effectiveIdentity.Roles = roles.Split(',');
+        effectiveIdentity.Roles = roles.Split(',');
     }
 
     // check for customdata
     if (!string.IsNullOrEmpty(customData))
     {
-    effectiveIdentity.CustomData = customData;
+        effectiveIdentity.CustomData = customData;
     }
 
     // Generate Embed Token with effective identities.
     generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { effectiveIdentity });
     }
-    // if username is empty, roles or customeData are not empty 
+
+    // if username is empty, roles or customeData are not empty
     else if (string.IsNullOrEmpty(username) && (!string.IsNullOrEmpty(roles) || !string.IsNullOrEmpty(customData)))
     {
-    result.ErrorMessage = "Failed to generate embed token.";
-
-    return View(result);
+        result.ErrorMessage = "Failed to generate embed token.";
+        return View(result);
     }
     ```
+
+    Here is some sample code for adding CustomData to the EmbedReport.cshtml file.
+
+    ```csharp
+    <!-- Added for CustomData -->
+    <div class="inputLineTitle">CustomData</div>
+    <input type="text" name="customdata" value="@Model.CustomData" />
+    <h8>Value to transfer to Azure AS</h8>
+    <!-- End CustomData -->
+    ```
+
 6. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
 
     ![Before Custom Data is applied](media/embedded-row-level-security/customdata-before.png)
