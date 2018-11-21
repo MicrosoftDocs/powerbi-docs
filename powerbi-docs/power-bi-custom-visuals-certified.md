@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/20/2018
+ms.date: 11/21/2018
 ---
 
 # Certified custom visuals
@@ -46,7 +46,7 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
     >[!Note]
     > You don’t have to publicly share your code in Github.
 
-* Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and don't have known vulnerabilities). We can't verify a custom visual using a commercial component.
+* Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and doesn't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
 * Does not access external services or resources, including but not limited to, no HTTP/S or WebSocket requests go out of Power BI to any services. 
 
