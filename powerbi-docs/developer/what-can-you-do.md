@@ -40,7 +40,7 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-To start learning more about custom visual development, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
+To start learning more about custom visual development, see [Developing a Power BI custom visual](custom-visual-develop-tutorial.md).
 
 ## Using API automation
 

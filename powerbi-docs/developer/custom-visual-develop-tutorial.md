@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/26/2018
+ms.date: 11/06/2018
 ---
 
 # Tutorial: Developing a Power BI custom visual
@@ -34,6 +34,7 @@ In this tutorial, you learn how to:
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
 * You need [Visual Studio Code](https://www.visualstudio.com/) installed.
+* You need [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Setting up the developer environment
 
@@ -64,6 +65,8 @@ Now you need to install the **pbiviz** package.
     ```
 
 ### Creating and installing a certificate
+
+#### Windows
 
 1. To create a certificate, enter the following command.
 
@@ -112,13 +115,32 @@ Now you need to install the **pbiviz** package.
 > [!Important]
 > Do not close the Windows PowerShell session.
 
+#### OSX
+
+1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double-click on the certificate.
+
+    ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
+
+2. Select **Always Trust** and close the window.
+
+    ![Install SSL cert 2 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
+
+3. Enter your username and password. Select **Update Settings**.
+
+    ![Install SSL cert 3 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
+
+4. Close any browsers that you have open.
+
+> [!NOTE]
+> If the certificate is not recognized, you may need to restart your computer.
+
 ## Creating a custom visual
 
 Now that you have set up your environment, it is time to create your custom visual.
 
 You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the full source code for this tutorial.
 
-1. In Windows PowerShell, verify that the Power BI Visual Tools package has been installed.
+1. Verify that the Power BI Visual Tools package has been installed.
 
     ```powershell
     pbiviz
@@ -554,7 +576,11 @@ You have now configured the data roles and bound the visual to the dataview.
 
 In the next tutorial you learn how to add formatting options to the custom visual.
 
-## Next Steps
+## Debugging
+
+For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Adding formatting options](custom-visual-develop-tutorial-format-options.md)

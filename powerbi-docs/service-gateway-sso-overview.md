@@ -1,5 +1,5 @@
 ---
-title: Use single sign-on (SSO) from Power BI to on-premises data sources
+title: Use single sign-on (SSO) to on-premises data sources
 description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
 author: mgblythe
 ms.author: mblythe
@@ -20,8 +20,10 @@ We currently support the following data sources:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
 * SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) and [SAML](service-gateway-sso-saml.md)
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
+* Impala ([Kerberos](service-gateway-sso-kerberos.md))
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source.  When SSO is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
 

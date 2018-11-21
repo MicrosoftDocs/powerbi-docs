@@ -171,6 +171,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/mobile-ipad-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
             "redirect_document_id": true
@@ -229,6 +234,11 @@
             "source_path": "powerbi-docs/mobile-apps-qr-code.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-qr-code",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-qr-code-for-android.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-qr-code",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apps-quickstart-view-dashboard-report.md",
@@ -531,6 +541,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
+            "redirect_url": "/power-bi/consumer/end-user-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true
@@ -683,6 +698,16 @@
         {
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/service-admin-portal",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-custom-visuals-getting-started-with-developer-tools.md",
+            "redirect_url": "/power-bi/developer/custom-visual-develop-tutorial",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-fullscreen-mode.md",
+            "redirect_url": "/power-bi/consumer/end-user-focus",
             "redirect_document_id": false
         }
     ]
