@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
+ms.date: 11/21/2018
 ---
 
 # Tutorial: Adding formatting options to a Power BI custom visual
