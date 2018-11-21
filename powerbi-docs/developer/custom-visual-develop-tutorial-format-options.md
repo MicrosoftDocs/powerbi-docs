@@ -59,7 +59,7 @@ You can add custom properties to enable configuring the color of the circle, and
 
 1. In PowerShell, stop the custom visual.
 
-2. In Visual Studio Code, in the **capabilities.json** file, insert the following JSON fragment into the **objects** object.
+2. In Visual Studio Code, in the **capabilities.json** file, insert the following JSON fragment into the object labeled **objects**.
 
     ```json
     "circle": {
