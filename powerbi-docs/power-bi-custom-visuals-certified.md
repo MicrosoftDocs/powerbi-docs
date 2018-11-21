@@ -25,7 +25,7 @@ The tests performed are designed to check the visual does not access external se
 
 The certification process is an optional process, and it is up to the developers to decide if they want their visual in the marketplace to be certified.  
 
-**Uncertified custom visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+**Uncertified custom visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://review.docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified?branch=pr-en-us-1291#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
 
 Are you a Web developer and interested in creating your own visualizations and adding them to **[Microsoft AppSource](https://appsource.microsoft.com)**? See **[Develop a Power BI custom visual to learn how](developer/custom-visual-develop-tutorial.md)**.
 
