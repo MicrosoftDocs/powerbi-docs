@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/08/2018
+ms.date: 11/20/2018
 ms.author: maggies
 
 ---
@@ -74,7 +74,8 @@ Here are some other features that aren't supported in the initial release:
 ## Next steps
 
 - [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
-
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
+- [Enter data directly in a paginated report](paginated-reports-enter-data.md)
+
   
 

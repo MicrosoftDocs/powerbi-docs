@@ -60,7 +60,7 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
     ![XML data structure](media/paginated-reports-enter-data/paginated-xml-data.png)
 
-    The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve just re-purposed it to enable this scenario as well.
+    The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve repurposed it to enable this scenario as well.
 
 12. Select **OK**.
 

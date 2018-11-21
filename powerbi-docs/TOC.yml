@@ -813,6 +813,8 @@
       href: paginated-reports-faq.md
   - name: How to
     items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
     - name: Create an embedded data source
       href: paginated-reports-embedded-data-source.md
     - name: Create an embedded dataset
@@ -1025,8 +1027,6 @@
     items: 
     - name: "Explore Power BI Report Server in a VM"
       href: report-server/tutorial-explore-report-server-web-portal.md
-    - name: "Enter data directly in a paginated report"
-      href: paginated-reports-enter-data.md
   - name: Concepts
     items: 
     - name: "What's new"
