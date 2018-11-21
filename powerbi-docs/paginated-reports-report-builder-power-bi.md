@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/08/2018
+ms.date: 11/20/2018
 ms.author: maggies
 
 ---
 # What are paginated reports in Power BI Premium? (Preview)
-Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. Paginated reports are reports designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page, and display all the data in a table, for example, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. Report Builder is the standalone tool for authoring paginated reports. 
+Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. Paginated reports are reports designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. Report Builder is the standalone tool for authoring paginated reports. 
 
-Paginated reports can have many pages. The report in the following example has 563 pages, each laid out exactly, with one page per invoice and repeating headers and footers.
+Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers.
 
 ![Paginated report in the Power BI service](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -23,11 +23,11 @@ You can preview your report in Report Builder, then publish it to the Power BI s
 
 ## Create reports in Report Builder
 
-Paginated reports have their own design tool, Report Builder. If you've created paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS), you can use the same tool and the same version. In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch; see [Limitations and considerations](#limitations-and-considerations) in this article for details.
+Paginated reports have their own design tool, Report Builder. It's the same tool and the same version you'd use to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Limitations and considerations](#limitations-and-considerations) in this article for details.
      
 ## Report from a variety of data sources
 
-A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself, rather than connecting to shared data sources or datasets on a server. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to for the initial release:
+A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to for the initial release:
 
 - Azure SQL Database and Data Warehouse
 - SQL Server via a gateway
@@ -56,7 +56,7 @@ Everything in a paginated report, from the report itself to every text box, imag
 When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, http://app.powerbi.com, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
 
 ## View your paginated report
-You can view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. In the Power BI service, you can export the report to a number of Web-oriented, page-oriented, and desktop application formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
+You view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
   
 ## Limitations and considerations
 
@@ -74,7 +74,8 @@ Here are some other features that aren't supported in the initial release:
 ## Next steps
 
 - [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
-
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
+- [Enter data directly in a paginated report](paginated-reports-enter-data.md)
+
   
 

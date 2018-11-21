@@ -493,8 +493,6 @@
         href: service-connect-to-microsoft-dynamics-ax.md
       - name: "Microsoft Dynamics CRM"
         href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics Marketing"
-        href: service-connect-to-microsoft-dynamics-marketing.md
       - name: "Microsoft Dynamics NAV"
         href: service-connect-to-microsoft-dynamics-nav.md
       - name: "Office365Mon"
@@ -815,6 +813,8 @@
       href: paginated-reports-faq.md
   - name: How to
     items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
     - name: Create an embedded data source
       href: paginated-reports-embedded-data-source.md
     - name: Create an embedded dataset
@@ -1077,6 +1077,8 @@
         href: report-server/getting-around.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
+      - name: "Enter data directly in a paginated report"
+        href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds "
