@@ -136,7 +136,7 @@ Roles can be provided with the identity in an embed token. If no role is provide
 
 ### Using the CustomData feature
 
-The CustomData feature only works for models that reside in **Azure Analysis Services**, and it only works in live mode. Unlike users and roles, the Customdata feature can't be set inside a .pbix file. When generating a token with the Customdata feature, you need to have a username.
+The CustomData feature only works for models that reside in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Customdata feature can't be set inside a .pbix file. When generating a token with the Customdata feature, you need to have a username.
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
@@ -151,12 +151,16 @@ CustomData feature is part of our token generation functionality for the followi
 
 The CustomData string property was added to our effective identity in the token generation scenario.
 
+        ```json
         [JsonProperty(PropertyName = "customData")]
         public string CustomData { get; set; }
+        ```
 
 The identity can be created with custom data using the following call:
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+    ```csharp
+    public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+    ```
 
 #### CustomData SDK Usage
 
@@ -197,6 +201,9 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 5. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
+
+    > ![Note]
+    > When you set your application to go to production the master user account should not be visible to the end user.
 
     Here is some sample code for adding the fields to the HomeController.cs file.
 
