@@ -58,11 +58,11 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
 1. When you’ve finished creating the table, select **OK**.  
 
-    ![XML data structure](media/paginated-reports-enter-data/paginated-xml-data.png)
-
     The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve repurposed it to enable this scenario as well.
 
-12. Select **OK**.
+    ![XML data structure](media/paginated-reports-enter-data/paginated-xml-data.png)
+
+12. In the **Dataset Properties** dialog box, select **OK**.
 
 13. You see your data source and dataset in the **Report Data** pane.
 
@@ -72,7 +72,7 @@ You can use your dataset as the basis for data visualizations in your report. Yo
 
 ## Upload the paginated report to the Power BI service
 
-Now that paginated reports are supported in the Power BI service in preview, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for more information.
+Now that paginated reports are supported in the Power BI service in preview, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for details.
 
 ## Upload the paginated report to a report server
 

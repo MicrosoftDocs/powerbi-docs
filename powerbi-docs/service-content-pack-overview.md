@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 1/20/2018
 ms.author: maggies
 ---
 
@@ -43,7 +43,7 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
 
 ## Business scenario
-Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
+Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they receive from the content pack helps ensure your users are successful with the content you provide.
 
 ### Tips
 * Identify your audience and the task they're trying to accomplish  
