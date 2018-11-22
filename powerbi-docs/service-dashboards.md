@@ -19,7 +19,7 @@ A Power BI ***dashboard*** is a single page, often called a canvas, that tells a
 
 ![dashboard](media/service-dashboards/power-bi-dashboard2.png)
 
-Dashboards are a feature of the Power BI service. THey're not available in Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
+Dashboards are a feature of the Power BI service. They're not available in Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
 
 ## Dashboard basics 
 
