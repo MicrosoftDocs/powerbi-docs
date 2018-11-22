@@ -33,7 +33,7 @@ The visualizations on a dashboard come from reports and each report is based on 
 ![diagram showing relationship between dashboards, reports, datasets](media/service-dashboards/power-bi-diagram.png)
 
 ## Advantages of dashboards
-Dashboards are a wonderful way to monitor your business, to look for answers, and to see all of your most-important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud data, providing a consolidated view regardless of where the data lives.
+Dashboards are a wonderful way to monitor your business and see all of your most important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud data, providing a consolidated view regardless of where the data lives.
 
 A dashboard isn't just a pretty picture. It's highly interactive and the tiles update as the underlying data changes.
 
@@ -47,7 +47,7 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 | Available in Power BI Desktop |No |Yes, ***creators*** can build and view reports in Desktop |
 | Subscribe |Can subscribe to a dashboard |Can subscribe to report pages |
 | Filtering |Can't filter or slice |Many different ways to filter, highlight, and slice |
-| Featured |Can set one dashboard as your "featured" dashboard |Cannot create a featured report |
+| Featured |Can set one dashboard as your "featured" dashboard |Can't create a featured report |
 | Favorite | Can set dashboards as *favorites* | Can set reports as *favorites*
 | Set alerts |Available for dashboard tiles in certain circumstances |Not available from reports |
 | Natural language queries |Available from dashboard |Not available from reports |

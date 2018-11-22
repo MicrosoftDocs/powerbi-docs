@@ -1,6 +1,6 @@
 ---
 title: Intro to dashboard tiles for Power BI designers
-description: All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS).
+description: All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS) reports.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
 
-## Dashboard tiles
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.  This screenshot shows many different tiles pinned to a dashboard.
+
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
 
-Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
+Besides pinning, you can create standalone tiles directly on the dashboard using [Add tile](service-dashboard-add-widget.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](service-basic-concepts.md).
 
@@ -39,7 +39,7 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 * [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
 * [Quick Insights](service-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](service-dashboard-add-widget.md).
 
@@ -74,7 +74,7 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
 3. To close the action menu, select a blank area in the canvas.
 
 ### Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
+When you select a tile, what happens next depends on how you created the tile. Also, if it has a [custom link](service-dashboard-edit-tile.md), selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, on-premises Reporting Services report, or Q&A question that was used to create the tile.
 
 > [!NOTE]
 > The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
@@ -82,12 +82,13 @@ When you select a tile, what happens next depends on how the tile was created an
 > 
 
 ## Considerations and troubleshooting
+
 * If the report that was used to create the visualization was not saved, then selecting the tile produces no action.
-* If the tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook, selecting the tile will not open the workbook in Excel Online.
-* For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
-* If you don't have permission to the report within SSRS, selecting a tile created from SSRS will produce a page indicating you don't have access (rsAccessDenied).
-* If you don't have access to the network where the SSRS server is located, selecting a tile created from SSRS will product a page that will indicate it cannot locate the server (HTTP 404). Your device needs to have network access to the report server to view the report.
-* If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+* If the tile was created from a workbook in Excel Online, you need at least Read permissions for that workbook. Otherwise, selecting the tile won't open the workbook in Excel Online.
+* Say you create a tile directly on the dashboard using **Add tile** and set a custom hyperlink for it. If so, whne you select the title, subtitle, or tile opens that URL. Otherwise, by default, when you select a tiles created directly on the dashboard for an image, web code, or text box, nothing happens.
+* If you don't have permission to the report within Reporting Services, selecting a tile created from a Reporting Services report takes you to a page indicating you don't have access (rsAccessDenied).
+* If you don't have access to the network where the Reporting Services server is located, selecting a tile created from Reporting Services takes you to a page that indicates it can't locate the server (HTTP 404). Your device needs network access to the report server to view the report.
+* If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## Next steps
 [Create a Card (big number tile) for your dashboard](power-bi-visualization-card.md)
