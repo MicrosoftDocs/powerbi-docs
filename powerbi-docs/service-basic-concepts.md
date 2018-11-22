@@ -1,5 +1,5 @@
 ---
-title: Power BI service- basic concepts
+title: Basic concepts for designers in the Power BI service
 description: Power BI service workspaces, dashboards, reports, datasets, and workbooks.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 11/21/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
-# Power BI - basic concepts for Power BI service
+# Basic concepts for designers in the Power BI service
 
-This article assumes that you've already [signed up for Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md).
+This article assumes that you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). If you don't have any data yet, you can install a [Power BI sample content pack](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 When you open the Power BI service, you'll see a **_dashboard_** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 

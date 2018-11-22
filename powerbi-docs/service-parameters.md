@@ -1,5 +1,5 @@
 ---
-title: View and edit dataset parameters settings in Power BI service
+title: Edit parameter settings in the Power BI service
 description: Query parameters are created in Power BI Desktop but can be reviewed and updated in Power BI service
 author: mihart
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 11/21/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# What is a query parameter?
+# Edit parameter settings in the Power BI service
 Query parameters are added in Power BI Desktop by report creators. Parameters allow them to make parts of reports depend on one or more parameter *value*. For example, a report creator may create a parameter that restricts the data to a single countryregion or a parameter that defines acceptable formats for fields like dates, time, and text.
 
 ![Home tab showing Manage Parameters option in Desktop](media/service-parameters/power-bi-manage-parameters.png)

@@ -1,5 +1,5 @@
 ---
-title: Dashboard tiles in Power BI service
+title: Intro to dashboard tiles for Power BI designers
 description: All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS).
 author: maggiesMSFT
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
-# Dashboard tiles in Power BI
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](mobile-iphone-app-get-started.md).
+# Intro to dashboard tiles for Power BI designers
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
 
 ## Dashboard tiles
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
