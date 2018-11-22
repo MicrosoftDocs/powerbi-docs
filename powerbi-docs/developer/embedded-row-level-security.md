@@ -151,10 +151,10 @@ CustomData feature is part of our token generation functionality for the followi
 
 The CustomData string property was added to our effective identity in the token generation scenario.
 
-        ```json
+    ```json
         [JsonProperty(PropertyName = "customData")]
         public string CustomData { get; set; }
-        ```
+    ```
 
 The identity can be created with custom data using the following call:
 
@@ -202,17 +202,15 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
 5. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
 
-    > ![Note]
-    > When you set your application to go to production the master user account should not be visible to the end user.
+    > [!Note]
+    > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
 
-    Here is some sample code for adding the fields to the HomeController.cs file.
+    Here is some sample code.
 
     ```csharp
         //public async Task<ActionResult> EmbedReport(string username, string roles)
         public async Task<ActionResult> EmbedReport(string username, string roles, string customData)
     ```
-
-    Here is some sample code for creating EffectiveIdentity in the HomeController.cs file.
 
     ```csharp
     // create 'EffectiveIdentity' to use with 'CustomData'
@@ -245,8 +243,6 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
         return View(result);
     }
     ```
-
-    Here is some sample code for adding CustomData to the EmbedReport.cshtml file.
 
     ```csharp
     <!-- Added for CustomData -->
