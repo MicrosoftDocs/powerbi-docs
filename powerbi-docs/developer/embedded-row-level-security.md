@@ -151,16 +151,16 @@ CustomData feature is part of our token generation functionality for the followi
 
 The CustomData string property was added to our effective identity in the token generation scenario.
 
-    ```json
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
-    ```
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 The identity can be created with custom data using the following call:
 
-    ```csharp
-    public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
-    ```
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
 #### CustomData SDK Usage
 
