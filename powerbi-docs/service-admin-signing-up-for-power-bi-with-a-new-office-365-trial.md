@@ -18,7 +18,7 @@ LocalizationGroup: Administration
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-This article describes an alternative way to sign up for Power BI, using an Office 365 trial. If you're having problems signing up for Power BI with your work email address, first make sure it's an [email address that can be used with Power BI](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). If that's not successful, try signing up for an Office 365 trial first and then signing up for Power BI. You'll be able to use Power BI even after the Office 365 trial expires.
+This article describes an alternative way to sign up for Power BI, using an Office 365 trial. If you're having problems signing up for Power BI with your work email address, first make sure it's an [email address that can be used with Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, try signing up for an Office 365 trial first and then signing up for Power BI. You'll be able to use Power BI even after the Office 365 trial expires.
 
 1. Sign up for an Office 365 trial [on the Office 365 web site](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
