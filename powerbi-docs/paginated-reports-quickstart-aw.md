@@ -319,7 +319,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
     ![Edit report credentials](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
 
-7. Now you can view your paginated report in the the Power BI service.
+7. Now you can view your paginated report in the Power BI service.
 
     ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
