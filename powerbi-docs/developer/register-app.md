@@ -23,6 +23,7 @@ You register your application with Azure AD to allow your application access to 
 There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/), or you can do it directly within the Azure portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. Use the Azure portal if you want to make changes to your app.
 
 ## Register with the Power BI App Registration Tool
+
 You need to register your application in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register an application, such as a console app or a website, you receive an identifier which is used by the application to identify themselves to the users that they are requesting permissions.
 
 Here's how to register your application with the Power BI App Registration Tool:
