@@ -18,9 +18,9 @@ LocalizationGroup: Administration
 
 In the Power BI service, users have defined capabilities based on two types of licenses:
 
-* **Per-user** - *free licensing and Power BI Pro licensing*. A free license enables access to some of the features of the Power BI service. A Pro license enables access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. For more information, see [Power BI service features by license type](service-features-license-type.md).
+* **Per-user** - *Power BI Pro licensing and free licensing*. A Power BI Pro license enables access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. A free license enables access to some of the features of the Power BI service. For more information, see [Power BI service features by license type](service-features-license-type.md).
 
-* **Capacity-based** - *Power BI Premium licensing*. Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring Pro licenses for recipients viewing the content. For more information, see [What is Power BI Premium?](service-premium.md).
+* **Capacity-based** - *Power BI Premium licensing*. Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. For more information, see [What is Power BI Premium?](service-premium.md).
 
 This article focuses on per-user licensing from an administrator perspective.
 
@@ -70,17 +70,11 @@ Now you can [assign licenses in Office 365](https://support.office.com/article/a
 
 ## Manage Power BI free licenses
 
-Users within your organization can gain access to Power BI free licenses in two different ways. They can individually sign up for Power BI, or you can assign a Power BI license to them within the Office 365 admin portal.
+Users within your organization can gain access to Power BI free licenses in two different ways:
 
-Allowing individual sign up reduces the burden, from the organization administrators, by allowing the users that are interested in Power BI to sign up for free.
+* You can assign a Power BI license to them within the Office 365 admin portal.
 
-However, disabling individual user sign up allows you more control, and it's a great option if you need to audit service usage.
-
-### Power BI free for individuals
-
-By default, individuals in your organization can sign up for a Power BI free license. For more information, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
-
-To block individual sign-up, see [Enable or disable individual user sign up in Azure Active Directory](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory) later in this article.
+* If a user [signs up for a Power BI Pro trial](service-self-service-signup-for-power-bi.md) and the trial expires, they are assigned a free license.
 
 ### Requesting and assigning free licenses
 
