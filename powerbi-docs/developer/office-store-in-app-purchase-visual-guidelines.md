@@ -56,6 +56,6 @@ Use the landing page to clarify to users how they can use your visual and where 
 
 For user convenience, add license key or token related fields at the top of the format pane, so they are better located for users.
 
-## Next Steps
+## Next steps
 
 Learn how you can publish your custom visual to [AppSource](office-store.md) for others to discover and use.
