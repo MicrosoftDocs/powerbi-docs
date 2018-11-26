@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -136,83 +136,100 @@ For another example of using PowerShell with audit logs, see [Using Power BI aud
 
 The following activities are audited by Power BI.
 
-* AddDatasourceToGateway
-* AddGroupMembers
-* AnalyzedByExternalApplication
-* AnalyzeInExcel
-* AttachDataflowStorageAccount
-* BindToGateway
-* ChangeCapacityState
-* ChangeGatewayAdministrators
-* ChangeGatewayDatasourceUsers
-* CreateApp
-* CreateDashboard
-* CreateDataflow
-* CreateDataset
-* CreateEmailSubscription
-* CreateFolder
-* CreateGateway
-* CreateGroup
-* CreateOrgApp
-* CreateReport
-* DeleteComment
-* DeleteDashboard
-* DeleteDataflow
-* DeleteDataset
-* DeleteEmailSubscription
-* DeleteFolder
-* DeleteGateway
-* DeleteGroup
-* DeleteGroupMembers
-* DeleteOrgApp
-* DeleteReport
-* DownloadReport
-* EditDataset
-* EditReport
-* ExportDataflow
-* ExportReport
-* ExportTile
-* GenerateDataflowSasToken
-* GenerateEmbedToken
-* GetDatasources
-* Import
-* InstallApp
-* MigrateWorkspaceIntoCapacity
-* OptInForProTrial
-* PostComment
-* PrintDashboard
-* PrintReport
-* PublishToWebReport
-* RefreshDataset
-* RemoveDatasourceFromGateway
-* RemoveWorkspacesFromCapacity
-* RenameDashboard
-* SetAllConnections
-* SetScheduledRefresh
-* SetScheduledRefreshOnDataflow
-* ShareDashboard
-* ShareReport
-* TakeOverDataset
-* TakeOverDatasource
-* UnpublishApp
-* UpdateApp
-* UpdateCapacityAdmins
-* UpdateCapacityDisplayName
-* UpdateCapacityResourceGovernanceSettings
-* UpdateCapacityUsersAssignment
-* UpdatedAdminFeatureSwitch
-* UpdateDataflow
-* UpdateDatasetParameters
-* UpdateDatasourceCredentials
-* UpdateDatasources
-* UpdateEmailSubscription
-* UpdateFolder
-* UpdateFolderAccess
-* ViewDashboard
-* ViewDataflow
-* ViewReport
-* ViewTile
-* ViewUsageMetrics
+| Friendly name                                     | Operation name                              | Notes                                  |
+|---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Added data source to Power BI gateway             | AddDatasourceToGateway                      |                                          |
+| Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
+| Added Power BI group members                      | AddGroupMembers                             |                                          |
+| Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
+| Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
+| Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
+| Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Changed capacity state                            | ChangeCapacityState                         |                                          |
+| Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
+| Changed Power BI dataset connections              | SetAllConnections                           |                                          |
+| Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
+| Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
+| Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
+| Created Power BI app                              | CreateApp                                   |                                          |
+| Created Power BI dashboard                        | CreateDashboard                             |                                          |
+| Created Power BI dataflow                         | CreateDataflow                              |                                          |
+| Created Power BI dataset                          | CreateDataset                               |                                          |
+| Created Power BI email subscription               | CreateEmailSubscription                     |                                          |
+| Created Power BI folder                           | CreateFolder                                |                                          |
+| Created Power BI gateway                          | CreateGateway                               |                                          |
+| Created Power BI group                            | CreateGroup                                 |                                          |
+| Created Power BI report                           | CreateReport                                |                                          |
+| Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
+| Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
+| Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
+| Deleted organizational Power BI content pack      | DeleteOrgApp                                |                                          |
+| Deleted Power BI comment                          | DeleteComment                               |                                          |
+| Deleted Power BI dashboard                        | DeleteDashboard                             | Not currently used                       |
+| Deleted Power BI dataflow                         | DeleteDataflow                              | Not currently used                       |
+| Deleted Power BI dataset                          | DeleteDataset                               |                                          |
+| Deleted Power BI email subscription               | DeleteEmailSubscription                     |                                          |
+| Deleted Power BI folder                           | DeleteFolder                                |                                          |
+| Deleted Power BI folder access                    | DeleteFolderAccess                          | Not currently used                       |
+| Deleted Power BI gateway                          | DeleteGateway                               |                                          |
+| Deleted Power BI group                            | DeleteGroup                                 |                                          |
+| Deleted Power BI report                           | DeleteReport                                |                                          |
+| Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
+| Downloaded Power BI report                        | DownloadReport                              |                                          |
+| Edited Power BI certification permission          | EditCertificationPermission                 | Not currently used                       |
+| Edited Power BI dashboard                         | EditDashboard                               | Not currently used                       |
+| Edited Power BI dataset                           | EditDataset                                 |                                          |
+| Edited Power BI dataset properties                | EditDatasetProperties                       | Not currently used                       |
+| Edited Power BI report                            | EditReport                                  |                                          |
+| Exported Power BI dataflow                        | ExportDataflow                              |                                          |
+| Exported Power BI report visual data              | ExportReport                                |                                          |
+| Exported Power BI tile data                       | ExportTile                                  |                                          |
+| Failed to add dataflow permissions                | FailedToAddDataflowPermissions              | Not currently used                       |
+| Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
+| Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
+| Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
+| Imported file to Power BI                         | Import                                      |                                          |
+| Installed Power BI app                            | InstallApp                                  |                                          |
+| Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
+| Posted Power BI comment                           | PostComment                                 |                                          |
+| Printed Power BI dashboard                        | PrintDashboard                              |                                          |
+| Printed Power BI report page                      | PrintReport                                 |                                          |
+| Published Power BI report to web                  | PublishToWebReport                          |                                          |
+| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           | Not currently used                       |
+| Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
+| Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
+| Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
+| Renamed Power BI dashboard                        | RenameDashboard                             |                                          |
+| Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
+| Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
+| Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
+| Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
+| Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
+| Shared Power BI dashboard                         | ShareDashboard                              |                                          |
+| Shared Power BI report                            | ShareReport                                 |                                          |
+| Started Power BI extended trial                   | OptInForExtendedProTrial                    | Not currently used                       |
+| Started Power BI trial                            | OptInForProTrial                            |                                          |
+| Took over a Power BI datasource                   | TakeOverDatasource                          |                                          |
+| Took over Power BI dataset                        | TakeOverDataset                             |                                          |
+| Unpublished Power BI app                          | UnpublishApp                                |                                          |
+| Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Office 365 admin portal |
+| Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
+| Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
+| Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
+| Updated Power BI app                              | UpdateApp                                   |                                          |
+| Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
+| Updated Power BI dataset data sources             | UpdateDatasources                           |                                          |
+| Updated Power BI dataset parameters               | UpdateDatasetParameters                     |                                          |
+| Updated Power BI email subscription               | UpdateEmailSubscription                     |                                          |
+| Updated Power BI folder                           | UpdateFolder                                |                                          |
+| Updated Power BI folder access                    | UpdateFolderAccess                          |                                          |
+| Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
+| Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
+| Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
+| Viewed Power BI report                            | ViewReport                                  |                                          |
+| Viewed Power BI tile                              | ViewTile                                    |                                          |
+| Viewed Power BI usage metrics                     | ViewUsageMetrics                            |                                          |
+|                                                   |                                             |                                          |
 
 ## Next steps
 

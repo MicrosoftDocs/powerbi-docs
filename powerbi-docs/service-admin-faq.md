@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -34,7 +34,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
-* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [If I have multiple domains, can I control the Office 365 tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -237,7 +237,7 @@ For information about the Power BI SLA (Service Level Agreement), see the [Licen
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### How does security work in Power BI?
 

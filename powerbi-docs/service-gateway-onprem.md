@@ -85,8 +85,9 @@ When you add a data source to the gateway, you need to provide credentials for t
 ## Limitations and Considerations
 
 * [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
-) is not currently supported
-* [Access Online](https://products.office.com/en-us/access) is not currently supported
+) is not currently supported.
+* [Access Online](https://products.office.com/en-us/access) is not currently supported.
+* R scripts are supported only when the gateway is run in personal mode.
 
 ## Tenant level administration
 

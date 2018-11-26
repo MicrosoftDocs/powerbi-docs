@@ -1,5 +1,5 @@
 ---
-title: Add a filter to a Power BI report
+title: Add a filter to a report in Editing view
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
 author: maggiesMSFT
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Add a filter to a Power BI service report (in Editing view)
+# Add a filter to a report in Editing view
 
 This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
 
