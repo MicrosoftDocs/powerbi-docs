@@ -21,6 +21,7 @@ This article describes how Power BI Premium manages resources; the article also 
 
 * The datasets that are loaded into memory
 * Dataset refresh (both scheduled and on-demand)
+* Workloads that the capacity supports
 * Report queries
 
 When a request is issued against a published dataset in your capacity, that dataset is loaded into memory from persistent storage (this is also called image load). Keeping the dataset loaded in memory helps in fast response to future queries to this dataset. In addition to the memory needed for keeping the dataset loaded in the memory, report queries and dataset refresh consume additional memory.
@@ -46,6 +47,10 @@ Datasets can be refreshed on a schedule or on-demand by users. As described earl
 If the required memory is not available despite eviction, the refresh is queued to be retried. The service retries until it succeeds or a new refresh action begins.
 
 If an interactive query is issued to any dataset in the capacity and there is not enough memory available because of an ongoing refresh, that request fails and needs to be retried by the user.
+
+### Workloads
+
+By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. If enabled, these workloads can impact memory usage in your capacity. For more information, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
 
 ## CPU resource management in premium capacity
 

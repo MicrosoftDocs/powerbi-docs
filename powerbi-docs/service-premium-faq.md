@@ -45,7 +45,7 @@ Power BI Premium is a capacity-based license, while Power BI Pro is a user-based
 Yes. Power BI Pro is required to publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. Power BI Pro isn't required to consume content in Premium capacity.
 
 **Can you outline a scenario of how Power BI Pro and Power BI Premium work to cover an organization for Modern BI?**  
-The follow examples outline how customers can meet their BI needs using a combination of Power BI Pro and Power BI Premium.
+The following examples outline how customers can meet their BI needs using a combination of Power BI Pro and Power BI Premium.
 
 | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 |
 | --- | --- | --- | --- |

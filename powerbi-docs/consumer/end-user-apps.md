@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 11/09/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -17,7 +17,7 @@ In Power BI, *apps* bring related dashboards and reports together, all in one pl
 
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Apps are easy to find and install in the Power BI service ([app.powerbi.com](https:app.powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
+Apps are easy to find and install in the Power BI service and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
