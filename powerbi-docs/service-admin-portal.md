@@ -297,7 +297,7 @@ Users in the organization can import data into the service, such as publishing r
 
 ### Create and use dataflows (preview)
 
-Users in the organization can create and use dataflows. [Learn more](service-dataflows-overview.md)
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.

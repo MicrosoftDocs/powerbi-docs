@@ -53,9 +53,11 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Modeling view in Power BI Desktop (Preview)"
+      href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
-    - name: "Composite models in Power BI Desktop (Preview)"
+    - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
       href: desktop-many-to-many-relationships.md
@@ -231,6 +233,8 @@
         href: desktop-bookmarks.md
       - name: "Use Report themes"
         href: desktop-report-themes.md
+      - name: "Try the new filter experience"
+        href: power-bi-report-filter-preview.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"
@@ -489,8 +493,6 @@
         href: service-connect-to-microsoft-dynamics-ax.md
       - name: "Microsoft Dynamics CRM"
         href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics Marketing"
-        href: service-connect-to-microsoft-dynamics-marketing.md
       - name: "Microsoft Dynamics NAV"
         href: service-connect-to-microsoft-dynamics-nav.md
       - name: "Office365Mon"
@@ -769,17 +771,17 @@
       items: 
       - name: "Self-service data prep with dataflows (preview)"
         href: service-dataflows-overview.md
-      - name: "Create and use dataflows"
+      - name: "Create and use dataflows (preview)"
         href: service-dataflows-create-use.md
-      - name: "Computed entities with Power BI Premium"
+      - name: "Computed entities with Power BI Premium (preview)"
         href: service-dataflows-computed-entities-premium.md
-      - name: "Using dataflows with on-premises data sources"
+      - name: "Using dataflows with on-premises data sources (preview)"
         href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows (preview)"
         href: service-dataflows-linked-entities.md      
       - name: "Using incremental refresh with dataflows (preview)"
         href: service-dataflows-incremental-refresh.md                  
-      - name: "Developer resources for dataflows"
+      - name: "Developer resources for dataflows (preview)"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
@@ -811,6 +813,8 @@
       href: paginated-reports-faq.md
   - name: How to
     items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
     - name: Create an embedded data source
       href: paginated-reports-embedded-data-source.md
     - name: Create an embedded dataset
@@ -1073,6 +1077,8 @@
         href: report-server/getting-around.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
+      - name: "Enter data directly in a paginated report"
+        href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds "
