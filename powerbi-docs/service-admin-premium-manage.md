@@ -51,6 +51,22 @@ For the most part, users don't need to know they are in a Premium capacity. Thei
 
 ![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
 
+## Configure workloads
+
+By default, capacities for Power BI Premium and Power BI Embedded support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. For more information, see [Workloads in Premium capacity](service-premium.md#workloads-in-premium-capacity).
+
+To enable workloads in the Power BI admin portal, follow these steps.
+
+1. Under **Capacity settings**, select a capacity.
+
+1. Under **MORE OPTIONS**, expand **Workloads**.
+
+1. Enable one or more workloads, and set a value for **Max Memory**.
+
+    ![Configure workloads in the admin portal](media/service-admin-premium-manage/admin-portal-workloads.png)
+
+1. Select **Apply**.
+
 ## Monitor capacity usage
 
 Power BI provides an app for monitoring capacity usage. For more information, see [Monitor Power BI Premium capacities in your organization](service-admin-premium-monitor-capacity.md).

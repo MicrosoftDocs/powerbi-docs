@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -40,13 +40,12 @@ When you create a bookmark, the following elements are saved with the bookmark:
 
 * The current page
 * Filters
-* Slicers
+* Slicers, including slicer type (for example, dropdown or list) and slicer state
+* Visual selection state (such as cross-highlight filters)
 * Sort order
 * Drill location
 * Visibility (of an object, using the **Selection** pane)
 * The focus or **Spotlight** modes of any visible object
-
-Bookmarks do not currently save the cross-highlighting state. 
 
 Configure a report page the way you want it to appear in the bookmark. Once your report page and visuals are arranged how you want them, select **Add** from the **Bookmarks** pane to add a bookmark. 
 

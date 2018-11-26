@@ -8,22 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 10/25/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
 # Use the Matrix visual in Power BI Desktop
-With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
+With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
-> [!NOTE]
-> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
-> 
-> 
+## Report themes
+Both matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
 
 ## Understanding how Power BI calculates totals
 
@@ -130,6 +128,20 @@ With the **Matrix** visual, you can select any elements in the matrix as the bas
 In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
+
+## Copying values from Power BI for use in other applications
+
+Your matrix or table may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard, and paste into the other application.
+
+![copy options](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
+
+    ![copy options](media/desktop-matrix-visual/power-bi-copy.png)
+
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
+
+    ![paste into Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## Shading and font colors with matrix visuals
 With the **Matrix** visual, you can apply **Conditional formatting** (colors and shading) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.

@@ -43,7 +43,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 1. [Open the tile in Focus mode](end-user-focus.md) by selecting the ellipses and choosing the Focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipses menu](./media/end-user-print/menu-options.png)
-2. Open the tile in [full screen mode](../service-fullscreen-mode.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the top navbar.
+2. Open the tile in [full screen mode](end-user-focus.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the top navbar.
 3. Hover over the tile to reveal the Options menu.
    
     ![full screen options menu](./media/end-user-print/menu-options-new.png)

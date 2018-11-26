@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
 ---
 
 # Overview of the Power BI service content pack program
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
 
-ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure.
+ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure.
 
 These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](template-content-pack-experience.md).
 
 ## Overview
-The general process to develop and submit an template content pack involves multiple steps.
+The general process to develop and submit a template content pack involves multiple steps.
 
  ![Process](media/service-content-pack-overview/developer-content-pack-overview.png)
 
@@ -36,14 +36,14 @@ To build and submit a content pack to be published in the PowerBI service and Ap
 
 * You have a SaaS application used by business users.
 * Your SaaS application has user data that can be visualized in Power BI.
-* Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
+* Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST-based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
 * Your SaaS application is approved for publishing a content pack. Submit your request to pbiservicesapps@microsoft.com. We will review each submission on relevance and expected usage. 
 * Signed partner agreement. You will do that in the [submission step](template-content-pack-testing.md#submission).
 
-Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
+Review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
 
 ## Business scenario
-Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
+Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they receive from the content pack helps ensure your users are successful with the content you provide.
 
 ### Tips
 * Identify your audience and the task they're trying to accomplish  
@@ -73,7 +73,7 @@ Published content packs can be updated once a month. Update requests submitted t
 Feel free to email us your questions at [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## Support
-For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
+For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Customer incidents quickly find their way to the appropriate team.
 
 ## Next step
 [Authoring](template-content-pack-authoring.md)
