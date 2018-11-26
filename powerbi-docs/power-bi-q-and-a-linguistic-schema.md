@@ -194,7 +194,7 @@ Binding: {Table: Products}
       Adjectives: [discontinued]
 ```
 
-*Measurement adjective phrasings* define a new adjective based on a numeric value that indicates the extent to which the adjective applies, such as “lengths indicate how long rivers are” and "small countryregions have small land areas". Measurement adjective phrasings are used in in these kinds of questions:
+*Measurement adjective phrasings* define a new adjective based on a numeric value that indicates the extent to which the adjective applies, such as “lengths indicate how long rivers are” and "small countryregions have small land areas". Measurement adjective phrasings are used in these kinds of questions:
 - List the long rivers
 - Which rivers are the longest?
 - List the smallest countryregions that won gold in basketball
