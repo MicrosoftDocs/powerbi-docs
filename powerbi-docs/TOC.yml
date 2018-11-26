@@ -945,6 +945,8 @@
         href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
+      - name: "In-App purchases"
+        href: developer/office-store-in-app-purchase-visual-guidelines.md 
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"

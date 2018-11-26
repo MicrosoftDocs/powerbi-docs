@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 11/26/2018
 ---
 
-# Additional purchase may be required visuals guidelines
+# Guidelines for Power BI visuals with additional purchases
 
-## Visuals with additional purchase may be required 
+## Visuals with additional purchases may be required
 
 Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with "additional purchase may be required" price-tag may also be submitted to the **AppSource**. Additional purchase may be required visuals are similar to in-app purchase (IAP) adds-in in office store. 
 Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in the [Certified custom visuals article](../power-bi-custom-visuals-certified.md).
@@ -30,7 +30,7 @@ Developers upload their IAP visuals to AppSource via the Seller Dashboard, as th
 An IAP visual is free visual and offers free features, but also has additional features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
 Developers may use any third-party payment system for those purchases. Refer to our store [policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
-## Logo guidelines 
+## Logo guidelines
 
 This section describes the specifications for adding logos and logotypes in visuals.
 
