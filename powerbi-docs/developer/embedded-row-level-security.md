@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 11/30/2018
 ---
 
 # Use row-level security with Power BI embedded content
@@ -192,9 +192,17 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![Create Role](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
 
-3. Set your Row filter DAX query using the *CUSTOMDATA()* function.
+3. Set your **General** settings.  Here you give the **Role Name** and set the database permissions to **Read** only.
 
-    ![Set Row Filter](media/embedded-row-level-security/azure-analysis-services-database-row-filters.png)
+    ![Create Role - Set General Settings](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Set the **Memerbership** settings. Here you add te users that are effected by this role.
+
+    ![Create Role - Set Membership Settings](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Set your **Row filters** DAX query using the *CUSTOMDATA()* function.
+
+    ![Create Role - Set Row Filters](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
 4. Build a PBI report and publish it to a workspace with dedicated capacity.
 
@@ -205,7 +213,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
 
-    Here is some sample code.
+    Here is some sample code to add to the CustomData feature within EffectiveIdentity from the [sample app](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
     ```csharp
         //public async Task<ActionResult> EmbedReport(string username, string roles)
@@ -244,7 +252,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     }
     ```
 
-    ```csharp
+    ```html
     <!-- Added for CustomData -->
     <div class="inputLineTitle">CustomData</div>
     <input type="text" name="customdata" value="@Model.CustomData" />
