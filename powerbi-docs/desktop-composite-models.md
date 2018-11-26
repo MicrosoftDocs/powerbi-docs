@@ -142,7 +142,7 @@ Consequently, information that's stored in the spreadsheet is now included in a 
 
 * The encryption settings for each source should be considered. You want to avoid retrieving information from one source via an encrypted connection and then inadvertently including it in a query that's sent to another source via an unencrypted connection. 
 
-To allow confirmation that you have considered any security implications, Power BI Desktop displays a warning message when when you create a composite model.  
+To allow confirmation that you have considered any security implications, Power BI Desktop displays a warning message when you create a composite model.  
 
 For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. Therefore, when you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
