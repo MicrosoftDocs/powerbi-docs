@@ -19,7 +19,7 @@ Want to improve quick insights results?  If you are a datasest owner, try these:
 * Hide or unhide columns in your dataset. Power BI quick insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
 * Use a mix of data types such as names, times, dates, and numbers.
 * Avoid (or hide) columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
-* Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns. To generate insights, your dataset needs to have at least one dimension and one measure.
+* Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns.
 
 ### Next steps
 [Power BI quick insights](consumer/end-user-insights.md)
