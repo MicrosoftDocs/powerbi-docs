@@ -164,7 +164,7 @@ public EffectiveIdentity(string username, IList<string> datasets, IList<string> 
 
 #### CustomData SDK Usage
 
-If you are calling the REST API, you can add custom data inside each identity, for example:
+If you're calling the REST API, you can add custom data inside each identity, for example:
 
 ```json
 {
@@ -226,7 +226,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
 When deciding on filtering your data in a report, you can use **row-level security (RLS)** or **JavaScript filters**.
 
-[Row-level security](../service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that’s why it’s considered secure.  When filtering data securely, we recommend using RLS.  You can filter data with RLS by using one of the options below.
+[Row-level security](../service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that’s why it’s considered secure. We recommend using RLS for filtering data securely. You can filter data with RLS by using one of the options below.
 
 * [Configuring roles in a Power BI report](../desktop-rls.md).
 * Configuring roles at the data source level (Analysis Services live connection only).
