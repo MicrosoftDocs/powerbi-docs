@@ -391,42 +391,54 @@
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
-    - name: "Basic concepts"
+    - name: "Basic concepts for designers"
       href: service-basic-concepts.md
-    - name: "Self-service sign-up"
-      href: service-self-service-signup-for-power-bi.md 
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md
-    - name: "Data refresh in Power BI"
-      href: refresh-data.md
-    - name: "Power BI for US Government"
-      href: service-govus-overview.md
-    - name: "Features by license type"
-      href: service-features-license-type.md
     - name: "10 tips for getting help"
       href: service-tips-for-finding-help.md
-    - name: "About filters and highlighting in Power BI reports"
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: "Get data from files"
-      href: service-get-data-from-files.md
-    - name: "The report editor...Take a tour"
-      href: service-the-report-editor-take-a-tour.md
-    - name: "Visualizations in Power BI"
-      href: visuals/power-bi-report-visualizations.md
-    - name: "Data sources for Power BI"
-      href: service-get-data.md
-    - name: "Extended Pro Trial activation"
-      href: service-extended-pro-trial.md
-    - name: "Microsoft Flow and Power BI"
-      href: service-flow-integration.md
-    - name: "FAQ for Power BI for Germany Cloud customers"
-      href: service-govde-faq.md
-    - name: "Power BI get started with third-party apps"
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
-      href: service-aggregates.md
-    - name: "Page display settings in a Power BI report"
-      href: power-bi-report-display-settings.md
+    - name: Licensing
+      items: 
+      - name: "Self-service sign-up"
+        href: service-self-service-signup-for-power-bi.md 
+      - name: "Features by license type"
+        href: service-features-license-type.md
+      - name: "Extended Pro Trial activation"
+        href: service-extended-pro-trial.md
+      - name: "Power BI for US Government"
+        href: service-govus-overview.md
+      - name: "FAQ for Germany Cloud customers"
+        href: service-govde-faq.md
+    - name: Data
+      items:         
+      - name: "Data sources for Power BI"
+        href: service-get-data.md
+      - name: "Get data from files"
+        href: service-get-data-from-files.md
+      - name: "Aggregates (sum, average, maximum, etc.)"
+        href: service-aggregates.md
+      - name: "Data refresh in Power BI"
+        href: refresh-data.md
+      - name: "Azure and Power BI"
+        href: service-azure-and-power-bi.md
+      - name: "Power BI and Azure egress"
+        href: service-azure-egress-power-bi.md           
+    - name: Report design
+      items: 
+      - name: "The report editor...Take a tour"
+        href: service-the-report-editor-take-a-tour.md
+      - name: "Visualizations in Power BI"
+        href: visuals/power-bi-report-visualizations.md
+      - name: "About filters and highlighting in reports"
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: "Page display settings in a Power BI report"
+        href: power-bi-report-display-settings.md
+      - name: "Introduction to Cortana for Power BI"
+        href: service-cortana-intro.md
+    - name: Other
+      items: 
+      - name: "Microsoft Flow and Power BI"
+        href: service-flow-integration.md
+      - name: "Get started with third-party apps"
+        href: service-power-bi-get-started-third-party-apps.md
   - name: How to
     items: 
     - name: Common tasks
@@ -549,13 +561,13 @@
         href: service-connect-to-zuora.md
     - name: Data from files
       items: 
-      - name: "From Excel workbook to stunning report in no time"
+      - name: "From Excel to stunning report"
         href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"
         href: service-desktop-files.md
-      - name: "Parameters settings for datasets"
+      - name: "Edit parameters"
         href: service-parameters.md
       - name: "Get data from comma separated value (.csv) files"
         href: service-comma-separated-value-files.md
@@ -563,7 +575,7 @@
         href: service-real-time-streaming.md
       - name: "Publish to Power BI from Excel 2016"
         href: service-publish-from-excel.md
-      - name: "Reduce the size of an Excel workbook to view it in Power BI"
+      - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
     - name: Data from databases
       items: 
@@ -575,23 +587,19 @@
         href: spark-on-hdinsight-with-direct-connect.md
       - name: "SQL Server Analysis Services live data in Power BI"
         href: sql-server-analysis-services-tabular-data.md
-      - name: "Azure and Power BI"
-        href: service-azure-and-power-bi.md
-      - name: "Power BI and Azure egress"
-        href: service-azure-egress-power-bi.md           
     - name: Data refresh
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
-      - name: "Refresh a dataset created from a Power BI Desktop file - local"
+      - name: "Refresh a dataset from a Power BI Desktop file - local"
         href: refresh-desktop-file-local-drive.md
-      - name: "Refresh a dataset created from a Power BI Desktop file - cloud"
+      - name: "Refresh a dataset from a Power BI Desktop file - cloud"
         href: refresh-desktop-file-onedrive.md
-      - name: "Refresh a dataset created from an Excel workbook - local"
+      - name: "Refresh a dataset from an Excel workbook - local"
         href: refresh-excel-file-local-drive.md
-      - name: "Refresh a dataset created from an Excel workbook - cloud"
+      - name: "Refresh a dataset from an Excel workbook - cloud"
         href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
+      - name: "Refresh a dataset created from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
       - name: "Troubleshooting refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
@@ -605,25 +613,25 @@
         href: service-dashboard-create.md
       - name: "Create a copy of a dashboard"
         href: service-dashboard-copy.md
-      - name: "Pin a tile to a Power BI dashboard from a report"
+      - name: "Pin a tile to a dashboard from a report"
         href: service-dashboard-pin-tile-from-report.md
-      - name: "Pin a tile from one dashboard to another dashboard"
+      - name: "Pin a tile from one dashboard to another"
         href: service-pin-tile-to-another-dashboard.md
-      - name: "Pin a tile to a Power BI dashboard from Excel"
+      - name: "Pin a tile to a dashboard from Excel"
         href: service-dashboard-pin-tile-from-excel.md
-      - name: "Pin a tile to a Power BI dashboard from the Q&A question box"
+      - name: "Pin a tile to a dashboard from Q&A"
         href: service-dashboard-pin-tile-from-q-and-a.md
-      - name: "Pin an entire report page to a Power BI dashboard"
+      - name: "Pin an entire report page to a dashboard"
         href: service-dashboard-pin-live-tile-from-report.md
       - name: "Usage metrics for dashboards"
         href: service-usage-metrics.md
-      - name: "Add an image, text box, video, or web code to your dashboard"
+      - name: "Add an image, text box, video, or code to a dashboard"
         href: service-dashboard-add-widget.md
-      - name: "Edit a tile — resize, move, rename, pin, delete, add hyperlink"
+      - name: "Edit a tile"
         href: service-dashboard-edit-tile.md
-      - name: "Tips for designing a great Power BI dashboard"
+      - name: "Tips for designing a great dashboard"
         href: service-dashboards-design-tips.md
-      - name: "Optimize your data for Power BI Quick Insights"
+      - name: "Optimize your data for  Quick Insights"
         href: service-insights-optimize.md
       - name: "Create a phone view of a dashboard"
         href: service-create-dashboard-mobile-phone-view.md
@@ -673,7 +681,7 @@
         href: visuals/power-bi-visualizations-arcgis.md
     - name: Ask questions of your data
       items:
-      - name: "Use Q&A to create visualizations and build reports"
+      - name: "Use Q&A to create visualizations and reports"
         href: power-bi-tutorial-q-and-a.md
       - name: "Make your data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
@@ -709,7 +717,7 @@
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Office 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
-      - name: "Share a dashboard that links to an Excel workbook on OneDrive for Business"
+      - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: Content Packs
       items:
@@ -813,6 +821,8 @@
       href: paginated-reports-faq.md
   - name: How to
     items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
     - name: Create an embedded data source
       href: paginated-reports-embedded-data-source.md
     - name: Create an embedded dataset
@@ -935,6 +945,8 @@
         href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
+      - name: "Guidelines for Power BI visuals" 
+        href: developer/office-store-in-app-purchase-visual-guidelines.md 
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
@@ -1075,6 +1087,8 @@
         href: report-server/getting-around.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
+      - name: "Enter data directly in a paginated report"
+        href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds "
