@@ -50,7 +50,7 @@ Watch Amanda add favorites to her workspace, then follow the step-by-step instru
    ![hover over app](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## Working with *favorites*
-1. To acccess your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
+1. To access your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
 2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
