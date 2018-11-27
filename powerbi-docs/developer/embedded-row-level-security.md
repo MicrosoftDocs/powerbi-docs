@@ -213,7 +213,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
 
-    View the [code](#customdata-sdk-additions) to add to the CustomData feature.
+    View the [code](#customdata-sdk-additions) to add the CustomData feature.
 
 8. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
 
