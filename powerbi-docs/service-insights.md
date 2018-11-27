@@ -1,7 +1,7 @@
 ---
 title: Automatically generate data insights with Power BI
 description: Learn how to get insights about your datasets and dashboard tiles.
-author: maggies
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/25/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---

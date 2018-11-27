@@ -6,7 +6,7 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/26/2018
+ms.date: 11/19/2018
 ms.author: maggies
 author: maggiesMSFT
 layout: landingpage
@@ -59,7 +59,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                                                       <h3>Connect to data</h3> 
                                                                                       <p></p>
                                                                                             <a href="desktop-quickstart-connect-to-data.md">Connect to data in Power BI Desktop </a><br/> 
-                                                                                            <a href="service-connect-to-services.md">Connect to online services</a><br/> 
+                                                                                            <a href="service-dataflows-overview.md">Dataflows: Self-service data prep</a><br/> 
                                                                                             <a href="service-gateway-install.md">Gateways for on-premises data</a>
                                                                         </div> 
                                                           </div> 

@@ -11,7 +11,7 @@ ms.component: powerbi-service
 ms.topic: tutorial
 ms.date: 10/08/2018
 ms.author: mihart
-#Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notofied when important data changes above/below my set threshold.
+#Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
 # Tutorial: Set data alerts in Power BI service
@@ -71,7 +71,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    ![Notification icon in Power BI service](media/end-user-alerts/powerbi-alert-notifications.png)
 3. Open your Notification center to see the alert details.
    
-    ![read the Alert](media/end-user-alerts/powerbi-alert-notfication.png)
+    ![read the Alert](media/end-user-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.

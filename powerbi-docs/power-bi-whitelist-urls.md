@@ -64,7 +64,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** AppSource (internal or external apps in Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Required:** Sign in and get data for content packs | *.github.com  | TCP 443 |
+| 2 | **Optional:** Sign in and get data for content packs | Depends on content packs used | Depends on content packs used |
 | 3 | **Optional:** Import files From OneDrive personal | See the [Required URLs and ports for OneDrive site](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Optional:** Power BI in 60-Seconds tutorial video | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Optional:** PubNub streaming data sources | See the [PubNub documentation](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
