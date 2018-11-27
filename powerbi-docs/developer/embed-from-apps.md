@@ -14,7 +14,7 @@ ms.date: 11/27/2018
 
 # Embed reports or dashboards from apps
 
-In Power BI, you can create apps to bring related dashboards and reports together, all in one place. Then you publish them too large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users. So you can share content with them by using Power BI apps. This article gives you a few quick steps to embed content out of a published Power BI app and into a third-party application.
+In Power BI, you can create apps to bring related dashboards and reports together, all in one place. Then you publish them to large groups of people in your organization. The usage of those apps is relevant when all your users are Power BI users. So you can share content with them by using Power BI apps. This article gives you a few quick steps to embed content out of a published Power BI app and into a third-party application.
 
 ## Grab a report embedURL for embedding
 
