@@ -58,7 +58,7 @@ The following table specifies whether an **On-premises data gateway** is require
 | Amazon Redshift |No |
 | Impala (version 2.x) |Yes |
 | Snowflake |Yes |
-| Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
+| Spark (beta), version 0.9 and later |Yes |
 | Azure HDInsight Spark (Beta) |No |
 | IBM Netezza |Yes |
 | SAP Business Warehouse Application Server |Yes |
