@@ -196,7 +196,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![Create Role - Set General Settings](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
 
-4. Set the **Memerbership** settings. Here you add te users that are effected by this role.
+4. Set the **Membership** settings. Here you add te users that are affected by this role.
 
     ![Create Role - Set Membership Settings](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
@@ -204,11 +204,11 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![Create Role - Set Row Filters](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-4. Build a PBI report and publish it to a workspace with dedicated capacity.
+6. Build a PBI report and publish it to a workspace with dedicated capacity.
 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
-5. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
+7. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
@@ -260,7 +260,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     <!-- End CustomData -->
     ```
 
-6. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
+8. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
 
     ![Before Custom Data is applied](media/embedded-row-level-security/customdata-before.png)
 
