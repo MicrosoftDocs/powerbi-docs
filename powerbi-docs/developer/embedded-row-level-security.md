@@ -213,52 +213,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
 
-    Here is some sample code to add to the CustomData feature within EffectiveIdentity from the [sample app](https://github.com/Microsoft/PowerBI-Developer-Samples).
-
-    ```csharp
-        //public async Task<ActionResult> EmbedReport(string username, string roles)
-        public async Task<ActionResult> EmbedReport(string username, string roles, string customData)
-    ```
-
-    ```csharp
-    // create 'EffectiveIdentity' to use with 'CustomData'
-
-    // set properties separately
-    var effectiveIdentity = new EffectiveIdentity();
-    effectiveIdentity.Username = username;
-    effectiveIdentity.Datasets = new string[] { report.DatasetId };
-
-    // check for roles
-    if (!string.IsNullOrEmpty(roles))
-    {
-        effectiveIdentity.Roles = roles.Split(',');
-    }
-
-    // check for customdata
-    if (!string.IsNullOrEmpty(customData))
-    {
-        effectiveIdentity.CustomData = customData;
-    }
-
-    // Generate Embed Token with effective identities.
-    generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { effectiveIdentity });
-    }
-
-    // if username is empty, roles or customeData are not empty
-    else if (string.IsNullOrEmpty(username) && (!string.IsNullOrEmpty(roles) || !string.IsNullOrEmpty(customData)))
-    {
-        result.ErrorMessage = "Failed to generate embed token.";
-        return View(result);
-    }
-    ```
-
-    ```html
-    <!-- Added for CustomData -->
-    <div class="inputLineTitle">CustomData</div>
-    <input type="text" name="customdata" value="@Model.CustomData" />
-    <h8>Value to transfer to Azure AS</h8>
-    <!-- End CustomData -->
-    ```
+    View the [code](#customdata-sdk-additions) to add to the CustomData feature.
 
 8. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
 
@@ -277,7 +232,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 * Configuring roles at the data source level (Analysis Services live connection only).
 * Programmatically with an [Embed Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
-[JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Granular access to the data can only be applied with RLS and not through client-side filtering APIs.
+[JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
 ## Considerations and limitations
 
