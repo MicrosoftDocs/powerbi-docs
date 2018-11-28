@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 11/28/2018
 ---
 
 # Troubleshooting your embedded application
@@ -224,6 +224,62 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
 | OpenConnectionError | Can't display the visual. Could not render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
+
+## Performance
+
+In this section, you can find recommendations in order to get faster rendering of reports, dashboards and tiles in your application.
+
+Embed parameters
+Powerbi.embed() method receives few parameters to embed a report, a dashboard to a tile. These parameters have performance implications.
+
+### Embed URL
+
+Please avoid generating the embed URL yourself. Instead, make sure you get the Embed URL by calling the [Get reports](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Freports%2Fgetreportsingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256168308&sdata=22lkqRM2w1MQfrM8dooedaPqqIU8PufTq9TT4VDzRo0%3D&reserved=0), the [Get dashboards](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Fdashboards%2Fgetdashboardsingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256168308&sdata=nfWRgbSoXVF42Rg%2Ba9491u19uksXp%2FAyz%2Fa%2Ba7%2FCtdA%3D&reserved=0), or the [Get tiles](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Fdashboards%2Fgettilesingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256178318&sdata=LgZ27TynNpqQJDrb3aHWGQXIS%2FzichAO9De5M2uhF1Q%3D&reserved=0) API. We added a new parameter to the URL called **_config_**, used for performance improvements.
+
+### Permissions
+
+Please provide **View** permissions if you are not intending to embed a report in **Edit mode**. This way embed code will not initialize components which is used for Edit mode.
+
+### Filters, bookmarks and slicers
+
+Usually, reports visuals are saved with cached data. These cached data is used to give preserved performance. Reports will render cached data while queries are executed. If filters, bookmarks or slicers are provided, cached data will not be relevant. Then, the visuals will be rendered only after running the visual query.
+
+> [!Recommendation]
+> If you always embed a report with the same filters, it’s better to save the report with the filters applied. That way you can avoid passing a list of filters in load configuration.
+
+### Update tools and SDKs
+
+To enjoy the recent enhancements, Keep Tools and SDKs up to date.
+
+* It’s better to use the latest version of Power BI Desktop.
+
+* install the latest powerbi-client SDK version. We continue to release more enhancement, so make sure to follow-up from time to time. 
+
+* Packages to install:
+    * Npm package: powerbi-client
+    * Nuget package: Microsoft.PowerBI.JavaScript
+
+### Preloading
+
+You may Use ‘Preload’ JavaScript API to improve the end-user perceived performance.
+Powerbi.preload() downloads javascript, css files and other artifacts which will be used later to embed a report.
+
+* There is no point of calling powerbi.preload() and then immediately calling powerbi.embed().
+* Call preload if you are not embedding the report immediately.
+    * Example: if you embed a report on a button click, it’s better to call preload when the page loads. Then, when the application user clicks the button, the rendering will be faster.
+
+### Measuring performance
+
+To measure performance, you can use the two events we provide:
+
+1. Loaded: time until report is initialized (user will see no spinny).
+2. Rendered: time until fully report is rendered using actual data. The rendered event is fired each time the report is re-rendered (i.e. after applying filters). To measure a report first, render duration please make sure you do the calculations in the first raised event.
+
+> [!Note]
+> Cached data is rendered when available, but we don’t have an event for this yet.
+
+> [!Important]
+> Remember that loading time mainly depends on elements relevant to the report and data itself, such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow best practices document to improve the report’s loading time.
 
 ## Embedding setup tool
 
