@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
+ms.date: 11/28/2018
 ---
 
 # Use row-level security with Power BI embedded content
@@ -182,7 +182,7 @@ If you're calling the REST API, you can add custom data inside each identity, fo
 
 Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
 
-1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
 
     ![Create an Azure Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -230,7 +230,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 * [Configuring roles in a Power BI report](../desktop-rls.md).
 * Configuring roles at the data source level (Analysis Services live connection only).
-* Programmatically with an [Embed Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
+* Programmatically with an [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 

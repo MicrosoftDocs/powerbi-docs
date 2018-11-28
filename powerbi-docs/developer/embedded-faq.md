@@ -125,7 +125,7 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 ### Can I use APIs to create & manage Azure capacities?
 
-Yes, there are Powershell cmdlets and Azure Resource Manager (Azure Resource Manager) APIs you can use to create & manage PBIE resources.
+Yes, there are Powershell cmdlets and Azure Resource Manager APIs you can use to create & manage PBIE resources.
 
 * Rest APIs - https://docs.microsoft.com/rest/api/power-bi-embedded/
 * Powershell cmdlets - https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
@@ -270,6 +270,7 @@ For more information,  please reference [How to migrate Power BI Workspace Colle
 Yes, but customers that are already using the **Power BI Workspace Collection** solution can continue to use it until it is deprecated. Customers can also create new workspace collections, and any **Power BI Embedded** applications that still use the **Power BI Workspace Collection** solution.
 
 However, this also means that new features are not added to any **Power BI Workspace Collection** solutions, and that customers are encouraged to plan their migration to the new **Power BI Embedded** solution.
+
 ### When will Power BI Workspace Collection support be discontinued?
 
 Customers that are already using the **Power BI Workspace Collections** solution can continue to use it until the end of June 2018 or until the end of their support agreement.
@@ -283,6 +284,7 @@ The available regions are Australia Southeast, Brazil South, Canada Central, Eas
 There are new features and capabilities that are introduced in the **Power BI Embedded** solution that you can't do with **Power BI Workspace Collection**.
 
 Some of the features are:
+
 * All the PBI data sources are supported as oppose to the two data sources that are with **Power BI Workspace Collection**). 
 * New features such as Q&A, refresh, bookmarks, embedding dashboards & tiles, and custom menus are only supported in the **Power BI Embedded** solution.
 * Capacity billing model.
