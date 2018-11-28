@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 11/30/2018
 ---
 
 # Troubleshooting your embedded application
@@ -53,21 +53,21 @@ Provide the Request ID when approaching Microsoft support.
 
 ## App registration
 
-**App registration failure**
+### App registration failure
 
 Error messages within the Azure portal or the Power BI app registration page mention insufficient privileges. To register an application, you must be an admin in the Azure AD tenant or application registrations must be enabled for non-admin users.
 
-**Power BI Service doesn't appear in the Azure portal when registering a new App**
+### Power BI Service doesn't appear in the Azure portal when registering a new App
 
 At least one user must be signed up for Power BI. If you don't see **Power BI Service** listed within the API list, no user is signed up for Power BI.
 
 ## REST API
 
-**API call returning 401**
+### API call returning 401
 
 A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
 
-**API call returning 403**
+### API call returning 403
 
 A fiddler capture may be required to investigate further. There could be several reasons for a 403 error.
 
@@ -96,11 +96,11 @@ The backend of the application may need to refresh the auth token before calling
 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
-**(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)**
+**_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
 
-If you're using Power BI Embedded and utilizing Azure AD Direct Authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication has been turned off as of June 14, 2018 by default.
+If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use since June 14, 2018 by default.
 
-There's a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that can either be scoped to the organization or a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+There's a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this only as a per-app basis.
 
@@ -128,7 +128,7 @@ Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id
 
 After assigning the policy, wait approximately 15-20 seconds for propagation before testing.
 
-**Generate token fails when providing effective identity**
+### Generate token fails when providing effective identity
 
 GenerateToken can fail, with effective identity supplied, for a few different reasons.
 
@@ -149,7 +149,7 @@ To verify which it is, try the steps below.
 ### AADSTS90094: The grant requires admin permission
 
 **_Symptoms:_**</br>
-When a non-admin user attempts to sign in to an application for the first time, and grants consent then gets one of the following errors:
+When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
 * AADSTS90094: The grant requires admin permission.
@@ -164,6 +164,7 @@ User consent is disabled for the tenant.
 **_Several fixes are possible:_**
 
 *Enable user consent for the entire tenant (all users, all applications)*
+
 1. In the Azure portal, navigate to "Azure Active Directory" => "Users and groups" => "User settings"
 2. Enable the "Users can consent to apps accessing company data on their behalf" setting and save the changes
 
@@ -173,23 +174,9 @@ User consent is disabled for the tenant.
 
 ## Data sources
 
-**ISV wants to have different credentials for the same data source**
+### ISV wants to have different credentials for the same data source
 
 A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users contexts, and embed using the Azure AD token of that user.
-
-## Content rendering
-
-**Rendering, or consumption, of embedded content, fails or times out**
-
-Make sure the embed token did not expire. Make sure you're checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
-
-**Report or dashboard doesn't load**
-
-If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard doesn't work within your application if it doesn't load within powerbi.com.
-
-**Report or dashboard is performing slowly**
-
-Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding APIs.
 
 ## Troubleshooting your embedded application with the IError object
 
@@ -204,9 +191,9 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
-| LoadReportFailed | Fail to initialize - Could not resolve cluster | 403 | * Bad access token * Embed type doesn't match token type |
+| LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | * Bad access token * Embed type doesn't match token type |
 | PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group ID <li> Unauthorized group |
-| TokenExpired | Access token has expired, resubmit with a new access token. Could not render a report visual titled: <visual title> | N/A | Query data Expired token |
+| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
@@ -225,11 +212,26 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
+## Content rendering
+
+### Rendering, or consumption, of embedded content, fails or times out
+
+Make sure the embed token did not expire. Make sure you're checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+
+### Report or dashboard doesn't load
+
+If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard doesn't work within your application if it doesn't load within powerbi.com.
+
+### Report or dashboard is performing slowly
+
+Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding APIs.
+
 ## Performance
 
-In this section, you can find recommendations to get faster rendering of reports, dashboards, and tiles in your application.
+In this section, you can find recommendations to get faster rendering for reports, dashboards, and tiles in your application.
 
-Embed parameters
+### Embed parameters
+
 Powerbi.embed() method receives few parameters to embed a report, a dashboard to a tile. These parameters have performance implications.
 
 ### Embed URL
@@ -281,7 +283,7 @@ To measure performance, you can use the two events we provide:
 > [!Important]
 > Remember that loading time mainly depends on elements relevant to the report and data itself, such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow best practices document to improve the report’s loading time.
 
-## Embedding setup tool
+## Embed setup tool
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly download a sample application. Then you can compare your application to the sample.
 
@@ -326,7 +328,7 @@ When you run the **Embed for your organization** sample app, you get the followi
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-This is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `http://localhost:13526/` as the redirect URL.
+This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `http://localhost:13526/` as the redirect URL.
 
 If you like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
 
