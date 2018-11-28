@@ -4,17 +4,17 @@ description: How to configure row-level security for imported datasets, and Dire
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/02/2018
 ms.author: mblythe
-
+ms.date: 01/02/2018
 LocalizationGroup: Administration
 ---
+
 # Row-level security (RLS) with Power BI
-Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. Be aware that in the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access. 
+
+Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. Be aware that in the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access.
 
 You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
 
@@ -30,6 +30,7 @@ For more information, see [Bidirectional cross-filtering using DirectQuery in Po
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## Manage security on your model
+
 To manage security on your data model, you will want to do the following.
 
 1. Select the **ellipse (…)** for a dataset.
@@ -42,7 +43,9 @@ This will take you to the RLS page for you to add members to a role you created 
 You can only create or modify roles within Power BI Desktop.
 
 ## Working with members
+
 ### Add members
+
 You can add a member to the role by typing in the email address, or name, of the user, security group or distribution list you want to add. This member has to be within your organization. You cannot add Groups created within Power BI.
 
 ![](media/service-admin-rls/rls-add-member.png)
@@ -52,11 +55,13 @@ You can also see how many members are part of the role by the number in parenthe
 ![](media/service-admin-rls/rls-member-count.png)
 
 ### Remove members
+
 You can remove members by selecting the X next to their name. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
 
 ## Validating the role within the Power BI service
+
 You can validate that the role you defined is working correctly by testing the role. 
 
 1. Select the **ellipsis (...)** next to the role.
@@ -79,12 +84,11 @@ To return to normal viewing, select **Back to Row-Level Security**.
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
 ## Using RLS with app workspaces in Power BI
+
 If you publish your Power BI Desktop report to an app workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the app workspace settings.
 
 > [!WARNING]
 > If you have configured the app workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
-> 
-> 
 
 ![](media/service-admin-rls/rls-group-settings.png)
 
@@ -96,4 +100,3 @@ If you publish your Power BI Desktop report to an app workspace within the Power
 [Row-level security (RLS) with Power BI Desktop](desktop-rls.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
