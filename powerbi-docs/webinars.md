@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 11/26/2018
 ms.author: maikelson
 ---
 # Power BI webinars
@@ -17,9 +17,15 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+**Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
+<br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
+<br>*November 28th, 2018 11:00 AM–12:00 PM PST*
 
->[Attend upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+Healthcare organizations face the challenge of turning vast amounts of data into patient insights, and those insights into action. Register for this webinar to learn how to design meaningful healthcare reports that will help your organization convert data into useful patient insights. Get expert strategies and advice from US Medical IT founder and CEO Stephen Cracknell, Director of Healthcare IT Stuart Macanliss, and Texas-based rheumatologist Dr. John P. Lavery.
+
+[Register to watch on November 28th](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
+
+>[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
@@ -29,21 +35,37 @@ Get started with these popular on-demand webinars
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Power BI Tricks, Tips and Tools from the owners of PowerBI.Tips**
-<br>by Mike Carlo and Seth Bauer
-<br>[Watch now](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Strengthen Your Data Modeling Skills with Power BI**
+<br>by Kasper de Jonge
+<br>[Register and watch now](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**
+<br>by Cory Hrncirik and Miguel Martinez
+<br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Power BI: Analytics Done Right**
+<br>by Gohul Shanmugalingam
+<br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Make Your Power BI Data Visual:  Core Chart Types and How to Use Them**
+<br>by Miranda Li
+<br>[Register and watch now](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel and Office 365: Optimize Your Enterprise Data**
+<br>by Olaf Hubel and Miguel Martinez
+<br>[Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Simply Compelling — Tips for Better Visualization Design**
 <br>by Miranda Li
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
-<br>by Carlos Otero and Miguel Martinez
-<br>[Register and watch now](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**The Total Economic Impact of Microsoft Flow and PowerApps**
+<br>by Jonathan Lipsitz and Enrique Plaza Garcia
+<br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 >[Browse the library of Power BI on-demand webinars from our community experts](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -56,6 +78,10 @@ Watch recorded sessions at any time
 **How to Design Visually Stunning Power BI Reports**
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
+<br>by Carlos Otero and Miguel Martinez
+<br>[Register and watch now](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Learn about Power BI Embedded in 20 minutes**
 <br>by Megan Asarrane and Colin Murphy
@@ -79,10 +105,6 @@ Watch recorded sessions at any time
 <br>by Scott Ball from Esri and Enrique Plaza from Microsoft
 <br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
-**Improving Profitability in Healthcare**
-<br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
-<br>[Register and watch now](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
-
 **Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
@@ -96,6 +118,10 @@ Watch recorded sessions at any time
 <br>[Register and watch now](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 ### Community ###
+
+**Power BI Tricks, Tips and Tools from the owners of PowerBI.Tips**
+<br>by Mike Carlo and Seth Bauer
+<br>[Watch now](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 **Storytelling with your data and Power BI**
 <br>by Tristan Malherbe

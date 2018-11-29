@@ -18,7 +18,7 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
  >[!IMPORTANT]
  >* In order to connect to a live Analysis Services server, an On-premises data gateway must be installed and configured by an administrator. For more information, see [On-premises data gateway](service-gateway-onprem.md).
  >* When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
- >* [Q&A natural language querying](consumer/end-user-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
+ >* [Q&A natural language querying](service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
 
 ## To connect to a model from Get data
 1. In **My Workspace**, select **Get data**. You can also change to a group workspace, if one is available.

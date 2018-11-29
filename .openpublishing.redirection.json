@@ -1,11 +1,6 @@
 {
     "redirections": [
         {
-            "source_path": "powerbi-docs/power-bi-whitelist-urls.md",
-            "redirect_url": "/power-bi/service-admin-administering-power-bi-in-your-organization",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/refresh-enable-fast-combine.md",
             "redirect_url": "/power-bi/service-gateway-personal-mode",
             "redirect_document_id": false
@@ -67,8 +62,8 @@
         },
         {
             "source_path": "powerbi-docs/quickstart-install-report-server.md", 
-            "redirect_url": "/power-bi/install-report-server",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/report-server/install-report-server",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md", 
@@ -82,6 +77,11 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-security-center.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-project-madeira.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
         }, 
@@ -102,7 +102,7 @@
         },
         {
             "source_path": "powerbi-docs/mobile-share-tile-windows-10-phone-app.md", 
-            "redirect_url": "/power-bi/mobile-windows-10-phone-app-get-started",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
             "redirect_document_id": true
         },
         {
@@ -128,6 +128,11 @@
         {
             "source_path": "powerbi-docs/developer/template-content-pack-authoring.md", 
             "redirect_url": "/power-bi/template-content-pack-authoring",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-export-data.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
             "redirect_document_id": true
         },
         {
@@ -164,6 +169,11 @@
             "source_path": "powerbi-docs/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/mobile-ipad-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
@@ -226,6 +236,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/mobile-qr-code-for-android.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-qr-code",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/mobile-apps-quickstart-view-dashboard-report.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-quickstart-view-dashboard-report",
             "redirect_document_id": true
@@ -264,6 +279,11 @@
             "source_path": "powerbi-docs/consumer/end-user-consuming.md",
             "redirect_url": "/power-bi/consumer/end-user-consumer",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-install-use-apps.md",
+            "redirect_url": "/power-bi/consumer/end-user-apps",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/mobile-mixed-reality-app.md",
@@ -521,6 +541,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
+            "redirect_url": "/power-bi/consumer/end-user-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true
@@ -546,19 +571,19 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-insights.md",
-            "redirect_url": "/power-bi/consumer/end-user-insights",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-insight-types.md",
             "redirect_url": "/power-bi/consumer/end-user-insight-types",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-navigation-search-filter-sort.md",
-            "redirect_url": "/power-bi/consumer/end-user-search-filter-sort",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-search-sort",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/end-user-search-filter-sort.md",
+            "redirect_url": "/power-bi/consumer/end-user-search-sort",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-notification-center.md",
@@ -583,11 +608,6 @@
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
             "redirect_url": "/power-bi/consumer/end-user-powerpoint",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-q-and-a-direct-query.md",
-            "redirect_url": "/power-bi/consumer/end-user-q-and-a-direct-query",
             "redirect_document_id": true
         },
         {
@@ -663,6 +683,31 @@
         {
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
             "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-release-notes.md",
+            "redirect_url": "/power-bi/service-whats-new",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md",
+            "redirect_url": "/power-bi/service-gateway-sso-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
+            "redirect_url": "/power-bi/service-admin-portal",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-custom-visuals-getting-started-with-developer-tools.md",
+            "redirect_url": "/power-bi/developer/custom-visual-develop-tutorial",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-fullscreen-mode.md",
+            "redirect_url": "/power-bi/consumer/end-user-focus",
             "redirect_document_id": false
         }
     ]

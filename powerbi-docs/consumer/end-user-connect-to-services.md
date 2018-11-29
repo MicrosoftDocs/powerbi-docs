@@ -56,7 +56,7 @@ Do you use a service you'd like to suggest for a Power BI app? Go to the [Power 
 Do you have a service you'd like to build an app for? [Submit your nomination](https://azure.microsoft.com/marketplace/programs/certified/apply/) and select "Publish a Power BI Content Pack" to get started.
 
 ## Next steps
-* [What are apps in Power BI?](../service-install-use-apps.md)
+* [What are apps in Power BI?](end-user-apps.md)
 * [Get data in Power BI](../service-get-data.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -1,15 +1,15 @@
 ---
 title: Using the Power BI samples
 description: 'Using the Power BI samples'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---

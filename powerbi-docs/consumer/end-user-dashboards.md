@@ -1,5 +1,5 @@
 ---
-title: what is a Power BI dashboard?
+title: What is a dashboard for Power BI service consumers?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
 manager: kvivek
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/09/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
-# Dashboards in Power BI service
+# Dashboards for Power BI service consumers
 
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
@@ -22,7 +22,7 @@ A Power BI ***dashboard*** is a single page, often called a canvas, that uses vi
 The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Dashboards are a feature of Power BI service and are not available in Power BI Desktop. Dashboards can't be created on mobile devices but they can be [viewed and shared](/mobile/mobile-apps-view-dashboard.md).
+> Dashboards are a feature of Power BI service and are not available in Power BI Desktop. Dashboards can't be created on mobile devices but they can be [viewed and shared](mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 

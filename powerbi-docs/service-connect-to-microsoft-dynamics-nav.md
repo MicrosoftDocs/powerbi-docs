@@ -25,7 +25,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
    
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
    * "instance.navserver.com" with your NAV Server name
    * "DynamicsNAV90\_Instance1" with your NAV Server Instance name
@@ -68,7 +68,7 @@ If you see this error after typing your Microsoft Dynamics NAV URL. Make sure th
 
 * The URL follows exactly this pattern:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
   
   * "instance.navserver.com" with your NAV Server name
   * "DynamicsNAV90\_Instance1" with your NAV Server Instance name
@@ -88,11 +88,11 @@ If you see an "Oops" error dialog after you pass the authentication dialog box, 
 
 * Verify the URL follows the pattern specified above. A common mistake is to specify:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
   
     However, you need to include the 'Company('CRONUS%20International%20Ltd.')' section with your NAV Company name:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## Next steps
 * [What are apps in Power BI?](service-create-distribute-apps.md)

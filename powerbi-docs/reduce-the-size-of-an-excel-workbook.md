@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -24,7 +24,7 @@ Here are some elements that can make the core worksheet contents larger than 10 
 
 * Images.
 * Shaded cells. [Remove a cell shading format](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Colored worksheets. [Remove a sheet background](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Colored worksheets. [Remove a sheet background](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Text boxes.
 * Clip art.
 
@@ -51,7 +51,7 @@ When you import data into Excel, follow these tips:
 * **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
 ## Workbook Size Optimizer
-If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. [Download Workbook Size Optimizer](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. [Download Workbook Size Optimizer](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## Related info
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)

@@ -7,17 +7,17 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 11/09/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
-In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](end-user-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
+In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization create and distribute apps with key business information. [External services](end-user-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
-![Apps in Power BI](./media/end-user-apps/power-bi-apps-left-nav.png)
+![Apps in Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
+Apps are easy to find and install in the Power BI service and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
@@ -29,13 +29,13 @@ The easiest way to install a new app yourself is to get a direct link from the a
 
 **On your computer** 
 
-When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
+Select the link in email to open Power BI service ([https://powerbi.com](https://powerbi.com)) in a browser. Confirm you want to install the app and it opens to the app landing page.
 
-![App landing page in the Power BI service](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
+![App landing page in the Power BI service](./media/end-user-apps/power-bi-get-app.png)
 
 **On your iOS or Android mobile device** 
 
-When you click the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
+When you select the link in email on your mobile device, the app installs automatically and opens the app content list in the mobile app. 
 
 ![App content list on mobile device](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -45,18 +45,18 @@ You can also find and install any apps that you have access to from Microsoft Ap
 1. Select **Apps** ![Apps in the left navigation pane](./media/end-user-apps/power-bi-apps-bar.png) > **Get apps**. 
    
      ![The Get apps icon](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
+2. In AppSource under **My organization**, search to narrow the results and find the app you're looking for.
    
      ![In AppSource under My organization](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
-Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. You can also [export the data to Excel ](end-user-export-data.md) from a table or other visual in a report. Read about [interacting with reports in Power BI](end-user-reading-view.md). 
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](end-user-reading-view.md). 
 
 ![Export data from a Power BI visual](./media/end-user-apps/power-bi-service-export-data-visual.png)
 
 
 
 ## Next steps
-* [Power BI apps for external services](end-user-connect-to-services.md)
+[Power BI apps for external services](end-user-connect-to-services.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
@@ -61,7 +61,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    ![Notification icon in Power BI service](media/service-set-data-alerts/powerbi-alert-notifications.png)
 3. Open your Notification center to see the alert details.
    
-    ![read the Alert](media/service-set-data-alerts/powerbi-alert-notfication.png)
+    ![read the Alert](media/service-set-data-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.

@@ -33,7 +33,7 @@ You'll have options for interacting with the dashboards and  reports, depending 
 * Select the star icon to [Favorite a dashboard or report](end-user-favorite.md).
 * Remove a dashboard or report  ![trashcan icon](./media/end-user-shared-with-me/power-bi-delete-icon.png)
 * Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png)
-* Additionally, if your lists get long, [use the search field and sorting to find what you need](end-user-search-filter-sort.md).
+* Additionally, if your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md).
   
   > [!NOTE]
   > For information about EGRC classifications, select the classification button or [visit Dashboard data classification ](../service-data-classification.md).

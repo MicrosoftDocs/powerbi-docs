@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: reference
-ms.date: 05/21/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data

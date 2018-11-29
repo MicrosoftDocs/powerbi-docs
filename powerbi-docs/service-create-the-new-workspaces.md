@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -163,7 +163,7 @@ Some features work differently from current app workspaces in the new app worksp
 
 The following issues are known, and fixes are under development:
 
-- Free users or user groups added as recipients of subscriptions to emails may not receive the emails, though they should. The issue occurs when the new workspaces experience workspace is in a Premium capacity, but the My Workspace of the user creating the subscription isn't in a Premium capacity. If the My Workspace is in a Premium capacity, then free users and user groups will receive the emails.
+- Free users or user groups added as recipients of subscriptions to emails may not receive the emails, though they should. The issue occurs when one of the new workspaces is in a Premium capacity, but the My Workspace of the user creating the subscription isn't in a Premium capacity. If the My Workspace is in a Premium capacity, then free users and user groups will receive the emails.
 - After a workspace is moved from a Premium capacity to shared capacity, in some cases, free users and user groups will continue to receive emails, though they should not. The issue occurs when the My Workspace of the user creating the subscription is in a Premium capacity.
 
 ## Next steps

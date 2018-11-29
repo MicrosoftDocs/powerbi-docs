@@ -1,6 +1,6 @@
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
-- name: Power BI service
+- name: Power BI service for consumers
   items:
   - name: Overview
     items: 
@@ -12,6 +12,8 @@
     items: 
     - name: "Find your way around in Power BI"
       href: end-user-experience.md
+    - name: "What can I do with Power BI?"
+      href: end-user-reading-view.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
@@ -22,6 +24,8 @@
       items:
       - name: "Dashboards"
         href: end-user-dashboards.md
+      - name: "View a dashboard"
+        href: end-user-dashboard-open.md
       - name: "Featured dashboards"
         href: end-user-featured.md
       - name: "Dashboard tiles"
@@ -32,36 +36,44 @@
       items:
       - name: "Reports"
         href: end-user-reports.md
-      - name: "How to use filters in reports"
+      - name: "View a report"
+        href: end-user-report-open.md
+      - name: "Use filters in a report"
         href: end-user-report-filter.md
+      - name: "Learn how report visuals cross-filter each other"
+        href: end-user-interactions.md
     - name: Visualizations
       items: 
       - name: "What can I do with visualizations?"
         href: end-user-visualizations.md
+      - name: "Show the data that was used to create the visualization"
+        href: end-user-show-data.md
       - name: "Drill down in a visualization in Power BI"
         href: end-user-drill.md
-      - name: "Export data from a visualization"
-        href: end-user-export-data.md
     - name: Common tasks
       items: 
-      - name: "Display in focus mode and full screen mode"
+      - name: "Different ways to zoom into content using Focus and Full screen modes"
         href: end-user-focus.md
       - name: "Favorite dashboards, reports, and apps in Power BI"
         href: end-user-favorite.md
       - name: "Print a dashboard, print a dashboard tile, print a report page"
         href: end-user-print.md
-      - name: "Related content"
+      - name: "View related content"
         href: end-user-related.md
-      - name: "Recent content"
+      - name: "View recent content"
         href: end-user-recent.md
+      - name: "View content in the Shared with me container"
+        href: end-user-shared-with-me.md
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
+      - name: "Search and sort content in Power BI"
+        href: end-user-search-sort.md
+      - name: "View automatic insights for dashboard tiles"
+        href: end-user-insights.md
     - name: Get data
       items: 
-      - name: "What are apps?"
+      - name: "Install and use apps"
         href: end-user-apps.md
-      - name: "Shared with me"
-        href: end-user-shared-with-me.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
       - name: "Find and connect to organizational content packs"

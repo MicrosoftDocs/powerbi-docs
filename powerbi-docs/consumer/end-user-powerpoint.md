@@ -1,5 +1,5 @@
 ---
-title: Export reports from Power BI to PowerPoint (Preview)
+title: Export reports from Power BI to PowerPoint 
 description: Learn how to export a Power BI report to PowerPoint.
 author: mihart
 manager: kvivek
@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
-# Export reports from Power BI to PowerPoint (Preview)
+# Export reports from Power BI to PowerPoint
 With Power BI, you can now publish your report to **Microsoft PowerPoint**, and easily create a slide deck based on your Power BI report. When you **export to PowerPoint**, the following occurs:
 
 * Each page in the Power BI report becomes an individual slide in PowerPoint
@@ -73,9 +73,9 @@ There are a few considerations and limitations to keep in mind when working with
 * **R visuals** are not currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * **Custom visuals** that have been **certified** are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [getting a custom visual certified](../power-bi-custom-visuals-certified.md). Custom visuals that have not been certified are not supported, and are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * **Certified custom visuals** are supported. A certified custom visual has been approved for use with Power BI, meets certain code requirements, and has passed strict security tests. You can [learn more about **certified custom visuals**](../power-bi-custom-visuals-certified.md).
-* Reports with more than 15 report pages can't currently be exported.
+* Reports with more than 30 report pages can't currently be exported.
 * The process of exporting the report to PowerPoint may take a few minutes to complete, so please be patient. Factors that can impact the time required include the structure of the report, and the current load on the Power BI service.
-* If the **Export to PowerPoint (Preview)** menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
+* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
 * Background images will be cropped with the chart's bounding area. It's highly recommended that you remove background images before exporting to PowerPoint.
 * **In-session interactivity** such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report.
 * Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.

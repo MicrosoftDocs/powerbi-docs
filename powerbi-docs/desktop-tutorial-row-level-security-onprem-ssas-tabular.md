@@ -46,7 +46,7 @@ There are many published articles describing how to define row level dynamic sec
    We’ll come back to these users in upcoming tasks.
 4. Next we do an *inner join* with the **DimSalesTerritory** table, which shows the region details associated with the user. The following code performs the *inner join*, and the image that follows shows how the table appears once the *inner join* is successful.
    
-       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Notice that the above image shows information such as which user is responsible for which sales region. That data is displayed because of the relationship that we created in **Step 2**. Also, note that the user **Jon Doe is part of the Australia sales region**. We’ll revisit John Doe in upcoming steps and tasks.
@@ -68,6 +68,9 @@ There are many published articles describing how to define row level dynamic sec
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     In this formula, the **LOOKUPVALUE** function returns all values for the **DimUserSecurity[SalesTerritoryID]** column, where the **DimUserSecurity[UserName]** is the same as the current logged on Windows user name, and **DimUserSecurity[SalesTerritoryID]** is the same as the **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > Be aware that the DAX function [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) is not supported when using row level security.
+
    The set of Sales SalesTerritoryKey's returned by **LOOKUPVALUE** is then used to restrict the rows shown in the **DimSalesTerritory**. Only rows where the **SalesTerritoryKey** for the row is in the set of IDs returned by the **LOOKUPVALUE** function are displayed.
 8. For the **DimUserSecurity** table, in the **DAX Filter** column, type the following formula:
    

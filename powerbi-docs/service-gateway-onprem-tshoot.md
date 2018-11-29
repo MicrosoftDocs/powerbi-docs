@@ -40,6 +40,25 @@ The gateway runs as a Windows service, so you can start and stop it in a few way
     net start PBIEgwService
     '''
 
+### Log file configuration
+
+The gateway service logs are categorized into three buckets: information, error, and network. This categorization provides a better troubleshooting experience that allows you to focus on a specific area, depending on the error or issue. You can see the three categories in the following snippet from the gateway configuration file: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
+
+```xml
+  <system.diagnostics>
+    <trace autoflush="true" indentsize="4">
+      <listeners>
+        <remove name="Default" />
+        <add name="ApplicationFileTraceListener"
+             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
+             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
+      </listeners>
+    </trace>
+  </system.diagnostics>
+```
+
+This file is located by default at: *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. To configure the number of log files to retain, change the first number (20 in this example): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
+
 ### Error: Failed to create a gateway. Try again
 
 All of the details are available, but the call to the Power BI service returned an error. The error and an activity id are displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
@@ -83,17 +102,14 @@ To correct this, do the following steps.
 3. Reinstall the gateway.
 4. Optionally apply the recovery key to restore an existing gateway.
 
-### Support for TLS 1.1/1.2
+## Support for TLS 1.2
 
-With the August 2017 update and beyond, the On-premises data gateway uses Transport Layer Security (TLS) 1.1 or 1.2 to communicate with the **Power BI service** by default. Previous versions of the On-premises data gateway use TLS 1.0 by default. You must upgrade your On-premises data gateway installations to the August 2017 release or newer to ensure your gateways continue to operate.
+By default, the On-premises data gateway uses Transport Layer Security (TLS) 1.2 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.2, you might have to add or modify the following registry keys on the machine running the gateway service:
 
->[!NOTE]
->Support for TLS 1.0 ended on November 1, 2017.
-
-It's important to note that TLS 1.0 is still supported by the On-premises data gateway prior to November 1, 2017, and is used by the gateway as a fallback mechanism. To ensure all gateway traffic uses TLS 1.1 or 1.2 (and to prevent the use of TLS 1.0 on your gateway), you must add or modify the following registry keys on the machine running the gateway service:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
@@ -426,7 +442,7 @@ The test results list all the servers, ports, and IP addresses that are required
 
 ## Kerberos
 
-If the underlying database server and On-premises data gateway are not appropriately configured for [Kerberos Constrained Delegation](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
+If the underlying database server and On-premises data gateway are not appropriately configured for [Kerberos Constrained Delegation](service-gateway-sso-kerberos.md), enable [verbose logging](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) on the gateway, and investigate based on the errors/traces in the gateway’s log files as a starting point for troubleshooting.
 
 ### ImpersonationLevel
 
