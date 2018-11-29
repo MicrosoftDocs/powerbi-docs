@@ -17,13 +17,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
-<br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
-<br>*November 28th, 2018 11:00 AM–12:00 PM PST*
-
-Healthcare organizations face the challenge of turning vast amounts of data into patient insights, and those insights into action. Register for this webinar to learn how to design meaningful healthcare reports that will help your organization convert data into useful patient insights. Get expert strategies and advice from US Medical IT founder and CEO Stephen Cracknell, Director of Healthcare IT Stuart Macanliss, and Texas-based rheumatologist Dr. John P. Lavery.
-
-[Register to watch on November 28th](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -100,6 +94,10 @@ Watch recorded sessions at any time
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### Partners ###
+
+**Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
+<br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
+<br>[Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 **Boost Your BI with Location Intelligence**
 <br>by Scott Ball from Esri and Enrique Plaza from Microsoft
