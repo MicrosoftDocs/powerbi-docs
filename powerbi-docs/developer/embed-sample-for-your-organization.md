@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI content into an application for your organization
-description: Learn how to integrate, or embed, a report, dashboard, or tile into a web app by using the Power BI APIs for your organization.
+title: Embed Power BI content into an application for your organization using embedded analytics
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organziation. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
@@ -36,7 +36,7 @@ To get started, you need a Power BI Pro account and a Microsoft Azure subscripti
 
 Before you start embedding reports, dashboards, or tiles into your application, make sure your environment is set up to allow for embedding. As part of the setup, take one of these actions:
 
-- You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that walks you through creating an environment and embedding a report.
+- You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) so you can quickly get started and download a sample application that walks you through creating an environment and embedding a report.
 
 - If you choose to set up the environment manually, take the steps in the following sections.
 
@@ -56,13 +56,13 @@ To give your application access to the Power BI REST APIs, register it with Azur
 
     ![New app registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Follow the prompts and create a new application. For **user owns data**, use **Web app / API** for the **Application type**. You must also provide a **Sign-on URL** that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
+4. Follow the prompts and create a new application. For **user owns data**, use **Web app / API** for the **Application type**. Provide a **Sign-on URL** that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
 
     ![Create an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### Apply permissions to your application within Azure Active Directory
 
-You must enable permissions for your application in addition to what you provided on the app registration page. Sign in with a global admin account to enable permissions.
+Enable permissions for your application in addition to what you provided on the app registration page. Sign in with a global admin account to enable permissions.
 
 ### Use the Azure Active Directory portal
 
