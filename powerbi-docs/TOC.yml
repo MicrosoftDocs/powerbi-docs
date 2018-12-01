@@ -385,10 +385,10 @@
       href: power-bi-overview.md
   - name: Tutorials
     items: 
-    - name: "Connect to a GitHub sample"
-      href: service-tutorial-connect-to-github.md
     - name: "Get started with Power BI"
       href: service-get-started.md
+    - name: "Connect to a GitHub sample"
+      href: service-tutorial-connect-to-github.md
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -647,14 +647,12 @@
         href: service-dashboard-themes.md
     - name: Reports
       items: 
-      - name: "Create a new report from an existing report"
-        href: power-bi-report-copy.md
+      - name: "Create a new report from a dataset"
+        href: service-report-create-new.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
       - name: "Save a report in Power BI"
         href: service-report-save.md
-      - name: "Create a new report from a dataset"
-        href: service-report-create-new.md
       - name: "Interact with a report in Editing View"
         href: service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
@@ -667,8 +665,6 @@
         href: service-create-qr-code-for-report.md
       - name: "Reorder pages in a report"
         href: service-report-reorder-pages.md
-      - name: "Duplicate a report page"
-        href: power-bi-report-copy-paste-page.md
       - name: "Export a report from the service to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
