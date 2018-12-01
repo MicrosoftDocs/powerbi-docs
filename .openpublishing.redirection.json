@@ -651,6 +651,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-report-reorder-page.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-report-copy.md",
             "redirect_url": "/power-bi/service-report-create-new",
             "redirect_document_id": false

@@ -2,7 +2,7 @@
 title: Create dynamic reference lines for visuals
 description: Create dynamic reference lines for visuals in Power BI service
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

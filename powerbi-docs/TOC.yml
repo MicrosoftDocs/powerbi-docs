@@ -283,6 +283,8 @@
         href: desktop-create-phone-report.md
       - name: "Use See Data and See Records"
         href: desktop-see-data-see-records.md
+      - name: "Tips for creating reports"
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizations
       items: 
       - name: "Visualization best practices"
@@ -663,8 +665,6 @@
         href: service-usage-metrics.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
-      - name: "Reorder pages in a report"
-        href: service-report-reorder-pages.md
       - name: "Export a report from the service to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
