@@ -649,8 +649,6 @@
       items: 
       - name: "Create a new report from an existing report"
         href: power-bi-report-copy.md
-      - name: "Add a page to a report"
-        href: power-bi-report-add-page.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
       - name: "Save a report in Power BI"
@@ -791,6 +789,30 @@
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
+    - name: Paginated reports in Power BI
+      items: 
+      - name: What are paginated reports? (Preview)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Paginated reports FAQ
+        href: paginated-reports-faq.md
+      - name: Create a paginated report and upload it
+        href: paginated-reports-quickstart-aw.md
+      - name: Get around Report Design View
+        href: paginated-reports-report-design-view.md
+      - name: Enter data directly in a paginated report
+        href: paginated-reports-enter-data.md
+      - name: Create an embedded data source
+        href: paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Create parameters 
+        href: paginated-reports-parameters.md
+      - name: Publish a paginated report
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: View a paginated report
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interact with parameters
+        href: paginated-reports-view-parameters.md
   - name: Resources
     items: 
     - name: "Videos"
@@ -801,38 +823,6 @@
       href: supported-languages-countries-regions.md
     - name: "Whitepapers"
       href: whitepapers.md
-- name: Paginated reports in Power BI
-  items: 
-  - name: Overview
-    items: 
-    - name: What are paginated reports? (Preview)
-      href: paginated-reports-report-builder-power-bi.md
-  - name: Tutorials
-    items:
-    - name: Create a paginated report and upload it
-      href: paginated-reports-quickstart-aw.md
-  - name: Concepts
-    items: 
-    - name: Get around Report Design View
-      href: paginated-reports-report-design-view.md
-    - name: Paginated reports FAQ
-      href: paginated-reports-faq.md
-  - name: How to
-    items: 
-    - name: Enter data directly in a paginated report
-      href: paginated-reports-enter-data.md
-    - name: Create an embedded data source
-      href: paginated-reports-embedded-data-source.md
-    - name: Create an embedded dataset
-      href: paginated-reports-create-embedded-dataset.md
-    - name: Create parameters 
-      href: paginated-reports-parameters.md
-    - name: Publish a paginated report
-      href: paginated-reports-save-to-power-bi-service.md
-    - name: View a paginated report
-      href: paginated-reports-view-power-bi-service.md
-    - name: Interact with parameters
-      href: paginated-reports-view-parameters.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"

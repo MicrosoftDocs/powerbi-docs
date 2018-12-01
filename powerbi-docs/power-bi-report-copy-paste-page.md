@@ -31,7 +31,6 @@ Duplicating a report page in Power BI service or Power BI Desktop requires edit 
 
 ### Next steps
 More about [Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)    
-[Add a new page to a report](power-bi-report-add-page.md)    
 [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

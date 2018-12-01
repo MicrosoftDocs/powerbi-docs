@@ -641,6 +641,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/power-bi-report-add-page.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-report-subscribe.md",
             "redirect_url": "/power-bi/consumer/end-user-subscribe",
             "redirect_document_id": true
