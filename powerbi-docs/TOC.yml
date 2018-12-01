@@ -313,7 +313,7 @@
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "ArcGIS in Power BI"
+      - name: "ArcGIS maps in Power BI"
         href: power-bi-visualization-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -347,6 +347,8 @@
         href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
         href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: "Create dynamic reference lines"
+        href: service-analytics-pane.md
     - name: Troubleshooting
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
@@ -661,8 +663,6 @@
         href: service-analyze-in-excel.md
       - name: "Tips and tricks for creating reports"
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: "Analytics pane"
-        href: service-analytics-pane.md
       - name: "Usage metrics for reports"
         href: service-usage-metrics.md
       - name: "Create a QR code for a report"
@@ -677,8 +677,6 @@
         href: service-url-filters.md
       - name: "Best practices for building fast and reliable reports"
         href: power-bi-reports-performance.md  
-      - name: "Interact with ArcGIS maps"
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Ask questions of your data
       items:
       - name: "Use Q&A to create visualizations and reports"
