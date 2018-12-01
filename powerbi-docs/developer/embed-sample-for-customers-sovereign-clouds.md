@@ -1,13 +1,13 @@
 ---
-title: Embed Power BI content into an application for your customers for government and sovereign clouds
-description: Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers.
+title: Embed Power BI content into an application for your customers for government and sovereign clouds using embedded analytics
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 11/30/2018
 ---
 
 # Tutorial: Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
