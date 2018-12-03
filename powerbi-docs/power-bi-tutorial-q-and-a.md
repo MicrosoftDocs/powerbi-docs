@@ -70,7 +70,7 @@ In order to use Q&A in reports, you must have edit permissions for the report an
     **Service**    
     ![](media/power-bi-tutorial-q-and-a/power-bi-service.png)
 
-2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to [add a blank page to the report](power-bi-report-add-page.md) before asking a question.
+2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
     ![](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 

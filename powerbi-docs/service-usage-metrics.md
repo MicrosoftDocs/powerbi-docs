@@ -1,8 +1,8 @@
 ---
 title: Usage metrics for dashboards and reports
 description: How to view, save, and use Usage metrics for Power BI dashboards and reports. Measure and Magnify Your Impact with Usage Metrics for Content Creators.
-author: mihart
-ms.author: mihart
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
