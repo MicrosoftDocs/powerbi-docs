@@ -445,20 +445,6 @@
         href: service-power-bi-get-started-third-party-apps.md
   - name: How to
     items: 
-    - name: Common tasks
-      items: 
-      - name: "Rename content within Power BI"
-        href: service-rename.md
-      - name: "Quick Insights in Power BI"
-        href: service-insights.md
-      - name: "Enroll your US Government organization"
-        href: service-govus-signup.md
-      - name: "Data alerts in Power BI service"
-        href: service-set-data-alerts.md
-      - name: "Get started with Power BI Q&A"
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: "Delete almost anything in Power BI"
-        href: service-delete.md
     - name: Connect to services
       items: 
       - name: "Connect to services"
@@ -629,6 +615,8 @@
         href: service-dashboard-pin-tile-from-q-and-a.md
       - name: "Pin an entire report page to a dashboard"
         href: service-dashboard-pin-live-tile-from-report.md
+      - name: "Data alerts in Power BI service"
+        href: service-set-data-alerts.md
       - name: "Usage metrics for dashboards"
         href: service-usage-metrics.md
       - name: "Add an image, text box, video, or code to a dashboard"
@@ -637,8 +625,6 @@
         href: service-dashboard-edit-tile.md
       - name: "Tips for designing a great dashboard"
         href: service-dashboards-design-tips.md
-      - name: "Optimize your data for  Quick Insights"
-        href: service-insights-optimize.md
       - name: "Create a phone view of a dashboard"
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
@@ -651,7 +637,7 @@
         href: service-dashboard-themes.md
     - name: Reports
       items: 
-      - name: "Create a new report from a dataset"
+      - name: "Create a report from a dataset"
         href: service-report-create-new.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
@@ -675,18 +661,24 @@
         href: power-bi-reports-performance.md  
     - name: Ask questions of your data
       items:
+      - name: "Get started with Power BI Q&A"
+        href: power-bi-visualization-introduction-to-q-and-a.md
       - name: "Use Q&A to create visualizations and reports"
         href: power-bi-tutorial-q-and-a.md
       - name: "Make your data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
-      - name: "Enable Cortana for Power BI"
-        href: service-cortana-enable.md
       - name: "Create featured questions for Q&A"
         href: service-q-and-a-create-featured-questions.md
       - name: "Visualization types in Power BI"
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
+      - name: "Enable Cortana for Power BI"
+        href: service-cortana-enable.md
+      - name: "Quick Insights in Power BI"
+        href: service-insights.md
+      - name: "Optimize your data for  Quick Insights"
+        href: service-insights-optimize.md
     - name: Share your work
       items: 
       - name: "How should I collaborate and share?"
@@ -713,28 +705,6 @@
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Content Packs
-      items:
-      - name: "Manage, update, and delete organizational content packs"
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: "Organizational content packs: Copy, refresh, and get access"
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: "Organizational content packs: Introduction"
-        href: service-organizational-content-pack-introduction.md
-      - name: "Create and publish an organizational content pack"
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: "Remove your connection to an organizational content pack"
-        href: service-organizational-content-pack-disconnect.md
-      - name: Certification
-        items: 
-        - name: "Content Pack Certification Program"
-          href: service-content-pack-overview.md
-        - name: "Template Content Pack authoring"
-          href: template-content-pack-authoring.md
-        - name: "Template Content Pack testing"
-          href: template-content-pack-testing.md
-        - name: "Template Content Pack experiences"
-          href: template-content-pack-experience.md
     - name: Publish
       items: 
       - name: "Power BI publisher for Excel"
@@ -811,6 +781,36 @@
         href: paginated-reports-view-power-bi-service.md
       - name: Interact with parameters
         href: paginated-reports-view-parameters.md
+    - name: Other tasks
+      items: 
+      - name: "Rename content within Power BI"
+        href: service-rename.md
+      - name: "Enroll your US Government organization"
+        href: service-govus-signup.md
+      - name: "Delete almost anything in Power BI"
+        href: service-delete.md
+      - name: Content Packs
+        items:
+        - name: "Manage, update, and delete organizational content packs"
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: "Organizational content packs: Copy, refresh, and get access"
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: "Organizational content packs: Introduction"
+          href: service-organizational-content-pack-introduction.md
+        - name: "Create and publish an organizational content pack"
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: "Remove your connection to an organizational content pack"
+          href: service-organizational-content-pack-disconnect.md
+        - name: Certification
+          items: 
+          - name: "Content Pack Certification Program"
+            href: service-content-pack-overview.md
+          - name: "Template Content Pack authoring"
+            href: template-content-pack-authoring.md
+          - name: "Template Content Pack testing"
+            href: template-content-pack-testing.md
+          - name: "Template Content Pack experiences"
+            href: template-content-pack-experience.md
   - name: Resources
     items: 
     - name: "Videos"
