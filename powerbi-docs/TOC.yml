@@ -563,7 +563,7 @@
         href: service-parameters.md
       - name: "Get data from comma separated value (.csv) files"
         href: service-comma-separated-value-files.md
-      - name: "Real-time streaming in Power BI (Preview)"
+      - name: "Real-time streaming in Power BI"
         href: service-real-time-streaming.md
       - name: "Publish to Power BI from Excel 2016"
         href: service-publish-from-excel.md
@@ -653,7 +653,7 @@
         href: service-usage-metrics.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
-      - name: "Export a report from the service to Power BI Desktop (Preview)"
+      - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
@@ -761,25 +761,25 @@
       items: 
       - name: What are paginated reports? (Preview)
         href: paginated-reports-report-builder-power-bi.md
-      - name: Paginated reports FAQ
+      - name: Paginated reports FAQ (Preview)
         href: paginated-reports-faq.md
-      - name: Create a paginated report and upload it
+      - name: Create a paginated report and upload it (Preview)
         href: paginated-reports-quickstart-aw.md
-      - name: Get around Report Design View
+      - name: Get around Report Design View (Preview)
         href: paginated-reports-report-design-view.md
-      - name: Enter data directly in a paginated report
+      - name: Enter data directly in a paginated report (Preview)
         href: paginated-reports-enter-data.md
-      - name: Create an embedded data source
+      - name: Create an embedded data source (Preview)
         href: paginated-reports-embedded-data-source.md
-      - name: Create an embedded dataset
+      - name: Create an embedded dataset (Preview)
         href: paginated-reports-create-embedded-dataset.md
-      - name: Create parameters 
+      - name: Create parameters (Preview)
         href: paginated-reports-parameters.md
-      - name: Publish a paginated report
+      - name: Publish a paginated report (Preview)
         href: paginated-reports-save-to-power-bi-service.md
-      - name: View a paginated report
+      - name: View a paginated report (Preview)
         href: paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters
+      - name: Interact with parameters (Preview)
         href: paginated-reports-view-parameters.md
     - name: Other tasks
       items: 
