@@ -669,7 +669,7 @@
         href: service-prepare-data-for-q-and-a.md
       - name: "Create featured questions for Q&A"
         href: service-q-and-a-create-featured-questions.md
-      - name: "Visualization types in Power BI"
+      - name: "Visualization types in Q&A"
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
