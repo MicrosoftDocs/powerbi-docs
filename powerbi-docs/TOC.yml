@@ -448,7 +448,7 @@
     - name: Connect to services
       items: 
       - name: "Connect to services"
-        href: end-user-connect-to-services.md
+        href: service-connect-to-services.md
       - name: "Acumatica"
         href: service-connect-to-acumatica.md
       - name: "Adobe Analytics"
