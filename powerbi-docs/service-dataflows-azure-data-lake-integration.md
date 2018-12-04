@@ -20,7 +20,7 @@ By default, data used with Power BI rests in your organization's Power BI tentan
 ![dataflows in Azure storage](media/service-dataflows-azure-data-lake-integration/dataflows-azure-integration_01.jpg)
 
 > [!NOTE]
-> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## How CDM folders relate to dataflows
 

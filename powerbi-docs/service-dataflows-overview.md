@@ -24,7 +24,7 @@ Power BI introduces **dataflows** to help organizations unify data from disparat
 Data is stored as entities in the [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) in Azure Data Lake Storage Gen2. Dataflows are created and managed in app workspaces by using the Power BI service.  
 
 > [!NOTE]
-> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
  
 **Dataflows** are designed to use the **Common Data Model**, a standardized, modular, extensible collection of data schemas published by Microsoft that are designed to make it easier for you to build, use, and analyze data. With this model, you can go from data sources to Power BI dashboards with nearly zero friction.

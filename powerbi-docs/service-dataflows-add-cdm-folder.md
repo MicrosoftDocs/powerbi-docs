@@ -28,7 +28,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 The following sections describe how to create a dataflow from a CDM folder.
 
 > [!NOTE]
-> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Create a dataflow from a CDM folder
 

@@ -51,7 +51,7 @@ Next, expand the **Advanced** area of the **Create an app workspace** dialog, wh
 Select **Save** to create your new workspace. Any new dataflow created in this workspace now stores its definition file (its Model.json file) and data in your organization's Azure Data Lake Store Gen2 account. 
 
 > [!NOTE]
-> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Update dataflow storage for an existing workspace
 

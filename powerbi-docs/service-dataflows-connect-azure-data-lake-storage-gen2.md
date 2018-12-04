@@ -48,7 +48,7 @@ Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, 
 The following sections walk through the steps ncessary to configure your Azure Data Lake Storage Gen2 account in detail.
 
 > [!NOTE]
-> the dataflows functionality is in preview, and is subject to change and updates prior to general availability.
+> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ### Create the storage account
 
