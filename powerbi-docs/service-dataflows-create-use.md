@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -140,6 +140,10 @@ You can also use the **search bar**, near the top of the window, to quickly find
 
 When you select the entity and then select the **Load** button, the entities appear in the **Fields** pane in **Power BI Desktop**, and appear and behave just like **tables** from any other dataset.
 
+## Using dataflows stored in Azure Data Lake Storage Gen2
+
+Some organizations may want to use their own storage for creation and management of dataflows. You can integrate dataflows with Azure Data Lake Storage Gen2, if you follow the requirements and manage permissions properly. Documentation of all the requirements for this approach can be found beginning with the overview document, [dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
+
 
 ## Troubleshooting data connections
 
@@ -157,6 +161,7 @@ This article described how you can create your own **dataflow** and create a dat
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
 * [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)

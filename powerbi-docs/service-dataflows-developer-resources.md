@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -37,10 +37,15 @@ This article provided information about developer resources for dataflows. For m
 * [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
 * [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 
+For information about CDM development and tutorial resources, see the following:
+* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
+* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+
+
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
 * [Configuring scheduled refresh](refresh-scheduled-refresh.md)
 
-For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+
 

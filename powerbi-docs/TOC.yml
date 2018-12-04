@@ -793,6 +793,14 @@
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
+      - name: "Dataflows and Azure Data Lake integration (Preview)"
+        href: service-dataflows-azure-data-lake-integration.md  
+      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)"
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
+      - name: "Configure workspace dataflow settings (Preview)"
+        href: service-dataflows-configure-workspace-settings.md  
+      - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
+        href: service-dataflows-add-cdm-folder.md                                
   - name: Resources
     items: 
     - name: "Videos"
