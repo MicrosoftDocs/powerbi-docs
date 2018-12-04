@@ -20,7 +20,7 @@ LocalizationGroup: Get started
 
 As part of the [May 3, 2017 Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), Microsoft communicated changes to the free Power BI service effective June 1,2017. These changes included extending access to all data sources, higher workspace storage limits, and higher refresh and streaming rates, making those features equivalent to Power BI Pro.
 
-Also announced was that sharing and collaboration features would be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint, and analyze in Excel with Power BI apps. Export to CSV/Excel and PowerPoint were identified in the May 3 communication as a capability limited to Power BI Pro, but after receiving feedback from the broad user community the strategy evolved to make the capability available to users of the free service as well.
+Also announced was that sharing and collaboration features would be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint, and analyze in Excel with Power BI apps. Export to CSV/Excel and PowerPoint were identified in the May 3 communication as a capability limited to Power BI Pro. However, after receiving feedback from the broad user community, the strategy evolved, and we made the capability available to users of the free service as well.
 
 Beginning June 1, 2017 existing users of the Free service who were active users on or before May 2, 2017 were eligible for a free, 12-month extended trial of Power BI Pro. The offer enabled users to take advantage of the full capabilities of Power BI Pro for a year as a sign of appreciation to the community and to provide users with time to adjust to the changes.
 
@@ -58,7 +58,7 @@ Those active users in the eligibility period, and who are on free licenses, rece
 
 **Can admins restrict a user from activating the Extended Pro Trial?**
 
-No. Admins do not have a way to restrict users from activating the Extended Pro Trial or the in-service 60 day trial of Power BI Pro.
+No. Admins do not have a way to restrict users from activating the Extended Pro Trial or the in-service 60-day trial of Power BI Pro.
 
 ## Next steps
 
