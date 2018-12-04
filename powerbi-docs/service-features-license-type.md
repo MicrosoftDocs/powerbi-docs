@@ -14,28 +14,25 @@ ms.author: mblythe
 LocalizationGroup: Get started
 ---
 
-# Power BI Free vs Pro
+# Power BI service features by license type
 
-Every user within Power BI is either Free or Pro. It is helpful to understand the differences between these two types of users.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-*All users* in the service are either Free or Pro. The main difference between a Free or Pro user is centered around sharing and collaboration. Only Pro users can publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashboards and reports. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
+## Per-user license type comparison
 
-If an app is published, and the app workspace it is for is assigned to Premium capacity, Free users can consume those apps.
-
-## Free vs Pro comparison
-Here is a list of features supported by user type.
+Here is a list of features supported by per-user license type.
 
 |  | Free | Pro |
 | --- | --- | --- |
 | **Connect to 70+ data sources** |![Feature available](media/features-license-type/available.png) |![Feature available](media/features-license-type/available.png) |
 | **Publish to Web** |![Feature available](media/features-license-type/available.png) |![Feature available](media/features-license-type/available.png) |
-| **Peer-to-peer sharing** |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | **Export to PowerPoint, Excel, CSV** |![Feature available](media/features-license-type/available.png) |![Feature available](media/features-license-type/available.png) |
 | **Enterprise distribution** | | |
 | Apps |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | Email subscriptions |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | Embed APIs and controls |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | **Collaboration** | | |
+| Peer-to-peer sharing |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | App workspaces |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | Analyze in Excel, analyze in Power BI Desktop |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 
