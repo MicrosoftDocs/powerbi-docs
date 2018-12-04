@@ -762,7 +762,7 @@
       - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)"
         href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
       - name: "Configure workspace dataflow settings (Preview)"
-        href: service-dataflows-configure-workspace-settings.md  
+        href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
         href: service-dataflows-add-cdm-folder.md                                
     - name: Paginated reports in Power BI
