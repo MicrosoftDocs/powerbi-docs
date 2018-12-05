@@ -1,6 +1,6 @@
 ---
-title: Use the matrix visual in Power BI Desktop
-description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI Desktop
+title: Use the matrix visual in Power BI
+description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2018
+ms.date: 12/05/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# Use the Matrix visual in Power BI Desktop
+# Use the Matrix visual in Power BI
 With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)

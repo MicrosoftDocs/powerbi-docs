@@ -9,7 +9,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 11/24/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations

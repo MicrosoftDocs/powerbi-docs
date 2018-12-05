@@ -92,7 +92,7 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 ### KPI
 - Trend axis
 - Bottom 3,500
-- 
+
 ### Line chart
 See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
