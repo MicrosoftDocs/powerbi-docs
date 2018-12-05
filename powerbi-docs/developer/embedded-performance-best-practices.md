@@ -12,7 +12,7 @@ ms.date: 12/10/2018
 LocalizationGroup: Reports
 ---
 
-# Power BI Embedded Performance Best Practices for Embedded Analytics
+# Performance best practices for embedding analytics with Power BI Embedded
 
 In this article, you can find recommendations to get faster rendering for reports, dashboards, and tiles in your application.
 
@@ -68,3 +68,8 @@ To measure performance, you can use the two events we provide:
 
 > [!Important]
 > Remember that loading time mainly depends on elements relevant to the report and data itself, such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow best practices document to improve the report’s loading time.
+
+## Next Steps
+
+* [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
+* [Power BI Embedded FAQ](embedded-faq.md)
