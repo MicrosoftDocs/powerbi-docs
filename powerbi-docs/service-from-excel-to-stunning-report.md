@@ -1,15 +1,15 @@
 ---
 title: 'From Excel workbook to stunning report in no time'
 description: 'From Excel workbook to stunning report in no time'
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Data from files
 ---

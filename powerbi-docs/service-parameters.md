@@ -1,7 +1,7 @@
 ---
 title: Edit parameter settings in the Power BI service
 description: Query parameters are created in Power BI Desktop but can be reviewed and updated in Power BI service
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/21/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---

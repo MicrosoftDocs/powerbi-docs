@@ -1,7 +1,7 @@
 ---
 title: Tips and tricks for creating reports in Power BI
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
-author: mihart
+author: davidi
 manager: kfile
 ms.reviewer: willthom
 
