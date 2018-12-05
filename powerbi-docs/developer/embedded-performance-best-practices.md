@@ -1,5 +1,5 @@
 ---
-title: Power BI Embedded performance for embedded analytics best practices
+title: Power BI Embedded performance best practices
 description: This article provides guidance for embedded analytics best practices
 author: markingmyname
 ms.author: maghan
@@ -12,7 +12,7 @@ ms.date: 12/10/2018
 LocalizationGroup: Reports
 ---
 
-# Performance best practices for embedding analytics with Power BI Embedded
+#  Power BI Embedded performance best practices
 
 In this article, you can find recommendations to get faster rendering for reports, dashboards, and tiles in your application.
 
