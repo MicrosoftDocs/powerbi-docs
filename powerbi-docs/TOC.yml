@@ -245,10 +245,6 @@
         href: visuals/desktop-slicer-filter-date-range.md      
       - name: "Use grouping and binning"
         href: desktop-grouping-and-binning.md
-      - name: "Ribbon charts"
-        href: visuals/desktop-ribbon-charts.md
-      - name: "Use the new matrix visual"
-        href: visuals/desktop-matrix-visual.md
       - name: "Create Power BI visuals using R"
         href: desktop-r-visuals.md
       - name: "Use R-powered custom visuals"
@@ -291,6 +287,8 @@
         href: visuals/power-bi-visualization-best-practices.md
       - name: "Change the type of visualization in a Power BI report"
         href: visuals/power-bi-report-change-visualization-type.md
+      - name: "Data point limits by visual type"
+        href: visuals/power-bi-data-points.md
       - name: "Getting started with color formatting and axis properties"
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
       - name: "Tips and tricks for color formatting in Power BI"
@@ -333,10 +331,14 @@
         href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
+      - name: "Matrix visual"
+        href: visuals/desktop-matrix-visual.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
         href: visuals/service-r-visuals.md
       - name: "Radial gauge charts in Power BI"
         href: visuals/power-bi-visualization-radial-gauge-charts.md
+      - name: "Ribbon charts"
+        href: visuals/desktop-ribbon-charts.md
       - name: "Scatter charts in Power BI"
         href: visuals/power-bi-visualization-scatter.md
       - name: "High density scatter charts"
