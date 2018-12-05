@@ -63,8 +63,7 @@ To measure performance, you can use the two events we provide:
 1. Loaded: time until report is initialized (user sees no spinny).
 2. Rendered: time until fully report is rendered using actual data. The rendered event is fired each time the report is re-rendered (that is, after applying filters). To measure a report first, make sure you do the calculations in the first raised event.
 
-> [!Note]
-> Cached data is rendered when available, but we don’t have an event for this yet.
+Cached data is rendered when available, but we don’t have an event for this yet.
 
 > [!Important]
 > Remember that loading time mainly depends on elements relevant to the report and data itself, such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow best practices document to improve the report’s loading time.
