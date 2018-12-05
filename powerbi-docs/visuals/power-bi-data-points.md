@@ -1,5 +1,5 @@
 ---
-title: Large datasets
+title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
 manager: kvivek
@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Introduction
+# Data point limits and strategies by visual type
 
 When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
