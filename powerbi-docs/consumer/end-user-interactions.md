@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 10/25/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 
-# Visualization interactions in a Power BI report
+# Visual interactions in a Power BI report
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. 
 
 ![video of visuals interacting](media/end-user-interactions/interactions.gif)
