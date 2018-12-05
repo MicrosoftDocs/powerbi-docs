@@ -61,7 +61,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
    ![Notification icon in Power BI service](media/service-set-data-alerts/powerbi-alert-notifications.png)
 3. Open your Notification center to see the alert details.
    
-    ![read the Alert](media/service-set-data-alerts/powerbi-alert-notfication.png)
+    ![read the Alert](media/service-set-data-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.

@@ -156,5 +156,5 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 Ready to try more?  Here are some great ways to explore Power BI.
 
 > [!div class="nextstepaction"]
-> [Connect to the online services you use](consumer/end-user-connect-to-services.md)
+> [Connect to the online services you use](service-connect-to-services.md)
 

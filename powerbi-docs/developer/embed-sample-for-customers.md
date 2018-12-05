@@ -40,7 +40,7 @@ However, if you choose to set up the environment manually, you can continue belo
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. REgistering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
+You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
 1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
 
@@ -239,7 +239,7 @@ using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
 // You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
+ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();

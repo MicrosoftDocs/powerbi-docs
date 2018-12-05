@@ -542,7 +542,7 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
-            "redirect_url": "/power-bi/consumer/service-connect-to-services",
+            "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
         },
         {
@@ -639,6 +639,26 @@
             "source_path": "powerbi-docs/service-reports-show-data.md",
             "redirect_url": "/power-bi/consumer/end-user-show-data",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-add-page.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-copy-paste-page.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-report-reorder-page.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-copy.md",
+            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",

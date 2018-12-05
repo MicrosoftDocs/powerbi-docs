@@ -91,7 +91,7 @@ You can also check out the YouTube channels for information about "What's new" a
 
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Get started with [Power BI service](consumer/end-user-connect-to-services.md) apps for online services.
+* Get started with [Power BI service](service-connect-to-services.md) apps for online services.
 * Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
 * [Dynamic RLS](developer/embedded-row-level-security.md) now supported for Power BI Embedded.
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.

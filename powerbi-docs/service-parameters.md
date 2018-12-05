@@ -1,27 +1,26 @@
 ---
-title: View and edit dataset parameters settings in Power BI service
+title: Edit parameter settings in the Power BI service
 description: Query parameters are created in Power BI Desktop but can be reviewed and updated in Power BI service
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2018
-ms.author: mihart
+ms.date: 11/21/2018
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# What is a query parameter?
-Query parameters are added in Power BI Desktop by report creators. Parameters allow them to make parts of reports depend on one or more parameter *value*. For example, a report creator may create a parameter that restricts the data to a single countryregion or a parameter that defines acceptable formats for fields like dates, time, and text.
+# Edit parameter settings in the Power BI service
+Report creators add query parameters to reports in Power BI Desktop. Parameters allow them to make parts of reports depend on one or more parameter *values*. For example, a report creator may create a parameter that restricts the data to a single country/region, or a parameter that defines acceptable formats for fields like dates, time, and text.
 
 ![Home tab showing Manage Parameters option in Desktop](media/service-parameters/power-bi-manage-parameters.png)
 
-
 ## Review and edit parameters in Power BI service
 
-Once the parameters are defined in Desktop, when that [report is published to Power BI service](desktop-upload-desktop-files.md), the parameter settings and selections travel with that report. Some parameter settings can be reviewed and edited in Power BI service -- not the parameters that restrict the available data, but the parameters that define and describe acceptable values.
+As a report creator, you define parameters in Desktop. When you [publish that report to Power BI service](desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit some parameter settings in the Power BI service -- not parameters that restrict the available data, but parameters that define and describe acceptable values.
 
 1. In Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
 
@@ -33,7 +32,7 @@ Once the parameters are defined in Desktop, when that [report is published to Po
 
     ![Settings window with Parameters expanded](media/service-parameters/power-bi-settings.png)
 
-    Review the parameter settings and make changes if needed. Greyed out fields are not editable. 
+    Review the parameter settings and make changes if needed. Greyed out fields aren't editable. 
 
 
 ## Next steps
