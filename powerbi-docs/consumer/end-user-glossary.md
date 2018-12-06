@@ -48,8 +48,8 @@ All workspaces in Power BI except for My workspace are now app workspaces. The c
 **AppSource**
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
 
-**ArcGIS for Power BI**
-ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
+**ArcGIS Maps for Power BI**
+ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS Maps for Power BI.
 
 **assign**
 [Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity.  
