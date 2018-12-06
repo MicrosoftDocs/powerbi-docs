@@ -4,7 +4,7 @@ description: All about dashboard tiles in Power BI. This includes tiles that are
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
-
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
