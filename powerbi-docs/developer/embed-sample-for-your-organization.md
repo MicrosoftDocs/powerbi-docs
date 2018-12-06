@@ -218,15 +218,15 @@ To embed your content by using a sample application, follow these steps:
 
     Select **Run** in **Visual Studio**.
 
-        ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+       ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
     Then select **Get Report**.
 
-        ![Select content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+       ![Select content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
     Now you can view the report in the sample application.
 
-        ![View the report in the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+       ![View the report in the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## Embed your content within your application
 
