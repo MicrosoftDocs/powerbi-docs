@@ -65,7 +65,7 @@ You can select a checkbox beside any table to see a preview. You can select one 
 > 
 > 
 
-When you select **Load** the data is loaded into **Power BI Desktop**.
+When you select **Load** the data is loaded into **Power BI Desktop**.  The connector will load data according to the table's default time period.  If you need to customize the time period, [you can setup a custom query](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
