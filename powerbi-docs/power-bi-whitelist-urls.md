@@ -1,5 +1,5 @@
 ---
-title: Power BI URLs
+title: Power BI URLs for whitelisting
 description: This article describes the endpoints that should be reachable for customers using Power BI.
 author: mgblythe
 ms.author: mblythe
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 10/22/2018
 ---
 
-# Power BI URLs
+# Power BI URLs for whitelisting
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI Free vs Pro
-description: Every user within Power BI is either Free or Pro. It is helpful to understand the differences between these two types of users..
+title: Power BI service features by license type
+description: "In the Power BI service, users have defined capabilities based on two types of licenses: per-user (free and Pro) and capacity-based."
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
 
 LocalizationGroup: Get started
