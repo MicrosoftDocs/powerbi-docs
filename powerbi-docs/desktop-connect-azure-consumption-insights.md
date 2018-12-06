@@ -1,14 +1,15 @@
 ---
-title: Connect to Azure Consumption Insights data in Power BI Desktop (Beta)
+title: Connect to Azure Consumption Insights data (Beta)
 description: Easily connect to Azure and gain insights about consumption and usage using Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
