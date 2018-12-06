@@ -39,7 +39,7 @@ More data sources will be coming during the preview period.
 
 ### Create paginated reports with matrix, chart, and free-form layouts
 
-Table reports work well for column-based data, and matrix reports, like cross-tab or PivotTable reports are good for summarized data. Chart reports present data in a graphical format, and free-form *list* reports can present almost anything else, such as invoices. 
+Table reports work well for column-based data. Matrix reports, like cross-tab or PivotTable reports, are good for summarized data. Chart reports present data in a graphical format, and free-form *list* reports can present almost anything else, such as invoices. 
   
 You can start with one of the Report Builder wizards. The Table, Matrix, and Chart wizards walk you through creating the embedded data source connection and embedded dataset. Then you drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
   
