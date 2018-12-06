@@ -1,14 +1,15 @@
 ---
-title: Refresh a dataset created from a Power BI Desktop file on OneDrive or SharePoint Online
+title: Refresh a dataset from OneDrive or SharePoint Online
 description: Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 112/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh
