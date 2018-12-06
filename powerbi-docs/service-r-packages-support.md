@@ -1,14 +1,15 @@
 ---
-title: Learn which R packages are supported for using and creating R scripts in Power BI
+title: Learn which R packages are supported
 description: R packages that are supported and unsupported in Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
