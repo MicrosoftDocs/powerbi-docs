@@ -41,11 +41,11 @@ The following table provides a summary of the differences between shared capacit
 |  | Shared capacity | Power BI Premium capacity |
 | --- | --- | --- |
 | **Refresh rate** |8/day |48/day |
-| **Isolation with dedicated hardware** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
+| **Isolation with dedicated hardware** |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
 | **Enterprise Distribution to** _**all users**_ | | |
-| Apps and sharing |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>1</sup> |
-| Embedded API and controls |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available")<sup>2</sup> |
-| **Publish Power BI reports on-premises** |![](media/service-premium/not-available.png "Not available") |![](media/service-premium/available.png "Available") |
+| Apps and sharing |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
+| Embedded API and controls |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png)<sup>2</sup> |
+| **Publish Power BI reports on-premises** |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> For more information, see [Features by license type](service-features-license-type.md).*  

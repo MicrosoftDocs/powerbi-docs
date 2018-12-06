@@ -22,17 +22,17 @@ These instructions provide two potential options for manually collecting additio
 2. Open the Edge developer tools by pressing F12.
 3. That will bring up the Developer Tools window: 
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Developer tools](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 4. Switch to the Network tab. It will list traffic it has already captured. 
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Edge network tab](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 5. You can browse within the window and reproduce any problem you may be encountering. You can hide and show the developer tools window at any time during the session by pressing F12.
 6. To stop the capture, you can select the red square on the network tab of the developer tools area.
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Stop the capture](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 7. Select on the diskette icon to **Export as HAR**
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Export the file](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 8. Provide a file name and save the HAR file.
    
     The HAR file will contain all the information about network requests between the browser window and Power BI.  This will include the activity IDs for each request, the precise timestamp for each request, and any error information returned to the client.  This trace will also contain the data used to populate the visuals shown on the screen.

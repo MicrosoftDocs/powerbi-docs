@@ -19,7 +19,7 @@ Power BI is now supported for Office 365 Dedicated customers.  If you are an O36
 ## Groups
 When selecting **Members** or **Calendar** in the Group context menu, you will be redirected to the Mail app instead.  **Files** and **Conversations** work as expected.
 
-![](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
+![Group from Power BI](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
 
 ## iPhone App - sign in with vanity domain leads to error
 When you sign in, on the iPhone app, using a login with a vanity domain, you may encounter an error.
@@ -29,7 +29,7 @@ When you sign in, on the iPhone app, using a login with a vanity domain, you may
 
 To work around this issue, sign in with the email address listed when you click on the user icon within the Power BI service instead of with the vanity domain.
 
-![](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
+![Sign in email](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -70,13 +70,13 @@ You can search the logs by date range using the **Start date** and **End date** 
 
 An error is displayed if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Search by date](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## Search the audit logs by users
 
 You can search for audit log entries for activities performed by specific users. To do this, enter one or more user names in the **Users** field. The user name looks like an email address; it's the account that users log into Power BI with. Leave this box blank to return entries for all users (and service accounts) in your organization.
 
-![Search by date](media/service-admin-auditing/search-audit-log-by-user.png)
+![Search by users](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## View search results
 

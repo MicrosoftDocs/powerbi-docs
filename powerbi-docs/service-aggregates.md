@@ -28,11 +28,11 @@ In the example below:
 - **Units Sold** and **Manufacturing Price** are columns that contain numeric data
 -  **Segment**, **Country**, **Product**, **Month**, and **Month Name** contain categorical data
 
-   ![](media/service-aggregates/power-bi-aggregate-chart.png)
+   ![Sample data set](media/service-aggregates/power-bi-aggregate-chart.png)
 
 When creating a visualization in Power BI, numeric fields will be aggregated (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***, "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***. Some numeric fields are referred to as **measures**. It's easy to identify measures in the Power BI report editor -- measures are shown with the ∑ symbol in the Fields list. For more information, see [The report editor... take a tour](service-the-report-editor-take-a-tour.md).
 
-![](media/service-aggregates/power-bi-aggregate-fields.png)
+![Fields list](media/service-aggregates/power-bi-aggregate-fields.png)
 
 
 
@@ -48,18 +48,18 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
 1. Create a chart that uses a category and a measure. In this example, we're using Units Sold by Product.  By default, Power BI creates a chart that sums the units sold (measure in the Value well) for each product (category in the Axis well).
 
-   ![](media/service-aggregates/power-bi-aggregate-sum.png)
+   ![Sum aggregation](media/service-aggregates/power-bi-aggregate-sum.png)
 
 2. In the Visualizations pane, right-click the measure, and select the aggregate type you need. In this case, we're selecting Average. If you don't see the aggregation you need, see "Considerations and troubleshooting" below.  
    
-   ![](media/service-aggregates/power-bi-aggregate-average.png)
+   ![Average aggregation](media/service-aggregates/power-bi-aggregate-average.png)
    
    > [!NOTE]
    > The options available in the dropdown will vary depending on 1) the field selected and 2) the way that field was categorized by the dataset owner.
    > 
 3. Your visualization is now using aggregated by average.
 
-   ![](media/service-aggregates/power-bi-aggregate-average2.png)
+   ![Average of units sold](media/service-aggregates/power-bi-aggregate-average2.png)
 
 ##    Ways to aggregate your data
 
@@ -106,17 +106,17 @@ You can also aggregate a non-numeric field. For example, if you have a product n
 
 1. In this example, we've dragged the **Product** field into the Values well. The Values well is typically used for numeric fields. Power BI recognizes that this is a text field, sets the aggregate to **Do not summarize**, and presents us with a single-column table.
    
-   ![](media/service-aggregates/power-bi-aggregate-value.png)
+   ![Product field in the values well](media/service-aggregates/power-bi-aggregate-value.png)
 2. If we change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different products. In this case, there are 4.
    
-   ![](media/service-aggregates/power-bi-aggregates-count.png)
+   ![Count distinct of products](media/service-aggregates/power-bi-aggregates-count.png)
 3. And if we change the aggregation to **Count**, Power BI counts the total number. In this case, there are 7 entries for **Product**. 
    
-   ![](media/service-aggregates/power-bi-aggregate-count2.png)
+   ![Count of products](media/service-aggregates/power-bi-aggregate-count2.png)
 
 4. By dragging the same field (in this case **Product**) into the Values well, and leaving the default aggregation **Do not summarize**, Power BI breaks down the count by product.
 
-   ![](media/service-aggregates/power-bi-aggregate-final.png)
+   ![Product and count of products](media/service-aggregates/power-bi-aggregate-final.png)
 
 ## Considerations and Troubleshooting
 Q:  Why don't I have a **Do not summarize** option?

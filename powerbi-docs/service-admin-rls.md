@@ -36,7 +36,7 @@ To manage security on your data model, you will want to do the following.
 1. Select the **ellipse (…)** for a dataset.
 2. Select **Security**.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Apply security filter in both directions](media/service-admin-rls/rls-security.png)
 
 This will take you to the RLS page for you to add members to a role you created in Power BI Desktop. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option. 
 
@@ -48,17 +48,17 @@ You can only create or modify roles within Power BI Desktop.
 
 You can add a member to the role by typing in the email address, or name, of the user, security group or distribution list you want to add. This member has to be within your organization. You cannot add Groups created within Power BI.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Add a member](media/service-admin-rls/rls-add-member.png)
 
 You can also see how many members are part of the role by the number in parenthesis next to the role name, or next to Members.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Members in role](media/service-admin-rls/rls-member-count.png)
 
 ### Remove members
 
 You can remove members by selecting the X next to their name. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Remove member](media/service-admin-rls/rls-remove-member.png)
 
 ## Validating the role within the Power BI service
 
@@ -67,15 +67,15 @@ You can validate that the role you defined is working correctly by testing the r
 1. Select the **ellipsis (...)** next to the role.
 2. Select **Test data as role**
 
-![](media/service-admin-rls/rls-test-role.png)
+![Test as role](media/service-admin-rls/rls-test-role.png)
 
 You will then see reports that are available for this role. Dashboards are not presented in this view. In the blue bar above, you will see what is being applied.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Now viewing as <role>](media/service-admin-rls/rls-test-role2.png)
 
 You can test other roles, or combination of roles, by selecting **Now viewing as**.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Test other roles](media/service-admin-rls/rls-test-role3.png)
 
 You can choose to view data as a specific person, or you can select a combination of available roles to validate they are working. 
 
@@ -90,7 +90,7 @@ If you publish your Power BI Desktop report to an app workspace within the Power
 > [!WARNING]
 > If you have configured the app workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Group settings](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 
