@@ -10,6 +10,7 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 

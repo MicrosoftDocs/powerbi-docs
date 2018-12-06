@@ -10,6 +10,7 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Get started
 ---

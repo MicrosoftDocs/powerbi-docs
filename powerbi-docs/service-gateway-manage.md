@@ -10,6 +10,7 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Gateways
 ---

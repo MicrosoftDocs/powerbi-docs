@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 
 LocalizationGroup: Premium
 ---

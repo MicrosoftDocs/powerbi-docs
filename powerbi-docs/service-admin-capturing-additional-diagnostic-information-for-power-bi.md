@@ -10,6 +10,7 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
 ---
