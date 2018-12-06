@@ -1,15 +1,15 @@
 ---
 title: Using Q&A in Power BI Desktop
 description: You can now use natural language queries in Power BI Desktop, using Q&A
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
@@ -21,9 +21,6 @@ To enable Q&A to successfully interpret the large collection of questions it's c
 > [!NOTE]
 > Q&A is only available when working with a model that contains **imported** data. Live connections to SSAS and DirectQuery models are not supported.
 >
->
-
-> [!NOTE]
 > Q&A requires the following C runtime update if you're using a version of Windows prior to Windows 10. You can try installing important updates from Windows Update or manually install the required component from Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
