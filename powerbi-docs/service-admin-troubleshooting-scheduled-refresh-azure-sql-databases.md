@@ -10,6 +10,7 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
 ---
@@ -22,7 +23,7 @@ While setting up scheduled refresh for Azure SQL Database, if you get an error w
 2. Go to the Azure SQL server you are configuring refresh for
 3. Turn on 'Windows Azure Services' in the allowed services section
 
-![](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
+![Azure allowed services](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
