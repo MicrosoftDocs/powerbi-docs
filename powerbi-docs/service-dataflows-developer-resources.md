@@ -25,7 +25,7 @@ The following developer resources are available for working with Power BI datafl
 
 | Dataflow resource | Description |
 | --- | --- |
-| [Power BI dataflow REST API Reference](http://download.microsoft.com/download/5/4/0/540DAA5B-6760-4BDF-A089-8C3DBA8BB4DD/Power%20BI%20dataflow%20REST%20API%20reference.docx)    | A complete reference guide to the dataflow REST API.|
+| [Power BI dataflow REST API Reference](https://go.microsoft.com/fwlink/?linkid=2047629)    | A complete reference guide to the dataflow REST API.|
 
 
 ## Next Steps
