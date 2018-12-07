@@ -148,7 +148,7 @@ Another way to filter on multiple fields is by creating a calculated column that
 
 For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name can't have any spaces. Here is the DAX formula for that column.
 
-TerritoryChain = [Territory] & " - " & [Chain]
+TerritoryChain = [Territory] & "-" & [Chain]
 
 Publish the report to Power BI service and then use the URL query string to filter to display data for only Lindseys stores in NC.
 
