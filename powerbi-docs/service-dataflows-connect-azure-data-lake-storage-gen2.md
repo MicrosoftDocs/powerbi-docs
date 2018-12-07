@@ -108,9 +108,11 @@ To find your tenant applications, follow these steps:
 
 7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
-8. For each of the 3 Object IDs collected in step 5, Assign **Read**,**Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
+8. For each of the 2 Power BI Object IDs collected in step 5, Assign **Read**,**Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
 
-9. In addition, for the **Other**, Assign **Execute** Access and Default ACLs aswell.
+9. For the Power Query Online Object ID collected in step 5, Assign **Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
+
+10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs aswell.
 
 
 ## Connect your Azure Data Lake Storage Gen2 to Power BI
