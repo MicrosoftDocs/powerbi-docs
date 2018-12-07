@@ -8,7 +8,7 @@ ms.component: powerbi-service
 ms.topic: landing-page
 ms.date: 11/07/2018
 ms.author: mihart
-layout: landingpage
+layout: LandingPage
 
 LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
