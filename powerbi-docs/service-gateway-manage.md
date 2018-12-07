@@ -1,5 +1,5 @@
 ---
-title: "Manage a gateway for Power BI"
+title: "Manage a Power BI on-premises gateway"
 description: Learn how to manage a gateway so you can connect to on-premises data in Power BI.
 author: mgblythe
 manager: kfile
@@ -10,11 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Gateways
 ---
 
-# Manage a Power BI gateway
+# Manage a Power BI on-premises gateway
 
 After you [install a Power BI data gateway](service-gateway-install.md), you manage it based on your requirements. In this topic, you learn how to: add and remove data sources and users; restart a gateway; and migrate, restore, take over, and remove a gateway. 
 

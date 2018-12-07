@@ -1,6 +1,6 @@
 ---
 title: "What are paginated reports in Power BI Premium? (Preview)"
-description: Paginated reports are reports that can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
+description: Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
 
 ---
 # What are paginated reports in Power BI Premium? (Preview)
-Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. Paginated reports are reports designed to be printed or shared. They're called "paginated" because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. Report Builder is the standalone tool for authoring paginated reports. 
+Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. They're called "paginated" because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. Report Builder is the standalone tool for authoring paginated reports. 
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers.
 
@@ -39,7 +39,7 @@ More data sources will be coming during the preview period.
 
 ### Create paginated reports with matrix, chart, and free-form layouts
 
-Create table reports for column-based data, matrix reports (like cross-tab or PivotTable reports) for summarized data, chart reports for graphical data, and free-form *list* reports for anything else, such as invoices. 
+Table reports work well for column-based data. Matrix reports, like cross-tab or PivotTable reports, are good for summarized data. Chart reports present data in a graphical format, and free-form *list* reports can present almost anything else, such as invoices. 
   
 You can start with one of the Report Builder wizards. The Table, Matrix, and Chart wizards walk you through creating the embedded data source connection and embedded dataset. Then you drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
   
@@ -62,7 +62,7 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 Here are some other features that aren't supported in the initial release:
 
-- Pinning report pages or visuals to Power BI dashboards.
+- Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
 - Interactive features such as document maps and show/hide buttons.
 - Subreports and drillthrough reports.
 - Subscriptions.
