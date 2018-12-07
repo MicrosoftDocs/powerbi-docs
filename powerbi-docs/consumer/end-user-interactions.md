@@ -1,14 +1,15 @@
 ---
-title: Understand how visuals interact in a report (for report consumers)
+title: Understand how visuals interact in a report
 description: Documentation for Power BI end users that explains how visuals interact on a report page. 
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/25/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Reports

@@ -1,15 +1,16 @@
 ---
-title: Drill mode in a visualization in Power BI
+title: Drill down and drill up in a visualization
 description: This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/26/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -22,8 +23,8 @@ When a visual has a hierarchy, you can drill down to reveal additional details. 
 You can add hierarchies to reports you own, but not to those shared with you.
 Not sure which Power BI visualizations contain a hierarchy?  Hover over a visualization and if you see these drill controls in the top corners, your visualization has a hierarchy.
 
-![](./media/end-user-drill/power-bi-drill-icon4.png)  ![](./media/end-user-drill/power-bi-drill-icon2.png)  ![](./media/end-user-drill/power-bi-drill-icon3.png)
-![](./media/end-user-drill/power-bi-drill-icon5.png) ![](./media/end-user-drill/power-bi-drill-icon6.png)  
+![drill down one level](./media/end-user-drill/power-bi-drill-icon4.png)  ![turn drill down on and off](./media/end-user-drill/power-bi-drill-icon2.png)  ![drill down all fields at once icon](./media/end-user-drill/power-bi-drill-icon3.png)
+![drill up icon](./media/end-user-drill/power-bi-drill-icon5.png) ![expand down icon](./media/end-user-drill/power-bi-drill-icon6.png)  
 
 Dates are an unique type of hierarchy. When you add a date field to a visualization, Power BI automatically adds a time hierarchy that contains year, quarter, month, and day. For more information see [Visual hierarchies and drill-down behavior](../guided-learning/visualizations.yml?tutorial-step=18) or watch the video below.
 
@@ -40,7 +41,7 @@ Dates are an unique type of hierarchy. When you add a date field to a visualizat
    
 2. To follow along, [open the Retail Analysis sample](../sample-datasets.md) and create a treemap that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  The treemap has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, and so on. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
    
-   ![](media/end-user-drill/power-bi-hierarcy-list.png)
+   ![Select "Territory"](media/end-user-drill/power-bi-hierarcy-list.png)
 
 2. Understanding how the various drill icons work together can be confusing, so let's filter the treemap to show only 2 of the smaller territories: **KY** and **TN**. Select the treemap and under **Visual level filters** expand **Territory** and select **KY** and **TN**.
 
@@ -63,7 +64,7 @@ You have several options for accessing the drill down, drill up, and expand feat
 
 - From the Power BI menu bar, select the **Explore** button.
 
-   ![](media/end-user-drill/power-bi-explore.png)
+   ![Selecting Explore displays drill icons and options](media/end-user-drill/power-bi-explore.png)
 
 ## Drill pathways
 ### Drill down
@@ -93,7 +94,7 @@ You can also choose whether to drill down or expand on one field at a time or on
 
     ![double drill icon](./media/end-user-drill/power-bi-drill-down2.png)
 
-3. To drill back up, select the up arrow in the upper-left corner of the visualization ![](./media/end-user-drill/power-bi-drill-icon5.png).
+3. To drill back up, select the up arrow in the upper-left corner of the visualization ![drill up one level icon](./media/end-user-drill/power-bi-drill-icon5.png).
 
 
 ## Drill down one field at a time
@@ -101,17 +102,17 @@ This method uses the drill down icon that appears in the top right corner of the
 
 1. Select the drill down icon to turn it on ![drill down turned on](./media/end-user-drill/power-bi-drill-icon2.png). Now you have the option of drilling down ***one field at a time***. 
    
-   ![](media/end-user-drill/power-bi-drill-icon-new.png)
+   ![arrow pointing at drill down on/off icon](media/end-user-drill/power-bi-drill-icon-new.png)
 
    If you don't turn on drill down, selecting a visual element (such as a bar or bubble or leaf) will not drill down but will instead cross-filter the other charts on the report page.
 
 2. Select the *leaf* for **TN**. Your treemap now displays all the cities in Tennessee that have a store. 
 
-    ![](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![treemap shows data for Tennesee only](media/end-user-drill/power-bi-drill-down-one1.png)
 
 2. At this point you can continue drilling down for Tennesee or you can drill down for a particular Tennesee city or you can expand instead (see **Expand all fields at once**, below). Let's continue to drill down one field at a time.  Select **Knoxville, TN**. Your treemap now displays the postalcode for your store in Knoxville. 
 
-   ![](media/end-user-drill/power-bi-drill-down-one2.png)
+   ![treemap only showing 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
     Notice that the title changes as you drill down and back up again.  
 
@@ -124,7 +125,7 @@ Having a treemap that shows us only a postalcode isn't very informative.  So let
 
 2. To see all 4 hierarchy levels of data for Tennesee, select the drill up arrow until you reach the second level, **Total units this year by territory and city**, of your treemap. 
 
-    ![](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![treemap showing all data for Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Make sure drill down is still turned on ![drill down turned on](./media/end-user-drill/power-bi-drill-icon2.png) , and select the *expand down* icon ![expand down icon](./media/end-user-drill/power-bi-drill-icon6.png). Your treemap now shows some additional detail; instead of only showing city and state it now also shows us postalcode. 
@@ -176,12 +177,12 @@ For this example, follow along with the [Retail Analysis sample](../sample-datas
 
 Even though the Axis data field is **Month**, it still creates a **Year** category in the **Axis** well. This is because Power BI provides the full DateTime structure for all the values it reads. The top of the hierarchy shows data for the year.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
+![Single bar showing data grouped by year](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
 
 With Drill Down mode on, click the bar in the chart to go down one level of the hierarchy. You will see three bars for the data of the quarters available. 
 Then from the upper left icons, choose **Expand all down one level of the hierarchy**. Then do that again to get to the lowest level of the hierarchy, that shows results for each month.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
+![bar chart to see bar per month](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
 
 Apart from the visualization, we can see the hierarchy reflected in the data rendered for each report. The following table shows the results of **Show Data** in a report drilling down from a single month or all months. 
 
@@ -190,8 +191,8 @@ Notice that the data is the same for quarter and year reports, but after you dri
 
 |Expand mode|Year|Quarter|Month|Day|
 | ---|:---:|:---:|:---:|---|
-|Single|![](./media/end-user-drill/power-bi-hierarchical-year.png)|![](media/end-user-drill/power-bi-hierarchical-quarter.png)|![](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![](media/end-user-drill/power-bi-hierarchical-one-day.png)|
-|All|![](./media/end-user-drill/power-bi-hierarchical-year.png)|![](media/end-user-drill/power-bi-hierarchical-quarter.png)|![](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![](media/end-user-drill/power-bi-hierarchical-all-day.png)|
+|Single|![single year](./media/end-user-drill/power-bi-hierarchical-year.png)|![single quarter](media/end-user-drill/power-bi-hierarchical-quarter.png)|![single month](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![single day](media/end-user-drill/power-bi-hierarchical-one-day.png)|
+|All|![all years](./media/end-user-drill/power-bi-hierarchical-year.png)|![all quarters](media/end-user-drill/power-bi-hierarchical-quarter.png)|![all months](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![all days](media/end-user-drill/power-bi-hierarchical-all-day.png)|
 
 
 ### Hierarchical category data
@@ -200,26 +201,26 @@ A good example of this is location data. Consider a table in a data source whose
 
 For this example, follow along with the [Retail Analysis sample](../sample-datasets.md). Create a stacked column chart visualization that looks at **Total Units This Year** (Values) by **Territory**, **City**, **PostalCode**, and **Name** (Group).  
 
-![](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
+![bar chart showing Total units this year by territory](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
 
 With Drill Down mode on, from the upper left icons, choose **Expand all down one level of the hierarchy** three times.
 You should be at the lowest level of the hierarchy, which shows the results for Territory, City, and Postal Code.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
+![bar chart showing lowest level of the hierarchy, most detail](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
 
 Apart from the visualization, we can see the hierarchy reflected in the data rendered for each report. The following table shows the results of **Show Data** in a report drilling down for a single territory or all territories. As you drill down, you can see how the single report gets more specific and the "all territories" report has more data.
 
 
 | Expand mode|Territory|City|Postal|Name|
 | ---|:---:|:---:|:---:|---|
-|Single|![](./media/end-user-drill/power-bi-hierarchical-territory.png)|![](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|All|![](./media/end-user-drill/power-bi-hierarchical-territory.png)|![](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Single|![single territory](./media/end-user-drill/power-bi-hierarchical-territory.png)|![single city](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![single postal code](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![single name](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
+|All|![all territories](./media/end-user-drill/power-bi-hierarchical-territory.png)|![all cities](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![all postal codes](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![all names](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
 
 ## Considerations and limitations
 * If adding a date field to a visualization does not create a hierarchy, it may be that the "date" field is not actually saved as a date. If you own the dataset, open it in *Data* view in Power BI Desktop, select the column that contains the date, and in the Modeling tab, change the **Data Type** to **Date** or **Date/Time**. If the report has been shared with you, contact the owner to request the change.  
   
-  ![](media/end-user-drill/power-bi-change-data-type2.png)
+  ![select data view and, in top right, see Date Type](media/end-user-drill/power-bi-change-data-type2.png)
 
 ## Next steps
 [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)

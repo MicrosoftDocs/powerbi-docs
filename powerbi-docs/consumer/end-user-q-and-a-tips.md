@@ -1,14 +1,15 @@
 ---
-title: Tips and tricks for asking questions with Q&A in Power BI
+title: Tips and tricks for asking questions with Q&A
 description: Tips and tricks for asking questions with Q&A in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data

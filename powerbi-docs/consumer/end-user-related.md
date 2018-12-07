@@ -1,15 +1,16 @@
 ---
-title: View related content in Power BI service
+title: View related content from dashboards, reports, and datasets
 description: Navigation made easier, view related content in dashboards, reports, and datasets
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -82,7 +83,7 @@ In a workspace, select the **Datasets** tab and locate the **View related** icon
 
 Select the icon to open the **Related content** pane.
 
-![](media/end-user-related/power-bi-datasets.png)
+![Related content pane opens on top of Power BI content view](media/end-user-related/power-bi-datasets.png)
 
 From here, you can take direct action on the related content.  For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashoard with others](../service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../service-analyze-in-excel.md), [rename](../service-rename.md), or [get insights](end-user-insights.md).  
 
