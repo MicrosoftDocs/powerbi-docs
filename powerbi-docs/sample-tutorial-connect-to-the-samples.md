@@ -13,7 +13,7 @@ ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-# The Power BI samples
+#  Connect to the samples in the Power BI service
 
 This tutorial teaches how to: 
 - import a sample content pack, add it to Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
