@@ -163,7 +163,7 @@ It's important to understand that differences that can occur when comparing usag
 
 * Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
 * Certain types of views are not inclded in usage metrics, as described earlier in this article.
-* Usage metrics may sometimes overcount activities, in situations where the lcient refreshes without the need for a request being sent back to the Power BI service.
+* Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
 
 
 In addition to potential differences between usage metrics and audit logs, the following questions and answers about usage metrics may be helpful for users and administrators:
