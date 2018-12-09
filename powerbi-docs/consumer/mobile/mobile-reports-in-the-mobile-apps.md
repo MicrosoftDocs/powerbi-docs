@@ -102,6 +102,16 @@ When you drill through, the back button takes you back to the previous report pa
 
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
 
+## Show Data and Copy values
+
+By selecting the Menu options ellipsis (...) in the upper-right corner of a visualization in a phone report, and selecting Show Data, you can see the data underlying a visualization.
+
+![Power BI mobile show data menu option](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.jpg)
+
+Long tapping on a cell in the table presented will pop the native select and copy menu, so you will be able to choose the copy data from the table (or the entire table).
+
+![Power BI mobile drill through report](./media/mobile-reports-in-the-mobile-apps/copy-data-table.jpg)
+
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report optimized for phones](../../desktop-create-phone-report.md)
