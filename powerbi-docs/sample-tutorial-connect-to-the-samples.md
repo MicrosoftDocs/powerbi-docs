@@ -16,8 +16,8 @@ LocalizationGroup: Samples
 #  Connect to the samples in the Power BI service
 
 This tutorial teaches how to: 
-- import a sample content pack, add it to Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
--  open a sample .pbix file in Power BI Desktop.
+- Import a sample content pack, add it to Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
+- Open a sample .pbix file in Power BI Desktop.
 
 If you'd like more background first, we recommend starting with the article [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
 
