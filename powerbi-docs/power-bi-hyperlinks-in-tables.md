@@ -1,6 +1,6 @@
 ---
 title: Add hyperlinks to a table
-description: use Power BI Desktop to create hyperlinks. Then use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes.
+description: Use Power BI Desktop to create hyperlinks. Then use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -18,7 +18,7 @@ This topic teaches you how to use Power BI Desktop to create hyperlinks. Then us
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
-> **NOTE**:
+> [!NOTE]
 > Hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
 > 
 > 
@@ -39,8 +39,8 @@ The procedure for adding a hyperlink depends on whether you've imported the data
 
     ![Blue and underlined links](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
-    > **NOTE**: The URLS must start with **http:// , https://** or **www**.
-    > 
+    > [!NOTE]
+    > The URLS must start with **http:// , https://** or **www**.
     >
    
 1. If you don't want to display a long URL in a table, you can display a hyperlink icon  ![Hyperlink icon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
@@ -70,8 +70,8 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
    ![PowerPivot Advanced tab](media/power-bi-hyperlinks-in-tables/createhyperlinkinpowerpivot3.png)
 4. Place your cursor in the column that contains the URLs that you'd like to turn into hyperlinks in Power BI tables.
    
-   > **NOTE**: The URLS must start with **http:// , https://** or **www**.
-   > 
+   > [!NOTE]
+   > The URLS must start with **http:// , https://** or **www**.
    > 
 5. In the **Reporting Properties** group, select the **Data Category** dropdown and choose **Web URL**. 
    
