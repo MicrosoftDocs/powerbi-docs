@@ -44,15 +44,15 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 | --- | --- | --- |
 | Pages |One page |One or more pages |
 | Data sources |One or more reports and one or more datasets per dashboard |A single dataset per report |
-| Available in Power BI Desktop |No |Yes, ***creators*** can build and view reports in Desktop |
+| Available in Power BI Desktop |No | Can build and view reports in Power BI Desktop |
 | Subscribe |Can subscribe to a dashboard |Can subscribe to report pages |
 | Filtering |Can't filter or slice |Many different ways to filter, highlight, and slice |
 | Featured |Can set one dashboard as your "featured" dashboard |Can't create a featured report |
 | Favorite | Can set dashboards as *favorites* | Can set reports as *favorites*
 | Set alerts |Available for dashboard tiles in certain circumstances |Not available from reports |
-| Natural language queries |Available in dashboards | Available in reports |
+| Natural language queries (Q&A) |Available in dashboards | Available in reports |
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values. |
-| Customization |No |In Reading view you can publish, embed, filter, export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  |
+
 
 ## Next steps
 * Get comfortable with dashboards by taking a tour of one of our [sample dashboards](sample-tutorial-connect-to-the-samples.md).
