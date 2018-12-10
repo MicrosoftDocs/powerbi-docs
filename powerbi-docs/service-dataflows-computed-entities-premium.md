@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -73,16 +73,21 @@ And that's it - the transformation is performed on the data in the dataflow that
 
 It's important to note that if you remove the workspace from Power BI Premium capacity, the associated dataflow will no longer refresh. 
 
+When working with dataflows specifically created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. For more information, see [connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+In addition, linked entities is not available for dataflows that are created from CDM folders. See [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
 
 ## Next Steps
 
 This article described computed entities and dataflows available in the Power BI service. Here are some more articles that might be useful.
 
-
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
 * [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Configure workspace dataflow settings (Preview)](service-dataflows-configure-workspace-storage-settings.md)
+* [Add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md)
+* [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
