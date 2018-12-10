@@ -122,8 +122,7 @@ To find your tenant applications, follow these steps:
 
 10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
 
-   ![last, for other assign execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
-
+    ![last, for other assign execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
 ## Connect your Azure Data Lake Storage Gen2 to Power BI
 
@@ -155,8 +154,9 @@ By default, dataflow definition and data files are stored in the storage provide
 
 To grant storage assignment permissions, go to the **Dataflow settings (Preview)** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
 
-That's it. The Power BI workspace admins can now assign workflows to the file system you created.
+![Allow admins to assign workspaces](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 
+That's it. The Power BI workspace admins can now assign workflows to the file system you created.
 
 
 ## Considerations and limitations
