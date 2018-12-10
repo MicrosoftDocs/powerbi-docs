@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -94,7 +94,7 @@ You can also format these elements for filter cards, depending on if they're app
 
     ![Select the Format icon](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Expand **Filter pane** to set color for the background, font, icon, and left border, to complement the report page.
+1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
 
     ![Expand Filter pane](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

@@ -1,14 +1,15 @@
 ---
-title: Analyze in Excel
+title: Analyze in Excel for Power BI
 description: Learn about how to analyze Power BI datasets in Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Reports
