@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/10/2018
 ms.author: mblythe
 
 LocalizationGroup: Premium
@@ -18,7 +18,7 @@ LocalizationGroup: Premium
 
 As a Power BI administrator, you might need to restart a Premium capacity. This article explains how to restart a capacity and addresses several questions about restart and performance.
 
-## Why does Power BI provide this option? 
+## Why does Power BI provide this option?
 
 Power BI gives users the ability to perform complex analyses on huge amounts of data. Unfortunately, users can cause performance issues by overloading the Power BI service with jobs, writing overly complex queries, creating circular references, and so on.
 
@@ -28,7 +28,7 @@ Power BI is constantly improving in how it protects Premium capacity users again
 
 ## Is the restart process safe? Will I lose any data?
 
-All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. Restarting a capacity does cause ongoing scheduled refreshes to stop and restart. Incomplete ad-hoc refreshes stop and won't be restarted. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
+All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. When you restart a capacity, all ongoing scheduled and ad-hoc refreshes are stopped. Refreshes are restarted when the capacity is available. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
 
 ## How do I restart a capacity?
 
@@ -46,7 +46,7 @@ Follow these steps to restart a capacity.
 
     ![Confirm restart](media/service-admin-premium-restart/confirm-restart.png)
 
-## How can I prevent issues from happening in the future? 
+## How can I prevent issues from happening in the future?
 
 The best way to prevent issues is to educate users about efficient data modeling. For more information, see our [training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2170).
 
