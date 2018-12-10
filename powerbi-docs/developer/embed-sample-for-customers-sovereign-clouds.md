@@ -1,18 +1,20 @@
 ---
-title: Using embedded analytics to embed Power BI content in your application for for government and sovereign clouds
+title: Embedded analytics to embed Power BI content in your application for for government and sovereign clouds
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 11/30/2018
+ms.custom: seodec18
+ms.date: 12/10/2018
 ---
 
 # Tutorial: Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
 
-Learn how to embed a dashboard, tile, or report, into your web applications using the Power BI .NET SDK along with the Power BI JavaScript API when integrating data for your customers.
+Learn how to embed analytical content within your business process applications for the sovereign cloud. You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
 
 Power BI also supports sovereign (private) clouds.
 
@@ -127,7 +129,7 @@ Register your application with Azure AD to make REST API calls. For more informa
 
 * Power BI for China cloud - https://app.powerbi.cn/apps
 
-If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you would use the **applicationId** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
+If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
 
 ## Step 2 - get an access token from Azure AD
 
@@ -222,7 +224,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### Create the embed token
 
-Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you are embedding. Any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.

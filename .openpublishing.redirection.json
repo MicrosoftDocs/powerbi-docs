@@ -181,6 +181,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/powerbi-mobile-android-kpis-mobile-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
             "redirect_document_id": true
