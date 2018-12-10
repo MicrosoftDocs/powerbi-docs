@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI content into an application for your customers
-description: Learn how to integrate, or embed, a report, dashboard or tile into a web app using the Power BI APIs for your customers.
+title: Using embedded analytics to embed Power BI content in your application for your customers
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 10/17/2018
+ms.date: 11/30/2018
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -34,7 +34,7 @@ To get started, you need a **Power BI Pro** account (this account is your **mast
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
 However, if you choose to set up the environment manually, you can continue below.
 
@@ -59,11 +59,11 @@ You register your application with Azure Active Directory to allow your applicat
 
 ### Apply permissions to your application within Azure Active Directory
 
-Enable additional permissions for your application, in addition to what was provided on the app registration page. Sign in with the *master* account that you are using for embedding. The master account needs to be a global admin account.
+Enable additional permissions for your application, including what was provided on the app registration page. Sign in with the *master* account that you're using for embedding. The master account needs to be a global admin account.
 
 ### Use the Azure Active Directory portal
 
-1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
+1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you're using for embedding.
 
     ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -101,7 +101,7 @@ Enable additional permissions for your application, in addition to what was prov
 
 ### Create an app workspace
 
-If you are embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. The *master* account must be an admin of the app workspace.
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. The *master* account must be an admin of the app workspace.
 
 1. Start by creating the workspace. Select **workspaces** > **Create app workspace**. In Create app workspace, place the content that your application needs to access.
 
@@ -111,7 +111,7 @@ If you are embedding reports, dashboards, or tiles for your customers, then you 
 
     ![Name Workspace](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
-3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. If you choose **Private**, this means only members of the workspace can see its contents.
 
     ![Private/Public](media/embed-sample-for-customers/embed-sample-for-customers-022.png)
 
@@ -208,9 +208,9 @@ Follow these steps to start embedding your content using a sample application.
 
 Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
-Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It is required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
+Embedding for your customers within your application requires you to get an **access token** for your master account from **Azure AD**. It's required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application using **app owns data** before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
-To create the Power BI Client with your **access token**, you want to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). This is done by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
+To create the Power BI Client with your **access token**, you want to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -219,7 +219,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It is used to call Power BI APIs.
+// Create a Power BI Client object. it's used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -232,7 +232,7 @@ You can use the Power BI client object to retrieve a reference to the item you w
 
 Here is a code sample of how to retrieve the first report from a given workspace.
 
-*A sample of getting a content item whether it is a report, dashboard, or tile that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -247,7 +247,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### Create the embed token
 
-An embed token needs to be generated which can be used from the JavaScript API. The embed token is specific to the item you are embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
+Generated an embed token, which can be used from the JavaScript API. The embed token is specific to the item you're embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
 Here is a sample of adding an embed token for a report to your application.
 
@@ -270,13 +270,13 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample of these are available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs file**.
+A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within the **Models\EmbedConfig.cs** file and the **Models\TileEmbedConfig.cs file**.
 
 ### Load an item using JavaScript
 
 You can use JavaScript to load a report into a div element on your web page.
 
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
 Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
@@ -325,7 +325,7 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 
 ## Move to production
 
-Now that you've completed developing your application, it is time to back your app workspace with a dedicated capacity. Dedicated capacity is required to move to production.
+Now that you've completed developing your application, it's time to back your app workspace with a dedicated capacity. Dedicated capacity is required to move to production.
 
 ### Create a dedicated capacity
 
@@ -342,15 +342,15 @@ Use the table below to determine which Power BI Embedded capacity best fits your
 | A5 |16 v-core(s) |8 core(s), 50-GB RAM |8 core(s) |60 per second |2,401-4,800 |
 | A6 |32 v-core(s) |16 core(s), 100-GB RAM |16 core(s) |120 per second |4,801-9600 |
 
-**_With A SKUs, you cannot access Power BI content with a FREE Power BI license._**
+**_With A SKUs, you can't access Power BI content with a FREE Power BI license._**
 
-Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. You must purchase a dedicated capacity for embedding in a production environment. There is no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
+Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. A dedicated capacity is required for embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
-For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
+For more information, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
 ### Assign an app workspace to a dedicated capacity
 
-Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this, follow these steps.
+Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To assign a dedicated capacity to a workspace, follow these steps.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
