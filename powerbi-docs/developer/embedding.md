@@ -8,7 +8,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
-ms.date: 11/30/2018
+ms.custom: seodec18
+ms.date: 12/10/2018
 ---
 
 # Embedding with Power BI

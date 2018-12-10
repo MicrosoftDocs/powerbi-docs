@@ -1,20 +1,22 @@
 ---
-title: Using embedded analytics to embed Power BI content in your application for your customers
+title: Embedded analytics to embed Power BI content in your application for your customers
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
+ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 11/30/2018
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
 # Tutorial: Embed a Power BI report, dashboard, or tile into an application for your customers
 
-With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application using **app owns data**. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. Using **app owns data** is typically an **ISV developer** scenario. As an **ISV developer**, you can create **Power BI** content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users of the application to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the **Power BI** .NET SDK along with the **Power BI** JavaScript API when using **Power BI Embedded in Azure** for your customers using **app owns data**.
+With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an ISV developer, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users of the application to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API when using Power BI Embedded in Azure for your customers using app owns data.
 
 In this tutorial, you learn how to:
 >[!div class="checklist"]
@@ -93,7 +95,7 @@ Enable additional permissions for your application, including what was provided 
 
 8. Within **Required permissions**, select **Grant Permissions**.
 
-    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you need to grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you need to grant permissions only to the *master account* for this application.
+    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account that performs this action is a Global Admin, you need to grant permissions for all users in your organization for this application. If the account that performs this action is the *master account* and isn't a Global Admin, you need to grant permissions only to the *master account* for this application.
 
     ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
@@ -111,7 +113,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
     ![Name Workspace](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
-3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. If you choose **Private**, this means only members of the workspace can see its contents.
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. If you choose **Private**, only members of the workspace can see its contents.
 
     ![Private/Public](media/embed-sample-for-customers/embed-sample-for-customers-022.png)
 
