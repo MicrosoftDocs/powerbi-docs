@@ -1,27 +1,28 @@
 ---
-title: Using embedded analytics to embed Power BI content in your application for your organization
+title: Embedded analytics to embed Power BI content in your application for your organization
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organziation. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ""
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
 
-This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK along with the Power BI JavaScript API to embed Power BI into an application for your organization. In Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
+In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service to use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 In this tutorial, you learn the following tasks:
->[!div class="checklist"]
->* Register an application in Azure.
->* Embed a Power BI report into an application.
+> [!div class="checklist"]
+> * Register an application in Azure.
+> * Embed a Power BI report into an application.
 
 ## Prerequisites
 
