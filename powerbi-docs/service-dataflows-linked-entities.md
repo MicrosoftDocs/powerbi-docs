@@ -29,6 +29,12 @@ Linked entities require a [Power BI Premium](service-premium.md) subscription to
 
 Linked entities only work properly in new Power BI workspaces. You can learn more about [new Power BI workspaces](service-create-the-new-workspaces.md). All linked dataflows must be located in new workspaces to work properly.
 
+> [!NOTE]
+> Entities differ based on whether they’re standard entities or computed entities. Standard entities (often simply referred to as entities) query an external data source, such as a SQL database. Computed entities require Premium capacity on Power BI and run their transformations on data that’s already in Power BI storage. 
+>
+>If your dataflow isn’t in a Premium capacity workspace, you can still reference a single query or combine two or more queries as long as the transformations aren’t defined as in-storage transformations. Such references are considered standard entities. To do so, turn off the **Enable load** option for the referenced queries to prevent the data from being materialized and from being ingested into storage. From there, you can reference those **Enable load = false** queries, and set **Enable load** to **On** only for the resulted queries that you want to materialize.
+
+
 ## How to link entities between dataflows
 
 There are a few ways to link entities between dataflows in Power BI. You can select **Add linked entities** from the Dataflows authoring tool, as shown in the following image. 
