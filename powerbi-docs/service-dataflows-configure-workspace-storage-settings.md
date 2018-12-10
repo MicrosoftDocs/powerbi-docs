@@ -1,6 +1,6 @@
 ---
 title: Configure workspace dataflow settings
-description: Configure an app workspace to store its dataflow definition and data finles in Azure Data Lake Storage Gen2
+description: Configure an app workspace in Power BI to store its dataflow definition and data finles in Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -109,7 +109,7 @@ There are some additional considerations as well, described in the following lis
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 
-## Next Steps
+## Next steps
 
 This article provided guidance on how to configure workspace storage for dataflows. For additional information, take a look at the following articles:
 

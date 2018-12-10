@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -61,7 +61,7 @@ To create and manage CDM folders within the Power BI file system, read, write an
 
 Sharing CDM folders with data consumers, such as users or services that need to read the data, is simplified with Active Directory OAuth Bearer tokens and POSIX ACLs. Doing so provides administrators with the ability to monitor who accessed the CDM folder. The only action required is to grant access to an Active Directory object of your choice (such as a user group or service) to the CDM Folder. We recommend that all access to the CDM folder, for any identity other than the data producer, be granted as read-only. Doing so protects the integrity of the data that the producer generates.
 
-To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommneded you review both [Access control lists on files and directory](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
+To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommneded you review both [Access control lists on files and directory](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
 
 
 ### Alternative forms of authorization
@@ -70,7 +70,7 @@ People or services outside of Power BI can also leverage alternatives forms of a
 ).
 
 
-## Next Steps
+## Next steps
 
 This article provided an overview of the integration of Power BI dataflows, CDM folders, and Azure Data Lake Storage Gen2. For additional information, take a look at the following articles:
 
