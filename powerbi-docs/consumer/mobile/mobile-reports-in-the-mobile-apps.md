@@ -102,9 +102,9 @@ When you drill through, the back button takes you back to the previous report pa
 
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
 
-## Show Data and Copy values
+## Show data and copy values
 
-By selecting the Menu options ellipsis (...) in the upper-right corner of a visualization in a phone report, and selecting Show Data, you can see the data underlying a visualization.
+By selecting the Menu options ellipsis (**...**) in the upper-right corner of a visualization in a phone report, and then selecting **Show data**, you can see the data underlying a visualization.
 
 ![Power BI mobile show data menu option](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
 
