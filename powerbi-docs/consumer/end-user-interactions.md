@@ -5,7 +5,7 @@ author: mihart
 manager: kvivek
 ms.custom: seodec18
 ms.reviewer: ''
-
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Reports
 ---
 
-# Visual interactions in a Power BI report
+# How visuals cross-filter each other in a Power BI report
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. 
 
 ![video of visuals interacting](media/end-user-interactions/interactions.gif)

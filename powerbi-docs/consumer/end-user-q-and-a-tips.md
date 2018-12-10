@@ -53,7 +53,7 @@ Examples: Order year is before 2012? Price equals between 10 and 20? Is the age 
 
 **Equality (Value)**:  is, equal, equal to, in, of, for, within, is in, is on
 
-Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that is not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
+Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that are not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
 
 **Names**: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like "which employees are named robert."
 
@@ -78,11 +78,11 @@ Example: show districts by month and sales total as bar chart
 ## Q&A helps you phrase the question
 Q&A does its best to ensure that the answer accurately reflects the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-* auto-completes words and questions. It uses various strategies, including auto-completing recognizable words, popular questions for the underlying workbooks, and previously-used questions that returned valid responses. If more than one auto-complete option is available, they are presented in a dropdown list.
+* autocompletes words and questions. It uses various strategies, including autocompleting recognizable words, popular questions for the underlying workbooks, and previously used questions that returned valid responses. If more than one autocomplete option is available, they are presented in a dropdown list.
 * corrects spelling.
 * provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
-* auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
-* restates the question based on the data in the underlying dataset(s). This helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
+* suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
+* restates the question based on the data in the underlying dataset(s). This restatement helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
 * dims words it does not understand.
 
 ## Don't stop now

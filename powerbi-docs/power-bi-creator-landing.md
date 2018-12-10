@@ -9,7 +9,7 @@ ms.topic: landing-page
 ms.date: 11/19/2018
 ms.author: maggies
 author: maggiesMSFT
-layout: landingpage
+layout: LandingPage
 
 LocalizationGroup: Get started
 # Customer intent: As a person who creates in Power BI, I want a link to all the parts.

@@ -3,12 +3,13 @@ title: Frequently asked questions for Power BI consumers
 description: Power BI FAQ
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/06/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
