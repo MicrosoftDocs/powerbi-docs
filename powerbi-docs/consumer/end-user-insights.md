@@ -15,7 +15,7 @@ ms.author: mihart
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
 ---
-# Generate data insights with Power BI
+# View data insights on dashboard tiles with Power BI
 Each visualization tile on your dashboard is a doorway into data exploration. When you select a tile, it opens a report where you can filter and sort and dig into the dataset behind the report. And when you run insights, Power BI does the data exploration for you.
 
 Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on a specific dashboard tile and you can even run insights on an insight!
