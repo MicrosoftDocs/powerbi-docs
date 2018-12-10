@@ -693,6 +693,8 @@
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
         href: service-create-the-new-workspaces.md
+      - name: "Manage data storage in workspaces"
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Share a filtered report"
         href: service-share-reports.md
       - name: "Publish from Power BI to the web"
