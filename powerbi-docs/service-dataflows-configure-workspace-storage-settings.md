@@ -15,10 +15,9 @@ LocalizationGroup: Data from files
 ---
 # Configure workspace dataflow settings (Preview)
 
-With Power BI and dataflows, you can store a workspace's dataflow definition file and data files in your Azure Data Lake Store Gen2 account. Your administrator must configure Power BI to do so, and this article walks through the steps necessary to get there. 
+With Power BI and dataflows, you can store a workspace's dataflow definition file and data files in your Azure Data Lake Storage Gen2 account. Workspaces administrators can configure Power BI to do so, and this article walks through the steps necessary to get there. 
 
-To configure a workspace’s dataflow storage location, you must connect your organization’s storage account to Power BI, and enable storage assignment permissions to that storage account. 
-These settings require admin permissions for the workspace. 
+Before you can configure a workspace’s dataflow storage location, your company's global administrator must connect your organization’s storage account to Power BI, and enable storage assignment permissions to that storage account. * [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
 
 There are two ways to configure the workspace dataflow storage settings: 
 
@@ -48,14 +47,14 @@ Next, expand the **Advanced** area of the **Create an app workspace** dialog, wh
 
 ![Advanced settings for the new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
-Select **Save** to create your new workspace. Any new dataflow created in this workspace now stores its definition file (its Model.json file) and data in your organization's Azure Data Lake Store Gen2 account. 
+Select **Save** to create your new workspace. Any new dataflow created in this workspace now stores its definition file (its Model.json file) and data in your organization's Azure Data Lake Storage Gen2 account. 
 
 > [!NOTE]
 > The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Update dataflow storage for an existing workspace
 
-Alternatively to creating a new workspace, you can update an existing workspace to store the definition file and data in your organization's Azure Data Lake Store Gen2 account. Remember that the dataflow sotrage setting can only be changed if the workspace doesn't already contain a dataflow.
+Alternatively to creating a new workspace, you can update an existing workspace to store the definition file and data in your organization's Azure Data Lake Storage Gen2 account. Remember that the dataflow sotrage setting can only be changed if the workspace doesn't already contain a dataflow.
 
 To edit an app workspace, select the elipsis **(...)** then select **Edit workspace**. 
 
@@ -65,7 +64,7 @@ In the **Edit workspace** window that appears, expand **Advanced**, then turn th
 
 ![Dataflow storage to On](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_06.jpg)
 
-Then select **Save**, and any new dataflow created in that workspace stores its definition file and data in your organization's Azure Data Lake Store Gen2 account.
+Then select **Save**, and any new dataflow created in that workspace stores its definition file and data in your organization's Azure Data Lake Storage Gen2 account.
 
 
 ## Get the URI of stored dataflow files
@@ -87,30 +86,27 @@ In the information that's displayed, the dataflow's CDM foloder location appears
 
 ## Considerations and limitations
 
-Certain dataflow features aren't supported when dataflow storage is in Azure Data Lake Store Gen2: 
+Certain dataflow features aren't supported when dataflow storage is in Azure Data Lake Storage Gen2: 
 
 Power BI Pro, Premium and Embedded workspaces:
 * The **linked entities** feature is only supported among workspaces in the same storage account
-* Workspace permissions do not apply to dataflows stored in Azure Data Lake Store Gen2; only the owner of the dataflow can access it.
+* Workspace permissions do not apply to dataflows stored in Azure Data Lake Storage Gen2; only the owner of the dataflow can access it.
 * Otherwise, all data prep features are the same as for dataflows stored in Power BI storage
 
 
 There are some additional considerations as well, described in the following list:
 
 * Once a dataflow storage location is configured, it cannot be changed.
-* By default, only owners of a dataflow stored in Azure Data Lake Storage Gen2 can access its data. To authorize additional users, you must add them to the dataflow’s CDM folder 
-* Creating dataflows with linked entities is only possible when the workspaces are stored in the same storage account
-* On-premises data sources, in Power BI Shared capacities, are not supported in dataflows stored in your organization’s Azure Data Lake Storage Gen2
+* Only the owner of a dataflow stored in Azure Data Lake Storage Gen2 can access its data.
+* On-premises data sources, in Power BI Shared capacities, are not supported in dataflows stored in your organization’s Azure Data Lake Storage Gen2.
 
-**Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
+**Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow. Consider the following situation:
 
 1.	Anna creates a new app workspace and configures it to store dataflows in the organization’s data lake.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error because he was not added as an authorized user to the dataflow’s CDM folder in the data lake.
 
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
-
-To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](https://go.microsoft.com/fwlink/?linkid=2029121).
 
 
 ## Next Steps
@@ -131,11 +127,12 @@ For information about dataflows overall, check out these articles:
 * [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
+
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
 * [Get started with github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 
 For more information about the Common Data Model, you can read its overview article:
+
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
