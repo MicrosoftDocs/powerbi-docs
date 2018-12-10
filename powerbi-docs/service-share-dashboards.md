@@ -92,7 +92,7 @@ Only the dashboard or report owner can turn resharing on and off.
 ## Share a dashboard or report with people outside your organization
 When you share with people outside your organization, they get an email with a link to the shared dashboard or report, and they have to sign in to Power BI to see it. If they don't have a Power BI Pro license, they can sign up for a license after clicking the link.
 
-After they sign in, they see the shared dashboard or report in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard or rreport in the future.
+After they sign in, they see the shared dashboard or report in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard or report in the future.
 
 They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers in the report, but can't save their changes.
 

@@ -1,5 +1,5 @@
 ---
-title: Create a portrait view of a report optimized for the mobile apps
+title: Create reports optimized for the mobile apps
 description: Learn how to optimize report pages for the Power BI mobile apps by creating a portrait version of the report specifically for phones and tablets.
 author: maggiesMSFT
 manager: kfile
@@ -13,8 +13,8 @@ ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Create a portrait view of a report optimized for the Power BI mobile apps
-You can improve the experience of viewing your reports in the mobile apps on a phone or tablet. Create a pertrait version of the report specifically for phones and tablets. In Power BI Desktop and in the Power BI service, you adapt your report by rearranging and resizing visuals in a portrait layout, maybe not including all of them, for an optimal experience. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the optimized report. Your report readers can see them and filter the report with them.
+# Create reports optimized for the Power BI mobile apps
+You can improve the experience of viewing your reports in the mobile apps on a phone or tablet. Create a portrait layout of a report, specifically for phones and tablets. In Power BI Desktop and in the Power BI service, you adapt your report by rearranging and resizing visuals in a portrait layout for an optimal experience. You don't have to include all of them. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the optimized report. Your report readers can see them and filter the report with them.
 
 ![Optimized report on a phone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
@@ -40,14 +40,14 @@ After you create a report, you can optimize it for phones and tablets.
 
 4. You can resize your visuals on the grid, as you would for tiles on dashboards and mobile dashboards.
    
-   The phone report grid scales across phones of different sizes, so your report will look as good on small- and on large-screen phones.
+   The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
    
    ![Resize a visual](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 
 ## Optimize a visual for any size
-You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size. 
+You can set the visuals in your dashboard or report to be *responsive*. They can change dynamically to display the maximum amount of data and insight, no matter the screen size. 
 
-As a visual changes size, Power BI prioritizes the data view, for example removing padding and moving the legend to the top of the visual automatically, so the visual remains informative even as it gets smaller.
+As a visual changes size, Power BI prioritizes the data view. For example, it can remove padding and move the legend to the top of the visual automatically, so the visual remains informative even as it gets smaller.
 
 ![Responsive visual resizing](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
