@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -50,7 +50,7 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 | Featured |Can set one dashboard as your "featured" dashboard |Can't create a featured report |
 | Favorite | Can set dashboards as *favorites* | Can set reports as *favorites*
 | Set alerts |Available for dashboard tiles in certain circumstances |Not available from reports |
-| Natural language queries |Available from dashboard |Not available from reports |
+| Natural language queries |Available in dashboards | Available in reports |
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values. |
 | Customization |No |In Reading view you can publish, embed, filter, export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  |
 
