@@ -20,9 +20,9 @@ In **Power BI**, you can embed reports, dashboards, or tiles into an application
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 In this tutorial, you learn the following tasks:
->[!div class="checklist"]
->* Register an application in Azure.
->* Embed a Power BI report into an application.
+> [!div class="checklist"]
+> * Register an application in Azure.
+> * Embed a Power BI report into an application.
 
 ## Prerequisites
 
