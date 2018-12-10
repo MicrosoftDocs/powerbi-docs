@@ -34,7 +34,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 
     - tile created using Q&A
    
-        ![ellipses icon]()./media/end-user-tiles/power-bi-menu1.png)
+        ![ellipses icon](./media/end-user-tiles/power-bi-menu1.png)
 
     - tile created from a workbook
    
