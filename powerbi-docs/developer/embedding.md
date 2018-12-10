@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 12/10/2018
 ---
 
-# Embedding with Power BI
+# Embedded analytics with Power BI
 
 The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This feature means you have a set of capabilities and access to the latest Power BI features – such as dashboards, gateways, and app workspaces – when embedding your content.
 
