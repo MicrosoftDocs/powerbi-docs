@@ -18,13 +18,12 @@ LocalizationGroup: Data from files
 You can configure Power BI workspaces to store dataflows in your organization’s Azure Data Lake Storage Gen2 account. This article describes the general steps necessary to do so, and provides guidance and best practices along the way. There are some advantages to configuring workspaces to store dataflow definitions and datafiles in your data lake, including the following:
 
 * Azure Data Lake Storage Gen2 provides an enormously scalable storage facility for data
-* Dataflow data and definition files can be leveraged by your IT department's developers to leverage Azure Data and artificial intelligence (AI) services
+* Dataflow data and definition files can be leveraged by your IT department's developers to leverage Azure Data and artificial intelligence (AI) services as demonstrated in the [github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 * Enables developers in your organization to integrate dataflow data into internal applications, and line of business solutions, using developer resources for dataflows and Azure
 
 To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 
 * **Power BI tenant** - at least one account in your Azure Active Directory (AAD) tenant must have signed up for Power BI
-* **Power BI Pro account** - at least one Power BI Pro license must available to create a dataflow
 * **A Global Administrator account** - this account is required to connect and configure Power BI to store the dataflow definition, and data, in your Azure Data Lake Storage Gen2 account
 * **An Azure subscription** - you need an Azure subscription to use Azure Data Lake Storage Gen2
 * **Resource group** - use a resource group you already have, or you can create a new one
@@ -52,53 +51,42 @@ The following sections walk through the steps ncessary to configure your Azure D
 
 ### Create the storage account
 
-Following these steps to create your Azure Data Lake Storage Gen2 storage account:
+Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account) article.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Create a resource > Storage**
-3. In the search box, search for *Storage account - blob, data lake gen 2 (preview), file, table, queue*
-4. Within *Storage account - blob, data lake gen 2 (preview), file, table, queue* select **Create**.
-5. Fill in the required information. Make sure you select the same location as your Power BI tenant, and set your storage as **StorageV2 (general purpose v2)**, then select **Next: Advanced**
-
-    ![Select the correct location and storage type](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_01.jpg)
-
-6. In the **Advanced** tab, make sure you enable the hierarchical namespace feature, as shown in the following image.
-
-    ![Select the hierarchical namespace](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_02.jpg)
-
-7. Select the **Review + Create** button, and then **Create**.
+1. Make sure you select the same location as your Power BI tenant, and set your storage as **StorageV2 (general purpose v2)**
+2. Make sure you enable the hierarchical namespace feature
+3. It is recommended to set replication setting to **Read-access geo-redundant storage (RA-GRS)**
 
 ### Grant the Power BI service a reader role
 
 Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straighforward. 
 
-1. In the **Azure portal**, navigate to your storage account.
-2. Select your storage account then select **Access Control (IAM)** to display access control settings for the account, as shown in the following image. Click **Add** to add a new role.
+Follow the steps in the [Assign a role to a security principal](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal) article.
 
-    ![Add a new role to storage](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_03.jpg)
+In the **Add role assignment** window, select the **Reader** role to assign to the Power BI service. Then use search to locate **Power BI Service**. The following image shows the **Reader** role assigned to the Power BI service.
 
-3. In the **Add role assignment** window, select the **Reader** role you to assign to the Power BI service. Then use search to locate **Power BI Service**. The following image shows the **Reader** role assigned to the Power BI service.
-
-    ![Assign Reader to the Power BI service](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_04.jpg)
-
-4. Select **Save**, and then the Power BI service appears listed under that role. The following image shows the Power BI service has Reader role access to the storage account:
+The following image shows the Power BI service has Reader role access to the storage account:
 
     ![Power BI service assigned to Reader role](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
 
 
 ### Create a file system for Power BI
 
-You must create a file system named *powerbi* bfore your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight or AZCopy. This section shows you a straightforward way to create a file system using AzCopy on Windows.
+You must create a file system named *powerbi* bfore your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight, AZCopy or Azure Storage Explorer. This section shows you a straightforward way to create a file system using Azure Storage Explorer.
 
-1. Download the latest version of [AzCopy on Windows](https://aka.ms/downloadazcopy) using the following download link: [AzCopy on Windows](https://aka.ms/downloadazcopy)
+This step requires that you install Azure Storage Explorer. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
-2. Once you've successfully installed AzCopy on Windows, open a command window and navigate to the AzCopy installation directory on your computer, which is where the *AzCopy.exe* executable is located. 
+1. Once you've successfully installed Azure Storage Explorer, On first launch, the Microsoft Azure Storage Explorer - Connect window is shown. While Storage Explorer provides several ways to connect to storage accounts, only one way is currently supported for the required setup. 
 
-3. Create a file system called *powerbi* be executing the following script in the command window you opened in the previous step:
+2. In the left pane, locate and expand the storage account you created above.
 
-    `AzCopy https://[account-name].dfs.core.windows.net/powerbi`
+3. Right-click Blob Containers, and - from the context menu - select Create Blob Container.
 
-When that script successfully runs, your *powerbi* file system is created. In the next section, you grant the Power BI family of services full access to the file system you created. 
+4. A text box will appear below the Blob Containers folder. Enter the name *powerbi* 
+
+5. Press Enter when done to create the blob container
+
+In the next section, you grant the Power BI family of services full access to the file system you created. 
 
 ### Grant Power BI permissions to the file system
 
@@ -118,11 +106,13 @@ To find your tenant applications, follow these steps:
 
 5. Select and copy the Object ID for Power BI service from the results of your search. Be ready to paste that value in subsequent steps.
 
-6. Download the latest version of **Azure Storage Explorer** using the following link: [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/). 
+7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
-7. Once it's successfully installed, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. 
+8. For each of the 2 Power BI Object IDs collected in step 5, Assign **Read**,**Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
 
-8. Assign **Read** permissions to your *powerbi* file system, using **Azure Storage Explorer**, as described in **Manage Azure Data Lake Storage Gen2 resources by using Storage Explorer**.
+9. For the Power Query Online Object ID collected in step 5, Assign **Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
+
+10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs aswell.
 
 
 ## Connect your Azure Data Lake Storage Gen2 to Power BI
@@ -174,11 +164,7 @@ Power BI Desktop customers cannot access dataflows stored in an **Azure Data Lak
 
 1. Anna has created a new app workspace and configured it to store dataflows in the organization’s data lake. 
 2. Ben, who is also a member of the workspace Anna created, would like to leverage Power BI Desktop and the dataflow connector to get data from the Dataflow Anna created.
-3. Ben receives an error similar to the following image, because he was not added to the dataflow’s CDM folder in the lake
-
-![Access error to the dataflow and file system](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
-
-The workaround to this siuation is as follows: Ben must be granted **Reader** permissions to the CDM Folder and its files. The [Authorizing people or services to CDM folders](https://go.microsoft.com/fwlink/?linkid=2029121) article provides guidance on how to do so.
+3. Ben receives an error similar to the following image, because he was not authorized to the dataflow’s CDM folder in the lake
 
 Common questions and answers include the following:
 
@@ -210,8 +196,6 @@ For information about dataflows overall, check out these articles:
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
-* [Get started with github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
