@@ -44,7 +44,7 @@ Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, 
 5. A Filesystem named **powerbi** must be created.
 6. Power BI services must be authorized to the **powerbi** filesystem you create.
 
-The following sections walk through the steps ncessary to configure your Azure Data Lake Storage Gen2 account in detail.
+The following sections walk through the steps necessary to configure your Azure Data Lake Storage Gen2 account in detail.
 
 > [!NOTE]
 > The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
@@ -70,7 +70,7 @@ In the **Add role assignment** window, select the **Reader** role to assign to t
 
 ### Create a file system for Power BI
 
-You must create a file system named *powerbi* bfore your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight, AZCopy or Azure Storage Explorer. This section shows you a straightforward way to create a file system using Azure Storage Explorer.
+You must create a file system named *powerbi* before your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight, AZCopy, or Azure Storage Explorer. This section shows you a straightforward way to create a file system using Azure Storage Explorer.
 
 This step requires that you install Azure Storage Explorer. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
@@ -112,15 +112,15 @@ To find your tenant applications, follow these steps:
 
 7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
-8. For each of the 2 Power BI Object IDs collected in step 5, Assign **Read**,**Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
+8. For each of the two Power BI Object IDs collected in step 5, Assign **Read**, **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![for both, assign all three](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For the Power Query Online Object ID collected in step 5, Assign **Write**,**Execute** Access and Default ACLs to your *powerbi* file system.
+9. For the Power Query Online Object ID collected in step 5, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![next, assign write and execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs aswell.
+10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
 
    ![last, for other assign execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
@@ -153,7 +153,7 @@ Next you need to enable people in your organization to configure their workspace
 
 By default, dataflow definition and data files are stored in the storage provided by Power BI. To access dataflow files in your own storage account, workspace admins must first configure the workspace to allow assignment and storage of dataflows in the new storage account. Before a workspace admin can configure dataflow storage settings, the admin must be granted storage assignment permissions in the **Power BI admin portal**.
 
-To grant storage assignment permissions, go to the **Dataflow settings (Preview)** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, selec the **Apply** button for the change to take effect. 
+To grant storage assignment permissions, go to the **Dataflow settings (Preview)** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
 
 That's it. The Power BI workspace admins can now assign workflows to the file system you created.
 
