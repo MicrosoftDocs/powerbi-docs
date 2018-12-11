@@ -1,14 +1,14 @@
 ---
-title: Show the data that was used to create the Power BI visualization
+title: Show the data that was used to create the visualization
 description: This document explains how Power BI consumers can "see" the data used to create a visual.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -27,7 +27,7 @@ A Power BI visualization is constructed using data from underlying datasets. If 
    
    ![visual and data vertical display](./media/end-user-show-data/power-bi-explore-show-data-new.png)
 
-4. To change the orientation, select vertical layout ![](media/end-user-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
+4. To change the orientation, select vertical layout ![layout icon](media/end-user-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
    ![visual and data horizontal display](./media/end-user-show-data/power-bi-explore-show-data2-new.png)
 

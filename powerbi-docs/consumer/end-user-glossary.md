@@ -2,11 +2,12 @@
 title: Glossary for Power BI consumers
 description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI terminology.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and t hey don't get confused or frustrated and instead get the result they expect.
 ---
@@ -48,8 +49,8 @@ All workspaces in Power BI except for My workspace are now app workspaces. The c
 **AppSource**
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
 
-**ArcGIS Maps for Power BI**
-ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS Maps for Power BI.
+**ArcGIS for Power BI**
+ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
 **assign**
 [Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity.  
