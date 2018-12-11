@@ -16,9 +16,9 @@ LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
 ## Words and terminology that Q&A recognizes
-This list of keywords isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it, or doesn’t recognize it in the current context.
+This list of keywords on this page isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it.
 
-The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, Power BI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
+The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  And “sort” includes: **sorted** and **sorting**.  Also, Power BI recognizes and includes singular and plural versions of a word. 
 
 > [!NOTE]
 > Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile/mobile-apps-ios-qna.md).
@@ -70,11 +70,11 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 ## Q&A helps you phrase the question
 Q&A does its best to understand and answer the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, and previously used questions that returned valid responses. If more than one autocomplete option is available, they are presented in a dropdown list.
+* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
 * corrects spelling.
 * provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 * suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
-* restates the question based on the data in the underlying dataset(s). This restatement helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
+* restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not. 
 * dims words it doesn't understand.
 
 ## Don't stop now
