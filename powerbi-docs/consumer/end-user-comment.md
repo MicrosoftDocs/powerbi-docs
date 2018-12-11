@@ -5,11 +5,12 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: 
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
