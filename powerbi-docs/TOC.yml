@@ -263,19 +263,19 @@
         href: desktop-slicer-numeric-range.md
       - name: "Use the relative date slicer"
         href: desktop-slicer-filter-date-range.md
-        name: "Create a responsive slicer you can resize"
+        name: "Create a slicer you can resize"
         href: power-bi-slicer-filter-responsive.md
-      - name: "Create custom Power BI answer cards for Cortana"
+      - name: "Create custom answer cards for Cortana"
         href: service-cortana-answer-cards.md
       - name: "Row-level security"
         href: desktop-rls.md
-      - name: "Customizing tooltips in Power BI Desktop"
+      - name: "Customizing tooltips"
         href: desktop-custom-tooltips.md
-      - name: "Conditional table formatting in Power BI Desktop"
+      - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Sort by column in Power BI Desktop"
         href: desktop-sort-by-column.md
-      - name: "Create reports optimized for the Power BI phone apps"
+      - name: "Create reports optimized for mobile apps"
         href: desktop-create-phone-report.md
       - name: "Use See Data and See Records"
         href: desktop-see-data-see-records.md
@@ -285,23 +285,23 @@
       items: 
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
-      - name: "Change the type of visualization in a Power BI report"
+      - name: "Change the type of visualization in a report"
         href: visuals/power-bi-report-change-visualization-type.md
       - name: "Data point limits by visual type"
         href: visuals/power-bi-data-points.md
       - name: "Getting started with color formatting and axis properties"
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: "Tips and tricks for color formatting in Power BI"
+      - name: "Tips and tricks for color formatting"
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: "Copy and paste a visualization in Power BI"
+      - name: "Copy and paste a visualization"
         href: visuals/power-bi-visualization-copy-paste.md
       - name: "Export the data used to create the visualization"
         href: visuals/power-bi-visualization-export-data.md      
-      - name: "Move, resize, and pop out a visualization in a Power BI report"
+      - name: "Move, resize, and pop out a visualization in a report"
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Hyperlinks in tables"
         href: power-bi-hyperlinks-in-tables.md
-      - name: "Add a hyperlink to a Text Box in a Power BI report"
+      - name: "Add a hyperlink to a Text Box in a report"
         href: service-add-hyperlink-to-text-box.md
       - name: "Change how visuals interact in a report"
         href: service-reports-visual-interactions.md
@@ -599,7 +599,7 @@
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
       items: 
-      - name: "Power BI Dashboard"
+      - name: "Intro to dashboards"
         href: service-dashboards.md
       - name: "Dashboard tiles"
         href: service-dashboard-tiles.md
@@ -693,6 +693,8 @@
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
         href: service-create-the-new-workspaces.md
+      - name: "Manage data storage in workspaces"
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Share a filtered report"
         href: service-share-reports.md
       - name: "Publish from Power BI to the web"
@@ -759,6 +761,14 @@
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
+      - name: "Dataflows and Azure Data Lake integration (Preview)"
+        href: service-dataflows-azure-data-lake-integration.md  
+      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)"
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
+      - name: "Configure workspace dataflow settings (Preview)"
+        href: service-dataflows-configure-workspace-storage-settings.md  
+      - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
+        href: service-dataflows-add-cdm-folder.md                                
     - name: Paginated reports in Power BI
       items: 
       - name: What are paginated reports? (Preview)
