@@ -13,7 +13,7 @@ ms.author: mshenhav
 
 ---
 # View reports and dashboards in presentation mode on Surface Hub and Windows 10 devices
-You can use presentation mode to display reports and dashboards in full-screen mode on Windows 10 devices and Sureface Hub. 
+You can use presentation mode to display reports and dashboards in full-screen on Windows 10 devices and Sureface Hub. 
 
 ![Report in full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode.png)
 
