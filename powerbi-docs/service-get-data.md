@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -40,7 +40,7 @@ Where you store your files makes a big difference, too. OneDrive for Business pr
 
 Content packs contain all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs; those from services like Google Analytics, Marketo, or Salesforce, and those created and shared by other users in your organization.
 
-**Services** � There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](consumer/end-user-connect-to-services.md).
+**Services** � There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](service-connect-to-services.md).
 
 **Organizational** � If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/10/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -30,11 +30,11 @@ As a report designer, here's what you can do with the new filters:
 
 ## Turn on the new filter experience 
 
-You enable the new experience in Power BI Desktop. Then you can modify filters there or in the Power BI service (https://app.powerbi.com). Because this new filter experience is in Preview, you must first enable it in Power BI Desktop. 
+You enable the new experience in Power BI Desktop. Then you can modify filters there or in the Power BI service (https://app.powerbi.com). Because this new filter experience is in Preview, you must first enable it in Power BI Desktop. If you start by creating a report in the Power BI service, it can't have the new filters.
 
 ### Turn on new filters for all new reports
 
-1. Select **File** > **Options and Settings** > **Options** > **Preview Features**, then select the **New filter experience** checkbox. 
+1. In Power BI Desktop, select **File** > **Options and Settings** > **Options** > **Preview Features**, then select the **New filter experience** checkbox. 
 2. Restart Power BI Desktop to see the new filter experience in all new reports.
 
 After you restart Power BI Desktop, it's enabled by default for all new reports you create.  
@@ -43,7 +43,7 @@ After you restart Power BI Desktop, it's enabled by default for all new reports 
 
 You can also enable the new filters for existing reports.
 
-1. In an existing report, select **File** > **Options and Settings** > **Options**
+1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
 2. Under **Report settings**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ## Build the new filter pane
@@ -94,7 +94,7 @@ You can also format these elements for filter cards, depending on if they're app
 
     ![Select the Format icon](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Expand **Filter pane** to set color for the background, font, icon, and left border, to complement the report page.
+1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
 
     ![Expand Filter pane](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

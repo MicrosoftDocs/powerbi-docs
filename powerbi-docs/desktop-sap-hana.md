@@ -5,10 +5,11 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,7 +27,7 @@ When connecting to a SAP HANA database, specify the server name and the port in 
 
 In this release **SAP HANA** in [DirectQuery](desktop-directquery-sap-hana.md) mode is supported in Power BI Desktop and the Power BI service, and you can publish and upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. You can also publish and upload reports to the Power BI Service when not using **SAP HANA** in DirectQuery mode.
 
-### Supported features for SAP HANA
+## Supported features for SAP HANA
 This release has many capabilities for **SAP HANA**, as shown in the following list:
 
 * The Power BI connector for **SAP HANA** uses the SAP ODBC driver, to provide the best user experience
@@ -36,8 +37,7 @@ This release has many capabilities for **SAP HANA**, as shown in the following l
 * Includes Optimized Navigation for HANA Models
 * Power BI supports **SAP HANA** Variables and Input parameters
 
-### Installing the SAP HANA ODBC driver
-### Limitations of SAP HANA
+## Limitations of SAP HANA
 There are also a few limitations to using **SAP HANA**, shown below:
 
 * NVARCHAR strings are truncated to maximum length of 4000 Unicode characters

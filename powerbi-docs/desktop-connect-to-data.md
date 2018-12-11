@@ -5,10 +5,11 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -20,6 +21,7 @@ There are *all sorts* of data sources available in Power BI Desktop. The followi
 
 ![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
 
+## Example of connecting to data
 For this example, we'll connect to a **Web** data source.
 
 Imagine you’re retiring – you want to live where there’s lots of sunshine, preferable taxes, and good health care. Or… perhaps you’re a data analyst, and you want that information to help your customers – as in, help your raincoat manufacturing client target sales where it rains a *lot*.
@@ -60,8 +62,8 @@ With the data model loaded, in **Report** view in Power BI Desktop, we can begin
 
 Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
 
-### Next steps
-﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+## Next steps
+There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)

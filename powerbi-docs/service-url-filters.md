@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 12/06/2018
 LocalizationGroup: Reports
 ---
 
@@ -142,7 +142,7 @@ Table_x0020_Name/Column_x002B_Plus eq 3
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
 ![table visual rendering special characters](media/service-url-filters/power-bi-special-characters2.png)
 
-### Use DAX to filter on multiple values
+## Use DAX to filter on multiple values
 
 Another way to filter on multiple fields is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
 
@@ -152,7 +152,7 @@ TerritoryChain = [Territory] & " - " & [Chain]
 
 Publish the report to Power BI service and then use the URL query string to filter to display data for only Lindseys stores in NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
+    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
 
 ## Pin a tile from a filtered report
 

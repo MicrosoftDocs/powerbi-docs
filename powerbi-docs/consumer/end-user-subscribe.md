@@ -9,7 +9,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/04/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -60,7 +60,7 @@ The following table describes how frequently you will receive an email. It all d
 |  | **DirectQuery** | **Live Connect** | **Scheduled refresh (import)** | **Excel file in OneDrive/SharePoint Online** |
 | --- | --- | --- | --- | --- |
 | **How often does the report/dashboard get refreshed?** |Every 15m |Power BI checks every 15 minutes, and if the dataset has changed, the report is refreshed. |User selects none, daily, or weekly. Daily can be up to 8 times a day. Weekly is actually a weekly schedule that the user creates and sets refresh for as few as once a week and as often as daily. |Once every hour |
-| **How much control does the user have over the subscription email schedule?** |Options are: daily or weekly |No options: users is sent an email if the report refreshes, but no more than once per day. |If the refresh schedule is daily, options are daily and weekly.  If the refresh schedule is weekly only option is weekly. |No options: user is sent an email whenever the dataset is updated, but no more than once per day. |
+| **How much control does the user have over the subscription email schedule?** |Options are: daily or weekly |No options: user is sent an email if the report refreshes, but no more than once per day. |If the refresh schedule is daily, options are daily and weekly.  If the refresh schedule is weekly, only option is weekly. |No options: user is sent an email whenever the dataset is updated, but no more than once per day. |
 
 ## Manage your subscriptions
 Only you can manage your subscriptions. Select **Subscribe** again and choose **Manage all subscriptions** (see screenshots below step 4 above). 
@@ -70,7 +70,7 @@ Only you can manage your subscriptions. Select **Subscribe** again and choose **
 A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
-* For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS you will not be able to create a subscription.
+* For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS, you will not be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription
 * Certain settings your organization may be configured in Azure Active Directory which may limit the ability to use e-mail subscriptions in Power BI.  This includes, but isn't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 * For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
@@ -78,7 +78,6 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Email subscriptions do not support R-powered custom visuals at this time.  
 * If any dashboard tiles have row level security (RLS) applied, those tiles will not display.
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing will not show up in the email.    
-* E-mail subscriptions are not yet supported on reports pages created by the Power BI Desktop live connect to service feature.  
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.    

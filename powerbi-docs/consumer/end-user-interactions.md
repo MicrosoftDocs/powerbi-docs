@@ -1,20 +1,20 @@
 ---
-title: Understand how visuals interact in a report (for report consumers)
+title: How visuals cross-filter each other in a report (for report consumers)
 description: Documentation for Power BI end users that explains how visuals interact on a report page. 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 
-# Visualization interactions in a Power BI report
+# How visuals cross-filter each other in a Power BI report
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. 
 
 ![video of visuals interacting](media/end-user-interactions/interactions.gif)

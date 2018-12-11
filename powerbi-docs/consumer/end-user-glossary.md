@@ -6,7 +6,7 @@ author: mihart
 
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/09/2018
+ms.date: 11/12/2018
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and t hey don't get confused or frustrated and instead get the result they expect.
 ---
@@ -46,9 +46,10 @@ See Cortana answer card.
 All workspaces in Power BI except for My workspace are now app workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.  
 
 **AppSource**
+Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
 
-**ArcGIS for Power BI**
-ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
+**ArcGIS Maps for Power BI**
+ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS Maps for Power BI.
 
 **assign**
 [Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity.  
@@ -84,6 +85,7 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 The content index for an app.
 
 **content pack**
+ A collection of pre-packaged datasets, reports, and dashboards. Now **apps**, learn [about the new workspace experience](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
 
 **content view**
 
@@ -113,6 +115,7 @@ See connectors
 
 
 **dataset** vs **data source**
+A **dataset** is a collection of data used to create visualizations and reports.
 
 **dedicated capacity**
 [Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
@@ -137,6 +140,9 @@ The mode in which report *designers* can explore, design, build, and share a rep
 
 **embed code**
 A common standard across the internet. In Power BI, the customer can generate an embed code and copy it to place content such as a report visual on a website or blog.
+
+**Embedded**
+See Power BI Embedded. 
 
 **embedding**
 In the Power BI developer offering, the process of integrating analytics into apps using the Power BI REST APIs and the Power BI SDK.
@@ -167,7 +173,7 @@ See account in this term collection
 ## G
 
 **gateways** or **on-premises data gateways**
-A bridge to underlying data sources. It provides quick and secure data transfer between the Power BI service and on-premises data sources that support refresh. Usually managed by IT. on-premises data gateways
+A bridge to underlying data sources. It provides quick and secure data transfer between the Power BI service and on-premises data sources that support refresh. Usually managed by IT. 
 
 ## H
 **high-density visuals**
@@ -200,8 +206,8 @@ One of the section pages for the elements in the left navigation. For example, F
 
 ## M
 
-**measures**
-Custom calculations written in Power BI Desktop using DAX code or quick measures.
+**Mobile app**
+Apps that allow you to run Power BI on iOS, Android, and Windows devices.
 
 **modeling**
 [Power BI Desktop] Getting the data you've connected to ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
@@ -228,6 +234,9 @@ The location in the service where messages are delivered to users, such as notic
 
 **OneDrive for Business** vs **OneDrive**
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
+
+**On-premises data gateway**
+
 
 
 ## P
@@ -260,7 +269,7 @@ The action of placing a visual, usually from a report, onto a dashboard.
 Some of the Power BI offerings. *Power BI* is the general term. It is often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
 
 **Power BI Desktop**
-Also referred to as *Desktop*.
+Also referred to as *Desktop*. The free Windows application of Power BI you can install on your local computer that lets you connect to, transform, and visualize your data. Used by report designers and admins. For more information, see [What is Power BI](../power-bi-overview.md).
 
 **Power BI Embedded**
 A product used by developers to embed Power BI dashboards and reports into their own apps, sites, and tools.
@@ -272,8 +281,10 @@ An add-on to the Power BI Pro license that enables organizations to predictably 
 A monthly user license that provides the ability to build dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps).
 
 **Power BI Report Server**
-A new branded offering of SSRS launching with Power BI Premium to allow organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
-Based on SQL Server Reporting Services with its rich, paginated reporting functionality, and mobile reports coupled with the ability to serve Power BI reports authored using Power BI Desktop, and deliver them in the Power BI mobile apps. Classic SSRS continues to be sold.
+A new branded offering of SSRS launching with Power BI Premium to allow organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). Embedded provides a localized way to store and manage Power BI reports.
+
+**Power BI service**
+An online SaaS (Software as a service) service. For more information, see [What is Power BI](../power-bi-overview.md).
 
 **Power BI service connector**
 This connector enables Power BI Desktop users to connect to datasets in Power BI service from Desktop. They can create a model once and reuse it in many reports and dashboards.

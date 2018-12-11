@@ -19,7 +19,7 @@ A doughnut chart is similar to a pie chart in that it shows the relationship of 
 ## Create a doughnut chart
 These instructions use the Retail Analysis Sample to create a doughnut chart that displays this year's sales by category. To follow along, [download the sample](../sample-datasets.md) for Power BI service or Power BI Desktop.
 
-1. Start on a [blank report page ](../power-bi-report-add-page.md). If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+1. Start on a blank report page. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
 2. From the Fields pane, select **Sales** \> **Last Year Sales**.  
    

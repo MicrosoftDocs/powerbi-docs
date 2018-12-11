@@ -1,14 +1,15 @@
 ---
-title: Power BI publisher for Excel
+title: Using Power BI publisher for Excel
 description: Learn how to use the Power BI publisher for Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Dashboards

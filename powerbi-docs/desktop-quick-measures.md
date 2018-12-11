@@ -1,14 +1,15 @@
 ---
-title: Use Quick measures to easily perform common and powerful calculations in Power BI
+title: Use Quick measures for common and powerful calculations
 description: Quick measures provide ready-made DAX formulas that make quick work of common calculations
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
