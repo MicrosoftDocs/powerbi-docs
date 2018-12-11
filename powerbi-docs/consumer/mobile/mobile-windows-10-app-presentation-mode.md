@@ -33,6 +33,8 @@ In the Power BI mobile app tap the **Full screen** icon to go to full-screen mod
 ![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png)
 The app chorme will disappear and an toolbar will appear on the bottom of the screen or on the right and left sides (depends on your screen size).
 
+![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode2.png)
+
 From the toolbar you can preform the following actions:
 
 1. Tap the back icon ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to go back to your previous page. Long tap on the icon will pop the breadcrumbs windows, allowing you to navigate to the containing folder of your report or dashboard.
