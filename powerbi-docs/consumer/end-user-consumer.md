@@ -1,12 +1,13 @@
 ---
-title: What is a Power BI Consumer?
+title: What is a Power BI "Consumer"?
 description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server, Power BI embedded.
 author: mihart
 manager: kvivek
 ms.service: powerbi
+ms.custom: seodec18
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 10/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started

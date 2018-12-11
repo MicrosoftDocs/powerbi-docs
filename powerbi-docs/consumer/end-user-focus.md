@@ -1,15 +1,16 @@
 ---
-title: Focus mode and full screen mode - how to zoom in to see more detail.
+title: Focus mode and full screen mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visualization in focus mode or full screen mode
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -80,7 +81,7 @@ Menu for report pages
     In full screen reports, use these arrows to move between the pages in the report.    
   * To exit full screen mode, select the **Exit full screen** icon.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![exit full screen icon](media/end-user-focus/exit-fullscreen-new.png)
 
 ## Working in focus mode
 There are two ways to open focus mode; one way for dashboard tiles and another way for report visualizations.
