@@ -1,8 +1,9 @@
 ---
-title: How visuals cross-filter each other in a report (for report consumers)
+title: Understand how visuals interact in a report
 description: Documentation for Power BI end users that explains how visuals interact on a report page. 
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
