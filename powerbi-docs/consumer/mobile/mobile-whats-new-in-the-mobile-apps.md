@@ -19,6 +19,32 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## November 2018
+
+### Modern visual header 
+
+Reports using the new ‘modern visual header’ will no longer allocate space for headers, resulting in less empty space and more room for your visualizations.
+
+### Enhance presentation mode (Windows)
+
+Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enhanced Surface Hub meeting room experience, with improved presentation and collaboration tools, and a chromeless, large-screen optimized view, so you can focus on your data. Presentation mode also provides tools such inking to help you effectively present and have discussions about your data. Read more about presentation mode [here](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/)
+
+### Portrait report layout in tablets (iOS and Android)
+
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. read more here on how to create phone layout in Power BI Service or Desktop [Create reports optimized for the Power BI phone apps article](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### Supporting report query string 
+
+Openning report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### Shared credentials (now in Android)
+
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+
+### In-app URLs (now in Android) 
+
+Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
+
 ## October 2018
 
 ### Paginated report preview (all devices)
