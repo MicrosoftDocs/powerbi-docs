@@ -16,16 +16,13 @@ LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
 ## Words and terminology that Q&A recognizes
-This list of keywords is not exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI does not recognize it, or doesn’t recognize it in the current context.
+This list of keywords isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it, or doesn’t recognize it in the current context.
 
-The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
+The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, Power BI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
 > [!NOTE]
 > Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile/mobile-apps-ios-qna.md).
-> 
-> 
-
-If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
+>  
 
 **Aggregates**: total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min
 
@@ -39,7 +36,7 @@ If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A
 
 **Contractions**: Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t.
 
-**Dates**: Power BI recognizes most date terms (day, week, month, year, quarter, decade, etc…) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade.
+**Dates**: Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade.
 
 Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months.
 
@@ -53,9 +50,9 @@ Examples: Order year is before 2012? Price equals between 10 and 20? Is the age 
 
 **Equality (Value)**:  is, equal, equal to, in, of, for, within, is in, is on
 
-Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that are not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
+Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
 
-**Names**: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like "which employees are named robert."
+**Names**: If a column in the dataset contains the phrase "name" (for example, EmployeeName), Q&A understands the values in that column are names. You can ask questions like "which employees are named robert."
 
 **Pronouns**: he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those
 
@@ -76,14 +73,14 @@ Example: show districts by month and sales total as bar chart
 **Wh (relationship, qualified)**: when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
 
 ## Q&A helps you phrase the question
-Q&A does its best to ensure that the answer accurately reflects the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
+Q&A does its best to understand and answer the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-* autocompletes words and questions. It uses various strategies, including autocompleting recognizable words, popular questions for the underlying workbooks, and previously used questions that returned valid responses. If more than one autocomplete option is available, they are presented in a dropdown list.
+* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, and previously used questions that returned valid responses. If more than one autocomplete option is available, they are presented in a dropdown list.
 * corrects spelling.
 * provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 * suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 * restates the question based on the data in the underlying dataset(s). This restatement helps ensure Q&A understood your question as Q&A replaces the words you used with synonyms from the underlying dataset(s).
-* dims words it does not understand.
+* dims words it doesn't understand.
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
