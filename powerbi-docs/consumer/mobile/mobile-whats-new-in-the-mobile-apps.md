@@ -45,6 +45,10 @@ Signing in to Power BI from your mobile app has never been easier. With shared c
 
 Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
 
+### Show data and copy values
+
+added to Report visual action menu the option to show the underlying data in table format. Just use the visual "…" in the header, and you'll see the 'Show Data' option. Once you see the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
+
 ## October 2018
 
 ### Paginated report preview (all devices)
