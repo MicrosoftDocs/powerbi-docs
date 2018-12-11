@@ -47,7 +47,7 @@ Links in reports that point to other Power BI artifacts now open directly inside
 
 ### Show data and copy values
 
-added to Report visual action menu the option to show the underlying data in table format. Just use the visual "…" in the header, and you'll see the 'Show Data' option. Once you see the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
+Report visual action menu (...) now has the option to show the underlying data in table format. Once in the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
 
 ## October 2018
 
