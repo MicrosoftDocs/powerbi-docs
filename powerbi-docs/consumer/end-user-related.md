@@ -10,7 +10,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 12/09/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
