@@ -8,18 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-embedded
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 12/12/2018
 ---
 
 # Power BI Embedded performance best practices
 
-In this article, you can find recommendations for faster rendering of reports, dashboards, and tiles in your application.
-
-Before we get started, reference [Power BI performance best practices](../power-bi-reports-performance.md) for guidance on building fast and reliable reports in Power BI.
+This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application
 
 ## Embed parameters
 
-Powerbi.embed() method receives few parameters to embed a report, a dashboard to a tile. These parameters have performance implications.
+Powerbi.embed() method receives few parameters to embed a report, a dashboard, or a tile. These parameters have performance implications.
 
 ### Embed URL
 
@@ -33,38 +31,38 @@ Provide **View** permissions if you're not intending to embed a report in **Edit
 
 Usually, report visuals are saved with cached data. The cached data is used to give perceived performance. Reports render cached data while queries are executed. If filters, bookmarks or slicers are provided, cached data isn't relevant. Then, the visuals are rendered only after running the visual query.
 
-It’s better to save the report with the filters applied if you embed a report with the same filters. That way you can avoid passing a list of filters in load configuration.
+If you embed reports with the same filters, to avoid passing a list of filters in the load configuration, save the report with filters already applied.
 
 ## Preloading
 
-You may use the *preload* JavaScript API to improve the end-user performance.
+Use the *preload* JavaScript API to improve the end-user performance.
 Powerbi.preload() downloads javascript, css files, and other artifacts, which is used later to embed in a report.
 
-Call preload if you're not embedding the report immediately. For example, if you embed a report on a button click, it’s better to call preload when the page loads. Then when the application user clicks the button, the rendering is faster.
+Call preload if you're not embedding the report immediately. For example, if you embed a report on a button click, it’s better to call preload when the previous page loads. Then when the application user clicks the button, the rendering is faster.
 
 ## Measuring performance
 
-To measure performance, you can use the events we provide:
+To measure performance, use:
 
 1. Loaded: time until report is initialized (user sees no spinny).
 2. Rendered: time until fully report is rendered using actual data. The rendered event is fired each time the report is re-rendered (that is, after applying filters). To measure a report first, make sure you do the calculations in the first raised event.
 
 Cached data is rendered when available, but we don’t have an event for this data yet.
 
-> [!Important]
-> Remember that loading time mainly depends on elements relevant to the report and data itself. Such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow [best practices](../power-bi-reports-performance.md) to improve the report’s loading time.
-
 ## Update tools and SDK packages
 
-To enjoy the recent enhancements, Keep tools and SDK packages up-to-date.
+Keep tools and SDK packages up-to-date.
 
-* It’s better to use the latest version of Power BI Desktop.
+* Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
 
-* Install the latest Power BI client SDK version. We continue to release more enhancements, so make sure to follow up from time to time.
+* Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continue to release more enhancements, so make sure to follow up from time to time.
 
 * Packages to install:
     * Npm package: powerbi-client
     * NuGet package: Microsoft.PowerBI.JavaScript
+
+> [!Note]
+> Remember that loading time mainly depends on elements relevant to the report and data itself. Such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow [best practices](../power-bi-reports-performance.md) to improve the report’s loading time.
 
 ## Next Steps
 
