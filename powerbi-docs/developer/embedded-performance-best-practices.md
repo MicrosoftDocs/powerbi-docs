@@ -15,6 +15,8 @@ ms.date: 12/10/2018
 
 In this article, you can find recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
+Before we get started, reference [Power BI performance best practices](../power-bi-reports-performance.md) for guidance on building fast and reliable reports in Power BI.
+
 ## Embed parameters
 
 Powerbi.embed() method receives few parameters to embed a report, a dashboard to a tile. These parameters have performance implications.
@@ -31,7 +33,7 @@ Provide **View** permissions if you're not intending to embed a report in **Edit
 
 Usually, report visuals are saved with cached data. The cached data is used to give perceived performance. Reports render cached data while queries are executed. If filters, bookmarks or slicers are provided, cached data isn't relevant. Then, the visuals are rendered only after running the visual query.
 
-If you always embed a report with the same filters, it’s better to save the report with the filters applied. That way you can avoid passing a list of filters in load configuration.
+It’s better to save the report with the filters applied if you embed a report with the same filters. That way you can avoid passing a list of filters in load configuration.
 
 ## Preloading
 
@@ -67,6 +69,6 @@ To enjoy the recent enhancements, Keep tools and SDK packages up-to-date.
 
 ## Next Steps
 
-* [Reports performance](../power-bi-reports-performance.md)
+* [Report performance](../power-bi-reports-performance.md)
 * [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
 * [Power BI Embedded FAQ](embedded-faq.md)
