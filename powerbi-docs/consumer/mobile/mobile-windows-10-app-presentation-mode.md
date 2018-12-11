@@ -29,8 +29,9 @@ You can also [display dashboards and reports in full-screen mode from the Power 
 > 
 
 ## Use presentation mode
-In the Power BI mobile app tap the **Full screen** icon ![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png) to go to full-screen mode.
-The app chorm will disappear and an toolbar will appear on the bottom of the screen or on the right and left sides (depends on your screen size).
+In the Power BI mobile app tap the **Full screen** icon to go to full-screen mode.
+![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png)
+The app chorme will disappear and an toolbar will appear on the bottom of the screen or on the right and left sides (depends on your screen size).
 
 From the toolbar you can preform the following actions:
 
