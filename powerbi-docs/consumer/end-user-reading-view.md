@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kvivek
-backup: ''
+ms.custom: seodec18
 editor: ''
 tags: ''
 
@@ -13,7 +13,7 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
@@ -172,7 +172,7 @@ Hover over a visual and select the **Focus mode** icon ![](media/end-user-readin
 
 ![focus mode](media/end-user-reading-view/powerbi-focus-mode.png)
 
-To display that same visualization without the distraction of menubars, filter pane, and other chrome -- select the **Full Screen** icon from the top menubar  ![](media/end-user-reading-view/power-bi-focus-icon.png)  .
+To display that same visualization without the distraction of menubars, filter pane, and other chrome -- select the **Full Screen** icon from the top menubar  ![full screen icon](media/end-user-reading-view/power-bi-focus-icon.png)  .
 
 ![full screen mode](media/end-user-reading-view/power-bi-full-screen.png)
 

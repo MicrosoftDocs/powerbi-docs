@@ -4,6 +4,7 @@ description: All about dashboard tiles in Power BI for consumers. This includes 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service

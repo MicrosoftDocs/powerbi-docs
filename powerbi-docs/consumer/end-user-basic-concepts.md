@@ -7,14 +7,15 @@ ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
+ms.custom: seodec18
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
-# Power BI - basic concepts for Power BI service ***consumers***
+# Basic concepts for Power BI service ***consumers***
 
 ## Power BI *consumers* and *designers*
 This article assumes that you've already read [Power BI overview](../power-bi-overview.md) and have identified yourself as a Power BI ***consumer***. Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use Power BI service, which is the website-based version of Power BI. 
@@ -29,13 +30,13 @@ Most Power BI consumers get Power BI service because 1) their company buys licen
 
 To get started, simply open a browser and type **app.powerbi.com**. The very first time you open Power BI service, you'll see something like this.
 
-![](media/end-user-basic-concepts/power-bi-open.png)
+![Welcome screen for Power BI service](media/end-user-basic-concepts/power-bi-open.png)
 
 As you use Power BI, you'll personalize what you see when you open the website each time.  For example, some people like Power BI to open to the Home page while others have a favorite dashboard they want to see first. Don't worry, we'll teach you how to do this. 
 - [Home preview](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
 - [Set content as **featured**](end-user-featured.md) 
 
-![](media/end-user-basic-concepts/power-bi-first.png)
+![shows Home page view and dashboard view](media/end-user-basic-concepts/power-bi-first.png)
 
 But before we get much further, let's back up and talk about the building blocks that make up Power BI service.
 
@@ -43,7 +44,7 @@ But before we get much further, let's back up and talk about the building blocks
 ### Introduction to building blocks
 For a Power BI consumer, the 5 building blocks are: ***visualizations***, ***dashboards***, ***reports***, ***apps***, and ***datasets***. These are sometimes referred to as *Power BI* ***content***. And *content* exists in ***workspaces***. A typical workflow involves all of these building blocks:  A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard and shares the reports and dashboards with *consumers*, like you, (black in diagram below) in the form of *apps* or other types of shared content. 
 
-![](media/end-user-basic-concepts/power-bi-workflow.png)
+![flow chart, basic](media/end-user-basic-concepts/power-bi-workflow.png)
 
 At its most basic. 
 * ![visualization icon](media/end-user-basic-concepts/visual.png) a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers* using the data in *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop. 
@@ -74,7 +75,7 @@ Each dataset represents a single source of data, for example, an Excel workbook 
 
 When a designer shares an app with you, you can see which datasets are included with the app. 
 
-![](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Apps selected and arrow pointing to the Datasets section on canvas](media/end-user-basic-concepts/power-bi-dataset-list.png)
 
 **ONE** dataset...
 
@@ -113,14 +114,14 @@ A Power BI report is one or more pages of visualizations, graphics, and text. Al
 * are created using data from only one dataset.  
 * can be part of multiple apps
   
-  ![](media/end-user-basic-concepts/drawing5.png)
+  ![relationship drawing for a report](media/end-user-basic-concepts/drawing5.png)
 
 ________________________________________________
 
 ## Dashboards
 A dashboard represents a customized view of some subset of the underlying dataset(s). *Designers* build dashboards and share them with *consumers*; either individually or as part of an app. A dashboard is a single canvas that contains *tiles*, graphics, and text. 
 
-  ![](media/end-user-basic-concepts/power-bi-dashboard.png)
+  ![sample dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
 A tile is a rendering of a visual that a *designer* *pins*, for example, from a report to a dashboard.  Each pinned tile displays a [visualization](end-user-visualizations.md) that was created from a dataset and pinned to that dashboard. A tile can also contain an entire report page and can contain live streaming data or a video. There are many ways that *designers* add tiles to dashboards; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](end-user-tiles.md). 
 
@@ -140,20 +141,20 @@ What are some purposes for dashboards?  Here are just a few:
 * can display visualizations from many different reports
 * can display visualizations pinned from other tools (e.g., Excel)
   
-  ![](media/end-user-basic-concepts/drawing1.png)
+  ![relationship drawing for a dashboard](media/end-user-basic-concepts/drawing1.png)
 
 ________________________________________________
 
 ## Apps
 These collections of dashboards and reports organize related content together into a single package. Power BI *designers* build them and share them with individuals, groups, an entire organization, or the public. As a consumer, you can be confident that you and your colleagues are working with the same data; a single trusted version of the truth. 
 
-![](media/end-user-basic-concepts/power-bi-app.png)
+![Apps selected in leftnav](media/end-user-basic-concepts/power-bi-app.png)
 
 Apps are easy to find and install in the Power BI service (https://powerbi.com) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device. 
 
 This app has three related dashboards and three related reports that make up a single app.
 
-![](media/end-user-basic-concepts/power-bi-app-list.png)
+![related content for the selected app](media/end-user-basic-concepts/power-bi-app-list.png)
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date.
 

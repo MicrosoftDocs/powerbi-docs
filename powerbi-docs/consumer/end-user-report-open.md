@@ -1,14 +1,15 @@
 ---
-title: View a report in Power BI service for consumers.
+title: View a report
 description: This topic shows Power BI consumers and end users had to open and view a Power BI report.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it's been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
