@@ -11,7 +11,7 @@ For Power BI, the first choice you have to make is the mode of the gateway.
 * **On-premises data gateway:** Multiple users can share and reuse a gateway in this mode. This gateway can be used by Power BI, PowerApps, Flow or Logic Apps. For Power BI, this includes support for both schedule refresh and DirectQuery
 * **Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This selection launchs installation of the personal gateway.
 
-There are a few things to note about insalling either mode of the gateway:
+There are a few things to note about installing either mode of the gateway:
 
 * both gateways require 64-bit Windows operating systems
 * gateways can’t be installed on a domain controller
