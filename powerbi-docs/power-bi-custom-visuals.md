@@ -1,5 +1,5 @@
 ---
-title: Custom visualizations in Power BI
+title: Custom visuals in Power BI
 description: Custom visualizations in Power BI
 author: markingmyname
 ms.author: maghan
@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/11/2018
 LocalizationGroup: Visualizations
 ---
 
 # Custom visuals in Power BI
 
-When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download Power BI Desktop or open Power BI service (app.powerbi.com), this set of visuals comes "pre-packaged."
+When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) or open [Power BI service](app.powerbi.com), this set of visuals comes "pre-packaged."
 
 ![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-But you are not limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
+But you aren't limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
 
 Custom visuals are created by developers, using the custom visuals SDK, to enable business users to see their data in a way that fits the business best. Report authors can then import the custom visuals files into their reports and use them as any other Power BI visuals. Custom visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
 
