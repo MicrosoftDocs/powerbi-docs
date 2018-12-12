@@ -1,14 +1,15 @@
 ---
-title: Add a report filter
+title: Add a filter to a report
 description: How to add a filter to a report in Power BI service for consumers
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Reports

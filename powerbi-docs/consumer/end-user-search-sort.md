@@ -1,14 +1,15 @@
 ---
-title: Searching and sorting your content in Power BI service
+title: Search and sort your content in Power BI service
 description: documentation for searching and sorting content in Power BI workspaces
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started

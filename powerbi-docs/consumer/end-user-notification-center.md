@@ -1,20 +1,21 @@
 ---
-title: Power BI Notification Center
+title: View messages in the Notification Center
 description: The Notification Center is a sequential feed of information related to your Power BI experience.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
-# Power BI Notifications
+# View Power BI notifications
 The Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, alerts you've set, and more. You can [set alerts in the Power BI service](../service-set-data-alerts.md) and also in the Power BI mobile apps.
 
 Watch Amanda review notifications she's received, manage her notifications, and respond to them. Then follow the instructions below the video to try it out yourself.

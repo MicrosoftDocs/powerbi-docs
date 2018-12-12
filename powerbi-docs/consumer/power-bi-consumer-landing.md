@@ -6,9 +6,10 @@ manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.author: mihart
-layout: LandingPage
+layout: landingpage
+ms.custom: seodec18
 
 LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
