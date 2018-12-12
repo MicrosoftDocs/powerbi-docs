@@ -397,23 +397,27 @@
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
+    - name: "Comparing Power BI Desktop and the service"
+      href: service-service-vs-desktop.md
     - name: Basic concepts
       items: 
       - name: "Basic concepts for designers"
         href: service-basic-concepts.md
-      - name: "Data sources for Power BI"
+      - name: "Kinds of data in Power BI"
         href: service-get-data.md
-      - name: "Publishing to end users"
-        href: service-how-to-collaborate-distribute-dashboards-reports.md
-      - name: "Workspaces in Power BI"
+      - name: "Organizing your work"
         href: service-new-workspaces.md
+      - name: "How end users access your data"
+        href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: Workflow in Power BI
       items: 
-        - name: "Undertanding data refresh"
+        - name: "Keeping data fresh"
           href: refresh-data-understand.md
+        - name: "Monitoring usage"
+          href: service-usage-metrics.md
     - name: Licensing
       items: 
-      - name: "Power BI admin portal"
+      - name: "Managing your users' accounts"
         href: service-admin-portal.md
       - name: "Self-service sign-up"
         href: service-self-service-signup-for-power-bi.md 
@@ -445,7 +449,7 @@
           href: service-azure-egress-power-bi.md           
       - name: Report design
         items: 
-        - name: "The report editor...Take a tour"
+        - name: "Tour the report editor"
           href: service-the-report-editor-take-a-tour.md
         - name: "Visualizations in Power BI"
           href: visuals/power-bi-report-visualizations.md
@@ -453,10 +457,10 @@
           href: power-bi-reports-filters-and-highlighting.md
         - name: "Page display settings in a Power BI report"
           href: power-bi-report-display-settings.md
-        - name: "Introduction to Cortana for Power BI"
-          href: service-cortana-intro.md
       - name: Other
         items:         
+        - name: "Introduction to Cortana for Power BI"
+          href: service-cortana-intro.md
         - name: "Microsoft Flow and Power BI"
           href: service-flow-integration.md
         - name: "Get started with third-party apps"
@@ -583,7 +587,7 @@
         href: service-comma-separated-value-files.md
       - name: "Real-time streaming in Power BI"
         href: service-real-time-streaming.md
-      - name: "Publish to Power BI from Excel 2016"
+      - name: "Publish to Power BI from Excel"
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
@@ -635,8 +639,6 @@
         href: service-dashboard-pin-live-tile-from-report.md
       - name: "Data alerts in Power BI service"
         href: service-set-data-alerts.md
-      - name: "Usage metrics for dashboards"
-        href: service-usage-metrics.md
       - name: "Add an image, text box, video, or code to a dashboard"
         href: service-dashboard-add-widget.md
       - name: "Edit a tile"
