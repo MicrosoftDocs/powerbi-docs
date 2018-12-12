@@ -103,10 +103,12 @@ Please note that in order to certify your visual, it should comply to the certif
 
 Recall certification is an optional process, it is up to you to decide if you want your IAP visual to be certified.   
 
-## How to get support?
+## Additional questions
 
-Feel free to contact the **custom visuals support team: pbicvsupport@microsoft.com** with any questions, comments, or issues you have.  
+### How to get support?
+
+Feel free to contact the custom visuals support team: *pbicvsupport@microsoft.com* with any questions, comments, or issues you have.  
 
 ## Next steps
 
-For information about troubleshooting, visit [Troubleshooting your Power BI custom visuals](power-bi-custom-visuals-troubleshoot.md).
+For more information, visit [Troubleshooting your Power BI custom visuals](power-bi-custom-visuals-troubleshoot.md).
