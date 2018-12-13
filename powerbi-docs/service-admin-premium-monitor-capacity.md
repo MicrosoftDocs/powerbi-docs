@@ -18,7 +18,7 @@ This article provides an overview of monitoring the metrics for your Power BI Pr
 
 You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
 
-**The current version of the app is 2.0 (released December 13, 2018).**
+**The current version of the app is 1.10 (released December 13, 2018).**
 
 .
 
@@ -52,7 +52,7 @@ The dashboard includes the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **System Summary** | * Version of the application<br> * Number of capacities for which you are admin<br> * Number of workspaces in your capacities<br> * Average memory consumption in GB over the past seven days<br> * Maximum memory consumption in GB in the past seven days<br> * Local time that maximum memory consumption occurred<br> * Number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets<br> * Local time that CPU exceeded 80% the most times in an hour |
+| **System Summary** | * Version of the application<br> * Number of capacities for which you are admin<br> * Number of workspaces in your capacities that are reporting metrics<br> * Average memory consumption in GB over the past seven days<br> * Maximum memory consumption in GB in the past seven days<br> * Local time that maximum memory consumption occurred<br> * Number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets<br> * Local time that CPU exceeded 80% the most times in an hour |
 | **Dataset Summary** | * Total number of datasets across all workspaces in your capacities<br> * Number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets<br> * Local time that Direct query/Live connections exceeded 80% the most times in an hour<br> * Total number of refreshes in the past seven days<br> * Average refresh wait time - the average lag between the scheduled time and start of the refresh, in minutes<br> * Average refresh duration - the time taken to complete the refresh, in minutes<br> * Total number of queries run in the past seven days<br> * Average query wait time - the time a query waited on system resources before starting execution, in milliseconds<br> * Average query duration - the time taken to complete the query, in milliseconds<br> * Total number of models evicted due to memory pressure<br> * Average size of datasets <br> * Average count of datasets loaded into memory |
 | **Dataflow Summary** | * Total number of dataflows across all workspaces in your capacities<br> * Total number of refreshes in the past seven days<br> * Average refresh wait time - the average lag between the scheduled time and start of the refresh, in minutes<br> * Average refresh duration - the time taken to complete the refresh, in minutes |
 | **Paginated Report Summary** | * Total number of paginated reports across all workspaces in your capacities<br> * Total number of times that all reports have been viewed by users<br> * Total number of rows of data in all reports<br> * Total time it takes for all phases (data retrieval, processing, and rendering) of all reports, in milliseconds |
@@ -71,6 +71,8 @@ Click the dashboard to go to the underlying report. The report has five tabs, wh
 * **Resource Consumption**: overall capacity metrics including memory and CPU high utilization.
 
 * **IDs and Info**: names, IDs, and owners for capacities, workspaces, and workloads.
+
+On each tab, you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics.
 
 #### Datasets tab
 
