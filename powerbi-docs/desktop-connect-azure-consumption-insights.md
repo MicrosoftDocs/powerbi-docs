@@ -1,14 +1,15 @@
 ---
-title: Connect to Azure Consumption Insights data in Power BI Desktop (Beta)
+title: Connect to Azure Consumption Insights data (Beta)
 description: Easily connect to Azure and gain insights about consumption and usage using Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -65,7 +66,7 @@ You can select a checkbox beside any table to see a preview. You can select one 
 > 
 > 
 
-When you select **Load** the data is loaded into **Power BI Desktop**.
+When you select **Load** the data is loaded into **Power BI Desktop**.  The connector will load data according to the table's default time period.  If you need to customize the time period, [you can setup a custom query](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 

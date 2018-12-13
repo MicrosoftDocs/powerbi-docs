@@ -10,10 +10,11 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 
-# Power BI admin portal
+# Administering Power BI in the admin portal
 
 The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Office 365 admin center, and settings.
 

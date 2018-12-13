@@ -1,27 +1,28 @@
 ---
-title: Embed Power BI content into an application for your organization
-description: Learn how to integrate, or embed, a report, dashboard, or tile into a web app by using the Power BI APIs for your organization.
+title: Embedded analytics to embed Power BI content in your application for your organization
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organziation. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ""
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
 
-This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK along with the Power BI JavaScript API to embed Power BI into an application for your organization. In Power BI, you can embed reports, dashboards, or tiles into an application by using **user owns data**. **User owns data** lets your application extend the Power BI service.
+In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service to use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 In this tutorial, you learn the following tasks:
->[!div class="checklist"]
->* Register an application in Azure.
->* Embed a Power BI report into an application.
+> [!div class="checklist"]
+> * Register an application in Azure.
+> * Embed a Power BI report into an application.
 
 ## Prerequisites
 
@@ -36,9 +37,9 @@ To get started, you need a Power BI Pro account and a Microsoft Azure subscripti
 
 Before you start embedding reports, dashboards, or tiles into your application, make sure your environment is set up to allow for embedding. As part of the setup, take one of these actions:
 
-- You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to quickly get started and download a sample application that walks you through creating an environment and embedding a report.
+* You can go through the [embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) so quickly get started and download a sample application that walks you through creating an environment and embedding a report.
 
-- If you choose to set up the environment manually, take the steps in the following sections.
+* If you choose to set up the environment manually, take the steps in the following sections.
 
 ### Register an application in Azure Active Directory
 
@@ -56,13 +57,13 @@ To give your application access to the Power BI REST APIs, register it with Azur
 
     ![New app registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Follow the prompts and create a new application. For **user owns data**, use **Web app / API** for the **Application type**. You must also provide a **Sign-on URL** that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
+4. Follow the prompts and create a new application. For **user owns data**, use **Web app / API** for the **Application type**. Provide a **Sign-on URL** that Azure AD uses to return token responses. Enter a value specific to your application. An example is `http://localhost:13526/`.
 
     ![Create an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### Apply permissions to your application within Azure Active Directory
 
-You must enable permissions for your application in addition to what you provided on the app registration page. Sign in with a global admin account to enable permissions.
+Enable permissions for your application in addition to what you provided on the app registration page. Sign in with a global admin account to enable permissions.
 
 ### Use the Azure Active Directory portal
 
@@ -164,69 +165,69 @@ To embed your content by using a sample application, follow these steps:
 
     1. Sign in to the [Azure portal](https://portal.azure.com).
 
-        ![Azure portal dashboard](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure portal dashboard](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-    1. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
 
-        ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Select the application that needs to use the **ApplicationID**.
+    3. Select the application that needs to use the **ApplicationID**.
 
-        ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. You should see an **Application ID** that's listed as a GUID. Use this **Application ID** as the **ApplicationID** for the application.
+    4. You should see an **Application ID** that's listed as a GUID. Use this **Application ID** as the **ApplicationID** for the application.
 
         ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
+    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
 
-    1. To get the **ApplicationSecret**, follow these steps:
+    To get the **ApplicationSecret**, follow these steps:
 
-        1. Sign in to the [Azure portal](https://portal.azure.com).
+    1. Sign in to the [Azure portal](https://portal.azure.com).
 
-            ![Azure portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-        1. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
 
-            ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Select the application that needs to use the **ApplicationSecret**.
+    3. Select the application that needs to use the **ApplicationSecret**.
 
-            ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-        1. Select **Settings**.
+    4. Select **Settings**.
 
-            ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+       ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-        1. Select **Keys**.
+    5. Select **Keys**.
 
-            ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+       ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-        ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+          ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    1. For the **groupId**, enter the app workspace GUID from Power BI.
+    7. For the **groupId**, enter the app workspace GUID from Power BI.
 
-        ![Enter the groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+       ![Enter the groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    1. For the **reportId**, enter the report GUID from Power BI.
+    8. For the **reportId**, enter the report GUID from Power BI.
 
-        ![Enter the reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+       ![Enter the reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Run the application:
 
-    1. First select **Run** in **Visual Studio**.
+    Select **Run** in **Visual Studio**.
 
-        ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+    ![Run the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    1. Then select **Get Report**.
+    Then select **Get Report**.
 
-        ![Select content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+    ![Select content](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    1. Now you can view the report in the sample application.
+    Now you can view the report in the sample application.
 
-        ![View the report in the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    ![View the report in the application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## Embed your content within your application
 
@@ -424,17 +425,16 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
-| Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits | Maximum page renders at peak hour |
+| Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |150-300 |
-| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |301-600 |
-| EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |601-1,200 |
-| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |1,201-2,400 |
-| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |2,401-4,800 |
-| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |4,801-9,600 |
-| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |9,601-19,200 |
-| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |19,201-38,400 |
-
+| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |
+| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |
+| EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |
+| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |
+| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |
+| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |
+| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |
+| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
 > [!NOTE]
 > - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
