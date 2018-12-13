@@ -854,7 +854,9 @@
       - name: "Embed content for sovereign clouds"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
-      items: 
+      items:
+      - name: "Performance best practices"
+        href: developer/embedded-performance-best-practices.md
       - name: "Row-level security (RLS)"
         href: developer/embedded-row-level-security.md
       - name: "Azure diagnostic logging for Power BI Embedded"
