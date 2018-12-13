@@ -12,7 +12,7 @@ ms.date: 05/18/2018
 LocalizationGroup: Reports
 ---
 
-# Power BI Performance Best Practices
+# Power BI performance best practices
 
 This article offers guidance for building fast and reliable reports in Power BI.  
 
@@ -75,7 +75,7 @@ The following section describes general best practices for connecting via Direct
 - Enabling row-level security can result in substantial changes in performance. Be sure to test the different row-level security roles that your users will assume.
 - There are query-level time-outs enforced by the service to ensure that long-running queries cannot monopolize system resources. Queries that take longer than 225 seconds will time out and result in a visual-level error.
 
-## Understanding dashboards and query caches
+## Understand dashboards and query caches
 
 Visuals pinned to dashboards are served by the query cache when the dashboard is loaded. Conversely, when visiting a report, the queries are made on-the-fly to the data source – either the Power BI service (in the case of import) or the data source that you specify (in the case of DirectQuery or live connection).  
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2018
+ms.date: 12/12/2018
 ---
 
-# Troubleshooting your embedded application
+# Troubleshoot your embedded application
 
 This article discusses some common issues you may get when embedding content from Power BI.
 
-## Tools for troubleshooting
+## Tools to troubleshoot
 
 ### Fiddler Trace
 
@@ -29,7 +29,7 @@ F12 launches the developer window within your browser. This tool provides the ab
 
 ![F12 Browser debugging](media/embedded-troubleshoot/browser-f12.png)
 
-### Extracting error details from Power BI response
+### Extract error details from Power BI response
 
 This code snippet shows how to extract the error details from HTTP exception:
 
@@ -102,7 +102,7 @@ If you're using Power BI Embedded and using Azure AD Direct authentication, and 
 
 There's a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-We recommend you enable this only as a per-app basis.
+We recommend you enable this policy only as a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
@@ -178,7 +178,7 @@ User consent is disabled for the tenant.
 
 A data source can have a single set of credentials for one master user. If you need to use different credentials, create additional master users. Then, assign the different credentials in each of the master users contexts, and embed using the Azure AD token of that user.
 
-## Troubleshooting your embedded application with the IError object
+## Troubleshoot your embedded application with the IError object
 
 Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) to debug your application and better understand the cause of your errors.
 

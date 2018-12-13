@@ -33,14 +33,14 @@ Usually, report visuals are saved with cached data. The cached data is used to g
 
 If you embed reports with the same filters, to avoid passing a list of filters in the load configuration, save the report with filters already applied.
 
-## Preloading
+## Preload
 
 Use the *preload* JavaScript API to improve the end-user performance.
 Powerbi.preload() downloads javascript, css files, and other artifacts, which is used later to embed in a report.
 
 Call preload if you're not embedding the report immediately. For example, if you embed a report on a button click, it’s better to call preload when the previous page loads. Then when the application user clicks the button, the rendering is faster.
 
-## Measuring performance
+## Measure performance
 
 To measure performance, use:
 
@@ -64,7 +64,7 @@ Keep tools and SDK packages up-to-date.
 > [!Note]
 > Remember that loading time mainly depends on elements relevant to the report and data itself. Such as number of visuals, size of data and complexity of the queries and calculated measures. Please follow [best practices](../power-bi-reports-performance.md) to improve the report’s loading time.
 
-## Next Steps
+## Next steps
 
 * [Report performance](../power-bi-reports-performance.md)
 * [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
