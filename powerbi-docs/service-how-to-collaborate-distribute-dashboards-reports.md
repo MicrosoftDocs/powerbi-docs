@@ -1,5 +1,5 @@
 ---
-title: How should I collaborate and share in Power BI?
+title: Ways to share your work
 description: In Power BI you can collaborate on and share dashboards, reports, tiles, and apps in different ways. Each has its advantages.
 author: maggiesMSFT
 manager: kfile
@@ -13,7 +13,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# How should I collaborate and share in Power BI?
+# Ways to share your work in Power BI
 
 You've created dashboards and reports. Maybe you collaborate on them with your coworkers, too. Then you want others to have access to them. What's the best way to distribute them?
 

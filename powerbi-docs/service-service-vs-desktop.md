@@ -18,7 +18,6 @@ LocalizationGroup: Reports
 
 The report editor in Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
-## The difference between report *creators* and report *consumers*
 The ability to create and edit a report is restricted to report owners (aka *creators*). If you are *consuming* a report that has been shared with you, you'll still be able to open and interact with the report in Power BI service [Reading view only](consumer/end-user-reading-view.md), but won't have all the robust and extensive features available to the report creator.  
 
 To learn more about report Reading view, see [Reading view and Editing view in Power BI service](consumer/end-user-reading-view.md) 

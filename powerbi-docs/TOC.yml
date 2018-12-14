@@ -251,6 +251,8 @@
         href: desktop-r-powered-custom-visuals.md
       - name: "Use gridlines and snap-to-grid"
         href: desktop-gridlines-snap-to-grid.md
+      - name: "Page display settings in a Power BI report"
+        href: power-bi-report-display-settings.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -283,6 +285,8 @@
         href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizations
       items: 
+      - name: "Visualizations in Power BI"
+        href: visuals/power-bi-report-visualizations.md
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
       - name: "Change the type of visualization in a report"
@@ -387,6 +391,8 @@
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
+    - name: "Comparing Power BI Desktop and the service"
+      href: service-service-vs-desktop.md
   - name: Tutorials
     items: 
     - name: "Get started with Power BI"
@@ -397,17 +403,17 @@
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
-    - name: "Comparing Power BI Desktop and the service"
-      href: service-service-vs-desktop.md
     - name: Basic concepts
       items: 
       - name: "Basic concepts for designers"
         href: service-basic-concepts.md
       - name: "Kinds of data in Power BI"
         href: service-get-data.md
+      - name: "Tour the report editor"
+        href: service-the-report-editor-take-a-tour.md
       - name: "Organizing your work"
         href: service-new-workspaces.md
-      - name: "How end users access your data"
+      - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: Workflow in Power BI
       items: 
@@ -417,10 +423,10 @@
           href: service-usage-metrics.md
     - name: Licensing
       items: 
-      - name: "Managing your users' accounts"
-        href: service-admin-portal.md
       - name: "Self-service sign-up"
         href: service-self-service-signup-for-power-bi.md 
+      - name: "Licensing in your organization"
+        href: service-admin-licensing-organization.md
       - name: "Features by license type"
         href: service-features-license-type.md
     - name: More concepts
@@ -449,14 +455,6 @@
           href: service-azure-egress-power-bi.md           
       - name: Report design
         items: 
-        - name: "Tour the report editor"
-          href: service-the-report-editor-take-a-tour.md
-        - name: "Visualizations in Power BI"
-          href: visuals/power-bi-report-visualizations.md
-        - name: "About filters and highlighting in reports"
-          href: power-bi-reports-filters-and-highlighting.md
-        - name: "Page display settings in a Power BI report"
-          href: power-bi-report-display-settings.md
       - name: Other
         items:         
         - name: "Introduction to Cortana for Power BI"
@@ -467,113 +465,7 @@
           href: service-power-bi-get-started-third-party-apps.md
   - name: How to
     items: 
-    - name: Connect to services
-      items: 
-      - name: "Connect to services"
-        href: service-connect-to-services.md
-      - name: "Acumatica"
-        href: service-connect-to-acumatica.md
-      - name: "Adobe Analytics"
-        href: service-connect-to-adobe-analytics.md
-      - name: "Alpine Metrics Sales Predictions"
-        href: service-connect-to-alpine-metrics.md
-      - name: "appFigures"
-        href: service-connect-to-appfigures.md
-      - name: "Application Insights"
-        href: service-connect-to-application-insights.md
-      - name: "AT Internet Bridge"
-        href: service-connect-to-at-internet.md
-      - name: "Azure Audit Logs"
-        href: service-connect-to-azure-audit-logs.md
-      - name: "Azure Mobile Engagement"
-        href: service-connect-to-azure-mobile.md
-      - name: "Microsoft Azure Consumption Insights"
-        href: service-connect-to-azure-consumption-insights.md
-      - name: "Azure Search"
-        href: service-connect-to-azure-search.md
-      - name: "Circuit ID"
-        href: service-connect-to-circuit-id.md
-      - name: "ClickDimensions"
-        href: service-connect-to-clickdimensions.md
-      - name: "comScore Digital Analytix"
-        href: service-connect-to-connect-to.md
-      - name: "GitHub"
-        href: service-connect-to-github.md
-      - name: "Google Analytics"
-        href: service-connect-to-google-analytics.md
-      - name: "Insightly"
-        href: service-connect-to-insightly.md
-      - name: "IntelliBoard"
-        href: service-connect-to-intelliboard.md
-      - name: "Lithium"
-        href: service-connect-to-lithium.md
-      - name: "MailChimp"
-        href: service-connect-to-mailchimp.md
-      - name: "Mandrill"
-        href: service-connect-to-mandrill.md
-      - name: "Marketo"
-        href: service-connect-to-marketo.md
-      - name: "Microsoft Azure Enterprise"
-        href: service-connect-to-azure-enterprise.md
-      - name: "Microsoft Dynamics AX"
-        href: service-connect-to-microsoft-dynamics-ax.md
-      - name: "Microsoft Dynamics CRM"
-        href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics NAV"
-        href: service-connect-to-microsoft-dynamics-nav.md
-      - name: "Office365Mon"
-        href: service-connect-to-office365mon.md
-      - name: "Planview Enterprise"
-        href: service-connect-to-planview.md
-      - name: "Prevedere"
-        href: service-connect-to-prevedere.md
-      - name: "Project Online"
-        href: service-connect-to-project-online.md
-      - name: "Projectplace"
-        href: service-connect-to-projectplace.md
-      - name: "QuickBooks Online"
-        href: service-connect-to-quickbooks-online.md
-      - name: "Salesforce"
-        href: service-connect-to-salesforce.md
-      - name: "SendGrid"
-        href: service-connect-to-sendgrid.md
-      - name: "ServiceNow Incidents"
-        href: service-connect-to-servicenow.md
-      - name: "Smartsheet"
-        href: service-connect-to-smartsheet.md
-      - name: "SparkPost"
-        href: service-connect-to-sparkpost.md
-      - name: "SQL Database Auditing"
-        href: service-connect-to-azure-sql-database-auditing.md
-      - name: "SQL Sentry"
-        href: service-connect-to-sql-sentry.md
-      - name: "Stripe"
-        href: service-connect-to-stripe.md
-      - name: "SweetIQ"
-        href: service-connect-to-sweetiq.md
-      - name: "Troux"
-        href: service-connect-to-troux.md
-      - name: "Twilio"
-        href: service-connect-to-twilio.md
-      - name: "tyGraph"
-        href: service-connect-to-tygraph.md
-      - name: "UserVoice"
-        href: service-connect-to-uservoice.md
-      - name: "VMob"
-        href: service-connect-to-vmob.md
-      - name: "Webtrends"
-        href: service-connect-to-webtrends.md
-      - name: "Windows Dev Center"
-        href: service-connect-to-windows-dev-center.md
-      - name: "Xero"
-        href: service-connect-to-xero.md
-      - name: "Zendesk"
-        href: service-connect-to-zendesk.md
-      - name: "Ziosk"
-        href: service-connect-to-ziosk.md
-      - name: "Zuora"
-        href: service-connect-to-zuora.md
-    - name: Data from files
+    - name: Get data from files
       items: 
       - name: "From Excel to stunning report"
         href: service-from-excel-to-stunning-report.md
@@ -591,7 +483,7 @@
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
-    - name: Data from databases
+    - name: Get data from databases
       items: 
       - name: "Azure SQL Data Warehouse with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
@@ -601,7 +493,7 @@
         href: spark-on-hdinsight-with-direct-connect.md
       - name: "SQL Server Analysis Services live data in Power BI"
         href: sql-server-analysis-services-tabular-data.md
-    - name: Data refresh
+    - name: Refresh data
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
@@ -659,6 +551,8 @@
       items: 
       - name: "Create a report from a dataset"
         href: service-report-create-new.md
+      - name: "About filters and highlighting in reports"
+        href: power-bi-reports-filters-and-highlighting.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
       - name: "Save a report in Power BI"
@@ -699,10 +593,8 @@
         href: service-insights.md
       - name: "Optimize your data for  Quick Insights"
         href: service-insights-optimize.md
-    - name: Share your work
+    - name: Collaborate in Power BI
       items: 
-      - name: "Share dashboards and reports"
-        href: service-share-dashboards.md
       - name: "Create and share apps"
         href: service-create-distribute-apps.md
       - name: "Create app workspaces"
@@ -711,22 +603,24 @@
         href: service-create-the-new-workspaces.md
       - name: "Manage data storage in workspaces"
         href: service-admin-manage-your-data-storage-in-power-bi.md
-      - name: "Share a filtered report"
-        href: service-share-reports.md
-      - name: "Publish from Power BI to the web"
-        href: service-publish-to-web.md
-      - name: "Embed report in SharePoint Online"
-        href: service-embed-report-spo.md
       - name: "Connect to files on your group's OneDrive"
         href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in your group workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Office 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
+    - name: Publish and share your work
+      items: 
+      - name: "Share dashboards and reports"
+        href: service-share-dashboards.md
+      - name: "Share a filtered report"
+        href: service-share-reports.md
+      - name: "Publish from Power BI to the web"
+        href: service-publish-to-web.md
+      - name: "Embed report in SharePoint Online"
+        href: service-embed-report-spo.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Publish
-      items: 
       - name: "Power BI publisher for Excel"
         href: publisher-for-excel.md
     - name: Troubleshooting
@@ -817,7 +711,113 @@
         href: service-govus-signup.md
       - name: "Delete almost anything in Power BI"
         href: service-delete.md
-      - name: Content Packs
+      - name: Connect to services
+        items: 
+        - name: "Connect to services"
+          href: service-connect-to-services.md
+        - name: "Acumatica"
+          href: service-connect-to-acumatica.md
+        - name: "Adobe Analytics"
+          href: service-connect-to-adobe-analytics.md
+        - name: "Alpine Metrics Sales Predictions"
+          href: service-connect-to-alpine-metrics.md
+        - name: "appFigures"
+          href: service-connect-to-appfigures.md
+        - name: "Application Insights"
+          href: service-connect-to-application-insights.md
+        - name: "AT Internet Bridge"
+          href: service-connect-to-at-internet.md
+        - name: "Azure Audit Logs"
+          href: service-connect-to-azure-audit-logs.md
+        - name: "Azure Mobile Engagement"
+          href: service-connect-to-azure-mobile.md
+        - name: "Microsoft Azure Consumption Insights"
+          href: service-connect-to-azure-consumption-insights.md
+        - name: "Azure Search"
+          href: service-connect-to-azure-search.md
+        - name: "Circuit ID"
+          href: service-connect-to-circuit-id.md
+        - name: "ClickDimensions"
+          href: service-connect-to-clickdimensions.md
+        - name: "comScore Digital Analytix"
+          href: service-connect-to-connect-to.md
+        - name: "GitHub"
+          href: service-connect-to-github.md
+        - name: "Google Analytics"
+          href: service-connect-to-google-analytics.md
+        - name: "Insightly"
+          href: service-connect-to-insightly.md
+        - name: "IntelliBoard"
+          href: service-connect-to-intelliboard.md
+        - name: "Lithium"
+          href: service-connect-to-lithium.md
+        - name: "MailChimp"
+          href: service-connect-to-mailchimp.md
+        - name: "Mandrill"
+          href: service-connect-to-mandrill.md
+        - name: "Marketo"
+          href: service-connect-to-marketo.md
+        - name: "Microsoft Azure Enterprise"
+          href: service-connect-to-azure-enterprise.md
+        - name: "Microsoft Dynamics AX"
+          href: service-connect-to-microsoft-dynamics-ax.md
+        - name: "Microsoft Dynamics CRM"
+          href: service-connect-to-microsoft-dynamics-crm.md
+        - name: "Microsoft Dynamics NAV"
+          href: service-connect-to-microsoft-dynamics-nav.md
+        - name: "Office365Mon"
+          href: service-connect-to-office365mon.md
+        - name: "Planview Enterprise"
+          href: service-connect-to-planview.md
+        - name: "Prevedere"
+          href: service-connect-to-prevedere.md
+        - name: "Project Online"
+          href: service-connect-to-project-online.md
+        - name: "Projectplace"
+          href: service-connect-to-projectplace.md
+        - name: "QuickBooks Online"
+          href: service-connect-to-quickbooks-online.md
+        - name: "Salesforce"
+          href: service-connect-to-salesforce.md
+        - name: "SendGrid"
+          href: service-connect-to-sendgrid.md
+        - name: "ServiceNow Incidents"
+          href: service-connect-to-servicenow.md
+        - name: "Smartsheet"
+          href: service-connect-to-smartsheet.md
+        - name: "SparkPost"
+          href: service-connect-to-sparkpost.md
+        - name: "SQL Database Auditing"
+          href: service-connect-to-azure-sql-database-auditing.md
+        - name: "SQL Sentry"
+          href: service-connect-to-sql-sentry.md
+        - name: "Stripe"
+          href: service-connect-to-stripe.md
+        - name: "SweetIQ"
+          href: service-connect-to-sweetiq.md
+        - name: "Troux"
+          href: service-connect-to-troux.md
+        - name: "Twilio"
+          href: service-connect-to-twilio.md
+        - name: "tyGraph"
+          href: service-connect-to-tygraph.md
+        - name: "UserVoice"
+          href: service-connect-to-uservoice.md
+        - name: "VMob"
+          href: service-connect-to-vmob.md
+        - name: "Webtrends"
+          href: service-connect-to-webtrends.md
+        - name: "Windows Dev Center"
+          href: service-connect-to-windows-dev-center.md
+        - name: "Xero"
+          href: service-connect-to-xero.md
+        - name: "Zendesk"
+          href: service-connect-to-zendesk.md
+        - name: "Ziosk"
+          href: service-connect-to-ziosk.md
+        - name: "Zuora"
+          href: service-connect-to-zuora.md
+      - name: Organizational content packs
         items:
         - name: "Manage, update, and delete organizational content packs"
           href: service-organizational-content-pack-manage-update-delete.md
@@ -829,16 +829,16 @@
           href: service-organizational-content-pack-create-and-publish.md
         - name: "Remove your connection to an organizational content pack"
           href: service-organizational-content-pack-disconnect.md
-        - name: Certification
-          items: 
-          - name: "Content Pack Certification Program"
-            href: service-content-pack-overview.md
-          - name: "Template Content Pack authoring"
-            href: template-content-pack-authoring.md
-          - name: "Template Content Pack testing"
-            href: template-content-pack-testing.md
-          - name: "Template Content Pack experiences"
-            href: template-content-pack-experience.md
+      - name: Content pack certification
+        items: 
+        - name: "Content Pack Certification Program"
+          href: service-content-pack-overview.md
+        - name: "Template Content Pack authoring"
+          href: template-content-pack-authoring.md
+        - name: "Template Content Pack testing"
+          href: template-content-pack-testing.md
+        - name: "Template Content Pack experiences"
+          href: template-content-pack-experience.md
   - name: Resources
     items: 
     - name: "Videos"
