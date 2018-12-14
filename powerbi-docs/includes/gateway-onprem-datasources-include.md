@@ -6,7 +6,7 @@
 | Analysis Services Multidimensional |Yes |Yes |
 | File |No |Yes |
 | Folder |No |Yes |
-| IBM DB2 |No |Yes |
+| IBM DB2 |Yes |Yes |
 | IBM Informix Database |No |Yes |
 | IBM Netezza |Yes |Yes |
 | Impala |Yes |Yes |

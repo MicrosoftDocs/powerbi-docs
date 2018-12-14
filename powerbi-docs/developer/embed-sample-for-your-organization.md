@@ -425,17 +425,16 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
-| Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits | Maximum page renders at peak hour |
+| Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |150-300 |
-| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |301-600 |
-| EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |601-1,200 |
-| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |1,201-2,400 |
-| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |2,401-4,800 |
-| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |4,801-9,600 |
-| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |9,601-19,200 |
-| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |19,201-38,400 |
-
+| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |
+| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |
+| EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |
+| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |
+| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |
+| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |
+| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |
+| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
 > [!NOTE]
 > - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
