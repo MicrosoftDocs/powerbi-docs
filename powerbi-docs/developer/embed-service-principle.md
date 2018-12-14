@@ -11,7 +11,7 @@ ms.custom: ""
 ms.date: 01/31/2018
 ---
 
-# Authenticate using service principle for a Power BI Embedded application
+# Service principle name (SPN) for Power BI Embedded applications
 
 To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. This is true for both users (user principal) and applications (service principal).
 
@@ -36,9 +36,27 @@ The application object serves as the template from which common and default prop
 
 A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
 
-## Benefits
+## Why should you use it?
 
+You should use service principle when you don't want to use an actual Power BI (master) account to be able to authenticate a Power BI Embedded application. Espcially when using Multi-factor authentication (MFA) with Azure.  It is more secure than just using a standard login account.
 
+### Configure service pricniple
+
+- Create a web app service principle and secret
+- Service principle an instance of that class
+- Can create an instance of an application
+- Register the application in multiple tenants
+- Only allow apps that the PBI admin approves
+    - Additional tenant settings
+    - Access PBI with the app
+    - Function similar like the new workspace settings
+    - Only through the REST APIs
+
+## SPN vs master account
+
+There are a few differences between using service principle for authenticating compared to using a master account.
+
+With an SPN, you can hide your account information within your application by using an application id and an application secret. However, you cannot use the app Id and the app secret. SPN can create workspaces, add users to groups and remove users, work with APIs, can be viewed in the PBI portal, only works with PBI workspace version 2, cannot access the PBI portal, not neccessary to have a pro license, need dedicated capacity, can import reports, can't install an on-premises gateway, can edit credentials, can refresh on demand.
 
 ## Limitations and considerations
 
