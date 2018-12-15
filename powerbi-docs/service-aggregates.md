@@ -1,20 +1,20 @@
 ---
-title: Aggregates (sum, average, maximum, etc.) in visualizations
-description: Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
+title: Work with aggregates (sum, average, etc.) in the Power BI service
+description: Learn how to change the aggregation in a chart (sum, average, maximum, etc.) in the Power BI service.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/14/2018
 ms.author: mblythe
 ms.custom: seodec18
 
 LocalizationGroup: Reports
 ---
-# Aggregates in Power BI visualizations
+# Work with aggregates (sum, average, etc.) in the Power BI service
 ## What is an aggregate?
 Sometimes you want to mathematically combine values in your data. The mathematical operation could be sum, average, maximum, count, etc. When you combine values in your data, it is called *aggregating*. The result of that mathematical operation is an *aggregate*. 
 

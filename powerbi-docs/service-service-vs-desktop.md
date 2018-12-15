@@ -1,6 +1,6 @@
 ---
 title: Comparing Power BI Desktop and the service
-description: The report editor in Power BI service and the report editor in Power BI Desktop are similar.
+description: Power BI Desktop is a free application you can install on your local computer to connect to, transform, and visualize your data. The Power BI service is a cloud-based, online service, where you connect to and visualize your data, and distribute it to your end users. 
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -9,22 +9,22 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 12/14/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Comparing Power BI Desktop and the service
 
+**Power BI Desktop** is a free application you can install on your local computer that lets you connect to, transform, and visualize your data. The Power BI service is a cloud-based, online service, where you can also connect to and visualize your data, and distribute it to your end users. The application and the service share a core set of features, but each also has features the other doesn't.  With **Power BI Desktop**, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model. In the **Power BI service** you can also connect to data sources, but modeling is limited. In both, you can build reports, with visuals and collections of visuals. Then in the **Power BI service**, you share those reports with report consumers inside and outside your organization. Most people who work on business intelligence projects use **Power BI Desktop** to create reports, and then use the **Power BI service** to share their reports with others.
+_________________________
+
 The report editor in Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
-The ability to create and edit a report is restricted to report owners (aka *creators*). If you are *consuming* a report that has been shared with you, you'll still be able to open and interact with the report in Power BI service [Reading view only](consumer/end-user-reading-view.md), but won't have all the robust and extensive features available to the report creator.  
+If you're a report owner or contributor to a workspace (a *creator*), you can create and edit reports and dashboards in Editing view. If you're a report *consumer*, you can open and interact with the report in the Power BI service in [Reading view](consumer/end-user-reading-view.md). You don't have access all the features available to report creators.  
 
-To learn more about report Reading view, see [Reading view and Editing view in Power BI service](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
-
-In Power BI service, the *report editor* is only available in [Editing View](consumer/end-user-reading-view.md). To open a report in Editing view, you must be a report owner or creator.
 
 The Power BI report editor is made up of 3 sections:  
 

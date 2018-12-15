@@ -413,14 +413,14 @@
         href: service-the-report-editor-take-a-tour.md
       - name: "Organizing your work"
         href: service-new-workspaces.md
-      - name: "Ways to share your work"
-        href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: Workflow in Power BI
       items: 
-        - name: "Keeping data fresh"
-          href: refresh-data-understand.md
-        - name: "Monitoring usage"
-          href: service-usage-metrics.md
+      - name: "Ways to share your work"
+        href: service-how-to-collaborate-distribute-dashboards-reports.md
+      - name: "Keeping data fresh"
+        href: refresh-data-understand.md
+      - name: "Monitoring usage"
+        href: service-usage-metrics.md
     - name: Licensing
       items: 
       - name: "Self-service sign-up"
@@ -433,7 +433,7 @@
       items: 
       - name: "10 tips for getting help"
         href: service-tips-for-finding-help.md
-      - name: Licensing
+      - name: Licensing special cases
         items:         
         - name: "Extended Pro Trial activation"
           href: service-extended-pro-trial.md
@@ -441,24 +441,8 @@
           href: service-govus-overview.md
         - name: "FAQ for Germany Cloud customers"
           href: service-govde-faq.md
-      - name: Data
-        items:         
-        - name: "Get data from files"
-          href: service-get-data-from-files.md
-        - name: "Aggregates (sum, average, maximum, etc.)"
-          href: service-aggregates.md
-        - name: "Data refresh in Power BI"
-          href: refresh-data.md
-        - name: "Azure and Power BI"
-          href: service-azure-and-power-bi.md
-        - name: "Power BI and Azure egress"
-          href: service-azure-egress-power-bi.md           
-      - name: Report design
-        items: 
       - name: Other
         items:         
-        - name: "Introduction to Cortana for Power BI"
-          href: service-cortana-intro.md
         - name: "Microsoft Flow and Power BI"
           href: service-flow-integration.md
         - name: "Get started with third-party apps"
@@ -467,6 +451,8 @@
     items: 
     - name: Get data from files
       items: 
+      - name: "Getting data from files"
+        href: service-get-data-from-files.md
       - name: "From Excel to stunning report"
         href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
@@ -485,6 +471,10 @@
         href: reduce-the-size-of-an-excel-workbook.md
     - name: Get data from databases
       items: 
+      - name: "Azure and Power BI"
+        href: service-azure-and-power-bi.md
+      - name: "Power BI and Azure egress"
+        href: service-azure-egress-power-bi.md           
       - name: "Azure SQL Data Warehouse with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
@@ -495,6 +485,8 @@
         href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
+      - name: "Data refresh in Power BI"
+        href: refresh-data.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh a dataset from a Power BI Desktop file - local"
@@ -563,6 +555,8 @@
         href: service-analyze-in-excel.md
       - name: "Tips and tricks for creating reports"
         href: power-bi-reports-tips-and-tricks-for-creating.md
+      - name: "Work with aggregates in the service"
+        href: service-aggregates.md
       - name: "Usage metrics for reports"
         href: service-usage-metrics.md
       - name: "Create a QR code for a report"
@@ -577,7 +571,7 @@
       items:
       - name: "Get started with Power BI Q&A"
         href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: "Use Q&A to create visualizations and reports"
+      - name: "Use Q&A to create visuals and reports"
         href: power-bi-tutorial-q-and-a.md
       - name: "Make your data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
@@ -587,6 +581,8 @@
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
+      - name: "Intro to Cortana for Power BI"
+        href: service-cortana-intro.md
       - name: "Enable Cortana for Power BI"
         href: service-cortana-enable.md
       - name: "Quick Insights in Power BI"
