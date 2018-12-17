@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/11/2018
+ms.date: 12/17/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Organize your work in workspaces (preview) in Power BI
 
-Power BI is introducing a new workspace experience as a preview. Workspaces are still places to collaborate with colleagues to create collections of dashboards and reports, which you can bundle into *apps* and distribute to your whole organization or to specific people or groups. 
+Workspaces are places to collaborate with colleagues to create collections of dashboards and reports. Then you can bundle those collections into *apps* and distribute them to your whole organization or to specific people or groups. Power BI is introducing a new workspace experience as a preview. 
 
 ![Power BI new workspaces preview](media/service-new-workspaces/power-bi-new-workspaces-preview.png)
 
@@ -28,17 +28,17 @@ When you create one of the new workspaces, you're not creating an underlying, as
 
 You add user groups or individuals to the new workspaces as members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in multiple user groups, they get highest level of permission provided by the role.  See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
-Everyone you add to an app workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+Everyone you add to a workspace needs a Power BI Pro license. In the workspace these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-With the new workspaces, we are redesigning some features. See [App workspace features that work differently](#app-workspace-features-that-work-differently) later in this article for an explanation of the changes you can expect to be permanent along with the preview. Because this is a preview feature, there are some limitations that you should be aware of. See [Known issues](#known-issues) later in this article for an explanation of the current limitations. 
+With the new workspaces, we are redesigning some features. See [Workspace features that work differently](#workspace-features-that-work-differently) later in this article for an explanation of the changes you can expect to be permanent along with the preview. Because this is a preview feature, there are some limitations that you should be aware of. See [Known issues](#known-issues) later in this article for an explanation of the current limitations. 
 
-## Roll out new app workspaces
+## Roll out new workspaces
 
 During the preview period, old and new workspaces can coexist side by side, and you can create either. When the preview for new workspaces ends and they're generally available, old workspaces can still exist for a time. You won't be able to create them, and you'll need to prepare to migrate your workspaces to the new workspaces infrastructure. Don’t worry, you will have several months to complete migration.
 
-## Create one of the new app workspaces
+## Create one of the new workspaces
 
-1. Start by creating the app workspace. Select **Workspaces** > **Create app workspace**.
+1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**.
    
      ![Create app workspace](media/service-new-workspaces/power-bi-create-app-workspace.png)
 
@@ -78,11 +78,11 @@ During the preview period, old and new workspaces can coexist side by side, and 
 
      ![Edit settings and access for a workspace](media/service-new-workspaces/power-bi-edit-workspace.png)
 
-## Add content to your app workspace
+## Add content to your workspace
 
-After you've created an app workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the new workspaces, you can't connect to organizational content packs, or third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the current workspaces you can connect to content packs.
+After you've created a workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either workspace, you can upload or connect to files, just as you would in your own My Workspace. In the new workspaces, you can't connect to organizational content packs, or third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the current workspaces you can connect to content packs.
 
-When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
+When you view content in the content list of a workspace, the workspace name is listed as the owner.
 
 ### Connecting to third-party services in new workspaces (preview)
 
@@ -127,24 +127,24 @@ We’re building Request Access workflows throughout the service so users who do
 
 When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
 
-## Convert old app workspaces to new app workspaces
+## Convert old workspaces to new workspaces
 
-During the preview period, you can't automatically convert your old app workspaces to new ones. You can however create a new app workspace and publish your content to the new location. 
+During the preview period, you can't automatically convert your old workspaces to new ones. You can however create a new workspace and publish your content to the new location. 
 
 When the new workspaces are generally available (GA), you can opt in to migrate the old ones automatically. At some point after GA, you'll have to migrate them.
 
 ## Power BI apps FAQ
 
-### How are the new app workspaces different from current app workspaces?
-* Creating app workspaces won't create corresponding entities in Office 365 like current app workspaces do. (You can still add an Office 365 group to your workspace by assigning it a role). 
-* In current app workspaces, you can add only individuals to the members and admin lists. In the new app workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
-- You can create an organizational content pack from a current app workspace. You can't create one from the new app workspaces.
-- You can consume an organizational content pack from a current app workspace. You can’t consume one from the new app workspaces.
-- During the preview some capabilities aren't enabled yet for new app workspaces. See the next section, [Other planned new workspace features](service-create-the-new-workspaces.md#other-planned-new-app-workspace-preview-features), for details.
+### How are the new workspaces different from current workspaces?
+* Creating workspaces won't create corresponding entities in Office 365 like current workspaces do. (You can still add an Office 365 group to your workspace by assigning it a role). 
+* In current workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
+- You can create an organizational content pack from a current workspace. You can't create one from the new workspaces.
+- You can consume an organizational content pack from a current workspace. You can’t consume one from the new workspaces.
+- During the preview some capabilities aren't enabled yet for new workspaces. See the next section, [Planned new workspace features](service-create-the-new-workspaces.md#planned-new-app-workspace-preview-features), for details.
 
-## Planned new app workspace preview features
+## Planned new workspace preview features
 
-Some other new app workspace preview features are still being developed, but aren't available yet as we launch the preview:
+Some other new workspace preview features are still being developed, but aren't available yet as we launch the preview:
 
 - No **Leave workspace** button.
 - Usage metrics aren't supported yet.
@@ -152,9 +152,9 @@ Some other new app workspace preview features are still being developed, but are
 - SharePoint web part embedding isn't supported yet.
 - No **OneDrive** button for Office 365 groups in Get Data/Files.
 
-## App workspace features that work differently
+## Workspace features that work differently
 
-Some features work differently from current app workspaces in the new app workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
+Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
 
 - Members can or can't reshare: replaced by the Contributor role
 - Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to a forthcoming Viewer role, which allows similar read-only access to the content in a workspace.

@@ -40,11 +40,11 @@ During the preview period, old and new workspaces can coexist side by side, and 
 
 1. Start by creating the app workspace. Select **Workspaces** > **Create app workspace**.
    
-     ![Create app workspace](media/service-create-workspaces/power-bi-create-app-workspace.png)
+     ![Create app workspace](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
 
 2. In **Preview improved workspaces**, select **Try now**.
    
-     ![Preview improved workspaces](media/service-create-workspaces/power-bi-preview-improved-workspaces.png)
+     ![Preview improved workspaces](media/service-create-the-new-workspaces/power-bi-preview-improved-workspaces.png)
 
 2. Give the workspace a name. If the name isn't available, edit it to come up with a unique ID.
    
@@ -52,31 +52,31 @@ During the preview period, old and new workspaces can coexist side by side, and 
    
 1. Add an image, if you want. The file size has to be less than 45 KB.
  
-    ![Name the workspace and add an image](media/service-create-workspaces/power-bi-name-workspace.png)
+    ![Name the workspace and add an image](media/service-create-the-new-workspaces/power-bi-name-workspace.png)
 
 1. Select **Save**.
 
     Here in the **Welcome** screen for your new workspace, you can add data. 
 
-    ![New workspace Welcome screen](media/service-create-workspaces/power-bi-workspace-welcome-screen.png)
+    ![New workspace Welcome screen](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
 
 1. For example, select **Samples** > **Customer Profitability Sample**.
 
     Now in the workspace content list, you see **New workspaces preview**. Because you're an admin, you also see a new action, **Access**.
 
-    ![Workspaces preview content list](media/service-create-workspaces/power-bi-workspaces-preview-content-list.png)
+    ![Workspaces preview content list](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
 
 1. Select **Access**.
 
 1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](#roles-in-the-new-workspaces) later in this article for an explanation of the different roles.
 
-    ![Workspaces add members, admins, contributors](media/service-create-workspaces/power-bi-access-add-members.png)
+    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-access-add-members.png)
 
 9. Select **Add** > **Close**.
 
 1. Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions.
 
-     ![Edit settings and access for a workspace](media/service-create-workspaces/power-bi-edit-workspace.png)
+     ![Edit settings and access for a workspace](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
 
 ## Add content to your app workspace
 

@@ -16,21 +16,21 @@ LocalizationGroup: Reports
 ---
 # Take a tour of the report editor in Power BI
 
-The report editor in the Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
+The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
-As a report creator, you create and edit dashboards and reports. Then you distribute them to your report consumers. They can interact with your dashboards and reports in the Power BI service Reading view only, but not edit them. Read more about the differences between report [Reading view and Editing view in the Power BI service](consumer/end-user-reading-view.md) 
+As a report creator, you create and edit dashboards and reports. Then you distribute them to your report consumers. They can interact with your dashboards and reports in Reading view in the Power BI service, but not edit them. Read more about the differences between report [Reading view and Editing view in the Power BI service](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-In the Power BI service, the *report editor* is only available in Editing View. To open a report in Editing view, you must be a report owner or creator.
+In the Power BI service, the report editor is only available in Editing View. To open a report in Editing view, you must be a report owner or creator, or be a contributor to the app workspace that houses the report.
 
-The Power BI report editor is made up of 3 sections:  
+The Power BI report editor has three sections:  
 
 1. **Fields**, **Visualizations**, and **Filters** panes
 2. top navigation bars    
 3. report canvas     
 
-![](media/service-the-report-editor-take-a-tour/power-bi-report-canvas.png)
+![The report editor sections](media/service-the-report-editor-take-a-tour/power-bi-report-canvas.png)
 
 ## 1. The report editor panes
 ![Power BI report editor](media/service-the-report-editor-take-a-tour/power-bi-report-panes.png)
@@ -41,7 +41,7 @@ The content displayed in the report editor varies by selections you make in the 
 
 |  |  |
 | --- | --- |
-| ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>The top of the Visualization pane identifies the type of visual in use; in this example, a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane (you may have to scroll down) displays the fields being used in the visual. This chart is using FiscalMonth, DistrictManager, and Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down) displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, if you expand a table's name, the fields that make up that table. Yellow font lets you know  that at least one field from that table is being used in the visualization.<br><br></li><li>![paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for the selected visualization, select the paint roller icon.<br><br></li><li>![magnifying glass icon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul> |
+| ![Report editor panes](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>The top of the Visualization pane identifies the type of visual in use; in this example, a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane (you may have to scroll down) displays the fields being used in the visual. This chart is using FiscalMonth, DistrictManager, and Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down) displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, if you expand a table's name, the fields that make up that table. Yellow font lets you know  that at least one field from that table is being used in the visualization.<br><br></li><li>![paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for the selected visualization, select the paint roller icon.<br><br></li><li>![magnifying glass icon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul> |
 
 ## The Visualizations pane
 ![top of Visualization pane](media/service-the-report-editor-take-a-tour/selectviz.png)
@@ -63,7 +63,7 @@ For more information, see [Add visualizations to a Power BI report](visuals/powe
 ### Format your visuals
 Select the paint roller icon to display the Format pane. The option available depend on the type of visualization selected.
 
-![Formatting pane](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
+![Formatting pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
 The formatting possibilities are almost endless.  To learn more, explore on your own, or visit these articles:
 
@@ -74,7 +74,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 ### Add analytics to your visualizations
 Select the magnifying glass icon to display the Analytics pane. The option available depend on the type of visualization selected.
 
-![](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
+![Analytics pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
 With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](service-analytics-pane.md) or [Analytics pane in Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
