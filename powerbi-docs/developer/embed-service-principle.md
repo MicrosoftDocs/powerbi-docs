@@ -11,7 +11,7 @@ ms.custom: ""
 ms.date: 01/31/2018
 ---
 
-# Service principle name (SPN) for Power BI Embedded applications
+# Service principal for Power BI Embedded applications
 
 To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. This is true for both users (user principal) and applications (service principal).
 
@@ -52,7 +52,7 @@ You should use service principle when you don't want to use an actual Power BI (
     - Function similar like the new workspace settings
     - Only through the REST APIs
 
-## SPN vs master account
+## Service principal vs master account
 
 There are a few differences between using service principle for authenticating compared to using a master account.
 
