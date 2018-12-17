@@ -71,6 +71,8 @@
       href: desktop-directquery-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
+    - name: "Custom visuals FAQ"
+      href: power-bi-custom-visuals-faq.md
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
@@ -105,6 +107,8 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: "Troubleshoot custom visuals"
+      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
