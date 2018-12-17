@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -74,6 +74,7 @@ The **Database** category provides the following data connections:
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (Beta)
 * BI Connector
 * Exasol
 * Dremio (Beta)

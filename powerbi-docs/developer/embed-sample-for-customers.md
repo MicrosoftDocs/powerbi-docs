@@ -335,14 +335,14 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 
 Use the table below to determine which Power BI Embedded capacity best fits your needs.
 
-| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits | Max page renders at peak hour |
+| Capacity Node | Total cores<br/>*(Backend + frontend)* | Backend Cores | Frontend Cores | DirectQuery/live connection limits|
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-core(s) |0.5 core(s), 3-GB RAM |0.5 cores |0 5 per second |1-300 |
-| A2 |2 v-core(s) |1 core(s), 5-GB RAM |1 cor(e) | 10 per second |301-600 |
-| A3 |4 v-core(s) |2 core(s), 10-GB RAM |2 core(s) | 15 per second |601-1,200 |
-| A4 |8 v-core(s) |4 core(s), 25-GB RAM |4 core(s) |30 per second |1,201-2,400 |
-| A5 |16 v-core(s) |8 core(s), 50-GB RAM |8 core(s) |60 per second |2,401-4,800 |
-| A6 |32 v-core(s) |16 core(s), 100-GB RAM |16 core(s) |120 per second |4,801-9600 |
+| A1 |1 v-core(s) |0.5 core(s), 3-GB RAM |0.5 cores |0 5 per second |
+| A2 |2 v-core(s) |1 core(s), 5-GB RAM |1 cor(e) | 10 per second |
+| A3 |4 v-core(s) |2 core(s), 10-GB RAM |2 core(s) | 15 per second |
+| A4 |8 v-core(s) |4 core(s), 25-GB RAM |4 core(s) |30 per second |
+| A5 |16 v-core(s) |8 core(s), 50-GB RAM |8 core(s) |60 per second |
+| A6 |32 v-core(s) |16 core(s), 100-GB RAM |16 core(s) |120 per second |
 
 **_With A SKUs, you can't access Power BI content with a FREE Power BI license._**
 
