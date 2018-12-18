@@ -170,4 +170,8 @@ For information about troubleshooting, visit [Troubleshooting your Power BI cust
 
 For more information and answers to questions, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
 
+## Next steps
+
+* [Visualizations in Power BI](visuals/power-bi-report-visualizations.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/).

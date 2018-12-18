@@ -889,8 +889,8 @@
           href: developer/azure-pbie-pause-start.md
       - name: Troubleshoot
         items:
-      - name: "Troubleshoot your embedded application"
-        href: developer/embedded-troubleshoot.md
+        - name: "Troubleshoot your embedded application"
+          href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
@@ -933,7 +933,7 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Develop Custom Visuals
+  - name: Custom Visuals
     items:
     - name: Overview
       items: 
@@ -969,8 +969,12 @@
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
-      - name: "Troubleshoot custom visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: developer/desktop-r-powered-custom-visuals.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot custom visuals"
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "APIs"
