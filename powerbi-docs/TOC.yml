@@ -355,8 +355,6 @@
         href: desktop-access-database-errors.md
       - name: "Resolve issues when starting Power BI Desktop"
         href: desktop-error-launching-desktop.md
-      - name: "Troubleshoot custom visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -741,8 +739,6 @@
         href: refresh-troubleshooting-tile-errors.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
-      - name: "Troubleshoot custom visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
     - name: Self-service data prep
       items: 
       - name: "Self-service data prep with dataflows (preview)"
@@ -973,7 +969,7 @@
         href: desktop-r-powered-custom-visuals.md
       - name: Troubleshoot
         items:
-        - name: "Troubleshoot custom visuals"
+        - name: "Troubleshoot developing custom visuals"
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
