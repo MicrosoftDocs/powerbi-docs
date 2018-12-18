@@ -970,7 +970,7 @@
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
       - name: "Use R-powered custom visuals in Power BI"
-        href: developer/desktop-r-powered-custom-visuals.md
+        href: desktop-r-powered-custom-visuals.md
       - name: Troubleshoot
         items:
         - name: "Troubleshoot custom visuals"
