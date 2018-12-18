@@ -103,8 +103,6 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "Troubleshoot custom visuals"
-      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -278,7 +276,9 @@
       - name: "Tips for creating reports"
         href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizations
-      items: 
+      items:
+      - name: "Visualizations in Power BI"
+        href: visuals/power-bi-report-visualizations.md
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
       - name: "Change the type of visualization in a report"
@@ -349,12 +349,14 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
         href: desktop-access-database-errors.md
       - name: "Resolve issues when starting Power BI Desktop"
         href: desktop-error-launching-desktop.md
+      - name: "Troubleshoot custom visuals"
+        href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -709,7 +711,7 @@
       items: 
       - name: "Power BI publisher for Excel"
         href: publisher-for-excel.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
         href: service-admin-forgot-your-password.md
@@ -739,6 +741,8 @@
         href: refresh-troubleshooting-tile-errors.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
+      - name: "Troubleshoot custom visuals"
+        href: power-bi-custom-visuals-troubleshoot.md
     - name: Self-service data prep
       items: 
       - name: "Self-service data prep with dataflows (preview)"
@@ -863,7 +867,7 @@
         href: developer/power-bi-permissions.md 
     - name: How to
       items: 
-      - name: "How to embed from an app"
+      - name: "Embed from an app"
         href: developer/embed-from-apps.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
@@ -873,8 +877,6 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "Troubleshooting your embedded application"
-        href: developer/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -885,6 +887,10 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Troubleshoot
+        items:
+      - name: "Troubleshoot your embedded application"
+        href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
