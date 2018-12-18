@@ -103,7 +103,7 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "Custom visuals troubleshoot"
+    - name: "Troubleshoot custom visuals"
       href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
@@ -850,7 +850,9 @@
       - name: "Embed content for sovereign clouds"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
-      items: 
+      items:
+      - name: "Performance best practices"
+        href: developer/embedded-performance-best-practices.md
       - name: "Row-level security (RLS)"
         href: developer/embedded-row-level-security.md
       - name: "Azure diagnostic logging for Power BI Embedded"
@@ -942,7 +944,9 @@
       - name: "Custom visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
-        href: developer/office-store-in-app-purchase-visual-guidelines.md 
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
+      - name: "Custom visuals FAQ"
+        href: power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
@@ -958,7 +962,9 @@
       - name: "Get a custom visual certified"
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
-        href: developer/office-store.md   
+        href: developer/office-store.md
+      - name: "Troubleshoot custom visuals"
+        href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "APIs"
