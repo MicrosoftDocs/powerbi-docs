@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/11/2018
+ms.date: 12/18/2018
 LocalizationGroup: Visualizations
 ---
 
@@ -126,7 +126,7 @@ You have two options for downloading and importing custom visuals; from within P
 
 ### Download and import custom visuals from Microsoft AppSource
 
-1. Start at [Microsoft AppSource](https://appsource.microsoft.com) and select the tab for **Apps**. 
+1. Start at [Microsoft AppSource](https://appsource.microsoft.com) and select the tab for **Apps**.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
