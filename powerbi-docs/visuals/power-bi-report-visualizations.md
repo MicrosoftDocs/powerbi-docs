@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/21/2018
-LocalizationGroup: Visualizations
+LocalizationGroup: Visualizations 
 ---
 
 # Visualizations in Power BI reports
