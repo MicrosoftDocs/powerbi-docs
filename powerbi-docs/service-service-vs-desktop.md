@@ -1,6 +1,6 @@
 ---
 title: Comparing Power BI Desktop and the service
-description: Power BI Desktop is a full end-to-end data analysis and report creation tool. The Power BI service is a cloud-based, online service geared towards light report editing and collaboration for teams and corporations.
+description: Power BI Desktop is a complete data analysis and report creation tool. The Power BI service is a cloud-based, online service geared towards light report editing and collaboration for teams and corporations.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -20,7 +20,7 @@ In a Venn diagram comparing Power BI Desktop and the Power BI service, the area 
 
 ![Venn diagram of Power BI Desktop and service](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** is a full end-to-end data analysis and report creation tool. When you install the free application on your local computer, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
+**Power BI Desktop** is a complete data analysis and report creation tool. When you install the free application on your local computer, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
 The **Power BI service** is a cloud-based, online service geared towards light report editing and collaboration for teams and corporations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
 
