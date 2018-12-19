@@ -62,6 +62,10 @@ The main difference between using service principal over a master account is tha
 
     ![New app registration in Azure](media/embed-service-principal/new-app-reg.png)
 
+    ![Create new app](media/embed-service-principal/new-app-create.png)
+
+    ![New app](media/embed-service-principal/new-app.png)
+
 2. Create nn application secret
 
     App secret
