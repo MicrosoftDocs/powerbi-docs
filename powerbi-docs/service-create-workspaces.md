@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/19/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -20,7 +20,7 @@ In Power BI, you can create *workspaces*, places to collaborate with colleagues 
 
 When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
-**Did you know?** Power BI is previewing a new workspace experience. Read [Create the new workspaces (preview)](service-create-the-new-workspaces.md) to see how workspaces will change in the future. 
+**Did you know?** Power BI is previewing a new workspace experience. Read [Organize work in the new workspaces (preview)](service-new-workspaces.md) for details about the new workspaces. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -85,7 +85,7 @@ Apps are the evolution of organizational content packs. If you have organization
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
 * With the new workspace experience preview, we are taking the first steps towards deprecating organizational content packs. You can't consume or create them in preview workspaces.
 
-See [How are the new app workspaces different from existing app workspaces?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) to compare the current and new app workspaces. 
+See [How are the new app workspaces different from existing app workspaces?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) to compare the two. 
 
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
