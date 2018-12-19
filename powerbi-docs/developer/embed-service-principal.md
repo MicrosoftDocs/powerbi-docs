@@ -38,7 +38,8 @@ A service principal must be created in each tenant where the application is used
 
 ## Service principal with Power BI Embedded
 
-With service principal, you can mask your account information in your application by using an application ID (app ID) and an application secret (app secret). You don't have to hard-code a master user account into your application to authenticate. You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. A service principal can't be used to login to the Power BI service. You can't install an On-premises data gateway using just a service principal. However, you can edit the credentials of the gateway using a service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. A service principal can't be used with an Analysis Services live connection data source, or an Azure Analysis Services data source. A service principal doesn't replace `Effectiveidentity` with a user. A service principal has Azure Resource Management (ARM) API capacities. Currently, service principal doesn't allow multi-tenant applications. You can't import or export an application using service principal in Azure.
+With service principal, you can mask your account information in your application by using an application ID (app ID) and an application secret (app secret). You don't have to hard-code a master user account into your application to authenticate. You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. A service principal can't be used to login to the Power BI service. You can't install an On-premises data gateway using just a service principal. However, you can edit the credentials of the gateway using a service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. A service principal can't be used with an Analysis Services live connection data source, or an Azure Analysis Services data source. A service principal doesn't replace `Effectiveidentity` with a user. A service principal has Azure Resource Management (ARM) API capacities. Currently, service principal doesn't allow multi-tenant applications. You can't import or export an application using service principal in Azure. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal.
+
 
 Other functions that a service principal token provides:
 
@@ -53,19 +54,21 @@ Other functions that a service principal token provides:
 
 There are differences between using a service principal token versus a standard Power BI Pro login (master) account for authenticating into your Power BI Embedded application.
 
-You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. Whereas when using a master account you can use either version of a workspace. The main difference between using service principal over a master account is that service principal can't be used to login to Power BI. So to see any of your Power BI resources you need a Power BI account. Unlike a master account that can be used with just a Power BI pro license for testing, a service principal token requires a [dedicated capacity](azure-pbie-create-capacity.md) to be purchased. You can't install an On-premises data gateway using just a service principal. Installing an On-premises data gateway still requires a Power BI account. However, you can edit the credentials of the gateway using the service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. 
+The main difference between using service principal over a master account is that service principal can't be used to login to the Power BI service. It is not required, but recommended that you have a master account to view your Power BI resources and to troubleshoot your resources in the Power BI service. You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. Whereas when using a master account you can still use either versions of a workspace.  Unlike a master account that can be used with just a Power BI pro license for testing, a service principal token requires a [dedicated capacity](azure-pbie-create-capacity.md) to be purchased. You can't install an On-premises data gateway using just a service principal. Installing an On-premises data gateway still requires a Power BI account. However, you can edit the credentials of the gateway using the service principal.
 
-## Configure service principal
+## Configure service principal in your application
 
-- Create a web app service principal and secret
-- Service principal an instance of that class
-- Can create an instance of an application
-- Register the application in multiple tenants
-- Only allow apps that the PBI admin approves
-    - Additional tenant settings
-    - Access PBI with the app
-    - Functions like the new workspace settings
-    - Only through the REST APIs
+1. Create an application in Azure
+
+    ![New app registration in Azure](media/embed-service-principal/new-app-reg.png)
+
+2. Create nn application secret
+
+    App secret
+
+- A Power BI admin needs to login to the Power BI admin portal and allow the application (service principal) to have access to Power BI
+- Through the Rest APIs import Power BI content into the Workspace (V2)
+- In your application authenticate via service principle (application Id and application secret)
 
 ## Limitations and considerations
 
