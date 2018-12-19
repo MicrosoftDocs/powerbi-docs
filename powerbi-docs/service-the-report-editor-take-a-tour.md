@@ -1,5 +1,5 @@
 ---
-title: Take a tour of the report editor
+title: Tour the report editor
 description: The report editor in Power BI service and the report editor in Power BI Desktop are similar. 
 author: maggiesMSFT
 manager: kfile
@@ -9,12 +9,12 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/14/2018
+ms.date: 12/19/2018
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Take a tour of the report editor in Power BI
+# Tour of the report editor in Power BI
 
 The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
@@ -35,9 +35,9 @@ The Power BI report editor has three sections:
 ## 1. The report editor panes
 ![Power BI report editor](media/service-the-report-editor-take-a-tour/power-bi-report-panes.png)
 
-There are 3 panes visible when you first open a report: Visualizations, Filters, and Fields. The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering, formatting.  And the pane on the right side, Fields, manages the underlying data being used in the visualizations. 
+Three panes are visible when you first open a report: Visualizations, Filters, and Fields. The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering, formatting.  And the pane on the right side, Fields, manages the underlying data being used in the visualizations. 
 
-The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual, 
+The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual:
 
 |  |  |
 | --- | --- |
@@ -48,7 +48,7 @@ The content displayed in the report editor varies by selections you make in the 
 
 Here is where you select a visualization type. The small pictures are called *templates*. In the image above, the Clustered bar chart is selected. If you don't select a visualization type first, but instead start building a visualization by selecting fields, Power BI will pick the visualization type for you. You can keep Power BI's selection, or change the type by selecting a different template. Switch as many times as you need to find the visualization type that best represents your data.
 
-### Manage the fields used in your visual.
+### Manage the fields in your visual
 ![middle of Visualization pane](media/service-the-report-editor-take-a-tour/power-bi-field-list.png)
 
 The buckets (sometimes called *wells*) shown in this pane vary depending on what type of visualization you have selected.  For example, if you've selected a bar chart, you'll see buckets for: Values, Axis, and Legend. When you select a field, or drag it onto the canvas, Power BI adds that field to one of the buckets.  You can also drag fields from the Fields list directly into the buckets.  Some buckets are limited to certain types of data.  For example, **Values** won't accept non-numeric fields. So if you drag an **employeename** field into the **Values** bucket, Power BI changes it to **count of employeename**.
@@ -123,7 +123,7 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 ## Next steps
 [Create a report](service-report-create-new.md)
 
-Read more about reports in [Power BI service](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile](consumer/mobile/mobile-apps-view-phone-report.md).
+More about reports in the [Power BI service](service-report-create-new.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile apps](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Basic concepts for Power BI designers](service-basic-concepts.md)
 

@@ -16,23 +16,23 @@ LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
 
-This article assumes that you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). If you don't have any data yet, you can install a [Power BI sample content pack](sample-datasets.md#the-power-bi-samples-as-content-packs).
+This article assumes that you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). If you don't have any data yet, try installing a [Power BI sample content pack](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 ![Power BI service Home screen in a browser](media/service-basic-concepts/power-bi-home-screen.png)
 
 Here are the elements you see when you open the Power BI service in the browser:
 
-1. navigation pane (left nav)
+1. Navigation pane (left nav)
 2. Office 365 app launcher
 3. Power BI home button
-4. icon buttons, including settings, help, and feedback
+4. Icon buttons, including settings, help, and feedback
 5. Search box
 6. Tiles from a favorite dashboard
 7. Favorite and frequent dashboards and reports
 
 We'll dig into these features later, but first let's review some Power BI concepts.
 
-Or, you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
+Or you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -96,9 +96,9 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 
 **ONE** report...
 
-* is contained in a single workspace
+* is contained in a single workspace.
 * can be associated with multiple dashboards within that workspace (tiles pinned from that one report can appear on multiple dashboards).
-* can be created using data from one dataset. (the slight exception to this is that Power BI Desktop can combine more than one dataset into a single report and that report can be imported into Power BI)
+* can be created using data from one dataset. (the slight exception to this is that Power BI Desktop can combine more than one dataset into a single report and that report can be imported into Power BI).
 
   ![Reports diagram](media/service-basic-concepts/drawing3new.png)
 
@@ -111,20 +111,15 @@ A *dashboard* is something you create **in Power BI service** or something a col
 
 Why do people create dashboards?  Here are just some of the reasons:
 
-* to see, in one glance, all the information needed to make decisions
-* to monitor the most-important information about your business
-* to ensure all colleagues are on the same page, viewing and using the same information
+* to see, in one glance, all the information needed to make decisions.
+* to monitor the most-important information about your business.
+* to ensure all colleagues are on the same page, viewing and using the same information.
 * to monitor the health of a business or product or business unit or marketing campaign, etc.
-* to create a personalized view of a larger dashboard -- all the metrics that matter to you
+* to create a personalized view of a larger dashboard -- all the metrics that matter to you.
 
 When you open a workspace, the associated dashboards are listed under the **Dashboards** tab. To open a dashboard, select it. When you open an app, you'll be presented with a dashboard.  Each dashboard represents a customized view of some subset of the underlying dataset(s).  If you own the dashboard, you'll also have edit access to the underlying dataset(s) and reports.  If the dashboard was shared with you, you'll be able to interact with the dashboard and any underlying reports, but will not be able to save any changes.
 
 There are many different ways that you, or a colleague, can [share a dashboard](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
-
-
-> [!NOTE]
-> Pinning and tiles are covered in more detail below under the heading "Dashboard with tiles."
->
 
 **ONE** dashboard...
 
