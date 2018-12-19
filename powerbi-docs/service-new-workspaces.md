@@ -84,7 +84,7 @@ With the new workspaces, we are redesigning some features. Here are the changes 
 * In current workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
 - You can create an organizational content pack from a current workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a current workspace. You can’t consume one from the new workspaces.
-- During the preview some capabilities aren't enabled yet for new workspaces. See the next section, [Planned new workspace features](service-create-the-new-workspaces.md#planned-new-app-workspace-preview-features), for details.
+- During the preview some capabilities aren't enabled yet for new workspaces. See the next section, [Planned new workspace features](services-new-workspaces.md#planned-new-app-workspace-preview-features), for details.
 
 ## Planned new workspace preview features
 
