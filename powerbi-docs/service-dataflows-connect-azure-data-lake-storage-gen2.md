@@ -104,7 +104,7 @@ To find your tenant applications, follow these steps:
 
     ![AAD Enterprise applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. In the search bar, type *Power* and a collection of Object IDs for Power BI and Power Query applications appear, you will need all three values in the subsequent steps.  
+4. In the search bar, type *Power* and a collection of Object IDs for Power BI and Power Query applications appear. You'll need all three values in the subsequent steps.  
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
