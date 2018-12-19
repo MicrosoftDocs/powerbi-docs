@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 ---
 # Comparing Power BI Desktop and the service
 
-In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle of that diagram would show how much the two overlap. Some tasks you can carry out either in Power BI Desktop or the service. But on the two sides of the Venn diagram, the application and the service each have unique features.  
+In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle would show how the two overlap. Some tasks you can do in either Power BI Desktop or the service. But on the two sides of the Venn diagram, the application and the service each have unique features.  
 
 ![Venn diagram of Power BI Desktop and service](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
@@ -44,7 +44,7 @@ This video shows the report editor in Power BI Desktop.
 
 ## Collborating in the Power BI service
 
-After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues can collaborate. You can build *dashboards* on top of those reports. Then you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in [Reading view](consumer/end-user-reading-view.md), not Editing view. They don't have access all the features available to report creators. 
+After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues collaborate. You build *dashboards* on top of those reports. Then you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in [Reading view](consumer/end-user-reading-view.md), not Editing view. They don't have access all the features available to report creators. 
 
 ## Next Steps
 
