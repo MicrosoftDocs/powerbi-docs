@@ -933,7 +933,7 @@
     items:
     - name: Overview
       items: 
-      - name: "Custom visualizations in Power BI"
+      - name: "Custom visuals in Power BI"
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
