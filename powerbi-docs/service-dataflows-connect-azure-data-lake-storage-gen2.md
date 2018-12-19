@@ -72,7 +72,7 @@ In the **Add role assignment** window, select the **Reader** role to assign to t
 
 You must create a file system named *powerbi* before your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight, AZCopy, or Azure Storage Explorer. This section shows you a straightforward way to create a file system using Azure Storage Explorer.
 
-This step requires that you install Azure Storage Explorer. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+This step requires that you install Azure Storage Explorer version 1.6.1 or higher. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Once you've successfully installed Azure Storage Explorer, On first launch, the Microsoft Azure Storage Explorer - Connect window is shown. While Storage Explorer provides several ways to connect to storage accounts, only one way is currently supported for the required setup. 
 
@@ -104,11 +104,11 @@ To find your tenant applications, follow these steps:
 
     ![AAD Enterprise applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. In the search bar, type *Power* and a collection of Object IDs for Power BI and Power Query applications appear.
+4. In the search bar, type *Power* and a collection of Object IDs for Power BI and Power Query applications appear, you will need all three values in the subsequent steps.  
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Select and copy the Object ID for Power BI service from the results of your search. Be ready to paste that value in subsequent steps.
+5. Select and copy both Object IDs for Power BI service and Power BI premium from the results of your search. Be ready to paste those values in subsequent steps.
 
 7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
@@ -116,7 +116,7 @@ To find your tenant applications, follow these steps:
 
    ![for both, assign all three](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For the Power Query Online Object ID collected in step 5, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
+9. For the Power Query Online Object ID collected in step 4, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![next, assign write and execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
