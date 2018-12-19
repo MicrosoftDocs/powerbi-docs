@@ -40,7 +40,6 @@ A service principal must be created in each tenant where the application is used
 
 With service principal, you can mask your account information in your application by using an application ID (app ID) and an application secret (app secret). You don't have to hard-code a master user account into your application to authenticate. You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. A service principal can't be used to login to the Power BI service. You can't install an On-premises data gateway using just a service principal. However, you can edit the credentials of the gateway using a service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. A service principal can't be used with an Analysis Services live connection data source, or an Azure Analysis Services data source. A service principal doesn't replace `Effectiveidentity` with a user. A service principal has Azure Resource Management (ARM) API capacities. Currently, service principal doesn't allow multi-tenant applications. You can't import or export an application using service principal in Azure. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal.
 
-
 Other functions that a service principal token provides:
 
 - Work with APIs
@@ -58,6 +57,8 @@ The main difference between using service principal over a master account is tha
 
 ## Configure service principal in your application
 
+### Azure portal
+
 1. Create an application in Azure
 
     ![New app registration in Azure](media/embed-service-principal/new-app-reg.png)
@@ -68,11 +69,60 @@ The main difference between using service principal over a master account is tha
 
 2. Create nn application secret
 
-    App secret
+    ![Create an app secret](media/embed-service-principal/app-secret-create.png)
 
-- A Power BI admin needs to login to the Power BI admin portal and allow the application (service principal) to have access to Power BI
-- Through the Rest APIs import Power BI content into the Workspace (V2)
-- In your application authenticate via service principle (application Id and application secret)
+    ![App secret](media/embed-service-principal/app-secret.png)
+
+3. A Power BI admin needs to login to the Power BI admin portal and allow the application (service principal) to have access to Power BI
+
+    ![Power BI admin portal](media/embed-service-principal/admin-portal.png)
+
+4. Through the Rest APIs import Power BI content into the Workspace (V2)
+
+    Need code here?
+
+5. In your application authenticate via service principle (application Id and application secret)
+
+    Application code
+
+### Powershell
+
+1. Open Powershell as an administrator
+
+2. Install the Azure AD module
+
+    ```powershell
+    Install-Module -Name AzureAD
+    ```
+3. THen run the command *Set-ExecutionPolicy -ExecutionPolicy Bypass*
+
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy Bypass
+    ```
+4. Run Powershell script
+
+    ```powershell
+    param (
+    [string]$applicationName
+    )
+
+    # Login to Azure and be able to use the app cmdlets
+    Connect-AzureAD
+    Login-AzureRmAccount
+
+    # Create a new AAD web application
+    $App = New-AzureADApplication -DisplayName $applicationName -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+
+    # Add service principal to the application (only for allowed users)
+    New-AzureRmADServicePrincipal -ApplicationId $App.AppId
+    ```
+    After creating a web app, it is important to keep two parameters:
+
+    - **Application ID** - will be visible in azure portal once the app is created/registered
+    - **Application Secret** - Go to the 'App Registration' blade in azure portal, click on your app -> Create a secret by go to settings -> keys -> add secret and save.
+
+    > [!Note]
+    > Once you exit out of the blade, it is not visible any more so save it. However, if you forget to save it, then you can just craete a new one.
 
 ## Limitations and considerations
 
