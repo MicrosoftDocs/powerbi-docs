@@ -13,9 +13,9 @@ ms.date: 01/31/2018
 
 # Service principal for use with Power BI Embedded applications
 
-To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action is true for both users (user principal) and applications (service principal).
+To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action holds true for both users (user principal) and applications (service principal).
 
-The security principal defines the access policy and permissions for the user/application in the Azure AD tenant. This access policy enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
+A security principal defines the access policy and permissions for the user/application in the Azure AD tenant. This access policy enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
 
 When an application gives permissions to access resources in Power BI upon registration or consent, a service principal object is created.
 
@@ -23,7 +23,7 @@ When an application gives permissions to access resources in Power BI upon regis
 
 ## Application registration
 
-When you register an Azure AD application in the Azure portal, two objects are created in your Azure AD tenant:
+When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
 
 - An application object
 - A service principal object
@@ -32,15 +32,28 @@ When you register an Azure AD application in the Azure portal, two objects are c
 
 Consider the application object as the *global* representation of your application for use across all tenants, and the service principal as the *local* representation for use in a specific tenant.
 
-The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects. 
+The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects.
 
 A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
 
-## Using service principal vs a Power BI Pro account
+## Service principal with Power BI Embedded
 
-There are differences between using service principal versus a standard Power BI Pro login (master) account for authenticating into your Power BI Embedded application.
+With service principal, you can mask your account information in your application by using an application ID (app ID) and an application secret (app secret). You don't have to hard-code a master user account into your application to authenticate. You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. A service principal can't be used to login to the Power BI service. You can't install an On-premises data gateway using just a service principal. However, you can edit the credentials of the gateway using a service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. A service principal can't be used with an Analysis Services live connection data source, or an Azure Analysis Services data source. A service principal doesn't replace `Effectiveidentity` with a user. A service principal has Azure Resource Management (ARM) API capacities. Currently, service principal doesn't allow multi-tenant applications. You can't import or export an application using service principal in Azure.
 
-With service principal, you can hide your account information within your application by using an application ID (app ID) and an application secret (app secret). However, you can't use the app ID and the app secret. A service principal token can create workspaces, add users to groups, and remove users, work with APIs, can be viewed in the PBI portal, only works with PBI workspace version 2, can't access the PBI portal, not necessary to have a pro license, need dedicated capacity, can import reports, can't install an on-premises gateway, can edit credentials, can refresh on demand.
+Other functions that a service principal token provides:
+
+- Work with APIs
+- Can create workspaces
+- Add users to workspaces
+- Remove users from workspaces
+- Can import reports
+- Can be viewed in the PBI portal
+
+## Service principal vs. Power BI Pro account
+
+There are differences between using a service principal token versus a standard Power BI Pro login (master) account for authenticating into your Power BI Embedded application.
+
+You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. Whereas when using a master account you can use either version of a workspace. The main difference between using service principal over a master account is that service principal can't be used to login to Power BI. So to see any of your Power BI resources you need a Power BI account. Unlike a master account that can be used with just a Power BI pro license for testing, a service principal token requires a [dedicated capacity](azure-pbie-create-capacity.md) to be purchased. You can't install an On-premises data gateway using just a service principal. Installing an On-premises data gateway still requires a Power BI account. However, you can edit the credentials of the gateway using the service principal. You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal. 
 
 ## Configure service principal
 
@@ -51,24 +64,26 @@ With service principal, you can hide your account information within your applic
 - Only allow apps that the PBI admin approves
     - Additional tenant settings
     - Access PBI with the app
-    - Function similar like the new workspace settings
+    - Functions like the new workspace settings
     - Only through the REST APIs
 
 ## Limitations and considerations
 
+- Only works with **app workspaces *version two (2)***
+- **My Workspace** isn't supported.
 - Assigning a workspace to a capacity API isn't implemented yet
     - You can do it from the Power BI admin portal, or using a user token API call
 - Can't be a capacity admin
 - Using an Analysis Services live connection data source, or using Azure Analysis Services aren't supported
 - Can't install an on-premises data gateway
 - Can't be an on-premises data gateway admin
-- Only works with **app workspaces *version 2***
-- **My Workspace** isn't supported.
 - Can't sign in to the Power BI portal
-- There are no APIs that can be used with the service principal to create dashboards
+- No APIs can be used to create dashboards
 - Can't import or export application
+- Need dedicated capacity
+- It is not required to own a pro license
 
 ## Next steps
 
 - [Power BI Embedded for your customers](embed-sample-for-customers.md)
-- [Registering an app](register-app.md)
+- [Register an app](register-app.md)
