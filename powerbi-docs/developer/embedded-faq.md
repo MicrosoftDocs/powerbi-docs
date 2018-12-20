@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
+ms.date: 12/20/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -317,3 +317,7 @@ You can learn how to edit your Power BI data [here](https://docs.microsoft.com/p
 For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+### How do I get better Power BI Embedded performance?
+
+[Power BI Embedded performance](embedded-performance-best-practices.md)
