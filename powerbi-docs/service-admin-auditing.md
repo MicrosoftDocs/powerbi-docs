@@ -51,8 +51,6 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
    ![Go to O365 Admin Center](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
-(TODO: Remove info from here and put under Requirements) To provide non-administrator accounts with access to the audit log, you must assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo/).
-
 ## Search only Power BI activities
 
 Restrict results to only Power BI activities by following these steps. For a list of activities, see the [list of activities audited by Power BI](#list-of-activities-audited-by-power-bi) later in this article.
