@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/20/2018
 ---
 
 # Use row-level security with Power BI embedded content
@@ -44,12 +44,12 @@ Here are a few things to notice with this schema:
 
 * All measures, like **Total Sales**, are stored in the **Sales** fact table.
 * There are four additional related dimension tables: **Item**, **Time**, **Store**, and **District**.
-* The arrows on the relationship lines indicate which way filters can flow from one table to another. For example, if a filter is placed on **Time[Date]**, in the current schema it would only filter down values in the **Sales** table. No other tables would be affected by this filter since all the arrows on the relationship lines point to the sales table and not away.
+* The arrows on the relationship lines indicate which way filters can flow from one table to another. For example, if a filter is placed on **Time[Date]**, in the current schema it would only filter down values in the **Sales** table. No other tables are affected by this filter since all the arrows on the relationship lines point to the sales table and not away.
 * The **District** table indicates who the manager is for each district:
   
     ![Rows within District table](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Based on this schema, if we apply a filter to the **District Manager** column in the **District** table, and if that filter matches the user viewing the report, that filter down the **Store** and **Sales** tables to only show data for that district manager.
+Based on this schema, if we apply a filter to the **District Manager** column in the **District** table, and if that filter matches the user viewing the report, that filter down the **Store** and **Sales** tables to show data for that district manager.
 
 Here's how:
 
@@ -136,7 +136,7 @@ Roles can be provided with the identity in an embed token. If no role is provide
 
 ### Using the CustomData feature
 
-The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Customdata feature can't be set inside a .pbix file. When generating a token with the Customdata feature, you need to have a username.
+The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Custom data feature can't be set inside a .pbix file. When generating a token with the Custom data feature, you need to have a username.
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
@@ -208,18 +208,18 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
-7. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Customdata feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
+7. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Custom data feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
 
     View the [code](#customdata-sdk-additions) to add the CustomData feature.
 
-8. Now you can view the report in your application before applying the Customdata value(s) to see all the data your report holds.
+8. Now you can view the report in your application before applying the Custom data value(s) to see all the data your report holds.
 
     ![Before Custom Data is applied](media/embedded-row-level-security/customdata-before.png)
 
-    Then apply the Customdata value(s) to see how the report displays a different set of data.
+    Then apply the Custom data value(s) to see how the report displays a different set of data.
     ![After CustomData is applied](media/embedded-row-level-security/customdata-after.png)
 
 ## Using RLS vs. JavaScript filters
@@ -234,10 +234,71 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
+## Token-Based Identity feature with Azure SQL Server (Preview)
+
+The **token-based identity feature** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Server**. Such effective identity issues apply to RLS rules directly on the Azure SQL Server. **Power BI Embedded** uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
+
+The token-based identity feature only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Server, which is configured to allow using AAD authentication ([learn more about AAD authentication for Azure SQL Server](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
+
+   ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+
+### Token-Based Identity SDK additions
+
+The identity blob property was added to our effective identity in the token generation scenario.
+
+```JSON
+[JsonProperty(PropertyName = "identityBlob")]
+public IdentityBlob IdentityBlob { get; set; }
+```
+
+The IdentityBlob type is a simple JSON structure holding a value string property
+
+```JSON
+[JsonProperty(PropertyName = "value")]
+public string value { get; set; }
+```
+
+The EffectiveIdentity can be created with identity blob using the following call:
+
+```C#
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
+```
+
+Identity blob can be created using the following call.
+
+```C#
+public IdentityBlob(string value);
+```
+
+### Token-Based Identity REST API Usage
+
+If you're calling the REST API, you can add identity blob inside each identity.
+
+```JSON
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+        “identityBlob”: {
+            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+         }
+        }
+    ]
+}
+```
+
+The value provided in the identity blob should be a valid access token to Azure SQL Server (with a resource URL of (<https://database.windows.net/>).
+
+   > [!Note]
+   > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on AAD app registration configuration in the Azure portal.
+
+   ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
 ## Considerations and limitations
 
 * Assignment of users to roles within the Power BI service doesn't affect RLS when using an embed token.
-* While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
+* While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it applies to the data.
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
