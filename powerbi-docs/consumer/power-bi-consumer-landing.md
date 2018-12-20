@@ -8,7 +8,7 @@ ms.component: powerbi-service
 ms.topic: landing-page
 ms.date: 12/10/2018
 ms.author: mihart
-layout: landingpage
+layout: LandingPage
 ms.custom: seodec18
 
 LocalizationGroup: Get started
