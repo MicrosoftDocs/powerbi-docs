@@ -162,7 +162,7 @@ Power BI is available in separate national clouds. These clouds offer the same l
 It's important to understand that differences that can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *Usage metrics* are collected on the client. Because of that difference, aggregate counts of activities in audit logs may not always match usage metrics, because of the following:
 
 * Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
-* Certain types of views are not inclded in usage metrics, as described earlier in this article.
+* Certain types of views are not included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
 
 ## Frequently asked questions
