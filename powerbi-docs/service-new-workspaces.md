@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 12/21/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -26,7 +26,11 @@ With the new workspaces preview, you can now:
 
 Read about how to [create one of the new workspaces](service-create-the-new-workspaces.md).
  
-When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access. Because workspace administration is now in Power BI, Power BI admins decide who in an organization can create workspaces. See the [Power BI admin portal article, Workspaces section](service-admin-portal.md#workspace-settings) for details. 
+When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access. Because workspace administration is now in Power BI, Power BI admins decide who in an organization can create workspaces. In **Workspace settings** in the admin portal, admins can allow everybody or nobody in an organization to create workspaces. They can also limit creation to members of specific security groups.
+
+![Workspace settings in the admin portal](media/service-new-workspaces/power-bi-workspace-admin-settings.png)
+
+Read more about the [Power BI admin portal](service-admin-portal.md).
 
 ## Roll out new workspaces
 
