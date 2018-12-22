@@ -24,7 +24,7 @@ With the new workspaces preview, you can now:
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
 
-Read more background about the [new workspaces (preview)](service-new-workspaces.md).
+For more background, see the [new workspaces (preview)](service-new-workspaces.md) article.
 
 ## Create one of the new app workspaces
 
