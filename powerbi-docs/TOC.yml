@@ -418,7 +418,7 @@
       - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Keeping data fresh"
-        href: refresh-data-understand.md
+        href: refresh-data.md
       - name: "Monitoring usage"
         href: service-usage-metrics.md
     - name: Licensing
@@ -485,8 +485,6 @@
         href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
-      - name: "Data refresh in Power BI"
-        href: refresh-data.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh a dataset from a Power BI Desktop file - local"
