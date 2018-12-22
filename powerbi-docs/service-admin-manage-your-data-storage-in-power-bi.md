@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 
 LocalizationGroup: Administration
@@ -21,6 +21,7 @@ Users and app workspaces have their own data capacities:
 
 * All users have a maximum 10 GB data storage.
 * Users with a Power BI Pro license can create app workspaces, with a maximum 10 GB data storage each.
+* An app workspace in a Premium capacity doesn't count toward the storage of a Power BI Pro user.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and app workspaces in the tenant.
 
@@ -32,11 +33,12 @@ Included in your data storage are your own datasets and Excel reports, and those
 * Reporting Services on-premises visualizations pinned to a Power BI dashboard.
 * Uploaded images.
 
-The size of a dashboard that you share will vary depending on what is pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size will include both datasets.
+The size of a dashboard that you share varies depending on what is pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size includes both datasets.
 
 <a name="manage"/>
 
-## Manage items owned by you
+## Manage items you own
+
 See how much data storage you’re using in your Power BI account, and manage your account.
 
 1. To manage your own storage, go to **My Workspace** on the left navigation pane.
@@ -80,20 +82,20 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 Keep in mind that you or someone else in the group may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
 ## Dataset limits
-There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, you will be limited to 250 MB for the dataset.
+There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
 
-## What happens when you hit a limit
-When you hit the data capacity limit of what you can do, you will see prompts within the service. 
+## What happens when you reach a limit
+When you reach the data capacity limit of what you can do, you see prompts within the service. 
 
-When you select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), you will see a red bar indicating you are over your data capacity limit.
+When you select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), you see a red bar indicating you are over your data capacity limit.
 
 ![Storage limit reached]](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
-You will also see this indicated within **Manage personal storage**.
+You also see this indicated within **Manage personal storage**.
 
  ![Manage personal storage, storage limit reached](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- When you try to perform an action that will hit one of the limits, you will see a prompt indicating you are over the limit. You will be able to [manage](#manage) your storage to reduce your storage amount and get past the limit.
+ When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage](#manage) your storage to reduce your storage amount and get past the limit.
 
  ![Over your storage limit](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 

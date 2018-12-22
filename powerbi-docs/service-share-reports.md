@@ -1,6 +1,6 @@
 ---
-title: Filter and share Power BI reports with coworkers
-description: Learn how to share a filtered Power BI report with coworkers in your organization.
+title: Share a filtered Power BI report with coworkers
+description: Learn how to filter a Power BI report and share it with coworkers in your organization.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -9,7 +9,7 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 12/21/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -17,12 +17,13 @@ LocalizationGroup: Share your work
 # Share a filtered Power BI report with your coworkers
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI also offers [several other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
+With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). 
 
 You can share a report with coworkers in the same email domain as you, from most places in the Power BI service: your Favorites, Recent, Shared with me (if the owner allows it), My Workspace, or other workspaces. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless [row-level security (RLS)](service-admin-rls.md) is applied. 
 
+What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. You do this by creating a custom URL. The report will be filtered when recipients first open it. They can remove the filter by modifying the URL.
+
 ## Filter and share a report
-What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. You do this by creating a custom URL.
 
 1. Open the report in [Editing view](consumer/end-user-reading-view.md), apply the filter, and save the report.
    
