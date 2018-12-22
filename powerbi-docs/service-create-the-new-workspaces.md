@@ -92,6 +92,7 @@ During the preview period, you can't automatically convert your old app workspac
 When the new workspaces are generally available (GA), you can opt in to migrate the old ones automatically. At some point after GA, you'll have to migrate them.
 
 ## Next steps
+* Read about [organizing work in the new workspaces (preview) in Power BI](service-new-workspaces.md)
 * [Create the current workspaces](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
