@@ -18,7 +18,7 @@ Power BI is introducing a new workspace experience as a preview. Workspaces are 
 
 ![Power BI new workspaces preview](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
 
-With the new workspaces preview you can now:
+With the new workspaces preview, you can now:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
@@ -64,20 +64,20 @@ Read more background about the [new workspaces (preview)](service-new-workspaces
 
 9. Select **Add** > **Close**.
 
-1. Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions.
+1. Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions.
 
      ![Edit settings and access for a workspace](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
 
 ## Add content to your app workspace
 
-After you've created an app workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the new workspaces, you can't connect to organizational content packs, or third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the current workspaces you can connect to content packs.
+After you've created an app workspace of the new style, it's time to add content to it. Adding content is similar in the new and old style workspaces, with one exception. While in either app workspace, you can upload or connect to files, just as you would in your own My Workspace. In the new workspaces, you can't connect to organizational content packs, or third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. In the current workspaces, you can connect to content packs.
 
 When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
 
 ### Connecting to third-party services in new workspaces (preview)
 
-In the new workspaces experience, we are making a change to focus on *apps*. Apps for third-party services make it easy for users to obtain data from the services they use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
-Organizational apps give your users the internal data they need. We plan to add capabilities to organizational apps so users can customize the content they find within the apps. That will remove the need for content packs. 
+In the new workspaces experience, we're making a change to focus on *apps*. Apps for third-party services make it easy for users to get data from the services they use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
+Organizational apps give your users the internal data they need. We plan to add capabilities to organizational apps so users can customize the content they find within the apps. That capability will remove the need for content packs. 
 
 With the new workspaces preview, you can't create or consume organizational content packs. Instead you can use the apps provided to connect to third-party services, or ask your internal teams to provide apps for any content packs you’re currently using. 
 

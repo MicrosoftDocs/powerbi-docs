@@ -1,6 +1,6 @@
 ---
 title: Comparing Power BI Desktop and the Power BI service
-description: Power BI Desktop is a complete data analysis and report creation tool. The Power BI service is a cloud-based, online service geared towards light report editing and collaboration for teams and corporations.
+description: Power BI Desktop is a complete data analysis and report creation tool. The Power BI service is a cloud-based, online service for light report editing and collaboration for teams and corporations.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -20,9 +20,9 @@ In a Venn diagram comparing Power BI Desktop and the Power BI service, the area 
 
 ![Venn diagram of Power BI Desktop and service](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** is a complete data analysis and report creation tool. When you install the free application on your local computer, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
+**Power BI Desktop** is a complete data analysis and report creation tool. When you install the free application on your local computer, you can connect to many different sources of data, and combine them (often called modeling) into a data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
-The **Power BI service** is a cloud-based, online service geared towards light report editing and collaboration for teams and corporations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
+The **Power BI service** is a cloud-based, online service for light report editing and collaboration for teams and corporations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
 
 Most report designers who work on business intelligence projects use **Power BI Desktop** to create reports, and then use the **Power BI service** to share their reports with others.
 
@@ -42,7 +42,7 @@ This video shows the report editor in Power BI Desktop.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-## Collborating in the Power BI service
+## Collaborating in the Power BI service
 
 After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues collaborate. You build *dashboards* on top of those reports. Then you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in [Reading view](consumer/end-user-reading-view.md), not Editing view. They don't have access all the features available to report creators. 
 
