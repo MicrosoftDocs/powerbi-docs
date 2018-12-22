@@ -44,11 +44,11 @@ You can only use a service principal if your Power BI artifacts and resources ar
 
 A service principal can't be used to sign in to the Power BI service.
 
-You can't install an On-premises data gateway using just a service principal. However, you can edit the credentials of the gateway using a service principal.
+You can't install an **On-premises data gateway** using just a service principal. However you can edit the credentials of the gateway using a service principal token.
 
-You can set up notifications using a service principal to pull history.
+You can set up notifications using a service principal token to pull history.
 
-You can generate embed tokens with service principal.
+You can generate embed tokens with a service principal token.
 
 A service principal can't be used with an Analysis Services live connection data source, or an Azure Analysis Services data source.
 
@@ -56,7 +56,11 @@ A service principal doesn't replace `Effectiveidentity` with a user. A service p
 
 Currently, service principal doesn't allow multi-tenant applications. You can't import or export an application using service principal in Azure.
 
-You can set up notifications using a service principal to pull history. You can generate embed tokens with service principal.
+You can set up notifications using a service principal to pull history.
+
+You can generate embed tokens with service principal.
+
+If you have **[multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)** enabled with your Azure application, you can only use a service principole token to authenticate.
 
 Other functions that a service principal token provides:
 
@@ -71,13 +75,15 @@ Other functions that a service principal token provides:
 
 There are differences between using a service principal token versus a standard Power BI Pro login (master) account for authenticating into your Power BI Embedded application.
 
-The main difference between using service principal over a master account is that service principal can't be used to sign in to the Power BI service. It isn't required, but recommended that you have a master account to view your Power BI resources and to troubleshoot your resources in the Power BI service. 
+The main difference between using service principal over a master account is that service principal can't be used to sign in to the Power BI service. It isn't required, but recommended that you have a master account to view your Power BI resources and to troubleshoot your resources in the Power BI service.
 
 You can only use a service principal if your Power BI artifacts and resources are stored in a Power BI workspace version two. However, when using a master account you can still use either versions of a workspace.
 
 Unlike a master account that can be used with just a Power BI pro license for testing, a service principal token requires a [dedicated capacity](azure-pbie-create-capacity.md) to be purchased.
 
 You can't install an **On-premises data gateway** using just a service principal. Installing an On-premises data gateway still requires a Power BI account. However, you can edit the credentials of the gateway using the service principal.
+
+If your Azure tenant settings have **[multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)** enabled then it is recommended to use a service prinipal token to authenticate, as a master account does nto allow you to authenticate yuor PBIE application.
 
 ## Configure service principal in your application
 
@@ -164,3 +170,4 @@ You can't install an **On-premises data gateway** using just a service principal
 
 - [Power BI Embedded for your customers](embed-sample-for-customers.md)
 - [Register an app](register-app.md)
+- [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)
