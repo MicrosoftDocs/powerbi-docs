@@ -35,7 +35,7 @@ We now use phone report layout, when it exists, for displaying reports on tablet
 
 ### Supporting report query string 
 
-Openning report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
 
 ### Shared credentials (now in Android)
 
