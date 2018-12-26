@@ -20,12 +20,12 @@ A Power BI visualization is constructed using data from your datasets. If you're
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Show Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](desktop-see-data-see-records.md).
+> *Show Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../desktop-see-data-see-records.md).
 > 
 > 
 
 ## Using *Show Data* in Power BI service
-1. In Power BI service, open a report in [Reading view or Editing view](service-reading-view-and-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
+1. In Power BI service, open a report in [Reading view or Editing view](../service-interact-with-a-repport-in-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
 2. To display the data behind the visual, select **Explore** > **Show data**.
    
    ![select Show Data](media/service-reports-show-data/power-bi-show-data.png)
@@ -45,7 +45,6 @@ You can also export the data that is being used to create the visualization as a
 ### Next steps
 [Export data from Power BI visualizations](power-bi-visualization-export-data.md)    
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[Power BI reports](service-reports.md)    
-[Power BI - Basic Concepts](service-basic-concepts.md)    
+[Power BI reports](../consumer/end-user-reports.md)    
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
