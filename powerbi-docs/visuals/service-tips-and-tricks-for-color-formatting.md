@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -25,38 +25,35 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 * Use diverging color scales
 * How to undo in Power BI
 
-To make any changes, you must be editing a report: select your **Report** from the **My Workspace** pane, then select **Edit Report** from the top menu area, as shown in the following image.
+To make any changes, you must be editing a report: select your **Report** from the **My Workspace** pane, then select **Edit Report** from the top menu area, as shown in the following image. This example uses the **Human Resources sample**.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![report canvas with Edit report highlighted](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![report with formattng pane displaying](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## Change the color of a single data point
-Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
+Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, and for most visual types, you can highlight a particular data point by changing its color.
 
-The following visualization ranks states in terms of cost of living. 
+The following visualization displays sales margins by employee, usng default colors. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![area chart](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Now imagine you want to quickly show where Washington lands in that ranked list, by using color. Here are the steps:
+It's dfficult to see the area for Annelie, so let's use color to make it stand out more. Here are the steps:
 
 Expand the **Data Colors** section. The following appears.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![Data Colors selection area under Formatting](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Set **Show All** to **On**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+In this case, let’s select a dark but bright color that is not similar to the color used for Valery. Select the down arrow inside Annelie's color box, select **Custom Color** and choose a bright blue.
 
-In this case, let’s change **Washington** to green. We scroll down to **Washington** and select the down arrow inside its color box, and the color selection window appears.
+![color selections](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Once selected, the area for Annelie is much easier to distinguish from the other employees. 
 
-Once selected, the **Washington** data point is a nice shade of green, and certainly stands out.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![area chart, Annalie's area now bright blue](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 Even if you change visualization types, then return, Power BI remembers your selection and keeps **Washington** green.
 
