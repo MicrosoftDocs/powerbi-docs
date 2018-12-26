@@ -289,6 +289,8 @@
         href: visuals/power-bi-report-change-visualization-type.md
       - name: "Data point limits by visual type"
         href: visuals/power-bi-data-points.md
+      - name: "Show the data used to create the visual"
+        href: end-user-show-data.md
       - name: "Getting started with color formatting and axis properties"
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
       - name: "Tips and tricks for color formatting"

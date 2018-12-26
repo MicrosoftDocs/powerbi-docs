@@ -25,7 +25,7 @@ You can also export the data that is being used to create the visualization as a
 > 
 
 ## Using *Show Data* in Power BI service
-1. In Power BI service, open a report in [Reading view or Editing view](../service-interact-with-a-repport-in-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
+1. In Power BI service, open a report in [Reading view or Editing view](../service-interact-with-a-report-in-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
 2. To display the data behind the visual, select **Explore** > **Show data**.
    
    ![select Show Data](media/service-reports-show-data/power-bi-show-data.png)
