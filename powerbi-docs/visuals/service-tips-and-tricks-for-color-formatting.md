@@ -96,7 +96,7 @@ By setting those values, gradient is no longer applied to values on the chart th
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_13.png)
 
-## Use Diverging color scales
+## Use diverging color scales
 Sometimes your data may have a naturally diverging scale. For example, a temperate range has a natural center at freezing point, and a profitability score has a natural mid-point (zero).
 
 To use diverging color scales, slide the **Diverging** slider to **On**. When **Diverging** is turned on, an additional color selector and value box, both called **Center**, appear, as shown in the following image.
