@@ -31,6 +31,6 @@ A Power BI visualization is constructed using data from underlying datasets. If 
    
    ![visual and data horizontal display](./media/end-user-show-data/power-bi-explore-show-data2-new.png)
 
-### Next steps
+## Next steps
 [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)    
 [Power BI reports](end-user-reports.md)    
