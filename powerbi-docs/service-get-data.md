@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -25,7 +25,7 @@ You can get data from any of these data sources in Power BI by clicking **My Wor
 ## Files
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) � Excel is unique in that a workbook can have both data you've entered into worksheets yourself, and you can query and load data from external data sources by using Power Query (Get & Transform in Excel 2016) or Power Pivot. You can import data that is in tables in worksheets (the data *must* be in a table), or import data that is loaded into a data model. To learn more, see [Get data from Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) - Excel is unique in that a workbook can have both data you've entered into worksheets yourself, and you can query and load data from external data sources by using Power Query (Get & Transform in Excel 2016) or Power Pivot. You can import data that is in tables in worksheets (the data *must* be in a table), or import data that is loaded into a data model. To learn more, see [Get data from Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) -  You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users who have a good understanding of their data sources, data query and transformation, and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
@@ -40,16 +40,16 @@ Where you store your files makes a big difference, too. OneDrive for Business pr
 
 Content packs contain all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs; those from services like Google Analytics, Marketo, or Salesforce, and those created and shared by other users in your organization.
 
-**Services** � There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](service-connect-to-services.md).
+**Services** - There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](service-connect-to-services.md).
 
-**Organizational** � If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
+**Organizational** - If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
 
 ## Databases
 ![](media/service-get-data/pbi_getdata_databases.png)
 
-**Databases in the Cloud** � From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you've connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
+**Databases in the Cloud** - From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you've connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
 
-**Databases on-premises** � From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. A Power BI Enterprise gateway is required. If you're unsure how to connect to your organization's tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](sql-server-analysis-services-tabular-data.md).
+**Databases on-premises** - From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. A Power BI Enterprise gateway is required. If you're unsure how to connect to your organization's tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](sql-server-analysis-services-tabular-data.md).
 
 For other types of databases in your organization, you'll need to first use Power BI Desktop or Excel to connect to, query, and load data into a data model. You can then import your file into Power BI where a dataset is created. If you setup scheduled refresh, Power BI will use connection information from the file along with refresh settings you configure to connect directly to the datasource and query for updates. Those updates are then loaded into the dataset in Power BI. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
@@ -60,7 +60,7 @@ Some data sources already have their data in a format ready for the Power BI ser
 
 In other cases, it might be necessary to query and load the data you want into a file. For example, let's say you have logistics data in a data warehouse database on a server in your organization. In the Power BI service, you cannot connect directly to that database and begin exploring its data (unless it is a tabular model database). You can, however, use Power BI Desktop or Excel to query and load that logistics data into a data model you then save as a file. You can then import that file into Power BI where a dataset is created.
 
-You're probably thinking �But that logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?� Connection information from the Power BI Desktop or Excel file is imported into the dataset along with the data. If you setup scheduled refresh or do a manual refresh on the dataset, Power BI will use the connection information from the dataset, along with a couple other settings, to connect directly to the database, query for updates, and load those updates into the dataset. A Power BI gateway will likely be required to secure any data transfer between your on-premises server and Power BI. Any visualizations in reports and dashboards are refreshed automatically.
+You're probably thinking -But that logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?- Connection information from the Power BI Desktop or Excel file is imported into the dataset along with the data. If you setup scheduled refresh or do a manual refresh on the dataset, Power BI will use the connection information from the dataset, along with a couple other settings, to connect directly to the database, query for updates, and load those updates into the dataset. A Power BI gateway will likely be required to secure any data transfer between your on-premises server and Power BI. Any visualizations in reports and dashboards are refreshed automatically.
 
 You see, just because you cannot connect to your data source right from the Power BI service doesn't mean you can't get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](desktop-data-sources.md) to learn more.
 
@@ -74,7 +74,7 @@ A ***data source*** is where the data in a dataset really comes from. For exampl
 ### Data refresh
 If you save your files on your local drive, or a drive somewhere in your organization, a Power BI gateway might be required in-order to refresh the dataset in Power BI. And, the computer where the file is saved must be on when a refresh happens. You can also re-import your file, or use Publish from Excel or Power BI Desktop, but those are not automated processes.
 
-If you save your files on OneDrive for Business or SharePoint � Team Sites, and then connect to or import them into Power BI, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file, about once every hour, and check for updates. If any are found, the dataset and any visualizations are refreshed automatically.
+If you save your files on OneDrive for Business or SharePoint - Team Sites, and then connect to or import them into Power BI, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file, about once every hour, and check for updates. If any are found, the dataset and any visualizations are refreshed automatically.
 
 Content packs from services are automatically updated. In most cases, once a day. You can manually refresh, but whether or not you'll see any updated data will depend on the service provider. Content packs from others in your organization will depend on the data sources used and how the person who created the content pack setup refresh.
 
