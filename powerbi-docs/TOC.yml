@@ -657,6 +657,8 @@
         href: service-dataflows-create-use.md
       - name: "Computed entities with Power BI Premium (preview)"
         href: service-dataflows-computed-entities-premium.md
+      - name: "Connect to data sources with dataflows (preview)"
+        href: service-dataflows-data-sources.md        
       - name: "Using dataflows with on-premises data sources (preview)"
         href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows (preview)"
