@@ -69,6 +69,7 @@ To submit a custom visual for certification:
 
 | Link to AppSource | Link to video |
 | --- | --- |
+| [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) | |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft Calendar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
