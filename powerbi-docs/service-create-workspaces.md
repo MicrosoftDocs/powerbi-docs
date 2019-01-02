@@ -7,20 +7,20 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Create workspaces with your colleagues in Power BI
 
-In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle those together into *apps* that you can distribute to your whole organization or to specific people or groups. 
+In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
 ![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
-When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
+When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
-**Did you know?** Power BI is previewing a new workspace experience. Read [Create the new workspaces (preview)](service-create-the-new-workspaces.md) to see how workspaces will change in the future. 
+**Did you know?** Power BI is previewing a new workspace experience. Read [Organize work in the new workspaces (preview)](service-new-workspaces.md) for details about the new workspaces. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -69,7 +69,7 @@ When you view content in the content list of an app workspace, the app workspace
 
 Apps are provided for all the third-party services Power BI supports, making it easy for you to get data from the services you use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. You can publish organizational apps to give your users the data they need.
 
-In the current workspaces you can also connect using organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Consider migrating your organizational content packs to apps.
+In the current workspaces, you can also connect using organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Consider migrating your organizational content packs to apps.
 
 ## Distribute an app
 
@@ -80,12 +80,12 @@ When the content is ready, you choose which dashboards and reports you want to p
 ### How are apps different from organizational content packs?
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps. Apps and content packs have a few major differences. 
 
-* After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This makes it easy for business users to continue to navigate to them over time.
+* After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
-* With the new workspace experience preview, we are taking the first steps towards deprecating organizational content packs. You can't consume or create them in preview workspaces.
+* With the new workspace experience preview, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in preview workspaces.
 
-See [How are the new app workspaces different from existing app workspaces?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) to compare the current and new app workspaces. 
+See [How are the new app workspaces different from existing app workspaces?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) to compare the two. 
 
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
