@@ -42,7 +42,9 @@ However, if you choose to set up the environment manually, you can continue belo
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
+You register your application with Azure Active Directory to allow your application access to the Power BI REST APIs. Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources. It is recommended that you complete the following steps in Azure AD with a global admin account. 
+
+**Note**: The global admin account can be the same as your *master account*, however, keep in mind that the credentials for the master account must be passed when requesting access tokens.
 
 1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
 
@@ -61,7 +63,7 @@ You register your application with Azure Active Directory to allow your applicat
 
 ### Apply permissions to your application within Azure Active Directory
 
-Enable additional permissions for your application, including what was provided on the app registration page. Sign in with the *master* account that you're using for embedding. The master account needs to be a global admin account.
+Enable additional permissions for your application, including what was provided on the app registration page.
 
 ### Use the Azure Active Directory portal
 
@@ -95,7 +97,7 @@ Enable additional permissions for your application, including what was provided 
 
 8. Within **Required permissions**, select **Grant Permissions**.
 
-    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account that performs this action is a Global Admin, you need to grant permissions for all users in your organization for this application. If the account that performs this action is the *master account* and isn't a Global Admin, you need to grant permissions only to the *master account* for this application.
+    The **Grant Permissions** action should be carried out by a *global admin* if you would like to consent to the application permissions for all users within your tenant, otherwise [Azure AD consent framework](https://docs.microsoft.com/en-us/azure/active-directory/develop/consent-framework) will prompt new users to consent after they have authenticated. Choose the option that best suites your application, however, in the "app owns data" scenario, [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent#grant-admin-consent-when-registering-an-app-in-the-azure-portal) typically makes the most sense.
 
     ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
