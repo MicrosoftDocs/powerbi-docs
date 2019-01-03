@@ -613,6 +613,8 @@
         href: service-share-reports.md
       - name: "Publish from Power BI to the web"
         href: service-publish-to-web.md
+      - name: "Secure no-code embedding"
+        href: service-embed-secure.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
