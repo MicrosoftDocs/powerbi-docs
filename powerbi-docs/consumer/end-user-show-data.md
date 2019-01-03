@@ -8,18 +8,18 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 12/26/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Show the data that was used to create the visualization
-## Show data
+## Show data in Reading view
 A Power BI visualization is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show Data**, Power BI displays the data below (or next to) the visualization.
 
 
-## Using *Show Data* in Power BI service
-1. In Power BI service, open a report and select a visual.  
+## Using *Show Data* in Power BI service Reading view
+1. In Power BI service, open a report (in Reading view) and select a visual.  
 2. To display the data behind the visual, select the ellipsis (...) and choose **Show data**.
    
    ![select Show data](./media/end-user-show-data/power-bi-show-data2.png)
@@ -31,6 +31,6 @@ A Power BI visualization is constructed using data from underlying datasets. If 
    
    ![visual and data horizontal display](./media/end-user-show-data/power-bi-explore-show-data2-new.png)
 
-### Next steps
+## Next steps
 [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)    
 [Power BI reports](end-user-reports.md)    
