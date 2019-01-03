@@ -278,11 +278,7 @@
       - name: "Tips for creating reports"
         href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizations
-<<<<<<< HEAD
-      items:
-=======
       items: 
->>>>>>> 18759e7ecf6618db3cfbb11c0fd26f0c87f8412b
       - name: "Visualizations in Power BI"
         href: visuals/power-bi-report-visualizations.md
       - name: "Visualization best practices"
