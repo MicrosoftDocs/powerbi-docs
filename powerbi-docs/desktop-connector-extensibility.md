@@ -39,7 +39,7 @@ Under **Data Extensions** you can select from two levels of security:
 * (Recommended) Only allow certified extensions to load
 * (Not Recommended) Allow any extension to load without warning
 
-If you plan on using **Custom Connectors** or connectors that you or a third party have developed and distribute, you must select **"(Not Recommended) Allow any extension to load without warning"**. We don't recommend that security setting unless you plan on running **Custom Connectors**.
+If you plan on using **Custom Connectors** or connectors that you or a third party have developed and distribute, you must select **"(Not Recommended) Allow any extension to load without warning"**. We don't recommend that security setting unless you absolutely trust your Custom Connectors, since code in there can handle credentials (including sending them over HTTP) and ignore privacy levels.
 
 At the **"(Recommended)"** security setting, if there are custom connectors on your system, an error is displayed describing the connectors that can't load due to security.
 

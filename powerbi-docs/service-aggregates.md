@@ -1,20 +1,20 @@
 ---
-title: Aggregates (sum, average, maximum, etc.) in visualizations
-description: Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
+title: Work with aggregates (sum, average, etc.) in the Power BI service
+description: Learn how to change the aggregation in a chart (sum, average, maximum, etc.) in the Power BI service.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 
 LocalizationGroup: Reports
 ---
-# Aggregates in Power BI visualizations
+# Work with aggregates (sum, average, etc.) in the Power BI service
 ## What is an aggregate?
 Sometimes you want to mathematically combine values in your data. The mathematical operation could be sum, average, maximum, count, etc. When you combine values in your data, it is called *aggregating*. The result of that mathematical operation is an *aggregate*. 
 
@@ -66,16 +66,16 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
 Some of the options that may be available for aggregating a field:
 
-* **Do Not Summarize**. With this option chosen, each value in that field is treated separately and not summarized. This is often used if you have a numeric ID column that shouldn't be summed.
-* **Sum**. This adds all the values in that field up.
+* **Do Not Summarize**. With this option chosen, each value in that field is treated separately and not summarized. Use this option if you have a numeric ID column that shouldn't be summed.
+* **Sum**. Adds all the values in that field up.
 * **Average**. Takes an arithmetic mean of the values.
 * **Minimum**. Shows the smallest value.
 * **Maximum**. Shows the largest value.
-* **Count (Not Blanks).** This counts the number of values in that field that are not blank.
-* **Count (Distinct).** This counts the number of different values in that field.
+* **Count (Not Blanks).** Counts the number of values in that field that are not blank.
+* **Count (Distinct).** Counts the number of different values in that field.
 * **Standard deviation.**
 * **Variance**.
-* **Median**.  Shows the median (middle) value. This is the value that has the same number of items above and below.  If there are two medians, Power BI averages them.
+* **Median**.  Shows the median (middle) value. This value has the same number of items above and below.  If there are two medians, Power BI averages them.
 
 For example, this data:
 
@@ -105,7 +105,7 @@ Would give the following results:
 ## Create an aggregate using a category (text) field
 You can also aggregate a non-numeric field. For example, if you have a product name field, you can add it as a value and then set it to **Count**, **Distinct count**, **First**, or **Last**. 
 
-1. In this example, we've dragged the **Product** field into the Values well. The Values well is typically used for numeric fields. Power BI recognizes that this is a text field, sets the aggregate to **Do not summarize**, and presents us with a single-column table.
+1. In this example, we've dragged the **Product** field into the Values well. The Values well is typically used for numeric fields. Power BI recognizes that this field is a text field, sets the aggregate to **Do not summarize**, and presents us with a single-column table.
    
    ![Product field in the values well](media/service-aggregates/power-bi-aggregate-value.png)
 2. If we change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different products. In this case, there are 4.
@@ -137,11 +137,11 @@ A4:  And a third possibility is that you're using the field for an axis. On a ba
 >[!NOTE]
 >The exception to this rule is scatter charts, which *require* aggregated values for the X and Y axes.
 
-Q:  Why can't I aggregate text fields for SSAS data sources?
+Q:  Why can't I aggregate text fields for SQL Server Analysis Services (SSAS) data sources?
 
-A:  Live connections to SSAS MD do not allow for any client-side aggregations. This includes first, last, avg, min, max, and sum.
+A:  Live connections to SSAS multidimensional models don't allow any client-side aggregations, including first, last, avg, min, max, and sum.
 
-Q:  I have a scatter chart and I want my field to *not* aggregate.  How do I do this?
+Q:  I have a scatter chart and I want my field to *not* aggregate.  How?
 
 A:  Add the field to the **Details** bucket and not to the X or Y axes buckets.
 
