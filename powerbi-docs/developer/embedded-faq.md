@@ -318,6 +318,6 @@ For more information, please see [Troubleshooting your embedded application](emb
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
-### How do I get better Power BI Embedded performance?
+### How can I improve performance?
 
 [Power BI Embedded performance](embedded-performance-best-practices.md)
