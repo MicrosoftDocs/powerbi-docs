@@ -66,6 +66,6 @@ Keep tools and SDK packages up-to-date.
 
 ## Next steps
 
-* [Report performance](../power-bi-reports-performance.md)
+* [Power BI report performance best practices](../power-bi-reports-performance.md)
 * [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
 * [Power BI Embedded FAQ](embedded-faq.md)
