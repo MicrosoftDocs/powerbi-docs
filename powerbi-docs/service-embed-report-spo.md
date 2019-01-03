@@ -85,7 +85,7 @@ Alternatively, you can share a report directly with users by embedding the repor
 
 2. The author creates a report in an app workspace. *To share with **Power BI free users**, the app workspace needs to be set as a **Premium workspace**.*
 
-3. The author publishes the app then installs it. *TThe author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.*
+3. The author publishes the app then installs it. *The author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.*
 
 4. Now all end users need to install the app too. However, you can set the app to be preinstalled for end users by using the **Install app automatically** feature, which can be enabled in the [Power BI admin portal](service-admin-portal.md).
 
