@@ -24,7 +24,7 @@ Power BI gives users the ability to perform complex analyses on huge amounts of 
 
 Power BI shared capacity offers some protection from such cases by imposing limits on file sizes, refresh schedules, and other aspects of the service. In a Power BI Premium capacity, by contrast, most of those limits are raised. As a result, a single report with a bad DAX expression or a very complex model can cause significant performance issues. When processed, the report can consume all of the resources available on the capacity. 
 
-Power BI is constantly improving in how it protects Premium capacity users against such issues. We are also empowering administrators with the tools to analyze when capacities are overburdened and why. For more information, see our [short training session](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) and [longer training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2174). At the same time, you need the ability to mitigate significant issues when they occur. The quickest way to mitigate these issues is to restart the capacity.
+Power BI is constantly improving in how it protects Premium capacity users against such issues. We are also empowering administrators with the tools to analyze when capacities are overburdened and why. For more information, see our [short training session](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) and [longer training session](https://www.microsoft.com/businessapplicationssummit/video/BAS2018-2174). At the same time, you need the ability to mitigate significant issues when they occur. The quickest way to mitigate these issues is to restart the capacity.
 
 ## Is the restart process safe? Will I lose any data?
 
@@ -48,7 +48,7 @@ Follow these steps to restart a capacity.
 
 ## How can I prevent issues from happening in the future?
 
-The best way to prevent issues is to educate users about efficient data modeling. For more information, see our [training session](https://www.microsoft.com/en-us/businessapplicationssummit/video/BAS2018-2170).
+The best way to prevent issues is to educate users about efficient data modeling. For more information, see our [training session](https://www.microsoft.com/businessapplicationssummit/video/BAS2018-2170).
 
 We also recommend that you [monitor your capacities](service-admin-premium-monitor-capacity.md) regularly to look for trends that indicate underlying issues. We plan regular releases of the monitoring app and other tools so that you can monitor and manage your capacities more effectively.
 
