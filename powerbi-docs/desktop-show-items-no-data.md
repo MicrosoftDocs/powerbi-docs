@@ -21,7 +21,7 @@ Power BI lets you visualize all sorts of data from various sources. When creatin
 
 ## Determining relevant data
 
-To get started understanding how Power BI determines which data is relevant to display, let's consider a table as a simple example. Using the model represented in the samples section, found at the end of this article, consider bulding a table with the following settings:
+To get started understanding how Power BI determines which data is relevant to display, let's consider a table as a simple example. Using the model represented in the samples section, found at the end of this article, consider building a table with the following settings:
 
 **1. Groups from the same table:** *Product[Color] - Product[Size]*
 
@@ -55,7 +55,7 @@ Let's look at a different case:
 |Gloss     |Red         |
 |Matte     |Blue         |
 
-Since there is no explicit measure and the two tables are directly related, Power BI attempts to inject a measure to constrain the combinations that result. In this case, Power BI injects a *CALCULATE(COUNTROWS('Product'))* measure which should not be blank, since *Product* is the table that is common to both tables.
+Since there is no explicit measure and the two tables are directly related, Power BI attempts to inject a measure to constrain the combinations that result. In this case, Power BI injects a *CALCULATE(COUNTROWS('Product'))* measure, which should not be blank, since *Product* is the table that is common to both tables.
 
 As such, Power BI displays the combinations that do have entries in the Product table, which excludes the combinations of *("None" + "Blue")* and *("Matte" + "Red")*.
 
@@ -88,7 +88,7 @@ The **Show items with no data** feature does *not* have effect in the following 
 
 The most interesting use cases of **Show items with no data** are when measures are present. Let's look at the situation when the groups are from the same table, or can be related through a path in the model. For example, *ProductStyle* is directly related to *Product* and indirectly related to *Sales*, *ProductStyle* and *ProductCategory* can be related through the *Product* table, and so on.
 
-Let's look at a couple interesting cases, and compare when **Show items with no data** is off and thenon. 
+Let's look at a couple interesting cases, and compare when **Show items with no data** is off and then on. 
 
 **1. Grouping columns from the same table:** *Product[Color] - Product[Size] - Sum(Sales[Quantity])*
 
