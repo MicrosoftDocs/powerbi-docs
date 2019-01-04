@@ -2,15 +2,14 @@
 title: Use R-powered custom visuals in Power BI
 description: Use R-powered custom visuals in Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
-ms.author: maghan
-
 LocalizationGroup: Create reports
 ---
 # Use R-powered custom visuals in Power BI
