@@ -158,6 +158,7 @@ This section shows the sample data model used in the examples in this article.
 
 
 **Data**:
+
 |Product[ProductId]|	Product[ProductName]|	Product[Color]|	Product[Size]|	Product[CategoryId]|	Product[StyleId]|
 |---------|---------|---------|---------|---------|---------|
 |1	|Prod1	|Blue	|Small	|1	|1 |
@@ -171,6 +172,7 @@ This section shows the sample data model used in the examples in this article.
 |1	|Phone   |
 |2	|Camera |
 |3	|TV |
+
 
 |ProductStyle[StyleId]|	ProductStyle[Finish]|	ProductStyle[Polished]|
 |---------|---------|---------|
@@ -186,8 +188,8 @@ This section shows the sample data model used in the examples in this article.
 
 
 
-## Next Steps
+## Next steps
 
 This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles. 
 
-* [Create and use dataflows in Power BI](service-dataflows-create-use.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
