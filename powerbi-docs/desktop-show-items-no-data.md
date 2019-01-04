@@ -149,6 +149,43 @@ How it appears with **Show items with no data** feature on:
 
 In this case, notice how *ProductStyle[Finish]=None* does not appear in the table. This is because, in this case, Power BI first selected all the *Color* values in the *Product* table. Then for each color, Power BI selected the corresponding *Finish* values that contained data. Since *None* does not show up in any combination of *Color*, it is not selected.
 
+## Example data model
+
+This section shows the sample data model used in the examples in this article.
+
+**Model**:
+![Relationships in the data model](media/desktop-show-items-no-data/show-items-no-data_03.png)
+
+
+**Data**:
+|Product[ProductId]|	Product[ProductName]|	Product[Color]|	Product[Size]|	Product[CategoryId]|	Product[StyleId]|
+|---------|---------|---------|---------|---------|---------|
+|1	|Prod1	|Blue	|Small	|1	|1 |
+|2	|Prod2	|Blue	|Medium	|2	|2 |
+|3	|Prod3	|Red	|Large	|1	|1 |
+|4	|Prod4	|Blue	|Large	|2	|2 |
+
+
+|ProductCategory[CategoryId]|	ProductCategory[CategoryName]|
+|---------|---------|
+|1	|Phone   |
+|2	|Camera |
+|3	|TV |
+
+|ProductStyle[StyleId]|	ProductStyle[Finish]|	ProductStyle[Polished]|
+|---------|---------|---------|
+|1	|Gloss	|Yes |
+|2	|Matte	|No |
+|3	|None	|No |
+
+
+|Sales[SaleId]|	Sales[ProductId]|	Sales[Date]|	Sales[Quantity]|
+|---------|---------|---------|---------|
+|1	|1	|1/1/2012 0:00|	10 |
+|2	|2	|1/1/2013 0:00|	15 |
+
+
+
 ## Next Steps
 
 This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles. 
