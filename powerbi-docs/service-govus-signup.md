@@ -98,7 +98,7 @@ If you have both Free and US Government Pro licenses in your tenant, both Free a
 
 When using a mix of Free and Pro licenses in a US Government tenant, and going through the *whitelisting* process, the following can be expected:
 
-**Before *whitelisting***:
+**Before _whitelisting_**:
 
 * Users with Free licenses are running in commercial cloud
 * Pro US Government licenses show up in the portal, and the administrator can assign those licenses to users. Pro US Government users will not lose data from their Free licenses once the admin assigns a US Government Pro license. The assigned users have access Power BI Pro features for US Government customers, but the following bullet list functionality gaps will exist until the tenant is successfully *whitelisted*:
@@ -108,7 +108,7 @@ When using a mix of Free and Pro licenses in a US Government tenant, and going t
   * PBIX files must be manually uploaded from the commercial Power BI service
   * Power BI mobile apps are not available
 
-**After *whitelisting***:
+**After _whitelisting_**:
 
 * Free users running in the commercial Power BI service can continue to run, but the they will stop authenticating as expected.
 * Pro users running in the US Government cloud can use the **Power BI for US Government customers** service as expected.
