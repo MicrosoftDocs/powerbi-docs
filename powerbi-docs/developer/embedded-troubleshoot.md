@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/12/2018
+ms.date: 12/20/2018
 ---
 
 # Troubleshoot your embedded application
@@ -286,3 +286,7 @@ For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 If you require further assistance, then [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
+
+## Performance
+
+[Power BI Embedded performance](embedded-performance-best-practices.md)
