@@ -132,8 +132,8 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * [Ways to share your work](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [SharePoint Online report web part](service-embed-report-spo.md)
-
 * [URL filters](service-url-filters.md)
+
+* [SharePoint Online report web part](service-embed-report-spo.md)
 
 * [Publish to Web](service-publish-to-web.md)

@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/01/2018
+ms.date: 11/01/2018 
 ---
 
 # Embed with report web part in SharePoint Online
@@ -70,7 +70,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
     ![SP report loaded](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## Granting access to reports
+## Grant access to reports
 
 Embedding a report in SharePoint Online does not automatically give users permission to view the report. The permissions to view the report are set within the Power BI service.
 
@@ -173,6 +173,6 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
 * [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 * [What is Power BI Premium?](service-premium.md)
-* [No-code secure embedding](service-embed-secure.md)
+* [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

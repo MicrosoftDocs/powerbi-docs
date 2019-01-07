@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
 ---
 
@@ -22,7 +22,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 * Bundling those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
 * Sharing dashboards or reports with a few people, from the service or the Power BI mobile apps.
 * Printing reports.
-* Embed reports in secure portals or public websites
+* Embed reports in secure portals or public websites.
 
 No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
 
@@ -102,6 +102,8 @@ With **Publish to web** you can publish Power BI reports to the whole Internet b
 
 * [Share dashboards with coworkers and others](service-share-dashboards.md)
 * [Create and publish an app in Power BI](service-create-distribute-apps.md)
-* [No-code secure embedding](service-embed-secure.md)
-* Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* [Embed report in a secure portal or website](service-embed-secure.md)
+
+Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

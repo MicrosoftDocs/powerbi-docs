@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
 ---
 
@@ -132,6 +132,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 - Reports containing report-level DAX measures
 - Single sign-on data query models
 - [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
+- The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding. Learn more about [user owns data](developer/embed-sample-for-your-organization.md).
 
 ## Tenant setting
 
@@ -172,5 +173,11 @@ You need to be a Microsoft Power BI user to use **Publish to web**. The consumer
 When you create an embed code using **Publish to web**, the report is made visible to users on the Internet. It’s publicly available so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.
 
 The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
+
+## Next steps
+
+- [SharePoint Online report web part](service-embed-report-spo.md) 
+
+- [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
