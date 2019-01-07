@@ -97,18 +97,12 @@
       href: desktop-connect-to-data.md
     - name: "Publish from Power BI Desktop"
       href: desktop-upload-desktop-files.md
-    - name: "Custom visualizations in Power BI"
-      href: power-bi-custom-visuals.md
-    - name: "Custom visuals for organizations in Power BI"
-      href: power-bi-custom-visuals-organization.md      
     - name: "Part I, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "Troubleshoot custom visuals"
-      href: power-bi-custom-visuals-troubleshoot.md
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -359,7 +353,7 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
         href: desktop-access-database-errors.md
@@ -619,7 +613,7 @@
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: "Power BI publisher for Excel"
         href: publisher-for-excel.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
         href: service-admin-forgot-your-password.md
@@ -881,7 +875,7 @@
         href: developer/power-bi-permissions.md 
     - name: How to
       items: 
-      - name: "How to embed from an app"
+      - name: "Embed from an app"
         href: developer/embed-from-apps.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
@@ -891,8 +885,6 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "Troubleshooting your embedded application"
-        href: developer/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -903,6 +895,10 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot your embedded application"
+          href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
@@ -945,12 +941,12 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Develop Custom Visuals
+  - name: Custom Visuals
     items:
     - name: Overview
       items: 
-      - name: "Adding Custom visuals into Power BI"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: "Custom visuals in Power BI"
+        href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
@@ -959,6 +955,8 @@
         href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
+      - name: "Custom visuals for organizations in Power BI"
+        href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: "Custom visuals FAQ"
@@ -979,8 +977,12 @@
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
-      - name: "Troubleshoot custom visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: desktop-r-powered-custom-visuals.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot developing custom visuals"
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "APIs"
