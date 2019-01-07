@@ -214,7 +214,7 @@ When end users edit or create new reports, they use the production multi-tenant 
 >[!Important]
 > The following analysis is based on the current state of the product. As we are releasing new features on a monthly cadence, we continue to provide new capabilities and features that answer existing limitations and weak spots. Make sure to check our monthly blog posts to see what’s new and come back to this article to see how new features affect tenancy model recommendation.
 
-| Isolation Approach  | Workspace-based   | Row-level security-based  |  |  |
+| Evaluation Criteria | Workspace-based   | Row-level security-based  |  |  |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
 | Data architecture  | Easiest when there is a separate database per tenant  | Easiest when all the data for all tenants is in a single data warehouse   |  |  |
 | Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |  |  |
@@ -228,20 +228,20 @@ When end users edit or create new reports, they use the production multi-tenant 
 
 **Power BI Artifact limits:**
 
-* Number of workspaces V1 (groups) a single user/ application can be a member/admin of - 250.
-* Number of workspaces V2 (folders) a single user/ application can be a member/ admin of - 1000.
-* Number of datasets in a single Workspace - 1000.
-* Number of reports/dashboards connected to a single dataset - 1000.
-* Dataset memory size limit to upload a PBIX - 10 GB.
+* The number of workspaces V1 (groups) that a single user/application can be a member/admin of is 250.
+* The number of workspaces V2 (folders) that a single user/application can be a member/admin of is 1000.
+* The number of datasets in a single workspace is 1000.
+* The number of reports/dashboards connected to a single dataset is 1000.
+* THe dataset memory size limit to upload a *.pbix* file is 10 GB.
 
 **Power BI Capacity considerations and limitations**
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../service-premium.md).
-* Recommended [dataset size](../service-premium-large-datasets.md) for each SKU.
-* Maximal dataset size in a dedicated capacity - 10 GB.
-* Number of scheduled refreshes for an ‘import mode’ dataset in a day - 48.
-* Time between scheduled refreshes for an ‘import mode’ dataset - 30 minutes.
-* Number of refreshes that can run concurrently on a [capacity](../service-premium-understand-how-it-works.md#refresh-parallelization-policy).
+* For the recommended dataset size for each SKU, please reference [Premium large datasets](../service-premium-large-datasets.md).
+* The maximum dataset size in a dedicated capacity is 10 GB.
+* The number of scheduled refreshes for an *import mode* dataset in a day is 48.
+* The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
+* For the number of refreshes that can run concurrently on a capacity, please reference service-premium-understand-how-it-works.md#refresh-parallelization-policy.
 * Average time of scaling a capacity is between 1-2 minutes. During that time, the capacity is not available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## Next steps
