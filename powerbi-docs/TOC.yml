@@ -585,12 +585,12 @@
         href: service-insights-optimize.md
     - name: Collaborate in Power BI
       items: 
-      - name: "Create and share apps"
-        href: service-create-distribute-apps.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
         href: service-create-the-new-workspaces.md
+      - name: "Create and share apps"
+        href: service-create-distribute-apps.md
       - name: "Manage data storage in workspaces"
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Connect to files on your group's OneDrive"
