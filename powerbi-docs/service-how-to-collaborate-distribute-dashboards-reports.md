@@ -4,7 +4,6 @@ description: In Power BI you can collaborate on and share dashboards, reports, t
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
-
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
@@ -22,7 +21,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 * Collaborating with coworkers to create meaningful reports and dashboards in *workspaces*.
 * Bundling those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
 * Sharing dashboards or reports with a few people, from the service or the Power BI mobile apps.
-- Printing reports.
+* Printing reports.
 * Publishing to the web for public web sites, where anyone in the world can see and interact with it.
 
 No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
