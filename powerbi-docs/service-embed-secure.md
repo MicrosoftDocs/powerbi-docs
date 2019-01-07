@@ -76,7 +76,7 @@ The value provided in the *pageName* setting corresponds to the end of the repor
 
 For some advanced features, you can [URL Filters](service-url-filters.md) to build more experiences using the report. For example, the URL below filters the report to show data for the Energy industry.
 
-Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be very powerful. You can build experiences using basic HTML and JavaScript.
+Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be powerful. You can build experiences using basic HTML and JavaScript.
 
 For example, here’s how you can add a button to an HTML page:
 
@@ -84,7 +84,7 @@ For example, here’s how you can add a button to an HTML page:
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-When pressed, the button calls a function to update the iFrame with an updated URL which includes the filter for the Energy industry.
+When pressed, the button calls a function to update the iFrame with an updated URL, which includes the filter for the Energy industry.
 
 ```javascript
 function show(pageName, filterValue)

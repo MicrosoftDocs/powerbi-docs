@@ -23,7 +23,7 @@ You can also easily edit, update, refresh, or unshare your published visuals.
 
 ## How to use Publish to Web
 
-**Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web is not supported. Review the **Warning** earlier in this article before using Publish to web.
+**Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
 
 You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
 
@@ -69,7 +69,7 @@ The embed code you receive after you Publish to web will look like the following
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
 
-You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
+You can edit the width and height manually to ensure it's precisely how you want it to fit onto the page into which you're embedding it.
 
 To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accommodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
@@ -112,7 +112,7 @@ To learn more, see the **How it works** section later in this article. If you ne
 
 ## Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. You can disable automatic refresh by selecting **do not refresh** on the schedule for the dataset used by the report.  
+Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. You can disable automatic refresh by selecting **don't refresh** on the schedule for the dataset used by the report.  
 
 ## Custom visuals
 
@@ -127,7 +127,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
 - "R" Visuals are not currently supported in Publish to web reports.
-- Exporting Data from visuals in a report which has been published to the web
+- Exporting Data from visuals in a report, which has been published to the web
 - ArcGIS Maps for Power BI visuals
 - Reports containing report-level DAX measures
 - Single sign-on data query models
