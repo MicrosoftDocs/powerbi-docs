@@ -53,7 +53,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 4. Once the visual is downloaded (which is like downloading any file from your browser), go to **Power BI Desktop** and click the ellipsis (...) in the **Visualizations** pane, and select **Import from file**.
 
    ![R visual 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
-5. Your warned about importing a custom visual, as shown in the following image:
+5. You're warned about importing a custom visual, as shown in the following image:
 
    ![R visual 5](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_5.png)
 6. Navigate to where the visual file was saved, then select the file. **Power BI Desktop** custom visualizations have the .pbivisual extension.
