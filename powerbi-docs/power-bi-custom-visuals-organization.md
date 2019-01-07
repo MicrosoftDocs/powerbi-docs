@@ -8,12 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-<<<<<<< HEAD
 ms.date: 12/11/2018
-=======
-ms.subservice: powerbi-custom-visuals
-ms.date: 10/29/2018
->>>>>>> fa262a019d65b985865a440601bdd5c2e4df7d25
 LocalizationGroup: Visualizations
 ---
 
