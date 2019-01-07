@@ -2,16 +2,16 @@
 title: Ways to share your work
 description: In Power BI you can collaborate on and share dashboards, reports, tiles, and apps in different ways. Each has its advantages.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2018
-ms.author: maggies
-
+ms.date: 01/08/2018
 LocalizationGroup: Share your work
 ---
+
 # Ways to share your work in Power BI
 
 You've created dashboards and reports. Maybe you collaborated on them with your coworkers, too. Now you want others to have access to them. What's the best way to distribute them?
@@ -22,7 +22,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 * Bundling those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
 * Sharing dashboards or reports with a few people, from the service or the Power BI mobile apps.
 * Printing reports.
-* Publishing to the web for public web sites, where anyone in the world can see and interact with it.
+* Embed reports in secure portals or public websites
 
 No matter which option you choose, to share a dashboard you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. 
 
@@ -61,6 +61,7 @@ For your users to view your app, either they need to have a Power BI Pro license
 You can publish apps to those outside your organization, too. They can view and interact with the app content, but can’t share it with others.
 
 ## Share dashboards and reports
+
 Let's say you've finalized a dashboard and a report in your own My Workspace or in a workspace and you want a few other people to have access to it. One way to get it to them is to *share* it. 
 
 ![Share icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
@@ -83,18 +84,24 @@ More about [annotating and sharing tiles, reports, and visuals](consumer/mobile/
 You can also [share a snapshot of a tile](consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
 
 ## Print or save as PDF or other static file
+
 You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](consumer/end-user-print.md).
 
-## Publish to the web
+## Embed reports in secure portals or public websites
 
-> [!WARNING]
-> Use **Publish to web** only to share content publicly, not for internal sharing.
+You can embed Power BI reports in portals or websites where your users expect to see them.  
 
-You can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. More about [publishing to the web](service-publish-to-web.md).
+The **Embed** in SharePoint Online and the **Embed** option in the Power BI service allows you to securely embed reports for your internal users. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report will need to have the appropriate license. This makes it easy to distribute your reports to your internal users. More about Embed and Embed in SharePoint Online.  
+
+>[!Warning]
+>Use Publish to web only to share content publicly, not for internal sharing.
+
+With **Publish to web** you can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. More about [publishing to the web](service-publish-to-web.md).
 
 ## Next steps
+
 * [Share dashboards with coworkers and others](service-share-dashboards.md)
 * [Create and publish an app in Power BI](service-create-distribute-apps.md)
+* [No-code secure embedding](service-embed-secure.md)
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
-* More questions? [Try the Power BI Community](http://community.powerbi.com/).
-
+* More questions? [Try the Power BI Community](http://community.powerbi.com/)
