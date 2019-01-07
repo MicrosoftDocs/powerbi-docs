@@ -8,7 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+<<<<<<< HEAD
 ms.date: 12/11/2018
+=======
+ms.subservice: powerbi-custom-visuals
+ms.date: 10/29/2018
+>>>>>>> fa262a019d65b985865a440601bdd5c2e4df7d25
 LocalizationGroup: Visualizations
 ---
 
@@ -22,7 +27,7 @@ The following image shows the process by which organization custom visuals in Po
 
 ![Custom visual pic](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
 
-Organization visuals are deployed and managed by the Power BI administrator from the Admin portal. Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop.
+Organizational visuals are deployed and managed by the Power BI administrator from the Admin portal. Once deployed into the organizational repository, users in the organization can easily discover them, and import the organizational custom visuals into their reports directly from Power BI Desktop.
 
 To learn more about how to use organizational custom visuals in the reports that you created, see the following article: [Learn more about importing organizational visuals into your reports](power-bi-custom-visuals.md).
 

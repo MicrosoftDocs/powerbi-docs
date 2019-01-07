@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukasz
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
