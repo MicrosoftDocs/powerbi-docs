@@ -26,7 +26,7 @@ Custom visuals are created by developers, using the custom visuals SDK, to enabl
 Custom visuals can be in the form of three deployment channels:
 
 * Custom visual files
-* Organization visuals
+* Organizational visuals
 * Marketplace visuals
 
 ## Custom visual files
@@ -36,7 +36,7 @@ Custom visuals are packages that include code for rendering the data that is ser
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; Make sure you trust the author and the source of the custom visual before importing it to your report.
 
-## Organization visuals
+## Organizational visuals
 
 Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. The admin then has control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (for example, update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
 
@@ -69,7 +69,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![cv imported](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### Import organization visuals
+### Import organizational visuals
 
 1. Select the ellipses from the bottom of the Visualizations pane.
 
