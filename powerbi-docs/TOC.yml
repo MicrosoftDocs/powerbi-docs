@@ -103,13 +103,6 @@
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-<<<<<<< HEAD
-=======
-    - name: "Show items with no data in Power BI"
-      href: desktop-show-items-no-data.md
-    - name: "Troubleshoot custom visuals"
-      href: power-bi-custom-visuals-troubleshoot.md
->>>>>>> fa262a019d65b985865a440601bdd5c2e4df7d25
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
