@@ -200,6 +200,10 @@ For client-side filtering (JavaScript), the ISV might decide what the end user s
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
+### What are the best practices to improve performance?
+
+[Power BI Embedded performance](embedded-performance-best-practices.md)
+
 ## Licensing
 
 ### How do I purchase Power BI Embedded?
@@ -260,8 +264,8 @@ Non-profit and educational entities can purchase Azure. There is no special pric
 
 3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
 
-> [!Note]
-> You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
+    > [!Note]
+    > You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
 
 For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 
@@ -314,10 +318,6 @@ You can learn how to edit AAD registered applications [here](https://docs.micros
 
 You can learn how to edit your Power BI data [here](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
-For more information, please see [Troubleshooting your embedded application](embedded-troubleshoot.md)
+For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
-### What are the best practices to improve performance?
-
-[Power BI Embedded performance](embedded-performance-best-practices.md)
