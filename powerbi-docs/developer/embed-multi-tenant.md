@@ -4,7 +4,7 @@ description: Design a multi-tenant application with embedded analytics.
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.component: powerbi - developer
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.date: 01/08/2019
 
 # Managing multi-tenancy with Power BI embedded analytics
 
-When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later might turn costly and disruptive.
+When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later might become costly and disruptive.
 
 With Power BI Embedded, there are two main fundamental approaches to maintaining separation between tenants.
 
@@ -85,7 +85,7 @@ Some SaaS applications might have a low number of customers and low usage, but l
 
 ### Automation & operational complexity
 
-You should identify frequently occurring processes that need automation.
+Identify frequently occurring processes that need automation.
 
    * What is the frequency of onboarding new tenants? What actions are needed to fully onboard each one?
    * What is the release cadence for new or updated Power BI content, that needs to be deployed?
@@ -99,7 +99,7 @@ Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](e
 
 ### Cost
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) has a resource-based purchase model, like Power BI Premium. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with Power BI Embedded. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. You need to purchase a [Power BI Pro license](../service-admin-licensing-organization.md) for each master user, or specific users that can take action in the Power BI portal.
+[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) has a resource-based purchase model, like Power BI Premium. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with Power BI Embedded. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../service-admin-licensing-organization.md) is required for each master user, or specific users that can take action in the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../service-admin-premium-monitor-capacity.md).
 
@@ -136,9 +136,9 @@ To add additional isolation, an application developer can define a *master*/ app
 
 ### Scalability
 
-One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This is not possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
+One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task is not possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
 
-Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. When managing hundreds or thousands of datasets, this should be considered and tested. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that should be managed differently than other tenants.
+Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It is recommended to test your  managing hundreds or thousands of datasets, this should be considered and tested. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that should be managed differently than other tenants.
 
 ### Automation & operational complexity
 
@@ -174,7 +174,7 @@ For the primary use cases of content creation, the application developer needs t
 
 ## Row-level security-based isolation
 
-With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means that each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and opens content, an Embed token is generated for that user’s session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants as well as within the same tenant.
+With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means that each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and open content, an Embed token is generated for that user’s session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants as well as within the same tenant.
 
 ![Row-level security](media/multi-tenant-saas/multi-tenant-saas-rls.png)
 
