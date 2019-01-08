@@ -13,22 +13,24 @@ ms.date: 01/08/2019
 
 # Managing multi-tenancy with Power BI embedded analytics
 
-When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later might become costly and disruptive.
+When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
 
 With Power BI Embedded, there are two main fundamental approaches to maintaining separation between tenants.
 
-   1. Workspace-based isolation with a separate Power BI Workspace per tenant
-   2. Row-level security (RLS) based isolation is where the underlying data is used to control and manage access to data
+   1. Workspace-based isolation - creating a separate Power BI Workspace per tenant.
+   2. Row-level security-based isolation - where the underlying data is used to control and manage access to data per user or group.
 
 This article describes the different approaches and analyzes them according to several evaluation criteria.
 
 ## Concepts and terminology
 
+Below are some key terms.
+
 **[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
 
-**AAD application** - an application identity in AAD. Required for authentication.
+**AAD application** - An application identity in AAD. An AAD application is required for authentication.
 
-**SaaS application** (software-as-a-service) system implemented by an enterprise or ISV, usually an online service, and related software systems for serving multiple customer tenants (organizations). For this article, **the SaaS application uses Power BI Embedded to serve analytics to its different tenants**. Power BI Embedded can also work for all types of applications if they have an online connection.
+**SaaS application (software-as-a-service)** - A system implemented by an enterprise or ISV that is usually an online service. Its also related software systems for serving multiple customer tenants (organizations). For this article, **the SaaS application uses Power BI Embedded to serve analytics to its different tenants**. Power BI Embedded can also work for all types of applications if they have an online connection.
 
 **Tenant** – A single customer (organization) that uses the SaaS application and any resources or data that the customer brings to the SaaS application, or the SaaS application allocates for serving that customer.
 
@@ -38,19 +40,19 @@ This article describes the different approaches and analyzes them according to s
 
 **[Power BI workspace](../service-create-workspaces.md)** - A container for content in Power BI.
 
-**Power BI artifacts** – there are several Power BI artifacts in Power BI workspaces such as dashboards, reports, datasets, and dataflows.
+**Power BI artifacts** – There are several Power BI artifacts in Power BI workspaces such as dashboards, reports, datasets, and dataflows.
 
-**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** - A set of public APIs built on top of the Power BI ervice that allows developers to build applications that manage Power BI content and embed Power BI elements.
+**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** - A set of public APIs built on top of the Power BI service that allows developers to build applications that manage Power BI content and embed Power BI elements.
 
-**[Row-level security (RLS)](embedded-row-level-security.md)** - The ability to control user access to data for individual rows in a table, which can be implemented in the data source or the Power BI semantic model.
+**[Row-level security (RLS)](embedded-row-level-security.md)** - Gives the ability to control user access to the data for individual rows in a table, You can implement row-level security at the data source level or in the Power BI semantic model.
 
 **Master user** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD user with a Power BI Pro license.
 
-**AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a ‘Master user’ to authenticate with Power BI.
+**AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a *master* user to authenticate with Power BI.
 
-**Capacity** - a set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium.md) are intended for enterprises using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) are intended for application developers developing SaaS applications for third parties.
+**Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) are intended for application developers to develop SaaS applications for third parties.
 
-**[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - is a user-based Power BI license, which grants rights to publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashboards and reports.
+**[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - A user-based Power BI license, which grants rights to publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../desktop-directquery-about.md)** - Connecting data sources to Power BI can be done in different modes:
 
@@ -62,7 +64,7 @@ This article describes the different approaches and analyzes them according to s
 
 The optimal choice for the right tenancy model for your SaaS application varies according to specific business and technical requirements, data architecture and more. Deep understanding of these requirements along with available tenancy model options and trade-offs can help define robust, performant, cost-effective, and scalable architecture for your SaaS application.
 
-The following are a set of topic areas one should consider when choosing between the different tenancy models.
+The following are a set of topic areas to consider when choosing between the different tenancy models.
 
 ### Data architecture
 
@@ -70,11 +72,11 @@ Usually, developers building applications with Power BI Embedded already have a 
 
 ### Data Isolation
 
-How sensitive is the data being stored? What level of isolation do you need separating different customer tenants? The answer might vary across different industries, or specific customers that have certain requirements.
+How sensitive is the data being stored? What level of isolation do you need separating different customer tenants? The answer might vary across different industries or specific customers that have certain requirements.
 
 ### Scalability
 
-To find the best solution, you should define the scale you reach in the foreseeable future. Remember that a solution that might be suitable now might not suffice when usage and data scale up. When analyzing scalability, you should consider the following list:
+To find the best solution, define the scale you reach in the foreseeable future. Remember that a solution that might be suitable now might not suffice when usage and data scale up. When analyzing scalability, consider the following list:
 
    * Number of tenants (customers).
    * Number of reports, dashboards, and datasets for each tenant.
@@ -96,11 +98,11 @@ Identifying these processes and how you address them can help you understand the
 
 ### Data Residency Requirements and the need to support multiple geographies
 
-Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](embedded-multi-geo.md) enables Power BI Embedded resources to be deployed in different regions with specific content assigned to reside in specific regions. This feature can be used across all models but can have an impact on the amount of content to manage as well as costs. Currently multi-geo is designed for meeting data residency requirements and does not improve performance by moving data closer to consumers.
+Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](embedded-multi-geo.md) enables Power BI Embedded resources to be deployed in different regions with specific content assigned to reside in specific regions. This feature can be used across all models, but can have an impact on the amount of content to manage and cost. Currently multi-geo is designed for meeting data residency requirements and doesn't improve performance by moving data closer to consumers.
 
 ### Cost
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) has a resource-based purchase model, like Power BI Premium. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with Power BI Embedded. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../service-admin-licensing-organization.md) is required for each master user, or specific users that can take action in the Power BI portal.
+[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) has a resource-based purchase model, like Power BI Premium. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with Power BI Embedded. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../service-admin-licensing-organization.md) is required for each *master* user, or specific users that can take action in the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../service-admin-premium-monitor-capacity.md).
 
@@ -114,7 +116,7 @@ There are two approaches for SaaS applications that want to give users the abili
 
 ## Power BI workspace-based isolation
 
-With Power BI workspace-based isolation, the SaaS application supports multiple tenants from a single Power BI tenant, which contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces, each with the relevant datasets, reports, and dashboards for that tenant, connected only to that tenant’s data. If you need additional isolation, you can create a ‘Master user’ or a Service Principal (Future release) for each workspace and its content.
+With Power BI workspace-based isolation, the SaaS application supports multiple tenants from a single Power BI tenant. Workspace-based isolation contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant’s data. If you need additional isolation, you can create a *master* user or a service principal for each workspace and its content.
 
 ![Workspace](media/multi-tenant-saas/multi-tenant-saas-workspace.png)
 
@@ -133,13 +135,13 @@ If the SaaS application storage is using a multi-tenant database for all tenants
 
 Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), a backend-only process which end users can’t see, or change.
 
-To add additional isolation, an application developer can define a *master*/ application (future release) user per workspace rather than a single *master*/ application (future release) user with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customer’s data being exposed.
+To add additional isolation, an application developer can define a *master* user or an application (future release) per workspace rather than a single *master* user or application (future release) with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to being exposed.
 
 ### Scalability
 
 One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
 
-Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that should be managed differently than other tenants.
+Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 
 ### Automation & operational complexity
 
@@ -148,14 +150,14 @@ With Power BI workspace-based isolation, an application developer might need to 
    * Adding a new tenant (customer)
    * Updating a report or dashboard for some or all the tenants
    * Updating the dataset schema for some or all the tenants
-   * Ad hoc customizations for specific tenants
+   * Unplanned customizations for specific tenants
    * Frequency of dataset refreshes
 
 For example, creating a new workspace for a new tenant is a common task, which needs automation. With the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), you can achieve [full automation when creating new workspaces](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
 
 ### Multi-Geo needs
 
-Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you just need to assign the tenant’s workspace to a capacity in the desired region. This is a simple operation and one that shouldn’t cost a lot more than having all workspaces in the same capacity. However, if you have tenants that need data resident in multiple regions, all artifacts in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
+Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you just need to assign the tenant’s workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data resident in multiple regions, all artifacts in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
 
 ### Cost
 
@@ -165,9 +167,9 @@ The workspace-based isolation model sits well with capacities for the following 
 
    * The smallest object you can independently assign to a capacity is a workspace that is, you can’t assign a report, for example), so by separating tenants by workspaces, you get full flexibility in managing each tenant and its performance needs, as well as optimizing capacity utilization by scaling up/down. For example, large and essential tenants with high volume and volatility can be managed in a separate capacity to ensure a consistent service level, while grouping smaller tenants in another capacity to optimize costs.
 
-   * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
+   * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This task allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
 
-On the other hand, application developers should consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
+On the other hand, application developers need to consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
 
 ### Content customization and authoring
 
@@ -185,7 +187,7 @@ Implementing row-level security-based isolation is most comfortable when all ten
 
 ### Data isolation
 
-With row-level security-based isolation, data separation is accomplished using [row-level security (RLS) definitions](embedded-row-level-security.md) on the dataset, which means all the data is coresident. This reduces data separation is more susceptible to data leakage through developer error. Though RLS is done on the backend and secured from end-user manipulation, if the data is highly sensitive or customers are asking for data separation, it might be better to use workspace-based isolation.
+With row-level security-based isolation, data separation is accomplished using [row-level security definitions](embedded-row-level-security.md) on the dataset, which means all the data coexists. This form of data separation is more susceptible to data leakage through developer error. Even though row-level security is done on the backend and secured from an end user, if the data is highly sensitive or customers are asking for data separation, it might be better to use workspace-based isolation.
 
 ### Scalability
 
@@ -193,7 +195,7 @@ With row-level security-based isolation, the data needs to fit within the datase
 
 ### Automation & operational complexity
 
-Managing artifacts is far more comfortable using row-level security-based isolation than with workspace-based isolation as there is only one version of an artifact for each environment (dev/test/ production), instead of a version per tenant. At large scale, this means managing and updating 10 s of artifacts, rather than 1,000s-10,000s.
+Managing artifacts is far more comfortable using row-level security-based isolation than with workspace-based isolation as there is only one version of an artifact for each environment (dev/test/ production), instead of a version per tenant. At a large scale, managing artifacts means managing and updating 10 s of artifacts, rather than 1,000 s - 10,000 s.
 
 On the other hand, Power BI doesn’t yet have an API to modify or create new RLS roles and rules. Adding or changing roles can only be done manually in the Power BI Desktop. If an RLS hierarchy needs to be applied, it can be complicated and error-prone to manage if you don't plan it carefully.
 
@@ -207,11 +209,11 @@ Since all the data is stored in a single dataset, it makes it challenge to meet 
 
 ### Cost
 
-The primary cost driver with row-level security-based isolation is the memory footprint of the dataset. You need enough capacity to store the dataset and keep some additional memory buffer for any peaks in memory demand. One way to mitigate this is by storing the data in a SQL Server database or SQL Server Analysis Services cube and using Direct Query or a Live connection to retrieve the data from the data source in real time, rather than caching it in Power BI. This approach increases the cost of the data sources, but reduces the need for large capacity because of memory needs, hence reducing the cost of Power BI capacity.
+The primary cost driver with row-level security-based isolation is the memory footprint of the dataset. You need enough capacity to store the dataset and keep some additional memory buffer for any peaks in memory demand. One way to mitigate this situation is to store the data in a SQL Server database or SQL Server Analysis Services cube and using Direct Query or a Live connection to retrieve the data from the data source in real time. This approach increases the cost of the data sources, but reduces the need for large capacity because of memory needs, hence reducing the cost of Power BI capacity.
 
 ### Content customization and authoring
 
-As end users edit or create new reports, they can use the production multi-tenant dataset. For that reason, we advise only using the embedded iFrame option to edit or [create reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security-based isolation. Also, when users generate new content that is in the same workspace, you need to make sure the production workspace does not hit its limits and build a robust mechanism to distinguish which content is connected to which tenant.
+As end users edit or create new reports, they can use the production multi-tenant dataset. For that reason, we advise only using the embedded iFrame option to edit or [create reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security-based isolation. Also, when users generate new content that is in the same workspace, you need to make sure the production workspace doesn't hit its limits and build a robust mechanism to distinguish which content is connected to which tenant.
 
 ## Summary comparison of the different approaches
 
@@ -220,7 +222,7 @@ As end users edit or create new reports, they can use the production multi-tenan
 
 | Evaluation Criteria | Workspace-based   | Row-level security-based  |  |  |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
-| Data architecture  | Easiest when there is a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |  |  |
+| Data architecture  | Easiest when there's a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |  |  |
 | Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |  |  |
 | Scalability  | Medium. Breaking the data into multiple datasets enables optimization.  | Lowest. Constrained by dataset limits.  |  |  |
 | Multi-Geo needs  | Good fit when most tenants are only in one region.  | Not recommended. Needs to keep the entire dataset stored in multiple regions.  |  |  |
@@ -241,11 +243,11 @@ As end users edit or create new reports, they can use the production multi-tenan
 **Power BI Capacity considerations and limitations**
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../service-premium.md).
-* For the recommended dataset size for each SKU, please reference [Premium large datasets](../service-premium-large-datasets.md).
+* For the recommended dataset size for each SKU, reference [Premium large datasets](../service-premium-large-datasets.md).
 * The max dataset size in a dedicated capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
-* For the number of refreshes that can run concurrently on a capacity, please reference [resource management and optimization](../service-premium-understand-how-it-works.md).
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../service-premium-understand-how-it-works.md).
 * The average time of scaling a capacity is between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## Next steps
