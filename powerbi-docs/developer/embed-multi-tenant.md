@@ -28,7 +28,7 @@ This article describes the different approaches and analyzes them according to s
 
 **AAD application** - an application identity in AAD. Required for authentication.
 
-**SaaS application** - a **software-as-a-service** system implemented by an enterprise or ISV, usually an online service, and related software systems for serving multiple customer tenants (organizations). For this article, **the SaaS application uses Power BI Embedded to serve analytics to its different tenants**. Power BI Embedded can also work for all types of applications if they have an online connection.
+**SaaS application** (software-as-a-service) system implemented by an enterprise or ISV, usually an online service, and related software systems for serving multiple customer tenants (organizations). For this article, **the SaaS application uses Power BI Embedded to serve analytics to its different tenants**. Power BI Embedded can also work for all types of applications if they have an online connection.
 
 **Tenant** – A single customer (organization) that uses the SaaS application and any resources or data that the customer brings to the SaaS application, or the SaaS application allocates for serving that customer.
 
@@ -40,7 +40,7 @@ This article describes the different approaches and analyzes them according to s
 
 **Power BI artifacts** – there are several Power BI artifacts in Power BI workspaces such as dashboards, reports, datasets, and dataflows.
 
-**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** - A set of public APIs built on top of the Power BI Service that allows developers to build applications that manage Power BI content and embed Power BI elements.
+**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** - A set of public APIs built on top of the Power BI ervice that allows developers to build applications that manage Power BI content and embed Power BI elements.
 
 **[Row-level security (RLS)](embedded-row-level-security.md)** - The ability to control user access to data for individual rows in a table, which can be implemented in the data source or the Power BI semantic model.
 
@@ -48,14 +48,15 @@ This article describes the different approaches and analyzes them according to s
 
 **AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a ‘Master user’ to authenticate with Power BI.
 
-**Capacity** - a set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium.md) are intended for Enterprises using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) are intended for application developers developing SaaS applications for third parties.
+**Capacity** - a set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium.md) are intended for enterprises using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) are intended for application developers developing SaaS applications for third parties.
 
 **[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - is a user-based Power BI license, which grants rights to publish content to app workspaces, consume apps without Premium capacity, share dashboards and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../desktop-directquery-about.md)** - Connecting data sources to Power BI can be done in different modes:
+
    * Import - which is the most common way to get data.
    * DirectQuery - connect directly to the data in its source repository.
-   * Live connection -  another mode that connects directly to Analysis Services data (both Azure and on-premises).
+   * Live connection - another mode that connects directly to Analysis Services data (both Azure and on-premises).
 
 ## Evaluation criteria
 
@@ -105,9 +106,9 @@ We recommend testing and measuring the expected load on your capacity by simulat
 
 ### Content customization and authoring
 
-There are two approaches for SaaS applications that want to give users the ability to edit and/or create new reports or upload data into the service as part of the flow:
+There are two approaches for SaaS applications that want to give users the ability to edit and create new reports or upload data into the service as part of the flow:
 
-   * [‘Edit’/ ‘Create’ mode in an embedded iFrame](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) - this option the user gets a view of the report or a new blank canvas inside the SaaS application, where they can use the Power BI toolbar to create content based on a dataset in the workspace. We recommend this option since it’s in the user’s context in a familiar environment, it’s easier to get started working and editing, and the user creates a report attached to an existing dataset.
+   * [Edit/Create mode in an embedded iFrame](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) - the user gets a view of the report or a new blank canvas inside the SaaS application, where they can use the Power BI toolbar to create content based on a dataset in the workspace. We recommend this option since it’s in the user’s context in a familiar environment. It’s easier to get started working and editing, and the user creates a report attached to an existing dataset.
 
    * Use Power BI Desktop to create new content and upload it through the SaaS application UI to the workspace. In this approach, users have more tools to work with using the Power BI Desktop. However, this approach is less recommended since users need to be familiar with an additional tool outside of the SaaS application context, and uploading a PBIX file means the user is adding an additional dataset, that might be duplicative of datasets already in the workspace.
 
@@ -136,9 +137,9 @@ To add additional isolation, an application developer can define a *master*/ app
 
 ### Scalability
 
-One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task is not possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
+One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
 
-Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It is recommended to test your  managing hundreds or thousands of datasets, this should be considered and tested. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that should be managed differently than other tenants.
+Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that should be managed differently than other tenants.
 
 ### Automation & operational complexity
 
@@ -164,7 +165,7 @@ The workspace-based isolation model sits well with capacities for the following 
 
    * The smallest object you can independently assign to a capacity is a workspace that is, you can’t assign a report, for example), so by separating tenants by workspaces, you get full flexibility in managing each tenant and its performance needs, as well as optimizing capacity utilization by scaling up/down. For example, large and essential tenants with high volume and volatility can be managed in a separate capacity to ensure a consistent service level, while grouping smaller tenants in another capacity to optimize costs.
 
-   * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This allows the capacity to manage memory usage better, evicting small and unused datasets when not needed, while keeping users satisfied with the performance.
+   * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
 
 On the other hand, application developers should consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
 
@@ -210,7 +211,7 @@ The primary cost driver with row-level security-based isolation is the memory fo
 
 ### Content customization and authoring
 
-When end users edit or create new reports, they use the production multi-tenant dataset. For that reason, we advise only using the embedded iFrame option to edit or [create reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security-based isolation. Also, when users generate new content that is in the same workspace, you need to make sure the production workspace does not hit its limits and build a robust mechanism to distinguish which content is connected to which tenant.
+As end users edit or create new reports, they can use the production multi-tenant dataset. For that reason, we advise only using the embedded iFrame option to edit or [create reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security-based isolation. Also, when users generate new content that is in the same workspace, you need to make sure the production workspace does not hit its limits and build a robust mechanism to distinguish which content is connected to which tenant.
 
 ## Summary comparison of the different approaches
 
@@ -241,11 +242,11 @@ When end users edit or create new reports, they use the production multi-tenant 
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../service-premium.md).
 * For the recommended dataset size for each SKU, please reference [Premium large datasets](../service-premium-large-datasets.md).
-* The maximum dataset size in a dedicated capacity is 10 GB.
+* The max dataset size in a dedicated capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
 * For the number of refreshes that can run concurrently on a capacity, please reference [resource management and optimization](../service-premium-understand-how-it-works.md).
-* The average time of scaling a capacity is between 1-2 minutes. During that time, the capacity is not available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
+* The average time of scaling a capacity is between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## Next steps
 
