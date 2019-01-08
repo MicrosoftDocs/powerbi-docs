@@ -1,5 +1,5 @@
 ---
-title: Managing multi-tenancy with Power BI embedded analytics
+title: Manage multi-tenants with Power BI embedded analytics
 description: Design a multi-tenant application with embedded analytics.
 author: markingmyname
 ms.author: maghan
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 01/08/2019
 ---
 
-# Managing multi-tenancy with Power BI embedded analytics
+# Manage multi-tenants with Power BI embedded analytics
 
 When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
 
