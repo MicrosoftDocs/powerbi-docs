@@ -92,11 +92,7 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 
 You can embed Power BI reports in portals or websites where your users expect to see them.  
 
-<<<<<<< HEAD
 The **Embed in SharePoint Online** and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report needs the appropriate license. More about [Embed in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.
-=======
-The **Embed in SharePoint Online** and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report needs the appropriate license. More about [Embed in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.  
->>>>>>> 24224d3b932fc16d417feefa789fad38d0952cf2
 
 With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. More about [publishing to the web](service-publish-to-web.md).
 
