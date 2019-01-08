@@ -1,14 +1,15 @@
 ---
-title: Power BI Videos
+title: Power BI videos
 description: Power BI Videos and link to YouTube channel.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 ---

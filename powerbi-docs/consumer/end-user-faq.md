@@ -3,12 +3,13 @@ title: Frequently asked questions for Power BI consumers
 description: Power BI FAQ
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/06/2018
+ms.date: 12/21/2018
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -24,6 +25,10 @@ Power BI service is a cloud-based business analytics service that enables anyone
 Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. 
 
 Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring per-user licenses for recipients viewing the content.
+
+## What happens if my Power BI Pro license expires?
+There is a 30-day grace period after a Power BI Pro license expires.
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## What if I have questions about Power BI Premium?
 For questions related to Power BI Premium, see [Power BI Premium FAQ](../service-premium-faq.md).

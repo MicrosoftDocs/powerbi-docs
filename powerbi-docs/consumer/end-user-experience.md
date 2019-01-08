@@ -5,11 +5,12 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -36,7 +37,7 @@ We'll grab some sample data to use for our tour of Power BI service. There are a
 
     Power BI service imports the sample and displays the dashboard. Dashboards are something that differentiates Power BI service from Power BI Desktop. The sample also includes a report and a dataset, which we'll visit later.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![dashboard displays](media/end-user-experience/power-bi-dashboard.png)
 
 Watch Amanda take you on a tour of the Power BI service navigation experience.  Then follow the step-by-step instructions below the video to explore for yourself.
 

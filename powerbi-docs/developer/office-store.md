@@ -8,6 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 10/30/2018
 ---
 
@@ -33,8 +34,8 @@ Once you're done coding and testing your custom visual and have packaged it into
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like.<br>The sample .pbix report file must work offline, without any external connection |
 | Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height). **Important!** Please review the [short guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) carefully before submitting the Icon. |
 | Screenshots |Yes |You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366 px (width) x 768 px (height). It can be no larger than 1024 kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.* |
-| Support download link |Yes |Provide the URL to support customers who have issues with your visual. The format of your URL should include https:// or http://. |
-| Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. The format of your link should include https:// or http://. |
+| Support download link |Yes |Provide the URL to support customers who have issues with your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or http://. |
+| Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or http://. |
 | End-user license agreement (EULA) |Yes |You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI custom visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Video link |No |To increase the interest of users for your custom visual, it is advised to provide a link to a video about your visual. The format of your URL should include https:// or http://. |
 | GitHub repository |No |It is preferred to have a valid and public link to a [GitHub](https://www.github.com) repository with sources of your visual and sample data in it to allow other developers to provide feedback and propose improvements to your code. |

@@ -10,10 +10,11 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 
-# Power BI admin portal
+# Administering Power BI in the admin portal
 
 The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
@@ -39,7 +40,7 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Tenant settings](#tenant-settings)
 * [Premium settings](#premium-settings)
 * [Embed codes](#embed-codes)
-* [Organization visuals](#organization-visuals)
+* [Organizational visuals](#organization-visuals)
 
 ## Usage metrics
 
@@ -324,9 +325,9 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
-## Organization visuals
+## Organizational visuals
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organizational visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -381,6 +382,18 @@ After any update or administrator change, Power BI Desktop users should restart 
 To update the visual from the organizational store, select the gear icon. Browse and upload a new version of the visual.
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
+
+For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+
+## Dataflow storage (preview)
+
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
+
+## Workspaces (preview)
+
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. Note that the table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, legacy workspaces are of type **Group**, and modern workspaces are of type **Workspace**. For more information, see [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md).
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
 ## Next steps
 

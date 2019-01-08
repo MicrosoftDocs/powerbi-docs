@@ -53,7 +53,7 @@ Watch this video to see Will create a scatter chart and then follow the steps be
 
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Open the report in Editing view and select the yellow plus icon to create a [blank report page ](../power-bi-report-add-page.md).
+1. Open the report in Editing view and select the yellow plus icon to create a blank report page.
  
 2. From the Fields pane, select the following fields:
    - **Sales** > **Sales Per Sq Ft**

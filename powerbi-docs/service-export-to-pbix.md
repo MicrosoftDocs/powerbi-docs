@@ -1,7 +1,7 @@
 ---
 title: How to export a report from Power BI service to Desktop (Preview)
 description: Download a report from the Power BI service to a Power BI Desktop file
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---

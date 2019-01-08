@@ -1,20 +1,21 @@
 ---
-title: Automatically generate data insights with Power BI
-description: Learn how to get insights about your datasets and dashboard tiles.
+title: Run and view insights on dashboard tiles
+description: As a Power BI end user, learn how to get insights about your dashboard tiles.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
-
+# As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
 ---
-# Automatically generate data insights with Power BI
+# View data insights on dashboard tiles with Power BI
 Each visualization tile on your dashboard is a doorway into data exploration. When you select a tile, it opens a report where you can filter and sort and dig into the dataset behind the report. And when you run insights, Power BI does the data exploration for you.
 
 Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on a specific dashboard tile and you can even run insights on an insight!
@@ -36,7 +37,9 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
 
  ## Interact with the insight cards
-   * Filter the visualizations.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
+Once you have an insight open, continue exploring.
+
+   * Filter the visual on the canvas.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
 
      ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insights-on-insights.png)
    

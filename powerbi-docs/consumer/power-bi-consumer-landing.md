@@ -1,14 +1,15 @@
 ---
 title: Power BI for report consumers
-description: Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.
+description: Getting started with Power BI? Get to know the features and capabilities of Power BI, and see what you can do with them as a Power BI consumer or end user.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/11/2018
+ms.date: 12/10/2018
 ms.author: mihart
-layout: landingpage
+layout: LandingPage
+ms.custom: seodec18
 
 LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
@@ -44,8 +45,8 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                         <div class="cardText"> 
                                                                                       <h3>Get to know Power BI</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-basic-concepts.md">Basic concepts</a><br/>
-                                                                                            <a href="end-user-experience.md">Getting around the Power BI service</a><br/> 
+                                                                                            <a href="end-user-basic-concepts.md">Understand the basic concepts</a><br/>
+                                                                                            <a href="end-user-experience.md">Get around the Power BI service</a><br/> 
                                                                                             <a href="../power-bi-overview.md">Learn about all the different Power BI tools</a><br/> 
                                                                                             <!--<a href="end-user-faq.md">FAQ: Frequently Asked Questions</a> -->
                                                                         </div> 
@@ -60,7 +61,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                                                         <div class="cardText"> 
                                                                                       <h3>Advanced tasks</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-q-and-a.md">Q&A natural language search box</a><br/> 
+                                                                                            <a href="end-user-q-and-a.md">Learn to use the Q&A natural language search box</a><br/> 
                                                                                             <a href="end-user-focus.md">Change display settings</a><br/> 
                                                                                             <a href="end-user-report-filter.md">Learn to use report-filters</a><br> 
                                                                                             <a href="end-user-insights.md">Generate automatic insights</a><br/> 
