@@ -234,11 +234,19 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
-## Token-Based Identity with Azure SQL Server (Preview)
+## Token-Based Identity with Azure SQL Database (Preview)
 
-The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Server**. With token-based identity, you can manage RLS with Azure SQL and then bring in the relevant data into Power BI. You can call the AAD token that has the RLS data associated with it and have that user or group see their data via a SQL view. Such effective identity issues apply to RLS rules directly on the Azure SQL Server. **Power BI Embedded** uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
+The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Database**.
 
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Server, which is configured to allow using AAD authentication ([learn more about AAD authentication for Azure SQL Server](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
+Customers that hold their data in **Azure SQL Database** can now enjoy a new capability to manage users and their access to data in Azure SQL when integrating with **Power BI Embedded**.
+
+When generating the embed token, you can specify the effective identity of a user in Azure SQL by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
+
+It can be used to manage each user’s view in Azure SQL, or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also be used to apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
+
+Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
+
+The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -272,14 +280,14 @@ public IdentityBlob(string value);
 
 ### Token-Based Identity REST API Usage
 
-If you're calling the REST API, you can add identity blob inside each identity.
+If you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), you can add identity blob inside each identity.
 
 ```JSON
 {
     "accessLevel": "View",
     "identities": [
         {
-            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
         “identityBlob”: {
             “value”: “eyJ0eXAiOiJKV1QiLCJh….”
          }
@@ -294,6 +302,12 @@ The value provided in the identity blob should be a valid access token to Azure 
    > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on AAD app registration configuration in the Azure portal.
 
    ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
+### Token-Based Identity limitations (Preview)
+
+* This capability is restricted to be used with Power BI Premium only.
+* This capability doesn’t work with SQL Server on-premises.
+* This capability doesn't work with multi-geo.
 
 ## Considerations and limitations
 
