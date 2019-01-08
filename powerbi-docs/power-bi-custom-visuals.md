@@ -1,5 +1,5 @@
 ---
-title: Custom visualizations in Power BI
+title: Custom visuals in Power BI
 description: Custom visualizations in Power BI
 author: markingmyname
 ms.author: maghan
@@ -8,25 +8,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 12/18/2018
 LocalizationGroup: Visualizations
 ---
 
 # Custom visuals in Power BI
 
-When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download Power BI Desktop or open Power BI service (app.powerbi.com), this set of visuals comes "pre-packaged."
+When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) or open [Power BI service](https://app.powerbi.com), this set of visuals comes "pre-packaged."
 
 ![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-But you are not limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
+But you aren't limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
 
 Custom visuals are created by developers, using the custom visuals SDK, to enable business users to see their data in a way that fits the business best. Report authors can then import the custom visuals files into their reports and use them as any other Power BI visuals. Custom visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
 
 Custom visuals can be in the form of three deployment channels:
 
 * Custom visual files
-* Organization visuals
+* Organizational visuals
 * Marketplace visuals
 
 ## Custom visual files
@@ -36,7 +35,7 @@ Custom visuals are packages that include code for rendering the data that is ser
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; Make sure you trust the author and the source of the custom visual before importing it to your report.
 
-## Organization visuals
+## Organizational visuals
 
 Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. The admin then has control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (for example, update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
 
@@ -69,7 +68,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![cv imported](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### Import organization visuals
+### Import organizational visuals
 
 1. Select the ellipses from the bottom of the Visualizations pane.
 
@@ -127,7 +126,7 @@ You have two options for downloading and importing custom visuals; from within P
 
 ### Download and import custom visuals from Microsoft AppSource
 
-1. Start at [Microsoft AppSource](https://appsource.microsoft.com) and select the tab for **Apps**. 
+1. Start at [Microsoft AppSource](https://appsource.microsoft.com) and select the tab for **Apps**.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
@@ -170,5 +169,9 @@ For information about troubleshooting, visit [Troubleshooting your Power BI cust
 ## FAQ
 
 For more information and answers to questions, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+
+## Next steps
+
+* [Visualizations in Power BI](visuals/power-bi-report-visualizations.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/).
