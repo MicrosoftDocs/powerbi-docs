@@ -605,10 +605,12 @@
         href: service-share-dashboards.md
       - name: "Share a filtered report"
         href: service-share-reports.md
-      - name: "Publish from Power BI to the web"
-        href: service-publish-to-web.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
+      - name: "Embed report in a secure portal or website"
+        href: service-embed-secure.md
+      - name: "Publish from Power BI to the web"
+        href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: "Power BI publisher for Excel"

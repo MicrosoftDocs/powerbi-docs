@@ -70,7 +70,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
     ![SP report loaded](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## Granting access to reports
+## Grant access to reports
 
 Embedding a report in SharePoint Online does not automatically give users permission to view the report. The permissions to view the report are set within the Power BI service.
 
@@ -85,7 +85,7 @@ Alternatively, you can share a report directly with users by embedding the repor
 
 2. The author creates a report in an app workspace. *To share with **Power BI free users**, the app workspace needs to be set as a **Premium workspace**.*
 
-3. The author publishes the app then installs it. *TThe author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.*
+3. The author publishes the app then installs it. *The author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.*
 
 4. Now all end users need to install the app too. However, you can set the app to be preinstalled for end users by using the **Install app automatically** feature, which can be enabled in the [Power BI admin portal](service-admin-portal.md).
 
@@ -169,9 +169,10 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 ## Next steps
 
-[Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Create and distribute an app in Power BI](service-create-distribute-apps.md)  
-[Share a dashboard with colleagues and others](service-share-dashboards.md)  
-[What is Power BI Premium?](service-premium.md)  
+* [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
+* [Share a dashboard with colleagues and others](service-share-dashboards.md)  
+* [What is Power BI Premium?](service-premium.md)
+* [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
