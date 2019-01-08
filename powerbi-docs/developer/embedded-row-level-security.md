@@ -4,7 +4,7 @@ description: Learn about the steps you need to take to embed Power BI content wi
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
@@ -234,11 +234,11 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
-## Token-Based Identity feature with Azure SQL Server (Preview)
+## Token-Based Identity with Azure SQL Server (Preview)
 
-The **token-based identity feature** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Server**. Such effective identity issues apply to RLS rules directly on the Azure SQL Server. **Power BI Embedded** uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
+The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Server**. With token-based identity, you can manage RLS with Azure SQL and then bring in the relevant data into Power BI. You can call the AAD token that has the RLS data associated with it and have that user or group see their data via a SQL view. Such effective identity issues apply to RLS rules directly on the Azure SQL Server. **Power BI Embedded** uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity feature only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Server, which is configured to allow using AAD authentication ([learn more about AAD authentication for Azure SQL Server](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Server, which is configured to allow using AAD authentication ([learn more about AAD authentication for Azure SQL Server](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
