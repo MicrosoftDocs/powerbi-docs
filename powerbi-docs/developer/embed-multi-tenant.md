@@ -17,8 +17,8 @@ When designing a multi-tenant SaaS application, you must carefully choose the te
 
 With Power BI Embedded, there are two main fundamental approaches to maintaining separation between tenants.
 
-   1. Workspace-based isolation - creating a separate Power BI Workspace per tenant.
-   2. Row-level security-based isolation - where the underlying data is used to control and manage access to data per user or group.
+   1. **Workspace-based isolation** - creating a separate Power BI Workspace per tenant.
+   2. **Row-level security-based isolation** - where the underlying data is used to control and manage access to data per user or group.
 
 This article describes the different approaches and analyzes them according to several evaluation criteria.
 
@@ -169,7 +169,7 @@ The workspace-based isolation model sits well with capacities for the following 
 
    * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This task allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
 
-On the other hand, application developers need to consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
+Application developers need to consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
 
 ### Content customization and authoring
 
@@ -177,7 +177,7 @@ For the primary use cases of content creation, the application developer needs t
 
 ## Row-level security-based isolation
 
-With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means that each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and open content, an Embed token is generated for that user’s session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants as well as within the same tenant.
+With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and open content, an Embed token is generated for that user’s session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants as well as within the same tenant.
 
 ![Row-level security](media/multi-tenant-saas/multi-tenant-saas-rls.png)
 
@@ -195,9 +195,9 @@ With row-level security-based isolation, the data needs to fit within the datase
 
 ### Automation & operational complexity
 
-Managing artifacts is far more comfortable using row-level security-based isolation than with workspace-based isolation as there is only one version of an artifact for each environment (dev/test/ production), instead of a version per tenant. At a large scale, managing artifacts means managing and updating 10 s of artifacts, rather than 1,000 s - 10,000 s.
+Managing artifacts is far more comfortable using row-level security-based isolation than with workspace-based isolation as there is only one version of an artifact for each environment (dev/test/production), instead of a version per tenant. At a large scale, managing artifacts means managing and updating tens of artifacts, rather than thousands to ten-thousands.
 
-On the other hand, Power BI doesn’t yet have an API to modify or create new RLS roles and rules. Adding or changing roles can only be done manually in the Power BI Desktop. If an RLS hierarchy needs to be applied, it can be complicated and error-prone to manage if you don't plan it carefully.
+Power BI doesn’t yet have an API to modify or create new RLS roles and rules. Adding or changing roles can only be done manually in the Power BI Desktop. If an RLS hierarchy needs to be applied, it can be complicated and error-prone to manage if you don't plan it carefully.
 
 If the application developer needs to manage many roles and role definitions that need to be created or updated frequently, row-level security-based isolation isn't scalable, from a manageability perspective.
 
