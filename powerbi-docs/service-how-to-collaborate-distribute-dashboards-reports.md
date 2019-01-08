@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 You've created dashboards and reports. Maybe you collaborated on them with your coworkers, too. Now you want others to have access to them. What's the best way to distribute them?
 
-In this article, we'll compare these options for collaborating and sharing in Power BI: 
+In this article, we compare these options for collaborating and sharing in Power BI:
 
 * Collaborating with coworkers to create meaningful reports and dashboards in *workspaces*.
 * Bundling those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
@@ -34,7 +34,7 @@ No matter which option you choose, to share a dashboard you need a [Power BI Pro
 
 When teams work together, they need access to the same documents so they can quickly collaborate. Workspaces in Power BI provide the place where teams come together to share the ownership and management of dashboards, reports, datasets, and workbooks that matter to them. Sometimes Power BI users organize their workspaces based on organizational structures, other times they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
-Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, or just provide content into it.
+Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, or provide content into it.
 
 ![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
@@ -73,7 +73,8 @@ You can share with people outside your organization, too. They can view and inte
 More about [sharing dashboards and reports](service-share-dashboards.md) from the Power BI service. You can also add a filter to a link and [share a filtered view of your report](service-share-reports.md).
 
 ## Annotate and share from the Power BI mobile apps
-In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
+
+In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email.
 
 ![Annotate and share in the mobile apps](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
@@ -91,7 +92,7 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 
 You can embed Power BI reports in portals or websites where your users expect to see them.  
 
-The **Embed** in SharePoint Online and the **Embed** option in the Power BI service allows you to securely embed reports for your internal users. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report needs the appropriate license. This makes it easy to distribute your reports to your internal users. More about Embed and Embed in SharePoint Online.  
+The **Embed** in SharePoint Online and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report needs the appropriate license. More about [Embed in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.  
 
 >[!Warning]
 >Use Publish to web only to share content publicly, not for internal sharing.

@@ -1,5 +1,5 @@
 ---
-title: Embed report in a secure portal or website
+title: Embed a report in a secure portal or website
 description: With the Power BI secure embed feature, you can enable users to easily and securely embed reports in internal web portals.
 author: markingmyname
 ms.author: maghan
@@ -12,7 +12,7 @@ ms.date: 01/08/2019
 LocalizationGroup: Share your work
 ---
 
-# Embed report in a secure portal or website
+# Embed a report in a secure portal or website
 
 The new secure **Embed** option for reports in Power BI enables users to easily and securely embed reports in internal web portals, whether **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Reports embedded in this way respect all item permissions and data security through row-level security (RLS). The feature is designed to allow no-code embedding into any portal that accepts a URL or iFrame to embed.
 
