@@ -1,5 +1,5 @@
 ---
-title: Manage multi-tenants with Power BI embedded analytics
+title: Manage multi-tenancy with Power BI embedded analytics
 description: Design a multi-tenant application with embedded analytics.
 author: markingmyname
 ms.author: maghan
@@ -8,10 +8,10 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.component: powerbi - developer
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/11/2019
 ---
 
-# Manage multi-tenants with Power BI embedded analytics
+# Manage multi-tenancy with Power BI embedded analytics
 
 When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
 
@@ -135,7 +135,7 @@ If the SaaS application storage is using a multi-tenant database for all tenants
 
 Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), a backend-only process which end users can’t see, or change.
 
-To add additional isolation, an application developer can define a *master* user or an application (future release) per workspace rather than a single *master* user or application (future release) with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to being exposed.
+To add additional isolation, an application developer can define a *master* user or an application per workspace rather than a single *master* user or application with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to being exposed.
 
 ### Scalability
 
