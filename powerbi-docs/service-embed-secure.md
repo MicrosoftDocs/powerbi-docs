@@ -56,8 +56,7 @@ The embed URL supports several input settings that help you customize your user 
 
 | Property  | Description  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | You can use the **pageName** query string parameter to set which page of the report to open. The **pageName** value corresponds to the end of the report URL when viewing a report in the Power BI service, as shown below.   |  |  |  |
-| ctid  | Enables external Guest users to view the content when logging in through Azure B2B.   |  |  |  |
+| pageName  | You can use the **pageName** query string parameter to set which page of the report to open. The **pageName** value corresponds to the end of the report URL when viewing a report in the Power BI service, as shown below. |  |  |  |
 | URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the content of the embed. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
 
 ## Set which page opens when the report is embedded

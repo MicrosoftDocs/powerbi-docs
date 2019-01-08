@@ -19,7 +19,10 @@ With Power BI **Publish to web**, you can easily embed interactive Power BI visu
 You can also easily edit, update, refresh, or unshare your published visuals.
 
 > [!WARNING]
-> When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. This includes detail level data that is aggregated in your reports. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing. To embed your content securely in an internal portal or website, use the Embed or Embed in SharePoint Online options. This ensures all permissions and data security is enforced when your users are viewing your internal data.
+> When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. This includes detail level data that is aggregated in your reports. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+
+>[!Note]
+>To embed your content securely in an internal portal or website, use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. This ensures all permissions and data security is enforced when your users are viewing your internal data.
 
 ## How to use Publish to Web
 
