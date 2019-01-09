@@ -13,9 +13,11 @@ ms.author: maggies
 
 # Create a template app in Power BI
 
-Power BI template apps are a new capability that enables Power BI partners to build Power BI apps and deploy them to any Power BI customer with little or no coding (programming) knowledge. This article contains step-by-step instructions to create a Power BI template app. 
+Power BI template apps are a new capability that enables Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. As a Power BI tenant admin you can govern and control who in the organization is authorized to install a template app. Those who install your template app can then modify it and distribute it to the Power BI consumers in their organizations.
+If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
+
+Power BI tenant admins govern and control who in their organization is authorized to install a template app. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Prerequisites 
 
@@ -27,7 +29,7 @@ The requirements for building a template app are few:
 
 ## Create the template app workspace
 
-To create a template app you can distribute to other Power BI tenants, you need to be in App Developer mode. Otherwise, you're creating an app for Power BI consumers in your own organization.
+To create a template app you can distribute to other Power BI tenants, you need to be in App Developer mode. Otherwise, you're just creating an app for Power BI consumers in your own organization.
  
 1. In the  Power BI service, go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
 
@@ -102,11 +104,11 @@ Let's go through the stages.
  
 12. In **Get started with your new app**, select one of three options:
 
-    - Explore app: Basic sample data exploration
-    - Connect data: Explore your own data
-    - Go to workspace: Make any changes allowed by app builder
+    - **Explore app**: Basic sample data exploration
+    - **Connect data**: Explore your own data
+    - **Go to workspace**: Make any changes allowed by app builder
 		
-    Details about these options are available in “How to install, customize it and distribute template app in you organization”. 
+    Details about these options are available in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md). 
 
 13. Select **Explore App** to verify the test app.
 
@@ -121,7 +123,7 @@ Template apps are the next generation of service content packs. If you own any c
 ## Next steps
 
 Known limitations of template apps (preview)
-Step-by-step documentation “How to install, customize it and distribute template app in you organization”
+[Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md)
 
 
 
