@@ -46,6 +46,10 @@ When the SSO option is enabled and your users access reports built atop the data
 
 The SSO option takes affect across all datasets that use this data source. It does not affect the authentication method used for import scenarios.
 
+> [!Note]
+> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with Azure SQL DirectQuery must be excempted from MFA.
+>
+
 ## Finding Parameter Values
 Your fully qualified server name and database name can be found in the Azure Portal.
 
