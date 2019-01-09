@@ -751,8 +751,6 @@
           href: service-connect-to-mandrill.md
         - name: "Marketo"
           href: service-connect-to-marketo.md
-        - name: "Microsoft Azure Enterprise"
-          href: service-connect-to-azure-enterprise.md
         - name: "Microsoft Dynamics AX"
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: "Microsoft Dynamics CRM"
