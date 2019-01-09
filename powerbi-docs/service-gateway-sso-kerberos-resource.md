@@ -12,15 +12,15 @@ ms.date: 01/08/2018
 LocalizationGroup: Gateways
 ---
 
-# Use Kerberos (resource-based) for single sign-on (SSO) from Power BI to on-premises data sources
+# Use resource-based Kerberos for single sign-on (SSO) from Power BI to on-premises data sources
 
 Use [Kerberos constrained (resource-based) delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on connectivity using Kerberos constrained delegation while using new capabilities of Windows Server 2012 permitting the front-end and back-end services to be in different domains. For this to work, the back-end services domain needs to trust the front-end services domain.
 
-## Preparing for Kerberos (Resource Based) Constrained Delegation
+## Preparing for resource-based Kerberos constrained delegation
 
 Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
 
-### Prerequisite 1: Operating System Requirements
+### Prerequisite 1: Operating system requirements
 
 Resource-based constrained delegation can only be configured on a domain controller running Windows Server 2012 R2 or Windows Server 2012 or higher.
 
@@ -38,11 +38,11 @@ To enable **Kerberos Constrained Delegation** , the gateway must run as a domain
 
 If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
-### Prerequisite 4: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
+### Prerequisite 4: Have domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
 While it is technically possible for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights, that's not the recommended approach. In the following section, we cover the configuration steps necessary for **Prerequisite 3** in detail.
 
-## Configuring Kerberos Constrained Delegation for the gateway and data source
+## Configuring Kerberos constrained delegation for the gateway and data source
 
 To properly configure the system, we need to configure or validate the following two items:
 
