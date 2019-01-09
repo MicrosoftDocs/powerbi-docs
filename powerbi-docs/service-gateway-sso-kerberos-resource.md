@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Use resource-based Kerberos for single sign-on (SSO) from Power BI to on-premises data sources
 
-Use [Kerberos constrained (resource-based) delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on connectivity using Kerberos constrained delegation while using new capabilities of Windows Server 2012 permitting the front-end and back-end services to be in different domains. For this to work, the back-end services domain needs to trust the front-end services domain.
+Use [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable single sign-on connectivity for Windows Server 2012 and later versions, permitting front-end and back-end services to be in different domains. For this to work, the back-end service domain needs to trust the front-end service domain.
 
 ## Preparing for resource-based Kerberos constrained delegation
 
@@ -26,7 +26,7 @@ Resource-based constrained delegation can only be configured on a domain control
 
 ### Prerequisite 2: Install and configure the On-premises data gateway
 
-This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
+This release of the On-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
 ### Prerequisite 3: Run the gateway Windows service as a domain account
 
@@ -34,9 +34,9 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Domain account](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-To enable **Kerberos Constrained Delegation** , the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](https://docs.microsoft.com/en-us/power-bi/service-gateway-sso-kerberos#switching-the-gateway-to-a-domain-account) later in this article.
+To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](https://docs.microsoft.com/en-us/power-bi/service-gateway-sso-kerberos#switching-the-gateway-to-a-domain-account) later in this article.
 
-If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
+If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime. You can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
 ### Prerequisite 4: Have domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
@@ -60,7 +60,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 1. As a domain administrator, launch **Active Directory Users and Computers**.
 
-1. Right-click on the domain, select **Find** , and type in the account name of the gateway service account
+1. Right-click on the domain, select **Find**, and type in the account name of the gateway service account
 
 1. In the search result, right-click on the gateway service account and select **Properties**.
 
@@ -76,24 +76,24 @@ First, determine whether an SPN was already created for the domain account used 
 
 ### Configure delegation settings
 
-In the following steps, we assume an on-premises environment with two machines in different domains: a gateway machine and a database server running SQL Server. For the sake of this example, we'll also assume the following settings and names:
+In the following steps, we assume an on-premises environment with two machines in different domains: a gateway machine and a database server running SQL Server. For the sake of this example, we also assume the following settings and names:
 
 - Gateway machine name: **PBIEgwTestGW**
 - Gateway service account: **PBIEgwTestFrontEnd\GatewaySvc** (account display name: Gateway Connector)
 - SQL Server data source machine name: **PBIEgwTestSQL**
 - SQL Server data source service account: **PBIEgwTestBackEnd\SQLService**
 
-Given those example names and settings, the configuration steps are the following:
+Given those example names and settings, use the following configuration steps:
 
-1. Using **Active Directory Users and Computers** , which is a Microsoft Management Console (MMC) snap-in, on the domain controller for **PBIEgwTestFront-end** domain, make sure no delegation settings are applied for the gateway service account.
+1. Using **Active Directory Users and Computers**, which is a Microsoft Management Console (MMC) snap-in, on the domain controller for **PBIEgwTestFront-end** domain, make sure no delegation settings are applied for the gateway service account.
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-1. Using **Active Directory Users and Computers** , on the domain controller for **PBIEgwTestBack-end** domain, make sure no delegation settings are applied for the back-end service account. In addition, make sure that the "msDS-AllowedToActOnBehalfOfOtherIdentity" attribute for this account is also not set. You can find this attribute in the "Attribute Editor" tab below.
+1. Using **Active Directory Users and Computers**, on the domain controller for **PBIEgwTestBack-end** domain, make sure no delegation settings are applied for the back-end service account. In addition, make sure that the "msDS-AllowedToActOnBehalfOfOtherIdentity" attribute for this account is also not set. You can find this attribute in the "Attribute Editor", as shown in the following image:
 
     ![SQL service properties](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-1. Create a group in **Active Directory Users and Computers** n the domain controller for **PBIEgwTestBack-end** domain and add the gateway service account to this group as shown below. Example below shows a new group called ResourceDelGroup and the gateway service account **GatewaySvc** added to this group.
+1. Create a group in **Active Directory Users and Computers**, on the domain controller for **PBIEgwTestBack-end** domain. Add the gateway service account to this group as shown in the following image. The image shows a new group called _ResourceDelGroup_ and the gateway service account **GatewaySvc** added to this group.
 
     ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
@@ -106,21 +106,21 @@ Given those example names and settings, the configuration steps are the followin
 
 1. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**
 
-Finally, on the machine running the gateway service ( **PBIEgwTestGW**  in our example), the gateway service account must be granted the local policy "Impersonate a client after authentication". You can perform/verify this with the Local Group Policy Editor ( **gpedit** ).
+Finally, on the machine running the gateway service (**PBIEgwTestGW**  in our example), the gateway service account must be granted the local policy "Impersonate a client after authentication". You can perform/verify this with the Local Group Policy Editor (**gpedit**).
 
 1. On the gateway machine, run: _gpedit.msc_.
 
-1. Navigate to  **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment** , as shown in the following image.
+1. Navigate to  **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
 
     ![User rights assignment](media/service-gateway-sso-kerberos-resource/user-rights-assignment.png)
 
-1. From the list of policies under  **User Rights Assignment** , select  **Impersonate a client after authentication**.
+1. From the list of policies under  **User Rights Assignment**, select  **Impersonate a client after authentication**.
 
     ![Impersonate client](media/service-gateway-sso-kerberos-resource/impersonate-client.png)
 
-1. Right-click and open the  **Properties**  for  **Impersonate a client after authentication** , and check the list of accounts. It must include the gateway service account ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
+1. Right-click and open the  **Properties**  for  **Impersonate a client after authentication**, and check the list of accounts. It must include the gateway service account ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
 
-1. From the list of policies under  **User Rights Assignment** , select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
+1. From the list of policies under  **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
 
 1. Restart the  **On-premises data gateway**  service process.
 
