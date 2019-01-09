@@ -234,7 +234,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
-## Token-Based Identity with Azure SQL Database (Preview)
+## Token-based Identity with Azure SQL Database (Preview)
 
 The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Database**.
 
@@ -250,7 +250,7 @@ The token-based identity only works for DirectQuery models on dedicated capacity
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
-### Token-Based Identity SDK additions
+### Token-based Identity SDK additions
 
 The identity blob property was added to our effective identity in the token generation scenario.
 
@@ -278,7 +278,7 @@ Identity blob can be created using the following call.
 public IdentityBlob(string value);
 ```
 
-### Token-Based Identity REST API Usage
+### Token-based Identity REST API Usage
 
 If you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), you can add identity blob inside each identity.
 
@@ -303,12 +303,6 @@ The value provided in the identity blob should be a valid access token to Azure 
 
    ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-### Token-Based Identity limitations (Preview)
-
-* This capability is restricted to be used with Power BI Premium only.
-* This capability doesn’t work with SQL Server on-premises.
-* This capability doesn't work with multi-geo.
-
 ## Considerations and limitations
 
 * Assignment of users to roles within the Power BI service doesn't affect RLS when using an embed token.
@@ -318,5 +312,11 @@ The value provided in the identity blob should be a valid access token to Azure 
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
+
+### Token-based Identity limitations (Preview)
+
+* This capability is restricted to be used with Power BI Premium only.
+* This capability doesn’t work with SQL Server on-premises.
+* This capability doesn't work with multi-geo.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
