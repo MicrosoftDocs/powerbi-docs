@@ -870,7 +870,7 @@
       - name: "Row-level security"
         href: developer/embedded-row-level-security.md
       - name: "Manage multi-tenants"
-        href: developer/embed-multi-tenant.md
+        href: developer/embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"
         href: developer/azure-pbie-diag-logs.md
       - name: "Embedding FAQ"
