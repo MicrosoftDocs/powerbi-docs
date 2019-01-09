@@ -21,9 +21,8 @@ When you install a template app that a Power BI partner has created, you can mod
 
 The requirements for installing, customizing, and distributing a template app are few:  
 
-- A valid Power BI pro license.
-- Familiarity with the basic concepts of Power BI. 
-- Valid installation link from the template app creator or AppSource.  
+- A [Power BI pro license](service-self-service-signup-for-power-bi.md)
+- Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)- Valid installation link from the template app creator or AppSource.  
 
 ## Resources 
 
