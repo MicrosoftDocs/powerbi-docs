@@ -1189,6 +1189,8 @@
         href: service-gateway-sso-overview.md
       - name: "Single sign-on (SSO) - Kerberos"
         href: service-gateway-sso-kerberos.md
+      - name: "Single sign-on (SSO) - Kerberos - resource-based"
+        href: service-gateway-sso-kerberos-resource.md
       - name: "Single sign-on (SSO) - SAML"
         href: service-gateway-sso-saml.md
     - name: "Configuring proxy settings"
