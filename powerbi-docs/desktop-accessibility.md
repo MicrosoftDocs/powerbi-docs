@@ -166,7 +166,10 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Select all occurrences of current selection | Ctrl + Shift + L |
 | Select all occurrences of current word | Ctrl + F2 |
 
-
+### Enter Data
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Exit editable grid | Ctrl + Tab |
 
 
 ## Next steps
