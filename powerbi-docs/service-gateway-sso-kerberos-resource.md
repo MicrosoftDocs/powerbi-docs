@@ -34,7 +34,7 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Domain account](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](service-gateway-sso-kerberos#switching-the-gateway-to-a-domain-account) later in this article.
+To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](service-gateway-sso-kerberos.md#switching-the-gateway-to-a-domain-account) later in this article.
 
 If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime. You can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
