@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/09/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -25,11 +25,11 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 * Use diverging color scales
 * How to undo in Power BI
 
-To make any changes, you must be editing a report: select your **Report** from the **My Workspace** pane, then select **Edit Report** from the top menu area, as shown in the following image.
+To make any changes, you must be editing a report. Open the report and select **Edit Report** from the top menu area, as shown in the following image.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
-When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing.
+When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing. If the pane does not appear, select the arrow, from the top right corner, to open it.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
@@ -70,16 +70,23 @@ To change color based on a value, drag the field you want to base color on into 
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
 
-As can see that, although **Velo** has higher **Gross Sales** (its column is higher), **Amarilla** has a larger **Profit before tax** (its column has more color saturation).
+And on the Formatting pane, under **Data colors**, determine how the value of **%Market Share SPLY YTD** will change the color and shading in your column chart. In this example, lower %Market Share will be lighter blue and higher values will be darker blue.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-default-pallete.png)
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
+
+As can see that, although we've sold more units of both **Productivity** and **Extreme** (their columns are higher), **Moderation** has a larger **%Market Share SPLY YTD** (its column has more color saturation).
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
 
 ## Customize the colors used in the color scale
-You can customize colors used in the color scale, too. Expand **Data Colors** and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color.
+You can customize colors used in the color scale, too. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color. In the image above, we used a blue gradient. 
 
-The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
+Expand **Data Colors** and you see a gradient of colors used for visualizing your data. The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_10.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
 
 To change the scale to use a different range of colors, select the color drop-down beside **Minimum** or **Maximum**, and select a color. The following image shows the **Maximum** color changed to black, and the gradient bar shows the new color spectrum between **Minimum** and **Max﻿imum**.
 
