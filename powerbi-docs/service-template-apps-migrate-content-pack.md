@@ -65,7 +65,8 @@ Step 1
 
 
 ## Create the app workspace
-Open Power BI service in browser and create new app workspace:    
+
+Open the Power BI service in a browser and create new app workspace:    
 
 Workspaces > Create app workspace (Specify name, description and logo image) 
 
