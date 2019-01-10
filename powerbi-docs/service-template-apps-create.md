@@ -32,14 +32,15 @@ The requirements for building a template app are few:
 To create a template app you can distribute to other Power BI tenants, you need to be in App Developer mode. Otherwise, you're just creating an app for Power BI consumers in your own organization.
  
 1. In the  Power BI service, go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
+2. Select **Apply**.
 
 2. Select **Workspaces** > **Create app workspace**. 
 
 3. In **Create an app workspace**, in **Preview improved workspaces**, select **Try now**.
 
-4. Select **Develop a template app**.
+5. Enter a name, description (optional), and logo image (optional) for your app workspace.
 
-5. Add name, description (optional) and logo image (optional) for your app workspace.
+4. Select **Develop a template app**.
 
 ## Create the content in your template app
 

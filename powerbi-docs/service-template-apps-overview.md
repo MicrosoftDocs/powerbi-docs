@@ -1,5 +1,5 @@
 ---
-title: What are Power BI service apps?
+title: What are Power BI template apps?
 description: Content Pack Certification Program
 author: maggiesMSFT
 manager: kfile
@@ -7,27 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 01/09/2019
 ms.author: maggies
 ---
 
-# What are Power BI service apps?
-A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
+# What are Power BI template apps?
 
-ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure.
+Power BI template apps are a new capability that enables Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
-These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](template-content-pack-experience.md).
+If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
+
+Power BI tenant admins govern and control who in their organization is authorized to install a template app. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Overview
 The general process to develop and submit an template content pack involves multiple steps.
 
  ![Process](media/service-content-pack-overview/developer-content-pack-overview.png)
 
-1. [Review the requirements](#requirements) and make sure you meet them
-2. [Build content](template-content-pack-authoring.md#queries) in the Power BI Desktop
-3. [Create a dashboard](template-content-pack-authoring.md#dashboard) in PowerBI.com
-4. [Test the content pack](template-content-pack-testing.md) yourself within your organization
-5. [Submit](template-content-pack-testing.md#submission) the content to Power BI for publishing
+1. Create the template app workspace in the Power BI service (app.powerbi.com).
+2. Create Power BI reports and save them to the template app workspace.
+3. Create a dashboard in the template app workspace.
+4. Create a pre-production version of the template app and test it in your tenant.
+5. When it passes the test, create a production version and test it outside your tenant.
+6. When it passes the external test, release it to your customers, either directly or in AppSource. 
 
 <a name="requirements"></a>
 
