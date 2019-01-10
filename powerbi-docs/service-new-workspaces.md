@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/07/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -78,9 +78,7 @@ During the preview period, you can't automatically convert your old workspaces t
 
 When the new workspaces are generally available (GA), you can opt in to migrate the old ones automatically. At some point after GA, you'll have to migrate them.
 
-## Power BI apps FAQ
-
-### How are the new workspaces different from current workspaces?
+## How are the new workspaces different from current workspaces?
 
 With the new workspaces, we're redesigning some features. Here are the changes you can expect to be permanent along with the preview. 
 
@@ -89,6 +87,13 @@ With the new workspaces, we're redesigning some features. Here are the changes y
 - You can create an organizational content pack from a current workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a current workspace. You can’t consume one from the new workspaces.
 - During the preview period, some features aren't enabled yet for new workspaces. See the next section, [Planned new workspace features](service-new-workspaces.md#planned-new-workspace-preview-features), for details.
+
+## Limitations and considerations
+
+Limitations to be aware of:
+
+- Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset. 
+- A person with a Power BI Pro license can be a member of a maximum 250 workspaces.
 
 ## Planned new workspace preview features
 
