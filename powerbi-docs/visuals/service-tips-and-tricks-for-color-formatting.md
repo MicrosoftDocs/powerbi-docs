@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/09/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -25,41 +25,38 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 * Use diverging color scales
 * How to undo in Power BI
 
-To make any changes, you must be editing a report: select your **Report** from the **My Workspace** pane, then select **Edit Report** from the top menu area, as shown in the following image. This example uses the **Human Resources sample**.
+To make any changes, you must be editing a report. Open the report and select **Edit Report** from the top menu area, as shown in the following image.
 
-![report canvas with Edit report highlighted](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
-When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing.
+When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing. If the pane does not appear, select the arrow, from the top right corner, to open it.
 
-![report with formattng pane displaying](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## Change the color of a single data point
-Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, and for most visual types, you can highlight a particular data point by changing its color.
+Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
 
-The following visualization displays sales margins by employee, usng default colors. 
+The following visualization ranks units sold by product segment. 
 
-![area chart](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-grey.png)
 
-It's dfficult to see the area for Annelie, so let's use color to make it stand out more. Here are the steps:
+Now imagine you want to call out the **Convenience** segment to show how well this brand new segment is performing, by using color. Here are the steps:
 
-Expand the **Data Colors** section. The following appears.
+Expand the **Data Colors** section and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
 
-![Data Colors selection area under Formatting](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
+Set **Convenience** to orange. 
 
-In this case, let’s select a dark but bright color that is not similar to the color used for Valery. Select the down arrow inside Annelie's color box, select **Custom Color** and choose a bright blue.
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-orange.png)
 
-![color selections](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Once selected, the **Convenience** data point is a nice shade of orange, and certainly stands out.
 
-Once selected, the area for Annelie is much easier to distinguish from the other employees. 
+Even if you change visualization types, then return, Power BI remembers your selection and keeps **Convenience** orange.
 
-![area chart, Annalie's area now bright blue](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
+You can change the color of a data point for one, several, or all data elements in the visualization. Perhaps you want your visual to mimic your corporate colors. 
 
-Even if you change visualization types, then return, Power BI remembers your selection and keeps **Washington** green.
-
-You can change the color of a data point for more than one data element, too. In the following image, **Arizona** is red, and **Washington** is still green.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_8.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
 There are all sorts of things you can do with colors. In the next section, we take a look at gradients.
 
@@ -69,16 +66,27 @@ Charts often benefit from dynamically setting color based on the numeric value o
 The following sections demonstrate different ways to base color on a numeric value.
 
 ## Base the color of data points on a value
-To change color based on a value, drag the field you want to base color on into the **Color Saturation** area in the **Field** pane. In the following image, **Profit before tax** has been dragged into **Color Saturation**. As can see that, although **Velo** has higher **Gross Sales** (its column is higher), **Amarilla** has a larger **Profit before tax** (its column has more color saturation).
+To change color based on a value, drag the field you want to base color on into the **Color Saturation** area in the **Fields** pane. In the following image, **%Market Share SPLY YTD** has been dragged into **Color Saturation**. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_9.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
+
+And on the Formatting pane, under **Data colors**, determine how the value of **%Market Share SPLY YTD** will change the color and shading in your column chart. In this example, lower %Market Share will be lighter blue and higher values will be darker blue.
+
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
+
+As can see that, although we've sold more units of both **Productivity** and **Extreme** (their columns are higher), **Moderation** has a larger **%Market Share SPLY YTD** (its column has more color saturation).
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
 
 ## Customize the colors used in the color scale
-You can customize colors used in the color scale, too. Expand **Data Colors** and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color.
+You can customize colors used in the color scale, too. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color. In the image above, we used a blue gradient. 
 
-The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
+Expand **Data Colors** and you see a gradient of colors used for visualizing your data. The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_10.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
 
 To change the scale to use a different range of colors, select the color drop-down beside **Minimum** or **Maximum**, and select a color. The following image shows the **Maximum** color changed to black, and the gradient bar shows the new color spectrum between **Minimum** and **Max﻿imum**.
 
