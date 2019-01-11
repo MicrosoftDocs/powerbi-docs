@@ -1,7 +1,7 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # What's new in the mobile apps for Power BI

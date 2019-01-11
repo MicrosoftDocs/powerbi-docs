@@ -1,7 +1,7 @@
 ---
 title: What are the Power BI mobile apps?
 description: The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: overview
 ms.date: 04/26/2018
-ms.author: maggies
+ms.author: mshenhav
 ms.custom:  
 ms.reviewer:  
 #customer intent: As a Power BI end user, I want an overview of the Power BI mobile apps on the different devices so I can see how they can work in my company's workflow.
