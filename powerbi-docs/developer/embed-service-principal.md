@@ -71,12 +71,6 @@ There are differences between using a service principal token versus a standard 
 
     [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
 
-    ```csharp
-    <add key="applicationId" value="" />
-    <add key="applicationSecret" value="" />
-    ```
-    ![Application code](media/embed-service-principal/sp-web-config.png)
-
 ## Using Powershell to create service principal
 
 1. Open Powershell as an administrator
@@ -134,10 +128,8 @@ You can take steps to migrate to use service principal if you're currently using
 * The **My Workspace** isn't supported.
 * Dedicated capacity is required when moving to production.
 * Need a master user account (Power BI Pro license) to log into Power BI to enable service principal in the admin portal.
-* Can't install an on-premises data gateway.
-* Can't be an on-premises data gateway admin.
+* Can't install or manage on-premises data gateway.
 * Can't sign into the Power BI portal.
-* Can't import or export applications.
 
 ## Next steps
 
