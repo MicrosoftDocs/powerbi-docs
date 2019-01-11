@@ -55,18 +55,19 @@ Now let's imagine the following *default members* are set for these columns:
 
 Now let's examine what happens when each of the columns is used in Power BI. When visuals group on the following columns, here are the results:
 
-* **City** - Power BI displays all the cities by clearing all the **default members** for *City*, *State*, *Country* but preserves the **default member** for *Population*; Power BI cleared the entire ARP for *City*
-    > Note: *Population* is not in the ARP path of *City*, it is solely related to *State* and thus Power BI doesn't clear it.
-* **State** - Power BI displays all the *States* by clearing all **default members** for *City*, *State*, *Country* and *Population*
-* **Country** - Power BI displays all the countries by clearing all **default members** for *City*, *State* and *Country*, but preserves the **default member** for *Population*
-* **City and State** - Power BI clears all **default members** for all columns
+* **City** - Power BI displays all the cities by clearing all the **default members** for *City*, *State*, *Country* but preserves the **default member** for *Population*; Power BI cleared the entire ARP for *City*.
+    > [!NOTE]
+    > *Population* is not in the ARP path of *City*, it is solely related to *State* and thus Power BI doesn't clear it.
+* **State** - Power BI displays all the *States* by clearing all **default members** for *City*, *State*, *Country* and *Population*.
+* **Country** - Power BI displays all the countries by clearing all **default members** for *City*, *State* and *Country*, but preserves the **default member** for *Population*.
+* **City and State** - Power BI clears all **default members** for all columns.
 
-[here] Groups displayed in the visual have their entire ARP path cleared. 
+Groups displayed in the visual have their entire ARP path cleared. 
 
 If a group is not displayed in the visual, but is part of the ARP path of another grouped-on column, the following applies:
 
-* not all branches of the ARP path are cleared automatically
-* that group is still filtered by that uncleared **default member**
+* Not all branches of the ARP path are cleared automatically.
+* That group is still filtered by that uncleared **default member**.
 
 ### Slicers and filter cards
 
@@ -92,8 +93,8 @@ Power BI clears a **default member** for a given column if:
 
 Power BI does not clear a **default member** for a given column if:
 
-* The column has a filter card with default state, and Power BI is groupings on a column in its ARP
-* The column is above another column in the ARP, and Power BI has a filter card for that other column in default state
+* The column has a filter card with default state, and Power BI is groupings on a column in its ARP.
+* The column is above another column in the ARP, and Power BI has a filter card for that other column in default state.
 
 
 ## Next steps
