@@ -1,7 +1,7 @@
 ---
 title: 'Fixing "Need to update Android System Webview" - Power BI'
 description: When signing in to the Android mobile app, you may get a message that you need to update Android System Webview.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Fixing "Need to update Android System Webview"
