@@ -27,14 +27,19 @@ The requirements for building a template app are few:
 - An [installation of Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
 
-## Create the template app workspace
+## Enable app developer mode
 
 To create a template app you can distribute to other Power BI tenants, you need to be in App Developer mode. Otherwise, you're just creating an app for Power BI consumers in your own organization.
  
-1. In the  Power BI service, go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
-2. Select **Apply**.
+1. Open the Power BI service in a browser.
+2. Go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
+3. Select **Apply**.
 
-2. Select **Workspaces** > **Create app workspace**. 
+## Create the template app workspace
+
+To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new app workspaces. 
+ 
+1. In the  Power BI service, select **Workspaces** > **Create app workspace**. 
 
 3. In **Create an app workspace**, in **Preview improved workspaces**, select **Try now**.
 
@@ -48,11 +53,11 @@ As with a regular Power BI app workspace, you create the contents in the workspa
 
 - [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
 
-As a best practice, if you're using parameters in Power Query, make sure they have well defined type (for example, Text).
+If you're using parameters in Power Query, make sure they have well defined type (for example, Text).
 
 ## Create the test template app
- 
-Now that you have content in your workspace, you are ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.  
+
+Now that you have content in your workspace, you are ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
 
 1. In the template app workspace, select **Create template app**. 
  
