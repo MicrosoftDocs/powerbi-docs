@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/10/2019
 ms.author: maggies
 ---
 
 # Create a template app in Power BI
 
-Power BI template apps are a new capability that enables Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
+The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
 If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
 
@@ -53,11 +53,11 @@ As with a regular Power BI app workspace, you create the contents in the workspa
 
 - [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
 
-If you're using parameters in Power Query, make sure they have well defined type (for example, Text).
+If you're using parameters in Power Query, make sure they have well-defined type (for example, Text).
 
 ## Create the test template app
 
-Now that you have content in your workspace, you are ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
+Now that you have content in your workspace, you're ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
 
 1. In the template app workspace, select **Create template app**. 
  
@@ -96,7 +96,7 @@ Before you release this template app publicly, you want to make sure it's ready 
 Let's go through the stages.
 
 1. In the template app workspace, select **Release Management**.
-2. Select the dot next to **Workapace** > **Create test app**. 
+2. Select the dot next to **Workspace** > **Create test app**. 
 
     Wait for the notification window to pop up.
  

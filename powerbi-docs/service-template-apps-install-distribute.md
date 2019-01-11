@@ -13,7 +13,7 @@ ms.author: maggies
 
 # Install and distribute template apps in your organization 
 
-Power BI template apps are a new capability that enables Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. This article is for Power BI analysts. It explains how you install, customize and distribute a template app that a Power BI partner created. If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md).
+The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. This article is for Power BI analysts. It explains how you install, customize, and distribute a template app that a Power BI partner created. If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md).
 
 When you install a template app that a Power BI partner has created, you can modify it to meet the needs of your organization, and then distribute it to your colleagues as an app.  
 
@@ -53,7 +53,7 @@ You may receive a link to a template app, or you may find one that interests you
 1. When you've finished customizing, select **Update app** in the upper-right corner.  
 2. In **Details**, you can modify the description and background color.
 3. In **Content**, you can select a landing page, either the dashboard or the report.
-4. In **Access** you give access either to selected users or to your whole organization.  
+4. In **Access**, you give access either to selected users or to your whole organization.  
 5. Select **Update app**. 
 6. After it's successfully published, you can copy the link and share it with whomever you've given access to. If you've shared it with them, they also see it on the **My organization** tab in AppSource.
 

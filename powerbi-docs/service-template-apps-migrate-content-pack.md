@@ -13,7 +13,7 @@ ms.author: maggies
 
 # Migrate a content pack to a template app
 
-Power BI template apps are a new capability that enables Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. Prior to template apps, you may have created Power BI service content packs for services like Salesforce or Microsoft Dynamics. This article explains how to migrate from an existing content pack to a Power BI template app. 
+The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. Prior to template apps, you may have created Power BI service content packs for services like Salesforce or Microsoft Dynamics. This article explains how to migrate from an existing content pack to a Power BI template app. 
 
 ## Prerequisites 
 
@@ -55,7 +55,7 @@ Before you can create an app workspace for a template app, you need to Enable ap
 
 ## Manage the template app release
 
-Now that you have content in your workspace, you are ready to package it in a template app. From here, the process is the same as creating a template app from scratch. 
+Now that you have content in your workspace, you're ready to package it in a template app. From here, the process is the same as creating a template app from scratch. 
 
 [Create the test template app](service-template-apps-create.md#create-the-test-template-app)
  
