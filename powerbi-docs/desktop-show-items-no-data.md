@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
 
-Power BI lets you visualize all sorts of data from various sources. When creating a visual, Power BI only shows relevant data when creating a visual in order to properly manage how data is presented and displayed. Power BI determines which data is relevant based on the configuration of the visual, and the underlying data model. This article describes how Power BI behaves when determining relevant data, with examples that illustrate how determinations are made.
+Power BI lets you visualize all sorts of data from various sources. When creating a visual, Power BI only shows relevant data when creating a visual to properly manage how data is presented and displayed. Power BI determines which data is relevant based on the configuration of the visual, and the underlying data model. This article describes how Power BI behaves when determining relevant data, with examples that illustrate how determinations are made.
 
 ![How to enable the Show items with no data feature](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -61,7 +61,7 @@ As such, Power BI displays the combinations that do have entries in the Product 
 
 **4. Groups from different and unrelated tables**
 
-The sample model doesn't have this combination, but if there were groups from different and unrelated tables, Power BI would not be able to relate two columns, and the result would be a crossjoin of all the values of each column. In that situation, Power BI issues an error of type *unconstrained join*, because such cross joins are expensive to compute in the database, and do not provide very much information to a user. 
+The sample model doesn't have this combination, but if there were groups from different and unrelated tables, Power BI would not be able to relate two columns. The result would be a crossjoin of all the values of each column. In that situation, Power BI issues an error of type *unconstrained join*, because such cross joins are expensive to compute in the database, and do not provide very much information to a user. 
 
 ![Error shown for an unconstrained join](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -72,7 +72,7 @@ The previous section described how Power BI determines which data is relevant to
 
 The **Show items with no data** feature enables you to do exactly that - include data rows and columns that don't contain measure data (blank measure values).
 
-To enable the **Show items with no data** feature select a visual, then in the **Fields** well, right-click the field and select **Show items with no data** from the menu that appears, as shown in the following image.
+To enable the **Show items with no data** feature select a visual, then in the **Fields** well, right-click the field and select **Show items with no data** from the menu that appears, as shown in the following image:
 
 ![How to enable the Show items with no data feature](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -135,7 +135,7 @@ Notice how *(Gloss-Red)* and *(None, blank)* appeared as combinations. Here is t
 
 It's important to note that the mechanism of selecting values for the columns is order-dependent, and can be thought of as a *Left outer join* operation between tables. If the order of the columns is changed, the results will change as well.
 
-Let's take a look at an example of changing the order, and how it impacts results. This is the same as item **2** in this section, with the ordering changed.
+Let's look at an example of changing the order, and how it impacts results. This is the same as item **2** in this section, with the ordering changed.
 
 **Product[Color] - ProductStyle[Finish] - Sum(Sales[Quantity])**
 
@@ -190,6 +190,6 @@ This section shows the sample data model used in the examples in this article.
 
 ## Next steps
 
-This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles. 
+This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles: 
 
-* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Default member in multidimensional models in Power BI](desktop-default-member-multidimensional-models.md)
