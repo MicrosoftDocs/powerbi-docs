@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources
 
-Use [Kerberos constrained delegation](https://technet.microsoft.com/library/jj553400.aspx) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
+Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
 
 ## Supported data sources
 

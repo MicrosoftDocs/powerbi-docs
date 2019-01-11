@@ -71,6 +71,8 @@
       href: desktop-directquery-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
+    - name: "Default member in multidimensional models in Power BI"
+      href: desktop-default-member-multidimensional-models.md            
     - name: "Custom visuals FAQ"
       href: power-bi-custom-visuals-faq.md
   - name: How to
@@ -97,18 +99,14 @@
       href: desktop-connect-to-data.md
     - name: "Publish from Power BI Desktop"
       href: desktop-upload-desktop-files.md
-    - name: "Custom visualizations in Power BI"
-      href: power-bi-custom-visuals.md
-    - name: "Custom visuals for organizations in Power BI"
-      href: power-bi-custom-visuals-organization.md      
     - name: "Part I, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "Troubleshoot custom visuals"
-      href: power-bi-custom-visuals-troubleshoot.md
+    - name: "Show items with no data in Power BI"
+      href: desktop-show-items-no-data.md      
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -359,7 +357,7 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
         href: desktop-access-database-errors.md
@@ -591,12 +589,12 @@
         href: service-insights-optimize.md
     - name: Collaborate in Power BI
       items: 
-      - name: "Create and share apps"
-        href: service-create-distribute-apps.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
         href: service-create-the-new-workspaces.md
+      - name: "Create and share apps"
+        href: service-create-distribute-apps.md
       - name: "Manage data storage in workspaces"
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Connect to files on your group's OneDrive"
@@ -611,15 +609,17 @@
         href: service-share-dashboards.md
       - name: "Share a filtered report"
         href: service-share-reports.md
-      - name: "Publish from Power BI to the web"
-        href: service-publish-to-web.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
+      - name: "Embed report in a secure portal or website"
+        href: service-embed-secure.md
+      - name: "Publish from Power BI to the web"
+        href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: "Power BI publisher for Excel"
         href: publisher-for-excel.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
         href: service-admin-forgot-your-password.md
@@ -755,8 +755,6 @@
           href: service-connect-to-mandrill.md
         - name: "Marketo"
           href: service-connect-to-marketo.md
-        - name: "Microsoft Azure Enterprise"
-          href: service-connect-to-azure-enterprise.md
         - name: "Microsoft Dynamics AX"
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: "Microsoft Dynamics CRM"
@@ -871,8 +869,10 @@
       items:
       - name: "Performance best practices"
         href: developer/embedded-performance-best-practices.md
-      - name: "Row-level security (RLS)"
+      - name: "Row-level security"
         href: developer/embedded-row-level-security.md
+      - name: "Manage multi-tenants"
+        href: developer/embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"
         href: developer/azure-pbie-diag-logs.md
       - name: "Embedding FAQ"
@@ -881,7 +881,7 @@
         href: developer/power-bi-permissions.md 
     - name: How to
       items: 
-      - name: "How to embed from an app"
+      - name: "Embed from an app"
         href: developer/embed-from-apps.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
@@ -891,8 +891,6 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "Troubleshooting your embedded application"
-        href: developer/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -903,6 +901,10 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot your embedded application"
+          href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
@@ -945,12 +947,12 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Develop Custom Visuals
+  - name: Custom Visuals
     items:
     - name: Overview
       items: 
-      - name: "Adding Custom visuals into Power BI"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: "Custom visuals in Power BI"
+        href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
@@ -959,6 +961,8 @@
         href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
+      - name: "Custom visuals for organizations in Power BI"
+        href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: "Custom visuals FAQ"
@@ -979,8 +983,12 @@
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
-      - name: "Troubleshoot custom visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: desktop-r-powered-custom-visuals.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot developing custom visuals"
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "APIs"
@@ -1187,6 +1195,8 @@
         href: service-gateway-sso-overview.md
       - name: "Single sign-on (SSO) - Kerberos"
         href: service-gateway-sso-kerberos.md
+      - name: "Single sign-on (SSO) - Kerberos - resource-based"
+        href: service-gateway-sso-kerberos-resource.md
       - name: "Single sign-on (SSO) - SAML"
         href: service-gateway-sso-saml.md
     - name: "Configuring proxy settings"
@@ -1223,6 +1233,8 @@
         href: service-admin-premium-manage.md
       - name: "Monitor Power BI Premium"
         href: service-admin-premium-monitor-capacity.md
+      - name: "Restart a Premium capacity"
+        href: service-admin-premium-restart.md
       - name: "Support for large datasets"
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"

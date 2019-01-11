@@ -8,6 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/26/2018
 ---
 
@@ -55,6 +56,10 @@ Use the landing page to clarify to users how they can use your visual and where 
 ### License key and token
 
 For user convenience, add license key or token related fields at the top of the format pane, so they are better located for users.
+
+## FAQ
+
+For more information and answers to questions, visit  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 

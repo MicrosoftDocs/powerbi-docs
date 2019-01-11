@@ -19,19 +19,21 @@ LocalizationGroup: Administration
 
 Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management. Use Power BI auditing to audit actions performed by users, such as "View Report" and "View Dashboard". You cannot use auditing to audit permissions.
 
-You work with auditing in the Office 365 Security and Compliance Center or use PowerShell. We cover both in this article. You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
+You work with auditing in the Office 365 Security and Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
+
+You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
 
 ## Requirements
 
 You must meet these requirements to access audit logs:
 
-- To access the auditing section of the Office 365 Security & Compliance Center, you must have an Exchange Online license (included with Office 365 Enterprise E3 and E5 subscriptions).
+* You must either be a global admin or be assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center.
 
-- You must either be a global admin or have an Exchange admin role that provides access to the audit log. Exchange admin roles are controlled through the Exchange admin center. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo/).
+    To provide non-administrator accounts with access to the audit log, you must add the user as a member of one of these role groups. Alternatively, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-administrator account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-- If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must get a direct link to the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
+    If you can't access the Exchange admin center from the Office 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
 
-- To view audit logs for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
+* If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must use a direct link to the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
 ## Accessing your audit logs
 
@@ -48,8 +50,6 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 1. Select **Go to O365 Admin Center**.
 
    ![Go to O365 Admin Center](media/service-admin-auditing/audit-log-o365-admin-center.png)
-
-To provide non-administrator accounts with access to the audit log, you must assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo/).
 
 ## Search only Power BI activities
 
@@ -116,9 +116,7 @@ To export the Power BI audit log to a csv file, follow these steps.
 
 ## Use PowerShell to search audit logs
 
-You can also use PowerShell to access the audit logs based on your login. The following example shows how to use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command to pull Power BI audit log entries.
-
-To use the [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession/) command, your account must have an Exchange Online license assigned to it, and you need access to the audit log for your tenant. For more information on connecting to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/).
+You can also use PowerShell to access the audit logs based on your login. The following example shows how to connect to Exchange Online PowerShell and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command to pull Power BI audit log entries. To run the script, you must be assigned the appropriate permissions, as described in the [Requirements](#requirements) section.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -131,7 +129,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-For another example of using PowerShell with audit logs, see [Using Power BI audit log and PowerShell to assign Power BI Pro licenses](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+For more information on connecting to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). For another example of using PowerShell with audit logs, see [Using Power BI audit log and PowerShell to assign Power BI Pro licenses](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## Activities audited by Power BI
 
