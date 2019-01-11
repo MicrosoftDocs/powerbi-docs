@@ -869,6 +869,8 @@
       items:
       - name: "Performance best practices"
         href: developer/embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: developer/embed-service-principal.md
       - name: "Row-level security"
         href: developer/embedded-row-level-security.md
       - name: "Manage multi-tenants"

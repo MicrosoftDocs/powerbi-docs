@@ -5,7 +5,7 @@ author: markingmyname
 ms.author: maghan
 manager: kfile
 ms.reviewer: nishalit
-ms.component: power-bi-developer
+ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
 ms.date: 01/31/2018

@@ -13,7 +13,7 @@ ms.date: 12/10/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
-# Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
+# Tutorial: Embed Power BI content into an application for your organization
 
 In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service to use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
