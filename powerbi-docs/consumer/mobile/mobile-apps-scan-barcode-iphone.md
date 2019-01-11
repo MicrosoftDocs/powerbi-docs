@@ -1,7 +1,7 @@
 ---
 title: Scan a barcode with an iPhone from the Power BI mobile app
 description: Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Scan a barcode with your iPhone from the Power BI mobile app
