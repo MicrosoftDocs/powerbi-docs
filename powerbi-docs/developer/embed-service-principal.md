@@ -13,9 +13,9 @@ ms.date: 01/31/2018
 
 # Service principal with Power BI (Preview)
 
-With **service principal**, you can embed Power BI content into an application and use automation with Power BI using an **app-only** token. This is beneficial when using **Power BI Embedded** or when **automating Power BI tasks and processes**.
+With **service principal**, you can embed Power BI content into an application and use automation with Power BI using an **app-only** token. Service principal is beneficial when using **Power BI Embedded** or when **automating Power BI tasks and processes**.
 
-When working with Power BI Embedded, there are advantages when using service principal.  A primary advantage is you do not need a master user account (Power BI Pro license) to authenticate into your application. Service principal uses an application Id and an application secret to authenticate the application.
+When working with Power BI Embedded, there are advantages when using service principal.  A primary advantage is you do not need a master user account (Power BI Pro license) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
 As you automate various tasks with Power BI APIs, you can now script creating a service principal (app-only token) to use for authentication. You can script service principal to scale.
 
@@ -23,7 +23,7 @@ As you automate various tasks with Power BI APIs, you can now script creating a 
 
 To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action holds true for both users (user principal) and applications (service principal).
 
-The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign in, and authorization during resource access. For more information, reference [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
 When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
 
@@ -34,7 +34,7 @@ Consider the application object as the *global* representation of your applicati
 
 The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects.
 
-A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
+A service principal is required per tenant where the application is used, enabling it to establish an identity for sign in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
 
 ## Service principal with Power BI Embedded
 
@@ -44,9 +44,9 @@ Since **Power BI APIs** and **Power BI .NET SDK** now support calls using servic
 
 You can only use a service principal if your Power BI artifacts and resources are stored in a [Power BI new workspace](../service-create-the-new-workspaces.md).
 
-## Service principal vs. master user account (Power BI Pro account)
+## Service principal vs. master user account
 
-There are differences between using a service principal token versus a standard master user account for authentication.
+There are differences between using a service principal token versus a standard master user account (Power BI Pro license) for authentication.
 
 | Function | Master User Account | Service Principal |
 |------------------------------------------------------|---------------------|-------------------|
@@ -57,7 +57,7 @@ There are differences between using a service principal token versus a standard 
 | Use Power BI Rest APIs | Yes | Yes |
 | Can be created via automation | No | Yes |
 | Can install and edit   On-premises data gateway | Yes | No |
-| Needs to be enabled in Power   BI Admin Portal | No | Yes |
+| Enabled in the Power BI Admin Portal | No | Yes |
 
 ## Get started with service principal
 
@@ -65,7 +65,7 @@ There are differences between using a service principal token versus a standard 
 
 2. [Set up your Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-3. Now you can choose to embed you content either through the [sample application](https://app.powerbi.com/embedsetup/appownsdata) that you can download or within yoru own application.
+3. Now you can choose to embed your content either through the [sample application](https://app.powerbi.com/embedsetup/appownsdata) that you can download or within your own application.
 
     [Embed your content using the sample application](embed-sample-for-customers.md#embed-your-content-using-the-sample-application)
 
@@ -114,13 +114,13 @@ You can take steps to migrate to use service principal if you're currently using
 
 2. Then you need to create a [new workspace](../service-create-the-new-workspaces.md) in the Power BI service.
 
-3. Then add or move Power Bi artifacts into the new workspace.
+3. Then add or move Power BI artifacts into the new workspace.
 
-4. Then with an admin master user account, login to Power BI and enable the service principal developer setting in the Power BI admin portal.
+4. Then with an admin master user account, sign in to Power BI and enable the service principal developer setting in the Power BI admin portal.
 
     ![Admin portal](media/embed-service-principal/admin-portal.png)
 
-5. Then you need to add the service principal as an admin to the new workspace you created from step two.
+5. Then you need to add the service principal as an admin to the new workspace you created from step 2.
 
 ## Considerations and limitations
 
