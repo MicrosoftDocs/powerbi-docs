@@ -77,7 +77,7 @@ There are differences between using a service principal token versus a standard 
     ```
     ![Application code](media/embed-service-principal/sp-web-config.png)
 
-### Using Powershell to create service principal
+## Using Powershell to create service principal
 
 1. Open Powershell as an administrator
 
@@ -112,9 +112,21 @@ There are differences between using a service principal token versus a standard 
     > [!Note]
     > Once you exit out of the blade, it is not visible any more so save it. However, if you forget to save it, then you can just craete a new one.
 
-## Migrate from master account to service principal
+## Migrate to service principal
 
-You can migrate to service principal if you're currently using a master account.  If you're currently using Power BI Workspace Collections using service principal is recommended when migrating to Power BI Embedded.
+You can take steps to migrate to use service principal if you're currently using a master user account authenticate into Power BI or your Power BI Embedded application.
+
+1. First, you need to [Register an Azure AD application](register-app.md).
+
+2. Then you need to create a [new workspace](../service-create-the-new-workspaces.md) in the Power BI service.
+
+3. Then add or move Power Bi artifacts into the new workspace.
+
+4. Then with an admin master user account, login to Power BI and enable the service principal developer setting in the Power BI admin portal.
+
+    ![Admin portal](media/embed-service-principal/admin-portal.png)
+
+5. Then you need to add the service principal as an admin to the new workspace you created from step two.
 
 ## Considerations and limitations
 
@@ -129,6 +141,6 @@ You can migrate to service principal if you're currently using a master account.
 
 ## Next steps
 
-- [Register an app](register-app.md)
-- [Power BI Embedded for your customers](embed-sample-for-customers.md)
-- [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Register an app](register-app.md)
+* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+* [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
