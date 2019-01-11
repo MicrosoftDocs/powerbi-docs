@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/26/2018
+ms.date: 01/31/2019
 ---
 
 # Register an Azure AD app to embed Power BI content
 
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
 
-You register your application with Azure AD to allow your application access to the Power BI REST APIs. Once you register your application, you can establish an identity for your application and specify permissions to Power BI REST resources.
+You register your application with Azure AD to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Once you register your application, you can establish an identity for your application and specify permissions to Power BI REST resources.
 
 > [!IMPORTANT]
 > Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration doesn't complete successfully.
 
-There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/), or you can do it directly within the Azure portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. Use the Azure portal if you want to make changes to your app.
+There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/), or you can do it directly within the Azure portal. The Power BI App Registration Tool is more convenient to use since there are just a few fields to fill complete. Use the Azure portal if you want to make changes to your app.
 
 ## Register with the Power BI App Registration Tool
 
@@ -29,42 +29,45 @@ Register your application in **Azure Active Directory** to establish an identity
 Here's how to register your application with the Power BI App Registration Tool:
 
 1. Go to [dev.powerbi.com/apps](https://dev.powerbi.com/apps).
-2. Select **Sign in with your existing account**.
-3. Provide an **App Name**.
-4. The App type selection depends on the type of application you are using.
+
+    ![New design](media/register-app/register-app-new-design.png)
+
+2. Select **Sign in** with your existing account then select **Next**.
+
+    ![Sign in](media/register-app/register-app-new-design-sign-in.png)
+
+    ![Next](media/register-app/register-app-new-design-next.png)
+
+3. Provide an Application Name.
+
+4. Provide an Application Type. The App type selection depends on the type of application you are using.
 
    * Use **Native app** for apps that run on client devices. Choose **Native app** if you are embedding content for your customers regardless of what is the application, even for web applications.
    * Use **Server-side Web app** for web apps or web APIs.
 
-5. Enter a value for **Redirect URL** and **Home Page URL**. The **Redirect URL** works with any valid URL.
+    > [!Note]
+    > Default is set to **Server-side web application**.
 
-    **Home Page URL** is only available if you choose **Server-side Web app** for the application type.
+    ![App type](media/register-app/register-app-new-design-app-type.png)
 
-    For the *embedding for your customers* and *integrate-dashboard-web-app* samples, the **Redirect URL** is `http://localhost:13526/Redirect`. For the report and tile sample, the **Redirect URL** is `http://localhost:13526/`.
+5. Enter a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL.
+
+    **Home Page URL** and **Redirect URL** are only available if you choose **Server-side Web app** for the application type.
+
+    > [!Note]
+    > For the *embedding for your customers* and *embedding for your organization* samples, the **Redirect URL** is `http://localhost:13526/Redirect`.
+
 6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md).
 
-    ![App Registration APIs](media/register-app/app-registration-apis.png)
-7. Select **Register App**.
+    ![App Registration APIs](media/register-app/register-app-new-app-registration-apis-register.png)
 
-    You are then provided a **Client ID**, and if you select **Server-side Web app**, you receive a **Client Secret**. The **Client ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Client Secret**, you need to create a new one within the Azure portal.
+7. Select **Register**.
 
-8. Navigate to Azure to select **Grant permissions**.
+    You are then provided an **Application ID**, and if you select **Server-side Web app**, you receive a **Application secret**. The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
 
-   > [!Note]
-   > Users in the tenant need access to **_Grant permissions_** in order to complete this step.
+    ![Success](media/register-app/register-app-new-design-success.png)
 
-* Go to Azure.
-* Search and select **App registrations**.
-* Choose your app.
-* Select **Settings**.
-* Select **Required permissions**.
-* Select **Power BI Service** to verify the permissions that you selected from the App registration site.
-* Select **Grant Permissions**.
-
-You can now use the registered application as part of your custom application to interact with the Power BI service.
-
-> [!IMPORTANT]
-> If you are embedding content for your customers, you need to configure additional permissions within the Azure portal. For more information, see [Apply permissions to your application](#apply-permissions-to-your-application).
+You can now use the registered application as part of your custom application to interact with the Power BI service and with you Power BI Embedded application.
 
 ## Register with the Azure portal
 
@@ -83,17 +86,17 @@ Your other option for registering your application is to do so directly in the A
 
 For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
-## How to get the client id
+## How to get the Application Id
 
-When you register an application, you receive a **Client ID**.  The **Client ID** requests permissions to the users by the application to identify themselves.
+When you register an application, you receive a **Application ID**.  The **Application ID** requests permissions to the users by the application to identify themselves.
 
-Here's how to get a client id:
+Here's how to get a application Id:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
 3. In the left-hand navigation pane, choose **More Services** and select **App Registrations**.
-4. Select the application that you want to retrieve the client id that you need to use.
-5. You see **Application ID** listed as a GUID. This is the client id for the application.
+4. Select the application that you want to retrieve the application Id that you need to use.
+5. You see **Application ID** listed as a GUID. This is the application Id for the application.
 
     ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
 
@@ -136,7 +139,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     You can call the *Get servicePrincipal* API without {id}, and it gets you all of the service principals within the tenant.
-2. Check for a service principal with your app client id as **appId** property.
+2. Check for a service principal with your app application Id as **appId** property.
 
 3. Create a new service plan if missing from your app.
 
