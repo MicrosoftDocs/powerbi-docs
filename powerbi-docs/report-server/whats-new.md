@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
+ms.date: 01/11/2019
 ---
 
 # What's new in Power BI Report Server
@@ -28,6 +28,15 @@ For related Power BI "What's New" information, see:
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## January 2019
+
+Row-level security support
+Expand & Collapse on matrix row headers
+Copy/paste between .pbix files
+Smart guides
+Too many accessibility features to list
+
 
 ## August 2018
 
