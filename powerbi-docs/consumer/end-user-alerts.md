@@ -8,7 +8,7 @@ featuredvideoid: JbL2-HJ8clE
 ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 12/06/2018
 ms.author: mihart

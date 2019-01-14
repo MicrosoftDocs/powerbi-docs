@@ -7,7 +7,7 @@ ms.reviewer: davidi
 editor: davidi
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar

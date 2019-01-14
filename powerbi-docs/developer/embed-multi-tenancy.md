@@ -6,7 +6,7 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.component: powerbi - developer
+ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
 ---

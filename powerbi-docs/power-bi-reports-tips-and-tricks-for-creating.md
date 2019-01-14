@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: 'willthom'
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi

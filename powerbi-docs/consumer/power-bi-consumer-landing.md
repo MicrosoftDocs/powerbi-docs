@@ -4,7 +4,7 @@ description: Getting started with Power BI? Get to know the features and capabil
 author: mihart
 manager: kvivek
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 12/10/2018
 ms.author: mihart
