@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 01/14/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -42,19 +42,17 @@ The following table provides a summary of the differences between shared capacit
 |  | Shared capacity | Power BI Premium capacity |
 | --- | --- | --- |
 | **Refresh rate** |8/day |48/day |
-| **Isolation with dedicated hardware** |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
+| **Isolation with dedicated hardware** |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | **Enterprise Distribution to** _**all users**_ | | |
-| Apps and sharing |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
-| Embedded API and controls |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png)<sup>2</sup> |
-| **Publish Power BI reports on-premises** |![Not available](media/service-premium/not-available.png) |![Available](media/service-premium/available.png) |
+| Apps and sharing |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Embedded API and controls |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>2</sup> |
+| **Publish Power BI reports on-premises** |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> For more information, see [Features by license type](service-features-license-type.md).*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium.*
 
 To learn more about assigning workspaces to a premium capacity, see [Manage Power BI Premium](service-admin-premium-manage.md).
-
-<a name="premiumskus"/>
 
 ### Premium capacity nodes
 
@@ -64,22 +62,17 @@ Power BI Premium is available in node configurations with different v-core capac
 
 * EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
->[!NOTE]
->Links in this table only work properly for users who are in the Office 365 Global Administrator role. Others receive a 404 error.
-
-| Capacity Node | Total v-cores<br/>*(Backend + frontend)* | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Availability |
-| --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |Available |
-| [EM2 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |Available |
-| [EM3 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | |Available |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-cores |4 v-cores, 25-GB RAM |4 v-cores |30 per second |Available ([month to month](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is also available) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-cores |8 v-cores, 50-GB RAM |8 v-cores |60 per second |Available |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second |Available |
+| Capacity Node | Total v-cores<br/>*(Backend + frontend)*\* | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Max parallel refreshes per day |  Availability
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  N/A | Available |
+| EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  N/A | Available |
+| EM3 (month to month) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | | N/A |  Available |
+| P1 |8 v-cores |4 v-cores, 25-GB RAM |4 v-cores |30 per second | 6 | Available (month to month is also available) |
+| P2 |16 v-cores |8 v-cores, 50-GB RAM |8 v-cores |60 per second | 12 | Available |
+| P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 | Available |
 | | | | | | | |
 
-* The frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
-
-* The backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+\* Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Workloads in Premium capacity
 
