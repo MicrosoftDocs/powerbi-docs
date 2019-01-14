@@ -63,7 +63,7 @@
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
-    - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
+    - name: "Bidirectional cross-filtering in Power BI Desktop"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
       href: desktop-directquery-about.md
