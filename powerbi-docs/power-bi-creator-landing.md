@@ -4,7 +4,7 @@ description: Do you connect to data, design queries, and create reports and dash
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 11/19/2018
 ms.author: maggies

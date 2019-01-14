@@ -5,7 +5,7 @@ author: markingmyname
 manager: kfile
 ms.author: maghan
 ms.service: power-bi-embedded
-ms.component: ''
+ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
