@@ -63,7 +63,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 7. Select **Register**.
 
-    You are then provided an **Application ID**, and if you select **Server-side Web app**, you receive an Application secret**. The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
+    You are then provided an **Application ID**, and if you select **Server-side Web app**, you receive an **Application secret**. The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
 
     ![Success](media/register-app/register-app-new-design-success.png)
 

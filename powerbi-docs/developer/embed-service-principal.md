@@ -48,17 +48,17 @@ You can only use a service principal if your Power BI artifacts and resources ar
 
 There are differences between using a service principal and a standard master user account (Power BI Pro license) for authentication.
 
-| Function | Master User Account | Service Principal |
+| Function | Master User Account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
 |------------------------------------------------------|---------------------|-------------------|
-| Sign in to the Power BI service  | Yes | No |
-| Works with app workspaces (v1) (need to be a workspace admin) | Yes | No |
-| Works with the new app workspaces (v2) (need to be a workspace admin) | Yes | Yes |
-| Multi-factor authentication (MFA) enabled in Azure | No | Yes |
-| Use Power BI Rest APIs | Yes | Yes |
-| Embed and call APIs that edit and generate content | Yes | No |
-| Needs a global admin to create | No | Yes |
-| Can install and edit On-premises data gateway | Yes | No |
-| Enabled in the Power BI Admin Portal | No | Yes |
+| Can sign in to the Power BI service  | Yes | No |
+| Needs to be enabled in the Power BI Admin portal | No | Yes |
+| Works with app workspaces (v1) | Yes | No |
+| Works with the new app workspaces (v2) | Yes | Yes |
+| Needs to be a workspace admin | Yes | Yes |
+| Can use multi-factor authentication (MFA) in Azure | No | Yes |
+| Embed APIs and controls | Yes | Yes |
+| Needs a global admin to create | Yes | No |
+| Can install and manage an On-premises data gateway | Yes | No |
 
 ## Get started with service principal
 
@@ -109,9 +109,9 @@ There are differences between using a service principal and a standard master us
 
 ## Migrate to service principal
 
-You can take steps to migrate to use service principal if you're currently using a master user account to authenticate into Power BI or your Power BI Embedded application.
+You can take steps to migrate to use service principal if you're currently using a master user account with Power BI or with your Power BI Embedded application.
 
-1. First, you need to [Register an Azure AD application](register-app.md).
+1. You need to [Register an Azure AD application](register-app.md) to capture an Application Id and an Application secret to access your Power BI content.
 
 2. Then create [new workspaces](../service-create-the-new-workspaces.md) in the Power BI service.
 
@@ -130,7 +130,7 @@ You can take steps to migrate to use service principal if you're currently using
 * Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
-* you can't install or manage an on-premises data gateway using service principal.
+* You can't install or manage an on-premises data gateway using service principal.
 
 ## Next steps
 
